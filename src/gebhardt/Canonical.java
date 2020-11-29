@@ -159,12 +159,13 @@ final class Canonical {
     final int lo = Integer.numberOfTrailingZeros(bl);
     int n = 32 - Integer.numberOfLeadingZeros(bl);
     do {
-      long t1, t2;
       int newn = 0;
       for (int i = lo; i < n; ++i) {
-        if ((bl & Utils.bit(i)) != 0 && (t1 = (l[0] & mask[i - 1]) >>> m) > (t2 = l[0] & mask[i])) {
+        long t1;
+        final long t2;
+        if ((bl & Utils.bit(i)) != 0 && (t1 = (l[0] & mask[i - 1]) >>> m) > (t2 = (l[0] & mask[i]))) {
           t1 ^= t2;
-          l[0] ^= t1 << m | t1;
+          l[0] ^= (t1 << m) | t1;
           final byte tp = p[offset + i - 1];
           p[offset + i - 1] = p[offset + i];
           p[offset + i] = tp;
@@ -250,8 +251,8 @@ final class Canonical {
     if (sic != null) {
       sic[0] = (int) (si & ~(mask << a0));
     }
-    si = (int) (si >>> a0 & mask);
-    final int[] b = {si ^ si >>> 1};
+    si = (int) ((si >>> a0) & mask);
+    final int[] b = {si ^ (si >>> 1)};
     long a = l[0] & ~(si | b[0]);  /* the elements in blocks of size 1 */
     while (Utils.extractMSB32(b, hi)) {
       Utils.extractMSB32(b, lo);
@@ -277,7 +278,7 @@ final class Canonical {
   }
 
   /*
-   * Minimise the packed antichain list *l containing k antichains on the elements a0..(a0+m-1) under the
+   * Minimise the packed antichain list l containing k antichains on the elements a0..(a0+m-1) under the
    * action of the implicit automorphisms given by si.  The inverse of the permutation minimising l is
    * left-multiplied to p, the rationale being to keep track of the permutation mapping l to some original
    * element.
@@ -288,7 +289,7 @@ final class Canonical {
     assert l != null;
     final int mask = (int) (Utils.bit(m) - 1);
     globals.mSi0[0].mRep[0] = l[0];
-    globals.mSi0[0].mS = si >>> a0 & mask;
+    globals.mSi0[0].mS = (si >>> a0) & mask;
     globals.mSi0[0].mP = Permutation.create();
     Permutation.copy(n + k, p, globals.mSi0[0].mP);
     int si0Size = 1;
@@ -309,8 +310,8 @@ final class Canonical {
           Permutation.copy(n + k, globals.mSi0[i].mP, q);
           int s = globals.mSi0[i].mS;
           long bigP = globals.mSi0[i].mRep[0];
-          final int a = (int) (bigP >>> j * m & mask);  /* j: antichain under consideration */
-          final int[] b = {s >>> 1 ^ s};
+          final int a = (int) ((bigP >>> (j * m)) & mask);  /* j: antichain under consideration */
+          final int[] b = {(s >>> 1) ^ s};
           int ac = a & ~(s | b[0]);  /* the elements in blocks of size 1 */
           while (a != ac && Utils.extractMSB32(b, hi)) {  /* get an orbit lo..hi ... */
             Utils.extractMSB32(b, lo);
@@ -320,8 +321,8 @@ final class Canonical {
             while (Utils.getMSB32(sb, hi) && Utils.getLSB32(ub, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
               sb ^= Utils.bit(hi[0]) | Utils.bit(lo[0]);
               ub ^= Utils.bit(hi[0]) | Utils.bit(lo[0]);
-              final long bigT = (bigP >>> hi[0] ^ bigP >>> lo[0]) & bigM;
-              bigP ^= bigT << hi[0] | bigT << lo[0];
+              final long bigT = ((bigP >>> hi[0]) ^ (bigP >>> lo[0])) & bigM;
+              bigP ^= (bigT << hi[0]) | (bigT << lo[0]);
               final byte t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
               q[a0 + hi[0]] = q[a0 + lo[0]];
               q[a0 + lo[0]] = t;
@@ -340,11 +341,11 @@ final class Canonical {
               next = true;
             }
             ++dj;
-          } while (!next && (bigP >>> (j - dj) * m & mask) == ac);
-          if (ac > aMin || ac == aMin && dj < dr) {
+          } while (!next && ((bigP >>> (j - dj) * m) & mask) == ac);
+          if (ac > aMin || (ac == aMin && dj < dr)) {
             continue;  /* not minimal */
           }
-          if (ac < aMin || ac == aMin && dj > dr) {  /* new minimum! */
+          if (ac < aMin || (ac == aMin && dj > dr)) {  /* new minimum! */
             aMin = ac;
             dr = dj;
             si1Size = 0;
@@ -352,9 +353,9 @@ final class Canonical {
           globals.mSi1[si1Size].mP = Permutation.create();
           Permutation.copy(n + k, q, globals.mSi1[si1Size].mP);
           if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
-            final long mask1 = Utils.bit((r - j) * m) - 1 << (j + 1) * m;
-            final long mask2 = Utils.bit(dr * m) - 1 << (j - dr + 1) * m;
-            bigP = bigP & ~(mask1 | mask2) | (bigP & mask1) >>> dr * m | (bigP & mask2) << (r - j) * m;
+            final long mask1 = (Utils.bit((r - j) * m) - 1) << ((j + 1) * m);
+            final long mask2 = (Utils.bit(dr * m) - 1) << ((j - dr + 1) * m);
+            bigP = (bigP & ~(mask1 | mask2)) | ((bigP & mask1) >>> (dr * m)) | ((bigP & mask2) << ((r - j) * m));
             /* left-multiply q=globals.SI1[si1Size].p by the inverse of the applied permutation */
             int offset = n + k - 1 - j;
             final byte[] pqq = globals.mSi1[si1Size].mP;
@@ -575,7 +576,7 @@ final class Canonical {
     final byte[] p = Permutation.create();
     si &= ~(Utils.bit(hi) - Utils.bit(lo));
     si |= globals.mSi0[0].mS << lo;
-    for (int i = 1; i < globals.mSi0Size; i++) {
+    for (int i = 1; i < globals.mSi0Size; ++i) {
       Permutation.leftDivide(n + k, globals.mSi0[0].mP, globals.mSi0[i].mP, p);
       if (!Permutation.isIdentity(n + k, p)) {
         if (VERBOSE) {
@@ -685,10 +686,10 @@ final class Canonical {
     /* check whether the element is new... */
     final Integer aa = antichain.mGlobals.mOrbitPos.putIfAbsent(a, aPos);
     if (aa != null) {
-      aPos = aa;
       if (VERBOSE) {
         System.out.println("--- hashtable query/insert " + Long.toHexString(a) + " => " + aPos);
       }
+      aPos = aa;
       /* ...if not, note the new stabiliser element */
       if (pos != 0) {
         if (aPos != 0) {
@@ -711,6 +712,9 @@ final class Canonical {
         s.addGenerator(h);
       }
     } else {
+      if (a == 0x1421195298L) {
+        new Throwable().printStackTrace();
+      }
       if (VERBOSE) {
         System.out.println("+++ hashtable query/insert " + Long.toHexString(a) + " => " + aPos);
       }
@@ -721,7 +725,7 @@ final class Canonical {
       } else {
         Permutation.copy(s.mG.mN, g.mInvPerm[gen], antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mToRoot);
       }
-      antichain.mGlobals.mOrbitSize++;
+      ++antichain.mGlobals.mOrbitSize;
     }
   }
 
@@ -771,6 +775,9 @@ final class Canonical {
         s.addGenerator(h);
       }
     } else {
+      if (a == 0x1421195298L) {
+        new Throwable().printStackTrace();   // SAI: Yes this is the one that is buggy
+      }
       if (VERBOSE) {
         System.out.println("+++ hashtable query/insert " + Long.toHexString(a) + " => " + aPos);
       }
@@ -1050,7 +1057,7 @@ final class Canonical {
     final PermGrp g = antichain.mStabilisers[antichain.mCl + 1].mSt;
     if (g.mNgens > 0) {
       antichain.mGlobals.mOrbitElements[0].mData[0] = 0;
-      for (int i = 0; i < antichain.mK; i++) {
+      for (int i = 0; i < antichain.mK; ++i) {
         antichain.mGlobals.mOrbitElements[0].mData[0] <<= bits;
         antichain.mGlobals.mOrbitElements[0].mData[0] |= (antichain.mO[i] & antichain.mCmc) >>> antichain.mLattice.mLev[antichain.mCl];
       }

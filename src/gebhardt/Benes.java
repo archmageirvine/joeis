@@ -187,7 +187,7 @@ public class Benes {
 
 
   /*
-   * Apply the Bene&scaron; network *B to a[0],a[1].  The masks indicate the lower bit of each pair.
+   * Apply the Bene&scaron; network B to a[0],a[1].  The masks indicate the lower bit of each pair.
    *
    */
   void applyP2(final long[] a) {

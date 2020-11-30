@@ -284,16 +284,22 @@ final class Canonical {
    * element.
    */
   static void listApplySIP1(final int n, final int k, final int a0, final int m, final int bl, final Globals globals, final long[] l, final int si, final long bigM, final byte[] p) {
+    final boolean report = l[0] == 0x15210A6232L;
+    final long qqq = l[0];
+    if (report) {
+      System.out.println("SAI: listapplySIP1");
+      System.out.println("n=" + n + " k=" + k + " a0=" + a0 + " m=" + m + " bl=" + bl + " si=" + si + " bigM=" + bigM);
+      Permutation.print(n, p, 0);
+    }
     assert globals.mSi0 != null;
     assert globals.mSi0[0] != null;
-    assert l != null;
     final int mask = (int) (Utils.bit(m) - 1);
     globals.mSi0[0].mRep[0] = l[0];
     globals.mSi0[0].mS = (si >>> a0) & mask;
-    globals.mSi0[0].mP = Permutation.create();
     Permutation.copy(n + k, p, globals.mSi0[0].mP);
     int si0Size = 1;
-    int dr, dj;
+    int dr;
+    int dj;
     for (int r = k - 1; r >= 0; r -= dr) { /* r: position to be filled */
       int si1Size = 0;
       int aMin = mask;
@@ -304,6 +310,7 @@ final class Canonical {
           final int[] hi = new int[1];
           final int[] lo = new int[1];
           final byte[] q = Permutation.create();
+          int opq = a0;
           if (si1Size == globals.mSiSpace) {
             globals.enlargenSiSpace();
           }
@@ -323,9 +330,9 @@ final class Canonical {
               ub ^= Utils.bit(hi[0]) | Utils.bit(lo[0]);
               final long bigT = ((bigP >>> hi[0]) ^ (bigP >>> lo[0])) & bigM;
               bigP ^= (bigT << hi[0]) | (bigT << lo[0]);
-              final byte t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
-              q[a0 + hi[0]] = q[a0 + lo[0]];
-              q[a0 + lo[0]] = t;
+              final byte t = q[opq + hi[0]];  /* left-multiplication by (lo hi) */
+              q[opq + hi[0]] = q[opq + lo[0]];
+              q[opq + lo[0]] = t;
             }
             ac |= sb;
             if (sb != 0 && ub != 0) {
@@ -350,28 +357,31 @@ final class Canonical {
             dr = dj;
             si1Size = 0;
           }
-          globals.mSi1[si1Size].mP = Permutation.create();
           Permutation.copy(n + k, q, globals.mSi1[si1Size].mP);
           if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
             final long mask1 = (Utils.bit((r - j) * m) - 1) << ((j + 1) * m);
             final long mask2 = (Utils.bit(dr * m) - 1) << ((j - dr + 1) * m);
             bigP = (bigP & ~(mask1 | mask2)) | ((bigP & mask1) >>> (dr * m)) | ((bigP & mask2) << ((r - j) * m));
             /* left-multiply q=globals.SI1[si1Size].p by the inverse of the applied permutation */
-            int offset = n + k - 1 - j;
+            // todo replace with System.arraycopy?
+            opq = n + k - 1 - j;
             final byte[] pqq = globals.mSi1[si1Size].mP;
             int opqq = n + k - 1 - r;
             for (int t = dr; t-- != 0; ) {
-              pqq[opqq + t] = q[offset + t];
+              pqq[opqq + t] = q[opq + t];
             }
-            offset -= r - j;  /* pq = q + n+k-1-r; */
+            opq -= r - j;  /* pq = q + n+k-1-r; */
             opqq += dr;   /* pqq = globals.SI1[si1Size].p + n+k-1-r+dr; */
             for (int t = r - j; t-- != 0; ) {
-              pqq[opqq + t] = q[offset + t];
+              pqq[opqq + t] = q[opq + t];
             }
           }
           globals.mSi1[si1Size].mS = s;
           globals.mSi1[si1Size].mRep[0] = bigP;
           ++si1Size;
+          if (report) {
+            System.out.println("SAI: r=" + r + " i=" + i + " j=" + j + " si1size=" + si1Size + " P=" + Long.toHexString(bigP));
+          }
         }
       }
       si0Size = si1Size;
@@ -380,6 +390,12 @@ final class Canonical {
       globals.mSi1 = sit;
     }
     l[0] = globals.mSi0[0].mRep[0];
+    if (report) {
+      System.out.println("l=" + Long.toHexString(l[0]));
+    }
+    if (l[0] == 0x1421195298L) {
+      System.out.println("SAI: Input was : " + Long.toHexString(qqq));
+    }
     Permutation.copy(n + k, globals.mSi0[0].mP, p);
     globals.mSi0Size = si0Size;
   }
@@ -1062,23 +1078,23 @@ final class Canonical {
         antichain.mGlobals.mOrbitElements[0].mData[0] |= (antichain.mO[i] & antichain.mCmc) >>> antichain.mLattice.mLev[antichain.mCl];
       }
       if (antichain.mGlobals.mOrbitElements[0].mData[0] != 0) {
-        final byte[] p = Permutation.create();
         if (antichain.mStabilisers[antichain.mCl + 1].mSi != 0) {
           /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
           final long[] l = {antichain.mGlobals.mOrbitElements[0].mData[0]};
-          Permutation.init(antichain.mLattice.mN + antichain.mK, p);
+          final byte[] p0 = Permutation.create();
+          Permutation.init(antichain.mLattice.mN + antichain.mK, p0);
           long pmask = 1;
           for (int i = antichain.mK; i-- != 0; ) {
             pmask = (pmask << bits) | 1;
           }
-          listApplySIP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, l, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p);
+          listApplySIP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, l, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p0);
           if (l[0] != antichain.mGlobals.mOrbitElements[0].mData[0]) {
             /* determine the position up to which we can backtrack */
             int m = 0;
             int i = 0;
             final long d = l[0] ^ antichain.mGlobals.mOrbitElements[0].mData[0];
             do {
-              final int pi = p[antichain.mLattice.mN + i] - antichain.mLattice.mN;
+              final int pi = p0[antichain.mLattice.mN + i] - antichain.mLattice.mN;
               if (pi > m) {
                 m = pi;
               }
@@ -1086,7 +1102,7 @@ final class Canonical {
             antichain.mFpos += m - antichain.mCp;
             antichain.mCp = m;
             if (VERBOSE) {
-              Permutation.print(antichain.mLattice.mN + antichain.mK, p, 0);
+              Permutation.print(antichain.mLattice.mN + antichain.mK, p0, 0);
               System.out.println("                                       NOT canonical --> " + antichain.mCp);
             }
             return false;
@@ -1122,13 +1138,27 @@ final class Canonical {
                 antichain.mGlobals.enlargenOrbitSpace();
               }
               final long[] a = {antichain.mGlobals.mOrbitElements[pos].mData[0]};
+              final long spaz = a[0];
+              if (a[0] == 0x1421195298L || a[0] == 0x15210A6232L) {
+                System.out.println("SAI: Already " + Long.toHexString(a[0]));
+              }
               g.mBenes[antichain.mCl][gen].applyP1(a);
+              if (a[0] == 0x1421195298L || a[0] == 0x15210A6232L) {
+                System.out.println("SAI: Post applyP1 " + Long.toHexString(a[0]) + " spaz=" + spaz);
+              }
               if (antichain.mCl < antichain.mLattice.mNLev - 2) {
                 g.mBenes[antichain.mLattice.mNLev - 1][gen].applyBlockedP1(a);
               }
+              if (a[0] == 0x1421195298L || a[0] == 0x15210A6232L) {
+                System.out.println("SAI: Post applyBlockedP1 " + Long.toHexString(a[0]));
+              }
+              final byte[] p = Permutation.create();
               Permutation.init(s.mG.mN, p);
               listApplySIP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, a, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p);
               /* ...we're done if the result is smaller than the original element */
+              if (a[0] == 0x1421195298L) {
+                System.out.println("SAI: Post listApplySIP1");
+              }
               if (l[0] > a[0]) {
                 /* determine the position up to which we can backtrack */
                 int m = 0;
@@ -1157,7 +1187,8 @@ final class Canonical {
         } else {
           /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
           final long l = antichain.mGlobals.mOrbitElements[0].mData[0];
-          Permutation.init(antichain.mLattice.mN + antichain.mK, p);
+          final byte[] p1 = Permutation.create();
+          Permutation.init(antichain.mLattice.mN + antichain.mK, p1);
           final PermGrpC s = antichain.ensureStabiliser(antichain.mCl);
           antichain.mStabilisers[antichain.mCl].mSt = s.mG;
           s.init(antichain.mLattice.mN + antichain.mK);
@@ -1192,6 +1223,7 @@ final class Canonical {
               if (antichain.mCl < antichain.mLattice.mNLev - 2) {
                 g.mBenes[antichain.mLattice.mNLev - 1][gen].applyBlockedP1(a);
               }
+              final byte[] p = Permutation.create();
               Permutation.init(s.mG.mN, p);
               sortP1(bits, bigM, antichain.mStabilisers[antichain.mCl + 1].mBl, a, p, antichain.mLattice.mN);
               /* ...we're done if the result is smaller than the original element */
@@ -1233,21 +1265,21 @@ final class Canonical {
       }
       if (antichain.mGlobals.mOrbitElements[0].mData[0] != 0) {
         /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-        final byte[] p = Permutation.create();
+        final byte[] p2 = Permutation.create();
         final long[] l = {antichain.mGlobals.mOrbitElements[0].mData[0]};
-        Permutation.init(antichain.mLattice.mN + antichain.mK, p);
+        Permutation.init(antichain.mLattice.mN + antichain.mK, p2);
         long pmask = 1;
         for (int i = antichain.mK; i-- != 0; ) {
           pmask = (pmask << bits) | 1;
         }
-        listApplySIP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, l, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p);
+        listApplySIP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, l, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p2);
         if (l[0] != antichain.mGlobals.mOrbitElements[0].mData[0]) {
           /* determine the position up to which we can backtrack */
           int m = 0;
           int i = 0;
           final long d = l[0] ^ antichain.mGlobals.mOrbitElements[0].mData[0];
           do {
-            final int pi = p[antichain.mLattice.mN + i] - antichain.mLattice.mN;
+            final int pi = p2[antichain.mLattice.mN + i] - antichain.mLattice.mN;
             if (pi > m) {
               m = pi;
             }
@@ -1255,7 +1287,7 @@ final class Canonical {
           antichain.mFpos += m - antichain.mCp;
           antichain.mCp = m;
           if (VERBOSE) {
-            Permutation.print(antichain.mLattice.mN + antichain.mK, p, 0);
+            Permutation.print(antichain.mLattice.mN + antichain.mK, p2, 0);
             System.out.println("                                       NOT canonical --> " + antichain.mCp);
           }
           return false;

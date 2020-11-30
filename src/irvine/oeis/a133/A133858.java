@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A133858 Primes of the form 11^n - 2.
+ * A133858 Primes of the form 11^k - 2.
  *
  * @author Georg Fischer
  */

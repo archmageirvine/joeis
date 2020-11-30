@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000598;
 
 /**
- * A036784 G.f. satisfies A(x) = 1 + x*cycle_index(G,A(x)) where G = tetragonal pyramid group of order 8 with cycle index (A1^5+2*A1*A4+3*A1*A2^2+2*A1^3*A2)/8.
+ * A036784 G.f. satisfies A(x) = 1 + x*cycle_index(G,A(x)) where G = tetragonal pyramid group of order 8 with cycle index (z1^5+2*z1*z4+3*z1*z2^2+2*z1^3*z2)/8.
  * @author Sean A. Irvine
  */
 public class A036784 extends A000598 {

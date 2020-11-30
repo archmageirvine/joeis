@@ -38,15 +38,15 @@ public class Globals {
    */
 
   static class OrbitElement {
-    long[] mData = new long[2]; /* the antichains */
-    byte[] mToRoot = Permutation.create();  /* permutation to root */
+    final long[] mData = new long[2]; /* the antichains */
+    final byte[] mToRoot = Permutation.create();  /* permutation to root */
     int mGen;     /* index of generator whose application yielded the antichains */
   }
 
   static class SiData {
-    long[] mRep = new long[2];  /* the partially resorted antichains */
+    final long[] mRep = new long[2];  /* the partially resorted antichains */
     int mS;       /* S & BIT[j] indicates that the elements j-1 and j are in the same subset of the partition */
-    byte[] mP;       /* initial permutation right-multiplied by the performed reordering of elements and antichains */
+    final byte[] mP = Permutation.create();       /* initial permutation right-multiplied by the performed reordering of elements and antichains */
   }
 
   int mOrbitSpace = Utils.ORBITS_INITIAL_ORBSPACE;
@@ -56,7 +56,7 @@ public class Globals {
   long mSi0Size;
   SiData[] mSi0;
   SiData[] mSi1;
-  TreeMap<Long, Integer> mOrbitPos = new TreeMap<>();
+  final TreeMap<Long, Integer> mOrbitPos = new TreeMap<>();
 
   /**
    * Initialise storage space for orbit/stabiliser computation.

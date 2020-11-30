@@ -8,7 +8,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A010064 Base 4 self or Colombian numbers (not of form n + sum of base 4 digits of n).
+ * A010064 Base 4 self or Colombian numbers (not of form k + sum of base 4 digits of k).
  * @author Sean A. Irvine
  */
 public class A010064 extends ComplementSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003422;
 
 /**
- * A036782 a(n) = n - 1 + sum_{j=0..n} j!.
+ * A036782 a(n) = n - 1 + Sum_{j=0..n} j!.
  * @author Sean A. Irvine
  */
 public class A036782 extends A003422 {

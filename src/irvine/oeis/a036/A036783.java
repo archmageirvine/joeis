@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000598;
 
 /**
- * A036783 G.f. satisfies A(x) = 1 + x*cycle_index(G,A(x)) where G = tetragonal pyramid group of order 4 with cycle index (A1^5+2*A1*A4+A1*A2^2)/4.
+ * A036783 G.f. satisfies A(x) = 1 + x*cycle_index(G,A(x)) where G = tetragonal pyramid group of order 4 with cycle index (z1^5+2*z1*z4+z1*z2^2)/4.
  * @author Sean A. Irvine
  */
 public class A036783 extends A000598 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036780 Primes of the form n + sum_{i=1..n} i!.
+ * A036780 Primes of the form n + Sum_{i=1..n} i!.
  * @author Sean A. Irvine
  */
 public class A036780 implements Sequence {

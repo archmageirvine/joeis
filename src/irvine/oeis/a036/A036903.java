@@ -1,20 +1,21 @@
-package irvine.oeis.a032;
+package irvine.oeis.a036;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032510 Scan decimal expansion of Pi until all n-digit strings have been seen; a(n) is last string seen.
+ * A036903 Scan decimal expansion of Pi until all n-digit strings have been seen; a(n) is number of digits that must be scanned.
  * @author Sean A. Irvine
  */
-public class A032510 implements Sequence {
+public class A036903 implements Sequence {
 
   private final CR mA = getCR();
   private int mDigits = 1000;
   private String mS = mA.toString(mDigits);
   private long mN = -1;
   private long mLimit = 1;
+  private long mLength = 0;
 
   protected CR getCR() {
     return CR.PI.divide(CR.TEN); // So we can ignore the period
@@ -35,17 +36,16 @@ public class A032510 implements Sequence {
 
   @Override
   public Z next() {
+    ++mLength;
     mLimit *= 10;
     int maxPos = 0;
-    long maxValue = 0;
     while (++mN < mLimit) {
       final int pos = pos(mN);
       if (pos > maxPos) {
         maxPos = pos;
-        maxValue = mN;
       }
     }
     --mN;
-    return Z.valueOf(maxValue);
+    return Z.valueOf(maxPos + mLength - 3);
   }
 }

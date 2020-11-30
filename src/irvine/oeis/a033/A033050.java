@@ -1,13 +1,15 @@
 package irvine.oeis.a033;
 
+import irvine.oeis.a037.A037454;
+
 /**
  * A033050 Numbers whose set of base 14 digits is {0,1}.
  * @author Sean A. Irvine
  */
-public class A033050 extends A033042 {
+public class A033050 extends A037454 {
 
-  @Override
-  protected int base() {
-    return 14;
+  /** Construct the sequence. */
+  public A033050() {
+    super(0, 2, 14);
   }
 }

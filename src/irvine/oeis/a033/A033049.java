@@ -1,13 +1,15 @@
 package irvine.oeis.a033;
 
+import irvine.oeis.a037.A037454;
+
 /**
  * A033049 Sums of distinct powers of 13.
  * @author Sean A. Irvine
  */
-public class A033049 extends A033042 {
+public class A033049 extends A037454 {
 
-  @Override
-  protected int base() {
-    return 13;
+  /** Construct the sequence. */
+  public A033049() {
+    super(0, 2, 13);
   }
 }

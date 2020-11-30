@@ -284,13 +284,6 @@ final class Canonical {
    * element.
    */
   static void listApplySIP1(final int n, final int k, final int a0, final int m, final int bl, final Globals globals, final long[] l, final int si, final long bigM, final byte[] p) {
-    final boolean report = l[0] == 0x15210A6232L;
-    final long qqq = l[0];
-    if (report) {
-      System.out.println("SAI: listapplySIP1");
-      System.out.println("n=" + n + " k=" + k + " a0=" + a0 + " m=" + m + " bl=" + bl + " si=" + si + " bigM=" + bigM);
-      Permutation.print(n, p, 0);
-    }
     assert globals.mSi0 != null;
     assert globals.mSi0[0] != null;
     final int mask = (int) (Utils.bit(m) - 1);
@@ -379,9 +372,6 @@ final class Canonical {
           globals.mSi1[si1Size].mS = s;
           globals.mSi1[si1Size].mRep[0] = bigP;
           ++si1Size;
-          if (report) {
-            System.out.println("SAI: r=" + r + " i=" + i + " j=" + j + " si1size=" + si1Size + " P=" + Long.toHexString(bigP));
-          }
         }
       }
       si0Size = si1Size;
@@ -390,12 +380,6 @@ final class Canonical {
       globals.mSi1 = sit;
     }
     l[0] = globals.mSi0[0].mRep[0];
-    if (report) {
-      System.out.println("l=" + Long.toHexString(l[0]));
-    }
-    if (l[0] == 0x1421195298L) {
-      System.out.println("SAI: Input was : " + Long.toHexString(qqq));
-    }
     Permutation.copy(n + k, globals.mSi0[0].mP, p);
     globals.mSi0Size = si0Size;
   }
@@ -791,9 +775,6 @@ final class Canonical {
         s.addGenerator(h);
       }
     } else {
-      if (a == 0x1421195298L) {
-        new Throwable().printStackTrace();   // SAI: Yes this is the one that is buggy
-      }
       if (VERBOSE) {
         System.out.println("+++ hashtable query/insert " + Long.toHexString(a) + " => " + aPos);
       }
@@ -1138,27 +1119,14 @@ final class Canonical {
                 antichain.mGlobals.enlargenOrbitSpace();
               }
               final long[] a = {antichain.mGlobals.mOrbitElements[pos].mData[0]};
-              final long spaz = a[0];
-              if (a[0] == 0x1421195298L || a[0] == 0x15210A6232L) {
-                System.out.println("SAI: Already " + Long.toHexString(a[0]));
-              }
               g.mBenes[antichain.mCl][gen].applyP1(a);
-              if (a[0] == 0x1421195298L || a[0] == 0x15210A6232L) {
-                System.out.println("SAI: Post applyP1 " + Long.toHexString(a[0]) + " spaz=" + spaz);
-              }
               if (antichain.mCl < antichain.mLattice.mNLev - 2) {
                 g.mBenes[antichain.mLattice.mNLev - 1][gen].applyBlockedP1(a);
-              }
-              if (a[0] == 0x1421195298L || a[0] == 0x15210A6232L) {
-                System.out.println("SAI: Post applyBlockedP1 " + Long.toHexString(a[0]));
               }
               final byte[] p = Permutation.create();
               Permutation.init(s.mG.mN, p);
               listApplySIP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, a, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p);
               /* ...we're done if the result is smaller than the original element */
-              if (a[0] == 0x1421195298L) {
-                System.out.println("SAI: Post listApplySIP1");
-              }
               if (l[0] > a[0]) {
                 /* determine the position up to which we can backtrack */
                 int m = 0;

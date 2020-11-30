@@ -267,11 +267,12 @@ public class Benes {
     int bPos = 2 * ldN - 1;
     final byte[] tgt = ByteUtils.identity(Permutation.create());
     final byte[] invTgt = ByteUtils.identity(Permutation.create());
-    for (int stage = 0, mask = 1; stage < ldN; ++stage, mask <<= 1) {
-      final int nmask = ~mask;
+    long mask = 1;
+    for (int stage = 0; stage < ldN; ++stage, mask <<= 1) {
+      final long nmask = ~mask;
       int srcSet = 0;
-      int cfgSrc = 0;
-      int cfgTgt = 0;
+      long cfgSrc = 0;
+      long cfgTgt = 0;
       for (int mainIdx = (int) Utils.bit(ldN); mainIdx-- != 0; ) { /* this ensures that no crossings contain padded bits */
         if ((mainIdx & mask) != 0) { /* loop over pairs... */
           /* ... upper representative */
@@ -296,7 +297,7 @@ public class Benes {
             if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
               cfgSrc |= Utils.bit(srcIdx & nmask); /* set the appropriate bit in the Bene&scaron; network */
-              final int idx2 = srcIdx ^ mask; /* the other part of the pair; to be swapped */
+              final int idx2 = (int) (srcIdx ^ mask); /* the other part of the pair; to be swapped */
               srcSet |= Utils.bit(idx2);            /* mark that source index as seen... */
               final byte t = src[srcIdx];                /* ...and update the source side */
               src[srcIdx] = src[idx2];        /* ...configuration that the */
@@ -310,14 +311,14 @@ public class Benes {
             }
           }
           /* ... lower representative */
-          srcIdx = mainIdx ^ mask;
+          srcIdx = (int) (mainIdx ^ mask);
           while ((Utils.bit(srcIdx) & srcSet) == 0) {
             srcSet |= Utils.bit(srcIdx); /* ...mark that source index as seen... */
             int tgtIdx = srcIdx < n ? invTgt[src[srcIdx]] : srcIdx; /* tgtIdx maps to srcIdx */
             if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
               cfgTgt |= Utils.bit(tgtIdx & nmask); /* set the appropriate bit in the Bene&scaron; network */
-              final int idx2 = tgtIdx ^ mask; /* the other part of the pair; to be swapped */
+              final int idx2 = (int) (tgtIdx ^ mask); /* the other part of the pair; to be swapped */
               final byte t = tgt[tgtIdx];                /* update the target side... */
               tgt[tgtIdx] = tgt[idx2];        /* ...configuration that the... */
               tgt[idx2] = t;                   /* ...next stage sees; */
@@ -331,7 +332,7 @@ public class Benes {
             if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
               cfgSrc |= Utils.bit(srcIdx & nmask); /* set the appropriate bit in the Bene&scaron; network */
-              final int idx2 = srcIdx ^ mask; /* the other part of the pair; to be swapped */
+              final int idx2 = (int) (srcIdx ^ mask); /* the other part of the pair; to be swapped */
               srcSet |= Utils.bit(idx2);            /* mark that source index as seen... */
               final byte t = src[srcIdx];                /* ...and update the source side */
               src[srcIdx] = src[idx2];        /* ...configuration that the */

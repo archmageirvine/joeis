@@ -185,7 +185,6 @@ public class Benes {
     r[0] = a;
   }
 
-
   /*
    * Apply the Bene&scaron; network B to a[0],a[1].  The masks indicate the lower bit of each pair.
    *
@@ -203,7 +202,6 @@ public class Benes {
       a[1] ^= t;
     }
   }
-
 
   /*
    * Apply the Bene&scaron; network *B acting on the positions of the packed antichain list a[0],a[1], with width bits of
@@ -254,7 +252,6 @@ public class Benes {
       }
     }
   }
-
 
   /*
    * Return a newly created Bene&scaron; network (carrying a reference count) realising as many copies of the
@@ -387,14 +384,12 @@ public class Benes {
     }
   }
 
-
   /*
    * Return n!.
    */
   private static int factorial(final int n) {
     return n <= 1 ? 1 : n * factorial(n - 1);
   }
-
 
   /**
    * Precompute Bene&scaron; networks for all permutations on at most BENES_SMALL points.

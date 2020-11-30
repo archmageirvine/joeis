@@ -248,7 +248,6 @@ class Antichain {
     return true;
   }
 
-
   /*
    * If possible, step antichaindata counters starting from the current on the current level.
    * The lattice-antichain conditions are NOT verified.  Special case of a single antichain.

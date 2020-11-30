@@ -163,7 +163,7 @@ final class Canonical {
       for (int i = lo; i < n; ++i) {
         long t1;
         final long t2;
-        if ((bl & Utils.bit(i)) != 0 && (t1 = (l[0] & mask[i - 1]) >>> m) > (t2 = (l[0] & mask[i]))) {
+        if ((bl & Utils.bit(i)) != 0 && (t1 = (l[0] & mask[i - 1]) >>> m) > (t2 = l[0] & mask[i])) {
           t1 ^= t2;
           l[0] ^= (t1 << m) | t1;
           final byte tp = p[offset + i - 1];

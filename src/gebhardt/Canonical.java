@@ -786,7 +786,7 @@ final class Canonical {
       } else {
         Permutation.multiply(s.mG.mN, p, g.mInvPerm[gen], antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mToRoot);
       }
-      antichain.mGlobals.mOrbitSize++;
+      ++antichain.mGlobals.mOrbitSize;
     }
   }
 

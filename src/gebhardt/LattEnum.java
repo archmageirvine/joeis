@@ -38,9 +38,9 @@ public abstract class LattEnum {
 
   abstract void reg(final Lattice l);  /* function called for registering lattices */
 
-  Globals mGlobals;                /* "global" data for process/thread         */
-  Lattice mL;                 /* lattice whose descendants we enumerate   */
-  long mCount;             /* number of lattices found                 */
+  Globals mGlobals;       /* "global" data for process/thread         */
+  Lattice mL;             /* lattice whose descendants we enumerate   */
+  long mCount;            /* number of lattices found                 */
   int mN;                 /* target size                              */
   int mNmin;              /* minimum size for recursion               */
 
@@ -58,7 +58,7 @@ public abstract class LattEnum {
   static class LattEnumStdout extends LattEnum {
 
     /*
-     * Register the lattice L.
+     * Register the lattice l.
      */
     void reg(final Lattice l) {
       if (l.mN == mN) {
@@ -67,7 +67,6 @@ public abstract class LattEnum {
       }
     }
   }
-
 
   /**
    * Return the number of registered lattices.
@@ -91,7 +90,7 @@ public abstract class LattEnum {
   }
 
   /**
-   * Return a structure for counting the descendants of *l of size equal to n, for which all intermediate lattices
+   * Return a structure for counting the descendants of l of size equal to n, for which all intermediate lattices
    * have size at most <code>nMin</code>.
    * @param l lattice
    * @param n size
@@ -113,7 +112,7 @@ public abstract class LattEnum {
 
 
   /*
-   * Return a structure for writing string representations of the descendants of *l of size n to stdout, for
+   * Return a structure for writing string representations of the descendants of l of size n to stdout, for
    * which all intermediate lattices have size at most nMin..
    */
   LattEnum stdoutCreate(final Lattice l, final int n, final int nMin, final Globals globals) {
@@ -206,9 +205,9 @@ public abstract class LattEnum {
   /*
    * Construct canonical lattices with n elements by recursively adding new levels to the lattice l with 2
    * elements, where the first added level contains at least nmin elements.  For every canonical lattice
-   * found during this process (also for those with fewer than n elements), the function *reg is called.
+   * found during this process (also for those with fewer than n elements), the function reg is called.
    *
-   * The function assumes that *l is the lattice with 2 elements.
+   * The function assumes that l is the lattice with 2 elements.
    */
   void growLattice2(final int n, final Lattice l, final int nmin) {
     final Lattice la = new Lattice();

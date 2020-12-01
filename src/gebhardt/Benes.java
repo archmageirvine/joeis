@@ -353,13 +353,11 @@ public class Benes {
           cfgSrc = (cfgSrc | (cfgSrc << t)) << t;
           t <<= 1;
         }
-        mMask[fPos] = smask;
-        fPos++;
+        mMask[fPos++] = smask;
       }
       if (cfgTgt != 0) {
         long smask;
-        --bPos;
-        mShift[bPos] = (byte) Utils.bit(stage);
+        mShift[--bPos] = (byte) Utils.bit(stage);
         smask = 0;
         int t = n;
         for (int i = BITSPERLONG / n; i-- != 0; ) {

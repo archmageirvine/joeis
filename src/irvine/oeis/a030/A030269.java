@@ -5,7 +5,7 @@ import irvine.oeis.InverseEulerTransformSequence;
 import irvine.oeis.a006.A006966;
 
 /**
- * A030269.
+ * A030269 Number of nonisomorphic disconnected partial lattices.
  * @author Sean A. Irvine
  */
 public class A030269 extends InverseEulerTransformSequence {

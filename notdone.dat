@@ -1244,8 +1244,6 @@ A030262 Number of nonisomorphic commutative groupoids with no idempotents and a 
 A030263 Number of nonisomorphic commutative groupoids with 1 idempotent
 A030264 Number of nonisomorphic commutative groupoids with 1 idempotent and no symmetry
 A030265 Number of nonisomorphic commutative groupoids with 1 idempotent and a nontrivial symmetry
-A030268 Number of nonisomorphic connected partial lattices, depends on A006966
-A030269 Number of nonisomorphic disconnected partial lattices, depends on A006966
 A030271 Number of nonisomorphic groupoids with 1 idempotent and no symmetry
 A030453 Number of linearly ordered Abelian monoids of size n (semi-groups with greatest element of the corresponding chain as neutral element); triangular norms on an n-chain
 A030455 Numbers having the same number of digits as letters in their US English spelling, pretty dumb

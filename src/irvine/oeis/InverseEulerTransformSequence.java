@@ -18,7 +18,7 @@ import irvine.math.Mobius;
 public class InverseEulerTransformSequence implements Sequence, Serializable {
 
   private final Sequence mSeq;
-  private final ArrayList<Z> mTerms = new ArrayList<>();
+  protected final ArrayList<Z> mTerms = new ArrayList<>();
   private final Z mInitialTerm;
 
   /**

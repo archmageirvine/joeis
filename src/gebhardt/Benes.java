@@ -159,30 +159,28 @@ public class Benes {
   /*
    * Apply the Bene&scaron; network b to r.  The masks indicate the lower bit of each pair.
    */
-  void applyP1(final long[] r) {
-    long a = r[0];
+  long applyP1(long a) {
     for (int i = 0; i < mDepth; ++i) {
       long t = ((a >>> mShift[i]) ^ a) & mMask[i];
       a ^= t;
       t <<= mShift[i];
       a ^= t;
     }
-    r[0] = a;
+    return a;
   }
 
   /*
    * Apply the Bene&scaron; network B acting on the positions of the packed antichain list r.
    * The masks for blocked Bene&scaron; networks indicate the higher bit of each pair.
    */
-  void applyBlockedP1(final long[] r) {
-    long a = r[0];
+  long applyBlockedP1(long a) {
     for (int i = 0; i < mDepth; ++i) {
       long t = ((a << mShift[i]) ^ a) & mMask[i];
       a ^= t;
       t >>>= mShift[i];
       a ^= t;
     }
-    r[0] = a;
+    return a;
   }
 
   /*

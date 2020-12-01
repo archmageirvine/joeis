@@ -118,7 +118,7 @@ class Antichain {
   }
 
   /*
-   * Ensure that the stabiliser SD[lev].STC exists, and return SD[lev].STC.
+   * Ensure that the stabiliser SD[lev].StC exists, and return SD[lev].StC.
    */
   PermGrpC ensureStabiliser(final int lev) {
     if (mStabilisers[lev].mStC == null) {

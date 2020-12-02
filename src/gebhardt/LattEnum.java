@@ -111,12 +111,27 @@ public abstract class LattEnum {
         // Determine size of automorphism group
         final PermGrp grp = l.mS;
         final ArrayList<IntegerPermutation> generators = new ArrayList<>(grp.mNgens);
+        final Z f = mF.factorial(mN);
+        if (grp.mNgens == 0) {
+          // trivial action
+          if (grp.mN == 0) { // why? -- the triv group seems to come through multiple times?
+            mCount += f.longValueExact();
+            //mCount += mF.factorial(mN - grp.mN).longValueExact();
+            System.out.println("Triv " + mCount);
+          } else {
+            System.out.println("Ignoring trivial: grp=" + grp.mN);
+          }
+          return;
+        }
         for (int k = 0; k < grp.mNgens; ++k) {
-          generators.add(new IntegerPermutation(Arrays.copyOf(grp.mPerm[k], mN)));
+          generators.add(new IntegerPermutation(Arrays.copyOf(grp.mPerm[k], grp.mN)));
         }
         final List<BaseStrongGeneratingElement> bsgs = SchreierSims.createBSGSList(generators);
         final Z order = SchreierSims.calculateOrder(bsgs);
-        mCount += mF.factorial(mN).divide(order).longValueExact();
+        System.out.println("Reg: n=" + mN + " grp=" + grp.mN + " gens=" + grp.mNgens + " " + f + " |A|=" + order + " contrib=" + f.divide(order));
+        PermGrp.printGenerators(grp, 0);
+        //mCount += order.longValueExact();
+        mCount += f.divide(order).longValueExact(); // todo mCount should be Z
       }
     }
   }

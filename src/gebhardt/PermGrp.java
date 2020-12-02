@@ -65,10 +65,12 @@ class PermGrp {
 //  }
 
 
-  /*
+  /**
    * TEST FUNCTION:  Print current generators (in array notation).
+   * @param g the group
+   * @param offset an offset
    */
-  static void printGenerators(final PermGrp g, final int offset) {
+  public static void printGenerators(final PermGrp g, final int offset) {
     for (int i = 0; i < g.mNgens; ++i) {
       Permutation.print(g.mN, g.mPerm[i], offset);
     }

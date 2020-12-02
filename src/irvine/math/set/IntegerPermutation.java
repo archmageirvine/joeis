@@ -58,6 +58,17 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     mPerm = perm;
   }
 
+  /**
+   * Construct a new 0-based permutation
+   * @param perm the permutation
+   */
+  public IntegerPermutation(final byte... perm) {
+    mPerm = new int[perm.length];
+    for (int k = 0; k < perm.length; ++k) {
+      mPerm[k] = perm[k] & 0xFF;
+    }
+  }
+
   @Override
   public boolean equals(final Object obj) {
     if (!(obj instanceof IntegerPermutation)) {

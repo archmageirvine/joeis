@@ -1,5 +1,15 @@
 package gebhardt;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.group.BaseStrongGeneratingElement;
+import irvine.math.group.SchreierSims;
+import irvine.math.set.IntegerPermutation;
+import irvine.math.z.Z;
+
 /**
  * Lattice enumeration.
  * @author Volker Gebhardt
@@ -36,7 +46,7 @@ public abstract class LattEnum {
 
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
-  abstract void reg(final Lattice l);  /* function called for registering lattices */
+  protected abstract void reg(final Lattice l);  /* function called for registering lattices */
 
   Globals mGlobals;       /* "global" data for process/thread         */
   Lattice mL;             /* lattice whose descendants we enumerate   */
@@ -44,23 +54,76 @@ public abstract class LattEnum {
   int mN;                 /* target size                              */
   int mNmin;              /* minimum size for recursion               */
 
-  static class LattEnumCount extends LattEnum {
-    /*
-     * Register the lattice l.
+  /**
+   * Enumerator for simple counting.
+   */
+  public static class LattEnumCount extends LattEnum {
+
+    /**
+     * Return a structure for counting the descendants of l of size equal to n, for which all intermediate lattices
+     * have size at most <code>nMin</code>.
+     * @param l lattice
+     * @param n size
+     * @param nMin minimum size of intermediate lattices
+     * @param globals global state
      */
-    void reg(final Lattice l) {
+    public LattEnumCount(final Lattice l, final int n, final int nMin, final Globals globals) {
+      if (l != null && (n - 2 < l.mN || nMin - 2 < l.mN)) {
+        throw new IllegalArgumentException("Bad parameters: given lattice larger than target/intermediate size!");
+      }
+      mL = l;
+      mN = n - 2;
+      mNmin = nMin - 2;
+      mCount = 0;
+      mGlobals = globals;
+    }
+
+    @Override
+    protected void reg(final Lattice l) {
       if (l.mN == mN) {
         ++mCount;
       }
     }
   }
 
-  static class LattEnumStdout extends LattEnum {
+  /**
+   * Enumerator for labelled counting.
+   */
+  public static class LattEnumLabelledCount extends LattEnumCount {
 
-    /*
-     * Register the lattice l.
+    private final MemoryFactorial mF = new MemoryFactorial();
+
+    /**
+     * Return a structure for counting the descendants of l of size equal to n, for which all intermediate lattices
+     * have size at most <code>nMin</code>.
+     * @param l lattice
+     * @param n size
+     * @param nMin minimum size of intermediate lattices
+     * @param globals global state
      */
-    void reg(final Lattice l) {
+    public LattEnumLabelledCount(final Lattice l, final int n, final int nMin, final Globals globals) {
+      super(l, n, nMin, globals);
+    }
+
+    @Override
+    protected void reg(final Lattice l) {
+      if (l.mN == mN) {
+        // Determine size of automorphism group
+        final PermGrp grp = l.mS;
+        final ArrayList<IntegerPermutation> generators = new ArrayList<>(grp.mNgens);
+        for (int k = 0; k < grp.mNgens; ++k) {
+          generators.add(new IntegerPermutation(Arrays.copyOf(grp.mPerm[k], mN)));
+        }
+        final List<BaseStrongGeneratingElement> bsgs = SchreierSims.createBSGSList(generators);
+        final Z order = SchreierSims.calculateOrder(bsgs);
+        mCount += mF.factorial(mN).divide(order).longValueExact();
+      }
+    }
+  }
+
+  static class LattEnumStdout extends LattEnum {
+    @Override
+    protected void reg(final Lattice l) {
       if (l.mN == mN) {
         ++mCount;
         System.out.println(l.toString());
@@ -88,28 +151,6 @@ public abstract class LattEnum {
       }
     }
   }
-
-  /**
-   * Return a structure for counting the descendants of l of size equal to n, for which all intermediate lattices
-   * have size at most <code>nMin</code>.
-   * @param l lattice
-   * @param n size
-   * @param nMin minimum size of intermediate lattices
-   * @param globals global state
-   */
-  public static LattEnum countCreate(final Lattice l, final int n, final int nMin, final Globals globals) {
-    if (l != null && (n - 2 < l.mN || nMin - 2 < l.mN)) {
-      throw new IllegalArgumentException("Bad parameters: given lattice larger than target/intermediate size!");
-    }
-    final LattEnumCount e = new LattEnumCount();
-    e.mL = l;
-    e.mN = n - 2;
-    e.mNmin = nMin - 2;
-    e.mCount = 0;
-    e.mGlobals = globals;
-    return e;
-  }
-
 
   /*
    * Return a structure for writing string representations of the descendants of l of size n to stdout, for

@@ -442,4 +442,8 @@ public class Lattice {
 //    }
 //    return mc;
 //  }
+
+  public int getN() {
+    return mN;
+  }
 }

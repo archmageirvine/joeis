@@ -53,9 +53,6 @@ public class A006966 implements Sequence {
    */
   private static void bitmapInit(final long n) {
     final long bits = Long.SIZE;
-    if (Utils.MAXN > bits) {
-      throw new UnsupportedOperationException("Build problem: flags64 cannot hold MAXN bits!");
-    }
     final long b1 = (long) Math.floor(Math.sqrt(bits));
     final long a1 = bits / b1;
     final long b2 = (long) Math.ceil(Math.sqrt(bits));
@@ -72,27 +69,29 @@ public class A006966 implements Sequence {
     if ((long) Math.ceil(Math.log(Utils.MAXN - 2) / Math.log(2)) != Utils.LD_MAXN_2) {
       throw new UnsupportedOperationException("Build problem: Specified value of LD_MAXN_2 is wrong!");
     }
-    if (Long.compareUnsigned(Utils.FSIZE, 1L << (Long.SIZE - 1)) >= 0) {
-      throw new UnsupportedOperationException("Build problem: elt cannot hold offsets in antichain.F!");
-    }
   }
 
-  private int mN = -1;
+  protected int mN = -1;
   {
     Benes.initSmall();
   }
-  final Globals mGlobals = new Globals();
-  final Lattice mLattice = Lattice.init2();
+  protected final Globals mGlobals = new Globals();
+  protected final Lattice mLattice = Lattice.init2();
 
   @Override
   public Z next() {
-    if (++mN <= 1) { // can make this 3
+    if (++mN <= 1) {
       return Z.ONE;
     }
     bitmapInit(mN);
-    final LattEnum e = LattEnum.countCreate(mLattice, mN, 3, mGlobals);
+    final LattEnum e = getEnum();
     e.doEnumeration();
     return Z.valueOf(e.getCount());
+  }
+
+  protected LattEnum getEnum() {
+    return new LattEnum.LattEnumCount(mLattice, mN, 3, mGlobals);
+    //return new LattEnum.LattEnumLabelledCount(mLattice, mN, 3, mGlobals);
   }
 
   /**

@@ -353,7 +353,7 @@ final class Canonical {
           }
           Permutation.copy(n + k, q, globals.mSi1[si1Size].mP);
           if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
-            final long mask1 = (Utils.bit((r - j) * m) - 1) << ((j + 1) * m);
+            final long mask1 = (Utils.bit((r - j) * (long) m) - 1) << ((j + 1) * m);
             final long mask2 = (Utils.bit(dr * m) - 1) << ((j - dr + 1) * m);
             bigP = (bigP & ~(mask1 | mask2)) | ((bigP & mask1) >>> (dr * m)) | ((bigP & mask2) << ((r - j) * m));
             /* left-multiply q=globals.SI1[si1Size].p by the inverse of the applied permutation */

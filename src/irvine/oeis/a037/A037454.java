@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 /**
  * A037454 a(n) = Sum_{i=0..m} d(i)*6^i, where Sum_{i=0..m} d(i)*3^i is the base 3 representation of n.
  * Implements the "rebase" notation of A000695: (3)[n](6).
- * For example: decimal 30 = 1010 in base 3 (=baseFrom) -> 1010 in base 6 (=baseTo) = 222 in decimal.
+ * For example: decimal 30 = 1010 in base 3 (=<code>baseFrom</code>) -&gt; 1010 in base 6 (=<code>baseTo</code>) = 222 in decimal.
  * @author Georg Fischer
  */
 public class A037454 implements Sequence {
@@ -69,7 +69,7 @@ public class A037454 implements Sequence {
     } // with arguments
     final Sequence seq = new A037454(0, parms[0], parms[1]);
     for (int iterm = 0; iterm < parms[2]; ++iterm) { // b-file format
-      System.out.print((iterm > 0 ? "," : "") + seq.next().toString());
+      System.out.print((iterm > 0 ? "," : "") + seq.next());
     } // for iterm
     System.out.println();
   } // main

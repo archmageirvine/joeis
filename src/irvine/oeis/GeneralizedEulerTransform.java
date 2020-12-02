@@ -11,7 +11,7 @@ import irvine.math.z.ZUtils;
  * A generalized Euler transform.
  * Suppose given two sequences f(n) and g(n), n>0, we define a new sequence a(n), n&gt;=0, <br />
  * by Product_{n&gt;0} (1 - g(n)*x^n)^(-f(n)) = a(0) + a(1)*x + a(2)*x^2 + ... <br />
- * Since Product_{n&gt;0} (1 - g(n)*x^n)^(-f(n)) = exp(Sum_{n>0} (Sum_{d|n} d*f(d)*g(d)^(n/d))*x^n/n),  <br />
+ * Since Product_{n&gt;0} (1 - g(n)*x^n)^(-f(n)) = exp(Sum_{n&gt;0} (Sum_{d|n} d*f(d)*g(d)^(n/d))*x^n/n),  <br />
  * we see that a(n) is given explicitly by a(n) = (1/n) * Sum_{k=1..n} b(k)*a(n-k) where b(n) = Sum_{d|n} d*f(d)*g(d)^(n/d). <br />
  * Examples: <br />
  * 1. If we set g(n) = 1, we get the usual Euler transform. <br />

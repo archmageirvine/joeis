@@ -50,7 +50,7 @@ public abstract class LattEnum {
 
   Globals mGlobals;       /* "global" data for process/thread         */
   Lattice mL;             /* lattice whose descendants we enumerate   */
-  long mCount;            /* number of lattices found                 */
+  Z mCount;               /* number of lattices found                 */
   int mN;                 /* target size                              */
   int mNmin;              /* minimum size for recursion               */
 
@@ -74,14 +74,14 @@ public abstract class LattEnum {
       mL = l;
       mN = n - 2;
       mNmin = nMin - 2;
-      mCount = 0;
+      mCount = Z.ZERO;
       mGlobals = globals;
     }
 
     @Override
     protected void reg(final Lattice l) {
       if (l.mN == mN) {
-        ++mCount;
+        mCount = mCount.add(1);
       }
     }
   }
@@ -105,7 +105,21 @@ public abstract class LattEnum {
       super(l, n, nMin, globals);
     }
 
-    boolean sDebug = true;
+    boolean sDebug = false;
+
+    private Z implicitOrder(int si) {
+      Z o = Z.ONE;
+      int k = 1;
+      while (si != 0) {
+        if ((si & 1) == 1) {
+          o = o.multiply(++k);
+        } else {
+          k = 1;
+        }
+        si >>>= 1;
+      }
+      return o;
+    }
 
     @Override
     protected void reg(final Lattice l) {
@@ -119,11 +133,11 @@ public abstract class LattEnum {
         final ArrayList<IntegerPermutation> generators = new ArrayList<>(grp.mNgens);
         final Z f = mF.factorial(mN + 2);
         final int ssi = Integer.bitCount(l.mSi);
+        final Z io = implicitOrder(l.mSi);
         if (grp.mNgens == 0) {
           // trivial action
-          //final Z contrib = f.divide(mF.factorial(grp.mN));
-          final Z contrib = f.divide(mF.factorial(1 + ssi));
-          mCount += contrib.longValueExact();
+          final Z contrib = f.divide(io);
+          mCount = mCount.add(contrib);
           if (sDebug) {
             System.out.println("Trivial: pts=" + (mN + 2) + " s=" + grp.mN + " |si|=" + ssi + " gens=0 " + " pts!/|A|=" + contrib + " sum=" + mCount);
           }
@@ -133,10 +147,11 @@ public abstract class LattEnum {
           generators.add(new IntegerPermutation(Arrays.copyOf(grp.mPerm[k], grp.mN)));
         }
         final List<BaseStrongGeneratingElement> bsgs = SchreierSims.createBSGSList(generators);
-        final Z order = SchreierSims.calculateOrder(bsgs).multiply(1 + ssi);
-        mCount += f.divide(order).longValueExact(); // todo mCount should be Z
+        final Z order = SchreierSims.calculateOrder(bsgs).multiply(implicitOrder(l.mSi));
+        final Z contrib = f.divide(order);
+        mCount = mCount.add(contrib);
         if (sDebug) {
-          System.out.println("Register: pts=" + mN + " s=" + grp.mN + " |si|=" + ssi + " gens=" + grp.mNgens + " " + f + " |A|=" + order + " pts!/|A|=" + f.divide(order) + " sum=" + mCount);
+          System.out.println("Register: pts=" + mN + " s=" + grp.mN + " |si|=" + ssi + " gens=" + grp.mNgens + " " + f + " |A|=" + order + " pts!/|A|=" + contrib + " sum=" + mCount);
         }
       }
     }
@@ -146,7 +161,7 @@ public abstract class LattEnum {
     @Override
     protected void reg(final Lattice l) {
       if (l.mN == mN) {
-        ++mCount;
+        mCount = mCount.add(1);
         System.out.println(l.toString());
       }
     }
@@ -155,7 +170,7 @@ public abstract class LattEnum {
   /**
    * Return the number of registered lattices.
    */
-  public long getCount() {
+  public Z getCount() {
     return mCount;
   }
 
@@ -185,7 +200,7 @@ public abstract class LattEnum {
     e.mL = l;
     e.mN = n - 2;
     e.mNmin = nMin - 2;
-    e.mCount = 0;
+    e.mCount = Z.ZERO;
     e.mGlobals = globals;
     return e;
   }

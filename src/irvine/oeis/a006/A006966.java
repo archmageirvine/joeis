@@ -86,7 +86,7 @@ public class A006966 implements Sequence {
     bitmapInit(mN);
     final LattEnum e = getEnum();
     e.doEnumeration();
-    return Z.valueOf(e.getCount());
+    return e.getCount();
   }
 
   protected LattEnum getEnum() {

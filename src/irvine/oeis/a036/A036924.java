@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A036924.
+ * A036924 Digit sum of 'even' number equals digit sum of juxtaposition of its prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A036924 implements Sequence {

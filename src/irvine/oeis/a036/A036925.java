@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A036925.
+ * A036925 Digit sum of 'odd' number equals digit sum of juxtaposition of its prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A036925 implements Sequence {

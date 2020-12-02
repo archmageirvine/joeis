@@ -105,21 +105,27 @@ public abstract class LattEnum {
       super(l, n, nMin, globals);
     }
 
+    boolean sDebug = true;
+
     @Override
     protected void reg(final Lattice l) {
       if (l.mN == mN) {
         // Determine size of automorphism group
+        if (sDebug) {
+          System.out.println();
+          l.print();
+        }
         final PermGrp grp = l.mS;
         final ArrayList<IntegerPermutation> generators = new ArrayList<>(grp.mNgens);
-        final Z f = mF.factorial(mN);
+        final Z f = mF.factorial(mN + 2);
+        final int ssi = Integer.bitCount(l.mSi);
         if (grp.mNgens == 0) {
           // trivial action
-          if (grp.mN == 0) { // why? -- the triv group seems to come through multiple times?
-            mCount += f.longValueExact();
-            //mCount += mF.factorial(mN - grp.mN).longValueExact();
-            System.out.println("Triv " + mCount);
-          } else {
-            System.out.println("Ignoring trivial: grp=" + grp.mN);
+          //final Z contrib = f.divide(mF.factorial(grp.mN));
+          final Z contrib = f.divide(mF.factorial(1 + ssi));
+          mCount += contrib.longValueExact();
+          if (sDebug) {
+            System.out.println("Trivial: pts=" + (mN + 2) + " s=" + grp.mN + " |si|=" + ssi + " gens=0 " + " pts!/|A|=" + contrib + " sum=" + mCount);
           }
           return;
         }
@@ -127,11 +133,12 @@ public abstract class LattEnum {
           generators.add(new IntegerPermutation(Arrays.copyOf(grp.mPerm[k], grp.mN)));
         }
         final List<BaseStrongGeneratingElement> bsgs = SchreierSims.createBSGSList(generators);
-        final Z order = SchreierSims.calculateOrder(bsgs);
-        System.out.println("Reg: n=" + mN + " grp=" + grp.mN + " gens=" + grp.mNgens + " " + f + " |A|=" + order + " contrib=" + f.divide(order));
-        PermGrp.printGenerators(grp, 0);
-        //mCount += order.longValueExact();
+        final Z order = SchreierSims.calculateOrder(bsgs).multiply(1 + ssi);
         mCount += f.divide(order).longValueExact(); // todo mCount should be Z
+        if (sDebug) {
+          System.out.println("Reg: pts=" + mN + " s=" + grp.mN + " gens=" + grp.mNgens + " " + f + " |A|=" + order + " pts!/|A|=" + f.divide(order) + " sum=" + mCount);
+          PermGrp.printGenerators(grp, 0);
+        }
       }
     }
   }

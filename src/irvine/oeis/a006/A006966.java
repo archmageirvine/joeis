@@ -91,7 +91,6 @@ public class A006966 implements Sequence {
 
   protected LattEnum getEnum() {
     return new LattEnum.LattEnumCount(mLattice, mN, 3, mGlobals);
-    //return new LattEnum.LattEnumLabelledCount(mLattice, mN, 3, mGlobals);
   }
 
   /**

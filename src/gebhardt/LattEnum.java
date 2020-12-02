@@ -136,8 +136,7 @@ public abstract class LattEnum {
         final Z order = SchreierSims.calculateOrder(bsgs).multiply(1 + ssi);
         mCount += f.divide(order).longValueExact(); // todo mCount should be Z
         if (sDebug) {
-          System.out.println("Reg: pts=" + mN + " s=" + grp.mN + " gens=" + grp.mNgens + " " + f + " |A|=" + order + " pts!/|A|=" + f.divide(order) + " sum=" + mCount);
-          PermGrp.printGenerators(grp, 0);
+          System.out.println("Register: pts=" + mN + " s=" + grp.mN + " |si|=" + ssi + " gens=" + grp.mNgens + " " + f + " |A|=" + order + " pts!/|A|=" + f.divide(order) + " sum=" + mCount);
         }
       }
     }

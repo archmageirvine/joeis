@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.set.IntegerPermutation;
+import irvine.math.z.Z;
 
 /**
  * This class holds <i>i</i>-th base point (<code>&beta;<sub>i</sub></code>), generators of
@@ -140,8 +141,8 @@ public class BaseStrongGeneratingElement {
    * Returns size of orbit.
    * @return size of orbit
    */
-  public int orbitSize() {
-    return mOrbitList.size();
+  public Z orbitSize() {
+    return Z.valueOf(mOrbitList.size());
   }
 
   /**

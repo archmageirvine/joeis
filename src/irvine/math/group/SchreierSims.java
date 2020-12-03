@@ -675,7 +675,7 @@ public final class SchreierSims {
     Z order = Z.ONE;
     final int size = bsgsList.size();
     for (int i = from; i < size; ++i) {
-      order = order.multiply(Z.valueOf(bsgsList.get(i).orbitSize()));
+      order = order.multiply(bsgsList.get(i).orbitSize());
     }
     return order;
   }

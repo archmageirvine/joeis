@@ -45,9 +45,6 @@
      <Match classregex="irvine.oeis.AbstractSequenceTest" >
        <BugCode name="RCN" />
      </Match>
-     <Match classregex="irvine.language.Kwic" >
-       <BugCode name="RCN" />
-     </Match>
 
      <!-- Skip unreferenced field in anonymous classes -->
      <Match classregex=".*\$[0-9]+">
@@ -125,11 +122,6 @@
 
      <Match classregex="irvine.math.PowerSetTest">
        <BugCode name="ITA"/>
-     </Match>
-
-     <!-- Intentional null -->
-     <Match classregex="irvine.util.io.DedupeTest">
-       <BugCode name="NP"/>
      </Match>
 
      <!-- False positive for switch -->
@@ -246,8 +238,11 @@
      <Match classregex="irvine.oeis.a036.A036382">
        <BugCode name="SEO"/>
      </Match>
-     <!-- False positive, this cannot be reordered. -->
+     <!-- False positives, these cannot be reordered. -->
      <Match classregex="gebhardt.PermGrpC">
+       <BugCode name="SEO"/>
+     </Match>
+     <Match classregex="gebhardt.Canonical">
        <BugCode name="SEO"/>
      </Match>
 
@@ -257,10 +252,6 @@
      </Match>
      <Match classregex=".*Test">
        <BugCode name="DMI"/>
-     </Match>
-
-     <Match classregex="irvine.tgraph.DependencyGraph">
-       <BugCode name="IICU"/>
      </Match>
 
      <!-- false-positive -->
@@ -273,9 +264,6 @@
      </Match>
 
      <Match classregex="irvine.util.io.IOUtils">
-       <BugCode name="LEST"/>
-     </Match>
-     <Match classregex="irvine.language.LiquidTokenizer">
        <BugCode name="LEST"/>
      </Match>
      <Match classregex="irvine.math.lattice.*">

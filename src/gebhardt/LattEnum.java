@@ -105,20 +105,20 @@ public abstract class LattEnum {
       super(l, n, nMin, globals);
     }
 
-    boolean sDebug = false;
+    boolean sDebug = true;
 
     private Z implicitOrder(int si) {
-      Z o = Z.ONE;
+      Z ord = Z.ONE;
       int k = 1;
       while (si != 0) {
         if ((si & 1) == 1) {
-          o = o.multiply(++k);
+          ord = ord.multiply(++k);
         } else {
           k = 1;
         }
         si >>>= 1;
       }
-      return o;
+      return ord;
     }
 
     @Override

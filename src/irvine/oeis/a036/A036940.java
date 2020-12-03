@@ -9,15 +9,34 @@ import irvine.oeis.a020.A020461;
  */
 public class A036940 extends A020461 {
 
-  private Z mA = super.next();
-  private int mN = 0;
+  private int mLen = 0;
+  private final char mLo;
+  private final char mHi;
+
+  protected A036940(final char lo, final char hi) {
+    mLo = lo;
+    mHi = hi;
+  }
+
+  /** Construct the sequence. */
+  public A036940() {
+    this('3', '4');
+  }
 
   @Override
   public Z next() {
-    ++mN;
-    while (mA.toString().length() < mN) {
-      mA = super.next();
+    Z n = Z.ONE.shiftLeft(++mLen);
+    while (true) {
+      final String s = n.toString(2).substring(1);
+      System.out.println(mLen + " " + s);
+      if (s.length() > mLen) {
+        return Z.ZERO; // no solution
+      }
+      final Z m = new Z(s.replace('1', mHi).replace('0', mLo));
+      if (m.isProbablePrime()) {
+        return m;
+      }
+      n = n.add(1);
     }
-    return mA.toString().length() == mN ? mA : Z.ZERO;
   }
 }

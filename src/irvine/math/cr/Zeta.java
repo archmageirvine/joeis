@@ -84,7 +84,7 @@ public final class Zeta {
         final Z den = kf1.pow(5);
         currentTerm = scale(num, -p).divide(den);
         currentSum = currentSum.signedAdd((k & 1) == 0, currentTerm);
-      } while (!Z.ZERO.equals(currentTerm));
+      } while (!currentTerm.isZero());
       return currentSum.shiftRight(6);  // / 64
     }
   };

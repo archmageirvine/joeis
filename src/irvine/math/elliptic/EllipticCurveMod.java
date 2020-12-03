@@ -23,7 +23,7 @@ public class EllipticCurveMod extends AbstractGroup<Z[]> {
    * @exception ArithmeticException if discriminant is 0.
    */
   public EllipticCurveMod(final Z a, final Z b, final Z p) {
-    if (Z.ZERO.equals(Z.FOUR.multiply(a.square().multiply(a)).subtract(b.square().multiply(27)).mod(p))) {
+    if (Z.FOUR.multiply(a.square().multiply(a)).subtract(b.square().multiply(27)).mod(p).isZero()) {
       throw new ArithmeticException();
     }
     mP = p;
@@ -67,7 +67,7 @@ public class EllipticCurveMod extends AbstractGroup<Z[]> {
    * @return the doubled point
    */
   public Z[] doublePoint(final Z[] p) {
-    if (p == null || Z.ZERO.equals(p[1])) {
+    if (p == null || p[1].isZero()) {
       return p;
     }
     final Z slope = p[0].square().multiply(3).add(mA).modMultiply(p[1].multiply2().mod(mP).modInverse(mP), mP);

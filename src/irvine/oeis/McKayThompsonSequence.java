@@ -284,7 +284,7 @@ public class McKayThompsonSequence implements Sequence {
     } else {
       while ((mN + 1) % mStep0 != 0) {
         //System.out.println("# in while next: mN=" + mN + ", mStep0=" + mStep0 + ", result=" + result.toString());
-        if (!result.equals(Z.ZERO)) {
+        if (!result.isZero()) {
           throw new IllegalArgumentException("attempt to skip a non-zero term at position " + mN);
         }
         result = advance();
@@ -446,7 +446,7 @@ public class McKayThompsonSequence implements Sequence {
             } // foreach divisor
             if (busy) {
               Z w = jn.getCoeff(k).subtract(v);
-              if (!w.remainder(Z.valueOf(n)).equals(Z.ZERO)) {
+              if (!w.remainder(Z.valueOf(n)).isZero()) {
                 throw new IllegalArgumentException("divisibility check failed");
               }
               w = w.divide(Z.valueOf(n));

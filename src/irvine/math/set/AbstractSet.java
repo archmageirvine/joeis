@@ -17,7 +17,7 @@ public abstract class AbstractSet<E> extends DefaultInfiniteEffort implements Se
 
   @Override
   public boolean isEmpty() {
-    return Z.ZERO.equals(size());
+    return size().isZero();
   }
 
   @Override

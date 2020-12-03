@@ -24,7 +24,7 @@ public class A002350 implements Sequence {
     while (true) {
       y = y.add(1);
       final Z[] s = Z.ONE.add(y.square().multiply(mN)).sqrtAndRemainder();
-      if (Z.ZERO.equals(s[1])) {
+      if (s[1].isZero()) {
         return s[0];
       }
     }

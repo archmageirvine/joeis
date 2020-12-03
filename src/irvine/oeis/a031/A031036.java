@@ -14,7 +14,7 @@ public class A031036 extends A031035 {
   public Z next() {
     while (true) {
       ++mN;
-      if (Z.ZERO.equals(super.next())) {
+      if (super.next().isZero()) {
         return Z.valueOf(mN);
       }
     }

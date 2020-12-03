@@ -14,9 +14,9 @@ public class A027869 implements Sequence {
 
   static long count(Z n) {
     long c = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         ++c;
       }
       n = qr[0];

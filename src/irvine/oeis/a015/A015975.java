@@ -20,7 +20,7 @@ public class A015975 implements Sequence {
       if (mN.modPow(k, k).equals(k.subtract(1).mod(k))) {
         final Z n1 = mN.add(1);
         final Z base = k.isPower();
-        if (base == null || !Z.ZERO.equals(n1.mod(base))) {
+        if (base == null || !n1.mod(base).isZero()) {
           return k;
         }
       }

@@ -11,7 +11,7 @@ public class A003635 extends A003634 {
   @Override
   public Z next() {
     while (true) {
-      if (Z.ZERO.equals(super.next())) {
+      if (super.next().isZero()) {
         return Z.valueOf(mN);
       }
     }

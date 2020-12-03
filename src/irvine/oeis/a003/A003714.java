@@ -19,7 +19,7 @@ public class A003714 implements Sequence {
       mA = mA.add(1);
       mB = mB.add(2);
       mC = mC.add(3);
-      if (Z.ZERO.equals(mA.xor(mB).xor(mC))) {
+      if (mA.xor(mB).xor(mC).isZero()) {
         return mA;
       }
     }

@@ -18,7 +18,7 @@ public class A008338 implements Sequence {
     if (++mN > 0) {
       mF = mF.multiply(mN);
       final Z[] qr = mA.divideAndRemainder(mF);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         mA = mA.divide(mF);
       } else {
         mA = mA.multiply(mF);

@@ -18,7 +18,7 @@ public class A029948 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    if (Z.ZERO.equals(mN)) {
+    if (mN.isZero()) {
       return Z.valueOf(101); // So we don't have to worry about leading 0's elsewhere
     }
     final String s = mN.pow(power()).toString();

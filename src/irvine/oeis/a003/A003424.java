@@ -74,7 +74,7 @@ public class A003424 implements Sequence {
       ensurePowers(powersOfPrime, r);
       final Z[] q = powersOfPrime.get(r).subtract(1)
         .divideAndRemainder(powersOfPrime.get(mD.get(k)).subtract(1));
-      if (Z.ZERO.equals(q[1]) && q[0].isProbablePrime()) {
+      if (q[1].isZero() && q[0].isProbablePrime()) {
         mPriority.put(q[0], r);
       }
     }

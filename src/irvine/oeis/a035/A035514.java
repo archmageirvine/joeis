@@ -17,7 +17,7 @@ public class A035514 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    if (Z.ZERO.equals(mN)) {
+    if (mN.isZero()) {
       return Z.ZERO;
     }
     final StringBuilder sb = new StringBuilder();
@@ -26,7 +26,7 @@ public class A035514 implements Sequence {
       ++k;
     }
     Z m = mN;
-    while (!Z.ZERO.equals(m)) {
+    while (!m.isZero()) {
       final Z f = mFibo.a(k);
       if (f.compareTo(m) > 0) {
         --k;

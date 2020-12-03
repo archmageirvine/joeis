@@ -18,7 +18,7 @@ public class A028488 extends A002819 {
   public Z next() {
     do {
       ++mN;
-    } while (!Z.ZERO.equals(super.next()));
+    } while (!super.next().isZero());
     return Z.valueOf(mN);
   }
 }

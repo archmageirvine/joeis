@@ -15,7 +15,7 @@ public class A025064 extends A025060 {
     while (true) {
       ++mN;
       final Z[] t = super.next().divideAndRemainder(Z.THREE);
-      if (Z.ZERO.equals(t[1]) && t[0].isSquare()) {
+      if (t[1].isZero() && t[0].isSquare()) {
         return Z.valueOf(mN);
       }
     }

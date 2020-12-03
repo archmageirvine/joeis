@@ -22,7 +22,7 @@ public class A033920 extends A000040 {
           }
         }
       }
-      if (!Z.ZERO.equals(best)) {
+      if (!best.isZero()) {
         return best;
       }
     }

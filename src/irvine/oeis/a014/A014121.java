@@ -14,7 +14,7 @@ public class A014121 implements Sequence {
   private long mN = -1;
 
   static boolean isPowerOf2(final Z n) {
-    return !Z.ZERO.equals(n) && Z.ZERO.equals(n.and(n.subtract(1)));
+    return !n.isZero() && n.and(n.subtract(1)).isZero();
   }
 
   @Override

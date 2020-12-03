@@ -57,7 +57,7 @@ public class PowerFactorPrimeSequence implements Sequence {
     while (busy) {
       ++mK;
       final Z[] qr = mA.add(mAdd).divideAndRemainder(mDiv);
-      if (Z.ZERO.equals(qr[1]) && qr[0].isProbablePrime()) {
+      if (qr[1].isZero() && qr[0].isProbablePrime()) {
         busy = false;
       }
       mA = mBase == 2 ? mA.multiply2() : mA.multiply(mBase);

@@ -15,7 +15,7 @@ public class A032582 implements Sequence {
   public Z next() {
     while (true) {
       final Z[] qr = new Z(Long.toString(++mN), 25).divideAndRemainder(Z.valueOf(mN));
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return qr[0];
       }
     }

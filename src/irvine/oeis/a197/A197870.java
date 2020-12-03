@@ -15,6 +15,6 @@ public class A197870 implements Sequence {
   public Z next() {
     mN = mN.add(1);
     final Z[] s = mN.shiftLeft(3).add(1).sqrtAndRemainder();
-    return s[1].equals(Z.ZERO) ? (s[0].divide2().isEven() ? Z.ONE : Z.NEG_ONE) : Z.ZERO;
+    return s[1].isZero() ? (s[0].divide2().isEven() ? Z.ONE : Z.NEG_ONE) : Z.ZERO;
   }
 }

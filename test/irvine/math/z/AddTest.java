@@ -31,7 +31,7 @@ public class AddTest extends TestCase {
       assertEquals(v1 + "+" + v2, v1.add(v2), Add.add(z1, z2).bigIntegerValue());
       assertEquals(v2 + "-" + v1, v1.negate().add(v2), Add.add(z1.negate(), z2).bigIntegerValue());
       assertEquals(v1 + "-" + v2, v1.add(v2.negate()), Add.add(z1, z2.negate()).bigIntegerValue());
-      assertTrue(v1 + "-" + v1, Z.ZERO.equals(Add.add(z1, z1.negate())));
+      assertTrue(v1 + "-" + v1, Add.add(z1, z1.negate()).isZero());
       // check immutability
       assertEquals(v1, z1.bigIntegerValue());
       assertEquals(v2, z2.bigIntegerValue());
@@ -44,7 +44,7 @@ public class AddTest extends TestCase {
       assertEquals(v1 + "+" + v2, v1.add(v2), Add.add(z1, z2).bigIntegerValue());
       assertEquals(v2 + "-" + v1, v1.negate().add(v2), Add.add(z1.negate(), z2).bigIntegerValue());
       assertEquals(v1 + "-" + v2, v1.add(v2.negate()), Add.add(z1, z2.negate()).bigIntegerValue());
-      assertTrue(v1 + "-" + v1, Z.ZERO.equals(Add.add(z1, z1.negate())));
+      assertTrue(v1 + "-" + v1, Add.add(z1, z1.negate()).isZero());
     }
   }
 

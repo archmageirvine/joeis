@@ -18,7 +18,7 @@ public class A029495 implements Sequence {
     while (true) {
       mN = mN.add(1);
       mA = mA.shiftLeft(mN.bitLength()).add(ZUtils.reverse(mN, 2));
-      if (Z.ZERO.equals(mA.mod(mN))) {
+      if (mA.mod(mN).isZero()) {
         return mN;
       }
     }

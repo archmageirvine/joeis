@@ -114,7 +114,7 @@ public class MontgomeryTest extends TestCase {
       final Montgomery m = getMontgomery(i);
       final Z n = m.getModulus();
       final Z b = Z.valueOf(new BigInteger(i, RANDOM)).mod(n);
-      if (!Z.ZERO.equals(b)) {
+      if (!b.isZero()) {
         final Z ib = b.modInverse(n);
         if (b.auxiliary() == 0) {
           final Z a = Z.valueOf(new BigInteger(i, RANDOM)).mod(n);
@@ -136,7 +136,7 @@ public class MontgomeryTest extends TestCase {
       }
       final Z n = m.getModulus();
       final Z a = Z.valueOf(new BigInteger(i, RANDOM)).mod(n);
-      if (!Z.ZERO.equals(a)) {
+      if (!a.isZero()) {
         final Z inv = a.modInverse(n);
         if (a.auxiliary() == 0) {
           assertEquals(inv, m.toZ(m.inverse(m.toMontgomery(a))));

@@ -16,7 +16,7 @@ public class A028691 extends A028689 {
     final Z a = super.next();
     int k = 0;
     while (true) {
-      if (Z.ZERO.equals(mF.factorial(++k).mod(a))) {
+      if (mF.factorial(++k).mod(a).isZero()) {
         return Z.valueOf(k);
       }
     }

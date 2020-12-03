@@ -15,7 +15,7 @@ public class A017930 implements Sequence {
   public Z next() {
     mN = mN == null ? Z.ONE : mN.multiply(8);
     final Z[] s = mN.sqrtAndRemainder();
-    return s[0].add(Z.ZERO.equals(s[1]) ? 0 : 1);
+    return s[0].add(s[1].isZero() ? 0 : 1);
   }
 }
 

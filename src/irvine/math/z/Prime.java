@@ -108,7 +108,7 @@ final class Prime {
               for (int i = 2; i < exponent; ++i) {
                 s = s.modPow(Z.TWO, n).subtract(Z.TWO);
               }
-              return Z.ZERO.equals(s);
+              return s.isZero();
             }
         }
       }

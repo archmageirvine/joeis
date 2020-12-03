@@ -23,7 +23,7 @@ public class A001474 implements Sequence {
           final long dy = LongUtils.gcd(dx, y);
           final Z y3 = x3.add(Z.valueOf(y).pow(3));
           for (long z = y + 1; z <= -y - 1; ++z) {
-            if (Math.abs(LongUtils.gcd(dy, z)) == 1 && Z.ZERO.equals(y3.add(Z.valueOf(z).pow(3)))) {
+            if (Math.abs(LongUtils.gcd(dy, z)) == 1 && y3.add(Z.valueOf(z).pow(3)).isZero()) {
               return Z.valueOf(mN);
             }
           }

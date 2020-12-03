@@ -22,7 +22,7 @@ public class A074386 implements Sequence {
       }
       final Z sigma = Cheetah.factor(mN).sigma();
       final Z[] p = sigma.sqrtAndRemainder();
-      if (Z.ZERO.equals(p[1]) && p[0].isPrime()) {
+      if (p[1].isZero() && p[0].isPrime()) {
         return Z.valueOf(mN);
       }
     }

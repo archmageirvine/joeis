@@ -19,7 +19,7 @@ public class A067933 implements Sequence {
     while (true) {
       mP = mPrime.nextPrime(mP);
       final Z euler = Euler.phi(mP.subtract(Z.ONE));
-      if (Z.ZERO.equals(mP.add(1).mod(euler))) {
+      if (mP.add(1).mod(euler).isZero()) {
         return mP;
       }
     }

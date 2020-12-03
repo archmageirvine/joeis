@@ -34,7 +34,7 @@ public class A035933 implements Sequence {
     while (true) {
       long c = 0;
       Z t = Z.valueOf(++mM);
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         t = f(t);
         ++c;
       }

@@ -22,7 +22,7 @@ public class A034192 implements Sequence {
   @Override
   public Z next() {
     final Z r = mA.coeff(++mN).toZ();
-    return Z.ZERO.equals(r) ? null : r;
+    return r.isZero() ? null : r;
   }
 }
 

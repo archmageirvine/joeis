@@ -22,7 +22,7 @@ public class A030232 extends A027423 {
     while (true) {
       ++mN;
       mA.next();
-      if (Z.ZERO.equals(mA.next().mod(super.next()))) {
+      if (mA.next().mod(super.next()).isZero()) {
         return Z.valueOf(mN);
       }
     }

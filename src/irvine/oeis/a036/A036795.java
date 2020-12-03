@@ -19,7 +19,7 @@ public class A036795 implements Sequence {
   }
 
   private boolean is(final Z n, final int k) {
-    if (Z.ZERO.equals(n)) {
+    if (n.isZero()) {
       return true;
     }
     if (k < 1) {

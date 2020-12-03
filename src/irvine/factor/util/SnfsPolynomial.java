@@ -42,11 +42,11 @@ public final class SnfsPolynomial {
     Z y0 = Z.ONE;
     for (final Z p : fs.toZArray()) {
       int exp = e * fs.getExponent(p);
-      while (Z.ZERO.equals(c0.mod(p))) {
+      while (c0.mod(p).isZero()) {
         c0 = c0.divide(p);
         ++exp;
       }
-      while (Z.ZERO.equals(c5.mod(p))) {
+      while (c5.mod(p).isZero()) {
         c5 = c5.divide(p);
         --exp;
       }

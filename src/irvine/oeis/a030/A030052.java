@@ -48,7 +48,7 @@ public class A030052 implements Sequence {
     Z kp;
     for (int k = prev + 1; (kp = pow(k)).compareTo(target) <= 0; ++k) {
       final Z remaining = target.subtract(kp);
-      if (Z.ZERO.equals(remaining)) {
+      if (remaining.isZero()) {
         return isSum > 1;
       }
       if (searchWithTree(remaining, k, isSum + 1)) {

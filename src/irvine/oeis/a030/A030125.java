@@ -20,7 +20,7 @@ public class A030125 extends DecimalExpansionSequence {
   private int update() {
     mSign = !mSign;
     final Z t = mB.next();
-    if (Z.ZERO.equals(t)) {
+    if (t.isZero()) {
       mZ = mZ.add(CR.HALF_PI);
     } else {
       mZ = ComputableReals.SINGLETON.signedAdd(mSign, mZ, ComputableReals.SINGLETON.atan(CR.valueOf(t).inverse()));

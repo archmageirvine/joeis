@@ -17,7 +17,7 @@ public class A071887 implements Sequence {
     Z k = n;
     Z a = Z.ONE;
     Z b = Z.ZERO;
-    while (!Z.ZERO.equals(k)) {
+    while (!k.isZero()) {
       final Z t = k.makeOdd();
       final long s = k.auxiliary();
       if (s > 0) {

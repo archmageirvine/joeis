@@ -20,7 +20,7 @@ public class A002589 implements Sequence {
     }
     Z b = Z.TWO;
     for (int k = 2; k < n; ++k, b = b.shiftLeft(1)) {
-      if (Z.ZERO.equals(b.subtract(1).mod(p))) {
+      if (b.subtract(1).mod(p).isZero()) {
         return true;
       }
     }

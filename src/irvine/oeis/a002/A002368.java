@@ -21,7 +21,7 @@ public class A002368 extends A007645 {
       y = y.add(1);
       final Z x2 = p2.subtract(y.square().multiply(3));
       final Z[] x = x2.sqrtAndRemainder();
-      if (Z.ZERO.equals(x[1])) {
+      if (x[1].isZero()) {
         return y;
       }
     }

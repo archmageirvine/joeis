@@ -18,7 +18,7 @@ public class A025016 implements Sequence {
     Z f = Z.ONE;
     Z s = Z.TWO; // 0! + 1!
     long k = 1;
-    while (!Z.ZERO.equals(f.mod(mMod))) {
+    while (!f.mod(mMod).isZero()) {
       f = f.modMultiply(++k, mMod);
       s = s.add(f);
     }

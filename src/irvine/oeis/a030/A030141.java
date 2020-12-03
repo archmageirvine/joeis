@@ -15,7 +15,7 @@ public class A030141 implements Sequence {
     boolean parity = n.isEven();
     while (true) {
       n = n.divide(10);
-      if (Z.ZERO.equals(n)) {
+      if (n.isZero()) {
         return true;
       }
       if (n.isEven() == parity) {

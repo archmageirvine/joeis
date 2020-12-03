@@ -48,7 +48,7 @@ public class DirichletSeries extends TreeMap<Z, Z> {
     final DirichletSeries ds = new DirichletSeries();
     for (int k = 0; k < terms.size(); ++k) {
       final Z t = terms.get(k);
-      if (!Z.ZERO.equals(t)) {
+      if (!t.isZero()) {
         ds.put(Z.valueOf(k), t);
       }
     }
@@ -271,7 +271,7 @@ public class DirichletSeries extends TreeMap<Z, Z> {
     final Polynomial<Z> inverse = RING.series(RING.one(), series.shift(-1), series.size() - 1).shift(1);
     final DirichletSeries ds = new DirichletSeries();
     for (int k = 0; k < inverse.size(); ++k) {
-      if (!Z.ZERO.equals(inverse.coeff(k))) {
+      if (!inverse.coeff(k).isZero()) {
         ds.put(Z.valueOf(k), inverse.coeff(k));
       }
     }

@@ -37,7 +37,7 @@ public class A032426 implements Sequence {
     Z rf = mScale;
     Z sum = Z.ZERO;
     long k = 0;
-    while (!Z.ZERO.equals(rf)) {
+    while (!rf.isZero()) {
       sum = sum.add(rf.mod(10));
       rf = rf.divide(++k);
     }

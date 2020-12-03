@@ -14,7 +14,7 @@ public class A010024 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.ZERO.equals(mN)
+    return mN.isZero()
       ? Z.ONE
       : mN.multiply(10).subtract(5).multiply(mN).add(20).multiply(mN).add(5).multiply(mN).divide(3).add(2);
   }

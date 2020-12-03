@@ -14,7 +14,7 @@ public class A029553 extends A120944 {
     final Z m = n.subtract(base);
     for (final Z p : Cheetah.factor(n).toZArray()) {
       final Z s = p.subtract(base);
-      if (s.signum() <= 0 || !Z.ZERO.equals(m.mod(s))) {
+      if (s.signum() <= 0 || !m.mod(s).isZero()) {
         return false;
       }
     }

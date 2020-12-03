@@ -21,7 +21,7 @@ public class A020645 implements Sequence {
     }
     while (mM < mN) {
       mF = mF.multiply(++mR);
-      while (Z.ZERO.equals(mF.and(Z.THREE))) {
+      while (mF.and(Z.THREE).isZero()) {
         mF = mF.shiftRight(2);
         ++mM;
       }

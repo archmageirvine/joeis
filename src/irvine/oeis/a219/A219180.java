@@ -52,7 +52,7 @@ public class A219180 extends MemoryFunction2<Integer, Z[]> implements Sequence {
     }
     final Z[] row = get(mN, mPi);
     int k = row.length;
-    while (--k >= 0 && row[k].equals(Z.ZERO)) {
+    while (--k >= 0 && row[k].isZero()) {
       // do nothing
     }
     return k != row.length - 1 ? Arrays.copyOf(row, k + 1) : row;

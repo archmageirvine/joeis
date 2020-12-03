@@ -12,7 +12,7 @@ public class A027678 implements Sequence {
   private Z mN = Z.ZERO;
 
   private boolean is(Z n) {
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final long r = n.mod(10);
       if (r != 2 && r != 4 && r != 8) {
         return false;

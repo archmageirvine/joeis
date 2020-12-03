@@ -623,7 +623,6 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
       sum = sum.add(partialDiff(monomial, base));
     }
     //System.out.println("before order: " + sum);
-    //assert Z.ZERO.equals(sum.mod(order().multiply(base.order()))); // : toString() + " " + base + " sum=" + sum +  " order=" + order() + " base.order()=" + base.order();
     return sum.toZ();
   }
 

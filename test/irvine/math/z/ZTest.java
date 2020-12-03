@@ -116,7 +116,7 @@ public class ZTest extends TestCase {
     assertEquals(Z.ONE, Z.valueOf(-1L).abs());
     for (int i = 30; i < 1000; ++i) {
       final Z z = Z.valueOf(new BigInteger(i, RANDOM));
-      if (!z.equals(Z.ZERO)) {
+      if (!z.isZero()) {
         assertEquals(z, z.abs());
         assertEquals(z, z.negate().abs());
       }
@@ -134,7 +134,7 @@ public class ZTest extends TestCase {
     }
     for (int i = 30; i < 1000; ++i) {
       final Z z = Z.valueOf(new BigInteger(i, RANDOM));
-      if (!z.equals(Z.ZERO)) {
+      if (!z.isZero()) {
         assertFalse(z.equals(z.negate()));
         assertEquals(z, z.negate().abs());
         assertEquals(z, z.negate().negate());
@@ -265,7 +265,7 @@ public class ZTest extends TestCase {
       final Z n = Z.valueOf(new BigInteger(i, RANDOM));
       for (int j = 0; j < 100; j += 13) {
         final Z m = Z.valueOf(new BigInteger(j, RANDOM));
-        if (Z.ZERO.equals(m)) {
+        if (m.isZero()) {
           continue;
         }
         assertEquals(n.square().mod(m), n.modSquare(m));
@@ -287,7 +287,7 @@ public class ZTest extends TestCase {
       final Z n = Z.valueOf(new BigInteger(i, RANDOM));
       for (int j = 5; j < 100; j += 13) {
         final Z m = Z.valueOf(new BigInteger(j, RANDOM));
-        if (Z.ZERO.equals(m)) {
+        if (m.isZero()) {
           continue;
         }
         for (int k = 5; k < 100; k += 13) {
@@ -312,7 +312,7 @@ public class ZTest extends TestCase {
       final Z n = Z.valueOf(new BigInteger(i, RANDOM));
       for (int j = 5; j < 100; j += 13) {
         final Z m = Z.valueOf(new BigInteger(j, RANDOM));
-        if (Z.ZERO.equals(m)) {
+        if (m.isZero()) {
           continue;
         }
         final long b = RANDOM.nextLong();

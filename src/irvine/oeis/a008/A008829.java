@@ -22,7 +22,7 @@ public class A008829 extends A000796 {
     do {
       t = t.multiply(10).add(mLookahead);
       mLookahead = super.next();
-    } while (t.compareTo(mA) <= 0 || Z.ZERO.equals(mLookahead));
+    } while (t.compareTo(mA) <= 0 || mLookahead.isZero());
     mA = t;
     return t;
   }

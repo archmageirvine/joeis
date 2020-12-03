@@ -58,7 +58,7 @@ public class A006184 implements Sequence {
     for (long i = 7; i < (1L << n); ++i) {
       boolean flag = true;
       for (int j = 0; j < n; j++) {
-        if ((i & (1L << j)) != 0 && getRow(f, i, n)[j].equals(Z.ZERO)) {
+        if ((i & (1L << j)) != 0 && getRow(f, i, n)[j].isZero()) {
           if (flag) {
             flag = false;
             k = j;

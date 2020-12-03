@@ -121,7 +121,7 @@ public class IsPowerTest extends TestCase {
       for (int j = 0; j < pc; ++j) {
         final long v = prime.nextPrime(r.nextInt(Integer.MAX_VALUE));
         final Z vv = Z.valueOf(v);
-        if (!base.mod(vv).equals(Z.ZERO)) {
+        if (!base.mod(vv).isZero()) {
           base = base.multiply(vv);
         }
       }

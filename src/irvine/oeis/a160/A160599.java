@@ -18,7 +18,7 @@ public class A160599 implements Sequence {
       mN = mN.add(2);
       if (!mN.isProbablePrime()) {
         final Z phi = Euler.phi(mN);
-        if (Z.ZERO.equals(mN.subtract(1).mod(mN.subtract(phi)))) {
+        if (mN.subtract(1).mod(mN.subtract(phi)).isZero()) {
           return mN;
         }
       }

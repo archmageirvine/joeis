@@ -19,7 +19,7 @@ public class A002034 implements Sequence {
     Z f = Z.ONE;
     while (true) {
       f = f.mod(n);
-      if (Z.ZERO.equals(f)) {
+      if (f.isZero()) {
         return Z.valueOf(c);
       }
       f = f.multiply(++c);

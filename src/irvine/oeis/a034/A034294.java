@@ -13,14 +13,14 @@ public class A034294 implements Sequence {
   private Z mN = Z.ZERO;
 
   private boolean isEqual(Z a, Z b, final int base) {
-    while (!b.equals(Z.ZERO)) {
+    while (!b.isZero()) {
       if (a.mod(10) != b.mod(base)) {
         return false;
       }
       b = b.divide(base);
       a = a.divide(10);
     }
-    return Z.ZERO.equals(a);
+    return a.isZero();
   }
 
   @Override

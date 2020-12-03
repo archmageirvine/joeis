@@ -23,7 +23,7 @@ public class A019334 implements Sequence {
     while (true) {
       mP = mPrime.nextPrime(mP);
       final Z q = root().mod(mP);
-      if (!Z.ZERO.equals(q) && new IntegersModMul(mP).order(q).equals(mP.subtract(1))) {
+      if (!q.isZero() && new IntegersModMul(mP).order(q).equals(mP.subtract(1))) {
         return mP;
       }
     }

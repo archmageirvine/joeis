@@ -16,7 +16,7 @@ public class A002938 implements Sequence {
     mN = mN.add(1);
     final Z n3 = mN.pow(3);
     final Z[] s = n3.sqrtAndRemainder();
-    if (Z.ZERO.equals(s[1])) {
+    if (s[1].isZero()) {
       return Z.ZERO;
     }
     return n3.subtract(s[0].square()).min(s[0].add(1).square().subtract(n3));

@@ -50,7 +50,7 @@ public class A057205 implements Sequence {
       if (!p.isProbablePrime()) {
         return false;
       }
-      if (!Z.ZERO.equals(n.mod(p))) {
+      if (!n.mod(p).isZero()) {
         return false;
       }
       // Checks the ordering constraint

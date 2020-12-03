@@ -23,7 +23,7 @@ public class A035517 implements Sequence {
   public Z next() {
     if (--mM < 0) {
       mN = mN.add(1);
-      if (Z.ZERO.equals(mN)) {
+      if (mN.isZero()) {
         return Z.ZERO;
       }
       mA.clear();
@@ -32,7 +32,7 @@ public class A035517 implements Sequence {
         ++k;
       }
       Z m = mN;
-      while (!Z.ZERO.equals(m)) {
+      while (!m.isZero()) {
         final Z f = mFibo.a(k);
         if (f.compareTo(m) > 0) {
           --k;

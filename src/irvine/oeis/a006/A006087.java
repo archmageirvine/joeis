@@ -20,7 +20,7 @@ public class A006087 implements Sequence {
       final FactorSequence fs = Cheetah.factor(mN);
       final Z m = mN.multiply(fs.unitarySigma0());
       final Z[] qr = m.divideAndRemainder(fs.unitarySigma());
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return qr[0];
       }
     }

@@ -76,13 +76,13 @@ public class A005640 extends MemoryFunction1<Z> implements Sequence {
         int v = c[k];
         while (v-- > 0) {
           product = product.multiply(switchA((int) (q % ops), k));
-          if (Z.ZERO.equals(product)) { // Efficiency
+          if (product.isZero()) { // Efficiency
             break outer;
           }
           q /= ops;
         }
       }
-      assert q == 0 || Z.ZERO.equals(product);
+      assert q == 0 || product.isZero();
       t = t.add(product);
     }
     return t.multiply(r(n, c));
@@ -129,13 +129,13 @@ public class A005640 extends MemoryFunction1<Z> implements Sequence {
           int v = c[k];
           while (v-- > 0) {
             product = product.multiply(switchM((int) (q % ops), k));
-            if (Z.ZERO.equals(product)) { // Efficiency
+            if (product.isZero()) { // Efficiency
               break outer;
             }
             q /= ops;
           }
         }
-        assert q == 0 || Z.ZERO.equals(product);
+        assert q == 0 || product.isZero();
         t = t.add(product);
       }
       return t.multiply(r(n, c));

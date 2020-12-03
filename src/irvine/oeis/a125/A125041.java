@@ -36,7 +36,7 @@ public class A125041 extends A057205 {
       if (!p.isProbablePrime()) {
         return false;
       }
-      if (!Z.ZERO.equals(n.mod(p))) {
+      if (!n.mod(p).isZero()) {
         return false;
       }
       // Checks the ordering constraint

@@ -25,7 +25,7 @@ public class A101343 implements Sequence {
         mM = mD.degree();
       }
       final Z coeff = mD.coeff(mM);
-      if (!Z.ZERO.equals(coeff)) {
+      if (!coeff.isZero()) {
         return coeff;
       }
     }

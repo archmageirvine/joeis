@@ -49,7 +49,7 @@ public class A035111 implements Sequence {
         mD = phiIcosahedron(mMax);
       }
       final Z t = mD.coeff(mN);
-      if (!Z.ZERO.equals(t)) {
+      if (!t.isZero()) {
         return t;
       }
     }

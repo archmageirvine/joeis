@@ -16,7 +16,7 @@ public class A015705 implements Sequence {
   private boolean is(final long m) {
     final FactorSequence fs = Cheetah.factor(m);
     final Z a = fs.sigma().multiply(fs.phi());
-    return a.sqrtAndRemainder()[1].equals(Z.ZERO);
+    return a.sqrtAndRemainder()[1].isZero();
   }
 
   @Override

@@ -36,7 +36,7 @@ public class A033068 implements Sequence {
     final Z res = mA.pollFirst();
     final long d = res.mod(base());
     final Z t = res.multiply(base());
-    if (!Z.ZERO.equals(t)) {
+    if (!t.isZero()) {
       for (long k = 0; k < base(); ++k) {
         if (Math.abs(d - k) == diff()) {
           mA.add(t.add(k));

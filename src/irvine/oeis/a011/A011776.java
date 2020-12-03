@@ -23,7 +23,7 @@ public class A011776 implements Sequence {
     do {
       m = m.multiply(mN);
       ++c;
-    } while (Z.ZERO.equals(mF.mod(m)));
+    } while (mF.mod(m).isZero());
     return Z.valueOf(c);
   }
 }

@@ -15,7 +15,7 @@ public class A019546 extends A000040 {
       final Z prime = super.next();
       Z t = prime;
       boolean ok = true;
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         final long r = t.mod(10);
         if (r != 2 && r != 3 && r != 5 && r != 7) {
           ok = false;

@@ -19,7 +19,7 @@ public class A035260 extends A035203 {
   @Override
   public Z next() {
     Z term = super.next();
-    while (term.equals(Z.ZERO)) {
+    while (term.isZero()) {
       term = super.next();
     }
     return Z.valueOf(mN);

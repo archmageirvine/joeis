@@ -14,7 +14,7 @@ public class A020767 extends A007088 {
   @Override
   public Z next() {
     final Z t = super.next();
-    if (!Z.ZERO.equals(t)) {
+    if (!t.isZero()) {
       mA = mA.multiply(t);
     }
     return mA;

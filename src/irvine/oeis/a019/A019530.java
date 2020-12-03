@@ -15,7 +15,7 @@ public class A019530 implements Sequence {
   public Z next() {
     mN = mN.add(1);
     Z m = Z.ZERO;
-    while (!Z.ZERO.equals(m.modPow(m, mN))) {
+    while (!m.modPow(m, mN).isZero()) {
       m = m.add(1);
     }
     return m;

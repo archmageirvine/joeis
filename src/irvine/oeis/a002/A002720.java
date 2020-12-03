@@ -16,7 +16,7 @@ public class A002720 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    if (Z.ZERO.equals(mN)) {
+    if (mN.isZero()) {
       return Z.ONE;
     } else if (!Z.ONE.equals(mN)) {
       final Z t = mB.multiply(mN).multiply2().subtract(mN.subtract(1).square().multiply(mA));

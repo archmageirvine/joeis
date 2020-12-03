@@ -28,7 +28,7 @@ public class A015710 extends A015713 {
     while (true) {
       final Z zk = Z.valueOf(++k);
       final Z t = a.add(zk.square());
-      if (t.sqrtAndRemainder()[1].equals(Z.ZERO)) {
+      if (t.sqrtAndRemainder()[1].isZero()) {
         return zk;
       }
     }

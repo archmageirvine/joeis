@@ -41,19 +41,19 @@ class InverseEuler {
     }
     final Z[] primeFactors = mFactor.factorize(m).toZArray();
     final Z largestPrime = primeFactors[primeFactors.length - 1];
-    final boolean divisibilityTest = Z.ZERO.equals(n.mod(largestPrime));
+    final boolean divisibilityTest = n.mod(largestPrime).isZero();
 
     for (Z div : mFactor.factorize(m.divide(largestPrime)).divisors()) {
       div = div.multiply(largestPrime);
       // Case 2 of observation
       final Z div1 = div.add(1);
-      if (mPrime.isPrime(div1) && !Z.ZERO.equals(n.mod(div1))) {
+      if (mPrime.isPrime(div1) && !n.mod(div1).isZero()) {
         getInversePhi(m.divide(div), n.multiply(div1));
       }
       // Case 1 of observation (sort of)
       if (!divisibilityTest) {
         Z primePow = Z.ONE;
-        while (Z.ZERO.equals(div.mod(largestPrime))) {
+        while (div.mod(largestPrime).isZero()) {
           div = div.divide(largestPrime);
           primePow = primePow.multiply(largestPrime);
         }

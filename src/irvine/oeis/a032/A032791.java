@@ -32,7 +32,7 @@ public class A032791 implements Sequence {
         a = a.multiply(mN + k);
       }
       final Z[] qr = a.divideAndRemainder(Z.valueOf((t() + 1) * mN + t() * (t() + 1) / 2));
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         while (mLuckyNumbers.last().compareTo(qr[0]) < 0) {
           mLuckyNumbers.add(mLucky.next());
         }

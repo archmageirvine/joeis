@@ -36,7 +36,7 @@ public class A322469 implements Sequence {
         mState = 3;
         break;
       case 3:
-        if (mPrev.remainder(Z.THREE).equals(Z.ZERO)) {
+        if (mPrev.remainder(Z.THREE).isZero()) {
           result = mPrev.divide(Z.THREE); // / 3
           mState = 2;
         } else {

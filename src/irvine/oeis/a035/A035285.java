@@ -52,7 +52,7 @@ public class A035285 implements Sequence {
   public Z next() {
     while (true) {
       final Z res = f(++mN);
-      if (!Z.ZERO.equals(res)) {
+      if (!res.isZero()) {
         return res;
       }
     }

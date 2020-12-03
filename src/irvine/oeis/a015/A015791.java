@@ -19,7 +19,7 @@ public class A015791 implements Sequence {
     while (true) {
       final Z phi = Cheetah.factor(++k).phi().add(mN);
       final Z sigma = Cheetah.factor(k + mN).sigma();
-      if (sigma.mod(phi).equals(Z.ZERO)) {
+      if (sigma.mod(phi).isZero()) {
         return Z.valueOf(k);
       }
     }

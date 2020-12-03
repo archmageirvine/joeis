@@ -23,7 +23,7 @@ public class A020342 implements Sequence {
 
   private boolean isOk(final int[] s, Z v) {
     boolean ok = true;
-    while (!Z.ZERO.equals(v)) {
+    while (!v.isZero()) {
       if (--s[(int) v.mod(10)] < 0) {
         ok = false;
       }
@@ -33,7 +33,7 @@ public class A020342 implements Sequence {
   }
 
   private void replace(final int[] s, Z v) {
-    while (!Z.ZERO.equals(v)) {
+    while (!v.isZero()) {
       ++s[(int) v.mod(10)];
       v = v.divide(10);
     }
@@ -45,7 +45,7 @@ public class A020342 implements Sequence {
     }
     for (int k = pos; k < div.length; ++k) {
       final Z[] qr = n.divideAndRemainder(div[k]);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         if (isOk(syndrome, div[k]) && isVampire(qr[0], div, k + 1, syndrome)) {
           return true;
         }

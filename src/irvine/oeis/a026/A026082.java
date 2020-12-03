@@ -37,7 +37,7 @@ public class A026082 extends MemoryFunction2<Long, Z> implements Sequence {
         ++mN;
         mM = 0;
       }
-    } while (Z.ZERO.equals(get(mN, mM)));
+    } while (get(mN, mM).isZero());
     return get(mN, mM);
   }
 }

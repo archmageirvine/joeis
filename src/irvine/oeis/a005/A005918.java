@@ -14,6 +14,6 @@ public class A005918 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.ZERO.equals(mN) ? Z.ONE : mN.square().multiply(3).add(2);
+    return mN.isZero() ? Z.ONE : mN.square().multiply(3).add(2);
   }
 }

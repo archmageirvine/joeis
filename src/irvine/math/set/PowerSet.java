@@ -63,7 +63,7 @@ class PowerSet<T> extends AbstractSet<Set<T>> {
       final ArrayList<T> members = new ArrayList<>();
       Z s = mSyndrome;
       for (final T e : mBase) {
-        if (Z.ZERO.equals(s)) {
+        if (s.isZero()) {
           break; // No more elements needed for this subset
         }
         if (!s.isEven()) {

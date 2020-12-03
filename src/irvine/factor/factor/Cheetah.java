@@ -147,7 +147,7 @@ public class Cheetah extends AbstractFactorizer {
     final int exponent = fs.getExponent(n);
     fs.remove(n);
     n = AbstractFactorizer.handleEvenAndNegative(fs, n, exponent);
-    if (n.equals(Z.ONE) || n.equals(Z.ZERO)) {
+    if (n.equals(Z.ONE) || n.isZero()) {
       return;
     }
     if (mTryHard) {

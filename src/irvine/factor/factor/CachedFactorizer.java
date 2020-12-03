@@ -79,7 +79,7 @@ public class CachedFactorizer extends AbstractFactorizer {
         String line;
         while ((line = r.readLine()) != null) {
           final Z d = new Z(line, 16);
-          if (Z.ZERO.equals(n.mod(d))) {
+          if (n.mod(d).isZero()) {
             assert d.isProbablePrime();
             return d;
           }
@@ -137,7 +137,7 @@ public class CachedFactorizer extends AbstractFactorizer {
         do {
           n = n.divide(d);
           fs.add(d, FactorSequence.PRIME, exponent);
-        } while (Z.ZERO.equals(n.mod(d)));
+        } while (n.mod(d).isZero());
       } else {
         final FactorSequence s = new FactorSequence(n);
         mFactorizer.factor(s);
@@ -148,7 +148,7 @@ public class CachedFactorizer extends AbstractFactorizer {
           do {
             fs.add(f, s.getStatus(f), exponent);
             n = n.divide(f);
-          } while (Z.ZERO.equals(n.mod(f)));
+          } while (n.mod(f).isZero());
         }
       }
     }

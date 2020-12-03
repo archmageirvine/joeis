@@ -17,11 +17,11 @@ public class A030346 extends A030341 {
       mFirst = false;
       --cnt;
     } else {
-      while (!Z.ZERO.equals(super.next())) {
+      while (!super.next().isZero()) {
         // do nothing
       }
     }
-    while (Z.ZERO.equals(super.next())) {
+    while (super.next().isZero()) {
       ++cnt;
     }
     return Z.valueOf(cnt);

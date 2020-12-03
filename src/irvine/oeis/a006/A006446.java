@@ -15,7 +15,7 @@ public class A006446 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (mN.mod(mN.sqrt()).equals(Z.ZERO)) {
+      if (mN.mod(mN.sqrt()).isZero()) {
         return mN;
       }
     }

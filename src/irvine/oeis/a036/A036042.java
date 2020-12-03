@@ -13,7 +13,7 @@ public class A036042 extends A000041 {
 
   @Override
   public Z next() {
-    if (Z.ZERO.equals(mC)) {
+    if (mC.isZero()) {
       mC = super.next();
     }
     mC = mC.subtract(1);

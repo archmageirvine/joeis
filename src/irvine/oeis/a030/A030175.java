@@ -16,9 +16,9 @@ public class A030175 implements Sequence {
   private long mAdd = 2;
 
   private boolean is123(Z n) {
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (qr[1].compareTo(Z.THREE) > 0 || Z.ZERO.equals(qr[1])) {
+      if (qr[1].compareTo(Z.THREE) > 0 || qr[1].isZero()) {
         return false;
       }
       n = qr[0];

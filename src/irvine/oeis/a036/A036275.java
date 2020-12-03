@@ -15,7 +15,7 @@ public class A036275 extends A051626 {
   @Override
   public Z next() {
     final Z period = super.next();
-    if (Z.ZERO.equals(period)) {
+    if (period.isZero()) {
       return Z.ZERO;
     }
     final int[] a = new int[period.intValueExact()];

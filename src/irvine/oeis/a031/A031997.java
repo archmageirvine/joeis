@@ -12,7 +12,7 @@ public class A031997 implements Sequence {
   private Z mN = Z.NEG_ONE;
 
   private boolean is0123(Z n) {
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
       if (qr[1].compareTo(Z.THREE) > 0) {
         return false;

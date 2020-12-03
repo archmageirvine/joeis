@@ -85,7 +85,7 @@ public class ConvertTest extends TestCase {
     for (int i = 2; i < 10000; i += 17) {
       final BigInteger d = new BigInteger(i, AddTest.RANDOM);
       final Z zd = Z.valueOf(d);
-      if (!zd.equals(Z.ZERO)) {
+      if (!zd.isZero()) {
         final double dv = d.doubleValue();
         final double zdv = zd.doubleValue();
         if (zdv == Double.POSITIVE_INFINITY) {
@@ -107,7 +107,7 @@ public class ConvertTest extends TestCase {
     for (int i = 2; i < 10000; i += 137) {
       final BigInteger d = new BigInteger(i, AddTest.RANDOM);
       final Z zd = Z.valueOf(d);
-      if (!zd.equals(Z.ZERO)) {
+      if (!zd.isZero()) {
         final float dv = d.floatValue();
         final float zdv = zd.floatValue();
         if (zdv == Float.POSITIVE_INFINITY) {

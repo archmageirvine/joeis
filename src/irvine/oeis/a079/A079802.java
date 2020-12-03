@@ -20,7 +20,7 @@ public class A079802 implements Sequence {
     do {
       mP = mPrime.nextPrime(mP);
       sum = sum.add(mP);
-    } while (sum.compareTo(mPrev) < 0 || !Z.ZERO.equals(sum.mod(mPrev)));
+    } while (sum.compareTo(mPrev) < 0 || !sum.mod(mPrev).isZero());
     mPrev = sum;
     return sum;
   }

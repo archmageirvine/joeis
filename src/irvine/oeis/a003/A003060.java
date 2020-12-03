@@ -28,7 +28,7 @@ public class A003060 implements Sequence {
       Z t = Z.ONE;
       for (int j = 1; j < mN; ++j) {
         t = t.multiply(10);
-        if (t.subtract(1).mod(divisors[k]).equals(Z.ZERO)) {
+        if (t.subtract(1).mod(divisors[k]).isZero()) {
           ok = false;
           break;
         }

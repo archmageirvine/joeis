@@ -23,7 +23,7 @@ public class A020964 implements Sequence {
     do {
       t = ComputableReals.SINGLETON.pow(N, CR.valueOf(mN - ++k)).multiply(CR.THREE).floor();
       sum = sum.add(t);
-    } while (!Z.ZERO.equals(t));
+    } while (!t.isZero());
     return sum;
   }
 }

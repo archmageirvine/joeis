@@ -74,7 +74,7 @@ public final class Binomial {
         r = r.multiply(k);
       }
       m = n.subtract(m);
-      while (!Z.ZERO.equals(m)) {
+      while (!m.isZero()) {
         r = r.divide(m);
         m = m.subtract(Z.ONE);
       }

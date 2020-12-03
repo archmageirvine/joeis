@@ -21,7 +21,7 @@ public class A029470 implements Sequence {
         mS = mS.multiply(25);
       }
       mA = mA.multiply(mS).add(mN);
-      if (Z.ZERO.equals(mA.mod(mN))) {
+      if (mA.mod(mN).isZero()) {
         return mN;
       }
     }

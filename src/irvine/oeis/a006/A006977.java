@@ -24,7 +24,7 @@ public class A006977 implements Sequence {
       Z t = mA.shiftLeft(2);
       Z bit = Z.ONE;
       mA = Z.ZERO;
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         if (isSet(Z.SEVEN.and(t).intValueExact())) {
           mA = mA.or(bit);
         }

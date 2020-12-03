@@ -21,7 +21,7 @@ public class A016058 extends A016057 {
       boolean ok = true;
       for (final Z p : mPrimitive) {
         final Z[] qr = t.divideAndRemainder(p);
-        if (Z.ZERO.equals(qr[1])) {
+        if (qr[1].isZero()) {
           final Z base = qr[0].isPower();
           if (Z.THREE.equals(qr[0]) || Z.THREE.equals(base)) {
             ok = false;

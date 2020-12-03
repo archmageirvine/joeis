@@ -81,7 +81,7 @@ public final class EuclidMullinVerify {
                 }
                 final Z ss = new Z(s);
                 final Z[] q = n.divideAndRemainder(ss);
-                if (!q[1].equals(Z.ZERO)) {
+                if (!q[1].isZero()) {
                   System.err.println(line + ": Factorization error");
                 }
                 n = q[0];

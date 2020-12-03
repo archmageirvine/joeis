@@ -40,7 +40,7 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
   public static QPolynomial<Z> create(final List<Z> coeffs) {
     final QPolynomial<Z> c = new QPolynomial<>("q", Z.ZERO, Z.ONE);
     for (int k = 0; k < coeffs.size(); ++k) {
-      if (!Z.ZERO.equals(coeffs.get(k))) {
+      if (!coeffs.get(k).isZero()) {
         c.put(new Q(k), coeffs.get(k));
       }
     }

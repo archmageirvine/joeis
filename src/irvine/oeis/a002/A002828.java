@@ -25,7 +25,7 @@ public class A002828 implements Sequence {
     mN = mN.add(1);
     if (mA1.equals(mN)) {
       mA1 = mSquares1.next();
-      if (Z.ZERO.equals(mN)) {
+      if (mN.isZero()) {
         return Z.ZERO;
       }
       return Z.ONE;

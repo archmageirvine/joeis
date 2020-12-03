@@ -16,7 +16,7 @@ public class A032773 implements Sequence {
     while (true) {
       final Z a = Z.valueOf(++mN).multiply(mN + 1).multiply(mN + 2).multiply(mN + 3).multiply(mN + 4).multiply(mN + 5);
       final Z[] qr = a.divideAndRemainder(Z.valueOf(6 * mN + 15));
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return qr[0];
       }
     }

@@ -22,7 +22,7 @@ public class A092487 implements Sequence {
   }
 
   private boolean isSquare(final Z n) {
-    return n.sqrtAndRemainder()[1].equals(Z.ZERO);
+    return n.sqrtAndRemainder()[1].isZero();
   }
 
   @Override

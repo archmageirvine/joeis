@@ -15,7 +15,7 @@ public class A002973 extends A002144 {
       final Z y2 = p.subtract(x.square());
       assert y2.signum() > 0;
       final Z[] y = y2.sqrtAndRemainder();
-      if (Z.ZERO.equals(y[1])) {
+      if (y[1].isZero()) {
         return x.divide2();
       }
     }

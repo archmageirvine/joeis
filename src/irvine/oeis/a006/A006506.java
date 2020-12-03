@@ -38,7 +38,7 @@ public class A006506 implements Sequence {
       Arrays.fill(w, Z.ZERO);
       for (int j = 0; j < l; ++j) {
         for (int k = 0; k < l; ++k) {
-          if (p[j].and(p[k]).equals(Z.ZERO)) {
+          if (p[j].and(p[k]).isZero()) {
             w[j] = w[j].add(v[k]);
           }
         }

@@ -25,7 +25,7 @@ public class A032783 implements Sequence {
         .multiply(mN + 8)
         .multiply(mN + 9);
       final Z[] qr = a.divideAndRemainder(Z.valueOf(10 * mN + 45));
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return qr[0];
       }
     }

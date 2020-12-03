@@ -19,13 +19,13 @@ public class A030283 implements Sequence {
   public Z next() {
     if (mA == null) {
       mA = Z.ZERO;
-    } else if (Z.ZERO.equals(mA)) {
+    } else if (mA.isZero()) {
       mA = Z.ONE; // save mucking around with 0
     } else {
       final ArrayList<Integer> digits = new ArrayList<>();
       Z t = mA;
       int syndrome = ZUtils.syn(t);
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         digits.add((int) (t.mod(10)));
         t = t.divide(10);
       }

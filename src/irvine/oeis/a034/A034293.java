@@ -16,7 +16,7 @@ public class A034293 implements Sequence {
     outer:
     while (true) {
       Z t = Z.ONE.shiftLeft(++mN);
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         final Z[] qr = t.divideAndRemainder(Z.TEN);
         if (Z.TWO.equals(qr[1])) {
           continue outer;

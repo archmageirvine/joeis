@@ -23,7 +23,7 @@ public class A023103 implements Sequence {
     } while (m.compareTo(n) <= 0);
     final Z[] qr = n.subtract(l).divideAndRemainder(Z.valueOf(i));
     final Z q = qr[0].add(basePower);
-    if (Z.ZERO.equals(qr[1])) {
+    if (qr[1].isZero()) {
       return q.subtract(1).mod(base);
     } else {
       return q.toString(base).charAt(qr[1].intValueExact() - 1) - '0';

@@ -20,10 +20,10 @@ final class ExtendedEuclid {
    * @return three integers
    */
   static Z[] extendedEuclid(final Z a, final Z b) {
-    if (Z.ZERO.equals(a)) {
+    if (a.isZero()) {
       return new Z[] {b, Z.ZERO, Z.ONE};
     }
-    if (Z.ZERO.equals(b)) {
+    if (b.isZero()) {
       return new Z[] {a, Z.ONE, Z.ZERO};
     }
     final Z aabs = a.abs();

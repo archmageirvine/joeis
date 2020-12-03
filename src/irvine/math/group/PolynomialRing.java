@@ -337,7 +337,7 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
    * @return <code>p^n</code>
    */
   public Polynomial<E> powz(final Polynomial<E> p, final Z n, final int degreeLimit) {
-    if (Z.ZERO.equals(n)) {
+    if (n.isZero()) {
       return one();
     } else if (Z.ONE.equals(n)) {
       return p.truncate(degreeLimit);

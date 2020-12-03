@@ -14,7 +14,7 @@ public class A015050 extends A013929 {
     final Z t = super.next();
     Z s = t.root(3);
     while (true) {
-      if (Z.ZERO.equals(s.pow(3).mod(t))) {
+      if (s.pow(3).mod(t).isZero()) {
         return s;
       }
       s = s.add(1);

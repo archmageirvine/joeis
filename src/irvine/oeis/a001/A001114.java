@@ -22,7 +22,7 @@ public class A001114 extends A001113 {
       v = v.add(mStore == null ? super.next() : mStore);
       mStore = null;
       if (v.compareTo(mPrev) > 0) {
-        while ((mStore = super.next()).equals(Z.ZERO)) {
+        while ((mStore = super.next()).isZero()) {
           v = v.multiply(10);
         }
         mPrev = v;

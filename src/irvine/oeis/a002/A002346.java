@@ -26,7 +26,7 @@ public class A002346 implements Sequence {
           break;
         }
         final Z[] s = x2.sqrtAndRemainder();
-        if (Z.ZERO.equals(s[1])) {
+        if (s[1].isZero()) {
           return s[0];
         }
       }

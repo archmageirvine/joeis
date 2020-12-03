@@ -13,7 +13,7 @@ public class A031882 extends A000959 {
     final Z[] t0 = t.divideAndRemainder(Z.TEN);
     final Z r = t0[1];
     Z q = t0[0];
-    while (!Z.ZERO.equals(q)) {
+    while (!q.isZero()) {
       final Z[] qr = q.divideAndRemainder(Z.TEN);
       if (!r.equals(qr[1])) {
         return false;

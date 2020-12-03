@@ -16,7 +16,7 @@ public class A152957 implements Sequence {
   public Z next() {
     while (true) {
       ++mN;
-      if (Z.ZERO.equals(Z.valueOf(mN).mod(new Z(A045918.lookAndSay(mN))))) {
+      if (Z.valueOf(mN).mod(new Z(A045918.lookAndSay(mN))).isZero()) {
         return Z.valueOf(mN);
       }
       /*

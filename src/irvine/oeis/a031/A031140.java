@@ -16,9 +16,9 @@ public class A031140 implements Sequence {
 
   protected int positionRightMostZero(Z n) {
     int pos = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return pos;
       }
       n = qr[0];

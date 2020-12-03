@@ -21,7 +21,7 @@ public class A034914 implements Sequence {
       for (long k = mP - 1; k >= 1; --k) {
         final Z a = p.multiply(k).add(1);
         final Z[] qr = a.divideAndRemainder(Z.valueOf(mP - k));
-        if (Z.ZERO.equals(qr[1]) && qr[0].isProbablePrime()) {
+        if (qr[1].isZero() && qr[0].isProbablePrime()) {
           return p;
         }
       }

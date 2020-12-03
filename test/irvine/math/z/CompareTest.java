@@ -1,8 +1,8 @@
 package irvine.math.z;
 
-import junit.framework.TestCase;
-
 import java.math.BigInteger;
+
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
@@ -13,11 +13,10 @@ public class CompareTest extends TestCase {
 
   public void testEquals() {
     assertFalse(Z.ZERO == null);
-    assertFalse(Z.ZERO.equals(new Object()));
-    assertFalse(Z.ZERO.equals(Z.ONE));
-    assertFalse(Z.ZERO.equals(Z.TWO));
+    assertFalse(Z.ONE.isZero());
+    assertFalse(Z.TWO.isZero());
     assertFalse(Z.ONE.equals(Z.TWO));
-    assertTrue(Z.ZERO.equals(Z.ZERO));
+    assertTrue(Z.ZERO.isZero());
     assertTrue(Z.ONE.equals(Z.ONE));
     assertTrue(Z.TWO.equals(Z.TWO));
     assertTrue(Z.ZERO.equals(Z.valueOf(0L)));

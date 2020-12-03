@@ -21,7 +21,7 @@ public class A091824 implements Sequence {
       final Z b = mF.shiftLeft(mN - 1).add(1);
       final Z n = Z.valueOf(mN);
       final Z[] qr = b.divideAndRemainder(n);
-      if (Z.ZERO.equals(qr[1]) && qr[0].isProbablePrime()) {
+      if (qr[1].isZero() && qr[0].isProbablePrime()) {
         return n;
       }
     }

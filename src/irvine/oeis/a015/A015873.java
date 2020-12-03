@@ -33,7 +33,7 @@ public class A015873 implements Sequence {
       mFactorSequenceF = mFactorSequenceG;
       mFactorSequenceG = mFactorSequenceH;
       mFactorSequenceH = Cheetah.factor(++mN);
-      if (sigma.add(8).mod(mFactorSequenceH.phi()).equals(Z.ZERO)) {
+      if (sigma.add(8).mod(mFactorSequenceH.phi()).isZero()) {
         return Z.valueOf(mN - 8);
       }
     }

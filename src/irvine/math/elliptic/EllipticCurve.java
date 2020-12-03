@@ -308,7 +308,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
       } else {
         t = i.pow(3).subtract(a);
       }
-      if (Z.ZERO.equals(t.mod(p))) {
+      if (t.mod(p).isZero()) {
         return i;
       }
     }
@@ -316,7 +316,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
 
   // Test for types In, II, III, IV
   private void tate1(final Z p, final long n, final EllipticCurve original) {
-    if (!Z.ZERO.equals(c4().toZ().mod(p))) {
+    if (!c4().toZ().mod(p).isZero()) {
       final long cp;
       if (PolynomialUtils.quadraticRootsExist(Z.ONE, a1().toZ(), a2().toZ().negate(), p)) {
         cp = n;
@@ -332,7 +332,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     }
     final Z p2 = p.square();
     final Z a6z = a6().toZ();
-    if (!Z.ZERO.equals(a6z.mod(p2))) {
+    if (!a6z.mod(p2).isZero()) {
       original.mKodaira.put(p, "II");
       original.mExponentInConductor.put(p, n);
       original.mLocalIndex.put(p, 1L);
@@ -340,13 +340,13 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     }
     final Z p3 = p2.multiply(p);
     final Z b8z = b8().toZ();
-    if (!Z.ZERO.equals(b8z.mod(p3))) {
+    if (!b8z.mod(p3).isZero()) {
       original.mKodaira.put(p, "III");
       original.mExponentInConductor.put(p, n - 1);
       original.mLocalIndex.put(p, 2L);
       return;
     }
-    if (!Z.ZERO.equals(b6().toZ().mod(p3))) {
+    if (!b6().toZ().mod(p3).isZero()) {
       final long cp = PolynomialUtils.quadraticRootsExist(Z.ONE, a3().toZ().divide(p), a6().toZ().divide(p2).negate(), p) ? 3 : 1;
       original.mKodaira.put(p, "IV");
       original.mExponentInConductor.put(p, n - 2);
@@ -381,11 +381,11 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     final Z w = d.square().multiply(27).subtract(b2.multiply(c.square())).add(b.pow(3).multiply(d).multiply(4)).subtract(b.multiply(c).multiply(d).multiply(18)).add(c.pow(3).multiply(4));
     final Z x = c.multiply(3).subtract(b2);
     // Test for distinct root: type I*0
-    if (!Z.ZERO.equals(w.mod(p))) {
+    if (!w.mod(p).isZero()) {
       original.mKodaira.put(p, "I*0");
       original.mExponentInConductor.put(p, n - 4);
       original.mLocalIndex.put(p, 1L + PolynomialUtils.numberRootsCubic(b, c, d, p));
-    } else if (!Z.ZERO.equals(x.mod(p))) {
+    } else if (!x.mod(p).isZero()) {
       // Double root: type I*m, change coordinates so that the double root is T == 0
       final Z r;
       if (Z.TWO.equals(p)) {
@@ -423,7 +423,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     while (cp == 0) {
       final Z xa3 = ec.a3().toZ().divide(my);
       Z xa6 = ec.a6().toZ().divide(mx.multiply(my));
-      if (!Z.ZERO.equals(xa3.square().add(xa6.multiply(4)).mod(p))) {
+      if (!xa3.square().add(xa6.multiply(4)).mod(p).isZero()) {
         cp = PolynomialUtils.quadraticRootsExist(Z.ONE, xa3, xa6.negate(), p) ? 4 : 2;
       } else {
         final Z t = my.multiply(Z.TWO.equals(p) ? xa6 : xa3.multiply(Z.TWO.modInverse(p)).mod(p).negate());
@@ -434,7 +434,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
         //xa3 = ec.a3().toZ().divide(my);
         final Z xa4 = ec.a4().toZ().divide(mx.multiply(p));
         xa6 = ec.a6().toZ().divide(mx.multiply(my));
-        if (!Z.ZERO.equals(xa4.square().subtract(xa2.multiply(xa6).multiply(4)).mod(p))) {
+        if (!xa4.square().subtract(xa2.multiply(xa6).multiply(4)).mod(p).isZero()) {
           cp = PolynomialUtils.quadraticRootsExist(xa2, xa4, xa6, p) ? 4 : 2;
         } else {
           final Z r;
@@ -460,7 +460,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     final Z x6 = a6().toZ().divide(p4);
     final Z temp = x3.square().add(x6.multiply(4));
     // Test for type IV*
-    if (!Z.ZERO.equals(temp.mod(p))) {
+    if (!temp.mod(p).isZero()) {
       final long cp = PolynomialUtils.quadraticRootsExist(Z.ONE, x3, x6.negate(), p) ? 3 : 1;
       original.mKodaira.put(p, "IV*");
       original.mExponentInConductor.put(p, n - 6);
@@ -474,11 +474,11 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
         t = ZUtils.bestRemainder(Z.TWO.modInverse(p).multiply(a3().toZ()).negate(), p).multiply(p2);
       }
       final EllipticCurve ec = twist(Q.ZERO, Q.ZERO, new Q(t), Q.ONE);
-      if (!Z.ZERO.equals(ec.a4().toZ().mod(p4))) {
+      if (!ec.a4().toZ().mod(p4).isZero()) {
         original.mKodaira.put(p, "III*");
         original.mExponentInConductor.put(p, n - 7);
         original.mLocalIndex.put(p, 2L);
-      } else if (!Z.ZERO.equals(ec.a6().toZ().mod(p4.multiply(p2)))) {
+      } else if (!ec.a6().toZ().mod(p4.multiply(p2)).isZero()) {
         original.mKodaira.put(p, "II*");
         original.mExponentInConductor.put(p, n - 8);
         original.mLocalIndex.put(p, 1L);
@@ -517,7 +517,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
         t = r.add(a4z).mod(p);
       }
     } else if (Z.THREE.equals(p)) {
-      if (Z.ZERO.equals(b2z.mod(p))) {
+      if (b2z.mod(p).isZero()) {
         r = root(b6().toZ().negate(), 3, p);
       } else {
         r = b2z.modMultiply(b4().toZ(), p).negate();
@@ -526,7 +526,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     } else {
       final Z c4z = c4().toZ();
       final Z r1;
-      if (Z.ZERO.equals(c4z.mod(p))) {
+      if (c4z.mod(p).isZero()) {
         r1 = Z.valueOf(12).modInverse(p).multiply(b2z).negate();
       } else {
         r1 = c4z.multiply(12).mod(p).modInverse(p).multiply(c6().toZ().add(b2z.multiply(c4z))).negate();

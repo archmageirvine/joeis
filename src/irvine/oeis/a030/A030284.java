@@ -20,7 +20,7 @@ public class A030284 implements Sequence {
     final ArrayList<Integer> digits = new ArrayList<>();
     Z t = mA;
     final int syndrome = ZUtils.syn(t);
-    while (!Z.ZERO.equals(t)) {
+    while (!t.isZero()) {
       digits.add((int) (t.mod(10)));
       t = t.divide(10);
     }

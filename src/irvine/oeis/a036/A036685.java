@@ -17,6 +17,6 @@ public class A036685 extends PositionSubsequence {
 
   @Override
   public boolean isOk(final Z term) {
-    return Z.ZERO.equals(term);
+    return term.isZero();
   }
 }

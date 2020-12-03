@@ -196,7 +196,7 @@ public class Squfof extends AbstractFactorizer {
     final int status = fs.getStatus(n);
     fs.remove(n);
     n = AbstractFactorizer.handleEvenAndNegative(fs, n, exponent);
-    if (n.equals(Z.ONE) || n.equals(Z.ZERO)) {
+    if (n.equals(Z.ONE) || n.isZero()) {
       return;
     }
     if (n.bitLength() > 62) {

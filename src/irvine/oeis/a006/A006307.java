@@ -16,7 +16,7 @@ public class A006307 implements Sequence {
   @Override
   public Z next() {
     final Z m = mN;
-    mN = mN.equals(Z.ZERO) ? Z.ONE : mN.multiply2();
+    mN = mN.isZero() ? Z.ONE : mN.multiply2();
     long c = 0;
     for (Z p = Z.TWO; p.compareTo(m) <= 0; p = mPrime.nextPrime(p)) {
       if (mPrime.isPrime(mN.subtract(p))) {

@@ -15,7 +15,7 @@ public class A307812 extends A000217 {
     while (true) {
       final Z t = super.next();
       final Z prod = ZUtils.digitProduct(t);
-      if (!Z.ZERO.equals(prod) && prod.mod(mN) == 0) {
+      if (!prod.isZero() && prod.mod(mN) == 0) {
         return t;
       }
     }

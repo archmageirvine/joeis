@@ -62,7 +62,7 @@ public final class Smarandache {
             System.err.println("WARNING: " + f + " is not prime");
             continue;
           }
-          if (!Z.ZERO.equals(n.mod(d))) {
+          if (!n.mod(d).isZero()) {
             System.err.println("WARNING: " + f + " does not divide Sm(" + sm + ")");
             continue;
           }

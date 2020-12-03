@@ -27,7 +27,7 @@ public class A138561 implements Sequence {
 
   @Override
   public Z next() {
-    if (!Z.ZERO.equals(mCount)) {
+    if (!mCount.isZero()) {
       mCount = mCount.subtract(Z.ONE);
       if (mComposites) {
         mC = nextComposite(mC);

@@ -46,7 +46,7 @@ public class AlternatingGroup<T> extends AbstractGroup<Permutation<T>> {
   private final String mName;
 
   private AlternatingGroup(final Set<T> set, final String name) {
-    if (set.isInfinite() || Z.ZERO.equals(set.size())) {
+    if (set.isInfinite() || set.size().isZero()) {
       throw new IllegalArgumentException();
     }
     mSet = set;

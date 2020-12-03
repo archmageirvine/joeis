@@ -26,7 +26,7 @@ public class A007996 implements Sequence {
         Z x = Z.TWO;
         final HashSet<Z> s = new HashSet<>();
         while (s.add(x)) {
-          if (Z.ZERO.equals(x)) {
+          if (x.isZero()) {
             return mP;
           }
           x = x.square().subtract(x).add(1).mod(mP);

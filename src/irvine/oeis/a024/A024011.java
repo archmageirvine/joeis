@@ -19,7 +19,7 @@ public class A024011 extends A000040 {
       ++mN;
       mP = super.next();
       mSum = mSum.add(mP);
-    } while (!Z.ZERO.equals(mSum.mod(mP)));
+    } while (!mSum.mod(mP).isZero());
     return Z.valueOf(mN);
   }
 }

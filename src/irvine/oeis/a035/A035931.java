@@ -15,7 +15,7 @@ public class A035931 implements Sequence {
   public Z next() {
     long c = 0;
     Z t = Z.valueOf(++mN);
-    while (!Z.ZERO.equals(t)) {
+    while (!t.isZero()) {
       t = A035930.f(t);
       ++c;
     }

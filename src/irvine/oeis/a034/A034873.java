@@ -21,7 +21,7 @@ public class A034873 implements Sequence {
     while (true) {
       final Z t = mA.pollFirst();
       final long r = t.mod(10);
-      if (!Z.ZERO.equals(t)) {
+      if (!t.isZero()) {
         mA.add(t.multiply(10).add(r));
       }
       for (long d = 0; d < 10; ++d) {

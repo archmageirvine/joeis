@@ -22,7 +22,7 @@ public class A029530 implements Sequence {
       }
       mN = mN.add(1);
       mA = ZUtils.reverse(mN, 13).multiply(mT).add(mA);
-      if (Z.ZERO.equals(mA.mod(mN))) {
+      if (mA.mod(mN).isZero()) {
         return mN;
       }
     }

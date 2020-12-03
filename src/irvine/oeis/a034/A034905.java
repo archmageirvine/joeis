@@ -14,7 +14,7 @@ public class A034905 implements Sequence {
   private int mStepIndex = 1;
 
   private boolean is12357(Z n) {
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
       final int r = qr[1].intValue();
       if (r != 1 && r != 2 && r != 3 && r != 5 && r != 7) {

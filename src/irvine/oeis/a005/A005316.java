@@ -100,7 +100,7 @@ public class A005316 implements Sequence {
    * @return packed value
    */
   protected static Z pack(final Z lower, final Z upper) {
-    if (lower.equals(Z.ZERO) || upper.equals(Z.ZERO)) {
+    if (lower.isZero() || upper.isZero()) {
       throw new IllegalStateException("invalid state");
     }
     return lower.or(upper.multiply2());
@@ -199,7 +199,7 @@ public class A005316 implements Sequence {
         Z bit = Z.ONE;
         while (n >= 0) {
           bit = bit.shiftLeft(WORD_SHIFT);
-          n += Z.ZERO.equals(v.and(bit)) ? 1 : -1;
+          n += v.and(bit).isZero() ? 1 : -1;
         }
         v = v.xor(bit);
       }

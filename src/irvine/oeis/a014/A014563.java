@@ -13,7 +13,7 @@ public class A014563 implements Sequence {
 
   private int[] syndrome(Z square) {
     final int[] counts = new int[10];
-    while (!Z.ZERO.equals(square)) {
+    while (!square.isZero()) {
       ++counts[(int) square.mod(10)];
       square = square.divide(10);
     }

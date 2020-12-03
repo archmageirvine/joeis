@@ -20,7 +20,7 @@ public class A019295 implements Sequence {
     do {
       m = Jaguar.factor(m).sigma();
       qr = m.divideAndRemainder(mN);
-    } while (!qr[1].equals(Z.ZERO));
+    } while (!qr[1].isZero());
     return qr[0];
   }
 }

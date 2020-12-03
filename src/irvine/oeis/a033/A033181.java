@@ -15,7 +15,7 @@ public class A033181 implements Sequence {
 
   private boolean is(final Z t, final Z[] primes) {
     for (final Z p : primes) {
-      if (!Z.ZERO.equals(t.mod(p.subtract(1)))) {
+      if (!t.mod(p.subtract(1)).isZero()) {
         return false;
       }
     }

@@ -18,7 +18,7 @@ public class A053376 implements Sequence {
     mS = mS == null ? Z.ONE : mS.multiply(10);
     mT = mT.multiply2();
     final Z a = mS.add(mA);
-    if (Z.ZERO.equals(a.mod(mT))) {
+    if (a.mod(mT).isZero()) {
       mA = a;
     } else {
       mA = mS.multiply(8).add(mA);

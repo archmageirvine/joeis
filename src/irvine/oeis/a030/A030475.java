@@ -13,14 +13,14 @@ public class A030475 extends A000040 {
     final boolean side = m.isEven();
     do {
       m = m.divide(10);
-    } while (!Z.ZERO.equals(m) && m.isEven() == side);
-    if (Z.ZERO.equals(m)) {
+    } while (!m.isZero() && m.isEven() == side);
+    if (m.isZero()) {
       return false;
     }
     do {
       m = m.divide(10);
-    } while (!Z.ZERO.equals(m) && m.isEven() != side);
-    return !Z.ZERO.equals(m);
+    } while (!m.isZero() && m.isEven() != side);
+    return !m.isZero();
   }
 
   @Override

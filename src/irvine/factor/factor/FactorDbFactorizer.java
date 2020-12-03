@@ -93,7 +93,7 @@ public class FactorDbFactorizer extends AbstractFactorizer {
           v = getNumberFromId(id);
           status = v.isProbablePrime() ? FactorSequence.PROB_PRIME : FactorSequence.COMPOSITE;
         }
-        while (Z.ZERO.equals(n.mod(v))) {
+        while (n.mod(v).isZero()) {
           fs.add(v, status, exponent);
           n = n.divide(v);
         }

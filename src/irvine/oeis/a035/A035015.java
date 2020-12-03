@@ -14,7 +14,7 @@ public class A035015 extends A003285 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (LongUtils.isSquareFree(mN) && !Z.ZERO.equals(t)) {
+      if (LongUtils.isSquareFree(mN) && !t.isZero()) {
         return t;
       }
     }

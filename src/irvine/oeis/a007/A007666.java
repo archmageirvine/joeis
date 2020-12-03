@@ -18,7 +18,7 @@ public class A007666 implements Sequence {
 
   private boolean isPowerExpressible(final Z n, final int cnt, int next) {
     if (cnt == 0) {
-      return Z.ZERO.equals(n);
+      return n.isZero();
     }
     while (next < mPowers.size() && mPowers.get(next).compareTo(n) <= 0) {
       if (isPowerExpressible(n.subtract(mPowers.get(next)), cnt - 1, next + 1)) {

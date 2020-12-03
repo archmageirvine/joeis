@@ -25,7 +25,7 @@ public class A035283 implements Sequence {
           sum = sum.add(mA.a(t).multiply(mA.a(k).multiply(k)));
         }
       }
-      if (!Z.ZERO.equals(sum)) {
+      if (!sum.isZero()) {
         return sum;
       }
     }

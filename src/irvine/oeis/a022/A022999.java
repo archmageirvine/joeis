@@ -19,7 +19,7 @@ public class A022999 implements Sequence {
         final Z u = bmc.multiply(Z.valueOf(b + c).square().multiply(delta).subtract(bmc.multiply(b).multiply(c).multiply2()));
         final Z v = bmc.multiply(delta).subtract(Z.valueOf(b).multiply(c).multiply2());
         final Z[] qr = u.divideAndRemainder(v);
-        if (Z.ZERO.equals(qr[1])) {
+        if (qr[1].isZero()) {
           final Z discriminant = qr[0];
           if (discriminant.testBit(0) == (((b - c) & 1) == 1) && discriminant.isSquare()) {
             return true;

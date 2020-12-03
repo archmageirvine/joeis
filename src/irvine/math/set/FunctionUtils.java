@@ -29,7 +29,7 @@ public final class FunctionUtils {
       // codomain is infinite, so each element of the domain can go
       // to an infinite number of possible, thus the only special
       // case is when the domain is empty.
-      return Z.ZERO.equals(domainSize) ? Z.ONE : null;
+      return domainSize.isZero() ? Z.ONE : null;
     }
     if (domainSize == null) {
       // If the codomain is empty, we cannot form any mapping.
@@ -105,7 +105,7 @@ public final class FunctionUtils {
       return codomainSize == null ? null : Z.ZERO;
     }
     if (codomainSize == null) {
-      return Z.ZERO.equals(domainSize) ? Z.ONE : null;
+      return domainSize.isZero() ? Z.ONE : null;
     }
     if (codomainSize.equals(domainSize)) {
       // This special case is a speed optimization

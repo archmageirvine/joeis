@@ -13,7 +13,7 @@ public class A007989 extends MemorySequence {
     // We are trying to find a(n), m is the current candidate
     for (int k = 0; k < n; ++k) {
       final Z ak = get(k);
-      if (Z.ZERO.equals(Z.valueOf(n - k).mod(ak)) && Z.ZERO.equals(m.mod(ak))) {
+      if (Z.valueOf(n - k).mod(ak).isZero() && m.mod(ak).isZero()) {
         return false;
       }
     }

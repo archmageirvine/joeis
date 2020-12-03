@@ -16,7 +16,7 @@ public class A285879 extends A008683 {
   public Z next() {
     mEven = !mEven;
     final Z mobius = super.next();
-    if (mEven && !Z.ZERO.equals(mobius)) {
+    if (mEven && !mobius.isZero()) {
       mSum = mSum.add(1);
     }
     return mSum;

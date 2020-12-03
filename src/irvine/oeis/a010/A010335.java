@@ -19,7 +19,7 @@ public class A010335 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final Z[] s = mN.sqrtAndRemainder();
-      if (!Z.ZERO.equals(s[1])) {
+      if (!s[1].isZero()) {
         final List<Z> conv = Convergents.continuedFractionConvergentsSqrt(mN.longValueExact());
         if (conv.get(conv.size() / 2).equals(s[0])) {
           return mN;

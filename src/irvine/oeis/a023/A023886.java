@@ -16,7 +16,7 @@ public class A023886 extends A002808 {
     while (true) {
       final Z n = super.next();
       final FactorSequence fs = Cheetah.factor(n);
-      if (Z.ZERO.equals(fs.sigma().subtract(n).subtract(1).mod(fs.sigma0().subtract(2)))) {
+      if (fs.sigma().subtract(n).subtract(1).mod(fs.sigma0().subtract(2)).isZero()) {
         return n;
       }
     }

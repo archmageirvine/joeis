@@ -18,7 +18,7 @@ public class A023897 implements Sequence {
     while (true) {
       final FactorSequence fs = Cheetah.factor(++mN);
       final Z[] qr = fs.sigma().divideAndRemainder(fs.phi());
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return qr[0];
       }
     }

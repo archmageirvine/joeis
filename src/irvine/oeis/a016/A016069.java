@@ -14,7 +14,7 @@ public class A016069 implements Sequence {
   private boolean isExactly2DigitSyndrome(Z n) {
     int used = 0;
     int cnt = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final long bit = 1 << n.mod(10);
       if ((used & bit) == 0) {
         if (++cnt > 2) {

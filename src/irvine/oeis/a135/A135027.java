@@ -22,7 +22,7 @@ public class A135027 implements Sequence {
         if (mN > Integer.MAX_VALUE) {
           Z v = Z.valueOf(mN).square();
           long s = 0;
-          while (!Z.ZERO.equals(v)) {
+          while (!v.isZero()) {
             s += v.mod(10);
             if (s > 10) {
               break;

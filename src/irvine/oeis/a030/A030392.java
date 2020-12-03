@@ -10,11 +10,11 @@ public class A030392 extends A030386 {
 
   @Override
   public Z next() {
-    while (!Z.ZERO.equals(super.next())) {
+    while (!super.next().isZero()) {
       // do nothing
     }
     long cnt = 1;
-    while (Z.ZERO.equals(super.next())) {
+    while (super.next().isZero()) {
       ++cnt;
     }
     return Z.valueOf(cnt);

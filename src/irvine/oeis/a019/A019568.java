@@ -14,7 +14,7 @@ public class A019568 implements Sequence {
   private int mN = -1;
 
   private boolean search(final Z target, final int pos, final Z[] powers, final Z[] cum) {
-    if (Z.ZERO.equals(target)) {
+    if (target.isZero()) {
       return true;
     }
     if (pos < 0) {

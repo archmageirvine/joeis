@@ -17,7 +17,7 @@ public class A019545 implements Sequence {
       final Z cube = Z.valueOf(++mN).pow(3);
       Z t = cube;
       boolean ok = true;
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         final long r = t.mod(10);
         if (r != 0 && r != 1 && r != 8) {
           ok = false;

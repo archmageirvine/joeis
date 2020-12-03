@@ -33,7 +33,7 @@ public class A030454 implements Sequence {
         mZetaList.add(Zeta.zeta(m).subtract(CR.ONE));
       }
       final Z scaled = mZetaList.get(m).shiftLeft(mN).floor();
-      if (Z.ZERO.equals(scaled)) {
+      if (scaled.isZero()) {
         break; // We will never see another 1 in this column
       }
       if (!scaled.isEven()) {

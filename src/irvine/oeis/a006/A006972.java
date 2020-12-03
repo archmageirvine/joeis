@@ -22,7 +22,7 @@ public class A006972 implements Sequence {
         boolean ok = true;
         final FactorSequence fs = Cheetah.factor(mN);
         for (final Z p : fs.toZArray()) {
-          if (fs.getExponent(p) > 1 || !Z.ZERO.equals(m.mod(p.add(1)))) {
+          if (fs.getExponent(p) > 1 || !m.mod(p.add(1)).isZero()) {
             ok = false;
             break;
           }

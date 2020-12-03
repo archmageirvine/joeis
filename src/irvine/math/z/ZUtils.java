@@ -62,7 +62,7 @@ public final class ZUtils {
    */
   public static int[] digitCounts(final Z n, final int base) {
     final int[] counts = new int[base];
-    if (Z.ZERO.equals(n)) {
+    if (n.isZero()) {
       ++counts[0];
     } else {
       Z m = n.abs();
@@ -115,7 +115,7 @@ public final class ZUtils {
   public static long digitSum(Z v, final int base) {
     final Z bp = basePower(base);
     long sum = 0;
-    while (!Z.ZERO.equals(v)) {
+    while (!v.isZero()) {
       final Z[] qr = v.divideAndRemainder(bp);
       sum += digitSum(qr[1].longValue(), base);
       v = qr[0];
@@ -166,7 +166,7 @@ public final class ZUtils {
   public static long digitSumSquares(Z v, final int base) {
     final Z bp = basePower(base);
     long sum = 0;
-    while (!Z.ZERO.equals(v)) {
+    while (!v.isZero()) {
       final Z[] qr = v.divideAndRemainder(bp);
       sum += digitSumSquares(qr[1].longValue(), base);
       v = qr[0];
@@ -224,12 +224,12 @@ public final class ZUtils {
    * @return product of digits
    */
   public static Z digitProduct(Z v, final int base) {
-    if (Z.ZERO.equals(v)) {
+    if (v.isZero()) {
       return Z.ZERO;
     }
     final Z bp = basePower(base);
     Z prod = Z.ONE;
-    while (!Z.ZERO.equals(v) && !Z.ZERO.equals(prod)) {
+    while (!v.isZero() && !prod.isZero()) {
       final Z[] qr = v.divideAndRemainder(bp);
       prod = prod.multiply(digitProduct(qr[1].longValue(), base));
       v = qr[0];
@@ -252,7 +252,7 @@ public final class ZUtils {
    * @return sorted number
    */
   public static Z sortDigitsAscending(final Z n) {
-    if (Z.ZERO.equals(n)) {
+    if (n.isZero()) {
       return Z.ZERO;
     }
     final int[] counts = digitCounts(n);
@@ -294,7 +294,7 @@ public final class ZUtils {
   public static Z reverse(Z n, final long base) {
     final Z b = Z.valueOf(base);
     Z r = Z.ZERO;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(b);
       r = r.multiply(base);
       r = r.add(qr[1]);
@@ -417,11 +417,11 @@ public final class ZUtils {
    * @return syndrome
    */
   public static int syn(Z n) {
-    if (Z.ZERO.equals(n)) {
+    if (n.isZero()) {
       return 1;
     }
     int syndrome = 0;
-    while (!Z.ZERO.equals(n) && syndrome != 0b1111111111) {
+    while (!n.isZero() && syndrome != 0b1111111111) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
       n = qr[0];
       syndrome |= 1 << qr[1].intValue();
@@ -480,7 +480,7 @@ public final class ZUtils {
   public static int ord(final Z a, Z b) {
     int d = 0;
     Z[] qr;
-    while (Z.ZERO.equals((qr = b.divideAndRemainder(a))[1])) {
+    while ((qr = b.divideAndRemainder(a))[1].isZero()) {
       ++d;
       b = qr[0];
     }
@@ -495,7 +495,7 @@ public final class ZUtils {
    * @return best remainder
    */
   public static Z bestRemainder(final Z b, final Z mod) {
-    if (Z.ONE.equals(mod) || Z.ZERO.equals(b)) {
+    if (Z.ONE.equals(mod) || b.isZero()) {
       return Z.ZERO;
     }
     final Z mod2 = mod.divide2();
@@ -750,7 +750,7 @@ public final class ZUtils {
    */
   public static boolean isNondecreasingDigits(Z n) {
     Z t = Z.TEN;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
       if (qr[1].compareTo(t) > 0) {
         return false;
@@ -768,7 +768,7 @@ public final class ZUtils {
    */
   public static boolean isNonincreasingDigits(Z n) {
     Z t = Z.ZERO;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
       if (qr[1].compareTo(t) < 0) {
         return false;
@@ -785,12 +785,12 @@ public final class ZUtils {
    * @return true iff and n contains a zero
    */
   public static boolean containsZero(Z n) {
-    if (Z.ZERO.equals(n)) {
+    if (n.isZero()) {
       return true;
     }
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return true;
       }
       n = qr[0];
@@ -825,7 +825,7 @@ public final class ZUtils {
    * @return true iff <code>a</code> is a quadratic residue
    */
   public static boolean isQuadraticResidue(final Z a, final Z mod) {
-    if (Z.ZERO.equals(a.mod(mod))) {
+    if (a.mod(mod).isZero()) {
       return true; // 0^2=0
     }
     if (mod.isProbablePrime()) {
@@ -840,12 +840,12 @@ public final class ZUtils {
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       Z b = a.mod(p.pow(e));
-      if (Z.ZERO.equals(b)) {
+      if (b.isZero()) {
         continue;
       }
       Z[] qr;
       int k = 0;
-      while (Z.ZERO.equals((qr = b.divideAndRemainder(p))[1])) {
+      while ((qr = b.divideAndRemainder(p))[1].isZero()) {
         ++k;
         b = qr[0];
       }

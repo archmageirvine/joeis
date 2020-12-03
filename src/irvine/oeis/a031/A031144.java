@@ -13,9 +13,9 @@ public class A031144 extends A000142 {
 
   static int zeroCount(Z n) {
     int cnt = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         ++cnt;
       }
       n = qr[0];

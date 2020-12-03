@@ -23,7 +23,7 @@ public class A215782 implements Sequence {
         a = b;
         b = c;
         c = s.mod(mN);
-        if (c.equals(Z.ZERO)) {
+        if (c.isZero()) {
           break;
         }
         if (c.equals(Z.ONE) && a.equals(Z.ONE) && b.equals(Z.ONE)) {

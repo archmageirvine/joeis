@@ -28,7 +28,7 @@ public class A028298 implements Sequence {
         mM = 0;
       }
       final Z c = mPoly.coeff(mM);
-      if (!Z.ZERO.equals(c)) {
+      if (!c.isZero()) {
         return c;
       }
     }

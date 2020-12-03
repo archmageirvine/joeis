@@ -19,7 +19,7 @@ public class A034095 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final Z s = Cheetah.factor(mN).sigma(-1);
-      if (s.mod(mN).equals(Z.ZERO)) {
+      if (s.mod(mN).isZero()) {
         return s.divide(mN);
       }
     }

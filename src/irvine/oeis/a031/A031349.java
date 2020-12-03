@@ -22,7 +22,7 @@ public class A031349 implements Sequence {
       final Z[] qr = m.divideAndRemainder(Z.TEN);
       p = p.multiply(qr[1].pow(pow()));
       m = qr[0];
-    } while (!Z.ZERO.equals(m) && !Z.ZERO.equals(p));
+    } while (!m.isZero() && !p.isZero());
     return p;
   }
 

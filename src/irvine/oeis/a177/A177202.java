@@ -26,7 +26,7 @@ public class A177202 extends A090466 {
       }
       boolean ok = true;
       for (final Z d : mSeq) {
-        if (mN.mod(d).equals(Z.ZERO)) {
+        if (mN.mod(d).isZero()) {
           ok = false;
           break;
         }

@@ -50,7 +50,7 @@ public class A035110 extends A035111 {
         mD = updateDirichlet();
       }
       final Z t = mD.coeff(mN);
-      if (!Z.ZERO.equals(t)) {
+      if (!t.isZero()) {
         return t;
       }
     }

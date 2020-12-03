@@ -23,7 +23,7 @@ public class A013648 implements Sequence {
     while (true) {
       final Z n = Z.valueOf(++mN);
       final Z[] sqrt = n.sqrtAndRemainder();
-      if (Z.ZERO.equals(sqrt[1])) {
+      if (sqrt[1].isZero()) {
         continue;
       }
       int oneCount = 0;

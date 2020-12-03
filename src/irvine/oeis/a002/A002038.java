@@ -28,7 +28,7 @@ public class A002038 implements Sequence {
           mProd = mProd.multiply(p);
         }
       }
-      if (Z.ZERO.equals(mProd.mod(mA))) {
+      if (mProd.mod(mA).isZero()) {
         return mA;
       }
     }

@@ -149,7 +149,7 @@ public final class Fibonacci  {
     }
 
     // handle small cases
-    if (n.equals(Z.ZERO)) {
+    if (n.isZero()) {
       return 0;
     }
     // note there are two possible answers in the next case, we return
@@ -294,7 +294,7 @@ public final class Fibonacci  {
    * @param out output stream
    */
   public static void lucasSnfsPoly(final int n, final Z c, final PrintStream out) {
-    if (!Z.ZERO.equals(lucas(n).mod(c))) {
+    if (!lucas(n).mod(c).isZero()) {
       throw new ArithmeticException("Composite does not divide claimed Lucas number");
     }
     if (n % 5 == 0 && (n & 1) == 1) {

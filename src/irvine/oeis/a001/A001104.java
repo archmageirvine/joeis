@@ -17,7 +17,7 @@ public class A001104 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final Z ds = ZUtils.digitProduct(mN);
-      if (!Z.ZERO.equals(ds) && Z.ZERO.equals(mN.mod(ds)) && mN.divide(ds).isSquare()) {
+      if (!ds.isZero() && mN.mod(ds).isZero() && mN.divide(ds).isSquare()) {
         return mN;
       }
     }

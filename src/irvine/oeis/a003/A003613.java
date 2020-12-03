@@ -145,14 +145,14 @@ public class A003613 implements Sequence {
           found = true;
           res.remove(k);
           final Z mul = t.right().add(a.right());
-          if (!Z.ZERO.equals(mul)) {
+          if (!mul.isZero()) {
             final Triple<Z> b = new Triple<>(a.left(), a.mid(), mul);
             res.add(b);
           }
           break;
         }
       }
-      if (!found && !Z.ZERO.equals(t.right())) {
+      if (!found && !t.right().isZero()) {
         res.add(t);
       }
     }

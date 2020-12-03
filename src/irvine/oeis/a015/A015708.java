@@ -21,7 +21,7 @@ public class A015708 implements Sequence {
       final FactorSequence fs = Cheetah.factor(mN);
       final Z a = fs.sigma().multiply(fs.phi());
       final Z[] qr = a.divideAndRemainder(mN);
-      if (qr[1].equals(Z.ZERO)) {
+      if (qr[1].isZero()) {
         if (qr[0].compareTo(mBest) <= 0) {
           return mN;
         } else {

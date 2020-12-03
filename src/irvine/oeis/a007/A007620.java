@@ -13,7 +13,7 @@ public class A007620 extends A005835 {
   private boolean mFirst = true;
 
   private boolean isSum(final Z k, final Z[] d, final int pos) {
-    if (Z.ZERO.equals(k)) {
+    if (k.isZero()) {
       return true;
     }
     int p = pos;

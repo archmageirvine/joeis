@@ -17,7 +17,7 @@ public class A015971 implements Sequence {
     ++mN;
     long k = 0;
     while (true) {
-      if (Z.ZERO.equals(Cheetah.factor(++k).sigma().mod(Cheetah.factor(mN + k).phi()))) {
+      if (Cheetah.factor(++k).sigma().mod(Cheetah.factor(mN + k).phi()).isZero()) {
         return Z.valueOf(k);
       }
     }

@@ -101,7 +101,7 @@ public final class IrreduciblePolynomials {
     while (true) {
       final Z rem = ni.xor(di.shiftLeft(shift));
       //System.out.println("x  -> " + di.toString(2) + " | " + ni.toString(2) + " = " + rem.toString(2) + " shift was=" + shift + " lni=" + degree(ni));
-      if (Z.ZERO.equals(rem) || rem.equals(di)) {
+      if (rem.isZero() || rem.equals(di)) {
         return true;
       }
       if (di.compareTo(rem) > 0) {

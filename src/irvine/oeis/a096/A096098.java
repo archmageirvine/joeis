@@ -36,7 +36,7 @@ public class A096098 extends FactorizationSequence {
     }
     final String[] parts = factorization.split("\\.");
     final Z p0 = new Z(parts[0]);
-    if (!Z.ZERO.equals(n.mod(p0))) {
+    if (!n.mod(p0).isZero()) {
       throw new RuntimeException("Does not divide: " + p0);
     }
     n = n.divide(p0);
@@ -68,7 +68,7 @@ public class A096098 extends FactorizationSequence {
         if (!p.isProbablePrime()) {
           throw new RuntimeException("Not prime: " + pk + " cf. " + factorization);
         }
-        if (!Z.ZERO.equals(n.mod(p))) {
+        if (!n.mod(p).isZero()) {
           throw new RuntimeException(p + " not div " + n + " in line " + factorization);
         }
         n = n.divide(p);

@@ -41,7 +41,7 @@ public class A032937 implements Sequence {
       mLimit = mLimit.multiply(base());
     }
     final Z t = res.multiply(base());
-    if (!Z.ZERO.equals(t)) {
+    if (!t.isZero()) {
       if (mOdd) {
         mA.add(t);
       } else {

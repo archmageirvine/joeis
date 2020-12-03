@@ -25,7 +25,7 @@ public class A257493 implements Sequence {
     for (final Z p : primes) {
       while (true) {
         final Z[] qr = n.divideAndRemainder(p);
-        if (!Z.ZERO.equals(qr[1])) {
+        if (!qr[1].isZero()) {
           break;
         }
         n = qr[0];

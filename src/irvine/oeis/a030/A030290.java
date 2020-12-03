@@ -20,7 +20,7 @@ public class A030290 implements Sequence {
   public Z next() {
     if (mA == null) {
       mA = Z.ZERO;
-    } else if (Z.ZERO.equals(mA)) {
+    } else if (mA.isZero()) {
       mA = Z.ONE;
     } else if (++mN >= 24 && (mN & 1) == 0) {
       mA = Z.TEN.pow(mN / 2 - 6); // Observed pattern
@@ -28,7 +28,7 @@ public class A030290 implements Sequence {
       final ArrayList<Integer> digits = new ArrayList<>();
       Z t = mA.pow(3);
       final int syndrome = ZUtils.syn(t);
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         digits.add((int) (t.mod(10)));
         t = t.divide(10);
       }

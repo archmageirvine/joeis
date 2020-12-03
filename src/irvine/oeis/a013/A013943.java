@@ -12,7 +12,7 @@ public class A013943 extends A003285 {
   @Override
   public Z next() {
     Z res = super.next();
-    if (Z.ZERO.equals(res)) {
+    if (res.isZero()) {
       res = super.next();
     }
     return res;

@@ -14,7 +14,7 @@ public class A036907 extends A033950 {
     while (true) {
       final Z n = super.next();
       final Z[] s = n.sqrtAndRemainder();
-      if (Z.ZERO.equals(s[1])) {
+      if (s[1].isZero()) {
         return n;
       }
     }

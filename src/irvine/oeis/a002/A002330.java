@@ -15,7 +15,7 @@ public class A002330 extends A002313 {
     while (true) {
       x = x.add(1);
       final Z[] s = p.subtract(x.square()).sqrtAndRemainder();
-      if (Z.ZERO.equals(s[1])) {
+      if (s[1].isZero()) {
         return s[0];
       }
     }

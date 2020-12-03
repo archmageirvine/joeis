@@ -17,7 +17,7 @@ public class A034017 extends A000086 {
       if (++mN == 0) {
         return Z.ZERO;
       }
-      if (!Z.ZERO.equals(super.next())) {
+      if (!super.next().isZero()) {
         return Z.valueOf(mN);
       }
     }

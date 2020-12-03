@@ -25,7 +25,7 @@ public class A032790 implements Sequence {
         a = a.multiply(mN + k);
       }
       final Z[] qr = a.divideAndRemainder(Z.valueOf((t() + 1) * mN + t() * (t() + 1) / 2));
-      if (Z.ZERO.equals(qr[1]) && StringUtils.isPalindrome(qr[0].toString())) {
+      if (qr[1].isZero() && StringUtils.isPalindrome(qr[0].toString())) {
         return qr[0];
       }
     }

@@ -27,7 +27,7 @@ public class A002335 implements Sequence {
           y = y.add(1);
           final Z x2 = mP.add(y.square().multiply2());
           final Z[] s = x2.sqrtAndRemainder();
-          if (Z.ZERO.equals(s[1])) {
+          if (s[1].isZero()) {
             return y;
           }
         }

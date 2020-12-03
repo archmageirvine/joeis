@@ -22,7 +22,7 @@ public class A020646 implements Sequence {
     while (mM < mN) {
       mF = mF.multiply(++mR);
       Z[] qr;
-      while (Z.ZERO.equals((qr = mF.divideAndRemainder(Z.SEVEN))[1])) {
+      while ((qr = mF.divideAndRemainder(Z.SEVEN))[1].isZero()) {
         mF = qr[0];
         ++mM;
       }

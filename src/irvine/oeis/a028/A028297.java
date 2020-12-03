@@ -24,7 +24,7 @@ public class A028297 implements Sequence {
         mM = mPoly.degree();
       }
       final Z c = mPoly.coeff(mM);
-      if (!Z.ZERO.equals(c)) {
+      if (!c.isZero()) {
         return c;
       }
     }

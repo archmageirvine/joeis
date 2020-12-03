@@ -14,6 +14,6 @@ public class A023416 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.ZERO.equals(mN) ? Z.ONE : Z.valueOf(mN.bitLength() - mN.bitCount());
+    return mN.isZero() ? Z.ONE : Z.valueOf(mN.bitLength() - mN.bitCount());
   }
 }

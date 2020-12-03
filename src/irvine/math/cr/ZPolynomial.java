@@ -27,7 +27,7 @@ public class ZPolynomial extends UnaryCRFunction {
     CR sum = CR.valueOf(mPoly.coeff(0));
     for (int k = 1; k <= mPoly.degree(); ++k) {
       final Z c = mPoly.coeff(k);
-      if (!Z.ZERO.equals(c)) {
+      if (!c.isZero()) {
         sum = sum.add(ComputableReals.SINGLETON.pow(x, k).multiply(c));
       }
     }

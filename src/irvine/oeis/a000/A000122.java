@@ -14,10 +14,10 @@ public class A000122 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    if (mN.equals(Z.ZERO)) {
+    if (mN.isZero()) {
       return Z.ONE;
     }
-    if (mN.sqrtAndRemainder()[1].equals(Z.ZERO)) {
+    if (mN.sqrtAndRemainder()[1].isZero()) {
       return Z.TWO;
     }
     return Z.ZERO;

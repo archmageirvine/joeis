@@ -21,7 +21,7 @@ public class A033619 implements Sequence {
   @Override
   public Z next() {
     final Z t = mA.pollFirst();
-    if (!Z.ZERO.equals(t)) {
+    if (!t.isZero()) {
       mA.add(t.multiply(10).add(t.mod(100) / 10));
     }
     return t;

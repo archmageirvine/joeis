@@ -17,7 +17,7 @@ public class A001103 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final Z ds = ZUtils.digitProduct(mN);
-      if (!Z.ZERO.equals(ds) && Z.ZERO.equals(mN.mod(ds))) {
+      if (!ds.isZero() && mN.mod(ds).isZero()) {
         final Z t = mN.divide(ds);
         if (Z.ONE.equals(t) || t.isPrime()) {
           return mN;

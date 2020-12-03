@@ -68,16 +68,16 @@ public final class GroupUtils {
       case 1: // pq
         return Z.ONE.equals(p.gcd(q.subtract(1))) ? Z.ONE : Z.TWO;
       case 2: // pq^2
-        final boolean a = Z.ZERO.equals(q.subtract(1).mod(p));
-        final boolean b = Z.ZERO.equals(q.add(1).mod(p));
-        final boolean c = Z.ZERO.equals(p.subtract(1).mod(q));
+        final boolean a = q.subtract(1).mod(p).isZero();
+        final boolean b = q.add(1).mod(p).isZero();
+        final boolean c = p.subtract(1).mod(q).isZero();
         if (Z.TWO.equals(p)) {
           return Z.FIVE;
         } else if (!a && !b && !c) {
           return Z.TWO;
         } else if (b && !q.isEven()) {
           return Z.THREE;
-        } else if (Z.ZERO.equals(p.subtract(1).mod(q.square()))) {
+        } else if (p.subtract(1).mod(q.square()).isZero()) {
           return Z.FIVE;
         } else if (c && Z.THREE.compareTo(p) < 0) {
           return Z.FOUR;

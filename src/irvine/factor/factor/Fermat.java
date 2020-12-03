@@ -42,7 +42,7 @@ public class Fermat extends AbstractFactorizer {
       return;
     }
     final Z[] xy = n.sqrtAndRemainder();
-    if (xy[1].equals(Z.ZERO)) {
+    if (xy[1].isZero()) {
       // n was a perfect square
       fs.add(xy[0], FactorSequence.UNKNOWN, 2 * exponent);
       return;
@@ -65,7 +65,7 @@ public class Fermat extends AbstractFactorizer {
       if (!y.testBit(1)) {
         final Z[] zz = y.sqrtAndRemainder();
         final Z z;
-        if (Z.ZERO.equals(zz[1]) && !(z = zz[0]).equals(x)) {
+        if (zz[1].isZero() && !(z = zz[0]).equals(x)) {
           // Found non-trivial factor, add with unknown status
           fs.add(x.add(z), FactorSequence.UNKNOWN, exponent);
           fs.add(x.subtract(z), FactorSequence.UNKNOWN, exponent);

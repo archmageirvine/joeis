@@ -17,7 +17,7 @@ public class A015773 implements Sequence {
   public Z next() {
     while (true) {
       final FactorSequence fs = Cheetah.factor(++mN);
-      if (fs.sigma(14).mod(fs.phi()).equals(Z.ZERO)) {
+      if (fs.sigma(14).mod(fs.phi()).isZero()) {
         return Z.valueOf(mN);
       }
     }

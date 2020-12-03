@@ -27,7 +27,7 @@ public class A035019 implements Sequence {
       final QPolynomial<Z> theta2p3 = theta2.substitutePower(3, new Q(mN));
       final QPolynomial<Z> g = RING.add(RING.multiply(theta3, theta3p3, mN), RING.multiply(theta2, theta2p3, mN));
       final Z c = g.coeff(mN);
-      if (!Z.ZERO.equals(c)) {
+      if (!c.isZero()) {
         return c;
       }
     }

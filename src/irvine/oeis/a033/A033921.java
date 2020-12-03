@@ -12,7 +12,7 @@ public class A033921 implements Sequence {
   private int mN = -1;
 
   private boolean isPowerOfTwo(final Z n) {
-    return !Z.ZERO.equals(n) && Z.ZERO.equals(n.and(n.subtract(1)));
+    return !n.isZero() && n.and(n.subtract(1)).isZero();
   }
 
   @Override
@@ -28,7 +28,7 @@ public class A033921 implements Sequence {
           }
         }
       }
-      if (!Z.ZERO.equals(best)) {
+      if (!best.isZero()) {
         return best; // No shorter prime can be bigger
       }
     }

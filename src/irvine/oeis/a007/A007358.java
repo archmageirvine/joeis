@@ -16,10 +16,10 @@ public class A007358 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(6);
-      if (Z.ZERO.equals(mN)) {
+      if (mN.isZero()) {
         return Z.ONE;
       }
-      if (Z.ZERO.equals(InfinitaryDivisors.infinitaryDivisorSum(mN).mod(mN))) {
+      if (InfinitaryDivisors.infinitaryDivisorSum(mN).mod(mN).isZero()) {
         return mN;
       }
     }

@@ -17,7 +17,7 @@ public class A003285 implements Sequence {
   public Z next() {
     final Z n = Z.valueOf(++mN);
     final Z[] sqrt = n.sqrtAndRemainder();
-    if (Z.ZERO.equals(sqrt[1])) {
+    if (sqrt[1].isZero()) {
       return Z.ZERO;
     }
     final Z f0 = sqrt[0];

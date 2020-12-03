@@ -36,7 +36,7 @@ public class A018187 implements Sequence {
       if (!mN.isPrime()) {
         final IntegersMod zn = new IntegersMod(mN);
         final MatrixRing<Z> ring = new MatrixRing<>(3, zn);
-        if (ring.trace(ring.pow(A, mN.longValueExact())).equals(Z.ZERO)) {
+        if (ring.trace(ring.pow(A, mN.longValueExact())).isZero()) {
           final Z m = mN.subtract(1);
           B.set(2, 2, m);
           if (ring.trace(ring.pow(B, mN.longValueExact())).equals(m)) {

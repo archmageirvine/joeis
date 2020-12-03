@@ -41,7 +41,7 @@ public final class QuadraticFieldUtils {
       Z t = p;
       p = a.multiply(q).subtract(p);
       // Test for even period
-      if (t.equals(p) && !Z.ZERO.equals(v2)) {
+      if (t.equals(p) && !v2.isZero()) {
         final Z u = u2.square().add(v2.square().multiply(discriminant)).divide(q).abs();
         final Z v = u2.multiply(v2).multiply2().divide(q).abs();
         return new Z[] {u, v};
@@ -56,7 +56,7 @@ public final class QuadraticFieldUtils {
         q = discriminant.subtract(p.square()).divide(q);
       }
       // Test for odd period
-      if (q.equals(t) && !Z.ZERO.equals(v2)) {
+      if (q.equals(t) && !v2.isZero()) {
         final Z u = u1.multiply(u2).add(discriminant.multiply(v1).multiply(v2)).divide(q).abs();
         final Z v = u1.multiply(v2).add(u2.multiply(v1)).divide(q).abs();
         return new Z[] {u, v};

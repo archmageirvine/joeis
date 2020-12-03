@@ -23,7 +23,7 @@ public class A139206 implements Sequence {
       f = f.multiply(++p);
       if (mPrime.isPrime(p)) {
         final Z[] t = f.subtract(mN).divideAndRemainder(n);
-        if (Z.ZERO.equals(t[1]) && mPrime.isPrime(t[0])) {
+        if (t[1].isZero() && mPrime.isPrime(t[0])) {
           return Z.valueOf(p);
         }
       }

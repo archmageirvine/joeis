@@ -21,7 +21,7 @@ public class A002314 implements Sequence {
         Z k = Z.ZERO;
         while (true) {
           k = k.add(1);
-          if (Z.ZERO.equals(k.square().add(1).mod(mP))) {
+          if (k.square().add(1).mod(mP).isZero()) {
             return k;
           }
         }

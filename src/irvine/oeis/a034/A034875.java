@@ -10,7 +10,7 @@ import irvine.oeis.MemorySequence;
 public class A034875 extends MemorySequence {
 
   private boolean is(final Z n, final int index) {
-    if (Z.ZERO.equals(n)) {
+    if (n.isZero()) {
       return true;
     }
     if (index < 0) {

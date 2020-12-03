@@ -29,7 +29,7 @@ public class A002607 implements Sequence {
         }
       }
     }
-    assert Z.ZERO.equals(GI.im(sum));
+    assert GI.im(sum).isZero();
     return GI.re(sum).divide(4);
   }
 }

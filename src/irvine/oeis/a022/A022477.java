@@ -11,7 +11,7 @@ public class A022477 extends A006711 {
 
   static long count(Z n, final Z r) {
     long c = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
       if (r.equals(qr[1])) {
         ++c;

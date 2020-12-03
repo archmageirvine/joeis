@@ -14,6 +14,6 @@ public class A005369 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.multiply(4).add(1).sqrtAndRemainder()[1].equals(Z.ZERO) ? Z.ONE : Z.ZERO;
+    return mN.multiply(4).add(1).sqrtAndRemainder()[1].isZero() ? Z.ONE : Z.ZERO;
   }
 }

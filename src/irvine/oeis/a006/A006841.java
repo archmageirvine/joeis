@@ -130,7 +130,7 @@ public class A006841 implements Sequence {
               .multiply(mF.factorial(d - 2 * l));
             final Z wk3 = numerator.multiply(bigN.pow(l));
             final Z[] divisionResult = wk3.divideAndRemainder(denominator);
-            if (!divisionResult[1].equals(Z.ZERO)) {
+            if (!divisionResult[1].isZero()) {
               throw new RuntimeException("Error: division results in a mRemainder");
             }
             subSum = subSum.add(divisionResult[0]);
@@ -142,7 +142,7 @@ public class A006841 implements Sequence {
               final int h2 = d / 2;
               final Z denominator = Z.valueOf(2 * d).pow(h2).multiply(mF.factorial(h2));
               final Z[] divisionResult = numerator.multiply(bigN.pow(h2)).divideAndRemainder(denominator);
-              if (!divisionResult[1].equals(Z.ZERO)) {
+              if (!divisionResult[1].isZero()) {
                 throw new RuntimeException("Error: division results in a mRemainder");
               }
               wk1 = wk1.add(divisionResult[0]);

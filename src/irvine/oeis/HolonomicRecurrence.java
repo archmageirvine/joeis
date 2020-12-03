@@ -262,12 +262,12 @@ public class HolonomicRecurrence implements Sequence {
         final Z[] poly = mPolyList.get(k);
         // handle the linear case separately
         Z coeffi = poly[0];
-        if (!coeffi.equals(Z.ZERO)) {
+        if (!coeffi.isZero()) {
           pvalk = pvalk.add(coeffi);
         }
         for (int i = 1; i < poly.length; i++) { // possibly holonomic: evaluate polynomial in nd
           coeffi = poly[i];
-          if (coeffi.equals(Z.ZERO)) {
+          if (coeffi.isZero()) {
             // ignore
           } else if (coeffi.equals(Z.ONE)) {
             pvalk = pvalk.add(mNdPowers[i]);
@@ -304,12 +304,12 @@ public class HolonomicRecurrence implements Sequence {
           System.out.println("    new_sum=" + sum);
         }
       } // for k - summing
-      if (!pvals[mOrder + 1].equals(Z.ZERO)) {
+      if (!pvals[mOrder + 1].isZero()) {
         if (mGfType == 1 && mN >= 2) { // exponential: multiply by mN 
           sum = sum.multiply(Z.valueOf(mN));
         }
         final Z[] quotRemd = sum.negate().divideAndRemainder(pvals[mOrder + 1]);
-        if (!quotRemd[1].equals(Z.ZERO)) {
+        if (!quotRemd[1].isZero()) {
           if (sDebug >= 1) {
             System.out.println("assertion: division with rest " + quotRemd[1]
                 + " for " + sum.negate() + " / " + pvals[mOrder + 1]);

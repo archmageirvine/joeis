@@ -41,7 +41,7 @@ public class A015859 implements Sequence {
       mFactorSequenceJ = mFactorSequenceK;
       mFactorSequenceK = mFactorSequenceL;
       mFactorSequenceL = Cheetah.factor(++mN);
-      if (mFactorSequenceL.sigma().mod(phi).equals(Z.ZERO)) {
+      if (mFactorSequenceL.sigma().mod(phi).isZero()) {
         return Z.valueOf(mN - 12);
       }
     }

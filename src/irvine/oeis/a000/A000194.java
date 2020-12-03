@@ -17,7 +17,7 @@ public class A000194 implements Sequence {
     if (mN == null) {
       mN = Z.ZERO;
     } else {
-      if (Z.ZERO.equals(mCountDown)) {
+      if (mCountDown.isZero()) {
         mN = mN.add(1);
         mCountDown = mN.multiply2();
       }

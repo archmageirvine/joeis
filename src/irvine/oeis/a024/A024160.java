@@ -18,7 +18,7 @@ public class A024160 implements Sequence {
     for (long a = 1; a <= mN; ++a) {
       for (long b = a + 1; b < mN - a; ++b) {
         final long c = mN - a - b;
-        if (c > b && a + b > c && Z.ZERO.equals(Z.valueOf(b + c).multiply(c + a).multiply(a + b).mod(Z.valueOf(c - b).multiply(c - a).multiply(b - a)))) {
+        if (c > b && a + b > c && Z.valueOf(b + c).multiply(c + a).multiply(a + b).mod(Z.valueOf(c - b).multiply(c - a).multiply(b - a)).isZero()) {
           ++count;
         }
       }

@@ -24,7 +24,7 @@ public class A033832 implements Sequence {
           sum = sum.signedAdd(dd.isEven(), dd);
         }
       }
-      if (Z.ZERO.equals(sum)) {
+      if (sum.isZero()) {
         return Z.valueOf(mN);
       }
     }

@@ -13,7 +13,7 @@ public class A001543 implements Sequence {
 
   @Override
   public Z next() {
-    if (Z.ZERO.equals(mP)) {
+    if (mP.isZero()) {
       mP = Z.ONE;
       return Z.ONE;
     }

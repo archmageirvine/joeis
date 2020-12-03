@@ -51,7 +51,7 @@ public class A035108 implements Sequence {
         mMax *= 2;
         mD = updateDirichlet();
       }
-      if (!Z.ZERO.equals(mD.coeff(mN))) {
+      if (!mD.coeff(mN).isZero()) {
         return Z.valueOf(mN);
       }
     }

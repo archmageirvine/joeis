@@ -17,7 +17,7 @@ public class A029909 extends A018252 {
     do {
       prev = m;
       m = Cheetah.factor(m).sopfr();
-    } while (!Z.ZERO.equals(m) && !prev.equals(m));
+    } while (!m.isZero() && !prev.equals(m));
     return m;
   }
 }

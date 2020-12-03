@@ -15,7 +15,7 @@ public class A036762 extends A033950 {
     while (true) {
       final Z n = super.next();
       final Z[] qr = n.divideAndRemainder(Cheetah.factor(n).sigma0());
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return qr[0];
       }
     }

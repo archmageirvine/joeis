@@ -39,7 +39,7 @@ public class A003316 implements Sequence {
       }
       p = p.multiply(q);
     }
-    assert r.mod(p).equals(Z.ZERO);
+    assert r.mod(p).isZero();
     return r.divide(p);
   }
 

@@ -18,7 +18,7 @@ public class A034094 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Cheetah.factor(mN).sigma(-1).mod(mN).equals(Z.ZERO)) {
+      if (Cheetah.factor(mN).sigma(-1).mod(mN).isZero()) {
         return mN;
       }
     }

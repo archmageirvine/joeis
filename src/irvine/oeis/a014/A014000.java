@@ -20,7 +20,7 @@ public class A014000 extends A003658 {
       return new Z[] {Z.ZERO, Z.ONE, Z.NEG_ONE};
     }
     final Z[] sqrt = d.sqrtAndRemainder();
-    if (Z.ZERO.equals(sqrt[0])) {
+    if (sqrt[0].isZero()) {
       // d is a perfect square, undefined
       return null;
     }

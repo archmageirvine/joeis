@@ -1,11 +1,11 @@
 package irvine.math.group;
 
+import java.util.Iterator;
+
 import irvine.math.api.Group;
 import irvine.math.api.Set;
 import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
-
-import java.util.Iterator;
 
 /**
  * Group of all multiples of an integer under addition.
@@ -49,7 +49,7 @@ public class IntegerMultiples extends AbstractGroup<Z> {
 
   @Override
   public boolean contains(final Z element) {
-    return element != null && Z.ZERO.equals(element.mod(mMultiple));
+    return element != null && element.mod(mMultiple).isZero();
   }
 
   @Override
@@ -67,7 +67,7 @@ public class IntegerMultiples extends AbstractGroup<Z> {
 
   @Override
   public Z size() {
-    return Z.ZERO.equals(mMultiple) ? Z.ONE : null;
+    return mMultiple.isZero() ? Z.ONE : null;
   }
 
   @Override
@@ -96,7 +96,7 @@ public class IntegerMultiples extends AbstractGroup<Z> {
   @Override
   public boolean isSubgroup(final Set<Z> elements) {
     // Special check for this type of group can circumvent infinite effort
-    if (elements instanceof IntegerMultiples && Z.ZERO.equals(((IntegerMultiples) elements).multiple().mod(multiple()))) {
+    if (elements instanceof IntegerMultiples && ((IntegerMultiples) elements).multiple().mod(multiple()).isZero()) {
       return true;
     }
     return super.isSubgroup(elements);

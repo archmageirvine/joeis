@@ -12,7 +12,7 @@ public class A030097 implements Sequence {
   private Z mN = Z.NEG_ONE;
 
   private boolean isAllEvenDigits(Z n) {
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       if (!n.isEven()) {
         return false;
       }

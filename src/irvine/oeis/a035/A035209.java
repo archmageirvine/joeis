@@ -87,7 +87,7 @@ public class A035209 implements Sequence {
         mD = updateSeries(mMax);
       }
       final Z t = mD.coeff(mN);
-      if (!Z.ZERO.equals(t) && mN != 47) {
+      if (!t.isZero() && mN != 47) {
         return Z.valueOf(mN);
       }
     }

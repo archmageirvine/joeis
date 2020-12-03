@@ -15,7 +15,7 @@ public class A016062 extends A000796 {
   @Override
   public Z next() {
     Z res = Z.ZERO;
-    while (res.compareTo(mPrev) <= 0 || Z.ZERO.equals(mLookAhead)) {
+    while (res.compareTo(mPrev) <= 0 || mLookAhead.isZero()) {
       res = res.multiply(10).add(mLookAhead);
       mLookAhead = super.next();
     }

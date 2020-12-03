@@ -16,7 +16,7 @@ public class A032378 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final Z r = mN.root(3);
-      if (mN.auxiliary() == 0 && Z.ZERO.equals(mN.mod(r))) {
+      if (mN.auxiliary() == 0 && mN.mod(r).isZero()) {
         return mN;
       }
     }

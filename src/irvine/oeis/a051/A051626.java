@@ -38,7 +38,7 @@ public class A051626 implements Sequence {
       Z m10 = pow10;
       for (long m = pow - 1; m >= 0; --m) {
         m10 = m10.divide(10);
-        if (Z.ZERO.equals(pow10.subtract(m10).mod(mN))) {
+        if (pow10.subtract(m10).mod(mN).isZero()) {
           return Z.valueOf(pow - m);
         }
       }

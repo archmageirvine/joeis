@@ -24,7 +24,7 @@ public class A108825 implements Sequence {
 
   private long digitSum(Z n) {
     long c = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z_CHUNK);
       c += DIGIT_SUM[qr[1].intValue()];
       n = qr[0];

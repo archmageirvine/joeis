@@ -16,7 +16,7 @@ public class A067570 extends A067553 {
   public Z next() {
     while (true) {
       ++mN;
-      if (Z.ZERO.equals(super.next().mod(mS.next()))) {
+      if (super.next().mod(mS.next()).isZero()) {
         return Z.valueOf(mN);
       }
     }

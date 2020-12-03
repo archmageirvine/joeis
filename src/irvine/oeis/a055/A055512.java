@@ -4,7 +4,7 @@ import gebhardt.LattEnum;
 import irvine.oeis.a006.A006966;
 
 /**
- * A055512.
+ * A055512 Lattices with n labeled elements.
  * @author Sean A. Irvine
  */
 public class A055512 extends A006966 {

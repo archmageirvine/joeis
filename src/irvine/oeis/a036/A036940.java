@@ -28,7 +28,7 @@ public class A036940 extends A020461 {
     Z n = Z.ONE.shiftLeft(++mLen);
     while (true) {
       final String s = n.toString(2).substring(1);
-      System.out.println(mLen + " " + s);
+      //System.out.println(mLen + " " + s);
       if (s.length() > mLen) {
         return Z.ZERO; // no solution
       }

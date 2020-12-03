@@ -867,8 +867,7 @@ final class Canonical {
       antichain.printCounters();
     }
     final PermGrp g = antichain.mStabilisers[antichain.mCl + 1].mSt;
-    assert g.mNgens == 0 || (g.mBenesValid & Utils.bit(antichain.mCl)) != 0
-      : "Attempts to use invalid Benes networks [antichaindata_isCanonical_1]: level " + antichain.mCl;
+    assert g.mNgens == 0 || (g.mBenesValid & Utils.bit(antichain.mCl)) != 0 : "Attempts to use invalid Benes networks [antichaindata_isCanonical_1]: level " + antichain.mCl;
     if (g.mNgens > 0) {
       if ((antichain.mGlobals.mOrbitElements[0].mData[0] = (antichain.mO[0] & antichain.mCmc) >>> antichain.mLattice.mLev[antichain.mCl]) != 0) {
         final byte[] p = Permutation.create();
@@ -976,7 +975,8 @@ final class Canonical {
           }
           s.compactGenerators();
         }
-      } else { /* as the antichains must intersect the lowest level, antichain.cl < antichain.L.nLev-2, so g.n == S.n */
+      } else {
+        /* as the antichains must intersect the lowest level, antichain.cl < antichain.L.nLev-2, so g.n == S.n */
         antichain.mStabilisers[antichain.mCl].mSt = antichain.mStabilisers[antichain.mCl + 1].mSt;
         antichain.mStabilisers[antichain.mCl].mSi = antichain.mStabilisers[antichain.mCl + 1].mSi;
       }

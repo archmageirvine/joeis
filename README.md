@@ -1,14 +1,21 @@
 jOEIS
 =====
 
-A collection of Java programs implementing sequences from [The On-Line
-Encyclopedia of Integer Sequences](https://oeis.org/) (OEIS).
+A collection of pure Java programs implementing sequences from [The
+On-Line Encyclopedia of Integer Sequences](https://oeis.org/) (OEIS).
 
 This is likely the largest coherent collection of programs for OEIS
 sequences beyond the Maple, Mathematica, and Pari programs directly
 associated with many entries.  Currently over 100000 sequences are
-implemented. The following plot shows the number of sequences
-implemented (in bins of 1000):
+implemented.
+
+The following plot shows how the number of implemented sequences has
+changed over the years.
+
+![history-plot](doc/oeis-history.png)
+
+The following plot shows the number of sequences implemented (in bins
+of 1000):
 
 ![done-plot](doc/oeis-done.png)
 
@@ -17,11 +24,6 @@ implemented sequence, red a dead sequence (where an implementation is
 not needed). Black indicates to be done, feel free to help.
 
 ![implemented-plot](doc/oeis-implemented.png)
-
-The following plot shows how the number of implemented sequences has
-changed over the years.
-
-![history-plot](doc/oeis-history.png)
 
 Implementations of specific sequences implement the ```Sequence```
 interface which provides a single method ```next()```.  The contract
@@ -35,7 +37,7 @@ that can be represented by the big integer class.
 There is no direct support for generating the nth term of a sequence
 and so to generate the nth term, it is necessary to call ```next()```
 repeatedly until the desired term is reached.  Internally this
-sometimes leads to significant inefficiency (e.g. generating functions
+sometimes leads to significant inefficiency (e.g., generating functions
 being repeatedly expanded to higher and higher degree), but keeps the
 overall contract as simple as possible.
 
@@ -58,7 +60,7 @@ specifically for this project, there are important pieces of code
 which have been re-implemented or ported from other projects.
 
 Although Java has its own BigInteger class for large integers, this
-project uses a big integer type, ```Z.java``` based originally on the
+project uses a big integer type, ```Z.java``` based originally on
 Lenstra's lip C package.
 
 Most sequences requiring real number arithmetic are handled using
@@ -78,7 +80,7 @@ from [nauty](http://users.cecs.anu.edu.au/~bdm/nauty/).
 
 Similarly, parts of the plantri package for generating planar graphs
 were ported to Java. Included here by permission (see associated
-copyright).  Again canonical implementation is available from
+copyright).  Again a canonical implementation is available from
 [plantri](https://users.cecs.anu.edu.au/~bdm/plantri/).
 
 Certain sequences requiring factorization of large integers are backed

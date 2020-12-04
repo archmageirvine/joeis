@@ -1458,3 +1458,6 @@ A036500 Number of inequivalent cyclic Hadamard difference sets with parameters (
 A036604 Sorting numbers: minimal number of comparisons needed to sort n elements, hard
 A036686 Single-heap P-positions in misere version of Grundy's game.
 A036794 Number of sequences of length n with a_{i-1} < a_i <= a_1+...+a_{i-1} + 1
+A036975 Lengths of Golay complementary sequences
+A036980 (2n)x(2n) symmetric matrices each of whose rows is a permutation of 1..(2n), simple dependency on A035483
+A036981 (2n+1) X (2n+1) symmetric matrices each of whose rows is a permutation of 1..(2n+1), simple dependency on A000438

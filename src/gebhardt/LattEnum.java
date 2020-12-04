@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.BaseStrongGeneratingElement;
 import irvine.math.group.SchreierSims;
@@ -105,8 +106,6 @@ public abstract class LattEnum {
       super(l, n, nMin, globals);
     }
 
-    boolean sDebug = true;
-
     private Z implicitOrder(int si) {
       Z ord = Z.ONE;
       int k = 1;
@@ -125,33 +124,33 @@ public abstract class LattEnum {
     protected void reg(final Lattice l) {
       if (l.mN == mN) {
         // Determine size of automorphism group
-        if (sDebug) {
-          System.out.println();
-          l.print();
-        }
         final PermGrp grp = l.mS;
         final ArrayList<IntegerPermutation> generators = new ArrayList<>(grp.mNgens);
         final Z f = mF.factorial(mN + 2);
-        final int ssi = Integer.bitCount(l.mSi);
-        final Z io = implicitOrder(l.mSi);
         if (grp.mNgens == 0) {
-          // trivial action
-          final Z contrib = f.divide(io);
-          mCount = mCount.add(contrib);
-          if (sDebug) {
-            System.out.println("Trivial: pts=" + (mN + 2) + " s=" + grp.mN + " |si|=" + ssi + " gens=0 " + " pts!/|A|=" + contrib + " sum=" + mCount);
+          // Fairly trivial action.  The order of the automorphism group can easily be
+          // determined from the implicit transpositions alone.
+          mCount = mCount.add(f.divide(implicitOrder(l.mSi)));
+        } else {
+          // In the general case we use Schreier-Sims to determine the order of the
+          // automorphism group.
+          for (int k = 0; k < grp.mNgens; ++k) {
+            generators.add(new IntegerPermutation(Arrays.copyOf(grp.mPerm[k], grp.mN)));
           }
-          return;
-        }
-        for (int k = 0; k < grp.mNgens; ++k) {
-          generators.add(new IntegerPermutation(Arrays.copyOf(grp.mPerm[k], grp.mN)));
-        }
-        final List<BaseStrongGeneratingElement> bsgs = SchreierSims.createBSGSList(generators);
-        final Z order = SchreierSims.calculateOrder(bsgs).multiply(implicitOrder(l.mSi));
-        final Z contrib = f.divide(order);
-        mCount = mCount.add(contrib);
-        if (sDebug) {
-          System.out.println("Register: pts=" + mN + " s=" + grp.mN + " |si|=" + ssi + " gens=" + grp.mNgens + " " + f + " |A|=" + order + " pts!/|A|=" + contrib + " sum=" + mCount);
+          // Add permutations for the implicit transpositions
+          long ig = l.mSi;
+          for (int k = 0; ig != 0; ++k, ig >>>= 1) {
+            if ((ig & 1) == 1) {
+              final int[] a = IntegerUtils.identity(new int[k + 1]);
+              a[k - 1] = k;
+              a[k] = k - 1;
+              //System.out.println("a=" + Arrays.toString(a));
+              generators.add(new IntegerPermutation(a));
+            }
+          }
+          final List<BaseStrongGeneratingElement> bsgs = SchreierSims.createBSGSList(generators);
+          final Z order = SchreierSims.calculateOrder(bsgs);
+          mCount = mCount.add(f.divide(order));
         }
       }
     }

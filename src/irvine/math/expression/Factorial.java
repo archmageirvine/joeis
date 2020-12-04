@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 
 /**
  * An expression for factorials.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Factorial extends AbstractExpression {
 

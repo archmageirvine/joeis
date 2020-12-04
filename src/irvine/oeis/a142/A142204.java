@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 
 /**
  * A142204 Primes congruent to 7 mod 41.
- * @author Sean Irvine
+ * @author Sean A. Irvine
  */
 public class A142204 extends A000040 {
 

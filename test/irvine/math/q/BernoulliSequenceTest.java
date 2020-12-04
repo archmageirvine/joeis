@@ -3,7 +3,7 @@ package irvine.math.q;
 import junit.framework.TestCase;
 
 /**
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class BernoulliSequenceTest extends TestCase {
 

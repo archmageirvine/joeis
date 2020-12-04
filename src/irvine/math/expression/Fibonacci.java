@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 
 /**
  * An expression for the exponential.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Fibonacci extends UnaryFunction {
 

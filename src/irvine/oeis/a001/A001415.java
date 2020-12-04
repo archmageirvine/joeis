@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 /**
  * A001415 Number of ways of folding a 2 X n strip of stamps.
  * @author Fred Lunnon (ALGOL68, C versions)
- * @author Sean A. Irvine (port to Java)
+ * @author Sean A. Irvine (Java port)
  */
 public class A001415 implements Sequence {
 

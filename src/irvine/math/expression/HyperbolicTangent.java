@@ -2,7 +2,7 @@ package irvine.math.expression;
 
 /**
  * An expression for the hyperbolic tangent.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class HyperbolicTangent extends UnaryFunction {
 

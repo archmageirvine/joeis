@@ -4,7 +4,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
  * A032469 Numbers k such that 185*2^k+1 is a prime.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class A032469 extends PowerFactorPrimeSequence {
 

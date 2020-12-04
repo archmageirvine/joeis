@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  * @author Lucas Holt
  * @author Andrew Timson
  * @author John Markus 
- * @author Sean A. Irvine (java port)
+ * @author Sean A. Irvine (Java port)
  */
 public class A027607 implements Sequence {
 

@@ -2,7 +2,7 @@ package irvine.math.expression;
 
 /**
  * An expression for a unary function
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public abstract class UnaryFunction extends AbstractExpression {
 

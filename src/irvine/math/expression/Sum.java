@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 
 /**
  * An expression for a sigma summation.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Sum extends AbstractExpression {
 

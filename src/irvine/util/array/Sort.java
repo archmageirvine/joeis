@@ -2,10 +2,9 @@ package irvine.util.array;
 
 /**
  * Quick sort for pairs of dynamic arrays.
- *
  * @author Jonathan Purvis
  * @author Sean A. Irvine
- * @author John Cleary
+ * @author John G. Cleary
  */
 public final class Sort {
 

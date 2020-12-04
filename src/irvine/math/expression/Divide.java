@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 /**
  * An expression for division.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Divide extends AbstractLeftRightExpression {
 

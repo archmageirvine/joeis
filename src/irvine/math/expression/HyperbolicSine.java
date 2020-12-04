@@ -2,7 +2,7 @@ package irvine.math.expression;
 
 /**
  * An expression for the hyperbolic sine.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class HyperbolicSine extends UnaryFunction {
 

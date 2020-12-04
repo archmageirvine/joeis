@@ -2,7 +2,7 @@ package irvine.util.time;
 
 /**
  * Provides a delay mechanism with a targeted delay value.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Delay {
 

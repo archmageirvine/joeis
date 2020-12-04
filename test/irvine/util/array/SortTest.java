@@ -7,8 +7,7 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
- * @author <a href="mailto:jon@reeltwo.com">Jonathan Purvis</a>
+ * @author Jonathan Purvis
  * @author Sean A. Irvine
  */
 public class SortTest extends TestCase {

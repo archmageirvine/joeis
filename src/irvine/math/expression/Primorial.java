@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 
 /**
  * An expression for primorials.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Primorial extends AbstractExpression {
 

@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A036923 Digit sum of 'odd' number equals digit sum of sum of its prime factors (counted with multiplicity).
+ * A036923 Odd composite numbers n such that the digit sum of n equals digit sum of sum of its prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A036923 implements Sequence {

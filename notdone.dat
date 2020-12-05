@@ -1461,3 +1461,7 @@ A036794 Number of sequences of length n with a_{i-1} < a_i <= a_1+...+a_{i-1} + 
 A036975 Lengths of Golay complementary sequences
 A036980 (2n)x(2n) symmetric matrices each of whose rows is a permutation of 1..(2n), simple dependency on A035483
 A036981 (2n+1) X (2n+1) symmetric matrices each of whose rows is a permutation of 1..(2n+1), simple dependency on A000438
+A036983 Number of invariants in Hilbert basis for binary forms of degree n
+A036984 Number of covariants in Hilbert basis for binary forms of degree n
+A036995 Triangle of numbers a(i,j), i+j = n >= 2, giving number of words in a certain language with i 0's, j 1's, ending with 1, complicated bivariate gf
+A037009 Consider an n X n board with a knight's path, not necessarily closed, that visits every square exactly once; number the squares [ 1..n^2 ] along the path; a(n) = maximal number of prime numbered squares that can be attacked by a queen

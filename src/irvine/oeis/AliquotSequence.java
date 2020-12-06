@@ -39,7 +39,7 @@ public class AliquotSequence implements Sequence {
 
   @Override
   public Z next() {
-    if (mA.isZero()) {
+    if (Z.ZERO.equals(mA)) {
       return null;
     }
     mA = mA == null ? mStart : aliquot(mA);

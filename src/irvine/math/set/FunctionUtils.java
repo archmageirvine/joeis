@@ -29,7 +29,7 @@ public final class FunctionUtils {
       // codomain is infinite, so each element of the domain can go
       // to an infinite number of possible, thus the only special
       // case is when the domain is empty.
-      return domainSize.isZero() ? Z.ONE : null;
+      return Z.ZERO.equals(domainSize) ? Z.ONE : null;
     }
     if (domainSize == null) {
       // If the codomain is empty, we cannot form any mapping.

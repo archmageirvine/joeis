@@ -88,6 +88,40 @@ public abstract class LattEnum {
   }
 
   /**
+   * Enumerator for recording lattices.
+   */
+  public static class LattAccumulate extends LattEnum {
+
+    /**
+     * Remember lattices for later exploration.
+     * @param l lattice
+     * @param n size
+     * @param nMin minimum size of intermediate lattices
+     * @param globals global state
+     */
+    public LattAccumulate(final Lattice l, final int n, final int nMin, final Globals globals) {
+      if (l != null && (n - 2 < l.mN || nMin - 2 < l.mN)) {
+        throw new IllegalArgumentException("Bad parameters: given lattice larger than target/intermediate size!");
+      }
+      mL = l;
+      mN = n - 2;
+      mNmin = nMin - 2;
+      mCount = Z.ZERO;
+      mGlobals = globals;
+    }
+
+    /** The lattices. */
+    public List<Lattice> mLattices = new ArrayList<>();
+
+    @Override
+    protected void reg(final Lattice l) {
+      if (l.mN == mN) {
+        mLattices.add(new Lattice(l));
+      }
+    }
+  }
+
+  /**
    * Enumerator for labelled counting.
    */
   public static class LattEnumLabelledCount extends LattEnumCount {
@@ -207,7 +241,7 @@ public abstract class LattEnum {
   /*
    * Construct canonical lattices with n elements by recursively adding new levels to the canonical lattice l,
    * where the first added level contains at least nmin elements.  For every canonical lattice found during
-   * this process (also for those with fewer than n elements), the function *reg is called.
+   * this process (also for those with fewer than n elements), the function reg is called.
    */
   private void growLattice(final int n, final Lattice l, final int nmin) {
     final Lattice la = new Lattice();

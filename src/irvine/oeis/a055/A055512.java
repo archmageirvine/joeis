@@ -1,6 +1,8 @@
 package irvine.oeis.a055;
 
+import gebhardt.Globals;
 import gebhardt.LattEnum;
+import gebhardt.Lattice;
 import irvine.oeis.a006.A006966;
 
 /**
@@ -11,7 +13,7 @@ public class A055512 extends A006966 {
 
   @Override
   protected LattEnum getEnum() {
-    return new LattEnum.LattEnumLabelledCount(mLattice, mN, 3, mGlobals);
+    return new LattEnum.LattEnumLabelledCount(Lattice.init2(), mN, 3, new Globals());
   }
 
   /**

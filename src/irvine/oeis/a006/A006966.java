@@ -1,7 +1,6 @@
 package irvine.oeis.a006;
 
 import gebhardt.Benes;
-import gebhardt.Utils;
 import gebhardt.Globals;
 import gebhardt.LattEnum;
 import gebhardt.Lattice;
@@ -48,49 +47,41 @@ public class A006966 implements Sequence {
    *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
    */
 
-  /*
-   * Initialise global bitmaps to size n.
-   */
-  private static void bitmapInit(final long n) {
-    final long bits = Long.SIZE;
-    final long b1 = (long) Math.floor(Math.sqrt(bits));
-    final long a1 = bits / b1;
-    final long b2 = (long) Math.ceil(Math.sqrt(bits));
-    final long a2 = bits / b2;
-    if (Utils.MAXN > 2 * a1 + b1 + 2 || Utils.MAXN > 2 * a2 + b2 + 2) {
-      throw new UnsupportedOperationException("Build problem: packed antichain lists don't fit into two flags64!");
-    }
-    if (n > Utils.MAXN) {
-      throw new UnsupportedOperationException("The maximal number of elements with this executable is " + Utils.MAXN);
-    }
-    if ((Utils.MAXN_EVEN & Utils.MAXN) != 0) {
-      throw new UnsupportedOperationException("Build problem: Specified parity of MAXN is wrong!");
-    }
-    if ((long) Math.ceil(Math.log(Utils.MAXN - 2) / Math.log(2)) != Utils.LD_MAXN_2) {
-      throw new UnsupportedOperationException("Build problem: Specified value of LD_MAXN_2 is wrong!");
-    }
-  }
-
   protected int mN = -1;
   {
     Benes.initSmall();
   }
-  protected final Globals mGlobals = new Globals();
-  protected final Lattice mLattice = Lattice.init2();
+
+  protected LattEnum getEnum() {
+    return new LattEnum.LattEnumCount(Lattice.init2(), mN, 3, new Globals());
+  }
 
   @Override
   public Z next() {
     if (++mN <= 1) {
       return Z.ONE;
     }
-    bitmapInit(mN);
+
+//    // todo experimenting with parallel
+//    // todo at the moment this does not even work in sequential mode
+//    if (mN >= 5) {
+//      final LattEnum.LattAccumulate accumulate = new LattEnum.LattAccumulate(Lattice.init2(), 5, 3, new Globals());
+//      accumulate.doEnumeration();
+//      System.out.println("Precomputed " + accumulate.mLattices.size() + " lattices");
+//      Z sum = Z.ZERO;
+//      for (final Lattice l : accumulate.mLattices) {
+//        l.print();
+//        final LattEnum et = new LattEnum.LattEnumCount(l, mN, 6, new Globals());
+//        et.doEnumeration();
+//        sum = sum.add(et.getCount());
+//        System.out.println("Sum is now " + sum);
+//      }
+//      return sum;
+//    }
+
     final LattEnum e = getEnum();
     e.doEnumeration();
     return e.getCount();
-  }
-
-  protected LattEnum getEnum() {
-    return new LattEnum.LattEnumCount(mLattice, mN, 3, mGlobals);
   }
 
   /**

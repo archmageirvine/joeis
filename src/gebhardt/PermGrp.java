@@ -34,11 +34,11 @@ class PermGrp {
    *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
    */
 
-  byte[][] mPerm = new byte[Utils.MAXN - 2][];           /* permutations for generators; DATA IS NOT CONSECUTIVE DURING CONSTRUCTION */
-  byte[][] mInvPerm = new byte[Utils.MAXN - 2][];        /* permutations for inverses of generators */
+  final byte[][] mPerm = new byte[Utils.MAXN - 2][];           /* permutations for generators; DATA IS NOT CONSECUTIVE DURING CONSTRUCTION */
+  final byte[][] mInvPerm = new byte[Utils.MAXN - 2][];        /* permutations for inverses of generators */
   int mInvol;                  /* invol & BIT[i] indicates whether generator i is an involution */
   int mBenesValid = 0;             /* which levels of array Benes contain valid pointers */
-  Benes[][] mBenes = new Benes[Utils.MAXN - 2][Utils.MAXN - 2];  /* *(Benes[i][j]): Bene&scaron; network for the action of generator j on level i */
+  final Benes[][] mBenes;  /* *(Benes[i][j]): Bene&scaron; network for the action of generator j on level i */
   int mN = 0;                      /* number of points on which the group acts */
   int mNgens = 0;                  /* number of generators */
 
@@ -50,19 +50,30 @@ class PermGrp {
     mNgens = 0;
   }
 
+  /** Default constructor. */
+  public PermGrp() {
+    mBenes = new Benes[Utils.MAXN - 2][Utils.MAXN - 2];
+  }
 
-//  /*
-//   * Copy g to H.
-//   */
-//  static void permgrp_cpy(PermGrp G, PermGrp H) {
-//    final int n = H.mN = G.mN;
-//    H.mNgens = G.mNgens;
-//    for (int i = 0; i < n; i++) { /* We need G.n instead of G.ngens for permgrpc_cpy to work in the general case! */
-//      Permutation.copy(n, G.mPerm[i], H.mPerm[i]);
-//      Permutation.copy(n, G.mInvPerm[i], H.mInvPerm[i]);
-//    }
-//    H.mInvol = G.mInvol;
-//  }
+  /*
+   * Copy constructor.
+   */
+  PermGrp(final PermGrp g) {
+    mN = g.mN;
+    mNgens = g.mNgens;
+//    mPerm = Arrays.copyOf(g.mPerm, g.mPerm.length);
+//    mInvPerm = Arrays.copyOf(g.mInvPerm, g.mInvPerm.length);
+    for (int k = 0; k < mN; ++k) { /* We need g.n instead of g.ngens to work in the general case! */
+      if (g.mPerm[k] != null) {
+        Permutation.copy(mN, g.mPerm[k], mPerm[k]);
+        Permutation.copy(mN, g.mInvPerm[k], mInvPerm[k]);
+      }
+    }
+    mInvol = g.mInvol;
+//    mBenes = g.mBenes;
+//    mBenesValid = g.mBenesValid;
+    mBenes = new Benes[Utils.MAXN - 2][Utils.MAXN - 2];
+  }
 
 
   /**

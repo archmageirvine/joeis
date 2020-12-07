@@ -1,5 +1,7 @@
 package gebhardt;
 
+import java.util.Arrays;
+
 /**
  * Lattices.
  * @author Volker Gebhardt
@@ -38,7 +40,7 @@ public class Lattice {
    *   elt       n              -- number of non-extremal elements (the upper and lower bounds T and B are not stored)
    *   elt       nLev           -- number of levels, excluding T but including B
    *   elt       lev[0..nLev-1] -- first element in each level, with L represented by n; lev[0]=0, ..., lev[nLev-1]=n
-   *   permgrp*  S              -- subgroup of the stabiliser of the lattice that generates the stabiliser together with...
+   *   permgrp   S              -- subgroup of the stabiliser of the lattice that generates the stabiliser together with...
    *   flags32   SI             -- ...the transpositions (i-1 i) of elements on level nLev-2 for the bits i set in SI
    *   flags32   up[0..n-1]     -- upper set: up[i] & (1<<j) iff j \in uparrow i
    *   flags32   lo[0..n-1]     -- lower set: lo[i] & (1<<j) iff j \in \downarrow i
@@ -50,28 +52,40 @@ public class Lattice {
    */
 
 
-  final int[] mUp = new int[Utils.MAXN - 2];
-  final int[] mLo = new int[Utils.MAXN - 2];
+  final int[] mUp;
+  final int[] mLo;
   PermGrp mS;
   int mSi;
-  final byte[] mLev = new byte[Utils.MAXN - 1];
+  final byte[] mLev;
   byte mN;
   int mNLev;
 
   /** Construct a lattice. */
   public Lattice() {
+    mUp = new int[Utils.MAXN - 2];
+    mLo = new int[Utils.MAXN - 2];
+    mLev = new byte[Utils.MAXN - 1];
   }
 
-//  // Copy constructor
-//  public lattice(final lattice l) {
-//    up = Arrays.copyOf(l.up, l.up.length);
-//    lo = Arrays.copyOf(l.lo, l.lo.length);
-//    S = l.S;
-//    SI = l.SI;
-//    lev = Arrays.copyOf(l.lev, l.lev.length);
-//    n = l.n;
-//    nLev = l.nLev;
-//  }
+  // Copy constructor
+  Lattice(final Lattice l) {
+    mUp = Arrays.copyOf(l.mUp, l.mUp.length);
+    mLo = Arrays.copyOf(l.mLo, l.mLo.length);
+    mS = new PermGrp(l.mS); /* This does not copy the Bene&scaron; networks, so we do this manually. */
+    mSi = l.mSi;
+    mLev = Arrays.copyOf(l.mLev, l.mLev.length);
+    mN = l.mN;
+    mNLev = l.mNLev;
+    mS.mBenesValid = l.mS.mBenesValid;
+    final int[] n = new int[1];
+    int b = mS.mBenesValid;
+    while (Utils.getLSB32(b, n)) {
+      if (mS.mNgens >= 0) {
+        System.arraycopy(l.mS.mBenes[n[0]], 0, mS.mBenes[n[0]], 0, mS.mNgens);
+      }
+      b ^= (int) Utils.bit(n[0]);  /* bit n is set, so this clears it */
+    }
+  }
 
   /*
    * Set the stabiliser data of the lattice L to s / si; the reference count of s is incremented.
@@ -80,25 +94,6 @@ public class Lattice {
     mS = s;
     mSi = si;
   }
-
-//  /*
-//   * Copy L to M.
-//   */
-//  static lattice lattice_cpy(lattice L) {
-//    final lattice M = new lattice(L);
-//    M.S = permgrp.permgrp_alloc();
-//    permgrp.permgrp_cpy(L.S, M.S); /* This does not copy the Bene&scaron; networks, so we do this manually. */
-//    int B = M.S.BenesValid = L.S.BenesValid;
-//    final int[] n = new int[1];
-//    while (Constants.get_LSB32(B, n)){
-//      for (int i = 0; i < L.S.ngens; i++) {
-//        M.S.benes[n[0]][i] = Benes.benes_incref(L.S.benes[n[0]][i]);
-//      }
-//      B ^= BIT(n[0]);  /* bit n is set, so this clears it */
-//    }
-//    return M;
-//  }
-
 
   /*
    * Set co[i] to a flag indicating the covers of element i of the lattice L.
@@ -323,10 +318,10 @@ public class Lattice {
 //  }
 
 
-  /*
+  /**
    * Print the levellised lattice L to stdout.
    */
-  void print() {
+  public void print() {
     final int[] co = new int[Utils.MAXN - 2];
     getCoveringRelation(co);
 

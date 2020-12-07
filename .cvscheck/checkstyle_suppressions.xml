@@ -42,6 +42,7 @@
     <suppress checks="ParameterNumber" files=".*BipExtensionFinder.java"/>
     <suppress checks="ParameterNumber" files=".*BipScanner.java"/>
     <suppress checks="ParameterNumber" files=".*Canon.java"/>
+    <suppress checks="ParameterNumber" files=".*Canonical.java"/>
     <suppress checks="ParameterNumber" files=".*DispatchVec.java"/>
     <suppress checks="ParameterNumber" files=".*InvarProc.java"/>
     <suppress checks="ParameterNumber" files=".*Min4Scanner.java"/>

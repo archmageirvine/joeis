@@ -51,7 +51,7 @@ class PermGrp {
   }
 
   /** Default constructor. */
-  public PermGrp() {
+  PermGrp() {
     mBenes = new Benes[Utils.MAXN - 2][Utils.MAXN - 2];
   }
 

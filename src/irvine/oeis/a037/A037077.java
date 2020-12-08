@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A037077 extends DecimalExpansionSequence {
 
-  private final CR N = new CR() {
+  private static final CR N = new CR() {
     @Override
     protected Z approximate(final int p) {
       if (p >= 1) {
@@ -19,7 +19,7 @@ public class A037077 extends DecimalExpansionSequence {
       }
       //int n = -p;
       // Following precision might not be enough, if a problem is encountered the 400 can be made smaller.
-      int n = 1 - 131 * p / 400;
+      final int n = 1 - 131 * p / 400;
       final CR[] a = new CR[n];
       a[0] = CR.ONE;
       for (int m = 1; m < a.length; ++m) {

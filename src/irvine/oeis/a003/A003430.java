@@ -19,7 +19,7 @@ public class A003430 implements Sequence {
   private static final Polynomial<Q> TWO = RING.create(Collections.singletonList(Q.TWO));
 
   private Polynomial<Q> mA = RING.one();
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

@@ -13,6 +13,6 @@ public class A068380 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A068380() {
-    super(0, "[[0],[-1],[3],[-3],[1]]", "[1,54,180,378,648]", 0);
+    super(0, "[[0],[-1],[3],[-3],[1]]", "[3,54,180,378,648]", 0);
   }
 }

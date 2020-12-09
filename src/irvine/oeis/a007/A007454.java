@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003430;
 
 /**
@@ -9,7 +10,10 @@ import irvine.oeis.a003.A003430;
  */
 public class A007454 extends A003430 {
 
-  private final A007453 mConnected = new A007453();
+  private final Sequence mConnected = new A007453();
+  {
+    super.next();
+  }
 
   @Override
   public Z next() {

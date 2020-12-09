@@ -17,6 +17,6 @@ public class A037036 implements Sequence {
   @Override
   public Z next() {
     mA = mA == null ? Z.ONE : mA.multiply2();
-    return mPrime.prevPrime(mA).subtract(mA.subtract(1));
+    return mA.add(1).subtract(mPrime.prevPrime(mA.add(2)));
   }
 }

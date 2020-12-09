@@ -1,16 +1,15 @@
 package irvine.oeis.a005;
 
-import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.NoncomputableSequence;
 
 /**
  * A005600 Decimal expansion of reciprocal of fine-structure constant alpha.
  * @author Sean A. Irvine
  */
-public class A005600 extends DoubleDecimalExpansionSequence {
+public class A005600 extends NoncomputableSequence {
 
   /** Construct the sequence. */
   public A005600() {
-    super(1 / PhysicsConstants.FINE_STRUCTURE_CONSTANT, PhysicsConstants.FINE_STRUCTURE_CONSTANT_UNC / PhysicsConstants.FINE_STRUCTURE_CONSTANT / PhysicsConstants.FINE_STRUCTURE_CONSTANT);
+    super(1, 3, 7, 0, 3, 5, 9, 9, 9, 2, 0, 6);
   }
 }

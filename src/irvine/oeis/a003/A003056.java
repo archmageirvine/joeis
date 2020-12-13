@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003056 n appears n+1 times. Also table T(n,k) = n+k read by antidiagonals. Also inverse of triangular numbers.
+ * A003056 n appears n+1 times. Also the array A(n,k) = n+k (n &gt;= 0, k &gt;= 0) read by antidiagonals. Also inverse of triangular numbers.
  * @author Sean A. Irvine
  */
 public class A003056 implements Sequence {

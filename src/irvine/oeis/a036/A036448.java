@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A036448 Smallest positive number containing n e's when spelled out.
+ * A036448 Smallest positive number containing n e's when spelled out in US English.
  * @author Sean A. Irvine
  */
 public class A036448 implements Sequence {

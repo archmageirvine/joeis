@@ -28,7 +28,7 @@ public class A002444 implements Sequence {
       if (e == 0) {
         break;
       }
-      prod = prod.multiply(Z.valueOf(p).pow((int) e));
+      prod = prod.multiply(Z.valueOf(p).pow(e));
     }
     return prod.divide(mF);
   }

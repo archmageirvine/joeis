@@ -357,7 +357,7 @@ public class Q implements Comparable<Q>, Serializable {
    * @param exponent exponent
    * @return <code>this^exponent</code>
    */
-  public Q pow(final int exponent) {
+  public Q pow(final long exponent) {
     if (exponent < 0) {
       return reciprocal().pow(-exponent);
     } else if (exponent == 0) {

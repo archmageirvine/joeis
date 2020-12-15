@@ -16,6 +16,6 @@ public class A001039 implements Sequence {
   @Override
   public Z next() {
     mP = mPrime.nextPrime(mP);
-    return Z.valueOf(mP).pow((int) mP).subtract(1).divide(mP - 1);
+    return Z.valueOf(mP).pow(mP).subtract(1).divide(mP - 1);
   }
 }

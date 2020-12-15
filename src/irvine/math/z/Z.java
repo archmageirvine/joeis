@@ -744,8 +744,8 @@ public class Z extends Number implements Comparable<Z> {
    * @exception ArithmeticException is <code>exponent</code> is negative
    * since this would entail a non-integral result.
    */
-  public Z pow(final int exponent) {
-    return pow(Z.valueOf(exponent));
+  public Z pow(final long exponent) {
+    return Pow.pow(this, exponent);
   }
 
   /**

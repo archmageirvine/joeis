@@ -20,7 +20,7 @@ public class A023106 implements Sequence {
         return mN;
       }
       final long s = ZUtils.digitSum(mN);
-      if (s > 1 && mN.mod(s) == 0 && mN.equals(Z.valueOf(s).pow((int) Math.round(mN.log(s))))) {
+      if (s > 1 && mN.mod(s) == 0 && mN.equals(Z.valueOf(s).pow(Math.round(mN.log(s))))) {
         return mN;
       }
     }

@@ -33,7 +33,7 @@ public final class WreathExponentiation {
           final Z jk = beta.get(new Pair<>(indet, k));
           sum = sum.add(jk.multiply(k));
         }
-        pow = pow.signedAdd(mu > 0, sum.pow((int) g));
+        pow = pow.signedAdd(mu > 0, sum.pow(g));
       }
     }
     return pow.divide(v);

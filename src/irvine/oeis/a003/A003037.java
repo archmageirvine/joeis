@@ -76,7 +76,7 @@ public class A003037 implements Sequence {
         for (final long u : a) {
           for (final long v : b) {
             if (v <= mPowBound) {
-              final Z z = Z.valueOf(u).pow((int) v);
+              final Z z = Z.valueOf(u).pow(v);
               if (z.bitLength() <= mPowBound) {
                 final long wExp = z.longValue();
                 if (wExp < mBound && !mSeen.isSet(wExp)) {

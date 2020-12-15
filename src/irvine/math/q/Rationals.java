@@ -47,7 +47,7 @@ public final class Rationals extends AbstractOrderedField<Q> {
     if (n > Integer.MAX_VALUE) {
       throw new UnsupportedOperationException();
     }
-    return a.pow((int) n);
+    return a.pow(n);
   }
 
   @Override

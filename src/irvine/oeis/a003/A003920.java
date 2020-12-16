@@ -9,11 +9,11 @@ import irvine.oeis.Sequence;
  */
 public class A003920 implements Sequence {
 
-  private int mN = start();
+  private long mN = start();
 
-  static Z orderUniversalChevalleyB(final Z q, final int n) {
+  static Z orderUniversalChevalleyB(final Z q, final long n) {
     Z p = q.pow(n * n);
-    for (int k = 1; k <= n; ++k) {
+    for (long k = 1; k <= n; ++k) {
       p = p.multiply(q.pow(2 * k).subtract(1));
     }
     return p;

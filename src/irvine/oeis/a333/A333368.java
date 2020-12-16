@@ -19,7 +19,7 @@ public class A333368 extends A002385 {
     private Node(final int k, final int m) {
       mK = k;
       mM = m;
-      mV = Z.valueOf(m).pow(k * m).multiply(k);
+      mV = Z.valueOf(m).pow(k * (long) m).multiply(k);
     }
 
     @Override

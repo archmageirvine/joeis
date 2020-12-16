@@ -10,9 +10,9 @@ import irvine.oeis.Sequence;
  */
 public class A013926 implements Sequence {
 
-  private int mN = 0;
+  private long mN = 0;
 
-  private Z t(final int n, final int k) {
+  private Z t(final long n, final long k) {
     if (k == 0) {
       return Z.valueOf(n).pow(2 * n);
     } else {

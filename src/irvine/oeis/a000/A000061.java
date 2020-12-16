@@ -19,7 +19,7 @@ public class A000061 implements Sequence {
   protected int mT = 0;
   private final HashMap<String, Z> mCache = new HashMap<>();
 
-  private Z bigDbn(final long b, final int n) {
+  private Z bigDbn(final long b, final long n) {
     if (b == 1) {
       return (n & 1) == 0 ? Z.NEG_ONE : Z.ONE;
     }

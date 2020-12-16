@@ -22,7 +22,7 @@ public class A027834 implements Sequence {
         final Z zn = Z.valueOf(n);
         Z sum = zn.pow(r * n);
         for (int t = 1; t < n; ++t) {
-          sum = sum.subtract(Binomial.binomial(n, t).multiply(zn.pow(r * (n - t))).multiply(get(r, t)));
+          sum = sum.subtract(Binomial.binomial(n, t).multiply(zn.pow(r * (long) (n - t))).multiply(get(r, t)));
         }
         return sum;
       }

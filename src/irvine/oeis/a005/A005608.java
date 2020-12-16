@@ -14,7 +14,7 @@ public class A005608 implements Sequence {
 
   private final HashMap<String, Z> mButlerSCache = new HashMap<>();
 
-  protected Z computeButlerS1(final int i, final int s, final int r) {
+  protected Z computeButlerS1(final int i, final long s, final long r) {
     Z sum = Z.ZERO;
     for (int k = 0; k <= i; ++k) {
       sum = sum.signedAdd((k & 1) == 0, Binomial.binomial(i, k).multiply(Z.valueOf(i - k).pow(s * r)));

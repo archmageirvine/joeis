@@ -1466,3 +1466,8 @@ A036984 Number of covariants in Hilbert basis for binary forms of degree n
 A036995 Triangle of numbers a(i,j), i+j = n >= 2, giving number of words in a certain language with i 0's, j 1's, ending with 1, complicated bivariate gf
 A037009 Consider an n X n board with a knight's path, not necessarily closed, that visits every square exactly once; number the squares [ 1..n^2 ] along the path; a(n) = maximal number of prime numbered squares that can be attacked by a queen
 A037075 Number of eutactic lattices in dimension n
+A037185 Number of ways of placing 2n points on n X n grid so no 3 are in a line (solutions with no symmetry).
+A037186	Number of ways of placing 2n points on n X n grid so no 3 are in a line (solutions with symmetry about one main diagonal).
+A037187 Number of ways of placing 2n points on n X n grid so no 3 are in a line (solutions with 180 deg rotational symmetry).
+A037188 Number of ways of placing 2n points on n X n grid so no 3 are in a line (solutions with symmetry about both main diagonals).
+A037189 Number of ways of placing 4n points on 2n X 2n grid so no 3 are in a line (solutions with either 90-degree rotational symmetry or full symmetry).

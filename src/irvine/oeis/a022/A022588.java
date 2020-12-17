@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022588 Expansion of Product_{m>=1} (1 + x^m)^23.
+ * A022588 Expansion of Product_{m&gt;=1} (1 + x^m)^23.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^23)</code>
  * @author Georg Fischer
  */

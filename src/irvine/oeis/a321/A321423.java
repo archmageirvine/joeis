@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000161;
 
 
 /**
- * A321423 Expansion of 1/2 * Product_{0 <= i <= j} (1 + x^(i^2 + j^2)).
+ * A321423 Expansion of 1/2 * Product_{0 &lt;= i &lt;= j} (1 + x^(i^2 + j^2)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A000161(k))</code>
  * @author Georg Fischer
  */

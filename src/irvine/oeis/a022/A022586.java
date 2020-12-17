@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022586 Expansion of Product_{m>=1} (1+x^m)^21.
+ * A022586 Expansion of Product_{m&gt;=1} (1+x^m)^21.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^21)</code>
  * @author Georg Fischer
  */

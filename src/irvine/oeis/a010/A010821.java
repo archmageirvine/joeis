@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A010821 Expansion of Product_{k>=1} (1 - x^k)^14.
+ * A010821 Expansion of Product_{k&gt;=1} (1 - x^k)^14.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^14)</code>
  * @author Georg Fischer
  */

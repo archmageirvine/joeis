@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A274719 Expansion of Product_{k >= 1} (1-q^(2*k)).
+ * A274719 Expansion of Product_{k &gt;= 1} (1-q^(2*k)).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^(2*k)))</code>
  * @author Georg Fischer
  */

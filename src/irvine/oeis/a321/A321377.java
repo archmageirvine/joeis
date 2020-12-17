@@ -8,7 +8,7 @@ import irvine.oeis.a038.A038548;
 
 
 /**
- * A321377 Expansion of Product_{1 < i <= j} (1 - x^(i*j)).
+ * A321377 Expansion of Product_{1 &lt; i &lt;= j} (1 - x^(i*j)).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^(A038548(k)-1))</code>
  * @author Georg Fischer
  */

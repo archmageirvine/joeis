@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A271236 G.f.: Product_{k>=1} 1/(1 - (9*x)^k)^(1/3).
+ * A271236 G.f.: Product_{k&gt;=1} 1/(1 - (9*x)^k)^(1/3).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-9^k*x^k)^(1/3))</code>
  * @author Georg Fischer
  */

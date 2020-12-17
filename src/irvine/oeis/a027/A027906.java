@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A027906 Expansion of Product_{m>=1} (1+q^m)^(4*m).
+ * A027906 Expansion of Product_{m&gt;=1} (1+q^m)^(4*m).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^(4*k))</code>
  * @author Georg Fischer
  */

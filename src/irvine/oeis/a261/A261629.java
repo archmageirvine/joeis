@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A261629 Expansion of Product_{k>=0} 1/(1-x^(4*k+1))^2.
+ * A261629 Expansion of Product_{k&gt;=0} 1/(1-x^(4*k+1))^2.
  * G.f.: <code>Product_{k&gt;=0} (1/(1-x^(4*k+1))^2)</code>
  * @author Georg Fischer
  */

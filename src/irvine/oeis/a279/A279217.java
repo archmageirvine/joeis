@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A279217 Expansion of Product_{k>=1} 1/(1 - x^k)^(k*(k+1)*(4*k-1)/6).
+ * A279217 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k*(k+1)*(4*k-1)/6).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^(k*(k+1)*(4*k-1)/6))</code>
  * @author Georg Fischer
  */

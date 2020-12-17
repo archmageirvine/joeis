@@ -8,7 +8,7 @@ import irvine.oeis.a110.A110654;
 
 
 /**
- * A319106 Expansion of Product_{k>=1} (1 + x^k)^ceiling(k/2).
+ * A319106 Expansion of Product_{k&gt;=1} (1 + x^k)^ceiling(k/2).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A110654(k))</code>
  * @author Georg Fischer
  */

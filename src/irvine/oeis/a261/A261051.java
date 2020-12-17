@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000204;
 
 
 /**
- * A261051 Expansion of Product_{k>=1} (1+x^k)^(Lucas(k)).
+ * A261051 Expansion of Product_{k&gt;=1} (1+x^k)^(Lucas(k)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A000204(k))</code>
  * @author Georg Fischer
  */

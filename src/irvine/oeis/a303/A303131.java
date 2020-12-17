@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A303131 Expansion of Product_{n>=1} (1 + (16*x)^n)^(-1/4).
+ * A303131 Expansion of Product_{n&gt;=1} (1 + (16*x)^n)^(-1/4).
  * G.f.: <code>Product_{k&gt;=1} ((1+16^k*x^k)^(-1/4))</code>
  * @author Georg Fischer
  */

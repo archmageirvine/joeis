@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001615;
 
 
 /**
- * A306483 Expansion of Product_{k>=1} 1/(1 - psi(k)*x^k), where psi() is the Dedekind psi function (A001615).
+ * A306483 Expansion of Product_{k&gt;=1} 1/(1 - psi(k)*x^k), where psi() is the Dedekind psi function (A001615).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-A001615(k)*x^k))</code>
  * @author Georg Fischer
  */

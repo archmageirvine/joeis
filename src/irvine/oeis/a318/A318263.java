@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000204;
 
 
 /**
- * A318263 Expansion of Product_{k>=1} (1 + Lucas(k)*x^k).
+ * A318263 Expansion of Product_{k&gt;=1} (1 + Lucas(k)*x^k).
  * G.f.: <code>Product_{k&gt;=1} ((1+A000204(k)*x^k))</code>
  * @author Georg Fischer
  */

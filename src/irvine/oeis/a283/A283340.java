@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A283340 Expansion of exp( Sum_{n>=1} -sigma_10(n)*x^n/n ) in powers of x.
+ * A283340 Expansion of exp( Sum_{n&gt;=1} -sigma_10(n)*x^n/n ) in powers of x.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^(k^9))</code>
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import irvine.oeis.a018.A018252;
 
 
 /**
- * A302234 Expansion of Product_{k>=1} (1 - x^k)/(1 - x^prime(k)).
+ * A302234 Expansion of Product_{k&gt;=1} (1 - x^k)/(1 - x^prime(k)).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^A018252(k)))</code>
  * @author Georg Fischer
  */

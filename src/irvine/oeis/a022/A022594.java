@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022594 Expansion of Product_{m>=1} (1+q^m)^30.
+ * A022594 Expansion of Product_{m&gt;=1} (1+q^m)^30.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^30)</code>
  * @author Georg Fischer
  */

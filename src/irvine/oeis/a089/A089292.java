@@ -8,7 +8,7 @@ import irvine.oeis.a018.A018819;
 
 
 /**
- * A089292 G.f.: Product_{m>=1} 1/(1-x^m)^A018819(m).
+ * A089292 G.f.: Product_{m&gt;=1} 1/(1-x^m)^A018819(m).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^A018819(k))</code>
  * @author Georg Fischer
  */

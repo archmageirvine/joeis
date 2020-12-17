@@ -8,7 +8,7 @@ import irvine.oeis.a008.A008683;
 
 
 /**
- * A306327 Expansion of Product_{k>=1} 1/(1 - mu(k)*x^k), where mu() is the M&ouml;bius function (A008683).
+ * A306327 Expansion of Product_{k&gt;=1} 1/(1 - mu(k)*x^k), where mu() is the M\u00f6bius function (A008683).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-A008683(k)*x^k))</code>
  * @author Georg Fischer
  */

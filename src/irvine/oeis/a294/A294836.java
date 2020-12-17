@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A294836 Expansion of Product_{k>=1} (1 + x^k)^(k*(2*k-1)).
+ * A294836 Expansion of Product_{k&gt;=1} (1 + x^k)^(k*(2*k-1)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^(k*(2*k-1)))</code>
  * @author Georg Fischer
  */

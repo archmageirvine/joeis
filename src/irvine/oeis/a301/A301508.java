@@ -8,7 +8,7 @@ import irvine.oeis.a042.A042964;
 
 
 /**
- * A301508 Expansion of Product_{k>=0} (1 + x^(4*k+2))*(1 + x^(4*k+3)).
+ * A301508 Expansion of Product_{k&gt;=0} (1 + x^(4*k+2))*(1 + x^(4*k+3)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^A042964(k)))</code>
  * @author Georg Fischer
  */

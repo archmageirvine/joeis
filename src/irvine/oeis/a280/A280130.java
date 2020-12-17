@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A280130 Expansion of Product_{k>=2} (1 + x^(k^3)).
+ * A280130 Expansion of Product_{k&gt;=2} (1 + x^(k^3)).
  * G.f.: <code>Product_{k&gt;=2} ((1+x^(k^3)))</code>
  * @author Georg Fischer
  */

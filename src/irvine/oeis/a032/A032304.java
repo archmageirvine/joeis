@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A032304 "EFK" (unordered, size, unlabeled) transform of 1, 3, 5, 7,...
+ * A032304 "EFK" (unordered, size, unlabeled) transform of 1,3,5,7,...
  * G.f.: <code>Product_{k&gt;=1} ((1+(2*k-1)*x^k))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022604 Expansion of Product_{m>=1} (1+q^m)^(-9).
+ * A022604 Expansion of Product_{m&gt;=1} (1+q^m)^(-9).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^(-9))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A255612 G.f.: Product_{k>=1} 1/(1-x^k)^(5*k).
+ * A255612 G.f.: Product_{k&gt;=1} 1/(1-x^k)^(5*k).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^(5*k))</code>
  * @author Georg Fischer
  */

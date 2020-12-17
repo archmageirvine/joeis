@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A283263 Expansion of exp( Sum_{n>=1} -sigma_3(n)*x^n/n ) in powers of x.
+ * A283263 Expansion of exp( Sum_{n&gt;=1} -sigma_3(n)*x^n/n ) in powers of x.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^(k*k))</code>
  * @author Georg Fischer
  */

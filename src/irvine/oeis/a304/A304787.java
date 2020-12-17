@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000108;
 
 
 /**
- * A304787 Expansion of Product_{k>=1} (1 + x^k)^(binomial(2*k,k)/(k+1)).
+ * A304787 Expansion of Product_{k&gt;=1} (1 + x^k)^(binomial(2*k,k)/(k+1)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A000108(k))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A265832 Expansion of Product_{k>=1} 1/(1 - (5*k-2)*x^(5*k-2)).
+ * A265832 Expansion of Product_{k&gt;=1} 1/(1 - (5*k-2)*x^(5*k-2)).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-(5*k-2)*x^(5*k-2)))</code>
  * @author Georg Fischer
  */

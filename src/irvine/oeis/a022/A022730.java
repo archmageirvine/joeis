@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022730 Expansion of Product_{m>=1} 1/(1 - m*q^m)^6.
+ * A022730 Expansion of Product_{m&gt;=1} 1/(1 - m*q^m)^6.
  * G.f.: <code>Product_{k&gt;=1} (1/(1-k*x^k)^6)</code>
  * @author Georg Fischer
  */

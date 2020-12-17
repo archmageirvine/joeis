@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A322216 G.f.: Product_{n>=1} (1 - 2*x^n)^3.
+ * A322216 G.f.: Product_{n&gt;=1} (1 - 2*x^n)^3.
  * G.f.: <code>Product_{k&gt;=1} ((1-2*x^k)^3)</code>
  * @author Georg Fischer
  */

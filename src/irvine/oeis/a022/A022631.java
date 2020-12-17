@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022631 Expansion of Product_{m>=1} (1 + m*q^m)^3.
+ * A022631 Expansion of Product_{m&gt;=1} (1 + m*q^m)^3.
  * G.f.: <code>Product_{k&gt;=1} ((1+k*x^k)^3)</code>
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001221;
 
 
 /**
- * A293548 Expansion of Product_{k>=2} 1/(1 - x^k)^omega(k), where omega(k) is the number of distinct primes dividing k (A001221).
+ * A293548 Expansion of Product_{k&gt;=2} 1/(1 - x^k)^omega(k), where omega(k) is the number of distinct primes dividing k (A001221).
  * G.f.: <code>Product_{k&gt;=2} (1/(1-x^k)^A001221(k))</code>
  * @author Georg Fischer
  */

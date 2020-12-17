@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A261568 Expansion of Product_{k>=1} (1 + 4*x^k).
+ * A261568 Expansion of Product_{k&gt;=1} (1 + 4*x^k).
  * G.f.: <code>Product_{k&gt;=1} ((1+4*x^k))</code>
  * @author Georg Fischer
  */

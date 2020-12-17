@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000045;
 
 
 /**
- * A318248 Expansion of Product_{k>=1} (1 + Fibonacci(k)*x^k).
+ * A318248 Expansion of Product_{k&gt;=1} (1 + Fibonacci(k)*x^k).
  * G.f.: <code>Product_{k&gt;=1} ((1+A000045(k)*x^k))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A261635 Expansion of Product_{k>=0} 1/(1-x^(3*k+1))^4.
+ * A261635 Expansion of Product_{k&gt;=0} 1/(1-x^(3*k+1))^4.
  * G.f.: <code>Product_{k&gt;=0} (1/(1-x^(3*k+1))^4)</code>
  * @author Georg Fischer
  */

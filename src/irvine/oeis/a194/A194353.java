@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A194353 G.f.: exp( Sum_{n>=1} (x^n/n)/sqrt(1 - 4*x^n) ).
+ * A194353 G.f.: exp( Sum_{n&gt;=1} (x^n/n)/sqrt(1 - 4*x^n) ).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^binomial(2*k-2,k-1))</code>
  * @author Georg Fischer
  */

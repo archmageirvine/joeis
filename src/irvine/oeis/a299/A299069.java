@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000010;
 
 
 /**
- * A299069 Expansion of Product_{k>=1} (1 + x^k)^phi(k), where phi() is the Euler totient function (A000010).
+ * A299069 Expansion of Product_{k&gt;=1} (1 + x^k)^phi(k), where phi() is the Euler totient function (A000010).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A000010(k))</code>
  * @author Georg Fischer
  */

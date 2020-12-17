@@ -8,7 +8,7 @@ import irvine.oeis.a246.A246655;
 
 
 /**
- * A329097 Expansion of Product_{p prime, k>=1} 1 / (1 + x^(p^k)).
+ * A329097 Expansion of Product_{p prime, k&gt;=1} 1 / (1 + x^(p^k)).
  * G.f.: <code>Product_{k&gt;=1} (1/(1+x^A246655(k)))</code>
  * @author Georg Fischer
  */

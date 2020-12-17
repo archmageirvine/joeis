@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 
 
 /**
- * A304791 Expansion of Product_{k>=1} (1 - prime(k)*x^k).
+ * A304791 Expansion of Product_{k&gt;=1} (1 - prime(k)*x^k).
  * G.f.: <code>Product_{k&gt;=1} ((1-A000040(k)*x^k))</code>
  * @author Georg Fischer
  */

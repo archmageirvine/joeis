@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 
 
 /**
- * A046675 Expansion of Product_{i>0} (1-x^{p_i}), where p_i are the primes.
+ * A046675 Expansion of Product_{i&gt;0} (1-x^{p_i}), where p_i are the primes.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^A000040(k)))</code>
  * @author Georg Fischer
  */

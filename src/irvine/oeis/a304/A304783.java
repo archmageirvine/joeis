@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000009;
 
 
 /**
- * A304783 Expansion of Product_{k>=1} (1 - x^k)^q(k), where q(k) = number of partitions of k into distinct parts (A000009).
+ * A304783 Expansion of Product_{k&gt;=1} (1 - x^k)^q(k), where q(k) = number of partitions of k into distinct parts (A000009).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^A000009(k))</code>
  * @author Georg Fischer
  */

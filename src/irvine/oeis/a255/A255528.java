@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A255528 G.f.: Product_{k>=1} 1/(1+x^k)^k.
+ * A255528 G.f.: Product_{k&gt;=1} 1/(1+x^k)^k.
  * G.f.: <code>Product_{k&gt;=1} (1/(1+x^k)^k)</code>
  * @author Georg Fischer
  */

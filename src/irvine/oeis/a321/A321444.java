@@ -8,7 +8,7 @@ import irvine.oeis.a025.A025441;
 
 
 /**
- * A321444 Expansion of Product_{0 < i < j} (1 - x^(i^2 + j^2)).
+ * A321444 Expansion of Product_{0 &lt; i &lt; j} (1 - x^(i^2 + j^2)).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^A025441(k))</code>
  * @author Georg Fischer
  */

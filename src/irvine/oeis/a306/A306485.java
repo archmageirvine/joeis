@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000108;
 
 
 /**
- * A306485 Expansion of Product_{k>=1} 1/(1 - Catalan(k)*x^k), where Catalan = A000108.
+ * A306485 Expansion of Product_{k&gt;=1} 1/(1 - Catalan(k)*x^k), where Catalan = A000108.
  * G.f.: <code>Product_{k&gt;=1} (1/(1-A000108(k)*x^k))</code>
  * @author Georg Fischer
  */

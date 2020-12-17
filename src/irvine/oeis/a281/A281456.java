@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A281456 Expansion of Product_{k>=1} (1 + x^(7*k-3)).
+ * A281456 Expansion of Product_{k&gt;=1} (1 + x^(7*k-3)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^(7*k-3)))</code>
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001157;
 
 
 /**
- * A288389 Expansion of Product_{k>=1} (1 - x^k)^(sigma_2(k)).
+ * A288389 Expansion of Product_{k&gt;=1} (1 - x^k)^(sigma_2(k)).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^A001157(k))</code>
  * @author Georg Fischer
  */

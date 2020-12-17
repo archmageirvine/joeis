@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A298994 Expansion of Product_{n>=1} (1 + (4*x)^n)^(1/2).
+ * A298994 Expansion of Product_{n&gt;=1} (1 + (4*x)^n)^(1/2).
  * G.f.: <code>Product_{k&gt;=1} ((1+4^k*x^k)^(1/2))</code>
  * @author Georg Fischer
  */

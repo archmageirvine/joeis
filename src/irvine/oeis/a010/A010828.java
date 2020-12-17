@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A010828 Expansion of Product_{k>=1} (1 - x^k)^22.
+ * A010828 Expansion of Product_{k&gt;=1} (1 - x^k)^22.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^22)</code>
  * @author Georg Fischer
  */

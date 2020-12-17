@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A070877 Expansion of Product_{k>=1} (1 - 2x^k).
+ * A070877 Expansion of Product_{k&gt;=1} (1 - 2x^k).
  * G.f.: <code>Product_{k&gt;=1} ((1-2*x^k))</code>
  * @author Georg Fischer
  */

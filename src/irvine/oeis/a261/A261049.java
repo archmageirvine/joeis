@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000041;
 
 
 /**
- * A261049 Expansion of Product_{k>=1} (1+x^k)^(p(k)), where p(k) is the partition function.
+ * A261049 Expansion of Product_{k&gt;=1} (1+x^k)^(p(k)), where p(k) is the partition function.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A000041(k))</code>
  * @author Georg Fischer
  */

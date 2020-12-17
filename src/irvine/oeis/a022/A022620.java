@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022620 Expansion of Product_{m>=1} (1+q^m)^(-25).
+ * A022620 Expansion of Product_{m&gt;=1} (1+q^m)^(-25).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^(-25))</code>
  * @author Georg Fischer
  */

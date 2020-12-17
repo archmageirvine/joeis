@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A284899 Expansion of Product_{k>=1} 1/(1+x^k)^(k^5) in powers of x.
+ * A284899 Expansion of Product_{k&gt;=1} 1/(1+x^k)^(k^5) in powers of x.
  * G.f.: <code>Product_{k&gt;=1} (1/(1+x^k)^(k^5))</code>
  * @author Georg Fischer
  */

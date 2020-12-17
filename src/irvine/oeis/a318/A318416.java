@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 
 
 /**
- * A318416 Expansion of Product_{i>=1, j>=1} (1 + i*j*x^(i*j)).
+ * A318416 Expansion of Product_{i&gt;=1, j&gt;=1} (1 + i*j*x^(i*j)).
  * G.f.: <code>Product_{k&gt;=1} ((1+k*x^k)^A000005(k))</code>
  * @author Georg Fischer
  */

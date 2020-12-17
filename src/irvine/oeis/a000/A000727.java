@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A000727 Expansion of Product_{k >= 1} (1-x^k)^4.
+ * A000727 Expansion of Product_{k &gt;= 1} (1-x^k)^4.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^4)</code>
  * @author Georg Fischer
  */

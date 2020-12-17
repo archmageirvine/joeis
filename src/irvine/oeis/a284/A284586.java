@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A284586 Expansion of Product_{k>=0} (1 - x^(6*k+5)) in powers of x.
+ * A284586 Expansion of Product_{k&gt;=0} (1 - x^(6*k+5)) in powers of x.
  * G.f.: <code>Product_{k&gt;=0} ((1-x^(6*k+5)))</code>
  * @author Georg Fischer
  */

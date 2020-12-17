@@ -8,7 +8,7 @@ import irvine.oeis.a047.A047219;
 
 
 /**
- * A301563 Expansion of Product_{k>=0} (1 + x^(5*k+1))*(1 + x^(5*k+3)).
+ * A301563 Expansion of Product_{k&gt;=0} (1 + x^(5*k+1))*(1 + x^(5*k+3)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^A047219(k)))</code>
  * @author Georg Fischer
  */

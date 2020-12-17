@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A027346 Expansion of Product_{m>=1} (1 + q^m)^(3*m).
+ * A027346 Expansion of Product_{m&gt;=1} (1 + q^m)^(3*m).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^(3*k))</code>
  * @author Georg Fischer
  */

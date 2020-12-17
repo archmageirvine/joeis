@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022680 Expansion of Product_{m>=1} (1-m*q^m)^20.
+ * A022680 Expansion of Product_{m&gt;=1} (1-m*q^m)^20.
  * G.f.: <code>Product_{k&gt;=1} ((1-k*x^k)^20)</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A255965 Expansion of Product_{k>=1} 1/(1-x^k)^binomial(k+6, 7).
+ * A255965 Expansion of Product_{k&gt;=1} 1/(1-x^k)^binomial(k+6,7).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^binomial(k+6, 7))</code>
  * @author Georg Fischer
  */

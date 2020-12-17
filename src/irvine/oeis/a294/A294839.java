@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001318;
 
 
 /**
- * A294839 Expansion of Product_{k>=1} (1 + x^(2*k-1))^(k*(3*k-1)/2)*(1 + x^(2*k))^(k*(3*k+1)/2).
+ * A294839 Expansion of Product_{k&gt;=1} (1 + x^(2*k-1))^(k*(3*k-1)/2)*(1 + x^(2*k))^(k*(3*k+1)/2).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A001318(k))</code>
  * @author Georg Fischer
  */

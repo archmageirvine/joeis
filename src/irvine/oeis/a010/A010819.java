@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A010819 Expansion of Product_{k>=1} (1 - x^k)^11.
+ * A010819 Expansion of Product_{k&gt;=1} (1 - x^k)^11.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^11)</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022571 Expansion of Product_{m>=1} (1+x^m)^6.
+ * A022571 Expansion of Product_{m&gt;=1} (1+x^m)^6.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^6)</code>
  * @author Georg Fischer
  */

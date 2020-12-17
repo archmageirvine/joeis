@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A193427 G.f.: Product_{k>=1} 1/(1-x^k)^(8*k).
+ * A193427 G.f.: Product_{k&gt;=1} 1/(1-x^k)^(8*k).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^(-8*k))</code>
  * @author Georg Fischer
  */

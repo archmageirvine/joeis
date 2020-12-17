@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A281272 Expansion of Product_{k>=1} (1 + x^(5*k-3)).
+ * A281272 Expansion of Product_{k&gt;=1} (1 + x^(5*k-3)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^(5*k-3)))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A010816 Expansion of Product_{k>=1} (1 - x^k)^3.
+ * A010816 Expansion of Product_{k&gt;=1} (1 - x^k)^3.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^3)</code>
  * @author Georg Fischer
  */

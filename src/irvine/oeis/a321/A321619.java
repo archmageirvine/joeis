@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 
 
 /**
- * A321619 Expansion of Product_{k>0} (1 - d(k)*x^k), where d(k) is the number of divisors of k.
+ * A321619 Expansion of Product_{k&gt;0} (1 - d(k)*x^k), where d(k) is the number of divisors of k.
  * G.f.: <code>Product_{k&gt;=1} ((1-A000005(k)*x^k))</code>
  * @author Georg Fischer
  */

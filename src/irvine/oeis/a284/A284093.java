@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A284093 Expansion of Product_{k>=1} (1 + x^(8*k-1)).
+ * A284093 Expansion of Product_{k&gt;=1} (1 + x^(8*k-1)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^(8*k-1)))</code>
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002102;
 
 
 /**
- * A321381 Expansion of 1/2 * Product_{i>=0, j>=0, k>=0} (1 + x^(i^2 + j^2 + k^2)).
+ * A321381 Expansion of 1/2 * Product_{i&gt;=0, j&gt;=0, k&gt;=0} (1 + x^(i^2 + j^2 + k^2)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A002102(k))</code>
  * @author Georg Fischer
  */

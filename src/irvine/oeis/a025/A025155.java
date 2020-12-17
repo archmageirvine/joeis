@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A025155 Number of partitions of n into distinct parts >= 10.
+ * A025155 Number of partitions of n into distinct parts &gt;= 10.
  * G.f.: <code>Product_{k&gt;=10} ((1+x^k))</code>
  * @author Georg Fischer
  */

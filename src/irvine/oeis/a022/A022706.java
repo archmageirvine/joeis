@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022706 Expansion of Product_{m>=1} (1+m*q^m)^-14.
+ * A022706 Expansion of Product_{m&gt;=1} (1+m*q^m)^-14.
  * G.f.: <code>Product_{k&gt;=1} ((1+k*x^k)^-14)</code>
  * @author Georg Fischer
  */

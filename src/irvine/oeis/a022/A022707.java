@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022707 Expansion of Product_{m>=1} (1+m*q^m)^-15.
+ * A022707 Expansion of Product_{m&gt;=1} (1+m*q^m)^-15.
  * G.f.: <code>Product_{k&gt;=1} ((1+k*x^k)^-15)</code>
  * @author Georg Fischer
  */

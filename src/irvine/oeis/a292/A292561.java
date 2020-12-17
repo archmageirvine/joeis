@@ -8,7 +8,7 @@ import irvine.oeis.a008.A008966;
 
 
 /**
- * A292561 Expansion of Product_{k>=1} (1 - mu(k)^2*x^k), where mu() is the Moebius function (A008683).
+ * A292561 Expansion of Product_{k&gt;=1} (1 - mu(k)^2*x^k), where mu() is the Moebius function (A008683).
  * G.f.: <code>Product_{k&gt;=1} ((1-A008966(k)*x^k))</code>
  * @author Georg Fischer
  */

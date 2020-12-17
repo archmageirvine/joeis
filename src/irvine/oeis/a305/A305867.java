@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001147;
 
 
 /**
- * A305867 Expansion of Product_{k>=1} 1/(1 - x^k)^(2*k-1)!!.
+ * A305867 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(2*k-1)!!.
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^A001147(k))</code>
  * @author Georg Fischer
  */

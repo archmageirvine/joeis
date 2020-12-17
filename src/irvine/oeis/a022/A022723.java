@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022723 Expansion of Product_{m>=1} (1+m*q^m)^-31.
+ * A022723 Expansion of Product_{m&gt;=1} (1+m*q^m)^-31.
  * G.f.: <code>Product_{k&gt;=1} ((1+k*x^k)^-31)</code>
  * @author Georg Fischer
  */

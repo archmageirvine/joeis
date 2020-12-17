@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A303152 Expansion of Product_{n>=1} (1 - (9*x)^n)^(1/3).
+ * A303152 Expansion of Product_{n&gt;=1} (1 - (9*x)^n)^(1/3).
  * G.f.: <code>Product_{k&gt;=1} ((1-9^k*x^k)^(1/3))</code>
  * @author Georg Fischer
  */

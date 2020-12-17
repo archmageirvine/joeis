@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A305256 Expansion of exp(Sum_{k>=1} (-1)^(k+1)*x^k/(k*sqrt(1 - 4*x^k))).
+ * A305256 Expansion of exp(Sum_{k&gt;=1} (-1)^(k+1)*x^k/(k*sqrt(1 - 4*x^k))).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^binomial(2*k-2,k-1))</code>
  * @author Georg Fischer
  */

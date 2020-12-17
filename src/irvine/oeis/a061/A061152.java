@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 
 
 /**
- * A061152 Expansion of Product_{n>=1} (1+x^n)^prime(n).
+ * A061152 Expansion of Product_{n&gt;=1} (1+x^n)^prime(n).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A000040(k))</code>
  * @author Georg Fischer
  */

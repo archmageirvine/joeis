@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022611 Expansion of Product_{m>=1} (1+q^m)^(-16).
+ * A022611 Expansion of Product_{m&gt;=1} (1+q^m)^(-16).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^(-16))</code>
  * @author Georg Fischer
  */

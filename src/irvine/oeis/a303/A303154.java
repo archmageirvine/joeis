@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A303154 Expansion of Product_{n>=1} (1 - (25*x)^n)^(1/5).
+ * A303154 Expansion of Product_{n&gt;=1} (1 - (25*x)^n)^(1/5).
  * G.f.: <code>Product_{k&gt;=1} ((1-25^k*x^k)^(1/5))</code>
  * @author Georg Fischer
  */

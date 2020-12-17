@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A082558 Expansion of Product_{m>=1} 1/(1-x^m)^48.
+ * A082558 Expansion of Product_{m&gt;=1} 1/(1-x^m)^48.
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^48)</code>
  * @author Georg Fischer
  */

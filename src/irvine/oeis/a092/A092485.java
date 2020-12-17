@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A092485 Expansion of Product_{m=>1} (1+m*(m+1)*q^m).
+ * A092485 Expansion of Product_{m=&gt;1} (1+m*(m+1)*q^m).
  * G.f.: <code>Product_{k&gt;=1} ((1+k*(k+1)*x^k))</code>
  * @author Georg Fischer
  */

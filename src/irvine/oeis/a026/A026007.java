@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A026007 Expansion of Product_{m>=1} (1 + q^m)^m; number of partitions of n into distinct parts, where n different parts of size n are available.
+ * A026007 Expansion of Product_{m&gt;=1} (1 + q^m)^m; number of partitions of n into distinct parts, where n different parts of size n are available.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^k)</code>
  * @author Georg Fischer
  */

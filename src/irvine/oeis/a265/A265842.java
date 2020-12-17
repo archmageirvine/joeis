@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A265842 Expansion of Product_{k>=1} (1 + k^5*x^k).
+ * A265842 Expansion of Product_{k&gt;=1} (1 + k^5*x^k).
  * G.f.: <code>Product_{k&gt;=1} ((1+k^5*x^k))</code>
  * @author Georg Fischer
  */

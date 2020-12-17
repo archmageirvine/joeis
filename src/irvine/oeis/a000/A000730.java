@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A000730 Expansion of Product_{n>=1} (1 - x^n)^7.
+ * A000730 Expansion of Product_{n&gt;=1} (1 - x^n)^7.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^7)</code>
  * @author Georg Fischer
  */

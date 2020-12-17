@@ -8,7 +8,7 @@ import irvine.oeis.a011.A011782;
 
 
 /**
- * A305652 Expansion of Product_{k>=1} (1 + x^k)^(2^(k-1)-1).
+ * A305652 Expansion of Product_{k&gt;=1} (1 + x^k)^(2^(k-1)-1).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^(A011782(k)-1))</code>
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007426;
 
 
 /**
- * A280486 G.f.: Product_{i>=1, j>=1, k>=1, l>=1} (1 + x^(i*j*k*l)).
+ * A280486 G.f.: Product_{i&gt;=1, j&gt;=1, k&gt;=1, l&gt;=1} (1 + x^(i*j*k*l)).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A007426(k))</code>
  * @author Georg Fischer
  */

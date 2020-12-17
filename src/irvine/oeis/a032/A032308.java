@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A032308 Expansion of Product_{k>=1} (1 + 3*x^k).
+ * A032308 Expansion of Product_{k&gt;=1} (1 + 3*x^k).
  * G.f.: <code>Product_{k&gt;=1} ((1+3*x^k))</code>
  * @author Georg Fischer
  */

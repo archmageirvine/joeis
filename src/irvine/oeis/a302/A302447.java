@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006002;
 
 
 /**
- * A302447 Expansion of Product_{k>=1} 1/(1 - x^k)^(k*(k+1)^2/2).
+ * A302447 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k*(k+1)^2/2).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^A006002(k))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A185328 Number of partitions of n with parts >= 8.
+ * A185328 Number of partitions of n with parts &gt;= 8.
  * G.f.: <code>Product_{k&gt;=8} (1/(1-x^k))</code>
  * @author Georg Fischer
  */

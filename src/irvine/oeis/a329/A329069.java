@@ -8,7 +8,7 @@ import irvine.oeis.a008.A008966;
 
 
 /**
- * A329069 Expansion of Product_{k>=1} 1 / (1 + mu(k)^2 * x^k).
+ * A329069 Expansion of Product_{k&gt;=1} 1 / (1 + mu(k)^2 * x^k).
  * G.f.: <code>Product_{k&gt;=1} (1/(1+A008966(k)*x^k))</code>
  * @author Georg Fischer
  */

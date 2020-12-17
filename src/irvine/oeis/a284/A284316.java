@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A284316 Expansion of Product_{k>=0} (1 - x^(4*k+3)) in powers of x.
+ * A284316 Expansion of Product_{k&gt;=0} (1 - x^(4*k+3)) in powers of x.
  * G.f.: <code>Product_{k&gt;=0} ((1-x^(4*k+3)))</code>
  * @author Georg Fischer
  */

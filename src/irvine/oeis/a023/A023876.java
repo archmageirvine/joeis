@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A023876 G.f.: Product_{k>=1} (1 - x^k)^(-k^7).
+ * A023876 G.f.: Product_{k&gt;=1} (1 - x^k)^(-k^7).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^(-k^7))</code>
  * @author Georg Fischer
  */

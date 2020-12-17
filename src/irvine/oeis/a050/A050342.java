@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000009;
 
 
 /**
- * A050342 Expansion of Product_{m>=1} (1+x^m)^A000009(m).
+ * A050342 Expansion of Product_{m&gt;=1} (1+x^m)^A000009(m).
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A000009(k))</code>
  * @author Georg Fischer
  */

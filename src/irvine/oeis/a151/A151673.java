@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A151673 G.f.: Prod_{k >= 0} (1+4*x^(4^k)).
+ * A151673 G.f.: Prod_{k &gt;= 0} (1+4*x^(4^k)).
  * G.f.: <code>Product_{k&gt;=0} ((1+4*x^(4^k)))</code>
  * @author Georg Fischer
  */

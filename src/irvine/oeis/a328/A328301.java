@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A328301 Expansion of Product_{k>0} 1/(1 - x^(k^k)).
+ * A328301 Expansion of Product_{k&gt;0} 1/(1 - x^(k^k)).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^(k^k)))</code>
  * @author Georg Fischer
  */

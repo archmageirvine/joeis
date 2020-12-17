@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022654 Expansion of Product_{m>=1} (1+m*q^m)^26.
+ * A022654 Expansion of Product_{m&gt;=1} (1+m*q^m)^26.
  * G.f.: <code>Product_{k&gt;=1} ((1+k*x^k)^26)</code>
  * @author Georg Fischer
  */

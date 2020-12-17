@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000203;
 
 
 /**
- * A318784 Expansion of Product_{k>=1} 1/(1 - x^k)^(sigma_1(k)-k), where sigma_1(k) = sum of divisors of k (A000203).
+ * A318784 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(sigma_1(k)-k), where sigma_1(k) = sum of divisors of k (A000203).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^(A000203(k)-k))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A089814 Expansion of Product_{k>=1} (1 - q^(10k-5))^2.
+ * A089814 Expansion of Product_{k&gt;=1} (1 - q^(10k-5))^2.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^(10*k-5))^2)</code>
  * @author Georg Fischer
  */

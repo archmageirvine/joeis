@@ -8,7 +8,7 @@ import irvine.oeis.a035.A035185;
 
 
 /**
- * A327852 Expansion of Product_{k>=1} B(x^k), where B(x) is the g.f. of A092869.
+ * A327852 Expansion of Product_{k&gt;=1} B(x^k), where B(x) is the g.f. of A092869.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^A035185(k))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A023877 Expansion of Product_{k>=1} (1 - x^k)^(-k^8).
+ * A023877 Expansion of Product_{k&gt;=1} (1 - x^k)^(-k^8).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^(-k^8))</code>
  * @author Georg Fischer
  */

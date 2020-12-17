@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A010841 Expansion of Product_{k>=1} (1-x^k)^64.
+ * A010841 Expansion of Product_{k&gt;=1} (1-x^k)^64.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^64)</code>
  * @author Georg Fischer
  */

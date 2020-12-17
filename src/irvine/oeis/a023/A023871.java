@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A023871 Expansion of Product_{k>=1} (1 - x^k)^(-k^2).
+ * A023871 Expansion of Product_{k&gt;=1} (1 - x^k)^(-k^2).
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^(-k*k))</code>
  * @author Georg Fischer
  */

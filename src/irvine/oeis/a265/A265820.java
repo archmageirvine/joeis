@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A265820 Expansion of Product_{k>=1} 1/(1 - (3*k-1)*x^(3*k-1)).
+ * A265820 Expansion of Product_{k&gt;=1} 1/(1 - (3*k-1)*x^(3*k-1)).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-(3*k-1)*x^(3*k-1)))</code>
  * @author Georg Fischer
  */

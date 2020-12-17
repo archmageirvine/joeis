@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A008483 Number of partitions of n into parts >= 3.
+ * A008483 Number of partitions of n into parts &gt;= 3.
  * G.f.: <code>Product_{k&gt;=3} (1/(1-x^k))</code>
  * @author Georg Fischer
  */

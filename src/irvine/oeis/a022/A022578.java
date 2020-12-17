@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A022578 Expansion of Product_{m>=1} (1+x^m)^13.
+ * A022578 Expansion of Product_{m&gt;=1} (1+x^m)^13.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^13)</code>
  * @author Georg Fischer
  */

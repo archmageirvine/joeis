@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A284312 Expansion of Product_{k>=0} (1 - x^(3*k+1)) in powers of x.
+ * A284312 Expansion of Product_{k&gt;=0} (1 - x^(3*k+1)) in powers of x.
  * G.f.: <code>Product_{k&gt;=0} ((1-x^(3*k+1)))</code>
  * @author Georg Fischer
  */

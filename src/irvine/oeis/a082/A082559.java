@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A082559 G.f.: Product_{m>=1} 1/(1-x^m)^64.
+ * A082559 G.f.: Product_{m&gt;=1} 1/(1-x^m)^64.
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^64)</code>
  * @author Georg Fischer
  */

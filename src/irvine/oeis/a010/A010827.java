@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A010827 Expansion of Product_{k>=1} (1 - x^k)^21.
+ * A010827 Expansion of Product_{k&gt;=1} (1 - x^k)^21.
  * G.f.: <code>Product_{k&gt;=1} ((1-x^k)^21)</code>
  * @author Georg Fischer
  */

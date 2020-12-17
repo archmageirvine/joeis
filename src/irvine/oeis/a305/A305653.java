@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002415;
 
 
 /**
- * A305653 Expansion of Product_{k>=1} 1/(1 - x^k)^((k+1)*binomial(k+2, 3)/2).
+ * A305653 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^((k+1)*binomial(k+2,3)/2).
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^A002415(k+1))</code>
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.GeneralizedEulerTransform;
 
 
 /**
- * A082557 G.f.: Product_{m>=1} 1/(1-x^m)^32.
+ * A082557 G.f.: Product_{m&gt;=1} 1/(1-x^m)^32.
  * G.f.: <code>Product_{k&gt;=1} (1/(1-x^k)^32)</code>
  * @author Georg Fischer
  */

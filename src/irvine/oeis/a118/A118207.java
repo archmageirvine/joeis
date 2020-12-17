@@ -8,7 +8,7 @@ import irvine.oeis.a008.A008836;
 
 
 /**
- * A118207 Expansion of Product_{k>=1}(1 + x^k)^lambda(k) where lambda(k) is the Liouville function, A008836.
+ * A118207 Expansion of Product_{k&gt;=1}(1 + x^k)^lambda(k) where lambda(k) is the Liouville function, A008836.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A008836(k))</code>
  * @author Georg Fischer
  */

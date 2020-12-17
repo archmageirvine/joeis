@@ -16,7 +16,7 @@ public class A037193 implements Sequence {
   @Override
   public Z next() {
     final String french = French.SINGLETON.toRawText(++mN);
-    int len = french.length();
+    final int len = french.length();
     int vowels = 0;
     for (int k = 0; k < len; ++k) {
       if (VOWELS.indexOf(french.charAt(k)) >= 0) {

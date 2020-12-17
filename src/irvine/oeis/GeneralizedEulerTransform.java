@@ -10,7 +10,7 @@ import irvine.math.z.ZUtils;
  * From Seiichi Manyama, Nov 14 2017:
  * A generalized Euler transform.
  * Suppose given two sequences f(k) and g(k), n&gt;0, we define a new sequence a(n), n&gt;=0, <br />
- * by Product_{k&gt;0} (1 - g(k)*x^k)^(-f(k)) = b(0) + b(1)*x + b(2)*x^2 + ... = Sum{n&gt;>=0} b(n)*x^n<br />
+ * by Product_{k&gt;0} (1 - g(k)*x^k)^(-f(k)) = b(0) + b(1)*x + b(2)*x^2 + ... = Sum{n&gt;=0} b(n)*x^n<br />
  * Since Product_{k&gt;=1} (1 - g(k)*x^k)^(-f(k)) = exp(Sum_{n&gt;=1} (Sum_{d|n} d*f(d)*g(d)^(n/d))*x^n/n),  <br />
  * we see that b(n) is given explicitly by b(n) = (1/n) * Sum_{k=1..n} c(k)*b(n-k) <br />
  * where c(n) = Sum_{d|n} d*f(d)*g(d)^(n/d). <br />
@@ -40,7 +40,7 @@ public class GeneralizedEulerTransform implements Sequence {
   protected Sequence mSeqF; // sequence for the exponent of the parenthesis: 1/(1-x^k)^f(k)
   protected Sequence mSeqG; // sequence for the factor of x^k: 1/(1-g(k)*x^k)^f(k)
   protected Sequence mSeqH; // monontone increasing (!) sequence for the exponent of x: 1/(1-g(k)*x^h(k))^f(k)
-  protected int[] mParms; // additional parameters
+  //protected int[] mParms; // additional parameters
 
   /**
    * Empty constructor;
@@ -54,7 +54,6 @@ public class GeneralizedEulerTransform implements Sequence {
    * Create a new sequence with additional terms at the front.
    * @param offset index of first term
    * @param kStart start value for k
-   * @param preTerms additional terms to be prepended;
    */
   public GeneralizedEulerTransform(final int offset, final int kStart) {
     this(offset, kStart, new long[]{1L});

@@ -16,7 +16,7 @@ public class A037195 implements Sequence {
   @Override
   public Z next() {
     final String english = English.SINGLETON.toRawText(++mN);
-    int len = english.length();
+    final int len = english.length();
     int vowels = 0;
     for (int k = 0; k < len; ++k) {
       if (VOWELS.indexOf(english.charAt(k)) >= 0) {

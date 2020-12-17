@@ -16,7 +16,7 @@ public class A037199 implements Sequence {
   @Override
   public Z next() {
     final String german = German.SINGLETON.toRawText(++mN);
-    int len = german.length();
+    final int len = german.length();
     int vowels = 0;
     for (int k = 0; k < len; ++k) {
       if (VOWELS.indexOf(german.charAt(k)) >= 0) {

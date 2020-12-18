@@ -383,6 +383,21 @@ public final class ZUtils {
   }
 
   /**
+   * Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415.
+   * @param n number to describe
+   * @return description of the number
+   */
+  public static Z describe(final int[] cnts) {
+    final StringBuilder sb = new StringBuilder();
+    for (int k = 0; k < cnts.length; ++k) {
+      if (cnts[k] != 0) {
+        sb.append(cnts[k]).append(k);
+      }
+    }
+    return new Z(sb);
+  }
+
+  /**
    * Return a string that has the same value independent of the permutation
    * of the digits in the number.  That is, all permutations of the same
    * digits will have the same syndrome.

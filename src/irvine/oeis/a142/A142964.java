@@ -4,7 +4,7 @@ package irvine.oeis.a142;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A142964 One half of second column (m=1) of triangle A142963.
+ * A142964 a(n) = 6*2^n - 2*n - 5.
  * @author Georg Fischer
  */
 public class A142964 extends GeneratingFunctionSequence {

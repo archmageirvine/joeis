@@ -1,5 +1,8 @@
 package irvine.oeis.a006;
 
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ForkJoinPool;
+
 import gebhardt.Benes;
 import gebhardt.Globals;
 import gebhardt.LattEnum;
@@ -47,13 +50,17 @@ public class A006966 implements Sequence {
    *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
    */
 
+  private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
+    String.valueOf(Runtime.getRuntime().availableProcessors())));
+  private static int SMALL = 7;
+
   protected int mN = -1;
   {
     Benes.initSmall();
   }
 
-  protected LattEnum getEnum() {
-    return new LattEnum.LattEnumCount(Lattice.init2(), mN, 3, new Globals());
+  protected LattEnum getEnum(final Lattice lattice, final int minSize) {
+    return new LattEnum.LattEnumCount(lattice, mN, minSize, new Globals());
   }
 
   @Override
@@ -62,24 +69,25 @@ public class A006966 implements Sequence {
       return Z.ONE;
     }
 
-//    // todo experimenting with parallel
-//    // todo at the moment this does not even work in sequential mode
-//    if (mN >= 5) {
-//      final LattEnum.LattAccumulate accumulate = new LattEnum.LattAccumulate(Lattice.init2(), 5, 3, new Globals());
-//      accumulate.doEnumeration();
-//      System.out.println("Precomputed " + accumulate.mLattices.size() + " lattices");
-//      Z sum = Z.ZERO;
-//      for (final Lattice l : accumulate.mLattices) {
-//        l.print();
-//        final LattEnum et = new LattEnum.LattEnumCount(l, mN, 6, new Globals());
-//        et.doEnumeration();
-//        sum = sum.add(et.getCount());
-//        System.out.println("Sum is now " + sum);
-//      }
-//      return sum;
-//    }
+    if (mN >= SMALL) {
+      final LattEnum.LattAccumulate accumulate = new LattEnum.LattAccumulate(Lattice.init2(), SMALL, 3, new Globals());
+      accumulate.doEnumeration();
+      //System.out.println("Precomputed lattices = " + accumulate.mLattices.size());
+      final ForkJoinPool forkJoinPool = new ForkJoinPool(THREADS);
+      try {
+        System.out.println("Running with " + THREADS + " threads");
+        return forkJoinPool.submit(() -> accumulate.mLattices.parallelStream().map(lattice -> {
+          final LattEnum et = getEnum(lattice, SMALL + 1);
+          et.doEnumeration();
+          return et.getCount();
+          }
+        )).get().reduce(Z.ZERO, Z::add);
+      } catch (final InterruptedException | ExecutionException e) {
+        throw new RuntimeException(e);
+      }
+    }
 
-    final LattEnum e = getEnum();
+    final LattEnum e = getEnum(Lattice.init2(), 3);
     e.doEnumeration();
     return e.getCount();
   }

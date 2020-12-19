@@ -1474,3 +1474,7 @@ A037189 Number of ways of placing 4n points on 2n X 2n grid so no 3 are in a lin
 A037207 Smallest natural number k such that periodic part of 1/k is n, or 0 if no such k exists, probably doable
 A037211 Smallest natural number k such that periodic part of 1/sqrt(k) is n (or 0 if no such number), simple dep. on A037207
 A037218 Smallest natural number k such that periodic part of 1/k is the prime p(n), or 0 if no such k exists, dep. A037207
+A037219 Theta series for 10-dimensional 4-modular lattice Q10 with minimal norm 4
+A037221 Number of near-rings (or nearrings) definable on cyclic group of order n
+A037233 Order of (4,n) cage, i.e., minimal order of 4-regular graph of girth n, hard
+A037234 a(0) = 0; for n > 0, a(n) = number of rings with n elements, simple dep. A027623

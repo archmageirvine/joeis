@@ -47,6 +47,15 @@ public abstract class LattEnum {
 
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
+  /** Precompute at class to avoid synchronization issues in parallel execution. */
+  private static final Z[] FACTORIAL = new Z[21];
+  {
+    FACTORIAL[0] = Z.ONE;
+    for (int k = 1; k < FACTORIAL.length; ++k) {
+      FACTORIAL[k] = FACTORIAL[k - 1].multiply(k);
+    }
+  }
+
   protected abstract void reg(final Lattice l);  /* function called for registering lattices */
 
   Globals mGlobals;       /* "global" data for process/thread         */
@@ -115,9 +124,7 @@ public abstract class LattEnum {
 
     @Override
     protected void reg(final Lattice l) {
-      if (l.mN == mN) {
-        mLattices.add(new Lattice(l));
-      }
+      mLattices.add(new Lattice(l));
     }
   }
 
@@ -126,7 +133,7 @@ public abstract class LattEnum {
    */
   public static class LattEnumLabelledCount extends LattEnumCount {
 
-    private final MemoryFactorial mF = new MemoryFactorial();
+    private final MemoryFactorial mF = new MemoryFactorial(); // todo can I get away with a singleton for this?
 
     /**
      * Return a structure for counting the descendants of l of size equal to n, for which all intermediate lattices
@@ -160,7 +167,7 @@ public abstract class LattEnum {
         // Determine size of automorphism group
         final PermGrp grp = l.mS;
         final ArrayList<IntegerPermutation> generators = new ArrayList<>(grp.mNgens);
-        final Z f = mF.factorial(mN + 2);
+        final Z f = FACTORIAL[mN + 2];
         if (grp.mNgens == 0) {
           // Fairly trivial action.  The order of the automorphism group can easily be
           // determined from the implicit transpositions alone.

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A037195 Number of consonants in n.
+ * A037195 Number of consonants in the American English name of n.
  * @author Sean A. Irvine
  */
 public class A037195 implements Sequence {

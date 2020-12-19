@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038179 Result of second stage of sieve of Eratosthenes.
+ * A038179 Result of second stage of sieve of Eratosthenes (after eliminating multiples of 2 and 3).
  * @author Georg Fischer
  */
 public class A038179 extends GeneratingFunctionSequence {

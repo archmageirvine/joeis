@@ -12,8 +12,8 @@ import irvine.oeis.a006.A006966;
 public class A055512 extends A006966 {
 
   @Override
-  protected LattEnum getEnum() {
-    return new LattEnum.LattEnumLabelledCount(Lattice.init2(), mN, 3, new Globals());
+  protected LattEnum getEnum(final Lattice lattice, final int minSize) {
+    return new LattEnum.LattEnumLabelledCount(lattice, mN, minSize, new Globals());
   }
 
   /**

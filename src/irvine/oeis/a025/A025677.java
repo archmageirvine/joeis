@@ -14,7 +14,6 @@ public class A025677 extends A025634 {
     while (r.mod(10) == 0) {
       r = r.divide(10);
     }
-    r.makeOdd();
-    return Z.valueOf(r.auxiliary() / 3);
+    return Z.valueOf(r.makeOdd().auxiliary() / 3);
   }
 }

@@ -12,8 +12,8 @@ import irvine.oeis.Sequence;
  */
 public class A037202 extends MemoryFunction<Long, Long> implements Sequence {
 
-  private final Fast mPrime = new Fast();
-  private long mP = 1;
+  protected final Fast mPrime = new Fast();
+  protected long mP = 1;
 
   @Override
   protected Long compute(final Long key) {

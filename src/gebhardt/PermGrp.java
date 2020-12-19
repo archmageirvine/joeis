@@ -65,6 +65,8 @@ class PermGrp {
 //    mInvPerm = Arrays.copyOf(g.mInvPerm, g.mInvPerm.length);
     for (int k = 0; k < mN; ++k) { /* We need g.n instead of g.ngens to work in the general case! */
       if (g.mPerm[k] != null) {
+        mPerm[k] = Permutation.create();
+        mInvPerm[k] = Permutation.create();
         Permutation.copy(mN, g.mPerm[k], mPerm[k]);
         Permutation.copy(mN, g.mInvPerm[k], mInvPerm[k]);
       }

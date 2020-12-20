@@ -35,7 +35,7 @@ public class A000233 implements Sequence {
     return (n & 1) == 0 ? sum : sum.negate();
   }
 
-  private Z[] handleFactors(final long a, final int n) {
+  private Z[] handleFactors(final long a, final long n) {
     Z mz = Z.ONE;
     Z bz = Z.ONE;
     final FactorSequence fs = Cheetah.factor(a);

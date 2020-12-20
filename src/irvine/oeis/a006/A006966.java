@@ -1,7 +1,11 @@
 package irvine.oeis.a006;
 
+import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 import gebhardt.Benes;
 import gebhardt.Globals;
@@ -52,7 +56,7 @@ public class A006966 implements Sequence {
 
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
-  private static int SMALL = 7;
+  private static final int SMALL = 7;
 
   protected int mN = -1;
   {
@@ -72,18 +76,29 @@ public class A006966 implements Sequence {
     if (mN >= SMALL) {
       final LattEnum.LattAccumulate accumulate = new LattEnum.LattAccumulate(Lattice.init2(), SMALL, 3, new Globals());
       accumulate.doEnumeration();
-      //System.out.println("Precomputed lattices = " + accumulate.mLattices.size());
-      final ForkJoinPool forkJoinPool = new ForkJoinPool(THREADS);
+
+      final ExecutorService exec = Executors.newFixedThreadPool(THREADS);
+      final ArrayList<Future<Z>> futures = new ArrayList<>();
       try {
-        System.out.println("Running with " + THREADS + " threads");
-        return forkJoinPool.submit(() -> accumulate.mLattices.parallelStream().map(lattice -> {
-          final LattEnum et = getEnum(lattice, SMALL + 1);
-          et.doEnumeration();
-          return et.getCount();
-          }
-        )).get().reduce(Z.ZERO, Z::add);
+        for (final Lattice lattice : accumulate.mLattices) {
+          futures.add(exec.submit(() -> {
+            final LattEnum et = getEnum(lattice, SMALL + 1);
+            et.doEnumeration();
+            return et.getCount();
+          }));
+        }
+      } finally {
+        exec.shutdown();
+      }
+      try {
+        exec.awaitTermination(Long.MAX_VALUE, TimeUnit.DAYS);
+        Z sum = Z.ZERO;
+        for (final Future<Z> f : futures) {
+          sum = sum.add(f.get());
+        }
+        return sum;
       } catch (final InterruptedException | ExecutionException e) {
-        throw new RuntimeException(e);
+        throw new UnsupportedOperationException(e);
       }
     }
 

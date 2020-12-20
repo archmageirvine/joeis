@@ -14,17 +14,17 @@ public class A037224 implements Sequence {
 
   @Override
   public Z next() {
-    switch (++mN & 3) {
+    if (++mN == 1) {
+      return Z.ONE;
+    }
+    switch (mN & 3) {
       case 0:
         final int m = mN / 4;
         if (m > 1) {
           mF = mF.multiply(2 * m - 1).multiply(2 * m - 2).divide(m - 1);
         }
-        // FALL THROUGH
+        return mF;
       case 1:
-        if (mN == 1) {
-          return Z.ONE;
-        }
         return mF;
       case 2:
       case 3:

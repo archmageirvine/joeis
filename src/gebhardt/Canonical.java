@@ -353,22 +353,16 @@ final class Canonical {
           }
           Permutation.copy(n + k, q, globals.mSi1[si1Size].mP);
           if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
+            final long drm = dr * (long) m;
             final long mask1 = (Utils.bit((r - j) * (long) m) - 1) << ((j + 1) * m);
-            final long mask2 = (Utils.bit(dr * m) - 1) << ((j - dr + 1) * m);
-            bigP = (bigP & ~(mask1 | mask2)) | ((bigP & mask1) >>> (dr * m)) | ((bigP & mask2) << ((r - j) * m));
+            final long mask2 = (Utils.bit(drm) - 1) << ((j - dr + 1) * m);
+            bigP = (bigP & ~(mask1 | mask2)) | ((bigP & mask1) >>> (drm)) | ((bigP & mask2) << ((r - j) * m));
             /* left-multiply q=globals.SI1[si1Size].p by the inverse of the applied permutation */
-            // todo replace with System.arraycopy?
-            opq = n + k - 1 - j;
+            final int o = n + k - 1 - j;
             final byte[] pqq = globals.mSi1[si1Size].mP;
-            int opqq = n + k - 1 - r;
-            for (int t = dr; t-- != 0; ) {
-              pqq[opqq + t] = q[opq + t];
-            }
-            opq -= r - j;  /* pq = q + n+k-1-r; */
-            opqq += dr;   /* pqq = globals.SI1[si1Size].p + n+k-1-r+dr; */
-            for (int t = r - j; t-- != 0; ) {
-              pqq[opqq + t] = q[opq + t];
-            }
+            final int opqq = n + k - 1 - r;
+            System.arraycopy(q, o, pqq, opqq, dr);
+            System.arraycopy(q, o - r + j, pqq, opqq + dr, r - j);
           }
           globals.mSi1[si1Size].mS = s;
           globals.mSi1[si1Size].mRep[0] = bigP;

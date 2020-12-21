@@ -36,7 +36,7 @@ public class Benes {
    *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
    */
 
-  private static final int BENES_SMALL = 8;
+  private static final int BENES_SMALL = Integer.parseInt(System.getProperty("benes.small", String.valueOf(8)));
   private static final int BITSPERLONG = Long.SIZE;
 
   // struct benes_p1 {

@@ -48,11 +48,11 @@ public abstract class LattEnum {
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
   /** Precompute at class to avoid synchronization issues in parallel execution. */
-  private static final Z[] FACTORIAL = new Z[21];
+  private static final long[] FACTORIAL = new long[21];
   {
-    FACTORIAL[0] = Z.ONE;
+    FACTORIAL[0] = 1;
     for (int k = 1; k < FACTORIAL.length; ++k) {
-      FACTORIAL[k] = FACTORIAL[k - 1].multiply(k);
+      FACTORIAL[k] = FACTORIAL[k - 1] * k;
     }
   }
 
@@ -147,12 +147,12 @@ public abstract class LattEnum {
       super(l, n, nMin, globals);
     }
 
-    private Z implicitOrder(int si) {
-      Z ord = Z.ONE;
+    private long implicitOrder(int si) {
+      long ord = 1;
       int k = 1;
       while (si != 0) {
         if ((si & 1) == 1) {
-          ord = ord.multiply(++k);
+          ord *= ++k;
         } else {
           k = 1;
         }
@@ -167,11 +167,11 @@ public abstract class LattEnum {
         // Determine size of automorphism group
         final PermGrp grp = l.mS;
         final ArrayList<IntegerPermutation> generators = new ArrayList<>(grp.mNgens);
-        final Z f = FACTORIAL[mN + 2];
+        final long f = FACTORIAL[mN + 2];
         if (grp.mNgens == 0) {
           // Fairly trivial action.  The order of the automorphism group can easily be
           // determined from the implicit transpositions alone.
-          mCount = mCount.add(f.divide(implicitOrder(l.mSi)));
+          mCount = mCount.add(f / implicitOrder(l.mSi));
         } else {
           // In the general case we use Schreier-Sims to determine the order of the
           // automorphism group.
@@ -191,7 +191,7 @@ public abstract class LattEnum {
           }
           final List<BaseStrongGeneratingElement> bsgs = SchreierSims.createBSGSList(generators);
           final Z order = SchreierSims.calculateOrder(bsgs);
-          mCount = mCount.add(f.divide(order));
+          mCount = mCount.add(f / order.longValueExact());
         }
       }
     }

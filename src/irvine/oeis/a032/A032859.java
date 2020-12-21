@@ -7,6 +7,11 @@ package irvine.oeis.a032;
 public class A032859 extends A032842 {
 
   @Override
+  protected long start() {
+    return 0;
+  }
+
+  @Override
   protected boolean initialDirection() {
     return false;
   }

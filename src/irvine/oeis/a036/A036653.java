@@ -13,6 +13,6 @@ public class A036653 extends A036651 {
 
   @Override
   public Z next() {
-    return super.next().add(mA.next());
+    return super.next().add(mA.next()).max(Z.ONE);
   }
 }

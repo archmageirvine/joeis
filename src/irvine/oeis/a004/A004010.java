@@ -39,7 +39,6 @@ public class A004010 implements Sequence {
   public Z next() {
     mN += 2;
     final QPolynomial<Z> phi0 = phi0(mN).substitutePower(2);
-    System.out.println("phi0=" + phi0);
     final QPolynomial<Z> phi1 = phi1(mN).substitutePower(2);
     final QPolynomial<Z> a = RING.pow(phi0, 6, mN);
     final QPolynomial<Z> b = RING.multiply(RING.multiply(RING.pow(phi0, 2, mN), RING.pow(phi1, 4, mN), mN), Z45);

@@ -13,6 +13,8 @@ import gebhardt.LattEnum;
 import gebhardt.Lattice;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.a055.A055512;
+import irvine.util.CliFlags;
 
 /**
  * A006966 Number of lattices on n unlabeled nodes.
@@ -63,8 +65,14 @@ public class A006966 implements Sequence {
     Benes.initSmall();
   }
 
+  private int mLatticeIndex = -1;
+
   protected LattEnum getEnum(final Lattice lattice, final int minSize) {
     return new LattEnum.LattEnumCount(lattice, mN, minSize, new Globals());
+  }
+
+  private void setLatticeIndex(final int index) {
+    mLatticeIndex = index;
   }
 
   @Override
@@ -73,7 +81,23 @@ public class A006966 implements Sequence {
       return Z.ONE;
     }
 
+    if (mLatticeIndex >= 0) {
+      // This block is used in the special case where only a partial computation is being
+      // performed.  In particular, we are going to count the subset of lattices generated
+      // from a given lattice index.  This allows for coarse-grained parallelism in
+      // computing larger terms.
+
+      // Compute all small lattices (this will include the specified index)
+      final LattEnum.LattAccumulate accumulate = new LattEnum.LattAccumulate(Lattice.init2(), SMALL, 3, new Globals());
+      accumulate.doEnumeration();
+      //System.out.println("Total seed lattices: " + accumulate.mLattices.size());
+      final LattEnum et = getEnum(accumulate.mLattices.get(mLatticeIndex), SMALL + 1);
+      et.doEnumeration();
+      return et.getCount();
+    }
+
     if (mN >= SMALL) {
+      // Parallel execution.
       final LattEnum.LattAccumulate accumulate = new LattEnum.LattAccumulate(Lattice.init2(), SMALL, 3, new Globals());
       accumulate.doEnumeration();
 
@@ -102,6 +126,7 @@ public class A006966 implements Sequence {
       }
     }
 
+    // Single threaded for small sizes
     final LattEnum e = getEnum(Lattice.init2(), 3);
     e.doEnumeration();
     return e.getCount();
@@ -111,9 +136,18 @@ public class A006966 implements Sequence {
    * Run this sequence for the specified value of <code>n</code>.
    * @param args value to run
    */
-  public static void main(final String... args) {
-    final int n = Integer.parseInt(args[0]);
-    final A006966 seq = new A006966();
+  public static void main(final String[] args) {
+    final CliFlags flags = new CliFlags("A006966");
+    flags.setDescription("Counting labelled and unlabelled lattices");
+    flags.registerRequired(Integer.class, "n", "number of points in the lattice");
+    flags.registerOptional('l', "labelled", "count labelled lattices");
+    flags.registerOptional('i', "index", Integer.class, "l", "lattice index number to generate from [0,76]");
+    flags.setFlags(args);
+    final int n = (Integer) flags.getAnonymousValue(0);
+    final A006966 seq = flags.isSet("labelled") ? new A055512() : new A006966();
+    if (flags.isSet("index")) {
+      seq.setLatticeIndex((Integer) flags.getValue("index"));
+    }
     seq.mN = n - 1;
     System.out.println(seq.next());
   }

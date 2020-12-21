@@ -16,14 +16,5 @@ public class A055512 extends A006966 {
     return new LattEnum.LattEnumLabelledCount(lattice, mN, minSize, new Globals());
   }
 
-  /**
-   * Run this sequence for the specified value of <code>n</code>.
-   * @param args value to run
-   */
-  public static void main(final String... args) {
-    final int n = Integer.parseInt(args[0]);
-    final A055512 seq = new A055512();
-    seq.mN = n - 1;
-    System.out.println(seq.next());
-  }
+  // For a main, see A006966
 }

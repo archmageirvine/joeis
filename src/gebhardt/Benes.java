@@ -39,40 +39,11 @@ public class Benes {
   private static final int BENES_SMALL = Integer.parseInt(System.getProperty("benes.small", String.valueOf(8)));
   private static final int BITSPERLONG = Long.SIZE;
 
-  // struct benes_p1 {
-//   long     refcount;              /* reference count; -1 = persistent */
-//   long  mask[2*LD_MAXN_2-1];   /* masks for stages */
-//   long      shift[2*LD_MAXN_2-1];  /* shift amounts for stages */
-//   long      depth;                 /* number of stages */
-// };
-
   //long mRefCount;              /* reference count; -1 = persistent */
   long[] mMask = new long[2 * Utils.LD_MAXN_2 - 1];   /* masks for stages */
   byte[] mShift = new byte[2 * Utils.LD_MAXN_2 - 1];  /* shift amounts for stages */
   byte mDepth;                 /* number of stages */
   long[] mMask1 = new long[2 * Utils.LD_MAXN_2 - 1];  /* masks for stages; second long */
-
-  //typedef struct benes_p2 benes;  /* We actually use struct benes_p1 where the second long is not needed... */
-
-//  /*
-//   * Increment the reference count for b and return b.
-//   */
-//  static Benes incRef(Benes b) {
-//    if (b.mRefCount > 0) {
-//      b.mRefCount++;
-//    }
-//    return b;
-//  }
-//
-//
-//  /*
-//   * Decrement the reference count for b, and free the allocated memory if the reference count reaches 0.
-//   */
-//  static void delete(Benes b) {
-//    if (b.mRefCount > 0 && (--(b.mRefCount)) == 0) {
-//      //free(B);
-//    }
-//  }
 
   /*
    * Set B to a pointer to a Bene&scaron; network realising the action of the permutation p on the points lo..hi-1
@@ -185,7 +156,6 @@ public class Benes {
 
   /*
    * Apply the Bene&scaron; network B to a[0],a[1].  The masks indicate the lower bit of each pair.
-   *
    */
   void applyP2(final long[] a) {
     for (int i = 0; i < mDepth; ++i) {

@@ -55,7 +55,7 @@ class PermGrpC {
   void init(final int n) {
     mG.init(n);
     mFreePerm = Utils.allBits32(Utils.MAXN - 2);
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; ++i) {
       mJerrum[i].mNeighbours = 0;
     }
   }
@@ -88,7 +88,7 @@ class PermGrpC {
 
   /*
    * Return whether adding an edge i--j, for the permutation p, creates a cycle in the Jerrum graph.
-   * If so, the product of the generators along the cycle is returned in k, and (*m)--(*nm) is the
+   * If so, the product of the generators along the cycle is returned in k, and (m)--(nm) is the
    * first edge of the cycle.
    */
   private boolean jerrumCreatesCycle(final int i, final int j, final byte[] p, final byte[] h, final int[] m, final int[] nm) {
@@ -99,7 +99,7 @@ class PermGrpC {
     todo[0] = i;
     int ntodo = 1;
     int unseen = (int) ~Utils.bit(i);
-    for (int pos = 0; pos < ntodo; pos++) {
+    for (int pos = 0; pos < ntodo; ++pos) {
       int u = todo[pos];
       final int nu = mJerrum[u].mNeighbours;
       while (Utils.getLSB32(nu & unseen, v)) {
@@ -212,9 +212,7 @@ class PermGrpC {
       mFreePerm ^= Utils.bit(i[0]);  /* bit i is set, so this clears it */
       mFreePerm |= Utils.bit(j[0]);
     }
-    final int[] ugly = {mG.mNgens};
-    Utils.getLSB32(mFreePerm, ugly);
-    mG.mNgens = ugly[0];
+    mG.mNgens = Integer.numberOfTrailingZeros(mFreePerm);
     mG.mInvol = 0;
     for (int k = 0, biti = 1; k < mG.mNgens; ++k, biti <<= 1) {
       if (Permutation.compare(mG.mN, mG.mPerm[k], mG.mInvPerm[k]) == 0) {

@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.BaseStrongGeneratingElement;
 import irvine.math.group.SchreierSims;
 import irvine.math.set.IntegerPermutation;
@@ -132,8 +131,6 @@ public abstract class LattEnum {
    * Enumerator for labelled counting.
    */
   public static class LattEnumLabelledCount extends LattEnumCount {
-
-    private final MemoryFactorial mF = new MemoryFactorial(); // todo can I get away with a singleton for this?
 
     /**
      * Return a structure for counting the descendants of l of size equal to n, for which all intermediate lattices

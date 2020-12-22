@@ -304,7 +304,6 @@ final class Canonical {
           final int[] hi = new int[1];
           final int[] lo = new int[1];
           final byte[] q = Permutation.create();
-          int opq = a0;
           if (si1Size == globals.mSiSpace) {
             globals.enlargenSiSpace();
           }
@@ -324,9 +323,9 @@ final class Canonical {
               ub ^= Utils.bit(hi[0]) | Utils.bit(lo[0]);
               final long bigT = ((bigP >>> hi[0]) ^ (bigP >>> lo[0])) & bigM;
               bigP ^= (bigT << hi[0]) | (bigT << lo[0]);
-              final byte t = q[opq + hi[0]];  /* left-multiplication by (lo hi) */
-              q[opq + hi[0]] = q[opq + lo[0]];
-              q[opq + lo[0]] = t;
+              final byte t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
+              q[a0 + hi[0]] = q[a0 + lo[0]];
+              q[a0 + lo[0]] = t;
             }
             ac |= sb;
             if (sb != 0 && ub != 0) {

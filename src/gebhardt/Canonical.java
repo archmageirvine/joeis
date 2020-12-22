@@ -355,7 +355,7 @@ final class Canonical {
             final long drm = dr * (long) m;
             final long mask1 = (Utils.bit((r - j) * (long) m) - 1) << ((j + 1) * m);
             final long mask2 = (Utils.bit(drm) - 1) << ((j - dr + 1) * m);
-            bigP = (bigP & ~(mask1 | mask2)) | ((bigP & mask1) >>> (drm)) | ((bigP & mask2) << ((r - j) * m));
+            bigP = (bigP & ~(mask1 | mask2)) | ((bigP & mask1) >>> drm) | ((bigP & mask2) << ((r - j) * m));
             /* left-multiply q=globals.SI1[si1Size].p by the inverse of the applied permutation */
             final int o = n + k - 1 - j;
             final byte[] pqq = globals.mSi1[si1Size].mP;

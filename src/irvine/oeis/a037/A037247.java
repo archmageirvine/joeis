@@ -1,4 +1,4 @@
-package irvine.oeis.a007;
+package irvine.oeis.a037;
 
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -7,10 +7,10 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000055;
 
 /**
- * A007315 Reversion of g.f. (beginning with constant term) for number of trees with n nodes.
+ * A037247 Reversion of g.f. (beginning with x term) for number of trees with n nodes.
  * @author Sean A. Irvine
  */
-public class A007315 extends A000055 {
+public class A037247 extends A000055 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
@@ -18,6 +18,7 @@ public class A007315 extends A000055 {
   private int mN = 0;
   {
     mP.add(Z.ZERO);
+    super.next();
   }
 
   @Override

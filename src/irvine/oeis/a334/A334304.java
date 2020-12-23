@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A334304 allocated for Matthew Scroggs.
+ * A334304 Number of distinct acyclic orientations of the edges of an n-dimensional cube with complete graphs as facets.
  * @author Sean A. Irvine
  */
 public class A334304 extends DirectedGraph implements Sequence {

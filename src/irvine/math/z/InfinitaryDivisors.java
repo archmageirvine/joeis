@@ -25,4 +25,13 @@ public final class InfinitaryDivisors {
     }
     return sum.subtract(n);
   }
+
+  /**
+   * The number of infinitary divisors.
+   * @param n number to count
+   * @return number of infinitary divisors
+   */
+  public static Z infinitarySigma0(final Z n) {
+    return Z.valueOf(InfinitaryAliquotSequence.infinitaryDivisors(Cheetah.factor(n)).size());
+  }
 }

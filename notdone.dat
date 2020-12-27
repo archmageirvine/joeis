@@ -366,7 +366,6 @@ A005143 Sub-Eulerian graphs with n nodes, connected? [might be doable]
 A005144 Sub-Hamiltonian graphs with n nodes, connected?
 A005180 Orders of simple groups, depends A001034?
 A005192 Finite difference measurements, have paper
-A005202 Total number of fixed points in planted trees with n nodes
 A005215 Number of labeled interval graphs with n nodes, have paper, see also A005973, don't get V(x,y)
 A005216 Number of unlabeled identity interval graphs with n nodes, cf. A005215
 A005224 T is the first, fourth, eleventh, ... letter in this sentence, needs English ordinal numbers
@@ -1478,3 +1477,15 @@ A037219 Theta series for 10-dimensional 4-modular lattice Q10 with minimal norm 
 A037221 Number of near-rings (or nearrings) definable on cyclic group of order n
 A037233 Order of (4,n) cage, i.e., minimal order of 4-regular graph of girth n, hard
 A037234 a(0) = 0; for n > 0, a(n) = number of rings with n elements, simple dep. A027623
+A037266 Numbers n such that no extremal Groemer packing of n circles exists
+A037289 Number of commutative rings with n elements
+A037290 Number of self-converse rings (isomorphic to inverse) with n elements
+A037291 Number of rings with 1 containing n elements
+A037292 Number of nonassociative rings with n elements
+A037294 Number of (s,2) gates, insufficient detail
+A037295 Number of (s,3) gates, insufficient detail
+A037296 Number of (s,4) gates, insufficient detail
+A037297 Number of (s,5) gates, insufficient detail
+A037298 Number of (s,6) gates, insufficient detail
+A037302 Normalized volume of Birkhoff polytope of n X n doubly-stochastic square matrices. If the volume is v(n), then a(n) = ((n-1)^2)! * v(n) / n^(n-1)
+A037447 Number of conjugacy classes of subgroups of the Chevalley group A_n(2) (the group of nonsingular n X n matrices over GF(2))

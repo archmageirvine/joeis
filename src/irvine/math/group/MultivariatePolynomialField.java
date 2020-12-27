@@ -123,6 +123,16 @@ public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePo
     return p.scalarMultiply(n);
   }
 
+  /**
+   * Return the polynomial divided by the specified value.
+   * @param p polynomial
+   * @param n divisor
+   * @return polynomial
+   */
+  public MultivariatePolynomial<E> divide(final MultivariatePolynomial<E> p, final E n) {
+    return p.scalarDivide(n);
+  }
+
   @Override
   public String toString() {
     return mCoefficientField + "[xyz...]";

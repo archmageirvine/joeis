@@ -173,6 +173,15 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
     return res;
   }
 
+  private boolean hasZero(final int[] powers) {
+    for (final int p : powers) {
+      if (p == 0) {
+        return true;
+      }
+    }
+    return false;
+  }
+
   /**
    * Substitute powers of variables.
    * @param powers powers for each variable
@@ -181,19 +190,40 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
    */
   public MultivariatePolynomial<E> substitutePowers(final int[] powers, final int[] degreeLimits) {
     final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
-    for (final Map.Entry<Term, E> e : entrySet()) {
-      final Term term = e.getKey();
-      final int[] sterm = new int[term.mPowers.length];
-      boolean ok = true;
-      for (int k = 0; k < sterm.length; ++k) {
-        sterm[k] = term.mPowers[k] * powers[k];
-        if (sterm[k] > degreeLimits[k]) {
-          ok = false;
-          break;
+    if (hasZero(powers)) {
+      // Extra care is needed in this case because some terms can coalesce
+      for (final Map.Entry<Term, E> e : entrySet()) {
+        final Term term = e.getKey();
+        final int[] sterm = new int[term.mPowers.length];
+        boolean ok = true;
+        for (int k = 0; k < sterm.length; ++k) {
+          sterm[k] = term.mPowers[k] * powers[k];
+          if (sterm[k] > degreeLimits[k]) {
+            ok = false;
+            break;
+          }
+        }
+        if (ok) {
+          final Term t = new Term(sterm);
+          final E v = res.get(t);
+          res.put(t, v == null ? e.getValue() : mCoefficientField.add(v, e.getValue()));
         }
       }
-      if (ok) {
-        res.put(new Term(sterm), e.getValue());
+    } else {
+      for (final Map.Entry<Term, E> e : entrySet()) {
+        final Term term = e.getKey();
+        final int[] sterm = new int[term.mPowers.length];
+        boolean ok = true;
+        for (int k = 0; k < sterm.length; ++k) {
+          sterm[k] = term.mPowers[k] * powers[k];
+          if (sterm[k] > degreeLimits[k]) {
+            ok = false;
+            break;
+          }
+        }
+        if (ok) {
+          res.put(new Term(sterm), e.getValue());
+        }
       }
     }
     return res;
@@ -205,16 +235,9 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
    * @return substituted polynomial
    */
   public MultivariatePolynomial<E> substitutePowers(final int[] powers) {
-    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
-    for (final Map.Entry<Term, E> e : entrySet()) {
-      final Term term = e.getKey();
-      final int[] sterm = new int[term.mPowers.length];
-      for (int k = 0; k < sterm.length; ++k) {
-        sterm[k] = term.mPowers[k] * powers[k];
-      }
-      res.put(new Term(sterm), e.getValue());
-    }
-    return res;
+    final int[] limits = new int[powers.length];
+    Arrays.fill(limits, Integer.MAX_VALUE);
+    return substitutePowers(powers, limits);
   }
 
   /**
@@ -287,7 +310,7 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
   }
 
   /**
-   * Multiply this polynomial by an integer.
+   * Multiply this polynomial by a number.
    * @param n number to multiply by
    * @return product
    */
@@ -295,6 +318,19 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
     final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
     for (final Map.Entry<Term, E> f : entrySet()) {
       res.add(f.getKey(), mCoefficientField.multiply(f.getValue(), n));
+    }
+    return res;
+  }
+
+  /**
+   * Divide this polynomial by a number.
+   * @param n number to divide by
+   * @return product
+   */
+  public MultivariatePolynomial<E> scalarDivide(final E n) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
+    for (final Map.Entry<Term, E> f : entrySet()) {
+      res.add(f.getKey(), mCoefficientField.divide(f.getValue(), n));
     }
     return res;
   }

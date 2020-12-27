@@ -33,6 +33,4 @@ public class A000003 implements Sequence {
     mD -= 4;
     return Z.valueOf(classNumber(mD));
   }
-
 }
-

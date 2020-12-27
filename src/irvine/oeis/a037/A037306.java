@@ -1,0 +1,32 @@
+package irvine.oeis.a037;
+
+import irvine.factor.factor.Cheetah;
+import irvine.math.LongUtils;
+import irvine.math.z.Binomial;
+import irvine.math.z.Euler;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A037306.
+ * @author Sean A. Irvine
+ */
+public class A037306 implements Sequence {
+
+  private long mN = 0;
+  private long mM = 0;
+
+  @Override
+  public Z next() {
+    if (++mM > mN) {
+      ++mN;
+      mM = 1;
+    }
+    Z sum = Z.ZERO;
+    for (final Z d : Cheetah.factor(LongUtils.gcd(mN, mM)).divisors()) {
+      sum = sum.add(Euler.phi(d).multiply(Binomial.binomial(mN / d.longValue(), mM / d.longValue())));
+    }
+    return sum.divide(mN);
+  }
+}
+

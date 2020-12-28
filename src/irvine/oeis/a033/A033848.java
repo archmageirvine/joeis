@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033848 Numbers k whose prime factors are 2 and 11.
+ * A033848 Numbers whose prime factors are 2 and 11.
  * @author Sean A. Irvine
  */
 public class A033848 implements Sequence {

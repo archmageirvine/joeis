@@ -10,7 +10,7 @@ import irvine.oeis.HomePrimeSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A037299.
+ * A037299 Prime substrings of prime numbers in A037272.
  * @author Sean A. Irvine
  */
 public class A037299 extends A002808 {

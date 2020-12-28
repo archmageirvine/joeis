@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037285.
+ * A037285 Replace n with concatenation of its nontrivial odd divisors.
  * @author Sean A. Irvine
  */
 public class A037285 implements Sequence {

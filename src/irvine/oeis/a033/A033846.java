@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033846 Numbers k whose prime factors are 2 and 5.
+ * A033846 Numbers whose prime factors are 2 and 5.
  * @author Sean A. Irvine
  */
 public class A033846 implements Sequence {

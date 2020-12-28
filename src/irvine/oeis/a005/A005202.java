@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005202.
+ * A005202 Total number of fixed points in planted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005202 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037284.
+ * A037284 Replace n with concatenation of its odd divisors &gt;1.
  * @author Sean A. Irvine
  */
 public class A037284 implements Sequence {

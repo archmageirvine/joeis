@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037464.
+ * A037464 Bisection of A076605.
  * @author Sean A. Irvine
  */
 public class A037464 implements Sequence {

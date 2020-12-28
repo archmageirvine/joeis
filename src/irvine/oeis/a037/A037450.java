@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037449.
+ * A037450 Numbers which are one less than a perfect square that cannot otherwise be written as a power.
  * @author Sean A. Irvine
  */
 public class A037450 implements Sequence {

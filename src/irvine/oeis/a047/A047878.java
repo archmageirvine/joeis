@@ -4,7 +4,7 @@ package irvine.oeis.a047;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A047878 a(n)=least number of knight's moves from corner (0,0) to n-th diagonal of unbounded chessboard.
+ * A047878 a(n) is the least number of knight's moves from corner (0,0) to n-th diagonal of unbounded chessboard.
  * @author Georg Fischer
  */
 public class A047878 extends LinearRecurrence {

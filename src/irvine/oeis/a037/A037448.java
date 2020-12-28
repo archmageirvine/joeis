@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037448.
+ * A037448 a(n) = floor(cot(n)).
  * @author Sean A. Irvine
  */
 public class A037448 implements Sequence {

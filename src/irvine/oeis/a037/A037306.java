@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037306.
+ * A037306 Triangle T(n,k) read by rows: the number of compositions of n into k parts, modulo cyclic shifts.
  * @author Sean A. Irvine
  */
 public class A037306 implements Sequence {

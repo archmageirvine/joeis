@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037287.
+ * A037287 Replace 2n+1 with concatenation of its divisors &gt;1.
  * @author Sean A. Irvine
  */
 public class A037287 implements Sequence {

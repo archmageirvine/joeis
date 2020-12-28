@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A037478.
+ * A037478 Number of positive solutions to "numbers that are n times sum of their digits".
  * @author Sean A. Irvine
  */
 public class A037478 implements Sequence {

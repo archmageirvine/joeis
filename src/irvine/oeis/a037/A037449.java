@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037449.
+ * A037449 Discriminant of quadratic field Q(sqrt(n)).
  * @author Sean A. Irvine
  */
 public class A037449 implements Sequence {

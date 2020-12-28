@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A037458.
+ * A037458 a(1)=1; for n &gt; 1, a(n)=n-a(n-sqrtint(n)) where sqrtint(n) denotes floor(sqrt(n)).
  * @author Sean A. Irvine
  */
 public class A037458 extends MemorySequence {

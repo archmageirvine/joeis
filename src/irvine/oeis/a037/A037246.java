@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005202;
 
 /**
- * A005202.
+ * A037246 Total number of fixed points in free homeomorphically irreducible trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A037246 extends A005202 {

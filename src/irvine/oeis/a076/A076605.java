@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A076605.
+ * A076605 Largest prime divisor of n^2 - 1.
  * @author Sean A. Irvine
  */
 public class A076605 implements Sequence {

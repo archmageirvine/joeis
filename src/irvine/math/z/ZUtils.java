@@ -249,13 +249,14 @@ public final class ZUtils {
   /**
    * Sort the digits of a number.
    * @param n number
+   * @param base base to use
    * @return sorted number
    */
-  public static Z sortDigitsAscending(final Z n) {
+  public static Z sortDigitsAscending(final Z n, final int base) {
     if (n.isZero()) {
       return Z.ZERO;
     }
-    final int[] counts = digitCounts(n);
+    final int[] counts = digitCounts(n, base);
     int numDigits = 0;
     for (int k = 1; k < counts.length; ++k) {
       numDigits += counts[k];
@@ -264,7 +265,35 @@ public final class ZUtils {
     for (int k = 1, j = 0; k < counts.length; j += counts[k++]) {
       Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
     }
-    return new Z(new String(c));
+    return new Z(new String(c), base);
+  }
+
+  /**
+   * Sort the digits of a number.
+   * @param n number
+   * @return sorted number
+   */
+  public static Z sortDigitsAscending(final Z n) {
+    return sortDigitsAscending(n, 10);
+  }
+
+  /**
+   * Sort the digits of a number.
+   * @param n number
+   * @param base the base to use
+   * @return sorted number
+   */
+  public static Z sortDigitsDescending(final Z n, final int base) {
+    final int[] counts = digitCounts(n, base);
+    int numDigits = 0;
+    for (final int count : counts) {
+      numDigits += count;
+    }
+    final char[] c = new char[numDigits];
+    for (int k = counts.length - 1, j = 0; k >= 0; j += counts[k--]) {
+      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
+    }
+    return new Z(new String(c), base);
   }
 
   /**
@@ -273,16 +302,7 @@ public final class ZUtils {
    * @return sorted number
    */
   public static Z sortDigitsDescending(final Z n) {
-    final int[] counts = digitCounts(n);
-    int numDigits = 0;
-    for (final int count : counts) {
-      numDigits += count;
-    }
-    final char[] c = new char[numDigits];
-    for (int k = 9, j = 0; k >= 0; j += counts[k--]) {
-      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
-    }
-    return new Z(new String(c));
+    return sortDigitsDescending(n, 10);
   }
 
   /**

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A323189.
+ * A323189 Number of n-step point-symmetrical self-avoiding walks on the square lattice.
  * @author Sean A. Irvine
  */
 public class A323189 implements Sequence {

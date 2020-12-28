@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037282.
+ * A037282 Scan n from left to right once, erasing any primes.
  * @author Sean A. Irvine
  */
 public class A037282 implements Sequence {

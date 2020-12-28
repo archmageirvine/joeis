@@ -8,7 +8,7 @@ import irvine.oeis.a323.A323188;
 import irvine.oeis.a323.A323189;
 
 /**
- * A037245.
+ * A037245 Number of unrooted self-avoiding walks of n steps on square lattice.
  * @author Sean A. Irvine
  */
 public class A037245 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033847 Numbers n whose prime factors are 2 and 7.
+ * A033847 Numbers whose prime factors are 2 and 7.
  * @author Sean A. Irvine
  */
 public class A033847 implements Sequence {

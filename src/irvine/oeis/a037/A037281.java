@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037281.
+ * A037281 Number of iterations of transformation in A037280 needed to reach 1 or a prime, or -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A037281 implements Sequence {

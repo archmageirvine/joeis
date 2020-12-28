@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037800.
+ * A037800 Number of occurrences of 01 in the binary expansion of n.
  * @author Sean A. Irvine
  */
 public class A037800 implements Sequence {

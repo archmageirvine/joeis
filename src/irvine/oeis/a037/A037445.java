@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037445.
+ * A037445 Number of infinitary divisors (or i-divisors) of n.
  * @author Sean A. Irvine
  */
 public class A037445 implements Sequence {

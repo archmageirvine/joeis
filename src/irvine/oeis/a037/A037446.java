@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037446.
+ * A037446 Floor of (n/e)^(n/e).
  * @author Sean A. Irvine
  */
 public class A037446 implements Sequence {

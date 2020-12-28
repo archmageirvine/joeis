@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A323188.
+ * A323188 Number of n-step mirror-symmetrical self-avoiding walks on the square lattice.
  * @author Sean A. Irvine
  */
 public class A323188 implements Sequence {

@@ -1490,3 +1490,4 @@ A037298 Number of (s,6) gates, insufficient detail
 A037302 Normalized volume of Birkhoff polytope of n X n doubly-stochastic square matrices. If the volume is v(n), then a(n) = ((n-1)^2)! * v(n) / n^(n-1)
 A037447 Number of conjugacy classes of subgroups of the Chevalley group A_n(2) (the group of nonsingular n X n matrices over GF(2))
 A037843 Number of matrices with n columns whose rows do not cover each other; ordered antichains of subsets of an n-set
+A037984 Maximum number of trapezoids that can be formed by n lines in plane

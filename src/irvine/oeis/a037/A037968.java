@@ -4,18 +4,17 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037914 a(n)=least base b&gt;=2 such that f(b,n)&gt;=f(b',n) for all b'&gt;=2, where f(b,n)=number of distinct base b digits of n.
+ * A037968 Greatest number of distinct digits of n in any base b&gt;=2.
  * @author Sean A. Irvine
  */
-public class A037914 implements Sequence {
+public class A037968 implements Sequence {
 
   private int mN = 0;
 
   @Override
   public Z next() {
     ++mN;
-    int best = 2;
-    int bestCount = 0;
+    int bestCount = 1;
     for (int base = 2; base <= mN; ++base) {
       Z syndrome = Z.ZERO;
       int m = mN;
@@ -25,9 +24,8 @@ public class A037914 implements Sequence {
       }
       if (syndrome.bitCount() > bestCount) {
         bestCount = syndrome.bitCount();
-        best = base;
       }
     }
-    return Z.valueOf(best);
+    return Z.valueOf(bestCount);
   }
 }

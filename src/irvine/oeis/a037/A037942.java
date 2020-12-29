@@ -13,7 +13,7 @@ public class A037942 implements Sequence {
   private long mN = 0;
   private long mCount = 0;
 
-  private long count(long n) {
+  private long count(final long n) {
     long cnt = 0;
     for (long x = 0; x * x <= n; ++x) {
       final long y2 = n - x * x;

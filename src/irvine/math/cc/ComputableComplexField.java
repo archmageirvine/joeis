@@ -116,11 +116,7 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
     return new CC(z.re().negate(), z.im().negate());
   }
 
-  /**
-   * Return the conjugate of the given number.
-   * @param z complex number
-   * @return conjugate
-   */
+  @Override
   public CC conjugate(final CC z) {
     return new CC(z.re(), z.im().negate());
   }

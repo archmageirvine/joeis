@@ -1,14 +1,14 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.InverseEulerTransformSequence;
+import irvine.oeis.InverseEulerTransform;
 import irvine.oeis.a006.A006966;
 
 /**
  * A030268 Number of nonisomorphic connected partial lattices.
  * @author Sean A. Irvine
  */
-public class A030268 extends InverseEulerTransformSequence {
+public class A030268 extends InverseEulerTransform {
 
   /** Construct the sequence. */
   public A030268() {

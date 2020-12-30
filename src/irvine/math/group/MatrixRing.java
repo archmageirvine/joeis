@@ -4,6 +4,7 @@ import irvine.math.api.Matrix;
 import irvine.math.api.Operation;
 import irvine.math.api.Ring;
 import irvine.math.api.Set;
+import irvine.math.matrix.ConjugateMatrix;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.matrix.IdentityMatrix;
 import irvine.math.matrix.MinorMatrix;
@@ -290,12 +291,12 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
   }
 
   /**
-   * The adjoint matrix of the given matrix.
+   * The adjugate matrix of the given matrix.
    * @param m matrix
-   * @return the adjoint matrix
+   * @return the adjugate matrix
    */
-  public Matrix<E> adj(final Matrix<E> m) {
-    // This could presumeably be made faster in special cases
+  public Matrix<E> adjugate(final Matrix<E> m) {
+    // This could presumably be made faster in special cases
     final Matrix<E> adj = new DefaultMatrix<>(m.cols(), m.rows(), mZero);
     for (long row = 0; row < m.rows(); ++row) {
       for (long col = 0; col < m.cols(); ++col) {
@@ -345,5 +346,28 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
   @Override
   public Operation<Matrix<E>> multiplicativeOperation() {
     return new RingBackedOperation<>(this);
+  }
+
+  @Override
+  public Matrix<E> conjugate(final Matrix<E> matrix) {
+    return new ConjugateMatrix<>(mElementRing, matrix);
+  }
+
+  /**
+   * Construct the adjoint of a matrix.
+   * @param matrix the matrix
+   * @return the adjoint matrix
+   */
+  public Matrix<E> adjoint(final Matrix<E> matrix) {
+    return conjugate(transpose(matrix));
+  }
+
+  /**
+   * Test if the matrix is unitary.
+   * @param matrix matrix to test
+   * @return true iff the matrix is unitary
+   */
+  public boolean isUnitary(final Matrix<E> matrix) {
+    return one().equals(multiply(adjoint(matrix), matrix));
   }
 }

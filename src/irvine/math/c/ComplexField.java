@@ -132,11 +132,7 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
     return new C(-z.re(), -z.im());
   }
 
-  /**
-   * Return the conjugate of the given number.
-   * @param z complex number
-   * @return conjugate
-   */
+  @Override
   public C conjugate(final C z) {
     return new C(z.re(), -z.im());
   }

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.InverseEulerTransformSequence;
+import irvine.oeis.InverseEulerTransform;
 
 /**
  * A004108 Number of n-node unlabeled connected graphs without endpoints.
  * @author Sean A. Irvine
  */
-public class A004108 extends InverseEulerTransformSequence {
+public class A004108 extends InverseEulerTransform {
 
   /** Construct the sequence. */
   public A004108() {

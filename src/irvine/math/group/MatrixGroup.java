@@ -277,4 +277,13 @@ public class MatrixGroup<E> extends AbstractGroup<Matrix<E>> {
     }
     return randomMatrix;
   }
+
+  /**
+   * Construct the transpose of a matrix.
+   * @param matrix the matrix
+   * @return transpose
+   */
+  public Matrix<E> transpose(final Matrix<E> matrix) {
+    return matrix.transpose();
+  }
 }

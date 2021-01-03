@@ -38,7 +38,7 @@ final class Canonical {
 
   /*
    * Whether the antichain data given by antichain may yield a canonical antichain list.  Wrapper which dispatches
-   * the work to antichaindata_isCanonical_p1 or antichaindata_isCanonical_p2.
+   * the work to isCanonicalP1 or isCanonicalP2.
    *
    * An antichain list is canonical if and only if, as a multiset, it is minimal in its orbit under the
    * stabiliser of the (full) old lattice.  As this stabiliser acts on each level, a violation of minimality
@@ -1278,7 +1278,6 @@ final class Canonical {
     }
     return true;
   }
-
 
 //  /*
 //   * Whether the antichain data given by AD may yield a canonical antichain list.  Special case of a list

@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A033178 implements Sequence {
 
   private long mCount = 0;
-  private int mN = 1;
+  protected int mN = 1;
 
   private Z prod(final int[] v) {
     Z prod = Z.ONE;

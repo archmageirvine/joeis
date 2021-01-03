@@ -11,7 +11,7 @@ import irvine.oeis.a001.A001329;
 public class A030257 extends A001329 {
 
   @Override
-  protected Z t(final int[] s) {
+  protected Z fix(final int[] s) {
     Z prod = Z.ONE;
     for (int i = 1; i < s.length; ++i) {
       for (int j = 1; j <= i; ++j) {

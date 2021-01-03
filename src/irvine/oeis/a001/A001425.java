@@ -32,7 +32,7 @@ public class A001425 implements Sequence {
     return sum;
   }
 
-  private Z f(final int i, final int j, final int[] s) {
+  protected Z f(final int i, final int j, final int[] s) {
     if (i == j) {
       if ((i & 1) == 1) {
         return sum(i, s).pow((i * s[i] * s[i] + s[i]) / 2);
@@ -46,7 +46,7 @@ public class A001425 implements Sequence {
     }
   }
 
-  private Z fix(final int[] s) {
+  protected Z fix(final int[] s) {
     Z prod = Z.ONE;
     for (int j = 1; j < s.length; ++j) {
       for (int i = j; i < s.length; ++i) {

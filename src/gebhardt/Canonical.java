@@ -34,7 +34,7 @@ final class Canonical {
   private Canonical() {
   }
 
-  private static class DualLong implements Comparable<DualLong> {
+  private static final class DualLong implements Comparable<DualLong> {
 
     final long[] mL;
 
@@ -182,28 +182,27 @@ final class Canonical {
   }
 
   /*
-   * Sort the packed antichain list L containing k antichains of size m in ascending order, with L[0] containing
-   * k0 antichains and L[1] containing k-k0 antichains, subject to the permitted swaps of adjacent antichains
-   * indicated by bl.  The permutation sorting L is also applied to p[offset]..p[offset+k-1].  The arrays M0 and M1
+   * Sort the packed antichain list l containing k antichains of size m in ascending order, with l[0] containing
+   * k0 antichains and l[1] containing k-k0 antichains, subject to the permitted swaps of adjacent antichains
+   * indicated by bl.  The permutation sorting l is also applied to p[offset]..p[offset+k-1].  The arrays M0 and m1
    * should contain ((1<<m)-1)<<((k0-1)*m),..,((1<<m)-1) and ((1<<m)-1)<<((k-k0-1)*m),..,((1<<m)-1) respectively.
    */
-  static void sortP2(int k, int m, int k0, int offsetM, long[] M1, int bl, long[] L, byte[] p, int offset) {
-    byte tp;
+  static void sortP2(final int k, final int m, final int k0, final int offsetM, final long[] m1, final int bl, final long[] l, final byte[] p, final int offset) {
     if (bl == 0) {
       return;
     }
-    int lo = Integer.numberOfTrailingZeros(bl);
+    final int lo = Integer.numberOfTrailingZeros(bl);
     int n = 32 - Integer.numberOfLeadingZeros(bl);
     long t1, t2;
     do {
       int newn = 0;
       if (lo < k0) {
-        int n0 = Math.min(k0, n);
-        for (int i = lo; i < n0; i++) {
-          if ((bl & Utils.bit(i)) != 0 && (t1 = ((L[0] & M1[offsetM + i - 1]) >>> m)) > (t2 = (L[0] & M1[offsetM + i]))) {
+        final int n0 = Math.min(k0, n);
+        for (int i = lo; i < n0; ++i) {
+          if ((bl & Utils.bit(i)) != 0 && (t1 = (l[0] & m1[offsetM + i - 1]) >>> m) > (t2 = l[0] & m1[offsetM + i])) {
             t1 ^= t2;
-            L[0] ^= ((t1 << m) | t1);
-            tp = p[offset + i - 1];
+            l[0] ^= (t1 << m) | t1;
+            final byte tp = p[offset + i - 1];
             p[offset + i - 1] = p[offset + i];
             p[offset + i] = tp;
             newn = i;
@@ -211,24 +210,23 @@ final class Canonical {
         }
       }
       if (lo <= k0 && k0 < n) {
-        int shift;
-        shift = (k - k0 - 1) * m;
-        if ((bl & Utils.bit(k0)) != 0 && (t1 = ((L[0] & M1[offsetM + k0 - 1]) << shift)) > (t2 = (L[1] & M1[0]))) {
+        final int shift = (k - k0 - 1) * m;
+        if ((bl & Utils.bit(k0)) != 0 && (t1 = (l[0] & m1[offsetM + k0 - 1]) << shift) > (t2 = l[1] & m1[0])) {
           t1 ^= t2;
-          L[0] ^= t1 >>> shift;
-          L[1] ^= t1;
-          tp = p[offset + k0 - 1];
+          l[0] ^= t1 >>> shift;
+          l[1] ^= t1;
+          final byte tp = p[offset + k0 - 1];
           p[offset + k0 - 1] = p[offset + k0];
           p[offset + k0] = tp;
           newn = k0;
         }
       }
       if (k0 + 1 < n) {
-        for (int i = lo > k0 ? lo : k0 + 1; i < n; i++) {
-          if ((bl & Utils.bit(i)) != 0 && (t1 = ((L[1] & M1[i - k0 - 1]) >>> m)) > (t2 = (L[1] & M1[i - k0]))) {
+        for (int i = lo > k0 ? lo : k0 + 1; i < n; ++i) {
+          if ((bl & Utils.bit(i)) != 0 && (t1 = (l[1] & m1[i - k0 - 1]) >>> m) > (t2 = l[1] & m1[i - k0])) {
             t1 ^= t2;
-            L[1] ^= ((t1 << m) | t1);
-            tp = p[offset + i - 1];
+            l[1] ^= (t1 << m) | t1;
+            final byte tp = p[offset + i - 1];
             p[offset + i - 1] = p[offset + i];
             p[offset + i] = tp;
             newn = i;
@@ -238,7 +236,6 @@ final class Canonical {
       n = newn;
     } while (n != 0);
   }
-
 
   /*
    * Minimise the packed antichain list l containing one antichain on the elements a0..(a0+m-1) under the
@@ -410,26 +407,23 @@ final class Canonical {
       for (int i = 0; i < si0Size; ++i) { /* loop over candidates */
         next = false;
         for (int j = r; !next; j -= dj) { /* j: position of the antichain under consideration */
-          int[] hi = new int[1];
-          int[] lo = new int[1];
-          long[] bigP = new long[2];
-          byte[] q = Permutation.create();
+          final int[] hi = new int[1];
+          final int[] lo = new int[1];
+          final byte[] q = Permutation.create();
           if (si1Size == globals.mSiSpace) {
             globals.enlargenSiSpace();
           }
           Permutation.copy(n + k, globals.mSi0[i].mP, q);
           s = globals.mSi0[i].mS;
-          bigP[0] = globals.mSi0[i].mRep[0];
-          bigP[1] = globals.mSi0[i].mRep[1];
+          final long[] bigP = {globals.mSi0[i].mRep[0], globals.mSi0[i].mRep[1]};
           a = antichain(bigP, j, m, k1, mask);   /* j: antichain under consideration */
           final int[] b = {(s >>> 1) ^ s};
           aTemp = a & ~(s | b[0]);  /* the elements in blocks of size 1 */
           while (a != aTemp && Utils.extractMSB32(b, hi)) {  /* get an orbit lo..hi ... */
-            int pmask, sb, ub;
             Utils.extractMSB32(b, lo);
-            pmask = (int) (Utils.bit(hi[0] + 1) - Utils.bit(lo[0]));
-            sb = a & pmask;
-            ub = ~a & pmask;
+            final int pmask = (int) (Utils.bit(hi[0] + 1) - Utils.bit(lo[0]));
+            int sb = a & pmask;
+            int ub = ~a & pmask;
             while (Utils.getMSB32(sb, hi) && Utils.getLSB32(ub, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
               sb ^= Utils.bit(hi[0]) | Utils.bit(lo[0]);
               ub ^= Utils.bit(hi[0]) | Utils.bit(lo[0]);
@@ -469,14 +463,14 @@ final class Canonical {
            *  - move j..(j-dr+1) by r-j positions to the left
            *  - move r..(j+1) by dr positions to the right
            */
-            byte[] pqq;
+            final byte[] pqq;
             if (j < k1) {
               if (r < k1) {
                 final long ml11 = (Utils.bit(dr * m) - 1) << ((j - dr + 1) * m);
                 final long mr11 = (Utils.bit((r - j) * m) - 1) << ((j + 1) * m);
                 bigP[1] = (bigP[1] & ~(ml11 | mr11)) | ((bigP[1] & ml11) << ((r - j) * m)) | ((bigP[1] & mr11) >>> (dr * m));
               } else {
-                long mr00, mr01, ml10, ml11;
+                final long mr00, mr01, ml10, ml11;
                 if (r - dr >= k1) {
                   mr00 = (Utils.bit((r - k1 - dr + 1) * m) - 1) << (dr * m);
                   mr01 = Utils.bit(dr * m) - 1;
@@ -508,10 +502,10 @@ final class Canonical {
                 final long ml00 = Utils.bit((j - k1 + 1) * m) - 1;
                 final long ml10, ml11;
                 if (r - dr + 1 - k1 >= 0) {
-                  ml10 = ((Utils.bit((k1 - 1 - j + dr) * m) - 1) << ((j - dr + 1) * m));
+                  ml10 = (Utils.bit((k1 - 1 - j + dr) * m) - 1) << ((j - dr + 1) * m);
                   ml11 = 0L;
                 } else {
-                  ml10 = ((Utils.bit((r - j) * m) - 1) << (k1 - r + j) * m);
+                  ml10 = (Utils.bit((r - j) * m) - 1) << (k1 - r + j) * m;
                   ml11 = ((Utils.bit(k1 - r + dr - 1) * m) - 1) << ((j - dr + 1) * m);
                 }
                 bigT = (bigP[0] & ~(mr00 | mr01 | ml00))
@@ -535,7 +529,7 @@ final class Canonical {
             for (int t = dr; t-- != 0; ) {
               pqq[pqqo + t] = q[pqo + t];
             }
-            pqo -= (r - j);  /* pq = q + n+k-1-r; */
+            pqo -= r - j;  /* pq = q + n+k-1-r; */
             pqqo += dr;   /* pqq = globals.mSi1[si1Size].p + n+k-1-r+dr; */
             for (int t = r - j; t-- != 0; ) {
               pqq[pqqo + t] = q[pqo + t];
@@ -790,7 +784,7 @@ final class Canonical {
    * permutation fixes the multiset but permutes its elements, the points of the lowest level of the new
    * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
    */
-  static void processElement_p2(final Antichain antichain, final PermGrp g, final PermGrpC s, final int pos, final int gen, final byte[] p) {
+  static void processElementP2(final Antichain antichain, final PermGrp g, final PermGrpC s, final int pos, final int gen, final byte[] p) {
     final byte[] h = Permutation.create();
     final long[] a = antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mData;
     final int aPos = antichain.mGlobals.mOrbitSize;
@@ -1296,8 +1290,7 @@ final class Canonical {
    * identical antichains, i.e., all possible permutations of points of the lowest level of the new lattice
    * that have identical covering sets.  The latter may be handled by "implicit" stabilisers.)
    */
-  static boolean isCanonicalP2(final Antichain antichain, int bits) {
-    int pos;
+  static boolean isCanonicalP2(final Antichain antichain, final int bits) {
     final long[] m1 = new long[Utils.MAXN - 2];
 
     if (VERBOSE) {
@@ -1325,10 +1318,8 @@ final class Canonical {
       if (antichain.mGlobals.mOrbitElements[0].mData[0] != 0 || antichain.mGlobals.mOrbitElements[0].mData[1] != 0) {
         if (antichain.mStabilisers[antichain.mCl + 1].mSi != 0) {
           /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-          byte[] p = Permutation.create();
-          long[] l = new long[2];
-          l[0] = antichain.mGlobals.mOrbitElements[0].mData[0];
-          l[1] = antichain.mGlobals.mOrbitElements[0].mData[1];
+          final byte[] p = Permutation.create();
+          final long[] l = {antichain.mGlobals.mOrbitElements[0].mData[0], antichain.mGlobals.mOrbitElements[0].mData[1]};
           Permutation.init(antichain.mLattice.mN + antichain.mK, p);
           long pmask;
           for (pmask = 1, i = apf; i-- != 0; ) {
@@ -1337,25 +1328,24 @@ final class Canonical {
           applySIp2(antichain.mLattice.mN, antichain.mK, apf, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, l, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p);
           if (cmpP2(l, antichain.mGlobals.mOrbitElements[0].mData) != 0) {
             /* determine the position up to which we can backtrack */
-            int m, pi;
-            long D;
+            int pi;
             boolean found;
-            m = i = 0;
-            D = l[0] ^ antichain.mGlobals.mOrbitElements[0].mData[0];
+            int m = i = 0;
+            long d = l[0] ^ antichain.mGlobals.mOrbitElements[0].mData[0];
             do {
               pi = p[antichain.mLattice.mN + i] - antichain.mLattice.mN;
               if (pi > m) {
                 m = pi;
               }
-            } while (!((found = (D & m1[offset + i]) != 0)) && (++i < antichain.mK - apf));
+            } while (!((found = (d & m1[offset + i]) != 0)) && (++i < antichain.mK - apf));
             if (!found) {
-              D = l[1] ^ antichain.mGlobals.mOrbitElements[0].mData[1];
+              d = l[1] ^ antichain.mGlobals.mOrbitElements[0].mData[1];
               do {
                 pi = p[antichain.mLattice.mN + i] - antichain.mLattice.mN;
                 if (pi > m) {
                   m = pi;
                 }
-              } while ((D & m1[(i++) - (antichain.mK - apf)]) == 0);
+              } while ((d & m1[i++ - (antichain.mK - apf)]) == 0);
             }
             antichain.mFpos += m - antichain.mCp;
             antichain.mCp = m;
@@ -1384,7 +1374,7 @@ final class Canonical {
               Permutation.resize(g.mN, s.mG.mN, g.mInvPerm[gen]);
             }
           }
-          for (pos = 0; pos < antichain.mGlobals.mOrbitSize; ++pos) {
+          for (int pos = 0; pos < antichain.mGlobals.mOrbitSize; ++pos) {
             for (int gen = 0; gen < g.mNgens; gen++) {
               final long[] a = new long[2];
               if ((g.mInvol & Utils.bit(gen)) != 0 && antichain.mGlobals.mOrbitElements[pos].mGen == gen) {
@@ -1434,16 +1424,14 @@ final class Canonical {
               /* ...otherwise, do the necessary housekeeping */
               antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mData[0] = a[0];
               antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mData[1] = a[1];
-              processElement_p2(antichain, g, s, pos, gen, p);
+              processElementP2(antichain, g, s, pos, gen, p);
             }
           }
           s.compactGenerators();
         } else {
           /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-          byte[] p = Permutation.create();
-          long[] l = new long[2];
-          l[0] = antichain.mGlobals.mOrbitElements[0].mData[0];
-          l[1] = antichain.mGlobals.mOrbitElements[0].mData[1];
+          final byte[] p = Permutation.create();
+          final long[] l = {antichain.mGlobals.mOrbitElements[0].mData[0], antichain.mGlobals.mOrbitElements[0].mData[1]};
           Permutation.init(antichain.mLattice.mN + antichain.mK, p);
 
           final PermGrpC s = antichain.ensureStabiliser(antichain.mCl);
@@ -1462,7 +1450,7 @@ final class Canonical {
               Permutation.resize(g.mN, s.mG.mN, g.mInvPerm[gen]);
             }
           }
-          for (pos = 0; pos < antichain.mGlobals.mOrbitSize; ++pos) {
+          for (int pos = 0; pos < antichain.mGlobals.mOrbitSize; ++pos) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
               final long[] a = new long[2];
               if ((g.mInvol & Utils.bit(gen)) != 0 && antichain.mGlobals.mOrbitElements[pos].mGen == gen) {
@@ -1483,25 +1471,24 @@ final class Canonical {
               /* ...we're done if the result is smaller than the original element */
               if (cmpP2(l, a) > 0) {
                 /* determine the position up to which we can backtrack */
-                int m, pi;
-                long D;
+                int pi;
                 boolean found;
-                m = i = 0;
-                D = l[0] ^ a[0];
+                int m = i = 0;
+                long d = l[0] ^ a[0];
                 do {
                   pi = antichain.mGlobals.mOrbitElements[pos].mToRoot[g.mInvPerm[gen][p[antichain.mLattice.mN + i]]] - antichain.mLattice.mN;
                   if (pi > m) {
                     m = pi;
                   }
-                } while (!((found = (D & m1[offset + i]) != 0)) && (++i < antichain.mK - apf));
+                } while (!((found = (d & m1[offset + i]) != 0)) && (++i < antichain.mK - apf));
                 if (!found) {
-                  D = l[1] ^ a[1];
+                  d = l[1] ^ a[1];
                   do {
                     pi = antichain.mGlobals.mOrbitElements[pos].mToRoot[g.mInvPerm[gen][p[antichain.mLattice.mN + i]]] - antichain.mLattice.mN;
                     if (pi > m) {
                       m = pi;
                     }
-                  } while ((D & m1[(i++) - (antichain.mK - apf)]) == 0);
+                  } while ((d & m1[(i++) - (antichain.mK - apf)]) == 0);
                 }
                 antichain.mFpos += m - antichain.mCp;
                 antichain.mCp = m;
@@ -1513,7 +1500,7 @@ final class Canonical {
               /* ...otherwise, do the necessary housekeeping */
               antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mData[0] = a[0];
               antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mData[1] = a[1];
-              processElement_p2(antichain, g, s, pos, gen, p);
+              processElementP2(antichain, g, s, pos, gen, p);
             }
           }
           s.compactGenerators();

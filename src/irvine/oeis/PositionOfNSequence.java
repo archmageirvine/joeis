@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 public class PositionOfNSequence implements Sequence {
 
   private final Sequence mS;
-  private final TreeMap<Long, Long> mMap = new TreeMap<>();
+  protected final TreeMap<Long, Long> mMap = new TreeMap<>();
   protected long mN;
   private long mM;
 

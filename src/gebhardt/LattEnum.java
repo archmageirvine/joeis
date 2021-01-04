@@ -118,8 +118,15 @@ public abstract class LattEnum {
       mGlobals = globals;
     }
 
-    /** The lattices. */
-    public List<Lattice> mLattices = new ArrayList<>();
+    /**
+     * Get the lattices.
+     * @return list of lattices
+     */
+    public List<Lattice> getLattices() {
+      return mLattices;
+    }
+
+    List<Lattice> mLattices = new ArrayList<>();
 
     @Override
     protected void reg(final Lattice l) {

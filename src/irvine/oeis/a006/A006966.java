@@ -91,7 +91,7 @@ public class A006966 implements Sequence {
       final LattEnum.LattAccumulate accumulate = new LattEnum.LattAccumulate(Lattice.init2(), SMALL, 3, new Globals());
       accumulate.doEnumeration();
       //System.out.println("Total seed lattices: " + accumulate.mLattices.size());
-      final LattEnum et = getEnum(accumulate.mLattices.get(mLatticeIndex), SMALL + 1);
+      final LattEnum et = getEnum(accumulate.getLattices().get(mLatticeIndex), SMALL + 1);
       et.doEnumeration();
       return et.getCount();
     }
@@ -104,7 +104,7 @@ public class A006966 implements Sequence {
       final ExecutorService exec = Executors.newFixedThreadPool(THREADS);
       final ArrayList<Future<Z>> futures = new ArrayList<>();
       try {
-        for (final Lattice lattice : accumulate.mLattices) {
+        for (final Lattice lattice : accumulate.getLattices()) {
           futures.add(exec.submit(() -> {
             final LattEnum et = getEnum(lattice, SMALL + 1);
             et.doEnumeration();

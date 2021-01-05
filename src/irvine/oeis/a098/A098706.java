@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098706 a(n) = 2*A076218(n); alternatively, a(0)=0, a(1)=2; for n&gt;1, a(n) = 2*A001653(n-2) *A001653(n-1).
+ * A098706 a(n) = 2*A076218(n).
  * @author Georg Fischer
  */
 public class A098706 extends GeneratingFunctionSequence {

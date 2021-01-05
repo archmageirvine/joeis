@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A229381 The Simpsons' perfect number, Mersenne prime, and narcissistic number.
+ * A229381 The Simpsons's perfect number, Mersenne prime, and narcissistic number.
  * @author Georg Fischer
  */
 public class A229381 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A038046.
+ * A038046 Shifts left under transform T where Ta is (identity) DCONV a.
  * @author Sean A. Irvine
  */
 public class A038046 extends MemorySequence {

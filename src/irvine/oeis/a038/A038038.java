@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038038.
+ * A038038 Number of labeled dyslexic rooted compound windmills with n nodes.
  * @author Sean A. Irvine
  */
 public class A038038 implements Sequence {

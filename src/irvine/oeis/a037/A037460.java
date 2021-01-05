@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037460 a(n)=Sum{d(i)*6^i: i=0,1,...,m}, where Sum{d(i)*4^i: i=0,1,...,m} is the base 4 representation of n.
+ * A037460 a(n) = Sum{d(i)*6^i: i=0,1,...,m}, where Sum{d(i)*4^i: i=0,1,...,m} is the base 4 representation of n.
  * @author Georg Fischer
  */
 public class A037460 extends A037454 {

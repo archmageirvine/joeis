@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087940 a(n)=sum(k=0,n,binomial(n+(-1)^k,k)).
+ * A087940 a(n) = Sum_{k=0..n} binomial(n+(-1)^k, k).
  * @author Georg Fischer
  */
 public class A087940 extends LinearRecurrence {

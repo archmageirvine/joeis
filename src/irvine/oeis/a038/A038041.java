@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038041.
+ * A038041 Number of ways to partition an n-set into subsets of equal size.
  * @author Sean A. Irvine
  */
 public class A038041 implements Sequence {

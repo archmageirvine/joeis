@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038042.
+ * A038042 Number of ways to partition a 2-colored labeled set into identical subsets.
  * @author Sean A. Irvine
  */
 public class A038042 implements Sequence {

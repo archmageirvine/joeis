@@ -5,7 +5,7 @@ package irvine.oeis.a207;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A207676 Nonlinearities of 3-variable boolean functions ordered lexicographically.
+ * A207676 Nonlinearities of 3-variable Boolean functions ordered lexicographically.
  * @author Georg Fischer
  */
 public class A207676 extends FiniteSequence {

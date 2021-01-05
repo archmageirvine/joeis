@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181914 Number of And/Or trees with n internal nodes that compute the boolean value True.
+ * A181914 Number of And/Or trees with n internal nodes that compute the Boolean value True.
  * @author Georg Fischer
  */
 public class A181914 extends HolonomicRecurrence {

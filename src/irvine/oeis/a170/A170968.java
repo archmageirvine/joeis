@@ -3,7 +3,7 @@ package irvine.oeis.a170;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A170968 Expansion of Prod((1+x^(4*i+1)),i=0..m-1) for m = 5.
+ * A170968 Expansion of Product_{i=0..m-1} (1 + x^(4*i+1)) for m = 5.
  * @author Georg Fischer
  */
 public class A170968 extends FiniteSequence {

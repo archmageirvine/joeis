@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038039.
+ * A038039 a(n) = Sum_{d|n} (2^d*3^(n/d)).
  * @author Sean A. Irvine
  */
 public class A038039 implements Sequence {

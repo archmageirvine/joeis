@@ -6,7 +6,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.PositionOfNSequence;
 
 /**
- * A038028.
+ * A038028 Position reached by frog in A038027 or 0 if none. A038026(A038027(n)).
  * @author Sean A. Irvine
  */
 public class A038028 extends PositionOfNSequence {

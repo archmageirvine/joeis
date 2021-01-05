@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A120563 Prime numbers of the form prod_{k=1,...,n} prime(k)^k + 1.
+ * A120563 Prime numbers of the form Product_{k=1..m} prime(k)^k + 1.
  *
  * @author Georg Fischer
  */

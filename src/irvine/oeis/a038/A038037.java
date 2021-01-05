@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038037.
+ * A038037 Number of labeled rooted compound windmills (mobiles) with n nodes.
  * @author Sean A. Irvine
  */
 public class A038037 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037914 a(n)=least base b&gt;=2 such that f(b,n)&gt;=f(b',n) for all b'&gt;=2, where f(b,n)=number of distinct base b digits of n.
+ * A037914 a(n) is the least base b&gt;=2 such that the number of distinct digits in the base b representation of n is maximized.
  * @author Sean A. Irvine
  */
 public class A037914 implements Sequence {

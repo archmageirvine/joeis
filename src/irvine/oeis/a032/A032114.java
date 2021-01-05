@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000027;
 
 /**
- * A032114 "BIJ" (reversible, indistinct, labeled) transform of 1,2,3,4...
+ * A032114 "BIJ" (reversible, indistinct, labeled) transform of 1,2,3,4,...
  * @author Sean A. Irvine
  */
 public class A032114 extends A000027 {

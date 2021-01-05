@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A080332 G.f.: Prod_{n&gt;0} (1 - x^n)^3 * (1 - x^(2*n - 1))^2 = Sum_{n in Z} (6*n + 1) * x^(n*(3*n + 1)/2).
+ * A080332 G.f.: Product_{n&gt;0} (1 - x^n)^3 * (1 - x^(2*n - 1))^2 = Sum_{n in Z} (6*n + 1) * x^(n*(3*n + 1)/2).
  * @author Georg Fischer
  */
 public class A080332 extends EulerTransform {

@@ -5,14 +5,14 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.WeighTransformSequence;
 
 /**
- * A038083 Number of n-node rooted identity trees of height at most 4.
+ * A038084 Number of n-node rooted identity trees of height at most 5.
  * @author Sean A. Irvine
  */
-public class A038083 extends WeighTransformSequence {
+public class A038084 extends WeighTransformSequence {
 
   /** Construct the sequence. */
-  public A038083() {
-    super(new PrependSequence(new A038082(), 1));
+  public A038084() {
+    super(new PrependSequence(new A038083(), 1));
   }
 
   @Override

@@ -22,6 +22,13 @@ public class WeighTransformSequence extends MemoryFunction2<Integer, Z> implemen
     mH = MemorySequence.cachedSequence(seq);
   }
 
+  private Z h(final int m) {
+    // Treat values beyond end of a finite sequence as 0
+    // (necessary for some sequences such A038084)
+    final Z t = mH.a(m);
+    return t == null ? Z.ZERO : t;
+  }
+
   @Override
   protected Z compute(final Integer n, final Integer m) {
     if (n == 0) {
@@ -32,7 +39,7 @@ public class WeighTransformSequence extends MemoryFunction2<Integer, Z> implemen
     }
     Z sum = Z.ZERO;
     for (int j = 0; j <= n / m; ++j) {
-      sum = sum.add(Binomial.binomial(mH.a(m), Z.valueOf(j)).multiply(get(n - m * j, m - 1)));
+      sum = sum.add(Binomial.binomial(h(m), Z.valueOf(j)).multiply(get(n - m * j, m - 1)));
     }
     return sum;
   }

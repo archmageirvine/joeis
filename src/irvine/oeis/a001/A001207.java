@@ -1,24 +1,23 @@
 package irvine.oeis.a001;
 
-import java.util.Arrays;
-import java.util.List;
+import irvine.math.lattice.Hunter;
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelHunter;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A001207 Number of fixed hexagonal polyominoes with n cells.
  * @author Sean A. Irvine
  */
-public class A001207 extends A001931 {
+public class A001207 implements Sequence {
 
-  // See cubic coordinates described at
-  // http://www.redblobgames.com/grids/hexagons
+  private final ParallelHunter mHunter = new ParallelHunter(6, () -> new Hunter(Lattices.HEXAGONAL, true));
+
+  private int mN = 0;
 
   @Override
-  protected List<Point> neighborhoods(final Point p) {
-    return Arrays.asList(new Point(p.left() + 1, p.mid() - 1, p.right()),
-      new Point(p.left() + 1, p.mid(), p.right() - 1),
-      new Point(p.left(), p.mid() + 1, p.right() - 1),
-      new Point(p.left() - 1, p.mid() + 1, p.right()),
-      new Point(p.left() - 1, p.mid(), p.right() + 1),
-      new Point(p.left(), p.mid() - 1, p.right() + 1));
+  public Z next() {
+    return Z.valueOf(mHunter.count(++mN));
   }
 }

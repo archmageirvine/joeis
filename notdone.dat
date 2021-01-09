@@ -1502,3 +1502,13 @@ A038031 Position reached by frog in A038029. A038026(A038029(n)), suspect sequen
 A038034 Number of compositions (ordered partitions) of 1 into {1/1, 1/2, 1/3, ..., 1/n}
 A038036 Number of nonisomorphic and nonantiisomorphic rings with n elements
 A038047 Shifts left under transform T where Ta is a EXP-DCONV a, insufficient detail, incorrect?
+A038123 Beatty sequence for Feigenbaum's constant, depends A006890
+A038124 Beatty sequence for Brun's constant
+A038140 Number of planar polyhexes with n cells and a single hole
+A038141 Number of planar polyhexes with n cells with at least two holes, all holes having size at least two
+A038142 Number of planar cata-polyhexes with n cells
+A038143 Hexagonal cata-condensed helicenes with n cells (non-planar cata-fused benzenoid hydrocarbons)
+A038144 Number of planar n-hexes, or polyhexes (in the sense of A000228, so rotations and reflections count as the same shape) with at least one hole
+A038145 Number of n-celled helicenes without holes
+A038146 Number of n-celled helicenes with peri-fragments
+A038147 Number of polyhexes with n cells

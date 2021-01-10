@@ -1,3 +1,4 @@
+gebhardt/Canonical.java
 irvine/math/expression/GrammarLexer.java
 irvine/math/expression/GrammarParser.java
 irvine/oeis/a093/A093385.java

@@ -47,7 +47,7 @@ public class InverseEulerTransform implements Sequence {
    * the specified number of terms in advance.
    *
    * @param seq underlying sequence
-   * @param skip number of terms to skip in seq
+   * @param skip number of terms to skip in sequence
    * @param preTerms additional terms to be prepended to the result - usually there is a leading one.
    */
   public InverseEulerTransform(final Sequence seq, final int skip, final Z... preTerms) {
@@ -63,7 +63,7 @@ public class InverseEulerTransform implements Sequence {
    * the specified number of terms in advance.
    *
    * @param seq underlying sequence
-   * @param skip number of terms to skip in seq
+   * @param skip number of terms to skip in sequence
    * @param preTerms additional terms to be prepended to the result - usually there is a leading one.
    */
   public InverseEulerTransform(final Sequence seq, final int skip, final long... preTerms) {
@@ -75,7 +75,7 @@ public class InverseEulerTransform implements Sequence {
    * the specified number of terms in advance. A one is prepended.
    *
    * @param seq underlying sequence
-   * @param skip number of terms to skip in seq
+   * @param skip number of terms to skip in sequence
    */
   public InverseEulerTransform(final Sequence seq, final int skip) {
     this(seq, skip, Z.ONE);

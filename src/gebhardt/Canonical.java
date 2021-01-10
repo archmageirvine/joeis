@@ -1,5 +1,7 @@
 package gebhardt;
 
+import java.util.Arrays;
+
 import gebhardt.Globals.SiData;
 
 final class Canonical {
@@ -45,6 +47,16 @@ final class Canonical {
     @Override
     public int compareTo(final DualLong o) {
       return cmpP2(mL, o.mL);
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof DualLong && Arrays.equals(((DualLong) obj).mL, mL);
+    }
+
+    @Override
+    public int hashCode() {
+      return Arrays.hashCode(mL);
     }
   }
 
@@ -466,8 +478,8 @@ final class Canonical {
             final byte[] pqq;
             if (j < k1) {
               if (r < k1) {
-                final long ml11 = (Utils.bit(dr * m) - 1) << ((j - dr + 1) * m);
-                final long mr11 = (Utils.bit((r - j) * m) - 1) << ((j + 1) * m);
+                final long ml11 = (Utils.bit(dr * (long) m) - 1) << ((j - dr + 1) * (long) m);
+                final long mr11 = (Utils.bit((r - j) * (long) m) - 1) << ((j + 1) * (long) m);
                 bigP[1] = (bigP[1] & ~(ml11 | mr11)) | ((bigP[1] & ml11) << ((r - j) * m)) | ((bigP[1] & mr11) >>> (dr * m));
               } else {
                 final long mr00, mr01, ml10, ml11;
@@ -1388,7 +1400,7 @@ final class Canonical {
               a[1] = l[1];
               g.mBenes[antichain.mCl][gen].applyP2(a);
               if (antichain.mCl < antichain.mLattice.mNLev - 2) {
-                g.mBenes[antichain.mLattice.mNLev - 1][gen].applyBlockedP2(a, apf * bits);
+                g.mBenes[antichain.mLattice.mNLev - 1][gen].applyBlockedP2(a, apf * (long) bits);
               }
               Permutation.init(s.mG.mN, p);
               applySIp2(antichain.mLattice.mN, antichain.mK, apf, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, a, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p);

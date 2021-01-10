@@ -1,19 +1,21 @@
 package irvine.oeis.a038;
 
 import irvine.math.cr.CR;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.BeattySequence;
 
 /**
  * A038130 Beatty sequence for 2*Pi.
  * @author Sean A. Irvine
  */
-public class A038130 implements Sequence {
+public class A038130 extends BeattySequence {
 
-  private long mN = -1;
+  /** Construct the sequence. */
+  public A038130() {
+    super(0);
+  }
 
   @Override
-  public Z next() {
-    return CR.TAU.multiply(++mN).floor();
+  protected CR getCR() {
+    return CR.TAU;
   }
 }

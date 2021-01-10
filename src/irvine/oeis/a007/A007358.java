@@ -19,7 +19,7 @@ public class A007358 implements Sequence {
       if (mN.isZero()) {
         return Z.ONE;
       }
-      if (InfinitaryDivisors.infinitaryDivisorSum(mN).mod(mN).isZero()) {
+      if (InfinitaryDivisors.infinitarySigma(mN).mod(mN).isZero()) {
         return mN;
       }
     }

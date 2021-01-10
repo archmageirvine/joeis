@@ -1,19 +1,21 @@
 package irvine.oeis.a038;
 
 import irvine.math.cr.CR;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.BeattySequence;
 
 /**
  * A038128 Beatty sequence for Euler's constant (A001620).
  * @author Sean A. Irvine
  */
-public class A038128 implements Sequence {
+public class A038128 extends BeattySequence {
 
-  private long mN = -1;
+  /** Construct the sequence. */
+  public A038128() {
+    super(0);
+  }
 
   @Override
-  public Z next() {
-    return CR.GAMMA.multiply(++mN).floor();
+  protected CR getCR() {
+    return CR.GAMMA;
   }
 }

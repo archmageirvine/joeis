@@ -1512,3 +1512,15 @@ A038144 Number of planar n-hexes, or polyhexes (in the sense of A000228, so rota
 A038145 Number of n-celled helicenes without holes
 A038146 Number of n-celled helicenes with peri-fragments
 A038147 Number of polyhexes with n cells
+A038168 Number of "connected animals" formed from n tricapped truncated tetrahedra in the diamond lattice, allowing translation and rotations of the lattice
+A038169 Number of "connected animals" formed from n tricapped truncated tetrahedra in the diamond lattice, allowing translation and rotations of the lattice and reflections
+A038170 Number of "connected animals" formed from n 6-gon connected truncated octahedra (or corner-connected cubes) in the b.c.c. lattice, allowing translation and rotations of the lattice
+A038171 Number of "connected animals" formed from n 6-gon connected truncated octahedra (or corner connected cubes) in the b.c.c. lattice, allowing translation and rotations of the lattice and reflections
+A038172 Number of "connected animals" formed from n rhombic dodecahedra (or edge-connected cubes) in the face-centered cubic lattice, allowing translation and rotations of the lattice
+A038173 Number of "connected animals" formed from n rhombic dodecahedra (or edge-connected cubes) in the face-centered cubic lattice, allowing translation and rotations of the lattice and reflections
+A038174 Number of "polyspheres", or "connected animals" formed from n rhombic dodecahedra (or edge-connected cubes) in the f.c.c. lattice, allowing translation and rotations of the lattice, reflections and 180 deg. rotations about a 3-fold symmetry axis of the lattice
+A038175 Unbranched mono-5-catapolyheptagons
+A038176	A038175/2
+A038177 Number of unbranched mono-5-catapolyheptagons
+A038180 Number of "connected animals" formed from n square- or hexagon-connected truncated octahedra in the b.c.c. lattice, allowing translation and rotations of the lattice
+A038181 Number of "connected animals" formed from n 4-gon or 6-gon connected truncated octahedra in the b.c.c. lattice, allowing translation and rotations of the lattice and reflections

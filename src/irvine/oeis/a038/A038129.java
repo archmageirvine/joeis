@@ -2,20 +2,23 @@ package irvine.oeis.a038;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.BeattySequence;
 
 /**
  * A038129 Beatty sequence for cube root of 2.
  * @author Sean A. Irvine
  */
-public class A038129 implements Sequence {
+public class A038129 extends BeattySequence {
 
-  private static final CR C = ComputableReals.SINGLETON.pow(CR.TWO, CR.ONE_THIRD);
-  private long mN = -1;
+  private static final CR N = ComputableReals.SINGLETON.pow(CR.TWO, CR.ONE_THIRD);
+
+  /** Construct the sequence. */
+  public A038129() {
+    super(0);
+  }
 
   @Override
-  public Z next() {
-    return C.multiply(++mN).floor();
+  protected CR getCR() {
+    return N;
   }
 }

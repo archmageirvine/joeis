@@ -17,7 +17,7 @@ public final class InfinitaryDivisors {
    * @param n number to sum
    * @return infinitary divisor sum
    */
-  public static Z infinitaryDivisorSum(final Z n) {
+  public static Z infinitarySigma(final Z n) {
     Z sum = Z.ZERO;
     final FactorSequence fs = Cheetah.factor(n);
     for (final Z d : InfinitaryAliquotSequence.infinitaryDivisors(fs)) {
@@ -33,5 +33,25 @@ public final class InfinitaryDivisors {
    */
   public static Z infinitarySigma0(final Z n) {
     return Z.valueOf(InfinitaryAliquotSequence.infinitaryDivisors(Cheetah.factor(n)).size());
+  }
+
+  /**
+   * The 3-infinitary divisor sum of a number.
+   * @param n number
+   * @return sigma
+   */
+  public static Z infinitary3Sigma(final Z n) {
+    Z prod = Z.ONE;
+    final FactorSequence fs = Cheetah.factor(n);
+    for (final Z p : fs.toZArray()) {
+      int e = fs.getExponent(p);
+      Z k = Z.ONE;
+      while (e != 0) {
+        prod = prod.multiply(p.pow(k.multiply(e % 3 + 1)).subtract(1).divide(p.pow(k).subtract(1)));
+        k = k.multiply(3);
+        e /= 3;
+      }
+    }
+    return prod;
   }
 }

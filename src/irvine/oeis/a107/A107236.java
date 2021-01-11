@@ -7,7 +7,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A107236 Expansion of 1 / Prod{n&gt;=0} (1-q^(5n+1))(1-q^(5n+3))(1-q^(5n+4)).
+ * A107236 Expansion of 1 / Product_{n&gt;=0} (1 - q^(5n+1))*(1 - q^(5n+3))*(1 - q^(5n+4)).
  * @author Georg Fischer
  */
 public class A107236 extends EulerTransform {

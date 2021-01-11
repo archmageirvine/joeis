@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081628 2*(-1)^n-(-5)^n.
+ * A081628 a(n) = 2*(-1)^n - (-5)^n.
  * @author Sean A. Irvine
  */
 public class A081628 extends LinearRecurrence {

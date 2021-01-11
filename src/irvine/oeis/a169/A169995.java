@@ -5,7 +5,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169995 Expansion of Prod((1+x^(2*i+1)),i=0..m-1) for m=12.
+ * A169995 Expansion of Product_{i=0..m-1} (1 + x^(2*i+1)) for m=12.
  * @author Georg Fischer
  */
 public class A169995 extends FiniteSequence {

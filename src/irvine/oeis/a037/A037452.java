@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000293;
 
 /**
- * A037452 Let F(x) = 1+1*x+4*x^2+10*x^3+ ..., the g.f. for A000293 (solid partitions), and write F(x) = 1/prod(n&gt;=1, (1-x^n)^a(n) ).
+ * A037452 Let F(x) = 1 + 1*x + 4*x^2 + 10*x^3 + ..., the g.f. for A000293 (solid partitions), and write F(x) = 1/Product_{n&gt;=1} (1 - x^n)^a(n).
  * @author Sean A. Irvine
  */
 public class A037452 extends A000293 {

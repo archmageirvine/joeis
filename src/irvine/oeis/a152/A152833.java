@@ -5,7 +5,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152833 a(0)=3; a(n)=n-a(n-1).
+ * A152833 a(0) = -3; a(n) = n-a(n-1).
  * @author Georg Fischer
  */
 public class A152833 extends HolonomicRecurrence {

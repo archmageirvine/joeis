@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A330395 Number of non-trivial equivalence classes of S_n under the {1234,3412} pattern-replacement equivalence.
+ * A330395 Number of nontrivial equivalence classes of S_n under the {1234,3412} pattern-replacement equivalence.
  * @author Georg Fischer
  */
 public class A330395 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068180 Prod(i=1,4,x+i)/Prod(i=1,4,x-i)=Sum(n=1,inf,a(n)/A067419(n)*x^n).
+ * A068180 (Product_{i=1..4} (x+i)) / (Product_{i=1..4} (x-i)) = Sum_{n&gt;=1} a(n)/A067419(n)*x^n.
  * @author Georg Fischer
  */
 public class A068180 extends LinearRecurrence {

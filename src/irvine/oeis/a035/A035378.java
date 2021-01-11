@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035378 Coefficients in expansion of Sum_{k=0..inf} Prod_{j=1..k} (1-x^j) about x = -1.
+ * A035378 Coefficients in expansion of Sum_{k&gt;=0} Product_{j=1..k} (1-x^j) about x = -1.
  * @author Sean A. Irvine
  */
 public class A035378 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005334 Number of labeled nonseparable (or 2-connected) bicolored graphs with n nodes of the the first color and n nodes of the second color.
+ * A005334 Number of labeled nonseparable (or 2-connected) bicolored graphs with n nodes of the first color and n nodes of the second color.
  * @author Sean A. Irvine
  */
 public class A005334 extends MemoryFunction2<Integer, Z> implements Sequence {

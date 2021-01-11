@@ -7,7 +7,7 @@ import irvine.oeis.EngelExpansionSequence;
 
 
 /**
- * A068478 Engel expansion of Gamma(3/4)=sum(i&gt;0,1/prod(n=1,i,1/a(n))).
+ * A068478 Engel expansion of Gamma(3/4) = Sum_{i&gt;0} 1/Product_{n=1..i} 1/a(n).
  * @author Georg Fischer
  */
 public class A068478 extends EngelExpansionSequence {

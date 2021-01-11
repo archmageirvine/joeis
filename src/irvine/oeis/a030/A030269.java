@@ -10,7 +10,7 @@ import irvine.oeis.a006.A006966;
  */
 public class A030269 extends A030268 {
 
-  private Sequence mSeq;
+  private final Sequence mSeq;
 
   /** Construct the sequence. */
   public A030269() {
@@ -21,6 +21,6 @@ public class A030269 extends A030268 {
 
   @Override
   public Z next() {
-    return super.next().subtract(mSeq.next());
+    return mSeq.next().subtract(super.next());
   }
 }

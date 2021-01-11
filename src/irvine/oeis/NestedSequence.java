@@ -35,6 +35,6 @@ public class NestedSequence implements Sequence {
 
   @Override
   public Z next() {
-    return mSeqA.a(mSeqB.next().intValueExact() + mOffsetA);
+    return mSeqA.a(mSeqB.next().intValueExact() - mOffsetA);
   }
 }

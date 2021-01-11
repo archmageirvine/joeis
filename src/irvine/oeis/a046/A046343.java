@@ -16,7 +16,7 @@ public class A046343 extends NestedSequence {
 
   /** Construct the sequence. */
   public A046343() {
-    super(1, new A001414(), new A002808(), 1, 1); 
+    super(1, new A001414(), new A002808(), 1, 1);
   }
 
 }

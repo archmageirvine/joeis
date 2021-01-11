@@ -23,7 +23,7 @@ public class A102915 implements Sequence {
   /** 
    * Constructor for subclasses, with parameters
    * @param const1 constant behind k
-   * @param pow10 least power of 10 &gt; const1
+   * @param pow10 least power of <code>10 &gt; const1</code>
    */
   protected A102915(final String const1, final String pow10) {
     mConst1 = new Z(const1);

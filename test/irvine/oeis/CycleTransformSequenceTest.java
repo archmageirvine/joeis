@@ -4,7 +4,6 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class CycleTransformSequenceTest extends TestCase {
@@ -22,6 +21,5 @@ public class CycleTransformSequenceTest extends TestCase {
     assertEquals(510, s.next().longValue());
     assertEquals(1867, s.next().longValue());
     assertEquals(6987, s.next().longValue());
-    assertNull(s.next());
   }
 }

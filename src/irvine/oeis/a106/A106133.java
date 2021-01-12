@@ -22,7 +22,7 @@ public class A106133 implements Sequence {
       if (sp == FactorSequence.UNKNOWN) {
         throw new UnsupportedOperationException();
       }
-      if (sp == FactorSequence.YES && mSearch % ++mN == 8) {
+      if (sp == FactorSequence.YES && mSearch % ++mN == 8 % mN) {
         return Z.valueOf(mN);
       }
     }

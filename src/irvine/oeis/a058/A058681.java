@@ -11,15 +11,13 @@ public class A058681 extends A000110 {
 
   {
     super.next();
-    super.next();
-    super.next();
   }
 
-  private Z mA = Z.TWO;
+  private Z mA = null;
 
   @Override
   public Z next() {
-    mA = mA.multiply2();
+    mA = mA == null ? Z.ONE : mA.multiply2();
     return super.next().subtract(mA);
   }
 }

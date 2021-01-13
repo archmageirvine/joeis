@@ -1527,3 +1527,5 @@ A038181 Number of "connected animals" formed from n 4-gon or 6-gon connected tru
 A038357 Ranks of certain relations among Euler sums of weight n.
 A038358 Ranks of certain relations among Euler sums of weight n.
 A038359 Ranks of certain relations among Euler sums of weight n.
+A038362 Two different numbers a, b which satisfy sigma(a)=sigma(b)=(a+b)^3/(a^2+b^2) are called a rational amicable pair; sequence gives a numbers
+A038363 Two different numbers a, b which satisfy sigma(a)=sigma(b)=(a+b)^3/(a^2+b^2) are called a rational amicable pair; sequence gives b numbers

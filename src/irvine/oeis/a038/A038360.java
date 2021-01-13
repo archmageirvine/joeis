@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a000.A000931;
 
 /**
- * A038190.
+ * A038360 Ranks of certain relations among Euler sums of weight n.
  * @author Sean A. Irvine
  */
 public class A038360 extends A000079 {

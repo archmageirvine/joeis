@@ -28,7 +28,7 @@ public class A038375 implements Sequence {
 
   private int count(final int n) {
     int res = 0;
-    for(int y = 0; y < n; ++y) {
+    for (int y = 0; y < n; ++y) {
       res += path(n, y, 0);
     }
     return res;
@@ -38,7 +38,7 @@ public class A038375 implements Sequence {
     if (y == n - 1) {
       mMax = Math.max(mMax, count(n));
     } else {
-      for (int j = (x == y + 1 ? 1 : 0); j <= (x == n - 1 && y == 0 ? 0 : 1); ++j) {
+      for (int j = x == y + 1 ? 1 : 0; j <= (x == n - 1 && y == 0 ? 0 : 1); ++j) {
         mM[y] = mM[y] & ~(1 << x) | j << x;
         mM[x] = mM[x] & ~(1 << y) | (j ^ 1) << y;
         if (x + 1 < n) {

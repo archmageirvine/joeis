@@ -13,7 +13,7 @@ import irvine.math.z.ZUtils;
 public class InverseEulerTransform implements Sequence {
 
   private Sequence mSeq;
-  private final ArrayList<Z> mAs = new ArrayList<>(); // underlying sequence
+  //private final ArrayList<Z> mAs = new ArrayList<>(); // underlying sequence
   private final ArrayList<Z> mBs = new ArrayList<>(); // resulting sequence
   private final ArrayList<Z> mCs = new ArrayList<>(); // auxiliary sequence
   protected Z[] mPreTerms; // initial terms to be prepended
@@ -27,7 +27,7 @@ public class InverseEulerTransform implements Sequence {
   public InverseEulerTransform() {
     mIn = 0;
     mN = 0;
-    mAs.add(Z.ZERO); // [0] is not returned
+    //mAs.add(Z.ZERO); // [0] is not returned
     mBs.add(Z.ZERO); // [0] not used
     mCs.add(Z.ZERO); // [0] starts the sum
     mPreTerms = new Z[] { }; // no preprended terms
@@ -111,7 +111,7 @@ public class InverseEulerTransform implements Sequence {
       }
     } // for d
     aSum = aSum.divide(Z.valueOf(i));
-    mAs.add(aSum);
+    //mAs.add(aSum);
     return aSum;
   }
 

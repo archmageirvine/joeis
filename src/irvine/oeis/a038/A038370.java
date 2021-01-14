@@ -21,7 +21,7 @@ public class A038370 implements Sequence {
       final long rlim = limit * 10;
       for (long left = start; left < limit; ++left) {
         final String l = left + centre;
-        for (long right = limit; right <rlim; ++right) {
+        for (long right = limit; right < rlim; ++right) {
           // Generates 100...0 then substring(1) to handle leading zeros
           final Z candidate = new Z(l + String.valueOf(right).substring(1));
           if (candidate.isProbablePrime()) {

@@ -1529,3 +1529,5 @@ A038358 Ranks of certain relations among Euler sums of weight n.
 A038359 Ranks of certain relations among Euler sums of weight n.
 A038362 Two different numbers a, b which satisfy sigma(a)=sigma(b)=(a+b)^3/(a^2+b^2) are called a rational amicable pair; sequence gives a numbers
 A038363 Two different numbers a, b which satisfy sigma(a)=sigma(b)=(a+b)^3/(a^2+b^2) are called a rational amicable pair; sequence gives b numbers
+A038372 Largest subset of integers [ 1...n ] such that no member divides two others
+A038379 Number of real {0,1} n X n matrices A such that M = A + A' has 2's on the main diagonal, 0's and 1's elsewhere and is positive semi-definite.

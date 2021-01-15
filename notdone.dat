@@ -1531,3 +1531,8 @@ A038362 Two different numbers a, b which satisfy sigma(a)=sigma(b)=(a+b)^3/(a^2+
 A038363 Two different numbers a, b which satisfy sigma(a)=sigma(b)=(a+b)^3/(a^2+b^2) are called a rational amicable pair; sequence gives b numbers
 A038372 Largest subset of integers [ 1...n ] such that no member divides two others
 A038379 Number of real {0,1} n X n matrices A such that M = A + A' has 2's on the main diagonal, 0's and 1's elsewhere and is positive semi-definite.
+A038382 Number of perifusenes with one internal vertex, insufficient detail.
+A038383 Number of perifusenes with one internal vertex, insufficient detail.
+A038384 Number of perifusenes with one internal vertex, insufficient detail.
+A038385 Number of perifusenes with one internal vertex, insufficient detail.
+A038386 Number of "connected animals" formed from n 4-gon connected truncated octahedra in the b.c.c. lattice, allowing only translation of the lattice

@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A143867 a(n) = number of n-digit integers in which the first k digits are divisible by k-th prime. Leading zeros are not allowed.
+ * A143867 a(n) is the number of n-digit integers in which the first k digits are divisible by k-th prime. Leading zeros are not allowed.
  * @author Georg Fischer
  */
 public class A143867 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045946 Star of David matchstick numbers: 6n(3n+1).
+ * A045946 Star of David matchstick numbers: 6*n*(3*n+1).
  * @author Sean A. Irvine
  */
 public class A045946 extends LinearRecurrence {

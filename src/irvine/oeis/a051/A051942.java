@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051942 Truncated triangular numbers: a(n) = n*(n+1)/2-3*t*(t+1)/2, t = 5.
+ * A051942 a(n) = n*(n+1)/2 - 45.
  * @author Sean A. Irvine
  */
 public class A051942 extends LinearRecurrence {

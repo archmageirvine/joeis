@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A003965 Fully multiplicative with a(p(k)) = Fib(k+2) for k-th prime p.
+ * A003965 Fully multiplicative with a(prime(k)) = Fibonacci(k+2).
  * @author Sean A. Irvine
  */
 public class A003965 implements Sequence {

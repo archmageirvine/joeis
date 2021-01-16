@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A225613 The largest n-digit number where first k digits are divisible by k-th prime for k = 1..n.
+ * A225613 The largest n-digit number whose first k digits are divisible by the k-th prime for k = 1..n.
  * @author Georg Fischer
  */
 public class A225613 extends FiniteSequence {

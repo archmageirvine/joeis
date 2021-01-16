@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228009 The number of n-digit numbers where first k digits are divisible by k^2 for k = 1..n.
+ * A228009 The number of n-digit numbers whose first k digits are divisible by k^2 for k = 1..n.
  * @author Georg Fischer
  */
 public class A228009 extends FiniteSequence {

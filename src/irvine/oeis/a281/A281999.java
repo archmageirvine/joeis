@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281999 Half of the right Trapezoidal Gnomon's (of the derivate of Y=X^5) height.
+ * A281999 Half of the height of the right trapezoidal gnomon (of the derivative of Y=X^5).
  * @author Sean A. Irvine
  */
 public class A281999 extends LinearRecurrence {

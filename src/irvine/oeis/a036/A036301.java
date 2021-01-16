@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036301 Numbers n such that sum of even digits of n equals sum of odd digits of n.
+ * A036301 Numbers whose sum of even digits and sum of odd digits are equal.
  * @author Sean A. Irvine
  */
 public class A036301 implements Sequence {

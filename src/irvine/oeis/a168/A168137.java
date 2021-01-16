@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A168137 a(n) = the smallest number whose American English name contains n distinct letters of the alphabet. 3&lt;=n&lt;=23.
+ * A168137 a(n) is the smallest number whose American English name contains n distinct letters of the alphabet; 3 &lt;= n &lt;= 23.
  * @author Georg Fischer
  */
 public class A168137 extends FiniteSequence {

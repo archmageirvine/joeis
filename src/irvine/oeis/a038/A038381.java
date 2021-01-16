@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002212;
 
 /**
- * A038381 Number of perifusenes with one internal vertex.
+ * A038381 Number of perifusenes with one internal vertex and symmetry point group C_s.
  * @author Sean A. Irvine
  */
 public class A038381 implements Sequence {

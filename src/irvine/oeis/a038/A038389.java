@@ -16,7 +16,7 @@ public class A038389 implements Sequence {
     mN = mN.add(1);
     long k = 0;
     while (true) {
-      Z a;
+      final Z a;
       if ((a = mN.add(++k)).isEven() && mN.multiply(k).isSquare()) {
         return a.divide2();
       }

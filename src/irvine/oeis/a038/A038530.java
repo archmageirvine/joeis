@@ -12,13 +12,11 @@ import irvine.oeis.a002.A002808;
  * @author Georg Fischer
  */
 public class A038530 extends A000040 {
-  protected long mN = 0;
-  final Sequence mCompos = new A002808();
+
+  private final Sequence mCompos = new A002808();
 
   @Override
   public Z next() {
-    ++mN;
-    final Z nextPrime = super.next();
-    return new Z(nextPrime.toString() + mCompos.next());
+    return new Z(super.next().toString() + mCompos.next());
   }
 }

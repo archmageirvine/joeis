@@ -484,7 +484,7 @@ final class Canonical {
               } else {
                 final long mr00, mr01, ml10, ml11;
                 if (r - dr >= k1) {
-                  mr00 = (Utils.bit((r - k1 - dr + 1) * m) - 1) << (dr * m);
+                  mr00 = (Utils.bit((r - k1 - dr + 1) * (long) m) - 1) << (dr * (long) m);
                   mr01 = Utils.bit(dr * m) - 1;
                 } else {
                   mr00 = 0L;
@@ -1476,7 +1476,7 @@ final class Canonical {
               a[1] = l[1];
               g.mBenes[antichain.mCl][gen].applyP2(a);
               if (antichain.mCl < antichain.mLattice.mNLev - 2) {
-                g.mBenes[antichain.mLattice.mNLev - 1][gen].applyBlockedP2(a, apf * bits);
+                g.mBenes[antichain.mLattice.mNLev - 1][gen].applyBlockedP2(a, apf * (long) bits);
               }
               Permutation.init(s.mG.mN, p);
               sortP2(antichain.mK, bits, antichain.mK - apf, offset, m1, antichain.mStabilisers[antichain.mCl + 1].mBl, a, p, antichain.mLattice.mN);

@@ -110,9 +110,8 @@ public class InverseEulerTransform implements Sequence {
         aSum = aSum.add(mCs.get(d).multiply(Mobius.mobius(i / d))); // "mob(i,d)"
       }
     } // for d
-    aSum = aSum.divide(Z.valueOf(i));
+    return aSum.divide(Z.valueOf(i));
     //mAs.add(aSum);
-    return aSum;
   }
 
 }

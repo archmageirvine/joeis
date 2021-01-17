@@ -1537,3 +1537,5 @@ A038384 Number of perifusenes with one internal vertex, insufficient detail.
 A038385 Number of perifusenes with one internal vertex, insufficient detail.
 A038386 Number of "connected animals" formed from n 4-gon connected truncated octahedra in the b.c.c. lattice, allowing only translation of the lattice
 A038496 Number of self-avoiding paths with diagonal steps from corner to opposite corner of n X n grid
+A038517 Decimal expansion of Gauss-Kuzmin-Wirsing constant
+A038523 A minimal sequence of weights with distinct weighings, with limit of two weights per pan

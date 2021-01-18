@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004131 Modular postage stamp problem.
+ * A004131 Modular postage stamp problem: largest m such that there exists an n-subset S of nonnegative integers such that 0,...,m-1 can be expressed as a mod-m sum of two distinct elements of S.
  * @author Sean A. Irvine
  */
 public class A004131 implements Sequence {

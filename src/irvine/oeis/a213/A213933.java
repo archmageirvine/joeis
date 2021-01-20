@@ -11,7 +11,6 @@ public class A213933 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A213933() {
-    super(1, new long[] {0, 1, 1, 3, 0, 2, 0, 0, 0, 0, -2},
-      new long[] {1, 0, 0, -3});
+    super(0, new long[] {1, 1, 1, 0, 0, 2, 0, 0, 0, 0, -2}, new long[] {1, 0, 0, -3});
   }
 }

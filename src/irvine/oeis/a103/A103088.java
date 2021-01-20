@@ -14,6 +14,5 @@ public class A103088 extends PrimePositionSubsequence {
   /** Construct the sequence */
   public A103088() {
     super("[[-21],[10],[-1]]", "[11, 89]", 0);
-    next();
   }
 }

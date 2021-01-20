@@ -390,7 +390,7 @@ final class Canonical {
   }
 
   /* access macro for the antichain in *position* i */
-  private static int antichain(final long[] l, final int i, final int m, final int k1, final int mask) {
+  private static int antichain(final long[] l, final int i, final long m, final int k1, final int mask) {
     return (int) ((i >= k1 ? (l[0] >>> ((i - k1) * m)) : (l[1] >>> (i * m))) & mask);
   }
 
@@ -400,7 +400,7 @@ final class Canonical {
    * automorphisms given by si.  The inverse of the permutation minimising l is left-multiplied to p, the
    * rationale being to keep track of the permutation mapping l to some original element.
    */
-  static void applySIp2(final int n, final int k, final int k1, final int a0, final int m, final int bl, final Globals globals, final long[] l, final int si, final long bigM, final byte[] p) {
+  static void applySIp2(final int n, final int k, final int k1, final int a0, final long m, final int bl, final Globals globals, final long[] l, final int si, final long bigM, final byte[] p) {
     int si0Size, si1Size;
     long bigT;
     int a, aTemp, aMin, s;
@@ -428,7 +428,7 @@ final class Canonical {
           Permutation.copy(n + k, globals.mSi0[i].mP, q);
           s = globals.mSi0[i].mS;
           final long[] bigP = {globals.mSi0[i].mRep[0], globals.mSi0[i].mRep[1]};
-          a = antichain(bigP, j, m, k1, mask);   /* j: antichain under consideration */
+          a = antichain(bigP, j, (int) m, k1, mask);   /* j: antichain under consideration */
           final int[] b = {(s >>> 1) ^ s};
           aTemp = a & ~(s | b[0]);  /* the elements in blocks of size 1 */
           while (a != aTemp && Utils.extractMSB32(b, hi)) {  /* get an orbit lo..hi ... */
@@ -461,7 +461,7 @@ final class Canonical {
               next = true;
             }
             ++dj;
-          } while (!next && antichain(bigP, j - dj, m, k1, mask) == aTemp);
+          } while (!next && antichain(bigP, j - dj, (int) m, k1, mask) == aTemp);
           if (aTemp > aMin || (aTemp == aMin && dj < dr)) {
             continue;  /* not minimal */
           }
@@ -478,13 +478,13 @@ final class Canonical {
             final byte[] pqq;
             if (j < k1) {
               if (r < k1) {
-                final long ml11 = (Utils.bit(dr * (long) m) - 1) << ((j - dr + 1) * (long) m);
-                final long mr11 = (Utils.bit((r - j) * (long) m) - 1) << ((j + 1) * (long) m);
+                final long ml11 = (Utils.bit(dr * m) - 1) << ((j - dr + 1) * m);
+                final long mr11 = (Utils.bit((r - j) * m) - 1) << ((j + 1) * m);
                 bigP[1] = (bigP[1] & ~(ml11 | mr11)) | ((bigP[1] & ml11) << ((r - j) * m)) | ((bigP[1] & mr11) >>> (dr * m));
               } else {
                 final long mr00, mr01, ml10, ml11;
                 if (r - dr >= k1) {
-                  mr00 = (Utils.bit((r - k1 - dr + 1) * (long) m) - 1) << (dr * (long) m);
+                  mr00 = (Utils.bit((r - k1 - dr + 1) * m) - 1) << (dr * m);
                   mr01 = Utils.bit(dr * m) - 1;
                 } else {
                   mr00 = 0L;

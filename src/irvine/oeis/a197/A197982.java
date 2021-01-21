@@ -3,13 +3,13 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197904 a(n) = ceiling((n+1/n)^5).
+ * A197982 Round((9*n+1/n)^n).
  * @author Georg Fischer
  */
-public class A197904 extends A197773 {
+public class A197982 extends A197975 {
 
   /** Construct the sequence. */
-  public A197904() {
-    super(5);
+  public A197982() {
+    super(9);
   }
 }

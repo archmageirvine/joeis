@@ -3,13 +3,13 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197904 a(n) = ceiling((n+1/n)^5).
+ * A197710 Floor((n+1/n)^9).
  * @author Georg Fischer
  */
-public class A197904 extends A197773 {
+public class A197710 extends A197602 {
 
   /** Construct the sequence. */
-  public A197904() {
-    super(5);
+  public A197710() {
+    super(9);
   }
 }

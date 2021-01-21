@@ -5,32 +5,33 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A197602 Floor((n+1/n)^3).
+ * A197910 Ceiling((n+1/2)^n).
  * @author Georg Fischer
  */
-public class A197602 implements Sequence {
+public class A197910 implements Sequence {
 
   protected int mN = 0;
-  protected final int mParm; 
+  protected final Q mParm;
 
   /** 
    * Empty constructor
    */
-  public A197602() {
-    this(3);
+  public A197910() {
+    this(2);
   }
   
   /**
    * Constructor with parameter
    * @param parm parameter
    */
-  public A197602(final int parm) {
-    mParm = parm;
+  public A197910(final int parm) {
+    mParm = new Q(1, parm);
   }
- 
+
   @Override
   public Z next() {
-    final Q q = new Q(1, ++mN).add(mN).pow(mParm);
-    return q.toZ();
+    ++mN;
+    final Q q = mParm.add(mN).pow(mN);
+    return q.isInteger() ? q.toZ() : q.toZ().add(1);
   }
 }

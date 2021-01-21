@@ -1542,3 +1542,4 @@ A038523 A minimal sequence of weights with distinct weighings, with limit of two
 A038540 Number of modules with n elements over ring Z[ sqrt(10) ].
 A038541	Number of modules with n elements over ring Z[ sqrt(-5) ].
 A038552 Largest squarefree number k such that Q(sqrt(-k)) has class number n
+A038553 Maximum cycle length in differentiation digraph for n-bit binary sequences

@@ -263,11 +263,14 @@ public final class FactorSequence {
    */
   public long bigOmega() {
     long bigOmega = 0;
-    for (final Factor f : mFactors.values()) {
-      if (f.mStatus != PRIME && f.mStatus != PROB_PRIME) {
-        throw new UnsupportedOperationException();
+    for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
+      if (e.getKey().compareTo(Z.ONE) > 0) {
+        final Factor f = e.getValue();
+        if (f.mStatus != PRIME && f.mStatus != PROB_PRIME) {
+          throw new UnsupportedOperationException();
+        }
+        bigOmega += f.mExponent;
       }
-      bigOmega += f.mExponent;
     }
     return bigOmega;
   }

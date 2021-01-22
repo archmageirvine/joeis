@@ -735,4 +735,22 @@ public final class LongUtils {
     }
     return true;
   }
+
+  /**
+   * Rotate one position left in binary up to leading significant bit.
+   * @param n number to rotate
+   * @return rotated value
+   */
+  public static long rotateLeft(final long n) {
+    return ((n << 1) + 1) & (LongUtils.nextPowerOf2(n) - 1);
+  }
+
+  /**
+   * Rotate one position right in binary up to leading significant bit.
+   * @param n number to rotate
+   * @return rotated value
+   */
+  public static long rotateRight(final long n) {
+    return (n >>> 1) | ((n & 1) << LongUtils.lg(n));
+  }
 }

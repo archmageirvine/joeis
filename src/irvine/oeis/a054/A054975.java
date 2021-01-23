@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054975 Number of nonnegative integer <code>3 X 3</code> matrices with no zero rows or columns and with sum of elements equal to n, up to row and column permutation.
+ * A054975 Number of nonnegative integer 3 X 3 matrices with no zero rows or columns and with sum of elements equal to n, up to row and column permutation.
  * @author Georg Fischer
  */
 public class A054975 extends GeneratingFunctionSequence {

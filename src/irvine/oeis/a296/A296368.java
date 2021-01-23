@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296368 Coordination sequence for the Cairo or <code>dual-3.3.4.3.4</code> tiling with respect to a trivalent point.
+ * A296368 Coordination sequence for the Cairo or dual-3.3.4.3.4 tiling with respect to a trivalent point.
  * @author Georg Fischer
  */
 public class A296368 extends GeneratingFunctionSequence {

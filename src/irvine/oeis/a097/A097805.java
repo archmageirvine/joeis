@@ -7,7 +7,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A097805 Compositions of n with k parts, <code>T(n, k) = binomial(n-1, k-1)</code> for n, k <code>&gt;= 1</code> and <code>T(n, 0) = 0^n</code>, triangle read by rows for <code>n &gt;= 0</code> and <code>0 &lt;= k &lt;= n</code>.
+ * A097805 Compositions of n with k parts, T(n, k) = binomial(n-1, k-1) for n, k &gt;= 1 and T(n, 0) = 0^n, triangle read by rows for n &gt;= 0 and 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A097805 extends GeneratingFunctionTriangle {

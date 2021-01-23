@@ -6,7 +6,7 @@ package irvine.oeis.a239;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A239840 Number of ordered pairs of permutation functions <code>(f,g)</code> on n elements satisfying <code>f(x) = f(g(g(x)))</code>.
+ * A239840 Number of ordered pairs of permutation functions (f,g) on n elements satisfying f(x) = f(g(g(x))).
  * @author Georg Fischer
  */
 public class A239840 extends HolonomicRecurrence {

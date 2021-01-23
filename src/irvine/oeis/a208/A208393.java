@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A208393 Number of <code>2 X n 0..2</code> arrays with new values 0..2 introduced in row major order and no element equal to more than two of its immediate leftward or upward or right-upward antidiagonal neighbors.
+ * A208393 Number of 2 X n 0..2 arrays with new values 0..2 introduced in row major order and no element equal to more than two of its immediate leftward or upward or right-upward antidiagonal neighbors.
  * @author Georg Fischer
  */
 public class A208393 extends GeneratingFunctionSequence {

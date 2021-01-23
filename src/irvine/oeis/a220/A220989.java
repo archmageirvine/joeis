@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220989 <code>12^(2n+1) - 6 * 12^n + 1</code>: the left Aurifeuillian factor of <code>12^(6n+3) + 1</code>.
+ * A220989 12^(2n+1) - 6 * 12^n + 1: the left Aurifeuillian factor of 12^(6n+3) + 1.
  * @author Sean A. Irvine
  */
 public class A220989 extends LinearRecurrence {

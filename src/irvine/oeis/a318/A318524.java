@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A318524 Decimal expansion of <code>((32/5)^(1/5)-(27/5)^(1/5))^(1/3)</code>.
+ * A318524 Decimal expansion of ((32/5)^(1/5)-(27/5)^(1/5))^(1/3).
  * @author Georg Fischer
  */
 public class A318524 extends DecimalExpansionSequence {

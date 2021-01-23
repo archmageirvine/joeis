@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026320 <code>sin(n) &gt; cos(n) &gt; sin(n+1)</code>.
+ * A026320 sin(n) &gt; cos(n) &gt; sin(n+1).
  * @author Sean A. Irvine
  */
 public class A026320 implements Sequence {

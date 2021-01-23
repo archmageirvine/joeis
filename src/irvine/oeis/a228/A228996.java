@@ -6,7 +6,7 @@ package irvine.oeis.a228;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A228996 Total sum of the 6th powers of lengths of ascending runs in all permutations of <code>[n]</code>.
+ * A228996 Total sum of the 6th powers of lengths of ascending runs in all permutations of [n].
  * @author Georg Fischer
  */
 public class A228996 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a127;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127776 <code>a(n) = ( (2^n / n!) * Product_{k=0..n-1} (4*k + 1) )^2</code>.
+ * A127776 a(n) = ( (2^n / n!) * Product_{k=0..n-1} (4*k + 1) )^2.
  * @author Georg Fischer
  */
 public class A127776 extends HolonomicRecurrence {

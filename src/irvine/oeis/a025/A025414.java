@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025414 <code>a(n)</code> is the smallest number that is the sum of 3 nonzero squares in exactly n ways.
+ * A025414 a(n) is the smallest number that is the sum of 3 nonzero squares in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A025414 implements Sequence {

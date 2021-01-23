@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131682 <code>a(n) = (n^1 + 1!)*(n^2 + 2!)*(n^3 + 3!)/3!</code>.
+ * A131682 a(n) = (n^1 + 1!)*(n^2 + 2!)*(n^3 + 3!)/3!.
  * @author Georg Fischer
  */
 public class A131682 extends GeneratingFunctionSequence {

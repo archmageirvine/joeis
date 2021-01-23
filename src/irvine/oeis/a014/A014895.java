@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014895 n is equal to the number of <code>3s</code> in all numbers <code>&lt;= n</code> written in base 5.
+ * A014895 n is equal to the number of 3s in all numbers &lt;= n written in base 5.
  * @author Sean A. Irvine
  */
 public class A014895 extends FiniteSequence {

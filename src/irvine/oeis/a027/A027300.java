@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027300 Triangular array Q given by rows: <code>Q(n,k) =</code> number of partitions of n that do not contain k as an element; domain: <code>1 &lt;= k &lt;=</code> n, <code>n &gt;= 1</code>.
+ * A027300 Triangular array Q given by rows: Q(n,k) = number of partitions of n that do not contain k as an element; domain: 1 &lt;= k &lt;= n, n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A027300 implements Sequence {

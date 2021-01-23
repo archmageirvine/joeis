@@ -6,7 +6,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322246 Expansion of g.f.: <code>1/sqrt(1 - 10*x - 11*x^2)</code>.
+ * A322246 Expansion of g.f.: 1/sqrt(1 - 10*x - 11*x^2).
  * @author Georg Fischer
  */
 public class A322246 extends HolonomicRecurrence {

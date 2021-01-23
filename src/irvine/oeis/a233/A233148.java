@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233148 Number of <code>n-edge-colorings</code> of the cubical graph.
+ * A233148 Number of n-edge-colorings of the cubical graph.
  * @author Georg Fischer
  */
 public class A233148 extends GeneratingFunctionSequence {

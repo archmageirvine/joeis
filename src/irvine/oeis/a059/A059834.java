@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059834 Sum of squares of entries of Wilkinson's eigenvalue test matrix of order <code>2n+1</code>.
+ * A059834 Sum of squares of entries of Wilkinson's eigenvalue test matrix of order 2n+1.
  * @author Georg Fischer
  */
 public class A059834 extends GeneratingFunctionSequence {

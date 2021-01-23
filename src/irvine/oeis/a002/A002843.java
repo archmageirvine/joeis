@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A002843 Number of partitions of n into parts <code>1/2, 3/4, 7/8, 15/16</code>, etc.
+ * A002843 Number of partitions of n into parts 1/2, 3/4, 7/8, 15/16, etc.
  * @author Sean A. Irvine
  */
 public class A002843 implements Sequence {

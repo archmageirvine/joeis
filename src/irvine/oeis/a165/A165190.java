@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165190 G.f.: <code>1/((1-x^4)*(1-x^5))</code>.
+ * A165190 G.f.: 1/((1-x^4)*(1-x^5)).
  * @author Sean A. Irvine
  */
 public class A165190 extends LinearRecurrence {

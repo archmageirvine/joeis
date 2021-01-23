@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A289287 Starting with <code>a(1) = 1, a(n) =</code> smallest nonnegative integer not yet in the sequence such that the last digit of <code>a(n-1)</code> plus the first digit of <code>a(n)</code> is equal to 9. The digit 0 is not allowed.
+ * A289287 Starting with a(1) = 1, a(n) = smallest nonnegative integer not yet in the sequence such that the last digit of a(n-1) plus the first digit of a(n) is equal to 9. The digit 0 is not allowed.
  * @author Georg Fischer
  */
 public class A289287 extends FiniteSequence {

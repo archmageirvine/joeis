@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024576 <code>a(n) = [ e*a(n-1) ]</code>, where <code>a(0) = 1</code>.
+ * A024576 a(n) = [ e*a(n-1) ], where a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A024576 implements Sequence {

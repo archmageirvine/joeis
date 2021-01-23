@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026904 Number of sets S of positive integers satisfying <code>E(S)=n</code>, where E <code>= 2nd</code> elementary symmetric function.
+ * A026904 Number of sets S of positive integers satisfying E(S)=n, where E = 2nd elementary symmetric function.
  * @author Sean A. Irvine
  */
 public class A026904 implements Sequence {

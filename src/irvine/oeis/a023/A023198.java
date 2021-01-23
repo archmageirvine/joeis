@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023198 Numbers k such that <code>sigma(k) &gt;= 4*k</code>.
+ * A023198 Numbers k such that sigma(k) &gt;= 4*k.
  * @author Sean A. Irvine
  */
 public class A023198 implements Sequence {

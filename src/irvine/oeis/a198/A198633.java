@@ -5,7 +5,7 @@ package irvine.oeis.a198;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A198633 Total number of round trips, each of length <code>2*n</code> on the graph <code>P_3 (o-o-o)</code>.
+ * A198633 Total number of round trips, each of length 2*n on the graph P_3 (o-o-o).
  * @author Georg Fischer
  */
 public class A198633 extends HolonomicRecurrence {

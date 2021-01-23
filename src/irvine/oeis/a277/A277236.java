@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A277236 Number of strings of length n composed of symbols from the circular list <code>[1,2,3,4]</code> such that adjacent symbols in the string must be adjacent in the list. No runs of length 2 or more are allowed for symbols 1 and 3.
+ * A277236 Number of strings of length n composed of symbols from the circular list [1,2,3,4] such that adjacent symbols in the string must be adjacent in the list. No runs of length 2 or more are allowed for symbols 1 and 3.
  * @author Georg Fischer
  */
 public class A277236 extends GeneratingFunctionSequence {

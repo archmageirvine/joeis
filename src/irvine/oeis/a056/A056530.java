@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A056530 Sequence remaining after third round of Flavius Josephus sieve; remove every fourth term of <code>A047241</code>.
+ * A056530 Sequence remaining after third round of Flavius Josephus sieve; remove every fourth term of A047241.
  * @author Georg Fischer
  */
 public class A056530 extends GeneratingFunctionSequence {

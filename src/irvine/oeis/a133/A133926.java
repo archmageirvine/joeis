@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133926 Number of equivalence classes of compositions of n into parts of size 2 and 3 under the following equivalence relation: We make a "move" by changing three consecutive <code>2s</code> into two consecutive <code>3s</code> or vice versa. Two compositions are equivalent if we can reach one from the other by a series of moves.
+ * A133926 Number of equivalence classes of compositions of n into parts of size 2 and 3 under the following equivalence relation: We make a "move" by changing three consecutive 2s into two consecutive 3s or vice versa. Two compositions are equivalent if we can reach one from the other by a series of moves.
  * @author Georg Fischer
  */
 public class A133926 extends GeneratingFunctionSequence {

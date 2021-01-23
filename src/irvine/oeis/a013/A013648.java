@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013648 Numbers n such that period of continued fraction for <code>sqrt(n)</code> contains a single 1.
+ * A013648 Numbers n such that period of continued fraction for sqrt(n) contains a single 1.
  * @author Sean A. Irvine
  */
 public class A013648 implements Sequence {
@@ -23,7 +23,7 @@ public class A013648 implements Sequence {
     while (true) {
       final Z n = Z.valueOf(++mN);
       final Z[] sqrt = n.sqrtAndRemainder();
-      if (Z.ZERO.equals(sqrt[1])) {
+      if (sqrt[1].isZero()) {
         continue;
       }
       int oneCount = 0;

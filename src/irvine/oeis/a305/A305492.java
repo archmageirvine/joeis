@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305492 <code>a(n) = ((1 + y)^n - (1 - y)^n)/y</code> with <code>y = sqrt(8)</code>.
+ * A305492 a(n) = ((1 + y)^n - (1 - y)^n)/y with y = sqrt(8).
  * @author Georg Fischer
  */
 public class A305492 extends GeneratingFunctionSequence {

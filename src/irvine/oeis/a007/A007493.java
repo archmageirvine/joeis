@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A007493 Decimal expansion of Wallis' number, the real root of <code>x^3 - 2*x - 5</code>.
+ * A007493 Decimal expansion of Wallis' number, the real root of x^3 - 2*x - 5.
  * @author Sean A. Irvine
  */
 public class A007493 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289321 <code>a(n) = Sum_{k &gt;= 0}(-1)^k*binomial(n,5*k+1)</code>.
+ * A289321 a(n) = Sum_{k &gt;= 0}(-1)^k*binomial(n,5*k+1).
  * @author Georg Fischer
  */
 public class A289321 extends GeneratingFunctionSequence {

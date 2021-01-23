@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129766 Triangular array read by rows, made up of traditional exceptional groups plus <code>A1</code>: as <code>A1,G2,F4,E6,E7,E8</code> as <code>m(i)</code> exponents as in <code>A005556, A005763, A005776</code>.
+ * A129766 Triangular array read by rows, made up of traditional exceptional groups plus A1: as A1,G2,F4,E6,E7,E8 as m(i) exponents as in A005556, A005763, A005776.
  * @author Georg Fischer
  */
 public class A129766 extends FiniteSequence {

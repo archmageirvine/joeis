@@ -6,7 +6,7 @@ package irvine.oeis.a082;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082989 Number of ordered trees with n edges and having no <code>root-to-leaf</code> branches.
+ * A082989 Number of ordered trees with n edges and having no root-to-leaf branches.
  * @author Georg Fischer
  */
 public class A082989 extends HolonomicRecurrence {

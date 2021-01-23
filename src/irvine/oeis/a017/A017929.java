@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017929 Powers of <code>sqrt(8)</code> rounded to nearest integer.
+ * A017929 Powers of sqrt(8) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A017929 implements Sequence {

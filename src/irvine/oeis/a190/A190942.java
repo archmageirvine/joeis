@@ -5,13 +5,13 @@ package irvine.oeis.a190;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A190942 Numbers n such that <code>2*71^n + 1</code> is prime.
+ * A190942 Numbers n such that 2*71^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A190942 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A190942() {
-    super(1, 0, 2, 71, +1, 0);
+    super(1, 0, 2, 71, 1);
   }
 }

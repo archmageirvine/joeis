@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001035;
 import java.util.ArrayList;
 
 /**
- * A000798 Number of different <code>quasi-orders</code> (or topologies, or transitive digraphs) with n labeled elements.
+ * A000798 Number of different quasi-orders (or topologies, or transitive digraphs) with n labeled elements.
  * @author Sean A. Irvine
  */
 public class A000798 extends A001035 {

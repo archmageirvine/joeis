@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224810 Subsets of <code>{1,2,...,n-6}</code> without differences equal to 3 or 6.
+ * A224810 Subsets of {1,2,...,n-6} without differences equal to 3 or 6.
  * @author Georg Fischer
  */
 public class A224810 extends GeneratingFunctionSequence {

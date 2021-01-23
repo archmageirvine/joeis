@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000009;
 
 /**
- * A067570 Numbers n such that <code>A000009(n)</code> divides <code>A067553(n)</code>.
+ * A067570 Numbers n such that A000009(n) divides A067553(n).
  * @author Sean A. Irvine
  */
 public class A067570 extends A067553 {
@@ -16,7 +16,7 @@ public class A067570 extends A067553 {
   public Z next() {
     while (true) {
       ++mN;
-      if (Z.ZERO.equals(super.next().mod(mS.next()))) {
+      if (super.next().mod(mS.next()).isZero()) {
         return Z.valueOf(mN);
       }
     }

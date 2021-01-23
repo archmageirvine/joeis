@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A303120 Total area of all rectangles of size p X q such that p <code>+ q = n^2</code> and p <code>&lt;=</code> q.
+ * A303120 Total area of all rectangles of size p X q such that p + q = n^2 and p &lt;= q.
  * @author Georg Fischer
  */
 public class A303120 extends GeneratingFunctionSequence {

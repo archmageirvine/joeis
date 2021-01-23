@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078874 The <code>6-tuples (d1,d2,d3,d4,d5,d6)</code> with elements in <code>{2,4,6}</code> are listed in lexicographic order; for each <code>6-tuple</code>, this sequence lists the smallest prime p <code>&gt;= 7</code> such that the differences between the 7 consecutive primes starting with p are <code>(d1,d2,d3,d4,d5,d6)</code>, if such a prime exists.
+ * A078874 The 6-tuples (d1,d2,d3,d4,d5,d6) with elements in {2,4,6} are listed in lexicographic order; for each 6-tuple, this sequence lists the smallest prime p &gt;= 7 such that the differences between the 7 consecutive primes starting with p are (d1,d2,d3,d4,d5,d6), if such a prime exists.
  * @author Georg Fischer
  */
 public class A078874 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A250142 Number of length <code>3+2 0..n</code> arrays with the medians of every three consecutive terms nondecreasing.
+ * A250142 Number of length 3+2 0..n arrays with the medians of every three consecutive terms nondecreasing.
  * @author Georg Fischer
  */
 public class A250142 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059986 Number of rods required to make a 3-D cube of side length <code>n</code>.
+ * A059986 Number of rods required to make a 3-D cube of side length n.
  * @author Sean A. Irvine
  */
 public class A059986 extends LinearRecurrence {

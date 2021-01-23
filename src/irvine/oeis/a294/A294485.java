@@ -5,7 +5,7 @@ package irvine.oeis.a294;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A294485 Numbers k such that <code>(23*10^k + 19)/3</code> is prime.
+ * A294485 Numbers k such that (23*10^k + 19)/3 is prime.
  * @author Georg Fischer
  */
 public class A294485 extends PowerFactorPrimeSequence {

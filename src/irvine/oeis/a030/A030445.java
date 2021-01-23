@@ -1,23 +1,31 @@
 package irvine.oeis.a030;
 
+import irvine.math.lattice.Canons;
+import irvine.math.lattice.Hunter;
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import jmason.poly.ChildGeneratorFactory;
-import jmason.poly.PolyominoCounter;
 
 /**
- * A030445 Number of <code>one-sided n-celled</code> polyknights.
+ * A030445 Number of one-sided n-celled polyknights.
  * @author Sean A. Irvine
  */
 public class A030445 implements Sequence {
 
-  private int mMax = 0;
+  private int mN = 0;
+  private final ParallelHunter mHunter = new ParallelHunter(6, () -> new Hunter(Lattices.KNIGHT, true) {
+    {
+      setKeeper((animal, forbidden) -> {
+        if (Canons.Z2_ONE_SIDED.isCanonical(animal)) {
+          increment(1);
+        }
+      });
+    }
+  });
 
   @Override
   public Z next() {
-    final PolyominoCounter pc = new PolyominoCounter(++mMax, false, false, false);
-    pc.setGenerator(ChildGeneratorFactory.POLYKNIGHT_GENERATOR);
-    pc.run(true, false, true);
-    return Z.valueOf(pc.getCu().getCounter(mMax));
+    return Z.valueOf(mHunter.count(++mN));
   }
 }

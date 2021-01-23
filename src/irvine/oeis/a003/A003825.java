@@ -1,5 +1,7 @@
 package irvine.oeis.a003;
 
+import java.util.List;
+
 import irvine.math.z.Z;
 
 /**
@@ -14,7 +16,17 @@ public class A003825 extends A003824 {
   }
 
   @Override
+  protected boolean isPrimitive(final List<MyTriple> triples) {
+    Z gcd = null;
+    for (final MyTriple a : triples) {
+      final Z ga = a.mid().gcd(a.right());
+      gcd = gcd == null ? ga : gcd.gcd(ga);
+    }
+    return Z.ONE.equals(gcd);
+  }
+
+  @Override
   protected int count() {
-    return 4;
+    return 3;
   }
 }

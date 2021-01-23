@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030111 Triangular array in which k-th entry in n-th row is <code>C([ (n+k)/2 ],k) (1&lt;=k&lt;=n)</code>.
+ * A030111 Triangular array in which k-th entry in n-th row is C([ (n+k)/2 ],k) (1&lt;=k&lt;=n).
  * @author Sean A. Irvine
  */
 public class A030111 implements Sequence {

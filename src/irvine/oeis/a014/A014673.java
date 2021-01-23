@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014673 Smallest prime factor of greatest proper divisor of <code>n</code>.
+ * A014673 Smallest prime factor of greatest proper divisor of n.
  * @author Sean A. Irvine
  */
 public class A014673 implements Sequence {

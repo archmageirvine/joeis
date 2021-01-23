@@ -6,7 +6,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053103 <code>a(n) = ((6*n+10)(!^6))/10(!^6)</code>, related to <code>A034724 (((6*n+4)(!^6))/4</code> sextic, or <code>6-factorials)</code>.
+ * A053103 a(n) = ((6*n+10)(!^6))/10(!^6), related to A034724 (((6*n+4)(!^6))/4 sextic, or 6-factorials).
  * @author Georg Fischer
  */
 public class A053103 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001082 Generalized octagonal numbers: <code>k*(3*k-2), k=0, +- 1, +- 2, +-3, ..</code>.
+ * A001082 Generalized octagonal numbers: k*(3*k-2), k=0, +- 1, +- 2, +-3, ...
  * @author Sean A. Irvine
  */
 public class A001082 implements Sequence {

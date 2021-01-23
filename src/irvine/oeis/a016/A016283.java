@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016283 <code>a(n) = 6^n/8 - 4^(n-1) + 2^(n-3)</code>.
+ * A016283 a(n) = 6^n/8 - 4^(n-1) + 2^(n-3).
  * @author Sean A. Irvine
  */
 public class A016283 implements Sequence {

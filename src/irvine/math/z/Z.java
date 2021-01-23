@@ -623,7 +623,7 @@ public class Z extends Number implements Comparable<Z> {
    * @return true iff this number is a perfect square
    */
   public boolean isSquare() {
-    return Z.ZERO.equals(Sqrt.sqrt(this)[1]);
+    return Sqrt.sqrt(this)[1].isZero();
   }
 
   /**
@@ -744,8 +744,8 @@ public class Z extends Number implements Comparable<Z> {
    * @exception ArithmeticException is <code>exponent</code> is negative
    * since this would entail a non-integral result.
    */
-  public Z pow(final int exponent) {
-    return pow(Z.valueOf(exponent));
+  public Z pow(final long exponent) {
+    return Pow.pow(this, exponent);
   }
 
   /**
@@ -922,6 +922,14 @@ public class Z extends Number implements Comparable<Z> {
    */
   public byte[] toByteArray() {
     return ZByteArray.toByteArray(this);
+  }
+
+  /**
+   * Test if this integer is zero.
+   * @return true for zero
+   */
+  public boolean isZero() {
+    return mSign == 0;
   }
 
   /**

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A162844 Let <code>b(n)</code> be the n-th positive integer that is a palindrome in base 2. Then <code>a(n) = A162843(n)/b(n)</code>.
+ * A162844 Let b(n) be the n-th positive integer that is a palindrome in base 2. Then a(n) = A162843(n)/b(n).
  * @author Sean A. Irvine
  */
 public class A162844 implements Sequence {

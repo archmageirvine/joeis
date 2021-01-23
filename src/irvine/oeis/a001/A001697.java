@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001697 <code>a(n+1) = a(n)(a(0) + ... + a(n))</code>.
+ * A001697 a(n+1) = a(n)(a(0) + ... + a(n)).
  * @author Sean A. Irvine
  */
 public class A001697 implements Sequence {

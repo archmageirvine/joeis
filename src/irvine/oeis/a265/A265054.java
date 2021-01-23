@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A265054 Poincare series for hyperbolic reflection group with Coxeter diagram shown in Comments.
+ * A265054 Poincar\u00e9 series for hyperbolic reflection group with Coxeter diagram shown in Comments.
  * @author Georg Fischer
  */
 public class A265054 extends GeneratingFunctionSequence {

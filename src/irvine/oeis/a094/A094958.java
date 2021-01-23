@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094958 Numbers of the form <code>2^n</code> or <code>5*2^n</code>.
+ * A094958 Numbers of the form 2^n or 5*2^n.
  * @author Georg Fischer
  */
 public class A094958 extends GeneratingFunctionSequence {

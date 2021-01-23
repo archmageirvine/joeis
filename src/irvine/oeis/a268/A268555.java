@@ -6,7 +6,7 @@ package irvine.oeis.a268;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A268555 Diagonal of the rational function of six variables <code>1/((1 - w -</code> u v - u v <code>w) * (1 - z - x y))</code>.
+ * A268555 Diagonal of the rational function of six variables 1/((1 - w - u v - u v w) * (1 - z - x y)).
  * @author Georg Fischer
  */
 public class A268555 extends HolonomicRecurrence {

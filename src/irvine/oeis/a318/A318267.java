@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A318267 <code>a(n)</code> is the number of configurations of n indistinguishable pairs placed on the vertices of the ladder graph <code>P_2 X P_n</code> such that all but two such pairs are joined by an edge.
+ * A318267 a(n) is the number of configurations of n indistinguishable pairs placed on the vertices of the ladder graph P_2 X P_n such that all but two such pairs are joined by an edge.
  * @author Georg Fischer
  */
 public class A318267 extends GeneratingFunctionSequence {

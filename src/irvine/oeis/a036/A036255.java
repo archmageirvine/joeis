@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036255 Number of inequivalent strings of <code>2n+1</code> digits, when 2 strings are equivalent if turning 1 upside down gives the other.
+ * A036255 Number of inequivalent strings of 2n+1 digits, when 2 strings are equivalent if turning 1 upside down gives the other.
  * @author Sean A. Irvine
  */
 public class A036255 extends LinearRecurrence {

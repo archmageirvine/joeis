@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325686 Number of strict <code>length-3</code> compositions <code>x + y + z = n</code> satisfying <code>x + y != z</code> and <code>x != y + z</code>.
+ * A325686 Number of strict length-3 compositions x + y + z = n satisfying x + y != z and x != y + z.
  * @author Georg Fischer
  */
 public class A325686 extends HolonomicRecurrence {

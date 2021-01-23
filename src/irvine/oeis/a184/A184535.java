@@ -5,7 +5,7 @@ package irvine.oeis.a184;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A184535 <code>a(n) = floor(3/5 * n^2)</code>, with <code>a(1)=1</code>.
+ * A184535 a(n) = floor(3/5 * n^2), with a(1)=1.
  * @author Georg Fischer
  */
 public class A184535 extends HolonomicRecurrence {

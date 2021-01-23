@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003231 <code>a(n) = floor(n*(sqrt(5)+5)/2)</code>.
+ * A003231 a(n) = floor(n*(sqrt(5)+5)/2).
  * @author Sean A. Irvine
  */
 public class A003231 implements Sequence {

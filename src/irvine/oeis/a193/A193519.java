@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A193519 <code>a(n) = (2/3)*Sum_{i=1..n-1} A000129(i)*3^(n-i)</code>.
+ * A193519 a(n) = (2/3)*Sum_{i=1..n-1} A000129(i)*3^(n-i).
  * @author Georg Fischer
  */
 public class A193519 extends GeneratingFunctionSequence {

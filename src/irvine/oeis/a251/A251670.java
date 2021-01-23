@@ -6,7 +6,7 @@ package irvine.oeis.a251;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A251670 E.g.f.: <code>exp(10*x*G(x)^9) / G(x)</code> where <code>G(x) = 1 + x*G(x)^10</code> is the g.f. of <code>A059968</code>.
+ * A251670 E.g.f.: exp(10*x*G(x)^9) / G(x) where G(x) = 1 + x*G(x)^10 is the g.f. of A059968.
  * @author Georg Fischer
  */
 public class A251670 extends HolonomicRecurrence {

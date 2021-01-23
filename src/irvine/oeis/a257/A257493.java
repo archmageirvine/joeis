@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A257493 Number <code>A(n,k)</code> of <code>n X n</code> nonnegative integer matrices with all row and column sums equal to k; square array <code>A(n,k), n &gt;= 0, k &gt;= 0</code>, read by antidiagonals.
+ * A257493 Number A(n,k) of n X n nonnegative integer matrices with all row and column sums equal to k; square array A(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A257493 implements Sequence {
@@ -25,7 +25,7 @@ public class A257493 implements Sequence {
     for (final Z p : primes) {
       while (true) {
         final Z[] qr = n.divideAndRemainder(p);
-        if (!Z.ZERO.equals(qr[1])) {
+        if (!qr[1].isZero()) {
           break;
         }
         n = qr[0];

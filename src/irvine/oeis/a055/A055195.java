@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055195 Number of 3-covers of an unlabeled <code>n-set</code>.
+ * A055195 Number of 3-covers of an unlabeled n-set.
  * @author Georg Fischer
  */
 public class A055195 extends GeneratingFunctionSequence {

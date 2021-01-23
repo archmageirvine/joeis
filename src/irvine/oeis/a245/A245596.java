@@ -5,7 +5,7 @@ package irvine.oeis.a245;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A245596 Number of tilings of an <code>n X 1</code> rectangle by tiles of dimension <code>1 X 1</code> and <code>2 X 1</code> such that every tile is next to a tile of different size.
+ * A245596 Number of tilings of an n X 1 rectangle by tiles of dimension 1 X 1 and 2 X 1 such that every tile is next to a tile of different size.
  * @author Georg Fischer
  */
 public class A245596 extends HolonomicRecurrence {

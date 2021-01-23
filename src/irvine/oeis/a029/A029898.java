@@ -5,7 +5,7 @@ package irvine.oeis.a029;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A029898 Pitoun's sequence: <code>a(n+1)</code> is digital root of <code>a(0) + ... + a(n)</code>.
+ * A029898 Pitoun's sequence: a(n+1) is digital root of a(0) + ... + a(n).
  * @author Georg Fischer
  */
 public class A029898 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A259226 Numbers n such that <code>A157480(n) = A259232(n)</code>.
+ * A259226 Numbers n such that A157480(n) = A259232(n).
  * @author Georg Fischer
  */
 public class A259226 extends FiniteSequence {

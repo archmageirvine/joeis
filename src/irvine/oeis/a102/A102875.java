@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A102875 Let <code>f(n) = n+2</code> if <code>n == 1 mod 3, = n</code> if <code>n == 2 mod 3, = n-2</code> if <code>n == 0 mod 3</code>; then <code>a(n) = Fibonacci(f(n))</code>.
+ * A102875 Let f(n) = n+2 if n == 1 mod 3, = n if n == 2 mod 3, = n-2 if n == 0 mod 3; then a(n) = Fibonacci(f(n)).
  * @author Georg Fischer
  */
 public class A102875 extends GeneratingFunctionSequence {

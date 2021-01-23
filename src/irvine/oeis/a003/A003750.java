@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003750 Number of Hamiltonian paths in <code>K_5 X P_n</code>.
+ * A003750 Number of Hamiltonian paths in K_5 X P_n.
  * @author Sean A. Irvine
  */
 public class A003750 extends LinearRecurrence {

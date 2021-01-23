@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020487 Antiharmonic numbers: numbers n such that <code>sigma_1(n)</code> divides <code>sigma_2(n)</code>.
+ * A020487 Antiharmonic numbers: numbers n such that sigma_1(n) divides sigma_2(n).
  * @author Sean A. Irvine
  */
 public class A020487 implements Sequence {
@@ -17,7 +17,7 @@ public class A020487 implements Sequence {
   public Z next() {
     while (true) {
       final FactorSequence fs = Cheetah.factor(++mN);
-      if (Z.ZERO.equals(fs.sigma2().mod(fs.sigma()))) {
+      if (fs.sigma2().mod(fs.sigma()).isZero()) {
         return Z.valueOf(mN);
       }
     }

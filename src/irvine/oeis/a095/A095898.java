@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095898 The <code>(1,1)-term</code> of the <code>3 X 3</code> matrix <code>M^n</code>, where M <code>= [1,2,3 / 4,7,11 / 6,10,16]</code>.
+ * A095898 The (1,1)-term of the 3 X 3 matrix M^n, where M = [1,2,3 / 4,7,11 / 6,10,16].
  * @author Sean A. Irvine
  */
 public class A095898 extends LinearRecurrence {

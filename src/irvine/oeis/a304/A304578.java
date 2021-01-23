@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304578 <code>a(n) = (n^2 + 1) * 5^n + (n^2 + 2) * 3^n</code>.
+ * A304578 a(n) = (n^2 + 1) * 5^n + (n^2 + 2) * 3^n.
  * @author Georg Fischer
  */
 public class A304578 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055389 <code>a(0) = 1</code>, then twice the Fibonacci sequence.
+ * A055389 a(0) = 1, then twice the Fibonacci sequence.
  * @author Georg Fischer
  */
 public class A055389 extends GeneratingFunctionSequence {

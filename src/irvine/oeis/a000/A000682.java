@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005316;
 
 /**
- * A000682 <code>Semi-meanders</code>: number of ways a semi-infinite directed curve can cross a straight line n times.
+ * A000682 Semi-meanders: number of ways a semi-infinite directed curve can cross a straight line n times.
  * @author Sean A. Irvine
  */
 public class A000682 extends A005316 {

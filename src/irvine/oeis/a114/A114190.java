@@ -6,7 +6,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114190 Expansion of <code>1/(1+x*(1-x)*c(-2*x)), c(x)</code> the g.f. of <code>A000108</code>.
+ * A114190 Expansion of 1/(1+x*(1-x)*c(-2*x)), c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A114190 extends HolonomicRecurrence {

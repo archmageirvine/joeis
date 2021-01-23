@@ -9,7 +9,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
- * A032028 Number of rooted planar trees <code>(n+1</code> nodes) where any 2 subtrees extending from same node are different.
+ * A032028 Number of rooted planar trees (n+1 nodes) where any 2 subtrees extending from same node are different.
  * @author Sean A. Irvine
  */
 public class A032028 implements Sequence {

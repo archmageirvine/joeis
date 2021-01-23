@@ -5,7 +5,7 @@ package irvine.oeis.a060;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A060805 Numerators of special continued fraction for <code>2*zeta(3)</code>.
+ * A060805 Numerators of special continued fraction for 2*zeta(3).
  * @author Georg Fischer
  */
 public class A060805 extends HolonomicRecurrence {

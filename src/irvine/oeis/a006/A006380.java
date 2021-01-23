@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000721;
 
 /**
- * A006380 Number of equivalence classes of <code>4 X n</code> binary matrices when one can permute rows, permute columns and complement columns.
+ * A006380 Number of equivalence classes of 4 X n binary matrices when one can permute rows, permute columns and complement columns.
  * @author Sean A. Irvine
  */
 public class A006380 extends A000721 {

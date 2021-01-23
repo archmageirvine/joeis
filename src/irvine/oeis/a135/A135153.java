@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135153 Repeat Pell numbers <code>A000129</code>.
+ * A135153 Repeat Pell numbers A000129.
  * @author Georg Fischer
  */
 public class A135153 extends GeneratingFunctionSequence {

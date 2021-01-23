@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304839 <code>a(n) = 61*n - 38 (n&gt;=1)</code>.
+ * A304839 a(n) = 61*n - 38 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304839 extends GeneratingFunctionSequence {

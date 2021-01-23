@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191526 Number left factors of Dyck paths of length n and having no hills; a hill is a <code>(1,1)-step</code> starting at level 0 and followed by a <code>(1,-1)-step</code>.
+ * A191526 Number left factors of Dyck paths of length n and having no hills; a hill is a (1,1)-step starting at level 0 and followed by a (1,-1)-step.
  * @author Georg Fischer
  */
 public class A191526 extends HolonomicRecurrence {

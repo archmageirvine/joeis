@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179483 <code>A(k,3)</code> where <code>A(k,n) = Sum_{m=1..k} (-1)^(m+1) *binomial(n,m)*m^k</code>.
+ * A179483 A(k,3) where A(k,n) = Sum_{m=1..k} (-1)^(m+1) *binomial(n,m)*m^k.
  * @author Georg Fischer
  */
 public class A179483 extends GeneratingFunctionSequence {

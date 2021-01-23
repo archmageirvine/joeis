@@ -7,7 +7,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A108669 Triangle read by rows: <code>T(n,k) = 11*k*n + 14*(n+k) + 20 (0 &lt;= k &lt;= n)</code>.
+ * A108669 Triangle read by rows: T(n,k) = 11*k*n + 14*(n+k) + 20 (0 &lt;= k &lt;= n).
  * @author Georg Fischer
  */
 public class A108669 extends GeneratingFunctionTriangle {

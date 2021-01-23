@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A022441 <code>a(n) = c(n) + c(n-1)</code> where c <code>(A055562)</code> is the sequence of numbers not in a.
+ * A022441 a(n) = c(n) + c(n-1) where c (A055562) is the sequence of numbers not in a.
  * @author Sean A. Irvine
  */
 public class A022441 extends PrependSequence {

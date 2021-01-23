@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274870 Number of set partitions of <code>[n]</code> into exactly six blocks such that all odd elements are in blocks with an odd index and all even elements are in blocks with an even index.
+ * A274870 Number of set partitions of [n] into exactly six blocks such that all odd elements are in blocks with an odd index and all even elements are in blocks with an even index.
  * @author Georg Fischer
  */
 public class A274870 extends GeneratingFunctionSequence {

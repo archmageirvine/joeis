@@ -1,8 +1,10 @@
 package irvine.oeis.a001;
 
+import irvine.math.lattice.Hunter;
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import jmason.poly.PolyominoCounter;
 
 /**
  * A001168 Number of fixed polyominoes with n cells.
@@ -10,12 +12,11 @@ import jmason.poly.PolyominoCounter;
  */
 public class A001168 implements Sequence {
 
-  private int mMax = 0;
+  private final ParallelHunter mHunter = new ParallelHunter(7, () -> new Hunter(Lattices.Z2, true));
+  private int mN = -1;
 
   @Override
   public Z next() {
-    final PolyominoCounter pc = new PolyominoCounter(++mMax, false, false, false);
-    pc.run(true, true, false);
-    return Z.valueOf(pc.getCu().getCounter(mMax));
+    return Z.valueOf(mHunter.count(++mN));
   }
 }

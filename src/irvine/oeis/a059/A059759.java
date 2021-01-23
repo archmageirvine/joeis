@@ -5,13 +5,13 @@ package irvine.oeis.a059;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A059759 Numbers k such that <code>3*2^k + 35</code> is prime.
+ * A059759 Numbers k such that 3*2^k + 35 is prime.
  * @author Georg Fischer
  */
 public class A059759 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A059759() {
-    super(1, 1, 3, 2, +35, 0);
+    super(1, 1, 3, 2, +35);
   }
 }

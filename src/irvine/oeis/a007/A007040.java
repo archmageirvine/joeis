@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007040 Number of (marked) cyclic n-bit binary strings containing no runs of length <code>&gt; 2</code>.
+ * A007040 Number of (marked) cyclic n-bit binary strings containing no runs of length &gt; 2.
  * @author Sean A. Irvine
  */
 public class A007040 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030531 Value of <code>3^x - 2^x - 5</code> for the solutions of <code>3^x - 2^x == 5 (mod 7)</code>.
+ * A030531 Value of 3^x - 2^x - 5 for the solutions of 3^x - 2^x == 5 (mod 7).
  * @author Sean A. Irvine
  */
 public class A030531 implements Sequence {

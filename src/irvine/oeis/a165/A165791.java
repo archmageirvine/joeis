@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165791 Number of tilings of a <code>4 X n</code> rectangle using dominoes and right trominoes.
+ * A165791 Number of tilings of a 4 X n rectangle using dominoes and right trominoes.
  * @author Georg Fischer
  */
 public class A165791 extends GeneratingFunctionSequence {

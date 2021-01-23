@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A194650 Number of ways to place 2 nonattacking kings on an <code>n X n</code> cylindrical chessboard.
+ * A194650 Number of ways to place 2 nonattacking kings on an n X n cylindrical chessboard.
  * @author Georg Fischer
  */
 public class A194650 extends GeneratingFunctionSequence {

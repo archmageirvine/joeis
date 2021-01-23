@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A132362 A <code>6 X 6</code> magic square using triangular numbers, read by rows.
+ * A132362 A 6 X 6 magic square using triangular numbers, read by rows.
  * @author Georg Fischer
  */
 public class A132362 extends FiniteSequence {

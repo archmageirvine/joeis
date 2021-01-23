@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007917 Version 1 of the "previous prime" function: largest prime <code>&lt;= n</code>.
+ * A007917 Version 1 of the "previous prime" function: largest prime &lt;= n.
  * @author Sean A. Irvine
  */
 public class A007917 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A030299 Decimal representation of permutations of lengths <code>1, 2, 3</code>, ... arranged lexicographically.
+ * A030299 Decimal representation of permutations of lengths 1, 2, 3, ... arranged lexicographically.
  * @author Sean A. Irvine
  */
 public class A030299 implements Sequence {

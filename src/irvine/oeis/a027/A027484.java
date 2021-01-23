@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027484 <code>n(n^4-1)/2</code>.
+ * A027484 n(n^4-1)/2.
  * @author Sean A. Irvine
  */
 public class A027484 implements Sequence {

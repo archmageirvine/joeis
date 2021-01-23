@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034385 Expansion of <code>(1-16*x)^(-1/4)</code>, related to quartic factorial numbers.
+ * A034385 Expansion of (1-16*x)^(-1/4), related to quartic factorial numbers.
  * @author Georg Fischer
  */
 public class A034385 extends HolonomicRecurrence {

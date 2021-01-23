@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309000 Number of strings of length n from a 3 symbol alphabet <code>(A,B,C</code>, say) containing at least one "A" and at least two "B"s.
+ * A309000 Number of strings of length n from a 3 symbol alphabet (A,B,C, say) containing at least one "A" and at least two "B"s.
  * @author Georg Fischer
  */
 public class A309000 extends HolonomicRecurrence {

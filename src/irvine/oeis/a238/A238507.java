@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A238507 Smallest number m such that <code>3^m</code> contains a string of n consecutive increasing integers in its decimal representation.
+ * A238507 Smallest number m such that 3^m contains a string of n consecutive increasing integers in its decimal representation.
  * @author Georg Fischer
  */
 public class A238507 extends FiniteSequence {

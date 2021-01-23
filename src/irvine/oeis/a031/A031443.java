@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031443 Digitally balanced numbers: numbers that in base 2 have the same number of <code>0</code>'s as <code>1</code>'s.
+ * A031443 Digitally balanced numbers: numbers that in base 2 have the same number of 0's as 1's.
  * @author Sean A. Irvine
  */
 public class A031443 implements Sequence {

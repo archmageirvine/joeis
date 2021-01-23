@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215545 Number of standard Young tableaux of shape <code>[5n,5]</code>.
+ * A215545 Number of standard Young tableaux of shape [5n,5].
  * @author Georg Fischer
  */
 public class A215545 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A236258 Decimal expansion of <code>2 + 21/4*(4/11)^(4/3)</code>.
+ * A236258 Decimal expansion of 2 + 21/4*(4/11)^(4/3).
  * @author Georg Fischer
  */
 public class A236258 extends DecimalExpansionSequence {

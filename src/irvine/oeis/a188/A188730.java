@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188730 Decimal expansion of <code>(2+sqrt(29))/5</code>.
+ * A188730 Decimal expansion of (2+sqrt(29))/5.
  * @author Georg Fischer
  */
 public class A188730 extends DecimalExpansionSequence {

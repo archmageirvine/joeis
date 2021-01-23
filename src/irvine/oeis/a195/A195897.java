@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A195897 Number of ways to place a queen, a rook, a bishop, a knight and a king on an <code>n X n</code> chessboard such each piece attacks the same number of unoccupied spaces.
+ * A195897 Number of ways to place a queen, a rook, a bishop, a knight and a king on an n X n chessboard such each piece attacks the same number of unoccupied spaces.
  * @author Georg Fischer
  */
 public class A195897 extends FiniteSequence {

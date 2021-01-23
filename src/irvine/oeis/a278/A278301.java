@@ -6,7 +6,7 @@ package irvine.oeis.a278;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A278301 Number of permutations of length n in the class of juxtapositions of 321-avoiders with <code>21-avoiders</code>.
+ * A278301 Number of permutations of length n in the class of juxtapositions of 321-avoiders with 21-avoiders.
  * @author Georg Fischer
  */
 public class A278301 extends HolonomicRecurrence {

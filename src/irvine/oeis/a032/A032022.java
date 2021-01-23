@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032022 Number of compositions (ordered partitions) of n into distinct parts <code>&gt;= 2</code>.
+ * A032022 Number of compositions (ordered partitions) of n into distinct parts &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A032022 implements Sequence {

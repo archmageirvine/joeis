@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A281727 <code>a(n) = (-1)^n * 2</code> if <code>n = 3*k</code> and <code>n!=0</code>, otherwise <code>a(n) = (-1)^n</code>.
+ * A281727 a(n) = (-1)^n * 2 if n = 3*k and n!=0, otherwise a(n) = (-1)^n.
  * @author Georg Fischer
  */
 public class A281727 extends GeneratingFunctionSequence {

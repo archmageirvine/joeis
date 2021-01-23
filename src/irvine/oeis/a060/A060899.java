@@ -6,7 +6,7 @@ package irvine.oeis.a060;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A060899 Number of walks of length n on square lattice, starting at origin, staying on points with <code>x+y &gt;= 0</code>.
+ * A060899 Number of walks of length n on square lattice, starting at origin, staying on points with x+y &gt;= 0.
  * @author Georg Fischer
  */
 public class A060899 extends HolonomicRecurrence {

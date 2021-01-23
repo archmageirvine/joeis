@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000223 Let <code>A(n) = #{(i,j,k): i^2 + j^2 + k^2 &lt;= n}, V(n) = (4/3)Pi*n^(3/2), P(n) = A(n) - V(n); A000092</code> gives values of n where <code>|P(n)|</code> sets a new record; sequence gives (nearest integer to, I believe) <code>P(A000092(n))</code>.
+ * A000223 Let A(n) = #{(i,j,k): i^2 + j^2 + k^2 &lt;= n}, V(n) = (4/3)Pi*n^(3/2), P(n) = A(n) - V(n); A000092 gives values of n where |P(n)| sets a new record; sequence gives (nearest integer to, I believe) P(A000092(n)).
  * @author Sean A. Irvine
  */
 public class A000223 implements Sequence {

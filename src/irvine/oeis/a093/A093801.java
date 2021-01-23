@@ -6,7 +6,7 @@ package irvine.oeis.a093;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A093801 <code>a(n) = b(n)*Integral_{x=0..1/(4^n)} (1 - sqrt(x))</code> dx, where <code>b(n) = 3*24^n</code>.
+ * A093801 a(n) = b(n)*Integral_{x=0..1/(4^n)} (1 - sqrt(x)) dx, where b(n) = 3*24^n.
  * @author Georg Fischer
  */
 public class A093801 extends HolonomicRecurrence {

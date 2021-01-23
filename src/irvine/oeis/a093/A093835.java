@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093835 <code>n*Jacobsthal(n)</code>.
+ * A093835 n*Jacobsthal(n).
  * @author Sean A. Irvine
  */
 public class A093835 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024787 Number of <code>3</code>'s in all partitions of <code>n</code>.
+ * A024787 Number of 3's in all partitions of n.
  * @author Sean A. Irvine
  */
 public class A024787 extends MemoryFunction2<Integer, Z[]> implements Sequence {

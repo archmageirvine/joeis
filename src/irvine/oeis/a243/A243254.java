@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243254 Number of compositions of n into parts <code>{3,4,5}</code> when all parts 3,4 and 5 are present.
+ * A243254 Number of compositions of n into parts {3,4,5} when all parts 3,4 and 5 are present.
  * @author Georg Fischer
  */
 public class A243254 extends GeneratingFunctionSequence {

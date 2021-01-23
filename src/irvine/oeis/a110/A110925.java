@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A110925 <code>a(1) = 1</code>; for <code>n&gt;1, a(n)</code> is the smallest positive integer such that the continued fraction <code>[a(1),a(2),a(3),...,a(n)]</code> has numerator divisible by <code>n</code>.
+ * A110925 a(1) = 1; for n&gt;1, a(n) is the smallest positive integer such that the continued fraction [a(1),a(2),a(3),...,a(n)] has numerator divisible by n.
  * @author Georg Fischer
  */
 public class A110925 extends FiniteSequence {

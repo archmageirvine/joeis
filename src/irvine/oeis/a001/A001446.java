@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001446 <code>(4^n + 4^[ n/2 ] )/2</code>.
+ * A001446 a(n) = (4^n + 4^[ n/2 ] )/2.
  * @author Sean A. Irvine
  */
 public class A001446 implements Sequence {

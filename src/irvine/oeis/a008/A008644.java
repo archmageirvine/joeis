@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008644 Molien series of <code>5 X 5</code> upper triangular matrices over <code>GF( 2 )</code>.
+ * A008644 Molien series of 5 X 5 upper triangular matrices over GF( 2 ).
  * @author Sean A. Irvine
  */
 public class A008644 extends CoordinationSequence {

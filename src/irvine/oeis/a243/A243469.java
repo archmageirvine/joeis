@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243469 Denominators of the rational convergents to the periodic continued fraction <code>1/(2 + 1/(7 + 1/(2 + 1/(7 + ...))))</code>.
+ * A243469 Denominators of the rational convergents to the periodic continued fraction 1/(2 + 1/(7 + 1/(2 + 1/(7 + ...)))).
  * @author Georg Fischer
  */
 public class A243469 extends GeneratingFunctionSequence {

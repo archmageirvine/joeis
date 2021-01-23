@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002596 Numerators in expansion of <code>sqrt(1+x)</code>. Absolute values give numerators in expansion of <code>sqrt(1-x)</code>.
+ * A002596 Numerators in expansion of sqrt(1+x). Absolute values give numerators in expansion of sqrt(1-x).
  * @author Sean A. Irvine
  */
 public class A002596 implements Sequence {

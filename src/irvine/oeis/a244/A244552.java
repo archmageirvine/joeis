@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244552 Palindromes n such that <code>n +/-</code> the sum of digits of n are both palindromes.
+ * A244552 Palindromes n such that n +/- the sum of digits of n are both palindromes.
  * @author Georg Fischer
  */
 public class A244552 extends FiniteSequence {

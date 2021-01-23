@@ -5,7 +5,7 @@ package irvine.oeis.a331;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A331066 Coordination sequence for second kind of trivalent vertex in 1-skeleton of pentagonal icositetrahedron.
+ * A331066 Coordination sequence for second  kind of trivalent vertex in 1-skeleton of pentagonal icositetrahedron.
  * @author Georg Fischer
  */
 public class A331066 extends FiniteSequence {

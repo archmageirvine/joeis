@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226500 Triangular numbers representable as <code>3 * x^2</code>.
+ * A226500 Triangular numbers representable as 3 * x^2.
  * @author Sean A. Irvine
  */
 public class A226500 extends LinearRecurrence {

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Accumulator {
 
   final ArrayList<Countable> mA;
-  final UTest mUt;
+  final UniquenessTester mUt;
   final int[] mCounters;
   final int mMax;
 
@@ -30,7 +30,7 @@ public class Accumulator {
    */
   public Accumulator(final int max) {
     mA = new ArrayList<>();
-    mUt = new UTest();
+    mUt = new UniquenessTester();
     mMax = max;
     mCounters = new int[max + 1];
   }
@@ -42,7 +42,7 @@ public class Accumulator {
   }
 
   boolean add(final Countable c) {
-    if (!mUt.put(c.mP.mUniq)) {
+    if (!mUt.add(c.mP.mUniq)) {
       if (c.mCountable) {
         throw new RuntimeException(c.mP.mCs.makeDiagram());
       }

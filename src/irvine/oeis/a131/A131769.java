@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131769 Number of connected components in the double Bruhat cells for simple Lie groups of type <code>B_n</code> (or <code>C_n)</code>.
+ * A131769 Number of connected components in the double Bruhat cells for simple Lie groups of type B_n (or C_n).
  * @author Georg Fischer
  */
 public class A131769 extends GeneratingFunctionSequence {

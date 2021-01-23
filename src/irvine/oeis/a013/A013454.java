@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013454 <code>cos(tan(x)-tanh(x))=1-160/6!*x^6-261120/10!*x^10+3942400/12!*x^12..</code>.
+ * A013454 cos(tan(x)-tanh(x))=1-160/6!*x^6-261120/10!*x^10+3942400/12!*x^12...
  * @author Sean A. Irvine
  */
 public class A013454 implements Sequence {

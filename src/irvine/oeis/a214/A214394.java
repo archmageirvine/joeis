@@ -6,7 +6,7 @@ package irvine.oeis.a214;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A214394 If <code>n mod 6 = 0</code> then <code>n/6</code> else <code>n</code>.
+ * A214394 If n mod 6 = 0 then n/6 else n.
  * @author Georg Fischer
  */
 public class A214394 extends HolonomicRecurrence {

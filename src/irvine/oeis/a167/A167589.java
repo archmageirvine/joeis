@@ -6,7 +6,7 @@ package irvine.oeis.a167;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A167589 The third column of the <code>ED4</code> array <code>A167584</code>.
+ * A167589 The third column of the ED4 array A167584.
  * @author Georg Fischer
  */
 public class A167589 extends HolonomicRecurrence {

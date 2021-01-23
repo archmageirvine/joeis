@@ -6,7 +6,7 @@ package irvine.oeis.a321;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A321965 <code>a(n) = n! [x^n] exp((1/(x - 1)^2 - 1)/2)/(1 - x)</code>.
+ * A321965 a(n) = n! [x^n] exp((1/(x - 1)^2 - 1)/2)/(1 - x).
  * @author Georg Fischer
  */
 public class A321965 extends HolonomicRecurrence {

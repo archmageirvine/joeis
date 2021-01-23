@@ -164,7 +164,6 @@ public final class LongUtils {
   /**
    * Return the integer square root of a positive long. If <code>n&lt;0</code> then an
    * arithmetic exception is thrown.
-   *
    * @param n number
    * @return <code>floor(sqrt(n))</code>
    * @throws ArithmeticException if <code>n&lt;0</code>.
@@ -202,7 +201,6 @@ public final class LongUtils {
   /**
    * Compute the number of bits in <code>a</code>. The
    * absolute value of <code>a</code> is considered.
-   *
    * @param a number to take logarithm of.
    * @return base 2 logarithm of <code>a</code>
    */
@@ -265,24 +263,6 @@ public final class LongUtils {
    */
   public static long lcm(final long a, final long b) {
     return (a / gcd(a, b)) * b;
-  }
-
-  /**
-   * Compute the greatest common denominator of two integers and
-   * return integers <code>u,v</code> such that
-   * <code>egcd[0] = a * egcd[1] + b * egcd[2]</code>
-   *
-   * @param a first integer
-   * @param b second integer
-   * @return extended Euclidean result
-   */
-  public static long[] egcd(final long a, final long b) {
-    if (b == 0) {
-      return new long[] {a, 1, 0};
-    }
-    final long[] g = egcd(b, a - a / b * b);
-    g[2] = g[1] - a / b * (g[1] = g[2]);
-    return g;
   }
 
   /**
@@ -394,26 +374,10 @@ public final class LongUtils {
     return sum;
   }
 
-  /**
-   * Compute the product of the digits in <code>|n|</code>.
-   * @param n number
-   * @return digit product
-   */
-  public static long digitProduct(final long n) {
-    long m = Math.abs(n);
-    long p = 1;
-    do {
-      p *= m % 10;
-      m /= 10;
-    } while (m != 0 && p != 0);
-    return p;
-  }
-
   // Faster heuristic algorithms are known
 
   /**
    * Algorithm 5.3.5 in Cohen, A Course in Computational Algebraic Number Theory
-   *
    * @param discriminant the discriminant
    * @return the class number
    */
@@ -474,7 +438,6 @@ public final class LongUtils {
    * Read numbers from a stream into an array.  Empty lines or lines starting
    * with <code>#</code> are ignored. Behaviour on out of range numbers is
    * undefined.
-   *
    * @param resource reader source
    * @return array of numbers
    */
@@ -493,7 +456,6 @@ public final class LongUtils {
    * function is always 42.  Hence a deterministic sequence of random values
    * can be produced if this method is called in the same order in a different
    * execution.
-   *
    * @param v array to fill
    */
   public static void random(final long[] v) {
@@ -502,11 +464,8 @@ public final class LongUtils {
     }
   }
 
-
   /**
-   * Sum the contents of an arbitrary dimensioned primitive int or Integer
-   * array.
-   *
+   * Sum the contents of an arbitrary dimensioned primitive int or Integer array.
    * @param structure array
    * @return sum of the array
    */
@@ -545,6 +504,21 @@ public final class LongUtils {
   }
 
   /**
+   * Minimum of an array of values.
+   * @param values the possible values
+   * @return the minimum
+   */
+  public static long min(final long... values) {
+    long m = Long.MAX_VALUE;
+    for (final long v : values) {
+      if (v < m) {
+        m = v;
+      }
+    }
+    return m;
+  }
+
+  /**
    * Test if the given value is square free.
    * @param n value to test
    * @return true if the number is square free
@@ -553,10 +527,8 @@ public final class LongUtils {
     return Cheetah.factor(n).maxExponent() <= 1;
   }
 
-
   /**
    * Step to the next number with the same number of set bits.
-   *
    * @param x current value
    * @return next value
    */
@@ -620,7 +592,6 @@ public final class LongUtils {
   /**
    * Return the decimal reverse of a number. For example, reverse 24 is 42.
    * Only for nonnegative.  Might overflow without warning for large inputs.
-   *
    * @param n number to reverse
    * @return reverse
    */
@@ -658,7 +629,6 @@ public final class LongUtils {
 
   /**
    * Make the array an identity map up to entry <code>n</code>.
-   *
    * @param length length of array
    * @return the array
    */
@@ -669,7 +639,6 @@ public final class LongUtils {
   /**
    * Convert a list of integers specified as a string into an array of longs.
    * The numbers in the string can be space or comma separated.
-   *
    * @param string string containing numbers
    * @return long array
    */
@@ -703,8 +672,85 @@ public final class LongUtils {
     }
     return s;
   }
+
+  /**
+   * Kronecker matrix product (tensor product). Suitable for relatively small integer matrices.
+   * @param a first matrix
+   * @param b second matrix
+   * @return Kronecker product
+   */
+  public static long[][] kroneckerProduct(final long[][] a, final long[][] b) {
+    final long[][] c = new long[a.length * b.length][a[0].length * b[0].length];
+    for (int y = 0; y < a.length; ++y) {
+      for (int x = 0; x < a[0].length; ++x) {
+        for (int u = 0; u < b.length; ++u) {
+          for (int v = 0; v < b[0].length; ++v) {
+            c[y * b.length + u][x * b[0].length + v] = a[y][x] * b[u][v];
+          }
+        }
+      }
+    }
+    return c;
+  }
+
+  /**
+   * Kronecker matrix square.
+   * @param a matrix
+   * @return Kronecker product
+   */
+  public static long[][] kroneckerSquare(final long[][] a) {
+    return kroneckerProduct(a, a);
+  }
+
+  /**
+   * Compare two arrays of longs.
+   * @param a first array
+   * @param b second array
+   * @return comparison of a and b
+   */
+  public static int compare(final long[] a, final long[] b) {
+    final int c = Integer.compare(a.length, b.length);
+    if (c != 0) {
+      return c;
+    }
+    for (int k = 0; k < a.length; ++k) {
+      final int v = Long.compare(a[k], b[k]);
+      if (v != 0) {
+        return v;
+      }
+    }
+    return 0;
+  }
+
+  /**
+   * Test if an array of longs is zero
+   * @param a array to test
+   * @return true iff the array is all zero
+   */
+  public static boolean isZero(final long... a) {
+    for (final long v : a) {
+      if (v != 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Rotate one position left in binary up to leading significant bit.
+   * @param n number to rotate
+   * @return rotated value
+   */
+  public static long rotateLeft(final long n) {
+    return ((n << 1) + 1) & (LongUtils.nextPowerOf2(n) - 1);
+  }
+
+  /**
+   * Rotate one position right in binary up to leading significant bit.
+   * @param n number to rotate
+   * @return rotated value
+   */
+  public static long rotateRight(final long n) {
+    return (n >>> 1) | ((n & 1) << LongUtils.lg(n));
+  }
 }
-
-
-
-

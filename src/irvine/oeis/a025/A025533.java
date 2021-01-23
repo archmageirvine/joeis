@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025533 <code>a(n) = (1/C(n,0) + 1/C(n,1) + ... + 1/C(n,n))*L</code>, where L <code>= LCM{C(n,0), C(n,1),..., C(n,n)}.</code>.
+ * A025533 a(n) = (1/C(n,0) + 1/C(n,1) + ... + 1/C(n,n))*L, where L = LCM{C(n,0), C(n,1),..., C(n,n)}..
  * @author Sean A. Irvine
  */
 public class A025533 implements Sequence {

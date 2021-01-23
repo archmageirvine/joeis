@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000465;
 
 /**
- * A031127 Number of proper factorizations of <code>p1^n*p2^4</code>, where <code>p1</code> and <code>p2</code> are distinct primes.
+ * A031127 Number of proper factorizations of p1^n*p2^4, where p1 and p2 are distinct primes.
  * @author Sean A. Irvine
  */
 public class A031127 extends A000465 {

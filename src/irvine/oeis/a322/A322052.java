@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322052 Number of decimal strings of length n that contain a specific string <code>xy</code> where x and y are distinct digits.
+ * A322052 Number of decimal strings of length n that contain a specific string xy where x and y are distinct digits.
  * @author Georg Fischer
  */
 public class A322052 extends GeneratingFunctionSequence {

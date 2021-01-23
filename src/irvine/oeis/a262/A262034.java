@@ -6,7 +6,7 @@ package irvine.oeis.a262;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A262034 Number of permutations of <code>[n]</code> beginning with at least <code>ceiling(n/2)</code> ascents.
+ * A262034 Number of permutations of [n] beginning with at least ceiling(n/2) ascents.
  * @author Georg Fischer
  */
 public class A262034 extends HolonomicRecurrence {

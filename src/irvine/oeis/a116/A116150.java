@@ -5,7 +5,7 @@ package irvine.oeis.a116;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A116150 <code>a(n) = Sum_{j=1..n} (3^j + (-2)^j)</code>.
+ * A116150 a(n) = Sum_{j=1..n} (3^j + (-2)^j).
  * @author Georg Fischer
  */
 public class A116150 extends HolonomicRecurrence {

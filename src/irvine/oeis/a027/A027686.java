@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027686 Number of ways to transform say <code>(((((((ab)c)d)e)f)g)h)</code> to <code>(a(b(c(d(e(f(gh)))))))</code> where there are n multiplications (hence <code>n+1</code> variables) by repeatedly applying the one-way associative law <code>((xy)z) -&gt; (x(yz))</code>.
+ * A027686 Number of ways to transform say (((((((ab)c)d)e)f)g)h) to (a(b(c(d(e(f(gh))))))) where there are n multiplications (hence n+1 variables) by repeatedly applying the one-way associative law ((xy)z) -&gt; (x(yz)).
  * @author Sean A. Irvine
  */
 public class A027686 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247281 <code>4^n -(-1)^n</code>.
+ * A247281 4^n -(-1)^n.
  * @author Sean A. Irvine
  */
 public class A247281 extends LinearRecurrence {

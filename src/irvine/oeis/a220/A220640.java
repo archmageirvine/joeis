@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A220640 Number of ways to reciprocally link elements of an <code>n X 4</code> array either to themselves or to exactly one king-move neighbor.
+ * A220640 Number of ways to reciprocally link elements of an n X 4 array either to themselves or to exactly one king-move neighbor.
  * @author Georg Fischer
  */
 public class A220640 extends GeneratingFunctionSequence {

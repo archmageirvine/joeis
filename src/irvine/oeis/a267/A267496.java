@@ -5,7 +5,7 @@ package irvine.oeis.a267;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A267496 Autobiographical numbers in base <code>8</code>: numbers which are fixed or belong to a cycle under the operator T.
+ * A267496 Autobiographical numbers in base 8: numbers which are fixed or belong to a cycle under the operator T.
  * @author Georg Fischer
  */
 public class A267496 extends FiniteSequence {

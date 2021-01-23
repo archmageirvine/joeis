@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A096582 From the <code>"100</code> Green Bottles" song.
+ * A096582 From the "100 Green Bottles" song.
  * @author Georg Fischer
  */
 public class A096582 extends FiniteSequence {

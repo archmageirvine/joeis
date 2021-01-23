@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129744 <code>a(n) = -(u^n-1)*(v^n-1)</code> with u <code>= 1+sqrt(2), v = 1-sqrt(2)</code>.
+ * A129744 a(n) = -(u^n-1)*(v^n-1) with u = 1+sqrt(2), v = 1-sqrt(2).
  * @author Georg Fischer
  */
 public class A129744 extends GeneratingFunctionSequence {

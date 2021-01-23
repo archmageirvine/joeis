@@ -5,7 +5,7 @@ package irvine.oeis.a101;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A101686 <code>a(n) = Product_{i=1..n} (i^2 + 1)</code>.
+ * A101686 a(n) = Product_{i=1..n} (i^2 + 1).
  * @author Georg Fischer
  */
 public class A101686 extends HolonomicRecurrence {

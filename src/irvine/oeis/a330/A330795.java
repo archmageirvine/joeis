@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330795 Evaluation of the polynomials given by the Riordan square of the Fibonacci sequence with <code>a(0) = 1 (A193737)</code> at 1/2 and normalized with <code>2^n</code>.
+ * A330795 Evaluation of the polynomials given by the Riordan square of the Fibonacci sequence with a(0) = 1 (A193737) at 1/2 and normalized with 2^n.
  * @author Georg Fischer
  */
 public class A330795 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A143746 The number of totally real number fields of degree n with definite Eichler orders <code>&lt;=2</code>.
+ * A143746 The number of totally real number fields of degree n with definite Eichler orders &lt;=2.
  * @author Georg Fischer
  */
 public class A143746 extends FiniteSequence {

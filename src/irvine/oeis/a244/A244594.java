@@ -5,7 +5,7 @@ package irvine.oeis.a244;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A244594 G.f. satisfies: <code>A(x) = (3 + A(x)^3) / (4 - x)</code>.
+ * A244594 G.f. satisfies: A(x) = (3 + A(x)^3) / (4 - x).
  * @author Georg Fischer
  */
 public class A244594 extends HolonomicRecurrence {

@@ -5,13 +5,13 @@ package irvine.oeis.a272;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A272622 Numbers k such that <code>9*10^k + 19</code> is prime.
+ * A272622 Numbers k such that 9*10^k + 19 is prime.
  * @author Georg Fischer
  */
 public class A272622 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A272622() {
-    super(1, 1, 9, 10, +19, 0);
+    super(1, 1, 9, 10, +19);
   }
 }

@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086091 <code>3^n+3n4^(n-1)</code>.
+ * A086091 3^n+3n4^(n-1).
  * @author Georg Fischer
  */
 public class A086091 extends GeneratingFunctionSequence {

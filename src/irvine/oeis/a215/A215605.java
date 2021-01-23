@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A215605 Number of unordered interval sequences that sum up to <code>12n</code> in Schoenberg 12-tone rows.
+ * A215605 Number of unordered interval sequences that sum up to 12n in Schoenberg 12-tone rows.
  * @author Georg Fischer
  */
 public class A215605 extends FiniteSequence {

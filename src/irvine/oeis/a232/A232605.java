@@ -6,7 +6,7 @@ package irvine.oeis.a232;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A232605 Number of compositions of <code>2n</code> into parts with multiplicity <code>&lt;= n</code>.
+ * A232605 Number of compositions of 2n into parts with multiplicity &lt;= n.
  * @author Georg Fischer
  */
 public class A232605 extends HolonomicRecurrence {

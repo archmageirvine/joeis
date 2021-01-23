@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108680 Kekul&#233; numbers for certain benzenoids.
+ * A108680 Kekul\u00e9 numbers for certain benzenoids.
  * @author Sean A. Irvine
  */
 public class A108680 extends LinearRecurrence {

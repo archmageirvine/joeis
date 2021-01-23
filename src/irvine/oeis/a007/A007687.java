@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007687 Number of 4-colorings of cyclic group of order <code>n</code>.
+ * A007687 Number of 4-colorings of cyclic group of order n.
  * @author Sean A. Irvine
  */
 public class A007687 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088662 Number of peaks at even level in all symmetric Dyck paths of semilength <code>n+2</code>.
+ * A088662 Number of peaks at even level in all symmetric Dyck paths of semilength n+2.
  * @author Georg Fischer
  */
 public class A088662 extends HolonomicRecurrence {

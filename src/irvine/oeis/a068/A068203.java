@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068203 Chebyshev <code>T-polynomials T(n,15)</code> with Diophantine property.
+ * A068203 Chebyshev T-polynomials T(n,15) with Diophantine property.
  * @author Sean A. Irvine
  */
 public class A068203 extends LinearRecurrence {

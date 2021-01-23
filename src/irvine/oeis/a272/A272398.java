@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A272398 The union of hexagonal numbers <code>(A000384)</code> and centered 9-gonal numbers <code>(A060544)</code>.
+ * A272398 The union of hexagonal numbers (A000384) and centered 9-gonal numbers (A060544).
  * @author Georg Fischer
  */
 public class A272398 extends GeneratingFunctionSequence {

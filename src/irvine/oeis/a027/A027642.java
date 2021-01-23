@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027642 Denominator of Bernoulli number <code>B_n</code>.
+ * A027642 Denominator of Bernoulli number B_n.
  * @author Sean A. Irvine
  */
 public class A027642 implements Sequence {

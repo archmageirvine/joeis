@@ -6,7 +6,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156195 <code>a(2n+2) = 6*a(2n+1), a(2n+1) = 6*a(2n) - 5^n*A000108(n), a(0)=1</code>.
+ * A156195 a(2n+2) = 6*a(2n+1), a(2n+1) = 6*a(2n) - 5^n*A000108(n), a(0)=1.
  * @author Georg Fischer
  */
 public class A156195 extends HolonomicRecurrence {

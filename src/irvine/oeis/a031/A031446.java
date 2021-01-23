@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031446 n-th number k which in base 2 has 3 more <code>0</code>'s than <code>1</code>'s.
+ * A031446 n-th number k which in base 2 has 3 more 0's than 1's.
  * @author Sean A. Irvine
  */
 public class A031446 implements Sequence {

@@ -5,13 +5,13 @@ package irvine.oeis.a295;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A295030 Numbers k such that <code>4*10^k + 91</code> is prime.
+ * A295030 Numbers k such that 4*10^k + 91 is prime.
  * @author Georg Fischer
  */
 public class A295030 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A295030() {
-    super(1, 1, 4, 10, +91, 0);
+    super(1, 1, 4, 10, +91);
   }
 }

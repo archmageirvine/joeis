@@ -6,7 +6,7 @@ package irvine.oeis.a285;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A285673 Total number of nodes summed over all self-avoiding planar walks starting at <code>(0,0)</code>, ending at <code>(n,n)</code>, remaining in the first quadrant and using steps <code>(0,1), (1,0), (1,1), (-1,1)</code>, and <code>(1,-1)</code> with the restriction that <code>(0,1)</code> is never used below the diagonal and <code>(1,0)</code> is never used above the diagonal.
+ * A285673 Total number of nodes summed over all self-avoiding planar walks starting at (0,0), ending at (n,n), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1) with the restriction that (0,1) is never used below the diagonal and (1,0) is never used above the diagonal.
  * @author Georg Fischer
  */
 public class A285673 extends HolonomicRecurrence {

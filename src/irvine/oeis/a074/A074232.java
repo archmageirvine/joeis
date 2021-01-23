@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074232 Positive numbers that are not 3 or <code>6 (mod 9)</code>.
+ * A074232 Positive numbers that are not 3 or 6 (mod 9).
  * @author Sean A. Irvine
  */
 public class A074232 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A186723 <code>a(n) = n^n! (mod 10)</code>.
+ * A186723 a(n) = n^n! (mod 10).
  * @author Georg Fischer
  */
 public class A186723 extends GeneratingFunctionSequence {

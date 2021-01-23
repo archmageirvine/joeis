@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014960 Integers n such that n divides <code>24^n - 1</code>.
+ * A014960 Integers n such that n divides 24^n - 1.
  * @author Sean A. Irvine
  */
 public class A014960 implements Sequence {

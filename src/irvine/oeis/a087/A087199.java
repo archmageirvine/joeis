@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A087199 Decimal expansion of <code>(3/(4*Pi))^(1/3)</code>.
+ * A087199 Decimal expansion of (3/(4*Pi))^(1/3).
  * @author Georg Fischer
  */
 public class A087199 extends DecimalExpansionSequence {

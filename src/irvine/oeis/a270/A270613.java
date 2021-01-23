@@ -5,7 +5,7 @@ package irvine.oeis.a270;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A270613 Numbers k such that <code>(68*10^k + 7)/3</code> is prime.
+ * A270613 Numbers k such that (68*10^k + 7)/3 is prime.
  * @author Georg Fischer
  */
 public class A270613 extends PowerFactorPrimeSequence {

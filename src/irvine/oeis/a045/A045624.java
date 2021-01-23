@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045624 Row sums of convolution triangle <code>A030526</code>.
+ * A045624 Row sums of convolution triangle A030526.
  * @author Sean A. Irvine
  */
 public class A045624 extends LinearRecurrence {

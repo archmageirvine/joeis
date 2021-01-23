@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279275 Numbers k such that <code>2*k+1</code> and <code>5*k+1</code> are both pentagonal numbers <code>(A000326)</code>.
+ * A279275 Numbers k such that 2*k+1 and 5*k+1 are both pentagonal numbers (A000326).
  * @author Sean A. Irvine
  */
 public class A279275 extends LinearRecurrence {

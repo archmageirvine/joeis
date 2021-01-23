@@ -6,7 +6,7 @@ package irvine.oeis.a084;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A084868 Main diagonal of symmetric square table <code>A084867</code>, in which the antidiagonal sums <code>(A006012)</code> form the first row shifted left.
+ * A084868 Main diagonal of symmetric square table A084867, in which the antidiagonal sums (A006012) form the first row shifted left.
  * @author Georg Fischer
  */
 public class A084868 extends HolonomicRecurrence {

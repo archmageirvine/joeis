@@ -5,7 +5,7 @@ package irvine.oeis.a318;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318119 Constant term in the expansion of <code>(Sum_{k=0..n} k*(x^k + x^(-k)))^5</code>.
+ * A318119 Constant term in the expansion of (Sum_{k=0..n} k*(x^k + x^(-k)))^5.
  * @author Georg Fischer
  */
 public class A318119 extends HolonomicRecurrence {

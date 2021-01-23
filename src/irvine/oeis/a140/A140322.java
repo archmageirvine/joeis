@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140322 <code>a(n) = -1/6 + (-1)^n/2 + 2*4^n/3</code>.
+ * A140322 a(n) = -1/6 + (-1)^n/2 + 2*4^n/3.
  * @author Sean A. Irvine
  */
 public class A140322 extends LinearRecurrence {

@@ -81,10 +81,10 @@ public class LogicalTest extends TestCase {
     }
     // check something that ands to 0
     Z z = Z.valueOf(0x0F0F0F0F0F0F0F0FL).and(Z.valueOf(0x70F0F0F0F0F0F0F0L));
-    assertTrue(z.equals(Z.ZERO));
+    assertTrue(z.isZero());
     assertEquals(0, z.bitLength());
     z = Z.valueOf(0x0F0F0F0F0F0F0F0FL).and(Z.valueOf(0xF0F0F0F0F0F0F0F0L));
-    assertTrue(z.equals(Z.ZERO));
+    assertTrue(z.isZero());
     assertEquals(0, z.bitLength());
     z = Z.valueOf(0x8F0F0F0F0F0F0F0FL).and(Z.valueOf(0xF0F0F0F0F0F0F0F0L));
     BigInteger v = BigInteger.valueOf(0x8F0F0F0F0F0F0F0FL).and(BigInteger.valueOf(0xF0F0F0F0F0F0F0F0L));

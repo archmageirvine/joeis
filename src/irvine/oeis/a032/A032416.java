@@ -5,13 +5,13 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032416 Numbers k such that <code>133*2^k+1</code> is prime.
+ * A032416 Numbers k such that 133*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A032416 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A032416() {
-    super(1, 4, 133, 2, +1, 0);
+    super(1, 4, 133, 2, 1);
   }
 }

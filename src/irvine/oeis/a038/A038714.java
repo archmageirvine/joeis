@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038714 Promic numbers repeated 4 times; <code>a(n) = floor(n/4) * ceiling((n+1)/4)</code>.
+ * A038714 Promic numbers repeated 4 times; a(n) = floor(n/4) * ceiling((n+1)/4).
  * @author Sean A. Irvine
  */
 public class A038714 extends LinearRecurrence {

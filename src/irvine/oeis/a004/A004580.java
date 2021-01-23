@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004580 Expansion of <code>sqrt(8)</code> in base 5.
+ * A004580 Expansion of sqrt(8) in base 5.
  * @author Sean A. Irvine
  */
 public class A004580 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(8).sqrt();
+  private static final CR N = CR.EIGHT.sqrt();
 
   /** Construct the sequence. */
   public A004580() {

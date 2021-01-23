@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266703 Coefficient of <code>x^2</code> in minimal polynomial of the continued fraction <code>[1^n,2/3,1,1,1,...]</code>, where <code>1^n</code> means n ones.
+ * A266703 Coefficient of x^2 in minimal polynomial of the continued fraction [1^n,2/3,1,1,1,...], where 1^n means n ones.
  * @author Georg Fischer
  */
 public class A266703 extends GeneratingFunctionSequence {

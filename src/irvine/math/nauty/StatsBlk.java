@@ -29,4 +29,8 @@ public class StatsBlk {
   public Z groupSize() {
     return mGrpSize;
   }
+
+  public int getNumOrbits() {
+    return mNumOrbits;
+  }
 }

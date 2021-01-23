@@ -6,7 +6,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102052 Column 1 of triangle <code>A102051</code>, which is the matrix inverse of triangle <code>A101275</code> (number of Schroeder paths).
+ * A102052 Column 1 of triangle A102051, which is the matrix inverse of triangle A101275 (number of Schroeder paths).
  * @author Georg Fischer
  */
 public class A102052 extends HolonomicRecurrence {

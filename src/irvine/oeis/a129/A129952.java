@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129952 Binomial transform of <code>A124625</code>.
+ * A129952 Binomial transform of A124625.
  * @author Georg Fischer
  */
 public class A129952 extends LinearRecurrence {

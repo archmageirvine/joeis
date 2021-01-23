@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A255818 <code>a(n) = 2*B*C*(n mod A) + A*C*(n mod B) + A*B*(n mod C)</code> with <code>A=3, B=5, C=7</code>.
+ * A255818 a(n) = 2*B*C*(n mod A) + A*C*(n mod B) + A*B*(n mod C) with A=3, B=5, C=7.
  * @author Georg Fischer
  */
 public class A255818 extends GeneratingFunctionSequence {

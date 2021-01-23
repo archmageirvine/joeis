@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024810 <code>a(n) = floor( tan(m*Pi/2) )</code>, where m <code>= 1 - 2^(-n)</code>.
+ * A024810 a(n) = floor( tan(m*Pi/2) ), where m = 1 - 2^(-n).
  * @author Sean A. Irvine
  */
 public class A024810 implements Sequence {

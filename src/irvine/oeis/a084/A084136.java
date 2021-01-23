@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084136 Binomial transform of <code>cosh(sqrt(2)*x)^2</code>.
+ * A084136 Binomial transform of cosh(sqrt(2)*x)^2.
  * @author Sean A. Irvine
  */
 public class A084136 extends LinearRecurrence {

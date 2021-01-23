@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A265729 Decimal expansion of <code>32*Pi</code>.
+ * A265729 Decimal expansion of 32*Pi.
  * @author Georg Fischer
  */
 public class A265729 extends DecimalExpansionSequence {

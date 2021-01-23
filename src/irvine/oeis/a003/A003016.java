@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A003016 Number of occurrences of n as an entry in rows <code>&lt;= n</code> of Pascal's triangle <code>(A007318)</code>.
+ * A003016 Number of occurrences of n as an entry in rows &lt;= n of Pascal's triangle (A007318).
  * @author Sean A. Irvine
  */
 public class A003016 implements Sequence {

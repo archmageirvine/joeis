@@ -6,7 +6,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188482 Diagonal sums of the Riordan matrix <code>(1/(1-4x),(1-sqrt(1-4x))/(2sqrt(1-4x)) (A188481)</code>.
+ * A188482 Diagonal sums of the Riordan matrix (1/(1-4x),(1-sqrt(1-4x))/(2sqrt(1-4x)) (A188481).
  * @author Georg Fischer
  */
 public class A188482 extends HolonomicRecurrence {

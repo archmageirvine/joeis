@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002122 <code>a(n) = Sum_{t=0..n} g(t)*g(n-t)</code> where <code>g(t) = A002121(t)</code>.
+ * A002122 a(n) = Sum_{t=0..n} g(t)*g(n-t) where g(t) = A002121(t).
  * @author Sean A. Irvine
  */
 public class A002122 extends A002121 {

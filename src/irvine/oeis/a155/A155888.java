@@ -4,7 +4,7 @@ package irvine.oeis.a155;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A155888 <code>a(n) =</code> dimension of the space of n-boxes in the unshaded subfactor planar algebra of type <code>E8</code>.
+ * A155888 a(n) = dimension of the space of n-boxes in the unshaded subfactor planar algebra of type E8.
  * @author Georg Fischer
  */
 public class A155888 extends GeneratingFunctionSequence {

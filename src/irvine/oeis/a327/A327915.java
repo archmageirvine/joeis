@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A327915 The 59 prime dates of each leap year of the form <code>concatenate(month,day)</code> with leading zero for days 1..9.
+ * A327915 The 59 prime dates of each leap year of the form concatenate(month,day) with leading zero for days 1..9.
  * @author Georg Fischer
  */
 public class A327915 extends FiniteSequence {

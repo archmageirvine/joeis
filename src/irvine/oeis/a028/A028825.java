@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028825 List of sizes of conjugacy classes of Mathieu simple group <code>M_24</code> of order 244823040.
+ * A028825 List of sizes of conjugacy classes of Mathieu simple group M_24 of order 244823040.
  * @author Georg Fischer
  */
 public class A028825 extends FiniteSequence {

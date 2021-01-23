@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030995 9-automorphic numbers ending in <code>5</code>: final digits of <code>9*n^2</code> agree with <code>n</code>.
+ * A030995 9-automorphic numbers ending in 5: final digits of 9*n^2 agree with n.
  * @author Sean A. Irvine
  */
 public class A030995 implements Sequence {

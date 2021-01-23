@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A245228 Number of nonisomorphic subsets of n cards of a standard deck of 52 cards under action of symmetric group <code>S_4</code> acting on the suits.
+ * A245228 Number of nonisomorphic subsets of n cards of a standard deck of 52 cards under action of symmetric group S_4 acting on the suits.
  * @author Georg Fischer
  */
 public class A245228 extends FiniteSequence {

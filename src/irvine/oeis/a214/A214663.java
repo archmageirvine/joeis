@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214663 Number of permutations of <code>1..n</code> for which the partial sums of signed displacements do not exceed 2.
+ * A214663 Number of permutations of 1..n for which the partial sums of signed displacements do not exceed 2.
  * @author Sean A. Irvine
  */
 public class A214663 extends LinearRecurrence {

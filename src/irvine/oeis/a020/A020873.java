@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020873 <code>a(n) =</code> number of cycles in Moebius ladder <code>M_n</code>.
+ * A020873 a(n) = number of cycles in Moebius ladder M_n.
  * @author Sean A. Irvine
  */
 public class A020873 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234592 Number of binary words of length n which have no <code>0^b 1 1 0^a 1 0 1 0^b -</code> matches, where <code>a=b=2</code>.
+ * A234592 Number of binary words of length n which have no 0^b 1 1 0^a 1 0 1 0^b - matches, where a=b=2.
  * @author Georg Fischer
  */
 public class A234592 extends LinearRecurrence {

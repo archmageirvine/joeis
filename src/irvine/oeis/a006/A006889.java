@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006889 Exponent of least power of 2 having n consecutive <code>0</code>'s in its decimal representation.
+ * A006889 Exponent of least power of 2 having n consecutive 0's in its decimal representation.
  * @author Sean A. Irvine
  */
 public class A006889 implements Sequence {

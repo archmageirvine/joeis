@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185061 Position of the first occurrence of n in <code>A193358</code> when it is considered to have the starting offset 1 instead of 0.
+ * A185061 Position of the first occurrence of n in A193358 when it is considered to have the starting offset 1 instead of 0.
  * @author Georg Fischer
  */
 public class A185061 extends GeneratingFunctionSequence {

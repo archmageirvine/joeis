@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A163435 Number of different fixed (possibly) disconnected pentominoes bounded tightly by an <code>n X n</code> square.
+ * A163435 Number of different fixed (possibly) disconnected pentominoes bounded tightly by an n X n square.
  * @author Georg Fischer
  */
 public class A163435 extends GeneratingFunctionSequence {

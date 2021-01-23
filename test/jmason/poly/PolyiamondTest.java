@@ -16,5 +16,6 @@ public class PolyiamondTest extends TestCase {
     assertEquals(1, p.getWidth());
     assertEquals(1, p.listSons(0).size());
     assertEquals(1, p.listSons(1).size());
+    assertEquals(3, p.perimeterSize());
   }
 }

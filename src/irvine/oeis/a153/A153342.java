@@ -7,7 +7,7 @@ package irvine.oeis.a153;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A153342 Binomial transform of triangle <code>A046854</code> (shifted).
+ * A153342 Binomial transform of triangle A046854 (shifted).
  * @author Georg Fischer
  */
 public class A153342 extends GeneratingFunctionTriangle {

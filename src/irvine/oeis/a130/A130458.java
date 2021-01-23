@@ -6,7 +6,7 @@ package irvine.oeis.a130;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A130458 Final term in the rows of triangle <code>A130457: a(n) = A130457(n, 3n)</code>, for <code>n&gt;=0</code>.
+ * A130458 Final term in the rows of triangle A130457: a(n) = A130457(n, 3n), for n&gt;=0.
  * @author Georg Fischer
  */
 public class A130458 extends HolonomicRecurrence {

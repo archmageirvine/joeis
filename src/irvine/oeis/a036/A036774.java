@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A036774 Number of labeled rooted unordered binary trees (each node has <code>out-degree &lt;= 2)</code>.
+ * A036774 Number of labeled rooted unordered binary trees (each node has out-degree &lt;= 2).
  * @author Georg Fischer
  */
 public class A036774 extends HolonomicRecurrence {

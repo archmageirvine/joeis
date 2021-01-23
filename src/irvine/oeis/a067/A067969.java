@@ -6,7 +6,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067969 Number of nodes in virtual, "optimal", chordal graphs of diameter 5, degree <code>=n+1</code>.
+ * A067969 Number of nodes in virtual, "optimal", chordal graphs of diameter 5, degree =n+1.
  * @author Georg Fischer
  */
 public class A067969 extends GeneratingFunctionSequence {

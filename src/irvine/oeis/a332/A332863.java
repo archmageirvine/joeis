@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A332863 Total binary weight squared of all <code>A005251(n)</code> binary sequences of length n not containing any isolated <code>1</code>'s.
+ * A332863 Total binary weight squared of all A005251(n) binary sequences of length n not containing any isolated 1's.
  * @author Georg Fischer
  */
 public class A332863 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141516 The main diagonal of the array of <code>A141425</code> and its higher order differences.
+ * A141516 The main diagonal of the array of A141425 and its higher order differences.
  * @author Georg Fischer
  */
 public class A141516 extends HolonomicRecurrence {

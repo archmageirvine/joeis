@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A096777 <code>a(n) = a(n-1) + Sum_{k=1..n-1}(a(k) mod 2), a(1) = 1</code>.
+ * A096777 a(n) = a(n-1) + Sum_{k=1..n-1}(a(k) mod 2), a(1) = 1.
  * @author Georg Fischer
  */
 public class A096777 extends GeneratingFunctionSequence {

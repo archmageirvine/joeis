@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082574 <code>a(1)=1, a(n) = ceiling(r(3)*a(n-1))</code> where <code>r(3) = (1/2)*(3 + sqrt(13))</code> is the positive root of <code>X^2 = 3*X + 1</code>.
+ * A082574 a(1)=1, a(n) = ceiling(r(3)*a(n-1)) where r(3) = (1/2)*(3 + sqrt(13)) is the positive root of X^2 = 3*X + 1.
  * @author Sean A. Irvine
  */
 public class A082574 extends LinearRecurrence {

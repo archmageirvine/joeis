@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006505 Number of partitions of an n-set into boxes of size <code>&gt;2</code>.
+ * A006505 Number of partitions of an n-set into boxes of size &gt;2.
  * @author Sean A. Irvine
  */
 public class A006505 implements Sequence {

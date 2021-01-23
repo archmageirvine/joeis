@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030485 Squares composed of digits <code>{2, 5, 7}</code>.
+ * A030485 Squares composed of digits {2, 5, 7}.
  * @author Sean A. Irvine
  */
 public class A030485 implements Sequence {

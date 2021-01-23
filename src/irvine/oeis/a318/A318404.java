@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A318404 <code>a(n) = F(n+1)^4 - 4*F(n-1)*F(n)^3</code>, where <code>F(n) = A000045(n)</code>, the n-th Fibonacci number.
+ * A318404 a(n) = F(n+1)^4 - 4*F(n-1)*F(n)^3, where F(n) = A000045(n), the n-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A318404 extends GeneratingFunctionSequence {

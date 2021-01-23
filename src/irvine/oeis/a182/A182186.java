@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182186 Number <code>b(n)</code> of basic ideals in the Borel subalgebra of the untwisted affine Lie algebra of type B.
+ * A182186 Number b(n) of basic ideals in the Borel subalgebra of the untwisted affine Lie algebra of type B.
  * @author Georg Fischer
  */
 public class A182186 extends HolonomicRecurrence {

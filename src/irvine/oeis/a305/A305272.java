@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305272 <code>a(n) = 836*2^n - 676</code>.
+ * A305272 a(n) = 836*2^n - 676.
  * @author Georg Fischer
  */
 public class A305272 extends GeneratingFunctionSequence {

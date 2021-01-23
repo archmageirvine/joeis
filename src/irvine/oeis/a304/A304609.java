@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304609 <code>a(n) = 114*n - 20</code>.
+ * A304609 a(n) = 114*n - 20.
  * @author Georg Fischer
  */
 public class A304609 extends GeneratingFunctionSequence {

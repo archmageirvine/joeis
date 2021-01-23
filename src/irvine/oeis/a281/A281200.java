@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A281200 Number of <code>n X 3 0..1</code> arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
+ * A281200 Number of n X 3 0..1 arrays with no element equal to more than one of its horizontal and antidiagonal neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
  * @author Georg Fischer
  */
 public class A281200 extends GeneratingFunctionSequence {

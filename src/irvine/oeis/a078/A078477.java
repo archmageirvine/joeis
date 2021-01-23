@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A078477 Number of rational knots with n crossings and unknotting number <code>= 1</code> (chiral pairs counted only once).
+ * A078477 Number of rational knots with n crossings and unknotting number = 1 (chiral pairs counted only once).
  * @author Georg Fischer
  */
 public class A078477 extends GeneratingFunctionSequence {

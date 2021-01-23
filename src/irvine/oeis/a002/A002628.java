@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000166;
 
 /**
- * A002628 Number of permutations of length n without <code>3-sequences</code>.
+ * A002628 Number of permutations of length n without 3-sequences.
  * @author Sean A. Irvine
  */
 public class A002628 implements Sequence {

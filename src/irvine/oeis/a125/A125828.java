@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a128.A128171;
 
 /**
- * A125828 Numbers n such that n divides <code>2^8 + 3^8 + ... + prime(n)^8</code>.
+ * A125828 Numbers m such that m divides 2^8 + 3^8 + ... + prime(m)^8.
  * @author Sean A. Irvine
  */
 public class A125828 extends A128171 {

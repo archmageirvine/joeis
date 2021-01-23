@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100887 Expansion of <code>(-1+2x+2x^2)/((1+x+x^2)(1-x-x^2))</code>.
+ * A100887 Expansion of (-1+2x+2x^2)/((1+x+x^2)(1-x-x^2)).
  * @author Georg Fischer
  */
 public class A100887 extends GeneratingFunctionSequence {

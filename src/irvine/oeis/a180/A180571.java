@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180571 The Wiener index of the graph <code>\|/_\/_\/_..._\/_\|/</code> having n nodes on the horizontal path. The Wiener index of a connected graph is the sum of distances between all unordered pairs of vertices in the graph.
+ * A180571 The Wiener index of the graph \|/_\/_\/_..._\/_\|/ having n nodes on the horizontal path.
  * @author Georg Fischer
  */
 public class A180571 extends GeneratingFunctionSequence {

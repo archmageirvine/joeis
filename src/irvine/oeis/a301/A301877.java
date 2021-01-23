@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301877 Group the natural numbers into groups <code>(1),(2),(3),(4),(5,6),(7,8,9),..</code>. so that the n-th group contains <code>N(n)</code> terms, where <code>N(n)</code> is the Narayana's cows sequence <code>(A000930)</code>. Sequence contains the sum of the terms in the n-th group.
+ * A301877 Group the natural numbers into groups (1),(2),(3),(4),(5,6),(7,8,9),... so that the n-th group contains N(n) terms, where N(n) is the Narayana's cows sequence (A000930). Sequence contains the sum of the terms in the n-th group.
  * @author Georg Fischer
  */
 public class A301877 extends GeneratingFunctionSequence {

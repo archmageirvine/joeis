@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ConvolutionSequence;
 
 /**
- * A000499 <code>a(n) = Sum_{k=1..n-1} k^3*sigma(k)*sigma(n-k)</code>.
+ * A000499 a(n) = Sum_{k=1..n-1} k^3*sigma(k)*sigma(n-k).
  * @author Sean A. Irvine
  */
 public class A000499 extends ConvolutionSequence {

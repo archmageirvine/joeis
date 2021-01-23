@@ -6,7 +6,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144829 Partial products of successive terms of <code>A017209; a(0)=1 </code>.
+ * A144829 Partial products of successive terms of A017209; a(0)=1 .
  * @author Georg Fischer
  */
 public class A144829 extends HolonomicRecurrence {

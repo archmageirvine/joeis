@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233291 Number of tilings of a <code>4 X 4 X n</code> box using <code>4n</code> bricks of shape <code>4 X 1 X 1</code>.
+ * A233291 Number of tilings of a 4 X 4 X n box using 4n bricks of shape 4 X 1 X 1.
  * @author Georg Fischer
  */
 public class A233291 extends GeneratingFunctionSequence {

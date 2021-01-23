@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255347 <code>a(n) = n * (1 - (-1)^(n/4) / 4)</code> if n divisible by <code>4, a(n) = n</code> otherwise.
+ * A255347 a(n) = n * (1 - (-1)^(n/4) / 4) if n divisible by 4, a(n) = n otherwise.
  * @author Sean A. Irvine
  */
 public class A255347 extends LinearRecurrence {

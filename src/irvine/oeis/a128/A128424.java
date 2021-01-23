@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128424 <code>a(n) = floor(sqrt(a(n-1)^2 + a(n-2)^2 + a(n-1)*a(n-2))), a(1)=1, a(2)=3</code>.
+ * A128424 a(n) = floor(sqrt(a(n-1)^2 + a(n-2)^2 + a(n-1)*a(n-2))), a(1)=1, a(2)=3.
  * @author Georg Fischer
  */
 public class A128424 extends GeneratingFunctionSequence {

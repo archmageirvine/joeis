@@ -5,7 +5,7 @@ package irvine.oeis.a318;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318417 Scaled g.f. <code>T(u) = Sum_{n&gt;=0} a(n)*(3*u/48)^n</code> satisfies <code>3*(2*u-1)*T + d/du(4*u*(2*u-1)*(u-1)*T') = 0</code>, and <code>a(0)=1</code>; sequence gives <code>a(n)</code>.
+ * A318417 Scaled g.f. T(u) = Sum_{n&gt;=0} a(n)*(3*u/48)^n satisfies 3*(2*u-1)*T + d/du(4*u*(2*u-1)*(u-1)*T') = 0, and a(0)=1; sequence gives a(n).
  * @author Georg Fischer
  */
 public class A318417 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A051927 Number of independent vertex sets in the n-prism graph <code>Y_n = K_2 X C_n (n &gt; 2)</code>.
+ * A051927 Number of independent vertex sets in the n-prism graph Y_n = K_2 X C_n (n &gt; 2).
  * @author Georg Fischer
  */
 public class A051927 extends GeneratingFunctionSequence {

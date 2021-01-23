@@ -5,13 +5,13 @@ package irvine.oeis.a293;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A293824 Numbers k such that <code>28*10^k + 1</code> is prime.
+ * A293824 Numbers k such that 28*10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A293824 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A293824() {
-    super(1, 0, 28, 10, +1, 0);
+    super(1, 0, 28, 10, 1);
   }
 }

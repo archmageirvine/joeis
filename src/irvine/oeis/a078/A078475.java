@@ -6,7 +6,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078475 Determinant of rank n matrix of <code>1..n^2</code> filled successively back and forth along antidiagonals.
+ * A078475 Determinant of rank n matrix of 1..n^2 filled successively back and forth along antidiagonals.
  * @author Georg Fischer
  */
 public class A078475 extends HolonomicRecurrence {

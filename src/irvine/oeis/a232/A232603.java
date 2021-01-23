@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232603 <code>2^n*sum( k=0..n, k^p*q^k )</code>, where <code>p=2, q=-1/2</code>.
+ * A232603 2^n*sum( k=0..n, k^p*q^k ), where p=2, q=-1/2.
  * @author Sean A. Irvine
  */
 public class A232603 extends LinearRecurrence {

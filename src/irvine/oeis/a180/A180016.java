@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180016 Partial sums of number of n-step closed paths on hexagonal lattice <code>A002898</code>.
+ * A180016 Partial sums of number of n-step closed paths on hexagonal lattice A002898.
  * @author Georg Fischer
  */
 public class A180016 extends HolonomicRecurrence {

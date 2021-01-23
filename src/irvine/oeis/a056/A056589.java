@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A056589 Third column sequence of unsigned triangle <code>A056588</code>.
+ * A056589 Third column sequence of unsigned triangle A056588.
  * @author Georg Fischer
  */
 public class A056589 extends GeneratingFunctionSequence {

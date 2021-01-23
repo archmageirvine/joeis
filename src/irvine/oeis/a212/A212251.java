@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A212251 Number of <code>(w,x,y,z)</code> with all terms in <code>{1,...,n}</code> and <code>3w = x + y + z + n + 1</code>.
+ * A212251 Number of (w,x,y,z) with all terms in {1,...,n} and 3w = x + y + z + n + 1.
  * @author Georg Fischer
  */
 public class A212251 extends GeneratingFunctionSequence {

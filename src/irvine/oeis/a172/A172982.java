@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A172982 Partial sums of minimal set of prime-strings in base <code>10 (A071062)</code>.
+ * A172982 Partial sums of minimal set of prime-strings in base 10 (A071062).
  * @author Georg Fischer
  */
 public class A172982 extends FiniteSequence {

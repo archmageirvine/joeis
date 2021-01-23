@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022304 Index of <code>n-th 1</code> in <code>A022303</code>.
+ * A022304 Index of n-th 1 in A022303.
  * @author Sean A. Irvine
  */
 public class A022304 extends A022303 {

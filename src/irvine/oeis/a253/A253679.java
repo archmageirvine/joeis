@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253679 Numbers <code>a(n)</code> that are the starting terms in the sum of an odd number of consecutive cubes equal to a square.
+ * A253679 Numbers a(n) that are the starting terms in the sum of an odd number of consecutive cubes equal to a square.
  * @author Sean A. Irvine
  */
 public class A253679 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A189088 Decimal expansion of <code>Pi - sqrt(Pi^2 - 1)</code>.
+ * A189088 Decimal expansion of Pi - sqrt(Pi^2 - 1).
  * @author Georg Fischer
  */
 public class A189088 extends DecimalExpansionSequence {

@@ -5,13 +5,13 @@ package irvine.oeis.a271;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A271361 Numbers n such that <code>63*10^n+1</code> is prime.
+ * A271361 Numbers n such that 63*10^n+1 is prime.
  * @author Georg Fischer
  */
 public class A271361 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A271361() {
-    super(1, 1, 63, 10, +1, 0);
+    super(1, 1, 63, 10, 1);
   }
 }

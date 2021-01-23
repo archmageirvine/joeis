@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023600 Convolution of <code>A023532</code> and <code>(F(2), F(3), F(4), ...)</code>.
+ * A023600 Convolution of A023532 and (F(2), F(3), F(4), ...).
  * @author Sean A. Irvine
  */
 public class A023600 extends ConvolutionSequence {

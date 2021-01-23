@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004526 Nonnegative integers repeated, <code>floor(n/2)</code>.
+ * A004526 Nonnegative integers repeated, floor(n/2).
  * @author Sean A. Irvine
  */
 public class A004526 implements Sequence {

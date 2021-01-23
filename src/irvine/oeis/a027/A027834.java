@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027834 Number of labeled strongly connected <code>n-state 2-input</code> automata.
+ * A027834 Number of labeled strongly connected n-state 2-input automata.
  * @author Sean A. Irvine
  */
 public class A027834 implements Sequence {
@@ -20,9 +20,9 @@ public class A027834 implements Sequence {
           return Z.ONE;
         }
         final Z zn = Z.valueOf(n);
-        Z sum = zn.pow(r * n);
+        Z sum = zn.pow(r * (long) n);
         for (int t = 1; t < n; ++t) {
-          sum = sum.subtract(Binomial.binomial(n, t).multiply(zn.pow(r * (n - t))).multiply(get(r, t)));
+          sum = sum.subtract(Binomial.binomial(n, t).multiply(zn.pow(r * (long) (n - t))).multiply(get(r, t)));
         }
         return sum;
       }

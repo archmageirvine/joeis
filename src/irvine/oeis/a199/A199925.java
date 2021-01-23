@@ -4,7 +4,7 @@ package irvine.oeis.a199;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A199925 Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with <code>(0,0,1,1)</code>.
+ * A199925 Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (0,0,1,1).
  * @author Georg Fischer
  */
 public class A199925 extends LinearRecurrence {

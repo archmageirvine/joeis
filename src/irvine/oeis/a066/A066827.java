@@ -4,7 +4,7 @@ package irvine.oeis.a066;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A066827 <code>a(n) = gcd(2^((n*(n+1)/2)) + 1, 2^n + 1)</code>.
+ * A066827 a(n) = gcd(2^((n*(n+1)/2)) + 1, 2^n + 1).
  * @author Georg Fischer
  */
 public class A066827 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a208;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A208034 G.f.: <code>exp( Sum_{n&gt;=1} 2*Pell(n)^2 * x^n/n )</code>, where <code>Pell(n) = A000129(n)</code>.
+ * A208034 G.f.: exp( Sum_{n&gt;=1} 2*Pell(n)^2 * x^n/n ), where Pell(n) = A000129(n).
  * @author Georg Fischer
  */
 public class A208034 extends HolonomicRecurrence {

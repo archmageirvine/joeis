@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008496 <code>a(n) = floor(n/5)*floor((n+1)/5)*floor((n+2)/5)</code>.
+ * A008496 a(n) = floor(n/5)*floor((n+1)/5)*floor((n+2)/5).
  * @author Sean A. Irvine
  */
 public class A008496 implements Sequence {

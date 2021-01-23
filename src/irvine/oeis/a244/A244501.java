@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A244501 Number of ways to place 3 points on an <code>n X n X n</code> triangular grid so that no pair of them has distance <code>sqrt(3)</code>.
+ * A244501 Number of ways to place 3 points on an n X n X n triangular grid so that no pair of them has distance sqrt(3).
  * @author Georg Fischer
  */
 public class A244501 extends GeneratingFunctionSequence {

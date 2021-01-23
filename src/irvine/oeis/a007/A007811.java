@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007811 Numbers n for which <code>10n+1, 10n+3, 10n+7</code> and <code>10n+9</code> are primes.
+ * A007811 Numbers n for which 10n+1, 10n+3, 10n+7 and 10n+9 are primes.
  * @author Sean A. Irvine
  */
 public class A007811 implements Sequence {

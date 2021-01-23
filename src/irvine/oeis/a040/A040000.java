@@ -6,7 +6,7 @@ package irvine.oeis.a040;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A040000 <code>a(0)=1; a(n)=2</code> for <code>n &gt;= 1</code>.
+ * A040000 a(0)=1; a(n)=2 for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A040000 extends GeneratingFunctionSequence {

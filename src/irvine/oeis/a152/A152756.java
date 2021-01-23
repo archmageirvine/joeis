@@ -6,7 +6,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152756 Bisection of <code>A000533</code>.
+ * A152756 Bisection of A000533.
  * @author Georg Fischer
  */
 public class A152756 extends GeneratingFunctionSequence {

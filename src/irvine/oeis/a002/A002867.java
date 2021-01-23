@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000246;
 
 /**
- * A002867 <code>a(n) = binomial(n,floor(n/2))*(n+1)!</code>.
+ * A002867 a(n) = binomial(n,floor(n/2))*(n+1)!.
  * @author Sean A. Irvine
  */
 public class A002867 extends A000246 {

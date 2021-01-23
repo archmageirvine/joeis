@@ -26,8 +26,8 @@ public abstract class CheatSequence implements Sequence {
    */
   public CheatSequence() {
     try {
-      try (final BufferedReader r = IOUtils.reader(getName().replace('.', '/') + ".dat")) {
-        mSeq = ZUtils.suckInNumbers(r);
+      try (final BufferedReader r = IOUtils.reader("cheat/" + getName().replace('A', 'b') + ".txt.gz")) {
+        mSeq = ZUtils.suckInNumbers(r, 1);
       }
     } catch (final IOException e) {
       throw new RuntimeException(e);

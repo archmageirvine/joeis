@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.RuntimeUtils;
 
 /**
- * A060382 In base n, <code>a(n)</code> is the smallest number m that leads to a palindrome-free sequence, using the following process: start with m; reverse the digits and add it to m, repeat. Stop if you reach a palindrome.
+ * A060382 In base n, a(n) is the smallest number m that leads to a palindrome-free sequence, using the following process: start with m; reverse the digits and add it to m, repeat. Stop if you reach a palindrome.
  * @author Sean A. Irvine
  */
 public class A060382 implements Sequence {

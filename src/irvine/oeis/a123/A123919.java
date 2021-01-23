@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123919 Number of numbers congruent to 2 or <code>4 mod 6</code> and <code>&lt;= n</code>.
+ * A123919 Number of numbers congruent to 2 or 4 mod 6 and &lt;= n.
  * @author Georg Fischer
  */
 public class A123919 extends GeneratingFunctionSequence {

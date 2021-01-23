@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012589 <code>cos(arcsinh(x)*exp(x))=1-1/2!*x^2-6/3!*x^3-19/4!*x^4-20/5!*x^5..</code>.
+ * A012589 cos(arcsinh(x)*exp(x))=1-1/2!*x^2-6/3!*x^3-19/4!*x^4-20/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012589 implements Sequence {

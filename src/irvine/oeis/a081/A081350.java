@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A081350 First column in maze array of natural numbers <code>A081349</code>.
+ * A081350 First column in maze array of natural numbers A081349.
  * @author Georg Fischer
  */
 public class A081350 extends GeneratingFunctionSequence {

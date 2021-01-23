@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A270684 First differences of number of active <code>(ON,black)</code> cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule <code>190"</code>, based on the 5-celled von Neumann neighborhood.
+ * A270684 First differences of number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 190", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A270684 extends GeneratingFunctionSequence {

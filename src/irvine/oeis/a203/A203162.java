@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203162 <code>(n-1)-st</code> elementary symmetric function of the first n terms of <code>(1,2,3,1,2,3,1,2,3,...)</code>.
+ * A203162 (n-1)-st elementary symmetric function of the first n terms of (1,2,3,1,2,3,1,2,3,...).
  * @author Sean A. Irvine
  */
 public class A203162 extends LinearRecurrence {

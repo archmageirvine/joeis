@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A226043 Decimal expansion of <code>355/113-Pi</code>.
+ * A226043 Decimal expansion of 355/113-Pi.
  * @author Georg Fischer
  */
 public class A226043 extends DecimalExpansionSequence {

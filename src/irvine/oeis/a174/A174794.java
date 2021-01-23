@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A174794 <code>a(0) = 0</code> and <code>a(n) = (4*n^3 - 12*n^2 + 20*n - 9)/3</code> for <code>n &gt;= 1</code>.
+ * A174794 a(0) = 0 and a(n) = (4*n^3 - 12*n^2 + 20*n - 9)/3 for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A174794 extends GeneratingFunctionSequence {

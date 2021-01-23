@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306262 Difference between maximum and minimum sum of products of successive pairs in permutations of <code>[n]</code>.
+ * A306262 Difference between maximum and minimum sum of products of successive pairs in permutations of [n].
  * @author Georg Fischer
  */
 public class A306262 extends GeneratingFunctionSequence {

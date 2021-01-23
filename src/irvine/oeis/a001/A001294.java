@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001294 Triangle in which k-th number <code>(0&lt;=k&lt;=n)</code> in n-th row <code>(0&lt;=n)</code> is number of dodecads in Golay code <code>G_24</code> containing k given points and missing n-k given points.
+ * A001294 Triangle in which k-th number (0&lt;=k&lt;=n) in n-th row (0&lt;=n) is number of dodecads in Golay code G_24 containing k given points and missing n-k given points.
  * @author Sean A. Irvine
  */
 public class A001294 extends FiniteSequence {

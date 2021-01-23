@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A076462 Sum of squares of numbers that can be written as <code>t*n + u*(n+1)</code> for nonnegative integers t,u in exactly three ways.
+ * A076462 Sum of squares of numbers that can be written as t*n + u*(n+1) for nonnegative integers t,u in exactly three ways.
  * @author Georg Fischer
  */
 public class A076462 extends GeneratingFunctionSequence {

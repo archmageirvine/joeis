@@ -1,24 +1,13 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.a003.A003288;
-
 /**
- * A005547 Number of <code>n-step self-avoiding</code> walks on f.c.c. lattice from <code>(0,0,0)</code> to <code>(1,2,3)</code>.
+ * A005547 Number of n-step self-avoiding walks on f.c.c. lattice from (0,0,0) to (1,2,3).
  * @author Sean A. Irvine
  */
-public class A005547 extends A003288 {
+public class A005547 extends A005548 {
 
-  @Override
-  protected int first() {
-    return 3;
-  }
-
-  @Override
-  protected long search() {
-    final int tx = 1;
-    final int ty = 2;
-    final int tz = 3;
-    // todo Cf. A003288 there are probably exploitable symmetries here
-    return search(0, 0, 0, tx, ty, tz, mN, 1); // Basic search
+  /** Construct the sequence. */
+  public A005547() {
+    super(1, 2, 3, 2);
   }
 }

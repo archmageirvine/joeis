@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A135027 Numbers n such that the sum of the digits of <code>n^2</code> is <code>10. n</code> which are multiples of 10 are omitted.
+ * A135027 Numbers n such that the sum of the digits of n^2 is 10. n which are multiples of 10 are omitted.
  * @author Sean A. Irvine
  */
 public class A135027 implements Sequence {
@@ -22,7 +22,7 @@ public class A135027 implements Sequence {
         if (mN > Integer.MAX_VALUE) {
           Z v = Z.valueOf(mN).square();
           long s = 0;
-          while (!Z.ZERO.equals(v)) {
+          while (!v.isZero()) {
             s += v.mod(10);
             if (s > 10) {
               break;

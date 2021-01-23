@@ -5,13 +5,13 @@ package irvine.oeis.a102;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A102964 Numbers n such that <code>3*10^n-7</code> is prime.
+ * A102964 Numbers n such that 3*10^n-7 is prime.
  * @author Georg Fischer
  */
 public class A102964 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A102964() {
-    super(1, 1, 3, 10, -7, 0);
+    super(1, 1, 3, 10, -7);
   }
 }

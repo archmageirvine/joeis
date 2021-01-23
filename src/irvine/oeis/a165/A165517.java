@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165517 Indices of the least triangular numbers <code>(A000217)</code> for which three consecutive triangular numbers sum to a perfect square <code>(A000290)</code>.
+ * A165517 Indices of the least triangular numbers (A000217) for which three consecutive triangular numbers sum to a perfect square (A000290).
  * @author Sean A. Irvine
  */
 public class A165517 extends LinearRecurrence {

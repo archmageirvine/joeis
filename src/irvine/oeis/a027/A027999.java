@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027999 Expansion of <code>Product(1+q^m)^(m(m-1)/2); m=1..inf</code>.
+ * A027999 Expansion of Product(1+q^m)^(m(m-1)/2); m=1..inf.
  * @author Sean A. Irvine
  */
 public class A027999 implements Sequence {

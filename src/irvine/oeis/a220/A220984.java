@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220984 The right Aurifeuillian factor of <code>7^(14n+7) + 1</code>.
+ * A220984 The right Aurifeuillian factor of 7^(14n+7) + 1.
  * @author Sean A. Irvine
  */
 public class A220984 extends LinearRecurrence {

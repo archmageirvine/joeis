@@ -7,7 +7,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A180562 Triangle read by rows: <code>T(n,k)=number</code> of binary words of length n avoiding 010 and having k <code>1</code>'s.
+ * A180562 Triangle read by rows: T(n,k)=number of binary words of length n avoiding 010 and having k 1's.
  * @author Georg Fischer
  */
 public class A180562 extends GeneratingFunctionTriangle {

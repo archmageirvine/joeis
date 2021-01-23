@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060999 Nearest integer to <code>(n+1)^3/9</code>.
+ * A060999 Nearest integer to (n+1)^3/9.
  * @author Georg Fischer
  */
 public class A060999 extends GeneratingFunctionSequence {

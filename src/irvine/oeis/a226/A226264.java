@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226264 Number of additive <code>Z_2 Z_8</code> codes of a certain type (see Siap-Aydogdu for precise definition).
+ * A226264 Number of additive Z_2 Z_8 codes of a certain type (see Siap-Aydogdu for precise definition).
  * @author Georg Fischer
  */
 public class A226264 extends GeneratingFunctionSequence {

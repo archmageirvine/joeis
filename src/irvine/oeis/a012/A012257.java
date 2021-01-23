@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A012257 Irregular triangle read by rows: row 1 is <code>{1,1}</code>; if row n is <code>{r_1</code>, ..., <code>r_k}</code> then row <code>n+1</code> is <code>{r_k 1's, r_{k-1} 2's, r_{k-2} 3's, etc.}</code>.
+ * A012257 Irregular triangle read by rows: row 1 is {1,1}; if row n is {r_1, ..., r_k} then row n+1 is {r_k 1's, r_{k-1} 2's, r_{k-2} 3's, etc.}.
  * @author Sean A. Irvine
  */
 public class A012257 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007419;
 
 /**
- * A025524 Number of positive integers that are not the sum of distinct <code>n-th-order</code> polygonal numbers.
+ * A025524 Number of positive integers that are not the sum of distinct n-th-order polygonal numbers.
  * @author Sean A. Irvine
  */
 public class A025524 extends A007419 {

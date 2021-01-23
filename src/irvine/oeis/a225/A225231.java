@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A225231 Schur numbers <code>S(3,n)</code>.
+ * A225231 Schur numbers S(3,n).
  * @author Georg Fischer
  */
 public class A225231 extends GeneratingFunctionSequence {

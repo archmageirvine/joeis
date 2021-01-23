@@ -6,7 +6,7 @@ package irvine.oeis.a068;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A068245 1/6 the number of colorings of a <code>4 X 4 rhombic-</code> or <code>staggered-</code> hexagonal array with n colors.
+ * A068245 1/6 the number of colorings of a 4 X 4 rhombic- or staggered- hexagonal array with n colors.
  * @author Georg Fischer
  */
 public class A068245 extends HolonomicRecurrence {

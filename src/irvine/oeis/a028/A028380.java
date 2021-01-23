@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028380 <code>a_n = - sum_{i=1..n-1} C(i+1, n-i) (-1)^(n-i) a_i</code>.
+ * A028380 a_n = - sum_{i=1..n-1} C(i+1, n-i) (-1)^(n-i) a_i.
  * @author Sean A. Irvine
  */
 public class A028380 implements Sequence {

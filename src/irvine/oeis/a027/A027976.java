@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027976 n-th diagonal sum of right justified array T given by <code>A027960</code>.
+ * A027976 n-th diagonal sum of right justified array T given by A027960.
  * @author Georg Fischer
  */
 public class A027976 extends GeneratingFunctionSequence {

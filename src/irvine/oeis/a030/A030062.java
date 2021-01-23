@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030062 Weight distribution of <code>[ 96,48,12 ] doubly-even self-dual</code> "octern" code.
+ * A030062 Weight distribution of [ 96,48,12 ] doubly-even self-dual "octern" code.
  * @author Sean A. Irvine
  */
 public class A030062 extends FiniteSequence {

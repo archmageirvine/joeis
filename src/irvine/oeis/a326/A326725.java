@@ -5,7 +5,7 @@ package irvine.oeis.a326;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A326725 <code>a(n) = (1/2)*n*(5*n - 7)</code>; row 5 of <code>A326728</code>.
+ * A326725 a(n) = (1/2)*n*(5*n - 7); row 5 of A326728.
  * @author Georg Fischer
  */
 public class A326725 extends HolonomicRecurrence {

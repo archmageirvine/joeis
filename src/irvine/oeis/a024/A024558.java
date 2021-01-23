@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024558 <code>a(n) = [ n/{n*sqrt(6)} ]</code>, where <code>{x} := x - [ x ]</code>.
+ * A024558 a(n) = [ n/{n*sqrt(6)} ], where {x} := x - [ x ].
  * @author Sean A. Irvine
  */
 public class A024558 implements Sequence {
 
-  private static final CR SQRT6 = CR.valueOf(6).sqrt();
+  private static final CR SQRT6 = CR.SIX.sqrt();
   private long mN = 0;
 
   @Override

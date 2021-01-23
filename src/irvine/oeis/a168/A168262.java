@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168262 Intersection of <code>A003418</code> and <code>A116998</code>.
+ * A168262 Intersection of A003418 and A116998.
  * @author Georg Fischer
  */
 public class A168262 extends FiniteSequence {

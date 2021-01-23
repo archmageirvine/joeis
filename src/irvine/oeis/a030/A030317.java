@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030317 Write the odd numbers <code>2n - 1</code> in base 2 and juxtapose these binary expansions; read the result <code>bit-by-bit</code>.
+ * A030317 Write the odd numbers 2n - 1 in base 2 and juxtapose these binary expansions; read the result bit-by-bit.
  * @author Georg Fischer
  */
 public class A030317 implements Sequence {

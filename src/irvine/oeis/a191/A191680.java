@@ -4,7 +4,7 @@ package irvine.oeis.a191;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A191680 Number of compositions of odd natural numbers into 9 parts <code>&lt;= n</code>.
+ * A191680 Number of compositions of odd natural numbers into 9 parts &lt;= n.
  * @author Georg Fischer
  */
 public class A191680 extends GeneratingFunctionSequence {

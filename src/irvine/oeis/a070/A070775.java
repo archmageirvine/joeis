@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070775 <code>a(n) = Sum_{k=0..n} binomial(4*n,4*k)</code>.
+ * A070775 a(n) = Sum_{k=0..n} binomial(4*n,4*k).
  * @author Georg Fischer
  */
 public class A070775 extends HolonomicRecurrence {

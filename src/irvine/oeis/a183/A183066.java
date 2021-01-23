@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A183066 G.f.: <code>A(x) = (1 + 21*x + 3*x^2 - x^3)/(1-x)^5</code>.
+ * A183066  G.f.: A(x) = (1 + 21*x + 3*x^2 - x^3)/(1-x)^5.
  * @author Georg Fischer
  */
 public class A183066 extends GeneratingFunctionSequence {

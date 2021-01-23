@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030689 Square root of <code>A030688</code>.
+ * A030689 Square root of A030688.
  * @author Sean A. Irvine
  */
 public class A030689 extends A030688 {

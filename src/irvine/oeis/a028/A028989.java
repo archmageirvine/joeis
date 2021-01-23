@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028989 Smallest palindromic prime with <code>2n-1</code> digits.
+ * A028989 Smallest palindromic prime with 2n-1 digits.
  * @author Sean A. Irvine
  */
 public class A028989 implements Sequence {

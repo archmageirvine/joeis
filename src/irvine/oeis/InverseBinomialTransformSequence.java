@@ -1,5 +1,8 @@
 package irvine.oeis;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,5 +52,21 @@ public class InverseBinomialTransformSequence implements Sequence {
   public Z next() {
     mTerms.add(mSeq.next());
     return inverseBinomial(mTerms, mTerms.size());
+  }
+
+  /**
+   * Apply the inverse binomial transform to the sequence supplied on standard input.
+   * @param args number of terms to skip
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    final int skip = args.length > 0 ? Integer.parseInt(args[0]) : 0;
+    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+      final Sequence seq = new InverseBinomialTransformSequence(new ReaderSequence(r), skip);
+      Z a;
+      while ((a = seq.next()) != null) {
+        System.out.println(a);
+      }
+    }
   }
 }

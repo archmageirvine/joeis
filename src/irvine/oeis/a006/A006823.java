@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006823 Number of connected trivalent bipartite graphs with <code>2n</code> nodes.
+ * A006823 Number of connected trivalent bipartite graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A006823 implements Sequence {

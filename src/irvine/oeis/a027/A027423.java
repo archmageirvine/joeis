@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027423 Number of positive divisors of <code>n!</code>.
+ * A027423 Number of divisors of n!.
  * @author Sean A. Irvine
  */
 public class A027423 implements Sequence {

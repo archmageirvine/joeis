@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332349 Number of maximal independent sets in the <code>4 X n</code> king graph.
+ * A332349 Number of maximal independent sets in the 4 X n king graph.
  * @author Georg Fischer
  */
 public class A332349 extends HolonomicRecurrence {

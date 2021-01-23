@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A037044 4-white numbers: partition digits of <code>n^4</code> into blocks of 4 starting at right; sum of these 4-digit numbers equals <code>n</code>.
+ * A037044 4-white numbers: partition digits of n^4 into blocks of 4 starting at right; sum of these 4-digit numbers equals n.
  * @author Georg Fischer
  */
 public class A037044 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a246;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246963 G.f. satisfies: <code>A(x) = Sum_{n&gt;=0} A000108(n)^2 * (x-x^2)^n</code>, where <code>A000108(n) = C(2*n,n)/(n+1)</code> is the n-th Catalan number.
+ * A246963 G.f. satisfies: A(x) = Sum_{n&gt;=0} A000108(n)^2 * (x-x^2)^n, where A000108(n) = C(2*n,n)/(n+1) is the n-th Catalan number.
  * @author Georg Fischer
  */
 public class A246963 extends HolonomicRecurrence {

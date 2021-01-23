@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157648 Decimal expansion of <code>(1539+850*sqrt(2))/31^2</code>.
+ * A157648 Decimal expansion of (1539+850*sqrt(2))/31^2.
  * @author Georg Fischer
  */
 public class A157648 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a003.A003814;
 
 /**
- * A031396 Numbers k such that Pell equation <code>x^2 - k*y^2 = -1</code> is soluble.
+ * A031396 Numbers k such that Pell equation x^2 - k*y^2 = -1 is soluble.
  * @author Sean A. Irvine
  */
 public class A031396 extends PrependSequence {

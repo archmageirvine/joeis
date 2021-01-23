@@ -7,7 +7,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A172991 Triangle of binomial sums read by rows: <code>T(n,k) = sum(C(2n-2k-i,i) * C(2k-i,i), i=0..min(k,n-k))</code>.
+ * A172991 Triangle of binomial sums read by rows: T(n,k) = sum(C(2n-2k-i,i) * C(2k-i,i), i=0..min(k,n-k)).
  * @author Georg Fischer
  */
 public class A172991 extends GeneratingFunctionTriangle {

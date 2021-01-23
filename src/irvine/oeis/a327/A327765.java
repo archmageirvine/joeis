@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327765 <code>a(n)</code> is the trace of the n-th power of the <code>2 X 2</code> matrix <code>[1 2; 3 4]</code>.
+ * A327765 a(n) is the trace of the n-th power of the 2 X 2 matrix [1 2; 3 4].
  * @author Georg Fischer
  */
 public class A327765 extends HolonomicRecurrence {

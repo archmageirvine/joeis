@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099479 Count, repeating <code>4n</code> three times for <code>n &gt; 0</code>.
+ * A099479 Count, repeating 4n three times for n &gt; 0.
  * @author Sean A. Irvine
  */
 public class A099479 extends LinearRecurrence {

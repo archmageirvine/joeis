@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029774 Digits of <code>n^2</code> appear in <code>n</code>.
+ * A029774 Digits of n^2 appear in n.
  * @author Sean A. Irvine
  */
 public class A029774 implements Sequence {

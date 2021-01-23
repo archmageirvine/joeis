@@ -5,7 +5,7 @@ package irvine.oeis.a204;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A204690 <code>n^n (mod 5)</code>.
+ * A204690 n^n (mod 5).
  * @author Georg Fischer
  */
 public class A204690 extends HolonomicRecurrence {

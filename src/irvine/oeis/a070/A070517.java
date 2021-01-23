@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A070517 <code>a(n) = n^4 mod 13</code>.
+ * A070517 a(n) = n^4 mod 13.
  * @author Georg Fischer
  */
 public class A070517 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.HalfConvolutionSequence;
 import irvine.oeis.a001.A001477;
 
 /**
- * A023868 <code>a(n) = 1*t(n) + 2*t(n-1) + ... + k*t(n+1-k)</code>, where <code>k=floor((n+1)/2)</code> and t is <code>A023533</code>.
+ * A023868 a(n) = 1*t(n) + 2*t(n-1) + ... + k*t(n+1-k), where k=floor((n+1)/2) and t is A023533.
  * @author Sean A. Irvine
  */
 public class A023868 extends HalfConvolutionSequence {

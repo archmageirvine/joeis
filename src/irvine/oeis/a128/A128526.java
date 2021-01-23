@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128526 Number of <code>4-indecomposable</code> (connected) graphs on n nodes.
+ * A128526 Number of 4-indecomposable (connected) graphs on n nodes.
  * @author Georg Fischer
  */
 public class A128526 extends GeneratingFunctionSequence {

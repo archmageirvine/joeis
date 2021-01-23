@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A008341 <code>a(n)=1, a(n+1) = lcm(a(n),b(n)) / gcd(a(n),b(n))</code>, where <code>{b(n)} = {fibonacci(n)}</code>.
+ * A008341 a(n)=1, a(n+1) = lcm(a(n),b(n)) / gcd(a(n),b(n)), where {b(n)} = {fibonacci(n)}.
  * @author Sean A. Irvine
  */
 public class A008341 extends A000045 {

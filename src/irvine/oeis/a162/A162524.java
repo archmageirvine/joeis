@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162524 Partial sums of magic numbers <code>A018226</code>.
+ * A162524 Partial sums of magic numbers A018226.
  * @author Georg Fischer
  */
 public class A162524 extends FiniteSequence {

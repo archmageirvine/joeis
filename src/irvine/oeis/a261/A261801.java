@@ -4,7 +4,7 @@ package irvine.oeis.a261;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A261801 Number of 9-compositions of n: matrices with 9 rows of nonnegative integers with positive column sums and total element sum <code>n</code>.
+ * A261801 Number of 9-compositions of n: matrices with 9 rows of nonnegative integers with positive column sums and total element sum n.
  * @author Georg Fischer
  */
 public class A261801 extends GeneratingFunctionSequence {

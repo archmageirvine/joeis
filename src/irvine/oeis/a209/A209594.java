@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A209594 Number of <code>3 X 3 0..n</code> arrays with every element equal to a diagonal or antidiagonal reflection.
+ * A209594 Number of 3 X 3 0..n arrays with every element equal to a diagonal or antidiagonal reflection.
  * @author Georg Fischer
  */
 public class A209594 extends GeneratingFunctionSequence {

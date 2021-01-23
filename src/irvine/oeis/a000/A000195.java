@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000195 <code>a(n) = floor(log(n))</code>.
+ * A000195 a(n) = floor(log(n)).
  * @author Sean A. Irvine
  */
 public class A000195 implements Sequence {

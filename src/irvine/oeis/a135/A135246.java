@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135246 Shifted Pell recurrence: <code>a(n) = 2*a(n-2) + a(n-4)</code>.
+ * A135246 Shifted Pell recurrence: a(n) = 2*a(n-2) + a(n-4).
  * @author Sean A. Irvine
  */
 public class A135246 extends LinearRecurrence {

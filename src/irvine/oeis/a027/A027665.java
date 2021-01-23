@@ -5,13 +5,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027665 <code>a(n)/100000</code> gives <code>log_10(n)</code> to 5 places.
+ * A027665 a(n)/100000 gives log_10(n) to 5 places.
  * @author Sean A. Irvine
  */
 public class A027665 implements Sequence {
 
   private static final CR CR100000 = CR.valueOf(100000);
-  private static final CR LOG10 = CR.valueOf(10).log();
+  private static final CR LOG10 = CR.TEN.log();
   private long mN = 0;
 
   @Override

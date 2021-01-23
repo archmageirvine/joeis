@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332751 The number of flips to go from Hamiltonian cycle <code>beta_n</code> to <code>gamma_n</code> in the Cameron graph of size n using Thomason's algorithm.
+ * A332751 The number of flips to go from Hamiltonian cycle beta_n to gamma_n in the Cameron graph of size n using Thomason's algorithm.
  * @author Georg Fischer
  */
 public class A332751 extends HolonomicRecurrence {

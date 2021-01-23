@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A186349 Adjusted joint rank sequence of <code>(f(i))</code> and <code>(g(j))</code> with <code>f(i)</code> after <code>g(j)</code> when <code>f(i)=g(j)</code>, where <code>f(i)=8i</code> and <code>g(j)=j^2</code>. Complement of <code>A186348</code>.
+ * A186349 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f(i)=8i and g(j)=j^2. Complement of A186348.
  * @author Georg Fischer
  */
 public class A186349 extends GeneratingFunctionSequence {

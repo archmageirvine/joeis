@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123651 <code>a(n) = 1 + n^2 + n^3 + n^5 + n^7 + n^11 + n^13 + n^17</code>.
+ * A123651 a(n) = 1 + n^2 + n^3 + n^5 + n^7 + n^11 + n^13 + n^17.
  * @author Georg Fischer
  */
 public class A123651 extends HolonomicRecurrence {

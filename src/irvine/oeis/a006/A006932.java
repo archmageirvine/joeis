@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006932 Number of permutations of <code>[n]</code> with at least one strong fixed point (a permutation p of <code>{1,2,...,n}</code> is said to have j as a strong fixed point if <code>p(k) &lt</code>; j for k <code>&lt</code>; j and <code>p(k) &gt</code>; j for k <code>&gt; j)</code>.
+ * A006932 Number of permutations of [n] with at least one strong fixed point (a permutation p of {1,2,...,n} is said to have j as a strong fixed point if p(k) &lt; j for k &lt; j and p(k) &gt; j for k &gt; j).
  * @author Sean A. Irvine
  */
 public class A006932 implements Sequence {

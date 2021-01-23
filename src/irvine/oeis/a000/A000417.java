@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.EulerTransformSequence;
 
 /**
- * A000417 Euler transform of <code>A000389</code>.
+ * A000417 Euler transform of A000389.
  * @author Sean A. Irvine
  */
 public class A000417 extends EulerTransformSequence {

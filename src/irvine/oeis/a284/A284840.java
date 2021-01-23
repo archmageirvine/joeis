@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284840 Number of quinternary strings avoiding consecutive digits <code>i,i+1</code> and <code>i,i+2</code>.
+ * A284840 Number of quinternary strings avoiding consecutive digits i,i+1 and i,i+2.
  * @author Sean A. Irvine
  */
 public class A284840 extends LinearRecurrence {

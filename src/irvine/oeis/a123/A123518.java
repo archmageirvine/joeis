@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123518 Number of dumbbells in all possible arrangements of dumbbells on a <code>2 X n</code> rectangular array of compartments.
+ * A123518 Number of dumbbells in all possible arrangements of dumbbells on a 2 X n rectangular array of compartments.
  * @author Georg Fischer
  */
 public class A123518 extends GeneratingFunctionSequence {

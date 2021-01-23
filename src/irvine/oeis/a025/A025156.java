@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025156 A prime number of consecutive composites follow <code>n</code>.
+ * A025156 A prime number of consecutive composites follow n.
  * @author Sean A. Irvine
  */
 public class A025156 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025136 <code>a(n) = 2nd</code> elementary symmetric function of <code>C(n,0), C(n,1)</code>, ..., <code>C(n,[ n/2 ])</code>.
+ * A025136 a(n) = 2nd elementary symmetric function of C(n,0), C(n,1), ..., C(n,[ n/2 ]).
  * @author Sean A. Irvine
  */
 public class A025136 implements Sequence {

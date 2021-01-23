@@ -6,7 +6,7 @@ package irvine.oeis.a081;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A081125 <code>a(n) = n! / floor(n/2)!</code>.
+ * A081125 a(n) = n! / floor(n/2)!.
  * @author Georg Fischer
  */
 public class A081125 extends HolonomicRecurrence {

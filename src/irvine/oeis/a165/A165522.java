@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165522 The number of 54321-avoiding separable permutations of length <code>n</code>.
+ * A165522 The number of 54321-avoiding separable permutations of length n.
  * @author Georg Fischer
  */
 public class A165522 extends GeneratingFunctionSequence {

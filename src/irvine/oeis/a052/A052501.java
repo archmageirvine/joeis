@@ -6,7 +6,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052501 Number of permutations sigma such that <code>sigma^5=Id; degree-n</code> permutations of order dividing 5.
+ * A052501 Number of permutations sigma such that sigma^5=Id; degree-n permutations of order dividing 5.
  * @author Georg Fischer
  */
 public class A052501 extends HolonomicRecurrence {

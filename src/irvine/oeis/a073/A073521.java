@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073521 The set of 16 consecutive primes with the property that they form a <code>4 X 4</code> magic square with the smallest magic constant <code>(258)</code>.
+ * A073521 The set of 16 consecutive primes with the property that they form a 4 X 4 magic square with the smallest magic constant (258).
  * @author Georg Fischer
  */
 public class A073521 extends FiniteSequence {

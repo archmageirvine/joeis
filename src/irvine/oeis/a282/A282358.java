@@ -5,13 +5,13 @@ package irvine.oeis.a282;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A282358 Numbers k such that <code>(182*10^k + 1)/3</code> is prime.
+ * A282358 Numbers k such that (182*10^k + 1)/3 is prime.
  * @author Georg Fischer
  */
 public class A282358 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A282358() {
-    super(1, 0, 182, 10, +1, 3);
+    super(1, 0, 182, 10, 1, 3);
   }
 }

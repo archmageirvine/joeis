@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302341 Triameter of the <code>n X n</code> knight graph.
+ * A302341 Triameter of the n X n knight graph.
  * @author Georg Fischer
  */
 public class A302341 extends GeneratingFunctionSequence {

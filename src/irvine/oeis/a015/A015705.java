@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015705 Geometric mean of <code>phi(n)</code> and <code>sigma(n)</code> is an integer, n odd.
+ * A015705 Geometric mean of phi(n) and sigma(n) is an integer, n odd.
  * @author Sean A. Irvine
  */
 public class A015705 implements Sequence {
@@ -16,7 +16,7 @@ public class A015705 implements Sequence {
   private boolean is(final long m) {
     final FactorSequence fs = Cheetah.factor(m);
     final Z a = fs.sigma().multiply(fs.phi());
-    return a.sqrtAndRemainder()[1].equals(Z.ZERO);
+    return a.sqrtAndRemainder()[1].isZero();
   }
 
   @Override

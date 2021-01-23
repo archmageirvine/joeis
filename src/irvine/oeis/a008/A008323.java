@@ -7,7 +7,7 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A008323 Number of simple connected regular bipartite graphs with <code>2n</code> nodes.
+ * A008323 Number of simple connected regular bipartite graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A008323 implements Sequence {

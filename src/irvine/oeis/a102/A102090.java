@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102090 Number of matchings in the <code>C_n X P_3</code> graph <code>(C_n</code> is the cycle graph on n vertices and <code>P_3</code> is the path graph on <code>3</code> vertices).
+ * A102090 Number of matchings in the C_n X P_3 graph (C_n is the cycle graph on n vertices and P_3 is the path graph on 3 vertices).
  * @author Sean A. Irvine
  */
 public class A102090 extends LinearRecurrence {

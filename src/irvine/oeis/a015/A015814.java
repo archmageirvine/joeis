@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015814 Numbers k such that <code>phi(k + 1)</code> divides <code>sigma(k)</code>.
+ * A015814 Numbers k such that phi(k + 1) divides sigma(k).
  * @author Sean A. Irvine
  */
 public class A015814 implements Sequence {
@@ -19,7 +19,7 @@ public class A015814 implements Sequence {
     while (true) {
       final Z sigma = mFactorSequenceA.sigma();
       mFactorSequenceA = Cheetah.factor(++mN);
-      if (sigma.mod(mFactorSequenceA.phi()).equals(Z.ZERO)) {
+      if (sigma.mod(mFactorSequenceA.phi()).isZero()) {
         return Z.valueOf(mN - 1);
       }
     }

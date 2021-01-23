@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A037229 n such that <code>pi(n) &gt;= phi(n)</code>.
+ * A037229 n such that pi(n) &gt;= phi(n).
  * @author Georg Fischer
  */
 public class A037229 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046634 Number of cubic residues <code>mod 6^n</code>.
+ * A046634 Number of cubic residues mod 6^n.
  * @author Sean A. Irvine
  */
 public class A046634 extends LinearRecurrence {

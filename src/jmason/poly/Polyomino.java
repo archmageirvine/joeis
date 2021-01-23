@@ -12,8 +12,11 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
   private boolean mBHoly;
   private boolean mBHolyCalculated;
 
-  // build a polyomino cloning a coordinate set
-  Polyomino(final CoordSet2 c) {
+  /**
+   * A polyomino backed by a coordinate set.
+   * @param c the coordinate set
+   */
+  public Polyomino(final CoordSet2 c) {
     builder(c, true);
     ((CoordSet2) mCs).calculate();
   }
@@ -58,8 +61,8 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
   // No guarantee that not generatable from previous
   ArrayList<Polyomino> listMirrorSons() {
     final ArrayList<Polyomino> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
+    final UniquenessTester h = new UniquenessTester();
+    final UniquenessTester hc = new UniquenessTester();
     for (int i = 0; i < size(); i++) {
       tryMirrorSquare(i, 1, 0, list, h, hc);
       tryMirrorSquare(i, -1, 0, list, h, hc);
@@ -69,18 +72,18 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
     return list;
   }
 
-  private void tryMirrorSquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UTest h, final UTest hc) {
+  private void tryMirrorSquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UniquenessTester h, final UniquenessTester hc) {
     final int x = mCs.getX(i) + dx;
     final int y = mCs.getY(i) + dy;
     if (((CoordSet2) mCs).exists(x, y)) {
       return;
     }
-    if (!hc.put(x + " " + y)) {
+    if (!hc.add(x + " " + y)) {
       return;
     }
 
     final Polyomino p = new Polyomino((CoordSet2) mCs, x, y, Square.opp(x), y);
-    if (!h.put(p.mUniq)) {
+    if (!h.add(p.mUniq)) {
       return;
     }
 
@@ -93,17 +96,17 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
   }
 
   // try to build a polyomino adding a specific square to current
-  protected void trySquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UTest h, final UTest hc) {
+  protected void trySquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UniquenessTester h, final UniquenessTester hc) {
     final int x = mCs.getX(i) + dx;
     final int y = mCs.getY(i) + dy;
     if (((CoordSet2) mCs).exists(x, y)) {
       return;
     }
-    if (!hc.put(x + " " + y)) {
+    if (!hc.add(x + " " + y)) {
       return;
     }
     final Polyomino p = new Polyomino((CoordSet2) mCs, x, y);
-    if (!h.put(p.mUniq)) {
+    if (!h.add(p.mUniq)) {
       return;
     }
     list.add(p);
@@ -192,7 +195,7 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
     if (mBHolyCalculated) {
       return mBHoly;
     }
-    final CoordSet2 neg = this.negative();
+    final CoordSet2 neg = negative();
     mBHoly = !neg.connected();
     mBHolyCalculated = true;
     return mBHoly;
@@ -214,5 +217,13 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
       }
     }
     return neg;
+  }
+
+  /**
+   * Compute the size of the perimeter of this polyomino.
+   * @return the size of the perimeter
+   */
+  public int perimeterSize() {
+    return ((CoordSet2) mCs).perimeterSize();
   }
 }

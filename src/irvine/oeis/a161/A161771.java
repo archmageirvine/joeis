@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A161771 Decimal expansion of <code>(70*exp(Pi*sqrt(163)))^2</code>.
+ * A161771 Decimal expansion of (70*exp(Pi*sqrt(163)))^2.
  * @author Georg Fischer
  */
 public class A161771 extends DecimalExpansionSequence {

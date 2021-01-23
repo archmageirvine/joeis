@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003658;
 
 /**
- * A014077 Norm of fundamental unit of real quadratic field with discriminant <code>A003658(n), n &gt;= 2</code>.
+ * A014077 Norm of fundamental unit of real quadratic field with discriminant A003658(n), n &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A014077 extends A003658 {

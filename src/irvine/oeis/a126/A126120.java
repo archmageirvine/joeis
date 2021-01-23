@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126120 Catalan numbers <code>(A000108)</code> interpolated with <code>0</code>'s.
+ * A126120 Catalan numbers (A000108) interpolated with 0's.
  * @author Georg Fischer
  */
 public class A126120 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109116 <code>a(n) = (n+1)^3*(n+2)^2*(n+5)</code>.
+ * A109116 a(n) = (n+1)^3*(n+2)^2*(n+5).
  * @author Georg Fischer
  */
 public class A109116 extends GeneratingFunctionSequence {

@@ -5,14 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.a045.A045996;
 
 /**
- * A000938 Number of collinear point-triples in an <code>n X n</code> grid.
+ * A000938 Number of collinear point-triples in an n X n grid.
  * @author Sean A. Irvine
  */
 public class A000938 extends A045996 {
-
-  {
-    super.next();
-  }
 
   @Override
   public Z next() {

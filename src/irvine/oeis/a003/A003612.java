@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A003612 Symmetries in unrooted 3-trees on <code>n+1</code> vertices.
+ * A003612 Symmetries in unrooted 3-trees on n+1 vertices.
  * @author Sean A. Irvine
  */
 public class A003612 extends A003611 {

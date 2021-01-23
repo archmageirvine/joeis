@@ -1,38 +1,16 @@
 package irvine.oeis.a153;
 
-import irvine.factor.factor.Cheetah;
-import irvine.factor.factor.Factorizer;
-import irvine.factor.util.FactorSequence;
-import irvine.math.z.Semiprime;
-import irvine.math.z.Z;
+import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.a001.A001008;
 
 /**
- * A153357 Numbers n such that the Wolstenholme number <code>A001008(n)</code> is a semiprime.
+ * A153357 Numbers n such that the harmonic number numerator A001008(n) is a semiprime.
  * @author Sean A. Irvine
  */
-public class A153357 extends A001008 {
+public class A153357 extends SemiprimeSequence {
 
-  private final Factorizer mFactor = new Cheetah(false);
-  private final Semiprime mSemiprime = new Semiprime("irvine/oeis/a153/a153357.dat");
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-
-  @Override
-  public Z next() {
-    while (true) {
-      final Z candidate = super.next();
-      if (mVerbose) {
-        System.out.println("[" + mN + "]: " + candidate);
-      }
-      final FactorSequence fs = new FactorSequence(candidate);
-      mFactor.factor(fs);
-      final int sp = fs.isSemiprime();
-      if (sp == FactorSequence.YES) {
-        return Z.valueOf(mN);
-      }
-      if (sp == FactorSequence.UNKNOWN && mSemiprime.semiprime(candidate) != null) {
-        return Z.valueOf(mN);
-      }
-    }
+  /** Construct the sequence. */
+  public A153357() {
+    super(new A001008(), 1);
   }
 }

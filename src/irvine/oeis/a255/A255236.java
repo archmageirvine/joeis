@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255236 All positive solutions x of the second class of the Pell equation <code>x^2 - 2*y^2 = -7</code>.
+ * A255236 All positive solutions x of the second class of the Pell equation x^2 - 2*y^2 = -7.
  * @author Sean A. Irvine
  */
 public class A255236 extends LinearRecurrence {

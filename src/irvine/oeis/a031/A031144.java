@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A031144 Numbers n such that <code>n!</code> has a record number of zeros.
+ * A031144 Numbers n such that n! has a record number of zeros.
  * @author Sean A. Irvine
  */
 public class A031144 extends A000142 {
@@ -13,9 +13,9 @@ public class A031144 extends A000142 {
 
   static int zeroCount(Z n) {
     int cnt = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         ++cnt;
       }
       n = qr[0];

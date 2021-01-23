@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173245 O.g.f. <code>(x + 1)^10/ (sum_{i=0..10} x^i) </code>.
+ * A173245 O.g.f. (x + 1)^10/ (sum_{i=0..10} x^i) .
  * @author Georg Fischer
  */
 public class A173245 extends GeneratingFunctionSequence {

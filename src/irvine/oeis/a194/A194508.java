@@ -5,7 +5,7 @@ package irvine.oeis.a194;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A194508 First coordinate of the <code>(2,3)-Lagrange</code> pair for <code>n</code>.
+ * A194508 First coordinate of the (2,3)-Lagrange pair for n.
  * @author Georg Fischer
  */
 public class A194508 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185355 Number of <code>n X n</code> symmetric <code>(0,1)-matrices</code> containing four ones.
+ * A185355 Number of n X n symmetric (0,1)-matrices containing four ones.
  * @author Georg Fischer
  */
 public class A185355 extends GeneratingFunctionSequence {

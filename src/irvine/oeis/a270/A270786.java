@@ -6,7 +6,7 @@ package irvine.oeis.a270;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A270786 Number of Schur rings over <code>Z_{5^n}</code>.
+ * A270786 Number of Schur rings over Z_{5^n}.
  * @author Georg Fischer
  */
 public class A270786 extends HolonomicRecurrence {

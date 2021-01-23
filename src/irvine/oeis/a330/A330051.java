@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A330051 <code>a(n) = 1 + F(2*n+1) + (F(n+4) - (-1)^n*F(n-2))/2</code> where <code>F=A000045</code>.
+ * A330051 a(n) = 1 + F(2*n+1) + (F(n+4) - (-1)^n*F(n-2))/2 where F=A000045.
  * @author Georg Fischer
  */
 public class A330051 extends GeneratingFunctionSequence {

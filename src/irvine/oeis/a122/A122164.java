@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A122164 <code>a(0) = 0, a(1) = 1, s = 0</code>; for <code>n &gt;= 2</code>, if <code>a(n-1)</code> is even and s <code>= 0</code> then set <code>a(n) = a(n-1)/2</code> and s <code>= 1</code>; otherwise set <code>a(n) = a(n-1) + a(n-2)</code> and s <code>= 0</code>.
+ * A122164 a(0) = 0, a(1) = 1, s = 0; for n &gt;= 2, if a(n-1) is even and s = 0 then set a(n) = a(n-1)/2 and s = 1; otherwise set a(n) = a(n-1) + a(n-2) and s = 0.
  * @author Georg Fischer
  */
 public class A122164 extends GeneratingFunctionSequence {

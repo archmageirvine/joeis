@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204708 Number of <code>(n+1) X 4 0..1</code> arrays with the permanents of all <code>2 X 2</code> subblocks equal and nonzero.
+ * A204708 Number of (n+1) X 4 0..1 arrays with the permanents of all 2 X 2 subblocks equal and nonzero.
  * @author Georg Fischer
  */
 public class A204708 extends GeneratingFunctionSequence {

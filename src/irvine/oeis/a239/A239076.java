@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239076 Number of self-inverse permutations p on <code>[n]</code> with displacement of elements restricted by <code>4: |p(i)-i| &lt;= 4</code>.
+ * A239076 Number of self-inverse permutations p on [n] with displacement of elements restricted by 4: |p(i)-i| &lt;= 4.
  * @author Georg Fischer
  */
 public class A239076 extends GeneratingFunctionSequence {

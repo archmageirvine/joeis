@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191993 <code>a(n) = 3^(n-1) + C(2*n, n)/2</code>.
+ * A191993 a(n) = 3^(n-1) + C(2*n, n)/2.
  * @author Georg Fischer
  */
 public class A191993 extends HolonomicRecurrence {

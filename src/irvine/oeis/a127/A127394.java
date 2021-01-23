@@ -5,7 +5,7 @@ package irvine.oeis.a127;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127394 Number of irreducible representations of <code>Sp(2n,R)</code> with same infinitesimal character as the trivial representation.
+ * A127394 Number of irreducible representations of Sp(2n,R) with same infinitesimal character as the trivial representation.
  * @author Georg Fischer
  */
 public class A127394 extends HolonomicRecurrence {

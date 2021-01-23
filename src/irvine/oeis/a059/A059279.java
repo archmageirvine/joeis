@@ -6,7 +6,7 @@ package irvine.oeis.a059;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059279 G.f. is <code>((1-x)/(1-2*x)) * G(x*(1-x)/(1-2*x))</code> where <code>G(x)</code> is g.f. for Catalan numbers <code>A000108</code>.
+ * A059279 G.f. is ((1-x)/(1-2*x)) * G(x*(1-x)/(1-2*x)) where G(x) is g.f. for Catalan numbers A000108.
  * @author Georg Fischer
  */
 public class A059279 extends HolonomicRecurrence {

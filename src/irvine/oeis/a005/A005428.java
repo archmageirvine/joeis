@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005428 <code>a(n) = ceiling((1 +</code> sum of preceding terms) <code>/ 2)</code>.
+ * A005428 a(n) = ceiling((1 + sum of preceding terms) / 2) starting with a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A005428 implements Sequence {

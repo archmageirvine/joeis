@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181753 Universal sequence of period 56 which contains every 3-subset of <code>{1,2,...,8}</code> exactly once.
+ * A181753 Universal sequence of period 56 which contains every 3-subset of {1,2,...,8} exactly once.
  * @author Georg Fischer
  */
 public class A181753 extends HolonomicRecurrence {

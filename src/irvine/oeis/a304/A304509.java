@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304509 <code>a(n) = 63*2^n - 39 (n&gt;=1)</code>.
+ * A304509 a(n) = 63*2^n - 39 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304509 extends GeneratingFunctionSequence {

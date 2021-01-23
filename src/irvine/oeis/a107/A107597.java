@@ -6,7 +6,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107597 Antidiagonal sums of triangle <code>A107105: a(n) = Sum_{k=0..n} A107105(n-k,k)</code>, where <code>A107105(n,k) = C(n,k)*(C(n,k) + 1)/2</code>.
+ * A107597 Antidiagonal sums of triangle A107105: a(n) = Sum_{k=0..n} A107105(n-k,k), where A107105(n,k) = C(n,k)*(C(n,k) + 1)/2.
  * @author Georg Fischer
  */
 public class A107597 extends HolonomicRecurrence {

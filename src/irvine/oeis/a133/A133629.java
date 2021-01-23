@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133629 <code>a(1)=1, a(n) = a(n-1) + (p-1)*p^(n/2-1)</code> if n is even, otherwise <code>a(n) = a(n-1) + p^((n-1)/2)</code>, where <code>p=5</code>.
+ * A133629 a(1)=1, a(n) = a(n-1) + (p-1)*p^(n/2-1) if n is even, otherwise a(n) = a(n-1) + p^((n-1)/2), where p=5.
  * @author Sean A. Irvine
  */
 public class A133629 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a189;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A189604 Number of <code>nX3</code> array permutations with each element not moving, or moving one space E, S or NW.
+ * A189604 Number of nX3 array permutations with each element not moving, or moving one space E, S or NW.
  * @author Georg Fischer
  */
 public class A189604 extends GeneratingFunctionSequence {

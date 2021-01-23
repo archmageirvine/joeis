@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327770 <code>a(n) = (23 * 7^(2*n) + 1)/24</code>. Sequence related to the properties of the partition function <code>A000041</code> modulo a power of 7.
+ * A327770 a(n) = (23 * 7^(2*n) + 1)/24. Sequence related to the properties of the partition function A000041 modulo a power of 7.
  * @author Georg Fischer
  */
 public class A327770 extends HolonomicRecurrence {

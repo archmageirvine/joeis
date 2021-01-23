@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028436 Golc sequence in base 6. Left to right concatenation of <code>n,int(log_6(n)),int(log_6(int(log_6(n)))),..</code>. in <code>base6</code>.
+ * A028436 Golc sequence in base 6. Left to right concatenation of n,int(log_6(n)),int(log_6(int(log_6(n)))),... in base6.
  * @author Sean A. Irvine
  */
 public class A028436 implements Sequence {
 
-  private static final CR BASE_LOG = CR.valueOf(6).log();
+  private static final CR BASE_LOG = CR.SIX.log();
   private long mN = 0;
 
   @Override

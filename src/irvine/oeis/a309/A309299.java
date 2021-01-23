@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309299 <code>(1/7)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by seven.
+ * A309299 (1/7) times the sum of the elements of all subsets of [n] whose sum is divisible by seven.
  * @author Georg Fischer
  */
 public class A309299 extends HolonomicRecurrence {

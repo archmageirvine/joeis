@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A063490 <code>a(n) = (2*n - 1)*(7*n^2 - 7*n + 6)/6</code>.
+ * A063490 a(n) = (2*n - 1)*(7*n^2 - 7*n + 6)/6.
  * @author Georg Fischer
  */
 public class A063490 extends GeneratingFunctionSequence {

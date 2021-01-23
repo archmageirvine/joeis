@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238473 <code>C(5*n+8, 4)/5</code> for <code>n&gt;= 0</code>.
+ * A238473 C(5*n+8, 4)/5 for n&gt;= 0.
  * @author Georg Fischer
  */
 public class A238473 extends GeneratingFunctionSequence {

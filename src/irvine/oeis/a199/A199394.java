@@ -4,7 +4,7 @@ package irvine.oeis.a199;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A199394 The number of ways to color the vertices of all <code>(11)</code> simple unlabeled graphs on 4 nodes using at most n colors.
+ * A199394 The number of ways to color the vertices of all (11) simple unlabeled graphs on 4 nodes using at most n colors.
  * @author Georg Fischer
  */
 public class A199394 extends GeneratingFunctionSequence {

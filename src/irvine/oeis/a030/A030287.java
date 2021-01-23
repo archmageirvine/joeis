@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030287 <code>a(n)</code> is the smallest k <code>&gt; a(n-1)</code> such that <code>k^2</code> has no digit in common with <code>a(n-1)^2</code>.
+ * A030287 a(n) is the smallest k &gt; a(n-1) such that k^2 has no digit in common with a(n-1)^2.
  * @author Sean A. Irvine
  */
 public class A030287 implements Sequence {
@@ -19,13 +19,13 @@ public class A030287 implements Sequence {
   public Z next() {
     if (mA == null) {
       mA = Z.ZERO;
-    } else if (Z.ZERO.equals(mA)) {
+    } else if (mA.isZero()) {
       mA = Z.ONE;
     } else {
       final ArrayList<Integer> digits = new ArrayList<>();
       Z t = mA.square();
       final int syndrome = ZUtils.syn(t);
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         digits.add((int) (t.mod(10)));
         t = t.divide(10);
       }

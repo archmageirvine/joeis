@@ -6,7 +6,7 @@ package irvine.oeis.a291;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A291484 Expansion of e.g.f. <code>arctanh(x)*exp(x)</code>.
+ * A291484 Expansion of e.g.f. arctanh(x)*exp(x).
  * @author Georg Fischer
  */
 public class A291484 extends HolonomicRecurrence {

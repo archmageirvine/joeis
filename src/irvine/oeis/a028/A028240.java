@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028240 Weight distribution of <code>(256,2^16,120)</code> Kerdock code.
+ * A028240 Weight distribution of (256,2^16,120) Kerdock code.
  * @author Georg Fischer
  */
 public class A028240 extends FiniteSequence {

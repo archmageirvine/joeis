@@ -6,7 +6,7 @@ package irvine.oeis.a236;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A236204 Numbers not divisible by <code>2, 3</code> or 11.
+ * A236204 Numbers not divisible by 2, 3 or 11.
  * @author Georg Fischer
  */
 public class A236204 extends HolonomicRecurrence {

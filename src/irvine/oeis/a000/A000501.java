@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000501 <code>a(n) = floor(cosh(n))</code>.
+ * A000501 a(n) = floor(cosh(n)).
  * @author Sean A. Irvine
  */
 public class A000501 implements Sequence {

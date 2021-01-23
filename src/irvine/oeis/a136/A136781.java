@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A136781 Number of multiplex juggling sequences of length n, base state <code>&lt;2,2&gt</code>; and hand capacity 2.
+ * A136781 Number of multiplex juggling sequences of length n, base state &lt;2,2&gt; and hand capacity 2.
  * @author Georg Fischer
  */
 public class A136781 extends GeneratingFunctionSequence {

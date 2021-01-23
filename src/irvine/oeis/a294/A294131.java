@@ -5,13 +5,13 @@ package irvine.oeis.a294;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A294131 Numbers k such that <code>5*10^k - 13</code> is prime.
+ * A294131 Numbers k such that 5*10^k - 13 is prime.
  * @author Georg Fischer
  */
 public class A294131 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A294131() {
-    super(1, 1, 5, 10, -13, 0);
+    super(1, 1, 5, 10, -13);
   }
 }

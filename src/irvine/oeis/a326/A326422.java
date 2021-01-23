@@ -6,7 +6,7 @@ package irvine.oeis.a326;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A326422 Numbers k such that <code>A000045(k) mod 5</code> is prime.
+ * A326422 Numbers k such that A000045(k) mod 5 is prime.
  * @author Georg Fischer
  */
 public class A326422 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a065;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A065866 <code>a(n) = n! * Catalan(n+1)</code>.
+ * A065866 a(n) = n! * Catalan(n+1).
  * @author Georg Fischer
  */
 public class A065866 extends HolonomicRecurrence {

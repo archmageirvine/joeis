@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024449 4th elementary symmetric function of the first <code>n+3</code> primes.
+ * A024449 4th elementary symmetric function of the first n+3 primes.
  * @author Sean A. Irvine
  */
 public class A024449 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143795 <code>a(1) = 1</code>, then for <code>n &gt; 1, a(n) = a(n - 1) + 1</code> for n even, or <code>a(n) = a(n - 1) + 10</code> for n odd.
+ * A143795 a(1) = 1, then for n &gt; 1, a(n) = a(n - 1) + 1 for n even, or a(n) = a(n - 1) + 10 for n odd.
  * @author Georg Fischer
  */
 public class A143795 extends GeneratingFunctionSequence {

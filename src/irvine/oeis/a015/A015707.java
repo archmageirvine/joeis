@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015707 Values of n where <code>(phi(n) * sigma(n))/n</code> is an integer and increases.
+ * A015707 Values of n where (phi(n) * sigma(n))/n is an integer and increases.
  * @author Sean A. Irvine
  */
 public class A015707 implements Sequence {
@@ -21,7 +21,7 @@ public class A015707 implements Sequence {
       final FactorSequence fs = Cheetah.factor(mN);
       final Z a = fs.sigma().multiply(fs.phi());
       final Z[] qr = a.divideAndRemainder(mN);
-      if (qr[1].equals(Z.ZERO) && qr[0].compareTo(mBest) > 0) {
+      if (qr[1].isZero() && qr[0].compareTo(mBest) > 0) {
         mBest = qr[0];
         return mN;
       }

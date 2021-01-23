@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075194 Binomial transform of pentanacci numbers <code>A074048: a(n)=Sum((-1)^k*Binomial(n,k)*A074048(k),(k=0,..,n))</code>.
+ * A075194 Binomial transform of pentanacci numbers A074048: a(n)=Sum((-1)^k*Binomial(n,k)*A074048(k),(k=0,..,n)).
  * @author Georg Fischer
  */
 public class A075194 extends HolonomicRecurrence {

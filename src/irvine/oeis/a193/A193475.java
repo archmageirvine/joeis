@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A193475 <code>a(n) = 4*16^n - 2*4^n</code>.
+ * A193475 a(n) = 4*16^n - 2*4^n.
  * @author Georg Fischer
  */
 public class A193475 extends GeneratingFunctionSequence {

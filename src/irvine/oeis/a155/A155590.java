@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155590 <code>7^n+2^n-1^n</code>.
+ * A155590 7^n+2^n-1^n.
  * @author Sean A. Irvine
  */
 public class A155590 extends LinearRecurrence {

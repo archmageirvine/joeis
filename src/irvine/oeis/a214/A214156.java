@@ -5,7 +5,7 @@ package irvine.oeis.a214;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A214156 Dual to <code>A214094: a(0)=0, a(1)=1; a(n) = a(n-1) + a(n-2)</code> if <code>a(n-1) + a(n-2)</code> is not semiprime; <code>a(n)</code> is minimal prime divisor of <code>a(n-1) + a(n-2)</code> if <code>a(n-1) + a(n-2)</code> is semiprime.
+ * A214156 Dual to A214094: a(0)=0, a(1)=1; a(n) = a(n-1) + a(n-2) if a(n-1) + a(n-2) is not semiprime; a(n) is minimal prime divisor of a(n-1) + a(n-2) if a(n-1) + a(n-2) is semiprime.
  * @author Georg Fischer
  */
 public class A214156 extends HolonomicRecurrence {

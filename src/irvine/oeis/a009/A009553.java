@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009553 Expansion of e.g.f. <code>sin(x)/cos(sin(x))</code> (odd powers only).
+ * A009553 Expansion of e.g.f. sin(x)/cos(sin(x)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A009553 implements Sequence {

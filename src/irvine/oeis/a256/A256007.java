@@ -4,7 +4,7 @@ package irvine.oeis.a256;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A256007 Numbers k satisfying <code>|k + 1 - 2F| &lt;= 1</code> for some positive Fibonacci number F.
+ * A256007 Numbers k satisfying |k + 1 - 2F| &lt;= 1 for some positive Fibonacci number F.
  * @author Georg Fischer
  */
 public class A256007 extends GeneratingFunctionSequence {

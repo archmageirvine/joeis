@@ -5,7 +5,7 @@ package irvine.oeis.a133;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A133998 Number of isomers of the soccerball <code>C_60H_n</code> Buckminster fullerene.
+ * A133998 Number of isomers of the soccerball C_60H_n Buckminster fullerene.
  * @author Georg Fischer
  */
 public class A133998 extends FiniteSequence {

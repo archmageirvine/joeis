@@ -6,7 +6,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329482 Interleave <code>1 - n + 3*n^2, 1 + 3*n*(1+n)</code> for <code>n &gt;= 0</code>.
+ * A329482 Interleave 1 - n + 3*n^2, 1 + 3*n*(1+n) for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A329482 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321244 Non-isomorphic proper colorings of the <code>3 X 3</code> grid graph using at most n colors under rotational and reflectional symmetries.
+ * A321244 Non-isomorphic proper colorings of the 3 X 3 grid graph using at most n colors under rotational and reflectional symmetries.
  * @author Georg Fischer
  */
 public class A321244 extends GeneratingFunctionSequence {

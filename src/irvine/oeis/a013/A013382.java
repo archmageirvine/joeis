@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013382 <code>arctan(sin(x)-tanh(x))=1/3!*x^3-15/5!*x^5+271/7!*x^7-8495/9!*x^9..</code>.
+ * A013382 arctan(sin(x)-tanh(x))=1/3!*x^3-15/5!*x^5+271/7!*x^7-8495/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013382 implements Sequence {

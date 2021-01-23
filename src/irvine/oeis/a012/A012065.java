@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012065 Expansion of e.g.f: <code>tan(arcsin(arcsin(x)))</code>.
+ * A012065 Expansion of e.g.f: tan(arcsin(arcsin(x))).
  * @author Sean A. Irvine
  */
 public class A012065 implements Sequence {

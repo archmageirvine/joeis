@@ -6,7 +6,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178114 Expansion of <code>(sqrt(1-2x+7x^2-6x^3+5x^4)-(1-x+x^2))/(2x^2(1-x+x^2))</code>.
+ * A178114 Expansion of (sqrt(1-2x+7x^2-6x^3+5x^4)-(1-x+x^2))/(2x^2(1-x+x^2)).
  * @author Georg Fischer
  */
 public class A178114 extends HolonomicRecurrence {

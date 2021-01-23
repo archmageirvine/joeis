@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A117034 Decimal expansion of (cos <code>1)^3</code>.
+ * A117034 Decimal expansion of (cos 1)^3.
  * @author Georg Fischer
  */
 public class A117034 extends DecimalExpansionSequence {

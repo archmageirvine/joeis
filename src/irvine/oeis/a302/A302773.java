@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302773 Numerators of <code>(3*n + 2)/12</code>.
+ * A302773 Numerators of (3*n + 2)/12.
  * @author Georg Fischer
  */
 public class A302773 extends GeneratingFunctionSequence {

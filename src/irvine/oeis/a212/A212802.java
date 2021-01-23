@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.math.z.Z;
 
 /**
- * A212802 Row 5 of array in <code>A212801</code>.
+ * A212802 Row 5 of array in A212801.
  * @author Sean A. Irvine
  */
 public class A212802 extends A212801 {

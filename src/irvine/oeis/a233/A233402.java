@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233402 Number of <code>(n+1) X (1+1) 0..2</code> arrays with row and column sums nondecreasing, and no adjacent elements equal.
+ * A233402 Number of (n+1) X (1+1) 0..2 arrays with row and column sums nondecreasing, and no adjacent elements equal.
  * @author Georg Fischer
  */
 public class A233402 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304383 <code>a(n) = 36*2^n - 5 (n&gt;=1)</code>.
+ * A304383 a(n) = 36*2^n - 5 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304383 extends GeneratingFunctionSequence {

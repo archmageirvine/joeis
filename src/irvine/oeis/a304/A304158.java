@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304158 <code>a(n)</code> is the second Zagreb index of the linear phenylene <code>G[n]</code>, defined pictorially in the Darafsheh reference <code>(Fig. 3)</code>.
+ * A304158 a(n) is the second Zagreb index of the linear phenylene G[n], defined pictorially in the Darafsheh reference (Fig. 3).
  * @author Georg Fischer
  */
 public class A304158 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a137;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A137261 G.f.: <code>(5764801*x^8-5764801*x^7+28812*x^4-28812*x^3+840*x-1200)/(x-1)</code>.
+ * A137261 G.f.: (5764801*x^8-5764801*x^7+28812*x^4-28812*x^3+840*x-1200)/(x-1).
  * @author Georg Fischer
  */
 public class A137261 extends HolonomicRecurrence {

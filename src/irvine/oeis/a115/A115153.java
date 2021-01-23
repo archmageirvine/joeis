@@ -5,7 +5,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115153 Sixth diagonal <code>(M=6)</code> sequence of triangle <code>A113647</code>, called <code>Y(2,1)</code>.
+ * A115153 Sixth diagonal (M=6) sequence of triangle A113647, called Y(2,1).
  * @author Georg Fischer
  */
 public class A115153 extends HolonomicRecurrence {

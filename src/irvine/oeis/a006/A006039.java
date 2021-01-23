@@ -19,7 +19,7 @@ public class A006039 extends A023196 {
       final Z pp = super.next();
       boolean ok = true;
       for (final Z n : mPrimitive) {
-        if (Z.ZERO.equals(pp.mod(n))) {
+        if (pp.mod(n).isZero()) {
           ok = false;
           break;
         }

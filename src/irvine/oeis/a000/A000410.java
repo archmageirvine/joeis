@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000410 Number of singular <code>n X n</code> rational <code>(0,1)-matrices</code>.
+ * A000410 Number of singular n X n rational (0,1)-matrices.
  * @author Sean A. Irvine
  */
 public class A000410 implements Sequence {

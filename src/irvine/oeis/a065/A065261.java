@@ -5,7 +5,7 @@ package irvine.oeis.a065;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A065261 The siteswap sequence (the deltas <code>p[i]-i</code>, i in <code>]-inf,+inf[</code>, folded from Z to N, mapping <code>0-&gt;1, 1-&gt;2, -1-&gt;3, 2-&gt;4, -2-&gt;5, etc.)</code> for <code>A065260</code>.
+ * A065261 The siteswap sequence (the deltas p[i]-i, i in ]-inf,+inf[, folded from Z to N, mapping 0-&gt;1, 1-&gt;2, -1-&gt;3, 2-&gt;4, -2-&gt;5, etc.) for A065260.
  * @author Georg Fischer
  */
 public class A065261 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A139206 Smallest son factorial prime p of order n: smallest p such that <code>p!/n-1</code> is prime.
+ * A139206 Smallest son factorial prime p of order n: smallest p such that p!/n-1 is prime.
  * @author Sean A. Irvine
  */
 public class A139206 implements Sequence {
@@ -23,7 +23,7 @@ public class A139206 implements Sequence {
       f = f.multiply(++p);
       if (mPrime.isPrime(p)) {
         final Z[] t = f.subtract(mN).divideAndRemainder(n);
-        if (Z.ZERO.equals(t[1]) && mPrime.isPrime(t[0])) {
+        if (t[1].isZero() && mPrime.isPrime(t[0])) {
           return Z.valueOf(p);
         }
       }

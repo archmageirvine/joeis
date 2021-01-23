@@ -5,7 +5,7 @@ package irvine.oeis.a084;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A084871 Number of 4-multiantichains of an <code>n-set</code>.
+ * A084871 Number of 4-multiantichains of an n-set.
  * @author Georg Fischer
  */
 public class A084871 extends HolonomicRecurrence {

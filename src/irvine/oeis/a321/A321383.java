@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321383 Numbers k such that the concatenation <code>k21</code> is a square.
+ * A321383 Numbers k such that the concatenation k21 is a square.
  * @author Georg Fischer
  */
 public class A321383 extends GeneratingFunctionSequence {

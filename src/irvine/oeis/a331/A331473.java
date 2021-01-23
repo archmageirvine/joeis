@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331473 Alternating sum of <code>(n+1)*A000108(n+1)</code>.
+ * A331473 Alternating sum of (n+1)*A000108(n+1).
  * @author Georg Fischer
  */
 public class A331473 extends HolonomicRecurrence {

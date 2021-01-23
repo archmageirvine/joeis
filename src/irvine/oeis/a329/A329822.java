@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329822 The minimum weight of a Boolean function of algebraic degree at most <code>n-3</code> whose support contains n linearly independent elements.
+ * A329822 The minimum weight of a Boolean function of algebraic degree at most n-3 whose support contains n linearly independent elements.
  * @author Georg Fischer
  */
 public class A329822 extends HolonomicRecurrence {

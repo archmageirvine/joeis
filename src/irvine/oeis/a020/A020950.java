@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.math.z.Z;
 
 /**
- * A020950 <code>a(n) = k-1</code>, where k is smallest number such that <code>A002487(k) = n</code>.
+ * A020950 a(n) = k-1, where k is smallest number such that A002487(k) = n.
  * @author Sean A. Irvine
  */
 public class A020950 extends A020946 {

@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276178 G.f.: <code>1/AGM(1, (1-4*x)^2)</code>.
+ * A276178 G.f.: 1/AGM(1, (1-4*x)^2).
  * @author Georg Fischer
  */
 public class A276178 extends HolonomicRecurrence {

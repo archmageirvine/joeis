@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260994 Numbers n such that the modular curve <code>X_0(n)</code> has genus <code>&gt;= 2</code> and contains infinitely many points of degree 2 over some number field L.
+ * A260994 Numbers n such that the modular curve X_0(n) has genus &gt;= 2 and contains infinitely many points of degree 2 over some number field L.
  * @author Georg Fischer
  */
 public class A260994 extends FiniteSequence {

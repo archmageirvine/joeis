@@ -3,7 +3,7 @@ package irvine.oeis.a017;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A017478 <code>a(n) = (11*n + 7)^6</code>.
+ * A017478 a(n) = (11*n + 7)^6.
  * @author Sean A. Irvine
  */
 public class A017478 extends LinearRecurrence {

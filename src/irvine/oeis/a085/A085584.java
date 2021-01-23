@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A085584 Number of <code>(3412,2341)-, (3412,4123)-</code> and <code>(3412,52341)-avoiding</code> involutions in <code>S_n</code>.
+ * A085584 Number of (3412,2341)-, (3412,4123)- and (3412,52341)-avoiding involutions in S_n.
  * @author Georg Fischer
  */
 public class A085584 extends GeneratingFunctionSequence {

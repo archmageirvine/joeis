@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169831 <code>a(n) = 5*2^(n+1) - 3*(n+3)</code>.
+ * A169831 a(n) = 5*2^(n+1) - 3*(n+3).
  * @author Sean A. Irvine
  */
 public class A169831 extends LinearRecurrence {

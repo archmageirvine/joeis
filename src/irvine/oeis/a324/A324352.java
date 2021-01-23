@@ -6,7 +6,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324352 Total number of occurrences of 2 in the (signed) displacement sets of all permutations of <code>[n+2]</code> divided by <code>2!</code>.
+ * A324352 Total number of occurrences of 2 in the (signed) displacement sets of all permutations of [n+2] divided by 2!.
  * @author Georg Fischer
  */
 public class A324352 extends HolonomicRecurrence {

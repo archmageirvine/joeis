@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253285 <code>a(n) = RF(n+1,3)*C(n+2,n-1)</code>, where <code>RF(a,n)</code> is the rising factorial.
+ * A253285 a(n) = RF(n+1,3)*C(n+2,n-1), where RF(a,n) is the rising factorial.
  * @author Georg Fischer
  */
 public class A253285 extends GeneratingFunctionSequence {

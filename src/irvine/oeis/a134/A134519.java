@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134519 Numbers remaining when the natural numbers <code>(A000027)</code> are arranged into a triangle and only the beginning and end terms of each row are retained.
+ * A134519 Numbers remaining when the natural numbers (A000027) are arranged into a triangle and only the beginning and end terms of each row are retained.
  * @author Georg Fischer
  */
 public class A134519 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084859 Binomial transform of Cullen numbers <code>A002064</code>.
+ * A084859 Binomial transform of Cullen numbers A002064.
  * @author Sean A. Irvine
  */
 public class A084859 extends LinearRecurrence {

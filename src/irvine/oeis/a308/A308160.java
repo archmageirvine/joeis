@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308160 Take all the integer-sided isosceles triangles with perimeter n and sides a, b, and c such that a <code>&lt;= b &lt;=</code> c. <code>a(n)</code> is the sum of all the b's.
+ * A308160 Take all the integer-sided isosceles triangles with perimeter n and sides a, b, and c such that a &lt;= b &lt;= c. a(n) is the sum of all the b's.
  * @author Georg Fischer
  */
 public class A308160 extends HolonomicRecurrence {

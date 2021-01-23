@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000879 Number of primes <code>&lt; prime(n)^2</code>.
+ * A000879 Number of primes &lt; prime(n)^2.
  * @author Sean A. Irvine
  */
 public class A000879 implements Sequence {

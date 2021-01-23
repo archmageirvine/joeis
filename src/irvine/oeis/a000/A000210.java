@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000210 A Beatty sequence: <code>floor(n*(e-1))</code>.
+ * A000210 A Beatty sequence: floor(n*(e-1)).
  * @author Sean A. Irvine
  */
 public class A000210 implements Sequence {

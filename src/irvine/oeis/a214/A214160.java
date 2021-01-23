@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A214160 Number of 0..5 colorings of an <code>n X 3</code> array circular in the 3 direction with new values 0..5 introduced in row major order.
+ * A214160 Number of 0..5 colorings of an n X 3 array circular in the 3 direction with new values 0..5 introduced in row major order.
  * @author Georg Fischer
  */
 public class A214160 extends GeneratingFunctionSequence {

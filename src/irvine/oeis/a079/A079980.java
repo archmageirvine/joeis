@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079980 Number of permutations of length <code>2n</code> satisfying <code>-k&lt;=p(i)-i&lt;=r</code> and <code>p(i)-i</code> not in I, <code>i=1..2n</code>, with <code>k=3, r=3, I={-2,0,1,2}</code>. There is no one such permutation of length <code>2n+1</code>.
+ * A079980 Number of permutations of length 2n satisfying -k&lt;=p(i)-i&lt;=r and p(i)-i not in I, i=1..2n, with k=3, r=3, I={-2,0,1,2}. There is no one such permutation of length 2n+1.
  * @author Sean A. Irvine
  */
 public class A079980 extends LinearRecurrence {

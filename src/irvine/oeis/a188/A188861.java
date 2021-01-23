@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A188861 Number of <code>n X 4</code> binary arrays without the pattern <code>0 1</code> diagonally, vertically or antidiagonally.
+ * A188861 Number of n X 4 binary arrays without the pattern 0 1 diagonally, vertically or antidiagonally.
  * @author Georg Fischer
  */
 public class A188861 extends GeneratingFunctionSequence {

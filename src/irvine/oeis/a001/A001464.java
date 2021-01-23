@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001464 E.g.f. <code>exp( -x -(1/2)*x^2 )</code>.
+ * A001464 E.g.f. exp( -x -(1/2)*x^2 ).
  * @author Sean A. Irvine
  */
 public class A001464 implements Sequence {

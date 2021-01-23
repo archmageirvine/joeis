@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103949 <code>a(n)</code> is the number of distinct n-th powers of functions <code>{1, 2, 3, 4} -&gt; {1, 2, 3, 4}</code>.
+ * A103949 a(n) is the number of distinct n-th powers of functions {1, 2, 3, 4} -&gt; {1, 2, 3, 4}.
  * @author Georg Fischer
  */
 public class A103949 extends LinearRecurrence {

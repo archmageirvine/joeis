@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A113164 <code>a(n) = binomial(6, n)^2</code>.
+ * A113164 a(n) = binomial(6, n)^2.
  * @author Georg Fischer
  */
 public class A113164 extends FiniteSequence {

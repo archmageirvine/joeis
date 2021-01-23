@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134142 List of quadruples: <code>2*(-4)^n, -3*(-4)^n, 2*(-4^n), 2*(-4)^n, n &gt;= 0</code>.
+ * A134142 List of quadruples: 2*(-4)^n, -3*(-4)^n, 2*(-4^n), 2*(-4)^n, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A134142 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267469 Number of <code>length-n 0..6</code> arrays with no following elements larger than the first repeated value.
+ * A267469 Number of length-n 0..6 arrays with no following elements larger than the first repeated value.
  * @author Georg Fischer
  */
 public class A267469 extends GeneratingFunctionSequence {

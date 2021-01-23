@@ -6,7 +6,7 @@ package irvine.oeis.a087;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A087912 Exponential generating function is <code>exp(2*x/(1-x))/(1-x)</code>.
+ * A087912 Exponential generating function is exp(2*x/(1-x))/(1-x).
  * @author Georg Fischer
  */
 public class A087912 extends HolonomicRecurrence {

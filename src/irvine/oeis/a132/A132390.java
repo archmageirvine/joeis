@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132390 Number of binary pattern classes in the <code>(2,n)-rectangular</code> grid; two patterns are in same class if one of them can be obtained by reflection or rotation of the other one.
+ * A132390 Number of binary pattern classes in the (2,n)-rectangular grid; two patterns are in same class if one of them can be obtained by reflection or rotation of the other one.
  * @author Georg Fischer
  */
 public class A132390 extends LinearRecurrence {

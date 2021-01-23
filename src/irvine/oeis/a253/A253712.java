@@ -5,7 +5,7 @@ package irvine.oeis.a253;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A253712 Second partial sums of <code>12th</code> powers <code>(A008456)</code>.
+ * A253712 Second partial sums of 12th powers (A008456).
  * @author Georg Fischer
  */
 public class A253712 extends HolonomicRecurrence {

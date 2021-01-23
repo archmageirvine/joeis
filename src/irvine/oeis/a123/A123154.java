@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A123154 A <code>3 X 3</code> magic square read by rows. From a quiz.
+ * A123154 A 3 X 3 magic square read by rows. From a quiz.
  * @author Georg Fischer
  */
 public class A123154 extends FiniteSequence {

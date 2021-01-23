@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266355 Expansion of <code>b(2)*b(4)*b(6)/(1-x-x^2-x^4+x^6+x^8)</code>, where <code>b(k) = (1-x^k)/(1-x)</code>.
+ * A266355 Expansion of b(2)*b(4)*b(6)/(1-x-x^2-x^4+x^6+x^8), where b(k) = (1-x^k)/(1-x).
  * @author Georg Fischer
  */
 public class A266355 extends GeneratingFunctionSequence {

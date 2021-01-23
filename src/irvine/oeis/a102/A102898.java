@@ -6,7 +6,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102898 A Catalan-related transform of <code>3^n</code>.
+ * A102898 A Catalan-related transform of 3^n.
  * @author Georg Fischer
  */
 public class A102898 extends HolonomicRecurrence {

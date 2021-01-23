@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031174 Intermediate edge b of smallest (measured by the longest edge) primitive Euler bricks <code>(a</code>, b, c, <code>sqrt(a^2 + b^2), sqrt(b^2 + c^2), sqrt(a^2 + c^2)</code> are integers).
+ * A031174 Intermediate edge b of smallest (measured by the longest edge) primitive Euler bricks (a, b, c, sqrt(a^2 + b^2), sqrt(b^2 + c^2), sqrt(a^2 + c^2) are integers).
  * @author Sean A. Irvine
  */
 public class A031174 implements Sequence {

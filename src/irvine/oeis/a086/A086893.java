@@ -6,7 +6,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086893 <code>a(n)</code> is the index of <code>F(n+1)</code> at the unique occurrence of the ordered pair of reversed consecutive terms <code>(F(n+1),F(n))</code> in Stern's diatomic sequence <code>A002487</code>, where <code>F(k)</code> denotes the k-th term of the Fibonacci sequence <code>A000045</code>.
+ * A086893 a(n) is the index of F(n+1) at the unique occurrence of the ordered pair of reversed consecutive terms (F(n+1),F(n)) in Stern's diatomic sequence A002487, where F(k) denotes the k-th term of the Fibonacci sequence A000045.
  * @author Georg Fischer
  */
 public class A086893 extends HolonomicRecurrence {

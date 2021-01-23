@@ -2,23 +2,55 @@ package irvine.oeis.a006;
 
 import java.util.HashMap;
 
-import irvine.math.TwoDimensionalWalk;
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.a001.A001411;
+import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
  * A006814 Related to self-avoiding walks on square lattice.
  * @author Sean A. Irvine
  */
-public class A006814 extends A001411 {
+public class A006814 implements Sequence {
 
   static final int[] DELTA_X = {-1, 1, 0, 0};
   static final int[] DELTA_Y = {0, 0, -1, 1};
   protected HashMap<Pair<Integer, Integer>, Integer> mWorkspace = new HashMap<>();
 
-  {
-    super.next(); // skip 0th term
+  private final long mX1 = Lattices.Z2.toPoint(1, 0);
+  private int mN = 0;
+  protected final ParallelWalker mWalker = getParallelWalker();
+
+  protected ParallelWalker getParallelWalker() {
+    return new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.Z2) {
+      {
+        setAccumulator((walk, weight, axesMask) -> {
+          preparePath(walk);
+          long linearExtent = 0;
+          int z = 0;
+          int k = walk.length - 1;
+          while (k >= 0) {
+            final int x = (int) Lattices.Z2.ordinate(walk[k], 0);
+            final int y = (int) Lattices.Z2.ordinate(walk[k], 1);
+            int bz = updateNextStart(z, x, y);
+            if (bz == z) {
+              break;
+            } else if (bz == z + 1) {
+              ++linearExtent;
+            }
+            while (z < bz) {
+              --k;
+              if (++z < bz) {
+                bz = updateNextStart(bz, (int) Lattices.Z2.ordinate(walk[k], 0), (int) Lattices.Z2.ordinate(walk[k], 1));
+              }
+            }
+          }
+          increment(linearExtent * weight);
+        });
+      }
+    });
   }
 
   protected int updateNextStart(final int z, final int x, final int y) {
@@ -35,48 +67,17 @@ public class A006814 extends A001411 {
     return bz;
   }
 
-  protected int preparePath(final TwoDimensionalWalk w) {
+  protected int preparePath(final long[] w) {
     mWorkspace.clear();
-    TwoDimensionalWalk u = w;
     int cnt = 0;
-    while (u != null) {
-      mWorkspace.put(new Pair<>(u.x(), u.y()), cnt++);
-      u = u.getPrevious();
+    for (int k = w.length - 1; k >= 0; --k) {
+      mWorkspace.put(new Pair<>((int) Lattices.Z2.ordinate(w[k], 0), (int) Lattices.Z2.ordinate(w[k], 1)), cnt++);
     }
     return cnt;
   }
 
-  protected long linearExtent(final TwoDimensionalWalk w) {
-    preparePath(w);
-    long linearExtent = 0;
-    int z = 0;
-    TwoDimensionalWalk u = w;
-    while (u != null) {
-      final int x = u.x();
-      final int y = u.y();
-      int bz = updateNextStart(z, x, y);
-      if (bz == z) {
-        break;
-      } else if (bz == z + 1) {
-        ++linearExtent;
-      }
-      while (z < bz) {
-        u = u.getPrevious();
-        if (++z < bz) {
-          bz = updateNextStart(bz, u.x(), u.y());
-        }
-      }
-    }
-    return linearExtent;
-  }
-
   @Override
   public Z next() {
-    super.next();
-    Z sum = Z.ZERO;
-    for (final TwoDimensionalWalk w : mWalks) {
-      sum = sum.add(linearExtent(w));
-    }
-    return sum;
+    return Z.valueOf(mWalker.count(++mN, 1, 1, Lattices.Z2.origin(), mX1));
   }
 }

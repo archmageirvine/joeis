@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025019 Smallest prime in Goldbach partition of <code>A025018(n)</code>.
+ * A025019 Smallest prime in Goldbach partition of A025018(n).
  * @author Sean A. Irvine
  */
 public class A025019 extends A025017 {

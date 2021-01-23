@@ -5,7 +5,7 @@ package irvine.oeis.a263;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A263529 Binomial transform of double factorial <code>n!! (A006882)</code>.
+ * A263529 Binomial transform of double factorial n!! (A006882).
  * @author Georg Fischer
  */
 public class A263529 extends HolonomicRecurrence {

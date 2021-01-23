@@ -5,7 +5,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064686 <code>a(n) =</code> number of <code>n-digit base-3</code> biquams.
+ * A064686 a(n) = number of n-digit base-3 biquams.
  * @author Georg Fischer
  */
 public class A064686 extends HolonomicRecurrence {

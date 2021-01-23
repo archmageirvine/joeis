@@ -5,7 +5,7 @@ package irvine.oeis.a084;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A084477 Number of fault-free tilings of a <code>4 X 3n</code> rectangle with right trominoes.
+ * A084477 Number of fault-free tilings of a 4 X 3n rectangle with right trominoes.
  * @author Georg Fischer
  */
 public class A084477 extends HolonomicRecurrence {

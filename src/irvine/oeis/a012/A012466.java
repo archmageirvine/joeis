@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012466 E.g.f. <code>sec(arctan(x)^2)</code> (even powers only).
+ * A012466 E.g.f. sec(arctan(x)^2) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012466 implements Sequence {

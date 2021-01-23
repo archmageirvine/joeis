@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A157017 Numbers n such that <code>n!</code> can be written as a product of distinct factors in the range from <code>n+1</code> to <code>2n</code>, inclusive.
+ * A157017 Numbers n such that n! can be written as a product of distinct factors in the range from n+1 to 2n, inclusive.
  * @author Georg Fischer
  */
 public class A157017 extends FiniteSequence {

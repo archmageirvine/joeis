@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257707 Numbers n such that <code>T(n) + T(n+1) + ... + T(n+22)</code> is a square, where T <code>= A000217</code> (triangular numbers).
+ * A257707 Numbers n such that T(n) + T(n+1) + ... + T(n+22) is a square, where T = A000217 (triangular numbers).
  * @author Sean A. Irvine
  */
 public class A257707 extends LinearRecurrence {

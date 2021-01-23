@@ -5,7 +5,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097861 Number of humps in all Motzkin paths of length <code>n. (A</code> hump is an upstep followed by 0 or more flatsteps followed by a <code>downstep.)</code>.
+ * A097861 Number of humps in all Motzkin paths of length n. (A hump is an upstep followed by 0 or more flatsteps followed by a downstep.).
  * @author Georg Fischer
  */
 public class A097861 extends HolonomicRecurrence {

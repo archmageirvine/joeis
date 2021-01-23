@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221046 The Wiener index of the Bethe cactus lattice graph <code>E_n</code> defined pictorially in the Hosoya - Balasubramanian reference.
+ * A221046 The Wiener index of the Bethe cactus lattice graph E_n defined pictorially in the Hosoya - Balasubramanian reference.
  * @author Georg Fischer
  */
 public class A221046 extends GeneratingFunctionSequence {

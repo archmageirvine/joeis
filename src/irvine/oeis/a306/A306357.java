@@ -6,7 +6,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306357 Number of nonempty subsets of <code>{1</code>, ..., <code>n}</code> containing no three cyclically successive elements.
+ * A306357 Number of nonempty subsets of {1, ..., n} containing no three cyclically successive elements.
  * @author Georg Fischer
  */
 public class A306357 extends GeneratingFunctionSequence {

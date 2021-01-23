@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024382 <code>a(n) = n-th</code> elementary symmetric function of the first <code>n+1</code> positive integers congruent to <code>1 mod 4</code>.
+ * A024382 a(n) = n-th elementary symmetric function of the first n+1 positive integers congruent to 1 mod 4.
  * @author Sean A. Irvine
  */
 public class A024382 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182520 G.f.: <code>x = Sum_{n&gt;=1} a(n)*x^n * Sum_{k=0..n} (k+1)*binomial(n,k)*(-x)^k</code>.
+ * A182520 G.f.: x = Sum_{n&gt;=1} a(n)*x^n * Sum_{k=0..n} (k+1)*binomial(n,k)*(-x)^k.
  * @author Georg Fischer
  */
 public class A182520 extends HolonomicRecurrence {

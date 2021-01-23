@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002100 <code>a(n) =</code> number of partitions of n into semiprimes (more precisely, number of ways of writing n as a sum of products of 2 distinct primes).
+ * A002100 a(n) = number of partitions of n into semiprimes (more precisely, number of ways of writing n as a sum of products of 2 distinct primes).
  * @author Sean A. Irvine
  */
 public class A002100 implements Sequence {

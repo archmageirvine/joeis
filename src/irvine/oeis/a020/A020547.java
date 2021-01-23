@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020547 2nd Euler polynomial evaluated at <code>x=n!</code>.
+ * A020547 2nd Euler polynomial evaluated at x=n!.
  * @author Sean A. Irvine
  */
 public class A020547 implements Sequence {

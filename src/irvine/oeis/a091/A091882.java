@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091882 Expansion of <code>(1-10x)/(1-15x)</code>.
+ * A091882 Expansion of (1-10x)/(1-15x).
  * @author Georg Fischer
  */
 public class A091882 extends GeneratingFunctionSequence {

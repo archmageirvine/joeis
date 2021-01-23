@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A102169 <code>a(n) =</code> the number of sequences of n integers such that each integer is in the range 0..4 and the sum of the integers is in the range 0..24.
+ * A102169 a(n) = the number of sequences of n integers such that each integer is in the range 0..4 and the sum of the integers is in the range 0..24.
  * @author Georg Fischer
  */
 public class A102169 extends GeneratingFunctionSequence {

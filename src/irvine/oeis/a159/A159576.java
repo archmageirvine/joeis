@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159576 Decimal expansion of <code>(278307+179662*sqrt(2))/337^2</code>.
+ * A159576 Decimal expansion of (278307+179662*sqrt(2))/337^2.
  * @author Georg Fischer
  */
 public class A159576 extends DecimalExpansionSequence {

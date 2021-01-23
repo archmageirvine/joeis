@@ -5,7 +5,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102039 <code>a(n) = a(n-1) +</code> last digit of <code>a(n-1)</code>, starting at 1.
+ * A102039 a(n) = a(n-1) + last digit of a(n-1), starting at 1.
  * @author Georg Fischer
  */
 public class A102039 extends HolonomicRecurrence {

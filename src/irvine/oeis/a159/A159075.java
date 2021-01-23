@@ -5,7 +5,7 @@ package irvine.oeis.a159;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A159075 <code>a(1) = -1</code>, otherwise <code>a(n) = 0</code>.
+ * A159075 a(1) = -1, otherwise a(n) = 0.
  * @author Georg Fischer
  */
 public class A159075 extends HolonomicRecurrence {

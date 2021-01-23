@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A332580 <code>a(n) =</code> minimal positive k such that the concatenation of the decimal digits of <code>n,n+1,...,n+k</code> is divisible by <code>n+k+1</code>, or -1 if no such k exists.
+ * A332580 a(n) = minimal positive k such that the concatenation of the decimal digits of n,n+1,...,n+k is divisible by n+k+1, or -1 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A332580 implements Sequence {

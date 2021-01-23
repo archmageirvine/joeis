@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A000056 Order of the group <code>SL(2,Z_n)</code>.
+ * A000056 Order of the group SL(2,Z_n).
  * @author Sean A. Irvine
  */
 public class A000056 implements Sequence {

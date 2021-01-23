@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216414 <code>a(n) = (-1)^(n-3)*binomial(n,3) - 1</code>.
+ * A216414 a(n) = (-1)^(n-3)*binomial(n,3) - 1.
  * @author Sean A. Irvine
  */
 public class A216414 extends LinearRecurrence {

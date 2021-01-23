@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114291 Number of combinatorial types of achiral n-dimensional polytopes with <code>n+3</code> vertices, where a polytope is achiral if one of its geometric realizations has a <code>reflection-symmetry</code>.
+ * A114291 Number of combinatorial types of achiral n-dimensional polytopes with n+3 vertices, where a polytope is achiral if one of its geometric realizations has a reflection-symmetry.
  * @author Georg Fischer
  */
 public class A114291 extends LinearRecurrence {

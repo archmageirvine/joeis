@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054473 Number of ways of numbering the faces of a cube with nonnegative integers so that the sum of the 6 numbers is <code>n</code>.
+ * A054473 Number of ways of numbering the faces of a cube with nonnegative integers so that the sum of the 6 numbers is n.
  * @author Georg Fischer
  */
 public class A054473 extends GeneratingFunctionSequence {

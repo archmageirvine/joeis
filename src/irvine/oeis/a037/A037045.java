@@ -5,7 +5,7 @@ package irvine.oeis.a037;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A037045 5-white numbers: partition digits of <code>n^5</code> into blocks of 5 starting at right; sum of these 5-digit numbers equals <code>n</code>.
+ * A037045 5-white numbers: partition digits of n^5 into blocks of 5 starting at right; sum of these 5-digit numbers equals n.
  * @author Georg Fischer
  */
 public class A037045 extends FiniteSequence {

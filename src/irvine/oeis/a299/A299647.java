@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A299647 Positive solutions to <code>x^2 == -2 (mod 11)</code>.
+ * A299647 Positive solutions to x^2 == -2 (mod 11).
  * @author Georg Fischer
  */
 public class A299647 extends LinearRecurrence {

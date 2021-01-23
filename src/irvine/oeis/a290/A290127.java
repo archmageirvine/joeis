@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290127 <code>a(n) = (1/5760)*(n + 5)*(15*n^7 + 225*n^6 + 1265*n^5 + 3707*n^4 + 7120*n^3 + 4900*n^2 - 6480*n + 27648)</code>.
+ * A290127 a(n) = (1/5760)*(n + 5)*(15*n^7 + 225*n^6 + 1265*n^5 + 3707*n^4 + 7120*n^3 + 4900*n^2 - 6480*n + 27648).
  * @author Sean A. Irvine
  */
 public class A290127 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a054;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A054341 Row sums of triangle <code>A054336</code> (central binomial convolutions).
+ * A054341 Row sums of triangle A054336 (central binomial convolutions).
  * @author Georg Fischer
  */
 public class A054341 extends HolonomicRecurrence {

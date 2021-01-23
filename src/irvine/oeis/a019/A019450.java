@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A019450 Conjectured formula for irreducible 5-fold Euler sums of weight <code>2n+13</code>.
+ * A019450 Conjectured formula for irreducible 5-fold Euler sums of weight 2n+13.
  * @author Sean A. Irvine
  */
 public class A019450 extends CoordinationSequence {

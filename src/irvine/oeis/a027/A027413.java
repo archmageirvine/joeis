@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027413 If n is an odd prime, <code>a(n) =</code> the number of primitive roots <code>mod</code> n, otherwise <code>a(n) =</code> the number of k <code>&lt; n</code> divisible by at least one but not all of the prime factors of <code>n</code>.
+ * A027413 If n is an odd prime, a(n) = the number of primitive roots mod n, otherwise a(n) =  the number of k &lt; n divisible by at least one but not all of the prime factors of n.
  * @author Sean A. Irvine
  */
 public class A027413 implements Sequence {

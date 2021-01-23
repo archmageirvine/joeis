@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024423 Sum of <code>[ S(n,m)/C(n-1,m-1) ]</code> for m <code>= 1,2,...,n; S(n,m)</code> are Stirling numbers of second kind.
+ * A024423 Sum of [ S(n,m)/C(n-1,m-1) ] for m = 1,2,...,n; S(n,m) are Stirling numbers of second kind.
  * @author Sean A. Irvine
  */
 public class A024423 implements Sequence {

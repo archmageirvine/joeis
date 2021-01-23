@@ -4,7 +4,7 @@ package irvine.oeis.a256;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A256429 <code>a(n)</code> is the total number of pentagrams in a variant of pentagram fractal after n iterations.
+ * A256429 a(n) is the total number of pentagrams in a variant of pentagram fractal after n iterations.
  * @author Georg Fischer
  */
 public class A256429 extends GeneratingFunctionSequence {

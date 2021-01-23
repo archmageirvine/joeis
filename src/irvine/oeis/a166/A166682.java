@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.CoxeterSequence;
 
 /**
- * A166682 Number of reduced words of length n in Coxeter group on 34 generators <code>S_i</code> with relations <code>(S_i)^2 = (S_i S_j)^12 =</code> I.
+ * A166682 Number of reduced words of length n in Coxeter group on 34 generators S_i with relations (S_i)^2 = (S_i S_j)^12 = I.
  * @author Georg Fischer
  */
 public class A166682 extends CoxeterSequence {

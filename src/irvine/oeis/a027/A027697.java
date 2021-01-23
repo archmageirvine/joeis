@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027697 Odious primes: primes with odd number of <code>1</code>'s in binary expansion.
+ * A027697 Odious primes: primes with odd number of 1's in binary expansion.
  * @author Sean A. Irvine
  */
 public class A027697 implements Sequence {

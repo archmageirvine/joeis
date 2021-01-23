@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097632 <code>2^n * Lucas(n)</code>.
+ * A097632 2^n * Lucas(n).
  * @author Georg Fischer
  */
 public class A097632 extends HolonomicRecurrence {

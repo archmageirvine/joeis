@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019243 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite TON <code>= Theta-1 Nan[ AlnSi24-nO48 ]</code>.
+ * A019243 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite TON = Theta-1 Nan[ AlnSi24-nO48 ].
  * @author Sean A. Irvine
  */
 public class A019243 extends A018940 {

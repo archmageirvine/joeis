@@ -2,6 +2,7 @@ package irvine.oeis.a027;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.UnimplementedException;
 
 /**
  * A027361 Number of "sorted permutations": permutations that can occur as the output of the sorting procedure described by Knuth.
@@ -56,6 +57,6 @@ public class A027361 implements Sequence {
 
   @Override
   public Z next() {
-    throw new UnsupportedOperationException();
+    throw new UnimplementedException();
   }
 }

@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331101 Denominators of the best approximations for <code>sqrt(2)</code>.
+ * A331101 Denominators of the best approximations for sqrt(2).
  * @author Georg Fischer
  */
 public class A331101 extends HolonomicRecurrence {

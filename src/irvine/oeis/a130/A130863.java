@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130863 Ratio of quadruple Sum of <code>k^2-1</code> to quadruple sum of k made into an integer sequence: <code>(1/6)*(-1 + n)(2 + n)(3 + n)(7 + n)</code>.
+ * A130863 Ratio of quadruple Sum of k^2-1 to quadruple sum of k made into an integer sequence: (1/6)*(-1 + n)(2 + n)(3 + n)(7 + n).
  * @author Georg Fischer
  */
 public class A130863 extends GeneratingFunctionSequence {

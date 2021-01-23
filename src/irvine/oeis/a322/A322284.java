@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322284 Number of nonequivalent ways to place n nonattacking kings on a <code>2 X 2n</code> chessboard under all symmetry operations of the rectangle.
+ * A322284 Number of nonequivalent ways to place n nonattacking kings on a 2 X 2n chessboard under all symmetry operations of the rectangle.
  * @author Georg Fischer
  */
 public class A322284 extends GeneratingFunctionSequence {

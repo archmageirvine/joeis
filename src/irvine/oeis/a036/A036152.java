@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036152 <code>a(n) = 2^n mod 173</code>.
+ * A036152 a(n) = 2^n mod 173.
  * @author Georg Fischer
  */
 public class A036152 implements Sequence {

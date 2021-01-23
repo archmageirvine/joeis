@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025542 <code>(1/binomial(0,0) - 1/binomial(2,1) + ... + d/binomial(2n,n))*L</code>, where d <code>= (-1)^n, L = LCM{binomial(0,0), binomial(2,1),..., binomial(2n,n)}</code>.
+ * A025542 (1/binomial(0,0) - 1/binomial(2,1) + ... + d/binomial(2n,n))*L, where d = (-1)^n, L = LCM{binomial(0,0), binomial(2,1),..., binomial(2n,n)}.
  * @author Sean A. Irvine
  */
 public class A025542 implements Sequence {

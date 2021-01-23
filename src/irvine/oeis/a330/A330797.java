@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330797 Evaluation of the Stirling cycle polynomials at -1/2 and normalized with <code>(-2)^n</code>.
+ * A330797 Evaluation of the Stirling cycle polynomials at -1/2 and normalized with (-2)^n.
  * @author Georg Fischer
  */
 public class A330797 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a049;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A049853 <code>a(n) = a(n-1) + Sum_{k=0..n-3} a(k)</code> for <code>n &gt;= 2, a(0)=1, a(1)=2</code>.
+ * A049853 a(n) = a(n-1) + Sum_{k=0..n-3} a(k) for n &gt;= 2, a(0)=1, a(1)=2.
  * @author Georg Fischer
  */
 public class A049853 extends GeneratingFunctionSequence {

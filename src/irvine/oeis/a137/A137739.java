@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137739 Number of different strings of length <code>n+6</code> obtained from <code>"123...n"</code> by iteratively duplicating any substring.
+ * A137739 Number of different strings of length n+6 obtained from "123...n" by iteratively duplicating any substring.
  * @author Georg Fischer
  */
 public class A137739 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A175416 Those positive integers n that when written in binary, each run of <code>0</code>'s and <code>1</code>'s has a length which is coprime to the number of binary digits of <code>n</code>.
+ * A175416 Those positive integers n that when written in binary, each run of 0's and 1's has a length which is coprime to the number of binary digits of n.
  * @author Sean A. Irvine
  */
 public class A175416 implements Sequence {

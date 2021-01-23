@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000984;
 
 /**
- * A006197 Least number not dividing <code>binomial(2n,n)</code>.
+ * A006197 Least number not dividing binomial(2n,n).
  * @author Sean A. Irvine
  */
 public class A006197 extends A000984 {

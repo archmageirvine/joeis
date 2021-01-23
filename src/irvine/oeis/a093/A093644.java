@@ -7,7 +7,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A093644 <code>(9,1)</code> Pascal triangle.
+ * A093644 (9,1) Pascal triangle.
  * @author Georg Fischer
  */
 public class A093644 extends GeneratingFunctionTriangle {

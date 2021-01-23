@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135576 Numbers whose binary expansion has only the digit <code>"1"</code> as first, central and final digit.
+ * A135576 Numbers whose binary expansion has only the digit "1" as first, central and final digit.
  * @author Georg Fischer
  */
 public class A135576 extends GeneratingFunctionSequence {

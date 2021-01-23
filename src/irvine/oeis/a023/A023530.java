@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A023530 Sum of exponents in prime-power factorization of <code>p(n)*p(n-1) + 1</code>.
+ * A023530 Sum of exponents in prime-power factorization of p(n)*p(n-1) + 1.
  * @author Sean A. Irvine
  */
 public class A023530 extends A023523 {

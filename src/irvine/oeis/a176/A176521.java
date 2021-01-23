@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A176521 Decimal expansion of <code>(18+3*sqrt(38))/4</code>.
+ * A176521 Decimal expansion of (18+3*sqrt(38))/4.
  * @author Georg Fischer
  */
 public class A176521 extends DecimalExpansionSequence {

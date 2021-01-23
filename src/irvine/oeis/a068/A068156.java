@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A068156 G.f.: <code>(x+2)*(x+1)/((x-1)*(x-2)) = Sum_{n&gt;=0} a(n)*(x/2)^n</code>.
+ * A068156 G.f.: (x+2)*(x+1)/((x-1)*(x-2)) = Sum_{n&gt;=0} a(n)*(x/2)^n.
  * @author Georg Fischer
  */
 public class A068156 extends GeneratingFunctionSequence {

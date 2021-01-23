@@ -4,7 +4,7 @@ package irvine.oeis.a324;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A324172 Number of subsets of <code>{1,...,n}</code> that cross their complement.
+ * A324172 Number of subsets of {1,...,n} that cross their complement.
  * @author Georg Fischer
  */
 public class A324172 extends GeneratingFunctionSequence {

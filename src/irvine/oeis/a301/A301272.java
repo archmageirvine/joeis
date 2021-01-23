@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301272 Number of derangements of <code>S_n</code> with exactly one peak.
+ * A301272 Number of derangements of S_n with exactly one peak.
  * @author Georg Fischer
  */
 public class A301272 extends GeneratingFunctionSequence {

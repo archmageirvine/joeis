@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133474 Inverse binomial transform of (A113405 preceded by <code>0)</code>.
+ * A133474 Inverse binomial transform of (A113405 preceded by 0).
  * @author Georg Fischer
  */
 public class A133474 extends GeneratingFunctionSequence {

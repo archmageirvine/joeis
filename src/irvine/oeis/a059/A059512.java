@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059512 For <code>n&gt;=2</code>, the number of <code>(s(0), s(1)</code>, ..., <code>s(n-1))</code> such that <code>0 &lt; s(i) &lt; 5</code> and <code>|s(i) - s(i-1)| &lt;= 1</code> for i <code>= 1,2,....,n-1, s(0) = 2, s(n-1) = 2</code>.
+ * A059512 For n&gt;=2, the number of (s(0), s(1), ..., s(n-1)) such that 0 &lt; s(i) &lt; 5 and |s(i) - s(i-1)| &lt;= 1 for i = 1,2,....,n-1, s(0) = 2, s(n-1) = 2.
  * @author Georg Fischer
  */
 public class A059512 extends GeneratingFunctionSequence {

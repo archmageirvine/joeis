@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A061259 <code>a(n)=Sum_{d|n} d*numbpart(d)</code>, where <code>numbpart(d)=number</code> of partitions of d, cf. <code>A000041</code>.
+ * A061259 a(n)=Sum_{d|n} d*numbpart(d), where numbpart(d)=number of partitions of d, cf. A000041.
  * @author Sean A. Irvine
  */
 public class A061259 implements Sequence {

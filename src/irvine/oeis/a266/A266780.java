@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266780 Molien series for invariants of finite Coxeter group <code>A_11</code>.
+ * A266780 Molien series for invariants of finite Coxeter group A_11.
  * @author Georg Fischer
  */
 public class A266780 extends GeneratingFunctionSequence {

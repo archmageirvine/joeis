@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A317969 Decimal expansion of <code>(2^(1/3)-1)^(1/3)</code>.
+ * A317969 Decimal expansion of (2^(1/3)-1)^(1/3).
  * @author Georg Fischer
  */
 public class A317969 extends DecimalExpansionSequence {

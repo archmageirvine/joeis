@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A255183 Third differences of ninth powers <code>(A001017)</code>.
+ * A255183 Third differences of ninth powers (A001017).
  * @author Georg Fischer
  */
 public class A255183 extends GeneratingFunctionSequence {

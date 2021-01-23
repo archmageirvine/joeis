@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007088;
 
 /**
- * A269130 <code>a(n) = n + (n</code> base 2 regarded as a decimal number).
+ * A269130 a(n) = n + (n base 2 regarded as a decimal number).
  * @author Georg Fischer
  */
 public class A269130 extends A007088 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A269130() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

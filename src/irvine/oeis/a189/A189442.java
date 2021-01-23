@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189442 <code>a(n) = A140230(n) / A016116(n-1)</code>.
+ * A189442 a(n) = A140230(n) / A016116(n-1).
  * @author Sean A. Irvine
  */
 public class A189442 extends LinearRecurrence {

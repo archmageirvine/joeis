@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093119 Number of convex polyominoes with a <code>3 X n+1</code> minimal bounding rectangle.
+ * A093119 Number of convex polyominoes with a 3 X n+1 minimal bounding rectangle.
  * @author Georg Fischer
  */
 public class A093119 extends GeneratingFunctionSequence {

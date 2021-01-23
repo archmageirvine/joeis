@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A276401 If <code>n mod 3 = 0</code> then <code>3^(n/3)+12*n</code>, if <code>n mod 3 = 1</code> then <code>4*3^((n-4)/3)+12*n+51</code> otherwise <code>2*3^((n-2)/3)+12*n-36</code>.
+ * A276401 If n mod 3 = 0 then 3^(n/3)+12*n, if n mod 3 = 1 then 4*3^((n-4)/3)+12*n+51 otherwise 2*3^((n-2)/3)+12*n-36.
  * @author Georg Fischer
  */
 public class A276401 extends GeneratingFunctionSequence {

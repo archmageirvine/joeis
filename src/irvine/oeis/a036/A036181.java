@@ -5,10 +5,9 @@ package irvine.oeis.a036;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A036181 Log base <code>2 (n) mod 101</code>.
+ * A036181 Log base 2 (n) mod 101.
  * @author Georg Fischer
  */
-
 public class A036181 extends FiniteSequence {
 
   /** Construct the sequence. */

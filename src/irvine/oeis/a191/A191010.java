@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191010 <code>a(n) = 4^(n+1)*H(2^n)/5</code> with <code>H(2^n) = n+(6+(-1)^n/4^(n+1))/5 = E(N(2^n))</code>, where X, <code>X(1), X(2),..</code>. denote random variables with pdf <code>P(X = 1) = P(X = 4) = 1/5</code> and <code>P(X = 2) = 3/5, N(x)</code> is the first value of k such that <code>X(1)*X(2)*...*X(k) &gt; x</code> and <code>H(x)= E(N(x))</code>.
+ * A191010 a(n) = 4^(n+1)*H(2^n)/5 with H(2^n) = n+(6+(-1)^n/4^(n+1))/5 = E(N(2^n)), where X, X(1), X(2),... denote random variables with pdf P(X = 1) = P(X = 4) = 1/5 and P(X = 2) = 3/5, N(x) is the first value of k such that X(1)*X(2)*...*X(k) &gt; x and H(x)= E(N(x)).
  * @author Sean A. Irvine
  */
 public class A191010 extends LinearRecurrence {

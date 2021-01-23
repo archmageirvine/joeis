@@ -6,7 +6,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102699 Number of strings of length n, using as symbols numbers from the set <code>{1, 2</code>, ..., <code>n}</code>, in which consecutive symbols differ by exactly 1.
+ * A102699 Number of strings of length n, using as symbols numbers from the set {1, 2, ..., n}, in which consecutive symbols differ by exactly 1.
  * @author Georg Fischer
  */
 public class A102699 extends HolonomicRecurrence {

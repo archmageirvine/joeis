@@ -5,7 +5,7 @@ package irvine.oeis.a174;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A174724 <code>Sum_{k=1..n} Floor((k + 3*sqrt(k))/k)</code>.
+ * A174724 Sum_{k=1..n} Floor((k + 3*sqrt(k))/k).
  * @author Georg Fischer
  */
 public class A174724 extends HolonomicRecurrence {

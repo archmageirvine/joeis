@@ -6,7 +6,7 @@ package irvine.oeis.a157;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A157674 G.f.: <code>A(x) = 1 + x/exp( Sum_{k&gt;=1} (A((-1)^k*x) - 1)^k/k )</code>.
+ * A157674 G.f.: A(x) = 1 + x/exp( Sum_{k&gt;=1} (A((-1)^k*x) - 1)^k/k ).
  * @author Georg Fischer
  */
 public class A157674 extends HolonomicRecurrence {

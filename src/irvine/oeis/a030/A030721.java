@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.RecordSequence;
 
 /**
- * A030721 Record values in <code>A030717</code>.
+ * A030721 Record values in A030717.
  * @author Sean A. Irvine
  */
 public class A030721 extends RecordSequence {

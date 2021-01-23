@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005361 Product of exponents of prime factorization of <code>n</code>.
+ * A005361 Product of exponents of prime factorization of n.
  * @author Sean A. Irvine
  */
 public class A005361 implements Sequence {

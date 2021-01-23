@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023166 Numbers n such that <code>Fibonacci(n) == -8 (mod n)</code>.
+ * A023166 Numbers n such that Fibonacci(n) == -8 (mod n).
  * @author Sean A. Irvine
  */
 public class A023166 extends A000045 {

@@ -5,7 +5,7 @@ package irvine.oeis.a186;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A186376 <code>a(n)</code> is the sum of the squares of the coefficients of <code>(x + 2*y + 3*z)^n</code>.
+ * A186376 a(n) is the sum of the squares of the coefficients of (x + 2*y + 3*z)^n.
  * @author Georg Fischer
  */
 public class A186376 extends HolonomicRecurrence {

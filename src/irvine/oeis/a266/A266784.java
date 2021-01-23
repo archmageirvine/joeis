@@ -6,7 +6,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266784 The growth series for the affine Weyl group <code>F_4</code>.
+ * A266784 The growth series for the affine Weyl group F_4.
  * @author Georg Fischer
  */
 public class A266784 extends GeneratingFunctionSequence {

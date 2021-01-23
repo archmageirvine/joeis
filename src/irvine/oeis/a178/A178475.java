@@ -5,7 +5,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178475 Permutations of <code>12345</code>: Numbers having each of the decimal digits 1,...,5 exactly once, and no other digit.
+ * A178475 Permutations of 12345: Numbers having each of the decimal digits 1,...,5 exactly once, and no other digit.
  * @author Georg Fischer
  */
 public class A178475 extends FiniteSequence {

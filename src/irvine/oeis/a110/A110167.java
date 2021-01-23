@@ -5,7 +5,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110167 Diagonal sums of Riordan array <code>A110165</code>.
+ * A110167 Diagonal sums of Riordan array A110165.
  * @author Georg Fischer
  */
 public class A110167 extends HolonomicRecurrence {

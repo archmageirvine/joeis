@@ -5,7 +5,7 @@ package irvine.oeis.a093;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A093117 <code>a(1)=1, a(2)=15, a(n+2) = 8*a(n+1) + 21*a(n)</code>.
+ * A093117 a(1)=1, a(2)=15, a(n+2) = 8*a(n+1) + 21*a(n).
  * @author Georg Fischer
  */
 public class A093117 extends HolonomicRecurrence {

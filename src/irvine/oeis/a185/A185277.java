@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185277 <code>a(n) = n^9 + 9^n</code>.
+ * A185277 a(n) = n^9 + 9^n.
  * @author Georg Fischer
  */
 public class A185277 extends GeneratingFunctionSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004536 Theta series of 15-dimensional unimodular lattice <code>A15+</code>.
+ * A004536 Theta series of 15-dimensional unimodular lattice A15+.
  * @author Sean A. Irvine
  */
 public class A004536 implements Sequence {

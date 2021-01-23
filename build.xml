@@ -39,6 +39,7 @@
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
+      <compilerarg value="-Xlint:unchecked" />
     </javac>
   </target>
 
@@ -48,6 +49,7 @@
         <pathelement path="${src.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
+      <compilerarg value="-Xlint:unchecked" />
     </javac>
   </target>
 
@@ -58,6 +60,7 @@
         <pathelement path="${internal.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
+      <compilerarg value="-Xlint:unchecked" />
     </javac>
   </target>
 
@@ -75,10 +78,12 @@
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
+      <fileset dir="${src.dir}" includes="cheat/*.dat.gz"/>
 
       <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
-      <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/antlr-4.5-complete.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/teherba.jar" excludes="META-INF/**"/>
       <manifest>
         <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>
         <attribute name="Implementation-Title" value="jOEIS"/>
@@ -110,6 +115,7 @@
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
+      <fileset dir="${src.dir}" includes="cheat/*.dat.gz"/>
 
       <fileset dir="${test.dir}" includes="irvine/oeis/seq/*"/>
       <fileset dir="${test.dir}" includes="irvine/oeis/**/*.dat"/>
@@ -118,10 +124,12 @@
       <fileset dir="${test.dir}" includes="irvine/graph/*.gph"/>
       <fileset dir="${test.dir}" includes="irvine/math/long-suck.dat"/>
 
-      <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/antlr-4.5-complete.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
-      <zipfileset src="${lib.dir}/antlr-4.5-complete.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/classgraph-4.8.80.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/teherba.jar" excludes="META-INF/**"/>
       <manifest>
         <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>
         <attribute name="Implementation-Title" value="jOEIS"/>

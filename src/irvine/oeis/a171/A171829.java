@@ -5,7 +5,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171829 Nonnegative integers that can be made by using six sixes <code>(6 6's)</code> and the four basic operators <code>{+, -, *, /}</code>.
+ * A171829 Nonnegative integers that can be made by using six sixes (6 6's) and the four basic operators {+, -, *, /}.
  * @author Georg Fischer
  */
 public class A171829 extends FiniteSequence {

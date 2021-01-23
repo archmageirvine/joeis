@@ -7,13 +7,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A277723 <code>a(n) = floor(n*tau^3)</code> where tau is the tribonacci constant <code>(A058265)</code>.
+ * A277723 a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265).
  * @author Sean A. Irvine
  */
 public class A277723 implements Sequence {
 
   private static final ZPolynomial POLY = new ZPolynomial(Polynomial.create(-1, 5, -7, 1));
-  private static final CR TAU3 = POLY.inverseMonotone(CR.valueOf(6), CR.valueOf(7)).execute(CR.ZERO);
+  private static final CR TAU3 = POLY.inverseMonotone(CR.SIX, CR.SEVEN).execute(CR.ZERO);
 
   private long mN = -1;
 

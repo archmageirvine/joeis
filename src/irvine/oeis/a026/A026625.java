@@ -4,7 +4,7 @@ package irvine.oeis.a026;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A026625 <code>a(n) = Sum_{k=0..floor(n/2)} A026615(n-k,k)</code>.
+ * A026625 a(n) = Sum_{k=0..floor(n/2)} A026615(n-k,k).
  * @author Georg Fischer
  */
 public class A026625 extends GeneratingFunctionSequence {

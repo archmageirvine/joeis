@@ -5,7 +5,7 @@ package irvine.oeis.a157;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A157194 Fibonacci sequence beginning <code>41, 43</code>.
+ * A157194 Fibonacci sequence beginning 41, 43.
  * @author Georg Fischer
  */
 public class A157194 extends HolonomicRecurrence {

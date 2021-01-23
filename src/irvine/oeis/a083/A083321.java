@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A083321 <code>a(n) = (-1)^n + (-2)^n - (-3)^n</code>.
+ * A083321 a(n) = (-1)^n + (-2)^n - (-3)^n.
  * @author Georg Fischer
  */
 public class A083321 extends GeneratingFunctionSequence {

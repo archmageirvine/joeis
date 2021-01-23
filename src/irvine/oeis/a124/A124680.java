@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A124680 Heights of irreducible representations of <code>E_8</code>.
+ * A124680 Heights of irreducible representations of E_8.
  * @author Georg Fischer
  */
 public class A124680 extends FiniteSequence {

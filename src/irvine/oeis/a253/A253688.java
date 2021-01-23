@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253688 The total number of pentagons in a variant of pentagon expansion <code>(vertex-to-vertex</code>, two consecutive vertices and one isolated vertex) after n iterations.
+ * A253688 The total number of pentagons in a variant of pentagon expansion (vertex-to-vertex, two consecutive vertices and one isolated vertex) after n iterations.
  * @author Georg Fischer
  */
 public class A253688 extends GeneratingFunctionSequence {

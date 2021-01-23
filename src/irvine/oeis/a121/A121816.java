@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121816 Conjectured chromatic number of the square of an outerplanar graph <code>G^2</code> as a function of the maximum degree of a vertex of G.
+ * A121816 Conjectured chromatic number of the square of an outerplanar graph G^2 as a function of the maximum degree of a vertex of G.
  * @author Georg Fischer
  */
 public class A121816 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100166 Structured deltoidal hexacontahedral numbers (vertex structure <code>9)</code>.
+ * A100166 Structured deltoidal hexacontahedral numbers (vertex structure 9).
  * @author Georg Fischer
  */
 public class A100166 extends GeneratingFunctionSequence {

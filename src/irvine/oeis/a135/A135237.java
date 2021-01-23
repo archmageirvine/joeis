@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A135237 Numbers n such that <code>n=s^pi(pi(s))</code> where s is sum of its digits.
+ * A135237 Numbers n such that n=s^pi(pi(s)) where s is sum of its digits.
  * @author Georg Fischer
  */
 public class A135237 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A135237() {
-    super(Z.ONE, new Z("3"), new Z("4"), new Z("81"), new Z("234256"), new Z("390625"), new Z("614656"), new Z("52521875"), new Z("60466176"), new Z("8303765625"), new Z("24794911296"), new Z("480682838924478847449"));
+    super(Z.ONE, Z.THREE, Z.FOUR, new Z("81"), new Z("234256"), new Z("390625"), new Z("614656"), new Z("52521875"), new Z("60466176"), new Z("8303765625"), new Z("24794911296"), new Z("480682838924478847449"));
   }
 }

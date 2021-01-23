@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029827 Composite connected numbers: composite numbers k such that <code>g(k) &lt; g(u) + g(v)</code> holds for all relatively prime factorizations <code>k=u*v</code>, where <code>g(x) = ceiling(log_2 x)</code>.
+ * A029827 Composite connected numbers: composite numbers k such that g(k) &lt; g(u) + g(v) holds for all relatively prime factorizations k=u*v, where g(x) = ceiling(log_2 x).
  * @author Sean A. Irvine
  */
 public class A029827 implements Sequence {

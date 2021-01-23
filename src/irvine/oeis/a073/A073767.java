@@ -6,7 +6,7 @@ package irvine.oeis.a073;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A073767 Bateman polynomial values <code>n!*Z_n(-1)</code>.
+ * A073767 Bateman polynomial values n!*Z_n(-1).
  * @author Georg Fischer
  */
 public class A073767 extends HolonomicRecurrence {

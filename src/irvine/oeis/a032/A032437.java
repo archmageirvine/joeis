@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A032437 Substrings from the right are prime numbers (using only odd digits different from <code>5)</code>.
+ * A032437 Substrings from the right are prime numbers (using only odd digits different from 5).
  * @author Georg Fischer
  */
 public class A032437 extends FiniteSequence {

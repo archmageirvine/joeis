@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322890 <code>a(n) =</code> value of Chebyshev <code>T-polynomial T_n(20)</code>.
+ * A322890 a(n) = value of Chebyshev T-polynomial T_n(20).
  * @author Georg Fischer
  */
 public class A322890 extends GeneratingFunctionSequence {

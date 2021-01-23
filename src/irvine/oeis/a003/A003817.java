@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003817 <code>a(0) = 0, a(n) = a(n-1)</code> OR <code>n</code>.
+ * A003817 a(0) = 0, a(n) = a(n-1) OR n.
  * @author Sean A. Irvine
  */
 public class A003817 implements Sequence {

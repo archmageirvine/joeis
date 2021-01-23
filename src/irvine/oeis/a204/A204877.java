@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204877 Continued fraction expansion of <code>3*tanh(1/3)</code>.
+ * A204877 Continued fraction expansion of 3*tanh(1/3).
  * @author Georg Fischer
  */
 public class A204877 extends GeneratingFunctionSequence {

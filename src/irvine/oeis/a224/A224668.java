@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224668 Number of <code>6 X 6 0..n</code> matrices with each <code>2 X 2</code> subblock idempotent.
+ * A224668 Number of 6 X 6 0..n matrices with each 2 X 2 subblock idempotent.
  * @author Georg Fischer
  */
 public class A224668 extends GeneratingFunctionSequence {

@@ -21,7 +21,7 @@ public class A000430 implements Sequence {
         return mN;
       }
       final Z[] s = mN.sqrtAndRemainder();
-      if (Z.ZERO.equals(s[1]) && mPrime.isPrime(s[0])) {
+      if (s[1].isZero() && mPrime.isPrime(s[0])) {
         return mN;
       }
     }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025535 <code>a(n) = (1/C(2n,0) - 1/C(2n,1) + ... + d/C(2n,2n))*L</code>, where d <code>= (-1)^2n, L = LCM{C(2n,0), C(2n,1),..., C(2n,2n)}</code>.
+ * A025535 a(n) = (1/C(2n,0) - 1/C(2n,1) + ... + d/C(2n,2n))*L, where d = (-1)^2n, L = LCM{C(2n,0), C(2n,1),..., C(2n,2n)}.
  * @author Sean A. Irvine
  */
 public class A025535 implements Sequence {

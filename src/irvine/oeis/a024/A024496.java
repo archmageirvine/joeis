@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024496 <code>a(n) = (3/(8n-4))*C(4n,n)</code>.
+ * A024496 a(n) = (3/(8n-4))*C(4n,n).
  * @author Sean A. Irvine
  */
 public class A024496 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A022472 Number of <code>1</code>'s in n-th term of <code>A022470</code>.
+ * A022472 Number of 1's in n-th term of A022470.
  * @author Sean A. Irvine
  */
 public class A022472 extends GeneratingFunctionSequence {

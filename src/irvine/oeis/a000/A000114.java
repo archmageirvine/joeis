@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000114 Number of cusps of principal congruence subgroup <code>GAMMA^{hat}(n)</code>.
+ * A000114 Number of cusps of principal congruence subgroup GAMMA^{hat}(n).
  * @author Sean A. Irvine
  */
 public class A000114 implements Sequence {

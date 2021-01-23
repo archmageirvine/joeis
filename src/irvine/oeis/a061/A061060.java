@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A061060 Write product of first n primes as <code>x*y</code> with x&lt;y and x maximal; sequence gives value of <code>y-x</code>.
+ * A061060 Write product of first n primes as x*y with x&lt;y and x maximal; sequence gives value of y-x.
  * @author Sean A. Irvine
  */
 public class A061060 implements Sequence {

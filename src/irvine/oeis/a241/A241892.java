@@ -4,7 +4,7 @@ package irvine.oeis.a241;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A241892 Total number of <code>2 X 2</code> squares appearing in the Thue-Morse sequence logical matrices <code>(1, 0</code> version) after n stages.
+ * A241892 Total number of 2 X 2 squares appearing in the Thue-Morse sequence logical matrices (1, 0 version) after n stages.
  * @author Georg Fischer
  */
 public class A241892 extends GeneratingFunctionSequence {

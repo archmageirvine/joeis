@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330707 <code>a(n) = ( 3*n^2 + n - 1 + (-1)^floor(n/2) )/4</code>.
+ * A330707 a(n) = ( 3*n^2 + n - 1 + (-1)^floor(n/2) )/4.
  * @author Georg Fischer
  */
 public class A330707 extends HolonomicRecurrence {

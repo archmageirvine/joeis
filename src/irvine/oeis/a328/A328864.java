@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A328864 For any three-digit number k <code>= hdu, f(k) = (h+d+u) + (h*d+d*u+u*h) + (h*d*u)</code>. This sequence consists of the numbers k for which the ratio <code>k/f(k)</code> is an integer.
+ * A328864 For any three-digit number k = hdu, f(k) = (h+d+u) + (h*d+d*u+u*h) + (h*d*u). This sequence consists of the numbers k for which the ratio k/f(k) is an integer.
  * @author Georg Fischer
  */
 public class A328864 extends FiniteSequence {

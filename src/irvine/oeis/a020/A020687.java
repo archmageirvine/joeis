@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020687 Numbers of form <code>5 x^2 + 8 y^2</code>.
+ * A020687 Numbers of form 5 x^2 + 8 y^2.
  * @author Sean A. Irvine
  */
 public class A020687 implements Sequence {

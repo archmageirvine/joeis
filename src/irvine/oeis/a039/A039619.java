@@ -6,7 +6,7 @@ package irvine.oeis.a039;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A039619 Second column of <code>Jabotinsky-triangle A038455</code> related to <code>A006963</code>.
+ * A039619 Second column of Jabotinsky-triangle A038455 related to A006963.
  * @author Georg Fischer
  */
 public class A039619 extends HolonomicRecurrence {

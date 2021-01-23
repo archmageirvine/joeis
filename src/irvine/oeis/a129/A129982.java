@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129982 Fibonacci numbers sandwiched between <code>1</code>'s.
+ * A129982 Fibonacci numbers sandwiched between 1's.
  * @author Sean A. Irvine
  */
 public class A129982 extends LinearRecurrence {

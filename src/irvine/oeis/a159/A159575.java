@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159575 Decimal expansion of <code>(339+26*sqrt(2))/337</code>.
+ * A159575 Decimal expansion of (339+26*sqrt(2))/337.
  * @author Georg Fischer
  */
 public class A159575 extends DecimalExpansionSequence {

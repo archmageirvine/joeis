@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191531 Sum of lengths of initial and final horizontal segments over all dispersed Dyck paths of semilength <code>n (i.e.</code>, over all Motzkin paths of length n with no <code>(1,0)-steps</code> at positive heights).
+ * A191531 Sum of lengths of initial and final horizontal segments over all dispersed Dyck paths of semilength n (i.e., over all Motzkin paths of length n with no (1,0)-steps at positive heights).
  * @author Georg Fischer
  */
 public class A191531 extends HolonomicRecurrence {

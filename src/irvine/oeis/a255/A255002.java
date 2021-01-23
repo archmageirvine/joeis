@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A255002 Coefficients of recurrence for rows and columns of <code>A250544</code> and rows of <code>A250691</code>.
+ * A255002 Coefficients of recurrence for rows and columns of A250544 and rows of A250691.
  * @author Georg Fischer
  */
 public class A255002 extends FiniteSequence {

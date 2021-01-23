@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A136746 G.f.: <code>(z^12+1-z^11-z^10+z^8-z^6+z^5-z^3+z)/((z+1)*(z-1)^2)</code>.
+ * A136746 G.f.: (z^12+1-z^11-z^10+z^8-z^6+z^5-z^3+z)/((z+1)*(z-1)^2).
  * @author Georg Fischer
  */
 public class A136746 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a095;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A095933 Number of walks of length <code>2n+1</code> between two nodes at distance 5 in the cycle graph <code>C_10</code>.
+ * A095933 Number of walks of length 2n+1 between two nodes at distance 5 in the cycle graph C_10.
  * @author Georg Fischer
  */
 public class A095933 extends HolonomicRecurrence {

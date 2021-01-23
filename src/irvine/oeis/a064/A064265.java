@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A064265 Paschal regular in Julian calendar for a year with Golden Number <code>n</code>.
+ * A064265 Paschal regular in Julian calendar for a year with Golden Number n.
  * @author Georg Fischer
  */
 public class A064265 extends FiniteSequence {

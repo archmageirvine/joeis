@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048345 <code>a(n)^2</code> is the smallest square containing exactly <code>n 0</code>'s.
+ * A048345 a(n)^2 is the smallest square containing exactly n 0's.
  * @author Georg Fischer
  */
 public class A048345 extends HolonomicRecurrence {

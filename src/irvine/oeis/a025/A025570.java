@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025570 <code>a(n) = T(2n,n)</code>, where T is the array defined in <code>A025564</code>.
+ * A025570 a(n) = T(2n,n), where T is the array defined in A025564.
  * @author Sean A. Irvine
  */
 public class A025570 extends A025564 {

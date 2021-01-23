@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A241171 Triangle read by rows: Joffe's central differences of zero, <code>T(n,k), 1 &lt;= k &lt;= n</code>.
+ * A241171 Triangle read by rows: Joffe's central differences of zero, T(n,k), 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A241171 implements Sequence {
@@ -13,7 +13,7 @@ public class A241171 implements Sequence {
   protected Z joffeDifference(final int n, final int k) {
     Z s = Z.ZERO;
     for (int j = 1; j <= k; ++j) {
-      s = s.signedAdd(((k - j) & 1) == 0, Binomial.binomial(2L * k, k - j).multiply(Z.valueOf(j).pow(2 * n)));
+      s = s.signedAdd(((k - j) & 1) == 0, Binomial.binomial(2L * k, k - j).multiply(Z.valueOf(j).pow(2L * n)));
     }
     return s.shiftRight(k - 1);
   }

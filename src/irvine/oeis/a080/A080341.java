@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080341 Sum of the n first terms that are congruent to <code>1, 4</code> or <code>5 mod 6 (A047259)</code>.
+ * A080341 Sum of the n first terms that are congruent to 1, 4 or 5 mod 6 (A047259).
  * @author Sean A. Irvine
  */
 public class A080341 extends LinearRecurrence {

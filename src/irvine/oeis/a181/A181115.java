@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A181115 Palindromic series of binary digits shown on the personal coat of arms of His Excellency the Right Honourable David Johnston, Governor General and <code>Commander-in-Chief</code> of Canada.
+ * A181115 Palindromic series of binary digits shown on the personal coat of arms of His Excellency the Right Honourable David Johnston, Governor General and Commander-in-Chief of Canada.
  * @author Georg Fischer
  */
 public class A181115 extends FiniteSequence {

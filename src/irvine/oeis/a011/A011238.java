@@ -5,12 +5,12 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011238 Decimal expansion of <code>14th</code> root of 7.
+ * A011238 Decimal expansion of 14th root of 7.
  * @author Sean A. Irvine
  */
 public class A011238 extends DecimalExpansionSequence {
 
-  private static final CR N = ComputableReals.SINGLETON.pow(CR.valueOf(7), CR.valueOf(14).inverse());
+  private static final CR N = ComputableReals.SINGLETON.pow(CR.SEVEN, CR.valueOf(14).inverse());
 
   @Override
   protected CR getCR() {

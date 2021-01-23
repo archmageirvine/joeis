@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A171834 Partial sums of numbers congruent to <code>{0, 1, 2, 7} mod 8 (A047527)</code>.
+ * A171834 Partial sums of numbers congruent to {0, 1, 2, 7} mod 8 (A047527).
  * @author Georg Fischer
  */
 public class A171834 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030701 Decimal expansion of <code>4^n</code> contains no zeros (probably finite).
+ * A030701 Decimal expansion of 4^n contains no zeros (probably finite).
  * @author Sean A. Irvine
  */
 public class A030701 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162942 <code>Binomial[n + 1, 2]*7^2 </code>.
+ * A162942 Binomial[n + 1, 2]*7^2 .
  * @author Sean A. Irvine
  */
 public class A162942 extends LinearRecurrence {

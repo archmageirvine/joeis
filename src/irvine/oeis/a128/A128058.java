@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128058 Expansion of <code>1/((1-x)sqrt(1-2x+5x^2))</code>.
+ * A128058 Expansion of 1/((1-x)sqrt(1-2x+5x^2)).
  * @author Georg Fischer
  */
 public class A128058 extends HolonomicRecurrence {

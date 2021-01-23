@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a001.A001690;
 
 /**
- * A023486 <code>a(n) = b(n) + d(n)</code>, where <code>b(n) = (n-th</code> Fibonacci number <code>&gt; 2)</code> and <code>d(n) = (n-th non-Fibonacci</code> number).
+ * A023486 a(n) = b(n) + d(n), where b(n) = (n-th Fibonacci number &gt; 2) and d(n) = (n-th non-Fibonacci number).
  * @author Sean A. Irvine
  */
 public class A023486 extends A000045 {

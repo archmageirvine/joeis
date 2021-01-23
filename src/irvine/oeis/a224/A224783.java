@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224783 Denominator of <code>Bernoulli(n,1/2) - Bernoulli(n,0)</code>.
+ * A224783 Denominator of Bernoulli(n,1/2) - Bernoulli(n,0).
  * @author Georg Fischer
  */
 public class A224783 extends GeneratingFunctionSequence {

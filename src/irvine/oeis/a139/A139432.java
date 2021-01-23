@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A139432 <code>a(0)=0</code>. For <code>n&gt;=1, a(n) = a(n-1) - d(n)</code> if <code>a(n-1) &gt;= d(n); a(n) = a(n-1) + d(n)</code> if <code>a(n-1) &lt; d(n)</code>; where <code>d(n)</code> is the number of positive divisors of <code>n</code>.
+ * A139432 a(0)=0. For n&gt;=1, a(n) = a(n-1) - d(n) if a(n-1) &gt;= d(n); a(n) = a(n-1) + d(n) if a(n-1) &lt; d(n); where d(n) is the number of positive divisors of n.
  * @author Sean A. Irvine
  */
 public class A139432 implements Sequence {

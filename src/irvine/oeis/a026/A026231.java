@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026231 <code>a(n) = n-th</code> number k such that <code>A026166(k) = A026142(k) + 1</code>.
+ * A026231 a(n) = n-th number k such that A026166(k) = A026142(k) + 1.
  * @author Sean A. Irvine
  */
 public class A026231 extends A026142 {

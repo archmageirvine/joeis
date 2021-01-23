@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202807 Number of <code>n X 3</code> nonnegative integer arrays with each row and column increasing from zero by <code>0, 1</code> or 2.
+ * A202807 Number of n X 3 nonnegative integer arrays with each row and column increasing from zero by 0, 1 or 2.
  * @author Georg Fischer
  */
 public class A202807 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A293846 Numbers such that k is the altitude of a Heronian triangle with sides <code>m-13</code>, m, <code>m+13</code>.
+ * A293846 Numbers such that k is the altitude of a Heronian triangle with sides m-13, m, m+13.
  * @author Georg Fischer
  */
 public class A293846 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012776 Expansion of e.g.f. <code>arcsinh(sec(x) * log(x+1))</code>.
+ * A012776 Expansion of e.g.f. arcsinh(sec(x) * log(x+1)).
  * @author Sean A. Irvine
  */
 public class A012776 implements Sequence {

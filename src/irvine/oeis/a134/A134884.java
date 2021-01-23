@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134884 A three person Markov game designed to have a limiting ratio near <code>1/Alpha</code>: Ma <code>matrix=Mb = {{0, 1}, {-67, -67}}</code>; game value <code>=-67; Mc={{0, 1, 0}, {0, 0, 1}, {134, 0, 137}}</code>: game <code>value=134</code>; Total matrix game <code>value=-601526</code>; Characteristic Polynomial: <code>601526 + 1203052 x + 1234475 x^2 + 1243453 x^3 + 624507 x^4 + 13735 x^5 + 3 x^6-x^7</code>.
+ * A134884 A three person Markov game designed to have a limiting ratio near 1/Alpha: Ma matrix=Mb = {{0, 1}, {-67, -67}}; game value =-67; Mc={{0, 1, 0}, {0, 0, 1}, {134, 0, 137}}: game value=134; Total matrix game value=-601526; Characteristic Polynomial: 601526 + 1203052 x + 1234475 x^2 + 1243453 x^3 + 624507 x^4 + 13735 x^5 + 3 x^6-x^7.
  * @author Sean A. Irvine
  */
 public class A134884 extends LinearRecurrence {

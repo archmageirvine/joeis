@@ -6,7 +6,7 @@ package irvine.oeis.a049;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A049391 Expansion of <code>(1-25*x)^(3/5)</code>.
+ * A049391 Expansion of (1-25*x)^(3/5).
  * @author Georg Fischer
  */
 public class A049391 extends HolonomicRecurrence {

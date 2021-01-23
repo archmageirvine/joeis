@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015730 Numbers n such that <code>tau(sigma(n))= tau(tau(n))</code>.
+ * A015730 Numbers n such that tau(sigma(n))= tau(tau(n)).
  * @author Sean A. Irvine
  */
 public class A015730 implements Sequence {

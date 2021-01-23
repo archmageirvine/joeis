@@ -6,7 +6,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112279 <code>a(1)=1; a(n)=prime(mod(a(n-1),100))</code>.
+ * A112279 a(1)=1; a(n)=prime(mod(a(n-1),100)).
  * @author Georg Fischer
  */
 public class A112279 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023813 <code>a(n) = n^(n*(n+1)/2)</code>.
+ * A023813 a(n) = n^(n*(n+1)/2).
  * @author Sean A. Irvine
  */
 public class A023813 implements Sequence {

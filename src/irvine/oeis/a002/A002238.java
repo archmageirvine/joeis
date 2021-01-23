@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002238 Numbers n such that <code>21*2^n-1</code> is prime.
+ * A002238 Numbers n such that 21*2^n-1 is prime.
  * @author Sean A. Irvine
  */
 public class A002238 implements Sequence {

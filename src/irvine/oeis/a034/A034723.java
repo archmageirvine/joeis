@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034723 <code>a(n) = n-th</code> sextic factorial number divided by 3.
+ * A034723 a(n) = n-th sextic factorial number divided by 3.
  * @author Georg Fischer
  */
 public class A034723 extends HolonomicRecurrence {

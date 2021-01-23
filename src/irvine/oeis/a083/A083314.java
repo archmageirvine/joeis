@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083314 <code>(2*4^n-(3^n-1))/2</code>.
+ * A083314 (2*4^n-(3^n-1))/2.
  * @author Sean A. Irvine
  */
 public class A083314 extends LinearRecurrence {

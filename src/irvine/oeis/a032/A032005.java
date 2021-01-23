@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032005 "AFK" <code>(ordered</code>, size, unlabeled) transform of 2,2,2,2,...
+ * A032005 "AFK" (ordered, size, unlabeled) transform of 2,2,2,2,...
  * @author Sean A. Irvine
  */
 public class A032005 implements Sequence {

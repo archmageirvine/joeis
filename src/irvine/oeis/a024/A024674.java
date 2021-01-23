@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024674 <code>a(n) =</code> position of <code>n^3 + (n+1)^3</code> in <code>A024670</code> (distinct sums of cubes of distinct positive integers).
+ * A024674 a(n) = position of n^3 + (n+1)^3 in A024670 (distinct sums of cubes of distinct positive integers).
  * @author Sean A. Irvine
  */
 public class A024674 extends A024670 {

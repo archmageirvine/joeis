@@ -5,16 +5,16 @@ package irvine.oeis.a142;
 import irvine.math.z.Z;
 
 /**
- * A142883 <code>a(n) = A142590(n)/3</code>.
+ * A142883 a(n) = A142590(n)/3.
  * @author Georg Fischer
  */
 public class A142883 extends A142590 {
-  private int mN = 0 - 1;
+  private int mN = -1;
 
   /** Construct the sequence. */
   public A142883() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

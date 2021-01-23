@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061003 Nearest integer to <code>n^5/25</code>.
+ * A061003 Nearest integer to n^5/25.
  * @author Georg Fischer
  */
 public class A061003 extends GeneratingFunctionSequence {

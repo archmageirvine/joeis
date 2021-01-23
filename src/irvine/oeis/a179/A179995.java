@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179995 Generating function <code>A(5,t)(1+t+t^2)/(1-t)^6</code>, where <code>A(5,t)</code> is an Eulerian polynomial.
+ * A179995 Generating function A(5,t)(1+t+t^2)/(1-t)^6, where A(5,t) is an Eulerian polynomial.
  * @author Georg Fischer
  */
 public class A179995 extends LinearRecurrence {

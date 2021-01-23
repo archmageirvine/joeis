@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288119 Lexicographically earliest sequence of distinct nonnegative terms such that, for any i and j <code>&gt;= 0, a(i+j) != a(i) + a(j)</code>.
+ * A288119 Lexicographically earliest sequence of distinct nonnegative terms such that, for any i and j &gt;= 0, a(i+j) != a(i) + a(j).
  * @author Georg Fischer
  */
 public class A288119 extends GeneratingFunctionSequence {

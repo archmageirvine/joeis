@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class PolySideCounter {
 
-  private final UTest mUt;
+  private final UniquenessTester mUt;
   private final Cumulator mCu;
   private final ArrayList<ArrayList<PolySide>> mA = new ArrayList<>();
 
@@ -18,7 +18,7 @@ public class PolySideCounter {
    */
   public PolySideCounter(final int max) {
     mCu = new Cumulator("counters", max);
-    mUt = new UTest();
+    mUt = new UniquenessTester();
     for (int i = 0; i <= max; i++) {
       mA.add(new ArrayList<>());
     }
@@ -32,7 +32,7 @@ public class PolySideCounter {
   private void count(final int c, final int max, final PolySide p) {
 
     final UniqueMaker3s u = new UniqueMaker3s(p);
-    if (!mUt.put(u.uniqString())) {
+    if (!mUt.add(u.uniqString())) {
       return;
     }
     mA.get(c).add(p);

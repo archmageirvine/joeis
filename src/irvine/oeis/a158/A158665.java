@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158665 <code>a(n) = 841*n^2 + 29</code>.
+ * A158665 a(n) = 841*n^2 + 29.
  * @author Sean A. Irvine
  */
 public class A158665 extends LinearRecurrence {

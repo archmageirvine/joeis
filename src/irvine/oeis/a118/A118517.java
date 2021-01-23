@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118517 Define sequence <code>S_m</code> by: initial term = m, reverse digits and add 3 to get next term. Entry shows <code>S_1</code>. This reaches a cycle of length 3 in 1 step.
+ * A118517 Define sequence S_m by: initial term = m, reverse digits and add 3 to get next term. Entry shows S_1. This reaches a cycle of length 3 in 1 step.
  * @author Georg Fischer
  */
 public class A118517 extends LinearRecurrence {

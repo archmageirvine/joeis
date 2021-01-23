@@ -6,7 +6,7 @@ package irvine.oeis.a219;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A219673 <code>a(n) = Sum_{k=0..n} binomial(n,k)^2*Lucas(k)</code> where <code>Lucas(n) = A000032(n)</code>.
+ * A219673 a(n) = Sum_{k=0..n} binomial(n,k)^2*Lucas(k) where Lucas(n) = A000032(n).
  * @author Georg Fischer
  */
 public class A219673 extends HolonomicRecurrence {

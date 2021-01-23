@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032444 <code>a(1) = 1, a(2) = 16, a(n) = lcm(48, 2n^2)</code> for <code>n&gt;2</code>.
+ * A032444 a(1) = 1, a(2) = 16, a(n) = lcm(48, 2n^2) for n&gt;2.
  * @author Georg Fischer
  */
 public class A032444 extends HolonomicRecurrence {

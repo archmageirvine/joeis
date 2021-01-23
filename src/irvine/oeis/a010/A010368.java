@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A010368 Number of points of <code>L1</code> norm <code>2n</code> in Hamming code version of <code>E_8</code> lattice.
+ * A010368 Number of points of L1 norm 2n in Hamming code version of E_8 lattice.
  * @author Sean A. Irvine
  */
 public class A010368 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028951 Numbers represented by quadratic form with Gram matrix <code>[ 2, 1; 1, 4 ]</code> (or the Kleinian 2-d lattice, see <code>A002652)</code>.
+ * A028951 Numbers represented by quadratic form with Gram matrix [ 2, 1; 1, 4 ] (or the Kleinian 2-d lattice, see A002652).
  * @author Sean A. Irvine
  */
 public class A028951 implements Sequence {

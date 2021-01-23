@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 /**
- * A003042 Number of directed Hamiltonian cycles (or Gray codes) on <code>n-cube</code>.
+ * A003042 Number of directed Hamiltonian cycles (or Gray codes) on n-cube.
  * @author Sean A. Irvine
  */
 public class A003042 extends A003043 {

@@ -43,6 +43,6 @@ public class LucasLehmer extends AbstractPrime {
     for (int i = 2; i < p; ++i) {
       s = s.modPow(Z.TWO, n).subtract(Z.TWO);
     }
-    return s.equals(Z.ZERO);
+    return s.isZero();
   }
 }

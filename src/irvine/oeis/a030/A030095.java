@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A030095 Primes p such that <code>666p</code> is palindromic.
+ * A030095 Primes p such that 666p is palindromic.
  * @author Sean A. Irvine
  */
 public class A030095 extends A000040 {

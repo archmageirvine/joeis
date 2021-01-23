@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010815;
 
 /**
- * A286956 Main diagonal of <code>A286950</code>.
+ * A286956 Main diagonal of A286950.
  * @author Georg Fischer
  */
 public class A286956 extends A010815 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A286956() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

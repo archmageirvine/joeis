@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031241 <code>a(n)=least</code> k such that base 5 representation of n begins at <code>s(k)</code>, where <code>s=A031235</code>.
+ * A031241 a(n)=least k such that base 5 representation of n begins at s(k), where s=A031235.
  * @author Sean A. Irvine
  */
 public class A031241 extends A031225 {

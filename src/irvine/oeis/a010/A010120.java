@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010120 Smallest start for a <code>'3x+1'</code> sequence containing <code>2^n</code>.
+ * A010120 Smallest start for a '3x+1' sequence containing 2^n.
  * @author Sean A. Irvine
  */
 public class A010120 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A096884 <code>a(n) = 101^n</code>.
+ * A096884 a(n) = 101^n.
  * @author Georg Fischer
  */
 public class A096884 extends GeneratingFunctionSequence {

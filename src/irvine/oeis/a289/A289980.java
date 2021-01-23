@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289980 Oblong (or pronic) numbers of the form <code>x_n.y_n</code> where <code>z_n</code> indicates the digit z repeated n times.
+ * A289980 Oblong (or pronic) numbers of the form x_n.y_n where z_n indicates the digit z repeated n times.
  * @author Georg Fischer
  */
 public class A289980 extends GeneratingFunctionSequence {

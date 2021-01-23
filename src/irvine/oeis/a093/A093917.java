@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093917 <code>a(n) = n^3+n</code> for odd n, <code>(n^3+n)*3/2</code> for even n: Row sums of <code>A093915</code>.
+ * A093917 a(n) = n^3+n for odd n, (n^3+n)*3/2 for even n: Row sums of A093915.
  * @author Sean A. Irvine
  */
 public class A093917 extends LinearRecurrence {

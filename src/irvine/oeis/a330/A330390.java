@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330390 G.f.: <code>(1 + 15*x) / (1 - 2*x - 17*x^2)</code>.
+ * A330390 G.f.: (1 + 15*x) / (1 - 2*x - 17*x^2).
  * @author Georg Fischer
  */
 public class A330390 extends HolonomicRecurrence {

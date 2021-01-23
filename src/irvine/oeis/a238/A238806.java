@@ -5,7 +5,7 @@ package irvine.oeis.a238;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A238806 Number of <code>n X 2 0..2</code> arrays with no element equal to one plus the sum of elements to its left or one plus the sum of the sum of elements above it, modulo 3.
+ * A238806 Number of n X 2 0..2 arrays with no element equal to one plus the sum of elements to its left or one plus the sum of the sum of elements above it, modulo 3.
  * @author Georg Fischer
  */
 public class A238806 extends HolonomicRecurrence {

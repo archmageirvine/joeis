@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030323 Number of <code>1</code>'s minus number of <code>0</code>'s in first n terms of <code>A030317</code>.
+ * A030323 Number of 1's minus number of 0's in first n terms of A030317.
  * @author Sean A. Irvine
  */
 public class A030323 extends A030317 {

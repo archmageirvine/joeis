@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032795 Positive numbers k such that <code>(k+1)*(k+2)*(k+3)*(k+4)/(k+(k+1)+(k+2)+(k+3)+(k+4))</code> is an integer.
+ * A032795 Positive numbers k such that (k+1)*(k+2)*(k+3)*(k+4)/(k+(k+1)+(k+2)+(k+3)+(k+4)) is an integer.
  * @author Georg Fischer
  */
 public class A032795 extends HolonomicRecurrence {

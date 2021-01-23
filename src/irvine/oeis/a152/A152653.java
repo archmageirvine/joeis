@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000178;
 
 /**
- * A152653 <code>a(n)=(n-1)!*product((n-k)!,k=1..n-2)</code>.
+ * A152653 a(n)=(n-1)!*product((n-k)!,k=1..n-2).
  * @author Georg Fischer
  */
 public class A152653 extends A000178 {
@@ -15,7 +15,7 @@ public class A152653 extends A000178 {
   /** Construct the sequence. */
   public A152653() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

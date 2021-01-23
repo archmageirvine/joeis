@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126569 Top-left "head" entry of the n-th power of the <code>E8</code> Cartan matrix.
+ * A126569 Top-left "head" entry of the n-th power of the E8 Cartan matrix.
  * @author Georg Fischer
  */
 public class A126569 extends HolonomicRecurrence {

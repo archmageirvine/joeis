@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137881 <code>Sqrt[ A137880(n) ]</code>.
+ * A137881 Sqrt[ A137880(n) ].
  * @author Sean A. Irvine
  */
 public class A137881 extends LinearRecurrence {

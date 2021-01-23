@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A236210 Pairs of "harmonic numbers" <code>2^m * 3^n</code> that differ by 1.
+ * A236210 Pairs of "harmonic numbers" 2^m * 3^n that differ by 1.
  * @author Georg Fischer
  */
 public class A236210 extends FiniteSequence {

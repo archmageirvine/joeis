@@ -6,7 +6,7 @@ package irvine.oeis.a067;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A067369 Weight of the alternating group <code>(A_n)</code> in transpositions.
+ * A067369 Weight of the alternating group (A_n) in transpositions.
  * @author Georg Fischer
  */
 public class A067369 extends HolonomicRecurrence {

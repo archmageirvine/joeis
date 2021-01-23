@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304374 <code>a(n) = 9*n^2 + 21*n - 6 (n&gt;=1)</code>.
+ * A304374 a(n) = 9*n^2 + 21*n - 6 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304374 extends GeneratingFunctionSequence {

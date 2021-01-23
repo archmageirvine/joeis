@@ -6,7 +6,7 @@ package irvine.oeis.a065;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A065025 Consider biquanimous numbers that exclude <code>0</code>'s; sequence gives number of <code>n-digit non-biquanimous</code> numbers - number of n-digit biquanimous numbers.
+ * A065025 Consider biquanimous numbers that exclude 0's; sequence gives number of n-digit non-biquanimous numbers - number of n-digit biquanimous numbers.
  * @author Georg Fischer
  */
 public class A065025 extends GeneratingFunctionSequence {

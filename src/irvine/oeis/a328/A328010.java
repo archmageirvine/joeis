@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328010 The <code>5x + 1</code> sequence beginning at 17.
+ * A328010 The 5x + 1 sequence beginning at 17.
  * @author Georg Fischer
  */
 public class A328010 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000507 Number of permutations of <code>[n]</code> with exactly 3 increasing runs of length at least 2.
+ * A000507 Number of permutations of [n] with exactly 3 increasing runs of length at least 2.
  * @author Sean A. Irvine
  */
 public class A000507 implements Sequence {

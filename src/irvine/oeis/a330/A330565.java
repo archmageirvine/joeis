@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A330565 The thirteen entries from <code>A005848</code> for which the integers of the cyclotomic field form a Euclidean ring with respect to the norm.
+ * A330565 The thirteen entries from A005848 for which the integers of the cyclotomic field form a Euclidean ring with respect to the norm.
  * @author Georg Fischer
  */
 public class A330565 extends FiniteSequence {

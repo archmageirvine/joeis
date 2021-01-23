@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153977 One-fourth of partial sums of <code>A153976</code>.
+ * A153977 One-fourth of partial sums of A153976.
  * @author Sean A. Irvine
  */
 public class A153977 extends LinearRecurrence {

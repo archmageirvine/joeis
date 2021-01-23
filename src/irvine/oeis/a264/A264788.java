@@ -4,7 +4,7 @@ package irvine.oeis.a264;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A264788 <code>a(n)</code> is the number of circles added at n-th iteration of the pattern starting with 2 circles. (See <code>comment.)</code>.
+ * A264788 a(n) is the number of circles added at n-th iteration of the pattern starting with 2 circles. (See comment.).
  * @author Georg Fischer
  */
 public class A264788 extends GeneratingFunctionSequence {

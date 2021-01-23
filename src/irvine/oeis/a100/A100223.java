@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100223 G.f. <code>A(x)</code> satisfies: <code>2^n - 1 = Sum_{k=0..n} [x^k]A(x)^n</code> and also satisfies: <code>(2+z)^n - (1+z)^n + z^n = Sum_{k=0..n} [x^k](A(x)+z*x)^n</code> for all z, where <code>[x^k]A(x)^n</code> denotes the coefficient of <code>x^k</code> in <code>A(x)^n</code>.
+ * A100223 G.f. A(x) satisfies: 2^n - 1 = Sum_{k=0..n} [x^k]A(x)^n and also satisfies: (2+z)^n - (1+z)^n + z^n = Sum_{k=0..n} [x^k](A(x)+z*x)^n for all z, where [x^k]A(x)^n denotes the coefficient of x^k in A(x)^n.
  * @author Georg Fischer
  */
 public class A100223 extends HolonomicRecurrence {

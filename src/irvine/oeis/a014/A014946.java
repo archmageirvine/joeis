@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014946 Numbers n such that n divides <code>6^n-1</code>.
+ * A014946 Numbers n such that n divides 6^n-1.
  * @author Sean A. Irvine
  */
 public class A014946 implements Sequence {

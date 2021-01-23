@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005673 <code>F(n+1)-2^[ (n+1)/2 ] -2^[ n/2 ] +1</code>.
+ * A005673 F(n+1)-2^[ (n+1)/2 ] -2^[ n/2 ] +1.
  * @author Sean A. Irvine
  */
 public class A005673 extends LinearRecurrence {

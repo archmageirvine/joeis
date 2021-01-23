@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025526 Number of positive integers that are not the sum of distinct numbers of form <code>k^2 + n</code>.
+ * A025526 Number of positive integers that are not the sum of distinct numbers of form k^2 + n.
  * @author Sean A. Irvine
  */
 public class A025526 extends A025525 {

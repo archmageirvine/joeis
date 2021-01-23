@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060240;
 
 /**
- * A003040 Highest degree of an irreducible representation of symmetric group <code>S_n</code> of degree <code>n</code>.
+ * A003040 Highest degree of an irreducible representation of symmetric group S_n of degree n.
  * @author Sean A. Irvine
  */
 public class A003040 extends A060240 {

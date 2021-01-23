@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A256300 Least prime p such that <code>p+6^k</code> is prime for all <code>k=0,...,n</code>.
+ * A256300 Least prime p such that p+6^k is prime for all k=0,...,n.
  * @author Georg Fischer
  */
 public class A256300 extends FiniteSequence {

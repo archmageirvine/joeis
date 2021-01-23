@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A193449 Products of the Jacobsthal numbers and the integers: <code>a(n) = n * A001045(n+1)</code>.
+ * A193449 Products of the Jacobsthal numbers and the integers: a(n) =  n * A001045(n+1).
  * @author Georg Fischer
  */
 public class A193449 extends GeneratingFunctionSequence {

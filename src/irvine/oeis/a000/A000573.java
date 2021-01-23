@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000573 Number of <code>4 X n</code> normalized Latin rectangles.
+ * A000573 Number of 4 X n normalized Latin rectangles.
  * @author Sean A. Irvine
  */
 public class A000573 implements Sequence {

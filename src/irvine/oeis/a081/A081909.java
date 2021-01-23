@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081909 <code>a(n) = 3^n(n^2 - n + 18)/18</code>.
+ * A081909 a(n) = 3^n(n^2 - n + 18)/18.
  * @author Sean A. Irvine
  */
 public class A081909 extends LinearRecurrence {

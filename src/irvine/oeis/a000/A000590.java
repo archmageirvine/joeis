@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000590 <code>a(n) = 13*binomial(2n,n-6)/(n+7)</code>.
+ * A000590 a(n) = 13*binomial(2n,n-6)/(n+7).
  * @author Sean A. Irvine
  */
 public class A000590 implements Sequence {

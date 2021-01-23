@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022331 Index of <code>2^n</code> within sequence of numbers of form <code>2^i*3^j</code>.
+ * A022331 Index of 2^n within sequence of numbers of form 2^i*3^j.
  * @author Sean A. Irvine
  */
 public class A022331 implements Sequence {

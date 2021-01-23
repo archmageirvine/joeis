@@ -6,7 +6,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053106 <code>a(n) = ((7*n+10)(!^7))/10(1^7)</code>, related to <code>A034830 (((7*n+3)(!^7))/3 sept-</code>, or <code>7-factorials)</code>.
+ * A053106 a(n) = ((7*n+10)(!^7))/10(1^7), related to A034830 (((7*n+3)(!^7))/3 sept-, or 7-factorials).
  * @author Georg Fischer
  */
 public class A053106 extends HolonomicRecurrence {

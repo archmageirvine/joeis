@@ -6,7 +6,7 @@ package irvine.oeis.a260;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A260878 Number of set partitions of <code>{1, 2</code>, ..., <code>2*n}</code> with sizes in <code>{[n, n], [2n]}</code>.
+ * A260878 Number of set partitions of {1, 2, ..., 2*n} with sizes in {[n, n], [2n]}.
  * @author Georg Fischer
  */
 public class A260878 extends HolonomicRecurrence {

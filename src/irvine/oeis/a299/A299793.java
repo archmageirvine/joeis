@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A299793 Decimal expansion of <code>4*c^2</code>, where c is the speed of light in vacuum in SI units.
+ * A299793 Decimal expansion of 4*c^2, where c is the speed of light in vacuum in SI units.
  * @author Georg Fischer
  */
 public class A299793 extends FiniteSequence {

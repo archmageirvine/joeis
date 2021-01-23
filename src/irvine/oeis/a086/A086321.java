@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A086321 Primes produced by repeated application of the formula p <code>-&gt; (6p +- 5)</code> starting at the prime 2.
+ * A086321 Primes produced by repeated application of the formula p -&gt; (6p +- 5) starting at the prime 2.
  * @author Georg Fischer
  */
 public class A086321 extends FiniteSequence {

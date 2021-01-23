@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120656 <code>6 X 6</code> trigonal prism bonding graph matrix Markov: this molecular structure is the major symmetry between the tetrahedron and cube: characteristic <code>polynomial:12 x^2 - 4 x^3 - 9 x^4 + x^6</code>.
+ * A120656 6 X 6 trigonal prism bonding graph matrix Markov: this molecular structure is the major symmetry between the tetrahedron and cube: characteristic polynomial:12 x^2 - 4 x^3 - 9 x^4 + x^6.
  * @author Georg Fischer
  */
 public class A120656 extends HolonomicRecurrence {

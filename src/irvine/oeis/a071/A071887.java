@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A071887 Conjectured values of n whose trajectory under map <code>x -&gt; A002487(x)*A002487(x+1)</code> does not go into a cycle.
+ * A071887 Conjectured values of n whose trajectory under map x -&gt; A002487(x)*A002487(x+1) does not go into a cycle.
  * @author Sean A. Irvine
  */
 public class A071887 implements Sequence {
@@ -17,7 +17,7 @@ public class A071887 implements Sequence {
     Z k = n;
     Z a = Z.ONE;
     Z b = Z.ZERO;
-    while (!Z.ZERO.equals(k)) {
+    while (!k.isZero()) {
       final Z t = k.makeOdd();
       final long s = k.auxiliary();
       if (s > 0) {

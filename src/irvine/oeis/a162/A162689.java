@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162689 Strictly positive numbers n such that <code>(18*n)/(18+n)</code> are integers.
+ * A162689 Strictly positive numbers n such that (18*n)/(18+n) are integers.
  * @author Georg Fischer
  */
 public class A162689 extends FiniteSequence {

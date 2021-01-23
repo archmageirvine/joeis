@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115264 Diagonal sums of correlation triangle for <code>floor((n+2)/2)</code>.
+ * A115264 Diagonal sums of correlation triangle for floor((n+2)/2).
  * @author Sean A. Irvine
  */
 public class A115264 extends LinearRecurrence {

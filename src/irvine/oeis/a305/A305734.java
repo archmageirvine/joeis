@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A305734 Integers m such that m, <code>m^2</code> and <code>m^3</code> are all distinct-digit numbers.
+ * A305734 Integers m such that m, m^2 and m^3 are all distinct-digit numbers.
  * @author Georg Fischer
  */
 public class A305734 extends FiniteSequence {

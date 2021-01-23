@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085502 Number of (unordered) ways of making change for n dollars using coins of denominations <code>1, 5, 10, 25, 50</code> and 100.
+ * A085502 Number of (unordered) ways of making change for n dollars using coins of denominations 1, 5, 10, 25, 50 and 100.
  * @author Sean A. Irvine
  */
 public class A085502 extends LinearRecurrence {

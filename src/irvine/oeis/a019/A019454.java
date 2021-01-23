@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A019454 Coordination sequence <code>T4</code> for Zeolite Code CGF.
+ * A019454 Coordination sequence T4 for Zeolite Code CGF.
  * @author Sean A. Irvine
  */
 public class A019454 extends CoordinationSequence {

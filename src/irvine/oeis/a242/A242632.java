@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A242632 Number of n-length words w over a 9-ary alphabet <code>{a_1,...,a_9}</code> such that w contains never more than j consecutive letters <code>a_j</code> (for <code>1&lt;=j&lt;=9)</code>.
+ * A242632 Number of n-length words w over a 9-ary alphabet {a_1,...,a_9} such that w contains never more than j consecutive letters a_j (for 1&lt;=j&lt;=9).
  * @author Georg Fischer
  */
 public class A242632 extends GeneratingFunctionSequence {

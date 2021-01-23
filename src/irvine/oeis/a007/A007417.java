@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007417 If k appears, <code>3k</code> does not.
+ * A007417 If k appears, 3k does not.
  * @author Sean A. Irvine
  */
 public class A007417 implements Sequence {

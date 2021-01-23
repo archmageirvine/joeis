@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A271480 Dimension of n-qubit subspace <code>H^{MPS}_{2,n}</code> for bond dimension 2.
+ * A271480 Dimension of n-qubit subspace H^{MPS}_{2,n} for bond dimension 2.
  * @author Georg Fischer
  */
 public class A271480 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A072563 <code>9*w(n)</code> where : <code>w(1)=w(2)=w(3)=1 w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3)</code>.
+ * A072563 9*w(n) where : w(1)=w(2)=w(3)=1 w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3).
  * @author Georg Fischer
  */
 public class A072563 extends GeneratingFunctionSequence {

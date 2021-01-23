@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A074062 Reflected (see A074058) pentanacci numbers <code>A074048</code>.
+ * A074062 Reflected (see A074058) pentanacci numbers A074048.
  * @author Georg Fischer
  */
 public class A074062 extends GeneratingFunctionSequence {

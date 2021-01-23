@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103134 <code>a(n) = Fibonacci(6n+4)</code>.
+ * A103134 a(n) = Fibonacci(6n+4).
  * @author Sean A. Irvine
  */
 public class A103134 extends LinearRecurrence {

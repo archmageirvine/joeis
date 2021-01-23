@@ -5,7 +5,7 @@ package irvine.oeis.a127;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127846 Series reversion of <code>x/(1+5x+4x^2)</code>.
+ * A127846 Series reversion of x/(1+5x+4x^2).
  * @author Georg Fischer
  */
 public class A127846 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a081;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A081749 Continued fraction for <code>e/5</code>.
+ * A081749 Continued fraction for e/5.
  * @author Georg Fischer
  */
 public class A081749 extends HolonomicRecurrence {

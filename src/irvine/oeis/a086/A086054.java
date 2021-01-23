@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A086054 Decimal expansion of <code>Pi*log(2)</code>.
+ * A086054 Decimal expansion of Pi*log(2).
  * @author Georg Fischer
  */
 public class A086054 extends DecimalExpansionSequence {

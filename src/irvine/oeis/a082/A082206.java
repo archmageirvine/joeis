@@ -5,7 +5,7 @@ package irvine.oeis.a082;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082206 Digit sum of <code>A082205(n)</code>.
+ * A082206 Digit sum of A082205(n).
  * @author Georg Fischer
  */
 public class A082206 extends HolonomicRecurrence {

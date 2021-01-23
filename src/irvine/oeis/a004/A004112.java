@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004112 Numbers k where <code>|cos(k)|</code> (or <code>|cosec(k)|</code> or <code>|cot(k)|)</code> decreases monotonically to 0; also <code>|tan(k)|, |sec(k)|, |sin(k)|</code> increases.
+ * A004112 Numbers k where |cos(k)| (or |cosec(k)| or |cot(k)|) decreases monotonically to 0; also |tan(k)|, |sec(k)|, |sin(k)| increases.
  * @author Sean A. Irvine
  */
 public class A004112 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.a006.A006206;
 
 /**
- * A005596 Decimal expansion of Artin's constant <code>product(1-1/(p^2-p), p=prime)</code>.
+ * A005596 Decimal expansion of Artin's constant product(1-1/(p^2-p), p=prime).
  * @author Sean A. Irvine
  */
 public class A005596 extends DecimalExpansionSequence {

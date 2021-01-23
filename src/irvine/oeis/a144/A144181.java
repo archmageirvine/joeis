@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144181 INVERT transform of <code>A118434, =</code> row sums of triangle <code>A144182</code>.
+ * A144181 INVERT transform of A118434, = row sums of triangle A144182.
  * @author Georg Fischer
  */
 public class A144181 extends GeneratingFunctionSequence {

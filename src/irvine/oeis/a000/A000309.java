@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000309 Number of rooted planar bridgeless cubic maps with <code>2n</code> nodes.
+ * A000309 Number of rooted planar bridgeless cubic maps with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A000309 implements Sequence {

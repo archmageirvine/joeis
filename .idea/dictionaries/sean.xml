@@ -31,6 +31,7 @@
       <w>anded</w>
       <w>animateable</w>
       <w>annulet</w>
+      <w>antidiagonal</w>
       <w>antisymmetries</w>
       <w>antlr</w>
       <w>apfloat</w>
@@ -116,6 +117,7 @@
       <w>canonicalization</w>
       <w>canonicalize</w>
       <w>canonicalized</w>
+      <w>canonicalizer</w>
       <w>caporossi</w>
       <w>carmody's</w>
       <w>cartouche</w>
@@ -430,6 +432,7 @@
       <w>locant</w>
       <w>locants</w>
       <w>lognormal</w>
+      <w>londsdaleite</w>
       <w>lookahead</w>
       <w>lookups</w>
       <w>looplen</w>
@@ -567,8 +570,10 @@
       <w>pname</w>
       <w>pnmrotated</w>
       <w>polycaster</w>
+      <w>polyknights</w>
       <w>polyomino</w>
       <w>polyominoes</w>
+      <w>polyplets</w>
       <w>polys</w>
       <w>pomerance</w>
       <w>possibe</w>

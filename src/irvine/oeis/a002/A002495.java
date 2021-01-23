@@ -1,7 +1,5 @@
 package irvine.oeis.a002;
 
-import java.util.Collections;
-
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -9,7 +7,7 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
 
 /**
- * A002495 Theta series of 27-dimensional unimodular lattice with root system <code>A_1</code> with no parity vector of norm 3.
+ * A002495 Theta series of 27-dimensional unimodular lattice with root system A_1 with no parity vector of norm 3.
  * @author Sean A. Irvine
  */
 public class A002495 extends A002408 {
@@ -17,7 +15,7 @@ public class A002495 extends A002408 {
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Z Z54 = Z.valueOf(54);
   private static final Z Z218 = Z.valueOf(218);
-  private final Polynomial<Z> mDelta = RING.create(Collections.emptyList());
+  private final Polynomial<Z> mDelta = RING.empty();
   private int mN = -1;
 
   @Override

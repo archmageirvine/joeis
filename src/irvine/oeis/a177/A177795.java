@@ -4,7 +4,7 @@ package irvine.oeis.a177;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A177795 Number of length n binary words that have at least one maximal run of <code>1</code>'s having length two.
+ * A177795 Number of length n binary words that have at least one maximal run of 1's having length two.
  * @author Georg Fischer
  */
 public class A177795 extends GeneratingFunctionSequence {

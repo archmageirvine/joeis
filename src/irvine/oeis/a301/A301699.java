@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301699 Generating function <code>= g(g(x))</code>, where <code>g(x) =</code> g.f. of Jacobsthal numbers <code>A001045</code>.
+ * A301699 Generating function = g(g(x)), where g(x) = g.f. of Jacobsthal numbers A001045.
  * @author Georg Fischer
  */
 public class A301699 extends GeneratingFunctionSequence {

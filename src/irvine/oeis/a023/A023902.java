@@ -1,7 +1,5 @@
 package irvine.oeis.a023;
 
-import java.util.Collections;
-
 import irvine.math.IntegerUtils;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -11,7 +9,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A023902 Theta series of <code>A_11</code> lattice.
+ * A023902 Theta series of A_11 lattice.
  * @author Sean A. Irvine
  */
 public class A023902 implements Sequence {
@@ -34,7 +32,7 @@ public class A023902 implements Sequence {
   }
 
   private Polynomial<Z> modEval(final Polynomial<Polynomial<Z>> s, final Polynomial<Z> m) {
-    final Polynomial<Z> res = RING.create(Collections.emptyList());
+    final Polynomial<Z> res = RING.empty();
     for (final Polynomial<Z> c : s) {
       res.add(RING.eval(RING.mod(c, m), Z.ONE));
     }
@@ -56,13 +54,13 @@ public class A023902 implements Sequence {
     return RING.divide(RING.series(num, den, prec), Z.valueOf(n));
   }
 
-  protected int order() {
+  protected int dimension() {
     return 11;
   }
 
   @Override
   public Z next() {
     mN += 2;
-    return aaa(order() + 1, mN).coeff(mN);
+    return aaa(dimension() + 1, mN).coeff(mN);
   }
 }

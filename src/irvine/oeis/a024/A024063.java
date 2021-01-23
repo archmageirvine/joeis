@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000400;
 
 /**
- * A024063 <code>6^n-n</code>.
+ * A024063 6^n-n.
  * @author Sean A. Irvine
  */
 public class A024063 extends A000400 {

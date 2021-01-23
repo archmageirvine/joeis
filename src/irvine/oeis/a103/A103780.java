@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103780 Row sums of square of trinomial triangle <code>A071675</code>.
+ * A103780 Row sums of square of trinomial triangle A071675.
  * @author Sean A. Irvine
  */
 public class A103780 extends LinearRecurrence {

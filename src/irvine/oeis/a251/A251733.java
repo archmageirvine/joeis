@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251733 <code>a(n) = 3^n*A077985(n-1), A077985(-1) = 0</code>. Irrational parts of the integers in <code>Q(sqrt(2))</code> giving the length of a L&#233;vy C-curve variant at iteration step <code>n</code>.
+ * A251733 a(n) = 3^n*A077985(n-1), A077985(-1) = 0. Irrational parts of the integers in Q(sqrt(2)) giving the length of a L\u00e9vy C-curve variant at iteration step n.
  * @author Sean A. Irvine
  */
 public class A251733 extends LinearRecurrence {

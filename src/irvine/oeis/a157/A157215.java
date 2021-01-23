@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157215 Decimal expansion of <code>18 - 5*sqrt(2)</code>.
+ * A157215 Decimal expansion of 18 - 5*sqrt(2).
  * @author Georg Fischer
  */
 public class A157215 extends DecimalExpansionSequence {

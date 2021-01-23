@@ -6,7 +6,7 @@ package irvine.oeis.a119;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A119976 E.g.f. <code>exp(2x)*(Bessel_I(0,2*sqrt(2)x) + Bessel_I(1,2*sqrt(2)x)/sqrt(2))</code>.
+ * A119976 E.g.f. exp(2x)*(Bessel_I(0,2*sqrt(2)x) + Bessel_I(1,2*sqrt(2)x)/sqrt(2)).
  * @author Georg Fischer
  */
 public class A119976 extends HolonomicRecurrence {

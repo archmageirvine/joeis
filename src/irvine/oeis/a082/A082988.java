@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082988 <code>a(n)=sum(k=0,n,4^k*F(k))</code> where <code>F(k)</code> is the k-th Fibonacci number.
+ * A082988 a(n)=sum(k=0,n,4^k*F(k)) where F(k) is the k-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A082988 extends GeneratingFunctionSequence {

@@ -12,7 +12,11 @@ import irvine.math.z.Z;
  */
 public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
 
-  protected Polynomial<Z> polynomial() {
+  /**
+   * Return this sequence as a polynomial.
+   * @return polynomial
+   */
+  public Polynomial<Z> polynomial() {
     return new Polynomial<>(Z.ZERO, Z.ONE, this);
   }
 

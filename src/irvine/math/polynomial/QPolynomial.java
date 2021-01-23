@@ -40,7 +40,7 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
   public static QPolynomial<Z> create(final List<Z> coeffs) {
     final QPolynomial<Z> c = new QPolynomial<>("q", Z.ZERO, Z.ONE);
     for (int k = 0; k < coeffs.size(); ++k) {
-      if (!Z.ZERO.equals(coeffs.get(k))) {
+      if (!coeffs.get(k).isZero()) {
         c.put(new Q(k), coeffs.get(k));
       }
     }
@@ -223,13 +223,12 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
 
   /**
    * Return this polynomial multiplied by <code>x^n</code>.
-   *
    * @param n nonnegative power
    * @return shifted polynomial
    * @exception IllegalArgumentException if <code>n</code> is less than 0
    */
-  public QPolynomial<E> shift(final int n) {
-    if (n == 0) {
+  public QPolynomial<E> shift(final Q n) {
+    if (Q.ZERO.equals(n)) {
       return this;
     }
     final QPolynomial<E> c = new QPolynomial<>(mIndeterminate, mZero, mOne);
@@ -237,6 +236,16 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
       c.put(e.getKey().add(n), e.getValue());
     }
     return c;
+  }
+
+  /**
+   * Return this polynomial multiplied by <code>x^n</code>.
+   * @param n nonnegative power
+   * @return shifted polynomial
+   * @exception IllegalArgumentException if <code>n</code> is less than 0
+   */
+  public QPolynomial<E> shift(final int n) {
+    return shift(new Q(n));
   }
 
   @Override

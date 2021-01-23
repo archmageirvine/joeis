@@ -10,7 +10,7 @@ import java.util.List;
 public class PolyiamondCounter {
 
   private ArrayList<Polyiamond> mList = new ArrayList<>();
-  private UTest mUt = new UTest();
+  private UniquenessTester mUt = new UniquenessTester();
   private Cumulator mCu;
   private int mMax;
 
@@ -52,7 +52,7 @@ public class PolyiamondCounter {
 
   private void count(final int c, final int max, final Polyiamond p, final boolean optim) {
     p.mCs.verify();
-    if (!mUt.put(p.mUniq)) {
+    if (!mUt.add(p.mUniq)) {
       return;
     }
 

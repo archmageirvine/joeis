@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.math.z.Z;
 
 /**
- * A028339 Coefficient of <code>x^2</code> in expansion of <code>(x+1)*(x+3)*...*(x+2*n-1)</code>.
+ * A028339 Coefficient of x^2 in expansion of (x+1)*(x+3)*...*(x+2*n-1).
  * @author Sean A. Irvine
  */
 public class A028339 extends A028338 {

@@ -5,7 +5,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111998 Tenth convolution of Schroeder's (second problem) numbers <code>A001003(n), n&gt;=0</code>.
+ * A111998 Tenth convolution of Schroeder's (second problem) numbers A001003(n), n&gt;=0.
  * @author Georg Fischer
  */
 public class A111998 extends HolonomicRecurrence {

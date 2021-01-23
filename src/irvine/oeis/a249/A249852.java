@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A249852 <code>a(n)</code> is the total number of pentagons on the left or the right of the vertical symmetry axis of a pentagon expansion (vertex to vertex) after n iterations.
+ * A249852 a(n) is the total number of pentagons on the left or the right of the vertical symmetry axis of a pentagon expansion (vertex to vertex) after n iterations.
  * @author Georg Fischer
  */
 public class A249852 extends GeneratingFunctionSequence {

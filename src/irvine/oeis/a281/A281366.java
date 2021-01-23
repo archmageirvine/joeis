@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A281366 Lexicographically least strictly increasing sequence such that, for any <code>n&gt;0, Sum_{k=1..n} a(k)</code> can be computed without carries in base <code>9</code> (the numbers are written in base <code>9)</code>.
+ * A281366 Lexicographically least strictly increasing sequence such that, for any n&gt;0, Sum_{k=1..n} a(k) can be computed without carries in base 9 (the numbers are written in base 9).
  * @author Georg Fischer
  */
 public class A281366 extends GeneratingFunctionSequence {

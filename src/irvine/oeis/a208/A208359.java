@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A208359 Numbered stops on the IRT-Lexington Avenue Express <code>(#4)</code> Subway in New York City.
+ * A208359 Numbered stops on the IRT-Lexington Avenue Express (#4) Subway in New York City.
  * @author Georg Fischer
  */
 public class A208359 extends FiniteSequence {

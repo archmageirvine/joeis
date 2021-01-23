@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001055;
 
 /**
- * A190938 Parity of the multiplicative partition function <code>A001055</code>.
+ * A190938 Parity of the multiplicative partition function A001055.
  * @author Georg Fischer
  */
 public class A190938 extends A001055 {

@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A102239 <code>a(n) = Sum[5^i, {i, 0, n}] + 1 - Mod[Sum[5^i, {i, 0, n}], 2]</code>.
+ * A102239 a(n) = Sum[5^i, {i, 0, n}] + 1 - Mod[Sum[5^i, {i, 0, n}], 2].
  * @author Georg Fischer
  */
 public class A102239 extends GeneratingFunctionSequence {

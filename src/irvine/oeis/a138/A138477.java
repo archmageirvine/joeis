@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138477 Mix <code>A084175</code> and <code>2*A084175</code>.
+ * A138477 Mix A084175 and 2*A084175.
  * @author Georg Fischer
  */
 public class A138477 extends GeneratingFunctionSequence {

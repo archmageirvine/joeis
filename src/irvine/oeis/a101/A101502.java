@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101502 Number of closed walks on <code>C_5</code> tensor <code>J_2</code>.
+ * A101502 Number of closed walks on C_5 tensor J_2.
  * @author Georg Fischer
  */
 public class A101502 extends GeneratingFunctionSequence {

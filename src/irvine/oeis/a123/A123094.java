@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123094 Sum of first <code>n 12th</code> powers.
+ * A123094 Sum of first n 12th powers.
  * @author Georg Fischer
  */
 public class A123094 extends HolonomicRecurrence {

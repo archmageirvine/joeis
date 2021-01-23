@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.StanleySequence;
 
 /**
- * A188055 Stanley Sequence <code>S(0,6)</code>.
+ * A188055 Stanley Sequence S(0,6).
  * @author Sean A. Irvine
  */
 public class A188055 extends StanleySequence {

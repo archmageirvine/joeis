@@ -5,7 +5,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162543 A Chebyshev transform of the large Schroeder numbers <code>A006318</code>.
+ * A162543 A Chebyshev transform of the large Schroeder numbers A006318.
  * @author Georg Fischer
  */
 public class A162543 extends HolonomicRecurrence {

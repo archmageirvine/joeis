@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024486 <code>a(n) = (1/(2n+1))*Multinomial(3n; n,n,n)</code>.
+ * A024486 a(n) = (1/(2n+1))*Multinomial(3n; n,n,n).
  * @author Sean A. Irvine
  */
 public class A024486 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a088;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A088920 Solutions k to the Diophantine equation k <code>= 2n^2 = m^2+1</code>.
+ * A088920 Solutions k to the Diophantine equation k = 2n^2 = m^2+1.
  * @author Georg Fischer
  */
 public class A088920 extends GeneratingFunctionSequence {

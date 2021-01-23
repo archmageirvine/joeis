@@ -4,7 +4,7 @@ package irvine.oeis.a037;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A037240 Molien series for 3-D group <code>X1</code>.
+ * A037240 Molien series for 3-D group X1.
  * @author Georg Fischer
  */
 public class A037240 extends GeneratingFunctionSequence {

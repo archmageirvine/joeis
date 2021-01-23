@@ -6,7 +6,7 @@ package irvine.oeis.a068;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A068605 Number of functions from <code>[1,2,...,n]</code> to <code>[1,2,...,n]</code> such that the image contains exactly two elements.
+ * A068605 Number of functions from [1,2,...,n] to [1,2,...,n] such that the image contains exactly two elements.
  * @author Georg Fischer
  */
 public class A068605 extends GeneratingFunctionSequence {

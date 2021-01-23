@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034861 <code>a(n) = n!*(3*n^2 - 15*n + 10)/6</code>.
+ * A034861 a(n) = n!*(3*n^2 - 15*n + 10)/6.
  * @author Georg Fischer
  */
 public class A034861 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322056 First differences of <code>A322055</code>.
+ * A322056 First differences of A322055.
  * @author Georg Fischer
  */
 public class A322056 extends GeneratingFunctionSequence {

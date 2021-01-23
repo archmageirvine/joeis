@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061728 Start with <code>(a, b) = (2, 4)</code>. The next pair <code>(a', b')</code> is <code>((b + 1) mod 10, (a + 1) mod 10)</code> where <code>(a, b)</code> is the previous pair.
+ * A061728 Start with (a, b) = (2, 4). The next pair (a', b') is ((b + 1) mod 10, (a + 1) mod 10) where (a, b) is the previous pair.
  * @author Georg Fischer
  */
 public class A061728 extends GeneratingFunctionSequence {

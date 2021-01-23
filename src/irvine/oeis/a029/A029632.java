@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029632 Numbers to right of central elements of the <code>(3,2)-Pascal</code> triangle <code>A029618</code>.
+ * A029632 Numbers to right of central elements of the (3,2)-Pascal triangle A029618.
  * @author Sean A. Irvine
  */
 public class A029632 extends A029618 {

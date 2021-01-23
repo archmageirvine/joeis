@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228797 Number of <code>2 X n</code> binary arrays with top left element equal to 1 and no two ones adjacent horizontally or <code>nw-se</code>.
+ * A228797 Number of 2 X n binary arrays with top left element equal to 1 and no two ones adjacent horizontally or nw-se.
  * @author Georg Fischer
  */
 public class A228797 extends GeneratingFunctionSequence {

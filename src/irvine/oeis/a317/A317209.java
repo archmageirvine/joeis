@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A317209 Coefficients arising from the Taylor series expansion of <code>log(arcsin(x)/log(1+x))</code>.
+ * A317209 Coefficients arising from the Taylor series expansion of log(arcsin(x)/log(1+x)).
  * @author Sean A. Irvine
  */
 public class A317209 implements Sequence {

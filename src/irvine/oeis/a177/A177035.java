@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177035 Decimal expansion of <code>sqrt(13493990)</code>.
+ * A177035 Decimal expansion of sqrt(13493990).
  * @author Georg Fischer
  */
 public class A177035 extends DecimalExpansionSequence {

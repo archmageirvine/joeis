@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A074305 <code>a(3m) = 2m, a(3m+1) = 4m+3, a(3m+2) = 4m+1</code>.
+ * A074305 a(3m) = 2m, a(3m+1) = 4m+3, a(3m+2) = 4m+1.
  * @author Georg Fischer
  */
 public class A074305 extends GeneratingFunctionSequence {

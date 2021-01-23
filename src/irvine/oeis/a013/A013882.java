@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013882 <code>a(n) = 17^(5*n + 1)</code>.
+ * A013882 a(n) = 17^(5*n + 1).
  * @author Sean A. Irvine
  */
 public class A013882 implements Sequence {

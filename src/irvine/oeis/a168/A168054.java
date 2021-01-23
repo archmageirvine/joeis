@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168054 Expansion of <code>(1-8x^2-24x^3)/((1-2x)^2*(1+2x+4x^2))</code>.
+ * A168054 Expansion of (1-8x^2-24x^3)/((1-2x)^2*(1+2x+4x^2)).
  * @author Sean A. Irvine
  */
 public class A168054 extends LinearRecurrence {

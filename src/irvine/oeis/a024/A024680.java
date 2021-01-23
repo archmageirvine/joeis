@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024680 Number of ways <code>prime(n)</code> is a sum of 3 odd nonprimes r,s,t satisfying <code>1 &lt;= r &lt; s &lt</code>; t.
+ * A024680 Number of ways prime(n) is a sum of 3 odd nonprimes r,s,t satisfying 1 &lt;= r &lt; s &lt; t.
  * @author Sean A. Irvine
  */
 public class A024680 implements Sequence {

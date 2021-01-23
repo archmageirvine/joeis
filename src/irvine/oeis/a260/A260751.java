@@ -5,7 +5,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260751 25 primes in arithmetic progression: <code>a(n) = 6171054912832631 + (n-1)*81737658082080</code> for <code>n = 1, 2</code>, ..., 25.
+ * A260751 25 primes in arithmetic progression: a(n) = 6171054912832631 + (n-1)*81737658082080 for n = 1, 2, ..., 25.
  * @author Georg Fischer
  */
 public class A260751 extends FiniteSequence {

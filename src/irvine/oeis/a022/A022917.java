@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022917 Multinomial coefficient <code>n!/ ([n/4]!, [(n+1)/4]!, [(n+2)/4]!, [(n+3)/4]!)</code>.
+ * A022917 Multinomial coefficient n!/ ([n/4]!, [(n+1)/4]!, [(n+2)/4]!, [(n+3)/4]!).
  * @author Sean A. Irvine
  */
 public class A022917 implements Sequence {

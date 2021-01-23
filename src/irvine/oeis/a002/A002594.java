@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002594 <code>a(n) = n^2*(16*n^4-20*n^2+7)/3</code>.
+ * A002594 a(n) = n^2*(16*n^4-20*n^2+7)/3.
  * @author Sean A. Irvine
  */
 public class A002594 implements Sequence {

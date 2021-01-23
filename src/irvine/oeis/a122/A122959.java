@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A122959 <code>a(0) = 1, a(n) = (-1)^n*(2-2^(n-1))</code> for <code>n&gt;0</code>.
+ * A122959 a(0) = 1, a(n) = (-1)^n*(2-2^(n-1)) for n&gt;0.
  * @author Georg Fischer
  */
 public class A122959 extends GeneratingFunctionSequence {

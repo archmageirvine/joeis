@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309298 <code>(1/6)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by six.
+ * A309298 (1/6) times the sum of the elements of all subsets of [n] whose sum is divisible by six.
  * @author Georg Fischer
  */
 public class A309298 extends HolonomicRecurrence {

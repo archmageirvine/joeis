@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038577 Number of self-avoiding walks of length n from origin in strip Z X <code>{0,1}</code>.
+ * A038577 Number of self-avoiding walks of length n from origin in strip Z X {0,1}.
  * @author Georg Fischer
  */
 public class A038577 extends GeneratingFunctionSequence {

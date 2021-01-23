@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046090 Consider all Pythagorean triples <code>(X,X+1,Z)</code> ordered by increasing Z; sequence gives <code>X+1</code> values.
+ * A046090 Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives X+1 values.
  * @author Sean A. Irvine
  */
 public class A046090 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005751 Number of matched trees with <code>2n</code> nodes.
+ * A005751 Number of matched trees with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A005751 extends MemoryFunction1<Z> implements Sequence {

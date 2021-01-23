@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202865 Number of <code>3 X 3 0..n</code> arrays with row and column sums one greater than the previous row and column.
+ * A202865 Number of 3 X 3 0..n arrays with row and column sums one greater than the previous row and column.
  * @author Georg Fischer
  */
 public class A202865 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010802 <code>14th</code> powers: <code>a(n) = n^14</code>.
+ * A010802 14th powers: a(n) = n^14.
  * @author Sean A. Irvine
  */
 public class A010802 implements Sequence {

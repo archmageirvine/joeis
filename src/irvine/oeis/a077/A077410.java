@@ -4,7 +4,7 @@ package irvine.oeis.a077;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A077410 Combined Diophantine Chebyshev sequences <code>A077249</code> and <code>A077251</code>.
+ * A077410 Combined Diophantine Chebyshev sequences A077249 and A077251.
  * @author Georg Fischer
  */
 public class A077410 extends GeneratingFunctionSequence {

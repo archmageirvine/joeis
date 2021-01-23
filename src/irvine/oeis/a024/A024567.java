@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024567 <code>a(n) =</code> integer nearest <code>a(n-1)/(sqrt(7) - 2)</code>, where <code>a(1) = 1</code>.
+ * A024567 a(n) = integer nearest a(n-1)/(sqrt(7) - 2), where a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A024567 implements Sequence {
 
-  private static final CR C = CR.valueOf(7).sqrt().subtract(CR.TWO);
+  private static final CR C = CR.SEVEN.sqrt().subtract(CR.TWO);
   private Z mA = null;
 
   @Override

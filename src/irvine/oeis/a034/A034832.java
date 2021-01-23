@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034832 <code>a(n) = n-th sept-factorial</code> number divided by 5.
+ * A034832 a(n) = n-th sept-factorial number divided by 5.
  * @author Georg Fischer
  */
 public class A034832 extends HolonomicRecurrence {

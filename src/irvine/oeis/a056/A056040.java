@@ -6,7 +6,7 @@ package irvine.oeis.a056;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A056040 Swinging factorial, <code>a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1))</code>.
+ * A056040 Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1)).
  * @author Georg Fischer
  */
 public class A056040 extends HolonomicRecurrence {

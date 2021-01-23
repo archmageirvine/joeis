@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178351 Number of collinear point 5-tuples in a <code>7 X 7 X 7</code> X ... n-dimensional cubic grid.
+ * A178351 Number of collinear point 5-tuples in a 7 X 7 X 7 X ... n-dimensional cubic grid.
  * @author Sean A. Irvine
  */
 public class A178351 extends LinearRecurrence {

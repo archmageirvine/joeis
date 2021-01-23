@@ -5,7 +5,7 @@ package irvine.oeis.a284;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A284524 0-limiting word of the morphism <code>0-&gt;1, 1-&gt;0010</code>.
+ * A284524 0-limiting word of the morphism 0-&gt;1, 1-&gt;0010.
  * @author Georg Fischer
  */
 public class A284524 extends MorphismSequence {

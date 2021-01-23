@@ -33,7 +33,7 @@ public class A001329 implements Sequence {
     return 1;
   }
 
-  protected Z t(final int[] j) {
+  protected Z fix(final int[] j) {
     Z prod = Z.ONE;
     for (int r = 1; r < j.length; ++r) {
       for (int s = 1; s < j.length; ++s) {
@@ -54,7 +54,7 @@ public class A001329 implements Sequence {
     int[] p;
     while ((p = ip.next()) != null) {
       IntegerPartition.toCountForm(p, a);
-      s = s.add(new Q(t(a), SymmetricGroup.per(a)));
+      s = s.add(new Q(fix(a), SymmetricGroup.per(a)));
     }
     return s.toZ();
   }

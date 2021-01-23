@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022005 Initial members of prime triples <code>(p, p+4, p+6)</code>.
+ * A022005 Initial members of prime triples (p, p+4, p+6).
  * @author Sean A. Irvine
  */
 public class A022005 implements Sequence {

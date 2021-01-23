@@ -6,7 +6,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144843 <code>a(n) = (6^n - 2^n)^2 / 16</code>.
+ * A144843 a(n) = (6^n - 2^n)^2 / 16.
  * @author Georg Fischer
  */
 public class A144843 extends GeneratingFunctionSequence {

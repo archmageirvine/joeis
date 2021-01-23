@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211065 Number of <code>2 X 2</code> matrices having all terms in <code>{1,...,n}</code> and odd determinant.
+ * A211065 Number of 2 X 2 matrices having all terms in {1,...,n} and odd determinant.
  * @author Georg Fischer
  */
 public class A211065 extends GeneratingFunctionSequence {

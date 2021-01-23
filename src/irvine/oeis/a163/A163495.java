@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A163495 <code>a(0)=0, a(1)=1, a(2)=2</code>. For <code>n &gt;= 3, a(n) = a(n-1) - min(a(n-2), a(n-3))</code>.
+ * A163495 a(0)=0, a(1)=1, a(2)=2. For n &gt;= 3, a(n) = a(n-1) - min(a(n-2), a(n-3)).
  * @author Georg Fischer
  */
 public class A163495 extends GeneratingFunctionSequence {

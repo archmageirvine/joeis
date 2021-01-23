@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130813 If <code>X_1,...,X_n</code> is a partition of a 2n-set X into 2-blocks then <code>a(n)</code> is equal to the number of 7-subsets of X containing none of <code>X_i, (i=1,...n)</code>.
+ * A130813 If X_1,...,X_n is a partition of a 2n-set X into 2-blocks then a(n) is equal to the number of 7-subsets of X containing none of X_i, (i=1,...n).
  * @author Georg Fischer
  */
 public class A130813 extends GeneratingFunctionSequence {

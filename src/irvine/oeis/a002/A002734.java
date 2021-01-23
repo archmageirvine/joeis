@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.factor.factor.Cheetah;
 
 /**
- * A002734 Remove <code>squares!</code>.
+ * A002734 Remove squares!.
  * @author Sean A. Irvine
  */
 public class A002734 implements Sequence {

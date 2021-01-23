@@ -6,7 +6,7 @@ package irvine.oeis.a261;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A261831 <code>a(2*n-1) = 2*n-1</code>; otherwise <code>a(n)</code> is the smallest even number not already present which is obtained from the existing terms by the rules of <code>(3*n+1)-problem</code>.
+ * A261831 a(2*n-1) = 2*n-1; otherwise a(n) is the smallest even number not already present which is obtained from the existing terms by the rules of (3*n+1)-problem.
  * @author Georg Fischer
  */
 public class A261831 extends GeneratingFunctionSequence {

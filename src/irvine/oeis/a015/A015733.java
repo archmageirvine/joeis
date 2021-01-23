@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015733 <code>d(n)</code> does not divide <code>phi(n)</code>.
+ * A015733 d(n) does not divide phi(n).
  * @author Sean A. Irvine
  */
 public class A015733 implements Sequence {
@@ -18,7 +18,7 @@ public class A015733 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final FactorSequence fs = Cheetah.factor(mN);
-      if (!Z.ZERO.equals(fs.phi().mod(fs.sigma0()))) {
+      if (!fs.phi().mod(fs.sigma0()).isZero()) {
         return mN;
       }
     }

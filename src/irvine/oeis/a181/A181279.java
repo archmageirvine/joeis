@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181279 Number of <code>3 X n</code> binary matrices M with rows in strictly increasing order and rows of <code>M*Mtranspose (mod 2)</code> in strictly decreasing order.
+ * A181279 Number of 3 X n binary matrices M with rows in strictly increasing order and rows of M*Mtranspose (mod 2) in strictly decreasing order.
  * @author Georg Fischer
  */
 public class A181279 extends GeneratingFunctionSequence {

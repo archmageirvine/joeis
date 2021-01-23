@@ -5,7 +5,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133649 <code>A007318^(-1) * A133648</code>.
+ * A133649 A007318^(-1) * A133648.
  * @author Georg Fischer
  */
 public class A133649 extends HolonomicRecurrence {

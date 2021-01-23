@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A270059 Number of distinct digits needed to write n in all bases <code>&gt;= 2</code>.
+ * A270059 Number of distinct digits needed to write n in all bases &gt;= 2.
  * @author Georg Fischer
  */
 public class A270059 extends GeneratingFunctionSequence {

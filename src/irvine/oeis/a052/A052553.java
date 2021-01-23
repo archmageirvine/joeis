@@ -7,7 +7,7 @@ package irvine.oeis.a052;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A052553 Square array of binomial coefficients <code>T(n,k) = binomial(n,k), n &gt;= 0, k &gt;= 0</code>, read by antidiagonals.
+ * A052553 Square array of binomial coefficients T(n,k) = binomial(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A052553 extends GeneratingFunctionTriangle {

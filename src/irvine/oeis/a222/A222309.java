@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222309 Let P be a one-move "rider" with move set <code>M={(1,2)}; a(n)</code> is the number of non-attacking positions of three indistinguishable pieces P on an <code>n X n</code> board.
+ * A222309 Let P be a one-move "rider" with move set M={(1,2)}; a(n) is the number of non-attacking positions of three indistinguishable pieces P on an n X n board.
  * @author Sean A. Irvine
  */
 public class A222309 extends LinearRecurrence {

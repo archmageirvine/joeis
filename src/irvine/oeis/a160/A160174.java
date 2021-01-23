@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160174 <code>a(n) = (2*n - 1)*(24*n^2 - 42*n + 19)</code>.
+ * A160174 a(n) = (2*n - 1)*(24*n^2 - 42*n + 19).
  * @author Sean A. Irvine
  */
 public class A160174 extends LinearRecurrence {

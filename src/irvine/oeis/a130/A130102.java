@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130102 E.g.f.: <code>(e^x - x)^2</code>.
+ * A130102 E.g.f.: (e^x - x)^2.
  * @author Georg Fischer
  */
 public class A130102 extends GeneratingFunctionSequence {

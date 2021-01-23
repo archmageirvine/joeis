@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201695 Number of <code>n X 3 0..2</code> arrays with rows and columns lexicographically nondecreasing read forwards and nonincreasing read backwards.
+ * A201695 Number of n X 3 0..2 arrays with rows and columns lexicographically nondecreasing read forwards and nonincreasing read backwards.
  * @author Georg Fischer
  */
 public class A201695 extends GeneratingFunctionSequence {

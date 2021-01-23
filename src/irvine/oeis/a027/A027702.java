@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027702 Numbers n such that n-th prime has even number of <code>1</code>'s in binary expansion and <code>(n+1)st</code> prime also has even number of <code>1</code>'s.
+ * A027702 Numbers n such that n-th prime has even number of 1's in binary expansion and (n+1)st prime also has even number of 1's.
  * @author Sean A. Irvine
  */
 public class A027702 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109013 <code>a(n) = gcd(n,10)</code>.
+ * A109013 a(n) = gcd(n,10).
  * @author Georg Fischer
  */
 public class A109013 extends GeneratingFunctionSequence {

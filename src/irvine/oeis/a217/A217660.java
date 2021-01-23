@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A217660 Numbers that give records for <code>f(n)= (log(d(n))*log(log(n)))/(log(2)*log(n))</code> with <code>d(n)</code> the number of divisors.
+ * A217660 Numbers that give records for f(n)= (log(d(n))*log(log(n)))/(log(2)*log(n)) with d(n) the number of divisors.
  * @author Georg Fischer
  */
 public class A217660 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328356 <code>a(n)</code> is the sum of all positive integers whose decimal expansion is up to n digits and does not contain the 0 digit.
+ * A328356 a(n) is the sum of all positive integers whose decimal expansion is up to n digits and does not contain the 0 digit.
  * @author Georg Fischer
  */
 public class A328356 extends HolonomicRecurrence {

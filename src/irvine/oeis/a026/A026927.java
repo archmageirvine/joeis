@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026927 Number of partitions of n into an even number of parts, the greatest being 3; also, <code>a(n+5) =</code> number of partitions of <code>n+2</code> into an odd number of parts, each <code>&lt;= 3</code>.
+ * A026927 Number of partitions of n into an even number of parts, the greatest being 3; also, a(n+5) = number of partitions of n+2 into an odd number of parts, each &lt;= 3.
  * @author Sean A. Irvine
  */
 public class A026927 extends A026920 {

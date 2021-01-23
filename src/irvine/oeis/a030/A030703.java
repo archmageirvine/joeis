@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030703 Decimal expansion of <code>7^n</code> contains no zeros (probably finite).
+ * A030703 Decimal expansion of 7^n contains no zeros (probably finite).
  * @author Sean A. Irvine
  */
 public class A030703 implements Sequence {

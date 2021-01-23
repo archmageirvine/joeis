@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266956 Numbers m such that <code>9*m+7</code> is a square.
+ * A266956 Numbers m such that 9*m+7 is a square.
  * @author Sean A. Irvine
  */
 public class A266956 extends LinearRecurrence {

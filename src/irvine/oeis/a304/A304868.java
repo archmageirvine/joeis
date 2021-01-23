@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304868 Numbers x satisfying <code>x == 1 (mod 4)</code> or <code>x == 14, 26, 30 (mod 32)</code>.
+ * A304868 Numbers x satisfying x == 1 (mod 4) or x == 14, 26, 30 (mod 32).
  * @author Georg Fischer
  */
 public class A304868 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A270062 Number of tilings of a <code>2 X n</code> rectangle using monominoes and trominoes of any shape.
+ * A270062 Number of tilings of a 2 X n rectangle using monominoes and trominoes of any shape.
  * @author Sean A. Irvine
  */
 public class A270062 extends LinearRecurrence {

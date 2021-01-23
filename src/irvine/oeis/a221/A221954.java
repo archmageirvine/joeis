@@ -6,7 +6,7 @@ package irvine.oeis.a221;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A221954 <code>a(n) = Catalan(n-1)*3^(n-1)*n!</code>.
+ * A221954 a(n) = Catalan(n-1)*3^(n-1)*n!.
  * @author Georg Fischer
  */
 public class A221954 extends HolonomicRecurrence {

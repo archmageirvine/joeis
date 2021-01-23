@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005317 <code>a(n) = (2^n + C(2*n,n))/2</code>.
+ * A005317 a(n) = (2^n + C(2*n,n))/2.
  * @author Sean A. Irvine
  */
 public class A005317 implements Sequence {

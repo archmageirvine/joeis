@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A228048 Decimal expansion of <code>(Pi/2)*tanh(Pi/2)</code>.
+ * A228048 Decimal expansion of (Pi/2)*tanh(Pi/2).
  * @author Georg Fischer
  */
 public class A228048 extends DecimalExpansionSequence {

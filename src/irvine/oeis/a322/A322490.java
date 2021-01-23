@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322490 Numbers k such that <code>k^k</code> ends with 7.
+ * A322490 Numbers k such that k^k ends with 7.
  * @author Georg Fischer
  */
 public class A322490 extends GeneratingFunctionSequence {

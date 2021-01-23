@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027630 Molien series for <code>Gamma_3(2)</code>.
+ * A027630 Molien series for Gamma_3(2).
  * @author Georg Fischer
  */
 public class A027630 extends GeneratingFunctionSequence {

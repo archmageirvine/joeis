@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162521 Magic numbers <code>A018226</code> divided by 2.
+ * A162521 Magic numbers A018226 divided by 2.
  * @author Georg Fischer
  */
 public class A162521 extends FiniteSequence {

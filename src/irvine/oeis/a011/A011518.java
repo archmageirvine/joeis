@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011518 Decimal expansion of <code>99th</code> root of 99.
+ * A011518 Decimal expansion of 99th root of 99.
  * @author Sean A. Irvine
  */
 public class A011518 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A299771 <code>a(n)</code> is the number of elements added at n-th stage in the structure of the finite cellular automaton of <code>A299770</code>.
+ * A299771 a(n) is the number of elements added at n-th stage in the structure of the finite cellular automaton of A299770.
  * @author Georg Fischer
  */
 public class A299771 extends FiniteSequence {

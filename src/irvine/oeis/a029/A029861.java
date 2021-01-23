@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000012;
 
 /**
- * A029861 Euler transform of <code>5 4 3 2 1 1 1 1 1 1 1 ..</code>.
+ * A029861 Euler transform of 5 4 3 2 1 1 1 1 1 1 1 ...
  * @author Sean A. Irvine
  */
 public class A029861 extends EulerTransformSequence {

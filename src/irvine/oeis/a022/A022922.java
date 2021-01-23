@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022922 Number of integers m such that <code>5^n &lt; 2^m &lt; 5^(n+1)</code>.
+ * A022922 Number of integers m such that 5^n &lt; 2^m &lt; 5^(n+1).
  * @author Sean A. Irvine
  */
 public class A022922 implements Sequence {

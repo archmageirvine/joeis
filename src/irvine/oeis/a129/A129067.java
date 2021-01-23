@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129067 Leading term in row n of triangle in <code>A128894</code>.
+ * A129067 Leading term in row n of triangle in A128894.
  * @author Georg Fischer
  */
 public class A129067 extends FiniteSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069017 Triangular numbers of the form <code>k^2 + k + 1</code>.
+ * A069017 Triangular numbers of the form k^2 + k + 1.
  * @author Georg Fischer
  */
 public class A069017 extends GeneratingFunctionSequence {

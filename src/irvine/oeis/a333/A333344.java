@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333344 <code>a(n) = 11*a(n-1) - 9*a(n-2)</code> starting <code>a(0)=1, a(1)=10</code>.
+ * A333344 a(n) = 11*a(n-1) - 9*a(n-2) starting a(0)=1, a(1)=10.
  * @author Georg Fischer
  */
 public class A333344 extends GeneratingFunctionSequence {

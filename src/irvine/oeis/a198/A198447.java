@@ -4,7 +4,7 @@ package irvine.oeis.a198;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A198447 Number of <code>2n X 2 0..2</code> arrays with values 0..2 introduced in row major order and each element unequal to exactly two horizontal and vertical neighbors.
+ * A198447 Number of 2n X 2 0..2 arrays with values 0..2 introduced in row major order and each element unequal to exactly two horizontal and vertical neighbors.
  * @author Georg Fischer
  */
 public class A198447 extends GeneratingFunctionSequence {

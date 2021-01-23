@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108646 <code>a(n) = (n+1)(n+2)^2*(n+3)(11n^3 + 58n^2 + 101n + 60)/720</code>.
+ * A108646 a(n) = (n+1)(n+2)^2*(n+3)(11n^3 + 58n^2 + 101n + 60)/720.
  * @author Georg Fischer
  */
 public class A108646 extends GeneratingFunctionSequence {

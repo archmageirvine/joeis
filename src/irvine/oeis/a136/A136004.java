@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005811;
 
 /**
- * A136004 <code>a(n) = A005811(n) + 4</code>.
+ * A136004 a(n) = A005811(n) + 4.
  * @author Georg Fischer
  */
 public class A136004 extends A005811 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A136004() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

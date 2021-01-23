@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135849 <code>a(n)</code> is the ratio of the sum of the bends (curvatures) of the circles in the n-th generation of an Apollonian packing to the sum of the bends in the initial four-circle configuration.
+ * A135849 a(n) is the ratio of the sum of the bends (curvatures) of the circles in the n-th generation of an Apollonian packing to the sum of the bends in the initial four-circle configuration.
  * @author Georg Fischer
  */
 public class A135849 extends GeneratingFunctionSequence {

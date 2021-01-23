@@ -6,7 +6,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156270 <code>a(n) = 8^n*Catalan(n)</code>.
+ * A156270 a(n) = 8^n*Catalan(n).
  * @author Georg Fischer
  */
 public class A156270 extends HolonomicRecurrence {

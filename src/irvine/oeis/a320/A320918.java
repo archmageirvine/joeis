@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A320918 Sum of n-th powers of the roots of <code>x^3 + 9*x^2 + 20*x - 1</code>.
+ * A320918 Sum of n-th powers of the roots of x^3 + 9*x^2 + 20*x - 1.
  * @author Georg Fischer
  */
 public class A320918 extends GeneratingFunctionSequence {

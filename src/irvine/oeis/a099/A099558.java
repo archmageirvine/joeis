@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099558 Antidiagonal sums of the triangle <code>A099557</code>.
+ * A099558 Antidiagonal sums of the triangle A099557.
  * @author Georg Fischer
  */
 public class A099558 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A060086 Convolution triangle <code>A059594</code> with extra first column.
+ * A060086 Convolution triangle A059594 with extra first column.
  * @author Georg Fischer
  */
 public class A060086 extends GeneratingFunctionTriangle {

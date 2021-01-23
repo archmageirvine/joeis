@@ -6,7 +6,7 @@ package irvine.oeis.a282;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A282232 <code>a(n) = ((3*n + 1)^6 - 1)/9</code>.
+ * A282232 a(n) = ((3*n + 1)^6 - 1)/9.
  * @author Georg Fischer
  */
 public class A282232 extends HolonomicRecurrence {

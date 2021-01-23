@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A332057 Partial sums (and absolute value of first differences) of <code>A332056</code>: if odd <code>(resp</code>. even) add <code>(resp</code>. subtract) the partial sum to get the next term.
+ * A332057 Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.
  * @author Georg Fischer
  */
 public class A332057 extends GeneratingFunctionSequence {

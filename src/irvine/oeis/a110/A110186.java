@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A110186 Strongly rounded Renard series <code>R"20</code> of preferred numbers based on <code>10^(1/20)</code>.
+ * A110186 Strongly rounded Renard series R"20 of preferred numbers based on 10^(1/20).
  * @author Georg Fischer
  */
 public class A110186 extends FiniteSequence {

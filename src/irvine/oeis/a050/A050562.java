@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050562 Numbers n such that <code>73*2^n-1</code> is prime.
+ * A050562 Numbers n such that 73*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050562 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050562() {
-    super(1, 7, 73, 2, -1, 0);
+    super(1, 7, 73, 2, -1);
   }
 }

@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A107943 <code>a(n) = (n+1)*(n+2)^2*(n+3)^2*(n+4)^2*(n+5)*(2n+3)/8640</code>.
+ * A107943 a(n) = (n+1)*(n+2)^2*(n+3)^2*(n+4)^2*(n+5)*(2n+3)/8640.
  * @author Georg Fischer
  */
 public class A107943 extends GeneratingFunctionSequence {

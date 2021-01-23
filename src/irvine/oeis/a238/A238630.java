@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238630 Number of partitions of <code>3^n</code> into parts that are at most 3.
+ * A238630 Number of partitions of 3^n into parts that are at most 3.
  * @author Georg Fischer
  */
 public class A238630 extends GeneratingFunctionSequence {

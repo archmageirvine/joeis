@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008972 <code>n^2</code> raised to power <code>n^2</code>.
+ * A008972 n^2 raised to power n^2.
  * @author Sean A. Irvine
  */
 public class A008972 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011931 <code>[ n(n-1)(n-2)(n-3)/21 ]</code>.
+ * A011931 [ n(n-1)(n-2)(n-3)/21 ].
  * @author Sean A. Irvine
  */
 public class A011931 implements Sequence {

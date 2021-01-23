@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A022880 The number of numbers <code>[ [</code> ix <code>]jx ]</code> that equal n, where i <code>&gt;= 1, j &gt;= 1</code> and <code>x=sqrt(2)</code>.
+ * A022880 The number of numbers [ [ ix ]jx ] that equal n, where i &gt;= 1, j &gt;= 1 and x=sqrt(2).
  * @author Sean A. Irvine
  */
 public class A022880 extends A022879 {

@@ -4,7 +4,7 @@ package irvine.oeis.a279;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A279897 Number of <code>n X 3 0..2</code> arrays with no element unequal to a strict majority of its king-move neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
+ * A279897 Number of n X 3 0..2 arrays with no element unequal to a strict majority of its king-move neighbors, with the exception of exactly one element, and with new values introduced in order 0 sequentially upwards.
  * @author Georg Fischer
  */
 public class A279897 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024618 Positions of primes in <code>A024614</code>.
+ * A024618 Positions of primes in A024614.
  * @author Sean A. Irvine
  */
 public class A024618 extends A024614 {

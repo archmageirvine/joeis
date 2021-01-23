@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097180 Row sums of triangle <code>A097179</code>, in which the n-th row polynomial <code>R_n(y)</code> is formed from the initial <code>(n+1)</code> terms of g.f. <code>A077860(y)^(n+1)</code>, where <code>R_n(1/2) = 4^n</code> for all <code>n&gt;=0</code>.
+ * A097180 Row sums of triangle A097179, in which the n-th row polynomial R_n(y) is formed from the initial (n+1) terms of g.f. A077860(y)^(n+1), where R_n(1/2) = 4^n for all n&gt;=0.
  * @author Georg Fischer
  */
 public class A097180 extends HolonomicRecurrence {

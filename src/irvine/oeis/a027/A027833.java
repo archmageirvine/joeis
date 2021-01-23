@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001223;
 
 /**
- * A027833 Distances between successive <code>2</code>'s in sequence <code>A001223</code> of differences between consecutive primes.
+ * A027833 Distances between successive 2's in sequence A001223 of differences between consecutive primes.
  * @author Sean A. Irvine
  */
 public class A027833 extends A001223 {

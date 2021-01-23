@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216162 Sequences <code>A006452</code> and <code>A216134</code> interlaced, where <code>A216134</code> are the indices of the Sophie Germain triangular numbers.
+ * A216162 Sequences A006452 and A216134 interlaced, where A216134 are the indices of the Sophie Germain triangular numbers.
  * @author Sean A. Irvine
  */
 public class A216162 extends LinearRecurrence {

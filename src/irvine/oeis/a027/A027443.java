@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027443 For <code>n != 1 mod 3</code>, we can write <code>3/(2n+1) = 1/a + 1/b + 1/c</code> with <code>a&gt;b&gt;c&gt;0</code>, a,b,c distinct and odd; sequence gives smallest such a, or 1 if <code>n = 1 mod 3</code>.
+ * A027443 For n != 1 mod 3, we can write 3/(2n+1) = 1/a + 1/b + 1/c with a&gt;b&gt;c&gt;0, a,b,c distinct and odd; sequence gives smallest such a, or 1 if n = 1 mod 3.
  * @author Sean A. Irvine
  */
 public class A027443 implements Sequence {

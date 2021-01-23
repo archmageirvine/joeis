@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018955 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite AFI <code>= AlPO4-5 [ Al12P12O48 ]</code> . R . q <code>H2O</code>.
+ * A018955 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AFI = AlPO4-5 [ Al12P12O48 ] . R . q H2O.
  * @author Sean A. Irvine
  */
 public class A018955 extends A018940 {

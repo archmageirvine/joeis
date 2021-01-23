@@ -5,7 +5,7 @@ package irvine.oeis.a319;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A319196 <code>a(n) = 2^(n-1)*Fibonacci(n-3), n &gt;= 0</code>.
+ * A319196 a(n) = 2^(n-1)*Fibonacci(n-3), n &gt;= 0.
  * @author Georg Fischer
  */
 public class A319196 extends HolonomicRecurrence {

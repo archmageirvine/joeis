@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228399 The number of permutations of length n sortable by <code>2 cut-and-paste</code> moves.
+ * A228399 The number of permutations of length n sortable by 2 cut-and-paste moves.
  * @author Georg Fischer
  */
 public class A228399 extends GeneratingFunctionSequence {

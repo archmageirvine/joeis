@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003560 Least number m such that <code>4^m = +- 1 mod 4n + 1</code>.
+ * A003560 Least number m such that 4^m = +- 1 mod 4n + 1.
  * @author Sean A. Irvine
  */
 public class A003560 extends A003559 {

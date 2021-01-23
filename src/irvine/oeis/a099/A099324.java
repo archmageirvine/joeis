@@ -6,7 +6,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099324 Expansion of <code>(1 + sqrt(1 + 4x))/(2(1 + x))</code>.
+ * A099324 Expansion of (1 + sqrt(1 + 4x))/(2(1 + x)).
  * @author Georg Fischer
  */
 public class A099324 extends HolonomicRecurrence {

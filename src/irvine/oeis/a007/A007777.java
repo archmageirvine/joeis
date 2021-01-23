@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007777 Number of overlap-free binary words of length <code>n</code>.
+ * A007777 Number of overlap-free binary words of length n.
  * @author Sean A. Irvine
  */
 public class A007777 extends MemoryFunction1<Matrix<Z>> implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014882 <code>a(1) = 1, a(n) = 12*a(n-1) + n</code>.
+ * A014882 a(1) = 1, a(n) = 12*a(n-1) + n.
  * @author Sean A. Irvine
  */
 public class A014882 implements Sequence {

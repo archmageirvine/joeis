@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014121 Numbers of form <code>|2^i-3^j|</code>.
+ * A014121 Numbers of form |2^i-3^j|.
  * @author Sean A. Irvine
  */
 public class A014121 implements Sequence {
@@ -14,7 +14,7 @@ public class A014121 implements Sequence {
   private long mN = -1;
 
   static boolean isPowerOf2(final Z n) {
-    return !Z.ZERO.equals(n) && Z.ZERO.equals(n.and(n.subtract(1)));
+    return !n.isZero() && n.and(n.subtract(1)).isZero();
   }
 
   @Override

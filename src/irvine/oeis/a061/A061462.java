@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061462 The exact power of 2 that divides the n-th Bell number <code>(A000110)</code>. Has period 12.
+ * A061462 The exact power of 2 that divides the n-th Bell number (A000110). Has period 12.
  * @author Sean A. Irvine
  */
 public class A061462 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000330;
 
 /**
- * A128146 Numerators of Hankel transform of <code>1/J(n+1)</code>, where <code>J(n)=A001045(n)</code>.
+ * A128146 Numerators of Hankel transform of 1/J(n+1), where J(n)=A001045(n).
  * @author Sean A. Irvine
  */
 public class A128146 extends A000330 {

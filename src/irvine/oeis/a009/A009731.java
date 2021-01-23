@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009731 Expansion of <code>tan(x)*cosh(log(1+x))</code>.
+ * A009731 Expansion of tan(x)*cosh(log(1+x)).
  * @author Sean A. Irvine
  */
 public class A009731 implements Sequence {

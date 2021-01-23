@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A290227 Numbers n such that <code>A290223(n) = 11</code>.
+ * A290227 Numbers n such that A290223(n) = 11.
  * @author Georg Fischer
  */
 public class A290227 extends FiniteSequence {

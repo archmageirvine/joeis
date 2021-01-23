@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081436 Diagonal in array of n-gonal numbers <code>A081422</code>.
+ * A081436 Diagonal in array of n-gonal numbers A081422.
  * @author Sean A. Irvine
  */
 public class A081436 extends LinearRecurrence {

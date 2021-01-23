@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212364 Number of Dyck n-paths all of whose ascents and descents have lengths equal to <code>1 (mod 5)</code>.
+ * A212364 Number of Dyck n-paths all of whose ascents and descents have lengths equal to 1 (mod 5).
  * @author Georg Fischer
  */
 public class A212364 extends HolonomicRecurrence {

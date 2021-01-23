@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a009.A009378;
 
 /**
- * A024296 E.g.f.: <code>log(1+tan(x)*sinh(x))/2</code> (even powers only).
+ * A024296 E.g.f.: log(1+tan(x)*sinh(x))/2 (even powers only).
  * @author Sean A. Irvine
  */
 public class A024296 extends A009378 {

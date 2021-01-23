@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173962 Averages of two consecutive odd cubes; <code>(n^3+(n+2)^3)/2</code>.
+ * A173962 Averages of two consecutive odd cubes; (n^3+(n+2)^3)/2.
  * @author Sean A. Irvine
  */
 public class A173962 extends LinearRecurrence {

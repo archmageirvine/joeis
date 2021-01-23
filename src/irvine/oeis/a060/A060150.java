@@ -6,7 +6,7 @@ package irvine.oeis.a060;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A060150 <code>a(0) = 1</code>; for <code>n &gt; 0, binomial(2n-1, n-1)^2</code>.
+ * A060150 a(0) = 1; for n &gt; 0, binomial(2n-1, n-1)^2.
  * @author Georg Fischer
  */
 public class A060150 extends HolonomicRecurrence {

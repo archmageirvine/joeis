@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015787 <code>Phi(n) + 8 | sigma(n + 8)</code>.
+ * A015787 Numbers n such that phi(n) + 8 | sigma(n + 8), where phi = A000010 and sigma = A000203.
  * @author Sean A. Irvine
  */
 public class A015787 implements Sequence {
@@ -33,7 +33,7 @@ public class A015787 implements Sequence {
       mFactorSequenceF = mFactorSequenceG;
       mFactorSequenceG = mFactorSequenceH;
       mFactorSequenceH = Cheetah.factor(++mN);
-      if (mFactorSequenceH.sigma().mod(phi8).equals(Z.ZERO)) {
+      if (mFactorSequenceH.sigma().mod(phi8).isZero()) {
         return Z.valueOf(mN - 8);
       }
     }

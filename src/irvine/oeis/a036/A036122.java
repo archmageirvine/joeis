@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036122 <code>a(n) = 2^n mod 29</code>.
+ * A036122 a(n) = 2^n mod 29.
  * @author Georg Fischer
  */
 public class A036122 extends GeneratingFunctionSequence {

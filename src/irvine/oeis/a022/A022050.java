@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022050 Theta series of <code>D_19</code> lattice.
+ * A022050 Theta series of D_19 lattice.
  * @author Sean A. Irvine
  */
 public class A022050 implements Sequence {

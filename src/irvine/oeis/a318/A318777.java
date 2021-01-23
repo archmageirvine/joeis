@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A318777 Coefficients in expansion of <code>1/(1 - x - 2*x^5)</code>.
+ * A318777 Coefficients in expansion of 1/(1 - x - 2*x^5).
  * @author Georg Fischer
  */
 public class A318777 extends LinearRecurrence {

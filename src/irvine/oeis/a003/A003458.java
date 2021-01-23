@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003458 <code>Erd&#337;s-Selfridge</code> function: <code>a(n)</code> is the least number m <code>&gt; n+1</code> such that the least prime factor of <code>binomial(m, n)</code> is <code>&gt; n</code>.
+ * A003458 Erd\u0151s-Selfridge function: a(n) is the least number m &gt; n+1 such that the least prime factor of binomial(m, n) is &gt; n.
  * @author Sean A. Irvine
  */
 public class A003458 implements Sequence {

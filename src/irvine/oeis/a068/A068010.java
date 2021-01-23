@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068010 Number of subsets of <code>{1,2,3,...,n}</code> that sum to <code>0 mod 3</code>.
+ * A068010 Number of subsets of {1,2,3,...,n} that sum to 0 mod 3.
  * @author Sean A. Irvine
  */
 public class A068010 extends LinearRecurrence {

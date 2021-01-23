@@ -19,7 +19,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A003190 Number of connected <code>2-plexes</code>.
+ * A003190 Number of connected 2-plexes.
  * @author Sean A. Irvine
  */
 public class A003190 extends MemoryFunction2<Integer, Q> implements Sequence {

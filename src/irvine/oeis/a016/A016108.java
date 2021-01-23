@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016108 Numbers <code>n=3*m+1</code> such that <code>2^m == 1 (mod n)</code>.
+ * A016108 Numbers n=3*m+1 such that 2^m == 1 (mod n).
  * @author Sean A. Irvine
  */
 public class A016108 implements Sequence {

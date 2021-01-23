@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A250355 Number of length 6 arrays <code>x(i), i=1..6</code> with <code>x(i)</code> in <code>i..i+n</code> and no value appearing more than 2 times.
+ * A250355 Number of length 6 arrays x(i), i=1..6 with x(i) in i..i+n and no value appearing more than 2 times.
  * @author Georg Fischer
  */
 public class A250355 extends GeneratingFunctionSequence {

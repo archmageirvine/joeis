@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A236290 Decimal expansion of <code>(sqrt(33) - 1) / 2</code>.
+ * A236290 Decimal expansion of (sqrt(33) - 1) / 2.
  * @author Georg Fischer
  */
 public class A236290 extends DecimalExpansionSequence {

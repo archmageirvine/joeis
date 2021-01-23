@@ -6,7 +6,7 @@ package irvine.oeis.a132;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A132889 Sum of the lengths of the longest increasing subsequence over all 321-avoiding permutations of <code>[n]</code>.
+ * A132889 Sum of the lengths of the longest increasing subsequence over all 321-avoiding permutations of [n].
  * @author Georg Fischer
  */
 public class A132889 extends HolonomicRecurrence {

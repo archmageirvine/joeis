@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A008617 Expansion of <code>1/((1-x^2)(1-x^7))</code>.
+ * A008617 Expansion of 1/((1-x^2)(1-x^7)).
  * @author Sean A. Irvine
  */
 public class A008617 extends GeneratingFunctionSequence {

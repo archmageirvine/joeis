@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019650 Decimal expansion of <code>sqrt(Pi*e)/6</code>.
+ * A019650 Decimal expansion of sqrt(Pi*e)/6.
  * @author Sean A. Irvine
  */
 public class A019650 extends DecimalExpansionSequence {
 
-  private final CR mN = CR.PI.multiply(CR.E).sqrt().divide(CR.valueOf(6));
+  private final CR mN = CR.PI.multiply(CR.E).sqrt().divide(CR.SIX);
 
   @Override
   protected CR getCR() {

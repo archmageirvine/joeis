@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137173 <code>A006516</code> at positions with even indices, <code>A007582</code> at positions with odd indices.
+ * A137173 A006516 at positions with even indices, A007582 at positions with odd indices.
  * @author Georg Fischer
  */
 public class A137173 extends GeneratingFunctionSequence {

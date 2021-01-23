@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000032;
 import irvine.oeis.a090.A090946;
 
 /**
- * A014243 <code>a(n) = ((n+1)-st</code> Lucas number) <code>- (n-th non-Lucas</code> number).
+ * A014243 a(n) = ((n+1)-st Lucas number) - (n-th non-Lucas number).
  * @author Sean A. Irvine
  */
 public class A014243 extends A000032 {

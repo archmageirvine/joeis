@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038165 G.f.: <code>1/((1-x)*(1-x^2))^5</code>.
+ * A038165 G.f.: 1/((1-x)*(1-x^2))^5.
  * @author Georg Fischer
  */
 public class A038165 extends GeneratingFunctionSequence {

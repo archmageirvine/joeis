@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005184 Self-contained numbers: odd numbers n whose Collatz sequence contains a higher multiple of <code>n</code>.
+ * A005184 Self-contained numbers: odd numbers n whose Collatz sequence contains a higher multiple of n.
  * @author Sean A. Irvine
  */
 public class A005184 implements Sequence {
@@ -22,7 +22,7 @@ public class A005184 implements Sequence {
           break;
         }
         t = t.multiply(3).add(1);
-        if (t.mod(mN).equals(Z.ZERO)) {
+        if (t.mod(mN).isZero()) {
           return mN;
         }
       }

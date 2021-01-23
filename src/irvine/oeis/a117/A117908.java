@@ -7,7 +7,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A117908 Chequered triangle for odd prime <code>p=3</code>.
+ * A117908 Chequered triangle for odd prime p=3.
  * @author Georg Fischer
  */
 public class A117908 extends GeneratingFunctionTriangle {

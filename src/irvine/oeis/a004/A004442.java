@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004442 Natural numbers, pairs reversed: <code>a(n) = n + (-1)^n</code>; also Nimsum <code>n + 1</code>.
+ * A004442 Natural numbers, pairs reversed: a(n) = n + (-1)^n; also Nimsum n + 1.
  * @author Sean A. Irvine
  */
 public class A004442 implements Sequence {

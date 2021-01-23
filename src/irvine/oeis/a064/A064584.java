@@ -5,7 +5,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064584 Order of twisted group <code>2G2(3^(2*n + 1))</code>.
+ * A064584 Order of twisted group 2G2(3^(2*n + 1)).
  * @author Georg Fischer
  */
 public class A064584 extends HolonomicRecurrence {

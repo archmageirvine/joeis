@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274119 <code>a(n) = (Product_{i=0..4}(i*n+2) - Product_{i=0..4}(-i*n-1))/(4*n+3)</code>.
+ * A274119 a(n) = (Product_{i=0..4}(i*n+2) - Product_{i=0..4}(-i*n-1))/(4*n+3).
  * @author Georg Fischer
  */
 public class A274119 extends GeneratingFunctionSequence {

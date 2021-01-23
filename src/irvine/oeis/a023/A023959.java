@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A023959 n-th binary digit in fractional part of n-th root of <code>n</code>.
+ * A023959 n-th binary digit in fractional part of n-th root of n.
  * @author Sean A. Irvine
  */
 public class A023959 implements Sequence {

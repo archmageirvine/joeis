@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003599 Numbers of the form <code>7^i*11^j</code>.
+ * A003599 Numbers of the form 7^i*11^j.
  * @author Sean A. Irvine
  */
 public class A003599 implements Sequence {

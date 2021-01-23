@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031394 Primes <code>p(7*n-4)</code>.
+ * A031394 Primes p(7*n-4).
  * @author Sean A. Irvine
  */
 public class A031394 extends A000040 {

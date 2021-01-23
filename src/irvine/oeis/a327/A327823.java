@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A327823 Odd integers m such that every odd integer k with <code>1 &lt; k &lt</code>; m and <code>gcd(k,m) = 1</code> is prime.
+ * A327823 Odd integers m such that every odd integer k with 1 &lt; k &lt; m and gcd(k,m) = 1 is prime.
  * @author Georg Fischer
  */
 public class A327823 extends FiniteSequence {

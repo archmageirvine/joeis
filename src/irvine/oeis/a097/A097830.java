@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097830 Partial sums of Chebyshev sequence <code>S(n,16) = U(n,16/2) = A077412(n)</code>.
+ * A097830 Partial sums of Chebyshev sequence S(n,16) = U(n,16/2) = A077412(n).
  * @author Sean A. Irvine
  */
 public class A097830 extends LinearRecurrence {

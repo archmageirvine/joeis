@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A235877 Number of <code>(n+1) X (1+1) 0..2</code> arrays with the minimum plus the upper median equal to the lower median plus the maximum in every <code>2 X 2</code> subblock.
+ * A235877 Number of (n+1) X (1+1) 0..2 arrays with the minimum plus the upper median equal to the lower median plus the maximum in every 2 X 2 subblock.
  * @author Georg Fischer
  */
 public class A235877 extends GeneratingFunctionSequence {

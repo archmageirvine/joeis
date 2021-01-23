@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100165 Structured rhombic triacontahedral numbers (vertex structure <code>7)</code>.
+ * A100165 Structured rhombic triacontahedral numbers (vertex structure 7).
  * @author Georg Fischer
  */
 public class A100165 extends GeneratingFunctionSequence {

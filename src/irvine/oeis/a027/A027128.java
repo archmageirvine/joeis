@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027128 <code>a(n) = A027113(n, 2n-10)</code>.
+ * A027128 a(n) = A027113(n, 2n-10).
  * @author Sean A. Irvine
  */
 public class A027128 extends A027113 {

@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105966 Expansion of <code>A/B</code> with A <code>= (-1+x^15-x^10-x^9-x^8-2*x^5-x^4)</code> and B <code>= ((x-1)*(x+1)*(x^2+x+1)*(x^4+x^3+x^2+x+1)*(x^4-x^3+x^2-x+1)*(x^8-x^7+x^5-x^4+x^3-x+1)</code>.
+ * A105966 Expansion of A/B with A = (-1+x^15-x^10-x^9-x^8-2*x^5-x^4) and B = ((x-1)*(x+1)*(x^2+x+1)*(x^4+x^3+x^2+x+1)*(x^4-x^3+x^2-x+1)*(x^8-x^7+x^5-x^4+x^3-x+1).
  * @author Georg Fischer
  */
 public class A105966 extends HolonomicRecurrence {

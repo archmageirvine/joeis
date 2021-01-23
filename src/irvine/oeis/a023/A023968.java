@@ -6,13 +6,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023968 First digit after decimal point of 9th root of <code>n</code>.
+ * A023968 First digit after decimal point of 9th root of n.
  * @author Sean A. Irvine
  */
 public class A023968 implements Sequence {
 
-  private static final CR TEN = CR.valueOf(10);
-  private static final CR R = CR.valueOf(9).inverse();
+  private static final CR TEN = CR.TEN;
+  private static final CR R = CR.NINE.inverse();
   private long mN = 0;
 
   @Override

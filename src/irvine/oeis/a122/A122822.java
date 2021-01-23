@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122822 The <code>(1,4)</code> entry in the matrix <code>M^n</code>, where M is the <code>4 X 4</code> matrix <code>[[0,-1,1,0],[0,0,-1,1],[1,1,1,0],[0,1,1,1]]</code>.
+ * A122822 The (1,4) entry in the matrix M^n, where M is the 4 X 4 matrix [[0,-1,1,0],[0,0,-1,1],[1,1,1,0],[0,1,1,1]].
  * @author Sean A. Irvine
  */
 public class A122822 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026921 Triangular array E by rows: <code>E(n,k) =</code> number of partitions of n into an even number of parts, the greatest being k.
+ * A026921 Triangular array E by rows: E(n,k) = number of partitions of n into an even number of parts, the greatest being k.
  * @author Sean A. Irvine
  */
 public class A026921 extends A026920 {

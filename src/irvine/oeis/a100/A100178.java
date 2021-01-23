@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100178 Structured hexagonal diamond numbers (vertex structure <code>5)</code>.
+ * A100178 Structured hexagonal diamond numbers (vertex structure 5).
  * @author Georg Fischer
  */
 public class A100178 extends GeneratingFunctionSequence {

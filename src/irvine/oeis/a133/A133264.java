@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133264 Smallest number whose sum of digits is <code>3n+1</code>.
+ * A133264 Smallest number whose sum of digits is 3n+1.
  * @author Georg Fischer
  */
 public class A133264 extends LinearRecurrence {

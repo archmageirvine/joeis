@@ -6,7 +6,7 @@ package irvine.oeis.a234;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A234043 <code>a(n) = C(5*(n+1),4)/5</code>, with <code>n &gt;= 0</code>.
+ * A234043 a(n) = C(5*(n+1),4)/5, with n &gt;= 0.
  * @author Georg Fischer
  */
 public class A234043 extends HolonomicRecurrence {

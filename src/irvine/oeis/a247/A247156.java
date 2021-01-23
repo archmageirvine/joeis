@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A247156 Numbers that are repeated in <code>A001379</code>.
+ * A247156 Numbers that are repeated in A001379.
  * @author Georg Fischer
  */
 public class A247156 extends FiniteSequence {

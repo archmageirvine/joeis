@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A151822 Sequence giving surface area of star graph <code>S(8,3)</code>.
+ * A151822 Sequence giving surface area of star graph S(8,3).
  * @author Georg Fischer
  */
 public class A151822 extends FiniteSequence {

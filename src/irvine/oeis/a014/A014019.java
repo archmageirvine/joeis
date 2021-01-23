@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014019 Inverse of <code>10th</code> cyclotomic polynomial.
+ * A014019 Inverse of 10th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014019 extends PeriodicSequence {

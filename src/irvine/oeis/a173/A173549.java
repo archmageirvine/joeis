@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173549 Number of <code>3 X 3</code> magilatin squares with positive values and magic sum <code>n</code>.
+ * A173549 Number of 3 X 3 magilatin squares with positive values and magic sum n.
  * @author Georg Fischer
  */
 public class A173549 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116149 <code>a(n) =</code> sum of n consecutive cubes after <code>n^3</code>.
+ * A116149 a(n) = sum of n consecutive cubes after n^3.
  * @author Sean A. Irvine
  */
 public class A116149 extends LinearRecurrence {

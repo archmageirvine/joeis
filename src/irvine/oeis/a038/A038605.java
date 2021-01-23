@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A038605 <code>a(n) = floor( prime(n)/n )</code>.
+ * A038605 a(n) = floor( prime(n)/n ).
  * @author Sean A. Irvine
  */
 public class A038605 extends A000040 {

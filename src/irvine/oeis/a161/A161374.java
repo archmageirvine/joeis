@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A161374 "Punctual" binary numbers. Complement of <code>A161373</code>.
+ * A161374 "Punctual" binary numbers. Complement of A161373.
  * @author Georg Fischer
  */
 public class A161374 extends GeneratingFunctionSequence {

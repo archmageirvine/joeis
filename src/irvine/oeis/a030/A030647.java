@@ -4,7 +4,7 @@ package irvine.oeis.a030;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A030647 Dimension of multiples of minimal representation of complex Lie algebra <code>F4</code>.
+ * A030647 Dimension of multiples of minimal representation of complex Lie algebra F4.
  * @author Georg Fischer
  */
 public class A030647 extends GeneratingFunctionSequence {

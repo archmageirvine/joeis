@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015764 Numbers n such that <code>phi(n) | sigma_6(n)</code>.
+ * A015764 Numbers n such that phi(n) | sigma_6(n).
  * @author Sean A. Irvine
  */
 public class A015764 implements Sequence {
@@ -17,7 +17,7 @@ public class A015764 implements Sequence {
   public Z next() {
     while (true) {
       final FactorSequence fs = Cheetah.factor(++mN);
-      if (fs.sigma(6).mod(fs.phi()).equals(Z.ZERO)) {
+      if (fs.sigma(6).mod(fs.phi()).isZero()) {
         return Z.valueOf(mN);
       }
     }

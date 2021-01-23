@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A127546 <code>a(n) = F(n)^2 + F(n+1)^2 + F(n+2)^2</code>, where <code>F(n)</code> denotes the n-th Fibonacci number.
+ * A127546 a(n) = F(n)^2 + F(n+1)^2 + F(n+2)^2, where F(n) denotes the n-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A127546 extends GeneratingFunctionSequence {

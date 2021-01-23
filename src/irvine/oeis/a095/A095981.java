@@ -6,7 +6,7 @@ package irvine.oeis.a095;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A095981 Number of plateau-free Motzkin paths of length <code>n</code>.
+ * A095981 Number of plateau-free Motzkin paths of length n.
  * @author Georg Fischer
  */
 public class A095981 extends HolonomicRecurrence {

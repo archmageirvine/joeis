@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A242971 Alternate <code>n+1, 2^n</code>.
+ * A242971 Alternate n+1, 2^n.
  * @author Georg Fischer
  */
 public class A242971 extends GeneratingFunctionSequence {

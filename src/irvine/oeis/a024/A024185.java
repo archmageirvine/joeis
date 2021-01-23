@@ -4,7 +4,7 @@ package irvine.oeis.a024;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A024185 Fourth elementary symmetric function of <code>3,4,...,n+5</code>.
+ * A024185 Fourth elementary symmetric function of 3,4,...,n+5.
  * @author Georg Fischer
  */
 public class A024185 extends GeneratingFunctionSequence {

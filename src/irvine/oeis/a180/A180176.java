@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180176 Lexicographically earliest permutation of the natural numbers such that <code>a(n) != n</code> and in decimal representation <code>a(n)</code> and n have at least one common digit.
+ * A180176 Lexicographically earliest permutation of the natural numbers such that a(n) != n and in decimal representation a(n) and n have at least one common digit.
  * @author Georg Fischer
  */
 public class A180176 extends GeneratingFunctionSequence {

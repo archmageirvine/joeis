@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A174971 Periodic sequence: Repeat <code>3, -3</code>.
+ * A174971 Periodic sequence: Repeat 3, -3.
  * @author Georg Fischer
  */
 public class A174971 extends GeneratingFunctionSequence {

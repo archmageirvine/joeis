@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027640 Poincar&#233; series [or Poincare series] for ring of modular forms of genus 2.
+ * A027640 Poincar\u00e9 series [or Poincare series] for ring of modular forms of genus 2.
  * @author Sean A. Irvine
  */
 public class A027640 extends LinearRecurrence {

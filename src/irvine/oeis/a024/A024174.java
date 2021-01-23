@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024174 <code>a(n)</code> is <code>floor((4th</code> elementary symmetric function of 1,2,..,n)/(3rd elementary symmetric function of <code>1,2,...,n))</code>.
+ * A024174 a(n) is floor((4th elementary symmetric function of 1,2,..,n)/(3rd elementary symmetric function of 1,2,...,n)).
  * @author Sean A. Irvine
  */
 public class A024174 implements Sequence {

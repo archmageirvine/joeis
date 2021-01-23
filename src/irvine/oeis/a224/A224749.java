@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224749 Vauban's sequence: <code>a(n)=0</code> if <code>n&lt;=0, a(1)=1</code>; thereafter <code>a(n) = 3*a(n-1) + 6*a(n-2) + 6*a(n-3) + 6*a(n-4) + 6*a(n-5)</code>.
+ * A224749 Vauban's sequence: a(n)=0 if n&lt;=0, a(1)=1; thereafter a(n) = 3*a(n-1) + 6*a(n-2) + 6*a(n-3) + 6*a(n-4) + 6*a(n-5).
  * @author Sean A. Irvine
  */
 public class A224749 extends LinearRecurrence {

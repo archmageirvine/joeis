@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325168 Number of integer partitions of n with <code>origin-to-boundary graph-distance</code> equal to 2.
+ * A325168 Number of integer partitions of n with origin-to-boundary graph-distance equal to 2.
  * @author Georg Fischer
  */
 public class A325168 extends HolonomicRecurrence {

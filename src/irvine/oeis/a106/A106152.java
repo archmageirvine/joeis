@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A106152 Decimal expansion of <code>sqrt(Pi^2 - e^2)/(Pi/2)</code>.
+ * A106152 Decimal expansion of sqrt(Pi^2 - e^2)/(Pi/2).
  * @author Georg Fischer
  */
 public class A106152 extends DecimalExpansionSequence {

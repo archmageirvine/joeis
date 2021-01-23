@@ -5,7 +5,7 @@ package irvine.oeis.a117;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A117830 Let <code>S_m</code> be the infinite sequence formed by starting with m and repeatedly reversing the digits and adding 4 to get the next term. For all m <code>&lt; 1015, S_m</code> enters the cycle of length 54 whose terms are shown here.
+ * A117830 Let S_m be the infinite sequence formed by starting with m and repeatedly reversing the digits and adding 4 to get the next term. For all m &lt; 1015, S_m enters the cycle of length 54 whose terms are shown here.
  * @author Georg Fischer
  */
 public class A117830 extends HolonomicRecurrence {

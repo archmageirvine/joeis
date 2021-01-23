@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291029 p-INVERT of the positive integers, where <code>p(S) = 1 - S - S^2 - S^3</code>.
+ * A291029 p-INVERT of the positive integers, where p(S) = 1 - S - S^2 - S^3.
  * @author Sean A. Irvine
  */
 public class A291029 extends LinearRecurrence {

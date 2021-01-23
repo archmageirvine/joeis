@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244802 The <code>60&#186;</code> spoke (or ray) of a hexagonal spiral of Ulam.
+ * A244802 The 60 degree spoke (or ray) of a hexagonal spiral of Ulam.
  * @author Sean A. Irvine
  */
 public class A244802 extends LinearRecurrence {

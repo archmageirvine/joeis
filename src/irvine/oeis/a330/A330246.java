@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330246 <code>a(n) = 4^(n+1) + (4^n-1)/3</code>.
+ * A330246 a(n) = 4^(n+1) + (4^n-1)/3.
  * @author Georg Fischer
  */
 public class A330246 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033821 Orders of certain groups associated with <code>K3</code> surfaces and <code>M24</code>.
+ * A033821 Orders of certain groups associated with K3 surfaces and M24.
  * @author Georg Fischer
  */
 public class A033821 extends FiniteSequence {

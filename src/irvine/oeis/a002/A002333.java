@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033203;
 
 /**
- * A002333 Numbers y such that p <code>= x^2 + 2y^2</code>, with prime p <code>= A033203(n)</code>.
+ * A002333 Numbers y such that p = x^2 + 2y^2, with prime p = A033203(n).
  * @author Sean A. Irvine
  */
 public class A002333 extends A033203 {
@@ -17,7 +17,7 @@ public class A002333 extends A033203 {
       x = x.add(1);
       final Z twoy2 = p.subtract(x.square());
       final Z[] s = twoy2.divide2().sqrtAndRemainder();
-      if (twoy2.isEven() && Z.ZERO.equals(s[1])) {
+      if (twoy2.isEven() && s[1].isZero()) {
         return s[0];
       }
     }

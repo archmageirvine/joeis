@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A188803 Primes that divide <code>2^(2^100) - 1</code> and <code>10^(10^100) - 1</code>.
+ * A188803 Primes that divide 2^(2^100) - 1 and 10^(10^100) - 1.
  * @author Georg Fischer
  */
 public class A188803 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A188803() {
-    super(new Z("3"), new Z("17"), new Z("257"), new Z("641"), new Z("65537"), new Z("167772161"), new Z("2748779069441"), new Z("46179488366593"), new Z("1328165573307087716353"), new Z("188894659314785808547841"));
+    super(Z.THREE, new Z("17"), new Z("257"), new Z("641"), new Z("65537"), new Z("167772161"), new Z("2748779069441"), new Z("46179488366593"), new Z("1328165573307087716353"), new Z("188894659314785808547841"));
   }
 }

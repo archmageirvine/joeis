@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241976 Values of k such that <code>k^2 + (k+3)^2</code> is a square.
+ * A241976 Values of k such that k^2 + (k+3)^2 is a square.
  * @author Sean A. Irvine
  */
 public class A241976 extends LinearRecurrence {

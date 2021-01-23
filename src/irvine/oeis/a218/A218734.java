@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218734 <code>a(n) = (31^n-1)/30</code>.
+ * A218734 a(n) = (31^n-1)/30.
  * @author Sean A. Irvine
  */
 public class A218734 extends LinearRecurrence {

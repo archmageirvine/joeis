@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190943 <code>a(n) = 8*a(n-1) + 27*a(n-2)</code>, with <code>a(0)=0, a(1)=1</code>.
+ * A190943 a(n) = 8*a(n-1) + 27*a(n-2), with a(0)=0, a(1)=1.
  * @author Georg Fischer
  */
 public class A190943 extends GeneratingFunctionSequence {

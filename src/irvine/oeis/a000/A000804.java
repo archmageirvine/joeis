@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A000804 Permanent of a certain cyclic <code>n X n (0,1)</code> matrix.
+ * A000804 Permanent of a certain cyclic n X n (0,1) matrix.
  * @author Sean A. Irvine
  */
 public class A000804 extends GeneratingFunctionSequence {

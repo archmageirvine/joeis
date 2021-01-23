@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A023425 Generalized Catalan numbers: <code>a(0) = 1, a(n) = a(n-1) + Sum_{k=1..n-4} a(k) * a(n-k)</code>.
+ * A023425 Generalized Catalan numbers: a(0) = 1, a(n) = a(n-1) + Sum_{k=1..n-4} a(k) * a(n-k).
  * @author Sean A. Irvine
  */
 public class A023425 extends MemorySequence {

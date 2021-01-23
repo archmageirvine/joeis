@@ -6,12 +6,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023974 First bit in fractional part of binary expansion of 7th root of <code>n</code>.
+ * A023974 First bit in fractional part of binary expansion of 7th root of n.
  * @author Sean A. Irvine
  */
 public class A023974 implements Sequence {
 
-  private static final CR R = CR.valueOf(7).inverse();
+  private static final CR R = CR.SEVEN.inverse();
   private long mN = 0;
 
   @Override

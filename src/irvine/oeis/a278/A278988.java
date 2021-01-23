@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A278988 <code>a(n)</code> is the number of words of length n over an alphabet of size 3 that are in standard order and which have the property that every letter that appears in the word is repeated.
+ * A278988 a(n) is the number of words of length n over an alphabet of size 3 that are in standard order and which have the property that every letter that appears in the word is repeated.
  * @author Georg Fischer
  */
 public class A278988 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009940 <code>a(n) = n!*L_{n}(1), L_{n}(x)</code> the n-th Laguerre polynomial.
+ * A009940 a(n) = n!*L_{n}(1), L_{n}(x) the n-th Laguerre polynomial.
  * @author Sean A. Irvine
  */
 public class A009940 implements Sequence {

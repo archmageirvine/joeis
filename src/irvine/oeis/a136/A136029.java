@@ -6,7 +6,7 @@ package irvine.oeis.a136;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A136029 <code>a(n)</code> is the number of central ideals of a garland of order <code>2n</code>, i.e., <code>a(n) = g(2n,n)</code>, where <code>g(n,k)</code> is the number of ideals of size k in a garland (or double fence) of order <code>n</code> (see <code>A137278)</code>.
+ * A136029 a(n) is the number of central ideals of a garland of order 2n, i.e., a(n) = g(2n,n), where g(n,k) is the number of ideals of size k in a garland (or double fence) of order n (see A137278).
  * @author Georg Fischer
  */
 public class A136029 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a008.A008578;
 
 /**
- * A023627 Convolution of <code>(1, p(1), p(2), ...)</code> and composite numbers.
+ * A023627 Convolution of (1, p(1), p(2), ...) and composite numbers.
  * @author Sean A. Irvine
  */
 public class A023627 extends ConvolutionSequence {

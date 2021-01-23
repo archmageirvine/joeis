@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029899 Number of strategic configurations in <code>3 X n</code> Chomp rectangle.
+ * A029899 Number of strategic configurations in 3 X n Chomp rectangle.
  * @author Sean A. Irvine
  */
 public class A029899 implements Sequence {

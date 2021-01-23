@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A104670 <code>a(n) = binomial(n+2, 2)*binomial(n+7, n)</code>.
+ * A104670 a(n) = binomial(n+2, 2)*binomial(n+7, n).
  * @author Georg Fischer
  */
 public class A104670 extends GeneratingFunctionSequence {

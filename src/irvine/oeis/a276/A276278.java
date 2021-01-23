@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276278 Complement of <code>A026474</code>.
+ * A276278 Complement of A026474.
  * @author Georg Fischer
  */
 public class A276278 extends LinearRecurrence {

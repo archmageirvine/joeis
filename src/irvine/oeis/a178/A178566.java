@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A178566 Decimal expansion of <code>(32 + sqrt(1297))/13</code>.
+ * A178566 Decimal expansion of (32 + sqrt(1297))/13.
  * @author Georg Fischer
  */
 public class A178566 extends DecimalExpansionSequence {

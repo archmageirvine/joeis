@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022164 First column of spectral array <code>W(sqrt(5)-1)</code>.
+ * A022164 First column of spectral array W(sqrt(5)-1).
  * @author Sean A. Irvine
  */
 public class A022164 implements Sequence {

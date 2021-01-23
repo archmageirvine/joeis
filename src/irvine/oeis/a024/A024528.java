@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002110;
 import irvine.oeis.a008.A008578;
 
 /**
- * A024528 <code>a(n) = n-th</code> elementary symmetric function of <code>{1, prime(1), prime(2)</code>, ..., <code>prime(n)}</code>.
+ * A024528 a(n) = n-th elementary symmetric function of {1, prime(1), prime(2), ..., prime(n)}.
  * @author Sean A. Irvine
  */
 public class A024528 extends A008578 {

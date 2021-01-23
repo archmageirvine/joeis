@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022853 <code>a(n) =</code> integer nearest <code>n*Pi</code>.
+ * A022853 a(n) = integer nearest n*Pi.
  * @author Sean A. Irvine
  */
 public class A022853 implements Sequence {

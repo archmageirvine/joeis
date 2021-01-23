@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238055 <code>a(n) = (13*3^n-1)/2</code>.
+ * A238055 a(n) = (13*3^n-1)/2.
  * @author Georg Fischer
  */
 public class A238055 extends GeneratingFunctionSequence {

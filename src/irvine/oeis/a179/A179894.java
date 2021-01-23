@@ -5,7 +5,7 @@ package irvine.oeis.a179;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A179894 Given the series <code>(1, 2, 1, 2, 1, 2, ...)</code>, let <code>(1 + 2x + x^2 + 2x^3 + ...) * (1 + 2x^2 + x^3 + 2x^4 + ...) = (1 + 2x + 3x^2 + 7x^3 + ...)</code>.
+ * A179894 Given the series (1, 2, 1, 2, 1, 2, ...), let (1 + 2x + x^2 + 2x^3 + ...) * (1 + 2x^2 + x^3 + 2x^4 + ...) = (1 + 2x + 3x^2 + 7x^3 + ...).
  * @author Georg Fischer
  */
 public class A179894 extends HolonomicRecurrence {

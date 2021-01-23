@@ -5,7 +5,7 @@ package irvine.oeis.a321;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A321232 Length of n-th term of <code>A321225</code>.
+ * A321232 Length of n-th term of A321225.
  * @author Georg Fischer
  */
 public class A321232 extends HolonomicRecurrence {

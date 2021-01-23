@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024718 <code>a(n) = (1/2)*(1 +</code> sum of <code>C(2k,k))</code> for k <code>= 0,1,2,...,n</code>.
+ * A024718 a(n) = (1/2)*(1 + Sum_{k=0..n} binomial(2*k, k)).
  * @author Sean A. Irvine
  */
 public class A024718 implements Sequence {

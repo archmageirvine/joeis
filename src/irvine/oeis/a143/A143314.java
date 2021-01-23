@@ -5,7 +5,7 @@ package irvine.oeis.a143;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A143314 Number of hands of n cards containing a straight flush (for <code>n=1</code> to <code>52)</code>.
+ * A143314 Number of hands of n cards containing a straight flush (for n=1 to 52).
  * @author Georg Fischer
  */
 public class A143314 extends FiniteSequence {

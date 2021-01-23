@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306315 Number of binary words of length n such that the difference between the number of <code>1</code>'s and the number of <code>0</code>'s is in the interval <code>[-2,3]</code> for every prefix and in the interval <code>[-3,2]</code> for every suffix.
+ * A306315 Number of binary words of length n such that the difference between the number of 1's and the number of 0's is in the interval [-2,3] for every prefix and in the interval [-3,2] for every suffix.
  * @author Georg Fischer
  */
 public class A306315 extends GeneratingFunctionSequence {

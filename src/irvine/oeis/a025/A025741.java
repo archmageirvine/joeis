@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025741 Index of <code>10^n</code> within sequence of numbers of form <code>3^i*10^j</code>.
+ * A025741 Index of 10^n within sequence of numbers of form 3^i*10^j.
  * @author Sean A. Irvine
  */
 public class A025741 extends A025616 {

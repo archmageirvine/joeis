@@ -7,7 +7,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A193725 Mirror of the triangle <code>A193724</code>.
+ * A193725 Mirror of the triangle A193724.
  * @author Georg Fischer
  */
 public class A193725 extends GeneratingFunctionTriangle {

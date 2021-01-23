@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import java.util.ArrayList;
 
 /**
- * A002955 Number of <code>(unordered</code>, unlabeled) rooted trimmed trees with n nodes.
+ * A002955 Number of (unordered, unlabeled) rooted trimmed trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A002955 extends MemorySequence {

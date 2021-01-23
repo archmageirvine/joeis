@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089746 Period <code>12</code>: repeat <code>(4, 4, 1, 2, 1, 1, 2, 2, 3, 3, 3, 3)</code>. (Number of syllables in English name of the <code>months.)</code>.
+ * A089746 Period 12: repeat (4, 4, 1, 2, 1, 1, 2, 2, 3, 3, 3, 3). (Number of syllables in English name of the months.).
  * @author Sean A. Irvine
  */
 public class A089746 extends LinearRecurrence {

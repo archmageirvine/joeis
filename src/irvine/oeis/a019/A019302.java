@@ -4,7 +4,7 @@ import irvine.oeis.BinomialTransformSequence;
 import irvine.oeis.a010.A010060;
 
 /**
- * A019302 Binomial transform of Thue-Morse sequence <code>A010060</code>.
+ * A019302 Binomial transform of Thue-Morse sequence A010060.
  * @author Sean A. Irvine
  */
 public class A019302 extends BinomialTransformSequence {

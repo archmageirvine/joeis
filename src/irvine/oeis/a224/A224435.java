@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224435 The Wiener index of the polyphenylene dendrimer <code>G[n]</code> defined pictorially in the N. E. Arif et al. reference.
+ * A224435 The Wiener index of the polyphenylene dendrimer G[n] defined pictorially in the N. E. Arif et al. reference.
  * @author Georg Fischer
  */
 public class A224435 extends GeneratingFunctionSequence {

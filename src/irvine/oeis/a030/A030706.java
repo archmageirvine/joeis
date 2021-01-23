@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030706 Decimal expansion of <code>11^n</code> contains no zeros (probably finite).
+ * A030706 Decimal expansion of 11^n contains no zeros (probably finite).
  * @author Sean A. Irvine
  */
 public class A030706 implements Sequence {

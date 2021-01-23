@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029540 Numbers n such that n divides the (left) concatenation of all numbers <code>&lt;= n</code> written in base <code>23</code> (most significant digit on right).
+ * A029540 Numbers n such that n divides the (left) concatenation of all numbers &lt;= n written in base 23 (most significant digit on right).
  * @author Sean A. Irvine
  */
 public class A029540 implements Sequence {
@@ -22,7 +22,7 @@ public class A029540 implements Sequence {
       }
       mN = mN.add(1);
       mA = ZUtils.reverse(mN, 23).multiply(mT).add(mA);
-      if (Z.ZERO.equals(mA.mod(mN))) {
+      if (mA.mod(mN).isZero()) {
         return mN;
       }
     }

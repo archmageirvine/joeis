@@ -8,7 +8,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A010067 Base 6 self or Colombian numbers (not of form <code>n +</code> sum of base 6 digits of <code>n)</code>.
+ * A010067 Base 6 self or Colombian numbers (not of form k + sum of base 6 digits of k).
  * @author Sean A. Irvine
  */
 public class A010067 extends ComplementSequence {
@@ -22,7 +22,7 @@ public class A010067 extends ComplementSequence {
       @Override
       public Z next() {
         while (mSet.isEmpty() || mSet.first().compareTo(mN) >= 0) {
-          mSet.add(mN.add(ZUtils.digitSum(mN, Z.SIX)));
+          mSet.add(mN.add(ZUtils.digitSum(mN, 6)));
           mN = mN.add(1);
         }
         return mSet.pollFirst();

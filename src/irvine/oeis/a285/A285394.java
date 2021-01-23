@@ -4,7 +4,7 @@ package irvine.oeis.a285;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A285394 Start with a single cell at coordinates <code>(0, 0, 0)</code>, then iteratively subdivide the grid into <code>3 X 3 X 3</code> cells and remove the cells whose sum of modulo 2 coordinates is 0 or <code>1; a(n)</code> is the number of cells after n iterations.
+ * A285394 Start with a single cell at coordinates (0, 0, 0), then iteratively subdivide the grid into 3 X 3 X 3 cells and remove the cells whose sum of modulo 2 coordinates is 0 or 1; a(n) is the number of cells after n iterations.
  * @author Georg Fischer
  */
 public class A285394 extends GeneratingFunctionSequence {

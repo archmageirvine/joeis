@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156232 <code>a(n)</code> is the number of induced subgraphs with odd number of edges in the cycle graph <code>C(n)</code>.
+ * A156232 a(n) is the number of induced subgraphs with odd number of edges in the cycle graph C(n).
  * @author Sean A. Irvine
  */
 public class A156232 extends LinearRecurrence {

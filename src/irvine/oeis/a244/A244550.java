@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A244550 <code>a(n) =</code> first odd Wieferich prime to base <code>a(n-1)</code> for <code>n &gt; 1</code>, with <code>a(1) = 2</code>.
+ * A244550 a(n) = first odd Wieferich prime to base a(n-1) for n &gt; 1, with a(1) = 2.
  * @author Georg Fischer
  */
 public class A244550 extends GeneratingFunctionSequence {

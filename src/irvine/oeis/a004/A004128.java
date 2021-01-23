@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004128 <code>a(n) = Sum_{k=1..n} floor(3*n/3^k)</code>.
+ * A004128 a(n) = Sum_{k=1..n} floor(3*n/3^k).
  * @author Sean A. Irvine
  */
 public class A004128 implements Sequence {

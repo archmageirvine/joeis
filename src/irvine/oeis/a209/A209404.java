@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A209404 Negated coefficients of Chebyshev T polynomials: <code>a(n) = -A053120(n+14, n), n &gt;= 0</code>.
+ * A209404 Negated coefficients of Chebyshev T polynomials: a(n) = -A053120(n+14, n), n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A209404 extends LinearRecurrence {

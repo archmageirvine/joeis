@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013599 <code>nextprime(5^n)-5^n</code>.
+ * A013599 a(n) = nextprime(5^n) - 5^n.
  * @author Sean A. Irvine
  */
 public class A013599 implements Sequence {

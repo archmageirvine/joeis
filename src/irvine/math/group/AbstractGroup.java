@@ -26,6 +26,7 @@ import irvine.util.array.DynamicLongArray;
 public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E> {
 
   private static final Z SIXTY = Z.valueOf(60);
+  private Z mAutSize = null;
 
   @Override
   public E subtract(final E a, final E b) {
@@ -172,7 +173,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
       if (groupSize != null) {
         return false;
       }
-    } else if (groupSize != null && !Z.ZERO.equals(groupSize.mod(size))) {
+    } else if (groupSize != null && !groupSize.mod(size).isZero()) {
       // Lagrange theorem requires size | groupSize
       return false;
     }
@@ -228,14 +229,14 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
     }
     final Z eSize = elements.size();
     final Z size = size();
-    if (Z.ONE.compareTo(eSize) >= 0 || !Z.ZERO.equals(size.mod(eSize))) {
+    if (Z.ONE.compareTo(eSize) >= 0 || !size.mod(eSize).isZero()) {
       return false;
     }
     if (eSize.isPrime()) {
-      return !Z.ZERO.equals(size.mod(eSize.square())) && isSubgroup(elements);
+      return !size.mod(eSize.square()).isZero() && isSubgroup(elements);
     }
     final Z p = eSize.isPower();
-    return p != null && p.isPrime() && !Z.ZERO.equals(size.mod(eSize.multiply(p))) && isSubgroup(elements);
+    return p != null && p.isPrime() && !size.mod(eSize.multiply(p)).isZero() && isSubgroup(elements);
   }
 
   @Override
@@ -251,7 +252,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
     if (equals(elements)) {
       return this;
     }
-    if (Z.ZERO.equals(elements.size())) {
+    if (elements.size().isZero()) {
       return new Singleton<>(zero());
     }
     if (Z.ONE.equals(elements.size())) {
@@ -362,7 +363,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
     // best that can be done
     Z r = ZUtils.random(random, size());
     for (final E e : this) {
-      if (Z.ZERO.equals(r)) {
+      if (r.isZero()) {
         return e;
       }
       r = r.subtract(1);
@@ -403,6 +404,18 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
       }
     }
     return b;
+  }
+
+  void setAutSize(final Z autSize) {
+    mAutSize = autSize;
+  }
+
+  @Override
+  public Z autOrder() {
+    if (mAutSize == null) {
+      throw new UnsupportedOperationException();
+    }
+    return mAutSize;
   }
 }
 

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180958 Diagonal sums of generalized Narayana triangle <code>A180957</code>.
+ * A180958 Diagonal sums of generalized Narayana triangle A180957.
  * @author Sean A. Irvine
  */
 public class A180958 extends LinearRecurrence {

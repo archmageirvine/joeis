@@ -4,8 +4,8 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001415;
 
 /**
- * A007822 Number of symmetric foldings of <code>2n+1</code> stamps.
- * @author Sean A. Irvine (port to Java)
+ * A007822 Number of symmetric foldings of 2n+1 stamps.
+ * @author Sean A. Irvine (Java port)
  */
 public class A007822 extends A001415 {
 

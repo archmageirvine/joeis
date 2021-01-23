@@ -6,7 +6,7 @@ package irvine.oeis.a035;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A035097 Related to 9-factorial numbers <code>A045756</code>.
+ * A035097 Related to 9-factorial numbers A045756.
  * @author Georg Fischer
  */
 public class A035097 extends HolonomicRecurrence {

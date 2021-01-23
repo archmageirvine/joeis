@@ -2,6 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.UnimplementedException;
 
 //import java.util.ArrayList;
 //import java.util.HashSet;
@@ -129,6 +130,6 @@ public class A002369 implements Sequence {
 
   @Override
   public Z next() {
-    throw new UnsupportedOperationException();
+    throw new UnimplementedException();
   }
 }

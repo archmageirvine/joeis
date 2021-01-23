@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272525 Convolution of nonzero repunits <code>(A002275)</code> with themselves.
+ * A272525 Convolution of nonzero repunits (A002275) with themselves.
  * @author Sean A. Irvine
  */
 public class A272525 extends LinearRecurrence {

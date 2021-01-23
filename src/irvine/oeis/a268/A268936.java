@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A268936 Number of sequences in <code>{1,...,n}^n</code> with longest increasing subsequence of length <code>n-2</code>.
+ * A268936 Number of sequences in {1,...,n}^n with longest increasing subsequence of length n-2.
  * @author Georg Fischer
  */
 public class A268936 extends GeneratingFunctionSequence {

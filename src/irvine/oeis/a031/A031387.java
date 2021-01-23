@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031387 Primes <code>p(6n-3)</code>.
+ * A031387 Primes p(6n-3).
  * @author Sean A. Irvine
  */
 public class A031387 extends A000040 {

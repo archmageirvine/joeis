@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184073 Number of <code>(n+1) X 2 0..2</code> arrays with rows and columns in nondecreasing order and with no <code>2 X 2</code> subblock sum differing from a horizontal or vertical neighbor subblock sum by more than one.
+ * A184073 Number of (n+1) X 2 0..2 arrays with rows and columns in nondecreasing order and with no 2 X 2 subblock sum differing from a horizontal or vertical neighbor subblock sum by more than one.
  * @author Georg Fischer
  */
 public class A184073 extends GeneratingFunctionSequence {

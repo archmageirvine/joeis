@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048256 Numbers whose sum of divisors is <code>6^6 = 46656</code>.
+ * A048256 Numbers whose sum of divisors is 6^6 = 46656.
  * @author Georg Fischer
  */
 public class A048256 extends FiniteSequence {

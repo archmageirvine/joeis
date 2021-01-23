@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135435 <code>a(n) = a(n-4) + a(n-7)</code> with <code>a(0)</code>, ..., <code>a(6) = [7,0,0,0,4,0,0]</code>.
+ * A135435 a(n) = a(n-4) + a(n-7) with a(0), ..., a(6) = [7,0,0,0,4,0,0].
  * @author Sean A. Irvine
  */
 public class A135435 extends LinearRecurrence {

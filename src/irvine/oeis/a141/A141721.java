@@ -6,7 +6,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141721 <code>A141631(n) mod 10</code>.
+ * A141721 A141631(n) mod 10.
  * @author Georg Fischer
  */
 public class A141721 extends HolonomicRecurrence {

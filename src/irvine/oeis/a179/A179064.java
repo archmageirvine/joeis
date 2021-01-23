@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179064 Number of non-attacking placements of 9 rooks on an <code>n X n</code> board.
+ * A179064 Number of non-attacking placements of 9 rooks on an n X n board.
  * @author Georg Fischer
  */
 public class A179064 extends GeneratingFunctionSequence {

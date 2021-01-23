@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027750 Triangle read by rows in which row n lists the divisors of <code>n</code>.
+ * A027750 Triangle read by rows in which row n lists the divisors of n.
  * @author Sean A. Irvine
  */
 public class A027750 implements Sequence {

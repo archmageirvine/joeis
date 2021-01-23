@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A290967 Smallest known example of a <code>3 X 3 X 3</code> generalized arithmetic progression (GAP) of 27 primes, listed in increasing order.
+ * A290967 Smallest known example of a 3 X 3 X 3 generalized arithmetic progression (GAP) of 27 primes, listed in increasing order.
  * @author Georg Fischer
  */
 public class A290967 extends FiniteSequence {

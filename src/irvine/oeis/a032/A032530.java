@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A032530 The 20 primes inside the <code>4 X 4</code> matrix with all the rows, columns and major diagonals being reversible non-palindromic and distinct primes (the smallest <code>prime-magical square): [ 1933, 1283, 9551, 3719 ]</code>.
+ * A032530 The 20 primes inside the 4 X 4 matrix with all the rows, columns and major diagonals being reversible non-palindromic and distinct primes (the smallest prime-magical square): [ 1933, 1283, 9551, 3719 ].
  * @author Georg Fischer
  */
 public class A032530 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073457 Numbers n such that <code>phi(n) = pi(n) + 2</code>.
+ * A073457 Numbers n such that phi(n) = pi(n) + 2.
  * @author Georg Fischer
  */
 public class A073457 extends FiniteSequence {

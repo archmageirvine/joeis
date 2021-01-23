@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002126 Number of solutions to <code>n=p+q</code> where p and q are primes or zero.
+ * A002126 Number of solutions to n=p+q where p and q are primes or zero.
  * @author Sean A. Irvine
  */
 public class A002126 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304170 <code>a(n) = 32*3^n + 18*2^n - 116 (n&gt;=1)</code>.
+ * A304170 a(n) = 32*3^n + 18*2^n - 116 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304170 extends GeneratingFunctionSequence {

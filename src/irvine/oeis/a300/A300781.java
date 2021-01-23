@@ -4,7 +4,7 @@ package irvine.oeis.a300;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A300781 Number of log-concave permutations of <code>{1,...,n}</code>.
+ * A300781 Number of log-concave permutations of {1,...,n}.
  * @author Georg Fischer
  */
 public class A300781 extends GeneratingFunctionSequence {

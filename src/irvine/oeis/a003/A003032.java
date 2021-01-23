@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * A003032 Smallest integer m such that the product of every 3 consecutive integers <code>&gt</code>; m has a prime factor <code>&gt; prime(n)</code>.
+ * A003032 Smallest integer m such that the product of every 3 consecutive integers &gt; m has a prime factor &gt; prime(n).
  * @author Sean A. Irvine
  */
 public class A003032 implements Sequence {

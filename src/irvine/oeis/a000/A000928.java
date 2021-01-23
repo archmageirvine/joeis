@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A000928 Irregular primes: primes p such that at least one of the numerators of the Bernoulli numbers <code>B_2, B_4</code>, ..., <code>B_{p-3} (A000367)</code> is divisible by p.
+ * A000928 Irregular primes: primes p such that at least one of the numerators of the Bernoulli numbers B_2, B_4, ..., B_{p-3} (A000367) is divisible by p.
  * @author Sean A. Irvine
  */
 public class A000928 extends A000367 {

@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031047 Position of <code>n-th 1</code> in <code>A031045</code>.
+ * A031047 Position of n-th 1 in A031045.
  * @author Sean A. Irvine
  */
 public class A031047 extends A031045 {

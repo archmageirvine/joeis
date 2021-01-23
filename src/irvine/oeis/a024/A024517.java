@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000404;
 
 /**
- * A024517 Position of <code>2*n^2</code> in <code>A000404</code> (sums of 2 nonzero squares).
+ * A024517 Position of 2*n^2 in A000404 (sums of 2 nonzero squares).
  * @author Sean A. Irvine
  */
 public class A024517 extends A000404 {

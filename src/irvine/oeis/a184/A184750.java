@@ -5,7 +5,7 @@ package irvine.oeis.a184;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A184750 <code>a(n) =</code> largest k such that <code>A000326(n+1) = A000326(n) + (A000326(n) mod k)</code>, or 0 if no such k exists.
+ * A184750 a(n) = largest k such that A000326(n+1) = A000326(n) + (A000326(n) mod k), or 0 if no such k exists.
  * @author Georg Fischer
  */
 public class A184750 extends HolonomicRecurrence {

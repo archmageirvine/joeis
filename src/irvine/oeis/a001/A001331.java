@@ -15,7 +15,7 @@ public class A001331 extends A001329 {
   }
 
   @Override
-  protected Z t(final int[] j) {
+  protected Z fix(final int[] j) {
     Z prod = Z.ONE;
     for (int r = 1; r < j.length; ++r) {
       for (int s = 1; s < j.length; ++s) {

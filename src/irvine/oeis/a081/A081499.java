@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081499 Sum at 45 degrees to horizontal in triangle of <code>A081498</code>.
+ * A081499 Sum at 45 degrees to horizontal in triangle of A081498.
  * @author Sean A. Irvine
  */
 public class A081499 extends LinearRecurrence {

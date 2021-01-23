@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A164508 Number of binary strings of length n with no substrings equal to <code>0101, 0110</code>, or 1001.
+ * A164508 Number of binary strings of length n with no substrings equal to 0101, 0110, or 1001.
  * @author Georg Fischer
  */
 public class A164508 extends GeneratingFunctionSequence {

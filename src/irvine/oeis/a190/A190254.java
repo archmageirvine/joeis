@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190254 Row sums of the Riordan matrix <code>(g(x),x*g(x))</code>, where <code>g(x) = (1-x-sqrt(1-2*x-3*x^2-4*x^3))/(2*x^2*(1+x)) (A190252)</code>.
+ * A190254 Row sums of the Riordan matrix (g(x),x*g(x)), where g(x) = (1-x-sqrt(1-2*x-3*x^2-4*x^3))/(2*x^2*(1+x)) (A190252).
  * @author Georg Fischer
  */
 public class A190254 extends HolonomicRecurrence {

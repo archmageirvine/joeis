@@ -6,7 +6,7 @@ package irvine.oeis.a127;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127154 Number of Dyck paths of semilength n and having no UDUD's starting at level 0; here <code>U=(1,1), D=(1,-1)</code>.
+ * A127154 Number of Dyck paths of semilength n and having no UDUD's starting at level 0; here U=(1,1), D=(1,-1).
  * @author Georg Fischer
  */
 public class A127154 extends HolonomicRecurrence {

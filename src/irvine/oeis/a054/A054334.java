@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054334 1/512 of <code>11th</code> unsigned column of triangle <code>A053120 (T-Chebyshev</code>, rising powers, zeros omitted).
+ * A054334 1/512 of 11th unsigned column of triangle A053120 (T-Chebyshev, rising powers, zeros omitted).
  * @author Georg Fischer
  */
 public class A054334 extends GeneratingFunctionSequence {

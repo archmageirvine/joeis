@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093391 <code>a(n) = floor(n/16) + floor((n+1)/16) + floor((n+2)/16) + floor((n+3)/16)</code>.
+ * A093391 a(n) = floor(n/16) + floor((n+1)/16) + floor((n+2)/16) + floor((n+3)/16).
  * @author Georg Fischer
  */
 public class A093391 extends GeneratingFunctionSequence {

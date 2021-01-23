@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108550 Number of ways of packing a <code>3 X (2n-1)</code> rectangle with dominoes, leaving one space unoccupied.
+ * A108550 Number of ways of packing a 3 X (2n-1) rectangle with dominoes, leaving one space unoccupied.
  * @author Georg Fischer
  */
 public class A108550 extends GeneratingFunctionSequence {

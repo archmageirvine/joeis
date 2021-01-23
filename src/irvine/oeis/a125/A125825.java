@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a128.A128171;
 
 /**
- * A125825 Numbers n such that n divides <code>2^6 + 3^6 + 5^6 + ... + prime(n)^6</code>.
+ * A125825 Numbers m such that m divides 2^6 + 3^6 + 5^6 + ... + prime(m)^6.
  * @author Sean A. Irvine
  */
 public class A125825 extends A128171 {

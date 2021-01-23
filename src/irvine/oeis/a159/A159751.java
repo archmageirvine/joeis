@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159751 Decimal expansion of <code>(51 + 14*sqrt(2))/47</code>.
+ * A159751 Decimal expansion of (51 + 14*sqrt(2))/47.
  * @author Georg Fischer
  */
 public class A159751 extends DecimalExpansionSequence {

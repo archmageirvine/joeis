@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A139732 <code>a(n) = 9^n mod 7^n</code>.
+ * A139732 a(n) = 9^n mod 7^n.
  * @author Georg Fischer
  */
 public class A139732 implements Sequence {

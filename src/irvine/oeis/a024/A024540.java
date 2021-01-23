@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A024540 <code>a(n) = Sum_{k=1..n} floor( 1/{k*sqrt(2)} )</code>, where <code>{x} := x - floor(x)</code>.
+ * A024540 a(n) = Sum_{k=1..n} floor( 1/{k*sqrt(2)} ), where {x} := x - floor(x).
  * @author Sean A. Irvine
  */
 public class A024540 extends PartialSumSequence {

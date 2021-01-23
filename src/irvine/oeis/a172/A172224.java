@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172224 Number of ways to place 6 nonattacking zebras on a <code>6 X n</code> board.
+ * A172224 Number of ways to place 6 nonattacking zebras on a 6 X n board.
  * @author Georg Fischer
  */
 public class A172224 extends GeneratingFunctionSequence {

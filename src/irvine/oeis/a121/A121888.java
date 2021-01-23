@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121888 <code>a(n) = (n^6 - 126*n^5 + 6217*n^4 - 153066*n^3 + 1987786*n^2 - 13055316*n + 34747236)/36</code>.
+ * A121888 a(n) = (n^6 - 126*n^5 + 6217*n^4 - 153066*n^3 + 1987786*n^2 - 13055316*n + 34747236)/36.
  * @author Georg Fischer
  */
 public class A121888 extends HolonomicRecurrence {

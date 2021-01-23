@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024414 Positions of even numbers in <code>A024412</code>.
+ * A024414 Positions of even numbers in A024412.
  * @author Sean A. Irvine
  */
 public class A024414 extends A024412 {

@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143097 <code>3*k - 2</code> interleaved with <code>3*k - 1</code> and <code>3*k</code>.
+ * A143097 3*k - 2 interleaved with 3*k - 1 and 3*k.
  * @author Georg Fischer
  */
 public class A143097 extends GeneratingFunctionSequence {

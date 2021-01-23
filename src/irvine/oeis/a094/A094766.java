@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094766 Trajectory of 11 under repeated application of the map <code>n -&gt; n + 2*square</code> excess of <code>n</code> (see <code>A094765)</code>.
+ * A094766 Trajectory of 11 under repeated application of the map n -&gt; n + 2*square excess of n (see A094765).
  * @author Georg Fischer
  */
 public class A094766 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A237051 Smallest set of distinct numbers with property that the sum of their reciprocals is 1 and each number is of the form <code>p^i*q^j</code> where p and q are distinct primes and i and j are positive.
+ * A237051 Smallest set of distinct numbers such that the sum of their reciprocals is 1 and each number is of the form p^i*q^j where p and q are distinct primes and i and j are positive.
  * @author Georg Fischer
  */
 public class A237051 extends FiniteSequence {

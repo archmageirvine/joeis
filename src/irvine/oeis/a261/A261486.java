@@ -4,7 +4,7 @@ package irvine.oeis.a261;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A261486 Number of set partitions of <code>[n]</code> into exactly ten parts such that no part contains two elements with a circular distance less than three.
+ * A261486 Number of set partitions of [n] into exactly ten parts such that no part contains two elements with a circular distance less than three.
  * @author Georg Fischer
  */
 public class A261486 extends GeneratingFunctionSequence {

@@ -97,9 +97,10 @@ public class A005316 implements Sequence {
    * Each half only uses even numbered bits, so they can be interleaved with a simple bit shift.
    * @param lower lower half
    * @param upper upper half
+   * @return packed value
    */
   protected static Z pack(final Z lower, final Z upper) {
-    if (lower.equals(Z.ZERO) || upper.equals(Z.ZERO)) {
+    if (lower.isZero() || upper.isZero()) {
       throw new IllegalStateException("invalid state");
     }
     return lower.or(upper.multiply2());
@@ -131,6 +132,7 @@ public class A005316 implements Sequence {
 
     /**
      * Constructor.
+     * @param layerIndex layer index
      */
     protected MeanderProblem(final int layerIndex) {
       mLayerIndex = layerIndex;
@@ -197,7 +199,7 @@ public class A005316 implements Sequence {
         Z bit = Z.ONE;
         while (n >= 0) {
           bit = bit.shiftLeft(WORD_SHIFT);
-          n += Z.ZERO.equals(v.and(bit)) ? 1 : -1;
+          n += v.and(bit).isZero() ? 1 : -1;
         }
         v = v.xor(bit);
       }
@@ -224,6 +226,7 @@ public class A005316 implements Sequence {
      * that in a few cases allows an extra term to be computed)
      * @param lower lower half
      * @param upper upper half
+     * @return packed value
      */
     protected Z packSymmetrical(final Z lower, final Z upper) {
       return lower.compareTo(upper) < 0 ? (upper.or(lower.multiply2())) : (lower.or(upper.multiply2()));
@@ -233,6 +236,8 @@ public class A005316 implements Sequence {
      * Extracts the lower arch configuration from an encoding.
      * The upper arch configuration can the be obtained by subtraction.
      * This undoes the encoding of pack.
+     * @param v encoding
+     * @return lower arch
      */
     protected Z extractLower(final Z v) {
       Z mask = ODD_BITS;
@@ -279,6 +284,8 @@ public class A005316 implements Sequence {
 
     /**
      * Initial states used to enumerate semi-meanders. (A000682)
+     * @return meanders
+     *
      */
     public Iterable<Z> semiMeanderInitialStates() {
       final ArrayList<Z> res = new ArrayList<>();

@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A023960 n-th bit in binary expansion of n-th root of <code>n</code>.
+ * A023960 n-th bit in binary expansion of n-th root of n.
  * @author Sean A. Irvine
  */
 public class A023960 implements Sequence {

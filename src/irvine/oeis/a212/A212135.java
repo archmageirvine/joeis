@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212135 Number of <code>(w,x,y,z)</code> with all terms in <code>{1,...,n}</code> and median&lt;mean.
+ * A212135 Number of (w,x,y,z) with all terms in {1,...,n} and median&lt;mean.
  * @author Georg Fischer
  */
 public class A212135 extends HolonomicRecurrence {

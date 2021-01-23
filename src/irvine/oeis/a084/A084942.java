@@ -6,7 +6,7 @@ package irvine.oeis.a084;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A084942 Enneagorials: n-th polygorial for <code>k=9</code>.
+ * A084942 Enneagorials: n-th polygorial for k=9.
  * @author Georg Fischer
  */
 public class A084942 extends HolonomicRecurrence {

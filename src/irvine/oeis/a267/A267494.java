@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A267494 Autobiographical numbers in base <code>6</code>: numbers which are fixed or belong to a cycle under the operator T.
+ * A267494 Autobiographical numbers in base 6: numbers which are fixed or belong to a cycle under the operator T.
  * @author Georg Fischer
  */
 public class A267494 extends FiniteSequence {

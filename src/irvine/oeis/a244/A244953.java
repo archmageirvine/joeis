@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244953 <code>a(n) = Sum_{i=0..n} (-i mod 4)</code>.
+ * A244953 a(n) = Sum_{i=0..n} (-i mod 4).
  * @author Sean A. Irvine
  */
 public class A244953 extends LinearRecurrence {

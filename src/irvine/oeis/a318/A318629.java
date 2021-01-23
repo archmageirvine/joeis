@@ -5,7 +5,7 @@ package irvine.oeis.a318;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318629 Number of 8-member subsets of <code>[8*n]</code> whose elements sum to a multiple of <code>n</code>.
+ * A318629 Number of 8-member subsets of [8*n] whose elements sum to a multiple of n.
  * @author Georg Fischer
  */
 public class A318629 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102717 "Lightest" sequence built with one <code>"1"</code>, two <code>"2"</code>, three <code>"3"</code>, ..., nine <code>"9"</code> (and no <code>"0")</code>. The weight of such a sequence is the total sum of its integers [the sequence is finite, by definition and <code>a(n+1)</code> must be <code>&gt; a(n)]</code>.
+ * A102717 "Lightest" sequence built with one "1", two "2", three "3", ..., nine "9" (and no "0"). The weight of such a sequence is the total sum of its integers [the sequence is finite, by definition and a(n+1) must be &gt; a(n)].
  * @author Georg Fischer
  */
 public class A102717 extends FiniteSequence {

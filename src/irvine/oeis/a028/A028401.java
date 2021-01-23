@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028401 The <code>(2^n+1)-th</code> triangular number <code>(cf. A000217)</code>.
+ * A028401 The (2^n+1)-th triangular number (cf. A000217).
  * @author Sean A. Irvine
  */
 public class A028401 extends LinearRecurrence {

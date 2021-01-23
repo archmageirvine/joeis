@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004055 <code>((p-1)/2)! mod</code> p for odd primes p.
+ * A004055 ((p-1)/2)! mod p for odd primes p.
  * @author Sean A. Irvine
  */
 public class A004055 implements Sequence {

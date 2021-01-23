@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076921 Smallest number such that the highest common factor of pair of successive terms follows the pattern <code>1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13</code>, ..., i.e., <code>b(2n-1) = b(2n) = n</code> given by <code>A004526</code>.
+ * A076921 Smallest number such that the highest common factor of pair of successive terms follows the pattern 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, ..., i.e., b(2n-1) = b(2n) = n given by A004526.
  * @author Georg Fischer
  */
 public class A076921 extends LinearRecurrence {

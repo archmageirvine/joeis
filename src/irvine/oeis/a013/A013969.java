@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013969 <code>a(n) = sigma_21(n)</code>, the sum of the 21st powers of the divisors of <code>n</code>.
+ * A013969 a(n) = sigma_21(n), the sum of the 21st powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013969 implements Sequence {

@@ -17,7 +17,7 @@ public class A019544 implements Sequence {
       final Z s = Z.valueOf(++mN).square();
       Z t = s;
       boolean ok = true;
-      while (!Z.ZERO.equals(t)) {
+      while (!t.isZero()) {
         final long r = t.mod(10);
         if (r != 0 && r != 1 && r != 4 && r != 9) {
           ok = false;

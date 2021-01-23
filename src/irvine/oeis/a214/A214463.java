@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214463 Degrees of irreducible representations of Suzuki group <code>Sz(8)</code>.
+ * A214463 Degrees of irreducible representations of Suzuki group Sz(8).
  * @author Georg Fischer
  */
 public class A214463 extends FiniteSequence {

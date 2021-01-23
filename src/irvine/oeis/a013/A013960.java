@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013960 <code>a(n) = sigma_12(n)</code>, the sum of the <code>12th</code> powers of the divisors of <code>n</code>.
+ * A013960 a(n) = sigma_12(n), the sum of the 12th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013960 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A102762 Curvatures of (largest) kissing circles along the circumference, starting with curvature <code>= -1</code> and 2.
+ * A102762 Curvatures of (largest) kissing circles along the circumference, starting with curvature = -1 and 2.
  * @author Georg Fischer
  */
 public class A102762 extends GeneratingFunctionSequence {

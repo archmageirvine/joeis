@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082999 <code>a(n) = A046195(n) mod 5</code>.
+ * A082999 a(n) = A046195(n) mod 5.
  * @author Georg Fischer
  */
 public class A082999 extends LinearRecurrence {

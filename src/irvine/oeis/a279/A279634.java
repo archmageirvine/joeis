@@ -4,7 +4,7 @@ package irvine.oeis.a279;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A279634 Coefficients in the expansion of <code>1/([r] + [2r]x + [3r]x^2 + ...); [ ] =</code> floor, r <code>= 3/2</code>.
+ * A279634 Coefficients in the expansion of 1/([r] + [2r]x + [3r]x^2 + ...); [ ] = floor, r = 3/2.
  * @author Georg Fischer
  */
 public class A279634 extends GeneratingFunctionSequence {

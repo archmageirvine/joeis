@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108650 <code>a(n) = (n+1)^2*(n+2)*(n+3)*(3*n+4)/24</code>.
+ * A108650 a(n) = (n+1)^2*(n+2)*(n+3)*(3*n+4)/24.
  * @author Georg Fischer
  */
 public class A108650 extends HolonomicRecurrence {

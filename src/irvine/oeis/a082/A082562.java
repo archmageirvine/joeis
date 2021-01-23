@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082562 <code>a(n) =</code> number of values of m such that m can be expressed as the sum of distinct odd numbers with largest odd number in the sum <code>= 2n+1</code>.
+ * A082562 a(n) = number of values of m such that m can be expressed as the sum of distinct odd numbers with largest odd number in the sum = 2n+1.
  * @author Georg Fischer
  */
 public class A082562 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a220;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A220362 <code>a(n) = Fibonacci(n-1) * Fibonacci(n) * Fibonacci(n+2)</code>.
+ * A220362 a(n) = Fibonacci(n-1) * Fibonacci(n) * Fibonacci(n+2).
  * @author Georg Fischer
  */
 public class A220362 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155046 List of pairs: first pair is <code>(1,1)</code>; then follow <code>(x,y)</code> with <code>(x+2y, x+y)</code>.
+ * A155046 List of pairs: first pair is (1,1); then follow (x,y) with (x+2y, x+y).
  * @author Sean A. Irvine
  */
 public class A155046 extends LinearRecurrence {

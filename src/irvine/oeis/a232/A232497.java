@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A232497 Number of tilings of a <code>4 X n</code> rectangle using L and Z tetrominoes.
+ * A232497 Number of tilings of a 4 X n rectangle using L and Z tetrominoes.
  * @author Georg Fischer
  */
 public class A232497 extends GeneratingFunctionSequence {

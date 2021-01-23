@@ -6,7 +6,7 @@ package irvine.oeis.a049;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A049610 <code>a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3))</code>.
+ * A049610 a(n) = Sum_{k=0..floor(n/2)} k*binomial(n,2*k) = floor(n*2^(n-3)).
  * @author Georg Fischer
  */
 public class A049610 extends GeneratingFunctionSequence {

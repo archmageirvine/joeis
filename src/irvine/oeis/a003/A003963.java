@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003963 Fully multiplicative with <code>a(p) =</code> k if p is the k-th prime.
+ * A003963 Fully multiplicative with a(p) = k if p is the k-th prime.
  * @author Sean A. Irvine
  */
 public class A003963 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309300 <code>(1/8)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by eight.
+ * A309300 (1/8) times the sum of the elements of all subsets of [n] whose sum is divisible by eight.
  * @author Georg Fischer
  */
 public class A309300 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A106833 <code>3n</code> and <code>2n</code>, alternating.
+ * A106833 3n and 2n, alternating.
  * @author Georg Fischer
  */
 public class A106833 extends GeneratingFunctionSequence {

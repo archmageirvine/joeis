@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007972 Number of permutations that are 2 "block reversals" away from <code>12...n</code>.
+ * A007972 Number of permutations that are 2 "block reversals" away from 12...n.
  * @author Sean A. Irvine
  */
 public class A007972 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A238387 Decimal expansion of <code>(1 + 4*e^(-3/2))/(3*sqrt(2*Pi))</code>.
+ * A238387 Decimal expansion of (1 + 4*e^(-3/2))/(3*sqrt(2*Pi)).
  * @author Georg Fischer
  */
 public class A238387 extends DecimalExpansionSequence {

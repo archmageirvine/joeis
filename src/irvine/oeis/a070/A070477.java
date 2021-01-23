@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A070477 <code>a(n) = n^3 mod 15</code>.
+ * A070477 a(n) = n^3 mod 15.
  * @author Georg Fischer
  */
 public class A070477 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106791 Sum of two consecutive squares of Lucas 4-step numbers <code>(A073817)</code>.
+ * A106791 Sum of two consecutive squares of Lucas 4-step numbers (A073817).
  * @author Sean A. Irvine
  */
 public class A106791 extends LinearRecurrence {

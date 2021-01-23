@@ -6,7 +6,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307618 A Calabi-Yau period integral: <code>a(n) = C(4*n,2*n)*C(2*n,n)^3</code>.
+ * A307618 A Calabi-Yau period integral: a(n) = C(4*n,2*n)*C(2*n,n)^3.
  * @author Georg Fischer
  */
 public class A307618 extends HolonomicRecurrence {

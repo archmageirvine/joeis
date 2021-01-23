@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A147618 The 3rd Witt transform of <code>A000217</code>.
+ * A147618 The 3rd Witt transform of A000217.
  * @author Georg Fischer
  */
 public class A147618 extends GeneratingFunctionSequence {

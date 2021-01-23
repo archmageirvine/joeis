@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005162 Number of alternating sign <code>n X n</code> matrices symmetric with respect to both diagonals.
+ * A005162 Number of alternating sign n X n matrices symmetric with respect to both diagonals.
  * @author Sean A. Irvine
  */
 public class A005162 implements Sequence {

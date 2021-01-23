@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025591 Maximal coefficient of <code>Product_{k&lt;=n} (x^k+1)</code>. Number of solutions to <code>+- 1 +- 2 +- 3 +- ... +- n = 0</code> or 1.
+ * A025591 Maximal coefficient of Product_{k&lt;=n} (1 + x^k). Number of solutions to +- 1 +- 2 +- 3 +- ... +- n = 0 or 1.
  * @author Sean A. Irvine
  */
 public class A025591 extends MemoryFunction2<Long, Z> implements Sequence {

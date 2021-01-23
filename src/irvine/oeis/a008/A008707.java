@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008707 <code>a(n) = 10</code> in base <code>10-n</code>.
+ * A008707 a(n) = 10 in base 10-n.
  * @author Sean A. Irvine
  */
 public class A008707 extends FiniteSequence {

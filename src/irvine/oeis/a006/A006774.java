@@ -12,7 +12,7 @@ import irvine.util.Point;
  */
 public class A006774 implements Sequence {
 
-  private int mN = 4;
+  protected int mN = -2;
 
   private final HashSet<Point> mVisited = new HashSet<>();
 
@@ -27,6 +27,8 @@ public class A006774 implements Sequence {
       return x == 0 && y == 0 ? Z.ONE : Z.ZERO;
     } else if (y < 0 || (y == 0 && x > 0)) { // Make sure our start point is least possible
       return Z.ZERO;
+    } else if (Math.abs(x) + Math.abs(y) > n) {
+      return Z.ZERO; // Can never make it back in remaining steps
     } else if (mVisited.contains(v)) {
       return Z.ZERO;
     } else {
@@ -40,6 +42,9 @@ public class A006774 implements Sequence {
   @Override
   public Z next() {
     mN += 2;
+    if (mN == 0) {
+      return Z.ONE;
+    }
     return b(mN - 2, 1, 1);
   }
 }

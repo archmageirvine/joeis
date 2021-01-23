@@ -5,7 +5,7 @@ package irvine.oeis.a299;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A299507 <code>a(n) = (-1)^n*hypergeom([-n, n], [1], 4)</code>.
+ * A299507 a(n) = (-1)^n*hypergeom([-n, n], [1], 4).
  * @author Georg Fischer
  */
 public class A299507 extends HolonomicRecurrence {

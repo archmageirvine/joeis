@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296361 Number of monohedral disk tilings of type <code>C^t_{3,n}</code>.
+ * A296361 Number of monohedral disk tilings of type C^t_{3,n}.
  * @author Georg Fischer
  */
 public class A296361 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A124099 <code>Sum_(x^i*y^j*z^k)</code> with i <code>+ j + k =</code> m and <code>(x</code>, y, <code>z) =</code> the primitive Pythagorean triple <code>(5, 12, 13)</code>.
+ * A124099 Sum_(x^i*y^j*z^k) with i + j + k = m and (x, y, z) = the primitive Pythagorean triple (5, 12, 13).
  * @author Georg Fischer
  */
 public class A124099 extends GeneratingFunctionSequence {

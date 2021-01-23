@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000864 Deceptive nonprimes: composite numbers n such that n divides the repunit <code>R_{n-1}</code>.
+ * A000864 Deceptive nonprimes: composite numbers n such that n divides the repunit R_{n-1}.
  * @author Sean A. Irvine
  */
 public class A000864 implements Sequence {

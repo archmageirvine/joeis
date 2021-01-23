@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030454 Make a table giving binary expansion of <code>zeta(m)</code> for m <code>= 2, 3</code>, ...; <code>a(n) =</code> number of <code>1</code>'s in n-th column of table (after decimal point).
+ * A030454 Make a table giving binary expansion of zeta(m) for m = 2, 3, ...; a(n) = number of 1's in n-th column of table (after decimal point).
  * @author Sean A. Irvine
  */
 public class A030454 implements Sequence {
@@ -33,7 +33,7 @@ public class A030454 implements Sequence {
         mZetaList.add(Zeta.zeta(m).subtract(CR.ONE));
       }
       final Z scaled = mZetaList.get(m).shiftLeft(mN).floor();
-      if (Z.ZERO.equals(scaled)) {
+      if (scaled.isZero()) {
         break; // We will never see another 1 in this column
       }
       if (!scaled.isEven()) {

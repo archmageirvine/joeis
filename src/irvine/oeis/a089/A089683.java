@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089683 <code>a(n) = 3^(4n)</code>.
+ * A089683 a(n) = 3^(4n).
  * @author Georg Fischer
  */
 public class A089683 extends GeneratingFunctionSequence {

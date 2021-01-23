@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081032 Positions of black keys on piano keyboard, start with <code>A0 =</code> the 1st key.
+ * A081032 Positions of black keys on piano keyboard, start with A0 = the 1st key.
  * @author Georg Fischer
  */
 public class A081032 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178410 Number of ways to place 8 nonattacking wazirs on an <code>8 X n</code> board.
+ * A178410 Number of ways to place 8 nonattacking wazirs on an 8 X n board.
  * @author Georg Fischer
  */
 public class A178410 extends GeneratingFunctionSequence {

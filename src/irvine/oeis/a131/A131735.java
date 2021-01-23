@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131735 Hexaperiodic <code>0, 0, 1, 1, 1, 1</code>.
+ * A131735 Hexaperiodic 0, 0, 1, 1, 1, 1.
  * @author Sean A. Irvine
  */
 public class A131735 extends LinearRecurrence {

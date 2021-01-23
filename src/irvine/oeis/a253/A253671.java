@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253671 <code>a(n) = floor(A000111(n+1)/A000111(n))</code>.
+ * A253671 a(n) = floor(A000111(n+1)/A000111(n)).
  * @author Georg Fischer
  */
 public class A253671 extends GeneratingFunctionSequence {

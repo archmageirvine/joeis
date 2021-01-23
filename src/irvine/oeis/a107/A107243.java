@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107243 Sum of squares of pentanacci numbers <code>(A001591)</code>.
+ * A107243 Sum of squares of pentanacci numbers (A001591).
  * @author Sean A. Irvine
  */
 public class A107243 extends LinearRecurrence {

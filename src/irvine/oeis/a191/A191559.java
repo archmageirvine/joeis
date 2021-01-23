@@ -4,7 +4,7 @@ package irvine.oeis.a191;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A191559 <code>a(n) = 25^(4*n+1)</code>.
+ * A191559 a(n) = 25^(4*n+1).
  * @author Georg Fischer
  */
 public class A191559 extends GeneratingFunctionSequence {

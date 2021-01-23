@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.math.z.Z;
 
 /**
- * A175499 <code>a(n) = A175498(n+1)-A175498(n)</code>.
+ * A175499 a(n) = A175498(n+1)-A175498(n).
  * @author Sean A. Irvine
  */
 public class A175499 extends A175498 {

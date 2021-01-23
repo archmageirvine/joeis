@@ -6,7 +6,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152106 <code>a(n) = (11^n + 7^n)/2</code>.
+ * A152106 a(n) = (11^n + 7^n)/2.
  * @author Georg Fischer
  */
 public class A152106 extends HolonomicRecurrence {

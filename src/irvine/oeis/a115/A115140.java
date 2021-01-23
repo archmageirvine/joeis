@@ -6,7 +6,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115140 O.g.f. inverse of Catalan <code>A000108</code> o.g.f.
+ * A115140 O.g.f. inverse of Catalan A000108 o.g.f.
  * @author Georg Fischer
  */
 public class A115140 extends HolonomicRecurrence {

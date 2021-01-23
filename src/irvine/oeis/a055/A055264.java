@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055264 Possible values of <code>A055263</code>; numbers equal to <code>0, 1, 3</code> or 6 modulo 9.
+ * A055264 Possible values of A055263; numbers equal to 0, 1, 3 or 6 modulo 9.
  * @author Georg Fischer
  */
 public class A055264 extends GeneratingFunctionSequence {

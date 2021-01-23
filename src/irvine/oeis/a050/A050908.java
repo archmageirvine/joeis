@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050908 Numbers n such that <code>299*2^n-1</code> is prime.
+ * A050908 Numbers n such that 299*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050908 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050908() {
-    super(1, 4, 299, 2, -1, 0);
+    super(1, 4, 299, 2, -1);
   }
 }

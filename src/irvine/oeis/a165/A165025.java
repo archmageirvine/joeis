@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165025 Number of cycles of n-digit numbers (including fixed points) under the <code>base-4</code> Kaprekar map <code>A165012</code>.
+ * A165025 Number of cycles of n-digit numbers (including fixed points) under the base-4 Kaprekar map A165012.
  * @author Georg Fischer
  */
 public class A165025 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105218 <code>a(n) = Sum_{k=0..n} C(n,k)^2*(n-k)!*k^3</code>.
+ * A105218 a(n) = Sum_{k=0..n} C(n,k)^2*(n-k)!*k^3.
  * @author Georg Fischer
  */
 public class A105218 extends HolonomicRecurrence {

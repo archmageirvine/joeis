@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133129 Number of black/white colorings of a <code>3 X n</code> rectangle which have no monochromatic 2 by 2 subsquares.
+ * A133129 Number of black/white colorings of a 3 X n rectangle which have no monochromatic 2 by 2 subsquares.
  * @author Georg Fischer
  */
 public class A133129 extends GeneratingFunctionSequence {

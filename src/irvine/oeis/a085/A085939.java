@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085939 Horadam sequence <code>(0,1,6,4)</code>.
+ * A085939 Horadam sequence (0,1,6,4).
  * @author Sean A. Irvine
  */
 public class A085939 extends LinearRecurrence {

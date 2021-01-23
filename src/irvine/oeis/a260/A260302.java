@@ -5,7 +5,7 @@ package irvine.oeis.a260;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A260302 Maximum water retention of a number octagon of order <code>n</code>.
+ * A260302 Maximum water retention of a number octagon of order n.
  * @author Georg Fischer
  */
 public class A260302 extends HolonomicRecurrence {

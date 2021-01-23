@@ -4,7 +4,7 @@ package irvine.oeis.a269;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A269701 Cyclic Fibonacci sequence, restricted to <code>maximum=6</code>.
+ * A269701 Cyclic Fibonacci sequence, restricted to maximum=6.
  * @author Georg Fischer
  */
 public class A269701 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a184;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A184533 <code>a(n) = floor(1/{(2+n^3)^(1/3)})</code>, where <code>{}=fractional</code> part.
+ * A184533 a(n) = floor(1/{(2+n^3)^(1/3)}), where {}=fractional part.
  * @author Georg Fischer
  */
 public class A184533 extends HolonomicRecurrence {

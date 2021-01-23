@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A273146 Partial sums of the number of active <code>(ON,black)</code> cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule <code>597"</code>, based on the 5-celled von Neumann neighborhood.
+ * A273146 Partial sums of the number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 597", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A273146 extends GeneratingFunctionSequence {

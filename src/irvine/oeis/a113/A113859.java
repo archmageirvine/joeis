@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A113859 Expansion of <code>(7-14*x+6*x^2)/((1-x)*(2*x^2-4*x+1))</code>; related to the binomial transform of Pell numbers <code>A000129</code> (see formula and comment for <code>A007070)</code>.
+ * A113859 Expansion of (7-14*x+6*x^2)/((1-x)*(2*x^2-4*x+1)); related to the binomial transform of Pell numbers A000129 (see formula and comment for A007070).
  * @author Georg Fischer
  */
 public class A113859 extends GeneratingFunctionSequence {

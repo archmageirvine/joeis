@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259290 Number of <code>(n+1) X (1+1) 0..1</code> arrays with each <code>2 X 2</code> subblock having clockwise pattern <code>0001 0101</code> or 0111.
+ * A259290 Number of (n+1) X (1+1) 0..1 arrays with each 2 X 2 subblock having clockwise pattern 0001 0101 or 0111.
  * @author Georg Fischer
  */
 public class A259290 extends GeneratingFunctionSequence {

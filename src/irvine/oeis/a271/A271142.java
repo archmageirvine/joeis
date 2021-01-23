@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A271142 A <code>3 X 3</code> semimagic square of odd squares, read by rows.
+ * A271142 A 3 X 3 semimagic square of odd squares, read by rows.
  * @author Georg Fischer
  */
 public class A271142 extends FiniteSequence {

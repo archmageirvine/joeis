@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A079126 Triangle <code>T(n,k)</code> of numbers of partitions of n into distinct positive integers <code>&lt;=</code> k, <code>0&lt;=k&lt;=n</code>.
+ * A079126 Triangle T(n,k) of numbers of partitions of n into distinct positive integers &lt;= k, 0&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A079126 implements Sequence {

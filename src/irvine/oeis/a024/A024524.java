@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024524 4th elementary symmetric function of <code>{1, p(1), p(2)</code>, ..., <code>p(n-1)}</code>, where <code>p(0) = 1</code>.
+ * A024524 4th elementary symmetric function of {1, p(1), p(2), ..., p(n-1)}, where p(0) = 1.
  * @author Sean A. Irvine
  */
 public class A024524 implements Sequence {

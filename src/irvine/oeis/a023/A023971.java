@@ -6,12 +6,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023971 First bit in fractional part of binary expansion of 4th root of <code>n</code>.
+ * A023971 First bit in fractional part of binary expansion of 4th root of n.
  * @author Sean A. Irvine
  */
 public class A023971 implements Sequence {
 
-  private static final CR R = CR.valueOf(4).inverse();
+  private static final CR R = CR.FOUR.inverse();
   private long mN = 0;
 
   @Override

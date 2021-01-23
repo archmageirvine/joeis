@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014983 <code>a(n) = (1 - (-3)^n)/4</code>.
+ * A014983 a(n) = (1 - (-3)^n)/4.
  * @author Sean A. Irvine
  */
 public class A014983 implements Sequence {

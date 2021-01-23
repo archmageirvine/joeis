@@ -6,7 +6,7 @@ package irvine.oeis.a151;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A151575 G.f.: <code>(1+x)/(1+x-2*x^2)</code>.
+ * A151575 G.f.: (1+x)/(1+x-2*x^2).
  * @author Georg Fischer
  */
 public class A151575 extends GeneratingFunctionSequence {

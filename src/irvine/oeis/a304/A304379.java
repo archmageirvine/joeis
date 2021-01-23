@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304379 <code>a(n) = 256n^2 - 828n + 656 (n&gt;=1)</code>.
+ * A304379 a(n) = 256n^2 - 828n + 656 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304379 extends GeneratingFunctionSequence {

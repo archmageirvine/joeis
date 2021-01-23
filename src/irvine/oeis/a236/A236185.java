@@ -5,7 +5,7 @@ package irvine.oeis.a236;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A236185 Differences between terms of compacting Eratosthenes sieve for <code>prime(4) = 7</code>.
+ * A236185 Differences between terms of compacting Eratosthenes sieve for prime(4) = 7.
  * @author Georg Fischer
  */
 public class A236185 extends HolonomicRecurrence {

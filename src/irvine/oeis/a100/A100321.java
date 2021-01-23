@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100321 The trinomial transform <code>(A027907)</code> gives powers of 2, while the trinomial transform of this sequence shift one place left gives powers of 3.
+ * A100321 The trinomial transform (A027907) gives powers of 2, while the trinomial transform of this sequence shift one place left gives powers of 3.
  * @author Georg Fischer
  */
 public class A100321 extends GeneratingFunctionSequence {

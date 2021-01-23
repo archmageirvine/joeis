@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053335 <code>a(n)</code> contains n digits (either <code>'3'</code> or <code>'6')</code> and is divisible by <code>2^n</code>.
+ * A053335 a(n) contains n digits (either '3' or '6') and is divisible by 2^n.
  * @author Sean A. Irvine
  */
 public class A053335 implements Sequence {
@@ -18,7 +18,7 @@ public class A053335 implements Sequence {
     mS = mS == null ? Z.ONE : mS.multiply(10);
     mT = mT.multiply2();
     final Z a = mS.multiply(3).add(mA);
-    if (Z.ZERO.equals(a.mod(mT))) {
+    if (a.mod(mT).isZero()) {
       mA = a;
     } else {
       mA = mS.multiply(6).add(mA);

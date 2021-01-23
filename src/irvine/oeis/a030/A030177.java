@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030177 When squared gives number composed of digits <code>{4,5,6}</code>.
+ * A030177 When squared gives number composed of digits {4,5,6}.
  * @author Sean A. Irvine
  */
 public class A030177 implements Sequence {
@@ -16,7 +16,7 @@ public class A030177 implements Sequence {
   private int mIndex = -1;
 
   private boolean is456(Z n) {
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
       if (qr[1].compareTo(Z.THREE) <= 0 || qr[1].compareTo(Z.SIX) > 0) {
         return false;

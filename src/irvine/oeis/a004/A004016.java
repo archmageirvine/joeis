@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002324;
 
 /**
- * A004016 Theta series of planar hexagonal lattice <code>A_2</code>.
+ * A004016 Theta series of planar hexagonal lattice A_2.
  * @author Sean A. Irvine
  */
 public class A004016 extends A002324 {

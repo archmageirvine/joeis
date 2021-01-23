@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A171522 Denominator of <code>1/n^2-1/(n+2)^2</code>.
+ * A171522 Denominator of 1/n^2-1/(n+2)^2.
  * @author Sean A. Irvine
  */
 public class A171522 extends LinearRecurrence {

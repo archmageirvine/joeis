@@ -5,13 +5,13 @@ package irvine.oeis.a323;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A323004 Numbers k such that <code>359*2^k+1</code> is prime.
+ * A323004 Numbers k such that 359*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A323004 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A323004() {
-    super(1, 1, 359, 2, +1, 0);
+    super(1, 1, 359, 2, 1);
   }
 }

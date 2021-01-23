@@ -6,7 +6,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064346 Generalized Catalan numbers <code>C(8,8; n)</code>.
+ * A064346 Generalized Catalan numbers C(8,8; n).
  * @author Georg Fischer
  */
 public class A064346 extends HolonomicRecurrence {

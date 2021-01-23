@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A110202 <code>a(n) =</code> sum of squares of numbers <code>&lt; 2^n</code> having exactly 2 ones in their binary representation.
+ * A110202 a(n) = sum of squares of numbers &lt; 2^n having exactly 2 ones in their binary representation.
  * @author Georg Fischer
  */
 public class A110202 extends GeneratingFunctionSequence {

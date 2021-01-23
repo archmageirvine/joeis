@@ -18,8 +18,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(CoordSetGenTest.class);
     suite.addTestSuite(NRot90CornerCounterTest.class);
     suite.addTestSuite(PolyiamondTest.class);
-    suite.addTestSuite(PolyominoCounterTest.class);
-    suite.addTestSuite(PolyominoTest.class);
     suite.addTestSuite(PolySideTest.class);
     suite.addTestSuite(Rot180MidSideCounterTest.class);
     suite.addTestSuite(SquareTest.class);

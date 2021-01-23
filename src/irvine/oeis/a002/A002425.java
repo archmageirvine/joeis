@@ -7,7 +7,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 
 /**
- * A002425 Denominator of <code>Pi^(2n)/(Gamma(2n)*(1-2^(-2n))*Zeta(2n))</code>.
+ * A002425 Denominator of Pi^(2n)/(Gamma(2n)*(1-2^(-2n))*zeta(2n)).
  * @author Sean A. Irvine
  */
 public class A002425 extends A001511 {

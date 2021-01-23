@@ -226,7 +226,7 @@ public class Fast extends AbstractPrime implements Serializable {
 
     // test for a perfect square
     final Z[] s = n.sqrtAndRemainder();
-    if (Z.ZERO.equals(s[1])) {
+    if (s[1].isZero()) {
       return false;
     }
 
@@ -242,7 +242,7 @@ public class Fast extends AbstractPrime implements Serializable {
     final Z l2 = Z.ONE.shiftLeft(l);
     if (k.compareTo(l2) <= 0) {
       // if 3 does not divide k, then do this test first
-      if (!k.mod(Z.THREE).equals(Z.ZERO)) {
+      if (!k.mod(Z.THREE).isZero()) {
         return Z.THREE.modPow(n1r, n).equals(n1);
       }
 
@@ -252,7 +252,7 @@ public class Fast extends AbstractPrime implements Serializable {
       Z base = Z.THREE;
       while (true) {
         base = base.add(Z.TWO);
-        if (base.jacobi(n) == -1 && !k.mod(base).equals(Z.ZERO)) {
+        if (base.jacobi(n) == -1 && !k.mod(base).isZero()) {
           return base.modPow(n1r, n).equals(n1); // congruent -1
         }
       }

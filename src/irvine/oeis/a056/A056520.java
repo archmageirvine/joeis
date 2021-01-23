@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A056520 <code>(n+2)*(2*n^2-n+3)/6</code>.
+ * A056520 a(n) = (n + 2)*(2*n^2 - n + 3)/6.
  * @author Georg Fischer
  */
 public class A056520 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176974 First exponent n to generate maximum remainder when <code>(a + 1)^n + (a - 1)^n</code> is divided by <code>a^2</code> for variable n and <code>a&gt;2</code>.
+ * A176974 First exponent n to generate maximum remainder when (a + 1)^n + (a - 1)^n is divided by a^2 for variable n and a&gt;2.
  * @author Sean A. Irvine
  */
 public class A176974 extends LinearRecurrence {

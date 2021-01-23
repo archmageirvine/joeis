@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050848 Numbers k such that <code>193*2^k-1</code> is prime.
+ * A050848 Numbers k such that 193*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050848 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050848() {
-    super(1, 3, 193, 2, -1, 0);
+    super(1, 3, 193, 2, -1);
   }
 }

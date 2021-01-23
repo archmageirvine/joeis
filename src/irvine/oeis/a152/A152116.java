@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152116 Sixth degree product sequence: <code>a(n) = product( 1 +4*cos(k*Pi/n)^2 +16*cos(k*Pi/n)^4 +64*cos(k*Pi/n)^6, k=1..(n-1)/2 )</code>.
+ * A152116 Sixth degree product sequence: a(n) = product( 1 +4*cos(k*Pi/n)^2  +16*cos(k*Pi/n)^4 +64*cos(k*Pi/n)^6, k=1..(n-1)/2 ).
  * @author Georg Fischer
  */
 public class A152116 extends GeneratingFunctionSequence {

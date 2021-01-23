@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308385 <code>a(n)</code> is the last square visited by fers moves on a spirally numbered <code>(2n-1) X (2n-1)</code> board, moving to the lowest available unvisited square at each step.
+ * A308385 a(n) is the last square visited by fers moves on a spirally numbered (2n-1) X (2n-1) board, moving to the lowest available unvisited square at each step.
  * @author Georg Fischer
  */
 public class A308385 extends HolonomicRecurrence {

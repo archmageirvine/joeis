@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030800 <code>a(n) = floor(exp(19/24)*n!)</code>.
+ * A030800 a(n) = floor(exp(19/24)*n!).
  * @author Sean A. Irvine
  */
 public class A030800 implements Sequence {

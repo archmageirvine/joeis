@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007724 Even minus odd extensions of truncated <code>3 X 2n</code> grid diagram.
+ * A007724 Even minus odd extensions of truncated 3 X 2n grid diagram.
  * @author Sean A. Irvine
  */
 public class A007724 implements Sequence {

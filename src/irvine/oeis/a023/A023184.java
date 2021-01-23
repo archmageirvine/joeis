@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023184 Least Fibonacci number ending with <code>n</code>.
+ * A023184 Least Fibonacci number ending with n.
  * @author Sean A. Irvine
  */
 public class A023184 implements Sequence {

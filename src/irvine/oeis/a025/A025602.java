@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025602 Number of n-move knight paths on <code>8x8</code> board from given corner to adjacent corner.
+ * A025602 Number of n-move knight paths on 8x8 board from given corner to adjacent corner.
  * @author Sean A. Irvine
  */
 public class A025602 extends A025600 {

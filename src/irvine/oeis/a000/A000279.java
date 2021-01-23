@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000279 Card matching: coefficients <code>B[n,1]</code> of t in the reduced hit polynomial <code>A[n,n,n](t)</code>.
+ * A000279 Card matching: coefficients B[n,1] of t in the reduced hit polynomial A[n,n,n](t).
  * @author Sean A. Irvine
  */
 public class A000279 implements Sequence {

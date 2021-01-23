@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A071047 Number of <code>1</code>'s in n-th row of triangle in <code>A071031</code>.
+ * A071047 Number of 1's in n-th row of triangle in A071031, cellular automaton "rule 62".
  * @author Georg Fischer
  */
 public class A071047 extends GeneratingFunctionSequence {

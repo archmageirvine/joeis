@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224993 <code>Non-crossing, non-nesting, 4-colored</code> permutations on <code>{1,2,...,n}</code>.
+ * A224993 Non-crossing, non-nesting, 4-colored permutations on {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A224993 extends GeneratingFunctionSequence {

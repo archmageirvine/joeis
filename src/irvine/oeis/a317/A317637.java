@@ -6,7 +6,7 @@ package irvine.oeis.a317;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A317637 <code>a(n) = n*(n+1)*(n+3)</code>.
+ * A317637 a(n) = n*(n+1)*(n+3).
  * @author Georg Fischer
  */
 public class A317637 extends HolonomicRecurrence {

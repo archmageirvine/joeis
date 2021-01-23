@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137359 <code>a(n) = Sum_{k &lt;= n/2 } k*binomial(n-2k, 3k)</code>.
+ * A137359 a(n) = Sum_{k &lt;= n/2 } k*binomial(n-2k, 3k).
  * @author Georg Fischer
  */
 public class A137359 extends GeneratingFunctionSequence {

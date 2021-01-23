@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A120582 Hankel transform of <code>sum{k=0..floor(n/2), C(2k,k)}</code>.
+ * A120582 Hankel transform of sum{k=0..floor(n/2), C(2k,k)}.
  * @author Georg Fischer
  */
 public class A120582 extends GeneratingFunctionSequence {

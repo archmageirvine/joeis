@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027662 <code>a(n)/1000</code> gives <code>sqrt(n)</code> to 3 places.
+ * A027662 a(n)/1000 gives sqrt(n) to 3 places.
  * @author Sean A. Irvine
  */
 public class A027662 implements Sequence {

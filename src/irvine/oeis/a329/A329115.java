@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329115 <code>a(n) = floor(A026549(n)/5)</code>.
+ * A329115 a(n) = floor(A026549(n)/5).
  * @author Georg Fischer
  */
 public class A329115 extends HolonomicRecurrence {

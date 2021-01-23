@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012496 <code>exp(cos(x)*arctan(x))=1+x+1/2!*x^2-4/3!*x^3-19/4!*x^4+445/6!*x^6..</code>.
+ * A012496 exp(cos(x)*arctan(x))=1+x+1/2!*x^2-4/3!*x^3-19/4!*x^4+445/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A012496 implements Sequence {

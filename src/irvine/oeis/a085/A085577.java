@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A085577 Size of maximal subset of the <code>n^2</code> cells in an <code>n X n</code> grid such that there are at least 3 edges between any pair of chosen cells.
+ * A085577 Size of maximal subset of the n^2 cells in an n X n grid such that there are at least 3 edges between any pair of chosen cells.
  * @author Georg Fischer
  */
 public class A085577 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a065;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A065424 Catalan-like formula: <code>a(n) = binomial(6m, 3m+1)/(9m+6)</code>.
+ * A065424 Catalan-like formula: a(n) = binomial(6m, 3m+1)/(9m+6).
  * @author Georg Fischer
  */
 public class A065424 extends HolonomicRecurrence {

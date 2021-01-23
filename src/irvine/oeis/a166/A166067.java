@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A166067 Fibonacci sequence beginning <code>1, 69</code>.
+ * A166067 Fibonacci sequence beginning 1, 69.
  * @author Georg Fischer
  */
 public class A166067 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A007652 Final digit of <code>prime(n)</code>.
+ * A007652 Final digit of prime(n).
  * @author Sean A. Irvine
  */
 public class A007652 extends A000040 {

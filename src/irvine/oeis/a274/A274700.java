@@ -5,13 +5,13 @@ package irvine.oeis.a274;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A274700 Numbers n such that <code>7*10^n + 37</code> is prime.
+ * A274700 Numbers n such that 7*10^n + 37 is prime.
  * @author Georg Fischer
  */
 public class A274700 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A274700() {
-    super(1, 1, 7, 10, +37, 0);
+    super(1, 1, 7, 10, +37);
   }
 }

@@ -55,7 +55,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
    * @param offset first valid term has this index
    * @param k compute the sqrt of this non-negative number
    */
-  protected ContinuedFractionOfSqrtSequence(final int offset, final int k) {
+  public ContinuedFractionOfSqrtSequence(final int offset, final int k) {
     mOffset = offset;
     mN  = offset - 1; // will be increased in first call of next().
     mK  = k;

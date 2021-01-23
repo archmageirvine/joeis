@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203573 Bisection of <code>A099924</code> (convolution of Lucas numbers); even arguments.
+ * A203573 Bisection of A099924 (convolution of Lucas numbers); even arguments.
  * @author Sean A. Irvine
  */
 public class A203573 extends LinearRecurrence {

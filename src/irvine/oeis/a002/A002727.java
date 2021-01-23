@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A002727 Number of <code>3 X n</code> binary matrices up to row and column permutations.
+ * A002727 Number of 3 X n binary matrices up to row and column permutations.
  * @author Sean A. Irvine
  */
 public class A002727 extends GeneratingFunctionSequence {

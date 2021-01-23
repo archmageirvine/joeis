@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002275;
 
 /**
- * A095250 <code>a(n) = 11111111... (n</code> times) <code>= (10^n-1)/9</code> reduced <code>mod n</code>.
+ * A095250 a(n) = 11111111... (n times) = (10^n-1)/9 reduced mod n.
  * @author Georg Fischer
  */
 public class A095250 extends A002275 {
@@ -15,7 +15,7 @@ public class A095250 extends A002275 {
   /** Construct the sequence. */
   public A095250() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

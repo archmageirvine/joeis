@@ -5,7 +5,7 @@ package irvine.oeis.a192;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A192716 Divisors of <code>10^9</code>.
+ * A192716 Divisors of 10^9.
  * @author Georg Fischer
  */
 public class A192716 extends FiniteSequence {

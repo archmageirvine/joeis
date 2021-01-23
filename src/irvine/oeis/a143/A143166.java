@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143166 <code>a(n) = n*(8*n^2 + 1)/3</code>.
+ * A143166 a(n) = n*(8*n^2 + 1)/3.
  * @author Georg Fischer
  */
 public class A143166 extends GeneratingFunctionSequence {

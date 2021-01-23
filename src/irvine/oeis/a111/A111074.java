@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A111074 Let <code>t(n)</code> denote the triangular numbers <code>(A000217)</code>. Sequence mixes <code>t(n+2)</code> and <code>t(n)</code>.
+ * A111074 Let t(n) denote the triangular numbers (A000217). Sequence mixes t(n+2) and t(n).
  * @author Georg Fischer
  */
 public class A111074 extends GeneratingFunctionSequence {

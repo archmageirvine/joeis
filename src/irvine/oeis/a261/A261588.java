@@ -6,7 +6,7 @@ package irvine.oeis.a261;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A261588 5-Modular Catalan Numbers <code>C_{n,5}</code>.
+ * A261588 5-Modular Catalan Numbers C_{n,5}.
  * @author Georg Fischer
  */
 public class A261588 extends HolonomicRecurrence {

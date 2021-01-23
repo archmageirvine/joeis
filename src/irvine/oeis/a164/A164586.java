@@ -6,7 +6,7 @@ package irvine.oeis.a164;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A164586 Row sums of generalized rhombic triangle <code>A164585</code>.
+ * A164586 Row sums of generalized rhombic triangle A164585.
  * @author Georg Fischer
  */
 public class A164586 extends HolonomicRecurrence {

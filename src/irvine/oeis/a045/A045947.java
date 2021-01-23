@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045947 Triangles in open triangular matchstick arrangement (triangle minus one side) of side <code>n</code>.
+ * A045947 Triangles in open triangular matchstick arrangement (triangle minus one side) of side n.
  * @author Sean A. Irvine
  */
 public class A045947 extends LinearRecurrence {

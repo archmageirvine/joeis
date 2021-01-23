@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunLengthSequence;
 
 /**
- * A030312 Length of n-th run of <code>0</code>'s in <code>A030308</code>.
+ * A030312 Length of n-th run of 0's in A030308.
  * @author Sean A. Irvine
  */
 public class A030312 extends RunLengthSequence {

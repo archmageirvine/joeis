@@ -5,13 +5,13 @@ package irvine.oeis.a294;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A294396 Numbers k such that <code>12*10^k + 1</code> is prime.
+ * A294396 Numbers k such that 12*10^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A294396 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A294396() {
-    super(1, 0, 12, 10, +1, 0);
+    super(1, 0, 12, 10, 1);
   }
 }

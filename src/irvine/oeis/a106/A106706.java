@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A106706 <code>a(0) = 19</code>; for <code>n&gt;0</code>, successively subtract 5, subtract 3 and double.
+ * A106706 a(0) = 19; for n&gt;0, successively subtract 5, subtract 3 and double.
  * @author Georg Fischer
  */
 public class A106706 extends GeneratingFunctionSequence {

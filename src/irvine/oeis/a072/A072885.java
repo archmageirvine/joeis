@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A072885 Primes p with a prime number of digits in all base b with <code>1 &lt;= b &lt;=</code> p.
+ * A072885 Primes p with a prime number of digits in all base b with 1 &lt;= b &lt;= p.
  * @author Georg Fischer
  */
 public class A072885 extends FiniteSequence {

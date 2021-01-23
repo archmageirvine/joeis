@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259777 Number of permutations p of <code>[n]</code> with no fixed points and displacement of elements restricted by four: <code>1 &lt;= |p(i)-i| &lt;= 4</code>.
+ * A259777 Number of permutations p of [n] with no fixed points and displacement of elements restricted by four: 1 &lt;= |p(i)-i| &lt;= 4.
  * @author Georg Fischer
  */
 public class A259777 extends GeneratingFunctionSequence {

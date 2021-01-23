@@ -6,7 +6,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328984 If n is even, <code>a(n)=floor((5t+1)/2)</code> where <code>t=n/2</code>; if <code>n==1 (mod 4)</code> then <code>a(n)=10t+1</code> where <code>t=(n-1)/4</code>; and if <code>n==3 (mod 4)</code> then <code>a(n)=10t+7</code> where <code>t=(n-3)/4</code>.
+ * A328984 If n is even, a(n)=floor((5t+1)/2) where t=n/2; if n==1 (mod 4) then a(n)=10t+1 where t=(n-1)/4; and if n==3 (mod 4) then a(n)=10t+7 where t=(n-3)/4.
  * @author Georg Fischer
  */
 public class A328984 extends HolonomicRecurrence {

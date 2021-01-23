@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006841 Permutation arrays of period <code>n</code>.
+ * A006841 Permutation arrays of period n.
  * Compute number of different patterns that arise from permutations on a torus.
  *
  * If you have a permutation <code>p_i</code>, i.e. an element of the symmetric group <code>S_n</code>,
@@ -130,7 +130,7 @@ public class A006841 implements Sequence {
               .multiply(mF.factorial(d - 2 * l));
             final Z wk3 = numerator.multiply(bigN.pow(l));
             final Z[] divisionResult = wk3.divideAndRemainder(denominator);
-            if (!divisionResult[1].equals(Z.ZERO)) {
+            if (!divisionResult[1].isZero()) {
               throw new RuntimeException("Error: division results in a mRemainder");
             }
             subSum = subSum.add(divisionResult[0]);
@@ -142,7 +142,7 @@ public class A006841 implements Sequence {
               final int h2 = d / 2;
               final Z denominator = Z.valueOf(2 * d).pow(h2).multiply(mF.factorial(h2));
               final Z[] divisionResult = numerator.multiply(bigN.pow(h2)).divideAndRemainder(denominator);
-              if (!divisionResult[1].equals(Z.ZERO)) {
+              if (!divisionResult[1].isZero()) {
                 throw new RuntimeException("Error: division results in a mRemainder");
               }
               wk1 = wk1.add(divisionResult[0]);

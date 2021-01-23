@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266782 The growth series for the affine Coxeter (or Weyl) group <code>[3,5]</code> (or <code>H_3)</code>.
+ * A266782 The growth series for the affine Coxeter (or Weyl) group [3,5] (or H_3).
  * @author Georg Fischer
  */
 public class A266782 extends GeneratingFunctionSequence {

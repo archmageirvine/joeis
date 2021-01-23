@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009052 Expansion of e.g.f. <code>cos(sin(x)^2)</code>, even terms only.
+ * A009052 Expansion of e.g.f. cos(sin(x)^2), even terms only.
  * @author Sean A. Irvine
  */
 public class A009052 implements Sequence {

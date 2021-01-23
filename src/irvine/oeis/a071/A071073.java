@@ -5,7 +5,7 @@ package irvine.oeis.a071;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A071073 Minimal "multiples of <code>3"</code> set in base 10.
+ * A071073 Minimal "multiples of 3" set in base 10.
  * @author Georg Fischer
  */
 public class A071073 extends FiniteSequence {

@@ -45,7 +45,7 @@ public class A002887 implements Sequence, GraphProcessor {
   }
 
   @Override
-  public void process(final Graph tree) throws IOException {
+  public void process(final Graph tree) {
     final int[] cc = cuttingCenter(tree);
     if (mFirstCuttingCenter.get(cc[1]) == 0) {
       mFirstCuttingCenter.set(cc[1], mN);

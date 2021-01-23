@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030628 1 together with numbers of the form <code>p*q^4</code> and <code>p^9</code>, where p and q are primes.
+ * A030628 1 together with numbers of the form p*q^4 and p^9, where p and q are primes.
  * @author Sean A. Irvine
  */
 public class A030628 implements Sequence {

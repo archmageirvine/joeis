@@ -7,7 +7,7 @@ package irvine.oeis.a268;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A268759 Triangle <code>T(n,k)</code> read by rows: <code>T(n,k) = (1/4)*(1 + k)*(2 + k)*(k - n)*(1 + k - n)</code>.
+ * A268759 Triangle T(n,k) read by rows: T(n,k) = (1/4)*(1 + k)*(2 + k)*(k - n)*(1 + k - n).
  * @author Georg Fischer
  */
 public class A268759 extends GeneratingFunctionTriangle {

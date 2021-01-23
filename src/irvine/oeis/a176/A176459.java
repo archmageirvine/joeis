@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A176459 Decimal expansion of <code>(12+2*sqrt(38))/3</code>.
+ * A176459 Decimal expansion of (12+2*sqrt(38))/3.
  * @author Georg Fischer
  */
 public class A176459 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007510 Single (or isolated or <code>non-twin)</code> primes: Primes p such that neither <code>p-2</code> nor <code>p+2</code> is prime.
+ * A007510 Single (or isolated or non-twin) primes: Primes p such that neither p-2 nor p+2 is prime.
  * @author Sean A. Irvine
  */
 public class A007510 implements Sequence {

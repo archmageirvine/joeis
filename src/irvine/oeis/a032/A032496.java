@@ -5,13 +5,13 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032496 Numbers k such that <code>239*2^k+1</code> is prime.
+ * A032496 Numbers k such that 239*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A032496 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A032496() {
-    super(1, 1, 239, 2, +1, 0);
+    super(1, 1, 239, 2, 1);
   }
 }

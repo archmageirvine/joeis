@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132152 <code>a(4n+k) = 4a(4n+k-1)-6a(4n+k-2)+4a(4n+k-3)</code>, for k <code>= 0,1,2; 2*a(4n+3) = 7a(4n+2)-8(4n+1)+2a(4n)</code>, with <code>a(0) = a(1) = a(2) = 0, a(3) = 1</code>.
+ * A132152 a(4n+k) = 4a(4n+k-1)-6a(4n+k-2)+4a(4n+k-3), for k = 0,1,2; 2*a(4n+3) = 7a(4n+2)-8(4n+1)+2a(4n), with a(0) = a(1) = a(2) = 0, a(3) = 1.
  * @author Georg Fischer
  */
 public class A132152 extends LinearRecurrence {

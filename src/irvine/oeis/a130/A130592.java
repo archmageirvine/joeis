@@ -6,7 +6,7 @@ package irvine.oeis.a130;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A130592 <code>a(n+5) = (-8 + 5*n)*a(n-1) + (72 - 20*n)*a(n) + (-146 + 21*n)*a(n+1) + (128 - 8*n)*a(n+2) + (-56 + n)*a(n+3) + 12*a(n+4)</code>.
+ * A130592 a(n+5) = (-8 + 5*n)*a(n-1) + (72 - 20*n)*a(n) + (-146 + 21*n)*a(n+1) + (128 - 8*n)*a(n+2) + (-56 + n)*a(n+3) + 12*a(n+4).
  * @author Georg Fischer
  */
 public class A130592 extends HolonomicRecurrence {

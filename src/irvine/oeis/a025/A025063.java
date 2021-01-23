@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025063 Positions of odd numbers in <code>A025060</code> (numbers of form <code>j*k + k*i + i*j</code>, where <code>1 &lt;= i &lt; j &lt; k)</code>.
+ * A025063 Positions of odd numbers in A025060 (numbers of form j*k + k*i + i*j, where 1 &lt;= i &lt; j &lt; k).
  * @author Sean A. Irvine
  */
 public class A025063 extends A025060 {

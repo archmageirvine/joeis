@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134287 Fifth column of triangle <code>A103371</code> (without leading zeros).
+ * A134287 Fifth column of triangle A103371 (without leading zeros).
  * @author Georg Fischer
  */
 public class A134287 extends GeneratingFunctionSequence {

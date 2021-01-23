@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055272 First differences of <code>7^n (A000420)</code>.
+ * A055272 First differences of 7^n (A000420).
  * @author Georg Fischer
  */
 public class A055272 extends GeneratingFunctionSequence {

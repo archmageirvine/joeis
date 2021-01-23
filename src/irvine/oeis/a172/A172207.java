@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172207 Number of ways to place 3 nonattacking bishops on a <code>3 X n</code> board.
+ * A172207 Number of ways to place 3 nonattacking bishops on a 3 X n board.
  * @author Georg Fischer
  */
 public class A172207 extends GeneratingFunctionSequence {

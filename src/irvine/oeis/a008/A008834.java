@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008834 Largest cube dividing <code>n</code>.
+ * A008834 Largest cube dividing n.
  * @author Sean A. Irvine
  */
 public class A008834 implements Sequence {

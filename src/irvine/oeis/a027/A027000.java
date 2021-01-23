@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027000 <code>a(n) = Lucas(2n+3) - (6n+4)</code>.
+ * A027000 a(n) = Lucas(2n+3) - (6n+4).
  * @author Georg Fischer
  */
 public class A027000 extends GeneratingFunctionSequence {

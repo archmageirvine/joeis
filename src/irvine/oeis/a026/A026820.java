@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026820 Euler's table: triangular array T read by rows, where <code>T(n,k) =</code> number of partitions in which every part is <code>&lt;=</code> k for <code>1 &lt;= k &lt;= n</code>. Also number of partitions of n into at most k parts.
+ * A026820 Euler's table: triangular array T read by rows, where T(n,k) = number of partitions in which every part is &lt;= k for 1 &lt;= k &lt;= n. Also number of partitions of n into at most k parts.
  * @author Sean A. Irvine
  */
 public class A026820 extends MemoryFunction2<Long, Z> implements Sequence {

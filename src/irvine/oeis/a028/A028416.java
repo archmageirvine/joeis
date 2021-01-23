@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028416 Primes p such that the decimal expansion of <code>1/p</code> has a periodic part of even length.
+ * A028416 Primes p such that the decimal expansion of 1/p has a periodic part of even length.
  * @author Sean A. Irvine
  */
 public class A028416 implements Sequence {

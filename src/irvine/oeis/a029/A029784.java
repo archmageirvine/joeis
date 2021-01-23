@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029784 Squares such that digits of <code>sqrt(n)</code> are not present in <code>n</code>.
+ * A029784 Squares such that digits of sqrt(n) are not present in n.
  * @author Sean A. Irvine
  */
 public class A029784 extends A029783 {

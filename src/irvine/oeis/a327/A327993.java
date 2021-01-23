@@ -6,7 +6,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327993 <code>a(n) = [x^n] ((x - 1)*(x + 1)*(2*x^2 - 1))/(2*x^4 + 4*x^3 - x^2 - 3*x + 1)</code>.
+ * A327993 a(n) = [x^n] ((x - 1)*(x + 1)*(2*x^2 - 1))/(2*x^4 + 4*x^3 - x^2 - 3*x + 1).
  * @author Georg Fischer
  */
 public class A327993 extends HolonomicRecurrence {

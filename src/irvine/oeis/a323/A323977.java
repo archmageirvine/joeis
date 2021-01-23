@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323977 Expansion of determinant of <code>6 X 6</code> matrix <code>M_{u,v} = q^(maj(u*v^-1))</code> where u, v in <code>S_3</code> and <code>maj =</code> MacMahon's major index <code>(cf. A008302)</code>.
+ * A323977 Expansion of determinant of 6 X 6 matrix M_{u,v} = q^(maj(u*v^-1)) where u, v in S_3 and maj = MacMahon's major index (cf. A008302).
  * @author Georg Fischer
  */
 public class A323977 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003151;
 
 /**
- * A022804 <code>a(n) = B(n) + c(n)</code> where <code>B(n)</code> is Beatty sequence <code>[ n*sqrt(2) ]</code> and c is the complement of B.
+ * A022804 a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*sqrt(2) ] and c is the complement of B.
  * @author Sean A. Irvine
  */
 public class A022804 extends A003151 {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A224750 Expansion of <code>Pi</code> in base 26.
+ * A224750 Expansion of Pi in base 26.
  * @author Georg Fischer
  */
 public class A224750 extends DecimalExpansionSequence {

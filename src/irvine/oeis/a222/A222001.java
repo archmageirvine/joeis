@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A222001 Number of <code>n X 3</code> arrays with each row a permutation of 1..3 having at least as many downsteps as the preceding row, with rows in lexicographically nonincreasing order.
+ * A222001 Number of n X 3 arrays with each row a permutation of 1..3 having at least as many downsteps as the preceding row, with rows in lexicographically nonincreasing order.
  * @author Georg Fischer
  */
 public class A222001 extends GeneratingFunctionSequence {

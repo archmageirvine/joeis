@@ -4,7 +4,7 @@ package irvine.oeis.a048;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A048336 <code>a(n)</code> in base 12 is a repdigit.
+ * A048336 a(n) in base 12 is a repdigit.
  * @author Georg Fischer
  */
 public class A048336 extends GeneratingFunctionSequence {

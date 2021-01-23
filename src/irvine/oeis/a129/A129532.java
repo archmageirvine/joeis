@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129532 <code>3n(n-1)4^(n-2)</code>.
+ * A129532 3n(n-1)4^(n-2).
  * @author Georg Fischer
  */
 public class A129532 extends GeneratingFunctionSequence {

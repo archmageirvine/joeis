@@ -18,7 +18,7 @@ public class PowerFactorPrimeSequence implements Sequence {
   //protected int mOffset; // OEIS offset1 as of generation time
   protected int mAdd; // additive term
   protected int mBase; // usually 2 or 10
-  protected int mDiv; // optional divisor, or 0 for no divisor
+  protected Z mDiv; // optional divisor, or 0 for no divisor
 
   /**
    * Construct an instance which selects the appropriate indexes k.
@@ -33,12 +33,22 @@ public class PowerFactorPrimeSequence implements Sequence {
     //mOffset = offset;
     mBase = base;
     mAdd = add;
-    mDiv = div;
+    mDiv = Z.valueOf(div);
     mK = start - 1;
-    mA = Z.valueOf(num);
-    for (int k = 1; k <= start; ++k) {
-      mA = mA.multiply(mBase); // don't start with base^0, but with a higher power
-    }
+    mA = Z.valueOf(num).multiply(Z.valueOf(mBase).pow(start));
+  }
+
+  /**
+   * Construct an instance which selects the appropriate indexes k.
+   * @param offset first valid term has this index
+   * @param start start with this k
+   * @param num factor
+   * @param base usually 2 or 10
+   * @param add additive term
+   * @param div optional divisor, or 0 for no divisor
+   */
+  protected PowerFactorPrimeSequence(final int offset, final int start, final int num, final int base, final int add) {
+    this(offset, start, num, base, add, 1);
   }
 
   @Override
@@ -46,14 +56,9 @@ public class PowerFactorPrimeSequence implements Sequence {
     boolean busy = true;
     while (busy) {
       ++mK;
-      if (mDiv != 0) {
-        if (mA.add(mAdd).divide(mDiv).isProbablePrime()) {
-          busy = false;
-        }
-      } else { // no mDiv
-        if (mA.add(mAdd).isProbablePrime()) {
-          busy = false;
-        }
+      final Z[] qr = mA.add(mAdd).divideAndRemainder(mDiv);
+      if (qr[1].isZero() && qr[0].isProbablePrime()) {
+        busy = false;
       }
       mA = mBase == 2 ? mA.multiply2() : mA.multiply(mBase);
     } // while

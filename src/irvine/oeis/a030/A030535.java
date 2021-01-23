@@ -4,7 +4,7 @@ package irvine.oeis.a030;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A030535 Expansion of Molien series for 16-D extraspecial group <code>2^{1+2*4}</code>.
+ * A030535 Expansion of Molien series for 16-D extraspecial group 2^{1+2*4}.
  * @author Georg Fischer
  */
 public class A030535 extends GeneratingFunctionSequence {

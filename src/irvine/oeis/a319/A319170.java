@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319170 Triangular numbers of the form <code>2..21..1; n_times 2</code> followed with <code>n_times 1; n &gt;= 1</code>.
+ * A319170 Triangular numbers of the form 2..21..1; n_times 2 followed with n_times 1; n &gt;= 1.
  * @author Georg Fischer
  */
 public class A319170 extends GeneratingFunctionSequence {

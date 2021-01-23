@@ -4,7 +4,7 @@ package irvine.oeis.a216;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A216125 <code>a(n) = 5^n mod 1000</code>.
+ * A216125 a(n) = 5^n mod 1000.
  * @author Georg Fischer
  */
 public class A216125 extends GeneratingFunctionSequence {

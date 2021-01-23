@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101425 Number of different cuboids with volume <code>p^5 X q^n</code>, where p,q are distinct prime numbers.
+ * A101425 Number of different cuboids with volume p^5 X q^n, where p,q are distinct prime numbers.
  * @author Georg Fischer
  */
 public class A101425 extends GeneratingFunctionSequence {

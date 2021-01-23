@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029589 Expansion of <code>(1+sin(x)+sin(x)^2)/(1-sin(x)+sin(x)^2)</code>.
+ * A029589 Expansion of (1+sin(x)+sin(x)^2)/(1-sin(x)+sin(x)^2).
  * @author Sean A. Irvine
  */
 public class A029589 implements Sequence {

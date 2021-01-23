@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227021 Number of <code>n X 2 (0,1,2)</code> arrays of permanents of <code>2 X 2</code> subblocks of some <code>(n+1) X 3</code> binary array with rows and columns of the latter in lexicographically nondecreasing order.
+ * A227021 Number of n X 2 (0,1,2) arrays of permanents of 2 X 2 subblocks of some (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A227021 extends GeneratingFunctionSequence {

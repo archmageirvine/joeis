@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007778;
 
 /**
- * A110567 <code>a(n) = n^(n+1) + 1</code>.
+ * A110567 a(n) = n^(n+1) + 1.
  * @author Georg Fischer
  */
 public class A110567 extends A007778 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A110567() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

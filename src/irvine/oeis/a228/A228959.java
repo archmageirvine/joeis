@@ -6,7 +6,7 @@ package irvine.oeis.a228;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A228959 Total sum of squared lengths of ascending runs in all permutations of <code>[n]</code>.
+ * A228959 Total sum of squared lengths of ascending runs in all permutations of [n].
  * @author Georg Fischer
  */
 public class A228959 extends HolonomicRecurrence {

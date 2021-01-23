@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * A001678 Number of series-reduced planted trees with n nodes.
@@ -15,7 +15,7 @@ import java.util.Arrays;
  */
 public class A001678 extends MemorySequence {
 
-  /** Higher limit takes longer timer. */
+  /** Higher limit takes longer time. */
   private static final int LIMIT = 500;
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 

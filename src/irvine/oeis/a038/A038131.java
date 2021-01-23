@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A038131 Second earliest sequence of 6 primes according to the rules stipulated in <code>A005150</code>.
+ * A038131 Second earliest sequence of 6 primes according to the rules stipulated in A005150.
  * @author Georg Fischer
  */
 public class A038131 extends FiniteSequence {

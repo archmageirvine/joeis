@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A026405 <code>a(n) =</code> greatest integer not found after first n in <code>A026400</code>.
+ * A026405 a(n) = greatest integer not found after first n in A026400.
  * @author Sean A. Irvine
  */
 public class A026405 extends A026400 {

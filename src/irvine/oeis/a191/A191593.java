@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191593 Number of partitions of <code>12*n</code> into parts <code>&lt; 5</code>.
+ * A191593 Number of partitions of 12*n into parts &lt; 5.
  * @author Sean A. Irvine
  */
 public class A191593 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201207 Half-convolution of sequence <code>A000032</code> (Lucas) with itself.
+ * A201207 Half-convolution of sequence A000032 (Lucas) with itself.
  * @author Georg Fischer
  */
 public class A201207 extends GeneratingFunctionSequence {

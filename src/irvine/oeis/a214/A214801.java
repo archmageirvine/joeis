@@ -6,7 +6,7 @@ package irvine.oeis.a214;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A214801 Number of solid standard Young tableaux of shape <code>[[2*n,n],[n]]</code>.
+ * A214801 Number of solid standard Young tableaux of shape [[2*n,n],[n]].
  * @author Georg Fischer
  */
 public class A214801 extends HolonomicRecurrence {

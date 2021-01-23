@@ -4,7 +4,7 @@ package irvine.oeis.a282;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A282086 Number of n-element subsets of <code>[n+10]</code> having an even sum.
+ * A282086 Number of n-element subsets of [n+10] having an even sum.
  * @author Georg Fischer
  */
 public class A282086 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A175282 Positive numbers n with property that <code>n^2+3n+9</code> is prime <code>(A005471)</code>.
+ * A175282 Positive numbers n with property that n^2+3n+9 is prime (A005471).
  * @author Sean A. Irvine
  */
 public class A175282 implements Sequence {

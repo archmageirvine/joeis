@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A029694 n-th bit in binary expansion of cube root of <code>n</code>.
+ * A029694 n-th bit in binary expansion of cube root of n.
  * @author Sean A. Irvine
  */
 public class A029694 implements Sequence {

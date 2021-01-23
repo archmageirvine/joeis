@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A014838 Sum of all the digits of n in every prime base from 2 to <code>n-1</code>.
+ * A014838 Sum of all the digits of n in every prime base from 2 to n-1.
  * @author Sean A. Irvine
  */
 public class A014838 implements Sequence {

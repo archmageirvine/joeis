@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304162 <code>a(n) = n^4 - 3*n^3 + 9*n^2 - 7*n + 5 (n&gt;=1)</code>.
+ * A304162 a(n) = n^4 - 3*n^3 + 9*n^2 - 7*n + 5 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304162 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007118 Expansion of e.g.f. <code>(1+x)^sin(x)</code>.
+ * A007118 Expansion of e.g.f. (1+x)^sin(x).
  * @author Sean A. Irvine
  */
 public class A007118 implements Sequence {

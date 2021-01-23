@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032343 <code>a(n) = 10*a(n-1)+n^2, a(0)=0</code>.
+ * A032343 a(n) = 10*a(n-1)+n^2, a(0)=0.
  * @author Georg Fischer
  */
 public class A032343 extends HolonomicRecurrence {

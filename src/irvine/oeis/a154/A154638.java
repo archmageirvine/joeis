@@ -5,7 +5,7 @@ package irvine.oeis.a154;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A154638 <code>a(n)</code> is the number of distinct reduced words of length n in the Coxeter group of "Apollonian reflections" in three dimensions.
+ * A154638 a(n) is the number of distinct reduced words of length n in the Coxeter group of "Apollonian reflections" in three dimensions.
  * @author Georg Fischer
  */
 public class A154638 extends HolonomicRecurrence {

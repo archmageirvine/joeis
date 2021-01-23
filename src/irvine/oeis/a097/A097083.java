@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A097083 Values of k such that there is exactly one permutation p of <code>(1,2,3,...,k)</code> such that <code>i+p(i)</code> is a Fibonacci number for <code>1&lt;=i&lt;=k</code>.
+ * A097083 Values of k such that there is exactly one permutation p of (1,2,3,...,k) such that i+p(i) is a Fibonacci number for 1&lt;=i&lt;=k.
  * @author Georg Fischer
  */
 public class A097083 extends GeneratingFunctionSequence {

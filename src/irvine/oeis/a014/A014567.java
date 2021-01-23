@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014567 Numbers n such that n and <code>sigma(n)</code> are relatively prime, where <code>sigma(n) =</code> sum of divisors of n, <code>A000203</code>.
+ * A014567 Numbers k such that k and sigma(k) are relatively prime, where sigma(k) = sum of divisors of k (A000203).
  * @author Sean A. Irvine
  */
 public class A014567 implements Sequence {

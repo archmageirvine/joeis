@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A106835 <code>4 X 4</code> vector Markov sequence with characteristic polynomial <code>x^4-10*x^3+25*x^2-4</code>.
+ * A106835 4 X 4 vector Markov sequence with characteristic polynomial x^4-10*x^3+25*x^2-4.
  * @author Georg Fischer
  */
 public class A106835 extends GeneratingFunctionSequence {

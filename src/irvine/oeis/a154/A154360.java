@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154360 <code>a(n) = 250*n - 180</code>.
+ * A154360 a(n) = 250*n - 180.
  * @author Sean A. Irvine
  */
 public class A154360 extends LinearRecurrence {

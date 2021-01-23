@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114748 Value of k pertaining to <code>A114747</code>.
+ * A114748 Value of k pertaining to A114747.
  * @author Georg Fischer
  */
 public class A114748 extends FiniteSequence {

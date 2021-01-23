@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a026.A026747;
 
 /**
- * A027229 <code>a(n) =</code> sum of squares of numbers in row n of array T given by <code>A026747</code>.
+ * A027229 a(n) = sum of squares of numbers in row n of array T given by A026747.
  * @author Sean A. Irvine
  */
 public class A027229 extends A026747 {

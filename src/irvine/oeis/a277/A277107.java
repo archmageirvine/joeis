@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277107 <code>a(n) = 16*3^n - 48</code>.
+ * A277107 a(n) = 16*3^n - 48.
  * @author Sean A. Irvine
  */
 public class A277107 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023416 Number of <code>0</code>'s in binary expansion of <code>n</code>.
+ * A023416 Number of 0's in binary expansion of n.
  * @author Sean A. Irvine
  */
 public class A023416 implements Sequence {
@@ -14,6 +14,6 @@ public class A023416 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.ZERO.equals(mN) ? Z.ONE : Z.valueOf(mN.bitLength() - mN.bitCount());
+    return mN.isZero() ? Z.ONE : Z.valueOf(mN.bitLength() - mN.bitCount());
   }
 }

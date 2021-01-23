@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A273050 Numbers n such that <code>ror(n)</code> XOR <code>rol(n) =</code> n, where <code>ror(x)=A038572(x)</code> is x rotated one binary place to the right, <code>rol(x)=A006257(x)</code> is x rotated one binary place to the left, and XOR is the binary exclusive-or operator.
+ * A273050 Numbers n such that ror(n) XOR rol(n) = n, where ror(x)=A038572(x) is x rotated one binary place to the right, rol(x)=A006257(x) is x rotated one binary place to the left, and XOR is the binary exclusive-or operator.
  * @author Georg Fischer
  */
 public class A273050 extends GeneratingFunctionSequence {

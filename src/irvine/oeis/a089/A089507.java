@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089507 Second column of triangle <code>A089504</code> and second column of array <code>A078741</code> divided by 18.
+ * A089507 Second column of triangle A089504 and second column of array A078741 divided by 18.
  * @author Sean A. Irvine
  */
 public class A089507 extends LinearRecurrence {

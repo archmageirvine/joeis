@@ -6,7 +6,7 @@ package irvine.oeis.a307;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A307304 Number of inequivalent ways of placing 2 nonattacking rooks on <code>n X n</code> board up to rotations and reflections of the board.
+ * A307304 Number of inequivalent ways of placing 2 nonattacking rooks on n X n board up to rotations and reflections of the board.
  * @author Georg Fischer
  */
 public class A307304 extends GeneratingFunctionSequence {

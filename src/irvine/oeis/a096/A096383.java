@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096383 Area of the Pythagorean triangle a <code>= u^2 - v^2 (cf. A096382)</code> when <code>u=3, v=4,4,5,..</code>.
+ * A096383 Area of the Pythagorean triangle a = u^2 - v^2 (cf. A096382) when u=3, v=4,4,5,...
  * @author Sean A. Irvine
  */
 public class A096383 extends LinearRecurrence {

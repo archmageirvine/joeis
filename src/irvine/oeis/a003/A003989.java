@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003989 Triangle T from the array <code>A(x, y) = gcd(x,y)</code>, for <code>x &gt;= 1, y &gt;= 1</code>, read by antidiagonals.
+ * A003989 Triangle T from the array A(x, y) = gcd(x,y), for x &gt;= 1, y &gt;= 1, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A003989 implements Sequence {

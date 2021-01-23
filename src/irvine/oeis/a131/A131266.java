@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A131266 Decimal expansion of <code>2*sqrt(3)*log(2)/Pi</code>.
+ * A131266 Decimal expansion of 2*sqrt(3)*log(2)/Pi.
  * @author Georg Fischer
  */
 public class A131266 extends DecimalExpansionSequence {

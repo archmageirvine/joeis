@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024587 Integer nearest <code>a(n-1)/(pi - 3)</code>, where <code>a(0) = 1</code>.
+ * A024587 Integer nearest a(n-1)/(pi - 3), where a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A024587 implements Sequence {

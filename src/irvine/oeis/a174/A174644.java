@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A174644 Number of ways to place 5 nonattacking amazons (superqueens) on a <code>5 X n</code> board.
+ * A174644 Number of ways to place 5 nonattacking amazons (superqueens) on a 5 X n board.
  * @author Georg Fischer
  */
 public class A174644 extends GeneratingFunctionSequence {

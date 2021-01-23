@@ -5,13 +5,13 @@ package irvine.oeis.a109;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A109749 Numbers n such that <code>88 * 10^n + 1</code> is prime.
+ * A109749 Numbers n such that 88 * 10^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A109749 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A109749() {
-    super(1, 1, 88, 10, +1, 0);
+    super(1, 1, 88, 10, 1);
   }
 }

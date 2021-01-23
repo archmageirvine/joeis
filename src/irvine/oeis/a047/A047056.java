@@ -6,7 +6,7 @@ package irvine.oeis.a047;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A047056 Quintuple factorial numbers: <code>Product_{k=0..n-1} (5*k+3)</code>.
+ * A047056 Quintuple factorial numbers: Product_{k=0..n-1} (5*k+3).
  * @author Georg Fischer
  */
 public class A047056 extends HolonomicRecurrence {

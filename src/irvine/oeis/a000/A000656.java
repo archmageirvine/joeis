@@ -5,7 +5,7 @@ import irvine.math.group.GeneralLinearCycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000656 Invertible Boolean functions of n variables with <code>S(n)</code> acting on the domain and <code>GL(n,2)</code> acting on the range.
+ * A000656 Invertible Boolean functions of n variables with S(n) acting on the domain and GL(n,2) acting on the range.
  * @author Sean A. Irvine
  */
 public class A000656 extends A000654 {

@@ -5,7 +5,7 @@ package irvine.oeis.a090;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A090592 <code>(1,1)</code> entry of powers of the orthogonal design shown below.
+ * A090592 (1,1) entry of powers of the orthogonal design shown below.
  * @author Georg Fischer
  */
 public class A090592 extends HolonomicRecurrence {

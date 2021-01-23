@@ -5,13 +5,13 @@ package irvine.oeis.a293;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A293826 Numbers k such that <code>3*10^k + 77</code> is prime.
+ * A293826 Numbers k such that 3*10^k + 77 is prime.
  * @author Georg Fischer
  */
 public class A293826 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A293826() {
-    super(1, 1, 3, 10, +77, 0);
+    super(1, 1, 3, 10, +77);
   }
 }

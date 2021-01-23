@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024682 <code>a(n) =</code> number of ways <code>p(n)</code> is a sum of 3 odd nonprimes r,s,t satisfying <code>15 &lt;= r &lt; s &lt</code>; t.
+ * A024682 a(n) = number of ways p(n) is a sum of 3 odd nonprimes r,s,t satisfying 15 &lt;= r &lt; s &lt; t.
  * @author Sean A. Irvine
  */
 public class A024682 implements Sequence {

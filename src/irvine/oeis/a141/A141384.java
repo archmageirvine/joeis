@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141384 Trace of the n-th power of a certain <code>8X8</code> adjacency matrix.
+ * A141384 Trace of the n-th power of a certain 8X8 adjacency matrix.
  * @author Georg Fischer
  */
 public class A141384 extends GeneratingFunctionSequence {

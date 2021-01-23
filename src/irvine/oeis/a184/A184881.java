@@ -6,7 +6,7 @@ package irvine.oeis.a184;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A184881 <code>a(n) = A184879(2*n, n) - A184879(2*n, n+1)</code> where <code>A184879(n, k) = Hypergeometric2F1(-2*k, 2*k-2*n, 1, -1)</code> if <code>0&lt;=k&lt;=n</code>.
+ * A184881 a(n) = A184879(2*n, n) - A184879(2*n, n+1) where A184879(n, k) = Hypergeometric2F1(-2*k, 2*k-2*n, 1, -1) if 0&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A184881 extends HolonomicRecurrence {

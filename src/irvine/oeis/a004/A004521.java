@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004521 Generalized nim sum <code>n + n</code> in base 11.
+ * A004521 Generalized nim sum n + n in base 11.
  * @author Sean A. Irvine
  */
 public class A004521 implements Sequence {

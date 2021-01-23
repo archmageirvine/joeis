@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A014489 Positions of involutions (permutations whose square is the identity) in reverse colexicographic order <code>(A055089/A195663)</code>.
+ * A014489 Positions of involutions (permutations whose square is the identity) in reverse colexicographic order (A055089/A195663).
  * @author Sean A. Irvine
  */
 public class A014489 implements Sequence {

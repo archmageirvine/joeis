@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023410 In base 10, if any power of 2 ends with k <code>6</code>'s and <code>9</code>'s, they must be the first k elements of this sequence in reverse order.
+ * A023410 In base 10, if any power of 2 ends with k 6's and 9's, they must be the first k elements of this sequence in reverse order.
  * @author Sean A. Irvine
  */
 public class A023410 implements Sequence {
@@ -18,7 +18,7 @@ public class A023410 implements Sequence {
     mS = mS == null ? Z.ONE : mS.multiply(10);
     mT = mT.multiply2();
     final Z a = mS.multiply(6).add(mA);
-    if (Z.ZERO.equals(a.mod(mT))) {
+    if (a.mod(mT).isZero()) {
       mA = a;
       return Z.SIX;
     } else {

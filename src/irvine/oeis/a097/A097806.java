@@ -7,7 +7,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A097806 Riordan array <code>(1+x, 1)</code> read by rows.
+ * A097806 Riordan array (1+x, 1) read by rows.
  * @author Georg Fischer
  */
 public class A097806 extends GeneratingFunctionTriangle {

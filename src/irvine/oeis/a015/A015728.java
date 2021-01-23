@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015728 Numbers n such that <code>phi(n) * sigma(n) + 9</code> is a perfect square.
+ * A015728 Numbers n such that phi(n) * sigma(n) + 9 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A015728 implements Sequence {
@@ -16,7 +16,7 @@ public class A015728 implements Sequence {
   private static boolean is(final Z m) {
     final FactorSequence fs = Cheetah.factor(m);
     final Z a = fs.sigma().multiply(fs.phi()).add(9);
-    return a.sqrtAndRemainder()[1].equals(Z.ZERO);
+    return a.sqrtAndRemainder()[1].isZero();
   }
 
   @Override

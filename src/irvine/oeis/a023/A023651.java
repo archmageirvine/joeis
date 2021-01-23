@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A023651 (product of digits of <code>n) *</code> (sum of digits of <code>n) = 2n</code>.
+ * A023651 (product of digits of n) * (sum of digits of n) = 2n.
  * @author Sean A. Irvine
  */
 public class A023651 extends FiniteSequence {

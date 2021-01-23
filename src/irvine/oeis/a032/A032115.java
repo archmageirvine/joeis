@@ -6,7 +6,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032115 "BIJ" <code>(reversible</code>, indistinct, labeled) transform of 1,3,5,7...
+ * A032115 "BIJ" (reversible, indistinct, labeled) transform of 1,3,5,7...
  * @author Georg Fischer
  */
 public class A032115 extends HolonomicRecurrence {

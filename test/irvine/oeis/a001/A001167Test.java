@@ -1,12 +1,12 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A001167Test extends AbstractSequenceTest {
+public class A001167Test extends TestCase {
 
   public void testWords() {
     assertEquals(13, A001167.wordCount(1121121));

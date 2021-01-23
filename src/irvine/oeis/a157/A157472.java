@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157472 Decimal expansion of <code>(627 + 238*sqrt(2))/23^2</code>.
+ * A157472 Decimal expansion of (627 + 238*sqrt(2))/23^2.
  * @author Georg Fischer
  */
 public class A157472 extends DecimalExpansionSequence {

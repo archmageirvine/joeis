@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289922 Coefficients of <code>1/([1+r] - [1+2r]x + [1+3r]x^2 - ...)</code>, where <code>[ ] =</code> floor and r <code>= 19/21</code>.
+ * A289922 Coefficients of 1/([1+r] - [1+2r]x + [1+3r]x^2 - ...), where [ ] = floor and r = 19/21.
  * @author Georg Fischer
  */
 public class A289922 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a085;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085409 Sum of three solutions of the Diophantine equation <code>x^2 - y^2 = z^3</code>.
+ * A085409 Sum of three solutions of the Diophantine equation x^2 - y^2 = z^3.
  * @author Georg Fischer
  */
 public class A085409 extends HolonomicRecurrence {

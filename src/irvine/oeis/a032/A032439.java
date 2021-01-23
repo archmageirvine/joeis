@@ -6,7 +6,7 @@ package irvine.oeis.a032;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A032439 <code>a(n) = Sum_{i=0..4} binomial(Fibonacci(n),i)</code>.
+ * A032439 a(n) = Sum_{i=0..4} binomial(Fibonacci(n),i).
  * @author Georg Fischer
  */
 public class A032439 extends GeneratingFunctionSequence {

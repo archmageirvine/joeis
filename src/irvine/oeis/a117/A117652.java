@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117652 <code>a(n) = floor(n*(n+2)*(n+4)*(n-6)/192)</code>.
+ * A117652 a(n) = floor(n*(n+2)*(n+4)*(n-6)/192).
  * @author Sean A. Irvine
  */
 public class A117652 extends LinearRecurrence {

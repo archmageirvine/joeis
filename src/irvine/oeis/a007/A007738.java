@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007738 Period of repeating digits of <code>1/n</code> in base 7.
+ * A007738 Period of repeating digits of 1/n in base 7.
  * @author Sean A. Irvine
  */
 public class A007738 implements Sequence {

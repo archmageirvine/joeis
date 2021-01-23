@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A111872 <code>a(n)</code> is the number of runs Sir Donald Bradman scored in his n-th innings in test cricket.
+ * A111872 a(n) is the number of runs Sir Donald Bradman scored in his n-th innings in test cricket.
  * @author Georg Fischer
  */
 public class A111872 extends FiniteSequence {

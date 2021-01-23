@@ -6,7 +6,7 @@ package irvine.oeis.a103;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A103769 Trinomial transform of central binomial coefficients <code>A001405</code>.
+ * A103769 Trinomial transform of central binomial coefficients A001405.
  * @author Georg Fischer
  */
 public class A103769 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.a001.A001620;
 
 /**
- * A002852 Continued fraction for Euler's constant (or <code>Euler-Mascheroni</code> constant) gamma.
+ * A002852 Continued fraction for Euler's constant (or Euler-Mascheroni constant) gamma.
  * @author Sean A. Irvine
  */
 public class A002852 extends A001620 {

@@ -5,13 +5,13 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032455 Numbers k such that <code>157*2^k+1</code> is prime.
+ * A032455 Numbers k such that 157*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A032455 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A032455() {
-    super(1, 8, 157, 2, +1, 0);
+    super(1, 8, 157, 2, 1);
   }
 }

@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a153.A153006;
 
 /**
- * A159794 <code>a(n) = A153006(n)*3</code>.
+ * A159794 a(n) = A153006(n)*3.
  * @author Georg Fischer
  */
 public class A159794 extends A153006 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A159794() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

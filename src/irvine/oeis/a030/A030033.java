@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A030033 <code>a(n+1) = Sum_{k = 0..floor(2*n/3)} a(k)*a(n-k)</code> for <code>n &gt;= 0</code> with <code>a(0) = 1</code>.
+ * A030033 a(n+1) = Sum_{k = 0..floor(2*n/3)} a(k)*a(n-k) for n &gt;= 0 with a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A030033 extends MemorySequence {

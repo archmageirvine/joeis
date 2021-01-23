@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082803 Smallest multiple of 8 beginning with <code>n</code>.
+ * A082803 Smallest multiple of 8 beginning with n.
  * @author Sean A. Irvine
  */
 public class A082803 extends LinearRecurrence {

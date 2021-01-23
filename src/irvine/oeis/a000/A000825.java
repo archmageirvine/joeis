@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A000825 Expansion of cos <code>x (1 +</code> sin <code>x ) /cos 2x</code>.
+ * A000825 Expansion of cos x (1 + sin x ) /cos 2x.
  * @author Sean A. Irvine
  */
 public class A000825 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A268044 The odd numbers congruent to <code>{3, 4} mod 5</code>.
+ * A268044 The odd numbers congruent to {3, 4} mod 5.
  * @author Sean A. Irvine
  */
 public class A268044 extends LinearRecurrence {

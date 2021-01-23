@@ -4,7 +4,7 @@ package irvine.oeis.a146;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A146126 Number of <code>n X n</code> arrays of squares of integers with every <code>(n-2) X (n-2)</code> subblock summing to 5 and every element equal to at least one neighbor.
+ * A146126 Number of n X n arrays of squares of integers with every (n-2) X (n-2) subblock summing to 5 and every element equal to at least one neighbor.
  * @author Georg Fischer
  */
 public class A146126 extends GeneratingFunctionSequence {

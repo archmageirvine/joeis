@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A189809 Number of right triangles on an <code>(n+1) X 5</code> grid.
+ * A189809 Number of right triangles on an (n+1) X 5 grid.
  * @author Georg Fischer
  */
 public class A189809 extends GeneratingFunctionSequence {

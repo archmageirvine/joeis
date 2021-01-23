@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A276722 Number of set partitions of <code>[n]</code> such that for each block b the smallest integer interval containing b has at most six elements.
+ * A276722 Number of set partitions of [n] such that for each block b the smallest integer interval containing b has at most six elements.
  * @author Georg Fischer
  */
 public class A276722 extends GeneratingFunctionSequence {

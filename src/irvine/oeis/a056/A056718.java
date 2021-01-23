@@ -5,7 +5,7 @@ package irvine.oeis.a056;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A056718 Numbers k such that <code>(61*10^k - 7)/9</code> is prime.
+ * A056718 Numbers k such that (61*10^k - 7)/9 is prime.
  * @author Georg Fischer
  */
 public class A056718 extends PowerFactorPrimeSequence {

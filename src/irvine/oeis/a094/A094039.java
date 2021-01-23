@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094039 Binomial transform of <code>(Jacobsthal(n) + 2^n*Jacobsthal(-n))/2</code>.
+ * A094039 Binomial transform of (Jacobsthal(n) + 2^n*Jacobsthal(-n))/2.
  * @author Georg Fischer
  */
 public class A094039 extends GeneratingFunctionSequence {

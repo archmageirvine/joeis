@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A024768 Prefix primes in base <code>8</code> (written in base <code>8)</code>.
+ * A024768 Prefix primes in base 8 (written in base 8).
  * @author Sean A. Irvine
  */
 public class A024768 extends FiniteSequence {

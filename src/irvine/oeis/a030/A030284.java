@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030284 <code>a(n)</code> is the least prime <code>&gt; a(n-1)</code> whose digits do not appear in <code>a(n-1)</code>.
+ * A030284 a(n) is the least prime &gt; a(n-1) whose digits do not appear in a(n-1).
  * @author Sean A. Irvine
  */
 public class A030284 implements Sequence {
@@ -20,7 +20,7 @@ public class A030284 implements Sequence {
     final ArrayList<Integer> digits = new ArrayList<>();
     Z t = mA;
     final int syndrome = ZUtils.syn(t);
-    while (!Z.ZERO.equals(t)) {
+    while (!t.isZero()) {
       digits.add((int) (t.mod(10)));
       t = t.divide(10);
     }

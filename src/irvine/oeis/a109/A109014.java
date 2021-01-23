@@ -5,7 +5,7 @@ package irvine.oeis.a109;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A109014 <code>a(n) = gcd(n,11)</code>.
+ * A109014 a(n) = gcd(n,11).
  * @author Georg Fischer
  */
 public class A109014 extends HolonomicRecurrence {

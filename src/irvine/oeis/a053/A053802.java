@@ -6,7 +6,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053802 Number of basis partitions of <code>n+49</code> with Durfee square size 7.
+ * A053802 Number of basis partitions of n+49 with Durfee square size 7.
  * @author Georg Fischer
  */
 public class A053802 extends HolonomicRecurrence {

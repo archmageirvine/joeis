@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A318791 Prime generating polynomial: <code>a(n) = 9*n^2 - 249*n + 1763</code>.
+ * A318791 Prime generating polynomial: a(n) = 9*n^2 - 249*n + 1763.
  * @author Georg Fischer
  */
 public class A318791 extends GeneratingFunctionSequence {

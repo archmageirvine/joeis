@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000012;
 
 /**
- * A057427 <code>a(n) = 1</code> if <code>n &gt; 0, a(n) = 0</code> if <code>n = 0</code>; series expansion of <code>x/(1-x)</code>.
+ * A057427 a(n) = 1 if n &gt; 0, a(n) = 0 if n = 0; series expansion of x/(1-x).
  * @author Sean A. Irvine
  */
 public class A057427 extends PrependSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a082;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082366 G.f.: <code>(1 - 7*x - sqrt(49*x^2 - 18*x + 1))/(2*x)</code>.
+ * A082366 G.f.: (1 - 7*x - sqrt(49*x^2 - 18*x + 1))/(2*x).
  * @author Georg Fischer
  */
 public class A082366 extends HolonomicRecurrence {

@@ -26,7 +26,7 @@ public class A004124 implements Sequence {
       } else {
         t = p.pow(p.subtract(1).multiply(e).subtract(1).multiply(p.pow(e - 1)).intValueExact());
       }
-      prod = prod.multiply(t.pow((int) LongUtils.phi(mN / p.pow(e).longValueExact())));
+      prod = prod.multiply(t.pow(LongUtils.phi(mN / p.pow(e).longValueExact())));
     }
     final long phi = LongUtils.phi(mN);
     if (!Z.valueOf(phi).multiply(phi - 1).divide2().isEven()) {

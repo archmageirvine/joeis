@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308422 <code>a(n) = n^2</code> if n odd, <code>3*n^2/4</code> if n even.
+ * A308422 a(n) = n^2 if n odd, 3*n^2/4 if n even.
  * @author Georg Fischer
  */
 public class A308422 extends HolonomicRecurrence {

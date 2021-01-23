@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028917 <code>a(n) = (3*n+1)! / (24*n)</code>.
+ * A028917 a(n) = (3*n+1)! / (24*n).
  * @author Sean A. Irvine
  */
 public class A028917 implements Sequence {

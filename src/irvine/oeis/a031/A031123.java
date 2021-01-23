@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031123 Expansion of <code>Sum_{m&gt;=1} z^(m^2)/(1-z^((m+1)^2))</code>.
+ * A031123 Expansion of Sum_{m&gt;=1} z^(m^2)/(1-z^((m+1)^2)).
  * @author Sean A. Irvine
  */
 public class A031123 implements Sequence {

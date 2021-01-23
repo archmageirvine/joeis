@@ -132,7 +132,7 @@ public class A006019 extends MemoryFunction<Z, Integer> implements Sequence {
   @Override
   public Integer compute(final Z n) {
     int remoteness = -1;
-    if (n.equals(Z.ZERO)) {
+    if (n.isZero()) {
       // No beans means the previous player has won.
       remoteness = 0;
     } else {

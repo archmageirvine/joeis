@@ -5,7 +5,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091104 Expansion of <code>(1-4x+24x^2)/((1-4x)(1+4x)</code>.
+ * A091104 Expansion of (1-4x+24x^2)/((1-4x)(1+4x).
  * @author Georg Fischer
  */
 public class A091104 extends HolonomicRecurrence {

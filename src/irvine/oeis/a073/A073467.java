@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A073467 <code>a(n)</code> is the number of essentially different ways in which the integers <code>1,2,3,...,2n</code> can be arranged in a circle such that <code>(1)</code> all pairs of adjacent integers sum to a prime number and <code>(2)</code> all pairs of integers opposite each other on the circle sum to a prime.
+ * A073467 a(n) is the number of essentially different ways in which the integers 1,2,3,...,2n can be arranged in a circle such that (1) all pairs of adjacent integers sum to a prime number and (2) all pairs of integers opposite each other on the circle sum to a prime.
  * @author Sean A. Irvine
  */
 public class A073467 implements Sequence {

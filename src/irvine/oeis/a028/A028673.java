@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.math.z.Z;
 
 /**
- * A028673 Galois numbers for <code>p=11</code>; order of group <code>AGL(n,11)</code>.
+ * A028673 Galois numbers for p=11; order of group AGL(n,11).
  * @author Sean A. Irvine
  */
 public class A028673 extends A028665 {

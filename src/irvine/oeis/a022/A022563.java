@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A022563 Number of <code>2-connected claw-free</code> graphs on n nodes.
+ * A022563 Number of 2-connected claw-free graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A022563 extends ParallelGenerateGraphsSequence {

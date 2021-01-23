@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A132150 Semi-chaotic Jazz function (Oscar Peterson robot function) on 13 tones: <code>a[n]-&gt;a[n-1]+/- 3</code> or 4 without 5 and 10 modulo 13.
+ * A132150 Semi-chaotic Jazz function (Oscar Peterson robot function) on 13 tones: a[n]-&gt;a[n-1]+/- 3 or 4 without 5 and 10 modulo 13.
  * @author Georg Fischer
  */
 public class A132150 extends GeneratingFunctionSequence {

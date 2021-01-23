@@ -5,7 +5,7 @@ package irvine.oeis.a321;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A321025 <code>a(n) =</code> sum of <code>a(n-4)</code> and <code>a(n-5)</code>, with the lowest possible initial values that will generate a sequence where <code>a(n)</code> is always <code>&gt; a(n-1): 4, 5, 6, 7</code> and 8.
+ * A321025 a(n) = sum of a(n-4) and a(n-5), with the lowest possible initial values that will generate a sequence where a(n) is always &gt; a(n-1): 4, 5, 6, 7 and 8.
  * @author Georg Fischer
  */
 public class A321025 extends HolonomicRecurrence {

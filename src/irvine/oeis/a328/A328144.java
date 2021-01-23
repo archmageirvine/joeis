@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A328144 Orders of cubic <code>(i.e.</code>, trivalent, <code>3-regular) distance-transitive</code> connected graphs, from smallest to largest, with duplications when there exist multiple graphs with the same order.
+ * A328144 Orders of cubic (i.e., trivalent, 3-regular) distance-transitive connected graphs, from smallest to largest, with duplications when there exist multiple graphs with the same order.
  * @author Georg Fischer
  */
 public class A328144 extends FiniteSequence {

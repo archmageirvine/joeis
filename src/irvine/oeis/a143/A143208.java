@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143208 <code>a(1)=2</code>; for <code>n&gt;1, a(n) = (4-9*n+3*n^2)/2</code>.
+ * A143208 a(1)=2; for n&gt;1, a(n) = (4-9*n+3*n^2)/2.
  * @author Georg Fischer
  */
 public class A143208 extends LinearRecurrence {

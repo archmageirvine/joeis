@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162496 Number of reduced words of length n in the reflection group <code>[3,4,3]</code> of order 1152.
+ * A162496 Number of reduced words of length n in the reflection group [3,4,3] of order 1152.
  * @author Georg Fischer
  */
 public class A162496 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077241 Combined Diophantine Chebyshev sequences <code>A054488</code> and <code>A077413</code>.
+ * A077241 Combined Diophantine Chebyshev sequences A054488 and A077413.
  * @author Sean A. Irvine
  */
 public class A077241 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159549 Decimal expansion of <code>(201+20*sqrt(2))/199</code>.
+ * A159549 Decimal expansion of (201+20*sqrt(2))/199.
  * @author Georg Fischer
  */
 public class A159549 extends DecimalExpansionSequence {

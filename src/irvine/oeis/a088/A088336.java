@@ -6,7 +6,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088336 Number of permutations in the symmetric group <code>S_n</code> that have even number of transpositions in their cycle decomposition.
+ * A088336 Number of permutations in the symmetric group S_n that have even number of transpositions in their cycle decomposition.
  * @author Georg Fischer
  */
 public class A088336 extends HolonomicRecurrence {

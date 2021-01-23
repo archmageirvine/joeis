@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A299266 Coordination sequence for "cab" <code>3D</code> uniform tiling formed from octahedra and truncated cubes.
+ * A299266 Coordination sequence for "cab" 3D uniform tiling formed from octahedra and truncated cubes.
  * @author Georg Fischer
  */
 public class A299266 extends GeneratingFunctionSequence {

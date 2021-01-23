@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 /**
  * A literal integer.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class LiteralZ extends Literal<Z, Integers> {
 

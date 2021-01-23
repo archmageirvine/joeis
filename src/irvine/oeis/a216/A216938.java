@@ -4,7 +4,7 @@ package irvine.oeis.a216;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A216938 Number of <code>side-2</code> hexagonal <code>0..n</code> arrays with values nondecreasing E, SW and SE.
+ * A216938 Number of side-2 hexagonal 0..n arrays with values nondecreasing E, SW and SE.
  * @author Georg Fischer
  */
 public class A216938 extends GeneratingFunctionSequence {

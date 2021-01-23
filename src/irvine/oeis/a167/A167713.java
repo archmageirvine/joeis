@@ -5,7 +5,7 @@ package irvine.oeis.a167;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A167713 <code>a(n) = 16^n*Sum_{ k=0..n } binomial(2*k,k)/16^k</code>.
+ * A167713 a(n) = 16^n*Sum_{ k=0..n } binomial(2*k,k)/16^k.
  * @author Georg Fischer
  */
 public class A167713 extends HolonomicRecurrence {

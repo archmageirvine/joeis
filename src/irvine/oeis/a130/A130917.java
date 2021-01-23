@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130917 <code>a(n)</code> is the sum of the digital roots of all of the previous terms.
+ * A130917 a(n) is the sum of the digital roots of all of the previous terms.
  * @author Georg Fischer
  */
 public class A130917 extends GeneratingFunctionSequence {

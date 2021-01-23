@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A294759 Permutations of <code>[n]</code> avoiding <code>{4321, 1243, 1234}</code>.
+ * A294759 Permutations of [n] avoiding {4321, 1243, 1234}.
  * @author Georg Fischer
  */
 public class A294759 extends FiniteSequence {

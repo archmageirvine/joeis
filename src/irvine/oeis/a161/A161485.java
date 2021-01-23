@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A161485 Decimal expansion of <code>(24723 + 6758*sqrt(2))/151^2</code>.
+ * A161485 Decimal expansion of (24723 + 6758*sqrt(2))/151^2.
  * @author Georg Fischer
  */
 public class A161485 extends DecimalExpansionSequence {

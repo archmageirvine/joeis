@@ -6,7 +6,7 @@ package irvine.oeis.a202;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A202736 Number of <code>n X 2 0..1</code> arrays with row sums equal and column sums unequal to adjacent columns.
+ * A202736 Number of n X 2 0..1 arrays with row sums equal and column sums unequal to adjacent columns.
  * @author Georg Fischer
  */
 public class A202736 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a168;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A168428 <code>a(n) = 4^n mod 10</code>.
+ * A168428 a(n) = 4^n mod 10.
  * @author Georg Fischer
  */
 public class A168428 extends HolonomicRecurrence {

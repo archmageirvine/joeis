@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190736 Diagonal sums of the Riordan matrix <code>A121576</code>.
+ * A190736 Diagonal sums of the Riordan matrix A121576.
  * @author Georg Fischer
  */
 public class A190736 extends HolonomicRecurrence {

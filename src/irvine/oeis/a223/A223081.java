@@ -3,7 +3,7 @@ package irvine.oeis.a223;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A223081 Numbers n with distinct digits such that n divides the reversal of <code>n</code>.
+ * A223081 Numbers n with distinct digits such that n divides the reversal of n.
  * @author Georg Fischer
  */
 public class A223081 extends FiniteSequence {

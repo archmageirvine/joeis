@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A011657 A binary <code>m-sequence</code>: expansion of reciprocal of <code>x^3 + x + 1 (mod 2</code>, shifted by 2 initial <code>0's)</code>.
+ * A011657 A binary m-sequence: expansion of reciprocal of x^3 + x + 1 (mod 2, shifted by 2 initial 0's).
  * @author Sean A. Irvine
  */
 public class A011657 extends PeriodicSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053553 Extreme points of set of <code>n X n</code> symmetric substochastic matrices.
+ * A053553 Extreme points of set of n X n symmetric substochastic matrices.
  * @author Georg Fischer
  */
 public class A053553 extends HolonomicRecurrence {

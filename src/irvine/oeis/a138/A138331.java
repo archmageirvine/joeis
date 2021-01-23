@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138331 <code>a(n) = C(n+5, 5)*(n+3)*(-1)^(n+1)*16/3</code>.
+ * A138331 a(n) = C(n+5, 5)*(n+3)*(-1)^(n+1)*16/3.
  * @author Sean A. Irvine
  */
 public class A138331 extends LinearRecurrence {

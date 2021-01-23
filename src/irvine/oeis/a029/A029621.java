@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029621 Numbers in <code>(3,2)-Pascal</code> triangle <code>A029618</code> that are different from 3.
+ * A029621 Numbers in (3,2)-Pascal triangle A029618 that are different from 3.
  * @author Sean A. Irvine
  */
 public class A029621 extends A029618 {

@@ -6,7 +6,7 @@ package irvine.oeis.a188;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A188526 <code>a(n) = 3^(2*n + 3) + 2^n</code>.
+ * A188526 a(n) = 3^(2*n + 3) + 2^n.
  * @author Georg Fischer
  */
 public class A188526 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026475 <code>a(1)=1, a(2)=3</code>, otherwise <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not <code>a(i) + a(j) + a(k)</code> for <code>1 &lt;= i &lt; j &lt; k &lt;= n</code>.
+ * A026475 a(1)=1, a(2)=3, otherwise a(n) = least positive integer &gt; a(n-1) and not a(i) + a(j) + a(k) for 1 &lt;= i &lt; j &lt; k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A026475 implements Sequence {

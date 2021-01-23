@@ -6,7 +6,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110653 <code>n^2</code> followed by <code>n^3</code> followed by n followed by <code>n^4</code>.
+ * A110653 n^2 followed by n^3 followed by n followed by n^4.
  * @author Georg Fischer
  */
 public class A110653 extends HolonomicRecurrence {

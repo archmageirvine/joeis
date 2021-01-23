@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036557 Number of multiples of 3 in <code>0..2^n-1</code> with an even sum of base 2 bits.
+ * A036557 Number of multiples of 3 in 0..2^n-1 with an even sum of base 2 bits.
  * @author Georg Fischer
  */
 public class A036557 extends GeneratingFunctionSequence {

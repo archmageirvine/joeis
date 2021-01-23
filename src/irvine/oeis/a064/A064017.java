@@ -4,7 +4,7 @@ package irvine.oeis.a064;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A064017 Number of ternary trees <code>(A001764)</code> with n nodes and maximal diameter.
+ * A064017 Number of ternary trees (A001764) with n nodes and maximal diameter.
  * @author Georg Fischer
  */
 public class A064017 extends GeneratingFunctionSequence {

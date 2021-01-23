@@ -5,7 +5,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128543 <code>a(n) = floor(2^(n-2)*3*n)</code>.
+ * A128543 a(n) = floor(2^(n-2)*3*n).
  * @author Georg Fischer
  */
 public class A128543 extends HolonomicRecurrence {

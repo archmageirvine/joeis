@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A201837 G.f.: real part of <code>1/(1 - i*x - i*x^2)</code> where <code>i=sqrt(-1)</code>.
+ * A201837 G.f.: real part of 1/(1 - i*x - i*x^2) where i=sqrt(-1).
  * @author Sean A. Irvine
  */
 public class A201837 extends LinearRecurrence {

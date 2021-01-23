@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A210626 Values of the prime-generating polynomial <code>4*n^2 - 284*n + 3449</code>.
+ * A210626 Values of the prime-generating polynomial 4*n^2 - 284*n + 3449.
  * @author Sean A. Irvine
  */
 public class A210626 extends LinearRecurrence {

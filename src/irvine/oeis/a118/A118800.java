@@ -7,7 +7,7 @@ package irvine.oeis.a118;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A118800 Triangle read by rows: T satisfies the matrix products: <code>C*T*C = T^-1</code> and <code>T*C*T = C^-1</code>, where C is Pascal's triangle.
+ * A118800 Triangle read by rows: T satisfies the matrix products: C*T*C = T^-1 and T*C*T = C^-1, where C is Pascal's triangle.
  * @author Georg Fischer
  */
 public class A118800 extends GeneratingFunctionTriangle {

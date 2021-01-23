@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022852 Integer nearest <code>n *</code> e, where e is the natural log base.
+ * A022852 Integer nearest n * e, where e is the natural log base.
  * @author Sean A. Irvine
  */
 public class A022852 implements Sequence {

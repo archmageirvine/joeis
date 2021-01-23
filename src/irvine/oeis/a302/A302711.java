@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A302711 Decimal expansion of <code>2*sin(15*Pi/32)</code>.
+ * A302711 Decimal expansion of 2*sin(15*Pi/32).
  * @author Georg Fischer
  */
 public class A302711 extends DecimalExpansionSequence {

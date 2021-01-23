@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A210378 Number of <code>2 X 2</code> matrices with all terms in <code>{0,1,...,n}</code> and even trace.
+ * A210378 Number of 2 X 2 matrices with all terms in {0,1,...,n} and even trace.
  * @author Georg Fischer
  */
 public class A210378 extends GeneratingFunctionSequence {

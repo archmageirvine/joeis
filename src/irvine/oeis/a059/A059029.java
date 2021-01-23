@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059029 <code>a(n) = n</code> if n is even, <code>2*n + 1</code> if n is odd.
+ * A059029 a(n) = n if n is even, 2*n + 1 if n is odd.
  * @author Sean A. Irvine
  */
 public class A059029 extends LinearRecurrence {

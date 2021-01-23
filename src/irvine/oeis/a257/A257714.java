@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257714 Pentagonal numbers <code>(A000326)</code> that are the sum of five consecutive pentagonal numbers.
+ * A257714 Pentagonal numbers (A000326) that are the sum of five consecutive pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A257714 extends LinearRecurrence {

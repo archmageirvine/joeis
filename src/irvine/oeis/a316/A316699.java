@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A316699 Number of (marked) cyclic n-bit binary strings containing no runs of length <code>&gt; 3</code>.
+ * A316699 Number of (marked) cyclic n-bit binary strings containing no runs of length &gt; 3.
  * @author Georg Fischer
  */
 public class A316699 extends GeneratingFunctionSequence {

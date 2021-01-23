@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014617 Antidiagonals of the prime-composite array <code>B(m,n)</code> (see A067681) that are zeros from the first Borve conjecture.
+ * A014617 Antidiagonals of the prime-composite array B(m,n) (see A067681) that are zeros from the first Borve conjecture.
  * @author Sean A. Irvine
  */
 public class A014617 implements Sequence {

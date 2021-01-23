@@ -5,7 +5,7 @@ package irvine.oeis.a077;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A077802 Sum of products of parts increased by 1 in hook partitions of n, where hook partitions are of the form <code>h*1^(n-h)</code>.
+ * A077802 Sum of products of parts increased by 1 in hook partitions of n, where hook partitions are of the form h*1^(n-h).
  * @author Georg Fischer
  */
 public class A077802 extends HolonomicRecurrence {

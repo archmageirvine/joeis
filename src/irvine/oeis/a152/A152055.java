@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152055 <code>a(n) = ((8+sqrt3)^n + (8-sqrt3)^n/2</code>.
+ * A152055 a(n) = ((8+sqrt3)^n + (8-sqrt3)^n/2.
  * @author Georg Fischer
  */
 public class A152055 extends LinearRecurrence {

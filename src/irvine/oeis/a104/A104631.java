@@ -5,7 +5,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104631 Coefficient of <code>x^(2n+1)</code> in the expansion of <code>(1+x+x^2+x^3+x^4)^n</code>.
+ * A104631 Coefficient of x^(2n+1) in the expansion of (1+x+x^2+x^3+x^4)^n.
  * @author Georg Fischer
  */
 public class A104631 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a262;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A262020 Inverse binomial transform of double factorial <code>n!! = A006882(n)</code>.
+ * A262020 Inverse binomial transform of double factorial n!! = A006882(n).
  * @author Georg Fischer
  */
 public class A262020 extends HolonomicRecurrence {

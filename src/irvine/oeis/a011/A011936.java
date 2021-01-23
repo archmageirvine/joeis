@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011936 <code>a(n) = floor( n(n-1)(n-2)(n-3)/26 )</code>.
+ * A011936 a(n) = floor( n(n-1)(n-2)(n-3)/26 ).
  * @author Sean A. Irvine
  */
 public class A011936 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A001603 Odd-indexed terms of <code>A124296</code>.
+ * A001603 Odd-indexed terms of A124296.
  * @author Sean A. Irvine
  */
 public class A001603 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000032 Lucas numbers beginning at <code>2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1</code>.
+ * A000032 Lucas numbers beginning at 2: L(n) = L(n-1) + L(n-2), L(0) = 2, L(1) = 1.
  * @author Sean A. Irvine
  */
 public class A000032 implements Sequence {

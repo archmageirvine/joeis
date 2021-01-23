@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028417 Sum over all <code>n!</code> permutations of n elements of minimum lengths of cycles.
+ * A028417 Sum over all n! permutations of n elements of minimum lengths of cycles.
  * @author Sean A. Irvine
  */
 public class A028417 extends MemoryFunction2<Long, Z> implements Sequence {

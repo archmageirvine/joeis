@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204091 The number of <code>1 X n</code> Haunted Mirror Maze puzzles with a unique solution ending with a mirror.
+ * A204091 The number of 1 X n Haunted Mirror Maze puzzles with a unique solution ending with a mirror.
  * @author Georg Fischer
  */
 public class A204091 extends GeneratingFunctionSequence {

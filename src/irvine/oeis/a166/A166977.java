@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A166977 Jacobsthal-Lucas numbers <code>A014551</code>, except <code>a(0) = 0</code>.
+ * A166977 Jacobsthal-Lucas numbers A014551, except a(0) = 0.
  * @author Georg Fischer
  */
 public class A166977 extends GeneratingFunctionSequence {

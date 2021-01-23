@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109720 Periodic sequence <code>{0,1,1,1,1,1,1}</code> or <code>n^6 mod 7</code>.
+ * A109720 Periodic sequence {0,1,1,1,1,1,1} or n^6 mod 7.
  * @author Sean A. Irvine
  */
 public class A109720 extends LinearRecurrence {

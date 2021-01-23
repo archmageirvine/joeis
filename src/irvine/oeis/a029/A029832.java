@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029832 A discrete version of the Mangoldt function: if n is prime then <code>ceiling(log(n))</code> else 0.
+ * A029832 A discrete version of the Mangoldt function: if n is prime then ceiling(log(n)) else 0.
  * @author Sean A. Irvine
  */
 public class A029832 implements Sequence {

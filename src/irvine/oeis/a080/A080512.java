@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A080512 <code>a(n) = n</code> if n is odd, <code>a(n) = 3*n/2</code> if n is even.
+ * A080512 a(n) = n if n is odd, a(n) = 3*n/2 if n is even.
  * @author Georg Fischer
  */
 public class A080512 extends GeneratingFunctionSequence {

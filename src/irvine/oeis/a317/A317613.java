@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A317613 Permutation of the nonnegative integers: <code>lodumo_4</code> of <code>A047247</code>.
+ * A317613 Permutation of the nonnegative integers: lodumo_4 of A047247.
  * @author Georg Fischer
  */
 public class A317613 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a033;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A033815 Number of standard permutations of <code>[ a_1..a_n b_1..b_n ] (b_i</code> is not immediately followed by <code>a_i</code>, for all <code>i)</code>.
+ * A033815 Number of standard permutations of [ a_1..a_n b_1..b_n ] (b_i is not immediately followed by a_i, for all i).
  * @author Georg Fischer
  */
 public class A033815 extends HolonomicRecurrence {

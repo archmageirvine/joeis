@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A160413 <code>a(n) = A160411(n+1)/4</code>.
+ * A160413 a(n) = A160411(n+1)/4.
  * @author Georg Fischer
  */
 public class A160413 extends GeneratingFunctionSequence {

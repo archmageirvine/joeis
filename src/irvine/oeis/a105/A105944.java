@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A105944 <code>C(n+8,n)*C(n+11,8)</code>.
+ * A105944 C(n+8,n)*C(n+11,8).
  * @author Georg Fischer
  */
 public class A105944 extends GeneratingFunctionSequence {

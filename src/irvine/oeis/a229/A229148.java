@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229148 <code>a(n) = n^5*(7*n+5)/2</code>.
+ * A229148 a(n) = n^5*(7*n+5)/2.
  * @author Georg Fischer
  */
 public class A229148 extends GeneratingFunctionSequence {

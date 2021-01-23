@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057615 ATS: Add Then Sort <code>(i.e.</code>, double previous term and then sort digits).
+ * A057615 ATS: Add Then Sort (i.e., double previous term and then sort digits).
  * @author Georg Fischer
  */
 public class A057615 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011883 <code>a(n) = floor(n*(n-1)/30)</code>.
+ * A011883 a(n) = floor(n*(n-1)/30).
  * @author Sean A. Irvine
  */
 public class A011883 implements Sequence {

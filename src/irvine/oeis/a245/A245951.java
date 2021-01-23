@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245951 Number of length <code>1+3 0..n</code> arrays with some pair in every consecutive four terms totalling exactly <code>n</code>.
+ * A245951 Number of length 1+3 0..n arrays with some pair in every consecutive four terms totalling exactly n.
  * @author Georg Fischer
  */
 public class A245951 extends GeneratingFunctionSequence {

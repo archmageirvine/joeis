@@ -6,7 +6,7 @@ package irvine.oeis.a277;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277871 <code>a(n) = Sum_{i=0..n+1} binomial(2*n-i,n-i+1)*Catalan(i)</code>.
+ * A277871 a(n) = Sum_{i=0..n+1} binomial(2*n-i,n-i+1)*Catalan(i).
  * @author Georg Fischer
  */
 public class A277871 extends HolonomicRecurrence {

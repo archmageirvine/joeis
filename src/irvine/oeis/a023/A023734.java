@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023734 Numbers with a single 3 in their <code>base-5</code> expansion.
+ * A023734 Numbers with a single 3 in their base-5 expansion.
  * @author Sean A. Irvine
  */
 public class A023734 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028594 Expansion of <code>(theta_3(q) * theta_3(q^7) + theta_2(q) * theta_2(q^7))^2</code> in powers of q.
+ * A028594 Expansion of (theta_3(q) * theta_3(q^7) + theta_2(q) * theta_2(q^7))^2 in powers of q.
  * @author Sean A. Irvine
  */
 public class A028594 implements Sequence {

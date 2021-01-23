@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008952 Leading digit of <code>2^n</code>.
+ * A008952 Leading digit of 2^n.
  * @author Sean A. Irvine
  */
 public class A008952 implements Sequence {

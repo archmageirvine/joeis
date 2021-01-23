@@ -6,7 +6,7 @@ package irvine.oeis.a043;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A043301 <code>a(n) = 2^n*Sum_{k=0..n} (n+k)!/((n-k)!*k!*4^k)</code>.
+ * A043301 a(n) = 2^n*Sum_{k=0..n} (n+k)!/((n-k)!*k!*4^k).
  * @author Georg Fischer
  */
 public class A043301 extends HolonomicRecurrence {

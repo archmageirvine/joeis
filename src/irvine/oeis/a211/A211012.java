@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211012 Total area of all squares and rectangles after <code>2^n</code> stages in the toothpick structure of <code>A139250</code>, assuming the toothpicks have length 2.
+ * A211012 Total area of all squares and rectangles after 2^n stages in the toothpick structure of A139250, assuming the toothpicks have length 2.
  * @author Georg Fischer
  */
 public class A211012 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A295926 Number of (not necessarily maximum) cliques in the <code>n-cube-connected</code> cycle graph.
+ * A295926 Number of (not necessarily maximum) cliques in the n-cube-connected cycle graph.
  * @author Georg Fischer
  */
 public class A295926 extends GeneratingFunctionSequence {

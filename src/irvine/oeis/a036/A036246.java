@@ -6,7 +6,7 @@ package irvine.oeis.a036;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A036246 CONTINUANT transform of squares <code>1, 4, 9, ..</code>.
+ * A036246 CONTINUANT transform of squares 1, 4, 9, ...
  * @author Georg Fischer
  */
 public class A036246 extends HolonomicRecurrence {

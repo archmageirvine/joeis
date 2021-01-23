@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A298740 Decimal expansion of <code>(1/2)(1 + sqrt(1 + 4*sqrt(2)))</code>.
+ * A298740 Decimal expansion of (1/2)(1 + sqrt(1 + 4*sqrt(2))).
  * @author Georg Fischer
  */
 public class A298740 extends DecimalExpansionSequence {

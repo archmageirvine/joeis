@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105067 <code>a(n) = Sum_{j=0..11} n^j</code>.
+ * A105067 a(n) = Sum_{j=0..11} n^j.
  * @author Georg Fischer
  */
 public class A105067 extends HolonomicRecurrence {

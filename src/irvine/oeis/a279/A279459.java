@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A279459 Numbers n such that sum of the proper divisors of n is the square of the sum of the digits of <code>n</code>.
+ * A279459 Numbers n such that sum of the proper divisors of n is the square of the sum of the digits of n.
  * @author Georg Fischer
  */
 public class A279459 extends FiniteSequence {

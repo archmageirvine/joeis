@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A120674 Least number with distinct digits including digits <code>1,2,...,n</code> and divisible by each of <code>1,2,...,n</code>.
+ * A120674 Least number with distinct digits including digits 1,2,...,n and divisible by each of 1,2,...,n.
  * @author Georg Fischer
  */
 public class A120674 extends FiniteSequence {

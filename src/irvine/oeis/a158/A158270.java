@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A158270 Single-digit numbers in <code>A061049</code>.
+ * A158270 Single-digit numbers in A061049.
  * @author Georg Fischer
  */
 public class A158270 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161888 <code>a(n) =</code> the smallest positive integer that does not divide n, and is such that <code>sum{k=1</code> to <code>n} a(k)</code> is coprime to <code>n</code>.
+ * A161888 a(n) = the smallest positive integer that does not divide n, and is such that sum{k=1 to n} a(k) is coprime to n.
  * @author Sean A. Irvine
  */
 public class A161888 implements Sequence {

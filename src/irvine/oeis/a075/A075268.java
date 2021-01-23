@@ -6,7 +6,7 @@ package irvine.oeis.a075;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A075268 Trajectory of 442 under the Reverse and <code>Add!</code> operation carried out in base 2.
+ * A075268 Trajectory of 442 under the Reverse and Add! operation carried out in base 2.
  * @author Georg Fischer
  */
 public class A075268 extends GeneratingFunctionSequence {

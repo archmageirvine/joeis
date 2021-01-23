@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030159 Numbers n such that in <code>n^3</code> the parity of digits alternates.
+ * A030159 Numbers n such that in n^3 the parity of digits alternates.
  * @author Sean A. Irvine
  */
 public class A030159 implements Sequence {

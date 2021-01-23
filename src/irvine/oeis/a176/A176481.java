@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001333;
 
 /**
- * A176481 Triangle, read by rows, defined by <code>T(n, k) = b(n) - b(k) - b(n-k) + 2</code>, where <code>b(n) = A001333(n)</code>.
+ * A176481 Triangle, read by rows, defined by T(n, k) = b(n) - b(k) - b(n-k) + 2, where b(n) = A001333(n).
  * @author Sean A. Irvine
  */
 public class A176481 extends A001333 {

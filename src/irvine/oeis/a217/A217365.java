@@ -5,7 +5,7 @@ package irvine.oeis.a217;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A217365 Series reversion of <code>x + x^2 + x^3 + x^4 + x^5</code>.
+ * A217365 Series reversion of x + x^2 + x^3 + x^4 + x^5.
  * @author Georg Fischer
  */
 public class A217365 extends HolonomicRecurrence {

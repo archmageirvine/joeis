@@ -7,7 +7,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A211957 Triangle of coefficients of a polynomial sequence related to the Morgan-Voyce polynomials <code>A085478</code>.
+ * A211957 Triangle of coefficients of a polynomial sequence related to the Morgan-Voyce polynomials A085478.
  * @author Georg Fischer
  */
 public class A211957 extends GeneratingFunctionTriangle {

@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A236327 <code>a(n)*Pi</code> is the total length of irregular spiral (center points: <code>1, 2, 3, 4, 5</code>; pattern <code>2)</code> after n rotations.
+ * A236327 a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3, 4, 5; pattern 2) after n rotations.
  * @author Georg Fischer
  */
 public class A236327 extends GeneratingFunctionSequence {

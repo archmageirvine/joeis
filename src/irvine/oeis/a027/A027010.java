@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027010 <code>a(n) = Sum_{k=floor((n+1)/2)..n} T(k,n-k)</code>; i.e., <code>a(n)</code> is the n-th diagonal sum of left-justified array T given by <code>A026998</code>.
+ * A027010 a(n) = Sum_{k=floor((n+1)/2)..n} T(k,n-k); i.e., a(n) is the n-th diagonal sum of left-justified array T given by A026998.
  * @author Georg Fischer
  */
 public class A027010 extends GeneratingFunctionSequence {

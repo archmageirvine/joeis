@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A174867 Root vector parameters of the 99 subgroups of <code>E8</code>.
+ * A174867 Root vector parameters of the 99 subgroups of E8.
  * @author Georg Fischer
  */
 public class A174867 extends FiniteSequence {

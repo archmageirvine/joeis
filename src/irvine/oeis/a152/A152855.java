@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152855 Periodic sequence <code>[1,2,0,2,0]</code> of period 5.
+ * A152855 Periodic sequence [1,2,0,2,0] of period 5.
  * @author Sean A. Irvine
  */
 public class A152855 extends LinearRecurrence {

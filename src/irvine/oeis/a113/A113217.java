@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010888;
 
 /**
- * A113217 Parity of decimal digital root of <code>n</code>.
+ * A113217 Parity of decimal digital root of n.
  * @author Georg Fischer
  */
 public class A113217 extends A010888 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A113217() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

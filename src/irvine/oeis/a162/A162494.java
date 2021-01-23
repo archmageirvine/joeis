@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162494 Number of reduced words of length n in the Weyl group <code>E_8</code> on 8 generators and order 696729600.
+ * A162494 Number of reduced words of length n in the Weyl group E_8 on 8 generators and order 696729600.
  * @author Georg Fischer
  */
 public class A162494 extends GeneratingFunctionSequence {

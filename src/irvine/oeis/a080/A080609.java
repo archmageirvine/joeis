@@ -5,7 +5,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080609 Binomial transform of central Delannoy numbers <code>A001850</code>.
+ * A080609 Binomial transform of central Delannoy numbers A001850.
  * @author Georg Fischer
  */
 public class A080609 extends HolonomicRecurrence {

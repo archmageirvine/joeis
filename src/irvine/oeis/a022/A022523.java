@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022523 Nexus numbers <code>(n+1)^7-n^7</code>.
+ * A022523 Nexus numbers (n+1)^7-n^7.
  * @author Sean A. Irvine
  */
 public class A022523 extends LinearRecurrence {

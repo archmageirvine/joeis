@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005900 Octahedral numbers: <code>a(n) = n*(2*n^2 + 1)/3</code>.
+ * A005900 Octahedral numbers: a(n) = n*(2*n^2 + 1)/3.
  * @author Sean A. Irvine
  */
 public class A005900 implements Sequence {

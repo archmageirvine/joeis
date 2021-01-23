@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A142717 First (leftmost) odd term in the n-th row of triangle <code>A120070</code>.
+ * A142717 First (leftmost) odd term in the n-th row of triangle A120070.
  * @author Sean A. Irvine
  */
 public class A142717 extends LinearRecurrence {

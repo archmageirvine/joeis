@@ -7,7 +7,7 @@ package irvine.oeis.a079;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A079628 Array of coefficients of <code>P(n,x) =</code> det <code>(M(n,x))</code> where <code>M(n,x)</code> is the <code>n X n</code> matrix <code>m(i,j)=x</code> if i&gt;j <code>m(i,j)=1-x</code> if <code>i&lt;=j</code>.
+ * A079628 Array of coefficients of P(n,x) = det (M(n,x)) where M(n,x) is the n X n matrix m(i,j)=x if i&gt;j m(i,j)=1-x if i&lt;=j.
  * @author Georg Fischer
  */
 public class A079628 extends GeneratingFunctionTriangle {

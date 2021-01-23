@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002720 Number of partial permutations of an <code>n-set</code>; number of <code>n X n</code> binary matrices with at most one 1 in each row and column.
+ * A002720 Number of partial permutations of an n-set; number of n X n binary matrices with at most one 1 in each row and column.
  * @author Sean A. Irvine
  */
 public class A002720 implements Sequence {
@@ -16,7 +16,7 @@ public class A002720 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    if (Z.ZERO.equals(mN)) {
+    if (mN.isZero()) {
       return Z.ONE;
     } else if (!Z.ONE.equals(mN)) {
       final Z t = mB.multiply(mN).multiply2().subtract(mN.subtract(1).square().multiply(mA));

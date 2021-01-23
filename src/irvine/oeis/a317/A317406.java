@@ -6,7 +6,7 @@ package irvine.oeis.a317;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A317406 Expansion of e.g.f. <code>sin(x/(1 - x))</code>.
+ * A317406 Expansion of e.g.f. sin(x/(1 - x)).
  * @author Georg Fischer
  */
 public class A317406 extends HolonomicRecurrence {

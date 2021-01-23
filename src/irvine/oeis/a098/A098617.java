@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098617 G.f. <code>A(x)</code> satisfies: <code>A(x*G(x)) = G(x)</code>, where <code>G(x)</code> is the g.f. for <code>A098616(n) = Pell(n+1)*Catalan(n)</code>.
+ * A098617 G.f. A(x) satisfies: A(x*G(x)) = G(x), where G(x) is the g.f. for A098616(n) = Pell(n+1)*Catalan(n).
  * @author Georg Fischer
  */
 public class A098617 extends HolonomicRecurrence {

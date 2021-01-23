@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212901 Number of <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code> and equal consecutive gap sizes.
+ * A212901 Number of (w,x,y,z) with all terms in {0,...,n} and equal consecutive gap sizes.
  * @author Sean A. Irvine
  */
 public class A212901 extends LinearRecurrence {

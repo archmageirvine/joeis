@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265048 Poincare series for hyperbolic reflection group with Coxeter diagram <code>o-(5)-o---o-(5)-o</code>.
+ * A265048 Poincar\u00e9 series for hyperbolic reflection group with Coxeter diagram o-(5)-o---o-(5)-o.
  * @author Georg Fischer
  */
 public class A265048 extends LinearRecurrence {

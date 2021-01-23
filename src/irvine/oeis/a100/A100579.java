@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100579 Numerator of the best rational approximation to the decimal representation of the digital roots of <code>m^n, m=1,2,.</code>.
+ * A100579 Numerator of the best rational approximation to the decimal representation of the digital roots of m^n, m=1,2,..
  * @author Sean A. Irvine
  */
 public class A100579 extends LinearRecurrence {

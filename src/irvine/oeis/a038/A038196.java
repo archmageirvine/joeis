@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038196 3-wave sequence starting with <code>1, 1, 1</code>.
+ * A038196 3-wave sequence starting with 1, 1, 1.
  * @author Georg Fischer
  */
 public class A038196 extends GeneratingFunctionSequence {

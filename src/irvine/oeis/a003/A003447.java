@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A003447 Number of nonequivalent dissections of an n-gon into <code>n-3</code> polygons by nonintersecting diagonals rooted at a cell up to rotation and reflection.
+ * A003447 Number of nonequivalent dissections of an n-gon into n-3 polygons by nonintersecting diagonals rooted at a cell up to rotation and reflection.
  * @author Sean A. Irvine
  */
 public class A003447 extends A003442 {

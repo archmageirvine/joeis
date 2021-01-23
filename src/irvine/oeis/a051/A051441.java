@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A051441 <code>4^3^2^1, 5^4^3, 6^5, 7</code>.
+ * A051441 4^3^2^1, 5^4^3, 6^5, 7.
  * @author Georg Fischer
  */
 public class A051441 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A051441() {
-    super(new Z("262144"), new Z("542101086242752217003726400434970855712890625"), new Z("7776"), new Z("7"));
+    super(new Z("262144"), new Z("542101086242752217003726400434970855712890625"), new Z("7776"), Z.SEVEN);
   }
 }

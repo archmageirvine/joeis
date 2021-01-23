@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A213256 <code>p(11n+6)</code> where <code>p(k) =</code> number of partitions of k <code>= A000041(k)</code>.
+ * A213256 p(11n+6) where p(k) = number of partitions of k = A000041(k).
  * @author Sean A. Irvine
  */
 public class A213256 implements Sequence {

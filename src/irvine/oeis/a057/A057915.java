@@ -5,13 +5,13 @@ package irvine.oeis.a057;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A057915 Numbers k such that <code>2*5^k - 3</code> is prime.
+ * A057915 Numbers k such that 2*5^k - 3 is prime.
  * @author Georg Fischer
  */
 public class A057915 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A057915() {
-    super(1, 1, 2, 5, -3, 0);
+    super(1, 1, 2, 5, -3);
   }
 }

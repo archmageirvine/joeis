@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162690 Strictly positive numbers n such that <code>20*n/(20+n)</code> are integers.
+ * A162690 Strictly positive numbers n such that 20*n/(20+n) are integers.
  * @author Georg Fischer
  */
 public class A162690 extends FiniteSequence {

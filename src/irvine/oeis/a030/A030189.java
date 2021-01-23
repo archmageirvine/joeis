@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030189 Expansion of <code>eta(q)*eta(q^2)*eta(q^4)*eta(q^8)</code>.
+ * A030189 Expansion of eta(q)*eta(q^2)*eta(q^4)*eta(q^8).
  * @author Sean A. Irvine
  */
 public class A030189 implements Sequence {

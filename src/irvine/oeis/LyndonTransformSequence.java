@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * A sequence comprising the Lyndon transform of another sequence.
  * @author Sean A. Irvine
  */
-public class LyndonTransformSequence extends InverseEulerTransformSequence {
+public class LyndonTransformSequence extends InverseEulerTransform {
 
   private boolean mFirst = true;
 

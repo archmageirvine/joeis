@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A158083 Possible answer to Marus du Satoy's puzzle sequence: <code>a(n)=If[n &lt;= 4, a[n - 1] + a[n - 2], If[n == 5, a[n - 1] + a[n - 2] + 9, a[n - 1] + 9]]</code>.
+ * A158083 Possible answer to Marus du Satoy's puzzle sequence: a(n)=If[n &lt;= 4, a[n - 1] + a[n - 2], If[n == 5, a[n - 1] + a[n - 2] + 9, a[n - 1] + 9]].
  * @author Georg Fischer
  */
 public class A158083 extends GeneratingFunctionSequence {

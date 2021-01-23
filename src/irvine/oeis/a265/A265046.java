@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A265046 Coordination sequence for a 4.6.6 point in the 3-transitive tiling <code>{4.6.6, 6.6.6, 6.6.6.6}</code> of the plane by squares and dominoes (hexagons).
+ * A265046 Coordination sequence for a 4.6.6 point in the 3-transitive tiling {4.6.6, 6.6.6, 6.6.6.6} of the plane by squares and dominoes (hexagons).
  * @author Georg Fischer
  */
 public class A265046 extends GeneratingFunctionSequence {

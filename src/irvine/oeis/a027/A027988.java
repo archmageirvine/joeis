@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027988 Greatest number in row n of array T given by <code>A027926</code>.
+ * A027988 Greatest number in row n of array T given by A027926.
  * @author Sean A. Irvine
  */
 public class A027988 implements Sequence {

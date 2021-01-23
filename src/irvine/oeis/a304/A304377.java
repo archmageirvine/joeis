@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304377 <code>a(n) = 102*2^n - 96 (n&gt;=1)</code>.
+ * A304377 a(n) = 102*2^n - 96 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304377 extends GeneratingFunctionSequence {

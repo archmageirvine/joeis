@@ -6,7 +6,7 @@ package irvine.oeis.a081;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A081440 Expansion of e.g.f.: <code>exp(x)*cosh(x/sqrt(1 - x^2))</code>.
+ * A081440 Expansion of e.g.f.: exp(x)*cosh(x/sqrt(1 - x^2)).
  * @author Georg Fischer
  */
 public class A081440 extends HolonomicRecurrence {

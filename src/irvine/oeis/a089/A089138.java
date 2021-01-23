@@ -5,7 +5,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089138 <code>a(n) = (3^(2*n))*(integral_{x=0</code> to <code>1} (1+x^3)^n dx)/(integral_{x=0</code> to <code>1} (1-x^3)^n</code> dx).
+ * A089138 a(n) = (3^(2*n))*(integral_{x=0 to 1} (1+x^3)^n dx)/(integral_{x=0 to 1} (1-x^3)^n dx).
  * @author Georg Fischer
  */
 public class A089138 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A172100 Diagonal of the <code>26 X 26</code> Caesar Shift table.
+ * A172100 Diagonal of the 26 X 26 Caesar Shift table.
  * @author Georg Fischer
  */
 public class A172100 extends FiniteSequence {

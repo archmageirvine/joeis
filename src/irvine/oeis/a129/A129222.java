@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129222 Residues of the Lucas - Lehmer primality test for <code>M(17) = 131071</code>.
+ * A129222 Residues of the Lucas - Lehmer primality test for M(17) = 131071.
  * @author Georg Fischer
  */
 public class A129222 extends FiniteSequence {

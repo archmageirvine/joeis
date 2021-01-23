@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020921 Triangle read by rows: <code>T(m,n) =</code> number of solutions to <code>1 &lt;= a(1) &lt; a(2) &lt; ... &lt; a(m) &lt;=</code> n, where <code>gcd( a(1), a(2)</code>, ..., <code>a(m), n) = 1</code>.
+ * A020921 Triangle read by rows: T(m,n) = number of solutions to 1 &lt;= a(1) &lt; a(2) &lt; ... &lt; a(m) &lt;= n, where gcd( a(1), a(2), ..., a(m), n) = 1.
  * @author Sean A. Irvine
  */
 public class A020921 implements Sequence {

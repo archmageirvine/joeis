@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140429 <code>a(n) = floor(3^(n-1))</code>.
+ * A140429 a(n) = floor(3^(n-1)).
  * @author Georg Fischer
  */
 public class A140429 extends GeneratingFunctionSequence {

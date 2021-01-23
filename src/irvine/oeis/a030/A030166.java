@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Chinese;
 
 /**
- * A030166 Number of strokes in Chinese characters for n; also number of strokes in Japanese kanji characters for <code>n</code>.
+ * A030166 Number of strokes in Chinese characters for n; also number of strokes in Japanese kanji characters for n.
  * @author Sean A. Irvine
  */
 public class A030166 implements Sequence {

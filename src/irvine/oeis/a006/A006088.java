@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006088 <code>a(n) = (2^n + 2) a(n-1)</code> (kissing number of Barnes-Wall lattice in dimension <code>2^n)</code>.
+ * A006088 a(n) = (2^n + 2) a(n-1) (kissing number of Barnes-Wall lattice in dimension 2^n).
  * @author Sean A. Irvine
  */
 public class A006088 implements Sequence {

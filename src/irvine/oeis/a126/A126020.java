@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126020 Number of convex permutominoes of size <code>n</code>.
+ * A126020 Number of convex permutominoes of size n.
  * @author Georg Fischer
  */
 public class A126020 extends HolonomicRecurrence {

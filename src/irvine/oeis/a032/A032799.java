@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A032799 Numbers n such that n equals the sum of its digits raised to the consecutive powers <code>(1,2,3,...)</code>.
+ * A032799 Numbers n such that n equals the sum of its digits raised to the consecutive powers (1,2,3,...).
  * @author Georg Fischer
  */
 public class A032799 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A032799() {
-    super(Z.ZERO, Z.ONE, new Z("2"), new Z("3"), new Z("4"), new Z("5"), new Z("6"), new Z("7"), new Z("8"), new Z("9"), new Z("89"), new Z("135"), new Z("175"), new Z("518"), new Z("598"), new Z("1306"), new Z("1676"), new Z("2427"), new Z("2646798"), new Z("12157692622039623539"));
+    super(Z.ZERO, Z.ONE, Z.TWO, Z.THREE, Z.FOUR, Z.FIVE, Z.SIX, Z.SEVEN, Z.EIGHT, Z.NINE, new Z("89"), new Z("135"), new Z("175"), new Z("518"), new Z("598"), new Z("1306"), new Z("1676"), new Z("2427"), new Z("2646798"), new Z("12157692622039623539"));
   }
 }

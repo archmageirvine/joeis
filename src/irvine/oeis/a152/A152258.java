@@ -5,7 +5,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152258 <code>a(n) = ((3^n - 1)*(3^n + 1))^2/2^(7 - (n mod 2))</code>.
+ * A152258 a(n) = ((3^n - 1)*(3^n + 1))^2/2^(7 - (n mod 2)).
  * @author Georg Fischer
  */
 public class A152258 extends HolonomicRecurrence {

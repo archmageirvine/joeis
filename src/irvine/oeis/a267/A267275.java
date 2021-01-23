@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A267275 Binary representation of the n-th iteration of the "Rule <code>118"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A267275 Binary representation of the n-th iteration of the "Rule 118" elementary cellular automaton starting with a single ON (black) cell.
  * @author Sean A. Irvine
  */
 public class A267275 extends LinearRecurrence {

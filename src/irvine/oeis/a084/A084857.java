@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084857 Inverse binomial transform of <code>n^2*3^(n-1)</code>.
+ * A084857 Inverse binomial transform of n^2*3^(n-1).
  * @author Sean A. Irvine
  */
 public class A084857 extends LinearRecurrence {

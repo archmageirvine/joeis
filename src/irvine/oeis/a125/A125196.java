@@ -6,7 +6,7 @@ package irvine.oeis.a125;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A125196 Number of magic labelings of the Petersen graph with magic sum <code>n</code>.
+ * A125196 Number of magic labelings of the Petersen graph with magic sum n.
  * @author Georg Fischer
  */
 public class A125196 extends HolonomicRecurrence {

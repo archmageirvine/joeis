@@ -5,7 +5,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078137 Numbers which can be written as sum of <code>squares&gt;1</code>.
+ * A078137 Numbers which can be written as sum of squares&gt;1.
  * @author Georg Fischer
  */
 public class A078137 extends HolonomicRecurrence {

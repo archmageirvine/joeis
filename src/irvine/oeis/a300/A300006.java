@@ -5,7 +5,7 @@ package irvine.oeis.a300;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A300006 Matrices of the <code>2 X 2</code> sandpile group, with matrix <code>[a,b;c,d]</code> encoded as <code>concat(a,b,c,d)</code>, leading 0 omitted.
+ * A300006 Matrices of the 2 X 2 sandpile group, with matrix [a,b;c,d] encoded as concat(a,b,c,d), leading 0 omitted.
  * @author Georg Fischer
  */
 public class A300006 extends FiniteSequence {

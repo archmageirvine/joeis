@@ -5,7 +5,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A002589 Largest primitive factor of <code>2^(2n+1) + 1</code>.
+ * A002589 Largest primitive factor of 2^(2n+1) + 1.
  *
  * @author Sean A. Irvine
  */
@@ -20,7 +20,7 @@ public class A002589 implements Sequence {
     }
     Z b = Z.TWO;
     for (int k = 2; k < n; ++k, b = b.shiftLeft(1)) {
-      if (Z.ZERO.equals(b.subtract(1).mod(p))) {
+      if (b.subtract(1).mod(p).isZero()) {
         return true;
       }
     }

@@ -5,13 +5,13 @@ package irvine.oeis.a101;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A101392 Numbers n such that <code>2*10^n+9</code> is prime.
+ * A101392 Numbers n such that 2*10^n+9 is prime.
  * @author Georg Fischer
  */
 public class A101392 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A101392() {
-    super(1, 0, 2, 10, +9, 0);
+    super(1, 0, 2, 10, +9);
   }
 }

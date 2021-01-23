@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A299909 Coordination sequence of node of type <code>3^6</code> in 3-uniform tiling <code>#3.54</code> in the Galebach listing.
+ * A299909 Coordination sequence of node of type 3^6 in 3-uniform tiling #3.54 in the Galebach listing.
  * @author Georg Fischer
  */
 public class A299909 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A162400 <code>a(n) =</code> the largest square that when represented in binary is a substring within the binary representation of <code>n</code>.
+ * A162400 a(n) = the largest square that when represented in binary is a substring within the binary representation of n.
  * @author Sean A. Irvine
  */
 public class A162400 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213042 Convolution of <code>(1,0,2,0,3,0,...)</code> and <code>(1,0,0,2,0,0,3,0,0,...)</code>; i.e., <code>(A027656(n))</code> and <code>(A175676(n+2))</code>.
+ * A213042 Convolution of (1,0,2,0,3,0,...) and (1,0,0,2,0,0,3,0,0,...); i.e., (A027656(n)) and (A175676(n+2)).
  * @author Sean A. Irvine
  */
 public class A213042 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a085;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085742 <code>a(n) = T(n^3) - T(n)</code>, where <code>T()</code> are the triangular numbers <code>(A000217)</code>.
+ * A085742 a(n) = T(n^3) - T(n), where T() are the triangular numbers (A000217).
  * @author Georg Fischer
  */
 public class A085742 extends HolonomicRecurrence {

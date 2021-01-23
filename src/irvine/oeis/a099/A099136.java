@@ -5,7 +5,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099136 Inverse integer permutation to <code>A099135</code>.
+ * A099136 Inverse integer permutation to A099135.
  * @author Georg Fischer
  */
 public class A099136 extends HolonomicRecurrence {

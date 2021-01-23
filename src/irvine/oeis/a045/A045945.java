@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045945 Hexagonal matchstick numbers: <code>a(n) = 3*n*(3*n+1)</code>.
+ * A045945 Hexagonal matchstick numbers: a(n) = 3*n*(3*n+1).
  * @author Sean A. Irvine
  */
 public class A045945 extends LinearRecurrence {

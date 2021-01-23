@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175890 Positions of <code>A175889(n=1..9)</code> in the sequence <code>A175888</code>.
+ * A175890 Positions of A175889(n=1..9) in the sequence A175888.
  * @author Georg Fischer
  */
 public class A175890 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A020603 Smallest nonempty set S containing prime divisors of <code>6k+5</code> for each k in S.
+ * A020603 Smallest nonempty set S containing prime divisors of 6k+5 for each k in S.
  * @author Sean A. Irvine
  */
 public class A020603 extends FiniteSequence {

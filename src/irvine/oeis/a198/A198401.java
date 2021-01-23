@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A198401 <code>8^n+n^8</code>.
+ * A198401 8^n+n^8.
  * @author Sean A. Irvine
  */
 public class A198401 extends LinearRecurrence {

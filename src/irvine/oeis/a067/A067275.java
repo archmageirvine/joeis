@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067275 Number of Fibonacci numbers <code>A000045(k), k &lt;= 10^n</code>, which end in 4.
+ * A067275 Number of Fibonacci numbers A000045(k), k &lt;= 10^n, which end in 4.
  * @author Georg Fischer
  */
 public class A067275 extends GeneratingFunctionSequence {

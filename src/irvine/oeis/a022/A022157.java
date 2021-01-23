@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022157 <code>a(n) = n^2 - phi(n)*tau(n)^2</code>.
+ * A022157 a(n) = n^2 - phi(n)*tau(n)^2.
  * @author Sean A. Irvine
  */
 public class A022157 implements Sequence {

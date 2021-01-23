@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138279 Last digit of <code>A136324</code>. After <code>0, 1</code>, period <code>4</code>: repeat <code>[1, 2, 5, 6] = A131800</code>.
+ * A138279 Last digit of A136324. After 0, 1, period 4: repeat [1, 2, 5, 6] = A131800.
  * @author Georg Fischer
  */
 public class A138279 extends GeneratingFunctionSequence {

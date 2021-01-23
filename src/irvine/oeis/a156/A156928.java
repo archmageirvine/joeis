@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156928 G.f. of the <code>z^1</code> coefficients of the <code>FP1</code> in the second column of the <code>A156921</code> matrix.
+ * A156928 G.f. of the z^1 coefficients of the FP1 in the second column of the A156921 matrix.
  * @author Georg Fischer
  */
 public class A156928 extends HolonomicRecurrence {

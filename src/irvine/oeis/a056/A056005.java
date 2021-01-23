@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056005 Number of 3-element ordered antichains on an unlabeled n-element set; <code>T_1-hypergraphs</code> with 3 labeled nodes and n hyperedges.
+ * A056005 Number of 3-element ordered antichains on an unlabeled n-element set; T_1-hypergraphs with 3 labeled nodes and n hyperedges.
  * @author Sean A. Irvine
  */
 public class A056005 extends LinearRecurrence {

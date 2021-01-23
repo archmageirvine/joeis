@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008454 Tenth powers: <code>a(n) = n^10</code>.
+ * A008454 Tenth powers: a(n) = n^10.
  * @author Sean A. Irvine
  */
 public class A008454 implements Sequence {

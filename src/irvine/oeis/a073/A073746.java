@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073746 Decimal expansion of <code>sech(1)</code>.
+ * A073746 Decimal expansion of sech(1).
  * @author Georg Fischer
  */
 public class A073746 extends DecimalExpansionSequence {

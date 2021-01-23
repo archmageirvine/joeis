@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006016;
 
 /**
- * A022427 <code>a(n) = c(n-1) + c(n-3)</code> where c is the sequence of numbers not in a.
+ * A022427 a(n) = c(n-1) + c(n-3) where c is the sequence of numbers not in a.
  * @author Sean A. Irvine
  */
 public class A022427 implements Sequence {

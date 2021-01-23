@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A189761 Numbers n for which the set of residues <code>{Fibonacci(k) mod</code> n, <code>k=0,1,2,....}</code> is minimal.
+ * A189761 Numbers n for which the set of residues {Fibonacci(k) mod n, k=0,1,2,....} is minimal.
  * @author Georg Fischer
  */
 public class A189761 extends GeneratingFunctionSequence {

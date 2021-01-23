@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001259 A sequence of sorted odd primes <code>3 = p_1 &lt; p_2 &lt; ... &lt; p_m</code> such that <code>p_i-2</code> divides the product <code>p_1*p_2*...*p_(i-1)</code> of the earlier primes and each prime factor of <code>p_i-1</code> is a prime factor of twice the product.
+ * A001259 A sequence of sorted odd primes 3 = p_1 &lt; p_2 &lt; ... &lt; p_m such that p_i-2 divides the product p_1*p_2*...*p_(i-1) of the earlier primes and each prime factor of p_i-1 is a prime factor of twice the product.
  * @author Sean A. Irvine
  */
 public class A001259 extends FiniteSequence {

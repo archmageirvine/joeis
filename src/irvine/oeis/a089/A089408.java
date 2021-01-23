@@ -6,7 +6,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089408 Number of fixed points in range <code>[A014137(n-1)..A014138(n-1)]</code> of permutation <code>A089864</code>.
+ * A089408 Number of fixed points in range [A014137(n-1)..A014138(n-1)] of permutation A089864.
  * @author Georg Fischer
  */
 public class A089408 extends HolonomicRecurrence {

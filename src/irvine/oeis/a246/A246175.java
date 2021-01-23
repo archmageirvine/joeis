@@ -6,7 +6,7 @@ package irvine.oeis.a246;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A246175 The hyper-Wiener index of the Fibonacci cube <code>Gamma(n) (n&gt;=1)</code>.
+ * A246175 The hyper-Wiener index of the Fibonacci cube Gamma(n) (n&gt;=1).
  * @author Georg Fischer
  */
 public class A246175 extends GeneratingFunctionSequence {

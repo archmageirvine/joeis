@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A036244 Denominator of continued fraction given by <code>C(n) = [ 1; 3, 5, 7, ...(2n-1)]</code>.
+ * A036244 Denominator of continued fraction given by C(n) = [ 1; 3, 5, 7, ...(2n-1)].
  * @author Georg Fischer
  */
 public class A036244 extends HolonomicRecurrence {

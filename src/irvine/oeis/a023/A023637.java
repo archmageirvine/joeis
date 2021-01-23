@@ -1,13 +1,8 @@
 package irvine.oeis.a023;
 
-import java.io.IOException;
-
-import irvine.math.IntegerUtils;
 import irvine.math.graph.Graph;
+import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
-import irvine.math.nauty.Nauty;
-import irvine.math.nauty.OptionBlk;
-import irvine.math.nauty.StatsBlk;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
@@ -20,7 +15,10 @@ public class A023637 extends ParallelGenerateGraphsSequence {
 
   private final int mValency;
 
-  /** Construct the sequence. */
+  /**
+   * Construct the sequence.
+   * @param valency the valency
+   */
   protected A023637(final int valency) {
     super(valency & ~1, 0, false, false, false);
     mValency = valency;
@@ -33,14 +31,7 @@ public class A023637 extends ParallelGenerateGraphsSequence {
 
   @Override
   protected long getCount(final Graph graph) {
-    final StatsBlk mNautyStats = new StatsBlk();
-    final int[] orbits = new int[graph.order()];
-    try {
-      new Nauty(graph, new int[graph.order()], new int[graph.order()], null, orbits, new OptionBlk(), mNautyStats, new long[50]);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
-    return IntegerUtils.isZero(orbits) ? 1 : 0;
+    return GraphUtils.isTransitive(graph) ? 1 : 0;
   }
 
   @Override

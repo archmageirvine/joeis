@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A320281 Terms that are on the positive x-axis of the square spiral built with <code>2*k, 2*k+1, 2*k+1</code> for k <code>&gt;= 0</code>.
+ * A320281 Terms that are on the positive x-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k &gt;= 0.
  * @author Georg Fischer
  */
 public class A320281 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157290 Decimal expansion of <code>105/Pi^4</code>.
+ * A157290 Decimal expansion of 105/Pi^4.
  * @author Georg Fischer
  */
 public class A157290 extends DecimalExpansionSequence {

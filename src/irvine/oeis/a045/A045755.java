@@ -6,7 +6,7 @@ package irvine.oeis.a045;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A045755 8-fold factorials: <code>a(n) = Product_{k=0..n-1} (8*k+1)</code>.
+ * A045755 8-fold factorials: a(n) = Product_{k=0..n-1} (8*k+1).
  * @author Georg Fischer
  */
 public class A045755 extends HolonomicRecurrence {

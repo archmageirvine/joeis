@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282853 36-gonal numbers: <code>a(n) = n*(17*n-16)</code>.
+ * A282853 36-gonal numbers: a(n) = n*(17*n-16).
  * @author Sean A. Irvine
  */
 public class A282853 extends LinearRecurrence {

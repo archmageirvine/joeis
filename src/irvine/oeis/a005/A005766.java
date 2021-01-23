@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005766 <code>a(n) =</code> cost of minimal multiplication-cost addition chain for <code>n</code>.
+ * A005766 a(n) = cost of minimal multiplication-cost addition chain for n.
  * @author Sean A. Irvine
  */
 public class A005766 extends MemorySequence {

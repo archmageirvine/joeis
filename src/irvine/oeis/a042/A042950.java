@@ -4,7 +4,7 @@ package irvine.oeis.a042;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A042950 Row sums of the Lucas triangle <code>A029635</code>.
+ * A042950 Row sums of the Lucas triangle A029635.
  * @author Georg Fischer
  */
 public class A042950 extends GeneratingFunctionSequence {

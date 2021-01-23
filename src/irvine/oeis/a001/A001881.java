@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001881 Coefficients of Bessel polynomials <code>y_n (x)</code>.
+ * A001881 Coefficients of Bessel polynomials y_n (x).
  * @author Sean A. Irvine
  */
 public class A001881 extends A001497 {

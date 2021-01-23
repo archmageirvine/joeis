@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179905 <code>(1, 4, 7, 10, 13,...)</code> convolved with <code>(1, 0, 4, 7, 10, 13...)</code>; given <code>A016777 = (1, 4, 7, 10, 13,...)</code>.
+ * A179905 (1, 4, 7, 10, 13,...) convolved with (1, 0, 4, 7, 10, 13...); given A016777 = (1, 4, 7, 10, 13,...).
  * @author Georg Fischer
  */
 public class A179905 extends GeneratingFunctionSequence {

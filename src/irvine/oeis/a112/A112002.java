@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112002 Seventh diagonal of triangle <code>A008275 (Stirling1)</code> and seventh column of <code>|A008276|</code>.
+ * A112002 Seventh diagonal of triangle A008275 (Stirling1) and seventh column of |A008276|.
  * @author Georg Fischer
  */
 public class A112002 extends GeneratingFunctionSequence {

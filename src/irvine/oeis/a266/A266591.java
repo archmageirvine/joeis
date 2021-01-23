@@ -6,7 +6,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266591 Middle column of the "Rule <code>37"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A266591 Middle column of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266591 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a324;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A324486 G.f. <code>= (1-3*x+x^2)^3*(1+3*x+x^2)^3*(1-x^2)^10/((1-4*x-x^2)*(1-x-x^2)^6*(1+x-x^2)^9)</code>.
+ * A324486 G.f. = (1-3*x+x^2)^3*(1+3*x+x^2)^3*(1-x^2)^10/((1-4*x-x^2)*(1-x-x^2)^6*(1+x-x^2)^9).
  * @author Georg Fischer
  */
 public class A324486 extends GeneratingFunctionSequence {

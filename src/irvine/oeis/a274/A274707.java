@@ -6,7 +6,7 @@ package irvine.oeis.a274;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A274707 <code>a(n) = A(n)</code> if n is even else <code>a(n) = A(n)*(n-1)/(n+1)</code> with <code>A(n) = ((n-1)!/ floor((n-1)/2)!^2)</code>.
+ * A274707 a(n) = A(n) if n is even else a(n) = A(n)*(n-1)/(n+1) with A(n) = ((n-1)!/ floor((n-1)/2)!^2).
  * @author Georg Fischer
  */
 public class A274707 extends HolonomicRecurrence {

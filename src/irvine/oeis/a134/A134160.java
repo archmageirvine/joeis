@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134160 <code>a(n) = 163 + 1053*n + 2520*n^2 + 2646*n^3 + 1029*n^4</code>.
+ * A134160 a(n) = 163 + 1053*n + 2520*n^2 + 2646*n^3 + 1029*n^4.
  * @author Sean A. Irvine
  */
 public class A134160 extends LinearRecurrence {

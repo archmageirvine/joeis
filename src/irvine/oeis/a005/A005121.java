@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005121 Number of ultradissimilarity relations on an <code>n-set</code>.
+ * A005121 Number of ultradissimilarity relations on an n-set.
  * @author Sean A. Irvine
  */
 public class A005121 extends MemorySequence {

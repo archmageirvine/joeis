@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001597;
 
 /**
- * A025479 Largest exponents of perfect powers <code>(A001597)</code>.
+ * A025479 Largest exponents of perfect powers (A001597).
  * @author Sean A. Irvine
  */
 public class A025479 extends A001597 {

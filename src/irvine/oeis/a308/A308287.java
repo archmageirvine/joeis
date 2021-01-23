@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A308287 Length 20 arithmetic progression of primes <code>(PAP-20)</code>.
+ * A308287 Length 20 arithmetic progression of primes (PAP-20).
  * @author Georg Fischer
  */
 public class A308287 extends FiniteSequence {

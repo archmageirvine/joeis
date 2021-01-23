@@ -5,7 +5,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152297 Alternate binomial partial sums of <code>binomial(2n,n)*binomial(3n,n) (A006480)</code>.
+ * A152297 Alternate binomial partial sums of binomial(2n,n)*binomial(3n,n) (A006480).
  * @author Georg Fischer
  */
 public class A152297 extends HolonomicRecurrence {

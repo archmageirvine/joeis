@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070832 <code>a(n) = Sum_{k=0..n} binomial(8*n,8*k)</code>.
+ * A070832 a(n) = Sum_{k=0..n} binomial(8*n,8*k).
  * @author Georg Fischer
  */
 public class A070832 extends HolonomicRecurrence {

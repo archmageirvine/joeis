@@ -6,7 +6,7 @@ package irvine.oeis.a283;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A283678 Number of possible draws of <code>2n</code> pairs of consecutive cards from a set of <code>4n + 1</code> cards, so that the card that initially occupies the central position is not selected.
+ * A283678 Number of possible draws of 2n pairs of consecutive cards from a set of 4n + 1 cards, so that the card that initially occupies the central position is not selected.
  * @author Georg Fischer
  */
 public class A283678 extends HolonomicRecurrence {

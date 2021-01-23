@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A183905 Number of nondecreasing arrangements of <code>n+2</code> numbers in 0..2 with each number being the sum <code>mod 3</code> of two others.
+ * A183905 Number of nondecreasing arrangements of n+2 numbers in 0..2 with each number being the sum mod 3 of two others.
  * @author Georg Fischer
  */
 public class A183905 extends GeneratingFunctionSequence {

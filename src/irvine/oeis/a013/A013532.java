@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013532 Numerator of <code>[x^(2n+1)]</code> in the Taylor series <code>tan(cosec(x)-cosech(x)) = x/3 +x^3/81 +949*x^5/204120 +2647*x^7/5511240+... </code>.
+ * A013532 Numerator of [x^(2n+1)] in the Taylor series tan(cosec(x)-cosech(x)) = x/3 +x^3/81 +949*x^5/204120 +2647*x^7/5511240+... .
  * @author Sean A. Irvine
  */
 public class A013532 implements Sequence {

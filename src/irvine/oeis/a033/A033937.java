@@ -5,7 +5,7 @@ package irvine.oeis.a033;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A033937 Convolution of natural numbers <code>n &gt;= 1</code> with Fibonacci numbers <code>F(k), k &gt;= 3</code>.
+ * A033937 Convolution of natural numbers n &gt;= 1 with Fibonacci numbers F(k), k &gt;= 3.
  * @author Georg Fischer
  */
 public class A033937 extends HolonomicRecurrence {

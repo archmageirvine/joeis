@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016069 Numbers n such that <code>n^2</code> contains exactly 2 different digits.
+ * A016069 Numbers n such that n^2 contains exactly 2 different digits.
  * @author Sean A. Irvine
  */
 public class A016069 implements Sequence {
@@ -14,7 +14,7 @@ public class A016069 implements Sequence {
   private boolean isExactly2DigitSyndrome(Z n) {
     int used = 0;
     int cnt = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final long bit = 1 << n.mod(10);
       if ((used & bit) == 0) {
         if (++cnt > 2) {

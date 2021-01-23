@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A104112 Decimal expansion of <code>42^42</code>.
+ * A104112 Decimal expansion of 42^42.
  * @author Georg Fischer
  */
 public class A104112 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249581 List of quadruples <code>(r,s,t,u)</code>: the matrix M <code>= [[9,24,16][3,10,8][1,4,4]]</code> is raised to successive powers, then <code>(r,s,t,u)</code> are the square roots of <code>M[3,1], M[3,3], M[1,1], M[1,3]</code> respectively.
+ * A249581 List of quadruples (r,s,t,u): the matrix M = [[9,24,16][3,10,8][1,4,4]] is raised to successive powers, then (r,s,t,u) are the square roots of M[3,1], M[3,3], M[1,1], M[1,3] respectively.
  * @author Sean A. Irvine
  */
 public class A249581 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a274;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A274104 <code>a(n) = Sum_{k=0..n} (3*k+2)*Catalan(k)</code>.
+ * A274104 a(n) = Sum_{k=0..n} (3*k+2)*Catalan(k).
  * @author Georg Fischer
  */
 public class A274104 extends HolonomicRecurrence {

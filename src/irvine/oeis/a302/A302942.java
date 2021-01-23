@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302942 <code>a(n) = (2^n-1)^2*(2^n + 2)</code>.
+ * A302942 a(n) = (2^n-1)^2*(2^n + 2).
  * @author Georg Fischer
  */
 public class A302942 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084881 Number of <code>(k,m,n)-multiantichains</code> of multisets with <code>k=3</code> and <code>m=4</code>.
+ * A084881 Number of (k,m,n)-multiantichains of multisets with k=3 and m=4.
  * @author Georg Fischer
  */
 public class A084881 extends GeneratingFunctionSequence {

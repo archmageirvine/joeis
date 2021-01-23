@@ -6,7 +6,7 @@ package irvine.oeis.a261;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A261381 Number of permutations sigma of <code>[n]</code> without fixed points such that <code>sigma^10 =</code> Id.
+ * A261381 Number of permutations sigma of [n] without fixed points such that sigma^10 = Id.
  * @author Georg Fischer
  */
 public class A261381 extends HolonomicRecurrence {

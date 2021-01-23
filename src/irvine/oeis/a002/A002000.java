@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002000 <code>a(n+1) = a(n)*(a(n)^2 - 3)</code> with <code>a(0) = 7</code>.
+ * A002000 a(n+1) = a(n)*(a(n)^2 - 3) with a(0) = 7.
  * @author Sean A. Irvine
  */
 public class A002000 implements Sequence {

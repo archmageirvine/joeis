@@ -6,7 +6,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307696 Number of evolutionary <code>duplication-loss-histories</code> with n leaves of the caterpillar species tree with 2 leaves.
+ * A307696 Number of evolutionary duplication-loss-histories with n leaves of the caterpillar species tree with 2 leaves.
  * @author Georg Fischer
  */
 public class A307696 extends HolonomicRecurrence {

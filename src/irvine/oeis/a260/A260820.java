@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260820 Nonnegative integers n such that <code>n^3-3</code> is divisible by <code>n-3</code>.
+ * A260820 Nonnegative integers n such that n^3-3 is divisible by n-3.
  * @author Georg Fischer
  */
 public class A260820 extends FiniteSequence {

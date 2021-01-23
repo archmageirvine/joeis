@@ -4,7 +4,7 @@ import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Z;
 
 /**
- * A025476 Prime root of n-th nontrivial prime power <code>(A025475)</code>.
+ * A025476 Prime root of n-th nontrivial prime power (A025475).
  * @author Sean A. Irvine
  */
 public class A025476 extends A025475 {

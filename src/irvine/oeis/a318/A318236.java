@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A318236 <code>a(n) = (3*2^(4*n+3) + 1)/5</code>.
+ * A318236 a(n) = (3*2^(4*n+3) + 1)/5.
  * @author Georg Fischer
  */
 public class A318236 extends GeneratingFunctionSequence {

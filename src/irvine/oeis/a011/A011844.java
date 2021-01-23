@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011844 <code>[ C(n,7)/8 ]</code>.
+ * A011844 [ C(n,7)/8 ].
  * @author Sean A. Irvine
  */
 public class A011844 implements Sequence {

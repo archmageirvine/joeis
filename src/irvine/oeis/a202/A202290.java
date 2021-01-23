@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A202290 Number of faces of dimension n in a spherical triangulation of the manifold <code>CP^2</code>.
+ * A202290 Number of faces of dimension n in a spherical triangulation of the manifold CP^2.
  * @author Georg Fischer
  */
 public class A202290 extends FiniteSequence {

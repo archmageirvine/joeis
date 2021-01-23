@@ -4,7 +4,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A031441 <code>a(0) = 3</code>; for <code>n &gt; 0, a(n)</code> is the greatest prime factor of <code>PreviousPrime(a(n-1))*a(n-1)-1</code> where <code>PreviousPrime(prime(k))=prime(k-1)</code>.
+ * A031441 a(0) = 3; for n &gt; 0, a(n) is the greatest prime factor of PreviousPrime(a(n-1))*a(n-1)-1 where PreviousPrime(prime(k))=prime(k-1).
  * @author Sean A. Irvine
  */
 public class A031441 extends PrependSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204512 Square roots of <code>[A055872/8]</code>: Their square written in base 8, with some digit appended, is again a square.
+ * A204512 Square roots of [A055872/8]: Their square written in base 8, with some digit appended, is again a square.
  * @author Georg Fischer
  */
 public class A204512 extends GeneratingFunctionSequence {

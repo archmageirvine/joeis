@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082605 Using Euler's 6-term sequence <code>A014556</code>, we define the partial recurrence relation <code>a(0)=2, a(1)=3, a(2)=5; a(k) = 2*a(k-1) - 1 + (-1)^(k-1)*2^(k-2), 3 &lt;= k &lt;= 5</code>.
+ * A082605 Using Euler's 6-term sequence A014556, we define the partial recurrence relation a(0)=2, a(1)=3, a(2)=5; a(k) = 2*a(k-1) - 1 + (-1)^(k-1)*2^(k-2), 3 &lt;= k &lt;= 5.
  * @author Georg Fischer
  */
 public class A082605 extends LinearRecurrence {

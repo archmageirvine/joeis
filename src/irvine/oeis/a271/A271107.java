@@ -5,13 +5,13 @@ package irvine.oeis.a271;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A271107 Numbers n such that <code>33*10^n+1</code> is prime.
+ * A271107 Numbers n such that 33*10^n+1 is prime.
  * @author Georg Fischer
  */
 public class A271107 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A271107() {
-    super(1, 1, 33, 10, +1, 0);
+    super(1, 1, 33, 10, 1);
   }
 }

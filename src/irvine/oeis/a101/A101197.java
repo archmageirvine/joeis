@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101197 Lengths of successive words (starting with <code>a)</code> under the substitution: <code>{a -&gt; aab, b -&gt; aac, c -&gt; b}</code>.
+ * A101197 Lengths of successive words (starting with a) under the substitution: {a -&gt; aab, b -&gt; aac, c -&gt; b}.
  * @author Georg Fischer
  */
 public class A101197 extends LinearRecurrence {

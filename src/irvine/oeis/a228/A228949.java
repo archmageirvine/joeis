@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228949 Coins left when packing boomerangs into <code>n X n</code> coins.
+ * A228949 Coins left when packing boomerangs into n X n coins.
  * @author Sean A. Irvine
  */
 public class A228949 extends LinearRecurrence {

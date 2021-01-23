@@ -1,7 +1,5 @@
 package irvine.oeis.a032;
 
-import java.util.Collections;
-
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -10,13 +8,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032186 Shifts left 2 places under "CIJ" <code>(necklace</code>, indistinct, labeled) transform.
+ * A032186 Shifts left 2 places under "CIJ" (necklace, indistinct, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032186 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private Polynomial<Q> mA = RING.create(Collections.emptyList());
+  private Polynomial<Q> mA = RING.empty();
   private Z mF = Z.ONE;
   private int mN = 0;
   {

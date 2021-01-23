@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076452 <code>a(n+2) = abs(a(n+1)) - a(n), a(0)=0, a(1)=1</code>.
+ * A076452 a(n+2) = abs(a(n+1)) - a(n), a(0)=0, a(1)=1.
  * @author Sean A. Irvine
  */
 public class A076452 extends LinearRecurrence {

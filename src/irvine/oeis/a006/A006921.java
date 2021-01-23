@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006921 Diagonals of Pascal's triangle <code>mod 2</code> interpreted as binary numbers.
+ * A006921 Diagonals of Pascal's triangle mod 2 interpreted as binary numbers.
  * @author Sean A. Irvine
  */
 public class A006921 implements Sequence {

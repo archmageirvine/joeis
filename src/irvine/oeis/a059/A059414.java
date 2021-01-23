@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059414 A finite set arising from study of <code>zeta(17)</code>.
+ * A059414 A finite set arising from study of zeta(17).
  * @author Georg Fischer
  */
 public class A059414 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007537 Number of proper covers of an <code>n-set</code>.
+ * A007537 Number of proper covers of an n-set.
  * @author Sean A. Irvine
  */
 public class A007537 implements Sequence {

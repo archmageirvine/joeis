@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323723 <code>a(n) = (-2 - (-1)^n*(-2 + n) + n + 2*n^3)/4</code>.
+ * A323723 a(n) = (-2 - (-1)^n*(-2 + n) + n + 2*n^3)/4.
  * @author Georg Fischer
  */
 public class A323723 extends GeneratingFunctionSequence {

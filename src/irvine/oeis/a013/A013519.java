@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013519 Numerator of <code>[x^(2n+1)]</code> in the Taylor expansion <code>tan(cosec(x)-cot(x))</code>.
+ * A013519 Numerator of [x^(2n+1)] in the Taylor expansion tan(cosec(x)-cot(x)).
  * @author Sean A. Irvine
  */
 public class A013519 implements Sequence {

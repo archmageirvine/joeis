@@ -22,21 +22,15 @@ public class GroupFactoryTest extends TestCase {
   }
 
   public void testSmall() {
-    int n = 0;
-    while (true) {
-      try {
-        final String[] names = GroupFactory.smallGroupNames(++n);
-        assertEquals(GroupUtils.gnu(n).intValueExact(), names.length);
-        for (final String name : names) {
-          try {
+    for (int n = 1; n < 30; ++n) {
+      final String[] names = GroupFactory.smallGroupNames(n);
+      assertEquals(GroupUtils.gnu(n).intValueExact(), names.length);
+      for (final String name : names) {
+        try {
           assertEquals(n + " " + name, n, GroupFactory.createGroup(name).size().intValueExact());
-          } catch (final RuntimeException e) {
-            fail(n + " " + name + " " + e.getMessage());
-          }
+        } catch (final RuntimeException e) {
+          fail(n + " " + name + " " + e.getMessage());
         }
-      } catch (final UnsupportedOperationException e) {
-        assertTrue(e.getMessage(), n > 60);
-        return;
       }
     }
   }

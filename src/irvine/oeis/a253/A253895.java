@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253895 Total number of octagons in two variants of an octagon expansion after n iterations: either <code>"side-to-side"</code> or <code>"vertex-to-vertex"</code>, respectively.
+ * A253895 Total number of octagons in two variants of an octagon expansion after n iterations: either "side-to-side" or "vertex-to-vertex", respectively.
  * @author Georg Fischer
  */
 public class A253895 extends GeneratingFunctionSequence {

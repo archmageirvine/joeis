@@ -4,7 +4,7 @@ package irvine.oeis.a155;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A155477 <code>a(n) = 43^(2*n+1)</code>.
+ * A155477 a(n) = 43^(2*n+1).
  * @author Georg Fischer
  */
 public class A155477 extends GeneratingFunctionSequence {

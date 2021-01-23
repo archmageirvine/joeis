@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A246084 Paradigm shift sequence for <code>(1,2)</code> production scheme with replacement.
+ * A246084 Paradigm shift sequence for (1,2) production scheme with replacement.
  * @author Georg Fischer
  */
 public class A246084 extends GeneratingFunctionSequence {

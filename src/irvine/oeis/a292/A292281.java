@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A292281 Number of magic labelings of the prism graph I X <code>C_6</code> having magic sum <code>n</code>.
+ * A292281 Number of magic labelings of the prism graph I X C_6 having magic sum n.
  * @author Georg Fischer
  */
 public class A292281 extends GeneratingFunctionSequence {

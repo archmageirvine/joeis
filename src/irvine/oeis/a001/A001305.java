@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 /**
- * A001305 Expansion of <code>1/((1-x)^2*(1-x^2)*(1-x^5)*(1-x^10)*(1-x^20))</code>.
+ * A001305 Expansion of 1/((1-x)^2*(1-x^2)*(1-x^5)*(1-x^10)*(1-x^20)).
  * @author Sean A. Irvine
  */
 public class A001305 extends A001304 {

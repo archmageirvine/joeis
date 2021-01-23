@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004770 Numbers of form <code>8n+5</code>; or, numbers whose binary expansion ends in 101.
+ * A004770 Numbers of form 8n+5; or, numbers whose binary expansion ends in 101.
  * @author Sean A. Irvine
  */
 public class A004770 implements Sequence {

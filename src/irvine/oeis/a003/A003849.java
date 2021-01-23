@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicByteArray;
 
 /**
- * A003849 The infinite Fibonacci word (start with 0, apply <code>0-&gt;01, 1-&gt;0</code>, take limit).
+ * A003849 The infinite Fibonacci word (start with 0, apply 0-&gt;01, 1-&gt;0, take limit).
  * @author Sean A. Irvine
  */
 public class A003849 implements Sequence {

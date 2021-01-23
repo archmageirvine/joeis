@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238361 Number of length n binary words that contain 111 but do not contain <code>000</code> (as contiguous subwords).
+ * A238361 Number of length n binary words that contain 111 but do not contain 000 (as contiguous subwords).
  * @author Georg Fischer
  */
 public class A238361 extends GeneratingFunctionSequence {

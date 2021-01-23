@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008682 Expansion of <code>1/((1-x^4)*(1-x^5)*(1-x^6))</code>.
+ * A008682 Expansion of 1/((1-x^4)*(1-x^5)*(1-x^6)).
  * @author Sean A. Irvine
  */
 public class A008682 extends CoordinationSequence {

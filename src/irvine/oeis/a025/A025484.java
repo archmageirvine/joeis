@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A025484 <code>a(0) = 0; a(n) = a(n/5)/5</code> if <code>n = a(n/5) = 0 (mod 5); a(n) = a(n-1)+1</code> otherwise.
+ * A025484 a(0) = 0; a(n) = a(n/5)/5 if n = a(n/5) = 0 (mod 5); a(n) = a(n-1)+1 otherwise.
  * @author Sean A. Irvine
  */
 public class A025484 extends MemorySequence {

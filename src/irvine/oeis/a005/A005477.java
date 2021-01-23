@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005477 <code>2^(n-1)*(2^n-1)*product( 2^j+1, j =1..n-1)</code>.
+ * A005477 2^(n-1)*(2^n-1)*product( 2^j+1, j =1..n-1).
  * @author Sean A. Irvine
  */
 public class A005477 implements Sequence {

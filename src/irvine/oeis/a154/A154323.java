@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154323 Central coefficients of number triangle <code>A113582</code>.
+ * A154323 Central coefficients of number triangle A113582.
  * @author Sean A. Irvine
  */
 public class A154323 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013284 <code>tan(log(x+1)-tanh(x)) = -1/2!*x^2+4/3!*x^3-6/4!*x^4+8/5!*x^5... </code>.
+ * A013284 tan(log(x+1)-tanh(x)) = -1/2!*x^2+4/3!*x^3-6/4!*x^4+8/5!*x^5... .
  * @author Sean A. Irvine
  */
 public class A013284 implements Sequence {

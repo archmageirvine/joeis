@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005820;
 
 /**
- * A326051 1/2 times <code>3-perfect</code> (triply perfect, <code>tri-perfect</code>, triperfect or <code>sous-double)</code> numbers: <code>a(n) = A005820(n)/2</code>.
+ * A326051 1/2 times 3-perfect (triply perfect, tri-perfect, triperfect or sous-double) numbers: a(n) = A005820(n)/2.
  * @author Georg Fischer
  */
 public class A326051 extends A005820 {

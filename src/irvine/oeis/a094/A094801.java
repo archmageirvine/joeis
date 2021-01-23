@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A094801 Numbers n such that n is a member of <code>A014778</code>, but <code>n-1</code> and <code>n+1</code> are not.
+ * A094801 Numbers n such that n is a member of A014778, but n-1 and n+1 are not.
  * @author Georg Fischer
  */
 public class A094801 extends FiniteSequence {

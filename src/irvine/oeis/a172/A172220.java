@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172220 Number of ways to place 5 nonattacking nightriders on a <code>5 X n</code> board.
+ * A172220 Number of ways to place 5 nonattacking nightriders on a 5 X n board.
  * @author Georg Fischer
  */
 public class A172220 extends GeneratingFunctionSequence {

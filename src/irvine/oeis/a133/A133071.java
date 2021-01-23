@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133071 <code>a(n) = n^5 - n^3 + n^2</code>.
+ * A133071 a(n) = n^5 - n^3 + n^2.
  * @author Georg Fischer
  */
 public class A133071 extends GeneratingFunctionSequence {

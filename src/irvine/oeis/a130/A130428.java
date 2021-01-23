@@ -5,7 +5,7 @@ package irvine.oeis.a130;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A130428 List of numbers n such that n is equal to the number of <code>6</code>'s in the decimal digits of all numbers <code>&lt;= n</code>.
+ * A130428 List of numbers n such that n is equal to the number of 6's in the decimal digits of all numbers &lt;= n.
  * @author Georg Fischer
  */
 public class A130428 extends FiniteSequence {

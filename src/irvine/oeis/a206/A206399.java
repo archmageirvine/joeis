@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A206399 <code>a(0) = 1</code>; for <code>n&gt;0, a(n) = 41*n^2 + 2</code>.
+ * A206399 a(0) = 1; for n&gt;0, a(n) = 41*n^2 + 2.
  * @author Georg Fischer
  */
 public class A206399 extends GeneratingFunctionSequence {

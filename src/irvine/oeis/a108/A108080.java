@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108080 <code>Sum_{i=0..n} C(2n+i,n-i)</code>.
+ * A108080 Sum_{i=0..n} C(2n+i,n-i).
  * @author Georg Fischer
  */
 public class A108080 extends HolonomicRecurrence {

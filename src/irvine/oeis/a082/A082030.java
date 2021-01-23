@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001340;
 
 /**
- * A082030 Expansion of e.g.f. <code>exp(x)/(1-x)^3</code>.
+ * A082030 Expansion of e.g.f. exp(x)/(1-x)^3.
  * @author Georg Fischer
  */
 public class A082030 extends A001340 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A082030() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

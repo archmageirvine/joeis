@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093719 <code>a(n) = (n mod 2)^(n mod 3)</code>.
+ * A093719 a(n) = (n mod 2)^(n mod 3).
  * @author Georg Fischer
  */
 public class A093719 extends GeneratingFunctionSequence {

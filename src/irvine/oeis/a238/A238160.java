@@ -7,7 +7,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A238160 A skewed version of triangular array <code>A029653</code>.
+ * A238160 A skewed version of triangular array A029653.
  * @author Georg Fischer
  */
 public class A238160 extends GeneratingFunctionTriangle {

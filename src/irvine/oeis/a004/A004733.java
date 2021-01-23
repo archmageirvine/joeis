@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004733 Denominator of <code>n!!/(n+3)!!</code>.
+ * A004733 Denominator of n!!/(n+3)!!.
  * @author Sean A. Irvine
  */
 public class A004733 implements Sequence {

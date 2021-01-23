@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332183 <code>a(n) = 8*(10^(2n+1)-1)/9 - 5*10^n</code>.
+ * A332183 a(n) = 8*(10^(2n+1)-1)/9 - 5*10^n.
  * @author Georg Fischer
  */
 public class A332183 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003973 Inverse M&#246;bius transform of <code>A003961</code>.
+ * A003973 Inverse M\u00f6bius transform of A003961; a(n) = sigma(A003961(n)), where A003961 shifts the prime factorization of n one step towards the larger primes.
  * @author Sean A. Irvine
  */
 public class A003973 implements Sequence {

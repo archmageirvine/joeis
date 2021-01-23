@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A126505 Number of base <code>10 n-digit</code> numbers with adjacent digits differing by four or less.
+ * A126505 Number of base 10 n-digit numbers with adjacent digits differing by four or less.
  * @author Georg Fischer
  */
 public class A126505 extends GeneratingFunctionSequence {

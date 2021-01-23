@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001165 Position of first even digit after decimal point in <code>sqrt(n)</code>.
+ * A001165 Position of first even digit after decimal point in sqrt(n).
  * @author Sean A. Irvine
  */
 public class A001165 implements Sequence {

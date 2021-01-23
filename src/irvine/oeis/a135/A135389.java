@@ -6,7 +6,7 @@ package irvine.oeis.a135;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A135389 Number of walks from origin to <code>(1,1)</code> in a square lattice.
+ * A135389 Number of walks of length 2*n+2 from origin to (1,1) in a square lattice.
  * @author Georg Fischer
  */
 public class A135389 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032794 Positive integers of the form <code>n(n+1)(n+2)(n+3)(n+4)/(n+(n+1)+(n+2)+(n+3)+(n+4))</code> that are a multiple of <code>n</code>.
+ * A032794 Positive integers of the form n(n+1)(n+2)(n+3)(n+4)/(n+(n+1)+(n+2)+(n+3)+(n+4)) that are a multiple of n.
  * @author Georg Fischer
  */
 public class A032794 extends HolonomicRecurrence {

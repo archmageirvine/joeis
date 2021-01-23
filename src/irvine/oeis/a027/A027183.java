@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A027183 <code>a(n) = n-th</code> largest even number in array T given by <code>A027170</code>.
+ * A027183 a(n) = n-th largest even number in array T given by A027170.
  * @author Sean A. Irvine
  */
 public class A027183 extends A027170 {

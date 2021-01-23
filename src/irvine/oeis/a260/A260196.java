@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A260196 <code>1, -3</code>, followed by <code>-1</code>'s.
+ * A260196 1, -3, followed by -1's.
  * @author Georg Fischer
  */
 public class A260196 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182027 <code>a(n) =</code> number of n-lettered words in the alphabet <code>{1, 2}</code> with as many occurrences of the substring (consecutive subword) <code>[1, 1]</code> as of <code>[2, 2]</code>.
+ * A182027 a(n) = number of n-lettered words in the alphabet {1, 2} with as many occurrences of the substring (consecutive subword) [1, 1] as of [2, 2].
  * @author Georg Fischer
  */
 public class A182027 extends HolonomicRecurrence {

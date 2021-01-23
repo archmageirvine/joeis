@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075128 Binomial transform of generalized tetranacci numbers <code>A073817: a(n)=Sum((-1)^k Binomial(n,k)*A073817(k),(k=0,..,n))</code>.
+ * A075128 Binomial transform of generalized tetranacci numbers A073817: a(n)=Sum((-1)^k Binomial(n,k)*A073817(k),(k=0,..,n)).
  * @author Georg Fischer
  */
 public class A075128 extends HolonomicRecurrence {

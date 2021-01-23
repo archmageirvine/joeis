@@ -6,7 +6,7 @@ package irvine.oeis.a279;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A279557 Number of length n inversion sequences avoiding the patterns <code>110, 120</code>, and 021.
+ * A279557 Number of length n inversion sequences avoiding the patterns 110, 120, and 021.
  * @author Georg Fischer
  */
 public class A279557 extends HolonomicRecurrence {

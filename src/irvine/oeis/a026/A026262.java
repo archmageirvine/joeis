@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026262 Beginning with the natural numbers, swap <code>[ k*sqrt(5) ]</code> and <code>[ (k/4)*(5 + sqrt(5)) ]</code>, for all k <code>&gt;= 1</code>.
+ * A026262 Beginning with the natural numbers, swap [ k*sqrt(5) ] and [ (k/4)*(5 + sqrt(5)) ], for all k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A026262 implements Sequence {

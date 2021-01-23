@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029903 <code>p(n)</code>, where exists one-parameter family of strategic partitions <code>(k+p(n)+q(n), k+q(n), r(n))</code> for k <code>= 0,1,2,..</code>. in Chomp.
+ * A029903 p(n), where exists one-parameter family of strategic partitions (k+p(n)+q(n), k+q(n), r(n)) for k = 0,1,2,... in Chomp.
  * @author Sean A. Irvine
  */
 public class A029903 extends A029899 {

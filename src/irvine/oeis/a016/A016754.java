@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A016754 Odd squares: <code>a(n) = (2n+1)^2</code>. Also centered octagonal numbers.
+ * A016754 Odd squares: a(n) = (2n+1)^2. Also centered octagonal numbers.
  * @author Sean A. Irvine
  */
 public class A016754 extends LinearRecurrence {

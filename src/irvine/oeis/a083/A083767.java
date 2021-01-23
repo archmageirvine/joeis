@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A083767 Sum of n-th row of <code>A083764</code> divided by <code>n</code>.
+ * A083767 Sum of n-th row of A083764 divided by n.
  * @author Georg Fischer
  */
 public class A083767 extends FiniteSequence {

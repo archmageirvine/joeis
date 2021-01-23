@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229284 Number of ascending runs in <code>{1,...,10}^n</code>.
+ * A229284 Number of ascending runs in {1,...,10}^n.
  * @author Georg Fischer
  */
 public class A229284 extends GeneratingFunctionSequence {

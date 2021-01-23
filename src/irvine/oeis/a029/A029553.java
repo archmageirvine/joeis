@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a120.A120944;
 
 /**
- * A029553 Quasi-Carmichael numbers to base <code>10</code>: squarefree composites n such that <code>(n,2*3*5*7) = 1</code> and prime <code>p|n ==&gt; p-10|n-10</code>.
+ * A029553 Quasi-Carmichael numbers to base 10: squarefree composites n such that (n,2*3*5*7) = 1 and prime p|n ==&gt; p-10|n-10.
  * @author Sean A. Irvine
  */
 public class A029553 extends A120944 {
@@ -14,7 +14,7 @@ public class A029553 extends A120944 {
     final Z m = n.subtract(base);
     for (final Z p : Cheetah.factor(n).toZArray()) {
       final Z s = p.subtract(base);
-      if (s.signum() <= 0 || !Z.ZERO.equals(m.mod(s))) {
+      if (s.signum() <= 0 || !m.mod(s).isZero()) {
         return false;
       }
     }

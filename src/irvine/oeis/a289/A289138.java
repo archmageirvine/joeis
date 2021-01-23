@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289138 <code>a(n) =</code> smallest expomorphic number in base n: least integer k such that <code>n^k</code> ends in k, or 0 if no such k exists.
+ * A289138 a(n) = smallest expomorphic number in base n: least integer k such that n^k ends in k, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A289138 extends LinearRecurrence {

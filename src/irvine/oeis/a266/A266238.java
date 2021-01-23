@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266238 <code>a(n+1) = 2^(2*n - 1) + (-1)^n * a(n), a(1) = 1</code>.
+ * A266238 a(n+1) = 2^(2*n - 1) + (-1)^n * a(n), a(1) = 1.
  * @author Georg Fischer
  */
 public class A266238 extends LinearRecurrence {

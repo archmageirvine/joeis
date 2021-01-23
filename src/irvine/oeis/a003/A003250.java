@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A003250 The number m such that <code>A001950(m) = A003231(A003234(n))</code>.
+ * A003250 The number m such that A001950(m) = A003231(A003234(n)).
  * @author Sean A. Irvine
  */
 public class A003250 extends A003234 {

@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202785 Number of <code>3 X 3 0..n</code> arrays with row and column sums equal.
+ * A202785 Number of 3 X 3 0..n arrays with row and column sums equal.
  * @author Georg Fischer
  */
 public class A202785 extends GeneratingFunctionSequence {

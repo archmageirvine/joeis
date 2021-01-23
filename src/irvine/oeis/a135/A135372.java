@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002182;
 
 /**
- * A135372 Highly composite numbers <code>+ 1</code>.
+ * A135372 Highly composite numbers + 1.
  * @author Georg Fischer
  */
 public class A135372 extends A002182 {

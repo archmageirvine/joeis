@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226493 Closed walks of length n in <code>K_4</code> graph.
+ * A226493 Closed walks of length n in K_4 graph.
  * @author Sean A. Irvine
  */
 public class A226493 extends LinearRecurrence {

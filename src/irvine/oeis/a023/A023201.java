@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023201 Primes p such that p <code>+ 6</code> is also prime. (Lesser of a pair of sexy <code>primes.)</code>.
+ * A023201 Primes p such that p + 6 is also prime. (Lesser of a pair of sexy primes.).
  * @author Sean A. Irvine
  */
 public class A023201 extends A000040 {

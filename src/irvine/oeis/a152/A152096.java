@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152096 Quartic product sequence: <code>a(n) = Product_{k=1..(n-1)/2} (1 + m*cos(k*Pi/n)^2 + q*cos(k*Pi/n)^4)</code>, with <code>m=12</code> and q <code>= 3*4^3</code>.
+ * A152096 Quartic product sequence: a(n) = Product_{k=1..(n-1)/2} (1 + m*cos(k*Pi/n)^2 + q*cos(k*Pi/n)^4), with m=12 and q = 3*4^3.
  * @author Georg Fischer
  */
 public class A152096 extends GeneratingFunctionSequence {

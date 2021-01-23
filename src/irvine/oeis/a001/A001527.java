@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001527 <code>a(n) = 2 * Sum_{i=0..n} C(2^n-1, i)</code>.
+ * A001527 a(n) = 2 * Sum_{i=0..n} C(2^n-1, i).
  * @author Sean A. Irvine
  */
 public class A001527 implements Sequence {

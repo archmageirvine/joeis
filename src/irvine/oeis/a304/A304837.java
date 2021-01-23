@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304837 <code>a(n) = 6*(n - 1)*(81*n - 104)</code> for <code>n &gt;= 1</code>.
+ * A304837 a(n) = 6*(n - 1)*(81*n - 104) for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A304837 extends GeneratingFunctionSequence {

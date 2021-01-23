@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A154007 Decimal expansion of <code>log_24(8)</code>.
+ * A154007 Decimal expansion of log_24(8).
  * @author Sean A. Irvine
  */
 public class A154007 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(8).log().divide(CR.valueOf(24).log());
+  private static final CR N = CR.EIGHT.log().divide(CR.valueOf(24).log());
 
   @Override
   protected CR getCR() {

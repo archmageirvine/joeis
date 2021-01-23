@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159669 Expansion of <code>x*(x + 1)/(x^2 - 28*x + 1)</code>.
+ * A159669 Expansion of x*(x + 1)/(x^2 - 28*x + 1).
  * @author Sean A. Irvine
  */
 public class A159669 extends LinearRecurrence {

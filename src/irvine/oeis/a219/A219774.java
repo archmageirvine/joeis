@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A219774 Number of <code>3 X n</code> arrays of the minimum value of corresponding elements and their horizontal or antidiagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and columns, <code>0..1 3 X n</code> array.
+ * A219774 Number of 3 X n arrays of the minimum value of corresponding elements and their horizontal or antidiagonal neighbors in a random, but sorted with lexicographically nondecreasing rows and columns, 0..1 3 X n array.
  * @author Georg Fischer
  */
 public class A219774 extends GeneratingFunctionSequence {

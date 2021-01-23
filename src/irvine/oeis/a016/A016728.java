@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016728 Number of integer points <code>(x,y,z)</code> at distance <code>&lt;= 0.5</code> from sphere of radius <code>n</code>.
+ * A016728 Number of integer points (x,y,z) at distance &lt;= 0.5 from sphere of radius n.
  * @author Sean A. Irvine
  */
 public class A016728 implements Sequence {

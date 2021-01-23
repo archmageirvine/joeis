@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291912 Number of 6-cycles in the <code>n X n</code> rook complement graph.
+ * A291912 Number of 6-cycles in the n X n rook complement graph.
  * @author Sean A. Irvine
  */
 public class A291912 extends LinearRecurrence {

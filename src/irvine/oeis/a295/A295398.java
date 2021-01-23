@@ -5,13 +5,13 @@ package irvine.oeis.a295;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A295398 Numbers k such that <code>(305*10^k + 1)/9</code> is prime.
+ * A295398 Numbers k such that (305*10^k + 1)/9 is prime.
  * @author Georg Fischer
  */
 public class A295398 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A295398() {
-    super(1, 2, 305, 10, +1, 9);
+    super(1, 2, 305, 10, 1, 9);
   }
 }

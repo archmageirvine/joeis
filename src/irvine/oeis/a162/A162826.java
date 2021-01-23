@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162826 Positive numbers n such that <code>2*60*n/(60+n)</code> are integers.
+ * A162826 Positive numbers n such that 2*60*n/(60+n) are integers.
  * @author Georg Fischer
  */
 public class A162826 extends FiniteSequence {

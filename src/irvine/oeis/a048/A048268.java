@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048268 Smallest palindrome greater than n in bases n and <code>n+1</code>.
+ * A048268 Smallest palindrome greater than n in bases n and n+1.
  * @author Georg Fischer
  */
 public class A048268 extends HolonomicRecurrence {

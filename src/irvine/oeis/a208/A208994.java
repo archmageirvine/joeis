@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A208994 Number of 3-bead necklaces labeled with numbers <code>-n..n</code> not allowing reversal, with sum zero and first differences in <code>-n..n</code>.
+ * A208994 Number of 3-bead necklaces labeled with numbers -n..n not allowing reversal, with sum zero and first differences in -n..n.
  * @author Georg Fischer
  */
 public class A208994 extends GeneratingFunctionSequence {

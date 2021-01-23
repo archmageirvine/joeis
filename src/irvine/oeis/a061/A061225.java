@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061225 Numbers of the form <code>k^3 + (k + 1)^4 + (k + 2)^5 + (k + 3)^6</code>.
+ * A061225 Numbers of the form k^3 + (k + 1)^4 + (k + 2)^5 + (k + 3)^6.
  * @author Georg Fischer
  */
 public class A061225 extends GeneratingFunctionSequence {

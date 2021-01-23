@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029939 <code>a(n) = Sum_{d|n} phi(d)^2</code>.
+ * A029939 a(n) = Sum_{d|n} phi(d)^2.
  * @author Sean A. Irvine
  */
 public class A029939 implements Sequence {

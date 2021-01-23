@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114126 Numbers n such that n and <code>8*n</code>, taken together, are pandigital.
+ * A114126 Numbers n such that n and 8*n, taken together, are pandigital.
  * @author Georg Fischer
  */
 public class A114126 extends FiniteSequence {

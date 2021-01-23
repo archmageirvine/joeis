@@ -6,7 +6,7 @@ package irvine.oeis.a033;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A033174 Number of days in n years <code>(n=1</code> is the first leap year).
+ * A033174 Number of days in n years (n=1 is the first leap year).
  * @author Georg Fischer
  */
 public class A033174 extends HolonomicRecurrence {

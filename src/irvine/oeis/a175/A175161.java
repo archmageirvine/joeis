@@ -6,7 +6,7 @@ package irvine.oeis.a175;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A175161 <code>a(n) = 8*(2^n + 1)</code>.
+ * A175161 a(n) = 8*(2^n + 1).
  * @author Georg Fischer
  */
 public class A175161 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A047598 Numbers that are congruent to <code>{3, 4, 5} mod 8</code>.
+ * A047598 Numbers that are congruent to {3, 4, 5} mod 8.
  * @author Sean A. Irvine
  */
 public class A047598 extends LinearRecurrence {

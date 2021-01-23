@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 /**
- * A002566 Number of ways to attack all squares on an <code>n X n</code> chessboard using the smallest possible number of queens with each queen attacking at least one other.
+ * A002566 Number of ways to attack all squares on an n X n chessboard using the smallest possible number of queens with each queen attacking at least one other.
  * @author Sean A. Irvine
  */
 public class A002566 extends A002564 {

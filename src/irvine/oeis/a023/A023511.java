@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023511 Least odd prime divisor of <code>prime(n) + 1</code>, or 1 if <code>prime(n) + 1</code> is a power of 2.
+ * A023511 Least odd prime divisor of prime(n) + 1, or 1 if prime(n) + 1 is a power of 2.
  * @author Sean A. Irvine
  */
 public class A023511 extends A000040 {

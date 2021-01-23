@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013538 Numerator of <code>[x^(2*n + 1)]</code> in the Taylor series expansion of <code>arcsin(cosec(x) - cotanh(x))</code>.
+ * A013538 Numerator of [x^(2*n + 1)] in the Taylor series expansion of arcsin(cosec(x) - cotanh(x)).
  * @author Sean A. Irvine
  */
 public class A013538 implements Sequence {

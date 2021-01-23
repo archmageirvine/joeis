@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141495 <code>a(n) = 3*a(n-1)</code> for <code>n&gt;2; a(0)=1, a(1)=3, a(2)=7</code>.
+ * A141495 a(n) = 3*a(n-1) for n&gt;2; a(0)=1, a(1)=3, a(2)=7.
  * @author Georg Fischer
  */
 public class A141495 extends HolonomicRecurrence {

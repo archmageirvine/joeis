@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A063264 Tenth column <code>(k=9)</code> of sextinomial array <code>A063260</code>.
+ * A063264 Tenth column (k=9) of sextinomial array A063260.
  * @author Georg Fischer
  */
 public class A063264 extends GeneratingFunctionSequence {

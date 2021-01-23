@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023002 Sum of <code>10th</code> powers.
+ * A023002 Sum of 10th powers.
  * @author Sean A. Irvine
  */
 public class A023002 extends LinearRecurrence {

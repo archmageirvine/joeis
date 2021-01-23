@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004380 Binomial coefficient <code>C(7n,n-12)</code>.
+ * A004380 Binomial coefficient C(7n,n-12).
  * @author Sean A. Irvine
  */
 public class A004380 implements Sequence {

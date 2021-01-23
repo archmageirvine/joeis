@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099931 <code>Pell(n)*Pell(n-1)*Pell(n-2)*Pell(n-3) / 120</code>.
+ * A099931 a(n) = Pell(n)*Pell(n-1)*Pell(n-2)*Pell(n-3) / 120.
  * @author Georg Fischer
  */
 public class A099931 extends GeneratingFunctionSequence {

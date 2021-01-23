@@ -5,7 +5,7 @@ package irvine.oeis.a279;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A279321 Period <code>7</code>: repeat <code>[1, 3, 5, 7, 5, 3, 1]</code>.
+ * A279321 Period 7: repeat [1, 3, 5, 7, 5, 3, 1].
  * @author Georg Fischer
  */
 public class A279321 extends HolonomicRecurrence {

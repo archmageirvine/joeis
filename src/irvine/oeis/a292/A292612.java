@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292612 <code>a(n) = F(n)^2 + 4*(-1)^n = F(n+3)*F(n-3)</code>, where F <code>= A000045</code>.
+ * A292612 a(n) = F(n)^2 + 4*(-1)^n = F(n+3)*F(n-3), where F = A000045.
  * @author Sean A. Irvine
  */
 public class A292612 extends LinearRecurrence {

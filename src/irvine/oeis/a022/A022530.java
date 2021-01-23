@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a010.A010802;
 
 /**
- * A022530 Nexus numbers <code>(n+1)^14 - n^14</code>.
+ * A022530 Nexus numbers (n+1)^14 - n^14.
  * @author Sean A. Irvine
  */
 public class A022530 extends DifferenceSequence {

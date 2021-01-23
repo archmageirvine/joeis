@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A001926 G.f.: <code>(1+x)^2/[(1-x)^4(1-x-x^2)^3]</code>.
+ * A001926 G.f.: (1+x)^2/[(1-x)^4(1-x-x^2)^3].
  * @author Sean A. Irvine
  */
 public class A001926 extends GeneratingFunctionSequence {

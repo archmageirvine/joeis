@@ -5,7 +5,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133444 <code>a(n)=sum{k=0..n, C(n,floor(k/2))*(-1)^k*4^(n-k)}</code>.
+ * A133444 a(n)=sum{k=0..n, C(n,floor(k/2))*(-1)^k*4^(n-k)}.
  * @author Georg Fischer
  */
 public class A133444 extends HolonomicRecurrence {

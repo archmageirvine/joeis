@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A088211 Denominators of convergents of the continued fraction with the <code>n+1</code> partial quotients: <code>[2;2,2,...(n 2's)...,2,n+1]</code>, starting with <code>[1], [2;2], [2;2,3], [2;2,2,4], ..</code>.
+ * A088211 Denominators of convergents of the continued fraction with the n+1 partial quotients: [2;2,2,...(n 2's)...,2,n+1], starting with [1], [2;2], [2;2,3], [2;2,2,4], ...
  * @author Georg Fischer
  */
 public class A088211 extends GeneratingFunctionSequence {

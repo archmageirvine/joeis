@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a001.A001222;
 
 /**
- * A293549 Expansion of <code>Product_{k&gt;=2} 1/(1 - x^k)^bigomega(k)</code>, where <code>bigomega(k)</code> is the number of prime divisors of k counted with multiplicity <code>(A001222)</code>.
+ * A293549 Expansion of Product_{k&gt;=2} 1/(1 - x^k)^bigomega(k), where bigomega(k) is the number of prime divisors of k counted with multiplicity (A001222).
  * @author Georg Fischer
  */
 public class A293549 extends EulerTransformSequence {

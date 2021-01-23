@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014068;
 
 /**
- * A137345 <code>a(n) = binomial( n(n+1)/2, n) mod n</code>.
+ * A137345 a(n) = binomial( n(n+1)/2, n) mod n.
  * @author Georg Fischer
  */
 public class A137345 extends A014068 {
@@ -15,7 +15,7 @@ public class A137345 extends A014068 {
   /** Construct the sequence. */
   public A137345() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

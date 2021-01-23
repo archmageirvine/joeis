@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A172315 Primes of the form <code>2^i*3^j - 1</code> with i <code>+ j = 13</code>.
+ * A172315 Primes of the form 2^i*3^j - 1 with i + j = 13.
  * @author Georg Fischer
  */
 public class A172315 extends FiniteSequence {

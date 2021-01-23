@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A110610 Maximal value of <code>sum(p(i)p(i+1),i=1..n)</code>, where <code>p(n+1)=p(1)</code>, as p ranges over all permutations of <code>{1,2,...,n}</code>.
+ * A110610 Maximal value of sum(p(i)p(i+1),i=1..n), where p(n+1)=p(1), as p ranges over all permutations of {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A110610 extends GeneratingFunctionSequence {

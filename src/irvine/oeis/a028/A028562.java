@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028562 Palindromes of form <code>n(n+6)</code>.
+ * A028562 Palindromes of form n(n+6).
  * @author Sean A. Irvine
  */
 public class A028562 implements Sequence {

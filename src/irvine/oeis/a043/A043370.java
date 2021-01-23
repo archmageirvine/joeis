@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043370 Numbers n such that number of <code>0</code>'s in base 6 is 2.
+ * A043370 Numbers n such that number of 0's in base 6 is 2.
  * @author Georg Fischer
  */
 public class A043370 extends RunsBaseSequence {

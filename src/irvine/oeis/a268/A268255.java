@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A268255 Number of <code>length-(n+1) 0..2</code> arrays with new repeated values introduced in sequential order starting with zero.
+ * A268255 Number of length-(n+1) 0..2 arrays with new repeated values introduced in sequential order starting with zero.
  * @author Georg Fischer
  */
 public class A268255 extends GeneratingFunctionSequence {

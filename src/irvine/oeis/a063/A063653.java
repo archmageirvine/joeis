@@ -5,7 +5,7 @@ package irvine.oeis.a063;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A063653 Number of ways to tile a <code>9 X n</code> rectangle with <code>1 X 1</code> and <code>2 X 2</code> tiles.
+ * A063653 Number of ways to tile a 9 X n rectangle with 1 X 1 and 2 X 2 tiles.
  * @author Georg Fischer
  */
 public class A063653 extends HolonomicRecurrence {

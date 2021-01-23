@@ -7,7 +7,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A164948 Fibonacci matrix read by antidiagonals. (Inverse of <code>A136158.)</code>.
+ * A164948 Fibonacci matrix read by antidiagonals. (Inverse of A136158.).
  * @author Georg Fischer
  */
 public class A164948 extends GeneratingFunctionTriangle {

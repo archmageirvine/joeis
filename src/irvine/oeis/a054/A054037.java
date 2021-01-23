@@ -5,7 +5,7 @@ package irvine.oeis.a054;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A054037 Numbers n such that <code>n^2</code> contains exactly 9 different digits.
+ * A054037 Numbers n such that n^2 contains exactly 9 different digits.
  * @author Georg Fischer
  */
 public class A054037 extends FiniteSequence {

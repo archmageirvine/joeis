@@ -7,7 +7,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A193844 Triangular array: the fission of <code>((x+1)^n)</code> by <code>((x+1)^n)</code>; i.e., the self-fission of Pascal's triangle.
+ * A193844 Triangular array:  the fission of ((x+1)^n) by ((x+1)^n); i.e., the self-fission of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A193844 extends GeneratingFunctionTriangle {

@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078469 Number of different compositions of the ladder graph <code>L_n</code>.
+ * A078469 Number of different compositions of the ladder graph L_n.
  * @author Georg Fischer
  */
 public class A078469 extends LinearRecurrence {

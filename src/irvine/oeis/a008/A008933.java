@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008933 Number of strictly increasing addition chains of length <code>n</code>.
+ * A008933 Number of strictly increasing addition chains of length n.
  * @author Sean A. Irvine
  */
 public class A008933 implements Sequence {

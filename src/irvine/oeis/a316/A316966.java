@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A316966 Same as <code>A316671</code>, except numbering of the squares starts at 0 rather than 1.
+ * A316966 Same as A316671, except numbering of the squares starts at 0 rather than 1.
  * @author Georg Fischer
  */
 public class A316966 extends GeneratingFunctionSequence {

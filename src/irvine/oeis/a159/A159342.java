@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A159342 Transform of the finite sequence <code>(1, 0, -1, 0, 1, 0, -1)</code> by the <code>T_{0,1}</code> transform (see link).
+ * A159342 Transform of the finite sequence (1, 0, -1, 0, 1, 0, -1) by the T_{0,1} transform (see link).
  * @author Georg Fischer
  */
 public class A159342 extends GeneratingFunctionSequence {

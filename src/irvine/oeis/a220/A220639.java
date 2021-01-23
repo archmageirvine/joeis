@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220639 Number of ways to reciprocally link elements of an <code>n X 3</code> array either to themselves or to exactly one king-move neighbor.
+ * A220639 Number of ways to reciprocally link elements of an n X 3 array either to themselves or to exactly one king-move neighbor.
  * @author Sean A. Irvine
  */
 public class A220639 extends LinearRecurrence {

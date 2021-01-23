@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023733 Numbers with no <code>3</code>'s in <code>base-5</code> expansion.
+ * A023733 Numbers with no 3's in base-5 expansion.
  * @author Sean A. Irvine
  */
 public class A023733 implements Sequence {

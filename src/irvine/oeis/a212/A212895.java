@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212895 Number of <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code> and (least <code>gapsize)=2</code>.
+ * A212895 Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)=2.
  * @author Georg Fischer
  */
 public class A212895 extends HolonomicRecurrence {

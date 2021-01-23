@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134522 <code>a(n) = 2^n + ceiling(n/2)</code>.
+ * A134522 a(n) = 2^n + ceiling(n/2).
  * @author Georg Fischer
  */
 public class A134522 extends GeneratingFunctionSequence {

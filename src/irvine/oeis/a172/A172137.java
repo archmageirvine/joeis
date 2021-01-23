@@ -6,7 +6,7 @@ package irvine.oeis.a172;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A172137 Number of ways to place 2 nonattacking zebras on an <code>n X n</code> board.
+ * A172137 Number of ways to place 2 nonattacking zebras on an n X n board.
  * @author Georg Fischer
  */
 public class A172137 extends HolonomicRecurrence {

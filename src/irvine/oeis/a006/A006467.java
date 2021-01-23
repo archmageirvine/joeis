@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006467 Continued fraction for <code>Sum_{n&gt;=0} (-1)^n/3^(2^n)</code>.
+ * A006467 Continued fraction for Sum_{n&gt;=0} (-1)^n/3^(2^n).
  * @author Sean A. Irvine
  */
 public class A006467 implements Sequence {

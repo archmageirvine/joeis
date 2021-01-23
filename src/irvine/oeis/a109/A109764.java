@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109764 Sum of the first <code>n^2</code> squares.
+ * A109764 Sum of the first n^2 squares.
  * @author Sean A. Irvine
  */
 public class A109764 extends LinearRecurrence {

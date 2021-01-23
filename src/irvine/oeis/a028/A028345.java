@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A028345 Molien series for complete weight enumerator of self-dual code over <code>GF(5)</code> containing <code>all-1</code>'s vector.
+ * A028345 Molien series for complete weight enumerator of self-dual code over GF(5) containing all-1's vector.
  * @author Sean A. Irvine
  */
 public class A028345 extends GeneratingFunctionSequence {

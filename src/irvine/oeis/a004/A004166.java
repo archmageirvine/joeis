@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000244;
 
 /**
- * A004166 Sum of digits of <code>3^n</code>.
+ * A004166 Sum of digits of 3^n.
  * @author Sean A. Irvine
  */
 public class A004166 extends A000244 {

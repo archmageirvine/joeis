@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177838 Decimal expansion of <code>(44+sqrt(2442))/88</code>.
+ * A177838 Decimal expansion of (44+sqrt(2442))/88.
  * @author Georg Fischer
  */
 public class A177838 extends DecimalExpansionSequence {

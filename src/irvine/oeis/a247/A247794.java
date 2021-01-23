@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A247794 <code>a(n)^3</code> is the least cube to contain exactly n distinct digits.
+ * A247794 a(n)^3 is the least cube to contain exactly n distinct digits.
  * @author Georg Fischer
  */
 public class A247794 extends FiniteSequence {

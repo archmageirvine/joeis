@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006940 Rows of Pascal's triangle <code>mod 3</code>.
+ * A006940 Rows of Pascal's triangle mod 3.
  * @author Sean A. Irvine
  */
 public class A006940 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101092 Second partial sums of fifth powers <code>(A000584)</code>.
+ * A101092 Second partial sums of fifth powers (A000584).
  * @author Georg Fischer
  */
 public class A101092 extends GeneratingFunctionSequence {

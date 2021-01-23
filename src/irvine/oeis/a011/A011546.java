@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011546 Decimal expansion of <code>Pi</code> rounded to n places.
+ * A011546 Decimal expansion of Pi rounded to n places.
  * @author Sean A. Irvine
  */
 public class A011546 implements Sequence {

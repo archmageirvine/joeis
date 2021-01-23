@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190578 <code>a(n) = n^7 + n</code>.
+ * A190578 a(n) = n^7 + n.
  * @author Georg Fischer
  */
 public class A190578 extends HolonomicRecurrence {

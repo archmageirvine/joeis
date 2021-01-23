@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117644 Number of distinct pairs a <code>&lt</code>; b with nonzero decimal digits such that a <code>+ b = 10^n</code>.
+ * A117644 Number of distinct pairs a &lt; b with nonzero decimal digits such that a + b = 10^n.
  * @author Georg Fischer
  */
 public class A117644 extends GeneratingFunctionSequence {

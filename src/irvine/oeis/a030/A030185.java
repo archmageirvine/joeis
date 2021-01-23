@@ -1,7 +1,5 @@
 package irvine.oeis.a030;
 
-import java.util.Collections;
-
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -12,7 +10,7 @@ import irvine.oeis.a000.A000521;
 import irvine.oeis.a145.A145200;
 
 /**
- * A030185 Coefficients in expansion of <code>E_2*E_4/(E_6*j)</code> in powers of <code>1/j</code>.
+ * A030185 Coefficients in expansion of E_2*E_4/(E_6*j) in powers of 1/j.
  * @author Sean A. Irvine
  */
 public class A030185 extends MemorySequence {
@@ -20,8 +18,8 @@ public class A030185 extends MemorySequence {
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mTSeq = new A145200();
   private final Sequence mUSeq = new A000521();
-  private final Polynomial<Z> mT = RING.create(Collections.emptyList());
-  private final Polynomial<Z> mU = RING.create(Collections.emptyList()); // = x * A000521(x)
+  private final Polynomial<Z> mT = RING.empty();
+  private final Polynomial<Z> mU = RING.empty(); // = x * A000521(x)
 
   {
     next(); // skip leading 0

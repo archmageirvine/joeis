@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119827 Number of ternary words with exactly one 000.
+ * A119827 Number of ternary words of length n with exactly one 000.
  * @author Sean A. Irvine
  */
 public class A119827 extends LinearRecurrence {

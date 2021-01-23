@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A187079 Decimal expansion of <code>(sqrt(2 + e^e)/e)^e</code>.
+ * A187079 Decimal expansion of (sqrt(2 + e^e)/e)^e.
  * @author Georg Fischer
  */
 public class A187079 extends DecimalExpansionSequence {

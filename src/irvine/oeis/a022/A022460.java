@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A022460 <code>a(n) = prime(3*n) mod prime(n)</code>.
+ * A022460 a(n) = prime(3*n) mod prime(n).
  * @author Sean A. Irvine
  */
 public class A022460 extends A000040 {

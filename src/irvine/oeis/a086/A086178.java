@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A086178 Decimal expansion of <code>1 + 2sqrt(2)</code>.
+ * A086178 Decimal expansion of 1 + 2sqrt(2).
  * @author Sean A. Irvine
  */
 public class A086178 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.ONE.add(CR.valueOf(8).sqrt());
+  private static final CR N = CR.ONE.add(CR.EIGHT.sqrt());
 
   @Override
   protected CR getCR() {

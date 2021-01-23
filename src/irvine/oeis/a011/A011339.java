@@ -5,12 +5,12 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011339 Decimal expansion of <code>10th</code> root of 14.
+ * A011339 Decimal expansion of 10th root of 14.
  * @author Sean A. Irvine
  */
 public class A011339 extends DecimalExpansionSequence {
 
-  private static final CR N = ComputableReals.SINGLETON.pow(CR.valueOf(14), CR.valueOf(10).inverse());
+  private static final CR N = ComputableReals.SINGLETON.pow(CR.valueOf(14), CR.TEN.inverse());
 
   @Override
   protected CR getCR() {

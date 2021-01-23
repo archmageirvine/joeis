@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A036026 Number of partitions of n into parts not of forms <code>4*k+2, 20*k, 20*k+5</code> or <code>20*k+15</code>.
+ * A036026 Number of partitions of n into parts not of forms 4*k+2, 20*k, 20*k+5 or 20*k+15.
  * @author Georg Fischer
  */
 public class A036026 extends EulerTransformSequence {

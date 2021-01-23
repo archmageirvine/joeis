@@ -6,7 +6,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328054 Expansion of e.g.f. <code>log(1 + x / (1 - x)^2)</code>.
+ * A328054 Expansion of e.g.f. log(1 + x / (1 - x)^2).
  * @author Georg Fischer
  */
 public class A328054 extends HolonomicRecurrence {

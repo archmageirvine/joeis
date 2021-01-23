@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A039302 Number of distinct quadratic residues <code>mod 5^n</code>.
+ * A039302 Number of distinct quadratic residues mod 5^n.
  * @author Sean A. Irvine
  */
 public class A039302 extends LinearRecurrence {

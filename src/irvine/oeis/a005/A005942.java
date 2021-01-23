@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005942 <code>a(2n) = a(n) + a(n+1), a(2n+1) = 2a(n+1)</code>, if <code>n &gt;= 2</code>.
+ * A005942 a(2n) = a(n) + a(n+1), a(2n+1) = 2a(n+1), if n &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A005942 extends MemorySequence {

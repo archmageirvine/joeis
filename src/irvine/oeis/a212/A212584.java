@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A212584 Nonnegative walks of length n on the x-axis starting at the origin using steps <code>{1,-1}</code> and visiting no point more than twice.
+ * A212584 Nonnegative walks of length n on the x-axis starting at the origin using steps {1,-1} and visiting no point more than twice.
  * @author Georg Fischer
  */
 public class A212584 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084636 Binomial transform of <code>(1,0,1,0,1,0,2,0,2,0,2,0....)</code>.
+ * A084636 Binomial transform of (1,0,1,0,1,0,2,0,2,0,2,0....).
  * @author Georg Fischer
  */
 public class A084636 extends GeneratingFunctionSequence {

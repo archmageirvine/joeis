@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309907 <code>a(n)</code> is the square of the number consisting of one 1 and <code>n 3's: (133...3)^2</code>.
+ * A309907 a(n) is the square of the number consisting of one 1 and n 3's: (133...3)^2.
  * @author Georg Fischer
  */
 public class A309907 extends HolonomicRecurrence {

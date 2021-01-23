@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A242809 <code>a(n)</code> is the largest n-digit number whose truncation after its first k digits is divisible by the k-th Fibonacci number for k <code>= 1..n</code>.
+ * A242809 a(n) is the largest n-digit number whose truncation after its first k digits is divisible by the k-th Fibonacci number for k = 1..n.
  * @author Georg Fischer
  */
 public class A242809 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013458 <code>cos(tan(x)-arctanh(x))=1-8064/10!*x^10-2838528/12!*x^12..</code>.
+ * A013458 cos(tan(x)-arctanh(x))=1-8064/10!*x^10-2838528/12!*x^12...
  * @author Sean A. Irvine
  */
 public class A013458 implements Sequence {

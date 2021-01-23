@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289923 Limiting sequence of coefficients of <code>1/([1+r] - [1+2r]x + [1+3r]x^2 - ...)</code>, where <code>[ ] =</code> floor and r approaches 19/21 from the left.
+ * A289923 Limiting sequence of coefficients of 1/([1+r] - [1+2r]x + [1+3r]x^2 - ...), where [ ] = floor and r approaches 19/21 from the left.
  * @author Georg Fischer
  */
 public class A289923 extends GeneratingFunctionSequence {

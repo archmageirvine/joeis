@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007365 Smallest k such that <code>sigma(n+k) = sigma(k)</code>.
+ * A007365 Smallest k such that sigma(n+k) = sigma(k).
  * @author Sean A. Irvine
  */
 public class A007365 implements Sequence {

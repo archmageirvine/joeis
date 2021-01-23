@@ -4,7 +4,7 @@ package irvine.oeis.a279;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A279446 Number of <code>non-equivalent (mod D_3)</code> ways to place 6 indistinguishable points on a triangular grid of side n so that no two of them are adjacent.
+ * A279446 Number of non-equivalent (mod D_3) ways to place 6 indistinguishable points on a triangular grid of side n so that no two of them are adjacent.
  * @author Georg Fischer
  */
 public class A279446 extends GeneratingFunctionSequence {

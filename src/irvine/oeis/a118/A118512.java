@@ -5,7 +5,7 @@ package irvine.oeis.a118;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A118512 Define sequence <code>S_m</code> by: initial term = m, reverse digits and add 1 to get next term. Entry shows <code>S_11</code>. This reaches a cycle of length 9 in 18 steps.
+ * A118512 Define sequence S_m by: initial term = m, reverse digits and add 1 to get next term. Entry shows S_11. This reaches a cycle of length 9 in 18 steps.
  * @author Georg Fischer
  */
 public class A118512 extends HolonomicRecurrence {

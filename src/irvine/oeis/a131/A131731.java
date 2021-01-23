@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A131731 Period <code>4</code>: repeat <code>[2, -3, 4, -3]</code>.
+ * A131731 Period 4: repeat [2, -3, 4, -3].
  * @author Georg Fischer
  */
 public class A131731 extends PeriodicSequence {

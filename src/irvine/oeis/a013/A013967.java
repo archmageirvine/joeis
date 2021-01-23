@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013967 <code>a(n) = sigma_19(n)</code>, the sum of the <code>19th</code> powers of the divisors of <code>n</code>.
+ * A013967 a(n) = sigma_19(n), the sum of the 19th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013967 implements Sequence {

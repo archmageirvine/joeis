@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003031 Denominators of expansion of Fresnel integral <code>S(z)</code>.
+ * A003031 Denominators of expansion of Fresnel integral S(z).
  * @author Sean A. Irvine
  */
 public class A003031 implements Sequence {

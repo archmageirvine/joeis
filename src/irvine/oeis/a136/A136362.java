@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A136362 Numbers n such that <code>P+n</code> is not irreducible, where P <code>= x^8 - 8*x^6 + 20*x^4 - 16*x^2 + 2</code>.
+ * A136362 Numbers n such that P+n is not irreducible, where P = x^8 - 8*x^6 + 20*x^4 - 16*x^2 + 2.
  * @author Georg Fischer
  */
 public class A136362 extends GeneratingFunctionSequence {

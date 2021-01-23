@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005706 Number of partitions of <code>5n</code> into powers of 5.
+ * A005706 Number of partitions of 5n into powers of 5.
  * @author Sean A. Irvine
  */
 public class A005706 extends MemorySequence {

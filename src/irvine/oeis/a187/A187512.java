@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187512 Number of 7-step S, E, and NW-moving king's tours on an <code>n X n</code> board summed over all starting positions.
+ * A187512 Number of 7-step S, E, and NW-moving king's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187512 extends GeneratingFunctionSequence {

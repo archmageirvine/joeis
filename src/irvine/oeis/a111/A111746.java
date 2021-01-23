@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A111746 Number of squares in the interior of the square with vertices <code>(n,0), (0,n), (-n,0)</code> and <code>(0,-n)</code> in a square <code>(x,y)-grid</code>.
+ * A111746 Number of squares in the interior of the square with vertices (n,0), (0,n), (-n,0) and (0,-n) in a square (x,y)-grid.
  * @author Georg Fischer
  */
 public class A111746 extends GeneratingFunctionSequence {

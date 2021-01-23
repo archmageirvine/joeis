@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a054.A054055;
 
 /**
- * A030076 <code>a(n) = 10 -</code> m, where m = maximal digit of <code>n</code>.
+ * A030076 a(n) = 10 - m, where m = maximal digit of n.
  * @author Sean A. Irvine
  */
 public class A030076 extends A054055 {

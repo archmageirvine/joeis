@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.oeis.PisotLSequence;
 
 /**
- * A021013 Pisot sequence <code>P(7,11), a(0)=7, a(1)=11, a(n+1)</code> is the nearest integer to <code>a(n)^2/a(n-1)</code>. Agrees with <code>A021014</code> only for <code>n &lt;= 20</code>.
+ * A021013 Pisot sequence P(7,11), a(0)=7, a(1)=11, a(n+1) is the nearest integer to a(n)^2/a(n-1). Agrees with A021014 only for n &lt;= 20.
  * @author Sean A. Irvine
  */
 public class A021013 extends PisotLSequence {

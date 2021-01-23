@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108248 <code>a(n) = ceiling(n/24) + ceiling((n+1)/24)</code>.
+ * A108248 a(n) = ceiling(n/24) + ceiling((n+1)/24).
  * @author Georg Fischer
  */
 public class A108248 extends GeneratingFunctionSequence {

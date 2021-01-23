@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A269483 <code>a(n) = n^12 - n^11 + n^9 - n^8 + n^6 - n^4 + n^3 - n + 1</code>.
+ * A269483 a(n) = n^12 - n^11 + n^9 - n^8 + n^6 - n^4 + n^3 - n + 1.
  * @author Sean A. Irvine
  */
 public class A269483 extends LinearRecurrence {

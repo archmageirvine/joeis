@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A025492 Fixed point reached by iterating the Kempner function <code>A002034</code> starting at <code>n</code>.
+ * A025492 Fixed point reached by iterating the Kempner function A002034 starting at n.
  * @author Sean A. Irvine
  */
 public class A025492 implements Sequence {

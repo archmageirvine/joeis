@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290156 Tribonacci-like sequence of composite numbers with <code>a(0) = 99202581681909167232, a(1) = 67600144946390082339</code> and <code>a(2) = 139344212815127987596</code>.
+ * A290156 Tribonacci-like sequence of composite numbers with a(0) = 99202581681909167232, a(1) = 67600144946390082339 and a(2) = 139344212815127987596.
  * @author Sean A. Irvine
  */
 public class A290156 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144864 <code>a(n) = (4*16^(n-1)-1)/3</code>.
+ * A144864 a(n) = (4*16^(n-1)-1)/3.
  * @author Sean A. Irvine
  */
 public class A144864 extends LinearRecurrence {

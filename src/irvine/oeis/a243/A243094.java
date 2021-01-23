@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243094 Cardinality of the Weyl alternation set corresponding to the zero-weight in the representation of the Lie algebra <code>sp(2n)</code> whose highest weight is the second fundamental weight.
+ * A243094 Cardinality of the Weyl alternation set corresponding to the zero-weight in the representation of the Lie algebra sp(2n) whose highest weight is the second fundamental weight.
  * @author Georg Fischer
  */
 public class A243094 extends GeneratingFunctionSequence {

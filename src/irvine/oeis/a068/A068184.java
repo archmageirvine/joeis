@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A068184 Smallest number whose product of digits equals <code>n!</code>.
+ * A068184 Smallest number whose product of digits equals n!.
  * @author Georg Fischer
  */
 public class A068184 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A018820 n is the sum of k nonzero squares for all <code>1 &lt;= k &lt;= n-14</code>.
+ * A018820 n is the sum of k nonzero squares for all 1 &lt;= k &lt;= n-14.
  * @author Sean A. Irvine
  */
 public class A018820 implements Sequence {

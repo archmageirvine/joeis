@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060101 Sixth column <code>(m=5)</code> of triangle <code>A060098</code>.
+ * A060101 Sixth column (m=5) of triangle A060098.
  * @author Sean A. Irvine
  */
 public class A060101 extends LinearRecurrence {

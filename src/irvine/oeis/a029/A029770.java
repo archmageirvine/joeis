@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A029770 Theta series of 10-dimensional lattice <code>(C6 X SU(4,2)):C2</code> with minimal norm 4.
+ * A029770 Theta series of 10-dimensional lattice (C6 X SU(4,2)):C2 with minimal norm 4.
  * @author Sean A. Irvine
  */
 public class A029770 extends GramMatrixThetaSeries {

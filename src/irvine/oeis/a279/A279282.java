@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279282 Self-composition of the cubes; g.f.: <code>A(x) = G(G(x))</code>, where <code>G(x) =</code> g.f. of <code>A000578</code>.
+ * A279282 Self-composition of the cubes; g.f.: A(x) = G(G(x)), where G(x) = g.f. of A000578.
  * @author Sean A. Irvine
  */
 public class A279282 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169929 Integer values of <code>10*n-122+360/n</code> for <code>n &gt;= 7</code> (see <code>A169926)</code>.
+ * A169929 Integer values of 10*n-122+360/n for n &gt;= 7 (see A169926).
  * @author Georg Fischer
  */
 public class A169929 extends FiniteSequence {

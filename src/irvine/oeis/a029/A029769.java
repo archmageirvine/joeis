@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029769 Expansion of <code>eta(q^2)^12 / theta_3(q)^3</code> in powers of q.
+ * A029769 Expansion of eta(q^2)^12 / theta_3(q)^3 in powers of q.
  * @author Sean A. Irvine
  */
 public class A029769 implements Sequence {

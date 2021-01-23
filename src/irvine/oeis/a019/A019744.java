@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019744 Decimal expansion of <code>e/7</code>.
+ * A019744 Decimal expansion of e/7.
  * @author Sean A. Irvine
  */
 public class A019744 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.E.divide(CR.valueOf(7));
+  private static final CR N = CR.E.divide(CR.SEVEN);
 
   @Override
   protected CR getCR() {

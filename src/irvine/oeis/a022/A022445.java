@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007825;
 
 /**
- * A022445 Number of self-avoiding closed walks (from 0 to <code>0)</code> of length <code>2n</code> in the strip <code>{0, 1, 2}</code> X Z of the square lattice Z X Z.
+ * A022445 Number of self-avoiding closed walks (from 0 to 0) of length 2n in the strip {0, 1, 2} X Z of the square lattice Z X Z.
  * @author Sean A. Irvine
  */
 public class A022445 extends A007825 {

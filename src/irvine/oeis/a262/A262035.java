@@ -6,7 +6,7 @@ package irvine.oeis.a262;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A262035 Number of permutations of <code>[2n+1]</code> beginning with exactly n ascents.
+ * A262035 Number of permutations of [2n+1] beginning with exactly n ascents.
  * @author Georg Fischer
  */
 public class A262035 extends HolonomicRecurrence {

@@ -5,13 +5,13 @@ package irvine.oeis.a281;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A281111 Numbers k such that <code>97*10^k - 3</code> is prime.
+ * A281111 Numbers k such that 97*10^k - 3 is prime.
  * @author Georg Fischer
  */
 public class A281111 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A281111() {
-    super(1, 1, 97, 10, -3, 0);
+    super(1, 1, 97, 10, -3);
   }
 }

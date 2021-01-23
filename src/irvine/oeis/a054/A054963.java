@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054963 Number of cells in the first column of all directed column-convex polyominoes of area <code>n+1</code>.
+ * A054963 Number of cells in the first column of all directed column-convex polyominoes of area n+1.
  * @author Georg Fischer
  */
 public class A054963 extends GeneratingFunctionSequence {

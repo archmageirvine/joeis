@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026379 <code>a(n) =</code> number of integer strings <code>s(0),...,s(n)</code> counted by array T in <code>A026374</code> that have <code>s(n)=3</code>; also <code>a(n) = T(2n-1,n-2)</code>.
+ * A026379 a(n) = number of integer strings s(0),...,s(n) counted by array T in A026374 that have s(n)=3; also a(n) = T(2n-1,n-2).
  * @author Sean A. Irvine
  */
 public class A026379 implements Sequence {

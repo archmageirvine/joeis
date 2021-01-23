@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043803 Number of runs in the base 3 representation of n is congruent to <code>5 mod 8</code>.
+ * A043803 Number of runs in the base 3 representation of n is congruent to 5 mod 8.
  * @author Georg Fischer
  */
 public class A043803 extends RunsBaseSequence {

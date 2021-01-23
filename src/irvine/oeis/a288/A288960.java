@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288960 Number of 6-cycles in the <code>n X n</code> rook graph.
+ * A288960 Number of 6-cycles in the n X n rook graph.
  * @author Sean A. Irvine
  */
 public class A288960 extends LinearRecurrence {

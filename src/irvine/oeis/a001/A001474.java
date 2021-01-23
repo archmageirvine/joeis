@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001474 w such that <code>w^3+x^3+y^3+z^3=0, w&gt;|x|&gt;|y|&gt;|z|</code>, is soluble.
+ * A001474 w such that w^3+x^3+y^3+z^3=0, w&gt;|x|&gt;|y|&gt;|z|, is soluble.
  * @author Sean A. Irvine
  */
 public class A001474 implements Sequence {
@@ -23,7 +23,7 @@ public class A001474 implements Sequence {
           final long dy = LongUtils.gcd(dx, y);
           final Z y3 = x3.add(Z.valueOf(y).pow(3));
           for (long z = y + 1; z <= -y - 1; ++z) {
-            if (Math.abs(LongUtils.gcd(dy, z)) == 1 && Z.ZERO.equals(y3.add(Z.valueOf(z).pow(3)))) {
+            if (Math.abs(LongUtils.gcd(dy, z)) == 1 && y3.add(Z.valueOf(z).pow(3)).isZero()) {
               return Z.valueOf(mN);
             }
           }

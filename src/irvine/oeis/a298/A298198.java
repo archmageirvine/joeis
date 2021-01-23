@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298198 Number of Eulerian cycles in the graph Cartesian product of <code>C_n</code> and a double edge.
+ * A298198 Number of Eulerian cycles in the graph Cartesian product of C_n and a double edge.
  * @author Georg Fischer
  */
 public class A298198 extends GeneratingFunctionSequence {

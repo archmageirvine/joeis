@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267183 Row 3 of the square array in <code>A267181</code>.
+ * A267183 Row 3 of the square array in A267181.
  * @author Georg Fischer
  */
 public class A267183 extends GeneratingFunctionSequence {

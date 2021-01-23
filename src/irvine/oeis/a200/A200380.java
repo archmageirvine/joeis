@@ -6,7 +6,7 @@ package irvine.oeis.a200;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A200380 Expansion of e.g.f. <code>exp(x+x^2-1/6*x^3)</code>.
+ * A200380 Expansion of e.g.f. exp(x+x^2-1/6*x^3).
  * @author Georg Fischer
  */
 public class A200380 extends HolonomicRecurrence {

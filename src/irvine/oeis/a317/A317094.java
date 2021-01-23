@@ -6,7 +6,7 @@ package irvine.oeis.a317;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A317094 <code>a(n) = (n + 1)^2 + n!*L_n(-1)</code>, where <code>L_n(x)</code> is the Laguerre polynomial.
+ * A317094 a(n) = (n + 1)^2 + n!*L_n(-1), where L_n(x) is the Laguerre polynomial.
  * @author Georg Fischer
  */
 public class A317094 extends HolonomicRecurrence {

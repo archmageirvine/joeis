@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a225.A225984;
 
 /**
- * A290139 <code>a(n) = A225984(n) mod n</code>.
+ * A290139 a(n) = A225984(n) mod n.
  * @author Georg Fischer
  */
 public class A290139 extends A225984 {
@@ -15,7 +15,7 @@ public class A290139 extends A225984 {
   /** Construct the sequence. */
   public A290139() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

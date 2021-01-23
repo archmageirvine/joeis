@@ -6,7 +6,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107231 <code>a(n) = C(n+2,2)*C(n,floor(n/2))</code>.
+ * A107231 a(n) = C(n+2,2)*C(n,floor(n/2)).
  * @author Georg Fischer
  */
 public class A107231 extends HolonomicRecurrence {

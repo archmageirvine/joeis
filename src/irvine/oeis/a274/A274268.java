@@ -6,7 +6,7 @@ package irvine.oeis.a274;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A274268 E.g.f. <code>(1 + x)^4*log(1 + x)</code>.
+ * A274268 E.g.f. (1 + x)^4*log(1 + x).
  * @author Georg Fischer
  */
 public class A274268 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060105 Sixth column <code>(m=5)</code> of triangle <code>A060102</code>.
+ * A060105 Sixth column (m=5) of triangle A060102.
  * @author Georg Fischer
  */
 public class A060105 extends GeneratingFunctionSequence {

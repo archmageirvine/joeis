@@ -7,7 +7,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A193860 Triangular array: the fission of <code>((2x+1)^n)</code> by <code>(q(n,x))</code>, where <code>q(n,x)=x^n+x^(n-1)+...+x+1</code>.
+ * A193860 Triangular array:  the fission of ((2x+1)^n) by (q(n,x)), where q(n,x)=x^n+x^(n-1)+...+x+1.
  * @author Georg Fischer
  */
 public class A193860 extends GeneratingFunctionTriangle {

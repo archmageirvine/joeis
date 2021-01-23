@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A105387 Morse code alphabet where <code>"-" = 0</code> and "." <code>= 1</code>.
+ * A105387 Morse code alphabet where "-" = 0 and "." = 1, binary converted to decimal.
  * @author Georg Fischer
  */
 public class A105387 extends FiniteSequence {

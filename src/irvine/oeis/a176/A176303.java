@@ -4,7 +4,7 @@ package irvine.oeis.a176;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A176303 <code>a(n) = abs(2^n-127)</code>.
+ * A176303 a(n) = abs(2^n-127).
  * @author Georg Fischer
  */
 public class A176303 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109119 <code>a(n) = 2(5n^2 + 5n + 1)^3</code>.
+ * A109119 a(n) = 2(5n^2 + 5n + 1)^3.
  * @author Georg Fischer
  */
 public class A109119 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a239;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A239112 Nonzero coefficients of g.f. <code>A(x) = 1 + 4*x^2 + 36*x^4 + 396*x^6 +</code> ... satisfying <code>(A-1)*(1+3/A)^3 = 256*x^2</code>.
+ * A239112 Nonzero coefficients of g.f. A(x) = 1 + 4*x^2 + 36*x^4 + 396*x^6 + ... satisfying (A-1)*(1+3/A)^3 = 256*x^2.
  * @author Georg Fischer
  */
 public class A239112 extends HolonomicRecurrence {

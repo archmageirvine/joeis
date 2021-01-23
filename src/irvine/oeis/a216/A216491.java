@@ -5,7 +5,7 @@ package irvine.oeis.a216;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A216491 <code>12*5^n</code>.
+ * A216491 12*5^n.
  * @author Georg Fischer
  */
 public class A216491 extends HolonomicRecurrence {

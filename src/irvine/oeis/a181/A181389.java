@@ -6,7 +6,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181389 Absolute difference between (sum of previous terms) and <code>(n-th-even</code> square) with <code>a(1) = 2</code>.
+ * A181389 Absolute difference between (sum of previous terms) and (n-th-even square) with a(1) = 2.
  * @author Georg Fischer
  */
 public class A181389 extends GeneratingFunctionSequence {

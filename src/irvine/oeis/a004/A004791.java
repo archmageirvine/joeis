@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004791 n-th number k <code>&gt;= 2</code> such that if <code>1 &lt;= j &lt</code>; k then fractional part of log k <code>&gt</code>; fractional part of log j.
+ * A004791 n-th number k &gt;= 2 such that if 1 &lt;= j &lt; k then fractional part of log k &gt; fractional part of log j.
  * @author Sean A. Irvine
  */
 public class A004791 implements Sequence {

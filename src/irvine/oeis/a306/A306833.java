@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306833 <code>a(1) = 3; a(n+1)</code> is the smallest k <code>&gt; a(n)</code> such that <code>2^(k-1) == 1 (mod a(n))</code>.
+ * A306833 a(1) = 3; a(n+1) is the smallest k &gt; a(n) such that 2^(k-1) == 1 (mod a(n)).
  * @author Georg Fischer
  */
 public class A306833 extends FiniteSequence {

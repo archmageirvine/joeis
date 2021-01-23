@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331943 <code>a(n) = n^2 + 1 - ceiling((n + 2)/3)</code>.
+ * A331943 a(n) = n^2 + 1 - ceiling((n + 2)/3).
  * @author Georg Fischer
  */
 public class A331943 extends HolonomicRecurrence {

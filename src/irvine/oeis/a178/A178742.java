@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178742 Partial sums of <code>floor(2^n/9)</code>.
+ * A178742 Partial sums of floor(2^n/9).
  * @author Sean A. Irvine
  */
 public class A178742 extends LinearRecurrence {

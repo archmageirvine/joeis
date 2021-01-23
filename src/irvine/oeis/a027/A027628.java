@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027628 Expansion of Molien series for 5-dimensional group <code>G_3</code> acting on Jacobi polynomials of ternary self-dual codes.
+ * A027628 Expansion of Molien series for 5-dimensional group G_3 acting on Jacobi polynomials of ternary self-dual codes.
  * @author Sean A. Irvine
  */
 public class A027628 extends LinearRecurrence {

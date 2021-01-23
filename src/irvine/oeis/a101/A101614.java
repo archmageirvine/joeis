@@ -5,7 +5,7 @@ package irvine.oeis.a101;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A101614 Fixed point of morphism <code>0 -&gt; 01, 1 -&gt; 02, 2 -&gt; 10</code>.
+ * A101614 Fixed point of morphism 0 -&gt; 01, 1 -&gt; 02, 2 -&gt; 10.
  * @author Georg Fischer
  */
 public class A101614 extends MorphismSequence {

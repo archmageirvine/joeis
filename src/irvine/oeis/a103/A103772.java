@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103772 Larger of two sides in a <code>(k,k,k-1)-integer-sided</code> triangle with integer area.
+ * A103772 Larger of two sides in a (k,k,k-1)-integer-sided triangle with integer area.
  * @author Sean A. Irvine
  */
 public class A103772 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a134;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A134068 <code>a(n) = 2*a(n-2) + 4*a(n-3)</code>, with initial terms <code>0, 3, 3</code>.
+ * A134068 a(n) = 2*a(n-2) + 4*a(n-3), with initial terms 0, 3, 3.
  * @author Georg Fischer
  */
 public class A134068 extends HolonomicRecurrence {

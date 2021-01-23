@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A047076 <code>a(n+1)</code> is the smallest palindromic prime containing exactly 2 more digits on each end than the previous term, with <code>a(n)</code> as a central substring.
+ * A047076 a(n+1) is the smallest palindromic prime containing exactly 2 more digits on each end than the previous term, with a(n) as a central substring.
  * @author Georg Fischer
  */
 public class A047076 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A047076() {
-    super(new Z("2"), new Z("30203"), new Z("133020331"), new Z("1713302033171"), new Z("12171330203317121"), new Z("151217133020331712151"), new Z("1815121713302033171215181"), new Z("16181512171330203317121518161"), new Z("331618151217133020331712151816133"), new Z("9333161815121713302033171215181613339"), new Z("11933316181512171330203317121518161333911"));
+    super(Z.TWO, new Z("30203"), new Z("133020331"), new Z("1713302033171"), new Z("12171330203317121"), new Z("151217133020331712151"), new Z("1815121713302033171215181"), new Z("16181512171330203317121518161"), new Z("331618151217133020331712151816133"), new Z("9333161815121713302033171215181613339"), new Z("11933316181512171330203317121518161333911"));
   }
 }

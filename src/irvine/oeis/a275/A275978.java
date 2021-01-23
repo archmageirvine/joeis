@@ -5,13 +5,13 @@ package irvine.oeis.a275;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A275978 Numbers n such that <code>(101*10^n + 1)/3</code> is prime.
+ * A275978 Numbers n such that (101*10^n + 1)/3 is prime.
  * @author Georg Fischer
  */
 public class A275978 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A275978() {
-    super(1, 1, 101, 10, +1, 3);
+    super(1, 1, 101, 10, 1, 3);
   }
 }

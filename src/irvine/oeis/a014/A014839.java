@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a246.A246655;
 
 /**
- * A014839 Sum of all the digits of n in every prime-power base from 2 to <code>n-1</code>.
+ * A014839 Sum of all the digits of n in every prime-power base from 2 to n-1.
  * @author Sean A. Irvine
  */
 public class A014839 implements Sequence {
@@ -18,7 +18,7 @@ public class A014839 implements Sequence {
     ++mN;
     long sum = 0;
     final A246655 pp = new A246655();
-    for (long base = pp.nextLong(); base < mN; base = pp.nextLong()) {
+    for (long base = pp.next().longValueExact(); base < mN; base = pp.next().longValueExact()) {
       sum += ZUtils.digitSum(mN, base);
     }
     return Z.valueOf(sum);

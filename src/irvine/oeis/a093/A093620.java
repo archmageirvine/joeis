@@ -6,7 +6,7 @@ package irvine.oeis.a093;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A093620 Values of Laguerre polynomials: <code>a(n) = 2^n*n!*LaguerreL(n,-1/2,-2)</code>.
+ * A093620 Values of Laguerre polynomials: a(n) = 2^n*n!*LaguerreL(n,-1/2,-2).
  * @author Georg Fischer
  */
 public class A093620 extends HolonomicRecurrence {

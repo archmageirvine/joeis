@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325695 Number of <code>length-3</code> strict integer partitions of n such that the largest part is not the sum of the other two.
+ * A325695 Number of length-3 strict integer partitions of n such that the largest part is not the sum of the other two.
  * @author Georg Fischer
  */
 public class A325695 extends HolonomicRecurrence {

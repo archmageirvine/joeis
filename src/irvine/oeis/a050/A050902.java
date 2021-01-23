@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050902 Numbers n such that <code>287*2^n-1</code> is prime.
+ * A050902 Numbers n such that 287*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050902 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050902() {
-    super(1, 4, 287, 2, -1, 0);
+    super(1, 4, 287, 2, -1);
   }
 }

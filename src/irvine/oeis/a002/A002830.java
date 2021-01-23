@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
- * A002830 Number of <code>3-edge-colored</code> trivalent graphs with <code>2n</code> nodes.
+ * A002830 Number of 3-edge-colored trivalent graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A002830 extends A002831 {

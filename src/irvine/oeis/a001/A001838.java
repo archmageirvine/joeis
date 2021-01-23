@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A001838 Numbers n such that <code>phi(n+2) = phi(n) + 2</code>.
+ * A001838 Numbers n such that phi(n+2) = phi(n) + 2.
  * @author Sean A. Irvine
  */
 public class A001838 extends A000010 {

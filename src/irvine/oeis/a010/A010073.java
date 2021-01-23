@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A010073 <code>a(n) =</code> sum of <code>base-6</code> digits of <code>a(n-1) +</code> sum of <code>base-6</code> digits of <code>a(n-2); a(0)=0, a(1)=1</code>.
+ * A010073 a(n) = sum of base-6 digits of a(n-1) + sum of base-6 digits of a(n-2); a(0)=0, a(1)=1.
  * @author Sean A. Irvine
  */
 public class A010073 implements Sequence {
@@ -22,7 +22,7 @@ public class A010073 implements Sequence {
       }
       mB = Z.ONE;
     } else {
-      final Z t = Z.valueOf(ZUtils.digitSum(mA, Z.SIX) + ZUtils.digitSum(mB, Z.SIX));
+      final Z t = Z.valueOf(ZUtils.digitSum(mA, 6) + ZUtils.digitSum(mB, 6));
       mA = mB;
       mB = t;
     }

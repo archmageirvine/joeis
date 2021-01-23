@@ -6,7 +6,7 @@ package irvine.oeis.a256;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A256092 G.f.: <code>(2*x)/((1-(1-8*x)^(1/4))*(1-8*x)^(3/4))</code>.
+ * A256092 G.f.: (2*x)/((1-(1-8*x)^(1/4))*(1-8*x)^(3/4)).
  * @author Georg Fischer
  */
 public class A256092 extends HolonomicRecurrence {

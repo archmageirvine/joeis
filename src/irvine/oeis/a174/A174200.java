@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A174200 The sequence of numbers which, when entered on a standard telephone numeric keypad, produce the letters a thru <code>z</code>. Letters are accessed by one or more presses of a single key.
+ * A174200 The sequence of numbers which, when entered on a standard telephone numeric keypad, produce the letters a thru z. Letters are accessed by one or more presses of a single key.
  * @author Georg Fischer
  */
 public class A174200 extends FiniteSequence {

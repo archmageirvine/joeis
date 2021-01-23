@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A091132 Decimal expansion of <code>e^2 - 2e</code>.
+ * A091132 Decimal expansion of e^2 - 2e.
  * @author Georg Fischer
  */
 public class A091132 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A295337 Denominators of the convergents to <code>sqrt(14)/2 = A294969</code>.
+ * A295337 Denominators of the convergents to sqrt(14)/2 = A294969.
  * @author Georg Fischer
  */
 public class A295337 extends GeneratingFunctionSequence {

@@ -2,7 +2,7 @@ package irvine.math.expression;
 
 /**
  * An expression for subtraction.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public final class Subtract {
 

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007581 <code>a(n) = (2^n+1)*(2^n+2)/6</code>.
+ * A007581 a(n) = (2^n+1)*(2^n+2)/6.
  * @author Sean A. Irvine
  */
 public class A007581 implements Sequence {

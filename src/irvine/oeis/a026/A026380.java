@@ -4,7 +4,7 @@ import irvine.oeis.AlternatingSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A026380 <code>a(n) = T(n,[ n/2 ])</code>, where T is the array in <code>A026374</code>.
+ * A026380 a(n) = T(n,[ n/2 ]), where T is the array in A026374.
  * @author Sean A. Irvine
  */
 public class A026380 extends AlternatingSequence {

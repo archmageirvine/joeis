@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A090000 Length of longest contiguous block of <code>1</code>'s in binary expansion of n-th prime.
+ * A090000 Length of longest contiguous block of 1's in binary expansion of n-th prime.
  * @author jmason
  * @author Sean A. Irvine
  */

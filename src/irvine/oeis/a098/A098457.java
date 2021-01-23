@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098457 Farey Bisection Expansion of <code>sqrt(7)</code>.
+ * A098457 Farey Bisection Expansion of sqrt(7).
  * @author Sean A. Irvine
  */
 public class A098457 extends LinearRecurrence {

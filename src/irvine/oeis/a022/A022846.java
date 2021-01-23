@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022846 Nearest integer to <code>n*sqrt(2)</code>.
+ * A022846 Nearest integer to n*sqrt(2).
  * @author Sean A. Irvine
  */
 public class A022846 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A015689 Inverse of <code>1680th</code> cyclotomic polynomial.
+ * A015689 Inverse of 1680th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A015689 extends PeriodicSequence {

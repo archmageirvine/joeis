@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A174019 Number of symmetry classes of reduced <code>3x3</code> magilatin squares with largest entry <code>n</code>.
+ * A174019 Number of symmetry classes of reduced 3x3 magilatin squares with largest entry n.
  * @author Georg Fischer
  */
 public class A174019 extends GeneratingFunctionSequence {

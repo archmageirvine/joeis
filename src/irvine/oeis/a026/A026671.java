@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026671 Number of lattice paths from <code>(0,0)</code> to <code>(n,n)</code> with steps <code>(0,1), (1,0)</code> and, when on the diagonal, <code>(1,1)</code>.
+ * A026671 Number of lattice paths from (0,0) to (n,n) with steps (0,1), (1,0) and, when on the diagonal, (1,1).
  * @author Sean A. Irvine
  */
 public class A026671 extends A026670 {

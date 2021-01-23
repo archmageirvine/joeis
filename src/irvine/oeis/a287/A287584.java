@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A287584 Number of set partitions of <code>[n]</code> such that all absolute differences between least elements of consecutive blocks and between consecutive elements within the blocks are not larger than five.
+ * A287584 Number of set partitions of [n] such that all absolute differences between least elements of consecutive blocks and between consecutive elements within the blocks are not larger than five.
  * @author Georg Fischer
  */
 public class A287584 extends GeneratingFunctionSequence {

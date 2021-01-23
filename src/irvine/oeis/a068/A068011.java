@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068011 Number of subsets of <code>{1,2,3,...,n}</code> that sum to <code>0 mod 5</code>.
+ * A068011 Number of subsets of {1,2,3,...,n} that sum to 0 mod 5.
  * @author Georg Fischer
  */
 public class A068011 extends LinearRecurrence {

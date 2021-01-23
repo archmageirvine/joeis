@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213604 Cumulative sums of digital roots of <code>A005891(n)</code>.
+ * A213604 Cumulative sums of digital roots of A005891(n).
  * @author Sean A. Irvine
  */
 public class A213604 extends LinearRecurrence {

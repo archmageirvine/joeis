@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007088;
 
 /**
- * A020767 <code>Product_{k=1..n} b(k)</code>, where <code>b(k) =</code> binary expansion of k <code>(A007088)</code> but read as if it were a decimal number.
+ * A020767 Product_{k=1..n} b(k), where b(k) = binary expansion of k (A007088) but read as if it were a decimal number.
  * @author Sean A. Irvine
  */
 public class A020767 extends A007088 {
@@ -14,7 +14,7 @@ public class A020767 extends A007088 {
   @Override
   public Z next() {
     final Z t = super.next();
-    if (!Z.ZERO.equals(t)) {
+    if (!t.isZero()) {
       mA = mA.multiply(t);
     }
     return mA;

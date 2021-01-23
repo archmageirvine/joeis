@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007113 Expansion of e.g.f. <code>(1 + x)^x</code>.
+ * A007113 Expansion of e.g.f. (1 + x)^x.
  * @author Sean A. Irvine
  */
 public class A007113 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015808 k is the first integer such that <code>phi(k) + n | sigma(k)</code>.
+ * A015808 k is the first integer such that phi(k) + n | sigma(k).
  * @author Sean A. Irvine
  */
 public class A015808 implements Sequence {
@@ -19,7 +19,7 @@ public class A015808 implements Sequence {
     long k = 0;
     while (true) {
       final FactorSequence fs = Cheetah.factor(++k);
-      if (Z.ZERO.equals(fs.sigma().mod(fs.phi().add(mN)))) {
+      if (fs.sigma().mod(fs.phi().add(mN)).isZero()) {
         return Z.valueOf(k);
       }
     }

@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160179 <code>a(1)=2. a(n)</code> equals the product of the previous terms divided by the <code>(n-1)st</code> prime gap.
+ * A160179 a(1)=2. a(n) equals the product of the previous terms divided by the (n-1)st prime gap.
  * @author Georg Fischer
  */
 public class A160179 extends FiniteSequence {

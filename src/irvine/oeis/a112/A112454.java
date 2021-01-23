@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A112454 Lexicographically maximal solution of any <code>9 X 9</code> sudoku, read by rows.
+ * A112454 Lexicographically maximal solution of any 9 X 9 sudoku, read by rows.
  * @author Georg Fischer
  */
 public class A112454 extends FiniteSequence {

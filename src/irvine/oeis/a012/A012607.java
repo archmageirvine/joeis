@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012607 Expansion of e.g.f. <code>cosh(arcsinh(x)*arcsin(x))</code> in powers of <code>x^4</code>.
+ * A012607 Expansion of e.g.f. cosh(arcsinh(x)*arcsin(x)) in powers of x^4.
  * @author Sean A. Irvine
  */
 public class A012607 implements Sequence {

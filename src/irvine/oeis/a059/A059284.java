@@ -6,7 +6,7 @@ package irvine.oeis.a059;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059284 Right edge of triangle in <code>A059283</code>.
+ * A059284 Right edge of triangle in A059283.
  * @author Georg Fischer
  */
 public class A059284 extends HolonomicRecurrence {

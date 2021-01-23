@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213661 Number of dominating subsets of the wheel graph <code>W_n</code>.
+ * A213661 Number of dominating subsets of the wheel graph W_n.
  * @author Sean A. Irvine
  */
 public class A213661 extends LinearRecurrence {

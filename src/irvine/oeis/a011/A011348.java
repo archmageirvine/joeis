@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011348 Decimal expansion of <code>19th</code> root of 14.
+ * A011348 Decimal expansion of 19th root of 14.
  * @author Sean A. Irvine
  */
 public class A011348 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A106612 <code>a(n) =</code> numerator of <code>n/(n+11)</code>.
+ * A106612 a(n) = numerator of n/(n+11).
  * @author Georg Fischer
  */
 public class A106612 extends GeneratingFunctionSequence {

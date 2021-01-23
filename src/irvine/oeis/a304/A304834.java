@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304834 <code>a(n) = 36*n^2 - 8*n - 2 (n &gt;=1)</code>.
+ * A304834 a(n) = 36*n^2 - 8*n - 2 (n &gt;=1).
  * @author Georg Fischer
  */
 public class A304834 extends LinearRecurrence {

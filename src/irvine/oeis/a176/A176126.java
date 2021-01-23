@@ -5,7 +5,7 @@ package irvine.oeis.a176;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A176126 Numerator of <code>-A127276(n)/A001788(n)</code>.
+ * A176126 Numerator of -A127276(n)/A001788(n).
  * @author Georg Fischer
  */
 public class A176126 extends HolonomicRecurrence {

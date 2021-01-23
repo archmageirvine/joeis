@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173729 Number of symmetry classes of <code>3 X 3</code> magilatin squares with positive values <code>&lt; n</code>.
+ * A173729 Number of symmetry classes of 3 X 3 magilatin squares with positive values &lt; n.
  * @author Georg Fischer
  */
 public class A173729 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A226465 Numbers <code>n = x0 x1...x9</code> such that sum of digits <code>(mod 10) -</code> xi <code>== i+1 mod 10</code>.
+ * A226465 Numbers n = x0 x1...x9 such that sum of digits (mod 10) - xi == i+1 mod 10.
  * @author Georg Fischer
  */
 public class A226465 extends FiniteSequence {

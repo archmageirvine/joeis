@@ -1,15 +1,18 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.FiniteSequence;
+import irvine.math.z.Z;
 
 /**
  * A036588 Number of binary rooted trees with n nodes and height at most 5.
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A036588 extends FiniteSequence {
+public class A036588 extends A036602 {
 
-  /** Construct the sequence. */
-  public A036588() {
-    super(1, 1, 1, 2, 3, 6, 10, 17, 25, 38, 52, 73, 93, 121, 143, 172, 187, 205, 202, 201, 177, 158, 123, 99, 66, 47, 26, 17, 7, 4, 1, 1);
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return ++mN >= 32 ? null : t(5, mN);
   }
 }

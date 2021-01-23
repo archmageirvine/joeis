@@ -4,7 +4,7 @@ package irvine.oeis.a047;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A047081 <code>Sum{T(n,i): i=0,1,...,n}</code>, array T as in <code>A047080</code>.
+ * A047081 Sum{T(n,i): i=0,1,...,n}, array T as in A047080.
  * @author Georg Fischer
  */
 public class A047081 extends GeneratingFunctionSequence {

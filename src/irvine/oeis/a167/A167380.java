@@ -5,7 +5,7 @@ package irvine.oeis.a167;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A167380 <code>a(1)=1, a(2)=2</code>, and continued periodically with <code>4, 5, 1, -4, -5, -1 </code>.
+ * A167380 a(1)=1, a(2)=2, and continued periodically with 4, 5, 1, -4, -5, -1 .
  * @author Georg Fischer
  */
 public class A167380 extends HolonomicRecurrence {

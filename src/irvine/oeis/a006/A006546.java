@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006546 Number of elements (a b, c <code>d)</code> in <code>SL(2,Z)</code> with trace n and <code>0 &lt;= a &lt;= {b, c} &lt;=</code> d.
+ * A006546 Number of elements (a b, c d) in SL(2,Z) with trace n and 0 &lt;= a &lt;= {b, c} &lt;= d.
  * @author Sean A. Irvine
  */
 public class A006546 implements Sequence {

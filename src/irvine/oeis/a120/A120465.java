@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120465 <code>a(0)=1, a(1)=36, a(n)=204*a(n-2)</code>.
+ * A120465 a(0)=1, a(1)=36, a(n)=204*a(n-2).
  * @author Georg Fischer
  */
 public class A120465 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028300 <code>a(1) = 1</code>; thereafter <code>a(n+1) = a(n)^2 + n</code>.
+ * A028300 a(1) = 1; thereafter a(n+1) = a(n)^2 + n.
  * @author Sean A. Irvine
  */
 public class A028300 implements Sequence {

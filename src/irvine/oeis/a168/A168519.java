@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168519 Number of 2n-digit primes that are concatenation of <code>n two-digit</code> distinct primes <code>p_1...p_n: 10&lt;p_1&lt;p_2&lt;...&lt;p_n&gt;98</code>.
+ * A168519 Number of 2n-digit primes that are concatenation of n two-digit distinct primes p_1...p_n: 10&lt;p_1&lt;p_2&lt;...&lt;p_n&gt;98.
  * @author Georg Fischer
  */
 public class A168519 extends FiniteSequence {

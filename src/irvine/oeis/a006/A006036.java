@@ -19,7 +19,7 @@ public class A006036 extends A005835 {
       final Z pp = super.next();
       boolean ok = true;
       for (final Z n : mPseudoperfect) {
-        if (Z.ZERO.equals(pp.mod(n))) {
+        if (pp.mod(n).isZero()) {
           ok = false;
           break;
         }

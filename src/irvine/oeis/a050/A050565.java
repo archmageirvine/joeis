@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050565 Numbers k such that <code>79*2^k-1</code> is prime.
+ * A050565 Numbers k such that 79*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050565 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050565() {
-    super(1, 1, 79, 2, -1, 0);
+    super(1, 1, 79, 2, -1);
   }
 }

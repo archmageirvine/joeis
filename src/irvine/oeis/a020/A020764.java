@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A020764 Decimal expansion of <code>1/sqrt(7)</code>.
+ * A020764 Decimal expansion of 1/sqrt(7).
  * @author Sean A. Irvine
  */
 public class A020764 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(7).sqrt().inverse();
+  private static final CR N = CR.SEVEN.sqrt().inverse();
 
   @Override
   protected CR getCR() {

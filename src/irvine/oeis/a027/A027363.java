@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027363 Generalizing the 27 lines on a cubic surface: number of lines on the generic hypersurface of degree <code>2n-1</code> in complex projective <code>(n+1)-space</code>.
+ * A027363 Generalizing the 27 lines on a cubic surface: number of lines on the generic hypersurface of degree 2n-1 in complex projective (n+1)-space.
  * @author Sean A. Irvine
  */
 public class A027363 implements Sequence {

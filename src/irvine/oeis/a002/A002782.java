@@ -17,7 +17,7 @@ public class A002782 implements Sequence {
   public Z next() {
     do {
       mCurrentConcatenation += ++mN;
-    } while (!Z.ZERO.equals(new Z(mCurrentConcatenation).mod(mCurrentDivisor)));
+    } while (!new Z(mCurrentConcatenation).mod(mCurrentDivisor).isZero());
     mCurrentDivisor = new Z(mCurrentConcatenation);
     mCurrentConcatenation = "";
     return mCurrentDivisor;

@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099329 Number of Catalan knight paths from <code>(0,0)</code> to <code>(n,1)</code> in the region between and on the lines <code>y=0</code> and <code>y=3</code>. (See <code>A096587</code> for the definition of Catalan <code>knight.)</code>.
+ * A099329 Number of Catalan knight paths from (0,0) to (n,1) in the region between and on the lines y=0 and y=3. (See A096587 for the definition of Catalan knight.).
  * @author Georg Fischer
  */
 public class A099329 extends GeneratingFunctionSequence {

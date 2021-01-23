@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A135821 Decimal expansion of <code>sqrt(4*e - 1)</code>.
+ * A135821 Decimal expansion of sqrt(4*e - 1).
  * @author Georg Fischer
  */
 public class A135821 extends DecimalExpansionSequence {

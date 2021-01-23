@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001006;
 
 /**
- * A026945 A bisection of the Motzkin numbers <code>A001006</code>.
+ * A026945 A bisection of the Motzkin numbers A001006.
  * @author Sean A. Irvine
  */
 public class A026945 extends A001006 {

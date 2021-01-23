@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A024526 <code>a(n) = Sum_{0 &lt;= i &lt; j &lt;= n} (prime(j) - prime(i))^2</code>, where <code>prime(0) = 1</code>.
+ * A024526 a(n) = Sum_{0 &lt;= i &lt; j &lt;= n} (prime(j) - prime(i))^2, where prime(0) = 1.
  * @author Sean A. Irvine
  */
 public class A024526 implements Sequence {

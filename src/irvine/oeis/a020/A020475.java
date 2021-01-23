@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007012;
 
 /**
- * A020475 <code>a(n)</code> is number of k for which <code>C(n,k)</code> is divisible by <code>n</code>.
+ * A020475 a(n) is number of k for which C(n,k) is divisible by n.
  * @author Sean A. Irvine
  */
 public class A020475 extends A007012 {

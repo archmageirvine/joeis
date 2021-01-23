@@ -5,7 +5,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160638 <code>Bit-reversed 8-bit</code> binary numbers.
+ * A160638 Bit-reversed 8-bit binary numbers.
  * @author Georg Fischer
  */
 public class A160638 extends FiniteSequence {

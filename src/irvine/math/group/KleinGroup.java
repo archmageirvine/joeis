@@ -1,5 +1,8 @@
 package irvine.math.group;
 
+import irvine.math.polynomial.CycleIndex;
+import irvine.math.polynomial.MultivariateMonomial;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
@@ -20,5 +23,12 @@ public class KleinGroup extends DirectProduct<Z, Z> {
   @Override
   public String toString() {
     return "V";
+  }
+
+  @Override
+  public CycleIndex cycleIndex() {
+    return new CycleIndex("K",
+      MultivariateMonomial.create(1, Z.FOUR, Q.ONE_QUARTER),
+      MultivariateMonomial.create(2, Z.TWO, new Q(3, 4)));
   }
 }

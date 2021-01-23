@@ -6,7 +6,7 @@ package irvine.oeis.a077;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A077077 Trajectory of 775 under the Reverse and <code>Add!</code> operation carried out in base 2, written in base 10.
+ * A077077 Trajectory of 775 under the Reverse and Add! operation carried out in base 2, written in base 10.
  * @author Georg Fischer
  */
 public class A077077 extends GeneratingFunctionSequence {

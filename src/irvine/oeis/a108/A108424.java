@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108424 Number of paths from <code>(0,0)</code> to <code>(3n,0)</code> that stay in the first quadrant, consist of steps <code>u=(2,1), U=(1,2)</code>, or <code>d=(1,-1)</code> and do not touch the <code>x-axis</code>, except at the endpoints.
+ * A108424 Number of paths from (0,0) to (3n,0) that stay in the first quadrant, consist of steps u=(2,1), U=(1,2), or d=(1,-1) and do not touch the x-axis, except at the endpoints.
  * @author Georg Fischer
  */
 public class A108424 extends HolonomicRecurrence {

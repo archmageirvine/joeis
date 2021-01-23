@@ -5,7 +5,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204063 Decimal expansion of <code>2^607 - 1</code>, the <code>14th</code> Mersenne prime <code>A000668(14)</code>.
+ * A204063 Decimal expansion of 2^607 - 1, the 14th Mersenne prime A000668(14).
  * @author Georg Fischer
  */
 public class A204063 extends FiniteSequence {

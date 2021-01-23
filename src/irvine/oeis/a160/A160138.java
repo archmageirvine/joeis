@@ -6,7 +6,7 @@ package irvine.oeis.a160;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A160138 <code>a(n) =</code> number of solutions to the system: <code>x + y + z + w =</code> n, <code>-2x - y + z + 2w = 5</code> with nonnegative x, y, z, w.
+ * A160138 a(n) = number of solutions to the system: x + y + z + w = n, -2x - y + z + 2w = 5 with nonnegative x, y, z, w.
  * @author Georg Fischer
  */
 public class A160138 extends HolonomicRecurrence {

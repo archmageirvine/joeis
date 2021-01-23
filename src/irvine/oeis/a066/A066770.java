@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066770 <code>5^n sin(2n arctan(1/2))</code> or numerator of <code>tan(2n arctan(1/2))</code>.
+ * A066770 5^n sin(2n arctan(1/2)) or numerator of tan(2n arctan(1/2)).
  * @author Sean A. Irvine
  */
 public class A066770 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a200;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A200565 Integral x solutions of elliptic curve <code>x^3-y^2 = 54814765 = A200218(2)</code>.
+ * A200565 Integral x solutions of elliptic curve x^3-y^2 = 54814765 = A200218(2).
  * @author Georg Fischer
  */
 public class A200565 extends FiniteSequence {

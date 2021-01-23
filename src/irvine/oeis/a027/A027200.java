@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027200 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions of n into an even number of parts, each <code>&gt;=k</code>.
+ * A027200 Triangular array T read by rows: T(n,k) = number of partitions of n into an even number of parts, each &gt;=k.
  * @author Sean A. Irvine
  */
 public class A027200 extends A027185 {

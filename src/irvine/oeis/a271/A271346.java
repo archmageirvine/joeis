@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271346 Numbers k such that the final digit of <code>k^k</code> is 6.
+ * A271346 Numbers k such that the final digit of k^k is 6.
  * @author Sean A. Irvine
  */
 public class A271346 extends LinearRecurrence {

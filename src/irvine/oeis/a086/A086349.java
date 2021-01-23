@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086349 On a <code>3 X 3</code> board, the number of n-move paths for a chess king.
+ * A086349 On a 3 X 3 board, the number of n-move paths for a chess king.
  * @author Georg Fischer
  */
 public class A086349 extends HolonomicRecurrence {

@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050845 Numbers n such that <code>187*2^n-1</code> is prime.
+ * A050845 Numbers n such that 187*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050845 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050845() {
-    super(1, 1, 187, 2, -1, 0);
+    super(1, 1, 187, 2, -1);
   }
 }

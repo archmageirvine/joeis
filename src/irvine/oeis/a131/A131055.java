@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131055 1 followed by repeats of <code>2*k</code>.
+ * A131055 1 followed by repeats of 2*k.
  * @author Georg Fischer
  */
 public class A131055 extends HolonomicRecurrence {

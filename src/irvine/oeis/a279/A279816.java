@@ -4,7 +4,7 @@ package irvine.oeis.a279;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A279816 Digital roots of tetrahedral numbers <code>(A000292)</code>.
+ * A279816 Digital roots of tetrahedral numbers (A000292).
  * @author Georg Fischer
  */
 public class A279816 extends GeneratingFunctionSequence {

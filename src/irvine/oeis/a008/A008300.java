@@ -1,13 +1,15 @@
 package irvine.oeis.a008;
 
+import java.util.Arrays;
 import java.util.Map;
 
+import irvine.math.group.IntegerField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008300 Triangle read by rows: <code>T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n)</code> gives number of <code>{0,1} n X n</code> matrices with all row and column sums equal to k.
+ * A008300 Triangle read by rows: T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n) gives number of {0,1} n X n matrices with all row and column sums equal to k.
  * @author Sean A. Irvine
  */
 public class A008300 implements Sequence {
@@ -19,9 +21,9 @@ public class A008300 implements Sequence {
   // from product(product(1+x_i*y_i, j=1..n), i=1..n)
   // Uses a lot of memory and no good for more than a few terms
 
-  private MultivariatePolynomial mP = null;
+  private MultivariatePolynomial<Z> mP = null;
 
-  private Z coeff(final MultivariatePolynomial p, final int m) {
+  private Z coeff(final MultivariatePolynomial<Z> p, final int m) {
     for (final Map.Entry<MultivariatePolynomial.Term, Z> e : p.entrySet()) {
       final MultivariatePolynomial.Term key = e.getKey();
       boolean ok = true;
@@ -38,11 +40,11 @@ public class A008300 implements Sequence {
     throw new RuntimeException();
   }
 
-  private MultivariatePolynomial make(final int n, final int i, final int j) {
+  private MultivariatePolynomial<Z> make(final int n, final int i, final int j) {
     final int[][] terms = new int[2][2 * n];
     terms[1][i] = 1;
     terms[1][n + j] = 1;
-    return new MultivariatePolynomial(2 * n, terms, Z.ONE, Z.ONE);
+    return new MultivariatePolynomial<>(IntegerField.SINGLETON, 2 * n, terms, Arrays.asList(Z.ONE, Z.ONE));
   }
 
   @Override
@@ -50,7 +52,7 @@ public class A008300 implements Sequence {
     if (++mM > mN) {
       ++mN;
       mM = 0;
-      MultivariatePolynomial p = MultivariatePolynomial.one(2 * mN);
+      MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, 2 * mN);
       for (int i = 0; i < mN; ++i) {
         for (int j = 0; j < mN; ++j) {
           p = p.multiply(make(mN, i, j));

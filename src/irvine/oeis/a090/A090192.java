@@ -5,7 +5,7 @@ package irvine.oeis.a090;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A090192 <code>Carlitz-Riordan q-Catalan</code> numbers (recurrence version) for q <code>= -1</code>.
+ * A090192 Carlitz-Riordan q-Catalan numbers (recurrence version) for q = -1.
  * @author Georg Fischer
  */
 public class A090192 extends HolonomicRecurrence {

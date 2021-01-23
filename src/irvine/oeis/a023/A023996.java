@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023996 Triangle of numbers <code>T(n,k)</code>, where <code>T(n,k)</code> is the number of sets S <code>= {a_1, a_2</code>, ..., <code>a_k}</code>, with <code>1 &lt; a_i &lt; a_j &lt;= n</code> such that no <code>a_j</code> divides the product of all the others.
+ * A023996 Triangle of numbers T(n,k), where T(n,k) is the number of sets S = {a_1, a_2, ..., a_k}, with 1 &lt; a_i &lt; a_j &lt;= n such that no a_j divides the product of all the others.
  * @author Sean A. Irvine
  */
 public class A023996 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141726 Sawtooth with period length <code>9</code>: repeat <code>8, 7, 6, 5, 4, 3, 2, 1, 0</code>.
+ * A141726 Sawtooth with period length 9: repeat 8, 7, 6, 5, 4, 3, 2, 1, 0.
  * @author Georg Fischer
  */
 public class A141726 extends HolonomicRecurrence {

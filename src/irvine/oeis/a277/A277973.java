@@ -6,7 +6,7 @@ package irvine.oeis.a277;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277973 Sum of horizontal positions of the first peak in all bargraphs of semiperimeter <code>n</code>.
+ * A277973 Sum of horizontal positions of the first peak in all bargraphs of semiperimeter n.
  * @author Georg Fischer
  */
 public class A277973 extends HolonomicRecurrence {

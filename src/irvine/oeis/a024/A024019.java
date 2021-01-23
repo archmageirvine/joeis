@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001017;
 
 /**
- * A024019 <code>2^n-n^9</code>.
+ * A024019 2^n-n^9.
  * @author Sean A. Irvine
  */
 public class A024019 extends A001017 {

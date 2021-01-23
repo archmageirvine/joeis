@@ -6,7 +6,7 @@ package irvine.oeis.a289;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A289211 <code>a(n) = n! * Laguerre(n,-5)</code>.
+ * A289211 a(n) = n! * Laguerre(n,-5).
  * @author Georg Fischer
  */
 public class A289211 extends HolonomicRecurrence {

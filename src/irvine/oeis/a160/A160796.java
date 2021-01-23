@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.math.z.Z;
 
 /**
- * A160796 Total number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton which is the "corner" structure corresponding to <code>A160118</code>.
+ * A160796 Total number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton which is the "corner" structure corresponding to A160118.
  * @author Sean A. Irvine
  */
 public class A160796 extends A160118 {

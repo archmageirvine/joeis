@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011776 <code>a(1) = 1</code>; for <code>n &gt; 1, a(n)</code> is defined by the property that <code>n^a(n)</code> divides <code>n!</code> but <code>n^(a(n)+1)</code> does not.
+ * A011776 a(1) = 1; for n &gt; 1, a(n) is defined by the property that n^a(n) divides n! but n^(a(n)+1) does not.
  * @author Sean A. Irvine
  */
 public class A011776 implements Sequence {
@@ -23,7 +23,7 @@ public class A011776 implements Sequence {
     do {
       m = m.multiply(mN);
       ++c;
-    } while (Z.ZERO.equals(mF.mod(m)));
+    } while (mF.mod(m).isZero());
     return Z.valueOf(c);
   }
 }

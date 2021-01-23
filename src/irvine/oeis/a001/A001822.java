@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001822 Expansion of Sum <code>x^(3n+2)/(1-x^(3n+2)), n=0..inf</code>.
+ * A001822 Expansion of Sum x^(3n+2)/(1-x^(3n+2)), n=0..inf.
  * @author Sean A. Irvine
  */
 public class A001822 implements Sequence {

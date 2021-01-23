@@ -6,7 +6,7 @@ package irvine.oeis.a218;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A218185 Number of rows with the value true in the truth tables of all bracketed formulas with n distinct propositions <code>p_1</code>, ..., <code>p_n</code> connected by the binary connective of <code>m-implication</code> (case <code>3)</code>.
+ * A218185 Number of rows with the value true in the truth tables of all bracketed formulas with n distinct propositions p_1, ..., p_n connected by the binary connective of m-implication (case 3).
  * @author Georg Fischer
  */
 public class A218185 extends HolonomicRecurrence {

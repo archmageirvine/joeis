@@ -5,7 +5,7 @@ package irvine.oeis.a140;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A140801 <code>a(0)=360, a(n)=a(n-1)+720</code> for <code>n&gt;=1</code>.
+ * A140801 a(0)=360, a(n)=a(n-1)+720 for n&gt;=1.
  * @author Georg Fischer
  */
 public class A140801 extends HolonomicRecurrence {

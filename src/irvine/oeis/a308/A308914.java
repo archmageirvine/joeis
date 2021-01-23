@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308914 Number of unordered pairs of <code>non-intersecting non-selfintersecting</code> paths with nodes that cover all vertices of a convex <code>n-gon, n &gt; 3</code>.
+ * A308914 Number of unordered pairs of non-intersecting non-selfintersecting paths with nodes that cover all vertices of a convex n-gon, n &gt; 3.
  * @author Georg Fischer
  */
 public class A308914 extends HolonomicRecurrence {

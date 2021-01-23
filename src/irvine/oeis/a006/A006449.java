@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006449 Row sums of Fibonacci-Pascal triangle in <code>A045995</code>.
+ * A006449 Row sums of Fibonacci-Pascal triangle in A045995.
  * @author Sean A. Irvine
  */
 public class A006449 implements Sequence {

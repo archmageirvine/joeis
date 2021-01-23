@@ -6,7 +6,7 @@ package irvine.oeis.a056;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A056122 <code>a(n) = (8*n+9)*C(n+8,8)/9</code>.
+ * A056122 a(n) = (8*n+9)*C(n+8,8)/9.
  * @author Georg Fischer
  */
 public class A056122 extends HolonomicRecurrence {

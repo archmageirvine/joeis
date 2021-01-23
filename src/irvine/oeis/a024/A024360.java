@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020883;
 
 /**
- * A024360 Number of primitive Pythagorean triangles with long leg <code>n</code>.
+ * A024360 Number of primitive Pythagorean triangles with long leg n.
  * @author Sean A. Irvine
  */
 public class A024360 extends A020883 {

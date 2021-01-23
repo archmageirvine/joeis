@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253491 Number of <code>(n+1) X (4+1) 0..2</code> arrays with every <code>2 X 2</code> subblock diagonal minus antidiagonal sum nondecreasing horizontally, vertically and <code>ne-to-sw</code> antidiagonally.
+ * A253491 Number of (n+1) X (4+1) 0..2 arrays with every 2 X 2 subblock diagonal minus antidiagonal sum nondecreasing horizontally, vertically and ne-to-sw antidiagonally.
  * @author Georg Fischer
  */
 public class A253491 extends GeneratingFunctionSequence {

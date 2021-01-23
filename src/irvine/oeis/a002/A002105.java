@@ -5,7 +5,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A002105 Reduced tangent numbers: <code>2^n*(2^{2n} - 1)*|B_{2n}|/n</code>, where <code>B_n =</code> Bernoulli numbers.
+ * A002105 Reduced tangent numbers: 2^n*(2^{2n} - 1)*|B_{2n}|/n, where B_n = Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A002105 implements Sequence {

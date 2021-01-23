@@ -28,22 +28,19 @@ public final class Finnish extends AbstractLanguage {
     if (x < M_DIGITS.length) {
       return M_DIGITS[x];
     }
-    if (x == 100) {
-      return "sata";
-    }
-    if (x == 1000) {
-      return "tuhat";
-    }
-    if (x >= 10000) {
+    if (x >= 100000) {
       throw new UnsupportedOperationException();
     }
     final StringBuilder sb = new StringBuilder();
     if (x >= 1000) {
       final int d = x / 1000;
       if (d > 1) {
-        sb.append(M_DIGITS[d]);
+        sb.append(toText(d));
       }
-      sb.append("tuhatta");
+      sb.append("tuhat");
+      if (x >= 2000) {
+        sb.append("ta");
+      }
       x %= 1000;
     }
     if (x >= 100) {
@@ -51,7 +48,10 @@ public final class Finnish extends AbstractLanguage {
       if (d > 1) {
         sb.append(M_DIGITS[d]);
       }
-      sb.append("sataa");
+      sb.append("sata");
+      if (x >= 200) {
+        sb.append('a');
+      }
       x %= 100;
     }
     if (x >= 20) {

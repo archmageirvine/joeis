@@ -5,13 +5,13 @@ package irvine.oeis.a109;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A109713 Numbers n such that <code>99 * 10^n + 1</code> is prime.
+ * A109713 Numbers n such that 99 * 10^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A109713 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A109713() {
-    super(1, 1, 99, 10, +1, 0);
+    super(1, 1, 99, 10, 1);
   }
 }

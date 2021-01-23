@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023728 Numbers with exactly <code>3 1</code>'s in base 5 expansion.
+ * A023728 Numbers with exactly 3 1's in base 5 expansion.
  * @author Sean A. Irvine
  */
 public class A023728 implements Sequence {

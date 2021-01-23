@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007039 Number of cyclic binary n-bit strings with no alternating substring of length <code>&gt; 2</code>.
+ * A007039 Number of cyclic binary n-bit strings with no alternating substring of length &gt; 2.
  * @author Sean A. Irvine
  */
 public class A007039 extends LinearRecurrence {

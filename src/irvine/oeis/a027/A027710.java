@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027710 Number of ways of placing n labeled balls into n unlabeled (but <code>3-colored)</code> boxes.
+ * A027710 Number of ways of placing n labeled balls into n unlabeled (but 3-colored) boxes.
  * @author Sean A. Irvine
  */
 public class A027710 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A127747 Smallest n-digit emirp <code>(A006567)</code> with strictly increasing (distinct) digits.
+ * A127747 Smallest n-digit emirp (A006567) with strictly increasing (distinct) digits.
  * @author Georg Fischer
  */
 public class A127747 extends FiniteSequence {

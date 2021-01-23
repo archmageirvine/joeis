@@ -26,14 +26,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.math.set.IntegerPermutation;
+import irvine.math.z.Z;
 
 /**
  * This class holds <i>i</i>-th base point (<code>&beta;<sub>i</sub></code>), generators of
- * <code>G<sup>(i)</sup> = G<sub>&beta;<sub>1</sub>&beta;<sub>2</sub>...&beta;<sub>i-1</sub></sub></code> -
+ * <code>G<sup>(i)</sup> = G<sub>&beta;1&beta;2...&beta;(i-1)</sub></code> -
  * stabilizer of all base points from 0th to (<i>i</i>-1)-th as described in Sec. 4.4.1 in <b>[Holt05]</b>.
- * <p/>
+ * <p>
  * Additionally it provides access to <code>&Delta;<sup>(i)</sup></code> - the orbit of <code>&beta;<sub>i</sub></code> under
- * <code>G<sup>(i)</sup></code>, right transversals of <code>H<sup>(i)</sup><sub>&beta;<sub>i</sub></sub></code> - stabilizer of
+ * <code>G<sup>(i)</sup></code>, right transversals of <code>H<sup>(i)</sup><sub>&beta;i</sub></code> - stabilizer of
  * <code>&beta;<sub>i</sub></code> in <code>G<sup>(i)</sup></code>. This access is based on Schreier vector as described in Sec.
  * 4.1.1 of <b>[Holt05]</b>.
  *
@@ -46,7 +47,7 @@ public class BaseStrongGeneratingElement {
    */
   protected final int mBasePoint;
   /**
-   * Generators of <code>G<sup>(i)</sup> = G<sub>&beta;<sub>1</sub>&beta;<sub>2</sub>...&beta;<sub>i-1</sub></sub></code> -
+   * Generators of <code>G<sup>(i)</sup> = G<sub>&beta;1&beta;2...&beta;(i-1)</sub></code> -
    * stabilizer of all base points from 0th to (<i>i</i>-1)-th as described in Sec. 4.4.1 in <b>[Holt05]</b>
    */
   protected final List<IntegerPermutation> mStabilizerGenerators;
@@ -140,8 +141,8 @@ public class BaseStrongGeneratingElement {
    * Returns size of orbit.
    * @return size of orbit
    */
-  public int orbitSize() {
-    return mOrbitList.size();
+  public Z orbitSize() {
+    return Z.valueOf(mOrbitList.size());
   }
 
   /**

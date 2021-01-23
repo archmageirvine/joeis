@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100185 Structured <code>meta-anti-prism</code> numbers, the n-th number from a structured <code>n-gonal anti-prism</code> number sequence.
+ * A100185 Structured meta-anti-prism numbers, the n-th number from a structured n-gonal anti-prism number sequence.
  * @author Sean A. Irvine
  */
 public class A100185 extends LinearRecurrence {

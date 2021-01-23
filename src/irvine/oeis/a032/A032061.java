@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032061 "BGK" <code>(reversible</code>, element, unlabeled) transform of 2,2,2,2,...
+ * A032061 "BGK" (reversible, element, unlabeled) transform of 2,2,2,2,...
  * @author Sean A. Irvine
  */
 public class A032061 implements Sequence {

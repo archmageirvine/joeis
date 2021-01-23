@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A228001 Prime factors of <code>10^100 - 2</code>.
+ * A228001 Prime factors of 10^100 - 2.
  * @author Georg Fischer
  */
 public class A228001 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A228001() {
-    super(new Z("2"), new Z("220217"), new Z("444720257"), new Z("51054291106366982498617178218209509431006624318394826526089092486656912521526928471671"));
+    super(Z.TWO, new Z("220217"), new Z("444720257"), new Z("51054291106366982498617178218209509431006624318394826526089092486656912521526928471671"));
   }
 }

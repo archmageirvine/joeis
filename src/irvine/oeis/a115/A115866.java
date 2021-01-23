@@ -6,7 +6,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115866 <code>a(n) = g(n,n,n)</code> where <code>g(a</code>, b, <code>c)</code> is defined as follows: if a <code>= 0</code> or b <code>= 0</code> or c <code>= 0</code> then return 1 otherwise return <code>g(a</code>, b, <code>c-1) + g(a, b-1, c) + g(a-1</code>, b, <code>c) + g(a, b-1, c-1) + g(a-1</code>, b, <code>c-1) + g(a-1, b-1, c) + g(a-1, b-1, c-1)</code>.
+ * A115866 a(n) = g(n,n,n) where g(a, b, c) is defined as follows: if a = 0 or b = 0 or c = 0 then return 1 otherwise return g(a, b, c-1) + g(a, b-1, c) + g(a-1, b, c) + g(a, b-1, c-1) + g(a-1, b, c-1) + g(a-1, b-1, c) + g(a-1, b-1, c-1).
  * @author Georg Fischer
  */
 public class A115866 extends HolonomicRecurrence {

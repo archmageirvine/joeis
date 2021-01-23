@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027560 Number of 5-balanced strings of length n: let <code>d(S)= #(1)</code>'s in S <code>- #(0)</code>'s, then S is k-balanced if every substring T has <code>-k&lt;=d(T)&lt;=k</code>; here <code>k=5</code>.
+ * A027560 Number of 5-balanced strings of length n: let d(S)= #(1)'s in S - #(0)'s, then S is k-balanced if every substring T has -k&lt;=d(T)&lt;=k; here k=5.
  * @author Georg Fischer
  */
 public class A027560 extends LinearRecurrence {

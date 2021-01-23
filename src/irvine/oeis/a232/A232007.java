@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A232007 Maximal number of moves needed by a knight to reach every square from a fixed position on an <code>n X n</code> chessboard, or -1 if it is not possible to reach every square.
+ * A232007 Maximal number of moves needed by a knight to reach every square from a fixed position on an n X n chessboard, or -1 if it is not possible to reach every square.
  * @author Georg Fischer
  */
 public class A232007 extends GeneratingFunctionSequence {

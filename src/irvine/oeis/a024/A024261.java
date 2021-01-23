@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a009.A009377;
 
 /**
- * A024261 Expansion of <code>log(1+tan(x)*sin(x))/2</code>.
+ * A024261 Expansion of log(1+tan(x)*sin(x))/2.
  * @author Sean A. Irvine
  */
 public class A024261 extends A009377 {

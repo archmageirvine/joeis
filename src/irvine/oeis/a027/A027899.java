@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027899 Divisors of <code>10^11 + 1</code>.
+ * A027899 Divisors of 10^11 + 1.
  * @author Georg Fischer
  */
 public class A027899 extends FiniteSequence {

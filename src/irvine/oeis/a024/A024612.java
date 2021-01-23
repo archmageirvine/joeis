@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A024612 <code>a(n) =</code> number in position n when all <code>i^2 - i*j + j^2</code>, where <code>1 &lt;= i &lt</code>; j are arranged in increasing order.
+ * A024612 a(n) = number in position n when all i^2 - i*j + j^2, where 1 &lt;= i &lt; j are arranged in increasing order.
  * @author Sean A. Irvine
  */
 public class A024612 implements Sequence {

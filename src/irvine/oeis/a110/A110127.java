@@ -5,7 +5,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110127 Number of EE's crossing the line <code>y = x (i.e.</code>, two consecutive E steps from the line <code>y = x+1</code> to the line <code>y = x-1)</code> in all Delannoy paths of length <code>n</code>.
+ * A110127 Number of EE's crossing the line y = x (i.e., two consecutive E steps from the line y = x+1 to the line y = x-1) in all Delannoy paths of length n.
  * @author Georg Fischer
  */
 public class A110127 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A235509 Decimal expansion of <code>arccos(4/5)</code>.
+ * A235509 Decimal expansion of arccos(4/5).
  * @author Georg Fischer
  */
 public class A235509 extends DecimalExpansionSequence {

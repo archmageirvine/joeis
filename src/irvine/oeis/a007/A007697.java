@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007697 Smallest odd number expressible in at least n ways as <code>p+2*m^2</code> where p is 1 or a prime and m <code>&gt;= 0</code>.
+ * A007697 Smallest odd number expressible in at least n ways as p+2*m^2 where p is 1 or a prime and m &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A007697 implements Sequence {

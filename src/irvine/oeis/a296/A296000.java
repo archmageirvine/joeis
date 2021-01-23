@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296000 Solution of the complementary equation <code>a(n) = a(0)*b(n-1) + a(1)*b(n-2) + ... + a(n-1)*b(0)</code>, where <code>a(0) = 1, a(1) = 3, b(0) = 2</code>, and <code>(a(n))</code> and <code>(b(n))</code> are increasing complementary sequences.
+ * A296000 Solution of the complementary equation a(n) = a(0)*b(n-1) + a(1)*b(n-2) + ... + a(n-1)*b(0), where a(0) = 1, a(1) = 3, b(0) = 2, and (a(n)) and (b(n)) are increasing complementary sequences.
  * @author Georg Fischer
  */
 public class A296000 extends GeneratingFunctionSequence {

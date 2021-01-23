@@ -6,13 +6,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027607 Number of <code>non-well-founded</code> sets or hypersets (sets that can contain themselves) of level <code>n</code> (representable by graphs with <code>n</code> nodes).
+ * A027607 Number of non-well-founded sets or hypersets (sets that can contain themselves) of level n (representable by graphs with n nodes).
  * @author Christopher Tubbs
  * @author Byron Heads
  * @author Lucas Holt
  * @author Andrew Timson
  * @author John Markus 
- * @author Sean A. Irvine (java port)
+ * @author Sean A. Irvine (Java port)
  */
 public class A027607 implements Sequence {
 

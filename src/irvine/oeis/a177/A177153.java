@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177153 Decimal expansion of <code>(21+5*sqrt(26))/19</code>.
+ * A177153 Decimal expansion of (21+5*sqrt(26))/19.
  * @author Georg Fischer
  */
 public class A177153 extends DecimalExpansionSequence {

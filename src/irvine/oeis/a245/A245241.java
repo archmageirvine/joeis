@@ -5,13 +5,13 @@ package irvine.oeis.a245;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A245241 Integers n such that <code>6 * 7^n + 1</code> is prime.
+ * A245241 Integers n such that 6 * 7^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A245241 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A245241() {
-    super(1, 0, 6, 7, +1, 0);
+    super(1, 0, 6, 7, 1);
   }
 }

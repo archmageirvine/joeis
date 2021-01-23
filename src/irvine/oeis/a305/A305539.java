@@ -5,7 +5,7 @@ package irvine.oeis.a305;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A305539 <code>a(n)</code> is a generalized pentagonal number such that <code>2*a(n)</code> is also a generalized pentagonal number.
+ * A305539 a(n) is a generalized pentagonal number such that 2*a(n) is also a generalized pentagonal number.
  * @author Georg Fischer
  */
 public class A305539 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A111396 <code>a(n) = n(n+7)(n+8)/6</code>.
+ * A111396 a(n) = n(n+7)(n+8)/6.
  * @author Sean A. Irvine
  */
 public class A111396 extends LinearRecurrence {

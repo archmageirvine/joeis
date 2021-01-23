@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A098517 Minimum wind speed in mph for a tornado of Fujita (or <code>Fujita-Pearson)</code> scale <code>F_n</code>.
+ * A098517 Minimum wind speed in mph for a tornado of Fujita (or Fujita-Pearson) scale F_n.
  * @author Georg Fischer
  */
 public class A098517 extends FiniteSequence {

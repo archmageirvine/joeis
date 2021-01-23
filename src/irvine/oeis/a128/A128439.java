@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128439 <code>a(n) = floor(n*t^n)</code>, where <code>t=golden ratio=(1+sqrt(5))/2</code>.
+ * A128439 a(n) = floor(n*t^n), where t=golden ratio=(1+sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A128439 extends GeneratingFunctionSequence {

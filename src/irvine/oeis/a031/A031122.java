@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A031122 Integers that appear as ratios of Fibonacci numbers <code>F(kn)/F(k)</code>, but omitting Fibonacci numbers <code>F(n)/F(1)</code> and Lucas numbers <code>F(2n)/F(n)</code>.
+ * A031122 Integers that appear as ratios of Fibonacci numbers F(kn)/F(k), but omitting Fibonacci numbers F(n)/F(1) and Lucas numbers F(2n)/F(n).
  * @author Sean A. Irvine
  */
 public class A031122 implements Sequence {

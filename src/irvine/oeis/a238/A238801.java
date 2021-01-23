@@ -7,7 +7,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A238801 Triangle <code>T(n,k)</code>, read by rows, given by <code>T(n,k) = C(n+1, k+1)*(1-(k mod 2))</code>.
+ * A238801 Triangle T(n,k), read by rows, given by T(n,k) = C(n+1, k+1)*(1-(k mod 2)).
  * @author Georg Fischer
  */
 public class A238801 extends GeneratingFunctionTriangle {

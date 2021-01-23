@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022010 Initial members of prime septuplets <code>(p, p+2, p+8, p+12, p+14, p+18, p+20)</code>.
+ * A022010 Initial members of prime septuplets (p, p+2, p+8, p+12, p+14, p+18, p+20).
  * @author Sean A. Irvine
  */
 public class A022010 implements Sequence {

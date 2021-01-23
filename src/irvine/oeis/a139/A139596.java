@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A139596 <code>A033587(n)</code> followed by even hexagonal number <code>A014635(n+1)</code>.
+ * A139596 A033587(n) followed by even hexagonal number A014635(n+1).
  * @author Georg Fischer
  */
 public class A139596 extends GeneratingFunctionSequence {

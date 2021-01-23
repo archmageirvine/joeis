@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002146 Smallest prime <code>== 7 mod 8</code> where <code>Q(sqrt -p)</code> has class number <code>2n+1</code>.
+ * A002146 Smallest prime == 7 mod 8 where Q(sqrt -p) has class number 2n+1.
  * @author Sean A. Irvine
  */
 public class A002146 implements Sequence {

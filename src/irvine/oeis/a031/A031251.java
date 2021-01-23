@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031251 Write n in base 5, then complement each digit <code>(d -&gt; 4-d)</code> and juxtapose.
+ * A031251 Write n in base 5, then complement each digit (d -&gt; 4-d) and juxtapose.
  * @author Georg Fischer
  */
 public class A031251 implements Sequence {

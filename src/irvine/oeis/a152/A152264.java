@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152264 <code>a(n) = ((9+sqrt(6))^n + (9-sqrt(6))^n)/2</code>.
+ * A152264 a(n) = ((9+sqrt(6))^n + (9-sqrt(6))^n)/2.
  * @author Sean A. Irvine
  */
 public class A152264 extends LinearRecurrence {

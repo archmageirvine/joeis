@@ -85,11 +85,7 @@ public final class GaussianIntegers extends AbstractIntegralDomain<Pair<Z, Z>> {
     return new Pair<>(z.left().negate(), z.right().negate());
   }
 
-  /**
-   * Return the conjugate of the given number.
-   * @param z Gaussian integer
-   * @return conjugate
-   */
+  @Override
   public Pair<Z, Z> conjugate(final Pair<Z, Z> z) {
     return new Pair<>(z.left(), z.right().negate());
   }

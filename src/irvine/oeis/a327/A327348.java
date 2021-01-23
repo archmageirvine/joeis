@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A327348 The 66 prime dates in each non-leap year of the form concatenate <code>(month,day)</code> without leading zeros for days.
+ * A327348 The 66 prime dates in each non-leap year of the form concatenate (month,day) without leading zeros for days.
  * @author Georg Fischer
  */
 public class A327348 extends FiniteSequence {

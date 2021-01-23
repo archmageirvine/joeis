@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.math.z.Z;
 
 /**
- * A018221 Row 2 of <code>A018219</code>, i.e., <code>(2,n,a_n)</code> is a winning position.
+ * A018221 Row 2 of A018219, i.e., (2,n,a_n) is a winning position.
  * @author Sean A. Irvine
  */
 public class A018221 extends A018219 {

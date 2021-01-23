@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084329 <code>a(0)=0, a(1)=1, a(n)=20a(n-1)-20a(n-2)</code>.
+ * A084329 a(0)=0, a(1)=1, a(n)=20a(n-1)-20a(n-2).
  * @author Georg Fischer
  */
 public class A084329 extends GeneratingFunctionSequence {

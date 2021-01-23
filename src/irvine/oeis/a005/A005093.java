@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A005093 Sum of squares of Fibonacci numbers 1,2,3,5,... that divide <code>n</code>.
+ * A005093 Sum of squares of Fibonacci numbers 1,2,3,5,... that divide n.
  * @author Sean A. Irvine
  */
 public class A005093 implements Sequence {
@@ -20,7 +20,7 @@ public class A005093 implements Sequence {
     final Sequence fibo = new SkipSequence(new A000045(), 2);
     Z d;
     while ((d = fibo.next()).compareTo(mN) <= 0) {
-      if (Z.ZERO.equals(mN.mod(d))) {
+      if (mN.mod(d).isZero()) {
         s = s.add(d.square());
       }
     }

@@ -5,7 +5,7 @@ package irvine.oeis.a165;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A165553 <code>a(n) = (3/2)*(1+(-3)^(n-1))</code>.
+ * A165553 a(n) = (3/2)*(1+(-3)^(n-1)).
  * @author Georg Fischer
  */
 public class A165553 extends HolonomicRecurrence {

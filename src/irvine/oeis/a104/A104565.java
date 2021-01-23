@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104565 Reversion of Pell numbers <code>A000129(n+1)</code>.
+ * A104565 Reversion of Pell numbers A000129(n+1).
  * @author Georg Fischer
  */
 public class A104565 extends HolonomicRecurrence {

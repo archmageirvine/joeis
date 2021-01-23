@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A051461 Molien series for group <code>G_{1,3}</code> of order 2304.
+ * A051461 Molien series for group G_{1,3} of order 2304.
  * @author Georg Fischer
  */
 public class A051461 extends GeneratingFunctionSequence {

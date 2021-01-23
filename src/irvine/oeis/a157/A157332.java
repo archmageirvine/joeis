@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A157332 Denominators of Egyptian fraction for <code>Pi/16</code> based on Machin's formula.
+ * A157332 Denominators of Egyptian fraction for Pi/16 based on Machin's formula.
  * @author Georg Fischer
  */
 public class A157332 extends GeneratingFunctionSequence {

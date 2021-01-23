@@ -5,7 +5,7 @@ import java.util.TreeMap;
 import irvine.math.z.Z;
 
 /**
- * A sequence reporting the position on <code>n</code> in a sequence.  It assumes
+ * A sequence reporting the position of <code>n</code> in a sequence.  It assumes
  * that every value not less than the initial value occurs at some point in the
  * sequence.  Sequences exceeding the value of a long will also fail at some point.
  * @author Sean A. Irvine
@@ -13,9 +13,20 @@ import irvine.math.z.Z;
 public class PositionOfNSequence implements Sequence {
 
   private final Sequence mS;
-  private final TreeMap<Long, Long> mMap = new TreeMap<>();
-  private long mN;
-  private long mM = 0;
+  protected final TreeMap<Long, Long> mMap = new TreeMap<>();
+  protected long mN;
+  private long mM;
+
+  /**
+   * Construct a new sequence of positions.
+   * @param seq underlying sequence
+   * @param initial starting value to search for
+   */
+  public PositionOfNSequence(final Sequence seq, final long initial, final long offset) {
+    mS = seq;
+    mN = initial - 1;
+    mM = offset - 1;
+  }
 
   /**
    * Construct a new sequence of positions.
@@ -23,8 +34,7 @@ public class PositionOfNSequence implements Sequence {
    * @param initial starting value to search for
    */
   public PositionOfNSequence(final Sequence seq, final long initial) {
-    mS = seq;
-    mN = initial - 1;
+    this(seq, initial, 1);
   }
 
   /**

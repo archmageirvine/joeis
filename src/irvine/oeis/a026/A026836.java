@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026836 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions of n into distinct parts, the greatest being k, for <code>k=1,2,...,n</code>.
+ * A026836 Triangular array T read by rows: T(n,k) = number of partitions of n into distinct parts, the greatest being k, for k=1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A026836 implements Sequence {

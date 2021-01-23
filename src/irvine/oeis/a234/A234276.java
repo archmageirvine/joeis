@@ -6,7 +6,7 @@ package irvine.oeis.a234;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A234276 G.f.: <code>1/(1-(2*x^2+x^3)*(1-sqrt(1-4*x)))</code>.
+ * A234276 G.f.: 1/(1-(2*x^2+x^3)*(1-sqrt(1-4*x))).
  * @author Georg Fischer
  */
 public class A234276 extends HolonomicRecurrence {

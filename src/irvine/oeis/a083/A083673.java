@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083673 First differences have period <code>6: 2,-1,3,4,-3,7, 2,-1,3,4,-3,7, 2,-1,..</code>.
+ * A083673 First differences have period 6: 2,-1,3,4,-3,7, 2,-1,3,4,-3,7, 2,-1,...
  * @author Sean A. Irvine
  */
 public class A083673 extends LinearRecurrence {

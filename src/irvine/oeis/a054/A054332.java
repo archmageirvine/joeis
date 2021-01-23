@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054332 One half of tenth unsigned column of Lanczos triangle <code>A053125</code> (decreasing powers).
+ * A054332 One half of tenth unsigned column of Lanczos triangle A053125 (decreasing powers).
  * @author Georg Fischer
  */
 public class A054332 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a285;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A285956 Number of orthogonal rectangles with vertices on an <code>n X n</code> square grid of points but with no vertices on the grid's diagonals.
+ * A285956 Number of orthogonal rectangles with vertices on an n X n square grid of points but with no vertices on the grid's diagonals.
  * @author Georg Fischer
  */
 public class A285956 extends GeneratingFunctionSequence {

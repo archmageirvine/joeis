@@ -6,7 +6,7 @@ package irvine.oeis.a074;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A074058 Reflected tetranacci numbers <code>A073817</code>.
+ * A074058 Reflected tetranacci numbers A073817.
  * @author Georg Fischer
  */
 public class A074058 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a214;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A214774 Number of ways of obtaining a weight of n grams using eight weights of denominations <code>1, 1, 2, 5, 10, 10, 20</code> and 50 grams.
+ * A214774 Number of ways of obtaining a weight of n grams using eight weights of denominations 1, 1, 2, 5, 10, 10, 20 and 50 grams.
  * @author Georg Fischer
  */
 public class A214774 extends GeneratingFunctionSequence {

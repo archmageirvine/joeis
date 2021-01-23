@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A107663 <code>a(2n) = 2*4^n-1, a(2n+1) = (2^(n+1)+1)^2</code>; interlaces <code>A083420</code> with <code>A028400</code>.
+ * A107663 a(2n) = 2*4^n-1, a(2n+1) = (2^(n+1)+1)^2; interlaces A083420 with A028400.
  * @author Georg Fischer
  */
 public class A107663 extends GeneratingFunctionSequence {

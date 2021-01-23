@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089010 <code>a(n) = 1</code> if n is an exponent of the Weyl group <code>W(E_8), 0</code> otherwise.
+ * A089010 a(n) = 1 if n is an exponent of the Weyl group W(E_8), 0 otherwise.
  * @author Georg Fischer
  */
 public class A089010 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a058;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A058342 De Bruijn sequence of order <code>6</code>: every window of size <code>6, [a(j),a(j+1),...,a(j+5)]</code>, shows a different <code>6-tuple</code>, for <code>0 &lt;= j &lt;= 63</code>.
+ * A058342 De Bruijn sequence of order 6: every window of size 6, [a(j),a(j+1),...,a(j+5)], shows a different 6-tuple, for 0 &lt;= j &lt;= 63.
  * @author Georg Fischer
  */
 public class A058342 extends HolonomicRecurrence {

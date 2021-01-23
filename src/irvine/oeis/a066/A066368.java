@@ -4,7 +4,7 @@ package irvine.oeis.a066;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A066368 <code>a(n) = (n+2)*2^(n-1) - 2*n</code>.
+ * A066368 a(n) = (n+2)*2^(n-1) - 2*n.
  * @author Georg Fischer
  */
 public class A066368 extends GeneratingFunctionSequence {

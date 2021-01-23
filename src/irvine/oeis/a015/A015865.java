@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015865 Numbers n such that <code>sigma(n) = sigma(n + 5)</code>.
+ * A015865 Numbers k such that sigma(k) = sigma(k + 5).
  * @author Sean A. Irvine
  */
 public class A015865 implements Sequence {

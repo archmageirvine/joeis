@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002057 Fourth convolution of Catalan numbers: <code>4*binomial(2n+3,n)/(n+4)</code>.
+ * A002057 Fourth convolution of Catalan numbers: 4*binomial(2n+3,n)/(n+4).
  * @author Sean A. Irvine
  */
 public class A002057 implements Sequence {

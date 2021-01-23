@@ -5,13 +5,13 @@ package irvine.oeis.a294;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A294376 Numbers k such that <code>55*10^k + 7</code> is prime.
+ * A294376 Numbers k such that 55*10^k + 7 is prime.
  * @author Georg Fischer
  */
 public class A294376 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A294376() {
-    super(1, 1, 55, 10, +7, 0);
+    super(1, 1, 55, 10, +7);
   }
 }

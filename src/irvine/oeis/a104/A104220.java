@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104220 <code>a(n) = Fibonacci[n]+1-Mod[Fibonacci[n],2]</code>.
+ * A104220 a(n) = Fibonacci[n]+1-Mod[Fibonacci[n],2].
  * @author Sean A. Irvine
  */
 public class A104220 extends LinearRecurrence {

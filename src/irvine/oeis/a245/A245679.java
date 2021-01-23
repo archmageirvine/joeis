@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245679 <code>a(n) = pg(n, 3) + pg(n, 4) + ... + pg(n, n)</code> where <code>pg(n, m)</code> is the <code>m-th n-th-order</code> polygonal number.
+ * A245679 a(n) = pg(n, 3) + pg(n, 4) + ... + pg(n, n) where pg(n, m) is the m-th n-th-order polygonal number.
  * @author Georg Fischer
  */
 public class A245679 extends GeneratingFunctionSequence {

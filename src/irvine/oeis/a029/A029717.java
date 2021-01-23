@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A029717 First differences of Kempner numbers <code>A002034</code>.
+ * A029717 First differences of Kempner numbers A002034.
  * @author Sean A. Irvine
  */
 public class A029717 extends DifferenceSequence {

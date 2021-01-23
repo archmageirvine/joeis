@@ -6,7 +6,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059949 Number of 8-block bicoverings of an <code>n-set</code>.
+ * A059949 Number of 8-block bicoverings of an n-set.
  * @author Georg Fischer
  */
 public class A059949 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129957 <code>a(n) = n^3</code> if n is odd, <code>n^3 + 1</code> otherwise.
+ * A129957 a(n) = n^3 if n is odd, n^3 + 1 otherwise.
  * @author Sean A. Irvine
  */
 public class A129957 extends LinearRecurrence {

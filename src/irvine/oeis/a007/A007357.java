@@ -16,7 +16,7 @@ public class A007357 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(6);
-      if (InfinitaryDivisors.infinitaryDivisorSum(mN).equals(mN)) {
+      if (InfinitaryDivisors.infinitarySigma(mN).equals(mN)) {
         return mN;
       }
     }

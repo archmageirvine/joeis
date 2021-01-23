@@ -6,7 +6,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259626 List of numbers L and L <code>+ 1</code>, where L <code>= A000032</code>, the Lucas numbers, sorted into increasing order and duplicates removed.
+ * A259626 List of numbers L and L + 1, where L = A000032, the Lucas numbers, sorted into increasing order and duplicates removed.
  * @author Georg Fischer
  */
 public class A259626 extends GeneratingFunctionSequence {

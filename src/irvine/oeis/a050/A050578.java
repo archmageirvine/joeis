@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050578 Numbers n such that <code>105*2^n-1</code> is prime.
+ * A050578 Numbers n such that 105*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050578 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050578() {
-    super(1, 2, 105, 2, -1, 0);
+    super(1, 2, 105, 2, -1);
   }
 }

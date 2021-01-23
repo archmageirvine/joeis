@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027433 Sum over all <code>2^(2n)</code> pairs <code>(u,v)</code> of binary sequences of length n of length of maximal common subsequence between them.
+ * A027433 Sum over all 2^(2n) pairs (u,v) of binary sequences of length n of length of maximal common subsequence between them.
  * @author Sean A. Irvine
  */
 public class A027433 implements Sequence {

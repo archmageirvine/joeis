@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157470 Decimal expansion of <code>(99+14*sqrt(2))/97</code>.
+ * A157470 Decimal expansion of (99+14*sqrt(2))/97.
  * @author Georg Fischer
  */
 public class A157470 extends DecimalExpansionSequence {

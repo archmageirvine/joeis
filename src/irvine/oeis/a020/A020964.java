@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020964 Sum of <code>Floor[ 3*(1+sqrt(2))^(n-k) ]</code> for k from 1 to infinity.
+ * A020964 Sum of Floor[ 3*(1+sqrt(2))^(n-k) ] for k from 1 to infinity.
  * @author Sean A. Irvine
  */
 public class A020964 implements Sequence {
@@ -23,7 +23,7 @@ public class A020964 implements Sequence {
     do {
       t = ComputableReals.SINGLETON.pow(N, CR.valueOf(mN - ++k)).multiply(CR.THREE).floor();
       sum = sum.add(t);
-    } while (!Z.ZERO.equals(t));
+    } while (!t.isZero());
     return sum;
   }
 }

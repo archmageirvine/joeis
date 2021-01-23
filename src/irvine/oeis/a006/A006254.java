@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A006254 Numbers k such that <code>2k-1</code> is prime.
+ * A006254 Numbers k such that 2k-1 is prime.
  * @author Sean A. Irvine
  */
 public class A006254 extends A000040 {

@@ -5,7 +5,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324271 <code>a(n) = 181*13^(13*n)</code>.
+ * A324271 a(n) = 181*13^(13*n).
  * @author Georg Fischer
  */
 public class A324271 extends HolonomicRecurrence {

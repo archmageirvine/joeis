@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227056 Number of <code>n X 2 -2..2</code> arrays of <code>2 X 2</code> subblock diagonal sums minus antidiagonal sums for some <code>(n+1) X 3</code> binary array with rows and columns of the latter in lexicographically nondecreasing order.
+ * A227056 Number of n X 2 -2..2 arrays of 2 X 2 subblock diagonal sums minus antidiagonal sums for some (n+1) X 3 binary array with rows and columns of the latter in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A227056 extends GeneratingFunctionSequence {

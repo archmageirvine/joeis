@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253412 Number of n-bit legal binary words with maximal set of <code>1s</code>.
+ * A253412 Number of n-bit legal binary words with maximal set of 1s.
  * @author Sean A. Irvine
  */
 public class A253412 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069251 Number of basis partitions of <code>n+64</code> with Durfee square size 8.
+ * A069251 Number of basis partitions of n+64 with Durfee square size 8.
  * @author Georg Fischer
  */
 public class A069251 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A230242 Decimal expansion of <code>(25+3*sqrt(69))/2</code>.
+ * A230242 Decimal expansion of (25+3*sqrt(69))/2.
  * @author Georg Fischer
  */
 public class A230242 extends DecimalExpansionSequence {

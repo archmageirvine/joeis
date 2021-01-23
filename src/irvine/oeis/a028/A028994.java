@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028994 Even <code>10-gonal</code> (or decagonal) numbers.
+ * A028994 Even 10-gonal (or decagonal) numbers.
  * @author Sean A. Irvine
  */
 public class A028994 extends LinearRecurrence {

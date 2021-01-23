@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108474 Expansion of <code>1/(1-2x)(1+4x^2))</code>.
+ * A108474 Expansion of 1/(1-2x)(1+4x^2)).
  * @author Sean A. Irvine
  */
 public class A108474 extends LinearRecurrence {

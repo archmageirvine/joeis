@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239129 <code>a(n) = 18*n - 1, n &gt;= 1</code>, the second column of triangle <code>A239127</code> related to the Collatz problem.
+ * A239129 a(n) = 18*n - 1, n &gt;= 1, the second column of triangle A239127 related to the Collatz problem.
  * @author Georg Fischer
  */
 public class A239129 extends GeneratingFunctionSequence {

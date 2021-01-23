@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A300731 Decimal expansion of <code>sqrt(Pi^4/96 - 1)</code>.
+ * A300731 Decimal expansion of sqrt(Pi^4/96 - 1).
  * @author Georg Fischer
  */
 public class A300731 extends DecimalExpansionSequence {

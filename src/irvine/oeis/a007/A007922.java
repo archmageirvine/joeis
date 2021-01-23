@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007922 Smallest k such that <code>k!!</code> is a multiple of <code>n</code>.
+ * A007922 Smallest k such that k!! is a multiple of n.
  * @author Sean A. Irvine
  */
 public class A007922 implements Sequence {

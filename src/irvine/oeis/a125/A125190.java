@@ -5,7 +5,7 @@ package irvine.oeis.a125;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A125190 Number of ascents in all Schroeder paths of length <code>2n</code>.
+ * A125190 Number of ascents in all Schroeder paths of length 2n.
  * @author Georg Fischer
  */
 public class A125190 extends HolonomicRecurrence {

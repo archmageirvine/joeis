@@ -1,12 +1,12 @@
 package irvine.math.set;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import irvine.math.api.Function;
 import irvine.math.api.Set;
 import irvine.math.z.Z;
 import irvine.util.CollectionUtils;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Default implementation of some methods.

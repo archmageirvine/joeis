@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307943 Number of evolutionary <code>duplication-loss-histories</code> of the complete binary species tree with 16 leaves.
+ * A307943 Number of evolutionary duplication-loss-histories of the complete binary species tree with 16 leaves.
  * @author Sean A. Irvine
  */
 public class A307943 implements Sequence {

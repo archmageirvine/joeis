@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273724 Place <code>n equally-spaced</code> points around a circle, labeled <code>0,1,2,...,n-1</code>. For each i <code>= 0..n-1</code> such that <code>3i != i mod</code> n, draw an (undirected) chord from i to <code>(3i mod n)</code>. Then <code>a(n)</code> is the total number of distinct chords.
+ * A273724 Place n equally-spaced points around a circle, labeled 0,1,2,...,n-1. For each i = 0..n-1 such that 3i != i mod n, draw an (undirected) chord from i to (3i mod n). Then a(n) is the total number of distinct chords.
  * @author Georg Fischer
  */
 public class A273724 extends HolonomicRecurrence {

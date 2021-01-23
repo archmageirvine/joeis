@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098501 Number of squares on infinite octant of chessboard at <code>&lt;=n</code> knight moves from the corner. The octant includes the diagonal.
+ * A098501 Number of squares on infinite octant of chessboard at &lt;=n knight moves from the corner. The octant includes the diagonal.
  * @author Georg Fischer
  */
 public class A098501 extends GeneratingFunctionSequence {

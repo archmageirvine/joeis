@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187332 Complement of <code>A187331</code>.
+ * A187332 Complement of A187331.
  * @author Georg Fischer
  */
 public class A187332 extends GeneratingFunctionSequence {

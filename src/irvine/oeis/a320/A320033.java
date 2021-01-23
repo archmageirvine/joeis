@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A320033 <code>a(n)</code> is the number of integer partitions of n with largest part <code>&lt;= 5</code> for which the index of the seaweed algebra formed by the integer partition paired with its weight is 0.
+ * A320033 a(n) is the number of integer partitions of n with largest part &lt;= 5 for which the index of the seaweed algebra formed by the integer partition paired with its weight is 0.
  * @author Georg Fischer
  */
 public class A320033 extends LinearRecurrence {

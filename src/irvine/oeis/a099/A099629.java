@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A099629 Smallest and largest primes pairwise displayed with k digits from <code>k=1,...,9</code> with distinct decimal digits.
+ * A099629 Smallest and largest primes pairwise displayed with k digits from k=1,...,9 with distinct decimal digits.
  * @author Georg Fischer
  */
 public class A099629 extends FiniteSequence {

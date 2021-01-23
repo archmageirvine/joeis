@@ -5,7 +5,7 @@ package irvine.oeis.a171;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A171893 <code>1, 2</code> and all numbers <code>&gt;= 10</code>.
+ * A171893 1, 2 and all numbers &gt;= 10.
  * @author Georg Fischer
  */
 public class A171893 extends HolonomicRecurrence {

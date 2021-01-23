@@ -4,7 +4,7 @@ package irvine.oeis.a237;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A237655 G.f.: <code>exp( Sum_{n&gt;=1} 5*Fibonacci(n-2)*Fibonacci(n+2) * x^n/n )</code>.
+ * A237655 G.f.: exp( Sum_{n&gt;=1} 5*Fibonacci(n-2)*Fibonacci(n+2) * x^n/n ).
  * @author Georg Fischer
  */
 public class A237655 extends GeneratingFunctionSequence {

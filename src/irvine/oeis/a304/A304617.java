@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304617 <code>a(n) = 324*n^2 - 564*n + 321 (n&gt;=1)</code>.
+ * A304617 a(n) = 324*n^2 - 564*n + 321 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304617 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120009 G.f.: <code>A(x) = (x-x^2) o x/(1-x) o (1-sqrt(1-4*x))/2</code>, a composition of functions involving the Catalan function and its inverse.
+ * A120009 G.f.: A(x) = (x-x^2) o x/(1-x) o (1-sqrt(1-4*x))/2, a composition of functions involving the Catalan function and its inverse.
  * @author Georg Fischer
  */
 public class A120009 extends HolonomicRecurrence {

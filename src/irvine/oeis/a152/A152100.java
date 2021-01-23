@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152100 G.f.: <code>1 - 2*x*(-7 - 10*x + x^2)/(x - 1)^4</code>.
+ * A152100 G.f.: 1 - 2*x*(-7 - 10*x + x^2)/(x - 1)^4.
  * @author Georg Fischer
  */
 public class A152100 extends GeneratingFunctionSequence {

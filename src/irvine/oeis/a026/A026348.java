@@ -6,7 +6,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A026348 Greatest k such that <code>s(k) =</code> n, where s <code>= A026346</code>.
+ * A026348 Greatest k such that s(k) = n, where s = A026346.
  * @author Sean A. Irvine
  */
 public class A026348 extends A026346 {

@@ -4,7 +4,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075091 Sum of Lucas numbers and reflected Lucas numbers (comment to <code>A061084)</code>.
+ * A075091 Sum of Lucas numbers and reflected Lucas numbers (comment to A061084).
  * @author Georg Fischer
  */
 public class A075091 extends LinearRecurrence {

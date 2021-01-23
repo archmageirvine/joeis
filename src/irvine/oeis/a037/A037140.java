@@ -4,7 +4,7 @@ package irvine.oeis.a037;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A037140 Convolution of natural numbers <code>n &gt;= 1</code> with Fibonacci numbers <code>F(k)</code>, for k <code>&gt;= 5</code>.
+ * A037140 Convolution of natural numbers n &gt;= 1 with Fibonacci numbers F(k), for k &gt;= 5.
  * @author Georg Fischer
  */
 public class A037140 extends GeneratingFunctionSequence {

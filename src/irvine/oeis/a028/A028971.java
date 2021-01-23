@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028971 Theta series of quadratic form with Gram matrix <code>[ 3, 1, 1; 1, 3, 1; 1, 1, 3 ]</code>.
+ * A028971 Theta series of quadratic form with Gram matrix [ 3, 1, 1; 1, 3, 1; 1, 1, 3 ].
  * @author Sean A. Irvine
  */
 public class A028971 implements Sequence {

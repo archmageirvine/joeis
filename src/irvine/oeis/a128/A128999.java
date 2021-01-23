@@ -5,7 +5,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128999 Start with an integer (in this case <code>1)</code>. First, add 5 or 6 if the integer is odd or even, respectively. Then divide by 2. Notice any <code>a(1)&lt;=5</code> converges to 5 and any <code>a(1)&gt;=6</code> converges to 6.
+ * A128999 Start with an integer (in this case 1). First, add 5 or 6 if the integer is odd or even, respectively. Then divide by 2. Notice any a(1)&lt;=5 converges to 5 and any a(1)&gt;=6 converges to 6.
  * @author Georg Fischer
  */
 public class A128999 extends HolonomicRecurrence {

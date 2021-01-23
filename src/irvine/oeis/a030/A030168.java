@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a033.A033308;
 
 /**
- * A030168 Continued fraction for <code>Copeland-Erd&#337;s</code> constant <code>0.235711..</code>. (concatenate primes).
+ * A030168 Continued fraction for Copeland-Erd\u0151s constant 0.235711... (concatenate primes).
  * @author Sean A. Irvine
  */
 public class A030168 extends ContinuedFractionSequence {

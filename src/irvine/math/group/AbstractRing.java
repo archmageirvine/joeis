@@ -248,4 +248,8 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
     return new RingBackedOperation<>(this);
   }
 
+  @Override
+  public E conjugate(final E element) {
+    return element;
+  }
 }

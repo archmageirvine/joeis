@@ -5,7 +5,7 @@ package irvine.oeis.a035;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A035101 E.g.f. <code>x*(c(x/2)-1)/(1-2*x)</code>, where <code>c(x) =</code> g.f. for Catalan numbers <code>A000108</code>.
+ * A035101 E.g.f. x*(c(x/2)-1)/(1-2*x), where c(x) = g.f. for Catalan numbers A000108.
  * @author Georg Fischer
  */
 public class A035101 extends HolonomicRecurrence {

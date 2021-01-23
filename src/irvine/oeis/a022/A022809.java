@@ -8,7 +8,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A022809 <code>a(n) = F(n+3) + c(n)</code> where <code>F(k)</code> is k-th Fibonacci number and <code>c(n)</code> is n-th number that is 1 or 2 or is not a Fibonacci number.
+ * A022809 a(n) = F(n+3) + c(n) where F(k) is k-th Fibonacci number and c(n) is n-th number that is 1 or 2 or is not a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A022809 implements Sequence {

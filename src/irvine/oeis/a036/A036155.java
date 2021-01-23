@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036155 <code>19^n mod 191</code>.
+ * A036155 19^n mod 191.
  * @author Georg Fischer
  */
 public class A036155 implements Sequence {

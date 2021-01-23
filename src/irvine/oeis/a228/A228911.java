@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228911 <code>a(n) = 9^n - 8*8^n + 28*7^n - 56*6^n + 70*5^n - 56*4^n + 28*3^n - 8*2^n + 1</code>.
+ * A228911 a(n) = 9^n - 8*8^n + 28*7^n - 56*6^n + 70*5^n - 56*4^n + 28*3^n - 8*2^n + 1.
  * @author Sean A. Irvine
  */
 public class A228911 extends LinearRecurrence {

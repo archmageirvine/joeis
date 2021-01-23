@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126501 Number of n-tuples of numbers <code>[0..5]</code> (leading zeros allowed) in which adjacent digits differ by 4 or less.
+ * A126501 Number of n-tuples of numbers [0..5] (leading zeros allowed) in which adjacent digits differ by 4 or less.
  * @author Georg Fischer
  */
 public class A126501 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a277;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277637 Partial sums of <code>A007004</code>.
+ * A277637 Partial sums of A007004.
  * @author Georg Fischer
  */
 public class A277637 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A249693 <code>a(4n) = 3*n+1, a(2n+1) = 3*n+2, a(4n+2) = 3*n</code>.
+ * A249693 a(4n) = 3*n+1, a(2n+1) = 3*n+2, a(4n+2) = 3*n.
  * @author Georg Fischer
  */
 public class A249693 extends GeneratingFunctionSequence {

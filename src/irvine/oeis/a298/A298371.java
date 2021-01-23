@@ -5,7 +5,7 @@ package irvine.oeis.a298;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A298371 <code>a(n) = Sum_{m=0..n} Sum_{i=0..m} i*C(m-i,i)*C(m-i,n-m-i)</code>.
+ * A298371 a(n) = Sum_{m=0..n} Sum_{i=0..m} i*C(m-i,i)*C(m-i,n-m-i).
  * @author Georg Fischer
  */
 public class A298371 extends HolonomicRecurrence {

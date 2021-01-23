@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279447 Number of nonequivalent ways to place 3 points on an <code>n X n</code> square grid so that no more than 2 points are on a vertical or horizontal straight line.
+ * A279447 Number of nonequivalent ways to place 3 points on an n X n square grid so that no more than 2 points are on a vertical or horizontal straight line.
  * @author Sean A. Irvine
  */
 public class A279447 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216123 The hyper-Wiener index of the nanostar dendrimer <code>NS[n]</code>, defined pictorially in the Ashrafi et al. reference.
+ * A216123 The hyper-Wiener index of the nanostar dendrimer NS[n], defined pictorially in the Ashrafi et al. reference.
  * @author Sean A. Irvine
  */
 public class A216123 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a109;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A109033 Number of permutations in <code>S_n</code> avoiding the patterns 1342 and 2143.
+ * A109033 Number of permutations in S_n avoiding the patterns 1342 and 2143.
  * @author Georg Fischer
  */
 public class A109033 extends HolonomicRecurrence {

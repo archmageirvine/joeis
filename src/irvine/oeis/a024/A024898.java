@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007528;
 
 /**
- * A024898 Positive integers k such that <code>6*k - 1</code> is prime.
+ * A024898 Positive integers k such that 6*k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A024898 extends A007528 {

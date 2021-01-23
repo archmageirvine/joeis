@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A306648 Decimal expansion of <code>3 + 36/(5*sqrt(3)*Pi) + 48/(5*Pi^2)</code>.
+ * A306648 Decimal expansion of 3 + 36/(5*sqrt(3)*Pi) + 48/(5*Pi^2).
  * @author Georg Fischer
  */
 public class A306648 extends DecimalExpansionSequence {

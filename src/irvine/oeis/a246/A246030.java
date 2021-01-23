@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A246030 <code>a(n) = (5*2^(2*n)+(-2)^(n+1))/3</code>.
+ * A246030 a(n) = (5*2^(2*n)+(-2)^(n+1))/3.
  * @author Georg Fischer
  */
 public class A246030 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333599 <code>a(n) = Fibonacci(n) * Fibonacci(n+1) mod Fibonacci(n+2)</code>.
+ * A333599 a(n) = Fibonacci(n) * Fibonacci(n+1) mod Fibonacci(n+2).
  * @author Georg Fischer
  */
 public class A333599 extends GeneratingFunctionSequence {

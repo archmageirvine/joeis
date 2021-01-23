@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025133 4th elementary symmetric function of <code>C(n,0), C(n,1)</code>, ..., <code>C(n,n)</code>.
+ * A025133 4th elementary symmetric function of C(n,0), C(n,1), ..., C(n,n).
  * @author Sean A. Irvine
  */
 public class A025133 implements Sequence {

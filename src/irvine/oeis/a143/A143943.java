@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143943 The Wiener index of a chain of n squares joined at vertices <code>(i.e.</code>, joined like &lt;&gt;&lt;&gt;&lt;&gt;...&lt;&gt;; here &lt;&gt; is a <code>square!)</code>.
+ * A143943 The Wiener index of a chain of n squares joined at vertices (i.e., joined like &lt;&gt;&lt;&gt;&lt;&gt;...&lt;&gt;; here &lt;&gt; is a square!).
  * @author Georg Fischer
  */
 public class A143943 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111053 Number of permutations which avoid the patterns 1324 and (2143 with Bruhat restriction <code>{2&lt;-&gt;3})</code>. Also the number of permutations whose graphs are acyclic.
+ * A111053 Number of permutations which avoid the patterns 1324 and (2143 with Bruhat restriction {2&lt;-&gt;3}). Also the number of permutations whose graphs are acyclic.
  * @author Georg Fischer
  */
 public class A111053 extends HolonomicRecurrence {

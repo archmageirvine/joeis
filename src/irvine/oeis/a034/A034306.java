@@ -5,7 +5,7 @@ package irvine.oeis.a034;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A034306 Palindromes P such that Fibonacci iterations starting with <code>(1, P)</code> lead to a "nine digits anagram".
+ * A034306 Palindromes P such that Fibonacci iterations starting with (1, P) lead to a "nine digits anagram".
  * @author Georg Fischer
  */
 public class A034306 extends FiniteSequence {

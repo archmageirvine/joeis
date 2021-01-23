@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034300 <code>a(n) = n-th</code> quintic factorial number divided by 3.
+ * A034300 a(n) = n-th quintic factorial number divided by 3.
  * @author Georg Fischer
  */
 public class A034300 extends HolonomicRecurrence {

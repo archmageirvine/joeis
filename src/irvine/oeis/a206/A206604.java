@@ -6,7 +6,7 @@ package irvine.oeis.a206;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A206604 Number of integers in the smallest interval containing both minimal and maximal possible apex values of an addition triangle whose base is a permutation of <code>n+1</code> consecutive integers.
+ * A206604 Number of integers in the smallest interval containing both minimal and maximal possible apex values of an addition triangle whose base is a permutation of n+1 consecutive integers.
  * @author Georg Fischer
  */
 public class A206604 extends HolonomicRecurrence {

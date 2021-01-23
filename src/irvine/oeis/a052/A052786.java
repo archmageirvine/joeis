@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052786 A simple grammar.
+ * A052786 Expansion of e.g.f.: -x^3*(log(1-x))^3.
  * @author Georg Fischer
  */
 public class A052786 extends HolonomicRecurrence {

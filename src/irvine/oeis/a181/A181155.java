@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000069;
 
 /**
- * A181155 Odious numbers <code>(A000069)</code> plus one; complement of <code>A026147</code>.
+ * A181155 Odious numbers (A000069) plus one; complement of A026147.
  * @author Georg Fischer
  */
 public class A181155 extends A000069 {

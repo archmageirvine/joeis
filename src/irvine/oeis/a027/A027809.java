@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027809 <code>a(n) = 143*(n+1)*C(n+4,13)/2</code>.
+ * A027809 a(n) = 143*(n+1)*C(n+4,13)/2.
  * @author Georg Fischer
  */
 public class A027809 extends GeneratingFunctionSequence {

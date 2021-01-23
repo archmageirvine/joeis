@@ -6,7 +6,7 @@ package irvine.oeis.a241;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A241205 Sum of <code>x*y^2*z^3</code> for positive integers x,y,z with <code>x + y + z = n</code>.
+ * A241205 Sum of x*y^2*z^3 for positive integers x,y,z with x + y + z = n.
  * @author Georg Fischer
  */
 public class A241205 extends HolonomicRecurrence {

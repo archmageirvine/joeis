@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A060237 <code>a(n) = n!^2 * Sum_{m=1..n}( Sum_{k=1..m} 1/(k*m) )</code>.
+ * A060237 a(n) = n!^2 * Sum_{m=1..n}( Sum_{k=1..m} 1/(k*m) ).
  * @author Sean A. Irvine
  */
 public class A060237 implements Sequence {

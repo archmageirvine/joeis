@@ -6,7 +6,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121631 Finite sum involving signless Stirling numbers of the first kind and the Bell numbers. Appears in the process of normal ordering of n-th power of <code>(a)^4*(a+*a)</code>, where <code>a+</code> and a are boson creation and annihilation operators, respectively.
+ * A121631 Finite sum involving signless Stirling numbers of the first kind and the Bell numbers. Appears in the process of normal ordering of n-th power of (a)^4*(a+*a), where a+ and a are boson creation and annihilation operators, respectively.
  * @author Georg Fischer
  */
 public class A121631 extends HolonomicRecurrence {

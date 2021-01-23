@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305861 <code>a(n) = 32*3^n - 2^(n+5) + 5</code>.
+ * A305861 a(n) = 32*3^n - 2^(n+5) + 5.
  * @author Georg Fischer
  */
 public class A305861 extends GeneratingFunctionSequence {

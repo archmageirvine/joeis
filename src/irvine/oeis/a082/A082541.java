@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082541 <code>a(n) = (7*3^n - 4*0^n)/3</code>.
+ * A082541 a(n) = (7*3^n - 4*0^n)/3.
  * @author Georg Fischer
  */
 public class A082541 extends GeneratingFunctionSequence {

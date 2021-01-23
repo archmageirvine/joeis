@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020091 Ceiling of <code>Gamma(n + 11/12)/Gamma(11/12)</code>.
+ * A020091 Ceiling of Gamma(n + 11/12)/Gamma(11/12).
  * @author Sean A. Irvine
  */
 public class A020091 implements Sequence {

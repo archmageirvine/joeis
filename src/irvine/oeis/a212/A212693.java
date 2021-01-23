@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A212693 Number of legal <code>7 X 6 Connect-Four</code> positions after n plies.
+ * A212693 Number of legal 7 X 6 Connect-Four positions after n plies.
  * @author Georg Fischer
  */
 public class A212693 extends FiniteSequence {

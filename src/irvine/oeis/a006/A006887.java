@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006887 Kaprekar triples: q such that q <code>= x + y + z</code> and <code>q^3 = x*10^2n + y*10^n +</code> z, where <code>z &lt; 10^n</code> and n is the number of digits in q. q is not a power of <code>10</code> (except <code>q=1)</code>.
+ * A006887 Kaprekar triples: q such that q = x + y + z and q^3 = x*10^2n + y*10^n + z, where z &lt; 10^n and n is the number of digits in q. q is not a power of 10 (except q=1).
  * @author Sean A. Irvine
  */
 public class A006887 implements Sequence {

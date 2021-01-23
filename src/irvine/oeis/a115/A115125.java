@@ -6,7 +6,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115125 A sequence related to Catalan numbers <code>A000108</code>.
+ * A115125 A sequence related to Catalan numbers A000108.
  * @author Georg Fischer
  */
 public class A115125 extends HolonomicRecurrence {

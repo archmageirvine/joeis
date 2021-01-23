@@ -6,7 +6,7 @@ package irvine.oeis.a208;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A208529 Number of permutations of <code>n &gt; 1</code> having exactly 2 points on the boundary of their bounding square.
+ * A208529 Number of permutations of n &gt; 1 having exactly 2 points on the boundary of their bounding square.
  * @author Georg Fischer
  */
 public class A208529 extends HolonomicRecurrence {

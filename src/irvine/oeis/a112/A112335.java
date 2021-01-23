@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112335 Row sums of number triangle <code>A112334</code>.
+ * A112335 Row sums of number triangle A112334.
  * @author Georg Fischer
  */
 public class A112335 extends LinearRecurrence {

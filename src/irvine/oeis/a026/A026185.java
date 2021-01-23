@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026185 If n even, then <code>2n</code>. If n odd, then nearest integer to <code>2n/3</code>.
+ * A026185 If n even, then 2n. If n odd, then nearest integer to 2n/3.
  * @author Sean A. Irvine
  */
 public class A026185 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099364 An inverse Chebyshev transform of <code>(1-x)^2</code>.
+ * A099364 An inverse Chebyshev transform of (1-x)^2.
  * @author Georg Fischer
  */
 public class A099364 extends HolonomicRecurrence {

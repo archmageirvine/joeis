@@ -6,7 +6,7 @@ package irvine.oeis.a259;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A259845 <code>a(0)=1, a(1)=3</code>, and the INVERT transform of the sequence deletes the 3.
+ * A259845 a(0)=1, a(1)=3, and the INVERT transform of the sequence deletes the 3.
  * @author Georg Fischer
  */
 public class A259845 extends HolonomicRecurrence {

@@ -5,13 +5,13 @@ package irvine.oeis.a256;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A256228 Numbers k such that <code>4*10^k - 21</code> is prime.
+ * A256228 Numbers k such that 4*10^k - 21 is prime.
  * @author Georg Fischer
  */
 public class A256228 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A256228() {
-    super(1, 1, 4, 10, -21, 0);
+    super(1, 1, 4, 10, -21);
   }
 }

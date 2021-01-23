@@ -5,12 +5,12 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011269 Decimal expansion of <code>15th</code> root of 9.
+ * A011269 Decimal expansion of 15th root of 9.
  * @author Sean A. Irvine
  */
 public class A011269 extends DecimalExpansionSequence {
 
-  private static final CR N = ComputableReals.SINGLETON.pow(CR.valueOf(9), CR.valueOf(15).inverse());
+  private static final CR N = ComputableReals.SINGLETON.pow(CR.NINE, CR.valueOf(15).inverse());
 
   @Override
   protected CR getCR() {

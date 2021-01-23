@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055996 <code>a(n) = 81*10^(n-2), a(0)=1, a(1)=8</code>.
+ * A055996 a(n) = 81*10^(n-2), a(0)=1, a(1)=8.
  * @author Georg Fischer
  */
 public class A055996 extends HolonomicRecurrence {

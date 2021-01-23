@@ -20,7 +20,7 @@ public class A006038 extends A005101 {
       if (!pp.isEven()) {
         boolean ok = true;
         for (final Z n : mPrimitive) {
-          if (Z.ZERO.equals(pp.mod(n))) {
+          if (pp.mod(n).isZero()) {
             ok = false;
             break;
           }

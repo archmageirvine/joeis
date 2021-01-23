@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027672 Molien series for unitary 16-dimensional full Siegel modular group <code>H_4</code> of order 48514675507200.
+ * A027672 Molien series for unitary 16-dimensional full Siegel modular group H_4 of order 48514675507200.
  * @author Sean A. Irvine
  */
 public class A027672 implements Sequence {

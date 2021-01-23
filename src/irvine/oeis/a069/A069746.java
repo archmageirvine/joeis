@@ -5,7 +5,7 @@ package irvine.oeis.a069;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A069746 Four-digit numbers that do not resolve to 6174 under the Kaprekar map (see <code>A151949)</code>.
+ * A069746 Four-digit numbers that do not resolve to 6174 under the Kaprekar map (see A151949).
  * @author Georg Fischer
  */
 public class A069746 extends FiniteSequence {

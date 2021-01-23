@@ -4,7 +4,7 @@ package irvine.oeis.a026;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A026636 <code>Sum{T(n-k,k)}, 0&lt;=k&lt;=[ n/2 ]</code>, T given by <code>A026626</code>.
+ * A026636 Sum{T(n-k,k)}, 0&lt;=k&lt;=[ n/2 ], T given by A026626.
  * @author Georg Fischer
  */
 public class A026636 extends GeneratingFunctionSequence {

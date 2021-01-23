@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A045884 Largest number m such that in base n, the sum of digits in the divisors of m is m (written in base <code>n)</code>.
+ * A045884 Largest number m such that in base n, the sum of digits in the divisors of m is m (written in base n).
  * @author Georg Fischer
  */
 public class A045884 extends FiniteSequence {

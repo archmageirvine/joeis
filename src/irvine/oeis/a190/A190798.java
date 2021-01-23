@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190798 Maximum value of <code>k^2 * (n-k)</code>.
+ * A190798 Maximum value of k^2 * (n-k).
  * @author Georg Fischer
  */
 public class A190798 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025225 <code>a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1)</code> for <code>n &gt;= 2</code>. Also <code>a(n) = (2^n)*C(n-1)</code>, where C <code>= A000108</code> (Catalan numbers).
+ * A025225 a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1) for n &gt;= 2. Also a(n) = (2^n)*C(n-1), where C = A000108 (Catalan numbers).
  * @author Sean A. Irvine
  */
 public class A025225 implements Sequence {

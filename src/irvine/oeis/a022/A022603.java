@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014232;
 
 /**
- * A022603 Indices of primes of form <code>3^p - 2</code>.
+ * A022603 Indices of primes of form 3^p - 2.
  * @author Sean A. Irvine
  */
 public class A022603 extends A014232 {

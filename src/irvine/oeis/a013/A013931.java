@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013931 <code>a(n)</code> is squarefree and sum of all squarefrees <code>&lt;= a(n)</code> is squarefree.
+ * A013931 a(n) is squarefree and sum of all squarefrees &lt;= a(n) is squarefree.
  * @author Sean A. Irvine
  */
 public class A013931 implements Sequence {

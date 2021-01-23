@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302766 <code>a(n) = n*((4*n + 1)*(7*n - 4) + 15*n*(-1)^n)/48</code>.
+ * A302766 a(n) = n*((4*n + 1)*(7*n - 4) + 15*n*(-1)^n)/48.
  * @author Georg Fischer
  */
 public class A302766 extends GeneratingFunctionSequence {

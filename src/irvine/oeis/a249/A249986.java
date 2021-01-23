@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A249986 Number of length <code>6+1 0..2*n</code> arrays with the sum of the absolute values of adjacent differences equal to <code>6*n</code>.
+ * A249986 Number of length 6+1 0..2*n arrays with the sum of the absolute values of adjacent differences equal to 6*n.
  * @author Georg Fischer
  */
 public class A249986 extends GeneratingFunctionSequence {

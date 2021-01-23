@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000479 Number of 1-factorizations of <code>K_{n,n}</code>.
+ * A000479 Number of 1-factorizations of K_{n,n}.
  * @author Sean A. Irvine
  */
 public class A000479 extends A000315 {

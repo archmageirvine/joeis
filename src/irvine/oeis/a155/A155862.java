@@ -6,7 +6,7 @@ package irvine.oeis.a155;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A155862 A 'Morgan Voyce' transform of <code>A007854</code>.
+ * A155862 A 'Morgan Voyce' transform of A007854.
  * @author Georg Fischer
  */
 public class A155862 extends HolonomicRecurrence {

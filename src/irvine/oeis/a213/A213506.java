@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A213506 Number of nonisomorphic <code>2-generator p-groups</code> of class at most 2 and order <code>p^n</code>.
+ * A213506 Number of nonisomorphic 2-generator p-groups of class at most 2 and order p^n.
  * @author Georg Fischer
  */
 public class A213506 extends GeneratingFunctionSequence {

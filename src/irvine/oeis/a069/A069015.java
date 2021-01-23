@@ -6,7 +6,7 @@ package irvine.oeis.a069;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A069015 <code>a(n) = n! * 3^n * Sum_{i=1..n} 1/(i * 3^i)</code>.
+ * A069015 a(n) = n! * 3^n * Sum_{i=1..n} 1/(i * 3^i).
  * @author Georg Fischer
  */
 public class A069015 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010785;
 
 /**
- * A028988 Repdigit <code>+ 1</code> is prime.
+ * A028988 Repdigit + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A028988 extends A010785 {

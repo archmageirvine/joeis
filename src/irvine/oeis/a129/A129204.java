@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129204 The denominator of <code>2/n^3</code>.
+ * A129204 The denominator of 2/n^3.
  * @author Georg Fischer
  */
 public class A129204 extends HolonomicRecurrence {

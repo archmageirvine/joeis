@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A024606 Numbers of form <code>x^2 + xy + y^2</code> with distinct x and <code>y &gt; 0</code>.
+ * A024606 Numbers of form x^2 + xy + y^2 with distinct x and y &gt; 0.
  * @author Sean A. Irvine
  */
 public class A024606 implements Sequence {

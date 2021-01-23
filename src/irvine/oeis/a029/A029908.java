@@ -20,7 +20,7 @@ public class A029908 implements Sequence {
     do {
       prev = m;
       m = Cheetah.factor(m).sopfr();
-    } while (!Z.ZERO.equals(m) && !prev.equals(m));
+    } while (!m.isZero() && !prev.equals(m));
     return m;
   }
 }

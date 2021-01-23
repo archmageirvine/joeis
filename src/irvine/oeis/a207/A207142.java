@@ -4,7 +4,7 @@ package irvine.oeis.a207;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A207142 Number of <code>(n+1) X 2 0..2</code> arrays with every <code>2 X 2</code> subblock having nonzero determinant and commuting with every horizontal or vertical neighbor.
+ * A207142 Number of (n+1) X 2 0..2 arrays with every 2 X 2 subblock having nonzero determinant and commuting with every horizontal or vertical neighbor.
  * @author Georg Fischer
  */
 public class A207142 extends GeneratingFunctionSequence {

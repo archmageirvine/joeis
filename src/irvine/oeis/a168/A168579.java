@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168579 G.f.: <code>1/(1-x-16*x^2)</code>.
+ * A168579 G.f.: 1/(1-x-16*x^2).
  * @author Sean A. Irvine
  */
 public class A168579 extends LinearRecurrence {

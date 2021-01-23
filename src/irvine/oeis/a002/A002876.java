@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002876 Number of weighted linear spaces of total weight <code>n</code>.
+ * A002876 Number of weighted linear spaces of total weight n.
  * @author Sean A. Irvine
  */
 public class A002876 implements Sequence {

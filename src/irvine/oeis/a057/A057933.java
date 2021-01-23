@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057933 <code>Floor[(80/81)*10^n]</code>.
+ * A057933 Floor[(80/81)*10^n].
  * @author Georg Fischer
  */
 public class A057933 extends GeneratingFunctionSequence {

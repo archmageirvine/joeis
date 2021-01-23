@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190400 Number of ways to place 5 nonattacking grasshoppers on a toroidal chessboard of size <code>n x n</code>.
+ * A190400 Number of ways to place 5 nonattacking grasshoppers on a toroidal chessboard of size n x n.
  * @author Georg Fischer
  */
 public class A190400 extends GeneratingFunctionSequence {

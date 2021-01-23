@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333385 <code>a(n) = 3^n + 2 * 17^n</code> for <code>n &gt;= 0</code>.
+ * A333385 a(n) = 3^n + 2 * 17^n for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A333385 extends GeneratingFunctionSequence {

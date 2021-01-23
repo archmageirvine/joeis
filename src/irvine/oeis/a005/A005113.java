@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005113 Smallest prime in class <code>n</code> (sometimes written <code>n+)</code> according to the <code>Erd&#337;s-Selfridge</code> classification of primes.
+ * A005113 Smallest prime in class n (sometimes written n+) according to the Erd\u0151s-Selfridge classification of primes.
  * @author Sean A. Irvine
  */
 public class A005113 extends A005106 {

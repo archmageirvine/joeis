@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002971 Numbers k such that <code>4*k^2 + 25</code> is prime.
+ * A002971 Numbers k such that 4*k^2 + 25 is prime.
  * @author Sean A. Irvine
  */
 public class A002971 implements Sequence {

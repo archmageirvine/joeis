@@ -6,7 +6,7 @@ package irvine.oeis.a283;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A283029 Number of inequivalent <code>5 X 5</code> matrices with entries in <code>{1,2,3,..,n}</code> when a matrix and its transpose are considered equivalent.
+ * A283029 Number of inequivalent 5 X 5 matrices with entries in {1,2,3,..,n} when a matrix and its transpose are considered equivalent.
  * @author Georg Fischer
  */
 public class A283029 extends HolonomicRecurrence {

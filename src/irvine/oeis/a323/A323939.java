@@ -5,7 +5,7 @@ package irvine.oeis.a323;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A323939 Number of unbranched <code>tri-4-catafusenes</code> under the symmetry point group <code>C_{2v}</code> as a function of the number of hexagons (see Cyvin et al. <code>(1996)</code> for precise definition).
+ * A323939 Number of unbranched tri-4-catafusenes under the symmetry point group C_{2v} as a function of the number of hexagons (see Cyvin et al. (1996) for precise definition).
  * @author Georg Fischer
  */
 public class A323939 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A265987 Number of <code>n X 3</code> integer arrays with each element equal to the number of horizontal and antidiagonal neighbors not equal to itself.
+ * A265987 Number of n X 3 integer arrays with each element equal to the number of horizontal and antidiagonal neighbors not equal to itself.
  * @author Georg Fischer
  */
 public class A265987 extends GeneratingFunctionSequence {

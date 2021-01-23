@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A309442 Minimum number of colors needed to color the cells of the six regular convex polychora such that no two cells with a common face share the same color (in the order <code>5-cell, 8-cell, 16-cell, 24-cell, 120-cell, 600-cell)</code>.
+ * A309442 Minimum number of colors needed to color the cells of the six regular convex polychora such that no two cells with a common face share the same color (in the order 5-cell, 8-cell, 16-cell, 24-cell, 120-cell, 600-cell).
  * @author Georg Fischer
  */
 public class A309442 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a035;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A035287 Number of ways to place a non-attacking white and black rook on <code>n X n</code> chessboard.
+ * A035287 Number of ways to place a non-attacking white and black rook on n X n chessboard.
  * @author Georg Fischer
  */
 public class A035287 extends GeneratingFunctionSequence {

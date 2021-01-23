@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A203292 Number of arrays of 4 nondecreasing integers in <code>-n..n</code> with sum zero and equal numbers greater than zero and less than zero.
+ * A203292 Number of arrays of 4 nondecreasing integers in -n..n with sum zero and equal numbers greater than zero and less than zero.
  * @author Georg Fischer
  */
 public class A203292 extends GeneratingFunctionSequence {

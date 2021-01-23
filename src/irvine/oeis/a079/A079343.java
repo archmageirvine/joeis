@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079343 Period <code>6</code>: repeat <code>[0, 1, 1, 2, 3, 1]</code>; also <code>F(n) mod 4</code>, where <code>F(n) = A000045(n)</code>.
+ * A079343 Period 6: repeat [0, 1, 1, 2, 3, 1]; also F(n) mod 4, where F(n) = A000045(n).
  * @author Sean A. Irvine
  */
 public class A079343 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322829 <code>a(n) =</code> Jacobi (or Kronecker) symbol <code>(n/21)</code>.
+ * A322829 a(n) = Jacobi (or Kronecker) symbol (n/21).
  * @author Georg Fischer
  */
 public class A322829 extends HolonomicRecurrence {

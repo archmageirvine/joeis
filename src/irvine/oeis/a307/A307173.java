@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307173 Second class of all proper positive solutions <code>y2(n) = a(n)</code> of the Pell equation <code>x^2 - 7*y^2 = 9</code>.
+ * A307173 Second class of all proper positive solutions y2(n) = a(n) of the Pell equation x^2 - 7*y^2 = 9.
  * @author Georg Fischer
  */
 public class A307173 extends HolonomicRecurrence {

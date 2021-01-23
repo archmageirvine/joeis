@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A037043 3-white numbers: partition digits of <code>n^3</code> into blocks of 3 starting at right; then sum of these 3-digit numbers equals <code>n</code>.
+ * A037043 3-white numbers: partition digits of n^3 into blocks of 3 starting at right; then sum of these 3-digit numbers equals n.
  * @author Georg Fischer
  */
 public class A037043 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011514 Decimal expansion of <code>95th</code> root of 95.
+ * A011514 Decimal expansion of 95th root of 95.
  * @author Sean A. Irvine
  */
 public class A011514 extends DecimalExpansionSequence {

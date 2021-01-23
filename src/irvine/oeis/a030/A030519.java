@@ -9,7 +9,7 @@ import irvine.oeis.a039.A039660;
 import irvine.oeis.a055.A055879;
 
 /**
- * A030519 Number of polyhexes of class <code>PF2</code> with four catafusenes annealated to pyrene.
+ * A030519 Number of polyhexes of class PF2 with four catafusenes annealated to pyrene.
  * @author Sean A. Irvine
  */
 public class A030519 implements Sequence {

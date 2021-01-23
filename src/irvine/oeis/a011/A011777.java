@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011777 <code>a(n) =</code> least <code>k&gt;1</code> such that <code>k^n</code> divides <code>k!</code>.
+ * A011777 a(n) = least k&gt;1 such that k^n divides k!.
  * @author Sean A. Irvine
  */
 public class A011777 implements Sequence {
@@ -20,8 +20,7 @@ public class A011777 implements Sequence {
     while (true) {
       final Z q = k.pow(mN);
       final int ki = k.intValueExact();
-      if (Z.ZERO.equals(mF.factorial(ki).mod(q))
-        && !Z.ZERO.equals(mF.factorial(ki).mod(q.multiply(k)))) {
+      if (mF.factorial(ki).mod(q).isZero() && !mF.factorial(ki).mod(q.multiply(k)).isZero()) {
         return k;
       }
       k = k.add(1);

@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086223 Every integer can be represented uniquely as m <code>= k*2^(j+1)+2^j-1</code>. Sequence gives values of k for m <code>= repunit(n)</code>.
+ * A086223 Every integer can be represented uniquely as m = k*2^(j+1)+2^j-1. Sequence gives values of k for m = repunit(n).
  * @author Georg Fischer
  */
 public class A086223 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a216;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A216358 G.f.: <code>1/( (1-32*x)*(1+11*x-x^2)^2 )^(1/5)</code>.
+ * A216358 G.f.: 1/( (1-32*x)*(1+11*x-x^2)^2 )^(1/5).
  * @author Georg Fischer
  */
 public class A216358 extends HolonomicRecurrence {

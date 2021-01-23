@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002420;
 
 /**
- * A262543 Number of rooted asymmetrical polyenoids of type <code>U_n*</code> having n edges.
+ * A262543 Number of rooted asymmetrical polyenoids of type U_n* having n edges.
  * @author Sean A. Irvine
  */
 public class A262543 extends A002420 {

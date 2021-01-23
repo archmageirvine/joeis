@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050556 Numbers k such that <code>61*2^k-1</code> is prime.
+ * A050556 Numbers k such that 61*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050556 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050556() {
-    super(1, 3, 61, 2, -1, 0);
+    super(1, 3, 61, 2, -1);
   }
 }

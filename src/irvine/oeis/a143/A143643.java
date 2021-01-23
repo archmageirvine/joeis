@@ -6,7 +6,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143643 Numerators of the lower principal convergents and the lower intermediate convergents to <code>3^(1/2)</code>.
+ * A143643 Numerators of the lower principal convergents and the lower intermediate convergents to 3^(1/2).
  * @author Georg Fischer
  */
 public class A143643 extends HolonomicRecurrence {

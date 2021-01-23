@@ -5,7 +5,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099922 <code>a(n) = F(4n) - 2n</code>, where <code>F(n) =</code> Fibonacci numbers <code>A000045</code>.
+ * A099922 a(n) = F(4n) - 2n, where F(n) = Fibonacci numbers A000045.
  * @author Georg Fischer
  */
 public class A099922 extends HolonomicRecurrence {

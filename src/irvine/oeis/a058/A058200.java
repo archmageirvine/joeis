@@ -5,7 +5,7 @@ package irvine.oeis.a058;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A058200 Coefficients of the highest power of r in a sequence of parametric solutions for the Diophantine equation <code>x^3+y^3+z^3=1</code>.
+ * A058200 Coefficients of the highest power of r in a sequence of parametric solutions for the Diophantine equation x^3+y^3+z^3=1.
  * @author Georg Fischer
  */
 public class A058200 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034781 Triangle of number of rooted trees with <code>n &gt;= 2</code> nodes and height h <code>&gt;= 1</code>.
+ * A034781 Triangle of number of rooted trees with n &gt;= 2 nodes and height h &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A034781 extends MemoryFunctionInt3<Z> implements Sequence {
@@ -23,7 +23,7 @@ public class A034781 extends MemoryFunctionInt3<Z> implements Sequence {
     }
     Z s = Z.ZERO;
     for (int j = 0; j <= n / i; ++j) {
-      s = s.add(Binomial.binomial(get(i - 1, i - 1, k - 1).longValueExact() + j - 1, j).multiply(get(n - i * j, i - 1, k)));
+      s = s.add(Binomial.binomial(get(i - 1, i - 1, k - 1).add(j - 1), Z.valueOf(j)).multiply(get(n - i * j, i - 1, k)));
     }
     return s;
   }

@@ -1,29 +1,23 @@
 package irvine.oeis.a001;
 
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.a007.A007180;
+import irvine.oeis.Sequence;
 
 /**
- * A001394 Number of <code>n-step self-avoiding</code> walks on diamond.
+ * A001394 Number of n-step self-avoiding walks on diamond.
  * @author Sean A. Irvine
  */
-public class A001394 extends A007180 {
+public class A001394 implements Sequence {
 
-  private boolean mFirst = true;
-
-  @Override
-  protected boolean check(final long point, final int n) {
-    return !contains(point, n);
-  }
+  private int mN = -1;
+  private final long mC = Lattices.DIAMOND.neighbour(Lattices.DIAMOND.origin(), 0);
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.DIAMOND));
 
   @Override
   public Z next() {
-    if (mFirst) {
-      mFirst = false;
-      return Z.ONE;
-    }
-    setPathLength(++mN);
-    setPathElement(0, ORIGIN);
-    return Z.valueOf(count(ORIGIN + 1, -1, 1)).shiftLeft(2);
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 4, 15, Lattices.DIAMOND.origin(), mC));
   }
 }

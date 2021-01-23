@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306758 <code>a(n) = a(n-9) + a(n-10)</code> with <code>a(0)=10, a(1)=...=a(8)=0, a(9)=9</code>.
+ * A306758 a(n) = a(n-9) + a(n-10) with a(0)=10, a(1)=...=a(8)=0, a(9)=9.
  * @author Georg Fischer
  */
 public class A306758 extends HolonomicRecurrence {

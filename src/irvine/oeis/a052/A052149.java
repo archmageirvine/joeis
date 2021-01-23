@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052149 Nonsquare rectangles on an <code>n X n</code> board.
+ * A052149 Nonsquare rectangles on an n X n board.
  * @author Sean A. Irvine
  */
 public class A052149 extends LinearRecurrence {

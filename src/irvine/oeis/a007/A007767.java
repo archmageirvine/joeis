@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A007767 Number of pairs of permutations of degree n that avoid <code>(12,21)</code>.
+ * A007767 Number of pairs of permutations of degree n that avoid (12,21).
  * @author Evegeny Kapun
  * @author Sean A. Irvine
  */

@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A309970 Period <code>12</code>: repeat <code>[1, 1, 0, 0, -1, -1, -1, -1, 0, 0, 1, 1]</code>.
+ * A309970 Period 12: repeat [1, 1, 0, 0, -1, -1, -1, -1, 0, 0, 1, 1].
  * @author Georg Fischer
  */
 public class A309970 extends PeriodicSequence {

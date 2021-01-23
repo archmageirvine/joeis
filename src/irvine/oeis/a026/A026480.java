@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A026480 <code>a(1) = 1, a(2) = 2, a(3) = 4</code>, and for <code>n &gt; 3, a(n)</code> is the least positive integer <code>&gt; a(n-1)</code> not of form <code>a(i)*a(j)*a(k)</code> for <code>1 &lt;= i &lt;= j &lt;= k &lt; n</code>.
+ * A026480 a(1) = 1, a(2) = 2, a(3) = 4, and for n &gt; 3, a(n) is the least positive integer &gt; a(n-1) not of form a(i)*a(j)*a(k) for 1 &lt;= i &lt;= j &lt;= k &lt; n.
  * @author Sean A. Irvine
  */
 public class A026480 extends MemorySequence {

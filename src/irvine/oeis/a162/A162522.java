@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162522 First differences of magic numbers <code>A018226</code>.
+ * A162522 First differences of magic numbers A018226.
  * @author Georg Fischer
  */
 public class A162522 extends FiniteSequence {

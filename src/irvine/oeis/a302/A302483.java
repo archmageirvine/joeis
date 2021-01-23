@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302483 Number of FF-equivalence classes of &#321;ukasiewicz paths. &#321;ukasiewicz paths are P-equivalent iff the positions of pattern P are identical in these paths.
+ * A302483 Number of FF-equivalence classes of \u0141ukasiewicz paths. \u0141ukasiewicz paths are P-equivalent iff the positions of pattern P are identical in these paths.
  * @author Georg Fischer
  */
 public class A302483 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 
 
 /**
- * A146305 Array <code>T(n,m) = 2(2m+3)!(4n+2m+1)!/(m!(m+2)!n!(3n+2m+3)!)</code> read by antidiagonals.
+ * A146305 Array T(n,m) = 2(2m+3)!(4n+2m+1)!/(m!(m+2)!n!(3n+2m+3)!) read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A146305 implements Sequence {

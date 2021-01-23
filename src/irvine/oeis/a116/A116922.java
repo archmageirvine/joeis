@@ -5,7 +5,7 @@ package irvine.oeis.a116;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A116922 <code>a(n) =</code> smallest integer <code>&gt;= n/2</code> which is coprime to <code>n</code>.
+ * A116922 a(n) = smallest integer &gt;= n/2 which is coprime to n.
  * @author Georg Fischer
  */
 public class A116922 extends HolonomicRecurrence {

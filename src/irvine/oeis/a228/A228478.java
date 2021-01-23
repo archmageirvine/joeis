@@ -5,7 +5,7 @@ package irvine.oeis.a228;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A228478 Number of <code>n X 4</code> binary arrays with top left value 1 and no two ones adjacent horizontally, vertically or antidiagonally.
+ * A228478 Number of n X 4 binary arrays with top left value 1 and no two ones adjacent horizontally, vertically or antidiagonally.
  * @author Georg Fischer
  */
 public class A228478 extends HolonomicRecurrence {

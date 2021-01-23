@@ -5,7 +5,7 @@ package irvine.oeis.a323;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A323941 Total number of isomers (nonisomorphic systems) of unbranched <code>tri-4-catafusenes</code> as a function of the number of hexagons (see Cyvin et al. <code>(1996)</code> for precise definition).
+ * A323941 Total number of isomers (nonisomorphic systems) of unbranched tri-4-catafusenes as a function of the number of hexagons (see Cyvin et al. (1996) for precise definition).
  * @author Georg Fischer
  */
 public class A323941 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242856 Number of 2-matchings of the <code>n X n</code> grid graph.
+ * A242856 Number of 2-matchings of the n X n grid graph.
  * @author Sean A. Irvine
  */
 public class A242856 extends LinearRecurrence {

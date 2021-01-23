@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A317779 Number of equivalence classes of binary words of length n for the set of subwords <code>{010, 101, 10110}</code>.
+ * A317779 Number of equivalence classes of binary words of length n for the set of subwords {010, 101, 10110}.
  * @author Georg Fischer
  */
 public class A317779 extends GeneratingFunctionSequence {

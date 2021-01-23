@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307253 Number of triangles larger than <code>size=1</code> in a matchstick-made hexagon with side length <code>n</code>.
+ * A307253 Number of triangles larger than size=1 in a matchstick-made hexagon with side length n.
  * @author Georg Fischer
  */
 public class A307253 extends HolonomicRecurrence {

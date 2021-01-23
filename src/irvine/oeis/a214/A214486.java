@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214486 Degrees of irreducible representations of Ree group <code>R(27)</code>.
+ * A214486 Degrees of irreducible representations of Ree group R(27).
  * @author Georg Fischer
  */
 public class A214486 extends FiniteSequence {

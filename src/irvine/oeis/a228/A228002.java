@@ -5,7 +5,7 @@ package irvine.oeis.a228;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A228002 Alternate partial sums of <code>binomial(2n,n)^2</code>.
+ * A228002 Alternate partial sums of binomial(2n,n)^2.
  * @author Georg Fischer
  */
 public class A228002 extends HolonomicRecurrence {

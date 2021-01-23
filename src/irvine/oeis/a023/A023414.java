@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023414 If any power of 2 ends with k <code>7</code>'s and <code>8</code>'s, they must be the first k elements of this sequence in reverse order.
+ * A023414 If any power of 2 ends with k 7's and 8's, they must be the first k elements of this sequence in reverse order.
  * @author Sean A. Irvine
  */
 public class A023414 implements Sequence {
@@ -18,7 +18,7 @@ public class A023414 implements Sequence {
     mS = mS == null ? Z.ONE : mS.multiply(10);
     mT = mT.multiply2();
     final Z a = mS.multiply(7).add(mA);
-    if (Z.ZERO.equals(a.mod(mT))) {
+    if (a.mod(mT).isZero()) {
       mA = a;
       return Z.SEVEN;
     } else {

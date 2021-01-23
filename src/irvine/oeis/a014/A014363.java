@@ -1,16 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.math.z.Z;
-import irvine.oeis.AbstractAliquotSequence;
+import irvine.oeis.AliquotSequence;
 
 /**
  * A014363 Aliquot sequence starting at 966.
  * @author Sean A. Irvine
  */
-public class A014363 extends AbstractAliquotSequence {
+public class A014363 extends AliquotSequence {
 
-  @Override
-  protected Z start() {
-    return Z.valueOf(966);
+  /** Construct the sequence. */
+  public A014363() {
+    super(966);
   }
 }

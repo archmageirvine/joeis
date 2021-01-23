@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022305 Exactly half the first <code>a(n)</code> terms of <code>A022303</code> are <code>1</code>'s.
+ * A022305 Exactly half the first a(n) terms of A022303 are 1's.
  * @author Sean A. Irvine
  */
 public class A022305 extends A022303 {

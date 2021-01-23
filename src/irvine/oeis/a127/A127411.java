@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A127411 Negative value of coefficient of <code>x^(n-6)</code> in the characteristic polynomial of a certain <code>n X n</code> integer circulant matrix.
+ * A127411 Negative value of coefficient of x^(n-6) in the characteristic polynomial of a certain n X n integer circulant matrix.
  * @author Georg Fischer
  */
 public class A127411 extends GeneratingFunctionSequence {

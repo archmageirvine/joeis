@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A232625 Denominators of <code>abs(n-8)/(2*n), n &gt;= 1</code>.
+ * A232625 Denominators of abs(n-8)/(2*n), n &gt;= 1.
  * @author Georg Fischer
  */
 public class A232625 extends GeneratingFunctionSequence {

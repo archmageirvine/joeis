@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228278 Number of <code>n X 3</code> binary arrays with top left value 1 and no two ones adjacent horizontally, vertically or nw-se diagonally.
+ * A228278 Number of n X 3 binary arrays with top left value 1 and no two ones adjacent horizontally, vertically or nw-se diagonally.
  * @author Georg Fischer
  */
 public class A228278 extends GeneratingFunctionSequence {

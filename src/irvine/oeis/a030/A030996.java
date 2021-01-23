@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030996 Concatenation of n consecutive primes starting with the prime <code>a(n)</code> is a prime.
+ * A030996 Concatenation of n consecutive primes starting with the prime a(n) is a prime.
  * @author Sean A. Irvine
  */
 public class A030996 implements Sequence {

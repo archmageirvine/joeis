@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006577;
 
 /**
- * A288311 Number of steps, reduced <code>mod</code> n, to reach 1 in the Collatz <code>3x+1</code> problem, or -1 if 1 is never reached.
+ * A288311 Number of steps, reduced mod n, to reach 1 in the Collatz 3x+1 problem, or -1 if 1 is never reached.
  * @author Georg Fischer
  */
 public class A288311 extends A006577 {

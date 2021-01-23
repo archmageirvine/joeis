@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029758 Number of AVL trees of height <code>n</code>.
+ * A029758 Number of AVL trees of height n.
  * @author Sean A. Irvine
  */
 public class A029758 implements Sequence {

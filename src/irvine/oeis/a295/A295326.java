@@ -5,7 +5,7 @@ package irvine.oeis.a295;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A295326 Numbers k such that <code>(182*10^k + 43)/9</code> is prime.
+ * A295326 Numbers k such that (182*10^k + 43)/9 is prime.
  * @author Georg Fischer
  */
 public class A295326 extends PowerFactorPrimeSequence {

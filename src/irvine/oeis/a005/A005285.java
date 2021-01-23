@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005285 Number of permutations of <code>(1,...,n)</code> having <code>n-7</code> inversions <code>(n&gt;=7)</code>.
+ * A005285 Number of permutations of (1,...,n) having n-7 inversions (n&gt;=7).
  * @author Sean A. Irvine
  */
 public class A005285 implements Sequence {

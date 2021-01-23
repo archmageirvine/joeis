@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032246 <code>"DHK[ 5 ]" (bracelet</code>, identity, unlabeled, <code>5</code> parts) transform of 1,1,1,1,...
+ * A032246 "DHK[ 5 ]" (bracelet, identity, unlabeled, 5 parts) transform of 1,1,1,1,...
  * @author Georg Fischer
  */
 public class A032246 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140106 Number of noncongruent diagonals in a regular <code>n-gon</code>.
+ * A140106 Number of noncongruent diagonals in a regular n-gon.
  * @author Georg Fischer
  */
 public class A140106 extends GeneratingFunctionSequence {

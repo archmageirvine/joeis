@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069361 Number of <code>3 X n</code> binary arrays with a path of adjacent <code>1</code>'s from top row to bottom row.
+ * A069361 Number of 3 X n binary arrays with a path of adjacent 1's from top row to bottom row.
  * @author Georg Fischer
  */
 public class A069361 extends GeneratingFunctionSequence {

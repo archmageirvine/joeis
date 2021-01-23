@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007286 E.g.f.: (sin <code>x +</code> cos <code>2x) /</code> cos <code>3x</code>.
+ * A007286 E.g.f.: (sin x + cos 2x) / cos 3x.
  * @author Sean A. Irvine
  */
 public class A007286 implements Sequence {

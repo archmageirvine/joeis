@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020694 Numbers of form <code>9 x^2 + 10 y^2</code>.
+ * A020694 Numbers of form 9 x^2 + 10 y^2.
  * @author Sean A. Irvine
  */
 public class A020694 implements Sequence {

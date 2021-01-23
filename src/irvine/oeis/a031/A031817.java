@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.a013.A013648;
 
 /**
- * A031817 Period of continued fraction for <code>sqrt(n)</code> contains exactly 49 ones.
+ * A031817 Period of continued fraction for sqrt(n) contains exactly 49 ones.
  * @author Sean A. Irvine
  */
 public class A031817 extends A013648 {

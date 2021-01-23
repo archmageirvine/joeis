@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002733 Numbers n such that <code>(n^2 + 1)/10</code> is prime.
+ * A002733 Numbers n such that (n^2 + 1)/10 is prime.
  * @author Sean A. Irvine
  */
 public class A002733 implements Sequence {

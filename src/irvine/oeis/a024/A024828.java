@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024828 <code>a(n) =</code> least m such that if r and s in <code>{h/(1 + h^2): h = 1,2,...,n}</code> satisfy r <code>&lt</code>; s, then r <code>&lt; k/m &lt</code>; s for some integer k.
+ * A024828 a(n) = least m such that if r and s in {h/(1 + h^2): h = 1,2,...,n} satisfy r &lt; s, then r &lt; k/m &lt; s for some integer k.
  * @author Sean A. Irvine
  */
 public class A024828 implements Sequence {

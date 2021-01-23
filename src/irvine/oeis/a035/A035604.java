@@ -4,7 +4,7 @@ package irvine.oeis.a035;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A035604 Number of points of <code>L1</code> norm 10 in cubic lattice <code>Z^n</code>.
+ * A035604 Number of points of L1 norm 10 in cubic lattice Z^n.
  * @author Georg Fischer
  */
 public class A035604 extends GeneratingFunctionSequence {

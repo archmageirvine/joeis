@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180254 E.g.f. <code>A(x)</code> satisfies: <code>A'(x) = (1 - sqrt(1-4*A(x))) / (2*A(x))</code>.
+ * A180254 E.g.f. A(x) satisfies: A'(x) = (1 - sqrt(1-4*A(x))) / (2*A(x)).
  * @author Georg Fischer
  */
 public class A180254 extends HolonomicRecurrence {

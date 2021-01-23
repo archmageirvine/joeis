@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A080143 <code>a(n) = F(3)*F(n)*F(n+1) + F(4)*F(n+1)^2 - F(4)</code> if n even, <code>F(3)*F(n)*F(n+1) + F(4)*F(n+1)^2</code> if n odd, where <code>F(n)</code> is the n-th Fibonacci number <code>(A000045)</code>.
+ * A080143 a(n) = F(3)*F(n)*F(n+1) + F(4)*F(n+1)^2 - F(4) if n even, F(3)*F(n)*F(n+1) + F(4)*F(n+1)^2 if n odd, where F(n) is the n-th Fibonacci number (A000045).
  * @author Georg Fischer
  */
 public class A080143 extends GeneratingFunctionSequence {

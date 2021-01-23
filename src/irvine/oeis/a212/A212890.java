@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212890 Number of <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code> and odd range.
+ * A212890 Number of (w,x,y,z) with all terms in {0,...,n} and odd range.
  * @author Georg Fischer
  */
 public class A212890 extends HolonomicRecurrence {

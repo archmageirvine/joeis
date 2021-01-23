@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129763 <code>a(n) = Sum_{k=1..n} binomial(n+k-1, n)^2 / n</code>.
+ * A129763 a(n) = Sum_{k=1..n} binomial(n+k-1, n)^2 / n.
  * @author Georg Fischer
  */
 public class A129763 extends HolonomicRecurrence {

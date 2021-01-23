@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029930 If <code>2n =</code> Sum <code>2^e_i, a(n) =</code> Product <code>2^e_i</code>.
+ * A029930 If 2n = Sum 2^e_i, a(n) = Product 2^e_i.
  * @author Sean A. Irvine
  */
 public class A029930 implements Sequence {

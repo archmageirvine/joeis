@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059995 Drop final digit of <code>n</code>.
+ * A059995 Drop final digit of n.
  * @author Sean A. Irvine
  */
 public class A059995 extends LinearRecurrence {

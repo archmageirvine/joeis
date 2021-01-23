@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A053581 First differences of the Poly-Bernoulli numbers <code>B_n^(k)</code> with <code>k=-2 (A027649)</code>.
+ * A053581 First differences of the Poly-Bernoulli numbers B_n^(k) with k=-2 (A027649).
  * @author Georg Fischer
  */
 public class A053581 extends GeneratingFunctionSequence {

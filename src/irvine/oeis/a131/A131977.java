@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A131977 Analog of <code>A131976</code> for the icosahedron.
+ * A131977 Analog of A131976 for the icosahedron.
  * @author Georg Fischer
  */
 public class A131977 extends FiniteSequence {

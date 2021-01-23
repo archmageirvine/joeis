@@ -5,7 +5,7 @@ package irvine.oeis.a319;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A319556 <code>a(n)</code> gives the alternating sum of length n, starting at n: <code>n - (n+1) + (n+2) - ... + (-1)^(n+1) * (2n-1)</code>.
+ * A319556 a(n) gives the alternating sum of length n, starting at n: n - (n+1) + (n+2) - ... + (-1)^(n+1) * (2n-1).
  * @author Georg Fischer
  */
 public class A319556 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020012 Nearest integer to <code>GAMMA(n+3/11)/GAMMA(3/11)</code>.
+ * A020012 Nearest integer to GAMMA(n+3/11)/GAMMA(3/11).
  * @author Sean A. Irvine
  */
 public class A020012 implements Sequence {

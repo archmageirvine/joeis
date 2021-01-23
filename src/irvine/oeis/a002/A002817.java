@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002817 Doubly triangular numbers: <code>a(n) = n*(n+1)*(n^2+n+2)/8</code>.
+ * A002817 Doubly triangular numbers: a(n) = n*(n+1)*(n^2+n+2)/8.
  * @author Sean A. Irvine
  */
 public class A002817 implements Sequence {

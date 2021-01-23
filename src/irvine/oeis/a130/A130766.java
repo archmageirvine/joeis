@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130766 <code>3n+2</code> sandwiched by tripled <code>3n+1 </code>.
+ * A130766 3n+2 sandwiched by tripled 3n+1 .
  * @author Georg Fischer
  */
 public class A130766 extends GeneratingFunctionSequence {

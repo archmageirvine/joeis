@@ -28,6 +28,9 @@ public class IntersectionSequence implements Sequence {
   @Override
   public Z next() {
     while (true) {
+      if (mNextA == null || mNextB == null) {
+        return null; // Handle finite sequences
+      }
       if (mNextA.equals(mNextB)) {
         mNextB = mSeqB.next();
         return mNextA;

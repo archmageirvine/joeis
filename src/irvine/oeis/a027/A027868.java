@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027868 Number of trailing zeros in <code>n!</code>; highest power of 5 dividing <code>n!</code>.
+ * A027868 Number of trailing zeros in n!; highest power of 5 dividing n!.
  * @author Sean A. Irvine
  */
 public class A027868 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A002445 Denominators of Bernoulli numbers <code>B_{2n}</code>.
+ * A002445 Denominators of Bernoulli numbers B_{2n}.
  * @author Sean A. Irvine
  */
 public class A002445 implements Sequence {

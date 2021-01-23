@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061726 If n-th triangular number <code>(A000217(n))</code> is odd, multiply it by 4; if even, multiply it by 5.
+ * A061726 If n-th triangular number (A000217(n)) is odd, multiply it by 4; if even, multiply it by 5.
  * @author Georg Fischer
  */
 public class A061726 extends GeneratingFunctionSequence {

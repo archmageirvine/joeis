@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A023556 Convolution of <code>A023531</code> and <code>A023532</code>.
+ * A023556 Convolution of A023531 and A023532.
  * @author Sean A. Irvine
  */
 public class A023556 extends ConvolutionSequence {

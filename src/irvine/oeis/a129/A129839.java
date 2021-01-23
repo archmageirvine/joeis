@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129839 <code>a(n) = Stirling_2(n,3)^2</code>.
+ * A129839 a(n) = Stirling_2(n,3)^2.
  * @author Georg Fischer
  */
 public class A129839 extends GeneratingFunctionSequence {

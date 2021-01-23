@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328881 <code>a(n+3) = 2^n - a(n), a(0)=a(2)=1, a(1)=0</code> for <code>n &gt;= 0</code>.
+ * A328881 a(n+3) = 2^n - a(n), a(0)=a(2)=1, a(1)=0 for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A328881 extends HolonomicRecurrence {

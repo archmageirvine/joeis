@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259486 <code>a(n) = 3*n^2 - 3*n + 1 + 6*floor((n-1)*(n-2)/6)</code>.
+ * A259486 a(n) = 3*n^2 - 3*n + 1 + 6*floor((n-1)*(n-2)/6).
  * @author Sean A. Irvine
  */
 public class A259486 extends LinearRecurrence {

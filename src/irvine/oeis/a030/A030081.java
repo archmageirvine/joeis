@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030081 <code>a(n) = prime^2</code> and digits of prime appear in <code>a(n)</code>.
+ * A030081 a(n) = prime^2 and digits of prime appear in a(n).
  * @author Sean A. Irvine
  */
 public class A030081 extends A030079 {

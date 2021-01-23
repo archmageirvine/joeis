@@ -4,7 +4,7 @@ package irvine.oeis.a142;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A142590 First trisection of <code>A061037</code> (Balmer line series of the hydrogen atom).
+ * A142590 First trisection of A061037 (Balmer line series of the hydrogen atom).
  * @author Georg Fischer
  */
 public class A142590 extends GeneratingFunctionSequence {

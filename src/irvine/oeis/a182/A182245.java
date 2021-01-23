@@ -5,7 +5,7 @@ package irvine.oeis.a182;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A182245 Integers n such that either <code>(a) A186053(n)</code> does not equal <code>A002024(n) + A182298(A025581(n))</code> or <code>(b) A182298(n)</code> does not equal <code>1 + A002024(n) + A186053(A025581(n))</code>.
+ * A182245 Integers n such that either (a) A186053(n) does not equal A002024(n) + A182298(A025581(n)) or (b) A182298(n) does not equal 1 + A002024(n) + A186053(A025581(n)).
  * @author Georg Fischer
  */
 public class A182245 extends FiniteSequence {

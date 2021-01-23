@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A220932 Equals two maps: number of <code>n X 3</code> binary arrays indicating the locations of corresponding elements equal to exactly two of their horizontal and antidiagonal neighbors in a random <code>0..2 n X 3</code> array.
+ * A220932 Equals two maps: number of n X 3 binary arrays indicating the locations of corresponding elements equal to exactly two of their horizontal and antidiagonal neighbors in a random 0..2 n X 3 array.
  * @author Georg Fischer
  */
 public class A220932 extends GeneratingFunctionSequence {

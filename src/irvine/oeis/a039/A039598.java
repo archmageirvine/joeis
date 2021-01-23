@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039598 Triangle formed from odd-numbered columns of triangle of expansions of powers of x in terms of Chebyshev polynomials <code>U_n(x)</code>. Sometimes called Catalan's triangle.
+ * A039598 Triangle formed from odd-numbered columns of triangle of expansions of powers of x in terms of Chebyshev polynomials U_n(x). Sometimes called Catalan's triangle.
  * @author Sean A. Irvine
  */
 public class A039598 implements Sequence {

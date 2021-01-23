@@ -6,7 +6,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143045 G.f.: <code>A(x) = x + A(-x)^2</code>.
+ * A143045 G.f.: A(x) = x + A(-x)^2.
  * @author Georg Fischer
  */
 public class A143045 extends HolonomicRecurrence {

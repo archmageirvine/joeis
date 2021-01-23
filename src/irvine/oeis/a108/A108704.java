@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108704 Number of partitions of <code>112233...nn</code> into n pairs.
+ * A108704 Number of partitions of 112233...nn into n pairs.
  * @author Georg Fischer
  */
 public class A108704 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A217631 Number of <code>nX2</code> arrays of the minimum value of corresponding elements and their horizontal and vertical neighbors in a random <code>0..1 nX2</code> array.
+ * A217631 Number of nX2 arrays of the minimum value of corresponding elements and their horizontal and vertical neighbors in a random 0..1 nX2 array.
  * @author Georg Fischer
  */
 public class A217631 extends GeneratingFunctionSequence {

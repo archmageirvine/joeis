@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012945 <code>cosh(tan(x)+sin(x))=1+4/2!*x^2+24/4!*x^4+438/6!*x^6+16072/8!*x^8..</code>.
+ * A012945 cosh(tan(x)+sin(x))=1+4/2!*x^2+24/4!*x^4+438/6!*x^6+16072/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012945 implements Sequence {

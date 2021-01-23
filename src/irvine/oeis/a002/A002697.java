@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002697 <code>a(n) = n*4^(n-1)</code>.
+ * A002697 a(n) = n*4^(n-1).
  * @author Sean A. Irvine
  */
 public class A002697 implements Sequence {

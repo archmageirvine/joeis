@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002334 Least positive integer x such that prime <code>A038873(n) = x^2 - 2y^2</code> for some <code>y</code>.
+ * A002334 Least positive integer x such that prime A038873(n) = x^2 - 2y^2 for some y.
  * @author Sean A. Irvine
  */
 public class A002334 implements Sequence {
@@ -27,7 +27,7 @@ public class A002334 implements Sequence {
           y = y.add(1);
           final Z x2 = mP.add(y.square().multiply2());
           final Z[] s = x2.sqrtAndRemainder();
-          if (Z.ZERO.equals(s[1])) {
+          if (s[1].isZero()) {
             return s[0];
           }
         }

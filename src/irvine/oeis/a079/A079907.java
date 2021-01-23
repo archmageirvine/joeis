@@ -5,13 +5,13 @@ package irvine.oeis.a079;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A079907 Numbers n such that <code>11*12^n -1</code> is prime.
+ * A079907 Numbers n such that 11*12^n -1 is prime.
  * @author Georg Fischer
  */
 public class A079907 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A079907() {
-    super(1, 1, 11, 12, -1, 0);
+    super(1, 1, 11, 12, -1);
   }
 }

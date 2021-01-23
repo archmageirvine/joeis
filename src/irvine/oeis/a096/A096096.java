@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A096096 <code>a(1) = 1, a(2) = 2, a(n+2) = a(n)#*#a(n+1)</code> where <code>#*#</code> stands for digit-wise product of <code>a(n)</code> and <code>a(n+1)</code>.
+ * A096096 a(1) = 1, a(2) = 2, a(n+2) = a(n)#*#a(n+1) where #*# stands for digit-wise product of a(n) and a(n+1).
  * @author Sean A. Irvine
  */
 public class A096096 implements Sequence {

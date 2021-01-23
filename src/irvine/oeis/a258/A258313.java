@@ -6,7 +6,7 @@ package irvine.oeis.a258;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A258313 G.f. <code>A(x)</code> satisfies: <code>A(x) = B(x)*C(x)</code> where <code>B(x) = 1 + x*A(x)*C(x)</code> and <code>C(x) = 1 + 2*x*A(x)*B(x)</code>.
+ * A258313 G.f. A(x) satisfies: A(x) = B(x)*C(x) where B(x) = 1 + x*A(x)*C(x) and C(x) = 1 + 2*x*A(x)*B(x).
  * @author Georg Fischer
  */
 public class A258313 extends HolonomicRecurrence {

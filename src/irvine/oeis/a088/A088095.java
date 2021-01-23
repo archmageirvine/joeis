@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A088095 <code>a(1) = 1, a(n) =</code> smallest number <code>== 1 mod (a(n-1))</code> and <code>&gt; 1</code> such that every concatenation <code>(n&gt;1)</code> is prime.
+ * A088095 a(1) = 1, a(n) = smallest number == 1 mod (a(n-1)) and &gt; 1 such that every concatenation (n&gt;1) is prime.
  * @author Georg Fischer
  */
 public class A088095 extends FiniteSequence {

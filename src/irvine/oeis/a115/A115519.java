@@ -6,7 +6,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115519 <code>n*(1+3*n+6*n^2)/2</code>.
+ * A115519 n*(1+3*n+6*n^2)/2.
  * @author Georg Fischer
  */
 public class A115519 extends HolonomicRecurrence {

@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050864 Numbers n such that <code>225*2^n-1</code> is prime.
+ * A050864 Numbers n such that 225*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050864 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050864() {
-    super(1, 1, 225, 2, -1, 0);
+    super(1, 1, 225, 2, -1);
   }
 }

@@ -8,7 +8,7 @@ import irvine.oeis.a026.A026118;
 import irvine.oeis.a026.A026298;
 
 /**
- * A030534 Number of polyhexes of class <code>PF2</code>.
+ * A030534 Number of polyhexes of class PF2.
  * @author Sean A. Irvine
  */
 public class A030534 implements Sequence {

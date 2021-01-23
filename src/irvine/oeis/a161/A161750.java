@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A161750 Numbers n such that the decimal digits of <code>123456789*n</code> are all distinct.
+ * A161750 Numbers n such that the decimal digits of 123456789*n are all distinct.
  * @author Georg Fischer
  */
 public class A161750 extends FiniteSequence {

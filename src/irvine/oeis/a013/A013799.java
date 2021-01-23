@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013799 <code>a(n) = 13^(4*n + 3)</code>.
+ * A013799 a(n) = 13^(4*n + 3).
  * @author Sean A. Irvine
  */
 public class A013799 implements Sequence {

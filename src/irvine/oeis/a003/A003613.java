@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A003613 Number of symmetries in planted <code>(1,4)</code> trees on <code>3n-1</code> vertices.
+ * A003613 Number of symmetries in planted (1,4) trees on 3n-1 vertices.
  * @author Sean A. Irvine
  */
 public class A003613 implements Sequence {
@@ -145,14 +145,14 @@ public class A003613 implements Sequence {
           found = true;
           res.remove(k);
           final Z mul = t.right().add(a.right());
-          if (!Z.ZERO.equals(mul)) {
+          if (!mul.isZero()) {
             final Triple<Z> b = new Triple<>(a.left(), a.mid(), mul);
             res.add(b);
           }
           break;
         }
       }
-      if (!found && !Z.ZERO.equals(t.right())) {
+      if (!found && !t.right().isZero()) {
         res.add(t);
       }
     }

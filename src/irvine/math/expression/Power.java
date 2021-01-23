@@ -8,7 +8,7 @@ import irvine.math.z.Binomial;
 
 /**
  * An expression for powers.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Power extends AbstractLeftRightExpression {
 

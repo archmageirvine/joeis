@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165187 <code>n^3*(n+1)^2*(n+2)/12</code>.
+ * A165187 n^3*(n+1)^2*(n+2)/12.
  * @author Sean A. Irvine
  */
 public class A165187 extends LinearRecurrence {

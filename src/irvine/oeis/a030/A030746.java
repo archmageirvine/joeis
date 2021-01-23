@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030746 Numbers n such that <code>s(n)=4</code>, where <code>s=A030737</code>.
+ * A030746 Numbers n such that s(n)=4, where s=A030737.
  * @author Sean A. Irvine
  */
 public class A030746 extends A030737 {

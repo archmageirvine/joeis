@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025563 <code>a(n) = (1/1 + 1/(n-1) + ... + 1/C(n-[ n/2 ],[ n/2 ]))*L</code>, where L <code>= LCM{1, n-1</code>, ..., <code>C(n-[ n/2 ],[ n/2 ])}</code>.
+ * A025563 a(n) = (1/1 + 1/(n-1) + ... + 1/C(n-[ n/2 ],[ n/2 ]))*L, where L = LCM{1, n-1, ..., C(n-[ n/2 ],[ n/2 ])}.
  * @author Sean A. Irvine
  */
 public class A025563 implements Sequence {

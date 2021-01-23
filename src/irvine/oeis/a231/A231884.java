@@ -4,7 +4,7 @@ package irvine.oeis.a231;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A231884 Number of maximal 2-independent sets in the <code>3-dimensional (2, 2, n)</code> grid graph.
+ * A231884 Number of maximal 2-independent sets in the 3-dimensional (2, 2, n) grid graph.
  * @author Georg Fischer
  */
 public class A231884 extends GeneratingFunctionSequence {

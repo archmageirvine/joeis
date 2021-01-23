@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006469 Number of rooted <code>genus-1</code> maps with 2 faces, n vertices and no isthmuses.
+ * A006469 Number of rooted genus-1 maps with 2 faces, n vertices and no isthmuses.
  * @author Sean A. Irvine
  */
 public class A006469 extends LinearRecurrence {

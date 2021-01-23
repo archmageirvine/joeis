@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A171891 1 and all numbers <code>&gt;= 10</code>.
+ * A171891 1 and all numbers &gt;= 10.
  * @author Georg Fischer
  */
 public class A171891 extends GeneratingFunctionSequence {

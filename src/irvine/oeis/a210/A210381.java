@@ -7,7 +7,7 @@ package irvine.oeis.a210;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A210381 Triangle by rows, derived from the beheaded Pascal's triangle, <code>A074909</code>.
+ * A210381 Triangle by rows, derived from the beheaded Pascal's triangle, A074909.
  * @author Georg Fischer
  */
 public class A210381 extends GeneratingFunctionTriangle {

@@ -5,7 +5,7 @@ package irvine.oeis.a187;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A187468 Sum of the squares modulo <code>2^n</code> of the odd numbers less than <code>2^n</code>.
+ * A187468 Sum of the squares modulo 2^n of the odd numbers less than 2^n.
  * @author Georg Fischer
  */
 public class A187468 extends HolonomicRecurrence {

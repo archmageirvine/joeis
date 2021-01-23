@@ -6,7 +6,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048340 <code>a(n)</code> in base 16 is a repdigit.
+ * A048340 a(n) in base 16 is a repdigit.
  * @author Georg Fischer
  */
 public class A048340 extends HolonomicRecurrence {

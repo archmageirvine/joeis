@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214483 Degrees of irreducible representations of simple Chevalley group <code>G2(3)</code>.
+ * A214483 Degrees of irreducible representations of simple Chevalley group G2(3).
  * @author Georg Fischer
  */
 public class A214483 extends FiniteSequence {

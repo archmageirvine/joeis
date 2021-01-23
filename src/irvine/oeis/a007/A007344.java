@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007344 Number of homogeneous primitive partition identities of degree 6 with largest part <code>n</code>.
+ * A007344 Number of homogeneous primitive partition identities of degree 6 with largest part n.
  * @author Sean A. Irvine
  */
 public class A007344 extends A007343 {

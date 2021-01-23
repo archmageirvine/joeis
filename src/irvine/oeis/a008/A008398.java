@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008398 Crystal ball sequence for <code>E_7</code> lattice.
+ * A008398 Crystal ball sequence for E_7 lattice.
  * @author Sean A. Irvine
  */
 public class A008398 extends CoordinationSequence {

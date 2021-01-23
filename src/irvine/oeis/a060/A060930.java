@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060930 Third convolution of Lucas numbers <code>A000032(n+1), n &gt;= 0</code>.
+ * A060930 Third convolution of Lucas numbers A000032(n+1), n &gt;= 0.
  * @author Georg Fischer
  */
 public class A060930 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237616 <code>a(n) = n*(n + 1)*(5*n - 4)/2</code>.
+ * A237616 a(n) = n*(n + 1)*(5*n - 4)/2.
  * @author Sean A. Irvine
  */
 public class A237616 extends LinearRecurrence {

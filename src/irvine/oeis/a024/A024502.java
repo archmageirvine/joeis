@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024502 <code>a(n) = floor(C(2n,n)/2^n)</code>.
+ * A024502 a(n) = floor(C(2n,n)/2^n).
  * @author Sean A. Irvine
  */
 public class A024502 implements Sequence {

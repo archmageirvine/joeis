@@ -5,13 +5,13 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032360 Numbers k such that <code>21*2^k+1</code> is prime.
+ * A032360 Numbers k such that 21*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A032360 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A032360() {
-    super(1, 1, 21, 2, +1, 0);
+    super(1, 1, 21, 2, 1);
   }
 }

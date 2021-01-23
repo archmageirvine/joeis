@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012862 Numerators of coefficients in Taylor series expansion of <code>arccosh(cosec(x)*arctanh(x))</code>.
+ * A012862 Numerators of coefficients in Taylor series expansion of arccosh(cosec(x)*arctanh(x)).
  * @author Sean A. Irvine
  */
 public class A012862 implements Sequence {

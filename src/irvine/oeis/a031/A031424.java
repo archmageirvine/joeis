@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000037;
 
 /**
- * A031424 Least term in period of continued fraction for <code>sqrt(n)</code>, as n runs through the nonsquares <code>(A000037)</code>.
+ * A031424 Least term in period of continued fraction for sqrt(n), as n runs through the nonsquares (A000037).
  * @author Sean A. Irvine
  */
 public class A031424 extends A000037 {

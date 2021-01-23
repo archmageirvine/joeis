@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144433 Multiples of 8 interleaved with a sequence of odd numbers.
+ * A144433 Multiples of 8 interleaved with the sequence of odd numbers &gt;= 3.
  * @author Georg Fischer
  */
 public class A144433 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008905 Leading digit of <code>n!</code>.
+ * A008905 Leading digit of n!.
  * @author Sean A. Irvine
  */
 public class A008905 implements Sequence {
@@ -17,7 +17,7 @@ public class A008905 implements Sequence {
     if (++mN > 1) {
       mF = mF.multiply(mN);
       Z[] qr;
-      while (Z.ZERO.equals((qr = mF.divideAndRemainder(Z.TEN))[1])) {
+      while ((qr = mF.divideAndRemainder(Z.TEN))[1].isZero()) {
         mF = qr[0];
       }
     }

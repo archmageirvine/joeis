@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005964 Number of trivalent connected (or cubic) planar graphs with <code>2n</code> nodes.
+ * A005964 Number of trivalent connected (or cubic) planar graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A005964 implements Sequence, GraphProcessor {
@@ -20,7 +20,7 @@ public class A005964 implements Sequence, GraphProcessor {
   private long mPlanarCount = 0;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     ++mGenCount;
     if (graph.isPlanar()) {
       ++mPlanarCount;

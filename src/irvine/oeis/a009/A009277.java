@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009277 E.g.f. <code>exp(tanh(x)^2)</code> (even powers only).
+ * A009277 E.g.f. exp(tanh(x)^2) (even powers only).
  * @author Sean A. Irvine
  */
 public class A009277 implements Sequence {

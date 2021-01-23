@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A104786 <code>a(n) =</code> least member of <code>A047841</code> with n digits, or 0 if no such number exists.
+ * A104786 a(n) = least member of A047841 with n digits, or 0 if no such number exists.
  * @author Georg Fischer
  */
 public class A104786 extends FiniteSequence {

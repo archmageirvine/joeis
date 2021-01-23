@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.math.z.Z;
 
 /**
- * A028680 Pseudo Galois numbers for <code>d=18</code>.
+ * A028680 Pseudo Galois numbers for d=18.
  * @author Sean A. Irvine
  */
 public class A028680 extends A028665 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001613 Delete all odd digits from <code>n</code>.
+ * A001613 Delete all odd digits from n.
  * @author Sean A. Irvine
  */
 public class A001613 implements Sequence {

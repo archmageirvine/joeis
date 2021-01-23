@@ -7,7 +7,7 @@ package irvine.oeis.a104;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A104402 Matrix inverse of triangle <code>A091491</code>, read by rows.
+ * A104402 Matrix inverse of triangle A091491, read by rows.
  * @author Georg Fischer
  */
 public class A104402 extends GeneratingFunctionTriangle {

@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024564 <code>a(n) = [ 1/{n*sqrt(7)} ]</code>, where <code>{x} := x - [ x ]</code>.
+ * A024564 a(n) = [ 1/{n*sqrt(7)} ], where {x} := x - [ x ].
  * @author Sean A. Irvine
  */
 public class A024564 implements Sequence {
 
-  private static final CR SQRT7 = CR.valueOf(7).sqrt();
+  private static final CR SQRT7 = CR.SEVEN.sqrt();
   private long mN = 0;
 
   @Override

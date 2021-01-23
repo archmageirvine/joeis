@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127985 <code>a(n) = floor(2^n*(n/3 + 4/9))</code>.
+ * A127985 a(n) = floor(2^n*(n/3 + 4/9)).
  * @author Sean A. Irvine
  */
 public class A127985 extends LinearRecurrence {

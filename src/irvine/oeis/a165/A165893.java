@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A165893 Numbers n with property that <code>n(n+2)(n+4)</code> is a triangular number.
+ * A165893 Numbers n with property that n(n+2)(n+4) is a triangular number.
  * @author Georg Fischer
  */
 public class A165893 extends FiniteSequence {

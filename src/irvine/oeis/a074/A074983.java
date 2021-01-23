@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A074983 Successive factors of the Fibonacci word <code>A003842</code>.
+ * A074983 Successive factors of the Fibonacci word A003842.
  * @author Sean A. Irvine
  */
 public class A074983 implements Sequence {

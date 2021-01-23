@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129762 Sum of all elements of <code>n X n X n</code> cubic array <code>M[i,j,k] = Fibonacci[i+j+k-2]</code>.
+ * A129762 Sum of all elements of n X n X n cubic array M[i,j,k] = Fibonacci[i+j+k-2].
  * @author Sean A. Irvine
  */
 public class A129762 extends LinearRecurrence {

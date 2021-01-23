@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A001898 Denominators of Bernoulli polynomials <code>B(n)(x)</code>.
+ * A001898 Denominators of Bernoulli polynomials B(n)(x).
  * @author Sean A. Irvine
  */
 public class A001898 implements Sequence {

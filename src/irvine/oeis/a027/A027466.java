@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027466 Triangle whose <code>(i,j)-th</code> entry is <code>binomial(i,j)*7^(i-j)</code>.
+ * A027466 Triangle whose (i,j)-th entry is binomial(i,j)*7^(i-j).
  * @author Sean A. Irvine
  */
 public class A027466 implements Sequence {

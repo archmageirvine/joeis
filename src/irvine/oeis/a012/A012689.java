@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012689 <code>arctan(tanh(x)*cos(x))=x-7/3!*x^3+165/5!*x^5-10827/7!*x^7..</code>.
+ * A012689 arctan(tanh(x)*cos(x))=x-7/3!*x^3+165/5!*x^5-10827/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A012689 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a028.A028415;
 
 /**
- * A048049 Denominator of <code>Sum_{k=1..n} 1/phi(k)</code>.
+ * A048049 Denominator of Sum_{k=1..n} 1/phi(k).
  * @author Sean A. Irvine
  */
 public class A048049 extends A028415 {

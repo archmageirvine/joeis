@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A125372 Number of <code>base-9</code> circular n-digit numbers with adjacent digits differing by 5 or less.
+ * A125372 Number of base-9 circular n-digit numbers with adjacent digits differing by 5 or less.
  * @author Georg Fischer
  */
 public class A125372 extends GeneratingFunctionSequence {

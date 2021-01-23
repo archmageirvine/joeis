@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A299017 Intersection of <code>A264041</code> and <code>A000217</code>.
+ * A299017 Intersection of A264041 and A000217.
  * @author Georg Fischer
  */
 public class A299017 extends GeneratingFunctionSequence {

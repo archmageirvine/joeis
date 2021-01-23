@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143402 Expansion of <code>x^k/Product_{t=k..2k} (1-tx)</code> for <code>k=7</code>.
+ * A143402 Expansion of x^k/Product_{t=k..2k} (1-tx) for k=7.
  * @author Georg Fischer
  */
 public class A143402 extends GeneratingFunctionSequence {

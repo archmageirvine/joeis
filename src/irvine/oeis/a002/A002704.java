@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002704 Sets with a congruence property.
+ * A002704 Number of sets with a congruence property.
  * @author Sean A. Irvine
  */
 public class A002704 extends MemoryFunctionInt3<Z> implements Sequence {

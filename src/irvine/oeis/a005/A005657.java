@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005657 <code>a(n) = floor( tan(n)^2 )</code>.
+ * A005657 a(n) = floor( tan(n)^2 ).
  * @author Sean A. Irvine
  */
 public class A005657 implements Sequence {

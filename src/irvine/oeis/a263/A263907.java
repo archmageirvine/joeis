@@ -4,7 +4,7 @@ package irvine.oeis.a263;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A263907 Number of <code>(2n+2) X (2+2) 0..1</code> arrays with each row and column modulo 3 equal to 1, read as a binary number with top and left being the most significant bits.
+ * A263907 Number of (2n+2) X (2+2) 0..1 arrays with each row and column modulo 3 equal to 1, read as a binary number with top and left being the most significant bits.
  * @author Georg Fischer
  */
 public class A263907 extends GeneratingFunctionSequence {

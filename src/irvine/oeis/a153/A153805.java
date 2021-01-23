@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A153805 Decimal expansion of <code>3-e</code>.
+ * A153805 Decimal expansion of 3-e.
  * @author Georg Fischer
  */
 public class A153805 extends DecimalExpansionSequence {

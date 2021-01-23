@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081143 5th binomial transform of <code>(0,0,0,1,0,0,0,0,......)</code>.
+ * A081143 5th binomial transform of (0,0,0,1,0,0,0,0,......).
  * @author Sean A. Irvine
  */
 public class A081143 extends LinearRecurrence {

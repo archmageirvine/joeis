@@ -6,7 +6,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329707 Number of placements of zero or more dominoes on a <code>2 X n</code> grid where no two empty squares are horizontally adjacent.
+ * A329707 Number of placements of zero or more dominoes on a 2 X n grid where no two empty squares are horizontally adjacent.
  * @author Georg Fischer
  */
 public class A329707 extends HolonomicRecurrence {

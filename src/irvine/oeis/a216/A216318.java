@@ -6,7 +6,7 @@ package irvine.oeis.a216;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A216318 Number of peaks in all Dyck n-paths after changing each valley to a peak by the transform DU <code>-&gt; UD</code>.
+ * A216318 Number of peaks in all Dyck n-paths after changing each valley to a peak by the transform DU -&gt; UD.
  * @author Georg Fischer
  */
 public class A216318 extends HolonomicRecurrence {

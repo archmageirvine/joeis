@@ -5,7 +5,7 @@ package irvine.oeis.a063;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A063914 Odd numbers interlaced with numbers <code>3m+2</code>.
+ * A063914 Odd numbers interlaced with numbers 3m+2.
  * @author Georg Fischer
  */
 public class A063914 extends HolonomicRecurrence {

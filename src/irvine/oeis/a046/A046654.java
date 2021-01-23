@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046654 Nearest integer to <code>Sum_{k=1..n} log(k) = log(n!)</code>.
+ * A046654 Nearest integer to Sum_{k=1..n} log(k) = log(n!).
  * @author Sean A. Irvine
  */
 public class A046654 implements Sequence {

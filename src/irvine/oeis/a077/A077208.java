@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A077208 Rearrangement of squarefree numbers such that <code>a(k)</code> begins with the end of <code>a(k-1)</code>.
+ * A077208 Rearrangement of squarefree numbers such that a(k) begins with the end of a(k-1).
  * @author Sean A. Irvine
  */
 public class A077208 implements Sequence {

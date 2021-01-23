@@ -9,7 +9,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.q.Q;
 
 /**
- * A002484 Number of m&#233;nage permutations.
+ * A002484 Number of m\u00e9nage permutations.
  * @author Sean A. Irvine
  */
 public class A002484 implements Sequence {

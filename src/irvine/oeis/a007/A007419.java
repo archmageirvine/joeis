@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007419 Largest number not the sum of distinct <code>n-th-order</code> polygonal numbers.
+ * A007419 Largest number not the sum of distinct n-th-order polygonal numbers.
  * @author Sean A. Irvine
  */
 public class A007419 implements Sequence {

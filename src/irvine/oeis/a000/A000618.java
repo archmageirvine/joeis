@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000618 Number of nondegenerate Boolean functions of n variables: For <code>n &gt; 0, a(n) = A000616(n) - A000616(n-1)</code>.
+ * A000618 Number of nondegenerate Boolean functions of n variables: For n &gt; 0, a(n) = A000616(n) - A000616(n-1).
  * @author Sean A. Irvine
  */
 public class A000618 extends A000616 {

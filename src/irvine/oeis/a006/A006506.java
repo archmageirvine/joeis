@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006506 Number of <code>n X n</code> binary matrices with no 2 adjacent <code>1</code>'s, or number of configurations of non-attacking princes on an <code>n X n</code> board, where a "prince" attacks the four adjacent (non-diagonal) squares. Also number of independent vertex sets in an <code>n X n</code> grid.
+ * A006506 Number of n X n binary matrices with no 2 adjacent 1's, or number of configurations of non-attacking princes on an n X n board, where a "prince" attacks the four adjacent (non-diagonal) squares. Also number of independent vertex sets in an n X n grid.
  * @author Sean A. Irvine
  */
 public class A006506 implements Sequence {
@@ -38,7 +38,7 @@ public class A006506 implements Sequence {
       Arrays.fill(w, Z.ZERO);
       for (int j = 0; j < l; ++j) {
         for (int k = 0; k < l; ++k) {
-          if (p[j].and(p[k]).equals(Z.ZERO)) {
+          if (p[j].and(p[k]).isZero()) {
             w[j] = w[j].add(v[k]);
           }
         }

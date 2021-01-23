@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321195 Minimum number of monochromatic Schur triples over all 2-colorings of <code>[n]</code>.
+ * A321195 Minimum number of monochromatic Schur triples over all 2-colorings of [n].
  * @author Georg Fischer
  */
 public class A321195 extends GeneratingFunctionSequence {

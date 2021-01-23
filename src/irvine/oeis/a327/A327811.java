@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A327811 Numbers obtained from cyclically permuting the <code>base-7</code> digits of 13143449029 and converting back to decimal.
+ * A327811 Numbers obtained from cyclically permuting the base-7 digits of 13143449029 and converting back to decimal.
  * @author Georg Fischer
  */
 public class A327811 extends FiniteSequence {

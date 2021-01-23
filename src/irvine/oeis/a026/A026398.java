@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026398 <code>a(n) =</code> greatest k such that <code>s(j) &gt; 0</code> for all j <code>&lt</code>; k at end of stage n in forming <code>A026400</code>.
+ * A026398 a(n) = greatest k such that s(j) &gt; 0 for all j &lt; k at end of stage n in forming A026400.
  * @author Sean A. Irvine
  */
 public class A026398 extends A026400 {

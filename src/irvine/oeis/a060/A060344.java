@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060344 For <code>n &gt;= 2</code>, let <code>N_n</code> denote the set of all unipotent upper-triangular real <code>n X n</code> matrices A such that for every <code>k=1,2,...,n-1</code> the minor of A with rows <code>1,2,...,k</code> and columns <code>n-k+1,...,n</code> is nonzero. <code>a(n)</code> is the number of connected components of <code>N_n</code>.
+ * A060344 For n &gt;= 2, let N_n denote the set of all unipotent upper-triangular real n X n matrices A such that for every k=1,2,...,n-1 the minor of A with rows 1,2,...,k and columns n-k+1,...,n is nonzero. a(n) is the number of connected components of N_n.
  * @author Georg Fischer
  */
 public class A060344 extends GeneratingFunctionSequence {

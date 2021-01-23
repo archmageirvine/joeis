@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102620 Number of legal Go positions on a <code>1 X n</code> board (for which <code>3^n</code> is a trivial upper bound).
+ * A102620 Number of legal Go positions on a 1 X n board (for which 3^n is a trivial upper bound).
  * @author Sean A. Irvine
  */
 public class A102620 extends LinearRecurrence {

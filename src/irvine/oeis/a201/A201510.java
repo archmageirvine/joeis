@@ -6,7 +6,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201510 Number of ways to place 9 nonattacking wazirs on an <code>n X n</code> board.
+ * A201510 Number of ways to place 9 nonattacking wazirs on an n X n board.
  * @author Georg Fischer
  */
 public class A201510 extends GeneratingFunctionSequence {

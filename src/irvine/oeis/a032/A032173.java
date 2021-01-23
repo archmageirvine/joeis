@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032173 Sequence <code>(a(n): n &gt;= 1)</code> that shifts left 2 places under the "CHK" <code>(necklace</code>, identity, unlabeled) transform and has initial terms <code>a(1) = a(2) = 1</code>.
+ * A032173 Sequence (a(n): n &gt;= 1) that shifts left 2 places under the "CHK" (necklace, identity, unlabeled) transform and has initial terms a(1) = a(2) = 1.
  * @author Sean A. Irvine
  */
 public class A032173 implements Sequence {

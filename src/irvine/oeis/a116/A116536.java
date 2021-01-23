@@ -22,7 +22,7 @@ public class A116536 implements Sequence {
       mProd = mProd.multiply(mP);
       mSum = mSum.add(mP);
       final Z[] qr = mProd.divideAndRemainder(mSum);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return qr[0];
       }
     }

@@ -6,7 +6,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204471 Number of 7-element subsets that can be chosen from <code>{1,2,...,14*n+7}</code> having element sum <code>49*n+28</code>.
+ * A204471 Number of 7-element subsets that can be chosen from {1,2,...,14*n+7} having element sum 49*n+28.
  * @author Georg Fischer
  */
 public class A204471 extends GeneratingFunctionSequence {

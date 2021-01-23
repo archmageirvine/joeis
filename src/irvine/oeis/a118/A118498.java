@@ -6,7 +6,7 @@ package irvine.oeis.a118;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A118498 <code>a(n) = 11*n^20 + 11*n^2 + 152821</code>.
+ * A118498 a(n) = 11*n^20 + 11*n^2 + 152821.
  * @author Georg Fischer
  */
 public class A118498 extends HolonomicRecurrence {

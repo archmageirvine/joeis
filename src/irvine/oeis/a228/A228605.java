@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228605 The Merrifield-Simmons index of the meta-polyphenylene chain of length <code>n</code>.
+ * A228605 The Merrifield-Simmons index of the meta-polyphenylene chain of length n.
  * @author Sean A. Irvine
  */
 public class A228605 extends LinearRecurrence {

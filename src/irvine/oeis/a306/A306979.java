@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306979 <code>a(1) = 0; a(n)</code> is the sum of powers of 2 where the exponents are the digits of <code>a(n-1)</code>.
+ * A306979 a(1) = 0; a(n) is the sum of powers of 2 where the exponents are the digits of a(n-1).
  * @author Georg Fischer
  */
 public class A306979 extends HolonomicRecurrence {

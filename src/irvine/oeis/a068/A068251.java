@@ -6,7 +6,7 @@ package irvine.oeis.a068;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A068251 1/24 the number of colorings of a <code>4 X 4</code> octagonal array with n colors.
+ * A068251 1/24 the number of colorings of a 4 X 4 octagonal array with n colors.
  * @author Georg Fischer
  */
 public class A068251 extends HolonomicRecurrence {

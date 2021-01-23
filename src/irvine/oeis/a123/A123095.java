@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123095 Sum of first <code>n 11th</code> powers.
+ * A123095 Sum of first n 11th powers.
  * @author Sean A. Irvine
  */
 public class A123095 extends LinearRecurrence {

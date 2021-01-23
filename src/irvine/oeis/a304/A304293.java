@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304293 Number of points of a Koblitz curve E: <code>y^2 + x*y = x^3 + a*x^2 + 1</code> over a field with <code>2^n</code> elements.
+ * A304293 Number of points of a Koblitz curve E: y^2 + x*y = x^3 + a*x^2 + 1 over a field with 2^n elements.
  * @author Georg Fischer
  */
 public class A304293 extends GeneratingFunctionSequence {

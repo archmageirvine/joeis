@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011497 Decimal expansion of <code>78th</code> root of 78.
+ * A011497 Decimal expansion of 78th root of 78.
  * @author Sean A. Irvine
  */
 public class A011497 extends DecimalExpansionSequence {

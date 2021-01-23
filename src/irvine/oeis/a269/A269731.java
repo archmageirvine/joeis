@@ -5,7 +5,7 @@ package irvine.oeis.a269;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A269731 Dimensions of the 3-polytridendriform operad <code>TDendr_3</code>.
+ * A269731 Dimensions of the 3-polytridendriform operad TDendr_3.
  * @author Georg Fischer
  */
 public class A269731 extends HolonomicRecurrence {

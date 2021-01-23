@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A290075 Number of monomials in <code>c(n)</code> where <code>c(1) =</code> x, <code>c(2) =</code> y, <code>c(n+2) = c(n+1) + c(n)^2</code>.
+ * A290075 Number of monomials in c(n) where c(1) = x, c(2) = y, c(n+2) = c(n+1) + c(n)^2.
  * @author Georg Fischer
  */
 public class A290075 extends GeneratingFunctionSequence {

@@ -5,13 +5,13 @@ package irvine.oeis.a322;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A322915 Numbers n such that <code>301*2^n+1</code> is prime.
+ * A322915 Numbers n such that 301*2^n+1 is prime.
  * @author Georg Fischer
  */
 public class A322915 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A322915() {
-    super(1, 4, 301, 2, +1, 0);
+    super(1, 4, 301, 2, 1);
   }
 }

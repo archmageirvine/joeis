@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093144 Third binomial transform of <code>Pell(3*n)/Pell(3)</code>.
+ * A093144 Third binomial transform of Pell(3*n)/Pell(3).
  * @author Sean A. Irvine
  */
 public class A093144 extends LinearRecurrence {

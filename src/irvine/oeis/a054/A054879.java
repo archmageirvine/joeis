@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054879 Closed walks of length <code>2n</code> along the edges of a cube based at a vertex.
+ * A054879 Closed walks of length 2n along the edges of a cube based at a vertex.
  * @author Sean A. Irvine
  */
 public class A054879 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053128 Binomial coefficients <code>C(2*n-5,6)</code>.
+ * A053128 Binomial coefficients C(2*n-5,6).
  * @author Georg Fischer
  */
 public class A053128 extends HolonomicRecurrence {

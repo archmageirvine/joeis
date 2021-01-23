@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A006933 'Eban' numbers (the letter 'e' is <code>banned!)</code>.
+ * A006933 'Eban' numbers (the letter 'e' is banned!).
  * @author Sean A. Irvine
  */
 public class A006933 implements Sequence {

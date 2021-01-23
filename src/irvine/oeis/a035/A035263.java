@@ -5,7 +5,7 @@ package irvine.oeis.a035;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A035263 Trajectory of 1 under the morphism <code>0 -&gt; 11, 1 -&gt; 10</code>; parity of 2-adic valuation of <code>2n: a(n) = A000035(A001511(n))</code>.
+ * A035263 Trajectory of 1 under the morphism 0 -&gt; 11, 1 -&gt; 10; parity of 2-adic valuation of 2n: a(n) = A000035(A001511(n)).
  * @author Georg Fischer
  */
 public class A035263 extends MorphismSequence {

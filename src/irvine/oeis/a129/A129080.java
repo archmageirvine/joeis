@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129080 Palindromic complexity sequence based on <code>A095263</code>.
+ * A129080 Palindromic complexity sequence based on A095263.
  * @author Georg Fischer
  */
 public class A129080 extends LinearRecurrence {

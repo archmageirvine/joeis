@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301809 Group the natural numbers such that the first group is <code>(1)</code> then <code>(2),(3),(4,5),(6,7,8),..</code>. with the n-th group containing <code>F(n)</code> sequential terms where <code>F(n)</code> is the n-th Fibonacci number <code>(A000045(n))</code>. Sequence gives the sum of terms in the n-th group.
+ * A301809 Group the natural numbers such that the first group is (1) then (2),(3),(4,5),(6,7,8),... with the n-th group containing F(n) sequential terms where F(n) is the n-th Fibonacci number (A000045(n)). Sequence gives the sum of terms in the n-th group.
  * @author Georg Fischer
  */
 public class A301809 extends GeneratingFunctionSequence {

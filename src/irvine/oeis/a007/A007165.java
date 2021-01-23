@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007165 Number of P-graphs with <code>2n</code> edges.
+ * A007165 Number of P-graphs with 2n edges.
  * @author Sean A. Irvine
  */
 public class A007165 implements Sequence {

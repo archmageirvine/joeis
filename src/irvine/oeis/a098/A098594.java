@@ -1,26 +1,18 @@
 package irvine.oeis.a098;
 
-import irvine.factor.factor.CachedFactorizer;
-import irvine.factor.factor.Cheetah;
-import irvine.factor.factor.FactorDbFactorizer;
-import irvine.factor.factor.Factorizer;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Semiprime;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A098594 Numbers n such that <code>n!-1</code> and <code>n!+1</code> are both semiprime.
+ * A098594 Numbers n such that n!-1 and n!+1 are both semiprime.
  * @author Sean A. Irvine
  */
 public class A098594 implements Sequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private final Factorizer mCheetah = new Cheetah(false);
-  private final Semiprime mSemiprime = new Semiprime("irvine/oeis/a098/a098594.dat", true);
-  private final Factorizer mFactorizer = new CachedFactorizer(new FactorDbFactorizer());
-
-  private int mN = 0;
+  private int mN;
   private Z mF = Z.ONE;
 
   private A098594(final int start) {
@@ -35,29 +27,6 @@ public class A098594 implements Sequence {
     this(0);
   }
 
-  private int semiprimeStatus(final Z n) {
-    FactorSequence fs = new FactorSequence(n);
-    mCheetah.factor(fs);
-    final int sp = fs.isSemiprime();
-    if (sp != FactorSequence.UNKNOWN) {
-      return sp;
-    }
-    //System.out.println("survived cheetah: " + sp);
-    fs = new FactorSequence(n);
-    mFactorizer.factor(fs);
-    final int sp2 = fs.isSemiprime();
-    if (sp2 != FactorSequence.UNKNOWN) {
-      return sp2;
-    }
-    //System.out.println("survived factordb: " + sp2);
-    fs = mSemiprime.semiprime(n);
-    if (fs == null) {
-      //System.out.println("was null");
-      return FactorSequence.NO;
-    }
-    return fs.isSemiprime();
-  }
-
   @Override
   public Z next() {
     while (true) {
@@ -68,7 +37,7 @@ public class A098594 implements Sequence {
         System.out.println("[" + mN + "]");
         System.out.flush();
       }
-      final int spM = semiprimeStatus(mF.subtract(1));
+      final int spM = Jaguar.factorUpToSemiprime(mF.subtract(1)).isSemiprime();
       if (spM == FactorSequence.NO) {
         continue;
       }
@@ -76,7 +45,7 @@ public class A098594 implements Sequence {
         System.out.println(mN + "!-1 is semiprime");
         System.out.flush();
       }
-      final int spP = semiprimeStatus(mF.add(1));
+      final int spP = Jaguar.factorUpToSemiprime(mF.add(1)).isSemiprime();
       if (spP == FactorSequence.NO) {
         continue;
       }

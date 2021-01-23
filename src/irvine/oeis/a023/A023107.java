@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023107 Largest integer in which every prefix is prime in base <code>n</code> (written in base <code>10)</code>.
+ * A023107 Largest integer in which every prefix is prime in base n (written in base 10).
  * @author Sean A. Irvine
  */
 public class A023107 implements Sequence {

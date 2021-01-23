@@ -5,7 +5,7 @@ package irvine.oeis.a202;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A202147 Numbers n such that the sum of <code>digits^4</code> of n equals the sum of <code>d|n, 1&lt;d&lt;n</code>.
+ * A202147 Numbers n such that the sum of digits^4 of n equals the sum of d|n, 1&lt;d&lt;n.
  * @author Georg Fischer
  */
 public class A202147 extends FiniteSequence {

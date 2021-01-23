@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A297189 Expansion of <code>(x + 3*x^2 - 2*x^3 - 3*x^4)/(1 - 8*x^2 + 9*x^4)</code>.
+ * A297189 Expansion of (x + 3*x^2 - 2*x^3 - 3*x^4)/(1 - 8*x^2 + 9*x^4).
  * @author Georg Fischer
  */
 public class A297189 extends GeneratingFunctionSequence {

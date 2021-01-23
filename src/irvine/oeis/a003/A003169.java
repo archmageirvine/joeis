@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003169 Number of 2-line arrays; or number of P-graphs with <code>2n</code> edges.
+ * A003169 Number of 2-line arrays; or number of P-graphs with 2n edges.
  * @author Sean A. Irvine
  */
 public class A003169 implements Sequence {

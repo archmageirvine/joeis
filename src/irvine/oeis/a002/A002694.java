@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 
 
 /**
- * A002694 Binomial coefficients <code>C(2n, n-2)</code>.
+ * A002694 Binomial coefficients C(2n, n-2).
  * @author Sean A. Irvine
  */
 public class A002694 implements Sequence {

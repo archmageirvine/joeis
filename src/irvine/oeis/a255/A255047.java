@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A255047 1 together with the positive terms of <code>A000225</code>.
+ * A255047 1 together with the positive terms of A000225.
  * @author Georg Fischer
  */
 public class A255047 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054857 Number of ways to tile a <code>5 X n</code> region with square tiles of size up to <code>5 X 5</code>.
+ * A054857 Number of ways to tile a 5 X n region with square tiles of size up to 5 X 5.
  * @author Georg Fischer
  */
 public class A054857 extends GeneratingFunctionSequence {

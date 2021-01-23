@@ -5,7 +5,7 @@ package irvine.oeis.a127;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127927 G.f. <code>A(x)</code> satisfies: <code>[x^(2n)] A(x)/Catalan(x)^n = A001764(n) = C(3n,n)/(2n+1)</code> and <code>[x^(2n+1)] A(x)/Catalan(x)^n = A001764(n+1)</code> for <code>n&gt;=0</code>, where <code>Catalan(x)</code> is the g.f. of <code>A000108</code>.
+ * A127927 G.f. A(x) satisfies: [x^(2n)] A(x)/Catalan(x)^n = A001764(n) = C(3n,n)/(2n+1) and [x^(2n+1)] A(x)/Catalan(x)^n = A001764(n+1) for n&gt;=0, where Catalan(x) is the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A127927 extends HolonomicRecurrence {

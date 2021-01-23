@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ContinuedFractionOfSqrtSequence;
 
 /**
- * A010157 Continued fraction for <code>sqrt(79)</code>.
+ * A010157 Continued fraction for sqrt(79).
  * @author Georg Fischer
  */
 public class A010157 extends ContinuedFractionOfSqrtSequence {

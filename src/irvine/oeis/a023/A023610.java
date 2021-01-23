@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023610 Convolution of Fibonacci numbers and <code>{F(2), F(3), F(4), ...}</code>.
+ * A023610 Convolution of Fibonacci numbers and {F(2), F(3), F(4), ...}.
  * @author Sean A. Irvine
  */
 public class A023610 extends LinearRecurrence {

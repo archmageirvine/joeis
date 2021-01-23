@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A308713 Decimal expansion of <code>sqrt(2)*sinh(sqrt(2)*Pi)/(33*Pi)</code>.
+ * A308713 Decimal expansion of sqrt(2)*sinh(sqrt(2)*Pi)/(33*Pi).
  * @author Georg Fischer
  */
 public class A308713 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215171 G.f.: <code>exp( Sum_{n&gt;=1} A002203(n)^4 * x^n/n )</code>, where <code>A002203</code> is the companion Pell numbers.
+ * A215171  G.f.: exp( Sum_{n&gt;=1} A002203(n)^4 * x^n/n ), where A002203 is the companion Pell numbers.
  * @author Georg Fischer
  */
 public class A215171 extends GeneratingFunctionSequence {

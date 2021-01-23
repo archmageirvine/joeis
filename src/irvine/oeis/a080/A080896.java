@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080896 Expansion of the exponential series <code>exp( x * T(x) ) = exp( x / sqrt(1 - 2*x - 3*x^2) )</code>, where <code>T(x)</code> is the ordinary generating series of the central trinomial coefficients <code>(A002426)</code>.
+ * A080896 Expansion of the exponential series exp( x * T(x) ) = exp( x / sqrt(1 - 2*x - 3*x^2) ), where T(x) is the ordinary generating series of the central trinomial coefficients (A002426).
  * @author Georg Fischer
  */
 public class A080896 extends HolonomicRecurrence {

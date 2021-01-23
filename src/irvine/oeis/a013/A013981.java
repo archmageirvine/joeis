@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013981 Number of commutative elements in Coxeter group <code>H_n</code>.
+ * A013981 Number of commutative elements in Coxeter group H_n.
  * @author Sean A. Irvine
  */
 public class A013981 implements Sequence {

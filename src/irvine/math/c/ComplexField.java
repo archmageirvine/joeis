@@ -132,11 +132,7 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
     return new C(-z.re(), -z.im());
   }
 
-  /**
-   * Return the conjugate of the given number.
-   * @param z complex number
-   * @return conjugate
-   */
+  @Override
   public C conjugate(final C z) {
     return new C(z.re(), -z.im());
   }
@@ -300,6 +296,16 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
   }
 
   @Override
+  public C sec(final C z) {
+    return inverse(cos(z));
+  }
+
+  @Override
+  public C csc(final C z) {
+    return inverse(sin(z));
+  }
+
+  @Override
   public Z size() {
     return null;
   }
@@ -424,6 +430,11 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
     final double r = 0.5 * Math.atan2(2 * x, 1 - x2 - y * y);
     final double s = 0.25 * Math.log((x2 + (y + 1) * (y + 1)) / (x2 + (y - 1) * (y - 1)));
     return new C(r, s);
+  }
+
+  @Override
+  public C acot(final C z) {
+    return subtract(new C(Constants.HALF_PI), atan(z));
   }
 
   @Override

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003720 E.g.f. <code>tan(tan(tan(x)))</code>.
+ * A003720 E.g.f. tan(tan(tan(x))).
  * @author Sean A. Irvine
  */
 public class A003720 implements Sequence {

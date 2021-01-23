@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A020489 <code>phi(n)</code> divides <code>sigma_0(n)</code>.
+ * A020489 phi(n) divides sigma_0(n).
  * @author Georg Fischer
  */
 public class A020489 extends FiniteSequence {

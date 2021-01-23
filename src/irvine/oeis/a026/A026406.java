@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026406 <code>a(n) = n-th</code> number k such that <code>s(k)</code> is odd, where s <code>= A026400</code>.
+ * A026406 a(n) = n-th number k such that s(k) is odd, where s = A026400.
  * @author Sean A. Irvine
  */
 public class A026406 extends A026400 {

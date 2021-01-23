@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089594 Alternating sum of squares to <code>n</code>.
+ * A089594 Alternating sum of squares to n.
  * @author Sean A. Irvine
  */
 public class A089594 extends LinearRecurrence {

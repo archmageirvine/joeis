@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A123337 Number of ordered ways to write n as the sum of 5 squares less than <code>5^2</code>.
+ * A123337 Number of ordered ways to write n as the sum of 5 squares less than 5^2.
  * @author Georg Fischer
  */
 public class A123337 extends FiniteSequence {

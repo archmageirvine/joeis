@@ -6,7 +6,7 @@ package irvine.oeis.a072;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A072944 <code>a(1)=2, a(n+1) = 2*a(n) - phi(a(n))</code> where phi is the Euler totient function <code>A000010</code>.
+ * A072944 a(1)=2, a(n+1) = 2*a(n) - phi(a(n)) where phi is the Euler totient function A000010.
  * @author Georg Fischer
  */
 public class A072944 extends GeneratingFunctionSequence {

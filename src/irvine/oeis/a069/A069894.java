@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069894 Centered square numbers: <code>a(n) = 4*n^2 + 4*n + 2</code>.
+ * A069894 Centered square numbers: a(n) = 4*n^2 + 4*n + 2.
  * @author Sean A. Irvine
  */
 public class A069894 extends LinearRecurrence {

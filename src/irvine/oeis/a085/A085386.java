@@ -6,7 +6,7 @@ package irvine.oeis.a085;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085386 E.g.f. <code>cosh(x+x^2/2)</code>.
+ * A085386 E.g.f. cosh(x+x^2/2).
  * @author Georg Fischer
  */
 public class A085386 extends HolonomicRecurrence {

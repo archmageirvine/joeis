@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A300160 Quasi-narcissistic numbers: k-digit numbers n whose sum of k-th powers of their digits is equal to <code>n +- 1</code>.
+ * A300160 Quasi-narcissistic numbers: k-digit numbers n whose sum of k-th powers of their digits is equal to n +- 1.
  * @author Georg Fischer
  */
 public class A300160 extends FiniteSequence {

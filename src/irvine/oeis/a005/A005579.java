@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005579 Least number of distinct prime factors in even numbers having an abundancy index <code>&gt; n</code>.
+ * A005579 Least number of distinct prime factors in even numbers having an abundancy index &gt; n.
  * @author Sean A. Irvine
  */
 public class A005579 implements Sequence {

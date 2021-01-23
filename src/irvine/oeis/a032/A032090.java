@@ -4,7 +4,7 @@ package irvine.oeis.a032;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A032090 "BHK" <code>(reversible</code>, identity, unlabeled) transform of 0,1,1,1...
+ * A032090 "BHK" (reversible, identity, unlabeled) transform of 0,1,1,1...
  * @author Georg Fischer
  */
 public class A032090 extends GeneratingFunctionSequence {

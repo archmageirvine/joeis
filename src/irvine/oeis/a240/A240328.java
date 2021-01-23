@@ -5,7 +5,7 @@ package irvine.oeis.a240;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240328 Inverse of <code>37th</code> cyclotomic polynomial.
+ * A240328 Inverse of 37th cyclotomic polynomial.
  * @author Georg Fischer
  */
 public class A240328 extends HolonomicRecurrence {

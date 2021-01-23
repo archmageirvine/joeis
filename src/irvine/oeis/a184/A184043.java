@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184043 1/9 the number of <code>(n+1) X 5 0..2</code> arrays with all <code>2 X 2</code> subblocks having the same four values.
+ * A184043 1/9 the number of (n+1) X 5 0..2 arrays with all 2 X 2 subblocks having the same four values.
  * @author Georg Fischer
  */
 public class A184043 extends GeneratingFunctionSequence {

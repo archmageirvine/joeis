@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A226024 Integers n such that (sum of digits of <code>10234*n) = n</code>.
+ * A226024 Integers n such that (sum of digits of 10234*n) = n.
  * @author Georg Fischer
  */
 public class A226024 extends FiniteSequence {

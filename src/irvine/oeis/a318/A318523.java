@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A318523 Decimal expansion of <code>sqrt((1/5)^(1/5)+(4/5)^(1/5))</code>.
+ * A318523 Decimal expansion of sqrt((1/5)^(1/5)+(4/5)^(1/5)).
  * @author Georg Fischer
  */
 public class A318523 extends DecimalExpansionSequence {

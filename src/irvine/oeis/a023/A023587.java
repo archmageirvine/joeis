@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023587 <code>a(n) =</code> sum of distinct prime divisors of <code>2*prime(n)-1</code>.
+ * A023587 a(n) = sum of distinct prime divisors of 2*prime(n)-1.
  * @author Sean A. Irvine
  */
 public class A023587 extends A000040 {

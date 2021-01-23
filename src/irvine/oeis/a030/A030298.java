@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A030298 List of permutations of <code>1,2,3,...,n</code> for <code>n=1,2,3,...</code>, in lexicographic order.
+ * A030298 List of permutations of 1,2,3,...,n for n=1,2,3,..., in lexicographic order.
  * @author Sean A. Irvine
  */
 public class A030298 implements Sequence {

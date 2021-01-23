@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180846 <code>a(n) = (81^n - 2^n)/79</code>.
+ * A180846 a(n) = (81^n - 2^n)/79.
  * @author Georg Fischer
  */
 public class A180846 extends GeneratingFunctionSequence {

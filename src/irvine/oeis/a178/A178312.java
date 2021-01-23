@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178312 <code>a(n) = n * T(ceiling(n/2))</code>, where T are the triangular numbers, <code>A000217</code>.
+ * A178312 a(n) = n * T(ceiling(n/2)), where T are the triangular numbers, A000217.
  * @author Sean A. Irvine
  */
 public class A178312 extends LinearRecurrence {

@@ -5,13 +5,13 @@ package irvine.oeis.a323;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A323198 Numbers k such that <code>457*2^k+1</code> is prime.
+ * A323198 Numbers k such that 457*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A323198 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A323198() {
-    super(1, 8, 457, 2, +1, 0);
+    super(1, 8, 457, 2, 1);
   }
 }

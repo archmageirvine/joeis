@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025134 <code>a(n) = n-th</code> elementary symmetric function of <code>C(n,0), C(n,1)</code>, ..., <code>C(n,n)</code>.
+ * A025134 a(n) = n-th elementary symmetric function of C(n,0), C(n,1), ..., C(n,n).
  * @author Sean A. Irvine
  */
 public class A025134 implements Sequence {

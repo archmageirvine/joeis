@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128766 Number of inequivalent n-colorings of the vertices of the <code>3D</code> cube under full orthogonal group of the cube (of order <code>48)</code>.
+ * A128766 Number of inequivalent n-colorings of the vertices of the 3D cube under full orthogonal group of the cube (of order 48).
  * @author Georg Fischer
  */
 public class A128766 extends GeneratingFunctionSequence {

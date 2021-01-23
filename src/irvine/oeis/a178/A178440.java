@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178440 Convolution square of <code>A058187</code>, the tetrahedral series with repeats.
+ * A178440 Convolution square of A058187, the tetrahedral series with repeats.
  * @author Sean A. Irvine
  */
 public class A178440 extends LinearRecurrence {

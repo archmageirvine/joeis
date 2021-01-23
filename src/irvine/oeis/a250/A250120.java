@@ -5,7 +5,7 @@ package irvine.oeis.a250;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A250120 Coordination sequence for planar net <code>3.3.3.3.6</code> (also called the fsz net).
+ * A250120 Coordination sequence for planar net 3.3.3.3.6 (also called the fsz net).
  * @author Georg Fischer
  */
 public class A250120 extends HolonomicRecurrence {

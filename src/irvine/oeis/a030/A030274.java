@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030274 Numerators of sequence <code>{b(1), b(2), ...}</code> which when COMPOSED with itself gives <code>{1,2,3,...}</code>.
+ * A030274 Numerators of sequence {b(1), b(2), ...} which when COMPOSED with itself gives {1,2,3,...}.
  * @author Sean A. Irvine
  */
 public class A030274 extends MemoryFunction2<Long, Q> implements Sequence {

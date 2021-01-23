@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062890 Number of quadrilaterals that can be formed with perimeter <code>n</code>. In other words, number of partitions of n into four parts such that the sum of any three is more than the fourth.
+ * A062890 Number of quadrilaterals that can be formed with perimeter n. In other words, number of partitions of n into four parts such that the sum of any three is more than the fourth.
  * @author Sean A. Irvine
  */
 public class A062890 extends LinearRecurrence {

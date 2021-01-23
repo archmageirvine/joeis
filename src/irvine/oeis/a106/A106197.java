@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A106197 Analog of <code>A094091</code> for <code>S=4</code>.
+ * A106197 Analog of A094091 for S=4.
  * @author Georg Fischer
  */
 public class A106197 extends FiniteSequence {

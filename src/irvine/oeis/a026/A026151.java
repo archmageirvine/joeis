@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A026151 <code>a(n) = T(n,n)</code>, where T is the array in <code>A026148</code>.
+ * A026151 a(n) = T(n,n), where T is the array in A026148.
  * @author Sean A. Irvine
  */
 public class A026151 extends PrependSequence {

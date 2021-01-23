@@ -5,7 +5,7 @@ package irvine.oeis.a305;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A305500 <code>a(n) = (-1) * j((1+Sqrt(-A003173(n+2))/2)</code>.
+ * A305500 a(n) = (-1) * j((1+Sqrt(-A003173(n+2))/2).
  * @author Georg Fischer
  */
 public class A305500 extends FiniteSequence {

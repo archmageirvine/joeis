@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023700 Numbers with exactly <code>2 2</code>'s in ternary expansion.
+ * A023700 Numbers with exactly 2 2's in ternary expansion.
  * @author Sean A. Irvine
  */
 public class A023700 implements Sequence {

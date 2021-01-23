@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A219968 Number of tilings of a <code>3 X n</code> rectangle using straight <code>(3 X 1)</code> trominoes and <code>2 X 2</code> tiles.
+ * A219968 Number of tilings of a 3 X n rectangle using straight (3 X 1) trominoes and 2 X 2 tiles.
  * @author Georg Fischer
  */
 public class A219968 extends GeneratingFunctionSequence {

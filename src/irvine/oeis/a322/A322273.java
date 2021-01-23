@@ -5,7 +5,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322273 Smallest multiplication factors f, prime or 1, for all b <code>(mod 840)</code>, coprime to <code>840 (= 4*7#)</code>, so that <code>b*f</code> is a nonzero square <code>mod 8, mod 3, mod 5</code>, and <code>mod 7</code>.
+ * A322273 Smallest multiplication factors f, prime or 1, for all b (mod 840), coprime to 840 (= 4*7#), so that b*f is a nonzero square mod 8, mod 3, mod 5, and mod 7.
  * @author Georg Fischer
  */
 public class A322273 extends FiniteSequence {

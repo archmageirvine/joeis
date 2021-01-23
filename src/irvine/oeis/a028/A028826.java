@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028826 Distinct orders of elements of Mathieu group <code>M_24</code>.
+ * A028826 Distinct orders of elements of Mathieu group M_24.
  * @author Georg Fischer
  */
 public class A028826 extends FiniteSequence {

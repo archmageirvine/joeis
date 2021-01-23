@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 /**
  * Hold a literal constant in an expression
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  * @param <N> type of number represented by this literal
  * @param <R> ring operating on this type
  */

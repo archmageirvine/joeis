@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A194825 Digital roots of the nonzero <code>9-gonal</code> (nonagonal) numbers.
+ * A194825 Digital roots of the nonzero 9-gonal (nonagonal) numbers.
  * @author Georg Fischer
  */
 public class A194825 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A133607 Triangle read by rows: <code>T(n, k) = qStirling2(n</code>, k, <code>q)</code> for q <code>= -1</code>, with <code>0 &lt;= k &lt;= n</code>.
+ * A133607 Triangle read by rows: T(n, k) = qStirling2(n, k, q) for q = -1,  with 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A133607 extends GeneratingFunctionTriangle {

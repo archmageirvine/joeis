@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302695 Number of 6-cycles in the <code>(n+5)-path</code> complement graph.
+ * A302695 Number of 6-cycles in the (n+5)-path complement graph.
  * @author Georg Fischer
  */
 public class A302695 extends GeneratingFunctionSequence {

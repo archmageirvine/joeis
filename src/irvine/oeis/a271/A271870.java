@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271870 Convolution of nonzero hexagonal numbers <code>(A000384)</code> with themselves.
+ * A271870 Convolution of nonzero hexagonal numbers (A000384) with themselves.
  * @author Georg Fischer
  */
 public class A271870 extends LinearRecurrence {

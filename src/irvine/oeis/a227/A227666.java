@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227666 Number of lattice paths from <code>{n}^4</code> to <code>{0}^4</code> using steps that decrement one component by 1 such that for each point <code>(p_1,p_2,...,p_4)</code> we have <code>abs(p_{i}-p_{i+1}) &lt;= 1</code>.
+ * A227666 Number of lattice paths from {n}^4 to {0}^4 using steps that decrement one component by 1 such that for each point (p_1,p_2,...,p_4) we have abs(p_{i}-p_{i+1}) &lt;= 1.
  * @author Georg Fischer
  */
 public class A227666 extends GeneratingFunctionSequence {

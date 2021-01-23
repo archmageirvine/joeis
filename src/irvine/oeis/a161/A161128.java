@@ -6,7 +6,7 @@ package irvine.oeis.a161;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A161128 <code>a(n) = n!*(1/1 + 1/2 + ... + 1/n) - (1! + 2! + ... + n!)</code>.
+ * A161128 a(n) = n!*(1/1 + 1/2 + ... + 1/n) - (1! + 2! + ... + n!).
  * @author Georg Fischer
  */
 public class A161128 extends HolonomicRecurrence {

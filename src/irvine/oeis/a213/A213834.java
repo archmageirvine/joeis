@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213834 Antidiagonal sums of the convolution array <code>A213833</code>.
+ * A213834 Antidiagonal sums of the convolution array A213833.
  * @author Sean A. Irvine
  */
 public class A213834 extends LinearRecurrence {

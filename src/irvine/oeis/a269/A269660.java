@@ -4,7 +4,7 @@ package irvine.oeis.a269;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A269660 Number of <code>length-7 0..n</code> arrays with no adjacent pair <code>x,x+1</code> repeated.
+ * A269660 Number of length-7 0..n arrays with no adjacent pair x,x+1 repeated.
  * @author Georg Fischer
  */
 public class A269660 extends GeneratingFunctionSequence {

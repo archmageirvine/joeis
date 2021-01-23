@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A020345 Smallest Fibonacci number beginning with <code>n</code>.
+ * A020345 Smallest Fibonacci number beginning with n.
  * @author Sean A. Irvine
  */
 public class A020345 implements Sequence {

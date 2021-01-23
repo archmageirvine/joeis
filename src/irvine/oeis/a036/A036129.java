@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A036129 <code>a(n) = 2^n mod 59</code>.
+ * A036129 a(n) = 2^n mod 59.
  * @author Georg Fischer
  */
 public class A036129 extends HolonomicRecurrence {

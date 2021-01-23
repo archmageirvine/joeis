@@ -6,7 +6,7 @@ import irvine.oeis.ParallelPlantriSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A007083 Number of unlabeled trivalent 3-connected bipartite planar graphs with <code>2n</code> nodes.
+ * A007083 Number of unlabeled trivalent 3-connected bipartite planar graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A007083 extends ParallelPlantriSequence implements Sequence {

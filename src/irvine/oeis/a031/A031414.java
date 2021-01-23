@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031414 Numbers n such that continued fraction for <code>sqrt(n)</code> has odd period and a pair of central terms both equal to 1.
+ * A031414 Numbers n such that continued fraction for sqrt(n) has odd period and a pair of central terms both equal to 1.
  * @author Sean A. Irvine
  */
 public class A031414 implements Sequence {

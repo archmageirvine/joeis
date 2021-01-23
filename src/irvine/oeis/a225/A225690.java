@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A225690 Number of Dyck paths of semilength n avoiding the pattern <code>U^3 D^3</code> U D.
+ * A225690 Number of Dyck paths of semilength n avoiding the pattern U^3 D^3 U D.
  * @author Georg Fischer
  */
 public class A225690 extends GeneratingFunctionSequence {

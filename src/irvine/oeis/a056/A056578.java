@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A056578 <code>a(n) = 1 + 2n + 3n^2 + 4n^3</code>.
+ * A056578 a(n) = 1 + 2n + 3n^2 + 4n^3.
  * @author Georg Fischer
  */
 public class A056578 extends GeneratingFunctionSequence {

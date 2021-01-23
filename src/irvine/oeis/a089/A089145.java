@@ -5,7 +5,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089145 Greatest common divisor of <code>n^2-3</code> and <code>n^2+3</code>.
+ * A089145 Greatest common divisor of n^2-3 and n^2+3.
  * @author Georg Fischer
  */
 public class A089145 extends HolonomicRecurrence {

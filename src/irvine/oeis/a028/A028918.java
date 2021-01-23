@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028918 <code>(3n+1)!/(4*(3n-1))</code>.
+ * A028918 (3n+1)!/(4*(3n-1)).
  * @author Sean A. Irvine
  */
 public class A028918 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A301000 Coordination sequence <code>T1</code> for Zeolite Code BEC.
+ * A301000 Coordination sequence T1 for Zeolite Code BEC.
  * @author Sean A. Irvine
  */
 public class A301000 extends CoordinationSequence {

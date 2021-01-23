@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a014.A014665;
 
 /**
- * A027435 Number of distinct products <code>ij</code> with <code>1 &lt;= i &lt;=</code> n, <code>1 &lt;= j &lt;=</code> n, <code>(i,j)=1</code>.
+ * A027435 Number of distinct products ij with 1 &lt;= i &lt;= n, 1 &lt;= j &lt;= n, (i,j)=1.
  * @author Sean A. Irvine
  */
 public class A027435 extends PartialSumSequence {

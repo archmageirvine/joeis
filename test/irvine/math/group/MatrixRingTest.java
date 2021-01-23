@@ -141,10 +141,10 @@ public class MatrixRingTest extends TestCase {
     assertEquals("-10-3x+x^2", cp.toString());
   }
 
-  public void testAdjoint() {
+  public void testAdjugate() {
     final MatrixRing<Z> ring = new MatrixRing<>(3, Integers.SINGLETON);
     final Matrix<Z> a = new DefaultMatrix<>(toZ(new long[][] {{3, 2, -1}, {1, 6, 3}, {2, -4, 0}}), Z.ZERO);
-    assertEquals("[[12 4 12][6 2 -10][-16 16 16]]", ring.adj(a).toString());
+    assertEquals("[[12 4 12][6 2 -10][-16 16 16]]", ring.adjugate(a).toString());
   }
 
   public void testDurbin12p3() {
@@ -161,5 +161,13 @@ public class MatrixRingTest extends TestCase {
     for (final Matrix<Z> m : ring) {
       assertEquals("[[0 0][0 0]]", m.toString());
     }
+  }
+
+  public void testAdjoint() {
+    final MatrixRing<Z> ring = new MatrixRing<>(2, Integers.SINGLETON);
+    final Matrix<Z> a = new DefaultMatrix<>(toZ(new long[][] {{0, 1}, {1, 0}}), Z.ZERO);
+    final Matrix<Z> b = new DefaultMatrix<>(toZ(new long[][] {{0, 4}, {5, -2}}), Z.ZERO);
+    assertTrue(ring.isUnitary(a));
+    assertFalse(ring.isUnitary(b));
   }
 }

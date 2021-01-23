@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296780 Detour index of the <code>n X n X n</code> grid graph.
+ * A296780 Detour index of the n X n X n grid graph.
  * @author Georg Fischer
  */
 public class A296780 extends GeneratingFunctionSequence {

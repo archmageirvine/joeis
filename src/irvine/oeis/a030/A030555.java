@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A030555 <code>a(n)=least</code> k such that base 6 representation of n begins at <code>s(k)</code>, where <code>s=A030548</code>.
+ * A030555 a(n)=least k such that base 6 representation of n begins at s(k), where s=A030548.
  * @author Sean A. Irvine
  */
 public class A030555 implements Sequence {

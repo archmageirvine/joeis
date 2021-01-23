@@ -7,7 +7,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A099605 Triangle, read by rows, such that row n equals the inverse binomial transform of column n of the triangle <code>A034870</code> of coefficients in successive powers of the trinomial <code>(1+2*x+x^2)</code>, omitting leading zeros.
+ * A099605 Triangle, read by rows, such that row n equals the inverse binomial transform of column n of the triangle A034870 of coefficients in successive powers of the trinomial (1+2*x+x^2), omitting leading zeros.
  * @author Georg Fischer
  */
 public class A099605 extends GeneratingFunctionTriangle {

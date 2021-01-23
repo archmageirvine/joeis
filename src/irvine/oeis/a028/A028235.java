@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028235 If <code>n =</code> Product <code>(p_j^k_j), a(n) =</code> numerator of Sum <code>1/p_j</code> (the denominator of this sum is <code>A007947)</code>.
+ * A028235 If n = Product (p_j^k_j), a(n) = numerator of Sum 1/p_j (the denominator of this sum is A007947).
  * @author Sean A. Irvine
  */
 public class A028235 implements Sequence {

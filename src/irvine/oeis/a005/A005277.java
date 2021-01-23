@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007617;
 
 /**
- * A005277 Nontotients: even n such that <code>phi(m) = n</code> has no solution.
+ * A005277 Nontotients: even n such that phi(m) = n has no solution.
  * @author Sean A. Irvine
  */
 public class A005277 extends A007617 {

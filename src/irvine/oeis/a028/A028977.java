@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028977 Theta series of <code>8-d 6-modular</code> lattice <code>G_2</code> tensor <code>F_4</code> (or <code>A_2</code> tensor <code>D_4)</code> with det 1296 and minimal norm 4 in powers of <code>q^2</code>.
+ * A028977 Theta series of 8-d 6-modular lattice G_2 tensor F_4 (or A_2 tensor D_4) with det 1296 and minimal norm 4 in powers of q^2.
  * @author Sean A. Irvine
  */
 public class A028977 implements Sequence {

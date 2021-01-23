@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A268093 Number of <code>1 X n 0..2</code> arrays with every repeated value in every row not one larger and in every column one larger <code>mod 3</code> than the previous repeated value, and upper left element zero.
+ * A268093 Number of 1 X n 0..2 arrays with every repeated value in every row not one larger and in every column one larger mod 3 than the previous repeated value, and upper left element zero.
  * @author Georg Fischer
  */
 public class A268093 extends GeneratingFunctionSequence {

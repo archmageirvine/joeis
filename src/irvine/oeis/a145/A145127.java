@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145127 <code>a(n) = 1 + (144 + (50 + (35 + (10 + n)*n)*n)*n)*n/120</code>.
+ * A145127 a(n) = 1 + (144 + (50 + (35 + (10 + n)*n)*n)*n)*n/120.
  * @author Georg Fischer
  */
 public class A145127 extends GeneratingFunctionSequence {

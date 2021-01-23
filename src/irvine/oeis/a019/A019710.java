@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019710 Decimal expansion of <code>sqrt(Pi)/8</code>.
+ * A019710 Decimal expansion of sqrt(Pi)/8.
  * @author Sean A. Irvine
  */
 public class A019710 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.SQRT_PI.divide(CR.valueOf(8));
+  private static final CR N = CR.SQRT_PI.divide(CR.EIGHT);
 
   @Override
   protected CR getCR() {

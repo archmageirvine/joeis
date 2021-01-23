@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A087231 <code>a(n)</code> is the smallest number such that the exponent of <code>p=2</code> factor in <code>6*a(n)+4</code> equals <code>n</code>.
+ * A087231 a(n) is the smallest number such that the exponent of p=2 factor in 6*a(n)+4 equals n.
  * @author Georg Fischer
  */
 public class A087231 extends GeneratingFunctionSequence {

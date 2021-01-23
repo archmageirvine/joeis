@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253710 Second partial sums of tenth powers <code>(A008454)</code>.
+ * A253710 Second partial sums of tenth powers (A008454).
  * @author Georg Fischer
  */
 public class A253710 extends GeneratingFunctionSequence {

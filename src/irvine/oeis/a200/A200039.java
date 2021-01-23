@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200039 Number of <code>-n..n</code> arrays <code>x(0..2)</code> of 3 elements with sum zero and with zeroth through 2nd differences all nonzero.
+ * A200039 Number of -n..n arrays x(0..2) of 3 elements with sum zero and with zeroth through 2nd differences all nonzero.
  * @author Georg Fischer
  */
 public class A200039 extends GeneratingFunctionSequence {

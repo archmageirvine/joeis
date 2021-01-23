@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331528 <code>a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12</code>.
+ * A331528 a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.
  * @author Georg Fischer
  */
 public class A331528 extends HolonomicRecurrence {

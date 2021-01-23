@@ -5,7 +5,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099578 <code>a(n) = binomial(floor((3n+2)/2), floor(n/2))</code>.
+ * A099578 a(n) = binomial(floor((3n+2)/2), floor(n/2)).
  * @author Georg Fischer
  */
 public class A099578 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179275 Decimal expansion of <code>2*sqrt(Pi)/3^(1/4)</code>.
+ * A179275 Decimal expansion of 2*sqrt(Pi)/3^(1/4).
  * @author Georg Fischer
  */
 public class A179275 extends DecimalExpansionSequence {

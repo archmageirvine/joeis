@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098276 Difference between the number of even reduced Latin rectangles of size <code>3 X n</code> and the number of odd ones.
+ * A098276 Difference between the number of even reduced Latin rectangles of size 3 X n and the number of odd ones.
  * @author Georg Fischer
  */
 public class A098276 extends HolonomicRecurrence {

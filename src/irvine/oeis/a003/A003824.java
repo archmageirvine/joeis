@@ -1,5 +1,7 @@
 package irvine.oeis.a003;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
@@ -54,11 +56,33 @@ public class A003824 implements Sequence {
   }
 
   private Z mPrev = null;
-  private Z mGcd = null;
-  private int mCount = 0;
 
   protected int count() {
     return 2;
+  }
+
+  private final ArrayList<MyTriple> mT = new ArrayList<>();
+
+  private void add(final MyTriple t) {
+    if (t.mid().compareTo(t.right()) <= 0) {
+      mT.add(t);
+    }
+  }
+
+  protected boolean isPrimitive(final List<MyTriple> triples) {
+    for (int k = 0; k < triples.size(); ++k) {
+      final MyTriple a = triples.get(k);
+      final Z ga = a.mid().gcd(a.right());
+      for (int j = k + 1; j < triples.size(); ++j) {
+        final MyTriple b = triples.get(j);
+        final Z gb = b.mid().gcd(b.right());
+        final Z g = ga.gcd(gb);
+        if (!Z.ONE.equals(g)) {
+          return false;
+        }
+      }
+    }
+    return true;
   }
 
   @Override
@@ -66,18 +90,16 @@ public class A003824 implements Sequence {
     while (true) {
       final MyTriple t = nextTriple();
       if (!t.left().equals(mPrev)) {
+        final boolean ok = mT.size() >= count() && isPrimitive(mT);
         final Z old = mPrev;
-        final Z oldGcd = mGcd;
-        final int oldCount = mCount;
         mPrev = t.left();
-        mCount = 1;
-        mGcd = t.mid().gcd(t.right());
-        if (old != null && oldCount > count() && Z.ONE.equals(oldGcd)) {
+        mT.clear();
+        add(t);
+        if (ok) {
           return old;
         }
       } else {
-        ++mCount;
-        mGcd = mGcd.gcd(t.mid().gcd(t.right()));
+        add(t);
       }
     }
   }

@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080893 E.g.f. <code>exp(x*C(x)) = exp((1-sqrt(1-4*x))/2)</code>, where <code>C(x)</code> is the g.f. of the Catalan numbers <code>A000108</code>.
+ * A080893 E.g.f. exp(x*C(x)) = exp((1-sqrt(1-4*x))/2), where C(x) is the g.f. of the Catalan numbers A000108.
  * @author Georg Fischer
  */
 public class A080893 extends HolonomicRecurrence {

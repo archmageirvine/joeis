@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022543 Number of distinct 'failure tables' for a string of length <code>n</code>.
+ * A022543 Number of distinct 'failure tables' for a string of length n.
  * @author Sean A. Irvine
  */
 public class A022543 implements Sequence {

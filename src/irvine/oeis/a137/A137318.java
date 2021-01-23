@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137318 Concatenation of segments of the digit sequence <code>1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3...</code>.
+ * A137318 Concatenation of segments of the digit sequence 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3....
  * @author Georg Fischer
  */
 public class A137318 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026254 <code>a(n) =</code> j if <code>n = [ j*sqrt(3) ]</code>, else <code>a(n) =</code> k if <code>n = [ (k/2)*(3 + sqrt(3)) ]</code>.
+ * A026254 a(n) = j if n = [ j*sqrt(3) ], else a(n) = k if n = [ (k/2)*(3 + sqrt(3)) ].
  * @author Sean A. Irvine
  */
 public class A026254 implements Sequence {

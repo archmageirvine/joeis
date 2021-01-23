@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A022765 Ordered sequence of distinct terms of the form <code>floor(exp(i) * floor(exp(j)))</code>, i,j <code>&gt;= 0</code>.
+ * A022765 Ordered sequence of distinct terms of the form floor(exp(i) * floor(exp(j))), i,j &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A022765 implements Sequence {

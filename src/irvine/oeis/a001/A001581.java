@@ -28,7 +28,7 @@ public class A001581 implements Sequence {
       mL = mL.add(1);
       if (!mLosers.contains(mL)) {
         augment(mL);
-        if (!Z.ZERO.equals(mL)) {
+        if (!mL.isZero()) {
           return mL;
         }
       }

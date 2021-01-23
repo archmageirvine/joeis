@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024550 [ Sum of <code>1/{k*sqrt(3)} ], k = 1,2,...,n</code>, where <code>{x} := x - [ x ]</code>.
+ * A024550 [ Sum of 1/{k*sqrt(3)} ], k = 1,2,...,n, where {x} := x - [ x ].
  * @author Sean A. Irvine
  */
 public class A024550 implements Sequence {

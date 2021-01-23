@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178973 Number of ways to place 3 nonattacking amazons (superqueens) on an <code>n X n</code> toroidal board.
+ * A178973 Number of ways to place 3 nonattacking amazons (superqueens) on an n X n toroidal board.
  * @author Georg Fischer
  */
 public class A178973 extends GeneratingFunctionSequence {

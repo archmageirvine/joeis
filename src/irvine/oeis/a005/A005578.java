@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005578 <code>a(2*n) = 2*a(2*n-1), a(2*n+1) = 2*a(2*n)-1</code>.
+ * A005578 a(2*n) = 2*a(2*n-1), a(2*n+1) = 2*a(2*n)-1.
  * @author Sean A. Irvine
  */
 public class A005578 implements Sequence {

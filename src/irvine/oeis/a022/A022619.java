@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022619 Triangle <code>T(n,k)of</code> numbers of asymmetric Boolean functions of n variables with exactly k <code>= 0..2^n</code> nonzero values (atoms) under action of complementing group <code>C(n,2)</code>.
+ * A022619 Triangle T(n,k)of numbers of asymmetric Boolean functions of n variables with exactly k = 0..2^n nonzero values (atoms) under action of complementing group C(n,2).
  * @author Sean A. Irvine
  */
 public class A022619 implements Sequence {

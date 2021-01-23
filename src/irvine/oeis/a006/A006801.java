@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006801 Number of 2-dimensional directed compact animals of size <code>n</code>.
+ * A006801 Number of 2-dimensional directed compact animals of size n.
  * @author Sean A. Irvine
  */
 public class A006801 extends MemoryFunction2<Integer, Z> implements Sequence {

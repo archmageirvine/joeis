@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001055;
 
 /**
- * A080444 Write <code>n A001055(n)</code> times.
+ * A080444 Write n A001055(n) times.
  * @author Sean A. Irvine
  */
 public class A080444 extends A001055 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019437 <code>a(n) = a(n-1)!/a(n-2)!; a(0) = 1, a(1) = 3</code>.
+ * A019437 a(n) = a(n-1)!/a(n-2)!; a(0) = 1, a(1) = 3.
  * @author Sean A. Irvine
  */
 public class A019437 implements Sequence {

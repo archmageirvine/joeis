@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097602 <code>a(n+1) = a(n) +</code> number of squares so far; <code>a(1) = 1</code>.
+ * A097602 a(n+1) = a(n) + number of squares so far; a(1) = 1.
  * @author Georg Fischer
  */
 public class A097602 extends LinearRecurrence {

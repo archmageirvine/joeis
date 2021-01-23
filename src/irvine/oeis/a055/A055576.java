@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055576 Sum of digits of <code>a(n)^5</code> is equal to <code>a(n)</code>.
+ * A055576 Sum of digits of a(n)^5 is equal to a(n).
  * @author Georg Fischer
  */
 public class A055576 extends FiniteSequence {

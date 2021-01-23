@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060927 Row sums of triangle <code>A060924</code> (odd part of bisection of Lucas triangle).
+ * A060927 Row sums of triangle A060924 (odd part of bisection of Lucas triangle).
  * @author Georg Fischer
  */
 public class A060927 extends GeneratingFunctionSequence {

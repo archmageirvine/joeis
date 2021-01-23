@@ -6,7 +6,7 @@ package irvine.oeis.a285;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A285236 Number of entries in the eighth cycles of all permutations of <code>[n]</code>.
+ * A285236 Number of entries in the eighth cycles of all permutations of [n].
  * @author Georg Fischer
  */
 public class A285236 extends HolonomicRecurrence {

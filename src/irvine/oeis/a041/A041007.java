@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ContinuedFractionOfSqrtSequence;
 
 /**
- * A041007 Denominators of continued fraction convergents to <code>sqrt(6)</code>.
+ * A041007 Denominators of continued fraction convergents to sqrt(6).
  * @author Georg Fischer
  */
 public class A041007 extends ContinuedFractionOfSqrtSequence {

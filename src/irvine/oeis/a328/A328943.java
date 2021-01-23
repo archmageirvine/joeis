@@ -6,7 +6,7 @@ package irvine.oeis.a328;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A328943 <code>a(n) = 2 + (n mod 4)</code>.
+ * A328943 a(n) = 2 + (n mod 4).
  * @author Georg Fischer
  */
 public class A328943 extends GeneratingFunctionSequence {

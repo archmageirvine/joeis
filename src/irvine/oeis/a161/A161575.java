@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A161575 <code>a(n) =</code> the smallest positive integer with exactly n divisors and that, when represented in binary, contains the binary representation of n as a substring.
+ * A161575 a(n) = the smallest positive integer with exactly n divisors and that, when represented in binary, contains the binary representation of n as a substring.
  * @author Sean A. Irvine
  */
 public class A161575 implements Sequence {

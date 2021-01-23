@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128767 Number of inequivalent n-colorings of the <code>4D</code> hypercube under the full orthogonal group of the cube (of order <code>2^4*4! = 384)</code>.
+ * A128767 Number of inequivalent n-colorings of the 4D hypercube under the full orthogonal group of the cube (of order 2^4*4! = 384).
  * @author Georg Fischer
  */
 public class A128767 extends GeneratingFunctionSequence {

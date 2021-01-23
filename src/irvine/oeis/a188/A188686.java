@@ -5,7 +5,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188686 Binomial transform of the sequence of <code>binomial(3n,n)</code>.
+ * A188686 Binomial transform of the sequence of binomial(3n,n).
  * @author Georg Fischer
  */
 public class A188686 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A073782 <code>a(n) = Sum_{k=0..n} S(k)*S(n-k)</code>, convolution of <code>S=A001644</code> with itself.
+ * A073782 a(n) = Sum_{k=0..n} S(k)*S(n-k), convolution of S=A001644 with itself.
  * @author Georg Fischer
  */
 public class A073782 extends GeneratingFunctionSequence {

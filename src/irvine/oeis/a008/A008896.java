@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008896 <code>3x - 1</code> sequence starting at 66.
+ * A008896 3x - 1 sequence starting at 66.
  * @author Sean A. Irvine
  */
 public class A008896 implements Sequence {

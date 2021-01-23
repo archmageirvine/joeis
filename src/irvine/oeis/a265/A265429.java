@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265429 Total number of ON (black) cells after n iterations of the "Rule <code>188"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A265429 Total number of ON (black) cells after n iterations of the "Rule 188" elementary cellular automaton starting with a single ON (black) cell.
  * @author Sean A. Irvine
  */
 public class A265429 extends LinearRecurrence {

@@ -1,28 +1,27 @@
 package irvine.oeis.a001;
 
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SelfAvoidingCycler;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A001667 2n-step polygons on b.c.c. lattice.
  * @author Sean A. Irvine
  */
-public class A001667 extends A001666 {
+public class A001667 implements Sequence {
 
-  @Override
-  protected long count(final int point) {
-    final int z = z(point) - BIAS;
-    final int y = y(point) - BIAS;
-    final int x = x(point) - BIAS;
-    return (x == -1 || x == 1) && (y == -1 || y == 1) && (z == -1 || z == 1) ? 8 : 0;
-  }
-
-  {
-    mN += 2;
-  }
+  private int mN = 2;
+  private final long mC = Lattices.BCC.neighbour(Lattices.BCC.origin(), 0);
+  private final ParallelWalker mWalker = new ParallelWalker(10,
+    () -> new SelfAvoidingWalker(Lattices.BCC),
+    () -> new SelfAvoidingCycler(Lattices.BCC, false));
 
   @Override
   public Z next() {
-    ++mN;
-    return super.next();
+    mN += 2;
+    return Z.valueOf(mWalker.count(mN, 8, 7, Lattices.BCC.origin(), mC));
   }
 }

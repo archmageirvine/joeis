@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025202 <code>a(n) = [ 2nd</code> elementary symmetric function of <code>{log(k)} ], k = 2,3,...,n</code>.
+ * A025202 a(n) = [ 2nd elementary symmetric function of {log(k)} ], k = 2,3,...,n.
  * @author Sean A. Irvine
  */
 public class A025202 extends MemoryFunction<Long, CR> implements Sequence {

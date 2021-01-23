@@ -1,9 +1,10 @@
 package irvine.oeis;
 
-import java.util.ArrayList;
+import java.util.Collections;
 
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
@@ -14,11 +15,10 @@ public class RevertTransformSequence implements Sequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mSeq;
-  private final ArrayList<Z> mA = new ArrayList<>();
+  private final Polynomial<Z> mA = RING.create(Collections.emptyList());
   {
     mA.add(Z.ZERO);
   }
-  private int mN = 0;
 
   /**
    * Construct a sequence which is the revert transform of another sequence.
@@ -30,7 +30,8 @@ public class RevertTransformSequence implements Sequence {
 
   @Override
   public Z next() {
+    final int n = mA.size();
     mA.add(mSeq.next());
-    return RING.reversion(RING.create(mA), ++mN).coeff(mN);
+    return RING.reversion(mA, n).coeff(n);
   }
 }

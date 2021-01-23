@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026794 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions of n in which least part is k, <code>1&lt;=k&lt;=n</code>.
+ * A026794 Triangular array T read by rows: T(n,k) = number of partitions of n in which least part is k, 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A026794 extends MemoryFunction2<Long, Z> implements Sequence {

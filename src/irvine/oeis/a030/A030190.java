@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030190 Binary Champernowne sequence (or <code>word)</code>: write the numbers 0,1,2,3,4,... in base 2 and juxtapose.
+ * A030190 Binary Champernowne sequence (or word): write the numbers 0,1,2,3,4,... in base 2 and juxtapose.
  * @author Georg Fischer
  */
 public class A030190 implements Sequence {

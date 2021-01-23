@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190018 Union of <code>A000045, A007598</code>, and <code>A059929</code>.
+ * A190018 Union of A000045, A007598, and A059929.
  * @author Georg Fischer
  */
 public class A190018 extends GeneratingFunctionSequence {

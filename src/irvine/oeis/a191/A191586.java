@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191586 Binomial row sums of the Riordan matrix <code>(1/(1-x),x/(1-x^2)) (A046854)</code>.
+ * A191586 Binomial row sums of the Riordan matrix (1/(1-x),x/(1-x^2)) (A046854).
  * @author Georg Fischer
  */
 public class A191586 extends HolonomicRecurrence {

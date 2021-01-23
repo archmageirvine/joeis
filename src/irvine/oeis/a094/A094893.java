@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094893 Total area below the lattice paths of length n defined by the rule <code>[(0),(k)-&gt;(k-1)(k+1)]</code> (Dyck paths).
+ * A094893 Total area below the lattice paths of length n defined by the rule [(0),(k)-&gt;(k-1)(k+1)] (Dyck paths).
  * @author Georg Fischer
  */
 public class A094893 extends HolonomicRecurrence {

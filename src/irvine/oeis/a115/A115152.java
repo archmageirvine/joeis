@@ -5,7 +5,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115152 Fifth diagonal <code>(M=5)</code> sequence of triangle <code>A113647</code>, called <code>Y(2,1)</code>.
+ * A115152 Fifth diagonal (M=5) sequence of triangle A113647, called Y(2,1).
  * @author Georg Fischer
  */
 public class A115152 extends HolonomicRecurrence {

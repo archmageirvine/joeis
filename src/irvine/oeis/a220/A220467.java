@@ -6,7 +6,7 @@ package irvine.oeis.a220;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A220467 Number of ways to place 10 nonattacking kings on an <code>n X n</code> board.
+ * A220467 Number of ways to place 10 nonattacking kings on an n X n board.
  * @author Georg Fischer
  */
 public class A220467 extends GeneratingFunctionSequence {

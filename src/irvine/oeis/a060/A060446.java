@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060446 Number of ways to color vertices of a pentagon using <code>&lt;= n</code> colors, allowing rotations and reflections.
+ * A060446 Number of ways to color vertices of a pentagon using &lt;= n colors, allowing rotations and reflections.
  * @author Georg Fischer
  */
 public class A060446 extends GeneratingFunctionSequence {

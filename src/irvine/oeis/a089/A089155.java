@@ -6,7 +6,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089155 <code>a(n) = (2*n)!*(Integral_{x=0..sqrt(2/3)} 1/(1-x^2)^(n+1/2) dx)/((n!*2^n)*sqrt(2))</code>.
+ * A089155 a(n) = (2*n)!*(Integral_{x=0..sqrt(2/3)} 1/(1-x^2)^(n+1/2) dx)/((n!*2^n)*sqrt(2)).
  * @author Georg Fischer
  */
 public class A089155 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A134402 Triangle read by rows, for <code>n &gt; 0, n</code> zeros followed by <code>n</code>.
+ * A134402 Triangle read by rows, for n &gt; 0, n zeros followed by n.
  * @author Georg Fischer
  */
 public class A134402 extends GeneratingFunctionTriangle {

@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030441 Values of Newton-Gregory forward interpolating polynomial <code>(1/3)*(2*n - 3)*(2*n^2 - 3*n + 4)</code>.
+ * A030441 Values of Newton-Gregory forward interpolating polynomial (1/3)*(2*n - 3)*(2*n^2 - 3*n + 4).
  * @author Sean A. Irvine
  */
 public class A030441 extends LinearRecurrence {

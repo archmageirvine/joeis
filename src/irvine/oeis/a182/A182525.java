@@ -5,7 +5,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182525 <code>a(n) = n! * Sum_{k=0..n} binomial(2*n, 2*k) / binomial(n,k)</code>.
+ * A182525 a(n) = n! * Sum_{k=0..n} binomial(2*n, 2*k) / binomial(n,k).
  * @author Georg Fischer
  */
 public class A182525 extends HolonomicRecurrence {

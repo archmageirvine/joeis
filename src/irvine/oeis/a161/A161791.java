@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161791 Numbers k such that if k <code>= a*b</code>, then <code>a+b = reversal(k)</code> for some integers a,b <code>&gt; 1</code>.
+ * A161791 Numbers k such that if k = a*b, then a+b = reversal(k) for some integers a,b &gt; 1.
  * @author Sean A. Irvine
  */
 public class A161791 implements Sequence {

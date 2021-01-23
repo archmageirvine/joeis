@@ -6,7 +6,7 @@ package irvine.oeis.a085;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085356 <code>a(n) = polygorial(n,3)/polygorial(3,n), n &gt;= 3</code>.
+ * A085356 a(n) = polygorial(n,3)/polygorial(3,n), n &gt;= 3.
  * @author Georg Fischer
  */
 public class A085356 extends HolonomicRecurrence {

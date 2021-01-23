@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005427 Josephus problem.
+ * A005427 Josephus problem: numbers m such that, when m people are arranged on a circle and numbered 1 through m, the final survivor when we remove every 4th person is one of the first three people.
  * @author Sean A. Irvine
  */
 public class A005427 implements Sequence {

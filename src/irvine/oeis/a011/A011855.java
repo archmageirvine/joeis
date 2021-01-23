@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011855 <code>a(n) = floor(binomial(n,9)/9)</code>.
+ * A011855 a(n) = floor(binomial(n,9)/9).
  * @author Sean A. Irvine
  */
 public class A011855 implements Sequence {

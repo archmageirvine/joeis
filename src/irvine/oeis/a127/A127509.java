@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A127509 Number of n-tuples where each entry is chosen from the subsets of <code>{1,2,3}</code> such that the intersection of all n entries contains exactly one element.
+ * A127509 Number of n-tuples where each entry is chosen from the subsets of {1,2,3} such that the intersection of all n entries contains exactly one element.
  * @author Georg Fischer
  */
 public class A127509 extends GeneratingFunctionSequence {

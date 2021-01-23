@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213785 <code>a(n) = Sum(P(i)*P(j), 1&lt;=i&lt;j&lt;=n)</code>, where <code>P(k)</code> is the k-th Pell number <code>A000129(k)</code>.
+ * A213785 a(n) = Sum(P(i)*P(j), 1&lt;=i&lt;j&lt;=n), where P(k) is the k-th Pell number A000129(k).
  * @author Sean A. Irvine
  */
 public class A213785 extends LinearRecurrence {

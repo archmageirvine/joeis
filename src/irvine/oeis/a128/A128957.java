@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128957 <code>a(n)</code> is equal to the number of positive integers m less than or equal to <code>10^n</code> such that m is not divisible by at least one of the primes 2,5 and is not divisible by at least one of the primes 3,7.
+ * A128957 a(n) is equal to the number of positive integers m less than or equal to 10^n such that m is not divisible by at least one of the primes 2,5 and is not divisible by at least one of the primes 3,7.
  * @author Georg Fischer
  */
 public class A128957 extends GeneratingFunctionSequence {

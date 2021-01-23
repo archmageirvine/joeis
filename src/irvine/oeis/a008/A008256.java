@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008256 Coordination sequence <code>T1</code> for Milarite.
+ * A008256 Coordination sequence T1 for Milarite.
  * @author Sean A. Irvine
  */
 public class A008256 extends CoordinationSequence {

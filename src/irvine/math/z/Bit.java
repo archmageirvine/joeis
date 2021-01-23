@@ -129,6 +129,7 @@ final class Bit {
     // shift right can on a shift of 1 set mAuxiliary
     final Z r = Shift.shiftRight(n, shift);
     n.mAuxiliary = shift;
+    r.mAuxiliary = shift;
     return r;
   }
 

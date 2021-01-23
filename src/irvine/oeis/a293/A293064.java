@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A293064 Number of vertices of type B at level n of the hyperbolic Pascal pyramid <code>PP_(4,5)</code>.
+ * A293064 Number of vertices of type B at level n of the hyperbolic Pascal pyramid PP_(4,5).
  * @author Georg Fischer
  */
 public class A293064 extends GeneratingFunctionSequence {

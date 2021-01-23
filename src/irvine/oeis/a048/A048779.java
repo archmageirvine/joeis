@@ -6,7 +6,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048779 Coefficients of power series for <code>(1-(1-8x)^(1/4))/2</code>.
+ * A048779 Coefficients of power series for (1-(1-8x)^(1/4))/2.
  * @author Georg Fischer
  */
 public class A048779 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000642 <code>a(1)=0</code>; for <code>n&gt;1, a(n) =</code> number of isomeric hydrocarbons of the acetylene series with carbon content <code>n</code>.
+ * A000642 a(1)=0; for n&gt;1, a(n) = number of isomeric hydrocarbons of the acetylene series with carbon content n.
  * @author Sean A. Irvine
  */
 public class A000642 extends A000598 {

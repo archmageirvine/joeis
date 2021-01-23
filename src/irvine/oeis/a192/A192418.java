@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192418 Molecular topological indices of the complete bipartite graphs <code>K_{n,n}</code>.
+ * A192418 Molecular topological indices of the complete bipartite graphs K_{n,n}.
  * @author Sean A. Irvine
  */
 public class A192418 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143462 Expansion of <code>1 / (1 + 4 * x + 8 * x^2)</code>.
+ * A143462 Expansion of 1/(1 + 4*x + 8*x^2).
  * @author Georg Fischer
  */
 public class A143462 extends HolonomicRecurrence {

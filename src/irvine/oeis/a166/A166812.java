@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A166812 Number of <code>n X 7 1..2</code> arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
+ * A166812 Number of n X 7 1..2 arrays containing at least one of each value, all equal values connected, rows considered as a single number in nondecreasing order, and columns considered as a single number in nondecreasing order.
  * @author Georg Fischer
  */
 public class A166812 extends GeneratingFunctionSequence {

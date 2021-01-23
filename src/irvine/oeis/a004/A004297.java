@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A004297 Expansion of <code>(1+2*x+x^2)/(1-58*x+x^2)</code>.
+ * A004297 Expansion of (1+2*x+x^2)/(1-58*x+x^2).
  * @author Sean A. Irvine
  */
 public class A004297 extends GeneratingFunctionSequence {

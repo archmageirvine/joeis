@@ -5,7 +5,7 @@ package irvine.oeis.a247;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A247029 G.f. satisfies: <code>A(x) = A(x)^4 - 9*x</code>.
+ * A247029 G.f. satisfies: A(x) = A(x)^4 - 9*x.
  * @author Georg Fischer
  */
 public class A247029 extends HolonomicRecurrence {

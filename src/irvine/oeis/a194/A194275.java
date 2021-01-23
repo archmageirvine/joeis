@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194275 Concentric pentagonal numbers of the second kind: <code>a(n) = floor(5*n*(n+1)/6)</code>.
+ * A194275 Concentric pentagonal numbers of the second kind: a(n) = floor(5*n*(n+1)/6).
  * @author Sean A. Irvine
  */
 public class A194275 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a064;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A064204 <code>a(n) = 280*binomial(n+4,9) + 280*binomial(n+4,8) + 105*binomial(n+3,7) + 77*binomial(n+3,6) + 43*binomial(n+2,5) - 16*binomial(n+2,4) + 20*binomial(n+1,3) - floor(n*(n^2 - 1)*(n^2 - 4)*(n-3)/360)</code>.
+ * A064204 a(n) = 280*binomial(n+4,9) + 280*binomial(n+4,8) + 105*binomial(n+3,7) + 77*binomial(n+3,6) + 43*binomial(n+2,5) - 16*binomial(n+2,4) + 20*binomial(n+1,3) - floor(n*(n^2 - 1)*(n^2 - 4)*(n-3)/360).
  * @author Georg Fischer
  */
 public class A064204 extends GeneratingFunctionSequence {

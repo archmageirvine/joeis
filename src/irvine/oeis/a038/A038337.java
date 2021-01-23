@@ -7,7 +7,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A038337 Triangle whose <code>(i,j)-th</code> entry is <code>binomial(i,j)*12^(i-j)*11^j</code>.
+ * A038337 Triangle whose (i,j)-th entry is binomial(i,j)*12^(i-j)*11^j.
  * @author Georg Fischer
  */
 public class A038337 extends GeneratingFunctionTriangle {

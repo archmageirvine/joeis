@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191011 E.g.f. <code>log(1 + sin(arctan(x)))</code>.
+ * A191011 E.g.f. log(1 + sin(arctan(x))).
  * @author Georg Fischer
  */
 public class A191011 extends HolonomicRecurrence {

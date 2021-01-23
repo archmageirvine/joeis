@@ -6,7 +6,7 @@ package irvine.oeis.a281;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A281964 Real part of <code>n!*Sum_{k=1..n} i^(k-1)/k</code>, where i is <code>sqrt(-1)</code>.
+ * A281964 Real part of n!*Sum_{k=1..n} i^(k-1)/k, where i is sqrt(-1).
  * @author Georg Fischer
  */
 public class A281964 extends HolonomicRecurrence {

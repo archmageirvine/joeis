@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082010 <code>a(n) = n/2</code> if n is even, otherwise <code>floor(8*n/5)+1</code>.
+ * A082010 a(n) = n/2 if n is even, otherwise floor(8*n/5)+1.
  * @author Sean A. Irvine
  */
 public class A082010 extends LinearRecurrence {

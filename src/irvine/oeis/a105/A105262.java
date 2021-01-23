@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A105262 <code>a(n)=number</code> of tilings of a <code>4 X n</code> rectangle using tiles that are either <code>1 X 1</code> squares or trominoes (here by a tromino we mean a <code>2 X 2</code> square with the upper right <code>1 X 1</code> square removed; no rotations allowed).
+ * A105262 a(n)=number of tilings of a 4 X n rectangle using tiles that are either 1 X 1 squares or trominoes (here by a tromino we mean a 2 X 2 square with the upper right 1 X 1 square removed; no rotations allowed).
  * @author Georg Fischer
  */
 public class A105262 extends GeneratingFunctionSequence {

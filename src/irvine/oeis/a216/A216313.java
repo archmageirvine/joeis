@@ -6,7 +6,7 @@ package irvine.oeis.a216;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A216313 Total number of cycles in all partial permutations of <code>{1,2,...,n}</code>.
+ * A216313 Total number of cycles in all partial permutations of {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A216313 extends HolonomicRecurrence {

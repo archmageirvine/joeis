@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.PisotSequence;
 
 /**
- * A010903 Pisot sequence <code>E(3,13): a(n) = floor(a(n-1)^2/a(n-2) + 1/2)</code>.
+ * A010903 Pisot sequence E(3,13): a(n) = floor(a(n-1)^2/a(n-2) + 1/2).
  * @author Sean A. Irvine
  */
 public class A010903 extends PisotSequence {

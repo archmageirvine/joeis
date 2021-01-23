@@ -5,7 +5,7 @@ package irvine.oeis.a119;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A119590 <code>a(n) =</code> position of n in the lexicographical ordering <code>A119589</code> of natural numbers from 1 to 100.
+ * A119590 a(n) = position of n in the lexicographical ordering A119589 of natural numbers from 1 to 100.
  * @author Georg Fischer
  */
 public class A119590 extends FiniteSequence {

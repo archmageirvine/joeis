@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A216402 Least prime p such that p <code>= n (mod 59)</code>.
+ * A216402 Least prime p such that p = n (mod 59).
  * @author Georg Fischer
  */
 public class A216402 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027385 Number of primitive polynomials of degree n over <code>GF(3)</code>.
+ * A027385 Number of primitive polynomials of degree n over GF(3).
  * @author Sean A. Irvine
  */
 public class A027385 implements Sequence {

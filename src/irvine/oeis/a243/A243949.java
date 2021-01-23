@@ -5,7 +5,7 @@ package irvine.oeis.a243;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A243949 Squares of the central Delannoy numbers: <code>a(n) = A001850(n)^2</code>.
+ * A243949 Squares of the central Delannoy numbers: a(n) = A001850(n)^2.
  * @author Georg Fischer
  */
 public class A243949 extends HolonomicRecurrence {

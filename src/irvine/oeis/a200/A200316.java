@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200316 Number of permutations of <code>[1..n]</code> that can be drawn on a circle.
+ * A200316 Number of permutations of [1..n] that can be drawn on a circle.
  * @author Georg Fischer
  */
 public class A200316 extends GeneratingFunctionSequence {

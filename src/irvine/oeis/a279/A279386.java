@@ -5,7 +5,7 @@ package irvine.oeis.a279;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A279386 Decimal expansion of <code>h^2</code>, where h is the Planck constant in SI units.
+ * A279386 Decimal expansion of h^2, where h is the Planck constant in SI units.
  * @author Georg Fischer
  */
 public class A279386 extends FiniteSequence {

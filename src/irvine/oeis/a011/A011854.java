@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011854 <code>a(n) = floor(binomial(n,8)/8)</code>.
+ * A011854 a(n) = floor(binomial(n,8)/8).
  * @author Sean A. Irvine
  */
 public class A011854 implements Sequence {

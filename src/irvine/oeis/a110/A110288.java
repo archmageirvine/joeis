@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A110288 <code>19*2^n</code>.
+ * A110288 19*2^n.
  * @author Georg Fischer
  */
 public class A110288 extends GeneratingFunctionSequence {

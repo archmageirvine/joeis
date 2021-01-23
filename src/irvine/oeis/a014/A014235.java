@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014235 Number of <code>n X n</code> matrices with entries 0 and 1 and no <code>2 X 2</code> submatrix of form <code>[ 1 1; 1 0 ]</code>.
+ * A014235 Number of n X n matrices with entries 0 and 1 and no 2 X 2 submatrix of form [ 1 1; 1 0 ].
  * @author Sean A. Irvine
  */
 public class A014235 implements Sequence {

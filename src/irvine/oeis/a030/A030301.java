@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030301 n-th run has length <code>2^(n-1)</code>.
+ * A030301 n-th run has length 2^(n-1).
  * @author Sean A. Irvine
  */
 public class A030301 implements Sequence {

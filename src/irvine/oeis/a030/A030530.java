@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030530 n appears <code>A070939(n)</code> times.
+ * A030530 n appears A070939(n) times.
  * @author Sean A. Irvine
  */
 public class A030530 implements Sequence {

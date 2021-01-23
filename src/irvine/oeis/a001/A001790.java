@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001790 Numerators in expansion of <code>1/sqrt(1-x)</code>.
+ * A001790 Numerators in expansion of 1/sqrt(1-x).
  * @author Sean A. Irvine
  */
 public class A001790 implements Sequence {

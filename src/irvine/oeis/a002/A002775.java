@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002775 <code>a(n) = n^2 * n!</code>.
+ * A002775 a(n) = n^2 * n!.
  * @author Sean A. Irvine
  */
 public class A002775 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A110206 Row sums of triangle <code>A110205</code>, where <code>A110205(n,k)</code> equals the sum of cubes of numbers <code>&lt; 2^n</code> having exactly k ones in their binary expansion.
+ * A110206 Row sums of triangle A110205, where A110205(n,k) equals the sum of cubes of numbers &lt; 2^n having exactly k ones in their binary expansion.
  * @author Georg Fischer
  */
 public class A110206 extends GeneratingFunctionSequence {

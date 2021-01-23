@@ -6,7 +6,7 @@ package irvine.oeis.a059;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059838 Number of permutations in the symmetric group <code>S_n</code> that have even order.
+ * A059838 Number of permutations in the symmetric group S_n that have even order.
  * @author Georg Fischer
  */
 public class A059838 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a172;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A172061 Expansion of <code>(2/(3*sqrt(1-4*z)-1+4*z))*((1-sqrt(1-4*z))/(2*z))^k</code> with <code>k=4</code>.
+ * A172061 Expansion of (2/(3*sqrt(1-4*z)-1+4*z))*((1-sqrt(1-4*z))/(2*z))^k with k=4.
  * @author Georg Fischer
  */
 public class A172061 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288133 Positions of 0 in <code>A288132</code>; complement of <code>A288134</code>.
+ * A288133 Positions of 0 in A288132; complement of A288134.
  * @author Georg Fischer
  */
 public class A288133 extends GeneratingFunctionSequence {

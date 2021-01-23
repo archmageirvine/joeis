@@ -6,7 +6,7 @@ package irvine.oeis.a164;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A164990 Number of square involutions of <code>n</code>.
+ * A164990 Number of square involutions of n.
  * @author Georg Fischer
  */
 public class A164990 extends HolonomicRecurrence {

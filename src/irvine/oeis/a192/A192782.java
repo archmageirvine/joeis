@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192782 Coefficient of x in the reduction of the n-th Fibonacci polynomial by <code>x^3-&gt;x^2+1</code>.
+ * A192782 Coefficient of x in the reduction of the n-th Fibonacci polynomial by x^3-&gt;x^2+1.
  * @author Sean A. Irvine
  */
 public class A192782 extends LinearRecurrence {

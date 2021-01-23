@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A235623 Numbers n for which in the prime power factorization of <code>n!</code>, the numbers of exponents 1 and <code>&gt;1</code> are equal.
+ * A235623 Numbers n for which in the prime power factorization of n!, the numbers of exponents 1 and &gt;1 are equal.
  * @author Georg Fischer
  */
 public class A235623 extends FiniteSequence {

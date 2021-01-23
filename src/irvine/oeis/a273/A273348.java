@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273348 The sum of the semiperimeters of the bargraphs of area <code>n (n&gt;=1)</code>.
+ * A273348 The sum of the semiperimeters of the bargraphs of area n (n&gt;=1).
  * @author Sean A. Irvine
  */
 public class A273348 extends LinearRecurrence {

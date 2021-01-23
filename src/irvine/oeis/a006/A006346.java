@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006346 The Sally sequence: the length of repetition avoided in <code>A006345</code>.
+ * A006346 The Sally sequence: the length of repetition avoided in A006345.
  * @author Sean A. Irvine
  */
 public class A006346 extends A006345 {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A308714 Decimal expansion of <code>2*Pi*sech(sqrt(5/3)*Pi/2)/3</code>.
+ * A308714 Decimal expansion of 2*Pi*sech(sqrt(5/3)*Pi/2)/3.
  * @author Georg Fischer
  */
 public class A308714 extends DecimalExpansionSequence {

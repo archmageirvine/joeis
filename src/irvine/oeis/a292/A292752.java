@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A292752 Dimensions of centralizer algebras of groups associated with <code>Z_4-codes</code>.
+ * A292752 Dimensions of centralizer algebras of groups associated with Z_4-codes.
  * @author Georg Fischer
  */
 public class A292752 extends GeneratingFunctionSequence {

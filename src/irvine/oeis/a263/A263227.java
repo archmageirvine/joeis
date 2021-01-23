@@ -4,7 +4,7 @@ package irvine.oeis.a263;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A263227 <code>a(n) = n*(67*n - 89)/2</code>.
+ * A263227 a(n) = n*(67*n - 89)/2.
  * @author Georg Fischer
  */
 public class A263227 extends GeneratingFunctionSequence {

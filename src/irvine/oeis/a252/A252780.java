@@ -6,7 +6,7 @@ package irvine.oeis.a252;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A252780 Number of ways of n-coloring the square grid graph <code>G_(4,4)</code> such that no rectangle exists with sides parallel to the axes having all 4 corners of the same color.
+ * A252780 Number of ways of n-coloring the square grid graph G_(4,4) such that no rectangle exists with sides parallel to the axes having all 4 corners of the same color.
  * @author Georg Fischer
  */
 public class A252780 extends HolonomicRecurrence {

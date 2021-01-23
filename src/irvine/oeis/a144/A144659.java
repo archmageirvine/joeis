@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001516;
 
 /**
- * A144659 <code>a(n) = A001516(n)/2</code>.
+ * A144659 a(n) = A001516(n)/2.
  * @author Georg Fischer
  */
 public class A144659 extends A001516 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A144659() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

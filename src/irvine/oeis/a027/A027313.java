@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027313 <code>a(n) = Sum_{k=0..2n} (k+1) * A026323(n, 2n-k)</code>.
+ * A027313 a(n) = Sum_{k=0..2n} (k+1) * A026323(n, 2n-k).
  * @author Sean A. Irvine
  */
 public class A027313 implements Sequence {

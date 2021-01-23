@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107684 Union of sequences <code>2^k-1, 2^k</code> and <code>2^k+1</code>.
+ * A107684 Union of sequences 2^k-1, 2^k and 2^k+1.
  * @author Georg Fischer
  */
 public class A107684 extends HolonomicRecurrence {

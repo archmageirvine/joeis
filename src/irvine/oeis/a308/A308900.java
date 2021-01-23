@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308900 An explicit example of an infinite sequence with <code>a(1)=1</code> and, for <code>n &gt;= 2, a(n)</code> and <code>S(n) = Sum_{i=1..n} a(i)</code> have no digit in common.
+ * A308900 An explicit example of an infinite sequence with a(1)=1 and, for n &gt;= 2, a(n) and S(n) = Sum_{i=1..n} a(i) have no digit in common.
  * @author Georg Fischer
  */
 public class A308900 extends HolonomicRecurrence {

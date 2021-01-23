@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013547 Numerator of the coefficient <code>[x^(2n)]</code> of the Taylor expansion <code>sec(cosec(x)-coth(x))= 1+x^2/72 -211*x^4/31104 +169339*x^6/235146240 -205787*x^8/13544423424+..</code>.
+ * A013547 Numerator of the coefficient [x^(2n)] of the Taylor expansion sec(cosec(x)-coth(x))= 1+x^2/72 -211*x^4/31104 +169339*x^6/235146240 -205787*x^8/13544423424+...
  * @author Sean A. Irvine
  */
 public class A013547 implements Sequence {

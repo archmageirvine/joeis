@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298014 Coordination sequence of <code>snub-632</code> tiling with respect to a trivalent node of type <code>short-short-long</code>.
+ * A298014 Coordination sequence of snub-632 tiling with respect to a trivalent node of type short-short-long.
  * @author Georg Fischer
  */
 public class A298014 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032349 Number of paths from <code>(0,0)</code> to <code>(3n,0)</code> that stay in first quadrant (but may touch horizontal axis), where each step is <code>(2,1),(1,2)</code> or <code>(1,-1)</code> and start with <code>(2,1)</code>.
+ * A032349 Number of paths from (0,0) to (3n,0) that stay in first quadrant (but may touch horizontal axis), where each step is (2,1),(1,2) or (1,-1) and start with (2,1).
  * @author Georg Fischer
  */
 public class A032349 extends HolonomicRecurrence {

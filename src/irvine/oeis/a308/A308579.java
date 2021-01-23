@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308579 <code>a(n) = (9*2^n - 6*n - 10)/2</code>.
+ * A308579 a(n) = (9*2^n - 6*n - 10)/2.
  * @author Georg Fischer
  */
 public class A308579 extends HolonomicRecurrence {

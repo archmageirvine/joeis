@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A240924 Digital root of squares of numbers not divisible by <code>2, 3</code> or 5.
+ * A240924 Digital root of squares of numbers not divisible by 2, 3 or 5.
  * @author Sean A. Irvine
  */
 public class A240924 extends PeriodicSequence {

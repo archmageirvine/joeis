@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030524 A convolution triangle of numbers obtained from <code>A036068</code>.
+ * A030524 A convolution triangle of numbers obtained from A036068.
  * @author Sean A. Irvine
  */
 public class A030524 extends MemoryFunction2<Long, Z> implements Sequence {

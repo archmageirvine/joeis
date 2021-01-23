@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187029 Number of 4-step one or two collinear space at a time queen's tours on an <code>n X n</code> board summed over all starting positions.
+ * A187029 Number of 4-step one or two collinear space at a time queen's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187029 extends GeneratingFunctionSequence {

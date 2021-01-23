@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015027 q-factorial numbers for <code>q=-12</code>.
+ * A015027 q-factorial numbers for q=-12.
  * @author Sean A. Irvine
  */
 public class A015027 implements Sequence {

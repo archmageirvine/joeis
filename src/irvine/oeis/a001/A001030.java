@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A001030 Fixed under <code>1 -&gt; 21, 2 -&gt; 211</code>.
+ * A001030 Fixed under 1 -&gt; 21, 2 -&gt; 211.
  * @author Sean A. Irvine
  */
 public class A001030 implements Sequence {

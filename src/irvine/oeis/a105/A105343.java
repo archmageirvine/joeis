@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A105343 Elements of even index in the sequence gives <code>A005893</code>, points on surface of tetrahedron: <code>2n^2 + 2</code> for <code>n &gt; 1</code>.
+ * A105343 Elements of even index in the sequence gives A005893, points on surface of tetrahedron: 2n^2 + 2 for n &gt; 1.
  * @author Georg Fischer
  */
 public class A105343 extends GeneratingFunctionSequence {

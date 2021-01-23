@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023143 Numbers n such that <code>prime(n) == 1 (mod n)</code>.
+ * A023143 Numbers n such that prime(n) == 1 (mod n).
  * @author Sean A. Irvine
  */
 public class A023143 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162495 Number of reduced words of length n in the icosahedral reflection group <code>[3,5]</code> of order 120.
+ * A162495 Number of reduced words of length n in the icosahedral reflection group [3,5] of order 120.
  * @author Georg Fischer
  */
 public class A162495 extends GeneratingFunctionSequence {

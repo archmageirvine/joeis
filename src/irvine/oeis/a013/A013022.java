@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013022 Expansion of e.g.f.: <code>cosh(sinh(x)+log(x+1))=1+4/2!*x^2-6/3!*x^3+43/4!*x^4-170/5!*x^5..</code>.
+ * A013022 Expansion of e.g.f.: cosh(sinh(x)+log(x+1))=1+4/2!*x^2-6/3!*x^3+43/4!*x^4-170/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A013022 implements Sequence {

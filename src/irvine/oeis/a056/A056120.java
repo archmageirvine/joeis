@@ -5,7 +5,7 @@ package irvine.oeis.a056;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A056120 <code>a(n) = (3^3)*4^(n-3)</code> with <code>a(0)=1, a(1)=1</code> and <code>a(2)=7</code>.
+ * A056120 a(n) = (3^3)*4^(n-3) with a(0)=1, a(1)=1 and a(2)=7.
  * @author Georg Fischer
  */
 public class A056120 extends HolonomicRecurrence {

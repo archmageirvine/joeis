@@ -4,7 +4,7 @@ package irvine.oeis.a040;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A040001 1 followed by <code>{1, 2}</code> repeated.
+ * A040001 1 followed by {1, 2} repeated.
  * @author Georg Fischer
  */
 public class A040001 extends GeneratingFunctionSequence {

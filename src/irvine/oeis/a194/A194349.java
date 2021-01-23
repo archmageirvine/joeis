@@ -6,7 +6,7 @@ package irvine.oeis.a194;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A194349 E.g.f.: <code>-log( sqrt(1-x^2) - x )</code>.
+ * A194349 E.g.f.: -log( sqrt(1-x^2) - x ).
  * @author Georg Fischer
  */
 public class A194349 extends HolonomicRecurrence {

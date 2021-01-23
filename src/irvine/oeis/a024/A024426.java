@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024426 <code>a(n) = floor((1/n)*(S(n,1) + S(n,2) + ... + S(n,n)))</code>, where <code>S(i,j)</code> are Stirling numbers of second kind.
+ * A024426 a(n) = floor((1/n)*(S(n,1) + S(n,2) + ... + S(n,n))), where S(i,j) are Stirling numbers of second kind.
  * @author Sean A. Irvine
  */
 public class A024426 implements Sequence {

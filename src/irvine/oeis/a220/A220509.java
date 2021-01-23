@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A220509 <code>n^3 + 3n + 3^n</code>.
+ * A220509 n^3 + 3n + 3^n.
  * @author Georg Fischer
  */
 public class A220509 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026903 <code>a(n)</code> is the number of multisets S of positive integers satisfying <code>E(S)=n</code>, where E <code>= 2nd</code> elementary symmetric function.
+ * A026903 a(n) is the number of multisets S of positive integers satisfying E(S)=n, where E = 2nd elementary symmetric function.
  * @author Sean A. Irvine
  */
 public class A026903 implements Sequence {

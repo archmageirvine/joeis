@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187107 Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space <code>R^9</code>.
+ * A187107 Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^9.
  * @author Sean A. Irvine
  */
 public class A187107 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A032059 "BGK" <code>(reversible</code>, element, unlabeled) transform of 1,0,1,0,...
+ * A032059 "BGK" (reversible, element, unlabeled) transform of 1,0,1,0,...
  * @author Sean A. Irvine
  */
 public class A032059 extends A032058 {

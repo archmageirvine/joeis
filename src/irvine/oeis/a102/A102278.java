@@ -5,13 +5,13 @@ package irvine.oeis.a102;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A102278 Numbers n such that <code>78*10^n + 217</code> is prime.
+ * A102278 Numbers n such that 78*10^n + 217 is prime.
  * @author Georg Fischer
  */
 public class A102278 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A102278() {
-    super(1, 1, 78, 10, +217, 0);
+    super(1, 1, 78, 10, +217);
   }
 }

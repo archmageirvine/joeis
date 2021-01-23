@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001386 Coordination sequence for <code>4-dimensional I-centered</code> tetragonal orthogonal lattice.
+ * A001386 Coordination sequence for 4-dimensional I-centered tetragonal orthogonal lattice.
  * @author Sean A. Irvine
  */
 public class A001386 implements Sequence {

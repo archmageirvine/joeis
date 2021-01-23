@@ -5,7 +5,7 @@ package irvine.oeis.a323;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A323735 <code>a(n)</code> is the largest minimal distance of a binary LCD <code>[n,2]</code> code.
+ * A323735 a(n) is the largest minimal distance of a binary LCD [n,2] code.
  * @author Georg Fischer
  */
 public class A323735 extends HolonomicRecurrence {

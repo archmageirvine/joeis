@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010793 <code>a(n) = n! (n+4)! / 4!</code>.
+ * A010793 a(n) = n! (n+4)! / 4!.
  * @author Sean A. Irvine
  */
 public class A010793 implements Sequence {

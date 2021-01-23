@@ -6,7 +6,7 @@ package irvine.oeis.a216;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A216541 Product of Lucas and Catalan numbers: <code>a(n) = A000032(n+1)*A000108(n)</code>.
+ * A216541 Product of Lucas and Catalan numbers: a(n) = A000032(n+1)*A000108(n).
  * @author Georg Fischer
  */
 public class A216541 extends HolonomicRecurrence {

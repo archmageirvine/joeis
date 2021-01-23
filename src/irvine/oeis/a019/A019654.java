@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019654 Consider problem of placing N queens on an <code>n X n</code> board so that each queen attacks precisely k others. Here <code>k=4</code> and sequence gives number of different solutions when N takes its maximal value.
+ * A019654 Consider problem of placing N queens on an n X n board so that each queen attacks precisely k others. Here k=4 and sequence gives number of different solutions when N takes its maximal value.
  * @author Sean A. Irvine
  */
 public class A019654 implements Sequence {
@@ -119,11 +119,7 @@ public class A019654 implements Sequence {
 
     // mirrored 270
     rotate(mWorkspace1, mWorkspace2);
-    if (compare(board, mWorkspace2) > 0) {
-      return false;
-    }
-
-    return true;
+    return compare(board, mWorkspace2) <= 0;
   }
 
   private boolean markAndCheck(final int[] attacks, final int x0, final int y0, final int dx, final int dy, final int bit) {

@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082762 Trinomial transform of Lucas numbers <code>(A000032)</code>.
+ * A082762 Trinomial transform of Lucas numbers (A000032).
  * @author Georg Fischer
  */
 public class A082762 extends LinearRecurrence {

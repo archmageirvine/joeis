@@ -4,7 +4,7 @@ package irvine.oeis.a156;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A156231 Sequence gives the Poincar&#233; series [or Poincare series] of an ordinal Hodge algebra, or algebra with straightening law, for a ring that the braid group on four strands acts on. It is <code>Cohen-Macaulay</code>.
+ * A156231 Sequence gives the Poincar\u00e9 series [or Poincare series] of an ordinal Hodge algebra, or algebra with straightening law, for a ring that the braid group on four strands acts on. It is Cohen-Macaulay.
  * @author Georg Fischer
  */
 public class A156231 extends GeneratingFunctionSequence {

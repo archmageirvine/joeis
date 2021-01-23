@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060312 Number of distinct ways to tile a <code>2 X n</code> rectangle with dominoes (solutions are identified if they are rotations or reflections of each other).
+ * A060312 Number of distinct ways to tile a 2 X n rectangle with dominoes (solutions are identified if they are rotations or reflections of each other).
  * @author Georg Fischer
  */
 public class A060312 extends GeneratingFunctionSequence {

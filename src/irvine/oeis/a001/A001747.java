@@ -15,7 +15,7 @@ public class A001747 implements Sequence {
 
   @Override
   public Z next() {
-    if (mN.equals(Z.ZERO)) {
+    if (mN.isZero()) {
       mN = Z.ONE;
       return Z.TWO;
     }

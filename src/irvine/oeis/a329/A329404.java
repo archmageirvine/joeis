@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329404 Interleave <code>2*n*(3*n-1) , (2*n+1)*(6*n+1)</code> for <code>n&gt;=0</code>.
+ * A329404 Interleave 2*n*(3*n-1) , (2*n+1)*(6*n+1) for n&gt;=0.
  * @author Georg Fischer
  */
 public class A329404 extends HolonomicRecurrence {

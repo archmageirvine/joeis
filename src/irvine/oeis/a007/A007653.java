@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007653 Coefficients of L-series for elliptic curve <code>"37a1": y^2 + y = x^3 - x</code>.
+ * A007653 Coefficients of L-series for elliptic curve "37a1": y^2 + y = x^3 - x.
  * @author Sean A. Irvine
  */
 public class A007653 extends MemoryFunction<Z, Long> implements Sequence {

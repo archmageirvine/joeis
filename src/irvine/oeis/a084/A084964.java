@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084964 Follow <code>n+2</code> by <code>n</code>. Also solution of <code>a(n+2)=a(n)+1, a(0)=2, a(1)=0</code>.
+ * A084964 Follow n+2 by n. Also solution of a(n+2)=a(n)+1, a(0)=2, a(1)=0.
  * @author Georg Fischer
  */
 public class A084964 extends GeneratingFunctionSequence {

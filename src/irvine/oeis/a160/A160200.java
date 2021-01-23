@@ -6,7 +6,7 @@ package irvine.oeis.a160;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A160200 Positive numbers y such that <code>y^2</code> is of the form <code>x^2+(x+761)^2</code> with integer <code>x</code>.
+ * A160200 Positive numbers y such that y^2 is of the form x^2+(x+761)^2 with integer x.
  * @author Georg Fischer
  */
 public class A160200 extends HolonomicRecurrence {

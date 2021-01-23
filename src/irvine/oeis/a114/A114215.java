@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114215 Number of derangements of <code>[n]</code> avoiding the patterns <code>123, 132</code> and 213.
+ * A114215 Number of derangements of [n] avoiding the patterns 123, 132 and 213.
  * @author Sean A. Irvine
  */
 public class A114215 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A161588 The list of the k values in the common solutions to the 2 equations <code>11*k+1=A^2, 15*k+1=B^2</code>.
+ * A161588 The list of the k values in the common solutions to the 2 equations 11*k+1=A^2, 15*k+1=B^2.
  * @author Sean A. Irvine
  */
 public class A161588 extends LinearRecurrence {

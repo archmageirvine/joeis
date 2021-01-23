@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190528 Number of <code>n-step one-sided</code> prudent walks avoiding exactly three consecutive West steps.
+ * A190528 Number of n-step one-sided prudent walks avoiding exactly three consecutive West steps.
  * @author Sean A. Irvine
  */
 public class A190528 extends LinearRecurrence {

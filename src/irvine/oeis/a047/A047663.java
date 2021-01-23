@@ -4,7 +4,7 @@ package irvine.oeis.a047;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A047663 Row 6 of square array defined in <code>A047662</code>.
+ * A047663 Row 6 of square array defined in A047662.
  * @author Georg Fischer
  */
 public class A047663 extends LinearRecurrence {

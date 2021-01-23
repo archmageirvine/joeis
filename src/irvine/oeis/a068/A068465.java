@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A068465 Decimal expansion of <code>Gamma(3/4)</code>.
+ * A068465 Decimal expansion of Gamma(3/4).
  * @author Sean A. Irvine
  */
 public class A068465 extends DecimalExpansionSequence {

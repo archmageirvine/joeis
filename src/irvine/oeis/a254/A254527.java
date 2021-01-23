@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254527 Total number of points on a sphere when both poles are on an x by x grid where <code>x=8*n+1</code>.
+ * A254527 Total number of points on a sphere when both poles are on an x by x grid where x=8*n+1.
  * @author Sean A. Irvine
  */
 public class A254527 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a002.A002808;
 
 /**
- * A023649 Convolution of composite numbers and <code>(F(2), F(3), F(4), ...)</code>.
+ * A023649 Convolution of composite numbers and (F(2), F(3), F(4), ...).
  * @author Sean A. Irvine
  */
 public class A023649 extends ConvolutionSequence {

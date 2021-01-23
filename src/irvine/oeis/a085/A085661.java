@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A085661 Decimal expansion of <code>sin(sin(sin(1)))</code>.
+ * A085661 Decimal expansion of sin(sin(sin(1))).
  * @author Georg Fischer
  */
 public class A085661 extends DecimalExpansionSequence {

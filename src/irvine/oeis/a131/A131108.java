@@ -7,7 +7,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A131108 <code>T(n,k) = 2*A007318(n,k) - A097806(n,k)</code>.
+ * A131108 T(n,k) = 2*A007318(n,k) - A097806(n,k).
  * @author Georg Fischer
  */
 public class A131108 extends GeneratingFunctionTriangle {

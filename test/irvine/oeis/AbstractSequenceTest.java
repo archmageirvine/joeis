@@ -32,6 +32,22 @@ public class AbstractSequenceTest extends TestCase {
 
   private static final int LINES_PER_FILE = 1000;
 
+  private final String mClassName;
+
+  public AbstractSequenceTest(final String className) {
+    super("test");
+    mClassName = className;
+  }
+
+  public AbstractSequenceTest() {
+    this(null);
+  }
+
+  @Override
+  public String getName() {
+    return mClassName;
+  }
+
   private String getTestVector(final int id) throws IOException {
     final String path = "irvine/oeis/seq/" + id / LINES_PER_FILE;
     try (final BufferedReader r = IOUtils.reader(path)) {
@@ -62,13 +78,19 @@ public class AbstractSequenceTest extends TestCase {
       final String[] parts = vector.split(",");
       assertTrue(parts.length > 0);
       final String aNumber = "A" + seqId;
-      final Sequence seq = SequenceFactory.sequence(aNumber);
       final int termsToExamine = Math.min(parts.length, TEST_TERMS.getOrDefault(aNumber, Integer.MAX_VALUE));
-      for (int k = 0; k < termsToExamine; ++k) {
-        assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
-      }
-      if (seq instanceof Closeable) {
-        ((Closeable) seq).close();
+      if (termsToExamine > 0) {
+        final Sequence seq = SequenceFactory.sequence(aNumber);
+        try {
+          for (int k = 0; k < termsToExamine; ++k) {
+            assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
+          }
+        } catch (final UnimplementedException e) {
+          // ok, these ones get a free pass
+        }
+        if (seq instanceof Closeable) {
+          ((Closeable) seq).close();
+        }
       }
     }
     final long delta = System.currentTimeMillis() - start;
@@ -78,18 +100,18 @@ public class AbstractSequenceTest extends TestCase {
   }
 
   public void test() throws IOException {
-    check(getClass().getName());
+    check(mClassName == null ? getClass().getName() : mClassName);
   }
 
   /**
    * Directly test the supplied sequences.
    * @param args sequences to test
-   * @throws IOException if an I/O error occurs.
+   * @throws IOException if an I/O error occurs
    */
   public static void main(final String[] args) throws IOException {
     for (final String aNumber : args) {
       System.out.println("Running " + aNumber);
-      new AbstractSequenceTest().check(aNumber);
+      new AbstractSequenceTest().check(aNumber.endsWith(".java") ? aNumber.substring(0, aNumber.length() - 5) : aNumber);
     }
   }
 }

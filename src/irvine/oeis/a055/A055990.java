@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055990 <code>a(n)</code> is its own 4th difference.
+ * A055990 a(n) is its own 4th difference.
  * @author Sean A. Irvine
  */
 public class A055990 extends LinearRecurrence {

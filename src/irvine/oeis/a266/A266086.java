@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266086 Alternating sum of <code>9-gonal</code> (or nonagonal) numbers.
+ * A266086 Alternating sum of 9-gonal (or nonagonal) numbers.
  * @author Sean A. Irvine
  */
 public class A266086 extends LinearRecurrence {

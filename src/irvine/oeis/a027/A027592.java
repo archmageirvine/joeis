@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027592 Sequence satisfies <code>T(a)=a</code>, where T is defined below.
+ * A027592 Sequence satisfies T(a)=a, where T is defined below.
  * @author Sean A. Irvine
  */
 public class A027592 implements Sequence {

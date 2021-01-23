@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027982 <code>Sum{(k+1)*T(n,2n-k)}, 0&lt;=k&lt;=2n</code>, T given by <code>A027960</code>.
+ * A027982 Sum{(k+1)*T(n,2n-k)}, 0&lt;=k&lt;=2n, T given by A027960.
  * @author Sean A. Irvine
  */
 public class A027982 extends LinearRecurrence {

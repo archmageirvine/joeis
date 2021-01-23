@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A164916 Denominators of a BBP series for <code>Pi/4</code>.
+ * A164916 Denominators of a BBP series for Pi/4.
  * @author Georg Fischer
  */
 public class A164916 extends GeneratingFunctionSequence {

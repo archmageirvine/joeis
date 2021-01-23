@@ -5,7 +5,7 @@ import irvine.oeis.CoordinationSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A014678 Poincar&#233; series [or Poincare series] (or Molien series) for <code>mod 2</code> cohomology of Lyons group.
+ * A014678 Poincar\u00e9 series [or Poincare series] (or Molien series) for mod 2 cohomology of Lyons group.
  * @author Sean A. Irvine
  */
 public class A014678 extends A014671 {

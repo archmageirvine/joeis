@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050570 Numbers n such that <code>89*2^n-1</code> is prime.
+ * A050570 Numbers n such that 89*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050570 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050570() {
-    super(1, 4, 89, 2, -1, 0);
+    super(1, 4, 89, 2, -1);
   }
 }

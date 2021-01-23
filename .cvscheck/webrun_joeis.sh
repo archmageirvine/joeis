@@ -20,6 +20,8 @@ export TEST_MODULES="test"
 export RES_MODULES=""
 export DOC_MODULES=""
 export JAVADOC_MODULES="src"
+# javadoc is just too slow on a project this large ...
+export DOCUMENTERS=" "
 export DOCUMENT_CHECKERS="classdocs spelldocs2008"
 export JAVAC_OPTS="-source 1.8 -Xlint -Xlint:-serial -proc:none"
 export COMPILERS="javacall"
@@ -37,7 +39,8 @@ export PLOT_PACKAGE_DEPENDENCIES_OPTS='irvine\|joeis irvine 2 2'
 export LINKAGE_OPTS="--alltests"
 export FINDBUGS_OPTS="-pluginList ${HOME}/java_apps/spotbugs-3.1.0-RC5/lib/fb-contrib-7.0.5.sb.jar"
 
-COLUMN_SEQUENCE=('cleancodedirs' 'compilemodules' 'localtests' 'sh-peepingdave.sh')
+# 'sh-peepingdave.sh' removed 2020-11-13
+COLUMN_SEQUENCE=('cleancodedirs' 'compilemodules' 'localtests')
 export COLUMN_SEQUENCE
 
 if [ "$1" ]; then

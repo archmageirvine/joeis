@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A025472 <code>a(n)</code> is the position of <code>7^n</code> among the powers of primes <code>(A000961)</code>.
+ * A025472 a(n) is the position of 7^n among the powers of primes (A000961).
  * @author Sean A. Irvine
  */
 public class A025472 extends A000961 {

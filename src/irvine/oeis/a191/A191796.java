@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191796 Number of DUU's in all length n left factors of Dyck paths; here <code>U=(1,1)</code> and <code>D=(1,-1)</code>.
+ * A191796 Number of DUU's in all length n left factors of Dyck paths; here U=(1,1) and D=(1,-1).
  * @author Georg Fischer
  */
 public class A191796 extends HolonomicRecurrence {

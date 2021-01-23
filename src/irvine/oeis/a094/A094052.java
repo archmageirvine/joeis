@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094052 Number of walks of length n between two adjacent nodes in the cycle graph <code>C_7</code>.
+ * A094052 Number of walks of length n between two adjacent nodes in the cycle graph C_7.
  * @author Georg Fischer
  */
 public class A094052 extends GeneratingFunctionSequence {

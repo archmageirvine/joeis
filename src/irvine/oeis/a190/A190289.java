@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A190289 Decimal expansion of <code>(3+sqrt(21))/4</code>.
+ * A190289 Decimal expansion of (3+sqrt(21))/4.
  * @author Georg Fischer
  */
 public class A190289 extends DecimalExpansionSequence {

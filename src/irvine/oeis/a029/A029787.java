@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A029787 Numbers n such that digits of <code>n^2</code> are not present in <code>n^3</code>.
+ * A029787 Numbers n such that digits of n^2 are not present in n^3.
  * @author Sean A. Irvine
  */
 public class A029787 implements Sequence {

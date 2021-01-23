@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007011 <code>a(n) =</code> smallest pseudoprime to base 2 with n prime factors.
+ * A007011 a(n) = smallest pseudoprime to base 2 with n prime factors.
  * @author Sean A. Irvine
  */
 public class A007011 implements Sequence {

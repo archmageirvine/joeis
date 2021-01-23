@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A067471 n-th root of <code>A067470(n)</code>.
+ * A067471 n-th root of A067470(n).
  * @author Georg Fischer
  */
 public class A067471 extends FiniteSequence {

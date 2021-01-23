@@ -5,7 +5,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178935 <code>a(n) = floor((3*4^n - 2*3^n)/5)</code>.
+ * A178935 a(n) = floor((3*4^n - 2*3^n)/5).
  * @author Georg Fischer
  */
 public class A178935 extends HolonomicRecurrence {

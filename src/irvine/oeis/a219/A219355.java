@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A219355 Size of the edge set of the Generalized Lucas Cube <code>Q_n(111)</code>.
+ * A219355 Size of the edge set of the Generalized Lucas Cube Q_n(111).
  * @author Georg Fischer
  */
 public class A219355 extends GeneratingFunctionSequence {

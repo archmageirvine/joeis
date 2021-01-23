@@ -5,7 +5,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064170 <code>a(1) = 1; a(n+1) =</code> product of numerator and denominator in <code>Sum_{k=1..n} 1/a(k)</code>.
+ * A064170 a(1) = 1; a(n+1) = product of numerator and denominator in Sum_{k=1..n} 1/a(k).
  * @author Georg Fischer
  */
 public class A064170 extends HolonomicRecurrence {

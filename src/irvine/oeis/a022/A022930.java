@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022930 Number of <code>4^m</code> between <code>3^n</code> and <code>3^(n+1)</code>.
+ * A022930 Number of 4^m between 3^n and 3^(n+1).
  * @author Sean A. Irvine
  */
 public class A022930 implements Sequence {

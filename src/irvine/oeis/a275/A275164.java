@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A275164 The 167 numbers n such that <code>n(n+1)</code> is <code>19-smooth</code>.
+ * A275164 The 167 numbers n such that n(n+1) is 19-smooth.
  * @author Georg Fischer
  */
 public class A275164 extends FiniteSequence {

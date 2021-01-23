@@ -6,7 +6,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055619 <code>a(n) = A*10^(4*n+1)+B</code> with <code>A=99000*(10^(4*n)-1)/9999+10</code> and <code>B=9900*(10^(4*n)-1)/9999+1</code>.
+ * A055619 a(n) = A*10^(4*n+1)+B with A=99000*(10^(4*n)-1)/9999+10 and B=9900*(10^(4*n)-1)/9999+1.
  * @author Georg Fischer
  */
 public class A055619 extends GeneratingFunctionSequence {

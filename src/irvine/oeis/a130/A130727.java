@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130727 List of triples <code>2n+1, 2n+3, 2n+2</code>.
+ * A130727 List of triples 2n+1, 2n+3, 2n+2.
  * @author Sean A. Irvine
  */
 public class A130727 extends LinearRecurrence {

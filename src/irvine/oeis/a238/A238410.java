@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238410 <code>a(n) = floor((3(n-1)^2 + 1)/2)</code>.
+ * A238410 a(n) = floor((3(n-1)^2 + 1)/2).
  * @author Sean A. Irvine
  */
 public class A238410 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256649 29-gonal pyramidal numbers: <code>a(n) = n*(n+1)*(9*n-8)/2</code>.
+ * A256649 29-gonal pyramidal numbers: a(n) = n*(n+1)*(9*n-8)/2.
  * @author Sean A. Irvine
  */
 public class A256649 extends LinearRecurrence {

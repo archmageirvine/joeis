@@ -29,7 +29,7 @@ public class A116068 implements Sequence {
 
   private boolean nonincreasing(Z n) {
     long p = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final long v = n.mod(10);
       if (v < p) {
         return false;

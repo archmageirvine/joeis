@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328152 <code>a(n)</code> is the number of squares of side length greater than 1 having vertices at the points of an <code>n X n</code> grid of dots.
+ * A328152 a(n) is the number of squares of side length greater than 1 having vertices at the points of an n X n grid of dots.
  * @author Georg Fischer
  */
 public class A328152 extends HolonomicRecurrence {

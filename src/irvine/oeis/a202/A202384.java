@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a012.A012862;
 
 /**
- * A202384 Denominators of coefficients in Taylor series expansion of <code>arccosh(cosec(x)*arctanh(x))</code>.
+ * A202384 Denominators of coefficients in Taylor series expansion of arccosh(cosec(x)*arctanh(x)).
  * @author Sean A. Irvine
  */
 public class A202384 extends A012862 {

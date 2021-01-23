@@ -5,7 +5,7 @@ package irvine.oeis.a250;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A250065 Number of length <code>6+6 0..n</code> arrays with no seven consecutive terms having the maximum of any two terms equal to the minimum of the remaining five terms.
+ * A250065 Number of length 6+6 0..n arrays with no seven consecutive terms having the maximum of any two terms equal to the minimum of the remaining five terms.
  * @author Georg Fischer
  */
 public class A250065 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000002;
 
 /**
- * A022293 Sequence <code>A022292</code> divided by 2.
+ * A022293 Sequence A022292 divided by 2.
  * @author Sean A. Irvine
  */
 public class A022293 extends A000002 {

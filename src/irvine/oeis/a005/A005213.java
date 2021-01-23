@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002426;
 
 /**
- * A005213 Number of symmetric, reduced unit interval schemes with <code>n+1</code> intervals <code>(n&gt;=1)</code>.
+ * A005213 Number of symmetric, reduced unit interval schemes with n+1 intervals (n&gt;=1).
  * @author Sean A. Irvine
  */
 public class A005213 extends A002426 {

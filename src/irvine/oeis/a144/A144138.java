@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144138 Chebyshev polynomial of the second kind <code>U(3,n)</code>.
+ * A144138 Chebyshev polynomial of the second kind U(3,n).
  * @author Georg Fischer
  */
 public class A144138 extends GeneratingFunctionSequence {

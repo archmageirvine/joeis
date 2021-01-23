@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052531 If n is even then <code>2^n+1</code> otherwise <code>2^n</code>.
+ * A052531 If n is even then 2^n+1 otherwise 2^n.
  * @author Sean A. Irvine
  */
 public class A052531 extends LinearRecurrence {

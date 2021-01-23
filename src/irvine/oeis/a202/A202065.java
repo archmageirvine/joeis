@@ -6,7 +6,7 @@ package irvine.oeis.a202;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A202065 The number of simple labeled graphs on <code>2n</code> nodes whose connected components are even length cycles.
+ * A202065 The number of simple labeled graphs on 2n nodes whose connected components are even length cycles.
  * @author Georg Fischer
  */
 public class A202065 extends HolonomicRecurrence {

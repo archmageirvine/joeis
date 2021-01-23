@@ -116,11 +116,7 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
     return new CC(z.re().negate(), z.im().negate());
   }
 
-  /**
-   * Return the conjugate of the given number.
-   * @param z complex number
-   * @return conjugate
-   */
+  @Override
   public CC conjugate(final CC z) {
     return new CC(z.re(), z.im().negate());
   }
@@ -283,6 +279,16 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
   }
 
   @Override
+  public CC sec(final CC z) {
+    return inverse(cos(z));
+  }
+
+  @Override
+  public CC csc(final CC z) {
+    return inverse(sin(z));
+  }
+
+  @Override
   public Z size() {
     return null;
   }
@@ -355,6 +361,11 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
     final CC b = add(CC.I, z);
     final CC log = log(divide(a, b));
     return divide(log, TWO_I);
+  }
+
+  @Override
+  public CC acot(final CC z) {
+    return subtract(new CC(CR.HALF_PI), atan(z));
   }
 
   @Override

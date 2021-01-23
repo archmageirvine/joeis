@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050621 Smallest n-digit number divisible by <code>2^n</code>.
+ * A050621 Smallest n-digit number divisible by 2^n.
  * @author Sean A. Irvine
  */
 public class A050621 extends LinearRecurrence {

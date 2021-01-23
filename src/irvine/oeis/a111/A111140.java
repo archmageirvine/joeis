@@ -6,7 +6,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111140 <code>a(n) = (n!/(n+1))*Sum_{k=0..n} binomial(n+k-1,k)/k!</code>.
+ * A111140 a(n) = (n!/(n+1))*Sum_{k=0..n} binomial(n+k-1,k)/k!.
  * @author Georg Fischer
  */
 public class A111140 extends HolonomicRecurrence {

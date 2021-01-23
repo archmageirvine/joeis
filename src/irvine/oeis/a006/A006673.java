@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006673 E.g.f. is the logarithmic derivative of e.g.f. for Pell numbers <code>[1, 0, 1, 2, 5, ...]</code>.
+ * A006673 E.g.f. is the logarithmic derivative of e.g.f. for Pell numbers [1, 0, 1, 2, 5, ...].
  * @author Sean A. Irvine
  */
 public class A006673 implements Sequence {

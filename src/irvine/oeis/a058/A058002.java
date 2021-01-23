@@ -6,7 +6,7 @@ package irvine.oeis.a058;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A058002 Number of <code>4 X 4</code> matrices with entries <code>mod</code> n, up to row and column permutation.
+ * A058002 Number of 4 X 4 matrices with entries mod n, up to row and column permutation.
  * @author Georg Fischer
  */
 public class A058002 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
 
 /**
- * A029909 Starting with <code>n</code> (but omitting the primes), repeatedly sum prime factors (counted with multiplicity) until reaching a limit.
+ * A029909 Starting with n (but omitting the primes), repeatedly sum prime factors (counted with multiplicity) until reaching a limit.
  * @author Sean A. Irvine
  */
 public class A029909 extends A018252 {
@@ -17,7 +17,7 @@ public class A029909 extends A018252 {
     do {
       prev = m;
       m = Cheetah.factor(m).sopfr();
-    } while (!Z.ZERO.equals(m) && !prev.equals(m));
+    } while (!m.isZero() && !prev.equals(m));
     return m;
   }
 }

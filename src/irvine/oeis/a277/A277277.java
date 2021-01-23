@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A277277 Number of overpal-free binary words of length <code>n</code>.
+ * A277277 Number of overpal-free binary words of length n.
  * @author Georg Fischer
  */
 public class A277277 extends GeneratingFunctionSequence {

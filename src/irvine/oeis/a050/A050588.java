@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050588 Numbers n such that <code>125*2^n-1</code> is prime.
+ * A050588 Numbers n such that 125*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050588 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050588() {
-    super(1, 2, 125, 2, -1, 0);
+    super(1, 2, 125, 2, -1);
   }
 }

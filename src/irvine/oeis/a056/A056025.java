@@ -5,7 +5,7 @@ package irvine.oeis.a056;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A056025 Numbers k such that <code>k^12 == 1 (mod 13^2)</code>.
+ * A056025 Numbers k such that k^12 == 1 (mod 13^2).
  * @author Georg Fischer
  */
 public class A056025 extends HolonomicRecurrence {

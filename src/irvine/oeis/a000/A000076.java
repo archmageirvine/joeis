@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000076 Number of integers <code>&lt;= 2^n</code> of form <code>4 x^2 + 4 x y + 5 y^2</code>.
+ * A000076 Number of integers &lt;= 2^n of form 4 x^2 + 4 x y + 5 y^2.
  * @author Sean A. Irvine
  */
 public class A000076 implements Sequence {

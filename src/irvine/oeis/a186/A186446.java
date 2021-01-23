@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186446 Expansion of <code>1/(1 - 7*x + 2*x^2)</code>.
+ * A186446 Expansion of 1/(1 - 7*x + 2*x^2).
  * @author Sean A. Irvine
  */
 public class A186446 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a057;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A057977 GCD of consecutive central binomial coefficients: <code>a(n) = gcd(A001405(n+1), A001405(n))</code>.
+ * A057977 GCD of consecutive central binomial coefficients: a(n) = gcd(A001405(n+1), A001405(n)).
  * @author Georg Fischer
  */
 public class A057977 extends HolonomicRecurrence {

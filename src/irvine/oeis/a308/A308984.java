@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A308984 If <code>a(n)</code> is not a term of <code>a(0)..a(n-1)</code>, then <code>a(n+1) = |a(n) - a(n-1)|</code>, otherwise <code>a(n+1) = a(n) + n -</code> m, where <code>a(m) = a(n), m &lt</code>; n, and m is maximal. <code>a(0)=0, a(1)=1</code>.
+ * A308984 If a(n) is not a term of a(0)..a(n-1), then a(n+1) = |a(n) - a(n-1)|, otherwise a(n+1) = a(n) + n - m, where a(m) = a(n), m &lt; n, and m is maximal. a(0)=0, a(1)=1.
  * @author Sean A. Irvine
  */
 public class A308984 extends MemorySequence {

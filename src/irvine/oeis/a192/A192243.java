@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192243 0-sequence of reduction of Lucas sequence by <code>x^2 -&gt; x+1</code>.
+ * A192243 0-sequence of reduction of Lucas sequence by x^2 -&gt; x+1.
  * @author Georg Fischer
  */
 public class A192243 extends LinearRecurrence {

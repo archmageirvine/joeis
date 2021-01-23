@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A114112 <code>a(1)=1, a(2)=2</code>; thereafter <code>a(n) = n+1</code> if n odd, <code>n-1</code> if n even.
+ * A114112 a(1)=1, a(2)=2; thereafter a(n) = n+1 if n odd, n-1 if n even.
  * @author Georg Fischer
  */
 public class A114112 extends GeneratingFunctionSequence {

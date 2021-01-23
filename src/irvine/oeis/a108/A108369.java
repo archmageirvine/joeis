@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108369 Coefficients of <code>x/(1+3*x+3*x^2-x^3)</code>.
+ * A108369 Coefficients of x/(1+3*x+3*x^2-x^3).
  * @author Georg Fischer
  */
 public class A108369 extends GeneratingFunctionSequence {

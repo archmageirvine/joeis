@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182464 <code>a(n) = 3a(n-1) - 2a(n-2)</code> with <code>a(0)=24</code> and <code>a(1)=60</code>.
+ * A182464 a(n) = 3a(n-1) - 2a(n-2) with a(0)=24 and a(1)=60.
  * @author Georg Fischer
  */
 public class A182464 extends LinearRecurrence {

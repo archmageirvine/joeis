@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A290828 Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule <code>961"</code>, based on the 5-celled von Neumann neighborhood.
+ * A290828 Decimal representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 961", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A290828 extends GeneratingFunctionSequence {

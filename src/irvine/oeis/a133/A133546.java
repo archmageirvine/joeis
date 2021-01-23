@@ -6,7 +6,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133546 Binomial transform of <code>[1,3,5,6,7,8,9,10,11,...] (i.e.</code>, positive integers except 2 and <code>4)</code>.
+ * A133546 Binomial transform of [1,3,5,6,7,8,9,10,11,...] (i.e., positive integers except 2 and 4).
  * @author Georg Fischer
  */
 public class A133546 extends GeneratingFunctionSequence {

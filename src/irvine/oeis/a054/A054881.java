@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054881 Number of walks of length n along the edges of an octahedron starting and ending at a vertex and also ( with <code>a(0)=0 )</code> between two opposite vertices.
+ * A054881 Number of walks of length n along the edges of an octahedron starting and ending at a vertex and also ( with a(0)=0 ) between two opposite vertices.
  * @author Georg Fischer
  */
 public class A054881 extends GeneratingFunctionSequence {

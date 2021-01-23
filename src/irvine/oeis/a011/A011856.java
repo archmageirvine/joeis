@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011856 <code>a(n) = floor(binomial(n,10)/10)</code>.
+ * A011856 a(n) = floor(binomial(n,10)/10).
  * @author Sean A. Irvine
  */
 public class A011856 implements Sequence {

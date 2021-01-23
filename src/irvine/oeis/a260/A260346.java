@@ -6,7 +6,7 @@ package irvine.oeis.a260;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A260346 Expansion of <code>x^2*((1 - 12*x + 50*x^2 - 76*x^3 + 42*x^4 - 48*x^5 + 32*x^6)/(1 - 4*x)^4 + 4*x^2/(1 - 4*x)^(5/2))</code>.
+ * A260346 Expansion of x^2*((1 - 12*x + 50*x^2 - 76*x^3 + 42*x^4 - 48*x^5 + 32*x^6)/(1 - 4*x)^4 + 4*x^2/(1 - 4*x)^(5/2)).
  * @author Georg Fischer
  */
 public class A260346 extends HolonomicRecurrence {

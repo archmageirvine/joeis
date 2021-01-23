@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002608 Glaisher's function <code>T(2n+1)</code>.
+ * A002608 Glaisher's function T(2n+1).
  * @author Sean A. Irvine
  */
 public class A002608 extends MemorySequence {

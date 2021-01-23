@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232493 If <code>n mod 2 = 0</code> then <code>2^n*3^(n-1)+2^(n+1)*3^(n/2-1)</code> otherwise <code>2^n*3^(n-1)+2^n*3^((n-1)/2)</code>.
+ * A232493 If n mod 2 = 0 then 2^n*3^(n-1)+2^(n+1)*3^(n/2-1) otherwise 2^n*3^(n-1)+2^n*3^((n-1)/2).
  * @author Sean A. Irvine
  */
 public class A232493 extends LinearRecurrence {

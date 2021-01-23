@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A289551 Unsigned byte values of the infamous <code>"09 F9" HD-DVD</code> encryption key.
+ * A289551 Unsigned byte values of the infamous "09 F9" HD-DVD encryption key.
  * @author Georg Fischer
  */
 public class A289551 extends FiniteSequence {

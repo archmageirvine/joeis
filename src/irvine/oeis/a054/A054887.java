@@ -6,7 +6,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054887 Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles <code>(Pi/3,Pi/5,Pi/7)</code>.
+ * A054887 Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles (Pi/3,Pi/5,Pi/7).
  * @author Georg Fischer
  */
 public class A054887 extends GeneratingFunctionSequence {

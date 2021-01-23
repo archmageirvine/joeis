@@ -5,7 +5,7 @@ package irvine.oeis.a176;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A176067 Binary analog of <code>A098755</code> and <code>A098756</code>: Binary representation of least available nonnegative integer with bit values alternating for entire sequence.
+ * A176067 Binary analog of A098755 and A098756: Binary representation of least available nonnegative integer with bit values alternating for entire sequence.
  * @author Georg Fischer
  */
 public class A176067 extends HolonomicRecurrence {

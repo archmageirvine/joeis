@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100256 Squares of second pentagonal numbers: <code>(1/4) n^2(3n+1)^2</code>.
+ * A100256 Squares of second pentagonal numbers: (1/4) n^2(3n+1)^2.
  * @author Georg Fischer
  */
 public class A100256 extends GeneratingFunctionSequence {

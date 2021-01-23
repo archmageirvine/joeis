@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238913 Number of self-inverse permutations p on <code>[n]</code> where the maximal displacement of an element equals 2.
+ * A238913 Number of self-inverse permutations p on [n] where the maximal displacement of an element equals 2.
  * @author Georg Fischer
  */
 public class A238913 extends GeneratingFunctionSequence {

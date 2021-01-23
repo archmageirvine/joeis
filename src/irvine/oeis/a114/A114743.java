@@ -5,7 +5,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114743 <code>a(1) =4, a(2) = 6, a(n+1) =</code> least composite number of the form <code>k*(a(n-1)) - a(n)</code>, not included earlier.
+ * A114743 a(1) =4, a(2) = 6, a(n+1) = least composite number of the form k*(a(n-1)) - a(n), not included earlier.
  * @author Georg Fischer
  */
 public class A114743 extends HolonomicRecurrence {

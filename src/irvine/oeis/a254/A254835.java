@@ -4,7 +4,7 @@ package irvine.oeis.a254;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A254835 Total number of nonagons in a variant of a nonagon expansion <code>("side-to-side"</code>, two consecutive sides) after n iterations.
+ * A254835 Total number of nonagons in a variant of a nonagon expansion ("side-to-side", two consecutive sides) after n iterations.
  * @author Georg Fischer
  */
 public class A254835 extends GeneratingFunctionSequence {

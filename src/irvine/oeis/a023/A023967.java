@@ -6,13 +6,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023967 First digit after decimal point of 8th root of <code>n</code>.
+ * A023967 First digit after decimal point of 8th root of n.
  * @author Sean A. Irvine
  */
 public class A023967 implements Sequence {
 
-  private static final CR TEN = CR.valueOf(10);
-  private static final CR R = CR.valueOf(8).inverse();
+  private static final CR TEN = CR.TEN;
+  private static final CR R = CR.EIGHT.inverse();
   private long mN = 0;
 
   @Override

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008338 <code>a(n+1) = a(n)/n!</code> if <code>n!</code> divides <code>a(n)</code> else <code>a(n)*n!</code>.
+ * A008338 a(n+1) = a(n)/n! if n! divides a(n) else a(n)*n!.
  * @author Sean A. Irvine
  */
 public class A008338 implements Sequence {
@@ -18,7 +18,7 @@ public class A008338 implements Sequence {
     if (++mN > 0) {
       mF = mF.multiply(mN);
       final Z[] qr = mA.divideAndRemainder(mF);
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         mA = mA.divide(mF);
       } else {
         mA = mA.multiply(mF);

@@ -5,13 +5,13 @@ package irvine.oeis.a186;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A186106 Numbers k such that <code>3*6^k - 1</code> is prime.
+ * A186106 Numbers k such that 3*6^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A186106 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A186106() {
-    super(1, 0, 3, 6, -1, 0);
+    super(1, 0, 3, 6, -1);
   }
 }

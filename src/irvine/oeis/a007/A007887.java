@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A007887 <code>a(n) = Fibonacci(n) mod 9</code>.
+ * A007887 a(n) = Fibonacci(n) mod 9.
  * @author Sean A. Irvine
  */
 public class A007887 extends PeriodicSequence {

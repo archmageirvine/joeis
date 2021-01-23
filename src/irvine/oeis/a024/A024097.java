@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001017;
 
 /**
- * A024097 <code>a(n) = 8^n - n^9</code>.
+ * A024097 a(n) = 8^n - n^9.
  * @author Sean A. Irvine
  */
 public class A024097 extends A001017 {

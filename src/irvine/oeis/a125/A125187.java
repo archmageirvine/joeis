@@ -6,7 +6,7 @@ package irvine.oeis.a125;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A125187 Number of Dumont permutations of the first kind of length <code>2n</code> avoiding the patterns 1423 and 4132.
+ * A125187 Number of Dumont permutations of the first kind of length 2n avoiding the patterns 1423 and 4132.
  * @author Georg Fischer
  */
 public class A125187 extends HolonomicRecurrence {

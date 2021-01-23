@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a092.A092606;
 
 /**
- * A003156 A self-generating sequence.
+ * A003156 A self-generating sequence (see Comments for definition).
  * @author Sean A. Irvine
  */
 public class A003156 extends A092606 {
@@ -15,7 +15,7 @@ public class A003156 extends A092606 {
   public Z next() {
     while (true) {
       ++mN;
-      if (Z.ZERO.equals(super.next())) {
+      if (super.next().isZero()) {
         return Z.valueOf(mN);
       }
     }

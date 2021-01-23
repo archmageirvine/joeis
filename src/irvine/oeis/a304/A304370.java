@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304370 Number of function calls of the first kind required to compute <code>ack(3,n)</code>, where ack denotes the Ackermann function.
+ * A304370 Number of function calls of the first kind required to compute ack(3,n), where ack denotes the Ackermann function.
  * @author Georg Fischer
  */
 public class A304370 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a159;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A159774 Least number m, written in base n, such that <code>m/2</code> is obtained merely by shifting the leftmost digit of m to the right end, and <code>2m</code> by shifting the rightmost digit of m to the left end, digits defined in base <code>n</code>.
+ * A159774 Least number m, written in base n, such that m/2 is obtained merely by shifting the leftmost digit of m to the right end, and 2m by shifting the rightmost digit of m to the left end, digits defined in base n.
  * @author Georg Fischer
  */
 public class A159774 extends FiniteSequence {

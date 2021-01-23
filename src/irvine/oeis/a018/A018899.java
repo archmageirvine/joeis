@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A018899 Smallest positive integer not representable as the sum of at most n distinct numbers of form <code>2^a*3^b</code>.
+ * A018899 Smallest positive integer not representable as the sum of at most n distinct numbers of form 2^a*3^b.
  * @author Sean A. Irvine
  */
 public class A018899 extends A003586 {

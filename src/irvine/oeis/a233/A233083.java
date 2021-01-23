@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233083 Number of <code>2 X n 0..3</code> arrays with no element <code>x(i,j)</code> adjacent to value <code>3-x(i,j)</code> horizontally or antidiagonally, top left element zero, and 1 appearing before 2 in row major order.
+ * A233083 Number of 2 X n 0..3 arrays with no element x(i,j) adjacent to value 3-x(i,j) horizontally or antidiagonally, top left element zero, and 1 appearing before 2 in row major order.
  * @author Georg Fischer
  */
 public class A233083 extends GeneratingFunctionSequence {

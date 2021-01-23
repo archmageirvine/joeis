@@ -4,7 +4,7 @@ package irvine.oeis.a198;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A198834 Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with <code>(0,1,1)</code> or <code>(1,1,1)</code>.
+ * A198834 Number of sequences of n coin flips that win on the last flip, if the sequence of flips ends with (0,1,1) or (1,1,1).
  * @author Georg Fischer
  */
 public class A198834 extends GeneratingFunctionSequence {

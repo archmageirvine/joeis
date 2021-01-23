@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007302;
 
 /**
- * A216195 Abelian complexity function of the period-doubling sequence <code>(A096268)</code>.
+ * A216195 Abelian complexity function of the period-doubling sequence (A096268).
  * @author Georg Fischer
  */
 public class A216195 extends A007302 {
@@ -15,7 +15,7 @@ public class A216195 extends A007302 {
   /** Construct the sequence. */
   public A216195() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

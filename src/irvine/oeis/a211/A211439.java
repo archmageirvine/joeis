@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211439 Number of ordered triples <code>(w,x,y)</code> with all terms in <code>{-n,...,0,...,n}</code> and <code>w+3x+3y=0</code>.
+ * A211439 Number of ordered triples (w,x,y) with all terms in {-n,...,0,...,n} and w+3x+3y=0.
  * @author Georg Fischer
  */
 public class A211439 extends GeneratingFunctionSequence {

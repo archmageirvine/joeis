@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019278 Numbers n such that <code>sigma(sigma(n)) = k*n</code> for some k.
+ * A019278 Numbers n such that sigma(sigma(n)) = k*n for some k.
  * @author Sean A. Irvine
  */
 public class A019278 implements Sequence {
@@ -16,7 +16,7 @@ public class A019278 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Cheetah.factor(Cheetah.factor(mN).sigma()).sigma().mod(mN).equals(Z.ZERO)) {
+      if (Cheetah.factor(Cheetah.factor(mN).sigma()).sigma().mod(mN).isZero()) {
         return mN;
       }
     }

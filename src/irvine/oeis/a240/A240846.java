@@ -4,7 +4,7 @@ package irvine.oeis.a240;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A240846 <code>a(0)=0, a(1)=1, a(n) = a(n-1)*12 + 13</code>.
+ * A240846 a(0)=0, a(1)=1, a(n) = a(n-1)*12 + 13.
  * @author Georg Fischer
  */
 public class A240846 extends GeneratingFunctionSequence {

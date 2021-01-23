@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190168 Number of peakless Motzkin paths of length n having no <code>(1,0)-steps</code> at levels <code>1,3,5,... </code>.
+ * A190168 Number of peakless Motzkin paths of length n having no (1,0)-steps at levels 1,3,5,... .
  * @author Georg Fischer
  */
 public class A190168 extends HolonomicRecurrence {

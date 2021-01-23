@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075116 Binomial transform of <code>A073817: a(n)=Sum(Binomial(n,k)*A073817(k),(k=0,..,n))</code>.
+ * A075116 Binomial transform of A073817: a(n)=Sum(Binomial(n,k)*A073817(k),(k=0,..,n)).
  * @author Sean A. Irvine
  */
 public class A075116 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002829;
 
 /**
- * A286757 Number of labeled connected rooted trivalent graphs with <code>2n</code> nodes.
+ * A286757 Number of labeled connected rooted trivalent graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A286757 extends A002829 {

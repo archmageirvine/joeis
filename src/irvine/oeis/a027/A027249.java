@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a026.A026780;
 
 /**
- * A027249 <code>a(n) = Sum_{k=0..n-2} T(n,k) * T(n,k+2)</code>, with T given by <code>A026780</code>.
+ * A027249 a(n) = Sum_{k=0..n-2} T(n,k) * T(n,k+2), with T given by A026780.
  * @author Sean A. Irvine
  */
 public class A027249 extends A026780 {

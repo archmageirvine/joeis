@@ -1,28 +1,35 @@
 package irvine.oeis.a001;
 
-import irvine.math.Polyomino;
+import irvine.math.lattice.Canons;
+import irvine.math.lattice.Hunter;
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000105;
+import irvine.oeis.Sequence;
 
 /**
  * A001419 Number of n-celled polyominoes with holes.
  * @author Sean A. Irvine
  */
-public class A001419 extends A000105 {
+public class A001419 implements Sequence {
 
-  {
-    super.next(); // skip 0th term
-  }
+  private final ParallelHunter mHunter = new ParallelHunter(6,
+    () -> new Hunter(Lattices.Z2, true),
+    () -> new Hunter(Lattices.Z2, true) {
+      {
+        setKeeper((animal, forbidden) -> {
+          if (Canons.Z2_FREE.isCanonical(animal) && animal.isHoly(Lattices.Z2)) {
+            increment(1);
+          }
+        });
+      }
+    }
+  );
+
+  private int mN = 0;
 
   @Override
   public Z next() {
-    super.next();
-    long c = 0;
-    for (final Polyomino p : mA) {
-      if (p.isHoly()) {
-        ++c;
-      }
-    }
-    return Z.valueOf(c);
+    return Z.valueOf(mHunter.count(++mN));
   }
 }

@@ -6,7 +6,7 @@ package irvine.oeis.a073;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A073525 Result of applying the transformation on generating functions A <code>-&gt; 1/((1-x)*(1-x*A))</code> to the g.f. for <code>A024718</code>.
+ * A073525 Result of applying the transformation on generating functions A -&gt; 1/((1-x)*(1-x*A)) to the g.f. for A024718.
  * @author Georg Fischer
  */
 public class A073525 extends HolonomicRecurrence {

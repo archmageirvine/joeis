@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A258704 Orders of groups in the Thompson chain of subgroups of the Conway simple group <code>Co_1</code>.
+ * A258704 Orders of groups in the Thompson chain of subgroups of the Conway simple group Co_1.
  * @author Georg Fischer
  */
 public class A258704 extends FiniteSequence {

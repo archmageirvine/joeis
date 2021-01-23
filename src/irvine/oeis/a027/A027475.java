@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027475 <code>a(n) = (n-1)*15^(n-2)</code>.
+ * A027475 a(n) = (n-1)*15^(n-2).
  * @author Georg Fischer
  */
 public class A027475 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a074;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A074635 <code>a(0)=1, a(n) = Sum_{k=0..n} (binomial(n,k)^2 * binomial(n+k,k+1)^2)/n^2</code>.
+ * A074635 a(0)=1, a(n) = Sum_{k=0..n} (binomial(n,k)^2 * binomial(n+k,k+1)^2)/n^2.
  * @author Georg Fischer
  */
 public class A074635 extends HolonomicRecurrence {

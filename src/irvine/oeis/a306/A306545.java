@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306545 Number of permutations p of <code>[2n+2]</code> such that <code>min_{j=1..2n+2} |p(j)-j| =</code> n;.
+ * A306545 Number of permutations p of [2n+2] such that min_{j=1..2n+2} |p(j)-j| = n;.
  * @author Georg Fischer
  */
 public class A306545 extends GeneratingFunctionSequence {

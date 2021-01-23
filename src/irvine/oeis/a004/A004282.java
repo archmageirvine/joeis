@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004282 <code>a(n) = n*(n+1)^2*(n+2)^2/12</code>.
+ * A004282 a(n) = n*(n+1)^2*(n+2)^2/12.
  * @author Sean A. Irvine
  */
 public class A004282 implements Sequence {

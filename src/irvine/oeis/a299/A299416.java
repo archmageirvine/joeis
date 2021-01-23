@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 import irvine.oeis.a022.A022424;
 
 /**
- * A299416 Solution <code>a( )</code> of the complementary equation <code>a(n) = b(n-1) + b(n-2)</code>, where <code>a(0) = 3, a(1) = 4</code>; see Comments.
+ * A299416 Solution a( ) of the complementary equation a(n) = b(n-1) + b(n-2), where a(0) = 3, a(1) = 4; see Comments.
  * @author Sean A. Irvine
  */
 public class A299416 extends A022424 {

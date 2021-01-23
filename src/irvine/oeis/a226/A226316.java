@@ -6,7 +6,7 @@ package irvine.oeis.a226;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A226316 G.f.: <code>1/2 + 1/(1+sqrt(1-8*x+8*x^2))</code>.
+ * A226316 Expansion of g.f. 1/2 + 1/(1+sqrt(1-8*x+8*x^2)).
  * @author Georg Fischer
  */
 public class A226316 extends HolonomicRecurrence {

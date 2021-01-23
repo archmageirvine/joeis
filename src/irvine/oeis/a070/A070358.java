@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070358 <code>a(n) = 3^n mod 32</code>.
+ * A070358 a(n) = 3^n mod 32.
  * @author Sean A. Irvine
  */
 public class A070358 extends LinearRecurrence {

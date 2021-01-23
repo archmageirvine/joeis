@@ -6,7 +6,7 @@ package irvine.oeis.a047;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A047073 <code>Sum{T(i,n-i): i=0,1,...,n}</code>, array T as in <code>A047072</code>.
+ * A047073 Sum{T(i,n-i): i=0,1,...,n}, array T as in A047072.
  * @author Georg Fischer
  */
 public class A047073 extends HolonomicRecurrence {

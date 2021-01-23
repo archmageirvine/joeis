@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020121 Ceiling of <code>GAMMA(n+4/7)/GAMMA(4/7)</code>.
+ * A020121 Ceiling of GAMMA(n+4/7)/GAMMA(4/7).
  * @author Sean A. Irvine
  */
 public class A020121 implements Sequence {

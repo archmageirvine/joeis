@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A210379 Number of <code>2 X 2</code> matrices with all terms in <code>{0,1,...,n}</code> and odd trace.
+ * A210379 Number of 2 X 2 matrices with all terms in {0,1,...,n} and odd trace.
  * @author Georg Fischer
  */
 public class A210379 extends GeneratingFunctionSequence {

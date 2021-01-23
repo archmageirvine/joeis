@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000802 Maximal number of states in deterministic finite automaton accepting a language consisting of some words of length <code>n</code>.
+ * A000802 Maximal number of states in deterministic finite automaton accepting a language consisting of some words of length n.
  * @author Sean A. Irvine
  */
 public class A000802 implements Sequence {

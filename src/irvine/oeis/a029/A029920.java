@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029920 Convert n from centimeters (cm) to inches <code>(")</code>.
+ * A029920 Convert n from centimeters (cm) to inches (").
  * @author Sean A. Irvine
  */
 public class A029920 implements Sequence {

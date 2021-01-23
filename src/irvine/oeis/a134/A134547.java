@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134547 <code>a(n)=5n^2+20n+4</code>.
+ * A134547 a(n)=5n^2+20n+4.
  * @author Sean A. Irvine
  */
 public class A134547 extends LinearRecurrence {

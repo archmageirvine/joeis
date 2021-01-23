@@ -6,7 +6,7 @@ package irvine.oeis.a247;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A247287 Number of weak peaks in all Motzkin paths of length <code>n</code>. A weak peak of a Motzkin path is a vertex on the top of a hump. A hump is an upstep followed by 0 or more flatsteps followed by a downstep. For example, the Motzkin path <code>u*duu*h*h*dd</code>, where <code>u=(1,1), h=(1,0), d(1,-1)</code>, has 4 weak peaks (shown by the stars).
+ * A247287 Number of weak peaks in all Motzkin paths of length n. A weak peak of a Motzkin path is a vertex on the top of a hump. A hump is an upstep followed by 0 or more flatsteps followed by a downstep. For example, the Motzkin path u*duu*h*h*dd, where u=(1,1), h=(1,0), d(1,-1), has 4 weak peaks (shown by the stars).
  * @author Georg Fischer
  */
 public class A247287 extends HolonomicRecurrence {

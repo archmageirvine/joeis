@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002251;
 
 /**
- * A026247 <code>a(n) = (1/2)*s(n)</code>, where <code>s(n)</code> is n-th even number in <code>A002251</code>.
+ * A026247 a(n) = (1/2)*s(n), where s(n) is n-th even number in A002251.
  * @author Sean A. Irvine
  */
 public class A026247 extends A002251 {

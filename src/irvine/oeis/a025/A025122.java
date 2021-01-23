@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001950;
 
 /**
- * A025122 <code>s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n-k+1)</code>, where k <code>= [ n/2 ], s = A001950</code> (upper Wythoff sequence).
+ * A025122 s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n-k+1), where k = [ n/2 ], s = A001950 (upper Wythoff sequence).
  * @author Sean A. Irvine
  */
 public class A025122 extends HalfConvolutionSequence {

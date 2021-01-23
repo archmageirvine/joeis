@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227906 Coins left after packing heart patterns (fixed orientation) into <code>n X n</code> coins.
+ * A227906 Coins left after packing heart patterns (fixed orientation) into n X n coins.
  * @author Georg Fischer
  */
 public class A227906 extends GeneratingFunctionSequence {

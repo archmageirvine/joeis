@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129961 Main diagonal of triangular array T: <code>T(j,1) = 1</code> for <code>((j-1) mod 8) &lt; 4</code>, else <code>0; T(j,k) = T(j-1,k-1)+T(j,k-1)</code> for <code>2 &lt;= k &lt;=</code> j.
+ * A129961 Main diagonal of triangular array T: T(j,1) = 1 for ((j-1) mod 8) &lt; 4, else 0; T(j,k) = T(j-1,k-1)+T(j,k-1) for 2 &lt;= k &lt;= j.
  * @author Georg Fischer
  */
 public class A129961 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143471 Expansion of <code>1/(x^10*p(x + 1/x))</code>, where <code>p(x) = 1 - x^3 - x^5 - x^7 + x^10</code> is a Salem polynomial.
+ * A143471 Expansion of 1/(x^10*p(x + 1/x)), where p(x) = 1 - x^3 - x^5 - x^7 + x^10 is a Salem polynomial.
  * @author Georg Fischer
  */
 public class A143471 extends GeneratingFunctionSequence {

@@ -5,13 +5,13 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032365 Numbers k such that <code>31*2^k+1</code> is prime.
+ * A032365 Numbers k such that 31*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A032365 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A032365() {
-    super(1, 8, 31, 2, +1, 0);
+    super(1, 8, 31, 2, 1);
   }
 }

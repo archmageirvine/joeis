@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233428 Number of tilings of a <code>3 X 5n</code> rectangle with <code>3n</code> pentominoes of any shape.
+ * A233428 Number of tilings of a 3 X 5n rectangle with 3n pentominoes of any shape.
  * @author Georg Fischer
  */
 public class A233428 extends GeneratingFunctionSequence {

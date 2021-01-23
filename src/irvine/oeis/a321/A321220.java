@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321220 <code>a(n) = n+2</code> if n is even, otherwise <code>a(n) = 2*n+1</code> if n is odd.
+ * A321220 a(n) = n+2 if n is even, otherwise a(n) = 2*n+1 if n is odd.
  * @author Georg Fischer
  */
 public class A321220 extends GeneratingFunctionSequence {

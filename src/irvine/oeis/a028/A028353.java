@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028353 Coefficient of <code>x^(2*n+1)</code> in <code>arctanh(x)/sqrt(1-x^2)</code>, multiplied by <code>(2*n+1)!</code>.
+ * A028353 Coefficient of x^(2*n+1) in arctanh(x)/sqrt(1-x^2), multiplied by (2*n+1)!.
  * @author Sean A. Irvine
  */
 public class A028353 implements Sequence {

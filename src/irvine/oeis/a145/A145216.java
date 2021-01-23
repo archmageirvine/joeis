@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145216 Self-convolution of <code>(1^3, 2^3, 3^3, 4^3, ... )</code>.
+ * A145216 Self-convolution of (1^3, 2^3, 3^3, 4^3, ... ).
  * @author Georg Fischer
  */
 public class A145216 extends GeneratingFunctionSequence {

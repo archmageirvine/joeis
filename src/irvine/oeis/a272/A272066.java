@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A272066 <code>a(n) = (10^n-1)^3</code>.
+ * A272066 a(n) = (10^n-1)^3.
  * @author Georg Fischer
  */
 public class A272066 extends GeneratingFunctionSequence {

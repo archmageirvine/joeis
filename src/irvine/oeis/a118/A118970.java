@@ -6,7 +6,7 @@ package irvine.oeis.a118;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A118970 <code>a(n) = 3*binomial(5n+2,n)/(4n+3)</code>.
+ * A118970 a(n) = 3*binomial(5n+2,n)/(4n+3).
  * @author Georg Fischer
  */
 public class A118970 extends HolonomicRecurrence {

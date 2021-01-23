@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059193 Engel expansion of <code>1/e = 0.367879... </code>.
+ * A059193 Engel expansion of 1/e = 0.367879... .
  * @author Georg Fischer
  */
 public class A059193 extends GeneratingFunctionSequence {

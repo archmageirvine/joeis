@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A121318 Molecular topological indices of the path graphs <code>P_n</code>.
+ * A121318 Molecular topological indices of the path graphs P_n.
  * @author Georg Fischer
  */
 public class A121318 extends GeneratingFunctionSequence {

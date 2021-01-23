@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A127904 Smallest m such that <code>A008687(m) = n</code>.
+ * A127904 Smallest m such that A008687(m) = n.
  * @author Georg Fischer
  */
 public class A127904 extends GeneratingFunctionSequence {

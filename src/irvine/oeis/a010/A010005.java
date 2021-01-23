@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010005 <code>a(0) = 1, a(n) = 15*n^2 + 2</code> for <code>n&gt;0</code>.
+ * A010005 a(0) = 1, a(n) = 15*n^2 + 2 for n&gt;0.
  * @author Sean A. Irvine
  */
 public class A010005 implements Sequence {
@@ -14,6 +14,6 @@ public class A010005 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.ZERO.equals(mN) ? Z.ONE : mN.square().multiply(15).add(2);
+    return mN.isZero() ? Z.ONE : mN.square().multiply(15).add(2);
   }
 }

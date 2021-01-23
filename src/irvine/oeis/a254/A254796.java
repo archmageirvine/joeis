@@ -5,7 +5,7 @@ package irvine.oeis.a254;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A254796 Denominators of the convergents of the generalized continued fraction <code>2 + 1^2/(4 + 3^2/(4 + 5^2/(4 + ... )))</code>.
+ * A254796 Denominators of the convergents of the generalized continued fraction 2 + 1^2/(4 + 3^2/(4 + 5^2/(4 + ... ))).
  * @author Georg Fischer
  */
 public class A254796 extends HolonomicRecurrence {

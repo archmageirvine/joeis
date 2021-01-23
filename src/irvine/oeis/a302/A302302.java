@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302302 Number of triples <code>(i,j,k)</code> such that <code>i+j+k &gt; 0</code> with <code>-n &lt;=</code> i,j,k <code>&lt;= n</code>.
+ * A302302 Number of triples (i,j,k) such that i+j+k &gt; 0 with -n &lt;= i,j,k &lt;= n.
  * @author Georg Fischer
  */
 public class A302302 extends GeneratingFunctionSequence {

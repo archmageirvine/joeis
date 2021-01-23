@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027414 G.f. for Moebius transform is <code>x * (1 + x) / (1 + x^4)</code>.
+ * A027414 G.f. for Moebius transform is x * (1 + x) / (1 + x^4).
  * @author Sean A. Irvine
  */
 public class A027414 implements Sequence {

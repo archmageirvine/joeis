@@ -14,32 +14,27 @@ import irvine.oeis.a033.A033307;
  */
 public class A030167 extends ContinuedFractionSequence {
 
-  private static final CR CHAMPERKNOWNE = new CR() {
-
-    private final Sequence mDigits = new A033307();
-    private Z mUnscaled = Z.ZERO;
-    private Z mPowersOfTen = Z.ONE;
-
-    @Override
-    protected Z approximate(final int p) {
-      if (p >= 1) {
-        return Z.ZERO;
-      }
-      while (mUnscaled.bitLength() <= -p) {
-        mUnscaled = mUnscaled.multiply(10).add(mDigits.next());
-        mPowersOfTen = mPowersOfTen.multiply(10);
-      }
-      // This is a little bit circuitous but seems to work reliably
-      return CR.valueOf(new Q(mUnscaled, mPowersOfTen)).shiftLeft(-p).toZ();
-    }
-  };
-
   /** Construct the sequence. */
   public A030167() {
     super(new DecimalExpansionSequence() {
+
+      private final Sequence mChamperknowne = new A033307();
+      private CR mA = CR.ZERO;
+      private Z mNum = Z.ZERO;
+      private Z mDen = Z.ONE;
+
+      @Override
+      protected void ensureAccuracy(final int n) {
+        while (mNum.bitLength() < 4 * n) { // 4 > log2(10)
+          mNum = mNum.multiply(10).add(mChamperknowne.next());
+          mDen = mDen.multiply(10);
+        }
+        mA = CR.valueOf(new Q(mNum, mDen));
+      }
+
       @Override
       protected CR getCR() {
-        return CHAMPERKNOWNE;
+        return mA;
       }
     });
   }

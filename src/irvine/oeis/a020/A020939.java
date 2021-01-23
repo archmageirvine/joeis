@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 /**
- * A020939 Greatest k such that <code>(k-th</code> prime) <code>&lt; (9</code> times <code>n-th</code> prime).
+ * A020939 Greatest k such that (k-th prime) &lt; (9 times n-th prime).
  * @author Sean A. Irvine
  */
 public class A020939 extends A020901 {

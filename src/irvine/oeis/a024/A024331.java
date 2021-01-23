@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a009.A009423;
 
 /**
- * A024331 Expansion of <code>log(1+x)*log(1+tanh(x))/2</code>.
+ * A024331 Expansion of log(1+x)*log(1+tanh(x))/2.
  * @author Sean A. Irvine
  */
 public class A024331 extends A009423 {

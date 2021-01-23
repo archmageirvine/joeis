@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052465 <code>a(n)</code> is the solution k to <code>Mod[24k,11^n]==1</code>.
+ * A052465 a(n) is the smallest positive integral solution k to 24*k == 1 (mod 11^n).
  * @author Sean A. Irvine
  */
 public class A052465 extends LinearRecurrence {

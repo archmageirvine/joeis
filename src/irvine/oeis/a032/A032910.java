@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A032910 Largest sequence of primes obtained by adding <code>two-distinct-digit</code> primes, growing from left to right.
+ * A032910 Largest sequence of primes obtained by adding two-distinct-digit primes, growing from left to right.
  * @author Georg Fischer
  */
 public class A032910 extends FiniteSequence {

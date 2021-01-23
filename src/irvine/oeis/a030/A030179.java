@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030179 Quarter-squares squared: <code>A002620^2</code>.
+ * A030179 Quarter-squares squared: A002620^2.
  * @author Sean A. Irvine
  */
 public class A030179 extends LinearRecurrence {

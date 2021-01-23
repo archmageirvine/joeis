@@ -66,13 +66,13 @@ public class A005616 extends A005640 {
           int v = c[k];
           while (v-- > 0) {
             product = product.multiply(switchE((int) (q % ops), k));
-            if (Z.ZERO.equals(product)) { // Efficiency
+            if (product.isZero()) { // Efficiency
               break outer;
             }
             q /= ops;
           }
         }
-        assert q == 0 || Z.ZERO.equals(product);
+        assert q == 0 || product.isZero();
         t = t.add(product);
       }
       return t.multiply(r(n, c)).shiftRight(numParts - 1);

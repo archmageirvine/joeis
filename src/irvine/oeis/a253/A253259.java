@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253259 Number of factorizations of <code>m^n</code> into 4 factors, where m is a product of exactly 4 distinct primes and each factor is a product of n primes (counted with multiplicity).
+ * A253259 Number of factorizations of m^n into 4 factors, where m is a product of exactly 4 distinct primes and each factor is a product of n primes (counted with multiplicity).
  * @author Georg Fischer
  */
 public class A253259 extends GeneratingFunctionSequence {

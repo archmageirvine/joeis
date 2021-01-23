@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180677 The <code>Gi4</code> sums of the Pell-Jacobsthal triangle <code>A013609</code>.
+ * A180677 The Gi4 sums of the Pell-Jacobsthal triangle A013609.
  * @author Georg Fischer
  */
 public class A180677 extends HolonomicRecurrence {

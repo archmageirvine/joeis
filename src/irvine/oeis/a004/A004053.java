@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004053 For <code>m=2,3,...</code>, write m in bases <code>2,3,..,m</code>.
+ * A004053 For m=2,3,..., write m in bases 2,3,..,m.
  * @author Sean A. Irvine
  */
 public class A004053 implements Sequence {

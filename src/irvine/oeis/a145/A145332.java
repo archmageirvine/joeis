@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145332 Numbers Y such that <code>129*Y^2+43</code> is a square.
+ * A145332 Numbers Y such that 129*Y^2+43 is a square.
  * @author Sean A. Irvine
  */
 public class A145332 extends LinearRecurrence {

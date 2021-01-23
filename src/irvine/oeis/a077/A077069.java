@@ -5,7 +5,7 @@ package irvine.oeis.a077;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A077069 <code>Sprague-Grundy</code> (Nim) values for octal game 4.777.
+ * A077069 Sprague-Grundy (Nim) values for octal game 4.777.
  * @author Georg Fischer
  */
 public class A077069 extends HolonomicRecurrence {

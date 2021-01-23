@@ -5,13 +5,13 @@ package irvine.oeis.a267;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A267865 Numbers n such that <code>49*10^n + 1</code> is prime.
+ * A267865 Numbers n such that 49*10^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A267865 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A267865() {
-    super(1, 1, 49, 10, +1, 0);
+    super(1, 1, 49, 10, 1);
   }
 }

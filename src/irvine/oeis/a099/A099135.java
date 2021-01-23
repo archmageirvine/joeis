@@ -5,7 +5,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099135 <code>a(n) =</code> smallest number m, not occurring earlier, such that <code>a(k)+m</code> is a square for some k&lt;n; <code>a(1) = 1</code>.
+ * A099135 a(n) = smallest number m, not occurring earlier, such that a(k)+m is a square for some k&lt;n; a(1) = 1.
  * @author Georg Fischer
  */
 public class A099135 extends HolonomicRecurrence {

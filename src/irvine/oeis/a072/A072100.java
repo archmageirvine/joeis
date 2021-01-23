@@ -6,7 +6,7 @@ package irvine.oeis.a072;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A072100 Column 2 of the array <code>m(i,1)=m(1,j)=1 m(i,j)=m(i-1,j-1)+m(i-1,j+1) (a(n)=m(n,2))</code>.
+ * A072100 Column 2 of the array m(i,1)=m(1,j)=1 m(i,j)=m(i-1,j-1)+m(i-1,j+1) (a(n)=m(n,2)).
  * @author Georg Fischer
  */
 public class A072100 extends HolonomicRecurrence {

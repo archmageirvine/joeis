@@ -6,7 +6,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162972 Number of cycles in all non-derangement permutations of <code>{1,2,...,n}</code>.
+ * A162972 Number of cycles in all non-derangement permutations of {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A162972 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059496 <code>a(1) = 2; a(n+1)</code> is obtained by and trying to change just one digit of <code>a(n)</code>, starting with the least significant digit, until a new prime is reached. Take the lexicographically earliest sequence. Digits may be replaced by any nonzero digit.
+ * A059496 a(1) = 2; a(n+1) is obtained by and trying to change just one digit of a(n), starting with the least significant digit, until a new prime is reached. Take the lexicographically earliest sequence. Digits may be replaced by any nonzero digit.
  * @author Georg Fischer
  */
 public class A059496 extends FiniteSequence {

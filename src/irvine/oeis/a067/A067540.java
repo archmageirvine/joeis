@@ -21,7 +21,7 @@ public class A067540 implements Sequence {
     while ((p = ip.next()) != null) {
       Q sum = Q.ZERO;
       for (final int v : p) {
-        sum = sum.add(new Q(1L, (long) v));
+        sum = sum.add(new Q(1L, v));
       }
       if (new Q(p.length).divide(sum).isInteger()) {
         ++c;

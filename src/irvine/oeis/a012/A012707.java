@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012707 <code>sec(arctanh(x)*log(x+1))=1+12/4!*x^4-60/5!*x^5+570/6!*x^6-3780/7!*x^7..</code>.
+ * A012707 sec(arctanh(x)*log(x+1))=1+12/4!*x^4-60/5!*x^5+570/6!*x^6-3780/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A012707 implements Sequence {

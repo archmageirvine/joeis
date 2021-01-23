@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A020624 Smallest nonempty set S containing prime divisors of <code>9k+2</code> for each k in S.
+ * A020624 Smallest nonempty set S containing prime divisors of 9k+2 for each k in S.
  * @author Sean A. Irvine
  */
 public class A020624 extends FiniteSequence {

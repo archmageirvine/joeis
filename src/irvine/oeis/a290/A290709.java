@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A290709 Number of irredundant sets in the complete tripartite graph <code>K_{n,n,n}</code>.
+ * A290709 Number of irredundant sets in the complete tripartite graph K_{n,n,n}.
  * @author Georg Fischer
  */
 public class A290709 extends GeneratingFunctionSequence {

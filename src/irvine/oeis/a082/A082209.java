@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082209 <code>a(1) = 1, a(n) =</code> smallest number such that the concatenation of <code>a(n-1)</code> and <code>a(n)</code> is a square.
+ * A082209 a(1) = 1, a(n) = smallest number such that the concatenation of a(n-1) and a(n) is a square.
  * @author Sean A. Irvine
  */
 public class A082209 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A014965 <code>a(n) = lcm(n, Fibonacci(n))</code>.
+ * A014965 a(n) = lcm(n, Fibonacci(n)).
  * @author Sean A. Irvine
  */
 public class A014965 extends A000045 {

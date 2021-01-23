@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309336 <code>a(n) = n^4</code> if n odd, <code>15*n^4/16</code> if n even.
+ * A309336 a(n) = n^4 if n odd, 15*n^4/16 if n even.
  * @author Georg Fischer
  */
 public class A309336 extends HolonomicRecurrence {

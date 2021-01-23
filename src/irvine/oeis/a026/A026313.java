@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026313 Numbers n such that <code>|sin(n)*sin(n+2)| &lt; (sin(n+1))^2</code>.
+ * A026313 Numbers n such that |sin(n)*sin(n+2)| &lt; (sin(n+1))^2.
  * @author Sean A. Irvine
  */
 public class A026313 implements Sequence {

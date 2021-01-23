@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304832 <code>a(n) = n^2 + 25*n - 34 (n &gt;=2)</code>.
+ * A304832 a(n) = n^2 + 25*n - 34 (n &gt;=2).
  * @author Georg Fischer
  */
 public class A304832 extends GeneratingFunctionSequence {

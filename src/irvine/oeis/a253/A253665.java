@@ -6,7 +6,7 @@ package irvine.oeis.a253;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A253665 <code>a(n) = 2^n*n!/(floor(n/2)!)^2</code>.
+ * A253665 a(n) = 2^n*n!/(floor(n/2)!)^2.
  * @author Georg Fischer
  */
 public class A253665 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188648 Binomial sums <code>a(n) = Sum_{k=0..n} (binomial(2n-k,k))^2</code>.
+ * A188648 Binomial sums a(n) = Sum_{k=0..n} (binomial(2n-k,k))^2.
  * @author Georg Fischer
  */
 public class A188648 extends HolonomicRecurrence {

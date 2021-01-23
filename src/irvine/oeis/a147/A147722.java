@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A147722 Row sums of Riordan array <code>((1-3x)/(1-4x+x^2), x(1-x)/(1-4x+x^2))</code>.
+ * A147722 Row sums of Riordan array ((1-3x)/(1-4x+x^2), x(1-x)/(1-4x+x^2)).
  * @author Georg Fischer
  */
 public class A147722 extends GeneratingFunctionSequence {

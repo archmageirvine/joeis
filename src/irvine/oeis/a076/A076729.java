@@ -5,7 +5,7 @@ package irvine.oeis.a076;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A076729 <code>a(n) = A001147(n+1) * Integral_{x=0..1} (1 + x^2)^n</code> dx.
+ * A076729 a(n) = A001147(n+1) * Integral_{x=0..1} (1 + x^2)^n dx.
  * @author Georg Fischer
  */
 public class A076729 extends HolonomicRecurrence {

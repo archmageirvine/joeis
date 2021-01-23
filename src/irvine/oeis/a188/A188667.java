@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A188667 Ordered <code>(2,2)-selections</code> from the multiset <code>{1,1,2,2,3,3,...,n,n}</code>.
+ * A188667 Ordered (2,2)-selections from the multiset {1,1,2,2,3,3,...,n,n}.
  * @author Georg Fischer
  */
 public class A188667 extends GeneratingFunctionSequence {

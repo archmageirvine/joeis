@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332044 <code>a(n)</code> is the length of the shortest circuit that visits every edge of an undirected <code>n X n</code> grid graph.
+ * A332044 a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.
  * @author Georg Fischer
  */
 public class A332044 extends HolonomicRecurrence {

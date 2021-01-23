@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A063941 <code>a(n) = 17*39^n</code>.
+ * A063941 a(n) = 17*39^n.
  * @author Georg Fischer
  */
 public class A063941 extends GeneratingFunctionSequence {

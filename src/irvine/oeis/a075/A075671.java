@@ -6,7 +6,7 @@ package irvine.oeis.a075;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A075671 Sum of next <code>n 10th</code> powers.
+ * A075671 Sum of next n 10th powers.
  * @author Georg Fischer
  */
 public class A075671 extends GeneratingFunctionSequence {

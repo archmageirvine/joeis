@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a010.A010811;
 
 /**
- * A022539 Nexus numbers <code>(n+1)^23 - n^23</code>.
+ * A022539 Nexus numbers (n+1)^23 - n^23.
  * @author Sean A. Irvine
  */
 public class A022539 extends DifferenceSequence {

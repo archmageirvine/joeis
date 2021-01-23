@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A031974 1 repeated <code>prime(n)</code> times.
+ * A031974 1 repeated prime(n) times.
  * @author Sean A. Irvine
  */
 public class A031974 extends A000040 {

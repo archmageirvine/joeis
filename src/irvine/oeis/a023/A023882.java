@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023882 Expansion of g.f.: <code>1/Product_{n&gt;0} (1 - n^n * x^n)</code>.
+ * A023882 Expansion of g.f.: 1/Product_{n&gt;0} (1 - n^n * x^n).
  * @author Sean A. Irvine
  */
 public class A023882 implements Sequence {

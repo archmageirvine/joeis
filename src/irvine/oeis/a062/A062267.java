@@ -6,7 +6,7 @@ package irvine.oeis.a062;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A062267 Row sums of (signed) triangle <code>A060821</code> (Hermite polynomials).
+ * A062267 Row sums of (signed) triangle A060821 (Hermite polynomials).
  * @author Georg Fischer
  */
 public class A062267 extends HolonomicRecurrence {

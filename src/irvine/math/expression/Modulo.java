@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 
 /**
  * An expression for modulo.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Modulo extends AbstractLeftRightExpression {
 

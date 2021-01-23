@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180844 <code>a(n) = (27^n - 2^n)/25</code>.
+ * A180844 a(n) = (27^n - 2^n)/25.
  * @author Georg Fischer
  */
 public class A180844 extends GeneratingFunctionSequence {

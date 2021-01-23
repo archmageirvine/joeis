@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003624 Duffinian numbers: composite numbers k relatively prime to <code>sigma(k)</code>.
+ * A003624 Duffinian numbers: composite numbers k relatively prime to sigma(k).
  * @author Sean A. Irvine
  */
 public class A003624 implements Sequence {

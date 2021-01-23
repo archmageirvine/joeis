@@ -6,7 +6,7 @@ package irvine.oeis.a246;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246065 <code>a(n) = sum_{k=0..n}C(n,k)^2*C(2k,k)/(2k-1)</code>, where <code>C(n,k)</code> denotes the binomial coefficient <code>n!/(k!*(n-k)!)</code>.
+ * A246065 a(n) = sum_{k=0..n}C(n,k)^2*C(2k,k)/(2k-1), where C(n,k) denotes the binomial coefficient n!/(k!*(n-k)!).
  * @author Georg Fischer
  */
 public class A246065 extends HolonomicRecurrence {

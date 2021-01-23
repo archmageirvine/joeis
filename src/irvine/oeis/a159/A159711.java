@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A159711 Number of permutations of <code>1..n</code> arranged in a circle with exactly 3 local maxima.
+ * A159711 Number of permutations of 1..n arranged in a circle with exactly 3 local maxima.
  * @author Georg Fischer
  */
 public class A159711 extends GeneratingFunctionSequence {

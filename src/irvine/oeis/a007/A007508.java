@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007508 Number of twin prime pairs below <code>10^n</code>.
+ * A007508 Number of twin prime pairs below 10^n.
  * @author Sean A. Irvine
  */
 public class A007508 implements Sequence {
@@ -15,9 +15,13 @@ public class A007508 implements Sequence {
   private long mLimit = 1;
   private long mCount = 0;
 
+  protected long base() {
+    return 10;
+  }
+
   @Override
   public Z next() {
-    mLimit *= 10;
+    mLimit *= base();
     while (mP < mLimit) {
       final long t = mPrime.nextPrime(mP);
       if (t - mP == 2) {

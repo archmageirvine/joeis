@@ -11,7 +11,7 @@ import irvine.util.string.StringUtils;
  */
 public class A002385 implements Sequence {
 
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
   private Z mP = Z.ONE;
 
   @Override

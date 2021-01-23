@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A246148 Number of inequivalent <code>n X 3</code> binary matrices, where equivalence means permutations of rows or columns or the symbol set.
+ * A246148 Number of inequivalent n X 3 binary matrices, where equivalence means permutations of rows or columns or the symbol set.
  * @author Georg Fischer
  */
 public class A246148 extends GeneratingFunctionSequence {

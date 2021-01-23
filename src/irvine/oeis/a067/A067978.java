@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067978 Convolution of Fibonacci <code>F(n+1), n&gt;=0</code>, with <code>F(n+10), n&gt;=0</code>.
+ * A067978 Convolution of Fibonacci F(n+1), n&gt;=0, with F(n+10), n&gt;=0.
  * @author Georg Fischer
  */
 public class A067978 extends GeneratingFunctionSequence {

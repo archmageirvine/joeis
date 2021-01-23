@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162828 Positive numbers n such that <code>2*90*n/(90+n)</code> are integers.
+ * A162828 Positive numbers n such that 2*90*n/(90+n) are integers.
  * @author Georg Fischer
  */
 public class A162828 extends FiniteSequence {

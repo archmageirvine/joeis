@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114288 Lexicographically earliest solution of any <code>9 X 9</code> sudoku, read by rows.
+ * A114288 Lexicographically earliest solution of any 9 X 9 sudoku, read by rows.
  * @author Georg Fischer
  */
 public class A114288 extends FiniteSequence {

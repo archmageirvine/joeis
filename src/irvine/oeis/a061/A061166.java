@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061166 Polynomial extrapolation of <code>2, 3, 5, 7, 11, 13, 17</code>.
+ * A061166 Polynomial extrapolation of 2, 3, 5, 7, 11, 13, 17.
  * @author Georg Fischer
  */
 public class A061166 extends GeneratingFunctionSequence {

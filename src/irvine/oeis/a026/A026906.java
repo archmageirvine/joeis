@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036469;
 
 /**
- * A026906 Number of sums S of distinct positive integers satisfying S <code>&lt;= n</code>.
+ * A026906 Number of sums S of distinct positive integers satisfying S &lt;= n.
  * @author Sean A. Irvine
  */
 public class A026906 extends A036469 {

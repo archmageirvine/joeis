@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A022879 The number of numbers <code>[ [</code> ix <code>]jx ]</code> that equal n, where i <code>&gt;= 1, j &gt;= 1</code> and <code>x=(1+sqrt(5))/2. a(n)=0</code> iff n is in Beatty sequence <code>A001950</code>.
+ * A022879 The number of numbers [ [ ix ]jx ] that equal n, where i &gt;= 1, j &gt;= 1 and x=(1+sqrt(5))/2. a(n)=0 iff n is in Beatty sequence A001950.
  * @author Sean A. Irvine
  */
 public class A022879 implements Sequence {

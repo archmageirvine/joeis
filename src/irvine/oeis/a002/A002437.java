@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A002437 <code>a(n) = A000364(n) * (3^(2*n+1) + 1)/4</code>.
+ * A002437 a(n) = A000364(n) * (3^(2*n+1) + 1)/4.
  * @author Sean A. Irvine
  */
 public class A002437 extends A000364 {

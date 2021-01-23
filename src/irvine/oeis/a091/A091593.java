@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091593 Reversion of Jacobsthal numbers <code>A001045</code>.
+ * A091593 Reversion of Jacobsthal numbers A001045.
  * @author Georg Fischer
  */
 public class A091593 extends HolonomicRecurrence {

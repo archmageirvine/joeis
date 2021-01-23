@@ -2,7 +2,7 @@ package irvine.math.expression;
 
 /**
  * An expression for negation.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Negate extends AbstractExpression {
 

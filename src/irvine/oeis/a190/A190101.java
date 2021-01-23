@@ -5,7 +5,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A190101 Number of transpose partition pairs of order n whose number of odd parts differ by numbers of the form <code>4*k + 2</code>.
+ * A190101 Number of transpose partition pairs of order n whose number of odd parts differ by numbers of the form 4*k + 2.
  * @author Sean A. Irvine
  */
 public class A190101 extends PrependSequence {

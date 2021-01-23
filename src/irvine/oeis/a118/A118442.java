@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118442 Column 0 of triangle <code>A118441</code>, which is the matrix log of triangle <code>A118435</code>.
+ * A118442 Column 0 of triangle A118441, which is the matrix log of triangle A118435.
  * @author Sean A. Irvine
  */
 public class A118442 extends LinearRecurrence {

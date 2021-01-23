@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028233 If <code>n = p_1^e_1 * ... * p_k^e_k, p_1 &lt; ... &lt; p_k</code> primes, then <code>a(n) = p_1^e_1</code>, with <code>a(1) = 1</code>.
+ * A028233 If n = p_1^e_1 * ... * p_k^e_k, p_1 &lt; ... &lt; p_k primes, then a(n) = p_1^e_1, with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A028233 implements Sequence {

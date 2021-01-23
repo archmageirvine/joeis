@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A325658 Brazilian composites of the form <code>1 + b + b^2 + b^3 + ... + b^k, b &gt; 1, k &gt; 1</code>.
+ * A325658 Brazilian composites of the form 1 + b + b^2 + b^3 + ... + b^k, b &gt; 1, k &gt; 1.
  * @author Sean A. Irvine
  */
 public class A325658 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121804 <code>1045*6^n/27-513*2^(n-2)-2072*3^(n-3)+670*(-1)^n*3^(n-3)+254*(-1)^(n+1), n&gt;1</code>.
+ * A121804 1045*6^n/27-513*2^(n-2)-2072*3^(n-3)+670*(-1)^n*3^(n-3)+254*(-1)^(n+1), n&gt;1.
  * @author Georg Fischer
  */
 public class A121804 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006370 The Collatz or <code>3x+1</code> map: <code>a(n) = n/2</code> if n is even, <code>3n + 1</code> if n is odd.
+ * A006370 The Collatz or 3x+1 map: a(n) = n/2 if n is even, 3n + 1 if n is odd.
  * @author Sean A. Irvine
  */
 public class A006370 implements Sequence {

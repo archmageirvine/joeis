@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181300 Number of columns with top entry equal to bottom entry in all the 2-compositions of <code>n. A 2-composition</code> of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to <code>n</code>.
+ * A181300 Number of columns with top entry equal to bottom entry in all the 2-compositions of n. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
  * @author Georg Fischer
  */
 public class A181300 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306279 Numbers congruent to 3 or <code>18 mod 22</code>.
+ * A306279 Numbers congruent to 3 or 18 mod 22.
  * @author Georg Fischer
  */
 public class A306279 extends HolonomicRecurrence {

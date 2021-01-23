@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019027 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite LIO = Liottite <code>(Ca,Na2,K2)9 [ Al18Si18O72 ]</code>.
+ * A019027 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite LIO = Liottite (Ca,Na2,K2)9 [ Al18Si18O72 ].
  * @author Sean A. Irvine
  */
 public class A019027 extends A018940 {

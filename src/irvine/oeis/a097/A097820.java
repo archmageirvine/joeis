@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097820 Expansion of e.g.f. <code>exp(2*x)/(1-4*x)</code>.
+ * A097820 Expansion of e.g.f. exp(2*x)/(1-4*x).
  * @author Georg Fischer
  */
 public class A097820 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A332393 Number of minimal total dominating sets in the <code>3 X n</code> king graph.
+ * A332393 Number of minimal total dominating sets in the 3 X n king graph.
  * @author Georg Fischer
  */
 public class A332393 extends GeneratingFunctionSequence {

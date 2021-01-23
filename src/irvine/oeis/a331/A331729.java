@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002858;
 
 /**
- * A331729 Number of Ulam numbers u <code>(A002858)</code> between powers of <code>2, 2^n &lt; u &lt;= 2^(n+1)</code>.
+ * A331729 Number of Ulam numbers u (A002858) between powers of 2, 2^n &lt; u &lt;= 2^(n+1).
  * @author Sean A. Irvine
  */
 public class A331729 extends A002858 {

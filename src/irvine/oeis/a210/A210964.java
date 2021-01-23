@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A210964 Column 10 of square array <code>A195825</code>. Also column 1 of triangle <code>A210954</code>. Also 1 together with the row sums of triangle <code>A210954</code>.
+ * A210964 Column 10 of square array A195825. Also column 1 of triangle A210954. Also 1 together with the row sums of triangle A210954.
  * @author Georg Fischer
  */
 public class A210964 extends EulerTransformSequence {

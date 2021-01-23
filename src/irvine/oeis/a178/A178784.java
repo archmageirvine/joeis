@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178784 Let d be the vector of divisors of 100 sorted from largest to smallest, i.e., <code>[100,50,25,20,10,5,4,2,1]</code>. Then <code>a(n) = 100/d(n) - 1</code>.
+ * A178784 Let d be the vector of divisors of 100 sorted from largest to smallest, i.e., [100,50,25,20,10,5,4,2,1]. Then a(n) = 100/d(n) - 1.
  * @author Georg Fischer
  */
 public class A178784 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A205494 Conjectured row or column <code>n=4</code> of array <code>A205497</code>.
+ * A205494 Conjectured row or column n=4 of array A205497.
  * @author Georg Fischer
  */
 public class A205494 extends GeneratingFunctionSequence {

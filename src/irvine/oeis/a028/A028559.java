@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028559 Palindromes of form <code>n(n+5)</code>.
+ * A028559 Palindromes of form n(n+5).
  * @author Sean A. Irvine
  */
 public class A028559 implements Sequence {

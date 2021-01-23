@@ -5,7 +5,7 @@ import java.util.TreeMap;
 import irvine.math.z.Z;
 
 /**
- * A026401 Position of the first n in <code>A026400</code>.
+ * A026401 Position of the first n in A026400.
  * @author Sean A. Irvine
  */
 public class A026401 extends A026400 {

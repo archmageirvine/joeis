@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * A000233 Generalized class numbers.
@@ -19,7 +19,7 @@ public class A000233 implements Sequence {
   protected int mT = 0;
   private final HashMap<String, Z> mCache = new HashMap<>();
 
-  private Z bigCbn(final long b, final int n) {
+  private Z bigCbn(final long b, final long n) {
     Z sum = Z.ZERO;
     if ((b & 3) == 3) {
       for (long k = 1; k <= (b - 1) / 2; ++k) {
@@ -35,13 +35,13 @@ public class A000233 implements Sequence {
     return (n & 1) == 0 ? sum : sum.negate();
   }
 
-  private Z[] handleFactors(final long a, final int n) {
+  private Z[] handleFactors(final long a, final long n) {
     Z mz = Z.ONE;
     Z bz = Z.ONE;
     final FactorSequence fs = Cheetah.factor(a);
     final ArrayList<Z> p = new ArrayList<>();
     for (final Z f : fs.toZArray()) {
-      final int e = fs.getExponent(f);
+      final long e = fs.getExponent(f);
       if ((e & 1) == 1) {
         bz = bz.multiply(f);
         if ((e - 1) / 2 > 0) {
@@ -60,7 +60,7 @@ public class A000233 implements Sequence {
       final long pi = piz.longValue();
       if ((pi & 1) == 1) {
         prod1 /= pi;
-        prod2 = prod2.multiply(piz.pow(2 * n + 1).subtract(LongUtils.jacobi(-b, pi)));
+        prod2 = prod2.multiply(piz.pow(2L * n + 1).subtract(LongUtils.jacobi(-b, pi)));
       }
     }
     final Z r = prod2.multiply(Z.valueOf(prod1).pow(2 * n + 1)).multiply(mz.pow(2 * n));

@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051286 Whitney number of level n of the lattice of the ideals of the fence of order <code>2n</code>.
+ * A051286 Whitney number of level n of the lattice of the ideals of the fence of order 2n.
  * @author Georg Fischer
  */
 public class A051286 extends HolonomicRecurrence {

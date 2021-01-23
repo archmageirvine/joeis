@@ -6,7 +6,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324359 Total number of occurrences of 9 in the (signed) displacement sets of all permutations of <code>[n+9]</code> divided by <code>9!</code>.
+ * A324359 Total number of occurrences of 9 in the (signed) displacement sets of all permutations of [n+9] divided by 9!.
  * @author Georg Fischer
  */
 public class A324359 extends HolonomicRecurrence {

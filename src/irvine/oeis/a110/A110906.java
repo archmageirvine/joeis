@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A110906 Expansion of <code>(1 +34*x +121*x^2)/((1-x)*(x^2 -14*x +1))</code>.
+ * A110906 Expansion of (1 +34*x +121*x^2)/((1-x)*(x^2 -14*x +1)).
  * @author Georg Fischer
  */
 public class A110906 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325173 Perfect squares of the form a <code>+ b^2 + c^3</code>, where a,b,c are consecutive numbers.
+ * A325173 Perfect squares of the form a + b^2 + c^3, where a,b,c are consecutive numbers.
  * @author Georg Fischer
  */
 public class A325173 extends HolonomicRecurrence {

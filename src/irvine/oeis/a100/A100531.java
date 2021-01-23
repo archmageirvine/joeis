@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100531 <code>a(n) = a(n-1) + (2*n - 1) mod 8 + 1</code> with <code>a(0)=1</code>.
+ * A100531 a(n) = a(n-1) + (2*n - 1) mod 8 + 1 with a(0)=1.
  * @author Sean A. Irvine
  */
 public class A100531 extends LinearRecurrence {

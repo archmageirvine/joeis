@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023142 Number of cycles of function <code>f(x) = 10x mod n</code>.
+ * A023142 Number of cycles of function f(x) = 10x mod n.
  * @author Sean A. Irvine
  */
 public class A023142 implements Sequence {

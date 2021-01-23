@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003534 Divisors of <code>2^26 - 1</code>.
+ * A003534 Divisors of 2^26 - 1.
  * @author Sean A. Irvine
  */
 public class A003534 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028372 Smallest prime that is simultaneously of forms <code>x^2 + m*y^2</code> for m <code>= 1</code>, ..., <code>n</code>.
+ * A028372 Smallest prime that is simultaneously of forms x^2 + m*y^2 for m = 1, ..., n.
  * @author Sean A. Irvine
  */
 public class A028372 implements Sequence {

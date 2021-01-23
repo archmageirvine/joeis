@@ -4,7 +4,7 @@ package irvine.oeis.a264;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A264123 Number of <code>(n+1) X (3+1)</code> arrays of permutations of <code>0..n*4+3</code> with each element having index change <code>+-(.,.) 0,0 1,-2</code> or 2,-1.
+ * A264123 Number of (n+1) X (3+1) arrays of permutations of 0..n*4+3 with each element having index change +-(.,.) 0,0 1,-2 or 2,-1.
  * @author Georg Fischer
  */
 public class A264123 extends GeneratingFunctionSequence {

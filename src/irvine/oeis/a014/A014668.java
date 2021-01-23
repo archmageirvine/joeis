@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A014668 <code>a(1) = 1, a(n) = Sum_{k=1..n-1} Sum_{d|k} a(d)</code>.
+ * A014668 a(1) = 1, a(n) = Sum_{k=1..n-1} Sum_{d|k} a(d).
  * @author Sean A. Irvine
  */
 public class A014668 extends MemorySequence {

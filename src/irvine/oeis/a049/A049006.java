@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A049006 Decimal expansion of <code>i^i = exp(-Pi/2)</code>.
+ * A049006 Decimal expansion of i^i = exp(-Pi/2).
  * @author Sean A. Irvine
  */
 public class A049006 extends DecimalExpansionSequence {

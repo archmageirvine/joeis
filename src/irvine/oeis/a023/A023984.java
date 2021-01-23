@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023984 Sum of exponents in prime-power factorization of multinomial coefficient <code>M(6n; n,n,n,n,n,n)</code>.
+ * A023984 Sum of exponents in prime-power factorization of multinomial coefficient M(6n; n,n,n,n,n,n).
  * @author Sean A. Irvine
  */
 public class A023984 extends A023978 {

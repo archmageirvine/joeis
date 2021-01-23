@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000415;
 import irvine.oeis.a000.A000419;
 
 /**
- * A002828 Least number of squares that add up to <code>n</code>.
+ * A002828 Least number of squares that add up to n.
  * @author Sean A. Irvine
  */
 public class A002828 implements Sequence {
@@ -25,7 +25,7 @@ public class A002828 implements Sequence {
     mN = mN.add(1);
     if (mA1.equals(mN)) {
       mA1 = mSquares1.next();
-      if (Z.ZERO.equals(mN)) {
+      if (mN.isZero()) {
         return Z.ZERO;
       }
       return Z.ONE;

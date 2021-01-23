@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A024781 Every suffix prime and no 0 digits in base <code>6</code> (written in base <code>6)</code>.
+ * A024781 Every suffix prime and no 0 digits in base 6 (written in base 6).
  * @author Sean A. Irvine
  */
 public class A024781 extends FiniteSequence {

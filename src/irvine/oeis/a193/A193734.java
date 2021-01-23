@@ -7,7 +7,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A193734 Triangular array: the fusion of polynomial sequences P and Q given by <code>p(n,x)=(2x+1)^n</code> and <code>q(n,x)=(x+2)^n</code>.
+ * A193734 Triangular array: the fusion of polynomial sequences P and Q given by p(n,x)=(2x+1)^n and q(n,x)=(x+2)^n.
  * @author Georg Fischer
  */
 public class A193734 extends GeneratingFunctionTriangle {

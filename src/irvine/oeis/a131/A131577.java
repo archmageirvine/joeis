@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131577 Zero followed by powers of <code>2 (cf. A000079)</code>.
+ * A131577 Zero followed by powers of 2 (cf. A000079).
  * @author Georg Fischer
  */
 public class A131577 extends GeneratingFunctionSequence {

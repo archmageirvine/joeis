@@ -6,7 +6,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324353 Total number of occurrences of 3 in the (signed) displacement sets of all permutations of <code>[n+3]</code> divided by <code>3!</code>.
+ * A324353 Total number of occurrences of 3 in the (signed) displacement sets of all permutations of [n+3] divided by 3!.
  * @author Georg Fischer
  */
 public class A324353 extends HolonomicRecurrence {

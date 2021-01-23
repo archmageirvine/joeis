@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002275;
 
 /**
- * A110369 (Digit 1 repeated <code>n</code> times) <code>+ n</code>.
+ * A110369 (Digit 1 repeated n times) + n.
  * @author Georg Fischer
  */
 public class A110369 extends A002275 {
@@ -15,7 +15,7 @@ public class A110369 extends A002275 {
   /** Construct the sequence. */
   public A110369() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

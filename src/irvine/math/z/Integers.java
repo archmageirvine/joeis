@@ -51,7 +51,7 @@ public class Integers extends AbstractOrderedIntegralDomain<Z> implements Sqrt<Z
     if (n > Integer.MAX_VALUE) {
       throw new UnsupportedOperationException();
     }
-    return a.pow((int) n);
+    return a.pow(n);
   }
 
   @Override

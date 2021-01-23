@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A080496 <code>a(n) = A080495(n+1)/A080495(n)</code>.
+ * A080496 a(n) = A080495(n+1)/A080495(n).
  * @author Georg Fischer
  */
 public class A080496 extends FiniteSequence {

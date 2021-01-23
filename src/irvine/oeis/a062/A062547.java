@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062547 <code>a(n)</code> is least odd integer not a partial sum of <code>1, 3</code>, ..., <code>a(n-1)</code>.
+ * A062547 a(n) is least odd integer not a partial sum of 1, 3, ..., a(n-1).
  * @author Sean A. Irvine
  */
 public class A062547 extends LinearRecurrence {

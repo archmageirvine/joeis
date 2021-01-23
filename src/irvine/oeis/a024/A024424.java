@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024424 <code>a(n) =</code> greatest residue of <code>S(n,m) mod C(n-1,m-1)</code>, for m <code>= 1,2,...,n; S(n,m)</code> are Stirling numbers of second kind.
+ * A024424 a(n) = greatest residue of S(n,m) mod C(n-1,m-1), for m = 1,2,...,n; S(n,m) are Stirling numbers of second kind.
  * @author Sean A. Irvine
  */
 public class A024424 implements Sequence {

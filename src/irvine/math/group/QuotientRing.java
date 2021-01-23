@@ -97,4 +97,9 @@ public class QuotientRing<T> extends DefaultQuotientGroup<T> implements Ring<Set
   public Operation<Set<T>> multiplicativeOperation() {
     return new RingBackedOperation<>(this);
   }
+
+  @Override
+  public Set<T> conjugate(final Set<T> element) {
+    throw new UnsupportedOperationException();
+  }
 }

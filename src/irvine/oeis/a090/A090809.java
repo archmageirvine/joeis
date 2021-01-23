@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090809 Coefficient of the irreducible character of <code>S_m</code> indexed by <code>(m-2n+2,2n-2)</code> in the n-th Kronecker power of the representation indexed by <code>(m-2,2)</code>.
+ * A090809 Coefficient of the irreducible character of S_m indexed by (m-2n+2,2n-2) in the n-th Kronecker power of the representation indexed by (m-2,2).
  * @author Sean A. Irvine
  */
 public class A090809 extends LinearRecurrence {

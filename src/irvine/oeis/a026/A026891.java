@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026891 <code>a(n) = T(n,m) + T(n,m+1) + ... + T(n,n), m=[ (n+1)/2 ]</code>, T given by <code>A026769</code>.
+ * A026891 a(n) = T(n,m) + T(n,m+1) + ... + T(n,n), m=[ (n+1)/2 ], T given by A026769.
  * @author Sean A. Irvine
  */
 public class A026891 extends A026769 {

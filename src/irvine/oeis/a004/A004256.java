@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004256 <code>n^2*(n+1)*(n+2)^2/6</code>.
+ * A004256 n^2*(n+1)*(n+2)^2/6.
  * @author Sean A. Irvine
  */
 public class A004256 implements Sequence {

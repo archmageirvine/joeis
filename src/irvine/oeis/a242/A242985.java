@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A242985 <code>a(n) = 4^n + 2^(n+1)</code>.
+ * A242985 a(n) = 4^n + 2^(n+1).
  * @author Georg Fischer
  */
 public class A242985 extends GeneratingFunctionSequence {

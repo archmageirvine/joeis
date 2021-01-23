@@ -6,7 +6,7 @@ package irvine.oeis.a192;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A192442 Coefficient of <code>x^n</code> in the expansion of <code>(1+x^3+x^4)^n</code>.
+ * A192442 Coefficient of x^n in the expansion of (1+x^3+x^4)^n.
  * @author Georg Fischer
  */
 public class A192442 extends HolonomicRecurrence {

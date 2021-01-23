@@ -6,7 +6,7 @@ package irvine.oeis.a060;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A060774 <code>a(n) =</code> number of lattice paths from <code>(0,0,0)</code> to <code>(n,n,n)</code> along the cracks on the surface of a <code>Rubik-ized n X n X n</code> cube so that no step increases distance from goal.
+ * A060774 a(n) = number of lattice paths from (0,0,0) to (n,n,n) along the cracks on the surface of a Rubik-ized n X n X n cube so that no step increases distance from goal.
  * @author Georg Fischer
  */
 public class A060774 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A004196 The numbers not expressible as the sum of 4 distinct nonzero squares can be written <code>D*4^n</code> union E. This is E.
+ * A004196 The numbers not expressible as the sum of 4 distinct nonzero squares can be written D*4^n union E. This is E.
  * @author Sean A. Irvine
  */
 public class A004196 extends FiniteSequence {

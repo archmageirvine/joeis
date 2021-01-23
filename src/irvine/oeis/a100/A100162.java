@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100162 Structured disdyakis dodecahedral numbers (vertex structure <code>7)</code>.
+ * A100162 Structured disdyakis dodecahedral numbers (vertex structure 7).
  * @author Georg Fischer
  */
 public class A100162 extends GeneratingFunctionSequence {

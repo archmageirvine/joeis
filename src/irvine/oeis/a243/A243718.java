@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243718 Number of inequivalent <code>(mod D_8)</code> ways to place 3 nonattacking knights on an <code>n X n</code> board.
+ * A243718 Number of inequivalent (mod D_8) ways to place 3 nonattacking knights on an n X n board.
  * @author Georg Fischer
  */
 public class A243718 extends GeneratingFunctionSequence {

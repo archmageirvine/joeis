@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001775 Numbers n such that <code>19*2^n-1</code> is prime.
+ * A001775 Numbers n such that 19*2^n-1 is prime.
  * @author Sean A. Irvine
  */
 public class A001775 implements Sequence {

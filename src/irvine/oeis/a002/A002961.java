@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002961 Numbers n such that n and <code>n+1</code> have same sum of divisors.
+ * A002961 Numbers k such that k and k+1 have same sum of divisors.
  * @author Sean A. Irvine
  */
 public class A002961 implements Sequence {

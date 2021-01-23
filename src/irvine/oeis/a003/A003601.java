@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003601 Numbers n such that the average of the divisors of n is an integer: <code>sigma_0(n)</code> divides <code>sigma_1(n)</code>. Alternatively, <code>tau(n) (A000005(n))</code> divides <code>sigma(n) (A000203(n))</code>.
+ * A003601 Numbers n such that the average of the divisors of n is an integer: sigma_0(n) divides sigma_1(n). Alternatively, tau(n) (A000005(n)) divides sigma(n) (A000203(n)).
  * @author Sean A. Irvine
  */
 public class A003601 implements Sequence {

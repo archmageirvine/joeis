@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A087866 Composition length of the n-th symmetric power of the natural representation of a finite subgroup of <code>SL(2,C)</code> of type <code>E_8</code> (binary icosahedral group).
+ * A087866 Composition length of the n-th symmetric power of the natural representation of a finite subgroup of SL(2,C) of type E_8 (binary icosahedral group).
  * @author Georg Fischer
  */
 public class A087866 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114277 Sum of the lengths of the second ascents in all Dyck paths of semilength <code>n+2</code>.
+ * A114277 Sum of the lengths of the second ascents in all Dyck paths of semilength n+2.
  * @author Georg Fischer
  */
 public class A114277 extends HolonomicRecurrence {

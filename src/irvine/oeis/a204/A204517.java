@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204517 Square root of <code>floor[A055859(n)/7]</code>.
+ * A204517 Square root of floor[A055859(n)/7].
  * @author Georg Fischer
  */
 public class A204517 extends GeneratingFunctionSequence {

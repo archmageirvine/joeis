@@ -7,7 +7,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A129267 Triangle with <code>T(n,k) = T(n-1,k-1) + T(n-1,k) - T(n-2,k-1) - T(n-2,k)</code> and <code>T(0,0)=1 </code>.
+ * A129267 Triangle with T(n,k) = T(n-1,k-1) + T(n-1,k) - T(n-2,k-1) - T(n-2,k) and T(0,0)=1 .
  * @author Georg Fischer
  */
 public class A129267 extends GeneratingFunctionTriangle {

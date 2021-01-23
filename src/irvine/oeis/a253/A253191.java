@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A253191 Decimal expansion of <code>log(2)^2</code>.
+ * A253191 Decimal expansion of log(2)^2.
  * @author Georg Fischer
  */
 public class A253191 extends DecimalExpansionSequence {

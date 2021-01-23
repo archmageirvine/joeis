@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A275101 Number of set partitions of <code>[4*n]</code> such that within each block the numbers of elements from all residue classes modulo n are equal for <code>n&gt;0, a(0)=1</code>.
+ * A275101 Number of set partitions of [4*n] such that within each block the numbers of elements from all residue classes modulo n are equal for n&gt;0, a(0)=1.
  * @author Georg Fischer
  */
 public class A275101 extends GeneratingFunctionSequence {

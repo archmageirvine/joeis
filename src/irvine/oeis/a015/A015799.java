@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015799 <code>phi(n) + 8 | sigma(n)</code>.
+ * A015799 phi(n) + 8 | sigma(n).
  * @author Sean A. Irvine
  */
 public class A015799 implements Sequence {
@@ -17,7 +17,7 @@ public class A015799 implements Sequence {
   public Z next() {
     while (true) {
       final FactorSequence fs = Cheetah.factor(++mN);
-      if (Z.ZERO.equals(fs.sigma().mod(fs.phi().add(8)))) {
+      if (fs.sigma().mod(fs.phi().add(8)).isZero()) {
         return Z.valueOf(mN);
       }
     }

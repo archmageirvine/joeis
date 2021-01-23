@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034008 <code>a(n) = floor(2^|n-1|/2)</code>. Or: <code>1, 0</code>, followed by powers of 2.
+ * A034008 a(n) = floor(2^|n-1|/2). Or: 1, 0, followed by powers of 2.
  * @author Georg Fischer
  */
 public class A034008 extends HolonomicRecurrence {

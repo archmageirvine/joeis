@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002717 <code>a(n) = floor(n(n+2)(2n+1)/8)</code>.
+ * A002717 a(n) = floor(n(n+2)(2n+1)/8).
  * @author Sean A. Irvine
  */
 public class A002717 implements Sequence {

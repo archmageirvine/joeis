@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025027 Least <code>non-residue mod n</code> is 19.
+ * A025027 Numbers whose least quadratic nonresidue (A020649) is 19.
  * @author Sean A. Irvine
  */
 public class A025027 implements Sequence {

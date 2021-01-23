@@ -33,7 +33,7 @@ public class LucasProbablePrime {
     Z vk = p;
     Z qk = q;
 
-    if (Z.ONE.equals(d) && Z.ZERO.equals(vk.mod(mN))) {
+    if (Z.ONE.equals(d) && vk.mod(mN).isZero()) {
       strong = true;
     }
 
@@ -65,15 +65,15 @@ public class LucasProbablePrime {
         assert vk.signum() >= 0;
       }
       if (i >= len - s) {
-        if (i == len - s && Z.ZERO.equals(uk)) {
+        if (i == len - s && uk.isZero()) {
           strong = true;
-        } else if (i < len && Z.ZERO.equals(vk)) {
+        } else if (i < len && vk.isZero()) {
           strong = true;
         }
       }
     }
     //System.out.println(strong + " " + uk + " " + vk);
-    return strong && Z.ZERO.equals(uk) ? PrimeStatus.PROB_PRIME : PrimeStatus.COMPOSITE;
+    return strong && uk.isZero() ? PrimeStatus.PROB_PRIME : PrimeStatus.COMPOSITE;
   }
 
   PrimeStatus runTest() {

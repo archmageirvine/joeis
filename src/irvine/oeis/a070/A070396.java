@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070396 <code>a(n) = 6^n mod 23</code>.
+ * A070396 a(n) = 6^n mod 23.
  * @author Georg Fischer
  */
 public class A070396 extends HolonomicRecurrence {

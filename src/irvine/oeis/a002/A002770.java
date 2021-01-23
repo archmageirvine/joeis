@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A002770 Integers connected with coefficients in expansion of Weierstrass <code>P-function</code>.
+ * A002770 Integers connected with coefficients in expansion of Weierstrass P-function.
  * @author Sean A. Irvine
  */
 public class A002770 extends A002306 {
@@ -25,7 +25,7 @@ public class A002770 extends A002306 {
         // i.e. p steps through index for chi(p)
         final Z a2 = glaisher.next();
         if (n4 % (p - 1) == 0) {
-          final Q t = new Q(a2.pow((int) (n4 / (p - 1))), Z.valueOf(p));
+          final Q t = new Q(a2.pow(n4 / (p - 1)), Z.valueOf(p));
           sum = sum.add(t);
         }
       }

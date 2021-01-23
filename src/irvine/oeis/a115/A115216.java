@@ -7,7 +7,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A115216 "Correlation triangle" for <code>2^n</code>.
+ * A115216 "Correlation triangle" for 2^n.
  * @author Georg Fischer
  */
 public class A115216 extends GeneratingFunctionTriangle {

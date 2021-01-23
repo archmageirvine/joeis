@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A061233 Pierce expansion for <code>4 - Pi</code>.
+ * A061233 Pierce expansion for 4 - Pi.
  * @author Sean A. Irvine
  */
 public class A061233 implements Sequence {

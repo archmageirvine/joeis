@@ -6,7 +6,7 @@ package irvine.oeis.a193;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A193778 Number of signed permutations of length <code>2n</code> invariant under D and D'bar.
+ * A193778 Number of signed permutations of length 2n invariant under D and D'bar.
  * @author Georg Fischer
  */
 public class A193778 extends HolonomicRecurrence {

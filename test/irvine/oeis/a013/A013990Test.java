@@ -1,12 +1,12 @@
 package irvine.oeis.a013;
 
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A013990Test extends AbstractSequenceTest {
+public class A013990Test extends TestCase {
 
   public void testCombCount() {
     assertEquals(16, A013990.combs(4).size());

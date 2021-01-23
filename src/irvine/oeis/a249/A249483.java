@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249483 Squares <code>(A000290)</code> which are also centered triangular numbers <code>(A005448)</code>.
+ * A249483 Squares (A000290) which are also centered triangular numbers (A005448).
  * @author Sean A. Irvine
  */
 public class A249483 extends LinearRecurrence {

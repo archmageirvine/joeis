@@ -4,7 +4,7 @@ package irvine.oeis.a269;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A269761 Number of <code>n X 2 0..5</code> arrays with some element plus some horizontally or vertically adjacent neighbor totalling five exactly once.
+ * A269761 Number of n X 2 0..5 arrays with some element plus some horizontally or vertically adjacent neighbor totalling five exactly once.
  * @author Georg Fischer
  */
 public class A269761 extends GeneratingFunctionSequence {

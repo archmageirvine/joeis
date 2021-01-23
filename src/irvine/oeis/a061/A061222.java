@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061222 <code>a(n) = n^2 + (n + 1)^3 + (n + 2)^4</code>.
+ * A061222 a(n) = n^2 + (n + 1)^3 + (n + 2)^4.
  * @author Georg Fischer
  */
 public class A061222 extends GeneratingFunctionSequence {

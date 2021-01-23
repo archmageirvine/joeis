@@ -5,7 +5,7 @@ package irvine.oeis.a214;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A214405 Numbers of the form <code>(4k+3)^2-8</code> or <code>(4k+5)^2+4</code>.
+ * A214405 Numbers of the form (4k+3)^2-8 or (4k+5)^2+4.
  * @author Georg Fischer
  */
 public class A214405 extends HolonomicRecurrence {

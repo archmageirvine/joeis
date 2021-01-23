@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.math.z.Z;
 
 /**
- * A015152 Sum of (Gaussian) q-binomial coefficients for <code>q=-2</code>.
+ * A015152 Sum of (Gaussian) q-binomial coefficients for q=-2.
  * @author Sean A. Irvine
  */
 public class A015152 extends A015109 {

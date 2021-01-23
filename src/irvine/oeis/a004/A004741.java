@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004741 Concatenation of sequences <code>(1,3,..,2n-1,2n,2n-2,..,2)</code> for <code>n &gt;= 1</code>.
+ * A004741 Concatenation of sequences (1,3,..,2n-1,2n,2n-2,..,2) for n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A004741 implements Sequence {

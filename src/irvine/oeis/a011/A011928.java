@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011928 <code>a(n) = floor(n(n-1)(n-2)(n-3)/18)</code>.
+ * A011928 a(n) = floor(n(n-1)(n-2)(n-3)/18).
  * @author Sean A. Irvine
  */
 public class A011928 implements Sequence {

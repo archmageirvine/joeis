@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165754 <code>a(n) = nimsum(n+(n+1)+(n+2))</code>.
+ * A165754 a(n) = nimsum(n+(n+1)+(n+2)).
  * @author Sean A. Irvine
  */
 public class A165754 extends LinearRecurrence {

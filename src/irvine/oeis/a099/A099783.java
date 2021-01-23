@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099783 <code>a(n) = Sum_{k=0..floor(n/3)} C(n-k,2*k)*3^(n-2*k)</code>.
+ * A099783 a(n) = Sum_{k=0..floor(n/3)} C(n-k,2*k)*3^(n-2*k).
  * @author Sean A. Irvine
  */
 public class A099783 extends LinearRecurrence {

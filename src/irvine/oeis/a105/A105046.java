@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105046 <code>a(0)=0, a(1)=1, a(2)=8, a(3)=145, a(4)=1298*a(1)-648-a(3), a(5)=1298*a(2)-648-a(2), a(6)=1298*a(3)-a(0)-648-a(1)</code>, for <code>n&gt;6 a(n) = 1298*a(n-3) - a(n-6) - 648</code>.
+ * A105046 a(0)=0, a(1)=1, a(2)=8, a(3)=145, a(4)=1298*a(1)-648-a(3), a(5)=1298*a(2)-648-a(2), a(6)=1298*a(3)-a(0)-648-a(1), for n&gt;6 a(n) = 1298*a(n-3) - a(n-6) - 648.
  * @author Georg Fischer
  */
 public class A105046 extends HolonomicRecurrence {

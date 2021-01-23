@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158498 <code>a(n) = (1/2)*(n^3 - 6*n^2 + 13*n - 6)</code>.
+ * A158498 a(n) = (1/2)*(n^3 - 6*n^2 + 13*n - 6).
  * @author Sean A. Irvine
  */
 public class A158498 extends LinearRecurrence {

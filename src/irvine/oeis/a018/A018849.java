@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A018849 Strobogrammatic squares: the same upside down <code>(calculator-style</code> numerals).
+ * A018849 Strobogrammatic squares: the same upside down (calculator-style numerals).
  * @author Sean A. Irvine
  */
 public class A018849 extends A000290 {

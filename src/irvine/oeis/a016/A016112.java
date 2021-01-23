@@ -2,12 +2,12 @@ package irvine.oeis.a016;
 
 import irvine.factor.factor.Cheetah;
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A016112 Smallest prime whose digit product is n, if possible; otherwise 0 if n is a prime <code>&gt; 7</code> or 1 if n has a prime factor <code>&gt; 7</code>.
+ * A016112 Smallest prime whose digit product is n, if possible; otherwise 0 if n is a prime &gt; 7 or 1 if n has a prime factor &gt; 7.
  * @author Sean A. Irvine
  */
 public class A016112 implements Sequence {
@@ -32,7 +32,7 @@ public class A016112 implements Sequence {
     long p = 7; // start at 7 so that a(2) = 211, a(3) = 13, etc.
     while (true) {
       p = mPrime.nextPrime(p);
-      if (LongUtils.digitProduct(p) == mN) {
+      if (ZUtils.digitProduct(p) == mN) {
         return Z.valueOf(p);
       }
     }

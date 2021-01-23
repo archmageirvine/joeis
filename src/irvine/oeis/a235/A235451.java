@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A235451 Number of length n words on alphabet <code>{0,1,2}</code> of the form <code>0^(i)1^(j)2^(k)</code> such that <code>i=j</code> or <code>j=k</code>.
+ * A235451 Number of length n words on alphabet {0,1,2} of the form 0^(i)1^(j)2^(k) such that i=j or j=k.
  * @author Georg Fischer
  */
 public class A235451 extends GeneratingFunctionSequence {

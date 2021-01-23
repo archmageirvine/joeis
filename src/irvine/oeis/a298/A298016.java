@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298016 Coordination sequence of <code>snub-632</code> tiling with respect to a hexavalent node.
+ * A298016 Coordination sequence of snub-632 tiling with respect to a hexavalent node.
  * @author Georg Fischer
  */
 public class A298016 extends GeneratingFunctionSequence {

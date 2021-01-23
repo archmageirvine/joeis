@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A093072 Decimal expansion of <code>97/150 + Pi/40</code>.
+ * A093072 Decimal expansion of 97/150 + Pi/40.
  * @author Georg Fischer
  */
 public class A093072 extends DecimalExpansionSequence {

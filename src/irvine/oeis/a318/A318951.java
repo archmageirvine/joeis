@@ -1,7 +1,5 @@
 package irvine.oeis.a318;
 
-import java.util.Collections;
-
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.IntegerField;
@@ -14,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A318951 Array read by rows: <code>T(n,k)</code> is the number of nonisomorphic <code>n X n</code> matrices with nonnegative integer entries and row sums k under row and column permutations, <code>(n &gt;= 1, k &gt;= 0)</code>.
+ * A318951 Array read by rows: T(n,k) is the number of nonisomorphic n X n matrices with nonnegative integer entries and row sums k under row and column permutations, (n &gt;= 1, k &gt;= 0).
  * @author Sean A. Irvine
  */
 public class A318951 implements Sequence {
@@ -52,7 +50,7 @@ public class A318951 implements Sequence {
     final IntegerPartition parts = new IntegerPartition(m);
     int[] q;
     while ((q = parts.next()) != null) {
-      final Polynomial<Q> ks = RING.create(Collections.emptyList());
+      final Polynomial<Q> ks = RING.empty();
       ks.add(Q.ZERO);
       for (int t = 1; t <= n; ++t) {
         ks.add(new Q(k(q, t, k), Z.valueOf(t)));

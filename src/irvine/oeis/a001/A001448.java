@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001448 <code>a(n) = binomial(4n,2n)</code> or <code>(4*n)!/((2*n)!*(2*n)!)</code>.
+ * A001448 a(n) = binomial(4n,2n) or (4*n)!/((2*n)!*(2*n)!).
  * @author Sean A. Irvine
  */
 public class A001448 implements Sequence {

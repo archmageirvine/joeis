@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * A057205 Primes congruent to 3 modulo 4 generated recursively: <code>a(n) = Min{p</code>, prime; <code>Mod[p,4]=3; p|4Q-1}</code>, where Q is the product of all previous terms in the sequence. The initial term is 3.
+ * A057205 Primes congruent to 3 modulo 4 generated recursively: a(n) = Min{p, prime; Mod[p,4]=3; p|4Q-1}, where Q is the product of all previous terms in the sequence. The initial term is 3.
  * @author Sean A. Irvine
  */
 public class A057205 implements Sequence {
@@ -50,7 +50,7 @@ public class A057205 implements Sequence {
       if (!p.isProbablePrime()) {
         return false;
       }
-      if (!Z.ZERO.equals(n.mod(p))) {
+      if (!n.mod(p).isZero()) {
         return false;
       }
       // Checks the ordering constraint

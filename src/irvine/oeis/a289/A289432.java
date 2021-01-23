@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289432 Numbers <code>b_n</code> of Fibonacci-quilt legal decompositions of <code>n</code>.
+ * A289432 Numbers b_n of Fibonacci-quilt legal decompositions of n.
  * @author Georg Fischer
  */
 public class A289432 extends GeneratingFunctionSequence {

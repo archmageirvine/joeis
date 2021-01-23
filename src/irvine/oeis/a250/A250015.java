@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A250015 Number of length <code>1+5 0..n</code> arrays with no six consecutive terms having the maximum of any three terms equal to the minimum of the remaining three terms.
+ * A250015 Number of length 1+5 0..n arrays with no six consecutive terms having the maximum of any three terms equal to the minimum of the remaining three terms.
  * @author Georg Fischer
  */
 public class A250015 extends GeneratingFunctionSequence {

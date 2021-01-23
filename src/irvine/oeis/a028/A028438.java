@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028438 Golc sequence in base 8. Left to right concatenation of <code>n,int(log_8(n)),int(log_8(int(log_8(n)))),..</code>. in <code>base8</code>.
+ * A028438 Golc sequence in base 8. Left to right concatenation of n,int(log_8(n)),int(log_8(int(log_8(n)))),... in base8.
  * @author Sean A. Irvine
  */
 public class A028438 implements Sequence {
 
-  private static final CR BASE_LOG = CR.valueOf(8).log();
+  private static final CR BASE_LOG = CR.EIGHT.log();
   private long mN = 0;
 
   @Override

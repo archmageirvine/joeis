@@ -5,13 +5,13 @@ package irvine.oeis.a057;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A057871 Numbers k such that <code>3*13^k + 2</code> is prime.
+ * A057871 Numbers k such that 3*13^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A057871 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A057871() {
-    super(1, 0, 3, 13, +2, 0);
+    super(1, 0, 3, 13, +2);
   }
 }

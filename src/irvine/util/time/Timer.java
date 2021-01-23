@@ -11,8 +11,7 @@ import java.util.TreeSet;
  * Utility class for performing timing tests to millisecond accuracy.
  * Timers are assigned names so that multiple timers can be accessed
  * via a central registry.
- *
- * @author <a href="mailto:len@reeltwo.com">Len Trigg</a>
+ * @author Len Trigg
  */
 public class Timer implements Serializable {
 

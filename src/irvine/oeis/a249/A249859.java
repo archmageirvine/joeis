@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249859 Least common multiple of <code>n + 2</code> and <code>n - 2</code>.
+ * A249859 Least common multiple of n + 2 and n - 2.
  * @author Georg Fischer
  */
 public class A249859 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a213;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A213684 Logarithmic derivative of <code>A001002</code>.
+ * A213684 Logarithmic derivative of A001002.
  * @author Georg Fischer
  */
 public class A213684 extends HolonomicRecurrence {

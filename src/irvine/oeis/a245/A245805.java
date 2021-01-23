@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A245805 <code>a(n) = 12^n mod 11^n</code>.
+ * A245805 a(n) = 12^n mod 11^n.
  * @author Georg Fischer
  */
 public class A245805 implements Sequence {

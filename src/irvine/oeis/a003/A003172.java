@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A003172 <code>Q(sqrt n)</code> is a unique factorization domain (or simple quadratic field).
+ * A003172 Q(sqrt n) is a unique factorization domain (or simple quadratic field).
  * @author Sean A. Irvine
  */
 public class A003172 extends A005117 {

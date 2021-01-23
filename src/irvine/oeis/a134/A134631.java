@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134631 <code>a(n) = 5*n^5 - 3*n^3 + 2*n^2</code>. Coefficients and exponents are the prime numbers in decreasing order.
+ * A134631 a(n) = 5*n^5 - 3*n^3 + 2*n^2. Coefficients and exponents are the prime numbers in decreasing order.
  * @author Georg Fischer
  */
 public class A134631 extends GeneratingFunctionSequence {

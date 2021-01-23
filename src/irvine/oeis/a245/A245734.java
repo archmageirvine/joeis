@@ -6,7 +6,7 @@ package irvine.oeis.a245;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A245734 G.f. <code>A(x)</code> satisfies <code>0 = A(0)</code> and <code>0 = f(x, A(x))</code> where <code>f(u, v) = (v - u) * (1 + u*v) - v * (v + u)</code>.
+ * A245734 G.f. A(x) satisfies 0 = A(0) and 0 = f(x, A(x)) where f(u, v) = (v - u) * (1 + u*v) - v * (v + u).
  * @author Georg Fischer
  */
 public class A245734 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A299285 Coordination sequence for "tea" <code>3D</code> uniform tiling.
+ * A299285 Coordination sequence for "tea" 3D uniform tiling.
  * @author Georg Fischer
  */
 public class A299285 extends GeneratingFunctionSequence {

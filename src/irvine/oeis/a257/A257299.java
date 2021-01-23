@@ -5,7 +5,7 @@ package irvine.oeis.a257;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A257299 Numbers n for which each of the digits 0-9 appears exactly once as first digit in the orbit of n under iterations of <code>n -&gt</code>; (first digit of <code>n)*(n</code> with first digit removed) until a single digit is reached; no leading zeros allowed.
+ * A257299 Numbers n for which each of the digits 0-9 appears exactly once as first digit in the orbit of n under iterations of n -&gt; (first digit of n)*(n with first digit removed) until a single digit is reached; no leading zeros allowed.
  * @author Georg Fischer
  */
 public class A257299 extends FiniteSequence {

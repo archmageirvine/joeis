@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057524 Number of <code>3 x n</code> binary matrices without unit columns up to row and column permutations.
+ * A057524 Number of 3 x n binary matrices without unit columns up to row and column permutations.
  * @author Sean A. Irvine
  */
 public class A057524 extends LinearRecurrence {

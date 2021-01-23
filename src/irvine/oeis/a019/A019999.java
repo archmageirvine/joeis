@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019999 Number of similarity classes of descendants created by bisection refinement from an initial <code>n-simplex</code>.
+ * A019999 Number of similarity classes of descendants created by bisection refinement from an initial n-simplex.
  * @author Sean A. Irvine
  */
 public class A019999 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A255176 <code>a(n) = H_n(2,2)</code> where <code>H_n</code> is the n-th hyperoperator.
+ * A255176 a(n) = H_n(2,2) where H_n is the n-th hyperoperator.
  * @author Georg Fischer
  */
 public class A255176 extends GeneratingFunctionSequence {

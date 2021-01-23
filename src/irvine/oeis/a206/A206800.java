@@ -7,7 +7,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A206800 Riordan array <code>(1/(1-3*x+x^2), x*(1-x)/(1-3*x+x^2))</code>.
+ * A206800 Riordan array (1/(1-3*x+x^2), x*(1-x)/(1-3*x+x^2)).
  * @author Georg Fischer
  */
 public class A206800 extends GeneratingFunctionTriangle {

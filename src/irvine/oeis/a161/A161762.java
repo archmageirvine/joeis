@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A161762 Sum of all numbers from <code>Fibonacci(n-1)</code> to <code>Fibonacci(n)</code>.
+ * A161762 Sum of all numbers from Fibonacci(n-1) to Fibonacci(n).
  * @author Georg Fischer
  */
 public class A161762 extends GeneratingFunctionSequence {

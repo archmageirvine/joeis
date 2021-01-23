@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A025034 Least modulus <code>&gt;= 3</code> having maximum run of n consecutive <code>non-residues</code>.
+ * A025034 Least modulus &gt;= 3 having maximum run of n consecutive non-residues.
  * @author Sean A. Irvine
  */
 public class A025034 implements Sequence {

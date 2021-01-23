@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020524 <code>a(n) = 4th</code> Euler polynomial evaluated at <code>2^n</code>.
+ * A020524 a(n) = 4th Euler polynomial evaluated at 2^n.
  * @author Sean A. Irvine
  */
 public class A020524 extends LinearRecurrence {

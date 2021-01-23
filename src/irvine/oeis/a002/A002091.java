@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A002091 From a Goldbach conjecture: the location of records in <code>A185091</code>.
+ * A002091 From a Goldbach conjecture: the location of records in A185091.
  * @author Sean A. Irvine
  */
 public class A002091 implements Sequence {

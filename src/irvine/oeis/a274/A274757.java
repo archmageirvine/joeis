@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274757 Numbers k such that <code>6*k+1</code> is a triangular number <code>(A000217)</code>.
+ * A274757 Numbers k such that 6*k+1 is a triangular number (A000217).
  * @author Sean A. Irvine
  */
 public class A274757 extends LinearRecurrence {

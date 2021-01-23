@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A101410 Divisors of <code>100K</code>, reversed.
+ * A101410 Divisors of 100K, reversed.
  * @author Georg Fischer
  */
 public class A101410 extends FiniteSequence {

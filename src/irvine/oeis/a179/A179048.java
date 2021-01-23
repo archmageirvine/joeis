@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179048 Decimal expansion of <code>25*sqrt(3)/4</code>, Area of equilateral triangle of side 5.
+ * A179048 Decimal expansion of 25*sqrt(3)/4, Area of equilateral triangle of side 5.
  * @author Georg Fischer
  */
 public class A179048 extends DecimalExpansionSequence {

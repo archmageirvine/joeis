@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009671 Expansion of e.g.f. <code>tan(sin(x)*cosh(x))</code>, odd powers only.
+ * A009671 Expansion of e.g.f. tan(sin(x)*cosh(x)), odd powers only.
  * @author Sean A. Irvine
  */
 public class A009671 implements Sequence {

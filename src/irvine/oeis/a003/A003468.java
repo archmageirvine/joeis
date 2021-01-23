@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003468 Number of minimal 3-covers of a labeled <code>n-set</code>.
+ * A003468 Number of minimal 3-covers of a labeled n-set.
  * @author Sean A. Irvine
  */
 public class A003468 implements Sequence {

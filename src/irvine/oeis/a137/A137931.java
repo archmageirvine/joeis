@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137931 Sum of the principal diagonals of a <code>2n X 2n</code> square spiral.
+ * A137931 Sum of the principal diagonals of a 2n X 2n square spiral.
  * @author Georg Fischer
  */
 public class A137931 extends GeneratingFunctionSequence {

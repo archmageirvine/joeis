@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A234319 Smallest sum of n-th powers of <code>k+1</code> consecutive positive integers that equals the sum of n-th powers of the next k consecutive integers, or <code>-n</code> if none.
+ * A234319 Smallest sum of n-th powers of k+1 consecutive positive integers that equals the sum of n-th powers of the next k consecutive integers, or -n if none.
  * @author Georg Fischer
  */
 public class A234319 extends GeneratingFunctionSequence {

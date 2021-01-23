@@ -5,7 +5,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100401 Digital root of <code>3^n</code>.
+ * A100401 Digital root of 3^n.
  * @author Georg Fischer
  */
 public class A100401 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A111990 Convolution of <code>A111989</code> with itself.
+ * A111990 Convolution of A111989 with itself.
  * @author Georg Fischer
  */
 public class A111990 extends GeneratingFunctionSequence {

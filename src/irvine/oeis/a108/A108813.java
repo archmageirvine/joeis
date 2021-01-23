@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A108813 Decimal expansion of the continued fraction <code>2/(5+4/(7+6/(9+8/(11+10/(13+12/..</code>.
+ * A108813 Decimal expansion of the continued fraction 2/(5+4/(7+6/(9+8/(11+10/(13+12/...
  * @author Georg Fischer
  */
 public class A108813 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104545 Number of Motzkin paths of length n having no consecutive <code>(1,0)</code> steps.
+ * A104545 Number of Motzkin paths of length n having no consecutive (1,0) steps.
  * @author Georg Fischer
  */
 public class A104545 extends HolonomicRecurrence {

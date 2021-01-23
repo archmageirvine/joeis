@@ -6,7 +6,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070968 Number of cycles in the complete bipartite graph <code>K(n,n)</code>.
+ * A070968 Number of cycles in the complete bipartite graph K(n,n).
  * @author Georg Fischer
  */
 public class A070968 extends HolonomicRecurrence {

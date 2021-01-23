@@ -6,7 +6,7 @@ package irvine.oeis.a082;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082302 Expansion of g.f.: <code>(1 - 5*x - sqrt(25*x^2 - 14*x + 1))/(2*x)</code>.
+ * A082302 Expansion of g.f.: (1 - 5*x - sqrt(25*x^2 - 14*x + 1))/(2*x).
  * @author Georg Fischer
  */
 public class A082302 extends HolonomicRecurrence {

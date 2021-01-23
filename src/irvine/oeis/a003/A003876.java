@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003876 Degrees of irreducible representations of symmetric group <code>S_12</code>.
+ * A003876 Degrees of irreducible representations of symmetric group S_12.
  * @author Sean A. Irvine
  */
 public class A003876 extends FiniteSequence {

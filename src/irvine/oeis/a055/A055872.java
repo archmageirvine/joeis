@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055872 <code>a(n)</code> and <code>floor(a(n)/8)</code> are both squares; i.e., squares that remain squares when written in base 8 and last digit is removed.
+ * A055872 a(n) and floor(a(n)/8) are both squares; i.e., squares that remain squares when written in base 8 and last digit is removed.
  * @author Georg Fischer
  */
 public class A055872 extends HolonomicRecurrence {

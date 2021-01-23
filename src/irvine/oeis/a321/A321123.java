@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321123 <code>a(n) = 2^n + 2*n^2 + 2*n + 1</code>.
+ * A321123 a(n) = 2^n + 2*n^2 + 2*n + 1.
  * @author Georg Fischer
  */
 public class A321123 extends GeneratingFunctionSequence {

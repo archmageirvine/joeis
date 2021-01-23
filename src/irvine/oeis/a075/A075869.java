@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075869 Numbers k such that <code>5*k^2 - 9</code> is a square.
+ * A075869 Numbers k such that 5*k^2 - 9 is a square.
  * @author Sean A. Irvine
  */
 public class A075869 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000521 Coefficients of modular function j as power series in q <code>= e^(2 Pi i t)</code>. Another name is the elliptic modular invariant <code>J(tau)</code>.
+ * A000521 Coefficients of modular function j as power series in q = e^(2 Pi i t). Another name is the elliptic modular invariant J(tau).
  * @author Sean A. Irvine
  */
 public class A000521 implements Sequence {

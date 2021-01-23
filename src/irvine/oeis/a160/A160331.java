@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A160331 Decimal expansion of <code>2^(1/3) + sqrt(3)</code>.
+ * A160331 Decimal expansion of 2^(1/3) + sqrt(3).
  * @author Georg Fischer
  */
 public class A160331 extends DecimalExpansionSequence {

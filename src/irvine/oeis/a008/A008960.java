@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A008960 Final digit of cubes: <code>n^3 mod 10</code>.
+ * A008960 Final digit of cubes: n^3 mod 10.
  * @author Sean A. Irvine
  */
 public class A008960 extends PeriodicSequence {

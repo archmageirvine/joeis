@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135854 <code>a(n) = (n+1)*(2^n+1)</code> for <code>n&gt;0</code> with <code>a(0)=1</code>.
+ * A135854 a(n) = (n+1)*(2^n+1) for n&gt;0 with a(0)=1.
  * @author Georg Fischer
  */
 public class A135854 extends GeneratingFunctionSequence {

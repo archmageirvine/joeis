@@ -6,7 +6,7 @@ package irvine.oeis.a270;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A270363 <code>a(n) = (n+1)*Sum_{k=0..(n-1)/2}((binomial(2*n-3*k-2,n-k-1))/(n-k))</code>.
+ * A270363 a(n) = (n+1)*Sum_{k=0..(n-1)/2}((binomial(2*n-3*k-2,n-k-1))/(n-k)).
  * @author Georg Fischer
  */
 public class A270363 extends HolonomicRecurrence {

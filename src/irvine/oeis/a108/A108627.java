@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108627 Logarithmic g.f.: <code>Sum_{n&gt;=1} a(n)/n*x^n = log(G108626(x))</code>, where <code>G108626(x)</code> is g.f. for <code>A108626</code>.
+ * A108627 Logarithmic g.f.: Sum_{n&gt;=1} a(n)/n*x^n = log(G108626(x)), where G108626(x) is g.f. for A108626.
  * @author Georg Fischer
  */
 public class A108627 extends GeneratingFunctionSequence {

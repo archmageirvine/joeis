@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272379 <code>a(n) = n*(24*n^3 - 60*n^2 + 54*n - 17)</code>.
+ * A272379 a(n) = n*(24*n^3 - 60*n^2 + 54*n - 17).
  * @author Sean A. Irvine
  */
 public class A272379 extends LinearRecurrence {

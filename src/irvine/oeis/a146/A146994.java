@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A146994 <code>a(n) = (n+1)^2/4 + (floor((n+5)/6) - 1/4) * ((n+1) mod 2)</code>.
+ * A146994 a(n) = (n+1)^2/4 + (floor((n+5)/6) - 1/4) * ((n+1) mod 2).
  * @author Sean A. Irvine
  */
 public class A146994 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331574 <code>a(n)</code> is the number of subsets of <code>{1..n}</code> that contain 3 even and 3 odd numbers.
+ * A331574 a(n) is the number of subsets of {1..n} that contain 3 even and 3 odd numbers.
  * @author Georg Fischer
  */
 public class A331574 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a230;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A230288 Sum of two digits touching a comma = difference between the two terms separated by that comma; start with <code>a(0)=0, a(1)=5</code>. If there is a choice, choose the smaller value for <code>a(n)</code>.
+ * A230288 Sum of two digits touching a comma = difference between the two terms separated by that comma; start with a(0)=0, a(1)=5. If there is a choice, choose the smaller value for a(n).
  * @author Georg Fischer
  */
 public class A230288 extends FiniteSequence {

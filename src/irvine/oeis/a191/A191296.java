@@ -4,7 +4,7 @@ package irvine.oeis.a191;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A191296 Least k such that <code>k-1</code> and <code>k+1</code> in binary representation have same number n of <code>0</code>'s as <code>1</code>'s.
+ * A191296 Least k such that k-1 and k+1 in binary representation have same number n of 0's as 1's.
  * @author Georg Fischer
  */
 public class A191296 extends GeneratingFunctionSequence {

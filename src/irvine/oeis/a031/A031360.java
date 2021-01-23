@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031360 Number of symmetrically inequivalent coincidence rotations of index <code>2n-1</code> in lattice <code>D_4</code>.
+ * A031360 Number of symmetrically inequivalent coincidence rotations of index 2n-1 in lattice D_4.
  * @author Sean A. Irvine
  */
 public class A031360 implements Sequence {

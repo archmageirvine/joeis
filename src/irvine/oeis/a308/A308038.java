@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308038 <code>a(n) = Sum_{i=1..floor((n-1)/2)} i * (n-i)^2</code>.
+ * A308038 a(n) = Sum_{i=1..floor((n-1)/2)} i * (n-i)^2.
  * @author Georg Fischer
  */
 public class A308038 extends HolonomicRecurrence {

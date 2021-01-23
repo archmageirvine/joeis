@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A262482 Number of <code>(n+3)X(1+3) 0..1</code> arrays with each row and column divisible by 13, read as a binary number with top and left being the most significant bits.
+ * A262482 Number of (n+3)X(1+3) 0..1 arrays with each row and column divisible by 13, read as a binary number with top and left being the most significant bits.
  * @author Sean A. Irvine
  */
 public class A262482 extends LinearRecurrence {

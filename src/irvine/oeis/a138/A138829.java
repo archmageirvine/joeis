@@ -6,7 +6,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138829 Bisection of imperfect numbers <code>A132999</code>.
+ * A138829 Bisection of imperfect numbers A132999.
  * @author Georg Fischer
  */
 public class A138829 extends GeneratingFunctionSequence {

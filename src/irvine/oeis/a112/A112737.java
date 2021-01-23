@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A112737 On the standard <code>33-hole cross-shaped</code> peg solitaire board, the number of distinct board positions after n jumps (starting with the center vacant).
+ * A112737 On the standard 33-hole cross-shaped peg solitaire board, the number of distinct board positions after n jumps (starting with the center vacant).
  * @author Georg Fischer
  */
 public class A112737 extends FiniteSequence {

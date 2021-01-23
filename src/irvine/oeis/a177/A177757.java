@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177757 Number of ways to place 4 nonattacking bishops on an <code>n X n</code> toroidal board.
+ * A177757 Number of ways to place 4 nonattacking bishops on an n X n toroidal board.
  * @author Sean A. Irvine
  */
 public class A177757 extends LinearRecurrence {

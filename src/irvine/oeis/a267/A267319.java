@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267319 Continued fraction expansion of <code>phi^8</code>, where phi <code>= (1 + sqrt(5))/2</code>.
+ * A267319 Continued fraction expansion of phi^8, where phi = (1 + sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A267319 extends GeneratingFunctionSequence {

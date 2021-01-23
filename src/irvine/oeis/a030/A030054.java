@@ -6,7 +6,7 @@ package irvine.oeis.a030;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A030054 <code>a(n) = binomial(2n+1,n-4)</code>.
+ * A030054 a(n) = binomial(2n+1,n-4).
  * @author Georg Fischer
  */
 public class A030054 extends HolonomicRecurrence {

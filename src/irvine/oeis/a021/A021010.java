@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A021010 Triangle of coefficients of Laguerre polynomials <code>L_n(x)</code> (powers of x in decreasing order).
+ * A021010 Triangle of coefficients of Laguerre polynomials L_n(x) (powers of x in decreasing order).
  * @author Sean A. Irvine
  */
 public class A021010 implements Sequence {

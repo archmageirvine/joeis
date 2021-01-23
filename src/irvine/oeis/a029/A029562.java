@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a120.A120944;
 
 /**
- * A029562 Quasi-Carmichael numbers to base <code>-2</code>: squarefree composites n such that for every prime p that divides n, <code>p+2</code> divides <code>n+2</code>.
+ * A029562 Quasi-Carmichael numbers to base -2: squarefree composites n such that for every prime p that divides n, p+2 divides n+2.
  * @author Sean A. Irvine
  */
 public class A029562 extends A120944 {

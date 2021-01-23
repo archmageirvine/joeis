@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089102 Sign twisted convoluted convolved Fibonacci numbers <code>H_j^(6)</code>.
+ * A089102 Sign twisted convoluted convolved Fibonacci numbers H_j^(6).
  * @author Georg Fischer
  */
 public class A089102 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A292443 <code>a(n) = (5/32)*A000045(6*n)^2</code>.
+ * A292443 a(n) = (5/32)*A000045(6*n)^2.
  * @author Georg Fischer
  */
 public class A292443 extends GeneratingFunctionSequence {

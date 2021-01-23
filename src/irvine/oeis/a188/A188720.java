@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188720 Decimal expansion of <code>(e+sqrt(4+e^2))/2</code>.
+ * A188720 Decimal expansion of (e+sqrt(4+e^2))/2.
  * @author Georg Fischer
  */
 public class A188720 extends DecimalExpansionSequence {

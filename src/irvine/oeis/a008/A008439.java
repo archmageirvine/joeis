@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A008439 Expansion of Jacobi theta constant <code>theta_2^5 /32</code>.
+ * A008439 Expansion of Jacobi theta constant theta_2^5 /32.
  * @author Sean A. Irvine
  */
 public class A008439 extends EulerTransformSequence {

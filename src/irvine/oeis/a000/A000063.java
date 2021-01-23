@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000063 Symmetrical dissections of an <code>n-gon</code>.
+ * A000063 Symmetrical dissections of an n-gon.
  * @author Sean A. Irvine
  */
 public class A000063 implements Sequence {

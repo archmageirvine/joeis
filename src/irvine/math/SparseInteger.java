@@ -38,7 +38,7 @@ import java.util.Arrays;
  * by <code>SparseInteger</code>.
  *
  * @author Vladimir Reshetnikov
- * @author Sean A. Irvine (port to Java)
+ * @author Sean A. Irvine (Java port)
  */
 public final class SparseInteger implements Comparable<SparseInteger> {
 

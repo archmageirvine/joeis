@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025455 <code>a(n)</code> is the number of partitions of n into 2 positive cubes.
+ * A025455 a(n) is the number of partitions of n into 2 positive cubes.
  * @author Sean A. Irvine
  */
 public class A025455 extends MemoryFunctionInt3<Z> implements Sequence {

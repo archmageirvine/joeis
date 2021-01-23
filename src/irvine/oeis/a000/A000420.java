@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000420 Powers of <code>7: a(n) = 7^n</code>.
+ * A000420 Powers of 7: a(n) = 7^n.
  * @author Sean A. Irvine
  */
 public class A000420 implements Sequence {

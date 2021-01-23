@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307268 Partial sums of the Lucas numbers of the form <code>L(3n+2) (A163063)</code>.
+ * A307268 Partial sums of the Lucas numbers of the form L(3n+2) (A163063).
  * @author Georg Fischer
  */
 public class A307268 extends HolonomicRecurrence {

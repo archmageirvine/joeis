@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191484 Number of compositions of even natural numbers into 5 parts <code>&lt;= n</code>.
+ * A191484 Number of compositions of even natural numbers into 5 parts &lt;= n.
  * @author Sean A. Irvine
  */
 public class A191484 extends LinearRecurrence {

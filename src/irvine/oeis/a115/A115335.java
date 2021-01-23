@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A115335 <code>a(0) = 3, a(1) = 5, a(2) = 1</code>, and <code>a(n) = (2^(1 + n) - 11*(-1)^n)/3</code> for <code>n &gt; 2</code>.
+ * A115335 a(0) = 3, a(1) = 5, a(2) = 1, and a(n) = (2^(1 + n) - 11*(-1)^n)/3 for n &gt; 2.
  * @author Georg Fischer
  */
 public class A115335 extends GeneratingFunctionSequence {

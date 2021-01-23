@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020985;
 
 /**
- * A203463 Where <code>Golay-Rudin-Shapiro</code> sequence <code>A020985</code> is positive.
+ * A203463 Where Golay-Rudin-Shapiro sequence A020985 is positive.
  * @author Sean A. Irvine
  */
 public class A203463 extends A020985 {

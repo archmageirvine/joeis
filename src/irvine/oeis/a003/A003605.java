@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003605 Unique monotonic sequence of nonnegative integers satisfying <code>a(a(n)) = 3n</code>.
+ * A003605 Unique monotonic sequence of nonnegative integers satisfying a(a(n)) = 3n.
  * @author Sean A. Irvine
  */
 public class A003605 extends MemorySequence {

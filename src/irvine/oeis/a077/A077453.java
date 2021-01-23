@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A077453 Decimal expansion of <code>1+sqrt(11)*(sqrt(29)+sqrt(5))/24</code>.
+ * A077453 Decimal expansion of 1+sqrt(11)*(sqrt(29)+sqrt(5))/24.
  * @author Georg Fischer
  */
 public class A077453 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A087573 Smallest number k such that <code>prime(4) +</code> k, <code>prime(5) +</code> k, ..., <code>prime(n+3) +</code> k are all prime.
+ * A087573 Smallest number k such that prime(4) + k, prime(5) + k, ..., prime(n+3) + k are all prime.
  * @author Georg Fischer
  */
 public class A087573 extends FiniteSequence {

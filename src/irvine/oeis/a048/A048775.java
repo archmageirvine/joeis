@@ -6,7 +6,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048775 Number of (partially defined) monotone maps from intervals of <code>1..n</code> to <code>1..n</code>.
+ * A048775 Number of (partially defined) monotone maps from intervals of 1..n to 1..n.
  * @author Georg Fischer
  */
 public class A048775 extends HolonomicRecurrence {

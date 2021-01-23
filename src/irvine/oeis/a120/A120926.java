@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A120926 Number of isolated <code>0</code>'s in all ternary words of length n on <code>{0,1,2}</code>.
+ * A120926 Number of isolated 0's in all ternary words of length n on {0,1,2}.
  * @author Georg Fischer
  */
 public class A120926 extends GeneratingFunctionSequence {

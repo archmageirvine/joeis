@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065874 <code>a(n) = (7^(n+1) - (-6)^(n+1))/13</code>.
+ * A065874 a(n) = (7^(n+1) - (-6)^(n+1))/13.
  * @author Sean A. Irvine
  */
 public class A065874 extends LinearRecurrence {

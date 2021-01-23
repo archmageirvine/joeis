@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103460 <code>a(n) = 9^n + 1 - 0^n</code>.
+ * A103460 a(n) = 9^n + 1 - 0^n.
  * @author Georg Fischer
  */
 public class A103460 extends GeneratingFunctionSequence {

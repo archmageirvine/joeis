@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A020848 Decimal expansion of <code>1/sqrt(91)</code>.
+ * A020848 Decimal expansion of 1/sqrt(91).
  * @author Sean A. Irvine
  */
 public class A020848 extends DecimalExpansionSequence {

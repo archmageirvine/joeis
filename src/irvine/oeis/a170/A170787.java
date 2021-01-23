@@ -5,7 +5,7 @@ package irvine.oeis.a170;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A170787 <code>a(n) = n^9*(n^5 + 1)/2</code>.
+ * A170787 a(n) = n^9*(n^5 + 1)/2.
  * @author Georg Fischer
  */
 public class A170787 extends HolonomicRecurrence {

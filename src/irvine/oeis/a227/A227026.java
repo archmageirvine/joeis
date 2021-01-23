@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227026 Numbers n such that <code>n!/m!</code> is a triangular number for some m <code>&lt; n-1</code>.
+ * A227026 Numbers n such that n!/m! is a triangular number for some m &lt; n-1.
  * @author Georg Fischer
  */
 public class A227026 extends GeneratingFunctionSequence {

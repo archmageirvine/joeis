@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A060628 Triangle of coefficients in expansion of elliptic function <code>sn(u)</code> in powers of u and k.
+ * A060628 Triangle of coefficients in expansion of elliptic function sn(u) in powers of u and k.
  * @author Sean A. Irvine
  */
 public class A060628 implements Sequence {

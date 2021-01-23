@@ -19,7 +19,7 @@ public class A006086 implements Sequence {
       mN = mN.add(1);
       final FactorSequence fs = Cheetah.factor(mN);
       final Z m = mN.multiply(fs.unitarySigma0());
-      if (Z.ZERO.equals(m.mod(fs.unitarySigma()))) {
+      if (m.mod(fs.unitarySigma()).isZero()) {
         return mN;
       }
     }

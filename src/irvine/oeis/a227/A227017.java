@@ -5,7 +5,7 @@ package irvine.oeis.a227;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A227017 <code>Floor(M(g(n-1)+1,..,g(n)))</code>, where M = harmonic mean and <code>g(n) = n(3n-1)/2 = A000326(n)</code>.
+ * A227017 Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n(3n-1)/2 = A000326(n).
  * @author Georg Fischer
  */
 public class A227017 extends HolonomicRecurrence {

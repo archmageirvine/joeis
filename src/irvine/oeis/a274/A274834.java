@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A274834 7-white numbers: partition digits of <code>n^7</code> into blocks of 7 starting at right; sum of these 7-digit numbers equals <code>n</code>.
+ * A274834 7-white numbers: partition digits of n^7 into blocks of 7 starting at right; sum of these 7-digit numbers equals n.
  * @author Georg Fischer
  */
 public class A274834 extends FiniteSequence {

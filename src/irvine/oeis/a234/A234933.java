@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A234933 The number of binary sequences that contain at least two consecutive <code>1</code>'s and contain at least two consecutive <code>0</code>'s.
+ * A234933 The number of binary sequences that contain at least two consecutive 1's and contain at least two consecutive 0's.
  * @author Georg Fischer
  */
 public class A234933 extends GeneratingFunctionSequence {

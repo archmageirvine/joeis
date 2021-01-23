@@ -5,7 +5,7 @@ package irvine.oeis.a134;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A134326 The sum of the elements in the first, middle and last row of the n-th power of the <code>9-by-9</code> matrix defined in the formula.
+ * A134326 The sum of the elements in the first, middle and last row of the n-th power of the 9-by-9 matrix defined in the formula.
  * @author Georg Fischer
  */
 public class A134326 extends HolonomicRecurrence {

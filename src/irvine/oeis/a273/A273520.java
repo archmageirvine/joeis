@@ -5,13 +5,13 @@ package irvine.oeis.a273;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A273520 Numbers n such that <code>8*14^n-1</code> is prime.
+ * A273520 Numbers n such that 8*14^n-1 is prime.
  * @author Georg Fischer
  */
 public class A273520 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A273520() {
-    super(0, 2, 8, 14, -1, 0);
+    super(0, 2, 8, 14, -1);
   }
 }

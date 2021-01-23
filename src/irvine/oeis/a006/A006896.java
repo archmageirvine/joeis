@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004140;
 
 /**
- * A006896 <code>a(n)</code> is the number of hierarchical linear models on n labeled factors allowing 2-way interactions (but no higher order interactions); or the number of simple labeled graphs with nodes chosen from an <code>n-set</code>.
+ * A006896 a(n) is the number of hierarchical linear models on n labeled factors allowing 2-way interactions (but no higher order interactions); or the number of simple labeled graphs with nodes chosen from an n-set.
  * @author Sean A. Irvine
  */
 public class A006896 extends A004140 {

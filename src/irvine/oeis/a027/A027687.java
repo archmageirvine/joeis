@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027687 <code>4-perfect (quadruply-perfect</code> or <code>sous-triple)</code> numbers: sum of divisors of n is <code>4n</code>.
+ * A027687 4-perfect (quadruply-perfect or sous-triple) numbers: sum of divisors of n is 4n.
  * @author Sean A. Irvine
  */
 public class A027687 implements Sequence {

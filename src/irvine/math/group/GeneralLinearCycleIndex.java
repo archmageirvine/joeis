@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
 
 /**
- * Cycle index for general linear group from precomputed data.
+ * Cycle index for general linear group over <code>GF2</code> from precomputed data.
  * @author Sean A. Irvine
  */
 public final class GeneralLinearCycleIndex {

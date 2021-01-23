@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196932 Decimal expansion of <code>sinh(1)*cosh(1)</code>.
+ * A196932 Decimal expansion of sinh(1)*cosh(1).
  * @author Georg Fischer
  */
 public class A196932 extends DecimalExpansionSequence {

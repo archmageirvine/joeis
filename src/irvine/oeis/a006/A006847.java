@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006847 Number of extreme points of the set of <code>n X n</code> symmetric doubly-stochastic matrices.
+ * A006847 Number of extreme points of the set of n X n symmetric doubly-stochastic matrices.
  * @author Sean A. Irvine
  */
 public class A006847 implements Sequence {

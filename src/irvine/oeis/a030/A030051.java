@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030051 Numbers from the <code>290-theorem</code>.
+ * A030051 Numbers from the 290-theorem.
  * @author Georg Fischer
  */
 public class A030051 extends FiniteSequence {

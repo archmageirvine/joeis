@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A022464 Primes of the form <code>36*n^2 - 810*n + 2753, n &gt;= 0</code>, sorted.
+ * A022464 Primes of the form 36*n^2 - 810*n + 2753, n &gt;= 0, sorted.
  * @author Sean A. Irvine
  */
 public class A022464 extends A000040 {

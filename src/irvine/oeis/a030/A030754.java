@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030754 Numbers n such that <code>s(n)=2</code>, where <code>s=A030747</code>.
+ * A030754 Numbers n such that s(n)=2, where s=A030747.
  * @author Sean A. Irvine
  */
 public class A030754 extends A030747 {

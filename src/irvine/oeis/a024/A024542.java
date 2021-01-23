@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024542 Lower bound on cumulative mean of distances between cards after n shuffles in <code>A024222</code>.
+ * A024542 Lower bound on cumulative mean of distances between cards after n shuffles in A024222.
  * @author Sean A. Irvine
  */
 public class A024542 implements Sequence {

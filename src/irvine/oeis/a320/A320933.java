@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A320933 <code>a(n) = 2^n - floor((n+3)/2)</code>.
+ * A320933 a(n) = 2^n - floor((n+3)/2).
  * @author Georg Fischer
  */
 public class A320933 extends GeneratingFunctionSequence {

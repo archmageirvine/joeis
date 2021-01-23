@@ -5,14 +5,14 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013926 <code>a(n) = (2*n)! * D_{2*n}</code>, where <code>D_{2*n} = (1/Pi) * Integral_{x=0..oo} [1 - x^(2*n) / Product_{j=1..n} (x^2+j^2)]</code> dx.
+ * A013926 a(n) = (2*n)! * D_{2*n}, where D_{2*n} = (1/Pi) * Integral_{x=0..oo} [1 - x^(2*n) / Product_{j=1..n} (x^2+j^2)] dx.
  * @author Sean A. Irvine
  */
 public class A013926 implements Sequence {
 
-  private int mN = 0;
+  private long mN = 0;
 
-  private Z t(final int n, final int k) {
+  private Z t(final long n, final long k) {
     if (k == 0) {
       return Z.valueOf(n).pow(2 * n);
     } else {

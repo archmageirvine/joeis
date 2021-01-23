@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011474 Decimal expansion of <code>55th</code> root of 55.
+ * A011474 Decimal expansion of 55th root of 55.
  * @author Sean A. Irvine
  */
 public class A011474 extends DecimalExpansionSequence {

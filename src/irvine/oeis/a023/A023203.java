@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023203 Primes p such that p <code>+ 10</code> is also prime.
+ * A023203 Primes p such that p + 10 is also prime.
  * @author Sean A. Irvine
  */
 public class A023203 extends A000040 {

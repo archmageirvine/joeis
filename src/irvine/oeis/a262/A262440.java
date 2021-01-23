@@ -6,7 +6,7 @@ package irvine.oeis.a262;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A262440 <code>a(n) = Sum_{k=0..n}(binomial(n,k)*binomial(n+k-1,n-k))</code>.
+ * A262440 a(n) = Sum_{k=0..n}(binomial(n,k)*binomial(n+k-1,n-k)).
  * @author Georg Fischer
  */
 public class A262440 extends HolonomicRecurrence {

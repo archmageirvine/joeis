@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072251 <code>(3*a(n)+1)/2^(2*n + 1) = 23-6*n</code>.
+ * A072251 (3*a(n)+1)/2^(2*n + 1) = 23-6*n.
  * @author Sean A. Irvine
  */
 public class A072251 extends LinearRecurrence {

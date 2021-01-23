@@ -6,7 +6,7 @@ package irvine.oeis.a061;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A061524 Surround numbers of an <code>n X 2</code> rectangle when n is even.
+ * A061524 Surround numbers of an n X 2 rectangle when n is even.
  * @author Georg Fischer
  */
 public class A061524 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224384 <code>a(n) = 1 + 17^n</code>.
+ * A224384 a(n) = 1 + 17^n.
  * @author Georg Fischer
  */
 public class A224384 extends GeneratingFunctionSequence {

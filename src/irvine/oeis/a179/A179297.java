@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179297 <code>a(n) = n^2 - (n-1)^2 - (n-2)^2 - ... - 1^2</code>.
+ * A179297 a(n) = n^2 - (n-1)^2 - (n-2)^2 - ... - 1^2.
  * @author Sean A. Irvine
  */
 public class A179297 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308089 Sum of the perimeters of the triangles with integer sides and perimeter <code>n</code>.
+ * A308089 Sum of the perimeters of all integer-sided triangles with perimeter n.
  * @author Georg Fischer
  */
 public class A308089 extends HolonomicRecurrence {

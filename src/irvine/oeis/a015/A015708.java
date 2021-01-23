@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015708 Numbers n such that <code>n | (phi(n) * sigma(n))</code> but <code>(phi(n) + sigma(n))/n</code> does not increase.
+ * A015708 Numbers n such that n | (phi(n) * sigma(n)) but (phi(n) + sigma(n))/n does not increase.
  * @author Sean A. Irvine
  */
 public class A015708 implements Sequence {
@@ -21,7 +21,7 @@ public class A015708 implements Sequence {
       final FactorSequence fs = Cheetah.factor(mN);
       final Z a = fs.sigma().multiply(fs.phi());
       final Z[] qr = a.divideAndRemainder(mN);
-      if (qr[1].equals(Z.ZERO)) {
+      if (qr[1].isZero()) {
         if (qr[0].compareTo(mBest) <= 0) {
           return mN;
         } else {

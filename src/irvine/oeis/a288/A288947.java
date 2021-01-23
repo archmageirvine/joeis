@@ -5,7 +5,7 @@ package irvine.oeis.a288;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A288947 Number of maximal cliques in the <code>n X n</code> queen graph.
+ * A288947 Number of maximal cliques in the n X n queen graph.
  * @author Georg Fischer
  */
 public class A288947 extends HolonomicRecurrence {

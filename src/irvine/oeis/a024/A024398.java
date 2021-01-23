@@ -4,7 +4,7 @@ package irvine.oeis.a024;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A024398 <code>a(n) = [ (2nd</code> elementary symmetric function of <code>S(n))/(first</code> elementary symmetric function of <code>S(n)) ]</code>, where <code>S(n) =</code> {first <code>n+1</code> positive integers congruent to <code>2 mod 3}</code>.
+ * A024398 a(n) = [ (2nd elementary symmetric function of S(n))/(first elementary symmetric function of S(n)) ], where S(n) = {first n+1 positive integers congruent to 2 mod 3}.
  * @author Georg Fischer
  */
 public class A024398 extends GeneratingFunctionSequence {

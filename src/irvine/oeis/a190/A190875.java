@@ -5,7 +5,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190875 E.g.f. <code>exp(x+x^4)</code>.
+ * A190875 E.g.f. exp(x+x^4).
  * @author Georg Fischer
  */
 public class A190875 extends HolonomicRecurrence {

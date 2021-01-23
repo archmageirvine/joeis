@@ -5,7 +5,7 @@ package irvine.oeis.a316;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A316160 Number of pairs of compositions of n corresponding to a seaweed algebra of index <code>n-3</code>.
+ * A316160 Number of pairs of compositions of n corresponding to a seaweed algebra of index n-3.
  * @author Georg Fischer
  */
 public class A316160 extends HolonomicRecurrence {

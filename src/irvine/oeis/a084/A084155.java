@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084155 A <code>Pell-related fourth-order</code> recurrence.
+ * A084155 A Pell-related fourth-order recurrence.
  * @author Sean A. Irvine
  */
 public class A084155 extends LinearRecurrence {

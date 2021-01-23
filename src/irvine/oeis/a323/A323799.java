@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323799 Number of permutations p of <code>[n]</code> such that <code>max_{j=1..n} |p(j)-j| = 3</code>.
+ * A323799 Number of permutations p of [n] such that max_{j=1..n} |p(j)-j| = 3.
  * @author Georg Fischer
  */
 public class A323799 extends GeneratingFunctionSequence {

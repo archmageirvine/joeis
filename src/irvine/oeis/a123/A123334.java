@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123334 <code>a(n) = 4^n*(Gamma(n+1/4)/Gamma(1/4) + (n-1)!)</code>.
+ * A123334 a(n) = 4^n*(Gamma(n+1/4)/Gamma(1/4) + (n-1)!).
  * @author Georg Fischer
  */
 public class A123334 extends HolonomicRecurrence {

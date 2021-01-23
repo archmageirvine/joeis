@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A131593 Number of norep emirps less than <code>10^n</code>.
+ * A131593 Number of norep emirps less than 10^n.
  * @author Georg Fischer
  */
 public class A131593 extends FiniteSequence {

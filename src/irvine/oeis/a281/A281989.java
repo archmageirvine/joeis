@@ -5,13 +5,13 @@ package irvine.oeis.a281;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A281989 Numbers k such that <code>7*10^k + 61</code> is prime.
+ * A281989 Numbers k such that 7*10^k + 61 is prime.
  * @author Georg Fischer
  */
 public class A281989 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A281989() {
-    super(1, 1, 7, 10, +61, 0);
+    super(1, 1, 7, 10, +61);
   }
 }

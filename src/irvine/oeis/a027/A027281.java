@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027281 <code>a(n) = Sum_{k=0..2n} (k+1) * A026568(n, k)</code>.
+ * A027281 a(n) = Sum_{k=0..2n} (k+1) * A026568(n, k).
  * @author Georg Fischer
  */
 public class A027281 extends GeneratingFunctionSequence {

@@ -5,13 +5,13 @@ package irvine.oeis.a281;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A281642 Numbers k such that <code>4*10^k - 57</code> is prime.
+ * A281642 Numbers k such that 4*10^k - 57 is prime.
  * @author Georg Fischer
  */
 public class A281642 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A281642() {
-    super(1, 3, 4, 10, -57, 0);
+    super(1, 3, 4, 10, -57);
   }
 }

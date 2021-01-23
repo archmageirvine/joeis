@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A187663 <code>a(0) = 1, a(n) =</code> least primorial sharing at least n distinct digits with <code>a(n-1)</code>.
+ * A187663 a(0) = 1, a(n) = least primorial sharing at least n distinct digits with a(n-1).
  * @author Georg Fischer
  */
 public class A187663 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicIntArray;
 
 
 /**
- * A002850 Number of decompositions of <code>2n</code> into sum of 2 lucky numbers.
+ * A002850 Number of decompositions of 2n into sum of 2 lucky numbers.
  * @author Sean A. Irvine
  */
 public class A002850 extends A000959 {

@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182626 <code>a(n) = Hypergeometric([-n, n], [1], 2)</code>.
+ * A182626 a(n) = Hypergeometric([-n, n], [1], 2).
  * @author Georg Fischer
  */
 public class A182626 extends HolonomicRecurrence {

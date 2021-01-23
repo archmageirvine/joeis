@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302119 Number of Hamiltonian paths in the graph on n vertices <code>{1,...,n}</code>, with i adjacent to j iff <code>|i-j|</code> in <code>{1,3}</code>.
+ * A302119 Number of Hamiltonian paths in the graph on n vertices {1,...,n}, with i adjacent to j iff |i-j| in {1,3}.
  * @author Georg Fischer
  */
 public class A302119 extends GeneratingFunctionSequence {

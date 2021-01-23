@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A264917 <code>a(n)</code> is the greatest prime number with <code>prime(1)</code> digits <code>1, prime(2)</code> digits <code>2, prime(3)</code> digits 3, ..., <code>prime(n)</code> digits n with <code>1 &lt;= n &lt;= 9</code> or 0 if no such prime exists.
+ * A264917 a(n) is the greatest prime number with prime(1) digits 1, prime(2) digits 2, prime(3) digits 3, ..., prime(n) digits n with 1 &lt;= n &lt;= 9 or 0 if no such prime exists.
  * @author Georg Fischer
  */
 public class A264917 extends FiniteSequence {

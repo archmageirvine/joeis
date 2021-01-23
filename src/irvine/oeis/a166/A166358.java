@@ -6,7 +6,7 @@ package irvine.oeis.a166;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A166358 Row sums of exponential Riordan array <code>[1+x*arctanh(x), x], A166357</code>.
+ * A166358 Row sums of exponential Riordan array [1+x*arctanh(x), x], A166357.
  * @author Georg Fischer
  */
 public class A166358 extends HolonomicRecurrence {

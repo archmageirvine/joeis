@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245827 Szeged index of the grid graph <code>P_3 X P_n</code>.
+ * A245827 Szeged index of the grid graph P_3 X P_n.
  * @author Sean A. Irvine
  */
 public class A245827 extends LinearRecurrence {

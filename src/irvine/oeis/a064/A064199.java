@@ -4,7 +4,7 @@ package irvine.oeis.a064;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A064199 <code>a(n) = 9*(n-2)^2*(n^2-2*n-1)/2</code>.
+ * A064199 a(n) = 9*(n-2)^2*(n^2-2*n-1)/2.
  * @author Georg Fischer
  */
 public class A064199 extends GeneratingFunctionSequence {

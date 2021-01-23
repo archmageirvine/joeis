@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000144;
 
 /**
- * A030212 Glaisher's <code>chi_4(n)</code>.
+ * A030212 Glaisher's chi_4(n).
  * @author Sean A. Irvine
  */
 public class A030212 implements Sequence {

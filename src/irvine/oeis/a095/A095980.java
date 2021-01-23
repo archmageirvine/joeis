@@ -6,7 +6,7 @@ package irvine.oeis.a095;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A095980 Number of UFU-free Motzkin paths of length <code>n</code>.
+ * A095980 Number of UFU-free Motzkin paths of length n.
  * @author Georg Fischer
  */
 public class A095980 extends HolonomicRecurrence {

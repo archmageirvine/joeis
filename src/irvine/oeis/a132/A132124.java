@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A132124 <code>a(n) = n*(n+1)*(8*n + 1)/6</code>.
+ * A132124 a(n) = n*(n+1)*(8*n + 1)/6.
  * @author Georg Fischer
  */
 public class A132124 extends GeneratingFunctionSequence {

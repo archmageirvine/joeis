@@ -4,7 +4,7 @@ import irvine.oeis.BinaryToDecimalExpansionSequence;
 import irvine.oeis.a010.A010060;
 
 /**
- * A014571 Consider the Morse-Thue sequence <code>(A010060)</code> as defining a binary constant and convert it to decimal.
+ * A014571 Consider the Morse-Thue sequence (A010060) as defining a binary constant and convert it to decimal.
  * @author Sean A. Irvine
  */
 public class A014571 extends BinaryToDecimalExpansionSequence {

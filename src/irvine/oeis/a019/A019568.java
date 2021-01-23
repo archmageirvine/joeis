@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019568 <code>a(n) =</code> smallest k <code>&gt;= 1</code> such that <code>{1^n, 2^n, 3^n</code>, ..., <code>k^n}</code> can be partitioned into two sets with equal sum.
+ * A019568 a(n) = smallest k &gt;= 1 such that {1^n, 2^n, 3^n, ..., k^n} can be partitioned into two sets with equal sum.
  * @author Sean A. Irvine
  */
 public class A019568 implements Sequence {
@@ -14,7 +14,7 @@ public class A019568 implements Sequence {
   private int mN = -1;
 
   private boolean search(final Z target, final int pos, final Z[] powers, final Z[] cum) {
-    if (Z.ZERO.equals(target)) {
+    if (target.isZero()) {
       return true;
     }
     if (pos < 0) {

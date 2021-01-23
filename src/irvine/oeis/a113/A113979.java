@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113979 Number of compositions of n with an even number of <code>1</code>'s.
+ * A113979 Number of compositions of n with an even number of 1's.
  * @author Georg Fischer
  */
 public class A113979 extends HolonomicRecurrence {

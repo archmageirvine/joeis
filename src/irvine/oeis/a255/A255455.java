@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A255455 <code>A255454(2^n-1)</code>.
+ * A255455 A255454(2^n-1).
  * @author Georg Fischer
  */
 public class A255455 extends GeneratingFunctionSequence {

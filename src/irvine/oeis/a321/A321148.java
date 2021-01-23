@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321148 <code>a(1) = 24603, a(n) = n*a(n-1)</code> but products that are not in <code>A010784</code> are first reduced as in <code>A320486</code> (see comments); continue until zero is reached.
+ * A321148 a(1) = 24603, a(n) = n*a(n-1) but products that are not in A010784 are first reduced as in A320486 (see comments); continue until zero is reached.
  * @author Georg Fischer
  */
 public class A321148 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A176127 The number of permutations of <code>{1,2,...,n,1,2,...,n}</code> with the property that there are k numbers between the two k's in the set for <code>k=1,...,n</code>.
+ * A176127 The number of permutations of {1,2,...,n,1,2,...,n} with the property that there are k numbers between the two k's in the set for k=1,...,n.
  * @author Sean A. Irvine
  */
 public class A176127 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086573 <code>a(n) =</code> k where <code>R(k+2)=2</code>.
+ * A086573 a(n) = k where R(k+2)=2.
  * @author Georg Fischer
  */
 public class A086573 extends GeneratingFunctionSequence {

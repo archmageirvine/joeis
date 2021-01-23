@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133789 Let <code>P(A)</code> denote the power set of an n-element set A. Then <code>a(n) =</code> the number of pairs of elements <code>{x,y}</code> of <code>P(A)</code> for which either <code>0) x</code> and y are disjoint and for which x is not a subset of y and y is not a subset of x, <code>1) x</code> and y are disjoint and for which either x is a subset of y or y is a subset of x, or <code>2) x</code> and y intersect but for which x is not a subset of y and y is not a subset of <code>x</code>.
+ * A133789 Let P(A) denote the power set of an n-element set A. Then a(n) = the number of pairs of elements {x,y} of P(A) for which either 0) x and y are disjoint and for which x is not a subset of y and y is not a subset of x, 1) x and y are disjoint and for which either x is a subset of y or y is a subset of x, or 2) x and y intersect but for which x is not a subset of y and y is not a subset of x.
  * @author Georg Fischer
  */
 public class A133789 extends GeneratingFunctionSequence {

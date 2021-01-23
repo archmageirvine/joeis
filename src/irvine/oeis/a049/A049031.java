@@ -4,7 +4,7 @@ package irvine.oeis.a049;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A049031 Maximization of sums of cubes of integer differences <code>(b_[ i ]-i)^3</code> over permutations <code>{b_[ i ]</code>, for <code>i-1,2,...,n}</code> on first n integers.
+ * A049031 Maximization of sums of cubes of integer differences (b_[ i ]-i)^3 over permutations {b_[ i ], for i-1,2,...,n} on first n integers.
  * @author Georg Fischer
  */
 public class A049031 extends GeneratingFunctionSequence {

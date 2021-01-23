@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106434 The <code>(1,1)-entry</code> of the matrix <code>A^n</code>, where A <code>= [0,1;2,3]</code>.
+ * A106434 The (1,1)-entry of the matrix A^n, where A = [0,1;2,3].
  * @author Sean A. Irvine
  */
 public class A106434 extends LinearRecurrence {

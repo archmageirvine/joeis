@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094328 Iterate the map in <code>A006369</code> starting at 4.
+ * A094328 Iterate the map in A006369 starting at 4.
  * @author Sean A. Irvine
  */
 public class A094328 extends LinearRecurrence {

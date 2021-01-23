@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a259.A259799;
 
 /**
- * A027600 Number of partitions of <code>4^n-1</code> into n-th powers.
+ * A027600 Number of partitions of 4^n-1 into n-th powers.
  * @author Sean A. Irvine
  */
 public class A027600 extends A259799 {

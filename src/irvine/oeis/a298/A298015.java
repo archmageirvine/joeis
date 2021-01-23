@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298015 Coordination sequence of <code>snub-632</code> tiling with respect to a trivalent node of type <code>short-short-short</code>.
+ * A298015 Coordination sequence of snub-632 tiling with respect to a trivalent node of type short-short-short.
  * @author Sean A. Irvine
  */
 public class A298015 extends LinearRecurrence {

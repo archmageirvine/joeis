@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A158453 Number of connected spanning subgraphs in <code>3 X n</code> grid.
+ * A158453 Number of connected spanning subgraphs in 3 X n grid.
  * @author Georg Fischer
  */
 public class A158453 extends GeneratingFunctionSequence {

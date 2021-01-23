@@ -5,6 +5,7 @@
 <suppressions>
     <suppress checks="PackageHtml" files=".*test/.*"/>
     <suppress checks="FileLength" files=".*AllTests.java"/>
+    <suppress checks="FileLength" files=".*Canonical.java"/>
     <suppress checks="FileLength" files=".*CR.java"/>
     <suppress checks="FileLength" files=".*CliFlags.java"/>
     <suppress checks="FileLength" files=".*GenerateGraphs.java"/>
@@ -18,12 +19,14 @@
     <suppress checks="FileLength" files=".*Twiddler.java"/>
     <suppress checks="FileLength" files=".*CoordSet2.java"/>
     <suppress checks="FileLength" files=".*Z.java"/>
+    <suppress checks="FileLength" files=".*ZUtils.java"/>
     <suppress checks="FileLength" files=".*A018190.java"/>
     <suppress checks="FileLength" files=".*A028451.java"/>
     <suppress checks="JavadocMethod" files=".*Tests?.java"/>
     <suppress checks="MethodLength" files=".*AllTests.java"/>
     <suppress checks="MethodLength" files=".*BipScanner.java"/>
     <suppress checks="MethodLength" files=".*Beta.java"/>
+    <suppress checks="MethodLength" files=".*Canonical.java"/>
     <suppress checks="MethodLength" files=".*Discriminant.java"/>
     <suppress checks="MethodLength" files=".*InverseMonotone.java"/>
     <suppress checks="MethodLength" files=".*Min5AExtenderReducer.java"/>
@@ -34,9 +37,12 @@
     <suppress checks="MethodLength" files=".*A010089.java"/>
     <suppress checks="MethodLength" files=".*A018190.java"/>
     <suppress checks="MethodLength" files=".*A028486.java"/>
+    <suppress checks="MethodLength" files=".*A033511.java"/>
+    <suppress checks="MethodLength" files=".*A335798.java"/>
     <suppress checks="ParameterNumber" files=".*BipExtensionFinder.java"/>
     <suppress checks="ParameterNumber" files=".*BipScanner.java"/>
     <suppress checks="ParameterNumber" files=".*Canon.java"/>
+    <suppress checks="ParameterNumber" files=".*Canonical.java"/>
     <suppress checks="ParameterNumber" files=".*DispatchVec.java"/>
     <suppress checks="ParameterNumber" files=".*InvarProc.java"/>
     <suppress checks="ParameterNumber" files=".*Min4Scanner.java"/>

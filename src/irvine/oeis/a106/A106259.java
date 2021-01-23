@@ -5,7 +5,7 @@ package irvine.oeis.a106;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A106259 Expansion of <code>1/sqrt(1-12x-12x^2)</code>.
+ * A106259 Expansion of 1/sqrt(1-12x-12x^2).
  * @author Georg Fischer
  */
 public class A106259 extends HolonomicRecurrence {

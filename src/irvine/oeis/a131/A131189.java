@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131189 Numbers <code>n&gt;=0</code> such that <code>d(n) = (n^1 + 1) (n^2 + 2) ... (n^14 + 14) / 14!, e(n) = (n^1 + 1) (n^2 + 2) ... (n^15 + 15) / 15!</code>, and <code>f(n) = (n^1 + 1) (n^2 + 2) ... (n^16 + 16) / 16!</code> take nonintegral values.
+ * A131189 Numbers n&gt;=0 such that d(n) = (n^1 + 1) (n^2 + 2) ... (n^14 + 14) / 14!, e(n) = (n^1 + 1) (n^2 + 2) ... (n^15 + 15) / 15!, and f(n) = (n^1 + 1) (n^2 + 2) ... (n^16 + 16) / 16! take nonintegral values.
  * @author Sean A. Irvine
  */
 public class A131189 extends LinearRecurrence {

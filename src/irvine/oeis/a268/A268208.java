@@ -6,7 +6,7 @@ package irvine.oeis.a268;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A268208 Number of paths from <code>(0,0)</code> to <code>(n,n)</code> using only steps North, Northeast and East <code>(i.e.</code>, steps <code>E(1,0), D(1,1)</code>, and <code>N(0,1))</code> that do not cross <code>y=x</code> "vertically".
+ * A268208 Number of paths from (0,0) to (n,n) using only steps North, Northeast and East (i.e., steps E(1,0), D(1,1), and N(0,1)) that do not cross y=x "vertically".
  * @author Georg Fischer
  */
 public class A268208 extends HolonomicRecurrence {

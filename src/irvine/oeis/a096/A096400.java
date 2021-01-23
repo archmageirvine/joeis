@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A096400 Number of equivalence classes of triangles having equal angles of integral degrees and smallest angle <code>= n</code>.
+ * A096400 Number of equivalence classes of triangles having equal angles of integral degrees and smallest angle = n.
  * @author Georg Fischer
  */
 public class A096400 extends FiniteSequence {

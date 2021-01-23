@@ -5,7 +5,7 @@ package irvine.oeis.a250;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A250202 The "sum of squares of digits" problem in base 12, start with <code>6</code> (written in base <code>10)</code>.
+ * A250202 The "sum of squares of digits" problem in base 12, start with 6 (written in base 10).
  * @author Georg Fischer
  */
 public class A250202 extends HolonomicRecurrence {

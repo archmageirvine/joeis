@@ -5,13 +5,13 @@ package irvine.oeis.a326;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A326655 Numbers k such that <code>3*4^k+1</code> is prime.
+ * A326655 Numbers k such that 3*4^k+1 is prime.
  * @author Georg Fischer
  */
 public class A326655 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A326655() {
-    super(1, 1, 3, 4, +1, 0);
+    super(1, 1, 3, 4, 1);
   }
 }

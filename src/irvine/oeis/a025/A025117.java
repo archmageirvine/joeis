@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005408;
 import irvine.oeis.a008.A008578;
 
 /**
- * A025117 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1)</code>, where k <code>= [ n/2 ], s =</code> (odd natural numbers), <code>t =</code> (primes).
+ * A025117 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (odd natural numbers), t = (primes).
  * @author Sean A. Irvine
  */
 public class A025117 extends HalfConvolutionSequence {

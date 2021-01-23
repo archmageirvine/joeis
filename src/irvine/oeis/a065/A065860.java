@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A065860 Remainder when the n-th composite number is divided by <code>n</code>.
+ * A065860 Remainder when the n-th composite number is divided by n.
  * @author Georg Fischer
  */
 public class A065860 extends A002808 {

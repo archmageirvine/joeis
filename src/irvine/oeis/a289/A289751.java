@@ -5,7 +5,7 @@ package irvine.oeis.a289;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A289751 Numbers k such that <code>(4*10^k + 137)/3</code> is prime.
+ * A289751 Numbers k such that (4*10^k + 137)/3 is prime.
  * @author Georg Fischer
  */
 public class A289751 extends PowerFactorPrimeSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A020913 Number of terms in base 5 representation of <code>Fibonacci(n)</code>.
+ * A020913 Number of terms in base 5 representation of Fibonacci(n).
  * @author Sean A. Irvine
  */
 public class A020913 extends A000045 {

@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070391 <code>a(n) = 5^n mod 46</code>.
+ * A070391 a(n) = 5^n mod 46.
  * @author Georg Fischer
  */
 public class A070391 extends HolonomicRecurrence {

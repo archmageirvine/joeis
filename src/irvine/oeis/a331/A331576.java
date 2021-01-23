@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331576 <code>a(n)</code> is the number of subsets of <code>{1..n}</code> that contain 5 even and 5 odd numbers.
+ * A331576 a(n) is the number of subsets of {1..n} that contain 5 even and 5 odd numbers.
  * @author Georg Fischer
  */
 public class A331576 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188622 Row sums of the Riordan matrix <code>(1/sqrt(1-4*x), x/(1-x)) (A187888)</code>.
+ * A188622 Row sums of the Riordan matrix (1/sqrt(1-4*x), x/(1-x)) (A187888).
  * @author Georg Fischer
  */
 public class A188622 extends HolonomicRecurrence {

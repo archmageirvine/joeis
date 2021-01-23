@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A052366 Number of nonnegative integer <code>4 X 4</code> matrices with sum of elements equal to n, under row and column permutations.
+ * A052366 Number of nonnegative integer 4 X 4 matrices with sum of elements equal to n, under row and column permutations.
  * @author Georg Fischer
  */
 public class A052366 extends GeneratingFunctionSequence {

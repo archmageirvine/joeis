@@ -4,7 +4,7 @@ package irvine.oeis.a058;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A058985 <code>6 + 33 n + 6 binomial(n, 2) - 28 binomial(n, 3) + 20 binomial(n, 4) - 47 binomial(n, 5)</code>.
+ * A058985 6 + 33 n + 6 binomial(n, 2) - 28 binomial(n, 3) + 20 binomial(n, 4) - 47 binomial(n, 5).
  * @author Georg Fischer
  */
 public class A058985 extends GeneratingFunctionSequence {

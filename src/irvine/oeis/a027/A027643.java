@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027643 Numerators of poly-Bernoulli numbers <code>B_n^(k)</code> with <code>k=2</code>.
+ * A027643 Numerators of poly-Bernoulli numbers B_n^(k) with k=2.
  * @author Sean A. Irvine
  */
 public class A027643 implements Sequence {

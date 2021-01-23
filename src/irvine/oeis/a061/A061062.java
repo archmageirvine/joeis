@@ -5,7 +5,7 @@ package irvine.oeis.a061;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A061062 Sum of squared factorials: <code>(0!)^2 + (1!)^2 + (2!)^2 + (3!)^2 +...+ (n!)^2</code>.
+ * A061062 Sum of squared factorials: (0!)^2 + (1!)^2 + (2!)^2 + (3!)^2 +...+ (n!)^2.
  * @author Georg Fischer
  */
 public class A061062 extends HolonomicRecurrence {

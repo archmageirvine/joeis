@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A159355 Number of <code>n X n</code> arrays of squares of integers summing to 4.
+ * A159355 Number of n X n arrays of squares of integers summing to 4.
  * @author Georg Fischer
  */
 public class A159355 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245580 Smallest Lucas number <code>L(m) &gt; L(n)</code> that is divisible by the n-th Lucas number <code>L(n) = A000204(n)</code>.
+ * A245580 Smallest Lucas number L(m) &gt; L(n) that is divisible by the n-th Lucas number L(n) = A000204(n).
  * @author Georg Fischer
  */
 public class A245580 extends GeneratingFunctionSequence {

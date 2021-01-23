@@ -6,7 +6,7 @@ package irvine.oeis.a260;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A260582 Number of ways to place <code>2n</code> rooks on <code>n X n</code> board, 2 rooks in each row and each column, multiple rooks in a cell allowed, and exactly 4 rooks below the main diagonal.
+ * A260582 Number of ways to place 2n rooks on n X n board, 2 rooks in each row and each column, multiple rooks in a cell allowed, and exactly 4 rooks below the main diagonal.
  * @author Georg Fischer
  */
 public class A260582 extends GeneratingFunctionSequence {

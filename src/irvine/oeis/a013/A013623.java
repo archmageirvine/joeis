@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013623 Triangle of coefficients in expansion of <code>(2+7x)^n</code>.
+ * A013623 Triangle of coefficients in expansion of (2+7x)^n.
  * @author Sean A. Irvine
  */
 public class A013623 implements Sequence {

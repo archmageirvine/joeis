@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126958 Define an array by <code>d(m, 0) = 1, d(m, 1) =</code> m; <code>d(m, k) = (m - k + 1) d(m+1, k-1) - (k-1) (m+1) d(m+2, k-2)</code>. Sequence gives <code>d(n,4)</code>.
+ * A126958 Define an array by d(m, 0) = 1, d(m, 1) = m; d(m, k) = (m - k + 1) d(m+1, k-1) - (k-1) (m+1) d(m+2, k-2). Sequence gives d(n,4).
  * @author Georg Fischer
  */
 public class A126958 extends HolonomicRecurrence {

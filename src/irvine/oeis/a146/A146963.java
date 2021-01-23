@@ -4,7 +4,7 @@ package irvine.oeis.a146;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A146963 <code>a(n) = ((3 + sqrt(7))^n + (3 - sqrt(7))^n)/2</code>.
+ * A146963 a(n) = ((3 + sqrt(7))^n + (3 - sqrt(7))^n)/2.
  * @author Georg Fischer
  */
 public class A146963 extends GeneratingFunctionSequence {

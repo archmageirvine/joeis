@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103948 <code>a(n)</code> is the number of distinct n-th powers of functions <code>{1, 2, 3} -&gt; {1, 2, 3}</code>.
+ * A103948 a(n) is the number of distinct n-th powers of functions {1, 2, 3} -&gt; {1, 2, 3}.
  * @author Georg Fischer
  */
 public class A103948 extends GeneratingFunctionSequence {

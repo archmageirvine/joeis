@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A007313 Reversion of g.f. for Euler (secant) numbers <code>A000364</code>.
+ * A007313 Reversion of g.f. for Euler (secant) numbers A000364.
  * @author Sean A. Irvine
  */
 public class A007313 extends A000364 {

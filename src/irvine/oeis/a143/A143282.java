@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143282 Number of binary words of length n containing at least one subword 1001 and no subwords <code>10^{i}1</code> with <code>i&lt;2</code>.
+ * A143282 Number of binary words of length n containing at least one subword 1001 and no subwords 10^{i}1 with i&lt;2.
  * @author Georg Fischer
  */
 public class A143282 extends GeneratingFunctionSequence {

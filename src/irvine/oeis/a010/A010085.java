@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010085 Weight distribution of <code>[15,11,3]</code> Hamming code of length 15 and minimal distance 3.
+ * A010085 Weight distribution of [15,11,3] Hamming code of length 15 and minimal distance 3.
  * @author Sean A. Irvine
  */
 public class A010085 extends FiniteSequence {

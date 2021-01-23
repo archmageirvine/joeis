@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028338 Triangle of coefficients in expansion of <code>(x+1)*(x+3)*...*(x + 2n - 1)</code> in rising powers of <code>x</code>.
+ * A028338 Triangle of coefficients in expansion of (x+1)*(x+3)*...*(x + 2n - 1) in rising powers of x.
  * @author Sean A. Irvine
  */
 public class A028338 extends MemoryFunction2<Integer, Z> implements Sequence {

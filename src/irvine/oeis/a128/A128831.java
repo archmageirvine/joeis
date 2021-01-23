@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128831 Number of n-tuples where each entry is chosen from the subsets of <code>{1,2,3}</code> such that the intersection of all n entries is empty.
+ * A128831 Number of n-tuples where each entry is chosen from the subsets of {1,2,3} such that the intersection of all n entries is empty.
  * @author Sean A. Irvine
  */
 public class A128831 extends LinearRecurrence {

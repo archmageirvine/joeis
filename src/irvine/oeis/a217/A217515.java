@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A217515 Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence <code>(123)*</code>.
+ * A217515 Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (123)*.
  * @author Georg Fischer
  */
 public class A217515 extends GeneratingFunctionSequence {

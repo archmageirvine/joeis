@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A278008 Number of <code>n X 2 0..2</code> arrays with every element plus <code>1 mod 3</code> equal to some element at offset <code>(-1,-1) (-1,0) (-1,1) (0,-1) (0,1)</code> or <code>(1,0)</code>, with upper left element zero.
+ * A278008 Number of n X 2 0..2 arrays with every element plus 1 mod 3 equal to some element at offset (-1,-1) (-1,0) (-1,1) (0,-1) (0,1) or (1,0), with upper left element zero.
  * @author Georg Fischer
  */
 public class A278008 extends GeneratingFunctionSequence {

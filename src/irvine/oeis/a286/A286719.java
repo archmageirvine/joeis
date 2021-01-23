@@ -4,7 +4,7 @@ package irvine.oeis.a286;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A286719 Column <code>k=4</code> of triangle <code>A039755, Sheffer(exp(x), (exp(2*x) - 1)/2)</code>.
+ * A286719 Column k=4 of triangle A039755, Sheffer(exp(x), (exp(2*x) - 1)/2).
  * @author Georg Fischer
  */
 public class A286719 extends GeneratingFunctionSequence {

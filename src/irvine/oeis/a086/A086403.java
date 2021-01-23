@@ -6,7 +6,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086403 Numerators in continued fraction representation of <code>(e-1)/(e+1)</code>.
+ * A086403 Numerators in continued fraction representation of (e-1)/(e+1).
  * @author Georg Fischer
  */
 public class A086403 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188684 Partial sums of binomials <code>binomial(3n,n)^2/(2n+1)^2</code>.
+ * A188684 Partial sums of binomials binomial(3n,n)^2/(2n+1)^2.
  * @author Georg Fischer
  */
 public class A188684 extends HolonomicRecurrence {

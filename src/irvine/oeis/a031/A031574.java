@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031574 Numbers n such that continued fraction for <code>sqrt(n)</code> has even period and central term 76.
+ * A031574 Numbers n such that continued fraction for sqrt(n) has even period and central term 76.
  * @author Sean A. Irvine
  */
 public class A031574 extends A031404 {

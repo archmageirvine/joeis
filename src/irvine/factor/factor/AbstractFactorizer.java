@@ -91,7 +91,7 @@ public abstract class AbstractFactorizer implements Factorizer {
       fs.add(-1L, FactorSequence.PRIME, exponent);
       n = n.negate();
     }
-    if (!Z.ZERO.equals(n)) {
+    if (!n.isZero()) {
       // handle even part
       final int t = n.getLowestSetBit();
       if (t != 0) {

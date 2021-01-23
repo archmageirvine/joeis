@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013800 <code>a(n) = 14^(4*n+1)</code>.
+ * A013800 a(n) = 14^(4*n+1).
  * @author Sean A. Irvine
  */
 public class A013800 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 /**
  * A literal rational.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class LiteralQ extends Literal<Q, Rationals> {
 

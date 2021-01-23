@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003636 Number of classes per genus in quadratic field with discriminant <code>-n</code>.
+ * A003636 Number of classes per genus in quadratic field with discriminant -n.
  * @author Sean A. Irvine
  */
 public class A003636 implements Sequence {

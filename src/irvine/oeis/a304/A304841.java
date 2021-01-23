@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304841 <code>a(n) = 67*n - 10 (n&gt;=1)</code>.
+ * A304841 a(n) = 67*n - 10 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304841 extends LinearRecurrence {

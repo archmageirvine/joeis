@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025013 Central octonomial coefficients: largest coefficient of <code>(1+x+...+x^7)^n</code>.
+ * A025013 Central octonomial coefficients: largest coefficient of (1+x+...+x^7)^n.
  * @author Sean A. Irvine
  */
 public class A025013 implements Sequence {

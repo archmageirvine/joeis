@@ -5,7 +5,7 @@ package irvine.oeis.a202;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A202493 Column k <code>= 4</code> of triangular array in <code>A165241</code>.
+ * A202493 Column k = 4 of triangular array in A165241.
  * @author Georg Fischer
  */
 public class A202493 extends HolonomicRecurrence {

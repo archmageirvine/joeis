@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087035 Maximum value taken on by <code>f(P)=sum(i=1..n, p(i)*p(n+1-i) )</code> as <code>{p(1),p(2),...,p(n)}</code> ranges over all permutations P of <code>{1,2,3,...n}</code>.
+ * A087035 Maximum value taken on by f(P)=sum(i=1..n, p(i)*p(n+1-i) ) as {p(1),p(2),...,p(n)} ranges over all permutations P of {1,2,3,...n}.
  * @author Sean A. Irvine
  */
 public class A087035 extends LinearRecurrence {

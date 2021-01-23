@@ -5,7 +5,7 @@ package irvine.oeis.a209;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A209595 Number of <code>4X4 0..n</code> arrays with every element equal to a diagonal or antidiagonal reflection.
+ * A209595 Number of 4X4 0..n arrays with every element equal to a diagonal or antidiagonal reflection.
  * @author Georg Fischer
  */
 public class A209595 extends HolonomicRecurrence {

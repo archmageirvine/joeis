@@ -6,12 +6,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023972 First bit in fractional part of binary expansion of 5th root of <code>n</code>.
+ * A023972 First bit in fractional part of binary expansion of 5th root of n.
  * @author Sean A. Irvine
  */
 public class A023972 implements Sequence {
 
-  private static final CR R = CR.valueOf(5).inverse();
+  private static final CR R = CR.FIVE.inverse();
   private long mN = 0;
 
   @Override

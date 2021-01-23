@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244470 Maximal term in row n of sequence <code>A240388</code> when regarded as a triangle.
+ * A244470 Maximal term in row n of sequence A240388 when regarded as a triangle.
  * @author Georg Fischer
  */
 public class A244470 extends LinearRecurrence {

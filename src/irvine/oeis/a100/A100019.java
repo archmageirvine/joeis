@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100019 <code>a(n) = n^4 + n^3 + n^2</code>.
+ * A100019 a(n) = n^4 + n^3 + n^2.
  * @author Georg Fischer
  */
 public class A100019 extends GeneratingFunctionSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028586 Theta series of lattice with Gram matrix <code>[2 1; 1 3]</code>.
+ * A028586 Theta series of lattice with Gram matrix [2 1; 1 3].
  * @author Sean A. Irvine
  */
 public class A028586 implements Sequence {

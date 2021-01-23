@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000326 Pentagonal numbers: <code>a(n) = n*(3*n-1)/2</code>.
+ * A000326 Pentagonal numbers: a(n) = n*(3*n-1)/2.
  * @author Sean A. Irvine
  */
 public class A000326 implements Sequence {

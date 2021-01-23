@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308589 Number of minimal edge covers in the <code>(2n-1)-triangular</code> snake graph.
+ * A308589 Number of minimal edge covers in the (2n-1)-triangular snake graph.
  * @author Georg Fischer
  */
 public class A308589 extends HolonomicRecurrence {

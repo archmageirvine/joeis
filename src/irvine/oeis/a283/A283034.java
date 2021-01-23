@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A283034 Numbers n such that <code>n =</code> (sum of digits of <code>n)^(last</code> digit of <code>n)</code>.
+ * A283034 Numbers n such that n = (sum of digits of n)^(last digit of n).
  * @author Georg Fischer
  */
 public class A283034 extends FiniteSequence {

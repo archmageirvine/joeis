@@ -5,7 +5,7 @@ package irvine.oeis.a124;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A124303 Number of set partitions of length <code>&lt;= 4</code>; sum of first 4 columns of triangle of Stirling numbers of 2nd kind; dimension of space of symmetric polynomials in 4 noncommuting variables.
+ * A124303 Number of set partitions of length &lt;= 4; sum of first 4 columns of triangle of Stirling numbers of 2nd kind; dimension of space of symmetric polynomials in 4 noncommuting variables.
  * @author Georg Fischer
  */
 public class A124303 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A271743 Number of set partitions of <code>[n]</code> such that 4 is the largest element of the last block.
+ * A271743 Number of set partitions of [n] such that 4 is the largest element of the last block.
  * @author Georg Fischer
  */
 public class A271743 extends GeneratingFunctionSequence {

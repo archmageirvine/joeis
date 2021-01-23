@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A102040 <code>a(n) = a(n-1) +</code> last digit of <code>a(n-1)</code>, starting at 3.
+ * A102040 a(n) = a(n-1) + last digit of a(n-1), starting at 3.
  * @author Georg Fischer
  */
 public class A102040 extends GeneratingFunctionSequence {

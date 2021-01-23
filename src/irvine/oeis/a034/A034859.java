@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A034859 <code>a(n) = C(n+3,4) + 3*C(n+1,3) + 5*C(n-1,2) + 7*n - 15</code> for <code>n &gt;= 3; a(1)=1, a(2)=10</code>.
+ * A034859 a(n) = C(n+3,4) + 3*C(n+1,3) + 5*C(n-1,2) + 7*n - 15 for n &gt;= 3; a(1)=1, a(2)=10.
  * @author Georg Fischer
  */
 public class A034859 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005023 Number of walks of length <code>2n+7</code> in the path graph <code>P_8</code> from one end to the other.
+ * A005023 Number of walks of length 2n+7 in the path graph P_8 from one end to the other.
  * @author Sean A. Irvine
  */
 public class A005023 extends LinearRecurrence {

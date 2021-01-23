@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254685 Number of partially ordered partitions of n into parts less than or equal to 3, in which the order of adjacent <code>2</code>'s and <code>3</code>'s is unimportant.
+ * A254685 Number of partially ordered partitions of n into parts less than or equal to 3, in which the order of adjacent 2's and 3's is unimportant.
  * @author Sean A. Irvine
  */
 public class A254685 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A220749 Equals one maps: number of <code>n X 4</code> binary arrays indicating the locations of corresponding elements equal to exactly one of their horizontal and vertical neighbors in a random <code>0..3 n X 4</code> array.
+ * A220749 Equals one maps: number of n X 4 binary arrays indicating the locations of corresponding elements equal to exactly one of their horizontal and vertical neighbors in a random 0..3 n X 4 array.
  * @author Georg Fischer
  */
 public class A220749 extends GeneratingFunctionSequence {

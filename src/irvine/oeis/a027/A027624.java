@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027624 Number of independent vertex sets in the n-hypercube graph <code>Q_n</code>.
+ * A027624 Number of independent vertex sets in the n-hypercube graph Q_n.
  * @author Sean A. Irvine
  */
 public class A027624 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A002799 Number of 4-line partitions of <code>n (i.e.</code>, planar partitions of n with at most <code>4</code> lines).
+ * A002799 Number of 4-line partitions of n (i.e., planar partitions of n with at most 4 lines).
  * @author Sean A. Irvine
  */
 public class A002799 extends EulerTransformSequence {

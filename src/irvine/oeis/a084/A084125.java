@@ -5,13 +5,13 @@ package irvine.oeis.a084;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A084125 Numbers n such that <code>13*3^n + 2</code> is prime.
+ * A084125 Numbers n such that 13*3^n + 2 is prime.
  * @author Georg Fischer
  */
 public class A084125 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A084125() {
-    super(1, 1, 13, 3, +2, 0);
+    super(1, 1, 13, 3, +2);
   }
 }

@@ -6,7 +6,7 @@ package irvine.oeis.a186;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A186229 Expansion of <code>(2F1( (-(1/2), 1/6); (-2/3))( 16 x) -1)/(2*x)</code>.
+ * A186229 Expansion of (2F1( (-(1/2), 1/6); (-2/3))( 16 x) -1)/(2*x).
  * @author Georg Fischer
  */
 public class A186229 extends HolonomicRecurrence {

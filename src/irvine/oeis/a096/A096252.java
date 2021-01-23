@@ -5,7 +5,7 @@ package irvine.oeis.a096;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A096252 Array read by rows, starting with <code>n=0</code>: row n lists <code>A057077(n+1)*8^(n+1)/2, A057077(n+2)*8^(n+1)/2, A057077(n+1)*8^(n+1)</code>.
+ * A096252 Array read by rows, starting with n=0: row n lists A057077(n+1)*8^(n+1)/2, A057077(n+2)*8^(n+1)/2, A057077(n+1)*8^(n+1).
  * @author Georg Fischer
  */
 public class A096252 extends HolonomicRecurrence {

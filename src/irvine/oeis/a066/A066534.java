@@ -6,7 +6,7 @@ package irvine.oeis.a066;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A066534 Total number of walks with length <code>&gt; 0</code> in the Hasse diagram of a Boolean algebra of order <code>n</code>.
+ * A066534 Total number of walks with length &gt; 0 in the Hasse diagram of a Boolean algebra of order n.
  * @author Georg Fischer
  */
 public class A066534 extends HolonomicRecurrence {

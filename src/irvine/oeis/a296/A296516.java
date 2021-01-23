@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296516 <code>a(n)</code> is the number of terms in expanded form of bivariate polynomial <code>Q_n</code>, where <code>(P_n, Q_n)</code> is defined by: <code>P_0 =</code> x, <code>Q_0 =</code> y, <code>P_(n+1) = P_n + Q_n, Q_(n+1) = P_n * Q_n</code>.
+ * A296516 a(n) is the number of terms in expanded form of bivariate polynomial Q_n, where (P_n, Q_n) is defined by: P_0 = x, Q_0 = y, P_(n+1) = P_n + Q_n, Q_(n+1) = P_n * Q_n.
  * @author Georg Fischer
  */
 public class A296516 extends GeneratingFunctionSequence {

@@ -69,7 +69,7 @@ class PrescaledLnGamma extends CR {
 
       final CR t = bernoulli(++k).divide(ComputableReals.SINGLETON.pow(z, 2L * k - 1));
       final Z currentTerm = t.approximate(p);
-      if (Z.ZERO.equals(currentTerm)) {
+      if (currentTerm.isZero()) {
         break;
       }
       currentSum = currentSum.add(currentTerm);

@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027489 First column of Triangle <code>A027478</code>, constructed from Stirling numbers of the first kind.
+ * A027489 First column of Triangle A027478, constructed from Stirling numbers of the first kind.
  * @author Sean A. Irvine
  */
 public class A027489 extends A027478 {

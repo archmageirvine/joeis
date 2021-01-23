@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228606 The Merrifield-Simmons index of the para-polyphenylene chain of length <code>n</code>.
+ * A228606 The Merrifield-Simmons index of the para-polyphenylene chain of length n.
  * @author Sean A. Irvine
  */
 public class A228606 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043500 Numbers such that the number of <code>2</code>'s in their decimal representation is 4.
+ * A043500 Numbers such that the number of 2's in their decimal representation is 4.
  * @author Georg Fischer
  */
 public class A043500 extends RunsBaseSequence {

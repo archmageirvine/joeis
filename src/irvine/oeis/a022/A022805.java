@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a054.A054406;
 
 /**
- * A022805 <code>a(n) = B(n) + C(n)</code> where <code>B(n)</code> is Beatty sequence <code>[ n*sqrt(3) ]</code> and C is complement of B.
+ * A022805 a(n) = B(n) + C(n) where B(n) is Beatty sequence [ n*sqrt(3) ] and C is complement of B.
  * @author Sean A. Irvine
  */
 public class A022805 implements Sequence {

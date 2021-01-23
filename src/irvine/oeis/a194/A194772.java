@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A194772 Number of lower triangles of an <code>(n+2) X (n+2) 0..2</code> array with new values introduced in row major order 0..2 and no element unequal to more than one horizontal or vertical neighbor.
+ * A194772 Number of lower triangles of an (n+2) X (n+2) 0..2 array with new values introduced in row major order 0..2 and no element unequal to more than one horizontal or vertical neighbor.
  * @author Georg Fischer
  */
 public class A194772 extends GeneratingFunctionSequence {

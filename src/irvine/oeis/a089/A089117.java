@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089117 Convoluted convolved Fibonacci numbers <code>G_j^(4)</code>.
+ * A089117 Convoluted convolved Fibonacci numbers G_j^(4).
  * @author Sean A. Irvine
  */
 public class A089117 extends LinearRecurrence {

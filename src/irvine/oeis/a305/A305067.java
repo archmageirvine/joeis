@@ -5,7 +5,7 @@ package irvine.oeis.a305;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A305067 <code>a(n) = 282*2^n - 150</code>.
+ * A305067 a(n) = 282*2^n - 150.
  * @author Georg Fischer
  */
 public class A305067 extends HolonomicRecurrence {

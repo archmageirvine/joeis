@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187181 Parse the infinite string 012012012012... into distinct phrases <code>0, 1, 2, 01, 20, 12, 012</code>, ...; <code>a(n) =</code> length of n-th phrase.
+ * A187181 Parse the infinite string 012012012012... into distinct phrases 0, 1, 2, 01, 20, 12, 012, ...; a(n) = length of n-th phrase.
  * @author Georg Fischer
  */
 public class A187181 extends GeneratingFunctionSequence {

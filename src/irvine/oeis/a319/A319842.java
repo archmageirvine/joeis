@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319842 <code>a(n) = 8 * A104720(n) + ceiling(n/2)</code>.
+ * A319842 a(n) = 8 * A104720(n) + ceiling(n/2).
  * @author Georg Fischer
  */
 public class A319842 extends GeneratingFunctionSequence {

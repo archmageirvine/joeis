@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187331 <code>a(n) = Sum_{k=1..4} floor(k*n/4)</code>.
+ * A187331 a(n) = Sum_{k=1..4} floor(k*n/4).
  * @author Georg Fischer
  */
 public class A187331 extends GeneratingFunctionSequence {

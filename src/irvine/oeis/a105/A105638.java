@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105638 Maximum number of intersections in <code>self-intersecting n-gon</code>.
+ * A105638 Maximum number of intersections in self-intersecting n-gon.
  * @author Sean A. Irvine
  */
 public class A105638 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a173;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A173315 Inverse binomial transform of <code>A131800</code>.
+ * A173315 Inverse binomial transform of A131800.
  * @author Georg Fischer
  */
 public class A173315 extends HolonomicRecurrence {

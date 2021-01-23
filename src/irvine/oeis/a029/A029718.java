@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixRepresentatives;
 
 /**
- * A029718 Numbers of form <code>2x^2 + 2xy + 3y^2</code>.
+ * A029718 Numbers of form 2x^2 + 2xy + 3y^2.
  * @author Sean A. Irvine
  */
 public class A029718 extends GramMatrixRepresentatives {

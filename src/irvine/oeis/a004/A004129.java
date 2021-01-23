@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004129 Number of solutions to postage stamp problem.
+ * A004129 Postage stamp problem: largest m such that there exists an n-subset S of nonnegative integers such that 1,...,m can be expressed as a sum of two distinct elements of S.
  * @author Sean A. Irvine
  */
 public class A004129 implements Sequence {

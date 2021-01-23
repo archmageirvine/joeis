@@ -6,7 +6,7 @@ package irvine.oeis.a209;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A209288 Main diagonal of the quadruple recurrence <code>x(i,j,k,m) = x(i-1,j,k,m) + x(i,j-1,k,m) + x(i,j,k-1,m) + x(i,j,k,m-1)</code> with <code>x(i,j,k,m) = 1</code> if 0 in <code>{i,j,k,m}</code>.
+ * A209288 Main diagonal of the quadruple recurrence x(i,j,k,m) = x(i-1,j,k,m) + x(i,j-1,k,m) + x(i,j,k-1,m) + x(i,j,k,m-1) with x(i,j,k,m) = 1 if 0 in {i,j,k,m}.
  * @author Georg Fischer
  */
 public class A209288 extends HolonomicRecurrence {

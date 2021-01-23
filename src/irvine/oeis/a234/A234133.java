@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A234133 Number of <code>(n+1) X (1+1) 0..3</code> arrays with every <code>2 X 2</code> subblock having the sum of the absolute values of all six edge and diagonal differences equal to 9.
+ * A234133 Number of (n+1) X (1+1) 0..3 arrays with every 2 X 2 subblock having the sum of the absolute values of all six edge and diagonal differences equal to 9.
  * @author Georg Fischer
  */
 public class A234133 extends GeneratingFunctionSequence {

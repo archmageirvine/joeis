@@ -4,7 +4,7 @@ package irvine.oeis.a030;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A030132 Digital root of <code>Fibonacci(n)</code>.
+ * A030132 Digital root of Fibonacci(n).
  * @author Georg Fischer
  */
 public class A030132 extends GeneratingFunctionSequence {

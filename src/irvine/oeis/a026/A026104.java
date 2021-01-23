@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026104 <code>a(n) =</code> greatest number in row n of <code>A026098</code> that is not a positive power of 2.
+ * A026104 a(n) = greatest number in row n of A026098 that is not a positive power of 2.
  * @author Sean A. Irvine
  */
 public class A026104 extends A026098 {

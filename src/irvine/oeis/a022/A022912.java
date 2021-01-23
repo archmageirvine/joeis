@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A022912 Arrange the nontrivial binomial coefficients <code>C(m,k) (2 &lt;= k &lt;= m/2)</code> in increasing order (not removing duplicates); record the sequence of k's.
+ * A022912 Arrange the nontrivial binomial coefficients C(m,k) (2 &lt;= k &lt;= m/2) in increasing order (not removing duplicates); record the sequence of k's.
  * @author Sean A. Irvine
  */
 public class A022912 extends A022911 {

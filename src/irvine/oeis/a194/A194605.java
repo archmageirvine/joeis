@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A194605 Number of ways to place 2 nonattacking kings on an <code>n X n X n X n</code> raumschach board <code>(four-dimensional</code> chessboard).
+ * A194605 Number of ways to place 2 nonattacking kings on an n X n X n X n raumschach board (four-dimensional chessboard).
  * @author Georg Fischer
  */
 public class A194605 extends GeneratingFunctionSequence {

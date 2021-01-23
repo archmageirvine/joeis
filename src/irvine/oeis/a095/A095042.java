@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A095042 One of two <code>(v,k,lambda)=(31,15,7)</code> cyclic difference sets. The other one is <code>A095041</code>.
+ * A095042 One of two (v,k,lambda)=(31,15,7) cyclic difference sets. The other one is A095041.
  * @author Georg Fischer
  */
 public class A095042 extends FiniteSequence {

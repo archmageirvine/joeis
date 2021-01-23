@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023108 Positive integers which apparently never result in a palindrome under repeated applications of the function <code>A056964(x) = x + (x</code> with digits reversed).
+ * A023108 Positive integers which apparently never result in a palindrome under repeated applications of the function A056964(x) = x + (x with digits reversed).
  * @author Sean A. Irvine
  */
 public class A023108 implements Sequence {

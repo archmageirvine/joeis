@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067360 <code>a(n) = 17^n sin(2n arctan(1/4))</code> or numerator of <code>tan(2n arctan(1/4))</code>.
+ * A067360 a(n) = 17^n sin(2n arctan(1/4)) or numerator of tan(2n arctan(1/4)).
  * @author Georg Fischer
  */
 public class A067360 extends GeneratingFunctionSequence {

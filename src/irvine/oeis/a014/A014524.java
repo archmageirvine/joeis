@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014524 Number of Hamiltonian paths from NW to SW corners in a grid with <code>2n</code> rows and 4 columns.
+ * A014524 Number of Hamiltonian paths from NW to SW corners in a grid with 2n rows and 4 columns.
  * @author Sean A. Irvine
  */
 public class A014524 extends LinearRecurrence {

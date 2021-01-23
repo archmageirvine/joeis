@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A303812 Generalized <code>28-gonal</code> (or icosioctagonal) numbers: <code>m*(13*m - 12)</code> with m <code>= 0, +1, -1, +2, -2, +3, -3, ..</code>.
+ * A303812 Generalized 28-gonal (or icosioctagonal) numbers: m*(13*m - 12) with m = 0, +1, -1, +2, -2, +3, -3, ...
  * @author Georg Fischer
  */
 public class A303812 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a052;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A052156 Number of compositions of n into <code>2*j-1</code> kinds of j's for all <code>j&gt;=1</code>.
+ * A052156 Number of compositions of n into 2*j-1 kinds of j's for all j&gt;=1.
  * @author Georg Fischer
  */
 public class A052156 extends GeneratingFunctionSequence {

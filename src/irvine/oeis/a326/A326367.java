@@ -5,7 +5,7 @@ package irvine.oeis.a326;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A326367 Number of tilings of an equilateral triangle of side length n with unit triangles (of side length <code>1)</code> and exactly two unit "lozenges" or "diamonds" (also of side length <code>1)</code>.
+ * A326367 Number of tilings of an equilateral triangle of side length n with unit triangles (of side length 1) and exactly two unit "lozenges" or "diamonds" (also of side length 1).
  * @author Georg Fischer
  */
 public class A326367 extends HolonomicRecurrence {

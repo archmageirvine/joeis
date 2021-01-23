@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094075 Denominator of <code>I(n)=integral_{x=0</code> to <code>1/n}(x^2-1)^3</code> dx.
+ * A094075 Denominator of I(n)=integral_{x=0 to 1/n}(x^2-1)^3 dx.
  * @author Georg Fischer
  */
 public class A094075 extends GeneratingFunctionSequence {

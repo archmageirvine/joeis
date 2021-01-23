@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221921 <code>a(n) = 4*n/gcd(4*n,n+4), n &gt;= 4</code>.
+ * A221921 a(n) = 4*n/gcd(4*n,n+4), n &gt;= 4.
  * @author Georg Fischer
  */
 public class A221921 extends GeneratingFunctionSequence {

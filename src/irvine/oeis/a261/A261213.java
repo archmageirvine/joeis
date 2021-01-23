@@ -5,7 +5,7 @@ package irvine.oeis.a261;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A261213 Odd numbers n such that <code>n^2 = m + (m+1)</code>, where both m and <code>m+1</code> have no repeated digits.
+ * A261213 Odd numbers n such that n^2 = m + (m+1), where both m and m+1 have no repeated digits.
  * @author Georg Fischer
  */
 public class A261213 extends FiniteSequence {

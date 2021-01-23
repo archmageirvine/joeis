@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A029946 <code>a(n)^3</code> contains n-th prime as a substring.
+ * A029946 a(n)^3 contains n-th prime as a substring.
  * @author Sean A. Irvine
  */
 public class A029946 extends A000040 {

@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027798 <code>a(n) = 26*(n+1)*C(n+3,13)</code>.
+ * A027798 a(n) = 26*(n+1)*C(n+3,13).
  * @author Georg Fischer
  */
 public class A027798 extends GeneratingFunctionSequence {

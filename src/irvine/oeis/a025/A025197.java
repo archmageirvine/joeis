@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025197 <code>a(n) = floor( Sum_{1 &lt;= i &lt; j &lt;= n} ((sqrt(j)-sqrt(i))^3) )</code>.
+ * A025197 a(n) = floor( Sum_{1 &lt;= i &lt; j &lt;= n} ((sqrt(j)-sqrt(i))^3) ).
  * @author Sean A. Irvine
  */
 public class A025197 extends MemoryFunction<Long, CR> implements Sequence {

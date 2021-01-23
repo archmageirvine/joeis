@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271913 Number of ways to choose three distinct points from a <code>4 X n</code> grid so that they form an isosceles triangle.
+ * A271913 Number of ways to choose three distinct points from a 4 X n grid so that they form an isosceles triangle.
  * @author Georg Fischer
  */
 public class A271913 extends LinearRecurrence {

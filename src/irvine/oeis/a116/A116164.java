@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116164 <code>a(n) = 6^n * n*(n+1)</code>.
+ * A116164 a(n) = 6^n * n*(n+1).
  * @author Sean A. Irvine
  */
 public class A116164 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034835 Expansion of <code>1/(1-49*x)^(1/7)</code>; related to sept-factorial numbers <code>A045754</code>.
+ * A034835 Expansion of 1/(1-49*x)^(1/7); related to sept-factorial numbers A045754.
  * @author Georg Fischer
  */
 public class A034835 extends HolonomicRecurrence {

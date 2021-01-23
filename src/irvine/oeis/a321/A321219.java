@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A321219 Decimal expansion of <code>2^(-1074)</code>.
+ * A321219 Decimal expansion of 2^(-1074).
  * @author Georg Fischer
  */
 public class A321219 extends DecimalExpansionSequence {

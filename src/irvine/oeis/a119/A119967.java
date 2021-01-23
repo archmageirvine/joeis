@@ -6,7 +6,7 @@ package irvine.oeis.a119;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A119967 A transform of the central binomial coefficients <code>C(n,floor(n/2))</code>.
+ * A119967 A transform of the central binomial coefficients C(n,floor(n/2)).
  * @author Georg Fischer
  */
 public class A119967 extends HolonomicRecurrence {

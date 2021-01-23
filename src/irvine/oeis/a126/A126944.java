@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126944 The sequence <code>a[n]+b[n]+c[n]+d[n]</code> defined in <code>A126939</code>.
+ * A126944 The sequence a[n]+b[n]+c[n]+d[n] defined in A126939.
  * @author Georg Fischer
  */
 public class A126944 extends LinearRecurrence {

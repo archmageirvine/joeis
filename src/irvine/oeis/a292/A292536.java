@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292536 p-INVERT of the squares <code>(A000290)</code>, where <code>p(S) = 1 + S - 3 S^2</code>.
+ * A292536 p-INVERT of the squares (A000290), where p(S) = 1 + S - 3 S^2.
  * @author Sean A. Irvine
  */
 public class A292536 extends LinearRecurrence {

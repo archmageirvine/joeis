@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330805 Number of squares and rectangles in the interior of the square with vertices <code>(n,0), (0,n), (-n,0)</code> and <code>(0,-n)</code> in a square <code>(x,y)-grid</code>.
+ * A330805 Number of squares and rectangles in the interior of the square with vertices (n,0), (0,n), (-n,0) and (0,-n) in a square (x,y)-grid.
  * @author Georg Fischer
  */
 public class A330805 extends HolonomicRecurrence {

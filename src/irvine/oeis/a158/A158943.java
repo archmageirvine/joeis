@@ -5,7 +5,7 @@ package irvine.oeis.a158;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A158943 INVERT transform of <code>A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...)</code>.
+ * A158943 INVERT transform of A027656: (1, 0, 2, 0, 3, 0, 4, 0, 5, ...).
  * @author Georg Fischer
  */
 public class A158943 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007675;
 
 /**
- * A228649 Numbers n such that <code>n-1, n</code> and <code>n+1</code> are all squarefree.
+ * A228649 Numbers n such that n-1, n and n+1 are all squarefree.
  * @author Georg Fischer
  */
 public class A228649 extends A007675 {

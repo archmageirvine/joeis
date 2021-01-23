@@ -5,7 +5,7 @@ package irvine.oeis.a106;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A106260 Expansion of <code>1/sqrt(1-16x-16x^2)</code>.
+ * A106260 Expansion of 1/sqrt(1-16x-16x^2).
  * @author Georg Fischer
  */
 public class A106260 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001017;
 
 /**
- * A024136 <code>a(n) = 11^n - n^9</code>.
+ * A024136 a(n) = 11^n - n^9.
  * @author Sean A. Irvine
  */
 public class A024136 extends A001017 {

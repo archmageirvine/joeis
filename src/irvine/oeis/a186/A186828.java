@@ -6,7 +6,7 @@ package irvine.oeis.a186;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A186828 Diagonal sums of number triangle <code>A186826</code>.
+ * A186828 Diagonal sums of number triangle A186826.
  * @author Georg Fischer
  */
 public class A186828 extends HolonomicRecurrence {

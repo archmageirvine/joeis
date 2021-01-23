@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 /**
- * A023097 <code>a(n)</code> is least k such that k and <code>5k</code> are anagrams in base <code>n</code> (written in base <code>10)</code>.
+ * A023097 a(n) is least k such that k and 5k are anagrams in base n (written in base 10).
  * @author Sean A. Irvine
  */
 public class A023097 extends A023094 {

@@ -5,13 +5,13 @@ package irvine.oeis.a056;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A056805 Numbers n such that <code>6*10^n+1</code> is prime.
+ * A056805 Numbers n such that 6*10^n+1 is prime.
  * @author Georg Fischer
  */
 public class A056805 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A056805() {
-    super(1, 0, 6, 10, +1, 0);
+    super(1, 0, 6, 10, 1);
   }
 }

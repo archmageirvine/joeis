@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A295334 Denominators of continued fraction convergents to <code>sqrt(10)/2 = sqrt(5/2) = A020797 + 1</code>.
+ * A295334 Denominators of continued fraction convergents to sqrt(10)/2 = sqrt(5/2) = A020797 + 1.
  * @author Georg Fischer
  */
 public class A295334 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178748 Total number of <code>'1'</code> bits in the terms of 'rows' of <code>A178746</code>.
+ * A178748 Total number of '1' bits in the terms of 'rows' of A178746.
  * @author Georg Fischer
  */
 public class A178748 extends HolonomicRecurrence {

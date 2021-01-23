@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A002890 Low temperature series for <code>spin-1/2</code> Ising free energy on <code>2D</code> square lattice.
+ * A002890 Low temperature series for spin-1/2 Ising free energy on 2D square lattice.
  * @author Sean A. Irvine
  */
 public class A002890 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226274 Position of <code>1/n</code> in the ordering of the rationals given by application of the map t <code>-&gt; (1+t,-1/t)</code>, cf. <code>A226130</code>.
+ * A226274 Position of 1/n in the ordering of the rationals given by application of the map t -&gt; (1+t,-1/t), cf. A226130.
  * @author Georg Fischer
  */
 public class A226274 extends GeneratingFunctionSequence {

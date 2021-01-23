@@ -4,7 +4,7 @@ package irvine.oeis.a254;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A254702 Number of length <code>4+4 0..n</code> arrays with every five consecutive terms having the maximum of some two terms equal to the minimum of the remaining three terms.
+ * A254702 Number of length 4+4 0..n arrays with every five consecutive terms having the maximum of some two terms equal to the minimum of the remaining three terms.
  * @author Georg Fischer
  */
 public class A254702 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107660 Sum <code>3^max(k,n-k),k=0..n</code>.
+ * A107660 Sum 3^max(k,n-k),k=0..n.
  * @author Sean A. Irvine
  */
 public class A107660 extends LinearRecurrence {

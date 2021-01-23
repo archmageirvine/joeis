@@ -4,6 +4,7 @@ import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.Random;
 
+import irvine.math.z.ZUtils;
 import junit.framework.TestCase;
 //import irvine.util.time.Timer;
 
@@ -428,15 +429,15 @@ public class LongUtilsTest extends TestCase {
   }
 
   public void testDigitProduct() {
-    assertEquals(0, LongUtils.digitProduct(0));
-    assertEquals(1, LongUtils.digitProduct(1));
-    assertEquals(0, LongUtils.digitProduct(10));
-    assertEquals(1, LongUtils.digitProduct(11));
-    assertEquals(2, LongUtils.digitProduct(21));
-    assertEquals(2, LongUtils.digitProduct(12));
-    assertEquals(2, LongUtils.digitProduct(2));
-    assertEquals(362880, LongUtils.digitProduct(123456789));
-    assertEquals(362880, LongUtils.digitProduct(-123456789));
+    assertEquals(0, ZUtils.digitProduct(0));
+    assertEquals(1, ZUtils.digitProduct(1));
+    assertEquals(0, ZUtils.digitProduct(10));
+    assertEquals(1, ZUtils.digitProduct(11));
+    assertEquals(2, ZUtils.digitProduct(21));
+    assertEquals(2, ZUtils.digitProduct(12));
+    assertEquals(2, ZUtils.digitProduct(2));
+    assertEquals(362880, ZUtils.digitProduct(123456789));
+    assertEquals(362880, ZUtils.digitProduct(-123456789));
   }
   
   public void testSuckInNumbers() {

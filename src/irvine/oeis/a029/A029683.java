@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A029683 <code>a(n) = n-th</code> digit after decimal point of cube root of <code>n</code>.
+ * A029683 a(n) = n-th digit after decimal point of cube root of n.
  * @author Sean A. Irvine
  */
 public class A029683 implements Sequence {

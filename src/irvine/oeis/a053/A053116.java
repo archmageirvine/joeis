@@ -6,7 +6,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053116 <code>a(n) = ((9*n+10)(!^9))/10</code>, related to <code>A045756 ((9*n+1)(!^9) 9-factorials)</code>.
+ * A053116 a(n) = ((9*n+10)(!^9))/10, related to A045756 ((9*n+1)(!^9) 9-factorials).
  * @author Georg Fischer
  */
 public class A053116 extends HolonomicRecurrence {

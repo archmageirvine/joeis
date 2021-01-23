@@ -5,7 +5,7 @@ package irvine.oeis.a084;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A084774 Coefficients of <code>1/sqrt(1-14*x+9*x^2)</code>; also, <code>a(n)</code> is the central coefficient of <code>(1+7x+10x^2)^n</code>.
+ * A084774 Coefficients of 1/sqrt(1-14*x+9*x^2); also, a(n) is the central coefficient of (1+7x+10x^2)^n.
  * @author Georg Fischer
  */
 public class A084774 extends HolonomicRecurrence {

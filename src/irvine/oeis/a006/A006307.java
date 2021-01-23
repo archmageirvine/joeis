@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006307 Number of ways writing <code>2^n</code> as unordered sums of 2 primes.
+ * A006307 Number of ways writing 2^n as unordered sums of 2 primes.
  * @author Sean A. Irvine
  */
 public class A006307 implements Sequence {
@@ -16,7 +16,7 @@ public class A006307 implements Sequence {
   @Override
   public Z next() {
     final Z m = mN;
-    mN = mN.equals(Z.ZERO) ? Z.ONE : mN.multiply2();
+    mN = mN.isZero() ? Z.ONE : mN.multiply2();
     long c = 0;
     for (Z p = Z.TWO; p.compareTo(m) <= 0; p = mPrime.nextPrime(p)) {
       if (mPrime.isPrime(mN.subtract(p))) {

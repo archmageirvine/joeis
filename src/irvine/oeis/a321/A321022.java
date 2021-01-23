@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321022 The 100 terms of the cycle that <code>A321021</code> goes into.
+ * A321022 The 100 terms of the cycle that A321021 goes into.
  * @author Georg Fischer
  */
 public class A321022 extends FiniteSequence {

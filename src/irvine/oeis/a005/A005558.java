@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005558 <code>a(n)</code> is the number of n-step walks on square lattice such that <code>0 &lt;= y &lt;= x</code> at each step.
+ * A005558 a(n) is the number of n-step walks on square lattice such that 0 &lt;= y &lt;= x at each step.
  * @author Sean A. Irvine
  */
 public class A005558 implements Sequence {

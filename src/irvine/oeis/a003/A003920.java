@@ -4,16 +4,16 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003920 Order of universal Chevalley group <code>B_n (3)</code>.
+ * A003920 Order of universal Chevalley group B_n (3).
  * @author Sean A. Irvine
  */
 public class A003920 implements Sequence {
 
-  private int mN = start();
+  private long mN = start();
 
-  static Z orderUniversalChevalleyB(final Z q, final int n) {
+  static Z orderUniversalChevalleyB(final Z q, final long n) {
     Z p = q.pow(n * n);
-    for (int k = 1; k <= n; ++k) {
+    for (long k = 1; k <= n; ++k) {
       p = p.multiply(q.pow(2 * k).subtract(1));
     }
     return p;

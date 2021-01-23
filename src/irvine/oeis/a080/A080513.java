@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080513 <code>a(n) = round(n/2) + 1 = ceiling(n/2) + 1 = floor((n+1)/2) + 1</code>.
+ * A080513 a(n) = round(n/2) + 1 = ceiling(n/2) + 1 = floor((n+1)/2) + 1.
  * @author Sean A. Irvine
  */
 public class A080513 extends LinearRecurrence {

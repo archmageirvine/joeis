@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330131 Number of length-n binary words with no even palindrome of length <code>&gt; 6</code> and no odd palindrome of length <code>&gt; 3</code>.
+ * A330131 Number of length-n binary words with no even palindrome of length &gt; 6 and no odd palindrome of length &gt; 3.
  * @author Georg Fischer
  */
 public class A330131 extends HolonomicRecurrence {

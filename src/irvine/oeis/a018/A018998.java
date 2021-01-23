@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018998 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite CHA = Chabazite <code>Ca6[ Al12Si24O72 ] . 40 H2O</code>.
+ * A018998 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite CHA = Chabazite Ca6[ Al12Si24O72 ] . 40 H2O.
  * @author Sean A. Irvine
  */
 public class A018998 extends A018940 {

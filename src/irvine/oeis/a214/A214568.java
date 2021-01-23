@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A214568 Triangle read by rows: <code>T(n,k)</code> is the number of rooted trees t with n vertices yielding k distinct rooted trees with <code>n+1</code> vertices when a pendant edge is added to a vertex of t <code>(1 &lt;= k &lt;= n)</code>.
+ * A214568 Triangle read by rows: T(n,k) is the number of rooted trees t with n vertices yielding k distinct rooted trees with n+1 vertices when a pendant edge is added to a vertex of t (1 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
 public class A214568 implements Sequence {

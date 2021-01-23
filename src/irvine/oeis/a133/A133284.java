@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133284 Indices of the 12-gonal numbers which are also centered 12-gonal number or numbers X such that <code>30*X^2-24*X+3</code> is a square.
+ * A133284 Indices of the 12-gonal numbers which are also centered 12-gonal number or numbers X such that 30*X^2-24*X+3 is a square.
  * @author Sean A. Irvine
  */
 public class A133284 extends LinearRecurrence {

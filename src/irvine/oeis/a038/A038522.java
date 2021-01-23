@@ -6,7 +6,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038522 On a <code>(2n+1) X (2n+1)</code> board, let <code>m(i)</code> be the number of squares that are i knight's moves from center; sequence gives max <code>m(i)</code> for i <code>&gt;= 0</code>.
+ * A038522 On a (2n+1) X (2n+1) board, let m(i) be the number of squares that are i knight's moves from center; sequence gives max m(i) for i &gt;= 0.
  * @author Georg Fischer
  */
 public class A038522 extends GeneratingFunctionSequence {

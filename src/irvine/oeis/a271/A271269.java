@@ -5,13 +5,13 @@ package irvine.oeis.a271;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A271269 Numbers k such that <code>8*10^k - 49</code> is prime.
+ * A271269 Numbers k such that 8*10^k - 49 is prime.
  * @author Georg Fischer
  */
 public class A271269 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A271269() {
-    super(1, 1, 8, 10, -49, 0);
+    super(1, 1, 8, 10, -49);
   }
 }

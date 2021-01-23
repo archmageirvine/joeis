@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301775 Number of odd chordless cycles in the <code>(2n+1)-web</code> graph.
+ * A301775 Number of odd chordless cycles in the (2n+1)-web graph.
  * @author Georg Fischer
  */
 public class A301775 extends GeneratingFunctionSequence {

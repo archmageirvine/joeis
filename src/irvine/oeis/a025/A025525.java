@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025525 Largest number that is not the sum of distinct numbers of form <code>k^2 + n</code>.
+ * A025525 Largest number that is not the sum of distinct numbers of form k^2 + n.
  * @author Sean A. Irvine
  */
 public class A025525 implements Sequence {

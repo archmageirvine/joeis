@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306561 Square numbers that are also central polygonal numbers <code>(i.e.</code>, square numbers found in the Lazy Caterer's sequence).
+ * A306561 Square numbers that are also central polygonal numbers (i.e., square numbers found in the Lazy Caterer's sequence).
  * @author Georg Fischer
  */
 public class A306561 extends HolonomicRecurrence {

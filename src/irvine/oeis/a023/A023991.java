@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023991 Sum of exponents of primes in multinomial coefficient <code>M(3n; n+1,n,n-1)</code>.
+ * A023991 Sum of exponents of primes in multinomial coefficient M(3n; n+1,n,n-1).
  * @author Sean A. Irvine
  */
 public class A023991 extends A023978 {

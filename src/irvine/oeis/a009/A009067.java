@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009067 Expansion of e.g.f. <code>cos(tan(sinh(x)))</code>, even terms only.
+ * A009067 Expansion of e.g.f. cos(tan(sinh(x))), even terms only.
  * @author Sean A. Irvine
  */
 public class A009067 implements Sequence {

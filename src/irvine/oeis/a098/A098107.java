@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098107 Sum of all matrix elements <code>M(i,j) = n!*(i/j), (i,j = 1..n)</code>.
+ * A098107 Sum of all matrix elements M(i,j) = n!*(i/j), (i,j = 1..n).
  * @author Georg Fischer
  */
 public class A098107 extends HolonomicRecurrence {

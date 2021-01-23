@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A264808 Decimal expansion of the positive root of <code>x^(x^x) =</code> e.
+ * A264808 Decimal expansion of the positive root of x^(x^x) = e.
  * @author Sean A. Irvine
  */
 public class A264808 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084630 <code>Floor(C(n+7,7)/C(n+5,5))</code>.
+ * A084630 Floor(C(n+7,7)/C(n+5,5)).
  * @author Georg Fischer
  */
 public class A084630 extends GeneratingFunctionSequence {

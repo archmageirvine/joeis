@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A070389 <code>a(n) = 5^n mod 43</code>.
+ * A070389 a(n) = 5^n mod 43.
  * @author Georg Fischer
  */
 public class A070389 extends GeneratingFunctionSequence {

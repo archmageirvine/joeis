@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128014 Central binomial coefficients <code>C(2n,n)</code> repeated.
+ * A128014 Central binomial coefficients C(2n,n) repeated.
  * @author Georg Fischer
  */
 public class A128014 extends HolonomicRecurrence {

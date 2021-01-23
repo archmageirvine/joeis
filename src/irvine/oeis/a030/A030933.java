@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030933 <code>[ exp(1/13)*n! ]</code>.
+ * A030933 [ exp(1/13)*n! ].
  * @author Sean A. Irvine
  */
 public class A030933 implements Sequence {

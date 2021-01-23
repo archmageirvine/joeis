@@ -5,7 +5,7 @@ package irvine.oeis.a165;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A165686 Dimension of the space of Siegel cusp forms of genus 2 and weight <code>2k</code> which are not Saito-Kurokawa lifts of forms of genus 1.
+ * A165686 Dimension of the space of Siegel cusp forms of genus 2 and weight 2k which are not Saito-Kurokawa lifts of forms of genus 1.
  * @author Georg Fischer
  */
 public class A165686 extends HolonomicRecurrence {

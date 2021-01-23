@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023894 Number of partitions of n into prime power parts <code>(1</code> excluded).
+ * A023894 Number of partitions of n into prime power parts (1 excluded).
  * @author Sean A. Irvine
  */
 public class A023894 implements Sequence {

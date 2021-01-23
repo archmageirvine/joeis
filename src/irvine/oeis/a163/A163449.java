@@ -5,7 +5,7 @@ package irvine.oeis.a163;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A163449 <code>A007582</code> written in base 2.
+ * A163449 A007582 written in base 2.
  * @author Georg Fischer
  */
 public class A163449 extends HolonomicRecurrence {

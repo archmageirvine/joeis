@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013921 <code>a(n)</code> is composite and is sum of first k composites for some k.
+ * A013921 a(n) is composite and is sum of first k composites for some k.
  * @author Sean A. Irvine
  */
 public class A013921 implements Sequence {

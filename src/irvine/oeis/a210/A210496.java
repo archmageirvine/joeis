@@ -6,7 +6,7 @@ package irvine.oeis.a210;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A210496 Number of set partitions of <code>[n]</code> avoiding the patterns <code>{1123, 1211}</code>.
+ * A210496 Number of set partitions of [n] avoiding the patterns {1123, 1211}.
  * @author Georg Fischer
  */
 public class A210496 extends HolonomicRecurrence {

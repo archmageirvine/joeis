@@ -4,7 +4,7 @@ package irvine.oeis.a065;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A065187 "Greedy Dragons" permutation of the natural numbers, inverse of <code>A065186</code>.
+ * A065187 "Greedy Dragons" permutation of the natural numbers, inverse of A065186.
  * @author Georg Fischer
  */
 public class A065187 extends GeneratingFunctionSequence {

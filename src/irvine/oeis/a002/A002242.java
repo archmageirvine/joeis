@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002242 Numbers n such that <code>45*2^n-1</code> is prime.
+ * A002242 Numbers n such that 45*2^n-1 is prime.
  * @author Sean A. Irvine
  */
 public class A002242 implements Sequence {

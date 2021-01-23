@@ -7,7 +7,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A038137 Reflection of <code>A037027: T(n,m) = U(n,n-m), m=0..n</code>, where U is as in <code>A037027</code>.
+ * A038137 Reflection of A037027: T(n,m) = U(n,n-m), m=0..n, where U is as in A037027.
  * @author Georg Fischer
  */
 public class A038137 extends GeneratingFunctionTriangle {

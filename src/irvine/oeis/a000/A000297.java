@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000297 <code>a(n) = (n+1)*(n+3)*(n+8)/6</code>.
+ * A000297 a(n) = (n+1)*(n+3)*(n+8)/6.
  * @author Sean A. Irvine
  */
 public class A000297 implements Sequence {

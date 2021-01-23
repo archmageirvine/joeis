@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030324 Triangle read by rows, where row k consists of the binary digits of <code>Fibonacci(k+1)</code>.
+ * A030324 Triangle read by rows, where row k consists of the binary digits of Fibonacci(k+1).
  * @author Georg Fischer
  */
 public class A030324 implements Sequence {

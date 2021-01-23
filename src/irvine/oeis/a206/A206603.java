@@ -6,7 +6,7 @@ package irvine.oeis.a206;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A206603 Maximal apex value of an addition triangle whose base is a permutation of <code>{k-n/2, k=0..n}</code>.
+ * A206603 Maximal apex value of an addition triangle whose base is a permutation of {k-n/2, k=0..n}.
  * @author Georg Fischer
  */
 public class A206603 extends HolonomicRecurrence {

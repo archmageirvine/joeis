@@ -5,13 +5,13 @@ package irvine.oeis.a110;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A110949 Integers n such that <code>4*10^n + 61</code> is prime.
+ * A110949 Integers n such that 4*10^n + 61 is prime.
  * @author Georg Fischer
  */
 public class A110949 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A110949() {
-    super(1, 1, 4, 10, +61, 0);
+    super(1, 1, 4, 10, +61);
   }
 }

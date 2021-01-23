@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050596 Numbers n such that <code>141*2^n-1</code> is prime.
+ * A050596 Numbers n such that 141*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050596 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050596() {
-    super(1, 1, 141, 2, -1, 0);
+    super(1, 1, 141, 2, -1);
   }
 }

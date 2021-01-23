@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007320 Number of steps needed for juggler sequence <code>(A094683)</code> started at n to reach 1.
+ * A007320 Number of steps needed for juggler sequence (A094683) started at n to reach 1.
  * @author Sean A. Irvine
  */
 public class A007320 implements Sequence {

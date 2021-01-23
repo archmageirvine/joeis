@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A320947 <code>a(n)</code> is the number of dominoes, among all domino tilings of the <code>2 X n</code> rectangle, sharing a <code>length-2</code> side with the boundary of the rectangle.
+ * A320947 a(n) is the number of dominoes, among all domino tilings of the 2 X n rectangle, sharing a length-2 side with the boundary of the rectangle.
  * @author Georg Fischer
  */
 public class A320947 extends GeneratingFunctionSequence {

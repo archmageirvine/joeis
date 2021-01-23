@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002085 From the expansion of <code>sinh x /</code> cos x: <code>a(n) =</code> odd part of <code>A002084(n)</code>.
+ * A002085 From the expansion of sinh x / cos x: a(n) = odd part of A002084(n).
  * @author Sean A. Irvine
  */
 public class A002085 extends A002084 {

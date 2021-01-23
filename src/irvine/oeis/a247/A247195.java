@@ -6,7 +6,7 @@ package irvine.oeis.a247;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A247195 Expansion of <code>-(sqrt(x^4-4*x^3-6*x^2-4*x+1) +x^2-2*x-1)/4</code>.
+ * A247195 Expansion of -(sqrt(x^4-4*x^3-6*x^2-4*x+1) +x^2-2*x-1)/4.
  * @author Georg Fischer
  */
 public class A247195 extends HolonomicRecurrence {

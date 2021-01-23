@@ -1,8 +1,8 @@
 package irvine.math.z;
 
-import junit.framework.TestCase;
-
 import java.math.BigInteger;
+
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
@@ -85,7 +85,7 @@ public class ConvertTest extends TestCase {
     for (int i = 2; i < 10000; i += 17) {
       final BigInteger d = new BigInteger(i, AddTest.RANDOM);
       final Z zd = Z.valueOf(d);
-      if (!zd.equals(Z.ZERO)) {
+      if (!zd.isZero()) {
         final double dv = d.doubleValue();
         final double zdv = zd.doubleValue();
         if (zdv == Double.POSITIVE_INFINITY) {
@@ -107,7 +107,7 @@ public class ConvertTest extends TestCase {
     for (int i = 2; i < 10000; i += 137) {
       final BigInteger d = new BigInteger(i, AddTest.RANDOM);
       final Z zd = Z.valueOf(d);
-      if (!zd.equals(Z.ZERO)) {
+      if (!zd.isZero()) {
         final float dv = d.floatValue();
         final float zdv = zd.floatValue();
         if (zdv == Float.POSITIVE_INFINITY) {
@@ -138,25 +138,19 @@ public class ConvertTest extends TestCase {
       Convert.valueOf("1", -1);
       fail();
     } catch (final IllegalArgumentException e) {
-      assertEquals("Radix must be in [2,36].", e.getMessage());
+      assertEquals("Radix must be in [1,36].", e.getMessage());
     }
     try {
       Convert.valueOf("1", 0);
       fail();
     } catch (final IllegalArgumentException e) {
-      assertEquals("Radix must be in [2,36].", e.getMessage());
-    }
-    try {
-      Convert.valueOf("1", 1);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      assertEquals("Radix must be in [2,36].", e.getMessage());
+      assertEquals("Radix must be in [1,36].", e.getMessage());
     }
     try {
       Convert.valueOf("1", 37);
       fail();
     } catch (final IllegalArgumentException e) {
-      assertEquals("Radix must be in [2,36].", e.getMessage());
+      assertEquals("Radix must be in [1,36].", e.getMessage());
     }
     try {
       Convert.valueOf("", 2);
@@ -189,4 +183,9 @@ public class ConvertTest extends TestCase {
     assertNotNull(Z.ONE.shiftLeft(1 << 25).bigIntegerValue());
   }
 
+  public void testBase1() {
+    assertEquals(Z.FIVE, Convert.valueOf("11111", 1));
+    assertEquals(Z.FIVE.negate(), Convert.valueOf("-11111", 1));
+    assertEquals(Z.ZERO, Convert.valueOf("0", 1));
+  }
 }

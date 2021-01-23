@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060107 Numbers that are congruent to <code>{0, 2, 3, 5, 7, 8, 10} mod 12</code>. The ivory keys on a piano, start with <code>A0 =</code> the <code>0th</code> key.
+ * A060107 Numbers that are congruent to {0, 2, 3, 5, 7, 8, 10} mod 12. The ivory keys on a piano, start with A0 = the 0th key.
  * @author Sean A. Irvine
  */
 public class A060107 extends LinearRecurrence {

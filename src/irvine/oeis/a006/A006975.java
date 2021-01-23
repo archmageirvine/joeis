@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006975 Negated coefficients of Chebyshev T polynomials: <code>a(n) = -A053120(n+10, n), n &gt;= 0</code>.
+ * A006975 Negated coefficients of Chebyshev T polynomials: a(n) = -A053120(n+10, n), n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A006975 implements Sequence {

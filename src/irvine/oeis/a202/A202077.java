@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202077 Number of arrays of 5 integers in <code>-n..n</code> with sum zero and the sum of every adjacent pair being odd.
+ * A202077 Number of arrays of 5 integers in -n..n with sum zero and the sum of every adjacent pair being odd.
  * @author Georg Fischer
  */
 public class A202077 extends GeneratingFunctionSequence {

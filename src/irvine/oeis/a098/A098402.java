@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098402 <code>a(n) = (0^n + 4^n * binomial(2*n,n))/2</code>.
+ * A098402 a(n) = (0^n + 4^n * binomial(2*n,n))/2.
  * @author Georg Fischer
  */
 public class A098402 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A260635 Decimal expansion of <code>5^Pi</code>.
+ * A260635 Decimal expansion of 5^Pi.
  * @author Georg Fischer
  */
 public class A260635 extends DecimalExpansionSequence {

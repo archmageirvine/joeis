@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168067 <code>n*(n^7+1)/2</code>.
+ * A168067 n*(n^7+1)/2.
  * @author Georg Fischer
  */
 public class A168067 extends GeneratingFunctionSequence {

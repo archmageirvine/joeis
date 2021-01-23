@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026959 <code>a(n) = Sum_{k=0..n-3} T(n,k) * T(n,k+3)</code>, with T given by <code>A026615</code>.
+ * A026959 a(n) = Sum_{k=0..n-3} T(n,k) * T(n,k+3), with T given by A026615.
  * @author Sean A. Irvine
  */
 public class A026959 extends A026615 {

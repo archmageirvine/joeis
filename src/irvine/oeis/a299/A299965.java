@@ -5,7 +5,7 @@ package irvine.oeis.a299;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A299965 Number of triangles in a Star of David of size <code>n</code>.
+ * A299965 Number of triangles in a Star of David of size n.
  * @author Georg Fischer
  */
 public class A299965 extends HolonomicRecurrence {

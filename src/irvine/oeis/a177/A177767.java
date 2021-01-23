@@ -7,7 +7,7 @@ package irvine.oeis.a177;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A177767 Triangle read by rows: <code>T(n,k) = binomial(n - 1, k - 1), 1 &lt;= k &lt;=</code> n, and <code>T(n,0) = A153881(n+1), n &gt;= 0</code>.
+ * A177767 Triangle read by rows: T(n,k) = binomial(n - 1, k - 1), 1 &lt;= k &lt;= n, and T(n,0) = A153881(n+1), n &gt;= 0.
  * @author Georg Fischer
  */
 public class A177767 extends GeneratingFunctionTriangle {

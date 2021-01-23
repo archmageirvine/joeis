@@ -5,13 +5,13 @@ package irvine.oeis.a282;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A282458 Numbers k such that <code>(746*10^k + 1)/9</code> is prime.
+ * A282458 Numbers k such that (746*10^k + 1)/9 is prime.
  * @author Georg Fischer
  */
 public class A282458 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A282458() {
-    super(1, 0, 746, 10, +1, 9);
+    super(1, 0, 746, 10, 1, 9);
   }
 }

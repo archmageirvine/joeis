@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A308716 Decimal expansion of <code>2*sinh(Pi/2)/Pi</code>.
+ * A308716 Decimal expansion of 2*sinh(Pi/2)/Pi.
  * @author Georg Fischer
  */
 public class A308716 extends DecimalExpansionSequence {

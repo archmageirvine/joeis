@@ -6,7 +6,7 @@ package irvine.oeis.a226;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A226994 Number of lattice paths from <code>(0,0)</code> to <code>(n,n)</code> consisting of steps <code>U=(1,1), H=(1,0)</code> and <code>S=(0,1)</code> such that the first step leaving the diagonal (if any) is an H step.
+ * A226994 Number of lattice paths from (0,0) to (n,n) consisting of steps U=(1,1), H=(1,0) and S=(0,1) such that the first step leaving the diagonal (if any) is an H step.
  * @author Georg Fischer
  */
 public class A226994 extends HolonomicRecurrence {

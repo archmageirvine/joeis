@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245831 The Szeged index of the coronene/circumcoronene benzenoid <code>H_k</code> (see Fig. 5 of the Gutman &amp; Klavzar reference or Fig. 5.7 of the Diudea et al. reference).
+ * A245831 The Szeged index of the coronene/circumcoronene benzenoid H_k (see Fig. 5 of the Gutman &amp; Klavzar reference or Fig. 5.7 of the Diudea et al. reference).
  * @author Georg Fischer
  */
 public class A245831 extends GeneratingFunctionSequence {

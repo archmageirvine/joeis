@@ -7,7 +7,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A097230 Triangle read by rows: number of binary sequences with no isolated <code>1</code>'s.
+ * A097230 Triangle read by rows: number of binary sequences with no isolated 1's.
  * @author Georg Fischer
  */
 public class A097230 extends GeneratingFunctionTriangle {

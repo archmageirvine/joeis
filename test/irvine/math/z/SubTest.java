@@ -28,7 +28,7 @@ public class SubTest extends AddTest {
       assertEquals(v1.negate().subtract(v2), z1.negate().subtract(z2).bigIntegerValue());
       assertEquals(v1.subtract(v2.negate()), z1.subtract(z2.negate()).bigIntegerValue());
       assertEquals(v1.negate().subtract(v2), z1.negate().subtract(z2).bigIntegerValue());
-      assertTrue(v1 + "-" + v1, Z.ZERO.equals(z1.subtract(z1)));
+      assertTrue(v1 + "-" + v1, z1.subtract(z1).isZero());
       // check immutability
       assertEquals(v1, z1.bigIntegerValue());
       assertEquals(v2, z2.bigIntegerValue());

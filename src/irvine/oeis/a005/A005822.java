@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A005822 G.f.: <code>x*(1-x^2)*(x^4+x^3-x^2+x+1) / (x^8-4*x^6-x^4-4*x^2+1)</code>.
+ * A005822 G.f.: x*(1-x^2)*(x^4+x^3-x^2+x+1) / (x^8-4*x^6-x^4-4*x^2+1).
  * @author Sean A. Irvine
  */
 public class A005822 extends GeneratingFunctionSequence {

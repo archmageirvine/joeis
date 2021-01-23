@@ -31,6 +31,28 @@ public final class ByteUtils {
       data[k] = reverse(data[k]);
     }
   }
-}
 
+  /**
+   * Make the array an identity map up to entry <code>n</code>.
+   * @param a array
+   * @param n maximum entry
+   * @return the array
+   */
+  public static byte[] identity(final byte[] a, final int n) {
+    for (int k = 0; k < n; ++k) {
+      a[k] = (byte) k;
+    }
+    return a;
+  }
+
+  /**
+   * Make the array an identity map up to entry <code>n</code>.
+   * @param a array
+   * @return the array
+   */
+  public static byte[] identity(final byte[] a) {
+    return identity(a, a.length);
+  }
+
+}
 

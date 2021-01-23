@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100312 Number of <code>3 X n</code> binary matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) <code>(10;0)</code> and <code>(01;1)</code>.
+ * A100312 Number of 3 X n binary matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (10;0) and (01;1).
  * @author Georg Fischer
  */
 public class A100312 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030060 Third derivative of Catalan generating <code>function/3!</code>.
+ * A030060 Third derivative of Catalan generating function/3!.
  * @author Sean A. Irvine
  */
 public class A030060 implements Sequence {

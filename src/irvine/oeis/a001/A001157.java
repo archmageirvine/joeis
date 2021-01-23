@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001157 <code>sigma_2(n)</code>: sum of squares of divisors of <code>n</code>.
+ * A001157 sigma_2(n): sum of squares of divisors of n.
  * @author Sean A. Irvine
  */
 public class A001157 implements Sequence {

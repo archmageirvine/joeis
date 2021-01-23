@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238374 Row sums of triangle in <code>A204026</code>.
+ * A238374 Row sums of triangle in A204026.
  * @author Sean A. Irvine
  */
 public class A238374 extends LinearRecurrence {

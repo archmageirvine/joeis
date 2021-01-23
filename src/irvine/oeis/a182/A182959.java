@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182959 G.f. <code>2*(1+x)^2/(1-2*x+sqrt(1-8*x))</code>.
+ * A182959 G.f. 2*(1+x)^2/(1-2*x+sqrt(1-8*x)).
  * @author Georg Fischer
  */
 public class A182959 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059841 Period <code>2</code>: Repeat <code>[1,0]. a(n) = 1 - (n mod 2)</code>.
+ * A059841 Period 2: Repeat [1,0]. a(n) = 1 - (n mod 2).
  * @author Sean A. Irvine
  */
 public class A059841 implements Sequence {

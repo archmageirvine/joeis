@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A118465 <code>a(n) = 8*n^3 + n</code>.
+ * A118465 a(n) = 8*n^3 + n.
  * @author Georg Fischer
  */
 public class A118465 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306367 <code>a(n) =</code> numerator of <code>(n^2 + 2)/(n + 2)</code>.
+ * A306367 a(n) = numerator of (n^2 + 2)/(n + 2).
  * @author Georg Fischer
  */
 public class A306367 extends GeneratingFunctionSequence {

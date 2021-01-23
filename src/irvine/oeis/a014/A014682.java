@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014682 The Collatz or <code>3x+1</code> function: <code>a(n) = n/2</code> if n is even, otherwise <code>(3n+1)/2</code>.
+ * A014682 The Collatz or 3x+1 function: a(n) = n/2 if n is even, otherwise (3n+1)/2.
  * @author Sean A. Irvine
  */
 public class A014682 implements Sequence {

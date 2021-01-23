@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024432 <code>a(n) = t(1) - t(2) + t(3) + ... + c*t(n)</code>, where c <code>= (-1)^(n+1)</code> and <code>t(j)</code> are Stirling numbers <code>S(n,k)</code> in decreasing order, for k <code>= 1,2,...,n</code>.
+ * A024432 a(n) = t(1) - t(2) + t(3) + ... + c*t(n), where c = (-1)^(n+1) and t(j) are Stirling numbers S(n,k) in decreasing order, for k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A024432 implements Sequence {

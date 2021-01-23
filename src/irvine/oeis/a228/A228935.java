@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228935 <code>a(n) = (3 - 6*n)*(-1)^n</code>.
+ * A228935 a(n) = (3 - 6*n)*(-1)^n.
  * @author Georg Fischer
  */
 public class A228935 extends GeneratingFunctionSequence {

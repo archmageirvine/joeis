@@ -5,7 +5,7 @@ package irvine.oeis.a132;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A132368 <code>a(0)</code>, ..., <code>a(7)</code> are 0,1,2,3,6,4,5,7; for <code>n &gt;= 8, a(n) = a(n-8) + 8</code>.
+ * A132368 a(0), ..., a(7) are 0,1,2,3,6,4,5,7; for n &gt;= 8, a(n) = a(n-8) + 8.
  * @author Georg Fischer
  */
 public class A132368 extends HolonomicRecurrence {

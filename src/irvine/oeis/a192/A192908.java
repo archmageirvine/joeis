@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A192908 Constant term in the reduction by <code>(x^2 -&gt; x + 1)</code> of the polynomial <code>p(n,x)</code> defined below at Comments.
+ * A192908 Constant term in the reduction by (x^2 -&gt; x + 1) of the polynomial p(n,x) defined below at Comments.
  * @author Georg Fischer
  */
 public class A192908 extends GeneratingFunctionSequence {

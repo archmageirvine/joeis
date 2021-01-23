@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001809 <code>a(n) = n! * n(n-1)/4</code>.
+ * A001809 a(n) = n! * n(n-1)/4.
  * @author Sean A. Irvine
  */
 public class A001809 implements Sequence {

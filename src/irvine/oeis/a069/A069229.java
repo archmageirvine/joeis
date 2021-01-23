@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069229 <code>a(n) = n*(2^n + 1)</code>.
+ * A069229 a(n) = n*(2^n + 1).
  * @author Georg Fischer
  */
 public class A069229 extends GeneratingFunctionSequence {

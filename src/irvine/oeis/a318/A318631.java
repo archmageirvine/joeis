@@ -6,7 +6,7 @@ package irvine.oeis.a318;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A318631 Number of 10-member subsets of <code>[10*n]</code> whose elements sum to a multiple of <code>n</code>.
+ * A318631 Number of 10-member subsets of [10*n] whose elements sum to a multiple of n.
  * @author Georg Fischer
  */
 public class A318631 extends GeneratingFunctionSequence {

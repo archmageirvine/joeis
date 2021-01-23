@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221014 The Wiener index of the dendrimer <code>G_n</code> , defined pictorially in the Ashrafi - Shabani - Diudea reference.
+ * A221014 The Wiener index of the dendrimer G_n , defined pictorially in the Ashrafi - Shabani - Diudea reference.
  * @author Georg Fischer
  */
 public class A221014 extends GeneratingFunctionSequence {

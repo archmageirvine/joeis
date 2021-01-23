@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013961 <code>a(n) = sigma_13(n)</code>, the sum of the <code>13th</code> powers of the divisors of <code>n</code>.
+ * A013961 a(n) = sigma_13(n), the sum of the 13th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013961 implements Sequence {

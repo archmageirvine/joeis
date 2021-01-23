@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099938 Consider the sequence of circles <code>C0, C1, C2, C3</code> ..., where <code>C0</code> is a half-circle of radius <code>1. C1</code> is the largest circle that fits into <code>C0</code> and has radius <code>1/2. C(n+1)</code> is the largest circle that fits inside <code>C0</code> but outside <code>C(n)</code>, etc. Sequence gives the curvatures (reciprocals of the radii) of the circles.
+ * A099938 Consider the sequence of circles C0, C1, C2, C3 ..., where C0 is a half-circle of radius 1. C1 is the largest circle that fits into C0 and has radius 1/2. C(n+1) is the largest circle that fits inside C0 but outside C(n), etc. Sequence gives the curvatures (reciprocals of the radii) of the circles.
  * @author Sean A. Irvine
  */
 public class A099938 extends LinearRecurrence {

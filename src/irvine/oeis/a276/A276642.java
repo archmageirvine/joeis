@@ -5,13 +5,13 @@ package irvine.oeis.a276;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A276642 Numbers k such that <code>3*10^k + 89</code> is prime.
+ * A276642 Numbers k such that 3*10^k + 89 is prime.
  * @author Georg Fischer
  */
 public class A276642 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A276642() {
-    super(1, 2, 3, 10, +89, 0);
+    super(1, 2, 3, 10, +89);
   }
 }

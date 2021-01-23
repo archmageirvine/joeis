@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035187 Sum over divisors d of n of Kronecker symbol <code>(5|d)</code>.
+ * A035187 Sum over divisors d of n of Kronecker symbol (5|d).
  * @author Sean A. Irvine
  */
 public class A035187 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a292;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A292576 Permutation of the natural numbers partitioned into quadruples <code>[4k-1, 4k-3, 4k-2, 4k], k &gt; 0</code>.
+ * A292576 Permutation of the natural numbers partitioned into quadruples [4k-1, 4k-3, 4k-2, 4k], k &gt; 0.
  * @author Georg Fischer
  */
 public class A292576 extends HolonomicRecurrence {

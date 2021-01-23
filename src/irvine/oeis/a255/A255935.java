@@ -7,7 +7,7 @@ package irvine.oeis.a255;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A255935 Triangle read by rows: <code>a(n) =</code> Pascal's triangle <code>A007318(n) + A197870(n+1)</code>.
+ * A255935 Triangle read by rows: a(n) = Pascal's triangle A007318(n) + A197870(n+1).
  * @author Georg Fischer
  */
 public class A255935 extends GeneratingFunctionTriangle {

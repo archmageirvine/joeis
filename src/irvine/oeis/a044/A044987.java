@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A044987 Numbers k whose <code>base-3</code> representation has four <code>0</code>'s and two <code>1</code>'s.
+ * A044987 Numbers k whose base-3 representation has four 0's and two 1's.
  * @author Georg Fischer
  */
 public class A044987 extends RunsBaseSequence {

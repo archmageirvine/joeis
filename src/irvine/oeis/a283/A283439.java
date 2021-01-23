@@ -4,7 +4,7 @@ package irvine.oeis.a283;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A283439 Hankel transform of <code>A033434</code>.
+ * A283439 Hankel transform of A033434.
  * @author Georg Fischer
  */
 public class A283439 extends GeneratingFunctionSequence {

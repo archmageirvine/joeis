@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099572 Sum <code>C(n-k+4,k), k=0..floor(n/2)</code>.
+ * A099572 Sum C(n-k+4,k), k=0..floor(n/2).
  * @author Sean A. Irvine
  */
 public class A099572 extends LinearRecurrence {

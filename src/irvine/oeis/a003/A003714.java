@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003714 Fibbinary numbers: if <code>n = F(i1) + F(i2) + ... + F(ik)</code> is the Zeckendorf representation of <code>n (i.e.</code>, write n in Fibonacci number system) then <code>a(n) = 2^(i1 - 2) + 2^(i2 - 2) + ... + 2^(ik - 2)</code>. Also numbers whose binary representation contains no two adjacent <code>1</code>'s.
+ * A003714 Fibbinary numbers: if n = F(i1) + F(i2) + ... + F(ik) is the Zeckendorf representation of n (i.e., write n in Fibonacci number system) then a(n) = 2^(i1 - 2) + 2^(i2 - 2) + ... + 2^(ik - 2). Also numbers whose binary representation contains no two adjacent 1's.
  * @author Sean A. Irvine
  */
 public class A003714 implements Sequence {
@@ -19,7 +19,7 @@ public class A003714 implements Sequence {
       mA = mA.add(1);
       mB = mB.add(2);
       mC = mC.add(3);
-      if (Z.ZERO.equals(mA.xor(mB).xor(mC))) {
+      if (mA.xor(mB).xor(mC).isZero()) {
         return mA;
       }
     }

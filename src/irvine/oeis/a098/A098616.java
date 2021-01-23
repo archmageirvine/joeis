@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098616 Product of Pell and Catalan numbers: <code>a(n) = A000129(n+1)*A000108(n)</code>.
+ * A098616 Product of Pell and Catalan numbers: a(n) = A000129(n+1)*A000108(n).
  * @author Georg Fischer
  */
 public class A098616 extends HolonomicRecurrence {

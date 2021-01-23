@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005464 Number of simplices in barycentric subdivision of <code>n-simplex</code>.
+ * A005464 Number of simplices in barycentric subdivision of n-simplex.
  * @author Sean A. Irvine
  */
 public class A005464 implements Sequence {

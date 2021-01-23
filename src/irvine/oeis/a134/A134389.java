@@ -6,7 +6,7 @@ package irvine.oeis.a134;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A134389 A transform of <code>Floor((n+2)/2)</code> with Hankel transform <code>Floor((n+2)/2)*(cos(pi*n/2)+sin(pi*n/2))</code>.
+ * A134389 A transform of Floor((n+2)/2) with Hankel transform Floor((n+2)/2)*(cos(pi*n/2)+sin(pi*n/2)).
  * @author Georg Fischer
  */
 public class A134389 extends HolonomicRecurrence {

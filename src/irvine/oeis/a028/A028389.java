@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028389 <code>n-&gt;5n+1</code> if n odd, <code>n/2</code> if n even.
+ * A028389 The 5x + 1 sequence beginning at 7.
  * @author Sean A. Irvine
  */
 public class A028389 implements Sequence {

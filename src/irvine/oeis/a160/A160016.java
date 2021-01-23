@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160016 <code>Lodumo_2</code> transform of <code>A159833</code>.
+ * A160016 Lodumo_2 transform of A159833.
  * @author Georg Fischer
  */
 public class A160016 extends LinearRecurrence {

@@ -5,13 +5,13 @@ package irvine.oeis.a046;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A046865 Numbers k such that <code>4*5^k - 1</code> is prime.
+ * A046865 Numbers k such that 4*5^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A046865 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A046865() {
-    super(1, 0, 4, 5, -1, 0);
+    super(1, 0, 4, 5, -1);
   }
 }

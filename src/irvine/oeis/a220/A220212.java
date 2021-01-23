@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220212 Convolution of natural numbers <code>(A000027)</code> with tetradecagonal numbers <code>(A051866)</code>.
+ * A220212 Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).
  * @author Sean A. Irvine
  */
 public class A220212 extends LinearRecurrence {

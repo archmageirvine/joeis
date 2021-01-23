@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a008.A008472;
 
 /**
- * A024924 <code>a(n) = Sum_{k=1..n} prime(k)*floor(n/prime(k))</code>.
+ * A024924 a(n) = Sum_{k=1..n} prime(k)*floor(n/prime(k)).
  * @author Sean A. Irvine
  */
 public class A024924 extends PartialSumSequence {

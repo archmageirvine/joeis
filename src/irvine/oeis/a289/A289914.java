@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289914 Coefficients of <code>1/(Sum_{k&gt;=0} round((k+1)*r)(-x)^k)</code>, where r <code>= 7/5</code>.
+ * A289914 Coefficients of 1/(Sum_{k&gt;=0} round((k+1)*r)(-x)^k), where r = 7/5.
  * @author Georg Fischer
  */
 public class A289914 extends GeneratingFunctionSequence {

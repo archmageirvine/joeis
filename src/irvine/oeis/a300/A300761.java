@@ -4,7 +4,7 @@ package irvine.oeis.a300;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A300761 Number of non-equivalent ways <code>(mod D_2)</code> to select 4 points from n equidistant points on a straight line so that no selected point is equally distant from two other selected points.
+ * A300761 Number of non-equivalent ways (mod D_2) to select 4 points from n equidistant points on a straight line so that no selected point is equally distant from two other selected points.
  * @author Georg Fischer
  */
 public class A300761 extends GeneratingFunctionSequence {

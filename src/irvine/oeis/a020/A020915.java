@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020915 Number of terms in base 3 representation of <code>2^n</code>.
+ * A020915 Number of terms in base 3 representation of 2^n.
  * @author Sean A. Irvine
  */
 public class A020915 implements Sequence {

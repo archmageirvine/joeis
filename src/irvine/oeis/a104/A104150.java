@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104150 Shifted factorial numbers: <code>a(0)=0, a(n) = (n-1)!</code>.
+ * A104150 Shifted factorial numbers: a(0)=0, a(n) = (n-1)!.
  * @author Georg Fischer
  */
 public class A104150 extends HolonomicRecurrence {

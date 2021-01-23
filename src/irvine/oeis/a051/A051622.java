@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051622 <code>a(n) = (4*n+10)(!^4)/10(!^4)</code>, related to <code>A000407 ((4*n+2)(!^4)</code> quartic, or <code>4-factorials)</code>.
+ * A051622 a(n) = (4*n+10)(!^4)/10(!^4), related to A000407 ((4*n+2)(!^4) quartic, or 4-factorials).
  * @author Georg Fischer
  */
 public class A051622 extends HolonomicRecurrence {

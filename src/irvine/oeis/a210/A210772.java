@@ -5,7 +5,7 @@ package irvine.oeis.a210;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A210772 Number of partitions of <code>2^n</code> into powers of 2 less than or equal to 8.
+ * A210772 Number of partitions of 2^n into powers of 2 less than or equal to 8.
  * @author Georg Fischer
  */
 public class A210772 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084231 Numbers k such that the <code>root-mean-square</code> value of <code>1, 2</code>, ..., k, i.e., <code>sqrt((1/k)*Sum_{j=1..k} j^2)</code>, is an integer.
+ * A084231 Numbers k such that the root-mean-square value of 1, 2, ..., k, i.e., sqrt((1/k)*Sum_{j=1..k} j^2), is an integer.
  * @author Sean A. Irvine
  */
 public class A084231 extends LinearRecurrence {

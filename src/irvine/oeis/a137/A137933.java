@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137933 Least common multiple of <code>n^2</code> and 2.
+ * A137933 Least common multiple of n^2 and 2.
  * @author Georg Fischer
  */
 public class A137933 extends GeneratingFunctionSequence {

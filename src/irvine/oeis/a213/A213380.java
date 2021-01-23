@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213380 <code>a(n) = 132*binomial(n,12)</code>.
+ * A213380 a(n) = 132*binomial(n,12).
  * @author Sean A. Irvine
  */
 public class A213380 extends LinearRecurrence {

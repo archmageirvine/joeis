@@ -7,7 +7,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A127674 Coefficient table for Chebyshev polynomials <code>T(2*n,x)</code> (increasing even powers x, without zeros).
+ * A127674 Coefficient table for Chebyshev polynomials T(2*n,x) (increasing even powers x, without zeros).
  * @author Georg Fischer
  */
 public class A127674 extends GeneratingFunctionTriangle {

@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306399 <code>a(1)=1; a(n) =</code> number of occurrences of <code>a(n-1)</code> if <code>a(n-1)</code> is odd; <code>a(n) =</code> number of occurrences of <code>a(n-2)</code> if <code>a(n-1)</code> is even.
+ * A306399 a(1)=1; a(n) = number of occurrences of a(n-1) if a(n-1) is odd; a(n) = number of occurrences of a(n-2) if a(n-1) is even.
  * @author Georg Fischer
  */
 public class A306399 extends HolonomicRecurrence {

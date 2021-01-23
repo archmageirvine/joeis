@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031181 Numbers having <code>period-3 3-digitized</code> sequences.
+ * A031181 Numbers having period-3 3-digitized sequences.
  * @author Sean A. Irvine
  */
 public class A031181 extends A031178 {

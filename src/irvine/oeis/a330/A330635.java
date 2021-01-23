@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A330635 Array read by rows: <code>T(n,k)</code> is the number of solutions to the equation <code>Sum_{i=1..n} x_i^2 == k (mod 6)</code> with <code>x_i</code> in 0..5, where <code>n &gt;= 0</code> and <code>0 &lt;= k &lt;= 5</code>.
+ * A330635 Array read by rows: T(n,k) is the number of solutions to the equation Sum_{i=1..n} x_i^2 == k (mod 6) with x_i in 0..5, where n &gt;= 0 and 0 &lt;= k &lt;= 5.
  * @author Georg Fischer
  */
 public class A330635 extends GeneratingFunctionSequence {

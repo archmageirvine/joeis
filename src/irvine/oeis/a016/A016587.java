@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A016587 Decimal expansion of <code>log(21/2)</code>.
+ * A016587 Decimal expansion of log(21/2).
  * @author Sean A. Irvine
  */
 public class A016587 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013423 <code>tan(arcsin(x)-tanh(x))=3/3!*x^3-7/5!*x^5+497/7!*x^7+18209/9!*x^9..</code>.
+ * A013423 tan(arcsin(x)-tanh(x))=3/3!*x^3-7/5!*x^5+497/7!*x^7+18209/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013423 implements Sequence {

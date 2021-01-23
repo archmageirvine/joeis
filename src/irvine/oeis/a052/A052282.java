@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052282 Number of <code>3 X 3</code> stochastic matrices under row and column permutations.
+ * A052282 Number of 3 X 3 stochastic matrices under row and column permutations.
  * @author Sean A. Irvine
  */
 public class A052282 extends LinearRecurrence {

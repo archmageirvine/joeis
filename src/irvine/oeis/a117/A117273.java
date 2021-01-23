@@ -1,12 +1,12 @@
 package irvine.oeis.a117;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A117273 Numbers n for which the product of the digits equals the number of prime numbers smaller than <code>n</code>.
+ * A117273 Numbers n for which the product of the digits equals the number of prime numbers smaller than n.
  * @author Sean A. Irvine
  */
 public class A117273 implements Sequence {
@@ -22,7 +22,7 @@ public class A117273 implements Sequence {
       if (mPrime.isPrime(++mN)) {
         ++mPiN;
       }
-      if (LongUtils.digitProduct(mN) == pi) {
+      if (ZUtils.digitProduct(mN) == pi) {
         return Z.valueOf(mN);
       }
     }

@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294973 Denominators of the continued fraction convergents to <code>sqrt(7)/2</code>.
+ * A294973 Denominators of the continued fraction convergents to sqrt(7)/2.
  * @author Georg Fischer
  */
 public class A294973 extends GeneratingFunctionSequence {

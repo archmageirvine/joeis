@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006257 Josephus problem: <code>a(2n) = 2*a(n)-1, a(2n+1) = 2*a(n)+1</code>.
+ * A006257 Josephus problem: a(2*n) = 2*a(n)-1, a(2*n+1) = 2*a(n)+1.
  * @author Sean A. Irvine
  */
 public class A006257 implements Sequence {

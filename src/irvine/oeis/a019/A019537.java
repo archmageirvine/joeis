@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019537 Number of special orbits for dihedral group of degree <code>n</code>.
+ * A019537 Number of special orbits for dihedral group of degree n.
  * @author Sean A. Irvine
  */
 public class A019537 implements Sequence {

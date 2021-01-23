@@ -6,7 +6,7 @@ package irvine.oeis.a285;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A285045 Expansion of <code>cosh(7*arctanh(2*sqrt(x)))</code>.
+ * A285045 Expansion of cosh(7*arctanh(2*sqrt(x))).
  * @author Georg Fischer
  */
 public class A285045 extends HolonomicRecurrence {

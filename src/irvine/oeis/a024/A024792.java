@@ -1,7 +1,7 @@
 package irvine.oeis.a024;
 
 /**
- * A024792 Number of <code>8</code>'s in all partitions of <code>n</code>.
+ * A024792 Number of 8's in all partitions of n.
  * @author Sean A. Irvine
  */
 public class A024792 extends A024787 {

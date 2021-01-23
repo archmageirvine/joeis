@@ -5,7 +5,7 @@ package irvine.oeis.a077;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A077450 Continued fraction expansion of <code>(29+sqrt(145))/12</code>.
+ * A077450 Continued fraction expansion of (29+sqrt(145))/12.
  * @author Georg Fischer
  */
 public class A077450 extends HolonomicRecurrence {

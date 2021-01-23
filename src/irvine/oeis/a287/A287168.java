@@ -5,7 +5,7 @@ package irvine.oeis.a287;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A287168 Number of non-attacking bishop positions on a cylindrical <code>3 X 2n</code> chessboard.
+ * A287168 Number of non-attacking bishop positions on a cylindrical 3 X 2n chessboard.
  * @author Georg Fischer
  */
 public class A287168 extends HolonomicRecurrence {

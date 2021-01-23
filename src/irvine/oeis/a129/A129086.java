@@ -6,7 +6,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129086 Coefficients of solution to <code>A(x) = (1 + x*A(x)^2) * (1-3*x) / (1-2*x)^2</code>.
+ * A129086 Coefficients of solution to A(x) = (1 + x*A(x)^2) * (1-3*x) / (1-2*x)^2.
  * @author Georg Fischer
  */
 public class A129086 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003215 Hex (or centered hexagonal) numbers: <code>3*n*(n+1)+1</code> (crystal ball sequence for hexagonal lattice).
+ * A003215 Hex (or centered hexagonal) numbers: 3*n*(n+1)+1 (crystal ball sequence for hexagonal lattice).
  * @author Sean A. Irvine
  */
 public class A003215 implements Sequence {

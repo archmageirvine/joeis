@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A205186 Number of <code>(n+1) X (n+1) 0..1</code> arrays with the number of clockwise edge increases in every <code>2 X 2</code> subblock differing from each horizontal or vertical neighbor.
+ * A205186 Number of (n+1) X (n+1) 0..1 arrays with the number of clockwise edge increases in every 2 X 2 subblock differing from each horizontal or vertical neighbor.
  * @author Georg Fischer
  */
 public class A205186 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031701 Numbers n such that the least term in the period of the continued fraction for <code>sqrt(n)</code> is 23.
+ * A031701 Numbers n such that the least term in the period of the continued fraction for sqrt(n) is 23.
  * @author Sean A. Irvine
  */
 public class A031701 extends A031424 {

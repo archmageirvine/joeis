@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A023957 n-th digit after the decimal point of the n-th root of <code>n</code>.
+ * A023957 n-th digit after the decimal point of the n-th root of n.
  * @author Sean A. Irvine
  */
 public class A023957 implements Sequence {

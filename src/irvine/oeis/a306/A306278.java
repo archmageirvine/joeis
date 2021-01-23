@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306278 Numbers congruent to 2 or <code>11 mod 14</code>.
+ * A306278 Numbers congruent to 2 or 11 mod 14.
  * @author Georg Fischer
  */
 public class A306278 extends HolonomicRecurrence {

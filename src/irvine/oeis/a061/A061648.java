@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061648 Area of all nondecreasing Dyck paths of length <code>2n</code>.
+ * A061648 Area of all nondecreasing Dyck paths of length 2n.
  * @author Georg Fischer
  */
 public class A061648 extends GeneratingFunctionSequence {

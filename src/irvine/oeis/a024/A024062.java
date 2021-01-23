@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000400;
 
 /**
- * A024062 <code>a(n) = 6^n - 1</code>.
+ * A024062 a(n) = 6^n - 1.
  * @author Sean A. Irvine
  */
 public class A024062 extends A000400 {

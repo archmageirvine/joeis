@@ -105,7 +105,7 @@ public final class FunctionUtils {
       return codomainSize == null ? null : Z.ZERO;
     }
     if (codomainSize == null) {
-      return Z.ZERO.equals(domainSize) ? Z.ONE : null;
+      return domainSize.isZero() ? Z.ONE : null;
     }
     if (codomainSize.equals(domainSize)) {
       // This special case is a speed optimization

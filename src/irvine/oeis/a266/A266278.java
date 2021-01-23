@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266278 Number of legal Go positions on a <code>2 X n</code> board.
+ * A266278 Number of legal Go positions on a 2 X n board.
  * @author Georg Fischer
  */
 public class A266278 extends GeneratingFunctionSequence {

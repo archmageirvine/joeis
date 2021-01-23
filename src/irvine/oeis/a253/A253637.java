@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253637 Second partial sums of ninth powers <code>(A001017)</code>.
+ * A253637 Second partial sums of ninth powers (A001017).
  * @author Georg Fischer
  */
 public class A253637 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A126647 A <code>5 x 5</code> Ornate magic square.
+ * A126647 A 5 x 5 Ornate magic square.
  * @author Georg Fischer
  */
 public class A126647 extends FiniteSequence {

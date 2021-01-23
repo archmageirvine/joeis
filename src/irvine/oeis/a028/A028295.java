@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028295 <code>a(n) = n^6 - (883/60)*n^5 + (157/3)*n^4 + (2155/12)*n^3 - (4570/3)*n^2 + (42767/15)*n - 967</code>.
+ * A028295 a(n) = n^6 - (883/60)*n^5 + (157/3)*n^4 + (2155/12)*n^3 - (4570/3)*n^2 + (42767/15)*n - 967.
  * @author Sean A. Irvine
  */
 public class A028295 extends LinearRecurrence {

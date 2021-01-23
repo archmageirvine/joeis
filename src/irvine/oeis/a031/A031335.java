@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.SkipSequence;
 
 /**
- * A031335 <code>a(n)=least</code> k such that n begins at <code>s(k)</code>, where <code>s=A031324</code>.
+ * A031335 a(n)=least k such that n begins at s(k), where s=A031324.
  * @author Sean A. Irvine
  */
 public class A031335 extends A031297 {

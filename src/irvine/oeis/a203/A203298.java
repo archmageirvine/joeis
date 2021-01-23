@@ -5,7 +5,7 @@ package irvine.oeis.a203;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A203298 Second elementary symmetric function of the first n terms of <code>(1,2,2,3,3,4,4,5,5...)</code>.
+ * A203298 Second elementary symmetric function of the first n terms of (1,2,2,3,3,4,4,5,5...).
  * @author Georg Fischer
  */
 public class A203298 extends HolonomicRecurrence {

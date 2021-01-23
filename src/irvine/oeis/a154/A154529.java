@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154529 <code>A090040 mod 9</code>.
+ * A154529 A090040 mod 9.
  * @author Georg Fischer
  */
 public class A154529 extends LinearRecurrence {

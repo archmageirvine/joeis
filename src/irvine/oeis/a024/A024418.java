@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024418 <code>a(n) = t mod s(n,n-1)</code>, where t <code>= max{s(n,k): k=1,2,...,n}, s(n,k) =</code> Stirling numbers of the second kind, <code>n &gt;= 2</code>.
+ * A024418 a(n) = t mod s(n,n-1), where t = max{s(n,k): k=1,2,...,n}, s(n,k) = Stirling numbers of the second kind, n &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A024418 implements Sequence {

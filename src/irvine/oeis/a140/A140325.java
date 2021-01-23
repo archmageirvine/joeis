@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140325 <code>a(n) = binomial(n+8,8) * 2^n</code>.
+ * A140325 a(n) = binomial(n+8,8) * 2^n.
  * @author Georg Fischer
  */
 public class A140325 extends GeneratingFunctionSequence {

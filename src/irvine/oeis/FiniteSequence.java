@@ -1,6 +1,6 @@
 package irvine.oeis;
 
-import java.util.List;
+import java.util.Collection;
 
 import irvine.math.z.Z;
 
@@ -36,13 +36,22 @@ public class FiniteSequence implements Sequence {
    * Construct the sequence.
    * @param seq the values
    */
-  public FiniteSequence(final List<Z> seq) {
+  public FiniteSequence(final Collection<Z> seq) {
     mSeq = seq.toArray(new Z[0]);
   }
 
   @Override
   public Z next() {
     return mN < mSeq.length ? mSeq[mN++] : null;
+  }
+
+  /**
+   * Directly return the specified element of this sequence.
+   * @param index index (from 0)
+   * @return specified element
+   */
+  public Z a(final int index) {
+    return mSeq[index];
   }
 }
 

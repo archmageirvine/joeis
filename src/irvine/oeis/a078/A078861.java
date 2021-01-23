@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078861 Least positive residues [mod <code>210]</code> representing those residue classes which can be smaller prime of a difference 6 taken from <code>A031924</code>.
+ * A078861 Least positive residues [mod 210] representing those residue classes which can be smaller prime of a difference 6 taken from A031924.
  * @author Georg Fischer
  */
 public class A078861 extends FiniteSequence {

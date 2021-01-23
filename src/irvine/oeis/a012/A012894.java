@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012894 <code>tanh(sin(x)+log(x+1))=2*x-1/2!*x^2-15/3!*x^3+42/4!*x^4+397/5!*x^5..</code>.
+ * A012894 tanh(sin(x)+log(x+1))=2*x-1/2!*x^2-15/3!*x^3+42/4!*x^4+397/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012894 implements Sequence {

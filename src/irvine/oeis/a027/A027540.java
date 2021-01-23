@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027540 Second diagonal of <code>A027537</code>.
+ * A027540 Second diagonal of A027537.
  * @author Georg Fischer
  */
 public class A027540 extends GeneratingFunctionSequence {

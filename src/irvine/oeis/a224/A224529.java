@@ -6,7 +6,7 @@ package irvine.oeis.a224;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A224529 Sequence <code>f_n</code> from a paper by Robert Osburn and Brundaban Sahu.
+ * A224529 Sequence f_n from a paper by Robert Osburn and Brundaban Sahu.
  * @author Georg Fischer
  */
 public class A224529 extends HolonomicRecurrence {

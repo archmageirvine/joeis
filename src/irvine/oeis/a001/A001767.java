@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001767 Genus of modular group <code>Gamma(n) =</code> genus of modular curve <code>Chi(n)</code>.
+ * A001767 Genus of modular group Gamma(n) = genus of modular curve Chi(n).
  * @author Sean A. Irvine
  */
 public class A001767 implements Sequence {

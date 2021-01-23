@@ -7,7 +7,7 @@ package irvine.oeis.a207;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A207824 Triangle of coefficients of Chebyshev's <code>S(n,x+5)</code> polynomials (exponents of x in increasing order).
+ * A207824 Triangle of coefficients of Chebyshev's S(n,x+5) polynomials (exponents of x in increasing order).
  * @author Georg Fischer
  */
 public class A207824 extends GeneratingFunctionTriangle {

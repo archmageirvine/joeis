@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218155 Curvatures of tangents circle in circle of curvature -1-1.
+ * A218155 Numbers congruent to 2, 3, 6, 11 mod 12.
  * @author Sean A. Irvine
  */
 public class A218155 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a213;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A213507 E.g.f.: <code>exp( Sum_{n&gt;=1} A000108(n)*x^n/n )</code>, where <code>A000108(n) = binomial(2*n,n)/(n+1)</code> forms the Catalan numbers.
+ * A213507 E.g.f.: exp( Sum_{n&gt;=1} A000108(n)*x^n/n ), where A000108(n) = binomial(2*n,n)/(n+1) forms the Catalan numbers.
  * @author Georg Fischer
  */
 public class A213507 extends HolonomicRecurrence {

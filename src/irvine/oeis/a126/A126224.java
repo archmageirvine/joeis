@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126224 Determinant of the <code>n X n</code> matrix in which the entries are 1 through <code>n^2</code>, spiraling inward starting with 1 in the <code>(1,1)-entry</code>.
+ * A126224 Determinant of the n X n matrix in which the entries are 1 through n^2, spiraling inward starting with 1 in the (1,1)-entry.
  * @author Georg Fischer
  */
 public class A126224 extends HolonomicRecurrence {

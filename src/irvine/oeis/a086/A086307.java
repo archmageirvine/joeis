@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A086307 Decimal expansion of <code>((4 + 3*log(3))/3)^(2/3)/2</code>.
+ * A086307 Decimal expansion of ((4 + 3*log(3))/3)^(2/3)/2.
  * @author Georg Fischer
  */
 public class A086307 extends DecimalExpansionSequence {

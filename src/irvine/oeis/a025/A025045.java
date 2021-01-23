@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A025045 <code>a(n)</code> not of form prime <code>+- a(k), k &lt; n</code>.
+ * A025045 a(n) not of form prime +- a(k), k &lt; n.
  * @author Sean A. Irvine
  */
 public class A025045 extends MemorySequence {

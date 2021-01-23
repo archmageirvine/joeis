@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007989 Slowest increasing sequence with property that <code>a(n)</code> does not divide any term of form <code>a(n+m*a(n))</code> for any m; this is the slowest increasing <code>"non-difference-divisible"</code> sequence.
+ * A007989 Slowest increasing sequence with property that a(n) does not divide any term of form a(n+m*a(n)) for any m; this is the slowest increasing "non-difference-divisible" sequence.
  * @author Sean A. Irvine
  */
 public class A007989 extends MemorySequence {
@@ -13,7 +13,7 @@ public class A007989 extends MemorySequence {
     // We are trying to find a(n), m is the current candidate
     for (int k = 0; k < n; ++k) {
       final Z ak = get(k);
-      if (Z.ZERO.equals(Z.valueOf(n - k).mod(ak)) && Z.ZERO.equals(m.mod(ak))) {
+      if (Z.valueOf(n - k).mod(ak).isZero() && m.mod(ak).isZero()) {
         return false;
       }
     }

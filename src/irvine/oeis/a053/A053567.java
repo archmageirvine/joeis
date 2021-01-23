@@ -5,7 +5,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053567 Stirling numbers of first kind, <code>s(n+5, n)</code>.
+ * A053567 Stirling numbers of first kind, s(n+5, n).
  * @author Georg Fischer
  */
 public class A053567 extends HolonomicRecurrence {

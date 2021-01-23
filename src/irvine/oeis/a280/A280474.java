@@ -4,7 +4,7 @@ package irvine.oeis.a280;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A280474 Number of <code>n X 2 0..2</code> arrays with no element unequal to a strict majority of its horizontal and antidiagonal neighbors, with the exception of exactly two elements, and with new values introduced in order 0 sequentially upwards.
+ * A280474 Number of n X 2 0..2 arrays with no element unequal to a strict majority of its horizontal and antidiagonal neighbors, with the exception of exactly two elements, and with new values introduced in order 0 sequentially upwards.
  * @author Georg Fischer
  */
 public class A280474 extends GeneratingFunctionSequence {

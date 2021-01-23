@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033812 The <code>Loh-Shu 3 X 3</code> magic square, lexicographically largest variant when read by columns.
+ * A033812 The Loh-Shu 3 X 3 magic square, lexicographically largest variant when read by columns.
  * @author Georg Fischer
  */
 public class A033812 extends FiniteSequence {

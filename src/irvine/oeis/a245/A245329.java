@@ -6,7 +6,7 @@ package irvine.oeis.a245;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A245329 <code>a(n) = sum_{k=0..n}C(n,k)^3*(-8)^k</code> with <code>C(n,k) = n!/(k!(n-k)!)</code>.
+ * A245329 a(n) = sum_{k=0..n}C(n,k)^3*(-8)^k with C(n,k) = n!/(k!(n-k)!).
  * @author Georg Fischer
  */
 public class A245329 extends HolonomicRecurrence {

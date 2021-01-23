@@ -7,7 +7,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A152568 Triangle <code>T(n,k)</code> read by rows: <code>T(n,n) = -1, T(n,0) = 2^(n - 1), T(n,k) = -2^(n - k - 1), 1 &lt;= k &lt;= n - 1</code>.
+ * A152568 Triangle T(n,k) read by rows: T(n,n) = -1, T(n,0) = 2^(n - 1), T(n,k) = -2^(n - k - 1), 1 &lt;= k &lt;= n - 1.
  * @author Georg Fischer
  */
 public class A152568 extends GeneratingFunctionTriangle {

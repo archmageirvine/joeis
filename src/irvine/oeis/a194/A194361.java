@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A194361 Decimal expansion of <code>log(127) / log(16)</code>.
+ * A194361 Decimal expansion of log(127) / log(16).
  * @author Georg Fischer
  */
 public class A194361 extends DecimalExpansionSequence {

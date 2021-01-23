@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023345 Numbers n such that n remains prime through 5 iterations of function <code>f(x) = 6x + 5</code>.
+ * A023345 Numbers n such that n remains prime through 5 iterations of function f(x) = 6x + 5.
  * @author Sean A. Irvine
  */
 public class A023345 extends A023317 {

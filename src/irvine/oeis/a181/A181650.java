@@ -7,7 +7,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A181650 Inverse of number triangle <code>A070909</code>.
+ * A181650 Inverse of number triangle A070909.
  * @author Georg Fischer
  */
 public class A181650 extends GeneratingFunctionTriangle {

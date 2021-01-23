@@ -5,7 +5,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322796 <code>a(n) =</code> Kronecker symbol <code>(6/n)</code>.
+ * A322796 a(n) = Kronecker symbol (6/n).
  * @author Georg Fischer
  */
 public class A322796 extends HolonomicRecurrence {

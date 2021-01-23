@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227542 <code>a(n)</code> is the number of all terms preceding <code>a(n-1)</code> that have the same even-odd parity as <code>a(n-1)</code>.
+ * A227542 a(n) is the number of all terms preceding a(n-1) that have the same even-odd parity as a(n-1).
  * @author Georg Fischer
  */
 public class A227542 extends GeneratingFunctionSequence {

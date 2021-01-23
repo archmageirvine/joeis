@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178719 Partial sums of <code>(1/5)*floor(6^n/7)</code>.
+ * A178719 Partial sums of (1/5)*floor(6^n/7).
  * @author Sean A. Irvine
  */
 public class A178719 extends LinearRecurrence {

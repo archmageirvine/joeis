@@ -6,7 +6,7 @@ package irvine.oeis.a318;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318356 E.g.f. satisfies y'' + y' <code>- x^3*y = 0</code> with <code>y(0)=0, y'(0)=1</code>.
+ * A318356 E.g.f. satisfies y'' + y' - x^3*y = 0 with y(0)=0, y'(0)=1.
  * @author Georg Fischer
  */
 public class A318356 extends HolonomicRecurrence {

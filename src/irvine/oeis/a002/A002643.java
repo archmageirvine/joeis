@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002643 Numbers n such that <code>(n^2 + n + 1)/19</code> is prime.
+ * A002643 Numbers n such that (n^2 + n + 1)/19 is prime.
  * @author Sean A. Irvine
  */
 public class A002643 implements Sequence {

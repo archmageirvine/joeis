@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023881 Number of partitions in expanding space: <code>sigma(n,q)</code> is the sum of the q-th powers of the divisors of <code>n</code>.
+ * A023881 Number of partitions in expanding space: sigma(n,q) is the sum of the q-th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A023881 implements Sequence {

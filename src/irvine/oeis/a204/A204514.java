@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204514 Numbers such that <code>floor(a(n)^2 / 8)</code> is again a square.
+ * A204514 Numbers such that floor(a(n)^2 / 8) is again a square.
  * @author Georg Fischer
  */
 public class A204514 extends GeneratingFunctionSequence {

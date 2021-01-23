@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007410 Numerator of <code>Sum_{k=1..4} k^(-4)</code>.
+ * A007410 Numerator of Sum_{k=1..4} k^(-4).
  * @author Sean A. Irvine
  */
 public class A007410 implements Sequence {

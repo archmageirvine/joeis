@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000594;
 import irvine.oeis.a013.A013959;
 
 /**
- * A027860 <code>a(n) = (-tau(n) + sigma_11(n)) / 691</code>, where tau is Ramanujan's tau <code>(A000594), sigma_11(n) = Sum_{</code> d divides <code>n } d^11 (A013959)</code>.
+ * A027860 a(n) = (-tau(n) + sigma_11(n)) / 691, where tau is Ramanujan's tau (A000594), sigma_11(n) = Sum_{ d divides n } d^11 (A013959).
  * @author Sean A. Irvine
  */
 public class A027860 extends A013959 {

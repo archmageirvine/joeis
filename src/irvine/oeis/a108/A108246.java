@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108246 Number of labeled 2-regular graphs with no multiple edges, but loops are allowed <code>(i.e.</code>, each vertex is endpoint of two (usual) edges or one loop).
+ * A108246 Number of labeled 2-regular graphs with no multiple edges, but loops are allowed (i.e., each vertex is endpoint of two (usual) edges or one loop).
  * @author Georg Fischer
  */
 public class A108246 extends HolonomicRecurrence {

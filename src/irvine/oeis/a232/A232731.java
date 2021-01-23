@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232731 Number of numbers that yield an n-digit number after Reverse and <code>Add!</code>.
+ * A232731 Number of numbers that yield an n-digit number after Reverse and Add!.
  * @author Georg Fischer
  */
 public class A232731 extends LinearRecurrence {

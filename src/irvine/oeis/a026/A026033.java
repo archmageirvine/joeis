@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026033 <code>C(4n,n) - C(4n,n-4)</code>.
+ * A026033 C(4n,n) - C(4n,n-4).
  * @author Sean A. Irvine
  */
 public class A026033 implements Sequence {

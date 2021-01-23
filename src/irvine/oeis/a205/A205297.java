@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A205297 Decimal expansion of <code>3^(1/e)</code>.
+ * A205297 Decimal expansion of 3^(1/e).
  * @author Georg Fischer
  */
 public class A205297 extends DecimalExpansionSequence {

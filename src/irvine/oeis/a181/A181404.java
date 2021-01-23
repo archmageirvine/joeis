@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181404 Total number of positive integers below <code>10^n</code> requiring 8 positive cubes in their representation as sum of cubes.
+ * A181404 Total number of positive integers below 10^n requiring 8 positive cubes in their representation as sum of cubes.
  * @author Georg Fischer
  */
 public class A181404 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A219393 Numbers k such that <code>23*k+1</code> is a square.
+ * A219393 Numbers k such that 23*k+1 is a square.
  * @author Sean A. Irvine
  */
 public class A219393 extends LinearRecurrence {

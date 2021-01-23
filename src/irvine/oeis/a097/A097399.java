@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A097399 Maximum of the determinant over all permutations of the entries of a <code>3 X 3</code> matrix which are consecutive integers in the range <code>(n-4,n+4)</code>.
+ * A097399 Maximum of the determinant over all permutations of the entries of a 3 X 3 matrix which are consecutive integers in the range (n-4,n+4).
  * @author Georg Fischer
  */
 public class A097399 extends GeneratingFunctionSequence {

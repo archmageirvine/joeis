@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190730 Let <code>b(n,0)=n</code> and <code>b(n,k)=2*b(n,k-1) + 1</code> for k <code>&gt; 0</code>. Then <code>a(n) = b(n,1) + b(n,2) + ... + b(n,n)</code>.
+ * A190730 Let b(n,0)=n and b(n,k)=2*b(n,k-1) + 1 for k &gt; 0.  Then a(n) = b(n,1) + b(n,2) + ... + b(n,n).
  * @author Sean A. Irvine
  */
 public class A190730 extends LinearRecurrence {

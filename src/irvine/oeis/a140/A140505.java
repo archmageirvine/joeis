@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140505 Second differences of Jacobsthal sequence <code>A001045</code>, pairs with even and odd indices swapped.
+ * A140505 Second differences of Jacobsthal sequence A001045, pairs with even and odd indices swapped.
  * @author Georg Fischer
  */
 public class A140505 extends GeneratingFunctionSequence {

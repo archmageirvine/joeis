@@ -6,7 +6,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070031 Expansion of <code>(1+x*C)*C^3</code>, where C <code>= (1-sqrt(1-4*x))/(2*x)</code> is g.f. for Catalan numbers, <code>A000108</code>.
+ * A070031 Expansion of (1+x*C)*C^3, where C = (1-sqrt(1-4*x))/(2*x) is g.f. for Catalan numbers, A000108.
  * @author Georg Fischer
  */
 public class A070031 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121509 <code>5*n^2/2 -5*n +13/4 -(-1)^n/4</code>.
+ * A121509 a(n) = 5*n^2/2 - 5*n + 13/4 - (-1)^n/4.
  * @author Georg Fischer
  */
 public class A121509 extends HolonomicRecurrence {

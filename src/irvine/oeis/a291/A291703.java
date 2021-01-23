@@ -4,7 +4,7 @@ package irvine.oeis.a291;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A291703 Number of connected dominating sets in the complete tripartite graph <code>K_{n,n,n}</code>.
+ * A291703 Number of connected dominating sets in the complete tripartite graph K_{n,n,n}.
  * @author Georg Fischer
  */
 public class A291703 extends GeneratingFunctionSequence {

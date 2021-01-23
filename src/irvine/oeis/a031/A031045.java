@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031045 Triangle <code>T(n,k)</code>: write n in base 8, reverse order of digits.
+ * A031045 Triangle T(n,k): write n in base 8, reverse order of digits.
  * @author Georg Fischer
  */
 public class A031045 implements Sequence {

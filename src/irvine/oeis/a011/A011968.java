@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000110;
 
 /**
- * A011968 Apply <code>(1+Shift)</code> to Bell numbers.
+ * A011968 Apply (1+Shift) to Bell numbers.
  * @author Sean A. Irvine
  */
 public class A011968 extends A000110 {

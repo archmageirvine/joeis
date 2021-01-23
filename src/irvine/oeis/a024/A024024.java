@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000244;
 
 /**
- * A024024 <code>a(n) = 3^n - n</code>.
+ * A024024 a(n) = 3^n - n.
  * @author Sean A. Irvine
  */
 public class A024024 extends A000244 {

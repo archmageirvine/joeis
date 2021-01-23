@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014775 Expansion of exp <code>( - x - (1/2)*x^2 - (1/6)*x^3)</code>.
+ * A014775 Expansion of exp ( - x - (1/2)*x^2 - (1/6)*x^3).
  * @author Sean A. Irvine
  */
 public class A014775 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A242371 Modified eccentric connectivity index of the cycle graph with n vertices, <code>C[n]</code>.
+ * A242371 Modified eccentric connectivity index of the cycle graph with n vertices, C[n].
  * @author Georg Fischer
  */
 public class A242371 extends GeneratingFunctionSequence {

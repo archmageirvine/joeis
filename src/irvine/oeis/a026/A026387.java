@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026387 <code>a(n) =</code> number of integer strings <code>s(0),...,s(n)</code> counted by array T in <code>A026386</code> that have <code>s(n)=0</code>; also <code>a(n) = T(2n,n)</code>.
+ * A026387 a(n) = number of integer strings s(0),...,s(n) counted by array T in A026386 that have s(n)=0; also a(n) = T(2n,n).
  * @author Sean A. Irvine
  */
 public class A026387 extends A026386 {

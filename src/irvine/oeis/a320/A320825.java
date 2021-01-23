@@ -6,7 +6,7 @@ package irvine.oeis.a320;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A320825 Expansion of <code>-(10*x^2 - 6*x + 1)*sqrt(1 - 4*x)/(3*x - 1)^2</code>.
+ * A320825 Expansion of -(10*x^2 - 6*x + 1)*sqrt(1 - 4*x)/(3*x - 1)^2.
  * @author Georg Fischer
  */
 public class A320825 extends HolonomicRecurrence {

@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A208934 Smallest positive integer containing the n-th letter of the alphabet in German, including the umlauts and &#223; (sharp <code>s)</code>, but treating the letters a, o, u separately from their umlauted versions, or -1 if no such integer exists.
+ * A208934 Smallest positive integer containing the n-th letter of the alphabet in German, including the umlauts and \u00df (sharp s), but treating the letters a, o, u separately from their umlauted versions, or -1 if no such integer exists.
  * @author Georg Fischer
  */
 public class A208934 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A208934() {
-    super(new Z("8"), new Z("7"), new Z("6"), new Z("3"), Z.ONE, new Z("5"), new Z("20"), new Z("6"), Z.ONE, new Z("-1"), new Z("1000000000000000000000000000000000000000000000000"), new Z("11"), new Z("1000000"), Z.ONE, new Z("1000000"), new Z("1000000000000000000000000000000000000000000"), new Z("1000000000000000000000000"), new Z("3"), Z.ONE, new Z("8"), new Z("9"), new Z("4"), new Z("2"), new Z("1000000000000000000000000000000000000"), new Z("-1"), new Z("2"), new Z("-1"), new Z("12"), new Z("5"), new Z("30"));
+    super(Z.EIGHT, Z.SEVEN, Z.SIX, Z.THREE, Z.ONE, Z.FIVE, new Z("20"), Z.SIX, Z.ONE, Z.NEG_ONE, new Z("1000000000000000000000000000000000000000000000000"), new Z("11"), new Z("1000000"), Z.ONE, new Z("1000000"), new Z("1000000000000000000000000000000000000000000"), new Z("1000000000000000000000000"), Z.THREE, Z.ONE, Z.EIGHT, Z.NINE, Z.FOUR, Z.TWO, new Z("1000000000000000000000000000000000000"), Z.NEG_ONE, Z.TWO, Z.NEG_ONE, new Z("12"), Z.FIVE, new Z("30"));
   }
 }

@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A316526 <code>a(n) = 122880*6^n - 307200*5^n + 264960*4^n - 90240*3^n + 9844*2^n - 122</code>.
+ * A316526 a(n) = 122880*6^n - 307200*5^n + 264960*4^n - 90240*3^n + 9844*2^n - 122.
  * @author Georg Fischer
  */
 public class A316526 extends GeneratingFunctionSequence {

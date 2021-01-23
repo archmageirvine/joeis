@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002426;
 
 /**
- * A039966 <code>a(0) = 1</code>; thereafter <code>a(3n+2) = 0, a(3n) = a(3n+1) = a(n)</code>.
+ * A039966 a(0) = 1; thereafter a(3n+2) = 0, a(3n) = a(3n+1) = a(n).
  * @author Georg Fischer
  */
 public class A039966 extends A002426 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A039966() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

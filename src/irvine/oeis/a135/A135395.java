@@ -5,7 +5,7 @@ package irvine.oeis.a135;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A135395 Number of walks of length <code>2n+3</code> from origin to <code>(1,1,1)</code> on a cubic lattice.
+ * A135395 Number of walks of length 2n+3 from origin to (1,1,1) on a cubic lattice.
  * @author Georg Fischer
  */
 public class A135395 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034942 Binomial transform of <code>A002054</code>.
+ * A034942 Binomial transform of A002054.
  * @author Georg Fischer
  */
 public class A034942 extends HolonomicRecurrence {

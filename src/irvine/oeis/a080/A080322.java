@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A080322 Determinant of the <code>n X n</code> tridiagonal matrix M with the elements on the diagonals equal to 1, except <code>M(n,n-1)=M(n-1,n)=n</code>.
+ * A080322 Determinant of the n X n tridiagonal matrix M with the elements on the diagonals equal to 1, except M(n,n-1)=M(n-1,n)=n.
  * @author Georg Fischer
  */
 public class A080322 extends GeneratingFunctionSequence {

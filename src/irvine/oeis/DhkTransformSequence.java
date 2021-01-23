@@ -1,5 +1,8 @@
 package irvine.oeis;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Collections;
 
 import irvine.math.Mobius;
@@ -20,6 +23,7 @@ public class DhkTransformSequence implements Sequence {
   /**
    * Compute the DHK transform of the given polynomial.
    * @param p polynomial
+   * @param n maximum degree
    * @return DHK transform
    */
   public static Polynomial<Q> dhk(final Polynomial<Q> p, final int n) {
@@ -41,6 +45,9 @@ public class DhkTransformSequence implements Sequence {
     }
     return RING.add(p, RING.divide(sum, Q.TWO));
   }
+  /*
+  DHK(p, n)={my(q=((1+p)^2/(1-subst(p, x, x^2))-1)/2); p + (p^2-subst(p, x, x^2))/2 + sum(d=1, n, moebius(d)*(log(subst(1/(1+O(x*x^(n\d))-p), x, x^d))/d - subst(q + O(x*x^(n\d)), x, x^d)))/2}
+   */
 
   private final Sequence mSeq;
   private final Polynomial<Q> mA = RING.create(Collections.emptyList());
@@ -62,6 +69,21 @@ public class DhkTransformSequence implements Sequence {
       return Z.ONE;
     }
     mA.add(new Q(mSeq.next()));
-    return dhk(mA, mN).get(mN).toZ();
+    return dhk(mA, mN).coeff(mN).toZ();
+  }
+
+  /**
+   * Apply the Euler transform to the sequence supplied on standard input.
+   * @param args ignored
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+      final DhkTransformSequence seq = new DhkTransformSequence(new ReaderSequence(r));
+      Z a;
+      while ((a = seq.next()) != null) {
+        System.out.println(a);
+      }
+    }
   }
 }

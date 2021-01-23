@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020042 <code>a(n) = round( Gamma(n+1/4)/Gamma(1/4) )</code>.
+ * A020042 a(n) = round( Gamma(n+1/4)/Gamma(1/4) ).
  * @author Sean A. Irvine
  */
 public class A020042 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260993 Numbers n such that the modular curve <code>X_0(n)</code> contains infinitely many rational points of degree 2.
+ * A260993 Numbers n such that the modular curve X_0(n) contains infinitely many rational points of degree 2.
  * @author Georg Fischer
  */
 public class A260993 extends FiniteSequence {

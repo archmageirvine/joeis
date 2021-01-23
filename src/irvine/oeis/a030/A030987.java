@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030987 4-automorphic numbers: final digits of <code>4*n^2</code> agree with <code>n</code>.
+ * A030987 4-automorphic numbers: final digits of 4*n^2 agree with n.
  * @author Sean A. Irvine
  */
 public class A030987 implements Sequence {

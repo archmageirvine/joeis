@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023697 Numbers with exactly <code>6 1</code>'s in ternary expansion.
+ * A023697 Numbers with exactly 6 1's in ternary expansion.
  * @author Sean A. Irvine
  */
 public class A023697 implements Sequence {

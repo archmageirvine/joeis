@@ -6,7 +6,7 @@ package irvine.oeis.a116;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A116917 <code>a(1)=a(2)=1. a(n) = A006530(a(n-1)) + A006530(a(n-2))</code>.
+ * A116917 a(1)=a(2)=1. a(n) = A006530(a(n-1)) + A006530(a(n-2)).
  * @author Georg Fischer
  */
 public class A116917 extends GeneratingFunctionSequence {

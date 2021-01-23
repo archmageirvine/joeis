@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A285282 Numbers n such that <code>n^2 + 1</code> is <code>13-smooth</code>.
+ * A285282 Numbers n such that n^2 + 1 is 13-smooth.
  * @author Georg Fischer
  */
 public class A285282 extends FiniteSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051619 <code>a(n) = (4*n+7)(!^4)/7(!^4)</code>, related to <code>A034176(n+1) ((4*n+3)(!^4)</code> quartic, or <code>4-factorials)</code>.
+ * A051619 a(n) = (4*n+7)(!^4)/7(!^4), related to A034176(n+1) ((4*n+3)(!^4) quartic, or 4-factorials).
  * @author Georg Fischer
  */
 public class A051619 extends HolonomicRecurrence {

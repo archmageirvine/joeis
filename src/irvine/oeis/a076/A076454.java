@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A076454 Sum of numbers that can be written as <code>t*n + u*(n+1)</code> for nonnegative integers t,u in exactly one way.
+ * A076454 Sum of numbers that can be written as t*n + u*(n+1) for nonnegative integers t,u in exactly one way.
  * @author Georg Fischer
  */
 public class A076454 extends GeneratingFunctionSequence {

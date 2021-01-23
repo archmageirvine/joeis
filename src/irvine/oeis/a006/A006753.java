@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A006753 Smith (or joke) numbers: composite numbers n such that sum of digits of <code>n =</code> sum of digits of prime factors of <code>n</code> (counted with multiplicity).
+ * A006753 Smith (or joke) numbers: composite numbers n such that sum of digits of n = sum of digits of prime factors of n (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A006753 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a164;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A164991 Number of triangular involutions of <code>n</code>. A triangular involution is a square involution with at most three faces.
+ * A164991 Number of triangular involutions of n. A triangular involution is a square involution with at most three faces.
  * @author Georg Fischer
  */
 public class A164991 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A242910 Decimal expansion of <code>exp(sqrt(Pi/24))</code>.
+ * A242910 Decimal expansion of exp(sqrt(Pi/24)).
  * @author Georg Fischer
  */
 public class A242910 extends DecimalExpansionSequence {

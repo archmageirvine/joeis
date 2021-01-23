@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A278664 Binary representation of the <code>x-axis</code>, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule <code>62"</code>, based on the 5-celled von Neumann neighborhood.
+ * A278664 Binary representation of the x-axis, from the left edge to the origin, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 62", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A278664 extends GeneratingFunctionSequence {

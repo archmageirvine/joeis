@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008057 Smallest sum of an addition chain for <code>2n+1</code>.
+ * A008057 Smallest sum of an addition chain for 2n+1.
  * @author Sean A. Irvine
  */
 public class A008057 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004117 Numerators of expansion of <code>(1-x)^(-1/3)</code>.
+ * A004117 Numerators of expansion of (1-x)^(-1/3).
  * @author Sean A. Irvine
  */
 public class A004117 implements Sequence {

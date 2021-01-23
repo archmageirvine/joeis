@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221970 Number of <code>-n..n</code> arrays of length 7 with the sum ahead of each element differing from the sum following that element by n or less.
+ * A221970 Number of -n..n arrays of length 7 with the sum ahead of each element differing from the sum following that element by n or less.
  * @author Georg Fischer
  */
 public class A221970 extends GeneratingFunctionSequence {

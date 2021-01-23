@@ -4,7 +4,7 @@ package irvine.oeis.a254;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A254729 Number of numbers j <code>+ k*sqrt(2)</code> of length n, where the length is the least number of steps to reach 0, the allowable steps being <code>x -&gt; x + 1</code> and <code>x -&gt; x*sqrt(2)</code>.
+ * A254729 Number of numbers j + k*sqrt(2) of length n, where the length is the least number of steps to reach 0, the allowable steps being x -&gt; x + 1 and x -&gt; x*sqrt(2).
  * @author Georg Fischer
  */
 public class A254729 extends GeneratingFunctionSequence {

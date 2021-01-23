@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027897 Divisors of <code>10^12 - 1</code>.
+ * A027897 Divisors of 10^12 - 1.
  * @author Sean A. Irvine
  */
 public class A027897 extends FiniteSequence {

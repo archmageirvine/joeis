@@ -6,7 +6,7 @@ package irvine.oeis.a135;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A135503 <code>a(n) = n*(n^2 - 1)/2</code>.
+ * A135503 a(n) = n*(n^2 - 1)/2.
  * @author Georg Fischer
  */
 public class A135503 extends HolonomicRecurrence {

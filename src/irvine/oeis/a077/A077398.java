@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077398 First member of the Diophantine pair <code>(m,k)</code> that satisfies <code>7*(m^2+m) = k^2+k; a(n)=m</code>.
+ * A077398 First member of the Diophantine pair (m,k) that satisfies 7*(m^2+m) = k^2+k; a(n)=m.
  * @author Sean A. Irvine
  */
 public class A077398 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000045 Fibonacci numbers: <code>F(n) = F(n-1) + F(n-2)</code> with <code>F(0) = 0</code> and <code>F(1) = 1</code>.
+ * A000045 Fibonacci numbers: F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
  * @author Sean A. Irvine
  */
 public class A000045 implements Sequence, Serializable {

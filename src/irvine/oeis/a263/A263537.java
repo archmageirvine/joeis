@@ -4,7 +4,7 @@ package irvine.oeis.a263;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A263537 Integers k such that <code>A098531(k)</code> is divisible by <code>A000071(k+2)</code>.
+ * A263537 Integers k such that A098531(k) is divisible by A000071(k+2).
  * @author Georg Fischer
  */
 public class A263537 extends GeneratingFunctionSequence {

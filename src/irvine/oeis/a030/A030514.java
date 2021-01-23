@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030514 <code>a(n) = prime(n)^4</code>.
+ * A030514 a(n) = prime(n)^4.
  * @author Sean A. Irvine
  */
 public class A030514 extends A000040 {

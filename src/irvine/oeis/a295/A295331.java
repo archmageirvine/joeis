@@ -5,7 +5,7 @@ package irvine.oeis.a295;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A295331 Numerators of continued fraction convergents to <code>sqrt(13)/2 = A295330</code>.
+ * A295331 Numerators of continued fraction convergents to sqrt(13)/2 = A295330.
  * @author Georg Fischer
  */
 public class A295331 extends HolonomicRecurrence {

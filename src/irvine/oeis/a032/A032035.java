@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032035 Number of increasing rooted 2,3 cacti (triangular cacti with bridges) with <code>n-1</code> nodes.
+ * A032035 Number of increasing rooted 2,3 cacti (triangular cacti with bridges) with n-1 nodes.
  * @author Sean A. Irvine
  */
 public class A032035 implements Sequence {

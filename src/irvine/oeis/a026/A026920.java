@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026920 Triangular array O by rows: <code>O(n,k) =</code> number of partitions of n into an odd number of parts, the greatest being k.
+ * A026920 Triangular array O by rows: O(n,k) = number of partitions of n into an odd number of parts, the greatest being k.
  * @author Sean A. Irvine
  */
 public class A026920 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a176;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A176735 <code>a(n) = (n+8)*a(n-1) + (n-1)*a(n-2), a(-1)=0, a(0)=1</code>.
+ * A176735 a(n) = (n+8)*a(n-1) + (n-1)*a(n-2), a(-1)=0, a(0)=1.
  * @author Georg Fischer
  */
 public class A176735 extends HolonomicRecurrence {

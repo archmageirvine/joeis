@@ -4,7 +4,7 @@ package irvine.oeis.a156;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A156605 <code>a(n) = (4^n + 20)/3</code>.
+ * A156605 a(n) = (4^n + 20)/3.
  * @author Georg Fischer
  */
 public class A156605 extends GeneratingFunctionSequence {

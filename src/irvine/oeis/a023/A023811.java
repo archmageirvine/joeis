@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023811 Largest metadrome (number with digits in strict ascending order) in base <code>n</code>.
+ * A023811 Largest metadrome (number with digits in strict ascending order) in base n.
  * @author Sean A. Irvine
  */
 public class A023811 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126223 Number of level steps in all 2-Motzkin paths <code>(i.e.</code>, Motzkin paths with blue and red level steps) of length n, without red level steps on the <code>x-axis</code>.
+ * A126223 Number of level steps in all 2-Motzkin paths (i.e., Motzkin paths with blue and red level steps) of length n, without red level steps on the x-axis.
  * @author Georg Fischer
  */
 public class A126223 extends HolonomicRecurrence {

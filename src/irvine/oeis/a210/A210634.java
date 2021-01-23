@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A210634 G.f. for Ehrhart quasi-polynomials for hyperplane arrangements of type <code>E_6</code>.
+ * A210634 G.f. for Ehrhart quasi-polynomials for hyperplane arrangements of type E_6.
  * @author Georg Fischer
  */
 public class A210634 extends GeneratingFunctionSequence {

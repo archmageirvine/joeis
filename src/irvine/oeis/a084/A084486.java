@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084486 Number of <code>4 X n 0-1</code> matrices which have <code>n+3 1</code>'s and have no zero rows or zero columns.
+ * A084486 Number of 4 X n 0-1 matrices which have n+3 1's and have no zero rows or zero columns.
  * @author Georg Fischer
  */
 public class A084486 extends GeneratingFunctionSequence {

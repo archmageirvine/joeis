@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015809 Odd numbers k such that <code>phi(k) | sigma_3(k)</code>.
+ * A015809 Odd numbers k such that phi(k) | sigma_3(k).
  * @author Sean A. Irvine
  */
 public class A015809 implements Sequence {
@@ -18,7 +18,7 @@ public class A015809 implements Sequence {
     while (true) {
       mN += 2;
       final FactorSequence fs = Cheetah.factor(mN);
-      if (Z.ZERO.equals(fs.sigma(3).mod(fs.phi()))) {
+      if (fs.sigma(3).mod(fs.phi()).isZero()) {
         return Z.valueOf(mN);
       }
     }

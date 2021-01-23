@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a079.A079896;
 
 /**
- * A039955 Squarefree numbers congruent to <code>1 mod 4</code>.
+ * A039955 Squarefree numbers congruent to 1 mod 4.
  * @author Sean A. Irvine
  */
 public class A039955 extends PrependSequence {

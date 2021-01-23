@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.SumBetweenSequence;
 
 /**
- * A026341 <code>a(n) =</code> sum of the numbers between the two n's in <code>A026338</code>.
+ * A026341 a(n) = sum of the numbers between the two n's in A026338.
  * @author Sean A. Irvine
  */
 public class A026341 extends SumBetweenSequence {

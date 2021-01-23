@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027345 Triangular array T given by rows: <code>T(n,k) =</code> number of partitions of n into distinct odd parts, the least being k.
+ * A027345 Triangular array T given by rows: T(n,k) = number of partitions of n into distinct odd parts, the least being k.
  * @author Sean A. Irvine
  */
 public class A027345 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143079 <code>a(n) = ((9+sqrt(9))^n + (9-sqrt(9))^n)/2</code>.
+ * A143079 a(n) = ((9+sqrt(9))^n + (9-sqrt(9))^n)/2.
  * @author Georg Fischer
  */
 public class A143079 extends HolonomicRecurrence {

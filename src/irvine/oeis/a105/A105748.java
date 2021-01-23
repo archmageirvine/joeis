@@ -6,7 +6,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105748 Number of ways to use the elements of <code>{1,..,k}, 0&lt;=k&lt;=2n</code>, once each to form a collection of <code>n</code> (possibly empty) sets, each with at most 2 elements.
+ * A105748 Number of ways to use the elements of {1,..,k}, 0&lt;=k&lt;=2n, once each to form a collection of n (possibly empty) sets, each with at most 2 elements.
  * @author Georg Fischer
  */
 public class A105748 extends HolonomicRecurrence {

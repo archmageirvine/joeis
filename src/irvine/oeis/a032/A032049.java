@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032049 "BGJ" <code>(reversible</code>, element, labeled) transform of 1,1,1,1...
+ * A032049 "BGJ" (reversible, element, labeled) transform of 1,1,1,1...
  * @author Sean A. Irvine
  */
 public class A032049 implements Sequence {

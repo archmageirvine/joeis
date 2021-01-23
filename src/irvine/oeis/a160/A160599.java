@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Euler;
 
 /**
- * A160599 Composite numbers n for which <code>n - phi(n)</code> divides <code>n-1</code>.
+ * A160599 Composite numbers n for which n - phi(n) divides n-1.
  * @author Sean A. Irvine
  */
 public class A160599 implements Sequence {
@@ -18,7 +18,7 @@ public class A160599 implements Sequence {
       mN = mN.add(2);
       if (!mN.isProbablePrime()) {
         final Z phi = Euler.phi(mN);
-        if (Z.ZERO.equals(mN.subtract(1).mod(mN.subtract(phi)))) {
+        if (mN.subtract(1).mod(mN.subtract(phi)).isZero()) {
           return mN;
         }
       }

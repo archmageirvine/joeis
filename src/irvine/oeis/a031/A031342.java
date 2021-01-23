@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031342 <code>Prime(9n)</code>.
+ * A031342 Prime(9n).
  * @author Sean A. Irvine
  */
 public class A031342 extends A031336 {

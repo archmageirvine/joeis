@@ -6,7 +6,7 @@ package irvine.oeis.a136;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A136591 Column 1 of triangle <code>A136590</code>.
+ * A136591 Column 1 of triangle A136590.
  * @author Georg Fischer
  */
 public class A136591 extends HolonomicRecurrence {

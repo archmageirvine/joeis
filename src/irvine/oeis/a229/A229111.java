@@ -5,7 +5,7 @@ package irvine.oeis.a229;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A229111 Expansion of the g.f. of <code>A053723</code> in powers of the g.f. of <code>A121591</code>.
+ * A229111 Expansion of the g.f. of A053723 in powers of the g.f. of A121591.
  * @author Georg Fischer
  */
 public class A229111 extends HolonomicRecurrence {

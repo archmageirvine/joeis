@@ -1,7 +1,7 @@
 package irvine.oeis.a011;
 
 /**
- * A011652 <code>114th</code> cyclotomic polynomial.
+ * A011652 114th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A011652 extends A011632 {

@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A164904 <code>a(n)</code> is the number of palindromic structures using a maximum of ten different symbols.
+ * A164904 a(n) is the number of palindromic structures using a maximum of ten different symbols.
  * @author Georg Fischer
  */
 public class A164904 extends GeneratingFunctionSequence {

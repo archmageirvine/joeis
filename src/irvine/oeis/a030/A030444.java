@@ -1,9 +1,10 @@
 package irvine.oeis.a030;
 
+import irvine.math.lattice.Hunter;
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import jmason.poly.ChildGeneratorFactory;
-import jmason.poly.PolyominoCounter;
 
 /**
  * A030444 Number of fixed n-celled polyknights.
@@ -11,13 +12,11 @@ import jmason.poly.PolyominoCounter;
  */
 public class A030444 implements Sequence {
 
-  private int mMax = 0;
+  private int mN = 0;
+  private final ParallelHunter mHunter = new ParallelHunter(6, () -> new Hunter(Lattices.KNIGHT, true));
 
   @Override
   public Z next() {
-    final PolyominoCounter pc = new PolyominoCounter(++mMax, false, false, false);
-    pc.setGenerator(ChildGeneratorFactory.POLYKNIGHT_GENERATOR);
-    pc.run(true, true, false);
-    return Z.valueOf(pc.getCu().getCounter(mMax));
+    return Z.valueOf(mHunter.count(++mN));
   }
 }

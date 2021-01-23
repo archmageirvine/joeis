@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126180 Number of branches in all hex trees with n edges <code>(n&gt;=1)</code>.
+ * A126180 Number of branches in all hex trees with n edges (n&gt;=1).
  * @author Georg Fischer
  */
 public class A126180 extends HolonomicRecurrence {

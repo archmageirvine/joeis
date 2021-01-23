@@ -5,7 +5,7 @@ package irvine.oeis.a112;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A112699 Partial sum of Catalan numbers <code>A000108</code> multiplied by powers of 5.
+ * A112699 Partial sum of Catalan numbers A000108 multiplied by powers of 5.
  * @author Georg Fischer
  */
 public class A112699 extends HolonomicRecurrence {

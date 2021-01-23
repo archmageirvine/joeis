@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164743 Digital root of <code>3*A000045(n)</code>.
+ * A164743 Digital root of 3*A000045(n).
  * @author Sean A. Irvine
  */
 public class A164743 extends LinearRecurrence {

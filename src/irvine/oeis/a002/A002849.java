@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * A002849 Maximal number of disjoint subsets <code>{X,Y,Z}</code> of <code>{1, 2</code>, ..., <code>n}</code>, each satisfying X <code>+ Y =</code> Z.
+ * A002849 Maximal number of disjoint subsets {X,Y,Z} of {1, 2, ..., n}, each satisfying X + Y = Z.
  * @author Sean A. Irvine
  */
 public class A002849 implements Sequence {

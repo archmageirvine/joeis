@@ -4,7 +4,7 @@ package irvine.oeis.a024;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A024379 <code>a(n) = 3rd</code> elementary symmetric function of the first <code>n+2</code> positive integers congruent to <code>1 mod 4</code>.
+ * A024379 a(n) = 3rd elementary symmetric function of the first n+2 positive integers congruent to 1 mod 4.
  * @author Georg Fischer
  */
 public class A024379 extends GeneratingFunctionSequence {

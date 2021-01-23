@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A147834 Coefficient expansion of the characteristic polynomial of the <code>{3,4,5}</code> simplex matrix: M <code>= {{0, 3, 0}, {0, 0, 4}, {1, 1, 1}}; p(x)=12 + 4 x + x^2 - x^3</code>.
+ * A147834 Coefficient expansion of the characteristic polynomial of the {3,4,5} simplex matrix: M = {{0, 3, 0}, {0, 0, 4}, {1, 1, 1}}; p(x)=12 + 4 x + x^2 - x^3.
  * @author Georg Fischer
  */
 public class A147834 extends GeneratingFunctionSequence {

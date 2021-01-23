@@ -5,7 +5,7 @@ package irvine.oeis.a232;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A232617 Product of first n odd numbers plus product of first n even numbers: <code>(2n-1)!! + (2n)!!</code>, where <code>k!! = A006882(k)</code>.
+ * A232617 Product of first n odd numbers plus product of first n even numbers: (2n-1)!! + (2n)!!, where k!! = A006882(k).
  * @author Georg Fischer
  */
 public class A232617 extends HolonomicRecurrence {

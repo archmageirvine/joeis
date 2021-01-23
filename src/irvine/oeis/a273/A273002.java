@@ -5,13 +5,13 @@ package irvine.oeis.a273;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A273002 Numbers n such that <code>16*10^n+1</code> is prime.
+ * A273002 Numbers n such that 16*10^n+1 is prime.
  * @author Georg Fischer
  */
 public class A273002 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A273002() {
-    super(1, 0, 16, 10, +1, 0);
+    super(1, 0, 16, 10, 1);
   }
 }

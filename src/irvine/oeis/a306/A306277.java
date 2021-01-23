@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306277 Numbers congruent to 1 or <code>8 mod 10</code>.
+ * A306277 Numbers congruent to 1 or 8 mod 10.
  * @author Georg Fischer
  */
 public class A306277 extends GeneratingFunctionSequence {

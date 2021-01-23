@@ -6,7 +6,7 @@ package irvine.oeis.a249;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A249519 Expansion of <code>4*x/(16*x+(sqrt(2)*sqrt(sqrt(1-16*x)+1)-1)*sqrt(1-16*x)-1)</code>.
+ * A249519 Expansion of 4*x/(16*x+(sqrt(2)*sqrt(sqrt(1-16*x)+1)-1)*sqrt(1-16*x)-1).
  * @author Georg Fischer
  */
 public class A249519 extends HolonomicRecurrence {

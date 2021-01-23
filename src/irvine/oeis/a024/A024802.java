@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000408;
 
 /**
- * A024802 <code>a(n) =</code> position of <code>n^2 + (n+1)^2 + (n+2)^2</code> in <code>A000408</code>.
+ * A024802 a(n) = position of n^2 + (n+1)^2 + (n+2)^2 in A000408.
  * @author Sean A. Irvine
  */
 public class A024802 extends A000408 {

@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001414;
 
 /**
- * A025281 <code>a(n) = sopfr(n!)</code>, where <code>sopfr = A001414</code> is the integer log.
+ * A025281 a(n) = sopfr(n!), where sopfr = A001414  is the integer log.
  * @author Sean A. Irvine
  */
 public class A025281 extends PartialSumSequence {

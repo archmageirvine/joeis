@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024199 <code>a(n) = (2n-1)!! * Sum_{k=0..n-1}(-1)^k/(2k+1)</code>.
+ * A024199 a(n) = (2n-1)!! * Sum_{k=0..n-1}(-1)^k/(2k+1).
  * @author Sean A. Irvine
  */
 public class A024199 implements Sequence {

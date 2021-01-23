@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A329743 Number of compositions of n with <code>runs-resistance n - 3</code>.
+ * A329743 Number of compositions of n with runs-resistance n - 3.
  * @author Georg Fischer
  */
 public class A329743 extends FiniteSequence {

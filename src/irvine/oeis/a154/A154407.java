@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A154407 <code>a(n) = 5*2^(n-1) + 3*6^n/2</code>.
+ * A154407 a(n) = 5*2^(n-1) + 3*6^n/2.
  * @author Georg Fischer
  */
 public class A154407 extends GeneratingFunctionSequence {

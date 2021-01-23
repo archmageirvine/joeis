@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A158641 Strong primes p: adding 2 to any one digit of p produces a prime number (no digits 8 &amp; 9 in <code>p)</code>.
+ * A158641 Strong primes p: adding 2 to any one digit of p produces a prime number (no digits 8 &amp; 9 in p).
  * @author Georg Fischer
  */
 public class A158641 extends FiniteSequence {

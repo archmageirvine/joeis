@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145418 Number of Hamiltonian cycles in <code>P_8 X P_n</code>.
+ * A145418 Number of Hamiltonian cycles in P_8 X P_n.
  * @author Sean A. Irvine
  */
 public class A145418 extends LinearRecurrence {

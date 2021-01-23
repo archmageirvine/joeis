@@ -5,7 +5,7 @@ package irvine.oeis.a251;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A251366 Number of <code>(n+1) X (1+1) 0..2</code> arrays with every <code>2 X 2</code> subblock summing to <code>1 2 3 4 5 6</code> or 7.
+ * A251366 Number of (n+1) X (1+1) 0..2 arrays with every 2 X 2 subblock summing to 1 2 3 4 5 6 or 7.
  * @author Georg Fischer
  */
 public class A251366 extends HolonomicRecurrence {

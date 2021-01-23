@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304835 <code>a(n) = 108*n^2 - 104*n + 20 (n&gt;=1)</code>.
+ * A304835 a(n) = 108*n^2 - 104*n + 20 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304835 extends GeneratingFunctionSequence {

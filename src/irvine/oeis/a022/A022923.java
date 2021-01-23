@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022923 Number of <code>2^m</code> between <code>7^n</code> and <code>7^(n+1)</code>.
+ * A022923 Number of 2^m between 7^n and 7^(n+1).
  * @author Sean A. Irvine
  */
 public class A022923 implements Sequence {
 
-  private static final CR LOG = CR.valueOf(7).log().divide(CR.TWO.log());
+  private static final CR LOG = CR.SEVEN.log().divide(CR.TWO.log());
   private long mN = -1;
 
   @Override

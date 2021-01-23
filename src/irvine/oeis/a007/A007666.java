@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007666 <code>a(n) =</code> smallest number k such that <code>k^n</code> is the sum of n positive n-th powers, or 0 if no solution exists.
+ * A007666 a(n) = smallest number k such that k^n is the sum of n positive n-th powers, or 0 if no solution exists.
  * @author Sean A. Irvine
  */
 public class A007666 implements Sequence {
@@ -18,7 +18,7 @@ public class A007666 implements Sequence {
 
   private boolean isPowerExpressible(final Z n, final int cnt, int next) {
     if (cnt == 0) {
-      return Z.ZERO.equals(n);
+      return n.isZero();
     }
     while (next < mPowers.size() && mPowers.get(next).compareTo(n) <= 0) {
       if (isPowerExpressible(n.subtract(mPowers.get(next)), cnt - 1, next + 1)) {

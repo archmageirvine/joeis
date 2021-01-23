@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331265 Nonnegative values x of solutions <code>(x, y)</code> to the Diophantine equation <code>x^2 + (x + 31^2)^2 = y^2</code>.
+ * A331265 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x + 31^2)^2 = y^2.
  * @author Georg Fischer
  */
 public class A331265 extends HolonomicRecurrence {

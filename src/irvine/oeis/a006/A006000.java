@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006000 <code>a(n) = (n+1)*(n^2+n+2)/2</code>; g.f.: <code>(1 + 2*x^2) / (1 - x)^4</code>.
+ * A006000 a(n) = (n+1)*(n^2+n+2)/2; g.f.: (1 + 2*x^2) / (1 - x)^4.
  * @author Sean A. Irvine
  */
 public class A006000 implements Sequence {

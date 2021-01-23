@@ -1,17 +1,18 @@
 package irvine.oeis.a159;
 
-import irvine.math.z.Z;
-import irvine.math.q.Q;
-import irvine.oeis.Sequence;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+
+import irvine.factor.factor.PrimeDivision;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
-import java.util.HashSet;
-import java.util.Collections;
-import java.util.ArrayList;
-import irvine.factor.factor.PrimeDivision;
+import irvine.math.q.Q;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
- * A159907 Numbers n with half-integral abundancy index, <code>sigma(n)/n = k+1/2</code> with integer k.
+ * A159907 Numbers n with half-integral abundancy index, sigma(n)/n = k+1/2 with integer k.
  * @author Sean A. Irvine
  * @author Robert Gerbicz
  */
@@ -42,7 +43,7 @@ public class A159907 implements Sequence {
     }
     while (nn.compareTo(mBound) <= 0) {
       p = mPrime.nextPrime(p);
-      if (!Z.ZERO.equals(n.mod(p))) {
+      if (!n.mod(p).isZero()) {
         nn = nn.multiply(p);
         r = r.multiply(new Q(p, p.subtract(1)));
       }
@@ -58,10 +59,10 @@ public class A159907 implements Sequence {
     for (final Z f : u.toZArray()) {
       final int e = u.getExponent(f);
       final Z pe = f.pow(e);
-      if (!Z.ZERO.equals(n2.mod(pe)) && (Z.ZERO.equals(n.mod(f)) || f.compareTo(sp) <= 0)) {
+      if (!n2.mod(pe).isZero() && (n.mod(f).isZero() || f.compareTo(sp) <= 0)) {
         return;
       }
-      if (!Z.ZERO.equals(n2.mod(f))) {
+      if (!n2.mod(f).isZero()) {
         pr = pe;
         sz = sz.multiply(pr);
         prim = f;
@@ -74,9 +75,9 @@ public class A159907 implements Sequence {
       p = sp;
       boolean imp = true;
       while (imp) {
-        imp = Z.ZERO.equals(n.mod(p));
+        imp = n.mod(p).isZero();
         p = mPrime.nextPrime(p);
-        if (!Z.ZERO.equals(n.mod(p))) {
+        if (!n.mod(p).isZero()) {
           Z q = Z.ONE;
           while (q.multiply(p).multiply(n).compareTo(mBound) <= 0) {
             q = q.multiply(p);

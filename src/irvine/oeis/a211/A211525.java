@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211525 Number of -1..1 arrays <code>x(i)</code> of <code>n+1</code> elements <code>i=1..n+1</code> with <code>set{t,u,v</code> in <code>0,1}((x[i+t]+x[j+u]+x[k+v])*(-1)^(t+u+v))</code> having two or four distinct values for every <code>i,j,k&lt;=n</code>.
+ * A211525 Number of -1..1 arrays x(i) of n+1 elements i=1..n+1 with set{t,u,v in 0,1}((x[i+t]+x[j+u]+x[k+v])*(-1)^(t+u+v)) having two or four distinct values for every i,j,k&lt;=n.
  * @author Georg Fischer
  */
 public class A211525 extends GeneratingFunctionSequence {

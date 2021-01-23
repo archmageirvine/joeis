@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A027826 Inverse binomial transform of <code>a_0 = 1, a_1, a_2</code>, etc. is <code>a_0, 0, a_1, 0, a_2, 0</code>, etc.
+ * A027826 Inverse binomial transform of a_0 = 1, a_1, a_2, etc. is a_0, 0, a_1, 0, a_2, 0, etc.
  * @author Sean A. Irvine
  */
 public class A027826 extends MemorySequence {

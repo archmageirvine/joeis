@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003594;
 
 /**
- * A025698 Index of <code>3^n</code> within sequence of numbers of form <code>3^i*7^j</code>.
+ * A025698 Index of 3^n within sequence of numbers of form 3^i*7^j.
  * @author Sean A. Irvine
  */
 public class A025698 extends A003594 {

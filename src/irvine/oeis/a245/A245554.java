@@ -5,7 +5,7 @@ package irvine.oeis.a245;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A245554 A Rauzy fractal sequence: trajectory of 1 under morphism <code>1 -&gt; 1,2,1,3; 2 -&gt; 3; 3 -&gt; 1</code>.
+ * A245554 A Rauzy fractal sequence: trajectory of 1 under morphism 1 -&gt; 1,2,1,3; 2 -&gt; 3; 3 -&gt; 1.
  * @author Georg Fischer
  */
 public class A245554 extends MorphismSequence {

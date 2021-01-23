@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A206687 Number of <code>n X 2 0..3</code> arrays with no element equal to another within two positions in the same row or column, and new values 0..3 introduced in row major order.
+ * A206687 Number of n X 2 0..3 arrays with no element equal to another within two positions in the same row or column, and new values 0..3 introduced in row major order.
  * @author Georg Fischer
  */
 public class A206687 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a012.A012856;
 
 /**
- * A202380 Denominators of coefficients in Taylor series expansion of <code>log(cosec(x)*arcsin(x))</code>.
+ * A202380 Denominators of coefficients in Taylor series expansion of log(cosec(x)*arcsin(x)).
  * @author Sean A. Irvine
  */
 public class A202380 extends A012856 {

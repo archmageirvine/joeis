@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305070 <code>a(n) = 378*n^2 - 54*n (n&gt;=1)</code>.
+ * A305070 a(n) = 378*n^2 - 54*n (n&gt;=1).
  * @author Georg Fischer
  */
 public class A305070 extends GeneratingFunctionSequence {

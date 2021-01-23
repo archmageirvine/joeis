@@ -4,7 +4,7 @@ package irvine.oeis.a170;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A170783 <code>a(n) = n^9*(n + 1)/2</code>.
+ * A170783 a(n) = n^9*(n + 1)/2.
  * @author Georg Fischer
  */
 public class A170783 extends GeneratingFunctionSequence {

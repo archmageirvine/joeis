@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003747 Number of perfect matchings (or domino tilings) in <code>K_5 X P_2n</code>.
+ * A003747 Number of perfect matchings (or domino tilings) in K_5 X P_2n.
  * @author Sean A. Irvine
  */
 public class A003747 extends LinearRecurrence {

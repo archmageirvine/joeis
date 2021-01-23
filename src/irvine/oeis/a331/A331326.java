@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331326 <code>a(n) = n!*[x^n] sinh(x/(1 - x))/(1 - x)</code>.
+ * A331326 a(n) = n!*[x^n] sinh(x/(1 - x))/(1 - x).
  * @author Georg Fischer
  */
 public class A331326 extends HolonomicRecurrence {

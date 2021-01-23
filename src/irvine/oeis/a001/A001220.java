@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001220 Wieferich primes: primes p such that <code>p^2</code> divides <code>2^(p-1) - 1</code>.
+ * A001220 Wieferich primes: primes p such that p^2 divides 2^(p-1) - 1.
  * @author Sean A. Irvine
  */
 public class A001220 implements Sequence {

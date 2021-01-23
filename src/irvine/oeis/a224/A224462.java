@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224462 The hyper-Wiener index of Wang's helicene-based dendrimer defined pictorially as <code>DNS_2[n]</code> in the Shabani et al. reference.
+ * A224462 The hyper-Wiener index of Wang's helicene-based dendrimer defined pictorially as DNS_2[n] in the Shabani et al. reference.
  * @author Georg Fischer
  */
 public class A224462 extends GeneratingFunctionSequence {

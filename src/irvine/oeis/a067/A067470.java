@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A067470 Smallest <code>n-digit n-th</code> power.
+ * A067470 Smallest n-digit n-th power.
  * @author Georg Fischer
  */
 public class A067470 extends FiniteSequence {

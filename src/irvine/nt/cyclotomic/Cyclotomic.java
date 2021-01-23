@@ -55,7 +55,7 @@ public final class Cyclotomic {
     if (n == 1) {
       return x.subtract(Z.ONE);
     }
-    if (Z.ZERO.equals(x)) {
+    if (x.isZero()) {
       return Z.ONE;
     }
     if (Z.NEG_ONE.equals(x)) {
@@ -92,7 +92,7 @@ public final class Cyclotomic {
       }
     }
     final Z[] qr = p.divideAndRemainder(q);
-    assert qr[1].equals(Z.ZERO);
+    assert qr[1].isZero();
     return qr[0];
   }
 

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015914 Numbers n such that <code>sigma(n) + 6 = sigma(n + 6)</code>.
+ * A015914 Numbers n such that sigma(n) + 6 = sigma(n + 6).
  * @author Sean A. Irvine
  */
 public class A015914 implements Sequence {

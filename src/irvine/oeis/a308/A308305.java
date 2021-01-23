@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308305 <code>a(n) = s(n,n) + s(n,n-1) + s(n,n-2)</code>, where <code>s(n,k)</code> are the unsigned Stirling numbers of the first kind (see <code>A132393)</code>.
+ * A308305 a(n) = s(n,n) + s(n,n-1) + s(n,n-2), where s(n,k) are the unsigned Stirling numbers of the first kind (see A132393).
  * @author Georg Fischer
  */
 public class A308305 extends HolonomicRecurrence {

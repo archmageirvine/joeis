@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229572 Number of defective 4-colorings of an <code>n X 2 0..3</code> array connected horizontally, vertically, diagonally and antidiagonally with exactly one mistake, and colors introduced in <code>row-major 0..3</code> order.
+ * A229572 Number of defective 4-colorings of an n X 2 0..3 array connected horizontally, vertically, diagonally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..3 order.
  * @author Georg Fischer
  */
 public class A229572 extends GeneratingFunctionSequence {

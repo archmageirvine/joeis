@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A152169 Number of positions that are exactly n moves from the starting position in the <code>2 X 2 X 2</code> Rubik cube puzzle using only one-way quarter moves.
+ * A152169 Number of positions that are exactly n moves from the starting position in the 2 X 2 X 2 Rubik cube puzzle using only one-way quarter moves.
  * @author Georg Fischer
  */
 public class A152169 extends FiniteSequence {

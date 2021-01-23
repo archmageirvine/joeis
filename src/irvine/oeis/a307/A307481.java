@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307481 Numbers that can be expressed as <code>x+2y+z</code> such that x, y, z, <code>x+y, y+z</code>, and <code>x+2y+z</code> are all positive squares.
+ * A307481 Numbers that can be expressed as x+2y+z such that x, y, z, x+y, y+z, and x+2y+z are all positive squares.
  * @author Sean A. Irvine
  */
 public class A307481 implements Sequence {

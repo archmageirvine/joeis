@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A203572 Period length <code>12: 0, 1, 2, 3, 4, 5, 0, 5, 4, 3, 2, 1</code> repeated.
+ * A203572 Period length 12: 0, 1, 2, 3, 4, 5, 0, 5, 4, 3, 2, 1 repeated.
  * @author Georg Fischer
  */
 public class A203572 extends GeneratingFunctionSequence {

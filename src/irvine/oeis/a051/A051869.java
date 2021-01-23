@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051869 <code>17-gonal</code> (or heptadecagonal) numbers: <code>n*(15*n-13)/2</code>.
+ * A051869 17-gonal (or heptadecagonal) numbers: n*(15*n-13)/2.
  * @author Sean A. Irvine
  */
 public class A051869 extends LinearRecurrence {

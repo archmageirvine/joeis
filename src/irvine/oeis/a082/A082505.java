@@ -5,7 +5,7 @@ package irvine.oeis.a082;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082505 <code>a(n) =</code> sum of <code>(n-1)-th</code> row terms of triangle <code>A134059</code>.
+ * A082505 a(n) = sum of (n-1)-th row terms of triangle A134059.
  * @author Georg Fischer
  */
 public class A082505 extends HolonomicRecurrence {

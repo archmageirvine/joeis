@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A107750 If <code>n=0</code> then 0, else smallest number greater than its predecessor and having either more or fewer zeros in its binary representation.
+ * A107750 If n=0 then 0, else smallest number greater than its predecessor and having either more or fewer zeros in its binary representation.
  * @author Georg Fischer
  */
 public class A107750 extends GeneratingFunctionSequence {

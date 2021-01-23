@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223951 Number of <code>4 X n 0..1</code> arrays with diagonals and antidiagonals unimodal and rows nondecreasing.
+ * A223951 Number of 4 X n 0..1 arrays with diagonals and antidiagonals unimodal and rows nondecreasing.
  * @author Georg Fischer
  */
 public class A223951 extends GeneratingFunctionSequence {

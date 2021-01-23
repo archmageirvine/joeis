@@ -114,7 +114,7 @@ public class LucasProver extends AbstractProver {
     // First deal with any helper factors the user supplied.  Since the helper
     // may apply to multiple inputs, verify the factor (but not its primality).
     for (final Z p : mHelperFactors) {
-      while (Z.ZERO.equals(m.mod(p))) {
+      while (m.mod(p).isZero()) {
         factors.add(p);
         m = m.divide(p);
       }
@@ -142,7 +142,7 @@ public class LucasProver extends AbstractProver {
     message("Witness " + witness + " passed test on n-1");
     for (final Z p : factors) {
       final Z[] t = m.divideAndRemainder(p);
-      if (!Z.ZERO.equals(t[1])) {
+      if (!t[1].isZero()) {
         throw new RuntimeException();
       }
       if (Z.ONE.equals(witness.modPow(t[0], n))) {

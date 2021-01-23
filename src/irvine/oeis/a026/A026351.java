@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026351 <code>Floor(n*phi) + 1</code>, where phi <code>= (1+sqrt(5))/2</code>.
+ * A026351 Floor(n*phi) + 1, where phi = (1+sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A026351 implements Sequence {

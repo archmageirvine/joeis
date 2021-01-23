@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172225 Number of ways to place 2 nonattacking wazirs on an <code>n X n</code> board.
+ * A172225 Number of ways to place 2 nonattacking wazirs on an n X n board.
  * @author Sean A. Irvine
  */
 public class A172225 extends LinearRecurrence {

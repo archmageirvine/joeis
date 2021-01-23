@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000027;
 
 /**
- * A023547 Convolution of natural numbers <code>&gt;= 2</code> and <code>A023532</code>.
+ * A023547 Convolution of natural numbers &gt;= 2 and A023532.
  * @author Sean A. Irvine
  */
 public class A023547 extends ConvolutionSequence {

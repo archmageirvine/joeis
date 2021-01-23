@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133218 Indices of triangular numbers <code>(A000217)</code> that are also decagonal <code>(A001107)</code>.
+ * A133218 Indices of triangular numbers (A000217) that are also decagonal (A001107).
  * @author Georg Fischer
  */
 public class A133218 extends LinearRecurrence {

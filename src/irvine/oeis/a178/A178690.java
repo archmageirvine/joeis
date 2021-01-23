@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178690 Expansion of <code>(exp(3*x)-1)*(exp(2*x)-1)*(exp(x)-1)</code>.
+ * A178690 Expansion of (exp(3*x)-1)*(exp(2*x)-1)*(exp(x)-1).
  * @author Georg Fischer
  */
 public class A178690 extends GeneratingFunctionSequence {

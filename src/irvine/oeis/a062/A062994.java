@@ -6,7 +6,7 @@ package irvine.oeis.a062;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A062994 Eighth column of triangle <code>A062993</code> (without leading zeros). <code>A Pfaff-Fuss</code> or 9-Raney sequence.
+ * A062994 Eighth column of triangle A062993 (without leading zeros). A Pfaff-Fuss or 9-Raney sequence.
  * @author Georg Fischer
  */
 public class A062994 extends HolonomicRecurrence {

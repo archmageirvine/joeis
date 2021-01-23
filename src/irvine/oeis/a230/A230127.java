@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A230127 Number of binary strings of length n avoiding "squares" (that is, repeated blocks of the form xx) with <code>|x| &gt; 1</code>.
+ * A230127 Number of binary strings of length n avoiding "squares" (that is, repeated blocks of the form xx) with |x| &gt; 1.
  * @author Georg Fischer
  */
 public class A230127 extends FiniteSequence {

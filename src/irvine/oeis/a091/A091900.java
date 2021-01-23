@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A091900 Decimal expansion of <code>1/(exp(2*Pi/sqrt(5))*(sqrt(5)/(1+(5^(3/4)*(phi-1)^(5/2)-1)^(1/5))-phi))</code>.
+ * A091900 Decimal expansion of 1/(exp(2*Pi/sqrt(5))*(sqrt(5)/(1+(5^(3/4)*(phi-1)^(5/2)-1)^(1/5))-phi)).
  * @author Georg Fischer
  */
 public class A091900 extends DecimalExpansionSequence {

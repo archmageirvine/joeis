@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052462 <code>a(n)</code> is the solution k to <code>Mod[24k,5^n]==1</code>.
+ * A052462 a(n) is the minimal positive integral solution k to 24*k == 1 (mod 5^n).
  * @author Sean A. Irvine
  */
 public class A052462 extends LinearRecurrence {

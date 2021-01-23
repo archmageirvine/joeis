@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A136008 <code>a(n) = n^6 - n^2</code>.
+ * A136008 a(n) = n^6 - n^2.
  * @author Georg Fischer
  */
 public class A136008 extends GeneratingFunctionSequence {

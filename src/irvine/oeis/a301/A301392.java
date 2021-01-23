@@ -6,7 +6,7 @@ package irvine.oeis.a301;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A301392 <code>a(n) = Product_{k=1..L} hypergeom([-n, -n], [1], k)</code> with L <code>= 3</code>.
+ * A301392 a(n) = Product_{k=1..L} hypergeom([-n, -n], [1], k) with L = 3.
  * @author Georg Fischer
  */
 public class A301392 extends HolonomicRecurrence {

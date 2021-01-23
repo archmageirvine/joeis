@@ -6,7 +6,7 @@ package irvine.oeis.a294;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A294983 Number of compositions (ordered partitions) of 1 into exactly <code>4n+1</code> powers of <code>1/(n+1)</code>.
+ * A294983 Number of compositions (ordered partitions) of 1 into exactly 4n+1 powers of 1/(n+1).
  * @author Georg Fischer
  */
 public class A294983 extends HolonomicRecurrence {

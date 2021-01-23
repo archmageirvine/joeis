@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092236 <code>(3^n + 2*3^(n/2)*cos(n*Pi/6))/3</code>.
+ * A092236 a(n) = (3^n + 2*3^(n/2)*cos(n*Pi/6))/3.
  * @author Georg Fischer
  */
 public class A092236 extends GeneratingFunctionSequence {

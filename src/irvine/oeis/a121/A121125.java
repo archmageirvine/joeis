@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121125 Unbranched <code>a-4-catapolynonagons</code> (see Brunvoll reference for precise definition).
+ * A121125 Unbranched a-4-catapolynonagons (see Brunvoll reference for precise definition).
  * @author Georg Fischer
  */
 public class A121125 extends HolonomicRecurrence {

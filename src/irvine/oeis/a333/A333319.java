@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333319 <code>a(n)</code> is the number of subsets of <code>{1..n}</code> that contain exactly 3 odd and 1 even numbers.
+ * A333319 a(n) is the number of subsets of {1..n} that contain exactly 3 odd and 1 even numbers.
  * @author Georg Fischer
  */
 public class A333319 extends GeneratingFunctionSequence {

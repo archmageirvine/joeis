@@ -5,7 +5,7 @@ package irvine.oeis.a062;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A062157 <code>a(n) = 0^n-(-1)^n</code>.
+ * A062157 a(n) = 0^n-(-1)^n.
  * @author Georg Fischer
  */
 public class A062157 extends HolonomicRecurrence {

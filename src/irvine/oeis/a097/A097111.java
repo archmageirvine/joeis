@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097111 Expansion of <code>(1 + 3x - 2x^2 - 12x^3)/(1 - 9x^2 + 20x^4)</code>.
+ * A097111 Expansion of (1 + 3x - 2x^2 - 12x^3)/(1 - 9x^2 + 20x^4).
  * @author Sean A. Irvine
  */
 public class A097111 extends LinearRecurrence {

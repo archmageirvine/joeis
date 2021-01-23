@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A327888 Orders of cubic <code>(i.e.</code>, trivalent, <code>3-regular) distance-regular</code> graphs.
+ * A327888 Orders of cubic (i.e., trivalent, 3-regular) distance-regular graphs.
  * @author Georg Fischer
  */
 public class A327888 extends FiniteSequence {

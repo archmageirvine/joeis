@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180967 Number of <code>n-game win/loss</code> series that contain at least one dead game.
+ * A180967 Number of n-game win/loss series that contain at least one dead game.
  * @author Georg Fischer
  */
 public class A180967 extends HolonomicRecurrence {

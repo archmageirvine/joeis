@@ -220,7 +220,7 @@ public class DummyGroupTest extends TestCase {
   }
 
   public void testRandom() {
-    final Group<?> g = GroupFactory.createGroup("C9:C3"); // order 27
+    final Group<?> g = GroupFactory.createGroup("He3"); // order 27
     final Random r = new Random(42);
     final HashSet<Object> h = new HashSet<>();
     for (int k = 0; k < 200; ++k) {

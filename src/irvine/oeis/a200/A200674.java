@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200674 Eccentricity of Tower of Hanoi graph <code>H_n^{3}</code> (divided by <code>3)</code>.
+ * A200674 Eccentricity of Tower of Hanoi graph H_n^{3} (divided by 3).
  * @author Georg Fischer
  */
 public class A200674 extends GeneratingFunctionSequence {

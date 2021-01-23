@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026352 <code>a(n) = floor(n*tau)+n+1</code>.
+ * A026352 a(n) = floor(n*tau)+n+1.
  * @author Sean A. Irvine
  */
 public class A026352 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A094676 <code>a(n) =</code> least number m such that the quotient <code>m/n</code> is obtained merely by shifting the leftmost digit of m to the right end and the second digit of m is not zero.
+ * A094676 a(n) = least number m such that the quotient m/n is obtained merely by shifting the leftmost digit of m to the right end and the second digit of m is not zero.
  * @author Georg Fischer
  */
 public class A094676 extends FiniteSequence {

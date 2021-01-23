@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321013 <code>a(n) =</code> how many of <code>{6,7,8}</code> divide <code>n</code>.
+ * A321013 a(n) = how many of {6,7,8} divide n.
  * @author Georg Fischer
  */
 public class A321013 extends GeneratingFunctionSequence {

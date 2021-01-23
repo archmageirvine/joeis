@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305265 <code>a(n) = 12*2^n + 62</code>.
+ * A305265 a(n) = 12*2^n + 62.
  * @author Georg Fischer
  */
 public class A305265 extends GeneratingFunctionSequence {

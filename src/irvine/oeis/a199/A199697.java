@@ -6,7 +6,7 @@ package irvine.oeis.a199;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A199697 Number of -1..1 arrays <code>x(0..n-1)</code> of n elements with zero sum and no two neighbors equal.
+ * A199697 Number of -1..1 arrays x(0..n-1) of n elements with zero sum and no two neighbors equal.
  * @author Georg Fischer
  */
 public class A199697 extends HolonomicRecurrence {

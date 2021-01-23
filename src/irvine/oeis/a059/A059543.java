@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059543 Beatty sequence for <code>log(3)</code>.
+ * A059543 Beatty sequence for log(3).
  * @author Sean A. Irvine
  */
 public class A059543 implements Sequence {

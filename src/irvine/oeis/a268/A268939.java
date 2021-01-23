@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A268939 Number of <code>length-n 0..3</code> arrays with no repeated value unequal to the previous repeated value plus one <code>mod 3+1</code>.
+ * A268939 Number of length-n 0..3 arrays with no repeated value unequal to the previous repeated value plus one mod 3+1.
  * @author Georg Fischer
  */
 public class A268939 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321986 Number of integer pairs <code>(x,y)</code> with <code>x+y &lt; 3*n/4, x-y &lt; 3*n/4</code> and <code>-x/2 &lt; y &lt; 2*x</code>.
+ * A321986 Number of integer pairs (x,y) with x+y &lt; 3*n/4, x-y &lt; 3*n/4 and -x/2 &lt; y &lt; 2*x.
  * @author Georg Fischer
  */
 public class A321986 extends GeneratingFunctionSequence {

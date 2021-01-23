@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141044 Two <code>2</code>'s followed by all <code>1</code>'s.
+ * A141044 Two 2's followed by all 1's.
  * @author Georg Fischer
  */
 public class A141044 extends GeneratingFunctionSequence {

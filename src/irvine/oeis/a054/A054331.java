@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054331 One eighth of eighth unsigned column of Lanczos' triangle <code>A053125</code>.
+ * A054331 One eighth of eighth unsigned column of Lanczos' triangle A053125.
  * @author Georg Fischer
  */
 public class A054331 extends GeneratingFunctionSequence {

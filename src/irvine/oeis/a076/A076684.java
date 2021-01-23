@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A076684 Odd terms in <code>A027941</code>.
+ * A076684 Odd terms in A027941.
  * @author Georg Fischer
  */
 public class A076684 extends GeneratingFunctionSequence {

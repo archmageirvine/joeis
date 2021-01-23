@@ -6,7 +6,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114253 <code>a(n) = C(5+2*n,5+n)*C(10+2*n,0+n)</code>.
+ * A114253 a(n) = C(5+2*n,5+n)*C(10+2*n,0+n).
  * @author Georg Fischer
  */
 public class A114253 extends HolonomicRecurrence {

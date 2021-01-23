@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
 /**
- * A025143 Unique sequence a such that <code>a(1) = 2</code> and <code>r(r(a)) = a != r(a)</code>, where for any sequence s of <code>1</code>'s and <code>2's, r(s(n) :=</code> length of n-th run of same symbols in s; <code>r(a)</code> is sequence <code>A025142</code>.
+ * A025143 Unique sequence a such that a(1) = 2 and r(r(a)) = a != r(a), where for any sequence s of 1's and 2's, r(s(n) := length of n-th run of same symbols in s; r(a) is sequence A025142.
  * @author Sean A. Irvine
  */
 public class A025143 extends A025142 {

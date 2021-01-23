@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306942 Expansion of <code>1/((1 - x)^9 + x^9)</code>.
+ * A306942 Expansion of 1/((1 - x)^9 + x^9).
  * @author Georg Fischer
  */
 public class A306942 extends HolonomicRecurrence {

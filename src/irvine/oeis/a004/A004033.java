@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004033 Theta series of lattice <code>A_2</code> tensor <code>E_8</code> (dimension 16, det. 6561, min. norm <code>4)</code>. Also theta series of Eisenstein version of <code>E_8</code> lattice.
+ * A004033 Theta series of lattice A_2 tensor E_8 (dimension 16, det. 6561, min. norm 4). Also theta series of Eisenstein version of E_8 lattice.
  * @author Sean A. Irvine
  */
 public class A004033 implements Sequence {

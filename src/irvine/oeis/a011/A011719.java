@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.LinearFeedbackShiftRegisterSequence;
 
 /**
- * A011719 A binary <code>m-sequence</code>: expansion of reciprocal of <code>x^8+x^5+x^3+x+1</code>.
+ * A011719 A binary m-sequence: expansion of reciprocal of x^8+x^5+x^3+x+1.
  * @author Sean A. Irvine
  */
 public class A011719 extends LinearFeedbackShiftRegisterSequence {

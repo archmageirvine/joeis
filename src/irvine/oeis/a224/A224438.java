@@ -5,7 +5,7 @@ package irvine.oeis.a224;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A224438 The hyper-Wiener index of the nanostar dendrimer <code>NS_1[n]</code>, defined pictorially in the A. R. Ashrafi et al. reference.
+ * A224438 The hyper-Wiener index of the nanostar dendrimer NS_1[n], defined pictorially in the A. R. Ashrafi et al. reference.
  * @author Georg Fischer
  */
 public class A224438 extends HolonomicRecurrence {

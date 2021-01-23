@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082587 G.f.: <code>(3+x+x^2+2*x^3)/(1-x^2-x^4)</code>.
+ * A082587 G.f.: (3+x+x^2+2*x^3)/(1-x^2-x^4).
  * @author Sean A. Irvine
  */
 public class A082587 extends LinearRecurrence {

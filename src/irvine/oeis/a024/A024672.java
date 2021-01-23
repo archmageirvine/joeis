@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024672 Positions of odd numbers in <code>A024670</code> (distinct sums of cubes of distinct positive integers).
+ * A024672 Positions of odd numbers in A024670 (distinct sums of cubes of distinct positive integers).
  * @author Sean A. Irvine
  */
 public class A024672 extends A024670 {

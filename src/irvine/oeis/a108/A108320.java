@@ -5,13 +5,13 @@ package irvine.oeis.a108;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A108320 Numbers n such that <code>609 * 10^n - 1</code> is prime.
+ * A108320 Numbers n such that 609 * 10^n - 1 is prime.
  * @author Georg Fischer
  */
 public class A108320 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A108320() {
-    super(1, 1, 609, 10, -1, 0);
+    super(1, 1, 609, 10, -1);
   }
 }

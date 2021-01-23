@@ -6,7 +6,7 @@ package irvine.oeis.a217;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A217333 G.f.: <code>exp( Sum_{n&gt;=1} x^n/n * Sum_{k=0..n} binomial(n,k)^2 * x^k/(1-x)^k )</code>.
+ * A217333 G.f.: exp( Sum_{n&gt;=1} x^n/n * Sum_{k=0..n} binomial(n,k)^2 * x^k/(1-x)^k ).
  * @author Georg Fischer
  */
 public class A217333 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008367 Composite but smallest prime factor <code>&gt;= 17</code>.
+ * A008367 Composite but smallest prime factor &gt;= 17.
  * @author Sean A. Irvine
  */
 public class A008367 implements Sequence {

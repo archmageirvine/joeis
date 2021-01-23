@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322745 <code>a(n) = n * (16*n^2+20*n+5)^2</code>.
+ * A322745 a(n) = n * (16*n^2+20*n+5)^2.
  * @author Georg Fischer
  */
 public class A322745 extends GeneratingFunctionSequence {

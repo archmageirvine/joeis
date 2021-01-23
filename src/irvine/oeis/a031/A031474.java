@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031474 Numbers n which in base 5 has one fewer <code>0</code>'s than <code>4</code>'s.
+ * A031474 Numbers n which in base 5 has one fewer 0's than 4's.
  * @author Sean A. Irvine
  */
 public class A031474 extends A031452 {

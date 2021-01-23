@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025205 <code>a(n) = floor(Sum_{k=2..n} log(k)^2)</code>.
+ * A025205 a(n) = floor(Sum_{k=2..n} log(k)^2).
  * @author Sean A. Irvine
  */
 public class A025205 implements Sequence {

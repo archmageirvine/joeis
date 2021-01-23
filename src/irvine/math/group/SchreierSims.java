@@ -74,7 +74,7 @@ public final class SchreierSims {
    * specified permutation does not  belong to group and produced remainder is a unique generator that should be
    * placed at {@code mTerminationLevel} in specified BSGS in order to extend group such that it will contain
    * specified permutation.
-   * <p/>
+   * <p>
    * The algorithm is a straightforward implementation of STRIP described in Sec. 4.4.1 of <b>[Holt05]</b>.
    * @param bsgs base strong generating set
    * @param permutation the permutation
@@ -272,7 +272,6 @@ public final class SchreierSims {
    * schreierSimsAlgorithm((ArrayList) BSGSCandidate);
    * return asBSGSList(BSGSCandidate);
    * </code></pre>
-   * </p>
    * @param generators a set of group generators
    * @return BSGS represented as array of its element generators are inconsistent (due to antisymmetries)
    */
@@ -291,7 +290,6 @@ public final class SchreierSims {
    * schreierSimsAlgorithm((ArrayList) BSGSCandidate);
    * return asBSGSList(BSGSCandidate);
    * </code></pre>
-   * </p>
    * @param generators a set of group generators
    * @param degree degree of group used to create Schreier vectors of proper length
    * @return BSGS represented as array of its element
@@ -677,7 +675,7 @@ public final class SchreierSims {
     Z order = Z.ONE;
     final int size = bsgsList.size();
     for (int i = from; i < size; ++i) {
-      order = order.multiply(Z.valueOf(bsgsList.get(i).orbitSize()));
+      order = order.multiply(bsgsList.get(i).orbitSize());
     }
     return order;
   }

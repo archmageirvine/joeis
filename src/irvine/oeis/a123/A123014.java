@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123014 E.g.f.: <code>((1+x)/(1-x))^(1/3)*((1+x+x^2)/(1-x+x^2))^(1/6)</code>.
+ * A123014 E.g.f.: ((1+x)/(1-x))^(1/3)*((1+x+x^2)/(1-x+x^2))^(1/6).
  * @author Georg Fischer
  */
 public class A123014 extends HolonomicRecurrence {

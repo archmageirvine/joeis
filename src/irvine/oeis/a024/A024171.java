@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
 
 /**
- * A024171 Integer part of <code>((4th</code> elementary symmetric function of <code>1,2,...,n)/(1+2+...+n))</code>.
+ * A024171 Integer part of ((4th elementary symmetric function of 1,2,...,n)/(1+2+...+n)).
  * @author Sean A. Irvine
  */
 public class A024171 extends A000217 {

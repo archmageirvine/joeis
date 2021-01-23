@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304205 Numbers k such that <code>24*k + 6</code> is congruent to <code>0 (mod 49)</code>.
+ * A304205 Numbers k such that 24*k + 6 is congruent to 0 (mod 49).
  * @author Georg Fischer
  */
 public class A304205 extends GeneratingFunctionSequence {

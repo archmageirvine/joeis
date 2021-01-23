@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019695 Decimal expansion of <code>2*Pi/7</code>.
+ * A019695 Decimal expansion of 2*Pi/7.
  * @author Sean A. Irvine
  */
 public class A019695 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.TAU.divide(CR.valueOf(7));
+  private static final CR N = CR.TAU.divide(CR.SEVEN);
 
   @Override
   protected CR getCR() {

@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321012 Trajectory of 596 under repeated application of the map k <code>-&gt; A320486(k^2)</code>.
+ * A321012 Trajectory of 596 under repeated application of the map k -&gt; A320486(k^2).
  * @author Georg Fischer
  */
 public class A321012 extends GeneratingFunctionSequence {

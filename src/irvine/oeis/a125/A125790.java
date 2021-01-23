@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A125790 Rectangular table where column k equals row sums of matrix power <code>A078121^k</code>, read by antidiagonals.
+ * A125790 Rectangular table where column k equals row sums of matrix power A078121^k, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A125790 extends MemoryFunction2<Long, Z> implements Sequence {

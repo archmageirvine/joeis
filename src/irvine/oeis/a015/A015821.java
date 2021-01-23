@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015821 Numbers k such that <code>phi(k + 5) | sigma(k)</code>.
+ * A015821 Numbers k such that phi(k + 5) | sigma(k).
  * @author Sean A. Irvine
  */
 public class A015821 implements Sequence {
@@ -27,7 +27,7 @@ public class A015821 implements Sequence {
       mFactorSequenceC = mFactorSequenceD;
       mFactorSequenceD = mFactorSequenceE;
       mFactorSequenceE = Cheetah.factor(++mN);
-      if (sigma.mod(mFactorSequenceE.phi()).equals(Z.ZERO)) {
+      if (sigma.mod(mFactorSequenceE.phi()).isZero()) {
         return Z.valueOf(mN - 5);
       }
     }

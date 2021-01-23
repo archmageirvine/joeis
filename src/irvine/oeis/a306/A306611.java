@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306611 The middle coefficient in the minimal polynomial for <code>(2*cos(Pi/15))^n</code>.
+ * A306611 The middle coefficient in the minimal polynomial for (2*cos(Pi/15))^n.
  * @author Georg Fischer
  */
 public class A306611 extends HolonomicRecurrence {

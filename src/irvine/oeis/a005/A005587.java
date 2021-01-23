@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005587 <code>a(n) = n*(n+5)*(n+6)*(n+7)/24</code>.
+ * A005587 a(n) = n*(n+5)*(n+6)*(n+7)/24.
  * @author Sean A. Irvine
  */
 public class A005587 implements Sequence {

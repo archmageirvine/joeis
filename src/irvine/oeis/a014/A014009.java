@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a020.A020730;
 
 /**
- * A014009 First differences of Shallit sequence <code>S(3,7) (A020730)</code>.
+ * A014009 First differences of Shallit sequence S(3,7) (A020730).
  * @author Sean A. Irvine
  */
 public class A014009 extends DifferenceSequence {

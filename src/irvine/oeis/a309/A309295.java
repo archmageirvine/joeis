@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309295 <code>(1/3)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by three.
+ * A309295 (1/3) times the sum of the elements of all subsets of [n] whose sum is divisible by three.
  * @author Georg Fischer
  */
 public class A309295 extends HolonomicRecurrence {

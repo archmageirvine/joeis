@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098208 4th powers of <code>A033175(n)</code> near repdigit numbers.
+ * A098208 4th powers of A033175(n) near repdigit numbers.
  * @author Georg Fischer
  */
 public class A098208 extends HolonomicRecurrence {

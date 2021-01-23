@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A039667 Zeroless pandigital sums: n such that <code>n+x=y</code> with <code>x=2n</code> and <code>y=3n</code>.
+ * A039667 Zeroless pandigital sums: n such that n+x=y with x=2n and y=3n.
  * @author Georg Fischer
  */
 public class A039667 extends FiniteSequence {

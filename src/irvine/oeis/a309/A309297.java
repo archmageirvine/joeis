@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309297 <code>(1/5)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by five.
+ * A309297 (1/5) times the sum of the elements of all subsets of [n] whose sum is divisible by five.
  * @author Georg Fischer
  */
 public class A309297 extends HolonomicRecurrence {

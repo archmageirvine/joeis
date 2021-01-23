@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A093064 Decimal expansion of <code>(4 + 3*log(3))/20</code>.
+ * A093064 Decimal expansion of (4 + 3*log(3))/20.
  * @author Georg Fischer
  */
 public class A093064 extends DecimalExpansionSequence {

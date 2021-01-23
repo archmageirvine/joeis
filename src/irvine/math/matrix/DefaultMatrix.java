@@ -14,8 +14,8 @@ import irvine.util.Pair;
  */
 public class DefaultMatrix<E> extends AbstractMatrix<E> {
 
-  private final long mRows;
-  private final long mCols;
+  protected long mRows;
+  protected long mCols;
   private final E mZero;
   private final HashMap<Pair<Long, Long>, E> mMatrix = new HashMap<>();
 
@@ -132,6 +132,24 @@ public class DefaultMatrix<E> extends AbstractMatrix<E> {
   @Override
   public long cols() {
     return mCols;
+  }
+
+  /**
+   * Set the number of rows.  This should be used with care and probably
+   * only works for increasing the number of rows.
+   * @param rows new number of rows.
+   */
+  public void setRows(final long rows) {
+    mRows = rows;
+  }
+
+  /**
+   * Set the number of columns.  This should be used with care and probably
+   * only works for increasing the number of columns.
+   * @param cols new number of columns.
+   */
+  public void setCols(final long cols) {
+    mCols = cols;
   }
 
   private void checkDiagonal() {

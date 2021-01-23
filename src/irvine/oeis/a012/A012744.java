@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012744 <code>sinh(arctanh(x)*cos(x))=x+504/7!*x^7+24384/9!*x^9+2375296/11!*x^11..</code>.
+ * A012744 sinh(arctanh(x)*cos(x))=x+504/7!*x^7+24384/9!*x^9+2375296/11!*x^11...
  * @author Sean A. Irvine
  */
 public class A012744 implements Sequence {

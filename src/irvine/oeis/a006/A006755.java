@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006755 The generalized Conway-Guy sequence <code>w^{1}</code>.
+ * A006755 The generalized Conway-Guy sequence w^{1}.
  * @author Sean A. Irvine
  */
 public class A006755 extends MemorySequence {

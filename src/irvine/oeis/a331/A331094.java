@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A331094 Decimal expansion of <code>Pi^Pi - e^e</code>.
+ * A331094 Decimal expansion of Pi^Pi - e^e.
  * @author Georg Fischer
  */
 public class A331094 extends DecimalExpansionSequence {

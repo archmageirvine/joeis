@@ -6,7 +6,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048990 Catalan numbers with even index <code>(A000108(2*n), n &gt;= 0): a(n) = binomial(4*n, 2*n)/(2*n+1)</code>.
+ * A048990 Catalan numbers with even index (A000108(2*n), n &gt;= 0): a(n) = binomial(4*n, 2*n)/(2*n+1).
  * @author Georg Fischer
  */
 public class A048990 extends HolonomicRecurrence {

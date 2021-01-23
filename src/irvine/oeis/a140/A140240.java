@@ -5,13 +5,13 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A140240 Decimal expansion of <code>arccos(7/8)</code>.
+ * A140240 Decimal expansion of arccos(7/8).
  * @author Sean A. Irvine
  */
 public class A140240 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  private static final CR N = REALS.acos(CR.valueOf(7).divide(CR.valueOf(8)));
+  private static final CR N = REALS.acos(CR.SEVEN.divide(CR.EIGHT));
 
   @Override
   protected CR getCR() {

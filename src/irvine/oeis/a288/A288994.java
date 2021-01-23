@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288994 <code>a(n) = n*(n+3)</code> when n is congruent to 0 or <code>3 (mod 4)</code>, and <code>n*(n+3)/2</code> otherwise.
+ * A288994 a(n) = n*(n+3) when n is congruent to 0 or 3 (mod 4), and n*(n+3)/2 otherwise.
  * @author Sean A. Irvine
  */
 public class A288994 extends LinearRecurrence {

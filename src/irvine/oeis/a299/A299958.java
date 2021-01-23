@@ -6,7 +6,7 @@ package irvine.oeis.a299;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A299958 Expansion of root of <code>z^5 + 25*x*z - 1</code>.
+ * A299958 Expansion of root of z^5 + 25*x*z - 1.
  * @author Georg Fischer
  */
 public class A299958 extends HolonomicRecurrence {

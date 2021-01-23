@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A000511 Number of n-step spiral self-avoiding walks on hexagonal lattice, where at each step one may continue in same direction or make turn of <code>2*Pi/3</code> counterclockwise.
+ * A000511 Number of n-step spiral self-avoiding walks on hexagonal lattice, where at each step one may continue in same direction or make turn of 2*Pi/3 counterclockwise.
  * @author Sean A. Irvine
  */
 public class A000511 implements Sequence {

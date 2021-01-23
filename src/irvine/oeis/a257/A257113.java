@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A257113 <code>a(1) = 2, a(2) = 3</code>; thereafter <code>a(n)</code> is the sum of all the previous terms.
+ * A257113 a(1) = 2, a(2) = 3; thereafter a(n) is the sum of all the previous terms.
  * @author Georg Fischer
  */
 public class A257113 extends GeneratingFunctionSequence {

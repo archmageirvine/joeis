@@ -1,16 +1,15 @@
 package irvine.oeis.a008;
 
-import irvine.math.z.Z;
-import irvine.oeis.AbstractAliquotSequence;
+import irvine.oeis.AliquotSequence;
 
 /**
  * A008891 Aliquot sequence starting at 180.
  * @author Sean A. Irvine
  */
-public class A008891 extends AbstractAliquotSequence {
+public class A008891 extends AliquotSequence {
 
-  @Override
-  protected Z start() {
-    return Z.valueOf(180);
+  /** Construct the sequence. */
+  public A008891() {
+    super(180);
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A019470 Numbers n such that n divides <code>binomial(2*n-4, n-2)</code>.
+ * A019470 Numbers n such that n divides binomial(2*n-4, n-2).
  * @author Sean A. Irvine
  */
 public class A019470 extends ComplementSequence {

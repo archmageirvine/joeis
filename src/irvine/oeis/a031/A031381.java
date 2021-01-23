@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031381 <code>a(n) = prime(7*n - 2)</code>.
+ * A031381 a(n) = prime(7*n - 2).
  * @author Sean A. Irvine
  */
 public class A031381 extends A000040 {

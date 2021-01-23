@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007702 <code>a(n) = prime(n)*...*prime(m)</code>, the least product of consecutive primes which is <code>non-deficient</code>.
+ * A007702 a(n) = prime(n)*...*prime(m), the least product of consecutive primes which is non-deficient.
  * @author Sean A. Irvine
  */
 public class A007702 implements Sequence {

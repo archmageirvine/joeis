@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A205163 Number of <code>(n+1) X 2 0..3</code> arrays with every <code>2 X 2</code> subblock having unequal diagonal elements or unequal antidiagonal elements, and new values 0..3 introduced in row major order.
+ * A205163 Number of (n+1) X 2 0..3 arrays with every 2 X 2 subblock having unequal diagonal elements or unequal antidiagonal elements, and new values 0..3 introduced in row major order.
  * @author Georg Fischer
  */
 public class A205163 extends GeneratingFunctionSequence {

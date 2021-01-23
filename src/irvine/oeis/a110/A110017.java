@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A110017 Number of games that can be played with a set of <code>4n</code> cards.
+ * A110017 Number of games that can be played with a set of 4n cards.
  * @author Georg Fischer
  */
 public class A110017 extends FiniteSequence {

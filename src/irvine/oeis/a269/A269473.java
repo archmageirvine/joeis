@@ -5,7 +5,7 @@ package irvine.oeis.a269;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A269473 <code>a(n)</code> is the number of rooted 2n-face triangulations in an orientable surface of genus 1.
+ * A269473 a(n) is the number of rooted 2n-face triangulations in an orientable surface of genus 1.
  * @author Georg Fischer
  */
 public class A269473 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a298;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A298197 Number of Eulerian cycles in the graph <code>C_4 X C_n</code>.
+ * A298197 Number of Eulerian cycles in the graph C_4 X C_n.
  * @author Georg Fischer
  */
 public class A298197 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a153;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A153026 <code>a(1)=0, a(n) = n^3 - a(n-1)</code>.
+ * A153026 a(1)=0, a(n) = n^3 - a(n-1).
  * @author Georg Fischer
  */
 public class A153026 extends GeneratingFunctionSequence {

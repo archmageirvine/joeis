@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267604 Decimal representation of the middle column of the "Rule <code>175"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A267604 Decimal representation of the middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267604 extends GeneratingFunctionSequence {

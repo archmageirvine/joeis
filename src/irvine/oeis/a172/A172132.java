@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172132 Number of ways to place 2 nonattacking knights on an <code>n X n</code> board.
+ * A172132 Number of ways to place 2 nonattacking knights on an n X n board.
  * @author Sean A. Irvine
  */
 public class A172132 extends LinearRecurrence {

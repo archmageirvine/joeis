@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050832 Numbers k such that <code>161*2^k-1</code> is prime.
+ * A050832 Numbers k such that 161*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050832 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050832() {
-    super(1, 2, 161, 2, -1, 0);
+    super(1, 2, 161, 2, -1);
   }
 }

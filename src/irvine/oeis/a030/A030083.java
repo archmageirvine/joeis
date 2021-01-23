@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030083 Primes such that digits of <code>p^2</code> appear in p.
+ * A030083 Primes such that digits of p^2 appear in p.
  * @author Sean A. Irvine
  */
 public class A030083 extends A000040 {

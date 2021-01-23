@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020645 Least positive integer k for which <code>4^n</code> divides <code>k!</code>.
+ * A020645 Least positive integer k for which 4^n divides k!.
  * @author Sean A. Irvine
  */
 public class A020645 implements Sequence {
@@ -21,7 +21,7 @@ public class A020645 implements Sequence {
     }
     while (mM < mN) {
       mF = mF.multiply(++mR);
-      while (Z.ZERO.equals(mF.and(Z.THREE))) {
+      while (mF.and(Z.THREE).isZero()) {
         mF = mF.shiftRight(2);
         ++mM;
       }

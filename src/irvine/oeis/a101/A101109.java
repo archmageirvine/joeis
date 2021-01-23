@@ -6,7 +6,7 @@ package irvine.oeis.a101;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A101109 Number of sets of lists (sequences) of n labeled elements with <code>k=3</code> elements per list.
+ * A101109 Number of sets of lists (sequences) of n labeled elements with k=3 elements per list.
  * @author Georg Fischer
  */
 public class A101109 extends HolonomicRecurrence {

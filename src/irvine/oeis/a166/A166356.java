@@ -6,7 +6,7 @@ package irvine.oeis.a166;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A166356 Expansion of e.g.f. <code>1 + x*arctanh(x)</code>, even powers only.
+ * A166356 Expansion of e.g.f. 1 + x*arctanh(x), even powers only.
  * @author Georg Fischer
  */
 public class A166356 extends HolonomicRecurrence {

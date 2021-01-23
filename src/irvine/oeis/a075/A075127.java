@@ -4,7 +4,7 @@ package irvine.oeis.a075;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A075127 Safe perfect powers: perfect powers n such that <code>(n-1)/2</code> is also a perfect power.
+ * A075127 Safe perfect powers: perfect powers n such that (n-1)/2 is also a perfect power.
  * @author Georg Fischer
  */
 public class A075127 extends GeneratingFunctionSequence {

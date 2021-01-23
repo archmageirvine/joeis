@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304378 <code>a(n) = 4*(n - 1)*(16*n - 23)</code> for <code>n &gt;= 1</code>.
+ * A304378 a(n) = 4*(n - 1)*(16*n - 23) for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A304378 extends GeneratingFunctionSequence {

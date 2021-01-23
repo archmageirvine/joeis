@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A034999 Number of ways to cut a <code>2 X n</code> rectangle into rectangles with integer sides.
+ * A034999 Number of ways to cut a 2 X n rectangle into rectangles with integer sides.
  * @author Georg Fischer
  */
 public class A034999 extends GeneratingFunctionSequence {

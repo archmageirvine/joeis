@@ -16,6 +16,6 @@ public class A018850 extends A003824 {
 
   @Override
   protected int count() {
-    return 3;
+    return 2;
   }
 }

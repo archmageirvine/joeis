@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278137 Maximum number of disjoint subgraphs of the Fibonacci cube <code>Gamma(n)</code> that are isomorphic to the hypercube of dimension k, summed over all k.
+ * A278137 Maximum number of disjoint subgraphs of the Fibonacci cube Gamma(n) that are isomorphic to the hypercube of dimension k, summed over all k.
  * @author Sean A. Irvine
  */
 public class A278137 extends LinearRecurrence {

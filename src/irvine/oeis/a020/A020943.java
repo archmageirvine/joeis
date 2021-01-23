@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A020943 <code>a(2n+1) = |a(2n) - a(2n-1)|, a(2n) = a(n) + a(n-1)</code>.
+ * A020943 a(2n+1) = |a(2n) - a(2n-1)|, a(2n) = a(n) + a(n-1).
  * @author Sean A. Irvine
  */
 public class A020943 extends MemorySequence {

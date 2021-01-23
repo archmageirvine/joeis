@@ -1,9 +1,10 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
+import irvine.oeis.UnimplementedException;
 
 /**
- * A003614 Symmetries in unrooted <code>(1,4)</code> trees on <code>3n-1</code> vertices.
+ * A003614 Symmetries in unrooted (1,4) trees on 3n-1 vertices.
  * @author Sean A. Irvine
  */
 public class A003614 extends A003613 {
@@ -77,7 +78,7 @@ public class A003614 extends A003613 {
 
   @Override
   public Z next() {
-    throw new UnsupportedOperationException();
+    throw new UnimplementedException();
   }
 }
 

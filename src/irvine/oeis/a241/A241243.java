@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A241243 Decimal representation of <code>sin(Pi/17)</code>.
+ * A241243 Decimal representation of sin(Pi/17).
  * @author Georg Fischer
  */
 public class A241243 extends DecimalExpansionSequence {

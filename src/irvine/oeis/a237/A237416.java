@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237416 Smallest multiple of 5 beginning with <code>n</code>.
+ * A237416 Smallest multiple of 5 beginning with n.
  * @author Sean A. Irvine
  */
 public class A237416 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a319;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A319200 <code>a(n) = -(A(n) - A(n-1))</code> where <code>A(n) = A057597(n+1)</code>, for <code>n &gt;= 0</code>.
+ * A319200 a(n) = -(A(n) - A(n-1)) where A(n) = A057597(n+1), for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A319200 extends HolonomicRecurrence {

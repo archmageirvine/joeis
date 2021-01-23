@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203016 Numbers congruent to <code>{1, 2, 3, 4} mod 6</code>, multiplied by 3.
+ * A203016 Numbers congruent to {1, 2, 3, 4} mod 6, multiplied by 3.
  * @author Sean A. Irvine
  */
 public class A203016 extends LinearRecurrence {

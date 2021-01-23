@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022521 <code>a(n) = (n+1)^5 - n^5</code>.
+ * A022521 a(n) = (n+1)^5 - n^5.
  * @author Sean A. Irvine
  */
 public class A022521 extends LinearRecurrence {

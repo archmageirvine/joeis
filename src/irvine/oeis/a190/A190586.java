@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190586 Number of <code>two-sided n-step</code> prudent walks ending on the top side of their box, avoiding two or more consecutive west steps and south steps.
+ * A190586 Number of two-sided n-step prudent walks ending on the top side of their box, avoiding two or more consecutive west steps and south steps.
  * @author Georg Fischer
  */
 public class A190586 extends HolonomicRecurrence {

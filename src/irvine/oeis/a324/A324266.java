@@ -4,7 +4,7 @@ package irvine.oeis.a324;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A324266 <code>a(n) = 2*49^n</code>.
+ * A324266 a(n) = 2*49^n.
  * @author Georg Fischer
  */
 public class A324266 extends GeneratingFunctionSequence {

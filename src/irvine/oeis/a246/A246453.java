@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A246453 Lucas numbers <code>(A000204)</code> of the form <code>n^2 + 2</code>.
+ * A246453 Lucas numbers (A000204) of the form n^2 + 2.
  * @author Georg Fischer
  */
 public class A246453 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223615 Number of <code>n X 3 0..1</code> arrays with rows and columns unimodal.
+ * A223615 Number of n X 3 0..1 arrays with rows and columns unimodal.
  * @author Georg Fischer
  */
 public class A223615 extends GeneratingFunctionSequence {

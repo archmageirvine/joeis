@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030661 Product of next 2 primes after <code>n</code>.
+ * A030661 Product of next 2 primes after n.
  * @author Sean A. Irvine
  */
 public class A030661 implements Sequence {

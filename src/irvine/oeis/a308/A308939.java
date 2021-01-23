@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308939 Expansion of e.g.f. <code>1 / (1 - Sum_{k&gt;=1} (2*k - 1)!!*x^k/k!)</code>.
+ * A308939 Expansion of e.g.f. 1 / (1 - Sum_{k&gt;=1} (2*k - 1)!!*x^k/k!).
  * @author Georg Fischer
  */
 public class A308939 extends HolonomicRecurrence {

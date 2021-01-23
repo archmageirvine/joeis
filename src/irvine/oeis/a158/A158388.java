@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A158388 -1 followed by infinitely many <code>1</code>'s.
+ * A158388 -1 followed by infinitely many 1's.
  * @author Georg Fischer
  */
 public class A158388 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030354 Position of <code>n-th 0</code> in <code>A030353</code>.
+ * A030354 Position of n-th 0 in A030353.
  * @author Sean A. Irvine
  */
 public class A030354 extends A030353 {
@@ -14,7 +14,7 @@ public class A030354 extends A030353 {
   public Z next() {
     while (true) {
       ++mN;
-      if (Z.ZERO.equals(super.next())) {
+      if (super.next().isZero()) {
         return Z.valueOf(mN);
       }
     }

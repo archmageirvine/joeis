@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160787 G.f.: <code>(21+104*x+103*x^2+23*x^3+x^4)/(1-x)^5</code>.
+ * A160787 G.f.: (21+104*x+103*x^2+23*x^3+x^4)/(1-x)^5.
  * @author Georg Fischer
  */
 public class A160787 extends LinearRecurrence {

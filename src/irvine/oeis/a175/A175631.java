@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A175631 <code>a(n) = (n-th</code> pentagonal number) modulo <code>(n-th</code> triangular number).
+ * A175631 a(n) = (n-th pentagonal number) modulo (n-th triangular number).
  * @author Georg Fischer
  */
 public class A175631 extends GeneratingFunctionSequence {

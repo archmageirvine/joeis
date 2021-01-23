@@ -263,11 +263,14 @@ public final class FactorSequence {
    */
   public long bigOmega() {
     long bigOmega = 0;
-    for (final Factor f : mFactors.values()) {
-      if (f.mStatus != PRIME && f.mStatus != PROB_PRIME) {
-        throw new UnsupportedOperationException();
+    for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
+      if (e.getKey().compareTo(Z.ONE) > 0) {
+        final Factor f = e.getValue();
+        if (f.mStatus != PRIME && f.mStatus != PROB_PRIME) {
+          throw new UnsupportedOperationException();
+        }
+        bigOmega += f.mExponent;
       }
-      bigOmega += f.mExponent;
     }
     return bigOmega;
   }
@@ -450,6 +453,15 @@ public final class FactorSequence {
     return sigma0().longValueExact();
   }
 
+  private Z sigmaNeg1() {
+    Z prod = Z.ONE;
+    for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
+      final Z p = f.getKey();
+      prod = prod.multiply(p.pow(f.getValue().mExponent + 1).subtract(p.multiply2()).add(1)).divide(p.subtract(1));
+    }
+    return prod;
+  }
+
   /**
    * Return the sum of the divisors raised to the specified power.
    * @param degree exponent of each divisor
@@ -462,6 +474,8 @@ public final class FactorSequence {
       return sigma0();
     } else if (degree == 1) {
       return sigma();
+    } else if (degree == -1) {
+      return sigmaNeg1();
     }
     if (!isComplete()) {
       throw new UnsupportedOperationException();
@@ -469,7 +483,7 @@ public final class FactorSequence {
     Z prod = Z.ONE;
     for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
       final Z p = f.getKey();
-      prod = prod.multiply(p.pow((f.getValue().mExponent + 1) * degree).subtract(1)).divide(p.pow(degree).subtract(1));
+      prod = prod.multiply(p.pow((f.getValue().mExponent + 1) * (long) degree).subtract(1)).divide(p.pow(degree).subtract(1));
     }
     return prod;
   }
@@ -573,7 +587,7 @@ public final class FactorSequence {
    * @return semiprime status
    */
   public int isSemiprime() {
-    if (mFactors.size() > 2) {
+    if (mFactors.size() > 2 || mFactors.isEmpty()) {
       return NO;
     }
     int e = 0;
@@ -673,7 +687,7 @@ public final class FactorSequence {
    * Return the number of the unitary divisors in this factor sequence.
    * @return number of unitary divisors
    */
-  public long unitarySigma0() {
+  public Z unitarySigma0() {
     if (!isComplete()) {
       throw new UnsupportedOperationException();
     }
@@ -683,7 +697,7 @@ public final class FactorSequence {
       final Z unitary = p.pow(e);
       flatten.add(unitary, FactorSequence.PRIME);
     }
-    return flatten.sigma0AsLong();
+    return flatten.sigma0();
   }
 
   /**

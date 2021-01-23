@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A198148 <code>a(n) = n*(n+2)*(9 - 7*(-1)^n)/16</code>.
+ * A198148 a(n) = n*(n+2)*(9 - 7*(-1)^n)/16.
  * @author Sean A. Irvine
  */
 public class A198148 extends LinearRecurrence {

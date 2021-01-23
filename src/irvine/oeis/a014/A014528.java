@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014528 Neither <code>== 0 (mod 4)</code> nor a power of 3.
+ * A014528 Neither == 0 (mod 4) nor a power of 3.
  * @author Sean A. Irvine
  */
 public class A014528 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059031 Fifth main diagonal of <code>A059026: a(n) = B(n+4,n) = lcm(n+4,n)/(n+4) + lcm(n+4,n)/n - 1</code> for all <code>n &gt;= 1</code>.
+ * A059031 Fifth main diagonal of A059026: a(n) = B(n+4,n) = lcm(n+4,n)/(n+4) + lcm(n+4,n)/n - 1 for all n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A059031 extends LinearRecurrence {

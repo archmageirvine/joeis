@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import jmason.poly.Rot180MidSideCounter;
 
 /**
- * A234010 Free polyominoes with <code>2n</code> squares, having 180-degree rotational symmetry about a square <code>mid-side</code>.
+ * A234010 Free polyominoes with 2n squares, having 180-degree rotational symmetry about a square mid-side.
  * @author jmason
  */
 public class A234010 implements Sequence {

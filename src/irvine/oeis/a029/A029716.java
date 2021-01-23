@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A029716 Partial sums of Kempner numbers <code>A002034</code>.
+ * A029716 Partial sums of Kempner numbers A002034.
  * @author Sean A. Irvine
  */
 public class A029716 extends PartialSumSequence {

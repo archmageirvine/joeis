@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A307672 The right half of a bi-infinite word invariant under the balanced morphism, <code>{0-&gt;501, 1-&gt;210, 2-&gt;123, 3-&gt;432, 4-&gt;345, 5-&gt;054}</code>, starting from axiom <code>a(0)=0</code>.
+ * A307672 The right half of a bi-infinite word invariant under the balanced morphism, {0-&gt;501, 1-&gt;210, 2-&gt;123, 3-&gt;432, 4-&gt;345, 5-&gt;054}, starting from axiom a(0)=0.
  * @author Sean A. Irvine
  */
 public class A307672 implements Sequence {

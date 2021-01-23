@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A078688 Continued fraction expansion of <code>e^(1/4)</code>.
+ * A078688 Continued fraction expansion of e^(1/4).
  * @author Georg Fischer
  */
 public class A078688 extends GeneratingFunctionSequence {

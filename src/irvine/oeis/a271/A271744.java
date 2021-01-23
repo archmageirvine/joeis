@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271744 Number of set partitions of <code>[n]</code> such that 5 is the largest element of the last block.
+ * A271744 Number of set partitions of [n] such that 5 is the largest element of the last block.
  * @author Georg Fischer
  */
 public class A271744 extends LinearRecurrence {

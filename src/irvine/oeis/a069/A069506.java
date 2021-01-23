@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069506 <code>a(1) = 2; a(n) =</code> smallest palindromic number of the form <code>k*a(n-1) + 1</code> with k <code>&gt; 1</code>.
+ * A069506 a(1) = 2; a(n) = smallest palindromic number of the form k*a(n-1) + 1 with k &gt; 1.
  * @author Georg Fischer
  */
 public class A069506 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A126274 Partial sum of hexagonal prism numbers <code>(A005915)</code>.
+ * A126274 Partial sum of A005915.
  * @author Georg Fischer
  */
 public class A126274 extends GeneratingFunctionSequence {

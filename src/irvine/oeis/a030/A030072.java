@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A030072 Numbers n such that <code>n^2</code> is palindromic in base 14.
+ * A030072 Numbers n such that n^2 is palindromic in base 14.
  * @author Sean A. Irvine
  */
 public class A030072 implements Sequence {

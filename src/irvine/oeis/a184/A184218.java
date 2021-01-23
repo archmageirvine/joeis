@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184218 <code>a(n) =</code> largest k such that <code>A000217(n+1) = A000217(n) + (A000217(n) mod k)</code>, or 0 if no such k exists.
+ * A184218 a(n) = largest k such that A000217(n+1) = A000217(n) + (A000217(n) mod k), or 0 if no such k exists.
  * @author Georg Fischer
  */
 public class A184218 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A027206 Numbers n such that <code>(1+i)^n +</code> i is a Gaussian prime.
+ * A027206 Numbers n such that (1+i)^n + i is a Gaussian prime.
  * @author Sean A. Irvine
  */
 public class A027206 extends A027185 {

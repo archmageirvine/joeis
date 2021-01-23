@@ -5,12 +5,12 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011227 Decimal expansion of <code>18th</code> root of 6.
+ * A011227 Decimal expansion of 18th root of 6.
  * @author Sean A. Irvine
  */
 public class A011227 extends DecimalExpansionSequence {
 
-  private static final CR N = ComputableReals.SINGLETON.pow(CR.valueOf(6), CR.valueOf(18).inverse());
+  private static final CR N = ComputableReals.SINGLETON.pow(CR.SIX, CR.valueOf(18).inverse());
 
   @Override
   protected CR getCR() {

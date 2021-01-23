@@ -6,7 +6,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325153 A column of triangle <code>A322220; a(n) = A322220(n,1)</code> for <code>n &gt;= 1</code>.
+ * A325153 A column of triangle A322220; a(n) = A322220(n,1) for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A325153 extends HolonomicRecurrence {

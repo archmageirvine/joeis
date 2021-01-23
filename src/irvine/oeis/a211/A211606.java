@@ -6,7 +6,7 @@ package irvine.oeis.a211;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A211606 Total number of inversions over all involutions of length <code>n</code>.
+ * A211606 Total number of inversions over all involutions of length n.
  * @author Georg Fischer
  */
 public class A211606 extends HolonomicRecurrence {

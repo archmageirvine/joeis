@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180664 Golden Triangle sums: <code>a(n)=a(n-1)+A001654(n+1)</code> with <code>a(0)=0</code>.
+ * A180664 Golden Triangle sums: a(n) = a(n-1) + A001654(n+1) with a(0)=0.
  * @author Sean A. Irvine
  */
 public class A180664 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a130;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A130840 <code>a(n) = floor((1/16)*(16 + 2^n - 8*n + 8*n^2))</code>.
+ * A130840 a(n) = floor((1/16)*(16 + 2^n - 8*n + 8*n^2)).
  * @author Georg Fischer
  */
 public class A130840 extends HolonomicRecurrence {

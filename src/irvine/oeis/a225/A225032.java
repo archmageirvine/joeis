@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A225032 <code>Non-crossing, non-nesting, 6-colored</code> set partitions.
+ * A225032 Non-crossing, non-nesting, 6-colored set partitions.
  * @author Georg Fischer
  */
 public class A225032 extends GeneratingFunctionSequence {

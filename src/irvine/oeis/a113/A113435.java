@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A113435 <code>a(n) = a(n-1) + Sum_{k=0..n/3} a(n-3k)</code> with <code>a(0)=1</code>.
+ * A113435 a(n) = a(n-1) + Sum_{k=0..n/3} a(n-3k) with a(0)=1.
  * @author Georg Fischer
  */
 public class A113435 extends GeneratingFunctionSequence {

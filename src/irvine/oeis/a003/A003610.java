@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A003610 Symmetries in unrooted <code>(1,3)</code> trees on <code>2n</code> vertices.
+ * A003610 Symmetries in unrooted (1,3) trees on 2n vertices.
  * @author Sean A. Irvine
  */
 public class A003610 extends A003609 {

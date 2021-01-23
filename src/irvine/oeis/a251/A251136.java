@@ -4,7 +4,7 @@ package irvine.oeis.a251;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A251136 Number of <code>(n+1) X (7+1) 0..2</code> arrays with no <code>2 X 2</code> subblock having the sum of its diagonal elements greater than the maximum of its antidiagonal elements.
+ * A251136 Number of (n+1) X (7+1) 0..2 arrays with no 2 X 2 subblock having the sum of its diagonal elements greater than the maximum of its antidiagonal elements.
  * @author Georg Fischer
  */
 public class A251136 extends GeneratingFunctionSequence {

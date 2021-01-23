@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002595 Denominators of Taylor series expansion of <code>arcsin(x)</code>. Also arises from <code>arccos(x), arccsc(x), arcsec(x), arcsinh(x)</code>.
+ * A002595 Denominators of Taylor series expansion of arcsin(x). Also arises from arccos(x), arccsc(x), arcsec(x), arcsinh(x).
  * @author Sean A. Irvine
  */
 public class A002595 implements Sequence {

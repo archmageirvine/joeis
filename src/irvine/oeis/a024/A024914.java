@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024914 Numbers k such that <code>10*k - 3</code> is prime.
+ * A024914 Numbers k such that 10*k - 3 is prime.
  * @author Sean A. Irvine
  */
 public class A024914 implements Sequence {

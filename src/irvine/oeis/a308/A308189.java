@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308189 Numbers of the form <code>t_n</code> or <code>t_n + t_{n+1}</code> where <code>{t_n}</code> are the tribonacci numbers <code>A000073</code>.
+ * A308189 Numbers of the form t_n or t_n + t_{n+1} where {t_n} are the tribonacci numbers A000073.
  * @author Georg Fischer
  */
 public class A308189 extends HolonomicRecurrence {

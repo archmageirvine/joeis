@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002189 <code>Pseudo-squares: a(n) =</code> the least nonsquare positive integer which is <code>1 mod 8</code> and is a (nonzero) quadratic residue modulo the first n odd primes.
+ * A002189 Pseudo-squares: a(n) = the least nonsquare positive integer which is 1 mod 8 and is a (nonzero) quadratic residue modulo the first n odd primes.
  * @author Sean A. Irvine
  */
 public class A002189 implements Sequence {

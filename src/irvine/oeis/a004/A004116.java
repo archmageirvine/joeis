@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004116 <code>a(n) = floor((n^2 + 6n - 3)/4)</code>.
+ * A004116 a(n) = floor((n^2 + 6n - 3)/4).
  * @author Sean A. Irvine
  */
 public class A004116 implements Sequence {

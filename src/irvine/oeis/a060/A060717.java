@@ -5,7 +5,7 @@ package irvine.oeis.a060;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A060717 Degrees of irreducible representations of alternating group <code>A_14</code>.
+ * A060717 Degrees of irreducible representations of alternating group A_14.
  * @author Georg Fischer
  */
 public class A060717 extends FiniteSequence {

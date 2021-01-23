@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001789 <code>a(n) = binomial(n,3)*2^(n-3)</code>.
+ * A001789 a(n) = binomial(n,3)*2^(n-3).
  * @author Sean A. Irvine
  */
 public class A001789 implements Sequence {

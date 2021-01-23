@@ -5,7 +5,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322573 G.f. <code>= g(f(x))</code>, where <code>f(x) =</code> g.f. of Fibonacci sequence <code>A000045</code> and <code>g(x) =</code> g.f. of Jacobsthal sequence <code>A001045</code>.
+ * A322573 G.f. = g(f(x)), where f(x) = g.f. of Fibonacci sequence A000045 and g(x) = g.f. of Jacobsthal sequence A001045.
  * @author Georg Fischer
  */
 public class A322573 extends HolonomicRecurrence {

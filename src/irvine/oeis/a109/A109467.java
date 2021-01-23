@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109467 <code>4 X 4</code> analog of <code>A094943</code>.
+ * A109467 4 X 4 analog of A094943.
  * @author Georg Fischer
  */
 public class A109467 extends GeneratingFunctionSequence {

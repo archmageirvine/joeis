@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029902 <code>h(n)</code>, where strategic move on <code>g(n) X 3</code> rectangle in Chomp is <code>(h(n),2)</code>. Conjectured to be complementary to <code>r(n)</code>, see <code>A029905</code>.
+ * A029902 h(n), where strategic move on g(n) X 3 rectangle in Chomp is (h(n),2). Conjectured to be complementary to r(n), see A029905.
  * @author Sean A. Irvine
  */
 public class A029902 extends A029899 {

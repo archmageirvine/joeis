@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A080791 Number of nonleading <code>0</code>'s in binary expansion of <code>n</code>.
+ * A080791 Number of nonleading 0's in binary expansion of n.
  * @author Sean A. Irvine
  */
 public class A080791 implements Sequence {

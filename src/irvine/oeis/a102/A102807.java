@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A102807 <code>a(n)</code> is the square of one plus the number consisting of <code>n 3</code>'s.
+ * A102807 a(n) is the square of one plus the number consisting of n 3's.
  * @author Georg Fischer
  */
 public class A102807 extends GeneratingFunctionSequence {

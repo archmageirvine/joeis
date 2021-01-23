@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024614 Numbers of the form <code>x^2 + xy + y^2</code>, where x and y are positive integers.
+ * A024614 Numbers of the form x^2 + xy + y^2, where x and y are positive integers.
  * @author Sean A. Irvine
  */
 public class A024614 extends A024612 {

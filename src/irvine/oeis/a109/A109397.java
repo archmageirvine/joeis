@@ -5,13 +5,13 @@ package irvine.oeis.a109;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A109397 Numbers n such that <code>22 * 10^n + 1</code> is prime.
+ * A109397 Numbers n such that 22 * 10^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A109397 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A109397() {
-    super(1, 0, 22, 10, +1, 0);
+    super(1, 0, 22, 10, 1);
   }
 }

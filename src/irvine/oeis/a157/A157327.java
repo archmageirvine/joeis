@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A157327 Egyptian fraction expansion for <code>Pi/4 = arctan(1/2) + arctan(1/3)</code> (Hutton <code>1776)</code>.
+ * A157327 Egyptian fraction expansion for Pi/4 = arctan(1/2) + arctan(1/3) (Hutton 1776).
  * @author Georg Fischer
  */
 public class A157327 extends GeneratingFunctionSequence {

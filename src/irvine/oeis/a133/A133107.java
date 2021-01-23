@@ -6,7 +6,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133107 Number of Ferrers diagrams with a single strictly smaller Ferrers puncture with the same orientation removed from the top with <code>half-perimeter = n</code>.
+ * A133107 Number of Ferrers diagrams with a single strictly smaller Ferrers puncture with the same orientation removed from the top with half-perimeter = n.
  * @author Georg Fischer
  */
 public class A133107 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A190357 Decimal expansion of <code>1/4 - 2/Pi^2</code>.
+ * A190357 Decimal expansion of 1/4 - 2/Pi^2.
  * @author Georg Fischer
  */
 public class A190357 extends DecimalExpansionSequence {

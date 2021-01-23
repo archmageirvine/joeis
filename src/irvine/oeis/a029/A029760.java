@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029760 A sum with <code>next-to-central</code> binomial coefficients of even order, Catalan related.
+ * A029760 A sum with next-to-central binomial coefficients of even order, Catalan related.
  * @author Sean A. Irvine
  */
 public class A029760 implements Sequence {

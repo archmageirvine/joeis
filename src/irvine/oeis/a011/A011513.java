@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011513 Decimal expansion of <code>94th</code> root of 94.
+ * A011513 Decimal expansion of 94th root of 94.
  * @author Sean A. Irvine
  */
 public class A011513 extends DecimalExpansionSequence {

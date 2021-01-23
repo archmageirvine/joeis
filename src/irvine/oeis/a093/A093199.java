@@ -6,7 +6,7 @@ package irvine.oeis.a093;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A093199 Number of <code>4 X 4</code> magic squares with line sum <code>n</code>.
+ * A093199 Number of 4 X 4 magic squares with line sum n.
  * @author Georg Fischer
  */
 public class A093199 extends HolonomicRecurrence {

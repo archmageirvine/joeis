@@ -5,13 +5,13 @@ package irvine.oeis.a272;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A272057 Numbers n such that <code>3*4^n - 1</code> is prime.
+ * A272057 Numbers n such that 3*4^n - 1 is prime.
  * @author Georg Fischer
  */
 public class A272057 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A272057() {
-    super(1, 1, 3, 4, -1, 0);
+    super(1, 1, 3, 4, -1);
   }
 }

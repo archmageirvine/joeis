@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004200 Continued fraction for <code>Sum[ 1/3^(2^n),{n,0,Infinity} ]</code>.
+ * A004200 Continued fraction for Sum[ 1/3^(2^n),{n,0,Infinity} ].
  * @author Sean A. Irvine
  */
 public class A004200 extends MemorySequence {

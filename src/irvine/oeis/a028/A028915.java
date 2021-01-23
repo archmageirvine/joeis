@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028915 Take next group of 3 primes, beginning at 7, map final digits to base 4 by <code>1-&gt;0, 3-&gt;1, 7-&gt;3, 9-&gt;2</code>; convert back to decimal.
+ * A028915 Take next group of 3 primes, beginning at 7, map final digits to base 4 by 1-&gt;0, 3-&gt;1, 7-&gt;3, 9-&gt;2; convert back to decimal.
  * @author Sean A. Irvine
  */
 public class A028915 implements Sequence {

@@ -2,9 +2,10 @@ package irvine.oeis.a014;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.UnimplementedException;
 
 /**
- * A014425 From table of maximal epacts <code>e(p)</code> and corresponding primes p, for <code>x_0=2, x_{m+1} = (x_m)^2-1</code>; sequence gives <code>e(p)</code>.
+ * A014425 From table of maximal epacts e(p) and corresponding primes p, for x_0=2, x_{m+1} = (x_m)^2-1; sequence gives e(p).
  * @author Sean A. Irvine
  */
 public class A014425 implements Sequence {
@@ -45,7 +46,7 @@ public class A014425 implements Sequence {
 
   @Override
   public Z next() {
-    throw new UnsupportedOperationException();
+    throw new UnimplementedException();
   }
 }
 

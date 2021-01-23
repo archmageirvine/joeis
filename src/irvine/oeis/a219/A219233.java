@@ -5,7 +5,7 @@ package irvine.oeis.a219;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A219233 Alternating row sums of Riordan triangle <code>A110162</code>.
+ * A219233 Alternating row sums of Riordan triangle A110162.
  * @author Georg Fischer
  */
 public class A219233 extends HolonomicRecurrence {

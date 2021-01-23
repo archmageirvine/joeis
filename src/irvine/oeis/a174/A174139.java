@@ -6,7 +6,7 @@ package irvine.oeis.a174;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A174139 Numbers congruent to <code>{0,1,2,3,4,10,11,12,13,14,20,21,22,23,24} mod 25</code>.
+ * A174139 Numbers congruent to {0,1,2,3,4,10,11,12,13,14,20,21,22,23,24} mod 25.
  * @author Georg Fischer
  */
 public class A174139 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025032 Numbers with an increasing number of <code>non-residues</code> (moduli).
+ * A025032 Numbers with an increasing number of non-residues (moduli).
  * @author Sean A. Irvine
  */
 public class A025032 implements Sequence {

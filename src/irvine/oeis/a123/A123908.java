@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123908 Number of sequences with terms <code>1, 2</code> or 3 summing to n with no three consecutive <code>1</code>'s.
+ * A123908 Number of sequences with terms 1, 2 or 3 summing to n with no three consecutive 1's.
  * @author Georg Fischer
  */
 public class A123908 extends GeneratingFunctionSequence {

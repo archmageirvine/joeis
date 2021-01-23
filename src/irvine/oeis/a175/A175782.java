@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A175782 Expansion of <code>1/(1 - x - x^20 - x^39 + x^40)</code>.
+ * A175782 Expansion of 1/(1 - x - x^20 - x^39 + x^40).
  * @author Georg Fischer
  */
 public class A175782 extends GeneratingFunctionSequence {

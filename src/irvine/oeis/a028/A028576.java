@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028576 <code>a(n) = (1/(4*n)) * Sum_{d|n} mu(n/d) * binomial(2*d, d)^2</code>.
+ * A028576 a(n) = (1/(4*n)) * Sum_{d|n} mu(n/d) * binomial(2*d, d)^2.
  * @author Sean A. Irvine
  */
 public class A028576 implements Sequence {

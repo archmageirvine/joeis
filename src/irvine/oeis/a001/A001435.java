@@ -13,7 +13,7 @@ import irvine.math.Mobius;
 import java.util.ArrayList;
 
 /**
- * A001435 Number of connected graphs with n nodes and <code>n+1</code> edges.
+ * A001435 Number of connected graphs with n nodes and n+1 edges.
  * @author Sean A. Irvine
  */
 public class A001435 extends A001430 {

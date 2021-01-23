@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a259.A259095;
 
 /**
- * A005575 <code>a(n) = A259095(2n,n)</code>.
+ * A005575 a(n) = A259095(2n,n).
  * @author Sean A. Irvine
  */
 public class A005575 extends A259095 {

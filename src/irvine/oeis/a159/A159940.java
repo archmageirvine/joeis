@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A159940 The number of trisubstitution products with composition <code>C_n H_(2n-1) X_2</code> Y.
+ * A159940 The number of trisubstitution products with composition C_n H_(2n-1) X_2 Y.
  * @author Georg Fischer
  */
 public class A159940 extends GeneratingFunctionSequence {

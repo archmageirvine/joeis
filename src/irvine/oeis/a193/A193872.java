@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193872 Even dodecagonal numbers: <code>4*n*(5*n - 2)</code>.
+ * A193872 Even dodecagonal numbers: 4*n*(5*n - 2).
  * @author Sean A. Irvine
  */
 public class A193872 extends LinearRecurrence {

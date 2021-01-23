@@ -6,7 +6,7 @@ package irvine.oeis.a285;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A285237 Number of entries in the ninth cycles of all permutations of <code>[n]</code>.
+ * A285237 Number of entries in the ninth cycles of all permutations of [n].
  * @author Georg Fischer
  */
 public class A285237 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053114 <code>a(n) = ((8*n+9)(!^8))/9</code>, related to <code>A045755 ((8*n+1)(!^8) octo-</code> or <code>8-factorials)</code>.
+ * A053114 a(n) = ((8*n+9)(!^8))/9, related to A045755 ((8*n+1)(!^8) octo- or 8-factorials).
  * @author Georg Fischer
  */
 public class A053114 extends HolonomicRecurrence {

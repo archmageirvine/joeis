@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221619 Number of <code>n X 4</code> arrays with each row a permutation of 1..4 having at least as many downsteps as the preceding row.
+ * A221619 Number of n X 4 arrays with each row a permutation of 1..4 having at least as many downsteps as the preceding row.
  * @author Georg Fischer
  */
 public class A221619 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091770 Poincar&#233; series [or Poincare series] (or Molien series) for <code>H^*(GL_4(F_2))</code>.
+ * A091770 Poincar\u00e9 series [or Poincare series] (or Molien series) for H^*(GL_4(F_2)).
  * @author Georg Fischer
  */
 public class A091770 extends GeneratingFunctionSequence {

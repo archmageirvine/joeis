@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A158525 Number of connected spanning subgraphs and number of forests of the wheel graph <code>W_n</code>.
+ * A158525 Number of connected spanning subgraphs and number of forests of the wheel graph W_n.
  * @author Georg Fischer
  */
 public class A158525 extends GeneratingFunctionSequence {

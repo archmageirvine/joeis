@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050616 Numbers k such that <code>149*2^k-1</code> is prime.
+ * A050616 Numbers k such that 149*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050616 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050616() {
-    super(1, 4, 149, 2, -1, 0);
+    super(1, 4, 149, 2, -1);
   }
 }

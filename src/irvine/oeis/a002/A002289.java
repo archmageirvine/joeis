@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002289 Weight distribution of <code>[ 23,12,7 ]</code> binary perfect Golay code.
+ * A002289 Weight distribution of [ 23,12,7 ] binary perfect Golay code.
  * @author Sean A. Irvine
  */
 public class A002289 extends FiniteSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a160;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A160824 <code>a(1)=1, a(n) =</code> the smallest positive integer such that both <code>a(n)</code> and <code>Sum_{k=1..n} a(k)</code> have the same number of (nonleading) <code>0</code>'s when they are represented in binary.
+ * A160824 a(1)=1, a(n) = the smallest positive integer such that both a(n) and Sum_{k=1..n} a(k) have the same number of (nonleading) 0's when they are represented in binary.
  * @author Georg Fischer
  */
 public class A160824 extends GeneratingFunctionSequence {

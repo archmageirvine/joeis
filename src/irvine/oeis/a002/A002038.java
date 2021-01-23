@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002038 Numbers dividing <code>A002037(i)</code> and larger than <code>A002037(i-1)</code>, for some <code>i&gt;0</code>.
+ * A002038 Numbers dividing A002037(i) and larger than A002037(i-1), for some i&gt;0.
  * @author Sean A. Irvine
  */
 public class A002038 implements Sequence {
@@ -28,7 +28,7 @@ public class A002038 implements Sequence {
           mProd = mProd.multiply(p);
         }
       }
-      if (Z.ZERO.equals(mProd.mod(mA))) {
+      if (mProd.mod(mA).isZero()) {
         return mA;
       }
     }

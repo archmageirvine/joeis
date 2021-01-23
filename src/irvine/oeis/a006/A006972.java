@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006972 Lucas-Carmichael numbers: squarefree composite numbers n such that p <code>| n =&gt; p+1 | n+1</code>.
+ * A006972 Lucas-Carmichael numbers: squarefree composite numbers n such that p | n =&gt; p+1 | n+1.
  * @author Sean A. Irvine
  */
 public class A006972 implements Sequence {
@@ -22,7 +22,7 @@ public class A006972 implements Sequence {
         boolean ok = true;
         final FactorSequence fs = Cheetah.factor(mN);
         for (final Z p : fs.toZArray()) {
-          if (fs.getExponent(p) > 1 || !Z.ZERO.equals(m.mod(p.add(1)))) {
+          if (fs.getExponent(p) > 1 || !m.mod(p.add(1)).isZero()) {
             ok = false;
             break;
           }

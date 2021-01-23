@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007560 Number of planted identity trees where <code>non-root, non-leaf</code> nodes an even distance from root are of degree 2.
+ * A007560 Number of planted identity trees where non-root, non-leaf nodes an even distance from root are of degree 2.
  * @author Sean A. Irvine
  */
 public class A007560 extends MemoryFunction2<Long, Z> implements Sequence {

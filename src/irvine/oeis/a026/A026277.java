@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.PositionOfNSequence;
 
 /**
- * A026277 <code>a(n) =</code> least k such that <code>s(k) =</code> n, where s <code>= A026276</code>.
+ * A026277 a(n) = least k such that s(k) = n, where s = A026276.
  * @author Sean A. Irvine
  */
 public class A026277 extends PositionOfNSequence {

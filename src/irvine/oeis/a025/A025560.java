@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025560 <code>a(n) = LCM{1, C(n-1,1), C(n-2,2)</code>, ..., <code>C(n-[ n/2 ],[ n/2 ])}</code>.
+ * A025560 a(n) = LCM{1, C(n-1,1), C(n-2,2), ..., C(n-[ n/2 ],[ n/2 ])}.
  * @author Sean A. Irvine
  */
 public class A025560 implements Sequence {

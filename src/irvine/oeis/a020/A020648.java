@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020648 Least positive integer k for which <code>9^n</code> divides <code>k!</code>.
+ * A020648 Least positive integer k for which 9^n divides k!.
  * @author Sean A. Irvine
  */
 public class A020648 implements Sequence {
@@ -22,7 +22,7 @@ public class A020648 implements Sequence {
     while (mM < mN) {
       mF = mF.multiply(++mR);
       Z[] qr;
-      while (Z.ZERO.equals((qr = mF.divideAndRemainder(Z.NINE))[1])) {
+      while ((qr = mF.divideAndRemainder(Z.NINE))[1].isZero()) {
         mF = qr[0];
         ++mM;
       }

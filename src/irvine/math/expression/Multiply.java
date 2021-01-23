@@ -2,7 +2,7 @@ package irvine.math.expression;
 
 /**
  * An expression for multiplication.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Multiply extends AbstractLeftRightExpression {
 

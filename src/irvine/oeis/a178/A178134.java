@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178134 <code>Sum_{m=0..(n-1)/2} A176263(n-m-1, m)</code>.
+ * A178134 Sum_{m=0..(n-1)/2} A176263(n-m-1, m).
  * @author Sean A. Irvine
  */
 public class A178134 extends LinearRecurrence {

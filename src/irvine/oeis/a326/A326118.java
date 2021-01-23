@@ -5,7 +5,7 @@ package irvine.oeis.a326;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A326118 <code>a(n)</code> is the largest number of squares of unit area connected only at corners and without holes that can be inscribed in an <code>n X n</code> square.
+ * A326118 a(n) is the largest number of squares of unit area connected only at corners and without holes that can be inscribed in an n X n square.
  * @author Georg Fischer
  */
 public class A326118 extends HolonomicRecurrence {

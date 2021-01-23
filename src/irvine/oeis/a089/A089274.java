@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089274 Fifth column of the Legendre-Stirling triangle <code>A071951</code>.
+ * A089274 Fifth column of the Legendre-Stirling triangle A071951.
  * @author Georg Fischer
  */
 public class A089274 extends GeneratingFunctionSequence {

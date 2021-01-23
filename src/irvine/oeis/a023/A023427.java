@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023427 Number of Dyck n-paths with ascents and descents of length equal to <code>1 (mod 4)</code>.
+ * A023427 Number of Dyck n-paths with ascents and descents of length equal to 1 (mod 4).
  * @author Sean A. Irvine
  */
 public class A023427 implements Sequence {

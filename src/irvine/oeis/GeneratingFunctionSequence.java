@@ -164,12 +164,12 @@ public class GeneratingFunctionSequence implements Sequence {
    */
   private Z iterate() {
     final Z divisor = mDen[0];
-    if (divisor.equals(Z.ZERO)) {
+    if (divisor.isZero()) {
       throw new IllegalArgumentException("divisor is zero");
     }
     final Z[] quotRest = mNum[0].divideAndRemainder(divisor);
     Z result = quotRest[0];
-    if (!quotRest[1].equals(Z.ZERO)) {
+    if (!quotRest[1].isZero()) {
       throw new IllegalArgumentException("no even division");
     }
     final Z quotient = result.negate();

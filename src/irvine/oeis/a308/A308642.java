@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A308642 Decimal expansion of <code>cosh(sqrt(13/3)*Pi/2)*sech(sqrt(5/3)*Pi/2)</code>.
+ * A308642 Decimal expansion of cosh(sqrt(13/3)*Pi/2)*sech(sqrt(5/3)*Pi/2).
  * @author Georg Fischer
  */
 public class A308642 extends DecimalExpansionSequence {

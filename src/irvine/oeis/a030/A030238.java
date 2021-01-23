@@ -6,7 +6,7 @@ package irvine.oeis.a030;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A030238 Backwards shallow diagonal sums of Catalan triangle <code>A009766</code>.
+ * A030238 Backwards shallow diagonal sums of Catalan triangle A009766.
  * @author Georg Fischer
  */
 public class A030238 extends HolonomicRecurrence {

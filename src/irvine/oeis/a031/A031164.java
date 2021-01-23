@@ -5,7 +5,7 @@ package irvine.oeis.a031;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A031164 Irreducible Euler sums of weight 8 and depth <code>10+2n</code>.
+ * A031164 Irreducible Euler sums of weight 8 and depth 10+2n.
  * @author Georg Fischer
  */
 public class A031164 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A131659 Decimal expansion of <code>log(Pi^2)</code>.
+ * A131659 Decimal expansion of log(Pi^2).
  * @author Georg Fischer
  */
 public class A131659 extends DecimalExpansionSequence {

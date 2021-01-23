@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023995 Number of sets S <code>= {a_1, a_2</code>, ..., <code>a_k}</code>, with <code>1 &lt; a_i &lt; a_j &lt;= n</code> such that no <code>a_j</code> divides the product of all the others.
+ * A023995 Number of sets S = {a_1, a_2, ..., a_k}, with 1 &lt; a_i &lt; a_j &lt;= n such that no a_j divides the product of all the others.
  * @author Sean A. Irvine
  */
 public class A023995 implements Sequence {

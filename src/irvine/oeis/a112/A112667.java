@@ -5,7 +5,7 @@ package irvine.oeis.a112;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A112667 <code>a(n+1)</code> is the sum of the units digit of <code>a(n)</code> and the square of the tens digit of <code>a(n)</code>.
+ * A112667 a(n+1) is the sum of the units digit of a(n) and the square of the tens digit of a(n).
  * @author Georg Fischer
  */
 public class A112667 extends HolonomicRecurrence {

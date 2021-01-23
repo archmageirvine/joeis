@@ -1,11 +1,11 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001678;
 import irvine.oeis.a059.A059123;
-
-import java.util.ArrayList;
 
 /**
  * A000014 Number of series-reduced trees with n nodes.

@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A084167 Numbers k in <code>A002313</code> such that the count of primitive roots of k <code>(A084168)</code> are also in sequence <code>A002313</code>, where <code>A002313</code> is the list of primes p having a unique representation as the sum of two squares, p <code>= x^2 + y^2</code>.
+ * A084167 Numbers k in A002313 such that the count of primitive roots of k (A084168) are also in sequence A002313, where A002313 is the list of primes p having a unique representation as the sum of two squares, p = x^2 + y^2.
  * @author Georg Fischer
  */
 public class A084167 extends FiniteSequence {

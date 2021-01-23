@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A213248 Number of nonzero elements in <code>GF(2^n)</code> that are <code>13th</code> powers.
+ * A213248 Number of nonzero elements in GF(2^n) that are 13th powers.
  * @author Georg Fischer
  */
 public class A213248 extends GeneratingFunctionSequence {

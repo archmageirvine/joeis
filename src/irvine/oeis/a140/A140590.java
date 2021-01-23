@@ -6,7 +6,7 @@ package irvine.oeis.a140;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A140590 Exchange successive pairs of terms of <code>A000051</code>.
+ * A140590 Exchange successive pairs of terms of A000051.
  * @author Georg Fischer
  */
 public class A140590 extends HolonomicRecurrence {

@@ -7,13 +7,11 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class ZStringTest extends TestCase {
 
   private static final Random RANDOM = new Random();
-
 
   public void testToString() {
     assertEquals("0", Z.ZERO.toString());
@@ -27,6 +25,8 @@ public class ZStringTest extends TestCase {
     assertEquals("-101002716748738111", new Z("101002716748738111").negate().toString());
     assertEquals("1321402112002400134104421", new Z("101002716748738111").toString(5));
     assertEquals("rmih3ijbygv", new Z("101002716748738111").toString(36));
+    assertEquals("11111", Z.FIVE.toString(1));
+    assertEquals("-11111", Z.FIVE.negate().toString(1));
     for (int i = 30; i < 1000; ++i) {
       BigInteger n = new BigInteger(i, RANDOM);
       if (RANDOM.nextBoolean()) {
@@ -66,16 +66,10 @@ public class ZStringTest extends TestCase {
 
   public void testToStringBase() {
     try {
-      Z.TWO.toString(1);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      assertEquals("Base must be at least 2", e.getMessage());
-    }
-    try {
       Z.TWO.toString(0);
       fail();
     } catch (final IllegalArgumentException e) {
-      // ok
+      assertEquals("Base must be at least 1", e.getMessage());
     }
     try {
       Z.TWO.toString(-1);

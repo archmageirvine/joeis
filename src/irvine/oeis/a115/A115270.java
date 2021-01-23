@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A115270 Diagonal sums of correlation triangle for <code>floor((n+4)/4)</code>.
+ * A115270 Diagonal sums of correlation triangle for floor((n+4)/4).
  * @author Georg Fischer
  */
 public class A115270 extends GeneratingFunctionSequence {

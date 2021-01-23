@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244880 Number of magic labelings of the <code>cycle-of-loops</code> graph LOOP X <code>C_8</code> having magic sum n, where LOOP is the <code>1-vertex, 1-loop-edge</code> graph.
+ * A244880 Number of magic labelings of the cycle-of-loops graph LOOP X C_8 having magic sum n, where LOOP is the 1-vertex, 1-loop-edge graph.
  * @author Sean A. Irvine
  */
 public class A244880 extends LinearRecurrence {

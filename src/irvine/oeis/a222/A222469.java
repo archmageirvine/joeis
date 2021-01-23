@@ -6,7 +6,7 @@ package irvine.oeis.a222;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A222469 Denominator sequence of the n-th convergent of the continued fraction <code>1/(1 - 2/(2 - 2/(3 - 2/(4 - ...))))</code>.
+ * A222469 Denominator sequence of the n-th convergent of the continued fraction 1/(1 - 2/(2 - 2/(3 - 2/(4 - ...)))).
  * @author Georg Fischer
  */
 public class A222469 extends HolonomicRecurrence {

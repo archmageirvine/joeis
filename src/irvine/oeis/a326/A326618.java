@@ -6,7 +6,7 @@ package irvine.oeis.a326;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A326618 <code>a(n) = n^18 + n^9 + 1</code>.
+ * A326618 a(n) = n^18 + n^9 + 1.
  * @author Georg Fischer
  */
 public class A326618 extends HolonomicRecurrence {

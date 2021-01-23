@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A285188 <code>a(n) = Sum_{k=1..n} (k^2*floor(k/2))</code>.
+ * A285188 a(n) = Sum_{k=1..n} (k^2*floor(k/2)).
  * @author Sean A. Irvine
  */
 public class A285188 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
 /**
- * A006534 Number of one-sided triangular polyominoes <code>(n-iamonds)</code> with n cells; turning over not allowed, holes are allowed.
+ * A006534 Number of one-sided triangular polyominoes (n-iamonds) with n cells; turning over not allowed, holes are allowed.
  * @author jmason
  */
 public class A006534 implements Sequence {

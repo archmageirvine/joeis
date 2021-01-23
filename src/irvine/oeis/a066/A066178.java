@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066178 Number of binary bit strings of length n with no block of 8 or more <code>0</code>'s. Nonzero heptanacci numbers, <code>A122189</code>.
+ * A066178 Number of binary bit strings of length n with no block of 8 or more 0's. Nonzero heptanacci numbers, A122189.
  * @author Sean A. Irvine
  */
 public class A066178 extends LinearRecurrence {

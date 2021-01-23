@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001065;
 
 /**
- * A053867 Parity of sum of divisors of n less than <code>n</code>.
+ * A053867 Parity of sum of divisors of n less than n.
  * @author Georg Fischer
  */
 public class A053867 extends A001065 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import junit.framework.TestCase;
 
 /**
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class MultiplyTest extends TestCase {
 

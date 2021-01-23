@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A171442 Expansion of <code>(1+x)^7/(1-x)</code>.
+ * A171442 Expansion of (1+x)^7/(1-x).
  * @author Georg Fischer
  */
 public class A171442 extends GeneratingFunctionSequence {

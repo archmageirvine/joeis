@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006438 Expansion of e.g.f. <code>1/sqrt(1-8x+x^2)</code>.
+ * A006438 Expansion of e.g.f. 1/sqrt(1-8x+x^2).
  * @author Sean A. Irvine
  */
 public class A006438 implements Sequence {

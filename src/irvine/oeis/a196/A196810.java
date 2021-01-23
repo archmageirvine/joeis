@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A196810 Number of ways to place 2 nonattacking nightriders on an <code>n X n</code> cylindrical board.
+ * A196810 Number of ways to place 2 nonattacking nightriders on an n X n cylindrical board.
  * @author Georg Fischer
  */
 public class A196810 extends GeneratingFunctionSequence {

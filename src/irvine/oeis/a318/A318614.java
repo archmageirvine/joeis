@@ -5,7 +5,7 @@ package irvine.oeis.a318;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318614 Scaled g.f. <code>S(u) = Sum_{n&gt;0} a(n)*16*(u/16)^n</code> satisfies <code>T(u) = d/du S(u)</code>, with <code>T(u)</code> as defined by <code>A318417</code>; sequence gives <code>a(n)</code>.
+ * A318614 Scaled g.f. S(u) = Sum_{n&gt;0} a(n)*16*(u/16)^n satisfies T(u) = d/du S(u), with T(u) as defined by A318417; sequence gives a(n).
  * @author Georg Fischer
  */
 public class A318614 extends HolonomicRecurrence {

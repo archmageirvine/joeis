@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180970 Number of tatami tilings of a <code>3 X n</code> grid (with monomers allowed).
+ * A180970 Number of tatami tilings of a 3 X n grid (with monomers allowed).
  * @author Georg Fischer
  */
 public class A180970 extends GeneratingFunctionSequence {

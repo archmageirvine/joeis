@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000230;
 
 /**
- * A001632 Smallest prime p such that there is a gap of <code>2n</code> between p and previous prime.
+ * A001632 Smallest prime p such that there is a gap of 2n between p and previous prime.
  * @author Sean A. Irvine
  */
 public class A001632 extends A000230 {

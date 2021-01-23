@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a120.A120944;
 
 /**
- * A029590 For <code>n&gt;0, a(n)</code> is the least quasi-Carmichael number to base n; <code>a(0) =</code> least composite squarefree integer.
+ * A029590 For n&gt;0, a(n) is the least quasi-Carmichael number to base n; a(0) = least composite squarefree integer.
  * @author Sean A. Irvine
  */
 public class A029590 implements Sequence {

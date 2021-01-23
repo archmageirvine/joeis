@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135526 Number of sums payable using exactly n banknotes of denominations <code>1, 5, 10, 20, 50, 100</code> (change allowable).
+ * A135526 Number of sums payable using exactly n banknotes of denominations 1, 5, 10, 20, 50, 100 (change allowable).
  * @author Georg Fischer
  */
 public class A135526 extends GeneratingFunctionSequence {

@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024566 <code>a(n) = [</code> sum of <code>1/{k*sqrt(7)} ]</code> for k <code>= 1,2,...,n</code>, where <code>{x} := x - [ x ]</code>.
+ * A024566 a(n) = [ sum of 1/{k*sqrt(7)} ] for k = 1,2,...,n, where {x} := x - [ x ].
  * @author Sean A. Irvine
  */
 public class A024566 implements Sequence {
 
-  private static final CR SQRT7 = CR.valueOf(7).sqrt();
+  private static final CR SQRT7 = CR.SEVEN.sqrt();
   private long mN = 0;
   private CR mSum = CR.ZERO;
 

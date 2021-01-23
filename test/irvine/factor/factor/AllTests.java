@@ -21,7 +21,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PollardRhoTest.class);
     suite.addTestSuite(PMinusOneTest.class);
     suite.addTestSuite(PrimeDivisionTest.class);
-    suite.addTestSuite(QuadraticSieveTest.class);
     suite.addTestSuite(SqufofTest.class);
     return suite;
   }

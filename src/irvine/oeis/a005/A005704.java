@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005704 Number of partitions of <code>3n</code> into powers of 3.
+ * A005704 Number of partitions of 3n into powers of 3.
  * @author Sean A. Irvine
  */
 public class A005704 extends MemorySequence {

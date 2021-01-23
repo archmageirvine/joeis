@@ -37,9 +37,9 @@ public final class PolynomialUtils {
     final Z cc = c.mod(p);
     final Z t = aa.modMultiply(bb, p).modMultiply(cc, p);
     if (Z.TWO.equals(p)) {
-      return Z.ZERO.equals(t);
+      return t.isZero();
     }
-    if (Z.ZERO.equals(aa)) {
+    if (aa.isZero()) {
       return true;
     }
     final Z d = bb.square().subtract(aa.multiply(cc).multiply(4));
@@ -74,7 +74,7 @@ public final class PolynomialUtils {
     Z root1 = null;
     for (Z i = Z.ZERO; i.compareTo(p) < 0; i = i.add(1)) {
       final Z t = b2.add(i).multiply(i).add(c2).multiply(i).add(d2).mod(p);
-      if (Z.ZERO.equals(t)) {
+      if (t.isZero()) {
         root1 = i;
         break;
       }
@@ -174,14 +174,14 @@ public final class PolynomialUtils {
     final HashSet<Z> iroots = new HashSet<>();
     for (final C croot : croots) {
       final Z x = Z.valueOf((long) croot.re()); // Ugly precision yeuch!
-      if (Z.ZERO.equals(x)) {
-        if (Z.ZERO.equals(c)) {
+      if (x.isZero()) {
+        if (c.isZero()) {
           iroots.add(x);
         }
       } else {
         final Z cx = c.divide(x);
         if (x.multiply(cx).equals(c)) {
-          if (Z.ZERO.equals(x.add(a).multiply(x).add(b).add(cx))) {
+          if (x.add(a).multiply(x).add(b).add(cx).isZero()) {
             iroots.add(x);
           }
         }

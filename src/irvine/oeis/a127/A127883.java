@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A127883 <code>a(n) = 60*(n^5/120 + n^4/24 + n^3/6 + n^2/2 + n + 1)</code>.
+ * A127883 a(n) = 60*(n^5/120 + n^4/24 + n^3/6 + n^2/2 + n + 1).
  * @author Georg Fischer
  */
 public class A127883 extends GeneratingFunctionSequence {

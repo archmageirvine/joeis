@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A329659 Largest number m <code>&gt; 0</code> such that <code>A101337(m)/m =</code> n, or 0 if no such m exists.
+ * A329659 Largest number m &gt; 0 such that A101337(m)/m = n, or 0 if no such m exists.
  * @author Georg Fischer
  */
 public class A329659 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059924 Write the numbers from 1 to <code>n^2</code> in a spiraling square; <code>a(n)</code> is the total of the sums of the two diagonals.
+ * A059924 Write the numbers from 1 to n^2 in a spiraling square; a(n) is the total of the sums of the two diagonals.
  * @author Sean A. Irvine
  */
 public class A059924 extends LinearRecurrence {

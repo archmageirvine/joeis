@@ -6,7 +6,7 @@ package irvine.oeis.a109;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A109188 Number of <code>(1,0)</code> steps in all Grand Motzkin paths of length <code>n</code>.
+ * A109188 Number of (1,0) steps in all Grand Motzkin paths of length n.
  * @author Georg Fischer
  */
 public class A109188 extends HolonomicRecurrence {

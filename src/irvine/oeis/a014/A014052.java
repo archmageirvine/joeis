@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014052 <code>a(n) = floor((n+1/n)^n)</code>.
+ * A014052 a(n) = floor((n+1/n)^n).
  * @author Sean A. Irvine
  */
 public class A014052 implements Sequence {

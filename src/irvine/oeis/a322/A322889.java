@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322889 Chebyshev <code>T-polynomials T_n(18)</code>.
+ * A322889 Chebyshev T-polynomials T_n(18).
  * @author Georg Fischer
  */
 public class A322889 extends GeneratingFunctionSequence {

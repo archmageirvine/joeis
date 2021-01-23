@@ -6,7 +6,7 @@ package irvine.oeis.a246;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246472 Number of <code>order-preserving</code> (monotone) functions from the power set of <code>1 = {0}</code> to the power set of <code>n = {0</code>, ..., <code>n-1}</code>.
+ * A246472 Number of order-preserving (monotone) functions from the power set of 1 = {0} to the power set of n = {0, ..., n-1}.
  * @author Georg Fischer
  */
 public class A246472 extends HolonomicRecurrence {

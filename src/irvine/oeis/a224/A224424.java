@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224424 The hyper-Wiener index of the Micelle-like chiral dendrimer <code>G[n]</code> defined pictorially in the Hassan Yousefi-Azari et al. reference.
+ * A224424 The hyper-Wiener index of the Micelle-like chiral dendrimer G[n] defined pictorially in the Hassan Yousefi-Azari et al. reference.
  * @author Sean A. Irvine
  */
 public class A224424 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057886 Number of integer 4-tuples that give the lengths of the sides of a nondegenerate quadrilateral with perimeter <code>n</code>.
+ * A057886 Number of integer 4-tuples that give the lengths of the sides of a nondegenerate quadrilateral with perimeter n.
  * @author Georg Fischer
  */
 public class A057886 extends GeneratingFunctionSequence {

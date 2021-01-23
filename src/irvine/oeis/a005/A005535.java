@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005535 Number of semi-regular digraphs on n nodes.
+ * A005535 Number of semi-regular digraphs (with loops) on n unlabeled nodes with each node having out-degree 3.
  * @author Sean A. Irvine
  */
 public class A005535 implements Sequence, GraphProcessor {

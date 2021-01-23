@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304385 <code>a(n) = 192*2^n - 31 (n&gt;=1)</code>.
+ * A304385 a(n) = 192*2^n - 31 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304385 extends GeneratingFunctionSequence {

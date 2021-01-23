@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321124 <code>a(n) = (4*n^3 - 6*n^2 + 14*n + 3)/3</code>.
+ * A321124 a(n) =  (4*n^3 - 6*n^2 + 14*n + 3)/3.
  * @author Georg Fischer
  */
 public class A321124 extends GeneratingFunctionSequence {

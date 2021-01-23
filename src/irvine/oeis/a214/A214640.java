@@ -5,7 +5,7 @@ package irvine.oeis.a214;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A214640 A ternary sequence : closed under <code>1 -&gt; 123, 2 -&gt; 12, 3 -&gt; 2</code> . Start with <code>1 </code>.
+ * A214640 A ternary sequence : closed under 1 -&gt; 123, 2 -&gt; 12, 3 -&gt; 2 . Start with 1 .
  * @author Georg Fischer
  */
 public class A214640 extends MorphismSequence {

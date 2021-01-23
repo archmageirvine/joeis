@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024431 A generalized difference set on the set of all integers (lambda <code>= 1)</code>.
+ * A024431 A generalized difference set on the set of all integers (lambda = 1).
  * @author Sean A. Irvine
  */
 public class A024431 implements Sequence {

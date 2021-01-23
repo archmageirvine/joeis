@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054055 Largest digit of <code>n</code>.
+ * A054055 Largest digit of n.
  * @author Sean A. Irvine
  */
 public class A054055 implements Sequence {

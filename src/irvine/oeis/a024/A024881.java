@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A024881 Weight distribution of <code>[ 17,8,6 ]</code> binary quadratic-residue code.
+ * A024881 Weight distribution of [ 17,8,6 ] binary quadratic-residue code.
  * @author Georg Fischer
  */
 public class A024881 extends FiniteSequence {

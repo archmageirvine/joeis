@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130652 <code>a(n) = 11^n - 2</code>.
+ * A130652 a(n) = 11^n - 2.
  * @author Sean A. Irvine
  */
 public class A130652 extends LinearRecurrence {

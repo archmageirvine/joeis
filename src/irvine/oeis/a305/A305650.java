@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305650 <code>a(n) = -1/3 * (u^n-1)*(v^n-1)</code> with u <code>= 1+sqrt(3), v = 1-sqrt(3)</code>.
+ * A305650 a(n) = -1/3 * (u^n-1)*(v^n-1) with u = 1+sqrt(3), v = 1-sqrt(3).
  * @author Georg Fischer
  */
 public class A305650 extends GeneratingFunctionSequence {

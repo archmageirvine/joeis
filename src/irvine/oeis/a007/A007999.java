@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000111;
 
 /**
- * A007999 <code>a(n)</code> is the number of permutations w of <code>1,2,...,n</code> such that both w and <code>w^{-1}</code> are alternating.
+ * A007999 a(n) is the number of permutations w of 1,2,...,n such that both w and w^{-1} are alternating.
  * @author Sean A. Irvine
  */
 public class A007999 extends A000111 {

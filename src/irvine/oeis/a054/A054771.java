@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054771 Number of nonnegative integer <code>3 X 3</code> matrices with sum of elements equal to n, up to rotational symmetry.
+ * A054771 Number of nonnegative integer 3 X 3 matrices with sum of elements equal to n, up to rotational symmetry.
  * @author Georg Fischer
  */
 public class A054771 extends GeneratingFunctionSequence {

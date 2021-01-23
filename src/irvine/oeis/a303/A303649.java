@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A303649 Number of involutions of <code>[n]</code> having exactly one peak.
+ * A303649 Number of involutions of [n] having exactly one peak.
  * @author Georg Fischer
  */
 public class A303649 extends GeneratingFunctionSequence {

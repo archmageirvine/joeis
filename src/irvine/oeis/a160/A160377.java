@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001783;
 
 /**
- * A160377 Phi-torial of <code>n (A001783)</code> modulo <code>n</code>.
+ * A160377 Phi-torial of n (A001783) modulo n.
  * @author Georg Fischer
  */
 public class A160377 extends A001783 {

@@ -5,7 +5,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123920 Number of numbers congruent to 2 or <code>4 mod 6</code> between n and <code>2n</code> inclusive.
+ * A123920 Number of numbers congruent to 2 or 4 mod 6 between n and 2n inclusive.
  * @author Georg Fischer
  */
 public class A123920 extends HolonomicRecurrence {

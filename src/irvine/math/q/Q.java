@@ -64,10 +64,10 @@ public class Q implements Comparable<Q>, Serializable {
    * @exception IllegalArgumentException if <code>q</code> is zero.
    */
   public Q(Z p, Z q) {
-    if (Z.ZERO.equals(q)) {
+    if (q.isZero()) {
       throw new IllegalArgumentException();
     }
-    if (Z.ZERO.equals(p)) {
+    if (p.isZero()) {
       mP = Z.ZERO;
       mQ = Z.ONE;
     } else {
@@ -357,7 +357,7 @@ public class Q implements Comparable<Q>, Serializable {
    * @param exponent exponent
    * @return <code>this^exponent</code>
    */
-  public Q pow(final int exponent) {
+  public Q pow(final long exponent) {
     if (exponent < 0) {
       return reciprocal().pow(-exponent);
     } else if (exponent == 0) {

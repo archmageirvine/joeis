@@ -4,7 +4,7 @@ package irvine.oeis.a252;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A252816 Number of <code>n X 4</code> nonnegative integer arrays with upper left 0 and every value within 2 of its city block distance from the upper left and every value increasing by 0 or 1 with every step right or down.
+ * A252816 Number of n X 4 nonnegative integer arrays with upper left 0 and every value within 2 of its city block distance from the upper left and every value increasing by 0 or 1 with every step right or down.
  * @author Georg Fischer
  */
 public class A252816 extends GeneratingFunctionSequence {

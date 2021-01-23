@@ -5,7 +5,7 @@ package irvine.oeis.a300;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A300254 <code>a(n) = 25*(n + 1)*(4*n + 3)*(5*n + 4)/3</code>.
+ * A300254 a(n) = 25*(n + 1)*(4*n + 3)*(5*n + 4)/3.
  * @author Georg Fischer
  */
 public class A300254 extends HolonomicRecurrence {

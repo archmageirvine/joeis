@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A028999 Binary expansion of <code>arctan(1/2)/Pi</code>.
+ * A028999 Binary expansion of arctan(1/2)/Pi.
  * @author Sean A. Irvine
  */
 public class A028999 extends DecimalExpansionSequence {

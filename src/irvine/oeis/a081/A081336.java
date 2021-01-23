@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081336 <code>a(n) = (7^n + 3^n)/2</code>.
+ * A081336 a(n) = (7^n + 3^n)/2.
  * @author Sean A. Irvine
  */
 public class A081336 extends LinearRecurrence {

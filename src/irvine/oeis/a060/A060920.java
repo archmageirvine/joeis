@@ -7,7 +7,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A060920 Bisection of Fibonacci triangle <code>A037027: even-indexed</code> members of column sequences of <code>A037027</code> (not counting leading zeros).
+ * A060920 Bisection of Fibonacci triangle A037027: even-indexed members of column sequences of A037027 (not counting leading zeros).
  * @author Georg Fischer
  */
 public class A060920 extends GeneratingFunctionTriangle {

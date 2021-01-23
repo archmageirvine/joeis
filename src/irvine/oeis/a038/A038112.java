@@ -5,7 +5,7 @@ package irvine.oeis.a038;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A038112 <code>a(n) = T(2n,n)</code>, where <code>T(n,k)</code> is in <code>A037027</code>.
+ * A038112 a(n) = T(2n,n), where T(n,k) is in A037027.
  * @author Georg Fischer
  */
 public class A038112 extends HolonomicRecurrence {

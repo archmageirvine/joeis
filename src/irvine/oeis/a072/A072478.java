@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072478 Surface area of n-dimensional sphere of radius r is <code>n*V_n*r^(n-1) = n*Pi^(n/2)*r^(n-1)/(n/2)! = S_n*Pi^floor(n/2)*r^(n-1)</code>; sequence gives numerator of <code>S_n</code>.
+ * A072478 Surface area of n-dimensional sphere of radius r is n*V_n*r^(n-1) = n*Pi^(n/2)*r^(n-1)/(n/2)! = S_n*Pi^floor(n/2)*r^(n-1); sequence gives numerator of S_n.
  * @author Georg Fischer
  */
 public class A072478 extends LinearRecurrence {

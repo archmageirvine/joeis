@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A073446 Product <code>L(n)*S(n)</code>, where <code>L(n)</code> are Lucas numbers and <code>S(n)</code> are Lucas 3-step numbers <code>= A000032(n) * A001644(n)</code>.
+ * A073446 Product L(n)*S(n), where L(n) are Lucas numbers and S(n) are Lucas 3-step numbers = A000032(n) * A001644(n).
  * @author Georg Fischer
  */
 public class A073446 extends GeneratingFunctionSequence {

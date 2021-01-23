@@ -4,7 +4,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014207 Inverse of <code>198th</code> cyclotomic polynomial.
+ * A014207 Inverse of 198th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014207 extends PeriodicSequence {

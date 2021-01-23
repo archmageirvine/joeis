@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129715 Number of runs in all Fibonacci binary words of length <code>n</code>. A Fibonacci binary word is a binary word having no 00 subword. A run is a maximal sequence of consecutive identical letters.
+ * A129715 Number of runs in all Fibonacci binary words of length n. A Fibonacci binary word is a binary word having no 00 subword. A run is a maximal sequence of consecutive identical letters.
  * @author Georg Fischer
  */
 public class A129715 extends GeneratingFunctionSequence {

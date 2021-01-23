@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091084 <code>a(n) = A001045(n) mod 10</code>.
+ * A091084 a(n) = A001045(n) mod 10.
  * @author Georg Fischer
  */
 public class A091084 extends GeneratingFunctionSequence {

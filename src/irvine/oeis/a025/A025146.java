@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025146 <code>(#1</code>'s in <code>(s(1),...,s(n)) - (#1</code>'s in <code>r(1),...,r(n))</code>, where s <code>= A025142</code> and r <code>= A025143</code>.
+ * A025146 (#1's in (s(1),...,s(n)) - (#1's in r(1),...,r(n)), where s = A025142 and r = A025143.
  * @author Sean A. Irvine
  */
 public class A025146 extends A025144 {

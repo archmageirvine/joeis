@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A010072 <code>a(n+1) = a(n) +</code> sum of digits in base 9 representation of <code>a(n)</code>.
+ * A010072 a(n+1) = a(n) + sum of digits in base 9 representation of a(n).
  * @author Sean A. Irvine
  */
 public class A010072 implements Sequence {
@@ -14,7 +14,7 @@ public class A010072 implements Sequence {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.ONE : mA.add(ZUtils.digitSum(mA, Z.NINE));
+    mA = mA == null ? Z.ONE : mA.add(ZUtils.digitSum(mA, 9));
     return mA;
   }
 }

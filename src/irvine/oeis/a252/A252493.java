@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A252493 Numbers n such that <code>n(n+1)</code> is <code>13-smooth</code>. (Related to the abc <code>conjecture.)</code>.
+ * A252493 Numbers n such that n(n+1) is 13-smooth. (Related to the abc conjecture.).
  * @author Georg Fischer
  */
 public class A252493 extends FiniteSequence {

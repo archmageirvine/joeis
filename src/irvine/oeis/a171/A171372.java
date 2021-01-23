@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A171372 <code>a(n) =</code> Numerator of <code>1/(2*n)^2 - 1/(3*n)^2</code> for <code>n &gt; 0, a(0) = 1</code>.
+ * A171372 a(n) = Numerator of 1/(2*n)^2 - 1/(3*n)^2 for n &gt; 0, a(0) = 1.
  * @author Georg Fischer
  */
 public class A171372 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A053715 <code>a(n) = n-th</code> triangular number (the sum of the first <code>n</code> integers) in base <code>n</code>.
+ * A053715 a(n) = n-th triangular number (the sum of the first n integers) in base n.
  * @author Georg Fischer
  */
 public class A053715 extends GeneratingFunctionSequence {

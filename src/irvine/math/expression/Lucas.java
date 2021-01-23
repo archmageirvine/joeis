@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 
 /**
  * An expression for Lucas numbers.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Lucas extends UnaryFunction {
 

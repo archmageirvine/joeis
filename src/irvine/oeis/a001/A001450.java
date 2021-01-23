@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001450 <code>a(n) = binomial(5*n,2*n)</code>.
+ * A001450 a(n) = binomial(5*n,2*n).
  * @author Sean A. Irvine
  */
 public class A001450 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024617 Position of <code>n^2 + n + 1</code> in <code>A024614</code>.
+ * A024617 Position of n^2 + n + 1 in A024614.
  * @author Sean A. Irvine
  */
 public class A024617 extends A024614 {

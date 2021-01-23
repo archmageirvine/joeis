@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328284 An extension of the Jacobsthal numbers: <code>0, 0, 1</code>, followed by <code>A001045</code>.
+ * A328284 An extension of the Jacobsthal numbers: 0, 0, 1, followed by A001045.
  * @author Georg Fischer
  */
 public class A328284 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022943 <code>a(n) = a(n-2) + c(n-1)</code> for <code>n &gt;= 3, a( )</code> increasing, given <code>a(1)=2, a(2)=3</code>, where <code>c( )</code> is complement of <code>a( )</code>.
+ * A022943 a(n) = a(n-2) + c(n-1) for n &gt;= 3, a( ) increasing, given a(1)=2, a(2)=3, where c( ) is complement of a( ).
  * @author Sean A. Irvine
  */
 public class A022943 implements Sequence {

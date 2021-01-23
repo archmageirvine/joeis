@@ -5,7 +5,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214024 Decimal expansion of <code>4^4^4</code>.
+ * A214024 Decimal expansion of 4^4^4.
  * @author Georg Fischer
  */
 public class A214024 extends FiniteSequence {

@@ -1,5 +1,8 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
@@ -7,11 +10,8 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 /**
- * A000061 Generalized tangent numbers <code>d(n,1)</code>.
+ * A000061 Generalized tangent numbers d(n,1).
  * @author Sean A. Irvine
  */
 public class A000061 implements Sequence {
@@ -19,7 +19,7 @@ public class A000061 implements Sequence {
   protected int mT = 0;
   private final HashMap<String, Z> mCache = new HashMap<>();
 
-  private Z bigDbn(final long b, final int n) {
+  private Z bigDbn(final long b, final long n) {
     if (b == 1) {
       return (n & 1) == 0 ? Z.NEG_ONE : Z.ONE;
     }
@@ -38,7 +38,7 @@ public class A000061 implements Sequence {
     return (n & 1) == 0 ? sum.negate() : sum;
   }
 
-  private Z[] handleFactors(final long a, final int n) {
+  private Z[] handleFactors(final long a, final long n) {
     Z mz = Z.ONE;
     Z bz = Z.ONE;
     final FactorSequence fs = Cheetah.factor(a);

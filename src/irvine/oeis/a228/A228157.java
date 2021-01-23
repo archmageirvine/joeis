@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228157 Numbers n which are anagrams of <code>n+9</code>.
+ * A228157 Numbers n which are anagrams of n+9.
  * @author Georg Fischer
  */
 public class A228157 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A070064 Decimal expansion of the molar gas constant R according to the 2019 SI system in units J <code>mol^-1 K^-1</code>.
+ * A070064 Decimal expansion of the molar gas constant R according to the 2019 SI system in units J mol^-1 K^-1.
  * @author Sean A. Irvine
  */
 public class A070064 extends FiniteSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051581 <code>a(n) = (2*n+7)!!/7!!</code>, related to <code>A001147</code> (odd double factorials).
+ * A051581 a(n) = (2*n+7)!!/7!!, related to A001147 (odd double factorials).
  * @author Georg Fischer
  */
 public class A051581 extends HolonomicRecurrence {

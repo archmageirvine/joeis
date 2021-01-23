@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013153 Expansion of e.g.f.: <code>exp(tanh(x)+sinh(x))=1+2*x+4/2!*x^2+7/3!*x^3+8/4!*x^4+9/5!*x^5..</code>.
+ * A013153 Expansion of e.g.f.: exp(tanh(x)+sinh(x))=1+2*x+4/2!*x^2+7/3!*x^3+8/4!*x^4+9/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A013153 implements Sequence {

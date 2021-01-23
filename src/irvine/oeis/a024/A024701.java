@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A024701 <code>a(n) = (-1 + prime(n+1)^2)/4</code>.
+ * A024701 a(n) = (-1 + prime(n+1)^2)/4.
  * @author Sean A. Irvine
  */
 public class A024701 extends A000040 {

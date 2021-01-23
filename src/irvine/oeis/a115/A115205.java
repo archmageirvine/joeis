@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A115205 <code>a(n) = binomial(n, 9) + 1</code>.
+ * A115205 a(n) = binomial(n, 9) + 1.
  * @author Georg Fischer
  */
 public class A115205 extends GeneratingFunctionSequence {

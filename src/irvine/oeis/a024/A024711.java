@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024711 <code>a(n) =</code> residue <code>mod 2</code> of n-th term of <code>A024702</code>.
+ * A024711 a(n) = residue mod 2 of n-th term of A024702.
  * @author Sean A. Irvine
  */
 public class A024711 extends A024702 {

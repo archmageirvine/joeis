@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A126951 List of pairs: k followed by <code>k^3</code>.
+ * A126951 List of pairs: k followed by k^3.
  * @author Georg Fischer
  */
 public class A126951 extends GeneratingFunctionSequence {

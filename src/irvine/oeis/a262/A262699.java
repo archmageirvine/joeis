@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A262699 List of currency denominations such that any value <code>x &gt; 0</code> is represented in exactly x ways as a sum of distinct denominations, where a repeated value represents a bill and a coin which count as distinct denominations.
+ * A262699 List of currency denominations such that any value x &gt; 0 is represented in exactly x ways as a sum of distinct denominations, where a repeated value represents a bill and a coin which count as distinct denominations.
  * @author Georg Fischer
  */
 public class A262699 extends GeneratingFunctionSequence {

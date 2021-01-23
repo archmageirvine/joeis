@@ -5,7 +5,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133494 Diagonal of the array of iterated differences of <code>A047848</code>.
+ * A133494 Diagonal of the array of iterated differences of A047848.
  * @author Georg Fischer
  */
 public class A133494 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a118;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A118650 Center column <code>a(2n,n)</code> of <code>A106597</code>.
+ * A118650 Center column a(2n,n) of A106597.
  * @author Georg Fischer
  */
 public class A118650 extends HolonomicRecurrence {

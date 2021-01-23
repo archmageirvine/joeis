@@ -6,7 +6,7 @@ package irvine.oeis.a240;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A240437 Number of <code>non-palindromic n-tuples</code> of 5 distinct elements.
+ * A240437 Number of non-palindromic n-tuples of 5 distinct elements.
  * @author Georg Fischer
  */
 public class A240437 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.group.Mathieu12;
 import irvine.oeis.OrdersFiniteGroupSequence;
 
 /**
- * A284842 Number of elements of order n in simple Mathieu group <code>M_12</code>.
+ * A284842 Number of elements of order n in simple Mathieu group M_12.
  * @author Sean A. Irvine
  */
 public class A284842 extends OrdersFiniteGroupSequence {

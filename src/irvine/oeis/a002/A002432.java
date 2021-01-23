@@ -6,18 +6,20 @@ import irvine.math.q.Q;
 import irvine.math.q.BernoulliSequence;
 
 /**
- * A002432 Denominators of <code>zeta(2n)/Pi^(2n)</code>.
+ * A002432 Denominators of zeta(2*n)/Pi^(2*n).
  * @author Sean A. Irvine
  */
 public class A002432 implements Sequence {
 
   private final BernoulliSequence mB = new BernoulliSequence(1);
-  private int mN = 0;
+  private int mN = -1;
   private Z mF = Z.ONE;
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 0) {
+      return Z.TWO;
+    }
     mF = mF.multiply(2 * mN).multiply(2 * mN - 1);
     mB.nextQ();
     final Q b = mB.nextQ();

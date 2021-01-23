@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A022094 Sum of first <code>prime(n)</code> primes.
+ * A022094 Sum of first prime(n) primes.
  * @author Sean A. Irvine
  */
 public class A022094 extends A000040 {

@@ -5,7 +5,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162572 Decimal numbers n which, when converted to a lower number base, show the reversed digits of <code>n</code>.
+ * A162572 Decimal numbers n which, when converted to a lower number base, show the reversed digits of n.
  * @author Georg Fischer
  */
 public class A162572 extends FiniteSequence {

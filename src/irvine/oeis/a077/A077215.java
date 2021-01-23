@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A077215 Prime power with largest index that divides the product of composite numbers between successive primes with <code>a(1) = a(2) = 1</code>.
+ * A077215 Prime power with largest index that divides the product of composite numbers between successive primes with a(1) = a(2) = 1.
  * @author Sean A. Irvine
  */
 public class A077215 implements Sequence {

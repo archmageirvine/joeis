@@ -1,13 +1,13 @@
 package irvine.oeis.a005;
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A005333Test extends AbstractSequenceTest {
+public class A005333Test extends TestCase {
 
   public void testC() {
     final A005333 c = new A005333();

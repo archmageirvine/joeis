@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259907 Fifth differences of 7th powers <code>(A001015)</code>.
+ * A259907 Fifth differences of 7th powers (A001015).
  * @author Georg Fischer
  */
 public class A259907 extends GeneratingFunctionSequence {

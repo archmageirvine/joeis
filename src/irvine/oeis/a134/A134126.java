@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A134126 Indices k such that the <code>(k+1)st</code> partial sum of primes divided by k is integer.
+ * A134126 Indices k such that the (k+1)st partial sum of primes divided by k is integer.
  * @author Sean A. Irvine
  */
 public class A134126 implements Sequence {

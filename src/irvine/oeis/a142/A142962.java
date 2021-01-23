@@ -6,7 +6,7 @@ package irvine.oeis.a142;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A142962 Scaled convolution of <code>(n^3)*A000984(n)</code> with <code>A000984(n). A000984(n) = binomial(2*n,n)</code> (central binomial coefficients).
+ * A142962 Scaled convolution of (n^3)*A000984(n) with A000984(n). A000984(n) = binomial(2*n,n) (central binomial coefficients).
  * @author Georg Fischer
  */
 public class A142962 extends HolonomicRecurrence {

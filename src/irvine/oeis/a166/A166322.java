@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A166322 The number of times a point sum n is attained in all <code>7^6</code> permutations of throwing 7 dice.
+ * A166322 The number of times a point sum n is attained in all 7^6 permutations of throwing 7 dice.
  * @author Georg Fischer
  */
 public class A166322 extends FiniteSequence {

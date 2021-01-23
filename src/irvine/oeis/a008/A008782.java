@@ -7,7 +7,7 @@ import irvine.util.Permutation;
 import java.util.HashSet;
 
 /**
- * A008782 For any circular arrangement of <code>0..n-1</code>, let S = sum of squares of every sum of three contiguous numbers; then <code>a(n) = #</code> of distinct values of S.
+ * A008782 For any circular arrangement of 0..n-1, let S = sum of squares of every sum of three contiguous numbers; then a(n) = # of distinct values of S.
  * @author Sean A. Irvine
  */
 public class A008782 implements Sequence {

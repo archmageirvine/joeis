@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308036 Coefficient of <code>x^n</code> in <code>1/(n+1) * (1 + x - 3*x^2)^(n+1)</code>.
+ * A308036 Coefficient of x^n in 1/(n+1) * (1 + x - 3*x^2)^(n+1).
  * @author Georg Fischer
  */
 public class A308036 extends HolonomicRecurrence {

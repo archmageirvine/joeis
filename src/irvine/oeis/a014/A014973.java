@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014973 <code>a(n) = n/gcd(n,(n-1)!)</code>.
+ * A014973 a(n) = n/gcd(n,(n-1)!).
  * @author Sean A. Irvine
  */
 public class A014973 implements Sequence {

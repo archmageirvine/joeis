@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A171950 <code>a(1)=1. a(n) =</code> the absolute difference between (the sum of previous terms) and <code>A000217(n-2), n&gt;1</code>.
+ * A171950 a(1)=1. a(n) = the absolute difference between (the sum of previous terms) and A000217(n-2), n&gt;1.
  * @author Georg Fischer
  */
 public class A171950 extends LinearRecurrence {

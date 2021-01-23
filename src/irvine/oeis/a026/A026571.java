@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026571 <code>a(n)=T(n,n-2)</code>, T given by <code>A026568</code>. Also <code>a(n) =</code> number of integer strings <code>s(0),...,s(n)</code> counted by T, such that <code>s(n)=2</code>.
+ * A026571 a(n)=T(n,n-2), T given by A026568. Also a(n) = number of integer strings s(0),...,s(n) counted by T, such that s(n)=2.
  * @author Sean A. Irvine
  */
 public class A026571 extends A026568 {

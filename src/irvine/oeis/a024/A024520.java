@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000404;
 
 /**
- * A024520 Positions of primes in <code>A000404</code> (sums of 2 nonzero squares).
+ * A024520 Positions of primes in A000404 (sums of 2 nonzero squares).
  * @author Sean A. Irvine
  */
 public class A024520 extends A000404 {

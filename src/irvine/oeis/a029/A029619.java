@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.DistinctSequence;
 
 /**
- * A029619 Distinct numbers in <code>(3,2)-Pascal</code> triangle <code>A029618</code>.
+ * A029619 Distinct numbers in (3,2)-Pascal triangle A029618.
  * @author Sean A. Irvine
  */
 public class A029619 extends DistinctSequence {

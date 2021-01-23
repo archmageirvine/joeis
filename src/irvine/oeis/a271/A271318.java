@@ -5,7 +5,7 @@ package irvine.oeis.a271;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A271318 Expansion of <code>1/(-x*sqrt(4*x^2+1)-x^2+1)</code>.
+ * A271318 Expansion of 1/(-x*sqrt(4*x^2+1)-x^2+1).
  * @author Georg Fischer
  */
 public class A271318 extends HolonomicRecurrence {

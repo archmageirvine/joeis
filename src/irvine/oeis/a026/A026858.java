@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Italian;
 
 /**
- * A026858 Number of letters in <code>n</code> (in Italian).
+ * A026858 Number of letters in n (in Italian).
  * @author Sean A. Irvine
  */
 public class A026858 implements Sequence {

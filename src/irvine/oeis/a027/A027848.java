@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027848 <code>a(n) = Sum_{ d|n } sigma(n/d)*d^4</code>.
+ * A027848 a(n) = Sum_{ d|n } sigma(n/d)*d^4.
  * @author Sean A. Irvine
  */
 public class A027848 implements Sequence {

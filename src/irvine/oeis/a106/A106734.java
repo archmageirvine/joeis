@@ -5,7 +5,7 @@ package irvine.oeis.a106;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A106734 <code>a(n) = n^3 - 7*n + 7</code>.
+ * A106734 a(n) = n^3 - 7*n + 7.
  * @author Georg Fischer
  */
 public class A106734 extends HolonomicRecurrence {

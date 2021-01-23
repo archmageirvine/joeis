@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023585 Least prime divisor of <code>2*prime(n)-1</code>.
+ * A023585 Least prime divisor of 2*prime(n)-1.
  * @author Sean A. Irvine
  */
 public class A023585 extends A000040 {

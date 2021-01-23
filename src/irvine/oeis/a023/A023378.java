@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023378 <code>a(n+1) = a(n)</code> converted to base 10 from base <code>4</code> (written in base <code>10)</code>.
+ * A023378 a(n+1) = a(n) converted to base 10 from base 4 (written in base 10).
  * @author Sean A. Irvine
  */
 public class A023378 implements Sequence {

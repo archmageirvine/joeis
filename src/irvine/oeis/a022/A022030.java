@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022030 For even n, <code>a(n+2)</code> is the greatest integer such that <code>a(n+2)/a(n+1) &lt; a(n+1)/a(n)</code>; for odd n, the least integer such that <code>a(n+2)/a(n+1) &gt; a(n+1)/a(n); a(0) = 4, a(1) = 16</code>.
+ * A022030 For even n, a(n+2) is the greatest integer such that a(n+2)/a(n+1) &lt; a(n+1)/a(n); for odd n, the least integer such that a(n+2)/a(n+1) &gt; a(n+1)/a(n); a(0) = 4, a(1) = 16.
  * @author Sean A. Irvine
  */
 public class A022030 implements Sequence {

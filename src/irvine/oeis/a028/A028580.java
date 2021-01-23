@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028580 <code>C_{n+1}*C_n*C_{n-1}^2*C_{n-2}^4*...*C_2^{2^(n-2)}</code>, where <code>C_k</code> are the Catalan numbers <code>(A000108)</code>.
+ * A028580 C_{n+1}*C_n*C_{n-1}^2*C_{n-2}^4*...*C_2^{2^(n-2)}, where C_k are the Catalan numbers (A000108).
  * @author Sean A. Irvine
  */
 public class A028580 implements Sequence {

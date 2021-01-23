@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238328 Sum of all the parts in the partitions of <code>4n</code> into 4 parts.
+ * A238328 Sum of all the parts in the partitions of 4n into 4 parts.
  * @author Sean A. Irvine
  */
 public class A238328 extends LinearRecurrence {

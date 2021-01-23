@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022368 Fibonacci sequence beginning <code>2, 12</code>.
+ * A022368 Fibonacci sequence beginning 2, 12.
  * @author Sean A. Irvine
  */
 public class A022368 extends LinearRecurrence {

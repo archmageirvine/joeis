@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226548 Number of squares in all tilings of a <code>5 X n</code> rectangle using integer sided square tiles.
+ * A226548 Number of squares in all tilings of a 5 X n rectangle using integer sided square tiles.
  * @author Georg Fischer
  */
 public class A226548 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A022766 Ordered sequence of distinct terms of the form <code>floor(x^i * floor(x^j))</code>, i,j <code>&gt;= 0</code>, where <code>x = e/2</code>.
+ * A022766 Ordered sequence of distinct terms of the form floor(x^i * floor(x^j)), i,j &gt;= 0, where x = e/2.
  * @author Sean A. Irvine
  */
 public class A022766 extends A022765 {

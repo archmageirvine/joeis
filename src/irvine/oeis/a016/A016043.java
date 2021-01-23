@@ -5,7 +5,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A016043 <code>2^(2^n) +- 1</code> without repeats.
+ * A016043 2^(2^n) +- 1 without repeats.
  * @author Sean A. Irvine
  */
 public class A016043 extends RecordSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A106037 Special highly composite numbers: a highly composite number <code>(A002182)</code> that divides all larger highly composite numbers.
+ * A106037 Special highly composite numbers: a highly composite number (A002182) that divides all larger highly composite numbers.
  * @author Georg Fischer
  */
 public class A106037 extends FiniteSequence {

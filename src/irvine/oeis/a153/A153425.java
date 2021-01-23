@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A153425 Numbers n such that <code>n = p*phi(p)</code> where p is product of the digits of <code>n</code>.
+ * A153425 Numbers n such that n = p*phi(p) where p is product of the digits of n.
  * @author Sean A. Irvine
  */
 public class A153425 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143412 Main diagonal of <code>A143410</code>.
+ * A143412 Main diagonal of A143410.
  * @author Georg Fischer
  */
 public class A143412 extends HolonomicRecurrence {

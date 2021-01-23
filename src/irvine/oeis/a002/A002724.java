@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002724 Number of inequivalent <code>n X n</code> binary matrices, where equivalence means permutations of rows or columns.
+ * A002724 Number of inequivalent n X n binary matrices, where equivalence means permutations of rows or columns.
  * @author Sean A. Irvine
  */
 public class A002724 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A330083 <code>a(n)</code> is the smallest number k <code>&gt; 0</code> such that for each b <code>= 2..n</code> the base-b expansion of k has exactly <code>n -</code> b zeros.
+ * A330083 a(n) is the smallest number k &gt; 0 such that for each b = 2..n the base-b expansion of k has exactly n - b zeros.
  * @author Georg Fischer
  */
 public class A330083 extends FiniteSequence {

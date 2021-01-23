@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023106 <code>a(n)</code> is a power of the sum of its digits.
+ * A023106 a(n) is a power of the sum of its digits.
  * @author Sean A. Irvine
  */
 public class A023106 implements Sequence {
@@ -20,7 +20,7 @@ public class A023106 implements Sequence {
         return mN;
       }
       final long s = ZUtils.digitSum(mN);
-      if (s > 1 && mN.mod(s) == 0 && mN.equals(Z.valueOf(s).pow((int) Math.round(mN.log(s))))) {
+      if (s > 1 && mN.mod(s) == 0 && mN.equals(Z.valueOf(s).pow(Math.round(mN.log(s))))) {
         return mN;
       }
     }

@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328824 Numerators of <code>A113405(-n)</code> (see the comment for details).
+ * A328824 Numerators of A113405(-n) (see the comment for details).
  * @author Georg Fischer
  */
 public class A328824 extends HolonomicRecurrence {

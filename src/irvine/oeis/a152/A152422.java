@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A152422 Decimal expansion of <code>(sqrt(3)-1)/2</code>.
+ * A152422 Decimal expansion of (sqrt(3)-1)/2.
  * @author Georg Fischer
  */
 public class A152422 extends DecimalExpansionSequence {

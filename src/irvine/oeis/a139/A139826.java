@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A139826 Squarefree idoneal numbers <code>(A000926)</code>.
+ * A139826 Squarefree idoneal numbers (A000926).
  * @author Georg Fischer
  */
 public class A139826 extends FiniteSequence {

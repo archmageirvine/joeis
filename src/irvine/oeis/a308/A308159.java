@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308159 Sum of the largest sides of all integer-sided isosceles triangles with perimeter <code>n</code>.
+ * A308159 Sum of the largest sides of all integer-sided isosceles triangles with perimeter n.
  * @author Georg Fischer
  */
 public class A308159 extends HolonomicRecurrence {

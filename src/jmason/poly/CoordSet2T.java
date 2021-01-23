@@ -1,6 +1,9 @@
 package jmason.poly;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+
+import irvine.util.Pair;
 
 /**
  * A set of <code>xy</code> coordinates of triangles in a polyiamond
@@ -31,7 +34,14 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   protected void verify() {
   }
 
-  CoordSet2T(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
+  /**
+   * Triangular coordinates.
+   * @param size the size
+   * @param flagFree free
+   * @param flagFixed fixed
+   * @param flagOneSided one-sided
+   */
+  public CoordSet2T(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
     mSize = size;
     mSet = new TriangleSet(size);
     mFlagFree = flagFree;
@@ -93,7 +103,8 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     ((TriangleSet) mSet).setTriangle(i, x, y, colour);
   }
 
-  void initMonoiamond() {
+  /** The monoiamond. */
+  public void initMonoiamond() {
     setTriangle(0, 1, 1, Square.BLACK);
   }
 
@@ -283,5 +294,27 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   @Override
   protected String makeUnique() {
     return new UniqueMaker2T(this).uniqString();
+  }
+
+  /**
+   * Compute the size of the perimeter of this coordinate set.
+   * @return perimeter size
+   */
+  public int perimeterSize() {
+    final HashSet<Pair<Integer, Integer>> h = new HashSet<>();
+    for (int k = 0; k < mSize; k++) {
+      final Triangle t = mSet.mSet[k];
+      final int x = mSet.getX(k);
+      final int y = mSet.getY(k);
+      h.add(new Pair<>(x + 1, y));
+      h.add(new Pair<>(x - 1, y));
+      h.add(new Pair<>(x, t.up() ? y - 2 : y + 2));
+    }
+    for (int k = 0; k < mSize; k++) {
+      final int x = mSet.getX(k);
+      final int y = mSet.getY(k);
+      h.remove(new Pair<>(x, y));
+    }
+    return h.size();
   }
 }

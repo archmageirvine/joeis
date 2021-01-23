@@ -5,13 +5,13 @@ package irvine.oeis.a293;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A293842 Numbers k such that <code>3*10^k - 31</code> is prime.
+ * A293842 Numbers k such that 3*10^k - 31 is prime.
  * @author Georg Fischer
  */
 public class A293842 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A293842() {
-    super(1, 2, 3, 10, -31, 0);
+    super(1, 2, 3, 10, -31);
   }
 }

@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A046526 Numbers common to <code>A033950</code> and <code>A035033</code>.
+ * A046526 Numbers common to A033950 and A035033.
  * @author Georg Fischer
  */
 public class A046526 extends FiniteSequence {

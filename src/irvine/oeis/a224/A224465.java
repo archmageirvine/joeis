@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224465 The Wiener index of the nanostar dendrimer defined pictorially as <code>NS[n]</code> in the Z. S. Irani reference.
+ * A224465 The Wiener index of the nanostar dendrimer defined pictorially as NS[n] in the Z. S. Irani reference.
  * @author Georg Fischer
  */
 public class A224465 extends GeneratingFunctionSequence {

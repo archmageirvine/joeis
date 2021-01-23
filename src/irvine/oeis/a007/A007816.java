@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007816 Number of abstract simplicial 2-complexes on <code>{1,2,3,...,n+3}</code> which triangulate the <code>2-sphere: C(n+3,2)*(4n+1)!/(3n+3)!</code>.
+ * A007816 Number of abstract simplicial 2-complexes on {1,2,3,...,n+3} which triangulate the 2-sphere: C(n+3,2)*(4n+1)!/(3n+3)!.
  * @author Sean A. Irvine
  */
 public class A007816 implements Sequence {

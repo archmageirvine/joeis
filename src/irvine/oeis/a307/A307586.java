@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A307586 Numbers k such that the determinant of the Vandermonde matrix of their digits is equal to <code>sigma(k)</code>, the sum of divisors of k.
+ * A307586 Numbers k such that the determinant of the Vandermonde matrix of their digits is equal to sigma(k), the sum of divisors of k.
  * @author Georg Fischer
  */
 public class A307586 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A268900 Number of <code>n X 4 0..2</code> arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two exactly once.
+ * A268900 Number of n X 4 0..2 arrays with some element plus some horizontally or antidiagonally adjacent neighbor totalling two exactly once.
  * @author Georg Fischer
  */
 public class A268900 extends GeneratingFunctionSequence {

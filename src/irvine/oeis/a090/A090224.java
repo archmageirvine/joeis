@@ -5,7 +5,7 @@ package irvine.oeis.a090;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A090224 Number of possible positions for n discs on a standard <code>7 X 6</code> board of <code>Connect-Four</code>.
+ * A090224 Number of possible positions for n discs on a standard 7 X 6 board of Connect-Four.
  * @author Georg Fischer
  */
 public class A090224 extends FiniteSequence {

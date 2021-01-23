@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026021 <code>T(n,[ n/2 ])</code>, where T is the array defined in <code>A026009</code>.
+ * A026021 T(n,[ n/2 ]), where T is the array defined in A026009.
  * @author Sean A. Irvine
  */
 public class A026021 implements Sequence {

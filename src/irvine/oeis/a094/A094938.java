@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094938 <code>a(n)=(-36^n/18)*B(2n,1/6)/B(2n,1/3)</code> where <code>B(n,x)</code> is the n-th Bernoulli polynomial.
+ * A094938 a(n)=(-36^n/18)*B(2n,1/6)/B(2n,1/3) where B(n,x) is the n-th Bernoulli polynomial.
  * @author Georg Fischer
  */
 public class A094938 extends LinearRecurrence {

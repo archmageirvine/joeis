@@ -5,7 +5,7 @@ package irvine.oeis.a046;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A046994 Number of Greek-key tours on a <code>3 X n</code> board; i.e., self-avoiding walks on a <code>3 X n</code> grid starting in the top left corner.
+ * A046994 Number of Greek-key tours on a 3 X n board; i.e., self-avoiding walks on a 3 X n grid starting in the top left corner.
  * @author Georg Fischer
  */
 public class A046994 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267923 Binary representation of the n-th iteration of the "Rule <code>245"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A267923 Binary representation of the n-th iteration of the "Rule 245" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267923 extends GeneratingFunctionSequence {

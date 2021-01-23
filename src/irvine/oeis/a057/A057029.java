@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057029 Central column of arrays in <code>A057027</code> and <code>A057028</code>.
+ * A057029 Central column of arrays in A057027 and A057028.
  * @author Sean A. Irvine
  */
 public class A057029 extends LinearRecurrence {

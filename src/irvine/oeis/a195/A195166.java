@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A195166 Numbers expressible as <code>2^a-2^b</code>, with <code>0 &lt;=</code> b&lt; a, such that <code>n^a-n^b</code> is divisible by <code>2^a-2^b</code> for all <code>n</code>.
+ * A195166 Numbers expressible as 2^a-2^b, with 0 &lt;= b&lt; a, such that n^a-n^b is divisible by 2^a-2^b for all n.
  * @author Georg Fischer
  */
 public class A195166 extends FiniteSequence {

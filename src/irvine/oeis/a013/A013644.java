@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
 /**
- * A013644 Numbers n such that the continued fraction for <code>sqrt(n)</code> has period 4.
+ * A013644 Numbers n such that the continued fraction for sqrt(n) has period 4.
  * @author Sean A. Irvine
  */
 public class A013644 extends A003285 {

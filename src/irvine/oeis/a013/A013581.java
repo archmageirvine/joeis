@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A013581 Let P <code>= 2*3*5*..*p_n = n-th</code> primorial number <code>(A002110), G = Z_2xZ_3x...xZ_{p_n}; a(n) = max{e</code> in <code>G} min{i</code> : both <code>e+i, e-i</code> are relatively prime to <code>P}</code>.
+ * A013581 Let P = 2*3*5*..*p_n = n-th primorial number (A002110), G = Z_2xZ_3x...xZ_{p_n}; a(n) = max{e in G} min{i : both e+i, e-i are relatively prime to P}.
  * @author Sean A. Irvine
  */
 public class A013581 implements Sequence {

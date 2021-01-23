@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023299 Numbers n such that n remains prime through 3 iterations of function <code>f(x) = 9x + 10</code>.
+ * A023299 Numbers n such that n remains prime through 3 iterations of function f(x) = 9x + 10.
  * @author Sean A. Irvine
  */
 public class A023299 extends A000040 {

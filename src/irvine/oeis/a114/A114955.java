@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A114955 A <code>2/3-power</code> Fibonacci sequence.
+ * A114955 A 2/3-power Fibonacci sequence.
  * @author Georg Fischer
  */
 public class A114955 extends GeneratingFunctionSequence {

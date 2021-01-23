@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003074 Number of different numbers <code>&lt;= n</code> that are sums of 3 positive cubes.
+ * A003074 Number of different numbers &lt;= n that are sums of 3 positive cubes.
  * @author Sean A. Irvine
  */
 public class A003074 extends A003072 {

@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298201 Number of Eulerian orientations of the torus grid graph <code>C_4 X C_n</code>.
+ * A298201 Number of Eulerian orientations of the torus grid graph C_4 X C_n.
  * @author Georg Fischer
  */
 public class A298201 extends GeneratingFunctionSequence {

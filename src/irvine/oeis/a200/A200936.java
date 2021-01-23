@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200936 Successive values x of solutions Mordell's elliptic curve <code>x^3-y^2 =</code> d contained points <code>{x,y}</code> with quadratic extension <code>sqrt(2)</code> over rationals.
+ * A200936 Successive values x of solutions Mordell's elliptic curve x^3-y^2 = d contained points {x,y} with quadratic extension sqrt(2) over rationals.
  * @author Georg Fischer
  */
 public class A200936 extends GeneratingFunctionSequence {

@@ -1,8 +1,8 @@
 package irvine.oeis.a028;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -17,7 +17,8 @@ public class A028842 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      if (mPrime.isPrime(LongUtils.digitProduct(++mN))) {
+      final long n = ++mN;
+      if (mPrime.isPrime(ZUtils.digitProduct(n))) {
         return Z.valueOf(mN);
       }
     }

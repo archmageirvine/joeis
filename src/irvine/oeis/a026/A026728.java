@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026728 <code>a(n) =</code> number of primes of the form <code>k*(n-k) + 1</code>.
+ * A026728 a(n) = number of primes of the form k*(n-k) + 1.
  * @author Sean A. Irvine
  */
 public class A026728 implements Sequence {

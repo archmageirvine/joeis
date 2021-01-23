@@ -6,7 +6,7 @@ package irvine.oeis.a187;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A187536 Partial sums of the central Lah numbers <code>(A187535)</code>.
+ * A187536 Partial sums of the central Lah numbers (A187535).
  * @author Georg Fischer
  */
 public class A187536 extends HolonomicRecurrence {

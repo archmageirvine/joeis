@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A071005 Binary expansion of <code>Pi/3, A019670</code>.
+ * A071005 Binary expansion of Pi/3, A019670.
  * @author Georg Fischer
  */
 public class A071005 extends DecimalExpansionSequence {

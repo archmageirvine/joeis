@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329824 Number of length-n binary words having no palindromes of length <code>&gt; 5</code> as contiguous subwords.
+ * A329824 Number of length-n binary words having no palindromes of length &gt; 5 as contiguous subwords.
  * @author Georg Fischer
  */
 public class A329824 extends HolonomicRecurrence {

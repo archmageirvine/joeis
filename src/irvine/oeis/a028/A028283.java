@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028283 Central elements in 4-Pascal triangle <code>A028275</code> (by row).
+ * A028283 Central elements in 4-Pascal triangle A028275 (by row).
  * @author Sean A. Irvine
  */
 public class A028283 implements Sequence {

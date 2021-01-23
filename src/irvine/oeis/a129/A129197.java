@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129197 <code>a(n) = numerator( 3*(3+(-1)^n)/(n+1)^3 )</code>.
+ * A129197 a(n) = numerator( 3*(3+(-1)^n)/(n+1)^3 ).
  * @author Georg Fischer
  */
 public class A129197 extends GeneratingFunctionSequence {

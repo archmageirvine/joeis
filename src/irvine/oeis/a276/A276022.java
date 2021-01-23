@@ -6,7 +6,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276022 <code>n^2 * a(n) = 3*(5*n^2 - 5*n + 2) * a(n-1) - 16*(5*n^2 - 10*n + 6) * a(n-2) + 36*(5*n^2 - 15*n + 12) * a(n-3) - 144*(n-2)^2 * a(n-4)</code>, with <code>a(0)=1, a(1)=6, a(2)=30, a(3)=144</code>.
+ * A276022 n^2 * a(n) = 3*(5*n^2 - 5*n + 2) * a(n-1) - 16*(5*n^2 - 10*n + 6) * a(n-2) + 36*(5*n^2 - 15*n + 12) * a(n-3) - 144*(n-2)^2 * a(n-4), with a(0)=1, a(1)=6, a(2)=30, a(3)=144.
  * @author Georg Fischer
  */
 public class A276022 extends HolonomicRecurrence {

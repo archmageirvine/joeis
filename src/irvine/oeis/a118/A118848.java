@@ -5,7 +5,7 @@ package irvine.oeis.a118;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A118848 Number of minutes past midnight represented by <code>A050246(n)</code>.
+ * A118848 Number of minutes past midnight represented by A050246(n).
  * @author Georg Fischer
  */
 public class A118848 extends FiniteSequence {

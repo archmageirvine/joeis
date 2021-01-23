@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000275 Coefficients of a Bessel function (reciprocal of <code>J_0(z))</code>; also pairs of permutations with rise/rise forbidden.
+ * A000275 Coefficients of a Bessel function (reciprocal of J_0(z)); also pairs of permutations with rise/rise forbidden.
  * @author Sean A. Irvine
  */
 public class A000275 implements Sequence {

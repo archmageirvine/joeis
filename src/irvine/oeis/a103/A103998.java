@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103998 Number of dimer tilings of a <code>4 x 2n</code> Moebius strip.
+ * A103998 Number of dimer tilings of a 4 x 2n Moebius strip.
  * @author Georg Fischer
  */
 public class A103998 extends GeneratingFunctionSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005931 Theta series of the coset of the <code>E_7</code> lattice in its dual.
+ * A005931 Theta series of the coset of the E_7 lattice in its dual.
  * @author Sean A. Irvine
  */
 public class A005931 implements Sequence {

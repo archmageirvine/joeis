@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212592 <code>a(n)</code> is the difference between multiples of 7 with even and odd digit sum in base 6 in interval <code>[0,6^n)</code>.
+ * A212592 a(n) is the difference between multiples of 7 with even and odd digit sum in base 6 in interval [0,6^n).
  * @author Sean A. Irvine
  */
 public class A212592 extends LinearRecurrence {

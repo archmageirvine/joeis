@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165719 Integers of the form <code>k*(k+9)/8</code>.
+ * A165719 Integers of the form k*(k+9)/8.
  * @author Georg Fischer
  */
 public class A165719 extends GeneratingFunctionSequence {

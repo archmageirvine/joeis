@@ -5,7 +5,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074675 <code>Three-digit distinct-digit</code> primes.
+ * A074675 Three-digit distinct-digit primes.
  * @author Georg Fischer
  */
 public class A074675 extends FiniteSequence {

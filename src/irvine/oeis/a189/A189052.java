@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189052 <code>a(n)</code> is the number of inversions in all compositions of <code>n</code>.
+ * A189052 a(n) is the number of inversions in all compositions of n.
  * @author Georg Fischer
  */
 public class A189052 extends LinearRecurrence {

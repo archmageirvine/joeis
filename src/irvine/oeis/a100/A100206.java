@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100206 Row sums of Clark's triangle <code>A046902</code>.
+ * A100206 Row sums of Clark's triangle A046902.
  * @author Georg Fischer
  */
 public class A100206 extends GeneratingFunctionSequence {

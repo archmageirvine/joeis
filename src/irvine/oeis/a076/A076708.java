@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076708 Numbers n such that triangular numbers <code>T(n)</code> and <code>T(n+1)</code> sum to another triangular number (that is also a perfect square).
+ * A076708 Numbers n such that triangular numbers T(n) and T(n+1) sum to another triangular number (that is also a perfect square).
  * @author Sean A. Irvine
  */
 public class A076708 extends LinearRecurrence {

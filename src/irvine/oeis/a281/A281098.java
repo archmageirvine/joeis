@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281098 <code>a(n)</code> is the GCD of the sequence <code>d(n) = A261327(k+n) - A261327(k)</code> for all k.
+ * A281098 a(n) is the GCD of the sequence d(n) = A261327(k+n) - A261327(k) for all k.
  * @author Sean A. Irvine
  */
 public class A281098 extends LinearRecurrence {

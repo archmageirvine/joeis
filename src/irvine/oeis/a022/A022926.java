@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022926 Number of powers of 7 between <code>2^n</code> and <code>2^(n+1)</code>.
+ * A022926 Number of powers of 7 between 2^n and 2^(n+1).
  * @author Sean A. Irvine
  */
 public class A022926 implements Sequence {
 
-  private static final CR LOG = CR.TWO.log().divide(CR.valueOf(7).log());
+  private static final CR LOG = CR.TWO.log().divide(CR.SEVEN.log());
   private long mN = -1;
 
   @Override

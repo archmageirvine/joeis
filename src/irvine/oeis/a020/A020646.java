@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020646 Least positive integer k for which <code>7^n</code> divides <code>k!</code>.
+ * A020646 Least positive integer k for which 7^n divides k!.
  * @author Sean A. Irvine
  */
 public class A020646 implements Sequence {
@@ -22,7 +22,7 @@ public class A020646 implements Sequence {
     while (mM < mN) {
       mF = mF.multiply(++mR);
       Z[] qr;
-      while (Z.ZERO.equals((qr = mF.divideAndRemainder(Z.SEVEN))[1])) {
+      while ((qr = mF.divideAndRemainder(Z.SEVEN))[1].isZero()) {
         mF = qr[0];
         ++mM;
       }

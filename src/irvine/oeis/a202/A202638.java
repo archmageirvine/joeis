@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202638 y-values in the solution to <code>x^2 - 7*y^2 = -3</code>.
+ * A202638 y-values in the solution to x^2 - 7*y^2 = -3.
  * @author Sean A. Irvine
  */
 public class A202638 extends LinearRecurrence {

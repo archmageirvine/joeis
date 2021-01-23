@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028968 Numbers represented by quadratic form with Gram matrix <code>[ 2, 1, 1; 1, 2, 1; 1, 1, 3 ]</code>.
+ * A028968 Numbers represented by quadratic form with Gram matrix [ 2, 1, 1; 1, 2, 1; 1, 1, 3 ].
  * @author Sean A. Irvine
  */
 public class A028968 implements Sequence {

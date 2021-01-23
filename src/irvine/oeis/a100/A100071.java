@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100071 <code>a(n) = n * binomial(n-1, floor((n-1)/2)) = n * max_{i=0..n} binomial(n-1, i)</code>.
+ * A100071 a(n) = n * binomial(n-1, floor((n-1)/2)) = n * max_{i=0..n} binomial(n-1, i).
  * @author Georg Fischer
  */
 public class A100071 extends HolonomicRecurrence {

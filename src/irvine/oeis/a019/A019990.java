@@ -5,7 +5,7 @@ import java.util.Set;
 import irvine.math.z.Z;
 
 /**
- * A019990 Indices n such that <code>A307672(2*n) = 2</code>.
+ * A019990 Indices n such that A307672(2*n) = 2.
  * @author Sean A. Irvine
  */
 public class A019990 extends A019989 {

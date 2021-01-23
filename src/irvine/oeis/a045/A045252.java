@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A045252 Numbers whose <code>base-5</code> expansion contains exactly one 1 and one 4.
+ * A045252 Numbers whose base-5 expansion contains exactly one 1 and one 4.
  * @author Georg Fischer
  */
 public class A045252 extends RunsBaseSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008923 Euler's family of solutions to <code>n = x^4 + y^4 = z^4 + w^4</code>.
+ * A008923 Euler's family of solutions to n = x^4 + y^4 = z^4 + w^4.
  * @author Sean A. Irvine
  */
 public class A008923 implements Sequence {

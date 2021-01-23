@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075417 Squares of <code>A002282: a(n) = (8*(10^n - 1)/9)^2</code>.
+ * A075417 Squares of A002282: a(n) = (8*(10^n - 1)/9)^2.
  * @author Georg Fischer
  */
 public class A075417 extends HolonomicRecurrence {

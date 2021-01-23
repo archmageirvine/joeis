@@ -2,7 +2,7 @@ package irvine.math.expression;
 
 /**
  * An expression for the natural logarithm.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Logarithm extends UnaryFunction {
 

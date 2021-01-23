@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A240986 Determinants of <code>n X n</code> matrices of sets of distinct primes selected by increasing prime gaps (see comments).
+ * A240986 Determinants of n X n matrices of sets of distinct primes selected by increasing prime gaps (see comments).
  * @author Sean A. Irvine
  */
 public class A240986 implements Sequence {

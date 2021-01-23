@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004616 Divisible only by primes congruent to <code>2 mod 5</code>.
+ * A004616 Divisible only by primes congruent to 2 mod 5.
  * @author Sean A. Irvine
  */
 public class A004616 implements Sequence {

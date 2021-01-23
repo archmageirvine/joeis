@@ -5,13 +5,13 @@ package irvine.oeis.a141;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A141774 Numbers n such that <code>2*11^n + 1</code> is prime.
+ * A141774 Numbers n such that 2*11^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A141774 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A141774() {
-    super(1, 0, 2, 11, +1, 0);
+    super(1, 0, 2, 11, 1);
   }
 }

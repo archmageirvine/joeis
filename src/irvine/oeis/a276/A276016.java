@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276016 Diagonal of <code>(1 - 9 x y)/((1 - 3 y - 2 x + 3 y^2 + 9 x^2 y) * (1 - u - v - w))</code>.
+ * A276016 Diagonal of (1 - 9 x y)/((1 - 3 y - 2 x + 3 y^2 + 9 x^2 y) * (1 - u - v - w)).
  * @author Georg Fischer
  */
 public class A276016 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a058;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A058006 Alternating factorials: <code>0! - 1! + 2! - ... + (-1)^n n!</code>.
+ * A058006 Alternating factorials: 0! - 1! + 2! - ... + (-1)^n n!.
  * @author Georg Fischer
  */
 public class A058006 extends HolonomicRecurrence {

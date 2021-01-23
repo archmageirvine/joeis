@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057174 <code>a(n+3)=a(n)+a(n+1)-a(n+2)</code>, starting with 1,2,3.
+ * A057174 a(n+3)=a(n)+a(n+1)-a(n+2), starting with 1,2,3.
  * @author Sean A. Irvine
  */
 public class A057174 extends LinearRecurrence {

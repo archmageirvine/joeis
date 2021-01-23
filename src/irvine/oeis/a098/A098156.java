@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098156 Interleave <code>n+1</code> and <code>2n+1</code> and take binomial transform.
+ * A098156 Interleave n+1 and 2n+1 and take binomial transform.
  * @author Georg Fischer
  */
 public class A098156 extends GeneratingFunctionSequence {

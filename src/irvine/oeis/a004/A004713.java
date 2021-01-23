@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004713 Positions of ones in binary expansion of <code>1/sqrt(2)</code>.
+ * A004713 Positions of ones in binary expansion of 1/sqrt(2).
  * @author Sean A. Irvine
  */
 public class A004713 extends DecimalExpansionSequence {

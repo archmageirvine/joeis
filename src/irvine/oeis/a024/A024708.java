@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A024708 Number of distinct prime divisors of n-th term of <code>A024702</code>.
+ * A024708 Number of distinct prime divisors of n-th term of A024702.
  * @author Sean A. Irvine
  */
 public class A024708 extends A024702 {

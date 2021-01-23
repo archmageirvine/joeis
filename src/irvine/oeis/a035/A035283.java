@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A035283 Expansion of zeta function of ring <code>H(Q(sqrt(2))</code>.
+ * A035283 Expansion of zeta function of ring H(Q(sqrt(2)).
  * @author Sean A. Irvine
  */
 public class A035283 implements Sequence {
@@ -25,7 +25,7 @@ public class A035283 implements Sequence {
           sum = sum.add(mA.a(t).multiply(mA.a(k).multiply(k)));
         }
       }
-      if (!Z.ZERO.equals(sum)) {
+      if (!sum.isZero()) {
         return sum;
       }
     }

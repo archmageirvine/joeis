@@ -6,7 +6,7 @@ package irvine.oeis.a255;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A255139 <code>a(n) = n! - Fibonacci(n)</code>.
+ * A255139 a(n) = n! - Fibonacci(n).
  * @author Georg Fischer
  */
 public class A255139 extends HolonomicRecurrence {

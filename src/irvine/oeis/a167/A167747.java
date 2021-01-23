@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167747 <code>a(n) = phi(6^n)</code>.
+ * A167747 a(n) = phi(6^n).
  * @author Georg Fischer
  */
 public class A167747 extends GeneratingFunctionSequence {

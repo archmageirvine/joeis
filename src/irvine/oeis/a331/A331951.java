@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331951 Number of binary trees with n internal nodes that contain the subtree <code>[Z, [Z</code>, U, <code>U], [Z</code>, U, <code>U]]</code>.
+ * A331951 Number of binary trees with n internal nodes that contain the subtree [Z, [Z, U, U], [Z, U, U]].
  * @author Georg Fischer
  */
 public class A331951 extends HolonomicRecurrence {

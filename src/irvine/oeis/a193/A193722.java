@@ -7,7 +7,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A193722 Triangular array: the fusion of <code>(x+1)^n</code> and <code>(x+2)^n</code>; see Comments for the definition of fusion.
+ * A193722 Triangular array: the fusion of (x+1)^n and (x+2)^n; see Comments for the definition of fusion.
  * @author Georg Fischer
  */
 public class A193722 extends GeneratingFunctionTriangle {

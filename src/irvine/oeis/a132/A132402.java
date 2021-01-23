@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A132402 Binomial transform of <code>A004524</code> starting at 1.
+ * A132402 Binomial transform of A004524 starting at 1.
  * @author Georg Fischer
  */
 public class A132402 extends GeneratingFunctionSequence {

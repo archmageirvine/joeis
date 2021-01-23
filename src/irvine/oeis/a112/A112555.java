@@ -7,7 +7,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A112555 Triangle T, read by rows, such that the m-th matrix power satisfies <code>T^m = I + m*(T - I)</code> and consequently the matrix logarithm satisfies <code>log(T) = T -</code> I, where I is the identity matrix.
+ * A112555 Triangle T, read by rows, such that the m-th matrix power satisfies T^m = I + m*(T - I) and consequently the matrix logarithm satisfies log(T) = T - I, where I is the identity matrix.
  * @author Georg Fischer
  */
 public class A112555 extends GeneratingFunctionTriangle {

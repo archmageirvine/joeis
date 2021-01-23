@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089508 Solution to a binomial problem together with companion sequence <code>A081016(n-1)</code>.
+ * A089508 Solution to a binomial problem together with companion sequence A081016(n-1).
  * @author Sean A. Irvine
  */
 public class A089508 extends LinearRecurrence {

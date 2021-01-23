@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118879 Let <code>T(S,Q)</code> be the sequence obtaining by starting with S and repeatedly reversing the digits and adding Q to get the next term. This is <code>T(1016,5)</code>, the first S for which <code>T(S,5)</code> reaches a cycle of length 36.
+ * A118879 Let T(S,Q) be the sequence obtaining by starting with S and repeatedly reversing the digits and adding Q to get the next term. This is T(1016,5), the first S for which T(S,5) reaches a cycle of length 36.
  * @author Sean A. Irvine
  */
 public class A118879 extends LinearRecurrence {

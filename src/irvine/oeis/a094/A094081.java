@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094081 Smallest integral ladder whose ends slide over the respective distances 1 and <code>m=2n+1</code> while slipping down along horizontal ground and vertical wall against which it leans.
+ * A094081 Smallest integral ladder whose ends slide over the respective distances 1 and m=2n+1 while slipping down along horizontal ground and vertical wall against which it leans.
  * @author Georg Fischer
  */
 public class A094081 extends GeneratingFunctionSequence {

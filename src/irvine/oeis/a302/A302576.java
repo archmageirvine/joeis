@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302576 Numbers k such that <code>k/10 + 1</code> is a square.
+ * A302576 Numbers k such that k/10 + 1 is a square.
  * @author Georg Fischer
  */
 public class A302576 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120589 Self-convolution of <code>A120588</code>, such that <code>a(n) = 3*A120588(n)</code> for <code>n &gt;= 2</code>.
+ * A120589 Self-convolution of A120588, such that a(n) = 3*A120588(n) for n &gt;= 2.
  * @author Georg Fischer
  */
 public class A120589 extends HolonomicRecurrence {

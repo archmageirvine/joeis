@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A001837 Numbers n such that <code>phi(2n+1) &lt; phi(2n)</code>.
+ * A001837 Numbers n such that phi(2n+1) &lt; phi(2n).
  * @author Sean A. Irvine
  */
 public class A001837 extends A000010 {

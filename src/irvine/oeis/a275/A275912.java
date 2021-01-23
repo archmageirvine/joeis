@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A275912 G.f. is square root of g.f. for <code>A239112</code>.
+ * A275912 G.f. is square root of g.f. for A239112.
  * @author Georg Fischer
  */
 public class A275912 extends HolonomicRecurrence {

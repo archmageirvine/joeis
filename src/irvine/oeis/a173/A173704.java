@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173704 Partial sums of <code>floor(n^3/2)</code>.
+ * A173704 Partial sums of floor(n^3/2).
  * @author Sean A. Irvine
  */
 public class A173704 extends LinearRecurrence {

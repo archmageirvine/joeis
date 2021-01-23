@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A246360 <code>a(1) = 1</code>, then <code>A007051 ((3^n)+1)/2</code> interleaved with <code>A057198 (5*3^(n-1)+1)/2</code>.
+ * A246360 a(1) = 1, then A007051 ((3^n)+1)/2 interleaved with A057198 (5*3^(n-1)+1)/2.
  * @author Georg Fischer
  */
 public class A246360 extends GeneratingFunctionSequence {

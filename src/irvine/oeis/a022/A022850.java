@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022850 Integer nearest <code>nx</code>, where <code>x = sqrt(7)</code>.
+ * A022850 Integer nearest nx, where x = sqrt(7).
  * @author Sean A. Irvine
  */
 public class A022850 implements Sequence {
 
-  private static final CR N = CR.valueOf(7).sqrt();
+  private static final CR N = CR.SEVEN.sqrt();
   private long mN = -1;
 
   @Override

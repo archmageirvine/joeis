@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211853 Number of nonnegative integer arrays of length <code>2n+8</code> with new values 0 upwards introduced in order, no three adjacent elements all unequal, and containing the value <code>n+1</code>.
+ * A211853 Number of nonnegative integer arrays of length 2n+8 with new values 0 upwards introduced in order, no three adjacent elements all unequal, and containing the value n+1.
  * @author Georg Fischer
  */
 public class A211853 extends GeneratingFunctionSequence {

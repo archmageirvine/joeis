@@ -4,7 +4,7 @@ package irvine.oeis.a285;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A285187 <code>a(n) = Sum(psi(k-1)*psi(n-k-1),k=0..n)+(1-(-1)^n)/2</code>, where <code>psi(k) = A000931(k+6)</code>.
+ * A285187 a(n) = Sum(psi(k-1)*psi(n-k-1),k=0..n)+(1-(-1)^n)/2, where psi(k) = A000931(k+6).
  * @author Georg Fischer
  */
 public class A285187 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154293 Integers of the form <code>t/6</code>, where t is a triangular number <code>(A000217)</code>.
+ * A154293 Integers of the form t/6, where t is a triangular number (A000217).
  * @author Sean A. Irvine
  */
 public class A154293 extends LinearRecurrence {

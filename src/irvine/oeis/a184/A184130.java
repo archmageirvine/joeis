@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184130 Number of <code>n X 2 0..2</code> arrays with rows and columns in nondecreasing order.
+ * A184130 Number of n X 2 0..2 arrays with rows and columns in nondecreasing order.
  * @author Georg Fischer
  */
 public class A184130 extends GeneratingFunctionSequence {

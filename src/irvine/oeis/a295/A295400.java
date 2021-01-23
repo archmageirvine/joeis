@@ -5,13 +5,13 @@ package irvine.oeis.a295;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A295400 Numbers k such that <code>3*10^k - 23</code> is prime.
+ * A295400 Numbers k such that 3*10^k - 23 is prime.
  * @author Georg Fischer
  */
 public class A295400 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A295400() {
-    super(1, 1, 3, 10, -23, 0);
+    super(1, 1, 3, 10, -23);
   }
 }

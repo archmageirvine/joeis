@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172510 <code>a(n) = binomial(n + 4, 4) * 8^n</code>.
+ * A172510 a(n) = binomial(n + 4, 4) * 8^n.
  * @author Sean A. Irvine
  */
 public class A172510 extends LinearRecurrence {

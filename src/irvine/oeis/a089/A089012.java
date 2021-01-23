@@ -6,7 +6,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089012 <code>a(n) = 1</code> if n is an exponent of the Weyl group <code>W(E_6), 0</code> otherwise.
+ * A089012 a(n) = 1 if n is an exponent of the Weyl group W(E_6), 0 otherwise.
  * @author Georg Fischer
  */
 public class A089012 extends GeneratingFunctionSequence {

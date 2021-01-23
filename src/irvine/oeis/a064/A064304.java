@@ -4,7 +4,7 @@ package irvine.oeis.a064;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A064304 Eighth diagonal of triangle <code>A064094</code>.
+ * A064304 Eighth diagonal of triangle A064094.
  * @author Georg Fischer
  */
 public class A064304 extends GeneratingFunctionSequence {

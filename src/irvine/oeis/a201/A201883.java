@@ -6,7 +6,7 @@ package irvine.oeis.a201;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A201883 The number of simple labeled graphs on n nodes such that <code>i)</code> all connected components have exactly one cycle, ii) all vertices have degree at most <code>3</code>, iii) vertices of degree 3 are on a cycle.
+ * A201883 The number of simple labeled graphs on n nodes such that i) all connected components have exactly one cycle, ii) all vertices have degree at most 3, iii) vertices of degree 3 are on a cycle.
  * @author Georg Fischer
  */
 public class A201883 extends HolonomicRecurrence {

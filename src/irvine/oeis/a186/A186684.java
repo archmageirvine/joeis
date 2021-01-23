@@ -5,7 +5,7 @@ package irvine.oeis.a186;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A186684 Total number of positive integers below <code>10^n</code> requiring 19 positive biquadrates in their representation as sum of biquadrates.
+ * A186684 Total number of positive integers below 10^n requiring 19 positive biquadrates in their representation as sum of biquadrates.
  * @author Georg Fischer
  */
 public class A186684 extends HolonomicRecurrence {

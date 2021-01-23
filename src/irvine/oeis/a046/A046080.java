@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046080 <code>a(n) =</code> number of integer-sided right triangles with hypotenuse <code>n</code>.
+ * A046080 a(n) = number of integer-sided right triangles with hypotenuse n.
  * @author Sean A. Irvine
  */
 public class A046080 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056531 Sequence remaining after fourth round of Flavius Josephus sieve; remove every fifth term of <code>A056530</code>.
+ * A056531 Sequence remaining after a fourth round of Flavius Josephus sieve; remove every fifth term of A056530.
  * @author Georg Fischer
  */
 public class A056531 extends LinearRecurrence {

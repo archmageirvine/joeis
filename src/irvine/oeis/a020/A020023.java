@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020023 Nearest integer to <code>GAMMA(n+2/9)/GAMMA(2/9)</code>.
+ * A020023 Nearest integer to GAMMA(n+2/9)/GAMMA(2/9).
  * @author Sean A. Irvine
  */
 public class A020023 implements Sequence {

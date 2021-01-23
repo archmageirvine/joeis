@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a087.A087659;
 
 /**
- * A091950 <code>a(n) = A087659(n) mod 3</code>.
+ * A091950 a(n) = A087659(n) mod 3.
  * @author Georg Fischer
  */
 public class A091950 extends A087659 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A091950() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

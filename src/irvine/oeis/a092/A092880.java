@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092880 Number of ordered 2-multiantichains on an <code>n-set</code>.
+ * A092880 Number of ordered 2-multiantichains on an n-set.
  * @author Sean A. Irvine
  */
 public class A092880 extends LinearRecurrence {

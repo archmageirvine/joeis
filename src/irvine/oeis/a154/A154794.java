@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A154794 Decimal expansion of <code>log_10 (16)</code>.
+ * A154794 Decimal expansion of log_10 (16).
  * @author Sean A. Irvine
  */
 public class A154794 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(16).log().divide(CR.valueOf(10).log());
+  private static final CR N = CR.valueOf(16).log().divide(CR.TEN.log());
 
   @Override
   protected CR getCR() {

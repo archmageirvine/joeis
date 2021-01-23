@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A307587 Numbers k such that the determinant of the Vandermonde matrix of their digits is equal to <code>phi(k)</code>, the Euler totient function of k.
+ * A307587 Numbers k such that the determinant of the Vandermonde matrix of their digits is equal to phi(k), the Euler totient function of k.
  * @author Georg Fischer
  */
 public class A307587 extends FiniteSequence {

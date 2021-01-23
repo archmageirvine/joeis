@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104376 <code>a(n) = Sum_{j=0..13} n^j</code>.
+ * A104376 a(n) = Sum_{j=0..13} n^j.
  * @author Sean A. Irvine
  */
 public class A104376 extends LinearRecurrence {

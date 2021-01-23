@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006571 Expansion of <code>q*Product_{k&gt;=1} (1-q^k)^2*(1-q^(11*k))^2</code>.
+ * A006571 Expansion of q*Product_{k&gt;=1} (1-q^k)^2*(1-q^(11*k))^2.
  * @author Sean A. Irvine
  */
 public class A006571 implements Sequence {

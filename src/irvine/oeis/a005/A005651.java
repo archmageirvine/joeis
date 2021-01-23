@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005651 Sum of multinomial coefficients <code>(n_1+n_2+...)!/(n_1!*n_2!*...)</code> where <code>(n_1, n_2, ...)</code> runs over all integer partitions of <code>n</code>.
+ * A005651 Sum of multinomial coefficients (n_1+n_2+...)!/(n_1!*n_2!*...) where (n_1, n_2, ...) runs over all integer partitions of n.
  * @author Sean A. Irvine
  */
 public class A005651 extends MemoryFunction2<Long, Z> implements Sequence {

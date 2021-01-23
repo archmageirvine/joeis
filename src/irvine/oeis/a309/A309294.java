@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309294 <code>(1/2)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by two.
+ * A309294 (1/2) times the sum of the elements of all subsets of [n] whose sum is divisible by two.
  * @author Georg Fischer
  */
 public class A309294 extends HolonomicRecurrence {

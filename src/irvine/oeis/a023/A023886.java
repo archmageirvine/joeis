@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A023886 Average of proper divisors (excluding <code>1)</code> is an integer.
+ * A023886 Average of proper divisors (excluding 1) is an integer.
  * @author Sean A. Irvine
  */
 public class A023886 extends A002808 {
@@ -16,7 +16,7 @@ public class A023886 extends A002808 {
     while (true) {
       final Z n = super.next();
       final FactorSequence fs = Cheetah.factor(n);
-      if (Z.ZERO.equals(fs.sigma().subtract(n).subtract(1).mod(fs.sigma0().subtract(2)))) {
+      if (fs.sigma().subtract(n).subtract(1).mod(fs.sigma0().subtract(2)).isZero()) {
         return n;
       }
     }

@@ -6,7 +6,7 @@ package irvine.oeis.a201;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A201204 Half-convolution of Catalan sequence <code>A000108</code> with itself.
+ * A201204 Half-convolution of Catalan sequence A000108 with itself.
  * @author Georg Fischer
  */
 public class A201204 extends HolonomicRecurrence {

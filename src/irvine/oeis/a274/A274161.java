@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A274161 Numbers n such that in the edge-delete game on the path <code>P_{n}</code> the first player does not have a winning strategy.
+ * A274161 Numbers n such that in the edge-delete game on the path P_{n} the first player does not have a winning strategy.
  * @author Georg Fischer
  */
 public class A274161 extends HolonomicRecurrence {

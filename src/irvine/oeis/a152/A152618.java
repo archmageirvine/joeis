@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152618 <code>a(n) = (n-1)^2*(n+1)</code>.
+ * A152618 a(n) = (n-1)^2*(n+1).
  * @author Georg Fischer
  */
 public class A152618 extends GeneratingFunctionSequence {

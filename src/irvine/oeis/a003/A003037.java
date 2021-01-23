@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A003037 Smallest number of complexity n: smallest number requiring <code>n 1</code>'s to build using <code>+, *</code> and <code>^</code>.
+ * A003037 Smallest number of complexity n: smallest number requiring n 1's to build using +, * and ^.
  * @author Sean A. Irvine
  */
 public class A003037 implements Sequence {
@@ -76,7 +76,7 @@ public class A003037 implements Sequence {
         for (final long u : a) {
           for (final long v : b) {
             if (v <= mPowBound) {
-              final Z z = Z.valueOf(u).pow((int) v);
+              final Z z = Z.valueOf(u).pow(v);
               if (z.bitLength() <= mPowBound) {
                 final long wExp = z.longValue();
                 if (wExp < mBound && !mSeen.isSet(wExp)) {

@@ -6,7 +6,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115141 Convolution of <code>A115140</code> with itself.
+ * A115141 Convolution of A115140 with itself.
  * @author Georg Fischer
  */
 public class A115141 extends HolonomicRecurrence {

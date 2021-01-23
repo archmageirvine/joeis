@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A246557 Numbers n with an even number of digits such that the product of the numbers formed by successively deleting pairs of digits from the ends of n is equal to <code>n</code>.
+ * A246557 Numbers n with an even number of digits such that the product of the numbers formed by successively deleting pairs of digits from the ends of n is equal to n.
  * @author Georg Fischer
  */
 public class A246557 extends FiniteSequence {

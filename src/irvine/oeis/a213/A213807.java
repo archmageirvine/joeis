@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A213807 <code>a(n)=Sum(L(i)*L(j)*L(k), 0&lt;=i&lt;j&lt;k&lt;=n)</code>, where <code>L(m)</code> is the m-th Lucas number <code>A000032(m)</code>.
+ * A213807 a(n)=Sum(L(i)*L(j)*L(k), 0&lt;=i&lt;j&lt;k&lt;=n), where L(m) is the m-th Lucas number A000032(m).
  * @author Georg Fischer
  */
 public class A213807 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098470 Form array in which n-th row is obtained by expanding <code>(1+x+x^2)^n</code> and taking the 5th column from the center.
+ * A098470 Form array in which n-th row is obtained by expanding (1+x+x^2)^n and taking the 5th column from the center.
  * @author Georg Fischer
  */
 public class A098470 extends HolonomicRecurrence {

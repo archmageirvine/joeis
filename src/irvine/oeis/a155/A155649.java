@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155649 <code>a(n) = 11^n+6^n-1^n</code>.
+ * A155649 a(n) = 11^n+6^n-1^n.
  * @author Sean A. Irvine
  */
 public class A155649 extends LinearRecurrence {

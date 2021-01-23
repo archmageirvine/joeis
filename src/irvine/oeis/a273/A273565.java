@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A273565 Number of active <code>(ON,black)</code> cells at stage <code>2^n-1</code> of the two-dimensional cellular automaton defined by "Rule <code>793"</code>, based on the 5-celled von Neumann neighborhood.
+ * A273565 Number of active (ON,black) cells at stage 2^n-1 of the two-dimensional cellular automaton defined by "Rule 793", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A273565 extends GeneratingFunctionSequence {

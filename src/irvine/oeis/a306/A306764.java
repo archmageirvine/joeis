@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306764 <code>a(n)</code> is a sequence of period <code>12</code>: repeat <code>[1, 1, 6, 2, 1, 3, 2, 2, 3, 1, 2, 6]</code>.
+ * A306764 a(n) is a sequence of period 12: repeat [1, 1, 6, 2, 1, 3, 2, 2, 3, 1, 2, 6].
  * @author Georg Fischer
  */
 public class A306764 extends HolonomicRecurrence {

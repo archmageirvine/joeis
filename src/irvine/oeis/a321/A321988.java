@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321988 Number of integer triples <code>(x,y,z)</code> with <code>x,y,z&gt;0</code> and <code>4*x+6*y+3*n*z &lt; 12*n</code>.
+ * A321988 Number of integer triples (x,y,z) with x,y,z&gt;0 and 4*x+6*y+3*n*z &lt; 12*n.
  * @author Georg Fischer
  */
 public class A321988 extends GeneratingFunctionSequence {

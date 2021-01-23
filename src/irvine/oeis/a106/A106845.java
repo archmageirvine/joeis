@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106845 <code>n^2 * (n^3 + 2n^2 + 7n - 2) / 8</code>.
+ * A106845 n^2 * (n^3 + 2n^2 + 7n - 2) / 8.
  * @author Sean A. Irvine
  */
 public class A106845 extends LinearRecurrence {

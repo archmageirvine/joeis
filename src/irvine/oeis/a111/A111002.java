@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A111002 <code>a(n) = gcd(f(n), f(n+1))</code> where <code>f(n) = n^4 + n^2 + 1</code>.
+ * A111002 a(n) = gcd(f(n), f(n+1)) where f(n) = n^4 + n^2 + 1.
  * @author Georg Fischer
  */
 public class A111002 extends GeneratingFunctionSequence {

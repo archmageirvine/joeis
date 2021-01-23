@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028965 Six consecutive integers with increasing values of sigma start at these numbers; i.e., <code>sigma(x) &lt; sigma(x+1) &lt; ... &lt; sigma(x+5)</code>.
+ * A028965 Six consecutive integers with increasing values of sigma start at these numbers; i.e., sigma(x) &lt; sigma(x+1) &lt;  ... &lt; sigma(x+5).
  * @author Sean A. Irvine
  */
 public class A028965 implements Sequence {

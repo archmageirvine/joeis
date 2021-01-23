@@ -4,7 +4,7 @@ package irvine.oeis.a035;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A035613 7 in base <code>n</code>.
+ * A035613 7 in base n.
  * @author Georg Fischer
  */
 public class A035613 extends GeneratingFunctionSequence {

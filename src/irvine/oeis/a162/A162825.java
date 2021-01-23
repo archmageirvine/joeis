@@ -5,7 +5,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162825 Positive numbers k such that <code>60*k/(60-k)</code> are integers.
+ * A162825 Positive numbers k such that 60*k/(60-k) are integers.
  * @author Georg Fischer
  */
 public class A162825 extends FiniteSequence {

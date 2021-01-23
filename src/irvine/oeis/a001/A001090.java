@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001090 <code>a(n) = 8*a(n-1) - a(n-2); a(0) = 0, a(1) = 1</code>.
+ * A001090 a(n) = 8*a(n-1) - a(n-2); a(0) = 0, a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A001090 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A166133 After initial <code>1,2,4, a(n+1)</code> is the smallest divisor of <code>a(n)^2-1</code> that has not yet appeared in the sequence.
+ * A166133 After initial 1,2,4, a(n+1) is the smallest divisor of a(n)^2-1 that has not yet appeared in the sequence.
  * @author Sean A. Irvine
  */
 public class A166133 implements Sequence {

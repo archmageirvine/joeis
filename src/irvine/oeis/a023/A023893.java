@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023893 Number of partitions of n into prime power parts <code>(1</code> included); number of nonisomorphic Abelian subgroups of symmetric group <code>S_n</code>.
+ * A023893 Number of partitions of n into prime power parts (1 included); number of nonisomorphic Abelian subgroups of symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A023893 implements Sequence {

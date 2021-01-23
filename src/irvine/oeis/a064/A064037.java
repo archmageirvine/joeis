@@ -6,7 +6,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064037 Number of walks of length <code>2n</code> on cubic lattice, starting and finishing at origin and staying in first (nonnegative) octant.
+ * A064037 Number of walks of length 2n on cubic lattice, starting and finishing at origin and staying in first (nonnegative) octant.
  * @author Georg Fischer
  */
 public class A064037 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229150 <code>a(n) = n^7*(9*n+7)/2</code>.
+ * A229150 a(n) = n^7*(9*n+7)/2.
  * @author Georg Fischer
  */
 public class A229150 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A060640 If <code>n =</code> Product <code>p_i^e_i</code> then <code>a(n) =</code> Product <code>(1 + 2*p_i + 3*p_i^2 + ... + (e_i+1)*p_i^e_i)</code>.
+ * A060640 If n = Product p_i^e_i then a(n) = Product (1 + 2*p_i + 3*p_i^2 + ... + (e_i+1)*p_i^e_i).
  * @author Sean A. Irvine
  */
 public class A060640 implements Sequence {

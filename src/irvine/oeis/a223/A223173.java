@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223173 Poly-Cauchy numbers <code>c_3^(-n)</code>.
+ * A223173 Poly-Cauchy numbers c_3^(-n).
  * @author Georg Fischer
  */
 public class A223173 extends GeneratingFunctionSequence {

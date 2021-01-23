@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A234255 Decimal expansion of <code>-B(12) = 691/2730, 13th</code> Bernoulli number without sign.
+ * A234255 Decimal expansion of -B(12) = 691/2730, 13th Bernoulli number without sign.
  * @author Georg Fischer
  */
 public class A234255 extends GeneratingFunctionSequence {

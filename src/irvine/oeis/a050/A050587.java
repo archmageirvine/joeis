@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050587 Numbers n such that <code>123*2^n-1</code> is prime.
+ * A050587 Numbers n such that 123*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050587 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050587() {
-    super(1, 2, 123, 2, -1, 0);
+    super(1, 2, 123, 2, -1);
   }
 }

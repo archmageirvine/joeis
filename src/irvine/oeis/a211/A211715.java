@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211715 Number of <code>(n+1) X (n+1) -11..11</code> symmetric matrices with every <code>2 X 2</code> subblock having sum zero and two or four distinct values.
+ * A211715 Number of (n+1) X (n+1) -11..11 symmetric matrices with every 2 X 2 subblock having sum zero and two or four distinct values.
  * @author Georg Fischer
  */
 public class A211715 extends GeneratingFunctionSequence {

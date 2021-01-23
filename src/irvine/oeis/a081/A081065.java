@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081065 Numbers n such that <code>n^2 = (1/3)*(n+floor(sqrt(3)*n*floor(sqrt(3)*n)))</code>.
+ * A081065 Numbers n such that n^2 = (1/3)*(n+floor(sqrt(3)*n*floor(sqrt(3)*n))).
  * @author Sean A. Irvine
  */
 public class A081065 extends LinearRecurrence {

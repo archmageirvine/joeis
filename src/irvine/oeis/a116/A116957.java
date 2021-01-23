@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A116957 Lynch-Bell numbers n such that 5 is a digit of <code>n</code>.
+ * A116957 Lynch-Bell numbers n such that 5 is a digit of n.
  * @author Georg Fischer
  */
 public class A116957 extends FiniteSequence {

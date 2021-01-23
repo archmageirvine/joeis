@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103715 Define <code>a(1)=0, a(2)=0, a(3)=1, a(4)=3, a(5)=18, a(6)=22, a(7)=119, a(8)=285</code> such that from <code>i=1</code> to <code>8: 420*a(i)^2 + 420*a(i) + 1 = j(i)^2, j(1)=1, j(2)=1, j(3)=29, j(4)=71, j(5)=379, j(6)=461, j(7)=2449, j(8)=5841</code>. Then <code>a(n) = a(n-8) + 4*sqrt(420*a(n-4)^2 + 420*a(n-4) + 1)</code>.
+ * A103715 Define a(1)=0, a(2)=0, a(3)=1, a(4)=3, a(5)=18, a(6)=22, a(7)=119, a(8)=285 such that from i=1 to 8: 420*a(i)^2 + 420*a(i) + 1 = j(i)^2, j(1)=1, j(2)=1, j(3)=29, j(4)=71, j(5)=379, j(6)=461, j(7)=2449, j(8)=5841. Then a(n) = a(n-8) + 4*sqrt(420*a(n-4)^2 + 420*a(n-4) + 1).
  * @author Georg Fischer
  */
 public class A103715 extends GeneratingFunctionSequence {

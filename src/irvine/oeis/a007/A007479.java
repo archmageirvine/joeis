@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007479 Earliest sequence with <code>a(a(a(n))) = 2n</code>.
+ * A007479 Earliest sequence with a(a(a(n))) = 2n.
  * @author Sean A. Irvine
  */
 public class A007479 extends MemorySequence {

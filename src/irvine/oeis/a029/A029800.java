@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029800 n, <code>n^2</code> and <code>n^3</code> all have same digits.
+ * A029800 n, n^2 and n^3 all have same digits.
  * @author Sean A. Irvine
  */
 public class A029800 implements Sequence {

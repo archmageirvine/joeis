@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271470 <code>a(n)-th</code> chiliagonal (or <code>1000-gonal)</code> number is square.
+ * A271470 a(n)-th chiliagonal (or 1000-gonal) number is square.
  * @author Sean A. Irvine
  */
 public class A271470 extends LinearRecurrence {

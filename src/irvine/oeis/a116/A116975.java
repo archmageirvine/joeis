@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A116975 Number of compositions of n into parts of sizes <code>== 1 mod 5</code> or <code>4 mod 5</code>.
+ * A116975 Number of compositions of n into parts of sizes == 1 mod 5 or 4 mod 5.
  * @author Georg Fischer
  */
 public class A116975 extends GeneratingFunctionSequence {

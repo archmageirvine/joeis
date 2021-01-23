@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162698 Numbers n such that the incidence matrix of the grid <code>n X n</code> has -1 as eigenvalue.
+ * A162698 Numbers n such that the incidence matrix of the grid n X n has -1 as eigenvalue.
  * @author Georg Fischer
  */
 public class A162698 extends GeneratingFunctionSequence {

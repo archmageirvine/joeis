@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082766 Series ratios converge alternately to <code>sqrt(2)</code> and <code>1+sqrt(1/2)</code>.
+ * A082766 Series ratios converge alternately to sqrt(2) and 1+sqrt(1/2).
  * @author Georg Fischer
  */
 public class A082766 extends GeneratingFunctionSequence {

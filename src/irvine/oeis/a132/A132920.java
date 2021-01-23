@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A132920 <code>a(n) = n*Fibonacci(n) + binomial(n, 2)</code>.
+ * A132920 a(n) = n*Fibonacci(n) + binomial(n, 2).
  * @author Georg Fischer
  */
 public class A132920 extends GeneratingFunctionSequence {

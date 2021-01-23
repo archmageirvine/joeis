@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A085678 Decimal expansion of <code>e^1000</code>.
+ * A085678 Decimal expansion of e^1000.
  * @author Georg Fischer
  */
 public class A085678 extends DecimalExpansionSequence {

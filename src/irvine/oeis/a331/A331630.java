@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331630 Numbers M such that <code>23 * M = 1M1</code>, where <code>1M1</code> denotes the concatenation of 1, M and 1.
+ * A331630 Numbers M such that 23 * M = 1M1, where 1M1 denotes the concatenation of 1, M and 1.
  * @author Georg Fischer
  */
 public class A331630 extends HolonomicRecurrence {

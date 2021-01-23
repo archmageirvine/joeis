@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a092.A092606;
 
 /**
- * A003157 A self-generating sequence.
+ * A003157 A self-generating sequence (see Comments in A003156 for the definition).
  * @author Sean A. Irvine
  */
 public class A003157 extends A092606 {

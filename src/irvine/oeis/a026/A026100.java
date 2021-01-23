@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026100 <code>a(n) =</code> number of the column of <code>A026098</code> that contains <code>n</code>.
+ * A026100 a(n) = number of the column of A026098 that contains n.
  * @author Sean A. Irvine
  */
 public class A026100 extends A026098 {

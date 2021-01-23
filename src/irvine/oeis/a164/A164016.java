@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164016 6 times centered hexagonal numbers: <code>18*n*(n+1) + 6</code>.
+ * A164016 6 times centered hexagonal numbers: 18*n*(n+1) + 6.
  * @author Sean A. Irvine
  */
 public class A164016 extends LinearRecurrence {

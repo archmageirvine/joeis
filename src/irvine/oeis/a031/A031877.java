@@ -19,7 +19,7 @@ public class A031877 extends A004086 {
       final Z t = super.next();
       if (mN % 10 != 0) {
         final Z n = Z.valueOf(mN);
-        if (n.compareTo(t) > 0 && Z.ZERO.equals(n.mod(t))) {
+        if (n.compareTo(t) > 0 && n.mod(t).isZero()) {
           return n;
         }
       }

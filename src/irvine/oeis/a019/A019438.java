@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A019438 Squarefree orders of elements of Mathieu group <code>M_23</code>.
+ * A019438 Squarefree orders of elements of Mathieu group M_23.
  * @author Sean A. Irvine
  */
 public class A019438 extends FiniteSequence {

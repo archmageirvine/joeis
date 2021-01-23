@@ -6,7 +6,7 @@ package irvine.oeis.a278;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A278884 <code>a(n) = binomial(3*n-1,n) * binomial(3*n,n)/(2*n+1)</code>.
+ * A278884 a(n) = binomial(3*n-1,n) * binomial(3*n,n)/(2*n+1).
  * @author Georg Fischer
  */
 public class A278884 extends HolonomicRecurrence {

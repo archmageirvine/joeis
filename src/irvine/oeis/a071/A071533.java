@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A071533 Determinant of <code>n X n</code> matrix of form <code>[1 2 3 0 0 0 0 0 0 0 / 2 1 2 3 0 0 0 0 0 0 / 3 2 1 2 3 0 0 0 0 0 / 0 3 2 1 2 3 0 0 0 0 / 0 0 3 2 1 2 3 0 0 0 / 0 0 0 3 2 1 2 3 0 0 / 0 0 0 0 3 2 1 2 3 0 / 0 0 0 0 0 3 2 1 2 3 / 0 0 0 0 0 0 3 2 1 2 / 0 0 0 0 0 0 0 3 2 1]</code>.
+ * A071533 Determinant of n X n matrix of form [1 2 3 0 0 0 0 0 0 0 / 2 1 2 3 0 0 0 0 0 0 / 3 2 1 2 3 0 0 0 0 0 / 0 3 2 1 2 3 0 0 0 0 / 0 0 3 2 1 2 3 0 0 0 / 0 0 0 3 2 1 2 3 0 0 / 0 0 0 0 3 2 1 2 3 0 / 0 0 0 0 0 3 2 1 2 3 / 0 0 0 0 0 0 3 2 1 2 / 0 0 0 0 0 0 0 3 2 1].
  * @author Georg Fischer
  */
 public class A071533 extends GeneratingFunctionSequence {

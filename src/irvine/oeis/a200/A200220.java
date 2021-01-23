@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200220 Product of Fibonacci and Padovan numbers: <code>a(n) = A000045(n+1)*A000931(n+5)</code>.
+ * A200220 Product of Fibonacci and Padovan numbers: a(n) = A000045(n+1)*A000931(n+5).
  * @author Sean A. Irvine
  */
 public class A200220 extends LinearRecurrence {

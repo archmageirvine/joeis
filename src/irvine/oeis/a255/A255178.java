@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A255178 Second differences of eighth powers <code>(A001016)</code>.
+ * A255178 Second differences of eighth powers (A001016).
  * @author Georg Fischer
  */
 public class A255178 extends GeneratingFunctionSequence {

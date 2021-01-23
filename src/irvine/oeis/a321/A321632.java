@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321632 Expansion of e.g.f. <code>(1 + sin(x))/exp(x)</code>.
+ * A321632 Expansion of e.g.f. (1 + sin(x))/exp(x).
  * @author Georg Fischer
  */
 public class A321632 extends GeneratingFunctionSequence {

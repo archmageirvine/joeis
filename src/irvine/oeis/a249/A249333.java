@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249333 Number of regions formed by extending the sides of a regular <code>n-gon</code>.
+ * A249333 Number of regions formed by extending the sides of a regular n-gon.
  * @author Sean A. Irvine
  */
 public class A249333 extends LinearRecurrence {

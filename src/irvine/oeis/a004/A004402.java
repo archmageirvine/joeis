@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004402 Expansion of <code>(Sum_{n=-inf..inf} x^(n^2))^(-1)</code>.
+ * A004402 Expansion of (Sum_{n=-inf..inf} x^(n^2))^(-1).
  * @author Sean A. Irvine
  */
 public class A004402 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162285 Periodic length 8 sequence <code>[1, -1, -1, 1, -1, 1, 1, -1, ...]</code>.
+ * A162285 Periodic length 8 sequence [1, -1, -1, 1, -1, 1, 1, -1, ...].
  * @author Georg Fischer
  */
 public class A162285 extends GeneratingFunctionSequence {

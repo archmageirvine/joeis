@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A281873 <code>a(n+1)</code> is the smallest number greater than <code>a(n)</code> such that <code>Sum_{j=1..n+1} 1/a(j) &lt;= 4, a(1) = 1</code>.
+ * A281873 a(n+1) is the smallest number greater than a(n) such that Sum_{j=1..n+1} 1/a(j) &lt;= 4, a(1) = 1.
  * @author Georg Fischer
  */
 public class A281873 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A281873() {
-    super(Z.ONE, new Z("2"), new Z("3"), new Z("4"), new Z("5"), new Z("6"), new Z("7"), new Z("8"), new Z("9"), new Z("10"), new Z("11"), new Z("12"), new Z("13"), new Z("14"), new Z("15"), new Z("16"), new Z("17"), new Z("18"), new Z("19"), new Z("20"), new Z("21"), new Z("22"), new Z("23"), new Z("24"), new Z("25"), new Z("26"), new Z("27"), new Z("28"), new Z("29"), new Z("30"), new Z("200"), new Z("77706"), new Z("16532869712"), new Z("3230579689970657935732"), new Z("36802906522516375115639735990520502954652700"));
+    super(Z.ONE, Z.TWO, Z.THREE, Z.FOUR, Z.FIVE, Z.SIX, Z.SEVEN, Z.EIGHT, Z.NINE, Z.TEN, new Z("11"), new Z("12"), new Z("13"), new Z("14"), new Z("15"), new Z("16"), new Z("17"), new Z("18"), new Z("19"), new Z("20"), new Z("21"), new Z("22"), new Z("23"), new Z("24"), new Z("25"), new Z("26"), new Z("27"), new Z("28"), new Z("29"), new Z("30"), new Z("200"), new Z("77706"), new Z("16532869712"), new Z("3230579689970657935732"), new Z("36802906522516375115639735990520502954652700"));
   }
 }

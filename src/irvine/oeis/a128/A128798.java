@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128798 <code>n*(n-1)*4^n</code>.
+ * A128798 n*(n-1)*4^n.
  * @author Sean A. Irvine
  */
 public class A128798 extends LinearRecurrence {

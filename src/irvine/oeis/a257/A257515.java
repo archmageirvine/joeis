@@ -6,7 +6,7 @@ package irvine.oeis.a257;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A257515 Number of <code>3-generalized 2-Motzkin</code> paths of length n with no level steps <code>H=(3,0)</code> at odd level.
+ * A257515 Number of 3-generalized 2-Motzkin paths of length n with no level steps H=(3,0) at odd level.
  * @author Georg Fischer
  */
 public class A257515 extends HolonomicRecurrence {

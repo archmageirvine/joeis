@@ -5,7 +5,7 @@ package irvine.oeis.a106;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A106305 Divisors of <code>10^14 - 1</code>.
+ * A106305 Divisors of 10^14 - 1.
  * @author Georg Fischer
  */
 public class A106305 extends FiniteSequence {

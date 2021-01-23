@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000169;
 
 /**
- * A124923 <code>a(n) = n^(n-1) + 1</code>.
+ * A124923 a(n) = n^(n-1) + 1.
  * @author Georg Fischer
  */
 public class A124923 extends A000169 {

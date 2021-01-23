@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024412 Ordered Stirling numbers <code>s(n,k)</code> of the second kind.
+ * A024412 Ordered Stirling numbers s(n,k) of the second kind.
  * @author Sean A. Irvine
  */
 public class A024412 implements Sequence {

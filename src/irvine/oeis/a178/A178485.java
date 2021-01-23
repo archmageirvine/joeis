@@ -5,7 +5,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178485 <code>(A178475(n)-6)/9</code>.
+ * A178485 (A178475(n)-6)/9.
  * @author Georg Fischer
  */
 public class A178485 extends FiniteSequence {

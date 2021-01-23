@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A230096 Number of tilings of an <code>n X 1</code> rectangle (using tiles of dimension <code>1 X 1</code> and <code>2 X 1)</code> that share no tile at the same position with their mirrored image.
+ * A230096 Number of tilings of an n X 1 rectangle (using tiles of dimension 1 X 1 and 2 X 1) that share no tile at the same position with their mirrored image.
  * @author Sean A. Irvine
  */
 public class A230096 extends LinearRecurrence {

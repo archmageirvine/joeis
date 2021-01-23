@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060095 Number of 7-block ordered bicoverings of an unlabeled <code>n-set</code>.
+ * A060095 Number of 7-block ordered bicoverings of an unlabeled n-set.
  * @author Georg Fischer
  */
 public class A060095 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007814;
 
 /**
- * A090739 Exponent of 2 in <code>9^n - 1</code>.
+ * A090739 Exponent of 2 in 9^n - 1.
  * @author Georg Fischer
  */
 public class A090739 extends A007814 {

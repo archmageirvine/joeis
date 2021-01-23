@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003814;
 
 /**
- * A031397 Nonsquarefree n such that Pell equation <code>x^2 - n y^2 = -1</code> is soluble.
+ * A031397 Nonsquarefree n such that Pell equation x^2 - n y^2 = -1 is soluble.
  * @author Sean A. Irvine
  */
 public class A031397 extends A003814 {

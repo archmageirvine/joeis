@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023672 Convolution of <code>A023533</code> and primes.
+ * A023672 Convolution of A023533 and primes.
  * @author Sean A. Irvine
  */
 public class A023672 extends ConvolutionSequence {

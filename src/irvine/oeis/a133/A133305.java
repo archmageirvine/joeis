@@ -6,7 +6,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133305 <code>a(n) = (1/n)*Sum_{i=0..n-1} C(n,i)*C(n,i+1)*4^i*5^(n-i), a(0) = 1</code>.
+ * A133305 a(n) = (1/n)*Sum_{i=0..n-1} C(n,i)*C(n,i+1)*4^i*5^(n-i), a(0) = 1.
  * @author Georg Fischer
  */
 public class A133305 extends HolonomicRecurrence {

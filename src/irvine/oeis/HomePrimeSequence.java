@@ -21,7 +21,11 @@ public class HomePrimeSequence implements Sequence {
     mTerminateOnPrime = terminateOnPrime;
   }
 
-  protected HomePrimeSequence(final long start) {
+  /**
+   * Construct the home prime sequence for a given value.
+   * @param start starting number
+   */
+  public HomePrimeSequence(final long start) {
     this(start, 10, true);
   }
 

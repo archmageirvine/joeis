@@ -5,7 +5,7 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000887 Number of switching networks with <code>GL(n,2)</code> acting on the domain and <code>AG(3,2)</code> acting on the range.
+ * A000887 Number of switching networks with GL(n,2) acting on the domain and AG(3,2) acting on the range.
  * @author Sean A. Irvine
  */
 public class A000887 extends A000721 {

@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A320919 Positive integers k such that <code>binomial(k, 3)</code> is divisible by 6.
+ * A320919 Positive integers k such that binomial(k, 3) is divisible by 6.
  * @author Georg Fischer
  */
 public class A320919 extends GeneratingFunctionSequence {

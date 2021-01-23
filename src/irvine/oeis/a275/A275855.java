@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A275855 Platinum mean sequence: fixed point of the morphism <code>0 -&gt; 0001, 1 -&gt; 001</code>.
+ * A275855 Platinum mean sequence: fixed point of the morphism 0 -&gt; 0001, 1 -&gt; 001.
  * @author Georg Fischer
  */
 public class A275855 extends MorphismSequence {

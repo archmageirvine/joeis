@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A089352 Numbers n such that n is divisible by the sum of its distinct prime factors <code>(A008472)</code>.
+ * A089352 Numbers that are divisible by the sum of their distinct prime factors (A008472).
  * @author Sean A. Irvine
  */
 public class A089352 implements Sequence {

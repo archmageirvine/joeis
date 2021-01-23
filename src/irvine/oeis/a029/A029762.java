@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029762 Numerator of <code>Bernoulli(2n+2) - Bernoulli(2n)</code>.
+ * A029762 Numerator of Bernoulli(2n+2) - Bernoulli(2n).
  * @author Sean A. Irvine
  */
 public class A029762 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A235118 Number of independent vertex subsets of the graph obtained by attaching two pendant edges to each vertex of the ladder graph <code>L_n (L_n</code> is the <code>2 X n</code> grid graph; see <code>A235117)</code>.
+ * A235118 Number of independent vertex subsets of the graph obtained by attaching two pendant edges to each vertex of the ladder graph L_n (L_n is the 2 X n grid graph; see A235117).
  * @author Sean A. Irvine
  */
 public class A235118 extends LinearRecurrence {

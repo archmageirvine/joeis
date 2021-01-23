@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278718 Numerators of <code>A189733</code>: periodic sequence repeating <code>[0, 1, 1, 1, 0, -1]</code>.
+ * A278718 Numerators of A189733: periodic sequence repeating [0, 1, 1, 1, 0, -1].
  * @author Sean A. Irvine
  */
 public class A278718 extends LinearRecurrence {

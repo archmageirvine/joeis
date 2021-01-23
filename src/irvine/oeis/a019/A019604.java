@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019604 Decimal expansion of <code>2*Pi*e/15</code>.
+ * A019604 Decimal expansion of 2*Pi*e/15.
  * @author Sean A. Irvine
  */
 public class A019604 extends DecimalExpansionSequence {

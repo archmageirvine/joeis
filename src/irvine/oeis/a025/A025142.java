@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A025142 Fixed point of the square runlength transform, with <code>a(1) = 1</code> (the runlength transform of a binary sequence is the sequence of the lengths of its runs).
+ * A025142 Fixed point of the square runlength transform, with a(1) = 1 (the runlength transform of a binary sequence is the sequence of the lengths of its runs).
  * @author Sean A. Irvine
  */
 public class A025142 implements Sequence {

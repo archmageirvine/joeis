@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304828 <code>a(n) = 344*7^n/21 - 128/3 (n&gt;=1)</code>.
+ * A304828 a(n) = 344*7^n/21 - 128/3 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304828 extends GeneratingFunctionSequence {

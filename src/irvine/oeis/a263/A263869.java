@@ -4,7 +4,7 @@ package irvine.oeis.a263;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A263869 Number of <code>(n+1) X (4+1) 0..1</code> arrays with each row and column divisible by 3, read as a binary number with top and left being the most significant bits, and rows and columns lexicographically nondecreasing.
+ * A263869 Number of (n+1) X (4+1) 0..1 arrays with each row and column divisible by 3, read as a binary number with top and left being the most significant bits, and rows and columns lexicographically nondecreasing.
  * @author Georg Fischer
  */
 public class A263869 extends GeneratingFunctionSequence {

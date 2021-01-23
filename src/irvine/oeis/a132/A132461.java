@@ -6,7 +6,7 @@ package irvine.oeis.a132;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A132461 Row squared sums of triangle of Lucas polynomials <code>(A034807)</code> for <code>n&gt;0: Sum_{k=0..floor(n/2)} A034807(n,k)^2</code>, with <code>a(0)=1</code>.
+ * A132461 Row squared sums of triangle of Lucas polynomials (A034807) for n&gt;0: Sum_{k=0..floor(n/2)} A034807(n,k)^2, with a(0)=1.
  * @author Georg Fischer
  */
 public class A132461 extends HolonomicRecurrence {

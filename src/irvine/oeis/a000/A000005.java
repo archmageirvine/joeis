@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000005 <code>d(n)</code> (also called <code>tau(n)</code> or <code>sigma_0(n))</code>, the number of divisors of <code>n</code>.
+ * A000005 d(n) (also called tau(n) or sigma_0(n)), the number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A000005 implements Sequence {

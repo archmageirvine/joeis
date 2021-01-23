@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025677 Exponent of <code>8</code> (value of <code>i)</code> in n-th number of form <code>8^i*10^j</code>.
+ * A025677 Exponent of 8 (value of i) in n-th number of form 8^i*10^j.
  * @author Sean A. Irvine
  */
 public class A025677 extends A025634 {
@@ -14,7 +14,6 @@ public class A025677 extends A025634 {
     while (r.mod(10) == 0) {
       r = r.divide(10);
     }
-    r.makeOdd();
-    return Z.valueOf(r.auxiliary() / 3);
+    return Z.valueOf(r.makeOdd().auxiliary() / 3);
   }
 }

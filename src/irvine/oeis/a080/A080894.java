@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080894 Expansion of the exponential series <code>exp( x M(x) ) = exp( (1-sqrt(1-2x-3x^2))/(2x) )</code>, where <code>M(x)</code> is the ordinary generating series of the Motzkin numbers <code>A001006</code>.
+ * A080894 Expansion of the exponential series exp( x M(x) ) = exp( (1-sqrt(1-2x-3x^2))/(2x) ), where M(x) is the ordinary generating series of the Motzkin numbers A001006.
  * @author Georg Fischer
  */
 public class A080894 extends HolonomicRecurrence {

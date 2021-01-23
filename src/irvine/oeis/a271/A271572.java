@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271572 <code>a(n) = n^7 mod 32</code>.
+ * A271572 a(n) = n^7 mod 32.
  * @author Sean A. Irvine
  */
 public class A271572 extends LinearRecurrence {

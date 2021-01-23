@@ -6,7 +6,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A063724 Consider problem of placing N queens on an <code>n X n</code> board so that each queen attacks precisely 4 others. Sequence gives maximal number of queens.
+ * A063724 Consider problem of placing N queens on an n X n board so that each queen attacks precisely 4 others. Sequence gives maximal number of queens.
  * @author Georg Fischer
  */
 public class A063724 extends GeneratingFunctionSequence {

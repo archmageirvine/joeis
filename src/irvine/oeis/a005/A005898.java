@@ -4,16 +4,36 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005898 Centered cube numbers: <code>n^3 + (n+1)^3</code>.
+ * A005898 Centered cube numbers: n^3 + (n+1)^3.
  * @author Sean A. Irvine
+ * @author Georg Fischer
  */
 public class A005898 implements Sequence {
 
-  private Z mN = Z.NEG_ONE;
+  protected int mExpon; // exponent 
+  private long mN = 0; // always n + 1
+  private Z mPrev = Z.ZERO; // n^expon
+  
+  /** 
+   * Empty constructor
+   */
+  public A005898() {
+    this(3);
+  }
+  
+  /**
+   * Constructor with exponent
+   * @param expon exponent
+   */
+  public A005898(final int expon) {
+    mExpon = expon;
+  }
 
   @Override
   public Z next() {
-    mN = mN.add(1);
-    return mN.pow(3).add(mN.add(1).pow(3));
+    final Z temp = mPrev;
+    ++mN;
+    mPrev = Z.valueOf(mN).pow(mExpon);
+    return mPrev.add(temp);
   }
 }

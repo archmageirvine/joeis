@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007245;
 
 /**
- * A014708 Coefficients of the modular function J <code>= j - 744</code>.
+ * A014708 Coefficients of the modular function J = j - 744.
  * @author Sean A. Irvine
  */
 public class A014708 extends A007245 {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A105735 Decimal expansion of <code>arcsin(1/e)</code>.
+ * A105735 Decimal expansion of arcsin(1/e).
  * @author Georg Fischer
  */
 public class A105735 extends DecimalExpansionSequence {

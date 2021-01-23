@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000283;
 
 /**
- * A014253 <code>a(n) = b(n)^2</code>, where <code>b(n) = b(n-1)^2 + b(n-2)^2 (A000283)</code>.
+ * A014253 a(n) = b(n)^2, where b(n) = b(n-1)^2 + b(n-2)^2 (A000283).
  * @author Sean A. Irvine
  */
 public class A014253 extends A000283 {

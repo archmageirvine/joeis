@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A166114 <code>a(n) = (6-(-4)^n)/5</code>.
+ * A166114 a(n) = (6-(-4)^n)/5.
  * @author Georg Fischer
  */
 public class A166114 extends GeneratingFunctionSequence {

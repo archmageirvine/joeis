@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140066 <code>a(n) = (5*n^2 - 11*n + 8)/2</code>.
+ * A140066 a(n) = (5*n^2 - 11*n + 8)/2.
  * @author Sean A. Irvine
  */
 public class A140066 extends LinearRecurrence {

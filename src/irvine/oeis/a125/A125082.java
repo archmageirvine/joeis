@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125082 <code>a(n) = n^4 - n^3 - n^2 - n - 1</code>.
+ * A125082 a(n) = n^4 - n^3 - n^2 - n - 1.
  * @author Sean A. Irvine
  */
 public class A125082 extends LinearRecurrence {

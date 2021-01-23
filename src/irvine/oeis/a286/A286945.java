@@ -4,7 +4,7 @@ package irvine.oeis.a286;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A286945 Number of maximal matchings in the ladder graph <code>P_2 X P_n</code>.
+ * A286945 Number of maximal matchings in the ladder graph P_2 X P_n.
  * @author Georg Fischer
  */
 public class A286945 extends LinearRecurrence {

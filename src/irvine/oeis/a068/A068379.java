@@ -4,13 +4,13 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068379 Engel expansion of <code>sinh(1/2)</code>.
+ * A068379 Engel expansion of sinh(1/2).
  * @author Georg Fischer
  */
 public class A068379 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A068379() {
-    super(new long[] {1L, -3L, 3L}, new long[] {24L, 80L, 168L}, 1L);
+    super(new long[] {1L, -3L, 3L}, new long[] {24L, 80L, 168L}, 2L);
   } // constructor()
 } // A068379

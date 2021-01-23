@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A258705 Orders of groups in chain of subgroups of Conway's group <code>Co_0</code> arising from complete graphs.
+ * A258705 Orders of groups in chain of subgroups of Conway's group Co_0 arising from complete graphs.
  * @author Georg Fischer
  */
 public class A258705 extends FiniteSequence {

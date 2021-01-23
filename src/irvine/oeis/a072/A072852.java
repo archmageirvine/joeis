@@ -6,7 +6,7 @@ package irvine.oeis.a072;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A072852 Number of permutations satisfying <code>i-2&lt;=p(i)&lt;=i+5, i=1..n</code>.
+ * A072852 Number of permutations satisfying i-2&lt;=p(i)&lt;=i+5, i=1..n.
  * @author Georg Fischer
  */
 public class A072852 extends HolonomicRecurrence {

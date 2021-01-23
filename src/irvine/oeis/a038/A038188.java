@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A038188 Smallest integer whose name in colloquial American English (no <code>"and"s)</code> uses n different letters.
+ * A038188 Smallest integer whose name in colloquial American English (no "and"s) uses n different letters.
  * @author Georg Fischer
  */
 public class A038188 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A038188() {
-    super(Z.ONE, Z.ONE, Z.ONE, new Z("3"), new Z("8"), new Z("13"), new Z("14"), new Z("14"), new Z("24"), new Z("74"), new Z("112"), new Z("125"), new Z("125"), new Z("165"), new Z("265"), new Z("1265"), new Z("2568"), new Z("12468"), new Z("1002568"), new Z("1001002568"), new Z("1000001001002568"), new Z("1000000001000001001002568"), new Z("1001000000001000001001002568"));
+    super(Z.ONE, Z.ONE, Z.ONE, Z.THREE, Z.EIGHT, new Z("13"), new Z("14"), new Z("14"), new Z("24"), new Z("74"), new Z("112"), new Z("125"), new Z("125"), new Z("165"), new Z("265"), new Z("1265"), new Z("2568"), new Z("12468"), new Z("1002568"), new Z("1001002568"), new Z("1000001001002568"), new Z("1000000001000001001002568"), new Z("1001000000001000001001002568"));
   }
 }

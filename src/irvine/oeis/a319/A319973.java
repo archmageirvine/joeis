@@ -5,7 +5,7 @@ package irvine.oeis.a319;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A319973 Expansion of <code>(1-x^5+x^8+x^10)/(b(4)*b(5)*b(6))</code> where <code>b(n) = 1-x^n</code>.
+ * A319973 Expansion of (1-x^5+x^8+x^10)/(b(4)*b(5)*b(6)) where b(n) = 1-x^n.
  * @author Georg Fischer
  */
 public class A319973 extends HolonomicRecurrence {

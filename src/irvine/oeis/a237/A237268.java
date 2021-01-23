@@ -4,7 +4,7 @@ package irvine.oeis.a237;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A237268 <code>a(1)=1</code>; for <code>n&gt;1, a(n)</code> is the smallest <code>F(m)&gt;F(n)</code> such that <code>F(n)</code> divides <code>F(m)</code>, where <code>F(k)</code> denotes the k-th Fibonacci number.
+ * A237268 a(1)=1; for n&gt;1, a(n) is the smallest F(m)&gt;F(n) such that F(n) divides F(m), where F(k) denotes the k-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A237268 extends GeneratingFunctionSequence {

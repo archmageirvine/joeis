@@ -5,7 +5,7 @@ package irvine.oeis.a147;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A147595 <code>a(n)</code> is the number whose binary representation is <code>A138144(n)</code>.
+ * A147595 a(n) is the number whose binary representation is A138144(n).
  * @author Georg Fischer
  */
 public class A147595 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002970 Numbers n such that <code>4*n^2 + 9</code> is prime.
+ * A002970 Numbers n such that 4*n^2 + 9 is prime.
  * @author Sean A. Irvine
  */
 public class A002970 implements Sequence {

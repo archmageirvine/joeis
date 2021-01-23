@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181718 <code>a(n) = (1/9)*(10^(2*n) + 10^n - 2)</code>.
+ * A181718 a(n) = (1/9)*(10^(2*n) + 10^n - 2).
  * @author Sean A. Irvine
  */
 public class A181718 extends LinearRecurrence {

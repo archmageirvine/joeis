@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002002 <code>a(n) = Sum_{k=0..n-1} binomial(n,k+1) * binomial(n+k,k)</code>.
+ * A002002 a(n) = Sum_{k=0..n-1} binomial(n,k+1) * binomial(n+k,k).
  * @author Sean A. Irvine
  */
 public class A002002 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024155 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, <code>a+b+c=n</code> that are right triangles.
+ * A024155 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n that are right triangles.
  * @author Sean A. Irvine
  */
 public class A024155 implements Sequence {

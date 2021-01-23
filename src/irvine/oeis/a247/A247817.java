@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247817 <code>Sum(4^k, k=2..n)</code>.
+ * A247817 Sum(4^k, k=2..n).
  * @author Sean A. Irvine
  */
 public class A247817 extends LinearRecurrence {

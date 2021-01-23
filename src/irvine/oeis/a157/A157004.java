@@ -5,7 +5,7 @@ package irvine.oeis.a157;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A157004 Transform of central binomial coefficients <code>A000984</code> whose Hankel transform obeys a <code>Somos-4</code> recurrence.
+ * A157004 Transform of central binomial coefficients A000984 whose Hankel transform obeys a Somos-4 recurrence.
  * @author Georg Fischer
  */
 public class A157004 extends HolonomicRecurrence {

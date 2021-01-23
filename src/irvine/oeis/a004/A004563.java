@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004563 Expansion of <code>sqrt(6)</code> in base 4.
+ * A004563 Expansion of sqrt(6) in base 4.
  * @author Sean A. Irvine
  */
 public class A004563 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(6).sqrt();
+  private static final CR N = CR.SIX.sqrt();
 
   /** Construct the sequence. */
   public A004563() {

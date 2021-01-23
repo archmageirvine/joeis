@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190049 Expansion of <code>(16+24*x+2*x^2)/(x-1)^6</code>.
+ * A190049 Expansion of (16+24*x+2*x^2)/(x-1)^6.
  * @author Georg Fischer
  */
 public class A190049 extends LinearRecurrence {

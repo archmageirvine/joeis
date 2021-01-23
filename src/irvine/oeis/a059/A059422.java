@@ -6,7 +6,7 @@ package irvine.oeis.a059;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059422 Difference between number of even equivalence classes and odd classes of terms in a symmetric determinant of order <code>n</code>.
+ * A059422 Difference between number of even equivalence classes and odd classes of terms in a symmetric determinant of order n.
  * @author Georg Fischer
  */
 public class A059422 extends HolonomicRecurrence {

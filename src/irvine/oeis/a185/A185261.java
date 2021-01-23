@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A185261 Decimal expansion of <code>phi^(1/phi)</code>.
+ * A185261 Decimal expansion of phi^(1/phi).
  * @author Georg Fischer
  */
 public class A185261 extends DecimalExpansionSequence {

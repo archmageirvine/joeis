@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081569 Fourth binomial transform of <code>F(n+1)</code>.
+ * A081569 Fourth binomial transform of F(n+1).
  * @author Sean A. Irvine
  */
 public class A081569 extends LinearRecurrence {

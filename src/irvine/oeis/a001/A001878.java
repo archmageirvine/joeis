@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001878 Number of divisors of n of form <code>5k+3</code>.
+ * A001878 Number of divisors of n of form 5k+3.
  * @author Sean A. Irvine
  */
 public class A001878 implements Sequence {

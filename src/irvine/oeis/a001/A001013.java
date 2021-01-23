@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.HashSet;
 
 /**
- * A001013 Jordan-Polya numbers: products of factorial numbers <code>A000142</code>.
+ * A001013 Jordan-Polya numbers: products of factorial numbers A000142.
  * @author Sean A. Irvine
  */
 public class A001013 implements Sequence {

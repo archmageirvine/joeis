@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179207 <code>a(n) = n - 1 + ceiling((-3 + n^2)/2)</code> if <code>n &gt; 1</code> with <code>a(1)=1</code>, complement of <code>A182835</code>.
+ * A179207 a(n) = n - 1 + ceiling((-3 + n^2)/2) if n &gt; 1 with a(1)=1, complement of A182835.
  * @author Georg Fischer
  */
 public class A179207 extends GeneratingFunctionSequence {

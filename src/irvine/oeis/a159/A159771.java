@@ -6,7 +6,7 @@ package irvine.oeis.a159;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A159771 Number of n-leaf binary trees that do not contain <code>(()((()())((()())())))</code> as a subtree.
+ * A159771 Number of n-leaf binary trees that do not contain (()((()())((()())()))) as a subtree.
  * @author Georg Fischer
  */
 public class A159771 extends HolonomicRecurrence {

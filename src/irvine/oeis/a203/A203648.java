@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203648 <code>a(n) = (1/4) *</code> period of repeating sequence <code>{S(j) mod 2n}</code>, where <code>S(j)</code> is the sum of the first j squares.
+ * A203648 a(n) = (1/4) * period of repeating sequence {S(j) mod 2n}, where S(j) is the sum of the first j squares.
  * @author Sean A. Irvine
  */
 public class A203648 extends LinearRecurrence {

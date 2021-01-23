@@ -6,7 +6,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181292 The sum of the entries in the top rows of all 2-compositions of <code>n. A 2-composition</code> of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to <code>n</code>.
+ * A181292 The sum of the entries in the top rows of all 2-compositions of n. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
  * @author Georg Fischer
  */
 public class A181292 extends GeneratingFunctionSequence {

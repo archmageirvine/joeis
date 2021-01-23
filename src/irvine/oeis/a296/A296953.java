@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296953 Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set <code>{1,...,n}</code>.
+ * A296953 Number of bisymmetric, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
  * @author Georg Fischer
  */
 public class A296953 extends GeneratingFunctionSequence {

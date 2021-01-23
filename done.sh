@@ -47,4 +47,17 @@ EOF
     done
 } | awk -vmax=${max} '{pix[$1,$2]=$3}END{print "P6 1000 "max" 1"; for (y=0;y<max;y++) for(x=0; x<1000;x++) {val=pix[y,x]; if (val=="r") {printf "%c%c%c", 1, 0, 0} else if (val=="g") {printf "%c%c%c", 0, 1, 0} else {printf "%c%c%c", 0, 0, 0 }}}' | pnmtopng >oeis-implemented.png
 
+gnuplot <<EOF
+        set term pngcairo
+        set output "oeis-history.png"
+        set xlabel "Year"
+        set ylabel "Sequences implemented"
+        set title "History of jOEIS"
+        set xdata time                         
+        set timefmt "%Y-%m-%d"
+        set format x "%Y"
+        set key off
+        plot "history.dat" using 1:2 with lines
+EOF
+
 mv ./*.png doc

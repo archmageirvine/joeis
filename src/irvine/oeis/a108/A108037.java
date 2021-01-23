@@ -7,7 +7,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A108037 Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated <code>n+1</code> times.
+ * A108037 Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated n+1 times.
  * @author Georg Fischer
  */
 public class A108037 extends GeneratingFunctionTriangle {

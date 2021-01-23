@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003106 Number of partitions of n into parts <code>5k+2</code> or <code>5k+3</code>.
+ * A003106 Number of partitions of n into parts 5k+2 or 5k+3.
  * @author Sean A. Irvine
  */
 public class A003106 implements Sequence {

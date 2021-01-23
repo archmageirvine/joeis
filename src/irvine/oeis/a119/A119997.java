@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119997 Sum of all matrix elements of <code>n X n</code> matrix <code>M[i,j] = (-1)^(i+j)*Fibonacci[i+j-1]</code>.
+ * A119997 Sum of all matrix elements of n X n matrix M[i,j] = (-1)^(i+j)*Fibonacci[i+j-1].
  * @author Sean A. Irvine
  */
 public class A119997 extends LinearRecurrence {

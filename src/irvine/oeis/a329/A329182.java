@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A329182 Negative discriminants with form class group isomorphic to <code>C_2 X C_2</code> (negated).
+ * A329182 Negative discriminants with form class group isomorphic to C_2 X C_2 (negated).
  * @author Georg Fischer
  */
 public class A329182 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a066;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A066043 <code>a(1) = 1</code>; for m <code>&gt; 0, a(2m) = 2m, a(2m+1) = 4m+2</code>.
+ * A066043 a(1) = 1; for m &gt; 0, a(2m) = 2m, a(2m+1) = 4m+2.
  * @author Georg Fischer
  */
 public class A066043 extends GeneratingFunctionSequence {

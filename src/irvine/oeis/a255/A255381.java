@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A255381 Number of strings of <code>k+n</code> decimal digits that contain one string of exactly k consecutive <code>"0"</code> digits, where k <code>&gt;= n</code>.
+ * A255381 Number of strings of k+n decimal digits that contain one string of exactly k consecutive "0" digits, where k &gt;= n.
  * @author Georg Fischer
  */
 public class A255381 extends GeneratingFunctionSequence {

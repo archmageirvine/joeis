@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A241289 Numbers n for which in the factorization of <code>n!</code> over distinct terms of <code>A050376</code>, the numbers of prime and nonprime terms are equal.
+ * A241289 Numbers n for which in the factorization of n! over distinct terms of A050376, the numbers of prime and nonprime terms are equal.
  * @author Georg Fischer
  */
 public class A241289 extends FiniteSequence {

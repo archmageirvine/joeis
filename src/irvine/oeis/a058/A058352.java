@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000084;
 
 /**
- * A058352 <code>a(n) Sum_{d|n, 1&lt;=d&lt;n} d*A000084(d)</code>.
+ * A058352 a(n) Sum_{d|n, 1&lt;=d&lt;n} d*A000084(d).
  * @author Sean A. Irvine
  */
 public class A058352 extends A000084 {

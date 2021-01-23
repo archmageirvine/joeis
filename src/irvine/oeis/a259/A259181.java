@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259181 <code>a(n) = n*(n+1)*(n+2)*(n+3)*(2*n^2+6*n+7)/360</code>.
+ * A259181 a(n) = n*(n+1)*(n+2)*(n+3)*(2*n^2+6*n+7)/360.
  * @author Sean A. Irvine
  */
 public class A259181 extends LinearRecurrence {

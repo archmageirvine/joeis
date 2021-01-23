@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020682 Numbers of form <code>4 x^2 + 5 y^2</code>.
+ * A020682 Numbers of form 4 x^2 + 5 y^2.
  * @author Sean A. Irvine
  */
 public class A020682 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030134 <code>a(n)^2</code> has last digit equal to the sum of the other digits.
+ * A030134 a(n)^2 has last digit equal to the sum of the other digits.
  * @author Sean A. Irvine
  */
 public class A030134 implements Sequence {

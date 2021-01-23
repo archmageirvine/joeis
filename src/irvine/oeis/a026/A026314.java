@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026314 <code>a(n) = n-th</code> nonnegative integer k satisfying <code>|cos(k)*cos(k+2)| &gt; (cos(k+1))^2</code>.
+ * A026314 a(n) = n-th nonnegative integer k satisfying |cos(k)*cos(k+2)| &gt; (cos(k+1))^2.
  * @author Sean A. Irvine
  */
 public class A026314 implements Sequence {

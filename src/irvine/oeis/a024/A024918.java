@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a000.A000961;
 
 /**
- * A024918 Partial sums of the sequence of prime powers <code>(A000961)</code>.
+ * A024918 Partial sums of the sequence of prime powers (A000961).
  * @author Sean A. Irvine
  */
 public class A024918 extends PartialSumSequence {

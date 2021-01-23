@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002034;
 
 /**
- * A122416 Numbers from an irrationality measure for e, with <code>a(1) = 2</code>.
+ * A122416 Numbers from an irrationality measure for e, with a(1) = 2.
  * @author Georg Fischer
  */
 public class A122416 extends A002034 {

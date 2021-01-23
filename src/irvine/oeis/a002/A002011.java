@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002011 <code>a(n) = 4*(2n+1)!/n!^2</code>.
+ * A002011 a(n) = 4*(2n+1)!/n!^2.
  * @author Sean A. Irvine
  */
 public class A002011 implements Sequence {

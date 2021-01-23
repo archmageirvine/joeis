@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A059956 Decimal expansion of <code>6/Pi^2</code>.
+ * A059956 Decimal expansion of 6/Pi^2.
  * @author Sean A. Irvine
  */
 public class A059956 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(6).divide(CR.PI.multiply(CR.PI));
+  private static final CR N = CR.SIX.divide(CR.PI.multiply(CR.PI));
 
   @Override
   protected CR getCR() {

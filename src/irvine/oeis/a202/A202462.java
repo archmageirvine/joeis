@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202462 <code>a(n) = Sum_{j=1..n} Sum_{i=1..n} F(i,j)</code>, where F is the Fibonacci fusion array of <code>A202453</code>.
+ * A202462 a(n) = Sum_{j=1..n} Sum_{i=1..n} F(i,j), where F is the Fibonacci fusion array of A202453.
  * @author Sean A. Irvine
  */
 public class A202462 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010926 Binomial coefficients <code>C(10,n)</code>.
+ * A010926 Binomial coefficients C(10,n).
  * @author Sean A. Irvine
  */
 public class A010926 extends FiniteSequence {

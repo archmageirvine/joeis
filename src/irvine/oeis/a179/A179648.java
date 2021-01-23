@@ -6,7 +6,7 @@ package irvine.oeis.a179;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A179648 Expansion of <code>(1/(1+4x-2x^2))*c(x/(1+4x-2x^2)), c(x)</code> the g.f. of <code>A000108</code>.
+ * A179648 Expansion of (1/(1+4x-2x^2))*c(x/(1+4x-2x^2)), c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A179648 extends HolonomicRecurrence {

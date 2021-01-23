@@ -6,7 +6,7 @@ package irvine.oeis.a103;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A103821 A Whitney transform of the central binomial coefficients <code>A000984</code>.
+ * A103821 A Whitney transform of the central binomial coefficients A000984.
  * @author Georg Fischer
  */
 public class A103821 extends HolonomicRecurrence {

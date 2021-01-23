@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A113225 <code>a(2n) = A011900(n), a(2n+1) = A001109(n+1)</code>.
+ * A113225 a(2n) = A011900(n), a(2n+1) = A001109(n+1).
  * @author Georg Fischer
  */
 public class A113225 extends GeneratingFunctionSequence {

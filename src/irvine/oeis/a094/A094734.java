@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094734 Number of connected 2-element multiantichains on a labeled <code>n-set</code>.
+ * A094734 Number of connected 2-element multiantichains on a labeled n-set.
  * @author Georg Fischer
  */
 public class A094734 extends GeneratingFunctionSequence {

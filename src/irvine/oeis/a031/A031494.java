@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031494 n-th number k which in base 9 has 2 more <code>0</code>'s than <code>8</code>'s.
+ * A031494 n-th number k which in base 9 has 2 more 0's than 8's.
  * @author Sean A. Irvine
  */
 public class A031494 extends A031452 {

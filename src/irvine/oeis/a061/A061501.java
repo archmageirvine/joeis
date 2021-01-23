@@ -5,7 +5,7 @@ package irvine.oeis.a061;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A061501 <code>a(1) = 1, a(n+1) = (a(n) + n) mod 10</code>.
+ * A061501 a(1) = 1, a(n+1) = (a(n) + n) mod 10.
  * @author Georg Fischer
  */
 public class A061501 extends PeriodicSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a248;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A248572 <code>a(n) = 29*n + 1</code>.
+ * A248572 a(n) = 29*n + 1.
  * @author Georg Fischer
  */
 public class A248572 extends HolonomicRecurrence {

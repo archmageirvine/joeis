@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120354 <code>a(n) = 11*3^n</code>.
+ * A120354 a(n) = 11*3^n.
  * @author Georg Fischer
  */
 public class A120354 extends HolonomicRecurrence {

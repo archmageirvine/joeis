@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A011559 Stirling numbers of second kind <code>S2(10,n)</code>.
+ * A011559 Stirling numbers of second kind S2(10,n).
  * @author Sean A. Irvine
  */
 public class A011559 extends FiniteSequence {

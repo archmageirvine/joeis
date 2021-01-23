@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A275151 <code>a(1) = 8; a(n) = 3*a(n-1) + 2*sqrt(2*a(n-1)*(a(n-1)-7)) - 7</code> for <code>n &gt; 1</code>.
+ * A275151 a(1) = 8; a(n) = 3*a(n-1) + 2*sqrt(2*a(n-1)*(a(n-1)-7)) - 7 for n &gt; 1.
  * @author Georg Fischer
  */
 public class A275151 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a046;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A046700 <code>a(1) = a(2) = a(3) = 1, a(n) = a(n - a(n-1)) + a(n - a(n-3))</code> for <code>3 &lt; n &lt; 165</code>.
+ * A046700 a(1) = a(2) = a(3) = 1, a(n) = a(n - a(n-1)) + a(n - a(n-3)) for 3 &lt; n &lt; 165.
  * @author Georg Fischer
  */
 public class A046700 extends FiniteSequence {

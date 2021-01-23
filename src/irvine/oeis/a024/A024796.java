@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024796 Numbers expressible in more than one way as <code>i^2 + j^2 + k^2</code>, where <code>1 &lt;= i &lt;= j &lt;=</code> k.
+ * A024796 Numbers expressible in more than one way as i^2 + j^2 + k^2, where 1 &lt;= i &lt;= j &lt;= k.
  * @author Sean A. Irvine
  */
 public class A024796 implements Sequence {

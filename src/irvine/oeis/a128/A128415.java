@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128415 Expansion of <code>(1-4x^2)/(1+3x+4x^2)</code>.
+ * A128415 Expansion of (1-4x^2)/(1+3x+4x^2).
  * @author Georg Fischer
  */
 public class A128415 extends GeneratingFunctionSequence {

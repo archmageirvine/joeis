@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131665 Sequence is identical to its third differences in absolute value: <code>a(0), a(1), a(2), a(2n+1)=3a(2n)-3a(2n-1)+2a(2n-2), a(2n+2)=3a(2n+1)-3a(2n)</code>, with <code>a(0)=a(1)=0, a(2)=1</code>.
+ * A131665 Sequence is identical to its third differences in absolute value: a(0), a(1), a(2), a(2n+1)=3a(2n)-3a(2n-1)+2a(2n-2), a(2n+2)=3a(2n+1)-3a(2n), with a(0)=a(1)=0, a(2)=1.
  * @author Georg Fischer
  */
 public class A131665 extends LinearRecurrence {

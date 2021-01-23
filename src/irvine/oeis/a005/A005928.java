@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005928 G.f.: <code>s(1)^3/s(3)</code>, where <code>s(k) = eta(q^k)</code> and <code>eta(q)</code> is Dedekind's function, cf. <code>A010815</code>.
+ * A005928 G.f.: s(1)^3/s(3), where s(k) = eta(q^k) and eta(q) is Dedekind's function, cf. A010815.
  * @author Sean A. Irvine
  */
 public class A005928 implements Sequence {

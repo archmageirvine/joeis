@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A051172 <code>T(n,7)</code>, array T as in <code>A051168</code>; a count of Lyndon words; aperiodic necklaces with 7 black beads and <code>n-7</code> white beads.
+ * A051172 T(n,7), array T as in A051168; a count of Lyndon words; aperiodic necklaces with 7 black beads and n-7 white beads.
  * @author Georg Fischer
  */
 public class A051172 extends GeneratingFunctionSequence {

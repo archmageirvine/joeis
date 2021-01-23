@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A219180 Number <code>T(n,k)</code> of partitions of n into k distinct prime parts; triangle <code>T(n,k), n&gt;=0</code>, read by rows.
+ * A219180 Number T(n,k) of partitions of n into k distinct prime parts; triangle T(n,k), n&gt;=0, read by rows.
  * @author Sean A. Irvine
  */
 public class A219180 extends MemoryFunction2<Integer, Z[]> implements Sequence {
@@ -52,7 +52,7 @@ public class A219180 extends MemoryFunction2<Integer, Z[]> implements Sequence {
     }
     final Z[] row = get(mN, mPi);
     int k = row.length;
-    while (--k >= 0 && row[k].equals(Z.ZERO)) {
+    while (--k >= 0 && row[k].isZero()) {
       // do nothing
     }
     return k != row.length - 1 ? Arrays.copyOf(row, k + 1) : row;

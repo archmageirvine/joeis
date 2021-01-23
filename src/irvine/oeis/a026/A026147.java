@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001285;
 
 /**
- * A026147 <code>a(n) =</code> position of <code>n-th 1</code> in <code>A001285</code> or <code>A010059 (Thue-Morse</code> sequence).
+ * A026147 a(n) = position of n-th 1 in A001285 or A010059 (Thue-Morse sequence).
  * @author Sean A. Irvine
  */
 public class A026147 extends A001285 {

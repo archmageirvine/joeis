@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184064 Number of <code>(n+1) X 3</code> binary arrays with rows and columns in nondecreasing order and with no <code>2 X 2</code> subblock sum differing from a horizontal or vertical neighbor subblock sum by more than one.
+ * A184064 Number of (n+1) X 3 binary arrays with rows and columns in nondecreasing order and with no 2 X 2 subblock sum differing from a horizontal or vertical neighbor subblock sum by more than one.
  * @author Georg Fischer
  */
 public class A184064 extends GeneratingFunctionSequence {

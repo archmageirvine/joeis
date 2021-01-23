@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027531 First column of <code>A027517</code>.
+ * A027531 First column of A027517.
  * @author Sean A. Irvine
  */
 public class A027531 extends A027517 {

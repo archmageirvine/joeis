@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A272342 <code>a(n) = 27*8^n</code>.
+ * A272342 a(n) = 27*8^n.
  * @author Georg Fischer
  */
 public class A272342 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a046;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A046727 Related to Pythagorean triples: alternate terms of <code>A001652</code> and <code>A046090</code>.
+ * A046727 Related to Pythagorean triples: alternate terms of A001652 and A046090.
  * @author Georg Fischer
  */
 public class A046727 extends GeneratingFunctionSequence {

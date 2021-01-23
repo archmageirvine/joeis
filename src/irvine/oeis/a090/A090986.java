@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A090986 Decimal expansion of <code>Pi/sinh(Pi)</code>.
+ * A090986 Decimal expansion of Pi/sinh(Pi).
  * @author Sean A. Irvine
  */
 public class A090986 extends DecimalExpansionSequence {

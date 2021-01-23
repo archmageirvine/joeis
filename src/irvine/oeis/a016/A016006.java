@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016006 <code>a(n) = (tau(n^10)+9)/10</code>.
+ * A016006 a(n) = (tau(n^10)+9)/10.
  * @author Sean A. Irvine
  */
 public class A016006 implements Sequence {

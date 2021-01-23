@@ -6,7 +6,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329676 Number of excursions of length n with Motzkin-steps avoiding the consecutive steps <code>UD</code> and HH.
+ * A329676 Number of excursions of length n with Motzkin-steps avoiding the consecutive steps UD and HH.
  * @author Georg Fischer
  */
 public class A329676 extends HolonomicRecurrence {

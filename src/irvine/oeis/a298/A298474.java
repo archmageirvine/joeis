@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298474 <code>a(n)</code> is the least k such that <code>A090701(k) = n</code>.
+ * A298474 a(n) is the least k such that A090701(k) = n.
  * @author Georg Fischer
  */
 public class A298474 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178372 Number of ways to place 8 nonattacking amazons (superqueens) on an <code>8 X n</code> board.
+ * A178372 Number of ways to place 8 nonattacking amazons (superqueens) on an 8 X n board.
  * @author Georg Fischer
  */
 public class A178372 extends GeneratingFunctionSequence {

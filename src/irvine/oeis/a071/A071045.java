@@ -5,7 +5,7 @@ package irvine.oeis.a071;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A071045 Number of <code>0</code>'s in n-th row of triangle in <code>A071030</code>.
+ * A071045 Number of 0's in n-th row of triangle in A071030.
  * @author Georg Fischer
  */
 public class A071045 extends HolonomicRecurrence {

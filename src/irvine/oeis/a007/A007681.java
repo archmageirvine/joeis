@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007681 <code>a(n) = (2*n+1)^2*n!</code>.
+ * A007681 a(n) = (2*n+1)^2*n!.
  * @author Sean A. Irvine
  */
 public class A007681 implements Sequence {

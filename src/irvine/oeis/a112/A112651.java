@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112651 Numbers n such that <code>n^2 (mod 11)</code> is congruent to <code>n (mod 11)</code>.
+ * A112651 Numbers n such that n^2 (mod 11) is congruent to n (mod 11).
  * @author Sean A. Irvine
  */
 public class A112651 extends LinearRecurrence {

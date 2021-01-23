@@ -15,14 +15,13 @@ public final class Convert {
 
   /**
    * Convert a string in given radix to an integer.
-   *
    * @param val value to convert
    * @param radix base of string
    * @return integer representation
    */
   public static Z valueOf(final CharSequence val, final int radix) {
-    if (radix < 2 || radix > 36) {
-      throw new IllegalArgumentException("Radix must be in [2,36].");
+    if (radix < 1 || radix > 36) {
+      throw new IllegalArgumentException("Radix must be in [1,36].");
     }
     final int len = val.length();
     if (len == 0) {
@@ -35,6 +34,12 @@ public final class Convert {
         throw new IllegalArgumentException("Minus without digits.");
       }
       cnt = 1;
+    }
+    if (radix == 1) {
+      if (val.equals("0")) {
+        return Z.ZERO;
+      }
+      return negative ? Z.valueOf(-(val.length() - 1)) : Z.valueOf(val.length());
     }
     Z a = Z.ZERO;
     final int limit = (int) (Math.log(Long.MAX_VALUE) / Math.log(radix)) - 1;
@@ -105,7 +110,7 @@ public final class Convert {
     int bytes = 1 + (Bit.bitLength(n) >>> 3);
     final byte[] num = new byte[bytes];
     int offset = 1;
-    long value = (long) n.mValue[0];
+    long value = n.mValue[0];
     int bitsLeft = Z.BASE_BITS;
     // Change endianness and base
     while (--bytes >= 0) {
@@ -132,9 +137,9 @@ public final class Convert {
     case 0:
       return 0L;
     case 1:
-      return (long) n.mValue[0];
+      return n.mValue[0];
     case -1:
-      return (long) -n.mValue[0];
+      return -n.mValue[0];
     case 2:
       return ((long) n.mValue[1] << Z.BASE_BITS) | n.mValue[0];
     case -2:
@@ -156,7 +161,7 @@ public final class Convert {
     double r = 0.0;
     for (int i = (sign ? -n.getSize() : n.getSize()) - 1; i >= 0; --i) {
       r *= Z.DBASE;
-      r += (double) n.mValue[i];
+      r += n.mValue[i];
     }
     return sign ? -r : r;
   }

@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A274137 Numbers in the lyrics of Mikhail Scherbakov's song "Razminka" <code>("Warm-up") ["Shest'</code>, sem', vosem'..." <code>("Six</code>, seven, <code>eight...")]</code>.
+ * A274137 Numbers in the lyrics of Mikhail Scherbakov's song "Razminka" ("Warm-up") ["Shest', sem', vosem'..." ("Six, seven, eight...")].
  * @author Georg Fischer
  */
 public class A274137 extends FiniteSequence {

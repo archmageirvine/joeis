@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304487 <code>a(n) = (3 + 2*n - 3*n^2 + 4*n^3 - 3*((-1 + n) mod 2))/6</code>.
+ * A304487 a(n) = (3 + 2*n - 3*n^2 + 4*n^3 - 3*((-1 + n) mod 2))/6.
  * @author Georg Fischer
  */
 public class A304487 extends LinearRecurrence {

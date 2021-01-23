@@ -6,7 +6,7 @@ package irvine.oeis.a297;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A297705 <code>a(n) = Sum_{k=0..n} binomial(n, k)*hypergeom([k -</code> n, <code>n + 1], [k + 2], -4)</code>.
+ * A297705 a(n) = Sum_{k=0..n} binomial(n, k)*hypergeom([k - n, n + 1], [k + 2], -4).
  * @author Georg Fischer
  */
 public class A297705 extends HolonomicRecurrence {

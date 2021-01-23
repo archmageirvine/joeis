@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301739 The number of trees with 4 nodes labeled by positive integers, where each tree's label sum is <code>n</code>.
+ * A301739 The number of trees with 4 nodes labeled by positive integers, where each tree's label sum is n.
  * @author Georg Fischer
  */
 public class A301739 extends GeneratingFunctionSequence {

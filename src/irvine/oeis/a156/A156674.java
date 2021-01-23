@@ -6,7 +6,7 @@ package irvine.oeis.a156;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A156674 Numbers n such that <code>n^2-2=0 mod 49</code>.
+ * A156674 Numbers n such that n^2-2=0 mod 49.
  * @author Georg Fischer
  */
 public class A156674 extends GeneratingFunctionSequence {

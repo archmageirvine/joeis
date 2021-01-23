@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216755 Digital root of the fifth power of <code>Fibonacci(n)</code>.
+ * A216755 Digital root of the fifth power of Fibonacci(n).
  * @author Sean A. Irvine
  */
 public class A216755 extends LinearRecurrence {

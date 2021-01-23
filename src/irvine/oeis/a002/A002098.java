@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002098 G.f.: <code>1/Product_{k&gt;=1} (1-prime(k)*x^prime(k))</code>.
+ * A002098 G.f.: 1/Product_{k&gt;=1} (1-prime(k)*x^prime(k)).
  * @author Sean A. Irvine
  */
 public class A002098 implements Sequence {

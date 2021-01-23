@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054275 Susceptibility series <code>H_2</code> for 2-dimensional Ising model (divided by <code>2)</code>.
+ * A054275 Susceptibility series H_2 for 2-dimensional Ising model (divided by 2).
  * @author Georg Fischer
  */
 public class A054275 extends GeneratingFunctionSequence {

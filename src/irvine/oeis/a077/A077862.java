@@ -5,7 +5,7 @@ package irvine.oeis.a077;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A077862 Expansion of <code>(1-x)^(-1)/(1-2*x+2*x^2+2*x^3)</code>.
+ * A077862 Expansion of (1-x)^(-1)/(1-2*x+2*x^2+2*x^3).
  * @author Georg Fischer
  */
 public class A077862 extends HolonomicRecurrence {

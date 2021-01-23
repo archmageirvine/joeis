@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000045;
 
 /**
- * A028256 <code>Fibonacci(n+2) mod n-th</code> prime.
+ * A028256 Fibonacci(n+2) mod n-th prime.
  * @author Sean A. Irvine
  */
 public class A028256 extends A000040 {

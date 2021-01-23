@@ -5,7 +5,7 @@ package irvine.oeis.a248;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A248045 <code>(2*(n-1))! * (2*n-1)! / (n * (n-1)!^3)</code>.
+ * A248045 (2*(n-1))! * (2*n-1)! / (n * (n-1)!^3).
  * @author Georg Fischer
  */
 public class A248045 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A019532 <code>Fibonacci(n)</code> divides <code>n!</code>.
+ * A019532 Fibonacci(n) divides n!.
  * @author Sean A. Irvine
  */
 public class A019532 extends FiniteSequence {

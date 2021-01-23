@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278128 <code>a(n) = 288*2^n - 156</code>.
+ * A278128 a(n) = 288*2^n - 156.
  * @author Sean A. Irvine
  */
 public class A278128 extends LinearRecurrence {

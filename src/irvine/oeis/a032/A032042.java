@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A032042 Shifts left under "BFJ" <code>(reversible</code>, size, labeled) transform.
+ * A032042 Shifts left under "BFJ" (reversible, size, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032042 extends A032004 {

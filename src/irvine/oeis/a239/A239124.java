@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239124 <code>a(n) = 64*n - 11</code> for <code>n &gt;= 1</code>. Third column of triangle <code>A238476</code>.
+ * A239124 a(n) = 64*n - 11 for n &gt;= 1. Third column of triangle A238476.
  * @author Georg Fischer
  */
 public class A239124 extends GeneratingFunctionSequence {

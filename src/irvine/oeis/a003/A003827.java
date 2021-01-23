@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005130;
 
 /**
- * A003827 'Core' alternating sign <code>n X n</code> matrices, i.e., those that are not 'blown up' from a smaller matrix by inserting row i, column j with <code>a_ij = 1</code> and all other entries in that row and column equal to 0.
+ * A003827 'Core' alternating sign n X n matrices, i.e., those that are not 'blown up' from a smaller matrix by inserting row i, column j with a_ij = 1 and all other entries in that row and column equal to 0.
  * @author Sean A. Irvine
  */
 public class A003827 extends MemorySequence {

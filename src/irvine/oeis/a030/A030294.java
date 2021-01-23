@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030294 Numbers n such that <code>n^3</code> has at most three different digits.
+ * A030294 Numbers n such that n^3 has at most three different digits.
  * @author Sean A. Irvine
  */
 public class A030294 implements Sequence {

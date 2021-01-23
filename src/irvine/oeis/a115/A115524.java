@@ -7,7 +7,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A115524 Number triangle <code>(1,-x)+(x,x)/2+(x,-x)/2-(x^2,x^2)</code> (expressed using the notation of stretched Riordan arrays).
+ * A115524 Number triangle (1,-x)+(x,x)/2+(x,-x)/2-(x^2,x^2) (expressed using the notation of stretched Riordan arrays).
  * @author Georg Fischer
  */
 public class A115524 extends GeneratingFunctionTriangle {

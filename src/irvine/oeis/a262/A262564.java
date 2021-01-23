@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A262564 A politician's answer to the question "What comes next after <code>2,3,5?"</code>.
+ * A262564 A politician's answer to the question "What comes next after 2,3,5?".
  * @author Georg Fischer
  */
 public class A262564 extends GeneratingFunctionSequence {

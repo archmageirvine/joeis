@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298033 Coordination sequence of the <code>Dual(3.4.6.4)</code> tiling with respect to a hexavalent node.
+ * A298033 Coordination sequence of the Dual(3.4.6.4) tiling with respect to a hexavalent node.
  * @author Georg Fischer
  */
 public class A298033 extends GeneratingFunctionSequence {

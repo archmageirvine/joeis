@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224541 Number of doubly-surjective functions <code>f:[n]-&gt;[3]</code>.
+ * A224541 Number of doubly-surjective functions f:[n]-&gt;[3].
  * @author Georg Fischer
  */
 public class A224541 extends GeneratingFunctionSequence {

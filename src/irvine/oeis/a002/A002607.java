@@ -6,7 +6,7 @@ import irvine.math.group.GaussianIntegers;
 import irvine.util.Pair;
 
 /**
- * A002607 Glaisher's <code>chi_8(n)</code>.
+ * A002607 Glaisher's chi_8(n).
  * @author Sean A. Irvine
  */
 public class A002607 implements Sequence {
@@ -29,7 +29,7 @@ public class A002607 implements Sequence {
         }
       }
     }
-    assert Z.ZERO.equals(GI.im(sum));
+    assert GI.im(sum).isZero();
     return GI.re(sum).divide(4);
   }
 }

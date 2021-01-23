@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010352 <code>Base-9</code> Armstrong or narcissistic numbers, written in base 9.
+ * A010352 Base-9 Armstrong or narcissistic numbers, written in base 9.
  * @author Sean A. Irvine
  */
 public class A010352 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096382 Consider a Pythagorean triangle with sides <code>a=u^2-v^2, b=2uv, c=u^2+v^2</code>. The sequence is the area of the triangle when <code>v=2, u=3,4,5,..</code>.
+ * A096382 Consider a Pythagorean triangle with sides a=u^2-v^2, b=2uv, c=u^2+v^2. The sequence is the area of the triangle when v=2, u=3,4,5,...
  * @author Sean A. Irvine
  */
 public class A096382 extends LinearRecurrence {

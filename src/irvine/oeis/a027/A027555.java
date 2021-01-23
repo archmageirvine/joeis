@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027555 Triangle of binomial coefficients <code>C(-n,k)</code>.
+ * A027555 Triangle of binomial coefficients C(-n,k).
  * @author Sean A. Irvine
  */
 public class A027555 implements Sequence {

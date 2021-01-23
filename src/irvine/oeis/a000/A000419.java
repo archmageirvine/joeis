@@ -13,7 +13,7 @@ public class A000419 extends A000378 {
     while (true) {
       final Z t = super.next();
       final Z[] s = t.sqrtAndRemainder();
-      if (!Z.ZERO.equals(s[1])) {
+      if (!s[1].isZero()) {
         boolean ok = true;
         final Z r = s[0];
         for (Z x = Z.ONE; x.compareTo(r) <= 0; x = x.add(1)) {

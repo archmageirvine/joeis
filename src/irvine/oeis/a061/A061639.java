@@ -6,7 +6,7 @@ package irvine.oeis.a061;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A061639 Number of planar planted trees with <code>n non-root</code> nodes and every 2-valent node isolated.
+ * A061639 Number of planar planted trees with n non-root nodes and every 2-valent node isolated.
  * @author Georg Fischer
  */
 public class A061639 extends HolonomicRecurrence {

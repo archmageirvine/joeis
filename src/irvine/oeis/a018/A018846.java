@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018846 Strobogrammatic numbers: numbers that are the same upside down (using <code>calculator-style</code> numerals).
+ * A018846 Strobogrammatic numbers: numbers that are the same upside down (using calculator-style numerals).
  * @author Sean A. Irvine
  */
 public class A018846 implements Sequence {

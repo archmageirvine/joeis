@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A265611 <code>a(n) = a(n-1) + floor((n-1)/2) - (-1)^n + 2</code> for <code>n&gt;=2, a(0)=1, a(1)=3</code>.
+ * A265611 a(n) = a(n-1) + floor((n-1)/2) - (-1)^n + 2 for n&gt;=2, a(0)=1, a(1)=3.
  * @author Georg Fischer
  */
 public class A265611 extends GeneratingFunctionSequence {

@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050839 Numbers n such that <code>175*2^n-1</code> is prime.
+ * A050839 Numbers n such that 175*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050839 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050839() {
-    super(1, 1, 175, 2, -1, 0);
+    super(1, 1, 175, 2, -1);
   }
 }

@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184138 Number of <code>n X 3</code> binary arrays with rows and columns in nondecreasing order.
+ * A184138 Number of n X 3 binary arrays with rows and columns in nondecreasing order.
  * @author Georg Fischer
  */
 public class A184138 extends GeneratingFunctionSequence {

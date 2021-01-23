@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036142 <code>3^n mod 113</code>.
+ * A036142 3^n mod 113.
  * @author Georg Fischer
  */
 public class A036142 implements Sequence {

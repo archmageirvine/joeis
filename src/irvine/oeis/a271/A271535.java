@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271535 <code>a(n) = ( n*(n + 1)*(2*n + 1)/6 )^2</code>.
+ * A271535 a(n) = ( n*(n + 1)*(2*n + 1)/6 )^2.
  * @author Sean A. Irvine
  */
 public class A271535 extends LinearRecurrence {

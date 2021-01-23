@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244655 Least number k such that <code>3^k</code> ends in exactly n consecutive decreasing digits.
+ * A244655 Least number k such that 3^k ends in exactly n consecutive decreasing digits.
  * @author Georg Fischer
  */
 public class A244655 extends FiniteSequence {

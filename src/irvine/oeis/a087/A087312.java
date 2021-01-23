@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A087312 <code>a(1) = 1</code>; for <code>n &gt; 1, a(n)</code> is the smallest number <code>== -1 (mod a(n-1))</code>, greater than n, with the same prime signature as <code>n</code>.
+ * A087312 a(1) = 1; for n &gt; 1, a(n) is the smallest number == -1 (mod a(n-1)), greater than n, with the same prime signature as n.
  * @author Georg Fischer
  */
 public class A087312 extends FiniteSequence {

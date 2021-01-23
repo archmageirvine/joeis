@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309998 Nonnegative values x of solutions <code>(x, y)</code> to the Diophantine equation <code>x^2 + (x + 529)^2 = y^2</code>.
+ * A309998 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x + 529)^2 = y^2.
  * @author Georg Fischer
  */
 public class A309998 extends HolonomicRecurrence {

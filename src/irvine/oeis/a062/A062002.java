@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A062002 <code>Gamma_0(n)</code> has genus 0 and does not contain any elliptic elements.
+ * A062002 Gamma_0(n) has genus 0 and does not contain any elliptic elements.
  * @author Georg Fischer
  */
 public class A062002 extends FiniteSequence {

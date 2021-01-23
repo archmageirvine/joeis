@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027806 <code>30*(n+1)*C(n+4,10)</code>.
+ * A027806 30*(n+1)*C(n+4,10).
  * @author Sean A. Irvine
  */
 public class A027806 implements Sequence {

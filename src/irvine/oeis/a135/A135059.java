@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135059 Orbits with n vertices of special cuts up to isomorphism of <code>600-cell</code>.
+ * A135059 Orbits with n vertices of special cuts up to isomorphism of 600-cell.
  * @author Georg Fischer
  */
 public class A135059 extends FiniteSequence {

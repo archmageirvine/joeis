@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001907 Expansion of e.g.f. <code>exp(-x)/(1-4*x)</code>.
+ * A001907 Expansion of e.g.f. exp(-x)/(1-4*x).
  * @author Sean A. Irvine
  */
 public class A001907 implements Sequence {

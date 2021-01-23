@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000681 Number of <code>n X n</code> matrices with nonnegative entries and every row and column sum 2.
+ * A000681 Number of n X n matrices with nonnegative entries and every row and column sum 2.
  * @author Sean A. Irvine
  */
 public class A000681 implements Sequence {

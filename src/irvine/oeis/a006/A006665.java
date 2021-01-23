@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006665 G.f.: <code>{ ( Product_{j=1..inf} (1-x^j) - 1 )/x }^24</code>.
+ * A006665 G.f.: { ( Product_{j=1..infinity} (1-x^j) - 1 )/x }^24.
  * @author Sean A. Irvine
  */
 public class A006665 implements Sequence {

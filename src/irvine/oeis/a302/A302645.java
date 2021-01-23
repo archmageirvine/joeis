@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302645 Values of unimodal polynomial analogous to <code>A302612</code> and <code>A302644</code> arising from a partition size <code>&lt;= 4</code> restriction.
+ * A302645 Values of unimodal polynomial analogous to A302612 and A302644 arising from a partition size &lt;= 4 restriction.
  * @author Georg Fischer
  */
 public class A302645 extends GeneratingFunctionSequence {

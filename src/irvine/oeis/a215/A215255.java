@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215255 Let S be the binary string consisting of the first n digits of <code>(100101)*; a(n) =</code> number of ways of writing S as a product of palindromes.
+ * A215255 Let S be the binary string consisting of the first n digits of (100101)*; a(n) = number of ways of writing S as a product of palindromes.
  * @author Georg Fischer
  */
 public class A215255 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005713 Define strings <code>S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2)</code>; iterate.
+ * A005713 Define strings S(0)=0, S(1)=11, S(n) = S(n-1)S(n-2); iterate.
  * @author Sean A. Irvine
  */
 public class A005713 implements Sequence {

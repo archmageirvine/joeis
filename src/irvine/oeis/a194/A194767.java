@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A194767 Denominator of the fourth increasing diagonal of the autosequence of second kind from <code>(-1)^n / (n+1)</code>.
+ * A194767 Denominator of the fourth increasing diagonal of the autosequence of second kind from (-1)^n / (n+1).
  * @author Georg Fischer
  */
 public class A194767 extends GeneratingFunctionSequence {

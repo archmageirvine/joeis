@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 /**
- * A030345 <code>a(n)=least</code> k such that base 3 representation of n begins at <code>s(k)</code>, where <code>s=A030341</code>.
+ * A030345 a(n)=least k such that base 3 representation of n begins at s(k), where s=A030341.
  * @author Sean A. Irvine
  */
 public class A030345 extends A030335 {

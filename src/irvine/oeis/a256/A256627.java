@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A256627 Alfred Moessner's <code>8 X 8</code> magic square made from the first 64 triangular numbers, read by rows.
+ * A256627 Alfred Moessner's 8 X 8 magic square made from the first 64 triangular numbers, read by rows.
  * @author Georg Fischer
  */
 public class A256627 extends FiniteSequence {

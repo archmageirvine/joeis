@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001006;
 
 /**
- * A039964 Motzkin numbers <code>A001006</code> read <code>mod 3</code>.
+ * A039964 Motzkin numbers A001006 read mod 3.
  * @author Georg Fischer
  */
 public class A039964 extends A001006 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A039964() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

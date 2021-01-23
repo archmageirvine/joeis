@@ -5,7 +5,7 @@ package irvine.oeis.a174;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A174505 Continued fraction expansion for <code>exp( Sum_{n&gt;=1} 1/(n*Lucas(n)) )</code>, where <code>Lucas(n) = A000032(n) = ((1+sqrt(5))/2)^n + ((1-sqrt(5))/2)^n</code>.
+ * A174505 Continued fraction expansion for exp( Sum_{n&gt;=1} 1/(n*Lucas(n)) ), where Lucas(n) = A000032(n) = ((1+sqrt(5))/2)^n + ((1-sqrt(5))/2)^n.
  * @author Georg Fischer
  */
 public class A174505 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008302 Triangle of Mahonian numbers <code>T(n,k)</code>: coefficients in expansion of <code>Product_{i=0..n-1} (1 + x + ... + x^i)</code>, where k ranges from 0 to <code>A000217(n-1)</code>. Also enumerates permutations by their major index.
+ * A008302 Triangle of Mahonian numbers T(n,k): coefficients in expansion of Product_{i=0..n-1} (1 + x + ... + x^i), where k ranges from 0 to A000217(n-1). Also enumerates permutations by their major index.
  * @author Sean A. Irvine
  */
 public class A008302 extends MemoryFunction2<Long, Z> implements Sequence {

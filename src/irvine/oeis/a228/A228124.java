@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228124 Number of blocks in a Steiner Quadruple System of order <code>A047235(n+1)</code>.
+ * A228124 Number of blocks in a Steiner Quadruple System of order A047235(n+1).
  * @author Sean A. Irvine
  */
 public class A228124 extends LinearRecurrence {

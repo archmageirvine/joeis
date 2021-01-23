@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274251 Number of partitions of <code>n^3</code> into at most three parts.
+ * A274251 Number of partitions of n^3 into at most three parts.
  * @author Georg Fischer
  */
 public class A274251 extends GeneratingFunctionSequence {

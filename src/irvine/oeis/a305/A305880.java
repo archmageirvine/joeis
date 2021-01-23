@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305880 A base 3/2 reverse sorted Fibonacci sequence that starts with terms 2211 and 2211. The terms are interpreted as numbers written in base 3/2. To get <code>a(n+2)</code>, add <code>a(n)</code> and <code>a(n+1)</code>, write the result in base 3/2 and sort the digits into decreasing order, omitting all zeros.
+ * A305880 A base 3/2 reverse sorted Fibonacci sequence that starts with terms 2211 and 2211. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the digits into decreasing order, omitting all zeros.
  * @author Georg Fischer
  */
 public class A305880 extends GeneratingFunctionSequence {

@@ -117,7 +117,7 @@ public class FactorBase {
    * @return factor index vector or null
    */
   public BitSet factor(Z n) {
-    if (n == null || Z.ZERO.equals(n)) {
+    if (n == null || n.isZero()) {
       return null;
     }
     final BitSet v = new BitSet(size());

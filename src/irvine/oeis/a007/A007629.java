@@ -7,7 +7,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.oeis.Sequence;
 
 /**
- * A007629 Repfigit (REPetitive <code>FIbonacci-like</code> diGIT) numbers (or Keith numbers).
+ * A007629 Repfigit (REPetitive FIbonacci-like diGIT) numbers (or Keith numbers).
  * @author Sean A. Irvine
  */
 public class A007629 implements Sequence {

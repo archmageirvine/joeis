@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A245779 Numbers n such that <code>(n/tau(n) - sigma(n)/n) &lt; 1</code>.
+ * A245779 Numbers n such that (n/tau(n) - sigma(n)/n) &lt; 1.
  * @author Georg Fischer
  */
 public class A245779 extends FiniteSequence {

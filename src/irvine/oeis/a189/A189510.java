@@ -5,7 +5,7 @@ package irvine.oeis.a189;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A189510 Digital root of <code>n^n</code>.
+ * A189510 Digital root of n^n.
  * @author Georg Fischer
  */
 public class A189510 extends HolonomicRecurrence {

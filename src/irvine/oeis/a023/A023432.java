@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A023432 Number of Dyck n-paths with ascents and descents of length equal to <code>1 (mod 3)</code>.
+ * A023432 Number of Dyck n-paths with ascents and descents of length equal to 1 (mod 3).
  * @author Sean A. Irvine
  */
 public class A023432 extends MemorySequence {

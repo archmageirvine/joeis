@@ -6,7 +6,7 @@ package irvine.oeis.a085;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085110 <code>a(1)=1</code>, then add 1 multiply by 2 to get <code>a(2)</code>, subtract 1 and multiply by 3 to get <code>a(3)</code>, add 1 and multiply by 4 to get <code>a(4)</code> and so on.
+ * A085110 a(1)=1, then add 1 multiply by 2 to get a(2), subtract 1 and multiply by 3 to get a(3), add 1 and multiply by 4 to get a(4) and so on.
  * @author Georg Fischer
  */
 public class A085110 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A029944 <code>a(n)^2</code> contains n-th prime as a substring.
+ * A029944 a(n)^2 contains n-th prime as a substring.
  * @author Sean A. Irvine
  */
 public class A029944 extends A000040 {

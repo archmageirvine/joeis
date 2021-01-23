@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137725 Number of sequences of length n with elements <code>{-2,-1,+1,+2}</code>, such that the sum of elements of the whole sequence but of no proper subsequence equals 0 modulo <code>n</code>. For <code>n&gt;=4</code>, the number of Hamiltonian (directed) circuits on the circulant graph <code>C_n(1,2)</code>.
+ * A137725 Number of sequences of length n with elements {-2,-1,+1,+2}, such that the sum of elements of the whole sequence but of no proper subsequence equals 0 modulo n. For n&gt;=4, the number of Hamiltonian (directed) circuits on the circulant graph C_n(1,2).
  * @author Georg Fischer
  */
 public class A137725 extends GeneratingFunctionSequence {

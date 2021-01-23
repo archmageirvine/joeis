@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006898 <code>a(n) = Sum_{k=0..n} C(n,k)*2^(k*(k+1)/2)</code>.
+ * A006898 a(n) = Sum_{k=0..n} C(n,k)*2^(k*(k+1)/2).
  * @author Sean A. Irvine
  */
 public class A006898 implements Sequence {

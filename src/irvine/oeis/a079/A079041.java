@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079041 Numbers n in which the first k digits of n form an integer divisible by <code>k^3</code>, for k <code>= 1, 2</code>, ..., m, where m is the number of digits in <code>n</code>.
+ * A079041 Numbers n in which the first k digits of n form an integer divisible by k^3, for k = 1, 2, ..., m, where m is the number of digits in n.
  * @author Georg Fischer
  */
 public class A079041 extends FiniteSequence {

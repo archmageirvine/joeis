@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025636 Exponent of <code>2</code> (value of <code>i)</code> in n-th number of form <code>2^i*6^j</code>.
+ * A025636 Exponent of 2 (value of i) in n-th number of form 2^i*6^j.
  * @author Sean A. Irvine
  */
 public class A025636 extends A025610 {

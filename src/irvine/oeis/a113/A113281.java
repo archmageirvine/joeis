@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113281 Self-convolution equals <code>A113224</code>.
+ * A113281 Self-convolution equals A113224.
  * @author Georg Fischer
  */
 public class A113281 extends HolonomicRecurrence {

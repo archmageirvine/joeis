@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A227007 Numbers n such that <code>n-1</code> is squarefree and every prime divisor of <code>n-1</code> is in the sequence.
+ * A227007 Numbers n such that n-1 is squarefree and every prime divisor of n-1 is in the sequence.
  * @author Georg Fischer
  */
 public class A227007 extends FiniteSequence {

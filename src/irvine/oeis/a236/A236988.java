@@ -5,7 +5,7 @@ package irvine.oeis.a236;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A236988 Real part of the product of all the Gaussian integers in the rectangle <code>[1, 1]</code> to <code>[2, n]</code>.
+ * A236988 Real part of the product of all the Gaussian integers in the rectangle [1, 1] to [2, n].
  * @author Georg Fischer
  */
 public class A236988 extends HolonomicRecurrence {

@@ -150,9 +150,19 @@ public abstract class CR extends Number implements Comparable<CR> {
   public static final CR THREE = valueOf(3);
   /** The real number 4. */
   public static final CR FOUR = valueOf(4);
-  /** The real number 4. */
+  /** The real number 5. */
   public static final CR FIVE = valueOf(5);
-  /** The ratio of a circle's circumference to its diameter. */
+  /** The real number 6. */
+  public static final CR SIX = valueOf(6);
+  /** The real number 7. */
+  public static final CR SEVEN = valueOf(7);
+  /** The real number 8. */
+  public static final CR EIGHT = valueOf(8);
+  /** The real number 9. */
+  public static final CR NINE = valueOf(9);
+  /** The real number 10. */
+  public static final CR TEN = valueOf(10);
+  /** Pi, the ratio of a circle's circumference to its diameter. */
   public static final CR PI = FOUR.multiply(FOUR.multiply(atanReciprocal(5)).subtract(atanReciprocal(239)));
   // pi/4 = 4*atan(1/5) - atan(1/239)
   /** Pi over 2. */
@@ -171,6 +181,8 @@ public abstract class CR extends Number implements Comparable<CR> {
   public static final CR SQRT2 = CR.TWO.sqrt();
   /** Golden ratio. */
   public static final CR PHI = CR.ONE.add(CR.FIVE.sqrt()).divide(CR.TWO);
+  /** Euler-Mascheroni constant gamma A001620 = 0.57721566... */
+  public static final CR GAMMA = new EulerGamma();
 
   static int boundLog2(final int n) {
     final int absN = Math.abs(n);
@@ -726,6 +738,16 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Return the fractional part of this number.
+   * @return fractional part
+   */
+  public CR frac() {
+    return compareTo(CR.ZERO) < 0
+      ? subtract(CR.valueOf(ceil()))
+      : subtract(CR.valueOf(floor()));
+  }
+
+  /**
    * Return a Z which differs by less than one from the computable real.
    * @return integer value
    */
@@ -1028,7 +1050,15 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return exponential integral
    */
   public CR ei() {
-    return new PrescaledEi(this).add(EulerGamma.SINGLETON).add(abs().log());
+    return new PrescaledEi(this).add(CR.GAMMA).add(abs().log());
+  }
+
+  /**
+   * The sine integral of this real number.
+   * @return exponential integral
+   */
+  public CR si() {
+    return new PrescaledSi(this);
   }
 
 
@@ -1066,4 +1096,53 @@ public abstract class CR extends Number implements Comparable<CR> {
   public CR lnGamma() {
     return new PrescaledLnGamma(this);
   }
+
+  /**
+   * Returns the hyperbolic sine.
+   * @return hyperbolic sine
+   */
+  public CR sinh() {
+    return ComputableReals.SINGLETON.sinh(this);
+  }
+
+  /**
+   * Returns the hyperbolic cosine.
+   * @return hyperbolic cosine
+   */
+  public CR cosh() {
+    return ComputableReals.SINGLETON.cosh(this);
+  }
+
+  /**
+   * Returns the hyperbolic tangent.
+   * @return hyperbolic tangent
+   */
+  public CR tanh() {
+    return ComputableReals.SINGLETON.tanh(this);
+  }
+
+  /**
+   * Returns the hyperbolic cotangent.
+   * @return hyperbolic cotangent
+   */
+  public CR coth() {
+    return ComputableReals.SINGLETON.coth(this);
+  }
+
+  /**
+   * Returns the hyperbolic secant.
+   * @return hyperbolic secant
+   */
+  public CR sech() {
+    return ComputableReals.SINGLETON.sech(this);
+  }
+
+  /**
+   * Returns the hyperbolic cosecant.
+   * @return hyperbolic cosecant
+   */
+  public CR csch() {
+    return ComputableReals.SINGLETON.csch(this);
+  }
+
 }

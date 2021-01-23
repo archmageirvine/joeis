@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185049 Last term in the continued fraction for <code>floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n)</code>.
+ * A185049 Last term in the continued fraction for floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n).
  * @author Georg Fischer
  */
 public class A185049 extends GeneratingFunctionSequence {

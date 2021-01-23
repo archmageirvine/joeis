@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A237558 Decimal expansion of <code>(1/Pi)*arccos(1/sqrt(3))</code>.
+ * A237558 Decimal expansion of (1/Pi)*arccos(1/sqrt(3)).
  * @author Georg Fischer
  */
 public class A237558 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179934 <code>a(n)</code> red balls and <code>b(n)</code> blue balls in an urn; draw 2 balls without replacement; <code>Probability(2</code> red <code>balls)=6*Probability(2</code> blue balls); <code>b(n)=A181442(n)</code>;.
+ * A179934 a(n) red balls and b(n) blue balls in an urn; draw 2 balls without replacement; Probability(2 red balls)=6*Probability(2 blue balls); b(n)=A181442(n);.
  * @author Sean A. Irvine
  */
 public class A179934 extends LinearRecurrence {

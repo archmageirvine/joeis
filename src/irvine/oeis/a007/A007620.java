@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005835;
 
 /**
- * A007620 Numbers n such that every k <code>&lt;= n</code> is a sum of proper divisors of <code>n</code> (for <code>n&gt;1)</code>.
+ * A007620 Numbers n such that every k &lt;= n is a sum of proper divisors of n (for n&gt;1).
  * @author Sean A. Irvine
  */
 public class A007620 extends A005835 {
@@ -13,7 +13,7 @@ public class A007620 extends A005835 {
   private boolean mFirst = true;
 
   private boolean isSum(final Z k, final Z[] d, final int pos) {
-    if (Z.ZERO.equals(k)) {
+    if (k.isZero()) {
       return true;
     }
     int p = pos;

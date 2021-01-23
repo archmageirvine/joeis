@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238644 Number of binary words on <code>{H,T}</code> that end in <code>THTH</code> but do not contain the contiguous subsequence <code>HTHH</code>.
+ * A238644 Number of binary words on {H,T} that end in THTH but do not contain the contiguous subsequence HTHH.
  * @author Georg Fischer
  */
 public class A238644 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A208531 Number of distinct sums of subsets of the first n squares <code>{1,4,9,...,n^2}</code>.
+ * A208531 Number of distinct sums of subsets of the first n squares {1,4,9,...,n^2}.
  * @author Georg Fischer
  */
 public class A208531 extends GeneratingFunctionSequence {

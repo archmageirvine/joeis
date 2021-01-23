@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A104457 Decimal expansion of <code>1 +</code> phi <code>= phi^2 = (3 + sqrt(5))/2</code>.
+ * A104457 Decimal expansion of 1 + phi = phi^2 = (3 + sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A104457 extends DecimalExpansionSequence {

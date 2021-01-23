@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001222;
 
 /**
- * A025532 <code>a(n)</code> is the sum of exponents in the prime factorization of <code>lcm{C(n,0), C(n,1)</code>, ..., <code>C(n,n)}</code>.
+ * A025532 a(n) is the sum of exponents in the prime factorization of lcm{C(n,0), C(n,1), ..., C(n,n)}.
  * @author Sean A. Irvine
  */
 public class A025532 extends A025528 {

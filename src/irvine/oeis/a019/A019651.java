@@ -4,12 +4,12 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019651 Decimal expansion of <code>sqrt(Pi*e)/7</code>.
+ * A019651 Decimal expansion of sqrt(Pi*e)/7.
  * @author Sean A. Irvine
  */
 public class A019651 extends DecimalExpansionSequence {
 
-  private final CR mN = CR.PI.multiply(CR.E).sqrt().divide(CR.valueOf(7));
+  private final CR mN = CR.PI.multiply(CR.E).sqrt().divide(CR.SEVEN);
 
   @Override
   protected CR getCR() {

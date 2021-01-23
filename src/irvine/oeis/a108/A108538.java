@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108538 Column 10 of array illustrated in <code>A089574</code> and related to <code>A034261</code>.
+ * A108538 Column 10 of array illustrated in A089574 and related to A034261.
  * @author Georg Fischer
  */
 public class A108538 extends GeneratingFunctionSequence {

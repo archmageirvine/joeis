@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029449 Numbers n such that n divides the (right) concatenation of all numbers <code>&lt;= n</code> written in base <code>4</code> (most significant digit on left).
+ * A029449 Numbers n such that n divides the (right) concatenation of all numbers &lt;= n written in base 4 (most significant digit on left).
  * @author Sean A. Irvine
  */
 public class A029449 implements Sequence {
@@ -17,7 +17,7 @@ public class A029449 implements Sequence {
     while (true) {
       mN = mN.add(1);
       mA = mA.shiftLeft((mN.bitLength() + 1) & ~1).add(mN);
-      if (Z.ZERO.equals(mA.mod(mN))) {
+      if (mA.mod(mN).isZero()) {
         return mN;
       }
     }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006146 Sums of prime divisors of Ruth-Aaron numbers <code>(A006145)</code>.
+ * A006146 Sums of prime divisors of Ruth-Aaron numbers (A006145).
  * @author Sean A. Irvine
  */
 public class A006146 implements Sequence {

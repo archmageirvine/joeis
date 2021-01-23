@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003001 Smallest number of multiplicative persistence <code>n</code>.
+ * A003001 Smallest number of multiplicative persistence n.
  * @author Sean A. Irvine
  */
 public class A003001 extends FiniteSequence {

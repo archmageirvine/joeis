@@ -5,7 +5,7 @@ package irvine.oeis.a079;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A079727 <code>a(n) = 1 + C(2,1)^3 + C(4,2)^3 + ... + C(2n,n)^3</code>.
+ * A079727 a(n) = 1 + C(2,1)^3 + C(4,2)^3 + ... + C(2n,n)^3.
  * @author Georg Fischer
  */
 public class A079727 extends HolonomicRecurrence {

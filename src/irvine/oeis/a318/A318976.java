@@ -6,7 +6,7 @@ package irvine.oeis.a318;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318976 Expansion of e.g.f. <code>Product_{k&gt;=1} ((1 + x^k)/(1 - x^k))^(phi(k)/k)</code>, where phi is the Euler totient function <code>A000010</code>.
+ * A318976 Expansion of e.g.f. Product_{k&gt;=1} ((1 + x^k)/(1 - x^k))^(phi(k)/k), where phi is the Euler totient function A000010.
  * @author Georg Fischer
  */
 public class A318976 extends HolonomicRecurrence {

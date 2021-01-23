@@ -4,7 +4,7 @@ package irvine.oeis.a025;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A025495 Probable extension of <code>A013704</code>.
+ * A025495 Probable extension of A013704.
  * @author Georg Fischer
  */
 public class A025495 extends GeneratingFunctionSequence {

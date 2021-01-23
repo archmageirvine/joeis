@@ -6,7 +6,7 @@ package irvine.oeis.a268;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A268545 From the diagonal of <code>1/(1 - (y + z + x w + x z w + x y w))</code>.
+ * A268545 From the diagonal of 1/(1 - (y + z + x w + x z w + x y w)).
  * @author Georg Fischer
  */
 public class A268545 extends HolonomicRecurrence {

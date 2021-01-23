@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A029846 <code>a(n) = a(n-1)*b(n-2)+2, b()</code> given by <code>A029758</code>.
+ * A029846 a(n) = a(n-1)*b(n-2)+2, b() given by A029758.
  * @author Sean A. Irvine
  */
 public class A029846 implements Sequence {

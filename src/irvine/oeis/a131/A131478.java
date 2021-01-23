@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131478 <code>a(n) = ceiling(n^4/4)</code>.
+ * A131478 a(n) = ceiling(n^4/4).
  * @author Georg Fischer
  */
 public class A131478 extends GeneratingFunctionSequence {

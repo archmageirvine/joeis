@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A176689 Prime factors of <code>2^128 - 1</code>.
+ * A176689 Prime factors of 2^128 - 1.
  * @author Georg Fischer
  */
 public class A176689 extends FiniteSequence {

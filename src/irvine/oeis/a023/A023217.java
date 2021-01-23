@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023217 Numbers n such that n and <code>5n + 2</code> are both prime.
+ * A023217 Numbers n such that n and 5n + 2 are both prime.
  * @author Sean A. Irvine
  */
 public class A023217 extends A000040 {

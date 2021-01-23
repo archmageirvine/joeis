@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190780 <code>a(n) = 2*(n^8 + 224*n^4 + 256)^2</code>.
+ * A190780 a(n) = 2*(n^8 + 224*n^4 + 256)^2.
  * @author Georg Fischer
  */
 public class A190780 extends HolonomicRecurrence {

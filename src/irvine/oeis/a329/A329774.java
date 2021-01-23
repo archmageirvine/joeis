@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329774 <code>a(n) = n+1</code> for <code>n &lt;= 2</code>; otherwise <code>a(n) = 3*a(n-3)+1</code>.
+ * A329774 a(n) = n+1 for n &lt;= 2; otherwise a(n) = 3*a(n-3)+1.
  * @author Georg Fischer
  */
 public class A329774 extends HolonomicRecurrence {

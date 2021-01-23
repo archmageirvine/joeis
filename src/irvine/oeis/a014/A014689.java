@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A014689 <code>a(n) = prime(n)-n</code>, the number of nonprimes less than <code>prime(n)</code>.
+ * A014689 a(n) = prime(n)-n, the number of nonprimes less than prime(n).
  * @author Sean A. Irvine
  */
 public class A014689 extends A000040 {

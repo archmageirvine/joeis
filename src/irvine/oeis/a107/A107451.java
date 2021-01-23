@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A107451 Let m <code>= 5</code> and set M <code>= {{0, 1, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}, {-1</code>, m, <code>(m + 1), -m*(m + 1), -m, (m + 2)}}</code>. Let <code>v[0] = {0, 1, 1, 2, 3, 5}, v[n] = M.v[n - 1]</code>. Then a <code>= Abs[v[n][[1]]</code>.
+ * A107451 Let m = 5 and set M = {{0, 1, 0, 0, 0, 0}, {0, 0, 1, 0, 0, 0}, {0, 0, 0, 1, 0, 0}, {0, 0, 0, 0, 1, 0}, {0, 0, 0, 0, 0, 1}, {-1, m, (m + 1), -m*(m + 1), -m, (m + 2)}}. Let v[0] = {0, 1, 1, 2, 3, 5}, v[n] = M.v[n - 1]. Then a = Abs[v[n][[1]].
  * @author Georg Fischer
  */
 public class A107451 extends GeneratingFunctionSequence {

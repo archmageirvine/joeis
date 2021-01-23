@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009634 E.g.f. <code>tan(x*cosh(x))</code>, zeros omitted.
+ * A009634 E.g.f. tan(x*cosh(x)), zeros omitted.
  * @author Sean A. Irvine
  */
 public class A009634 implements Sequence {

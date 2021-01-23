@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000290 The squares: <code>a(n) = n^2</code>.
+ * A000290 The squares: a(n) = n^2.
  * @author Sean A. Irvine
  */
 public class A000290 implements Sequence {

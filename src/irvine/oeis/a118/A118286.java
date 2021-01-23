@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118286 Numbers n such that <code>n == 0 (mod 4)</code> or <code>n == 2 (mod 12)</code>.
+ * A118286 Numbers n such that n == 0 (mod 4) or n == 2 (mod 12).
  * @author Sean A. Irvine
  */
 public class A118286 extends LinearRecurrence {

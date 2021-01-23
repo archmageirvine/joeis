@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002346 Consider all primes of form p <code>= (x^2 + 11y^2 )/4</code>; sequence gives values of <code>x</code>.
+ * A002346 Consider all primes of form p = (x^2 + 11y^2 )/4; sequence gives values of x.
  * @author Sean A. Irvine
  */
 public class A002346 implements Sequence {
@@ -26,7 +26,7 @@ public class A002346 implements Sequence {
           break;
         }
         final Z[] s = x2.sqrtAndRemainder();
-        if (Z.ZERO.equals(s[1])) {
+        if (s[1].isZero()) {
           return s[0];
         }
       }

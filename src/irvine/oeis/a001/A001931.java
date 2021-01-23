@@ -90,7 +90,7 @@ public class A001931 implements Sequence {
       .collect(Collectors.toList());
   }
 
-  private List<List<Point>> mPrev = null;
+  protected List<List<Point>> mPrev = null;
 
   @Override
   public Z next() {

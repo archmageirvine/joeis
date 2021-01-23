@@ -5,7 +5,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088594 Number of 3-dimensional lattice paths running from <code>(0,0,0)</code> to <code>(n,n,n)</code>, lying in <code>{(x,y,z) : 0&lt;=x&lt;=y&lt;=z}</code> and using the steps <code>(1,0,0), (0,1,0), (0,0,1), (1,1,0), (1,0,1), (0,1,1), (1,1,1)</code>.
+ * A088594 Number of 3-dimensional lattice paths running from (0,0,0) to (n,n,n), lying in {(x,y,z) : 0&lt;=x&lt;=y&lt;=z} and using the steps (1,0,0), (0,1,0), (0,0,1), (1,1,0), (1,0,1), (0,1,1), (1,1,1).
  * @author Georg Fischer
  */
 public class A088594 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.math.z.Z;
 
 /**
- * A145830 Indices for which <code>A145768</code> (XOR of squares of the numbers <code>1...n)</code> is a power of 2.
+ * A145830 Indices for which A145768 (XOR of squares of the numbers 1...n) is a power of 2.
  * @author Sean A. Irvine
  */
 public class A145830 extends A145768 {

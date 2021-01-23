@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108733 Expansion of <code>(1+18*x)^(1/3)</code>.
+ * A108733 Expansion of (1+18*x)^(1/3).
  * @author Georg Fischer
  */
 public class A108733 extends HolonomicRecurrence {

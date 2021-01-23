@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A166149 <code>a(n) = (5^n + 10*(-6)^n)/11</code>.
+ * A166149 a(n) = (5^n + 10*(-6)^n)/11.
  * @author Georg Fischer
  */
 public class A166149 extends GeneratingFunctionSequence {

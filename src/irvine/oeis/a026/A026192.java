@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026192 <code>(1/3)*s(n)</code>, where <code>s(n)</code> is the n-th multiple of 3 in <code>A026142</code>.
+ * A026192 (1/3)*s(n), where s(n) is the n-th multiple of 3 in A026142.
  * @author Sean A. Irvine
  */
 public class A026192 extends A026142 {

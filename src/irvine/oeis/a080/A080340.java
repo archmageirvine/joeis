@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080340 First known infinite sequence containing no odd integer of the form <code>2^m+p (p</code> prime).
+ * A080340 First known infinite sequence containing no odd integer of the form 2^m+p (p prime).
  * @author Sean A. Irvine
  */
 public class A080340 extends LinearRecurrence {

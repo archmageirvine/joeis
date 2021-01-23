@@ -4,7 +4,6 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class LyndonTransformSequenceTest extends TestCase {
@@ -22,6 +21,5 @@ public class LyndonTransformSequenceTest extends TestCase {
     assertEquals(509, s.next().longValue());
     assertEquals(1853, s.next().longValue());
     assertEquals(6982, s.next().longValue());
-    assertNull(s.next());
   }
 }

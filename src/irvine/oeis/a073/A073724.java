@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A073724 <code>a(n) = (4^(n+1) + 6n + 5)/9</code>.
+ * A073724 a(n) = (4^(n+1) + 6n + 5)/9.
  * @author Georg Fischer
  */
 public class A073724 extends GeneratingFunctionSequence {

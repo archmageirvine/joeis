@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306967 <code>a(n)</code> is the first Zagreb index of the Fibonacci cube <code>Gamma(n)</code>.
+ * A306967 a(n) is the first Zagreb index of the Fibonacci cube Gamma(n).
  * @author Georg Fischer
  */
 public class A306967 extends HolonomicRecurrence {

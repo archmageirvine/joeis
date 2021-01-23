@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001476;
 
 /**
- * A031981 <code>a(1) = 1, a(2) = 2, a(n) =</code> smallest number not the sum of cubes of <code>&gt;= 1</code> distinct earlier terms.
+ * A031981 a(1) = 1, a(2) = 2, a(n) = smallest number not the sum of cubes of &gt;= 1 distinct earlier terms.
  * @author Sean A. Irvine
  */
 public class A031981 extends PrependSequence {

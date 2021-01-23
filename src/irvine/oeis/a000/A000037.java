@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000037 Numbers that are not squares <code>(or</code>, the nonsquares).
+ * A000037 Numbers that are not squares (or, the nonsquares).
  * @author Sean A. Irvine
  */
 public class A000037 implements Sequence {

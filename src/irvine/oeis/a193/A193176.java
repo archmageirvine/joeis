@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A193176 <code>A193175(n)/2</code>.
+ * A193176 A193175(n)/2.
  * @author Georg Fischer
  */
 public class A193176 extends FiniteSequence {

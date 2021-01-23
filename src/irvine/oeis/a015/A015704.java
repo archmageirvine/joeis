@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A015704 <code>a(n)</code> is the smallest number m such that <code>phi(m) + sigma(m) = n*m</code>.
+ * A015704 a(n) is the smallest number m such that phi(m) + sigma(m) = n*m.
  * @author Sean A. Irvine
  */
 public class A015704 implements Sequence {

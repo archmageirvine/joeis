@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A203650 1/25 the number of <code>(n+1) X 3 0..4</code> arrays with every <code>2 X 2</code> subblock having equal diagonal elements or equal antidiagonal elements.
+ * A203650 1/25 the number of (n+1) X 3 0..4 arrays with every 2 X 2 subblock having equal diagonal elements or equal antidiagonal elements.
  * @author Georg Fischer
  */
 public class A203650 extends GeneratingFunctionSequence {

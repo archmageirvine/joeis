@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296775 Expansion of <code>1/Sum_{k&gt;=0} A000326(k+1)*x^k</code>.
+ * A296775 Expansion of 1/Sum_{k&gt;=0} A000326(k+1)*x^k.
  * @author Georg Fischer
  */
 public class A296775 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007272 Super ballot numbers: <code>60(2n)!/(n!(n+3)!)</code>.
+ * A007272 Super ballot numbers: 60(2n)!/(n!(n+3)!).
  * @author Sean A. Irvine
  */
 public class A007272 implements Sequence {

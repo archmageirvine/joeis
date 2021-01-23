@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015840 Numbers n such that <code>phi(n) | sigma(n + 3)</code>.
+ * A015840 Numbers n such that phi(n) | sigma(n + 3).
  * @author Sean A. Irvine
  */
 public class A015840 implements Sequence {
@@ -23,7 +23,7 @@ public class A015840 implements Sequence {
       mFactorSequenceA = mFactorSequenceB;
       mFactorSequenceB = mFactorSequenceC;
       mFactorSequenceC = Cheetah.factor(++mN);
-      if (mFactorSequenceC.sigma().mod(phi).equals(Z.ZERO)) {
+      if (mFactorSequenceC.sigma().mod(phi).isZero()) {
         return Z.valueOf(mN - 3);
       }
     }

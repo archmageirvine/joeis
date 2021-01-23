@@ -6,7 +6,7 @@ package irvine.oeis.a320;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A320427 <code>a(n) = floor(3*n/2) + ceiling(n/6) + 9</code>.
+ * A320427 a(n) = floor(3*n/2) + ceiling(n/6) + 9.
  * @author Georg Fischer
  */
 public class A320427 extends GeneratingFunctionSequence {

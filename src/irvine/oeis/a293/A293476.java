@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293476 <code>a(n) = ((n + 1)/2)*(n + 2)*Pochhammer(n, 5) / 4!</code>.
+ * A293476 a(n) = ((n + 1)/2)*(n + 2)*Pochhammer(n, 5) / 4!.
  * @author Georg Fischer
  */
 public class A293476 extends LinearRecurrence {

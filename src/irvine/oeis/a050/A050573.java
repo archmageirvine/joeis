@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050573 Numbers k such that <code>95*2^k-1</code> is prime.
+ * A050573 Numbers k such that 95*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050573 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050573() {
-    super(1, 2, 95, 2, -1, 0);
+    super(1, 2, 95, 2, -1);
   }
 }

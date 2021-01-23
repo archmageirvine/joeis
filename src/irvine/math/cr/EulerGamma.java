@@ -6,14 +6,11 @@ import irvine.math.z.Z;
  * Compute Euler gamma constant.
  * @author Sean A. Irvine
  */
-public final class EulerGamma extends SlowCR {
+final class EulerGamma extends SlowCR {
 
-  /** The Euler gamma constant. */
-  public static final CR SINGLETON = new EulerGamma();
-  
   private static final int SAFETY_BITS = 5;
 
-  private EulerGamma() { }
+  EulerGamma() { }
 
   // See X. Gourdon & P. Sebah, "The Euler Constant: &gamma;"
   // There is a refinement of this algorithm which I have not implemented

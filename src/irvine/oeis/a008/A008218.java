@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008218 <code>Floor(n/4)*floor((n+1)/4)*floor((n+2)/4)</code>.
+ * A008218 Floor(n/4)*floor((n+1)/4)*floor((n+2)/4).
  * @author Sean A. Irvine
  */
 public class A008218 implements Sequence {

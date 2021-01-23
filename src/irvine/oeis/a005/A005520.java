@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A005520 Smallest number of complexity n: smallest number requiring <code>n 1</code>'s to build using + and <code>*</code>.
+ * A005520 Smallest number of complexity n: smallest number requiring n 1's to build using + and *.
  * @author Sean A. Irvine
  */
 public class A005520 extends RecordPositionSequence {

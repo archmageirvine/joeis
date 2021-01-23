@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027306 <code>a(n) = 2^(n-1) + ((1 + (-1)^n)/4)*binomial(n, n/2)</code>.
+ * A027306 a(n) = 2^(n-1) + ((1 + (-1)^n)/4)*binomial(n, n/2).
  * @author Sean A. Irvine
  */
 public class A027306 implements Sequence {

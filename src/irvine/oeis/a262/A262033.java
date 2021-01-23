@@ -6,7 +6,7 @@ package irvine.oeis.a262;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A262033 Number of permutations of <code>[n]</code> beginning with at least <code>floor(n/2)</code> ascents.
+ * A262033 Number of permutations of [n] beginning with at least floor(n/2) ascents.
  * @author Georg Fischer
  */
 public class A262033 extends HolonomicRecurrence {

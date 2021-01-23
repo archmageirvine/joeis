@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A018252 The nonprime numbers: 1 together with the composite numbers, <code>A002808</code>.
+ * A018252 The nonprime numbers: 1 together with the composite numbers, A002808.
  * @author Sean A. Irvine
  */
 public class A018252 extends PrependSequence {

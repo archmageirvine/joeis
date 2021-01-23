@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108984 Inverse binomial transform of <code>A003951</code>.
+ * A108984 Inverse binomial transform of A003951.
  * @author Georg Fischer
  */
 public class A108984 extends GeneratingFunctionSequence {

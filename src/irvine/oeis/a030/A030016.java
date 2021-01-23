@@ -4,7 +4,7 @@ import irvine.oeis.InverseBinomialTransformSequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A030016 Inverse binomial transform of <code>{1</code>, primes}.
+ * A030016 Inverse binomial transform of {1, primes}.
  * @author Sean A. Irvine
  */
 public class A030016 extends InverseBinomialTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025550 <code>a(n) = ( 1/1 + 1/3 + 1/5 + ... + 1/(2*n-1) )*LCM(1, 3, 5</code>, ..., <code>2*n-1)</code>.
+ * A025550 a(n) = ( 1/1 + 1/3 + 1/5 + ... + 1/(2*n-1) )*LCM(1, 3, 5, ..., 2*n-1).
  * @author Sean A. Irvine
  */
 public class A025550 implements Sequence {

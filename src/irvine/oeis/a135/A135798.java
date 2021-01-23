@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A135798 Decimal expansion of <code>sqrt(2) + sqrt(3) - Pi</code>.
+ * A135798 Decimal expansion of sqrt(2) + sqrt(3) - Pi.
  * @author Georg Fischer
  */
 public class A135798 extends DecimalExpansionSequence {

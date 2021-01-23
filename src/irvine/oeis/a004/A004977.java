@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a005.A005150;
 
 /**
- * A004977 Sum of digits of n-th term in Look and Say sequence <code>A005150</code>.
+ * A004977 Sum of digits of n-th term in Look and Say sequence A005150.
  * @author Sean A. Irvine
  */
 public class A004977 extends A005150 {

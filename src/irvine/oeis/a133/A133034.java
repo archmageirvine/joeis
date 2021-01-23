@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133034 First differences of Padovan sequence <code>A000931</code>.
+ * A133034 First differences of Padovan sequence A000931.
  * @author Sean A. Irvine
  */
 public class A133034 extends LinearRecurrence {

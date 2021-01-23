@@ -8,7 +8,7 @@ import irvine.util.Permutation;
 import java.util.HashSet;
 
 /**
- * A075603 Number of relatively prime numbers using all digits of <code>n</code>.
+ * A075603 Number of relatively prime numbers using all digits of n.
  * @author Sean A. Irvine
  */
 public class A075603 implements Sequence {

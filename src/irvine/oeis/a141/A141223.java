@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141223 Expansion of <code>1/(sqrt(1-4*x)*(1-3*x*c(x)))</code>, where <code>c(x)</code> is the g.f. of <code>A000108</code>.
+ * A141223 Expansion of 1/(sqrt(1-4*x)*(1-3*x*c(x))), where c(x) is the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A141223 extends HolonomicRecurrence {

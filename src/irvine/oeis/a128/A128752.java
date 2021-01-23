@@ -5,7 +5,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128752 Number of ascents of length at least 2 in all skew Dyck paths of semilength <code>n</code>.
+ * A128752 Number of ascents of length at least 2 in all skew Dyck paths of semilength n.
  * @author Georg Fischer
  */
 public class A128752 extends HolonomicRecurrence {

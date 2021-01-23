@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024164 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, <code>a+b+c=n</code> such that c <code>- b = b -</code> a.
+ * A024164 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that c - b = b - a.
  * @author Sean A. Irvine
  */
 public class A024164 implements Sequence {

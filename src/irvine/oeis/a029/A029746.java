@@ -4,7 +4,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A029746 <code>2^n</code> or <code>7.2^n</code>.
+ * A029746 2^n or 7.2^n.
  * @author Georg Fischer
  */
 public class A029746 extends GeneratingFunctionSequence {

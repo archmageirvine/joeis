@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A079504 <code>a(n) = 8*n^3*((2*n-1)^2 - 4*n + 4)</code>.
+ * A079504 a(n) = 8*n^3*((2*n-1)^2 - 4*n + 4).
  * @author Georg Fischer
  */
 public class A079504 extends GeneratingFunctionSequence {

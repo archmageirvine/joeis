@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A220051 <code>Sum_{k=0..14} binomial(n,k)</code>.
+ * A220051 Sum_{k=0..14} binomial(n,k).
  * @author Georg Fischer
  */
 public class A220051 extends GeneratingFunctionSequence {

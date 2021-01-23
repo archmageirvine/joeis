@@ -6,7 +6,7 @@ package irvine.oeis.a224;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A224882 G.f.: <code>1/(1 - 32*x)^(1/16)</code>.
+ * A224882 G.f.: 1/(1 - 32*x)^(1/16).
  * @author Georg Fischer
  */
 public class A224882 extends HolonomicRecurrence {

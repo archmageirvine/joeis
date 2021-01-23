@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.cr.CR;
 
 /**
- * A022165 First row of spectral array <code>W(sqrt(5)-1)</code>.
+ * A022165 First row of spectral array W(sqrt(5)-1).
  * @author Sean A. Irvine
  */
 public class A022165 extends A022159 {

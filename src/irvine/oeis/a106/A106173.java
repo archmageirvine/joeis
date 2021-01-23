@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A106173 7th diagonal of triangle in <code>A059317</code>.
+ * A106173 7th diagonal of triangle in A059317.
  * @author Georg Fischer
  */
 public class A106173 extends GeneratingFunctionSequence {

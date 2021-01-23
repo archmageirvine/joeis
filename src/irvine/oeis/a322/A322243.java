@@ -6,7 +6,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322243 <code>a(n) = A322242(n)^2</code>, the square of the central coefficient in <code>(1 + 3*x + 4x^2)^n</code>.
+ * A322243 a(n) = A322242(n)^2, the square of the central coefficient in (1 + 3*x + 4x^2)^n.
  * @author Georg Fischer
  */
 public class A322243 extends HolonomicRecurrence {

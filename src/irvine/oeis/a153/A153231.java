@@ -6,7 +6,7 @@ package irvine.oeis.a153;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A153231 <code>a(n) = 2^n * binomial(3n,n)/(2n+1)</code>.
+ * A153231 a(n) = 2^n * binomial(3n,n)/(2n+1).
  * @author Georg Fischer
  */
 public class A153231 extends HolonomicRecurrence {

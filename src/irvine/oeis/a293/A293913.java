@@ -5,7 +5,7 @@ package irvine.oeis.a293;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A293913 Numbers k such that <code>(436*10^k - 13)/9</code> is prime.
+ * A293913 Numbers k such that (436*10^k - 13)/9 is prime.
  * @author Georg Fischer
  */
 public class A293913 extends PowerFactorPrimeSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227704 The hyper-Wiener index of the zig-zag polyhex nanotube <code>TUHC_6[2n,2]</code> defined pictorially in Fig. 1 of the Eliasi et al. reference.
+ * A227704 The hyper-Wiener index of the zig-zag polyhex nanotube TUHC_6[2n,2] defined pictorially in Fig. 1 of the Eliasi et al. reference.
  * @author Georg Fischer
  */
 public class A227704 extends GeneratingFunctionSequence {

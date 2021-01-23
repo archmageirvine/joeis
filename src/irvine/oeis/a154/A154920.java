@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154920 Denominators of a ternary BBP-type formula for <code>log(3)</code>.
+ * A154920 Denominators of a ternary BBP-type formula for log(3).
  * @author Sean A. Irvine
  */
 public class A154920 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a071;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A071230 <code>a(n) = n*(6*n^2 - 7*n + 3)/2</code>.
+ * A071230 a(n) = n*(6*n^2 - 7*n + 3)/2.
  * @author Georg Fischer
  */
 public class A071230 extends HolonomicRecurrence {

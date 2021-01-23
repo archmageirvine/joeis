@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201163 Expansion of g.f. <code>1+x+(1+3*x+x^2)/(1+x)^3</code>.
+ * A201163 Expansion of g.f. 1+x+(1+3*x+x^2)/(1+x)^3.
  * @author Georg Fischer
  */
 public class A201163 extends GeneratingFunctionSequence {

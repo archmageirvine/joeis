@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007106 Number of labeled odd degree trees with <code>2n</code> nodes.
+ * A007106 Number of labeled odd degree trees with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A007106 implements Sequence {

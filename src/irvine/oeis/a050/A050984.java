@@ -6,7 +6,7 @@ package irvine.oeis.a050;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A050984 de Bruijn's <code>S(5,n)</code>.
+ * A050984 de Bruijn's S(5,n).
  * @author Georg Fischer
  */
 public class A050984 extends HolonomicRecurrence {

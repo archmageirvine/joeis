@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A022838 Beatty sequence for <code>sqrt(3)</code>; complement of <code>A054406</code>.
+ * A022838 Beatty sequence for sqrt(3); complement of A054406.
  * @author Sean A. Irvine
  */
 public class A022838 extends BeattySequence {

@@ -5,12 +5,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028429 Clog sequence in base 8. Right to left concatenation of n, <code>int(log_8(n)),int(log_8(int(log_8(n)))),..</code>. in <code>base8</code>.
+ * A028429 Clog sequence in base 8. Right to left concatenation of n, int(log_8(n)),int(log_8(int(log_8(n)))),... in base8.
  * @author Sean A. Irvine
  */
 public class A028429 implements Sequence {
 
-  private static final CR BASE_LOG = CR.valueOf(8).log();
+  private static final CR BASE_LOG = CR.EIGHT.log();
   private long mN = 0;
 
   @Override

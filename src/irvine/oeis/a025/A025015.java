@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025015 Central decanomial coefficients: largest coefficient of <code>(1 + x + ... + x^9)^n</code>.
+ * A025015 Central decanomial coefficients: largest coefficient of (1 + x + ... + x^9)^n.
  * @author Sean A. Irvine
  */
 public class A025015 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003586;
 
 /**
- * A007335 <code>MU-numbers</code>: next term is uniquely the product of 2 earlier terms.
+ * A007335 MU-numbers: next term is uniquely the product of 2 earlier terms.
  * @author Sean A. Irvine
  */
 public class A007335 extends A003586 {

@@ -2,7 +2,7 @@ package irvine.math.expression;
 
 /**
  * An expression for a variable substitution.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public class Substitution extends AbstractExpression {
 

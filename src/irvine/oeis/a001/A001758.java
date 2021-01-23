@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001758 Number of quasi-alternating permutations of length <code>n</code>.
+ * A001758 Number of quasi-alternating permutations of length n.
  * @author Sean A. Irvine
  */
 public class A001758 extends A001250 {

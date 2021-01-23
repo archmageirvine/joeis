@@ -5,7 +5,7 @@ package irvine.oeis.a280;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A280560 <code>a(n) = (-1)^n * 2</code> if <code>n!=0</code>, with <code>a(0) = 1</code>.
+ * A280560 a(n) = (-1)^n * 2 if n!=0, with a(0) = 1.
  * @author Georg Fischer
  */
 public class A280560 extends HolonomicRecurrence {

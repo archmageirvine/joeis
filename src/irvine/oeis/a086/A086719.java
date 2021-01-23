@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A086719 Numbers <code>n == 1, 2, 5</code> or <code>6 (mod 8)</code> such that there is only one solution to <code>i^2+j^2+k^2=n, i &gt;= j &gt;= k &gt;= 0</code>.
+ * A086719 Numbers n == 1, 2, 5 or 6 (mod 8) such that there is only one solution to i^2+j^2+k^2=n, i &gt;= j &gt;= k &gt;= 0.
  * @author Georg Fischer
  */
 public class A086719 extends FiniteSequence {

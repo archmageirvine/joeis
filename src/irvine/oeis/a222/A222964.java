@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222964 Numbers n such that <code>25n+36</code> is a square.
+ * A222964 Numbers n such that 25n+36 is a square.
  * @author Sean A. Irvine
  */
 public class A222964 extends LinearRecurrence {

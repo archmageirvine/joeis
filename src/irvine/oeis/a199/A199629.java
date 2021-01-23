@@ -5,7 +5,7 @@ package irvine.oeis.a199;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A199629 G.f.: <code>(1+x)^(2*g)*(1+x^3)^(3*g)/((1-x^2)*(1-x^4))-x^(2*g)*(1+x)^4/((1-x^2)*(1-x^4))</code> for <code>g=3</code>.
+ * A199629 G.f.: (1+x)^(2*g)*(1+x^3)^(3*g)/((1-x^2)*(1-x^4))-x^(2*g)*(1+x)^4/((1-x^2)*(1-x^4)) for g=3.
  * @author Georg Fischer
  */
 public class A199629 extends HolonomicRecurrence {

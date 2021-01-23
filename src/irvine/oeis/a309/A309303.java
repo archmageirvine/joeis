@@ -6,7 +6,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309303 Expansion of g.f. <code>(sqrt(x+1) - sqrt(1-3*x))/(2*(x+1)^(3/2))</code>.
+ * A309303 Expansion of g.f. (sqrt(x+1) - sqrt(1-3*x))/(2*(x+1)^(3/2)).
  * @author Georg Fischer
  */
 public class A309303 extends HolonomicRecurrence {

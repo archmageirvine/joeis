@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a001.A001285;
 
 /**
- * A029886 Convolution of Thue-Morse sequence <code>A001285</code> with itself.
+ * A029886 Convolution of Thue-Morse sequence A001285 with itself.
  * @author Sean A. Irvine
  */
 public class A029886 extends ConvolutionSequence {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * Compute Bell numbers.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 public final class BellNumbers {
 

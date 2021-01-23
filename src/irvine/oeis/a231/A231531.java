@@ -6,7 +6,7 @@ package irvine.oeis.a231;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A231531 Imaginary part of <code>Product_{k=1..n} (k+I)</code>.
+ * A231531 Imaginary part of Product_{k=1..n} (k+I).
  * @author Georg Fischer
  */
 public class A231531 extends HolonomicRecurrence {

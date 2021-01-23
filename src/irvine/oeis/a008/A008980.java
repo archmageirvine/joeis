@@ -392,14 +392,7 @@ public class A008980 implements Sequence {
       System.out.println("                          CLOSED CURVES                       LONG");
       System.out.println("           both        plane       circle      nothing       CURVES");
       for (int i = 0; i <= mMaxCross; ++i) {
-        final StringBuilder sb = new StringBuilder();
-        sb.append(i);
-        sb.append('\t');
-        sb.append(sum(mR2S[i])).append('\t');
-        sb.append(sum(mR2[i])).append('\t');
-        sb.append(sum(mS[i])).append('\t');
-        sb.append(sum(mNoOrient[i])).append('\t');
-        sb.append(LongUtils.sum(mNoOrient[i]));
+        final String sb = String.valueOf(i) + '\t' + sum(mR2S[i]) + '\t' + sum(mR2[i]) + '\t' + sum(mS[i]) + '\t' + sum(mNoOrient[i]) + '\t' + LongUtils.sum(mNoOrient[i]);
         System.out.println(sb);
       }
     }

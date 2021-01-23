@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137241 Number triples <code>(k,3-k,2-2k)</code>, concatenated for <code>k=0, 1, 2, 3,..</code>.
+ * A137241 Number triples (k,3-k,2-2k), concatenated for k=0, 1, 2, 3,...
  * @author Georg Fischer
  */
 public class A137241 extends GeneratingFunctionSequence {

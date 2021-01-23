@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108600 Number of freely braided permutations of length n; the freely braided permutations are those that avoid <code>3421, 4231, 4312</code> and 4321.
+ * A108600 Number of freely braided permutations of length n; the freely braided permutations are those that avoid 3421, 4231, 4312 and 4321.
  * @author Georg Fischer
  */
 public class A108600 extends HolonomicRecurrence {

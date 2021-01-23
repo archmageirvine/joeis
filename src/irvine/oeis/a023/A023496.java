@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a090.A090946;
 
 /**
- * A023496 <code>a(n) = b(n) + d(n)</code>, where <code>b(n) = (n-th</code> Fibonacci number <code>&gt; 2)</code> and <code>d(n) = (n-th</code> number that is 1 or is not a Lucas number).
+ * A023496 a(n) = b(n) + d(n), where b(n) = (n-th Fibonacci number &gt; 2) and d(n) = (n-th number that is 1 or is not a Lucas number).
  * @author Sean A. Irvine
  */
 public class A023496 extends A000045 {

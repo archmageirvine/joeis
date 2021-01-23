@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A248427 Circumference of the <code>(n,n)-knight</code> graph.
+ * A248427 Circumference of the (n,n)-knight graph.
  * @author Georg Fischer
  */
 public class A248427 extends GeneratingFunctionSequence {

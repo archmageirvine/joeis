@@ -1,4 +1,3 @@
-A000001 Number of groups, gnu(n) [existing impl goes to 100 but is kind of messy]
 A000019 Primitive permutation groups
 A000066 Smallest number of vertices in trivalent graph with girth (shortest cycle) = n
 A000112 Posets, hard
@@ -65,7 +64,6 @@ A001206 Monotone Boolean functions, cf. also A007006, hard
 A001209 Stamp counting, cf. A001208, papers available, glorified DFS
 A001210 Stamp counting, cf. A001208
 A001211 Stamp counting, cf. A001208
-A001213 Stamp counting, cf. A001208
 A001230 Closed knights tour, hard
 A001231 Number of nonisomorphic projective planes of order n, hard
 A001289 Boolean functions, perhaps similar to existing
@@ -146,7 +144,6 @@ A002169 A partition function -- Ising model?, could not get paper
 A002170 A partition function -- Ising model?, could not get paper
 A002218 Very complicated looking cycle index, paper available (doable non-cycle index but only for small n)
 A002268 Dimensions of integral lattices that are irreducible modulo every prime (there may be missing terms!)
-A002272 Theta series, paper available, but insufficient detail?
 A002273 Theta series, paper available, but insufficient detail?
 A002304 Partially done, can't quite make it work, papers are available
 A002305 Simple dependency on A002304
@@ -192,14 +189,14 @@ A002883 Allomorphic polyhedra, insufficient detail
 A002885 Cyclic steiner triples, might be doable
 A002891 Ising, Domb paper
 A002892 Partition f.c.c lattice, Domb paper
-A002906 Ising, possibly described in Mathematical Constants
-A002907 Ising susceptibility [now have paper]
-A002910 Ising susceptibility, paper behind paywall
-A002911 Ising susceptibility, paper behind paywall
-A002912 Ising susceptibility, paper behind paywall
+A002906 Ising, possibly described in Mathematical Constants, have paper
+A002907 Ising susceptibility, have paper
+A002910 Ising susceptibility
+A002911 Ising susceptibility
+A002912 Ising susceptibility
 A002913 Ising susceptibility, one paper available, but looks hard
 A002914 Ising susceptibility, one paper available, but looks hard
-A002915 Ising susceptibility, paper behind paywall
+A002915 Ising susceptibility
 A002916 Ising model, might in Finch, cf. A001408
 A002917 Ising model
 A002918 Ising model
@@ -209,7 +206,7 @@ A002921 Ising susceptibility, paper behind paywall
 A002922 Specific heat diamond, have paper
 A002923 Susceptibility diamond
 A002924 Ferromagnetic susceptibility
-A002925 Susceptibility
+A002925 Susceptibility series for b.c.c. lattice
 A002926 Magnetic susceptibility, see Finch
 A002927 Magnetic susceptibility, see Finch
 A002929 Magnetization cubic lattice
@@ -260,16 +257,10 @@ A003198 Cluster series for square lattice
 A003199 Cluster series for honeycomb
 A003200 Cluster series for honeycomb
 A003201 Cluster series for square lattice
-A003202 Cluster series for hexagonal lattice
-A003203 Cluster series for square lattice
-A003204 Cluster series for honeycomb
 A003205 Cluster series for f.c.c. lattice
 A003206 Cluster series for b.c.c. lattice
 A003207 Cluster series for cubic lattice
 A003208 Cluster series for diamond
-A003209 Cluster series for f.c.c. lattice
-A003210 Cluster series for b.c.c. lattice
-A003211 Cluster series for cubic lattice
 A003212 Cluster series for diamond
 A003213 Quartering chess board
 A003217 Maximum of minimum total weight for threshold functions of n Boolean variables
@@ -375,7 +366,6 @@ A005143 Sub-Eulerian graphs with n nodes, connected? [might be doable]
 A005144 Sub-Hamiltonian graphs with n nodes, connected?
 A005180 Orders of simple groups, depends A001034?
 A005192 Finite difference measurements, have paper
-A005202 Total number of fixed points in planted trees with n nodes
 A005215 Number of labeled interval graphs with n nodes, have paper, see also A005973, don't get V(x,y)
 A005216 Number of unlabeled identity interval graphs with n nodes, cf. A005215
 A005224 T is the first, fourth, eleventh, ... letter in this sentence, needs English ordinal numbers
@@ -444,8 +434,6 @@ A005645 Number of 3-connected planar maps with n edges, might be possible but co
 A005646 Classifications of n elements, might be possible, an algorithm is described
 A005670 Mrs. Perkins's quilt: smallest coprime dissection of n X n square, probably possible but slow
 A005677 Maximal size of equidistant permutation array R(n,1), hard
-A005678 A squarefree ternary sequence, like Thue-Morse, detail?, pos like A005679
-A005680 A squarefree ternary sequence, insufficient detail
 A005702 Number of sesquirotational Kotzig factorizations, paper available, looks complicated
 A005757 Simple dependency A003296, A003297
 A005759 Simple dependency A005757
@@ -499,7 +487,6 @@ A006064 Smallest junction number with n generators
 A006065 Maximal number of 4-tree rows in n-tree orchard problem, cf. A003035
 A006066 Kobon triangles: maximal number of nonoverlapping triangles that can be formed from n lines drawn in the plane
 A006067 Number of ways to quarter an n X n chessboard, cf. A003213
-A006074 Number of polyaboloes (or polytans): number of different shapes that can be formed with n congruent isosceles right triangles
 A006075 Minimal number of knights needed to cover an n X n board, doable but not competitive?
 A006076 Similar A006075
 A006089 Coefficients of elliptic function cn
@@ -573,6 +560,7 @@ A006557 Minimal discriminant of number field of degree n
 A006560 Smallest starting prime for n consecutive primes in arithmetic progression, hard
 A006574 Number of domino n-tuples, insufficient detail
 A006602 Number of hierarchical models with linear terms forced, dep. on A003182
+A006607 I think the OEIS entry is incorrect
 A006627 Number of nonisomorphic 2-graphs with n nodes with first and second cohomology invariants both 0, have paper two-graphs.pdf
 A006638 Restricted postage stamp problem with n denominations and 2 stamps, have paper, and A001212
 A006639 Restricted postage stamp problem
@@ -656,7 +644,6 @@ A006916 Theta series of laminated lattice LAMBDA_13^{mid}
 A006917 Theta series of laminated lattice LAMBDA_13^{max}
 A006929 From analyzing an algorithm, insufficient detail
 A006944 Number of letters in the n-th ordinal number (in American English)
-A006966 Number of lattices on n unlabeled nodes, hard
 A006969 Letters in French ordinals
 A006981 Number of modular lattices on n nodes, hard
 A006982 Number of unlabeled distributive lattices with n elements
@@ -748,7 +735,6 @@ A007515 Continued fraction for Wirsing's constant, hard?
 A007545 Number of chess games with n plies (non-standard -- includes king capture?)
 A007565 Number of Go games with n moves, hard for small number of terms
 A007577 Number of chess games with n plies (another version) -- this one likely useless
-A007656 Mass number of the most abundant isotope of the element with atomic number Z = n
 A007673 Number of coins needed for ApSimon's mints problem, hard
 A007720 Arises in attempts to apply Engel's `probabilistic abacus' to random walks on infinite square grid, insufficient detail
 A007760 Number of solid partitions of height n in a cube of side n, insufficient detail
@@ -800,14 +786,13 @@ A008375 Number of orbits on points that are at n steps from 0 in D_10 lattice
 A008403 G-symmetric Costas arrays of order n that are inequivalent under dihedral group but are not given by the Welch construction, hard
 A008404 Number of Costas arrays of order n, counting rotations and flips as distinct, hard
 A008407 Minimal difference s(n) between beginning and end of n consecutive large primes (n-tuplet) permitted by divisibility considerations
-A008524 Coordination sequence for 4-dimensional lonsdaleite
+A008524 Coordination sequence for 4-dimensional lonsdaleite, have paper
 A008525 Coordination sequence for 5-dimensional lonsdaleite
 A008526 Coordination sequence for 6-dimensional lonsdaleite
 A008551 Number of times n-th energy state appears in statistical sum of Ising model on 4 X 4 X 4 cube
 A008562 Denominators of strong coupling expansion, SU(3) lattice gauge theory
 A008664 Theta series of direct sum of f.c.c. and b.c.c. lattices, cf. A008663, a008664, couldn't get this to work
 A008741 Putative number of uniform tight n-dimensional sphere packings, hard
-A008745 Year of birth of n-th President of U.S.A.
 A008840 Number of monotone self-dual boolean functions of n variables that are inequivalent under the symmetric group
 A008841 Number of self-dual boolean functions of n variables with transitive symmetry group
 A008842 Number of inequivalent self-dual boolean functions of n variables with transitive symmetry group
@@ -887,7 +872,7 @@ A010562 Second correlation moment for D_4 lattice
 A010563 Spin-spin correlation function for 4-d cubic lattice
 A010564 Spin-spin correlation function for 4-d b.c.c. lattice
 A010565 Spin-spin correlation function for D_4 lattice
-A010571 High-temperature coefficients for cubic lattice, have papery
+A010571 High-temperature coefficients for cubic lattice, have paper
 A010572 High-temperature coefficients for 4-d cubic lattice
 A010573 High-temperature coefficients for 5-d cubic lattice
 A010574 High-temperature coefficients for 6-d cubic lattice
@@ -995,7 +980,6 @@ A014621 Triangle of numbers arising from analysis of Levine's sequence A011784, 
 A014622 Row sums of A014621
 A014623 Sequence arising from analysis of Levine's sequence A011784, insufficient detail
 A014627 Some sort of bipartite graph counting, could not find paper
-A014810 Multiplicity of trivial character in V_n, where V = Sum V_n is the graded module for the Monster simple group, looks complicated, have paper
 A014843 Sum modulo n of the sum modulo n of all the digits of n in every base from 2 to n-1, huh?, doesn't work
 A014982 Number of "coherent" reduced decompositions for the longest permutation n n-1 n-2 ... 3 2 1 in the symmetric group on n letters, looks complicated
 A015158 Theta series of 17-dimensional lattice Q_17(6)
@@ -1028,13 +1012,11 @@ A018203 Possible numbers of complements of topologies on 12 points
 A018204 Possible numbers of complements of topologies on 13 points
 A018216 Maximal number of subgroups in a group with n elements, needs all groups enumeration
 A018223 Number of 5-voter voting schemes with n linearly ranked choices, probably has linear recurrence, cf. A007010, A007009
-A018234 Theta series of 52-dimensional lattice of det 2^26 and minimal norm 3, couldn't find ref
-A018240 Rational knots with n crossings (up to mirroring)
+A018234 Theta series of 52-dimensional lattice of det 2^26 and minimal norm 3, gross1996.pdf
 A018242 Number of projective order types; number of simple arrangements of n lines, hard?
 A018807 Number of ways to place n^2 nonattacking kings on 2n X 2n chessboard
 A018835 Minimal number of smaller integer-sided squares that tile an n X n square, base on plantri?, lots of work for one sequence
 A018843 Number of n-dimensional unimodular lattices without roots
-A018887 Waring's problem: historical upper bounds on A079611, as stated in a web page in 1996
 A018891 Number of positive knots with n crossings
 A018895 Weight distribution of [ 512,130,64 ] third-order Reed-Muller code, fini
 A018898 Theta series of 14-dimensional lattice of det 3^7 and minimal norm 2, possible dupe
@@ -1089,18 +1071,6 @@ A023686 Discriminants of totally real sextic fields
 A023687 Discriminants of totally complex sextic fields
 A023814 Number of associative binary operations on an n-set; number of labeled semigroups
 A023815 Number of binary operations on an n-set that are commutative and associative; labeled commutative semigroups
-A023925 Theta series of A*_13 lattice
-A023926 Theta series of A*_14 lattice
-A023927 Theta series of A*_15 lattice
-A023928 Theta series of A*_16 lattice
-A023929 Theta series of A*_17 lattice
-A023930 Theta series of A*_18 lattice
-A023931 Theta series of A*_19 lattice
-A023932 Theta series of A*_20 lattice
-A023933 Theta series of A*_21 lattice
-A023934 Theta series of A*_22 lattice
-A023935 Theta series of A*_23 lattice
-A023936 Theta series of A*_24 lattice
 A023937 Theta series of laminated lattice LAMBDA_14
 A023938 Theta series of laminated lattice LAMBDA_15
 A023939 Theta series of laminated lattice LAMBDA_17
@@ -1183,7 +1153,6 @@ A028946 Maximal cardinality of 2-distance set in R^n with distance ratio tau, pa
 A028950 Minimal norm of n-dimensional, strictly odd, unimodular lattice
 A029550 Highest minimal norm for an (even or odd) 2-modular lattice in dimension n
 A029551 Highest minimal norm for an (even or odd) 3-modular lattice in dimension n
-A029705 Q(sqrt(n)) has class number 5, simple dep. on A003649
 A029723 Trace of Frobenius of the reduction mod 2 of the elliptic curve C / L, L a lattice with Gram matrix [ 4 1; 1 2n ]
 A029725 Number of distinct subgroups of alternating group A_n, counting conjugates as distinct
 A029726 Number of conjugacy classes of subgroups of the alternating group A_n
@@ -1274,8 +1243,6 @@ A030262 Number of nonisomorphic commutative groupoids with no idempotents and a 
 A030263 Number of nonisomorphic commutative groupoids with 1 idempotent
 A030264 Number of nonisomorphic commutative groupoids with 1 idempotent and no symmetry
 A030265 Number of nonisomorphic commutative groupoids with 1 idempotent and a nontrivial symmetry
-A030268 Number of nonisomorphic connected partial lattices, depends on A006966
-A030269 Number of nonisomorphic disconnected partial lattices, depends on A006966
 A030271 Number of nonisomorphic groupoids with 1 idempotent and no symmetry
 A030453 Number of linearly ordered Abelian monoids of size n (semi-groups with greatest element of the corresponding chain as neutral element); triangular norms on an n-chain
 A030455 Numbers having the same number of digits as letters in their US English spelling, pretty dumb
@@ -1288,3 +1255,291 @@ A031438 Number of nonisomorphic proper regular linear spaces, PRLIN(n)
 A031501 Triangle of numbers maxfit[ i ][ j ] = upper bound on number of incidences in a geometry with <= i points and <= j blocks
 A031507 Smallest k>0 such that the elliptic curve y^2 = x^3 + k has rank n, if k exists
 A031508 Smallest k>0 such that the elliptic curve y^2 = x^3 - k has rank n, if k exists
+A032256 Number of dyslexic rooted compound windmills with n nodes with no symmetries, terms don't match definition?
+A032257 Number of dyslexic rooted compound windmills with n nodes and leaves of 2 colors with no symmetries, terms don't match definition?
+A032258 Shifts left 2 places under "DHK" (bracelet, identity, unlabeled) transform, terms don't match definition?
+A032259 Number of series-reduced dyslexic planted compound windmills with n leaves of 2 colors with no symmetries, terms don't match definition?
+A032355 Number of connected transitive trivalent (or cubic) graphs with 2n nodes
+A032435 Triangle of second-to-last man to survive in Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't matched definition?
+A032436 Triangle of third-to-last man to survive in the Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't matched definition?
+A032800 If there were a 9-dimensional unimodular lattice with minimal norm 2, this would be its theta series; however, no such lattice exists
+A032802 Theta series of extremal odd unimodular lattice D_8^{+2} with minimal norm 2 in dimension 16
+A033188 Minimal difference of any increasing arithmetic progression of n primes
+A033189 Smallest first term of arithmetic progression of n primes with difference A033188(n)
+A033288 Theta series of 20-dimensional lattice L_20 with group 2.M_22.2
+A033512 Number of matchings in graph P_{9} X P_{n}, will have rat g.f.
+A033513 Number of matchings in graph P_{10} X P_{n}, will have rat g.f.
+A033514 Number of matchings in graph P_{11} X P_{n}, will have rat g.f.
+A033521 Number of matchings in graph C_{9} X P_{n}, will have rat g.f.
+A033522 Number of matchings in graph C_{10} X P_{n}, will have rat g.f.
+A033523 Number of matchings in graph C_{11} X P_{n}
+A033524 Number of matchings in graph C_{12} X P_{n}
+A033525 Number of matchings in graph C_{13} X P_{n}
+A033527 Number of matchings in graph P_{2} X P_{4} X P_{n}
+A033528 Number of matchings in graph P_{2} X P_{5} X P_{n}
+A033529 Number of matchings in graph P_{2} X P_{5} X P_{n}
+A033530 Number of matchings in graph P_{2} X P_{5} X P_{n}
+A033531 Number of matchings in graph P_{3} X P_{4} X P_{n}
+A033532 Number of matchings in graph C_{4} X C_{4} X P_{n}
+A033533 Number of matchings in graph P_{4} X P_{4} X P_{n}
+A033534 Number of matchings in graph P_{5} X P_{5} X P_{n}
+A033535 Number of matchings in graph P_{n} X P_{n} X P_{n}
+A033635 Square-root-perfect numbers: srsigma(n)=m*n^(1/2) for some integer m, insufficient detail
+A033689 Number of extreme quadratic forms or lattices in dimension n
+A033692 Theta series of lattice D_4 tensor D_4 (dimension 16, det. 65536, min. norm 4)
+A033695 Theta series of lattice E6 tensor E6 (dimension 36, det. 531441, min. norm 4)
+A033696 Theta series of lattice D_3 tensor D_4 (dimension 12, det. 16384, min. norm 4)
+A033697 Theta series of lattice A_2 tensor D_5 (dimension 10, det. 3888, min. norm 4)
+A033698 Theta series of lattice A_2 tensor E_6 (dimension 12, det. 6561, min. norm 4)
+A033699 Theta series of lattice A_2 tensor E_7 (dimension 14, determinant 8748, minimal norm 4)
+A033704 Fancy primitive repdigit polygonal numbers, lots of mucking around to do
+A033705 Fancy primitive repdigit polygonal numbers (with multiplicity), depends A033704
+A033706 Values of k associated with A033705
+A033707 Values of n associated with A033705
+A033708 Number of simple repdigit polyhedral numbers with n digits
+A033709 Number of simple repdigit polyhedral numbers with <=n digits
+A033710 Number of fancy repdigit polyhedral numbers with n digits
+A033711 Number of fancy repdigit polyhedral numbers with <=n digits
+A033943 Sum of coefficients of a polynomial associated to a family of digraphs, author deceased, sequence not in his 2000 paper
+A034254 Triangle read by rows giving T(n,k) = number of inequivalent indecomposable linear [ n,k ] binary codes without 0 columns (n >= 2, 1 <= k <= n), have paper
+A034257 Maximal discrete supergroups of Gamma_0(n)
+A034258 Write n! as a product of n numbers, n = k(1)*k(2)*...*k(n) with k(1) <= k(2) <= ..., in all possible ways; a(n) = max value of k(1)
+A034259 Smallest m such that A034258(m) >= n
+A034260 Largest m such that A034258(m) <= n
+A034298 a(n) = min_S max_i b_i where S={b_i} (1 <= i <= n), b_i > 0, b_i distinct and either b_i|b_{i-1} or b_{i-1}|b_i
+A034327 Triangle of numbers of connected regular (k X n)-matrix matroids of dimension k.
+A034328 Triangle read by rows: T(n,k) = number of loopless, regular k X n-matrix matroids of dimension k (or n-matroids of rank k)
+A034329 Number of matroids: column 3 of A034327
+A034330 Number of matroids: column 4 of A034327.
+A034331 Number of matroids: column 5 of A034327.
+A034332 Number of matroids: column 6 of A034327.
+A034333 Number of matroids: column 3 of A034328.
+A034334 Number of matroids: column 4 of A034328.
+A034335 Number of matroids: column 5 of A034328.
+A034336 Number of matroids: column 6 of A034328.
+A034350 Number of indecomposable binary [ n,3 ] codes without 0 columns.
+A034351 Number of indecomposable binary [ n,4 ] codes without 0 columns.
+A034352 Number of indecomposable binary [ n,5 ] codes without 0 columns.
+A034353 Number of indecomposable binary [ n,6 ] codes without 0 columns.
+A034354 Number of indecomposable binary [ n,7 ] codes without 0 columns.
+A034355 Number of indecomposable binary [ n,8 ] codes without 0 columns.
+A034363 Triangle of number of linear [ n,k ] ternary codes (n >= 1, k >= 1) without 0 columns.
+A034364 Triangle of number of indecomposable linear [ n,k ] ternary codes (n >= 1, k >= 1) without 0 columns.
+A034365 Triangle of number of projective linear [ n,k ] ternary codes (n >= 1, k >= 1) without 0 columns.
+A034366 Triangle of number of indecomposable projective linear [ n,k ] ternary codes (n >= 1, k >= 1) without 0 columns.
+A034367 Triangle of number of linear [ n,k ] GF(4) codes (n >= 1, k >= 1) without 0 columns.
+A034368 Triangle of number of indecomposable linear [ n,k ] GF(4) codes (n >= 1, k >= 1) without 0 columns.
+A034369 Triangle of number of projective linear [ n,k ] GF(4) codes (n >= 1, k >= 1) without 0 columns.
+A034370 Triangle of number of indecomposable projective linear [ n,k ] GF(4) codes (n >= 1, k >= 1) without 0 columns.
+A034371 Triangle of number of linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
+A034372 Triangle of number of indecomposable linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
+A034373 Triangle of number of projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
+A034374 Triangle of number of indecomposable projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
+A034384 Number of two-state cellular automaton rules on a (2n+1)-site neighborhood that conserve the number of 1's.
+A034432 chi_44, cf. adjacent entries, probably related to non-integer coeffs in chi
+A034459 chi_71, cf. adjacent entries, probably related to non-integer coeffs in chi
+A034473 chi_85, cf. adjacent entries, probably related to non-integer coeffs in chi
+A034477 chi_89, cf. adjacent entries, probably related to non-integer coeffs in chi
+A034487 chi_99, cf. adjacent entries, probably related to non-integer coeffs in chi
+A034599 Theta series of (putative) extremal 2-modular even lattice in dimension 20
+A034600 Theta series of (putative) extremal 2-modular even lattice in dimension 24
+A034601 Theta series of (putative) extremal 2-modular even lattice in dimension 28.
+A034603 Theta series of (putative) extremal 2-modular even lattice in dimension 36.
+A034604 Theta series of (putative) extremal 2-modular even lattice in dimension 40.
+A034605 Theta series of (putative) extremal 2-modular even lattice in dimension 44.
+A034606 Theta series of (putative) extremal 2-modular even lattice in dimension 48.
+A034607 Theta series of (putative) extremal 2-modular even lattice in dimension 52.
+A034608 Theta series of (putative) extremal 2-modular even lattice in dimension 56.
+A034609 Theta series of (putative) extremal 2-modular even lattice in dimension 60.
+A034610 Theta series of (putative) extremal 2-modular even lattice in dimension 64.
+A034611 Theta series of (putative) extremal 2-modular even lattice in dimension 68.
+A034612 Theta series of (putative) extremal 2-modular even lattice in dimension 72.
+A034613 Theta series of (putative) extremal 2-modular even lattice in dimension 76.
+A034614 Theta series of (putative) extremal 2-modular even lattice in dimension 80.
+A034615 Theta series of (putative) extremal 2-modular even lattice in dimension 84.
+A034616 Theta series of (putative) extremal 2-modular even lattice in dimension 88.
+A034617 Theta series of (putative) extremal 2-modular even lattice in dimension 92.
+A034618 Theta series of (putative) extremal 2-modular even lattice in dimension 96.
+A034619 Theta series of extremal 3-modular even lattice in dimension 18.
+A034620 Theta series of extremal 3-modular even lattice in dimension 20.
+A034621 Theta series of extremal 3-modular even lattice in dimension 22.
+A034623 Theta series of extremal 3-modular even lattice in dimension 26.
+A034624 Theta series of extremal 3-modular even lattice in dimension 28.
+A034625 Theta series of extremal 3-modular even lattice in dimension 30.
+A034626 Theta series of extremal 3-modular even lattice in dimension 32.
+A034627 Theta series of extremal 3-modular even lattice in dimension 34.
+A034629 Theta series of (putative) extremal 3-modular even lattice in dimension 38.
+A034630 Theta series of extremal 3-modular even lattice in dimension 40.
+A034631 Theta series of (putative) extremal 3-modular even lattice in dimension 42.
+A034632 Theta series of (putative) extremal 3-modular even lattice in dimension 44.
+A034633 Theta series of (putative) extremal 3-modular even lattice in dimension 46.
+A034635 Theta series of (putative) extremal 3-modular even lattice in dimension 50.
+A034636 Theta series of (putative) extremal 3-modular even lattice in dimension 52.
+A034637 Theta series of (putative) extremal 3-modular even lattice in dimension 54.
+A034638 Theta series of (putative) extremal 3-modular even lattice in dimension 56.
+A034639 Theta series of (putative) extremal 3-modular even lattice in dimension 58.
+A034640 Theta series of (putative) extremal 3-modular even lattice in dimension 60.
+A034641 Theta series of (putative) extremal 3-modular even lattice in dimension 62.
+A034642 Theta series of (putative) extremal 3-modular even lattice in dimension 64.
+A034643 Theta series of (putative) extremal 3-modular even lattice in dimension 66.
+A034644 Theta series of (putative) extremal 3-modular even lattice in dimension 68.
+A034645 Theta series of (putative) extremal 3-modular even lattice in dimension 70.
+A034646 Theta series of (putative) extremal 3-modular even lattice in dimension 72.
+A034647 Theta series of (putative) extremal 3-modular even lattice in dimension 74.
+A034648 Theta series of (putative) extremal 3-modular even lattice in dimension 76.
+A034649 Theta series of (putative) extremal 3-modular even lattice in dimension 78.
+A034650 Theta series of (putative) extremal 3-modular even lattice in dimension 80.
+A034651 Theta series of (putative) extremal 3-modular even lattice in dimension 82.
+A034652 Theta series of (putative) extremal 3-modular even lattice in dimension 84.
+A034653 Theta series of (putative) extremal 3-modular even lattice in dimension 86.
+A034654 Theta series of (putative) extremal 3-modular even lattice in dimension 88.
+A034655 Theta series of (putative) extremal 3-modular even lattice in dimension 90.
+A034656 Theta series of (putative) extremal 3-modular even lattice in dimension 92.
+A034657 Theta series of (putative) extremal 3-modular even lattice in dimension 94.
+A034658 Theta series of (putative) extremal 3-modular even lattice in dimension 96.
+A034786 Number of linearly ordered Girard monoids of size n; number of t-norms on an n-chain inducing an involutive residual negator.
+A034889 Number of embeddings on the sphere of two-connected planar graphs with n nodes.
+A034997 Number of generalized retarded functions in quantum field theory.
+A035027 Greatest integer that is <= the sum of the n-th powers of its digits.
+A035115 Relative class number h- of cyclotomic field Q(zeta_m) where m is n-th term of A035113.
+A035280 Smallest of largest of n distinct numbers around circle so that every 2 neighbors x,y have x|y or y|x.
+A035299 Minimum square grid needed to fit English words for 1...n crossword style
+A035307 a(n) is the least integer such that every even unimodular lattice in dimension 8n contains some vectors of all even (squared) norm >= 2*a(n)
+A035401 Related to Rogers-Ramanujan Identities, insufficient detail.
+A035402 Related to Rogers-Ramanujan Identities, insufficient detail.
+A035403 Related to Rogers-Ramanujan Identities, insufficient detail.
+A035404 Related to Rogers-Ramanujan Identities.
+A035405 Related to Rogers-Ramanujan Identities.
+A035406 Related to Rogers-Ramanujan Identities.
+A035407 Related to Rogers-Ramanujan Identities.
+A035408 Related to Rogers-Ramanujan Identities.
+A035409 Related to Rogers-Ramanujan Identities.
+A035410 Related to Rogers-Ramanujan Identities.
+A035411 Related to Rogers-Ramanujan Identities.
+A035412 Related to Rogers-Ramanujan Identities.
+A035413 Related to Rogers-Ramanujan Identities.
+A035414 Related to Rogers-Ramanujan Identities.
+A035415 Related to Rogers-Ramanujan Identities.
+A035416 Related to Rogers-Ramanujan Identities.
+A035417 Related to Rogers-Ramanujan Identities.
+A035418 Related to Rogers-Ramanujan Identities.
+A035419 Related to Rogers-Ramanujan Identities.
+A035420 Related to Rogers-Ramanujan Identities.
+A035421 Related to Rogers-Ramanujan Identities.
+A035422 Related to Rogers-Ramanujan Identities.
+A035423 Related to Rogers-Ramanujan Identities.
+A035424 Related to Rogers-Ramanujan Identities.
+A035425 Related to Rogers-Ramanujan Identities.
+A035426 Related to Rogers-Ramanujan Identities.
+A035427 Related to Rogers-Ramanujan Identities.
+A035428 Related to Rogers-Ramanujan Identities.
+A035481 Number of n X n symmetric matrices whose first row is 1..n and whose rows and columns are all permutations of 1..n
+A035482 Number of n X n symmetric matrices each of whose rows is a permutation of 1..n.
+A035483 2n X 2n symmetric matrices whose first row is 1..2n and whose rows and columns are all permutations of 1..2n.
+A035512 Number of unlabeled strongly connected digraphs with n nodes, insufficient detail
+A036235 Found on a quiz long ago.
+A036297 Number of Hadamard matrices of order n
+A036300 Number of binary abstract 2-D configurations.
+A036392 Coefficients of cluster series, sim A03202?
+A036393 Coefficients of cluster series, almost certain dupe of A03201
+A036394 Coefficients of cluster series.
+A036395 Coefficients of cluster series.
+A036396 Coefficients of cluster series.
+A036397 Coefficients of cluster series.
+A036398 Coefficients of cluster series.
+A036399 Coefficients of cluster series.
+A036400 Coefficients of cluster series.
+A036401 Coefficients of cluster series.
+A036402 Coefficients of cluster series.
+A036403 Number of equilateral triangles whose vertices (whether connected by lines or not) lie at intersection points resulting from drawing lines connecting every pair of vertices of a regular 3n-gon (and extending beyond the polygon).
+A036429 Primes related to Carmichael numbers of the form pqr, p<q<r and p-1 a divisor of both q-1 and r-1, insufficient detail
+A036500 Number of inequivalent cyclic Hadamard difference sets with parameters (2^n-1, 2^(n-1)-1, 2^(n-2)-1)
+A036604 Sorting numbers: minimal number of comparisons needed to sort n elements, hard
+A036686 Single-heap P-positions in misere version of Grundy's game.
+A036794 Number of sequences of length n with a_{i-1} < a_i <= a_1+...+a_{i-1} + 1
+A036975 Lengths of Golay complementary sequences
+A036980 (2n)x(2n) symmetric matrices each of whose rows is a permutation of 1..(2n), simple dependency on A035483
+A036981 (2n+1) X (2n+1) symmetric matrices each of whose rows is a permutation of 1..(2n+1), simple dependency on A000438
+A036983 Number of invariants in Hilbert basis for binary forms of degree n
+A036984 Number of covariants in Hilbert basis for binary forms of degree n
+A036995 Triangle of numbers a(i,j), i+j = n >= 2, giving number of words in a certain language with i 0's, j 1's, ending with 1, complicated bivariate gf
+A037009 Consider an n X n board with a knight's path, not necessarily closed, that visits every square exactly once; number the squares [ 1..n^2 ] along the path; a(n) = maximal number of prime numbered squares that can be attacked by a queen
+A037075 Number of eutactic lattices in dimension n
+A037185 Number of ways of placing 2n points on n X n grid so no 3 are in a line (solutions with no symmetry).
+A037186	Number of ways of placing 2n points on n X n grid so no 3 are in a line (solutions with symmetry about one main diagonal).
+A037187 Number of ways of placing 2n points on n X n grid so no 3 are in a line (solutions with 180 deg rotational symmetry).
+A037188 Number of ways of placing 2n points on n X n grid so no 3 are in a line (solutions with symmetry about both main diagonals).
+A037189 Number of ways of placing 4n points on 2n X 2n grid so no 3 are in a line (solutions with either 90-degree rotational symmetry or full symmetry).
+A037207 Smallest natural number k such that periodic part of 1/k is n, or 0 if no such k exists, probably doable
+A037211 Smallest natural number k such that periodic part of 1/sqrt(k) is n (or 0 if no such number), simple dep. on A037207
+A037218 Smallest natural number k such that periodic part of 1/k is the prime p(n), or 0 if no such k exists, dep. A037207
+A037219 Theta series for 10-dimensional 4-modular lattice Q10 with minimal norm 4
+A037221 Number of near-rings (or nearrings) definable on cyclic group of order n
+A037233 Order of (4,n) cage, i.e., minimal order of 4-regular graph of girth n, hard
+A037234 a(0) = 0; for n > 0, a(n) = number of rings with n elements, simple dep. A027623
+A037266 Numbers n such that no extremal Groemer packing of n circles exists
+A037289 Number of commutative rings with n elements
+A037290 Number of self-converse rings (isomorphic to inverse) with n elements
+A037291 Number of rings with 1 containing n elements
+A037292 Number of nonassociative rings with n elements
+A037294 Number of (s,2) gates, insufficient detail
+A037295 Number of (s,3) gates, insufficient detail
+A037296 Number of (s,4) gates, insufficient detail
+A037297 Number of (s,5) gates, insufficient detail
+A037298 Number of (s,6) gates, insufficient detail
+A037302 Normalized volume of Birkhoff polytope of n X n doubly-stochastic square matrices. If the volume is v(n), then a(n) = ((n-1)^2)! * v(n) / n^(n-1)
+A037447 Number of conjugacy classes of subgroups of the Chevalley group A_n(2) (the group of nonsingular n X n matrices over GF(2))
+A037843 Number of matrices with n columns whose rows do not cover each other; ordered antichains of subsets of an n-set
+A037984 Maximum number of trapezoids that can be formed by n lines in plane
+A038016 Number of pointed (distinguished element) commutative groupoids
+A038018 Triangle: T(n,k), k<=n: groupoids with n elements and k idempotents
+A038019 Triangle: T(n,k), k<=n: groupoids with no symmetry with n elements and k idempotents
+A038020 Triangle: T(n,k), k<=n: groupoids with a nontrivial symmetry with n elements and k idempotents
+A038021 Triangle: T(n,k), k<=n: commutative groupoids with n elements and k idempotents
+A038022 Triangle: T(n,k), k<=n: commutative groupoids with no symmetry with n elements and k idempotents
+A038023 Triangle: T(n,k), k<=n: commutative groupoids with a nontrivial symmetry with n elements and k idempotents
+A038031 Position reached by frog in A038029. A038026(A038029(n)), suspect sequence if buggy, message sent
+A038034 Number of compositions (ordered partitions) of 1 into {1/1, 1/2, 1/3, ..., 1/n}
+A038036 Number of nonisomorphic and nonantiisomorphic rings with n elements
+A038047 Shifts left under transform T where Ta is a EXP-DCONV a, insufficient detail, incorrect?
+A038123 Beatty sequence for Feigenbaum's constant, depends A006890
+A038124 Beatty sequence for Brun's constant
+A038140 Number of planar polyhexes with n cells and a single hole
+A038141 Number of planar polyhexes with n cells with at least two holes, all holes having size at least two
+A038142 Number of planar cata-polyhexes with n cells
+A038143 Hexagonal cata-condensed helicenes with n cells (non-planar cata-fused benzenoid hydrocarbons)
+A038144 Number of planar n-hexes, or polyhexes (in the sense of A000228, so rotations and reflections count as the same shape) with at least one hole
+A038145 Number of n-celled helicenes without holes
+A038146 Number of n-celled helicenes with peri-fragments
+A038147 Number of polyhexes with n cells
+A038168 Number of "connected animals" formed from n tricapped truncated tetrahedra in the diamond lattice, allowing translation and rotations of the lattice
+A038169 Number of "connected animals" formed from n tricapped truncated tetrahedra in the diamond lattice, allowing translation and rotations of the lattice and reflections
+A038170 Number of "connected animals" formed from n 6-gon connected truncated octahedra (or corner-connected cubes) in the b.c.c. lattice, allowing translation and rotations of the lattice
+A038171 Number of "connected animals" formed from n 6-gon connected truncated octahedra (or corner connected cubes) in the b.c.c. lattice, allowing translation and rotations of the lattice and reflections
+A038172 Number of "connected animals" formed from n rhombic dodecahedra (or edge-connected cubes) in the face-centered cubic lattice, allowing translation and rotations of the lattice
+A038173 Number of "connected animals" formed from n rhombic dodecahedra (or edge-connected cubes) in the face-centered cubic lattice, allowing translation and rotations of the lattice and reflections
+A038174 Number of "polyspheres", or "connected animals" formed from n rhombic dodecahedra (or edge-connected cubes) in the f.c.c. lattice, allowing translation and rotations of the lattice, reflections and 180 deg. rotations about a 3-fold symmetry axis of the lattice
+A038175 Unbranched mono-5-catapolyheptagons
+A038176	A038175/2
+A038177 Number of unbranched mono-5-catapolyheptagons
+A038180 Number of "connected animals" formed from n square- or hexagon-connected truncated octahedra in the b.c.c. lattice, allowing translation and rotations of the lattice
+A038181 Number of "connected animals" formed from n 4-gon or 6-gon connected truncated octahedra in the b.c.c. lattice, allowing translation and rotations of the lattice and reflections
+A038357 Ranks of certain relations among Euler sums of weight n.
+A038358 Ranks of certain relations among Euler sums of weight n.
+A038359 Ranks of certain relations among Euler sums of weight n.
+A038362 Two different numbers a, b which satisfy sigma(a)=sigma(b)=(a+b)^3/(a^2+b^2) are called a rational amicable pair; sequence gives a numbers
+A038363 Two different numbers a, b which satisfy sigma(a)=sigma(b)=(a+b)^3/(a^2+b^2) are called a rational amicable pair; sequence gives b numbers
+A038372 Largest subset of integers [ 1...n ] such that no member divides two others
+A038379 Number of real {0,1} n X n matrices A such that M = A + A' has 2's on the main diagonal, 0's and 1's elsewhere and is positive semi-definite.
+A038382 Number of perifusenes with one internal vertex, insufficient detail.
+A038383 Number of perifusenes with one internal vertex, insufficient detail.
+A038384 Number of perifusenes with one internal vertex, insufficient detail.
+A038385 Number of perifusenes with one internal vertex, insufficient detail.
+A038386 Number of "connected animals" formed from n 4-gon connected truncated octahedra in the b.c.c. lattice, allowing only translation of the lattice
+A038496 Number of self-avoiding paths with diagonal steps from corner to opposite corner of n X n grid
+A038517 Decimal expansion of Gauss-Kuzmin-Wirsing constant
+A038523 A minimal sequence of weights with distinct weighings, with limit of two weights per pan
+A038540 Number of modules with n elements over ring Z[ sqrt(10) ].
+A038541	Number of modules with n elements over ring Z[ sqrt(-5) ].
+A038552 Largest squarefree number k such that Q(sqrt(-k)) has class number n
+A038553 Maximum cycle length in differentiation digraph for n-bit binary sequences

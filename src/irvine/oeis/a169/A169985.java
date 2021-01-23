@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A169985 Round <code>phi^n</code> to the nearest integer.
+ * A169985 Round phi^n to the nearest integer.
  * @author Georg Fischer
  */
 public class A169985 extends GeneratingFunctionSequence {

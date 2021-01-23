@@ -5,7 +5,7 @@ package irvine.oeis.a251;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A251755 Digital root of <code>n + n^2</code>.
+ * A251755 Digital root of n + n^2.
  * @author Georg Fischer
  */
 public class A251755 extends HolonomicRecurrence {

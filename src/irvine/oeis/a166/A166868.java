@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166868 Convolution of <code>Jacobsthal(n+2)</code> and <code>Pell(n+1)</code>.
+ * A166868 Convolution of Jacobsthal(n+2) and Pell(n+1).
  * @author Sean A. Irvine
  */
 public class A166868 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023286 Numbers n such that n remains prime through 3 iterations of function <code>f(x) = 5x + 8</code>.
+ * A023286 Numbers n such that n remains prime through 3 iterations of function f(x) = 5x + 8.
  * @author Sean A. Irvine
  */
 public class A023286 extends A000040 {

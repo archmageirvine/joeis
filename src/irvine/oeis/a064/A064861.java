@@ -7,7 +7,7 @@ package irvine.oeis.a064;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A064861 Triangle of Sulanke numbers: <code>T(n,k) = T(n,k-1) + a(n-1,k)</code> for <code>n+k</code> even and <code>a(n,k) = a(n,k-1) + 2*a(n-1,k)</code> for <code>n+k</code> odd.
+ * A064861 Triangle of Sulanke numbers: T(n,k) = T(n,k-1) + a(n-1,k) for n+k even and a(n,k) = a(n,k-1) + 2*a(n-1,k) for n+k odd.
  * @author Georg Fischer
  */
 public class A064861 extends GeneratingFunctionTriangle {

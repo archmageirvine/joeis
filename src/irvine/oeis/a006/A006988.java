@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006988 <code>a(n) = (10^n)-th</code> prime.
+ * A006988 a(n) = (10^n)-th prime.
  * @author Sean A. Irvine
  */
 public class A006988 implements Sequence {
@@ -15,13 +15,17 @@ public class A006988 implements Sequence {
   private long mN = 1;
   private Z mP = Z.ONE;
 
+  protected long base() {
+    return 10;
+  }
+
   @Override
   public Z next() {
     for (long m = mN; m > 0; --m) {
       mP = mPrime.nextPrime(mP);
     }
-    mN = mT * 9;
-    mT *= 10;
+    mN = mT * (base() - 1);
+    mT *= base();
     return mP;
   }
 }

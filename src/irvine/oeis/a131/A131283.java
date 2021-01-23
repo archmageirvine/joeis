@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131283 <code>a(n)</code> is the number of binary strings of length n such that there exist 3 or more ones in a subsequence of length 5 or less.
+ * A131283 a(n) is the number of binary strings of length n such that there exist 3 or more ones in a subsequence of length 5 or less.
  * @author Georg Fischer
  */
 public class A131283 extends GeneratingFunctionSequence {

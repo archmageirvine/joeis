@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129637 Number of n-step paths that can go <code>{west</code>, southeast, southwest, northwest} on a 240-degree wedge on the equilateral triangular lattice.
+ * A129637 Number of n-step paths that can go {west, southeast, southwest, northwest} on a 240-degree wedge on the equilateral triangular lattice.
  * @author Georg Fischer
  */
 public class A129637 extends HolonomicRecurrence {

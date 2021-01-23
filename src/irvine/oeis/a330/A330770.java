@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330770 <code>a(n) = 19 * 8^n + 17</code> for <code>n &gt;= 0</code>.
+ * A330770 a(n) = 19 * 8^n + 17 for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A330770 extends HolonomicRecurrence {

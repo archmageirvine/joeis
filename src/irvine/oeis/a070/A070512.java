@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070512 <code>a(n) = n^4 mod 7</code>.
+ * A070512 a(n) = n^4 mod 7.
  * @author Georg Fischer
  */
 public class A070512 extends HolonomicRecurrence {

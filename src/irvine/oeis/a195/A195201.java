@@ -5,7 +5,7 @@ package irvine.oeis.a195;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A195201 <code>a(n)</code> is the largest prime factor of the number made by taking the previous term and duplicating the final digit, <code>a(1) = 1</code>.
+ * A195201 a(n) is the largest prime factor of the number made by taking the previous term and duplicating the final digit, a(1) = 1.
  * @author Georg Fischer
  */
 public class A195201 extends HolonomicRecurrence {

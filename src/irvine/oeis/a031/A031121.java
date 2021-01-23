@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A031121 Integer ratios of Fibonacci numbers <code>F(m)/F(n)</code>.
+ * A031121 Integer ratios of Fibonacci numbers F(m)/F(n).
  * @author Sean A. Irvine
  */
 public class A031121 implements Sequence {

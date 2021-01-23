@@ -1,7 +1,7 @@
 package irvine.oeis.a022;
 
 /**
- * A022418 <code>Kim-sums</code>: "Kimberling sums" <code>K_n + K_7</code>.
+ * A022418 Kim-sums: "Kimberling sums" K_n + K_7.
  * @author Sean A. Irvine
  */
 public class A022418 extends A022414 {

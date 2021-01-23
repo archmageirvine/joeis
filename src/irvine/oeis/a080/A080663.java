@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080663 Numbers of the form <code>3*n^2 - 1</code>.
+ * A080663 a(n) = 3*n^2 - 1.
  * @author Sean A. Irvine
  */
 public class A080663 extends LinearRecurrence {

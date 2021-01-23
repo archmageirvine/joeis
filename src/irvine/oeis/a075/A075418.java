@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075418 Sum of generalized tribonacci numbers <code>A001644</code> and inverted tribonacci numbers <code>A075298</code>.
+ * A075418 Sum of generalized tribonacci numbers A001644 and inverted tribonacci numbers A075298.
  * @author Georg Fischer
  */
 public class A075418 extends HolonomicRecurrence {

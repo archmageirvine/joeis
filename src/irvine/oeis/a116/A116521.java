@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116521 Binomial transform of tetranacci sequence <code>A000078</code>.
+ * A116521 Binomial transform of tetranacci sequence A000078.
  * @author Sean A. Irvine
  */
 public class A116521 extends LinearRecurrence {

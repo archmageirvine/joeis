@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050255 Diaconis-Mosteller approximation to the Birthday problem function.
+ * A050255 A Diaconis-Mosteller approximation to the Birthday problem function.
  * @author Sean A. Irvine
  */
 public class A050255 implements Sequence {

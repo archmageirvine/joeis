@@ -6,7 +6,7 @@ package irvine.oeis.a060;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A060784 Number of double tangents of order <code>n</code>.
+ * A060784 Number of double tangents of order n.
  * @author Georg Fischer
  */
 public class A060784 extends HolonomicRecurrence {

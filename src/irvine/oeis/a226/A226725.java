@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226725 Denominator of the median of <code>{1, 1/2, 1/3</code>, ..., <code>1/n}</code>.
+ * A226725 Denominator of the median of {1, 1/2, 1/3, ..., 1/n}.
  * @author Sean A. Irvine
  */
 public class A226725 extends LinearRecurrence {

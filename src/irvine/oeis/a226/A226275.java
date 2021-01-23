@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226275 Number of new rationals produced at the n-th iteration by applying the map t <code>-&gt; {t+1, -1/t}</code> to nonzero terms, starting with <code>S[0] = {1}</code>.
+ * A226275 Number of new rationals produced at the n-th iteration by applying the map t -&gt; {t+1, -1/t} to nonzero terms, starting with S[0] = {1}.
  * @author Georg Fischer
  */
 public class A226275 extends GeneratingFunctionSequence {

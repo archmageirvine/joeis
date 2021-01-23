@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 
 /**
- * A333188 <code>a(n) = [2^n csc(1/n)] - [2^n cot(1/n)]</code>, where <code>[ ] =</code> floor.
+ * A333188 a(n) = [2^n csc(1/n)] - [2^n cot(1/n)], where [ ] = floor.
  * @author Sean A. Irvine
  */
 public class A333188 extends A333187 {

@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258597 <code>a(n) = 13*3^n</code>.
+ * A258597 a(n) = 13*3^n.
  * @author Georg Fischer
  */
 public class A258597 extends LinearRecurrence {

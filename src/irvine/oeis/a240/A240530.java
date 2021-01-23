@@ -6,7 +6,7 @@ package irvine.oeis.a240;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240530 <code>a(n) = 4*(2*n)! / (n!)^2</code>.
+ * A240530 a(n) = 4*(2*n)! / (n!)^2.
  * @author Georg Fischer
  */
 public class A240530 extends HolonomicRecurrence {

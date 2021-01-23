@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A115286 <code>a(n) = (1/6)*(n^6+3*n^4+12*n^3+8*n^2)</code>.
+ * A115286 a(n) = (1/6)*(n^6+3*n^4+12*n^3+8*n^2).
  * @author Georg Fischer
  */
 public class A115286 extends GeneratingFunctionSequence {

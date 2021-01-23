@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120096 <code>a(n) = (A046717(n))^2</code> (starting with <code>n=1)</code>.
+ * A120096 a(n) = (A046717(n))^2 (starting with n=1).
  * @author Georg Fischer
  */
 public class A120096 extends LinearRecurrence {

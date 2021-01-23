@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032056 Shifts left under "BGJ" <code>(reversible</code>, element, labeled) transform.
+ * A032056 Shifts left under "BGJ" (reversible, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032056 extends MemorySequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024721 <code>a(n) = (1/5)*(4 +</code> sum of <code>C(5k,k))</code> for k <code>= 0,1,2,...,n</code>.
+ * A024721 a(n) = (1/5)*(4 + sum of C(5k,k)) for k = 0,1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A024721 implements Sequence {

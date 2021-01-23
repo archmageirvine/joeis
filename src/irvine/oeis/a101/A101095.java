@@ -5,7 +5,7 @@ package irvine.oeis.a101;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A101095 Fourth difference of fifth powers <code>(A000584)</code>.
+ * A101095 Fourth difference of fifth powers (A000584).
  * @author Georg Fischer
  */
 public class A101095 extends HolonomicRecurrence {

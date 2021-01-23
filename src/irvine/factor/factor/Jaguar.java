@@ -30,6 +30,7 @@ public final class Jaguar {
 
   private static final CachedFactorizer FACTOR_DB = new CachedFactorizer(new FactorDbFactorizer());
   private static final Cheetah CHEETAH = new Cheetah(false);
+  private static final PrimeDivision TRIAL = new PrimeDivision(1000);
 
   /**
    * Attempt to factor the given number
@@ -68,6 +69,27 @@ public final class Jaguar {
       // an already partially factored result, hence we recreate the sequence
       fs = new FactorSequence(n);
       FACTOR_DB.factor(fs);
+    }
+    return fs;
+  }
+
+  /**
+   * Attempt to factor the given number in sufficient detail to determine if it is a semiprime.
+   * @param n number to factor
+   * @return factorization
+   * @throws UnsupportedOperationException if the factorization fails
+   */
+  public static FactorSequence factorUpToSemiprime(final Z n) {
+    FactorSequence fs = new FactorSequence(n);
+    CHEETAH.factor(fs);
+    if (fs.isSemiprime() == FactorSequence.UNKNOWN) {
+      TRIAL.factor(fs);
+      if (fs.isSemiprime() == FactorSequence.UNKNOWN) {
+        // It is generally better to look up the original number in factordb rather than
+        // an already partially factored result, hence we recreate the sequence
+        fs = new FactorSequence(n);
+        FACTOR_DB.factor(fs);
+      }
     }
     return fs;
   }

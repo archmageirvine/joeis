@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024827 Least m such that if r and s in <code>{1/1, 1/4, 1/9,..., 1/n^2}</code> satisfy r <code>&lt</code>; s, then r <code>&lt; k/m &lt</code>; s for some integer k.
+ * A024827 Least m such that if r and s in {1/1, 1/4, 1/9,..., 1/n^2} satisfy r &lt; s, then r &lt; k/m &lt; s for some integer k.
  * @author Sean A. Irvine
  */
 public class A024827 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A273308 Maximum population of a <code>2 X n</code> still life in Conway's Game of Life.
+ * A273308 Maximum population of a 2 X n still life in Conway's Game of Life.
  * @author Georg Fischer
  */
 public class A273308 extends GeneratingFunctionSequence {

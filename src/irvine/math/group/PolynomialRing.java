@@ -67,6 +67,15 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
   }
 
   /**
+   * Return an empty polynomial.  Callers can then add values themselves
+   * to set a particular polynomial.
+   * @return empty polynomial.
+   */
+  public Polynomial<E> empty() {
+    return create(Collections.emptyList());
+  }
+
+  /**
    * Create a polynomial in this field with the given coefficients.
    * @param coefficients the coefficients in the underlying field
    * @return the polynomial
@@ -328,7 +337,7 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
    * @return <code>p^n</code>
    */
   public Polynomial<E> powz(final Polynomial<E> p, final Z n, final int degreeLimit) {
-    if (Z.ZERO.equals(n)) {
+    if (n.isZero()) {
       return one();
     } else if (Z.ONE.equals(n)) {
       return p.truncate(degreeLimit);
@@ -458,6 +467,7 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
 
   /**
    * Replaces the power series sum of <code>a_n*x^n/n!</code> by sum of <code>a_n*x^n</code>
+   * @param p polynomial
    * @return Laplace series
    */
   public Polynomial<E> serlaplace(final Polynomial<E> p) {

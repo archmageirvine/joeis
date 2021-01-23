@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A092514 Decimal expansion of <code>e^(1/5)</code>.
+ * A092514 Decimal expansion of e^(1/5).
  * @author Georg Fischer
  */
 public class A092514 extends DecimalExpansionSequence {

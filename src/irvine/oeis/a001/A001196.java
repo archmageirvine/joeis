@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001196 <code>Double-bitters</code>: only even length runs in binary expansion.
+ * A001196 Double-bitters: only even length runs in binary expansion.
  * @author Sean A. Irvine
  */
 public class A001196 implements Sequence {

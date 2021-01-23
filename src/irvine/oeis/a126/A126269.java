@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A126269 Numbers n such that <code>hcl(n,n) &lt; hcl(n,n-1)</code> where <code>hcl(n,i)</code> is the Huffman code length; see comments.
+ * A126269 Numbers n such that hcl(n,n) &lt; hcl(n,n-1) where hcl(n,i) is the Huffman code length; see comments.
  * @author Sean A. Irvine
  */
 public class A126269 implements Sequence {

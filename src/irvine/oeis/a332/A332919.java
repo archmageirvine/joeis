@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332919 <code>a(n)</code> is the sum of the sums of squared digits of all n-digit numbers.
+ * A332919 a(n) is the sum of the sums of squared digits of all n-digit numbers.
  * @author Georg Fischer
  */
 public class A332919 extends HolonomicRecurrence {

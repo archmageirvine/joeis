@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204472 Number of 8-element subsets that can be chosen from <code>{1,2,...,8*n}</code> having element sum <code>32*n+4</code>.
+ * A204472 Number of 8-element subsets that can be chosen from {1,2,...,8*n} having element sum 32*n+4.
  * @author Georg Fischer
  */
 public class A204472 extends GeneratingFunctionSequence {

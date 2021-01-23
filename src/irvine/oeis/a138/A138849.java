@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138849 <code>a(n) = AlexanderPolynomial[n]</code> defined as <code>Det[Transpose[S]-n S]</code> where S is Kronecker Product of two <code>2 X 2</code> Seifert matrices <code>{{-1, 1}, {0, -1}} [X] {{-1, 1}, {0, -1}} = {{1, -1, -1, 1}, {0, 1, 0, -1}, {0, 0, 1, -1}, {0, 0, 0, 1}}</code>.
+ * A138849 a(n) = AlexanderPolynomial[n] defined as Det[Transpose[S]-n S] where S is Kronecker Product of two 2 X 2 Seifert matrices {{-1, 1}, {0, -1}} [X] {{-1, 1}, {0, -1}} = {{1, -1, -1, 1}, {0, 1, 0, -1}, {0, 0, 1, -1}, {0, 0, 0, 1}}.
  * @author Georg Fischer
  */
 public class A138849 extends GeneratingFunctionSequence {

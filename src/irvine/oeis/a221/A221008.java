@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221008 The Wiener index of the nanostar dendrimer <code>D_3[n]</code> , defined pictorially in the Alikhani - Iranmanesh reference.
+ * A221008 The Wiener index of the nanostar dendrimer D_3[n] , defined pictorially in the Alikhani - Iranmanesh reference.
  * @author Georg Fischer
  */
 public class A221008 extends GeneratingFunctionSequence {

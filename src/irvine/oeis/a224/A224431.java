@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224431 The Wiener index of the dendrimer <code>D_2[n]</code>, defined pictorially in the A. R. Ashrafi et al. reference.
+ * A224431 The Wiener index of the dendrimer D_2[n], defined pictorially in the A. R. Ashrafi et al. reference.
  * @author Georg Fischer
  */
 public class A224431 extends GeneratingFunctionSequence {

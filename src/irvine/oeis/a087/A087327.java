@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087327 Independence numbers for <code>KT_2</code> knight on triangular board.
+ * A087327 Independence numbers for KT_2 knight on triangular board.
  * @author Georg Fischer
  */
 public class A087327 extends LinearRecurrence {

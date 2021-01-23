@@ -5,7 +5,7 @@ package irvine.oeis.a235;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A235699 <code>a(n+1) = a(n) + (a(n) mod 10) + 1, a(0) = 0</code>.
+ * A235699 a(n+1) = a(n) + (a(n) mod 10) + 1, a(0) = 0.
  * @author Georg Fischer
  */
 public class A235699 extends HolonomicRecurrence {

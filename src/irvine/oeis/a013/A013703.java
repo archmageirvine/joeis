@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013703 <code>Series(W(exp(1)*(1+x)), x) = sum( a[ n ]/(2^(2*n)*n!), n=0..infinity)</code>, where W is the Lambert W function.
+ * A013703 Series(W(exp(1)*(1+x)), x) = sum( a[ n ]/(2^(2*n)*n!), n=0..infinity), where W is the Lambert W function.
  * @author Sean A. Irvine
  */
 public class A013703 implements Sequence {

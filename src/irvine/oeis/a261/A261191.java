@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261191 40-gonal numbers: <code>a(n) = 38*n*(n-1)/2 + n</code>.
+ * A261191 40-gonal numbers: a(n) = 38*n*(n-1)/2 + n.
  * @author Sean A. Irvine
  */
 public class A261191 extends LinearRecurrence {

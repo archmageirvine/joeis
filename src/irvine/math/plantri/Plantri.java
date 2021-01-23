@@ -185,7 +185,7 @@ import irvine.math.graph.GraphFactory;
  * Java port of <code>plantri</code>.
  * @author Gunnar Brinkmann
  * @author Brendan McKay
- * @author Sean A. Irvine (port to Java)
+ * @author Sean A. Irvine (Java port)
  */
 public final class Plantri {
 

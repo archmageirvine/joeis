@@ -9,7 +9,7 @@ import irvine.oeis.PartitionTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A027583 Sequence satisfies <code>T(a)=a</code>, where T is defined below.
+ * A027583 Sequence satisfies T(a)=a, where T is defined below.
  * @author Sean A. Irvine
  */
 public class A027583 implements Sequence {

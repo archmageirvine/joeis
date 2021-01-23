@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098401 <code>(0^n+3^n*Binomial(2n,n))/2</code>.
+ * A098401 (0^n+3^n*Binomial(2n,n))/2.
  * @author Georg Fischer
  */
 public class A098401 extends HolonomicRecurrence {

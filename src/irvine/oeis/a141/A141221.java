@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141221 Number of ways for each of <code>2n</code> (labeled) people in a circle to look at either a neighbor or the diametrally opposite person, such that no eye contact occurs.
+ * A141221 Number of ways for each of 2n (labeled) people in a circle to look at either a neighbor or the diametrally opposite person, such that no eye contact occurs.
  * @author Georg Fischer
  */
 public class A141221 extends GeneratingFunctionSequence {

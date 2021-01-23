@@ -4,7 +4,7 @@ package irvine.oeis.a240;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A240806 Coefficients in expansion of graph zeta function of graph obtained by adding 4 vertices to each edge of <code>K_5</code>.
+ * A240806 Coefficients in expansion of graph zeta function of graph obtained by adding 4 vertices to each edge of K_5.
  * @author Georg Fischer
  */
 public class A240806 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001539 <code>a(n) = (4*n+1)*(4*n+3)</code>.
+ * A001539 a(n) = (4*n+1)*(4*n+3).
  * @author Sean A. Irvine
  */
 public class A001539 implements Sequence {

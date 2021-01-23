@@ -6,7 +6,7 @@ package irvine.oeis.a317;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A317163 <code>a(n) = 48277590120607451 + (n-1)*8440735245322380</code>.
+ * A317163 a(n) =  48277590120607451 + (n-1)*8440735245322380.
  * @author Georg Fischer
  */
 public class A317163 extends HolonomicRecurrence {

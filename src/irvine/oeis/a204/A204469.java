@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204469 Number of 5-element subsets that can be chosen from <code>{1,2,...,10*n+5}</code> having element sum <code>25*n+15</code>.
+ * A204469 Number of 5-element subsets that can be chosen from {1,2,...,10*n+5} having element sum 25*n+15.
  * @author Georg Fischer
  */
 public class A204469 extends GeneratingFunctionSequence {

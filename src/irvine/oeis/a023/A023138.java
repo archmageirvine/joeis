@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023138 Number of cycles of function <code>f(x) = 6x mod n</code>.
+ * A023138 Number of cycles of function f(x) = 6x mod n.
  * @author Sean A. Irvine
  */
 public class A023138 implements Sequence {

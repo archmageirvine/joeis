@@ -5,7 +5,7 @@ package irvine.oeis.a074;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A074092 Number of plane binary trees of size <code>n+3</code> and contracted height <code>n</code>.
+ * A074092 Number of plane binary trees of size n+3 and contracted height n.
  * @author Georg Fischer
  */
 public class A074092 extends HolonomicRecurrence {

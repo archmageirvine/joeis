@@ -6,7 +6,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089022 Number of walks of length <code>2n</code> on the 3-regular tree beginning and ending at some fixed vertex.
+ * A089022 Number of walks of length 2n on the 3-regular tree beginning and ending at some fixed vertex.
  * @author Georg Fischer
  */
 public class A089022 extends HolonomicRecurrence {

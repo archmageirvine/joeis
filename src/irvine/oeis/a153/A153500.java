@@ -4,7 +4,7 @@ package irvine.oeis.a153;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A153500 First 3 terms coincide with <code>A152756</code>. For <code>n&gt;3, a(n)</code> is the palindromic number formed from concatenation of <code>1, 0, A147759(n-3), 0, A147759(n-3), 0</code> and 1.
+ * A153500 First 3 terms coincide with A152756. For n&gt;3, a(n) is the palindromic number formed from concatenation of 1, 0, A147759(n-3), 0, A147759(n-3), 0 and 1.
  * @author Georg Fischer
  */
 public class A153500 extends GeneratingFunctionSequence {

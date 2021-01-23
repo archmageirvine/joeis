@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A123653 Expansion of <code>(eta(q^2)eta(q^6)/(eta(q)eta(q^3)))^6</code> in powers of q.
+ * A123653 Expansion of (eta(q^2)eta(q^6)/(eta(q)eta(q^3)))^6 in powers of q.
  * @author Sean A. Irvine
  */
 public class A123653 implements Sequence {

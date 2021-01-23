@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138587 The union of all entries of <code>A024495, A131708</code> and <code>A024493</code> sorted into natural order.
+ * A138587 The union of all entries of A024495, A131708 and A024493 sorted into natural order.
  * @author Georg Fischer
  */
 public class A138587 extends GeneratingFunctionSequence {

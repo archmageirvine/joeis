@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A011920 <code>a(n) = b(n)*(b(n)+1) = b(n) + ... + c(n)</code>, where <code>b(n) = A011916(n), c(n) = A011918(n)</code>.
+ * A011920 a(n) = b(n)*(b(n)+1) = b(n) + ... + c(n), where b(n) = A011916(n), c(n) = A011918(n).
  * @author Sean A. Irvine
  */
 public class A011920 extends LinearRecurrence {

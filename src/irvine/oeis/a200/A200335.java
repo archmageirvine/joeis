@@ -5,7 +5,7 @@ package irvine.oeis.a200;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A200335 <code>a(n) = sqrt((A200216(n)+1)/5)</code>.
+ * A200335 a(n) = sqrt((A200216(n)+1)/5).
  * @author Georg Fischer
  */
 public class A200335 extends HolonomicRecurrence {

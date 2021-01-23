@@ -53,4 +53,12 @@ public class IntegerPartitionTest extends TestCase {
   public void testStandardYoungTableaux() {
     assertEquals(Z.valueOf(216), IntegerPartition.numStandardYoungTableaux(new int[] {4, 2, 2, 1}));
   }
+
+  public void testDual() {
+    assertEquals("[2, 2]", Arrays.toString(IntegerPartition.dual(new int[] {2, 2})));
+    assertEquals("[4]", Arrays.toString(IntegerPartition.dual(new int[] {1, 1, 1, 1})));
+    assertEquals("[1, 1, 1, 1]", Arrays.toString(IntegerPartition.dual(new int[] {4})));
+    assertEquals("[3, 1]", Arrays.toString(IntegerPartition.dual(new int[] {2, 1, 1})));
+    assertEquals("[2, 1, 1]", Arrays.toString(IntegerPartition.dual(new int[] {3, 1})));
+  }
 }

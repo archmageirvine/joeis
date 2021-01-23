@@ -6,7 +6,7 @@ package irvine.oeis.a082;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082759 <code>a(n) = Sum_{k = 0..n} binomial(n,k)*trinomial(n,k)</code>, where <code>trinomial(n,k) =</code> trinomial coefficients.
+ * A082759 a(n) = Sum_{k = 0..n} binomial(n,k)*trinomial(n,k), where trinomial(n,k) = trinomial coefficients.
  * @author Georg Fischer
  */
 public class A082759 extends HolonomicRecurrence {

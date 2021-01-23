@@ -6,7 +6,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114851 Number of lambda calculus terms of size n, where <code>size(lambda x.M) = 2 + size(M), size(M N) = 2 + size(M) + size(N)</code>, and <code>size(V) = 1 +</code> i for a variable V bound by the i-th enclosing lambda (corresponding to a binary encoding).
+ * A114851 Number of lambda calculus terms of size n, where size(lambda x.M) = 2 + size(M), size(M N) = 2 + size(M) + size(N), and size(V) = 1 + i for a variable V bound by the i-th enclosing lambda (corresponding to a binary encoding).
  * @author Georg Fischer
  */
 public class A114851 extends HolonomicRecurrence {

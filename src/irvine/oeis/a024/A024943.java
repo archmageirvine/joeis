@@ -4,7 +4,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002476;
 
 /**
- * A024943 Number of partitions of n into distinct <code>6k+1</code> primes.
+ * A024943 Number of partitions of n into distinct 6k+1 primes.
  * @author Sean A. Irvine
  */
 public class A024943 extends A024941 {

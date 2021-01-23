@@ -5,7 +5,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126664 Continued fraction expansion of <code>sqrt(3)/2</code>.
+ * A126664 Continued fraction expansion of sqrt(3)/2.
  * @author Georg Fischer
  */
 public class A126664 extends HolonomicRecurrence {

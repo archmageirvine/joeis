@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a001.A001285;
 
 /**
- * A029877 Euler transform of Thue-Morse sequence <code>A001285</code>.
+ * A029877 Euler transform of Thue-Morse sequence A001285.
  * @author Sean A. Irvine
  */
 public class A029877 extends EulerTransformSequence {

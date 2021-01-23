@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020966 <code>a(n) = Sum_{k&gt;=1} floor(n*sqrt(2)^(2-k))</code>.
+ * A020966 a(n) = Sum_{k&gt;=1} floor(n*sqrt(2)^(2-k)).
  * @author Sean A. Irvine
  */
 public class A020966 implements Sequence {
@@ -23,7 +23,7 @@ public class A020966 implements Sequence {
     do {
       t = ComputableReals.SINGLETON.pow(N, CR.valueOf(--k)).multiply(n).floor();
       sum = sum.add(t);
-    } while (!Z.ZERO.equals(t));
+    } while (!t.isZero());
     return sum;
   }
 }

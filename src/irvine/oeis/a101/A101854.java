@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101854 <code>a(n) = n*(n+1)*(n^2+21*n+50)/24</code>.
+ * A101854 a(n) = n*(n+1)*(n^2+21*n+50)/24.
  * @author Sean A. Irvine
  */
 public class A101854 extends LinearRecurrence {

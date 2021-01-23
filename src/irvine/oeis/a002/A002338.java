@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002338 x such that p <code>= (x^2 + 27*y^2)/4</code>, where p is the n-th prime of the form <code>3k+1</code>.
+ * A002338 x such that p = (x^2 + 27*y^2)/4, where p is the n-th prime of the form 3k+1.
  * @author Sean A. Irvine
  */
 public class A002338 implements Sequence {
@@ -25,7 +25,7 @@ public class A002338 implements Sequence {
           y = y.add(1);
           final Z x2 = p.subtract(y.square().multiply(27));
           final Z[] s = x2.sqrtAndRemainder();
-          if (Z.ZERO.equals(s[1])) {
+          if (s[1].isZero()) {
             return s[0];
           }
         }

@@ -6,7 +6,7 @@ package irvine.oeis.a101;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A101602 G.f.: <code>c(3x)^4, c(x)</code> the g.f. of <code>A000108</code>.
+ * A101602 G.f.: c(3x)^4, c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A101602 extends HolonomicRecurrence {

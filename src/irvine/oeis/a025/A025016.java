@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025016 Final digits of <code>!n =</code> Sum <code>i!, i=0..n, (A003422)</code> for very large n, read from right.
+ * A025016 Final digits of !n = Sum i!, i=0..n, (A003422) for very large n, read from right.
  * @author Sean A. Irvine
  */
 public class A025016 implements Sequence {
@@ -18,7 +18,7 @@ public class A025016 implements Sequence {
     Z f = Z.ONE;
     Z s = Z.TWO; // 0! + 1!
     long k = 1;
-    while (!Z.ZERO.equals(f.mod(mMod))) {
+    while (!f.mod(mMod).isZero()) {
       f = f.modMultiply(++k, mMod);
       s = s.add(f);
     }

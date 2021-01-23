@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A165803 Integers n such that the trajectory of n under repeated applications of the map <code>k-&gt;(k-3)/2</code> is a chain of primes that reaches 2 or <code>3 (n</code> itself need not be a prime).
+ * A165803 Integers n such that the trajectory of n under repeated applications of the map k-&gt;(k-3)/2 is a chain of primes that reaches 2 or 3 (n itself need not be a prime).
  * @author Georg Fischer
  */
 public class A165803 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a146;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A146093 Bell numbers <code>(A000110)</code> read <code>mod 3</code>.
+ * A146093 Bell numbers (A000110) read mod 3.
  * @author Georg Fischer
  */
 public class A146093 extends HolonomicRecurrence {

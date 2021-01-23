@@ -7,7 +7,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A134059 <code>T(n,k) = 3*binomial(n,k)</code>, if k <code>&gt; 0, (0 &lt;= k &lt;= n)</code>, left column <code>= (1,3,3,3,...)</code>.
+ * A134059 T(n,k) = 3*binomial(n,k), if k &gt; 0, (0 &lt;= k &lt;= n), left column = (1,3,3,3,...).
  * @author Georg Fischer
  */
 public class A134059 extends GeneratingFunctionTriangle {

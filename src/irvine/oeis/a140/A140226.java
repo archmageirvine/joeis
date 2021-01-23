@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140226 Binomial transform of <code>[1, 3, 3, 1, 1, -1, 1, -1, 1, ...]</code>.
+ * A140226 Binomial transform of [1, 3, 3, 1, 1, -1, 1, -1, 1, ...].
  * @author Georg Fischer
  */
 public class A140226 extends GeneratingFunctionSequence {

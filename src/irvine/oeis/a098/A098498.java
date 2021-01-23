@@ -5,7 +5,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098498 Number of squares on infinite half chessboard at <code>&lt;=n</code> knight moves from a fixed point on the edge.
+ * A098498 Number of squares on infinite half chessboard at &lt;=n knight moves from a fixed point on the edge.
  * @author Georg Fischer
  */
 public class A098498 extends HolonomicRecurrence {

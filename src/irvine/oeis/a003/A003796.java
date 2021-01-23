@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003796 Numbers with no 3 adjacent <code>0</code>'s in binary expansion.
+ * A003796 Numbers with no 3 adjacent 0's in binary expansion.
  * @author Sean A. Irvine
  */
 public class A003796 implements Sequence {

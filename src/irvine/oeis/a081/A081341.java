@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A081341 Expansion of <code>exp(3*x)*cosh(3*x)</code>.
+ * A081341 Expansion of exp(3*x)*cosh(3*x).
  * @author Georg Fischer
  */
 public class A081341 extends GeneratingFunctionSequence {

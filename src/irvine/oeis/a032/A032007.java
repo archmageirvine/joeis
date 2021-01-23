@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A032007 "AFK" <code>(ordered</code>, size, unlabeled) transform of 1,2,3,4,...
+ * A032007 "AFK" (ordered, size, unlabeled) transform of 1,2,3,4,...
  * @author Sean A. Irvine
  */
 public class A032007 extends A032005 {

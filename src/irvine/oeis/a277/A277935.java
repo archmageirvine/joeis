@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277935 Number of ways <code>2*n-1</code> people can vote on three candidates so that the Condorcet paradox arises.
+ * A277935 Number of ways 2*n-1 people can vote on three candidates so that the Condorcet paradox arises.
  * @author Georg Fischer
  */
 public class A277935 extends LinearRecurrence {

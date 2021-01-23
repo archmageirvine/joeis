@@ -5,13 +5,13 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032368 Numbers k such that <code>37*2^k+1</code> is prime.
+ * A032368 Numbers k such that 37*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A032368 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A032368() {
-    super(1, 2, 37, 2, +1, 0);
+    super(1, 2, 37, 2, 1);
   }
 }

@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152429 <code>a(n) = (11^n + 5^n)/2</code>.
+ * A152429 a(n) = (11^n + 5^n)/2.
  * @author Georg Fischer
  */
 public class A152429 extends GeneratingFunctionSequence {

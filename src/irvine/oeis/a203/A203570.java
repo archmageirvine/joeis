@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A203570 Bisection of <code>A201207 (half-convolution</code> of the Lucas sequence <code>A000032</code> with itself); even part.
+ * A203570 Bisection of A201207 (half-convolution of the Lucas sequence A000032 with itself); even part.
  * @author Georg Fischer
  */
 public class A203570 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a079;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A079514 Second column of triangular array in <code>A079513</code>.
+ * A079514 Second column of triangular array in A079513.
  * @author Georg Fischer
  */
 public class A079514 extends HolonomicRecurrence {

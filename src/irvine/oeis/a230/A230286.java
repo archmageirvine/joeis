@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a016.A016052;
 
 /**
- * A230286 <code>a(n) = A016052(n)/3</code>.
+ * A230286 a(n) = A016052(n)/3.
  * @author Georg Fischer
  */
 public class A230286 extends A016052 {

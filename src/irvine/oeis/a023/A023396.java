@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023396 If any odd power of 2 ends with k <code>1</code>'s and <code>2</code>'s, they must be the first k elements of this sequence in reverse order.
+ * A023396 If any odd power of 2 ends with k 1's and 2's, they must be the first k elements of this sequence in reverse order.
  * @author Sean A. Irvine
  */
 public class A023396 implements Sequence {
@@ -18,7 +18,7 @@ public class A023396 implements Sequence {
     mS = mS == null ? Z.ONE : mS.multiply(10);
     mT = mT.multiply2();
     final Z a = mS.add(mA);
-    if (Z.ZERO.equals(a.mod(mT))) {
+    if (a.mod(mT).isZero()) {
       mA = a;
       return Z.ONE;
     } else {

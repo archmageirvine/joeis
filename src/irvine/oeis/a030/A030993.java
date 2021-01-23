@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030993 8-automorphic numbers: final digits of <code>8*n^2</code> agree with <code>n</code>.
+ * A030993 8-automorphic numbers: final digits of 8*n^2 agree with n.
  * @author Sean A. Irvine
  */
 public class A030993 implements Sequence {

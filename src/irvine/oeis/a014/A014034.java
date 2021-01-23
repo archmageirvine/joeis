@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014034 Inverse of <code>25th</code> cyclotomic polynomial.
+ * A014034 Inverse of 25th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014034 extends PeriodicSequence {

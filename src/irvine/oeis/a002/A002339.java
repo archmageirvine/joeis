@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002339 y such that p <code>= (x^2 + 27y^2 )/4</code>.
+ * A002339 y such that p = (x^2 + 27y^2 )/4.
  * @author Sean A. Irvine
  */
 public class A002339 implements Sequence {
@@ -25,7 +25,7 @@ public class A002339 implements Sequence {
           y = y.add(1);
           final Z x2 = p.subtract(y.square().multiply(27));
           final Z[] s = x2.sqrtAndRemainder();
-          if (Z.ZERO.equals(s[1])) {
+          if (s[1].isZero()) {
             return y;
           }
         }

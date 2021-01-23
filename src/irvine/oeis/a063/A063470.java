@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A063470 Numbers n such that <code>tau(n)*4 = phi(n)</code>.
+ * A063470 Numbers n such that tau(n)*4 = phi(n).
  * @author Georg Fischer
  */
 public class A063470 extends FiniteSequence {

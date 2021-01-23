@@ -4,7 +4,7 @@ package irvine.oeis.a198;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A198908 Number of <code>n X 2 0..7</code> arrays with values 0..7 introduced in row major order and no element equal to any horizontal or vertical neighbor.
+ * A198908 Number of n X 2 0..7 arrays with values 0..7 introduced in row major order and no element equal to any horizontal or vertical neighbor.
  * @author Georg Fischer
  */
 public class A198908 extends GeneratingFunctionSequence {

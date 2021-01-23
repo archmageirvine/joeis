@@ -5,13 +5,13 @@ package irvine.oeis.a216;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A216890 Numbers n such that <code>14*3^n + 1</code> is prime.
+ * A216890 Numbers n such that 14*3^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A216890 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A216890() {
-    super(1, 1, 14, 3, +1, 0);
+    super(1, 1, 14, 3, 1);
   }
 }

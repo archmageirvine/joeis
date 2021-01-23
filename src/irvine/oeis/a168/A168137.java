@@ -6,13 +6,13 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A168137 <code>a(n) =</code> the smallest number whose American English name contains n distinct letters of the alphabet. <code>3&lt;=n&lt;=23</code>.
+ * A168137 a(n) is the smallest number whose American English name contains n distinct letters of the alphabet; 3 &lt;= n &lt;= 23.
  * @author Georg Fischer
  */
 public class A168137 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A168137() {
-    super(Z.ONE, Z.ZERO, new Z("8"), new Z("13"), new Z("14"), new Z("25"), new Z("24"), new Z("74"), new Z("112"), new Z("127"), new Z("125"), new Z("165"), new Z("265"), new Z("1265"), new Z("2568"), new Z("12468"), new Z("1002568"), new Z("1001002568"), new Z("1000001001002568"), new Z("1000000001000001001002568"), new Z("1001000000001000001001002568"));
+    super(Z.ONE, Z.ZERO, Z.EIGHT, new Z("13"), new Z("14"), new Z("25"), new Z("24"), new Z("74"), new Z("112"), new Z("127"), new Z("125"), new Z("165"), new Z("265"), new Z("1265"), new Z("2568"), new Z("12468"), new Z("1002568"), new Z("1001002568"), new Z("1000001001002568"), new Z("1000000001000001001002568"), new Z("1001000000001000001001002568"));
   }
 }

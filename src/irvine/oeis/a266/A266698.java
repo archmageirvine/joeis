@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266698 x-values of solutions to the Diophantine equation <code>x^2 - 7*y^2 = 2</code>.
+ * A266698 x-values of solutions to the Diophantine equation x^2 - 7*y^2 = 2.
  * @author Sean A. Irvine
  */
 public class A266698 extends LinearRecurrence {

@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004128;
 
 /**
- * A051065 <code>a(n) = A004128(n) mod 2</code>.
+ * A051065 a(n) = A004128(n) mod 2.
  * @author Georg Fischer
  */
 public class A051065 extends A004128 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A051065() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

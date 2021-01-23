@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008288;
 
 /**
- * A026934 <code>a(n) = Sum_{k=0..n-1} T(n,k) * T(n,k+1)</code>, with T given by <code>A008288</code>.
+ * A026934 a(n) = Sum_{k=0..n-1} T(n,k) * T(n,k+1), with T given by A008288.
  * @author Sean A. Irvine
  */
 public class A026934 extends A008288 {

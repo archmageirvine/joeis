@@ -4,7 +4,7 @@ package irvine.oeis.a256;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A256096 Expansion of <code>(4+3*x)/(1+3*x)</code>.
+ * A256096 Expansion of (4+3*x)/(1+3*x).
  * @author Georg Fischer
  */
 public class A256096 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238276 <code>a(n) = (9*8^n - 2)/7</code>.
+ * A238276 a(n) = (9*8^n - 2)/7.
  * @author Georg Fischer
  */
 public class A238276 extends GeneratingFunctionSequence {

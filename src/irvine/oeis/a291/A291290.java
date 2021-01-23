@@ -4,7 +4,7 @@ package irvine.oeis.a291;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A291290 <code>a(n) = n/3</code> if <code>n == 0 mod 3, floor((n+1)/2)</code> if <code>n == 1 mod 3</code>, otherwise <code>n-2</code>.
+ * A291290 a(n) = n/3 if n == 0 mod 3, floor((n+1)/2) if n == 1 mod 3, otherwise n-2.
  * @author Georg Fischer
  */
 public class A291290 extends GeneratingFunctionSequence {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A005198 <code>a(n)</code> is the number of forests with <code>n</code> (unlabeled) nodes in which each component tree is planted, that is, is a rooted tree in which the root has degree 1.
+ * A005198 a(n) is the number of forests with n (unlabeled) nodes in which each component tree is planted, that is, is a rooted tree in which the root has degree 1.
  * @author Sean A. Irvine
  */
 public class A005198 extends MemoryFunctionInt3<Z> implements Sequence {

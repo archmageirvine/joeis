@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029583 Expansion of sin <code>x +</code> cos <code>x +</code> tan <code>x +</code> sec <code>x</code>.
+ * A029583 Expansion of sin x + cos x + tan x + sec x.
  * @author Sean A. Irvine
  */
 public class A029583 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a157;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A157707 The <code>z^2</code> coefficients of the polynomials in the <code>GF3</code> denominators of <code>A156927</code> divided by 2.
+ * A157707 The z^2 coefficients of the polynomials in the GF3 denominators of A156927 divided by 2.
  * @author Georg Fischer
  */
 public class A157707 extends HolonomicRecurrence {

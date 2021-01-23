@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002518 Earliest sequence with <code>a(a(n))=5n</code>.
+ * A002518 Earliest sequence with a(a(n))=5n.
  * @author Sean A. Irvine
  */
 public class A002518 extends MemorySequence {

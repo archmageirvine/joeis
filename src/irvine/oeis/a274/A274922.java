@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A274922 <code>a(n) = (-1)^n * n</code> if <code>n&gt;0, a(0) = 1</code>.
+ * A274922 a(n) = (-1)^n * n if n&gt;0, a(0) = 1.
  * @author Georg Fischer
  */
 public class A274922 extends HolonomicRecurrence {

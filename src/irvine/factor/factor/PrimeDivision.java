@@ -50,7 +50,7 @@ public class PrimeDivision extends AbstractFactorizer {
     final int status = fs.getStatus(n);
     fs.remove(n);
     n = AbstractFactorizer.handleEvenAndNegative(fs, n, exponent);
-    if (n.equals(Z.ONE) || n.equals(Z.ZERO)) {
+    if (n.equals(Z.ONE) || n.isZero()) {
       return;
     }
 
@@ -65,7 +65,7 @@ public class PrimeDivision extends AbstractFactorizer {
       final Z v = Z.valueOf(p);
       Z[] qr;
       boolean wasFactor = false;
-      while ((qr = n.divideAndRemainder(v))[1].equals(Z.ZERO)) {
+      while ((qr = n.divideAndRemainder(v))[1].isZero()) {
         message("Found factor " + v);
         wasFactor = true;
         n = qr[0];
@@ -83,11 +83,7 @@ public class PrimeDivision extends AbstractFactorizer {
     }
 
     // test what the exit condition was
-    if (p == 0 || p > limit) {
-      fs.add(n, n.isProbablePrime() ? FactorSequence.PROB_PRIME : status, exponent);
-    } else {
-      fs.add(n, FactorSequence.PRIME, exponent);
-    }
+    fs.add(n, n.isProbablePrime() ? FactorSequence.PROB_PRIME : status, exponent);
   }
 
 

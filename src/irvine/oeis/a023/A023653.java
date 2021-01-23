@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a000.A000201;
 
 /**
- * A023653 Convolution of <code>(F(2), F(3), F(4), ...)</code> and <code>A000201</code>.
+ * A023653 Convolution of (F(2), F(3), F(4), ...) and A000201.
  * @author Sean A. Irvine
  */
 public class A023653 extends ConvolutionSequence {

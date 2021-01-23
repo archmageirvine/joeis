@@ -5,13 +5,13 @@ package irvine.oeis.a281;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A281903 Numbers k such that <code>6*10^k + 37</code> is prime.
+ * A281903 Numbers k such that 6*10^k + 37 is prime.
  * @author Georg Fischer
  */
 public class A281903 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A281903() {
-    super(1, 0, 6, 10, +37, 0);
+    super(1, 0, 6, 10, +37);
   }
 }

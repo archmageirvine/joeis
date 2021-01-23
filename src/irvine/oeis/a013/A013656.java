@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013656 <code>n*(9*n-2)</code>.
+ * A013656 n*(9*n-2).
  * @author Sean A. Irvine
  */
 public class A013656 implements Sequence {

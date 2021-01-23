@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027166 <code>a(n) = Sum_{0&lt;=j&lt;=i&lt;=n} A027157(i, j)</code>.
+ * A027166 a(n) = Sum_{0&lt;=j&lt;=i&lt;=n} A027157(i, j).
  * @author Sean A. Irvine
  */
 public class A027166 extends LinearRecurrence {

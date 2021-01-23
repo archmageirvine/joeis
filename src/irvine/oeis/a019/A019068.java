@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 /**
- * A019068 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite BEA = Beta Nan <code>[ AlnSi64-n O128 ]</code> with <code>n 7</code>.
+ * A019068 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite BEA = Beta Nan [ AlnSi64-n O128 ] with n 7.
  * @author Sean A. Irvine
  */
 public class A019068 extends A019067 {

@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117719 <code>a(2n) = A001653(n)</code> (Numbers n such that <code>2*n^2 - 1</code> is a square), <code>a(2n+1) = A038725(n+1)</code>.
+ * A117719 a(2n) = A001653(n) (Numbers n such that 2*n^2 - 1 is a square), a(2n+1) = A038725(n+1).
  * @author Georg Fischer
  */
 public class A117719 extends GeneratingFunctionSequence {

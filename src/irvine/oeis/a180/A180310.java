@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A180310 Decimal expansion of <code>-4/Pi + Pi/2</code>.
+ * A180310 Decimal expansion of -4/Pi + Pi/2.
  * @author Georg Fischer
  */
 public class A180310 extends DecimalExpansionSequence {

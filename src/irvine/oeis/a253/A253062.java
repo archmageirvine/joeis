@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253062 Largest order of a rooted tree that does not contain a rooted caterpillar subtree of order <code>n</code>.
+ * A253062 Largest order of a rooted tree that does not contain a rooted caterpillar subtree of order n.
  * @author Georg Fischer
  */
 public class A253062 extends GeneratingFunctionSequence {

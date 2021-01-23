@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A092487 <code>a(n) =</code> least k such that <code>{n+1, n+2, n+3, ... n+k}</code> has a subset the product of whose members with n is a square.
+ * A092487 a(n) = least k such that {n+1, n+2, n+3, ... n+k} has a subset the product of whose members with n is a square.
  * @author Sean A. Irvine
  */
 public class A092487 implements Sequence {
@@ -22,7 +22,7 @@ public class A092487 implements Sequence {
   }
 
   private boolean isSquare(final Z n) {
-    return n.sqrtAndRemainder()[1].equals(Z.ZERO);
+    return n.sqrtAndRemainder()[1].isZero();
   }
 
   @Override

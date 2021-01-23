@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A024457 <code>[ (4th</code> elementary symmetric function of P(n))/(3rd elementary symmetric function of <code>P(n)) ]</code>, where <code>P(n) =</code> {first <code>n+3</code> primes}.
+ * A024457 [ (4th elementary symmetric function of P(n))/(3rd elementary symmetric function of P(n)) ], where P(n) = {first n+3 primes}.
  * @author Sean A. Irvine
  */
 public class A024457 extends A024449 {

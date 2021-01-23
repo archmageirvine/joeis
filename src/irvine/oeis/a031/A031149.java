@@ -7,14 +7,14 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031149 Numbers n such that <code>n^2</code> with last digit deleted is still a perfect square.
+ * A031149 Numbers n such that n^2 with last digit deleted is still a perfect square.
  * @author Sean A. Irvine
  */
 public class A031149 implements Sequence {
 
   // After Robert Israel
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  private static final CR S = CR.valueOf(10).sqrt();
+  private static final CR S = CR.TEN.sqrt();
   private static final CR E = S.multiply(6);
   private static final CR CR19 = CR.valueOf(19);
   private static final CR E1 = CR19.add(E);
@@ -29,7 +29,7 @@ public class A031149 implements Sequence {
   private static final CR W = CR.valueOf(new Q(7, 2));
   private static final CR W1 = W.add(S);
   private static final CR W2 = W.subtract(S);
-  private static final CR R = CR.valueOf(8);
+  private static final CR R = CR.EIGHT;
   private static final CR Y = U.multiply(CR.FIVE);
   private static final CR Z1 = R.add(Y);
   private static final CR Z2 = R.subtract(Y);

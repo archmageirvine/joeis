@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a000.A000129;
 
 /**
- * A006645 Self-convolution of Pell numbers <code>(A000129)</code>.
+ * A006645 Self-convolution of Pell numbers (A000129).
  * @author Sean A. Irvine
  */
 public class A006645 extends ConvolutionSequence {

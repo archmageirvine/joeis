@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059827 Cubes of triangular numbers: <code>(n*(n+1)/2)^3</code>.
+ * A059827 Cubes of triangular numbers: (n*(n+1)/2)^3.
  * @author Sean A. Irvine
  */
 public class A059827 extends LinearRecurrence {

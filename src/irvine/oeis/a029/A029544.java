@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029544 Near Cullen numbers: k such that <code>(k+1)*2^k + 1</code> is prime.
+ * A029544 Near Cullen numbers: k such that (k+1)*2^k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A029544 implements Sequence {

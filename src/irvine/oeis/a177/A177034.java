@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177034 Decimal expansion of <code>(9280+3*sqrt(13493990))/14165</code>.
+ * A177034 Decimal expansion of (9280+3*sqrt(13493990))/14165.
  * @author Georg Fischer
  */
 public class A177034 extends DecimalExpansionSequence {

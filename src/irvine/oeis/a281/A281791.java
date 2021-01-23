@@ -5,7 +5,7 @@ package irvine.oeis.a281;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A281791 Ways to tile a <code>5 X (2n+1)</code> floor with tatami mats, including one monomer.
+ * A281791 Ways to tile a 5 X (2n+1) floor with tatami mats, including one monomer.
  * @author Georg Fischer
  */
 public class A281791 extends HolonomicRecurrence {

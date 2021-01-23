@@ -5,7 +5,7 @@ package irvine.oeis.a192;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A192235 Constant term of the reduction of the <code>n-th 2nd-kind</code> Chebyshev polynomial by <code>x^2 -&gt; x+1</code>.
+ * A192235 Constant term of the reduction of the n-th 2nd-kind Chebyshev polynomial by x^2 -&gt; x+1.
  * @author Georg Fischer
  */
 public class A192235 extends HolonomicRecurrence {

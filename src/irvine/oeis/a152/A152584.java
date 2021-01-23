@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A152584 Decimal expansion of <code>(Pi^3)/24</code>.
+ * A152584 Decimal expansion of (Pi^3)/24.
  * @author Georg Fischer
  */
 public class A152584 extends DecimalExpansionSequence {

@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.a006.A006016;
 
 /**
- * A019509 Nim-values for the impartial game <code>Take-a-Triangle</code>.
+ * A019509 Nim-values for the impartial game Take-a-Triangle.
  * @author Sean A. Irvine
  */
 public class A019509 extends MemorySequence {

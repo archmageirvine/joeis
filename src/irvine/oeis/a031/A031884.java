@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000959;
 import irvine.util.array.DynamicArray;
 
 /**
- * A031884 Smaller of a pair of consecutive lucky numbers with a gap of <code>2n</code>.
+ * A031884 Smaller of a pair of consecutive lucky numbers with a gap of 2n.
  * @author Sean A. Irvine
  */
 public class A031884 extends A000959 {

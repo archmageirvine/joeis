@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036844;
 
 /**
- * A325307 <code>a(n) = k /</code> (sum of prime factors of k, counted with multiplicity) where k is the n-th number for which the ratio is an integer.
+ * A325307 a(n) = k / (sum of prime factors of k, counted with multiplicity) where k is the n-th number for which the ratio is an integer.
  * @author Sean A. Irvine
  */
 public class A325307 extends A036844 {

@@ -92,7 +92,7 @@ public final class BaseStrongGeneratingCandidateElement extends BaseStrongGenera
     final int t = mOrbitList.get(0);
     mOrbitList.clear();
     mOrbitList.add(t);
-    // fill Schreier vector with some dummmy values
+    // fill Schreier vector with some dummy values
     mSchreierArray.truncate(0);
     // base point
     mSchreierArray.set(mBasePoint, -1);

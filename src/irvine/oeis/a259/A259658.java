@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259658 Let <code>f(x)</code> be the absolute value of the difference between x and its <code>base-2</code> reversal. Let <code>g(x)</code> be the number of times <code>f(x)</code> must be applied to x for the result to be <code>0. a(n)</code> is the smallest value of x for which <code>g(x)</code> is <code>n</code>.
+ * A259658 Let f(x) be the absolute value of the difference between x and its base-2 reversal. Let g(x) be the number of times f(x) must be applied to x for the result to be 0. a(n) is the smallest value of x for which g(x) is n.
  * @author Georg Fischer
  */
 public class A259658 extends GeneratingFunctionSequence {

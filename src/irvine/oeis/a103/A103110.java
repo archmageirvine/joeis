@@ -5,7 +5,7 @@ package irvine.oeis.a103;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A103110 Numbers n such that <code>(58*100^n - 157)/99</code> is prime.
+ * A103110 Numbers n such that (58*100^n - 157)/99 is prime.
  * @author Georg Fischer
  */
 public class A103110 extends PowerFactorPrimeSequence {

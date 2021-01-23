@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175693 <code>a(n) =</code> smallest positive number such <code>a(n)*n</code> is an anagram of <code>a(n)*4</code>.
+ * A175693 a(n) is the smallest positive number such that a(n)*n is an anagram of a(n)*4.
  * @author Georg Fischer
  */
 public class A175693 extends FiniteSequence {

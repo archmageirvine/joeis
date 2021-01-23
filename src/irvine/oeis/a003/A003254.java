@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005206;
 
 /**
- * A003254 The number m such that <code>A003233(m) = A005206(A003234(n))</code>.
+ * A003254 The number m such that A003233(m) = A005206(A003234(n)).
  * @author Sean A. Irvine
  */
 public class A003254 extends A003234 {

@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097137 Convolution of <code>3^n</code> and <code>floor(n/2)</code>.
+ * A097137 Convolution of 3^n and floor(n/2).
  * @author Sean A. Irvine
  */
 public class A097137 extends LinearRecurrence {

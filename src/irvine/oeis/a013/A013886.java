@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013886 <code>aa(n) = 18^(5*n + 1)</code>.
+ * A013886 aa(n) = 18^(5*n + 1).
  * @author Sean A. Irvine
  */
 public class A013886 implements Sequence {

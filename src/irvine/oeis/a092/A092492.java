@@ -5,7 +5,7 @@ package irvine.oeis.a092;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A092492 Arises in enumeration of <code>321-hexagon-avoiding</code> permutations.
+ * A092492 Arises in enumeration of 321-hexagon-avoiding permutations.
  * @author Georg Fischer
  */
 public class A092492 extends HolonomicRecurrence {

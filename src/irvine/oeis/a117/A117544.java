@@ -8,7 +8,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A117544 Least k such that <code>Phi(n,k)</code>, the n-th cyclotomic polynomial evaluated at k, is prime.
+ * A117544 Least k such that Phi(n,k), the n-th cyclotomic polynomial evaluated at k, is prime.
  * @author Sean A. Irvine
  */
 public class A117544 implements Sequence {

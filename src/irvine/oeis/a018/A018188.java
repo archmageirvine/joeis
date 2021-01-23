@@ -2,22 +2,21 @@ package irvine.oeis.a018;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.List;
-import java.util.zip.GZIPInputStream;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.FiniteSequence;
+import irvine.util.io.IOUtils;
 
 /**
- * A018188 The <code>$620</code> prime list.
+ * A018188 The $620 prime list.
  * @author Sean A. Irvine
  */
 public class A018188 extends FiniteSequence {
 
   static List<Z> suckInNumbers(final String res) {
-    try (final BufferedReader reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(A018188.class.getClassLoader().getResourceAsStream(res))))) {
+    try (final BufferedReader reader = new BufferedReader(IOUtils.reader(res))) {
       return ZUtils.suckInNumbers(reader);
     } catch (final IOException e) {
       throw new RuntimeException(e);

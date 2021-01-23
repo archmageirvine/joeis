@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A072856 Number of permutations satisfying <code>i-4&lt;=p(i)&lt;=i+4, i=1..n</code> (permutations of length n within distance <code>4)</code>.
+ * A072856 Number of permutations satisfying i-4&lt;=p(i)&lt;=i+4, i=1..n (permutations of length n within distance 4).
  * @author Georg Fischer
  */
 public class A072856 extends GeneratingFunctionSequence {

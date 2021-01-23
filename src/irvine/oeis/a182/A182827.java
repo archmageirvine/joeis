@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182827 E.g.f. <code>1/sqrt(1+2x+4x^2)</code>.
+ * A182827 E.g.f. 1/sqrt(1+2x+4x^2).
  * @author Georg Fischer
  */
 public class A182827 extends HolonomicRecurrence {

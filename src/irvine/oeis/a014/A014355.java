@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014355 Chance of getting a pair (2 to aces), 2 jacks, 2 queens, 2 kings, 2 aces, 2 pair, 3 of a kind, straight, flush, full house in 5-card poker is 1 in <code>a(n)</code>, according to M. Barron.
+ * A014355 Chance of getting a pair (2 to aces), 2 jacks, 2 queens, 2 kings, 2 aces, 2 pair, 3 of a kind, straight, flush, full house in 5-card poker is 1 in a(n), according to M. Barron.
  * @author Sean A. Irvine
  */
 public class A014355 extends FiniteSequence {

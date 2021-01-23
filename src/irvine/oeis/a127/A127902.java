@@ -5,7 +5,7 @@ package irvine.oeis.a127;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127902 Series reversion of <code>x/(1 + x + x^4)</code>.
+ * A127902 Series reversion of x/(1 + x + x^4).
  * @author Georg Fischer
  */
 public class A127902 extends HolonomicRecurrence {

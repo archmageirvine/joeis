@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097740 Chebyshev <code>U(n,x)</code> polynomial evaluated at <code>x=201</code>.
+ * A097740 Chebyshev U(n,x) polynomial evaluated at x=201.
  * @author Sean A. Irvine
  */
 public class A097740 extends LinearRecurrence {

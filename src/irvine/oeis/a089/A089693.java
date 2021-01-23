@@ -5,7 +5,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089693 Numbers n such that <code>phi(n) = 2^bigomega(n)</code>.
+ * A089693 Numbers n such that phi(n) = 2^bigomega(n).
  * @author Georg Fischer
  */
 public class A089693 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A171559 Powers of <code>2 (cf. A000079)</code> with 1 replaced by 3.
+ * A171559 Powers of 2 (cf. A000079) with 1 replaced by 3.
  * @author Georg Fischer
  */
 public class A171559 extends GeneratingFunctionSequence {

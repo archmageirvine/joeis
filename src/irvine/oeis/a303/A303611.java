@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A303611 <code>a(n) = (-1 - (-2)^(n-2)) mod 2^n</code>.
+ * A303611 a(n) = (-1 - (-2)^(n-2)) mod 2^n.
  * @author Georg Fischer
  */
 public class A303611 extends LinearRecurrence {

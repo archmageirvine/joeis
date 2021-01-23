@@ -6,7 +6,7 @@ package irvine.oeis.a309;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A309117 Number of perfect matchings on a triangular lattice of width 4 and length <code>n</code>.
+ * A309117 Number of perfect matchings on a triangular lattice of width 4 and length n.
  * @author Georg Fischer
  */
 public class A309117 extends GeneratingFunctionSequence {

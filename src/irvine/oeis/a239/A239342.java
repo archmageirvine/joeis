@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239342 Number of <code>1</code>'s in all compositions of n into odd parts.
+ * A239342 Number of 1's in all compositions of n into odd parts.
  * @author Georg Fischer
  */
 public class A239342 extends GeneratingFunctionSequence {

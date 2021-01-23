@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276061 Sum of the asymmetry degrees of all compositions of n into parts congruent to <code>1 mod 3</code>.
+ * A276061 Sum of the asymmetry degrees of all compositions of n into parts congruent to 1 mod 3.
  * @author Sean A. Irvine
  */
 public class A276061 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008847 Numbers n such that sum of divisors of <code>n^2</code> is a square.
+ * A008847 Numbers n such that sum of divisors of n^2 is a square.
  * @author Sean A. Irvine
  */
 public class A008847 implements Sequence {

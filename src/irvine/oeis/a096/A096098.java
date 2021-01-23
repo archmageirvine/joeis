@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FactorizationSequence;
 
 /**
- * A096098 <code>a(1) = 2, a(2) = 1</code>; for <code>n &gt;= 3, a(n) =</code> least number not included earlier that divides the concatenation of all previous terms.
+ * A096098 a(1) = 2, a(2) = 1; for n &gt;= 3, a(n) = least number not included earlier that divides the concatenation of all previous terms.
  * @author Sean A. Irvine
  */
 public class A096098 extends FactorizationSequence {
@@ -36,7 +36,7 @@ public class A096098 extends FactorizationSequence {
     }
     final String[] parts = factorization.split("\\.");
     final Z p0 = new Z(parts[0]);
-    if (!Z.ZERO.equals(n.mod(p0))) {
+    if (!n.mod(p0).isZero()) {
       throw new RuntimeException("Does not divide: " + p0);
     }
     n = n.divide(p0);
@@ -68,7 +68,7 @@ public class A096098 extends FactorizationSequence {
         if (!p.isProbablePrime()) {
           throw new RuntimeException("Not prime: " + pk + " cf. " + factorization);
         }
-        if (!Z.ZERO.equals(n.mod(p))) {
+        if (!n.mod(p).isZero()) {
           throw new RuntimeException(p + " not div " + n + " in line " + factorization);
         }
         n = n.divide(p);

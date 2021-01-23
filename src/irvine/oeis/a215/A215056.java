@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A215056 <code>a(n) =</code> smallest k such that k is both a sum of n nonzero squares and 50-n nonzero squares.
+ * A215056 a(n) = smallest k such that k is both a sum of n nonzero squares and 50-n nonzero squares.
  * @author Georg Fischer
  */
 public class A215056 extends FiniteSequence {

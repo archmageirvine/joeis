@@ -5,13 +5,13 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050858 Numbers n such that <code>213*2^n-1</code> is prime.
+ * A050858 Numbers n such that 213*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050858 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050858() {
-    super(1, 4, 213, 2, -1, 0);
+    super(1, 4, 213, 2, -1);
   }
 }

@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179178 The number of equal-sized equilateral triangles visible (when viewed from above) in successive Genealodrons formed from <code>2^n -1</code> same size equilateral triangles.
+ * A179178 The number of equal-sized equilateral triangles visible (when viewed from above) in successive Genealodrons formed from 2^n -1 same size equilateral triangles.
  * @author Georg Fischer
  */
 public class A179178 extends GeneratingFunctionSequence {

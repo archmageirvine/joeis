@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import java.math.BigDecimal;
 
 /**
- * A000249 Nearest integer to modified Bessel function <code>K_n(5)</code>.
+ * A000249 Nearest integer to modified Bessel function K_n(5).
  * @author Sean A. Irvine
  */
 public class A000249 extends A000155 {

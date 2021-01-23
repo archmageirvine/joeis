@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022012 Initial members of prime octuplets <code>(p, p+2, p+6, p+12, p+14, p+20, p+24, p+26)</code>.
+ * A022012 Initial members of prime octuplets (p, p+2, p+6, p+12, p+14, p+20, p+24, p+26).
  * @author Sean A. Irvine
  */
 public class A022012 extends A022004 {

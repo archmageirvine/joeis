@@ -5,7 +5,7 @@ package irvine.oeis.a225;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A225729 Numbers n such that <code>n &lt; d(n)^(21/10)</code>, where <code>d(n)</code> is the number of divisors of <code>n</code>.
+ * A225729 Numbers n such that n &lt; d(n)^(21/10), where d(n) is the number of divisors of n.
  * @author Georg Fischer
  */
 public class A225729 extends FiniteSequence {

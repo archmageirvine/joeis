@@ -5,12 +5,12 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011228 Decimal expansion of <code>19th</code> root of 6.
+ * A011228 Decimal expansion of 19th root of 6.
  * @author Sean A. Irvine
  */
 public class A011228 extends DecimalExpansionSequence {
 
-  private static final CR N = ComputableReals.SINGLETON.pow(CR.valueOf(6), CR.valueOf(19).inverse());
+  private static final CR N = ComputableReals.SINGLETON.pow(CR.SIX, CR.valueOf(19).inverse());
 
   @Override
   protected CR getCR() {

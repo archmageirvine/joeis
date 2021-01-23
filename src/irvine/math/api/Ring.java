@@ -119,4 +119,11 @@ public interface Ring<E> extends Group<E> {
    */
   Operation<E> multiplicativeOperation();
 
+  /**
+   * Return the conjugate of an element.
+   * @param element element to conjugate
+   * @return the conjugate
+   */
+  E conjugate(E element);
+
 }

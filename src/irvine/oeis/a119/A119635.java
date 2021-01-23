@@ -4,7 +4,7 @@ package irvine.oeis.a119;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A119635 <code>a(n) = n*(1 + n^2)*2^n</code>.
+ * A119635 a(n) = n*(1 + n^2)*2^n.
  * @author Georg Fischer
  */
 public class A119635 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008714 17 in base <code>17-n</code>.
+ * A008714 17 in base 17-n.
  * @author Sean A. Irvine
  */
 public class A008714 extends FiniteSequence {

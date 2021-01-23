@@ -6,7 +6,7 @@ package irvine.oeis.a269;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A269442 <code>a(n) = n*(n^8 + 1)*(n^4 + 1)*(n^2 + 1)*(n + 1) + 1</code>.
+ * A269442 a(n) = n*(n^8 + 1)*(n^4 + 1)*(n^2 + 1)*(n + 1) + 1.
  * @author Georg Fischer
  */
 public class A269442 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A303814 Generalized <code>24-gonal</code> (or icositetragonal) numbers: <code>m*(11*m - 10)</code> with m <code>= 0, +1, -1, +2, -2, +3, -3, ..</code>.
+ * A303814 Generalized 24-gonal (or icositetragonal) numbers: m*(11*m - 10) with m = 0, +1, -1, +2, -2, +3, -3, ...
  * @author Georg Fischer
  */
 public class A303814 extends LinearRecurrence {

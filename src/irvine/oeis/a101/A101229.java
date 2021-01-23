@@ -5,7 +5,7 @@ package irvine.oeis.a101;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A101229 Perfect inverse <code>"3x+1</code> conjecture" (See comments for rules).
+ * A101229 Perfect inverse "3x+1 conjecture" (See comments for rules).
  * @author Georg Fischer
  */
 public class A101229 extends HolonomicRecurrence {

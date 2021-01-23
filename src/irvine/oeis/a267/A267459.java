@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267459 Total number of ON (black) cells after n iterations of the "Rule <code>133"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A267459 Total number of ON (black) cells after n iterations of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267459 extends GeneratingFunctionSequence {

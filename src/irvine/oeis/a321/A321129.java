@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321129 Numerator of <code>Sum_{k=1..n} (k*sin((Pi*k)/3))/sqrt(3)</code>.
+ * A321129 Numerator of Sum_{k=1..n} (k*sin((Pi*k)/3))/sqrt(3).
  * @author Georg Fischer
  */
 public class A321129 extends GeneratingFunctionSequence {

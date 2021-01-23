@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292344 The first Zagreb index of the Aztec diamond <code>AZ(n)</code> (see the Ramanes et al. reference, Theorem <code>2.1)</code>.
+ * A292344 The first Zagreb index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem 2.1).
  * @author Sean A. Irvine
  */
 public class A292344 extends LinearRecurrence {

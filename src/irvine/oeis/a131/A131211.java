@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131211 <code>a(n)=(n^5-n-30)/30</code>.
+ * A131211 a(n)=(n^5-n-30)/30.
  * @author Georg Fischer
  */
 public class A131211 extends GeneratingFunctionSequence {

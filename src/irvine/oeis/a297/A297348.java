@@ -5,13 +5,13 @@ package irvine.oeis.a297;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A297348 Numbers k such that <code>12*13^k - 1</code> is prime.
+ * A297348 Numbers k such that 12*13^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A297348 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A297348() {
-    super(1, 0, 12, 13, -1, 0);
+    super(1, 0, 12, 13, -1);
   }
 }

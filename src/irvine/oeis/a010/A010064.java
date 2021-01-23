@@ -8,7 +8,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A010064 Base 4 self or Colombian numbers (not of form <code>n +</code> sum of base 4 digits of <code>n)</code>.
+ * A010064 Base 4 self or Colombian numbers (not of form k + sum of base 4 digits of k).
  * @author Sean A. Irvine
  */
 public class A010064 extends ComplementSequence {
@@ -22,7 +22,7 @@ public class A010064 extends ComplementSequence {
       @Override
       public Z next() {
         while (mSet.isEmpty() || mSet.first().compareTo(mN) >= 0) {
-          mSet.add(mN.add(ZUtils.digitSum(mN, Z.FOUR)));
+          mSet.add(mN.add(ZUtils.digitSum(mN, 4)));
           mN = mN.add(1);
         }
         return mSet.pollFirst();

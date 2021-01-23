@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A130059 Primes p such that <code>k=p*23^2</code> divides <code>3^(k-1) - 2^(k-1)</code>; or primes in <code>A130058</code>.
+ * A130059 Primes p such that k=p*23^2 divides 3^(k-1) - 2^(k-1); or primes in A130058.
  * @author Georg Fischer
  */
 public class A130059 extends FiniteSequence {

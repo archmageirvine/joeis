@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089903 Sum of digits of numbers between 0 and <code>(1/9)*(10^n-1)</code>.
+ * A089903 Sum of digits of numbers between 0 and (1/9)*(10^n-1).
  * @author Sean A. Irvine
  */
 public class A089903 extends LinearRecurrence {

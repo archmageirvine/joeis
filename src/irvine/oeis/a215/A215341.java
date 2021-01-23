@@ -6,7 +6,7 @@ package irvine.oeis.a215;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A215341 Expansion of <code>series_reversion( x/(1+x^4*sum(k&gt;=0, x^k)) ) / x</code>.
+ * A215341 Expansion of series_reversion( x/(1+x^4*sum(k&gt;=0, x^k)) ) / x.
  * @author Georg Fischer
  */
 public class A215341 extends HolonomicRecurrence {

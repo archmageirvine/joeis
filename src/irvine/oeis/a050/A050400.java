@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050400 Number of independent sets of vertices in <code>P_3 X C_n (n &gt; 2)</code>.
+ * A050400 Number of independent sets of vertices in P_3 X C_n (n &gt; 2).
  * @author Sean A. Irvine
  */
 public class A050400 extends LinearRecurrence {

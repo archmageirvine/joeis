@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011262 In the prime factorization of n, increment odd powers and decrement even powers (multiplicative and <code>self-inverse)</code>.
+ * A011262 In the prime factorization of n, increment odd powers and decrement even powers (multiplicative and self-inverse).
  * @author Sean A. Irvine
  */
 public class A011262 implements Sequence {

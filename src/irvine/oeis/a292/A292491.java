@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A292491 p-INVERT of the odd positive integers, where <code>p(S) = 1 + S - 2 S^2</code>.
+ * A292491 p-INVERT of the odd positive integers, where p(S) = 1 + S - 2 S^2.
  * @author Georg Fischer
  */
 public class A292491 extends GeneratingFunctionSequence {

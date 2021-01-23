@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005316;
 import irvine.util.Pair;
 
 /**
- * A006657 Closed meanders with 2 components and <code>2n</code> bridges.
+ * A006657 Closed meanders with 2 components and 2n bridges.
  * @author Andrew Howroyd
  * @author Sean A. Irvine (Java port)
  */
@@ -38,6 +38,7 @@ public class A006657 extends A005316 {
     /**
      * Initial states for semi-meander systems.
      * @param windingPredicate winding predicate
+     * @return initial states
      */
     public Iterable<Pair<Integer, Z>> semiMeanderInitialStates(final Func<Integer, Boolean> windingPredicate) {
       final ArrayList<Pair<Integer, Z>> res = new ArrayList<>();

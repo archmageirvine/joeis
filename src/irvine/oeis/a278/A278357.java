@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A278357 Number of <code>n X 2 0..1</code> arrays with rows and columns in lexicographic nondecreasing order but with exactly one mistake.
+ * A278357 Number of n X 2 0..1 arrays with rows and columns in lexicographic nondecreasing order but with exactly one mistake.
  * @author Georg Fischer
  */
 public class A278357 extends GeneratingFunctionSequence {

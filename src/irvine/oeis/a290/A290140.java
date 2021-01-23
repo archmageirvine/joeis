@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A290140 The number of maximal subsemigroups of the Jones monoid on the set <code>[1..n]</code>.
+ * A290140 The number of maximal subsemigroups of the Jones monoid on the set [1..n].
  * @author Georg Fischer
  */
 public class A290140 extends GeneratingFunctionSequence {

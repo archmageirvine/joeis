@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190567 Continued fraction expansion of <code>46*sqrt(46)</code>.
+ * A190567 Continued fraction expansion of 46*sqrt(46).
  * @author Georg Fischer
  */
 public class A190567 extends GeneratingFunctionSequence {

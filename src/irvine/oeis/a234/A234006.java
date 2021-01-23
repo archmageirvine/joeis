@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import jmason.poly.MirrorCounter;
 
 /**
- * A234006 Free polyominoes with <code>2n</code> squares, having reflectional symmetry on axis that coincides with edges.
+ * A234006 Free polyominoes with 2n squares, having reflectional symmetry on axis that coincides with edges.
  * @author jmason
  */
 public class A234006 implements Sequence {

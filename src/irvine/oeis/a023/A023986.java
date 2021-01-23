@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023986 Sum of exponents of primes in <code>C(4n,2n)/C(2n,n)</code>.
+ * A023986 Sum of exponents of primes in C(4n,2n)/C(2n,n).
  * @author Sean A. Irvine
  */
 public class A023986 extends A023847 {

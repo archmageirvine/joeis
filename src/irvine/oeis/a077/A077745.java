@@ -6,7 +6,7 @@ package irvine.oeis.a077;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A077745 Numerator of <code>integral_{x=1..2} (x^2-1)^n</code> dx.
+ * A077745 Numerator of integral_{x=1..2} (x^2-1)^n dx.
  * @author Georg Fischer
  */
 public class A077745 extends HolonomicRecurrence {

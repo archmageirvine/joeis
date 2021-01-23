@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321642 Number of <code>(7-n)-faces</code> of the <code>4_21</code> polytope.
+ * A321642 Number of (7-n)-faces of the 4_21 polytope.
  * @author Georg Fischer
  */
 public class A321642 extends FiniteSequence {

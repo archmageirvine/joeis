@@ -5,7 +5,7 @@ package irvine.oeis.a305;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A305753 A base 3/2 sorted Fibonacci sequence that starts with <code>a(0) = 0</code> and <code>a(1) = 1</code>. The terms are interpreted as numbers written in base 3/2. To get <code>a(n+2)</code>, add <code>a(n)</code> and <code>a(n+1)</code>, write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
+ * A305753 A base 3/2 sorted Fibonacci sequence that starts with a(0) = 0 and a(1) = 1. The terms are interpreted as numbers written in base 3/2. To get a(n+2), add a(n) and a(n+1), write the result in base 3/2 and sort the "digits" into increasing order, omitting all zeros.
  * @author Georg Fischer
  */
 public class A305753 extends HolonomicRecurrence {

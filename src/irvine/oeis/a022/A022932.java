@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022932 <code>a(n)</code> is the number of powers <code>Pi^m</code> between <code>e^n</code> and <code>e^(n+1)</code>.
+ * A022932 a(n) is the number of powers Pi^m between e^n and e^(n+1).
  * @author Sean A. Irvine
  */
 public class A022932 implements Sequence {

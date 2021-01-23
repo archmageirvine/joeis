@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130857 <code>a(n) = (n-1)*n*(n+1)*(n+2)*(2n+11)/120</code>.
+ * A130857 a(n) = (n-1)*n*(n+1)*(n+2)*(2n+11)/120.
  * @author Georg Fischer
  */
 public class A130857 extends GeneratingFunctionSequence {

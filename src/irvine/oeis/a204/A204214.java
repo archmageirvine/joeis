@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204214 Number of length 6 nonnegative integer arrays starting and ending with 0 with adjacent elements differing by no more than <code>n</code>.
+ * A204214 Number of length 6 nonnegative integer arrays starting and ending with 0 with adjacent elements differing by no more than n.
  * @author Georg Fischer
  */
 public class A204214 extends GeneratingFunctionSequence {

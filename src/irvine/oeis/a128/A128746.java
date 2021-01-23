@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128746 Height of the last peak summed over all skew Dyck paths of semilength <code>n</code>.
+ * A128746 Height of the last peak summed over all skew Dyck paths of semilength n.
  * @author Georg Fischer
  */
 public class A128746 extends HolonomicRecurrence {

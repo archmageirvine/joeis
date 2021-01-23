@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A236291 Number of length n binary words that contain an even number of <code>0</code>'s or exactly two <code>1</code>'s.
+ * A236291 Number of length n binary words that contain an even number of 0's or exactly two 1's.
  * @author Georg Fischer
  */
 public class A236291 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A057688 Trajectory of 5 under the <code>'5x+1'</code> map.
+ * A057688 Trajectory of 5 under the '5x+1' map.
  * @author Georg Fischer
  */
 public class A057688 extends HolonomicRecurrence {

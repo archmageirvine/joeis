@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181617 Molecular topological indices of the complete graph <code>K_n</code>.
+ * A181617 Molecular topological indices of the complete graph K_n.
  * @author Sean A. Irvine
  */
 public class A181617 extends LinearRecurrence {

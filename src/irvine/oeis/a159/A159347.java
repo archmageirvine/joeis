@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159347 Transform of the finite sequence <code>(1, 0, -1)</code> by the <code>T_{0,0}</code> transformation.
+ * A159347 Transform of the finite sequence (1, 0, -1) by the T_{0,0} transformation.
  * @author Georg Fischer
  */
 public class A159347 extends LinearRecurrence {

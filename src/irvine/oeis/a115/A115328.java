@@ -5,7 +5,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115328 E.g.f: <code>exp(x/(1-3*x))/sqrt(1-9*x^2)</code>.
+ * A115328 E.g.f: exp(x/(1-3*x))/sqrt(1-9*x^2).
  * @author Georg Fischer
  */
 public class A115328 extends HolonomicRecurrence {

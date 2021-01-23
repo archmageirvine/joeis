@@ -5,7 +5,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123169 Continued fraction for <code>sqrt(1/2)*(exp(sqrt(1/2))-1)/(exp(sqrt(1/2))+1)</code>.
+ * A123169 Continued fraction for sqrt(1/2)*(exp(sqrt(1/2))-1)/(exp(sqrt(1/2))+1).
  * @author Georg Fischer
  */
 public class A123169 extends HolonomicRecurrence {

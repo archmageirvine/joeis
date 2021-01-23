@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008455;
 
 /**
- * A024112 <code>a(n) = 9^n - n^11</code>.
+ * A024112 a(n) = 9^n - n^11.
  * @author Sean A. Irvine
  */
 public class A024112 extends A008455 {

@@ -4,7 +4,7 @@ package irvine.oeis.a025;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A025599 Number of n-move knight paths on <code>8 X 8</code> board from given corner to any square.
+ * A025599 Number of n-move knight paths on 8 X 8 board from given corner to any square.
  * @author Georg Fischer
  */
 public class A025599 extends GeneratingFunctionSequence {

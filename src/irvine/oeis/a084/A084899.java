@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084899 Binomial transform of heptagonal numbers <code>A000566</code>.
+ * A084899 Binomial transform of heptagonal numbers A000566.
  * @author Sean A. Irvine
  */
 public class A084899 extends LinearRecurrence {

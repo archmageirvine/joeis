@@ -6,7 +6,7 @@ package irvine.oeis.a193;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A193619 G.f. <code>A(x)</code> satisfies: <code>A(x)^-2 + A(-x)^-2 = 2</code> and <code>A(x)^2 - A(-x)^2 = -8*x</code>.
+ * A193619 G.f. A(x) satisfies: A(x)^-2 + A(-x)^-2 = 2 and A(x)^2 - A(-x)^2 = -8*x.
  * @author Georg Fischer
  */
 public class A193619 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294709 Number of permutations of <code>[n]</code> avoiding <code>{2143, 3412, 1234}</code>.
+ * A294709 Number of permutations of [n] avoiding {2143, 3412, 1234}.
  * @author Georg Fischer
  */
 public class A294709 extends GeneratingFunctionSequence {

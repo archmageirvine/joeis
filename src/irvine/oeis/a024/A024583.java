@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024583 <code>a(n) = [ n/{n*pi} ], {x} := x - [ x ]</code>.
+ * A024583 a(n) = [ n/{n*pi} ], {x} := x - [ x ].
  * @author Sean A. Irvine
  */
 public class A024583 implements Sequence {

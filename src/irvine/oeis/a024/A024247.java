@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a009.A009627;
 
 /**
- * A024247 Expansion of e.g.f. <code>sinh(x)*sin(tan(x))/2</code>, even powers only.
+ * A024247 Expansion of e.g.f. sinh(x)*sin(tan(x))/2, even powers only.
  * @author Sean A. Irvine
  */
 public class A024247 extends A009627 {

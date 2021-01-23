@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A104204 If <code>n==0 (mod 3)</code> then <code>a(n)=a(n-1)</code>; if <code>n==1 (mod 3)</code> then <code>a(n)=a(n-2)+a(n-3)</code>; if <code>n==2 (mod 3)</code> then <code>a(n)=a(n-3)+a(n-4)+a(n-5)</code>.
+ * A104204 If n==0 (mod 3) then a(n)=a(n-1); if n==1 (mod 3) then a(n)=a(n-2)+a(n-3); if n==2 (mod 3) then a(n)=a(n-3)+a(n-4)+a(n-5).
  * @author Georg Fischer
  */
 public class A104204 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154024 <code>a(n+2) = 49*a(n+1) - a(n), a(1)=0, a(2)=7</code>.
+ * A154024 a(n+2) = 49*a(n+1) - a(n), a(1)=0, a(2)=7.
  * @author Sean A. Irvine
  */
 public class A154024 extends LinearRecurrence {

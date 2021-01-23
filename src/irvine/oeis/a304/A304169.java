@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304169 <code>a(n) = 16*3^n + 2^(n+1) - 26 (n&gt;=1)</code>.
+ * A304169 a(n) = 16*3^n + 2^(n+1) - 26 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304169 extends GeneratingFunctionSequence {

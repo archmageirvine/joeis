@@ -6,7 +6,7 @@ package irvine.oeis.a289;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A289950 Number of permutations of <code>[n]</code> having exactly two nontrivial cycles.
+ * A289950 Number of permutations of [n] having exactly two nontrivial cycles.
  * @author Georg Fischer
  */
 public class A289950 extends HolonomicRecurrence {

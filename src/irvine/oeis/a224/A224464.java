@@ -6,7 +6,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224464 The hyper-Wiener index of the tetrathiafulvalene dendrimer defined pictorially as <code>D[n]</code> in the Shabani reference.
+ * A224464 The hyper-Wiener index of the tetrathiafulvalene dendrimer defined pictorially as D[n] in the Shabani reference.
  * @author Georg Fischer
  */
 public class A224464 extends GeneratingFunctionSequence {

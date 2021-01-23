@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A081054 Crossing matchings: linear chord diagrams with <code>2n</code> nodes and n arcs in which each arc crosses another arc.
+ * A081054 Crossing matchings: linear chord diagrams with 2n nodes and n arcs in which each arc crosses another arc.
  * @author Sean A. Irvine
  */
 public class A081054 implements Sequence {

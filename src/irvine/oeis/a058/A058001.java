@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A058001 Number of <code>3 X 3</code> matrices with entries <code>mod</code> n, up to row and column permutation.
+ * A058001 Number of 3 X 3 matrices with entries mod n, up to row and column permutation.
  * @author Sean A. Irvine
  */
 public class A058001 extends LinearRecurrence {

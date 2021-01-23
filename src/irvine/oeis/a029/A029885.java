@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001285;
 
 /**
- * A029885 Boustrophedon transform of 1 followed by Thue-Morse sequence <code>A001285</code>.
+ * A029885 Boustrophedon transform of 1 followed by Thue-Morse sequence A001285.
  * @author Sean A. Irvine
  */
 public class A029885 extends BoustrophedonTransformSequence {

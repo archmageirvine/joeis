@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241606 A linear divisibility sequence of the fourth order related to <code>A003779</code>.
+ * A241606 A linear divisibility sequence of the fourth order related to A003779.
  * @author Sean A. Irvine
  */
 public class A241606 extends LinearRecurrence {

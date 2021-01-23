@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086601 Triangular numbers <code>+ 1</code> squared.
+ * A086601 Triangular numbers + 1 squared.
  * @author Sean A. Irvine
  */
 public class A086601 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138179 Wiener index of the prism graph <code>Y_n</code> on <code>2n</code> nodes.
+ * A138179 Wiener index of the prism graph Y_n on 2n nodes.
  * @author Sean A. Irvine
  */
 public class A138179 extends LinearRecurrence {

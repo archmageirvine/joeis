@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A264852 <code>a(n) = n*(n + 1)*(n + 2)*(9*n - 7)/12</code>.
+ * A264852 a(n) = n*(n + 1)*(n + 2)*(9*n - 7)/12.
  * @author Sean A. Irvine
  */
 public class A264852 extends LinearRecurrence {

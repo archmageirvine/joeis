@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
 /**
- * A031400 Period of continued fraction for <code>sqrt(k)</code> equal for all <code>a(n) &lt;= k &lt; a(n)+n</code>.
+ * A031400 Period of continued fraction for sqrt(k) equal for all a(n) &lt;= k &lt; a(n)+n.
  * @author Sean A. Irvine
  */
 public class A031400 extends A003285 {

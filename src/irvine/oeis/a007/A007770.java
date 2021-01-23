@@ -13,6 +13,7 @@ public class A007770 implements Sequence {
 
   private long mN = 0;
   private final long[] mCache = new long[1000000]; // Remembers the result for small values
+  private final HashSet<Long> mSeen = new HashSet<>();
 
   private long squareDigitSum(final long n) {
     if (n < mCache.length) {
@@ -34,20 +35,24 @@ public class A007770 implements Sequence {
     return s;
   }
 
+  protected boolean isHappy(long n) {
+    mSeen.clear();
+    while (true) {
+      if (n == 1) {
+        return true;
+      }
+      if (!mSeen.add(n)) {
+        return false; // cycles
+      }
+      n = squareDigitSum(n);
+    }
+  }
+
   @Override
   public Z next() {
-    final HashSet<Long> seen = new HashSet<>();
     while (true) {
-      long n = ++mN;
-      seen.clear();
-      while (true) {
-        if (n == 1) {
-          return Z.valueOf(mN);
-        }
-        if (!seen.add(n)) {
-          break; // cycles
-        }
-        n = squareDigitSum(n);
+      if (isHappy(++mN)) {
+        return Z.valueOf(mN);
       }
     }
   }

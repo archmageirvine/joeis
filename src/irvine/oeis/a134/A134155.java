@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134155 <code>a(n) = 1 + 21 n + 168 n^2 + 588 n^3 + 1029 n^4</code>.
+ * A134155 a(n) = 1 + 21 n + 168 n^2 + 588 n^3 + 1029 n^4.
  * @author Georg Fischer
  */
 public class A134155 extends GeneratingFunctionSequence {

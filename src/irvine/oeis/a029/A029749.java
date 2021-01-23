@@ -5,7 +5,7 @@ package irvine.oeis.a029;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A029749 <code>2^n</code> times <code>1, 5</code> or 7.
+ * A029749 2^n times 1, 5 or 7.
  * @author Georg Fischer
  */
 public class A029749 extends HolonomicRecurrence {

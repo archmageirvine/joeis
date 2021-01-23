@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A029686 n-th digit after decimal point of 6th root of <code>n</code>.
+ * A029686 n-th digit after decimal point of 6th root of n.
  * @author Sean A. Irvine
  */
 public class A029686 implements Sequence {

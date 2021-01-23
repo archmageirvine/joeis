@@ -6,7 +6,7 @@ package irvine.oeis.a056;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A056199 <code>a(n) = n * a(n-1) - Sum_{k=1..n-2} a(k)</code> with <code>a(1) = 0</code> and <code>a(2) = 1</code>.
+ * A056199 a(n) = n * a(n-1) - Sum_{k=1..n-2} a(k) with a(1) = 0 and a(2) = 1.
  * @author Georg Fischer
  */
 public class A056199 extends HolonomicRecurrence {

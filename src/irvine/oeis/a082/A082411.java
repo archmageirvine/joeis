@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082411 Second-order linear recurrence sequence with <code>a(n) = a(n-1) + a(n-2)</code>.
+ * A082411 Second-order linear recurrence sequence with a(n) = a(n-1) + a(n-2).
  * @author Sean A. Irvine
  */
 public class A082411 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a176;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A176145 <code>a(n) = n*(n-3)*(n^2-7*n+14)/8</code>.
+ * A176145 a(n) = n*(n-3)*(n^2-7*n+14)/8.
  * @author Georg Fischer
  */
 public class A176145 extends GeneratingFunctionSequence {

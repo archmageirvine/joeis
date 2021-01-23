@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a068.A068465;
 
 /**
- * A014522 Nearest integer to <code>Gamma(n+3/4)</code>.
+ * A014522 Nearest integer to Gamma(n+3/4).
  * @author Sean A. Irvine
  */
 public class A014522 implements Sequence {

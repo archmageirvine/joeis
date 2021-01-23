@@ -6,7 +6,7 @@ package irvine.oeis.a294;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A294763 Permutations of <code>[n]</code> avoiding <code>{4231, 1324, 1234}</code>.
+ * A294763 Permutations of [n] avoiding {4231, 1324, 1234}.
  * @author Georg Fischer
  */
 public class A294763 extends HolonomicRecurrence {

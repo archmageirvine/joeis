@@ -4,7 +4,7 @@ package irvine.oeis.a269;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A269782 Number of active <code>(ON,black)</code> cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule <code>65"</code>, based on the 5-celled von Neumann neighborhood.
+ * A269782 Number of active (ON,black) cells in n-th stage of growth of two-dimensional cellular automaton defined by "Rule 65", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A269782 extends GeneratingFunctionSequence {

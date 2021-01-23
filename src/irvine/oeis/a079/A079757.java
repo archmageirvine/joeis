@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A079757 Periodic sequence <code>1 0 -2 3 -2 0,..</code>.
+ * A079757 Periodic sequence 1 0 -2 3 -2 0,...
  * @author Georg Fischer
  */
 public class A079757 extends GeneratingFunctionSequence {

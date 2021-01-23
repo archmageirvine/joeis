@@ -6,7 +6,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134552 G.f.: <code>1/(x^36*p(1/x))</code>, where <code>p(x)=(-1 - x^5 + x^6)^4*(-1 - 2*x^5 + x^6)*(-21 - 46 x^5 + x^6)</code>.
+ * A134552 G.f.: 1/(x^36*p(1/x)), where p(x)=(-1 - x^5 + x^6)^4*(-1 - 2*x^5 + x^6)*(-21 - 46 x^5 + x^6).
  * @author Georg Fischer
  */
 public class A134552 extends GeneratingFunctionSequence {

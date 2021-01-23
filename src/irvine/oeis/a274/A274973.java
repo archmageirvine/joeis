@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274973 Centered cubohemioctahedral numbers: <code>a(n) = 2*n^3+9*n^2+n+1</code>.
+ * A274973 Centered cubohemioctahedral numbers: a(n) = 2*n^3+9*n^2+n+1.
  * @author Sean A. Irvine
  */
 public class A274973 extends LinearRecurrence {

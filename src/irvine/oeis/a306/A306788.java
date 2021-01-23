@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306788 Numbers n such that all digits in n are different and for each digit d it is true that <code>n = d (mod</code> sum of <code>digits(n) - d)</code>.
+ * A306788 Numbers n such that all digits in n are different and for each digit d it is true that n = d (mod sum of digits(n) - d).
  * @author Georg Fischer
  */
 public class A306788 extends FiniteSequence {

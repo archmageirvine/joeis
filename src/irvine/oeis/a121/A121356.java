@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.math.z.Z;
 
 /**
- * A121356 Number of transitive <code>PSL_2(ZZ)</code> actions on a finite dotted and labeled set of size <code>n</code>.
+ * A121356 Number of transitive PSL_2(ZZ) actions on a finite dotted and labeled set of size n.
  * @author Georg Fischer
  */
 public class A121356 extends A121355 {

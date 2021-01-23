@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152053 <code>a(n) = A144433(3n+1) + A144433(3n+2) + A144433(3n+3)</code>.
+ * A152053 a(n) = A144433(3n+1) + A144433(3n+2) + A144433(3n+3).
  * @author Georg Fischer
  */
 public class A152053 extends GeneratingFunctionSequence {

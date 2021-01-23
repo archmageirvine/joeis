@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A078476 Time taken to get n people from one side of a bridge to the other where <code>(a)</code> the only flashlight must be carried when crossing; <code>(b)</code> only one or two people may cross at the same time; <code>(c)</code> a pair crosses at the speed of the slowest member; and <code>(d)</code> the k-th person's speed requires k seconds to cross the bridge.
+ * A078476 Time taken to get n people from one side of a bridge to the other where (a) the only flashlight must be carried when crossing; (b) only one or two people may cross at the same time; (c) a pair crosses at the speed of the slowest member; and (d) the k-th person's speed requires k seconds to cross the bridge.
  * @author Georg Fischer
  */
 public class A078476 extends GeneratingFunctionSequence {

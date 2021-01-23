@@ -6,7 +6,7 @@ package irvine.oeis.a233;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A233347 G.f. satisfies: <code>1-x = Sum_{n&gt;=0} (-x)^n*A(x)^(n mod 3)</code>.
+ * A233347 G.f. satisfies: 1-x = Sum_{n&gt;=0} (-x)^n*A(x)^(n mod 3).
  * @author Georg Fischer
  */
 public class A233347 extends HolonomicRecurrence {

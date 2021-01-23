@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A113497 Ascending descending base exponent transform of sequence <code>A000034(n) = 1 + n mod 2</code>.
+ * A113497 Ascending descending base exponent transform of sequence A000034(n) = 1 + n mod 2.
  * @author Sean A. Irvine
  */
 public class A113497 extends LinearRecurrence {

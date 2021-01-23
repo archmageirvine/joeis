@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A299791 2-provable primes: Primes p expressible as <code>x+y</code>, where the prime factors of x and y are precisely the primes less than <code>sqrt(p)</code>.
+ * A299791 2-provable primes: Primes p expressible as x+y, where the prime factors of x and y are precisely the primes less than sqrt(p).
  * @author Georg Fischer
  */
 public class A299791 extends FiniteSequence {

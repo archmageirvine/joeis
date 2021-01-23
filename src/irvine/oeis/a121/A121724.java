@@ -6,7 +6,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121724 Generalized central binomial coefficients for <code>k=2</code>.
+ * A121724 Generalized central binomial coefficients for k=2.
  * @author Georg Fischer
  */
 public class A121724 extends HolonomicRecurrence {

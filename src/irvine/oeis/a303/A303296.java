@@ -5,7 +5,7 @@ package irvine.oeis.a303;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A303296 Digital roots of fourth powers <code>A000583</code>.
+ * A303296 Digital roots of fourth powers A000583.
  * @author Georg Fischer
  */
 public class A303296 extends HolonomicRecurrence {

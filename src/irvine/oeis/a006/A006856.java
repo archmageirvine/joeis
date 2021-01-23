@@ -19,7 +19,7 @@ public class A006856 implements Sequence, GraphProcessor {
   private int mN = 0;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     // If we see a single graph then we have found the answer.
     // We need to abort the computation, so do it this ugly way.
     throw new RuntimeException("found");

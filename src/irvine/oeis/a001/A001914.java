@@ -23,7 +23,7 @@ public class A001914 implements Sequence {
     Z r = Z.ONE;
     while (q.compareTo(lim) < 0) {
       r = r.multiply(Z.TEN).add(1).mod(p);
-      if (Z.ZERO.equals(r)) {
+      if (r.isZero()) {
         return false;
       }
       q = q.add(1);

@@ -5,7 +5,7 @@ package irvine.oeis.a189;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A189274 Number of <code>nX3</code> array permutations with each element not moved or moved diagonally or antidiagonally by one.
+ * A189274 Number of nX3 array permutations with each element not moved or moved diagonally or antidiagonally by one.
  * @author Georg Fischer
  */
 public class A189274 extends HolonomicRecurrence {

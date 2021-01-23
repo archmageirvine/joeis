@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054563 <code>a(n) = n*(n^2 - 1)*(n + 2)*(n^2 + 4*n + 6)/72</code>.
+ * A054563 a(n) = n*(n^2 - 1)*(n + 2)*(n^2 + 4*n + 6)/72.
  * @author Sean A. Irvine
  */
 public class A054563 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A029720 Theta series of 8-dimensional strongly 6-modular lattice <code>O(6)</code> with minimal norm 3.
+ * A029720 Theta series of 8-dimensional strongly 6-modular lattice O(6) with minimal norm 3.
  * @author Sean A. Irvine
  */
 public class A029720 extends GramMatrixThetaSeries {

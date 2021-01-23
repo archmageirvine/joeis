@@ -4,7 +4,7 @@ package irvine.oeis.a156;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A156701 <code>a(n) = 4*n^4 + 17*n^2 + 4</code>.
+ * A156701 a(n) = 4*n^4 + 17*n^2 + 4.
  * @author Georg Fischer
  */
 public class A156701 extends GeneratingFunctionSequence {

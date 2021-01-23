@@ -25,7 +25,7 @@ public class MirrorCounter extends Counter {
     if (c + 2 <= max) {
       // no guarantee of uniqueness
       for (final Polyomino newP : p.listMirrorSons()) {
-        if (!mAccum.mUt.isIn(newP.mUniq)) {
+        if (!mAccum.mUt.contains(newP.mUniq)) {
           count(c + 2, max, newP);
         }
       }
@@ -35,7 +35,7 @@ public class MirrorCounter extends Counter {
         final Polyomino turned = new Polyomino(cs);
         // no guarantee of uniqueness
         for (final Polyomino newP : turned.listMirrorSons()) {
-          if (!mAccum.mUt.isIn(newP.mUniq)) {
+          if (!mAccum.mUt.contains(newP.mUniq)) {
             count(c + 2, max, newP);
           }
         }

@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A329292 Least number m <code>&gt; 0</code> such that <code>A101337(m)/m =</code> n, or 0 if no such m exists.
+ * A329292 Least number m &gt; 0 such that A101337(m)/m = n, or 0 if no such m exists.
  * @author Georg Fischer
  */
 public class A329292 extends FiniteSequence {

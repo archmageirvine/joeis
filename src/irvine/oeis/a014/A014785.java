@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014785 <code>a(n) = Sum_{0&lt;=k&lt;=n} ceiling(k^2/n)</code>.
+ * A014785 a(n) = Sum_{0&lt;=k&lt;=n} ceiling(k^2/n).
  * @author Sean A. Irvine
  */
 public class A014785 implements Sequence {

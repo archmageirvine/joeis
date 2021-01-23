@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085583 Number of <code>(3412,1234)-avoiding</code> involutions in <code>S_n</code>.
+ * A085583 Number of (3412,1234)-avoiding involutions in S_n.
  * @author Sean A. Irvine
  */
 public class A085583 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297349 Number of edge covers in the <code>2 X n</code> king graph.
+ * A297349 Number of edge covers in the 2 X n king graph.
  * @author Georg Fischer
  */
 public class A297349 extends LinearRecurrence {

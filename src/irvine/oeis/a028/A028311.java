@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028311 Odd numbers n such that <code>{1..n-1}</code> can be partitioned into disjoint sets I, J with <code>2I = -J (mod n)</code> such that I, J are unions of cyclotomic cosets <code>mod n</code>.
+ * A028311 Odd numbers n such that {1..n-1} can be partitioned into disjoint sets I, J with 2I = -J (mod n) such that I, J are unions of cyclotomic cosets mod n.
  * @author Sean A. Irvine
  */
 public class A028311 implements Sequence {

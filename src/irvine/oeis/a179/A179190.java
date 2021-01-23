@@ -6,7 +6,7 @@ package irvine.oeis.a179;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A179190 Coefficient <code>[x^n]</code> of the Maclaurin series for <code>2 - sqrt(1 - 4*x - 4*x^2)</code>.
+ * A179190 Coefficient [x^n] of the Maclaurin series for 2 - sqrt(1 - 4*x - 4*x^2).
  * @author Georg Fischer
  */
 public class A179190 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A292878 Number of ascending ballistic random walks of length n in <code>3-dimensions</code>.
+ * A292878 Number of ascending ballistic random walks of length n in 3-dimensions.
  * @author Georg Fischer
  */
 public class A292878 extends GeneratingFunctionSequence {

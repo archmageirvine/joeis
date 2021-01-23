@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A009006 Expansion of e.g.f.: <code>1 + tan(x)</code>.
+ * A009006 Expansion of e.g.f.: 1 + tan(x).
  * @author Sean A. Irvine
  */
 public class A009006 extends MemorySequence {

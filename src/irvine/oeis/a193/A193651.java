@@ -6,7 +6,7 @@ package irvine.oeis.a193;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A193651 <code>a(n) = ((2*n + 1)!! + 1)/2</code>.
+ * A193651 a(n) = ((2*n + 1)!! + 1)/2.
  * @author Georg Fischer
  */
 public class A193651 extends HolonomicRecurrence {

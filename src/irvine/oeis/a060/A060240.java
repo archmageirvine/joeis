@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A060240 Triangle <code>T(n,k)</code> in which n-th row gives degrees of irreducible representations of symmetric group <code>S_n</code>.
+ * A060240 Triangle T(n,k) in which n-th row gives degrees of irreducible representations of symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A060240 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 /**
  * Helper methods for number coercion during expression parsing.
- * @author Sean A. Irvine.
+ * @author Sean A. Irvine
  */
 final class Coercion {
 

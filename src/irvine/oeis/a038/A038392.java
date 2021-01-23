@@ -5,7 +5,7 @@ package irvine.oeis.a038;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A038392 <code>Mono-4-polyhexes</code>.
+ * A038392 Mono-4-polyhexes.
  * @author Georg Fischer
  */
 public class A038392 extends HolonomicRecurrence {

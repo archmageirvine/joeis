@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083446 <code>a(n) = ((10^n - 1) - 9^n)/9</code>.
+ * A083446 a(n) = ((10^n - 1) - 9^n)/9.
  * @author Sean A. Irvine
  */
 public class A083446 extends LinearRecurrence {

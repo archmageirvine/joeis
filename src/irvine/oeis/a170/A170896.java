@@ -20,6 +20,8 @@ public class A170896 implements Sequence {
 
   private Set<Pair<Integer, Integer>> mOn = null;
   protected Set<Pair<Integer, Integer>> mNewlyOn = new HashSet<>();
+  //private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  //private int mStep = -1;
 
   protected boolean accept(final Pair<Integer, Integer> pt) {
     return true;
@@ -50,10 +52,8 @@ public class A170896 implements Sequence {
             for (int j = 0; j < DELTA.length; ++j) {
               final int sx = nx + DELTA[j];
               final int sy = ny + DELTA[DELTA.length - 1 - j];
-              if (mOn.contains(new Pair<>(sx, sy))) {
-                if (++c > 1) {
-                  break;
-                }
+              if (mOn.contains(new Pair<>(sx, sy)) && ++c > 1) {
+                break;
               }
             }
             assert c > 0;
@@ -93,6 +93,27 @@ public class A170896 implements Sequence {
       }
       mOn.addAll(mNewlyOn);
     }
+//    if (mVerbose && ++mStep == 145) {
+//      System.out.println(mNewlyOn.size() + " " + mNewlyOn);
+//      try (final PrintStream out = new PrintStream(new FileOutputStream("A170896." + mStep + ".ppm"))) {
+//        final int dim = mStep * 2;
+//        out.println("P6 " + dim + " " + dim + " 1");
+//        for (int y = 0; y < dim; ++y) {
+//          for (int x = 0; x < dim; ++x) {
+//            final Pair<Integer, Integer> point = new Pair<>(x - mStep, y - mStep);
+//            if (mNewlyOn.contains(point)) {
+//              out.print("\0\0\1");
+//            } else if (mOn.contains(point)) {
+//              out.print("\0\0\0");
+//            } else {
+//              out.print("\1\1\1");
+//            }
+//          }
+//        }
+//      } catch (final IOException e) {
+//        throw new RuntimeException(e);
+//      }
+//    }
     return Z.valueOf(mOn.size());
   }
 }

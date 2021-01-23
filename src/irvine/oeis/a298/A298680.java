@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298680 Start with the triangle with 4 markings of the Shield tiling and recursively apply the substitution rule. <code>a(n)</code> is the number of triangles with 6 markings after n iterations.
+ * A298680 Start with the triangle with 4 markings of the Shield tiling and recursively apply the substitution rule. a(n) is the number of triangles with 6 markings after n iterations.
  * @author Georg Fischer
  */
 public class A298680 extends GeneratingFunctionSequence {

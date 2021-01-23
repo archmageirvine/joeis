@@ -5,7 +5,7 @@ package irvine.oeis.a225;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A225612 Partial sums of the binomial coefficients <code>C(4*n,n)</code>.
+ * A225612 Partial sums of the binomial coefficients C(4*n,n).
  * @author Georg Fischer
  */
 public class A225612 extends HolonomicRecurrence {

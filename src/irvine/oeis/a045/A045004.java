@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A045004 In base 3 the numbers of <code>0</code>'s and <code>2</code>'s are 3 and 0, respectively.
+ * A045004 In base 3 the numbers of 0's and 2's are 3 and 0, respectively.
  * @author Georg Fischer
  */
 public class A045004 extends RunsBaseSequence {

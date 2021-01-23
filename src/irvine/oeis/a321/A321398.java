@@ -6,7 +6,7 @@ package irvine.oeis.a321;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A321398 <code>a(n) = (-1)^(n+1)*n!* [x^n](log(x + 1)/2 + log(3*x + 1)/6)</code>.
+ * A321398 a(n) = (-1)^(n+1)*n!* [x^n](log(x + 1)/2 + log(3*x + 1)/6).
  * @author Georg Fischer
  */
 public class A321398 extends HolonomicRecurrence {

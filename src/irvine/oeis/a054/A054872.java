@@ -5,13 +5,13 @@ package irvine.oeis.a054;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A054872 Number of <code>(12345, 13245, 21345, 23145, 31245, 32145)-avoiding</code> permutations.
+ * A054872 Number of (12345, 13245, 21345, 23145, 31245, 32145)-avoiding permutations.
  * @author Georg Fischer
  */
 public class A054872 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A054872() {
-    super(1, "[[0],[-16,4],[20,-8],[-1,1]]", "[1,2,6]", 0);
+    super(0, "[[0],[-16,4],[20,-8],[-1,1]]", "[1,1,2]", 0);
   }
 }

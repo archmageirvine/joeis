@@ -5,7 +5,7 @@ package irvine.oeis.a053;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A053401 Number of seconds in the time units: second, minute, hour, day, week, month, year, century, millennium, <code>(a)eon</code>.
+ * A053401 Number of seconds in the time units: second, minute, hour, day, week, month, year, century, millennium, (a)eon.
  * @author Georg Fischer
  */
 public class A053401 extends FiniteSequence {

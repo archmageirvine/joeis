@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030091 Primes such that p and <code>p^2</code> have same set of digits.
+ * A030091 Primes such that p and p^2 have same set of digits.
  * @author Sean A. Irvine
  */
 public class A030091 extends A000040 {

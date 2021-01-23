@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A122948 First row sum of the <code>5 X 5</code> matrix <code>M^n</code>, where M <code>= {{0, -1, 0, 0, 0}, {-1, 1, -1, 0, 0}, {0, -1, 1, -1, 0}, {0, 0, -1, 1, -1}, {0, 0, 0, -1, 1}}, n&gt;=0</code>.
+ * A122948 First row sum of the 5 X 5 matrix M^n, where M = {{0, -1, 0, 0, 0}, {-1, 1, -1, 0, 0}, {0, -1, 1, -1, 0}, {0, 0, -1, 1, -1}, {0, 0, 0, -1, 1}}, n&gt;=0.
  * @author Georg Fischer
  */
 public class A122948 extends GeneratingFunctionSequence {

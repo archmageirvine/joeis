@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060584 Compare ultimate and penultimate digits of n base 3, i.e., 0 if <code>n mod 3 = floor(n/3) mod 3, 1</code> otherwise; also 0 if <code>(n mod 9)</code> is a multiple of <code>4, 1</code> otherwise.
+ * A060584 Compare ultimate and penultimate digits of n base 3, i.e., 0 if n mod 3 = floor(n/3) mod 3, 1 otherwise; also 0 if (n mod 9) is a multiple of 4, 1 otherwise.
  * @author Georg Fischer
  */
 public class A060584 extends GeneratingFunctionSequence {

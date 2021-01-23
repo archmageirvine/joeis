@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029848 <code>a(n) = 1 + C(2*n,n) + C(3*n,n)</code>.
+ * A029848 a(n) = 1 + C(2*n,n) + C(3*n,n).
  * @author Sean A. Irvine
  */
 public class A029848 implements Sequence {

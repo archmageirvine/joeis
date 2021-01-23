@@ -7,7 +7,7 @@ package irvine.oeis.a124;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A124037 Triangle read by rows: row n gives coefficients of increasing powers of x in characteristic polynomial of the matrix <code>(-1)^n*M_n</code>, where <code>M_n</code> is the tridiagonal matrix defined in the Comments line.
+ * A124037 Triangle read by rows: row n gives coefficients of increasing powers of x in characteristic polynomial of the matrix (-1)^n*M_n, where M_n is the tridiagonal matrix defined in the Comments line.
  * @author Georg Fischer
  */
 public class A124037 extends GeneratingFunctionTriangle {

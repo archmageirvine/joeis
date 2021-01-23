@@ -27,7 +27,7 @@ public class A013998 implements Sequence {
     while (true) {
       if (!mPrime.isPrime(++mN)) {
         final MatrixRing<Z> ring = new MatrixRing<>(3, new IntegersMod(mN));
-        if (Z.ZERO.equals(ring.trace(ring.pow(MATRIX, mN)))) {
+        if (ring.trace(ring.pow(MATRIX, mN)).isZero()) {
           return Z.valueOf(mN);
         }
       }

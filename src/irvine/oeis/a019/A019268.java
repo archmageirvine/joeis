@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001615;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A019268 Let Dedekind's <code>psi(m) =</code> product of <code>(p+1)p^(e-1)</code> for primes p, where <code>p^e</code> is a factor of m. Iterating <code>psi(m)</code> eventually results in a number of form <code>2^a*3^b. a(n)</code> is the smallest number that requires n steps to reach such a number.
+ * A019268 Let Dedekind's psi(m) = product of (p+1)p^(e-1) for primes p, where p^e is a factor of m. Iterating psi(m) eventually results in a number of form 2^a*3^b. a(n) is the smallest number that requires n steps to reach such a number.
  * @author Sean A. Irvine
  */
 public class A019268 implements Sequence {

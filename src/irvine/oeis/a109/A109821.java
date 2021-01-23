@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109821 Column 11 of array illustrated in <code>A089574</code> and related to <code>A034261</code>.
+ * A109821 Column 11 of array illustrated in A089574 and related to A034261.
  * @author Georg Fischer
  */
 public class A109821 extends LinearRecurrence {

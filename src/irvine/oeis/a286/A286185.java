@@ -6,7 +6,7 @@ package irvine.oeis.a286;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A286185 Number of connected induced (non-null) subgraphs of the M&#246;bius ladder graph with <code>2n</code> nodes.
+ * A286185 Number of connected induced (non-null) subgraphs of the M\u00f6bius ladder graph with 2n nodes.
  * @author Georg Fischer
  */
 public class A286185 extends HolonomicRecurrence {

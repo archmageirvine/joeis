@@ -5,7 +5,7 @@ package irvine.oeis.a256;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A256881 <code>a(n) = n!/ceiling(n/2)</code>.
+ * A256881 a(n) = n!/ceiling(n/2).
  * @author Georg Fischer
  */
 public class A256881 extends HolonomicRecurrence {

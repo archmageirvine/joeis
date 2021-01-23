@@ -2,8 +2,8 @@ package irvine.oeis.a028;
 
 import java.util.TreeSet;
 
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
@@ -22,7 +22,8 @@ public class A028890 extends A000045 {
   @Override
   public Z next() {
     while (true) {
-      final long u = LongUtils.digitProduct(++mN);
+      final long n = ++mN;
+      final long u = ZUtils.digitProduct(n);
       while (u > mFibo.last()) {
         mFibo.add(super.next().longValueExact());
       }

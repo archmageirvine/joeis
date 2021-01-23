@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005429 Ap&#233;ry numbers: <code>n^3*C(2n,n)</code>.
+ * A005429 Ap\u00e9ry numbers: n^3*C(2n,n).
  * @author Sean A. Irvine
  */
 public class A005429 implements Sequence {

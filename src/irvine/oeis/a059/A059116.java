@@ -5,7 +5,7 @@ package irvine.oeis.a059;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059116 The sequence <code>lambda(4,n)</code>, where lambda is defined in <code>A055203</code>. Number of ways of placing n identifiable positive intervals with a total of exactly four starting and/or finishing points.
+ * A059116 The sequence lambda(4,n), where lambda is defined in A055203. Number of ways of placing n identifiable positive intervals with a total of exactly four starting and/or finishing points.
  * @author Georg Fischer
  */
 public class A059116 extends HolonomicRecurrence {

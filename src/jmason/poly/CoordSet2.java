@@ -2,6 +2,9 @@ package jmason.poly;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+
+import irvine.util.Pair;
 
 /**
  * A set of <code>(x,y)</code> coordinates.
@@ -22,7 +25,14 @@ public class CoordSet2 extends CoordSetGen<Square> {
   final boolean mFlagFixed;
   final boolean mFlagOneSided;
 
-  CoordSet2(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
+  /**
+   * Construct a new coordinate set.
+   * @param size size
+   * @param flagFree true if free
+   * @param flagFixed true if fixed
+   * @param flagOneSided true if one sided
+   */
+  public CoordSet2(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
     mSize = size;
     mSet = new SquareSet(size);
     mFlagFree = flagFree;
@@ -156,7 +166,10 @@ public class CoordSet2 extends CoordSetGen<Square> {
     ((SquareSet) mSet).overSquare(i, x, y, colour);
   }
 
-  void initMonomino() {
+  /**
+   * The monomino.
+   */
+  public void initMonomino() {
     setSquare(0, 0, 0, Square.BLACK);
   }
 
@@ -397,8 +410,8 @@ public class CoordSet2 extends CoordSetGen<Square> {
     assert getBlack() == black && getWhite() == white && black + white == mSize : "bad colours";
   }
 
-  CoordSet2 perim() {
-    final UTest h = new UTest();
+  CoordSet2 perimeter() {
+    final UniquenessTester h = new UniquenessTester();
     final ArrayList<int[]> a = new ArrayList<>();
     for (int i = 0; i < mSize; i++) {
       tryPerim(h, a, i, 1, 0);
@@ -409,14 +422,36 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return aToCs(a);
   }
 
-  private void tryPerim(final UTest h, final ArrayList<int[]> a, final int i, final int dx, final int dy) {
+  /**
+   * Compute the size of the perimeter of this coordinate set.
+   * @return perimeter size
+   */
+  public int perimeterSize() {
+    final HashSet<Pair<Integer, Integer>> h = new HashSet<>();
+    for (int k = 0; k < mSize; k++) {
+      final int x = mSet.getX(k);
+      final int y = mSet.getY(k);
+      h.add(new Pair<>(x + 1, y));
+      h.add(new Pair<>(x - 1, y));
+      h.add(new Pair<>(x, y + 1));
+      h.add(new Pair<>(x, y - 1));
+    }
+    for (int k = 0; k < mSize; k++) {
+      final int x = mSet.getX(k);
+      final int y = mSet.getY(k);
+      h.remove(new Pair<>(x, y));
+    }
+    return h.size();
+  }
+
+  private void tryPerim(final UniquenessTester h, final ArrayList<int[]> a, final int i, final int dx, final int dy) {
     final int x = mSet.getX(i) + dx;
     final int y = mSet.getY(i) + dy;
     if (exists(x, y)) {
       return;
     }
     final String s = x + ";" + y;
-    if (!h.put(s)) {
+    if (!h.add(s)) {
       return;
     }
     a.add(new int[]{x, y, -mSet.getColour(i)});
@@ -428,8 +463,8 @@ public class CoordSet2 extends CoordSetGen<Square> {
 
   private CoordSet2 makeHole() {
     final ArrayList<int[]> list = new ArrayList<>();
-    final UTest h = new UTest();
-    h.put(0, 0);
+    final UniquenessTester h = new UniquenessTester();
+    h.add(0, 0);
     list.add(new int[]{0, 0, Square.BLACK});
     boolean f = true;
     while (f) {
@@ -454,7 +489,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return aToCs(list);
   }
 
-  boolean mhTry(final int[] pair, final ArrayList<int[]> list, final UTest h, final int dx, final int dy) {
+  boolean mhTry(final int[] pair, final ArrayList<int[]> list, final UniquenessTester h, final int dx, final int dy) {
     final int x = pair[0] + dx;
     final int y = pair[1] + dy;
     if (h.isIn(x, y)) {
@@ -463,7 +498,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     if (exists(x, y)) {
       return false;
     }
-    h.put(x, y);
+    h.add(x, y);
     list.add(new int[]{x, y, -pair[2]});
     return true;
   }
@@ -639,8 +674,8 @@ public class CoordSet2 extends CoordSetGen<Square> {
    */
   public ArrayList<CoordSet2> listRot90CornerSons(final CoordSet2 hole) {
     final ArrayList<CoordSet2> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
+    final UniquenessTester h = new UniquenessTester();
+    final UniquenessTester hc = new UniquenessTester();
     for (int i = 0; i < mSize; ++i) {
       tryRot90CornerSquare(i, 1, 0, list, h, hc, hole);
       tryRot90CornerSquare(i, -1, 0, list, h, hc, hole);
@@ -650,7 +685,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return list;
   }
 
-  private void tryRot90CornerSquare(final int i, final int dx, final int dy, final ArrayList<CoordSet2> list, final UTest h, final UTest hc, final CoordSet2 hole) {
+  private void tryRot90CornerSquare(final int i, final int dx, final int dy, final ArrayList<CoordSet2> list, final UniquenessTester h, final UniquenessTester hc, final CoordSet2 hole) {
     final int x = getX(i) + dx;
     final int y = getY(i) + dy;
     if (exists(x, y)) {
@@ -659,12 +694,12 @@ public class CoordSet2 extends CoordSetGen<Square> {
     if (hole != null && hole.exists(x, y)) {
       return;
     }
-    if (!hc.put(x, y)) {
+    if (!hc.add(x, y)) {
       return;
     }
     final CoordSet2 cs = copy(x, y, Square.opp(y), x, Square.opp(x), Square.opp(y), y, Square.opp(x));
     final String uniq = cs.makeString();
-    if (!h.put(uniq)) {
+    if (!h.add(uniq)) {
       return;
     }
     list.add(cs);
@@ -685,8 +720,8 @@ public class CoordSet2 extends CoordSetGen<Square> {
    */
   public ArrayList<CoordSet2> listRot180MidSideSons(final CoordSet2 hole) {
     final ArrayList<CoordSet2> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
+    final UniquenessTester h = new UniquenessTester();
+    final UniquenessTester hc = new UniquenessTester();
     for (int i = 0; i < mSize; ++i) {
       tryRot180MidSideSquare(i, 1, 0, list, h, hc, hole);
       tryRot180MidSideSquare(i, -1, 0, list, h, hc, hole);
@@ -696,7 +731,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return list;
   }
 
-  private void tryRot180MidSideSquare(final int i, final int dx, final int dy, final ArrayList<CoordSet2> list, final UTest h, final UTest hc, final CoordSet2 hole) {
+  private void tryRot180MidSideSquare(final int i, final int dx, final int dy, final ArrayList<CoordSet2> list, final UniquenessTester h, final UniquenessTester hc, final CoordSet2 hole) {
     final int x = getX(i) + dx;
     final int y = getY(i) + dy;
     if (exists(x, y)) {
@@ -706,13 +741,13 @@ public class CoordSet2 extends CoordSetGen<Square> {
       return;
     }
 
-    if (!hc.put(x, y)) {
+    if (!hc.add(x, y)) {
       return;
     }
 
     final CoordSet2 cs = copy(x, y, -x, Square.opp(y));
     final String uniq = new UniqueMaker2(cs).uniqString();
-    if (!h.put(uniq)) {
+    if (!h.add(uniq)) {
       return;
     }
     list.add(cs);
@@ -745,7 +780,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
   }
 
   private boolean symAxis(final int z, final int offset) {
-    final UTest h = new UTest();
+    final UniquenessTester h = new UniquenessTester();
     for (int i = 0; i < mSize; ++i) {
       final int x, y;
       if (z == 0) {
@@ -755,7 +790,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
         x = Square.opp(mSet.getX(i) - offset);
         y = mSet.getY(i);
       }
-      h.put(x, y);
+      h.add(x, y);
     }
     for (int i = 0; i < mSize; ++i) {
       final int x, y;
@@ -840,9 +875,9 @@ public class CoordSet2 extends CoordSetGen<Square> {
 
   // return true if current object contains any piece of another
   boolean overlaps(final CoordSet2 hole) {
-    final UTest h = new UTest();
+    final UniquenessTester h = new UniquenessTester();
     for (int i = 0; i < mSize; ++i) {
-      h.put(mSet.getX(i), mSet.getY(i));
+      h.add(mSet.getX(i), mSet.getY(i));
     }
     for (int i = 0; i < hole.mSize; ++i) {
       if (h.isIn(hole.mSet.getX(i), hole.mSet.getY(i))) {
@@ -888,7 +923,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
 
   int freeEdge(final int colour) {
     int e = 0;
-    final UTest u = new UTest();
+    final UniquenessTester u = new UniquenessTester();
     for (int i = 0; i < mSize; i++) {
       if (getColour(i) == colour) {
         e += countFree(i, 1, 0, u);
@@ -900,10 +935,10 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return e;
   }
 
-  private int countFree(final int i, final int dx, final int dy, final UTest u) {
+  private int countFree(final int i, final int dx, final int dy, final UniquenessTester u) {
     final int x = getX(i) + dx;
     final int y = getY(i) + dy;
-    if (!u.put(x, y)) {
+    if (!u.add(x, y)) {
       return 0;
     }
     return exists(x, y) ? 0 : 1;

@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082651 Positive integer values of n such that <code>5n^2+11</code> is a square.
+ * A082651 Positive integer values of n such that 5n^2+11 is a square.
  * @author Sean A. Irvine
  */
 public class A082651 extends LinearRecurrence {

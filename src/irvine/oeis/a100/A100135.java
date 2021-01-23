@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100135 Sum <code>C(n-3k,3k)2^k, k=0..floor(n/6)</code>.
+ * A100135 Sum C(n-3k,3k)2^k, k=0..floor(n/6).
  * @author Georg Fischer
  */
 public class A100135 extends GeneratingFunctionSequence {

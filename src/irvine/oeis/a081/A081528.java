@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003418;
 
 /**
- * A081528 <code>a(n) = n*lcm{1,2,...,n}</code>.
+ * A081528 a(n) = n*lcm{1,2,...,n}.
  * @author Georg Fischer
  */
 public class A081528 extends A003418 {
@@ -15,7 +15,7 @@ public class A081528 extends A003418 {
   /** Construct the sequence. */
   public A081528() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

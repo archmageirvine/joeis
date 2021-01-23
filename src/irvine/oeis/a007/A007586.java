@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007586 <code>11-gonal</code> (or hendecagonal) pyramidal numbers: <code>n*(n+1)*(3*n-2)/2</code>.
+ * A007586 11-gonal (or hendecagonal) pyramidal numbers: n*(n+1)*(3*n-2)/2.
  * @author Sean A. Irvine
  */
 public class A007586 implements Sequence {

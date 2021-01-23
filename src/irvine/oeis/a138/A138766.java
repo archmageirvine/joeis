@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138766 Real part of upper left and lower right terms of <code>[1,(1+I); 1,1]^n * [1,0]</code>.
+ * A138766 Real part of upper left and lower right terms of [1,(1+I); 1,1]^n * [1,0].
  * @author Sean A. Irvine
  */
 public class A138766 extends LinearRecurrence {

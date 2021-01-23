@@ -5,7 +5,7 @@ package irvine.oeis.a210;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A210628 Expansion of <code>(-1 + 2*x + sqrt( 1 - 4*x^2)) / (2*x)</code> in powers of <code>x</code>.
+ * A210628 Expansion of (-1 + 2*x + sqrt( 1 - 4*x^2)) / (2*x) in powers of x.
  * @author Georg Fischer
  */
 public class A210628 extends HolonomicRecurrence {

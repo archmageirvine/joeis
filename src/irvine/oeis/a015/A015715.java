@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015715 Odd integers m such that <code>phi(m) | sigma(m)</code>.
+ * A015715 Odd integers m such that phi(m) | sigma(m).
  * @author Sean A. Irvine
  */
 public class A015715 implements Sequence {
@@ -18,7 +18,7 @@ public class A015715 implements Sequence {
     while (true) {
       mN = mN.add(2);
       final FactorSequence fs = Cheetah.factor(mN);
-      if (Z.ZERO.equals(fs.sigma().mod(fs.phi()))) {
+      if (fs.sigma().mod(fs.phi()).isZero()) {
         return mN;
       }
     }

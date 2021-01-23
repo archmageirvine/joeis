@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A214385 Number of <code>3 X 3 X 3</code> triangular <code>0..n</code> arrays with no element lying outside the (possibly reversed) range delimited by its sw and se neighbors, and no element equal to its horizontal neighbors.
+ * A214385 Number of 3 X 3 X 3 triangular 0..n arrays with no element lying outside the (possibly reversed) range delimited by its sw and se neighbors, and no element equal to its horizontal neighbors.
  * @author Georg Fischer
  */
 public class A214385 extends GeneratingFunctionSequence {

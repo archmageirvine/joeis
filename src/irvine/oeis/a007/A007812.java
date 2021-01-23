@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007812 Number of n-node Steinhaus graphs whose complements have at least one <code>cut-vertex</code>.
+ * A007812 Number of n-node Steinhaus graphs whose complements have at least one cut-vertex.
  * @author Sean A. Irvine
  */
 public class A007812 implements Sequence {

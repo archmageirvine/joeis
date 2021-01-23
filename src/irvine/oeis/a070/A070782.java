@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070782 <code>a(n) = Sum_{k=0..n} binomial(5*n,5*k)</code>.
+ * A070782 a(n) = Sum_{k=0..n} binomial(5*n,5*k).
  * @author Georg Fischer
  */
 public class A070782 extends HolonomicRecurrence {

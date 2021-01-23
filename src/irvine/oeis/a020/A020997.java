@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000032;
 
 /**
- * A020997 Numbers n such that the sum of the digits of <code>Lucas(n)</code> is <code>n</code>.
+ * A020997 Numbers n such that the sum of the digits of Lucas(n) is n.
  * @author Sean A. Irvine
  */
 public class A020997 extends A000032 {

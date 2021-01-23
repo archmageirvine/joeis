@@ -5,13 +5,13 @@ package irvine.oeis.a053;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A053359 Numbers k such that <code>285*2^k + 1</code> is prime.
+ * A053359 Numbers k such that 285*2^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A053359 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A053359() {
-    super(1, 1, 285, 2, +1, 0);
+    super(1, 1, 285, 2, 1);
   }
 }

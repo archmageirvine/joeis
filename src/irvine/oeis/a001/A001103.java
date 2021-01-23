@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001103 Numbers n such that <code>(n /</code> product of digits of <code>n)</code> is 1 or a prime.
+ * A001103 Numbers n such that (n / product of digits of n) is 1 or a prime.
  * @author Sean A. Irvine
  */
 public class A001103 implements Sequence {
@@ -17,7 +17,7 @@ public class A001103 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final Z ds = ZUtils.digitProduct(mN);
-      if (!Z.ZERO.equals(ds) && Z.ZERO.equals(mN.mod(ds))) {
+      if (!ds.isZero() && mN.mod(ds).isZero()) {
         final Z t = mN.divide(ds);
         if (Z.ONE.equals(t) || t.isPrime()) {
           return mN;

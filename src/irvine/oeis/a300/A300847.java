@@ -4,7 +4,7 @@ package irvine.oeis.a300;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A300847 <code>a(n) = 12*binomial(n, 5)</code>.
+ * A300847 a(n) = 12*binomial(n, 5).
  * @author Georg Fischer
  */
 public class A300847 extends GeneratingFunctionSequence {

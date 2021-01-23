@@ -5,7 +5,7 @@ package irvine.oeis.a066;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A066118 <code>a(n) = n!*(3*n-1)/2</code>.
+ * A066118 a(n) = n!*(3*n-1)/2.
  * @author Georg Fischer
  */
 public class A066118 extends HolonomicRecurrence {

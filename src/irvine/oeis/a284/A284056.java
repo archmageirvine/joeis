@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284056 Array of complete solutions to the Diophantine equation <code>x^2 + 5^a*11^b = y^3</code> read by rows (see comment).
+ * A284056 Array of complete solutions to the Diophantine equation x^2 + 5^a*11^b = y^3 read by rows (see comment).
  * @author Georg Fischer
  */
 public class A284056 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A199928 Trisection 1 of <code>A199802</code>.
+ * A199928 Trisection 1 of A199802.
  * @author Sean A. Irvine
  */
 public class A199928 extends LinearRecurrence {

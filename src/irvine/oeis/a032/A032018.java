@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A032018 Shifts left under "AGJ" <code>(ordered</code>, elements, labeled) transform.
+ * A032018 Shifts left under "AGJ" (ordered, elements, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032018 extends A032004 {

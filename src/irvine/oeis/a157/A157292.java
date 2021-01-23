@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157292 Decimal expansion of <code>315/(2*Pi^4)</code>.
+ * A157292 Decimal expansion of 315/(2*Pi^4).
  * @author Georg Fischer
  */
 public class A157292 extends DecimalExpansionSequence {

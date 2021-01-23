@@ -9,7 +9,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
- * A032162 Shifts left 2 places under "CGK" <code>(necklace</code>, element, unlabeled) transform.
+ * A032162 Shifts left 2 places under "CGK" (necklace, element, unlabeled) transform.
  * @author Sean A. Irvine
  */
 public class A032162 extends A032160 {

@@ -6,7 +6,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204473 Number of 9-element subsets that can be chosen from <code>{1,2,...,18*n+9}</code> having element sum <code>81*n+45</code>.
+ * A204473 Number of 9-element subsets that can be chosen from {1,2,...,18*n+9} having element sum 81*n+45.
  * @author Georg Fischer
  */
 public class A204473 extends GeneratingFunctionSequence {

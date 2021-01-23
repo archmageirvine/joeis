@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027896 Divisors of <code>10^11 - 1</code>.
+ * A027896 Divisors of 10^11 - 1.
  * @author Georg Fischer
  */
 public class A027896 extends FiniteSequence {

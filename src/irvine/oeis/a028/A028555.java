@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028555 Numbers n such that <code>n*(n + 4)</code> is a palindrome.
+ * A028555 Numbers n such that n*(n + 4) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028555 implements Sequence {

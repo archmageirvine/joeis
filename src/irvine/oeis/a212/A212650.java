@@ -6,7 +6,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212650 Number of permutations of n elements with at least one fixed point and at least one <code>2-cycle</code> (transposition).
+ * A212650 Number of permutations of n elements with at least one fixed point and at least one 2-cycle (transposition).
  * @author Georg Fischer
  */
 public class A212650 extends HolonomicRecurrence {

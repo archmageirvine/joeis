@@ -4,7 +4,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065170 Permutation <code>t-&gt;t-3</code> of Z, folded to N.
+ * A065170 Permutation t-&gt;t-3 of Z, folded to N.
  * @author Georg Fischer
  */
 public class A065170 extends LinearRecurrence {

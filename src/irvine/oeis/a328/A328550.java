@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328550 <code>a(n) = 9*n^6/2 - 27*n^5 + 9*n^4/2 + 429*n^3/2 - 229*n^2 - 829*n/2 + 525</code>.
+ * A328550 a(n) = 9*n^6/2 - 27*n^5 + 9*n^4/2 + 429*n^3/2 - 229*n^2 - 829*n/2 + 525.
  * @author Georg Fischer
  */
 public class A328550 extends HolonomicRecurrence {

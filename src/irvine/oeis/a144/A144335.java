@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144335 Row sums of triangle <code>A144334</code>, binomial transform of <code>[1, 2, 6, 7, 3, 0, 0, 0,...]</code>.
+ * A144335 Row sums of triangle A144334, binomial transform of [1, 2, 6, 7, 3, 0, 0, 0,...].
  * @author Sean A. Irvine
  */
 public class A144335 extends LinearRecurrence {

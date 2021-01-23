@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.MultidimensionalIntegerPartition;
 
 /**
- * A000390 Number of 5-dimensional partitions of <code>n</code>.
+ * A000390 Number of 5-dimensional partitions of n.
  * @author Sean A. Irvine
  */
 public class A000390 implements Sequence {

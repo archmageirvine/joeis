@@ -5,7 +5,7 @@ package irvine.oeis.a117;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A117197 <code>a(n) = (n^3 - 1)^3</code>.
+ * A117197 a(n) = (n^3 - 1)^3.
  * @author Georg Fischer
  */
 public class A117197 extends HolonomicRecurrence {

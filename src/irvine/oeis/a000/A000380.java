@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a061.A061702;
 
 /**
- * A000380 Number of permutations of an n-sequence discordant with three given permutations (see reference) in <code>n-3</code> places.
+ * A000380 Number of permutations of an n-sequence discordant with three given permutations (see reference) in n-3 places.
  * @author Sean A. Irvine
  */
 public class A000380 implements Sequence {

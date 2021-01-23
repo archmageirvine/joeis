@@ -6,7 +6,7 @@ package irvine.oeis.a106;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A106206 Coefficients of <code>(1 + 144*x)^(1/24)</code>.
+ * A106206 Coefficients of (1 + 144*x)^(1/24).
  * @author Georg Fischer
  */
 public class A106206 extends HolonomicRecurrence {

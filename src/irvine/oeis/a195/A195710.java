@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195710 Decimal expansion of <code>arccos(-sqrt(2/5))</code>.
+ * A195710 Decimal expansion of arccos(-sqrt(2/5)).
  * @author Georg Fischer
  */
 public class A195710 extends DecimalExpansionSequence {

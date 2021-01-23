@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031154 Numbers k such that <code>k^2</code> contains only digits <code>{2,4,5}</code>.
+ * A031154 Numbers k such that k^2 contains only digits {2,4,5}.
  * @author Sean A. Irvine
  */
 public class A031154 implements Sequence {
@@ -14,7 +14,7 @@ public class A031154 implements Sequence {
   private int mStepIndex = 1;
 
   private boolean is245(Z n) {
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);
       final int r = qr[1].intValue();
       if (r != 2 && r != 4 && r != 5) {

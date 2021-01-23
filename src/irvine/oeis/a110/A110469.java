@@ -6,7 +6,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110469 Convolution of <code>J(n)*n!</code> and <code>n!</code> where <code>J(n)=A001045(n), n-th</code> Jacobsthal number.
+ * A110469 Convolution of J(n)*n! and n! where J(n)=A001045(n), n-th Jacobsthal number.
  * @author Georg Fischer
  */
 public class A110469 extends HolonomicRecurrence {

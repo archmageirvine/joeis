@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A152485 Degrees of irreducible representations of <code>SL(2,13)</code>.
+ * A152485 Degrees of irreducible representations of SL(2,13).
  * @author Georg Fischer
  */
 public class A152485 extends FiniteSequence {

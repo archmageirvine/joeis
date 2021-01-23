@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A271566 <code>a(n)</code> is the length of the n-th run in <code>A137734</code>.
+ * A271566 a(n) is the length of the n-th run in A137734.
  * @author Georg Fischer
  */
 public class A271566 extends GeneratingFunctionSequence {

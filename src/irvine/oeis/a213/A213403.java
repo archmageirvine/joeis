@@ -6,7 +6,7 @@ package irvine.oeis.a213;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A213403 G.f.: <code>exp( Sum_{n&gt;=1} binomial(6*n-1, 3*n) * x^n/n )</code>.
+ * A213403 G.f.: exp( Sum_{n&gt;=1} binomial(6*n-1, 3*n) * x^n/n ).
  * @author Georg Fischer
  */
 public class A213403 extends HolonomicRecurrence {

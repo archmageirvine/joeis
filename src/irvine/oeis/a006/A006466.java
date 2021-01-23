@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006466 Continued fraction expansion of C <code>= 2*Sum_{n&gt;=0} 1/2^(2^n)</code>.
+ * A006466 Continued fraction expansion of C = 2*Sum_{n&gt;=0} 1/2^(2^n).
  * @author Sean A. Irvine
  */
 public class A006466 implements Sequence {

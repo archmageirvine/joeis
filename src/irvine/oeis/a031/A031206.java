@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031206 Numbers having <code>period-21 7-digitized</code> sequences.
+ * A031206 Numbers having period-21 7-digitized sequences.
  * @author Sean A. Irvine
  */
 public class A031206 extends A031200 {

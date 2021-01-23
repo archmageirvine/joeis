@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155449 Numbers <code>n == 6</code> or <code>11 mod 17</code>.
+ * A155449 Numbers n == 6 or 11 mod 17.
  * @author Sean A. Irvine
  */
 public class A155449 extends LinearRecurrence {

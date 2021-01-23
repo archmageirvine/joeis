@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061998 Number of ways to place 5 nonattacking kings on an <code>n X n</code> board.
+ * A061998 Number of ways to place 5 nonattacking kings on an n X n board.
  * @author Georg Fischer
  */
 public class A061998 extends GeneratingFunctionSequence {

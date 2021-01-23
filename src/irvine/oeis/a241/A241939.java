@@ -4,7 +4,7 @@ package irvine.oeis.a241;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A241939 Number of length <code>3+4 0..n</code> arrays with no consecutive five elements summing to more than <code>2*n</code>.
+ * A241939 Number of length 3+4 0..n arrays with no consecutive five elements summing to more than 2*n.
  * @author Georg Fischer
  */
 public class A241939 extends GeneratingFunctionSequence {

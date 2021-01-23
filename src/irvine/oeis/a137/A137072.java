@@ -5,7 +5,7 @@ package irvine.oeis.a137;
 import irvine.oeis.SquareDigitsSequence;
 
 /**
- * A137072 Numbers n such that n and the square of n use only the digits <code>2, 3, 4, 6</code> and 8.
+ * A137072 Numbers n such that n and the square of n use only the digits 2, 3, 4, 6 and 8.
  * @author Georg Fischer
  */
 public class A137072 extends SquareDigitsSequence {

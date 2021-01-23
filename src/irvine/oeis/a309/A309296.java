@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309296 <code>(1/4)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by four.
+ * A309296 (1/4) times the sum of the elements of all subsets of [n] whose sum is divisible by four.
  * @author Georg Fischer
  */
 public class A309296 extends HolonomicRecurrence {

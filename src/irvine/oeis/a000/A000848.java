@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000848 Number of <code>n-input 3-output</code> switching networks under action of <code>GL(n,2)</code> on the inputs and complementing group <code>C(3,2)</code> on the outputs.
+ * A000848 Number of n-input 3-output switching networks under action of GL(n,2) on the inputs and complementing group C(3,2) on the outputs.
  * @author Sean A. Irvine
  */
 public class A000848 implements Sequence {

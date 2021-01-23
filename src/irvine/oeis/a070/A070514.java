@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070514 Final digit of <code>n^4: n^4 mod 10</code>.
+ * A070514 Final digit of n^4: n^4 mod 10.
  * @author Sean A. Irvine
  */
 public class A070514 extends LinearRecurrence {

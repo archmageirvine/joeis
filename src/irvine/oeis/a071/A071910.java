@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A071910 <code>a(n) = t(n)*t(n+1)*t(n+2)</code>, where <code>t()</code> are the triangular numbers.
+ * A071910 a(n) = t(n)*t(n+1)*t(n+2), where t() are the triangular numbers.
  * @author Georg Fischer
  */
 public class A071910 extends GeneratingFunctionSequence {

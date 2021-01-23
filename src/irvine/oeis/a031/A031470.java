@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031470 In base 5 has the same number of <code>0</code>'s as <code>4</code>'s.
+ * A031470 In base 5 has the same number of 0's as 4's.
  * @author Sean A. Irvine
  */
 public class A031470 extends A031452 {

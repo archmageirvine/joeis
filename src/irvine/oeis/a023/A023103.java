@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023103 <code>(10^n)-th</code> digit of infinite string 12345678910111213141516...
+ * A023103 (10^n)-th digit of infinite string 12345678910111213141516...
  * @author Sean A. Irvine
  */
 public class A023103 implements Sequence {
@@ -23,7 +23,7 @@ public class A023103 implements Sequence {
     } while (m.compareTo(n) <= 0);
     final Z[] qr = n.subtract(l).divideAndRemainder(Z.valueOf(i));
     final Z q = qr[0].add(basePower);
-    if (Z.ZERO.equals(qr[1])) {
+    if (qr[1].isZero()) {
       return q.subtract(1).mod(base);
     } else {
       return q.toString(base).charAt(qr[1].intValueExact() - 1) - '0';

@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A262787 <code>a(n) = 41^(2*n+1)</code>.
+ * A262787 a(n) = 41^(2*n+1).
  * @author Georg Fischer
  */
 public class A262787 extends GeneratingFunctionSequence {

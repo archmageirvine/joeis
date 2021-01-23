@@ -6,7 +6,7 @@ package irvine.oeis.a193;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A193168 Number of simple paths from <code>(1, 1)</code> to <code>(n, 3)</code> on an <code>n X 3</code> grid with king moves allowed.
+ * A193168 Number of simple paths from (1, 1) to (n, 3) on an n X 3 grid with king moves allowed.
  * @author Georg Fischer
  */
 public class A193168 extends HolonomicRecurrence {

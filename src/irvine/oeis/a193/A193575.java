@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193575 <code>T(n)^3 - n^3</code> where <code>T(n)</code> is a triangular number.
+ * A193575 T(n)^3 - n^3 where T(n) is a triangular number.
  * @author Sean A. Irvine
  */
 public class A193575 extends LinearRecurrence {

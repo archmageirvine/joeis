@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicByteArray;
 
 /**
- * A003842 The infinite Fibonacci word: start with 1, repeatedly apply the morphism <code>1-&gt;12, 2-&gt;1</code>, take limit; or, start with <code>S(0)=2, S(1)=1</code>, and for <code>n&gt;1</code> define <code>S(n)=S(n-1)S(n-2)</code>, then the sequence is <code>S(oo)</code>.
+ * A003842 The infinite Fibonacci word: start with 1, repeatedly apply the morphism 1-&gt;12, 2-&gt;1, take limit; or, start with S(0)=2, S(1)=1, and for n&gt;1 define S(n)=S(n-1)S(n-2), then the sequence is S(oo).
  * @author Sean A. Irvine
  */
 public class A003842 implements Sequence {

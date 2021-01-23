@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007638 Numbers k such that <code>3*k^2 - 3*k + 23</code> is composite.
+ * A007638 Numbers k such that 3*k^2 - 3*k + 23 is composite.
  * @author Sean A. Irvine
  */
 public class A007638 implements Sequence {

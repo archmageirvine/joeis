@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141499 <code>a(0)=0; a(1)=1; a(n) =</code> triangular number at index <code>5*2^(n-2)-1</code>.
+ * A141499 a(0)=0; a(1)=1; a(n) = triangular number at index 5*2^(n-2)-1.
  * @author Georg Fischer
  */
 public class A141499 extends HolonomicRecurrence {

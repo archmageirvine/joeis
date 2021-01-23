@@ -4,7 +4,7 @@ package irvine.oeis.a045;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A045651 L1-coordination sequence for <code>E_8</code> lattice in Construction A version of the lattice.
+ * A045651 L1-coordination sequence for E_8 lattice in Construction A version of the lattice.
  * @author Georg Fischer
  */
 public class A045651 extends GeneratingFunctionSequence {

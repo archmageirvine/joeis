@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A245456 Index of least Fibonacci number congruent to <code>n mod 100</code>.
+ * A245456 Index of least Fibonacci number congruent to n mod 100.
  * @author Georg Fischer
  */
 public class A245456 extends FiniteSequence {

@@ -1,19 +1,19 @@
 package irvine.oeis.a000;
 
-import irvine.math.group.GroupUtils;
+import irvine.math.group.GroupFactory;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000001 Number of groups of order <code>n</code>.
+ * A000001 Number of groups of order n.
  * @author Sean A. Irvine
  */
 public class A000001 implements Sequence {
 
-  private long mN = -1;
+  private int mN = -1;
 
   @Override
   public Z next() {
-    return GroupUtils.gnu(++mN);
+    return Z.valueOf(GroupFactory.smallGroups(++mN).size());
   }
 }

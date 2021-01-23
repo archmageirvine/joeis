@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A271534 Numbers n with digits abc..xyz such that <code>n = (a + b + c + ... + x + y + z) + (a^b + b^c + c^d + ... + x^y + y^z)</code>.
+ * A271534 Numbers n with digits abc..xyz such that n = (a + b + c + ... + x + y + z) + (a^b + b^c + c^d + ... + x^y + y^z).
  * @author Georg Fischer
  */
 public class A271534 extends FiniteSequence {

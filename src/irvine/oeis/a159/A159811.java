@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159811 Decimal expansion of <code>(105507 + 65798*sqrt(2))/223^2</code>.
+ * A159811 Decimal expansion of (105507 + 65798*sqrt(2))/223^2.
  * @author Georg Fischer
  */
 public class A159811 extends DecimalExpansionSequence {

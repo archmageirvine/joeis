@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026631 <code>T(2n-1,n-2)</code>, T given by <code>A026626</code>.
+ * A026631 T(2n-1,n-2), T given by A026626.
  * @author Sean A. Irvine
  */
 public class A026631 extends A026626 {

@@ -6,7 +6,7 @@ package irvine.oeis.a135;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A135593 Number of <code>n X n</code> symmetric <code>(0,1)-matrices</code> with exactly <code>n+1</code> entries equal to 1 and no zero rows or columns.
+ * A135593 Number of n X n symmetric (0,1)-matrices with exactly n+1 entries equal to 1 and no zero rows or columns.
  * @author Georg Fischer
  */
 public class A135593 extends HolonomicRecurrence {

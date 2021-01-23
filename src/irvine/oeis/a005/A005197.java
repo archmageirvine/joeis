@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033185;
 
 /**
- * A005197 <code>a(n) = Sum_t t*F(n,t)</code>, where <code>F(n,t)</code> (see A033185) is the number of rooted forests with <code>n</code> (unlabeled) nodes and exactly t rooted trees.
+ * A005197 a(n) = Sum_t t*F(n,t), where F(n,t) (see A033185) is the number of rooted forests with n (unlabeled) nodes and exactly t rooted trees.
  * @author Sean A. Irvine
  */
 public class A005197 extends A033185 {

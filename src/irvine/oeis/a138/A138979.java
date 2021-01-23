@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138979 Number of <code>4 X n</code> matrices containing a 1 in the top left entry, all entries are integer values and adjacent entries differ by at most 1.
+ * A138979 Number of 4 X n matrices containing a 1 in the top left entry, all entries are integer values and adjacent entries differ by at most 1.
  * @author Georg Fischer
  */
 public class A138979 extends GeneratingFunctionSequence {

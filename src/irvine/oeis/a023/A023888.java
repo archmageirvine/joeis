@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023888 Sum of prime power divisors of <code>n (1</code> included).
+ * A023888 Sum of prime power divisors of n (1 included).
  * @author Sean A. Irvine
  */
 public class A023888 implements Sequence {

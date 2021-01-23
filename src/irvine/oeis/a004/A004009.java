@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004009 Expansion of Eisenstein series <code>E_4(q)</code> (alternate convention <code>E_2(q))</code>; theta series of <code>E_8</code> lattice.
+ * A004009 Expansion of Eisenstein series E_4(q) (alternate convention E_2(q)); theta series of E_8 lattice.
  * @author Sean A. Irvine
  */
 public class A004009 implements Sequence {

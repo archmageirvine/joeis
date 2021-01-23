@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A169986 <code>Ceiling(phi^n)</code> where phi <code>= (1+sqrt(5))/2</code>.
+ * A169986 Ceiling(phi^n) where phi = (1+sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A169986 extends GeneratingFunctionSequence {

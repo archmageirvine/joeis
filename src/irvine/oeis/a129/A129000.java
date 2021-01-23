@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129000 Start with an integer (in this case, <code>1)</code>. First, add 5 or 8 if the integer is odd or even, respectively. Then divide by 2.
+ * A129000 Start with an integer (in this case, 1). First, add 5 or 8 if the integer is odd or even, respectively. Then divide by 2.
  * @author Georg Fischer
  */
 public class A129000 extends HolonomicRecurrence {

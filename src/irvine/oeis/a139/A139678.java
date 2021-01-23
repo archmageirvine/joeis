@@ -5,7 +5,7 @@ package irvine.oeis.a139;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A139678 Number of <code>n X n</code> symmetric binary matrices with no row sum greater than 2.
+ * A139678 Number of n X n symmetric binary matrices with no row sum greater than 2.
  * @author Georg Fischer
  */
 public class A139678 extends HolonomicRecurrence {

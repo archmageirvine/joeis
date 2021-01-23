@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029582 E.g.f. <code>sin(x) + cos(x) + tan(x)</code>.
+ * A029582 E.g.f. sin(x) + cos(x) + tan(x).
  * @author Sean A. Irvine
  */
 public class A029582 implements Sequence {

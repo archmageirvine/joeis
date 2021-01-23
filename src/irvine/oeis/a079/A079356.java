@@ -5,7 +5,7 @@ package irvine.oeis.a079;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A079356 <code>a(1)=1; a(n) = a(n-1) - 2</code> if n is already in the sequence, <code>a(n) = a(n-1) + 3</code> otherwise.
+ * A079356 a(1)=1; a(n) = a(n-1) - 2 if n is already in the sequence, a(n) = a(n-1) + 3 otherwise.
  * @author Georg Fischer
  */
 public class A079356 extends HolonomicRecurrence {

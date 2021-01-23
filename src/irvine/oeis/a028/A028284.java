@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028284 Elements to right of central elements in 4-Pascal triangle <code>A028275</code>.
+ * A028284 Elements to right of central elements in 4-Pascal triangle A028275.
  * @author Sean A. Irvine
  */
 public class A028284 implements Sequence {

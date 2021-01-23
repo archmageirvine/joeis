@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195695 Decimal expansion of <code>arcsin(sqrt(1/3))</code> and of <code>arccos(sqrt(2/3))</code>.
+ * A195695 Decimal expansion of arcsin(sqrt(1/3)) and of arccos(sqrt(2/3)).
  * @author Georg Fischer
  */
 public class A195695 extends DecimalExpansionSequence {

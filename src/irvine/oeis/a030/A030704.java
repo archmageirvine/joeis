@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030704 Numbers n such that the decimal expansion of <code>8^n</code> contains no zeros (probably finite).
+ * A030704 Numbers n such that the decimal expansion of 8^n contains no zeros (probably finite).
  * @author Sean A. Irvine
  */
 public class A030704 implements Sequence {

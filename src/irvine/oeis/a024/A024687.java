@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000201;
 import irvine.oeis.a023.A023533;
 
 /**
- * A024687 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where k <code>= [ (n+1)/2 ], s = A000201</code> (lower Wythoff sequence), <code>t = A023533</code>.
+ * A024687 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k = [ (n+1)/2 ], s = A000201 (lower Wythoff sequence), t = A023533.
  * @author Sean A. Irvine
  */
 public class A024687 extends HalfConvolutionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a320;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A320770 <code>a(n) = (-1)^floor(n/4) * 2^floor(n/2)</code>.
+ * A320770 a(n) = (-1)^floor(n/4) * 2^floor(n/2).
  * @author Georg Fischer
  */
 public class A320770 extends HolonomicRecurrence {

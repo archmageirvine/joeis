@@ -6,7 +6,7 @@ package irvine.oeis.a140;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A140712 Number of white corners in all permutations of <code>{1,2,...,n}</code> (for definition see the <code>Eriksson-Linusson</code> references).
+ * A140712 Number of white corners in all permutations of {1,2,...,n} (for definition see the Eriksson-Linusson references).
  * @author Georg Fischer
  */
 public class A140712 extends HolonomicRecurrence {

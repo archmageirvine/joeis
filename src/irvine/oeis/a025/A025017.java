@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025017 <code>a(n) =</code> least <code>2k</code> such that p is the least prime in a Goldbach partition of <code>2k</code>, where p <code>= prime(n)</code>.
+ * A025017 a(n) = least 2k such that p is the least prime in a Goldbach partition of 2k, where p = prime(n).
  * @author Sean A. Irvine
  */
 public class A025017 implements Sequence {

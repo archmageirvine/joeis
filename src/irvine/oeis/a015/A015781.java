@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015781 <code>Phi(n) + 2 | sigma(n + 2)</code>.
+ * A015781 Phi(n) + 2 | sigma(n + 2).
  * @author Sean A. Irvine
  */
 public class A015781 implements Sequence {
@@ -21,7 +21,7 @@ public class A015781 implements Sequence {
       final Z phi2 = mFactorSequenceA.phi().add(2);
       mFactorSequenceA = mFactorSequenceB;
       mFactorSequenceB = Cheetah.factor(++mN);
-      if (mFactorSequenceB.sigma().mod(phi2).equals(Z.ZERO)) {
+      if (mFactorSequenceB.sigma().mod(phi2).isZero()) {
         return Z.valueOf(mN - 2);
       }
     }

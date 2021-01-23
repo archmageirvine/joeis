@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229093 The clubs patterns appearing in <code>n X n</code> coins.
+ * A229093 The clubs patterns appearing in n X n coins.
  * @author Georg Fischer
  */
 public class A229093 extends GeneratingFunctionSequence {

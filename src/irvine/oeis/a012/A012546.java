@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012546 <code>arcsin(sinh(x)*tan(x))=2/2!*x^2+12/4!*x^4+262/6!*x^6+13272/8!*x^8..</code>.
+ * A012546 arcsin(sinh(x)*tan(x))=2/2!*x^2+12/4!*x^4+262/6!*x^6+13272/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012546 implements Sequence {

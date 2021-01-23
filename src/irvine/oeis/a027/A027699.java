@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027699 Evil primes: primes with even number of <code>1</code>'s in their binary expansion.
+ * A027699 Evil primes: primes with even number of 1's in their binary expansion.
  * @author Sean A. Irvine
  */
 public class A027699 implements Sequence {

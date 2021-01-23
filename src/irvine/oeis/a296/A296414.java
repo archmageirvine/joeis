@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A296414 Number of non-isomorphic abstract almost-equidistant graphs on n vertices in <code>R^2</code>. A graph G is abstract almost-equidistant in <code>R^2</code> if the complement of G does not contain <code>K_3</code> and G does not contain <code>K_4</code> nor <code>K_{2,3}</code>.
+ * A296414 Number of non-isomorphic abstract almost-equidistant graphs on n vertices in R^2. A graph G is abstract almost-equidistant in R^2 if the complement of G does not contain K_3 and G does not contain K_4 nor K_{2,3}.
  * @author Georg Fischer
  */
 public class A296414 extends FiniteSequence {

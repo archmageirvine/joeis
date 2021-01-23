@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020493 Numbers n such that <code>d(n)</code> (number of divisors) divides <code>phi(n)</code> (Euler function) divides <code>sigma(n)</code> (sum of divisors).
+ * A020493 Numbers n such that d(n) (number of divisors) divides phi(n) (Euler function) divides sigma(n) (sum of divisors).
  * @author Sean A. Irvine
  */
 public class A020493 implements Sequence {
@@ -18,7 +18,7 @@ public class A020493 implements Sequence {
     while (true) {
       final FactorSequence fs = Cheetah.factor(++mN);
       final Z phi = fs.phi();
-      if (Z.ZERO.equals(phi.mod(fs.sigma0())) && Z.ZERO.equals(fs.sigma().mod(phi))) {
+      if (phi.mod(fs.sigma0()).isZero() && fs.sigma().mod(phi).isZero()) {
         return Z.valueOf(mN);
       }
     }

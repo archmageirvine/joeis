@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038503 Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose <code>0"</code>.
+ * A038503 Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 0".
  * @author Georg Fischer
  */
 public class A038503 extends GeneratingFunctionSequence {

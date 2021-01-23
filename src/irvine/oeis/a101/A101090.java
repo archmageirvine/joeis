@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101090 Third partial sums of fourth powers <code>(A000583)</code>.
+ * A101090 Third partial sums of fourth powers (A000583).
  * @author Georg Fischer
  */
 public class A101090 extends GeneratingFunctionSequence {

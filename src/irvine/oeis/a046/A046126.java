@@ -6,7 +6,7 @@ package irvine.oeis.a046;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A046126 Denominators <code>q[ n ]</code> of convergents to Stern's non-simple continued fraction for <code>Pi/2</code>.
+ * A046126 Denominators q[ n ] of convergents to Stern's non-simple continued fraction for Pi/2.
  * @author Georg Fischer
  */
 public class A046126 extends HolonomicRecurrence {

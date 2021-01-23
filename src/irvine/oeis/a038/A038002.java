@@ -1,7 +1,5 @@
 package irvine.oeis.a038;
 
-import java.util.Collections;
-
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000107;
@@ -13,8 +11,8 @@ import irvine.oeis.a000.A000107;
 public class A038002 extends A000107 {
 
   private int mN = -1;
-  private final Polynomial<Z> mGf = RING.create(Collections.emptyList());
-  private final Polynomial<Z> mGfP1 = RING.create(Collections.emptyList());
+  private final Polynomial<Z> mGf = RING.empty();
+  private final Polynomial<Z> mGfP1 = RING.empty();
 
   @Override
   public Z next() {

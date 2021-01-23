@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A131639 Numbers n such that the sum of all numbers formed by deleting one digit from n is equal to <code>n</code>.
+ * A131639 Numbers n such that the sum of all numbers formed by deleting one digit from n is equal to n.
  * @author Georg Fischer
  */
 public class A131639 extends FiniteSequence {

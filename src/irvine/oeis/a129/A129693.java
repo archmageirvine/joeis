@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129693 Right truncatable primes in base <code>9</code> (written in decimal form).
+ * A129693 Right truncatable primes in base 9 (written in decimal form).
  * @author Georg Fischer
  */
 public class A129693 extends FiniteSequence {

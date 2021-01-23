@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A115273 <code>Floor(n/3)*(n mod 3)</code>.
+ * A115273 Floor(n/3)*(n mod 3).
  * @author Georg Fischer
  */
 public class A115273 extends GeneratingFunctionSequence {

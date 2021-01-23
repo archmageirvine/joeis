@@ -5,7 +5,7 @@ package irvine.oeis.a132;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A132750 <code>A132749 * [1, 2, 3, ...] = A007318 * A065190</code>.
+ * A132750 A132749 * [1, 2, 3, ...] = A007318 * A065190.
  * @author Georg Fischer
  */
 public class A132750 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a145;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A145219 <code>a(n)</code> is the number of even permutations (of an <code>n-set)</code> with exactly 1 fixed point.
+ * A145219 a(n) is the number of even permutations (of an n-set) with exactly 1 fixed point.
  * @author Georg Fischer
  */
 public class A145219 extends HolonomicRecurrence {

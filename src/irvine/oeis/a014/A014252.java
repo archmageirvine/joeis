@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000032;
 
 /**
- * A014252 <code>a(n) = b(n) - c(n)</code> where <code>b(n)</code> is the n-th Lucas number greater than 3 and <code>c(n)</code> is the n-th number not in sequence <code>b( )</code>.
+ * A014252 a(n) = b(n) - c(n) where b(n) is the n-th Lucas number greater than 3 and c(n) is the n-th number not in sequence b( ).
  * @author Sean A. Irvine
  */
 public class A014252 extends A000032 {

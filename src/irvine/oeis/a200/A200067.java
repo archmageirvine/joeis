@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200067 Maximum sum of all products of absolute differences and distances between element pairs among the integer partitions of <code>n</code>.
+ * A200067 Maximum sum of all products of absolute differences and distances between element pairs among the integer partitions of n.
  * @author Sean A. Irvine
  */
 public class A200067 extends LinearRecurrence {

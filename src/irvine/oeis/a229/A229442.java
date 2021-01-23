@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229442 Number of <code>n X 5 0..2</code> arrays with horizontal differences <code>mod 3</code> never 1, vertical differences <code>mod 3</code> never -1, and rows and columns lexicographically nondecreasing.
+ * A229442 Number of n X 5 0..2 arrays with horizontal differences mod 3 never 1, vertical differences mod 3 never -1, and rows and columns lexicographically nondecreasing.
  * @author Georg Fischer
  */
 public class A229442 extends GeneratingFunctionSequence {

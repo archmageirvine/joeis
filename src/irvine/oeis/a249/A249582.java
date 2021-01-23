@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A249582 Norm of the complex coefficients in <code>1/(1 - x + (1-2*I)*x^2)</code>.
+ * A249582 Norm of the complex coefficients in 1/(1 - x + (1-2*I)*x^2).
  * @author Georg Fischer
  */
 public class A249582 extends GeneratingFunctionSequence {

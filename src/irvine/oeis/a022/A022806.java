@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a054.A054385;
 
 /**
- * A022806 <code>a(n) = B(n) + c(n)</code> where <code>B(n)</code> is Beatty sequence <code>[ n*e ]</code> and c is the complement of B.
+ * A022806 a(n) = B(n) + c(n) where B(n) is Beatty sequence [ n*e ] and c is the complement of B.
  * @author Sean A. Irvine
  */
 public class A022806 implements Sequence {

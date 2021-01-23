@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069480 Determinant of rank n matrix of <code>1..n^2</code> filled successively along antidiagonals.
+ * A069480 Determinant of rank n matrix of 1..n^2 filled successively along antidiagonals.
  * @author Georg Fischer
  */
 public class A069480 extends GeneratingFunctionSequence {

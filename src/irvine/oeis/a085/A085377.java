@@ -6,7 +6,7 @@ package irvine.oeis.a085;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085377 <code>a(n) = 15n^2 + 13n^3</code>.
+ * A085377 a(n) = 15n^2 + 13n^3.
  * @author Georg Fischer
  */
 public class A085377 extends HolonomicRecurrence {

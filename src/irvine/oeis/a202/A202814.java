@@ -6,7 +6,7 @@ package irvine.oeis.a202;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A202814 Moments of the quadratic coefficient of the characteristic polynomial of a random matrix in <code>U(1) X U(1)</code> (embedded in <code>USp(4))</code>.
+ * A202814 Moments of the quadratic coefficient of the characteristic polynomial of a random matrix in U(1) X U(1) (embedded in USp(4)).
  * @author Georg Fischer
  */
 public class A202814 extends HolonomicRecurrence {

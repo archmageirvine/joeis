@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A097135 <code>a(0) = 1</code>; for <code>n&gt;0, a(n) = 3*Fibonacci(n)</code>.
+ * A097135 a(0) = 1; for n&gt;0, a(n) = 3*Fibonacci(n).
  * @author Georg Fischer
  */
 public class A097135 extends GeneratingFunctionSequence {

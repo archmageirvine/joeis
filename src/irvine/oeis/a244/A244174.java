@@ -6,7 +6,7 @@ package irvine.oeis.a244;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A244174 Number of compositions of <code>3n</code> in which the minimal multiplicity of parts equals <code>n</code>.
+ * A244174 Number of compositions of 3n in which the minimal multiplicity of parts equals n.
  * @author Georg Fischer
  */
 public class A244174 extends HolonomicRecurrence {

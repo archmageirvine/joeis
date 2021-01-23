@@ -6,7 +6,7 @@ package irvine.oeis.a092;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A092263 <code>a(1)=1, a(n+1)=ceiling(phi*a(n))+1</code> if <code>a(n)</code> is odd, <code>a(n+1)=ceiling(phi*a(n))</code> if <code>a(n)</code> is even, where <code>phi=(1+sqrt(5))/2</code>.
+ * A092263 a(1)=1, a(n+1)=ceiling(phi*a(n))+1 if a(n) is odd, a(n+1)=ceiling(phi*a(n)) if a(n) is even, where phi=(1+sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A092263 extends HolonomicRecurrence {

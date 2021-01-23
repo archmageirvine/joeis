@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003627 Primes of the form <code>3n-1</code>.
+ * A003627 Primes of the form 3n-1.
  * @author Sean A. Irvine
  */
 public class A003627 implements Sequence {

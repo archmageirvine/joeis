@@ -4,7 +4,7 @@ package irvine.oeis.a256;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A256959 <code>a(0)=1, a(1)=4</code>; thereafter <code>a(n) = 13*4^n/8-2^(n+1)+1</code>.
+ * A256959 a(0)=1, a(1)=4; thereafter a(n) = 13*4^n/8-2^(n+1)+1.
  * @author Georg Fischer
  */
 public class A256959 extends GeneratingFunctionSequence {

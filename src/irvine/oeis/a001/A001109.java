@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001109 <code>a(n)^2</code> is a triangular number: <code>a(n) = 6*a(n-1) - a(n-2)</code> with <code>a(0)=0, a(1)=1</code>.
+ * A001109 a(n)^2 is a triangular number: a(n) = 6*a(n-1) - a(n-2) with a(0)=0, a(1)=1.
  * @author Sean A. Irvine
  */
 public class A001109 implements Sequence {

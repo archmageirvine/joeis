@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.RoundingBeattySequence;
 
 /**
- * A003153 <code>a(n) =</code> integer nearest <code>n*(1+sqrt(2))</code>.
+ * A003153 a(n) = integer nearest n*(1+sqrt(2)).
  * @author Sean A. Irvine
  */
 public class A003153 extends RoundingBeattySequence {

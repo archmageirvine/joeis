@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229796 Number of <code>3 X 3 0..n</code> arrays with rows and columns in lexicographically nondecreasing order.
+ * A229796 Number of 3 X 3 0..n arrays with rows and columns in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A229796 extends GeneratingFunctionSequence {

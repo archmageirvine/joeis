@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123378 Values x of the solutions <code>(x,y)</code> of the Diophantine equation <code>5*(X-Y)^4 - 2*X*Y = 0</code> with X <code>&gt;=</code> Y.
+ * A123378 Values x of the solutions (x,y) of the Diophantine equation 5*(X-Y)^4 - 2*X*Y = 0 with X &gt;= Y.
  * @author Georg Fischer
  */
 public class A123378 extends GeneratingFunctionSequence {

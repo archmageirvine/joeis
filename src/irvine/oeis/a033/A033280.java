@@ -6,7 +6,7 @@ package irvine.oeis.a033;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A033280 Number of diagonal dissections of a convex <code>(n+8)-gon</code> into <code>n+1</code> regions.
+ * A033280 Number of diagonal dissections of a convex (n+8)-gon into n+1 regions.
  * @author Georg Fischer
  */
 public class A033280 extends HolonomicRecurrence {

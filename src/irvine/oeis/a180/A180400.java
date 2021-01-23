@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180400 Coefficients of Maclaurin series for <code>(1-9x-9x^2)^(-1/3)</code>.
+ * A180400 Coefficients of Maclaurin series for (1-9x-9x^2)^(-1/3).
  * @author Georg Fischer
  */
 public class A180400 extends HolonomicRecurrence {

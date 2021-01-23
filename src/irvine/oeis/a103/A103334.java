@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103334 Number of closed walks of length <code>2n</code> at any of the nodes of degree 1 on the graph of the <code>(7,4)</code> Hamming code.
+ * A103334 Number of closed walks of length 2n at any of the nodes of degree 1 on the graph of the (7,4) Hamming code.
  * @author Georg Fischer
  */
 public class A103334 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304726 <code>a(n) = n^4 + 4*n^2 + 3</code>.
+ * A304726 a(n) = n^4 + 4*n^2 + 3.
  * @author Georg Fischer
  */
 public class A304726 extends GeneratingFunctionSequence {

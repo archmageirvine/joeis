@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007492 <code>Fibonacci(n) - (-1)^n</code>.
+ * A007492 Fibonacci(n) - (-1)^n.
  * @author Sean A. Irvine
  */
 public class A007492 extends LinearRecurrence {

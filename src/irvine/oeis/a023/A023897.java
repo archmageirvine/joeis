@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023897 <code>sigma_1(n) / phi(n)</code> for balanced numbers.
+ * A023897 sigma_1(n) / phi(n) for balanced numbers.
  * @author Sean A. Irvine
  */
 public class A023897 implements Sequence {
@@ -18,7 +18,7 @@ public class A023897 implements Sequence {
     while (true) {
       final FactorSequence fs = Cheetah.factor(++mN);
       final Z[] qr = fs.sigma().divideAndRemainder(fs.phi());
-      if (Z.ZERO.equals(qr[1])) {
+      if (qr[1].isZero()) {
         return qr[0];
       }
     }

@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181984 INVERT transform of <code>A028310</code>.
+ * A181984 INVERT transform of A028310.
  * @author Sean A. Irvine
  */
 public class A181984 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082177 Professor Umbugio's sequence <code>A082176</code> divided by 1946.
+ * A082177 Professor Umbugio's sequence A082176 divided by 1946.
  * @author Sean A. Irvine
  */
 public class A082177 extends LinearRecurrence {

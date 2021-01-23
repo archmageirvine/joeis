@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A006063 A card-arranging problem: values of n such that there exists a permutation <code>p_1</code>, ..., <code>p_n</code> of 1, ..., n such that i <code>+ p_i</code> is a cube for every i.
+ * A006063 A card-arranging problem: values of n such that there exists a permutation p_1, ..., p_n of 1, ..., n such that i + p_i is a cube for every i.
  * @author Sean A. Irvine
  */
 public class A006063 implements Sequence {

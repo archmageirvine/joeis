@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306293 Number of binary words of length n such that in every prefix and in every suffix the number of <code>0</code>'s and the number of <code>1</code>'s differ by at most two.
+ * A306293 Number of binary words of length n such that in every prefix and in every suffix the number of 0's and the number of 1's differ by at most two.
  * @author Georg Fischer
  */
 public class A306293 extends GeneratingFunctionSequence {

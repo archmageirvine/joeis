@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.io.IOException;
 
 /**
- * A001186 Number of cubic Hamiltonian graphs with <code>2n</code> nodes.
+ * A001186 Number of cubic Hamiltonian graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A001186 implements Sequence, GraphProcessor {
@@ -18,7 +18,7 @@ public class A001186 implements Sequence, GraphProcessor {
   private long mCount = 0;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (graph.isHamiltonian()) {
       ++mCount;
     }

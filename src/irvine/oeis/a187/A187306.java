@@ -6,7 +6,7 @@ package irvine.oeis.a187;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A187306 Alternating sum of Motzkin numbers <code>A001006</code>.
+ * A187306 Alternating sum of Motzkin numbers A001006.
  * @author Georg Fischer
  */
 public class A187306 extends HolonomicRecurrence {

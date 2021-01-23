@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A160411 Number of cells turned "ON" at n-th stage of <code>A160117</code>.
+ * A160411 Number of cells turned "ON" at n-th stage of A160117.
  * @author Georg Fischer
  */
 public class A160411 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a030;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A030978 Maximal number of non-attacking knights on an <code>n X n</code> board.
+ * A030978 Maximal number of non-attacking knights on an n X n board.
  * @author Georg Fischer
  */
 public class A030978 extends GeneratingFunctionSequence {

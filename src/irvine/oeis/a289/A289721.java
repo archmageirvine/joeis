@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289721 Let <code>a(0)=1</code>. Then <code>a(n) =</code> sums of consecutive strings of positive integers of length <code>3*n</code>, starting with the integer 2.
+ * A289721 Let a(0)=1. Then a(n) = sums of consecutive strings of positive integers of length 3*n, starting with the integer 2.
  * @author Georg Fischer
  */
 public class A289721 extends GeneratingFunctionSequence {

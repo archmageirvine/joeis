@@ -6,7 +6,7 @@ package irvine.oeis.a285;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A285489 Sum of entries in the second cycles of all permutations of <code>[n]</code>.
+ * A285489 Sum of entries in the second cycles of all permutations of [n].
  * @author Georg Fischer
  */
 public class A285489 extends HolonomicRecurrence {

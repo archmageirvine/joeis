@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129616 10-digit numbers <code>d_1d_2...d_10</code> such that all the nine numbers <code>d_1...d_i + d_(i+1)...d_10 (0&lt;i&lt;10)</code> are primes.
+ * A129616 10-digit numbers d_1d_2...d_10 such that all the nine numbers d_1...d_i + d_(i+1)...d_10 (0&lt;i&lt;10) are primes.
  * @author Georg Fischer
  */
 public class A129616 extends FiniteSequence {

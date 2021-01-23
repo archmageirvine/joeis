@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A027936 Uniquification of array T given by <code>A027935</code>.
+ * A027936 Uniquification of array T given by A027935.
  * @author Sean A. Irvine
  */
 public class A027936 extends A027935 {

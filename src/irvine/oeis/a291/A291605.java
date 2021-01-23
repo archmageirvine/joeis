@@ -5,13 +5,13 @@ package irvine.oeis.a291;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A291605 Numbers k such that <code>5*10^k + 41</code> is prime.
+ * A291605 Numbers k such that 5*10^k + 41 is prime.
  * @author Georg Fischer
  */
 public class A291605 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A291605() {
-    super(1, 2, 5, 10, +41, 0);
+    super(1, 2, 5, 10, +41);
   }
 }

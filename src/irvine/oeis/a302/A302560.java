@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302560 Partial sums of icosahedral numbers <code>(A006564)</code>.
+ * A302560 Partial sums of icosahedral numbers (A006564).
  * @author Georg Fischer
  */
 public class A302560 extends GeneratingFunctionSequence {

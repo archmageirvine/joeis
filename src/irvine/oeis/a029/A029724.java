@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000003;
 
 /**
- * A029724 Odd numbers congruent to <code>7 mod 8</code> such that <code>(2^(h(-n)+2)-n)</code> is a square, where <code>h(-n)</code> is the class number.
+ * A029724 Odd numbers congruent to 7 mod 8 such that (2^(h(-n)+2)-n) is a square, where h(-n) is the class number.
  * @author Sean A. Irvine
  */
 public class A029724 extends A000003 {

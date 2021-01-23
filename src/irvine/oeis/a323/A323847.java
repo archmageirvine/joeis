@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323847 <code>a(n) = (n-1)*(n-2)*(n^2+9*n+12)/24</code>.
+ * A323847 a(n) = (n-1)*(n-2)*(n^2+9*n+12)/24.
  * @author Georg Fischer
  */
 public class A323847 extends GeneratingFunctionSequence {

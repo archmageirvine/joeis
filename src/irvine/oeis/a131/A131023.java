@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131023 First subdiagonal of triangular array T: <code>T(j,1) = 1</code> for <code>((j-1) mod 6) &lt; 3</code>, else <code>0; T(j,k) = T(j-1,k-1) + T(j-1,k)</code> for <code>2 &lt;= k &lt;=</code> j.
+ * A131023 First subdiagonal of triangular array T: T(j,1) = 1 for ((j-1) mod 6) &lt; 3, else 0; T(j,k) = T(j-1,k-1) + T(j-1,k) for 2 &lt;= k &lt;= j.
  * @author Georg Fischer
  */
 public class A131023 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126423 <code>a(n) = n^4 - n - 1</code>.
+ * A126423 a(n) = n^4 - n - 1.
  * @author Georg Fischer
  */
 public class A126423 extends HolonomicRecurrence {

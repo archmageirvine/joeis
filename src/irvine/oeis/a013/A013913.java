@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013913 <code>a(n) = 24^(5*n + 4)</code>.
+ * A013913 a(n) = 24^(5*n + 4).
  * @author Sean A. Irvine
  */
 public class A013913 implements Sequence {

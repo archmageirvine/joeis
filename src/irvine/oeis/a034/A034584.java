@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A034584 Radon-Hurwitz numbers: <code>log_2</code> of dimension of an irreducible R-module for Clifford algebra <code>Cl_n</code>.
+ * A034584 Radon-Hurwitz numbers: log_2 of dimension of an irreducible R-module for Clifford algebra Cl_n.
  * @author Georg Fischer
  */
 public class A034584 extends GeneratingFunctionSequence {

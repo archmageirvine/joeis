@@ -6,7 +6,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276965 Square row sums of the triangle of Lah numbers <code>(A105278)</code>.
+ * A276965 Square row sums of the triangle of Lah numbers (A105278).
  * @author Georg Fischer
  */
 public class A276965 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a027.A027423;
 
 /**
- * A030232 Number of divisors of <code>n!</code> divides the number of divisors of <code>(2n)!</code>.
+ * A030232 Number of divisors of n! divides the number of divisors of (2n)!.
  * @author Sean A. Irvine
  */
 public class A030232 extends A027423 {
@@ -22,7 +22,7 @@ public class A030232 extends A027423 {
     while (true) {
       ++mN;
       mA.next();
-      if (Z.ZERO.equals(mA.next().mod(super.next()))) {
+      if (mA.next().mod(super.next()).isZero()) {
         return Z.valueOf(mN);
       }
     }

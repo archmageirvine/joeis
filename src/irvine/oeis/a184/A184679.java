@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184679 Number of <code>(n+1) X 3</code> binary arrays with every <code>2 X 2</code> subblock singular.
+ * A184679 Number of (n+1) X 3 binary arrays with every 2 X 2 subblock singular.
  * @author Georg Fischer
  */
 public class A184679 extends GeneratingFunctionSequence {

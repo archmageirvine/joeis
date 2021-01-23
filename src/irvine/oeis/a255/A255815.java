@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255815 Numbers of words on <code>{0,1,2,3,4,5}</code> having no isolated zeros.
+ * A255815 Numbers of words on {0,1,2,3,4,5} having no isolated zeros.
  * @author Sean A. Irvine
  */
 public class A255815 extends LinearRecurrence {

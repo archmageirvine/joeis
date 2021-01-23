@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028366 <code>a(n) = (2^n - 1)!</code>.
+ * A028366 a(n) = (2^n - 1)!.
  * @author Sean A. Irvine
  */
 public class A028366 implements Sequence {

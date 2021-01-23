@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015965 Numbers k such that k <code>| 14^k + 1</code>.
+ * A015965 Numbers k such that k | 14^k + 1.
  * @author Sean A. Irvine
  */
 public class A015965 implements Sequence {

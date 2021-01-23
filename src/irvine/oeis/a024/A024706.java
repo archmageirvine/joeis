@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024706 Positions of multiples of 3 in <code>A024702</code>.
+ * A024706 Positions of multiples of 3 in A024702.
  * @author Sean A. Irvine
  */
 public class A024706 extends A024702 {

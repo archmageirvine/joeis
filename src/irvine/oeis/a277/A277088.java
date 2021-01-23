@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A277088 Pisot sequences <code>L(5,12), S(5,12)</code>.
+ * A277088 Pisot sequences L(5,12), S(5,12).
  * @author Georg Fischer
  */
 public class A277088 extends GeneratingFunctionSequence {

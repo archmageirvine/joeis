@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304381 <code>a(n) = 54*n^2 - 26*n + 4 (n&gt;=1)</code>.
+ * A304381 a(n) = 54*n^2 - 26*n + 4 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304381 extends GeneratingFunctionSequence {

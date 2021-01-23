@@ -6,7 +6,7 @@ package irvine.oeis.a119;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A119363 <code>a(n) = Sum_{k=0..n} C(n,3k)^2</code>.
+ * A119363 a(n) = Sum_{k=0..n} C(n,3k)^2.
  * @author Georg Fischer
  */
 public class A119363 extends HolonomicRecurrence {

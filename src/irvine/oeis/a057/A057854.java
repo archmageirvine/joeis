@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000032;
 
 /**
- * A057854 Non-Lucas numbers: the complement of <code>A000032</code>.
+ * A057854 Non-Lucas numbers: the complement of A000032.
  * @author Sean A. Irvine
  */
 public class A057854 extends ComplementSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A023989 Look and Say sequence: describe the previous <code>term!</code> (method <code>C -</code> initial term is <code>2)</code>.
+ * A023989 Look and Say sequence: describe the previous term! (method C - initial term is 2).
  * @author Sean A. Irvine
  */
 public class A023989 extends PrependSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a320;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A320468 <code>a(n) = a(n-1) + 20*a(n-2), n &gt;= 2; a(0)=1, a(1)=41</code>.
+ * A320468 a(n) = a(n-1) + 20*a(n-2), n &gt;= 2; a(0)=1, a(1)=41.
  * @author Georg Fischer
  */
 public class A320468 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A169795 Expansion of <code>((1-x)/(1-2x))^8</code>.
+ * A169795 Expansion of ((1-x)/(1-2x))^8.
  * @author Georg Fischer
  */
 public class A169795 extends GeneratingFunctionSequence {

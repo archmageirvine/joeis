@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A328817 Numbers k such that at least 7 of k, <code>k+1</code>, ..., <code>k+9</code> are divisible by their least prime factor squared.
+ * A328817 Numbers k such that at least 7 of k, k+1, ..., k+9 are divisible by their least prime factor squared.
  * @author Sean A. Irvine
  */
 public class A328817 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014949 Numbers n such that n divides <code>8^n - 1</code>.
+ * A014949 Numbers n such that n divides 8^n - 1.
  * @author Sean A. Irvine
  */
 public class A014949 implements Sequence {

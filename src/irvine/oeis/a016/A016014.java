@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016014 Least k such that <code>2*n*k + 1</code> is a prime.
+ * A016014 Least k such that 2*n*k + 1 is a prime.
  * @author Sean A. Irvine
  */
 public class A016014 implements Sequence {
@@ -13,11 +13,10 @@ public class A016014 implements Sequence {
 
   @Override
   public Z next() {
-    mN = mN.add(1);
+    mN = mN.add(2);
     long k = 0;
     while (true) {
-      ++k;
-      if (mN.multiply(2 * k).add(1).isProbablePrime()) {
+      if (mN.multiply(++k).add(1).isProbablePrime()) {
         return Z.valueOf(k);
       }
     }

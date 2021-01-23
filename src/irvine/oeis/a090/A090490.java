@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A090490 For <code>n &gt; 1, a(n)</code> is the least multiple of n that can be obtained by adding one digit to each end of <code>a(n-1)</code>.
+ * A090490 For n &gt; 1, a(n) is the least multiple of n that can be obtained by adding one digit to each end of a(n-1).
  * @author Georg Fischer
  */
 public class A090490 extends FiniteSequence {

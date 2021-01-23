@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A250856 Number of <code>(4+1) X (n+1) 0..3</code> arrays with nondecreasing <code>x(i,j)-x(i,j-1)</code> in the i direction and nondecreasing <code>min(x(i,j),x(i-1,j))</code> in the j direction.
+ * A250856 Number of (4+1) X (n+1) 0..3 arrays with nondecreasing x(i,j)-x(i,j-1) in the i direction and nondecreasing min(x(i,j),x(i-1,j)) in the j direction.
  * @author Georg Fischer
  */
 public class A250856 extends GeneratingFunctionSequence {

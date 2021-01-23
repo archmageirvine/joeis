@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023645 <code>a(n) = tau(n)-1</code> if n is odd or <code>tau(n)-2</code> if n is even.
+ * A023645 a(n) = tau(n)-1 if n is odd or tau(n)-2 if n is even.
  * @author Sean A. Irvine
  */
 public class A023645 implements Sequence {

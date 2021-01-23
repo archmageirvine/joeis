@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093220 <code>a(n)</code> is the largest number such that all of <code>a(n)'s length-n</code> substrings are distinct and divisible by 20.
+ * A093220 a(n) is the largest number such that all of a(n)'s length-n substrings are distinct and divisible by 20.
  * @author Georg Fischer
  */
 public class A093220 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098557 E.g.f. <code>(1/2)*(1+x)*log((1+x)/(1-x))</code>.
+ * A098557 E.g.f. (1/2)*(1+x)*log((1+x)/(1-x)).
  * @author Georg Fischer
  */
 public class A098557 extends HolonomicRecurrence {

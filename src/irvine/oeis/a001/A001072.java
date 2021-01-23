@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001072 Number of minimally <code>2-edge-connected non-isomorphic</code> graphs with n nodes.
+ * A001072 Number of minimally 2-edge-connected non-isomorphic graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A001072 implements Sequence, GraphProcessor {
@@ -19,7 +19,7 @@ public class A001072 implements Sequence, GraphProcessor {
   private long mCount = 0;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (graph.isMinimallyTwoEdgeConnected()) {
       ++mCount;
       if (mVerbose) {

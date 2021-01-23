@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015789 Numbers k such that <code>phi(k) + 10 | sigma(k + 10)</code>.
+ * A015789 Numbers k such that phi(k) + 10 | sigma(k + 10).
  * @author Sean A. Irvine
  */
 public class A015789 implements Sequence {
@@ -37,7 +37,7 @@ public class A015789 implements Sequence {
       mFactorSequenceH = mFactorSequenceI;
       mFactorSequenceI = mFactorSequenceJ;
       mFactorSequenceJ = Cheetah.factor(++mN);
-      if (mFactorSequenceJ.sigma().mod(phi10).equals(Z.ZERO)) {
+      if (mFactorSequenceJ.sigma().mod(phi10).isZero()) {
         return Z.valueOf(mN - 10);
       }
     }

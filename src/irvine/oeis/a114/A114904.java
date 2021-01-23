@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114904 Sorted numbers of digits of any <code>base-10</code> narcissistic number.
+ * A114904 Sorted numbers of digits of any base-10 narcissistic number.
  * @author Georg Fischer
  */
 public class A114904 extends FiniteSequence {

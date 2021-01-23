@@ -4,12 +4,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000720 <code>pi(n)</code>, the number of primes <code>&lt;= n</code>. Sometimes called <code>PrimePi(n)</code> to distinguish it from the number 3.14159...
+ * A000720 pi(n), the number of primes &lt;= n. Sometimes called PrimePi(n) to distinguish it from the number 3.14159...
  * @author Sean A. Irvine
  */
 public class A000720 implements Sequence {
 
-  private Z mN = Z.ZERO;
+  protected Z mN = Z.ZERO;
   private Z mP = Z.ZERO;
 
   @Override

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008470 At least 3 out of <code>10m+1, 10m+3, 10m+7, 10m+9</code> are primes.
+ * A008470 At least 3 out of 10m+1, 10m+3, 10m+7, 10m+9 are primes.
  * @author Sean A. Irvine
  */
 public class A008470 implements Sequence {

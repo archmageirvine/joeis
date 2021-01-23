@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010405 Squares <code>mod 44</code>.
+ * A010405 Squares mod 44.
  * @author Sean A. Irvine
  */
 public class A010405 extends FiniteSequence {

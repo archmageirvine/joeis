@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036084 Expansion of <code>1/(1-6*x)^6</code>.
+ * A036084 Expansion of 1/(1-6*x)^6.
  * @author Georg Fischer
  */
 public class A036084 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A265424 <code>a(n) = ((-1)^n - 1)/2 + 25*floor(3*n/2) - 50*floor(n/4)</code>.
+ * A265424 a(n) = ((-1)^n - 1)/2 + 25*floor(3*n/2) - 50*floor(n/4).
  * @author Georg Fischer
  */
 public class A265424 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A275289 Number of set partitions of <code>[n]</code> with symmetric block size list of length three.
+ * A275289 Number of set partitions of [n] with symmetric block size list of length three.
  * @author Georg Fischer
  */
 public class A275289 extends HolonomicRecurrence {

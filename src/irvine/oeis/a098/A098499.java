@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098499 Number of squares on infinite half chessboard at <code>&lt;=n</code> knight moves from a fixed point on the diagonal.
+ * A098499 Number of squares on infinite half chessboard at &lt;=n knight moves from a fixed point on the diagonal.
  * @author Georg Fischer
  */
 public class A098499 extends GeneratingFunctionSequence {

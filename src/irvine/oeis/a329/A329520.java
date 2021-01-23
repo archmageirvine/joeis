@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A329520 <code>a(n)</code> is the number of completed steps before being trapped for a knight moving on a square-spiral numbered board where the knight moves to an unvisited square with the lowest spiral number and with n or fewer visited neighbors. It only moves to squares with <code>n+1</code> or more visited neighbors when no other squares are available, and if two or more such squares are present it chooses the square with the fewest visited neighbors, then the square with the lowest spiral number if still tied.
+ * A329520 a(n) is the number of completed steps before being trapped for a knight moving on a square-spiral numbered board where the knight moves to an unvisited square with the lowest spiral number and with n or fewer visited neighbors. It only moves to squares with n+1 or more visited neighbors when no other squares are available, and if two or more such squares are present it chooses the square with the fewest visited neighbors, then the square with the lowest spiral number if still tied.
  * @author Georg Fischer
  */
 public class A329520 extends FiniteSequence {

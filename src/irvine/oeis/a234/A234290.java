@@ -6,7 +6,7 @@ package irvine.oeis.a234;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A234290 E.g.f. satisfies: <code>A(x) = 1 + A(x)^3 *</code> Integral <code>1/A(x)</code> dx.
+ * A234290 E.g.f. satisfies: A(x) = 1 + A(x)^3 * Integral 1/A(x) dx.
  * @author Georg Fischer
  */
 public class A234290 extends HolonomicRecurrence {

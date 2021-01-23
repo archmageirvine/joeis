@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321045 <code>a(n)</code> is the value of the first entry in the matrix <code>A^n</code> where A <code>= [{1,2,3}, {4,5,6}, {7,8,9}]</code>.
+ * A321045 a(n) is the value of the first entry in the matrix A^n where A = [{1,2,3}, {4,5,6}, {7,8,9}].
  * @author Georg Fischer
  */
 public class A321045 extends GeneratingFunctionSequence {

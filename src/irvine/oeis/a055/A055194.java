@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055194 Number of <code>3 X n</code> binary matrices with distinct rows, up to row and column permutation; <code>(n,3)-hypergraphs</code> (including empty hyperedge but excluding multiple hyperedges).
+ * A055194 Number of 3 X n binary matrices with distinct rows, up to row and column permutation; (n,3)-hypergraphs (including empty hyperedge but excluding multiple hyperedges).
  * @author Georg Fischer
  */
 public class A055194 extends GeneratingFunctionSequence {

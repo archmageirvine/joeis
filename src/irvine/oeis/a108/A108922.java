@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108922 Expansion of <code>1/((x^8+1)*(x-1)^2)</code>.
+ * A108922 Expansion of 1/((x^8+1)*(x-1)^2).
  * @author Georg Fischer
  */
 public class A108922 extends GeneratingFunctionSequence {

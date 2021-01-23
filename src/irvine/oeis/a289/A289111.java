@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289111 <code>a(n) = (2^49 - 2)*n/3 + 444813635231</code>.
+ * A289111 a(n) = (2^49 - 2)*n/3 + 444813635231.
  * @author Sean A. Irvine
  */
 public class A289111 extends LinearRecurrence {

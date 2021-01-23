@@ -4,7 +4,7 @@ package irvine.oeis.a241;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A241891 Total number of unit squares appearing in the Thue-Morse sequence of logical matrices <code>(1, 0</code> version) after n stages.
+ * A241891 Total number of unit squares appearing in the Thue-Morse sequence of logical matrices (1, 0 version) after n stages.
  * @author Georg Fischer
  */
 public class A241891 extends GeneratingFunctionSequence {

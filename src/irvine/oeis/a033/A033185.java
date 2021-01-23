@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A033185 Rooted tree triangle read by rows: <code>a(n,k) =</code> number of forests with n nodes and k rooted trees.
+ * A033185 Rooted tree triangle read by rows: a(n,k) = number of forests with n nodes and k rooted trees.
  * @author Sean A. Irvine
  */
 public class A033185 extends MemoryFunctionInt3<Z> implements Sequence {
@@ -44,7 +44,7 @@ public class A033185 extends MemoryFunctionInt3<Z> implements Sequence {
     }
     Z sum = Z.ZERO;
     for (int j = 0; j <= Math.min(n / i, p); ++j) {
-      sum = sum.add(get(n - i * j, i - 1, p - j).multiply(Binomial.binomial(getT(i).longValueExact() + j - 1, j)));
+      sum = sum.add(get(n - i * j, i - 1, p - j).multiply(Binomial.binomial(getT(i).add(j - 1), Z.valueOf(j))));
     }
     return sum;
   }

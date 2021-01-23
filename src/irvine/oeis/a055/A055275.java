@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055275 First differences of <code>9^n (A001019)</code>.
+ * A055275 First differences of 9^n (A001019).
  * @author Georg Fischer
  */
 public class A055275 extends HolonomicRecurrence {

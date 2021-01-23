@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025033 Increasing number of <code>non-residues</code> (number of <code>non-residues)</code>.
+ * A025033 Increasing number of non-residues (number of non-residues).
  * @author Sean A. Irvine
  */
 public class A025033 implements Sequence {

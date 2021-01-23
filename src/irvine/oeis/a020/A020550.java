@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020550 4th Fibonacci polynomial evaluated at <code>x=n!</code>.
+ * A020550 4th Fibonacci polynomial evaluated at x=n!.
  * @author Sean A. Irvine
  */
 public class A020550 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027679 When squared gives number composed of digits <code>{2,4,8}</code> with each of these digits appearing at least once.
+ * A027679 When squared gives number composed of digits {2,4,8} with each of these digits appearing at least once.
  * @author Sean A. Irvine
  */
 public class A027679 implements Sequence {
@@ -13,7 +13,7 @@ public class A027679 implements Sequence {
 
   private boolean is(Z n) {
     int seen = 0;
-    while (!Z.ZERO.equals(n)) {
+    while (!n.isZero()) {
       final long r = n.mod(10);
       if (r != 2 && r != 4 && r != 8) {
         return false;

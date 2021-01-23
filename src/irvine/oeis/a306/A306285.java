@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306285 Numbers congruent to 4 or <code>21 mod 26</code>.
+ * A306285 Numbers congruent to 4 or 21 mod 26.
  * @author Georg Fischer
  */
 public class A306285 extends GeneratingFunctionSequence {

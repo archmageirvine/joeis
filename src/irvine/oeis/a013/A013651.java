@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013651 Period of continued fraction for <code>sqrt(n)</code> contains at least two <code>1</code>'s.
+ * A013651 Period of continued fraction for sqrt(n) contains at least two 1's.
  * @author Sean A. Irvine
  */
 public class A013651 implements Sequence {
@@ -23,7 +23,7 @@ public class A013651 implements Sequence {
     while (true) {
       final Z n = Z.valueOf(++mN);
       final Z[] sqrt = n.sqrtAndRemainder();
-      if (Z.ZERO.equals(sqrt[1])) {
+      if (sqrt[1].isZero()) {
         continue;
       }
       int oneCount = 0;

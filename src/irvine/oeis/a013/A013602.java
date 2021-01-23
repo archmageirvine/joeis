@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013602 <code>a(n) = nextprime(4^n)-4^n</code>.
+ * A013602 a(n) = nextprime(4^n)-4^n.
  * @author Sean A. Irvine
  */
 public class A013602 implements Sequence {

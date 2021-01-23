@@ -6,7 +6,7 @@ package irvine.oeis.a272;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A272068 <code>a(n) = (10^n-1)^5</code>.
+ * A272068 a(n) = (10^n-1)^5.
  * @author Georg Fischer
  */
 public class A272068 extends GeneratingFunctionSequence {

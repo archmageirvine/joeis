@@ -7,7 +7,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A221179 A convolution triangle of numbers obtained from <code>A146559</code>.
+ * A221179 A convolution triangle of numbers obtained from A146559.
  * @author Georg Fischer
  */
 public class A221179 extends GeneratingFunctionTriangle {

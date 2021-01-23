@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A054385 Beatty sequence for <code>e/(e-1)</code>; complement of <code>A022843</code>.
+ * A054385 Beatty sequence for e/(e-1); complement of A022843.
  * @author Sean A. Irvine
  */
 public class A054385 extends BeattySequence {

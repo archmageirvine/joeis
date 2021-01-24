@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A171108 a(n) = 3*(n-1)*(n-2)*(3*n^2-3*n-11)/2.
+ * A171108 a(n) is the Severi degree for curves of degree n and cogenus 2.
  * @author Sean A. Irvine
  */
 public class A171108 extends LinearRecurrence {

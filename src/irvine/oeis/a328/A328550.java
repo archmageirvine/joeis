@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328550 a(n) = 9*n^6/2 - 27*n^5 + 9*n^4/2 + 429*n^3/2 - 229*n^2 - 829*n/2 + 525.
+ * A328550 a(n) is the least prime p such that the next prime after p with the same last digit as p is p+10*n.
  * @author Georg Fischer
  */
 public class A328550 extends HolonomicRecurrence {

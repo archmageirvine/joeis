@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A038501 Upper bound on minimal norm of a quadratic form.
+ * A038501 Upper bound on minimal norm of a quadratic form where n runs over the odd primes.
  * @author Sean A. Irvine
  */
 public class A038501 extends A000040 {

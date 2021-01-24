@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328551 a(n) = -8865 + (18057/4)*n + (37881/8)*n^2 - 2529*n^3 - 642*n^4 + (1809/4)*n^5 - 27*n^7 + (27/8)*n^8.
+ * A328551 a(n) is the Severi degree for curves of degree n and cogenus 4.
  * @author Georg Fischer
  */
 public class A328551 extends HolonomicRecurrence {

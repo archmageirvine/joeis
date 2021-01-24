@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A038369 Numbers n such that n = (product of digits of n) * (sum of digits of n).
+ * A038369 Numbers k such that k = (product of digits of k) * (sum of digits of k).
  * @author Georg Fischer
  */
 public class A038369 extends FiniteSequence {

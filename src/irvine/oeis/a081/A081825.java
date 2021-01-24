@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A081825 Decimal expansion of atomic mass constant.
+ * A081825 Decimal expansion of atomic mass constant, in kg.
  * @author Georg Fischer
  */
 public class A081825 extends NoncomputableSequence {

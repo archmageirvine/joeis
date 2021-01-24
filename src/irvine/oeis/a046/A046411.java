@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046411 Numbers whose concatenation of prime factors is a prime.
+ * A046411 Composite numbers the concatenation of whose prime factors is a prime.
  * @author Sean A. Irvine
  */
 public class A046411 implements Sequence {

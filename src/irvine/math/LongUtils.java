@@ -19,9 +19,7 @@ public final class LongUtils {
 
   private LongUtils() { }
 
-  /**
-   * A hard limit for the <code>modPow</code> function
-   */
+  /** A hard limit for the <code>modPow</code> function */
   public static final long MODLIMIT = (long) Math.sqrt(Long.MAX_VALUE);
 
   /**
@@ -52,7 +50,6 @@ public final class LongUtils {
     } else if (e == 2) {
       return (a * a) % n;
     }
-
     long r = 1;
     while (e != 0) {
       if ((e & 1) != 0) {
@@ -61,7 +58,6 @@ public final class LongUtils {
       }
       a *= a;
       a %= n;
-      // if (r == 0) return 0;
       e >>>= 1;
     }
     return r;
@@ -158,8 +154,7 @@ public final class LongUtils {
     return jacobi(m, n);
   }
 
-  // two less than the number of bits in a long
-  private static final int BITS = 62;
+  private static final int BITS = Long.SIZE - 2;
 
   /**
    * Return the integer square root of a positive long. If <code>n&lt;0</code> then an
@@ -181,7 +176,6 @@ public final class LongUtils {
     } else if (n >= (1L << BITS)) {
       return Z.valueOf(n).sqrt().longValue();
     }
-
     long na = 3L << (2 * ((BITS >>> 1) - 1));
     long a = 1L << (BITS >>> 1);
     while ((n & na) == 0L) {
@@ -304,12 +298,10 @@ public final class LongUtils {
     if (n < 1) {
       throw new IllegalArgumentException();
     }
-
     // Handle powers of 2
     if ((n & -n) == n) {
       return n == 1 ? 1 : n / 2;
     }
-
     // Handle even part
     long two = 1;
     while ((n & 1) == 0) {
@@ -319,7 +311,6 @@ public final class LongUtils {
     if (two > 1) {
       two >>>= 1;
     }
-
     // Handle 3
     long three = 1;
     while (n % 3 == 0) {
@@ -330,7 +321,6 @@ public final class LongUtils {
       three /= 3;
       three <<= 1;
     }
-
     // Handle 5
     long five = 1;
     while (n % 5 == 0) {
@@ -341,7 +331,6 @@ public final class LongUtils {
       five /= 5;
       five <<= 2;
     }
-
     long r;
     if (PRIME.isPrime(n)) {
       // Handle prime

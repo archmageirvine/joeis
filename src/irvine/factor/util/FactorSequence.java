@@ -59,9 +59,7 @@ public final class FactorSequence {
     return sb.toString();
   }
 
-  /**
-   * Hold the status and exponent information for a factor.
-   */
+  /** Hold the status and exponent information for a factor. */
   private static class Factor {
     Factor(final int status, final int exponent) {
       mStatus = status;
@@ -118,7 +116,6 @@ public final class FactorSequence {
         f.mStatus = COMPOSITE;
       }
     }
-
     // special handling for -1
     if (n.equals(NEG_ONE)) {
       final int exp = getExponent(NEG_ONE);
@@ -338,7 +335,6 @@ public final class FactorSequence {
           d[i] = m;
         }
       } else {
-        assert p.length == 2;
         final int lim1 = limits[1] + 1;
         final int lim0 = limits[0] * lim1;
         final Z p0 = p[0];

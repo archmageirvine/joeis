@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038592.
+ * A038592 Cubefree self avoiding walks in 2 dimensions of length n.
  * @author Sean A. Irvine
  */
 public class A038592 implements Sequence {

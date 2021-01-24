@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A275026 a(n) is the largest number k such that the sum of divisors of k does not exceed the n-th power of the number of divisors of k.
+ * A275026 a(n) = largest number k such that the sum of divisors of k does not exceed the n-th power of the number of divisors of k.
  *
  * @author Georg Fischer
  */

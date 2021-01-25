@@ -10,19 +10,18 @@ import irvine.oeis.a000.A000931;
  */
 public class A134732 extends A000931 {
 
-  protected String mConc;
+  protected final StringBuilder mConc = new StringBuilder();
 
   /** Construct the sequence. */
   public A134732() {
     for (int i = 0; i <= 4; ++i) {
       super.next();
     }
-    mConc = "";
   }
 
   @Override
   public Z next() {
-    mConc += super.next().toString();
+    mConc.append(super.next());
     return new Z(mConc);
   }
 

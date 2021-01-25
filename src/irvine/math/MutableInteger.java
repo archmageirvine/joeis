@@ -53,5 +53,10 @@ public class MutableInteger {
   public int postDecrement() {
     return mValue--;
   }
+
+  @Override
+  public String toString() {
+    return String.valueOf(mValue);
+  }
 }
 

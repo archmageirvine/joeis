@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A171382 a(n) = (2*2^n+7*(-1)^n)/3.
+ * A171382 (2*2^n+7*(-1)^n)/3.
  * @author Georg Fischer
  */
 public class A171382 extends GeneratingFunctionSequence {

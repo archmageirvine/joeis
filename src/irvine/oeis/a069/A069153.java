@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000217;
 
 
 /**
- * A069153 a(n) = Sum_{d|n} d*(d-1)/2.
+ * A069153 Sum(d|n,d*(d-1)/2).
  * @author Georg Fischer
  */
 public class A069153 extends InverseMobiusTransformSequence {

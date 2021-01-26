@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038544 a(n) = Sum_{i=0..10^n} i^3.
+ * A038544 Sum(i^3,i=0..10^n).
  * @author Sean A. Irvine
  */
 public class A038544 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a083;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A083724 Numbers k such that 11*7^k + 2 is prime.
+ * A083724 Numbers n such that 11*7^n + 2 is prime.
  * @author Georg Fischer
  */
 public class A083724 extends PowerFactorPrimeSequence {

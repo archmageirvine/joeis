@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a024.A024916;
 
 /**
- * A175254 a(n) = Sum_{k&lt;=n} A000203(k)*(n-k+1), where A000203(m) is the sum of divisors of m.
+ * A175254 a(n) = Sum_{k&lt;=n} A000203(k) * (n-k+1), where A000203(m) = sum of divisors of m.
  * @author Georg Fischer
  */
 public class A175254 extends PartialSumSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A052276 Nonnegative numbers of the form n^3 (+/-) 3, n &gt;= 0.
+ * A052276 Nonnegative numbers of form n^3 (+/-) 3, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A052276 extends GeneratingFunctionSequence {

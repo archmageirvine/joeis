@@ -10,8 +10,8 @@ import irvine.oeis.Sequence;
  */
 public class A008292 extends MemoryFunction2<Long, Z> implements Sequence {
 
-  private long mN = 0;
-  private long mM = 0;
+  protected long mN = 0;
+  protected long mM = 0;
 
   @Override
   protected Z compute(final Long n, final Long k) {

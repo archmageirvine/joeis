@@ -1,5 +1,7 @@
 package irvine.oeis;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -37,4 +39,21 @@ public class PaddingSequence implements Sequence {
     ++mN;
     return mN < mLLen ? mLList[mN] : (mRLen == 1 ? mRList[0] : mRList[mN % mRLen]);
   }
+
+  /**
+   * Gets the list of initial terms.
+   * @return array of terms
+   */
+  public Z[] getInitTerms() {
+    return Arrays.copyOf(mLList, mLList.length);
+  }
+
+  /**
+   * Gets the list of initial terms.
+   * @return array of terms
+   */
+  public Z[] getPaddingTerms() {
+    return Arrays.copyOf(mRList, mRList.length);
+  }
+
 }

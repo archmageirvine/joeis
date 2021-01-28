@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A038702 Prime(n)^2 mod prime(n-1).
+ * A038703 Primes p such that p^2 mod q is odd, where q is the previous prime.
  * @author Sean A. Irvine
  */
 public class A038703 extends A000040 {

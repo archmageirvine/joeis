@@ -1,5 +1,6 @@
 package irvine.oeis;
 
+import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.z.Z;
@@ -46,5 +47,14 @@ public class PeriodicSequence implements Sequence {
     mN %= mSeq.length;
     return mSeq[mN];
   }
+
+  /**
+   * Gets the finite list of terms.
+   * @return array of terms
+   */
+  public Z[] getInitTerms() {
+    return Arrays.copyOf(mSeq, mSeq.length);
+  }
+
 }
 

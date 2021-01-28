@@ -103,4 +103,45 @@ public class LinearRecurrence implements Sequence {
     }
     return t;
   }
+
+  /**
+   * Gets the vector for the terms that participate in the recurrence.
+   * @return a vector for the initial values of the sequence.
+   */
+  public Z[] getTerms() {
+    return mPrev;
+  }
+
+  /**
+   * Gets the vector for the initial terms.
+   * @return the prefixed terms followed by the terms that participate in the recurrence.
+   */
+  public Z[] getInitTerms() {
+    final Z[] result = new Z[mPreTerms.length + mPrev.length];
+    System.arraycopy(mPreTerms, 0, result, 0, mPreTerms.length);
+    System.arraycopy(mPrev, 0, result, mPreTerms.length, mPrev.length);
+    return result;
+  }
+
+  /**
+   * Gets the vector for the recurrence (reversed signature).
+   * @return a vector with the constant coefficients.
+   */
+  public Z[] getRecurrence() {
+    return mRecur;
+  }
+
+  /**
+   * Gets the vector for the signature (reversed recurrence).
+   * @return a vector with the constant coefficients.
+   */
+  public Z[] getSignature() {
+    final int rlen = mRecur.length;
+    final Z[] result = new Z[rlen];
+    for (int irec = 0; irec < rlen; irec++) {
+      result[irec] = mRecur[rlen - 1 - irec];
+    }
+    return result;
+  }
+
 }

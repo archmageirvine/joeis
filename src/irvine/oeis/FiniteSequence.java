@@ -1,5 +1,6 @@
 package irvine.oeis;
 
+import java.util.Arrays;
 import java.util.Collection;
 
 import irvine.math.z.Z;
@@ -53,5 +54,14 @@ public class FiniteSequence implements Sequence {
   public Z a(final int index) {
     return mSeq[index];
   }
+
+  /**
+   * Gets the finite list of terms.
+   * @return array of terms
+   */
+  public Z[] getInitTerms() {
+    return Arrays.copyOf(mSeq, mSeq.length);
+  }
+
 }
 

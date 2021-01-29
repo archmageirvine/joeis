@@ -25,7 +25,7 @@ public class A030167 extends ContinuedFractionSequence {
 
       @Override
       protected void ensureAccuracy(final int n) {
-        while (mNum.bitLength() < 4 * n) { // 4 > log2(10)
+        while (mNum.bitLength() < 1000 * n) { // Hacky heuristic -- this is dubious!
           mNum = mNum.multiply(10).add(mChamperknowne.next());
           mDen = mDen.multiply(10);
         }

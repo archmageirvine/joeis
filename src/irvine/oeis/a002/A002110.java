@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A002110 implements Sequence {
 
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
   protected long mP = 0;
   private Z mA = Z.ONE;
 

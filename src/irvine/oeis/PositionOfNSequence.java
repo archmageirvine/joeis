@@ -12,6 +12,7 @@ import irvine.math.z.Z;
  */
 public class PositionOfNSequence implements Sequence {
 
+  private static final int BIT_LIMIT = 50;
   private final Sequence mS;
   protected final TreeMap<Long, Long> mMap = new TreeMap<>();
   protected long mN;
@@ -49,7 +50,13 @@ public class PositionOfNSequence implements Sequence {
   public Z next() {
     ++mN;
     while (!mMap.containsKey(mN)) {
-      mMap.putIfAbsent(mS.next().longValueExact(), ++mM);
+      ++mM;
+      final Z s = mS.next();
+      // If s is very large, then we will never be able to generate sufficient sequence
+      // to reach that value.  So we simply discard big values.
+      if (s.bitLength() < BIT_LIMIT) {
+        mMap.putIfAbsent(s.longValueExact(), mM);
+      }
     }
     return Z.valueOf(mMap.remove(mN));
   }

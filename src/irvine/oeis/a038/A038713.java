@@ -4,15 +4,15 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038712 Let k be the exponent of highest power of 2 dividing n (A007814); a(n) = 2^(k+1)-1.
+ * A038713 a(n) = n XOR (n-1), i.e., nim-sum of sequential pairs, written in binary.
  * @author Sean A. Irvine
  */
-public class A038712 implements Sequence {
+public class A038713 implements Sequence {
 
   private long mN = 0;
 
   @Override
   public Z next() {
-    return Z.valueOf(mN ^ ++mN);
+    return new Z(Long.toBinaryString(mN ^ ++mN));
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A162537 a(n) = the smallest positive multiple of n where every length of the runs of 0's and 1's in the binary representation of a(n) is coprime to n.
+ * A162537 a(n) is the smallest positive multiple k of n such that every length of the runs of 0's and 1's in the binary representation of k is coprime to n.
  * @author Sean A. Irvine
  */
 public class A162537 implements Sequence {

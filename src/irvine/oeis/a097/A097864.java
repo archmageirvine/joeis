@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A097864 a(n) = 2*a(n-9) - a(n-18).
+ * A097864 Matrix recurrence A[n] = M * A[n-1] with A[0] = [[0,1,1],[1,1,2],[1,2,4]] and M = [[0,1,0],[0,1,0],[1,1,1]], flattened.
  * @author Georg Fischer
  */
 public class A097864 extends HolonomicRecurrence {

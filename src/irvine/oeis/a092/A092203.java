@@ -6,7 +6,7 @@ import irvine.oeis.GeneratingFunctionSequence;
 
 
 /**
- * A092203 Molien series for 16-dimensional group of structure O_{4}^{+}(2) and order 72, corresponding to genus 2 complete weight enumerators of Hermitian self-dual GF(2)-linear codes over GF(4) containing the all-ones vector.
+ * A092203 Molien series for 16-dimensional group of structure 2^4.O_{4}^{+}(F_2) = 2^4.(S_3 X S_3).2 and order 1152, corresponding to genus 2 complete weight enumerators of Hermitian self-dual GF(2)-linear codes over GF(4) containing the all-ones vector.
  * @author Georg Fischer
  */
 public class A092203 extends GeneratingFunctionSequence {

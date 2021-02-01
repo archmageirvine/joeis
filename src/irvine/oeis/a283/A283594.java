@@ -8,7 +8,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A283594 Numbers k such that k![12]+2 is prime, where k![12] is the twelvefold multi-factorial.
+ * A283594 Numbers k such that k![12]+2 is prime, where k![12] is the twelve-fold multifactorial.
  * @author Georg Fischer
  */
 public class A283594 extends PrimePositionSubsequence {

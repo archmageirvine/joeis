@@ -8,7 +8,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A283559 Numbers k such that k![10]-2 is prime, where k![10] is the tenfold multi-factorial.
+ * A283559 Numbers k such that k![10]-2 is prime, where k![10] is the ten-fold multifactorial.
  * @author Georg Fischer
  */
 public class A283559 extends PrimePositionSubsequence {

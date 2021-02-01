@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038676 Fourth powers ending in a (different) fourth power.
+ * A038676 Fourth powers ending in a (different) positive fourth power.
  * @author Sean A. Irvine
  */
 public class A038676 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025753 8th order Patalan numbers (generalization of Catalan numbers).
+ * A025753 8th-order Patalan numbers (generalization of Catalan numbers).
  * @author Sean A. Irvine
  */
 public class A025753 implements Sequence {

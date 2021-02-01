@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025761 8th order Vatalan numbers (generalization of Catalan numbers).
+ * A025761 8th-order Vatalan numbers (generalization of Catalan numbers).
  * @author Sean A. Irvine
  */
 public class A025761 implements Sequence {

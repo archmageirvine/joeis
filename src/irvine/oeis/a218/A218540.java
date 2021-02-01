@@ -6,7 +6,7 @@ package irvine.oeis.a218;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A218540 Reduced third order Patalan numbers.
+ * A218540 Reduced third-order Patalan numbers.
  * @author Georg Fischer
  */
 public class A218540 extends HolonomicRecurrence {

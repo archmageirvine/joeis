@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038693 Numbers n such that concatenation of prime factors is a perfect square.
+ * A038693 Numbers n such that the concatenation of the prime factors of n (with multiplicity) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A038693 implements Sequence {

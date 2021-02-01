@@ -8,7 +8,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A284310 Numbers k such that k![14] + 2 is prime, where k![14] is the fourteenfold multi-factorial.
+ * A284310 Numbers k such that k![14] + 2 is prime, where k![14] is the fourteen-fold multifactorial.
  * @author Georg Fischer
  */
 public class A284310 extends PrimePositionSubsequence {

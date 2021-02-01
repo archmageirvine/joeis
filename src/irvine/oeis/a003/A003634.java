@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A003634 Smallest positive number that is n times sum of its digits, or 0 if no such number exists.
+ * A003634 Smallest positive integer that is n times its digit sum, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A003634 implements Sequence {

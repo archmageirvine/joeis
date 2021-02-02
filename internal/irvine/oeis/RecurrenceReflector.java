@@ -28,7 +28,7 @@ public class RecurrenceReflector {
   /**
    * Debugging level: 0 = none, 1 = some, 2 = more
    */
-  private int mDebug;
+  protected int mDebug;
 
   /**
    * No-args Constructor
@@ -85,7 +85,7 @@ public class RecurrenceReflector {
       Method superNextMethod = null; // one of the above
 
       // Encoding of the input file
-      try (final BufferedReader lineReader =  fileName == null || fileName.length() <= 0 || "-".equals(fileName)
+      try (final BufferedReader lineReader = fileName == null || fileName.length() <= 0 || "-".equals(fileName)
         ? new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8))
         : new BufferedReader(Channels.newReader((new FileInputStream(fileName)).getChannel(), StandardCharsets.UTF_8.name()))
       ) {
@@ -105,147 +105,140 @@ public class RecurrenceReflector {
               }
             }
             ipart = 0; // leave aseqno and callCode
-            /**
-             * A-number of sequence currently tested
-             */
+            // A-number of sequence currently tested
             final String aseqno = parts[ipart++];
             final String callCode = parts[ipart++];
             final String className = "irvine.oeis.a" + aseqno.substring(1, 4) + '.' + aseqno;
-            try {
-              if (callCode.startsWith("conti")) { // root and period
-                superNextMethod = contiNextMethod;
-                final ContinuedFractionOfSqrtSequence hseq = (ContinuedFractionOfSqrtSequence) Class.forName(className).getDeclaredConstructor().newInstance();
-                seq = hseq;
-                ipart++; // skip offset
-                hseq.fillPeriod();
-                final int plen = hseq.getPeriodLength();
-                parts[ipart++] = getPeriodicRecurrence(plen); // MATRIX
+            if (callCode.startsWith("conti")) { // root and period
+              superNextMethod = contiNextMethod;
+              final ContinuedFractionOfSqrtSequence hseq = (ContinuedFractionOfSqrtSequence) Class.forName(className).getDeclaredConstructor().newInstance();
+              seq = hseq;
+              ipart++; // skip offset
+              hseq.fillPeriod();
+              final int plen = hseq.getPeriodLength();
+              parts[ipart++] = getPeriodicRecurrence(plen); // MATRIX
 
-                buffer.setLength(0);
-                buffer.append('[');
-                buffer.append(hseq.next().divide2()); // root
-                for (int iterm = 0; iterm < plen; ++iterm) {
-                  buffer.append(',');
-                  buffer.append(hseq.next());
-                }
-                buffer.append(']');
-                parts[ipart++] = buffer.toString(); // INIT
-                parts[ipart++] = "0";
-                parts[ipart++] = "0";
-
-              } else if (callCode.startsWith("finit")) { // finite list followed null (later: by zeroes)
-                superNextMethod = finitNextMethod;
-                final FiniteSequence hseq = (FiniteSequence) Class.forName(className).getDeclaredConstructor().newInstance();
-                seq = hseq;
-                ipart++; // skip offset
-                parts[ipart++] = "[0]"; // MATRIX or later "[0,-1]"
-                parts[ipart++] = getVectorString(hseq.getInitTerms()); // INIT
-                parts[ipart++] = "0";
-                parts[ipart++] = "0";
-              } else if (callCode.startsWith("gener")
-                || callCode.startsWith("coord")
-                || callCode.startsWith("coxet")
-              ) { // fraction of two polynomials
-                superNextMethod = generNextMethod;
-                final GeneratingFunctionSequence hseq = (GeneratingFunctionSequence) Class.forName(className).getDeclaredConstructor().newInstance();
-                seq = hseq;
-                ipart++; // skip offset
-                final Z[] num = hseq.getNum();
-                final Z[] den = hseq.getDen();
-                final int mlen = num.length;
-                final int dlen = den.length;
-                buffer.setLength(0);
-                for (int iterm = dlen - 1; iterm >= 1; --iterm) {
-                  buffer.append(',');
-                  buffer.append(den[iterm]);
-                }
+              buffer.setLength(0);
+              buffer.append('[');
+              buffer.append(hseq.next().divide2()); // root
+              for (int iterm = 0; iterm < plen; ++iterm) {
                 buffer.append(',');
-                buffer.append(den[0]);
-                parts[ipart++] = "[0" + buffer.toString() + "]"; // MATRIX
-
-                buffer.setLength(0);
-                for (int iterm = Math.max(dlen, mlen); iterm >= 1; --iterm) {
-                  buffer.append(',');
-                  buffer.append(hseq.next());
-                }
-                buffer.append(']');
-                parts[ipart++] = "[" + buffer.substring(1); // INIT
-                parts[ipart++] = "0";
-                parts[ipart++] = String.valueOf(hseq.getGfType());
-
-              } else if (callCode.startsWith("holon")) { // holonomic recurrence
-                superNextMethod = holonNextMethod;
-                final HolonomicRecurrence hseq = (HolonomicRecurrence) Class.forName(className).getDeclaredConstructor().newInstance();
-                seq = hseq;
-                parts[ipart++] = String.valueOf(hseq.getOffset());
-                parts[ipart++] = hseq.getPolyString();
-                parts[ipart++] = hseq.getInitString();
-                parts[ipart++] = String.valueOf(hseq.getDistance());
-                parts[ipart++] = String.valueOf(hseq.getGfType());
-
-              } else if (callCode.startsWith("linea")) { // reversed signature + initial terms
-                superNextMethod = lineaNextMethod;
-                final LinearRecurrence hseq = (LinearRecurrence) Class.forName(className).getDeclaredConstructor().newInstance();
-                seq = hseq;
-                ipart++; // skip offset
-                parts[ipart++] = getVectorString(hseq.getRecurrence())
-                  .replaceAll("\\[", "[0,").replaceAll("\\]", ",-1]"); // +constant, -a(n) (align to HolonomicRecurrence)
-                parts[ipart++] = getVectorString(hseq.getInitTerms());
-                parts[ipart++] = "0";
-                parts[ipart++] = "0"; // gfType = ordinary
-
-              } else if (callCode.startsWith("paddi")) { // padding: padding terms repeated, overlaid by init terms
-                superNextMethod = paddiNextMethod;
-                final PaddingSequence hseq = (PaddingSequence) Class.forName(className).getDeclaredConstructor().newInstance();
-                seq = hseq;
-                ipart++; // skip offset
-                final Z[] terms = hseq.getInitTerms();
-                final Z[] pads = hseq.getPaddingTerms();
-                final int tlen = terms.length;
-                final int plen = pads.length;
-                parts[ipart++] = getPeriodicRecurrence(plen); // MATRIX
-                buffer.setLength(0);
-                for (int iterm = 0; iterm < tlen + plen; ++iterm) {
-                  buffer.append(',');
-                  buffer.append(iterm < tlen ? terms[iterm].toString() : pads[iterm % plen].toString());
-                }
-                parts[ipart++] = "[" + buffer.substring(1) + "]"; // INIT
-                parts[ipart++] = "0";
-                parts[ipart++] = "0";
-
-              } else if (callCode.startsWith("perio")) { // periodic
-                superNextMethod = perioNextMethod;
-                final PeriodicSequence hseq = (PeriodicSequence) Class.forName(className).getDeclaredConstructor().newInstance();
-                seq = hseq;
-                ipart++; // skip offset
-                final Z[] terms = hseq.getInitTerms();
-                parts[ipart++] = getPeriodicRecurrence(terms.length); // MATRIX
-                parts[ipart++] = getVectorString(terms); // INIT
-                parts[ipart++] = "0";
-                parts[ipart++] = "0";
-              } else { // ignore
-              } // end of switch for callCodes
-              if (seq == null) {
-                // ignore
-              } else if (parts[3].length() < 8192 && parts[4].length() < 4096) {
-                final Method thisNextMethod = seq.getClass().getMethod("next");
-                if (thisNextMethod.equals(superNextMethod)) {
-                  for (ipart = 0; ipart < parts.length; ++ipart) { // print a tab-separated record
-                    if (ipart > 0) {
-                      System.out.print("\t");
-                    }
-                    System.out.print(parts[ipart]);
-                  } // for ipart
-                  System.out.println();
-                } else {
-                  System.err.println("# " + aseqno + "\t" + callCode + "\tdoesn't use super.next()");
-                }
-              } else {
-                System.err.println("# " + aseqno + "\t" + callCode + "\trecord length > 8192 + 4096");
+                buffer.append(hseq.next());
               }
-            } catch (final Exception exc) {
-              System.err.println("# cannot construct " + className + ", exception: " + exc.getMessage());
-              exc.printStackTrace();
+              buffer.append(']');
+              parts[ipart++] = buffer.toString(); // INIT
+              parts[ipart++] = "0";
+              parts[ipart++] = "0";
+
+            } else if (callCode.startsWith("finit")) { // finite list followed null (later: by zeroes)
+              superNextMethod = finitNextMethod;
+              final FiniteSequence hseq = (FiniteSequence) Class.forName(className).getDeclaredConstructor().newInstance();
+              seq = hseq;
+              ipart++; // skip offset
+              parts[ipart++] = "[0]"; // MATRIX or later "[0,-1]"
+              parts[ipart++] = getVectorString(hseq.getInitTerms()); // INIT
+              parts[ipart++] = "0";
+              parts[ipart++] = "0";
+            } else if (callCode.startsWith("gener")
+              || callCode.startsWith("coord")
+              || callCode.startsWith("coxet")
+            ) { // fraction of two polynomials
+              superNextMethod = generNextMethod;
+              final GeneratingFunctionSequence hseq = (GeneratingFunctionSequence) Class.forName(className).getDeclaredConstructor().newInstance();
+              seq = hseq;
+              ipart++; // skip offset
+              final Z[] num = hseq.getNum();
+              final Z[] den = hseq.getDen();
+              final int mlen = num.length;
+              final int dlen = den.length;
+              buffer.setLength(0);
+              for (int iterm = dlen - 1; iterm >= 1; --iterm) {
+                buffer.append(',');
+                buffer.append(den[iterm]);
+              }
+              buffer.append(',');
+              buffer.append(den[0]);
+              parts[ipart++] = "[0" + buffer.toString() + "]"; // MATRIX
+
+              buffer.setLength(0);
+              for (int iterm = Math.max(dlen, mlen); iterm >= 1; --iterm) {
+                buffer.append(',');
+                buffer.append(hseq.next());
+              }
+              buffer.append(']');
+              parts[ipart++] = "[" + buffer.substring(1); // INIT
+              parts[ipart++] = "0";
+              parts[ipart++] = String.valueOf(hseq.getGfType());
+
+            } else if (callCode.startsWith("holon")) { // holonomic recurrence
+              superNextMethod = holonNextMethod;
+              final HolonomicRecurrence hseq = (HolonomicRecurrence) Class.forName(className).getDeclaredConstructor().newInstance();
+              seq = hseq;
+              parts[ipart++] = String.valueOf(hseq.getOffset());
+              parts[ipart++] = hseq.getPolyString();
+              parts[ipart++] = hseq.getInitString();
+              parts[ipart++] = String.valueOf(hseq.getDistance());
+              parts[ipart++] = String.valueOf(hseq.getGfType());
+
+            } else if (callCode.startsWith("linea")) { // reversed signature + initial terms
+              superNextMethod = lineaNextMethod;
+              final LinearRecurrence hseq = (LinearRecurrence) Class.forName(className).getDeclaredConstructor().newInstance();
+              seq = hseq;
+              ipart++; // skip offset
+              parts[ipart++] = getVectorString(hseq.getRecurrence())
+                .replaceAll("\\[", "[0,").replaceAll("\\]", ",-1]"); // +constant, -a(n) (align to HolonomicRecurrence)
+              parts[ipart++] = getVectorString(hseq.getInitTerms());
+              parts[ipart++] = "0";
+              parts[ipart++] = "0"; // gfType = ordinary
+
+            } else if (callCode.startsWith("paddi")) { // padding: padding terms repeated, overlaid by init terms
+              superNextMethod = paddiNextMethod;
+              final PaddingSequence hseq = (PaddingSequence) Class.forName(className).getDeclaredConstructor().newInstance();
+              seq = hseq;
+              ipart++; // skip offset
+              final Z[] terms = hseq.getInitTerms();
+              final Z[] pads = hseq.getPaddingTerms();
+              final int tlen = terms.length;
+              final int plen = pads.length;
+              parts[ipart++] = getPeriodicRecurrence(plen); // MATRIX
+              buffer.setLength(0);
+              for (int iterm = 0; iterm < tlen + plen; ++iterm) {
+                buffer.append(',');
+                buffer.append(iterm < tlen ? terms[iterm].toString() : pads[iterm % plen].toString());
+              }
+              parts[ipart++] = "[" + buffer.substring(1) + "]"; // INIT
+              parts[ipart++] = "0";
+              parts[ipart++] = "0";
+
+            } else if (callCode.startsWith("perio")) { // periodic
+              superNextMethod = perioNextMethod;
+              final PeriodicSequence hseq = (PeriodicSequence) Class.forName(className).getDeclaredConstructor().newInstance();
+              seq = hseq;
+              ipart++; // skip offset
+              final Z[] terms = hseq.getInitTerms();
+              parts[ipart++] = getPeriodicRecurrence(terms.length); // MATRIX
+              parts[ipart++] = getVectorString(terms); // INIT
+              parts[ipart++] = "0";
+              parts[ipart++] = "0";
+            } else { // ignore
+            } // end of switch for callCodes
+            if (seq == null) {
+              // ignore
+            } else if (parts[3].length() < 8192 && parts[4].length() < 4096) {
+              final Method thisNextMethod = seq.getClass().getMethod("next");
+              if (thisNextMethod.equals(superNextMethod)) {
+                for (ipart = 0; ipart < parts.length; ++ipart) { // print a tab-separated record
+                  if (ipart > 0) {
+                    System.out.print('\t');
+                  }
+                  System.out.print(parts[ipart]);
+                } // for ipart
+                System.out.println();
+              } else {
+                System.err.println("# " + aseqno + "\t" + callCode + "\tdoesn't use super.next()");
+              }
+            } else {
+              System.err.println("# " + aseqno + "\t" + callCode + "\trecord length > 8192 + 4096");
             }
           } else { // commented out, empty ...
             // ignore lines without A-numbers

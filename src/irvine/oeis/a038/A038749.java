@@ -12,7 +12,11 @@ import irvine.oeis.Sequence;
  */
 public class A038749 implements Sequence {
 
-  private final Walker mWalker = new ExactContactsWalker(Lattices.Z3, 1) {
+  protected int param() {
+    return 1;
+  }
+
+  private final Walker mWalker = new ExactContactsWalker(Lattices.Z3, param()) {
 
     private boolean containsPositiveStep(final int remainingSteps, final int ordinate) {
       for (int k = mN - remainingSteps; k >= 0; --k) {

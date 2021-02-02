@@ -8,6 +8,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Method;
 import java.nio.channels.Channels;
+import java.nio.charset.StandardCharsets;
 
 import irvine.math.z.Z;
 
@@ -25,19 +26,9 @@ public class RecurrenceReflector {
   private static final String VERSION = "RecurrenceReflector V1.0";
 
   /**
-   * A-number of sequence currently tested
-   */
-  private String mAseqno;
-
-  /**
    * Debugging level: 0 = none, 1 = some, 2 = more
    */
   private int mDebug;
-
-  /**
-   * Encoding of the input file
-   */
-  private String mSrcEncoding;
 
   /**
    * No-args Constructor
@@ -45,7 +36,6 @@ public class RecurrenceReflector {
   public RecurrenceReflector() {
     // set default for variables and arguments
     mDebug = 0;
-    mSrcEncoding = "UTF-8";
   } // no-args Constructor
 
   /**
@@ -94,10 +84,10 @@ public class RecurrenceReflector {
       final Method perioNextMethod = PeriodicSequence.class.getMethod("next");
       Method superNextMethod = null; // one of the above
 
-      final String srcEncoding = "UTF-8"; // Encoding of the input file
-      try (final BufferedReader lineReader =  fileName == null || fileName.length() <= 0 || fileName.equals("-")
-        ? new BufferedReader(new InputStreamReader(System.in, srcEncoding))
-        : new BufferedReader(Channels.newReader((new FileInputStream(fileName)).getChannel(), srcEncoding))
+      // Encoding of the input file
+      try (final BufferedReader lineReader =  fileName == null || fileName.length() <= 0 || "-".equals(fileName)
+        ? new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8))
+        : new BufferedReader(Channels.newReader((new FileInputStream(fileName)).getChannel(), StandardCharsets.UTF_8.name()))
       ) {
         String line;
         Sequence seq = null;
@@ -115,9 +105,12 @@ public class RecurrenceReflector {
               }
             }
             ipart = 0; // leave aseqno and callCode
-            mAseqno = parts[ipart++];
+            /**
+             * A-number of sequence currently tested
+             */
+            final String aseqno = parts[ipart++];
             final String callCode = parts[ipart++];
-            final String className = "irvine.oeis.a" + mAseqno.substring(1, 4) + '.' + mAseqno;
+            final String className = "irvine.oeis.a" + aseqno.substring(1, 4) + '.' + aseqno;
             try {
               if (callCode.startsWith("conti")) { // root and period
                 superNextMethod = contiNextMethod;
@@ -130,10 +123,10 @@ public class RecurrenceReflector {
 
                 buffer.setLength(0);
                 buffer.append('[');
-                buffer.append(hseq.next().divide2().toString()); // root
+                buffer.append(hseq.next().divide2()); // root
                 for (int iterm = 0; iterm < plen; ++iterm) {
                   buffer.append(',');
-                  buffer.append(hseq.next().toString());
+                  buffer.append(hseq.next());
                 }
                 buffer.append(']');
                 parts[ipart++] = buffer.toString(); // INIT
@@ -164,16 +157,16 @@ public class RecurrenceReflector {
                 buffer.setLength(0);
                 for (int iterm = dlen - 1; iterm >= 1; --iterm) {
                   buffer.append(',');
-                  buffer.append(den[iterm].toString());
+                  buffer.append(den[iterm]);
                 }
                 buffer.append(',');
-                buffer.append(den[0].toString());
+                buffer.append(den[0]);
                 parts[ipart++] = "[0" + buffer.toString() + "]"; // MATRIX
 
                 buffer.setLength(0);
                 for (int iterm = Math.max(dlen, mlen); iterm >= 1; --iterm) {
                   buffer.append(',');
-                  buffer.append(hseq.next().toString());
+                  buffer.append(hseq.next());
                 }
                 buffer.append(']');
                 parts[ipart++] = "[" + buffer.substring(1); // INIT
@@ -245,10 +238,10 @@ public class RecurrenceReflector {
                   } // for ipart
                   System.out.println();
                 } else {
-                  System.err.println("# " + mAseqno + "\t" + callCode + "\tdoesn't use super.next()");
+                  System.err.println("# " + aseqno + "\t" + callCode + "\tdoesn't use super.next()");
                 }
               } else {
-                System.err.println("# " + mAseqno + "\t" + callCode + "\trecord length > 8192 + 4096");
+                System.err.println("# " + aseqno + "\t" + callCode + "\trecord length > 8192 + 4096");
               }
             } catch (final Exception exc) {
               System.err.println("# cannot construct " + className + ", exception: " + exc.getMessage());

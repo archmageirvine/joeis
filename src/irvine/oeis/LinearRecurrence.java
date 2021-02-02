@@ -109,7 +109,7 @@ public class LinearRecurrence implements Sequence {
    * @return a vector for the initial values of the sequence.
    */
   public Z[] getTerms() {
-    return mPrev;
+    return Arrays.copyOf(mPrev, mPrev.length);
   }
 
   /**
@@ -128,7 +128,7 @@ public class LinearRecurrence implements Sequence {
    * @return a vector with the constant coefficients.
    */
   public Z[] getRecurrence() {
-    return mRecur;
+    return Arrays.copyOf(mRecur, mRecur.length);
   }
 
   /**

@@ -11,11 +11,6 @@ public class A222066 extends DecimalExpansionSequence {
 
   private static final CR N = CR.valueOf(128).sqrt().inverse();
 
-  /** Construct the sequence. */
-  public A222066() {
-    super(false);
-  }
-
   @Override
   protected CR getCR() {
     return N;

@@ -34,7 +34,7 @@
     <suppress checks="MethodLength" files=".*Plantri.java"/>
     <suppress checks="MethodLength" files=".*PolytopeC3Scanner.java"/>
     <suppress checks="MethodLength" files=".*PolytopeScanner.java"/>
-    <suppress checks="MethodLength" files=".*RecurrenceReflector..java"/>
+    <suppress checks="MethodLength" files=".*RecurrenceReflector.java"/>
     <suppress checks="MethodLength" files=".*A010089.java"/>
     <suppress checks="MethodLength" files=".*A018190.java"/>
     <suppress checks="MethodLength" files=".*A028486.java"/>

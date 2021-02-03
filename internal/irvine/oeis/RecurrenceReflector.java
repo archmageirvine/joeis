@@ -28,7 +28,7 @@ public class RecurrenceReflector {
   /**
    * Debugging level: 0 = none, 1 = some, 2 = more
    */
-  protected int mDebug;
+  int mDebug;
 
   /**
    * No-args Constructor

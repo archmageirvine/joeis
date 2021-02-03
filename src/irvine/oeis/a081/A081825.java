@@ -13,6 +13,6 @@ public class A081825 extends NoncomputableSequence {
 
   /** Construct the sequence. */
   public A081825() {
-    super(1, 6, 6, 0, 5, 3, 8);
+    super(1, 6, 6, 0, 5, 3, 9, 0, 6);
   }
 }

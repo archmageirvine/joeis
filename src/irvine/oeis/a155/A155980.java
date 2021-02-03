@@ -3,6 +3,7 @@ package irvine.oeis.a155;
 // DO NOT EDIT here!
 
 import irvine.oeis.DifferenceSequence;
+import irvine.oeis.PrependSequence;
 import irvine.oeis.a135.A135351;
 
 /**
@@ -13,6 +14,6 @@ public class A155980 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A155980() {
-    super(new A135351());
+    super(new PrependSequence(new A135351(), 0));
   }
 }

@@ -89,7 +89,7 @@ public class PrependSequence implements Sequence {
    * Gets the terms to be prepended.
    * @return array of numbers
    */
-  public Z[] getTerms() {
+  protected Z[] getTerms() {
     return mTerms;
   }
 }

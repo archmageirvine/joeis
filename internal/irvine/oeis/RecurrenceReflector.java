@@ -28,15 +28,7 @@ public class RecurrenceReflector {
   /**
    * Debugging level: 0 = none, 1 = some, 2 = more
    */
-  int mDebug;
-
-  /**
-   * No-args Constructor
-   */
-  public RecurrenceReflector() {
-    // set default for variables and arguments
-    mDebug = 0;
-  } // no-args Constructor
+  int mDebug = 0;
 
   /**
    * Gets a String representation of a Z array.
@@ -142,7 +134,7 @@ public class RecurrenceReflector {
             } else if (callCode.startsWith("gener")
               || callCode.startsWith("coord")
               || callCode.startsWith("coxet")
-            ) { // fraction of two polynomials
+            ) { // mFraction of two polynomials
               superNextMethod = generNextMethod;
               final GeneratingFunctionSequence hseq = (GeneratingFunctionSequence) Class.forName(className).getDeclaredConstructor().newInstance();
               seq = hseq;
@@ -272,6 +264,7 @@ public class RecurrenceReflector {
       if (arg.startsWith("-d")) {
         try {
           mDebug = Integer.parseInt(args[iarg++]);
+          System.out.println("Debug set to " + mDebug); // stop complaints about unused global
         } catch (final Throwable exc) {
           // silently assume default
         }

@@ -1,6 +1,7 @@
 /* Holonomic sequences where the recurrence equation for a(n)
  * has polynomials in n as coefficients.
  * @(#) $Id$
+ * 2021-02-03: imply "[1]" for empty initTerms
  * 2020-09-24: gftype=2, adjunct(n) to be added to the constant term
  * 2020-07-20, Georg Fischer: public getInitTerms(), protected initialize()
  * 2020-04-13, Sean Irvine: jOEIS conventions
@@ -56,7 +57,7 @@ public class HolonomicRecurrence implements Sequence {
     mOffset = 0;
     mNDist = 0;
     mPolyList = new ArrayList<>(16);
-    mInitTerms = new Z[] {Z.ZERO};
+    mInitTerms = new Z[] { Z.ONE };
     initialize();
   }
 
@@ -72,7 +73,7 @@ public class HolonomicRecurrence implements Sequence {
     mOffset = offset;
     mNDist = nDist;
     mPolyList = polyList;
-    mInitTerms = Arrays.copyOf(initTerms, initTerms.length);
+    mInitTerms = initTerms.length == 0 ? new Z[] { Z.ONE } : Arrays.copyOf(initTerms, initTerms.length);
     initialize();
   } // Constructor
 
@@ -127,7 +128,7 @@ public class HolonomicRecurrence implements Sequence {
         mPolyList.add(ZUtils.toZ(polys[k]));
       } // for k
     }
-    mInitTerms = initTerms.isEmpty() || "[]".equals(initTerms) ? new Z[0] : ZUtils.toZ(initTerms);
+    mInitTerms = (initTerms.isEmpty() || "[]".equals(initTerms)) ? new Z[] { Z.ONE } : ZUtils.toZ(initTerms);
     initialize();
   } // Constructor
 

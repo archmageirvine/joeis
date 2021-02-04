@@ -1,6 +1,5 @@
 package irvine.oeis.a038;
 
-import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
@@ -11,12 +10,8 @@ public class A038578 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A038578() {
-    super(0, new long[] {4, 0, -4, 0, 4},
+    super(0, new long[] {1, 6, -1, 0, -5, -6, -3},
       new long[] {1, -2, -1, 0, 3, 2, 1});
   }
 
-  @Override
-  public Z next() {
-    return super.next().subtract(mIndex == 1 ? 3 : 0);
-  }
 }

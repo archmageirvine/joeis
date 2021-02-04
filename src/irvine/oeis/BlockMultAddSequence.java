@@ -69,6 +69,14 @@ public class BlockMultAddSequence implements Sequence {
   }
 
   /**
+   * Get the operation code.
+   * @return String of operations containing '&lt;', '&gt;', '+' and '-'
+   */
+  public String getOper() {
+    return mOper;
+  }
+
+  /**
    * Run the add/mult sequence with the parameters on the command line
    * @param args <code>blockLen, oper</code>
    */

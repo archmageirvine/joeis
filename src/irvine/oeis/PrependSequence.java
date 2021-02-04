@@ -76,4 +76,20 @@ public class PrependSequence implements Sequence {
       }
     }
   }
+  
+  /**
+   * Gets the main sequence.
+   * @return instance of the underlying sequence
+   */
+  public Sequence getSequence() {
+    return mSeq;
+  }
+  
+  /**
+   * Gets the terms to be prepended.
+   * @return array of numbers
+   */
+  public Z[] getTerms() {
+    return mTerms;
+  }
 }

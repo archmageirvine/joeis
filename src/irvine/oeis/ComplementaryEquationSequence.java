@@ -70,6 +70,9 @@ public class ComplementaryEquationSequence extends HolonomicRecurrence {
   public ComplementaryEquationSequence(final int hereSeqNo, final String matrix, final String[] initTerms) {
     super(0, matrix, initTerms[0], 0); // all such sequences have offset 0 and distance 0
     // sets super.mOrder
+    if (initTerms[0] == null || initTerms[0].equals("") || initTerms[0].equals("[]")) {
+      super.mInitTerms = new Z[0]; // overwrite the implied new Z[] { Z.ONE }
+    }
     setGfType(2);
     mHereSeqNo = hereSeqNo;
     mUnion = new TreeSet<>();
@@ -263,7 +266,7 @@ public class ComplementaryEquationSequence extends HolonomicRecurrence {
             case "-i":
               initTerms = new String[]{args[iarg++], ""};
               break;
-            case "-m":
+            case "-n":
               maxTerms = Integer.parseInt(args[iarg++]);
               break;
             case "-p":

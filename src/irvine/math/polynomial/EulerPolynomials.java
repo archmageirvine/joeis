@@ -29,8 +29,29 @@ public final class EulerPolynomials {
     final A028296 eulerNumbers = new A028296();
     Polynomial<Q> sum = RING.zero();
     for (int k = 0; k <= n; k += 2) {
-      sum = RING.add(sum, RING.multiply(RING.pow(C, n - k), new Q(Binomial.binomial(n, k).multiply(eulerNumbers.next()), Z.ONE.shiftLeft(k))));
+      sum = RING.add(sum, RING.multiply(RING.pow(C, n - k), 
+        new Q(Binomial.binomial(n, k).multiply(eulerNumbers.next()), Z.ONE.shiftLeft(k))
+        ));
     }
     return sum;
   }
+
+  /**
+   * Return the nth Euler polynomial evaluated at m.
+   * @param n degree
+   * @param m point
+   * @return polynomial
+   */
+  public static Q eval(final int n, final Q m) {
+    final A028296 eulerNumbers = new A028296();
+    Q sum = Q.ZERO;
+    final Q x12 = m.subtract(Q.HALF);
+    for (int k = 0; k <= n; k += 2) {
+      sum = sum.add(x12.pow(n - k).multiply(
+        new Q(Binomial.binomial(n, k).multiply(eulerNumbers.next()), Z.ONE.shiftLeft(k))
+        ));
+    }
+    return sum;
+  }
+
 }

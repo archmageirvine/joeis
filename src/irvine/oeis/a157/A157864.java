@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A157864 Numerator of Euler(n, 9).
+ * A157864 Numerator of Euler(n,9).
  * @author Georg Fischer
  */
 public class A157864 implements Sequence {

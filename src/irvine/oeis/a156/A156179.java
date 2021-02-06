@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A156179 Numerator of Euler(n, 1/3).
+ * A156179 Numerator of Euler(n,1/3).
  * @author Georg Fischer
  */
 public class A156179 implements Sequence {

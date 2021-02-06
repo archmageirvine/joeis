@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A156180 Denominator of Euler(n, 1/3).
+ * A156180 Denominator of Euler(n,1/3).
  * @author Georg Fischer
  */
 public class A156180 implements Sequence {

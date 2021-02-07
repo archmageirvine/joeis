@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A038753.
+ * A038753 Nonprime partition numbers.
  * @author Sean A. Irvine
  */
 public class A038753 extends A000041 {

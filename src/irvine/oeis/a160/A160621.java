@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A160621 Numerator of Laguerre(n, 1).
- * Superclass for similiar sequences.
+ * Superclass for similar sequences.
  * The general holonomic recurrence for Laguerre(n,r) is the fraction
  * <pre>
  * Numerator:   a(n) + (-2*n+r+1)*a(n-1) + (n-1)^2*a(n-2)=0
@@ -20,7 +20,7 @@ public class A160621 extends HolonomicRecurrence {
     
   protected boolean mNumer; // true for numerators, false for denominators
   protected Z mFactorial; // maintain n! here
-  protected int mN; // current index
+  protected int mIndex; // current index (don't use mN or it will shadow the one in HolonomicRecurrence)
 
   /** Construct the sequence. */
   public A160621() {
@@ -35,7 +35,7 @@ public class A160621 extends HolonomicRecurrence {
   public A160621(final boolean numer, final long r) {
     super(0, // all these sequences start with offset 0
         "[[0],[1,-2, 1],[" + (r + 1) + ",-2],[1]]", "", 0);
-    mN = 0;
+    mIndex = 0;
     mNumer = numer;
     mFactorial = Z.ONE;
   }
@@ -43,7 +43,7 @@ public class A160621 extends HolonomicRecurrence {
   @Override
   public Z next() {
     final Q result = new Q(super.next(), mFactorial);
-    mFactorial = mFactorial.multiply(++mN);
+    mFactorial = mFactorial.multiply(++mIndex);
     return mNumer ? result.num() : result.den();
   }
 }

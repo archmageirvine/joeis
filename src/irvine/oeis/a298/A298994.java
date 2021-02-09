@@ -22,7 +22,7 @@ public class A298994 extends GeneralizedEulerTransform {
 
   @Override
   protected Z[] advanceF(final long k) {
-    return new Z[]{Z.valueOf(-1), Z.TWO};
+    return new Z[]{Z.NEG_ONE, Z.TWO};
   }
 
   @Override

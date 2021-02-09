@@ -12,7 +12,7 @@ import irvine.oeis.PrimePositionSubsequence;
  */
 public class A293853 extends PrimePositionSubsequence {
 
-  private static final Z DIV = Z.valueOf(3);
+  private static final Z DIV = Z.THREE;
   
   /** Construct the sequence */
   public A293853() {

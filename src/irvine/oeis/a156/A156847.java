@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A156847 implements Sequence {
 
-  private int mN = 0 - 1;
+  private int mN = -1;
   private final Q mFract = new Q(5, 21);
 
   @Override

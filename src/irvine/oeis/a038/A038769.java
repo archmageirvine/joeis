@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A038769.
+ * A038769 Number of digits of n which are divisors of n.
  * @author Sean A. Irvine
  */
 public class A038769 implements Sequence {

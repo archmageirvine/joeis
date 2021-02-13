@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A038768.
+ * A038768 Primes of the form A002110(k) + prime(k+1)^2.
  * @author Sean A. Irvine
  */
 public class A038768 extends A002110 {

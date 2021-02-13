@@ -1545,9 +1545,5 @@ A038552 Largest squarefree number k such that Q(sqrt(-k)) has class number n
 A038553 Maximum cycle length in differentiation digraph for n-bit binary sequences
 A038581 Depends A038552
 A038666 Minimum area rectangle into which squares of sizes 1, 2, 3, ... n can be packed.
-A038752 Earliest sequence where a(a(n))=number of partitions of n, buggy?
-A038755 Earliest sequence where a(a(n))=2^n, buggy?
-A038756 Earliest sequence where a(a(n))=3^n, buggy?
-A038757 Earliest sequence where a(a(n))=4^n, buggy?
 A038774 Cycle lengths of the permutation that converts the forest of depth-first planar planted binary trees into breadth-first representation.
 A038775 a[n] is the number of cycles of the permutation that converts forest[n] of depth-first planar planted binary trees into breadth-first representation

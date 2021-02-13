@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013934 a(n) is nonsquarefree and sum of all nonsquarefrees &lt;= a(n) is nonsquarefree.
+ * A013934 Nonsquarefree numbers k such that the sum of all nonsquarefree numbers &lt;= k is nonsquarefree.
  * @author Sean A. Irvine
  */
 public class A013934 implements Sequence {

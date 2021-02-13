@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127194 A 10th order Fibonacci sequence.
+ * A127194 A 10th-order Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A127194 extends LinearRecurrence {

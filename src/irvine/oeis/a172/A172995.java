@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A172995 Numbers n such that (3^n+7)/2 is prime.
+ * A172995 Numbers k such that (3^k + 7)/2 is prime.
  * @author Georg Fischer
  */
 public class A172995 extends PrimePositionSubsequence {

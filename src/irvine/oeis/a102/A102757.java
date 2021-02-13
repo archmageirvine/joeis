@@ -6,7 +6,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102757 Sum_{i=0..n} C(n,i)^2*i!*3^i.
+ * A102757 a(n) = Sum_{i=0..n} C(n,i)^2 * i! * 3^i.
  * @author Georg Fischer
  */
 public class A102757 extends HolonomicRecurrence {

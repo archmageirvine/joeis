@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023150 Numbers n such that prime(n) == 8 (mod n).
+ * A023150 Numbers k such that prime(k) == 8 (mod k).
  * @author Sean A. Irvine
  */
 public class A023150 implements Sequence {

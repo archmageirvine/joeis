@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001682 Numbers n such that 3^n, 3^(n+1) and 3^(n+2) have same number of digits.
+ * A001682 Numbers k such that 3^k, 3^(k+1) and 3^(k+2) have the same number of digits.
  * @author Sean A. Irvine
  */
 public class A001682 implements Sequence {

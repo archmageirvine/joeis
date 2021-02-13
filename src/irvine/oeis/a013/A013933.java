@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013933 Sum of first a(n) nonsquarefrees is nonsquarefree.
+ * A013933 Numbers k such that the sum of the first k nonsquarefree numbers is nonsquarefree.
  * @author Sean A. Irvine
  */
 public class A013933 implements Sequence {

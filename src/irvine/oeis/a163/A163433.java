@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A163433 Number of different fixed (possibly) disconnected trominoes bounded tightly by an n*n square.
+ * A163433 Number of different fixed (possibly) disconnected trominoes bounded tightly by an n X n square.
  * @author Georg Fischer
  */
 public class A163433 extends GeneratingFunctionSequence {

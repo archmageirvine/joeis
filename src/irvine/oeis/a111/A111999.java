@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A111999 A triangle that converts certain binomials into triangle A008276 (diagonals of signed Stirling1 triangle A008275).
+ * A111999 T(n, k) = [x^k] (-1)^n*Sum_{k=0..n} E2(n, n-k)*(1+x)^(n-k) where E2(n, k) are the second-order Eulerian numbers. Triangle read by rows, T(n, k) for n &gt;= 1 and 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A111999 extends MemoryFunction2<Long, Z> implements Sequence {

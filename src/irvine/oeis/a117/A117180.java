@@ -8,7 +8,7 @@ import irvine.oeis.a034.A034684;
 
 
 /**
- * A117180 Lowest prime-power dividing n-th nonsquarefree positive integer.
+ * A117180 Lowest prime-power dividing the n-th nonsquarefree positive integer.
  * Formula: <code>a(n) = A034684(A013929(n)).</code>
  * @author Georg Fischer
  */

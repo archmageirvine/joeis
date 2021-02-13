@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001494 Numbers n such that phi(n) = phi(n+2).
+ * A001494 Numbers k such that phi(k) = phi(k+2).
  * @author Sean A. Irvine
  */
 public class A001494 implements Sequence {

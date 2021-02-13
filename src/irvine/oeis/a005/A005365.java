@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005365 Hoggatt sequence.
+ * A005365 Hoggatt sequence with parameter d=7.
  * @author Sean A. Irvine
  */
 public class A005365 extends A005364 {

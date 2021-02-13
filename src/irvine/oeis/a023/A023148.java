@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023148 Numbers n such that prime(n) == 6 (mod n).
+ * A023148 Numbers k such that prime(k) == 6 (mod k).
  * @author Sean A. Irvine
  */
 public class A023148 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155097 Numbers n such that n^2 == -1 mod (37).
+ * A155097 Numbers k such that k^2 == -1 (mod 37).
  * @author Sean A. Irvine
  */
 public class A155097 extends LinearRecurrence {

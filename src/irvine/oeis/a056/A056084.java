@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056084 Numbers n such that n^8 = 1 (mod 9^3).
+ * A056084 Numbers k such that k^8 == 1 (mod 9^3).
  * @author Sean A. Irvine
  */
 public class A056084 extends LinearRecurrence {

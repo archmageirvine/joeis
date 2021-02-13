@@ -8,7 +8,7 @@ import irvine.oeis.a030.A030431;
 
 
 /**
- * A049508 Numbers n such that prime(n) == 3 mod 10.
+ * A049508 Numbers k such that prime(k) == 3 (mod 10).
  * Formula: <code>a(n) = A000720(A030431(n)).</code>
  * @author Georg Fischer
  */

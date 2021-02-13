@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A340959 allocated for Sean A. Irvine.
+ * A340959 Table read by antidiagonals of the smallest prime &gt;= n^k, n &gt;= 1 and k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A340959 implements Sequence {

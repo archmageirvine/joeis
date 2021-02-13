@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023151 Numbers n such that prime(n) == 9 (mod n).
+ * A023151 Numbers k such that prime(k) == 9 (mod k).
  * @author Sean A. Irvine
  */
 public class A023151 implements Sequence {

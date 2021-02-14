@@ -1547,3 +1547,4 @@ A038581 Depends A038552
 A038666 Minimum area rectangle into which squares of sizes 1, 2, 3, ... n can be packed.
 A038774 Cycle lengths of the permutation that converts the forest of depth-first planar planted binary trees into breadth-first representation.
 A038775 a[n] is the number of cycles of the permutation that converts forest[n] of depth-first planar planted binary trees into breadth-first representation
+A038776 The sequence a[1] to a[ cat[n] ] is the permutation that converts forest[n] of depth-first planar planted binary trees into breadth-first representation

@@ -23,6 +23,36 @@ public final class LongUtils {
   public static final long MODLIMIT = (long) Math.sqrt(Long.MAX_VALUE);
 
   /**
+   * Compute <code>a^e</code>. Does not check for overflow.
+   * @param a base
+   * @param e exponent
+   * @return <code>a^e mod n</code>
+   */
+  public static long pow(long a, long e) {
+    if (a < 0) {
+      throw new IllegalArgumentException("Base can only be nonnegative in this implementation");
+    }
+    if (a == 1 || e == 0) {
+      return 1;
+    } else if (a == 0) {
+      return 0;
+    } else if (e == 1) {
+      return a;
+    } else if (e == 2) {
+      return a * a;
+    }
+    long r = 1;
+    while (e != 0) {
+      if ((e & 1) != 0) {
+        r *= a;
+      }
+      a *= a;
+      e >>>= 1;
+    }
+    return r;
+  }
+
+  /**
    * Compute <code>a^e mod n</code>, provided n does not exceed sqrt(Long.MAX_VALUE).
    * @param a base
    * @param e exponent

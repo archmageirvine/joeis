@@ -29,9 +29,6 @@ public class A038781 extends A000040 {
         sum2 = sum2.add(phi.shiftLeft(q / 2));
       }
     }
-    assert sum1.mod(p) == 0;
-    assert sum1.mod(p - 1) == 0;
-    assert sum2.mod(p - 1) == 0;
     sum1 = sum1.multiply2().divide(p).divide(p - 1);
     sum2 = sum2.multiply2().divide(p - 1).square();
     return sum1.add(sum2);

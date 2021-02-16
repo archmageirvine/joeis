@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027863 Numbers n such that n^2 + (n+1)^2 + (n+2)^2 is prime.
+ * A027863 Numbers k such that k^2 + (k+1)^2 + (k+2)^2 is prime.
  * @author Sean A. Irvine
  */
 public class A027863 implements Sequence {

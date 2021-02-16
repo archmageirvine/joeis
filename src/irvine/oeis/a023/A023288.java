@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023288 Numbers n such that n remains prime through 3 iterations of function f(x) = 6x + 5.
+ * A023288 Primes that remain prime through 3 iterations of function f(x) = 6x + 5.
  * @author Sean A. Irvine
  */
 public class A023288 extends A000040 {

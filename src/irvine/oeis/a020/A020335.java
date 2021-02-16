@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 /**
- * A020335 Numbers n such that base 7 representation is the juxtaposition of two identical strings.
+ * A020335 Numbers whose base-7 representation is the juxtaposition of two identical strings.
  * @author Sean A. Irvine
  */
 public class A020335 extends A020338 {

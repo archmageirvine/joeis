@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A024700 a(n) = (p^2 - 1)/3, where p = prime(n+2).
+ * A024700 a(n) = (prime(n+2)^2 - 1)/3.
  * @author Sean A. Irvine
  */
 public class A024700 extends A000040 {

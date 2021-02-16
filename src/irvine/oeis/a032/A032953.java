@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032953 Numbers n such that base 3 representation Sum_{i=0..m} d(i)*3^(m-i) has even d(i) for all odd i.
+ * A032953 Numbers whose base-3 representation Sum_{i=0..m} d(i)*3^(m-i) has even d(i) for all odd i.
  * @author Sean A. Irvine
  */
 public class A032953 implements Sequence {

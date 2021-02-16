@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032967 Numbers n with property that all pairs of consecutive base 4 digits differ by more than 1.
+ * A032967 Numbers with the property that all pairs of consecutive base-4 digits differ by more than 1.
  * @author Sean A. Irvine
  */
 public class A032967 implements Sequence {

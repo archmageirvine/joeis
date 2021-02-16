@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023221 Numbers n such that n and 6n + 5 both prime.
+ * A023221 Primes p such that 6*p + 5 is also prime.
  * @author Sean A. Irvine
  */
 public class A023221 extends A000040 {

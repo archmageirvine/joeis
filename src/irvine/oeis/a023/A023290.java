@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023290 Numbers n such that n remains prime through 3 iterations of function f(x) = 7x + 6.
+ * A023290 Primes that remain prime through 3 iterations of function f(x) = 7x + 6.
  * @author Sean A. Irvine
  */
 public class A023290 extends A000040 {

@@ -11,7 +11,7 @@ public class A038692 implements Sequence {
 
   private long mN = 4;
 
-  private boolean isPrimeDecomposable(final String s) {
+  protected boolean isPrimeDecomposable(final String s) {
     if (s.startsWith("0")) {
       return false;
     }

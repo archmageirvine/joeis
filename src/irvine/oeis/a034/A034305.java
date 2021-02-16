@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034305 Nonprime numbers n such that n remains nonprime if any digit deleted (zeros not allowed in n).
+ * A034305 Zeroless nonprimes that remain nonprime if any digit is deleted.
  * @author Sean A. Irvine
  */
 public class A034305 implements Sequence {

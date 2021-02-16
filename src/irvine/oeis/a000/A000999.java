@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000999 5^a(n) divides C(2n,n).
+ * A000999 5-adic valuation of binomial(2*n,n): largest k such that 5^k divides binomial(2*n, n).
  * @author Sean A. Irvine
  */
 public class A000999 implements Sequence {

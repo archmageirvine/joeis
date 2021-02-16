@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032871 Numbers n such that base 8 representation Sum{d(i)*8^i: i=0,1,...,m) has d(m)&gt;=d(m-1)&lt;=d(m-2)&gt;=...
+ * A032871 Numbers whose base-8 representation Sum_{i=0..m} d(i)*8^i has d(m) &gt;= d(m-1) &lt;= d(m-2) &gt;= ...
  * @author Sean A. Irvine
  */
 public class A032871 extends A032849 {

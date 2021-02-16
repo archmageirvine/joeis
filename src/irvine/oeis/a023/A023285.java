@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023285 Numbers n such that n remains prime through 3 iterations of function f(x) = 5x + 6.
+ * A023285 Primes that remain prime through 3 iterations of function f(x) = 5x + 6.
  * @author Sean A. Irvine
  */
 public class A023285 extends A000040 {

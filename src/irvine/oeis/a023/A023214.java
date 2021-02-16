@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023214 Numbers n such that n and 4n + 5 are both prime.
+ * A023214 Primes p such that 4*p + 5 is also prime.
  * @author Sean A. Irvine
  */
 public class A023214 extends A000040 {

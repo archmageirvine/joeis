@@ -1,7 +1,7 @@
 package irvine.oeis.a128;
 
 /**
- * A128168 Numbers n such that n divides 1 + Sum[ Prime[k]^4, {k,1,n} ] = 1 + A122102(n).
+ * A128168 Numbers k such that k divides 1 + Sum_{j=1..k} prime(j)^4 = 1 + A122102(k).
  * @author Sean A. Irvine
  */
 public class A128168 extends A128171 {

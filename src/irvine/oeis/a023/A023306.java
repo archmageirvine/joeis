@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023306 Numbers n such that n remains prime through 4 iterations of function f(x) = 2x + 9.
+ * A023306 Primes that remain prime through 4 iterations of function f(x) = 2x + 9.
  * @author Sean A. Irvine
  */
 public class A023306 extends A023276 {

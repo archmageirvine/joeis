@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034683 Unitary abundant numbers (usigma(n)&gt;2n).
+ * A034683 Unitary abundant numbers: numbers k such that usigma(k) &gt; 2*k.
  * @author Sean A. Irvine
  */
 public class A034683 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A097579 Numbers n such that n and 2*n-1 are triangular numbers.
+ * A097579 Triangular numbers k such that 2*k-1 is also a triangular number.
  * @author Georg Fischer
  */
 public class A097579 extends GeneratingFunctionSequence {

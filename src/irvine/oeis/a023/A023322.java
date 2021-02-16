@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023322 Numbers n such that n remains prime through 4 iterations of function f(x) = 8x + 7.
+ * A023322 Primes that remain prime through 4 iterations of function f(x) = 8x + 7.
  * @author Sean A. Irvine
  */
 public class A023322 extends A023294 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002234 Numbers n such that the Woodall number n*2^n - 1 is prime.
+ * A002234 Numbers k such that the Woodall number k*2^k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002234 implements Sequence {

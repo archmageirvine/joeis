@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032874 Numbers n such that base 3 representation Sum{d(i)*3^i: i=0,1,...,m) has d(0)&gt;d(1)&lt;d(2)&gt;...
+ * A032874 Numbers whose base-3 representation Sum_{i=0..m} d(i)*3^i has d(0) &gt; d(1) &lt; d(2) &gt; ...
  * @author Sean A. Irvine
  */
 public class A032874 implements Sequence {

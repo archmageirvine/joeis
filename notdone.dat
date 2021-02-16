@@ -1550,3 +1550,4 @@ A038775 a[n] is the number of cycles of the permutation that converts forest[n] 
 A038776 The sequence a[1] to a[ cat[n] ] is the permutation that converts forest[n] of depth-first planar planted binary trees into breadth-first representation
 A038837 Solutions to HAKMEM Problem 45
 A038839 In A038837 but not A038838.
+A038842 Primes which when converted to base 36 make English words.

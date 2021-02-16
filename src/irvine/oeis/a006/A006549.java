@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006549 Numbers n such that n and n+1 are prime powers.
+ * A006549 Numbers k such that k and k+1 are prime powers.
  * @author Sean A. Irvine
  */
 public class A006549 implements Sequence {

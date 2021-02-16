@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A128171 Numbers n such that n divides 1 + Sum[ Prime[k]^7, {k,1,n} ].
+ * A128171 Numbers k such that k divides 1 + Sum_{j=1..k} prime(j)^7.
  * @author Sean A. Irvine
  */
 public class A128171 implements Sequence {

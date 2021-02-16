@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033053 Numbers n such that base 2 representation Sum{d(i)*2^i: i=0,1,...,m} has d(i)=1 when i&lt;&gt;m mod 2.
+ * A033053 Numbers whose base-2 representation Sum_{i=0..m} d(i)*2^i has d(i)=1 when i != m mod 2.
  * @author Sean A. Irvine
  */
 public class A033053 implements Sequence {

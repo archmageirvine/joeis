@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032982 Numbers n with property that all pairs of consecutive base 5 digits differ by more than 2.
+ * A032982 Numbers with the property that all pairs of consecutive base-5 digits differ by more than 2.
  * @author Sean A. Irvine
  */
 public class A032982 implements Sequence {

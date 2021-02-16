@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023253 Numbers n such that n remains prime through 2 iterations of the function f(x) = 5x + 4.
+ * A023253 Primes that remain prime through 2 iterations of the function f(x) = 5x + 4.
  * @author Sean A. Irvine
  */
 public class A023253 extends A000040 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032875 Numbers n such that base 4 representation Sum{d(i)*4^i: i=0,1,...,m) has d(0)&gt;d(1)&lt;d(2)&gt;...
+ * A032875 Numbers whose base-4 representation Sum_{i=0..m} d(i)*4^i has d(0) &gt; d(1) &lt; d(2) &gt; ...
  * @author Sean A. Irvine
  */
 public class A032875 extends A032874 {

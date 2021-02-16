@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030715 Numbers n such that s(n)=3, where s=A030707.
+ * A030715 Numbers k such that A030707(k) = 3.
  * @author Sean A. Irvine
  */
 public class A030715 extends A030707 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023220 Numbers n such that n and 5n + 8 are both prime.
+ * A023220 Primes p such that 5*p + 8 is also prime.
  * @author Sean A. Irvine
  */
 public class A023220 extends A000040 {

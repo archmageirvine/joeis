@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023224 Numbers n such that n and 7n + 4 are both prime.
+ * A023224 Primes p such that 7*p + 4 is also prime.
  * @author Sean A. Irvine
  */
 public class A023224 extends A000040 {

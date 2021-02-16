@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032870 Numbers n such that base 7 representation Sum{d(i)*7^i: i=0,1,...,m) has d(m)&gt;=d(m-1)&lt;=d(m-2)&gt;=...
+ * A032870 Numbers whose base-7 representation Sum_{i=0..m} d(i)*7^i has d(m) &gt;= d(m-1) &lt;= d(m-2) &gt;= ...
  * @author Sean A. Irvine
  */
 public class A032870 extends A032849 {

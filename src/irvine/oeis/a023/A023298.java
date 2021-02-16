@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023298 Numbers n such that n remains prime through 3 iterations of function f(x) = 9x + 8.
+ * A023298 Primes that remain prime through 3 iterations of function f(x) = 9x + 8.
  * @author Sean A. Irvine
  */
 public class A023298 extends A000040 {

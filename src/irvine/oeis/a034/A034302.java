@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034302 Primes which remains prime if any digit is deleted (zeros not allowed).
+ * A034302 Zeroless primes that remain prime if any digit is deleted.
  * @author Sean A. Irvine
  */
 public class A034302 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002837 Numbers n such that n^2 - n + 41 is prime.
+ * A002837 Numbers k such that k^2 - k + 41 is prime.
  * @author Sean A. Irvine
  */
 public class A002837 implements Sequence {

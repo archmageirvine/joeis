@@ -67,7 +67,6 @@ public class A334304 extends DirectedGraph implements Sequence {
         }
       }
     }
-    System.out.println(g.order() + " " + g.size());
     mCount = 0;
     try {
       direct(g, 0, g.size(), g.size(), true, g.order());

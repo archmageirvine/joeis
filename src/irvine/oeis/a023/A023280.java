@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023280 Numbers n such that n remains prime through 3 iterations of function f(x) = 3x + 10.
+ * A023280 Primes that remain prime through 3 iterations of function f(x) = 3x + 10.
  * @author Sean A. Irvine
  */
 public class A023280 extends A000040 {

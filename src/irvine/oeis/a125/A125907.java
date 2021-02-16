@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A125907 Numbers n such that n divides 2^4 + 3^4 + 5^4 + ... + prime(n)^4.
+ * A125907 Numbers k such that k divides 2^4 + 3^4 + 5^4 + ... + prime(k)^4.
  *
  * @author Georg Fischer
  */

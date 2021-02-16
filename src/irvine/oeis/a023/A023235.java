@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023235 Numbers n such that n and 9n + 8 both prime.
+ * A023235 Primes p such that 9*p + 8 is also prime.
  * @author Sean A. Irvine
  */
 public class A023235 extends A000040 {

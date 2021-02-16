@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023268 Numbers n such that n remains prime through 2 iterations of function f(x) = 9x + 10.
+ * A023268 Primes that remain prime through 2 iterations of function f(x) = 9x + 10.
  * @author Sean A. Irvine
  */
 public class A023268 extends A000040 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032873 Numbers n such that base 10 representation Sum{d(i)*10^i: i=0,1,...,m) has d(m) &gt;= d(m-1) &lt;= d(m-2) &gt;= ...
+ * A032873 Numbers whose base-10 representation Sum_{i=0..m} d(i)*10^i has d(m) &gt;= d(m-1) &lt;= d(m-2) &gt;= ...
  * @author Sean A. Irvine
  */
 public class A032873 extends A032849 {

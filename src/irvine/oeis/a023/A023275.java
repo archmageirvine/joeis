@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023275 Numbers n such that n remains prime through 3 iterations of function f(x) = 2x + 7.
+ * A023275 Primes that remain prime through 3 iterations of function f(x) = 2x + 7.
  * @author Sean A. Irvine
  */
 public class A023275 extends A000040 {

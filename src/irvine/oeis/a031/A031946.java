@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031946 Numbers n such that number of distinct base 5 digits is 5.
+ * A031946 Numbers whose base-5 expansions have 5 distinct digits.
  * @author Sean A. Irvine
  */
 public class A031946 extends A031944 {

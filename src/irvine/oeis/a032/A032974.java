@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032974 Numbers n with property that all pairs of consecutive base 3 digits differ by 0 or 1.
+ * A032974 Numbers with the property that all pairs of consecutive base-3 digits differ by 0 or 1.
  * @author Sean A. Irvine
  */
 public class A032974 implements Sequence {

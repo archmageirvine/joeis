@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051953;
 
 /**
- * A005278 Noncototients: n such that x - phi(x) = n has no solution.
+ * A005278 Noncototients: numbers k such that x - phi(x) = k has no solution.
  * @author Sean A. Irvine
  */
 public class A005278 extends A051953 {

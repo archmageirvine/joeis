@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023269 Numbers n such that n remains prime through 2 iterations of function f(x) = 10x + 3.
+ * A023269 Primes that remain prime through 2 iterations of function f(x) = 10x + 3.
  * @author Sean A. Irvine
  */
 public class A023269 extends A000040 {

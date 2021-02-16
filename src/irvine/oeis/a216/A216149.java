@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A216149 Numbers n such that sum(k=1..n-1, (3*k)!/5^k ) is integral.
+ * A216149 Numbers k such that Sum_{j=1..k-1} (3*j)!/5^j is an integer.
  *
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A055807 Triangle T read by rows: T(i,j)=R(i-j,j), where R(i,0)=1 for i &gt;= 0, R(0,j)=0 for j &gt;= 1, R(i,j) = Sum{R(h,k): 0 &lt;= h &lt;= i-1, 0 &lt;= k &lt;= j} for i &gt;= 1, j &gt;= 1.
+ * A055807 Triangle T read by rows: T(i,j) = R(i-j,j), where R(i,0) = 1 for i &gt;= 0, R(0,j) = 0 for j &gt;= 1, and R(i,j) = Sum_{h=0..i-1, k=0..j} R(h,k) for i &gt;= 1 and j &gt;= 1.
  * @author Georg Fischer
  */
 public class A055807 extends GeneratingFunctionTriangle {

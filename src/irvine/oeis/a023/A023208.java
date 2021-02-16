@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023208 Numbers n such that n and 3n + 2 both prime.
+ * A023208 Primes p such that 3*p + 2 is also prime.
  * @author Sean A. Irvine
  */
 public class A023208 extends A000040 {

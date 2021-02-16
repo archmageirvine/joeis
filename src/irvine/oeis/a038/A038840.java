@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.math.z.Z;
 
 /**
- * A038840.
+ * A038840 Cubes that are concatenations of primes.
  * @author Sean A. Irvine
  */
 public class A038840 extends A038692 {

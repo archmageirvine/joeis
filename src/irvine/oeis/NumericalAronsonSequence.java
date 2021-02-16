@@ -60,7 +60,7 @@ public class NumericalAronsonSequence implements Sequence {
     //** if (sDebug >= 1) { System.out.println("    start chain(" + n + "," + an + ")"); }
     if (mHmap.get(n) == null) { //** if (sDebug >= 1) { System.out.println("      a(" + n + ") := " + an); }
       store(n, Z.valueOf(an));
-      Z bn = mSeq.a(n); // b(n)
+      final Z bn = mSeq.a(n); // b(n)
       if (n != an && bn.bitLength() <= MAX_BITS) { // continue the chain
         chain(an, bn.intValue());
       } else {

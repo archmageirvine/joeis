@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023243 Numbers n such that n remains prime through 2 iterations of the function f(x) = 2x + 5.
+ * A023243 Primes that remain prime through 2 iterations of the function f(x) = 2x + 5.
  * @author Sean A. Irvine
  */
 public class A023243 extends A000040 {

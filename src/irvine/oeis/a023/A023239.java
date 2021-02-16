@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023239 Numbers n such that n and 10n + 7 are both prime.
+ * A023239 Primes p such that 10*p + 7 is also prime.
  * @author Sean A. Irvine
  */
 public class A023239 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038838.
+ * A038838 Numbers that are divisible by the square of an odd prime.
  * @author Sean A. Irvine
  */
 public class A038838 implements Sequence {

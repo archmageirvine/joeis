@@ -53,7 +53,7 @@ public class NumericalAronsonSequence implements Sequence {
    * Compute the next term in a chain.
    * @param n index
    * @param an a(n)
-   * @return b(n) <= 4096, or -1 if b(n) is bigger
+   * @return b(n) &lt;= 4096, or -1 if b(n) is bigger
    * For example <code>chain(4, 6): a(4):=6; a(6)=a(a(4))=b(4)=5 -&gt; chain(5, 6)</code>
    */
   private boolean chain(final int n, final int an) {

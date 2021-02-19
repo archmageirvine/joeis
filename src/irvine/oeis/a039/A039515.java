@@ -13,8 +13,6 @@ public class A039515 extends A039508 {
   // Heuristic
   private static final long MAX = 100000;
 
-  protected long mN = -1;
-
   @Override
   public Z next() {
     mN += 2;

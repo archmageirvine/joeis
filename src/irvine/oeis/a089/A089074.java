@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089074 Let m0 be the matrix {{0,1,0,0},{0,0,1,0},{0,0,0,1},{1,1,1,1}}; a(n) = Floor[Re[MatrixPower[m0,n][[4,4]]]].
+ * A089074 Expansion of x*(1 + x + x^2)/(1 - 2*x + x^5).
  * @author Sean A. Irvine
  */
 public class A089074 extends LinearRecurrence {

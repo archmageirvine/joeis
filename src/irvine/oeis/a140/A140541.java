@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A140541 Primes of form 17*n - 1.
+ * A140541 Primes of the form 17*k - 1.
  * @author Georg Fischer
  */
 public class A140541 extends PrimeSubsequence {

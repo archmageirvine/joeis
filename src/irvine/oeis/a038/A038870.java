@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038870 Triangle read by rows: T(n,k) = number of orbits of order exactly k under doubling map which remain in a semicircle, with k dividing n.
+ * A038870 Irregular triangle read by rows: T(n,k) = number of orbits of order exactly k under doubling map which remain in a semicircle, with k dividing n.
  * @author Sean A. Irvine
  */
 public class A038870 implements Sequence {

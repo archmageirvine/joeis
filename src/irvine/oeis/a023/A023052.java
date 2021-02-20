@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023052 Perfect Digital Invariants: numbers n that are the sum of some fixed power of their digits.
+ * A023052 Perfect Digital Invariants: numbers that are the sum of some fixed power of their digits.
  * @author Sean A. Irvine
  */
 public class A023052 implements Sequence {

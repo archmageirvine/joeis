@@ -4,7 +4,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A029750 List of numbers of the form 2^n times 1, 3, 5 or 7.
+ * A029750 List of numbers of the form 2^k times 1, 3, 5 or 7.
  * @author Georg Fischer
  */
 public class A029750 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162849 Pairs of numbers n that add up to the 'backward decimal expansion' of fraction 1/109 and whose difference is the 'backward decimal expansion' of fraction 1/89.
+ * A162849 Pairs of numbers that add up to the 'backward decimal expansion' of fraction 1/109 and whose difference is the 'backward decimal expansion' of fraction 1/89.
  * @author Sean A. Irvine
  */
 public class A162849 extends LinearRecurrence {

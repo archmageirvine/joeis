@@ -7,7 +7,7 @@ import irvine.oeis.a025.A025016;
 
 
 /**
- * A082648 Consider f(m) = Sum{k=1..m} k! (A007489) when m is very large; a(n) = n-th digit from end.
+ * A082648 Consider f(m) = Sum_{k=1..m} k! (A007489) when m is very large; a(n) = n-th digit from end.
  * @author Georg Fischer
  */
 public class A082648 extends PrependSequence {

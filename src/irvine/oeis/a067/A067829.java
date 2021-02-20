@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006512;
 
 
 /**
- * A067829 Primes n such that sigma(n-2) &lt; n.
+ * A067829 Primes p such that sigma(p-2) &lt; p.
  * @author Georg Fischer
  */
 public class A067829 extends PrependSequence {

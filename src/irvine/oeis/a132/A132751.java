@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000012;
 import irvine.oeis.a003.A003506;
 
 /**
- * A132751 2*A003506 - A000012.
+ * A132751 Triangle T(n, k) = 2/Beta(n-k+1, k) - 1, read by rows.
  * @author Georg Fischer
  */
 public class A132751 implements Sequence {

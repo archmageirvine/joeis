@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A000834 Expansion of exp(x)(1+tan x)/(1-tan x).
+ * A000834 Expansion of exp(x)*(1 + tan(x))/(1 - tan(x)).
  * @author Sean A. Irvine
  */
 public class A000834 extends A000831 {

@@ -1551,3 +1551,12 @@ A038776 The sequence a[1] to a[ cat[n] ] is the permutation that converts forest
 A038837 Solutions to HAKMEM Problem 45
 A038839 In A038837 but not A038838.
 A038842 Primes which when converted to base 36 make English words.
+A039625 Number of planar simply-connected mono-q-polyhexes for q=5
+A039626 Number of planar simply-connected mono-q-polyhexes for q=4
+A039627 Number of planar simply-connected mono-q-polyhexes for q=3
+A039628 Number of planar simply-connected mono-q-polyhexes for q=2
+A039629 Mono-3-catahelicenes
+A039630 Mono-3-catahelicenes
+A039631 Mono-2-catahelicenes
+A039632 Mono-2-catahelicenes
+A039633 Mono-2-catahelicenes

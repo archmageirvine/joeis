@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a035.A035187;
 
 /**
- * A031366 Expansion of Dirichlet series related to the ring of icosians.
+ * A031366 Number of symmetrically inequivalent coincidence rotations of icosian ring of index n.
  * @author Sean A. Irvine
  */
 public class A031366 implements Sequence {

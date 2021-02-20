@@ -1560,3 +1560,5 @@ A039630 Mono-3-catahelicenes
 A039631 Mono-2-catahelicenes
 A039632 Mono-2-catahelicenes
 A039633 Mono-2-catahelicenes
+A039662 Decimal expansion of Michael Trott's constant: continued fraction expansion (allowing 0's) begins in same way as decimal expansion
+A039663 Usual continued fraction for Trott's constant (not permitting internal 0's)

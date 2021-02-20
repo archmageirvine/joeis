@@ -22,6 +22,7 @@ public class PositionOfNSequence implements Sequence {
    * Construct a new sequence of positions.
    * @param seq underlying sequence
    * @param initial starting value to search for
+   * @param offset sequence offset
    */
   public PositionOfNSequence(final Sequence seq, final long initial, final long offset) {
     mS = seq;

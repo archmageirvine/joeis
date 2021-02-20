@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A039647.
+ * A039647 Related to A000032 (Lucas numbers): (n-1)!*L(n).
  * @author Sean A. Irvine
  */
 public class A039647 extends A000032 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A039653.
+ * A039653 a(0) = 0; for n &gt; 0, a(n) = sigma(n)-1.
  * @author Sean A. Irvine
  */
 public class A039653 extends A000203 {

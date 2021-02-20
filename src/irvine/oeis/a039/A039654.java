@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039654.
+ * A039654 a(n) = prime reached by iterating f(x) = sigma(x)-1 starting at n, or -1 if no prime is ever reached.
  * @author Sean A. Irvine
  */
 public class A039654 implements Sequence {

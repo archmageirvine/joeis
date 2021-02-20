@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039651.
+ * A039651 Number of iterations of f(x) = phi(x)+1 on n required to reach a prime.
  * @author Sean A. Irvine
  */
 public class A039651 implements Sequence {

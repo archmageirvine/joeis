@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039646.
+ * A039646 Third column of Jabotinsky-triangle A038455 related to A006963.
  * @author Sean A. Irvine
  */
 public class A039646 implements Sequence {

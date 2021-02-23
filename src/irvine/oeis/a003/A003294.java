@@ -37,6 +37,10 @@ public class A003294 implements Sequence {
 
   private int mN = 352; // First solution is 353
 
+  protected boolean isOk(final int a, final int b, final int c, final long u) {
+    return true;
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -82,7 +86,7 @@ public class A003294 implements Sequence {
             final long s = LongUtils.sqrt(k);
             if (s * s == k) {
               final long u = LongUtils.sqrt(s);
-              if (u > c && u * u == s) {
+              if (u > c && u * u == s && isOk(a, b, c, u)) {
                 return Z.valueOf(mN);
               }
             }
@@ -91,4 +95,5 @@ public class A003294 implements Sequence {
       }
     }
   }
+
 }

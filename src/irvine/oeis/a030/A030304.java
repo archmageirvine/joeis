@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 /**
- * A030304 Least k such that base 2 representation of n begins at s(k), where s=A030190 (or equally A030302).
+ * A030304 Least k such that the base-2 representation of n begins at s(k), where s=A030190 (or equally A030302).
  * @author Sean A. Irvine
  */
 public class A030304 extends A030320 {

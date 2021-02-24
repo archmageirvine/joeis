@@ -7,7 +7,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A131115 Triangle read by rows: T(n,k) = 7*binomial(n,k) with T(n,n)=1.
+ * A131115 Triangle read by rows: T(n,k) = 7*binomial(n,k) for 1 &lt;= k &lt;= n with T(n,n) = 1 for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A131115 extends GeneratingFunctionTriangle {

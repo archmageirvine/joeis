@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039683.
+ * A039683 Signed double Pochhammer triangle: expansion of x(x-2)(x-4)..(x-2n+2).
  * @author Sean A. Irvine
  */
 public class A039683 extends MemoryFunction2<Long, Z> implements Sequence {

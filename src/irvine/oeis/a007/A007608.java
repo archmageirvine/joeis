@@ -11,16 +11,20 @@ public class A007608 implements Sequence {
 
   private long mN = -1;
 
+  protected int base() {
+    return -4;
+  }
+
   @Override
   public Z next() {
     long n = ++mN;
     final StringBuilder s = new StringBuilder();
-    while (n >= 4 || n < 0) {
-      long r = n % -4;
-      n /= -4;
+    while (n >= -base() || n < 0) {
+      long r = n % base();
+      n /= base();
       if (r < 0) {
         ++n;
-        r += 4;
+        r -= base();
       }
       s.append(r);
     }

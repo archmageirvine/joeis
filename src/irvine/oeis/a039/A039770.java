@@ -1,0 +1,23 @@
+package irvine.oeis.a039;
+
+import irvine.factor.factor.Cheetah;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A039770 Numbers n such that phi(n) is a perfect square.
+ * @author Sean A. Irvine
+ */
+public class A039770 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      if (Cheetah.factor(++mN).phi().isSquare()) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

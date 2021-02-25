@@ -35,7 +35,7 @@ public class A039745 implements Sequence {
       x1n[k] = 1 + (k + 1) % mN;
     }
     final Permutation<Integer> e1n = Permutation.create(x1n);
-    Set<Permutation<Integer>> seen = new HashSet<>();
+    final Set<Permutation<Integer>> seen = new HashSet<>();
     seen.add(s.zero());
     Set<Permutation<Integer>> todo = Collections.singleton(s.zero());
     int diameter = -1;

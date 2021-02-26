@@ -405,7 +405,7 @@ A005432 Number of permutation groups of degree n, hard
 A005441 Isonemal fabrics of period exactly n
 A005452 Positions that the Rubik cube puzzle can be in after exactly n moves (finite but not complete?)
 A005488 Maximal number of edges in a b^{hat} graceful graph with n nodes
-A005489 Coefficients of order n in Baker-Campbell-Hausdorff expansion, need paper
+A005489 Coefficients of order n in Baker-Campbell-Hausdorff expansion, need paper [Mathematica code exists now!]
 A005500 Triangulations of the disk R_{n,1}, depends A005505 (see blog2015.tex)
 A005501 Triangulations of the disk R_{n,2}, depends A005506
 A005502 Triangulations of the disk R_{n,3}

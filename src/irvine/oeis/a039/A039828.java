@@ -1,8 +1,5 @@
 package irvine.oeis.a039;
 
-import java.util.Arrays;
-import java.util.TreeSet;
-
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -10,10 +7,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039827.
+ * A039828.
  * @author Sean A. Irvine
  */
-public class A039827 implements Sequence {
+public class A039828 implements Sequence {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private Polynomial<Z> mProduct = RING.one();
@@ -21,12 +18,12 @@ public class A039827 implements Sequence {
 
   @Override
   public Z next() {
-    final Z[] t = new Z[2 * ++mN + 1];
-    Arrays.fill(t, Z.ZERO);
-    t[0] = Z.ONE;
-    t[mN] = Z.ONE;
-    t[2 * mN] = Z.ONE;
-    mProduct = RING.multiply(mProduct, Polynomial.create(t));
-    return Z.valueOf(new TreeSet<>(mProduct).size());
+    ++mN;
+    mProduct = RING.multiply(mProduct, (mN & 1) == 0 ? RING.onePlusXToTheN(mN) : RING.oneMinusXToTheN(mN));
+    Z max = Z.ZERO;
+    for (final Z v : mProduct) {
+      max = max.max(v);
+    }
+    return max;
   }
 }

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A039836.
+ * A039836 Maximal number m of integers s(i), with 1&lt;=s(1)&lt;s(2)&lt;...&lt;s(m)&lt;=n, such that all sums s(i)+s(j), i&lt;&gt;j, are distinct.
  * @author Sean A. Irvine
  */
 public class A039836 implements Sequence {

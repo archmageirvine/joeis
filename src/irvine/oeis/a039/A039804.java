@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a038.A038498;
 
 /**
- * A039804.
+ * A039804 Column 5 of Inverse partition triangle A038498.
  * @author Sean A. Irvine
  */
 public class A039804 extends A038498 {

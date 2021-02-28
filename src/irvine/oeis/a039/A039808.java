@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008284;
 
 /**
- * A039808.
+ * A039808 Shifts left under transform T where Ta is product of Partition Triangle A008284 with a.
  * @author Sean A. Irvine
  */
 public class A039808 extends MemorySequence {

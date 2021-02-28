@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008277;
 
 /**
- * A039812.
+ * A039812 Matrix 4th power of Stirling2 triangle A008277.
  * @author Sean A. Irvine
  */
 public class A039812 extends A008277 {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039827.
+ * A039827 Number of different coefficient values in expansion of Product (1+q^i+q^(2i)), i=1 to n.
  * @author Sean A. Irvine
  */
 public class A039827 implements Sequence {

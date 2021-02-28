@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039832.
+ * A039832 Numbers k such that k and k+1 both have 4 divisors.
  * @author Sean A. Irvine
  */
 public class A039832 implements Sequence {

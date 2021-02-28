@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008284;
 
 /**
- * A039806.
+ * A039806 Matrix 4th power of partition triangle A008284.
  * @author Sean A. Irvine
  */
 public class A039806 extends A008284 {

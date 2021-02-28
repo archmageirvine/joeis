@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039799.
+ * A039799 For S a subset of [ n ] = {1,2,3,...n}, let B_S = {x+y : x,y in S, x&lt;y}; then a(n) is maximal cardinality of B_S intersect B_{[ n ]-S}.
  * @author Sean A. Irvine
  */
 public class A039799 implements Sequence {

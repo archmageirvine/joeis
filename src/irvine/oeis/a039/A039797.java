@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039797.
+ * A039797 Triangle of numbers of Dyck paths.
  * @author Sean A. Irvine
  */
 public class A039797 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A039820.
+ * A039820 Numbers whose square contains the same digit more than 2/3 of the time and does not end in 0.
  * @author Sean A. Irvine
  */
 public class A039820 implements Sequence {

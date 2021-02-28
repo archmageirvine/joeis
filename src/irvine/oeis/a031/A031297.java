@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007376;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A031297 a(n) is the least k such that the base-10 representation of n begins at s(k), where s=A007376.
+ * A031297 a(n) = least k such that base 10 representation of n begins at s(k), where s=A007376.
  * @author Sean A. Irvine
  */
 public class A031297 implements Sequence {

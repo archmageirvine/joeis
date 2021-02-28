@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008277;
 
 /**
- * A039810.
+ * A039810 Matrix square of Stirling2 Triangle A008277: 2-levels set partitions of [n] into k first-level subsets.
  * @author Sean A. Irvine
  */
 public class A039810 extends A008277 {

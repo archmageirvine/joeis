@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039798.
+ * A039798 Triangle read by rows: numbers of Dyck paths.
  * @author Sean A. Irvine
  */
 public class A039798 implements Sequence {

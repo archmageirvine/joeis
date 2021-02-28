@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039648 Number of n-step self-avoiding paths on the first octant of a 3-dimensional cubic lattice, starting at the origin.
+ * A039648 Number of n-step self-avoiding paths on an octant grid, starting at the origin.
  * @author Sean A. Irvine
  */
 public class A039648 implements Sequence {

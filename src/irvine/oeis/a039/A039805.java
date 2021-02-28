@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008284;
 
 /**
- * A039805.
+ * A039805 Matrix cube of partition triangle A008284.
  * @author Sean A. Irvine
  */
 public class A039805 extends A008284 {

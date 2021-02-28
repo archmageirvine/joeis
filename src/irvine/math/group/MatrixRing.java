@@ -159,7 +159,7 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
     // We can't do Gaussian elimination since we are doing this in a ring
     // and so cannot take inverses.
     // Find the row or column with the most zeros, since this will be
-    // quicker to evaluated, and indeed if we get an entire row or column
+    // quicker to evaluate, and indeed if we get an entire row or column
     // of zeros, then the determinant is zero.
     long bestRow = 0;
     long bestRowZeroCount = -1;
@@ -226,7 +226,6 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
 
   /**
    * Permanent.
-   *
    * @param m matrix
    * @return permanent of the matrix
    */

@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a008.A008284;
 
 /**
- * A039809.
+ * A039809 For n &gt; 1, a(n) doubles under the transform T, where Ta is the matrix product of partition triangle A008284 with a, with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A039809 extends MemorySequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039828.
+ * A039828 Largest coefficient in expansion of Product_{i=1..n} (1 + (-q)^i).
  * @author Sean A. Irvine
  */
 public class A039828 implements Sequence {

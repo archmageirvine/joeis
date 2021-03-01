@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A081245 Number of days in months in the Haab year of Mayan/mesoamerican calendars.
+ * A081245 Number of days in months in the Haab year of Mayan/Mesoamerican calendars.
  * @author Georg Fischer
  */
 public class A081245 extends GeneratingFunctionSequence {

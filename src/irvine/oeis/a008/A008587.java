@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008587 Multiples of 5.
+ * A008587 Multiples of 5: a(n) = 5 * n.
  * @author Sean A. Irvine
  */
 public class A008587 implements Sequence {

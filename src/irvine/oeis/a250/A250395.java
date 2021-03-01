@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A250395 Numbers n such that 11410337850553 + 4609098694200*n is prime.
+ * A250395 Numbers k such that 11410337850553 + 4609098694200*k is prime.
  * @author Georg Fischer
  */
 public class A250395 extends PrimePositionSubsequence {

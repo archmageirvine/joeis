@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A035132 Squareful (i.e., not squarefree) palindromes.
+ * A035132 Nonsquarefree palindromes.
  * @author Sean A. Irvine
  */
 public class A035132 extends A002113 {

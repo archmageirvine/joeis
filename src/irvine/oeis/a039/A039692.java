@@ -16,17 +16,21 @@ public class A039692 implements Sequence {
   private int mN = 0;
   private int mM = 0;
 
+  protected Z t(final int n, final int m) {
+    Z sum = Z.ZERO;
+    for (int k = m; k <= n; ++k) {
+      sum = sum.signedAdd(((k + m) & 1) == 0,
+        mF.factorial(n).divide(mF.factorial(k)).multiply(Stirling.firstKind(k, m)).multiply(Binomial.binomial(k, n - k)));
+    }
+    return sum;
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 1;
     }
-    Z sum = Z.ZERO;
-    for (int k = mM; k <= mN; ++k) {
-      sum = sum.signedAdd(((k + mM) & 1) == 0,
-        mF.factorial(mN).divide(mF.factorial(k)).multiply(Stirling.firstKind(k, mM)).multiply(Binomial.binomial(k, mN - k)));
-    }
-    return sum;
+    return t(mN, mM);
   }
 }

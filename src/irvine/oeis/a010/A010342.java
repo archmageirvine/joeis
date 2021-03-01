@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010342 Numbers n such that all terms in period of continued fraction for sqrt(n) except final term are 1.
+ * A010342 Numbers k such that all terms in the repeating portion of the continued fraction for sqrt(k) except the final term are 1.
  * @author Sean A. Irvine
  */
 public class A010342 implements Sequence {

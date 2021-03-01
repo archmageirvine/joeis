@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A081244 Named periods in the Mayan/mesoamerican calendars.
+ * A081244 Named periods in the Mayan/Mesoamerican calendars.
  * @author Georg Fischer
  */
 public class A081244 extends FiniteSequence {

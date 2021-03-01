@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000260;
 
 /**
- * A002712 Triangulations of the disk K_{n,0}.
+ * A002712 Number of unrooted triangulations of a disk that have reflection symmetry with n interior nodes and 3 nodes on the boundary.
  * @author Sean A. Irvine
  */
 public class A002712 extends A000260 {

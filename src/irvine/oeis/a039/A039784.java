@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039784 phi(n) is equal to the product of the dual prime-power components of (n).
+ * A039784 phi(n) is equal to the product of the dual prime-power components of n.
  * @author Sean A. Irvine
  */
 public class A039784 implements Sequence {

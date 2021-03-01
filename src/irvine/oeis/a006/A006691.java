@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a027.A027834;
 
 /**
- * A006691 Normalized number of connected n-state finite automata with 2 inputs.
+ * A006691 Normalized number of connected (n+1)-state finite automata with 2 inputs.
  * @author Sean A. Irvine
  */
 public class A006691 extends A027834 {

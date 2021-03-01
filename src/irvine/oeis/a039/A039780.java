@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039780 phi(a(n)) is equal to A008473(a(n-1)).
+ * A039780 Numbers k such that phi(k) is equal to A008473(k-1).
  * @author Sean A. Irvine
  */
 public class A039780 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a255;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A255806 E.g.f.: exp(Sum_{k&gt;=1} 3*x^k).
+ * A255806 Expansion of e.g.f.: exp(Sum_{k&gt;=1} 3*x^k).
  * @author Georg Fischer
  */
 public class A255806 extends HolonomicRecurrence {

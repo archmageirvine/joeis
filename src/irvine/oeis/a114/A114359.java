@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114359 Let M(n) be the n X n matrix m(i,j)=min(i,j) for 1&lt;=i,j&lt;=n then a(n) is the trace of M(n)^(-7).
+ * A114359 Let M(n) be the n X n matrix m(i,j)=min(i,j) for 1&lt;=i,j&lt;=n; then a(n) is the trace of M(n)^(-7).
  * @author Georg Fischer
  */
 public class A114359 extends LinearRecurrence {

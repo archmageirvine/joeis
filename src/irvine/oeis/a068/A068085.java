@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A068085 Numbers n such that n and 10*n are both triangular numbers.
+ * A068085 Numbers k such that k and 10*k are both triangular numbers.
  * Signature (1, 0, 1442,-1442, 0,-1, 1)
  * @author Georg Fischer
  */

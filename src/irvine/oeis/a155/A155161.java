@@ -7,7 +7,7 @@ package irvine.oeis.a155;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A155161 Triangle T(n,k), 0 &lt;= k &lt;= n, read by rows given by [0,1,1,-1,0,0,0,0,0,0,0,...] DELTA [1,0,0,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
+ * A155161 A Fibonacci convolution triangle: Riordan array (1, x/(1 - x - x^2)). Triangle T(n,k), 0 &lt;= k &lt;= n, read by rows.
  * @author Georg Fischer
  */
 public class A155161 extends GeneratingFunctionTriangle {

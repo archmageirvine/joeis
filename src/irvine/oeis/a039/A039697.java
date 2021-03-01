@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039697 a(n) = sum(p_j)*sum(k_j) where n = product(p_j^k_j).
+ * A039697 a(n) = Sum(p_j) * Sum(k_j) where n = Product(p_j^k_j).
  * @author Sean A. Irvine
  */
 public class A039697 implements Sequence {

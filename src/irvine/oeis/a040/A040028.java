@@ -35,11 +35,11 @@ public class A040028 extends A000040 {
     mModulus = Z.valueOf(modulus);
     mHasSolution = hasSolution;
     mOdd = (exponent & 1) == 1;
-    mPowers = new ArrayList<Z>(4096);
+    mPowers = new ArrayList<>(4096);
     mPowers.add(mModulus);
     mPowers.add(Z.ONE.subtract(mModulus));
     if (mOdd) {
-      mNegats = new ArrayList<Z>(4096);
+      mNegats = new ArrayList<>(4096);
       mNegats.add(mModulus);
       mNegats.add(Z.NEG_ONE.subtract(mModulus));
     }

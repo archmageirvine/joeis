@@ -22,10 +22,9 @@ public class A045520 implements Sequence {
 
   /**
    * Generic constructor for similar sequences.
-   * @param seq underlying sequence for palindrome generation
-   * @param radix number system base
+   * @param dig1 initial digit
    */
-  public A045520(final int dig1) {
+  protected A045520(final int dig1) {
     mDig1 = Z.valueOf(dig1);
     mSeq = new A008905();
     mN = -1;

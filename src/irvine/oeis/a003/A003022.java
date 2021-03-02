@@ -1,10 +1,11 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A003022 Length of shortest (or optimal) Golomb ruler with n marks.
@@ -16,10 +17,12 @@ public class A003022 implements Sequence {
 
   private int mN = 1;
   private int mMin = 0;
+  protected int[] mPositions = new int[0];
 
   private void search(final Set<Integer> knownDeltas, final int[] positions, final int markNumber, final int lastUsed) {
     if (markNumber == mN) {
       if (lastUsed < mMin) {
+        mPositions = Arrays.copyOf(positions, positions.length);
         mMin = lastUsed;
       }
       return;

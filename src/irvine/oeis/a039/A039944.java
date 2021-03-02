@@ -13,7 +13,7 @@ public class A039944 implements Sequence {
 
   private static final long[] A = {2, 3, 5, 7};
   private static final long[] B = {0, 1, 4, 6, 8, 9};
-  private int mN = -0;
+  private int mN = 0;
   private final TreeSet<Z> mA = new TreeSet<>();
   {
     for (final long a : A) {

@@ -5,7 +5,7 @@ package irvine.oeis.a216;
 import irvine.oeis.a040.A040028;
 
 /**
- * A216747 Primes p such that x^32 = -2 has no solution mod p.
+ * A216747 Primes p such that x^32 = 2 has no solution mod p.
  * @author Georg Fischer
  */
 public class A216747 extends A040028 {

@@ -7,7 +7,7 @@ import irvine.oeis.a091.A091177;
 
 
 /**
- * A133677 Integers k such that prime(k)*(2*prime(k)-1)/3 is an integer.
+ * A133677 Integers n such that prime(n)*(2*prime(n)-1)/3 is an integer.
  * @author Georg Fischer
  */
 public class A133677 extends PrependSequence {

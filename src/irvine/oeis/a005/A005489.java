@@ -36,7 +36,6 @@ public class A005489 extends MemoryFunction<Integer, Polynomial<Q>> implements S
       RING.multiply(getValue(s - 1), C1),
       RING.multiply(C2, RING.diff(getValue(s - 1)))
     );
-    assert s == g.degree();
     return g;
   }
 

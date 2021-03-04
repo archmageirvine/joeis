@@ -32,11 +32,10 @@ public class A005489 extends MemoryFunction<Integer, Polynomial<Q>> implements S
     if (s == 1) {
       return RING.one();
     }
-    final Polynomial<Q> g = RING.add(
+    return RING.add(
       RING.multiply(getValue(s - 1), C1),
       RING.multiply(C2, RING.diff(getValue(s - 1)))
     );
-    return g;
   }
 
   private Q cx(final int[] ss) {

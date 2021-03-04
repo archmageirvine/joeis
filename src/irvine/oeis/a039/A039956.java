@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039956.
+ * A039956 Even squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A039956 implements Sequence {

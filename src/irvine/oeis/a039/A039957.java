@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039957.
+ * A039957 Squarefree numbers congruent to 3 mod 4.
  * @author Sean A. Irvine
  */
 public class A039957 implements Sequence {

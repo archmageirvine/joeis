@@ -1,17 +1,17 @@
 package irvine.oeis.a039;
 
 import irvine.math.z.Z;
-import irvine.oeis.a007.A007440;
+import irvine.oeis.a108.A108623;
 
 /**
- * A039979 An example of a d-perfect sequence.
- * @author Georg Fischer
+ * A039978 An example of a d-perfect sequence.
  * @author Sean A. Irvine
  */
-public class A039979 extends A007440 {
+public class A039978 extends A108623 {
 
   @Override
   public Z next() {
     return super.next().mod(Z.THREE);
   }
 }
+

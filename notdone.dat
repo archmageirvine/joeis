@@ -151,13 +151,6 @@ A002319 Finite groups, conjugacy classes
 A002336 Maximal kissing number of n-dimensional laminated lattice
 A002369 Stamp-folding, have doc, very hard to read, pos. error form of A056780
 A002395 Crystal forms, insufficient detail
-A002398 Coefficients for integration, have paper, hard to understand
-A002399 Coefficients for integration, have paper, hard to understand
-A002400 Coefficients for integration, have paper, hard to understand
-A002402 Coefficients for integration, have paper, hard to understand
-A002403 Coefficients for integration, have paper, hard to understand
-A002404 Coefficients for integration, have paper, hard to understand
-A002406 Coefficients for integration, have paper, hard to understand
 A002497 Composite sequence, not obvious criteria, have dependencies
 A002498 Depends A002497
 A002543 Post functions, insufficient detail
@@ -1574,3 +1567,4 @@ A039927 Number of types of maximal mixed orthogonal arrays with n runs
 A039928 Sum of first n terms of A_n (using absolute values of terms)
 A039930 Height of lattice of parameters of mixed orthogonal arrays with n runs and strength 2
 A039931 Number of different sets of parameters for mixed orthogonal arrays with n runs and strength 2
+A040004 a(n) = smallest integer s such that for all i, all primes p and all m the congruence (x_1)^n + ... + (x_s)^n == m (mod p^i) has a primitive solution

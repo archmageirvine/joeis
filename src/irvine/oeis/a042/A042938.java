@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A041013 Reverse or triple: if reverse(a(n)) > a(n), a(n+1) = reverse(a(n)), else a(n+1) = 3*a(n).
+ * A042938 Reverse or triple: if reverse(a(n)) &gt; a(n), a(n+1) = reverse(a(n)), else a(n+1) = 3*a(n).
  * @author Georg Fischer
  */
 public class A042938 implements Sequence {

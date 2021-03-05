@@ -92,6 +92,15 @@ public final class ZUtils {
   }
 
   /**
+   * Return the count of each digit in the number
+   * @param n number
+   * @return count of each digit
+   */
+  public static int[] digitCounts(final long n) {
+    return digitCounts(Z.valueOf(n), 10);
+  }
+
+  /**
    * Compute the sum of the digits in an integer.
    * @param v integer
    * @param base the base
@@ -415,7 +424,7 @@ public final class ZUtils {
 
   /**
    * Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415.
-   * @param n number to describe
+   * @param cnts number to describe
    * @return description of the number
    */
   public static Z describe(final int[] cnts) {

@@ -29,6 +29,8 @@ public class A040018 implements Sequence {
 
   @Override
   public Z next() {
+    // To account for the factor 2n we can assume the first element of the permutation
+    // 0..n-1 is 0 (i.e., p[0]=0) and that p[1] < p[n-1].
     final Permutation perm = new Permutation(++mN);
     final boolean[] seen = new boolean[2 * mN];
     long cnt = 0;

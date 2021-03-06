@@ -15,7 +15,7 @@ public class A074350 extends A000040 {
   protected Z mNP = null;
 
   protected boolean isOk() {
-    final int[] dck = ZUtils.digitCounts(Z.valueOf(mK));
+    final int[] dck = ZUtils.digitCounts(mK);
     final int[] dcp = ZUtils.digitCounts(mNP);
     boolean same = true;
     int ind = 0;

@@ -23,7 +23,7 @@ public class A037268 implements Sequence {
       if (++mN == 999999999) {
         mDone = true; // no more terms after this one
       }
-      final int[] cnts = ZUtils.digitCounts(Z.valueOf(mN));
+      final int[] cnts = ZUtils.digitCounts(mN);
       if (cnts[0] == 0) {
         Q s = Q.ZERO;
         for (int k = 1; k < cnts.length; ++k) {

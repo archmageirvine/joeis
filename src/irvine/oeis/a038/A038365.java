@@ -25,8 +25,8 @@ public class A038365 implements Sequence {
   public Z next() {
     while (true) {
       final Z n = Z.valueOf(++mN);
-      if (isOk(ZUtils.digitCounts(n), ZUtils.digitCounts(Z.valueOf(2 * mN)))) {
-        return Z.valueOf(mN);
+      if (isOk(ZUtils.digitCounts(n), ZUtils.digitCounts(n.multiply2()))) {
+        return n;
       }
     }
   }

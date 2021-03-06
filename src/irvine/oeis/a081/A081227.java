@@ -17,7 +17,7 @@ public class A081227 extends A000040 {
   public Z next() {
     ++mN;
     final Z nextPrime = super.next();
-    final int[] dcn = ZUtils.digitCounts(Z.valueOf(mN));
+    final int[] dcn = ZUtils.digitCounts(mN);
     final int[] dcp = ZUtils.digitCounts(nextPrime);
     int common = 0;
     int ind = 0;

@@ -1568,3 +1568,7 @@ A039928 Sum of first n terms of A_n (using absolute values of terms)
 A039930 Height of lattice of parameters of mixed orthogonal arrays with n runs and strength 2
 A039931 Number of different sets of parameters for mixed orthogonal arrays with n runs and strength 2
 A040004 a(n) = smallest integer s such that for all i, all primes p and all m the congruence (x_1)^n + ... + (x_s)^n == m (mod p^i) has a primitive solution
+A040082 Number of inequivalent Latin squares (or isotopy classes of Latin squares) of order n
+A040173 Numerator of probability that 2 elements of S_n chosen at random (with replacement) generate S_n
+A040174 Denominator of probability that 2 elements of S_n chosen at random (with replacement) generate S_n
+A040175 a(n) = n! times probability that an ordered pair of elements of S_n chosen at random (with replacement) generate S_n

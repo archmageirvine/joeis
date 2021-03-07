@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A040164.
+ * A040164 |First digit - last digit| for n-th prime.
  * @author Sean A. Irvine
  */
 public class A040164 extends A000040 {

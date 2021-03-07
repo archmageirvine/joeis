@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A040117.
+ * A040117 Primes congruent to 5 (mod 12). Also primes p such that x^4 = 9 has no solution mod p.
  * @author Sean A. Irvine
  */
 public class A040117 implements Sequence {

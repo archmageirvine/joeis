@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A036400 Coefficients of cluster series.
+ * A036400 Coefficients of cluster series for site percolation problem on f.c.c. lattice with 1st, 2nd and 3rd neighbor bonds.
  *
  * @author Georg Fischer
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043064 s(n)+1)/7, where s(n)=n-th base 7 palindrome that starts with 6.
+ * A043064 a(n) = (s(n)+1)/7, where s(n) = n-th base 7 palindrome that starts with 6.
  * @author Georg Fischer
  */
 public class A043064 extends A043045 {

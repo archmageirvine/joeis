@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A091178 Numbers n such that n-th prime is of the form 6m+1.
+ * A091178 Numbers k such that k-th prime is of the form 6*m+1.
  * @author Georg Fischer
  */
 public class A091178 extends A000040 {

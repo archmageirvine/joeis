@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A091177 Numbers n such that the n-th prime is of the form 3k-1.
+ * A091177 Numbers m such that the m-th prime is of the form 3*k-1.
  * @author Georg Fischer
  */
 public class A091177 extends A000040 {

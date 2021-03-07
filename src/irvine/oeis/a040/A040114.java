@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A040114.
+ * A040114 List of absolute values of differences between digits of 10, 11, 12, ..., listed digit by digit.
  * @author Sean A. Irvine
  */
 public class A040114 implements Sequence {

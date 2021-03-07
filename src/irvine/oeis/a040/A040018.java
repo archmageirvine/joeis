@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A040018.
+ * A040018 (Number of permutations of {1,2,...,n} for which sums of adjacent numbers are all distinct)/2n.
  * @author Sean A. Irvine
  */
 public class A040018 implements Sequence {

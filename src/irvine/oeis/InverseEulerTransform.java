@@ -1,5 +1,8 @@
 package irvine.oeis;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import irvine.math.Mobius;
@@ -30,11 +33,12 @@ public class InverseEulerTransform implements Sequence {
     //mAs.add(Z.ZERO); // [0] is not returned
     mBs.add(Z.ZERO); // [0] not used
     mCs.add(Z.ZERO); // [0] starts the sum
-    mPreTerms = new Z[] { }; // no preprended terms
+    mPreTerms = new Z[] {}; // no preprended terms
   }
 
   /**
    * Create a new sequence with no additional terms at the front.
+   *
    * @param seq main sequence
    */
   public InverseEulerTransform(final Sequence seq) {
@@ -46,8 +50,8 @@ public class InverseEulerTransform implements Sequence {
    * Creates a new inverse Euler transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
    *
-   * @param seq underlying sequence
-   * @param skip number of terms to skip in sequence
+   * @param seq      underlying sequence
+   * @param skip     number of terms to skip in sequence
    * @param preTerms additional terms to be prepended to the result - usually there is a leading one.
    */
   public InverseEulerTransform(final Sequence seq, final int skip, final Z... preTerms) {
@@ -62,8 +66,8 @@ public class InverseEulerTransform implements Sequence {
    * Creates a new inverse Euler transform sequence of the given sequence, skipping
    * the specified number of terms in advance.
    *
-   * @param seq underlying sequence
-   * @param skip number of terms to skip in sequence
+   * @param seq      underlying sequence
+   * @param skip     number of terms to skip in sequence
    * @param preTerms additional terms to be prepended to the result - usually there is a leading one.
    */
   public InverseEulerTransform(final Sequence seq, final int skip, final long... preTerms) {
@@ -74,7 +78,7 @@ public class InverseEulerTransform implements Sequence {
    * Creates a new inverse Euler transform sequence of the given sequence, skipping
    * the specified number of terms in advance. A one is prepended.
    *
-   * @param seq underlying sequence
+   * @param seq  underlying sequence
    * @param skip number of terms to skip in sequence
    */
   public InverseEulerTransform(final Sequence seq, final int skip) {
@@ -83,6 +87,7 @@ public class InverseEulerTransform implements Sequence {
 
   /**
    * Return a term.
+   *
    * @return the next term of the transformed sequence.
    */
   @Override
@@ -106,7 +111,7 @@ public class InverseEulerTransform implements Sequence {
     Z aSum = Z.ZERO;
     final int idiv2 = i >> 1;
     for (int d = 1; d <= i; ++d) { // compute c[k] = sum ...
-      if (d == 1 || d == i || (d <= idiv2 && (i % d == 0))) { 
+      if (d == 1 || d == i || (d <= idiv2 && (i % d == 0))) {
         aSum = aSum.add(mCs.get(d).multiply(Mobius.mobius(i / d))); // "mob(i,d)"
       }
     } // for d
@@ -114,4 +119,19 @@ public class InverseEulerTransform implements Sequence {
     //mAs.add(aSum);
   }
 
+  /**
+   * Apply the inverse Euler transform to the sequence supplied on standard input.
+   * @param args number of terms to skip
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    final int skip = args.length > 0 ? Integer.parseInt(args[0]) : 0;
+    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+      final InverseEulerTransform seq = new InverseEulerTransform(new ReaderSequence(r), skip);
+      Z a;
+      while ((a = seq.next()) != null) {
+        System.out.println(a);
+      }
+    }
+  }
 }

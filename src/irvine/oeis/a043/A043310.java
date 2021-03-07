@@ -7,7 +7,7 @@ import irvine.oeis.a033.A033004;
 
 
 /**
- * A043310 a(n)=A033010(n)/7.
+ * A043310 a(n)=A033004(n)/7.
  * @author Georg Fischer
  */
 public class A043310 extends A033004 {

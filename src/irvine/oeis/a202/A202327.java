@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A202327 Triangle T(n,k) = coefficient of x^n in expansion of [(-1-x+sqrt(1+2x+5x^2))/2]^k = sum(n&gt;=k, T(n,k) x^n).
+ * A202327 Triangle T(n,k) = coefficient of x^n in expansion of ((-1 -x +sqrt(1+2*x+5*x^2))/2)^k = Sum_{n&gt;=k} T(n,k) x^n.
  * @author Sean A. Irvine
  */
 public class A202327 implements Sequence {

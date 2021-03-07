@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.a037.A037996;
 
 /**
- * A040023.
+ * A040023 Continued fraction expansion of Pi*exp(2*Pi-Pi^2/2).
  * @author Sean A. Irvine
  */
 public class A040023 extends ContinuedFractionSequence {

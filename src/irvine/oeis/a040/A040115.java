@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A040115.
+ * A040115 Concatenate absolute values of differences between adjacent digits of n.
  * @author Sean A. Irvine
  */
 public class A040115 implements Sequence {

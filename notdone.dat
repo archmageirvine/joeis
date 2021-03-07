@@ -1572,3 +1572,6 @@ A040082 Number of inequivalent Latin squares (or isotopy classes of Latin square
 A040173 Numerator of probability that 2 elements of S_n chosen at random (with replacement) generate S_n
 A040174 Denominator of probability that 2 elements of S_n chosen at random (with replacement) generate S_n
 A040175 a(n) = n! times probability that an ordered pair of elements of S_n chosen at random (with replacement) generate S_n
+A041002 The sequence d, given that c is a left shift by one place of b
+A041003 The sequence e, given that c is a left shift by one place of b
+A041004 The sequence b, given that c is a left shift by one place of b (like EulerTransform -- but I couldn't get this to work incrementally)

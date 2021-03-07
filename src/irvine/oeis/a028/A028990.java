@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028990 Largest palindromic prime with 2n+1 digits.
+ * A028990 Largest palindromic prime with 2n-1 digits.
  * @author Sean A. Irvine
  */
 public class A028990 implements Sequence {

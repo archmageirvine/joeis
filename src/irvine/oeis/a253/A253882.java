@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A253882 Number of 3-connected planar triangulations on n vertices.
+ * A253882 Number of 3-connected planar triangulations of the sphere with n vertices up to orientation preserving isomorphisms.
  * @author Sean A. Irvine
  */
 public class A253882 implements Sequence {

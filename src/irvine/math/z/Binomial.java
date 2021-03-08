@@ -179,7 +179,7 @@ public final class Binomial {
   }
 
   /**
-   * Compute binomial coefficients.
+   * Compute binomial coefficients modulo a prime.
    *
    * @param n upper index (may be negative)
    * @param m lower index
@@ -199,4 +199,5 @@ public final class Binomial {
     }
     return binomial1(n, m, p);
   }
+
 }

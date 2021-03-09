@@ -127,6 +127,8 @@ public class EnglishTest extends TestCase {
     assertEquals("one million two hundred and seventeen thousand three hundred and fourteen", English.SINGLETON.toText(1217314));
     assertEquals("nineteen million nine hundred and ninety-nine thousand nine hundred and ninety-nine", English.SINGLETON.toText(19999999));
     assertEquals("twenty-one million one hundred and twenty-one thousand one hundred and twenty-one", English.SINGLETON.toText(21121121));
+    assertEquals("twenty million", English.SINGLETON.toText(20000000));
+    assertEquals("twenty million and one", English.SINGLETON.toText(20000001));
 
     for (int i = 1; i < 1000; ++i) {
       assertEquals("negative " + English.SINGLETON.toText(i), English.SINGLETON.toText(-i));

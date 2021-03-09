@@ -38,14 +38,10 @@ public final class English extends AbstractLanguage {
     if (x >= 1000000000) {
       throw new UnsupportedOperationException();
     }
-    if (x >= 20000000) {
-      return b.append(toText(x / 1000000)).append(" million ").append(toText(x % 1000000)).toString();
-    }
-    // x>=20 && x < 20000000
     if (x >= 1000000) {
       final int d = x / 1000000;
+      b.append(x >= 20000000 ? toText(d) : M_DIGITS[d]).append(" million ");
       x %= 1000000;
-      b.append(M_DIGITS[d]).append(" million ");
     }
 
     // x>=0 && x<1000000

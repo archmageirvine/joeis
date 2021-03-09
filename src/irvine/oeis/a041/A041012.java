@@ -11,7 +11,6 @@ import irvine.oeis.Sequence;
 public class A041012 implements Sequence {
 
   private int mN; // current number to be concerned
-  private Z mTerm;
   private int mLimit;
   
   /** Construct the sequence. */
@@ -28,11 +27,11 @@ public class A041012 implements Sequence {
         ++mN;
         buf.append(mN);
       }
-      mTerm = new Z(buf.toString());
+      final Z term = new Z(buf.toString());
       // System.out.println("mTerm=" + mTerm + ", mN=" + mN + ", mLimit=" + mLimit + ", buf=" + buf);
-      mLimit = mTerm.intValue();
+      mLimit = term.intValue();
       mN = mLimit;
-      return mTerm;
+      return term;
     } else {
       System.err.println("# A041012: implementation limit reached");
       return null;

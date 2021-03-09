@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A228076 Numbers n such that (19^n - 4^n)/15 is prime.
+ * A228076 Numbers k such that (19^k - 4^k)/15 is prime.
  * @author Georg Fischer
  */
 public class A228076 extends PrimePositionSubsequence {

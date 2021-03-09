@@ -11,7 +11,7 @@ public class A042939 extends A000040 {
 
   @Override
   public Z next() {
-    Z[] qr =super.next().divideAndRemainder(Z.TEN);
+    Z[] qr = super.next().divideAndRemainder(Z.TEN);
     long s = -qr[1].longValue();
     while (!qr[0].isZero()) {
       qr = qr[0].divideAndRemainder(Z.TEN);

@@ -13,8 +13,8 @@ public class A040026 implements Sequence {
 
   @Override
   public Z next() {
-    Z r = Z.valueOf(++mN).makeOdd();
-    Z s = Z.ONE.shiftLeft((int) r.auxiliary());
+    final Z r = Z.valueOf(++mN).makeOdd();
+    final Z s = Z.ONE.shiftLeft((int) r.auxiliary());
     long t = 0;
     while (true) {
       ++t;

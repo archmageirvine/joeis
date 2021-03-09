@@ -13,7 +13,7 @@ public class A041000 extends A000040 {
   @Override
   public Z next() {
     final Z t = ZUtils.sortDigitsAscending(super.next());
-    Z[] qr =t.divideAndRemainder(Z.TEN);
+    Z[] qr = t.divideAndRemainder(Z.TEN);
     long s = qr[1].longValue();
     while (!qr[0].isZero()) {
       qr = qr[0].divideAndRemainder(Z.TEN);

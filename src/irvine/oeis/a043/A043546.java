@@ -76,7 +76,7 @@ public class A043546 implements Sequence {
     final MultivariatePolynomial<Q> i1 = i1(mN);
     final MultivariatePolynomial<Q> i2 = i2(i1);
     // iw = i2^(1/(2y)) = exp(log(i2) / (2y))
-    final int[] limits = new int[] {mN, mN + 1};
+    final int[] limits = {mN, mN + 1};
     final MultivariatePolynomial<Q> li2 = RING.log(i2, limits);
     final MultivariatePolynomial<Q> iw = RING.exp(shift1(RING.divide(li2, Q.TWO)), limits);
     //System.out.println("iw=" + iw);

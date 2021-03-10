@@ -12,7 +12,7 @@ public class A042947 implements Sequence {
 
   private long mN = -1;
 
-  private boolean contains(long a, long b, final long n) {
+  private static boolean contains(long a, long b, final long n) {
     do {
       final long t = a + b;
       a = b;

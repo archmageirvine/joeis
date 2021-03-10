@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 
+import irvine.math.IntegerUtils;
 import irvine.math.api.Field;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
@@ -220,5 +221,51 @@ public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePo
     final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, powers.length);
     res.put(new MultivariatePolynomial.Term(powers), value);
     return res;
+  }
+
+  /**
+   * Series expansion of <code>exp(p)</code> to specified degree.
+   * @param p polynomial
+   * @param n maximum degrees
+   * @return series for <code>exp(p)</code>.
+   */
+  public MultivariatePolynomial<E> exp(final MultivariatePolynomial<E> p, final int[] n) {
+    final RingFactorial<E> f = RingFactorial.instance(mCoefficientField);
+    MultivariatePolynomial<E> s = one();
+    if (!zero().equals(p)) {
+      final int lim = IntegerUtils.max(n);
+      for (int k = 1; k <= lim; ++k) {
+        s = add(s, divide(pow(p, k, n), f.factorial(k)));
+      }
+    }
+    return s;
+  }
+
+  /**
+   * Series expansion of <code>log(1+p)</code> to specified number of terms.
+   * @param p polynomial
+   * @param n maximum degrees
+   * @return series for <code>log(1+p)</code>.
+   */
+  public MultivariatePolynomial<E> log1p(final MultivariatePolynomial<E> p, final int[] n) {
+    MultivariatePolynomial<E> s = zero();
+    if (!zero().equals(p)) {
+      final int lim = IntegerUtils.max(n);
+      E kk = mCoefficientField.one();
+      for (int k = 1; k <= lim; ++k, kk = mCoefficientField.add(kk, mCoefficientField.one())) {
+        s = signedAdd((k & 1) == 1, s, divide(pow(p, k, n), kk));
+      }
+    }
+    return s;
+  }
+
+  /**
+   * Series expansion of <code>log(p)</code> to specified number of terms.
+   * @param p polynomial (assumed to have leading coefficient of 1)
+   * @param n maximum degrees
+   * @return series for <code>log(p)</code>.
+   */
+  public MultivariatePolynomial<E> log(final MultivariatePolynomial<E> p, final int[] n) {
+    return log1p(subtract(p, one()), n);
   }
 }

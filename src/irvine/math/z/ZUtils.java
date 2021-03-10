@@ -83,6 +83,22 @@ public final class ZUtils {
   }
 
   /**
+   * Return the count of each digit in the number when written in the specified base.
+   * @param n number
+   * @param base base to use
+   * @return count of each digit
+   */
+  public static int[] digitCounts(final long n, final int base) {
+    final int[] counts = new int[base];
+    if (n == 0) {
+      ++counts[0];
+    } else {
+      digitCounts(counts, Math.abs(n), base);
+    }
+    return counts;
+  }
+
+  /**
    * Return the count of each digit in the number
    * @param n number
    * @return count of each digit
@@ -97,7 +113,7 @@ public final class ZUtils {
    * @return count of each digit
    */
   public static int[] digitCounts(final long n) {
-    return digitCounts(Z.valueOf(n), 10);
+    return digitCounts(n, 10);
   }
 
   /**

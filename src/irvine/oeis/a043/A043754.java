@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000959;
 
 /**
- * A043720.
+ * A043754 Let L(n) = n-th lucky number. Then a(1)=0; a(n) is largest number m such that all divisors of L(n)^m are lucky numbers.
  * @author Sean A. Irvine
  */
 public class A043754 implements Sequence {

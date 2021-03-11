@@ -3,12 +3,7 @@ package irvine.oeis;
 import irvine.math.z.Z;
 
 /**
- * Properties of a (simple) periodic continued fraction
- * for the square root of a number,
- * its numerators, denominators and period elements.
- * This class is used for the continued fraction
- * of a single square root, and for the property sequences for
- * the continued fractions of all square roots.
+ * Runs in a given base.
  * @author Georg Fischer
  */
 public abstract class RunsBaseSequence implements Sequence {

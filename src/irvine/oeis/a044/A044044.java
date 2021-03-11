@@ -11,7 +11,7 @@ import irvine.oeis.a002.A002212;
 import irvine.oeis.a055.A055879;
 
 /**
- * A043720.
+ * A044044 Catafusenes (see reference for precise definition).
  * @author Sean A. Irvine
  */
 public class A044044 implements Sequence {

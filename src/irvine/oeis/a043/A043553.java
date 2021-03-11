@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a030.A030524;
 
 /**
- * A043549.
+ * A043553 Row sums of convolution triangle A030524.
  * @author Sean A. Irvine
  */
 public class A043553 extends A030524 {

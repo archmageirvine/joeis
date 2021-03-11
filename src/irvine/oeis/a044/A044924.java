@@ -20,7 +20,7 @@ public class A044924 implements Sequence {
     final long n = ++mN;
     long prev = -1;
     int len = 0;
-    int[] sum = new int[2];
+    final int[] sum = new int[2];
     long m = n;
     while (m != 0) {
       final long r = m % base();

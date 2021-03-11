@@ -22,7 +22,6 @@ public class A044918 implements Sequence {
     final ArrayList<Integer> res = new ArrayList<>();
     long prev = -1;
     int len = 0;
-    int[] sum = new int[2];
     long m = n;
     while (m != 0) {
       final long r = m % base();

@@ -1591,3 +1591,4 @@ A042960 The sequence d when b is obtained by reversing the parity of Euler's par
 A042961 The sequence e when b is obtained by reversing the parity of Euler's partition function A000041.
 A042962 The sequence e when b=[ 1,0,1,0,1,0,1,0,... ].
 A043330 Expansion of Molien series for relative invariants of 8-dimensional complex Clifford group., insufficient detail
+A045470 1 / min{1/n - 1/a - 1/b > 0}, where a and b are integers, unclear

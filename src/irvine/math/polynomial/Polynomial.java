@@ -157,7 +157,7 @@ public class Polynomial<E> extends ArrayList<E> {
   }
 
   private String protect(final String s) {
-    return s.indexOf('+') >= 0 ? "(" + s + ")" : s;
+    return s.indexOf('+') >= 0 || s.lastIndexOf('-') >= 1 ? "(" + s + ")" : s;
   }
 
   @Override
@@ -178,7 +178,7 @@ public class Polynomial<E> extends ArrayList<E> {
         // checking if it looks like it starts with a "-" sign.
         // Further the individual elements can themselves be composite
         // items (like polynomials), so a further check is made, if the
-        // element contains a "+" it is enclosed in parentheses.
+        // element contains a "+" or internal "-" it is enclosed in parentheses.
         final String eString = protect(c.toString());
         if (!eString.isEmpty() && eString.charAt(0) == '-') {
           if ("-1".equals(eString) && k != 0) {
@@ -196,9 +196,9 @@ public class Polynomial<E> extends ArrayList<E> {
         }
         if (k > 0) {
           sb.append(mIndeterminate);
-        }
-        if (k > 1) {
-          sb.append('^').append(k);
+          if (k > 1) {
+            sb.append('^').append(k);
+          }
         }
       }
     }

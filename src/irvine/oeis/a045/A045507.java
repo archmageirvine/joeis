@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000079;
 
 /**
- * A045507.
+ * A045507 Concatenate powers of 2.
  * @author Sean A. Irvine
  */
 public class A045507 extends A000079 {

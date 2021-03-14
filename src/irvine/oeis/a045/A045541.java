@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A045541.
+ * A045541 Square previous term and then delete digits of previous term.
  * @author Sean A. Irvine
  */
 public class A045541 implements Sequence {

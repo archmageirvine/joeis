@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099253 (7n+6)-th terms of expansion of 1/(1-x-x^7).
+ * A099253 (7*n+6)-th terms of expansion of 1/(1-x-x^7).
  * @author Sean A. Irvine
  */
 public class A099253 extends LinearRecurrence {

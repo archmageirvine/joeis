@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A045539.
+ * A045539 Multiply by 5 and reverse.
  * @author Sean A. Irvine
  */
 public class A045539 implements Sequence {

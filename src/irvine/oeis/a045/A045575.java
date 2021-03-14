@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045575.
+ * A045575 Nonnegative numbers of the form x^y - y^x, for x,y &gt; 1.
  * @author Sean A. Irvine
  */
 public class A045575 implements Sequence {

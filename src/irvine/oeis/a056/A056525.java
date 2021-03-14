@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056525.
+ * A056525 Palindromes with odd number of digits.
  * @author Sean A. Irvine
  */
 public class A056525 implements Sequence {

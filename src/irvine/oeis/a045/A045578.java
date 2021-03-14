@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045578.
+ * A045578 Numbers n such that n | 5^n + 2^n.
  * @author Sean A. Irvine
  */
 public class A045578 implements Sequence {

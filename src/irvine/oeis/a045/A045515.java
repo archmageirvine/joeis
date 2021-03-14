@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045515.
+ * A045515 Number of conjugacy classes of elements of order n in 2.E_7(C).
  * @author Sean A. Irvine
  */
 public class A045515 implements Sequence {

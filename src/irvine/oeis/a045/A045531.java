@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045531.
+ * A045531 Number of sticky functions: endofunctions of [n] having a fixed point.
  * @author Sean A. Irvine
  */
 public class A045531 implements Sequence {

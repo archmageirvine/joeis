@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005235;
 
 /**
- * A045492.
+ * A046066 Fortunate primes (A005235) in numerical order with duplicates removed.
  * @author Sean A. Irvine
  */
 public class A046066 extends A005235 {

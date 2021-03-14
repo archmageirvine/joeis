@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
- * A045514.
+ * A045514 Number of conjugacy classes of elements of order n in E_8(C).
  * @author Sean A. Irvine
  */
 public class A045514 implements Sequence {

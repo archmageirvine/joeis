@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045503.
+ * A045503 If decimal expansion of n is ab...d, a(n) = a^a + b^b +...+ d^d.
  * @author Sean A. Irvine
  */
 public class A045503 implements Sequence {

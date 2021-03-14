@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A045508.
+ * A045508 Concatenate factorials.
  * @author Sean A. Irvine
  */
 public class A045508 extends A000142 {

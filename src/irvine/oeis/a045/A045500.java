@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A045500.
+ * A045500 Fifth-from-right diagonal of triangle A121207.
  * @author Sean A. Irvine
  */
 public class A045500 extends MemorySequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a046.A046066;
 
 /**
- * A045492.
+ * A045493 Unfortunate primes - primes that are not Fortunate numbers.
  * @author Sean A. Irvine
  */
 public class A045493 extends IntersectionSequence {

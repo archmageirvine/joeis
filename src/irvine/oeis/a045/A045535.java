@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A045535.
+ * A045535 Least negative pseudosquare modulo the first n odd primes.
  * @author Sean A. Irvine
  */
 public class A045535 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A045540.
+ * A045540 Numbers whose square contains an equal number of each digit that it contains.
  * @author Sean A. Irvine
  */
 public class A045540 implements Sequence {

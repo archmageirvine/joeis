@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A045498.
+ * A045498 Primes formed from concatenation of two consecutive Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A045498 extends A000045 {

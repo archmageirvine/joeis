@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045577.
+ * A045577 Numbers n such that n | 4^n + 2^n, or n | 8^n + 4^n.
  * @author Sean A. Irvine
  */
 public class A045577 implements Sequence {

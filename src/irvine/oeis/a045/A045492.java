@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000108;
 import irvine.oeis.a020.A020920;
 
 /**
- * A045492.
+ * A045492 Convolution of A000108 (Catalan numbers) with A020920.
  * @author Sean A. Irvine
  */
 public class A045492 extends ConvolutionSequence {

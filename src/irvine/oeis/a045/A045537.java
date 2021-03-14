@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045537.
+ * A045537 Least nontrivial exponent e such that n is a substring of n^e.
  * @author Sean A. Irvine
  */
 public class A045537 implements Sequence {

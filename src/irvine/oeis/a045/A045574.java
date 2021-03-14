@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045574.
+ * A045574 Still numbers when turned upside down (uses only digits 0, 1, 6, 8, 9 with no final 0's).
  * @author Sean A. Irvine
  */
 public class A045574 implements Sequence {

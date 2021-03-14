@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045496.
+ * A045496 Packing density for n balls in complex projective plane using Fubini-Study metric (numerators).
  * @author Sean A. Irvine
  */
 public class A045496 implements Sequence {

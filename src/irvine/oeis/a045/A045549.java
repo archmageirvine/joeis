@@ -5,7 +5,7 @@ import irvine.oeis.PositionSubsequence;
 import irvine.oeis.a008.A008904;
 
 /**
- * A045549.
+ * A045549 Numbers n such that final nonzero digit of n! is '6'.
  * @author Sean A. Irvine
  */
 public class A045549 extends PositionSubsequence {

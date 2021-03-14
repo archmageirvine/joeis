@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045538.
+ * A045538 Smallest number k such that kn contains two consecutive digits which are the same.
  * @author Sean A. Irvine
  */
 public class A045538 implements Sequence {

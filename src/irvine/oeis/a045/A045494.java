@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A045494.
+ * A045494 Smallest positive integer requiring at least n letters (not including hyphens) when spelled out in English.
  * @author Sean A. Irvine
  */
 public class A045494 implements Sequence {

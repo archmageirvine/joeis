@@ -1596,3 +1596,4 @@ A045474 Normalized extreme values for "3x+1" trees of depth n.
 A045475 Normalized extreme values for "3x+1" trees of depth n.
 A045476 Normalized extreme values for "3x+1" trees of depth n.
 A045506 Inscribe 2 spheres of curvature 2 inside sphere of curvature -1, continue to inscribe spheres where possible; sequence gives list of curvatures
+A045612 Number of different energy states between two stacked necklaces, each of n positive and n negative charges

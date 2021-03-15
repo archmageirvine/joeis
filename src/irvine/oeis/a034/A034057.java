@@ -22,7 +22,7 @@ public class A034057 implements Sequence {
     while (true) {
       m = m.add(1);
       if (!m.isSquare()) {
-        if (CR.valueOf(m).sqrt().frac().multiply(mT).floor().longValueExact() == mN) {
+        if (CR.valueOf(m).sqrt().multiply(mT).floor().mod(mT) == mN) {
           return m;
         }
       }

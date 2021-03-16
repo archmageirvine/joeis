@@ -47,7 +47,7 @@ public class A045310 implements Sequence {
    *
    * Overwrites scratch[0..d] and sum[0..d] during calculation.
    */
-  private void countPart(int d, long mask) {
+  private void countPart(final int d, final long mask) {
     if (d == 0) {
       mSum[d] = Z.ONE;
       return;
@@ -71,7 +71,7 @@ public class A045310 implements Sequence {
   /*
    * countFull(d): same as countPart(d, fullmask[d])
    */
-  private void countFull(int d) {
+  private void countFull(final int d) {
     if (d == 0) {
       mSum[d] = Z.ONE;
       return;
@@ -103,7 +103,7 @@ public class A045310 implements Sequence {
    *
    * Uses a prepared cache of results for d=4, to minimize recursion.
    */
-  private void count5Part(long mask) {
+  private void count5Part(final long mask) {
     final long left = mask & FULL_MASK[4];
     final long right = mask >> (1 << 4);
     final long shared = left & right;
@@ -116,9 +116,9 @@ public class A045310 implements Sequence {
   }
 
   /*
-   * count_6_full(): same as count_full(6)
+   * count6Full(): same as countFull(6)
    *
-   * Uses a prepared cache of results for d=4 (via count_5_part()) to reduce
+   * Uses a prepared cache of results for d=4 (via count5Part()) to reduce
    * recursion at a reasonable memory cost.
    */
   private void count6Full() {

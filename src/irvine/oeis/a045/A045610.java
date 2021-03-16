@@ -13,8 +13,6 @@ import irvine.oeis.Sequence;
  */
 public class A045610 implements Sequence {
 
-  // todo pending explanation from Wouter
-
   private int mN = -1;
 
   @Override
@@ -24,20 +22,16 @@ public class A045610 implements Sequence {
     }
     final TreeSet<Q> energy = new TreeSet<>();
     final int charges = 2 * mN;
-    final long limit = 1L << charges;
+    final long limit = 1L << (charges - 1); // -1 bit for symmetry
     for (long state = (1L << mN) - 1; state < limit; state = LongUtils.swizzle(state)) {
       Q sum = Q.ZERO;
       for (int k = 0; k < charges; ++k) {
         Q s = Q.ZERO;
-        for (int j = 0; j < charges; ++j) {
-          if (k != j) {
-            s = s.signedAdd((state & (1L << j)) == 0, new Q(1, Math.abs(k - j)));
-          }
+        for (int j = k + 1; j < charges; ++j) {
+          s = s.signedAdd((state & (1L << j)) == 0, new Q(1, Math.abs(k - j)));
         }
         sum = sum.signedAdd((state & (1L << k)) == 0, s);
       }
-//      final String s = "00000000000000000000" + Long.toBinaryString(state);
-//      System.out.println("state=" + s.substring(s.length() - charges) + " U=" + sum);
       energy.add(sum);
     }
     return Z.valueOf(energy.size());

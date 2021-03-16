@@ -22,7 +22,7 @@ public class A045611 implements Sequence {
     }
     final HashSet<String> distances = new HashSet<>();
     final int charges = 2 * mN;
-    final long limit = 1L << charges;
+    final long limit = 1L << (charges - 1); // -1 for symmetry
     for (long state = (1L << mN) - 1; state < limit; state = LongUtils.swizzle(state)) {
       final int[] cnts = new int[mN];
       for (int k = 0; k < charges; ++k) {

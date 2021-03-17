@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067060 A permutation of the natural numbers in groups of four such that any two consecutive numbers differ by at least 2.
+ * A067060 A permutation of the positive integers in groups of four such that any two consecutive numbers differ by at least 2.
  * @author Georg Fischer
  */
 public class A067060 extends LinearRecurrence {

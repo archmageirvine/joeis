@@ -5,7 +5,7 @@ import irvine.oeis.MobiusTransformSequence;
 import irvine.oeis.a032.A032123;
 
 /**
- * A045627.
+ * A045627 Number of 2n-bead black-white reversible strings with n black beads and fundamental period 2n.
  * @author Sean A. Irvine
  */
 public class A045627 extends MobiusTransformSequence {

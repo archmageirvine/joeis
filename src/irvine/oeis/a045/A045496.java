@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A045496 implements Sequence {
 
-  private long[] SMALL = {1, 1, 3, 1, 20, 24, 63, 288};
+  private static final long[] SMALL = {1, 1, 3, 1, 20, 24, 63, 288};
   private int mN = 0;
 
   @Override

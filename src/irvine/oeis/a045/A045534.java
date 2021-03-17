@@ -4,12 +4,12 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A045534 Squarefree self-avoiding walks in 2 dimensions.
+ * A045534 Number of squarefree self-avoiding walks in 2 dimensions.
  * @author Sean A. Irvine
  */
 public class A045534 extends A000040 {
 
-  private static long[] SMALL = {1, 4, 8, 16, 16, 16, 16, 16};
+  private static final long[] SMALL = {1, 4, 8, 16, 16, 16, 16, 16};
   private int mN = 0;
 
   @Override

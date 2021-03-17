@@ -123,7 +123,7 @@ public class A045310 implements Sequence {
    */
   private void count6Full() {
     initCache4();
-    long lim = FULL_MASK[5];
+    final long lim = FULL_MASK[5];
     mSum[6] = Z.ZERO;
     for (long u = 0; u <= lim; ++u) {
       count5Part(u);
@@ -141,15 +141,15 @@ public class A045310 implements Sequence {
    */
   @Override
   public Z next() {
-    int d = ++mN;
-    if (d < 0 || d > MAX_DIMENSION) {
+    ++mN;
+    if (mN < 0 || mN > MAX_DIMENSION) {
       throw new UnsupportedOperationException("dimension must be in the range 0 to " + MAX_DIMENSION);
     }
-    if (d == 6) {
+    if (mN == 6) {
       count6Full();
     } else {
-      countFull(d);
+      countFull(mN);
     }
-    return mSum[d];
+    return mSum[mN];
   }
 }

@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A183871 n + ceiling( (1/5)*n^2 ); complement of A183870.
+ * A183871 a(n) = n + ceiling( (1/5)*n^2 ). Complement of A183870.
  * @author Sean A. Irvine
  */
 public class A183871 extends LinearRecurrence {

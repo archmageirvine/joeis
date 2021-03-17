@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045626.
+ * A045626 Bends in loxodromic sequence of spheres in which each 5 consecutive spheres are in mutual contact.
  * @author Sean A. Irvine
  */
 public class A045626 extends LinearRecurrence {

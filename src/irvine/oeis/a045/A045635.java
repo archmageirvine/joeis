@@ -11,7 +11,7 @@ import irvine.oeis.a002.A002212;
  */
 public class A045635 extends ConvolutionSequence {
 
-  private static class MySequence extends PrependSequence {
+  private static final class MySequence extends PrependSequence {
     private MySequence() {
       super(new SkipSequence(new A002212(), 1), 0);
     }

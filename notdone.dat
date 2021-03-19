@@ -1597,3 +1597,5 @@ A045475 Normalized extreme values for "3x+1" trees of depth n.
 A045476 Normalized extreme values for "3x+1" trees of depth n.
 A045506 Inscribe 2 spheres of curvature 2 inside sphere of curvature -1, continue to inscribe spheres where possible; sequence gives list of curvatures
 A045652 Simple dependency A030126.
+A045673 Curvatures in diagram constructed by inscribing 2 circles of curvature 0 and 1 inside circle of curvature 0, continuing indefinitely to inscribe circles wherever possible
+A045679 Numbers congruent to 0,1,4,9 mod 12 missing from A045673 (conjectured to be finite).

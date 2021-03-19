@@ -1,6 +1,5 @@
 package irvine.oeis.a045;
 
-import irvine.math.z.Z;
 import irvine.oeis.MobiusTransformSequence;
 
 /**
@@ -11,7 +10,7 @@ public class A045685 extends MobiusTransformSequence {
 
   /** Construct the sequence. */
   public A045685() {
-    super(new A045676(), 1, Z.ZERO);
+    super(new A045676(), 1);
   }
 }
 

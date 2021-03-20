@@ -25,7 +25,11 @@ public class A045671 extends MemorySequence {
     return a;
   }
 
-  protected long multiplier() {
+  protected long multiplier2() {
+    return 2;
+  }
+
+  protected long multiplier1() {
     return 2;
   }
 
@@ -38,7 +42,7 @@ public class A045671 extends MemorySequence {
     }
     final Z a = mex();
     mSeen.add(a);
-    final Z b = a.multiply2().add(n * multiplier());
+    final Z b = a.multiply(multiplier1()).add(n * multiplier2());
     mSeen.add(b);
     return select(a, b);
   }

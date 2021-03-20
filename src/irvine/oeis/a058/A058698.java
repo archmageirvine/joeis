@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000041;
 
 
 /**
- * A058698 p(P(n)), P = primes (A000040), p = partition numbers (A000041).
+ * A058698 a(n) = p(P(n)), P = primes (A000040), p = partition numbers (A000041).
  * Formula: <code>a(n) = A000041(A000040(n)).</code>
  * @author Georg Fischer
  */

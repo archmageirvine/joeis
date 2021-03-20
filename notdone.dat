@@ -1599,3 +1599,4 @@ A045506 Inscribe 2 spheres of curvature 2 inside sphere of curvature -1, continu
 A045652 Simple dependency A030126.
 A045673 Curvatures in diagram constructed by inscribing 2 circles of curvature 0 and 1 inside circle of curvature 0, continuing indefinitely to inscribe circles wherever possible
 A045679 Numbers congruent to 0,1,4,9 mod 12 missing from A045673 (conjectured to be finite).
+A045736 Smallest positive integer requiring n syllables to pronounce in American English

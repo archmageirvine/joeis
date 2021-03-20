@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026599 a(n) = Sum{T(i,j)}, 0&lt;=j&lt;=i, 0&lt;=i&lt;=2n, T given by A026584.
+ * A026599 a(n) = Sum_{0&lt;=j&lt;=2*i, 0&lt;=i&lt;=n} A026584(i,j).
  * @author Sean A. Irvine
  */
 public class A026599 extends A026584 {

@@ -7,7 +7,7 @@ package irvine.oeis.a045;
 public class A045681 extends A045671 {
 
   @Override
-  protected long multiplier() {
+  protected long multiplier2() {
     return 3;
   }
 }

@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A227018 Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n(n + 1)(n + 2)(n + 3)/24.
+ * A227018 Floor(M(g(n-1)+1,..,g(n))), where M = harmonic mean and g(n) = n*(n + 1)*(n + 2)*(n + 3)/24.
  * @author Georg Fischer
  */
 public class A227018 extends HolonomicRecurrence {

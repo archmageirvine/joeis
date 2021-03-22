@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A104285 Primes which are the concatenation of four consecutive fibonacci numbers.
+ * A104285 Primes which are the concatenation of four consecutive Fibonacci numbers.
  *
  * @author Georg Fischer
  */

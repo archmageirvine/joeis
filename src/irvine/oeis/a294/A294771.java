@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A294771 Permutations of [n] avoiding {4231, 2341, 4123}.
+ * A294771 Number of permutations of [n] avoiding {4231, 2341, 4123}.
  * @author Georg Fischer
  */
 public class A294771 extends HolonomicRecurrence {

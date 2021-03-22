@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A333641 11-gonal square numbers.
+ * A333641 11-gonal (hendecagonal) square numbers.
  * @author Georg Fischer
  */
 public class A333641 extends HolonomicRecurrence {

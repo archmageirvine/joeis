@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A104299 Primes which are the reverse concatenation of three consecutive fibonacci numbers.
+ * A104299 Primes which are the reverse concatenation of three consecutive Fibonacci numbers.
  *
  * @author Georg Fischer
  */

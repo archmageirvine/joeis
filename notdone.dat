@@ -1604,3 +1604,4 @@ A045779 Number of factorizations of n into distinct factors for some n (image of
 A045782 Number of factorizations of n for some n (image of A001055)
 A045790 Three-dimensional simplices of determinant n
 A045824 a(n) = A004034(n)/16
+A045872 Simple dependency on A006792

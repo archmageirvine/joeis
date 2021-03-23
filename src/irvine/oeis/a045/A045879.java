@@ -1,0 +1,48 @@
+package irvine.oeis.a045;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
+
+/**
+ * A045879.
+ * @author Sean A. Irvine
+ */
+public class A045879 implements Sequence {
+
+  private long mN = 12;
+  private Z mLim = Z.valueOf(100);
+  private final TreeSet<Long> mA = new TreeSet<>();
+
+  @Override
+  public Z next() {
+    while (mA.isEmpty()) {
+      final TreeMap<Z, List<Long>> t = new TreeMap<>();
+      mLim = mLim.multiply(10);
+      Z s;
+      while ((s = Z.valueOf(mN).square()).compareTo(mLim) < 0) {
+        final Z desc = ZUtils.sortDigitsDescending(s);
+        final List<Long> l = t.get(desc);
+        if (l == null) {
+          final ArrayList<Long> nl = new ArrayList<>();
+          nl.add(mN);
+          t.put(desc, nl);
+        } else {
+          l.add(mN);
+        }
+        ++mN;
+      }
+      for (final List<Long> v : t.values()) {
+        if (v.size() > 1) {
+          mA.addAll(v);
+        }
+      }
+    }
+    return Z.valueOf(mA.pollFirst());
+  }
+}

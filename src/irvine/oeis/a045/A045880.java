@@ -1,4 +1,4 @@
-package irvine.oeis.a337;
+package irvine.oeis.a045;
 
 import java.util.ArrayList;
 
@@ -7,13 +7,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A337211 b(a(n)) is a closer approximation than b(a(n-1)), where b(k) is the "best approximation" to k as defined in A337210.
+ * A045880 Integers whose square root is "well approximated" by other square roots of integers.
  * @author Sean A. Irvine
  */
-public class A337211 implements Sequence {
+public class A045880 implements Sequence {
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private CR mBest = CR.TWO;
+  private CR mPrev = CR.TWO;
   private int mN = 0;
   private final ArrayList<CR> mSqrtCache = new ArrayList<>();
 
@@ -39,13 +38,11 @@ public class A337211 implements Sequence {
   public Z next() {
     while (true) {
       final CR b = search(sqrt(++mN), mN - 1);
-      if (b.compareTo(mBest) < 0) {
-        mBest = b;
-        if (mVerbose) {
-          System.out.println(mN + " # b=" + mBest.toString(30));
-        }
+      if (b.compareTo(mPrev) < 0) {
+        mPrev = b;
         return Z.valueOf(mN);
       }
+      mPrev = b;
     }
   }
 }

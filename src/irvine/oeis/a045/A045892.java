@@ -11,6 +11,8 @@ import irvine.oeis.a000.A000040;
  */
 public class A045892 extends A000040 {
 
+  // todo currently broken -- does not find same solution
+
   private Z mP = super.next();
 
   @Override

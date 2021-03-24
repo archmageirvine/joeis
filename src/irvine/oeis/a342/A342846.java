@@ -1,0 +1,32 @@
+package irvine.oeis.a342;
+
+import java.util.HashSet;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A342846.
+ * @author Sean A. Irvine
+ */
+public class A342846 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    final String s = String.valueOf(++mN);
+    final HashSet<String> seen = new HashSet<>();
+    for (int k = s.length() - 1; k >= 0; --k) {
+      if ((s.charAt(k) & 1) == 1) {
+        for (int j = k; j >= 0; --j) {
+          if (s.charAt(j) != '0') {
+            seen.add(s.substring(j, k + 1));
+          }
+        }
+      }
+    }
+    seen.remove(s); // not proper!
+    return Z.valueOf(seen.size());
+  }
+}

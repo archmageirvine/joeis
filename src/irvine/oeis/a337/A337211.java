@@ -24,7 +24,7 @@ public class A337211 implements Sequence {
     return mSqrtCache.get(n);
   }
 
-  private CR search(CR s, final int c) {
+  private CR search(final CR s, final int c) {
     if (c <= 0) {
       return s;
     }

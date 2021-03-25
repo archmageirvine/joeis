@@ -46,7 +46,7 @@ final class ExtendedEuclid {
       u = t[1].subtract(babs.multiply(t[0])).divide(aabs);
       v = t[0];
     }
-    return new Z[] {d, a == aabs ? u : u.negate(), b == babs ? v : v.negate()};
+    return new Z[] {d, a.equals(aabs) ? u : u.negate(), b.equals(babs) ? v : v.negate()};
   }
 
 }

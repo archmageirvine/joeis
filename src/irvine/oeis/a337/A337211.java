@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A337211 b(a(n)) is a closer approximation than b(a(n-1)), where b(k) is the "best approximation" to k as defined in A337210.
+ * A337211 Numbers k such that b(k) &lt; b(j) for all j &lt; k where b(k) = Min_{sqrt(n) - Sum_{i} sqrt(c_i) &gt; 0 with c_i being unique integers}.
  * @author Sean A. Irvine
  */
 public class A337211 implements Sequence {

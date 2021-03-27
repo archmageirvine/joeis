@@ -3,7 +3,7 @@ package irvine.oeis.a342;
 import irvine.math.z.Z;
 
 /**
- * A342848.
+ * A342848 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A342848 extends A342847 {

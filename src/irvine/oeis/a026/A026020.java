@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026020 a(n) = C(4n, n) - C(4n, n - 3).
+ * A026020 a(n) = binomial(4n, n) - binomial(4n, n - 3).
  * @author Sean A. Irvine
  */
 public class A026020 implements Sequence {

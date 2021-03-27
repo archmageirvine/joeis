@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A045893 Solutions t to the equation s*prime(n) + t*prime(n+1) = 1.
+ * A045893 Solutions t to the equation s*prime(n) + t*prime(n+1) = 1 with |s| as small as possible.
  * @author Sean A. Irvine
  */
 public class A045893 extends A000040 {

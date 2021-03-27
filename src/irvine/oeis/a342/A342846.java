@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A342846.
+ * A342846 Number of distinct odd numbers visible as proper substrings of n.
  * @author Sean A. Irvine
  */
 public class A342846 implements Sequence {

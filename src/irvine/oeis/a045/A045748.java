@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045748 Last n digits of the partial sums of the factorials.
+ * A045748 a(n) is the number consisting of the last n digits (although any leading 0's among those last n digits are omitted) of Sum_{j=1..k} j! for all sufficiently large k.
  * @author Sean A. Irvine
  */
 public class A045748 implements Sequence {

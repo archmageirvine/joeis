@@ -4,7 +4,7 @@ package irvine.oeis.a155;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A155144 a(n)=9*a(n-1)+9*a(n-2), n&gt;2; a(0)=1, a(1)=8, a(2)=80.
+ * A155144 a(n) = 9*a(n-1) + 9*a(n-2), n&gt;2; a(0)=1, a(1)=8, a(2)=80.
  * @author Georg Fischer
  */
 public class A155144 extends GeneratingFunctionSequence {

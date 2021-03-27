@@ -7,7 +7,7 @@ package irvine.oeis.a155;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A155112 Triangle T(n,k), 0&lt;=k&lt;=n, read by rows given by [0,2,-1/2,-1/2,0,0,0,0,0,0,0,0,...] DELTA [1,0,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938 .
+ * A155112 Triangle T(n,k), 0&lt;=k&lt;=n, read by rows given by [0,2,-1/2,-1/2,0,0,0,0,0,0,0,0,...] DELTA [1,0,0,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.
  * @author Georg Fischer
  */
 public class A155112 extends GeneratingFunctionTriangle {

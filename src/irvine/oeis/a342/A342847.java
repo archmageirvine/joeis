@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A342847.
+ * A342847 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A342847 extends A000142 {

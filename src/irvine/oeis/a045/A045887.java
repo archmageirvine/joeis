@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045887 Number of distinct even numbers visible as substrings of n.
+ * A045887 Number of distinct even numbers visible as proper subsequences of n.
  * @author Sean A. Irvine
  */
 public class A045887 implements Sequence {

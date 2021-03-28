@@ -1,15 +1,30 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A059387 Jordan function J_n(6) (see A059379).
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A059387 extends LinearRecurrence {
+public class A059387 implements Sequence {
 
-  /** Construct the sequence. */
+  protected long mN;
+  
+  /** Construct the sequence */
   public A059387() {
-    super(new long[] {-36, 72, -47, 12}, new long[] {0, 2, 24, 182});
+    mN = -1;
+  }
+
+  @Override
+  public Z next() {
+    Z sum = Z.ZERO;
+    ++mN;
+    for (final Z d : Cheetah.factor(6).divisors()) {
+      sum = sum.add(d.pow(mN).multiply(Mobius.mobius(6 / d.longValue())));
+    }
+    return sum;
   }
 }

@@ -1605,3 +1605,5 @@ A045782 Number of factorizations of n for some n (image of A001055)
 A045790 Three-dimensional simplices of determinant n
 A045824 a(n) = A004034(n)/16
 A045872 Simple dependency on A006792
+A045903 Number of nonisomorphic systems of catafusenes in an example in Cyvin et al. (1994) with two appendages to the core indexed by the total number of hexagons in the appendages.
+A045904 Nonisomorphic catacondensed monoheptafusenes (see reference for precise definition).

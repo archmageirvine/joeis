@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045951.
+ * A045951 Number of solutions to product_A+product_B=product_C where A,B,C is a partition of {1,2,...n}.
  * @author Sean A. Irvine
  */
 public class A045951 implements Sequence {

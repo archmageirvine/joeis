@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007434;
 
 /**
- * A321879 Partial sums of the Jordan function J_2(k), for 1 <= k <= n.
+ * A321879 Partial sums of the Jordan function J_2(k), for 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A321879 extends PartialSumSequence {

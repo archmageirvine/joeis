@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A006073 implements Sequence {
 
-  private long mN = 3;
+  protected long mN = 3;
   private long mA = 1;
   private long mB = 1;
 

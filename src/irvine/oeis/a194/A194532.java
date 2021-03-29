@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007434;
 
 /**
- * A194532 Jordan function ratio J_6(n)/J_2(n)
+ * A194532 Jordan function ratio J_6(n)/J_2(n).
  * @author Georg Fischer
  */
 public class A194532 extends A007434 {

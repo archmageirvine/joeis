@@ -1,10 +1,7 @@
 package irvine.oeis.a045;
 
-import java.util.HashSet;
-
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.util.Triple;
 
 /**
  * A045951.
@@ -12,36 +9,34 @@ import irvine.util.Triple;
  */
 public class A045951 implements Sequence {
 
+  // Actually it seems you have to pretend that "1" is included in each
+  // set -- this is not quite the same thing as saying that empty set
+  // has product 1, otherwise {}+{1}={2} and {}+{}={1,2} and a(2)=2.
+
   private long mN = 0;
   private long mC = 0;
-  private final HashSet<Triple<Long>> mA = new HashSet<>();
 
-  private void search(final long a, final long b, final long c, final long n) {
-    if (n > mN) {
+  // Only keep track of the products are we proceed
+  private void search(final long a, final long b, final long c, final long k) {
+    if (k > mN) {
       if (a + b == c) {
-        //System.out.println("  " + n + ": " + a + " + " + b + " = " + c);
-        mA.add(a < b ? new Triple<>(a, b, c) : new Triple<>(b, a, c));
-        if (a < b) {
-          ++mC;
-        }
+        ++mC;
       }
       return;
     }
-    // Initial zeros used to ensure sets are nonempty // todo no longer needed empty products allowed
-    search(a == 0 ? n : a * n, b, c, n + 1);
-    if (a != 0) { // partially break symmetry
-      search(a, b == 0 ? n : b * n, c, n + 1);
+    // Place k in one of the three sets
+    search(a * k, b, c, k + 1);
+    if (a != 1) { // break symmetry, a+b == b+a
+      search(a, b * k, c, k + 1);
     }
-    search(a, b, c == 0 ? n : c * n, n + 1);
+    search(a, b, c * k, k + 1);
   }
 
   @Override
   public Z next() {
     ++mN;
-    mA.clear();
     mC = 0;
-    search(1, 1, 0, 1);
-    System.out.println("Count was " + mC + " " + mC / 3);
-    return Z.valueOf(mA.size());
+    search(1, 1, 1, 2);
+    return Z.valueOf(mC);
   }
 }

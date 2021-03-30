@@ -14,6 +14,7 @@ public class A045976 implements Sequence {
 
   // todo not working
 
+
   private int mN = 0;
 
   @Override

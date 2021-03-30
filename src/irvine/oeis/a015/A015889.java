@@ -19,7 +19,7 @@ public class A015889 implements Sequence {
    * Construct the sequence
    */
   public A015889() {
-    this(4, 5);
+    this(4, 4);
   }
 
   /**

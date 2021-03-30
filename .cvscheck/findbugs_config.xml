@@ -241,6 +241,9 @@
      <Match classregex="irvine.oeis.a036.A036382">
        <BugCode name="SEO"/>
      </Match>
+     <Match classregex="irvine.oeis.a045.A045913">
+       <BugCode name="SEO"/>
+     </Match>
      <!-- False positives, these cannot be reordered. -->
      <Match classregex="gebhardt.PermGrpC">
        <BugCode name="SEO"/>

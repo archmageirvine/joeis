@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002420;
 import java.util.ArrayList;
 
 /**
- * A000473 Number of genus 0 rooted maps with 5 faces with n vertices.
+ * A000473 Number of genus 0 rooted maps with 5 faces and n vertices.
  * @author Sean A. Irvine
  */
 public class A000473 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A023885 Not a prime and average of divisors except itself is an integer.
+ * A023885 Nonprimes whose average of proper divisors is an integer.
  * @author Sean A. Irvine
  */
 public class A023885 extends A002808 {

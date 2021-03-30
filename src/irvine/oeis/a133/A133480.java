@@ -6,7 +6,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133480 Left 3-step factorial (n,-3)!: signed A008544.
+ * A133480 Left 3-step factorial (n,-3)!: a(n) = (-1)^n * A008544(n).
  * @author Georg Fischer
  */
 public class A133480 extends HolonomicRecurrence {

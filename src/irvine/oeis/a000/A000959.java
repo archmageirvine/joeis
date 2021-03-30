@@ -50,7 +50,7 @@ public class A000959 implements Sequence {
       }
 
       // Here k is the position of the mNth lucky number prior to
-      // sieve on 3, that is, after the sieve on 2. Adjust the
+      // sieve on 3; that is, after the sieve on 2. Adjust the
       // position prior to the sieve on 2.
       k = 2 * k;
 

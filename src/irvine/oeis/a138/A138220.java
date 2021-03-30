@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A138220 Numbers k such that 900k^2 + 1 is prime.
+ * A138220 Numbers k such that 900*k^2 + 1 is prime.
  * @author Georg Fischer
  */
 public class A138220 extends PrimePositionSubsequence {

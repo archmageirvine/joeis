@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A342847 allocated for Sean A. Irvine.
+ * A342847 Value of r in best integer approximation r^s to n! with s &gt;= r.
  * @author Sean A. Irvine
  */
 public class A342847 extends A000142 {

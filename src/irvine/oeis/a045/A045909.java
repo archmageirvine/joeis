@@ -9,7 +9,7 @@ import irvine.oeis.a342.A342554;
 import irvine.oeis.a342.A342570;
 
 /**
- * A045909 Catafusenes (see reference for precise definition).
+ * A045909 Number of unsymmetrical catafusenes with n hexagons (see reference for precise definition).
  * @author Sean A. Irvine
  */
 public class A045909 extends A045906 {

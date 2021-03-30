@@ -9,7 +9,7 @@ import irvine.oeis.a039.A039658;
 import irvine.oeis.a055.A055879;
 
 /**
- * A342554.
+ * A342554 Number of catafusenes with 2n hexagons and C symmetry.
  * @author Sean A. Irvine
  */
 public class A342554 implements Sequence {

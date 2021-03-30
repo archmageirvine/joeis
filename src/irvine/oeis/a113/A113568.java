@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A113568 Numbers n such that prime(n) +- n, prime(n) +- 2n, prime(n) +- 3n and prime(n) +- 4n are all primes.
+ * A113568 Numbers k such that prime(k) +- k, prime(k) +- 2k, prime(k) +- 3k and prime(k) +- 4k are all primes.
  *
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a027.A027307;
 
 /**
- * A034015 a(n) = A027307(n+1)/2.
+ * A034015 Small 3-Schroeder numbers: a(n) = A027307(n+1)/2.
  * @author Georg Fischer
  */
 public class A034015 implements Sequence {

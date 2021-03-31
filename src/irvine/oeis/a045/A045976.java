@@ -1,8 +1,9 @@
 package irvine.oeis.a045;
 
-import irvine.math.polynomial.Polynomial;
+import irvine.math.cc.CC;
+import irvine.math.cc.ComputableComplexField;
+import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.math.q.RationalUnityExtension;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -12,19 +13,19 @@ import irvine.oeis.Sequence;
  */
 public class A045976 implements Sequence {
 
-  // todo not working
-
-
+  private static final ComputableComplexField CCF = ComputableComplexField.SINGLETON;
+  private static final CC TAU_I = CCF.multiply(CC.I, CR.TAU);
   private int mN = 0;
 
   @Override
   public Z next() {
-    final RationalUnityExtension ring = new RationalUnityExtension(++mN);
-    Polynomial<Q> prod = ring.one();
-    for (int j = 1; j < mN; ++j) {
-      prod = ring.multiply(prod, ring.add(ring.pow(ring.onePlusXToTheN(j), mN), ring.one()));
+    ++mN;
+    CC prod = CC.ONE;
+    for (int k = 1; k < mN; ++k) {
+      final CC u = CCF.exp(CCF.multiply(TAU_I, CR.valueOf(new Q(k, mN))));
+      final CC t = CCF.pow(CCF.add(u, CC.ONE), mN);
+      prod = CCF.multiply(prod, CCF.add(t, CC.ONE));
     }
-    System.out.println(prod);
-    return prod.coeff(0).toZ();
+    return prod.re().toZ();
   }
 }

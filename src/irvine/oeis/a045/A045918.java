@@ -16,7 +16,7 @@ public class A045918 implements Sequence {
    * @param n number
    * @return look-and-say number
    */
-  public static String lookAndSay(final String n) {
+  public static String lookAndSay(final CharSequence n) {
     final StringBuilder sb = new StringBuilder();
     int cnt = 0;
     char p = 0;

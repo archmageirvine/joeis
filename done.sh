@@ -50,12 +50,13 @@ EOF
 gnuplot <<EOF
         set term pngcairo
         set output "oeis-history.png"
-        set xlabel "Year"
+        set xlabel "Year (20xx)"
         set ylabel "Sequences implemented"
         set title "History of jOEIS"
-        set xdata time                         
+        set xdata time     
+        #set xtics 63072000
         set timefmt "%Y-%m-%d"
-        set format x "%Y"
+        set format x "%y"
         set key off
         plot "history.dat" using 1:2 with lines
 EOF

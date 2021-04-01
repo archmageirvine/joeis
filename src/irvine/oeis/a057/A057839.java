@@ -14,6 +14,6 @@ public class A057839 extends A015889 {
    * Construct the sequence.
    */
   public A057839() {
-    super(0, 10, 8, 6, 4, 2);
+    super(0, 10, 8, 6, 4, 2, 1);
   }
 }

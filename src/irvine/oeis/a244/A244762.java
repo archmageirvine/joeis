@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A244762 (5*3^n-2*n-1)/4.
+ * A244762 a(n) = (5*3^n-2*n-1)/4.
  * @author Georg Fischer
  */
 public class A244762 extends GeneratingFunctionSequence {

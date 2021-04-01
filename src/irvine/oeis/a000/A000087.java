@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A000087 Number of unrooted planar maps.
+ * A000087 Number of unrooted nonseparable planar maps with n edges and a distinguished face.
  * @author Sean A. Irvine
  */
 public class A000087 implements Sequence {

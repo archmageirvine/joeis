@@ -1610,3 +1610,8 @@ A045904 Nonisomorphic catacondensed monoheptafusenes (see reference for precise 
 A045990 Simple dependency A034997
 A046001 Maximal number of ordinary double points on an n-th degree algebraic surface in complex projective 3-space
 A046024 a(n) = smallest k such that Sum_{ i = 1..k } 1/prime(i) exceeds n
+A046057 Smallest order m>0 for which there are n nonisomorphic finite groups of order m, or 0 if no such order exists.
+A046058 Incrementally largest numbers of nonisomorphic finite groups of order n
+A046059 Orders of finite groups having the incrementally largest numbers of nonisomorphic forms A046058
+A046060 5-multiperfect numbers, difficult to do properly
+A046061 6-multiperfect numbers, difficult to do properly

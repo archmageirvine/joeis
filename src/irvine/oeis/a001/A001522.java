@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001522 Number of n-stacks with strictly receding walls, or planar partitions of n.
+ * A001522 Number of n-stacks with strictly receding walls, or the number of Type A partitions of n in the sense of Auluck (1951).
  * @author Sean A. Irvine
  */
 public class A001522 implements Sequence {

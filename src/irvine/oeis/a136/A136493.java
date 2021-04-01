@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A136493 A triangle of Coefficients of characteristic polynomials of a symmetrical pentadiagonal matrix type: 1) middle diagonal= 1 2) second diagonals=-1 3) third diagonal= 1.
+ * A136493 Triangle of coefficients of characteristic polynomials of symmetrical pentadiagonal matrices of the type (1,-1,1,-1,1).
  * @author Sean A. Irvine
  */
 public class A136493 implements Sequence {

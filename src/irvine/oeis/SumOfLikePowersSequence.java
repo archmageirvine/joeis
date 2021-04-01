@@ -36,7 +36,7 @@ public class SumOfLikePowersSequence implements Sequence {
    * @param maxTerms maximum number of terms in the sum
    * @param distinct whether all the terms are distinct
    */
-  protected SumOfLikePowersSequence(final int power, final int minTerms, final int maxTerms, final boolean distinct) {
+  public SumOfLikePowersSequence(final int power, final int minTerms, final int maxTerms, final boolean distinct) {
     mPower = power;
     mMinTerms = minTerms;
     mMaxTerms = maxTerms;

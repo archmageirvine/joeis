@@ -439,8 +439,8 @@ public class GenerateGraphs {
 
   // find bounds on extension degree;  store answer in data[*].
   void xbnds(final int n, final int ne, final int dmax) {
-    int xlb = n == 1 ? 0 : (dmax > (2 * ne + n - 2) / (n - 1) ? dmax : (2 * ne + n - 2) / (n - 1));
-    int xub = n < mMaxDeg ? n : mMaxDeg;
+    int xlb = n == 1 ? 0 : Math.max(dmax, (2 * ne + n - 2) / (n - 1));
+    int xub = Math.min(n, mMaxDeg);
 
     for (int xc = xub; xc >= xlb; --xc) {
       int d = xc;
@@ -463,7 +463,7 @@ public class GenerateGraphs {
       for (int xc = xlb; xc <= xub; ++xc) {
         int m = ne + xc;
         for (int nn = n + 1; nn < mMaxN; ++nn) {
-          m += mMaxDeg < nn ? mMaxDeg : nn;
+          m += Math.min(mMaxDeg, nn);
         }
         if (m < mMinE) {
           xlb = xc + 1;
@@ -527,7 +527,7 @@ public class GenerateGraphs {
           final Graph gx = accept2(g, x, deg, xc > dmax + 1 || (xc == dmax + 1 && (x & d) == 0));
           if (gx != null && (mConnec == 0 || (mConnec == 1 && gx.isConnected()) || (mConnec > 1 && gx.isBiconnected()))) {
             if (!prune(gx, mMaxN)) {
-              mEdgeCount[ne + xc]++;
+              ++mEdgeCount[ne + xc];
               mOutProc.process(mCanonise ? mGCan : gx);
             }
           }
@@ -627,7 +627,7 @@ public class GenerateGraphs {
           if (mConnec == 0 || (mConnec == 1 && gx.isConnected())
             || (mConnec > 1 && gx.isBiconnected())) {
             if (!prune(gx, mMaxN)) {
-              mEdgeCount[ne + xc]++;
+              ++mEdgeCount[ne + xc];
               mOutProc.process(mCanonise ? mGCan : gx);
             }
           }
@@ -796,7 +796,7 @@ public class GenerateGraphs {
     final Graph g1 = GraphFactory.create(1);
     if (mMaxN == 1) {
       if (res == 0) {
-        mEdgeCount[0]++;
+        ++mEdgeCount[0];
         mOutProc.process(g1);
       }
     } else {

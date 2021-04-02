@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import java.io.IOException;
+import java.util.ArrayList;
+
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * A002905 Number of connected graphs with n edges.
@@ -40,4 +40,3 @@ public class A002905 implements Sequence {
     return mEdgeCounts.get(mN - 1);
   }
 }
-

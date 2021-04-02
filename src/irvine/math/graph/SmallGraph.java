@@ -25,7 +25,11 @@ public class SmallGraph extends AbstractGraph {
 
   protected final long[] mAdj;
 
-  SmallGraph(final int order) {
+  /**
+   * Construct a small graph of specified order.
+   * @param order order
+   */
+  public SmallGraph(final int order) {
     mAdj = new long[order];
   }
 

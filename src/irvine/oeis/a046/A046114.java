@@ -1,0 +1,17 @@
+package irvine.oeis.a046;
+
+import irvine.oeis.ContinuedFractionNumeratorSequence;
+import irvine.oeis.a001.A001620;
+
+/**
+ * A046114.
+ * @author Sean A. Irvine
+ */
+public class A046114 extends ContinuedFractionNumeratorSequence {
+
+  /** Construct the sequence. */
+  public A046114() {
+    super(new A001620());
+  }
+}
+

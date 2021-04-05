@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionNumeratorSequence;
 import irvine.oeis.a001.A001620;
 
 /**
- * A046114.
+ * A046114 Numerators of convergents to Euler-Mascheroni constant.
  * @author Sean A. Irvine
  */
 public class A046114 extends ContinuedFractionNumeratorSequence {

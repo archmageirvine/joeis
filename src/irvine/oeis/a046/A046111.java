@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.math.z.Z;
 
 /**
- * A046111.
+ * A046111 Number of lattice points on circumference of a circle of radius 1/3,2/3,4/3,5/3,... with center at (1/3,0).
  * @author Sean A. Irvine
  */
 public class A046111 extends A046080 {

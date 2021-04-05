@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046116.
+ * A046116 Numbers n such that no Paley-type Hadamard matrix of order n exists.
  * @author Sean A. Irvine
  */
 public class A046116 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046113.
+ * A046113 Coefficients in expansion of theta_3(q) * theta_3(q^6) in powers of q.
  * @author Sean A. Irvine
  */
 public class A046113 implements Sequence {

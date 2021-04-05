@@ -18,7 +18,7 @@ public class A045970 implements Sequence {
   @Override
   public Z next() {
     if (++mN == 1) {
-      return Z.FIVE;
+      return Z.SEVEN;
     }
     Z prod = Z.ONE;
     final FactorSequence fs = Cheetah.factor(mN);

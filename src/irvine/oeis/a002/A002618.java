@@ -9,10 +9,8 @@ import irvine.oeis.a000.A000010;
  */
 public class A002618 extends A000010 {
 
-  protected long mN = 0;
-
   @Override
   public Z next() {
-    return super.next().multiply(++mN);
+    return super.next().multiply(mN);
   }
 }

@@ -16,7 +16,7 @@ public class A012257 implements Sequence {
   {
     mA.set(0, 2);
   }
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

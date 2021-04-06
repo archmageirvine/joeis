@@ -19,7 +19,7 @@ public class A046146 implements Sequence {
       return Z.ZERO;
     }
     final Z phi = Z.valueOf(LongUtils.phi(mN));
-    IntegersModMul rn = new IntegersModMul(mN);
+    final IntegersModMul rn = new IntegersModMul(mN);
     for (long q = mN; q >= 1; --q) {
       if (LongUtils.gcd(q, mN) == 1 && rn.order(Z.valueOf(q)).equals(phi)) {
         return Z.valueOf(q);

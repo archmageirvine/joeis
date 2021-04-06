@@ -18,7 +18,7 @@ public class A046091 implements Sequence {
     private final int mVertices;
     private final int mEdges;
 
-    public MySequence(final int n, final int m) {
+    MySequence(final int n, final int m) {
       super(0, 0, false, false, false);
       mVertices = n;
       mEdges = m;

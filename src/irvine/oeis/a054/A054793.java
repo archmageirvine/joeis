@@ -6,7 +6,7 @@ import irvine.oeis.NumericalAronsonSequence;
 import irvine.oeis.a000.A000583;
 
 /**
- * A054793 Earliest sequence with a(a(n))=n^4.
+ * A054793 Earliest sequence with a(a(n)) = n^4.
  * @author Georg Fischer
  */
 public class A054793 extends NumericalAronsonSequence {

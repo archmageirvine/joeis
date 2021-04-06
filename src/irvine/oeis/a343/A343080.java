@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A343080.
+ * A343080 a(n) = smallest number that is the sum of n positive squares in three ways.
  * @author Sean A. Irvine
  */
 public class A343080 implements Sequence {

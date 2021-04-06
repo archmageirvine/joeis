@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A343085.
+ * A343085 a(n) = smallest number that is the sum of n positive cubes in four ways.
  * @author Sean A. Irvine
  */
 public class A343085 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006470 Number of rooted planar maps.
+ * A006470 Number of tree-rooted planar maps with 3 faces and n vertices and no isthmuses.
  * @author Sean A. Irvine
  */
 public class A006470 implements Sequence {

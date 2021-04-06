@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006429 Number of tree-rooted planar maps with 4 vertices and n faces.
+ * A006429 Number of loopless tree-rooted planar maps with 4 vertices and n faces.
  * @author Sean A. Irvine
  */
 public class A006429 implements Sequence {

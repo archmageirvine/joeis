@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A343082.
+ * A343082 a(n) = smallest number that is the sum of n positive 4th powers in three ways.
  * @author Sean A. Irvine
  */
 public class A343082 implements Sequence {

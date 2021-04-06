@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A343083.
+ * A343083 a(n) = smallest number that is the sum of n positive 5th powers in three ways.
  * @author Sean A. Irvine
  */
 public class A343083 implements Sequence {

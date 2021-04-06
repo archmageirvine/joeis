@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.a015.A015889;
 
 /**
- * A057839 Numbers n such that n | 10^n + 8^n + 6^n + 4^n + 2^n + 1.
+ * A057839 Numbers k such that k | 10^k + 8^k + 6^k + 4^k + 2^k + 1.
  * @author Georg Fischer
  */
 public class A057839 extends A015889 {

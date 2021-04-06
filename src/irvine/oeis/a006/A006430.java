@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006430 Number of tree-rooted planar maps with 5 vertices and n faces.
+ * A006430 Number of loopless tree-rooted planar maps with 5 vertices and n faces and no isthmuses.
  * @author Sean A. Irvine
  */
 public class A006430 implements Sequence {

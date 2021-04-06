@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052714 a(0)=0; thereafter a(n) = Catalan(n-1)*2^(n-1)*n!.
+ * A052714 a(n) = 2^(n-1) * n! * Catalan(n-1) for n &gt; 0 with a(0) = 0.
  * @author Georg Fischer
  */
 public class A052714 extends HolonomicRecurrence {

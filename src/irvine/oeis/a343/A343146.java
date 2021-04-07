@@ -27,8 +27,7 @@ public class A343146 implements Sequence {
 
   private static final int BITS_PER_CELL = 4;
   private static final long CELL_MASK = (1L << BITS_PER_CELL) - 1;
-  private static final long START_STATE = 0b0001_0010_0011_0100_0101_0110_0111_1000_0000L;
-  private static final long TARGET_STATE = START_STATE;
+  protected static final long START_STATE = 0b0001_0010_0011_0100_0101_0110_0111_1000_0000L;
   private static final int[][] MOVE_DELTAS = {
     {1, 3},
     {-1, 1, 3},
@@ -52,9 +51,9 @@ public class A343146 implements Sequence {
     return empty;
   }
 
-  private final Map<Long, Integer> mStateToId = new HashMap<>();
-  private final int[][] mTransitions;
-  private final int mTargetId;
+  protected final Map<Long, Integer> mStateToId = new HashMap<>();
+  protected final int[][] mTransitions;
+  protected final int mTargetId;
   private Z[] mCounts;
   {
     // Precompute all possible transitions
@@ -69,7 +68,7 @@ public class A343146 implements Sequence {
       }
       mStateToId.put(s, mStateToId.size());
     }
-    mTargetId = mStateToId.get(TARGET_STATE);
+    mTargetId = mStateToId.get(targetState());
     // Compute transition matrix between states
     mTransitions = new int[mStateToId.size()][];
     for (final Map.Entry<Long, Integer> e : mStateToId.entrySet()) {
@@ -86,6 +85,10 @@ public class A343146 implements Sequence {
         mTransitions[id][k] = mStateToId.get(clear + shift);
       }
     }
+  }
+
+  protected long targetState() {
+    return START_STATE;
   }
 
   private Z[] step(final Z[] counts) {

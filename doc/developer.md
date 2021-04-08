@@ -60,7 +60,7 @@ the Sun Java style guide, with the following specifics:
 * The class comment should start with the sequence number and contain
   appropriate "@author" tag(s).  These comments are processed by the
   javadoc system, so must be valid for that purpose.  For example, "<"
-  must be escaped as "&lt;", etc.  Appropriate <code> tags and similar
+  must be escaped as "&amp;lt;", etc.  Appropriate "<"code">" tags and similar
   should be used where appropriate.
 
 * Member variables match the pattern m[A-Z][A-Za-z0-9]*
@@ -109,7 +109,7 @@ private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(Int
 ```
 
 Actually the above variable would be better called `FIELD` rather than `RING`, but
-the above is way more common usage in the current code.
+the above is way more common idiom in the current code.
 
 Some sequences support verbose output.  The recommended mechanism is using the
 property `oeis.verbose` which can be accessed as

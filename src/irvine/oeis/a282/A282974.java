@@ -7,7 +7,7 @@ import irvine.oeis.a011.A011546;
 
 
 /**
- * A282974 Numbers k such that A011546(k) is a prime.
+ * A282974 Numbers k such that A011546(k-1) is a prime.
  * @author Georg Fischer
  */
 public class A282974 extends PrimePositionSubsequence {

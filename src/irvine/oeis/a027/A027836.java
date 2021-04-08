@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027836 Total number of vertices in loopless rooted planar maps (with n-1 edges).
+ * A027836 Total number of vertices in all loopless rooted planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A027836 implements Sequence {

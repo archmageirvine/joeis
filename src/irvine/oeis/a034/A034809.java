@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034809 Concatenation of 'n and prevprime(n)' is a prime.
+ * A034809 Numbers k such that the concatenation of k and previous_prime(k) is a prime.
  * @author Sean A. Irvine
  */
 public class A034809 implements Sequence {

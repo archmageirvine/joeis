@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a343.A343146;
 
 /**
- * A046164.
+ * A046164 Number of distinct solutions to reverse the 8 puzzle (3 X 3 analog of the 4 X 4 15 puzzle) in 28, 30, 32, ... moves.
  * @author Sean A. Irvine
  */
 public class A046164 extends A343146 {

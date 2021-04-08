@@ -10,18 +10,23 @@ import irvine.oeis.Sequence;
 public class A033680 implements Sequence {
 
   private final StringBuilder mA = new StringBuilder();
-  private Z mPrev = Z.ONE;
+  private Z mPrev = null;
+
+  protected long start() {
+    return 1;
+  }
   
   @Override
   public Z next() {
     if (mA.length() == 0) {
-      mA.append('1');
-    } else {
-      while (!new Z(new StringBuilder(mA).append(mPrev)).isProbablePrime()) {
-        mPrev = mPrev.add(2);
-      }
-      mA.append(mPrev);
+      mA.append(start());
+      mPrev = Z.valueOf(start() | 1); // Make odd so we can increment by 2s in later iterations
+      return Z.valueOf(start());
     }
+    while (!new Z(new StringBuilder(mA).append(mPrev)).isProbablePrime()) {
+      mPrev = mPrev.add(2);
+    }
+    mA.append(mPrev);
     return mPrev;
   }
 }

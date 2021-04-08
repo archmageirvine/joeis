@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A343146.
+ * A343146 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A343146 implements Sequence {

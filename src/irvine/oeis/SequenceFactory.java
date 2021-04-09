@@ -6,14 +6,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
-import java.util.HashSet;
-import java.util.Set;
 
 import org.apfloat.ApfloatRuntimeException;
 
 import irvine.math.z.Z;
-import irvine.util.string.Casing;
-import irvine.util.string.StringUtils;
 
 /**
  * A factory providing methods to get an object capable to generating a
@@ -23,19 +19,6 @@ import irvine.util.string.StringUtils;
 public final class SequenceFactory {
 
   private SequenceFactory() { }
-  private static Set<String> sDead = null;
-  private static final Sequence DEAD_SEQUENCE = new DeadSequence();
-
-  private static synchronized boolean isDead(final String aNumber) {
-    if (sDead == null) {
-      try {
-        sDead = new HashSet<>(StringUtils.suckInWords(SequenceFactory.class.getResourceAsStream("/irvine/oeis/dead.lst"), Casing.NONE));
-      } catch (final IOException e) {
-        throw new RuntimeException(e);
-      }
-    }
-    return sDead.contains(aNumber);
-  }
 
   /**
    * Return the sequence for the specified id. The sequence is not
@@ -58,13 +41,10 @@ public final class SequenceFactory {
       try {
         return (Sequence) Class.forName("irvine.oeis.a" + canonicalId.substring(1, 4) + '.' + canonicalId).newInstance();
       } catch (final ClassNotFoundException | IllegalAccessException | InstantiationException e) {
-        if (isDead(canonicalId)) {
-          return DEAD_SEQUENCE;
-        }
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Sequence not found");
       }
     }
-    throw new UnsupportedOperationException();
+    throw new UnsupportedOperationException("Unknown sequence number");
   }
 
   /**
@@ -81,12 +61,20 @@ public final class SequenceFactory {
     try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
       final byte[] ls = System.lineSeparator().getBytes(StandardCharsets.US_ASCII);
       final Sequence seq = sequence(args[0]);
-      Z z;
-      while ((z = seq.next()) != null) {
-        generated = true;
-        out.write(z.toString().getBytes(StandardCharsets.US_ASCII));
-        out.write(ls);
-        out.flush();
+      try {
+        Z z;
+        while ((z = seq.next()) != null) {
+          generated = true;
+          out.write(z.toString().getBytes(StandardCharsets.US_ASCII));
+          out.write(ls);
+          out.flush();
+        }
+      } catch (final UnsupportedOperationException e) {
+        if (seq instanceof DeadSequence) {
+          System.err.println("Sequence is \"dead\" in the OEIS.");
+          return;
+        }
+        throw e;
       }
     } catch (final ApfloatRuntimeException e) {
       // Catch nasty shutdown exception from Apfloat and just ignore it

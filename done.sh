@@ -5,18 +5,15 @@
 
 max=350
 
-DEAD=src/irvine/oeis/dead.lst
-
 for bucket in $(seq 0 ${max}); do
     b="00${bucket}"
     b=${b: -3}
-    dead=$(grep -c "^A${b}" "${DEAD}")
     if [[ -d src/irvine/oeis/a${b} ]]; then
         impl=$(find "src/irvine/oeis/a${b}" -name "A${b}[0-9][0-9][0-9].java" | wc -l)
     else
         impl=0
     fi
-    echo "${b} $((impl+dead))"
+    echo "${b} ${impl}"
 done >oeis_done.dat
 
 gnuplot <<EOF
@@ -30,11 +27,8 @@ gnuplot <<EOF
    plot "oeis_done.dat" using 1:2 with impulses title "Total Implemented"
 EOF
 
-# A heat map view showing red for dead sequences and green for implmented
+# A heat map view showing green for implemented
 {
-    sed 's/^A0*//' <"${DEAD}" | while read dead; do
-        echo "$((dead/1000)) $((dead%1000)) r"
-    done
     for bucket in $(seq 0 ${max}); do
         b="00${bucket}"
         b=${b: -3}
@@ -45,7 +39,7 @@ EOF
             done
         fi
     done
-} | awk -vmax=${max} '{pix[$1,$2]=$3}END{print "P6 1000 "max" 1"; for (y=0;y<max;y++) for(x=0; x<1000;x++) {val=pix[y,x]; if (val=="r") {printf "%c%c%c", 1, 0, 0} else if (val=="g") {printf "%c%c%c", 0, 1, 0} else {printf "%c%c%c", 0, 0, 0 }}}' | pnmtopng >oeis-implemented.png
+} | awk -vmax=${max} '{pix[$1,$2]=$3}END{print "P6 1000 "max" 1"; for (y=0;y<max;y++) for(x=0; x<1000;x++) {val=pix[y,x]; if (val=="g") {printf "%c%c%c", 0, 1, 0} else {printf "%c%c%c", 0, 0, 0 }}}' | pnmtopng >oeis-implemented.png
 
 # The oeis-by-month.dat file was computed in the following way from the oeis_created.txt
 # file constructed by Georg Fischer.  Afterward I manually trimmed the file to post-2009.

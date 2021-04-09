@@ -7,9 +7,9 @@ import irvine.math.z.Z;
  * @author Sean A. Irvine
  */
 public class DeadSequence implements Sequence {
+
   @Override
   public Z next() {
-    System.err.println("Sequence has keyword: dead");
-    return null;
+    throw new UnsupportedOperationException("Sequence is dead");
   }
 }

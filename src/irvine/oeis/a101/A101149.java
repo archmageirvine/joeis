@@ -1,0 +1,10 @@
+package irvine.oeis.a101;
+
+import irvine.oeis.DeadSequence;
+
+/**
+ * A101149.
+ * @author Sean A. Irvine
+ */
+public class A101149 extends DeadSequence {
+}

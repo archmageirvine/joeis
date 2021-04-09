@@ -20,8 +20,7 @@ of 1000):
 ![done-plot](doc/oeis-done.png)
 
 A similar plot with one pixel for each sequence. Green indicates an
-implemented sequence, red a dead sequence (where an implementation is
-not needed). Black indicates to be done, feel free to help.
+implemented sequence. Black indicates to be done, feel free to help.
 
 ![implemented-plot](doc/oeis-implemented.png)
 

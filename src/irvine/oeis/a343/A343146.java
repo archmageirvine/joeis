@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A343146 allocated for Sean A. Irvine.
+ * A343146 Number of move sequences of length 2n on the "8 Puzzle" which leave the final state unchanged when the empty cell starts in a corner.
  * @author Sean A. Irvine
  */
 public class A343146 implements Sequence {

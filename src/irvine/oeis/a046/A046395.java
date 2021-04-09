@@ -11,14 +11,12 @@ import irvine.oeis.a002.A002113;
  */
 public class A046395 extends A002113 {
 
-  // Note: original definition appears to be have changed in this sequence.
-
   @Override
   public Z next() {
     while (true) {
       final Z t = super.next();
       final FactorSequence fs = Cheetah.factor(t);
-      if (/* fs.bigOmega() == 5 && */ fs.omega() == 5) {
+      if (fs.bigOmega() == 5 && fs.omega() == 5) {
         return t;
       }
     }

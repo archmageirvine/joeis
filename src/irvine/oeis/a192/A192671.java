@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005043;
 
 
 /**
- * A192671 Floor-Sqrt transform of Riordan numbers (A005043).
+ * A192671  Floor-Sqrt transform of Riordan numbers (A005043).
  * @author Georg Fischer
  */
 public class A192671 extends A005043 {

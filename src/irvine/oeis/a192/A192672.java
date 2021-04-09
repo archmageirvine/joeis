@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001003;
 
 
 /**
- * A192672 Floor-Sqrt transform of little Schroeder numbers (A001003).
+ * A192672  Floor-Sqrt transform of little Schroeder numbers (A001003).
  * @author Georg Fischer
  */
 public class A192672 extends A001003 {

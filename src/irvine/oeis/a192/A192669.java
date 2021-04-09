@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001006;
 
 
 /**
- * A192669 Floor-Sqrt transform of Motzkin numbers (A001006).
+ * A192669  Floor-Sqrt transform of Motzkin numbers (A001006).
  * @author Georg Fischer
  */
 public class A192669 extends A001006 {

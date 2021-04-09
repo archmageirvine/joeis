@@ -1,9 +1,11 @@
 package irvine.oeis.a001;
 
-import irvine.factor.factor.Cheetah;
-import irvine.factor.util.FactorSequence;
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.a000.A000040;
 
 /**
  * A001358 Semiprimes (or biprimes): products of two primes.
@@ -11,19 +13,18 @@ import irvine.oeis.Sequence;
  */
 public class A001358 implements Sequence {
 
-  private Z mN = Z.THREE;
+  private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A000040());
+  private final TreeSet<Z> mA = new TreeSet<>();
+  private Z mP = mPrimes.next();
 
   @Override
   public Z next() {
-    while (true) {
-      mN = mN.add(1);
-      final int s = Cheetah.factor(mN).isSemiprime();
-      if (s == FactorSequence.UNKNOWN) {
-        throw new UnsupportedOperationException();
+    while (mA.isEmpty() || mA.first().compareTo(mP.multiply2()) >= 0) {
+      for (int k = 0; k < mPrimes.size(); ++k) {
+        mA.add(mP.multiply(mPrimes.a(k)));
       }
-      if (s == FactorSequence.YES) {
-        return mN;
-      }
+      mP = mPrimes.next();
     }
+    return mA.pollFirst();
   }
 }

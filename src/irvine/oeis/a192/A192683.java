@@ -8,7 +8,7 @@ import irvine.oeis.a078.A078679;
 
 
 /**
- * A192683 Floor-Sqrt transform of numbers of A078679 (Grand Motzkin paths with no zigzags).
+ * A192683  Floor-Sqrt transform of numbers of A078679 (Grand Motzkin paths with no zigzags).
  * @author Georg Fischer
  */
 public class A192683 extends A078679 {

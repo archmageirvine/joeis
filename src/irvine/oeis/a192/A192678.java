@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000248;
 
 
 /**
- * A192678 Floor-Sqrt transform of idempotent endomap numbers (A000248).
+ * A192678  Floor-Sqrt transform of idempotent endomap numbers (A000248).
  * @author Georg Fischer
  */
 public class A192678 extends A000248 {

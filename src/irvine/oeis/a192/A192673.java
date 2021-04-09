@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006318;
 
 
 /**
- * A192673 Floor-Sqrt transform of large Schroder numbers (A006318).
+ * A192673  Floor-Sqrt transform of large Schroder numbers (A006318).
  * @author Georg Fischer
  */
 public class A192673 extends A006318 {

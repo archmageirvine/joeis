@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002801;
 
 
 /**
- * A192680 Floor-Sqrt transform of Sylvester continuants (A002801).
+ * A192680  Floor-Sqrt transform of Sylvester continuants (A002801).
  * @author Georg Fischer
  */
 public class A192680 extends A002801 {

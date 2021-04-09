@@ -8,7 +8,7 @@ import irvine.oeis.a004.A004148;
 
 
 /**
- * A192684 Floor-Sqrt transform of numbers of A004148 (secondary structures).
+ * A192684  Floor-Sqrt transform of numbers of A004148 (secondary structures).
  * @author Georg Fischer
  */
 public class A192684 extends A004148 {

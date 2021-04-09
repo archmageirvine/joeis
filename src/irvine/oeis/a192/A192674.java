@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001850;
 
 
 /**
- * A192674 Floor-Sqrt transform of large central Delannoy numbers (A001850).
+ * A192674  Floor-Sqrt transform of large central Delannoy numbers (A001850).
  * @author Georg Fischer
  */
 public class A192674 extends A001850 {

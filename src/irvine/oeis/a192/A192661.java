@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007820;
 
 
 /**
- * A192661 Floor-Sqrt transform of central Stirling numbers of the second kind (A007820).
+ * A192661  Floor-Sqrt transform of central Stirling numbers of the second kind (A007820).
  * @author Georg Fischer
  */
 public class A192661 extends A007820 {

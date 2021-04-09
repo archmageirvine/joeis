@@ -8,7 +8,7 @@ import irvine.oeis.a051.A051286;
 
 
 /**
- * A192685 Floor-Sqrt transform of numbers of A051286.
+ * A192685  Floor-Sqrt transform of numbers of A051286.
  * @author Georg Fischer
  */
 public class A192685 extends A051286 {

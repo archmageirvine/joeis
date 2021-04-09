@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001764;
 
 
 /**
- * A192665 Floor-Sqrt transform of the numbers bin(3*n,n)/(2*n+1) (A001764).
+ * A192665  Floor-Sqrt transform of the numbers bin(3*n,n)/(2*n+1) (A001764).
  * @author Georg Fischer
  */
 public class A192665 extends A001764 {

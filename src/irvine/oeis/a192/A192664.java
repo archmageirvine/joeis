@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001700;
 
 
 /**
- * A192664 Floor-Sqrt transform of the binomial coefficients bin(2*n+1,n) (A001700).
+ * A192664  Floor-Sqrt transform of the binomial coefficients bin(2*n+1,n) (A001700).
  * @author Georg Fischer
  */
 public class A192664 extends A001700 {

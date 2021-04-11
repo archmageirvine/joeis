@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000178;
 
 
 /**
- * A192668 Floor-Sqrt transform of hyperfactorials (A002109).
+ * A192668 Floor-Sqrt transform of superfactorials (A000178).
  * @author Georg Fischer
  */
 public class A192668 extends A000178 {

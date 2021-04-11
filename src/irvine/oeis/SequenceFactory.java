@@ -41,7 +41,7 @@ public final class SequenceFactory {
       try {
         return (Sequence) Class.forName("irvine.oeis.a" + canonicalId.substring(1, 4) + '.' + canonicalId).newInstance();
       } catch (final ClassNotFoundException | IllegalAccessException | InstantiationException e) {
-        throw new UnsupportedOperationException("Sequence not found");
+        throw new UnsupportedOperationException("Sequence not found", e);
       }
     }
     throw new UnsupportedOperationException("Unknown sequence number");

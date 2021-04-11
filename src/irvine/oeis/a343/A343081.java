@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A343081 a(n) = smallest number that is the sum of n positive cubes in three ways.
+ * A343081 a(n) is the smallest number that is the sum of n positive cubes in three ways.
  * @author Sean A. Irvine
  */
 public class A343081 implements Sequence {

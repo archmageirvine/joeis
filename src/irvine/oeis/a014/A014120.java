@@ -3,6 +3,7 @@ package irvine.oeis.a014;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -23,21 +24,6 @@ public class A014120 implements Sequence {
     }
   }
 
-  private int persistence(final Z n) {
-    if (n.compareTo(Z.TEN) < 0) {
-      return 0;
-    }
-    final String s = n.toString();
-    Z p = Z.ONE;
-    for (int k = 0; k < s.length(); ++k) {
-      final char c = s.charAt(k);
-      if (c != '0') {
-        p = p.multiply(c - '0');
-      }
-    }
-    return 1 + persistence(p);
-  }
-
   @Override
   public Z next() {
     if (++mN < SMALL_CASES.length) {
@@ -45,7 +31,7 @@ public class A014120 implements Sequence {
     }
     while (true) {
       final Z c = mCandidates.pollFirst();
-      if (persistence(c) == mN) {
+      if (ZUtils.multiplicativePersistence(c) == mN) {
         return c;
       }
       final Z c10 = c.multiply(10);

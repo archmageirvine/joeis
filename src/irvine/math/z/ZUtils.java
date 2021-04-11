@@ -942,4 +942,18 @@ public final class ZUtils {
     }
     return true;
   }
+
+  /**
+   * Compute the multiplicative persistence of a number in base 10.
+   * @param n number
+   * @return persistence
+   */
+  public static long multiplicativePersistence(Z n) {
+    long k = 0;
+    while (n.compareTo(Z.NINE) > 0) {
+      n = ZUtils.digitProduct(n);
+      ++k;
+    }
+    return k;
+  }
 }

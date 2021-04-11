@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A343084 a(n) = smallest number that is the sum of n positive squares in four ways.
+ * A343084 a(n) is the smallest number that is the sum of n positive squares in four ways.
  * @author Sean A. Irvine
  */
 public class A343084 implements Sequence {

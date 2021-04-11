@@ -11,14 +11,14 @@ import irvine.oeis.a007.A007770;
 public class A035497 extends A007770 {
 
   private final Fast mPrime = new Fast();
-  private long mP = 5;
+  private Z mP = Z.FIVE;
 
   @Override
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
       if (isHappy(mP)) {
-        return Z.valueOf(mP);
+        return mP;
       }
     }
   }

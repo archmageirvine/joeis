@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197698 Decimal expansion of (pi^2)/(4+6*pi).
+ * A197698 Decimal expansion of Pi^2/(4 + 6*Pi).
  * @author Georg Fischer
  */
 public class A197698 extends DecimalExpansionSequence {

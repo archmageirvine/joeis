@@ -19,15 +19,6 @@ public class A046148 extends A014553 {
 
   private int mN = 0;
 
-  static long multiplicativePersistence(Z n) {
-    long k = 0;
-    while (n.compareTo(Z.NINE) > 0) {
-      n = ZUtils.digitProduct(n);
-      ++k;
-    }
-    return k;
-  }
-
   @Override
   public Z next() {
     final long mxper = super.next().longValueExact() - 1;
@@ -47,7 +38,7 @@ public class A046148 extends A014553 {
           for (int k = 0; k < q.length; ++k) {
             prod = prod.multiply(Z.valueOf(k + 1).pow(q[k]));
           }
-          if (multiplicativePersistence(prod) == mxper) {
+          if (ZUtils.multiplicativePersistence(prod) == mxper) {
             sum = sum.add(Binomial.multinomial(mN, p));
           }
         }

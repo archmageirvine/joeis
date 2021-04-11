@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A338477 Numbers n such that 398*n^2-1 is prime.
+ * A338477 Numbers k such that 398*k^2 - 1 is prime.
  * @author Georg Fischer
  */
 public class A338477 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a029.A029966;
 
 /**
- * A046479 Palindromic primes in base 10 and base 11.
+ * A046479 Primes that are palindromic in bases 10 and 11.
  * @author Sean A. Irvine
  */
 public class A046479 extends A029966 {

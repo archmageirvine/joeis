@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A190239 a(n) = [n*u+n*v]-[n*u]-[n*v], where u=e^(pi/2), v=1/u, and []=floor.
+ * A190239 a(n) = [n*u + n*v] - [n*u] - [n*v], where u=e^(Pi/2), v=1/u, and []=floor.
  * @author Georg Fischer
  */
 public class A190239 implements Sequence {

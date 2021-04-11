@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A334673 a(n) = 23*a(n-1) - a(n-2) + 1 for n&gt;1, a(0)=0, a(1)=1.
+ * A334673 a(n) = 23*a(n-1) - a(n-2) + 1 for n &gt; 1, a(0)=0, a(1)=1.
  * @author Georg Fischer
  */
 public class A334673 extends HolonomicRecurrence {

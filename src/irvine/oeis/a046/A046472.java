@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007632;
 
 /**
- * A046472 Palindromic primes in base 10 and base 2.
+ * A046472 Primes that are palindromic in bases 2 and 10.
  * @author Sean A. Irvine
  */
 public class A046472 extends A007632 {

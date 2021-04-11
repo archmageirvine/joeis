@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007088 The binary numbers (or binary words, or binary vectors): numbers written in base 2.
+ * A007088 The binary numbers (or binary words, or binary vectors, or binary expansion of n): numbers written in base 2.
  * @author Sean A. Irvine
  */
 public class A007088 implements Sequence {

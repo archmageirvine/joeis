@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A343079 a(n) = smallest number that is the sum of n positive 6th powers in two ways.
+ * A343079 a(n) is the smallest number that is the sum of n positive 6th powers in two ways.
  * @author Sean A. Irvine
  */
 public class A343079 implements Sequence {

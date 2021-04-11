@@ -13,7 +13,7 @@ public class A046441 implements Sequence {
 
   private long mN = 0;
 
-  private boolean is(long n) {
+  private boolean is(final long n) {
     Z m = Z.valueOf(n);
     final TreeSet<Z> seen = new TreeSet<>();
     seen.add(m);

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030302 Write n in base 2 and juxtapose.
+ * A030302 Write n in base 2 and juxtapose; irregular table in which row n lists the binary expansion of n.
  * @author Georg Fischer
  */
 public class A030302 implements Sequence {

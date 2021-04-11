@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188883 Decimal expansion of (1+sqrt(1+pi^2))/pi.
+ * A188883 Decimal expansion of (1 + sqrt(1 + Pi^2))/Pi.
  * @author Georg Fischer
  */
 public class A188883 extends DecimalExpansionSequence {

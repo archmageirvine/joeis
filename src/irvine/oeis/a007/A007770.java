@@ -11,48 +11,51 @@ import irvine.oeis.Sequence;
  */
 public class A007770 implements Sequence {
 
-  private long mN = 0;
-  private final long[] mCache = new long[1000000]; // Remembers the result for small values
-  private final HashSet<Long> mSeen = new HashSet<>();
+  private static final int CACHE_BITS = 20;
+  private Z mN = Z.ZERO;
+  private final long[] mCache = new long[1 << CACHE_BITS]; // Remembers the result for small values
+  private final HashSet<Z> mSeen = new HashSet<>();
 
-  private long squareDigitSum(final long n) {
-    if (n < mCache.length) {
-      final long r = mCache[(int) n];
+  private long squareDigitSum(final Z n) {
+    if (n.bitLength() < CACHE_BITS) {
+      final long r = mCache[n.intValue()];
       if (r != 0) {
         return r;
       }
     }
     long s = 0;
-    long m = n;
-    while (m != 0) {
-      final long r = m % 10;
+    Z m = n;
+    while (!m.isZero()) {
+      final Z[] qr = m.divideAndRemainder(Z.TEN);
+      final int r = qr[1].intValue();
       s += r * r;
-      m /= 10;
+      m = qr[0];
     }
-    if (n < mCache.length) {
-      mCache[(int) n] = s;
+    if (n.bitLength() < CACHE_BITS) {
+      mCache[n.intValue()] = s;
     }
     return s;
   }
 
-  protected boolean isHappy(long n) {
+  protected boolean isHappy(Z n) {
     mSeen.clear();
     while (true) {
-      if (n == 1) {
+      if (Z.ONE.equals(n)) {
         return true;
       }
       if (!mSeen.add(n)) {
         return false; // cycles
       }
-      n = squareDigitSum(n);
+      n = Z.valueOf(squareDigitSum(n));
     }
   }
 
   @Override
   public Z next() {
     while (true) {
-      if (isHappy(++mN)) {
-        return Z.valueOf(mN);
+      mN = mN.add(1);
+      if (isHappy(mN)) {
+        return mN;
       }
     }
   }

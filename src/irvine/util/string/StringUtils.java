@@ -39,7 +39,7 @@ public final class StringUtils {
    * @param word string to test
    * @return true if is a palindrome
    */
-  public static boolean isPalindrome(final String word) {
+  public static boolean isPalindrome(final CharSequence word) {
     if (word != null) {
       final int len = word.length();
       for (int i = 0, j = len - 1; i < len >>> 1; ++i, --j) {

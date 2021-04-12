@@ -23,7 +23,7 @@ public class A046450 extends A046447 {
         final StringBuilder sb = new StringBuilder();
         final FactorSequence fs = Cheetah.factor(t);
         for (final Z p : fs.toZArray()) {
-          sb.append(p.toString());
+          sb.append(p);
         }
         if (StringUtils.isPalindrome(sb)) {
           return t;

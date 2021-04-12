@@ -20,7 +20,7 @@ public class A046448 extends A018252 {
       final FactorSequence fs = Cheetah.factor(t);
       if (fs.isSquareFree()) {
         for (final Z p : fs.toZArray()) {
-          sb.append(p.toString());
+          sb.append(p);
         }
         if (StringUtils.isPalindrome(sb)) {
           return t;

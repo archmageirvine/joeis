@@ -13,7 +13,7 @@ public class A030097 implements Sequence {
 
   private boolean isAllEvenDigits(Z n) {
     while (!n.isZero()) {
-      if (!n.isEven()) {
+      if (n.isOdd()) {
         return false;
       }
       n = n.divide(10);

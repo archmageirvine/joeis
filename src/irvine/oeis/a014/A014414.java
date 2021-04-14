@@ -21,7 +21,7 @@ public class A014414 implements Sequence {
         mM = 1;
       }
       final Z b = Binomial.binomial(mN, mM);
-      if (!b.isEven()) {
+      if (b.isOdd()) {
         return b;
       }
     }

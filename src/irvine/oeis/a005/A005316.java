@@ -194,7 +194,7 @@ public class A005316 implements Sequence {
      */
     private Z joinArch(Z v, final Z alt) {
       // see Iwan Jenson paper to understand what is going on here. (with illustrations)
-      if (v.isEven() && !alt.isEven()) {
+      if (v.isEven() && alt.isOdd()) {
         int n = 0;
         Z bit = Z.ONE;
         while (n >= 0) {

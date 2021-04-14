@@ -19,7 +19,7 @@ public class A028984 extends A002113 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (!Cheetah.factor(p).sigma().isEven()) {
+      if (Cheetah.factor(p).sigma().isOdd()) {
         return p;
       }
     }

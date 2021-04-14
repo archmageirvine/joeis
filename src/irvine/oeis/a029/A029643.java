@@ -13,7 +13,7 @@ public class A029643 extends A029648 {
     Z t;
     do {
       t = super.next();
-    } while (!t.isEven());
+    } while (t.isOdd());
     return t;
   }
 }

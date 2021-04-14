@@ -12,7 +12,7 @@ public class A036259 extends A007733 {
   @Override
   public Z next() {
     while (true) {
-      if (!super.next().isEven()) {
+      if (super.next().isOdd()) {
         return Z.valueOf(mN++);
       }
       ++mN; // skip even

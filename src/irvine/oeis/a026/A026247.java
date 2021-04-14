@@ -18,7 +18,7 @@ public class A026247 extends A002251 {
     Z t;
     do {
       t = super.next();
-    } while (!t.isEven());
+    } while (t.isOdd());
     return t.divide2();
   }
 }

@@ -26,7 +26,7 @@ public class A015713 implements Sequence {
       }
       if (mN.isEven()) {
         final Z m = mN.divide2();
-        if (!m.isEven()) {
+        if (m.isOdd()) {
           final Z u = m.isPower();
           if (u != null && (m.auxiliary() & 1) == 0 && u.mod(4) == 3 && u.isProbablePrime()) {
             return mN;

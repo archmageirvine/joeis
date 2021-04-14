@@ -19,7 +19,7 @@ public class A036346 implements Sequence {
     while (true) {
       if (!mPrime.isPrime(++mN)) {
         final Z sum = Cheetah.factor(mN).sopfr();
-        if (!sum.isEven() && mN % sum.longValueExact() == 0) {
+        if (sum.isOdd() && mN % sum.longValueExact() == 0) {
           return Z.valueOf(mN);
         }
       }

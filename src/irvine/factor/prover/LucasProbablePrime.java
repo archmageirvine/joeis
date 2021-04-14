@@ -47,13 +47,13 @@ public class LucasProbablePrime {
       if (bits.charAt(i) == '1') {
         // increase subscript by 1
         Z uTemp = p.multiply(uk).add(vk);
-        if (!uTemp.isEven()) {
+        if (uTemp.isOdd()) {
           uTemp = uTemp.add(mN);
           assert uTemp.isEven();
         }
         final Z uNew = uTemp.divide2();
         Z vTemp = bigD.multiply(uk).add(p.multiply(vk));
-        if (!vTemp.isEven()) {
+        if (vTemp.isOdd()) {
           vTemp = vTemp.add(mN);
           assert vTemp.isEven();
         }

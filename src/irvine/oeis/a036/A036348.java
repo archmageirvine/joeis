@@ -16,7 +16,7 @@ public class A036348 implements Sequence {
   public Z next() {
     while (true) {
       mN += 2;
-      if (!Cheetah.factor(mN).sopfr().isEven()) {
+      if (Cheetah.factor(mN).sopfr().isOdd()) {
         return Z.valueOf(mN);
       }
     }

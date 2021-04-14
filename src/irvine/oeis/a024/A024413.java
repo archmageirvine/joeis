@@ -14,7 +14,7 @@ public class A024413 extends A024412 {
   public Z next() {
     while (true) {
       ++mN;
-      if (!super.next().isEven()) {
+      if (super.next().isOdd()) {
         return Z.valueOf(mN);
       }
     }

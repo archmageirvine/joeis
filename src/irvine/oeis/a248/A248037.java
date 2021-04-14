@@ -120,7 +120,7 @@ public class A248037 implements Sequence {
       if (m.compareTo(n) < 0 && triplesScaled < halvesScaled) {
         return false;
       }
-      if (!m.isEven()) {
+      if (m.isOdd()) {
         m = m.multiply(3).add(1);
         ++triples;
         triplesScaled += mBestHalves;

@@ -11,7 +11,7 @@ public class A015911 extends A015910 {
   @Override
   public Z next() {
     while (true) {
-      if (!super.next().isEven()) {
+      if (super.next().isOdd()) {
         return mN;
       }
     }

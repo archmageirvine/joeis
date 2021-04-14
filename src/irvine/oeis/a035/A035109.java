@@ -23,7 +23,7 @@ public class A035109 implements Sequence {
     }
     Z ecnt = Z.ZERO;
     for (final Z e : Cheetah.factor(d).divisors()) {
-      if (!e.isEven()) {
+      if (e.isOdd()) {
         ecnt = ecnt.add(e);
       }
     }

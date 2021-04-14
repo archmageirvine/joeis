@@ -20,7 +20,7 @@ public class A038791 extends A000040 {
     final int p = super.next().intValueExact();
     Z sum = Z.ZERO;
     for (final Z rr : Cheetah.factor(p - 1).divisors()) {
-      if (!rr.isEven()) {
+      if (rr.isOdd()) {
         final int r = rr.intValue();
         sum = sum.add(Z.valueOf(LongUtils.phi(r)).shiftLeft((p - 1) / r));
       }

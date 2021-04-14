@@ -15,7 +15,7 @@ public class A002624 implements Sequence {
   public Z next() {
     mN = mN.add(1);
     Z t = mN.add(10).multiply(mN).add(32).multiply(mN).add(32).multiply(mN);
-    if (!mN.isEven()) {
+    if (mN.isOdd()) {
       t = t.add(mN.multiply(6).add(15));
     }
     return t.divide(96);

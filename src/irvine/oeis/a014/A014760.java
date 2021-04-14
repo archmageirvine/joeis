@@ -12,7 +12,7 @@ public class A014760 extends A014475 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (!t.isEven() && !Z.ONE.equals(t)) {
+      if (t.isOdd() && !Z.ONE.equals(t)) {
         return t.square();
       }
     }

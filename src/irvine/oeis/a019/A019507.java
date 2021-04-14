@@ -21,7 +21,7 @@ public class A019507 implements Sequence {
       final long target = 2 * fs.getExponent(Z.TWO);
       long sum = 0;
       for (final Z p : fs.toZArray()) {
-        if (!p.isEven()) {
+        if (p.isOdd()) {
           sum += p.longValueExact() * fs.getExponent(p);
           if (sum > target) {
             break;

@@ -495,7 +495,7 @@ public class McKayThompsonSequence implements Sequence {
             for (int i = 1; i < k; ++i) {
               v = v.subtract(getElem(cl, i).multiply(getElem(cl, k - i)));
             }
-            if (!v.isEven()) {
+            if (v.isOdd()) {
               throw new IllegalArgumentException("Evenness check failed!");
             }
             v = v.divide2();

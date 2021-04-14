@@ -17,7 +17,7 @@ public class A036350 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      if (!mPrime.isPrime(++mN) && !Cheetah.factor(mN).sopfr().isEven()) {
+      if (!mPrime.isPrime(++mN) && Cheetah.factor(mN).sopfr().isOdd()) {
         return Z.valueOf(mN);
       }
     }

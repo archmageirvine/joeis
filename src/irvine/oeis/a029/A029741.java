@@ -14,7 +14,7 @@ public class A029741 extends A010784 {
     Z t;
     do {
       t = super.next();
-    } while (t != null && !t.isEven());
+    } while (t != null && t.isOdd());
     return t;
   }
 }

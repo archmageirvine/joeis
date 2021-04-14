@@ -73,7 +73,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
       return false;
     }
     // Feit-Thompson: There are no non-Abelian simple groups of odd order
-    if (!size.isEven()) {
+    if (size.isOdd()) {
       return false;
     }
     // Smallest non-Abelian simple group is of order 60
@@ -382,7 +382,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
     while (m.compareTo(Z.ONE) > 0) {
       b = add(b, b);
       m = m.divide2();
-      if (!m.isEven()) {
+      if (m.isOdd()) {
         b = add(b, a);
       }
     }

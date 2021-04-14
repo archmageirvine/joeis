@@ -75,7 +75,7 @@ public final class GroupUtils {
           return Z.FIVE;
         } else if (!a && !b && !c) {
           return Z.TWO;
-        } else if (b && !q.isEven()) {
+        } else if (b && q.isOdd()) {
           return Z.THREE;
         } else if (p.subtract(1).mod(q.square()).isZero()) {
           return Z.FIVE;

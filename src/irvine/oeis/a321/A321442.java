@@ -32,7 +32,7 @@ public class A321442 implements Sequence {
     while (true) {
       final Set<Z> next = new HashSet<>();
       for (final Z v : live) {
-        if (jacksTurn && !Z.ONE.equals(v) && ((!v.isEven() && v.compareTo(mN) < 0) || isOddPowerOf2(v))) {
+        if (jacksTurn && !Z.ONE.equals(v) && ((v.isOdd() && v.compareTo(mN) < 0) || isOddPowerOf2(v))) {
           return Z.valueOf(c / 2);
         }
         if (v.isEven()) {

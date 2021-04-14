@@ -18,7 +18,7 @@ public class A007147 implements Sequence {
     ++mN;
     Z sum = Z.ZERO;
     for (final Z dd : Cheetah.factor(mN).divisors()) {
-      if (!dd.isEven()) {
+      if (dd.isOdd()) {
         sum = sum.add(Euler.phi(dd).shiftLeft(mN / dd.intValue()));
       }
     }

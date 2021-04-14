@@ -14,7 +14,7 @@ public class A005998 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.multiply2().subtract(2).multiply(mN).add(5).multiply(mN).signedAdd(!mN.isEven(), mN.add(1)).add(1).divide(8);
+    return mN.multiply2().subtract(2).multiply(mN).add(5).multiply(mN).signedAdd(mN.isOdd(), mN.add(1)).add(1).divide(8);
   }
 }
 

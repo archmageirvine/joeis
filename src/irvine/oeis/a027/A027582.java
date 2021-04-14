@@ -26,7 +26,7 @@ public class A027582 extends MemorySequence {
   private Polynomial<Z> partitionTransform(final Collection<Z> a, final int n) {
     final TreeSet<Integer> c = new TreeSet<>();
     for (final Z u : a) {
-      if (!u.isEven()) {
+      if (u.isOdd()) {
         c.add(u.intValueExact());
       }
     }

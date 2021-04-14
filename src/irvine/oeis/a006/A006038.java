@@ -17,7 +17,7 @@ public class A006038 extends A005101 {
   public Z next() {
     while (true) {
       final Z pp = super.next();
-      if (!pp.isEven()) {
+      if (pp.isOdd()) {
         boolean ok = true;
         for (final Z n : mPrimitive) {
           if (pp.mod(n).isZero()) {

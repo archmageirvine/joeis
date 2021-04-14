@@ -23,7 +23,7 @@ public class A028572 implements Sequence {
     }
     Z sum = Z.ZERO;
     for (final Z d : Cheetah.factor(mN).divisors()) {
-      if (!d.isEven()) {
+      if (d.isOdd()) {
         sum = sum.add(LongUtils.jacobi(-2, d.longValue()));
       }
     }

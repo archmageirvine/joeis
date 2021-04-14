@@ -16,7 +16,7 @@ public class A038703 extends A000040 {
     while (true) {
       final Z t = mA;
       mA = super.next();
-      if (!mA.square().mod(t).isEven()) {
+      if (mA.square().mod(t).isOdd()) {
         return mA;
       }
     }

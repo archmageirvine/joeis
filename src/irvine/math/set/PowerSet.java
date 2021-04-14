@@ -66,7 +66,7 @@ class PowerSet<T> extends AbstractSet<Set<T>> {
         if (s.isZero()) {
           break; // No more elements needed for this subset
         }
-        if (!s.isEven()) {
+        if (s.isOdd()) {
           members.add(e);
         }
         s = s.shiftRight(1);

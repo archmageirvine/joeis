@@ -16,7 +16,7 @@ public class A037284 implements Sequence {
   public Z next() {
     final StringBuilder sb = new StringBuilder();
     for (final Z d : Cheetah.factor(++mN).divisorsSorted()) {
-      if (!d.isEven() && !Z.ONE.equals(d)) {
+      if (d.isOdd() && !Z.ONE.equals(d)) {
         sb.append(d);
       }
     }

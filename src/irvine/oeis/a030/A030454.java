@@ -36,7 +36,7 @@ public class A030454 implements Sequence {
       if (scaled.isZero()) {
         break; // We will never see another 1 in this column
       }
-      if (!scaled.isEven()) {
+      if (scaled.isOdd()) {
         ++c;
       }
     }

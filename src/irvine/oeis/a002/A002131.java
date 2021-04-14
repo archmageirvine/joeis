@@ -17,7 +17,7 @@ public class A002131 implements Sequence {
     mN = mN.add(1);
     Z s = Z.ZERO;
     for (final Z d : Cheetah.factor(mN).divisors()) {
-      if (!mN.divide(d).isEven()) {
+      if (mN.divide(d).isOdd()) {
         s = s.add(d);
       }
     }

@@ -16,7 +16,7 @@ public class A321546 implements Sequence {
   public Z next() {
     Z sum = Z.ZERO;
     for (final Z d : Cheetah.factor(++mN).divisors()) {
-      sum = sum.signedAdd(!d.isEven(), d.pow(7));
+      sum = sum.signedAdd(d.isOdd(), d.pow(7));
     }
     return sum;
   }

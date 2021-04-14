@@ -13,7 +13,7 @@ public class A036260 extends A007733 {
   public Z next() {
     while (true) {
       final Z o = super.next();
-      if (mN > 1 && !o.isEven() && Z.valueOf(mN).mod(o).isEven()) {
+      if (mN > 1 && o.isOdd() && Z.valueOf(mN).mod(o).isEven()) {
         return Z.valueOf(mN++);
       }
       ++mN; // skip even

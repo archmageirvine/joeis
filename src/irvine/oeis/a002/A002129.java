@@ -18,7 +18,7 @@ public class A002129 implements Sequence, Serializable {
   public Z next() {
     Z s = Z.ZERO;
     for (final Z d : Cheetah.factor(++mN).divisors()) {
-      s = s.signedAdd(!d.isEven(), d);
+      s = s.signedAdd(d.isOdd(), d);
     }
     return s;
   }

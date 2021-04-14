@@ -30,13 +30,13 @@ class InverseEuler {
     if (Z.ONE.equals(m)) {
       mInverses.add(n);
       // Note that if n is odd, euler(2*n) = euler(2)*euler(n) = euler(n).
-      if (!n.isEven()) {
+      if (n.isOdd()) {
         mInverses.add(n.multiply2());
       }
       return;
     }
     // A totient can't be odd
-    if (!m.isEven()) {
+    if (m.isOdd()) {
       return;
     }
     final Z[] primeFactors = mFactor.factorize(m).toZArray();

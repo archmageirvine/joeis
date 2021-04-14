@@ -24,7 +24,7 @@ public class A005186 implements Sequence {
       for (final Z v : mS) {
         s.add(v.multiply2());
         final Z[] qr = v.divideAndRemainder(Z.THREE);
-        if (Z.ONE.equals(qr[1]) && !qr[0].isEven() && qr[0].compareTo(Z.ONE) > 0) {
+        if (Z.ONE.equals(qr[1]) && qr[0].isOdd() && qr[0].compareTo(Z.ONE) > 0) {
           s.add(qr[0]);
         }
       }

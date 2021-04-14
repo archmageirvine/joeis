@@ -27,7 +27,7 @@ public class A291789 implements Sequence {
     } else {
       final FactorSequence fs = Jaguar.factor(mN);
       final Z t = fs.phi().add(fs.sigma());
-      if (!t.isEven()) {
+      if (t.isOdd()) {
         throw new UnsupportedOperationException("Unexpected odd value " + t);
       }
       mN = t.divide2();

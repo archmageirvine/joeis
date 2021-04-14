@@ -18,7 +18,7 @@ public class A014663 implements Sequence {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (!new IntegersModMul(mP).order(Z.TWO).isEven()) {
+      if (new IntegersModMul(mP).order(Z.TWO).isOdd()) {
         return mP;
       }
     }

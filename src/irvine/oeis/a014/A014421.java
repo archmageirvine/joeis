@@ -13,7 +13,7 @@ public class A014421 extends A007318 {
   public Z next() {
     while (true) {
       final Z b = super.next();
-      if (!b.isEven()) {
+      if (b.isOdd()) {
         return b;
       }
     }

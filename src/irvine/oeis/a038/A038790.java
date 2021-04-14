@@ -21,7 +21,7 @@ public class A038790 extends A000040 {
     Z sum1 = Z.ZERO;
     Z sum2 = Z.ZERO;
     for (final Z rr : Cheetah.factor(p - 1).divisors()) {
-      if (!rr.isEven()) {
+      if (rr.isOdd()) {
         final int r = rr.intValue();
         final int q = (p - 1) / r;
         final Z phi = Z.valueOf(LongUtils.phi(r));

@@ -19,7 +19,7 @@ public class A163097 implements Sequence {
       mN += 2;
       final Z t = mSeq.next();
       mSeq.next();
-      if (!t.isEven()) {
+      if (t.isOdd()) {
         return Z.valueOf(mN);
       }
     }

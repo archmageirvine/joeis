@@ -35,7 +35,7 @@ public class A146760 implements Sequence {
       // solution if the previous prime was 2 less which we would
       // have just detected.  Therefore for odd cubes we now step
       // down to the previous cube and lower the putative prime as well
-      if (!c.isEven()) {
+      if (c.isOdd()) {
         c = cm;
         cb = cb.subtract(1);
         cm = cb.pow(3);

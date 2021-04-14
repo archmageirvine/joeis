@@ -16,7 +16,7 @@ public class A001227 implements Sequence {
   public Z next() {
     long c = 0;
     for (final Z d : Cheetah.factor(++mN).divisors()) {
-      if (!d.isEven()) {
+      if (d.isOdd()) {
         ++c;
       }
     }

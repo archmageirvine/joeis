@@ -9,13 +9,11 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class ZTest extends TestCase {
 
   private static final Random RANDOM = new Random();
-
 
   public void testZero() {
     assertEquals(Z.ZERO, Z.valueOf(0L));
@@ -575,5 +573,18 @@ public class ZTest extends TestCase {
 
   public void test569() {
     assertTrue(Z.valueOf(569).isProbablePrime());
+  }
+
+  public void testEvenOdd() {
+    assertTrue(Z.ZERO.isEven());
+    assertFalse(Z.ONE.isEven());
+    assertFalse(Z.NEG_ONE.isEven());
+    assertTrue(Z.TWO.isEven());
+    assertTrue(Z.TWO.negate().isEven());
+    assertFalse(Z.ZERO.isOdd());
+    assertTrue(Z.ONE.isOdd());
+    assertTrue(Z.NEG_ONE.isOdd());
+    assertFalse(Z.TWO.isOdd());
+    assertFalse(Z.TWO.negate().isOdd());
   }
 }

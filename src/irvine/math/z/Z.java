@@ -941,6 +941,14 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
+   * Test if this integer is odd.
+   * @return true for odd numbers
+   */
+  public boolean isOdd() {
+    return mSign != 0 && (mValue[0] & 1) == 1;
+  }
+
+  /**
    * Compute the Jacobi symbol of this and n.
    * @param n second argument
    * @return the Jacobi symbol of m and n

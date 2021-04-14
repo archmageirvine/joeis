@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000668;
 
 /**
- * A046528.
+ * A046528 Numbers that are a product of distinct Mersenne primes (elements of A000668).
  * @author Sean A. Irvine
  */
 public class A046528 extends A000668 {

@@ -15,6 +15,10 @@ public class A046213 extends MemoryFunction2<Long, Q> implements Sequence {
   private long mN = -1;
   private long mM = 0;
 
+  protected Q rat() {
+    return Q.HALF;
+  }
+
   @Override
   protected Q compute(final Long n, final Long m) {
     if (m < 0 || m > n) {
@@ -24,7 +28,7 @@ public class A046213 extends MemoryFunction2<Long, Q> implements Sequence {
       return Q.ONE;
     }
     if (n == 2) {
-      return m == 1 ? Q.HALF : Q.ONE;
+      return m == 1 ? rat() : Q.ONE;
     }
     return get(n - 1, m - 1).add(get(n - 1, m));
   }

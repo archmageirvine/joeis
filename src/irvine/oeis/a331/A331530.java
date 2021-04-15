@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A331530 a(n) is the number of nonnegative integers that can be represented in a 7-segment display by using only n segments (2nd version).
+ * A331530 a(n) is the number of nonnegative integers that can be represented in a 7-segment display by using only n segments (version A010371).
  * @author Georg Fischer
  */
 public class A331530 extends GeneratingFunctionSequence {

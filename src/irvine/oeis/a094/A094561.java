@@ -8,7 +8,7 @@ import irvine.oeis.a022.A022844;
 
 
 /**
- * A094561 Final decimal digit of floor(pi*n), pi=3.1415...
+ * A094561 Final decimal digit of floor(Pi*n), Pi=3.1415...
  * Formula: <code>a(n) = A010879(A022844(n)).</code>
  * @author Georg Fischer
  */

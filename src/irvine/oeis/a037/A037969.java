@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037969 n-th number whose maximal base 2 run length is 2.
+ * A037969 Numbers whose maximal base-2 run length is 2.
  * @author Sean A. Irvine
  */
 public class A037969 implements Sequence {

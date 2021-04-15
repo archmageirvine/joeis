@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024586 a(n) = [ sum of 1/{k*pi} ] for k = 1,2,...,n, where {x} := x - [ x ].
+ * A024586 a(n) = floor(Sum_{k=1..n} of 1/{k*Pi}) where { } denotes fractional part.
  * @author Sean A. Irvine
  */
 public class A024586 implements Sequence {

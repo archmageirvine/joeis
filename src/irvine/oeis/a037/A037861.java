@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037861 (Number of 0's) - (number of 1's) in the base 2 representation of n.
+ * A037861 (Number of 0's) - (number of 1's) in the base-2 representation of n.
  * @author Sean A. Irvine
  */
 public class A037861 implements Sequence {

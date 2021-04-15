@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A020909 Number of bits in base 2 representation of n-th Fibonacci number.
+ * A020909 Number of bits in the base-2 representation of the n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A020909 extends A000045 {

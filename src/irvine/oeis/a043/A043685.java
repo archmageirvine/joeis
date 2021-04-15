@@ -4,7 +4,7 @@ package irvine.oeis.a043;
 import irvine.math.z.Z;
 
 /**
- * A043685 a(n)=(1/2)(n-th number whose base 2 representation has exactly 10 runs).
+ * A043685 a(n) = (1/2)*(n-th number whose base-2 representation has exactly 10 runs).
  * @author Georg Fischer
  */
 public class A043685 extends A043577 {

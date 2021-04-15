@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043581 Numbers n such that base 2 representation has exactly 14 runs.
+ * A043581 Numbers whose base-2 representation has exactly 14 runs.
  * @author Georg Fischer
  */
 public class A043581 extends RunsBaseSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037415 Positive numbers n such that the set of base 2 digits of n equals the set of base 10 digits of n.
+ * A037415 Positive numbers k such that the set of base-2 digits of k equals the set of base-10 digits of k.
  * @author Georg Fischer
  */
 public class A037415 extends A037408 {

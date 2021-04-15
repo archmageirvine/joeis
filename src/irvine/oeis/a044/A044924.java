@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A044924 a(n)=so-se, where so(se)=sum of odd(even) base 2 run lengths of n.
+ * A044924 a(n) = so - se, where so(se) = sum of odd(even) base-2 run lengths of n.
  * @author Sean A. Irvine
  */
 public class A044924 implements Sequence {

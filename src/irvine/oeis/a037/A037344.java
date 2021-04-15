@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037344 Numbers n such that no base 2 digit of n is a base 10 digit of n.
+ * A037344 Numbers k such that no base-2 digit of k is a base-10 digit of k.
  * @author Georg Fischer
  */
 public class A037344 extends A037337 {

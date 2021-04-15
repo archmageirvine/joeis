@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043545 (Maximal base 2 digit of n) - (minimal base 2 digit of n).
+ * A043545 (Maximal base-2 digit of n) - (minimal base-2 digit of n).
  * @author Sean A. Irvine
  */
 public class A043545 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A044918 n-th positive integer whose base 2 run lengths form a palindrome.
+ * A044918 Positive integers whose base-2 run lengths form a palindrome.
  * @author Sean A. Irvine
  */
 public class A044918 implements Sequence {

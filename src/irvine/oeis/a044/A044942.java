@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A044942 Number of runs of odd length in the base 2 representation of n.
+ * A044942 Number of runs of odd length in the base-2 representation of n.
  * @author Sean A. Irvine
  */
 public class A044942 implements Sequence {

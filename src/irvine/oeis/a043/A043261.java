@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006995;
 
 /**
- * A043261 Sum of the binary digits of the n-th base 2 palindrome.
+ * A043261 Sum of the binary digits of the n-th base-2 palindrome.
  * @author Georg Fischer
  */
 public class A043261 implements Sequence {

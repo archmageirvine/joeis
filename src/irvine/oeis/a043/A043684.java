@@ -4,7 +4,7 @@ package irvine.oeis.a043;
 import irvine.math.z.Z;
 
 /**
- * A043684 (1/2)(n-th number whose base 2 representation has exactly 8 runs).
+ * A043684 a(n) = (1/2)*(n-th number whose base-2 representation has exactly 8 runs).
  * @author Georg Fischer
  */
 public class A043684 extends A043575 {

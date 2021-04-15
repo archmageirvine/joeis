@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043578 Numbers n such that base 2 representation has exactly 11 runs.
+ * A043578 Numbers whose base-2 representation has exactly 11 runs.
  * @author Georg Fischer
  */
 public class A043578 extends RunsBaseSequence {

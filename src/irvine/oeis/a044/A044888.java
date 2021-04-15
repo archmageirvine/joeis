@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A044888 Numbers n such that base 2 run lengths alternate: even, odd, even, ...
+ * A044888 Numbers whose base-2 run lengths alternate: even, odd, even, ...
  * @author Sean A. Irvine
  */
 public class A044888 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A037372 Numbers n such that every base 2 digit of n is a base 3 digit of n.
+ * A037372 Positive numbers k such that every base-2 digit of k is a base-3 digit of k.
  * The set of base 1 digits must be a subset of the base 2 digits.
  * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer

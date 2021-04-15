@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037379 n-th number k such that every base 2 digit of k is a base 10 digit of k.
+ * A037379 Positive numbers k such that every base-2 digit of k is a base-10 digit of k.
  * @author Georg Fischer
  */
 public class A037379 extends A037372 {

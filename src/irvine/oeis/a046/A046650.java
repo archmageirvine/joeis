@@ -23,7 +23,7 @@ public class A046650 implements Sequence {
     if (m >= 2 && n >= m) {
       for (int j = m; j <= Math.min(n, 2 * m); ++j) {
         final Z t = mF.factorial(j - 2)
-          .multiply(mF.factorial(3 * n - j -m - 1))
+          .multiply(mF.factorial(3 * n - j - m - 1))
           .multiply(2L * j - m)
           .multiply(3L * m - 2L * j - 1)
           .divide(mF.factorial(n - j))

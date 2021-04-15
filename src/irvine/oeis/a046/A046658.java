@@ -15,9 +15,9 @@ public class A046658 implements Sequence {
 
   private Z t(final int n, final int m) {
     final Z b = Binomial.binomial(n, m - 1);
-    return b.multiply(Binomial.binomial(2 * n, n))
-      .divide(Binomial.binomial(2 * (m - 1), m - 1))
-      .subtract(b.multiply(m-1).shiftLeft(2 * (n - m + 1)).divide(n))
+    return b.multiply(Binomial.binomial(2L * n, n))
+      .divide(Binomial.binomial(2L * (m - 1), m - 1))
+      .subtract(b.multiply(m - 1).shiftLeft(2 * (n - m + 1)).divide(n))
       .divide2();
   }
 

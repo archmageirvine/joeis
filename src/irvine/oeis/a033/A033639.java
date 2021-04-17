@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A033639 Base 2 digital convolution sequence.
+ * A033639 Base-2 digital convolution sequence.
  * @author Sean A. Irvine
  */
 public class A033639 extends MemorySequence {

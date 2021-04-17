@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094628 Numbers n with sum of digits(n) = 4.
+ * A094628 Erroneous version of A052218.
  * @author Sean A. Irvine
  */
 public class A094628 extends LinearRecurrence {

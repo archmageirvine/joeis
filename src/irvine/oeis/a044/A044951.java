@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A044951 Numbers with no two equally numerous base 2 digits.
+ * A044951 Numbers having a different number of ones and zeros in base 2.
  * @author Sean A. Irvine
  */
 public class A044951 implements Sequence {

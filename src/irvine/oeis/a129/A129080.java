@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129080 Palindromic complexity sequence based on A095263.
+ * A129080 Expansion of g.f. x*(x^4 - 5*x^3 + 10*x^2 - 12*x + 4)/((1-x)^2*(1 - 3*x + 2*x^2 - x^3)).
  * @author Georg Fischer
  */
 public class A129080 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173989 Base 2 logarithm of A173300.
+ * A173989 a(n) is the 2-adic valuation of A173300(n).
  * @author Georg Fischer
  */
 public class A173989 extends GeneratingFunctionSequence {

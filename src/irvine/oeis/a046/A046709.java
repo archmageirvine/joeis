@@ -12,6 +12,7 @@ public class A046709 implements Sequence {
 
   // Ordering of terms here unclear.
   // Perhaps always divisible by 2^4.3^2.5^2.7 ?
+  // Terms missing? e.g. 5358990 (see email I sent Yasutoshi Kohmoto)
 
   private Z mN = Z.ZERO;
 

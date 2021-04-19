@@ -12,9 +12,9 @@ import irvine.util.array.DynamicArray;
 public class A000230 implements Sequence {
 
   private Z mP = Z.TWO;
-  private int mGapSize = -2;
+  protected int mGapSize = -2;
   private final DynamicArray<Z> mLeastPrime = new DynamicArray<>();
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
 
   private Z leastGap(final int gap) {
     final int g = gap / 2;

@@ -222,7 +222,7 @@ public final class GroupFactory {
           res.add(g);
         }
       }
-    } catch (final IOException e) {
+    } catch (final IOException | NullPointerException e) {
       throw new UnsupportedOperationException(e);
     }
     return res;

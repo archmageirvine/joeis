@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000213;
 
 /**
- * A046733.
+ * A046733 Periods for divisibility of A000213 by n.
  * @author Sean A. Irvine
  */
 public class A046733 implements Sequence {

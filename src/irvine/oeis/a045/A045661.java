@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045661 Product_{d|n} (n/d + d).
+ * A045661 a(n) = Product_{d|n} (n/d + d).
  * @author Sean A. Irvine
  */
 public class A045661 implements Sequence {

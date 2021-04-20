@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A043306 Sum of all digits in all base b representations for n, for 2&lt;=b&lt;=n.
+ * A043306 Sum of all digits in all base-b representations for n, for 2 &lt;= b &lt;= n.
  * @author Sean A. Irvine
  */
 public class A043306 implements Sequence {

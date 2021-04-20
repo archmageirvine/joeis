@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027293 Triangular array given by rows: P(n,k) = number of partitions of n that contain k as a part.
+ * A027293 Triangular array given by rows: P(n,k) is the number of partitions of n that contain k as a part.
  * @author Sean A. Irvine
  */
 public class A027293 implements Sequence {

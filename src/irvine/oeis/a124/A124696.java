@@ -5,7 +5,7 @@ package irvine.oeis.a124;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A124696 Number of base 3 circular n-digit numbers with adjacent digits differing by 1 or less.
+ * A124696 Number of base-3 circular n-digit numbers with adjacent digits differing by 1 or less.
  * @author Georg Fischer
  */
 public class A124696 extends HolonomicRecurrence {

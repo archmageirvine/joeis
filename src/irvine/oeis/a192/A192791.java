@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192791 Molecular topological indices of the antiprism graphs.
+ * A192791 Molecular topological index of the n-antiprism graph.
  * @author Sean A. Irvine
  */
 public class A192791 extends LinearRecurrence {

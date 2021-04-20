@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137249 Transform of A033999 by the T_{0,1} transformation (see link).
+ * A137249 Expansion of g.f. z*(2-2*z+z^2+z^3)/((1+z)*(1-3*z+2*z^2-z^3)).
  * @author Sean A. Irvine
  */
 public class A137249 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212336 Expansion of 1/(1-23*x+23*x^2-x^3).
+ * A212336 Expansion of 1/(1 - 23*x + 23*x^2 - x^3).
  * @author Sean A. Irvine
  */
 public class A212336 extends LinearRecurrence {

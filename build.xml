@@ -110,6 +110,7 @@
       <fileset dir="${src.dir}" includes="irvine/math/group/ag/*.gz"/>
       <fileset dir="${src.dir}" includes="irvine/math/group/gl/*.gz"/>
       <fileset dir="${src.dir}" includes="irvine/math/group/resources/*.dat"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/resources/*.dat.gz"/>
       <fileset dir="${src.dir}" includes="irvine/math/z/fibonacci/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/factor/project/em/em*"/>
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>

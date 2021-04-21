@@ -1,16 +1,22 @@
 package irvine.oeis.a046;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000213;
 
 /**
  * A046733 Periods for divisibility of A000213 by n.
  * @author Sean A. Irvine
  */
-public class A046733 implements Sequence {
+public class A046733 extends A046735 {
 
+  private final ArrayList<Long> mNondivisors = new ArrayList<>();
+  {
+    super.next(); // We handle evens directly
+    mNondivisors.add(super.next().longValue());
+  }
   private long mN = 0;
 
   @Override
@@ -18,16 +24,13 @@ public class A046733 implements Sequence {
     if ((++mN & 1) == 0) {
       return Z.ONE;
     }
-    if (mN % 27 == 0 || mN % 91 == 0) {
-      // 3^m, m >= 3 apparently has no solution.
-
-      // For example, n = 91 = 7 * 13.
-      // We have 7 occurs at 10 + 16 * s and 13 at 35 + 56 * t.  Hence 7 and 13
-      // will never occur together.
-
-      // There could be other situations like this that will occur
-
-      return Z.ONE;
+    while (mN > mNondivisors.get(mNondivisors.size() - 1)) {
+      mNondivisors.add(super.next().longValue());
+    }
+    for (final long t : mNondivisors) {
+      if (mN % t == 0) {
+        return Z.ONE;
+      }
     }
     final MemorySequence a = MemorySequence.cachedSequence(new A000213());
     int first = -1;

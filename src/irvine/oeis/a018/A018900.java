@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018900 Sum of two distinct powers of 2.
+ * A018900 Sums of two distinct powers of 2.
  * @author Sean A. Irvine
  */
 public class A018900 implements Sequence {

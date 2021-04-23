@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043324 Numbers n such that number of 0's in base 3 is 4.
+ * A043324 Numbers whose number of 0's in base 3 is 4.
  * @author Georg Fischer
  */
 public class A043324 extends RunsBaseSequence {

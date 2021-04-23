@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128460 Numbers n such that 19^n - 2 is a prime.
+ * A128460 Numbers k such that 19^k - 2 is a prime.
  * @author Georg Fischer
  */
 public class A128460 extends PrimePositionSubsequence {

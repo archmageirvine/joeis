@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A197038 Numbers n such that (2^n + 3^n)/97 is prime.
+ * A197038 Numbers k such that (2^k + 3^k)/97 is prime.
  * @author Georg Fischer
  */
 public class A197038 extends PrimePositionSubsequence {

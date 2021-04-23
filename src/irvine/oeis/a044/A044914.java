@@ -1,7 +1,7 @@
 package irvine.oeis.a044;
 
 /**
- * A044914 Numbers n such that base 13 run lengths alternate: odd, even, odd,...
+ * A044914 Numbers whose base-13 run lengths alternate: odd, even, odd, ...
  * @author Sean A. Irvine
  */
 public class A044914 extends A044903 {

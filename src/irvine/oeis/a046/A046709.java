@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046709 Irrational unitary phi amicable number: two numbers which satisfy uphi(a)=uphi(b)=2*(a^2-b^2)^(1/2) where if x=Product p(i)^r(i) then uphi(x)=Product (p(i)^r(i)-1) (A047994).
+ * A046709 Irrational unitary phi amicable number: numbers b such that uphi(a) = uphi(b) = 2*(a^2-b^2)^(1/2) where uphi = A047994.
  * @author Sean A. Irvine
  */
 public class A046709 implements Sequence {

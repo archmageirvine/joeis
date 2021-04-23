@@ -7,7 +7,7 @@ import irvine.oeis.GeneratingFunctionSequence;
 
 
 /**
- * A262947 Expansion of Product_{k&gt;=1} 1/(1-x^(3k-2))^(3k-2).
+ * A262947 Expansion of Product_{k&gt;=1} 1/(1-x^(3*k-2))^(3*k-2).
  * ET(ogf=-(2*x^3+1)/(-x^6+2*x^3-1), order=7)
  * @author Georg Fischer
  */

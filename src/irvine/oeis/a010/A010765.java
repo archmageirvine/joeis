@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010765 [ n/2 ]^[ n/3 ].
+ * A010765 a(n) = floor(n/2)^floor(n/3).
  * @author Sean A. Irvine
  */
 public class A010765 implements Sequence {

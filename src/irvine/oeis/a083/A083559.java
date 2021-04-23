@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083559 Nearest integer to 1/sum(k&gt;=n,1/k^4).
+ * A083559 Nearest integer to 1/(Sum_{k&gt;=n} 1/k^4).
  * @author Georg Fischer
  */
 public class A083559 extends LinearRecurrence {

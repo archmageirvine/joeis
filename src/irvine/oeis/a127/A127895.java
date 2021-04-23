@@ -6,7 +6,7 @@ import irvine.oeis.GeneratingFunctionTriangle;
 
 
 /**
- * A127895 Riordan array (1/(1+x)^3,x/(1+x)^3).
+ * A127895 Riordan array (1/(1+x)^3, x/(1+x)^3).
  *
  * @author Georg Fischer
  */

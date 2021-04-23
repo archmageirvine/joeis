@@ -5,7 +5,7 @@ package irvine.oeis.a151;
 import irvine.oeis.WalkCubeSequence;
 
 /**
- * A151322 Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0) and consisting of n steps taken from {(-1, -1), (-1, 1), (-1, 0), (0, 1), (1, 0), (1, 1)}.
+ * A151322 Number of walks within N^2 (the first quadrant of Z^2) starting at (0,0) and consisting of n steps taken from {(-1,-1), (-1,1), (-1,0), (0,1), (1,0), (1,1)}.
  * @author Georg Fischer
  */
 public class A151322 extends WalkCubeSequence {

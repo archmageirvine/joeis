@@ -1,7 +1,7 @@
 package irvine.oeis.a044;
 
 /**
- * A044909 Numbers n such that base 8 run lengths alternate: odd, even, odd,...
+ * A044909 Numbers whose base-8 run lengths alternate: odd, even, odd, ...
  * @author Sean A. Irvine
  */
 public class A044909 extends A044903 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006489 n-6, n, n+6 are primes.
+ * A006489 Numbers k such that k-6, k, and k+6 are primes.
  * @author Sean A. Irvine
  */
 public class A006489 implements Sequence {

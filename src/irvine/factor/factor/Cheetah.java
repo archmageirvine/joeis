@@ -22,7 +22,7 @@ public class Cheetah extends AbstractFactorizer {
     a reference to the index of a prime factor of the number otherwise.
 
     The SMALL_PRIME table is large enough to contain all primes up to
-    65521, which is sufficient to factoral all n < 4295098369.
+    65521, which is sufficient to factor all n < 4295098369.
   */
 
   private static final char[] SMALL_PRIME = new char[255];

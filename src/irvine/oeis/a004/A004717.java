@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004717 Positions of ones in the binary expansion of log(4)/log(3)-1.
+ * A004717 Positions of 1's in the binary expansion of log(4)/log(3)-1.
  * @author Sean A. Irvine
  */
 public class A004717 extends DecimalExpansionSequence {

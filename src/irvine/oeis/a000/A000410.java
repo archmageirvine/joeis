@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A000410 implements Sequence {
 
-  private int mN = 0;
+  protected int mN = 0;
 
   private boolean bump(final long[] rows, final long limit) {
     long l = limit;

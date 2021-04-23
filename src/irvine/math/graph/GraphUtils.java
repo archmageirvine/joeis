@@ -1,19 +1,29 @@
 package irvine.math.graph;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 
 import irvine.math.IntegerUtils;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.group.SymmetricGroup;
+import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Nauty;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
+import irvine.math.polynomial.CycleIndex;
+import irvine.math.polynomial.PairMultiply;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.r.Constants;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.util.Pair;
 
 /**
@@ -365,5 +375,56 @@ public final class GraphUtils {
     }
     sb.append("}\n");
     return sb.toString();
+  }
+
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+
+  private static final ArrayList<Polynomial<Q>> CACHED_GEN_FUNC = new ArrayList<>();
+  static {
+    CACHED_GEN_FUNC.add(RING.zero());
+  }
+
+  private static Polynomial<Q> gy(final int n) {
+    while (n >= CACHED_GEN_FUNC.size()) {
+      final int m = CACHED_GEN_FUNC.size();
+      final CycleIndex zm = SymmetricGroup.create(m).cycleIndex();
+      final CycleIndex z = zm.op(PairMultiply.OP, zm);
+      CACHED_GEN_FUNC.add(z.applyOnePlusXToTheN());
+    }
+    return CACHED_GEN_FUNC.get(n);
+  }
+
+  /**
+   * Return the number of simple graphs with a given number of vertices and edges.
+   * @param vertices number of vertices
+   * @param edges number of edges
+   * @return number of graphs
+   */
+  public static Z numberUnlabelledGraphs(final int vertices, final int edges) {
+    return gy(vertices).coeff(edges).toZ();
+  }
+
+  /**
+   * Return the number of simple connected graphs with a given number of vertices and edges.
+   * @param vertices number of vertices
+   * @param edges number of edges
+   * @return number of graphs
+   */
+  public static Z numberUnlabelledConnectedGraphs(final int vertices, final int edges) {
+    // There is a cycle index approach to this that would ultimately is more efficient than direct enumeration.
+    return new ParallelGenerateGraphsSequence(vertices - 1, 0, false, false, false) {
+      @Override
+      protected long getCount(final Graph graph) {
+        return 1;
+      }
+
+      @Override
+      protected void graphGenInit(final GenerateGraphs gg) {
+        gg.setVertices(vertices);
+        gg.setMinEdges(edges);
+        gg.setMaxEdges(edges);
+        gg.setConnectionLevel(1);
+      }
+    }.next();
   }
 }

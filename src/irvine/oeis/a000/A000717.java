@@ -1,5 +1,6 @@
 package irvine.oeis.a000;
 
+import irvine.math.graph.GraphUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008406;
@@ -16,6 +17,6 @@ public class A000717 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return mGraphCount.graphCount(mN, mN * (mN - 1) / 4);
+    return GraphUtils.numberUnlabelledGraphs(mN, mN * (mN - 1) / 4);
   }
 }

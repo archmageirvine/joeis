@@ -12,8 +12,10 @@ import irvine.oeis.a001.A001157;
  */
 public class A050999 extends DirichletConvolutionSequence {
 
-  /** Construct the sequence. */
+  /**
+   * Construct the sequence.
+   */
   public A050999() {
-    super(new A001157(), 1, new PaddingSequence(new long[] {1,-4}, new long[] { 0 }), 1);
+    super(new A001157(), 1, new PaddingSequence(new long[] {1, -4}, new long[] {0}), 1);
   }
 }

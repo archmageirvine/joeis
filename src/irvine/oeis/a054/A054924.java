@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054924.
+ * A054924 Triangle read by rows: T(n,k) = number of nonisomorphic unlabeled connected graphs with n nodes and k edges (n &gt;= 1, 0 &lt;= k &lt;= n(n-1)/2).
  * @author Sean A. Irvine
  */
 public class A054924 implements Sequence {

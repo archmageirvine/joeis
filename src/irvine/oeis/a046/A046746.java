@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046746.
+ * A046746 Sum of smallest parts of all partitions of n.
  * @author Sean A. Irvine
  */
 public class A046746 extends MemoryFunction2<Long, Z> implements Sequence {

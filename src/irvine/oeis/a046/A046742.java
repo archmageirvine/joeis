@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046742.
+ * A046742 Triangle of number of connected graphs with k &gt;= 1 edges and n nodes (2 &lt;= n &lt;= k+1).
  * @author Sean A. Irvine
  */
 public class A046742 implements Sequence {

@@ -8,9 +8,9 @@ import java.util.HashMap;
 import java.util.LinkedList;
 
 import irvine.math.IntegerUtils;
+import irvine.math.Mobius;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
-import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Nauty;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
@@ -23,7 +23,6 @@ import irvine.math.r.Constants;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.ParallelGenerateGraphsSequence;
 import irvine.util.Pair;
 
 /**
@@ -377,7 +376,7 @@ public final class GraphUtils {
     return sb.toString();
   }
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>("y", Rationals.SINGLETON);
 
   private static final ArrayList<Polynomial<Q>> CACHED_GEN_FUNC = new ArrayList<>();
   static {
@@ -404,6 +403,32 @@ public final class GraphUtils {
     return gy(vertices).coeff(edges).toZ();
   }
 
+  private static final PolynomialRingField<Polynomial<Q>> RING2 = new PolynomialRingField<>(RING);
+
+  private static Polynomial<Polynomial<Q>> gfUnlabelledConnectedGraphs(final int n) {
+    // Effectively a kind of inverse Euler transform on the general case
+    final ArrayList<Polynomial<Q>> g = new ArrayList<>();
+    for (int k = 1; k <= n; ++k) {
+      g.add(gy(k));
+    }
+    final Polynomial<Polynomial<Q>> p = RING2.log1p(RING2.create(g).shift(1), n);
+    Polynomial<Polynomial<Q>> sum = RING2.zero();
+    for (int k = 1; k <= n; ++k) {
+      final int mobius = Mobius.mobius(k);
+      if (mobius != 0) {
+        final Polynomial<Polynomial<Q>> t = p.substitutePower(k, n);
+        final Polynomial<Polynomial<Q>> u = RING2.empty();
+        for (final Polynomial<Q> v : t) {
+          u.add(RING.divide(v.substitutePower(k, n), new Q(k)));
+        }
+        sum = RING2.signedAdd(mobius == 1, sum, u);
+      }
+    }
+    return sum;
+  }
+
+  private static Polynomial<Polynomial<Q>> sUnlabelledConnectedGraphs = RING2.zero();
+
   /**
    * Return the number of simple connected graphs with a given number of vertices and edges.
    * @param vertices number of vertices
@@ -411,20 +436,25 @@ public final class GraphUtils {
    * @return number of graphs
    */
   public static Z numberUnlabelledConnectedGraphs(final int vertices, final int edges) {
-    // There is a cycle index approach to this that would ultimately is more efficient than direct enumeration.
-    return new ParallelGenerateGraphsSequence(vertices - 1, 0, false, false, false) {
-      @Override
-      protected long getCount(final Graph graph) {
-        return 1;
-      }
-
-      @Override
-      protected void graphGenInit(final GenerateGraphs gg) {
-        gg.setVertices(vertices);
-        gg.setMinEdges(edges);
-        gg.setMaxEdges(edges);
-        gg.setConnectionLevel(1);
-      }
-    }.next();
+    if (vertices > sUnlabelledConnectedGraphs.degree()) {
+      sUnlabelledConnectedGraphs = gfUnlabelledConnectedGraphs(vertices);
+    }
+    return sUnlabelledConnectedGraphs.coeff(vertices).coeff(edges).toZ();
+//
+//    // Direct enumeration with nauty
+//    return new ParallelGenerateGraphsSequence(vertices - 1, 0, false, false, false) {
+//      @Override
+//      protected long getCount(final Graph graph) {
+//        return 1;
+//      }
+//
+//      @Override
+//      protected void graphGenInit(final GenerateGraphs gg) {
+//        gg.setVertices(vertices);
+//        gg.setMinEdges(edges);
+//        gg.setMaxEdges(edges);
+//        gg.setConnectionLevel(1);
+//      }
+//    }.next();
   }
 }

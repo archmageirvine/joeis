@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046742.
+ * A046751 Triangle read by rows of number of connected graphs with n nodes and k edges (n &gt;= 2, 1 &lt;= k &lt;= n(n-1)/2).
  * @author Sean A. Irvine
  */
 public class A046751 implements Sequence {

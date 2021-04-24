@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002905;
 
 /**
- * A046745.
+ * A046745 Number of connected graphs with &lt;= n edges.
  * @author Sean A. Irvine
  */
 public class A046745 extends PartialSumSequence {

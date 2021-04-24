@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000410;
 
 /**
- * A046747.
+ * A046747 Number of n X n rational {0,1}-matrices of determinant 0.
  * @author Sean A. Irvine
  */
 public class A046747 extends A000410 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043549 Least k for which the integers Floor(2k/m) for m=2,3,...,n are distinct.
+ * A043549 Least k for which the integers floor(2*k/m) for m=2,3,...,n are distinct.
  * @author Sean A. Irvine
  */
 public class A043549 implements Sequence {

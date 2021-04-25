@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093044 A Jacobsthal Fibonacci product.
+ * A093044 A Jacobsthal Fibonacci product: a(n) = (2^n + 2*(-1)^n)*Fibonacci(n-1)/3.
  * @author Sean A. Irvine
  */
 public class A093044 extends LinearRecurrence {

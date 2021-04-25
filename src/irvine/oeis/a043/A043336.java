@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043336 Numbers whose number of 0's in base 4 is 4.
+ * A043336 Numbers having four 0's in base 4.
  * @author Georg Fischer
  */
 public class A043336 extends RunsBaseSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A037408 Positive numbers n such that the set of base-2 digits of n equals the set of base-3 digits of n.
+ * A037408 Positive numbers having the same set of digits in base 2 and base 3.
  * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer
  */

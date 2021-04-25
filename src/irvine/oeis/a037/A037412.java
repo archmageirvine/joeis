@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037412 Positive numbers n such that the set of base-2 digits of n equals the set of base-7 digits of n.
+ * A037412 Positive numbers having the same set of digits in base 2 and base 7.
  * @author Georg Fischer
  */
 public class A037412 extends A037408 {

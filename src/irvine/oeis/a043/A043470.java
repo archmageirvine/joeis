@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043470 Numbers n such that number of 4's in base 9 is 2.
+ * A043470 Numbers having two 4's in base 9.
  * @author Georg Fischer
  */
 public class A043470 extends RunsBaseSequence {

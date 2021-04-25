@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043431 Numbers n such that number of 2's in base 8 is 3.
+ * A043431 Numbers having three 2's in base 8.
  * @author Georg Fischer
  */
 public class A043431 extends RunsBaseSequence {

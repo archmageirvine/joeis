@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A340389.
+ * A340389 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A340389 implements Sequence {

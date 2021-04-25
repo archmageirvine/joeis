@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043490 Numbers k such that number of 0's in base 10 is 2.
+ * A043490 Numbers having two 0's in base 10.
  * @author Georg Fischer
  */
 public class A043490 extends RunsBaseSequence {

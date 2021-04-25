@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043519 Numbers such that the number of 7's in their decimal representation is 3.
+ * A043519 Numbers having three 7's in base 10.
  * @author Georg Fischer
  */
 public class A043519 extends RunsBaseSequence {

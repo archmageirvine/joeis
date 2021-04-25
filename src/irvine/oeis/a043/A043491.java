@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043491 Numbers k such that number of 0's in base 10 is 3.
+ * A043491 Numbers having three 0's in base 10.
  * @author Georg Fischer
  */
 public class A043491 extends RunsBaseSequence {

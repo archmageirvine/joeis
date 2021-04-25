@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037422 Positive numbers n such that the set of base 3 digits of n equals the set of base 10 digits of n.
+ * A037422 Positive numbers having the same set of digits in base 3 and base 10.
  * @author Georg Fischer
  */
 public class A037422 extends A037408 {

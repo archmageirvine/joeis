@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043333 Numbers whose number of 0's in base 4 is 1.
+ * A043333 Numbers having one 0 in base 4.
  * @author Georg Fischer
  */
 public class A043333 extends RunsBaseSequence {

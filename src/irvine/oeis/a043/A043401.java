@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043401 Numbers n such that number of 2's in base 7 is 1.
+ * A043401 Numbers having one 2 in base 7.
  * @author Georg Fischer
  */
 public class A043401 extends RunsBaseSequence {

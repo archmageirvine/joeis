@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043512 Numbers such that the number of 5's in their decimal representation is 4.
+ * A043512 Numbers having four 5's in base 10.
  * @author Georg Fischer
  */
 public class A043512 extends RunsBaseSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043488 Numbers n such that number of 8's in base 9 is 4.
+ * A043488 Numbers having four 8's in base 9.
  * @author Georg Fischer
  */
 public class A043488 extends RunsBaseSequence {

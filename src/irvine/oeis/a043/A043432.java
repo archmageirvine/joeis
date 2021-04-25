@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043432 Numbers k such that number of 2's in base 8 is 4.
+ * A043432 Numbers having four 2's in base 8.
  * @author Georg Fischer
  */
 public class A043432 extends RunsBaseSequence {

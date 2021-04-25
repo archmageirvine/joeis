@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043489 Numbers such that number of 0's in base 10 is 1.
+ * A043489 Numbers having one 0 in base 10.
  * @author Georg Fischer
  */
 public class A043489 extends RunsBaseSequence {

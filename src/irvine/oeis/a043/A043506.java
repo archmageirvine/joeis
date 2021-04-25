@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043506 Integers such that the number of 4's in their decimal representation is 2.
+ * A043506 Numbers having two 4's in base 10.
  * @author Georg Fischer
  */
 public class A043506 extends RunsBaseSequence {

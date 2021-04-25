@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043518 Numbers such that the number of 7's in their decimal representation is 2.
+ * A043518 Numbers having two 7's in base 10.
  * @author Georg Fischer
  */
 public class A043518 extends RunsBaseSequence {

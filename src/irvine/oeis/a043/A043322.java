@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043322 Numbers whose number of 0's in base 3 is 2.
+ * A043322 Numbers having two 0's in base 3.
  * @author Georg Fischer
  */
 public class A043322 extends RunsBaseSequence {

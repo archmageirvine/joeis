@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005409 Number of polynomials of height n: a(n) = 2a(n-1) + a(n-2) + 2.
+ * A005409 Number of polynomials of height n: a(1)=1, a(2)=1, a(3)=4, a(n) = 2*a(n-1) + a(n-2) + 2 for n &gt;= 4.
  * @author Sean A. Irvine
  */
 public class A005409 implements Sequence {

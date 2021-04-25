@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043495 Numbers n such that number of 1's in base 10 is 3.
+ * A043495 Numbers having three 1's in base 10.
  * @author Georg Fischer
  */
 public class A043495 extends RunsBaseSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043408 Numbers n such that number of 3's in base 7 is 4.
+ * A043408 Numbers having four 3's in base 7.
  * @author Georg Fischer
  */
 public class A043408 extends RunsBaseSequence {

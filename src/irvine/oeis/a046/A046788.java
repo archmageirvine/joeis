@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033323 Configurations of linear chains in a square lattice.
+ * A046788 Configurations of linear chains in a 4-dimensional hypercubic lattice.
  * @author Sean A. Irvine
  */
 public class A046788 implements Sequence {

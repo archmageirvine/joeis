@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043485 Numbers with exactly one 8 in base 9.
+ * A043485 Numbers having one 8 in base 9.
  * @author Georg Fischer
  */
 public class A043485 extends RunsBaseSequence {

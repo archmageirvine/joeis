@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328990 a(n) = (3*b(n)+b(n-1)+1)/2, where b = A005409.
+ * A328990 a(n) = (3*b(n) + b(n-1) + 1)/2, where b = A005409.
  * @author Georg Fischer
  */
 public class A328990 extends HolonomicRecurrence {

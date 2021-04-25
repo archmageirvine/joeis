@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043526 Numbers such that the number of 9's in their decimal representation is 2.
+ * A043526 Numbers having two 9's in base 10.
  * @author Georg Fischer
  */
 public class A043526 extends RunsBaseSequence {

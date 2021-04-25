@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A043530 Number of distinct base 3 digits of n.
+ * A043530 Number of distinct base-3 digits of n.
  * @author Sean A. Irvine
  */
 public class A043530 implements Sequence {

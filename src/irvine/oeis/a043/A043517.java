@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043517 Numbers n such that number of 7's in base 10 is 1.
+ * A043517 Numbers having one 7 in base 10.
  * @author Georg Fischer
  */
 public class A043517 extends RunsBaseSequence {

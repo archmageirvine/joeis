@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043321 Numbers whose number of 0's in base 3 is 1.
+ * A043321 Numbers having one 0 in base 3.
  * @author Georg Fischer
  */
 public class A043321 extends RunsBaseSequence {

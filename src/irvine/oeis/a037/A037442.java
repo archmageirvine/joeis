@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037442 Positive numbers n such that the set of base-8 digits of n equals the set of base-10 digits of n.
+ * A037442 Positive numbers having the same set of digits in base 8 and base 10.
  * @author Georg Fischer
  */
 public class A037442 extends A037408 {

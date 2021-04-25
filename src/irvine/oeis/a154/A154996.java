@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A154996 a(n)=5*a(n-1)+20*a(n-2), n&gt;2 ; a(0)=1, a(1)=1, a(2)=9 .
+ * A154996 a(n) = 5*a(n-1) + 20*a(n-2), n&gt;2 ; a(0)=1, a(1)=1, a(2)=9.
  * @author Georg Fischer
  */
 public class A154996 extends GeneratingFunctionSequence {

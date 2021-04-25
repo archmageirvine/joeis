@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A033170 Positive numbers n such that the set of base 6 digits of n equals the set of base 7 digits of n.
+ * A033170 Positive numbers having the same set of digits in base 6 and base 7.
  * @author Sean A. Irvine
  */
 public class A033170 implements Sequence {

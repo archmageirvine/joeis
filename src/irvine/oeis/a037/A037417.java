@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037417 Positive integers n such that the set of base-3 digits of n equals the set of base-5 digits of n.
+ * A037417 Positive numbers having the same set of digits in base 3 and base 5.
  * @author Georg Fischer
  */
 public class A037417 extends A037408 {

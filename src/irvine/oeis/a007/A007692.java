@@ -1,37 +1,15 @@
 package irvine.oeis.a007;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.util.array.LongDynamicByteArray;
+import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
  * A007692 Numbers that are the sum of 2 nonzero squares in 2 or more ways.
  * @author Sean A. Irvine
  */
-public class A007692 implements Sequence {
+public class A007692 extends LimitedSumOfLikePowersSequence {
 
-  private final LongDynamicByteArray mA = new LongDynamicByteArray();
-  private long mN = 0;
-  private long mS = 0;
-
-  @Override
-  public Z next() {
-    while (true) {
-      ++mN;
-      if (mN > mS * mS) {
-        ++mS;
-        final long s = mS * mS;
-        for (long k = 1; k <= mS; ++k) {
-          final long t = s + k * k;
-          final byte c = mA.get(t);
-          if (c < 2) {
-            mA.set(t, (byte) (c + 1));
-          }
-        }
-      }
-      if (mA.get(mN) >= 2) {
-        return Z.valueOf(mN);
-      }
-    }
+  /** Construct the sequence. */
+  public A007692() {
+    super(2, 2, 2);
   }
 }

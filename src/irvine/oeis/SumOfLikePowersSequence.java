@@ -95,7 +95,7 @@ public class SumOfLikePowersSequence implements Sequence {
    * @param args power, terms
    */
   public static void main(final String[] args) {
-    final Sequence seq = new SumOfLikePowersSequence(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
+    final Sequence seq = new SumOfLikePowersSequence(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]), false);
     while (true) {
       System.out.println(seq.next());
     }

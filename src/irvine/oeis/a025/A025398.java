@@ -1,36 +1,15 @@
 package irvine.oeis.a025;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
  * A025398 Numbers that are the sum of 3 positive cubes in 3 or more ways.
  * @author Sean A. Irvine
  */
-public class A025398 implements Sequence {
+public class A025398 extends LimitedSumOfLikePowersSequence {
 
-  private long mN = 1;
-
-  protected int ways() {
-    return 3;
-  }
-
-  @Override
-  public Z next() {
-    while (true) {
-      ++mN;
-      int c = 0;
-      for (long x = 1; x * x * x <= mN / 3; ++x) {
-        final long r = mN - x * x * x;
-        for (long y = x; y * y * y <= r / 2; ++y) {
-          final Z z3 = Z.valueOf(r - y * y * y);
-          z3.root(3);
-          if (z3.auxiliary() != 0 && ++c >= ways()) {
-            return Z.valueOf(mN);
-          }
-        }
-      }
-    }
+  /** Construct the sequence. */
+  public A025398() {
+    super(3, 3, 3);
   }
 }
-

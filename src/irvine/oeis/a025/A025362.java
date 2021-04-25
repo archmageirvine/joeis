@@ -1,13 +1,15 @@
 package irvine.oeis.a025;
 
+import irvine.oeis.LimitedSumOfLikePowersSequence;
+
 /**
  * A025362 Numbers that are the sum of 4 nonzero squares in exactly 6 ways.
  * @author Sean A. Irvine
  */
-public class A025362 extends A025357 {
+public class A025362 extends LimitedSumOfLikePowersSequence {
 
-  @Override
-  protected int ways() {
-    return 6;
+  /** Construct the sequence. */
+  public A025362() {
+    super(2, 4, 6, true, false);
   }
 }

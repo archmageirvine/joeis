@@ -1,13 +1,15 @@
 package irvine.oeis.a025;
 
+import irvine.oeis.LimitedSumOfLikePowersSequence;
+
 /**
  * A025337 Numbers that are the sum of 3 nonzero squares in 9 or more ways.
  * @author Sean A. Irvine
  */
-public class A025337 extends A025331 {
+public class A025337 extends LimitedSumOfLikePowersSequence {
 
-  @Override
-  protected int ways() {
-    return 9;
+  /** Construct the sequence. */
+  public A025337() {
+    super(2, 3, 9);
   }
 }

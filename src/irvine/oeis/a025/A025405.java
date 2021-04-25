@@ -1,13 +1,15 @@
 package irvine.oeis.a025;
 
+import irvine.oeis.LimitedSumOfLikePowersSequence;
+
 /**
  * A025405 Numbers that are the sum of 4 positive cubes in exactly 3 ways.
  * @author Sean A. Irvine
  */
-public class A025405 extends A025403 {
+public class A025405 extends LimitedSumOfLikePowersSequence {
 
-  @Override
-  protected int ways() {
-    return 3;
+  /** Construct the sequence. */
+  public A025405() {
+    super(3, 4, 3, true, false);
   }
 }

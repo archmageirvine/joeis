@@ -1,13 +1,15 @@
 package irvine.oeis.a025;
 
+import irvine.oeis.LimitedSumOfLikePowersSequence;
+
 /**
  * A025396 Numbers that are the sum of 3 positive cubes in exactly 2 ways.
  * @author Sean A. Irvine
  */
-public class A025396 extends A025395 {
+public class A025396 extends LimitedSumOfLikePowersSequence {
 
-  @Override
-  protected int ways() {
-    return 2;
+  /** Construct the sequence. */
+  public A025396() {
+    super(3, 3, 2, true, false);
   }
 }

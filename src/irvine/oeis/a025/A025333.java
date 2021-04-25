@@ -1,13 +1,15 @@
 package irvine.oeis.a025;
 
+import irvine.oeis.LimitedSumOfLikePowersSequence;
+
 /**
  * A025333 Numbers that are the sum of 3 nonzero squares in 5 or more ways.
  * @author Sean A. Irvine
  */
-public class A025333 extends A025331 {
+public class A025333 extends LimitedSumOfLikePowersSequence {
 
-  @Override
-  protected int ways() {
-    return 5;
+  /** Construct the sequence. */
+  public A025333() {
+    super(2, 3, 5);
   }
 }

@@ -5,13 +5,13 @@ package irvine.oeis.a053;
 import irvine.oeis.a007.A007953;
 
 /**
- * A053737 Sum of digits of (n written in base 4).
+ * A053828 Sum of digits of (n written in base 7).
  * @author Georg Fischer
  */
-public class A053737 extends A007953 {
+public class A053828 extends A007953 {
 
   /** Construct the sequence. */
-  public A053737() {
-    super(4);
+  public A053828() {
+    super(7);
   }
 }

@@ -6,14 +6,29 @@ import irvine.oeis.Sequence;
 
 /**
  * A004164 Sum of digits of n^3.
- * @author Sean A. Irvine
+ * @author Sean Irvine
  */
 public class A004164 implements Sequence {
 
-  private long mN = -1;
+  protected long mN;
+  protected long mExp;
+  
+  /** Construct this sequence */
+  public A004164() {
+    this(3);
+  }
+  
+  /**
+   * Generic constructor with parameter
+   * @param exp sum the digits of n^exp
+   */
+  public A004164(final long exp) {
+    mN = -1;
+    mExp = exp;
+  }
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.digitSum(Z.valueOf(++mN).pow(3)));
+    return Z.valueOf(ZUtils.digitSum(Z.valueOf(++mN).pow(mExp)));
   }
 }

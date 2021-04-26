@@ -10,8 +10,6 @@ import irvine.math.z.Z;
  */
 public class A160890 extends A160889 {
 
-  protected long mN = 0;
-
   /** Construct the sequence. */
   public A160890() {
     this(3);
@@ -27,7 +25,6 @@ public class A160890 extends A160889 {
 
   @Override
   public Z next() {
-    ++mN;
     return super.next().multiply(Z.ONE.shiftLeft(mExp + 1).subtract(1));
   }
 }

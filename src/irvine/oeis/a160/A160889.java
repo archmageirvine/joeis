@@ -12,8 +12,6 @@ import irvine.oeis.a059.A059376;
  */
 public class A160889 extends A059376 {
 
-  protected long mN = 0;
-
   /** Construct the sequence. */
   public A160889() {
     this(4);
@@ -26,11 +24,9 @@ public class A160889 extends A059376 {
   public A160889(final int b) {
     super(b - 1);
   }
-  
-  
+
   @Override
   public Z next() {
-    ++mN;
     return super.next().divide(LongUtils.phi(mN));
   }
 }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043652 Numbers n such that base 12 representation has exactly 3 runs.
+ * A043652 Numbers whose base-12 representation has exactly 3 runs.
  * @author Georg Fischer
  */
 public class A043652 extends RunsBaseSequence {

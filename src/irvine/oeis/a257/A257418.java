@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A257418 Resulting number of pieces after a sheet of paper is folded n times and cut diagonally.
+ * A257418 Number of pieces after a sheet of paper is folded n times and cut diagonally.
  * @author Georg Fischer
  */
 public class A257418 extends GeneratingFunctionSequence {

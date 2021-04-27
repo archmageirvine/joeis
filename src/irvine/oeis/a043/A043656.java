@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043656 Numbers n such that base 12 representation has exactly 7 runs.
+ * A043656 Numbers whose base-12 representation has exactly 7 runs.
  * @author Georg Fischer
  */
 public class A043656 extends RunsBaseSequence {

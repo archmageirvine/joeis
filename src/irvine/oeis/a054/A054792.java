@@ -6,7 +6,7 @@ import irvine.oeis.NumericalAronsonSequence;
 import irvine.oeis.a000.A000578;
 
 /**
- * A054792 Earliest sequence with a(a(n))=n^3.
+ * A054792 Earliest sequence with a(a(n)) = n^3.
  * @author Georg Fischer
  */
 public class A054792 extends NumericalAronsonSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A045298 Numbers n with property that in base 5 representation the numbers of 3's and 4's are 1 and 2, respectively.
+ * A045298 Numbers having one 3 and two 4's in base 5.
  * @author Georg Fischer
  */
 public class A045298 extends RunsBaseSequence {

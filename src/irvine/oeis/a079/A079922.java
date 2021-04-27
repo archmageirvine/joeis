@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A079922 Solution to the Dancing School Problem with n girls and n+3 boys: f(n, 3).
+ * A079922 Solution to the Dancing School Problem with n girls and n+3 boys: f(n,3).
  * @author Georg Fischer
  */
 public class A079922 implements Sequence {
@@ -20,9 +20,9 @@ public class A079922 implements Sequence {
   
   /**
    * Generic constructor with parameter
-   * @param p 2nd parameter of function f
+   * @param p 2nd parameter of function <code>f</code>
    */
-  public A079922(int p) {
+  public A079922(final int p) {
     mP = p;
     mN = 0;
   }
@@ -108,8 +108,8 @@ public class A079922 implements Sequence {
       int h = 12;
       try {
         g = Integer.parseInt(args[iarg++]);
-        h = Integer.parseInt(args[iarg++]);
-      } catch (Exception exc) {
+        h = Integer.parseInt(args[iarg]);
+      } catch (final RuntimeException exc) {
         // ignore, take defaults
       }
       System.out.println("f(" + g + "," + h + ") = " + (new A079922()).compute(g, h));

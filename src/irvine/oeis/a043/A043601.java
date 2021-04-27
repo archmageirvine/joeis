@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043601 Numbers n such that base 4 representation has exactly 10 runs.
+ * A043601 Numbers whose base-4 representation has exactly 10 runs.
  * @author Georg Fischer
  */
 public class A043601 extends RunsBaseSequence {

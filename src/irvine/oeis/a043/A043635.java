@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043635 Numbers n such that base 9 representation has exactly 6 runs.
+ * A043635 Numbers whose base-9 representation has exactly 6 runs.
  * @author Georg Fischer
  */
 public class A043635 extends RunsBaseSequence {

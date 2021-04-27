@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043660 Numbers n such that base 13 representation has exactly 5 runs.
+ * A043660 Numbers whose base-13 representation has exactly 5 runs.
  * @author Georg Fischer
  */
 public class A043660 extends RunsBaseSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043670 Numbers n such that base 15 representation has exactly 3 runs.
+ * A043670 Numbers whose base-15 representation has exactly 3 runs.
  * @author Georg Fischer
  */
 public class A043670 extends RunsBaseSequence {

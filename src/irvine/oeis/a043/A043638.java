@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043638 Numbers n such that base 10 representation has exactly 2 runs.
+ * A043638 Numbers whose base-10 representation has exactly 2 runs.
  * @author Georg Fischer
  */
 public class A043638 extends RunsBaseSequence {

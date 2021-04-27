@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 // DO NOT EDIT here!
 
 /**
- * A079924 Solution to the Dancing School Problem with n girls and n+5 boys: f(n, 5).
+ * A079924 Solution to the Dancing School Problem with n girls and n+5 boys: f(n,5).
  * @author Georg Fischer
  */
 public class A079924 extends A079922 {

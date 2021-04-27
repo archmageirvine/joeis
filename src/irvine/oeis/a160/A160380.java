@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A160380 Number of 0's in base-4 representation of n.
+ * A160380 a(0) = 0; for n &gt;= 1, a(n) = number of 0's in base-4 representation of n.
  * @author Georg Fischer
  */
 public class A160380 implements Sequence {

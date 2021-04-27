@@ -3,7 +3,7 @@ package irvine.oeis.a338;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A338667.
+ * A338667 Numbers that are the sum of two positive cubes in exactly one way.
  * @author Sean A. Irvine
  */
 public class A338667 extends LimitedSumOfLikePowersSequence {

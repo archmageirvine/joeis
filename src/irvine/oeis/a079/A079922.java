@@ -27,18 +27,19 @@ public class A079922 implements Sequence {
     mN = 0;
   }
 
+  // This is essentially the same implementation as MatrixRing.permanent() but specialized to long[][]
   private static long permanent(final long[][] mat) {
     // Using Ryser inclusion-exclusion method
     final int n = mat.length;
+    if (n > 64) {
+      throw new UnsupportedOperationException();
+    }
     if (n == 0) {
       return 0;
     }
     final int m = mat[0].length;
-    if (n > 64) {
-      throw new UnsupportedOperationException();
-    }
     long sum = 0;
-    for (long s = 1; s < 1L << m; ++s) { // todo start s=1 ??
+    for (long s = 1; s < 1L << m; ++s) {
       // s is a bit vector showing elements of column to include
       long prod = 1;
       for (int i = 0; i < n && prod != 0; ++i) {
@@ -75,14 +76,13 @@ public class A079922 implements Sequence {
                     A[i,j] = 1
         return A.permanent()
   */
-  protected Z compute(final int g, final int h) {
-    final int m = g;
+  protected Z compute(final int m, final int h) {
     final int n = m + h;
     final long[][] dance = new long[m][n];
     for (int i = 0; i < m; ++i) {
       for (int j = 0; j < n; ++j) {
         if (i <= j && j <= i + h) {
-            dance[i][j] = 1;
+          dance[i][j] = 1;
         }
       }
     }
@@ -91,7 +91,6 @@ public class A079922 implements Sequence {
   
   @Override
   public Z next() {
-    //System.out.println(permanent(new long[][] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}})); // this matrix has permanent 450
     return compute(++mN, mP);
   }
 

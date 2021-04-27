@@ -1,6 +1,5 @@
 package irvine.math.group;
 
-import irvine.math.LongUtils;
 import irvine.math.api.Matrix;
 import irvine.math.api.Operation;
 import irvine.math.api.Ring;
@@ -11,8 +10,8 @@ import irvine.math.matrix.IdentityMatrix;
 import irvine.math.matrix.MinorMatrix;
 import irvine.math.matrix.Singular;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.util.Permutation;
 
 /**
  * A matrix where individuals elements are drawn from a ring.
@@ -227,61 +226,47 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
 
   /**
    * Permanent.
-   * @param m matrix
+   * @param mat matrix
    * @return permanent of the matrix
    */
-  public E permanent(final Matrix<E> m) {
-    if (m.rows() > m.cols()) {
-      return permanent(m.transpose()); // transpose does not change value of permanent
+  public E permanent(final Matrix<E> mat) {
+    if (mat.rows() > mat.cols()) {
+      return permanent(mat.transpose()); // transpose does not change value of permanent
     }
-    if (zero().equals(m)) {
+    if (zero().equals(mat)) {
       return mZero;
     }
-    if (one().equals(m)) {
+    if (one().equals(mat)) {
       return mOne;
     }
-    final long r = m.rows();
-    if (r > Long.SIZE) {
+    // Using Ryser inclusion-exclusion method
+    final long n = mat.rows();
+    if (n > 64) {
       throw new UnsupportedOperationException();
     }
-    switch ((int) r) {
-    case 0:
+    if (n == 0) {
       return mZero;
-    case 1:
-      E sumRow = mZero;
-      for (int k = 0; k < m.cols(); ++k) {
-        sumRow = mElementRing.add(sumRow, m.get(0, k));
-      }
-      return sumRow;
-    default:
-      E sum = mZero;
-      for (long select = (1L << m.rows()) - 1; select < 1L << m.cols(); select = LongUtils.swizzle(select)) {
-        final int[] cols = new int[(int) m.rows()];
-        long s = select;
-        for (int k = 0, j = 0; k < cols.length; ++k) {
-          while ((s & 1) == 0) {
-            ++j;
-            s >>>= 1;
-          }
-          cols[k] = j;
-          s >>>= 1;
-          ++j;
-        }
-        final Permutation p = new Permutation(cols);
-        int[] sigma;
-        while ((sigma = p.next()) != null) {
-          E w = mOne;
-          for (int k = 0; k < m.rows(); ++k) {
-            w = mElementRing.multiply(w, m.get(k, sigma[k]));
-            if (mZero.equals(w)) {
-              break;
-            }
-          }
-          sum = mElementRing.add(sum, w);
-        }
-      }
-      return sum;
     }
+    final long m = mat.cols();
+    E sum = mZero;
+    for (long s = 1; s < 1L << m; ++s) {
+      // s is a bit vector showing elements of column to include
+      E prod = mOne;
+      for (int i = 0; i < n && !mZero.equals(prod); ++i) {
+        long sj = s;
+        E t = mZero;
+        for (int j = 0; sj != 0; ++j, sj >>>= 1) {
+          if ((sj & 1) == 1) {
+            t = mElementRing.add(t, mat.get(i, j));
+          }
+        }
+        prod = mElementRing.multiply(prod, t);
+      }
+      final int sizeS = Long.bitCount(s);
+      prod = mElementRing.multiply(prod, mElementRing.coerce(Binomial.binomial(m - n + sizeS, sizeS).longValueExact()));
+      sum = mElementRing.signedAdd((sizeS & 1) == 0, sum, prod);
+    }
+    return (m & 1) == 0 ? sum : mElementRing.negate(sum);
   }
 
   /**

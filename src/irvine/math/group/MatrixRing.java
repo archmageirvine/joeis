@@ -254,8 +254,7 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
       }
       return sumRow;
     default:
-      final E zero = mZero;
-      E sum = zero;
+      E sum = mZero;
       for (long select = (1L << m.rows()) - 1; select < 1L << m.cols(); select = LongUtils.swizzle(select)) {
         final int[] cols = new int[(int) m.rows()];
         long s = select;
@@ -274,7 +273,7 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
           E w = mOne;
           for (int k = 0; k < m.rows(); ++k) {
             w = mElementRing.multiply(w, m.get(k, sigma[k]));
-            if (zero.equals(w)) {
+            if (mZero.equals(w)) {
               break;
             }
           }

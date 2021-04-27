@@ -1,5 +1,6 @@
 package irvine.math.group;
 
+import irvine.math.LongUtils;
 import irvine.math.api.Matrix;
 import irvine.math.api.Operation;
 import irvine.math.api.Ring;
@@ -230,6 +231,9 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
    * @return permanent of the matrix
    */
   public E permanent(final Matrix<E> m) {
+    if (m.rows() > m.cols()) {
+      return permanent(m.transpose()); // transpose does not change value of permanent
+    }
     if (zero().equals(m)) {
       return mZero;
     }
@@ -237,31 +241,44 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
       return mOne;
     }
     final long r = m.rows();
-    if (r > Integer.MAX_VALUE) {
+    if (r > Long.SIZE) {
       throw new UnsupportedOperationException();
     }
     switch ((int) r) {
     case 0:
       return mZero;
     case 1:
-      return m.get(0, 0);
-    case 2:
-      return mElementRing.add(mElementRing.multiply(m.get(0, 0), m.get(1, 1)),
-                              mElementRing.multiply(m.get(0, 1), m.get(1, 0)));
+      E sumRow = mZero;
+      for (int k = 0; k < m.cols(); ++k) {
+        sumRow = mElementRing.add(sumRow, m.get(0, k));
+      }
+      return sumRow;
     default:
-      final Permutation p = new Permutation((int) m.rows());
-      int[] sigma;
-      final E zero = mZero;
-      E sum = zero;
-      while ((sigma = p.next()) != null) {
-        E w = mOne;
-        for (int k = 0; k < sigma.length; ++k) {
-          w = mElementRing.multiply(w, m.get(k, sigma[k]));
-          if (zero.equals(w)) {
-            break;
+      E sum = mZero;
+      for (long select = (1L << m.rows()) - 1; select < 1L << m.cols(); select = LongUtils.swizzle(select)) {
+        final int[] cols = new int[(int) m.rows()];
+        long s = select;
+        for (int k = 0, j = 0; k < cols.length; ++k) {
+          while ((s & 1) == 0) {
+            ++j;
+            s >>>= 1;
           }
+          cols[k] = j;
+          s >>>= 1;
+          ++j;
         }
-        sum = mElementRing.add(sum, w);
+        final Permutation p = new Permutation(cols);
+        int[] sigma;
+        while ((sigma = p.next()) != null) {
+          E w = mOne;
+          for (int k = 0; k < m.rows(); ++k) {
+            w = mElementRing.multiply(w, m.get(k, sigma[k]));
+            if (mZero.equals(w)) {
+              break;
+            }
+          }
+          sum = mElementRing.add(sum, w);
+        }
       }
       return sum;
     }

@@ -18,7 +18,7 @@ public class DirichletConvolutionSequence implements Sequence {
   /**
    * Create a Dirichlet convolution of a sequence with itself.
    * @param seq1 first sequence
-   * @param offset1 offset of seq1
+   * @param offset1 offset of <code>seq1</code>
    */
   public DirichletConvolutionSequence(final Sequence seq1, final int offset1) {
     mN = 0;
@@ -30,9 +30,9 @@ public class DirichletConvolutionSequence implements Sequence {
   /**
    * Create a Dirichlet convolution of two (different) sequences.
    * @param seq1 first sequence
-   * @param offset1 offset of seq1
+   * @param offset1 offset of <code>seq1</code>
    * @param seq2 second sequence
-   * @param offset2 offset of seq2
+   * @param offset2 offset of <code>seq2</code>
    */
   public DirichletConvolutionSequence(final Sequence seq1, final int offset1, final Sequence seq2, final int offset2) {
     mN = 0;

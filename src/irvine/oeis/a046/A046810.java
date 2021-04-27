@@ -13,13 +13,11 @@ import irvine.util.Permutation;
  */
 public class A046810 implements Sequence {
 
-  private final Fast mPrime = new Fast();
+  private static final Fast PRIME = new Fast();
   protected long mN = 0;
 
-  @Override
-  public Z next() {
+  static long numberOfPrimeAnagrams(final String s) {
     long count = 0;
-    final String s = String.valueOf(++mN);
     final int[] d = new int[s.length()];
     for (int k = 0; k < d.length; ++k) {
       d[k] = s.charAt(k) - '0';
@@ -34,11 +32,16 @@ public class A046810 implements Sequence {
           v *= 10;
           v += u;
         }
-        if (mPrime.isPrime(v)) {
+        if (PRIME.isPrime(v)) {
           ++count;
         }
       }
     }
-    return Z.valueOf(count);
+    return count;
+  }
+
+  @Override
+  public Z next() {
+    return Z.valueOf(numberOfPrimeAnagrams(String.valueOf(++mN)));
   }
 }

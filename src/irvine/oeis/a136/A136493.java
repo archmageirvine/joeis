@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A136493 implements Sequence {
 
-  private final int mBandWidth = 5;
+  protected final int mBandWidth = 5;
   private int mN = -1;
   private Polynomial<Z> mCharPoly = Polynomial.create(0);
   private int mM = 0;

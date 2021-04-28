@@ -7,16 +7,16 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A046819 Number of 1's in binary expansion of 3n+2.
+ * A046822 Number of 1's in binary expansion of 5n+2.
  * @author Georg Fischer
  */
-public class A046819 implements Sequence {
+public class A046822 implements Sequence {
 
   protected int mN = 0 - 1;
   
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(ZUtils.digitCounts(Z.valueOf(mN).multiply(3).add(2), 2)[1]);
+    return Z.valueOf(ZUtils.digitCounts(Z.valueOf(mN).multiply(5).add(2), 2)[1]);
   }
 }

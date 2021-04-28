@@ -6,6 +6,7 @@ import java.util.TreeMap;
 
 import irvine.math.MutableInteger;
 import irvine.math.z.Z;
+import irvine.util.string.StringUtils;
 
 /**
  * Generate terms for a sequence of like powers.
@@ -26,6 +27,7 @@ public class LimitedSumOfLikePowersSequence implements Sequence {
   // terms than strictly necessary.
   // Finally we return (and remove) the first element from mA.
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final TreeMap<Z, MutableInteger> mA = new TreeMap<>();
   private final ArrayList<Z> mPowers = new ArrayList<>(); // for efficiency, caching powers
   private final int mPower;
@@ -99,6 +101,9 @@ public class LimitedSumOfLikePowersSequence implements Sequence {
       while (mA.isEmpty() || mA.firstKey().compareTo(pow(mM)) >= 0) {
         insertTerms(pow(mM), 1, 1);
         ++mM; // we finished adding all sums of powers up to mM^p
+        if (mVerbose && mM % 10 == 0) {
+          StringUtils.message("Search done to " + mM + "^" + mPower);
+        }
       }
       final Map.Entry<Z, MutableInteger> e = mA.pollFirstEntry();
       final int ways = e.getValue().get();

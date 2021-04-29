@@ -20,7 +20,7 @@ public class A000696 implements Sequence {
     // conditions.
     int j = 1;
     // de Bruijn, condition (2)
-    while (j < mN) {
+    while (j < n) {
       if (n % (j + 1) == 0) {
         return 0;
       }

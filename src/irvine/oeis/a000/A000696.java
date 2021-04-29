@@ -52,7 +52,7 @@ public class A000696 implements Sequence {
         return -1;
       }
       final int high = 3 * (1 << (2 * k - 1));
-      if (n >= low && n <= high) {
+      if (n <= high) {
         return 0;
       }
       ++k;

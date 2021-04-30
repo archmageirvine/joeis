@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046861.
+ * A046861 Lower members of good pairs.
  * @author Sean A. Irvine
  */
 public class A046861 implements Sequence {

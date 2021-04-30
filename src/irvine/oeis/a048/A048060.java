@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a047.A047161;
 
 /**
- * A048060 Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are &lt;= (n-4)/2.
+ * A048060 Number of nonempty subsets of {1, 2,...,n} in which exactly 1/2 of the elements are <= (n-4)/2.
  * @author Georg Fischer
  */
 public class A048060 extends A047161 {
@@ -19,7 +19,7 @@ public class A048060 extends A047161 {
 
   @Override
   public Z next() {
-    final Z result = super.next();
+    Z result = super.next();
     return mN < 5 ? Z.ZERO : result;
   }
 }

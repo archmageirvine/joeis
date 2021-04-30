@@ -1,5 +1,7 @@
 package irvine.oeis;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 
 /**
@@ -8,27 +10,25 @@ import irvine.math.z.Z;
  */
 public abstract class RunsBaseSequence implements Sequence {
 
+  protected int mBase; // number base
   protected int mN; // index of current term to be returned
   protected Z mK; // current number with some property
-  //protected int mOffset; // OEIS offset1 as of generation time
 
   /**
-   * Construct an instance which selects all numbers
-   * that have some property in the continued fractions
-   * of their square roots.
+   * Constructor for runs of the index
    * @param offset first valid term has this index
    */
   protected RunsBaseSequence(final int offset) {
     //mOffset = offset;
     mN = offset - 1;
     mK = Z.valueOf(mN);
+    mBase = 10;
   }
 
   /**
-   * Construct the continued fraction for the square root
-   * of a single, specified number.
+   * Constructor for runs of a single, specified number.
    * @param offset first valid term has this index
-   * @param k compute the sqrt of this non-negative number
+   * @param k investigate the runs of this non-negative number
    */
   protected RunsBaseSequence(final int offset, final int k) {
     this(offset);
@@ -69,8 +69,8 @@ public abstract class RunsBaseSequence implements Sequence {
         digits = "0" + digits; // make sure that there are pairs
       }
     } // > 10
-    int idig = digits.length() - dlen;
 
+    int idig = digits.length() - dlen;
     String runElem = digits.substring(idig, idig + dlen);
     int count = 1; // there is always one element = 1 run
     idig -= dlen;
@@ -83,6 +83,89 @@ public abstract class RunsBaseSequence implements Sequence {
     } // while
     return count;
   } // getRunCount
+
+  /**
+   * Get the run lengths from a number represented in some base,
+   * from left to right in the String representation.
+   * @param number get the run lengths from this number
+   * @param base represent in this base
+   * @return array with lengths of the runs
+   */
+  protected int[] getRunLengths(final Z number, final int base) {
+    String digits;
+    int dlen = 1; // assume 1 character per digit
+    if (base <= 10) { // one character per digit
+      digits = number.toString(base);
+    } else { // two characters per digit
+      dlen = 2;
+      digits = number.toTwoDigits(base);
+      if ((digits.length() & 1) == 1) { // odd
+        digits = "0" + digits; // make sure that there are pairs
+      }
+    } // > 10
+
+    final int[] runLengths = new int[digits.length()];
+    int irl = 0;
+    int idig = 0; 
+    String runElem = digits.substring(idig, idig + dlen);
+    int count = 1;
+    idig += dlen;
+    while (idig <= digits.length() - dlen) {
+      if (digits.substring(idig, idig + dlen).equals(runElem)) {
+        ++count;
+      } else {
+        runLengths[irl++] = count;
+        runElem = digits.substring(idig, idig + dlen);
+        count = 1;
+      }
+      idig += dlen;
+    } // while
+    runLengths[irl++] = count; // the last one
+    return Arrays.copyOfRange(runLengths, 0, irl);
+  } // getRunLengths
+  
+  /**
+   * Determine whether an array contains increasing lengths only
+   * @param number get the run lengths from this number
+   * @param base represent in this base
+   * @return true if rls[i] &lt; rls[i+1] for all i
+   */
+  protected boolean hasIncreasingRunLengths(final Z number, final int base) {
+    final int[] rls = getRunLengths(number, base);
+  /*
+    System.out.print(number + "(" + base + ")=" + number.toString(base) + ", runLengths=");
+    for (int ir = 0; ir < rls.length; ++ir) {
+      System.out.print(rls[ir] + ",");
+    }
+  */
+    boolean result = true;
+    int i = rls.length - 1;
+    while (i > 0) {
+      if (rls[i - 1] >= rls[i]) {
+        result = false;
+      }
+      --i;
+    } // while i
+    // System.out.println(" hasIncreasingRunLengths=" + result);
+    return result;
+  } // hasIncreasingRunLengths
+  
+  /**
+   * Determine whether an array contains decreasing lengths only
+   * @param rls array of run lengths
+   * @return true if rls[i] &lt; rls[i+1] for all i
+   */
+  protected boolean hasDecreasingRunLengths(final Z number, final int base) {
+    final int[] rls = getRunLengths(number, base);
+    int i = rls.length - 1;
+    while (i > 0) {
+      if (rls[i - 1] <= rls[i]) {
+        return false;
+      }
+      --i;
+    } // while i
+    return true;
+  } // hasDecreasingRunLengths
 
   /**
    * Determine whether the number of runs in a number represented 

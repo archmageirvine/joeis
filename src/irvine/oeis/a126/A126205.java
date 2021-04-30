@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A126205 Number of 3's in decimal expansion of 3^n, with n&gt;=0.
+ * A126205 Number of 3's in decimal expansion of 3^n, with n>=0.
  * @author Georg Fischer
  */
 public class A126205 implements Sequence {

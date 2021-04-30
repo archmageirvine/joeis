@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A048314 Numbers whose base-3 expansions, read from left to right, have run lengths that strictly dencrease..
+ * A048314 Numbers whose base-3 expansions, read from left to right, have run lengths that strictly decrease.
  * @author Georg Fischer
  */
 public class A048314 extends RunsBaseSequence {

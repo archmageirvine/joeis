@@ -6,7 +6,7 @@ import irvine.oeis.PisotLSequence;
 
 
 /**
- * A277084 Pisot sequence L(4, 14).
+ * A277084 Pisot sequence L(4,14).
  * @author Georg Fischer
  */
 public class A277084 extends PisotLSequence {

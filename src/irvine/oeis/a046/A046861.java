@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046861 Lower members of good pairs.
+ * A046861 Lower members of a "good pair" of the form (k, 2*k +- 1).
  * @author Sean A. Irvine
  */
 public class A046861 implements Sequence {

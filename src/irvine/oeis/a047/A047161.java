@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A047161 Number of nonempty subsets of {1, 2,...,n} in which exactly 1/3 of the elements are <= n/2.
+ * A047161 Number of nonempty subsets of {1,2,...,n} in which exactly 1/3 of the elements are &lt;= n/2.
  * Offset 1;
  * DATA 0, 0, 1, 2, 6, 9, 21, 30, 70, 100, 235, 335, 791, 1127, 2681, 3822, 9150, 13050, 31401, 44802 ...
  * @author Georg Fischer

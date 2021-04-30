@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a047.A047161;
 
 /**
- * A048093 Number of nonempty subsets of {1, 2,...,n} in which exactly 1/2 of the elements are <= sqrt(n).
+ * A048093 Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are &lt;= sqrt(n).
  * @author Georg Fischer
  */
 

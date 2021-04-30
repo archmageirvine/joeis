@@ -6,7 +6,7 @@ import irvine.oeis.PisotSequence;
 
 
 /**
- * A274951 Pisot sequence E(8, 12), a(n) = floor( a(n-1)^2/a(n-2) + 1/2 ).
+ * A274951 Pisot sequence E(8,12), a(n) = floor( a(n-1)^2/a(n-2) + 1/2 ).
  * @author Georg Fischer
  */
 public class A274951 extends PisotSequence {

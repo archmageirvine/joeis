@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 // DO NOT EDIT here!
 
 /**
- * A048096 Number of nonempty subsets of {1, 2,...,n} in which exactly 1/4 of the elements are <= sqrt(n).
+ * A048096 Number of nonempty subsets of {1,2,...,n} in which exactly 1/4 of the elements are &lt;= sqrt(n).
  * @author Georg Fischer
  */
 public class A048096 extends A048093 {

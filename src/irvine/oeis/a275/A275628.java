@@ -6,7 +6,7 @@ import irvine.oeis.PisotSequence;
 
 
 /**
- * A275628 Pisot sequence E(31, 51), a(n)=[a(n-1)^2/a(n-2)+1/2].
+ * A275628 Pisot sequence E(31,51), a(n)=[a(n-1)^2/a(n-2)+1/2].
  * @author Georg Fischer
  */
 public class A275628 extends PisotSequence {

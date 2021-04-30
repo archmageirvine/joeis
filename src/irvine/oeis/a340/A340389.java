@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A340389 allocated for Sean A. Irvine.
+ * A340389 Number at the apex of Recam\u00e1n's triangle of primes and squares with n rows.
  * @author Sean A. Irvine
  */
 public class A340389 implements Sequence {

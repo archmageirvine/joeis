@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 // DO NOT EDIT here!
 
 /**
- * A048094 Number of nonempty subsets of {1, 2,...,n} in which exactly 1/3 of the elements are <= sqrt(n).
+ * A048094 Number of nonempty subsets of {1,2,...,n} in which exactly 1/3 of the elements are &lt;= sqrt(n).
  * @author Georg Fischer
  */
 public class A048094 extends A048093 {

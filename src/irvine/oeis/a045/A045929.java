@@ -10,8 +10,8 @@ import irvine.oeis.Sequence;
  */
 public class A045929 implements Sequence {
 
-  private static final CR R6 = CR.valueOf(6);
-  private static final CR R7 = CR.valueOf(7);
+  private static final CR R6 = CR.SIX;
+  private static final CR R7 = CR.SEVEN;
   private long mN = 0;
 
   @Override

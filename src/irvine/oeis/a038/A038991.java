@@ -18,7 +18,7 @@ public class A038991 implements Sequence {
 
   private final MemorySequence mSeq1 = MemorySequence.cachedSequence(new A001001());
   private final MemorySequence mSeq2 = MemorySequence.cachedSequence(new A000578());
-  private int mN = 1 - 1;
+  private int mN = 0;
 
   @Override
   public Z next() {

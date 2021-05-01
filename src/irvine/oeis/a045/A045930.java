@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A045930 implements Sequence {
 
-  private static final CR R10 = CR.valueOf(10);
+  private static final CR R10 = CR.TEN;
   private static final CR R13 = CR.valueOf(13);
   private long mN = 0;
 

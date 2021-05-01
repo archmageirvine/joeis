@@ -10,7 +10,6 @@ import irvine.oeis.Sequence;
  * DATA 0, 0, 1, 2, 6, 9, 21, 30, 70, 100, 235, 335, 791, 1127, 2681, 3822, 9150, 13050, 31401, 44802 ...
  * @author Georg Fischer
  */
-
 public class A047161 implements Sequence {
     
   protected int mN; // current index

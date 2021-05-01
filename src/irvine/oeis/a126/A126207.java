@@ -12,11 +12,11 @@ import irvine.oeis.Sequence;
  */
 public class A126207 implements Sequence {
 
-  protected int mN = 0 - 1;
+  protected int mN = -1;
   
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(ZUtils.digitCounts(Z.valueOf(5).pow(mN), 10)[5]);
+    return Z.valueOf(ZUtils.digitCounts(Z.FIVE.pow(mN), 10)[5]);
   }
 }

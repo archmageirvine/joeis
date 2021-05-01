@@ -8,7 +8,6 @@ import irvine.oeis.a000.A000142;
  *
  * @author Georg Fischer
  */
-
 public class A059372 extends RevertTransformSequence {
 
   /**

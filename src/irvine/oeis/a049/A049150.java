@@ -12,7 +12,6 @@ import irvine.oeis.RevertTransformSequence;
  *
  * @author Georg Fischer
  */
-
 public class A049150 extends RevertTransformSequence {
 
   /**

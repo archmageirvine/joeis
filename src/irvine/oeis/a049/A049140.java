@@ -1,11 +1,10 @@
 package irvine.oeis.a049;
 
 /**
- * A049140 Revert transform of 1 - x - x^3
+ * A049140 Revert transform of 1 - x - x^3.
  *
  * @author Georg Fischer
  */
-
 public class A049140 extends A049150 {
 
   /**

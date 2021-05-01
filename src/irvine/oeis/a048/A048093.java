@@ -8,7 +8,6 @@ import irvine.oeis.a047.A047161;
  * A048093 Number of nonempty subsets of {1,2,...,n} in which exactly 1/2 of the elements are &lt;= sqrt(n).
  * @author Georg Fischer
  */
-
 public class A048093 extends A047161 {
     
   /** Construct the sequence */

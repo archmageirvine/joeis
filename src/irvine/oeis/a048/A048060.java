@@ -19,7 +19,7 @@ public class A048060 extends A047161 {
 
   @Override
   public Z next() {
-    Z result = super.next();
+    final Z result = super.next();
     return mN < 5 ? Z.ZERO : result;
   }
 }

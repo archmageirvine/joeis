@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 public class RevertTransformSequence implements Sequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private final Sequence mSeq;
+  protected final Sequence mSeq;
   private final Polynomial<Z> mA = RING.create(Collections.emptyList());
   {
     mA.add(Z.ZERO);

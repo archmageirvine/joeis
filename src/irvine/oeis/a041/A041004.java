@@ -48,25 +48,23 @@ public class A041004 extends EulerTransform {
    * @return next term of the underlying sequence to be Euler transformed
    */
   protected Z advance() {
-    mAs.set(mN - 1, (mN == 1 ? Z.ZERO : mPrev));
-    int i = mN - 1;
-    {
-      Z cSum = Z.ZERO; // start sum
-      for (int d = 1; d <= i; ++d) { // compute c[n] = sum ...
-        if (i % d == 0) { // "did(i,d)"
-          cSum = cSum.add(Z.valueOf(d).multiply(mAs.get(d)));
-        }
-      } // for d
-      mCs.set(i, cSum); // = c[n]
-    } // for i
+    mAs.set(mN - 1, mN == 1 ? Z.ZERO : mPrev);
+    final int i = mN - 1;
+    Z cSum = Z.ZERO; // start sum
+    for (int d = 1; d <= i; ++d) { // compute c[n] = sum ...
+      if (i % d == 0) { // "did(i,d)"
+        cSum = cSum.add(Z.valueOf(d).multiply(mAs.get(d)));
+      }
+    } // for d
+    mCs.set(i, cSum); // = c[n]
 
     if (i > 0) {
-      Z bSum = mCs.get(i); 
+      Z bSum = mCs.get(i);
       for (int d = 1; d < i; ++d) {
         bSum = bSum.add(mCs.get(d).multiply(mBs.get(i - d)));
       } // for d
       bSum = bSum.divide(Z.valueOf(i));
-      mBs.set(i,bSum);
+      mBs.set(i, bSum);
     }
     return Z.ZERO;
   }

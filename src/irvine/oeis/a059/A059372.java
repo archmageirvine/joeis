@@ -4,7 +4,7 @@ import irvine.oeis.RevertTransformSequence;
 import irvine.oeis.a000.A000142;
 
 /**
- * A059372 Revert transform of factorials.
+ * A059372 Revert transform of factorials n! (n &gt;= 1).
  *
  * @author Georg Fischer
  */

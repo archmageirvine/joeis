@@ -7,7 +7,7 @@ import irvine.oeis.RevertTransformSequence;
 
 
 /**
- * A191242 Reversion of x-x^2-x^3-2*x^4
+ * A191242 Reversion of x-x^2-x^3-2*x^4.
  * @author Georg Fischer
  */
 public class A191242 extends RevertTransformSequence {

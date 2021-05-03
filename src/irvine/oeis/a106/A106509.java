@@ -6,7 +6,7 @@ import irvine.oeis.GeneratingFunctionTriangle;
 
 
 /**
- * A106509 Riordan array ((1+x)/(1+x+x^2),x/(1+x)) read by rows.
+ * A106509 Riordan array ((1+x)/(1+x+x^2), x/(1+x)), read by rows.
  *
  * @author Georg Fischer
  */

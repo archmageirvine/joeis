@@ -1622,3 +1622,4 @@ A046529 Largest number in largest finite set fixed by mapping f(k) = sum of n-th
 A046671 Nim-values G(3,n) for Sylver coinage [have reference]
 A046749 Number of pure periods of length n for splitting games
 A046873 Number of total orders extending inclusion on P({1,...,n}).
+A046880 Number of isolated-pentagon (IPR) fullerenes with 2n vertices (or carbon atoms).

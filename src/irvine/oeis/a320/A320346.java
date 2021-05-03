@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A320346 a(n) is the number of perfect matchings in the graph with vertices labelled 1 to 2n with edges {i,j} for 1&lt;=|i-j|&lt;=4.
+ * A320346 a(n) is the number of perfect matchings in the graph with vertices labeled 1 to 2n with edges {i,j} for 1&lt;=|i-j|&lt;=4.
  * @author Georg Fischer
  */
 public class A320346 extends LinearRecurrence {

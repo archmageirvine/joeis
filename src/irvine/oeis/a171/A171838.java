@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A171838 Primes of the form 3n^2 + 9n + 5.
+ * A171838 Primes of the form 3*k^2 + 9*k + 5.
  * @author Georg Fischer
  */
 public class A171838 extends PrimeSubsequence {

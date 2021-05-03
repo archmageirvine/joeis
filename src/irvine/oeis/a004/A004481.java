@@ -40,7 +40,13 @@ public class A004481 extends A004489 {
 
   private final WytQueens mWytQueens = new WytQueens();
 
-  protected Z wytQueens(final Z a, final Z b) {
+  /**
+   * Return the Sprague-Grundy value of the Wythoff game.
+   * @param a first parameter
+   * @param b second parameter
+   * @return Sprague-Grundy value
+   */
+  public Z wytQueens(final Z a, final Z b) {
     // Use symmetry to reduced size of remembered table
     return a.compareTo(b) <= 0 ? mWytQueens.get(a, b) : mWytQueens.get(b, a);
   }

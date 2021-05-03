@@ -6,7 +6,7 @@ package irvine.oeis.a092;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A092420 a(n+2) = 9a(n+1) - a(n) + 1, with a(1)=1, a(2)=10.
+ * A092420 a(n+2) = 9*a(n+1) - a(n) + 1, with a(1)=1, a(2)=10.
  * @author Georg Fischer
  */
 public class A092420 extends HolonomicRecurrence {

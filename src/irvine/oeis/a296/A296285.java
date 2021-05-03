@@ -6,7 +6,7 @@ import irvine.oeis.ComplementaryEquationSequence;
 
 
 /**
- * A296285 Solution of the complementary equation a(n) = a(n-1) + a(n-2) + n*b(n-2),
+ * A296285 Solution of the complementary equation a(n) = a(n-1) + a(n-2) + n*b(n-2), where a(0) = 1, a(1) = 2, b(0) = 4, and (a(n)) and (b(n)) are increasing complementary sequences.
  * where a(0) = 1, a(1) = 2, b(0) = 4, and (a(n)) and (b(n)) are increasing complementary sequences.
  * @author Georg Fischer
  */

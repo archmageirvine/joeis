@@ -128,7 +128,7 @@ public abstract class RunsBaseSequence implements Sequence {
    * Determine whether an array contains increasing lengths only
    * @param number get the run lengths from this number
    * @param base represent in this base
-   * @return true if rls[i] &lt; rls[i+1] for all i
+   * @return true if <code>rls[i] &lt; rls[i+1]</code> for all <code>i</code>
    */
   protected boolean hasIncreasingRunLengths(final Z number, final int base) {
     final int[] rls = getRunLengths(number, base);
@@ -153,8 +153,8 @@ public abstract class RunsBaseSequence implements Sequence {
   /**
    * Determine whether an array contains decreasing lengths only
    * @param rls array of run lengths
-   * @return true if rls[i] &lt; rls[i+1] for all i
-   */
+   * @return true if <code>rls[i] &lt; rls[i+1]</code> for all <code>i</code
+  >   */
   protected boolean hasDecreasingRunLengths(final Z number, final int base) {
     final int[] rls = getRunLengths(number, base);
     int i = rls.length - 1;

@@ -12,7 +12,7 @@ public class A046829 implements Sequence {
   private Z mN = Z.NEG_ONE;
 
   private boolean is(final String square, final String n) {
-    for (int k = 0, j = 1; j <= square.length(); ++k, ++j) {
+    for (int k = 0, j = 0; j <= square.length(); ++k, ++j) {
       if (k == n.length()) {
         return true;
       }

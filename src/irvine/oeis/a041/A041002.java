@@ -3,8 +3,6 @@ package irvine.oeis.a041;
 
 import irvine.math.z.Z;
 import irvine.oeis.PositionSequence;
-import irvine.oeis.SkipSequence;
-import irvine.oeis.a041.A041004;
 
 /**
  * A041002 The sequence d, given that c is a left shift by one place of b.
@@ -12,8 +10,6 @@ import irvine.oeis.a041.A041004;
  */
 public class A041002 extends PositionSequence {
 
-  private int mIndex; // local, different from super.mN
-  
   /** Construct the sequence. */
   public A041002() {
     super(0, new A041004(), 1);

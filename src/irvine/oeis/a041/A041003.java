@@ -11,22 +11,20 @@ import irvine.oeis.SkipSequence;
  */
 public class A041003 extends EulerTransform {
 
-  private int mIndex; // local, different from super.mN
+  private boolean mFirst = true;
   
   /** Construct the sequence. */
   public A041003() {
     super(new SkipSequence(new A041004(), 1));
-    mIndex = 0;
   }
 
   @Override
   public Z next() {
-    Z result = Z.ONE;
-    if (mIndex == 0) {
-      ++mIndex;
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
     } else {
-      result = super.next();
+      return super.next();
     } 
-    return result;
   }
 }

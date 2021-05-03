@@ -10,15 +10,14 @@ import irvine.oeis.EulerTransform;
  */
 public class A041004 extends EulerTransform {
 
-  private boolean debug = false;
+  private boolean mDebug = false;
   protected Z mPrev;
-  private int mIndex; // local, different from super.mN
+  private boolean mFirst = true;
   
   /** Construct the sequence. */
   public A041004() {
     super();
     mPrev = Z.ONE;
-    mIndex = 0;
   }
 
   /*
@@ -29,12 +28,12 @@ public class A041004 extends EulerTransform {
   @Override
   public Z next() {
     Z result = Z.ONE;
-    if (mIndex == 0) {
-      ++mIndex;
+    if (mFirst) {
+      mFirst = false;
     } else {
       final Z et = super.next();
       result = mPrev.add(et).and(Z.ONE); // (v[n-1] + EULER(v[2..n])[n-1])% 2
-      if (debug) {
+      if (mDebug) {
         System.out.println(" r=" + result);
       }
       mPrev = result;
@@ -76,7 +75,7 @@ public class A041004 extends EulerTransform {
    * Test output
    */
   protected void dump(final Z et, final Z result) {
-      if (debug) {
+      if (mDebug) {
         System.out.print("# " + mN + " e=" + et + " /c=");
         for (int i = 1; i < mCs.size(); ++i) {
           System.out.print((i == 1 ? "[" : ",") + mCs.get(i));

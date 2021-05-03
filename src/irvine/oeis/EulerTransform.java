@@ -18,9 +18,9 @@ import irvine.math.z.ZUtils;
 public class EulerTransform implements Sequence {
 
   protected Sequence mSeq;
-  private final ArrayList<Z> mAs = new ArrayList<>(); // underlying sequence
-  private final ArrayList<Z> mBs = new ArrayList<>(); // resulting sequence
-  private final ArrayList<Z> mCs = new ArrayList<>(); // auxiliary sequence 
+  protected final ArrayList<Z> mAs = new ArrayList<>(); // underlying sequence
+  protected final ArrayList<Z> mBs = new ArrayList<>(); // resulting sequence
+  protected final ArrayList<Z> mCs = new ArrayList<>(); // auxiliary sequence
   protected Z[] mPreTerms; // initial terms to be prepended
   protected int mIn; // index for initial terms
   protected int mN; // current index >= 1, may be used in advance() of a subclass

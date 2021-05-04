@@ -153,8 +153,8 @@ public abstract class RunsBaseSequence implements Sequence {
   /**
    * Determine whether an array contains decreasing lengths only
    * @param rls array of run lengths
-   * @return true if <code>rls[i] &lt; rls[i+1]</code> for all <code>i</code
-  >   */
+   * @return true if <code>rls[i] &lt; rls[i+1]</code> for all <code>i</code>
+   */
   protected boolean hasDecreasingRunLengths(final Z number, final int base) {
     final int[] rls = getRunLengths(number, base);
     int i = rls.length - 1;

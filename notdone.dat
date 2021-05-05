@@ -1620,3 +1620,10 @@ A046671 Nim-values G(3,n) for Sylver coinage [have reference]
 A046749 Number of pure periods of length n for splitting games
 A046873 Number of total orders extending inclusion on P({1,...,n}).
 A046880 Number of isolated-pentagon (IPR) fullerenes with 2n vertices (or carbon atoms).
+A046904 Number of isomorphism classes of posets with n points with property that there is no nonsingelton proper subset T for which x not in T implies x<T or x>T or x incomparable with every element of T.
+A046905 Posets with n points with property that there is no nonsingelton proper subset T for which x not in T implies x<T or x>T or x incomparable with every element of T.
+A046906 Number of connected irreducible posets with n labeled points.
+A046907 Number of isomorphism classes of irreducible posets with n labeled points, depends A000112
+A046909 Number of isomorphism classes of connected irreducible quasiorders with n labeled points.
+A046910 Number of connected irreducible quasiorders with n labeled points.
+A046911 Number of isomorphism classes of irreducible quasiorders with n labeled points.

@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098335 	Expansion of 1/sqrt(1-4x+8x^2).
+ * A098335 Expansion of 1/sqrt(1-4x+8x^2).
  * @author Georg Fischer
  */
 public class A098335 extends HolonomicRecurrence {

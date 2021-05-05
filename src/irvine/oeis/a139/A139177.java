@@ -3,13 +3,13 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139173 a(n) = n!/3 - 1.
+ * A139177 a(n) = (n! - 7)/7.
  * @author Georg Fischer
  */
-public class A139173 extends A139172 {
+public class A139177 extends A139172 {
 
   /** Construct the sequence. */
-  public A139173() {
-    super(3, 1);
+  public A139177() {
+    super(7, 719);
   }
 }

@@ -3,13 +3,13 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139173 a(n) = n!/3 - 1.
+ * A139150 Natural numbers of the form (n!+3)/3.
  * @author Georg Fischer
  */
-public class A139173 extends A139172 {
+public class A139150 extends A139149 {
 
   /** Construct the sequence. */
-  public A139173() {
-    super(3, 1);
+  public A139150() {
+    super(3, 3);
   }
 }

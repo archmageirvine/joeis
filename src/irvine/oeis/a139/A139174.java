@@ -3,13 +3,13 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139173 a(n) = n!/3 - 1.
+ * A139174 a(n) = (n!-4)/4.
  * @author Georg Fischer
  */
-public class A139173 extends A139172 {
+public class A139174 extends A139172 {
 
   /** Construct the sequence. */
-  public A139173() {
-    super(3, 1);
+  public A139174() {
+    super(4, 5);
   }
 }

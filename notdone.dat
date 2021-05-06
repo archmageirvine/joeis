@@ -1627,3 +1627,4 @@ A046907 Number of isomorphism classes of irreducible posets with n labeled point
 A046909 Number of isomorphism classes of connected irreducible quasiorders with n labeled points.
 A046910 Number of connected irreducible quasiorders with n labeled points.
 A046911 Number of isomorphism classes of irreducible quasiorders with n labeled points.
+A046943 Continued fraction for Fransen-Robinson constant Integral_{x>=0} 1/Gamma(x).

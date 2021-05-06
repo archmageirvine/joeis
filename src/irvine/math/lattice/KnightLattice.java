@@ -17,17 +17,4 @@ class KnightLattice extends SquareLattice {
   public long neighbour(final long point, final int neighbourNumber) {
     return point + DELTAS[neighbourNumber];
   }
-
 }
-
-/*
-      polyomino.trySquare(k, 2, 1, list, h, hc);
-      polyomino.trySquare(k, -2, 1, list, h, hc);
-      polyomino.trySquare(k, 2, -1, list, h, hc);
-      polyomino.trySquare(k, -2, -1, list, h, hc);
-      polyomino.trySquare(k, 1, 2, list, h, hc);
-      polyomino.trySquare(k, 1, -2, list, h, hc);
-      polyomino.trySquare(k, -1, 2, list, h, hc);
-      polyomino.trySquare(k, -1, -2, list, h, hc);
-
- */

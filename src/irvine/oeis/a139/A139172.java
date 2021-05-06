@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A139149 Natural numbers of the form (n!-2)/2.
+ * A139172 Natural numbers of the form (n!-2)/2.
  * @author Georg Fischer
  */
 public class A139172 extends HolonomicRecurrence {

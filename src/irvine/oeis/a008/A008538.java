@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A008538 Numbers that contain the letter `s'.
+ * A008538 Numbers that contain the letter 's'.
  * @author Sean A. Irvine
  */
 public class A008538 implements Sequence {

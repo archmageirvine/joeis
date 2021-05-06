@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A124621 Numbers n such that 5^n+4 is prime.
+ * A124621 Numbers k such that 5^k + 4 is prime.
  * @author Georg Fischer
  */
 public class A124621 extends PrimePositionSubsequence {

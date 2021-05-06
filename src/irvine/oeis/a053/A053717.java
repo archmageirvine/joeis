@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053717 n^7 + n^6 + n^5 + n^4 + n^3 + n^2 + n + 1 = (n^8-1)/(n-1).
+ * A053717 a(n) = n^7 + n^6 + n^5 + n^4 + n^3 + n^2 + n + 1.
  * @author Sean A. Irvine
  */
 public class A053717 extends LinearRecurrence {

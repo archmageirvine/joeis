@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A046942.
+ * A046942 Numbers n such that n and prime(n) are both palindromes.
  * @author Sean A. Irvine
  */
 public class A046942 extends A000040 {

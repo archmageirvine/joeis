@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039739 a(n)=2q-p(n), where q is the prime &lt; p(n) for which (p(n) mod q) is maximal.
+ * A039739 a(n)=2*q-prime(n), where q is the prime &lt; p(n) for which (prime(n) mod q) is maximal.
  * @author Sean A. Irvine
  */
 public class A039739 implements Sequence {

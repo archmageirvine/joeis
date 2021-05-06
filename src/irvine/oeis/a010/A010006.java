@@ -5,7 +5,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A010006 Coordination sequence for C_3 lattice: a(n)=16*n^2+2 (n&gt;0), a(0)=1.
+ * A010006 Coordination sequence for C_3 lattice: a(n) = 16*n^2 + 2 (n&gt;0), a(0)=1.
  * @author Georg Fischer
  */
 public class A010006 extends LatticeCoordinationSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A046941.
+ * A046941 Palindromic primes whose indices n are also palindromes.
  * @author Sean A. Irvine
  */
 public class A046941 extends A000040 {

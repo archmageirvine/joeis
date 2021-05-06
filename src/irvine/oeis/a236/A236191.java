@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236191 (-1)^floor( (n-1) / 3 ) * F(n), where F = Fibonacci.
+ * A236191 a(n) = (-1)^floor( (n-1) / 3 ) * F(n), where F = Fibonacci.
  * @author Sean A. Irvine
  */
 public class A236191 extends LinearRecurrence {

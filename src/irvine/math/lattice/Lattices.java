@@ -49,6 +49,8 @@ public final class Lattices {
   public static final Lattice BCC = new BccLattice();
   /** The hydrogen peroxide lattice. */
   public static final Lattice HYDROGEN_PEROXIDE = new HydrogenPeroxideLattice();
+  /** The hypertriangular lattice. */
+  public static final Lattice HYPERTRIANGULAR = new HypertriangularLattice();
   /** Lonsdaleite. */
   public static final Lattice LONSDALEITE = new Lonsdaleite();
 

@@ -4,20 +4,15 @@ package irvine.math.lattice;
  * The hydrogen peroxide lattice.
  * @author Sean A. Irvine
  */
-class HydrogenPeroxideLattice extends CubicLattice {
-
-  // Each point is adjacent to three others, but exactly which three others
-  // depends on the "type" (A to H) of the current point.  We can determine
-  // the type by looking at the point modulo 4.   The following table is a
-  // quick way of doing this (only the non-null cases occur).
+class HypertriangularLattice extends CubicLattice {
 
   private static final long[][] DELTAS = {
-    {1 + Y1, -1 + Z1, -Y1 - Z1}, // 00000 = 0 = "A"
+    {-1 - Y1 - 2 * Z1, 1 - 2 * Y1 - Z1, 1 + 2 * Y1 - Z1, -2 + Y1 + Z1, 2 + Y1 + Z1, -1 - Y1 + 2 * Z1}, // 00000 = 0 = "A"
     null, // 1
     null, // 2
     null, // 3
     null, // 4
-    {-1 - Y1, 1 + Z1, Y1 - Z1}, // 000101 = 5 = "B"
+    {1 + Y1 - 2 * Z1, -1 - 2 * Y1 - Z1, -1 + 2 * Y1 - Z1, -2 - Y1 + Z1, 2 - Y1 + Z1, 1 + Y1 + 2 * Z1}, // 000101 = 5 = "B"
     null, // 6
     null, // 7
     null, // 8
@@ -31,10 +26,10 @@ class HydrogenPeroxideLattice extends CubicLattice {
     null, // 16
     null, // 17
     null, // 18
-    {1 - Z1, -1 + Y1, -Y1 + Z1}, // 010011 = 19 = "D"
+    {1 - Y1 - 2 * Z1, -2 + Y1 - Z1, 2 + Y1 - Z1, -1 - 2 * Y1 + Z1, -1 + 2 * Y1 + Z1, 1 - Y1 + 2 * Z1}, // 010011 = 19 = "D"
     null, // 20
     null, // 21
-    {-1 - Z1, 1 - Y1, Y1 + Z1}, // 010110 = 22 = "C"
+    {-1 + Y1 - 2 * Z1, -2 - Y1 - Z1, 2 - Y1 - Z1, 1 - 2 * Y1 + Z1, 1 + 2 * Y1 + Z1, -1 + Y1 + 2 * Z1}, // 010110 = 22 = "C"
     null, // 23
     null, // 24
     null, // 25
@@ -54,12 +49,12 @@ class HydrogenPeroxideLattice extends CubicLattice {
     null, // 39
     null, // 40
     null, // 41
-    {-Y1 - Z1, -1 + Z1, 1 + Y1}, // 101010 = 42 = "G"
+    {-1 - Y1 - 2 * Z1, 1 - 2 * Y1 - Z1, 1 + 2 * Y1 - Z1, -2 + Y1 + Z1, 2 + Y1 + Z1, -1 - Y1 + 2 * Z1}, // 101010 = 42 = "G"
     null, // 43
     null, // 44
     null, // 45
     null, // 46
-    {Y1 - Z1, 1 + Z1, -1 - Y1}, // 101111 = 47 = "H"
+    {1 + Y1 - 2 * Z1, -1 - 2 * Y1 - Z1, -1 + 2 * Y1 - Z1, -2 - Y1 + Z1, 2 - Y1 + Z1, 1 + Y1 + 2 * Z1}, // 101111 = 47 = "H"
     null, // 48
     null, // 49
     null, // 50
@@ -69,15 +64,15 @@ class HydrogenPeroxideLattice extends CubicLattice {
     null, // 54
     null, // 55
     null, // 56
-    {-Y1 + Z1, -1 + Y1, 1 - Z1}, // 111001 = 58 = "F"
+    {1 - Y1 - 2 * Z1, -2 + Y1 - Z1, 2 + Y1 - Z1, -1 - 2 * Y1 + Z1, -1 + 2 * Y1 + Z1, 1 - Y1 + 2 * Z1}, // 111001 = 58 = "F"
     null, // 58
     null, // 59
-    {Y1 + Z1, 1 - Y1, -1 - Z1}, // 111100 = 60 = "E"
+    {-1 + Y1 - 2 * Z1, -2 - Y1 - Z1, 2 - Y1 - Z1, 1 - 2 * Y1 + Z1, 1 + 2 * Y1 + Z1, -1 + Y1 + 2 * Z1}, // 111100 = 60 = "E"
   };
 
   @Override
   public int neighbourCount(final long point) {
-    return 3;
+    return 6;
   }
 
   @Override

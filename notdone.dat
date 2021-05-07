@@ -1575,18 +1575,6 @@ A040175 a(n) = n! times probability that an ordered pair of elements of S_n chos
 A042944 Curvatures in diagram constructed by inscribing 2 circles of curvature 2 inside circle of curvature -1, continuing indefinitely to inscribe circles wherever possible
 A042945 Numbers congruent to 2,3,6,11 mod 12 missing from A042944 (conjectured to be finite).
 A042946 Frequency of occurrence of numbers appearing in A042944.
-A042951 The sequence e when b=[ 0,1,1,1,1,.. ]
-A042952 The sequence d when b=[ 1,0,1,1,1,.. ].
-A042953 The sequence e when b=[ 1,0,1,1,1,.. ]
-A042954 The sequence d when b=[ 1,1,0,1,1,.. ]
-A042955 The sequence e when b=[ 1,1,0,1,1,.. ]
-A042956 The sequence d when b=[ 1,1,1,0,1,1,..]
-A042957	The sequence e when b=[ 1,1,1,0,1,1,.. ].
-A042958 The sequence d when b=[ 1,1,1,1,0,1,1,1,.. ]
-A042959 The sequence e when b=[ 1,1,1,1,0,1,1,1,.. ].
-A042960 The sequence d when b is obtained by reversing the parity of Euler's partition function A000041.
-A042961 The sequence e when b is obtained by reversing the parity of Euler's partition function A000041.
-A042962 The sequence e when b=[ 1,0,1,0,1,0,1,0,... ].
 A043330 Expansion of Molien series for relative invariants of 8-dimensional complex Clifford group., insufficient detail
 A045470 1 / min{1/n - 1/a - 1/b > 0}, where a and b are integers, unclear
 A045474 Normalized extreme values for "3x+1" trees of depth n.

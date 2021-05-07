@@ -1,5 +1,5 @@
 package irvine.oeis.a041;
-// manually
+// manually 2021-05-07
 
 import irvine.math.z.Z;
 import irvine.oeis.EulerTransform;
@@ -10,7 +10,6 @@ import irvine.oeis.EulerTransform;
  */
 public class A041004 extends EulerTransform {
 
-  private boolean mDebug = false;
   protected Z mPrev;
   private boolean mFirst = true;
   
@@ -33,9 +32,6 @@ public class A041004 extends EulerTransform {
     } else {
       final Z et = super.next();
       result = mPrev.add(et).and(Z.ONE); // (v[n-1] + EULER(v[2..n])[n-1])% 2
-      if (mDebug) {
-        System.out.println(" r=" + result);
-      }
       mPrev = result;
     } 
     return result;
@@ -68,40 +64,4 @@ public class A041004 extends EulerTransform {
     }
     return Z.ZERO;
   }
-
-  /**
-   * Test output
-   */
-  protected void dump(final Z et, final Z result) {
-      if (mDebug) {
-        System.out.print("# " + mN + " e=" + et + " /c=");
-        for (int i = 1; i < mCs.size(); ++i) {
-          System.out.print((i == 1 ? "[" : ",") + mCs.get(i));
-        }
-        System.out.print("] v=");
-        for (int i = 1; i < mAs.size(); ++i) {
-          System.out.print((i == 1 ? "[" : ",") + mAs.get(i));
-        }
-        System.out.println("] r=" + result);
-      }
-/*
-    System.out.println("    ---- mN=" + mN);
-    System.out.print("    mAs:");
-    for (int i = 1; i < mAs.size(); ++i) {
-      System.out.print(" " + mAs.get(i));
-    }
-    System.out.println();
-    System.out.print("    mBs:");
-    for (int i = 1; i < mBs.size(); ++i) {
-      System.out.print(" " + mBs.get(i));
-    }
-    System.out.println();
-    System.out.print("    mCs:");
-    for (int i = 1; i < mCs.size(); ++i) {
-      System.out.print(" " + mCs.get(i));
-    }
-    System.out.println();
-*/
-  } // dump
-
 }

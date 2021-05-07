@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A344039 implements Sequence {
 
   private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(Lattices.HYPERTRIANGULAR));
-  private final long mC = Lattices.HYPERTRIANGULAR.neighbour(Lattices.HYDROGEN_PEROXIDE.origin(), 0);
+  private final long mC = Lattices.HYPERTRIANGULAR.neighbour(Lattices.HYPERTRIANGULAR.origin(), 0);
   private int mN = -1;
 
   @Override

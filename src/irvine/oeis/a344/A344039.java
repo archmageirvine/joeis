@@ -1,0 +1,23 @@
+package irvine.oeis.a344;
+
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.NonadjacentWalker;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A344039.
+ * @author Sean A. Irvine
+ */
+public class A344039 implements Sequence {
+
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(Lattices.HYPERTRIANGULAR));
+  private final long mC = Lattices.HYPERTRIANGULAR.neighbour(Lattices.HYDROGEN_PEROXIDE.origin(), 0);
+  private int mN = -1;
+
+  @Override
+  public Z next() {
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 6, 7, Lattices.HYPERTRIANGULAR.origin(), mC));
+  }
+}

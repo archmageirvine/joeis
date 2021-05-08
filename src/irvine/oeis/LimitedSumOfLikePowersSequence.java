@@ -115,7 +115,7 @@ public class LimitedSumOfLikePowersSequence implements Sequence {
 
   /**
    * For testing.
-   * @param args power, terms, min ways
+   * @param args power, terms, min ways, exact
    */
   public static void main(final String[] args) {
     final Sequence seq = new LimitedSumOfLikePowersSequence(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]), args.length > 3, false);

@@ -81,4 +81,13 @@ class HypertriangularLattice extends CubicLattice {
     final long key = (point & 0b11) + ((point >> (BITS_PER_COORDINATE - 2)) & 0b1100) + ((point >> (2 * BITS_PER_COORDINATE - 4)) & 0b110000);
     return point + DELTAS[(int) key][neighbourNumber];
   }
+
+  @Override
+  public long distanceBound(final long point) {
+    long d = 0;
+    for (int k = 0; k < dimension(); ++k) {
+      d = Math.max(d, Math.abs(ordinate(point, k)));
+    }
+    return d / 2;
+  }
 }

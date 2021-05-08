@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a024.A024898;
 
 /**
- * A046953.
+ * A046953 Numbers k such that 6*k - 1 is composite.
  * @author Sean A. Irvine
  */
 public class A046953 extends ComplementSequence {

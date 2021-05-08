@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180486 Numbers of the form ceiling(A179896(j)/A018252(j)) where A179896(j) mod A018252(j) <> 0.
+ * A180486 Numbers of the form ceiling(A179896(j)/A018252(j)) where A179896(j) mod A018252(j) &lt;&gt; 0.
  * @author Georg Fischer
  */
 public class A180486 extends HolonomicRecurrence {

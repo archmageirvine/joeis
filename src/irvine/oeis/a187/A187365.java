@@ -5,7 +5,7 @@ package irvine.oeis.a187;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A187365 Trisection of A000984 (central binomial coefficients): binomial(2(3n+2), 3n+2)/3!, n>=0.
+ * A187365 Trisection of A000984 (central binomial coefficients): binomial(2(3n+2),3n+2)/3!, n&gt;=0.
  * @author Georg Fischer
  */
 public class A187365 extends HolonomicRecurrence {

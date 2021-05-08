@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a004.A004011;
 
 /**
- * A046949.
+ * A046949 Sizes of successive balls in D_4 lattice.
  * @author Sean A. Irvine
  */
 public class A046949 extends PartialSumSequence {

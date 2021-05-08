@@ -5,7 +5,7 @@ package irvine.oeis.a259;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A259613 a(n) = binomial(6*n, 2*n)/3, n>0, a(0)=1.
+ * A259613 a(n) = binomial(6*n,2*n)/3, n&gt;0, a(0)=1.
  * @author Georg Fischer
  */
 public class A259613 extends HolonomicRecurrence {

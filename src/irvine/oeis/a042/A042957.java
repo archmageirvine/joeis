@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A042957 The sequence e when b=[ 1, 1, 1, 0, 1, 1,... ].
+ * A042957 The sequence e when b=[ 1,1,1,0,1,1,... ].
  * @author Georg Fischer
  */
 public class A042957 extends A042953 {

@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107422 a(n) = binomial(n+7, 7) * binomial(n+10, 10).
+ * A107422 a(n) = binomial(n+7,7) * binomial(n+10,10).
  * @author Georg Fischer
  */
 public class A107422 extends HolonomicRecurrence {

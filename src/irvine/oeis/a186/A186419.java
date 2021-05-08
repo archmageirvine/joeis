@@ -5,7 +5,7 @@ package irvine.oeis.a186;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A186419 Binomial(2n,n)^4/(n+1)
+ * A186419 Binomial(2n,n)^4/(n+1).
  * @author Georg Fischer
  */
 public class A186419 extends HolonomicRecurrence {

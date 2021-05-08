@@ -5,7 +5,7 @@ package irvine.oeis.a286;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A286725 Third column of triangle A286724: Lah[2, 1](n+2, 2), n >= 0.
+ * A286725 Third column of triangle A286724: Lah[2,1](n+2, 2), n &gt;= 0.
  * @author Georg Fischer
  */
 public class A286725 extends HolonomicRecurrence {

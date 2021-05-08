@@ -5,7 +5,7 @@ package irvine.oeis.a157;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A157983 a(n)=3!*n!/(8!*19!)
+ * A157983 a(n)=3!*n!/(8!*19!).
  * @author Georg Fischer
  */
 public class A157983 extends HolonomicRecurrence {

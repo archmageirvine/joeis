@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046945.
+ * A046945 Number of self-avoiding walks of length n on hypertriangular lattice.
  * @author Sean A. Irvine
  */
 public class A046945 implements Sequence {

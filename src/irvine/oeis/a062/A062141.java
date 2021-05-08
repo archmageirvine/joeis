@@ -5,7 +5,7 @@ package irvine.oeis.a062;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A062141 Third column sequence of coefficient triangle A062137 of generalized Laguerre polynomials n!*L(n, 3,x).
+ * A062141 Third column sequence of coefficient triangle A062137 of generalized Laguerre polynomials n!*L(n,3,x).
  * @author Georg Fischer
  */
 public class A062141 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014980 Start with 5. Multiply the two numbers closest to n/2 to get the next number.
+ * A014980 a(n+1) = floor(a(n)/2) * ceiling(a(n)/2), a(0) = 5.
  * @author Sean A. Irvine
  */
 public class A014980 implements Sequence {

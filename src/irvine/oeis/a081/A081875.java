@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a088.A088218;
 
 /**
- * A081875 Sum(d|n, phi(n/d) C(2*d,d) /2).
+ * A081875 a(n) = Sum_{d|n} phi(n/d)*C(2*d,d)/2.
  * @author Georg Fischer
  */
 public class A081875 extends DirichletConvolutionSequence {

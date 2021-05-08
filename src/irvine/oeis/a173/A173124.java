@@ -5,7 +5,7 @@ package irvine.oeis.a173;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A173124 a(n) = binomial(n+10, 10)*6^n.
+ * A173124 a(n) = binomial(n+10,10)*6^n.
  * @author Georg Fischer
  */
 public class A173124 extends HolonomicRecurrence {

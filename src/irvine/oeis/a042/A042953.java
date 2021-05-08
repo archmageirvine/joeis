@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransform;
 import irvine.oeis.Sequence;
 
 /**
- * A042953 The sequence e when b=[ 1, 0, 1, 1, 1,... ].
+ * A042953 The sequence e when b=[ 1,0,1,1,1,... ].
  * @author Georg Fischer
  */
 public class A042953 extends EulerTransform {

@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a024.A024899;
 
 /**
- * A046954.
+ * A046954 Numbers k such that 6*k + 1 is nonprime.
  * @author Sean A. Irvine
  */
 public class A046954 extends ComplementSequence {

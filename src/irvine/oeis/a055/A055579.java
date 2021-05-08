@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055579 a(n) = binomial(12*n-1, 3*n-1)/((6*n-1)*(12*n-1)).
+ * A055579 a(n) = binomial(12*n-1,3*n-1)/((6*n-1)*(12*n-1)).
  * @author Georg Fischer
  */
 public class A055579 extends HolonomicRecurrence {

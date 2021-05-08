@@ -5,7 +5,7 @@ package irvine.oeis.a158;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A158111 E.g.f.: sm^-1(x) = Sum_{n>=0} a(n)*x^(3n+1)/(3n+1)!; a(n) = coefficient of x^(3n+1)/(3n+1)! in the Maclaurin expansion of the inverse of the Dixon elliptic function sm(x, 0).
+ * A158111 E.g.f.: sm^-1(x) = Sum_{n&gt;=0} a(n)*x^(3n+1)/(3n+1)!; a(n) = coefficient of x^(3n+1)/(3n+1)! in the Maclaurin expansion of the inverse of the Dixon elliptic function sm(x,0).
  * @author Georg Fischer
  */
 public class A158111 extends HolonomicRecurrence {

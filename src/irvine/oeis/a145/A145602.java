@@ -5,7 +5,7 @@ package irvine.oeis.a145;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A145602 a(n) is the number of walks from (0, 0) to (0, 3) that remain in the upper half-plane y >= 0 using 2*n +1 unit steps either up (U), down (D), left (L) or right (R).
+ * A145602 a(n) is the number of walks from (0,0) to (0,3) that remain in the upper half-plane y &gt;= 0 using 2*n +1 unit steps either up (U), down (D), left (L) or right (R).
  * @author Georg Fischer
  */
 public class A145602 extends HolonomicRecurrence {

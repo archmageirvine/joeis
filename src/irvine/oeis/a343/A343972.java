@@ -3,7 +3,7 @@ package irvine.oeis.a343;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A343972.
+ * A343972 Numbers that are the sum of four positive cubes in exactly four ways.
  * @author Sean A. Irvine
  */
 public class A343972 extends LimitedSumOfLikePowersSequence {

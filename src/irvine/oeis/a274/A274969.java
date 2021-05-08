@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A274969 Number of walks in the first quadrant starting and ending at (0, 0) consisting of 3n steps taken from {E=(1, 0), D=(-1, 1), S=(0, -1)}, no S step occurring before the final E step.
+ * A274969 Number of walks in the first quadrant starting and ending at (0,0) consisting of 3n steps taken from {E=(1, 0), D=(-1, 1), S=(0, -1)}, no S step occurring before the final E step.
  * @author Georg Fischer
  */
 public class A274969 extends HolonomicRecurrence {

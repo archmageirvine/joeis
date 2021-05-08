@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046946.
+ * A046946 Sin(n) decreases monotonically to 0.
  * @author Sean A. Irvine
  */
 public class A046946 implements Sequence {

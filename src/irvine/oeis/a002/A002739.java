@@ -4,7 +4,7 @@ package irvine.oeis.a002;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A002739 ((2*n-1)! /(2*n!*(n-2)!))*((n^3-3*n^2+2*n+2)/(n^2-1)).
+ * A002739 a(n) =  ((2*n-1)! /(2*n!*(n-2)!))*((n^3-3*n^2+2*n+2)/(n^2-1)).
  * @author Georg Fischer
  */
 public class A002739 extends HolonomicRecurrence {

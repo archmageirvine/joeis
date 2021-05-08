@@ -5,7 +5,7 @@ package irvine.oeis.a335;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A335857 a(n) is the determinant of the n X n Hankel matrix A with A(i,j) = A000108(i+j+6) for 0<=i,j<=n-1.
+ * A335857 a(n) is the determinant of the n X n Hankel matrix A with A(i,j) = A000108(i+j+6) for 0&lt;=i,j&lt;=n-1.
  * @author Georg Fischer
  */
 public class A335857 extends HolonomicRecurrence {

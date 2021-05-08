@@ -5,7 +5,7 @@ import irvine.oeis.PositionSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A042952 The sequence d when b=[ 1, 0, 1, 1, 1,... ].
+ * A042952 The sequence d when b=[ 1,0,1,1,1,... ].
  * @author Georg Fischer
  */
 public class A042952 extends PositionSequence {

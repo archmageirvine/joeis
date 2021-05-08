@@ -5,7 +5,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091549 Second column (k=3) sequence of array A078740 ((3, 2)-Stirling2) divided by 6.
+ * A091549 Second column (k=3) sequence of array A078740 ((3,2)-Stirling2) divided by 6.
  * @author Georg Fischer
  */
 public class A091549 extends HolonomicRecurrence {

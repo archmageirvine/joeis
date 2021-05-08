@@ -5,7 +5,7 @@ package irvine.oeis.a214;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A214624 Braid numbers B((2)^n->(2)^n).
+ * A214624 Braid numbers B((2)^n-&gt;(2)^n).
  * @author Georg Fischer
  */
 public class A214624 extends HolonomicRecurrence {

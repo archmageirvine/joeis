@@ -5,7 +5,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113335 Binomial(n+4, 5)*3^5.
+ * A113335 Binomial(n+4,5)*3^5.
  * @author Georg Fischer
  */
 public class A113335 extends HolonomicRecurrence {

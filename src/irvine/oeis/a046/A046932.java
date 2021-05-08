@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046932.
+ * A046932 a(n) = period of x^n + x + 1 over GF(2), i.e., the smallest integer m&gt;0 such that x^n + x + 1 divides x^m + 1 over GF(2).
  * @author Sean A. Irvine
  */
 public class A046932 implements Sequence {

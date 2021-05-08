@@ -5,7 +5,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111597 Lah numbers: n!*binomial(n-1, 6)/7!.
+ * A111597 Lah numbers: n!*binomial(n-1,6)/7!.
  * @author Georg Fischer
  */
 public class A111597 extends HolonomicRecurrence {

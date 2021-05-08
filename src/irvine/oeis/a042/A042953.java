@@ -32,7 +32,7 @@ public class A042953 extends EulerTransform {
    * This sequence represents the binary vector <code>v</code> in the PARI
    * that is finally Euler transformed and prefixed with 1.
    */
-  public class BinarySequence extends EulerTransform {
+  private class BinarySequence extends EulerTransform {
     protected Z mPrev;
     private int mN;
     private BinarySequence() {

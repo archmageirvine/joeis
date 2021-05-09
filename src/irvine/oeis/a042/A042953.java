@@ -16,7 +16,7 @@ public class A042953 extends EulerTransform {
   /**
    * This sequence represents the vector <code>b</code> in the OEIS definition.
    */
-  protected class SeqB53 implements Sequence {
+  protected static class SeqB53 implements Sequence {
     private int mN;
     public SeqB53() {
       mN = 0;
@@ -32,7 +32,7 @@ public class A042953 extends EulerTransform {
    * This sequence represents the binary vector <code>v</code> in the PARI
    * that is finally Euler transformed and prefixed with 1.
    */
-  private class BinarySequence extends EulerTransform {
+  private final class BinarySequence extends EulerTransform {
     protected Z mPrev;
     private int mN;
     private BinarySequence() {

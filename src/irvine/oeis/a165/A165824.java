@@ -19,7 +19,7 @@ public class A165824 extends A001222 {
   
   /**
    * Generic constructor with parameter
-   * @param base for bigomega(n)
+   * @param base the base
    */
   public A165824(final long base) {
     mBase = Z.valueOf(base);

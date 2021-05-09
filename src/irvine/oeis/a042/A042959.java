@@ -13,7 +13,7 @@ public class A042959 extends A042953 {
   /**
    * This sequence represents the vector <code>b</code> in the OEIS definition.
    */
-  protected class SeqB59 implements Sequence {
+  protected static class SeqB59 implements Sequence {
     private int mN;
     public SeqB59() {
       mN = 0;

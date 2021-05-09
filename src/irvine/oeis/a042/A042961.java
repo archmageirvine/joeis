@@ -14,8 +14,8 @@ public class A042961 extends A042953 {
   /**
    * This sequence represents the vector <code>b</code> in the OEIS definition.
    */
-  protected class SeqB61 implements Sequence {
-    private Sequence mSeq41;
+  protected static class SeqB61 implements Sequence {
+    private final Sequence mSeq41;
     public SeqB61() {
       mSeq41 = new A000041();
       mSeq41.next();

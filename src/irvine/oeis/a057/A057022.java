@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A057022 a(n) = floor((sum of divisors of n) / (number of divisors of n)), or floor(sigma_1(n)/sigma_0(n)).
- * (PARI) a(n) = sigma(n)\numdiv(n); 
+ * (PARI) <code>a(n) = sigma(n)\numdiv(n);</code>
  * @author Georg Fischer
  */
 public class A057022 implements Sequence {

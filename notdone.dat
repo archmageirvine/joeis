@@ -643,7 +643,6 @@ A006983 Number of simple perfect squared squares of order n up to symmetry
 A006984 Greatest minimal norm of sublattice of index n in hexagonal lattice
 A007002 Sum of degrees of irreducible representations of alternating group A_n
 A007006 Number of edges in graph of maximal intersecting families of sets, pos. related A001206
-A007007 Valence of graph of maximal intersecting families of sets
 A007034 Noncircumscribable simplicial polyhedra with n nodes
 A007037 Noninscribable simplicial polyhedra with n nodes
 A007038 Theta series of 20-dimensional lattice R_20 with det 1024 and minimal norm 4

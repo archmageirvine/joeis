@@ -8,7 +8,7 @@ import irvine.oeis.a100.A100484;
 
 
 /**
- * A059788 Largest prime &lt; 2*prime(n).
+ * A059788 a(n) = largest prime &lt; 2*prime(n).
  * Formula: <code>a(n) = A007917(A100484(n)).</code>
  * @author Georg Fischer
  */

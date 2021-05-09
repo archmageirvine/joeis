@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046685 Sum of cubes of divisors of n and sum of 4th powers of divisors of n are relatively prime.
+ * A046685 Numbers k such that the sum of cubes of divisors of k and the sum of 4th powers of divisors of k are relatively prime.
  * @author Sean A. Irvine
  */
 public class A046685 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046680 Number of divisors of n and sum of cubes of divisors of n are relatively prime.
+ * A046680 Numbers k such that the number of divisors of k and sum of cubes of divisors of k are relatively prime.
  * @author Sean A. Irvine
  */
 public class A046680 implements Sequence {

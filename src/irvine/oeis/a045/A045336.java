@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
 /**
- * A045336 Palindromic prime primes: palindromic terms from A019546.
+ * A045336 Palindromic terms from A019546.
  * @author Sean A. Irvine
  */
 public class A045336 extends A002385 {

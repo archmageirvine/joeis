@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120408 n^1*(n+1)^2*(n+2)^3*(n+3)^4*(n+4)^5/(1!*2!*3!*4!*5!).
+ * A120408 a(n) = n^1*(n+1)^2*(n+2)^3*(n+3)^4*(n+4)^5/(1!*2!*3!*4!*5!).
  * @author Georg Fischer
  */
 public class A120408 extends HolonomicRecurrence {

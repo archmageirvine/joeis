@@ -5,7 +5,7 @@ package irvine.oeis.a095;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A095166 Group the natural numbers so that the n-th group contains n(n+1)/2 numbers and obtain the group sum.
+ * A095166 Group the natural numbers &gt;= 1 so that the n-th group contains n(n+1)/2 numbers and obtain the group sum.
  * @author Georg Fischer
  */
 public class A095166 extends HolonomicRecurrence {

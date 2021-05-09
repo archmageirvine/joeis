@@ -27,9 +27,6 @@ class PrescaledSi extends CR {
     Z currentSum = currentTerm;
     int k = 0;
     while (currentTerm.abs().compareTo(Z.ONE) >= 0) {
-      if (Thread.interrupted() || sPleaseStop) {
-        throw new AbortedError();
-      }
       ++k;
       // currentTerm = currentTerm * x^2 / n
       currentTerm = scale(currentTerm.multiply(x2Appr), p);

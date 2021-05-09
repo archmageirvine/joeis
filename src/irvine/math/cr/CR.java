@@ -1145,4 +1145,19 @@ public abstract class CR extends Number implements Comparable<CR> {
     return ComputableReals.SINGLETON.csch(this);
   }
 
+  /**
+   * The Bessel <code>J0</code> function of this real number.
+   * @return <code>BesselJ0()</code>
+   */
+  public CR besselJ0() {
+    return new PrescaledBesselJ0(this);
+  }
+
+  /**
+   * The Bessel <code>Y0</code> function of this real number.
+   * @return <code>BesselY0()</code>
+   */
+  public CR besselY0() {
+    return new PrescaledBesselY0(this).add(this.divide(CR.TWO).log().add(GAMMA).multiply(this.besselJ0())).multiply(TWO).divide(PI);
+  }
 }

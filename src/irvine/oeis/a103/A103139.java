@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A103139.
+ * A103139 Woolbright sequence: the maximum number of kings on an n X n chessboard such that every single king is attacking a number of other kings that is smaller or equal to the number of empty spaces around it.
  * @author Sean A. Irvine
  */
 public class A103139 implements Sequence {
@@ -16,54 +16,24 @@ public class A103139 implements Sequence {
 
   private int mN = 0;
   private int mKings = 0;
-  private boolean[][] mWorkspace;
+  private long[] mMasks;
+  private int[] mNeighbourCount;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
-  private boolean check(final int x, final int y) {
-    int bias = 0;
-    if (mWorkspace[y][x]) {
-      final int n = mWorkspace.length;
-      for (int k = 0; k < DELTAX.length; ++k) {
-        final int nx = x + DELTAX[k];
-        final int ny = y + DELTAY[k];
-        if (nx >= 0 && nx < n && ny >= 0 && ny < n) {
-          if (mWorkspace[ny][nx]) {
-            ++bias;
-          } else {
-            --bias;
-          }
-        }
-      }
+  private boolean check(final int bit, final long pattern) {
+    if ((pattern & (1L << bit)) == 0) {
+      return true;
     }
-    return bias <= 0;
+    final long mask = mMasks[bit];
+    final int kings = Long.bitCount(pattern & mask);
+    return 2 * kings <= mNeighbourCount[bit];
   }
 
-  private static void printSolution(final boolean[][] board) {
-    for (final boolean[] row : board) {
-      for (final boolean t : row) {
-        System.out.print(t ? "#" : ".");
+  private boolean isSolution(final long pattern) {
+    for (int k = 0; k < mMasks.length; ++k) {
+      if (!check(k, pattern)) {
+        return false;
       }
-      System.out.println();
-    }
-  }
-
-  private boolean isSolution(long pattern) {
-    for (int y = 0; y < mWorkspace.length; ++y) {
-      for (int x = 0; x < mWorkspace.length; ++x) {
-        mWorkspace[y][x] = (pattern & 1) == 1;
-        pattern >>>= 1;
-      }
-    }
-    for (int y = 0; y < mWorkspace.length; ++y) {
-      for (int x = 0; x < mWorkspace.length; ++x) {
-        if (!check(x, y)) {
-          return false;
-        }
-      }
-    }
-    if (mVerbose) {
-      System.out.println("Accepted:");
-      printSolution(mWorkspace);
     }
     return true;
   }
@@ -73,30 +43,26 @@ public class A103139 implements Sequence {
     if (++mN > 8) {
       throw new UnsupportedOperationException();
     }
+
+    // For each square precompute which squares are adjacent in bit space,
+    // and the number of such squares.
+    mNeighbourCount = new int[mN * mN];
+    mMasks = new long[mN * mN];
+    for (int y = 0, j = 0; y < mN; ++y) {
+      for (int x = 0; x < mN; ++x, ++j) {
+        for (int k = 0; k < DELTAX.length; ++k) {
+          final int nx = x + DELTAX[k];
+          final int ny = y + DELTAY[k];
+          if (nx >= 0 && nx < mN && ny >= 0 && ny < mN) {
+            final int bit = ny * mN + nx;
+            mMasks[j] |= 1L << bit;
+          }
+        }
+        mNeighbourCount[j] = Long.bitCount(mMasks[j]);
+      }
+    }
+
     final long limit = 1L << (mN * mN);
-    mWorkspace = new boolean[mN][mN];
-
-//    // For each square which squares are adjacent
-//    final long[] masks = new long[mN * mN];
-//    for (int y = 0, k = 0; y < mN; ++y) {
-//      for (int x = 0; x < mN; ++x, ++k) {
-//        for (int k = 0; k < DELTAX.length; ++k) {
-//          final int nx = x + DELTAX[k];
-//          final int ny = y + DELTAY[k];
-//          if (nx >= 0 && nx < n && ny >= 0 && ny < n) {
-//            if (mWorkspace[ny][nx]) {
-//              ++bias;
-//            } else {
-//              --bias;
-//            }
-//          }
-//
-//
-//
-//      }
-
-
-
     while (true) {
       if (mVerbose) {
         StringUtils.message("Trying for " + mKings + " kings");

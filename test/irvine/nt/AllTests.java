@@ -14,7 +14,6 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTest(irvine.nt.cyclotomic.AllTests.suite());
     suite.addTest(irvine.nt.homeprime.AllTests.suite());
-    suite.addTest(irvine.nt.misc.AllTests.suite());
     return suite;
   }
 

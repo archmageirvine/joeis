@@ -61,4 +61,13 @@ public final class Lattices {
   /** Pyrochlore lattice (using 4-dimensional coordinates). */
   public static final Lattice PYROCHLORE = new PyrochloreLattice();
 
+  /**
+   * Construct a finite rectangular grid.
+   * @param x width
+   * @param y height
+   * @return grid
+   */
+  public static Lattice grid(final long x, final long y) {
+    return new Grid(x, y);
+  }
 }

@@ -3,7 +3,7 @@ package irvine.math.cr;
 import irvine.math.z.Z;
 
 /**
- * Sum needed for computation of Bessel J0 function.
+ * Sum needed for computation of Bessel <code>J0</code> function.
  * Series <code>sum((-)^k*((x/2)^2)^k/(k!)^2,k=0..infty)</code>.
  * @author Sean A. Irvine
  */

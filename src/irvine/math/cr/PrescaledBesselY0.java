@@ -4,8 +4,8 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * Sum needed for computation of Bessel Y0 function.
- * Note: this is not the complete computation of Bessel Y0 (see also <code>CR</code>).
+ * Sum needed for computation of Bessel <code>Y0</code> function.
+ * Note: this is not the complete computation of Bessel <code>Y0</code> (see also <code>CR</code>).
  * @author Sean A. Irvine
  */
 class PrescaledBesselY0 extends CR {
@@ -30,7 +30,6 @@ class PrescaledBesselY0 extends CR {
     Q harmonic = Q.ONE;
     long k = 1;
     while (currentTerm.abs().compareTo(Z.ONE) >= 0) {
-      //System.out.println("k=" + k + " " + CR.valueOf(new Q(currentSum, Z.ONE.shiftLeft(-opPrec))));
       ++k;
       harmonic = harmonic.add(new Q(1, k));
       currentTerm = scale(currentTerm.multiply(z), opPrec);

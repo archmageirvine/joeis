@@ -6,7 +6,9 @@ import java.util.TreeSet;
  * Coordination sequence for a lattice.
  * @author Sean A. Irvine
  */
-public class CoordinationSequence {
+public final class CoordinationSequence {
+
+  private CoordinationSequence() {}
 
   /**
    * Noddy for testing.

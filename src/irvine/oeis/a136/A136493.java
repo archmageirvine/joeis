@@ -14,10 +14,19 @@ import irvine.oeis.Sequence;
  */
 public class A136493 implements Sequence {
 
-  protected final int mBandWidth = 5;
+  private final int mBandWidth;
   private int mN = -1;
   private Polynomial<Z> mCharPoly = Polynomial.create(0);
   private int mM = 0;
+
+  protected A136493(final int bandWidth) {
+    mBandWidth = bandWidth;
+  }
+
+  /** Construct the sequence. */
+  public A136493() {
+    this(5);
+  }
 
   @Override
   public Z next() {

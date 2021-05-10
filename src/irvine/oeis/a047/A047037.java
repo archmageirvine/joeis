@@ -1,0 +1,17 @@
+package irvine.oeis.a047;
+
+import irvine.math.z.Z;
+
+/**
+ * A047037 T(n,n+2), array T as in A004730.
+ * @author Sean A. Irvine
+ */
+public class A047037 extends A047030 {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return get(++mN, mN + 2);
+  }
+}

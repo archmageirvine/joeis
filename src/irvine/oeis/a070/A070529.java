@@ -11,12 +11,11 @@ import irvine.oeis.Sequence;
  */
 public class A070529 implements Sequence {
 
-  protected Z mK = Z.ONE;
+  protected Z mK = Z.ZERO;
   
   @Override
   public Z next() {
-    final Z result = Jaguar.factor(mK).sigma0();
     mK = mK.multiply(Z.TEN).add(Z.ONE);
-    return result;
+    return Z.ONE.equals(mK) ? Z.ONE : Jaguar.factor(mK).sigma0();
   }
 }

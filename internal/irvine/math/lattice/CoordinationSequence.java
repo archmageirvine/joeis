@@ -8,7 +8,7 @@ import java.util.TreeSet;
  */
 public final class CoordinationSequence {
 
-  private CoordinationSequence() {}
+  private CoordinationSequence() { }
 
   /**
    * Noddy for testing.

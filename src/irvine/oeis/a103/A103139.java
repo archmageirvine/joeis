@@ -11,11 +11,11 @@ import irvine.util.string.StringUtils;
  */
 public class A103139 implements Sequence {
 
-  private static final int[] DELTAX = {1, -1, 0, 0, 1, -1, 1, -1};
-  private static final int[] DELTAY = {0, 0, 1, -1, 1, -1, -1, 1};
+  private static final int[] DELTA_X = {1, -1, 0, 0, 1, -1, 1, -1};
+  private static final int[] DELTA_Y = {0, 0, 1, -1, 1, -1, -1, 1};
 
   private int mN = 0;
-  private int mKings = 0;
+  private int mKings = 1;
   private long[] mMasks;
   private int[] mNeighbourCount;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
@@ -50,9 +50,9 @@ public class A103139 implements Sequence {
     mMasks = new long[mN * mN];
     for (int y = 0, j = 0; y < mN; ++y) {
       for (int x = 0; x < mN; ++x, ++j) {
-        for (int k = 0; k < DELTAX.length; ++k) {
-          final int nx = x + DELTAX[k];
-          final int ny = y + DELTAY[k];
+        for (int k = 0; k < DELTA_X.length; ++k) {
+          final int nx = x + DELTA_X[k];
+          final int ny = y + DELTA_Y[k];
           if (nx >= 0 && nx < mN && ny >= 0 && ny < mN) {
             final int bit = ny * mN + nx;
             mMasks[j] |= 1L << bit;
@@ -63,13 +63,15 @@ public class A103139 implements Sequence {
     }
 
     final long limit = 1L << (mN * mN);
+    final long topRow = (1L << mN) - 1;
     while (true) {
       if (mVerbose) {
         StringUtils.message("Trying for " + mKings + " kings");
       }
       boolean found = false;
       for (long pattern = (1L << mKings) - 1; pattern <= limit; pattern = LongUtils.swizzle(pattern)) {
-        if (isSolution(pattern)) {
+        // It seems reasonable to assume WLOG that there must be at least one king on the top row
+        if ((pattern & topRow) != 0 && isSolution(pattern)) {
           found = true;
           break;
         }

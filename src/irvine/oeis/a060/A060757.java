@@ -3,13 +3,13 @@ package irvine.oeis.a060;
 // DO NOT EDIT here!
 
 /**
- * A060760 a(n) = 8^(n^2).
+ * A060757 a(n) = 4^(n^2).
  * @author Georg Fischer
  */
-public class A060760 extends A060722 {
+public class A060757 extends A060722 {
 
   /** Construct the sequence. */
-  public A060760() {
-    super(8);
+  public A060757() {
+    super(4);
   }
 }

@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181203 a(n)=0!*1!*2!*3!*4!*(5*n)!*10*n*(n-1) / ((n)!*(n+1)!*(n+2)!*(n+3)!*(n+4)!)
+ * A181203 a(n)=0!*1!*2!*3!*4!*(5*n)!*10*n*(n-1) / ((n)!*(n+1)!*(n+2)!*(n+3)!*(n+4)!).
  * @author Georg Fischer
  */
 public class A181203 extends HolonomicRecurrence {

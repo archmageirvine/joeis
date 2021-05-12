@@ -5,7 +5,7 @@ package irvine.oeis.a060;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A060706 For n >= 1 a(n) is the size of the conjugacy class in the symmetric group S_(4n) consisting of permutations whose cycle decomposition is a product of n disjoint 4-cycles.
+ * A060706 For n &gt;= 1 a(n) is the size of the conjugacy class in the symmetric group S_(4n) consisting of permutations whose cycle decomposition is a product of n disjoint 4-cycles.
  * @author Georg Fischer
  */
 public class A060706 extends HolonomicRecurrence {

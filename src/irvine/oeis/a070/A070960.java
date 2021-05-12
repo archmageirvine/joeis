@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070960 a(1) = 1; a(n) = n!*(3/2) for n>=2.
+ * A070960 a(1) = 1; a(n) = n!*(3/2) for n&gt;=2.
  * @author Georg Fischer
  */
 public class A070960 extends HolonomicRecurrence {

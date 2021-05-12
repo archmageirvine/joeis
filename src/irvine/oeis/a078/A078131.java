@@ -5,7 +5,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078131 Numbers which can be written as sum of cubes > 1.
+ * A078131 Numbers which can be written as sum of cubes &gt; 1.
  * @author Georg Fischer
  */
 public class A078131 extends HolonomicRecurrence {

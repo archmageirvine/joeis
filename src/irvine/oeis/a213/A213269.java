@@ -5,7 +5,7 @@ package irvine.oeis.a213;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A213269 The number of edges in the directed graph of the 2-opt landscape of the symmetric TSP
+ * A213269 The number of edges in the directed graph of the 2-opt landscape of the symmetric TSP.
  * @author Georg Fischer
  */
 public class A213269 extends HolonomicRecurrence {

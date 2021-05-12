@@ -5,7 +5,7 @@ package irvine.oeis.a205;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A205824 (3n)!/[3n*n!*(n+1)!]
+ * A205824 (3n)!/[3n*n!*(n+1)!].
  * @author Georg Fischer
  */
 public class A205824 extends HolonomicRecurrence {

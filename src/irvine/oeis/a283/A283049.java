@@ -5,7 +5,7 @@ package irvine.oeis.a283;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A283049 Numbers of configurations of A'Campo forests with co-dimension 1 and degree n>0.
+ * A283049 Numbers of configurations of A'Campo forests with co-dimension 1 and degree n&gt;0.
  * @author Georg Fischer
  */
 public class A283049 extends HolonomicRecurrence {

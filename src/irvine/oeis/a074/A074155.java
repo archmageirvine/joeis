@@ -5,7 +5,7 @@ package irvine.oeis.a074;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A074155 Group the natural numbers so that the product of members of a group is a multiple of the sum: (1),(2, 3, 4, 5, 6),(7, 8, 9),(10, 11, 12),(13, 14, 15),(16, 17, 18),(19, 20, 21),(22, 23, 24),.... This is the sequence of the ratio of product /sum.
+ * A074155 Group the natural numbers so that the product of members of a group is a multiple of the sum: (1),(2,3,4,5,6),(7,8,9),(10,11,12),(13,14,15),(16,17,18),(19,20,21),(22,23,24),.... This is the sequence of the ratio of product /sum.
  * @author Georg Fischer
  */
 public class A074155 extends HolonomicRecurrence {

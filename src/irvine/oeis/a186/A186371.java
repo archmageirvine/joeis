@@ -5,7 +5,7 @@ package irvine.oeis.a186;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A186371 Number of up-down runs in all permutations of {1, 2,...,n}.
+ * A186371 Number of up-down runs in all permutations of {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A186371 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097900 Number of runs of length 1 in all permutations of [n]. (The permutation 3574162 has two runs of length 1: 357/4/16/2.)
+ * A097900 Number of runs of length 1 in all permutations of [n]. (The permutation 3574162 has two runs of length 1: 357/4/16/2.).
  * @author Georg Fischer
  */
 public class A097900 extends HolonomicRecurrence {

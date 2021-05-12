@@ -5,7 +5,7 @@ package irvine.oeis.a082;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082971 Number of permutations of {1, 2,...,n} containing exactly 3 occurrences of the 132 pattern.
+ * A082971 Number of permutations of {1,2,...,n} containing exactly 3 occurrences of the 132 pattern.
  * @author Georg Fischer
  */
 public class A082971 extends HolonomicRecurrence {

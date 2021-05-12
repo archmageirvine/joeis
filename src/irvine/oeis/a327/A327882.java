@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327882 a(n) = n*(2*(n-1))! for n > 0, a(0) = 1.
+ * A327882 a(n) = n*(2*(n-1))! for n &gt; 0, a(0) = 1.
  * @author Georg Fischer
  */
 public class A327882 extends HolonomicRecurrence {

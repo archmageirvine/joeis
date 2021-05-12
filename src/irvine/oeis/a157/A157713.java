@@ -5,7 +5,7 @@ package irvine.oeis.a157;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A157713 a(n)=(2*n+1)!*(2*n-2)!/((n-1)!*(n!)^2*6) ,n=1, 2... .
+ * A157713 a(n)=(2*n+1)!*(2*n-2)!/((n-1)!*(n!)^2*6) ,n=1,2... .
  * @author Georg Fischer
  */
 public class A157713 extends HolonomicRecurrence {

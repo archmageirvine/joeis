@@ -5,7 +5,7 @@ package irvine.oeis.a298;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A298881 a(0) = 0; for n>0, a(n) = 6*n!.
+ * A298881 a(0) = 0; for n&gt;0, a(n) = 6*n!.
  * @author Georg Fischer
  */
 public class A298881 extends HolonomicRecurrence {

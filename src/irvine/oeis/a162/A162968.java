@@ -5,7 +5,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162968 Number of pairs of consecutive non-fixed points in all permutations of {1, 2,...,n}.
+ * A162968 Number of pairs of consecutive non-fixed points in all permutations of {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A162968 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a138;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A138772 Number of entries in the second cycles of all permutations of {1, 2,...,n}; each cycle is written with the smallest element first and cycles are arranged in increasing order of their first elements.
+ * A138772 Number of entries in the second cycles of all permutations of {1,2,...,n}; each cycle is written with the smallest element first and cycles are arranged in increasing order of their first elements.
  * @author Georg Fischer
  */
 public class A138772 extends HolonomicRecurrence {

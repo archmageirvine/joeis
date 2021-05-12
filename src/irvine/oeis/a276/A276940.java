@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276940 a(1) = 2; for n > 1, a(n) = (n-2)! * n^3.
+ * A276940 a(1) = 2; for n &gt; 1, a(n) = (n-2)! * n^3.
  * @author Georg Fischer
  */
 public class A276940 extends HolonomicRecurrence {

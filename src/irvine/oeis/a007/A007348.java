@@ -11,15 +11,31 @@ import irvine.oeis.Sequence;
  */
 public class A007348 implements Sequence {
 
-  private static final Z Z10 = Z.TEN.negate();
-  private Z mP = Z.TWO;
+  protected Z mParm;
+  protected Z mParmNeg;
+  
+  /** Construct the sequence */
+  public A007348() {
+    this(10);
+  }
+  
+  /**
+   * Generic constructor with parameter
+   * @param parm -parm is a primitive root
+   */
+  public A007348(final int parm) {
+    mParm = Z.valueOf(parm);
+    mParmNeg = mParm.negate();
+  } 
+
+  private Z mP = Z.ONE;
   private final Fast mPrime = new Fast();
 
   @Override
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (mP.gcd(Z.TEN).equals(Z.ONE) && ZUtils.testPrimitiveRoot(Z10, mP)) {
+      if (mP.gcd(mParm).equals(Z.ONE) && ZUtils.testPrimitiveRoot(mParmNeg, mP)) {
         return mP;
       }
     }

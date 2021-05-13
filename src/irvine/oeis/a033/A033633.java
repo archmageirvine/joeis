@@ -9,10 +9,23 @@ import irvine.oeis.a000.A000040;
  */
 public class A033633 extends A000040 {
 
-  private static final Z Z19 = Z.valueOf(19);
+  protected Z mParm;
+  
+  /** Construct the sequence */
+  public A033633() {
+    this(19);
+  }
+  
+  /**
+   * Generic constructor with parameter
+   * @param parm modulo parm
+   */
+  public A033633(final int parm) {
+    mParm = Z.valueOf(parm);
+  } 
 
   @Override
   public Z next() {
-    return super.next().mod(Z19);
+    return super.next().mod(mParm);
   }
 }

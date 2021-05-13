@@ -23,7 +23,7 @@ public class A060722 implements Sequence {
    * @param base number to be exponentiated
    */
   public A060722(final int base) {
-    mBase2 = base * base;
+    mBase2 = base * (long) base;
     mPrev = Z.ONE;
     mAccel = Z.valueOf(base);
   }

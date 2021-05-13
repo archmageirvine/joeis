@@ -27,7 +27,7 @@ public class A135292 implements Sequence {
    */
   public A135292(final int baseA, final int baseB) {
     mBaseA = baseA;
-    mBaseB2 = baseB * baseB;
+    mBaseB2 = baseB * (long) baseB;
     mPrevA = Z.ONE;
     mPrevB = Z.ONE;
     mAccelB = Z.valueOf(baseB);

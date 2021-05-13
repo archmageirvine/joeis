@@ -14,7 +14,7 @@ public class A047272 extends A002144 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final Z f = Fibonacci.fibonacci((p.subtract(1).divide(4).intValueExact()));
+      final Z f = Fibonacci.fibonacci(p.subtract(1).divide(4).intValueExact());
       if (f.mod(p).isZero()) {
         return p;
       }

@@ -11,7 +11,6 @@ public class A047210 implements Sequence {
 
   protected int mExpon; // exponent
   protected int mN;
-  protected Z mAccel;
 
   /** Construct the sequence */
   public A047210() {

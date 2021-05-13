@@ -29,7 +29,7 @@ public class A047265 extends MemoryFunction2<Long, Z> implements Sequence {
     final long q = m / 2;
     Z sum = Z.ZERO;
     for (long j = 0; j <= n; ++j) {
-      sum =sum.add(get(j, q).multiply(get(n - j, m - q)));
+      sum = sum.add(get(j, q).multiply(get(n - j, m - q)));
     }
     return sum;
   }

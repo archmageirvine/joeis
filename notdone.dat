@@ -1619,3 +1619,13 @@ A046958 Theta series of 14-dimensional integral laminated lattice LAMBDA14.2 wit
 A046997 Simple dependency on A001183.
 A047051 Prime alternating tangle types (of knots) with n crossings.
 A047052 Number of Abelian subgroups of Chevalley group A_n(2) (the group of nonsingular n X n matrices over GF(2)).
+A047626 Theta series of 14-dimensional integral laminated lattice LAMBDA14.3 with minimal norm 4
+A047627 Theta series of 14-dimensional integral laminated lattice LAMBDA14.4 with minimal norm 4.
+A047628 Theta series of 14-dimensional lattice Kappa_{14} with minimal norm 4.
+A047629 Theta series of 14-dimensional lattice KAPPA14.2 with minimal norm 4.
+A047631 Theta series of 14-dimensional lattice (SU(3,3) x C4).C2 with minimal norm 3.
+A047633 Theta series of 14-dimensional lattice C2 X S7 with minimal norm 4.
+A047634 Theta series of 14-dimensional lattice C2 X S8 with minimal norm 4.
+A047635 Theta series of 14-dimensional lattice M14,2 with minimal norm 7.
+A047636 Theta series of 14-dimensional lattice M14,3 with minimal norm 6.
+A047637 Theta series of 14-dimensional lattice M14,6 with minimal norm 6.

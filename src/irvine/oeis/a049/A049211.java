@@ -5,7 +5,7 @@ package irvine.oeis.a049;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A049211 a(n) = -Product_{k = 0..n} (9*k - 1); 9-factorial numbers.
+ * A049211 a(n) = Product_{k=1..n} (9*k - 1); 9-factorial numbers.
  * @author Georg Fischer
  */
 public class A049211 extends HolonomicRecurrence {

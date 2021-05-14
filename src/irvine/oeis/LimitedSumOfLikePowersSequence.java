@@ -62,7 +62,7 @@ public class LimitedSumOfLikePowersSequence implements Sequence {
    * @param terms number of terms in the sum
    * @param minWays minimum number of ways to make the sum
    */
-  protected LimitedSumOfLikePowersSequence(final int power, final int terms, final int minWays) {
+  public LimitedSumOfLikePowersSequence(final int power, final int terms, final int minWays) {
     this(power, terms, minWays, false, false);
   }
 

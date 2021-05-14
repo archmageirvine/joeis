@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086943 a(n) = k where R(k+7) = 3.
+ * A086943 Integers k such that R(k+7) = 3.
  * @author Georg Fischer
  */
 public class A086943 extends HolonomicRecurrence {

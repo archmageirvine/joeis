@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A099192 Numbers n such that the string n235711131719 is prime.
+ * A099192 Numbers k such that the string k235711131719 is prime.
  * @author Georg Fischer
  */
 public class A099192 implements Sequence {

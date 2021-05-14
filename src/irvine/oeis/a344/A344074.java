@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A344074 allocated for Sean A. Irvine.
+ * A344074 Decimal expansion of Bessel Y_0(1).
  * @author Sean A. Irvine
  */
 public class A344074 extends DecimalExpansionSequence {

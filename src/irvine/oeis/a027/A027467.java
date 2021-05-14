@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027467 Triangle whose (n,k)-th entry is binomial(n,k)*15^(n-k).
+ * A027467 Triangle whose (n,k)-th entry is 15^(n-k)*binomial(n,k).
  * @author Sean A. Irvine
  */
 public class A027467 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143454 Expansion of 1/(x^k*(1-x-3*x^(k+1))) for k=3.
+ * A143454 Expansion of 1/(x^k*(1 - x - 3*x^(k+1))) for k=3.
  * @author Georg Fischer
  */
 public class A143454 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A153746 Numbers n such that there are 8 digits in n^2 and for each factor f of 8 (1,2,4) the sum of digit groupings of size f is a square.
+ * A153746 Numbers k such that there are 8 digits in k^2 and for each factor f of 8 (1,2,4) the sum of digit groupings of size f is a square.
  * @author Georg Fischer
  */
 public class A153746 extends FiniteSequence {

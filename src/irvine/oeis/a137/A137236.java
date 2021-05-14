@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A137236 Numbers n such that 13^n + 4 is prime.
+ * A137236 Numbers k such that 13^k + 4 is prime.
  * @author Georg Fischer
  */
 public class A137236 extends PrimePositionSubsequence {

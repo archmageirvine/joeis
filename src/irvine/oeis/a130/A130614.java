@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000272;
 
 
 /**
- * A130614 Integers of the form p^(p-2), where p is prime.
+ * A130614 a(n) = p^(p-2), where p = prime(n).
  * Formula: <code>a(n) = A000272(A000040(n)).</code>
  * @author Georg Fischer
  */

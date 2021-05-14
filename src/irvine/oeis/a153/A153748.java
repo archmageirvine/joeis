@@ -5,7 +5,7 @@ package irvine.oeis.a153;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A153748 Numbers n such that there are 10 digits in n^2 and for each factor f of 10 (1, 2, 5) the sum of digit groupings of size f is a square.
+ * A153748 Numbers k such that there are 10 digits in k^2 and for each factor f of 10 (1, 2, 5) the sum of digit groupings of size f is a square.
  * @author Georg Fischer
  */
 public class A153748 extends FiniteSequence {

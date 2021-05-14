@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034924 Numbers n such that 47^n-46 is prime.
+ * A034924 Numbers k such that 47^k-46 is prime.
  * @author Sean A. Irvine
  */
 public class A034924 implements Sequence {

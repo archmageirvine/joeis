@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001754 Lah numbers: n!*C(n-1,2)/6.
+ * A001754 Lah numbers: n!*binomial(n-1,2)/6.
  * @author Sean A. Irvine
  */
 public class A001754 implements Sequence {

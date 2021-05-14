@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A344126.
+ * A344126 Coordination sequence for the hypertriangular lattice.
  * @author Sean A. Irvine
  */
 public class A344126 extends GeneratingFunctionSequence {

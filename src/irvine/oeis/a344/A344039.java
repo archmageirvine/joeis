@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A344039 allocated for Sean A. Irvine.
+ * A344039 Number of n-step self-avoiding walks on the hypertriangular lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A344039 implements Sequence {

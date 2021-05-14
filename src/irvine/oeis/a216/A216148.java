@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A216148 Primes of the form 2*n^n+1 = A216147(n).
+ * A216148 Primes of the form 2*k^k + 1 = A216147(k).
  *
  * @author Georg Fischer
  */

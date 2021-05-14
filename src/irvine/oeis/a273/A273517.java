@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A273517 Numbers n such that 2*14^n-1 is prime.
+ * A273517 Numbers k such that 2*14^k-1 is prime.
  * @author Georg Fischer
  */
 public class A273517 extends PowerFactorPrimeSequence {

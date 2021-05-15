@@ -14,6 +14,7 @@ import irvine.util.Pair;
 
 /**
  * Symmetric cycle indices <code>Z(S_n^{(m)})</code>.
+ * @author Sean A. Irvine
  */
 public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> {
 

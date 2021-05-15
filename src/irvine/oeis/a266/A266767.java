@@ -7,7 +7,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A266767 Growth series for affine Coxeter group (or affine Weyl group) D_(\d+)
+ * A266767 Growth series for affine Coxeter group (or affine Weyl group) D_12.
  *
  * @author Georg Fischer
  */

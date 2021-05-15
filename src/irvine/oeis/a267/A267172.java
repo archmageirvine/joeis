@@ -7,7 +7,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A267172 44
+ * A267172 Growth series for affine Coxeter group B_9.
  *
  * @author Georg Fischer
  */

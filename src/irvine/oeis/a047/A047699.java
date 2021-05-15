@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A047699.
+ * A047699 a(0) = 0; for n &gt;= 0, a(n+1) = a(n) + x where x is the smallest nonnegative number that is not equal to a(i) +- a(k) for any 0 &lt;= i &lt;= n, 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A047699 extends MemorySequence {

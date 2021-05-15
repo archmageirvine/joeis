@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A229226 The partition function G(n, 9).
+ * A229226 The partition function G(n,9).
  *
  * @author Georg Fischer
  */

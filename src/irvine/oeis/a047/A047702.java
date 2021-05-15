@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003072;
 import irvine.oeis.a003.A003325;
 
 /**
- * A047703.
+ * A047702 Numbers that are the sum of 3 but no fewer positive cubes.
  * @author Sean A. Irvine
  */
 public class A047702 extends SetDifferenceSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004481;
 
 /**
- * A047708.
+ * A047708 Diagonal of Sprague-Grundy function for Wyt Queens (Wythoff's game).
  * @author Sean A. Irvine
  */
 public class A047708 extends A004481 {

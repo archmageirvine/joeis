@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A229225 The partition function G(n, 8).
+ * A229225 The partition function G(n,8).
  *
  * @author Georg Fischer
  */

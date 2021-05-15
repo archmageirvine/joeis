@@ -7,7 +7,7 @@ import irvine.oeis.a025.A025395;
 import irvine.oeis.a338.A338667;
 
 /**
- * A047703.
+ * A047703 Numbers that are the sum of 4 but no fewer positive cubes.
  * @author Sean A. Irvine
  */
 public class A047703 extends SetDifferenceSequence {

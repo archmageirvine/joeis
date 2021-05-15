@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A047706.
+ * A047706 Second differences of A047699.
  * @author Sean A. Irvine
  */
 public class A047706 extends DifferenceSequence {

@@ -1632,3 +1632,7 @@ A047637 Theta series of 14-dimensional lattice M14,6 with minimal norm 6.
 A047684 Number of reduced contexts on n unlabeled objects
 A047696 Smallest positive number that can be written in n ways as a sum of two (not necessarily positive) cubes.
 A047697 Smallest positive number that can be written in n ways as a sum of two (not necessarily positive) coprime cubes
+A047709 Low-temperature series in u = exp(-4J/kT) for ferromagnetic susceptibility for the spin-1/2 Ising model on hexagonal lattice
+A047710 Low temperature series associated with square lattice, depends A002979
+A047711 High-temperature coefficients for b.c.c. lattice.
+A047712 High-temperature coefficients for f.c.c. lattice.

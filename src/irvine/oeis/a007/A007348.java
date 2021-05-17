@@ -21,7 +21,7 @@ public class A007348 implements Sequence {
   
   /**
    * Generic constructor with parameter
-   * @param parm -parm is a primitive root
+   * @param parm <code>-parm</code> is a primitive root
    */
   public A007348(final int parm) {
     mParm = Z.valueOf(parm);

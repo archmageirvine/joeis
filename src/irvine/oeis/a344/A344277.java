@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A344277 allocated for David Consiglio, Jr.
+ * A344277 Numbers that are the sum of three fourth powers in four or more ways.
  * @author Sean A. Irvine
  */
 public class A344277 extends LimitedSumOfLikePowersSequence {

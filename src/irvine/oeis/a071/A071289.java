@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A071289 If n mod 2 = 0 then n*(n^2+1) else (n-1/2)*(n^2+1).
+ * A071289 a(n) = n*(n^2 + 1) if n is even, otherwise (n - 1/2)*(n^2 + 1).
  * @author Sean A. Irvine
  */
 public class A071289 extends LinearRecurrence {

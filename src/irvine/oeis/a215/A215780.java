@@ -8,7 +8,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A215780 Primes of the form 2*n!!-1.
+ * A215780 Primes of the form 2*k!! - 1.
  * @author Georg Fischer
  */
 public class A215780 extends PrimeSubsequence {

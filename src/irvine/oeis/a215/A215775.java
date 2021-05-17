@@ -8,7 +8,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A215775 Numbers n such that 2*n!! + 1 is a prime.
+ * A215775 Numbers k such that 2*k!! + 1 is a prime.
  * @author Georg Fischer
  */
 public class A215775 extends PrimePositionSubsequence {

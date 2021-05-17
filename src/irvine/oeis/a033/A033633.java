@@ -18,7 +18,7 @@ public class A033633 extends A000040 {
   
   /**
    * Generic constructor with parameter
-   * @param parm modulo parm
+   * @param parm modulo parameter
    */
   public A033633(final int parm) {
     mParm = Z.valueOf(parm);

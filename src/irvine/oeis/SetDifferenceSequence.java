@@ -42,4 +42,18 @@ public class SetDifferenceSequence implements Sequence {
       }
     }
   }
+
+  /**
+   * Compute the sequence <code>a</code> minus all the other given sequences.
+   * @param a first sequence
+   * @param bs sequences to subtract
+   * @return set difference sequence
+   */
+  public static Sequence create(final Sequence a, final Sequence... bs) {
+    Sequence res = a;
+    for (final Sequence b : bs) {
+      res = new SetDifferenceSequence(res, b);
+    }
+    return res;
+  }
 }

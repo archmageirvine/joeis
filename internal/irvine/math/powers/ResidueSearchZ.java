@@ -20,6 +20,7 @@ final class ResidueSearchZ {
   private final Z mMin;
   private final Z[] mPowers;
   private int mOverflowReports = 0;
+  private final int mMinIndex;
 
   private ResidueSearchZ(final int terms, final int power, final int ways, final int max, final Z min) {
     if (ways > 126 || ways < 2 || terms < 1 || power < 1) {
@@ -29,6 +30,9 @@ final class ResidueSearchZ {
     mWays = ways;
     mMin = min;
     mPowers = makePowers(max, power);
+    // Compute a bound on the minimum power that must be present
+    mMinIndex = Math.max(mMin.divide(mTerms).root(power).intValueExact() - 1, 0);
+    StringUtils.message("First term has minimum " + (mMinIndex + 1) + "^" + power + " = " + mPowers[mMinIndex]);
   }
 
   private static long prevPrime(final long n) {
@@ -75,7 +79,8 @@ final class ResidueSearchZ {
     }
 
     // Add one more term into the sum and recurse
-    for (int k = maxIndex; k >= 0; --k) {
+    final int minIndex = remaining == mTerms ? mMinIndex : 0;
+    for (int k = maxIndex; k >= minIndex; --k) {
       insertSumsExact(sum.add(mPowers[k]), k, remaining - 1, cnts, prevMod, prevCnt);
     }
   }
@@ -103,7 +108,8 @@ final class ResidueSearchZ {
     }
 
     // Add one more term into the sum and recurse
-    for (int k = maxIndex; k >= 0; --k) {
+    final int minIndex = remaining == mTerms ? mMinIndex : 0;
+    for (int k = maxIndex; k >= minIndex; --k) {
       insertSums(sum.add(mPowers[k]), k, remaining - 1, cnts, mod, prevMod, prevCnt);
     }
   }

@@ -13,25 +13,34 @@ public class A046759 implements Sequence {
 
   private long mN = 124;
 
-  @Override
-  public Z next() {
-    while (true) {
-      final FactorSequence fs = Cheetah.factor(++mN);
-      final int len = String.valueOf(mN).length();
-      int l = 0;
-      for (final Z p : fs.toZArray()) {
-        l += p.toString().length();
-        final int e = fs.getExponent(p);
-        if (e > 1) {
-          l += String.valueOf(e).length();
-        }
-        if (l >= len) {
-          break;
-        }
+  /**
+   * Test if a number if economical.
+   * @param n number to test
+   * @return true if the number is economical
+   */
+  public static boolean isEconomical(final long n) {
+    final FactorSequence fs = Cheetah.factor(n);
+    final int len = String.valueOf(n).length();
+    int l = 0;
+    for (final Z p : fs.toZArray()) {
+      l += p.toString().length();
+      final int e = fs.getExponent(p);
+      if (e > 1) {
+        l += String.valueOf(e).length();
       }
-      if (l < len) {
-        return Z.valueOf(mN);
+      if (l >= len) {
+        break;
       }
     }
+    return l < len;
   }
+
+  @Override
+  public Z next() {
+    while (!isEconomical(++mN)) {
+      // do nothing
+    }
+    return Z.valueOf(mN);
+  }
+
 }

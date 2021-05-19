@@ -18,7 +18,7 @@ public class A095437 extends A095425 {
 
   /**
    * Generic constructor with parameters
-   * @param parm number to be written in base parm2 - n
+   * @param parm number to be written in base <code>parm2 - n</code>
    * @param parm2 negative shift for n
    */
   public A095437(final int parm, final int parm2) {

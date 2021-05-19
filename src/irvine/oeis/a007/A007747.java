@@ -16,7 +16,7 @@ public class A007747 extends MemoryFunction4<Long, Z> implements Sequence {
   protected Z compute(final Long k, final Long l, final Long s, final Long x) {
     if (k > 1 && l * k <= s && s <= (x + 1 - k) * k) {
       Z sum = Z.ZERO;
-      for (long i = l; i <= s / k; ++i) {
+      for (long i = l; k * i <= s; ++i) {
         sum = sum.add(get(k - 1, i, s - i, x));
       }
       return sum;

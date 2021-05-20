@@ -13,11 +13,12 @@ public class A047765 extends A047749 {
     super.next();
   }
   private final Sequence mA = new A047764();
-  private long mN = 0;
+  private boolean mOdd = false;
 
   @Override
   public Z next() {
     final Z a = mA.next();
-    return (++mN & 1) != 0 ? Z.ZERO : super.next().subtract(a);
+    mOdd = !mOdd;
+    return mOdd ? Z.ZERO : super.next().subtract(a);
   }
 }

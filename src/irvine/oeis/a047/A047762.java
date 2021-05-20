@@ -18,7 +18,7 @@ public class A047762 extends A047749 {
   private final Sequence mD = new A047753();
   private final Sequence mE = new A047752();
   private final Sequence mF = new A047751();
-  private long mN = 0;
+  private boolean mEven = true;
 
   @Override
   public Z next() {
@@ -29,7 +29,8 @@ public class A047762 extends A047749 {
       .add(mE.next().multiply2())
       .add(mF.next())
     );
-    if ((++mN & 1) != 1) {
+    mEven = !mEven;
+    if (mEven) {
       return Z.ZERO;
     } else {
       return t.divide(4);

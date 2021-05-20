@@ -5,7 +5,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182901 Number of weighted lattice paths in B(n) having no valleys. The members of B(n) are paths of weight n that start at (0, 0), end on but never go below the horizontal axis, and whose steps are of the following four kinds: an (1, 0)-step with weight 1, an (1, 0)-step with weight 2, a (1, 1)-step with weight 2, and a (1,-1)-step with weight 1. The weight of a path is the sum of the weights of its steps. A valley is a (1,-1)-step followed by a (1, 1)-step.
+ * A182901 Number of weighted lattice paths in B(n) having no valleys. The members of B(n) are paths of weight n that start at (0,0), end on but never go below the horizontal axis, and whose steps are of the following four kinds: an (1,0)-step with weight 1, an (1,0)-step with weight 2, a (1,1)-step with weight 2, and a (1,-1)-step with weight 1. The weight of a path is the sum of the weights of its steps. A valley is a (1,-1)-step followed by a (1,1)-step.
  * @author Georg Fischer
  */
 public class A182901 extends HolonomicRecurrence {

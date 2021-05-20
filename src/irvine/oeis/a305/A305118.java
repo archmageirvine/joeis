@@ -5,7 +5,7 @@ package irvine.oeis.a305;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A305118 a(n) = Sum_{k=0..n-1} ( 1 + a(k) * a(n-k-1) ) for n >= 1, a(0) = 1.
+ * A305118 a(n) = Sum_{k=0..n-1} ( 1 + a(k) * a(n-k-1) ) for n &gt;= 1, a(0) = 1.
  * @author Georg Fischer
  */
 public class A305118 extends HolonomicRecurrence {

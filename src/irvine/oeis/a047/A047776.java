@@ -68,7 +68,7 @@ public class A047776 implements Sequence {
       case 5:
         s = s.add(new Q(Binomial.binomial((mN - 1) / 2, (mN + 1) / 3).multiply(9), Z.valueOf(mN + 4)));
         break;
-      case 0:
+      default:
         break;
     }
 

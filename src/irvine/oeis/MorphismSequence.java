@@ -78,20 +78,24 @@ public class MorphismSequence implements Sequence {
       mStart = mMap[0];
     }
     mCurWord = mStart;
-    final String[] iterates = new String[5];
-    int iexp = 0;
-    while (iexp < iterates.length - 1) { // expand a few times
-      iterates[iexp] = mCurWord;
+    expandWord();
+    expandWord();
+    // final String[] iterates = new String[512];
+    mLimit = limit.length() == 0 ? mStart : limit;
+    int iexp = 4;
+    while (mCurWord.length() < 8192 || !mCurWord.startsWith(mLimit)) { // expand a few times
       expandWord();
       ++iexp;
     } // while iexp
+/*
     iterates[iexp] = mCurWord;
     final String oldWord = iterates[iexp - 1];
     mLimit = mCurWord.substring(0, 2);
     if (!mLimit.equals(oldWord.substring(0, 2))) {
-      mLimit = mStart;
+      mLimit = limit.length() == 0 ? mStart : limit;
       //oldWord = mStart; // = iterates[0];
     }
+*/
     mPos = 0;
     mMaxPos = mCurWord.length() / POS_FRACTION;
   } // initialize
@@ -127,8 +131,8 @@ public class MorphismSequence implements Sequence {
         + " max=" + String.format("%4d", mMaxPos)
         + " " + (len < 96 ? mCurWord : mCurWord.substring(0, 96) + " ..."));
     }
-    if (mCurWord.length() > 1000000) {
-      throw new IllegalArgumentException("mCurWord longer than 10^6 characters");
+    if (mCurWord.length() > 10000000) {
+      throw new IllegalArgumentException("mCurWord longer than 10^7 characters");
     }
   } // expandWord
 

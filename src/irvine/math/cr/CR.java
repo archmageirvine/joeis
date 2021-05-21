@@ -1054,6 +1054,15 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * The logarithmic integral of this real number.
+   * @return logarithmic integral
+   */
+  public CR li() {
+    final CR l = log();
+    return new PrescaledEi(l).add(CR.GAMMA).add(l.abs().log());
+  }
+
+  /**
    * The sine integral of this real number.
    * @return exponential integral
    */

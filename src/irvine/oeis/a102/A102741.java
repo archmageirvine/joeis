@@ -6,7 +6,7 @@ package irvine.oeis.a102;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A102741 Binomial(n+3,4)*3^4.
+ * A102741 a(n) = 3^4 * binomial(n+3, 4).
  * @author Georg Fischer
  */
 public class A102741 extends GeneratingFunctionSequence {

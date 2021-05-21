@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A067864 Numbers n such that n divides the sum of digits of 6^n.
+ * A067864 Numbers k such that k divides the sum of digits of 6^k.
  * @author Sean A. Irvine
  */
 public class A067864 implements Sequence {

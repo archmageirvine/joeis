@@ -10,7 +10,7 @@ import irvine.oeis.a003.A003338;
 import irvine.oeis.a003.A003339;
 
 /**
- * A047716 Numbers that are the sum of 5 but no fewer nonzero fourth powers.
+ * A047716 Sums of 5 but no fewer nonzero fourth powers.
  * @author Sean A. Irvine
  */
 public class A047716 implements Sequence {

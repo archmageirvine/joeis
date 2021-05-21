@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051793 a(n = sum((-1)^i*a(i), i=n-4..n-1), a(1)=1,a(2)=1,a(3)=1,a(4)=1.
+ * A051793 a(n) = Sum_{i=n-4..n-1} (-1)^i*a(i), a(1)=1, a(2)=1, a(3)=1, a(4)=1.
  * @author Sean A. Irvine
  */
 public class A051793 extends LinearRecurrence {

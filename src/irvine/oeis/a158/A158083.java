@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A158083 Possible answer to Marus du Satoy's puzzle sequence: a(n)=If[n &lt;= 4, a[n - 1] + a[n - 2], If[n == 5, a[n - 1] + a[n - 2] + 9, a[n - 1] + 9]].
+ * A158083 a(n) = Fibonacci(n+3) for n &lt; 5 and 9*n - 15 otherwise.
  * @author Georg Fischer
  */
 public class A158083 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a342;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A342688 allocated for Rainer Rosenthal.
+ * A342688 Numbers that are the sum of five fifth powers in exactly three ways.
  * @author Sean A. Irvine
  */
 public class A342688 extends LimitedSumOfLikePowersSequence {

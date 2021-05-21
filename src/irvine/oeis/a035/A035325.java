@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035325 Primes of form 2^k + k^2 + 1.
+ * A035325 Primes of the form 2^k + k^2 + 1.
  * @author Sean A. Irvine
  */
 public class A035325 implements Sequence {

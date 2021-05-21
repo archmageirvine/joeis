@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A135027 Numbers n such that the sum of the digits of n^2 is 10. n which are multiples of 10 are omitted.
+ * A135027 Numbers k such that the sum of the digits of k^2 is 10. Multiples of 10 are omitted.
  * @author Sean A. Irvine
  */
 public class A135027 implements Sequence {

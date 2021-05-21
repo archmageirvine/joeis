@@ -5,7 +5,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144465 Sequence of powers: a(n)=If [n == 0, 1, 5^n - 2^(n - 1)].
+ * A144465 a(n) = 5^n - 2^(n - 1) for n &gt; 0; a(0) = 1.
  *
  * @author Georg Fischer
  */

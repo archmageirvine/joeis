@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A047698 Can be written in 2 ways as sum of 4 positive 7th powers.
+ * A047698 Numbers that are the sum of four positive seventh powers in two or more ways.
  * @author Sean A. Irvine
  */
 public class A047698 extends LimitedSumOfLikePowersSequence {

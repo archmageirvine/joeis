@@ -89,6 +89,18 @@ public final class FactorSequence {
     add(n);
   }
 
+  /**
+   * Copy constructor.
+   * @param fs factor sequence to duplicate
+   */
+  public FactorSequence(final FactorSequence fs) {
+    if (fs != null) {
+      for (final Z n : fs.toZArray()) {
+        add(n, fs.getStatus(n), fs.getExponent(n));
+      }
+    }
+  }
+
   /** Stores the factors we know about */
   private final Map<Z, Factor> mFactors = new HashMap<>();
 
@@ -745,5 +757,17 @@ public final class FactorSequence {
       s = s.add(e.getKey().multiply(e.getValue().mExponent));
     }
     return s;
+  }
+
+  /**
+   * Return the value represented by this factorization sequence.
+   * @return the value
+   */
+  public Z product() {
+    Z product = Z.ONE;
+    for (final Map.Entry<Z, Factor> entry : mFactors.entrySet()) {
+      product = product.multiply(entry.getKey().pow(entry.getValue().mExponent));
+    }
+    return product;
   }
 }

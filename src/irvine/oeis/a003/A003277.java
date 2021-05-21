@@ -6,7 +6,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A003277 Cyclic numbers: n such that n and phi(n) are relatively prime; also n such that there is just one group of order n, i.e., A000001(n) = 1.
+ * A003277 Cyclic numbers: k such that k and phi(k) are relatively prime; also k such that there is just one group of order k, i.e., A000001(n) = 1.
  * @author Sean A. Irvine
  */
 public class A003277 implements Sequence {

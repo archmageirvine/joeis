@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238290 a(n+1) = a(n) + 6 + 2*( n - 2*floor(n/2) ) for n&gt;0, a(0)=0.
+ * A238290 a(n+1) = a(n) + 6 + 2*(n - 2*floor(n/2)) for n &gt; 0, a(0) = 0.
  * @author Georg Fischer
  */
 public class A238290 extends GeneratingFunctionSequence {

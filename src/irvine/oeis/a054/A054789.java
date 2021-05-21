@@ -6,7 +6,7 @@ import irvine.oeis.NumericalAronsonSequence;
 import irvine.oeis.a008.A008591;
 
 /**
- * A054789 Earliest sequence with a(a(n))=9n.
+ * A054789 Earliest sequence with a(a(n)) = 9n.
  * @author Georg Fischer
  */
 public class A054789 extends NumericalAronsonSequence {

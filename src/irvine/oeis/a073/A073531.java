@@ -5,7 +5,7 @@ package irvine.oeis.a073;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A073531 Number of n-digit positive integers with all distinct digits.
+ * A073531 Number of n-digit positive integers with all digits distinct.
  * @author Georg Fischer
  */
 public class A073531 extends HolonomicRecurrence {

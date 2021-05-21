@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025018 Numbers n such that least prime in Goldbach partition of n increases.
+ * A025018 Numbers k such that least prime in the Goldbach partition of k increases.
  * @author Sean A. Irvine
  */
 public class A025018 extends A025017 {

@@ -5,7 +5,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089644 Numbers n such that 7 divides the numerator of B(2n) where B(2n) = the 2n-th Bernoulli number.
+ * A089644 Numbers k such that 7 divides the numerator of B(2*k) where B(k) = the k-th Bernoulli number.
  * @author Georg Fischer
  */
 public class A089644 extends HolonomicRecurrence {

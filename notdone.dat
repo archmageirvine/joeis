@@ -1644,3 +1644,4 @@ A047734 Number of score sequences in tournament with n players, when 7 points ar
 A047735 Number of score sequences in tournament with n players, when 8 points are awarded in each game
 A047736 Number of score sequences in tournament with n players, when 9 points are awarded in each game
 A047737 Number of score sequences in tournament with n players, when 10 points are awarded in each game
+A047803 Theta series of 24-dimensional lattice D_16 + E_8

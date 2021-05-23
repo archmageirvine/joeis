@@ -9,6 +9,7 @@ import irvine.oeis.FiniteSequence;
  */
 public class A047841 extends FiniteSequence {
 
+  /** Construct the sequence. */
   public A047841() {
     super(Z.valueOf(22L),
       Z.valueOf(10213223L),

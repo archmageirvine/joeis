@@ -28,7 +28,7 @@ public class A047871 extends MemoryFunction2<Long, Boolean> implements Sequence 
     return false;
   }
 
-  private boolean isSolvable(long m) {
+  private boolean isSolvable(final long m) {
     // Handle 1
     return get(m - 1, 2L);
   }

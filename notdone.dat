@@ -782,7 +782,6 @@ A008525 Coordination sequence for 5-dimensional lonsdaleite
 A008526 Coordination sequence for 6-dimensional lonsdaleite
 A008551 Number of times n-th energy state appears in statistical sum of Ising model on 4 X 4 X 4 cube
 A008562 Denominators of strong coupling expansion, SU(3) lattice gauge theory
-A008664 Theta series of direct sum of f.c.c. and b.c.c. lattices, cf. A008663, a008664, couldn't get this to work
 A008741 Putative number of uniform tight n-dimensional sphere packings, hard
 A008840 Number of monotone self-dual boolean functions of n variables that are inequivalent under the symmetric group
 A008841 Number of self-dual boolean functions of n variables with transitive symmetry group
@@ -1644,4 +1643,4 @@ A047734 Number of score sequences in tournament with n players, when 7 points ar
 A047735 Number of score sequences in tournament with n players, when 8 points are awarded in each game
 A047736 Number of score sequences in tournament with n players, when 9 points are awarded in each game
 A047737 Number of score sequences in tournament with n players, when 10 points are awarded in each game
-A047803 Theta series of 24-dimensional lattice D_16 + E_8
+A047837 Honaker's triangle problem: form a triangle with base of length n, all entries different, all row sums equal; a(n) gives minimal row sum. (attempted backtracking search too slow)

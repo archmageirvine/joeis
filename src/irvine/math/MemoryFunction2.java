@@ -38,6 +38,13 @@ public abstract class MemoryFunction2<S, R> {
     mCache.put(key, r);
     return r;
   }
+
+  /**
+   * Clear the cache.
+   */
+  public void clear() {
+    mCache.clear();
+  }
 }
 
 

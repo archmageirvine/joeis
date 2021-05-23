@@ -956,4 +956,17 @@ public final class ZUtils {
     }
     return k;
   }
+
+  /**
+   * Return the sum of the values.
+   * @param values numbers to sum
+   * @return sum
+   */
+  public static Z sum(final Z... values) {
+    Z sum = Z.ZERO;
+    for (final Z v : values) {
+      sum = sum.add(v);
+    }
+    return sum;
+  }
 }

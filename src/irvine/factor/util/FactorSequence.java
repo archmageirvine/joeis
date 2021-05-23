@@ -234,6 +234,12 @@ public final class FactorSequence {
     return true;
   }
 
+  private void completeOrException() {
+    if (!isComplete()) {
+      throw new UnsupportedOperationException();
+    }
+  }
+
   /**
    * Return the number of distinct factors in this factor sequence.
    * @return count of distinct factors
@@ -313,8 +319,7 @@ public final class FactorSequence {
    * @param completeCheck only produce divisors if factorization in
    * complete. In rare cases it might be useful to skip this test.
    * @return array of divisors
-   * @exception ArithmeticException if the number of divisors exceeds
-   * 2^31.
+   * @exception ArithmeticException if the number of divisors exceeds 2^31.
    * @exception UnsupportedOperationException if the number is not
    * completely factored and <code>completeCheck</code> is true.
    */
@@ -324,8 +329,7 @@ public final class FactorSequence {
     }
     final Z[] p = toZArray();
     if (p.length == 0) {
-      // Number was 1
-      return new Z[] {Z.ONE};
+      return new Z[] {Z.ONE};      // Number was 1
     }
     final int[] limits = new int[p.length];
     for (int k = 0; k < p.length; ++k) {
@@ -334,9 +338,8 @@ public final class FactorSequence {
     final int divCount = internalSigma0().intValueExact();
     final Z[] d = new Z[divCount];
     d[0] = Z.ONE;
-    // special cases for a small number of distinct factors, these
-    // are not strictly necessary but are faster than the general
-    // solution.
+    // Special cases for a small number of distinct factors, these
+    // are not strictly necessary but are faster than the general solution.
     if (p.length < 3) {
       if (p.length == 1) {
         Z m = Z.ONE;
@@ -363,17 +366,14 @@ public final class FactorSequence {
       }
       return d;
     }
-
     // general solution
     final int[] e = new int[p.length];
     for (int k = 1; k < d.length; ++k) {
-      // bump counters, j will never underflow because we have
-      // just checked the termination condition above.
+      // bump counters, j will never underflow because we have just checked the termination condition above.
       int j = p.length - 1;
       while (++e[j] > limits[j]) {
         e[j--] = 0;
       }
-      // compute product
       Z m = Z.ONE;
       for (int i = 0; i < p.length; ++i) {
         if (e[i] != 0) {
@@ -416,9 +416,7 @@ public final class FactorSequence {
    * resolved to primes and probable primes.
    */
   public Z sigma() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     Z prod = Z.ONE;
     for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
       final Z p = f.getKey();
@@ -441,13 +439,10 @@ public final class FactorSequence {
   /**
    * Return the number of divisors.
    * @return number of divisors
-   * @exception UnsupportedOperationException if factor sequence is not completely
-   * resolved to primes and probable primes.
+   * @exception UnsupportedOperationException if factor sequence is not complete resolved.
    */
   public Z sigma0() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException(toString());
-    }
+    completeOrException();
     return internalSigma0();
   }
 
@@ -474,8 +469,7 @@ public final class FactorSequence {
    * Return the sum of the divisors raised to the specified power.
    * @param degree exponent of each divisor
    * @return sum of the divisors to the specified degree
-   * @exception UnsupportedOperationException if factor sequence is not completely
-   * resolved to primes and probable primes.
+   * @exception UnsupportedOperationException if factor sequence is not completely resolved.
    */
   public Z sigma(final int degree) {
     if (degree == 0) {
@@ -485,9 +479,7 @@ public final class FactorSequence {
     } else if (degree == -1) {
       return sigmaNeg1();
     }
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     Z prod = Z.ONE;
     for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
       final Z p = f.getKey();
@@ -499,8 +491,7 @@ public final class FactorSequence {
   /**
    * Return the sum of the divisors squared.
    * @return sum of the divisors squared
-   * @exception UnsupportedOperationException if factor sequence is not completely
-   * resolved to primes and probable primes.
+   * @exception UnsupportedOperationException if factor sequence is not completely resolved.
    */
   public Z sigma2() {
     return sigma(2);
@@ -521,13 +512,10 @@ public final class FactorSequence {
   /**
    * Return the Euler phi.
    * @return Euler phi function
-   * @exception UnsupportedOperationException if factor sequence is not completely
-   * resolved to primes and probable primes.
+   * @exception UnsupportedOperationException if factor sequence is not completely resolved.
    */
   public Z phi() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     Z phi = Z.ONE; // trivial divisor
     for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
       final Z p = e.getKey();
@@ -539,13 +527,10 @@ public final class FactorSequence {
   /**
    * Return the unitary Euler phi.
    * @return unitary Euler phi function
-   * @exception UnsupportedOperationException if factor sequence is not completely
-   * resolved to primes and probable primes.
+   * @exception UnsupportedOperationException if factor sequence is not completely resolved.
    */
   public Z unitaryPhi() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     Z phi = Z.ONE;
     for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
       final Z p = e.getKey();
@@ -626,7 +611,6 @@ public final class FactorSequence {
       }
       return UNKNOWN; // e.g. UNKNOWN, UNKNOWN or PRIME, UNKNOWN
     }
-    assert mFactors.size() < 2;
     if (pcount == 1) {
       return e == 2 ? YES : NO;
     }
@@ -652,9 +636,7 @@ public final class FactorSequence {
    * @return sum of unitary divisors
    */
   public Z unitaryDivisorSum() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     // Construct a nasty factor sequence where we claim all the unitary
     // prime powers in fs are actually prime.  This isn't true of course
     // but makes the sigma function do the right thing for computing the
@@ -675,9 +657,7 @@ public final class FactorSequence {
    * @return sum of unitary divisors
    */
   public Z unitarySigma() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     // Construct a nasty factor sequence where we claim all the unitary
     // prime powers in fs are actually prime.  This isn't true of course
     // but makes the sigma function do the right thing for computing the
@@ -696,9 +676,7 @@ public final class FactorSequence {
    * @return number of unitary divisors
    */
   public Z unitarySigma0() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     final FactorSequence flatten = new FactorSequence();
     for (final Z p : mFactors.keySet()) {
       final int e = getExponent(p);
@@ -733,9 +711,7 @@ public final class FactorSequence {
    * @return true iff the number is square free
    */
   public boolean isSquareFree() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     for (final Factor f : mFactors.values()) {
       if (f.mExponent > 1) {
         return false;
@@ -749,9 +725,7 @@ public final class FactorSequence {
    * @return <code>sopfr(this)</code>
    */
   public Z sopfr() {
-    if (!isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    completeOrException();
     Z s = Z.ZERO;
     for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
       s = s.add(e.getKey().multiply(e.getValue().mExponent));

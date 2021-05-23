@@ -5,7 +5,7 @@ package irvine.oeis.a068;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A068031 Number of subsets of {1, 2, 3,...,n} that sum to 0 mod 10.
+ * A068031 Number of subsets of {1,2,3,...,n} that sum to 0 mod 10.
  * @author Georg Fischer
  */
 public class A068031 extends HolonomicRecurrence {

@@ -1,0 +1,49 @@
+package irvine.oeis.a047;
+
+import irvine.math.MemoryFunction2;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A047870 Smallest number that is not a sum of at most one power of each of the numbers 1 through n.
+ * @author Sean A. Irvine
+ */
+public class A047870 extends MemoryFunction2<Long, Boolean> implements Sequence {
+
+  private int mN = 0;
+  private long mM = 1;
+
+  @Override
+  protected Boolean compute(final Long m, final Long k) {
+    if (m == 0) {
+      return true;
+    }
+    for (long u = 1; u <= m; u *= k) {
+      final long r = m - u;
+      for (long v = k + 1; v <= mN; ++v) {
+        if (get(r, v)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  private boolean isSolvable(long m) {
+    // Handle 1
+    return get(m, 2L) || get(m - 1, 2L);
+  }
+
+  @Override
+  public Z next() {
+    if (++mN == 1) {
+      return Z.ONE;
+    }
+    clear(); // cached values depend on mN
+    while (isSolvable(mM)) {
+      ++mM;
+    }
+    return Z.valueOf(mM);
+  }
+}
+

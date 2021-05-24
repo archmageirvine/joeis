@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033683 a(n) = 1 if n is an odd square not divisible by 3, else it's 0.
+ * A033683 a(n) = 1 if n is an odd square not divisible by 3, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A033683 implements Sequence {

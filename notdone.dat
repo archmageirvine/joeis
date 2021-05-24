@@ -1644,3 +1644,4 @@ A047735 Number of score sequences in tournament with n players, when 8 points ar
 A047736 Number of score sequences in tournament with n players, when 9 points are awarded in each game
 A047737 Number of score sequences in tournament with n players, when 10 points are awarded in each game
 A047837 Honaker's triangle problem: form a triangle with base of length n, all entries different, all row sums equal; a(n) gives minimal row sum. (attempted backtracking search too slow)
+A047875 Size of smallest polyomino with surround number n (the surround number of a polyomino is the number of different ways that it can be surrounded by non-overlapping copies of the same polyomino).

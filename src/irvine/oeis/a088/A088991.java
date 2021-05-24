@@ -5,7 +5,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088991 Derangement numbers d(n, 4) where d(n,k) = k(n-1)(d(n-1,k) + d(n-2,k)), with d(0,k) = 1 and d(1,k) = 0.
+ * A088991 Derangement numbers d(n,4) where d(n,k) = k(n-1)(d(n-1,k) + d(n-2,k)), with d(0,k) = 1 and d(1,k) = 0.
  * @author Georg Fischer
  */
 public class A088991 extends HolonomicRecurrence {

@@ -16,17 +16,17 @@ public class A047870 extends MemoryFunction2<Long, Boolean> implements Sequence 
   @Override
   protected Boolean compute(final Long m, final Long k) {
     if (m == 0) {
-      return true;
+      return Boolean.TRUE;
     }
     for (long u = 1; u <= m; u *= k) {
       final long r = m - u;
       for (long v = k + 1; v <= mN; ++v) {
         if (get(r, v)) {
-          return true;
+          return Boolean.TRUE;
         }
       }
     }
-    return false;
+    return Boolean.FALSE;
   }
 
   private boolean isSolvable(final long m) {

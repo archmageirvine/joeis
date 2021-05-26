@@ -1,10 +1,10 @@
 package irvine.oeis.a047;
 
-import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
-import irvine.oeis.Sequence;
-
 import java.util.ArrayList;
+
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A047874 Triangle of numbers T(n,k) = number of permutations of (1,2,...,n) with longest increasing subsequence of length k (1&lt;=k&lt;=n).
@@ -58,16 +58,16 @@ public class A047874 implements Sequence {
   }
 
   private int mN = 0;
-  private int mP = 0;
+  private int mM = 0;
 
   @Override
   public Z next() {
-    if (++mP > mN) {
+    if (++mM > mN) {
       ++mN;
-      mP = 1;
+      mM = 1;
     }
     final ArrayList<Integer> l = new ArrayList<>();
-    l.add(mP);
-    return g(mN - mP, Math.min(mN - mP, mP), l);
+    l.add(mM);
+    return g(mN - mM, Math.min(mN - mM, mM), l);
   }
 }

@@ -21,11 +21,11 @@ public class A047871 extends MemoryFunction2<Long, Boolean> implements Sequence 
     if (k <= mN) {
       for (long u = 1; u <= m; u *= k) {
         if (get(m - u, k + 1)) {
-          return true;
+          return Boolean.TRUE;
         }
       }
     }
-    return false;
+    return Boolean.FALSE;
   }
 
   private boolean isSolvable(final long m) {

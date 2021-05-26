@@ -144,7 +144,6 @@ final class ResidueSearchZ {
     flags.registerRequired('t', "max", Integer.class, "int", "maximum base of power to consider.");
     flags.registerOptional('b', "bits", Integer.class, "int", "numbers of bits to use for residue classes.", 29);
     flags.registerOptional('l', "min", String.class, "int", "minimum sum to retain.", "1");
-    flags.registerOptional('e', "exact", "only report solution with exact number of ways.");
 
     flags.setFlags(args);
 
@@ -154,7 +153,6 @@ final class ResidueSearchZ {
     final int max = (Integer) flags.getValue("max");
     final int bits = (Integer) flags.getValue("bits");
     final Z min = new Z(flags.getValue("min").toString());
-    final boolean exact = flags.isSet("exact");
 
     final ResidueSearchZ rs = new ResidueSearchZ(terms, power, ways, max, min);
 
@@ -200,17 +198,16 @@ final class ResidueSearchZ {
     StringUtils.message("Starting final pass");
     final TreeMap<Z, Byte> res = new TreeMap<>();
     rs.insertSumsExact(Z.ZERO, max - 1, terms, res, prime, cnts);
+
+    // Print results
+    boolean limitMessage = false;
     for (Map.Entry<Z, Byte> e : res.entrySet()) {
-      if (exact) {
-        if (e.getValue() == ways) {
-          final Z v = e.getKey();
-          if (v.compareTo(rs.mPowers[rs.mPowers.length - 1]) <= 0) {
-            System.out.println(v);
-          }
-        }
-      } else if (e.getValue() >= ways) {
-        System.out.println(e.getKey() + " " + e.getValue());
+      final Z v = e.getKey();
+      if (!limitMessage && v.compareTo(rs.mPowers[rs.mPowers.length - 1]) > 0) {
+        System.out.println("# Results below here might not be complete");
+        limitMessage = true;
       }
+      System.out.println(v + " " + e.getValue());
     }
   }
 }

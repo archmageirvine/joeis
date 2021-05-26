@@ -45,7 +45,7 @@ public class A047884 implements Sequence {
     return mF.factorial(num).divide(den);
   }
 
-  private Polynomial<Z> g(final int n, final int i, final ArrayList<Integer> l) {
+  protected Polynomial<Z> g(final int n, final int i, final ArrayList<Integer> l) {
     if (n == 0 || i == 1) {
       for (int k = 0; k < n; ++k) {
         l.add(1);

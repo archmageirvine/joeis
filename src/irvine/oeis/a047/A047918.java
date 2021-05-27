@@ -10,7 +10,6 @@ import irvine.math.z.Z;
  */
 public class A047918 extends A047916 {
 
-  protected int mN = 0;
   private int mM = 0;
 
   @Override

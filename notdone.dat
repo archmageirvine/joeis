@@ -1646,3 +1646,4 @@ A047737 Number of score sequences in tournament with n players, when 10 points a
 A047837 Honaker's triangle problem: form a triangle with base of length n, all entries different, all row sums equal; a(n) gives minimal row sum. (attempted backtracking search too slow)
 A047875 Size of smallest polyomino with surround number n (the surround number of a polyomino is the number of different ways that it can be surrounded by non-overlapping copies of the same polyomino).
 A047896 For given n, consider all 4-tuples P = (a,b,c,d) with P.P = n; let d = squared distance to the line OP from the closest point of Z^n (excluding the endpoints); sequence gives max_P d*n.
+A047947 a(n) is the number of k values for which A023193(k) = n.

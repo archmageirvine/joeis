@@ -24,6 +24,6 @@ public class A047931 implements Sequence {
       ++mN;
       mM = 0;
     }
-    return mM == 0 || mM == mN - 1 || mM == 2 * mN - 1 || mM == 3 * mN - 1 || mM == 4 * mN -1 || mM == 5 * mN - 1 ? Z.TWO : Z.THREE;
+    return mM == 0 || mM == mN - 1 || mM == 2 * mN - 1 || mM == 3 * mN - 1 || mM == 4 * mN - 1 || mM == 5 * mN - 1 ? Z.TWO : Z.THREE;
   }
 }

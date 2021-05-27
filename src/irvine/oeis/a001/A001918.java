@@ -11,8 +11,8 @@ import irvine.oeis.Sequence;
  */
 public class A001918 implements Sequence {
 
-  private final Fast mPrime = new Fast();
-  protected Z mP = Z.ONE;
+  protected final Fast mPrime = new Fast();
+  private Z mP = Z.ONE;
 
   /**
    * The prime for the most recent result

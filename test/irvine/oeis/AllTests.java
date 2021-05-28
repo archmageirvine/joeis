@@ -22,7 +22,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(HolonomicRecurrenceTest.class);
     suite.addTestSuite(InverseMobiusTransformSequenceTest.class);
     suite.addTestSuite(LyndonTransformSequenceTest.class);
-    suite.addTestSuite(MorphismSequenceTest.class);
     suite.addTestSuite(NegativePositiveSequenceTest.class);
     suite.addTestSuite(RunsBaseSequenceTest.class);
     suite.addTestSuite(SquareDigitsSequenceTest.class);

@@ -30,7 +30,7 @@ public class MorphismFixedPointSequence implements Sequence {
   protected String[] mMap; // pairs of String->String, flattened
   protected int mPos; // current position in mCurWord
   protected int mMaxPos; // assume that digits are safe up to this position
-  protected static int mDebug = 0; // 0 = none, 1 = some, 2 = more debugging output
+  protected static int sDebug = 0; // 0 = none, 1 = some, 2 = more debugging output
 
   /**
    * Empty constructor, used for special variants.
@@ -130,7 +130,7 @@ public class MorphismFixedPointSequence implements Sequence {
     mCurWord = newWord.toString();
     mMaxPos = mCurWord.length() * (POS_FRACTION - 3) / POS_FRACTION;
 
-    if (mDebug > 0) {
+    if (sDebug > 0) {
       final int len = mCurWord.length();
       System.out.println("# expandWord: anchor=" + mAnchor
         + " pos=" + String.format("%6d", mPos)
@@ -178,7 +178,7 @@ public class MorphismFixedPointSequence implements Sequence {
           mappings = args[iarg++];
         } else if (opt.equals("-n")) {
           noTerms = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-n")) {
+        } else if (opt.equals("-o")) {
           offset = Integer.parseInt(args[iarg++]);
         } else {
           System.err.println("invalid option " + opt);
@@ -188,8 +188,8 @@ public class MorphismFixedPointSequence implements Sequence {
       }
     }
     System.out.println("start=" + start + ", anchor=" + anchor + ", mappings=" + mappings + ", nt=" + noTerms + ", debug=" + debug);
-    MorphismFixedPointSequence.mDebug = debug;
-    MorphismFixedPointSequence seq = new MorphismFixedPointSequence(start, anchor, mappings);
+    MorphismFixedPointSequence.sDebug = debug;
+    final MorphismFixedPointSequence seq = new MorphismFixedPointSequence(start, anchor, mappings);
     int index = offset;
     while (index < noTerms) {
       System.out.println(index + " " + seq.next());

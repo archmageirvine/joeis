@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A106825 Trajectory of 1 under the morphism 1->1222, 2->2111.
+ * A106825 Trajectory of 1 under the morphism 1-&gt;1222, 2-&gt;2111.
  * @author Georg Fischer
  */
 public class A106825 extends MorphismFixedPointSequence {

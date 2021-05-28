@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A166253 String substitution 0 -> 01110, 1 -> 10001, started with 1.
+ * A166253 String substitution 0 -&gt; 01110, 1 -&gt; 10001, started with 1.
  * @author Georg Fischer
  */
 public class A166253 extends MorphismFixedPointSequence {

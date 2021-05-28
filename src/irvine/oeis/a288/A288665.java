@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A288665 0-limiting word of the mapping 00->0110, 10->000, starting with 00.
+ * A288665 0-limiting word of the mapping 00-&gt;0110, 10-&gt;000, starting with 00.
  * @author Georg Fischer
  */
 public class A288665 extends MorphismFixedPointSequence {

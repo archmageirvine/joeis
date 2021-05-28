@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A284505 Fixed point of the morphism 0->1, 1->1100.
+ * A284505 Fixed point of the morphism 0-&gt;1, 1-&gt;1100.
  * @author Georg Fischer
  */
 public class A284505 extends MorphismFixedPointSequence {

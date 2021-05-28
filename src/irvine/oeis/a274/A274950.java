@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A274950 Trajectory of 0 under the morphism 0 -> 0001101, 1 -> 0011001.
+ * A274950 Trajectory of 0 under the morphism 0 -&gt; 0001101, 1 -&gt; 0011001.
  * @author Georg Fischer
  */
 public class A274950 extends MorphismFixedPointSequence {

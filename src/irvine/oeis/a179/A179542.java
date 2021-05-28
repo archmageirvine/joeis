@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A179542 Trajectory of 1 under the morphism 1->(1, 2, 3), 2->(1, 2), 3->(1) related to the heptagon and A006356.
+ * A179542 Trajectory of 1 under the morphism 1-&gt;(1,2,3), 2-&gt;(1,2), 3-&gt;(1) related to the heptagon and A006356.
  * @author Georg Fischer
  */
 public class A179542 extends MorphismFixedPointSequence {

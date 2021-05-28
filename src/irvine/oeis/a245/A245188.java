@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A245188 Trajectory of 1 under repeated applications of the morphism 0->12, 1->13, 2->20, 3->21.
+ * A245188 Trajectory of 1 under repeated applications of the morphism 0-&gt;12, 1-&gt;13, 2-&gt;20, 3-&gt;21.
  * @author Georg Fischer
  */
 public class A245188 extends MorphismFixedPointSequence {

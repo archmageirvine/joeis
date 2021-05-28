@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A214332 Trajectory of 0 under the morphism 0 -> 01, 1 -> 202, 2 -> empty string.
+ * A214332 Trajectory of 0 under the morphism 0 -&gt; 01, 1 -&gt; 202, 2 -&gt; empty string.
  * @author Georg Fischer
  */
 public class A214332 extends MorphismFixedPointSequence {

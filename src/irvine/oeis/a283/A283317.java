@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A283317 Image of 0 under repeated applications of the morphism 0 -> 0, 0, 0, 0, 1, 1 -> 1, 1, 1, 1, 0.
+ * A283317 Image of 0 under repeated applications of the morphism 0 -&gt; 0,0,0,0,1, 1 -&gt; 1,1,1,1,0.
  * @author Georg Fischer
  */
 public class A283317 extends MorphismFixedPointSequence {

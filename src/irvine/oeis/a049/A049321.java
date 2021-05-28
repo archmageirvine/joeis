@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A049321 Primitive Chacon sequence: fixed under 0->0012, 1->12, 2->012.
+ * A049321 Primitive Chacon sequence: fixed under 0-&gt;0012, 1-&gt;12, 2-&gt;012.
  * @author Georg Fischer
  */
 public class A049321 extends MorphismFixedPointSequence {

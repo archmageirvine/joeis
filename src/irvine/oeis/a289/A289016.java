@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A289016 Fixed point of the mapping 00->0010, 01->010, 10->000, starting with 00.
+ * A289016 Fixed point of the mapping 00-&gt;0010, 01-&gt;010, 10-&gt;000, starting with 00.
  * @author Georg Fischer
  */
 public class A289016 extends MorphismFixedPointSequence {

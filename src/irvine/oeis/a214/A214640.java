@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A214640 A ternary sequence : closed under 1 -> 123, 2 -> 12, 3 -> 2 . Start with 1 .
+ * A214640 A ternary sequence : closed under 1 -&gt; 123, 2 -&gt; 12, 3 -&gt; 2 . Start with 1 .
  * @author Georg Fischer
  */
 public class A214640 extends MorphismFixedPointSequence {

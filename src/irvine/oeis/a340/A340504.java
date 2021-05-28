@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A340504 Fixed under 0 -> 03, 1 -> 23, 2 -> 21, 3 -> 01.
+ * A340504 Fixed under 0 -&gt; 03, 1 -&gt; 23, 2 -&gt; 21, 3 -&gt; 01.
  * @author Georg Fischer
  */
 public class A340504 extends MorphismFixedPointSequence {

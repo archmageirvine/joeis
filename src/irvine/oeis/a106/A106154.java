@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A106154 Generation 5 of the substitution 1->{2, 1, 2}, 2->{3, 2, 3}, 3->{4, 3, 4}, 4->{5, 4, 5}, 5->{6, 5, 6}, 6->{1, 6, 1}, starting with 1.
+ * A106154 Generation 5 of the substitution 1-&gt;{2, 1, 2}, 2-&gt;{3, 2, 3}, 3-&gt;{4, 3, 4}, 4-&gt;{5, 4, 5}, 5-&gt;{6, 5, 6}, 6-&gt;{1, 6, 1}, starting with 1.
  * @author Georg Fischer
  */
 public class A106154 extends MorphismFixedPointSequence {

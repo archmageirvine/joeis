@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A007413 A squarefree (or Thue-Morse) ternary sequence: closed under 1->123, 2->13, 3->2. Start with 1.
+ * A007413 A squarefree (or Thue-Morse) ternary sequence: closed under 1-&gt;123, 2-&gt;13, 3-&gt;2. Start with 1.
  * @author Georg Fischer
  */
 public class A007413 extends MorphismFixedPointSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A254990 4-bonacci word. Fixed point of morphism 0->01, 1->02, 2->03, 3->0.
+ * A254990 4-bonacci word. Fixed point of morphism 0-&gt;01, 1-&gt;02, 2-&gt;03, 3-&gt;0.
  * @author Georg Fischer
  */
 public class A254990 extends MorphismFixedPointSequence {

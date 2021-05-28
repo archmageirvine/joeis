@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A285467 1-limiting word of the morphism 0->11, 1-> 0001.
+ * A285467 1-limiting word of the morphism 0-&gt;11, 1-&gt; 0001.
  * @author Georg Fischer
  */
 public class A285467 extends MorphismFixedPointSequence {

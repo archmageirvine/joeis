@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A106035 The "Octanacci" sequence: Trajectory of 1 under the morphism 1->{1, 2, 1}, 2->{1}.
+ * A106035 The "Octanacci" sequence: Trajectory of 1 under the morphism 1-&gt;{1,2,1}, 2-&gt;{1}.
  * @author Georg Fischer
  */
 public class A106035 extends MorphismFixedPointSequence {

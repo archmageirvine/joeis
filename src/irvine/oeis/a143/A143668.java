@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A143668 Result of the morphing 01->01021212, 02->0102121201, 12->01021201, iterated from '01'. Sequence of the Fibonacci word fractal.
+ * A143668 Result of the morphing 01-&gt;01021212, 02-&gt;0102121201, 12-&gt;01021201, iterated from '01'. Sequence of the Fibonacci word fractal.
  * @author Georg Fischer
  */
 public class A143668 extends MorphismFixedPointSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A108103 Fixed point of the square of the morphism: 1->3, 2->1, 3->121, starting with 1.
+ * A108103 Fixed point of the square of the morphism: 1-&gt;3, 2-&gt;1, 3-&gt;121, starting with 1.
  * @author Georg Fischer
  */
 public class A108103 extends MorphismFixedPointSequence {

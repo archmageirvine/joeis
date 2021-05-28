@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A212811 Iterate the morphism 1->1123, 2->223, 3->133 starting with 1.
+ * A212811 Iterate the morphism 1-&gt;1123, 2-&gt;223, 3-&gt;133 starting with 1.
  * @author Georg Fischer
  */
 public class A212811 extends MorphismFixedPointSequence {

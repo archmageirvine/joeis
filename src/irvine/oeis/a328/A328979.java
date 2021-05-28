@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A328979 Trajectory of 0 under repeated application of the morphism 0 -> 0010, 1 -> 1010.
+ * A328979 Trajectory of 0 under repeated application of the morphism 0 -&gt; 0010, 1 -&gt; 1010.
  * @author Georg Fischer
  */
 public class A328979 extends MorphismFixedPointSequence {

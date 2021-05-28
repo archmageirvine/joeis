@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A107337 Substitution 1->{1, 2, 1, 3, 2, 3, 1}, 2->{3}, 3->{1}, starting with 1.
+ * A107337 Substitution 1-&gt;{1, 2, 1, 3, 2, 3, 1}, 2-&gt;{3}, 3-&gt;{1}, starting with 1.
  * @author Georg Fischer
  */
 public class A107337 extends MorphismFixedPointSequence {

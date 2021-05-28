@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A245553 A Rauzy fractal sequence: trajectory of 1 under morphism 1 -> 2, 3; 2 -> 3; 3 -> 1.
+ * A245553 A Rauzy fractal sequence: trajectory of 1 under morphism 1 -&gt; 2,3; 2 -&gt; 3; 3 -&gt; 1.
  * @author Georg Fischer
  */
 public class A245553 extends MorphismFixedPointSequence {

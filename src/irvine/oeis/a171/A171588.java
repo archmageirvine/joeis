@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A171588 The Pell word: Fixed point of the morphism 0->001, 1->0.
+ * A171588 The Pell word: Fixed point of the morphism 0-&gt;001, 1-&gt;0.
  * @author Georg Fischer
  */
 public class A171588 extends MorphismFixedPointSequence {

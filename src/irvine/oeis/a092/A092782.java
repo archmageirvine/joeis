@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A092782 The ternary tribonacci word; also a Rauzy fractal sequence: fixed point of the morphism 1 -> 12, 2 -> 13, 3 -> 1, starting from a(1) = 1.
+ * A092782 The ternary tribonacci word; also a Rauzy fractal sequence: fixed point of the morphism 1 -&gt; 12, 2 -&gt; 13, 3 -&gt; 1, starting from a(1) = 1.
  * @author Georg Fischer
  */
 public class A092782 extends MorphismFixedPointSequence {

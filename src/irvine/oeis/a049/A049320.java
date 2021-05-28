@@ -6,7 +6,7 @@ import irvine.oeis.MorphismFixedPointSequence;
 
 
 /**
- * A049320 Non-primitive Chacon sequence: fixed under 0->0010, 1->1.
+ * A049320 Non-primitive Chacon sequence: fixed under 0-&gt;0010, 1-&gt;1.
  * @author Georg Fischer
  */
 public class A049320 extends MorphismFixedPointSequence {

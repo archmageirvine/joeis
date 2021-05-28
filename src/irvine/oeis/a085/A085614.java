@@ -6,7 +6,7 @@ package irvine.oeis.a085;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085614 Elementary arches of size n.
+ * A085614 Number of elementary arches of size n.
  * @author Georg Fischer
  */
 public class A085614 extends HolonomicRecurrence {

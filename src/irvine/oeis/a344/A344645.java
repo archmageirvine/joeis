@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A344645.
+ * A344645 Numbers that are the sum of four fifth powers in exactly two ways.
  * @author Sean A. Irvine
  */
 public class A344645 extends LimitedSumOfLikePowersSequence {

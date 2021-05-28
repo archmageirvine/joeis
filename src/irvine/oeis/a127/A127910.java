@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A127910 Number of nonisomorphic simple weakly connected digraphs (loops allowed) on n unlabeled nodes which are not functional nor partial functional graphs.
+ * A127910 a(n) = A003085(n+1) - A116950(n).
  *
  * @author Georg Fischer
  */

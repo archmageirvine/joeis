@@ -25,14 +25,16 @@ public class A047975 extends A000040 {
       final Z p1 = mP;
       mP = super.next();
       final Z gap = mP.subtract(p1);
-      final Z g2 = gap.divide2();
-      final Z t = p1.multiply(mP).add(1).divide2();
-      final Z p3 = t.subtract(g2);
-      //System.out.println("Trying p1 = " + p1 + " " + gap + " --> p3=" + p3);
-      if (mFast.isPrime(p3)) {
-        final Z p4 = t.add(g2);
-        if (mFast.isPrime(p4) && mFast.nextPrime(p3).equals(p4)) {
-          return select(gap, p1, p3);
+      if (accept(gap)) {
+        final Z g2 = gap.divide2();
+        final Z t = p1.multiply(mP).add(1).divide2();
+        final Z p3 = t.subtract(g2);
+        //System.out.println("Trying p1 = " + p1 + " " + gap + " --> p3=" + p3);
+        if (mFast.isPrime(p3)) {
+          final Z p4 = t.add(g2);
+          if (mFast.isPrime(p4) && mFast.nextPrime(p3).equals(p4)) {
+            return select(gap, p1, p3);
+          }
         }
       }
     }

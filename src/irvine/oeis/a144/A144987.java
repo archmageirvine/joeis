@@ -7,7 +7,7 @@ import irvine.oeis.EgyptianFractionSequence;
 
 
 /**
- * A144987 Denominators of an Egyptian fraction for 1/Sqrt[8]=0.35355339059327376223...
+ * A144987 Denominators of an Egyptian fraction for 1/sqrt(8) = 0.35355339059327376223...
  * @author Georg Fischer
  */
 public class A144987 extends EgyptianFractionSequence {

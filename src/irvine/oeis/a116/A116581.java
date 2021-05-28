@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A116581 Primes of the form n^3-n-1.
+ * A116581 Primes of the form k^3-k-1.
  * @author Georg Fischer
  */
 public class A116581 extends PrimeSubsequence {

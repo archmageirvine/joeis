@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A344518 allocated for David Consiglio, Jr.
+ * A344518 Numbers that are the sum of five fifth powers in four or more ways.
  * @author Sean A. Irvine
  */
 public class A344518 extends LimitedSumOfLikePowersSequence {

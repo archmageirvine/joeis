@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A287650 Number of doubly symmetric diagonal Latin squares of order 4n with a fixed first row.
+ * A287650 Number of doubly symmetric diagonal Latin squares of order 4n with the first row in ascending order.
  *
  * @author Georg Fischer
  */

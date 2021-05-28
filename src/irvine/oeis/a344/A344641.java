@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A344641.
+ * A344641 Numbers that are the sum of three fifth powers in exactly one way.
  * @author Sean A. Irvine
  */
 public class A344641 extends LimitedSumOfLikePowersSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123665 21st row of semiprime power sum array, with polynomial reducible over Z.
+ * A123665 a(n) = Sum_{k=1..21} n^A001358(k).
  * @author Georg Fischer
  */
 public class A123665 extends HolonomicRecurrence {

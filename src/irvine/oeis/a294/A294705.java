@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294705 Number of permutations of [n] avoiding {1234, 1324, 3412}.
+ * A294705 Expansion of (1 - 9*x + 35*x^2 - 75*x^3 + 98*x^4 - 78*x^5 + 34*x^6 + 10*x^7) / ((1 - x)^6*(1 - 2*x)^2).
  * @author Georg Fischer
  */
 public class A294705 extends GeneratingFunctionSequence {

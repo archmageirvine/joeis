@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.math.z.Z;
 
 /**
- * A047857 a(n)=T(0,n)+T(1,n-1)+...+T(n,0), array T given by A047848.
+ * A047857 a(n) = T(0,n) + T(1,n-1) + ... + T(n,0), array T given by A047848.
  * @author Sean A. Irvine
  */
 public class A047857 extends A047848 {

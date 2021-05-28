@@ -5,7 +5,7 @@ package irvine.oeis.a069;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A069835 Define an array as follows: b(i,0)=b(0,j)=1, b(i,j)=2*b(i-1,j-1)+b(i-1,j)+b(i,j-1). Then a(n)=b(n,n).
+ * A069835 Define an array as follows: b(i,0)=b(0,j)=1, b(i,j) = 2*b(i-1,j-1) + b(i-1,j) + b(i,j-1). Then a(n) = b(n,n).
  * @author Georg Fischer
  */
 public class A069835 extends HolonomicRecurrence {

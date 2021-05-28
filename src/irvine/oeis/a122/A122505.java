@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A122505 Arises from energy spectrum of three dimensional gravity with negative cosmological constant, in analysis by Edward Witten.
+ * A122505 Table 1 on page 46 in the Witten reference.
  * @author Georg Fischer
  */
 public class A122505 extends NoncomputableSequence {

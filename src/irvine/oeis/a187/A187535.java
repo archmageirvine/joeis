@@ -5,7 +5,7 @@ package irvine.oeis.a187;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A187535 Central Lah numbers a(n) = A105278(2*n,n) = A008297(2*n,n).
+ * A187535 Central Lah numbers: a(n) = A105278(2*n,n) = A008297(2*n,n).
  * @author Georg Fischer
  */
 public class A187535 extends HolonomicRecurrence {

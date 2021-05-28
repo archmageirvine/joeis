@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088386 Numbers of the form 2^n*(n!)^3.
+ * A088386 a(n) = 2^n*(n!)^3.
  * @author Georg Fischer
  */
 public class A088386 extends HolonomicRecurrence {

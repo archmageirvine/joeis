@@ -5,7 +5,7 @@ package irvine.oeis.a161;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A161740 Fourth right hand column of the RSEG2 triangle A161739
+ * A161740 Fourth right hand column of the RSEG2 triangle A161739.
  * @author Georg Fischer
  */
 public class A161740 extends HolonomicRecurrence {

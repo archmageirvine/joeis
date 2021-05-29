@@ -5,7 +5,7 @@ package irvine.oeis.a199;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A199972 a(n) = the sum of GCQ_B(n, k) for 1 <= k <= n (see definition in comments).
+ * A199972  a(n) = the sum of GCQ_B(n, k) for 1 &lt;= k &lt;= n (see definition in comments).
  * @author Georg Fischer
  */
 public class A199972 extends HolonomicRecurrence {

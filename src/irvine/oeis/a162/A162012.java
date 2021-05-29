@@ -5,7 +5,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162012 The sequence of the absolute values of the a(n-2) coefficients of A162011
+ * A162012 The sequence of the absolute values of the a(n-2) coefficients of A162011.
  * @author Georg Fischer
  */
 public class A162012 extends HolonomicRecurrence {

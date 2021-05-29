@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055663 Number of (3, 3; n,n)-partitions of a chain of length n^2 + n.
+ * A055663 Number of (3,3; n,n)-partitions of a chain of length n^2 + n.
  * @author Georg Fischer
  */
 public class A055663 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a323;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A323325 Coefficients a(n) of x^n*y^n*z^n in function A = A(x,y,z) such that A = 1 + x*B*C, B = 1 + y*C*A, and C = 1 + z*A*B, for n >= 0.
+ * A323325 Coefficients a(n) of x^n*y^n*z^n in function A = A(x,y,z) such that A = 1 + x*B*C, B = 1 + y*C*A, and C = 1 + z*A*B, for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A323325 extends HolonomicRecurrence {

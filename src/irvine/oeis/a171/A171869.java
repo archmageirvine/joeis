@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A171869 a(n) is the period of A175555(n) in the sequence A175555.
+ * A171869 a(n) is the period of A175555(n) in the sequence {A175555}.
  * @author Georg Fischer
  */
 public class A171869 extends HolonomicRecurrence {

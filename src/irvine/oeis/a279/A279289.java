@@ -5,7 +5,7 @@ package irvine.oeis.a279;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A279289 Numbers n such that phi(n) > tau(n).
+ * A279289 Numbers n such that phi(n) &gt; tau(n).
  * @author Georg Fischer
  */
 public class A279289 extends HolonomicRecurrence {

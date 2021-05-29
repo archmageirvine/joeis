@@ -5,7 +5,7 @@ package irvine.oeis.a229;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A229587 Number of defective 3-colorings of a 2 X n 0..2 array connected horizontally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order
+ * A229587 Number of defective 3-colorings of a 2 X n 0..2 array connected horizontally and antidiagonally with exactly one mistake, and colors introduced in row-major 0..2 order.
  * @author Georg Fischer
  */
 public class A229587 extends HolonomicRecurrence {

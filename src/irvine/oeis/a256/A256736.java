@@ -12,12 +12,15 @@ import irvine.oeis.a046.A046933;
  */
 public class A256736 extends A046933 {
   
+  /** Construct the sequence. */
+  /** Construct the sequence. */
   public A256736() {
     if (1 == 1) {
       super.next();
     }
   }
   
+  @Override
   public Z next() {
     final Z result = super.next();
     super.next();

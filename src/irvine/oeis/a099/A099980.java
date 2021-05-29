@@ -11,13 +11,8 @@ import irvine.oeis.a001.A001358;
  * @author Georg Fischer
  */
 public class A099980 extends A001358 {
-  
-  public A099980() {
-    if (0 == 1) {
-      super.next();
-    }
-  }
-  
+
+  @Override
   public Z next() {
     final Z result = super.next();
     super.next();

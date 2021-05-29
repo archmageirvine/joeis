@@ -12,12 +12,7 @@ import irvine.oeis.a007.A007947;
  */
 public class A099984 extends A007947 {
   
-  public A099984() {
-    if (0 == 1) {
-      super.next();
-    }
-  }
-  
+  @Override
   public Z next() {
     final Z result = super.next();
     super.next();

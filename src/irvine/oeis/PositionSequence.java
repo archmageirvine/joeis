@@ -32,7 +32,7 @@ public class PositionSequence implements Sequence {
    * @return true iff the current number <code>mK</code> has some property.
    */
   protected boolean isOk(final Z term) {
-    return term.compareTo(mValue) == 0;
+    return term.equals(mValue);
   } // isOk
 
   @Override

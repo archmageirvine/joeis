@@ -11,12 +11,15 @@ import irvine.math.z.Z;
  */
 public class A181889 extends A181888 {
   
+  /** Construct the sequence. */
+  /** Construct the sequence. */
   public A181889() {
     if (1 == 1) {
       super.next();
     }
   }
   
+  @Override
   public Z next() {
     final Z result = super.next();
     super.next();

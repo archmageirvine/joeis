@@ -11,13 +11,15 @@ import irvine.oeis.a002.A002326;
  * @author Georg Fischer
  */
 public class A274299 extends A002326 {
-  
+
+  /**
+   * Construct the sequence.
+   */
   public A274299() {
-    if (1 == 1) {
-      super.next();
-    }
+    super.next();
   }
-  
+
+  @Override
   public Z next() {
     final Z result = super.next();
     super.next();

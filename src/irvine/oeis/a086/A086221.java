@@ -10,8 +10,7 @@ import irvine.math.z.Z;
  * @author Georg Fischer
  */
 public class A086221 extends A086652 {
-  
-  /** Construct the sequence. */
+
   /** Construct the sequence. */
   public A086221() {
     if (1 == 1) {

@@ -10,8 +10,7 @@ import irvine.math.z.Z;
  * @author Georg Fischer
  */
 public class A181889 extends A181888 {
-  
-  /** Construct the sequence. */
+
   /** Construct the sequence. */
   public A181889() {
     if (1 == 1) {

@@ -11,8 +11,7 @@ import irvine.oeis.a000.A000960;
  * @author Georg Fischer
  */
 public class A099062 extends A000960 {
-  
-  /** Construct the sequence. */
+
   /** Construct the sequence. */
   public A099062() {
     if (1 == 1) {

@@ -12,14 +12,6 @@ import irvine.oeis.a000.A000396;
  */
 public class A099057 extends A000396 {
   
-  /** Construct the sequence. */
-  /** Construct the sequence. */
-  public A099057() {
-    if (0 == 1) {
-      super.next();
-    }
-  }
-  
   @Override
   public Z next() {
     final Z result = super.next();

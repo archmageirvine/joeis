@@ -11,14 +11,6 @@ import irvine.math.z.Z;
  */
 public class A164877 extends A164869 {
   
-  /** Construct the sequence. */
-  /** Construct the sequence. */
-  public A164877() {
-    if (0 == 1) {
-      super.next();
-    }
-  }
-  
   @Override
   public Z next() {
     final Z result = super.next();

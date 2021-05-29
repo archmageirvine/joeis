@@ -13,11 +13,8 @@ import irvine.oeis.a002.A002439;
 public class A156176 extends A002439 {
   
   /** Construct the sequence. */
-  /** Construct the sequence. */
   public A156176() {
-    if (1 == 1) {
-      super.next();
-    }
+    super.next();
   }
   
   @Override

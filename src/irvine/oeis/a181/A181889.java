@@ -13,9 +13,7 @@ public class A181889 extends A181888 {
 
   /** Construct the sequence. */
   public A181889() {
-    if (1 == 1) {
-      super.next();
-    }
+    super.next();
   }
   
   @Override

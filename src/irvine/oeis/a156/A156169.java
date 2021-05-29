@@ -14,9 +14,7 @@ public class A156169 extends A002437 {
 
   /** Construct the sequence. */
   public A156169() {
-    if (1 == 1) {
-      super.next();
-    }
+    super.next();
   }
   
   @Override

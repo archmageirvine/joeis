@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A343471.
+ * A343471 allocated for Metin Sariyar.
  * @author Sean A. Irvine
  */
 public class A343471 implements Sequence {

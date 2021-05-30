@@ -14,6 +14,6 @@ public class A006922 extends EulerTransform {
 
   /** Construct the sequence. */
   public A006922() {
-    super(new PeriodicSequence(24, 24), 1);
+    super(new PeriodicSequence(24), 1);
   }
 }

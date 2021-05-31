@@ -28,7 +28,6 @@ public class A032834 extends MemorySequence {
     add(Z.ZERO);
   }
 
-
   @Override
   protected Z computeNext() {
     final int n = size();

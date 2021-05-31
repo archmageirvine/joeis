@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037316 (sum of base 4 digits of n)=(sum of base 5 digits of n).
+ * A037316 Numbers k such that the sum of the base 4 digits of k is equal to the sum of the base 5 digits of k.
  * @author Georg Fischer
  */
 public class A037316 extends A037303 {

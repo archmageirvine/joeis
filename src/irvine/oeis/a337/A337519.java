@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A337519 Length of the shortest walk in a n X n grid graph that starts in one corner and visits every edge.
+ * A337519 Length of the shortest walk in an n X n grid graph that starts in one corner and visits every edge.
  * @author Georg Fischer
  */
 public class A337519 extends HolonomicRecurrence {

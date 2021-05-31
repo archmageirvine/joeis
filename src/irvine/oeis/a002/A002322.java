@@ -14,7 +14,6 @@ public class A002322 implements Sequence {
 
   @Override
   public Z next() {
-    final long n = ++mN;
-    return Carmichael.lambda(n);
+    return Carmichael.lambda(++mN);
   }
 }

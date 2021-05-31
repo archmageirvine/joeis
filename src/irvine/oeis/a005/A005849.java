@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005849 Prime Cullen numbers: numbers n such that n*2^n + 1 is prime.
+ * A005849 Indices of prime Cullen numbers: numbers n such that n*2^n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A005849 implements Sequence {

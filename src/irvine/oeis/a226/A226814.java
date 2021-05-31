@@ -5,7 +5,7 @@ package irvine.oeis.a226;
 import irvine.oeis.a004.A004050;
 
 /**
- * A226814 Numbers of the form 5^j + 6^k, for j and k >= 0.
+ * A226814 Numbers of the form 5^j + 6^k, for j and k &gt;= 0.
  * @author Georg Fischer
  */
 public class A226814 extends A004050 {

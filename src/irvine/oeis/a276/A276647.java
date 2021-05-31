@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276647 Number of squares after the n-th generation in a symmetric (with 45\u00b0 angles) non-overlapping Pythagoras tree.
+ * A276647 Number of squares after the n-th generation in a symmetric (with 45 degree angles) non-overlapping Pythagoras tree.
  * @author Sean A. Irvine
  */
 public class A276647 extends LinearRecurrence {

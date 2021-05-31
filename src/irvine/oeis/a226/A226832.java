@@ -5,7 +5,7 @@ package irvine.oeis.a226;
 import irvine.oeis.a004.A004050;
 
 /**
- * A226832 Numbers of the form 8^j + 9^k, for j and k >= 0.
+ * A226832 Numbers of the form 8^j + 9^k, for j and k &gt;= 0.
  * @author Georg Fischer
  */
 public class A226832 extends A004050 {

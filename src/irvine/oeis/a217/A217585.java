@@ -5,7 +5,7 @@ package irvine.oeis.a217;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A217585 Number of triangles with endpoints of the form (x,x^2), x in {-n,...,n}, having at least one angle of 45\u00b0.
+ * A217585 Number of triangles with endpoints of the form (x,x^2), x in {-n,...,n}, having at least one angle of 45 degrees.
  * @author Georg Fischer
  */
 public class A217585 extends HolonomicRecurrence {

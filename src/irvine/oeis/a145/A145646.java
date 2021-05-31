@@ -5,7 +5,7 @@ package irvine.oeis.a145;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A145646 Wavelength (in \u00c5ngstr\u00f6m) of the series limit of the Hydrogen spectrum for main quantum number n.
+ * A145646 Wavelength (in \u00e5ngstr\u00f6ms) of the series limit of the Hydrogen spectrum for main quantum number n.
  * @author Georg Fischer
  */
 public class A145646 extends HolonomicRecurrence {

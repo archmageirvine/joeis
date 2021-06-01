@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A063590 	Smallest k such that 5^k has exactly n 5's in its decimal representation.
+ * A063590 Smallest k such that 5^k has exactly n 5's in its decimal representation.
  * Derived from A031146.java
  * @author Georg Fischer
  */

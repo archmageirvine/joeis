@@ -28,7 +28,7 @@ public class A048141 implements Sequence, MultidimensionalIntegerPartition.Parti
         return;
       }
     }
-    //System.out.println(triples);
+    System.out.println(triples.size() + " " + triples);
     ++mCount;
   }
 

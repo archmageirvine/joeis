@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A048139.
+ * A048139 Number of planar partitions of n, when partitions that are rotations of each other (when regarded as 3-D objects) are counted only once.
  * @author Sean A. Irvine
  */
 public class A048139 implements Sequence {
@@ -19,6 +19,21 @@ public class A048139 implements Sequence {
   private Set<Set<Triple<Integer>>> mA = Collections.emptySet();
   private Set<Set<Triple<Integer>>> mB = Collections.emptySet();
   private Set<Set<Triple<Integer>>> mC = null;
+
+  private HashSet<Triple<Integer>> filledOut(final Set<Triple<Integer>> t) {
+    final HashSet<Triple<Integer>> prt = new HashSet<>();
+    for (final Triple<Integer> v : t) {
+      prt.add(v);
+      prt.add(new Triple<>(v.right(), v.left(), v.mid()));
+      prt.add(new Triple<>(v.mid(), v.right(), v.left()));
+    }
+    return prt;
+  }
+
+  private String toString(final Set<Triple<Integer>> t) {
+    final HashSet<Triple<Integer>> prt = filledOut(t);
+    return prt.size() + " " + prt.toString();
+  }
 
   @Override
   public Z next() {
@@ -34,30 +49,46 @@ public class A048139 implements Sequence {
           final int y = t.mid();
           final int z = t.right();
           // x + 1
-          final Triple<Integer> tx = new Triple<>(x + 1, y, z);
-          if (!partition.contains(tx) && (y == 0 || partition.contains(new Triple<>(x + 1, y - 1, z)))) {
-            final Set<Triple<Integer>> x1 = new HashSet<>(partition);
-            x1.add(tx);
-            next.add(x1);
+          if (x + 1 >= y) {
+            final Triple<Integer> tx = new Triple<>(x + 1, y, z);
+            if (!partition.contains(tx)
+              && (y == 0 || partition.contains(new Triple<>(x + 1, y - 1, z)))
+              && (z == 0 || partition.contains(new Triple<>(x + 1, y, z - 1)))
+            ) {
+              final Set<Triple<Integer>> f = filledOut(partition);
+              if (f.contains(new Triple<>(z, x, y)) && f.contains(new Triple<>(y, z, x))) {
+                final Set<Triple<Integer>> x1 = new HashSet<>(partition);
+                x1.add(tx);
+                next.add(x1);
+              }
+            }
           }
           // y + 1
-          if (y + 1 <= x) {
+          if (y + 1 <= x && z <= y + 1) {
+            // todo I think these tests are not strong enough
             final Triple<Integer> ty = new Triple<>(x, y + 1, z);
-            if (!partition.contains(ty) && (x == 1 || partition.contains(new Triple<>(x - 1, y + 1, z)))) {
-              final Set<Triple<Integer>> y1 = new HashSet<>(partition);
-              y1.add(ty);
-              next.add(y1);
+            if (!partition.contains(ty)
+              && (x == 1 || partition.contains(new Triple<>(x - 1, y + 1, z)))
+              && (z == 0 || partition.contains(new Triple<>(x, y + 1, z - 1)))
+            ) {
+              final Set<Triple<Integer>> f = filledOut(partition);
+              if (f.contains(new Triple<>(z, x, y)) && f.contains(new Triple<>(y, z, x))) { // trivially true!
+                final Set<Triple<Integer>> y1 = new HashSet<>(partition);
+                y1.add(ty);
+                next.add(y1);
+                System.out.println("Added " + ty + " to " + partition + " --> " + y1);
+              }
             }
           }
           // z + 1
-          if (z + 1 < y) {
-            final Triple<Integer> tz = new Triple<>(x, y, z + 1);
-            if (!partition.contains(tz)) {
-              final Set<Triple<Integer>> z1 = new HashSet<>(partition);
-              z1.add(tz);
-              next.add(z1);
-            }
-          }
+//          if (z + 1 < y) {
+//            final Triple<Integer> tz = new Triple<>(x, y, z + 1);
+//            if (!partition.contains(tz)) {
+//              final Set<Triple<Integer>> z1 = new HashSet<>(partition);
+//              z1.add(tz);
+//              next.add(z1);
+//            }
+//          }
         }
       }
       // Add one symmetry point to n - 1
@@ -76,7 +107,7 @@ public class A048139 implements Sequence {
 //            }
 //          }
           // z + 1
-          if (z + 1 == y) {
+          if (z + 1 == y && y == x) {
             final Triple<Integer> tz = new Triple<>(x, y, z + 1);
             if (!partition.contains(tz)) {
               final Set<Triple<Integer>> z1 = new HashSet<>(partition);
@@ -90,7 +121,10 @@ public class A048139 implements Sequence {
       mB = mC;
       mC = next;
     }
-    System.out.println(mC);
+    //System.out.println(mC);
+    for (final Set<Triple<Integer>> set : mC) {
+      System.out.println(toString(set));
+    }
     return Z.valueOf(mC.size());
   }
 }

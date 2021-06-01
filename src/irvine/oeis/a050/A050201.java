@@ -49,15 +49,6 @@ public class A050201 extends A000796 {
     boolean busy = true;
     while (busy) {
       switch (mState) {
-        default:
-        case 1: // get next digit
-          digit = super.next().intValue();
-          ++mPos;
-          if (digit == mDigit) {
-            mCount = 1;
-            mState = 2;
-          } // else read next and test again
-          break;
         case 2: // check whether there is a complete block with enough occurrences
           if (mCount >= mOccur) {
             mCount = mOccur - 1;
@@ -71,6 +62,15 @@ public class A050201 extends A000796 {
               mState = 1;
             }
           }
+          break;
+        case 1: // get next digit
+        default:
+          digit = super.next().intValue();
+          ++mPos;
+          if (digit == mDigit) {
+            mCount = 1;
+            mState = 2;
+          } // else read next and test again
           break;
       } // switch
     } // while

@@ -30,7 +30,7 @@ public class MorphismFixedPointSequence implements Sequence {
   protected String[] mMap; // pairs of String->String, flattened
   protected int mPos; // current position in mCurWord
   protected int mMaxPos; // assume that digits are safe up to this position
-  protected static int sDebug = 0; // 0 = none, 1 = some, 2 = more debugging output
+  private static int sDebug = 0; // 0 = none, 1 = some, 2 = more debugging output
 
   /**
    * Empty constructor, used for special variants.
@@ -150,7 +150,7 @@ public class MorphismFixedPointSequence implements Sequence {
    * <ul>
    * <li>-i initial word, start, default "0"</li>
    * <li>-a anchor, default "0010"</li>
-   * <li>-m mappings, default "0->001,1->0"</li>
+   * <li>-m mappings, default "0-&gt;001,1->0"</li>
    * <li>-n number of terms, default 32</li>
    * <li>-o offset, default 1</li>
    * <li>-d debugging mode: 0=none (default), 1=some, 2=more</li>
@@ -168,17 +168,17 @@ public class MorphismFixedPointSequence implements Sequence {
       final String opt = args[iarg++];
       try {
         if (false) {
-        } else if (opt.equals("-d")) {
+        } else if ("-d".equals(opt)) {
           debug = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-i")) {
+        } else if ("-i".equals(opt)) {
           start = args[iarg++];
-        } else if (opt.equals("-a")) {
+        } else if ("-a".equals(opt)) {
           anchor = args[iarg++];
-        } else if (opt.equals("-m")) {
+        } else if ("-m".equals(opt)) {
           mappings = args[iarg++];
-        } else if (opt.equals("-n")) {
+        } else if ("-n".equals(opt)) {
           noTerms = Integer.parseInt(args[iarg++]);
-        } else if (opt.equals("-o")) {
+        } else if ("-o".equals(opt)) {
           offset = Integer.parseInt(args[iarg++]);
         } else {
           System.err.println("invalid option " + opt);

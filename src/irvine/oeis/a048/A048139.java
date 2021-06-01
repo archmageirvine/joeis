@@ -32,7 +32,7 @@ public class A048139 implements Sequence {
 
   private String toString(final Set<Triple<Integer>> t) {
     final HashSet<Triple<Integer>> prt = filledOut(t);
-    return prt.size() + " " + prt.toString();
+    return prt.size() + " " + prt;
   }
 
   @Override

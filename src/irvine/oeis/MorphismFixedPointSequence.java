@@ -3,7 +3,7 @@ package irvine.oeis;
 import irvine.math.z.Z;
 
 /**
- * Second, alternate attempt, first version was MorphismSequence.
+ * Second, alternate attempt, first version was <code>MorphismSequence</code>.
  * Scan a word from left to right, replace the possible patterns, repeat and
  * assume that the beginning of the word becomes steady.
  * An example is:
@@ -150,7 +150,7 @@ public class MorphismFixedPointSequence implements Sequence {
    * <ul>
    * <li>-i initial word, start, default "0"</li>
    * <li>-a anchor, default "0010"</li>
-   * <li>-m mappings, default "0-&gt;001,1->0"</li>
+   * <li>-m mappings, default "0-&gt;001,1-&gt;0"</li>
    * <li>-n number of terms, default 32</li>
    * <li>-o offset, default 1</li>
    * <li>-d debugging mode: 0=none (default), 1=some, 2=more</li>

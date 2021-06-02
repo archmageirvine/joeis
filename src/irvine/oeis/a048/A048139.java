@@ -15,6 +15,8 @@ import irvine.util.Triple;
 public class A048139 implements Sequence {
 
   // todo This is actually a new attempt at A048141
+  // todo this is perhaps C3v + C3 !!
+  // todo in general may need to add six points --- not 3
 
   private Set<Set<Triple<Integer>>> mA = Collections.emptySet();
   private Set<Set<Triple<Integer>>> mB = Collections.emptySet();

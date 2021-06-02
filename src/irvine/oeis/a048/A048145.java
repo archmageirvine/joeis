@@ -9,7 +9,7 @@ import irvine.oeis.a004.A004009;
 import irvine.oeis.a010.A010839;
 
 /**
- * A048145.
+ * A048145 Fourier coefficients of T_{22}.
  * @author Sean A. Irvine
  */
 public class A048145 extends A004009 {

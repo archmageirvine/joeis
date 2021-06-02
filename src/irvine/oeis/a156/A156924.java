@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156924 Fifth right hand column (n-m=4) of the A156920 triangle
+ * A156924 Fifth right hand column (n-m=4) of the A156920 triangle.
  * Recurrence: a(n)=55*a(n-1)-1365*a(n-2)+20251*a(n-3)-200557*a(n-4)+1402203*a(n-5)-7137473*a(n-6)+26886431*a(n-7)-75433971*a(n-8)+157376597*a(n-9)-241846607*a(n-10)+268663713*a(n-11)-208880991*a(n-12)+107416665*a(n-13)-32730075*a(n-14)+4465125*a(n-15)
  * @author Georg Fischer
  */

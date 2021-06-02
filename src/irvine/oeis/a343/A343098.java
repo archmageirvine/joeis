@@ -5,7 +5,7 @@ package irvine.oeis.a343;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A343098 Number of palindromes < 10^n whose squares are also palindromes.
+ * A343098 Number of palindromes &lt; 10^n whose squares are also palindromes.
  * Lin.rec. signature: (1, 4,-4,-6, 6, 4,-4,-1, 1)
  * @author Georg Fischer
  */

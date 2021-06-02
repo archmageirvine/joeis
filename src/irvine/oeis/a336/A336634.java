@@ -5,7 +5,7 @@ package irvine.oeis.a336;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A336634 Sum_{n>=0} a(n) * x^n / (n!)^2 = exp(-x) * BesselI(0, 2*sqrt(x))^2.
+ * A336634 Sum_{n&gt;=0} a(n) * x^n / (n!)^2 = exp(-x) * BesselI(0,2*sqrt(x))^2.
  * Recurrence: n*a(n)=-(3*n^2-7*n+3)*a(n-1)+(7-3*n)*(n-1)^2*a(n-2)-(n-1)^2*(n-2)^2*a(n-3)
  * @author Georg Fischer
  */

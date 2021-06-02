@@ -5,7 +5,7 @@ package irvine.oeis.a338;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A338426 a(n) is the number of paths a chess king can take from (0, 0) to (n+1, 0) touching each point in {-1, 0, 1} X {1, 2,...,n} exactly once.
+ * A338426 a(n) is the number of paths a chess king can take from (0,0) to (n+1,0) touching each point in {-1,0,1} X {1,2,...,n} exactly once.
  * Recurrence: a(n)=7*a(n-1)+6*a(n-2)-39*a(n-3)+29*a(n-4)+28*a(n-5)-26*a(n-6)-10*a(n-7)+6*a(n-8)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ package irvine.oeis.a341;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A341929 Bisection of the numerators of the convergents of cf (1, 1, 6, 1, 6, 1,..., 6, 1).
+ * A341929 Bisection of the numerators of the convergents of cf (1,1,6,1,6,1,...,6,1).
  * Lin.rec. signature: (8,-1)
  * @author Georg Fischer
  */

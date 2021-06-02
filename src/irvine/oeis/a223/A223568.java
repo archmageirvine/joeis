@@ -5,7 +5,7 @@ package irvine.oeis.a223;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A223568 Number of nX7 0..1 arrays with antidiagonals unimodal
+ * A223568 Number of nX7 0..1 arrays with antidiagonals unimodal.
  * Recurrence: a(n)=29*a(n-1)
  * @author Georg Fischer
  */

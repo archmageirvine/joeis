@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107856 a(n) = 2*a(n-2)+4*a(n-4)+a(n-6), n>9.
+ * A107856 a(n) = 2*a(n-2)+4*a(n-4)+a(n-6), n&gt;9.
  * Recurrence: a(n)=2*a(n-2)+4*a(n-4)+a(n-6)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273720 Number of horizontal steps in the peaks of all bargraphs having semiperimeter n (n>=2).
+ * A273720 Number of horizontal steps in the peaks of all bargraphs having semiperimeter n (n&gt;=2).
  * Recurrence: a(n)=((2*(3*n-7))*(2*n-9)*a(n-1)-(254-155*n+22*n^2)*a(n-2)+(2*(101-58*n+8*n^2))*a(n-3)-(86-47*n+6*n^2)*a(n-4)+(2*(n-6))*(2*n-5)*a(n-5)-(n-6)*(2*n-5)*a(n-6))/((n-2)*(2*n-9))
  * @author Georg Fischer
  */

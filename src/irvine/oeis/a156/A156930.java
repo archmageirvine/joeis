@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156930 G.f. of the z^3 coefficients of the FP1 in the fourth column of the A156921 matrix
+ * A156930 G.f. of the z^3 coefficients of the FP1 in the fourth column of the A156921 matrix.
  * Recurrence: a(n)=40*a(n-1)-755*a(n-2)+8946*a(n-3)-74677*a(n-4)+467156*a(n-5)-2274363*a(n-6)+8833486*a(n-7)-27833039*a(n-8)+71958408*a(n-9)-153781873*a(n-10)+272810702*a(n-11)-402324879*a(n-12)+492639700*a(n-13)-498877265*a(n-14)+414825042*a(n-15)-280100140*a(n-16)+151065320*a(n-17)-63500432*a(n-18)+20037984*a(n-19)-4463424*a(n-20)+625536*a(n-21)-41472*a(n-22)
  * @author Georg Fischer
  */

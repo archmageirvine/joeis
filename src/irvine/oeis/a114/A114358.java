@@ -5,7 +5,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114358 Let M(n) be the n X n matrix m(i,j)=min(i,j) for 1<=i,j<=n then a(n) is the trace of M(n)^(-6).
+ * A114358 Let M(n) be the n X n matrix m(i,j)=min(i,j) for 1&lt;=i,j&lt;=n then a(n) is the trace of M(n)^(-6).
  * Lin.rec. signature: (2,-1)
  * @author Georg Fischer
  */

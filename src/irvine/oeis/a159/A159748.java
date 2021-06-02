@@ -5,7 +5,7 @@ package irvine.oeis.a159;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A159748 If an array is made of columns of -nacci sequences, fibo-, tribo- etc. all starting w. 1, 1, 2 etc, the NW to SE diagonals can be extended by computation. The above is diagonal 11. See A159741 for details.
+ * A159748 If an array is made of columns of -nacci sequences, fibo-, tribo- etc. all starting w. 1,1,2 etc, the NW to SE diagonals can be extended by computation. The above is diagonal 11. See A159741 for details.
  * Recurrence: a(n)=3*a(n-1)-2*a(n-2)
  * @author Georg Fischer
  */

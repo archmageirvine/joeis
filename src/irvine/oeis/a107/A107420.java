@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107420 a(n) = C(n+5, 5)*C(n+8, 8).
+ * A107420 a(n) = C(n+5,5)*C(n+8,8).
  * Lin.rec. signature: (14,-91, 364,-1001, 2002,-3003, 3432,-3003, 2002,-1001, 364,-91, 14,-1)
  * @author Georg Fischer
  */

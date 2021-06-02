@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131498 For D_2 type groups as polyhedra: {F,V,E,dimension}->{n+2, 2*n, 3*n, 2*n*(2*n-1)/2} such that Euler's equation is true: V=E-F+2.
+ * A131498 For D_2 type groups as polyhedra: {F,V,E,dimension}-&gt;{n+2,2*n,3*n,2*n*(2*n-1)/2} such that Euler's equation is true: V=E-F+2.
  * Recurrence: a(n)=3*a(n-4)-3*a(n-8)+a(n-12)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273347 The sum of the areas of the bargraphs of semiperimeter n (n>=2).
+ * A273347 The sum of the areas of the bargraphs of semiperimeter n (n&gt;=2).
  * Recurrence: a(n)=((69-115*n+28*n^2)*a(n-1)-(264-265*n+52*n^2)*a(n-2)+(3*(29-29*n+4*n^2))*a(n-3)-(3*(10-21*n+4*n^2))*a(n-4)+(4*n-9)*(5*n-29)*a(n-5)+(4*n-13)*(n-6)*a(n-6)+(n-7)*(4*n-9)*a(n-7))/(n*(4*n-13))
  * @author Georg Fischer
  */

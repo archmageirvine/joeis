@@ -5,7 +5,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331328 Evaluation of the Little-Schröder polynomials at 1/2 and normalized with 2^n.
+ * A331328 Evaluation of the Little-Schr\u00f6der polynomials at 1/2 and normalized with 2^n.
  * Recurrence: a(n)=(60*(n-3)*a(n-3)+(282-184*n)*a(n-2)+(27*n-18)*a(n-1))/n
  * @author Georg Fischer
  */

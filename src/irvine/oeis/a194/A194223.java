@@ -5,7 +5,7 @@ package irvine.oeis.a194;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A194223 a(n) = [sum{(k/6) : 1<=k<=n}], where [ ]=floor, ( )=fractional part.
+ * A194223 a(n) = [sum{(k/6) : 1&lt;=k&lt;=n}], where [ ]=floor, ( )=fractional part.
  * Recurrence: a(n)=a(n-1)+a(n-12)-a(n-13)
  * @author Georg Fischer
  */

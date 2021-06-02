@@ -5,7 +5,7 @@ package irvine.oeis.a341;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A341744 a(0)=1, a(1)=2; for n > 1, a(n) = a(n - a(n-2)) + n.
+ * A341744 a(0)=1, a(1)=2; for n &gt; 1, a(n) = a(n - a(n-2)) + n.
  * Lin.rec. signature: (2,-2, 2,-1)
  * @author Georg Fischer
  */

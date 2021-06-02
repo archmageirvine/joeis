@@ -5,7 +5,7 @@ package irvine.oeis.a341;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A341704 a(n) = 20*binomial(n, 6) + 2*binomial(n, 3) + 1.
+ * A341704 a(n) = 20*binomial(n,6) + 2*binomial(n,3) + 1.
  * Lin.rec. signature: (7,-21, 35,-35, 21,-7, 1)
  * @author Georg Fischer
  */

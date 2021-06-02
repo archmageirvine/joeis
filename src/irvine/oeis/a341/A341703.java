@@ -5,7 +5,7 @@ package irvine.oeis.a341;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A341703 a(n) = 6*binomial(n, 4) + 2*binomial(n, 2) + 1.
+ * A341703 a(n) = 6*binomial(n,4) + 2*binomial(n,2) + 1.
  * Lin.rec. signature: (5,-10, 10,-5, 1)
  * @author Georg Fischer
  */

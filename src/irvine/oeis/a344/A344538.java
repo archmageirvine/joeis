@@ -5,7 +5,7 @@ package irvine.oeis.a344;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A344538 Lexicographically earliest sequence such that |a(n+1)-a(n)| is a cube > 1 and no number occurs twice; a(0) = 0.
+ * A344538 Lexicographically earliest sequence such that |a(n+1)-a(n)| is a cube &gt; 1 and no number occurs twice; a(0) = 0.
  * Lin.rec. signature: (2,-1, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0, 0,-1, 2,-1, 0, 0, 0, 0,-1, 2,-1)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ package irvine.oeis.a341;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A341248 a(n) = 5*a(n-1) - 4*a(n-3) for n >= 4, where a(1) = 1, a(2) = 4, a(3) = 18.
+ * A341248 a(n) = 5*a(n-1) - 4*a(n-3) for n &gt;= 4, where a(1) = 1, a(2) = 4, a(3) = 18.
  * Lin.rec. signature: (5, 0,-4)
  * @author Georg Fischer
  */

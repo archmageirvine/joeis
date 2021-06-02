@@ -5,7 +5,7 @@ package irvine.oeis.a339;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A339828 a(n) = 4*a(n-1) - 2*a(n-2) + a(n-3) - 4*a(n-4) + a(n-5) for n >= 6, where a(1) = 1, a(2) = 3, a(3) = 5, a(4) = 16, a(5) = 53.
+ * A339828 a(n) = 4*a(n-1) - 2*a(n-2) + a(n-3) - 4*a(n-4) + a(n-5) for n &gt;= 6, where a(1) = 1, a(2) = 3, a(3) = 5, a(4) = 16, a(5) = 53.
  * Lin.rec. signature: (4,-2, 1,-4, 2)
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006509 Cald's sequence: a(n+1)=a(n)-p(n) if new and &gt;0, else a(n)+p(n) if new, otherwise 0, where p(n) = n-th prime.
+ * A006509 Cald's sequence: a(n+1) = a(n) - prime(n) if that value is positive and new, otherwise a(n) + prime(n) if new, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A006509 implements Sequence {

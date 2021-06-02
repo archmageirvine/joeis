@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108189 a(n) = (n-1)*(a(n-2)+a(n-3))
+ * A108189 a(n) = (n-1)*(a(n-2)+a(n-3)).
  * Recurrence: a(n)=(n-1)*(a(n-2)+a(n-3))
  * @author Georg Fischer
  */

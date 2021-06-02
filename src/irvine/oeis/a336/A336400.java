@@ -5,7 +5,7 @@ package irvine.oeis.a336;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A336400 The hafnian of a symmetric Toeplitz matrix of order 2*n, n>=2 with the first row (0, 2, 1,..., 1, 2); a(0)=1, a(1)=2.
+ * A336400 The hafnian of a symmetric Toeplitz matrix of order 2*n, n&gt;=2 with the first row (0,2,1,...,1,2); a(0)=1, a(1)=2.
  * Recurrence: a(n)=((22*n^2-74*n+43)*a(n-1)+(10*n^2-54*n+77)*a(n-2)+5*(n-4)*a(n-3))/(11*n-29)
  * @author Georg Fischer
  */

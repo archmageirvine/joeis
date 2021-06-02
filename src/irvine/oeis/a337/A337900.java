@@ -5,7 +5,7 @@ package irvine.oeis.a337;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A337900 The number of walks of length 2n on the square lattice that start from the origin (0, 0) and end at the vertex (2, 0).
+ * A337900 The number of walks of length 2n on the square lattice that start from the origin (0,0) and end at the vertex (2,0).
  * Recurrence: (n-1)^2*(n+1)^2*a(n)-4*n^2*(2*n-1)^2*a(n-1)=0
  * @author Georg Fischer
  */

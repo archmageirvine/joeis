@@ -5,7 +5,7 @@ package irvine.oeis.a179;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A179609 a(n)=(5-(-1)^n-6*n)*2^(n-2)
+ * A179609 a(n)=(5-(-1)^n-6*n)*2^(n-2).
  * Lin.rec. signature: (2, 4,-8)
  * @author Georg Fischer
  */

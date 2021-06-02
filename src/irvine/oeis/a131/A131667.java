@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131667 List of triples 2n, 1-2n, 0, n >= 1.
+ * A131667 List of triples 2n, 1-2n, 0, n &gt;= 1.
  * Lin.rec. signature: (-1,-1, 1, 1, 1)
  * @author Georg Fischer
  */

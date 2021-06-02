@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107419 a(n) = C(n+4, 4)*C(n+7, 7).
+ * A107419 a(n) = C(n+4,4)*C(n+7,7).
  * Lin.rec. signature: (12,-66, 220,-495, 792,-924, 792,-495, 220,-66, 12,-1)
  * @author Georg Fischer
  */

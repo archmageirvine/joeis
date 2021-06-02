@@ -5,7 +5,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162010 Fifth right hand column of the EG1 triangle A162005
+ * A162010 Fifth right hand column of the EG1 triangle A162005.
  * Recurrence: a(n)=295*a(n-1)-36729*a(n-2)+2549775*a(n-3)-109746165*a(n-4)+3080128275*a(n-5)-57713313405*a(n-6)+727045264875*a(n-7)-6122436806115*a(n-8)+33837597147925*a(n-9)-119061300168619*a(n-10)+257794693911405*a(n-11)-339251103039591*a(n-12)+264193039731825*a(n-13)-112000136889375*a(n-14)+19937341265625*a(n-15)
  * @author Georg Fischer
  */

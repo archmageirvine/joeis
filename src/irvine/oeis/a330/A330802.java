@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330802 Evaluation of the Big-Schröder polynomials at 1/2 and normalized with 2^n.
+ * A330802 Evaluation of the Big-Schr\u00f6der polynomials at 1/2 and normalized with 2^n.
  * Recurrence: a(n)=((24-12*n)*a(n-3)+(32*n-10)*a(n-2)+(9*n-9)*a(n-1))/(n+1)
  * @author Georg Fischer
  */

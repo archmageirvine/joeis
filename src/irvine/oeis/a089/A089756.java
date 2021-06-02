@@ -5,7 +5,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089756 a(1)=1 and a(i+1)=a(i)+9 if a(i)<=35, and a(i+1)=a(i)-35 if a(i)>35.
+ * A089756 a(1)=1 and a(i+1)=a(i)+9 if a(i)&lt;=35, and a(i+1)=a(i)-35 if a(i)&gt;35.
  * Lin.rec. signature: (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1)
  * @author Georg Fischer
  */

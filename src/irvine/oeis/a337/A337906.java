@@ -5,7 +5,7 @@ package irvine.oeis.a337;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A337906 The number of walks of n steps on the hexagonal lattice that start at the origin and end at the non-adjacent vertex (2, 0).
+ * A337906 The number of walks of n steps on the hexagonal lattice that start at the origin and end at the non-adjacent vertex (2,0).
  * Recurrence: (n-2)*(3*n^2-5*n-20)*(n+2)^2*a(n)-n*(3*n^4-2*n^3+n^2-130*n-208)*a(n-1)-24*n*(n-1)*(n-3)*(3*n^2+7*n-2)*a(n-2)-36*n*(n-1)*(n-2)*(3*n^2+n-22)*a(n-3)=0
  * @author Georg Fischer
  */

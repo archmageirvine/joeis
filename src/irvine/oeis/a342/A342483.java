@@ -5,7 +5,7 @@ package irvine.oeis.a342;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A342483 a(n) = binomial(n, 2)*(2^(n-2) - n).
+ * A342483 a(n) = binomial(n,2)*(2^(n-2) - n).
  * Lin.rec. signature: (10,-42, 96,-129, 102,-44, 8)
  * @author Georg Fischer
  */

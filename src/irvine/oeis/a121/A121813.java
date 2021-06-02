@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121813 a(n) = sum_{j=1..4} product_{k=1..4, k<>j} a(n-k).
+ * A121813 a(n) = sum_{j=1..4} product_{k=1..4, k&lt;&gt;j} a(n-k).
  * Recurrence: a(n)=a(n-4)*a(n-3)*a(n-2)+a(n-4)*a(n-3)*a(n-1)+a(n-4)*a(n-2)*a(n-1)+a(n-3)*a(n-2)*a(n-1)
  * @author Georg Fischer
  */

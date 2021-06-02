@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117439 Expansion of (1-x^2)/(1-4x-2x^2+x^4).
+ * A117439 Expansion of (1-x^2)/(1 -4*x -2*x^2 +x^4).
  * @author Georg Fischer
  */
 public class A117439 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070959 First minimum value > 0 of the form x^3-k^2 when k > n^3.
+ * A070959 First minimum value &gt; 0 of the form x^3-k^2 when k &gt; n^3.
  * Recurrence: a(n)=4*a(n-2)-6*a(n-4)+4*a(n-6)-a(n-8)
  * @author Georg Fischer
  */

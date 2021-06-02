@@ -5,7 +5,7 @@ package irvine.oeis.a163;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A163933 Third right hand column of triangle A163932
+ * A163933 Third right hand column of triangle A163932.
  * Lin.rec. signature: (7,-21, 35,-35, 21,-7, 1)
  * @author Georg Fischer
  */

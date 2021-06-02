@@ -5,7 +5,7 @@ package irvine.oeis.a341;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A341597 a(n) = A144066(n+3, 3).
+ * A341597 a(n) = A144066(n+3,3).
  * Lin.rec. signature: (7,-21, 35,-35, 21,-7, 1)
  * @author Georg Fischer
  */

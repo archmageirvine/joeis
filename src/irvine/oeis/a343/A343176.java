@@ -5,7 +5,7 @@ package irvine.oeis.a343;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A343176 a(0)=3; for n > 0, a(n) = 2^(2*n) + 3*2^(n-1) + 1.
+ * A343176 a(0)=3; for n &gt; 0, a(n) = 2^(2*n) + 3*2^(n-1) + 1.
  * Lin.rec. signature: (7,-14, 8)
  * @author Georg Fischer
  */

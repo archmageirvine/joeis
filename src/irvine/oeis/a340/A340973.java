@@ -5,7 +5,7 @@ package irvine.oeis.a340;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A340973 Generating function Sum_{n >= 0} a(n)*x^n = 1/sqrt((1-x)*(1-13*x)).
+ * A340973 Generating function Sum_{n &gt;= 0} a(n)*x^n = 1/sqrt((1-x)*(1-13*x)).
  * Recurrence: n*a(n)=7*(2*n-1)*a(n-1)-13*(n-1)*a(n-2)
  * @author Georg Fischer
  */

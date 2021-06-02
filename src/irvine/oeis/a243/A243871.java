@@ -5,7 +5,7 @@ package irvine.oeis.a243;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A243871 Number of Dyck paths of semilength n having exactly 1 occurrence of the consecutive steps UDUUUDDDUD (with U=(1, 1), D=(1,-1)).
+ * A243871 Number of Dyck paths of semilength n having exactly 1 occurrence of the consecutive steps UDUUUDDDUD (with U=(1,1), D=(1,-1)).
  * Recurrence: a(n)=(2*(2*n-17)*(2*n-19)*(2*n-9)*a(n-1)-(2*n-19)*(6*n^2-75*n+208)*a(n-4)+2*(2*n-17)*(10*n^2-136*n+387)*a(n-5)-(2*n-19)*(6*n^2-75*n+212)*a(n-8)+(32*n^3-704*n^2+4940*n-10850)*a(n-9)-(2*n-17)*(2*n-9)*(n-14)*a(n-10)-(2*n-19)*(n-8)*(2*n-9)*a(n-12)+2*(2*n-9)*(2*n^2-36*n+161)*a(n-13)-(n-10)*(2*n-17)*(2*n-9)*a(n-14))/((2*n-17)*(2*n-19)*(n-4))
  * @author Georg Fischer
  */

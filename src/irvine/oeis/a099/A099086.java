@@ -5,7 +5,6 @@ package irvine.oeis.a099;
 import irvine.math.z.Z;
 import irvine.oeis.a006.A006966;
 
-
 /**
  * A099086 A bisection of A006966.
  * @author Georg Fischer
@@ -14,8 +13,7 @@ public class A099086 extends A006966 {
   
   @Override
   public Z next() {
-    final Z result = super.next();
     super.next();
-    return result;
+    return super.next();
   }
 }

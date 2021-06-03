@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A337905 The number of walks of n steps on the hexagonal lattice that start at the origin and end at the adjacent vertex (1,0).
- * Recurrence: (n+1)^2*a(n)-n*(n+1)*a(n-1)-24n^2*a(n-2)-36*n*(n-1)*a(n-3)=0
+ * Recurrence: <code>(n+1)^2*a(n)-n*(n+1)*a(n-1)-24n^2*a(n-2)-36*n*(n-1)*a(n-3)=0</code>
  * @author Georg Fischer
  */
 public class A337905 extends HolonomicRecurrence {

@@ -132,7 +132,6 @@ public class A048139 implements Sequence {
 
   private int mN = 0;
 
-  // this is just prod(1+(3*k+1)) -- which is not the right answer
   private long count(final int n, final int part, final int k) {
     if (n == 0) {
       return 1;
@@ -151,6 +150,7 @@ public class A048139 implements Sequence {
     return c;
   }
 
+  @Override
   public Z next() {
     ++mN;
     final int j = 3 * ((mN - 1) / 3) + 1;

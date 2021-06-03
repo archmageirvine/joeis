@@ -207,7 +207,9 @@ final class ResidueSearchZ {
         System.out.println("# Results below here might not be complete");
         limitMessage = true;
       }
-      System.out.println(v + " " + e.getValue());
+      if (e.getValue() >= ways) {
+        System.out.println(v + " " + e.getValue());
+      }
     }
   }
 }

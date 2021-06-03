@@ -37,8 +37,8 @@ public class A048139 implements Sequence {
     return prt.size() + " " + prt;
   }
 
-  @Override
-  public Z next() {
+  //@Override
+  public Z nextX() {
     if (mC == null) {
       mC = Collections.singleton(Collections.singleton(new Triple<>(0, 0, 0)));
     } else {
@@ -128,6 +128,39 @@ public class A048139 implements Sequence {
       System.out.println(toString(set));
     }
     return Z.valueOf(mC.size());
+  }
+
+  private int mN = 0;
+
+  // this is just prod(1+(3*k+1)) -- which is not the right answer
+  private long count(final int n, final int part, final int k) {
+    if (n == 0) {
+      return 1;
+    }
+    assert n > 0;
+    final int f = (part - 1) / 3 - k;
+    long c = 0;
+    for (int j = part; j > 0; j -= 3) {
+      for (int u = k - 1; u > 0; --u) {
+        final int g = (j - 1) / 3 - u;
+        if (g <= f - 2 * k + 1) {
+          c += count(n - j, j - 3, u);
+        }
+      }
+    }
+    return c;
+  }
+
+  public Z next() {
+    ++mN;
+    final int j = 3 * ((mN - 1) / 3) + 1;
+    long cnt = 0;
+    for (int i = j; i > 0; i -= 3) {
+      for (int u = i + 10; u > 0; --u) {
+        cnt += count(mN, i, u);
+      }
+    }
+    return Z.valueOf(cnt);
   }
 }
 

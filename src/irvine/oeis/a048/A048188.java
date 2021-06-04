@@ -1,0 +1,17 @@
+package irvine.oeis.a048;
+
+import irvine.math.z.Euler;
+import irvine.math.z.Z;
+import irvine.oeis.a005.A005114;
+
+/**
+ * A048188 a(n)=phi(n-th untouchable number, A005114[ n ]).
+ * @author Sean A. Irvine
+ */
+public class A048188 extends A005114 {
+
+  @Override
+  public Z next() {
+    return Euler.phi(super.next());
+  }
+}

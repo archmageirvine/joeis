@@ -132,18 +132,19 @@ public class A048139 implements Sequence {
 
   private int mN = 0;
 
-  private long count(final int n, final int part, final int k) {
-    if (n == 0) {
+  private long count(final int n, final int prevP, final int prevFace, final int prevK) {
+    if (n <= 0) {
       return 1;
     }
     assert n > 0;
-    final int f = (part - 1) / 3 - k;
+    System.out.println("n=" + n + " f=" + prevFace + " k=" + prevK + " p=" + prevP);
     long c = 0;
-    for (int j = part; j > 0; j -= 3) {
-      for (int u = k - 1; u > 0; --u) {
-        final int g = (j - 1) / 3 - u;
-        if (g <= f - 2 * k + 1) {
-          c += count(n - j, j - 3, u);
+    for (int k = 0; k < prevK; ++k) {
+      //for (int f = 0; f <= prevFace - 2 * prevK + 1; ++f) {
+      for (int f = 0; f <= prevFace - 2 * prevK + 1; ++f) {
+        final int p = 3 * (f - k) + 1;
+        if (p < prevP) {
+          c += count(n - p, prevP, f, k);
         }
       }
     }
@@ -153,14 +154,8 @@ public class A048139 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final int j = 3 * ((mN - 1) / 3) + 1;
-    long cnt = 0;
-    for (int i = j; i > 0; i -= 3) {
-      for (int u = i + 10; u > 0; --u) {
-        cnt += count(mN, i, u);
-      }
-    }
-    return Z.valueOf(cnt);
+    System.out.println("Trying for " + mN);
+    return Z.valueOf(count(mN, mN + 1, mN + 1, mN + 1));
   }
 }
 

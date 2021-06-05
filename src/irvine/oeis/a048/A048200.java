@@ -6,11 +6,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048200.
+ * A048200 Minimal length pair-exchange / set-rotate sequence to reverse n distinct ordered elements.
  * @author Sean A. Irvine
  */
 public class A048200 implements Sequence {
 
+  // Brute force, breadth first search.
   // We represent states as a long, using 4-bits per element.
   // This means we can run out to n=16 (in theory).
   // Do a breadth first search looking for the target.

@@ -6,7 +6,7 @@ package irvine.oeis.a087;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A087953 Floor((fibonacci(2*n+1)+1)/2).
+ * A087953 a(n) = floor((Fibonacci(2*n+1)+1)/2).
  * @author Georg Fischer
  */
 public class A087953 extends GeneratingFunctionSequence {

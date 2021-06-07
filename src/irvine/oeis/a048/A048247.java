@@ -20,7 +20,7 @@ public class A048247 implements Sequence {
   private Polynomial<Z> series(final int p, final int n) {
     Polynomial<Z> num = RING.one();
     Polynomial<Z> den = RING.one();
-    for (int k = 1, pk = p, e; (e = (pk - 1) / (p -1)) <= n; ++k, pk *= p) {
+    for (int k = 1, pk = p, e; (e = (pk - 1) / (p - 1)) <= n; ++k, pk *= p) {
       num = RING.multiply(num, RING.oneMinusXToTheN(p * e), n);
       den = RING.multiply(den, RING.oneMinusXToTheN(e), n);
     }

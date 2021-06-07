@@ -15,13 +15,17 @@ public class A004979 extends MemorySequence {
   private Z mPrev = null;
   private final Set<Z> mSeenDiff = new HashSet<>();
 
+  protected Z a2() {
+    return Z.THREE;
+  }
+
   @Override
   protected Z computeNext() {
     if (mPrev == null) {
       mPrev = Z.ONE;
     } else if (Z.ONE.equals(mPrev)) {
-      mPrev = Z.THREE;
-      mSeenDiff.add(Z.TWO);
+      mPrev = a2();
+      mSeenDiff.add(a2().subtract(1));
     } else {
       Z m = Z.ZERO;
       while (true) {

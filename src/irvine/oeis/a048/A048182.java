@@ -21,7 +21,7 @@ public class A048182 implements Sequence {
   public Z next() {
     ++mN;
     final TreeSet<Long> expanded = new TreeSet<>(); // values already encountered
-    TreeSet<Pair<Long, Long>> set = new TreeSet<>(Comparator.comparingLong((ToLongFunction<Pair<Long, Long>>) Pair::right).thenComparingLong(Pair::left));
+    final TreeSet<Pair<Long, Long>> set = new TreeSet<>(Comparator.comparingLong((ToLongFunction<Pair<Long, Long>>) Pair::right).thenComparingLong(Pair::left));
     set.add(new Pair<>(mN, 0L));
     while (true) {
       final Pair<Long, Long> e = set.pollFirst();

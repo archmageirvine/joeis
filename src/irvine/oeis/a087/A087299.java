@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A087299 Ratio of volume of n-dimensional ball to circumscribing n-cube is Pi^floor(n/2) divided by a(n).
- * Recurrence: a(n) = 2*n * a(n-2) if n>=2.
+ * Recurrence: a(n) = 2*n * a(n-2) if n&gt;=2.
  * @author Georg Fischer
  */
 public class A087299 extends HolonomicRecurrence {

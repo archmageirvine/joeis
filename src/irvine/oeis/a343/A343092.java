@@ -29,8 +29,8 @@ public class A343092 extends A342989 {
       System.out.println("rev=" + rev);
       // todo the following stalls -- I thought may be due to Z[x] where sqrt has known problems
       // but this is worse Z[x,y,z]
-      //final Polynomial<Polynomial<Polynomial<Z>>> sqrt = XRING.sqrt(rev, mN + 1);
-      final Polynomial<Polynomial<Polynomial<Z>>> sqrt = rev; // todo bogus
+      final Polynomial<Polynomial<Polynomial<Z>>> sqrt = XRING.sqrt(rev, mN + 1);
+      //final Polynomial<Polynomial<Polynomial<Z>>> sqrt = rev; // todo bogus
       mRow = sqrt.coeff(mN).coeff(1);
     }
     return mRow.coeff(mM);

@@ -46,7 +46,7 @@ public class A342989 implements Sequence {
 
   protected Polynomial<Polynomial<Polynomial<Z>>> f(final long n, final long m) {
     final Matrix<Polynomial<Z>> q = mq(n, m, RING.x());
-    Polynomial<Polynomial<Polynomial<Z>>> f = XRING.empty();
+    final Polynomial<Polynomial<Polynomial<Z>>> f = XRING.empty();
     for (int row = 0; row < q.rows(); ++row) {
       final Polynomial<Polynomial<Z>> ser = YRING.empty();
       for (int col = 0; col < q.cols(); ++col) {

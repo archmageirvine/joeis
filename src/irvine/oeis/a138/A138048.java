@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A138048 Numbers n such that 15^n + 2 is prime.
+ * A138048 Numbers k such that 15^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A138048 extends PrimePositionSubsequence {

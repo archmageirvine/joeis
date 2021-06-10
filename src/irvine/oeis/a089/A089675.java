@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A089675 Numbers n such that 9*R_n - 2 is a prime number, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A089675 Numbers k such that 10^k - 3 is prime.
  * @author Georg Fischer
  */
 public class A089675 extends PrimePositionSubsequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A344071 Number of 2n-step self-avoiding cycles on the hydrogen peroxide lattice.
+ * A344071 Number of 2n-step self-avoiding cycles on the Laves graph.
  * @author Sean A. Irvine
  */
 public class A344071 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a095;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A095004 a(n) = A076765(n-1) + A076765(n-2).
+ * A095004 a(n) = 9*a(n-1) - 9*a(n-2) + a(n-3); given a(1) = 1, a(2) = 10, a(3) = 81.
  * Recurrence: a(n+3)=9*a(n+2)-9*(n+1)+a(n)
  * @author Georg Fischer
  */

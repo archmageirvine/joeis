@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A048232 a(n)=least m such that row m of T contains n, array T given.
+ * A048232 a(n) is the least m such that row m of T contains n, array T given by A048225.
  * @author Sean A. Irvine
  */
 public class A048232 extends A048225 {

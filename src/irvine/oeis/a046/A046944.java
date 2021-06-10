@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046944 Number of self-avoiding walks of length n on hydrogen peroxide lattice.
+ * A046944 Number of self-avoiding walks of length n on the Laves graph.
  * @author Sean A. Irvine
  */
 public class A046944 implements Sequence {

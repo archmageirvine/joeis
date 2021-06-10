@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
- * A048234 a(n)=T(2n-1,n), array T given by A048225.
+ * A048234 a(n) = T(2n-1,n), array T given by A048225.
  * @author Sean A. Irvine
  */
 public class A048234 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197978 Round((5*n+1/n)^n).
+ * A197978 a(n) = round((5*n+1/n)^n).
  * @author Georg Fischer
  */
 public class A197978 extends A197975 {

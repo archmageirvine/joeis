@@ -16,7 +16,7 @@ public class A048251 extends MemoryFunction<Z, Pair<Integer, Integer>> implement
   // We have products of distinct primes, so sigma(n) = product_p (p+1) where p | n.
   // Further p+1 = 2^i * 3*j, so we need only remember (i,j) for each relevant p
 
-  private final MemorySequence mS = MemorySequence.cachedSequence(new A005105());
+  protected final MemorySequence mS = MemorySequence.cachedSequence(new A005105());
   private int mN = -1;
   private Z mBest = null;
 

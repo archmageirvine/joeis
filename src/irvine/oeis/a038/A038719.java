@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038719 Triangle T(n,k) (0&lt;=k&lt;=n) giving number of chains of length k in partially ordered set formed from subsets of n-set by inclusion.
+ * A038719 Triangle T(n,k) (0 &lt;= k &lt;= n) giving number of chains of length k in partially ordered set formed from subsets of n-set by inclusion.
  * @author Sean A. Irvine
  */
 public class A038719 implements Sequence {

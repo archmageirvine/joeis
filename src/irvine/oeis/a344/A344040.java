@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A344040 Number of n-step self-avoiding walks on the hydrogen peroxide lattice with no non-contiguous adjacencies.
+ * A344040 Number of n-step self-avoiding walks on the Laves graph with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A344040 implements Sequence {

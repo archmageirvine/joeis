@@ -8,6 +8,9 @@ import irvine.math.api.Field;
 import irvine.math.api.Group;
 import irvine.math.polynomial.Discriminant;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.PolynomialUtils;
+import irvine.math.z.Integers;
+import irvine.math.z.Z;
 
 /**
  * A polynomial where individuals elements are drawn from a field.
@@ -562,8 +565,22 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
    * @param n maximum degree
    * @return series for <code>sqrt(1+p)</code>.
    */
+  @SuppressWarnings("unchecked")
   public Polynomial<E> sqrt1p(final Polynomial<E> p, final int n) {
     // In rationals sqrt(1+x) = 1 + (1/2)x - (1/2)(1/4)x^2 + (1/2)(1/4)(3/6)x^3 - (1/2)(1/4)(3/6)(5/8)x^4 + ...
+
+    // This algorithm does not work well for integers -- in fact, it is likely to go into infinite loop.
+    // The following special cases attempt to circumvent this limitation by promoting up to the rationals
+    // doing the square root and reverting to integers.
+    if (mElementField instanceof Integers) {
+      // Try and make it work for Z[x] ...
+      return (Polynomial<E>) PolynomialUtils.qToZ(PolynomialUtils.QX.sqrt1p(PolynomialUtils.zToQ((Polynomial<Z>) p), n));
+    }
+    if (mElementField instanceof PolynomialRingField<?> && ((PolynomialRingField<?>) mElementField).mElementField instanceof Integers) {
+      // Try to make it work for Z[x,y] ...
+      return (Polynomial<E>) PolynomialUtils.qxToZx(PolynomialUtils.QXX.sqrt1p(PolynomialUtils.zxToQx((Polynomial<Polynomial<Z>>) p), n));
+    }
+
     Polynomial<E> s = one();
     if (!zero().equals(p)) {
       E coeff = mOne;

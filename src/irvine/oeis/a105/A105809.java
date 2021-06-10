@@ -6,7 +6,7 @@ import irvine.oeis.GeneratingFunctionTriangle;
 
 
 /**
- * A105809 A Fibonacci-Pascal matrix.
+ * A105809 Riordan array (1/(1-x-x^2), x/(1-x)).
  *
  * @author Georg Fischer
  */

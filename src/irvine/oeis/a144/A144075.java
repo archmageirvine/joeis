@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144075 Thickness of the hypercube graph Q_n.
+ * A144075 Duplicate of A008621.
  * @author Georg Fischer
  */
 public class A144075 extends GeneratingFunctionSequence {

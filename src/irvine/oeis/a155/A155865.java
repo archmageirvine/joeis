@@ -7,7 +7,7 @@ package irvine.oeis.a155;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A155865 T(n,k) = (n - 1)*binomial(n - 2, k - 1) for 1 &lt;= k &lt;= n - 1, n &gt;= 2, and T(n,0) = T(n,n) = 1 for n &gt;= 0, triangle read by rows.
+ * A155865 Triangle T(n,k) = (n-1)*binomial(n-2, k-1) for 1 &lt;= k &lt;= n-1, n &gt;= 2, and T(n,0) = T(n,n) = 1 for n &gt;= 0, read by rows.
  * @author Georg Fischer
  */
 public class A155865 extends GeneratingFunctionTriangle {

@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A157007 Numbers n such that 2^n + 27 is prime.
+ * A157007 Numbers k such that 2^k + 27 is prime.
  * @author Georg Fischer
  */
 public class A157007 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104455 Expansion of e.g.f. exp(5*x)*(BesselI(0,2*x)-BesselI(1,2*x)).
+ * A104455 Expansion of e.g.f. exp(5*x)*(BesselI(0,2*x) - BesselI(1,2*x)).
  * @author Georg Fischer
  */
 public class A104455 extends HolonomicRecurrence {

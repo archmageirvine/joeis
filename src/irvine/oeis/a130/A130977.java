@@ -5,7 +5,7 @@ package irvine.oeis.a130;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A130977 G.f.: 5/(2+3*sqrt(1-20*x)).
+ * A130977 G.f.: 5/(2 + 3*sqrt(1-20*x)).
  * @author Georg Fischer
  */
 public class A130977 extends HolonomicRecurrence {

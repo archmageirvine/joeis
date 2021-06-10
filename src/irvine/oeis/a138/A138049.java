@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A138049 Numbers n such that 21^n + 2 is prime.
+ * A138049 Numbers k such that 21^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A138049 extends PrimePositionSubsequence {

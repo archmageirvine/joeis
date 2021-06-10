@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A133591 ((p - 1)^(p^2) + 1)/p^3 for p = prime[n].
+ * A133591 a(n) = ((p-1)^(p^2) + 1)/p^3 where p = prime(n).
  *
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003557 n divided by largest squarefree divisor of n.
+ * A003557 n divided by largest squarefree divisor of n; if n = Product p(k)^e(k) then a(n) = Product p(k)^(e(k)-1), with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A003557 implements Sequence {

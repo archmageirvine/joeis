@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004978;
 
 /**
- * A048210 T(n,1)+T(n,n), array T given by A048201.
+ * A048210 T(n,1) + T(n,n), array T given by A048201.
  * @author Sean A. Irvine
  */
 public class A048210 extends A004978 {

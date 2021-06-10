@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A090649 Numbers n such that 9^n + 2 is prime.
+ * A090649 Numbers k such that 9^k + 2 is prime.
  * @author Georg Fischer
  */
 public class A090649 extends PrimePositionSubsequence {

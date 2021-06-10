@@ -6,6 +6,7 @@ import java.util.Set;
 
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
+import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -210,15 +211,61 @@ public final class PolynomialUtils {
     return res;
   }
 
+  private static final PolynomialRingField<Z> ZX = new PolynomialRingField<>(IntegerField.SINGLETON);
+  /** Polynomial field over the rationals. */
+  public static final PolynomialRingField<Q> QX = new PolynomialRingField<>(Rationals.SINGLETON);
+  /** Bivariate polynomial over the rationals. */
+  public static final PolynomialRingField<Polynomial<Q>> QXX = new PolynomialRingField<>(QX);
+  private static final PolynomialRingField<Polynomial<Z>> ZXX = new PolynomialRingField<>(ZX);
+
   /**
    * Promote an integer polynomial to a rational polynomial.
    * @param p polynomial with integer coefficients
    * @return corresponding polynomial with rational coefficients
    */
   public static Polynomial<Q> zToQ(final Polynomial<Z> p) {
-    final Polynomial<Q> res = new Polynomial<>(p.getIndeterminate(), Q.ZERO, Q.ONE);
+    final Polynomial<Q> res = QX.empty();
     for (final Z v : p) {
       res.add(new Q(v));
+    }
+    return res;
+  }
+
+  /**
+   * Demote a rational polynomial to an integer polynomial.
+   * @param p polynomial with rational coefficients
+   * @return corresponding polynomial with integer coefficients
+   */
+  public static Polynomial<Z> qToZ(final Polynomial<Q> p) {
+    final Polynomial<Z> res = ZX.empty();
+    for (final Q v : p) {
+      res.add(v.toZ());
+    }
+    return res;
+  }
+
+  /**
+   * Promote an integer bivariate polynomial to a rational polynomial.
+   * @param p polynomial with integer coefficients
+   * @return corresponding polynomial with rational coefficients
+   */
+  public static Polynomial<Polynomial<Q>> zxToQx(final Polynomial<Polynomial<Z>> p) {
+    final Polynomial<Polynomial<Q>> res = QXX.empty();
+    for (final Polynomial<Z> v : p) {
+      res.add(zToQ(v));
+    }
+    return res;
+  }
+
+  /**
+   * Promote a rational bivariate polynomial to an integer polynomial.
+   * @param p polynomial with rational coefficients
+   * @return corresponding polynomial with integer coefficients
+   */
+  public static Polynomial<Polynomial<Z>> qxToZx(final Polynomial<Polynomial<Q>> p) {
+    final Polynomial<Polynomial<Z>> res = ZXX.empty();
+    for (final Polynomial<Q> v : p) {
+      res.add(qToZ(v));
     }
     return res;
   }

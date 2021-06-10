@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A128398 Numbers n such that n^2 divides 18^n-1.
+ * A128398 Numbers k such that k^2 divides 18^k - 1.
  *
  * @author Georg Fischer
  */

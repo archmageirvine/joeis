@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027441 a(n) = (n^4 + n)/2, (Row sums of an n X n X n magic cube, when it exists).
+ * A027441 a(n) = (n^4 + n)/2 (Row sums of an n X n X n magic cube, when it exists).
  * @author Sean A. Irvine
  */
 public class A027441 extends LinearRecurrence {

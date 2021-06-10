@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A087885 Numbers n such that 5^n + 2 is a prime.
+ * A087885 Numbers k such that 5^k + 2 is a prime.
  * @author Georg Fischer
  */
 public class A087885 extends PrimePositionSubsequence {

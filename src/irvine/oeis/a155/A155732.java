@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A155732 Numbers n such that n^3+8*n^2+10*n-8 is a prime.
+ * A155732 Numbers k such that k^3 + 8*k^2 + 10*k - 8 is prime.
  * @author Georg Fischer
  */
 public class A155732 extends PrimePositionSubsequence {

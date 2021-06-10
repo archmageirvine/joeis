@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A048175 Size of range 1...m generatable from the digits of an n-digit integer and + - x /.
+ * A048175 Size of range 1..m generatable from the digits of an n-digit integer and + - x /.
  * @author Sean A. Irvine
  */
 public class A048175 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010766 Triangle read by rows: row n gives the numbers floor(n/k), k=1..n.
+ * A010766 Triangle read by rows: row n gives the numbers floor(n/k), k = 1..n.
  * @author Sean A. Irvine
  */
 public class A010766 implements Sequence {

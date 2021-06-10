@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051941 Truncated triangular pyramid numbers: a(n) = (n-7)*(n^2+10*n-108)/6, n&gt;=8.
+ * A051941 Truncated triangular pyramid numbers: a(n) = (n-7)*(n^2 + 10*n - 108)/6, n &gt;= 8.
  * @author Sean A. Irvine
  */
 public class A051941 extends LinearRecurrence {

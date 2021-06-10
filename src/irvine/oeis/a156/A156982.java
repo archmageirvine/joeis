@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A156982 Numbers n such that 2^n + 29 is prime.
+ * A156982 Numbers k such that 2^k + 29 is prime.
  * @author Georg Fischer
  */
 public class A156982 extends PrimePositionSubsequence {

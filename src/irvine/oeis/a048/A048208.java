@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004978;
 
 /**
- * A048208 a(n)=T(2n-1,n), array T given by A048201.
+ * A048208 a(n) = T(2n-1,n), array T given by A048201.
  * @author Sean A. Irvine
  */
 public class A048208 implements Sequence {

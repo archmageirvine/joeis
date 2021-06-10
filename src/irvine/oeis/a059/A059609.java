@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A059609 Numbers n such that 2^n-7 is prime.
+ * A059609 Numbers k such that 2^k - 7 is prime.
  * @author Georg Fischer
  */
 public class A059609 extends PrimePositionSubsequence {

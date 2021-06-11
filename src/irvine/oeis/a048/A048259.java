@@ -21,6 +21,7 @@ public class A048259 implements Sequence {
     if (++mN == 0) {
       return Z.ONE;
     }
+    // Generate all combinations 0 <= z <= y <= x <= mN
     final HashSet<Triple<Long>> seen = new HashSet<>();
     for (long x = 0; x < mN; ++x) {
       for (long y = 0; y <= x; ++y) {
@@ -36,6 +37,7 @@ public class A048259 implements Sequence {
   }
 
   private void add(final HashSet<Triple<Long>> seen, final long x, final long y, final long z) {
+    // Multiply solution (x,y,z) by each unit, keep largest solution up to permutation
     long sx = x;
     long sy = y;
     long sz = z;

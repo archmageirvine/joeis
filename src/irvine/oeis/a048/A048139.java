@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Triple;
@@ -151,11 +152,81 @@ public class A048139 implements Sequence {
     return c;
   }
 
-  @Override
-  public Z next() {
+  //@Override
+  public Z nextXX() {
     ++mN;
     System.out.println("Trying for " + mN);
     return Z.valueOf(count(mN, mN + 1, mN + 1, mN + 1));
   }
+
+  // Attempt 3
+
+  private boolean isOverMajored(final int[] outer, final int[] inner) {
+    if (inner.length > outer.length) {
+      return false;
+    }
+    if (inner[0] >= outer[0]) {
+      return false;
+    }
+    for (int k = 1; k < inner.length; ++k) {
+      if (inner[k] > outer[k]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private long count(final int n, final int[] majors) {
+    if (n <= 0) {
+      return n == 0 ? 1 : 0; // todo can n < 0 occur
+    }
+    long cnt = 0;
+    for (int arm = (n - 1) / 3; arm >= 0; --arm) {
+      long c = 0;
+      if (arm == 0) {
+        c += count(n - 1, new int[0]);
+      } else {
+        final IntegerPartition part = new IntegerPartition(arm);
+        int[] p;
+        while ((p = part.next()) != null) {
+          if (!isOverMajored(majors, p)) {
+            c += count(n - 3 * arm - p.length, p);
+            //c += count(n - 3 * arm, p);
+          }
+        }
+        if (c == 0) {
+          break;
+        }
+        cnt += c;
+      }
+    }
+    return cnt;
+  }
+
+  @Override
+  public Z next() {
+    ++mN;
+    System.out.println("Trying for " + mN);
+    long count = 0;
+    for (int arm = (mN - 1) / 3; arm >= 0; --arm) {
+      long c = 0;
+      if (arm == 0) {
+        c += count(mN - 1, new int[0]);
+      } else {
+        final IntegerPartition part = new IntegerPartition(arm);
+        int[] p;
+        while ((p = part.next()) != null) {
+          c += count(mN - 3 * arm - p.length, p);
+        }
+      }
+      if (c == 0) {
+        System.out.println("Bailing out with arm size " + arm);
+        break;
+      }
+      count += c;
+    }
+    return Z.valueOf(count);
+  }
+
 }
 

@@ -15,6 +15,7 @@
     <suppress checks="FileLength" files=".*Modulo.java"/>
     <suppress checks="FileLength" files=".*Plantri.java"/>
     <suppress checks="FileLength" files=".*PlantriTest.java"/>
+    <suppress checks="FileLength" files=".*PolynomialRingField.java"/>
     <suppress checks="FileLength" files=".*SchreierSims.java"/>
     <suppress checks="FileLength" files=".*SymmetricGroupTest.java"/>
     <suppress checks="FileLength" files=".*Twiddler.java"/>

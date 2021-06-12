@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128336 Numbers n such that (6^n + 5^n)/11 is prime.
+ * A128336 Numbers k such that (6^k + 5^k)/11 is prime.
  * @author Georg Fischer
  */
 public class A128336 extends PrimePositionSubsequence {

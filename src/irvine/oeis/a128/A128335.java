@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128335 Numbers n such that (4^n + 5^n)/9 is prime.
+ * A128335 Numbers k such that (4^k + 5^k)/9 is prime.
  * @author Georg Fischer
  */
 public class A128335 extends PrimePositionSubsequence {

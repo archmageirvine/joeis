@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128340 Numbers n such that (11^n + 5^n)/16 is prime.
+ * A128340 Numbers k such that (11^k + 5^k)/16 is prime.
  * @author Georg Fischer
  */
 public class A128340 extends PrimePositionSubsequence {

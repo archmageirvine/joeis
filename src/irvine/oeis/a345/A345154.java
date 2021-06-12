@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345154.
+ * A345154 Numbers that are the sum of four third powers in exactly nine ways.
  * @author Sean A. Irvine
  */
 public class A345154 extends LimitedSumOfLikePowersSequence {

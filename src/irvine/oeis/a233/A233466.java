@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A233466 Numbers n such that phi(n) = (n-5)/2.
+ * A233466 Numbers k such that phi(k) = (k-5)/2.
  *
  * @author Georg Fischer
  */

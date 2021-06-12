@@ -16,7 +16,7 @@ public class A048259 implements Sequence {
 
   private long mN = -1;
 
-  private void add(final HashSet<Triple<Long>> seen, final long x, final long y, final long z) {
+  private void addCanon(final HashSet<Triple<Long>> seen, final long x, final long y, final long z) {
     // Multiply solution (x,y,z) by each unit, keep largest solution up to permutation
     long sx = x;
     long sy = y;
@@ -44,11 +44,9 @@ public class A048259 implements Sequence {
     final HashSet<Triple<Long>> seen = new HashSet<>();
     for (long x = 0; x < mN; ++x) {
       for (long y = 0; y <= x; ++y) {
-        for (long z = 0; z <= y; ++z) {
-          final long s = x + y + z;
-          if (s % mN == 0) {
-            add(seen, x, y, z);
-          }
+        final long z = (2 * mN - x - y) % mN;
+        if (z <= y) {
+          addCanon(seen, x, y, z);
         }
       }
     }

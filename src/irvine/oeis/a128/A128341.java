@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128341 Numbers n such that (12^n + 5^n)/17 is prime.
+ * A128341 Numbers k such that (12^k + 5^k)/17 is prime.
  * @author Georg Fischer
  */
 public class A128341 extends PrimePositionSubsequence {

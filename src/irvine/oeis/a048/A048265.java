@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002476;
 
 /**
- * A048265 Positive integers that aren't the sum of distinct primes of the form 6n+1.
+ * A048265 Positive integers that aren't the sum of distinct primes of the form 6k+1.
  * @author Sean A. Irvine
  */
 public class A048265 extends FiniteSequence {

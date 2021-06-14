@@ -1641,3 +1641,6 @@ A047875 Size of smallest polyomino with surround number n (the surround number o
 A047896 For given n, consider all 4-tuples P = (a,b,c,d) with P.P = n; let d = squared distance to the line OP from the closest point of Z^n (excluding the endpoints); sequence gives max_P d*n.
 A047947 a(n) is the number of k values for which A023193(k) = n.
 A047995 Number of impartial misere games born on or before day n.
+A048283 For k >= a(n), there are A048284(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
+A048284 For k >= A048283(n), there are a(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
+A048289 Number of Go games with exactly n moves.

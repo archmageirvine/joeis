@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128345 Numbers n such that (8^n - 5^n)/3 is prime.
+ * A128345 Numbers k such that (8^k - 5^k)/3 is prime.
  * @author Georg Fischer
  */
 public class A128345 extends PrimePositionSubsequence {

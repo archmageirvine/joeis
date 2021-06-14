@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128353 Numbers n such that (18^n - 5^n)/13 is prime.
+ * A128353 Numbers k such that (18^k - 5^k)/13 is prime.
  * @author Georg Fischer
  */
 public class A128353 extends PrimePositionSubsequence {

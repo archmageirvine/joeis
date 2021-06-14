@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A128446 Quotients A122000(p-1) / (2^p - 1), where p = Prime[n] for n&gt;1.
+ * A128446 Quotients A122000(p-1) / (2^p - 1), where p = prime(n) for n &gt; 1.
  *
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133667 a(n) = a(n-1)-25*a(n-2), a(0)=1, a(1)=5 .
+ * A133667 a(n) = a(n-1) - 25*a(n-2), a(0)=1, a(1)=5.
  * @author Georg Fischer
  */
 public class A133667 extends LinearRecurrence {

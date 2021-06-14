@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128354 Numbers n such that (19^n - 5^n)/14 is prime.
+ * A128354 Numbers k such that (19^k - 5^k)/14 is prime.
  * @author Georg Fischer
  */
 public class A128354 extends PrimePositionSubsequence {

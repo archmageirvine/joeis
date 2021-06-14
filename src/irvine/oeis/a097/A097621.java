@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A097621.
+ * A097621 In canonical prime factorization of n replace the k-th prime power with k.
  * @author Sean A. Irvine
  */
 public class A097621 extends A000961 {

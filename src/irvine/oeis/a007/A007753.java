@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007753 a(n) = Sum_{k=0..n-1) binomial(a(k)^2, k).
+ * A007753 a(n) = Sum_{k=0..n-1} binomial(a(k)^2, k).
  * @author Sean A. Irvine
  */
 public class A007753 extends MemorySequence {

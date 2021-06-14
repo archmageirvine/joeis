@@ -13,7 +13,7 @@ public class A025046 implements Sequence {
   private final Fast mPrime = new Fast();
   private int mN = 1;
 
-  private boolean is(final int p, final int n) {
+  private long least(final int p, final int n) {
     final boolean[] seen = new boolean[p];
     for (long k = 0; k < p; ++k) {
       seen[(int) ((k * k) % p)] = true;
@@ -36,12 +36,16 @@ public class A025046 implements Sequence {
             i = 0;
           }
           if (!seen[i]) {
-            return true;
+            return (k + 1) % p;
           }
         }
       }
     }
-    return false;
+    return -1;
+  }
+
+  protected Z select(final long p, final long least) {
+    return Z.valueOf(p);
   }
 
   @Override
@@ -50,8 +54,9 @@ public class A025046 implements Sequence {
     long p = 2;
     while (true) {
       p = mPrime.nextPrime(p);
-      if (is((int) p, mN)) {
-        return Z.valueOf(p);
+      final long least = least((int) p, mN);
+      if (least >= 0) {
+        return select(p, least);
       }
     }
   }

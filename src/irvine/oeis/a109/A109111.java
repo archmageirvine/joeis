@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109111 a(n) = (1/sqrt(595))((sqrt(595) + 26)(125 + 5sqrt(595))^n + (sqrt(595) - 26)(125 - 5sqrt(595))^n).
+ * A109111 a(n) = (1/sqrt(595))*((sqrt(595) + 26)*(125 + 5*sqrt(595))^n + (sqrt(595) - 26)*(125 - 5*sqrt(595))^n).
  * @author Georg Fischer
  */
 public class A109111 extends GeneratingFunctionSequence {

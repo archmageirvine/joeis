@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A127865 Number of square tiles in all tilings of a 2xn board with 1x1 and L-shaped tiles (where the L-shaped tiles cover 3 squares).
+ * A127865 Number of square tiles in all tilings of a 2 X n board with 1 X 1 and L-shaped tiles (where the L-shaped tiles cover 3 squares).
  * @author Georg Fischer
  */
 public class A127865 extends GeneratingFunctionSequence {

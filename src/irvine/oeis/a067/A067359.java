@@ -6,7 +6,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067359 Real part of (5+12i)^n.
+ * A067359 Real part of (5 + 12i)^n.
  * @author Georg Fischer
  */
 public class A067359 extends GeneratingFunctionSequence {

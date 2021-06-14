@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130781 Sequence is identical to its third differences: a(n+3)=3a(n+2)-3a(n+1)+2a(n), with a(0)=a(1)=1, a(2)=2.
+ * A130781 Sequence is identical to its third differences: a(n+3) = 3*a(n+2) - 3*a(n+1) + 2*a(n), with a(0)=a(1)=1, a(2)=2.
  * @author Sean A. Irvine
  */
 public class A130781 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128346 Numbers n such that (9^n - 5^n)/4 is prime.
+ * A128346 Numbers k such that (9^k - 5^k)/4 is prime.
  * @author Georg Fischer
  */
 public class A128346 extends PrimePositionSubsequence {

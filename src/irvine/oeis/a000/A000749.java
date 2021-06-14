@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000749 a(n) = 4a(n-1) - 6a(n-2) + 4a(n-3), n &gt; 3, with a(0)=a(1)=a(2)=0, a(3)=1.
+ * A000749 a(n) = 4*a(n-1) - 6*a(n-2) + 4*a(n-3), n &gt; 3, with a(0)=a(1)=a(2)=0, a(3)=1.
  * @author Sean A. Irvine
  */
 public class A000749 implements Sequence {

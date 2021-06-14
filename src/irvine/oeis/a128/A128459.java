@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128459 Numbers n such that 17^n - 2 is a prime.
+ * A128459 Numbers k such that 17^k - 2 is a prime.
  * @author Georg Fischer
  */
 public class A128459 extends PrimePositionSubsequence {

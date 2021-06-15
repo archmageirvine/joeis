@@ -1,5 +1,6 @@
 package irvine.oeis.a048;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -162,7 +163,7 @@ public class A048139 implements Sequence {
   // Attempt 3
 
   private boolean isOverMajored(final int[] outer, final int[] inner) {
-    if (inner.length > outer.length) {
+    if (inner.length >= outer.length) {
       return false;
     }
     if (inner[0] >= outer[0]) {
@@ -176,29 +177,32 @@ public class A048139 implements Sequence {
     return true;
   }
 
-  private long count(final int n, final int[] majors) {
-    if (n <= 0) {
-      return n == 0 ? 1 : 0; // todo can n < 0 occur
+  private long count(final int n, final int[] majors, final String prefix) {
+    System.out.println(n + " remains, major=" + Arrays.toString(majors));
+    if (n <= 1) {
+      return n == 0 || (n == 1 && majors[0] > 1) ? 1 : 0; // todo can n < 0 occur
     }
     long cnt = 0;
-    for (int arm = (n - 1) / 3; arm >= 0; --arm) {
+    for (int arm = (n - 1) / 3; arm > 0; --arm) {
       long c = 0;
       if (arm == 0) {
-        c += count(n - 1, new int[0]);
+        final long contrib = count(n - 1, new int[0], prefix + "  ");
+        c += contrib;
       } else {
         final IntegerPartition part = new IntegerPartition(arm);
         int[] p;
         while ((p = part.next()) != null) {
-          if (!isOverMajored(majors, p)) {
-            c += count(n - 3 * arm - p.length, p);
-            //c += count(n - 3 * arm, p);
+          if (isOverMajored(majors, p)) {
+            final long contrib = count(n - 3 * arm - 1, p, prefix + "  ");
+            System.out.println(prefix + Arrays.toString(p) + " contributes " + contrib);
+            c += contrib;
           }
         }
-        if (c == 0) {
-          break;
-        }
-        cnt += c;
       }
+      if (c == 0) {
+        break;
+      }
+      cnt += c;
     }
     return cnt;
   }
@@ -208,15 +212,18 @@ public class A048139 implements Sequence {
     ++mN;
     System.out.println("Trying for " + mN);
     long count = 0;
-    for (int arm = (mN - 1) / 3; arm >= 0; --arm) {
+    for (int arm = (mN - 1) / 3; arm > 0; --arm) {
       long c = 0;
       if (arm == 0) {
-        c += count(mN - 1, new int[0]);
+        c += count(mN - 1, new int[0], "  ");
       } else {
         final IntegerPartition part = new IntegerPartition(arm);
         int[] p;
         while ((p = part.next()) != null) {
-          c += count(mN - 3 * arm - p.length, p);
+          //final long pc = count(mN - 3 * arm - p.length, p, "  ");
+          final long pc = count(mN - 3 * arm - 1, p, "  ");
+          System.out.println(Arrays.toString(p) + " contributes " + pc);
+          c += pc;
         }
       }
       if (c == 0) {

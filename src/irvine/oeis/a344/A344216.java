@@ -5,7 +5,7 @@ package irvine.oeis.a344;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A344216 a(n) = n!*((n + 1)/2 + 2*Sum_{k=2..n-1}(n - k)/(k + 1)).
+ * A344216 a(n) = n!*((n+1)/2 + 2*Sum_{k=2..n-1}(n-k)/(k+1)).
  * Recurrence: a(n)=((2*n^2-5*n-1)*a(n-1)-(n^3-3*n^2+2*n)*a(n-2))/(n-3)
  * @author Georg Fischer
  */

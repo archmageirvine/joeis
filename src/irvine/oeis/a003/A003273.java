@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006991;
 
 /**
- * A003273 Congruent numbers: positive integers n for which there exists a right triangle having area n and rational sides.
+ * A003273 Congruent numbers: positive integers k for which there exists a right triangle having area k and rational sides.
  * @author Sean A. Irvine
  */
 public class A003273 extends A006991 {

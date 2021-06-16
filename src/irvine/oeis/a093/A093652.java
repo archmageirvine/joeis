@@ -6,7 +6,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093652 This divided by the corresponding entry from sequence A082630 gives the ohm value of a ladder of unit resistors measured from opposite corners.
+ * A093652 Let a(1) = 1, a(2) = 2, a(3) = 7, a(4) = 15 and for n &gt;= 5 set a(n) = (n*b(n) - b(n-2)) / 2, where b(n) = 4*b(n-2) - b(n-4) for n &gt;= 5 and b(1) = 1, b(2) = 2, b(3) = 5, b(4) = 8.
  * @author Georg Fischer
  */
 public class A093652 extends GeneratingFunctionSequence {

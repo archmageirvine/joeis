@@ -23,17 +23,13 @@ public class FactorDbFactorizer extends AbstractFactorizer {
   static HashSet<String> extractIds(final String page) {
     final HashSet<String> ids = new HashSet<>();
     int p = page.indexOf(ID_TAG); // want to ignore first one since it is what we searched for
-    final int endFirst = page.indexOf('"', p);
-    final String queryId = page.substring(p + ID_TAG.length(), endFirst);
     while ((p = page.indexOf(ID_TAG, p + 1)) != -1) {
       final int end = page.indexOf('"', p);
       if (end == -1) {
         throw new RuntimeException("Parsing problem");
       }
       final String id = page.substring(p + ID_TAG.length(), end);
-      if (!queryId.equals(id)) {
-        ids.add(id);
-      }
+      ids.add(id);
     }
     return ids;
   }
@@ -82,6 +78,7 @@ public class FactorDbFactorizer extends AbstractFactorizer {
       message("Querying URL for: " + n);
       final String page = IOUtils.readAll(new URL(QUERY_URL + n));
       message("Extracting factors");
+      //System.out.println(page);
       for (final String id : extractIds(page)) {
         message("id=" + id);
         final Z v;
@@ -93,9 +90,11 @@ public class FactorDbFactorizer extends AbstractFactorizer {
           v = getNumberFromId(id);
           status = v.isProbablePrime() ? FactorSequence.PROB_PRIME : FactorSequence.COMPOSITE;
         }
-        while (n.mod(v).isZero()) {
-          fs.add(v, status, exponent);
-          n = n.divide(v);
+        if (!n.equals(v)) {
+          while (n.mod(v).isZero()) {
+            fs.add(v, status, exponent);
+            n = n.divide(v);
+          }
         }
       }
     } catch (final IOException e) {

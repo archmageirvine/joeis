@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128070 Numbers n such that (3^n + 11^n)/14 is prime.
+ * A128070 Numbers k such that (3^k + 11^k)/14 is prime.
  * @author Georg Fischer
  */
 public class A128070 extends PrimePositionSubsequence {

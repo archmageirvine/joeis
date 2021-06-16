@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175691 a(n) is the smallest positive integer such a(n)*n is an anagram of a(n)*2.
+ * A175691 a(n) is the smallest positive integer such that a(n)*n is an anagram of a(n)*2.
  * @author Georg Fischer
  */
 public class A175691 extends FiniteSequence {

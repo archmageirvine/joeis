@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A056838 [n^2/9].
+ * A056838 a(n) = floor(n^2/9).
  * @author Georg Fischer
  */
 public class A056838 extends GeneratingFunctionSequence {

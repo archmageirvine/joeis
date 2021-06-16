@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A128287 Nonprime numbers n such that n divides A014137(n) = Partial sums of Catalan numbers (A000108).
+ * A128287 Nonprime numbers k such that k divides A014137(k).
  *
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035316 Sum of square divisors of n.
+ * A035316 Sum of the square divisors of n.
  * @author Sean A. Irvine
  */
 public class A035316 implements Sequence {

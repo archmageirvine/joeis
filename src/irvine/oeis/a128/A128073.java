@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A128073 Numbers n such that (3^n + 16^n)/19 is prime.
+ * A128073 Numbers k such that (3^k + 16^k)/19 is prime.
  * @author Georg Fischer
  */
 public class A128073 extends PrimePositionSubsequence {

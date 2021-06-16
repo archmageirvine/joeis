@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
 
 /**
- * A048342 Numbers n such that the concatenation of the numbers 1, 2, ..., n is a product of distinct primes.
+ * A048342 Numbers k such that the concatenation of the numbers 1, 2, ..., k is a product of distinct primes.
  * @author Sean A. Irvine
  */
 public class A048342 extends A007908 {

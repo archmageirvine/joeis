@@ -10,7 +10,7 @@ import irvine.math.group.IntegersMod;
  */
 public class A002329 implements Sequence {
 
-  protected Z mN = Z.ONE;
+  protected Z mN = Z.ZERO;
 
   @Override
   public Z next() {

@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A186638 a(0)=a(1)=a(2)=0; thereafter a(n) = n*a(n-1) + n*a(n-2)/(n-2) + (-1)^(n-1)*4/(n-2).
- * Recurrence (for n>2): (n-2)*a(n) = (n^2 - 3*n + 3)*a(n-1) + (n^2 - 3*n + 3)*a(n-2) + (n-1)*a(n-3).
+ * Recurrence (for n&gt;2): (n-2)*a(n) = (n^2 - 3*n + 3)*a(n-1) + (n^2 - 3*n + 3)*a(n-2) + (n-1)*a(n-3).
  * @author Georg Fischer
  */
 public class A186638 extends HolonomicRecurrence {

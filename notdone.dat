@@ -806,9 +806,6 @@ A010044 High-temperature expansion of susceptibility mu_2 for 4-d cubic lattice
 A010045 High-temperature expansion of susceptibility chi_4 for square lattice
 A010046 High-temperature expansion of susceptibility chi_4 for cubic lattice
 A010047 High-temperature expansion of susceptibility chi_4 for 4-d cubic lattice
-A010092 Weight distribution of d=4 Hamming code of length 63, finite
-A010093 Weight distribution of d=4 Hamming code of length 127, finite
-A010095 Weight distribution of d=4 Hamming code of length 255, finite
 A010101 Maximal size of binary code of length n and asymmetric distance 2
 A010102 Spontaneous magnetization coefficients for square lattice spin 1 Ising model
 A010103 Spontaneous magnetization coefficients for square lattice spin 2 Ising model

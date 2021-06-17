@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A122752 a(0) = 1; a(1) = 1; a(2) = 1; a(n) = (n-1)a(n-1)+(n-2)a(n-2)+(n-3)a(n-3) for n &gt;= 3.
- * Recurrence: a(n) = (n-1)a(n-1)+(n-2)a(n-2)+(n-3)a(n-3) for n >= 3.
+ * Recurrence: a(n) = (n-1)a(n-1)+(n-2)a(n-2)+(n-3)a(n-3) for n &gt;= 3.
  * @author Georg Fischer
  */
 public class A122752 extends HolonomicRecurrence {

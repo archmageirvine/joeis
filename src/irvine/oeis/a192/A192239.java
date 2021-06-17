@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A192239 Coefficient of x in the reduction of the polynomial x(x+1)(x+2)...(x+n-1) by x^2 -&gt; x+1.
- * Recurrence (for n>3): a(n) = 2*(n-1)*a(n-1) - (n^2-3*n+1)*a(n-2).
+ * Recurrence (for n&gt;3): a(n) = 2*(n-1)*a(n-1) - (n^2-3*n+1)*a(n-2).
  * @author Georg Fischer
  */
 public class A192239 extends HolonomicRecurrence {

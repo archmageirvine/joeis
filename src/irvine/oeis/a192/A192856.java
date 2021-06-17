@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A192856 Number of matchings in the n-sun graph.
- * Recurrence (for n>=7): (n-3)*a(n) = 3*(n-3)*a(n-1) + (n^2 - 4*n + 5)*a(n-2) - 3*(n-1)*a(n-3) + (n-1)*a(n-4).
+ * Recurrence (for n&gt;=7): (n-3)*a(n) = 3*(n-3)*a(n-1) + (n^2 - 4*n + 5)*a(n-2) - 3*(n-1)*a(n-3) + (n-1)*a(n-4).
  * @author Georg Fischer
  */
 public class A192856 extends HolonomicRecurrence {

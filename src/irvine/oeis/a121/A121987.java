@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A121987 a(n + 4) = (n + 2)*(a(n + 3) - a(n) + 1) for n &gt; 3, a(0) = a(1) = a(2) = a(3) = 1.
- * Recurrence: a(n + 4) = (n + 2)*(a(n + 3) - a(n) + 1) for n > 3
+ * Recurrence: a(n + 4) = (n + 2)*(a(n + 3) - a(n) + 1) for n &gt; 3
  * @author Georg Fischer
  */
 public class A121987 extends HolonomicRecurrence {

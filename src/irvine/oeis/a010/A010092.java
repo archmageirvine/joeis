@@ -3,13 +3,13 @@ package irvine.oeis.a010;
 // DO NOT EDIT here!
 
 /**
- * A010086 Weight distribution of d=3 Hamming code of length 31.
+ * A010092 Weight distribution of d=4 Hamming code of length 63.
  * @author Georg Fischer
  */
-public class A010086 extends A010085 {
+public class A010092 extends A010090 {
 
   /** Construct the sequence. */
-  public A010086() {
-    super(31);
+  public A010092() {
+    super(63);
   }
 }

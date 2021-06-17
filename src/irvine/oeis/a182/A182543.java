@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A182543 Penultimate diagonal of triangle in A145879.
- * Recurrence: (n-5)*a(n) = (2*n^2 - 15*n + 26)*a(n-1) - (n-4)^2*(n-3)*a(n-2) for n>=6.
+ * Recurrence: (n-5)*a(n) = (2*n^2 - 15*n + 26)*a(n-1) - (n-4)^2*(n-3)*a(n-2) for n&gt;=6.
  * @author Georg Fischer
  */
 public class A182543 extends HolonomicRecurrence {

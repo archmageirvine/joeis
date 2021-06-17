@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A156626 a(0)=1; a(1)=2; a(2)=6; a(n+1) = 2*(n+1)*a(n) - n^2*a(n-1), n &gt; 1.
- * Recurrence: a(n+1) = 2*(n+1)*a(n) - n^2*a(n-1),n > 1.
+ * Recurrence: a(n+1) = 2*(n+1)*a(n) - n^2*a(n-1),n &gt; 1.
  * @author Georg Fischer
  */
 public class A156626 extends HolonomicRecurrence {

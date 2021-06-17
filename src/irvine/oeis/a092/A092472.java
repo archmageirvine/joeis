@@ -6,7 +6,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A092472 a(n)=sum(i+j+k=n,(2n)!/(i+j)!/(j+k)!/(k+i)!) 0&lt;=i&lt;=n, 0&lt;=j&lt;=n, 0&lt;=k&lt;=n.
- * Recurrence (for n>3): (n-3)*n*a(n) = (17*n^2-55*n+24)*a(n-1) - 36*(n-2)*(2*n-3)*a(n-2).
+ * Recurrence (for n&gt;3): (n-3)*n*a(n) = (17*n^2-55*n+24)*a(n-1) - 36*(n-2)*(2*n-3)*a(n-2).
  * @author Georg Fischer
  */
 public class A092472 extends HolonomicRecurrence {

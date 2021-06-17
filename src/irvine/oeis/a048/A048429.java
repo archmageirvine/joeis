@@ -31,24 +31,58 @@ public class A048429 extends A002113 {
     return num;
   }
 
+  private Z closestPalindrome(final Z n) {
+    // in extreme cases there can be 2 solutions 100 -> 99 : 101, this picks the biggest
+    final String ns = n.toString();
+    if (StringUtils.isPalindrome(ns)) {
+      return n;
+    }
+    if ((ns.length() & 1) == 0) {
+      final String left = ns.substring(0, ns.length() / 2);
+      final String p1s = left + new StringBuilder(left).reverse();
+      final Z p1 = new Z(p1s);
+      final Z d = n.subtract(p1);
+      if (d.signum() < 0) {
+        final String l2 = new Z(left).subtract(1).toString();
+        final String p2s = l2 + new StringBuilder(l2).reverse();
+        final Z p2 = new Z(p2s);
+        final Z e = n.subtract(p2);
+        return e.abs().compareTo(d.abs()) < 0 ? p2 : p1;
+      } else {
+        final String l2 = new Z(left).add(1).toString();
+        final String p2s = l2 + new StringBuilder(l2).reverse();
+        final Z p2 = new Z(p2s);
+        final Z e = n.subtract(p2);
+        return e.abs().compareTo(d.abs()) < 0 ? p2 : p1;
+      }
+    } else {
+      final String left = ns.substring(0, (ns.length() + 1) / 2);
+      final String p1s = left + new StringBuilder(left.substring(0, left.length() - 1)).reverse();
+      final Z p1 = new Z(p1s);
+      final Z d = n.subtract(p1);
+      if (d.signum() < 0) {
+        final String l2 = new Z(left).subtract(1).toString();
+        final String p2s = l2 + new StringBuilder(l2.substring(0, l2.length() - 1)).reverse();
+        final Z p2 = new Z(p2s);
+        final Z e = n.subtract(p2);
+        return e.abs().compareTo(d.abs()) < 0 ? p2 : p1;
+      } else {
+        final String l2 = new Z(left).add(1).toString();
+        final String p2s = l2 + new StringBuilder(l2.substring(0, l2.length() - 1)).reverse();
+        final Z p2 = new Z(p2s);
+        final Z e = n.subtract(p2);
+        return e.abs().compareTo(d.abs()) < 0 ? p2 : p1;
+      }
+    }
+  }
+
   @Override
   public Z next() {
     mT = mT.multiply(10);
     final Z expected = getTarget().multiply(mT).floor();
     while (true) {
       final CR p = CR.valueOf(mP);
-      final String sden = p.divide(getTarget()).round().toString();
-
-      // Find closest palindrome to sden
-      final String palinDen;
-      if ((sden.length() & 1) == 0) {
-        final String left = sden.substring(0, sden.length() / 2);
-        palinDen = left + new StringBuilder(left).reverse();
-      } else {
-        palinDen = sden.substring(0, (sden.length() + 1) / 2) + new StringBuilder(sden.substring(0, sden.length() / 2)).reverse();
-      }
-      final Z den = new Z(palinDen);
-
+      final Z den = closestPalindrome(p.divide(getTarget()).round());
       final Z v = mP.multiply(mT).divide(den);
       if (v.equals(expected)) {
         return select(mP, den);
@@ -56,4 +90,5 @@ public class A048429 extends A002113 {
       mP = super.next();
     }
   }
+
 }

@@ -1625,7 +1625,7 @@ A047709 Low-temperature series in u = exp(-4J/kT) for ferromagnetic susceptibili
 A047710 Low temperature series associated with square lattice, depends A002979
 A047711 High-temperature coefficients for b.c.c. lattice.
 A047712 High-temperature coefficients for f.c.c. lattice.
-A047729 Number of score sequences in tournament with n players, when 3 points are awarded in each game, like A007747 (I tried, get close but no match)
+A047729 Number of score sequences in tournament with n players, when 3 points are awarded in each game (method of A007747 may not be applicable here)
 A047730 Number of score sequences in tournament with n players, when 4 points are awarded in each game
 A047731 Number of score sequences in tournament with n players, when 5 points are awarded in each game
 A047733 Number of score sequences in tournament with n players, when 6 points are awarded in each game

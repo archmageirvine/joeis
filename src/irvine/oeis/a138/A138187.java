@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138187 Hankel transform of C(2n+3,n).
+ * A138187 Hankel transform of binomial(2*n+3, n).
  * @author Sean A. Irvine
  */
 public class A138187 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001065;
 
 /**
- * A037020 Numbers n such that sum of proper (or aliquot) divisors of n is a prime.
+ * A037020 Numbers whose sum of proper (or aliquot) divisors is a prime.
  * @author Sean A. Irvine
  */
 public class A037020 extends A001065 {

@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A115556 Numbers n such that the square of n is the concatenation of two numbers 9*m and m.
+ * A115556 Numbers whose square is the concatenation of two numbers 9*m and m.
  *
  * @author Georg Fischer
  */

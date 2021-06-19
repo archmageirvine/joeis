@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043701 Numbers n such that number of runs in the base 12 representation of n is even.
+ * A043701 Numbers whose base-12 representation has an even number of runs.
  * @author Georg Fischer
  */
 public class A043701 extends RunsBaseSequence {

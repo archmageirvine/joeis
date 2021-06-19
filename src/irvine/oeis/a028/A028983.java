@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A028983 Numbers n such that the sum of the divisors of n is even.
+ * A028983 Numbers whose sum of divisors is even.
  * @author Sean A. Irvine
  */
 public class A028983 extends ComplementSequence {

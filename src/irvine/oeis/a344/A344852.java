@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000120;
 import irvine.oeis.a001.A001147;
 
 /**
- * A344852 allocated for Mareike Fischer.
+ * A344852 Number of rooted binary trees with n leaves with minimal Symmetry Nodes Index (SNI) or, equivalently, with the maximal number of symmetry nodes.
  * @author Georg Fischer
  */
 public class A344852 extends A000120 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019422 Numbers n such that sum of divisors of n is a fourth power.
+ * A019422 Numbers whose sum of divisors is a fourth power.
  * @author Sean A. Irvine
  */
 public class A019422 implements Sequence {

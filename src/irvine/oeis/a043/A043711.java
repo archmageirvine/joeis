@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043711 Numbers n such that number of runs in the base 8 representation of n is odd.
+ * A043711 Numbers whose base-8 representation has an odd number of runs.
  * @author Georg Fischer
  */
 public class A043711 extends RunsBaseSequence {

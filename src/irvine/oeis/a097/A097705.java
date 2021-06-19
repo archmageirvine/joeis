@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A097705 a(n) = 4a(n-1) + 17a(n-2), a(0)=0, a(1)=1.
+ * A097705 a(n) = 4*a(n-1) + 17*a(n-2), a(1)=1, a(2)=4.
  * @author Georg Fischer
  */
 public class A097705 extends GeneratingFunctionSequence {

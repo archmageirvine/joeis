@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028846 Numbers n such that product of digits of n is a power of 2.
+ * A028846 Numbers whose product of digits is a power of 2.
  * @author Sean A. Irvine
  */
 public class A028846 implements Sequence {

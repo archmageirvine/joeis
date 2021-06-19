@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A128878 Primes of form 47*n^2 - 1701*n + 10181.
+ * A128878 Primes of the form 47*n^2 - 1701*n + 10181.
  * @author Georg Fischer
  */
 public class A128878 extends PrimeSubsequence {

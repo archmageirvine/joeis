@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019423 Numbers n such that sum of divisors of n is a fifth power.
+ * A019423 Numbers whose sum of divisors is a fifth power.
  * @author Sean A. Irvine
  */
 public class A019423 implements Sequence {

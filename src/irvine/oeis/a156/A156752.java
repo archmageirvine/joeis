@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156752 Floor(Catalan(n+1)/Catalan(n)).
+ * A156752 a(n) = floor(Catalan(n+1)/Catalan(n)).
  * @author Georg Fischer
  */
 public class A156752 extends HolonomicRecurrence {

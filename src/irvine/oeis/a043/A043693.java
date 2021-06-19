@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043693 Numbers n such that number of runs in the base 4 representation of n is even.
+ * A043693 Numbers whose base-4 representation has an even number of runs.
  * @author Georg Fischer
  */
 public class A043693 extends RunsBaseSequence {

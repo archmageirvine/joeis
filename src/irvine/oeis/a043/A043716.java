@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043716 Numbers n such that number of runs in the base 13 representation of n is odd.
+ * A043716  Numbers whose base-13 representation has an odd number of runs.
  * @author Georg Fischer
  */
 public class A043716 extends RunsBaseSequence {

@@ -15,7 +15,7 @@ public class A048457 extends A047844 {
   public Z next() {
     ++mN;
     long m = mN;
-    while (!get(++m, mN).isEven()) {
+    while (get(++m, mN).isOdd()) {
       // do nothing
     }
     return get(mN, m - 1);

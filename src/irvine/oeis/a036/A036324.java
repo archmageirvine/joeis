@@ -4,7 +4,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a020.A020471;
 
 /**
- * A036324 Composite numbers n such that digits of prime factors of n are either 7 or 9 or both.
+ * A036324 Composite numbers whose prime factors have no digits other than 7's and 9's.
  * @author Sean A. Irvine
  */
 public class A036324 extends A036302 {

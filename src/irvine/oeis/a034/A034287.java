@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034287 Numbers n such that product of divisors of n is larger than for any number less than n.
+ * A034287 Numbers whose product of divisors is larger than that of any smaller number.
  * @author Sean A. Irvine
  */
 public class A034287 implements Sequence {

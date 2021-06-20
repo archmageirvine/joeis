@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048516.
+ * A048516 Array T read by diagonals: T(m,n)=number of subsets S of {1,2,3,...,m+n-1} such that |S|&gt;1 and |a-b|&gt;=m for all distinct a and b in S, m=1,2,3,...; n=1,2,3,...
  * @author Sean A. Irvine
  */
 public class A048516 implements Sequence {

@@ -1,26 +1,15 @@
 package irvine.oeis.a006;
 
-import irvine.math.z.Z;
-import irvine.oeis.a000.A000045;
+import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A006478 a(n) = a(n-1) + a(n-2) + F(n) - 1, a(0) = a(1) = 0, where F() = Fibonacci numbers A000045.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A006478 extends A000045 {
+public class A006478 extends HolonomicRecurrence {
 
-  private Z mA = super.next();
-  private Z mB = super.next().subtract(1);
-
-  {
-    next();
-  }
-
-  @Override
-  public Z next() {
-    final Z t = mB.add(mA).add(super.next()).subtract(1);
-    mA = mB;
-    mB = t;
-    return mB;
+  /** Construct the sequence. */
+  public A006478() {
+    super(0, "[[0],[1],[1],[-3],[-1],[3],[-1]]", "0, 0, 0, 1");
   }
 }

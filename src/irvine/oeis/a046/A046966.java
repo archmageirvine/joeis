@@ -12,6 +12,19 @@ public class A046966 implements Sequence {
   protected Z mProd = Z.ONE;
   private Z mA = Z.ZERO;
 
+  /** Construct the sequence */
+  public A046966() {
+    this(1);
+  }
+  
+  /** 
+   * Generic constructor with parameter
+   * @param start initial value of the product
+   */
+  public A046966(final int start) {
+  	mProd = Z.valueOf(start);
+  }
+  
   @Override
   public Z next() {
     while (true) {

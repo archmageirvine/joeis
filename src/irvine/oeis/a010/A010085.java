@@ -12,7 +12,6 @@ import irvine.oeis.HolonomicRecurrence;
  */
 public class A010085 extends HolonomicRecurrence {
 
-  protected int mN;
   protected int mLen; // (length of the code - 1)/2
 
   /** Construct the sequence. */
@@ -42,7 +41,6 @@ public class A010085 extends HolonomicRecurrence {
 
   @Override
   public Z next() {
-    ++mN;
     return mN < mLen + 1 ? super.next() : null; // b.o. "fini"
   }
 }

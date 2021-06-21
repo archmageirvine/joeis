@@ -23,6 +23,7 @@ public class A010090 extends A010085 {
     mLen -= 2;
   }
 
+  @Override
   public Z next() {
     final Z result = super.next();
     super.next(); // OEIS skips every other term

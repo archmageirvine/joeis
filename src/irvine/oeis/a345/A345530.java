@@ -30,7 +30,7 @@ public class A345530 implements Sequence {
   protected void computeNextRow() {
     mCounts = new long[mCounts.length + 1];
     mMask = (1L << mCounts.length) - 1;
-    for (long t = 0; t <= mMask; ++t) {
+    for (long t = 0; t <= mMask / 2; ++t) {
       ++mCounts[slide(t)];
     }
   }
@@ -41,6 +41,6 @@ public class A345530 implements Sequence {
       computeNextRow();
       mM = 0;
     }
-    return Z.valueOf(mCounts[mM]);
+    return Z.valueOf(2L * mCounts[mM]);
   }
 }

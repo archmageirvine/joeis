@@ -12,6 +12,6 @@ public class A019311 extends A345530 {
   @Override
   public Z next() {
     computeNextRow();
-    return mCounts.length <= 2 ? Z.ZERO : Z.valueOf(mCounts[2]);
+    return mCounts.length <= 2 ? Z.ZERO : Z.valueOf(2L * mCounts[2]);
   }
 }

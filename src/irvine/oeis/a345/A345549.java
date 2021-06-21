@@ -1,0 +1,15 @@
+package irvine.oeis.a345;
+
+import irvine.oeis.LimitedSumOfLikePowersSequence;
+
+/**
+ * A345549.
+ * @author Sean A. Irvine
+ */
+public class A345549 extends LimitedSumOfLikePowersSequence {
+
+  /** Construct the sequence. */
+  public A345549() {
+    super(3, 9, 10);
+  }
+}

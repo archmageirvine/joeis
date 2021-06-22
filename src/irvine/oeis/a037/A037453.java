@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037453 Positive numbers n such that the base 5 representation of n contains no 3 or 4.
+ * A037453 Positive numbers whose base-5 representation contains no 3 or 4.
  * @author Georg Fischer
  */
 public class A037453 extends A037454 {

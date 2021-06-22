@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028980 Numbers n such that sum of divisors of n is palindromic.
+ * A028980 Numbers whose sum of divisors is palindromic.
  * @author Sean A. Irvine
  */
 public class A028980 implements Sequence {

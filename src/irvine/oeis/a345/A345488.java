@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345488.
+ * A345488 Numbers that are the sum of eight squares in one or more ways.
  * @author Sean A. Irvine
  */
 public class A345488 extends LimitedSumOfLikePowersSequence {

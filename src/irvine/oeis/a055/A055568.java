@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055568 Numbers n such that sum of digits of n^2 is &gt;= n.
+ * A055568 Numbers not greater than the sum of digits of their squares.
  * @author Georg Fischer
  */
 public class A055568 extends FiniteSequence {

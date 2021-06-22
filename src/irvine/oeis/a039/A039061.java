@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039061 Numbers n whose base-8 representation has the same number of 1's and 7's.
+ * A039061 Numbers whose base-8 representation has the same number of 1's and 7's.
  * @author Georg Fischer
  */
 public class A039061 extends RunsBaseSequence {

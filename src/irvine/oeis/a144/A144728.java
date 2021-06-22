@@ -5,7 +5,7 @@ package irvine.oeis.a144;
 import irvine.oeis.a046.A046966;
 
 /**
- * A144728 a(n) is the smallest positive integer such that b * (Product_{k=1..n} a(k)) + 1 is prime, with a(n) > a(n-1) for n >= 2, and b = 6.
+ * A144728 a(n) is the smallest positive integer such that b * (Product_{k=1..n} a(k)) + 1 is prime, with a(n) &gt; a(n-1) for n &gt;= 2, and b = 6.
  * @author Georg Fischer
  */
 public class A144728 extends A046966 {

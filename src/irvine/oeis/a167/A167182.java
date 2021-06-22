@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A167182 a(0)=1, a(1)=2; for n>=2, a(n) = 2^A042950(n-2).
+ * A167182 a(0)=1, a(1)=2; for n&gt;=2, a(n) = 2^A042950(n-2).
  * a(n) = (a(n-1))^2 for n &gt; 3.
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045746 Numbers n such that the sum of the divisors of n is a triangular number.
+ * A045746 Numbers whose sum of divisors is a triangular number.
  * @author Sean A. Irvine
  */
 public class A045746 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 
 /**
- * A144725 Primes arising in A144724
+ * A144725 Primes arising in A144724.
  * @author Georg Fischer
  */
 public class A144725 extends A144724 {

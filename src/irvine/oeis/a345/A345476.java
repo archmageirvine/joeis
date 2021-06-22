@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345476.
+ * A345476 Numbers that are the sum of six squares in nine or more ways.
  * @author Sean A. Irvine
  */
 public class A345476 extends LimitedSumOfLikePowersSequence {

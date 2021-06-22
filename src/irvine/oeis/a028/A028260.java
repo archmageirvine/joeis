@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008836;
 
 /**
- * A028260 Numbers n such that number of prime divisors of n (counted with multiplicity) is even; Liouville function lambda(n) (A008836) is positive.
+ * A028260 Numbers with an even number of prime divisors (counted with multiplicity); numbers k such that the Liouville function lambda(k) (A008836) is positive.
  * @author Sean A. Irvine
  */
 public class A028260 extends A008836 {

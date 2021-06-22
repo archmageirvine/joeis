@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A345530.
+ * A345530 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A345530 implements Sequence {

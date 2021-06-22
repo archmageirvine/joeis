@@ -4,7 +4,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a020.A020456;
 
 /**
- * A036308 Composite numbers n such that digits of prime factors of n are either 1 or 8.
+ * A036308 Composite numbers whose prime factors contain no digits other than 1 and 8.
  * @author Sean A. Irvine
  */
 public class A036308 extends A036302 {

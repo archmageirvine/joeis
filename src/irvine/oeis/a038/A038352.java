@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A038352 Numbers n such that representation in base 6 has same nonzero number of 2's and 3's.
+ * A038352 Numbers whose base-6 representation has the same nonzero number of 2's and 3's.
  * @author Georg Fischer
  */
 public class A038352 extends RunsBaseSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038858 Numbers n such that n ends with '3' and is difference between two cubes in at least one way.
+ * A038858 Numbers that end with '3' and are the difference between two (positive) cubes in at least one way.
  * @author Sean A. Irvine
  */
 public class A038858 implements Sequence {

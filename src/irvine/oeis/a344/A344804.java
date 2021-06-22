@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A344804 allocated for Sean A. Irvine.
+ * A344804 Numbers that are the sum of two cubes in exactly three ways.
  * @author Sean A. Irvine
  */
 public class A344804 extends LimitedSumOfLikePowersSequence {

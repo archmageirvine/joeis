@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037349 Numbers n such that no base 3 digit of n is a base 8 digit of n.
+ * A037349 Numbers whose base-3 and base-8 expansions have no digits in common.
  * @author Georg Fischer
  */
 public class A037349 extends A037337 {

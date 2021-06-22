@@ -22,7 +22,7 @@ public class A046966 implements Sequence {
    * @param start initial value of the product
    */
   public A046966(final int start) {
-  	mProd = Z.valueOf(start);
+    mProd = Z.valueOf(start);
   }
   
   @Override

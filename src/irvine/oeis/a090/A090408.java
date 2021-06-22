@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A090408 a(n) = Sum_{k=0..n} C(4n+3,4k).
+ * A090408 a(n) = Sum_{k=0..n} binomial(4n+3,4k).
  * @author Georg Fischer
  */
 public class A090408 extends HolonomicRecurrence {

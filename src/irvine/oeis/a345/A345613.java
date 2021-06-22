@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345613.
+ * A345613 Numbers that are the sum of eight fifth powers in five or more ways.
  * @author Sean A. Irvine
  */
 public class A345613 extends LimitedSumOfLikePowersSequence {

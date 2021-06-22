@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033015 Numbers n such that every run of digits of n in base 2 has length &gt;= 2.
+ * A033015 Numbers whose base-2 expansion has no run of digits with length &lt; 2.
  * @author Sean A. Irvine
  */
 public class A033015 implements Sequence {

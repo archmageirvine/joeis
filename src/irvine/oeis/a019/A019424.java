@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019424 Numbers n such that sum of divisors of n is a sixth power.
+ * A019424 Numbers whose sum of divisors is a sixth power.
  * @author Sean A. Irvine
  */
 public class A019424 implements Sequence {

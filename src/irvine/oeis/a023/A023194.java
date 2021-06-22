@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023194 Numbers n such that sigma(n) (sum of divisors of n) is prime.
+ * A023194 Numbers whose sum of divisors is prime.
  * @author Sean A. Irvine
  */
 public class A023194 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A036311 Composite numbers n such that digits of prime factors of n are either 2 or 5.
+ * A036311 Composite numbers whose prime factors contain no digits other than 2 and 5.
  * @author Sean A. Irvine
  */
 public class A036311 extends A036302 {

@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178396 a(n+1) = a(n)*1000 + 11^n with a(0)= 0.
+ * A178396 a(1)=1, a(n) = a(n-1)*1000 + 11^(n-1) for n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A178396 extends LinearRecurrence {

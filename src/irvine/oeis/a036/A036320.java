@@ -4,7 +4,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a020.A020467;
 
 /**
- * A036320 Composite numbers n such that digits of prime factors of n are either 5 or 7.
+ * A036320 Composite numbers whose prime factors contain no digits other than 5 and 7.
  * @author Sean A. Irvine
  */
 public class A036320 extends A036302 {

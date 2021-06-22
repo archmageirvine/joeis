@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048486 Values of n for which the position of central and maximal values of A001221(C(n,k)) coincide.
+ * A048486 Values of k for which the earliest maximal value of A001221(C(k,j)) is j = floor(k/2).
  * @author Sean A. Irvine
  */
 public class A048486 implements Sequence {

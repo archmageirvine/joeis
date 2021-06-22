@@ -5,7 +5,7 @@ import irvine.oeis.PositionSubsequence;
 import irvine.oeis.a008.A008904;
 
 /**
- * A045547 Numbers n such that final nonzero digit of n! is '2'.
+ * A045547 Numbers whose factorial has '2' as its final nonzero digit.
  * @author Sean A. Irvine
  */
 public class A045547 extends PositionSubsequence {

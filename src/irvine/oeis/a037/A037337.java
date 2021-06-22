@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A037337 n-th number k such that no base 9 digit of k is a base 10 digit of k.
+ * A037337 Numbers whose base-9 and base-10 expansions have no digits in common.
  * The set of base 1 digits must be disjoint from the set of the base 2 digits.
  * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer

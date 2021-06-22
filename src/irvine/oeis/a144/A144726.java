@@ -5,7 +5,7 @@ package irvine.oeis.a144;
 import irvine.oeis.a046.A046966;
 
 /**
- * A144726 a(n) is the smallest integer greater than a(n-1) such that a(1)*a(2)*...*a(n) + 1 is prime.
+ * A144726 Incorrect duplicate of A046966.
  * @author Georg Fischer
  */
 public class A144726 extends A046966 {

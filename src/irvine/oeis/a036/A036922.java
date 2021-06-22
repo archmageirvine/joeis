@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A036922 Even composite numbers n such that the digit sum of n equals the sum of its prime factors (counted with multiplicity).
+ * A036922 Even composite numbers whose digit sum equals the digit sum of (sum of prime factors, counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A036922 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A130165 a(0)=1; a(n)=prime(mod(a(n-1),10)).
+ * A130165 a(1)=1; a(n)=prime(mod(a(n-1),10)).
  * @author Georg Fischer
  */
 public class A130165 extends PaddingSequence {

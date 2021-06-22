@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036436 Numbers n such that tau(n) (the number of divisors of n) is a square.
+ * A036436 Numbers whose number of divisors is a square.
  * @author Sean A. Irvine
  */
 public class A036436 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a144;
 import irvine.oeis.a046.A046966;
 
 /**
- * A144717 a(n) = smallest positive integer > a(n-1) such that 2*a(1)*a(2)*...*a(n) + 1 is prime.
+ * A144717 a(n) = smallest positive integer &gt; a(n-1) such that 2*a(1)*a(2)*...*a(n) + 1 is prime.
  * @author Georg Fischer
  */
 public class A144717 extends A046966 {

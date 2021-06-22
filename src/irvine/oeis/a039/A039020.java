@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039020 Numbers whose representation in base 6 has the same number of 1's and 2's.
+ * A039020 Numbers whose base-6 representation has the same number of 1's and 2's.
  * @author Georg Fischer
  */
 public class A039020 extends RunsBaseSequence {

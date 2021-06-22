@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A344805 allocated for Sean A. Irvine.
+ * A344805 Numbers that are the sum of six second powers in one or more ways.
  * @author Sean A. Irvine
  */
 public class A344805 extends LimitedSumOfLikePowersSequence {

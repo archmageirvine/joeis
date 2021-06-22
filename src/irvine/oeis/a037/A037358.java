@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037358 Numbers n such that no base 5 digit of n is a base 6 digit of n.
+ * A037358 Numbers whose base-5 and base-6 expansions have no digits in common.
  * @author Georg Fischer
  */
 public class A037358 extends A037337 {

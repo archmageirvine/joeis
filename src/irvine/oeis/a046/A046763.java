@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046763 Numbers n such that the sum of the cubes of the divisors of n is divisible by n.
+ * A046763 Numbers that divide the sum of cubes of their divisors.
  * @author Sean A. Irvine
  */
 public class A046763 implements Sequence {

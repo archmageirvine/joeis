@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a047.A047844;
 
 /**
- * A048466 Total of primes in the generations from 2 onwards.
+ * A048466 Total number of primes in "generation" n.
  * @author Sean A. Irvine
  */
 public class A048466 extends A047844 {

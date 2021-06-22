@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031215 a(n) = prime(2n).
+ * A031215 Even-indexed primes: a(n) = prime(2n).
  * @author Sean A. Irvine
  */
 public class A031215 extends A000040 {

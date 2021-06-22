@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028843 Numbers n such that the iterated product of digits of n is a prime.
+ * A028843 Numbers whose iterated product of digits is a prime.
  * @author Sean A. Irvine
  */
 public class A028843 implements Sequence {

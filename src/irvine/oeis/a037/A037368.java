@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037368 Numbers n such that no base 7 digit of n is a base 9 digit of n.
+ * A037368 Numbers whose base-7 and base-9 expansions have no digits in common.
  * @author Georg Fischer
  */
 public class A037368 extends A037337 {

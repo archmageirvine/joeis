@@ -12,6 +12,7 @@ import irvine.math.z.Z;
  * The underlying sequence <code>a(n)</code> should be monotone, with the exception
  * of the first few elements as controlled by the parameter <code>cacheNo</code>.
  * Subclasses may return other small values (different from 0 and 1).
+ * This sequence returns Z.ZERO even if the underlying sequence is finite and returns null.
  * @author Georg Fischer
  */
 public class CharacteristicFunction implements Sequence {
@@ -26,7 +27,6 @@ public class CharacteristicFunction implements Sequence {
   protected int mSN; // index of current term in the underlying sequence
   protected int mNextTerm; // of the underlying sequence
   protected int mPrevTerm; // the term before mNextTerm
-  protected static int sDebug = 0; // the term before mNextTerm
 
   /**
    * Create a new characteristic function from the numbers returned by a {@link Sequence}.
@@ -45,28 +45,18 @@ public class CharacteristicFunction implements Sequence {
     final int[] caNums = new int[cacheNo]; // stores the leading terms
     mCacheMax = 0;
     for (int ican = 0; ican < cacheNo; ++ican) { // determine the maximum term to be cached
-      mPrevTerm = mSeq.next().intValue();
+      mPrevTerm = underNext();
       final int term = mPrevTerm; // consume cacheNo terms
       if (term < 0) {
         throw new RuntimeException("cannot indicate negative terms");
       }
-    /*
-      if (sDebug >= 1) {
-        System.out.println(term + " cached");
-      }
-    */
       caNums[ican] = term;
       if (term > mCacheMax) {
         mCacheMax = term;
       }
     }
     ++mCacheMax; // make it zero-based
-  /*
-    if (sDebug >= 1) {
-      System.out.println("mCacheMax=" + mCacheMax);
-    }
-  */
-    mNextTerm = mSeq.next().intValue(); // not in cache; mPrevTerm is last in cache (set above)
+    mNextTerm = underNext(); // not in cache; mPrevTerm is last in cache (set above)
     mCache = new int[mCacheMax]; // stores the indicators of the leading terms
     for (int icam = 0; icam < mCacheMax; ++icam) { // prefill with ZERO
       mCache[icam] = indicate(icam, 0);
@@ -104,6 +94,14 @@ public class CharacteristicFunction implements Sequence {
    this(1, seq, true, 4);
   }
   
+  /**
+   * Function should return 0 even if the underlying sequence is finite and returns null
+   */
+  protected int underNext() {
+    final Z un = mSeq.next();
+    return un != null ? un.intValue() : 0x7fffffff; // a very high value
+  }
+  
   @Override
   public Z next() {
     ++mIN;
@@ -113,7 +111,7 @@ public class CharacteristicFunction implements Sequence {
     if (mIN < mNextTerm) {
       return Z.valueOf(indicate(mIN, 0)); // still not next member
     } else if (mIN == mNextTerm) {
-      mNextTerm = mSeq.next().intValue();
+      mNextTerm = underNext();
       ++mSN;
       return Z.valueOf(indicate(mIN, 1)); // next member is hit
     } else {
@@ -136,16 +134,4 @@ public class CharacteristicFunction implements Sequence {
     return ((mMemberIs1 ? state : 1 - state) == 1) ? 1 : 0;
   }
 
-  /**
-   * Generate the indicator sequence of the Lucas numbers
-   * @param args command line arguments
-   */
-  public static void main(final String[] args) {
-    sDebug = 1;
-    final Sequence indSeq = new CharacteristicFunction(1, new irvine.oeis.a000.A000032(), true, 4);
-    final int termNo = 64;
-    for (int iterm = 0; iterm < termNo; ++iterm) {
-      System.out.println(iterm + " " + indSeq.next());
-    } 
-  }
 }

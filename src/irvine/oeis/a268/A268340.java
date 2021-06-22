@@ -5,7 +5,7 @@ import irvine.oeis.MobiusTransformSequence;
 import irvine.oeis.a046.A046660;
 
 /**
- * A268340 Characteristic function of the prime powers p^k, k >= 2.
+ * A268340 Characteristic function of the prime powers p^k, k &gt;= 2.
  * @author Georg Fischer
  */
 public class A268340 extends MobiusTransformSequence {

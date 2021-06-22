@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a023.A023196;
 
 /**
- * A294936 Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) >= n, 0 otherwise.
+ * A294936 Characteristic function for nondeficient numbers (A023196): a(n) = 1 if A001065(n) &gt;= n, 0 otherwise.
  * @author Georg Fischer
  */
 public class A294936 extends CharacteristicFunction {

@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a263.A263837;
 
 /**
- * A294935 Characteristic function for nonabundant numbers (A263837): a(n) = 1 if A001065(n) <= n, 0 otherwise.
+ * A294935 Characteristic function for nonabundant numbers (A263837): a(n) = 1 if A001065(n) &lt;= n, 0 otherwise.
  * @author Georg Fischer
  */
 public class A294935 extends CharacteristicFunction {

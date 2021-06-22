@@ -5,7 +5,7 @@ package irvine.oeis.a185;
 import irvine.oeis.a183.A183194;
 
 /**
- * A185689 Final prime adjoined in the smallest term of A019518 divisible by 53^n
+ * A185689 Final prime adjoined in the smallest term of A019518 divisible by 53^n.
  * @author Georg Fischer
  */
 public class A185689 extends A183194 {

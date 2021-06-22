@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a036.A036844;
 
 /**
- * A342460 a(n) = 1 if n > 1 and is divisible by the sum of its prime factors (with repetition), otherwise 0.
+ * A342460 a(n) = 1 if n &gt; 1 and is divisible by the sum of its prime factors (with repetition), otherwise 0.
  * @author Georg Fischer
  */
 public class A342460 extends CharacteristicFunction {

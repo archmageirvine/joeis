@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a005.A005101;
 
 /**
- * A294937 Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) > n, 0 otherwise.
+ * A294937 Characteristic function for abundant numbers (A005101): a(n) = 1 if A001065(n) &gt; n, 0 otherwise.
  * @author Georg Fischer
  */
 public class A294937 extends CharacteristicFunction {

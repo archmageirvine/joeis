@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010055;
 
 /**
- * A069513 Characteristic function of the prime powers p^k, k >= 1.
+ * A069513 Characteristic function of the prime powers p^k, k &gt;= 1.
  * @author Georg Fischer
  */
 public class A069513 extends  A010055 {

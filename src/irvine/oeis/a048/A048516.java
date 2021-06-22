@@ -30,9 +30,8 @@ public class A048516 implements Sequence {
 
   @Override
   public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 0;
+    if (--mM < 0) {
+      mM = ++mN;
     }
     return t(mM, mN - mM);
   }

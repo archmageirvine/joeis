@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037321 Numbers whose sum of base-4 digits and sum of base-10 digits are equal.
+ * A037321 Numbers whose base-4 and base-10 expansions have the same digit sum.
  * @author Georg Fischer
  */
 public class A037321 extends A037303 {

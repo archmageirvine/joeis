@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162993 The third left hand column of triangle A162990.
+ * A162994 The third left hand column of triangle A162990.
  * Recurrence: ((n+1)!/3)^2 for n&gt;=3
  * @author Georg Fischer
  */

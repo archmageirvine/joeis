@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001898;
 
 /**
- * A163128 a(n) is the n-th self-number minus n.
+ * A163176 The n-th Minkowski number divided by the n-th factorial: a(n) = A053657(n)/n!.
  * a(n) = A001898(n-1)/n.
  * @author Georg Fischer
  */

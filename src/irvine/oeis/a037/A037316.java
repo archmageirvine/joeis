@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037316 Numbers k such that the sum of the base-4 digits of k is equal to the sum of the base-5 digits of k.
+ * A037316 Numbers whose base-4 and base-5 expansions have the same digit sum.
  * @author Georg Fischer
  */
 public class A037316 extends A037303 {

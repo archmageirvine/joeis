@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162970 Number of 2-cycles in all involutions of {1, 2,...,n}.
+ * A162970 Number of 2-cycles in all involutions of {1,2,...,n}.
  * Recurrence: (n-2)*a(n) = n*a(n-1) + n*(n-1)*a(n-2), a(1)=0, a(2)=1.
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162991 The first right hand column of triangle A162990
+ * A162991 The first right hand column of triangle A162990.
  * Recurrence: a(n) = ((n+1)!/n)^2 for n&gt;=1
  * @author Georg Fischer
  */

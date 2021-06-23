@@ -5,7 +5,7 @@ import irvine.oeis.PositionSubsequence;
 import irvine.oeis.a008.A008904;
 
 /**
- * A045550 Numbers n such that final nonzero digit of n! is '8'.
+ * A045550 Numbers whose factorial has '8' as its final nonzero digit.
  * @author Sean A. Irvine
  */
 public class A045550 extends PositionSubsequence {

@@ -6,7 +6,7 @@ import irvine.oeis.OrdersFiniteGroupSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A345628.
+ * A345628 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A345628 implements Sequence {

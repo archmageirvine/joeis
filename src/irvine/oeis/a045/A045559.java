@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 /**
- * A045559 Numbers whose factorial has '44' as its final two digits before the trailing zeros.
+ * A045559 Numbers n such that final 2 nonzero digits of n! are '44'.
  * @author Sean A. Irvine
  */
 public class A045559 extends A045551 {

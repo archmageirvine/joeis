@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037353 Numbers whose base-4 and base-6 expansions have no digits in common.
+ * A037353 Numbers k such that no base-4 digit of k is a base-6 digit of k.
  * @author Georg Fischer
  */
 public class A037353 extends A037337 {

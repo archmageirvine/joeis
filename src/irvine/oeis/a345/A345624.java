@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345624 Numbers that are the sum of nine fifth powers in seven or more ways.
+ * A345624 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A345624 extends LimitedSumOfLikePowersSequence {

@@ -10,8 +10,6 @@ import irvine.oeis.a046.A046660;
  */
 public class A268340 extends MobiusTransformSequence {
     
-  protected int mN;
-
   /** Construct the sequence. */
   public A268340() {
     super(new A046660(), 0);

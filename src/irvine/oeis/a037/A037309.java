@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037309 Numbers whose base-3 and base-4 expansions have the same digit sum.
+ * A037309 (sum of base 3 digits of n)=(sum of base 4 digits of n).
  * @author Georg Fischer
  */
 public class A037309 extends A037303 {

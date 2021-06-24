@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A037303 Numbers whose base-2 and base-5 expansions have the same digit sum.
+ * A037303 Positive numbers whose sum of base-2 digits and sum of base-5 digits are equal.
  * @author Georg Fischer
  */
 public class A037303 implements Sequence {

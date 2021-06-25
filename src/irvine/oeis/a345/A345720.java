@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345718.
+ * A345720 Numbers that are the sum of six fifth powers in six or more ways.
  * @author Sean A. Irvine
  */
 public class A345720 extends LimitedSumOfLikePowersSequence {

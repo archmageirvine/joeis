@@ -1646,3 +1646,4 @@ A048615 Numerator of mass (Sum 1/|Aut(H)|) of Hadamard matrices of order 4n.
 A048616 Denominator of mass (Sum 1/|Aut(H)|) of Hadamard matrices of order 4n.
 A048638 Height of lattice of parameters of mixed orthogonal arrays with 2^n runs and strength 2.
 A048648 Order of n-th stable homotopy group of spheres.
+A048670 Jacobsthal function A048669 applied to the product of the first n primes (A002110) (hard).

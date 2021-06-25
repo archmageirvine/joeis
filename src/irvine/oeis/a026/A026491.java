@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001285;
 
 /**
- * A026491 a(n) = least k &gt; a(n-1) such that t(k) = t(n), for n &gt;= 1, where t = A001285 (Thue-Morse sequence).
+ * A026491 a(n) = least k &gt; a(n-1) such that A001285(k-1) = A001285(n-1) for n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A026491 implements Sequence {

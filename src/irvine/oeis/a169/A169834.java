@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005238;
 
 /**
- * A169834 Numbers n such that d(n-1) = d(n) = d(n+1).
+ * A169834 Numbers k such that d(k-1) = d(k) = d(k+1).
  * a(n) = A005238(n) + 1. - Jon Maiga
  * @author Georg Fischer
  */

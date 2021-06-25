@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037336 (sum of base 9 digits of n)=(sum of base 10 digits of n).
+ * A037336 Numbers whose base-9 and base-10 expansions have the same digit sum.
  * @author Georg Fischer
  */
 public class A037336 extends A037303 {

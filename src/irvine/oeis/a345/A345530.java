@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A345530 allocated for Sean A. Irvine.
+ * A345530 Triangle T(n,k) read by rows of the number of n-bit words with maximum overlap k.
  * @author Sean A. Irvine
  */
 public class A345530 implements Sequence {

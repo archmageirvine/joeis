@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045551 Numbers n such that final 2 nonzero digits of n! are '04'.
+ * A045551 Numbers whose factorial has '04' as its final two digits before the trailing zeros.
  * @author Sean A. Irvine
  */
 public class A045551 implements Sequence {

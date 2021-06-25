@@ -6,7 +6,7 @@ import irvine.oeis.OrdersFiniteGroupSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A345628 allocated for Sean A. Irvine.
+ * A345628 Irregular triangle T(n,k) read by rows of the number of elements of order k in the dicyclic group Dic(n) for n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A345628 implements Sequence {

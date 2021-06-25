@@ -18,6 +18,8 @@ public final class Lattices {
   public static final Lattice Z5 = new Z5Lattice();
   /** The 6-dimensional hypercubic lattice. */
   public static final Lattice Z6 = new Z6Lattice();
+  /** The 7-dimensional hypercubic lattice. */
+  public static final Lattice Z7 = new Z7Lattice();
 
   // Other 2D lattices
 

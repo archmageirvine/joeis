@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 /**
- * A045562 Numbers n such that final 2 nonzero digits of n! are '56'.
+ * A045562 Numbers whose factorial has '56' as its final two digits before the trailing zeros.
  * @author Sean A. Irvine
  */
 public class A045562 extends A045551 {

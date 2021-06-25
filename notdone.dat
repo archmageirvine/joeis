@@ -1637,9 +1637,12 @@ A047875 Size of smallest polyomino with surround number n (the surround number o
 A047896 For given n, consider all 4-tuples P = (a,b,c,d) with P.P = n; let d = squared distance to the line OP from the closest point of Z^n (excluding the endpoints); sequence gives max_P d*n.
 A047947 a(n) is the number of k values for which A023193(k) = n.
 A047995 Number of impartial misere games born on or before day n.
+A048143 Number of labeled connected simplicial complexes with n nodes.
 A048283 For k >= a(n), there are A048284(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
 A048284 For k >= A048283(n), there are a(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
 A048289 Number of Go games with exactly n moves.
 A048613 Number of terms (excluding the first) of A002211 for which the geometric mean produces progressively better approximations to Khinchin's constant (itself).
 A048615 Numerator of mass (Sum 1/|Aut(H)|) of Hadamard matrices of order 4n.
 A048616 Denominator of mass (Sum 1/|Aut(H)|) of Hadamard matrices of order 4n.
+A048638 Height of lattice of parameters of mixed orthogonal arrays with 2^n runs and strength 2.
+A048648 Order of n-th stable homotopy group of spheres.

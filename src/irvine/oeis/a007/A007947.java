@@ -15,11 +15,11 @@ public class A007947 implements Sequence {
 
   @Override
   public Z next() {
-    long p = 1;
+    Z prod = Z.ONE;
     final FactorSequence fs = Cheetah.factor(++mN);
     for (final Z d : fs.toZArray()) {
-      p *= d.longValue();
+      prod = prod.multiply(d);
     }
-    return Z.valueOf(p);
+    return prod;
   }
 }

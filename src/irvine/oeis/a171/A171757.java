@@ -12,9 +12,9 @@ public class A171757 extends A004761 {
 
   /** Construct the sequence. */
   public A171757() {
-  	super.next();
+    super.next();
   }
-  
+
   @Override
   public Z next() {
     return super.next().multiply2();

@@ -13,7 +13,7 @@ public class A134996 implements Sequence {
 
   private static final String NATURAL = "01258";
   private static final String MIRROR = "01528";
-  protected static final TreeSet<Z> mA = new TreeSet<>();
+  protected final TreeSet<Z> mA = new TreeSet<>();
   {
     mA.add(Z.TWO);
     mA.add(Z.FIVE);
@@ -38,7 +38,7 @@ public class A134996 implements Sequence {
       }
       final Z nat = new Z(natural);
       if (!mA.contains(nat)) {
-        Z mir, natr, mirr;
+        final Z mir, natr, mirr;
         if (nat.isProbablePrime()
           && (mir = new Z(mirror)).isProbablePrime()
           && (natr = new Z(natural.reverse())).isProbablePrime()

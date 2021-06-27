@@ -36,7 +36,7 @@ public class A048661 implements Sequence {
       }
       final Z nat = new Z(natural);
       if (!seen.contains(nat)) {
-        Z mir, natr, mirr;
+        final Z mir, natr, mirr;
         if (nat.isProbablePrime()
           && (mir = new Z(mirror)).isProbablePrime()
           && (natr = new Z(natural.reverse())).isProbablePrime()

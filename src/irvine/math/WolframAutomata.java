@@ -47,10 +47,11 @@ public class WolframAutomata {
   }
 
   /**
-   * Return a bit set with the next step of the automata.
-   * @return next step of automata
+   * Perform the cellular automata on the specified bit set.
+   * @param set bit set
+   * @return next bit set
    */
-  public BitSet next() {
+  public BitSet step(final BitSet set) {
     final BitSet next = new BitSet(mLength + 2);
     for (int k = 0; k < mLength + 2; ++k) {
       // get left, centre, right pixels
@@ -59,8 +60,16 @@ public class WolframAutomata {
       final int r = isSet(k) ? 1 : 0;
       next.set(k, mRule[l | c | r]);
     }
-    mCur = next;
     mLength += 2;
+    return set;
+  }
+
+  /**
+   * Return a bit set with the next step of the automata.
+   * @return next step of automata
+   */
+  public BitSet next() {
+    mCur = step(mCur);
     return mCur;
   }
 

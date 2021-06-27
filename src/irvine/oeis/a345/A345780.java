@@ -3,13 +3,13 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345766.
+ * A345774.
  * @author Sean A. Irvine
  */
-public class A345766 extends LimitedSumOfLikePowersSequence {
+public class A345780 extends LimitedSumOfLikePowersSequence {
 
   /** Construct the sequence. */
-  public A345766() {
-    super(3, 6, 4, true, false);
+  public A345780() {
+    super(3, 7, 8, true, false);
   }
 }

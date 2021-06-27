@@ -1,23 +1,17 @@
 package irvine.oeis.a006;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.util.string.StringUtils;
+import irvine.oeis.UnionSequence;
+import irvine.oeis.a048.A048700;
+import irvine.oeis.a048.A048701;
 
 /**
  * A006995 Binary palindromes: numbers whose binary expansion is palindromic.
  * @author Sean A. Irvine
  */
-public class A006995 implements Sequence {
+public class A006995 extends UnionSequence {
 
-  private long mN = -1;
-
-  @Override
-  public Z next() {
-    while (true) {
-      if (StringUtils.isPalindrome(Long.toBinaryString(++mN))) {
-        return Z.valueOf(mN);
-      }
-    }
+  /** Construct the sequence. */
+  public A006995() {
+    super(new A048700(), new A048701());
   }
 }

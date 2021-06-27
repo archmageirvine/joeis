@@ -744,4 +744,18 @@ public final class FactorSequence {
     }
     return product;
   }
+
+  /**
+   * Return the square free kernel of this number (product of all the primes
+   * in this number without multiplicity). Also called, radical.
+   * @return square free kernel
+   */
+  public Z squareFreeKernel() {
+    completeOrException();
+    Z sf = Z.ONE;
+    for (final Z p : mFactors.keySet()) {
+      sf = sf.multiply(p);
+    }
+    return sf;
+  }
 }

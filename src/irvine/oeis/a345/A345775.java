@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345774.
+ * A345775 Numbers that are the sum of seven cubes in exactly three ways.
  * @author Sean A. Irvine
  */
 public class A345775 extends LimitedSumOfLikePowersSequence {

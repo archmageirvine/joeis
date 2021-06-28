@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039243 Numbers n such that representation in base 12 has same number of 3's and 8's.
+ * A039243 Numbers whose base-12 representation has the same number of 3's and 8's.
  * @author Georg Fischer
  */
 public class A039243 extends RunsBaseSequence {

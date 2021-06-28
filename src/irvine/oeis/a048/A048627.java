@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.PositionSequence;
 
 /**
- * A048627 Maximal value of A001222(C(n,k)) and the central value A001222(A001405(n)) are identical.
+ * A048627 Numbers m such that the maximal value of A001222(binomial(m,k)) and the central value A001222(A001405(m)) are identical.
  * @author Sean A. Irvine
  */
 public class A048627 extends PositionSequence {

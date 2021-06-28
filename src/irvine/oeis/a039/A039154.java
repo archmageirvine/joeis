@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039154 Numbers n such that representation in base 10 has same number of 7's and 9's.
+ * A039154 Numbers whose base-10 representation has the same number of 7's and 9's.
  * @author Georg Fischer
  */
 public class A039154 extends RunsBaseSequence {

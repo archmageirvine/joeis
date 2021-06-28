@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039141 Numbers n such that representation in base 10 has same number of 4's and 5's.
+ * A039141 Numbers whose base-10 representation has the same number of 4's and 5's.
  * @author Georg Fischer
  */
 public class A039141 extends RunsBaseSequence {

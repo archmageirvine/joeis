@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039166 Numbers n such that representation in base 11 has same number of 1's and 3's.
+ * A039166 Numbers whose base-11 representation has the same number of 1's and 3's.
  * @author Georg Fischer
  */
 public class A039166 extends RunsBaseSequence {

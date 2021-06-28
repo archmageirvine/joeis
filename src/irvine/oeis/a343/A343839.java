@@ -3,7 +3,7 @@ package irvine.oeis.a343;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A343839 allocated for Adam Atkinson.
+ * A343839 Semi-one numbers: Positive integers k such that exactly half of the integers 1..k have a 1 in their decimal expansion.
  * @author Sean A. Irvine
  */
 public class A343839 extends FiniteSequence {

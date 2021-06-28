@@ -1,84 +1,77 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.UnimplementedException;
 
 /**
  * A003614 Symmetries in unrooted (1,4) trees on 3n-1 vertices.
  * @author Sean A. Irvine
  */
-public class A003614 extends A003613 {
+public class A003614 implements Sequence {
 
-  // todo this just seems too much work for one sequence
-
-//  // Eqn. (1.2.16) in McKeon thesis
-//  // 24t(x,2) = 24T(x,2) + (36/x)T(x^2,2^2) - (12/x)T(x,2)^2 + (1/x^2)T(x,2)^4 + (18/x^2)T(x^2,2^2)T(x,2)^2
-//  //            +(27/x^2)T(x^2,2^2)^2 + (426/x^2)T(x^4,2^4) + (104/x^2)T(x^3,8)T(x,2)
-//
-//  // Coefficient of x^n in ab.
-//  private static List<Triple<Z>> coeff(final List<Triple<Z>> a, final List<Triple<Z>> b, final int n) {
-//    final List<Triple<Z>> res = new ArrayList<>();
-//    for (int i = 1; i <= n; ++i) {
-//      final int j = n + 1 - i;
-//      assert j > 0;
-//      res.add(multiply(a.get(i), b.get(j)));
-//    }
-//    return collect(res);
-//  }
-//
-//
-//  // (18/x^2)T(x^2,2^2)T(x,2)^2
-//  // (1/x)*(6y-3)T(x^2,y^2)T(x,y)
-//  private List<Triple<Z>> subs2(final int n) {
-//    final ArrayList<Triple<Z>> res = new ArrayList<>();
-//    for (int i = 2; i <= n + 1; i += 2) {
-//      final int j = n + 2 - i;
-//      final List<Triple<Z>> lst = substitutePower(mT.get(i / 2), 2);
-//      final List<Triple<Z>> m = multiply(lst, mT.get(j));
-//      res.addAll(multiply(m, Y6));
-//      res.addAll(multiply(m, -3));
-//    }
-//    return res;
-//  }
-//
-//  // (1/x)T(x,y)^2
-//  private List<Triple<Z>> square(final int n) {
-//    final List<Triple<Z>> res = new ArrayList<>();
-//    for (int i = 1; i <= n; ++i) {
-//      final int j = n + 1 - i;
-//      assert j > 0;
-//      res.addAll(multiply(mT.get(i), mT.get(j)));
-//    }
-//    return res;
-//  }
-//
-//  // (1/x^2)T(x,y)^4
-//  private List<Triple<Z>> quartic(final int n) {
-//    final List<Triple<Z>> res = new ArrayList<>();
-//    for (int i = 1; i < n + 1; ++i) {
-//      for (int j = 1; j + i < n + 1; ++j) {
-//        for (int k = 1; k + j + i < n + 2; ++k) {
-//          final int l = n + 2 - i - j - k;
-//          assert l > 0;
-//          res.addAll(multiply(multiply(multiply(mT.get(i), mT.get(j)), mT.get(k)), mT.get(l)));
-//        }
-//      }
-//    }
-//    return res;
-//  }
-//
-//  @Override
-//  public Z nextQ() {
-//    return super.nextQ().multiply(24) // updates mN, mT
-//      .add((mN & 1) == 0 ? Z.ZERO : eval(substitutePower(mT.get((mN - 1) / 2), 2)).multiply(36))
-//      .add(eval(square(mN)).multiply(12))
-//      .add(eval(quartic(mN)))
-//      .divide(24);
-//  }
+  // todo I suspect Eqn (1.2.16) in paper is incorrect
+  // Note I've tried to do this twice now. This time I used the newer MultivariatePolynomial
+  // base code.  Thus the step() here computes A003611 (verified).
 
   @Override
   public Z next() {
     throw new UnimplementedException();
   }
+
+//  protected static final MultivariatePolynomialField<Q> RING = new MultivariatePolynomialField<>(Rationals.SINGLETON, 2);
+//  private static final int[] CONST = {0, 0};
+//  private static final int[] SUBS = {2, 2};
+//  private static final int[] Y2X = {2, 1};
+//  private static final MultivariatePolynomial<Q> C0 = RING.monomial(Q.HALF, CONST);
+//  private static final MultivariatePolynomial<Q> C1 = RING.subtract(RING.monomial(Q.ONE, new int[] {0, 1}), RING.monomial(Q.HALF, CONST));
+//  private static final MultivariatePolynomial<Q> X = RING.monomial(Q.ONE, new int[] {1, 0});
+//  protected MultivariatePolynomial<Q> mT = X;
+//  protected int mN = 0;
+//
+//  // Note formula for S_n in McKeon articles is wrong, should be
+//  // S_n = Sum_{k=0..n} T(k, n) * 2^k
+//
+//  // T(x,y) = x + (x/2)T(x,y)^2 + xT(x,y) + x(y-1/2)T(x^2,y^2)
+//  // T(x,y) = x(1 + T(x,y) + (1/2)T(x,y)^2 + (y-1/2)T(x^2,y^2))
+//  protected void stepT(final int n) {
+//    // I verified this correctly produces T
+//    final int[] limits = {n, n};
+//    // Apply the T(x,y) relation
+//    final MultivariatePolynomial<Q> s = RING.multiply(mT.substitutePowers(SUBS, limits), C1);
+//    final MultivariatePolynomial<Q> u = RING.add(RING.add(RING.one(), mT), RING.multiply(RING.pow(mT, 2, limits), C0));
+//    mT = RING.multiply(RING.add(u, s), X);
+//  }
+//
+//  @Override
+//  public Z next() {
+//    stepT(++mN); // Updates mT
+//    // Compute S_n
+//    //return mT.extract(0, mN).eval(Q.TWO).toZ();
+//
+//    System.out.println("T=" + mT);
+//
+//    // Eqn (1.2.16)
+//    final int[] limits = {mN + 3, mN + 3}; // +2 allows for /x^2
+//    final Q a = mT.subs(1, Q.TWO).extract(0, mN).eval(Q.ONE);
+//    //System.out.println("T(x^2,4)=" + mT.substitutePowers(Y2X, limits).subs(1, new Q(4)));
+//    final Q b = mT.substitutePowers(Y2X, limits).subs(1, new Q(4)).extract(0, mN + 1).eval(Q.ONE).multiply(new Q(3, 2));
+//    final Q c = RING.pow(mT.subs(1, Q.TWO), 2, limits).extract(0, mN + 1).eval(Q.ONE).divide(2);
+//    final Q d = RING.pow(mT.subs(1, Q.TWO), 4, limits).extract(0, mN + 2).eval(Q.ONE).divide(24);
+//    //System.out.println("T(x^2,4)T(x,2)^2=" + RING.multiply(mT.substitutePowers(Y2X, limits).subs(1, new Q(4)), RING.pow(mT.subs(1, Q.TWO), 2, limits), limits));
+//    final Q e = RING.multiply(mT.substitutePowers(Y2X, limits).subs(1, new Q(4)), RING.pow(mT.subs(1, Q.TWO), 2, limits), limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(3, 4));
+//    final Q f = RING.pow(mT.substitutePowers(Y2X, limits).subs(1, new Q(4)), 2, limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(9, 8));
+//    final Q g = mT.substitutePowers(new int[] {4, 1}, limits).subs(1, new Q(16)).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(71, 4));
+//    //System.out.println("T(x^3,8)T(x,2)=" + RING.multiply(mT.substitutePowers(new int[] {3, 1}, limits).subs(1, new Q(8)), mT.subs(1, Q.TWO), limits));
+//    final Q h = RING.multiply(mT.substitutePowers(new int[] {3, 1}, limits).subs(1, new Q(8)), mT.subs(1, Q.TWO), limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(13, 3));
+//    System.out.println("a=" + a + " b=" + b + " c=" + c + " d=" + d + " e=" + e + " f=" + f + " g=" + g + " h=" + h);
+//    return a.add(b).subtract(c).add(d).add(e).add(f).add(g).add(h).toZ();
+//  }
+
+  /* Maple: (also does not work)
+  T:=(x,y)->1*x+1*x^2+1*x^3+1*x^3*y+2*x^4+1*x^4*y+3*x^5+3*x^5*y+6*x^6+5*x^6*y+11*x^7+11*x^7*y+1*x^7*y^3+22*x^8+22*x^8*y+1*x^8*y^2+1*x^8*y^3+43*x^9+48*x^9*y+4*x^9*y^2+3*x^9*y^3;
+
+expand(T(x,2)+(3/2/x)*T(x^2,4)-(1/2/x)*T(x,2)^2+(1/24/x^2)*T(x,2)^4+(3/4/x^2)*T(x^2,4)*T(x,2)^2+(9/8/x^2)*T(x^2,4)^2+(71/4/x^2)*T(x^4,16)+(13/3/x^2)*T(x^3,8)*T(x,2));
+   */
 }
 

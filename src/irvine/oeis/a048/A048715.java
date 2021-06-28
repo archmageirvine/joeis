@@ -4,7 +4,7 @@ package irvine.oeis.a048;
 import irvine.oeis.a098.A098941;
 
 /**
- * A048715 Binary expansion matches (100(0)*)*; or, Zeckendorf-like expansion of n using recurrence f(n) = f(n-1) + f(n-3).
+ * A048715 Binary expansion matches (100(0)*)*(0|1|10)?; or, Zeckendorf-like expansion of n using recurrence f(n) = f(n-1) + f(n-3).
  * @author Georg Fischer
  */
 public class A048715 extends A098941 {

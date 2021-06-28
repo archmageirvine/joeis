@@ -260,6 +260,30 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
   }
 
   /**
+   * Substitute a particular variable with a particular value.  The resulting polynomial
+   * will be the same type as the given polynomial (although there will no longer be
+   * any terms containing the specified variable number).
+   * @param var variable number
+   * @param value value
+   * @return substituted polynomial
+   */
+  public MultivariatePolynomial<E> subs(final int var, final E value) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
+    for (final Map.Entry<Term, E> e : entrySet()) {
+      E v = e.getValue();
+      final int[] p = e.getKey().mPowers;
+      final int exponent = p[var];
+      final E newCoeff = mCoefficientField.multiply(v, mCoefficientField.pow(value, exponent));
+      final int[] pattern = Arrays.copyOf(p, p.length);
+      pattern[var] = 0;
+      final Term term = new Term(pattern);
+      final E existing = res.get(term);
+      res.put(term, existing == null ? newCoeff : mCoefficientField.add(existing, newCoeff));
+    }
+    return res;
+  }
+
+  /**
    * Multiply this polynomial by another.
    * @param p the other polynomial
    * @param degreeLimits maximum retained degree for each variable

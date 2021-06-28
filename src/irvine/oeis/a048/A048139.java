@@ -139,7 +139,7 @@ public class A048139 implements Sequence {
       return 1;
     }
     assert n > 0;
-    System.out.println("n=" + n + " f=" + prevFace + " k=" + prevK + " p=" + prevP);
+    System.out.println("  n=" + n + " f=" + prevFace + " k=" + prevK + " p=" + prevP);
     long c = 0;
     for (int k = 0; k < prevK; ++k) {
       //for (int f = 0; f <= prevFace - 2 * prevK + 1; ++f) {
@@ -178,7 +178,7 @@ public class A048139 implements Sequence {
   }
 
   private long count(final int n, final int[] majors, final String prefix) {
-    System.out.println(n + " remains, major=" + Arrays.toString(majors));
+    System.out.println("  " + n + " remains, major=" + Arrays.toString(majors));
     if (n <= 1) {
       return n == 0 || (n == 1 && majors[0] > 1) ? 1 : 0; // todo can n < 0 occur
     }
@@ -207,27 +207,37 @@ public class A048139 implements Sequence {
     return cnt;
   }
 
+  private boolean isDistinctParts(final int[] p) {
+    for (int k = 1; k < p.length; ++k) {
+      if (p[k] == p[k - 1]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 1) {
+      return Z.ONE;
+    }
     System.out.println("Trying for " + mN);
     long count = 0;
     for (int arm = (mN - 1) / 3; arm > 0; --arm) {
       long c = 0;
-      if (arm == 0) {
-        c += count(mN - 1, new int[0], "  ");
-      } else {
-        final IntegerPartition part = new IntegerPartition(arm);
-        int[] p;
-        while ((p = part.next()) != null) {
-          //final long pc = count(mN - 3 * arm - p.length, p, "  ");
-          final long pc = count(mN - 3 * arm - 1, p, "  ");
-          System.out.println(Arrays.toString(p) + " contributes " + pc);
-          c += pc;
-        }
+      final IntegerPartition part = new IntegerPartition(arm);
+      int[] p;
+      while ((p = part.next()) != null) {
+        //final long pc = count(mN - 3 * arm - p.length, p, "  ");
+//        if (!isDistinctParts(p)) {
+//          continue;
+//        }
+        final long pc = count(mN - 3 * arm - 1, p, "  ");
+        System.out.println("  " + Arrays.toString(p) + " contributes " + pc);
+        c += pc;
       }
       if (c == 0) {
-        System.out.println("Bailing out with arm size " + arm);
+        System.out.println("  Bailing out with arm size " + arm);
         break;
       }
       count += c;

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039251 Numbers n such that representation in base 12 has same number of 4's and 9's.
+ * A039251 Numbers whose base-12 representation has the same number of 4's and 9's.
  * @author Georg Fischer
  */
 public class A039251 extends RunsBaseSequence {

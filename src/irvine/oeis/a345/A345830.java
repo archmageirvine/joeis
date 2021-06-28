@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345830 allocated for Sean A. Irvine.
+ * A345830 Numbers that are the sum of seven fourth powers in exactly eight ways.
  * @author Sean A. Irvine
  */
 public class A345830 extends LimitedSumOfLikePowersSequence {

@@ -270,10 +270,9 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
   public MultivariatePolynomial<E> subs(final int var, final E value) {
     final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
     for (final Map.Entry<Term, E> e : entrySet()) {
-      E v = e.getValue();
       final int[] p = e.getKey().mPowers;
       final int exponent = p[var];
-      final E newCoeff = mCoefficientField.multiply(v, mCoefficientField.pow(value, exponent));
+      final E newCoeff = mCoefficientField.multiply(e.getValue(), mCoefficientField.pow(value, exponent));
       final int[] pattern = Arrays.copyOf(p, p.length);
       pattern[var] = 0;
       final Term term = new Term(pattern);

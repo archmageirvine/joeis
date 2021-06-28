@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345790 allocated for Sean A. Irvine.
+ * A345790 Numbers that are the sum of eight cubes in exactly eight ways.
  * @author Sean A. Irvine
  */
 public class A345790 extends LimitedSumOfLikePowersSequence {

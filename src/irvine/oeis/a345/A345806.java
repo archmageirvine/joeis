@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A345806 allocated for Sean A. Irvine.
+ * A345806 Numbers that are the sum of ten cubes in exactly four ways.
  * @author Sean A. Irvine
  */
 public class A345806 extends LimitedSumOfLikePowersSequence {

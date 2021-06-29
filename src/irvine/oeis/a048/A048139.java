@@ -166,7 +166,7 @@ public class A048139 implements Sequence {
     if (inner.length >= outer.length) {
       return false;
     }
-    if (inner[0] >= outer[0]) {
+    if (inner[0] > outer[0]) {
       return false;
     }
     for (int k = 1; k < inner.length; ++k) {
@@ -177,69 +177,83 @@ public class A048139 implements Sequence {
     return true;
   }
 
-  private long count(final int n, final int[] majors, final String prefix) {
-    System.out.println("  " + n + " remains, major=" + Arrays.toString(majors));
-    if (n <= 1) {
-      return n == 0 || (n == 1 && majors[0] > 1) ? 1 : 0; // todo can n < 0 occur
-    }
-    long cnt = 0;
-    for (int arm = (n - 1) / 3; arm > 0; --arm) {
-      long c = 0;
-      if (arm == 0) {
-        final long contrib = count(n - 1, new int[0], prefix + "  ");
-        c += contrib;
-      } else {
-        final IntegerPartition part = new IntegerPartition(arm);
-        int[] p;
-        while ((p = part.next()) != null) {
-          if (isOverMajored(majors, p)) {
-            final long contrib = count(n - 3 * arm - 1, p, prefix + "  ");
-            System.out.println(prefix + Arrays.toString(p) + " contributes " + contrib);
-            c += contrib;
-          }
-        }
-      }
-      if (c == 0) {
-        break;
-      }
-      cnt += c;
-    }
-    return cnt;
-  }
-
-  private boolean isDistinctParts(final int[] p) {
-    for (int k = 1; k < p.length; ++k) {
-      if (p[k] == p[k - 1]) {
+  private boolean isPerfectlyBalanced(final int[] p) {
+    // todo it would be nice to generate these directly rather than subsetting for all partitions
+    for (int k = 0; k < p.length; ++k) {
+      if (p[k] > p.length || p[p[k] - 1] <= k) {
         return false;
       }
     }
     return true;
   }
 
+  private long count(final int n, final int[] majors, final String prefix) {
+    System.out.println(prefix + n + " remains, major=" + Arrays.toString(majors));
+    if (n == 0) {
+      return 1;
+    }
+    if (majors.length == 0) {
+      return 0;
+    }
+    long cnt = 0;
+    for (int arm = n; arm > 0; --arm) {
+      long c = 0;
+      final IntegerPartition part = new IntegerPartition(arm);
+      int[] p;
+      while ((p = part.next()) != null) {
+        System.out.println(prefix + "Partition arm=" + arm + " " + Arrays.toString(p));
+        if (isPerfectlyBalanced(p)) {
+          continue;
+        }
+        final int residue = n - 3 * (arm - p[0]) - 1; //+ 2 * p[0] + 1; // todo it this right?
+        System.out.println(prefix + "Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
+        if (residue < 0) {
+          continue;
+        }
+        if (isOverMajored(majors, p)) {
+          final long contrib = count(residue, Arrays.copyOfRange(p, 1, p.length), prefix + "  ");
+          System.out.println(prefix + Arrays.toString(p) + " contributes " + contrib);
+          c += contrib;
+        }
+      }
+      cnt += c;
+    }
+    return cnt;
+  }
+
   @Override
   public Z next() {
+//    System.out.println("B0: " + isPerfectlyBalanced(new int[] {1}));
+//    System.out.println("B1: " + isPerfectlyBalanced(new int[] {2, 1}));
+//    System.out.println("B5: " + isPerfectlyBalanced(new int[] {5, 4, 4, 3, 1}));
+//    System.out.println("B5b: " + isPerfectlyBalanced(new int[] {5, 4, 3, 3, 1}));
     if (++mN == 1) {
       return Z.ONE;
     }
     System.out.println("Trying for " + mN);
     long count = 0;
-    for (int arm = (mN - 1) / 3; arm > 0; --arm) {
+    for (int arm = mN; arm > 0; --arm) {
       long c = 0;
       final IntegerPartition part = new IntegerPartition(arm);
       int[] p;
       while ((p = part.next()) != null) {
-        //final long pc = count(mN - 3 * arm - p.length, p, "  ");
-//        if (!isDistinctParts(p)) {
-//          continue;
-//        }
-        final long pc = count(mN - 3 * arm - 1, p, "  ");
+        //System.out.println("  Partition: " + Arrays.toString(p));
+        if (!isPerfectlyBalanced(p)) {
+          continue;
+        }
+        final int residue = mN - 3 * (arm - p[0]) - 1; //+ 2 * p[0] + 1; // todo it this right?
+        System.out.println("  Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
+        if (residue < 0) {
+          continue;
+        }
+        final long pc = count(residue, Arrays.copyOfRange(p, 1, p.length), "    ");
         System.out.println("  " + Arrays.toString(p) + " contributes " + pc);
         c += pc;
       }
-      if (c == 0) {
-        System.out.println("  Bailing out with arm size " + arm);
-        break;
-      }
+//      if (c == 0) {
+//        System.out.println("  Bailing out with arm size " + arm);
+//        break;
+//      }
       count += c;
     }
     return Z.valueOf(count);

@@ -10,7 +10,7 @@ import irvine.oeis.a007.A007088;
  */
 public class A169964 extends A007088 {
 
-  protected int mN;
+  //protected int mN;
   protected Z mDigit;
 
   /** Construct the sequence */
@@ -24,7 +24,7 @@ public class A169964 extends A007088 {
    * @param parm digit to multiply on A007088
    */
   public A169964(final int offset, final int parm) {
-    mN = offset - 1;
+    //mN = offset - 1;
     mDigit = Z.valueOf(parm);
   }
 

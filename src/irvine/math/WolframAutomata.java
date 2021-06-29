@@ -61,7 +61,7 @@ public class WolframAutomata {
       next.set(k, mRule[l | c | r]);
     }
     mLength += 2;
-    return set;
+    return next;
   }
 
   /**

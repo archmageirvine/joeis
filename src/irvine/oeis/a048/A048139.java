@@ -37,9 +37,6 @@ public class A048139 implements Sequence {
 
   private boolean isPerfectlyBalanced(final int[] p) {
     // todo it would be nice to generate these directly rather than subsetting for all partitions
-//    if (p.length == 1 && p[0] == 1) {
-//      return true;
-//    }
     for (int k = 0; k < p.length; ++k) {
       if (p[k] > p.length || p[p[k] - 1] <= k) {
         return false;
@@ -62,18 +59,19 @@ public class A048139 implements Sequence {
       final IntegerPartition part = new IntegerPartition(arm);
       int[] p;
       while ((p = part.next()) != null) {
-        System.out.println(prefix + "Partition arm=" + arm + " " + Arrays.toString(p));
+        //System.out.println(prefix + "Partition arm=" + arm + " " + Arrays.toString(p));
         if (!isPerfectlyBalanced(p)) {
           continue;
         }
         final int residue = n - 3 * (arm - p[0]) - 1;
-        System.out.println(prefix + "Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
+        //final int residue = n - (2 * arm - p[0]);
         if (residue < 0) {
           continue;
         }
+        //System.out.println(prefix + "Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
         if (isOverMajored(majors, p)) {
           final long contrib = count(residue, Arrays.copyOfRange(p, 1, p.length), prefix + "  ");
-          System.out.println(prefix + Arrays.toString(p) + " contributes " + contrib);
+          System.out.println(prefix + "n=" + arm + " r=" + residue + " " + Arrays.toString(p) + " contributes " + contrib);
           c += contrib;
         }
       }
@@ -84,10 +82,6 @@ public class A048139 implements Sequence {
 
   @Override
   public Z next() {
-//    System.out.println("B0: " + isPerfectlyBalanced(new int[] {1}));
-//    System.out.println("B1: " + isPerfectlyBalanced(new int[] {2, 1}));
-//    System.out.println("B5: " + isPerfectlyBalanced(new int[] {5, 4, 4, 3, 1}));
-//    System.out.println("B5b: " + isPerfectlyBalanced(new int[] {5, 4, 3, 3, 1}));
     if (++mN == 1) {
       return Z.ONE;
     }
@@ -103,18 +97,15 @@ public class A048139 implements Sequence {
           continue;
         }
         final int residue = mN - 3 * (arm - p[0]) - 1;
-        System.out.println("  Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
+        //final int residue = mN - (2 * arm - p[0]);
         if (residue < 0) {
           continue;
         }
+        System.out.println("  Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
         final long pc = count(residue, Arrays.copyOfRange(p, 1, p.length), "    ");
         System.out.println("  " + Arrays.toString(p) + " contributes " + pc);
         c += pc;
       }
-//      if (c == 0) {
-//        System.out.println("  Bailing out with arm size " + arm);
-//        break;
-//      }
       count += c;
     }
     return Z.valueOf(count);

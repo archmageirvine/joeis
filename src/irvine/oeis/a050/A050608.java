@@ -4,7 +4,7 @@ package irvine.oeis.a050;
 import irvine.oeis.a098.A098941;
 
 /**
- * A050608 Numbers k such that base 7 expansion matches (0|1|2|3)*((0|1|2)(4|5|6))?(0|1|2|3)*
+ * A050608 Numbers k such that base 7 expansion matches (0|1|2|3)*((0|1|2)(4|5|6))?(0|1|2|3)*.
  * @author Georg Fischer
  */
 public class A050608 extends A098941 {

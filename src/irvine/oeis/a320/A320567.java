@@ -6,7 +6,7 @@ import irvine.oeis.BinomialTransformSequence;
 import irvine.oeis.a007.A007837;
 
 /**
- * A320567 Expansion of e.g.f. exp(x) * Product_{k>=1} (1 + x^k/k!).
+ * A320567 Expansion of e.g.f. exp(x) * Product_{k&gt;=1} (1 + x^k/k!).
  * @author Georg Fischer
  */
 public class A320567 extends BinomialTransformSequence {

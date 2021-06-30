@@ -7,7 +7,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a138.A138929;
 
 /**
- * A230078 Complement of A138929: positive integers not of the form 2*p^k, k >= 0, p a prime (also 2).
+ * A230078 Complement of A138929: positive integers not of the form 2*p^k, k &gt;= 0, p a prime (also 2).
  * @author Georg Fischer
  */
 public class A230078 extends ComplementSequence {

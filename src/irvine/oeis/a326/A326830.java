@@ -7,7 +7,7 @@ import irvine.oeis.a048.A048050;
 
 
 /**
- * A326830 Expansion of Product_{i>=2, j>=2} 1 / (1 - x^(i*j))^j.
+ * A326830 Expansion of Product_{i&gt;=2, j&gt;=2} 1 / (1 - x^(i*j))^j.
  * @author Georg Fischer
  */
 public class A326830 extends EulerTransform {

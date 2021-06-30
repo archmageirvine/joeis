@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001227;
 
 
 /**
- * A107742 G.f.: Product_{j>=1} Product_{i>=1} (1 + x^(i*j)).
+ * A107742 G.f.: Product_{j&gt;=1} Product_{i&gt;=1} (1 + x^(i*j)).
  * @author Georg Fischer
  */
 public class A107742 extends EulerTransform {

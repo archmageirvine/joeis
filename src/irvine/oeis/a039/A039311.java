@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039311 Numbers n such that representation in base 7 has same nonzero number of 0's and 4's.
+ * A039311 Numbers whose base-7 representation has the same nonzero number of 0's and 4's.
  * @author Georg Fischer
  */
 public class A039311 extends RunsBaseSequence {

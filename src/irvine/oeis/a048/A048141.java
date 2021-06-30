@@ -13,6 +13,7 @@ import irvine.util.Triple;
  */
 public class A048141 implements Sequence, MultidimensionalIntegerPartition.PartitionUser {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private long mCount = 0;
 
@@ -28,7 +29,9 @@ public class A048141 implements Sequence, MultidimensionalIntegerPartition.Parti
         return;
       }
     }
-    //System.out.println(triples.size() + " " + triples);
+    if (mVerbose) {
+      System.out.println(triples.size() + " " + triples);
+    }
     ++mCount;
   }
 

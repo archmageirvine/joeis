@@ -7,7 +7,7 @@ import irvine.oeis.a048.A048272;
 
 
 /**
- * A158441 G.f.: A(x) = exp( Sum_{n>=1} sigma(n)*x^n/(1+x^n) /n ).
+ * A158441 G.f.: A(x) = exp( Sum_{n&gt;=1} sigma(n)*x^n/(1+x^n) /n ).
  * @author Georg Fischer
  */
 public class A158441 extends EulerTransform {

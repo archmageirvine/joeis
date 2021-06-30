@@ -7,7 +7,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a071.A071228;
 
 /**
- * A171521 Numbers that are not the product of k-th composite number and k for any k >= 1.
+ * A171521 Numbers that are not the product of k-th composite number and k for any k &gt;= 1.
  * @author Georg Fischer
  */
 public class A171521 extends ComplementSequence {

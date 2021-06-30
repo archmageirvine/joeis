@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 import irvine.oeis.a156.A156127;
 
 /**
- * A225582 Primes in the chain of repeated application of x->2*x+3, starting at x=11.
+ * A225582 Primes in the chain of repeated application of x-&gt;2*x+3, starting at x=11.
  * @author Georg Fischer
  */
 public class A225582 extends PrimeSubsequence {

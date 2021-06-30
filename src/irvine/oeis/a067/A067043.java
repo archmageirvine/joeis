@@ -6,7 +6,7 @@ import irvine.oeis.RecordPositionSubsequence;
 import irvine.oeis.a048.A048377;
 
 /**
- * A067043 Nondecreasing sums of digits: a(0) = 0 and for n>0: a(n) = Min{m>n|SumOfDigits(m)>= SumOfDigits(a(n-1))}, where SumOfDigits = A007953.
+ * A067043 Nondecreasing sums of digits: a(0) = 0 and for n&gt;0: a(n) = Min{m&gt;n|SumOfDigits(m)&gt;= SumOfDigits(a(n-1))}, where SumOfDigits = A007953.
  * @author Georg Fischer
  */
 public class A067043 extends RecordPositionSubsequence {

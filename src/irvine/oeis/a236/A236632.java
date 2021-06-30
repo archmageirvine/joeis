@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a065.A065608;
 
 /**
- * A236632 Sum of all divisors of all positive integers <= n minus the total number of divisors of all positive integers <= n.
+ * A236632 Sum of all divisors of all positive integers &lt;= n minus the total number of divisors of all positive integers &lt;= n.
  * @author Georg Fischer
  */
 public class A236632 extends PartialSumSequence {

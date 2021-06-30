@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a056.A056924;
 
 /**
- * A211264 Number of integer pairs (x,y) such that 0 < x < y <= n and x*y <= n.
+ * A211264 Number of integer pairs (x,y) such that 0 &lt; x &lt; y &lt;= n and x*y &lt;= n.
  * @author Georg Fischer
  */
 public class A211264 extends PartialSumSequence {

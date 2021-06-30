@@ -7,7 +7,7 @@ import irvine.oeis.a010.A010051;
 
 
 /**
- * A308298 Expansion of Sum_{k>=1} mu(k)*log(1 + Sum_{j>=1} x^(prime(j)*k))/k.
+ * A308298 Expansion of Sum_{k&gt;=1} mu(k)*log(1 + Sum_{j&gt;=1} x^(prime(j)*k))/k.
  * @author Georg Fischer
  */
 public class A308298 extends InverseEulerTransform {

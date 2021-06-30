@@ -16,7 +16,6 @@ public class WolframAutomata {
   private final boolean[] mRule;
   /** Current state. */
   private BitSet mCur;
-  private int mLength;
 
   /**
    * Construct a new generator for the specified Wolfram automata.
@@ -39,11 +38,10 @@ public class WolframAutomata {
     mRule[7] = (rule & 128) != 0;
     mCur = new BitSet(1);
     mCur.set(0, true);
-    mLength = 1;
   }
 
-  private boolean isSet(final int k) {
-    return k < 0 || k >= mLength ? mLength != 1 && mRule[0] : mCur.get(k);
+  private boolean isSet(final BitSet set, final int k) {
+    return k < 0 || k >= set.length() ? set.length() != 1 && mRule[0] : set.get(k);
   }
 
   /**
@@ -52,15 +50,14 @@ public class WolframAutomata {
    * @return next bit set
    */
   public BitSet step(final BitSet set) {
-    final BitSet next = new BitSet(mLength + 2);
-    for (int k = 0; k < mLength + 2; ++k) {
+    final BitSet next = new BitSet(set.length() + 2);
+    for (int k = 0; k < set.length() + 2; ++k) {
       // get left, centre, right pixels
-      final int l = isSet(k - 2) ? 4 : 0;
-      final int c = isSet(k - 1) ? 2 : 0;
-      final int r = isSet(k) ? 1 : 0;
+      final int l = isSet(set, k - 2) ? 4 : 0;
+      final int c = isSet(set, k - 1) ? 2 : 0;
+      final int r = isSet(set, k) ? 1 : 0;
       next.set(k, mRule[l | c | r]);
     }
-    mLength += 2;
     return next;
   }
 
@@ -79,7 +76,7 @@ public class WolframAutomata {
    */
   public String toString() {
     final StringBuilder sb = new StringBuilder();
-    for (int k = 0; k < mLength; ++k) {
+    for (int k = 0; k < mCur.length(); ++k) {
       sb.append(mCur.get(k) ? '1' : '0');
     }
     return sb.toString();
@@ -91,7 +88,7 @@ public class WolframAutomata {
    */
   public Z toZ() {
     Z result = Z.ZERO;
-    for (int k = 0; k < mLength; ++k) {
+    for (int k = 0; k < mCur.length(); ++k) {
       result = result.shiftLeft(1);
       if (mCur.get(k)) {
         result = result.add(1);

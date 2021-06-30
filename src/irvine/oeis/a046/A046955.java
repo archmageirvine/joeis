@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046955 Numbers n such that sec(n) decreases monotonically to 1 (or cos(n) increases to 1).
+ * A046955 Numbers k such that sec(k) decreases monotonically to 1 (or cos(k) increases to 1).
  * @author Sean A. Irvine
  */
 public class A046955 implements Sequence {

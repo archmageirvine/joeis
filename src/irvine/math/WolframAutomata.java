@@ -1,7 +1,5 @@
 package irvine.math;
 
-import java.util.BitSet;
-
 import irvine.math.z.Z;
 
 /**
@@ -15,7 +13,7 @@ public class WolframAutomata {
   /** The rule. */
   private final boolean[] mRule;
   /** Current state. */
-  private BitSet mCur;
+  private Z mCur;
 
   /**
    * Construct a new generator for the specified Wolfram automata.
@@ -36,12 +34,11 @@ public class WolframAutomata {
     mRule[5] = (rule & 32) != 0;
     mRule[6] = (rule & 64) != 0;
     mRule[7] = (rule & 128) != 0;
-    mCur = new BitSet(1);
-    mCur.set(0, true);
+    mCur = Z.ONE;
   }
 
-  private boolean isSet(final BitSet set, final int k) {
-    return k < 0 || k >= set.length() ? set.length() != 1 && mRule[0] : set.get(k);
+  private boolean isSet(final Z set, final int k) {
+    return k < 0 || k >= set.bitLength() ? set.bitLength() != 1 && mRule[0] : set.testBit(k);
   }
 
   /**
@@ -49,14 +46,16 @@ public class WolframAutomata {
    * @param set bit set
    * @return next bit set
    */
-  public BitSet step(final BitSet set) {
-    final BitSet next = new BitSet(set.length() + 2);
-    for (int k = 0; k < set.length() + 2; ++k) {
+  public Z step(final Z set) {
+    Z next = Z.ZERO;
+    for (int k = 0; k < set.bitLength() + 2; ++k) {
       // get left, centre, right pixels
       final int l = isSet(set, k - 2) ? 4 : 0;
       final int c = isSet(set, k - 1) ? 2 : 0;
       final int r = isSet(set, k) ? 1 : 0;
-      next.set(k, mRule[l | c | r]);
+      if (mRule[l | c | r]) {
+        next = next.setBit(k);
+      }
     }
     return next;
   }
@@ -65,7 +64,7 @@ public class WolframAutomata {
    * Return a bit set with the next step of the automata.
    * @return next step of automata
    */
-  public BitSet next() {
+  public Z next() {
     mCur = step(mCur);
     return mCur;
   }
@@ -75,11 +74,12 @@ public class WolframAutomata {
    * @return a string
    */
   public String toString() {
-    final StringBuilder sb = new StringBuilder();
-    for (int k = 0; k < mCur.length(); ++k) {
-      sb.append(mCur.get(k) ? '1' : '0');
-    }
-    return sb.toString();
+    return mCur.toString(2);
+//    final StringBuilder sb = new StringBuilder();
+//    for (int k = 0; k < mCur.length(); ++k) {
+//      sb.append(mCur.get(k) ? '1' : '0');
+//    }
+//    return sb.toString();
   }
 
   /**
@@ -87,13 +87,14 @@ public class WolframAutomata {
    * @return a Z.
    */
   public Z toZ() {
-    Z result = Z.ZERO;
-    for (int k = 0; k < mCur.length(); ++k) {
-      result = result.shiftLeft(1);
-      if (mCur.get(k)) {
-        result = result.add(1);
-      }
-    }
-    return result;
+    return mCur;
+//    Z result = Z.ZERO;
+//    for (int k = 0; k < mCur.length(); ++k) {
+//      result = result.shiftLeft(1);
+//      if (mCur.get(k)) {
+//        result = result.add(1);
+//      }
+//    }
+//    return result;
   }
 }

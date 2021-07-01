@@ -28,7 +28,6 @@ public class A048711 extends A038183 {
   @Override
   public Z next() {
     final Z t = super.next();
-    final BitSet b = BitSet.valueOf(t.toByteArray());
-    return toZ(mRule150.step(b));
+    return mRule150.step(t);
   }
 }

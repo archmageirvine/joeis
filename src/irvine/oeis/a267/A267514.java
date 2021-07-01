@@ -17,7 +17,7 @@ public class A267514 implements Sequence {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mA.append(mAutomata.next().get(mN) ? '1' : '0');
+      mA.append(mAutomata.next().testBit(mN) ? '1' : '0');
     }
     return new Z(mA);
   }

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A169932 a(n) = 0+n in the arithmetic defined in A169918.
- * a(n) = n - n%10.
+ * <code>a(n) = n - n%10</code>.
  * @author Georg Fischer
  */
 public class A169932 implements Sequence {

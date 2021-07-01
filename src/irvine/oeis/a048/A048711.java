@@ -1,33 +1,16 @@
 package irvine.oeis.a048;
 
-import java.util.BitSet;
-
-import irvine.math.WolframAutomata;
 import irvine.math.z.Z;
-import irvine.oeis.a038.A038183;
+import irvine.oeis.WolframAutomata;
 
 /**
  * A048711.
  * @author Sean A. Irvine
  */
-public class A048711 extends A038183 {
+public class A048711 extends WolframAutomata {
 
-  private final WolframAutomata mRule150 = new WolframAutomata(150);
-
-  private Z toZ(final BitSet set) {
-    Z result = Z.ZERO;
-    for (int k = 0; k < set.length(); ++k) {
-      result = result.shiftLeft(1);
-      if (set.get(k)) {
-        result = result.add(1);
-      }
-    }
-    return result;
-  }
-
-  @Override
-  public Z next() {
-    final Z t = super.next();
-    return mRule150.step(t);
+  /** Construct the sequence. */
+  public A048711() {
+    super(90, Z.SEVEN);
   }
 }

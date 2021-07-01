@@ -1,6 +1,6 @@
 package irvine.oeis.a267;
 
-import irvine.math.WolframAutomata;
+import irvine.oeis.WolframAutomata;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -10,15 +10,15 @@ import irvine.oeis.Sequence;
  */
 public class A267514 implements Sequence {
 
-  private final StringBuilder mA = new StringBuilder("1");
+  private final StringBuilder mA = new StringBuilder();
   private final WolframAutomata mAutomata = new WolframAutomata(137);
   private int mN = -1;
 
   @Override
   public Z next() {
-    if (++mN > 0) {
-      mA.append(mAutomata.next().testBit(mN) ? '1' : '0');
-    }
+    final Z a = mAutomata.next();
+    System.out.println("a=" + a.toString(2));
+    mA.append(a.testBit(++mN) ? '1' : '0');
     return new Z(mA);
   }
 }

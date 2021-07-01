@@ -1,5 +1,6 @@
 package irvine.math;
 
+import irvine.oeis.WolframAutomata;
 import junit.framework.TestCase;
 
 /**

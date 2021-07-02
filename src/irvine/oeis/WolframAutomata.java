@@ -4,17 +4,14 @@ import irvine.math.z.Z;
 
 /**
  * Computes Stephen Wolfram's one-dimensional automata.
- *
  * @author Pablo Mayrgundter
  * @author Sean A. Irvine
  */
 public class WolframAutomata implements Sequence {
 
-  /** The rule. */
   private final boolean[] mRule;
-  /** Current state. */
   private Z mCur;
-  private boolean mFirst = true;
+  private long mRow = -1;
   private int mLength;
 
   /**
@@ -52,14 +49,12 @@ public class WolframAutomata implements Sequence {
   }
 
   private boolean isSet(final Z set, final int k) {
-    //return k >= 0 && set.testBit(k);
-    return k < 0 || k >= mLength ? mLength != 1 && mRule[0] : set.testBit(k);
+    return k < 0 || k >= mLength ? mRow > 0 && mRule[0] : set.testBit(k);
   }
 
   @Override
   public Z next() {
-    if (mFirst) {
-      mFirst = false;
+    if (++mRow == 0) {
       return mCur;
     }
     Z next = Z.ZERO;
@@ -73,22 +68,8 @@ public class WolframAutomata implements Sequence {
         next = next.setBit(k);
       }
     }
+    ++mRow;
     mCur = next;
     return mCur;
   }
 }
-/*
- public BitSet next() {
-    final BitSet next = new BitSet(mCur.length() + 2);
-    for (int i = -1; i <= mCur.length();) {
-      // get left, centre, right pixels
-      final int l = i <= 0 ? 0 : (mCur.get(i - 1) ? 4 : 0);
-      final int c = i < 0 ? 0 : (mCur.get(i) ? 2 : 0);
-      final int r = mCur.get(i + 1) ? 1 : 0;
-      next.set(++i, mRule[l | c | r]);
-    }
-    mCur = next;
-    return mCur;
-  }
-
- */

@@ -1,4 +1,4 @@
-package irvine.oeis.a346;
+package irvine.oeis.a345;
 
 import java.util.ArrayList;
 
@@ -8,10 +8,10 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A346033.
+ * A345670.
  * @author Sean A. Irvine
  */
-public class A346033 implements Sequence {
+public class A345670 implements Sequence {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private final ArrayList<CR> mLimits = new ArrayList<>();
@@ -41,8 +41,8 @@ public class A346033 implements Sequence {
     ++mN;
     while (mFirsts.get(mN) == 0) {
       final CR kz = CR.valueOf(++mM);
-      final CR sin = kz.sin();
-      final CR t = sin.subtract(CR.valueOf(sin.round())).abs();
+      final CR cos = kz.cos();
+      final CR t = cos.subtract(CR.valueOf(cos.round())).abs();
       final int z = zeros(t);
       if (mFirsts.get(z) == 0) {
         mFirsts.set(z, mM);

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A345670.
+ * A345670 allocated for Treanungkur Mal.
  * @author Sean A. Irvine
  */
 public class A345670 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A252802 Primes whose trajectory under the procedure in A244550, modified to also allow the Wieferich prime 2, enters the repeating cycle {3, 11, 71}.
+ * A252802 Primes whose trajectory under the map x -&gt; A039951(x) enters the cycle {3, 11, 71}.
  *
  * @author Georg Fischer
  */

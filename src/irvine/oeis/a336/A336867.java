@@ -5,7 +5,7 @@ package irvine.oeis.a336;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A336867 Numbers n such that n! does not have distinct prime multiplicities.
+ * A336867 Numbers k such that k! does not have distinct prime multiplicities.
  * Lin.rec. signature: (2,-1)
  * @author Georg Fischer
  */

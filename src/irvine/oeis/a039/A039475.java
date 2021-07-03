@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039475 Numbers n such that representation in base 11 has same nonzero number of 4's and 8's.
+ * A039475 Numbers whose base-11 representation has the same nonzero number of 4's and 8's.
  * @author Georg Fischer
  */
 public class A039475 extends RunsBaseSequence {

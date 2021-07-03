@@ -72,4 +72,16 @@ public class WolframAutomata implements Sequence {
     mCur = next;
     return mCur;
   }
+
+  /**
+   * Convenience method to return the next state of an automata.
+   * @param rule rule number of automata
+   * @param state starting state
+   * @return next sate
+   */
+  public static Z step(final int rule, final Z state) {
+    final WolframAutomata a = new WolframAutomata(rule, state);
+    a.next();
+    return a.next();
+  }
 }

@@ -22,7 +22,7 @@ public class A048723 implements Sequence {
     return sum;
   }
 
-  private Z power(final long a, final long b) {
+  protected Z power(final long a, final long b) {
     if (b == 0) {
       return Z.ONE;
     }

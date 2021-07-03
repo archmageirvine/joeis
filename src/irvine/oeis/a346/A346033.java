@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A346033.
+ * A346033 a(n) is the smallest integer k &gt; 0 such that 10^(-n-1) &lt; |sin(k) - round(sin(k))| &lt; 10^(-n).
  * @author Sean A. Irvine
  */
 public class A346033 implements Sequence {

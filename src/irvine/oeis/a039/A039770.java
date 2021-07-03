@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039770 Numbers n such that phi(n) is a perfect square.
+ * A039770 Numbers k such that phi(k) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A039770 implements Sequence {

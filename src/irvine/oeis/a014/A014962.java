@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014962 Odd numbers n such that n divides 25^n - 1.
+ * A014962 Odd numbers k that divide 25^k - 1.
  * @author Sean A. Irvine
  */
 public class A014962 implements Sequence {

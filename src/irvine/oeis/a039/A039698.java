@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039698 Numbers n such that phi(n) + 1 is prime.
+ * A039698 Numbers k such that phi(k) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A039698 implements Sequence {

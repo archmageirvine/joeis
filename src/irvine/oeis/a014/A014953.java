@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014953 Numbers n such that n divides s(n), where s(1)=1, s(k)=s(k-1)+k*13^(k-1).
+ * A014953 Numbers k such that k divides s(k), where s(1)=1, s(j) = s(j-1) + j*13^(j-1).
  * @author Sean A. Irvine
  */
 public class A014953 implements Sequence {

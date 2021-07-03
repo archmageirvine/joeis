@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A043326 Numbers n such that n is a product of two different primes and n-2 is prime.
+ * A043326 Numbers k such that k is a product of two different primes and k-2 is prime.
  * @author Sean A. Irvine
  */
 public class A043326 extends A000040 {

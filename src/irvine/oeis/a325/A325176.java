@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A325176 Numbers n such that an Archimedean 4-polytope with n vertices exists.
+ * A325176 Numbers k such that an Archimedean 4-polytope with k vertices exists.
  * @author Georg Fischer
  */
 public class A325176 extends FiniteSequence {

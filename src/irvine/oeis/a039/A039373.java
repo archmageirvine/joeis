@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039373 Numbers n such that representation in base 9 has same nonzero number of 2's and 4's.
+ * A039373 Numbers whose base-9 representation has the same nonzero number of 2's and 4's.
  * @author Georg Fischer
  */
 public class A039373 extends RunsBaseSequence {

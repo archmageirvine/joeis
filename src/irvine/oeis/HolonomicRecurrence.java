@@ -58,7 +58,7 @@ public class HolonomicRecurrence implements Sequence {
     mNDist = 0;
     mPolyList = new ArrayList<>(16);
     mInitTerms = new Z[] { Z.ONE };
-    initialize();
+    // initialize();
   }
 
   /**
@@ -385,7 +385,7 @@ public class HolonomicRecurrence implements Sequence {
    * Gets the vector for the initial terms.
    * @return a vector for the initial values of the sequence.
    */
-  protected Z[] getInitTerms() {
+  public Z[] getInitTerms() {
     return mInitTerms;
   }
 
@@ -435,5 +435,19 @@ public class HolonomicRecurrence implements Sequence {
     result.append(']');
     return result.toString();
   } // getInitString()
+  
+  /**
+   * Future shortening of initial terms
+   */
+  public int shorten() {
+    return 0;
+  }
+
+  /**
+   * Future normalization of the annihilator
+   */
+  public void normalize() {
+    return;
+  }
 
 } // HolonomicRecurrence

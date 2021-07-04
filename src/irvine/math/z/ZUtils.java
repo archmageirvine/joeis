@@ -969,4 +969,20 @@ public final class ZUtils {
     }
     return sum;
   }
+
+  /**
+   * Return the product of the values
+   * @param values numbers to multiply
+   * @return product
+   */
+  public static Z product(final Z... values) {
+    Z prod = Z.ONE;
+    for (final Z v : values) {
+      prod = prod.multiply(v);
+      if (prod.isZero()) {
+        break;
+      }
+    }
+    return prod;
+  }
 }

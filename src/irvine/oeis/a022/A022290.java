@@ -17,20 +17,25 @@ public class A022290 implements Sequence {
     }
   }
 
+  /**
+   * Return the Zeckendorf representation of a number.
+   * @param m number
+   * @return Zeckendorf representation.
+   */
+  public static Z zeckendorf(final Z m) {
+    Z sum = Z.ZERO;
+    for (int k = 0; k <= m.bitLength(); ++k) {
+      if (m.testBit(k)) {
+        sum = sum.add(FIBONACCI[k]);
+      }
+    }
+    return sum;
+  }
+
   private long mN = -1;
 
   @Override
   public Z next() {
-    long m = ++mN;
-    Z sum = Z.ZERO;
-    int k = 0;
-    while (m != 0) {
-      if ((m & 1) != 0) {
-        sum = sum.add(FIBONACCI[k]);
-      }
-      ++k;
-      m >>>= 1;
-    }
-    return sum;
+    return zeckendorf(Z.valueOf(++mN));
   }
 }

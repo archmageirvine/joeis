@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A000080 implements Sequence {
 
-  private static class Triangle {
+  protected static class Triangle {
     final int mA, mB, mC;
     Triangle(final int a, final int b, final int c) {
       assert a != b && a != c && b != c;
@@ -27,7 +27,7 @@ public class A000080 implements Sequence {
   private int mN = 2;
 
   private ArrayList<Triangle[]> mA = null;
-  private ArrayList<Triangle[]> mB = null;
+  protected ArrayList<Triangle[]> mB = new ArrayList<>();
 
   private Graph<Integer, Integer> trianglesToGraph(final Triangle[] triangles) {
     final int vertexCount = mN;
@@ -122,10 +122,11 @@ public class A000080 implements Sequence {
     if (mN == 3) {
       mA = new ArrayList<>();
       mA.add(new Triangle[] {new Triangle(0, 1, 2)});
+      mB.add(new Triangle[] {new Triangle(0, 1, 2)});
       return Z.ONE;
     }
     if (mN == 4) {
-      mB = new ArrayList<>();
+      mB.clear();
       mB.add(new Triangle[] {new Triangle(0, 1, 2), new Triangle(0, 1, 3)});
       return Z.ONE;
     }

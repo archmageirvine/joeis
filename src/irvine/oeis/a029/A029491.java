@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029491 Numbers n such that n divides the (left) concatenation of all numbers &lt;= n written in base 22 (most significant digit on left).
+ * A029491 Numbers k that divide the (left) concatenation of all numbers &lt;= k written in base 22 (most significant digit on left).
  * @author Sean A. Irvine
  */
 public class A029491 implements Sequence {

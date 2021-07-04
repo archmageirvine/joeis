@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014869 Numbers n such that n divides s(n), where s(1)=1, s(k)=19*s(k-1)+k.
+ * A014869 Numbers k that divide s(k), where s(1)=1, s(j)=19*s(j-1)+j.
  * @author Sean A. Irvine
  */
 public class A014869 extends A014903 {

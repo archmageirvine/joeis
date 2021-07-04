@@ -6,7 +6,7 @@ import irvine.oeis.ZeroSpacedSequence;
 import irvine.oeis.a014.A014487;
 
 /**
- * A109778 G.f. = 18th root of Hamming weight enumerator of [18, 9, 8]_4 self-dual code S_18 over GF(4) (cf. A014487).
+ * A109778 G.f. = 18th root of Hamming weight enumerator of [18,9,8]_4 self-dual code S_18 over GF(4) (cf. A014487).
  * @author Georg Fischer
  */
 public class A109778 extends PolynomialRootSequence {

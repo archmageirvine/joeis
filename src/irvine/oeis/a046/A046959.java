@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046959 Numbers n where sin(n) increases monotonically to 1 (or cosec(n) decreases).
+ * A046959 Numbers k where sin(k) increases monotonically to 1 (or cosec(k) decreases).
  * @author Sean A. Irvine
  */
 public class A046959 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A345404 a(n) is the smallest positive integer k such that |tan(k)-round(tan(k))| is smaller than 10^(-n), but greater than 10^(-n-1).
+ * A345404 a(n) is the smallest positive integer k such that |tan(k) - round(tan(k))| is smaller than 10^(-n), but greater than 10^(-n-1).
  * @author Sean A. Irvine
  */
 public class A345404 implements Sequence {

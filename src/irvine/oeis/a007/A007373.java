@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007373 Numbers n such that sigma(n+2) = sigma(n).
+ * A007373 Numbers k such that sigma(k+2) = sigma(k).
  * @author Sean A. Irvine
  */
 public class A007373 implements Sequence {

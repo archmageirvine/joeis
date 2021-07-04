@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014873 Numbers n such that n divides s(n), where s(1)=1, s(k)=22*s(k-1)+k.
+ * A014873 Numbers k that divide s(k), where s(1)=1, s(j)=22*s(j-1)+j.
  * @author Sean A. Irvine
  */
 public class A014873 extends A014907 {

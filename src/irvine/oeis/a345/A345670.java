@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A345670 allocated for Treanungkur Mal.
+ * A345670 a(n) is the smallest integer k &gt; 0 such that 10^(-n-1) &lt; |cos(k) - round(cos(k))| &lt; 10^(-n).
  * @author Sean A. Irvine
  */
 public class A345670 implements Sequence {

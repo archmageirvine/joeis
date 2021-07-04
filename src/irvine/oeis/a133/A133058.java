@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A133058 a(0) = a(1) = 1; for n > 1, a(n) = a(n-1) + n + 1 if a(n-1) and n are coprime, otherwise a(n) = a(n-1)/gcd(a(n-1),n).
+ * A133058 a(0) = a(1) = 1; for n &gt; 1, a(n) = a(n-1) + n + 1 if a(n-1) and n are coprime, otherwise a(n) = a(n-1)/gcd(a(n-1),n).
  * @author Georg Fischer
  */
 public class A133058 implements Sequence {
@@ -18,7 +18,8 @@ public class A133058 implements Sequence {
     mN = -1;
     mAn_1 = Z.ONE;
   }
-  
+
+  @Override
   public Z next() {
     ++mN; 
     Z mAn = Z.ONE;

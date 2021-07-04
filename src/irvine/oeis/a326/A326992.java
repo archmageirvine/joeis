@@ -14,7 +14,8 @@ public class A326992 extends A133058 {
   public A326992() {
     super.next();
   }
-  
+
+  @Override
   public Z next() {
     final Z result = super.next();
     super.next();

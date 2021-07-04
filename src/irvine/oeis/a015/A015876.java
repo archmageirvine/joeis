@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015876 Numbers n such that sigma(n) = sigma(n + 8).
+ * A015876 Numbers k such that sigma(k) = sigma(k+8).
  * @author Sean A. Irvine
  */
 public class A015876 implements Sequence {

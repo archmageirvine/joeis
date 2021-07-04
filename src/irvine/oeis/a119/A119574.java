@@ -5,7 +5,7 @@ package irvine.oeis.a119;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A119574 Binomial(2*n,n)*(n+2)^2/(n+1).
+ * A119574 a(n) = binomial(2*n,n)*(n+2)^2/(n+1).
  * @author Georg Fischer
  */
 public class A119574 extends HolonomicRecurrence {

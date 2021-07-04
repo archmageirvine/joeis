@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178575 Number of permutations of {1, 2,..., 3n} whose cycle lengths are all divisible by 3.
+ * A178575 Number of permutations of {1,2,...,3n} whose cycle lengths are all divisible by 3.
  * Recurrence: a(n) = (3*n-1)*(3*n-2)^2*a(n-1),a(0)=1.
  * @author Georg Fischer
  */

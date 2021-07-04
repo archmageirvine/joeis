@@ -13,7 +13,8 @@ public class A326991 extends A133058 {
   /** Construct the sequence. */
   public A326991() {
   }
-  
+
+  @Override
   public Z next() {
     final Z result = super.next();
     super.next();

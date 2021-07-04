@@ -26,10 +26,12 @@ public class A048723 implements Sequence {
     if (b == 0) {
       return Z.ONE;
     }
-    if (b == 1) {
-      return Z.valueOf(a);
+    final Z za = Z.valueOf(a);
+    Z p = za;
+    for (long k = 2; k <= b; ++k) {
+      p = multiply(p, za);
     }
-    return multiply(Z.valueOf(a), power(a, b - 1));
+    return p;
   }
 
   @Override

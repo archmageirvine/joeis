@@ -1,46 +1,102 @@
 package irvine.oeis.a048;
 
-import java.util.HashSet;
+import java.util.Arrays;
 
-import irvine.math.partitions.MultidimensionalIntegerPartition;
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.util.Triple;
 
 /**
- * A048141 Number of symmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have a threefold axis of symmetry that is the intersection of 3 mirror planes, i.e., C3v symmetry.
+ * A048141.
  * @author Sean A. Irvine
  */
-public class A048141 implements Sequence, MultidimensionalIntegerPartition.PartitionUser {
+public class A048141 implements Sequence {
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
-  private long mCount = 0;
 
-  @Override
-  public void use(final int[][] partition) {
-    final HashSet<Triple<Integer>> triples = new HashSet<>(partition[0].length);
-    for (int k = 0; k < partition[0].length; ++k) {
-      triples.add(new Triple<>(partition[0][k], partition[1][k], partition[2][k]));
+  private boolean isOverMajored(final int[] outer, final int[] inner) {
+    if (inner.length > outer.length) {
+      return false;
     }
-    for (final Triple<Integer> t : triples) {
-      if (!triples.contains(new Triple<>(t.right(), t.left(), t.mid()))
-        || !triples.contains(new Triple<>(t.mid(), t.left(), t.right()))) {
-        return;
+    for (int k = 0; k < inner.length; ++k) {
+      if (inner[k] >= outer[k]) {
+        return false;
       }
     }
-    if (mVerbose) {
-      System.out.println(triples.size() + " " + triples);
+    return true;
+  }
+
+  private boolean isPerfectlyBalanced(final int[] p) {
+    for (int k = 0; k < p.length; ++k) {
+      if (p[k] > p.length || p[p[k] - 1] <= k) {
+        return false;
+      }
     }
-    ++mCount;
+    return true;
+  }
+
+  private long count(final int n, final int[] majors, final String prefix) {
+    //System.out.println(prefix + n + " remains, major=" + Arrays.toString(majors));
+    if (n == 0) {
+      return 1;
+    }
+    if (majors.length == 0) {
+      return 0;
+    }
+    long cnt = 0;
+    for (int arm = n; arm > 0; --arm) {
+      long c = 0;
+      final IntegerPartition part = new IntegerPartition(arm);
+      int[] p;
+      while ((p = part.next()) != null) {
+        //System.out.println(prefix + "Partition arm=" + arm + " " + Arrays.toString(p));
+        if (!isPerfectlyBalanced(p)) {
+          continue;
+        }
+        final int residue = n - 3 * (arm - p[0]) - 1;
+        if (residue < 0) {
+          continue;
+        }
+        //System.out.println(prefix + "Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
+        if (isOverMajored(majors, p)) {
+          final long contrib = count(residue, Arrays.copyOfRange(p, 1, p.length), prefix + "  ");
+          //System.out.println(prefix + "n=" + arm + " r=" + residue + " " + Arrays.toString(p) + " contributes " + contrib);
+          c += contrib;
+        }
+      }
+      cnt += c;
+    }
+    return cnt;
   }
 
   @Override
   public Z next() {
-    ++mN;
-    mCount = 0;
-    final MultidimensionalIntegerPartition part = new MultidimensionalIntegerPartition(mN, 2);
-    part.generate(this);
-    return Z.valueOf(mCount);
+    if (++mN == 1) {
+      return Z.ONE;
+    }
+    //System.out.println("Trying for " + mN);
+    long count = 0;
+    for (int arm = mN; arm > 0; --arm) {
+      long c = 0;
+      final IntegerPartition part = new IntegerPartition(arm);
+      int[] p;
+      while ((p = part.next()) != null) {
+        //System.out.println("  Partition: " + Arrays.toString(p));
+        if (!isPerfectlyBalanced(p)) {
+          continue;
+        }
+        final int residue = mN - 3 * (arm - p[0]) - 1;
+        if (residue < 0) {
+          continue;
+        }
+        //System.out.println("  Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
+        final long pc = count(residue, Arrays.copyOfRange(p, 1, p.length), "    ");
+        //System.out.println("  " + Arrays.toString(p) + " contributes " + pc);
+        c += pc;
+      }
+      count += c;
+    }
+    return Z.valueOf(count);
   }
+
 }

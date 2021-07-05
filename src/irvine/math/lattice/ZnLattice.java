@@ -20,7 +20,7 @@ class ZnLattice extends AbstractLattice {
    * Construct n-dimensional lattice.
    * @param n dimension
    */
-  public ZnLattice(final int n) {
+  ZnLattice(final int n) {
     if (n > 30) {
       throw new UnsupportedOperationException();
     }

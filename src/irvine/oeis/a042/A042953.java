@@ -60,6 +60,7 @@ public class A042953 extends EulerTransform {
      * We patch mAs.get(mN - 1) and then we recompute the internal structures mBs and mCs.
      * @return next term of the underlying sequence to be Euler transformed
      */
+    @Override
     protected Z advance() {
       mAs.set(mN - 1, mN == 1 ? Z.ZERO : mPrev);
       final int i = mN - 1;

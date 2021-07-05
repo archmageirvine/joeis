@@ -23,6 +23,7 @@ public class A005946 extends MemoryFunction2<Integer, Z> implements Sequence {
     return c;
   }
 
+  @Override
   protected Z compute(final Integer n, final Integer m) {
     if (m == 1 || n == 1) {
       return Z.ONE;

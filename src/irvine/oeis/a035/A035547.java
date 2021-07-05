@@ -16,6 +16,7 @@ public class A035547 extends A035536 {
     super(0, 4, 1, new int[] { 0, 2 });
   }
   
+  @Override
   protected Z total(final int[] cn) {
     return (cn[0] == cn[1] &&  cn[0] >= 1) ? Z.ONE : Z.ZERO;
   }

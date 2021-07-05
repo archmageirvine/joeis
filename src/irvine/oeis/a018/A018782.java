@@ -16,6 +16,7 @@ public class A018782 extends A054994 {
   private final LongDynamicArray<Z> mFirsts = new LongDynamicArray<>();
   private long mN = 0;
 
+  @Override
   protected Z select(final Map.Entry<Z, int[]> entry) {
     // Side effect, updates mFirsts
 

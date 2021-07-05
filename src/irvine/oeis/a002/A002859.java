@@ -8,6 +8,7 @@ import irvine.math.z.Z;
  */
 public class A002859 extends A002858 {
 
+  @Override
   protected Z a2() {
     return Z.THREE;
   }

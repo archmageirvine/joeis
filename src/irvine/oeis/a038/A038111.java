@@ -13,6 +13,7 @@ public class A038111 extends A038110 {
 
   private final Sequence mP = new A000040();
 
+  @Override
   protected Z select(final Q n) {
     return n.divide(mP.next()).den();
   }

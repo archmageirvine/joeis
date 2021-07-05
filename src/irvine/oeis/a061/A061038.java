@@ -1,15 +1,37 @@
 package irvine.oeis.a061;
+// manually 2021-07-05
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.q.Q;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
- * A061038 Denominator of 1/4 - 1/n^2.
- * @author Sean A. Irvine
+ * A061038 Denominator of 1/4 - 1/n^2. 
+ * @author Georg Fischer
  */
-public class A061038 extends LinearRecurrence {
+public class A061038 implements Sequence {
+
+  protected int mN;
+  protected Q mAdd;
 
   /** Construct the sequence. */
   public A061038() {
-    super(new long[] {1, 0, 0, 0, -3, 0, 0, 0, 3, 0, 0, 0}, new long[] {1, 36, 16, 100, 9, 196, 64, 324, 25, 484, 144, 676});
+    this(2, 4);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param parm parameter
+   */
+  public A061038(final int offset, final int parm) {
+    mN = offset - 1;
+    mAdd = new Q(Z.ONE, Z.valueOf(parm));
+  }
+
+  @Override
+  public Z next() {
+    ++mN;
+    return (mAdd.subtract(new Q(Z.ONE, Z.valueOf(mN).square()))).den();
   }
 }

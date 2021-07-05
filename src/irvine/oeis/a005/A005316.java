@@ -322,6 +322,7 @@ public class A005316 implements Sequence {
     /**
      * Enumerate next states from previous state.
      */
+    @Override
     public Iterable<Z> enumerate(final Z state) {
       final ArrayList<Z> list = new ArrayList<>();
       for (final Z next : enumeratePossibilities(state, (action, lower, upper) -> pack(lower, upper))) {

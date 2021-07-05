@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a244.A244925;
 
 /**
- * A048816.
+ * A048816 Number of rooted trees with n nodes with every leaf at the same height.
  * @author Sean A. Irvine
  */
 public class A048816 extends A244925 {

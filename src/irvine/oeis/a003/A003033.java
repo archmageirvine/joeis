@@ -8,10 +8,12 @@ import irvine.math.z.Z;
  */
 public class A003033 extends A003032 {
 
+  @Override
   protected int getNumberOfConsecutivePrimes() {
     return 4;
   }
 
+  @Override
   protected Z firstPrime() {
     return Z.THREE;
   }

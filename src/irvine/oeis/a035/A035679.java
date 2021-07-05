@@ -75,6 +75,7 @@ public class A035679 extends A035536 {
    * @param cn array of the additional parameters of the recursive method {@link #compute}.
    * @return number of partitions
    */
+  @Override
   protected Z total(final int[] cn) {
     return Z.valueOf(cn[0]).multiply(Z.valueOf(cn[1]));
   }

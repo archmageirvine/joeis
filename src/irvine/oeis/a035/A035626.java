@@ -16,6 +16,7 @@ public class A035626 extends A035679 {
     super(1, 4, 1, new int[] { 2, 3 });
   }
   
+  @Override
   protected Z total(final int[] cn) {
     return Z.valueOf(cn[0]).multiply(Z.valueOf(cn[1]));
   }

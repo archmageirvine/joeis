@@ -17,6 +17,7 @@ public class A097853 extends ContinuedFractionOfSqrtSequence {
     super(1);
   }
 
+  @Override
   protected Z getProperty() {
     final int len = getPeriodLength();
     return Z.valueOf(len == 0 ? 1 : len);

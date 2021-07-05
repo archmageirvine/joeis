@@ -9,6 +9,7 @@ import irvine.math.z.Z;
  */
 public class A003164 extends A003163 {
 
+  @Override
   protected Z res(final Q n) {
     return n.num();
   }

@@ -14,6 +14,7 @@ public class A027696 extends A027669 {
   // of the sequence.
   private static final long HEURISTIC_MULTIPLIER = 100000;
 
+  @Override
   protected boolean isExistsGonalSum(final long n) {
     Z sum = Z.ZERO;
     final TreeSet<Z> partialSums = new TreeSet<>();

@@ -13,6 +13,7 @@ public class A031415 extends A031414 {
 
   private Z mN = Z.ZERO;
 
+  @Override
   protected Z target() {
     return Z.TWO;
   }

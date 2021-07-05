@@ -16,6 +16,7 @@ public class A041002 extends PositionSequence {
     super.next();
   }
 
+  @Override
   protected boolean isOk(final Z term) {
     return term.compareTo(Z.ONE) == 0;
   } // isOk

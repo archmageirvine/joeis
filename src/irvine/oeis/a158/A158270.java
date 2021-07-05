@@ -1,15 +1,26 @@
 package irvine.oeis.a158;
+// manually 2021-07-05
 
-import irvine.oeis.FiniteSequence;
+import irvine.math.z.Z;
+import irvine.oeis.a061.A061049;
 
 /**
  * A158270 Single-digit numbers in A061049.
  * @author Georg Fischer
  */
-public class A158270 extends FiniteSequence {
+public class A158270 extends A061049 {
 
   /** Construct the sequence. */
   public A158270() {
-    super(0, 9, 5, 3, 1, 3, 3, 5, 7, 9);
+  }
+
+  @Override
+  public Z next() {
+    while (true) {
+      final Z term = super.next();
+      if (term.compareTo(Z.TEN) < 0) {
+        return term;
+      }
+    }
   }
 }

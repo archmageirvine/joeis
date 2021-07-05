@@ -43,6 +43,7 @@ public class A041004 extends EulerTransform {
    * When this method is overwritten, super.mN runs through 1, 2, 3, and so on.
    * @return next term of the underlying sequence to be Euler transformed
    */
+  @Override
   protected Z advance() {
     mAs.set(mN - 1, mN == 1 ? Z.ZERO : mPrev);
     final int i = mN - 1;

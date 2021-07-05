@@ -6,6 +6,7 @@ package irvine.oeis.a003;
  */
 public class A003110 extends A003109 {
 
+  @Override
   protected boolean accept() {
     return !super.accept();
   }

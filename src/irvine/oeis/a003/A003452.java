@@ -6,10 +6,12 @@ package irvine.oeis.a003;
  */
 public class A003452 extends A003447 {
 
+  @Override
   protected int s() {
     return mN + 4;
   }
 
+  @Override
   protected int r() {
     return 3;
   }

@@ -20,6 +20,10 @@ public class A048141 implements Sequence {
 
   private int mN = 0;
   private final List<Map<int[], Long>> mCache = new ArrayList<>();
+  private final List<List<int[]>> mPerfectlyBalanced = new ArrayList<>();
+  {
+    mPerfectlyBalanced.add(Collections.emptyList()); // 0
+  }
 
   private static final Comparator<int[]> ARRAY_COMPARATOR = (o1, o2) -> {
     final int c = Integer.compare(o1.length, o2.length);
@@ -56,6 +60,24 @@ public class A048141 implements Sequence {
     return true;
   }
 
+  private List<int[]> getPerfectlyBalanced(final int n) {
+    while (n >= mPerfectlyBalanced.size()) {
+      final int arm = mPerfectlyBalanced.size();
+      final ArrayList<int[]> balanced = new ArrayList<>();
+      mPerfectlyBalanced.add(balanced);
+      // todo perhaps compute these directly
+      final IntegerPartition part = new IntegerPartition(arm);
+      int[] p;
+      while ((p = part.next()) != null) {
+        if (!isPerfectlyBalanced(p)) {
+          continue;
+        }
+        balanced.add(p);
+      }
+    }
+    return mPerfectlyBalanced.get(n);
+  }
+
   private long count(final int n, final int[] majors) {
     long c = 0;
     if (majors.length != 0) {
@@ -83,26 +105,17 @@ public class A048141 implements Sequence {
       mCache.add(Collections.singletonMap(new int[] {1}, 1L));
       return Z.ONE;
     }
-    //System.out.println("Trying for " + mN);
     long count = 0;
     final TreeMap<int[], Long> map = new TreeMap<>(ARRAY_COMPARATOR);
     mCache.add(map);
     for (int arm = mN; arm > 0; --arm) {
       long c = 0;
-      final IntegerPartition part = new IntegerPartition(arm);
-      int[] p;
-      while ((p = part.next()) != null) {
-        //System.out.println("  Partition: " + Arrays.toString(p));
-        if (!isPerfectlyBalanced(p)) {
-          continue;
-        }
+      for (final int[] p : getPerfectlyBalanced(arm)) {
         final int residue = mN - 3 * (arm - p[0]) - 1;
         if (residue < 0) {
           continue;
         }
-        //System.out.println("  Balanced: n=" + arm + " " + Arrays.toString(p) + " leaves " + residue);
         final long pc = count(residue, Arrays.copyOfRange(p, 1, p.length));
-        //System.out.println("  " + Arrays.toString(p) + " contributes " + pc);
         if (pc != 0) {
           map.put(p, pc);
         }

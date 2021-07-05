@@ -112,4 +112,3 @@ public class A048139 implements Sequence {
   }
 
 }
-

@@ -8,6 +8,8 @@ public final class Lattices {
 
   private Lattices() { }
 
+  /** Integer line. */
+  public static final Lattice Z1 = new LinearLattice();
   /** The 2-dimensional square lattice (also called the quadratic lattice). */
   public static final Lattice Z2 = new SquareLattice();
   /** The 3-dimensional cubic lattice. */
@@ -16,10 +18,6 @@ public final class Lattices {
   public static final Lattice Z4 = new Z4Lattice();
   /** The 5-dimensional hypercubic lattice. */
   public static final Lattice Z5 = new Z5Lattice();
-  /** The 6-dimensional hypercubic lattice. */
-  public static final Lattice Z6 = new Z6Lattice();
-  /** The 7-dimensional hypercubic lattice. */
-  public static final Lattice Z7 = new Z7Lattice();
 
   // Other 2D lattices
 
@@ -71,5 +69,24 @@ public final class Lattices {
    */
   public static Lattice grid(final long x, final long y) {
     return new Grid(x, y);
+  }
+
+  private static final Lattice[] HYPERCUBIC_LATTICES = {
+    null, Z1, Z2, Z3, Z4, Z5,
+  };
+
+  /**
+   * Return the hypercubic lattice of specified dimension.
+   * @param dimension the dimension
+   * @return lattice
+   */
+  public static Lattice hypercubic(final int dimension) {
+    if (dimension < 1) {
+      throw new IllegalArgumentException();
+    }
+    if (dimension >= HYPERCUBIC_LATTICES.length) {
+      return new ZnLattice(dimension);
+    }
+    return HYPERCUBIC_LATTICES[dimension];
   }
 }

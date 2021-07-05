@@ -24,7 +24,6 @@ A000663 Insufficient detail, pos. similar to A000662, cf. A000595, cycle index, 
 A000679 Subset of A000001, hard
 A000758 Insufficient detail, mailed author (he no longer knows what it is)
 A000769 No 3 in a line problem, hard
-A000784 Symmetrical planar partitions of n, Depends on A048141, have other dependencies
 A000785 Depends on A048141, or perhaps is A000219-A000784
 A000786 Depends on A000784, A000785
 A000789 Ramsey numbers

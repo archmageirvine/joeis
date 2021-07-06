@@ -51,9 +51,8 @@ public class Convergents extends AbstractIterator<Q> {
     final CR cres = CR.valueOf(res);
     if (mX.compareTo(cres, -mAccuracy) == 0) {
       mMoreTerms = false;
-    } else {
-      mX = mX.subtract(cres).inverse();
     }
+    mX = mX.subtract(cres).inverse();
     return res;
   }
 

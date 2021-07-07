@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partitions.DistinctPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -20,9 +20,9 @@ public class A259095 implements Sequence {
   protected Z a259095(final int n, final int r) {
     Z sum = Z.ZERO;
     int[] p;
-    final IntegerPartition partition = new IntegerPartition(n);
+    final DistinctPartsPartition partition = new DistinctPartsPartition(n);
     while ((p = partition.next()) != null) {
-      if (isMaxPart(p, r) && IntegerPartition.isDistinctParts(p)) {
+      if (isMaxPart(p, r)) {
         Z t = Z.ONE;
         for (int k = 1; k < p.length; ++k) {
           t = t.multiply(p[k - 1] - p[k]);

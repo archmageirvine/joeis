@@ -1648,3 +1648,9 @@ A048638 Height of lattice of parameters of mixed orthogonal arrays with 2^n runs
 A048648 Order of n-th stable homotopy group of spheres.
 A048670 Jacobsthal function A048669 applied to the product of the first n primes (A002110) (hard).
 A048774 Numerators of coefficients in a formula for the n-th composite number.
+A048817 Numerators of convergents to A058914.
+A048818 Denominators of convergents to A058914.
+A048819 Decimal expansion of one of four fixed points (mod 1) of Minkowski's question mark function.
+A048820 Binary expansion of one of four fixed points (mod 1) of Minkowski's question mark function.
+A048821 Lengths of runs in A048820.
+A048822 a(n) = least k such that A048821(k) = n.

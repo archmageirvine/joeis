@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partitions.DistinctOddPartsPartitions;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -51,28 +51,33 @@ public class A048141 implements Sequence {
     return true;
   }
 
-  private boolean isPerfectlyBalanced(final int[] p) {
-    for (int k = 0; k < p.length; ++k) {
-      if (p[k] > p.length || p[p[k] - 1] <= k) {
-        return false;
-      }
-    }
-    return true;
-  }
+//  private boolean isSelfConjugate(final int[] p) {
+//    for (int k = 0; k < p.length; ++k) {
+//      if (p[k] > p.length || p[p[k] - 1] <= k) {
+//        return false;
+//      }
+//    }
+//    return true;
+//  }
 
-  private List<int[]> getPerfectlyBalanced(final int n) {
+  private List<int[]> getSelfConjugate(final int n) {
     while (n >= mPerfectlyBalanced.size()) {
       final int arm = mPerfectlyBalanced.size();
-      final ArrayList<int[]> balanced = new ArrayList<>();
+      // There is a 1-1 correspondence between partitions into distinct odd parts and self-conjugate partitions
+      final List<int[]> distinct = DistinctOddPartsPartitions.partitions(arm);
+      final ArrayList<int[]> balanced = new ArrayList<>(distinct.size());
       mPerfectlyBalanced.add(balanced);
-      // todo perhaps compute these directly
-      final IntegerPartition part = new IntegerPartition(arm);
-      int[] p;
-      while ((p = part.next()) != null) {
-        if (!isPerfectlyBalanced(p)) {
-          continue;
+      // bend them
+      for (final int[] d : distinct) {
+        final int[] b = new int[(d[0] + 1) / 2];
+        for (int k = 0; k < d.length; ++k) {
+          final int t = (d[k] - 1) / 2;
+          b[k] += t;
+          for (int j = 0; j <= t; ++j) {
+            ++b[k + j];
+          }
         }
-        balanced.add(p);
+        balanced.add(b);
       }
     }
     return mPerfectlyBalanced.get(n);
@@ -110,7 +115,7 @@ public class A048141 implements Sequence {
     mCache.add(map);
     for (int arm = mN; arm > 0; --arm) {
       long c = 0;
-      for (final int[] p : getPerfectlyBalanced(arm)) {
+      for (final int[] p : getSelfConjugate(arm)) {
         final int residue = mN - 3 * (arm - p[0]) - 1;
         if (residue < 0) {
           continue;

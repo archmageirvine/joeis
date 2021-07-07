@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partitions.DistinctPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,19 +16,17 @@ public class A026793 implements Sequence {
   private int mN = 0;
   private int mL = 0;
   private int mM = 0;
-  private List<int[]> mPart = new ArrayList<>();
+  private final List<int[]> mPart = new ArrayList<>();
 
   @Override
   public Z next() {
     if (--mM < 0) {
       if (--mL < 0) {
         mPart.clear();
-        final IntegerPartition pg = new IntegerPartition(++mN);
+        final DistinctPartsPartition pg = new DistinctPartsPartition(++mN);
         int[] p;
         while ((p = pg.next()) != null) {
-          if (IntegerPartition.isDistinctParts(p)) {
-            mPart.add(p);
-          }
+          mPart.add(p);
         }
         mPart.sort((a, b) -> {
           // Sort by number of parts, then lexicographically

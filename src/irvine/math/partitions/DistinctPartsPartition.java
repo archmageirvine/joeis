@@ -3,10 +3,7 @@ package irvine.math.partitions;
 import java.util.Arrays;
 
 /**
- * Generate integer partitions.  Uses algorithm <code>ZS1</code> described
- * in "Fast Algorithms for Generating Integer Partitions", Zoghbi and
- * Stojmenovic, Intern. J. Computer Math., vol 70, pp. 319--332.
- *
+ * Generate partitions into distinct parts.
  * @author Sean A. Irvine
  */
 public final class DistinctPartsPartition {
@@ -42,9 +39,7 @@ public final class DistinctPartsPartition {
   }
 
   /**
-   * Return the next integer partition or null of all partitions have been
-   * produced.
-   *
+   * Return the next integer partition into distinct parts or null of all partitions have been produced.
    * @return integer partition or null if no further partition exist
    */
   public int[] next() {
@@ -74,7 +69,7 @@ public final class DistinctPartsPartition {
   }
 
   /**
-   * Print all integer partitions of given argument.
+   * Print all integer partitions into distinct parts of given argument.
    * @param args arguments
    */
   public static void main(final String[] args) {

@@ -11,20 +11,31 @@ import irvine.math.z.Z;
  */
 final class Representations {
 
-  private Representations() {
+  private final Z[] mPowers;
+
+  private Representations(final Z n, final int power) {
+    mPowers = new Z[n.root(power).intValueExact() + 10];
+    for (int k = 0; k < mPowers.length; ++k) {
+      mPowers[k] = Z.valueOf(k).pow(power);
+    }
   }
 
-  private static void search(final long[] t, final Z a, final int exponent, final int pos, final long m) {
-    if (pos == t.length) {
-      if (a.isZero()) {
+  private void search(final long[] t, final Z target, final int m, final int prev) {
+    if (m == 0) {
+      if (target.isZero()) {
         System.out.println(Arrays.toString(t));
       }
       return;
     }
-    Z c;
-    for (long v = m; (c = Z.valueOf(v).pow(exponent)).compareTo(a) <= 0; ++v) {
-      t[pos] = v;
-      search(t, a.subtract(c), exponent, pos + 1, v);
+    final int l = Arrays.binarySearch(mPowers, target.divide(m));
+    final int lower = l < 0 ? 2 - l : l;
+    final int h = Arrays.binarySearch(mPowers, target);
+    for (int v = h < 0 ? 2 - h : h; v >= lower; --v) {
+      if (v > prev) {
+        break;
+      }
+      t[m - 1] = v;
+      search(t, target.subtract(mPowers[v]), m - 1, v);
     }
   }
 
@@ -40,8 +51,7 @@ final class Representations {
     final int power = Integer.parseInt(args[0]);
     final int terms = Integer.parseInt(args[1]);
     final Z n = new Z(args[2]);
-    final long[] t = new long[terms];
-    search(t, n, power, 0, 1);
+    final Representations rep = new Representations(n, power);
+    rep.search(new long[terms], n, terms, Integer.MAX_VALUE);
   }
-
 }

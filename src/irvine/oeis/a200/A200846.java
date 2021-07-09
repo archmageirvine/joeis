@@ -11,7 +11,7 @@ import irvine.oeis.PrimeSubsequence;
  */
 public class A200846 extends PrimeSubsequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A200846() {
     super("[[-1, 0, 0, 3],[-1]]", "[-1]", 0);
   }

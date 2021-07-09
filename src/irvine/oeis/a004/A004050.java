@@ -27,7 +27,7 @@ public class A004050 implements Sequence {
     return result;
   });
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A004050() {
     this(2, 3);
   }

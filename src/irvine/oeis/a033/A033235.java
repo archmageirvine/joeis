@@ -11,7 +11,7 @@ public class A033235 extends A000040 {
 
   protected int mParm;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A033235() {
     this(55);
   }

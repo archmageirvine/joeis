@@ -13,7 +13,7 @@ public class A067858 implements Sequence {
 
   protected long mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A067858() {
     mN = 0;
   }

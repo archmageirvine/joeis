@@ -12,7 +12,7 @@ public class A279607 extends BeattySequence {
 
   private static final CR N = CR.E.divide(CR.TWO);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A279607() {
     super(1);
   }

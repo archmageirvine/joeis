@@ -13,7 +13,7 @@ public class A169964 extends A007088 {
   //protected int mN;
   protected Z mDigit;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A169964() {
     this(0, 5);
   }

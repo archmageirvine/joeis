@@ -10,7 +10,7 @@ import irvine.oeis.PeriodicSequence;
 
 public class A276395 extends PeriodicSequence {
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A276395() {
     super(1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 1);
   }

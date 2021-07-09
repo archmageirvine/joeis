@@ -12,7 +12,7 @@ public class A276855 extends BeattySequence {
 
   private static final CR N = CR.THREE.add(CR.PHI);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A276855() {
     super(0);
   }

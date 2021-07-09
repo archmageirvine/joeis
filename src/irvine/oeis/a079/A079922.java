@@ -13,7 +13,7 @@ public class A079922 implements Sequence {
   protected int mN; // current index
   protected int mP; // parameter
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A079922() {
     this(3);
   }

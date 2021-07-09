@@ -12,7 +12,7 @@ public class A004716 extends DecimalExpansionSequence {
 
   private static final CR N = CR.THREE.log().divide(CR.TWO.log());
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A004716() {
     super(false, 2);
     super.next();

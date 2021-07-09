@@ -13,7 +13,7 @@ public class A060722 implements Sequence {
   protected Z mPrev;
   protected Z mAccel;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A060722() {
     this(3);
   } 

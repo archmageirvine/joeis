@@ -13,7 +13,7 @@ public class A048435 implements Sequence {
   protected int mBase;
   private final StringBuilder mS = new StringBuilder();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A048435() {
     this(3);
   }

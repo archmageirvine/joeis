@@ -12,7 +12,7 @@ public class A252169 extends BeattySequence {
 
   private static final CR N = CR.PI.multiply(CR.PHI).sqrt();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A252169() {
     super(1);
   }

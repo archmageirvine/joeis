@@ -13,7 +13,7 @@ public class A095425 implements Sequence {
   protected int mParm;
   protected int mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A095425() {
     this(10);
   }

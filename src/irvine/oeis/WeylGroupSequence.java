@@ -9,7 +9,7 @@ package irvine.oeis;
 public class WeylGroupSequence extends EulerTransform {
 
   /**
-   * Construct the sequence by reducing it to the {@link EulerTransform} 
+   * Construct the sequence. by reducing it to the {@link EulerTransform} 
    * of a finite sequence padded with zeroes.
    * @param groupType A, B, or D.
    * @param d dimension of the group

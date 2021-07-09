@@ -12,7 +12,7 @@ import irvine.oeis.PierceExpansionSequence;
  */
 public class A154956 extends PierceExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A154956() {
     super();
   }

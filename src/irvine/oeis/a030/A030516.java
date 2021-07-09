@@ -12,7 +12,7 @@ public class A030516 extends A000040 {
 
   protected final int mK; // exact number of divisors
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A030516() {
     this(7);
   }

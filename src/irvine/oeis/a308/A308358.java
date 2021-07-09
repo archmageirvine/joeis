@@ -10,15 +10,8 @@ import irvine.oeis.BeattySequence;
  */
 public class A308358 extends BeattySequence {
 
-  private static final CR N = CR.THREE.sqrt().divide(CR.FOUR);
-
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A308358() {
-    super(0);
-  }
- 
-  @Override
-  protected CR getCR() {
-    return N;
+    super(0, CR.THREE.sqrt().divide(CR.FOUR));
   }
 }

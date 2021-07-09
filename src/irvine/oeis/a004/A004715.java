@@ -13,7 +13,7 @@ public class A004715 extends DecimalExpansionSequence {
 
   private static final CR N = ComputableReals.SINGLETON.atan(CR.HALF).divide(CR.PI);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A004715() {
     super(false, 2);
   }

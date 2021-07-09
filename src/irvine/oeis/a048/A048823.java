@@ -8,7 +8,6 @@ import irvine.oeis.Sequence;
 
 /**
  * A0478823.
- *
  * @author Sean A. Irvine
  */
 public class A048823 implements Sequence {

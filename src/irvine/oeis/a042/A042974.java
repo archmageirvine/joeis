@@ -14,7 +14,7 @@ public class A042974 implements Sequence {
   private int mCount1; // index in current block of 1's
   private int mState; // 1 when 1's must be output, 2 for the 2
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A042974() {
     mLen1 = 1;
     mCount1 = 0;

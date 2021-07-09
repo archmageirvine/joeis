@@ -7,21 +7,26 @@ import irvine.math.z.Z;
  * Sequence formed by the Beatty expansion of a computable real number.
  * @author Sean A. Irvine
  */
-public abstract class BeattySequence implements Sequence {
+public abstract class BeattySequence extends RealConstantSequence {
 
-  protected abstract CR getCR();
   private long mN;
+
+  protected BeattySequence(final long offset, final CR x) {
+    super(offset, x);
+    mN = offset - 1;
+  }
 
   /**
    * A Beatty sequence starting at a specified value
    * @param initial start value
    */
-  public BeattySequence(final long initial) {
-    mN = initial - 1;
+  protected BeattySequence(final long initial) {
+    this(initial, null);
+    mN = initial;
   }
 
   /** A Beatty sequence starting at 1. */
-  public BeattySequence() {
+  protected BeattySequence() {
     this(1);
   }
   

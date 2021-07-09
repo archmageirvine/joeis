@@ -25,7 +25,7 @@ public class A050201 extends A000796 {
   protected int mPos;
   protected int mState;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A050201() {
     this(2, 0);
   }

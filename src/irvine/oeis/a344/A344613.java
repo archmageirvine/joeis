@@ -16,7 +16,7 @@ public class A344613 extends A001190 {
   private int mN;
   private Sequence mA085748;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A344613() {
     mN = 0;
     super.next(); // skip a(0)

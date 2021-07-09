@@ -13,7 +13,7 @@ public class A161440 extends A160700 {
   private Z mParm;
   protected int mK;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A161440() {
     this(0);
   }

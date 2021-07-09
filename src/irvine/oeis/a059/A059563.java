@@ -12,7 +12,7 @@ public class A059563 extends BeattySequence {
 
   private static final CR N = CR.E.add(CR.ONE.divide(CR.E));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059563() {
     super(1);
   }

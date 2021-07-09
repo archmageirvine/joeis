@@ -14,7 +14,7 @@ public class A185073 extends PrimePositionSubsequence {
 
   private static final Z DIV = Z.valueOf(33);
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A185073() {
     super("[[33],[34],[-1]]", "[0, 33]", 0);
   }

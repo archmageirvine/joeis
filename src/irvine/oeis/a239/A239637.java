@@ -14,7 +14,7 @@ public class A239637 extends PrimePositionSubsequence {
 
   private static final Z DIV = Z.valueOf(40);
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A239637() {
     super("[[40],[41],[-1]]", "[0, 40]", 0);
   }

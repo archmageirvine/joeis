@@ -12,7 +12,7 @@ public class A044432 extends A005614 {
 
   private Z mN;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A044432() {
     mN = Z.ZERO;
   }

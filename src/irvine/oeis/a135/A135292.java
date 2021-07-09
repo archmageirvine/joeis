@@ -15,7 +15,7 @@ public class A135292 implements Sequence {
   protected Z mPrevB;
   protected Z mAccelB;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A135292() {
     this(5, 4);
   } 

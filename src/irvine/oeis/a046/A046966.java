@@ -12,7 +12,7 @@ public class A046966 implements Sequence {
   protected Z mProd = Z.ONE;
   private Z mA = Z.ZERO;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A046966() {
     this(1);
   }

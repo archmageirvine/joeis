@@ -19,7 +19,7 @@ public class A063115 implements Sequence {
   protected int mParm1; 
   protected int mParm2;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A063115() {
     this(2, 1);
   }

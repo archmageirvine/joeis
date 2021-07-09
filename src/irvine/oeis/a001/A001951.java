@@ -11,11 +11,6 @@ public class A001951 extends BeattySequence {
 
   /** Construct the sequence. */
   public A001951() {
-    super(0);
-  }
-
-  @Override
-  protected CR getCR() {
-    return CR.SQRT2;
+    super(0, CR.SQRT2);
   }
 }

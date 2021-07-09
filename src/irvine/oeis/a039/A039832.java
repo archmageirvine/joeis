@@ -15,7 +15,7 @@ public class A039832 implements Sequence {
   protected boolean mPrev; // whether mN-1 had mParm divisors
   protected long mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A039832() {
     this(4);
   }

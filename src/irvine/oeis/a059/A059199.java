@@ -12,7 +12,7 @@ import irvine.oeis.EngelExpansionSequence;
  */
 public class A059199 extends EngelExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059199() {
     super();
   }

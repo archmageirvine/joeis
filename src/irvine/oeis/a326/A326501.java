@@ -13,7 +13,7 @@ public class A326501 implements Sequence {
   private Z mAn;
   private int mN;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A326501() {
     mAn = Z.ONE;
     mN = 0;

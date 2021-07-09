@@ -13,7 +13,7 @@ public class A323399 extends A007434 {
 
   protected Sequence mSeq;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A323399() {
     mSeq = new A046970();
   }

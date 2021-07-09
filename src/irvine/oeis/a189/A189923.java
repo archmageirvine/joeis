@@ -6,7 +6,7 @@ package irvine.oeis.a189;
  */
 public class A189923 extends A189922 {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A189923() {
     super(5);
   }

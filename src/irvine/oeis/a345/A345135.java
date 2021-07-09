@@ -14,7 +14,7 @@ public class A345135 implements Sequence {
 
   private long mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A345135() {
     mN = -1;
   }

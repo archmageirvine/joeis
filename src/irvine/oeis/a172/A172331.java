@@ -12,7 +12,7 @@ public class A172331 extends BeattySequence {
 
   private static final CR N = CR.valueOf(13).sqrt().add(CR.SEVEN.sqrt());
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A172331() {
     super(0);
   }

@@ -13,7 +13,7 @@ import irvine.oeis.PrimePositionSubsequence;
  */
 public class A291349 extends PrimePositionSubsequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A291349() {
     super(new AddConstantSequence(256, new HolonomicRecurrence(0, "[[0],[0, 1],[0],[0],[0],[-1]]", "1, 1, 2, 3", 0)), 0);
     next();

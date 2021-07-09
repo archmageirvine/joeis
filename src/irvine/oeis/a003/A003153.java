@@ -9,10 +9,8 @@ import irvine.oeis.RoundingBeattySequence;
  */
 public class A003153 extends RoundingBeattySequence {
 
-  private static final CR N = CR.SQRT2.add(CR.ONE);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A003153() {
+    super(1, CR.SQRT2.add(CR.ONE));
   }
 }

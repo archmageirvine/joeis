@@ -15,7 +15,7 @@ public abstract class SemiprimeSequence implements Sequence {
   private boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   /**
-   * Construct the sequence with the specified initial start index.
+   * Construct the sequence. with the specified initial start index.
    * @param start initial index
    */
   protected SemiprimeSequence(final Sequence seq, final int start) {
@@ -24,14 +24,14 @@ public abstract class SemiprimeSequence implements Sequence {
   }
 
   /**
-   * Construct the sequence with the specified initial start index.
+   * Construct the sequence. with the specified initial start index.
    * @param start initial index
    */
   protected SemiprimeSequence(final int start) {
     this(null, start);
   }
 
-  /** Construct the sequence starting at index 0. */
+  /** Construct the sequence. starting at index 0. */
   protected SemiprimeSequence() {
     this(0);
   }

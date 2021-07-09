@@ -12,7 +12,7 @@ public class A032834 extends MemorySequence {
   protected int mParm1; 
   protected int mParm2;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A032834() {
     this(3, 4);
   }

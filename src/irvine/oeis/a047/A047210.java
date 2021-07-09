@@ -12,7 +12,7 @@ public class A047210 implements Sequence {
   protected int mExpon; // exponent
   protected int mN;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A047210() {
     this(2);
   } 

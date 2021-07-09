@@ -14,7 +14,7 @@ public class A059376 implements Sequence {
   protected long mN = 0;
   protected int mExp; // exponent k in "J_k"
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059376() {
     this(3);
   }

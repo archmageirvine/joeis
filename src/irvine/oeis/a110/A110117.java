@@ -9,10 +9,8 @@ import irvine.oeis.BeattySequence;
  */
 public class A110117 extends BeattySequence {
 
-  private static final CR N = CR.SQRT2.add(CR.THREE.sqrt());
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A110117() {
+    super(1, CR.SQRT2.add(CR.THREE.sqrt()));
   }
 }

@@ -12,7 +12,7 @@ public class A004711 extends DecimalExpansionSequence {
 
   private static final CR N = CR.PI.divide(CR.FOUR);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A004711() {
     super(false, 2);
   }

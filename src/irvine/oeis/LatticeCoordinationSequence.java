@@ -19,7 +19,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
   protected Z[] mPoly; // numerator or denominator coefficients of the generating function in the current triangle row
 
   /**
-   * Construct the sequence by reducing it to a ordinary generating function.
+   * Construct the sequence. by reducing it to a ordinary generating function.
    * The constructor computation is close to the sequence definition
    * and not optimized for speed.
    * @param latticeType A, B, C, D* and so on.

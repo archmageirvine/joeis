@@ -9,7 +9,7 @@ import irvine.oeis.a001.A001466;
  * @author Georg Fischer
  */
   public class A182257 extends PrependSequence {
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A182257() {
     super(new A001466(), 1, 1, 1);
   }

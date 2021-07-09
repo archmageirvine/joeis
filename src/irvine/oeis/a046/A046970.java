@@ -14,7 +14,7 @@ public class A046970 implements Sequence {
 
   protected long mN; // current index
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A046970() {
     mN = 0;
   }

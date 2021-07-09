@@ -12,7 +12,7 @@ public class A329825 extends BeattySequence {
 
   private static final CR N = CR.THREE.add(CR.valueOf(17).sqrt()).divide(CR.FOUR);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A329825() {
     super(1);
   }

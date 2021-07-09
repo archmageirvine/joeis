@@ -10,7 +10,7 @@ import irvine.oeis.a047.A047161;
  */
 public class A048093 extends A047161 {
     
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A048093() {
     this(1, 1, 2, 0, 0);
   }

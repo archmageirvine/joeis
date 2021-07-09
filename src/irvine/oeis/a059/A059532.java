@@ -12,7 +12,7 @@ public class A059532 extends BeattySequence {
 
   private static final CR N = CR.ONE.add(CR.PI);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059532() {
     super(1);
   }

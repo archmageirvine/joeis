@@ -8,7 +8,6 @@ import irvine.oeis.Sequence;
 
 /**
  * A047988 Start with n and reach 2 by repeatedly either dividing by d where d &lt;= the square root or by adding or subtracting 1. The division steps are free, but adding or subtracting 1 costs 1 point. a(n) is the smallest cost to reach 2.
- *
  * @author Sean A. Irvine
  */
 public class A047988 implements Sequence {

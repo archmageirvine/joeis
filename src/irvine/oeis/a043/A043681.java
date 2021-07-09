@@ -13,7 +13,7 @@ public class A043681 implements Sequence {
     
   private Z mN;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A043681() {
     mN = Z.NEG_ONE;
   }

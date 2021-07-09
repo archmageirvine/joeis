@@ -15,7 +15,7 @@ public class A136128 implements Sequence {
   private Z mAn;
   private int mN;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A136128() {
     mFact = Z.ONE;
     mAn = Z.ONE;

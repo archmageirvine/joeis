@@ -12,7 +12,7 @@ public class A059546 extends BeattySequence {
 
   private static final CR N = CR.TEN.log().divide(CR.TEN.log().subtract(CR.ONE));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059546() {
     super(1);
   }

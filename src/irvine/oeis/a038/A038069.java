@@ -10,7 +10,7 @@ import irvine.oeis.MemorySequence;
  */
 public class A038069 extends A038067 {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A038069() {
     mSeq = MemorySequence.cachedSequence(new A038065());
   }

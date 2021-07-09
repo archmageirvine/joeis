@@ -11,7 +11,7 @@ public class A051847 extends A051846 {
 
   private int mN;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A051847() {
     mN = 0;
   }

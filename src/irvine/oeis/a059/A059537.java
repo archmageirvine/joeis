@@ -13,7 +13,7 @@ public class A059537 extends BeattySequence {
 
   private static final CR N = Zeta.zeta(3);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059537() {
     super(1);
   }

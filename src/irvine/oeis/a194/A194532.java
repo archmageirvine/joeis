@@ -14,7 +14,7 @@ public class A194532 extends A007434 {
   protected long mN = 0;
   protected int mExp; // exponent k in "J_k"
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A194532() {
     this(6);
   }

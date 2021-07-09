@@ -14,7 +14,7 @@ public class A284285 extends PrimePositionSubsequence {
 
   private static final Z DIV = Z.FIVE;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A284285() {
     super("[[-3],[2],[-1]]", "[4, 5]", 0);
   }

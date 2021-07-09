@@ -14,7 +14,7 @@ public class A007348 implements Sequence {
   protected Z mParm;
   protected Z mParmNeg;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A007348() {
     this(10);
   }

@@ -13,7 +13,7 @@ public class A059538 extends BeattySequence {
 
   private static final CR N = Zeta.zeta(3).divide(Zeta.zeta(3).subtract(CR.ONE));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059538() {
     super(1);
   }

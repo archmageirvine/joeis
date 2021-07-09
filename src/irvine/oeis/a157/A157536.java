@@ -15,7 +15,7 @@ public class A157536 extends MemoryFunctionInt3<Z> implements Sequence {
   protected int mSs; // sum of squares of terms
   protected int mN;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A157536() {
     this (2, 0, 32);
   }

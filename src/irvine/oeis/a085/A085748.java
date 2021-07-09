@@ -17,7 +17,7 @@ public class A085748 implements Sequence {
   private ArrayList<Z> mA;
   private ArrayList<Z> mB;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A085748() {
     mN = -1;
     mA = new ArrayList<>();

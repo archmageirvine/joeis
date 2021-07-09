@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  * Sequence formed by the decimal expansion of a computable real number.
  * @author Sean A. Irvine
  */
-public abstract class DecimalExpansionSequence implements Sequence, Serializable {
+public abstract class DecimalExpansionSequence extends RealConstantSequence implements Serializable {
 
   private final int mBase;
   private String mS = "";
@@ -17,6 +17,7 @@ public abstract class DecimalExpansionSequence implements Sequence, Serializable
   private boolean mSeenNonZero;
 
   protected DecimalExpansionSequence(final boolean zeroHandling, final int base) {
+    super(0, null);
     mSeenNonZero = zeroHandling;
     mBase = base;
   }
@@ -29,7 +30,10 @@ public abstract class DecimalExpansionSequence implements Sequence, Serializable
     this(true, 10);
   }
 
-  protected abstract CR getCR();
+  protected DecimalExpansionSequence(final long offset, final CR x) {
+    super(offset, x);
+    mBase = 10;
+  }
 
   protected void ensureAccuracy(final int n) {
   }

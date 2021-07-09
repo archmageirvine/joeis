@@ -12,7 +12,7 @@ public class A263574 extends BeattySequence {
 
   private static final CR N = CR.ONE.divide(CR.THREE.sqrt()).subtract(CR.PHI.log().divide(CR.valueOf(3575)));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A263574() {
     super(0);
   }

@@ -11,7 +11,7 @@ import irvine.oeis.a008.A008966;
  */
 public class A271102 extends SkipSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A271102() {
     super(new MobiusTransformSequence(new A008966(), 0), 1);
   }

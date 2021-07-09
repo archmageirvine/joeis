@@ -20,7 +20,7 @@ public class A063590 implements Sequence {
   protected int mParm1; 
   protected int mParm2;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A063590() {
     this(5, 5);
   }

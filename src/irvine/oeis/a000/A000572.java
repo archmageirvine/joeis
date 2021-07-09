@@ -10,10 +10,8 @@ import irvine.oeis.BeattySequence;
  */
 public class A000572 extends BeattySequence {
 
-  private static final CR N = ComputableReals.SINGLETON.exp(CR.ONE).add(CR.ONE);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A000572() {
+    super(1, ComputableReals.SINGLETON.exp(CR.ONE).add(CR.ONE));
   }
 }

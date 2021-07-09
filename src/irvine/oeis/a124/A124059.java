@@ -10,7 +10,7 @@ import irvine.oeis.a003.A003400;
  */
 public class A124059 extends InverseWeighTransform {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A124059() {
     super(new A003400());
   }

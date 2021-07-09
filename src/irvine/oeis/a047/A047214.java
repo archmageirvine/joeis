@@ -5,7 +5,7 @@ package irvine.oeis.a047;
  * @author Georg Fischer
  */
 public class A047214 extends A047210 {
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A047214() {
     super(6);
   } 

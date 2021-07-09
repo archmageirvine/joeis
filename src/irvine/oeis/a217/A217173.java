@@ -8,7 +8,7 @@ package irvine.oeis.a217;
  */
 public class A217173 extends A217157 {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A217173() {
     super(2, 0x12, 8, 0);
   }

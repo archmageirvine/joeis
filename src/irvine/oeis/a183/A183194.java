@@ -16,7 +16,7 @@ public class A183194 extends A000040 {
   private Z mPrime;
   private final StringBuilder mA;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A183194() {
     this(3);
   }

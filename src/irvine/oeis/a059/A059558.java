@@ -14,7 +14,7 @@ public class A059558 extends BeattySequence {
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private static final CR N = CR.ONE.add(CR.ONE.divide(REALS.pow(CR.GAMMA, CR.TWO)));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059558() {
     super(1);
   }

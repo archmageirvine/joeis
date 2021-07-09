@@ -57,7 +57,7 @@ public class LimitedSumOfLikePowersSequence implements Sequence {
   }
 
   /**
-   * Construct the sequence of powers.
+   * Construct the sequence. of powers.
    * @param power the power to be used in each term
    * @param terms number of terms in the sum
    * @param minWays minimum number of ways to make the sum

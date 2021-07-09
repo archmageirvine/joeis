@@ -12,7 +12,7 @@ public class A164086 extends BeattySequence {
 
   private static final CR N = CR.FOUR.multiply(CR.PI).divide(CR.THREE);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A164086() {
     super(1);
   }

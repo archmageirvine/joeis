@@ -18,7 +18,7 @@ public class A047161 implements Sequence {
   protected int mAdd; // n + a
   protected int mDiv; // (n + a)/d
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A047161() {
     this(1, 1, 3, 0, 2);
   }

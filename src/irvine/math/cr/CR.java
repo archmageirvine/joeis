@@ -918,6 +918,24 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Power of this computable real to another real.
+   * @param e exponent
+   * @return <code>this^e</code>
+   */
+  public CR pow(final CR e) {
+    return e.multiply(log()).exp();
+  }
+
+  /**
+   * Power of this computable real to a long.
+   * @param e exponent
+   * @return <code>this^e</code>
+   */
+  public CR pow(final long e) {
+    return e < 0 ? pow(CR.valueOf(e)) : ComputableReals.SINGLETON.pow(this, e);
+  }
+
+  /**
    * The real number <code>x</code> if <code>this</code> &lt; 0, or <code>y</code> otherwise.
    * Requires <code>x</code> = <code>y</code> if <code>this</code> = 0.
    * Since comparisons may diverge, this is often a useful alternative to conditionals.

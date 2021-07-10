@@ -193,12 +193,6 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
     return UnaryCRFunction.ACOT.execute(n);
   }
 
-  /**
-   * Return <code>n^e</code> for computable reals <code>n</code> and <code>e</code>.
-   * @param n base
-   * @param e exponent
-   * @return power
-   */
   @Override
   public CR pow(final CR n, final CR e) {
     return e.multiply(n.log()).exp();

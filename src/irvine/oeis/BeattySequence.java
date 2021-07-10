@@ -9,27 +9,13 @@ import irvine.math.z.Z;
  */
 public abstract class BeattySequence extends RealConstantSequence {
 
-  private long mN;
+  protected long mN;
 
   protected BeattySequence(final long offset, final CR x) {
     super(offset, x);
     mN = offset - 1;
   }
 
-  /**
-   * A Beatty sequence starting at a specified value
-   * @param initial start value
-   */
-  protected BeattySequence(final long initial) {
-    this(initial, null);
-    mN = initial;
-  }
-
-  /** A Beatty sequence starting at 1. */
-  protected BeattySequence() {
-    this(1);
-  }
-  
   @Override
   public Z next() {
     return getCR().multiply(++mN).floor();

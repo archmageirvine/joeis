@@ -10,12 +10,9 @@ import irvine.oeis.BeattySequence;
  */
 public class A003622 extends BeattySequence {
 
-  private static final CR PHI = CR.FIVE.sqrt().add(CR.ONE).multiply(CR.HALF);
-  private static final CR N = PHI.multiply(PHI);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence */
+  public A003622() {
+    super(1, CR.PHI.multiply(CR.PHI));
   }
 
   @Override

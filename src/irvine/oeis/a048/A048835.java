@@ -21,7 +21,7 @@ public class A048835 extends DecimalExpansionSequence {
         Z sum = Z.ZERO;
         if (precision < 0) {
           final Sequence kempner = new SkipSequence(new A002034(), 1);
-          Z t = Z.ONE.shiftLeft(-precision);
+          final Z t = Z.ONE.shiftLeft(-precision);
           Z prod = Z.ONE;
           Z u;
           do {

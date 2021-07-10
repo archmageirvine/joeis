@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062572 Numbers n such that 6^n - 5^n is prime.
+ * A062572 Numbers k such that 6^k - 5^k is prime.
  * @author Georg Fischer
  */
 public class A062572 extends PrimePositionSubsequence {

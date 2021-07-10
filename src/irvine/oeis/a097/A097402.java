@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A097402 Numbers n such that 6*10^n + 2*R_n + 5 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A097402 Numbers k such that 6*10^k + 2*R_k + 5 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A097402 extends PrimePositionSubsequence {

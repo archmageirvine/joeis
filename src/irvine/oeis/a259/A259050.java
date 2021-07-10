@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A259050 Numbers k such that 3*R_k + 10^k - 2 is prime, where R_k = 11...11 is the repunit (A002275) of length n.
+ * A259050 Numbers k such that 3*R_k + 10^k - 2 is prime, where R_k = 11...11 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A259050 extends PrimePositionSubsequence {

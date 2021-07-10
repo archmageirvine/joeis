@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062605 Numbers n such that 39^n - 38^n is prime.
+ * A062605 Numbers k such that 39^k - 38^k is prime.
  * @author Georg Fischer
  */
 public class A062605 extends PrimePositionSubsequence {

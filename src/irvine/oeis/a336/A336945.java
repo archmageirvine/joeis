@@ -4,7 +4,7 @@ package irvine.oeis.a336;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A336945 a(n) = binomial(3*n,n)/(2*n + 1) - 2*binomial(3*(n - 1),n - 1)/(2*n - 1) for n > 0 with a(0) = 1.
+ * A336945 a(n) = binomial(3*n,n)/(2*n + 1) - 2*binomial(3*(n - 1),n - 1)/(2*n - 1) for n &gt; 0 with a(0) = 1.
  * binomial(3*n,n)/(2*n+1)-2*binomial(3*n-3,n-1)/(2*n-1)
  * @author Georg Fischer
  */

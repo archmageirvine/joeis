@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062630 Numbers n such that 64^n - 63^n is prime.
+ * A062630 Numbers k such that 64^k - 63^k is prime.
  * @author Georg Fischer
  */
 public class A062630 extends PrimePositionSubsequence {

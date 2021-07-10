@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062580 Numbers n such that 14^n - 13^n is prime.
+ * A062580 Numbers k such that 14^k - 13^k is prime.
  * @author Georg Fischer
  */
 public class A062580 extends PrimePositionSubsequence {

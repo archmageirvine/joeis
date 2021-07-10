@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099654 a(n) is the number of n-subsets [n=1, 2,..., 10] of the 10 decimal digits from which no prime numbers can be constructed. See also A099653.
+ * A099654 a(n) is the number of n-subsets [n=1,2,...,10] of the 10 decimal digits from which no prime numbers can be constructed. See also A099653.
  * binomial(6,n)+binomial(4,n)
  * @author Georg Fischer
  */

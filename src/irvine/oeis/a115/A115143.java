@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115143 a(n) = -4*binomial(2*n-5, n-4)/n for n > 0 and a(0) = 1.
+ * A115143 a(n) = -4*binomial(2*n-5, n-4)/n for n &gt; 0 and a(0) = 1.
  * -4*binomial(2*n-5,n-4)/n
  * @author Georg Fischer
  */

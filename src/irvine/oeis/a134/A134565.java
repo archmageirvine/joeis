@@ -7,7 +7,7 @@ import irvine.oeis.RevertTransformSequence;
 
 
 /**
- * A134565 Expansion of reversion of (x - 2 * x^2) / (1 - x)^3.
+ * A134565 Expansion of reversion of (x - 2*x^2) / (1 - x)^3.
  * @author Georg Fischer
  */
 public class A134565 extends RevertTransformSequence {

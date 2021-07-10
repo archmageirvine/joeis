@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A097683 Numbers n such that R_n + 2 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A097683 Numbers k such that R_k + 2 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A097683 extends PrimePositionSubsequence {

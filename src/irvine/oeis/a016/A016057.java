@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016057 Pseudo-powers to base 3: n divides 2^n + 1, n not a power of 3.
+ * A016057 Pseudo-powers to base 3: numbers k that are not powers of 3 such that k divides 2^k + 1.
  * @author Sean A. Irvine
  */
 public class A016057 implements Sequence {

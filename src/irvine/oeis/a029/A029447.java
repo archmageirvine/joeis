@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029447 Numbers n that divide the (right) concatenation of all numbers &lt;= n written in base 2 (most significant digit on left).
+ * A029447 Numbers k that divide the (right) concatenation of all numbers &lt;= k written in base 2 (most significant digit on left).
  * @author Sean A. Irvine
  */
 public class A029447 implements Sequence {

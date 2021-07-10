@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A056656 Numbers n such that 20*R_n + 3 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A056656 Numbers k such that 20*R_k + 3 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A056656 extends PrimePositionSubsequence {

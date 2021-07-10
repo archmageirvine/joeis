@@ -1,7 +1,6 @@
 package irvine.oeis.a048;
 
 import irvine.math.cr.CR;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
@@ -14,27 +13,25 @@ import irvine.oeis.a038.A038024;
  */
 public class A048799 extends DecimalExpansionSequence {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-
-  private static final CR N = new CR() {
-    @Override
-    protected Z approximate(final int precision) {
-      Z sum = Z.ZERO;
-      if (precision < 0) {
-        final Sequence kempner = new SkipSequence(new A038024(), 1);
-        int k = 1;
-        Z u;
-        do {
-          u = kempner.next().shiftLeft(-precision).divide(FACTORIAL.factorial(++k));
-          sum = sum.add(u);
-        } while (!u.isZero());
+  /** Construct the sequence. */
+  public A048799() {
+    super(new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        Z sum = Z.ZERO;
+        if (precision < 0) {
+          final Sequence kempner = new SkipSequence(new A038024(), 1);
+          int k = 1;
+          Z f = Z.ONE;
+          Z u;
+          do {
+            f = f.multiply(++k);
+            u = kempner.next().shiftLeft(-precision).divide(f);
+            sum = sum.add(u);
+          } while (!u.isZero());
+        }
+        return sum;
       }
-      return sum;
-    }
-  };
-
-  @Override
-  protected CR getCR() {
-    return N;
+    });
   }
 }

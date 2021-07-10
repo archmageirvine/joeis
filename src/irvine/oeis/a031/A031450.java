@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031450 n-th number k which in base 2 has 3 fewer 0's than 1's.
+ * A031450 Numbers whose base-2 representation has 3 fewer 0's than 1's.
  * @author Sean A. Irvine
  */
 public class A031450 implements Sequence {

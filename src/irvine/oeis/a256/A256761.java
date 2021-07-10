@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A256761 Numbers k such that R_k + 70 is prime, where R_k = 11...1 is the repunit (A002275) of length n.
+ * A256761 Numbers k such that R_k + 70 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A256761 extends PrimePositionSubsequence {

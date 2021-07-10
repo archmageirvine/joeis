@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273905 Number of symmetric bargraphs having semiperimeter n (n>=2).
+ * A273905 Number of symmetric bargraphs having semiperimeter n (n&gt;=2).
  * (2*a(n-1)+(4*n-6)*a(n-2)-(2*n-12)*a(n-4)-6*a(n-5)+2*a(n-6)-(n-9)*a(n-8))-a(n)*(n+1)
  * @author Georg Fischer
  */

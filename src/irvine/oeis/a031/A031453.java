@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031453 Numbers n which in base 3 have one more 0's than 2's.
+ * A031453 Numbers whose base-3 representation has one more 0 than 2's.
  * @author Sean A. Irvine
  */
 public class A031453 extends A031452 {

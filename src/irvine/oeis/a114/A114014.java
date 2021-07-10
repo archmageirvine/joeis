@@ -5,7 +5,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114014 A series expansion of a quadric Jasinski rational polynomial based on A112627 that is Farey like in p[1/2]=1.
+ * A114014 Expansion of g.f. (1 + 2*x)^4/((1 + x)*(1 - 16*x^2)).
  * @author Georg Fischer
  */
 public class A114014 extends HolonomicRecurrence {

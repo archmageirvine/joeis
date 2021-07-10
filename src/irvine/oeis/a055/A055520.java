@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A055520 Numbers n such that 30*R_n + 1 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A055520 Numbers k such that 30*R_k + 1 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A055520 extends PrimePositionSubsequence {

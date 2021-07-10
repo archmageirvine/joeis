@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A073663 Total number of branches of length k (k>=1) in all ordered trees with n+k edges (it is independent of k).
+ * A073663 Total number of branches of length k (k&gt;=1) in all ordered trees with n+k edges (it is independent of k).
  * binomial(2*n+2,n)-2*binomial(2*n,n-1)+binomial(2*n-2,n-2)
  * @author Georg Fischer
  */

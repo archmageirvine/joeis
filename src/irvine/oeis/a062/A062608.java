@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062608 Numbers n such that 42^n - 41^n is prime.
+ * A062608 Numbers k such that 42^k - 41^k is prime.
  * @author Georg Fischer
  */
 public class A062608 extends PrimePositionSubsequence {

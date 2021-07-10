@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026222 a(n) = n-th number k such that s(k)=t(k), where s = A026136, t = A026142.
+ * A026222 Numbers k such that A026136(k) = A026142(k).
  * @author Sean A. Irvine
  */
 public class A026222 extends A026136 {

@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A099415 Numbers n such that 5*R_n - 4 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A099415 Numbers k such that 5*R_k - 4 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A099415 extends PrimePositionSubsequence {

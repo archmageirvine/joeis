@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A245176 a(n) = 2*a(n-1)+(n-2)*a(n-2)-(n-1)*a(n-3) with initial terms (1, 2, 4).
+ * A245176 a(n) = 2*a(n-1)+(n-2)*a(n-2)-(n-1)*a(n-3) with initial terms (1,2,4).
  * -a(n)+2*a(n-1)+(n-2)*a(n-2)-(n-1)*a(n-3)
  * @author Georg Fischer
  */

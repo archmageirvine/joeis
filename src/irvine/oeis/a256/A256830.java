@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A256830 Numbers k such that 7*R_k - 20 is prime, where R_k = 11...1 is the repunit (A002275) of length n.
+ * A256830 Numbers k such that 7*R_k - 20 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A256830 extends PrimePositionSubsequence {

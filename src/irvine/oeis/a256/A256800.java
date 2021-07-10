@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A256800 Numbers k such that 3*R_k + 50 is prime, where R_k = 11...1 is the repunit (A002275) of length n.
+ * A256800 Numbers k such that 3*R_k + 50 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A256800 extends PrimePositionSubsequence {

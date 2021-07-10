@@ -7,7 +7,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A154272 1,0,1 followed by 0,0,0...
+ * A154272 1,0,1 followed by 0,0,0,...
  * @author Georg Fischer
  */
 public class A154272 extends EulerTransform {

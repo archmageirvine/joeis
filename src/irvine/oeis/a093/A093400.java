@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A093400 Primes of the form 10*R_n + 9, where R_n is the repunit (A002275) of length n.
+ * A093400 Primes of the form 10*R_k + 9, where R_k is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A093400 extends PrimeSubsequence {

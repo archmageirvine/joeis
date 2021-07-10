@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A042947 Gilda's numbers: numbers n such that if a Fibonacci sequence is formed with first term = a certain absolute value between decimal digits in n (A007953) and second term = sum of decimal digits in n (A040997), then n itself occurs as a term in the sequence.
+ * A042947 Gilda's numbers: numbers k such that if a Fibonacci sequence is formed with first term = a certain absolute value between decimal digits in k (A007953) and second term = sum of decimal digits in k (A040997), then k itself occurs as a term in the sequence.
  * @author Sean A. Irvine
  */
 public class A042947 implements Sequence {

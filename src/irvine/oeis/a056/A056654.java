@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A056654 Numbers n such that 10*R_n + 3 is prime, where R_n is the repunit (A002275) of length n.
+ * A056654 Numbers k such that 10*R_k + 3 is prime, where R_k is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A056654 extends PrimePositionSubsequence {

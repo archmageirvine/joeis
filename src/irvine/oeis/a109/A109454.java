@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109454 Sum of non-Fibonacci numbers between successive Fibonacci numbers: {(F(n) +1),(F(n) +2), +...+ (F(n+1) -1)}.
+ * A109454 Sum of non-Fibonacci numbers between successive Fibonacci numbers: a(n) = Sum_{k=F(n)+1..F(n+1)-1)} k.
  * @author Georg Fischer
  */
 public class A109454 extends GeneratingFunctionSequence {

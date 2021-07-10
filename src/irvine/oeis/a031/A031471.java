@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031471 Numbers n which in base 5 has one more 0's than 4's.
+ * A031471 Numbers whose base-5 representation has one more 0 than 4's.
  * @author Sean A. Irvine
  */
 public class A031471 extends A031452 {

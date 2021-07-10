@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091036 Sixth column (k=7) of array A090438 ((4, 2)-Stirling2) divided by 48=4!*2.
+ * A091036 Sixth column (k=7) of array A090438 ((4,2)-Stirling2) divided by 48=4!*2.
  * 1/2*binomial(2*n-2, 5)*(2*n)!/7!/4!
  * @author Georg Fischer
  */

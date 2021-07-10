@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062646 Numbers n such that 80^n - 79^n is prime.
+ * A062646 Numbers k such that 80^k - 79^k is prime.
  * @author Georg Fischer
  */
 public class A062646 extends PrimePositionSubsequence {

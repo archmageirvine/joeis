@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A101393 Numbers n such that 3*10^n + R_n + 6 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A101393 Numbers k such that 3*10^k + R_k + 6 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A101393 extends PrimePositionSubsequence {

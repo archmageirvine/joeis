@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114201 C(1+2*n, 1+n)*C(6+2*n, 0+n)
+ * A114201 C(1+2*n,1+n)*C(6+2*n,0+n).
  * binomial(2*n+1,n+1)*binomial(6+2*n,n)
  * @author Georg Fischer
  */

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.math.partitions.DistinctOddPartsPartitions;
+import irvine.math.partitions.DistinctOddPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -64,7 +64,7 @@ public class A048141 implements Sequence {
     while (n >= mPerfectlyBalanced.size()) {
       final int arm = mPerfectlyBalanced.size();
       // There is a 1-1 correspondence between partitions into distinct odd parts and self-conjugate partitions
-      final List<int[]> distinct = DistinctOddPartsPartitions.partitions(arm);
+      final List<int[]> distinct = DistinctOddPartsPartition.partitions(arm);
       final ArrayList<int[]> balanced = new ArrayList<>(distinct.size());
       mPerfectlyBalanced.add(balanced);
       // bend them

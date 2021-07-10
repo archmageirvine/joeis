@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A029986 Numbers n such that n^2 is palindromic in base 4.
+ * A029986 Numbers k such that k^2 is palindromic in base 4.
  * @author Sean A. Irvine
  */
 public class A029986 implements Sequence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031497 n-th number k which in base 10 has one more 0's than 9's.
+ * A031497 Numbers whose base-10 representation has one more 0 than 9's.
  * @author Sean A. Irvine
  */
 public class A031497 extends A031452 {

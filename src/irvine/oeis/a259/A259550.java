@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A259550 a(n) = C(5*n-1, 2*n)/3, n > 0, a(0) = 1.
+ * A259550 a(n) = C(5*n-1,2*n)/3, n &gt; 0, a(0) = 1.
  * 1/3*binomial(5*n-1, 2*n)
  * @author Georg Fischer
  */

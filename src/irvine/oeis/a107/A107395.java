@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107395 C(n+4, 4)*C(n+6, 4).
+ * A107395 C(n+4,4)*C(n+6,4).
  * binomial(n+4, 4)*binomial(n+6, 4)
  * @author Georg Fischer
  */

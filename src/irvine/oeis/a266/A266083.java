@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A266083 a(n) = Sum_{k = 0..n - 1} (a(n - 1) + k) for n>0, a(0) = 1.
+ * A266083 a(n) = Sum_{k = 0..n - 1} (a(n - 1) + k) for n&gt;0, a(0) = 1.
  * a(n)=n*a(n-1)+binomial(n, 2)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055498.
+ * A055498 a(0)=0, a(1)=1, a(n) = smallest prime &gt;= a(n-1) + a(n-2).
  * @author Sean A. Irvine
  */
 public class A055498 implements Sequence {

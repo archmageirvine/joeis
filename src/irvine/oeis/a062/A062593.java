@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062593 Numbers n such that 27^n - 26^n is prime.
+ * A062593 Numbers k such that 27^k - 26^k is prime.
  * @author Georg Fischer
  */
 public class A062593 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A071798 Number of paths on the surface of the n-dimensional lattice [0..2]^n; i.e., the lattice paths that do not pass through the point (1, 1,..., 1).
+ * A071798 Number of paths on the surface of the n-dimensional lattice [0..2]^n; i.e., the lattice paths that do not pass through the point (1,1,...,1).
  * n*((3*n^2-7*n+3)*a(n-1)-(2*n-3)*(n-1)^3*a(n-2))-a(n)*(n-2)
  * @author Georg Fischer
  */

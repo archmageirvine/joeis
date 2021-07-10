@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048747 Factor n, divide sum of divisors by number of divisors; append n to sequence if quotient is integral and not previously seen.
+ * A048747 Factor composite n, divide sum of divisors by number of divisors; append n to sequence if quotient is integral and not previously seen.
  * @author Sean A. Irvine
  */
 public class A048747 implements Sequence {

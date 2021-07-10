@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062601 Numbers n such that 35^n - 34^n is prime.
+ * A062601 Numbers k such that 35^k - 34^k is prime.
  * @author Georg Fischer
  */
 public class A062601 extends PrimePositionSubsequence {

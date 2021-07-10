@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A241921 Numbers n such that (15^n - 4^n)/11 is prime.
+ * A241921 Numbers k such that (15^k - 4^k)/11 is prime.
  * @author Georg Fischer
  */
 public class A241921 extends PrimePositionSubsequence {

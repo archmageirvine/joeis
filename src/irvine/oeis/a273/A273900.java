@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273900 Number of columns of length 1 in all bargraphs of semiperimeter n (n>=2).
+ * A273900 Number of columns of length 1 in all bargraphs of semiperimeter n (n&gt;=2).
  * (4*n*a(n-1)-2*(n-4)*a(n-2)+2*a(n-3)-(n-6)*a(n-4))-a(n)*(n+2)
  * @author Georg Fischer
  */

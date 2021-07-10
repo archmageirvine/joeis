@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062637 Numbers n such that 71^n - 70^n is prime.
+ * A062637 Numbers k such that 71^k - 70^k is prime.
  * @author Georg Fischer
  */
 public class A062637 extends PrimePositionSubsequence {

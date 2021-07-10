@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110043 a(0) = 1, a(1) = 2; for n>1, a(n) = n*a(n-1) + (-1)^n.
+ * A110043 a(0) = 1, a(1) = 2; for n&gt;1, a(n) = n*a(n-1) + (-1)^n.
  * (n-1)*a(n-1)+(n-1)*a(n-2)-a(n)
  * @author Georg Fischer
  */

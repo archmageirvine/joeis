@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091032 Second column (k=3) of array A090438 ((4, 2)-Stirling2) divided by 8.
+ * A091032 Second column (k=3) of array A090438 ((4,2)-Stirling2) divided by 8.
  * (n-1)*(2*n)!/4!
  * @author Georg Fischer
  */

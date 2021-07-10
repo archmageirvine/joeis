@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144097 The 4-Schroeder numbers: a(n) = number of lattice paths (Schroeder paths) from (0, 0) to (3n,n) with unit steps N=(0, 1), E=(1, 0) and D=(1, 1) staying weakly above the line y = 3x.
+ * A144097 The 4-Schroeder numbers: a(n) = number of lattice paths (Schroeder paths) from (0,0) to (3n,n) with unit steps N=(0,1), E=(1,0) and D=(1,1) staying weakly above the line y = 3x.
  * ((15610*n^5-67123*n^4+106824*n^3-77633*n^2+25514*n-3000)*a(n-1)-(3*(n-2))*(3*n-4)*(3*n-5)*(35*n^2-28*n+5)*a(n-2))-a(n)*((3*(3*n-1))*(3*n+1)*n*(35*n^2-98*n+68))
  * @author Georg Fischer
  */

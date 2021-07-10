@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062595 Numbers n such that 29^n - 28^n is prime.
+ * A062595 Numbers k such that 29^k - 28^k is prime.
  * @author Georg Fischer
  */
 public class A062595 extends PrimePositionSubsequence {

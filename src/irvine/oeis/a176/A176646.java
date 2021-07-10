@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176646 a(n) = 12*n^5 + 25*n^4 + 5*n^3 - 10*n^2 - 2*n.
+ * A176646 a(n) is the number of convex pentagons in an n-triangular net.
  * @author Sean A. Irvine
  */
 public class A176646 extends LinearRecurrence {

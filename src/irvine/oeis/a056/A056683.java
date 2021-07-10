@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A056683 Numbers n such that 40*R_n + 9 is prime, where R_n = 11...1 is the repunit (A002275).
+ * A056683 Numbers k such that 40*R_k + 9 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A056683 extends PrimePositionSubsequence {

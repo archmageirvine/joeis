@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062643 Numbers n such that 77^n - 76^n is prime.
+ * A062643 Numbers k such that 77^k - 76^k is prime.
  * @author Georg Fischer
  */
 public class A062643 extends PrimePositionSubsequence {

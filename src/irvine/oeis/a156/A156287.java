@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A156287 Numbers n such that 4*n-5 is a prime number.
+ * A156287 Numbers k such that 4*k-5 is a prime number.
  * @author Georg Fischer
  */
 public class A156287 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113976 a(n)= 4*a(n-1) -3*a(n-2), n&gt;4.
+ * A113976 a(n) = 4*a(n-1) - 3*a(n-2), for n&gt;3, with a(0) = 14, a(1) = 133, a(2) = 616, and a(3) = 2128.
  * @author Georg Fischer
  */
 public class A113976 extends HolonomicRecurrence {

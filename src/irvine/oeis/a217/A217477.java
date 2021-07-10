@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A217477 Z-sequence for the Riordan triangle A111125;
+ * A217477 Z-sequence for the Riordan triangle A111125;.
  * 4*(-1)^n*binomial(2*n-1,n)
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062576 Numbers n such that 10^n - 9^n is prime.
+ * A062576 Numbers k such that 10^k - 9^k is prime.
  * @author Georg Fischer
  */
 public class A062576 extends PrimePositionSubsequence {

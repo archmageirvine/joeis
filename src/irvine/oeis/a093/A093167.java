@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A093167 Primes of the form 20*R_n + 7, where R_n is the repunit (A002275) of length n.
+ * A093167 Primes of the form 20*R_k + 7, where R_k is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A093167 extends PrimeSubsequence {

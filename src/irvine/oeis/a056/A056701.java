@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A056701 Numbers n such that 2*10^n + 3*R_n is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A056701 Numbers k such that 2*10^k + 3*R_k is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A056701 extends PrimePositionSubsequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.a099.A099192;
 
 /**
- * A105106 Numbers n such that the string n101 is prime.
+ * A105106 Numbers k such that the string k101 is prime.
  * @author Georg Fischer
  */
 public class A105106 extends A099192 {

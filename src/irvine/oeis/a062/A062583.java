@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062583 Numbers n such that 17^n - 16^n is prime.
+ * A062583 Numbers k such that 17^k - 16^k is prime.
  * @author Georg Fischer
  */
 public class A062583 extends PrimePositionSubsequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.BeattySequence;
 
 /**
- * A247964 Beatty sequence for e^(1/3): a(n)=floor(n*(e^(1/3)))
+ * A247964 Beatty sequence for e^(1/3): a(n)=floor(n*(e^(1/3))).
  * @author Georg Fischer
  */
 public class A247964 extends BeattySequence {

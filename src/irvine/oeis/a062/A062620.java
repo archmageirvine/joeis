@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062620 Numbers n such that 54^n - 53^n is prime.
+ * A062620 Numbers k such that 54^k - 53^k is prime.
  * @author Georg Fischer
  */
 public class A062620 extends PrimePositionSubsequence {

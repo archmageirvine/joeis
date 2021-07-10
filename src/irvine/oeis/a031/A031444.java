@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031444 In base 2 has one more 0's than 1's.
+ * A031444 Numbers whose base-2 representation has one more 0 than 1's.
  * @author Sean A. Irvine
  */
 public class A031444 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062598 Numbers n such that 32^n - 31^n is prime.
+ * A062598 Numbers k such that 32^k - 31^k is prime.
  * @author Georg Fischer
  */
 public class A062598 extends PrimePositionSubsequence {

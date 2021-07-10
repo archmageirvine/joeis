@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062586 Numbers n such that 20^n - 19^n is prime.
+ * A062586 Numbers k such that 20^k - 19^k is prime.
  * @author Georg Fischer
  */
 public class A062586 extends PrimePositionSubsequence {

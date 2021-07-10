@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062616 Numbers n such that 50^n - 49^n is a prime.
+ * A062616 Numbers k such that 50^k - 49^k is a prime.
  * @author Georg Fischer
  */
 public class A062616 extends PrimePositionSubsequence {

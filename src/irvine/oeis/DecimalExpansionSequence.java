@@ -35,6 +35,10 @@ public abstract class DecimalExpansionSequence extends RealConstantSequence impl
     mBase = 10;
   }
 
+  protected DecimalExpansionSequence(final CR x) {
+    this(1, x);
+  }
+
   protected void ensureAccuracy(final int n) {
   }
   

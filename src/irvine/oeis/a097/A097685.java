@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A097685 Numbers n such that R_n + 8 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A097685 Numbers k such that R_k + 8 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A097685 extends PrimePositionSubsequence {

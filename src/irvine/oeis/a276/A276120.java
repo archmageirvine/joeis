@@ -5,7 +5,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A276120 Decimal expansion of Zeta(3)/Pi^3.
+ * A276120 Decimal expansion of zeta(3)/Pi^3.
  * @author Sean A. Irvine
  */
 public class A276120 extends DecimalExpansionSequence {

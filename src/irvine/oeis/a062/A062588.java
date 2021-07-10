@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062588 Numbers n such that 22^n - 21^n is prime.
+ * A062588 Numbers k such that 22^k - 21^k is prime.
  * @author Georg Fischer
  */
 public class A062588 extends PrimePositionSubsequence {

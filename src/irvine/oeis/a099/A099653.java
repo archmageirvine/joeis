@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099653 a(n) is the number of n-subsets (n=1, 2,..., 10) of the 10 decimal digits from which prime numbers can be constructed including all n distinct digits either with or without repetitions; a(n) <= binomial(10,n).
+ * A099653 a(n) is the number of n-subsets (n=1,2,...,10) of the 10 decimal digits from which prime numbers can be constructed including all n distinct digits either with or without repetitions; a(n) &lt;= binomial(10,n).
  * binomial(10,n)-binomial(6,n)-binomial(4,n)
  * @author Georg Fischer
  */

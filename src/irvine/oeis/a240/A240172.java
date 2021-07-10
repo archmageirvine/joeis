@@ -4,7 +4,7 @@ package irvine.oeis.a240;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240172 O.g.f.: Sum_{n>=0} n! * x^n * (1+x)^n.
+ * A240172 O.g.f.: Sum_{n&gt;=0} n! * x^n * (1+x)^n.
  * (n-2)*a(n-1)+(2*n-1)*a(n-2)+(n-1)*a(n-3)-a(n)
  * @author Georg Fischer
  */

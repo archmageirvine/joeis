@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A031452 In base 3 has the same number of 0's as 2's.
+ * A031452 Numbers whose base-3 representation has the same number of 0's as 2's.
  * @author Sean A. Irvine
  */
 public class A031452 implements Sequence {

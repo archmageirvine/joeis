@@ -6,7 +6,7 @@ package irvine.oeis.a214;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A214649 a(-1) = 1 and g.f. A(x) satisfies A(x) - 1 / A(x) = 1 / x - 1.
+ * A214649 a(-1) = 1 and g.f. A(x) satisfies A(x) - 1/A(x) = 1/x - 1.
  * @author Georg Fischer
  */
 public class A214649 extends HolonomicRecurrence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031454 n-th number k which in base 3 has 2 more 0's than 2's.
+ * A031454 Numbers whose base-3 representation has 2 more 0's than 2's.
  * @author Sean A. Irvine
  */
 public class A031454 extends A031452 {

@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144679 Related to enumeration of quantum states (see reference for precise definition).
+ * A144679 a(n) = [n/5 + 1]*[n/5 + 2]*(3*n - 10*[n/5] + 3)/6, where [.] = floor.
  * @author Georg Fischer
  */
 public class A144679 extends LinearRecurrence {

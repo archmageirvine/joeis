@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029453 Numbers n such that n divides the (right) concatenation of all numbers &lt;= n written in base 8 (most significant digit on left).
+ * A029453 Numbers k that divide the (right) concatenation of all numbers &lt;= k written in base 8 (most significant digit on left).
  * @author Sean A. Irvine
  */
 public class A029453 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A062663 Numbers n such that 97^n - 96^n is a strong pseudoprime.
+ * A062663 Numbers k such that 97^k - 96^k is a strong pseudoprime.
  *
  * @author Georg Fischer
  */

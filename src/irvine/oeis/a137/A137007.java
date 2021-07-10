@@ -5,7 +5,7 @@ package irvine.oeis.a137;
 import irvine.oeis.SquareDigitsSequence;
 
 /**
- * A137007 Numbers n such that n and the square of n use only the digits 1, 2, 5 and 7.
+ * A137007 Numbers k such that k and k^2 use only the digits 1, 2, 5 and 7.
  * @author Georg Fischer
  */
 public class A137007 extends SquareDigitsSequence {

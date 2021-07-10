@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091035 Fifth column (k=6) of array A090438 ((4, 2)-Stirling2).
+ * A091035 Fifth column (k=6) of array A090438 ((4,2)-Stirling2).
  * binomial(2*n-2, 4)*(2*n)!/6!
  * @author Georg Fischer
  */

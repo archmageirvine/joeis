@@ -5,7 +5,7 @@ package irvine.oeis.a102;
 import irvine.oeis.a099.A099192;
 
 /**
- * A102704 Numbers n such that n999 is prime.
+ * A102704 Numbers k such that k999 is prime.
  * @author Georg Fischer
  */
 public class A102704 extends A099192 {

@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A026168 a(n) = n-th number k such that s(j) &lt; s(k) for all j &lt; k. Also a(n) = (n-1)st number k such that s(k) &gt; k, for n &gt;= 3, where s = A026166.
+ * A026168 Numbers k such that A026166(j) &lt; A026166(k) for all j &lt; k.
  * @author Sean A. Irvine
  */
 public class A026168 extends RecordPositionSequence {

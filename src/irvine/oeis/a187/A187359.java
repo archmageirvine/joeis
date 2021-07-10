@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A187359 Catalan trisection: A000108(3*n + 2)/2, n>=0.
+ * A187359 Catalan trisection: A000108(3*n + 2)/2, n&gt;=0.
  * 1/2*C(3*n+2)
  * @author Georg Fischer
  */

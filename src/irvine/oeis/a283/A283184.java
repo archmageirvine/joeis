@@ -4,7 +4,7 @@ package irvine.oeis.a283;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A283184 a(n) is the number of symmetric permutations (p(1),p(2),...,p(m)) of (1, 2,...,m), m=2n or m=2n+1, with p(m+1-k) = m+1-p(k) for 1<=k<=m, such that adjacent numbers do not differ by 1. a(n) is also the number of point-symmetric arrangements of m non-attacking kings on an m X m board, with one in each row and column.
+ * A283184 a(n) is the number of symmetric permutations (p(1),p(2),...,p(m)) of (1,2,...,m), m=2n or m=2n+1, with p(m+1-k) = m+1-p(k) for 1&lt;=k&lt;=m, such that adjacent numbers do not differ by 1. a(n) is also the number of point-symmetric arrangements of m non-attacking kings on an m X m board, with one in each row and column.
  * -a(n)+(2*n+1)*a(n-1)-(2*n-5)*(a(n-2)+a(n-3))+(2*n-6)*a(n-4)
  * @author Georg Fischer
  */

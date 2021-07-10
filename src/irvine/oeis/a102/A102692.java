@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102692 a(n) = number of digraphs (allowing loops) with vertices 1, 2,...,n that have a unique Eulerian tour (up to cyclic shift).
+ * A102692 a(n) = number of digraphs (allowing loops) with vertices 1,2,...,n that have a unique Eulerian tour (up to cyclic shift).
  * (n-1)*(6*(2*n^2-4*n+1)*a(n-1)-(n-2)*(n-3)*(2*n-1)*a(n-2))-a(n)*((n+1)*(2*n-3))
  * @author Georg Fischer
  */

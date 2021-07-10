@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A185113 Number of dissections of a convex (3n+3)-sided polygon into n pentagons and one triangle (up to equivalence)
+ * A185113 Number of dissections of a convex (3n+3)-sided polygon into n pentagons and one triangle (up to equivalence).
  * binomial(4*n+1,n-1)*(n+2)/n
  * @author Georg Fischer
  */

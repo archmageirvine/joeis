@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062658 Numbers n such that 92^n - 91^n is prime.
+ * A062658 Numbers k such that 92^k - 91^k is prime.
  * @author Georg Fischer
  */
 public class A062658 extends PrimePositionSubsequence {

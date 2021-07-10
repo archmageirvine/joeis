@@ -5,7 +5,7 @@ package irvine.oeis.a103;
 import irvine.oeis.a099.A099192;
 
 /**
- * A103401 Numbers n such that n211 is prime.
+ * A103401 Numbers k such that k211 is prime.
  * @author Georg Fischer
  */
 public class A103401 extends A099192 {

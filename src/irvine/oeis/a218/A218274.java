@@ -4,7 +4,7 @@ package irvine.oeis.a218;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A218274 Number of n-step paths from (0, 0) to (1, 0) where all diagonal, vertical and horizontal steps are allowed.
+ * A218274 Number of n-step paths from (0,0) to (1,0) where all diagonal, vertical and horizontal steps are allowed.
  * ((9*n^4-9*n^3-8*n^2+4*n)*a(n-1)+4*(n-1)*(27*n^3-84*n^2+80*n-21)*a(n-2)+32*(3*n-1)*(n-1)*(n-2)^2*a(n-3))-a(n)*(n*(n-1)*(n+1)*(3*n-4))
  * @author Georg Fischer
  */

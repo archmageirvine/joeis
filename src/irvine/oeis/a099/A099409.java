@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A099409 Numbers n such that 2*R_n + 5 is prime, where R_n = 11...1 is the repunit (A002275) of length n.
+ * A099409 Numbers k such that 2*R_k + 5 is prime, where R_k = 11...1 is the repunit (A002275) of length k.
  * @author Georg Fischer
  */
 public class A099409 extends PrimePositionSubsequence {

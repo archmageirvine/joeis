@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A062652 Numbers n such that 86^n - 85^n is prime.
+ * A062652 Numbers k such that 86^k - 85^k is prime.
  * @author Georg Fischer
  */
 public class A062652 extends PrimePositionSubsequence {

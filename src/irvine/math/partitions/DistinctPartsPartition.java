@@ -6,7 +6,7 @@ import java.util.Arrays;
  * Generate partitions into distinct parts.
  * @author Sean A. Irvine
  */
-public final class DistinctPartsPartition {
+public class DistinctPartsPartition {
 
   private final int[] mX;
   private int mM;

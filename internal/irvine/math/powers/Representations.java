@@ -28,12 +28,11 @@ final class Representations {
       return;
     }
     final int l = Arrays.binarySearch(mPowers, target.divide(m));
-    final int lower = l < 0 ? 2 - l : l;
+    final int lo = l < 0 ? 2 - l : l;
     final int h = Arrays.binarySearch(mPowers, target);
-    for (int v = h < 0 ? 2 - h : h; v >= lower; --v) {
-      if (v > prev) {
-        break;
-      }
+    final int hi = h < 0 ? 2 - h : h;
+    //System.out.println(m + " " + prev + " [" + lo + "," + hi + "]");
+    for (int v = Math.min(hi, prev); v >= lo; --v) {
       t[m - 1] = v;
       search(t, target.subtract(mPowers[v]), m - 1, v);
     }

@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A219283 Primes of the form 13^n - 12^n.
+ * A219283 Primes of the form 13^k - 12^k.
  * @author Georg Fischer
  */
 public class A219283 extends PrimeSubsequence {

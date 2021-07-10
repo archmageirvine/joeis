@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031483 Numbers n which in base 7 has one more 0's than 6's.
+ * A031483 Numbers whose base-7 representation has one more 0 than 6's.
  * @author Sean A. Irvine
  */
 public class A031483 extends A031452 {

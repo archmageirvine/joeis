@@ -18,11 +18,6 @@ public class A029691 implements Sequence {
   public Z next() {
     final CR t = CR.valueOf(++mN).sqrt();
     final CR f = t.subtract(CR.valueOf(t.floor()));
-    return new SkipSequence(new DecimalExpansionSequence(true, 2) {
-      @Override
-      protected CR getCR() {
-        return f;
-      }
-    }, mN - 1).next();
+    return new SkipSequence(new DecimalExpansionSequence(0, f, 2), mN - 1).next();
   }
 }

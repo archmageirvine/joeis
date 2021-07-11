@@ -4,20 +4,13 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004587 Expansion of sqrt(10) in base 4.
+ * A004587 Expansion of sqrt(10) in base 2.
  * @author Sean A. Irvine
  */
 public class A004587 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.TEN.sqrt();
-
   /** Construct the sequence. */
   public A004587() {
-    super(false, 4);
-  }
-
-  @Override
-  protected CR getCR() {
-    return N;
+    super(0, CR.TEN.sqrt(), 4);
   }
 }

@@ -11,11 +11,6 @@ public class A004546 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004546() {
-    super(false, 9);
-  }
-
-  @Override
-  protected CR getCR() {
-    return CR.SQRT2;
+    super(0, CR.SQRT2, 9);
   }
 }

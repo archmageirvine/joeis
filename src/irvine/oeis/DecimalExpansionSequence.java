@@ -9,15 +9,14 @@ import irvine.math.z.Z;
  * Sequence formed by the decimal expansion of a computable real number.
  * @author Sean A. Irvine
  */
-public abstract class DecimalExpansionSequence extends RealConstantSequence implements Serializable {
+public class DecimalExpansionSequence extends RealConstantSequence implements Serializable {
 
   private final int mBase;
   private String mS = "";
   protected int mN = -1;
   private boolean mSeenNonZero;
 
-  // todo remove this constructor
-  protected DecimalExpansionSequence(final boolean zeroHandling, final int base) {
+  private DecimalExpansionSequence(final boolean zeroHandling, final int base) {
     super(0, null);
     mSeenNonZero = zeroHandling;
     mBase = base;
@@ -33,7 +32,13 @@ public abstract class DecimalExpansionSequence extends RealConstantSequence impl
     this(true, 10);
   }
 
-  protected DecimalExpansionSequence(final int offset, final CR x, final int base) {
+  /**
+   * Construct a new expansion of a computable real number.
+   * @param offset OEIS offset
+   * @param x the number
+   * @param base base for expansion
+   */
+  public DecimalExpansionSequence(final int offset, final CR x, final int base) {
     // "offset" here is supposed to be number of digits before decimal point.
     // For us anything non-negative means we generate straight away, but a
     // negative value means we should skip some leading 0s
@@ -44,8 +49,8 @@ public abstract class DecimalExpansionSequence extends RealConstantSequence impl
     // first digit of the expansion.  But if the offset is negative -- e.g. for a
     // constant like 0.0001 -- we need to skip the leading zeros.
     // Caveat: some offsets in the OEIS and likely incorrect!
-    mN = offset >= 0 ? -1 : -offset - 1; // todo exact detail here for negative offsets needs checking
-    mSeenNonZero = false; // todo remove this flag once everything is going via this path
+    mN = offset >= 0 ? -1 : 1 - offset;
+    mSeenNonZero = true; // todo remove this flag once everything is going via this path
   }
 
   protected DecimalExpansionSequence(final int offset, final CR x) {

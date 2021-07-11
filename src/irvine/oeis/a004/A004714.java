@@ -12,13 +12,8 @@ public class A004714 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004714() {
-    super(false, 2);
+    super(0, CR.PHI, 2);
     super.next();
-  }
-
-  @Override
-  protected CR getCR() {
-    return CR.PHI;
   }
 
   private long mPos = 0;

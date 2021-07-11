@@ -3,7 +3,6 @@ package irvine.oeis.a321;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
@@ -12,16 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A321219 extends DecimalExpansionSequence {
 
-  private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  private static final CR N = REALS.pow(CR.TWO, CR.ZERO.subtract(CR.valueOf(1074)));
-
   /** Construct the sequence. */
   public A321219() {
-    super(false, 10);
-  }
-
-  @Override
-  protected CR getCR() {
-    return N;
+    super(-323, CR.TWO.pow(-1074));
   }
 }

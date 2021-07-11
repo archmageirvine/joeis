@@ -17,12 +17,6 @@ public class A029694 implements Sequence {
 
   @Override
   public Z next() {
-    final CR t = ComputableReals.SINGLETON.pow(CR.valueOf(++mN), CR.ONE_THIRD);
-    return new SkipSequence(new DecimalExpansionSequence(true, 2) {
-      @Override
-      protected CR getCR() {
-        return t;
-      }
-    }, mN - 1).next();
+    return new SkipSequence(new DecimalExpansionSequence(0, ComputableReals.SINGLETON.pow(CR.valueOf(++mN), CR.ONE_THIRD), 2), mN - 1).next();
   }
 }

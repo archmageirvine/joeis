@@ -16,12 +16,6 @@ public class A029692 implements Sequence {
 
   @Override
   public Z next() {
-    final CR t = CR.valueOf(++mN).sqrt();
-    return new SkipSequence(new DecimalExpansionSequence(true, 2) {
-      @Override
-      protected CR getCR() {
-        return t;
-      }
-    }, mN - 1).next();
+    return new SkipSequence(new DecimalExpansionSequence(0, CR.valueOf(++mN).sqrt(), 2), mN - 1).next();
   }
 }

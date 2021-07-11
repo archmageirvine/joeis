@@ -10,16 +10,9 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A004713 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.SQRT2.inverse();
-
   /** Construct the sequence. */
   public A004713() {
-    super(false, 2);
-  }
-
-  @Override
-  protected CR getCR() {
-    return N;
+    super(0, CR.SQRT2.inverse(), 2);
   }
 
   private long mPos = 0;

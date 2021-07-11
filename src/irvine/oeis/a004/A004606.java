@@ -4,18 +4,13 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004606 Expansion of Pi in base 7.
+ * A004606 Expansion of Pi in base 2 (or, binary expansion of Pi).
  * @author Sean A. Irvine
  */
 public class A004606 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004606() {
-    super(false, 7);
-  }
-
-  @Override
-  protected CR getCR() {
-    return CR.PI;
+    super(0, CR.PI, 7);
   }
 }

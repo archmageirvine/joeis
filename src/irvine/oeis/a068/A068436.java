@@ -11,11 +11,6 @@ public class A068436 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A068436() {
-    super(false, 11);
-  }
-
-  @Override
-  protected CR getCR() {
-    return CR.PI;
+    super(0, CR.PI, 11);
   }
 }

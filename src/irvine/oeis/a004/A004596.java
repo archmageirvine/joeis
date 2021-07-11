@@ -4,18 +4,13 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004596 Expansion of e in base 5.
+ * A004596 Expansion of e in base 2.
  * @author Sean A. Irvine
  */
 public class A004596 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004596() {
-    super(false, 5);
-  }
-
-  @Override
-  protected CR getCR() {
-    return CR.E;
+    super(0, CR.E, 5);
   }
 }

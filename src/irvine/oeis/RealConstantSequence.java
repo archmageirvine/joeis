@@ -8,7 +8,7 @@ import irvine.math.cr.CR;
  */
 public abstract class RealConstantSequence implements Sequence {
 
-  private long mOffset;
+  private int mOffset;
   private CR mX;
 
   /**
@@ -16,7 +16,7 @@ public abstract class RealConstantSequence implements Sequence {
    * @param offset the offset of the sequence
    * @param x computable real number
    */
-  protected RealConstantSequence(final long offset, final CR x) {
+  protected RealConstantSequence(final int offset, final CR x) {
     mOffset = offset;
     mX = x;
   }
@@ -25,7 +25,7 @@ public abstract class RealConstantSequence implements Sequence {
     return mX;
   }
 
-  protected long getOffset() {
+  protected int getOffset() {
     return mOffset;
   }
 }

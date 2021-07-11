@@ -11,7 +11,7 @@ public abstract class BeattySequence extends RealConstantSequence {
 
   protected long mN;
 
-  protected BeattySequence(final long offset, final CR x) {
+  protected BeattySequence(final int offset, final CR x) {
     super(offset, x);
     mN = offset - 1;
   }

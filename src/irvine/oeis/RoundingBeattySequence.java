@@ -11,7 +11,7 @@ public abstract class RoundingBeattySequence extends RealConstantSequence {
 
   private long mN;
 
-  protected RoundingBeattySequence(final long offset, final CR x) {
+  protected RoundingBeattySequence(final int offset, final CR x) {
     super(offset, x);
     mN = offset - 1;
   }

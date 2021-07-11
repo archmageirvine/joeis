@@ -75,7 +75,7 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
         continue;
       }
       if (c == '0' && mN == 0) {
-        // Skip leading zeros
+        // Skip leading zero
         continue;
       }
       return Z.valueOf(c <= '9' ? c - '0' : c - 'a' + 10);

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004589 Expansion of sqrt(10) in base 2.
+ * A004589 Expansion of sqrt(10) in base 6.
  * @author Sean A. Irvine
  */
 public class A004589 extends DecimalExpansionSequence {

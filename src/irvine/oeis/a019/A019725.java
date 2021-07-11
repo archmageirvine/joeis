@@ -9,15 +9,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A019725 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.SQRT_PI.divide(CR.valueOf(23));
-
   /** Construct the sequence. */
   public A019725() {
-    super(false);
-  }
-
-  @Override
-  protected CR getCR() {
-    return N;
+    super(-1, CR.SQRT_PI.divide(CR.valueOf(23)));
   }
 }

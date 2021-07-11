@@ -14,22 +14,11 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
   private final int mBase;
   private String mS = "";
   protected int mN = -1;
-  private boolean mSeenNonZero;
-
-  private DecimalExpansionSequence(final boolean zeroHandling, final int base) {
-    super(0, null);
-    mSeenNonZero = zeroHandling;
-    mBase = base;
-  }
-
-  // todo remove this constructor
-  protected DecimalExpansionSequence(final boolean zeroHandling) {
-    this(zeroHandling, 10);
-  }
 
   // todo remove this constructor
   protected DecimalExpansionSequence() {
-    this(true, 10);
+    super(0, null);
+    mBase = 10;
   }
 
   /**
@@ -50,7 +39,6 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
     // constant like 0.0001 -- we need to skip the leading zeros.
     // Caveat: some offsets in the OEIS and likely incorrect!
     mN = offset >= 0 ? -1 : 1 - offset;
-    mSeenNonZero = true; // todo remove this flag once everything is going via this path
   }
 
   protected DecimalExpansionSequence(final int offset, final CR x) {
@@ -86,11 +74,10 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
         // Skip any decimal point
         continue;
       }
-      if (c == '0' && (mN == 0 || !mSeenNonZero)) {
+      if (c == '0' && mN == 0) {
         // Skip leading zeros
         continue;
       }
-      mSeenNonZero = true;
       return Z.valueOf(c <= '9' ? c - '0' : c - 'a' + 10);
     }
   }

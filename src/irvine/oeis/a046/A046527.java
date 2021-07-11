@@ -10,10 +10,10 @@ import irvine.oeis.Sequence;
  */
 public class A046527 implements Sequence {
 
-  private int mN = -1;
-  private int mM = 0;
+  protected int mN = -1;
+  protected int mM = 0;
 
-  private Z t(final int n, final int m) {
+  protected Z t(final int n, final int m) {
     if (m == 0) {
       return Binomial.catalan(n);
     }

@@ -13,6 +13,10 @@ public class A035529 extends MemoryFunction2<Long, Z> implements Sequence {
   private long mN = 0;
   private long mM = 0;
 
+  protected long degree() {
+    return 3;
+  }
+
   @Override
   protected Z compute(final Long n, final Long m) {
     if (m == 0 || m > n) {
@@ -21,7 +25,7 @@ public class A035529 extends MemoryFunction2<Long, Z> implements Sequence {
     if (n == 1) {
       return Z.ONE;
     }
-    return get(n - 1, m).multiply(3).multiply(3 * (n - 1) + m).add(get(n - 1, m - 1).multiply(m)).divide(n);
+    return get(n - 1, m).multiply(degree()).multiply(degree() * (n - 1) + m).add(get(n - 1, m - 1).multiply(m)).divide(n);
   }
 
   @Override

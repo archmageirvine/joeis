@@ -13,7 +13,7 @@ public class A046521 implements Sequence {
   private long mN = -1;
   private long mM = 0;
 
-  private Z t(final long n, final long m) {
+  protected Z t(final long n, final long m) {
     return Binomial.binomial(2 * n, n).multiply(Binomial.binomial(n, m)).divide(Binomial.binomial(2 * m, m));
   }
 

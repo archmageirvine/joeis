@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020358 Numbers n such that continued fraction for sqrt(n) has period 19.
+ * A020358 Numbers k such that the continued fraction for sqrt(k) has period 19.
  * @author Sean A. Irvine
  */
 public class A020358 implements Sequence {

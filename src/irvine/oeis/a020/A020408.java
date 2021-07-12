@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020408 Numbers n such that continued fraction for sqrt(n) has period 69.
+ * A020408 Numbers k such that the continued fraction for sqrt(k) has period 69.
  * @author Sean A. Irvine
  */
 public class A020408 implements Sequence {

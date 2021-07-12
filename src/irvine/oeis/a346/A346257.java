@@ -3,7 +3,7 @@ package irvine.oeis.a346;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A344519 Numbers that are the sum of five fifth powers in exactly four ways.
+ * A346257 Numbers that are the sum of five fifth powers in exactly five ways.
  * @author Sean A. Irvine
  */
 public class A346257 extends LimitedSumOfLikePowersSequence {

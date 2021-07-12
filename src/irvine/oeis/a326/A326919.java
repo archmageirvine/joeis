@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A326919 Decimal expansion of Sum_{k>=1} Kronecker(-7,k)/k.
+ * A326919 Decimal expansion of Sum_{k&gt;=1} Kronecker(-7,k)/k.
  * @author Georg Fischer
  */
 public class A326919 extends DecimalExpansionSequence {

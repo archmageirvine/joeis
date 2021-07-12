@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A282821 Decimal expansion of Sum_{k >= 0} (4/(4*k+1) - 3/(3*k+1) + 2/(2*k+1) - 1/(k+1)).
+ * A282821 Decimal expansion of Sum_{k &gt;= 0} (4/(4*k+1) - 3/(3*k+1) + 2/(2*k+1) - 1/(k+1)).
  * @author Georg Fischer
  */
 public class A282821 extends DecimalExpansionSequence {

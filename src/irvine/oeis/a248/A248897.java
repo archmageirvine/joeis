@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A248897 Decimal expansion of Sum_{i >= 0} (i!)^2/(2*i+1)!.
+ * A248897 Decimal expansion of Sum_{i &gt;= 0} (i!)^2/(2*i+1)!.
  * @author Georg Fischer
  */
 public class A248897 extends DecimalExpansionSequence {

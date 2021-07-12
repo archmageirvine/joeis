@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A127198 Value of the Foxtrot sum Sum_{k>=1} (-1)^(k + 1)*k^2/(k^3 + 1).
+ * A127198 Value of the Foxtrot sum Sum_{k&gt;=1} (-1)^(k + 1)*k^2/(k^3 + 1).
  * @author Georg Fischer
  */
 public class A127198 extends DecimalExpansionSequence {

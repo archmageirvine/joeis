@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007962 Largest odd number a(n) such that 9,11,...,a(n) are sums of 3 of first n odd primes.
+ * A007962 a(n) is the largest odd number k such that 9, 11, ..., k are sums of 3 of first n odd primes.
  * @author Sean A. Irvine
  */
 public class A007962 implements Sequence {

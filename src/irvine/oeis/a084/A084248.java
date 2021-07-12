@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A084248 Decimal expansion of c = Product_{k>=1} (1 + 1/t(k)) where t(k) = k(k+1)/2 is the k-th triangular number.
+ * A084248 Decimal expansion of c = Product_{k&gt;=1} (1 + 1/t(k)) where t(k) = k(k+1)/2 is the k-th triangular number.
  * @author Georg Fischer
  */
 public class A084248 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A258407 Decimal expansion of Integral_{x=0..1} Product_{k>=1} (1-x^k)^3 dx.
+ * A258407 Decimal expansion of Integral_{x=0..1} Product_{k&gt;=1} (1-x^k)^3 dx.
  * @author Georg Fischer
  */
 public class A258407 extends DecimalExpansionSequence {

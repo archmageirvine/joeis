@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A248750 Decimal expansion of limit of the imaginary part of f(1+i,n), where f(x, 0) = 1 and f(x,n) = x + 1/f(x,n-1).
+ * A248750 Decimal expansion of limit of the imaginary part of f(1+i,n), where f(x,0) = 1 and f(x,n) = x + 1/f(x,n-1).
  * @author Georg Fischer
  */
 public class A248750 extends DecimalExpansionSequence {

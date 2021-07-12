@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031615 Numbers n such that continued fraction for sqrt(n) has odd period and central term 27.
+ * A031615 Numbers k such that the continued fraction for sqrt(k) has odd period and central terms 27.
  * @author Sean A. Irvine
  */
 public class A031615 extends A031414 {

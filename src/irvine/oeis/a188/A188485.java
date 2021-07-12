@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188485 Decimal expansion of (3+sqrt(17))/4, which has periodic continued fractions [1, 1, 3, 1, 1, 3, 1, 1, 3,...] and [3/2, 3, 3/2, 3, 3/2, ...].
+ * A188485 Decimal expansion of (3+sqrt(17))/4, which has periodic continued fractions [1,1,3,1,1,3,1,1,3,...] and [3/2, 3, 3/2, 3, 3/2, ...].
  * @author Georg Fischer
  */
 public class A188485 extends DecimalExpansionSequence {

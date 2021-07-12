@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A183142 Floor(n/s), where s=(3+sqrt(3))/2.
+ * A183142 Beatty sequence for 2/(3+sqrt(3)).
  * @author Georg Fischer
  */
 public class A183142 extends BeattySequence {

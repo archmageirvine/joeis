@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A242023 Decimal expansion of Sum(n >= 1, (-1)^(n + 1)*24/(n*(n + 1)*(n + 2)*(n + 3)).
+ * A242023 Decimal expansion of Sum(n &gt;= 1, (-1)^(n + 1)*24/(n*(n + 1)*(n + 2)*(n + 3)).
  * @author Georg Fischer
  */
 public class A242023 extends DecimalExpansionSequence {

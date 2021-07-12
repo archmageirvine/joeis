@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073016 Decimal expansion of Sum_{n>=1} 1/binomial(2n,n).
+ * A073016 Decimal expansion of Sum_{n&gt;=1} 1/binomial(2n,n).
  * @author Georg Fischer
  */
 public class A073016 extends DecimalExpansionSequence {

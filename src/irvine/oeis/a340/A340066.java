@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A340066 Decimal expansion of the Product_{p>=3} 1+p^2/((p-1)^2*(p+1)^2) where p are successive prime numbers A000040.
+ * A340066 Decimal expansion of the Product_{p&gt;=3} 1+p^2/((p-1)^2*(p+1)^2) where p are successive prime numbers A000040.
  * @author Georg Fischer
  */
 public class A340066 extends DecimalExpansionSequence {

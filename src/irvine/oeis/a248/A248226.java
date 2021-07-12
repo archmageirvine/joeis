@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248226 10^n - 3^n.
+ * A248226 a(n) = 10^n - 3^n.
  * @author Sean A. Irvine
  */
 public class A248226 extends LinearRecurrence {

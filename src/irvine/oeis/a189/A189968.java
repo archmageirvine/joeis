@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A189968 Decimal expansion of (5+sqrt(85))/6, which has periodic continued fractions [2, 2, 1, 2, 2, 1,...] and [5/2, 1, 5/2, 1, ...].
+ * A189968 Decimal expansion of (5+sqrt(85))/6, which has periodic continued fractions [2,2,1,2,2,1,...] and [5/2, 1, 5/2, 1, ...].
  * @author Georg Fischer
  */
 public class A189968 extends DecimalExpansionSequence {

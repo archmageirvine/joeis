@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A098689 Decimal expansion of Sum_{n>=0} Fibonacci(n)/n!.
+ * A098689 Decimal expansion of Sum_{n&gt;=0} Fibonacci(n)/n!.
  * @author Georg Fischer
  */
 public class A098689 extends DecimalExpansionSequence {

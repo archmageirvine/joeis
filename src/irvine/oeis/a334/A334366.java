@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A334366 Decimal expansion of Sum_{k>=0} 1/(4*k)!!.
+ * A334366 Decimal expansion of Sum_{k&gt;=0} 1/(4*k)!!.
  * @author Georg Fischer
  */
 public class A334366 extends DecimalExpansionSequence {

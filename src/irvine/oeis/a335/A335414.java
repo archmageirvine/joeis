@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A335414 Decimal expansion of Sum_{k>=1} 1/(k*sinh(Pi*k)).
+ * A335414 Decimal expansion of Sum_{k&gt;=1} 1/(k*sinh(Pi*k)).
  * @author Georg Fischer
  */
 public class A335414 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A144663 Decimal expansion of Product_{n>=2} (n^4-1)/(n^4+1).
+ * A144663 Decimal expansion of Product_{n&gt;=2} (n^4-1)/(n^4+1).
  * @author Georg Fischer
  */
 public class A144663 extends DecimalExpansionSequence {

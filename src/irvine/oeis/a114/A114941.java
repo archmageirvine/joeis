@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A114941 Decimal expansion of the infinite sum Sum_{k>=1} cos(k)/k!.
+ * A114941 Decimal expansion of the infinite sum Sum_{k&gt;=1} cos(k)/k!.
  * @author Georg Fischer
  */
 public class A114941 extends DecimalExpansionSequence {

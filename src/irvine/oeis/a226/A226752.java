@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A226752 Possible total sums of pandigital three-digit primes.
+ * A226752 Possible total sums of three 3-digit primes that together use all nonzero digits 1-9.
  * @author Georg Fischer
  */
 public class A226752 extends FiniteSequence {

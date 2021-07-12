@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A113319 Decimal expansion of Sum_{k>=0} 1/(k^2+1).
+ * A113319 Decimal expansion of Sum_{k&gt;=0} 1/(k^2+1).
  * @author Georg Fischer
  */
 public class A113319 extends DecimalExpansionSequence {

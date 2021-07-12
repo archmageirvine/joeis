@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A069284 Decimal expansion of li(2) = gamma + log(log(2)) + Sum_{k>=1} log(2)^k / ( k*k! ).
+ * A069284 Decimal expansion of li(2) = gamma + log(log(2)) + Sum_{k&gt;=1} log(2)^k / ( k*k! ).
  * @author Georg Fischer
  */
 public class A069284 extends DecimalExpansionSequence {

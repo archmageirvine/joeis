@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073017 Decimal expansion of the Product_{n>=1} (1 + 1/n^3).
+ * A073017 Decimal expansion of the Product_{n&gt;=1} (1 + 1/n^3).
  * @author Georg Fischer
  */
 public class A073017 extends DecimalExpansionSequence {

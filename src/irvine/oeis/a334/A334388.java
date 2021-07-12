@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A334388 Decimal expansion of Sum_{k>=1} A007953(k) / (k*(k+1)) where A007953(k) is the sum of digits of the integer k.
+ * A334388 Decimal expansion of Sum_{k&gt;=1} A007953(k) / (k*(k+1)) where A007953(k) is the sum of digits of the integer k.
  * @author Georg Fischer
  */
 public class A334388 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004086;
 
 /**
- * A056965 n -&gt; n - reversal of digits of n.
+ * A056965 a(n) = n - (reversal of digits of n).
  * @author Georg Fischer
  */
 public class A056965 implements Sequence {

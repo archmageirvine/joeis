@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106521 Numbers a(n) such that Sum[k=0..10, (a(n)+k)^2 ] is square.
+ * A106521 Numbers m such that Sum_{k=0..10} (m+k)^2 is a square.
  * @author Sean A. Irvine
  */
 public class A106521 extends LinearRecurrence {

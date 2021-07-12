@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020439 Numbers n such that continued fraction for sqrt(n) has period 100.
+ * A020439 Numbers k such that the continued fraction for sqrt(k) has period 100.
  * @author Sean A. Irvine
  */
 public class A020439 implements Sequence {

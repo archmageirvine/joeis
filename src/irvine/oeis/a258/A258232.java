@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A258232 Decimal expansion of Integral_{x=0..1} Product_{k>=1} (1-x^k) dx.
+ * A258232 Decimal expansion of Integral_{x=0..1} Product_{k&gt;=1} (1-x^k) dx.
  * @author Georg Fischer
  */
 public class A258232 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031777 Numbers n such that least term in period of continued fraction for sqrt(n) is 99.
+ * A031777 Numbers k such that the least term in the periodic part of the continued fraction for sqrt(k) is 99.
  * @author Sean A. Irvine
  */
 public class A031777 extends A031424 {

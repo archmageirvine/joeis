@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A109219 Decimal expansion of Product_{n >= 2} 1-n^(-3).
+ * A109219 Decimal expansion of Product_{n &gt;= 2} 1-n^(-3).
  * @author Georg Fischer
  */
 public class A109219 extends DecimalExpansionSequence {

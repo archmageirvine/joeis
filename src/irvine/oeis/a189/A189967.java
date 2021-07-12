@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A189967 Decimal expansion of (7+sqrt(105))/4, which has periodic continued fractions [4, 3, 4, 1, 4, 3, 4, 1...] and [7/2, 1, 7/2, 1, ...].
+ * A189967 Decimal expansion of (7+sqrt(105))/4, which has periodic continued fractions [4,3,4,1,4,3,4,1...] and [7/2, 1, 7/2, 1, ...].
  * @author Georg Fischer
  */
 public class A189967 extends DecimalExpansionSequence {

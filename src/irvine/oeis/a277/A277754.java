@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A277754 Decimal expansion of Sum_{n>=1} sin((n*Pi)/3)^n.
+ * A277754 Decimal expansion of Sum_{n&gt;=1} sin((n*Pi)/3)^n.
  * @author Georg Fischer
  */
 public class A277754 extends DecimalExpansionSequence {

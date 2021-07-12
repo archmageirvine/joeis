@@ -8,7 +8,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A048838 Decimal expansion of Sum_{n &gt;= 2} (n^3/Product_{i &gt;= 2} K(i)), where K(n) is the Kempner function A002034.
+ * A048838 Decimal expansion of Sum_{n &gt;= 2} (n^3 / Product_{i=2..n} K(i)), where K(i) is the Kempner function A002034.
  * @author Sean A. Irvine
  */
 public class A048838 extends DecimalExpansionSequence {

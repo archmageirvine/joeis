@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A232883 Decimal expansion of sum( i>=0, 1/(2*i^2+1) ).
+ * A232883 Decimal expansion of sum( i&gt;=0, 1/(2*i^2+1) ).
  * @author Georg Fischer
  */
 public class A232883 extends DecimalExpansionSequence {

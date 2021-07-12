@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.BeattySequence;
 
 /**
- * A127450 Beatty sequence for e^Pi - Pi^e, complement of A127451.
+ * A127450 Beatty sequence for 1/(e^Pi - Pi^e), complement of A127451.
  * @author Georg Fischer
  */
 public class A127450 extends BeattySequence {

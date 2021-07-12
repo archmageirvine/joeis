@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A339530 Decimal expansion of Sum_{k>=1} (zeta(8*k)-1).
+ * A339530 Decimal expansion of Sum_{k&gt;=1} (zeta(8*k)-1).
  * @author Georg Fischer
  */
 public class A339530 extends DecimalExpansionSequence {

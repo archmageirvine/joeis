@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A258148 Decimal expansion of (2 - 3*sqrt(3)/Pi)/6: ratio of the area of a circular segment with central angle Pi/3 and the area of the corresponding circular half-disk
+ * A258148 Decimal expansion of (2 - 3*sqrt(3)/Pi)/6: ratio of the area of a circular segment with central angle Pi/3 and the area of the corresponding circular half-disk.
  * @author Georg Fischer
  */
 public class A258148 extends DecimalExpansionSequence {

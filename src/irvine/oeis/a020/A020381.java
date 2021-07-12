@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020381 Numbers n such that continued fraction for sqrt(n) has period 42.
+ * A020381 Numbers k such that the continued fraction for sqrt(k) has period 42.
  * @author Sean A. Irvine
  */
 public class A020381 implements Sequence {

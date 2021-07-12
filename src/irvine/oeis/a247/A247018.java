@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A247018 a(n) = 3*n^2 + n + 3.
+ * A247018 Numbers of the form 3*z^2 + z + 3 for some integer z.
  * @author Georg Fischer
  */
 public class A247018 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A247675 Decimal expansion of the integral over the square [-1, 1]x[-1, 1] of 1/sqrt(1+x^2+y^2) dx dy.
+ * A247675 Decimal expansion of the integral over the square [-1,1]x[-1,1] of 1/sqrt(1+x^2+y^2) dx dy.
  * @author Georg Fischer
  */
 public class A247675 extends DecimalExpansionSequence {

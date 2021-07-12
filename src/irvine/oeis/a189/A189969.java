@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A189969 Decimal expansion of (7 + sqrt(133))/6, which has periodic continued fractions [3, 11, 3, 1, 3, 11, 3, 1,...] and [7/3, 1, 7/3, 1, ...].
+ * A189969 Decimal expansion of (7 + sqrt(133))/6, which has periodic continued fractions [3,11,3,1,3,11,3,1,...] and [7/3, 1, 7/3, 1, ...].
  * @author Georg Fischer
  */
 public class A189969 extends DecimalExpansionSequence {

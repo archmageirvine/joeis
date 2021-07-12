@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A122143 Decimal expansion of Sum_{k >= 1} cos(k)/k^2.
+ * A122143 Decimal expansion of Sum_{k &gt;= 1} cos(k)/k^2.
  * @author Georg Fischer
  */
 public class A122143 extends DecimalExpansionSequence {

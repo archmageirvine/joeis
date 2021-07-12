@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A240719 Numbers n such that 2^n == 1 (mod (n+1)^2).
+ * A240719 Numbers k such that 2^k == 1 (mod (k+1)^2).
  *
  * @author Georg Fischer
  */

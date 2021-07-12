@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A260230 Decimal expansion of S(Pi), where S(x) is the series Sum_{n>=1} (-1)^(n+1)*coth(n*x)/n.
+ * A260230 Decimal expansion of S(Pi), where S(x) is the series Sum_{n&gt;=1} (-1)^(n+1)*coth(n*x)/n.
  * @author Georg Fischer
  */
 public class A260230 extends DecimalExpansionSequence {

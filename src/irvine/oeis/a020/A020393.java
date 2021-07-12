@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020393 Numbers n such that continued fraction for sqrt(n) has period 54.
+ * A020393 Numbers k such that the continued fraction for sqrt(k) has period 54.
  * @author Sean A. Irvine
  */
 public class A020393 implements Sequence {

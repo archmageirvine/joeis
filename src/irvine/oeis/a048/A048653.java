@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048653 Numbers n such that the decimal digits of n^2 can be partitioned into two or more nonzero squares.
+ * A048653 Numbers k such that the decimal digits of k^2 can be partitioned into two or more nonzero squares.
  * @author Sean A. Irvine
  */
 public class A048653 implements Sequence {

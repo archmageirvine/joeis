@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A339529 Decimal expansion of Sum_{k>=1} (zeta(6*k)-1).
+ * A339529 Decimal expansion of Sum_{k&gt;=1} (zeta(6*k)-1).
  * @author Georg Fischer
  */
 public class A339529 extends DecimalExpansionSequence {

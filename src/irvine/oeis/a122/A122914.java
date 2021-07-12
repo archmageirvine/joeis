@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A122914 Decimal expansion of (1 + log(2 Pi))/2, the entropy of the standard normal distribution.
+ * A122914 Decimal expansion of (1 + log(2*Pi))/2, the entropy of the standard normal distribution.
  * @author Georg Fischer
  */
 public class A122914 extends DecimalExpansionSequence {

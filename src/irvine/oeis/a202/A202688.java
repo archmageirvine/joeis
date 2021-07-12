@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A202688 Decimal expansion of Sum_{n>=0} (-1)^(n+1) / n!!.
+ * A202688 Decimal expansion of Sum_{n&gt;=0} (-1)^(n+1) / n!!.
  * @author Georg Fischer
  */
 public class A202688 extends DecimalExpansionSequence {

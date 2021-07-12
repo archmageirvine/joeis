@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A302139 Numbers n such that A111336(n) = 4.
+ * A302139 Numbers k such that A111336(k) = 4.
  * @author Georg Fischer
  */
 public class A302139 extends HolonomicRecurrence {

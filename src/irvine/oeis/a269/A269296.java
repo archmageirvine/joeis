@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A269296 Decimal expansion of Sum_{k>=0} 1/(5k)!.
+ * A269296 Decimal expansion of Sum_{k&gt;=0} 1/(5k)!.
  * @author Georg Fischer
  */
 public class A269296 extends DecimalExpansionSequence {

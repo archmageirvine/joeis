@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195303 Decimal expansion of normalized Philo sum, Philo(ABC,I), where I=incenter of a 1, 1,sqrt(2) right triangle ABC.
+ * A195303 Decimal expansion of normalized Philo sum, Philo(ABC,I), where I=incenter of a 1,1,sqrt(2) right triangle ABC.
  * @author Georg Fischer
  */
 public class A195303 extends DecimalExpansionSequence {

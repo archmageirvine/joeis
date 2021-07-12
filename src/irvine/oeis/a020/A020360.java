@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020360 Numbers n such that continued fraction for sqrt(n) has period 21.
+ * A020360 Numbers k such that the continued fraction for sqrt(k) has period 21.
  * @author Sean A. Irvine
  */
 public class A020360 implements Sequence {

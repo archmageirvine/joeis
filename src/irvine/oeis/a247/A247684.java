@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A247684 Decimal expansion of the integral over the first quadrant (x>0, y>0) of sqrt(x^2 + x*y + y^2)*exp(-x-y) dx dy.
+ * A247684 Decimal expansion of the integral over the first quadrant (x&gt;0, y&gt;0) of sqrt(x^2 + x*y + y^2)*exp(-x-y) dx dy.
  * @author Georg Fischer
  */
 public class A247684 extends DecimalExpansionSequence {

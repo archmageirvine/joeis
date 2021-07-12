@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A181048 Decimal expansion of (log(1+sqrt(2))+Pi/2)/(2*sqrt(2)) = Sum_{k>=0} (-1)^k/(4*k+1).
+ * A181048 Decimal expansion of (log(1+sqrt(2))+Pi/2)/(2*sqrt(2)) = Sum_{k&gt;=0} (-1)^k/(4*k+1).
  * @author Georg Fischer
  */
 public class A181048 extends DecimalExpansionSequence {

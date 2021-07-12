@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A271563 Decimal expansion of Sum_{j>=0} Sum_{i>=0} (-1/4)^i*(-1)^j*binomial(2i,i)/((2j+1)(i+2j+2)).
+ * A271563 Decimal expansion of Sum_{j&gt;=0} Sum_{i&gt;=0} (-1/4)^i*(-1)^j*binomial(2i,i)/((2j+1)(i+2j+2)).
  * @author Georg Fischer
  */
 public class A271563 extends DecimalExpansionSequence {

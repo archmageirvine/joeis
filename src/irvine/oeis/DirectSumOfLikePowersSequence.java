@@ -14,12 +14,12 @@ public class DirectSumOfLikePowersSequence implements Sequence {
   // This can be faster for situations where most numbers have the required
   // number of representations.
 
-  private static class Representations {
+  private static final class Representations {
 
-    private int mPower;
+    private final int mPower;
+    private final long mWaysExit;
     private Z[] mPowers;
     private long mCount = 0;
-    private long mWaysExit;
 
     private Representations(final int power, final long ways) {
       mPower = power;

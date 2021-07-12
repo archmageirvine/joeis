@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A048890 extends A000040 {
 
-  private static long[] INVERT = {0, 1, -1, -1, -1, -1, 9, -1, 8, 6};
+  private static final long[] INVERT = {0, 1, -1, -1, -1, -1, 9, -1, 8, 6};
 
   @Override
   public Z next() {

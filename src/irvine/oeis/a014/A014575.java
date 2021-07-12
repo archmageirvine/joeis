@@ -15,6 +15,10 @@ public class A014575 implements Sequence {
   private Z mJump = Z.valueOf(10000);
   private int mHalfLength = 2;
 
+  protected Z select(final Z n, final Z d) {
+    return n;
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -26,7 +30,8 @@ public class A014575 implements Sequence {
       }
       final int[] counts = ZUtils.digitCounts(mN);
       final Z s = mN.sqrt();
-      for (final Z d : Cheetah.factor(mN).divisors()) {
+      // We need sorted divisors for A048933 which extends this class
+      for (final Z d : Cheetah.factor(mN).divisorsSorted()) {
         if (d.compareTo(s) <= 0 && d.toString().length() == mHalfLength) {
           final Z e = mN.divide(d);
           if (d.mod(10) != 0 || e.mod(10) != 0) {
@@ -40,7 +45,7 @@ public class A014575 implements Sequence {
               }
             }
             if (ok) {
-              return mN;
+              return select(mN, d);
             }
           }
         }

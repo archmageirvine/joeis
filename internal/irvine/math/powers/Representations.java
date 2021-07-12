@@ -14,7 +14,7 @@ final class Representations {
   private final Z[] mPowers;
 
   private Representations(final Z n, final int power) {
-    mPowers = new Z[n.root(power).intValueExact() + 10];
+    mPowers = new Z[n.root(power).intValueExact() + 1];
     for (int k = 0; k < mPowers.length; ++k) {
       mPowers[k] = Z.valueOf(k).pow(power);
     }
@@ -27,12 +27,16 @@ final class Representations {
       }
       return;
     }
+    if (target.signum() <= 0) {
+      return;
+    }
     final int l = Arrays.binarySearch(mPowers, target.divide(m));
-    final int lo = l < 0 ? 2 - l : l;
+    final int lo = l < 0 ? -2 - l : l;
     final int h = Arrays.binarySearch(mPowers, target);
-    final int hi = h < 0 ? 2 - h : h;
+    final int hi = h < 0 ? -2 - h : h;
     //System.out.println(m + " " + prev + " [" + lo + "," + hi + "]");
     for (int v = Math.min(hi, prev); v >= lo; --v) {
+      //System.out.println("Trying " + m + "th term = " + v);
       t[m - 1] = v;
       search(t, target.subtract(mPowers[v]), m - 1, v);
     }

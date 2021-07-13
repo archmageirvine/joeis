@@ -1,24 +1,25 @@
 package irvine.oeis.a277;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ZPolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A277723 a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265).
  * @author Sean A. Irvine
  */
-public class A277723 implements Sequence {
-
-  private static final ZPolynomial POLY = new ZPolynomial(Polynomial.create(-1, 5, -7, 1));
-  private static final CR TAU3 = POLY.inverseMonotone(CR.SIX, CR.SEVEN).execute(CR.ZERO);
+public class A277723 extends PolynomialRootExpansionSequence {
 
   private long mN = -1;
 
+  /** Construct the sequence. */
+  public A277723() {
+    super(Polynomial.create(-1, 5, -7, 1), CR.SIX, CR.SEVEN);
+  }
+
   @Override
   public Z next() {
-    return TAU3.multiply(++mN).floor();
+    return getCR().multiply(++mN).floor();
   }
 }

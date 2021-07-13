@@ -9,8 +9,6 @@ import irvine.math.z.Z;
  */
 public class ZPolynomial extends UnaryCRFunction {
 
-  // Using the inverseMonotone method on this class it is possible to find roots of polynomials
-
   private final Polynomial<Z> mPoly;
 
   /**

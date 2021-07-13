@@ -1,24 +1,17 @@
 package irvine.oeis.a058;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ZPolynomial;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A058265 Decimal expansion of the tribonacci constant t, the real root of x^3 - x^2 - x - 1.
  * @author Sean A. Irvine
  */
-public class A058265 extends DecimalExpansionSequence {
+public class A058265 extends PolynomialRootExpansionSequence {
 
-  // This is a nice example of finding roots of a polynomial using computable reals.
-
-  private static final ZPolynomial POLY = new ZPolynomial(Polynomial.create(-1, -1, -1, 1));
-  private static final CR N = POLY.inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A058265() {
+    super(Polynomial.create(-1, -1, -1, 1), CR.ONE, CR.TWO);
   }
 }
-

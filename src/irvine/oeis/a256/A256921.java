@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A256921 Decimal expansion of Sum_{k>=2} zeta(k)/(k*2^k).
+ * A256921 Decimal expansion of Sum_{k&gt;=2} zeta(k)/(k*2^k).
  * @author Georg Fischer
  */
 public class A256921 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A114940 Decimal expansion of the infinite sum Sum_{k>=1} sin(k)/k!.
+ * A114940 Decimal expansion of the infinite sum Sum_{k&gt;=1} sin(k)/k!.
  * @author Georg Fischer
  */
 public class A114940 extends DecimalExpansionSequence {

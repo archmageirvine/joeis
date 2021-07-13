@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A243407 Decimal expansion of Pálfy's constant c_3 = 5/3 + log_9(32).
+ * A243407 Decimal expansion of P\u00e1lfy's constant c_3 = 5/3 + log_9(32).
  * @author Georg Fischer
  */
 public class A243407 extends DecimalExpansionSequence {

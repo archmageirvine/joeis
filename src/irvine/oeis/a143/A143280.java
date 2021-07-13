@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A143280 Decimal expansion of m(2) = Sum_{n>=0} 1/n!!.
+ * A143280 Decimal expansion of m(2) = Sum_{n&gt;=0} 1/n!!.
  * @author Georg Fischer
  */
 public class A143280 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A211883 Decimal expansion of the real part of -(i^e)
+ * A211883 Decimal expansion of the real part of -(i^e).
  * @author Georg Fischer
  */
 public class A211883 extends DecimalExpansionSequence {

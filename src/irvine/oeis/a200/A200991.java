@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A200991 Decimal expansion of square root of 221/25
+ * A200991 Decimal expansion of square root of 221/25.
  * @author Georg Fischer
  */
 public class A200991 extends DecimalExpansionSequence {

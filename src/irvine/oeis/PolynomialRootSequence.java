@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 /**
  * Generates the power series of some root of a polynomial.
- * The r'th root of <code>sum(p(k)*x^k, k=0..d)</code> is computed by a holonomic recurrence
+ * The r-th root of <code>sum(p(k)*x^k, k=0..d)</code> is computed by a holonomic recurrence
  * as described in <a href="https://www2.mpia-hd.mpg.de/~mathar/public/fischer20200119.pdf">here</a>,
  * Theorem 1, with the annihilator (r is positive here - the article treats 1/root(p)):
  * <code>sum((-r*n + r*k + k)*p(k)*a(n-k), k=0..d) = 0</code>.

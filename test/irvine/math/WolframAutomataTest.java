@@ -14,16 +14,17 @@ public class WolframAutomataTest extends TestCase {
     for (int k = 0; k < 100; ++k) {
       wa.next();
     }
-    assertEquals("110010001110011110001111010000100010111011110110010010001010000011101000101000101011100101111101010001011111101010110001010000110101000101000110011000011110111100010110111101101101111001010101110010001", wa.toString());
+    assertEquals("100010011101010100111101101101111011010001111011110000110011000101000101011000010100011010101111110100010101111101001110101000101000101110000010100010010011011110111010001000010111100011110011100010011", wa.next().toString(2));
   }
 
   public void test137() {
     final WolframAutomata wa = new WolframAutomata(137);
-    wa.next();
-    assertEquals("000", wa.toString());
-    wa.next();
-    assertEquals("00101", wa.toString());
-    wa.next();
-    assertEquals("0000011", wa.toString());
+    for (int k = 0; k < 10; ++k) {
+      System.out.println(wa.next().toString(2));
+    }
+    assertEquals("1", wa.next().toString(2));
+    assertEquals("0", wa.next().toString(2));
+    assertEquals("101", wa.next().toString(2));
+    assertEquals("11", wa.next().toString(2));
   }
 }

@@ -289,6 +289,12 @@
      <Match classregex="irvine.oeis.a048.A048200">
        <BugCode name="WOC"/>
      </Match>
+     <Match classregex="irvine.oeis.a048.A048823">
+       <BugCode name="WOC"/>
+     </Match>
+     <Match classregex="irvine.oeis.a048.A048825">
+       <BugCode name="WOC"/>
+     </Match>
      <Match classregex="irvine.oeis.global.OeisTree">
        <BugCode name="LII"/>
      </Match>

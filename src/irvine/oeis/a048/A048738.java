@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A048738 implements Sequence {
 
-  private int mN = -1;
+  private int mN = 0;
   private final long mC = Lattices.Z2.neighbour(Lattices.Z2.origin(), 0);
   private final ParallelWalker mWalker = new ParallelWalker(8,
     () -> new SelfAvoidingWalker(Lattices.Z2) {

@@ -11,9 +11,13 @@ import irvine.oeis.Sequence;
  */
 public class A014575 implements Sequence {
 
-  private Z mN = Z.valueOf(1259);
+  private Z mN = Z.valueOf(start() - 1);
   private Z mJump = Z.valueOf(10000);
   private int mHalfLength = 2;
+
+  protected long start() {
+    return 1260;
+  }
 
   protected Z select(final Z n, final Z d) {
     return n;

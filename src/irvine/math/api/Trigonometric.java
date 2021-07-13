@@ -77,4 +77,11 @@ public interface Trigonometric<E> {
    * @return arccotangent
    */
   E acot(final E n);
+
+  /**
+   * Returns the arcsecant of a number.
+   * @param n element
+   * @return arcsecant
+   */
+  E asec(final E n);
 }

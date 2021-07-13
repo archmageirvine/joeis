@@ -438,6 +438,11 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
   }
 
   @Override
+  public C asec(final C n) {
+    return acos(inverse(n));
+  }
+
+  @Override
   public C gamma(final C z) {
     return ComplexGamma.gamma(z);
   }

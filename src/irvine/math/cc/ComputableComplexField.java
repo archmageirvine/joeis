@@ -350,7 +350,7 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
     final CR a = r.add(s);
     final CR asinb = ComputableReals.SINGLETON.asin(r.subtract(s));
     final CR alog = a.add(a.multiply(a).subtract(CR.ONE).sqrt()).log();
-    return new CC(CR.HALF_PI.subtract(asinb), y.signum() < 0 || (y.signum() == 0 && x.compareTo(CR.ONE) > 0) ? alog : alog.negate());
+    return new CC(CR.HALF_PI.subtract(asinb), y.signum(32) < 0 || (y.signum(32) == 0 && x.compareTo(CR.ONE) > 0) ? alog : alog.negate());
   }
 
   private static final CC TWO_I = new CC(CR.ZERO, CR.TWO);
@@ -366,6 +366,11 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
   @Override
   public CC acot(final CC z) {
     return subtract(new CC(CR.HALF_PI), atan(z));
+  }
+
+  @Override
+  public CC asec(final CC z) {
+    return acos(inverse(z));
   }
 
   @Override

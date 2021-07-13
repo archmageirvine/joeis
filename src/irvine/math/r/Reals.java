@@ -209,6 +209,11 @@ public final class Reals extends AbstractOrderedField<Double> implements Exp<Dou
   }
 
   @Override
+  public Double asec(final Double n) {
+    return Math.acos(1.0 / n);
+  }
+
+  @Override
   public Double gamma(final Double n) {
     return irvine.math.r.Gamma.gamma(n);
   }

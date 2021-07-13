@@ -184,6 +184,11 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
   }
 
   @Override
+  public CR asec(final CR n) {
+    return acos(n.inverse());
+  }
+
+  @Override
   public CR atan(final CR n) {
     return UnaryCRFunction.ATAN.execute(n);
   }

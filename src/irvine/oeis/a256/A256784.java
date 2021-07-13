@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A256784 Decimal expansion of the generalized Euler constant gamma(5, 12) (negated).
+ * A256784 Decimal expansion of the generalized Euler constant gamma(5,12) (negated).
  * @author Georg Fischer
  */
 public class A256784 extends DecimalExpansionSequence {

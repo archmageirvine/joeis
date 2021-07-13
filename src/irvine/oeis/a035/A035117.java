@@ -20,7 +20,7 @@ public class A035117 extends A000796 {
 
   @Override
   public Z next() {
-    if (++mN < mLast) {
+    if (++mN <= mLast) {
       return Z.valueOf(mLastPos);
     }
     while (true) {

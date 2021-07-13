@@ -3,7 +3,7 @@ package irvine.oeis.a346;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A346282.
+ * A346282 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A346282 extends LimitedSumOfLikePowersSequence {

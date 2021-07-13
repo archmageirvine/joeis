@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000006;
 
 /**
- * A096494 Largest value in repeating part of continued fraction of square root of n-th prime.
+ * A096494 Largest value in the periodic part of the continued fraction of sqrt(prime(n)).
  * @author Georg Fischer
  */
 public class A096494 implements Sequence {

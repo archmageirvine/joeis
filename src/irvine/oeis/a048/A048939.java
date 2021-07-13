@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014575;
 
 /**
- * A048939.
+ * A048939 10-digit vampire numbers (definition 2).
  * @author Sean A. Irvine
  */
 public class A048939 extends A014575 {

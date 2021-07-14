@@ -8,6 +8,8 @@ import irvine.oeis.LimitedSumOfLikePowersSequence;
  */
 public class A051167 extends LimitedSumOfLikePowersSequence {
 
+  // This is too slow to actually get any terms in reasonable time
+
   /** Construct the sequence. */
   public A051167() {
     super(3, 2, 5);

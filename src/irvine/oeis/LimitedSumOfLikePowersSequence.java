@@ -1,5 +1,11 @@
 package irvine.oeis;
 
+import java.io.BufferedOutputStream;
+import java.io.FileDescriptor;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
@@ -117,10 +123,15 @@ public class LimitedSumOfLikePowersSequence implements Sequence {
    * For testing.
    * @param args power, terms, min ways, exact
    */
-  public static void main(final String[] args) {
+  public static void main(final String[] args) throws IOException {
     final Sequence seq = new LimitedSumOfLikePowersSequence(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]), args.length > 3, false);
-    while (true) {
-      System.out.println(seq.next());
+    final byte[] ls = System.lineSeparator().getBytes(StandardCharsets.US_ASCII);
+    try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
+      while (true) {
+        out.write(seq.next().toString().getBytes(StandardCharsets.US_ASCII));
+        out.write(ls);
+        out.flush();
+      }
     }
   }
 }

@@ -12,6 +12,10 @@ public class A008850 implements Sequence {
 
   private Z mN = Z.ZERO;
 
+  protected Z select(final Z x, final Z y) {
+    return x;
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -20,9 +24,9 @@ public class A008850 implements Sequence {
         return Z.ONE;
       }
       final Z sum = Cheetah.factor(mN).square().sigma();
-      sum.root(3); // sets auxiliary
+      final Z r = sum.root(3);
       if (sum.auxiliary() == 1) {
-        return mN;
+        return select(mN, r);
       }
     }
   }

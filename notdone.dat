@@ -1660,3 +1660,5 @@ A048873 Number of non-isomorphic arrangements of n lines in the real projective 
 A048885 Number of nonisomorphic orthogonal arrays OA(4n,4n-1,2,2).
 A048893 Threshold function for orthogonal arrays of strength 2
 A048894 n - 1 - A048893(n)
+A048952 Prime 2-component links with n crossings
+A048953 Prime 3-component links with n crossings

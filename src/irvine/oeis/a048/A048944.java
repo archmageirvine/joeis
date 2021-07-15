@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048944.
+ * A048944 Product of divisors of n is a cube.
  * @author Sean A. Irvine
  */
 public class A048944 implements Sequence {

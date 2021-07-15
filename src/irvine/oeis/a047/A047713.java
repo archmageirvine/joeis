@@ -9,15 +9,19 @@ import irvine.oeis.Sequence;
  */
 public class A047713 implements Sequence {
 
-  private Z mN = Z.valueOf(559);
+  private Z mN = Z.valueOf(119);
+
+  protected Z base() {
+    return Z.TWO;
+  }
 
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(2);
       if (!mN.isProbablePrime()) {
-        final Z r = Z.TWO.modPow(mN.subtract(1).divide2(), mN);
-        final int j = Z.TWO.jacobi(mN);
+        final Z r = base().modPow(mN.subtract(1).divide2(), mN);
+        final int j = base().jacobi(mN);
         if (j == 1 && Z.ONE.equals(r)) {
           return mN;
         }

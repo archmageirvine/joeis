@@ -12,11 +12,13 @@ import irvine.oeis.a051.A051626;
  */
 public class A036275 extends A051626 {
 
-  @Override
-  public Z next() {
+  private static final int[] ZERO = {0};
+
+  // Also needed for A048962
+  protected int[] step() {
     final Z period = super.next();
     if (period.isZero()) {
-      return Z.ZERO;
+      return ZERO;
     }
     final int[] a = new int[period.intValueExact()];
     final int[] b = new int[a.length];
@@ -40,10 +42,18 @@ public class A036275 extends A051626 {
       b[b.length - 1] = n.toZ().intValue();
       n = n.subtract(b[b.length - 1]);
     }
-    // Now only problem is leading 0s
-    while (a[0] == 0) {
-      System.arraycopy(a, 1, a, 0, a.length - 1);
-      a[a.length - 1] = 0;
+    return a;
+  }
+
+  @Override
+  public Z next() {
+    final int[] a = step();
+    if (a.length > 1) {
+      // Now only problem is leading 0s
+      while (a[0] == 0) {
+        System.arraycopy(a, 1, a, 0, a.length - 1);
+        a[a.length - 1] = 0;
+      }
     }
     Z res = Z.ZERO;
     for (final int digit : a) {

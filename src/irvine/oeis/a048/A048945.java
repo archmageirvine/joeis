@@ -2,27 +2,33 @@ package irvine.oeis.a048;
 
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048943 Product of divisors of n is a square.
+ * A048945 Numbers whose product of divisors is a fourth power.
  * @author Sean A. Irvine
  */
-public class A048943 implements Sequence {
+public class A048945 implements Sequence {
+
+  // After Charles R Greathouse IV
 
   private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      final int[] res = new int[4];
       final FactorSequence fs = Cheetah.factor(++mN);
+      long gcd = 0;
+      long prod = 1;
       for (final Z p : fs.toZArray()) {
-        final int e = fs.getExponent(p) & 3;
-        ++res[e];
+        final int e = fs.getExponent(p) & 7;
+        gcd = gcd == 0 ? e : LongUtils.gcd(gcd, e) & 7;
+        prod *= e + 1;
+        prod &= 7;
       }
-      if (res[3] > 0 || res[1] + res[3] > 1 || (res[1] == 0 && res[2] == 0 && res[3] == 0)) {
+      if (((prod * gcd) & 7) == 0) {
         return Z.valueOf(mN);
       }
     }

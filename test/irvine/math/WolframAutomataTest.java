@@ -19,12 +19,9 @@ public class WolframAutomataTest extends TestCase {
 
   public void test137() {
     final WolframAutomata wa = new WolframAutomata(137);
-    for (int k = 0; k < 10; ++k) {
-      System.out.println(wa.next().toString(2));
-    }
     assertEquals("1", wa.next().toString(2));
     assertEquals("0", wa.next().toString(2));
-    assertEquals("101", wa.next().toString(2));
-    assertEquals("11", wa.next().toString(2));
+    assertEquals("10100", wa.next().toString(2));
+    assertEquals("1100000", wa.next().toString(2));
   }
 }

@@ -49,7 +49,7 @@ public class WolframAutomata implements Sequence {
   }
 
   private boolean isSet(final Z set, final int k) {
-    return k < 0 || k >= mLength ? mRow > 0 && mRule[0] : set.testBit(k);
+    return k < 0 || k >= mLength ? mRow > 1 && mRule[0] : set.testBit(k);
   }
 
   @Override
@@ -58,8 +58,7 @@ public class WolframAutomata implements Sequence {
       return mCur;
     }
     Z next = Z.ZERO;
-    mLength += 2;
-    for (int k = 0; k < mLength; ++k) {
+    for (int k = 0; k < mLength + 2; ++k) {
       // get left, centre, right pixels
       final int l = isSet(mCur, k - 2) ? 4 : 0;
       final int c = isSet(mCur, k - 1) ? 2 : 0;
@@ -68,6 +67,7 @@ public class WolframAutomata implements Sequence {
         next = next.setBit(k);
       }
     }
+    mLength += 2;
     ++mRow;
     mCur = next;
     return mCur;
@@ -81,7 +81,7 @@ public class WolframAutomata implements Sequence {
    */
   public static Z step(final int rule, final Z state) {
     final WolframAutomata a = new WolframAutomata(rule, state);
-    a.next();
+    a.next(); // skip the input state
     return a.next();
   }
 }

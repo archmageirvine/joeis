@@ -6,19 +6,19 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A048819 Decimal expansion of one of four fixed points (mod 1) of Minkowski's question mark function.
+ * A048820 Binary expansion of one of four fixed points (mod 1) of Minkowski's question mark function.
  * @author Sean A. Irvine
  */
-public class A048819 extends DecimalExpansionSequence {
+public class A048820 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
-  public A048819() {
+  public A048820() {
     super(0, new UnaryCRFunction() {
       @Override
       public CR execute(final CR x) {
         return new MinkowskiQuestionMark(x).subtract(x);
       }
-    }.inverseMonotone(CR.valueOf("0.2", 10), CR.valueOf("0.45", 10)).execute(CR.ZERO));
+    }.inverseMonotone(CR.valueOf("0.2", 10), CR.valueOf("0.45", 10)).execute(CR.ZERO), 2);
   }
 }
 

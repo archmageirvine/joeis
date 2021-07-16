@@ -159,6 +159,36 @@ public final class Reals extends AbstractOrderedField<Double> implements Exp<Dou
   }
 
   @Override
+  public Double asinh(final Double n) {
+    return Math.log(n + Math.sqrt(n * n + 1));
+  }
+
+  @Override
+  public Double acosh(final Double n) {
+    return Math.log(n + Math.sqrt(n * n - 1));
+  }
+
+  @Override
+  public Double atanh(final Double n) {
+    return 0.5 * Math.log((1 + n) / (1 - n));
+  }
+
+  @Override
+  public Double acoth(final Double n) {
+    return 0.5 * Math.log((1 + n) / (n - 1));
+  }
+
+  @Override
+  public Double asech(final Double n) {
+    return Math.log((1 + Math.sqrt(1 - n * n)) / n);
+  }
+
+  @Override
+  public Double acsch(final Double n) {
+    return Math.log((1 + Math.sqrt(1 + n * n)) / n);
+  }
+
+  @Override
   public Double sin(final Double n) {
     return Math.sin(n);
   }
@@ -211,6 +241,12 @@ public final class Reals extends AbstractOrderedField<Double> implements Exp<Dou
   @Override
   public Double asec(final Double n) {
     return Math.acos(1.0 / n);
+  }
+
+
+  @Override
+  public Double acsc(final Double n) {
+    return Math.asin(1.0 / n);
   }
 
   @Override

@@ -17,9 +17,21 @@ public class PolynomialRootExpansionSequence extends DecimalExpansionSequence {
    * @param poly the polynomial
    * @param lo lower bound
    * @param hi upper bound
+   * @param base base to report expansion in
+   */
+  protected PolynomialRootExpansionSequence(final Polynomial<Z> poly, final CR lo, final CR hi, final int base) {
+    super(0, new ZPolynomial(poly).inverseMonotone(lo, hi).execute(CR.ZERO), base);
+  }
+
+  /**
+   * Construct the decimal expansion of the root of a polynomial. The polynomial must
+   * be monotonically increasing or decreasing in <code>[lo,hi]</code>
+   * @param poly the polynomial
+   * @param lo lower bound
+   * @param hi upper bound
    */
   protected PolynomialRootExpansionSequence(final Polynomial<Z> poly, final CR lo, final CR hi) {
-    super(new ZPolynomial(poly).inverseMonotone(lo, hi).execute(CR.ZERO));
+    this(poly, lo, hi, 10);
   }
 }
 

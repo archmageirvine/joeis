@@ -18,7 +18,7 @@ public class A048819 extends DecimalExpansionSequence {
       public CR execute(final CR x) {
         return new MinkowskiQuestionMark(x).subtract(x);
       }
-    }.inverseMonotone(CR.valueOf("0.2", 10), CR.valueOf("0.45", 10)).execute(CR.ZERO));
+    }.inverseMonotone(CR.valueOf("0.2"), CR.valueOf("0.45")).execute(CR.ZERO));
   }
 }
 

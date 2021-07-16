@@ -395,7 +395,37 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
   public C csch(final C n) {
     return HyperbolicTrigonometricImpl.csch(this, C.TWO, n);
   }
-  
+
+  @Override
+  public C asinh(final C n) {
+    return log(add(n, sqrt(add(multiply(n, n), C.ONE))));
+  }
+
+  @Override
+  public C acosh(final C n) {
+    return log(add(n, sqrt(subtract(multiply(n, n), C.ONE))));
+  }
+
+  @Override
+  public C atanh(final C n) {
+    return multiply(C.HALF, log(divide(add(n, C.ONE), subtract(C.ONE, n))));
+  }
+
+  @Override
+  public C acoth(final C n) {
+    return multiply(C.HALF, log(divide(add(n, C.ONE), subtract(n, C.ONE))));
+  }
+
+  @Override
+  public C asech(final C n) {
+    return log(divide(add(C.ONE, sqrt(subtract(C.ONE, multiply(n, n)))), n));
+  }
+
+  @Override
+  public C acsch(final C n) {
+    return log(divide(add(C.ONE, sqrt(add(C.ONE, multiply(n, n)))), n));
+  }
+
   @Override
   public C asin(final C z) {
     final double x = z.re();
@@ -440,6 +470,11 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
   @Override
   public C asec(final C n) {
     return acos(inverse(n));
+  }
+
+  @Override
+  public C acsc(final C n) {
+    return asin(inverse(n));
   }
 
   @Override

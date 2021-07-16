@@ -84,4 +84,11 @@ public interface Trigonometric<E> {
    * @return arcsecant
    */
   E asec(final E n);
+
+  /**
+   * Returns the arccosecant of a number.
+   * @param n element
+   * @return arccosecant
+   */
+  E acsc(final E n);
 }

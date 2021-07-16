@@ -50,4 +50,46 @@ public interface HyperbolicTrigonometric<E> {
    */
   E csch(final E n);
 
+  /**
+   * Returns the hyperbolic arcsine of a number.
+   * @param n element
+   * @return hyperbolic arcsine
+   */
+  E asinh(final E n);
+
+  /**
+   * Returns the hyperbolic arccosine of a number.
+   * @param n element
+   * @return hyperbolic arccosine
+   */
+  E acosh(final E n);
+
+  /**
+   * Returns the hyperbolic arctangent of a number.
+   * @param n element
+   * @return hyperbolic arctangent
+   */
+  E atanh(final E n);
+
+  /**
+   * Returns the hyperbolic arccotangent of a number.
+   * @param n element
+   * @return hyperbolic arccotangent
+   */
+  E acoth(final E n);
+
+  /**
+   * Returns the hyperbolic arcsecant of a number.
+   * @param n element
+   * @return hyperbolic arcsecant
+   */
+  E asech(final E n);
+
+  /**
+   * Returns the hyperbolic arccosecant of a number.
+   * @param n element
+   * @return hyperbolic arccosecant
+   */
+  E acsch(final E n);
+
 }

@@ -301,7 +301,18 @@ public abstract class CR extends Number implements Comparable<CR> {
     final Z divisor = Z.valueOf(radix).pow(fraction.length());
     return CR.valueOf(scaledResult).divide(CR.valueOf(divisor));
   }
-    
+
+  /**
+   * Return the computable real number corresponding to the given
+   * textual representation and radix.
+   * @param str [-] digit* [. digit*]
+   * @return the computable real number
+   * @throws NumberFormatException if the string is malformed.
+   */
+  public static CR valueOf(final String str) {
+    return valueOf(str, 10);
+  }
+
   /**
    * Multiply by <code>2^n</code> rounding the result (with Maple style semantics).
    * @param k number

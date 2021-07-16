@@ -144,6 +144,36 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
   }
 
   @Override
+  public CR asinh(final CR n) {
+    return add(n, sqrt(add(CR.ONE, multiply(n, n)))).log();
+  }
+
+  @Override
+  public CR acosh(final CR n) {
+    return add(n, sqrt(subtract(multiply(n, n), CR.ONE))).log();
+  }
+
+  @Override
+  public CR atanh(final CR n) {
+    return multiply(CR.HALF, divide(add(n, CR.ONE), subtract(CR.ONE, n)).log());
+  }
+
+  @Override
+  public CR acoth(final CR n) {
+    return multiply(CR.HALF, divide(add(n, CR.ONE), subtract(n, CR.ONE)).log());
+  }
+
+  @Override
+  public CR asech(final CR n) {
+    return divide(add(CR.ONE, sqrt(subtract(CR.ONE, multiply(n, n)))), n).log();
+  }
+
+  @Override
+  public CR acsch(final CR n) {
+    return divide(add(CR.ONE, sqrt(add(CR.ONE, multiply(n, n)))), n).log();
+  }
+
+  @Override
   public CR sin(final CR n) {
     return n.sin();
   }
@@ -186,6 +216,11 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
   @Override
   public CR asec(final CR n) {
     return acos(n.inverse());
+  }
+
+  @Override
+  public CR acsc(final CR n) {
+    return asin(n.inverse());
   }
 
   @Override

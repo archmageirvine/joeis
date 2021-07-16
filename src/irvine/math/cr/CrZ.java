@@ -7,11 +7,11 @@ import irvine.math.z.Z;
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */
-class Int extends CR {
+class CrZ extends CR {
 
   private final Z mValue;
 
-  Int(final Z n) {
+  CrZ(final Z n) {
     mValue = n;
   }
 

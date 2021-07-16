@@ -212,7 +212,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return computable real
    */
   public static CR valueOf(final Z n) {
-    return new Int(n);
+    return new CrZ(n);
   }
 
   /**
@@ -221,7 +221,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return computable real
    */
   public static CR valueOf(final Q n) {
-    return new Int(n.num()).divide(new Int(n.den()));
+    return new CrZ(n.num()).divide(new CrZ(n.den()));
   }
 
   /**
@@ -582,7 +582,7 @@ public abstract class CR extends Number implements Comparable<CR> {
       scaledCR = shiftLeft(4 * n);
     } else {
       final Z scaleFactor = Z.valueOf(radix).pow(n);
-      scaledCR = multiply(new Int(scaleFactor));
+      scaledCR = multiply(new CrZ(scaleFactor));
     }
     final Z scaledInt = scaledCR.getApprox(0);
     String scaledString = scaledInt.abs().toString(radix);

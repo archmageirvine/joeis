@@ -17,7 +17,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(AcosTest.class);
     suite.addTestSuite(AddTest.class);
     suite.addTestSuite(AgmTest.class);
-    suite.addTestSuite(AssumedIntTest.class);
+    suite.addTestSuite(AssumedCrZTest.class);
     suite.addTestSuite(AtanTest.class);
     suite.addTestSuite(CompositionTest.class);
     suite.addTestSuite(ComputableRealsTest.class);
@@ -27,7 +27,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(EulerGammaTest.class);
     suite.addTestSuite(ExpTest.class);
     suite.addTestSuite(IdentityTest.class);
-    suite.addTestSuite(IntTest.class);
+    suite.addTestSuite(CrZTest.class);
     suite.addTestSuite(IntegralAtanTest.class);
     suite.addTestSuite(InverseMonotoneTest.class);
     suite.addTestSuite(InverseTest.class);

@@ -7,10 +7,10 @@ import junit.framework.TestCase;
  * Test the corresponding class.
  * @author Sean A. Irvine
  */
-public class IntTest extends TestCase {
+public class CrZTest extends TestCase {
 
   public void testInt() {
-    final Int c = new Int(Z.ONE);
+    final CrZ c = new CrZ(Z.ONE);
     CRTest.assertEquals("int", CR.ONE, c);
   }
 }

@@ -501,7 +501,6 @@ A006247 Number of pseudolines with a marked cell, hard
 A006248 Number of primitive sorting networks on n elements, cf. A006247
 A006249 Number of hypertournaments on n elements under preisomorphism
 A006250 Number of hypertournaments on n elements under signed bijection
-A006264 Diagonal length function, very slowly growing, have paper
 A006289 Number of series-reduced 2-connected graphs with n nodes, have papers
 A006290 Number of 3-connected graphs with n nodes, have some papers
 A006291 Pseudo-bricks with n nodes, have paper

@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.math.z.Z;
 
 /**
- * A048941 a(n) is twice the coefficient of 1 in the fundamental unit of Q(sqrt(A000037(n))) where A000037 lists the nonsquare numbers.
+ * A048982 Number of numbers which have a "prime-rich" reduced residue system (RRS) and binary order n.
  * @author Sean A. Irvine
  */
 public class A048982 extends A048868 {

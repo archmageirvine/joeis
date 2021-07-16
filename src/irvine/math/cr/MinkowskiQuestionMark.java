@@ -25,7 +25,7 @@ public class MinkowskiQuestionMark extends CR {
       return Z.ZERO;
     }
     final int opPrec = EXTRA_PRECISION - prec;
-    Z x = mX.approximate(-opPrec);
+    final Z x = mX.approximate(-opPrec);
     Z p = mX.floor();
     Z r = p.add(1);
     Z q = Z.ONE;

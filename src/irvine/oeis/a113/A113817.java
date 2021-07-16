@@ -6,16 +6,16 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A113792 Decimal expansion of e^(-(cosecant of 1 degree)).
- * Formula: 1/e^csc(Pi/180)
+ * A113817 Decimal expansion of e^(-(cotangent of 1 degree)).
+ * Formula: 1/e^cot(Pi/180)
  * @author Georg Fischer
  */
-public class A113792 extends DecimalExpansionSequence {
+public class A113817 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
   /** Construct the sequence */
-  public A113792() {
-    super(-24, REALS.csc(CR.PI.divide(CR.valueOf(180))).exp().inverse());
+  public A113817() {
+    super(-24, REALS.cot(CR.PI.divide(CR.valueOf(180))).exp().inverse());
   }
 }

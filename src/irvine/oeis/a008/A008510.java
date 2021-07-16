@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.PalindromeSequence;
 
 /**
- * A008510 Both n and n-th triangular number are palindromes.
+ * A008510 Numbers k such that both k and the k-th triangular number are palindromes.
  * @author Sean A. Irvine
  */
 public class A008510 extends PalindromeSequence {

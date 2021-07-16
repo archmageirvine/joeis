@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A154153 Indices n such that 28 plus the n-th triangular number is a perfect square.
+ * A154153 Numbers k such that 28 plus the k-th triangular number is a perfect square.
  * @author Georg Fischer
  */
 public class A154153 extends GeneratingFunctionSequence {

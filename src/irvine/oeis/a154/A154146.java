@@ -5,7 +5,7 @@ package irvine.oeis.a154;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A154146 Indices n such that 16 plus the n-th triangular number is a perfect square.
+ * A154146 Numbers k such that 16 plus the k-th triangular number is a perfect square.
  * @author Georg Fischer
  */
 public class A154146 extends HolonomicRecurrence {

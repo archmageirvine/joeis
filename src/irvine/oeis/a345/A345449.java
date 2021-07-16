@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A345449 allocated for Donghwi Park.
+ * A345449 Decimal expansion of Gascheau's value, which is defined as the smaller solution of 27*x*(1 - x) = 1.
  * @author Sean A. Irvine
  */
 public class A345449 extends DecimalExpansionSequence {

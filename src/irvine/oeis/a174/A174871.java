@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174871 Numbers n such that n-th triangular number ends in 6 or 8.
+ * A174871 Numbers k such that the k-th triangular number ends in 6 or 8.
  * @author Sean A. Irvine
  */
 public class A174871 extends LinearRecurrence {

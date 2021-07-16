@@ -5,7 +5,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115939 Numbers n such that the n-th triangular number contains each of the 10 decimal digits exactly once.
+ * A115939 Numbers k such that the k-th triangular number contains each of the 10 decimal digits exactly once.
  * @author Georg Fischer
  */
 public class A115939 extends FiniteSequence {

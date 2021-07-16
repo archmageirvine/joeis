@@ -5,7 +5,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115922 Numbers n such that n and 2*n, taken together are pandigital.
+ * A115922 Numbers k such that k and 2*k, taken together are pandigital.
  * @author Georg Fischer
  */
 public class A115922 extends FiniteSequence {

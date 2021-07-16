@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A154154 Indices n such that 30 plus the n-th triangular number is a perfect square.
+ * A154154 Numbers k such that 30 plus the k-th triangular number is a perfect square.
  * @author Georg Fischer
  */
 public class A154154 extends GeneratingFunctionSequence {

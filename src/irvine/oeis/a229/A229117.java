@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229117 Numbers n where d/n reaches a new record, with d the distance of the n-th triangular number to the nearest square.
+ * A229117 Numbers k where d/k reaches a new record, with d the distance from the k-th triangular number to the nearest square.
  * @author Georg Fischer
  */
 public class A229117 extends GeneratingFunctionSequence {

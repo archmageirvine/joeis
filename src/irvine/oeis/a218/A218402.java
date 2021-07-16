@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A218402 Numbers n such that the n-th triangular number contains only digits {0,7,9}.
+ * A218402 Numbers k such that the k-th triangular number contains only digits {0,7,9}.
  *
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A237522 Numbers n such that phi(n) + sigma(n) = reversal(n) - 1.
+ * A237522 Numbers k such that phi(k) + sigma(k) = reversal(k) - 1.
  *
  * @author Georg Fischer
  */

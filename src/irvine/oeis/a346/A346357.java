@@ -3,7 +3,7 @@ package irvine.oeis.a346;
 import irvine.oeis.LimitedSumOfLikePowersSequence;
 
 /**
- * A346357 allocated for Sean A. Irvine.
+ * A346357 Numbers that are the sum of six fifth powers in exactly two ways.
  * @author Sean A. Irvine
  */
 public class A346357 extends LimitedSumOfLikePowersSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A158750 Concatenated triangular numbers that are prime.
+ * A158750 Primes that are the concatenation of the first k triangular numbers for some k.
  *
  * @author Georg Fischer
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115924 Numbers n such that n and 4*n, taken together, are pandigital.
+ * A115924 Numbers k such that k and 4*k, taken together, are pandigital.
  * @author Georg Fischer
  */
 public class A115924 extends FiniteSequence {

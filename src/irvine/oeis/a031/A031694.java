@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031694 Least term in period of continued fraction for sqrt(n) is 16.
+ * A031694 Numbers k such that the least term in the periodic part of the continued fraction for sqrt(k) is 16.
  * @author Sean A. Irvine
  */
 public class A031694 extends A031424 {

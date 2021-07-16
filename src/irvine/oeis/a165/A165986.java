@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a023.A023200;
 
 /**
- * A165986 Even semiprimes n such that the largest prime factor + 4 is prime.
+ * A165986 Even semiprimes n such that (the largest prime factor of n) + 4 is prime.
  * @author Georg Fischer
  */
 public class A165986 implements Sequence {

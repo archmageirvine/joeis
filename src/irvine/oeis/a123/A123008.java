@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123008 Expansion of -x * (3*x+1) / (25*x^2+2*x-1).
+ * A123008 Expansion of x*(1 + 3*x)/(1 - 2*x - 25*x^2).
  * @author Sean A. Irvine
  */
 public class A123008 extends LinearRecurrence {

@@ -1,5 +1,5 @@
 package irvine.oeis.a164;
-// manually (decexp) at 2021-07-13 17:23
+// manually (decexp) at 2021-07-16
 
 import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;

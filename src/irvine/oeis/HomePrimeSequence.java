@@ -15,7 +15,13 @@ public class HomePrimeSequence implements Sequence {
   private Z mA;
   private boolean mFirst = true;
 
-  protected HomePrimeSequence(final long start, final int base, final boolean terminateOnPrime) {
+  /**
+   * Construct the home prime sequence for a given value.
+   * @param start starting number
+   * @param base base to expand in
+   * @param terminateOnPrime stop once a prime is reached
+   */
+  public HomePrimeSequence(final long start, final int base, final boolean terminateOnPrime) {
     mA = Z.valueOf(start);
     mBase = base;
     mTerminateOnPrime = terminateOnPrime;

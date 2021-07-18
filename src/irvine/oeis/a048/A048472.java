@@ -12,7 +12,7 @@ public class A048472 implements Sequence {
   private int mN = -1;
   private int mM = 0;
 
-  private Z t(final int n, final int m) {
+  protected Z t(final int n, final int m) {
     return Z.valueOf(m + 1).multiply(n).shiftLeft(n - 1).add(1);
   }
 

@@ -12,11 +12,11 @@ import irvine.oeis.Sequence;
  */
 public class A035348 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  protected final MemoryFactorial mF = new MemoryFactorial();
   private int mN = 0;
-  private int mM = 0;
+  protected int mM = 0;
 
-  private Z t(final int n, final int k) {
+  protected Z t(final int n, final int k) {
     Z sum = Z.ZERO;
     final Z top = Z.ONE.shiftLeft(k).subtract(k + 1);
     final int lim = Z.valueOf(n).min(Z.ONE.shiftLeft(k).subtract(1)).intValueExact();

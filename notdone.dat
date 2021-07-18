@@ -1657,3 +1657,10 @@ A048893 Threshold function for orthogonal arrays of strength 2
 A048894 n - 1 - A048893(n)
 A048952 Prime 2-component links with n crossings
 A048953 Prime 3-component links with n crossings
+A049021 Number of topologically distinct ways to dissect a rectangle into n rectangles.
+A049023 Smaller of amicable pairs of Euler's first form with GCD a power of 2
+A049024 Greater of amicable pairs of Euler's first form with GCD a power of 2
+A049025 Smaller of amicable pair of Euler's first form with GCD a prime times a power of 2
+A049026 Greater of amicable pair of Euler's first form with GCD a prime times a power of 2
+A049058 Second element t of (-1)sigma sociable triple (r,s,t): s=(-1)sigma(r), t=(-1)sigma(s), r=(-1)sigma(t), where if x=Product p(i)^r(i), then (-1)sigma(x)=Product(-1+(Sum p(i)^s(i), s(i)=1 to r(i))) [not well defined?].
+A049059 Third element t of (-1)sigma sociable triple (r,s,t): s=(-1)sigma(r), t=(-1)sigma(s), r=(-1)sigma(t), where if x=Product p(i)^r(i), then (-1)sigma(x)=Product(-1+(Sum p(i)^s(i), s(i)=1 to r(i))).

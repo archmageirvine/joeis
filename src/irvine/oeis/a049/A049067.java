@@ -19,7 +19,6 @@ public class A049067 implements Sequence {
     boolean f = true;
     long s = 0;
     long t = 0;
-    long a = n;
     do {
       if (n % 3 == 0) {
         n /= 3;
@@ -35,6 +34,6 @@ public class A049067 implements Sequence {
         f = !f;
       }
     } while (n != 1);
-    return Z.valueOf(s + t + a);
+    return Z.valueOf(s + t + mN);
   }
 }

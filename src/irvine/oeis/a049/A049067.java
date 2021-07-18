@@ -1,0 +1,40 @@
+package irvine.oeis.a049;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A049067.
+ * @author Sean A. Irvine
+ */
+public class A049067 implements Sequence {
+
+  // Based on the program in the OEIS entry
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    long n = ++mN;
+    boolean f = true;
+    long s = 0;
+    long t = 0;
+    long a = n;
+    do {
+      if (n % 3 == 0) {
+        n /= 3;
+        s += n;
+      } else {
+        if (f) {
+          n = 2 * n + 2;
+          t += n;
+        } else {
+          n = 2 * n + 1;
+          t += n;
+        }
+        f = !f;
+      }
+    } while (n != 1);
+    return Z.valueOf(s + t + a);
+  }
+}

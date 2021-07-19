@@ -6,13 +6,13 @@ import irvine.oeis.ZBaseExpansionSequence;
 
 
 /**
- * A248931 Decimal expansion of 2^1279 - 1, the 15th Mersenne prime A000668(15).
+ * A248933 Decimal expansion of 2^2281 - 1, the 17th Mersenne prime A000668(17).
  * @author Georg Fischer
  */
-public class A248931 extends ZBaseExpansionSequence {
+public class A248933 extends ZBaseExpansionSequence {
 
   /** Construct the sequence */
-  public A248931() {
-    super(386, Z.ONE.shiftLeft(1279).subtract(Z.ONE));
+  public A248933() {
+    super(687, Z.ONE.shiftLeft(2281).subtract(Z.ONE));
   }
 }

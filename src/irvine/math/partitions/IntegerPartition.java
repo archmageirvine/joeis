@@ -2,6 +2,7 @@ package irvine.math.partitions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
@@ -203,6 +204,21 @@ public final class IntegerPartition {
     }
     return dual;
   }
+
+  /** Comparator to sort partitions in Abraham-Stegun order. */
+  public static Comparator<int[]> ABRAHAM_STEGUN_SORT = (p1, p2) -> {
+    final int c = Integer.compare(p1.length, p2.length);
+    if (c != 0) {
+      return c;
+    }
+    for (int k = p1.length - 1; k >= 0; --k) {
+      final int d = Integer.compare(p1[k], p2[k]);
+      if (d != 0) {
+        return d;
+      }
+    }
+    return 0;
+  };
 
   /**
    * Print all integer partitions of given argument.

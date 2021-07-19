@@ -1192,6 +1192,14 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * The Bessel <code>I0</code> function of this real number.
+   * @return <code>BesselI0()</code>
+   */
+  public CR besselI0() {
+    return new PrescaledBesselI0(this);
+  }
+
+  /**
    * The Bessel <code>Y0</code> function of this real number.
    * @return <code>BesselY0()</code>
    */

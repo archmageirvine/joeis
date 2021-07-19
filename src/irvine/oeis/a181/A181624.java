@@ -13,10 +13,9 @@ import irvine.oeis.DecimalExpansionSequence;
 public class A181624 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  private static final CR N = REALS.pow(CR.valueOf(486), CR.ONE_THIRD);
 
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A181624() {
+    super(REALS.pow(CR.valueOf(486), CR.ONE_THIRD));
   }
 }

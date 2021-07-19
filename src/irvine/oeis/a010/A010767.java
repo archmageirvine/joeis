@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A010767 extends DecimalExpansionSequence {
 
-  private static final CR N = ComputableReals.SINGLETON.pow(CR.TWO, CR.valueOf(Q.ONE_QUARTER));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A010767() {
+    super(ComputableReals.SINGLETON.pow(CR.TWO, CR.valueOf(Q.ONE_QUARTER)));
   }
 }

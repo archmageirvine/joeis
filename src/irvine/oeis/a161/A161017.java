@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A161017 extends DecimalExpansionSequence {
 
-  private static final CR N = ComputableReals.SINGLETON.tan(CR.valueOf(new Q(1, 8)));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A161017() {
+    super(ComputableReals.SINGLETON.tan(CR.valueOf(new Q(1, 8))));
   }
 }

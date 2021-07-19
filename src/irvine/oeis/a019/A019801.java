@@ -9,10 +9,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A019801 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.E.multiply(CR.TWO).sqrt().divide(CR.SEVEN);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A019801() {
+    super(CR.E.multiply(CR.TWO).sqrt().divide(CR.SEVEN));
   }
 }

@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A196566 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.FIVE.log().log();
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A196566() {
+    super(CR.FIVE.log().log());
   }
 }

@@ -9,10 +9,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A049469 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.ONE.sin();
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A049469() {
+    super(CR.ONE.sin());
   }
 }

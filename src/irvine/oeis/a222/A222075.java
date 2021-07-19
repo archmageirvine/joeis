@@ -10,10 +10,9 @@ import irvine.oeis.DecimalExpansionSequence;
 public class A222075 extends DecimalExpansionSequence {
 
   private static final CR PI_SQUARED = CR.PI.multiply(CR.PI);
-  private static final CR N = PI_SQUARED.multiply(PI_SQUARED).multiply(CR.PI).shiftLeft(6).divide(CR.valueOf(10395));
 
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A222075() {
+    super(PI_SQUARED.multiply(PI_SQUARED).multiply(CR.PI).shiftLeft(6).divide(CR.valueOf(10395)));
   }
 }

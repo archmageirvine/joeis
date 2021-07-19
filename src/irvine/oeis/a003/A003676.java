@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A003676 extends DecimalExpansionSequence {
 
-  private static final CR N = PhysicsConstants.PLANCK_CONSTANT_CR.multiply(Z.TEN.pow(33));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A003676() {
+    super(PhysicsConstants.PLANCK_CONSTANT_CR.multiply(Z.TEN.pow(33)));
   }
 }

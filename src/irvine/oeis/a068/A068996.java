@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A068996 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.ONE.subtract(CR.ONE.divide(CR.E));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A068996() {
+    super(CR.ONE.subtract(CR.ONE.divide(CR.E)));
   }
 }

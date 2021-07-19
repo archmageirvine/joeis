@@ -45,7 +45,11 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
     this(offset, x, 10);
   }
 
-  protected DecimalExpansionSequence(final CR x) {
+  /**
+   * Construct the decimal expansion of the given value.
+   * @param x number
+   */
+  public DecimalExpansionSequence(final CR x) {
     this(1, x);
   }
 

@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A070063 extends DecimalExpansionSequence {
 
-  private static final CR N = PhysicsConstants.BOLTZMANN_CR.multiply(Z.TEN.pow(23));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A070063() {
+    super(PhysicsConstants.BOLTZMANN_CR.multiply(Z.TEN.pow(23)));
   }
 }

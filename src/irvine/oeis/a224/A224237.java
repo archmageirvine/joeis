@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A224237 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(new Q(299792458L * 10000L, 5280L * 3048L));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A224237() {
+    super(CR.valueOf(new Q(299792458L * 10000L, 5280L * 3048L)));
   }
 }

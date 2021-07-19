@@ -10,10 +10,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A013676 extends DecimalExpansionSequence {
 
-  private static final CR N = Zeta.zeta(18);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A013676() {
+    super(Zeta.zeta(18));
   }
 }

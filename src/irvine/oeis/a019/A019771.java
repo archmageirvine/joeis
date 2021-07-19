@@ -10,10 +10,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A019771 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.E.multiply(new Q(2, 19));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A019771() {
+    super(CR.E.multiply(new Q(2, 19)));
   }
 }

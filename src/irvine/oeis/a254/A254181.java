@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A254181 extends DecimalExpansionSequence {
 
-  private static final CR N = PhysicsConstants.HBAR_CR.multiply(Z.TEN.pow(33));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A254181() {
+    super(PhysicsConstants.HBAR_CR.multiply(Z.TEN.pow(33)));
   }
 }

@@ -12,10 +12,9 @@ import irvine.oeis.DecimalExpansionSequence;
 public class A030169 extends DecimalExpansionSequence {
 
   private static final UnaryCRFunction PSI = new LnGamma().monotoneDerivative(CR.HALF, CR.FOUR);
-  private static final CR N = PSI.inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO);
 
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A030169() {
+    super(PSI.inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO));
   }
 }

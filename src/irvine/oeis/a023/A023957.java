@@ -17,13 +17,7 @@ public class A023957 implements Sequence {
   @Override
   public Z next() {
     final CR a = CR.valueOf(++mN);
-    final CR b = ComputableReals.SINGLETON.pow(a, a.inverse());
-    final Sequence s = new DecimalExpansionSequence() {
-      @Override
-      protected CR getCR() {
-        return b;
-      }
-    };
+    final Sequence s = new DecimalExpansionSequence(ComputableReals.SINGLETON.pow(a, a.inverse()));
     for (int k = 0; k < mN; ++k) {
       s.next();
     }

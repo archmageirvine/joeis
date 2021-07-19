@@ -10,8 +10,6 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A013707 extends DecimalExpansionSequence {
 
-  private static final CR N = build5();
-
   private static CR build5() {
     // It is actually quite hard to construct this number quickly with arbitrary precision.
     // Simple construction in Q is too slow.
@@ -36,8 +34,8 @@ public class A013707 extends DecimalExpansionSequence {
     return t[0];
   }
 
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A013707() {
+    super(build5());
   }
 }

@@ -11,16 +11,9 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A046103 extends ContinuedFractionNumeratorSequence {
 
-  private static final CR N = CR.valueOf(new Q(5, 4)).log().divide(CR.TWO.log());
-
   /** Construct the sequence. */
   public A046103() {
-    super(new DecimalExpansionSequence() {
-      @Override
-      protected CR getCR() {
-        return N;
-      }
-    });
+    super(new DecimalExpansionSequence(CR.valueOf(new Q(5, 4)).log().divide(CR.TWO.log())));
   }
 }
 

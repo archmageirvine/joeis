@@ -10,15 +10,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A036568 extends ContinuedFractionSequence {
 
-  private static final CR N = CR.PI.divide(CR.valueOf(17)).cos().multiply(2);
-
   /** Construct the sequence. */
   public A036568() {
-    super(new DecimalExpansionSequence() {
-      @Override
-      protected CR getCR() {
-        return N;
-      }
-    });
+    super(new DecimalExpansionSequence(CR.PI.divide(CR.valueOf(17)).cos().multiply(2)));
   }
 }

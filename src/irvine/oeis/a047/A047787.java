@@ -10,10 +10,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A047787 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.GAMMA.add(CR.THREE.log().multiply(new Q(3, 2))).add(CR.HALF_PI.divide(CR.THREE.sqrt()));
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A047787() {
+    super(CR.GAMMA.add(CR.THREE.log().multiply(new Q(3, 2))).add(CR.HALF_PI.divide(CR.THREE.sqrt())));
   }
 }

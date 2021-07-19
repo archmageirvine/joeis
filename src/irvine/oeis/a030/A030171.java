@@ -14,10 +14,9 @@ public class A030171 extends DecimalExpansionSequence {
   // Slow.
 
   private static final UnaryCRFunction PSI = new LnGamma().monotoneDerivative(CR.HALF, CR.FOUR);
-  private static final CR N = PSI.inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO).lnGamma().exp();
 
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A030171() {
+    super(PSI.inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO).lnGamma().exp());
   }
 }

@@ -9,10 +9,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A020792 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(35).sqrt().inverse();
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A020792() {
+    super(CR.valueOf(35).sqrt().inverse());
   }
 }

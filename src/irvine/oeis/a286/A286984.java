@@ -11,10 +11,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A286984 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.TWO.add(CR.FIVE.sqrt()).add(CR.valueOf(15).subtract(CR.SIX.multiply(CR.FIVE.sqrt())).sqrt()).divide(CR.TWO);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A286984() {
+    super(CR.TWO.add(CR.FIVE.sqrt()).add(CR.valueOf(15).subtract(CR.SIX.multiply(CR.FIVE.sqrt())).sqrt()).divide(CR.TWO));
   }
 }

@@ -206,7 +206,7 @@ public final class IntegerPartition {
   }
 
   /** Comparator to sort partitions in Abraham-Stegun order. */
-  public static Comparator<int[]> ABRAHAM_STEGUN_SORT = (p1, p2) -> {
+  public static final Comparator<int[]> ABRAHAM_STEGUN_SORT = (p1, p2) -> {
     final int c = Integer.compare(p1.length, p2.length);
     if (c != 0) {
       return c;

@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-
-import java.util.ArrayList;
 
 /**
  * A000834 Expansion of exp(x)*(1 + tan(x))/(1 - tan(x)).

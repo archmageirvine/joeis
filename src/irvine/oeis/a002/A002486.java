@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002486 Apart from two leading terms (which are present by convention), denominators of convergents to Pi (A002485 and A046947 give numerators).

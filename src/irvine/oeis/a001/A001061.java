@@ -1,10 +1,10 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Z;
-import irvine.util.string.German;
-
 import java.io.Serializable;
 import java.util.Comparator;
+
+import irvine.math.z.Z;
+import irvine.util.string.German;
 
 /**
  * A001061 1-, 2-, 3-, ... digit numbers in alphabetical order in German.

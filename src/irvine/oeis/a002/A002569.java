@@ -1,11 +1,10 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002569 Max_{k=0..n} { Number of partitions of n into exactly k parts }.

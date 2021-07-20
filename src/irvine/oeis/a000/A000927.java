@@ -2,9 +2,9 @@ package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
 import irvine.math.group.MatrixField;
-import irvine.math.q.Rationals;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 

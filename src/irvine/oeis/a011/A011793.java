@@ -4,9 +4,9 @@ import java.util.Collections;
 import java.util.HashSet;
 
 import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

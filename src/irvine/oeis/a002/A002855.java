@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
-import java.util.ArrayList;
 
 /**
  * A002855 {m + n: m in A002382, n in A002381}.

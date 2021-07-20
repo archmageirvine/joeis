@@ -1,12 +1,12 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.util.string.Roman;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.string.Roman;
 
 /**
  * A003588 Roman numerals with 1 letter, in alphabetical order; then those with 2 letters, etc.

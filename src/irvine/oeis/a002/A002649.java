@@ -1,9 +1,10 @@
 package irvine.oeis.a002;
 
+import java.util.HashSet;
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import java.util.TreeSet;
-import java.util.HashSet;
 
 /**
  * A002649 Quintan primes: p = (x^5 - y^5 )/(x - y).

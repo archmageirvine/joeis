@@ -1,10 +1,10 @@
 package irvine.oeis.a094;
 
-import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
-import irvine.oeis.Sequence;
-
 import java.util.Arrays;
+
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A094351 Rearrangement of integers such that a(0)!*a(1)!*...*a(n)! + 1 is prime.

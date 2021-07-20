@@ -1,9 +1,10 @@
 package irvine.oeis.a002;
 
+import java.util.HashSet;
+
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import java.util.HashSet;
 
 /**
  * A002225 a(n) is the smallest prime p such that each of the first n primes has three cube roots mod p.

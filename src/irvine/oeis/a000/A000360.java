@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A000360 Distribution of nonempty triangles inside a fractal rep-4-tile.

@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
+import java.util.Collections;
+
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
-
-import java.util.Collections;
 
 /**
  * A000314 Number of mixed Husimi trees with n nodes; or labeled polygonal cacti with bridges.

@@ -1,16 +1,16 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
+import irvine.math.Mobius;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
-
-import java.util.ArrayList;
 
 /**
  * A001435 Number of connected graphs with n nodes and n+1 edges.

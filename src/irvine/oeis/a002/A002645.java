@@ -1,8 +1,9 @@
 package irvine.oeis.a002;
 
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import java.util.TreeSet;
 
 /**
  * A002645 Quartan primes: primes of the form x^4 + y^4, x&gt;0, y&gt;0.

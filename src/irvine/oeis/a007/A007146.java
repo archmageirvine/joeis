@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.GraphCycleIndex;
@@ -8,7 +9,6 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

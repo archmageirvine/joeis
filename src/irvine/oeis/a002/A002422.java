@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.q.Rationals;
 import irvine.math.q.Q;
-
-import java.util.Arrays;
+import irvine.math.q.Rationals;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002422 Expansion of (1-4*x)^(5/2).

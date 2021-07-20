@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
 
 /**
  * A002950 Continued fraction for fifth root of 2.

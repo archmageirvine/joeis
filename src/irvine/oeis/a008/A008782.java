@@ -1,10 +1,10 @@
 package irvine.oeis.a008;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Permutation;
-
-import java.util.HashSet;
 
 /**
  * A008782 For any circular arrangement of 0..n-1, let S = sum of squares of every sum of three contiguous numbers; then a(n) = # of distinct values of S.

@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import java.util.HashMap;
+
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A002306 Numerators of Hurwitz numbers H_n (coefficients in expansion of Weierstrass P-function).

@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.math.r.Constants;
+import irvine.math.r.LambertW;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.r.LambertW;
-import irvine.math.r.Constants;
 
 /**
  * A002505 Nearest integer to the n-th Gram point.

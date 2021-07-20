@@ -1,10 +1,9 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-
-import irvine.oeis.a001.A001511;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001511;
 
 /**
  * A002425 Denominator of Pi^(2n)/(Gamma(2n)*(1-2^(-2n))*zeta(2n)).

@@ -1,14 +1,14 @@
 package irvine.oeis.a048;
 
-import irvine.math.LongUtils;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.util.Pair;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+
+import irvine.math.LongUtils;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.Pair;
 
 /**
  * A048211 Number of distinct resistances that can be produced from a circuit of n equal resistors using only series and parallel combinations.

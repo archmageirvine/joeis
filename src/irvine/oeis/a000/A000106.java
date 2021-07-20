@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A000106 2nd power of rooted tree enumerator; number of linear forests of 2 rooted trees.

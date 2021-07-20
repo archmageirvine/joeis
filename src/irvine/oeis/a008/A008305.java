@@ -1,8 +1,8 @@
 package irvine.oeis.a008;
 
-import irvine.math.z.Integers;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 

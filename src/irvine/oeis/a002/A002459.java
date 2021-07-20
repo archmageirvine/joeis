@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.math.cr.CR;
+import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.cr.ComputableReals;
-import irvine.math.cr.CR;
 
 /**
  * A002459 Nearest integer to cosh(n).

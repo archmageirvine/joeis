@@ -1,9 +1,9 @@
 package irvine.oeis.a067;
 
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.partitions.IntegerPartition;
 
 /**
  * A067540 Number of partitions of n in which the sum of reciprocal of parts divides number of parts.

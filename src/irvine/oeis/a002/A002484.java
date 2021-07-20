@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.factor.factor.Cheetah;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
-import irvine.factor.factor.Cheetah;
-import irvine.math.q.Q;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002484 Number of m\u00e9nage permutations.

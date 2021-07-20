@@ -1,10 +1,10 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-
-import java.util.ArrayList;
 
 /**
  * A000635 Number of paraffins C_n H_{2n} X Y with n carbon atoms.

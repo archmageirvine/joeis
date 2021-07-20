@@ -1,11 +1,11 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Z;
+import java.util.ArrayList;
+
 import irvine.math.Mobius;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a054.A054747;
-
-import java.util.ArrayList;
 
 /**
  * A000282 Finite automata.

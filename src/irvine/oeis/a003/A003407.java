@@ -1,10 +1,10 @@
 package irvine.oeis.a003;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
-
-import java.util.Arrays;
 
 /**
  * A003407 Number of permutations of [n] with no 3-term arithmetic progression.

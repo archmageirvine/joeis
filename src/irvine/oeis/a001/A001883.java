@@ -1,9 +1,9 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Integers;
+import irvine.math.api.Matrix;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
-import irvine.math.api.Matrix;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 

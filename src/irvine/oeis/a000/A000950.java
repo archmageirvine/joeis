@@ -1,12 +1,12 @@
 package irvine.oeis.a000;
 
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-
-import java.util.Arrays;
 
 /**
  * A000950 Number of forests with n nodes and height at most 3.

@@ -1,10 +1,10 @@
 package irvine.oeis.a003;
 
+import java.util.HashMap;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.util.Point;
-
-import java.util.HashMap;
 
 /**
  * A003029 Number of unilaterally connected digraphs with n nodes.

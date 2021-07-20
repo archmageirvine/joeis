@@ -2,8 +2,8 @@ package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * A002230 Primes with record values of the least positive primitive root.

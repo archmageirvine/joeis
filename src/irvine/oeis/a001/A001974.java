@@ -1,9 +1,9 @@
 package irvine.oeis.a001;
 
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.TreeSet;
 
 /**
  * A001974 Numbers that are the sum of 3 distinct squares, i.e., numbers of the form x^2 + y^2 + z^2 with 0 &lt;= x &lt; y &lt; z.

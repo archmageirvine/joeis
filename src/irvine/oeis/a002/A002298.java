@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
 import irvine.math.q.Q;
+import irvine.math.z.Z;
 
 /**
  * A002298 Denominator of (2/Pi)*Integral_{0..inf} (sin x / x)^n dx.

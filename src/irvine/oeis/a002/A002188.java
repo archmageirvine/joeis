@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import java.util.ArrayList;
-
-import java.util.HashSet;
 
 /**
  * A002188 Sprague-Grundy values for Grundy's game.

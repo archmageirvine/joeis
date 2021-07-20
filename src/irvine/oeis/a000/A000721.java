@@ -3,6 +3,7 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
@@ -10,7 +11,6 @@ import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 import irvine.util.Pair;
 

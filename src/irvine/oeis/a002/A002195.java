@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
-import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002195 Numerators of coefficients for numerical integration.

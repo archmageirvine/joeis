@@ -1,8 +1,8 @@
 package irvine.oeis.a267;
 
-import irvine.oeis.WolframAutomata;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.WolframAutomata;
 
 /**
  * A267514 Binary representation of the middle column of the "Rule 137" elementary cellular automaton starting with a single ON (black) cell.

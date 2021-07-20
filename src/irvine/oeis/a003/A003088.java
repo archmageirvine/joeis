@@ -1,5 +1,7 @@
 package irvine.oeis.a003;
 
+import java.io.IOException;
+
 import irvine.math.graph.Graph;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
@@ -7,8 +9,6 @@ import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.IOException;
 
 /**
  * A003088 Number of unilateral digraphs with n unlabeled nodes.

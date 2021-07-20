@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.Mobius;
 
 /**
  * A002321 Mertens's function: Sum_{k=1..n} mu(k), where mu is the Moebius function A008683.

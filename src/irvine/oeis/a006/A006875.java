@@ -3,8 +3,8 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Cheetah;
 import irvine.math.LongUtils;
 import irvine.math.MemoryFunction1;
-import irvine.math.z.Z;
 import irvine.math.Mobius;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

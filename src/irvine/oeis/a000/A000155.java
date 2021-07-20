@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.math.BigDecimal;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.math.BigDecimal;
 
 /**
  * A000155 Nearest integer to modified Bessel function K_n(1).

@@ -1,8 +1,8 @@
 package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Z;
 import irvine.math.z.Fibonacci;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

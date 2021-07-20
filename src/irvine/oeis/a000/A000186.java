@@ -2,9 +2,9 @@ package irvine.oeis.a000;
 
 import java.io.Serializable;
 
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**

@@ -1,9 +1,9 @@
 package irvine.oeis.a003;
 
+import java.util.List;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.List;
 
 /**
  * A003657 Discriminants of imaginary quadratic fields, negated.

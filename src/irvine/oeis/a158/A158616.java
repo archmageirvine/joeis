@@ -1,14 +1,14 @@
 package irvine.oeis.a158;
 
-import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.q.Q;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.Arrays;
 import java.util.HashMap;
+
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A158616 Table of expansion coefficients [x^m] of the Rayleigh polynomial of index 2n.

@@ -1,15 +1,15 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A001898 Denominators of Bernoulli polynomials B(n)(x).

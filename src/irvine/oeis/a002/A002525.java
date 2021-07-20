@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.PartialSumSequence;
 import irvine.math.z.Z;
+import irvine.oeis.PartialSumSequence;
 
 /**
  * A002525 Number of permutations according to distance.

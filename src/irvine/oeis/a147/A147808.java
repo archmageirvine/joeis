@@ -1,9 +1,9 @@
 package irvine.oeis.a147;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A147808 Sum of n-digit numbers which are balanced: the first [n/2] digits have the same sum as the last [n/2] digits.

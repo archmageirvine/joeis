@@ -1,10 +1,10 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.ArrayList;
 import java.util.HashSet;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A001856 A self-generating sequence: every positive integer occurs as a(i)-a(j) for a unique pair i,j.

@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A000369 Triangle of numbers related to triangle A049213; generalization of Stirling numbers of second kind A008277, Bessel triangle A001497.

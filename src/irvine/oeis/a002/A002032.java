@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
+import java.util.HashMap;
+
 import irvine.math.graph.GraphUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Pair;
-
-import java.util.HashMap;
 
 /**
  * A002032 Number of n-colored connected graphs on n labeled nodes.

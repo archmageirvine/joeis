@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.group.IntegersMod;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.group.IntegersMod;
 
 /**
  * A002329 Periods of reciprocals of integers prime to 10.

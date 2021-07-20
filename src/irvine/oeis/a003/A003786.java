@@ -1,10 +1,10 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A003786 Dates at weekly intervals from Jan 01 of leap year.

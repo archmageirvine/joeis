@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A002983 Expansion of e.g.f. 1/(1 - x*exp(x) + x^2*exp(2*x)).

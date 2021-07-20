@@ -1,11 +1,10 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.factor.factor.Cheetah;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
-
-import irvine.factor.factor.Cheetah;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002200 Primes of the form 2^q*3^r*5^s + 1.

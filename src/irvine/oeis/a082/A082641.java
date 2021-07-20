@@ -1,11 +1,11 @@
 package irvine.oeis.a082;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A082641 Triangle T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n) read by rows, where T(n,k) = number of basic invariants of degree k for the cyclic group of order and degree n.

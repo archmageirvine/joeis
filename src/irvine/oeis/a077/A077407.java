@@ -1,9 +1,9 @@
 package irvine.oeis.a077;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A077407 In base 3, records for the number of Reverse and Add! steps needed to reach a palindrome.

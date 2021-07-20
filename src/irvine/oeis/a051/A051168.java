@@ -2,9 +2,9 @@ package irvine.oeis.a051;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.LongUtils;
+import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

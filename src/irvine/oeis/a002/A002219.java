@@ -1,14 +1,13 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import java.util.HashMap;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Set;
 
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.util.Pair;
-
-import java.util.HashSet;
 
 /**
  * A002219 a(n) is the number of partitions of 2n that can be obtained by adding together two (not necessarily distinct) partitions of n.

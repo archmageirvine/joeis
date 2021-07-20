@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.q.Q;
 
 /**
  * A002707 Number of ternary trees with n nodes.

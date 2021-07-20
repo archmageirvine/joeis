@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Z;
 import irvine.math.z.Fibonacci;
+import irvine.math.z.Z;
 
 /**
  * A000687 Boustrophedon transform (first version) of Fibonacci numbers 0,1,1,2,3,5,...

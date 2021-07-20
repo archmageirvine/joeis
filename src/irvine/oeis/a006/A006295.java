@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
+import java.util.ArrayList;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002420;
-
-import java.util.ArrayList;
 
 /**
  * A006295 Number of genus 1 rooted maps with 2 faces with n vertices.

@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.cr.CR;
 
 /**
  * A002460 Nearest integer to exponential integral of n.

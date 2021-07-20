@@ -1,10 +1,10 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.HashSet;
 import java.util.Set;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A001997 Number of different shapes formed by bending a piece of wire of length n in the plane.

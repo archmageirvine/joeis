@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Z;
 import irvine.math.z.Fibonacci;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

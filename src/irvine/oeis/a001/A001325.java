@@ -1,6 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
@@ -9,7 +10,6 @@ import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

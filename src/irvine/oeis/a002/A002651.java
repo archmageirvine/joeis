@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002651 Dates at 16-day intervals starting at the beginning of a leap year.

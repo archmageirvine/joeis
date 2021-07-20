@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Cheetah;
-import irvine.math.z.Z;
-import irvine.math.Mobius;
-
 import java.util.ArrayList;
+
+import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
+import irvine.math.z.Z;
 
 /**
  * A002730 Number of equivalence classes of binary sequences of primitive period n.

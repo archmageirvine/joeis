@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.factorial.MemoryFactorial;
 
 /**
  * A002741 Logarithmic numbers: expansion of -log(1-x) e^(-x).

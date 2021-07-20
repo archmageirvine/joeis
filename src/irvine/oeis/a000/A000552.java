@@ -1,10 +1,10 @@
 package irvine.oeis.a000;
 
+import java.util.HashMap;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A000552 Number of labeled rooted trees of height 3 with n nodes.

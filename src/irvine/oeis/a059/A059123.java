@@ -1,10 +1,10 @@
 package irvine.oeis.a059;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001678;
-
-import java.util.ArrayList;
 
 /**
  * A059123 Number of homeomorphically irreducible rooted trees (also known as series-reduced rooted trees, or rooted trees without nodes of degree 2) with n &gt;= 1 nodes.

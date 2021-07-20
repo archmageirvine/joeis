@@ -1,9 +1,9 @@
 package irvine.oeis.a160;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A160118 Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).

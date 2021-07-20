@@ -1,11 +1,11 @@
 package irvine.oeis.a162;
 
+import java.util.HashMap;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Point;
-
-import java.util.HashMap;
 
 /**
  * A162663 Table by antidiagonals, T(n,k) is the number of partitions of {1..(nk)} that are invariant under a permutation consisting of n k-cycles.

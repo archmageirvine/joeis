@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.LongUtils;
 
 /**
  * A002483 Expansion of Jacobi theta function {theta_1}'(q) in powers of q^(1/4).

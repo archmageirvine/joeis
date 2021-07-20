@@ -1,10 +1,10 @@
 package irvine.oeis.a100;
 
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**

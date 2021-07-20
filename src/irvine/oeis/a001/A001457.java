@@ -1,9 +1,9 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.a047.A047874;
-
-import java.util.ArrayList;
 
 /**
  * A001457 Number of permutations of length n with longest increasing subsequence of length 6.

@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
 import irvine.math.cr.CR;
+import irvine.math.z.Z;
 import irvine.oeis.a001.A001620;
 
 /**

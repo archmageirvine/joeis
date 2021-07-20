@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
+import java.util.Collection;
+
 import irvine.graph.CubicGenerator;
 import irvine.graph.EdgeThreeColouring;
 import irvine.graph.Graph;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Collection;
 
 /**
  * A002831 Number of 3-edge-colored connected trivalent graphs with 2n nodes.

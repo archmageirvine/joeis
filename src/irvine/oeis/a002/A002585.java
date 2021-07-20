@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
 
 /**
  * A002585 Largest prime factor of 1 + (product of first n primes).

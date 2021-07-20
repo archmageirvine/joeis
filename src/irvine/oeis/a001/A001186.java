@@ -1,12 +1,12 @@
 package irvine.oeis.a001;
 
+import java.io.IOException;
+
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.IOException;
 
 /**
  * A001186 Number of cubic Hamiltonian graphs with 2n nodes.

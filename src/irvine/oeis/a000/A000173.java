@@ -1,11 +1,11 @@
 package irvine.oeis.a000;
 
+import java.util.HashSet;
+
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A000173 Unitary-sociable numbers (smallest member of each cycle).

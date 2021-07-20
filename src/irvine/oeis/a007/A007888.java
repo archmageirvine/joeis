@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import irvine.factor.factor.Cheetah;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
+import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -12,7 +13,6 @@ import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

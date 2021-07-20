@@ -3,9 +3,9 @@ package irvine.oeis.a249;
 import java.util.HashSet;
 import java.util.Set;
 
+import irvine.math.Cell;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.Cell;
 
 /**
  * A249795 Self-avoiding walks with n steps on the truncated trihexagonal tiling or (4,6,12) lattice.

@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import irvine.math.IntegerUtils;
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.IntegerUtils;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.group.IntegerField;
 
 /**
  * A002653 Expansion of (theta_3(z)*theta_3(7z)+theta_2(z)*theta_2(7z))^3.

@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
 import irvine.math.IntegerUtils;
-import irvine.math.group.SymmetricGroup;
-import irvine.math.z.Z;
 import irvine.math.factorial.MemoryFactorial;
-import irvine.oeis.Sequence;
+import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002499 Number of self-converse digraphs with n nodes.

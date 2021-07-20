@@ -1,12 +1,12 @@
 package irvine.oeis.a003;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000326;
 import irvine.util.array.LongDynamicBooleanArray;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * A003679 Numbers that are not the sum of 3 pentagonal numbers.

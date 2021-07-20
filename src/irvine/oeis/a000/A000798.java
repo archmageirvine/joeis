@@ -1,10 +1,10 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001035;
-
-import java.util.ArrayList;
 
 /**
  * A000798 Number of different quasi-orders (or topologies, or transitive digraphs) with n labeled elements.

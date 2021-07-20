@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A000137 Series-parallel numbers.

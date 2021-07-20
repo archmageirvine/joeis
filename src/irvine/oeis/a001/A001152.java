@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
-import irvine.math.polynomial.CycleIndex;
 import irvine.math.group.GeneralLinearCycleIndex;
+import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 

@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A002047 Number of 3 X (2n+1) zero-sum arrays with entries -n,..,0,..,n.

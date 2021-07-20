@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
 
 /**
  * A002233 a(1) = 1; for n &gt; 1, a(n) = least positive prime primitive root of n-th prime.

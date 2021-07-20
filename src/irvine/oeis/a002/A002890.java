@@ -1,5 +1,8 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -8,9 +11,6 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * A002890 Low temperature series for spin-1/2 Ising free energy on 2D square lattice.

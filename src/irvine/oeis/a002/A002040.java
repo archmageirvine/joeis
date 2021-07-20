@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A002040 Related to partitions.

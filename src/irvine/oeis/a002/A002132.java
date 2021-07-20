@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
+import java.util.HashSet;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.partitions.IntegerPartition;
 import irvine.util.Point;
-
-import java.util.HashSet;
 
 /**
  * A002132 Generalized sum of divisors function.

@@ -2,10 +2,10 @@ package irvine.oeis.a000;
 
 import irvine.math.IntegerUtils;
 import irvine.math.group.SymmetricGroup;
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.partitions.IntegerPartition;
 
 /**
  * A000568 Number of outcomes of unlabeled n-team round-robin tournaments.

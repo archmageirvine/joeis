@@ -1,9 +1,9 @@
 package irvine.oeis.a177;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.a090.A090466;
-
-import java.util.ArrayList;
 
 /**
  * A177202 Nontrivially polygonal-free numbers.

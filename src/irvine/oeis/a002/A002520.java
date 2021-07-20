@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000122;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.group.IntegerField;
-import irvine.math.polynomial.Polynomial;
 
 /**
  * A002520 Theta series of 28-dimensional unimodular lattice with no roots and with no parity vector of norm 4.

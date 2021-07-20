@@ -1,9 +1,9 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-
-import java.util.ArrayList;
 
 /**
  * A001929 Number of connected topologies on n labeled points.

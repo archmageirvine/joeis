@@ -1,11 +1,11 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A001013 Jordan-Polya numbers: products of factorial numbers A000142.

@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-
-import java.util.ArrayList;
 
 /**
  * A000686 Number of 4-colored labeled graphs on n nodes, divided by 4.

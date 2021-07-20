@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-
-import java.util.ArrayList;
 
 /**
  * A000810 Expansion of e.g.f. (sin x + cos x)/cos 3x.

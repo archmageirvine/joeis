@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.LongUtils;
 
 /**
  * A002652 Theta series of Kleinian lattice Z[(1 + sqrt(-7))/ 2] in 1 complex (or 2 real) dimensions.

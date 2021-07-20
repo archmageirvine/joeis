@@ -1,6 +1,7 @@
 package irvine.oeis.a001;
 
 import java.io.Serializable;
+
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000186;
 

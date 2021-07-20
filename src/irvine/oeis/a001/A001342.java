@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A001342 E.g.f.: 24*exp(x)/(1-x)^5.

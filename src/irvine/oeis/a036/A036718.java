@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
-import irvine.math.polynomial.CycleIndex;
 import irvine.math.group.SymmetricGroup;
+import irvine.math.polynomial.CycleIndex;
 import irvine.oeis.a000.A000598;
 
 /**

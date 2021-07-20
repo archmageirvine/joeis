@@ -1,8 +1,8 @@
 package irvine.oeis.a160;
 
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.z.Euler;
 
 /**
  * A160599 Composite numbers n for which n - phi(n) divides n-1.

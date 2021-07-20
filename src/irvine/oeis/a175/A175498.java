@@ -1,9 +1,9 @@
 package irvine.oeis.a175;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-
-import java.util.HashSet;
 
 /**
  * A175498 a(1)=1. a(n) = the smallest positive integer not occurring earlier such that a(n)-a(n-1) doesn't equal a(k)-a(k-1) for any k with 2 &lt;= k &lt;= n-1.

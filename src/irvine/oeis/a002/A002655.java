@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.group.IntegerField;
 
 /**
  * A002655 Expansion of Product_{i &gt;= 1} (1-q^i)(1-q^{7i}).

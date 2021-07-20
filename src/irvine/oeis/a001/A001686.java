@@ -1,9 +1,9 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-
-import java.util.ArrayList;
 
 /**
  * A001686 From a continued fraction.

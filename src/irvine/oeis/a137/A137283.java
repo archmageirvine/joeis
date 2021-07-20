@@ -1,10 +1,10 @@
 package irvine.oeis.a137;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A137283 Palindromic primes consisting only of 3's and two 2's.

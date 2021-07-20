@@ -1,9 +1,9 @@
 package irvine.oeis.a071;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A071887 Conjectured values of n whose trajectory under map x -&gt; A002487(x)*A002487(x+1) does not go into a cycle.

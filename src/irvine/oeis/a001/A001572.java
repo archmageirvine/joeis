@@ -1,11 +1,11 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000084;
-
-import java.util.ArrayList;
 
 /**
  * A001572 Related to series-parallel networks.

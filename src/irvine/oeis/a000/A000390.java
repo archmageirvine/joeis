@@ -1,8 +1,8 @@
 package irvine.oeis.a000;
 
+import irvine.math.partitions.MultidimensionalIntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.partitions.MultidimensionalIntegerPartition;
 
 /**
  * A000390 Number of 5-dimensional partitions of n.

@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
 
 /**
  * A002949 Continued fraction for cube root of 6.

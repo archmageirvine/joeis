@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import org.apfloat.Apfloat;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import org.apfloat.Apfloat;
 
 /**
  * A000694 Related to population of numbers of form x^2 + y^2.

@@ -1,12 +1,12 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
 import irvine.oeis.a035.A035349;
 import irvine.oeis.a035.A035350;
-
-import java.util.ArrayList;
 
 /**
  * A000083 Number of mixed Husimi trees with n nodes; or polygonal cacti with bridges.

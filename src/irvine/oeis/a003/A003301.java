@@ -1,8 +1,8 @@
 package irvine.oeis.a003;
 
+import irvine.math.api.RationalSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.api.RationalSequence;
 import irvine.oeis.Sequence;
 
 /**

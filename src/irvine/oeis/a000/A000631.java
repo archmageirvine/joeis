@@ -1,8 +1,8 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Z;
-
 import java.util.ArrayList;
+
+import irvine.math.z.Z;
 
 /**
  * A000631 Number of ethylene derivatives with n carbon atoms.

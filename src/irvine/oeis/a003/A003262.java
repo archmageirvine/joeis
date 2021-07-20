@@ -1,10 +1,10 @@
 package irvine.oeis.a003;
 
+import java.util.Arrays;
+
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A003262 Let y=f(x) satisfy F(x,y)=0. The sequence a(n) is the number of terms in the expansion of (d^n/dx^n) y in terms of the partial derivatives of F.

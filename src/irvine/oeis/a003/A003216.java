@@ -1,5 +1,9 @@
 package irvine.oeis.a003;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import irvine.math.graph.Graph;
 import irvine.math.graph.Graph6;
 import irvine.math.nauty.GenerateGraphs;
@@ -7,10 +11,6 @@ import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 
 /**
  * A003216 Number of Hamiltonian graphs with n nodes.

@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
-import java.util.Iterator;
 import java.util.ArrayList;
+import java.util.Iterator;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002475 Numbers k such that x^k + x + 1 is irreducible over GF(2).

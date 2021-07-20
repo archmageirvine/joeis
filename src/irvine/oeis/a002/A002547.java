@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.math.q.Q;
+import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.z.Stirling;
-import irvine.math.q.Q;
 
 /**
  * A002547 Numerator of the n-th harmonic number H(n) divided by (n+1); a(n) = A001008(n) / ((n+1)*A002805(n)).

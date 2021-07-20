@@ -1,10 +1,10 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Z;
-import irvine.math.z.Fibonacci;
-import irvine.oeis.Sequence;
-
 import java.util.HashSet;
+
+import irvine.math.z.Fibonacci;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A001581 Winning moves in Fibonacci nim.

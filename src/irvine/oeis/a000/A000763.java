@@ -1,12 +1,13 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.a052.A052894;
-import irvine.math.q.Rationals;
-import irvine.math.q.Q;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.group.PolynomialRingField;
-import java.util.ArrayList;
 
 /**
  * A000763 Number of interval orders constructed from n intervals of generic lengths.

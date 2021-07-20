@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000122;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.group.IntegerField;
-import irvine.math.polynomial.Polynomial;
 
 /**
  * A002434 Theta series of Borcherds' 27-dimensional unimodular lattice T_27.

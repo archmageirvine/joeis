@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.math.q.Q;
+import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.z.Stirling;
-import irvine.math.q.Q;
 
 /**
  * A002545 Numerator of Sum_{i+j+k=n; i,j,k &gt; 0} 1/(i*j*k).

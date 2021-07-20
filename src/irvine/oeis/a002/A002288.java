@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.group.IntegerField;
-import irvine.math.polynomial.Polynomial;
 
 /**
  * A002288 G.f.: q * Product_{m&gt;=1} (1-q^m)^8*(1-q^2m)^8.

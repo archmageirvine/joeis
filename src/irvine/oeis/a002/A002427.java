@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002427 Numerator of (2n+1) B_{2n}, where B_n are the Bernoulli numbers.

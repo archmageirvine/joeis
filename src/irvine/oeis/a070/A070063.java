@@ -1,6 +1,5 @@
 package irvine.oeis.a070;
 
-import irvine.math.cr.CR;
 import irvine.math.r.PhysicsConstants;
 import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;

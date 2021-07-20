@@ -1,10 +1,10 @@
 package irvine.oeis.a146;
 
+import java.util.ArrayList;
+
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A146526 a(n) = the smallest positive integer m with exactly n (no more, no fewer) distinct primes represented in binary as substrings within the binary representation of m.

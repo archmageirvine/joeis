@@ -1,11 +1,11 @@
 package irvine.oeis.a097;
 
+import java.util.HashMap;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Point;
-
-import java.util.HashMap;
 
 /**
  * A097474 Triangle T(n,k) read by rows: see formula lines for definition.

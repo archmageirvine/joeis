@@ -1,10 +1,10 @@
 package irvine.oeis.a000;
 
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**

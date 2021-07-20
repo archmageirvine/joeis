@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersMod;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002323 ((2^m - 1) / p) mod p, where p = prime(n) and m = ord(2,p).

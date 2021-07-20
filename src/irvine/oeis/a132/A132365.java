@@ -1,10 +1,10 @@
 package irvine.oeis.a132;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000032;
-
-import java.util.ArrayList;
 
 /**
  * A132365 Least number k such that the Lucas number A000032(k) contains n.

@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
-import irvine.math.matrix.DefaultMatrix;
 import irvine.math.api.Matrix;
+import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 

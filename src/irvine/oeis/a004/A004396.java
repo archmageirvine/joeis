@@ -1,9 +1,9 @@
 package irvine.oeis.a004;
 
+import java.io.Serializable;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.Serializable;
 
 /**
  * A004396 One even number followed by two odd numbers.

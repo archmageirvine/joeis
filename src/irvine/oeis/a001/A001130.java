@@ -1,10 +1,10 @@
 package irvine.oeis.a001;
 
+import java.util.HashMap;
+
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A001130 Number of graphical basis partitions of 2n.

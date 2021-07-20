@@ -1,10 +1,10 @@
 package irvine.oeis.a211;
 
+import java.util.HashMap;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A211318 Triangle read by rows: number of permutations of 1..n by length l of longest run (n &gt;= 1, 1 &lt;= l &lt;= n).

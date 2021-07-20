@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Z;
 import irvine.math.z.Euler;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

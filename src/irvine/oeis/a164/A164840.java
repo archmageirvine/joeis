@@ -1,9 +1,9 @@
 package irvine.oeis.a164;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A164840 Right-truncatable squares: every prefix is square.

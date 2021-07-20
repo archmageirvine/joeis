@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Z;
 import irvine.math.q.BernoulliSequence;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

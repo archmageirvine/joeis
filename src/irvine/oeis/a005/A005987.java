@@ -1,12 +1,12 @@
 package irvine.oeis.a005;
 
+import java.io.Serializable;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.Serializable;
 
 /**
  * A005987 Number of symmetric plane partitions of n.

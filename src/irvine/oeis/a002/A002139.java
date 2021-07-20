@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
 import irvine.factor.prime.Fast;
+import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.math.z.Euler;
 
 /**
  * A002139 Shuffling 2n cards.

@@ -1,11 +1,11 @@
 package irvine.oeis.a003;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * A003167 Number of n-dimensional cuboids with integral edge lengths for which volume = surface area.

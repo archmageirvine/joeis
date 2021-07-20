@@ -1,10 +1,10 @@
 package irvine.oeis.a003;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
-
-import java.util.ArrayList;
 
 /**
  * A003311 Write down the numbers from 3 to infinity. Take next number, M say, that has not been crossed off. Counting through the numbers that have not yet been crossed off after that M, cross off the first, (M+1)st, (2M+1)st, (3M+1)st., etc. Repeat. The numbers that are left form the sequence.

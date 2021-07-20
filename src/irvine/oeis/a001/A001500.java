@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A001500 Number of stochastic matrices of integers: n X n arrays of nonnegative integers with all row and column sums equal to 3.

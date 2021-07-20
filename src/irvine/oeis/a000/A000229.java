@@ -1,10 +1,10 @@
 package irvine.oeis.a000;
 
+import java.util.HashMap;
+
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A000229 a(n) is the least number m such that the n-th prime is the least quadratic nonresidue modulo m.

@@ -1,11 +1,11 @@
 package irvine.oeis.a000;
 
 import irvine.math.IntegerUtils;
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
-import irvine.math.partitions.IntegerPartition;
 
 /**
  * A000171 Number of self-complementary graphs with n nodes.

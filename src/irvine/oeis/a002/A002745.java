@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.z.Binomial;
 import irvine.oeis.a000.A000203;
 
 /**

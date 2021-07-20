@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.util.Point;
-import irvine.oeis.Sequence;
-
 import java.util.HashMap;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.Point;
 
 /**
  * A002843 Number of partitions of n into parts 1/2, 3/4, 7/8, 15/16, etc.

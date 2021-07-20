@@ -1,8 +1,8 @@
 package irvine.oeis.a033;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
 
 /**
  * A033207 Primes of form x^2+7*y^2.

@@ -1,8 +1,8 @@
 package irvine.oeis.a000;
 
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.partitions.IntegerPartition;
 
 /**
  * A000793 Landau's function g(n): largest order of permutation of n elements. Equivalently, largest LCM of partitions of n.

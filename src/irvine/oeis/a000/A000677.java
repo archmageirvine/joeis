@@ -1,5 +1,9 @@
 package irvine.oeis.a000;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -7,10 +11,6 @@ import irvine.math.z.Z;
 import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * A000677 Number of bicentered trees with n nodes.

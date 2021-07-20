@@ -1,9 +1,9 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000084;
-
-import java.util.ArrayList;
 
 /**
  * A001677 Number of series-parallel networks with n edges.

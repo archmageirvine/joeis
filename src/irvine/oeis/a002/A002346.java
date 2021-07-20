@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
 
 /**
  * A002346 Consider all primes of form p = (x^2 + 11y^2 )/4; sequence gives values of x.

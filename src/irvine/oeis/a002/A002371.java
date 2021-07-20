@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.factor.prime.Fast;
+import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.group.IntegersModMul;
-import irvine.factor.prime.Fast;
 
 /**
  * A002371 Period of decimal expansion of 1/(n-th prime) (0 by convention for the primes 2 and 5).

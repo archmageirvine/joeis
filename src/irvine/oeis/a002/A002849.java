@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Pair;
-
-import java.util.List;
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * A002849 Maximal number of disjoint subsets {X,Y,Z} of {1, 2, ..., n}, each satisfying X + Y = Z.

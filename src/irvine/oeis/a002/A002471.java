@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
 
 /**
  * A002471 Number of partitions of n into a prime and a square.

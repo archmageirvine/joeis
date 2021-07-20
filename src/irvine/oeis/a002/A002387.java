@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.q.Q;
 
 /**
  * A002387 Least k such that H(k) &gt; n, where H(k) is the harmonic number Sum_{i=1..k} 1/i.

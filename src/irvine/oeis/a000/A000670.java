@@ -1,8 +1,8 @@
 package irvine.oeis.a000;
 
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**

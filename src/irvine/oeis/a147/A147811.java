@@ -1,10 +1,10 @@
 package irvine.oeis.a147;
 
+import java.util.TreeSet;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.TreeSet;
 
 /**
  * A147811 Alexandrian integers: numbers of the form n=pqr such that 1/n = 1/p - 1/q - 1/r for some integers p,q,r.

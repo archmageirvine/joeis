@@ -1,5 +1,7 @@
 package irvine.oeis.a000;
 
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
@@ -7,8 +9,6 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-
-import java.util.Arrays;
 
 /**
  * A000226 Number of n-node unlabeled connected graphs with one cycle of length 3.

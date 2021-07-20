@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
 
 /**
  * A002307 Consecutive quadratic residues mod p: a(n)=maximal number of positive reduced quadratic residues which appear consecutively for n-th prime.

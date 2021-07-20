@@ -1,5 +1,7 @@
 package irvine.oeis.a003;
 
+import java.io.IOException;
+
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -9,8 +11,6 @@ import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.IOException;
 
 /**
  * A003400 Number of asymmetric (not necessarily connected) graphs with n nodes.

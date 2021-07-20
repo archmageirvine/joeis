@@ -1,11 +1,11 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * A001028 E.g.f. satisfies A'(x) = 1 + A(A(x)), A(0)=0.

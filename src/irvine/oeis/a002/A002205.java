@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.FiniteSequence;
-import irvine.util.io.IOUtils;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import irvine.math.z.Z;
+import irvine.oeis.FiniteSequence;
+import irvine.util.io.IOUtils;
 
 /**
  * A002205 The RAND Corporation list of a million random digits.

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * A000707 Number of permutations of [1,2,...,n] with n-1 inversions.

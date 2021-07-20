@@ -1,8 +1,9 @@
 package irvine.oeis.a002;
 
+import java.util.HashMap;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import java.util.HashMap;
 import irvine.util.Pair;
 
 /**

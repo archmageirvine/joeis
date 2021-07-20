@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.a029.A029932;
 import irvine.math.z.Z;
+import irvine.oeis.a029.A029932;
 
 /**
  * A002231 Primitive roots that go with the primes in A029932.

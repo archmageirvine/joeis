@@ -1,12 +1,12 @@
 package irvine.oeis.a083;
 
+import java.util.ArrayList;
+
+import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A083006 Numbers k such that Sum_{j=0..k-1} Bernoulli(j)*binomial(k,j)^2 is an integer.

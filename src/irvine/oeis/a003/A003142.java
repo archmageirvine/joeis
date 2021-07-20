@@ -1,14 +1,14 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.util.Triple;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.Triple;
 
 /**
  * A003142 Largest subset of 3 X 3 X ... X 3 cube (in n dimensions) with no 3 points collinear.

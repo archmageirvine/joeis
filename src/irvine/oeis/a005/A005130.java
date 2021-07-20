@@ -1,6 +1,7 @@
 package irvine.oeis.a005;
 
 import java.io.Serializable;
+
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;

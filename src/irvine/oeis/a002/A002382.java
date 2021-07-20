@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
 
 /**
  * A002382 Numbers of the form (p^2 - 49)/120 where p is prime.

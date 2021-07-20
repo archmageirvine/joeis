@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
-import irvine.math.q.Q;
-import irvine.math.polynomial.Polynomial;
 
 /**
  * A002209 Denominators of coefficients for numerical integration.

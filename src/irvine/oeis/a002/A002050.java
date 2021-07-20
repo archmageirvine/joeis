@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A002050 Number of simplices in barycentric subdivision of n-simplex.

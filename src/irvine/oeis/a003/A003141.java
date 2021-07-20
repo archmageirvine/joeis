@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
+import java.io.IOException;
+
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.IOException;
 
 /**
  * A003141 Minimal number of arcs whose reversal yields a transitive tournament.

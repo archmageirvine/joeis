@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002479 Numbers of form x^2 + 2y^2.

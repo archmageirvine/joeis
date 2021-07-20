@@ -2,9 +2,9 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.IntegerUtils;
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.partitions.IntegerPartition;
 
 /**
  * A051704 Maximal value of products of partitions of n into powers of distinct primes (powers of 1 and 2 excluded).

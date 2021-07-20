@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
-
 import java.util.ArrayList;
 import java.util.Collections;
+
+import irvine.factor.prime.Fast;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002557 Odd squarefree numbers with an even number of prime factors that have no prime factors greater than 31.

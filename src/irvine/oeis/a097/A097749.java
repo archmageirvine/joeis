@@ -1,10 +1,10 @@
 package irvine.oeis.a097;
 
-import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
-import irvine.util.Point;
-
 import java.util.HashMap;
+
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Z;
+import irvine.util.Point;
 
 /**
  * A097749 Triangle T(n,k), n &gt;= 0, 0 &lt;= k &lt;= n, read by rows. Let A(n,k) be the triangle in A097474. Then T(n,k) is defined by the orthogonality relations Sum_{j=i..r} T(r,j)*A(j,i)*2^-floor((j+3)/2) = 0 if i != r, = (2r+1)!/(r!*2^r) if i = r.

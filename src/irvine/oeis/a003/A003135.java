@@ -1,14 +1,14 @@
 package irvine.oeis.a003;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import irvine.factor.factor.Cheetah;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * A003135 n! is a nontrivial product of factorials. It is conjectured that the list is complete.

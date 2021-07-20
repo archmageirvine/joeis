@@ -1,9 +1,9 @@
 package irvine.oeis.a103;
 
+import java.util.HashMap;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A103618 Number of steps required for n to reach a digit count invariant or cycle loop under the 'Look and Say' function A045918.

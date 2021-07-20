@@ -1,12 +1,12 @@
 package irvine.oeis.a003;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Point;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * A003030 Number of strongly connected digraphs with n labeled nodes.

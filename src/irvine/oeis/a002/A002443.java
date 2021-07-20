@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
 import irvine.math.q.BernoulliSequence;
+import irvine.math.z.Z;
 
 /**
  * A002443 Numerator in Feinler's formula for unsigned Bernoulli number |B_{2n}|.

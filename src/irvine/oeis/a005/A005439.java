@@ -1,9 +1,9 @@
 package irvine.oeis.a005;
 
+import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**

@@ -1,12 +1,13 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
-import java.util.ArrayList;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
-import irvine.math.q.Q;
-import irvine.math.polynomial.Polynomial;
 
 /**
  * A002748 Sum of logarithmic numbers.

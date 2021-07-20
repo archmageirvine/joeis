@@ -1,11 +1,12 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.group.PolynomialRingField;
-import java.util.ArrayList;
-import irvine.math.group.IntegerField;
 
 /**
  * A002945 Continued fraction for cube root of 2.

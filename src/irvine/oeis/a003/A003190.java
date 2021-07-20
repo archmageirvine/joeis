@@ -2,10 +2,10 @@ package irvine.oeis.a003;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.MemoryFunction2;
+import irvine.math.Mobius;
 import irvine.math.polynomial.PalmerSymPowerCycleIndex;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

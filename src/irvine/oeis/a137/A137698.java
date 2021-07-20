@@ -1,9 +1,9 @@
 package irvine.oeis.a137;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A137698 a(1)=2. a(n) = the smallest integer &gt; a(n-1) that is not in sequence A137699. A137699(n) = the smallest integer &gt; A137698(n) and not coprime to A137698(n). (A137699(n) = A137698(n) + smallest prime dividing A137698(n).).

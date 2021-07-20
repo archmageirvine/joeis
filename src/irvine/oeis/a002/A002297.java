@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.q.Q;
-import irvine.math.factorial.MemoryFactorial;
 
 /**
  * A002297 Numerator of (2/Pi)*Integral_{0..inf} (sin x / x)^n dx.

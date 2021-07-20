@@ -1,10 +1,10 @@
 package irvine.oeis.a153;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.a048.A048211;
 import irvine.util.Pair;
-
-import java.util.HashSet;
 
 /**
  * A153588 Number of resistance values that can be constructed using up to n equal resistances by arranging them in an arbitrary series-parallel arrangement.

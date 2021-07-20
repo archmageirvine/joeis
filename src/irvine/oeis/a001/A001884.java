@@ -1,10 +1,10 @@
 package irvine.oeis.a001;
 
+import irvine.math.api.Matrix;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixRing;
 import irvine.math.matrix.DefaultMatrix;
-import irvine.math.api.Matrix;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;

@@ -1,11 +1,11 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000405;
-
-import java.util.ArrayList;
 
 /**
  * A001669 Number of 7-level labeled rooted trees with n leaves.

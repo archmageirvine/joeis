@@ -1,9 +1,9 @@
 package irvine.oeis.a003;
 
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.TreeSet;
 
 /**
  * A003038 Dimensions of split simple Lie algebras over any field of characteristic zero.

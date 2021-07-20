@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;

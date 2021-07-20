@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002485 Numerators of convergents to Pi.

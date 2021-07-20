@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
+import java.util.HashSet;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.partitions.IntegerPartition;
 import irvine.util.Triple;
-
-import java.util.HashSet;
 
 /**
  * A002134 Generalized divisor function. Partitions of n using only 3 types of piles.

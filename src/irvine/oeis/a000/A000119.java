@@ -2,8 +2,8 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.util.array.LongDynamicLongArray;
 import irvine.util.array.LongDynamicArray;
+import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A000119 Number of representations of n as a sum of distinct Fibonacci numbers.

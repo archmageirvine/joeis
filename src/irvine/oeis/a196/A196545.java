@@ -1,8 +1,9 @@
 package irvine.oeis.a196;
 
-import irvine.math.z.Z;
-import irvine.math.partitions.IntegerPartition;
 import java.util.HashMap;
+
+import irvine.math.partitions.IntegerPartition;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 

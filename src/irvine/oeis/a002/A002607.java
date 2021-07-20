@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.group.GaussianIntegers;
 import irvine.util.Pair;
 
 /**

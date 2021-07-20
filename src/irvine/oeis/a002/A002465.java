@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002465 Number of ways to place n nonattacking bishops on an n X n board.

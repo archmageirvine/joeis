@@ -1,11 +1,11 @@
 package irvine.oeis.a163;
 
+import java.util.HashSet;
+
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A163642 a(n) = the smallest composite positive integer that is not yet in the sequence and that is coprime to n.

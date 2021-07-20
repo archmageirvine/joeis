@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.z.Binomial;
 
 /**
  * A002661 Least integer having Radon random number n.

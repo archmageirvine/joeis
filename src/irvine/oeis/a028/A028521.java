@@ -1,10 +1,10 @@
 package irvine.oeis.a028;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000521;
-
-import java.util.ArrayList;
 
 /**
  * A028521 Character of extremal vertex operator algebra of rank 72.

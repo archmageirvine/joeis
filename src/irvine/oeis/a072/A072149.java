@@ -1,9 +1,9 @@
 package irvine.oeis.a072;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A072149 Coordination sequence for AlPO_4-11 structure with respect to node (X) where decagon and two hexagons meet.

@@ -1,9 +1,9 @@
 package irvine.oeis.a094;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A094353 Smallest integer not yet used such that 1 + Product_{k=1..n} a(k) is a square.

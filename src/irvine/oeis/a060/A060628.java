@@ -1,5 +1,7 @@
 package irvine.oeis.a060;
 
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -7,8 +9,6 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A060628 Triangle of coefficients in expansion of elliptic function sn(u) in powers of u and k.

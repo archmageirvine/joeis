@@ -1,10 +1,10 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000254;
-
-import java.util.ArrayList;
 
 /**
  * A001706 Generalized Stirling numbers.

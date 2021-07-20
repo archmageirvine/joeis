@@ -2,8 +2,8 @@ package irvine.oeis.a002;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.LongUtils;
-import irvine.math.z.Z;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

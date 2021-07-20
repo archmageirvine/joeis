@@ -1,12 +1,12 @@
 package irvine.oeis.a003;
 
+import java.io.Serializable;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.MemoryFunction1;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-
-import java.io.Serializable;
 
 /**
  * A003606 a(n) = number of types of conjugacy classes in GL(n,q) (this is independent of q).

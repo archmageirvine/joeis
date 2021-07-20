@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.z.Binomial;
 
 /**
  * A002295 Number of dissections of a polygon: binomial(6n,n)/(5n+1).

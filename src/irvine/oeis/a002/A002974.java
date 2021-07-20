@@ -1,16 +1,16 @@
 package irvine.oeis.a002;
 
-import irvine.math.partitions.IntegerPartition;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.util.Triple;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import irvine.math.partitions.IntegerPartition;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.Triple;
 
 /**
  * A002974 Number of restricted solid partitions of n.

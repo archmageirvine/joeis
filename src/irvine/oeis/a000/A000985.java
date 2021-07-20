@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A000985 Number of n X n symmetric matrices with nonnegative entries and all row sums 2.

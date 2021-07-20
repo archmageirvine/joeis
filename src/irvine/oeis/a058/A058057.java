@@ -1,14 +1,14 @@
 package irvine.oeis.a058;
 
+import java.util.ArrayList;
+
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A058057 Triangle giving coefficients of m\u00e9nage hit polynomials.

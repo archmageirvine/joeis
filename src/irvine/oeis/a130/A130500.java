@@ -1,9 +1,9 @@
 package irvine.oeis.a130;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A130500 a(1)=1. a(n) = number of earlier terms of the sequence which divide (the number of positive integers which are &lt;=n and missing from first (n-1) terms of sequence).

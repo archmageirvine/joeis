@@ -3,9 +3,9 @@ package irvine.oeis.a309;
 import java.util.HashSet;
 import java.util.Set;
 
+import irvine.math.Cell;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.Cell;
 
 /**
  * A309166 Langton's ant on a truncated hexagonal tiling: number of black cells after n moves of the ant when starting on a dodecagon and looking towards an edge where the dodecagon meets a triangle.

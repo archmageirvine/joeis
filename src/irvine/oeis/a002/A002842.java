@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
-
-import java.util.Arrays;
 
 /**
  * A002842 Number of strongly asymmetric sequences of length n.

@@ -2,8 +2,8 @@ package irvine.oeis.a115;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Z;
 import irvine.math.z.Fibonacci;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

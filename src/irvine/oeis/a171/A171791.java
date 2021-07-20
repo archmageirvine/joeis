@@ -1,12 +1,12 @@
 package irvine.oeis.a171;
 
+import java.util.ArrayList;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A171791 G.f. A(x) satisfies: [x^n] A(x)^((n+1)^2) = 0 for n&gt;1 with a(0)=a(1)=1.

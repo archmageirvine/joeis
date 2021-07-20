@@ -1,9 +1,9 @@
 package irvine.oeis.a008;
 
+import irvine.factor.factor.Cheetah;
+import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.util.FactorSequence;
-import irvine.factor.factor.Cheetah;
 
 /**
  * A008475 If n = Product (p_j^k_j) then a(n) = Sum (p_j^k_j) (a(1) = 0 by convention).

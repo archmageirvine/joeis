@@ -1,10 +1,10 @@
 package irvine.oeis.a003;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A003051 Number of inequivalent sublattices of index n in hexagonal lattice (two sublattices are equivalent if one can be rotated or reflected to give the other).

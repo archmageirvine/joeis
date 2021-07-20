@@ -1,9 +1,9 @@
 package irvine.oeis.a003;
 
+import java.util.HashMap;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A003016 Number of occurrences of n as an entry in rows &lt;= n of Pascal's triangle (A007318).

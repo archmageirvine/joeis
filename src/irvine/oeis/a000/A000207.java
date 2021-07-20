@@ -1,10 +1,10 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A000207 Number of inequivalent ways of dissecting a regular (n+2)-gon into n triangles by n-1 non-intersecting diagonals under rotations and reflections; also the number of planar 2-trees.

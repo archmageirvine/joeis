@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.Sequence;
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A000329 Nearest integer to b(n), where b(n) = tan(b(n-1)), b(0) = 1.

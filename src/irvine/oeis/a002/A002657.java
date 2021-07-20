@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.math.q.Q;
 import irvine.math.z.Stirling;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002657 Numerators of Cauchy numbers of second type (= Bernoulli numbers B_n^{(n)}).

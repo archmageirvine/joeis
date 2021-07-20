@@ -1,10 +1,10 @@
 package irvine.oeis.a008;
 
+import java.util.HashMap;
+
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A008304 Triangle read by rows: T(n,k) (n&gt;=1; 1&lt;=k&lt;=n) is the number of permutations of [n] in which the longest increasing run has length k.

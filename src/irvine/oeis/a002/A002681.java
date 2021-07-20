@@ -1,14 +1,14 @@
 package irvine.oeis.a002;
 
+import java.util.Arrays;
+
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A002681 Numerators of coefficients for repeated integration.

@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.io.PrintStream;
 import java.util.Arrays;
 import java.util.HashSet;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002013 Filaments with n square cells.

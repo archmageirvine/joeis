@@ -1,12 +1,12 @@
 package irvine.oeis.a003;
 
+import java.util.ArrayList;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A003475 Expansion of Sum_{k&gt;0} (-1)^(k+1) q^(k^2) / ((1-q)(1-q^3)(1-q^5)...(1-q^(2k-1))).

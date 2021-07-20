@@ -1,12 +1,12 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.factor.factor.Cheetah;
-import irvine.math.z.Z;
 import irvine.math.Mobius;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000029;
-
-import java.util.ArrayList;
 
 /**
  * A001371 Number of n-bead necklaces with beads of 2 colors and primitive period n, when turning over is allowed.

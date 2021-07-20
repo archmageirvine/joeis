@@ -1,8 +1,9 @@
 package irvine.oeis.a002;
 
+import java.io.Serializable;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import java.io.Serializable;
 
 /**
  * A002024 n appears n times; a(n) = floor(sqrt(2n) + 1/2).

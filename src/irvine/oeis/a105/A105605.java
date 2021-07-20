@@ -1,9 +1,9 @@
 package irvine.oeis.a105;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A105605 An Aitken-like array: see Comments for definition.

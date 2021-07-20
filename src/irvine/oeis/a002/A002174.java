@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-
 import java.util.HashSet;
+
+import irvine.math.z.Z;
 
 /**
  * A002174 Values taken by reduced totient function psi(n).

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
-import irvine.oeis.Sequence;
-
 import java.math.BigInteger;
 
 import org.apfloat.Apfloat;
 import org.apfloat.ApfloatMath;
+
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A000691 Ramanujan's approximation to population of x^2 + y^2.

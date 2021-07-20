@@ -1,8 +1,9 @@
 package irvine.oeis.a002;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000292;
-import java.util.HashSet;
 
 /**
  * A002311 n-th tetrahedral number is the sum of 2 tetrahedral numbers.

@@ -1,9 +1,10 @@
 package irvine.oeis.a002;
 
+import java.util.HashSet;
+
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import java.util.HashSet;
 
 /**
  * A002227 Smallest prime p such that first n primes (p_1=2, ..., p_n) are 7th power residues mod p.

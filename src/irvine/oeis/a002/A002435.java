@@ -1,13 +1,14 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.q.Rationals;
-import irvine.math.q.Q;
 import java.util.Arrays;
 import java.util.Collections;
+
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002435 Second-order Euler numbers.

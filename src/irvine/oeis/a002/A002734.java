@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.factor.factor.Cheetah;
+import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.util.FactorSequence;
-import irvine.factor.factor.Cheetah;
 
 /**
  * A002734 Remove squares!.

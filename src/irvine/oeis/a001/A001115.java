@@ -1,11 +1,11 @@
 package irvine.oeis.a001;
 
-import irvine.factor.factor.Cheetah;
-import irvine.math.z.Z;
-import irvine.math.Mobius;
-import irvine.oeis.Sequence;
-
 import java.util.ArrayList;
+
+import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A001115 Maximal number of pairwise relatively prime polynomials of degree n over GF(2).

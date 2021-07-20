@@ -1,9 +1,9 @@
 package irvine.oeis.a003;
 
+import java.util.List;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.List;
 
 /**
  * A003638 Number of classes per genus in quadratic field with discriminant -4n, -n == 2,3( mod 4).

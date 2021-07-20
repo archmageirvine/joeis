@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.z.Binomial;
 
 /**
  * A002663 a(n) = 2^n - C(n,0) - C(n,1) - C(n,2) - C(n,3).

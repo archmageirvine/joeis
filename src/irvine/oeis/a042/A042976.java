@@ -1,6 +1,5 @@
 package irvine.oeis.a042;
 
-import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**

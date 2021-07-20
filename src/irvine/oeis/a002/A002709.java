@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.math.q.Q;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.z.Binomial;
-import irvine.math.q.Q;
 
 /**
  * A002709 Triangulations of the disk G_{n,0}.

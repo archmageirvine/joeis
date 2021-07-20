@@ -1,8 +1,9 @@
 package irvine.oeis.a002;
 
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import java.util.TreeSet;
 
 /**
  * A002647 Sextan primes: p = (x^6 + y^6 )/(x^2 + y^2 ).

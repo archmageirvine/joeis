@@ -1,8 +1,8 @@
 package irvine.oeis.a067;
 
 import irvine.factor.prime.Fast;
-import irvine.math.z.Z;
 import irvine.math.z.Euler;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

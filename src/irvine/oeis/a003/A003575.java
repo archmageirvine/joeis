@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A003575 Dowling numbers: e.g.f.: exp(x + (exp(b*x) - 1)/b) with b=3.

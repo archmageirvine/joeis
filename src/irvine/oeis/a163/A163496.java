@@ -1,10 +1,10 @@
 package irvine.oeis.a163;
 
+import java.util.HashSet;
+
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A163496 a(n) = the number of distinct primes that can be made by writing n in binary, doubling any number (possibly zero) of 1's in place in this binary representation, and converting back to decimal.

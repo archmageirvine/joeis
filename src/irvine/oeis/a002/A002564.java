@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Pair;
-
-import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * A002564 Number of different ways one can attack all squares on an n X n chessboard using the minimal number of queens.

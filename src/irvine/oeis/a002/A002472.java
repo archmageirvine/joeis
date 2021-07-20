@@ -1,9 +1,9 @@
 package irvine.oeis.a002;
 
+import irvine.factor.factor.Cheetah;
+import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.util.FactorSequence;
-import irvine.factor.factor.Cheetah;
 
 /**
  * A002472 Number of pairs x,y such that y-x=2, (x,n)=1, (y,n)=1 and 1 &lt;= x &lt;= n.

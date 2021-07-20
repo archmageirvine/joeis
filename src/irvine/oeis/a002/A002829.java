@@ -1,11 +1,11 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A002829 Number of trivalent (or cubic) labeled graphs with 2n nodes.

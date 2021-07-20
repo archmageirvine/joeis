@@ -2,8 +2,8 @@ package irvine.oeis.a000;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.LongUtils;
-import irvine.math.z.Z;
 import irvine.math.z.Fibonacci;
+import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**

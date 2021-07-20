@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.HashMap;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A000569 Number of graphical partitions of 2n.

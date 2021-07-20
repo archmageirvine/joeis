@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001190;
-
-import java.util.ArrayList;
 
 /**
  * A000672 Number of 3-valent trees (= boron trees or binary trees) with n nodes.

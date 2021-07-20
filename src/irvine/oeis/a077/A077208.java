@@ -1,10 +1,10 @@
 package irvine.oeis.a077;
 
+import java.util.HashSet;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A077208 Rearrangement of squarefree numbers such that a(k) begins with the end of a(k-1).

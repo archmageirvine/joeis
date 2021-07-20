@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.q.Q;
 
 /**
  * A002678 Numerators of the Taylor coefficients of (e^x-1)^2.

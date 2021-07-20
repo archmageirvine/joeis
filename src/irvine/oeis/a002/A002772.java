@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-
 import java.util.ArrayList;
+
+import irvine.math.z.Z;
 
 /**
  * A002772 Number of terms in a bordered skew determinant.

@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.prime.Fast;
 
 /**
  * A002342 Least positive integer x such that p=(x^2-5y^2)/4 where p is the n-th odd prime such that 5 is a square mod p.

@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A000264 Number of 3-edge-connected rooted cubic maps with 2n nodes and a distinguished Hamiltonian cycle.

@@ -1,8 +1,8 @@
 package irvine.oeis.a011;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
 import irvine.math.cr.ComputableReals;
+import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A011002 Decimal expansion of 4th root of 3.

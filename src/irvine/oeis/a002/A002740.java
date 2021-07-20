@@ -1,8 +1,8 @@
 package irvine.oeis.a002;
 
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.math.factorial.MemoryFactorial;
 
 /**
  * A002740 Number of tree-rooted bridgeless planar maps with two vertices and n faces.

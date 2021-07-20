@@ -1,10 +1,10 @@
 package irvine.oeis.a001;
 
+import java.util.HashSet;
+
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A001915 Primes p such that the congruence 2^x == 3 (mod p) is solvable.

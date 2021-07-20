@@ -1,12 +1,12 @@
 package irvine.oeis.a003;
 
-import irvine.factor.prime.Fast;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+
+import irvine.factor.prime.Fast;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A003032 Smallest integer m such that the product of every 3 consecutive integers &gt; m has a prime factor &gt; prime(n).

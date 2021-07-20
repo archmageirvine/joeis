@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
+import java.util.ArrayList;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-
-import java.util.ArrayList;
 
 /**
  * A002955 Number of (unordered, unlabeled) rooted trimmed trees with n nodes.

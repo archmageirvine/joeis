@@ -1,10 +1,10 @@
 package irvine.oeis.a003;
 
+import java.util.HashSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
-
-import java.util.HashSet;
 
 /**
  * A003603 Fractal sequence obtained from Fibonacci numbers (or Wythoff array).

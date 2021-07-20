@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
+
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
-
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * A000705 n-th superior highly composite number A002201(n) is product of first n terms of this sequence.

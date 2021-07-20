@@ -1,14 +1,13 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import java.util.ArrayList;
 
 import irvine.math.group.PolynomialRingField;
-import irvine.math.q.Rationals;
-import irvine.math.q.Q;
-
-import java.util.ArrayList;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002190 Sum_{n&gt;=0} a(n)*x^n/n!^2 = -log(BesselJ(0,2*sqrt(x))).

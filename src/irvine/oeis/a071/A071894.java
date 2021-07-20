@@ -1,10 +1,9 @@
 package irvine.oeis.a071;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 import irvine.factor.prime.Fast;
+import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * A071894 Largest positive primitive root (&lt;p) of n-th prime p.

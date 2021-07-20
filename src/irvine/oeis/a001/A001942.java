@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
+import java.util.ArrayList;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A001942 Expansion of reciprocal of theta series of Leech lattice.

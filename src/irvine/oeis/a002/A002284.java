@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.group.IntegerField;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A002284 q-expansion of modular form of weight 13/2: eta(8 tau)^12 * theta(tau).

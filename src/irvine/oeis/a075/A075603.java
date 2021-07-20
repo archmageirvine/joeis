@@ -1,11 +1,11 @@
 package irvine.oeis.a075;
 
+import java.util.HashSet;
+
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Permutation;
-
-import java.util.HashSet;
 
 /**
  * A075603 Number of relatively prime numbers using all digits of n.

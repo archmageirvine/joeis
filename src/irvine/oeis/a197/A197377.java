@@ -14,7 +14,7 @@ public class A197377 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A197377() {
     super(1, CR.THREE.multiply(REALS.asin(CR.SIX.divide(CR.EIGHT))));
   }

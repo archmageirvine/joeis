@@ -10,7 +10,7 @@ import irvine.oeis.BeattySequence;
  */
 public class A164086 extends BeattySequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A164086() {
     super(1, CR.FOUR.multiply(CR.PI).divide(CR.THREE));
   }

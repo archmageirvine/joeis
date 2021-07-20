@@ -13,7 +13,7 @@ public class A121598 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A121598() {
     super(1, REALS.csc(CR.PI.divide(CR.SEVEN)));
   }

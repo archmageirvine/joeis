@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A183031 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A183031() {
     super(1, CR.PI.divide(CR.THREE.sqrt()).pow(CR.EIGHT));
   }

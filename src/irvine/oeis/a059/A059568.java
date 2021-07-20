@@ -10,7 +10,7 @@ import irvine.oeis.BeattySequence;
  */
 public class A059568 extends BeattySequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059568() {
     super(1, CR.ONE.subtract(CR.ONE.divide(CR.TWO.log().log())));
   }

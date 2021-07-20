@@ -13,7 +13,7 @@ public class A248618 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A248618() {
     super(0, REALS.asin(CR.TWO.exp().subtract(CR.ONE).divide(CR.TWO.exp().add(CR.ONE))));
   }

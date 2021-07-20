@@ -14,7 +14,7 @@ public class A073442 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A073442() {
     super(2, REALS.cot(CR.PI.pow(CR.TWO).divide(CR.valueOf(180))));
   }

@@ -14,7 +14,7 @@ public class A243711 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A243711() {
     super(0, REALS.atan(REALS.tan(CR.THREE.divide(CR.FOUR)).multiply(REALS.tan(CR.ONE.divide(CR.FOUR)).pow(CR.THREE)).sqrt()).divide(CR.PI));
   }

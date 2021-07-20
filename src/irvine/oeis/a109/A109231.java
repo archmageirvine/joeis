@@ -13,7 +13,7 @@ public class A109231 extends BeattySequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A109231() {
     super(1, REALS.cosh(CR.ONE));
   }

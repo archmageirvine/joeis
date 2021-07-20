@@ -14,7 +14,7 @@ public class A182528 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A182528() {
     super(1, REALS.acos(CR.ZERO).divide(CR.GAMMA.log()));
   }

@@ -13,7 +13,7 @@ public class A059535 extends BeattySequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059535() {
     super(1, REALS.pow(CR.PI, CR.TWO).divide(CR.SIX));
   }

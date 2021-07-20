@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A128426 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A128426() {
     super(0, CR.EIGHT.sqrt().subtract(CR.ONE).log().tanh());
   }

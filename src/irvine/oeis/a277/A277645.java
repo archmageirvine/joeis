@@ -10,7 +10,7 @@ import irvine.oeis.BeattySequence;
  */
 public class A277645 extends BeattySequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A277645() {
     super(1, CR.THREE.add(CR.SIX.sqrt()));
   }

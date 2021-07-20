@@ -14,7 +14,7 @@ public class A073070 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A073070() {
     super(1, CR.ONE.divide(CR.ONE.agm(CR.TWO.sqrt())), 2);
   }

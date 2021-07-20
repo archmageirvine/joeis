@@ -11,7 +11,7 @@ import irvine.oeis.ZBaseExpansionSequence;
  */
 public class A275984 extends ZBaseExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A275984() {
     super(13395, Z.ONE.shiftLeft(44497).subtract(Z.ONE));
   }

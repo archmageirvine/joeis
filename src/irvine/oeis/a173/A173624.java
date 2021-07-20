@@ -12,7 +12,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A173624 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A173624() {
     super(0, CR.PI.pow(CR.TWO).multiply(CR.TWO.log()).divide(CR.EIGHT).subtract(CR.SEVEN.multiply(Zeta.zeta(3)).divide(CR.valueOf(16))));
   }

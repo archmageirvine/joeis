@@ -10,7 +10,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A181163 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A181163() {
     super(10, CR.PI.multiply(CR.valueOf(58).sqrt()).exp().divide(CR.EIGHT));
   }

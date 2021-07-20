@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A183699 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A183699() {
     super(1, Zeta.zeta(2).multiply(Zeta.zeta(3)));
   }

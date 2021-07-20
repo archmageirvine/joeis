@@ -14,7 +14,7 @@ public class A238238 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A238238() {
     super(1, REALS.acos(CR.FIVE.sqrt().subtract(CR.TWO)));
   }

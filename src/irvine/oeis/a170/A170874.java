@@ -14,7 +14,7 @@ public class A170874 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A170874() {
     super(0, CR.GAMMA, 16);
   }

@@ -13,7 +13,7 @@ public class A271563 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A271563() {
     super(0, CR.PI.subtract(CR.TWO.multiply(CR.ONE.add(CR.TWO.sqrt()).sqrt()).multiply(REALS.atan(CR.TWO.multiply(CR.TWO.add(CR.TEN.multiply(CR.TWO.sqrt())).sqrt()).divide(CR.SEVEN)))).divide(CR.TWO.sqrt()));
   }

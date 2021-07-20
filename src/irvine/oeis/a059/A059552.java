@@ -11,7 +11,7 @@ import irvine.oeis.a073.A073005;
  */
 public class A059552 extends BeattySequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059552() {
     super(1, A073005.GAMMA_THIRD.divide(A073005.GAMMA_THIRD.subtract(CR.ONE)));
   }

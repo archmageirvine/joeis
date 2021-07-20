@@ -11,7 +11,7 @@ import irvine.oeis.PrependSequence;
  */
 public class A060708 extends PrependSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A060708() {
     super(new DecimalExpansionSequence(1, CR.PI.subtract(CR.THREE.sqrt()).divide(CR.TWO), 10), 0);
   }

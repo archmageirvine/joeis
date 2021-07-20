@@ -14,7 +14,7 @@ public class A117043 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A117043() {
     super(2, REALS.sec(CR.ONE).pow(CR.FOUR));
   }

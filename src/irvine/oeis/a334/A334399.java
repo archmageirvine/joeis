@@ -13,7 +13,7 @@ public class A334399 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A334399() {
     super(1, REALS.sinh(CR.E));
   }

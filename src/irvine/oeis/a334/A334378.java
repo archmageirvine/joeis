@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A334378 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A334378() {
     super(1, CR.TWO.besselI0().subtract(CR.TWO.besselJ0()).divide(CR.TWO));
   }

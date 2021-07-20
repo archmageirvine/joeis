@@ -11,7 +11,7 @@ import irvine.oeis.BeattySequence;
  */
 public class A059538 extends BeattySequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059538() {
     super(1, Zeta.zeta(3).divide(Zeta.zeta(3).subtract(CR.ONE)));
   }

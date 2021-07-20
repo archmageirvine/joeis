@@ -14,7 +14,7 @@ public class A093063 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A093063() {
     super(0, CR.TWO.add(CR.FOUR.multiply(CR.TWO.sqrt())).add(CR.FOUR.add(CR.TWO.sqrt()).multiply(REALS.asinh(CR.ONE))).divide(CR.valueOf(30)));
   }

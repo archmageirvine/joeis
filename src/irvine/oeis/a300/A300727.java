@@ -19,7 +19,7 @@ public class A300727 extends DecimalExpansionSequence {
   private static final CR COT_PI_DIV_SQRT2_SQR = COT_PI_DIV_SQRT2.multiply(COT_PI_DIV_SQRT2);
   private static final CR COTH_PI_DIV_SQRT2_SQR = COTH_PI_DIV_SQRT2.multiply(COTH_PI_DIV_SQRT2);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A300727() {
     super(0, CR.PI.multiply(COT_PI_DIV_SQRT2.multiply(COTH_PI_DIV_SQRT2_SQR).subtract(COT_PI_DIV_SQRT2_SQR.multiply(COTH_PI_DIV_SQRT2)).subtract(COT_PI_DIV_SQRT2).subtract(COTH_PI_DIV_SQRT2)).divide(COT_PI_DIV_SQRT2_SQR.add(COTH_PI_DIV_SQRT2_SQR).multiply(CR.SQRT2)).add(CR.ONE_THIRD.multiply(CR.PI.pow(2))).subtract(CR.ONE).sqrt());
   }

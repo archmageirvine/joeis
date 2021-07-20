@@ -10,7 +10,7 @@ import irvine.oeis.a073.A073005;
  */
 public class A059551 extends BeattySequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059551() {
     super(1, A073005.GAMMA_THIRD);
   }

@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A246723 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A246723() {
     super(0, CR.FIVE.subtract(CR.valueOf(24).sqrt()));
   }

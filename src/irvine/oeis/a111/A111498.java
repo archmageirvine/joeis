@@ -14,7 +14,7 @@ public class A111498 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A111498() {
     super(0, REALS.tan(CR.PI.divide(CR.valueOf(180))).pow(CR.THREE));
   }

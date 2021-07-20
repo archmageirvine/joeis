@@ -10,7 +10,7 @@ import irvine.oeis.BeattySequence;
  */
 public class A059537 extends BeattySequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059537() {
     super(1, Zeta.zeta(3));
   }

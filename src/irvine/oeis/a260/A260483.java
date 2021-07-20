@@ -10,7 +10,7 @@ import irvine.oeis.BeattySequence;
  */
 public class A260483 extends BeattySequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A260483() {
     super(1, CR.E.pow(CR.PI.inverse()));
   }

@@ -10,7 +10,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A228402 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A228402() {
     super(0, CR.TWO.multiply(CR.PI.subtract(CR.THREE).multiply(CR.PI.add(CR.THREE)).sqrt()).divide(CR.PI));
   }

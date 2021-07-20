@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A217927 Elements of the horizontal ADOMAH periodic table written from right to left,from bottom to top.
+ * A217927 Elements of the horizontal ADOMAH periodic table written from right to left, from bottom to top.
  * @author Georg Fischer
  */
 public class A217927 extends FiniteSequence {

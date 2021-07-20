@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
 /**
- * A049090 Primes for which A049076 &gt; 4.
+ * A049090 Primes for which A049076 &gt;= 4.
  * @author Sean A. Irvine
  */
 public class A049090 extends A000040 {

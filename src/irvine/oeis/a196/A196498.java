@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196498 Decimal expansion of the constant Sum_{k=0..infinity} (-1)^k/(10*k)!.
+ * A196498 Decimal expansion of the constant Sum_{k&gt;=0} (-1)^k/(10*k)!.
  * @author Sean A. Irvine
  */
 public class A196498 extends DecimalExpansionSequence {

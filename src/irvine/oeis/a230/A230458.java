@@ -6,7 +6,7 @@ import irvine.oeis.ZBaseExpansionSequence;
 
 
 /**
- * A230458 Decimal expansion of Δν_{Cs} in unit s^{-1}; one of the seven units of the 2019 SI system.
+ * A230458 Decimal expansion of \u0394\u03bd_{Cs} in unit s^{-1}; one of the seven units of the 2019 SI system.
  * @author Georg Fischer
  */
 public class A230458 extends ZBaseExpansionSequence {

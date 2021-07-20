@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195070 Sum_{k=0..infinity} 1/(10k)!.
+ * A195070 Sum_{k&gt;=0} 1/(10k)!.
  * @author Sean A. Irvine
  */
 public class A195070 extends DecimalExpansionSequence {

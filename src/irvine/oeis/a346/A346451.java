@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A346451 allocated for Sean A. Irvine.
+ * A346451 Decimal expansion of 23 * Pi^4 / (1296 * sqrt(3)).
  * @author Sean A. Irvine
  */
 public class A346451 extends DecimalExpansionSequence {

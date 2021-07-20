@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A346452.
+ * A346452 allocated for Vaclav Kotesovec.
  * @author Sean A. Irvine
  */
 public class A346452 extends DecimalExpansionSequence {

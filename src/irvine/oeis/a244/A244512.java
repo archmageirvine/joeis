@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244512 The angle of the center of each numbered sector of a standard competition dart board.
+ * A244512 The angle of the center of each numbered sector of a standard competition dartboard.
  * @author Georg Fischer
  */
 public class A244512 extends FiniteSequence {

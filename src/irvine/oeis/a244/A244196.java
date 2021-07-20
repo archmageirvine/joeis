@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244196 Cumulative angle at the center of successive numbered sectors of a standard competition dart board, with numbers traversed in order.
+ * A244196 Cumulative angle at the center of successive numbered sectors of a standard competition dartboard, with numbers traversed in order.
  * @author Georg Fischer
  */
 public class A244196 extends FiniteSequence {

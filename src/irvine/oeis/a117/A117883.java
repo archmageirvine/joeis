@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A117883 Alternate numbers on a dart board, read clockwise.
+ * A117883 Alternate numbers on a dartboard, read clockwise.
  * @author Georg Fischer
  */
 public class A117883 extends FiniteSequence {

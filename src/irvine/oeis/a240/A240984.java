@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A240984 Decimal expansion of the infinite product of e*(1-1/n^2)^(n^2) for n >= 2, which evaluates as Pi/e^(3/2).
+ * A240984 Decimal expansion of the infinite product of e*(1-1/n^2)^(n^2) for n &gt;= 2, which evaluates as Pi/e^(3/2).
  * Formula: Pi/exp(3/2)
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A234846 Decimal expansion of Sum_{n>=0} (2n)!/(n!)^3 = Sum_{n>=0} C(2n,n)/n!.
+ * A234846 Decimal expansion of Sum_{n&gt;=0} (2n)!/(n!)^3 = Sum_{n&gt;=0} C(2n,n)/n!.
  * Formula: e^2*besselI0(2)
  * @author Georg Fischer
  */

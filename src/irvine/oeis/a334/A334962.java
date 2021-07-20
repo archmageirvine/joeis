@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A334962 Decimal expansion of the distance from (0, 0) to the nearest point of intersection of y = sec x and y = csc x.
+ * A334962 Decimal expansion of the distance from (0,0) to the nearest point of intersection of y = sec x and y = csc x.
  * Formula: sqrt(2+acot(1)^2)
  * @author Georg Fischer
  */

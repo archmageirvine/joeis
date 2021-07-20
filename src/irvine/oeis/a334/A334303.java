@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A334303 Numbers n such that the Thue chromatic number of graph C_n is equal to 4.
+ * A334303 Numbers m such that the Thue chromatic number of graph C_m is equal to 4.
  * @author Georg Fischer
  */
 public class A334303 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A334960 Decimal expansion of the distance from (0, 0) to the nearest maximum point of y = sin x.
+ * A334960 Decimal expansion of the distance from (0,0) to the nearest maximum point of y = sin x.
  * Formula: 5/sin(acot(Pi))
  * @author Georg Fischer
  */

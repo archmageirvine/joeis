@@ -6,7 +6,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141000 Numbers n for which there is a solution to the Jumping Grasshopper game.
+ * A141000 Numbers k for which there is a solution to the Jumping Grasshopper game.
  * @author Georg Fischer
  */
 public class A141000 extends GeneratingFunctionSequence {

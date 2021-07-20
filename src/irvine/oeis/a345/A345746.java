@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A345746 allocated for Angad Singh.
+ * A345746 Decimal expansion of Pi^(-1/9).
  * @author Sean A. Irvine
  */
 public class A345746 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197380 Decimal expansion of least x > 0 having sin(Pi*x/3) = sin(Pi*x/6)^2.
+ * A197380 Decimal expansion of least x &gt; 0 having sin(Pi*x/3) = sin(Pi*x/6)^2.
  * Formula: 6*atan(2)/Pi
  * @author Georg Fischer
  */

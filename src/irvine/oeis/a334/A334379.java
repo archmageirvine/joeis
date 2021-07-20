@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A334379 Decimal expansion of Sum_{k>=0} 1/((2*k)!)^2.
+ * A334379 Decimal expansion of Sum_{k&gt;=0} 1/((2*k)!)^2.
  * Formula: (besselI0(2)+besselJ0(2))/2
  * @author Georg Fischer
  */

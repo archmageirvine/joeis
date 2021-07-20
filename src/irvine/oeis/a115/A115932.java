@@ -5,7 +5,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115932 Numbers n such that n and 8*n, taken together, are zeroless pandigital.
+ * A115932 Numbers k such that k and 8*k, taken together, are zeroless pandigital.
  * @author Georg Fischer
  */
 public class A115932 extends FiniteSequence {

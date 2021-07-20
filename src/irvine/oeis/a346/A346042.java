@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A346042 Decimal expansion of Sum_{k>=0} 2^floor(k/2)/(k!^2).
+ * A346042 Decimal expansion of Sum_{k&gt;=0} 2^floor(k/2)/(k!^2).
  * Formula: (1/4)*(2+sqrt(2))*besselI0(2^(5/4))+(1/4)*(2-sqrt(2))*besselJ0(2^(5/4))
  * @author Georg Fischer
  */

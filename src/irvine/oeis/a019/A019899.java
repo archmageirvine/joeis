@@ -10,14 +10,12 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A019899 extends DecimalExpansionSequence {
 
-  private final CR mN = UnaryCRFunction.TAN.execute(CR.PI.multiply(getAngle()).divide(CR.valueOf(180)));
-
-  protected long getAngle() {
-    return 1;
+  protected A019899(final long angle) {
+    super(UnaryCRFunction.TAN.execute(CR.PI.multiply(angle).divide(CR.valueOf(180))));
   }
 
-  @Override
-  protected CR getCR() {
-    return mN;
+  /** Construct the sequence. */
+  public A019899() {
+    this(1);
   }
 }

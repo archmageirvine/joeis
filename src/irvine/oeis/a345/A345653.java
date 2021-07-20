@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A345653 allocated for Thomas Anton.
+ * A345653 Decimal expansion of (sqrt(2) + arcsinh(1))/4.
  * @author Sean A. Irvine
  */
 public class A345653 extends DecimalExpansionSequence {

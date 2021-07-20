@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A228725 Decimal expansion of the generalized Euler constant gamma(1, 2).
+ * A228725 Decimal expansion of the generalized Euler constant gamma(1,2).
  * Formula: 5*(gamma+log(2))
  * @author Georg Fischer
  */

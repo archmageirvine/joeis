@@ -6,8 +6,8 @@ package irvine.oeis.a019;
  */
 public class A019816 extends A019810 {
 
-  @Override
-  protected long getAngle() {
-    return 7;
+  /** Construct the sequence. */
+  public A019816() {
+    super(7);
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A145423 Decimal expansion of Sum_{n>=1} (-1)^(n-1)/(n^2-1/4)^2.
+ * A145423 Decimal expansion of Sum_{n&gt;=1} (-1)^(n-1)/(n^2-1/4)^2.
  * Formula: 2*(4-Pi)
  * @author Georg Fischer
  */

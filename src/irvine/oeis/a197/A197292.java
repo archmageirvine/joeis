@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197292 Decimal expansion of least x>0 having sin(6x)=(sin 3x)^2.
+ * A197292 Decimal expansion of least x&gt;0 having sin(6x)=(sin 3x)^2.
  * Formula: 2*atan(2)/6
  * @author Georg Fischer
  */

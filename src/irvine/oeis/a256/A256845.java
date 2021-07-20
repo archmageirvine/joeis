@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A256845 Decimal expansion of the generalized Euler constant gamma(2, 4).
+ * A256845 Decimal expansion of the generalized Euler constant gamma(2,4).
  * Formula: gamma/4
  * @author Georg Fischer
  */

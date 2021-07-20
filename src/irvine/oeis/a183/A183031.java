@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A183031 Decimal expansion of Sum_{j>=1} tau(j)/j^4 = Pi^8/8100.
+ * A183031 Decimal expansion of Sum_{j&gt;=1} tau(j)/j^4 = Pi^8/8100.
  * Formula: (Pi/sqrt(3))^8
  * @author Georg Fischer
  */

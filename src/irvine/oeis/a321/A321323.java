@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A321323 Numbers n such that n^(2^20) + 1 is prime (a generalized Fermat prime).
+ * A321323 Numbers k such that k^(2^20) + 1 is prime (a generalized Fermat prime).
  *
  * @author Georg Fischer
  */

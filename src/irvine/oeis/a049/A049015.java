@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000043;
 
 /**
- * A049015 Numbers n such that sum of first n Mersenne prime exponents is prime.
+ * A049015 Numbers k such that the sum of the first k Mersenne prime exponents is prime.
  * @author Sean A. Irvine
  */
 public class A049015 extends A000043 {

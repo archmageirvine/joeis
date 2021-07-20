@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197376 Decimal expansion of least x>0 having sin(x)=(sin x/2)^2.
+ * A197376 Decimal expansion of least x&gt;0 having sin(x)=(sin x/2)^2.
  * Formula: 2*atan(2)
  * @author Georg Fischer
  */

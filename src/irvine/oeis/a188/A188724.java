@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188724 Decimal expansion of shape of a (Pi/2)-extension rectangle; shape = (1/4)*(Pi + sqrt(16 + Pi^2).
+ * A188724 Decimal expansion of shape of a (Pi/2)-extension rectangle; shape = (1/4)*(Pi + sqrt(16 + Pi^2)).
  * Formula: (1/4)*(Pi+sqrt(16+Pi^2)
  * @author Georg Fischer
  */

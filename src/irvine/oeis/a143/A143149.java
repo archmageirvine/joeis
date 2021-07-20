@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A143149 Decimal expansion of upper bound using Shannon entropy arising in randomly-projected hypercubes.
+ * A143149 Decimal expansion of 5*sqrt(2*Pi)/4.
  * Formula: (5/4)*(2*Pi)^(1/2)
  * @author Georg Fischer
  */

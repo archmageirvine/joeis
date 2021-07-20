@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A245198 Decimal expansion of the Landau-Kolmogorov constant C(3, 1) for derivatives in the case L_infinity(-infinity, infinity).
+ * A245198 Decimal expansion of the Landau-Kolmogorov constant C(3,1) for derivatives in the case L_infinity(-infinity, infinity).
  * Formula: 5*root(9, 3)
  * @author Georg Fischer
  */

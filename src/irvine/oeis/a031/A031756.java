@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031756 Least term in period of continued fraction for sqrt(n) is 78.
+ * A031756 Numbers k such that the least term in the periodic part of the continued fraction for sqrt(k) is 78.
  * @author Sean A. Irvine
  */
 public class A031756 extends A031424 {

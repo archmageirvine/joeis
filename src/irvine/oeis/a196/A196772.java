@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196772 Decimal expansion of the number c for which the curve y=1/x is tangent to the curve y=sin(x-c), and 0 < x < 2*Pi; c = Pi - sqrt(r) - arccos(r-1), where r=(1+sqrt(5))/2 (the golden ratio).
+ * A196772 Decimal expansion of the number c for which the curve y=1/x is tangent to the curve y=sin(x-c), and 0 &lt; x &lt; 2*Pi; c = Pi - sqrt(r) - arccos(r-1), where r=(1+sqrt(5))/2 (the golden ratio).
  * Formula: Pi-sqrt(phi)-arccos(phi-1)
  * @author Georg Fischer
  */

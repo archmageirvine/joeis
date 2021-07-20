@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A059801 Numbers n such that 4^n - 3^n is prime.
+ * A059801 Numbers k such that 4^k - 3^k is prime.
  * @author Georg Fischer
  */
 public class A059801 extends PrimePositionSubsequence {

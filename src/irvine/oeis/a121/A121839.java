@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A121839 Decimal expansion of sum(k>=1, 1/C(k)), where C(k) is a Catalan Number (A000108).
+ * A121839 Decimal expansion of sum(k&gt;=1, 1/C(k)), where C(k) is a Catalan Number (A000108).
  * Formula: 1+4*sqrt(3)*Pi/27
  * @author Georg Fischer
  */

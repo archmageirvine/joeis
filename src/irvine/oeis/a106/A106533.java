@@ -20,9 +20,9 @@ public class A106533 extends DecimalExpansionSequence {
   /** The rumour constant. */
   public static final CR RUMOUR_CONSTANT = new MyFunction().inverseMonotone(CR.ZERO, CR.HALF).execute(CR.ZERO);
 
-  @Override
-  protected CR getCR() {
-    return RUMOUR_CONSTANT;
+  /** Construct the sequence. */
+  public A106533() {
+    super(RUMOUR_CONSTANT);
   }
 }
 

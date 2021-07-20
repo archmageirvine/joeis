@@ -19,8 +19,8 @@ public class A073005 extends DecimalExpansionSequence {
     .divide(FLD.pow(CR.THREE, CR.valueOf(new Q(1, 12))))
     .divide(FLD.pow(CR.TWO.agm(CR.THREE.sqrt().add(CR.TWO).sqrt()), CR.valueOf(new Q(1, 3))));
 
-  @Override
-  protected CR getCR() {
-    return GAMMA_THIRD;
+  /** Construct the sequence. */
+  public A073005() {
+    super(GAMMA_THIRD);
   }
 }

@@ -1,6 +1,5 @@
 package irvine.oeis.a013;
 
-import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
 import irvine.oeis.ContinuedFractionSequence;
@@ -17,15 +16,7 @@ public class A013631 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A013631() {
-    super(new DecimalExpansionSequence() {
-
-      private final CR mZeta = Zeta.zeta(3);
-
-      @Override
-      protected CR getCR() {
-        return mZeta;
-      }
-    });
+    super(new DecimalExpansionSequence(Zeta.zeta(3)));
   }
 
   @Override

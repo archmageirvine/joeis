@@ -23,12 +23,7 @@ public final class Period {
     final String a = args[1];
     final IntegersMod mm = new IntegersMod(n);
     final int period = mm.order(Z.TEN).intValueExact();
-    final DecimalExpansionSequence seq = new DecimalExpansionSequence() {
-      @Override
-      protected CR getCR() {
-        return CR.valueOf(n).inverse();
-      }
-    };
+    final DecimalExpansionSequence seq = new DecimalExpansionSequence(CR.valueOf(n).inverse());
     final StringBuilder sb = new StringBuilder();
     for (int k = 0; k < 10000; ++k) {
       sb.append(seq.next());

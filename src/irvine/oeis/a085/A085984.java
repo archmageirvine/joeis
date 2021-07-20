@@ -18,11 +18,9 @@ public class A085984 extends DecimalExpansionSequence {
     }
   }
 
-  private static final CR N = new MyFunction().inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A085984() {
+    super(new MyFunction().inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO));
   }
 }
 

@@ -32,10 +32,9 @@ public class A042975 extends DecimalExpansionSequence {
       return CR.valueOf(q).getApprox(precision);
     }
   };
-  private static final CR N = M.sqrt();
 
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A042975() {
+    super(M.sqrt());
   }
 }

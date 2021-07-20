@@ -1,6 +1,5 @@
 package irvine.oeis.a013;
 
-import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
@@ -11,11 +10,9 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A013675 extends DecimalExpansionSequence {
 
-  private static final CR N = Zeta.zeta(17);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A013675() {
+    super(Zeta.zeta(17));
   }
 
   @Override

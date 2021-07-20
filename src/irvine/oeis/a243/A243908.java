@@ -10,15 +10,8 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A243908 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.FIVE.add(CR.FIVE.sqrt().multiply(CR.TWO)).divide(CR.valueOf(135));
-
   /** Construct the sequence. */
   public A243908() {
-    next();
-  }
-
-  @Override
-  protected CR getCR() {
-    return N;
+    super(-1, CR.FIVE.add(CR.FIVE.sqrt().multiply(CR.TWO)).divide(CR.valueOf(135)));
   }
 }

@@ -12,8 +12,8 @@ public class A068465 extends DecimalExpansionSequence {
   /** The constant Gamma(3/4). */
   public static final CR GAMMA_THREE_QUARTERS = CR.PI.multiply(CR.TWO.sqrt()).divide(A068466.GAMMA_QUARTER);
 
-  @Override
-  protected CR getCR() {
-    return GAMMA_THREE_QUARTERS;
+  /** Construct the sequence. */
+  public A068465() {
+    super(GAMMA_THREE_QUARTERS);
   }
 }

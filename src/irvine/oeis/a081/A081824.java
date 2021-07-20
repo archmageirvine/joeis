@@ -13,8 +13,8 @@ public class A081824 extends DecimalExpansionSequence {
   /** Conductance quantum G_0 in S. */
   private static final CR CONDUCTANCE_QUANTUM = PhysicsConstants.ELEMENTARY_CHARGE_CR.multiply(PhysicsConstants.ELEMENTARY_CHARGE_CR).multiply(CR.TWO).divide(PhysicsConstants.PLANCK_CONSTANT_CR).multiply(10000);
 
-  @Override
-  protected CR getCR() {
-    return CONDUCTANCE_QUANTUM;
+  /** Construct the sequence. */
+  public A081824() {
+    super(CONDUCTANCE_QUANTUM);
   }
 }

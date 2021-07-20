@@ -10,23 +10,21 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A065442 extends DecimalExpansionSequence {
 
-  private static final CR N = new CR() {
-    @Override
-    protected Z approximate(final int precision) {
-      if (precision >= 0) {
-        return Z.ZERO;
+  /** Construct the sequence. */
+  public A065442() {
+    super(new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        if (precision >= 0) {
+          return Z.ZERO;
+        }
+        Z sum = Z.ZERO;
+        final Z t = Z.ONE.shiftLeft(-precision);
+        for (int k = 1; k <= -precision; ++k) {
+          sum = sum.add(t.divide(Z.ONE.shiftLeft(k).subtract(1)));
+        }
+        return sum;
       }
-      Z sum = Z.ZERO;
-      final Z t = Z.ONE.shiftLeft(-precision);
-      for (int k = 1; k <= -precision; ++k) {
-        sum = sum.add(t.divide(Z.ONE.shiftLeft(k).subtract(1)));
-      }
-      return sum;
-    }
-  };
-
-  @Override
-  protected CR getCR() {
-    return N;
+    });
   }
 }

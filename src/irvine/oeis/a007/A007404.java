@@ -10,16 +10,16 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A007404 extends DecimalExpansionSequence {
 
-  private CR mA = CR.HALF;
-
-  {
+  private static CR build() {
+    CR n = CR.HALF;
     for (int k = 1; k < 31; ++k) {
-      mA = mA.add(CR.valueOf(Z.ONE.shiftLeft(1 << k)).inverse());
+      n = n.add(CR.valueOf(Z.ONE.shiftLeft(1 << k)).inverse());
     }
+    return n;
   }
 
-  @Override
-  protected CR getCR() {
-    return mA;
+  /** Construct the sequence. */
+  public A007404() {
+    super(build());
   }
 }

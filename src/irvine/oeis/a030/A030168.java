@@ -35,11 +35,6 @@ public class A030168 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A030168() {
-    super(new DecimalExpansionSequence() {
-      @Override
-      protected CR getCR() {
-        return COPELAND_ERDOS;
-      }
-    });
+    super(new DecimalExpansionSequence(COPELAND_ERDOS));
   }
 }

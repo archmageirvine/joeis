@@ -22,11 +22,9 @@ public class A016122 extends DecimalExpansionSequence {
     }
   }
 
-  private static final CR N = new MyFunction().inverseMonotone(CR.FOUR, CR.FIVE).execute(CR.ZERO);
-
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A016122() {
+    super(new MyFunction().inverseMonotone(CR.FOUR, CR.FIVE).execute(CR.ZERO));
   }
 }
 

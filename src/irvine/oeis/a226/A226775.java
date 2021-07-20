@@ -13,9 +13,9 @@ public class A226775 extends DecimalExpansionSequence {
   /** A226775 as a real. */
   public static final CR N = A106533.RUMOUR_CONSTANT.multiply(CR.TWO);
 
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A226775() {
+    super(N);
   }
 }
 

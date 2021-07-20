@@ -17,8 +17,8 @@ public class A068466 extends DecimalExpansionSequence {
   public static final CR GAMMA_QUARTER = FLD.pow(CR.TAU, CR.valueOf(new Q(3, 2)))
     .divide(CR.ONE.agm(CR.TWO.sqrt())).sqrt();
 
-  @Override
-  protected CR getCR() {
-    return GAMMA_QUARTER;
+  /** Construct the sequence. */
+  public A068466() {
+    super(GAMMA_QUARTER);
   }
 }

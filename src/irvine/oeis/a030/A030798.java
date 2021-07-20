@@ -21,9 +21,9 @@ public class A030798 extends DecimalExpansionSequence {
   /** Solution to <code>x^x=2</code>. */
   public static final CR N = new MyFunction().inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO);
 
-  @Override
-  protected CR getCR() {
-    return N;
+  /** Construct the sequence. */
+  public A030798() {
+    super(N);
   }
 }
 

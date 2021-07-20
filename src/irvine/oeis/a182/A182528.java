@@ -16,6 +16,7 @@ public class A182528 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A182528() {
-    super(1, REALS.acos(CR.ZERO).divide(CR.GAMMA.log()));
+    super(2, REALS.acos(CR.ZERO).divide(CR.GAMMA.log()));
+    next();
   }
 }

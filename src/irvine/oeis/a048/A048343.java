@@ -30,7 +30,7 @@ public class A048343 extends A002113 {
           final Z e = palin.divide(d);
           if (e.compareTo(d) > 0 && e.equals(ZUtils.reverse(d))) { // d != e (not palindromic), and d < e for symmetry
             final int len = d.toString().length();
-            System.out.println("Solved: " + palin + " = " + d + " * " + e);
+            //System.out.println("Solved: " + palin + " = " + d + " * " + e);
             ++mCount[len];
             if (len > mN) {
               // We will never see a smaller solution

@@ -12,6 +12,6 @@ public class A345449 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A345449() {
-    super(CR.ONE.subtract(CR.valueOf(new Q(23, 27)).sqrt()).divide(CR.TWO));
+    super(-1, CR.ONE.subtract(CR.valueOf(new Q(23, 27)).sqrt()).divide(CR.TWO));
   }
 }

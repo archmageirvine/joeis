@@ -21,9 +21,9 @@ public class A005596 extends DecimalExpansionSequence {
     final A006206 a = new A006206();
     a.next();
     for (int k = 2; k <= acc; ++k) {
-      prod = ComputableReals.SINGLETON.multiply(prod, ComputableReals.SINGLETON.pow(Zeta.zeta(k, acc), CR.valueOf(a.next())));
+      prod = prod.multiply(ComputableReals.SINGLETON.pow(Zeta.zeta(k), CR.valueOf(a.next())));
     }
-    mA = ComputableReals.SINGLETON.inverse(prod);
+    mA = prod.inverse();
   }
 
   @Override

@@ -1,7 +1,6 @@
 package irvine.oeis.a033;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
@@ -20,7 +19,7 @@ public class A033150 extends DecimalExpansionSequence {
       mPrevAccuracy = n;
       mA = CR.ONE;
       for (int k = 2; k <= 2 * n; ++k) { // Heuristic number of terms!
-        mA = ComputableReals.SINGLETON.add(mA, CR.ONE.subtract(Zeta.zeta(k, n).inverse()));
+        mA = mA.add(CR.ONE.subtract(Zeta.zeta(k).inverse()));
       }
     }
   }

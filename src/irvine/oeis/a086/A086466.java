@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A086466 Decimal expansion of 2*sqrt(5)/5 arccsch(2).
- * Formula: 2*sqrt(5)/5arccsch(2)
+ * Formula: <code>2*sqrt(5)/5arccsch(2)</code>
  * @author Georg Fischer
  */
 public class A086466 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A320157 Decimal expansion of real root of x^5 - 5x^4 + 24x^3 - 108x^2 + 432x - 1296 = 0, x^6*(x + 7) - 6^6 = 0.
- * Polynomial: x^5-5x^4+24x^3-108x^2+432x-1296
+ * Polynomial: <code>x^5-5x^4+24x^3-108x^2+432x-1296</code>
  * @author Georg Fischer
  */
 public class A320157 extends PolynomialRootExpansionSequence {

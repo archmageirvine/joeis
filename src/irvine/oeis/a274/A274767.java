@@ -5,7 +5,6 @@ import irvine.oeis.NoncomputableSequence;
 
 /**
  * A274767 Decimal expansion of the googol-th prime.
- * From http://math.stackexchange.com/questions/1848854/how-many-digits-of-the-googol-th-prime-can-we-calculate-or-were-calculated
  * @author Georg Fischer
  */
 public class A274767 extends NoncomputableSequence {

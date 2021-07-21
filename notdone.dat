@@ -414,7 +414,6 @@ A005525 Maximal number of rational points on curve of genus 2 over GF(q)
 A005526 Maximal number of rational points that a (smooth, geometrically irreducible) curve of genus 3 over the finite field GF(q) can have
 A005527 Rational points on curves of genus n over GF(2)
 A005591 Number of semigroups of order n with 3 idempotents
-A005597 Decimal expansion of the twin prime constant [need CR impl of odd zeta function]
 A005636 Number of n-node connected graphs without points of degree 2, can't find paper
 A005637 Number of n-node graphs without nodes of degree 2, can't find paper
 A005641 Number of 2-diregular digraphs with n nodes, cycle index, insuffient detail

@@ -2,6 +2,7 @@ package irvine.oeis.a033;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
+import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
@@ -10,22 +11,23 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A033150 extends DecimalExpansionSequence {
 
-  private CR mA = null;
-  private int mPrevAccuracy = 0;
-
-  @Override
-  protected void ensureAccuracy(final int n) {
-    if (n > mPrevAccuracy) {
-      mPrevAccuracy = n;
-      mA = CR.ONE;
-      for (int k = 2; k <= 2 * n; ++k) { // Heuristic number of terms!
-        mA = mA.add(CR.ONE.subtract(Zeta.zeta(k).inverse()));
+  /** Construct the sequence. */
+  public A033150() {
+    super(new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        final int opPrec = -precision;
+        Z sum = Z.ONE.shiftLeft(opPrec);
+        int k = 1;
+        while (true) {
+          final Z term = CR.ONE.subtract(Zeta.zeta(++k).inverse()).getApprox(-opPrec);
+          if (term.isZero()) {
+            break;
+          }
+          sum = sum.add(term);
+        }
+        return sum;
       }
-    }
-  }
-
-  @Override
-  protected CR getCR() {
-    return mA;
+    });
   }
 }

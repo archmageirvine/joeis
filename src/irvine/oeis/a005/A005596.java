@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
+import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.a006.A006206;
 
@@ -12,22 +12,26 @@ import irvine.oeis.a006.A006206;
  */
 public class A005596 extends DecimalExpansionSequence {
 
-  private CR mA = null;
-
-  @Override
-  protected void ensureAccuracy(final int n) {
-    final int acc = 4 * n; // This might not be enough
-    CR prod = CR.ONE;
-    final A006206 a = new A006206();
-    a.next();
-    for (int k = 2; k <= acc; ++k) {
-      prod = prod.multiply(ComputableReals.SINGLETON.pow(Zeta.zeta(k), CR.valueOf(a.next())));
-    }
-    mA = prod.inverse();
-  }
-
-  @Override
-  protected CR getCR() {
-    return mA;
+  /** Construct the sequence. */
+  public A005596() {
+    super(new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        final int opPrec = -precision;
+        Z prod = Z.ONE.shiftLeft(opPrec);
+        final A006206 a = new A006206();
+        a.next();
+        int k = 1;
+        while (true) {
+          final Z zeta = Zeta.zeta(++k).pow(CR.valueOf(a.next())).getApprox(-opPrec);
+          final Z prev = prod;
+          prod = prod.multiply(zeta).shiftRight(opPrec);
+          if (prod.equals(prev)) {
+            break;
+          }
+        }
+        return prod;
+      }
+    }.inverse());
   }
 }

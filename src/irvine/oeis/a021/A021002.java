@@ -16,7 +16,7 @@ public class A021002 extends DecimalExpansionSequence {
     super(new CR() {
       @Override
       protected Z approximate(final int precision) {
-        final int opPrec = 5 - precision;
+        final int opPrec = -precision;
         Z prod = Z.ONE.shiftLeft(opPrec);
         int k = 1;
         while (true) {
@@ -27,7 +27,7 @@ public class A021002 extends DecimalExpansionSequence {
             break;
           }
         }
-        return prod.shiftRight(5);
+        return prod;
       }
     });
   }

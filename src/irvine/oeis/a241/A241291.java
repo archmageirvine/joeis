@@ -2,7 +2,6 @@ package irvine.oeis.a241;
 // manually at 2021-07-20
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
@@ -13,8 +12,6 @@ import irvine.oeis.DecimalExpansionSequence;
  * @author Georg Fischer
  */
 public class A241291 extends DecimalExpansionSequence {
-
-  private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
   /** Construct the sequence */
   public A241291() {
@@ -32,6 +29,11 @@ public class A241291 extends DecimalExpansionSequence {
 
   protected static final int NBRDGT = 128; // implementation limit
   protected int mTermNo = 0;
+  private static final CR INV_LOG10 = CR.TEN.log().inverse();
+
+  private static CR log10(final CR x) {
+    return x.log().multiply(INV_LOG10);
+  }
 
   /**
    * Compute some leading digits of a power tower
@@ -49,7 +51,7 @@ public class A241291 extends DecimalExpansionSequence {
    */
   protected static CR getCR(final int base, final Z expr) {
     final CR crExpr = CR.valueOf(expr);
-    return CR.TEN.pow((CR.valueOf(base).log().divide(CR.TEN.log()).multiply(crExpr)).frac());
+    return CR.TEN.pow(log10(CR.valueOf(base)).multiply(crExpr).frac());
   }
 
   @Override

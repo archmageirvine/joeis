@@ -13,6 +13,6 @@ public class A214024 extends ZBaseExpansionSequence {
 
   /** Construct the sequence */
   public A214024() {
-    super(155, Z.ONE.shiftLeft(2*4*4*4*4));
+    super(155, Z.ONE.shiftLeft(2 * 4 * 4 * 4 * 4));
   }
 }

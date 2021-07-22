@@ -20,7 +20,6 @@ public class A049057 implements Sequence {
       final Z t = Cheetah.factor(s).sigma(-1);
       final Z u = Cheetah.factor(t).sigma(-1);
       if (u.equals(mN)) {
-        System.out.println(mN + " " + s + " " + t);
         return mN;
       }
     }

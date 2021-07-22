@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003617;
 import irvine.oeis.a033.A033308;
 
 /**
- * A340219 future sequence
+ * A340219 Constant whose decimal expansion is the concatenation of the smallest n-digit prime A003617(n), for n = 1, 2, 3, ...
  * @author Georg Fischer
  */
 public class A340219 extends A033308 {

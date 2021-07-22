@@ -5,7 +5,7 @@ import irvine.oeis.a033.A033308;
 import irvine.oeis.a061.A061432;
 
 /**
- * A340206 future sequence
+ * A340206 Constant whose decimal expansion is the concatenation of the smallest n-digit square A061432(n), for n = 1, 2, 3, ...
  * @author Georg Fischer
  */
 public class A340206 extends A033308 {

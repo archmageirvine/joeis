@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * Multiplicative closure of an in increasing sequence.
+ * Multiplicative closure of an increasing sequence.
  * @author Sean A. Irvine
  */
 public class MultiplicativeClosureSequence extends MemorySequence {

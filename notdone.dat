@@ -1664,3 +1664,4 @@ A049058 Second element t of (-1)sigma sociable triple (r,s,t): s=(-1)sigma(r), t
 A049059 Third element t of (-1)sigma sociable triple (r,s,t): s=(-1)sigma(r), t=(-1)sigma(s), r=(-1)sigma(t), where if x=Product p(i)^r(i), then (-1)sigma(x)=Product(-1+(Sum p(i)^s(i), s(i)=1 to r(i))).
 A049082 Number of putative parameter sets for orthogonal arrays with 2^n runs
 A049083 Number of dual atoms in lattice Lambda'_{2^n} of putative parameter sets for orthogonal arrays with 2^n runs.
+A049205 Theta series for a certain extremal 42-dimensional unimodular lattice.

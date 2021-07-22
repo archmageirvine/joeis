@@ -50,8 +50,8 @@ public final class Zeta {
         return Z.ZERO;
       }
       final int opPrec = EXTRA_PRECISION - precision;
-      Z scale = Z.ONE.shiftLeft(opPrec);
-      Z ps = Z.valueOf(mP).shiftLeft(2 * opPrec);
+      final Z scale = Z.ONE.shiftLeft(opPrec);
+      final Z ps = Z.valueOf(mP).shiftLeft(2 * opPrec);
       Z sum = Z.ZERO;
       long k = 0;
       while (true) {
@@ -86,8 +86,8 @@ public final class Zeta {
         return Z.ZERO;
       }
       final int opPrec = EXTRA_PRECISION - precision;
-      Z scale = Z.ONE.shiftLeft(opPrec);
-      Z scale2 = Z.ONE.shiftLeft(2 * opPrec);
+      final Z scale = Z.ONE.shiftLeft(opPrec);
+      final Z scale2 = Z.ONE.shiftLeft(2 * opPrec);
       Z sum = Z.ZERO;
       long k = 0;
       while (true) {
@@ -108,9 +108,7 @@ public final class Zeta {
     for (int n = 0; n <= 2 * p; ++n) {
       sum = REALS.signedAdd((n & 1) == 1, sum, zeta(2 * n).multiply(zeta(4 * p - 2 * n)));
     }
-    sum = sum.divide(CR.PI);
-    sum = sum.subtract(new PrescaledZeta4m1(p));
-    return sum;
+    return sum.divide(CR.PI).subtract(new PrescaledZeta4m1(p));
   }
 
   // Compute zeta(4*p+1)
@@ -164,7 +162,7 @@ public final class Zeta {
     if (res != null) {
       return res;
     }
-    CR r;
+    final CR r;
     if ((n & 1) == 1) {
       if (n == 3) {
         r = ZETA3; // we have a comparatively "fast" implementation for this

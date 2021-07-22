@@ -5,7 +5,7 @@ import irvine.oeis.a033.A033308;
 import irvine.oeis.a061.A061433;
 
 /**
- * A340207 future sequence
+ * A340207 Constant whose decimal expansion is the concatenation of the largest n-digit square A061433(n), for n = 1, 2, 3, ...
  * @author Georg Fischer
  */
 public class A340207 extends A033308 {

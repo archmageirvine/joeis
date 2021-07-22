@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A346452 allocated for Vaclav Kotesovec.
+ * A346452 a(n) = [x^n] Product_{k&gt;=1} (1 + n^(k-1)*x^k) / (1 - n^(k-1)*x^k).
  * @author Sean A. Irvine
  */
 public class A346452 extends DecimalExpansionSequence {

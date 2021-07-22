@@ -9,7 +9,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a001.A001037;
 
 /**
- * A005597.
+ * A005597 Decimal expansion of the twin prime constant C_2 = Product_{ p prime &gt;= 3 } (1-1/(p-1)^2).
  * @author Sean A. Irvine
  */
 public class A005597 extends DecimalExpansionSequence {
@@ -31,7 +31,7 @@ public class A005597 extends DecimalExpansionSequence {
     super(new CR() {
       @Override
       protected Z approximate(final int precision) {
-        final int opPrec = 5 -precision;
+        final int opPrec = -precision;
         Z sum = Z.ZERO;
         int k = 1;
         while (true) {
@@ -41,7 +41,7 @@ public class A005597 extends DecimalExpansionSequence {
           }
           sum = sum.add(t);
         }
-        return sum.negate().shiftRight(5);
+        return sum.negate();
       }
     }.exp());
   }

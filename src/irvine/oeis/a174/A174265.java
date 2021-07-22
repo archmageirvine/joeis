@@ -8,9 +8,10 @@ import irvine.oeis.a000.A000043;
  * @author Georg Fischer
  */
 public class A174265 extends A000043 {
-	
-  /** Construct the sequence */
+
+  /** Construct the sequence. */
   public A174265() {
     super.next();
   }
 }
+

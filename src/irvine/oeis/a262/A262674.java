@@ -7,7 +7,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A262674 Decimal expansion of the real root of x^3 - 6x^2 + 4x - 2.
- * Polynomial: x^3-6x^2+4x-2
+ * Polynomial: <code>x^3-6x^2+4x-2</code>
  * @author Georg Fischer
  */
 public class A262674 extends PolynomialRootExpansionSequence {

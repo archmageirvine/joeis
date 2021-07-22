@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A262606 Decimal expansion of Integral_{0..1} log(1-x)^2*log(x)^2 dx (negated).
- * Formula: 24-4Pi^2/3-Pi^4/90-8zeta(3)
+ * Formula: <code>24-4Pi^2/3-Pi^4/90-8zeta(3)</code>
  * @author Georg Fischer
  */
 public class A262606 extends DecimalExpansionSequence {

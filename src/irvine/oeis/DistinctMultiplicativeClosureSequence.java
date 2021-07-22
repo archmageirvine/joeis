@@ -27,6 +27,16 @@ public class DistinctMultiplicativeClosureSequence implements Sequence {
       }
       return Integer.compare(mIndex, o.mIndex);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof State && ((State) obj).mN.equals(mN) && ((State) obj).mIndex == mIndex;
+    }
+
+    @Override
+    public int hashCode() {
+      return mN.hashCode() + mIndex;
+    }
   }
 
   private final MemorySequence mSeq;

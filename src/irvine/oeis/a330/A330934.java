@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A330934 Decimal expansion of the area of a sofa that can be moved around a 90-degree turn both to the right and to the left in a hallway of unit width.
- * Formula: (3+2sqrt(2))^(1/3)+(3-2*sqrt(2))^(1/3)-1+atan(((sqrt(2)+1)^(1/3)-(sqrt(2)-1)^(1/3))/2)
+ * Formula: <code>(3+2sqrt(2))^(1/3)+(3-2*sqrt(2))^(1/3)-1+atan(((sqrt(2)+1)^(1/3)-(sqrt(2)-1)^(1/3))/2)</code>
  * @author Georg Fischer
  */
 public class A330934 extends DecimalExpansionSequence {

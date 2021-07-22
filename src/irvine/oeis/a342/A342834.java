@@ -10,18 +10,17 @@ import irvine.oeis.a003.A003618;
  */
 public class A342834 extends A003618 {
 
-  protected String mS;
+  protected StringBuilder mS = new StringBuilder();
   protected int mPos;
 
   /** Construct the sequence. */
   public A342834() {
-    mS = "";
     mPos = 0;
   }
 
   @Override
   public Z next() {
-    mS += super.next().toString();
+    mS.append(super.next());
     return new Z(mS);
   }
 }

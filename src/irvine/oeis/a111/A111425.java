@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000073;
 
 
 /**
- * A111425 a(n) = Tribonacci(Fibonacci(n)).
+ * A111425 a(n) = tribonacci(Fibonacci(n)).
  * Formula: <code>a(n) = A000073(A000045(n)).</code>
  * @author Georg Fischer
  */

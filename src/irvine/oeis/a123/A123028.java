@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123028 a(n) = (3*n^2-3*n+1)*a(n-2), n&gt;2.
+ * A123028 a(n) = (3*n^2 + 3*n + 1)*a(n-2), for n&gt;2, with a(0) = a(1) = 1.
  * @author Georg Fischer
  */
 public class A123028 extends HolonomicRecurrence {

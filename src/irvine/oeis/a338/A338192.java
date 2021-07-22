@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A338192 Sum of Fibonacci and Tribonacci numbers. A000073(n) + A000045(n).
+ * A338192 Sum of Fibonacci and tribonacci numbers. A000073(n) + A000045(n).
  * @author Georg Fischer
  */
 public class A338192 extends HolonomicRecurrence {

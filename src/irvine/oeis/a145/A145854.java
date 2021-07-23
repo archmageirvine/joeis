@@ -5,7 +5,7 @@ import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.a323.A323601;
 
 /**
- * A145854 Continued fraction for sin(pi/7)
+ * A145854 Continued fraction for sin(pi/7).
  * @author Georg Fischer
  */
 public class A145854 extends ContinuedFractionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A182783 Numbers n such that 2*n^4-1 is a prime.
+ * A182783 Numbers k such that 2*k^4 - 1 is a prime.
  * @author Georg Fischer
  */
 public class A182783 extends PrimePositionSubsequence {

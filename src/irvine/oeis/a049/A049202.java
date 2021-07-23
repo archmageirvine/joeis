@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
 /**
- * A049202 Primes p whose order of primeness A049076(p) is &gt; 6.
+ * A049202 Primes p whose order of primeness A049076(p) is &gt;= 6.
  * @author Sean A. Irvine
  */
 public class A049202 extends A000040 {

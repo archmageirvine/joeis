@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034838 Numbers n that are divisible by every digit of n.
+ * A034838 Numbers k that are divisible by every digit of k.
  * @author Sean A. Irvine
  */
 public class A034838 implements Sequence {

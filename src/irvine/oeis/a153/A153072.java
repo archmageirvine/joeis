@@ -4,7 +4,7 @@ package irvine.oeis.a153;
 import irvine.oeis.ContinuedFractionSequence;
 
 /**
- * A153072 Continued fraction for L(3, chi4), where L(s, chi4) is the Dirichlet L-function for the non-principal character modulo 4
+ * A153072 Continued fraction for L(3, chi4), where L(s, chi4) is the Dirichlet L-function for the non-principal character modulo 4.
  * @author Georg Fischer
  */
 public class A153072 extends ContinuedFractionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A214289 Numbers n such that 2*n^3-1 is prime.
+ * A214289 Numbers k such that 2*k^3 - 1 is prime.
  * @author Georg Fischer
  */
 public class A214289 extends PrimePositionSubsequence {

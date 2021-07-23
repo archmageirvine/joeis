@@ -2,8 +2,10 @@ package irvine.oeis.a241;
 // manually at 2021-07-20
 
 import irvine.math.cr.CR;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A241291 Decimal expansion of 2^(2^(2^(2^(2^2)))) = 2^^6.
@@ -51,7 +53,27 @@ public class A241291 extends DecimalExpansionSequence {
    */
   protected static CR getCR(final int base, final Z expr) {
     final CR crExpr = CR.valueOf(expr);
-    return CR.TEN.pow(log10(CR.valueOf(base)).multiply(crExpr).frac());
+    StringUtils.message("expr=" + crExpr);
+    final CR l = log10(CR.valueOf(base));
+    StringUtils.message("l=" + l);
+
+    final CR b = crExpr.divide(CR.TEN.pow(expr.toString().length() - 1));
+    StringUtils.message("b=" + b);
+    final CR c = b.multiply(l);
+    StringUtils.message("c=" + c);
+    StringUtils.message("10^(cl)=" + CR.TEN.pow(c.multiply(l)));
+
+    final int precision = NBRDGT + log10(crExpr).floor().intValueExact() + 2;
+    StringUtils.message("precision (digits?) =" + precision);
+    final CR ll = CR.valueOf(new Q(l.getApprox(-4 * precision), Z.ONE.shiftLeft(4 * precision)));
+    StringUtils.message("ll=" + ll);
+    final CR t = ll.multiply(crExpr);
+    StringUtils.message("t=" + t);
+    final CR frac = t.frac();
+    StringUtils.message("frac=" + frac);
+    final CR res = CR.TEN.pow(frac);
+    StringUtils.message("res=" + res);
+    return res;
   }
 
   @Override

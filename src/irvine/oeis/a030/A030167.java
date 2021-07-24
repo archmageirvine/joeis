@@ -5,8 +5,6 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.DecimalExpansionSequence;
-import irvine.oeis.Sequence;
-import irvine.oeis.a033.A033307;
 
 /**
  * A030167 Continued fraction expansion of the Champernowne constant 0.1234567891011121314...
@@ -14,28 +12,24 @@ import irvine.oeis.a033.A033307;
  */
 public class A030167 extends ContinuedFractionSequence {
 
+  private static final double BITS_PER_DIGIT = Math.log(10) / Math.log(2);
+
   /** Construct the sequence. */
   public A030167() {
-    super(new DecimalExpansionSequence() {
-
-      private final Sequence mChamperknowne = new A033307();
-      private CR mA = CR.ZERO;
-      private Z mNum = Z.ZERO;
-      private Z mDen = Z.ONE;
-
+    super(new DecimalExpansionSequence(new CR() {
       @Override
-      protected void ensureAccuracy(final int n) {
-        while (mNum.bitLength() < 1000 * n) { // Hacky heuristic -- this is dubious!
-          mNum = mNum.multiply(10).add(mChamperknowne.next());
-          mDen = mDen.multiply(10);
+      protected Z approximate(final int precision) {
+        if (precision >= 0) {
+          return Z.ZERO;
         }
-        mA = CR.valueOf(new Q(mNum, mDen));
+        final int length = 10 - (int)(precision / BITS_PER_DIGIT);
+        final StringBuilder s = new StringBuilder();
+        long k = 0;
+        while (s.length() < length) {
+          s.append(++k);
+        }
+        return CR.valueOf(new Q(new Z(s), Z.TEN.pow(s.length()))).getApprox(precision);
       }
-
-      @Override
-      protected CR getCR() {
-        return mA;
-      }
-    });
+    }));
   }
 }

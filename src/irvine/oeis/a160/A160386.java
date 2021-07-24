@@ -1,7 +1,6 @@
 package irvine.oeis.a160;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
@@ -11,24 +10,24 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A160386 extends DecimalExpansionSequence {
 
-  private CR mSum = CR.ZERO;
-  private int mK = -1;
-
-  private void updateSum() {
-    if (mK < 29) {
-      mSum = ComputableReals.SINGLETON.signedAdd((++mK & 1) == 0, mSum, CR.valueOf(Z.THREE.pow(1 << mK)).inverse());
-    }
-  }
-
-  {
-    for (int k = 0; k < 5; ++k) {
-      updateSum();
-    }
-  }
-
-  @Override
-  protected CR getCR() {
-    updateSum();
-    return mSum;
+  /** Construct the sequence. */
+  public A160386() {
+    super(1, new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        final Z one = Z.ONE.shiftLeft(-precision);
+        Z sum = Z.ZERO;
+        int k = -1;
+        while (true) {
+          final int shift = 1 << ++k;
+          final Z t = one.divide(Z.THREE.pow(shift));
+          if (t.isZero()) {
+            break;
+          }
+          sum = sum.signedAdd((k & 1) == 0, t);
+        }
+        return sum;
+      }
+    });
   }
 }

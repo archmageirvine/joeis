@@ -14,29 +14,32 @@ public class A002210 extends DecimalExpansionSequence {
 
   private static final CR LN2 = CR.TWO.log();
 
-  private CR mS1 = Zeta.zeta(2).subtract(CR.ONE);
-  private Q mS2 = Q.ONE;
-  private int mN = 1;
-
-  // Add another term into the approximation of the Khintchine constant.
-  // Computed using ln K_0 = (1/ln(2)) * sum_{n=1}^\infty {(\zeta(2n)-1)/(n)} * sum_{k=1}^{2n-1} (-)^{k+1}/k
-  private void step() {
-    ++mN;
-    mS2 = mS2.add(new Q(Z.ONE, Z.TWO.multiply(1 - mN).multiply(2 * mN - 1)));
-    mS1 = mS1.add(Zeta.zeta(2 * mN).subtract(CR.ONE).multiply(mS2.divide(mN)));
-  }
-
-  @Override
-  protected void ensureAccuracy(final int n) {
-    // The constant 2 below is good for at least 348 terms of this sequence
-    // A larger number will accumulate greater accuracy but takes longer
-    while (mN < 2 * n) {
-      step();
+  // sum_{n=1}^\infty {(\zeta(2n)-1)/(n)} * sum_{k=1}^{2n-1} (-)^{k+1}/k
+  private static final CR SCALED_KHINTCHINE = new CR() {
+    @Override
+    protected Z approximate(final int precision) {
+      if (precision >= 0) {
+        return Z.ZERO;
+      }
+      Z sum = Zeta.zeta(2).subtract(CR.ONE).getApprox(precision);
+      int k = 1;
+      Q altHarmonic = Q.ONE;
+      while (true) {
+        ++k;
+        altHarmonic = altHarmonic.add(new Q(Z.ONE, Z.TWO.multiply(1 - k).multiply(2 * k - 1)));
+        final Z t = Zeta.zeta(2 * k).subtract(CR.ONE).multiply(altHarmonic.divide(k)).getApprox(precision);
+        if (t.isZero()) {
+          break;
+        }
+        sum = sum.add(t);
+      }
+      return sum;
     }
-  }
+  };
 
-  @Override
-  protected CR getCR() {
-    return mS1.divide(LN2).exp();
+  /** Construct the sequence. */
+  public A002210() {
+    // Computed using ln K_0 = (1/ln(2)) * sum_{n=1}^\infty {(\zeta(2n)-1)/(n)} * sum_{k=1}^{2n-1} (-)^{k+1}/k
+    super(SCALED_KHINTCHINE.divide(LN2).exp());
   }
 }

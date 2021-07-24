@@ -12,34 +12,28 @@ import irvine.oeis.a002.A002065;
  */
 public class A030125 extends DecimalExpansionSequence {
 
-  private final A002065 mB = new A002065();
-  private CR mZ = CR.ZERO;
-  private boolean mSign = false;
-  private int mGood = 0;
-
-  private int update() {
-    mSign = !mSign;
-    final Z t = mB.next();
-    if (t.isZero()) {
-      mZ = mZ.add(CR.HALF_PI);
-    } else {
-      mZ = ComputableReals.SINGLETON.signedAdd(mSign, mZ, ComputableReals.SINGLETON.atan(CR.valueOf(t).inverse()));
-    }
-    return t.toString().length(); // Rough guide to precision of sum
-  }
-
-  @Override
-  protected CR getCR() {
-    return ComputableReals.SINGLETON.cot(mZ);
-  }
-
-  @Override
-  public Z next() {
-    // DecimalExpansionSequence assumes we have 32-digits of goodness looking ahead.
-    // Try to make sure we have plenty of accuracy.
-    while (mGood < mN + 100) {
-      mGood = update();
-    }
-    return super.next();
+  /** Construct the sequence. */
+  public A030125() {
+    super(ComputableReals.SINGLETON.cot(new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        if (precision >= 0) {
+          return Z.ZERO;
+        }
+        final A002065 b = new A002065();
+        boolean sign = true;
+        Z sum = CR.HALF_PI.getApprox(precision);
+        b.next(); // skip 0
+        while (true) {
+          sign = !sign;
+          final Z t = ComputableReals.SINGLETON.atan(CR.valueOf(b.next()).inverse()).getApprox(precision);
+          if (t.isZero()) {
+            break;
+          }
+          sum = sum.signedAdd(sign, t);
+        }
+        return sum;
+      }
+    }));
   }
 }

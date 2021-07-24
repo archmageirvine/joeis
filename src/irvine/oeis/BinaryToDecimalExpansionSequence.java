@@ -1,7 +1,6 @@
 package irvine.oeis;
 
 import irvine.math.cr.CR;
-import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
@@ -10,35 +9,23 @@ import irvine.math.z.Z;
  */
 public class BinaryToDecimalExpansionSequence extends DecimalExpansionSequence {
 
-  private final Sequence mBinarySeq;
-  private final StringBuilder mBuf = new StringBuilder();
-  private int mSteps = 0;
-  private int mLimit = 100;
-  private CR mBinary;
-
   protected BinaryToDecimalExpansionSequence(final Sequence binarySequence) {
-    mBinarySeq = binarySequence;
-    mBinary = stepBinary(mLimit);
-  }
+    super(new CR() {
+      private final Sequence mBinarySeq = binarySequence;
+      private Z mA = Z.ZERO;
+      private int mLength = 0;
 
-  private CR stepBinary(final int limit) {
-    while (mSteps < limit) {
-      mBuf.append(mBinarySeq.next());
-      ++mSteps;
-    }
-    return CR.valueOf(new Q(new Z(mBuf, 2), Z.ONE.shiftLeft(mBuf.length())));
-  }
-
-  @Override
-  protected void ensureAccuracy(final int n) {
-    if (4 * n > mLimit) {
-      mLimit *= 2;
-      mBinary = stepBinary(mLimit);
-    }
-  }
-
-  @Override
-  protected CR getCR() {
-    return mBinary;
+      @Override
+      protected Z approximate(final int precision) {
+        if (precision >= 0) {
+          return Z.ZERO;
+        }
+        while (mLength < -precision) {
+          mA = mA.multiply2().add(mBinarySeq.next());
+          ++mLength;
+        }
+        return mA.shiftRight(mLength + precision);
+      }
+    });
   }
 }

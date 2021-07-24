@@ -13,13 +13,7 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
 
   private final int mBase;
   private String mS = "";
-  protected int mN = -1;
-
-  // todo remove this constructor
-  protected DecimalExpansionSequence() {
-    super(0, null);
-    mBase = 10;
-  }
+  protected int mN;
 
   /**
    * Construct a new expansion of a computable real number.

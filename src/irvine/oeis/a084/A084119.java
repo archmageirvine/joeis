@@ -11,24 +11,23 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A084119 extends DecimalExpansionSequence {
 
-  private static final long PRECISION = 1 << 18; // 18-bits of headroom
-  private CR mSum = CR.ZERO;
-  private int mPrev = 0;
-  private int mK = 0;
-  private long mUpdateNumber = 0;
-
-
-  private void updateSum() {
-    ++mUpdateNumber;
-    while (PRECISION * mUpdateNumber > mPrev) {
-      mPrev = Fibonacci.fibonacci(++mK).intValueExact();
-      mSum = mSum.add(CR.valueOf(Z.ONE.shiftLeft(mPrev)).inverse());
-    }
-  }
-
-  @Override
-  protected CR getCR() {
-    updateSum();
-    return mSum;
+  /** Construct the sequence. */
+  public A084119() {
+    super(1, new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        final Z one = Z.ONE.shiftLeft(-precision);
+        Z sum = Z.ZERO;
+        int k = 0;
+        while (true) {
+          final int shift = Fibonacci.fibonacci(++k).intValueExact();
+          if (shift > -precision) {
+            break;
+          }
+          sum = sum.add(one.shiftRight(shift));
+        }
+        return sum;
+      }
+    });
   }
 }

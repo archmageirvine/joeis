@@ -1,0 +1,17 @@
+package irvine.oeis.a346;
+
+import irvine.math.cr.CR;
+import irvine.oeis.DecimalExpansionSequence;
+
+/**
+ * A346571.
+ * @author Sean A. Irvine
+ */
+public class A346571 extends DecimalExpansionSequence {
+
+  /** Construct the sequence. */
+  public A346571() {
+    super(CR.TWO.subtract(CR.PI.pow(5).multiply(305).divide(CR.valueOf(93312))));
+  }
+}
+

@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A264808 extends DecimalExpansionSequence {
 
-  // Solution to x^(x^x) = e
+  // Solution to x^(x^x) = e (example of root finding)
 
   private static class MyFunction extends UnaryCRFunction {
     @Override

@@ -5,13 +5,13 @@ jOEIS is a pure Java project using the "ant" build system.
 
 ## Prerequisites for building from source
 
-* Java 1.8 or later (see [https://openjdk.java.net/install/])
-* apache ant 1.10 or later (see [https://ant.apache.org/])
+* Java 1.8 or later (see https://openjdk.java.net/install/)
+* apache ant 1.10 or later (see https://ant.apache.org/)
 
 Both of these requirements likely can be installed using the package management system of your operating system. You can test that appropriate versions are available with the following commands.
 
-   $ java -version
-   $ ant -version
+    $ java -version
+    $ ant -version
 
 ## Check out source code for jOEIS
 

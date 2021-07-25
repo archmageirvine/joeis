@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024447 Sum of the products of the primes taken 2 at a time from first n primes.
+ * A024447 Sum of the products of the primes taken 2 at a time from the first n primes.
  * @author Sean A. Irvine
  */
 public class A024447 implements Sequence {

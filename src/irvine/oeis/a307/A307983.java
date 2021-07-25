@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A307983 Consider a pentagonal bipyramid with its seven vertices P_1, ..., P_7 lying on a unit sphere; sequence gives decimal expansion of Sum_{i < j} 1/dist(P_i, P_j).
+ * A307983 Consider a pentagonal bipyramid with its seven vertices P_1, ..., P_7 lying on a unit sphere; sequence gives decimal expansion of Sum_{i &lt; j} 1/dist(P_i, P_j).
  * Formula: 1/2+5*sqrt(2)*(1+sqrt(1/2+1/sqrt(5)))
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A249186 Decimal expansion of the Goldberg Zero-One constant A(2, 1).
+ * A249186 Decimal expansion of the Goldberg Zero-One constant A(2,1).
  * Formula: exp(-Pi^2/log(3+2*sqrt(2)))
  * @author Georg Fischer
  */

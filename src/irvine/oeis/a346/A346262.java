@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A346262 allocated for Mohammed Yaseen.
+ * A346262 Decimal expansion of the Lorenz number.
  * @author Georg Fischer
  */
 

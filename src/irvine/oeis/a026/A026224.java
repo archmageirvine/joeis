@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026224 Numbers n such that t(n) = s(n) + 1, where s = A026136, t = A026142.
+ * A026224 Numbers k such that t(k) = s(k) + 1, where s = A026136, t = A026142.
  * @author Sean A. Irvine
  */
 public class A026224 extends A026136 {

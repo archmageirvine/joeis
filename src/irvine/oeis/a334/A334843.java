@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A334843 Decimal expansion of arclength between (0, 0) and (Pi/6, 1/2) on y = sin x.
+ * A334843 Decimal expansion of arclength between (0,0) and (Pi/6,1/2) on y = sin x.
  * Formula: 15-sqrt(75)
  * @author Georg Fischer
  */

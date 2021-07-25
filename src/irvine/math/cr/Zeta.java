@@ -3,6 +3,7 @@ package irvine.math.cr;
 import java.util.HashMap;
 
 import irvine.math.MemoryFunction;
+import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
@@ -178,5 +179,34 @@ public final class Zeta {
     }
     ZETA_CACHE.put(n, r);
     return r;
+  }
+
+  /**
+   * Compute the <code>zetap</code> function at an integer.
+   * @param n integer
+   * @return <code>zetap(n)</code>
+   */
+  public static CR zetap(final int n) {
+    return new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        if (precision >= 0) {
+          return Z.ZERO;
+        }
+        Z sum = Z.ZERO;
+        int k = 0;
+        while (true) {
+          final int m = Mobius.mobius(++k);
+          if (m != 0) {
+            final Z t = zeta(n * k).log().divide(CR.valueOf(k)).getApprox(precision);
+            if (t.isZero()) {
+              break;
+            }
+            sum = sum.signedAdd(m == 1, t);
+          }
+        }
+        return sum;
+      }
+    };
   }
 }

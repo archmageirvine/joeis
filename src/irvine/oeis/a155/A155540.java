@@ -1,7 +1,6 @@
 package irvine.oeis.a155;
 // manually 2021-07-24
 
-import irvine.math.z.Z;
 import irvine.oeis.NoncomputableSequence;
 
 /**

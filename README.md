@@ -9,6 +9,14 @@ sequences beyond the Maple, Mathematica, and Pari programs directly
 associated with many entries.  Currently over 115,000 sequences are
 implemented.
 
+Installation
+------------
+
+Instructions for installation and development: [INSTALLATION](INSTALL.md)
+
+Background
+----------
+
 The following plot shows how the number of implemented sequences has
 changed over the years.
 
@@ -46,8 +54,6 @@ to be able to compute new terms using the implementations provided.
 However, included here are implementations that have been used to
 compute new previously unknown terms, including some for sequences
 considered ```hard```.
-
-There are some developer notes [here](doc/developer.md)
 
 Related Software
 ----------------

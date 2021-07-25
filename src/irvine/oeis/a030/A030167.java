@@ -22,7 +22,7 @@ public class A030167 extends ContinuedFractionSequence {
         if (precision >= 0) {
           return Z.ZERO;
         }
-        final int length = 10 - (int)(precision / BITS_PER_DIGIT);
+        final int length = 10 - (int) (precision / BITS_PER_DIGIT);
         final StringBuilder s = new StringBuilder();
         long k = 0;
         while (s.length() < length) {

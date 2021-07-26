@@ -18,7 +18,7 @@ import irvine.oeis.Sequence;
 public class A049287 implements Sequence {
 
   private int mN = 0;
-  private final HashSet<Graph> mCanons = new HashSet<>();
+  protected final HashSet<Graph> mCanons = new HashSet<>();
   private final long[] mWorkspace = new long[100];
   private final OptionBlk mOptions = new OptionBlk();
   private int[] mLabels;

@@ -2,8 +2,10 @@ package irvine.oeis.a007;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
+import java.util.function.ToLongFunction;
 
 import irvine.math.graph.Graph;
 import irvine.math.nauty.DirectedGraph;
@@ -35,13 +37,7 @@ public class A007835 implements Sequence, GraphProcessor {
       for (int v = 0; v < n; ++v) {
         inOut.add(new Pair<>(g.inDegree(v), g.degree(v)));
       }
-      inOut.sort((a, b) -> {
-        final int c = a.left().compareTo(b.left());
-        if (c != 0) {
-          return c;
-        }
-        return a.right().compareTo(b.right());
-      });
+      inOut.sort(Comparator.comparingLong((ToLongFunction<Pair<Long, Long>>) Pair::left).thenComparingLong(Pair::right));
       mAccepted.add(inOut);
     }
   }

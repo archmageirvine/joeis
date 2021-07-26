@@ -1666,3 +1666,5 @@ A049082 Number of putative parameter sets for orthogonal arrays with 2^n runs
 A049083 Number of dual atoms in lattice Lambda'_{2^n} of putative parameter sets for orthogonal arrays with 2^n runs.
 A049205 Theta series for a certain extremal 42-dimensional unimodular lattice.
 A049288 Number of nonisomorphic circulant tournaments, i.e., Cayley tournaments for cyclic group of order 2n-1
+A049292 Number of subgroups of index n in fundamental group of a closed surface of characteristic -3
+A049297 Number of nonisomorphic circulant digraphs (i.e., Cayley digraphs for the cyclic group) of order n

@@ -1136,6 +1136,14 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Return the gamma function of this real number.
+   * @return gamma function
+   */
+  public CR gamma() {
+    return lnGamma().exp();
+  }
+
+  /**
    * Returns the hyperbolic sine.
    * @return hyperbolic sine
    */

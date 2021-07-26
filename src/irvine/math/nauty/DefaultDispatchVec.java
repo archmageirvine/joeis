@@ -23,8 +23,8 @@ public class DefaultDispatchVec implements DispatchVec {
   }
 
   @Override
-  public void refine(final Graph g, final int[] a, final int[] b, final int c, final int[] d, final int[] e, final NautySet f, final int[] h, final int i) {
-    refine1(g, a, b, c, d, e, f, h, i);
+  public void refine(final Graph g, final int[] lab, final int[] ptn, final int level, final int[] numCells, final int[] count, final NautySet active, final int[] code, final int m) {
+    refine1(g, lab, ptn, level, numCells, count, active, code, m);
   }
 
   @Override

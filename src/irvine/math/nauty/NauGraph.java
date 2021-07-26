@@ -10,9 +10,9 @@ import irvine.math.graph.SmallGraph;
  */
 class NauGraph extends DefaultDispatchVec {
 
-  private final long[] mWorkSet = new long[GenerateGraphs.MAXM];
-  private final int[] mWorkPerm = new int[GenerateGraphs.MAXN];
-  private final int[] mBucket = new int[GenerateGraphs.MAXN + 2];
+  private final long[] mWorkSet = new long[Nauty.MAXM];
+  private final int[] mWorkPerm = new int[Nauty.MAXN];
+  private final int[] mBucket = new int[Nauty.MAXN + 2];
 
   @Override
   public boolean isAutomorphism(final Graph g, final int[] perm, final boolean digraph) {

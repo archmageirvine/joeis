@@ -34,17 +34,17 @@ public class DirectedGraph implements GroupAction {
   private long mGraphsOutput = 0;
   protected PrintStream mOut = null;
 
-  private int[] mV0 = new int[MAXNE];
-  private int[] mV1 = new int[MAXNE];
-  private int[][] mEdgeNo = new int[MAXNV][MAXNV];
+  private final int[] mV0 = new int[MAXNE];
+  private final int[] mV1 = new int[MAXNE];
+  private final int[][] mEdgeNo = new int[MAXNV][MAXNV];
 
 
-  private NautySet mX = new NautySet(MAXME);
-  private int[] mIx = new int[2 * MAXNE];
+  private final NautySet mX = new NautySet(MAXME);
+  private final int[] mIx = new int[2 * MAXNE];
   private int mNix;
   private boolean mFirst;
   private int mNe;
-  private int[] mLastReject = new int[MAXNV];
+  private final int[] mLastReject = new int[MAXNV];
   private boolean mLastRejOk;
   private int mRejectLevel;
   private long mGroupSize;

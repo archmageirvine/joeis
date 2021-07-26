@@ -7,6 +7,7 @@ import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
@@ -208,5 +209,31 @@ public final class Zeta {
         return sum;
       }
     };
+  }
+
+  /**
+   * Compute a Hurwitz zeta function/.
+   * @param s order
+   * @param x value
+   * @return zeta function
+   */
+  public static CR zetaHurwitz(final int s, final CR x) {
+    // e.g. for A294967, A258815
+    return new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        Z sum = Z.ZERO;
+        int k = -1;
+        while (true) {
+          ++k;
+          final Z t = zeta(s + k).getApprox(precision).multiply(Binomial.binomial(s + k - 1, k)).multiply(x.pow(k).getApprox(precision)).shiftRight(-precision);
+          if (t.isZero()) {
+            break;
+          }
+          sum = sum.signedAdd((k & 1) == 0, t);
+        }
+        return sum;
+      }
+    }.add(x.pow(s).inverse());
   }
 }

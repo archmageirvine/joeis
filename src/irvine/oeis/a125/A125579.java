@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A125578 Decimal expansion of positive root of x^2 = cos(x).
+ * A125579 Decimal expansion of positive root of x^3 = cos(x).
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

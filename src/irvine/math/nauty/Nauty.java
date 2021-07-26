@@ -17,9 +17,9 @@ import irvine.math.z.Z;
  */
 public class Nauty {
 
-  static final int MAXN = 32;
+  static final int MAXN = 64;
   private static final int WORDSIZE = 64;
-  private static final int MAXM = (MAXN + WORDSIZE - 1) / WORDSIZE;
+  static final int MAXM = (MAXN + WORDSIZE - 1) / WORDSIZE;
   private static final int NAUTY_INFINITY = 0x40000002;
 
   // copies of some of the options

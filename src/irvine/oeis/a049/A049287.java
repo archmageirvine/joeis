@@ -29,12 +29,12 @@ public class A049287 implements Sequence {
     mOptions.setCanon(1);
   }
 
-  private void search(final Graph g, int pos) {
+  private void search(final Graph g, final int pos) {
     if (pos <= 0) {
       try {
         final Graph canon = new Nauty(g, mLabels, mPartition, null, mOrbits, mOptions, mStats, mWorkspace).canon();
         mCanons.add(canon);
-      } catch (IOException e) {
+      } catch (final IOException e) {
         throw new RuntimeException(e);
       }
       return;

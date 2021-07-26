@@ -7,7 +7,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A199589 Decimal expansion of the greatest root of 6x^3 - 6x - 2 = 0.
- * Polynomial: 6x^3-6x-2
+ * Polynomial: <code>6x^3-6x-2</code>
  * @author Georg Fischer
  */
 public class A199589 extends PolynomialRootExpansionSequence {

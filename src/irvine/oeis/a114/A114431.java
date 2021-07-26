@@ -7,7 +7,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A114431 Decimal expansion of the real solution of x^3 - x^2 - 2x - 4 = 0.
- * Polynomial: x^3-x^2-2x-4
+ * Polynomial: <code>x^3-x^2-2x-4</code>
  * @author Georg Fischer
  */
 public class A114431 extends PolynomialRootExpansionSequence {

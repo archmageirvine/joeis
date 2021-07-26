@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A273065 Decimal expansion of the negative reciprocal of the real root of x^3 - 2x + 2.
- * Polynomial: x^3-2x+2
+ * Polynomial: <code>x^3-2x+2</code>
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

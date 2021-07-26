@@ -11,12 +11,6 @@ import irvine.oeis.a003.A003618;
 public class A342834 extends A003618 {
 
   protected StringBuilder mS = new StringBuilder();
-  protected int mPos;
-
-  /** Construct the sequence. */
-  public A342834() {
-    mPos = 0;
-  }
 
   @Override
   public Z next() {

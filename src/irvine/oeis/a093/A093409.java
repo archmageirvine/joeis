@@ -7,7 +7,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A093409 Decimal expansion of the smaller real zero of 10x^6 - 75x^3 - 190x + 21.
- * Polynomial: 10x^6-75x^3-190x+21
+ * Polynomial: <code>10x^6-75x^3-190x+21</code>
  * @author Georg Fischer
  */
 public class A093409 extends PolynomialRootExpansionSequence {

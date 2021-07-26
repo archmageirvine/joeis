@@ -29,7 +29,7 @@ public class A049289 implements Sequence {
     mOptions.setCanon(1);
   }
 
-  private void search(final Graph g, int pos) {
+  private void search(final Graph g, final int pos) {
     if (pos <= 0) {
       try {
         final Graph canon1 = new Nauty(g, mLabels, mPartition, null, mOrbits, mOptions, mStats, mWorkspace).canon();
@@ -37,7 +37,7 @@ public class A049289 implements Sequence {
         if (canon1.equals(canon2)) {
           mCanons.add(canon1);
         }
-      } catch (IOException e) {
+      } catch (final IOException e) {
         throw new RuntimeException(e);
       }
       return;

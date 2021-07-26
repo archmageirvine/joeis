@@ -7,7 +7,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A273066 Decimal expansion of the real root of x^3 - 2x + 2, negated.
- * Polynomial: x^3-2x+2
+ * Polynomial: <code>x^3-2x+2</code>
  * @author Georg Fischer
  */
 public class A273066 extends PolynomialRootExpansionSequence {

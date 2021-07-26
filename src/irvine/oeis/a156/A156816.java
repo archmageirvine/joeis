@@ -7,7 +7,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A156816 Decimal expansion of the positive root of the equation 13x^4 - 7x^2 - 581 = 0.
- * Polynomial: 13x^4-7x^2-581
+ * Polynomial: <code>13x^4-7x^2-581</code>
  * @author Georg Fischer
  */
 public class A156816 extends PolynomialRootExpansionSequence {

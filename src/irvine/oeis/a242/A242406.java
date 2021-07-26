@@ -7,7 +7,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
 
 /**
  * A242406 The Rendezvous Constant.
- * Polynomial: 2x^5-4x^4-5x^2+4x-1
+ * Polynomial: <code>2x^5-4x^4-5x^2+4x-1</code>
  * @author Georg Fischer
  */
 public class A242406 extends PolynomialRootExpansionSequence {

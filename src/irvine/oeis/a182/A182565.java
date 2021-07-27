@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A182565 Decimal expansion of Madelung constant (negated) for cuprous oxide Cu_2O.
  * @author Georg Fischer
  */
-
 public class A182565 extends NoncomputableSequence {
 
   /** Construct the sequence. */

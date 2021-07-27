@@ -9,7 +9,6 @@ import irvine.oeis.a001.A001898;
  * a(n) = A001898(n-1)/n.
  * @author Georg Fischer
  */
-
 public class A163176 extends A001898 {
     
   protected int mN = 0;

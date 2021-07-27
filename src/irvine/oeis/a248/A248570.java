@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248570 Decimal expansion of Schwarzschild radius of the Earth (meters).
  * @author Georg Fischer
  */
-
 public class A248570 extends NoncomputableSequence {
 
   /** Construct the sequence. */

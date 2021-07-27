@@ -8,7 +8,6 @@ import irvine.oeis.a000.A000040;
  * A183194 Final prime of first member of A019518 that is divisible by 3^n.
  * @author Georg Fischer
  */
-
 public class A183194 extends A000040 {
   
   private Z mBase;

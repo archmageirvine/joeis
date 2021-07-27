@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254276 Decimal expansion of Boltzmann constant in m^-1 K^-1.
  * @author Georg Fischer
  */
-
 public class A254276 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,17 +9,16 @@ import irvine.oeis.Sequence;
  * a(n) = (a(n-1))^2 for n &gt; 3.
  * @author Georg Fischer
  */
-
 public class A167182 implements Sequence {
     
-  protected int mN = -1;
+  protected int mN = 0;
   protected Z mAn = Z.ONE;
   
   @Override
   public Z next() {
-    ++mN;
     final Z result = mAn;
     if (mN <= 2) {
+      ++mN;
       mAn = mAn.multiply2();
     } else {
       mAn = mAn.square();

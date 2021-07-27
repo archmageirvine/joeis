@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A275008 Decimal expansion of R/F, where R is the molar gas constant and F is Faraday's constant according to the 2019 SI system.
  * @author Georg Fischer
  */
-
 public class A275008 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A335726 Mean radius of the orbit of the hydrogen atom's electron, in Bohr radii.
  * @author Georg Fischer
  */
-
 public class A335726 extends NoncomputableSequence {
 
   /** Construct the sequence. */

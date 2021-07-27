@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A281961 Decimal expansion of one chronon (in seconds).
  * @author Georg Fischer
  */
-
 public class A281961 extends NoncomputableSequence {
 
   /** Construct the sequence. */

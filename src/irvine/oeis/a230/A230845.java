@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A230845 Decimal expansion of proton Compton wavelength in meters.
  * @author Georg Fischer
  */
-
 public class A230845 extends NoncomputableSequence {
 
   /** Construct the sequence. */

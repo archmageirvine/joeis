@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A255820 Decimal expansion of the heliocentric gravitational constant in SI units.
  * @author Georg Fischer
  */
-
 public class A255820 extends NoncomputableSequence {
 
   /** Construct the sequence. */

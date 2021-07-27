@@ -8,7 +8,6 @@ import irvine.oeis.a010.A010051;
  * A061397 Characteristic function sequence of primes multiplied componentwise by N, the natural numbers.
  * @author Georg Fischer
  */
-
 public class A061397 extends A010051 {
     
   protected int mN = 0;

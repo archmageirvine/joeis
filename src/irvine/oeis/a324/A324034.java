@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A324034 Decimal expansion of the conversion factor from the old derived SI unit for energy J (joule) to the combination of 2019 SI units h*\u0394\u03bd_{Cs}.
  * @author Georg Fischer
  */
-
 public class A324034 extends NoncomputableSequence {
 
   /** Construct the sequence. */

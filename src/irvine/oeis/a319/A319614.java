@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A319614 Decimal expansion of reciprocal of fine-structure constant alpha divided by Pi.
  * @author Georg Fischer
  */
-
 public class A319614 extends NoncomputableSequence {
 
   /** Construct the sequence. */

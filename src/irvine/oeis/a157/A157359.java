@@ -9,7 +9,6 @@ import irvine.oeis.a023.A023302;
  * a(n)=16*A023302(n)+15
  * @author Georg Fischer
  */
-
 public class A157359 extends A023302 {
     
   @Override

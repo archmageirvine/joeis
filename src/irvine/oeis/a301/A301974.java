@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A301974 Decimal expansion of value of the Fermi coupling constant G_F in GeV^(-2).
  * @author Georg Fischer
  */
-
 public class A301974 extends NoncomputableSequence {
 
   /** Construct the sequence. */

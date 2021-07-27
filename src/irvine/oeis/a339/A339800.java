@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A339800 Decimal expansion of tau-to-proton mass ratio.
  * @author Georg Fischer
  */
-
 public class A339800 extends NoncomputableSequence {
 
   /** Construct the sequence. */

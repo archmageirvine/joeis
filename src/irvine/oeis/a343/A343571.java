@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A343571 Decimal expansion of Planck constant in eV/Hz.
  * @author Georg Fischer
  */
-
 public class A343571 extends NoncomputableSequence {
 
   /** Construct the sequence. */

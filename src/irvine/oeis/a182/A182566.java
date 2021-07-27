@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A182566 Decimal expansion of Madelung constant (negated) for zinc sulfide ZnS.
  * @author Georg Fischer
  */
-
 public class A182566 extends NoncomputableSequence {
 
   /** Construct the sequence. */

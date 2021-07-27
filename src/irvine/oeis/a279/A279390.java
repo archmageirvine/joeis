@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A279390 Decimal expansion of G*h^2/c^4 in SI units, where G is the Newtonian constant of gravitation, h is the Planck constant and c is the speed of light in vacuum.
  * @author Georg Fischer
  */
-
 public class A279390 extends NoncomputableSequence {
 
   /** Construct the sequence. */

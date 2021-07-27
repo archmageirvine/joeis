@@ -21,6 +21,6 @@ public class A173159 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A173159() {
-    super(new MyFunction().inverseMonotone(CR.valueOf(2), CR.valueOf(3)).execute(CR.ZERO));
+    super(new MyFunction().inverseMonotone(CR.TWO, CR.THREE).execute(CR.ZERO));
   }
 }

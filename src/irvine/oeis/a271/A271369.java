@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A271369 Decimal expansion of molar volume of an ideal gas.
  * @author Georg Fischer
  */
-
 public class A271369 extends NoncomputableSequence {
 
   /** Construct the sequence. */

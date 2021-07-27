@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A342484 Decimal expansion of number of newtons (N) in 1 pound-force (lbf).
  * @author Georg Fischer
  */
-
 public class A342484 extends NoncomputableSequence {
 
   /** Construct the sequence. */

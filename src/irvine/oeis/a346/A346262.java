@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A346262 Decimal expansion of the Lorenz number.
  * @author Georg Fischer
  */
-
 public class A346262 extends NoncomputableSequence {
 
   /** Construct the sequence. */

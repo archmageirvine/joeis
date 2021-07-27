@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248364 Decimal expansion of Schwarzschild radius of the Sun (meters).
  * @author Georg Fischer
  */
-
 public class A248364 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A231350 Decimal expansion of the speed c/a in SI units [meter/second], where "c" is the speed of light in vacuum and "a" is the fine-structure constant (alpha).
  * @author Georg Fischer
  */
-
 public class A231350 extends NoncomputableSequence {
 
   /** Construct the sequence. */

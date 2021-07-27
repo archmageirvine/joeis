@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248363 Decimal expansion of Gaussian gravitational constant in the astronomical system of units.
  * @author Georg Fischer
  */
-
 public class A248363 extends NoncomputableSequence {
 
   /** Construct the sequence. */

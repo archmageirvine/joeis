@@ -9,7 +9,6 @@ import irvine.oeis.Sequence;
  * A061304 Squarefree triangular numbers.
  * @author Georg Fischer
  */
-
 public class A061304 implements Sequence {
   
   protected long mN = 0;

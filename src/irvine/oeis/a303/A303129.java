@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A303129 Decimal expansion of quantum of circulation in m^2 s^(-1).
  * @author Georg Fischer
  */
-
 public class A303129 extends NoncomputableSequence {
 
   /** Construct the sequence. */

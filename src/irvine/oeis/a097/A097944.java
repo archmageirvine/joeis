@@ -8,7 +8,6 @@ import irvine.oeis.a000.A000040;
  * A097944 Number of digits in n-th prime.
  * @author Georg Fischer
  */
-
 public class A097944 extends A000040 {
   
   @Override

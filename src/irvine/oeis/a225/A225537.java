@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A225537 Inverse of the Rydberg constant in meters.
  * @author Georg Fischer
  */
-
 public class A225537 extends NoncomputableSequence {
 
   /** Construct the sequence. */

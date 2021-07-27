@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327956 Decimal expansion of neutron magnetic moment in J*T^(-1), negated.
  * @author Georg Fischer
  */
-
 public class A327956 extends NoncomputableSequence {
 
   /** Construct the sequence. */

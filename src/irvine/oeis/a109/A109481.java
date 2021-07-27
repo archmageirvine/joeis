@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A109481 Weight enumerator of [64,45,8] extended BCH code.
  * @author Georg Fischer
  */
-
 public class A109481 extends FiniteSequence {
 
   /** Construct the sequence. */

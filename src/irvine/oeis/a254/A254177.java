@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254177 Decimal expansion of (1 u)c/h in m^-1.
  * @author Georg Fischer
  */
-
 public class A254177 extends NoncomputableSequence {
 
   /** Construct the sequence. */

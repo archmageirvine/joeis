@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254178 Decimal expansion of (1 u)c^2/k in K.
  * @author Georg Fischer
  */
-
 public class A254178 extends NoncomputableSequence {
 
   /** Construct the sequence. */

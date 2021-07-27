@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327949 Decimal expansion of deuteron g factor.
  * @author Georg Fischer
  */
-
 public class A327949 extends NoncomputableSequence {
 
   /** Construct the sequence. */

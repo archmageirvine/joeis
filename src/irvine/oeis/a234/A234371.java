@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A234371 Bohr-Procopiu magneton.
  * @author Georg Fischer
  */
-
 public class A234371 extends NoncomputableSequence {
 
   /** Construct the sequence. */

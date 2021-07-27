@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A226204 Decimal expansion of the length (in meters) of the seconds pendulum, a pendulum whose period is two seconds at standard gravity.
  * @author Georg Fischer
  */
-
 public class A226204 extends NoncomputableSequence {
 
   /** Construct the sequence. */

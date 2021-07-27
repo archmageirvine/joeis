@@ -8,7 +8,6 @@ import irvine.oeis.Sequence;
  * A245366 a(n) = 1 + a(n-1) * (a(n-2) - 1) * (a(n-3) - 1) with a(0) = 1, a(1) = 2, a(2) = 3, a(3) = 4.
  * @author Georg Fischer
  */
-
 public class A245366 implements Sequence {
     
   protected int mN = -1;

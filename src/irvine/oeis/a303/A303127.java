@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A303127 Decimal expansion of proton magnetic moment to Bohr magneton ratio.
  * @author Georg Fischer
  */
-
 public class A303127 extends NoncomputableSequence {
 
   /** Construct the sequence. */

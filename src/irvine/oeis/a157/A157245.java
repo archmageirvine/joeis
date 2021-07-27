@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A157245 Decimal expansion of estimate of 1 - (the weakly triple-free set constant).
  * @author Georg Fischer
  */
-
 public class A157245 extends NoncomputableSequence {
 
   /** Construct the sequence. */

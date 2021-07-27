@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A335727 Mean radius of the orbit of the hydrogen atom's electron, in meters.
  * @author Georg Fischer
  */
-
 public class A335727 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254175 Decimal expansion of (1 u)c^2 in E_h.
  * @author Georg Fischer
  */
-
 public class A254175 extends NoncomputableSequence {
 
   /** Construct the sequence. */

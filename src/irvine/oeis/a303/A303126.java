@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A303126 Decimal expansion of proton magnetic moment in J T^(-1).
  * @author Georg Fischer
  */
-
 public class A303126 extends NoncomputableSequence {
 
   /** Construct the sequence. */

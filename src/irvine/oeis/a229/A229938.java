@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A229938 Decimal expansion of Hartree energy in Joules.
  * @author Georg Fischer
  */
-
 public class A229938 extends NoncomputableSequence {
 
   /** Construct the sequence. */

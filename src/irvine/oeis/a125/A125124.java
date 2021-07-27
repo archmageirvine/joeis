@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A125124 Decimal expansion of the flattening (inverse) of the World Geodetic System 1984 ellipsoid, second upgrade.
  * @author Georg Fischer
  */
-
 public class A125124 extends NoncomputableSequence {
 
   /** Construct the sequence. */

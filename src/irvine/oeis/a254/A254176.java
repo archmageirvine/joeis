@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254176 Decimal expansion of (1 u)c^2/h in Hz.
  * @author Georg Fischer
  */
-
 public class A254176 extends NoncomputableSequence {
 
   /** Construct the sequence. */

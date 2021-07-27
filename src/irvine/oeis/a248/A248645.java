@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248645 Number of light-years in a parsec, prior to its redefinition in August 2015.
  * @author Georg Fischer
  */
-
 public class A248645 extends NoncomputableSequence {
 
   /** Construct the sequence. */

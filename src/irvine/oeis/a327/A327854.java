@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327854 Value of the critical density of the Universe in g/cm^3 multiplied by dimensionless scale factor h^(-2).
  * @author Georg Fischer
  */
-
 public class A327854 extends NoncomputableSequence {
 
   /** Construct the sequence. */

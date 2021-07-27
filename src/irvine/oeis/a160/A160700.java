@@ -8,7 +8,6 @@ import irvine.oeis.MemorySequence;
  * A160700 a(n) = if n&lt;16 then n else a(floor(n/16)) XOR (n mod 16).
  * @author Georg Fischer
  */
-
 public class A160700 extends MemorySequence {
     
   protected int mN = -1;

@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A182567 Decimal expansion of Madelung constant (negated) for calcium fluoride CaF_2.
  * @author Georg Fischer
  */
-
 public class A182567 extends NoncomputableSequence {
 
   /** Construct the sequence. */

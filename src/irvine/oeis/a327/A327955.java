@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327955 Decimal expansion of proton g factor.
  * @author Georg Fischer
  */
-
 public class A327955 extends NoncomputableSequence {
 
   /** Construct the sequence. */

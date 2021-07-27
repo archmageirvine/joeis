@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254274 Decimal expansion of Bohr magneton in eV T^-1.
  * @author Georg Fischer
  */
-
 public class A254274 extends NoncomputableSequence {
 
   /** Construct the sequence. */

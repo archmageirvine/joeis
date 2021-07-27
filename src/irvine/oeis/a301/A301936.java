@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A301936 Decimal expansion of the molar volume of a perfect gas in standard conditions in cubic meters per mole.
  * @author Georg Fischer
  */
-
 public class A301936 extends NoncomputableSequence {
 
   /** Construct the sequence. */

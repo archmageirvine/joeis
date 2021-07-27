@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327951 Decimal expansion of neutron g factor, negated.
  * @author Georg Fischer
  */
-
 public class A327951 extends NoncomputableSequence {
 
   /** Construct the sequence. */

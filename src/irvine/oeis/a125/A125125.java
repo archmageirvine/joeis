@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A125125 Decimal expansion of the geocentric gravitational constant (mass of Earth's atmosphere included) of the World Geodetic System 1984 Ellipsoid, second upgrade.
  * @author Georg Fischer
  */
-
 public class A125125 extends NoncomputableSequence {
 
   /** Construct the sequence. */

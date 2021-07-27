@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327957 Decimal expansion of neutron magnetic moment to Bohr magneton ratio, negated.
  * @author Georg Fischer
  */
-
 public class A327957 extends NoncomputableSequence {
 
   /** Construct the sequence. */

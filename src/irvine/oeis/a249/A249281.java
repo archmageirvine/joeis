@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A249281 Decimal expansion of length of one Gaussian year in mean solar days.
  * @author Georg Fischer
  */
-
 public class A249281 extends NoncomputableSequence {
 
   /** Construct the sequence. */

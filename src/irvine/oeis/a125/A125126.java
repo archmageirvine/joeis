@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A125126 Decimal expansion of the angular velocity of the Earth of the World Geodetic System 1984 Ellipsoid, second upgrade.
  * @author Georg Fischer
  */
-
 public class A125126 extends NoncomputableSequence {
 
   /** Construct the sequence. */

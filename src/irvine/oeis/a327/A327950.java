@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327950 Decimal expansion of muon g factor, negated.
  * @author Georg Fischer
  */
-
 public class A327950 extends NoncomputableSequence {
 
   /** Construct the sequence. */

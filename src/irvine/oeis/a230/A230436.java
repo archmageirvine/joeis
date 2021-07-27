@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A230436 Decimal expansion of Compton wavelength in meters.
  * @author Georg Fischer
  */
-
 public class A230436 extends NoncomputableSequence {
 
   /** Construct the sequence. */

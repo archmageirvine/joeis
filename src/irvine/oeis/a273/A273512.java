@@ -2,7 +2,6 @@ package irvine.oeis.a273;
 // manually (decexp) at 2021-07-27
 
 import irvine.math.cr.CR;
-import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
@@ -14,6 +13,6 @@ public class A273512 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
   public A273512() {
-    super(2, CR.PI.pow(CR.valueOf(new Q(3, 2))).divide(CR.valueOf(new Q(3, 4)).gamma().pow(CR.TWO)).multiply(CR.SQRT2).divide(CR.TWO), 2);
+    super(2, CR.PI.pow(CR.valueOf(1.5)).divide(CR.valueOf(0.75).gamma().pow(CR.TWO)).multiply(CR.SQRT2).divide(CR.TWO), 2);
   }
 }

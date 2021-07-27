@@ -11,7 +11,7 @@ public class A049278 extends A049239 {
   // WARNING: DO NOT USE THIS TO EXTEND THE SEQUENCE
   // The HEURISTIC below is not large enough for some values!
 
-  private static final long HEURISTIC = 1000;
+  private static final long HEURISTIC = 5000;
 
   private long mN = 0;
 

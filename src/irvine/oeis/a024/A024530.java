@@ -10,11 +10,15 @@ import irvine.oeis.a000.A000040;
  */
 public class A024530 extends A000040 {
 
-  private Q mSum = Q.ZERO;
+  private Q mSum = null;
   private boolean mEven = false;
 
   @Override
   public Z next() {
+    if (mSum == null) {
+      mSum = Q.ZERO;
+      return Z.ZERO;
+    }
     mEven = !mEven;
     final Z p = super.next();
     mSum = mSum.signedAdd(mEven, new Q(Z.ONE, p));

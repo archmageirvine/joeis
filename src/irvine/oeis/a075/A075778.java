@@ -12,15 +12,13 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A075778 extends DecimalExpansionSequence {
 
-  private static class MyFunction extends UnaryCRFunction {
-    @Override
-    public CR execute(final CR x) {
-      return x.pow(3).add(x.pow(2)).subtract(CR.ONE);
-    }
-  }
-
   /** Construct the sequence. */
   public A075778() {
-    super(new MyFunction().inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO));
+    super(0, new UnaryCRFunction() {
+      @Override
+      public CR execute(final CR x) {
+        return x.pow(3).add(x.pow(2)).subtract(CR.ONE);
+      }
+    }.inverseMonotone(CR.valueOf(0.3), CR.ONE).execute(CR.ZERO));
   }
 }

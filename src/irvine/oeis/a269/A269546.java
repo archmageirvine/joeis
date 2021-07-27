@@ -5,14 +5,14 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A269545 Decimal expansion of Gamma(Pi).
- * Formula: Gamma(Pi)
+ * A269546 Decimal expansion of log(Gamma(Pi)).
+ * Formula: log(Gamma(Pi))
  * @author Georg Fischer
  */
-public class A269545 extends DecimalExpansionSequence {
+public class A269546 extends DecimalExpansionSequence {
 
   /** Construct the sequence */
-  public A269545() {
-    super(1, CR.PI.gamma());
+  public A269546() {
+    super(0, CR.PI.gamma().log());
   }
 }

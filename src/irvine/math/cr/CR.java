@@ -749,6 +749,16 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Return the nearest integer to this number.
+   * @param precision precision to use
+   * @return rounded value
+   */
+  public Z round(final int precision) {
+    final int sign = toZ().signum();
+    return sign >= 0 ? subtract(CR.HALF).ceil(precision) : add(CR.HALF).floor(precision);
+  }
+
+  /**
    * Return the fractional part of this number.
    * @return fractional part
    */
@@ -756,6 +766,17 @@ public abstract class CR extends Number implements Comparable<CR> {
     return compareTo(CR.ZERO) < 0
       ? subtract(CR.valueOf(ceil()))
       : subtract(CR.valueOf(floor()));
+  }
+
+  /**
+   * Return the fractional part of this number up to the specified precision.
+   * @param precision precision. The value can be out by 1 if the value is very close to an integer.
+   * @return fractional part
+   */
+  public CR frac(final int precision) {
+    return compareTo(CR.ZERO) < 0
+      ? subtract(CR.valueOf(ceil(precision)))
+      : subtract(CR.valueOf(floor(precision)));
   }
 
   /**

@@ -236,4 +236,39 @@ public final class Zeta {
       }
     }.add(x.pow(s).inverse());
   }
+
+//  /**
+//   * Compute a Hurwitz zeta function/.
+//   * @param s order
+//   * @param x value
+//   * @return zeta function
+//   */
+//  public static CR zetaHurwitz2(final int s, final CR x) {
+//    // e.g. for A294967, A258815
+//    final CR x1 = x.add(CR.ONE);
+//    return new CR() {
+//      @Override
+//      protected Z approximate(final int precision) {
+//        Z sum = Z.ZERO;
+//        int k = 0;
+//        final int opPrec = precision + 5;
+//        while (true) {
+//          ++k;
+//          final Z v = Binomial.binomial(s + 2 * k - 2, 2 * k - 1);
+//          final Q b = BERNOULLI.get(2 * k).divide(2 * k);
+//          final Z u = x1.pow(s + 2 * k - 1).inverse().getApprox(opPrec);
+//          final Z t = b.multiply(v).multiply(u).toZ();
+////          System.out.println("k was " + k + " precision = " + opPrec);
+////          System.out.println("binomial " + v);
+//          System.out.println("u " + u + " (k=" + k + ")");
+////          System.out.println("B=" + b);
+//          if (t.isZero()) {
+//            break;
+//          }
+//          sum = sum.add(t);
+//        }
+//        return sum.shiftRight(5);
+//      }
+//    }.add(x.pow(s).inverse()).add(CR.HALF.add(x1.divide(CR.valueOf(s - 1))).divide(x1.pow(s)));
+//  }
 }

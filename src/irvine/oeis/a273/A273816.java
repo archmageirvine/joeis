@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A273816 Decimal expansion the Bessel moment c(3, 0) = Integral_{0..inf} K_0(x)^3 dx, where K_0 is the modified Bessel function of the second kind.
+ * A273816 Decimal expansion the Bessel moment c(3,0) = Integral_{0..inf} K_0(x)^3 dx, where K_0 is the modified Bessel function of the second kind.
  * Formula: 3*Gamma(1/3)^6/(32*Pi*2^(2/3)).
  * @author Georg Fischer
  */

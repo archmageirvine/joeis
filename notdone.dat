@@ -1669,3 +1669,5 @@ A049288 Number of nonisomorphic circulant tournaments, i.e., Cayley tournaments 
 A049292 Number of subgroups of index n in fundamental group of a closed surface of characteristic -3
 A049297 Number of nonisomorphic circulant digraphs (i.e., Cayley digraphs for the cyclic group) of order n
 A049300 Smallest number starting a longest interval of consecutive integers, each of which is divisible by at least one of the first n primes.
+A049309 Number of nonisomorphic self-complementary circulant digraphs (Cayley digraphs for the cyclic group) of order 2n-1.
+A049313 Switching classes of tournaments on n nodes.

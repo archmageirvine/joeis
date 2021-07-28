@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A169681 2^127-1
+ * A169681 Decimal expansion of 2^127-1.
  * @author Georg Fischer
  */
 public class A169681 extends DecimalExpansionSequence {

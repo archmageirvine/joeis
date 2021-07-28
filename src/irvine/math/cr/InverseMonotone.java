@@ -71,7 +71,7 @@ class InverseMonotone extends UnaryCRFunction {
     
     @Override
     protected Z approximate(final int p) {
-      final int extraArgPrec = 4;
+      final int extraArgPrec = 10; // increased by SAI on 2021-07-29 due to failures to converge
       final UnaryCRFunction fn = mMono.mFunc;
       // Number of preceding ineffective steps.  If this number gets >= 2,
       // we perform a binary search step to ensure forward progress.

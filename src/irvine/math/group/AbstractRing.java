@@ -41,6 +41,10 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
     if (n == 1) {
       return b;
     }
+    // x^2 (this case for efficiency)
+    if (n == 2) {
+      return ring.multiply(b, b);
+    }
     final E s = pow(ring, ring.multiply(b, b), n / 2);
     return (n & 1) == 0 ? s : ring.multiply(s, b);
   }

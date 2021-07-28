@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197575 Decimal expansion of least x > 0 having cos(x) = cos(Pi*x/2)^2.
+ * A197575 Decimal expansion of least x &gt; 0 having cos(x) = cos(Pi*x/2)^2.
  * Equation; sin(x)-(sin(Pi/2*x))^2
  * @author Georg Fischer
  */

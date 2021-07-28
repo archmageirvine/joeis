@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094794 a(n)=(1/n!)*A001689(n).
+ * A094794 a(n) = (1/n!)*A001689(n).
  * @author Sean A. Irvine
  */
 public class A094794 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197254 Decimal expansion of least x>0 having sin(x)=(sin 8x)^2.
+ * A197254 Decimal expansion of least x&gt;0 having sin(x)=(sin 8x)^2.
  * Equation; sin(x)-(sin(8*x))^2
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197268 Decimal expansion of least x>0 having sin(4x)=(sin 3x)^2.
+ * A197268 Decimal expansion of least x&gt;0 having sin(4x)=(sin 3x)^2.
  * Equation; sin(4*x)-(sin(3*x))^2
  * @author Georg Fischer
  */

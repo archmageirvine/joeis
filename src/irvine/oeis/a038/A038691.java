@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A038691 Prime race 4k-1 vs. 4k+1 is tied at n-th prime.
+ * A038691 Indices of primes at which the prime race 4k-1 vs. 4k+1 is tied.
  * @author Sean A. Irvine
  */
 public class A038691 extends A000040 {

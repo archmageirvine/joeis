@@ -6,7 +6,7 @@ import java.util.List;
 import irvine.math.z.Z;
 
 /**
- * A028312 Odd numbers n such that {1..n-1} cannot be partitioned into disjoint sets I, J such that 2I == -J (mod n) and I, J are unions of cyclotomic cosets mod n.
+ * A028312 Odd numbers k such that {1..k-1} cannot be partitioned into disjoint sets I, J such that 2I == -J (mod k) and I, J are unions of cyclotomic cosets mod k.
  * @author Sean A. Irvine
  */
 public class A028312 extends A028311 {

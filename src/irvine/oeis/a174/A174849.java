@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 /**
  * A174849 Decimal expansion of the site percolation threshold for the (3, 12^2) Archimedean lattice.
- * Formula: (1-2sin(Pi/18))^(1/2)
+ * Formula: <code>(1-2sin(Pi/18))^(1/2)</code>
  * @author Georg Fischer
  */
 public class A174849 extends DecimalExpansionSequence {

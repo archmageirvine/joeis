@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 /**
  * A086058 Decimal expansion of conjectured value of delta related to the Masser-Gramain constant.
- * Formula: 1+2*gamma+2*log(2)+3*log(Pi)-4*lnGamma(1/4)
+ * Formula: <code>1+2*gamma+2*log(2)+3*log(Pi)-4*lnGamma(1/4)</code>
  * @author Georg Fischer
  */
 public class A086058 extends DecimalExpansionSequence {

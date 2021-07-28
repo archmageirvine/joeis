@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 /**
  * A345732 Decimal expansion of log(Gamma(e)).
- * Formula: lnGamma(e)
+ * Formula: <code>lnGamma(e)</code>
  * @author Georg Fischer
  */
 public class A345732 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 /**
  * A086057 Decimal expansion of Masser-Gramain constant.
- * Formula: Pi/4*(2*gamma+2*log(2)+3*log(Pi)-4*lnGamma(1/4)))
+ * Formula: <code>Pi/4*(2*gamma+2*log(2)+3*log(Pi)-4*lnGamma(1/4)))</code>
  * @author Georg Fischer
  */
 public class A086057 extends DecimalExpansionSequence {

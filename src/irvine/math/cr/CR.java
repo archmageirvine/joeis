@@ -955,7 +955,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return <code>this^e</code>
    */
   public CR pow(final CR e) {
-    return e.multiply(log()).exp();
+    return e == CR.TWO ? multiply(this) : e.multiply(log()).exp();
   }
 
   /**

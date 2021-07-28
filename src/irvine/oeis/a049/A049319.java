@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049319.
+ * A049319 Number of 3-dimensional integer direction vectors (a,b,c) towards grid points at squared integer distance 2n-1.
  * @author Sean A. Irvine
  */
 public class A049319 implements Sequence {

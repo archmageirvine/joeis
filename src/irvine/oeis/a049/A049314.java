@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049314.
+ * A049314 The number k(GL(n,q)) of conjugacy classes in GL(n,q), q=4.
  * @author Sean A. Irvine
  */
 public class A049314 extends MemoryFunction1<Z> implements Sequence {

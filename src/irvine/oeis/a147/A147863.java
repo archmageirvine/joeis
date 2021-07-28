@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A147863.
+ * A147863 Decimal expansion of smallest positive solution to x^3 = tan x.
  * @author Sean A. Irvine
  */
 public class A147863 extends DecimalExpansionSequence {

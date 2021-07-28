@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A147866.
+ * A147866 Decimal expansion of smallest positive solution to x^6 = tan x.
  * @author Sean A. Irvine
  */
 public class A147866 extends DecimalExpansionSequence {

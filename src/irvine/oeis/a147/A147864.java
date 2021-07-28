@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A147864.
+ * A147864 Decimal expansion of smallest positive solution to x^4 = tan x.
  * @author Sean A. Irvine
  */
 public class A147864 extends DecimalExpansionSequence {

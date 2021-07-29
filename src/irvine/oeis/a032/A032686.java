@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000959;
 
 /**
- * A032686 Numbers n such that n surrounded by digit '1' is a lucky number.
+ * A032686 Numbers k such that k surrounded by digit '1' is a lucky number.
  * @author Sean A. Irvine
  */
 public class A032686 implements Sequence {

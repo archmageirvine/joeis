@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030478 Numbers n such that n^3 has property that all even digits occur together and all odd digits occur together.
+ * A030478 Numbers k such that k^3 has property that all even digits occur together and all odd digits occur together.
  * @author Sean A. Irvine
  */
 public class A030478 implements Sequence {

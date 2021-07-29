@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030705 Numbers n such that the decimal expansion of 9^n contains no zeros (probably finite).
+ * A030705 Numbers k such that the decimal expansion of 9^k contains no zeros (probably finite).
  * @author Sean A. Irvine
  */
 public class A030705 implements Sequence {

@@ -1,49 +1,38 @@
 package irvine.oeis.a003;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
-import irvine.math.nauty.GraphProcessor;
-import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
  * A003094 Number of unlabeled connected planar simple graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A003094 implements Sequence, GraphProcessor {
+public class A003094 extends ParallelGenerateGraphsSequence {
 
-  private int mN = -1;
-  private long mPlanarCount = 0;
+  /** Construct the sequence. */
+  public A003094() {
+    super(-1, -1, false, false, false);
+  }
 
   @Override
-  public void process(final Graph graph) {
-    if (graph.isPlanar()) {
-      ++mPlanarCount;
-    }
+  public long getCount(final Graph graph) {
+    return graph.isPlanar() ? 1 : 0;
+  }
+
+  @Override
+  protected void graphGenInit(final GenerateGraphs gg) {
+    gg.setVertices(mN);
+    gg.setMinEdges(0);
+    gg.setMaxEdges(mN * (mN - 1) / 2);
+    gg.setMinDeg(0);
+    gg.setMaxDeg(mN);
+    gg.setConnectionLevel(1);
   }
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.ONE;
-    }
-    final GenerateGraphs gg = new GenerateGraphs(1);
-    gg.setVertices(mN);
-    gg.setMinEdges(mN - 1);
-    gg.setMaxEdges(Multigraph.NOLIMIT);
-    gg.setConnectionLevel(1);
-    gg.setMaxDeg(mN - 1);
-    gg.setProcessor(this);
-    gg.sanitizeParams();
-    mPlanarCount = 0;
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // We are not generating output anyway
-    }
-    return Z.valueOf(mPlanarCount);
+    return super.next().max(Z.ONE);
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032705 Numbers n such that n prefixed by '5' and followed by '1' is prime.
+ * A032705 Numbers k such that k prefixed by '5' and followed by '1' is prime.
  * @author Sean A. Irvine
  */
 public class A032705 implements Sequence {

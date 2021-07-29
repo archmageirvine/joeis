@@ -955,7 +955,13 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return <code>this^e</code>
    */
   public CR pow(final CR e) {
-    return e == CR.TWO ? multiply(this) : e.multiply(log()).exp();
+    if (e instanceof CrZ && e.signum() >= 0) {
+      final Z ee = e.toZ();
+      if (ee.bitLength() < 63) {
+        return pow(ee.longValue());
+      }
+    }
+    return e.multiply(log()).exp();
   }
 
   /**

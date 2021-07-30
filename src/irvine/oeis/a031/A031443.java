@@ -1,23 +1,15 @@
 package irvine.oeis.a031;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.a049.A049354;
 
 /**
  * A031443 Digitally balanced numbers: numbers that in base 2 have the same number of 0's as 1's.
  * @author Sean A. Irvine
  */
-public class A031443 implements Sequence {
-
-  private Z mN = Z.ONE;
+public class A031443 extends A049354 {
 
   @Override
-  public Z next() {
-    while (true) {
-      mN = mN.add(1);
-      if (mN.bitCount() * 2 == mN.bitLength()) {
-        return mN;
-      }
-    }
+  protected int base() {
+    return 2;
   }
 }

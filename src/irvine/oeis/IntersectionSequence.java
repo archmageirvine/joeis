@@ -25,6 +25,16 @@ public class IntersectionSequence implements Sequence {
     mNextB = mSeqB.next();
   }
 
+  /**
+   * Intersection of three sequences.
+   * @param a first sequence
+   * @param b second sequence
+   * @param c third sequence
+   */
+  public IntersectionSequence(final Sequence a, final Sequence b, final Sequence c) {
+    this(new IntersectionSequence(a, b), c);
+  }
+
   @Override
   public Z next() {
     while (true) {

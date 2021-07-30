@@ -7,46 +7,33 @@ import java.io.InputStreamReader;
 import irvine.math.graph.Graph;
 import irvine.math.graph.Graph6;
 import irvine.math.nauty.GenerateGraphs;
-import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
  * A003216 Number of Hamiltonian graphs with n nodes.
  * @author Sean A. Irvine
  */
-public class A003216 implements Sequence, GraphProcessor {
+public class A003216 extends ParallelGenerateGraphsSequence {
 
-  private int mN = 0;
-  private long mCount = 0;
-
-  @Override
-  public void process(final Graph graph) {
-    if (graph.isHamiltonian()) {
-      //System.out.println(graph);
-      ++mCount;
-    }
+  /** Construct the sequence. */
+  public A003216() {
+    super(0, 0, false, false, false);
   }
 
   @Override
-  public Z next() {
-    final GenerateGraphs gg = new GenerateGraphs(1);
-    gg.setVertices(++mN);
+  public long getCount(final Graph graph) {
+    return graph.isHamiltonian() ? 1 : 0;
+  }
+
+  @Override
+  protected void graphGenInit(final GenerateGraphs gg) {
+    gg.setVertices(mN);
     gg.setMinEdges(mN - 1);
     gg.setMaxEdges(Multigraph.NOLIMIT);
-    gg.setConnectionLevel(1);
     gg.setMinDeg(2);
     gg.setMaxDeg(mN);
-    gg.setProcessor(this);
-    gg.sanitizeParams();
-    mCount = 0;
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
-    return Z.valueOf(mCount);
+    gg.setConnectionLevel(1);
   }
 
   /**

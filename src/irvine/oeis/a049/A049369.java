@@ -1,4 +1,4 @@
-package irvine.oeis.a024;
+package irvine.oeis.a049;
 
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
@@ -6,18 +6,22 @@ import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A024607 Number of connected triangle-free graphs on n unlabeled nodes.
+ * A049369 Number of planar graphs with minimum degree at least 1 and n nodes.
  * @author Sean A. Irvine
  */
-public class A024607 extends ParallelGenerateGraphsSequence {
+public class A049369 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
-  public A024607() {
-    super(0, 0, false, false, true);
+  public A049369() {
+    super(0, 2, false, false, false);
   }
 
   @Override
   public long getCount(final Graph graph) {
+    return graph.isPlanar() ? 1 : 0;
+  }
+
+  protected int minDegree() {
     return 1;
   }
 
@@ -26,6 +30,6 @@ public class A024607 extends ParallelGenerateGraphsSequence {
     gg.setVertices(mN);
     gg.setMinEdges(0);
     gg.setMaxEdges(Multigraph.NOLIMIT);
-    gg.setConnectionLevel(1);
+    gg.setMinDeg(minDegree());
   }
 }

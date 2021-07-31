@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a003.A003401;
 
 /**
- * A004169 Values of m for which a regular polygon with m sides cannot be constructed with ruler and compass.
+ * A004169 Values of n for which a regular polygon with n sides cannot be constructed with ruler and compass.
  * @author Sean A. Irvine
  */
 public class A004169 extends ComplementSequence {

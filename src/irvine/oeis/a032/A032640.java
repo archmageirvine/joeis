@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000959;
 
 /**
- * A032640 Numbers k such that k concatenated with itself is a lucky number.
+ * A032640 Numbers n such that n concatenated with itself is a lucky number.
  * @author Sean A. Irvine
  */
 public class A032640 implements Sequence {

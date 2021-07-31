@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007350 Where the prime race 4k-1 vs. 4k+1 changes leader.
+ * A007350 Where prime race 4n-1 vs. 4n+1 changes leader.
  * @author Sean A. Irvine
  */
 public class A007350 implements Sequence {

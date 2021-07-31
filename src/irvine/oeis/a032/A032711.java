@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032711 Numbers k such that the concatenation '2',k,'3' is prime.
+ * A032711 Numbers n such that the concatenation '2',n,'3' is prime.
  * @author Sean A. Irvine
  */
 public class A032711 implements Sequence {

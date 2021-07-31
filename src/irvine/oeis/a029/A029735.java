@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A029735 Numbers k such that k^3 is palindromic in base 16.
+ * A029735 Numbers n such that n^3 is palindromic in base 16.
  * @author Sean A. Irvine
  */
 public class A029735 implements Sequence {

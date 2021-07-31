@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025144 Numbers k such that (#1's in (s(1),...,s(k)) = (#1's in r(1),...,r(k)), where s = A025142 and r = A025143.
+ * A025144 Numbers n such that (#1's in (s(1),...,s(n)) = (#1's in r(1),...,r(n)), where s = A025142 and r = A025143.
  * @author Sean A. Irvine
  */
 public class A025144 extends A025142 {

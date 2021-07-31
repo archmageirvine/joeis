@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032622 Numbers k such that k concatenated with k+7 is a prime.
+ * A032622 Numbers n such that n concatenated with n + 7 is a prime.
  * @author Sean A. Irvine
  */
 public class A032622 implements Sequence {

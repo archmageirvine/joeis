@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032619 Numbers k such that k concatenated with k+4 is a prime.
+ * A032619 Numbers n such that n concatenated with n + 4 is a prime.
  * @author Sean A. Irvine
  */
 public class A032619 implements Sequence {

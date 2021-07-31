@@ -3,7 +3,7 @@ package irvine.oeis.a295;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A295585 Numbers k such that Dirichlet's theorem has a purely elementary proof mod k via the Erd\u0151s method.
+ * A295585 Numbers n such that Dirichlet's theorem has a purely elementary proof mod n via the Erd\u0151s method.
  * @author Georg Fischer
  */
 public class A295585 extends FiniteSequence {

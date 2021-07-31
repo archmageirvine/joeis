@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029709 Numbers k such that k-th and (k+1)st primes differ by 4.
+ * A029709 Numbers n such that n-th and (n+1)st primes differ by 4.
  * @author Sean A. Irvine
  */
 public class A029709 implements Sequence {

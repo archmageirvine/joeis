@@ -10,6 +10,8 @@ import java.nio.charset.StandardCharsets;
 import org.apfloat.ApfloatRuntimeException;
 
 import irvine.math.z.Z;
+import irvine.util.CliFlags;
+import irvine.util.string.Date;
 
 /**
  * A factory providing methods to get an object capable to generating a
@@ -53,18 +55,22 @@ public final class SequenceFactory {
    * @throws IOException if an I/O error occurs.
    */
   public static void main(final String[] args) throws IOException {
-    if (args == null || args.length != 1) {
-      System.err.println("Usage: SequenceFactory sequence-id");
-      return;
-    }
+    final CliFlags flags = new CliFlags("SequenceFactory", "Generate terms for an OEIS sequence");
+    flags.registerOptional('t', "timestamp", "Add a timestamp to each line of output");
+    flags.registerRequired(String.class, "A-number", "Sequence to generate");
+    flags.setFlags(args);
+    final boolean timestamp = flags.isSet("timestamp");
     boolean generated = false;
     try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
       final byte[] ls = System.lineSeparator().getBytes(StandardCharsets.US_ASCII);
-      final Sequence seq = sequence(args[0]);
+      final Sequence seq = sequence(flags.getAnonymousValue(0).toString());
       try {
         Z z;
         while ((z = seq.next()) != null) {
           generated = true;
+          if (timestamp) {
+            out.write(Date.now().getBytes(StandardCharsets.US_ASCII));
+          }
           out.write(z.toString().getBytes(StandardCharsets.US_ASCII));
           out.write(ls);
           out.flush();

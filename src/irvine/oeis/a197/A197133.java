@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197133 Decimal expansion of least x&gt;0 having sin(x) = sin(2*x)^2.
+ * A197133 Decimal expansion of least x&gt;0 having sin(x)=(sin 2x)^2.
  * Equation; sin(x)-(sin(2*x))^2
  * @author Georg Fischer
  */

@@ -13,6 +13,6 @@ public class A328895 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A328895() {
-    super(0, CR.PI.pow(CR.TWO).divide(CR.EIGHT.multiply(CR.TWO.sqrt())));
+    super(0, CR.PI.pow(2).divide(CR.EIGHT.multiply(CR.TWO.sqrt())));
   }
 }

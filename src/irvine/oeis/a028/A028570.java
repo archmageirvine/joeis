@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028570 Numbers k such that k*(k + 9) is a palindrome.
+ * A028570 Numbers n such that n(n + 9) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028570 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032685 Numbers k such that k surrounded by digit '9' is a prime.
+ * A032685 Numbers n such that n surrounded by digit '9' is a prime.
  * @author Sean A. Irvine
  */
 public class A032685 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039951 a(n) is the smallest prime p such that p^2 divides n^(p-1) - 1.
+ * A039951 a(n) = smallest prime p such that p^2 divides n^(p-1) - 1.
  * @author Sean A. Irvine
  */
 public class A039951 implements Sequence {

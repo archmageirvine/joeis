@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027704 Numbers k such that the k-th prime has an even number of 1's in its binary expansion and the (k+1)st prime has an odd number of 1's.
+ * A027704 Numbers n such that n-th prime has even number of 1's in binary expansion and (n+1)st prime has odd number of 1's.
  * @author Sean A. Irvine
  */
 public class A027704 implements Sequence {

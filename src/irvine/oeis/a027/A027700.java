@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027700 Numbers k such that the k-th prime has an even number of 1's in its binary expansion.
+ * A027700 Numbers n such that the n-th prime has an even number of 1's in its binary expansion.
  * @author Sean A. Irvine
  */
 public class A027700 implements Sequence {

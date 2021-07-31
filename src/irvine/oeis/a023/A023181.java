@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023181 Numbers k such that Fibonacci(k) == 55 (mod k).
+ * A023181 Numbers n such that Fib(n) == 55 (mod n).
  * @author Sean A. Irvine
  */
 public class A023181 extends A000045 {

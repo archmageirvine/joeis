@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197476 Decimal expansion of least x&gt;0 having cos(x) = cos(2*x)^2.
+ * A197476 Decimal expansion of least x&gt;0 having cos(x)=(cos 2x)^2.
  * Equation; cos(x)-(cos(2*x))^2
  * @author Georg Fischer
  */

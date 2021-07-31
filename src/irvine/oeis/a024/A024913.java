@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024913 Numbers k such that 10*k - 7 is prime.
+ * A024913 Numbers n such that 10n - 7 is prime.
  * @author Sean A. Irvine
  */
 public class A024913 implements Sequence {

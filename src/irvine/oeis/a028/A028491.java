@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028491 Numbers k such that (3^k - 1)/2 is prime.
+ * A028491 Numbers n such that (3^n - 1)/2 is prime.
  * @author Sean A. Irvine
  */
 public class A028491 implements Sequence {

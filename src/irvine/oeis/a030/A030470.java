@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030470 Numbers k such that k concatenated with k+1, k+2, k+3 is prime.
+ * A030470 Numbers n such that n concatenated with n+1, n+2, n+3 is prime.
  * @author Sean A. Irvine
  */
 public class A030470 implements Sequence {

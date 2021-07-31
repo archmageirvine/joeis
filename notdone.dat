@@ -1673,3 +1673,4 @@ A049309 Number of nonisomorphic self-complementary circulant digraphs (Cayley di
 A049313 Switching classes of tournaments on n nodes.
 A049333 Number of spanning trees in directed graph of spanning trees of the complete directed graph on n vertices.
 A049344 Prime unoriented alternating links (not necessarily connected knots) with n crossings.
+A049387 Number of rooted unlabeled strongly connected digraphs with n nodes.

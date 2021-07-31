@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024902 Numbers k such that 7*k + 4 is prime.
+ * A024902 Numbers n such that 7*n+4 is prime.
  * @author Sean A. Irvine
  */
 public class A024902 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094795 a(n) = (1/n!)*A023043(n).
+ * A094795 a(n)=(1/n!)*A023043(n).
  * @author Georg Fischer
  */
 public class A094795 extends HolonomicRecurrence {

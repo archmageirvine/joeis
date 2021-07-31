@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033910 Numbers n such that s(n)+s(n+1)+s(n+2)=t(n)+t(n+1)+t(n+2) where s(n)=sigma(n)-n, t(n)=|s(n)-n|.
+ * A033910 Numbers k such that s(k) + s(k+1) + s(k+2) = t(k) + t(k+1) + t(k+2) where s(k) = sigma(k) - k, t(k) = |s(k) - k|.
  * @author Sean A. Irvine
  */
 public class A033910 implements Sequence {

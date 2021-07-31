@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023069 Numbers n such that n and 3*n are anagrams in base 7 (written in base 7).
+ * A023069 Numbers k such that k and 3*k are anagrams in base 7 (written in base 7).
  * @author Sean A. Irvine
  */
 public class A023069 implements Sequence {

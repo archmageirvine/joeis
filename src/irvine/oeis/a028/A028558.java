@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028558 Numbers n such that n(n+5) is a palindrome.
+ * A028558 Numbers k such that k*(k+5) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028558 implements Sequence {

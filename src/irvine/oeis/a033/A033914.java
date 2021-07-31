@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033914 Numbers n such that s(n)+s(n+1)+...+s(n+7)=t(n)+t(n+1)+...+t(n+7).
+ * A033914 Numbers k such that s(k) + s(k+1) + ... + s(k+7) = t(k) + t(k+1) + ... + t(k+7).
  * @author Sean A. Irvine
  */
 public class A033914 extends A033910 {

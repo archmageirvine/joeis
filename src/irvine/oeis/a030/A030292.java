@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030292 Numbers n such that n^3 has at most two different digits.
+ * A030292 Numbers k such that k^3 has at most two different digits.
  * @author Sean A. Irvine
  */
 public class A030292 implements Sequence {

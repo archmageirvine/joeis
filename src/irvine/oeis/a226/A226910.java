@@ -6,7 +6,7 @@ package irvine.oeis.a226;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A226910 Sum(binomial(n,5*k)*binomial(6*k,k)/(5*k+1),k=0..floor(n/5)).
+ * A226910 a(n) = Sum_{k=0..floor(n/5)} binomial(n,5*k)*binomial(6*k,k)/(5*k+1).
  * @author Georg Fischer
  */
 public class A226910 extends HolonomicRecurrence {

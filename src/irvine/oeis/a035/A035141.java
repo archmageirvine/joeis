@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002808;
 
 /**
- * A035141 Composite numbers n such that digits in n and in juxtaposition of prime factors of n the same (apart from multiplicity).
+ * A035141 Composite numbers k such that digits in k and in juxtaposition of prime factors of k are the same (apart from multiplicity).
  * @author Sean A. Irvine
  */
 public class A035141 extends A002808 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A029805 Numbers n such that n^2 is palindromic in base 8.
+ * A029805 Numbers k such that k^2 is palindromic in base 8.
  * @author Sean A. Irvine
  */
 public class A029805 implements Sequence {

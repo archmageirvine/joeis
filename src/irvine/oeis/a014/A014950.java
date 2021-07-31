@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014950 Numbers n such that n divides 10^n - 1.
+ * A014950 Numbers m such that m divides 10^m - 1.
  * @author Sean A. Irvine
  */
 public class A014950 implements Sequence {

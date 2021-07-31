@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029797 Numbers n such that n^2 and n^3 have the same set of digits.
+ * A029797 Numbers k such that k^2 and k^3 have the same set of digits.
  * @author Sean A. Irvine
  */
 public class A029797 implements Sequence {

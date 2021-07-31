@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A104954 Decimal expansion of the area of the regular 3-gon (triangle) of circumradius = 1. Note this is (1/2)*A104956.
+ * A104954 Decimal expansion of the area of the regular triangle with circumradius 1.
  * Formula: 3*sqrt(3)/4
  * @author Georg Fischer
  */

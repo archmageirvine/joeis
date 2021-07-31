@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A108331 Integers n such that 10^n-87 is prime.
+ * A108331 Integers k such that 10^k - 87 is prime.
  * @author Georg Fischer
  */
 public class A108331 extends PrimePositionSubsequence {

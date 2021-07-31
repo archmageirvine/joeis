@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027757 Numbers n such that n^2 + n + 9 is prime.
+ * A027757 Numbers k such that k^2 + k + 9 is prime.
  * @author Sean A. Irvine
  */
 public class A027757 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034878 Numbers n such that n! can be written as the product of smaller factorials.
+ * A034878 Numbers k such that k! can be written as the product of smaller factorials.
  * @author Sean A. Irvine
  */
 public class A034878 extends A034876 {

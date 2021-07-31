@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A345368 allocated for Eduard Roure Perdices.
+ * A345368 a(n) = Sum_{k=0..n} binomial(5*k,k) / (4*k + 1).
  * @author Sean A. Irvine
  */
 public class A345368 extends A002193 {

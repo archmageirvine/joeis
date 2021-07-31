@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023144 Numbers n such that prime(n) == 2 (mod n).
+ * A023144 Numbers k such that prime(k) == 2 (mod k).
  * @author Sean A. Irvine
  */
 public class A023144 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023083 Numbers n such that n and 6*n are anagrams in base 9 (written in base 9).
+ * A023083 Numbers k such that k and 6*k are anagrams in base 9 (written in base 9).
  * @author Sean A. Irvine
  */
 public class A023083 implements Sequence {

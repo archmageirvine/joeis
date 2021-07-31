@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007366 Numbers n such that phi(x) = n has exactly 2 solutions.
+ * A007366 Numbers k such that phi(x) = k has exactly 2 solutions.
  * @author Sean A. Irvine
  */
 public class A007366 implements Sequence {

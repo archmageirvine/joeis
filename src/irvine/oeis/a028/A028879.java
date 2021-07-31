@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028879 Numbers n such that n^2 - 6 is prime.
+ * A028879 Numbers k such that k^2 - 6 is prime.
  * @author Sean A. Irvine
  */
 public class A028879 implements Sequence {

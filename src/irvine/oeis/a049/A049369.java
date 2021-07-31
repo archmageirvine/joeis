@@ -6,7 +6,7 @@ import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A049369 Number of planar graphs with minimum degree at least 1 and n nodes.
+ * A049369 Number of n-node planar graphs with minimum degree at least 1.
  * @author Sean A. Irvine
  */
 public class A049369 extends ParallelGenerateGraphsSequence {

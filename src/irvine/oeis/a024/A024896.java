@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024896 Numbers n such that 5*n - 2 is prime.
+ * A024896 Numbers k such that 5*k - 2 is prime.
  * @author Sean A. Irvine
  */
 public class A024896 implements Sequence {

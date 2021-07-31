@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004063 Numbers n such that (7^n - 1)/6 is prime.
+ * A004063 Numbers k such that (7^k - 1)/6 is prime.
  * @author Sean A. Irvine
  */
 public class A004063 implements Sequence {

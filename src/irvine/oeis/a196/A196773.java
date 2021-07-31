@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196773 Decimal expansion of the least number x>0 satisfying -1=(x^2)*cos(x).
+ * A196773 Decimal expansion of the least number x&gt;0 satisfying -1=(x^2)*cos(x).
  * Equation; -1-((x^2)*cos(x))
  * @author Georg Fischer
  */

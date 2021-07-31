@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199378 Decimal expansion of x>0 satisfying x^2+3*x*sin(x)=3.
+ * A199378 Decimal expansion of x&gt;0 satisfying x^2+3*x*sin(x)=3.
  * Equation; x^2+3*x*sin(x)-(3)
  * @author Georg Fischer
  */

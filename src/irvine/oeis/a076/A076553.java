@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A076553 Decimal expansion of the solution of agm(x, 2) = 1.
+ * A076553 Decimal expansion of the solution of agm(x,2) = 1.
  * Equation; agm(x, 2)-1
  * @author Georg Fischer
  */

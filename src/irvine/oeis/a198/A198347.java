@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A198347 Decimal expansion of x>0 having 4*x^2=cos(x).
+ * A198347 Decimal expansion of x&gt;0 having 4*x^2=cos(x).
  * Equation; 4*x^2-(cos(x))
  * @author Georg Fischer
  */

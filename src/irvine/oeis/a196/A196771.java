@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196771 Decimal expansion of the least x > 0 satisfying 1 = x*sin(x - Pi/6).
+ * A196771 Decimal expansion of the least x &gt; 0 satisfying 1 = x*sin(x - Pi/6).
  * Equation; 1-(x*sin(x-Pi/6))
  * @author Georg Fischer
  */

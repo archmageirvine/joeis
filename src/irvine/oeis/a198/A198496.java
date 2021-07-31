@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A198496 Decimal expansion of x<0 having 2x^2+2x=sin(x).
+ * A198496 Decimal expansion of x&lt;0 having 2x^2+2x=sin(x).
  * Equation; 2x^2+2x-(sin(x))
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A200695 Decimal expansion of least x>0 satisfying 1-2*x^2=tan(x).
+ * A200695 Decimal expansion of least x&gt;0 satisfying 1-2*x^2=tan(x).
  * Equation; 1-2*x^2-(tan(x))
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A198874 Decimal expansion of x>0 satisfying 2*x^2-cos(x)=4.
+ * A198874 Decimal expansion of x&gt;0 satisfying 2*x^2-cos(x)=4.
  * Equation; 2*x^2-cos(x)-(4)
  * @author Georg Fischer
  */

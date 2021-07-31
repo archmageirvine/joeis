@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196827 Decimal expansion of the least x>0 satisfying 1/(1+x^2)=3*sin(x).
+ * A196827 Decimal expansion of the least x&gt;0 satisfying 1/(1+x^2)=3*sin(x).
  * Equation; 1/(1+x^2)-(3*sin(x))
  * @author Georg Fischer
  */

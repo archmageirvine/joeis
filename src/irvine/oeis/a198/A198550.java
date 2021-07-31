@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A198550 Decimal expansion of x>0 having 3*x^2-x=sin(x).
+ * A198550 Decimal expansion of x&gt;0 having 3*x^2-x=sin(x).
  * Equation; 3*x^2-x-(sin(x))
  * @author Georg Fischer
  */

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049340 Triangle T(n,k) = number of planar graphs with n &gt;= 1 nodes and 0&lt;=k&lt;=C(n,2) edges, all degrees even.
+ * A049340 Triangle read by rows: T(n,k) is the number of planar graphs with n &gt;= 1 nodes and 0 &lt;= k &lt;= binomial(n,2) edges, all degrees even.
  * @author Sean A. Irvine
  */
 public class A049340 implements Sequence, GraphProcessor {

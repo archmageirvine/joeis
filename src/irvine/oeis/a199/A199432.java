@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199432 Decimal expansion of x>0 satisfying x^2+2*x*sin(x)=cos(x).
+ * A199432 Decimal expansion of x&gt;0 satisfying x^2+2*x*sin(x)=cos(x).
  * Equation; x^2+2*x*sin(x)-(cos(x))
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A200588 Decimal expansion of least x>0 satisfying 3*x^2-x+4=tan(x).
+ * A200588 Decimal expansion of least x&gt;0 satisfying 3*x^2-x+4=tan(x).
  * Equation; 3*x^2-x+4-(tan(x))
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049337 Triangle read by rows: T(n,k) = number of 3-connected planar graphs (or polyhedra) with n &gt;= 1 nodes and 0 &lt;= k &lt;= C(n,2) edges.
+ * A049337 Triangle read by rows: T(n,k) is the number of 3-connected planar graphs (or polyhedra) with n &gt;= 1 nodes and 0 &lt;= k &lt;= C(n,2) edges.
  * @author Sean A. Irvine
  */
 public class A049337 implements Sequence {

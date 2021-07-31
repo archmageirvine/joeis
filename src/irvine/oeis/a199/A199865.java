@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199865 Decimal expansion of x>0 satisfying 4*x^2-x*cos(x)=sin(x).
+ * A199865 Decimal expansion of x&gt;0 satisfying 4*x^2-x*cos(x)=sin(x).
  * Equation; 4*x^2-x*cos(x)-(sin(x))
  * @author Georg Fischer
  */

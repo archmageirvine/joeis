@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A295823 Decimal expansion of x > 0 satisfying e + x + e^x*(2x-3) = 0.
+ * A295823 Decimal expansion of x &gt; 0 satisfying e + x + e^x*(2x-3) = 0.
  * Equation; e+x+e^x*(2x-3)
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201399 Decimal expansion of x satisfying x^2 + 4 = sec(x) and 0 < x < Pi.
+ * A201399 Decimal expansion of x satisfying x^2 + 4 = sec(x) and 0 &lt; x &lt; Pi.
  * Equation; x^2+4-(sec(x))
  * @author Georg Fischer
  */

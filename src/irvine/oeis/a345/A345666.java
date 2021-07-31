@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A345666 allocated for Eyal Gruss.
+ * A345666 Composite numbers whose largest prime substring is greater than the record of all previous terms.
  * @author Sean A. Irvine
  */
 public class A345666 extends A002808 {

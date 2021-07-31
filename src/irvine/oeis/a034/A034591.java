@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034591 Numbers n such that concatenation of n and nextprime(n) is a prime.
+ * A034591 Numbers whose concatenation with the next prime yields a prime.
  * @author Sean A. Irvine
  */
 public class A034591 implements Sequence {

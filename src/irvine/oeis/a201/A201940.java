@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201940 Decimal expansion of x>0 satisfying x^2-1=e^(-x).
+ * A201940 Decimal expansion of x&gt;0 satisfying x^2-1=e^(-x).
  * Equation; x^2-1-(e^(-x))
  * @author Georg Fischer
  */

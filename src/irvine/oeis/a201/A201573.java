@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201573 Decimal expansion of greatest x satisfying x^2 + 6 = csc(x) and 0 < x < Pi.
+ * A201573 Decimal expansion of greatest x satisfying x^2 + 6 = csc(x) and 0 &lt; x &lt; Pi.
  * Equation; x^2+6-(csc(x))
  * @author Georg Fischer
  */

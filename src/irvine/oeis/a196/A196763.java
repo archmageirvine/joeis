@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196763 Decimal expansion of the least x>0 satisfying 5=x*sin(x).
+ * A196763 Decimal expansion of the least x&gt;0 satisfying 5=x*sin(x).
  * Equation; 5-(x*sin(x))
  * @author Georg Fischer
  */

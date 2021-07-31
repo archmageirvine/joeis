@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197481 Decimal expansion of least x>0 having cos(3x)=(cos(6x))^2.
+ * A197481 Decimal expansion of least x&gt;0 having cos(3x)=(cos(6x))^2.
  * Equation; cos(3x)-((cos(6x))^2)
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201333 Decimal expansion of x satisfying 6*x^2 = cot(x) and 0 < x < Pi.
+ * A201333 Decimal expansion of x satisfying 6*x^2 = cot(x) and 0 &lt; x &lt; Pi.
  * Equation; 6*x^2-(cot(x))
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A200486 Decimal expansion of least x>0 satisfying x^2-3x+2=tan(x).
+ * A200486 Decimal expansion of least x&gt;0 satisfying x^2-3x+2=tan(x).
  * Equation; x^2-3x+2-(tan(x))
  * @author Georg Fischer
  */

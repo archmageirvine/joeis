@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199609 Decimal expansion of least x>0 satisfying x^2+3*x*cos(x)=3*sin(x).
+ * A199609 Decimal expansion of least x&gt;0 satisfying x^2+3*x*cos(x)=3*sin(x).
  * Equation; x^2+3*x*cos(x)-(3*sin(x))
  * @author Georg Fischer
  */

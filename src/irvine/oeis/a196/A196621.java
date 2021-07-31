@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196621 Decimal expansion of the least x > 0 satisfying 1 = x*cos(x - Pi/3).
+ * A196621 Decimal expansion of the least x &gt; 0 satisfying 1 = x*cos(x - Pi/3).
  * Equation; 1-(x*cos(x-Pi/3))
  * @author Georg Fischer
  */

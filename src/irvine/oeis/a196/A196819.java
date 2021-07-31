@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196819 Decimal expansion of the least x>0 satisfying 1/(1+x^2)=4*cos(x).
+ * A196819 Decimal expansion of the least x&gt;0 satisfying 1/(1+x^2)=4*cos(x).
  * Equation; 1/(1+x^2)-(4*cos(x))
  * @author Georg Fischer
  */

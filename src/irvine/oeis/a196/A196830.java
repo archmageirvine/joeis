@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196830 Decimal expansion of the least x>0 satisfying 1/(1+x^2)=6*sin(x).
+ * A196830 Decimal expansion of the least x&gt;0 satisfying 1/(1+x^2)=6*sin(x).
  * Equation; 1/(1+x^2)-(6*sin(x))
  * @author Georg Fischer
  */

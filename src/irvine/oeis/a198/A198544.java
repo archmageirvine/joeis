@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A198544 Decimal expansion of x<0 having 4*x^2+4x=sin(x).
+ * A198544 Decimal expansion of x&lt;0 having 4*x^2+4x=sin(x).
  * Equation; 4*x^2+4x-(sin(x))
  * @author Georg Fischer
  */

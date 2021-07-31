@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A200690 Decimal expansion of least x>0 satisfying 6-x^2=tan(x).
+ * A200690 Decimal expansion of least x&gt;0 satisfying 6-x^2=tan(x).
  * Equation; 6-x^2-(tan(x))
  * @author Georg Fischer
  */

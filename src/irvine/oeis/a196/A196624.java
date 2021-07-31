@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196624 Decimal expansion of the least x>0 satisfying 1=2x*sin(x).
+ * A196624 Decimal expansion of the least x&gt;0 satisfying 1=2x*sin(x).
  * Equation; 1-(2x*sin(x))
  * @author Georg Fischer
  */

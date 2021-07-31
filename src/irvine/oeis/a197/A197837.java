@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197837 Decimal expansion of least x>0 satisfying (cos(x))^2+(sin(3*Pi*x))^2=1.
+ * A197837 Decimal expansion of least x&gt;0 satisfying (cos(x))^2+(sin(3*Pi*x))^2=1.
  * Equation; (cos(x))^2+(sin(3*Pi*x))^2-(1)
  * @author Georg Fischer
  */

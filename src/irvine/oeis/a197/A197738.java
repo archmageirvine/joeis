@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197738 Decimal expansion of x>0 having x^2+x=cos(x).
+ * A197738 Decimal expansion of x&gt;0 having x^2+x=cos(x).
  * Equation; x^2+x-(cos(x))
  * @author Georg Fischer
  */

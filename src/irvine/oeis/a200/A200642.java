@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A200642 Decimal expansion of least x>0 satisfying 4*x^2+5=tan(x).
+ * A200642 Decimal expansion of least x&gt;0 satisfying 4*x^2+5=tan(x).
  * Equation; 4*x^2+5-(tan(x))
  * @author Georg Fischer
  */

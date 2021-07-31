@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A200614 Decimal expansion of the lesser of two values of x satisfying 3*x^2 - 1 = tan(x) and 0 < x < Pi/2.
+ * A200614 Decimal expansion of the lesser of two values of x satisfying 3*x^2 - 1 = tan(x) and 0 &lt; x &lt; Pi/2.
  * Equation; 3*x^2-1-(tan(x))
  * @author Georg Fischer
  */

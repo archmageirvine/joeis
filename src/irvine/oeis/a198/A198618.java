@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A198618 Decimal expansion of x>0 satisfying 3*x^2+3x=4*sin(x).
+ * A198618 Decimal expansion of x&gt;0 satisfying 3*x^2+3x=4*sin(x).
  * Equation; 3*x^2+3x-(4*sin(x))
  * @author Georg Fischer
  */

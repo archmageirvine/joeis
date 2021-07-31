@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201517 Decimal expansion of least x satisfying 4*x^2 - 1 = sec(x) and 0 < x < Pi.
+ * A201517 Decimal expansion of least x satisfying 4*x^2 - 1 = sec(x) and 0 &lt; x &lt; Pi.
  * Equation; 4*x^2-1-(sec(x))
  * @author Georg Fischer
  */

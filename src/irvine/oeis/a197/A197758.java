@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197758 Decimal expansion of least x>0 having sin(2x)=4*sin(8x).
+ * A197758 Decimal expansion of least x&gt;0 having sin(2x)=4*sin(8x).
  * Equation; sin(2x)-(4*sin(8x))
  * @author Georg Fischer
  */

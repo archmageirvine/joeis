@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201290 Decimal expansion of x satisfying 2*x^2 + 1 = cot(x) and 0 < x < Pi.
+ * A201290 Decimal expansion of x satisfying 2*x^2 + 1 = cot(x) and 0 &lt; x &lt; Pi.
  * Equation; 2*x^2+1-(cot(x))
  * @author Georg Fischer
  */

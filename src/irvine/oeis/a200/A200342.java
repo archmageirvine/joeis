@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A200342 Decimal expansion of least x>0 satisfying x^2+x+1=tan(x).
+ * A200342 Decimal expansion of least x&gt;0 satisfying x^2+x+1=tan(x).
  * Equation; x^2+x+1-(tan(x))
  * @author Georg Fischer
  */

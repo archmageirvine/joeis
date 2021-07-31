@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199444 Decimal expansion of x>0 satisfying 2*x^2+3*x*sin(x)=2*cos(x).
+ * A199444 Decimal expansion of x&gt;0 satisfying 2*x^2+3*x*sin(x)=2*cos(x).
  * Equation; 2*x^2+3*x*sin(x)-(2*cos(x))
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196505 Decimal expansion of greatest x>0 satisfying sin(1/x)=1/sqrt(1+x^2).
+ * A196505 Decimal expansion of greatest x&gt;0 satisfying sin(1/x)=1/sqrt(1+x^2).
  * Equation; sin(1/x)-1/sqrt(1+x^2)
  * @author Georg Fischer
  */

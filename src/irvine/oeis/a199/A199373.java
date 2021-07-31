@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199373 Decimal expansion of x>0 satisfying x^2+2*x*sin(x)=1.
+ * A199373 Decimal expansion of x&gt;0 satisfying x^2+2*x*sin(x)=1.
  * Equation; x^2+2*x*sin(x)-(1)
  * @author Georg Fischer
  */

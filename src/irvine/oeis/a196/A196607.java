@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196607 Decimal expansion of the least x>0 satisfying sec(x)=6x.
+ * A196607 Decimal expansion of the least x&gt;0 satisfying sec(x)=6x.
  * Equation; sec(x)-6*x
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201942 Decimal expansion of the number x satisfying log(x)=e^(-x)
+ * A201942 Decimal expansion of the number x satisfying log(x)=e^(-x).
  * Equation; log(x)-(e^(-x))
  * @author Georg Fischer
  */

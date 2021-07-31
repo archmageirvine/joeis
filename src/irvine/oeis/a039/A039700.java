@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039700 Numbers n such that the largest power of 3 dividing n equals 3^omega(n).
+ * A039700 Numbers k such that the largest power of 3 dividing k equals 3^omega(k).
  * @author Sean A. Irvine
  */
 public class A039700 implements Sequence {

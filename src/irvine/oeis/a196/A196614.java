@@ -7,7 +7,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196614 Decimal expansion of the least x>0 satisfying 4*sec(x)=x.
+ * A196614 Decimal expansion of the least x&gt;0 satisfying 4*sec(x)=x.
  * Equation; 4*sec(x)-(x)
  * @author Georg Fischer
  */

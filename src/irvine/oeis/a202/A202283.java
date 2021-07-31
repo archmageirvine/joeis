@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A202283 Decimal expansion of x>0 satisfying x*cosh(2x)=2.
+ * A202283 Decimal expansion of x&gt;0 satisfying x*cosh(2x)=2.
  * Equation; x*cosh(2x)-(2)
  * @author Georg Fischer
  */

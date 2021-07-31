@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A202245 Decimal expansion of x>0 satisfying x*sinh(3x)=1.
+ * A202245 Decimal expansion of x&gt;0 satisfying x*sinh(3x)=1.
  * Equation; x*sinh(3x)-(1)
  * @author Georg Fischer
  */

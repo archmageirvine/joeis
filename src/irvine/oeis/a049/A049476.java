@@ -1,6 +1,5 @@
 package irvine.oeis.a049;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.a088.A088643;
 
@@ -11,18 +10,25 @@ import irvine.oeis.a088.A088643;
 public class A049476 extends A088643 {
 
   private long mN = 0;
-  private long mGap = -1;
-  private final Fast mPrime = new Fast();
+  private long mMaxGap = -1;
 
   @Override
   public Z next() {
     while (true) {
-      if (++mN == 1) {
-        return Z.ONE;
+      ++mN;
+      long gap = 0;
+      long s = super.next().longValueExact();
+      for (int k = 1; k < mN; ++k) {
+        final long t = s;
+        s = super.next().longValueExact();
+        final long g = Math.abs(s - t);
+        if (g > gap) {
+          gap = g;
+        }
       }
-      final long gap = mN - mPrime.prevPrime(mN) - 1;
-      if (gap > mGap) {
-        mGap = gap;
+      if (gap > mMaxGap) {
+        mMaxGap = gap;
+        System.out.println("gap was " + mMaxGap);
         return Z.valueOf(mN);
       }
     }

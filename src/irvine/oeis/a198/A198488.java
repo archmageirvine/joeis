@@ -19,6 +19,6 @@ public class A198488 extends DecimalExpansionSequence {
       public CR execute(final CR x) {
         return x.pow(2).subtract(CR.THREE.multiply(x)).subtract(CR.FOUR.multiply(x.sin()));
       }
-    }.inverseMonotone(CR.valueOf(3.017), CR.valueOf(3.141)).execute(CR.ZERO));
+    }.inverseMonotone(CR.valueOf(3.017), CR.valueOf(3.1)).execute(CR.ZERO));
   }
 }

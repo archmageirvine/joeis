@@ -14,7 +14,7 @@ public class A136366 extends PrimePositionSubsequence {
 
   /** Construct the sequence. */
   public A136366() {
-    super(new A024530(), 1);
+    super(new A024530(), 0);
   }
 
 }

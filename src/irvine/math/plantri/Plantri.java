@@ -3119,7 +3119,7 @@ public final class Plantri {
     if (mMaxFaceSize <= 0) {
       mMaxFaceSize = MAX_EDGES;
     }
-    assert mMaxNV * getMinPolyDegree() <= 2 * mEdgeBound[1];
+    //assert mMaxNV * getMinPolyDegree() <= 2 * mEdgeBound[1];
     checkRange(mMaxFaceSize, "-f", 3, MAX_EDGES);
     setExactConnectivity(mMinPolyConnec);
     if (mMaxNV >= 4 && (mEdgeBound[0] == maxundir || mMaxFaceSize == 3)) {

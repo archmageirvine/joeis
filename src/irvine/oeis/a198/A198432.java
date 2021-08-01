@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A198432 Decimal expansion of x>0 having x^2-3x=2*sin(x).
+ * A198432 Decimal expansion of x&gt;0 having x^2-3x=2*sin(x).
  * Equation; x^2-3*x-2*sin(x)
  * @author Georg Fischer
  */

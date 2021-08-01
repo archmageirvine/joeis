@@ -60,10 +60,11 @@ public final class SequenceFactory {
     flags.registerRequired(String.class, "A-number", "Sequence to generate");
     flags.setFlags(args);
     final boolean timestamp = flags.isSet("timestamp");
+    final String seqId = flags.getAnonymousValue(0).toString();
     boolean generated = false;
     try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
       final byte[] ls = System.lineSeparator().getBytes(StandardCharsets.US_ASCII);
-      final Sequence seq = sequence(flags.getAnonymousValue(0).toString());
+      final Sequence seq = sequence(seqId);
       try {
         Z z;
         while ((z = seq.next()) != null) {
@@ -94,12 +95,12 @@ public final class SequenceFactory {
       }
     } catch (final UnsupportedOperationException e) {
       if (generated) {
-        System.err.println("Implementation limits exceeded, cannot generate further terms for " + args[0] + "\n" + e.getMessage());
+        System.err.println("Implementation limits exceeded, cannot generate further terms for " + seqId + "\n" + e.getMessage());
       } else {
-        System.err.println("Sorry " + args[0] + " is not yet implemented");
+        System.err.println("Sorry " + seqId + " is not yet implemented");
       }
     } catch (final UnimplementedException e) {
-      System.err.println("Sorry " + args[0] + " is not yet implemented");
+      System.err.println("Sorry " + seqId + " is not yet implemented");
     }
   }
 }

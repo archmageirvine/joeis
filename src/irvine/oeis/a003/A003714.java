@@ -9,18 +9,13 @@ import irvine.oeis.Sequence;
  */
 public class A003714 implements Sequence {
 
-  private Z mA = Z.NEG_ONE;
-  private Z mB = Z.valueOf(-2);
-  private Z mC = Z.valueOf(-3);
+  private long mN = -1;
 
   @Override
   public Z next() {
     while (true) {
-      mA = mA.add(1);
-      mB = mB.add(2);
-      mC = mC.add(3);
-      if (mA.xor(mB).xor(mC).isZero()) {
-        return mA;
+      if ((++mN & (mN >>> 1)) == 0) {
+        return Z.valueOf(mN);
       }
     }
   }

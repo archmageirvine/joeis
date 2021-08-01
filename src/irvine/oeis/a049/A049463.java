@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049463.
+ * A049463 Number of basic interval orders of length n.
  * @author Sean A. Irvine
  */
 public class A049463 extends MemoryFunctionInt3<Z> implements Sequence {

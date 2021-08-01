@@ -1674,3 +1674,7 @@ A049313 Switching classes of tournaments on n nodes.
 A049333 Number of spanning trees in directed graph of spanning trees of the complete directed graph on n vertices.
 A049344 Prime unoriented alternating links (not necessarily connected knots) with n crossings.
 A049387 Number of rooted unlabeled strongly connected digraphs with n nodes.
+A049429 Triangle T(n,d) = number of distinct d-dimensional polyominoes (or polycubes) with n cells (n >= 2,d>=1)
+A049430 Triangle read by rows: T(n,d) is the number of distinct properly d-dimensional polyominoes (or polycubes) with n cells (n >= 1, d >= 0).
+A049461 Number of equivalence classes of self-dual Boolean functions of n variables under action of LSD(n,2).
+A049475 Number of 2n X 2n matrices whose entries are {0,-1,+1} and whose row sums and column sums are all distinct.

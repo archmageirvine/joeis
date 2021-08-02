@@ -9,7 +9,7 @@ import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A049512.
+ * A049512 Number of quasi-initially connected digraphs on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A049512 extends ParallelGenerateGraphsSequence {

@@ -212,7 +212,7 @@ public final class Zeta {
   }
 
   /**
-   * Compute a Hurwitz zeta function/.
+   * Compute the Hurwitz zeta function.
    * @param s order
    * @param x value
    * @return zeta function
@@ -238,7 +238,7 @@ public final class Zeta {
   }
 
 //  /**
-//   * Compute a Hurwitz zeta function/.
+//   * Compute the Hurwitz zeta function.
 //   * @param s order
 //   * @param x value
 //   * @return zeta function
@@ -251,12 +251,12 @@ public final class Zeta {
 //      protected Z approximate(final int precision) {
 //        Z sum = Z.ZERO;
 //        int k = 0;
-//        final int opPrec = precision + 5;
+//        final int opPrec = precision - 0;
 //        while (true) {
 //          ++k;
-//          final Z v = Binomial.binomial(s + 2 * k - 2, 2 * k - 1);
-//          final Q b = BERNOULLI.get(2 * k).divide(2 * k);
-//          final Z u = x1.pow(s + 2 * k - 1).inverse().getApprox(opPrec);
+//          final Z v = Binomial.binomial(s + 2L * k, s - 1);
+//          final Q b = BERNOULLI.get(2L * k).multiply(2L * k + 1);
+//          final Z u = x1.pow(s + 2L * k + 1).inverse().getApprox(opPrec);
 //          final Z t = b.multiply(v).multiply(u).toZ();
 ////          System.out.println("k was " + k + " precision = " + opPrec);
 ////          System.out.println("binomial " + v);
@@ -267,7 +267,7 @@ public final class Zeta {
 //          }
 //          sum = sum.add(t);
 //        }
-//        return sum.shiftRight(5);
+//        return sum.shiftRight(0);
 //      }
 //    }.add(x.pow(s).inverse()).add(CR.HALF.add(x1.divide(CR.valueOf(s - 1))).divide(x1.pow(s)));
 //  }

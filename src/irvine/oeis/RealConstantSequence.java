@@ -8,8 +8,8 @@ import irvine.math.cr.CR;
  */
 public abstract class RealConstantSequence implements Sequence {
 
-  private int mOffset;
-  private CR mX;
+  private final int mOffset;
+  private final CR mX;
 
   /**
    * Construct a sequence with given offset and based on a particular real number.

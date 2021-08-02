@@ -143,7 +143,9 @@ public abstract class UnaryCRFunction implements Serializable {
    * @return inverse function
    */
   public UnaryCRFunction inverseMonotone(final CR low, final CR high) {
-    return new InverseMonotone(this, low, high);
+    return low.compareTo(high) < 0
+      ? new InverseMonotone(this, low, high)
+      : new InverseMonotone(this, high, low);
   }
 
   /**

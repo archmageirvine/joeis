@@ -9,6 +9,8 @@ import irvine.oeis.a088.A088643;
  */
 public class A049476 extends A088643 {
 
+  // todo what is this sequence?
+
   private long mN = 0;
   private long mMaxGap = -1;
 
@@ -21,7 +23,7 @@ public class A049476 extends A088643 {
       for (int k = 1; k < mN; ++k) {
         final long t = s;
         s = super.next().longValueExact();
-        final long g = Math.abs(s - t);
+        final long g = t - s; //s - t; //Math.abs(s - t);
         if (g > gap) {
           gap = g;
         }

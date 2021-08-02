@@ -1,7 +1,7 @@
 package irvine.oeis.a027;
 
-import irvine.math.cr.CR;
 import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.a276.A276120;
 
 /**
@@ -12,11 +12,6 @@ public class A027431 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A027431() {
-    super(new A276120() {
-      @Override
-      protected CR getCR() {
-        return super.getCR().inverse();
-      }
-    });
+    super(new DecimalExpansionSequence(new A276120().getCR().inverse()));
   }
 }

@@ -1,19 +1,17 @@
 package irvine.oeis.a331;
 
-import irvine.math.cr.CR;
+import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.a264.A264808;
 
 /**
  * A331790 Decimal expansion of the solution to x*e^(x*e^(x))=1.
  * @author Sean A. Irvine
  */
-public class A331790 extends A264808 {
+public class A331790 extends DecimalExpansionSequence {
 
-  private final CR mN = super.getCR().log();
-
-  @Override
-  protected CR getCR() {
-    return mN;
+  /** Construct the sequence. */
+  public A331790() {
+    super(new A264808().getCR().log());
   }
 }
 

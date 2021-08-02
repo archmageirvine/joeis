@@ -2,6 +2,7 @@ package irvine.oeis.a006;
 
 import irvine.math.cr.CR;
 import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.a084.A084119;
 
 /**
@@ -12,11 +13,6 @@ public class A006518 extends ContinuedFractionSequence {
 
   /** Construct the sequence. */
   public A006518() {
-    super(new A084119() {
-      @Override
-      protected CR getCR() {
-        return super.getCR().subtract(CR.HALF);
-      }
-    });
+    super(new DecimalExpansionSequence(new A084119().getCR().subtract(CR.HALF)));
   }
 }

@@ -21,7 +21,11 @@ public abstract class RealConstantSequence implements Sequence {
     mX = x;
   }
 
-  protected CR getCR() {
+  /**
+   * Get the real number underlying this sequence.
+   * @return real number
+   */
+  public CR getCR() {
     return mX;
   }
 

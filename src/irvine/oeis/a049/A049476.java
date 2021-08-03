@@ -1,5 +1,7 @@
 package irvine.oeis.a049;
 
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.a088.A088643;
 
@@ -9,29 +11,46 @@ import irvine.oeis.a088.A088643;
  */
 public class A049476 extends A088643 {
 
-  // todo what is this sequence?
-
-  private long mN = 0;
+  private int mN = 0;
   private long mMaxGap = -1;
+
+  private int[] getRow(final int n) {
+    final int[] res = new int[n];
+    for (int k = 0; k < n; ++k) {
+      res[k] = super.next().intValueExact();
+    }
+    return res;
+  }
 
   @Override
   public Z next() {
     while (true) {
-      ++mN;
-      long gap = 0;
-      long s = super.next().longValueExact();
-      for (int k = 1; k < mN; ++k) {
-        final long t = s;
-        s = super.next().longValueExact();
-        final long g = t - s; //s - t; //Math.abs(s - t);
-        if (g > gap) {
-          gap = g;
-        }
+      final int[] row = getRow(++mN);
+      //System.out.println(mN + " Breaks at : " + getBreak(row));
+      if (row.length <= 1) {
+        return Z.ONE;
       }
-      if (gap > mMaxGap) {
-        mMaxGap = gap;
-        System.out.println("gap was " + mMaxGap);
-        return Z.valueOf(mN);
+      final TreeSet<Integer> seen = new TreeSet<>();
+      seen.add(row[0]); // always n
+      int g = 1;
+      int firstMissing = mN - g;
+      while (true) {
+        seen.add(row[g]);
+        while (seen.contains(firstMissing)) {
+          --firstMissing;
+        }
+        //System.out.println("In loop: n=" + mN + " miss=" + firstMissing + " g=" + g + " " + seen.size() + " " + seen);
+        if (firstMissing == mN - seen.size() && (seen.size() == mN || row[g + 1] == mN - g - 1)) {
+          // todo done
+         // System.out.println(mN + " " + seen.size() + " " + firstMissing + " next: " + row[Math.min(g + 1, row.length - 1)]);
+          System.out.println(mN + " " + g);
+          if (g > mMaxGap) {
+            mMaxGap = seen.size();
+            return Z.valueOf(mN);
+          }
+          break;
+        }
+        ++g;
       }
     }
   }

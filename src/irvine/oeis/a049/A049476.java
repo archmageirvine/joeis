@@ -15,42 +15,52 @@ public class A049476 extends A088643 {
   private long mMaxGap = -1;
 
   private int[] getRow(final int n) {
-    final int[] res = new int[n];
-    for (int k = 0; k < n; ++k) {
-      res[k] = super.next().intValueExact();
+    // row[0] unused
+    final int[] row = new int[n + 1];
+    for (int k = 1; k <= n; ++k) {
+      row[k] = super.next().intValueExact();
     }
-    return res;
+    return row;
+  }
+
+  private int firstBreak(final int[] row) {
+    final int n = row.length - 1;
+    if (n == 1) {
+      return 0;
+    }
+    final TreeSet<Integer> seen = new TreeSet<>();
+    int g = 0;
+    int firstMissing = n;
+    while (++g <= n) {
+      seen.add(row[g]);
+      while (seen.contains(firstMissing)) {
+        --firstMissing;
+      }
+      if (firstMissing == n - seen.size()) {
+        if (row[g + 1] == n - g) {
+          return g;
+        }
+      }
+    }
+    throw new RuntimeException();
+  }
+
+  protected Z select(final int g, final int n) {
+    return Z.valueOf(n);
   }
 
   @Override
   public Z next() {
     while (true) {
       final int[] row = getRow(++mN);
-      //System.out.println(mN + " Breaks at : " + getBreak(row));
       if (row.length <= 1) {
         return Z.ONE;
       }
-      final TreeSet<Integer> seen = new TreeSet<>();
-      seen.add(row[0]); // always n
-      int g = 1;
-      int firstMissing = mN - g;
-      while (true) {
-        seen.add(row[g]);
-        while (seen.contains(firstMissing)) {
-          --firstMissing;
-        }
-        //System.out.println("In loop: n=" + mN + " miss=" + firstMissing + " g=" + g + " " + seen.size() + " " + seen);
-        if (firstMissing == mN - seen.size() && (seen.size() == mN || row[g + 1] == mN - g - 1)) {
-          // todo done
-         // System.out.println(mN + " " + seen.size() + " " + firstMissing + " next: " + row[Math.min(g + 1, row.length - 1)]);
-          System.out.println(mN + " " + g);
-          if (g > mMaxGap) {
-            mMaxGap = seen.size();
-            return Z.valueOf(mN);
-          }
-          break;
-        }
-        ++g;
+      final int g = firstBreak(row);
+      //System.out.println(mN + " " + g);
+      if (g > mMaxGap) {
+        mMaxGap = g;
+        return select(g, mN);
       }
     }
   }

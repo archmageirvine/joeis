@@ -28,7 +28,7 @@ public class A049414 extends A003030 {
     }
   };
 
-  private Z lambdaBar(final int i, final int j, final int k) {
+  protected Z lambdaBar(final int i, final int j, final int k) {
     return k == 0 ? Z.ONE.shiftLeft(i * j).subtract(1) : mLambda.get(i, j, k).shiftLeft(i * j);
   }
 

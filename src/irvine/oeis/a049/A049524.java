@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A049524.
+ * A049524 Number of digraphs with a source and a sink on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A049524 extends A049414 {

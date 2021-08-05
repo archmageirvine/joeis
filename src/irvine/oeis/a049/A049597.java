@@ -14,7 +14,6 @@ import irvine.oeis.Sequence;
 public class A049597 extends MemoryFunction1<Polynomial<Z>> implements Sequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private Polynomial<Z> mRow = RING.one();
   private int mN = 0;
   private int mM = -1;
 

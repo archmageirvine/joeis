@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  */
 public class BinaryToDecimalExpansionSequence extends DecimalExpansionSequence {
 
-  protected BinaryToDecimalExpansionSequence(final Sequence binarySequence) {
+  public BinaryToDecimalExpansionSequence(final Sequence binarySequence) {
     super(new CR() {
       private final Sequence mBinarySeq = binarySequence;
       private Z mA = Z.ZERO;

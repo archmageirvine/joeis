@@ -7,7 +7,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a003.A003151;
 
 /**
- * A119809 Decimal expansion of the constant defined by binary sums involving Beatty sequences: c = Sum_{n>=1} 1/2^A049472(n) = Sum_{n>=1} A001951(n)/2^n.
+ * A119809 Decimal expansion of the constant defined by binary sums involving Beatty sequences: c = Sum_{n&gt;=1} 1/2^A049472(n) = Sum_{n&gt;=1} A001951(n)/2^n.
  * @author Georg Fischer
  */
 public class A119809 extends PrependSequence {

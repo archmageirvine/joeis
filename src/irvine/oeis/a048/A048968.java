@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048968 Numbers n such that sigma(n) / d(n) is prime.
+ * A048968 Numbers k such that sigma(k) / d(k) is prime.
  * @author Sean A. Irvine
  */
 public class A048968 implements Sequence {

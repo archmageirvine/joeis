@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A346745 allocated for Sean A. Irvine.
+ * A346745 Decimal expansion of Product_{k&gt;=2} (1 - 1/k^12).
  * @author Sean A. Irvine
  */
 public class A346745 extends DecimalExpansionSequence {

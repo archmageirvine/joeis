@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051037 5-smooth numbers: numbers whose prime divisors are all <= 5
+ * A051037 5-smooth numbers, i.e., numbers whose prime divisors are all &lt;= 5.
  * @author Georg Fischer
  */
 public class A051037 implements Sequence {

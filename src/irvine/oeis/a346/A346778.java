@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a088.A088643;
 
 /**
- * A346778.
+ * A346778 Least position k in row n of A088643 such that {b(1),b(2),...,b(k)} = {n,n-1,...,n-k+1} and b(k+1)=n-k where b[1..n] is row n of A088643.
  * @author Sean A. Irvine
  */
 public class A346778 extends A088643 {

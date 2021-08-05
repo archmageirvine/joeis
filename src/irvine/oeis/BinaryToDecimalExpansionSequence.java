@@ -9,6 +9,10 @@ import irvine.math.z.Z;
  */
 public class BinaryToDecimalExpansionSequence extends DecimalExpansionSequence {
 
+  /**
+   * Construct the decimal expansion of a binary sequence.
+   * @param binarySequence underlying binary sequence
+   */
   public BinaryToDecimalExpansionSequence(final Sequence binarySequence) {
     super(new CR() {
       private final Sequence mBinarySeq = binarySequence;

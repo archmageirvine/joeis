@@ -2,7 +2,6 @@ package irvine.oeis.a101;
 // manually 2021-08-04
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**

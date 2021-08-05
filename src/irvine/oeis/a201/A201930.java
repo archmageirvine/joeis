@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201930 Decimal expansion of the number x satisfying x^2+4x+5=e^x.
+ * A201930 Decimal expansion of the number x satisfying x^2 + 4*x + 5 = e^x.
  * Equation; x^2+4*x+5-exp(x)
  * @author Georg Fischer
  */

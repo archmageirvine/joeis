@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a010.A010056;
 
 /**
- * A124091 Decimal expansion of Fibonacci binary constant: Sum{i>=0} (1/2)^Fibonacci(i).
+ * A124091 Decimal expansion of Fibonacci binary constant: Sum{i&gt;=0} (1/2)^Fibonacci(i).
  * @author Georg Fischer
  */
 public class A124091 extends PrependSequence {

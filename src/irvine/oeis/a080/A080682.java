@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.a051.A051037;
 
 /**
- * A080682 19-smooth numbers: numbers whose prime divisors are all <= 19.
+ * A080682 19-smooth numbers: numbers whose prime divisors are all &lt;= 19.
  * @author Georg Fischer
  */
 public class A080682 extends A051037 {

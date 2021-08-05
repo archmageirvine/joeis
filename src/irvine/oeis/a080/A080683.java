@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.a051.A051037;
 
 /**
- * A080683 19-smooth numbers: numbers whose prime divisors are all <= 23.
+ * A080683 23-smooth numbers: numbers whose prime divisors are all &lt;= 23.
  * @author Georg Fischer
  */
 public class A080683 extends A051037 {

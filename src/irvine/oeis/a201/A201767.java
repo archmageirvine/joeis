@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201767 Decimal expansion of the least x satisfying 10-x^2=e^x.
+ * A201767 Decimal expansion of the least x satisfying 10 - x^2 = e^x.
  * Equation; -x^2+10-exp(x)
  * @author Georg Fischer
  */

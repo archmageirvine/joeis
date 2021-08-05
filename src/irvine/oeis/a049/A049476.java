@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a346.A346778;
 
 /**
- * A049476 Numbers that set records for initial gap lengths g in the permutations found in A088643.
+ * A049476 Positions of records in A346778.
  * @author Sean A. Irvine
  */
 public class A049476 extends RecordPositionSequence {

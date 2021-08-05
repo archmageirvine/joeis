@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a102.A102460;
 
 /**
- * A121821 Decimal expansion of the Lucas binary number, Sum_{k>0} 1/2^L(k), where L(k) = A000032(k).
+ * A121821 Decimal expansion of the Lucas binary number, Sum_{k&gt;0} 1/2^L(k), where L(k) = A000032(k).
  * @author Georg Fischer
  */
 public class A121821 extends BinaryToDecimalExpansionSequence {

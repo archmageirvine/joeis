@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013243 cosh(log(x+1)-tan(x))=1+3/4!*x^4+90/6!*x^6-168/7!*x^7+4725/8!*x^8...
+ * A013243 Expansion of e.g.f.: cosh(log(x+1)-tan(x))=1+3/4!*x^4+90/6!*x^6-168/7!*x^7+4725/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A013243 implements Sequence {

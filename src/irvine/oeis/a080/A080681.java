@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.a051.A051037;
 
 /**
- * A080681 17-smooth numbers: numbers whose prime divisors are all <= 17.
+ * A080681 17-smooth numbers: numbers whose prime divisors are all &lt;= 17.
  * @author Georg Fischer
  */
 public class A080681 extends A051037 {

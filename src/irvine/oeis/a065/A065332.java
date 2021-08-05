@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * @author Georg Fischer
  */
 public class A065332 extends A065333 {
-	
+
   protected int mN = 0;
 
   @Override

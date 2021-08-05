@@ -1,19 +1,19 @@
-package irvine.oeis.a048;
+package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
 /**
- * A048161 Primes p such that q = (p^2 + 1)/2 is also a prime.
+ * A049591 Odd primes p such that p+2 is composite.
  * @author Sean A. Irvine
  */
-public class A048161 extends A065091 {
+public class A049591 extends A065091 {
 
   @Override
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (p.square().add(1).divide2().isProbablePrime()) {
+      if (!p.add(2).isProbablePrime()) {
         return p;
       }
     }

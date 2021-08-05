@@ -1,18 +1,15 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A014694 a(n) = prime(n+1) - (-1)^n*ceiling(n/2).
  * @author Sean A. Irvine
  */
-public class A014694 extends A000040 {
+public class A014694 extends A065091 {
 
   private long mSign = 0;
-  {
-    super.next();
-  }
 
   @Override
   public Z next() {

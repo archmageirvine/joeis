@@ -2,17 +2,13 @@ package irvine.oeis.a049;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A049231 Primes p such that p - 2 is squarefree.
  * @author Sean A. Irvine
  */
-public class A049231 extends A000040 {
-
-  {
-    super.next();
-  }
+public class A049231 extends A065091 {
 
   @Override
   public Z next() {

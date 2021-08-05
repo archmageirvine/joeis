@@ -1,17 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A030005 (prime(n)-1)(prime(n)-3)/8.
  * @author Sean A. Irvine
  */
-public class A030005 extends A000040 {
-
-  {
-    super.next();
-  }
+public class A030005 extends A065091 {
 
   @Override
   public Z next() {

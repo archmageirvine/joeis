@@ -1,17 +1,13 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A030096 Primes whose digits are all odd.
  * @author Sean A. Irvine
  */
-public class A030096 extends A000040 {
-
-  {
-    super.next(); // skip 2
-  }
+public class A030096 extends A065091 {
 
   private boolean isAllOddDigits(long q) {
     while (q != 0) {

@@ -3,17 +3,14 @@ package irvine.oeis.a038;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A038550 Products of an odd prime and a power of two (sorted).
  * @author Sean A. Irvine
  */
-public class A038550 extends A000040 {
+public class A038550 extends A065091 {
 
-  {
-    super.next(); // skip 2
-  }
   private final TreeSet<Z> mS = new TreeSet<>();
   private Z mP = super.next();
 

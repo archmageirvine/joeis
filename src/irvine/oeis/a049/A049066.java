@@ -1,18 +1,15 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A049066 Mean prime gaps associated with A049036.
  * @author Sean A. Irvine
  */
-public class A049066 extends A000040 {
+public class A049066 extends A065091 {
 
   private long mN = 0;
-  {
-    super.next();
-  }
 
   @Override
   public Z next() {

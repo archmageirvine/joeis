@@ -1,18 +1,15 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A049038 Primes arising in A049036.
  * @author Sean A. Irvine
  */
-public class A049038 extends A000040 {
+public class A049038 extends A065091 {
 
   private long mN = 0;
-  {
-    super.next();
-  }
 
   @Override
   public Z next() {

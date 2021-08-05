@@ -4,18 +4,15 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A038501 Upper bound on minimal norm of a quadratic form where n runs over the odd primes.
  * @author Sean A. Irvine
  */
-public class A038501 extends A000040 {
+public class A038501 extends A065091 {
 
   private static final ComputableReals R = ComputableReals.SINGLETON;
-  {
-    super.next();
-  }
 
   private CR f(final int n, final CR d) {
     final CR n2 = CR.valueOf(new Q(n, 2));

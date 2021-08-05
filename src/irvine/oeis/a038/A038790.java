@@ -3,17 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Cheetah;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A038790 Circulant p^2-tournaments up to rotations only, indexed by odd primes p.
  * @author Sean A. Irvine
  */
-public class A038790 extends A000040 {
-
-  {
-    super.next(); // skip 2
-  }
+public class A038790 extends A065091 {
 
   @Override
   public Z next() {

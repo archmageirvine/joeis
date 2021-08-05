@@ -11,8 +11,10 @@
      <!-- Some tests we will skip for all classes -->
      <!-- SnVI not needed because we do not use serialization for persistence -->
      <!-- PZLA is a stupid test about returning null arrays -->
+     <!-- SPP is a stupid test about non-standard math constant -->
+     <!-- CNT complains about values code to pi -->
      <Match classregex=".*">
-        <BugCode name="SnVI,PZLA,BC"/>
+        <BugCode name="SnVI,PZLA,BC,SPP,CNT"/>
      </Match>
 
      <!-- fb-contrib classes we don't want -->
@@ -23,7 +25,7 @@
         <Bug pattern="IOI_USE_OF_FILE_STREAM_CONSTRUCTORS,MDM_THREAD_YIELD,STT_STRING_PARSING_A_FIELD,STT_TOSTRING_STORED_IN_FIELD,STT_TOSTRING_MAP_KEYING"/>
      </Match>
      <Match classregex=".*Test">
-        <BugCode name="FPL,PCAIL,RFI,SACM,SPP"/>
+        <BugCode name="FPL,PCAIL,RFI,SACM"/>
      </Match>
      <Match classregex=".*TestUtils">
         <BugCode name="RFI"/>

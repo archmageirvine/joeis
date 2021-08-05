@@ -3,17 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.factor.Cheetah;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A038788 Non-Cayley-isomorphic circulant self-complementary directed p^2-graphs, indexed by odd primes p.
  * @author Sean A. Irvine
  */
-public class A038788 extends A000040 {
-
-  {
-    super.next(); // skip 2
-  }
+public class A038788 extends A065091 {
 
   @Override
   public Z next() {

@@ -1,8 +1,7 @@
 package irvine.oeis.a024;
 
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a065.A065091;
 
 /**
  * A024939 Number of partitions of n into distinct odd primes.
@@ -12,6 +11,6 @@ public class A024939 extends A024941 {
 
   @Override
   protected Sequence seq() {
-    return new SkipSequence(new A000040(), 1);
+    return new A065091();
   }
 }

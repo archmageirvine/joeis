@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033178;
 
 /**
- * A038007 Even numbers k such that b(k) is greater than b(k-1) and b(k+1); b(k) = A033178(k).
+ * A038007 Even numbers n such that b(n) is greater than b(n-1) and b(n+1); b(n) = A033178.
  * @author Sean A. Irvine
  */
 public class A038007 extends A033178 {

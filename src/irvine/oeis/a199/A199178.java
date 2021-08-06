@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199178 Decimal expansion of x &lt; 0 satisfying x^2 + 2*x*cos(x) = 2.
+ * A199178 Decimal expansion of x&lt;0 satisfying x^2+2*x*cos(x)=2.
  * Equation; x^2+2*x*cos(x)-2
  * @author Georg Fischer
  */

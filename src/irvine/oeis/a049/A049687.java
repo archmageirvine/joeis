@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049687.
+ * A049687 Array T read by diagonals: T(i,j)=number of lines passing through (0,0) and at least one other lattice point (h,k) satisfying 0&lt;=h&lt;=i, 0&lt;=k&lt;=j.
  * @author Sean A. Irvine
  */
 public class A049687 implements Sequence {

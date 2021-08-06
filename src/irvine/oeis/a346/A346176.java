@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a205.A205083;
 
 /**
- * A346176 Decimal expansion of A205083 read as a binary fraction.
+ * A346176 allocated for John-Vincent Saddic.
  * @author Sean A. Irvine
  */
 public class A346176 extends DecimalExpansionSequence {

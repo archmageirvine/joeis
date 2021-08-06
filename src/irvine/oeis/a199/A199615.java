@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199615 Decimal expansion of least x satisfying x^2 + 4*x*cos(x) = 2*sin(x).
+ * A199615 Decimal expansion of least x satisfying x^2+4*x*cos(x)=2*sin(x).
  * Equation; x^2+4*x*cos(x)-2*sin(x)
  * @author Georg Fischer
  */

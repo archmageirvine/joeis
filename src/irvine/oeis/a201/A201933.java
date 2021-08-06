@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201933 Decimal expansion of the least x satisfying x^2 + 5*x + 2 = e^x.
+ * A201933 Decimal expansion of the least x satisfying x^2+5x+2=e^x.
  * Equation; x^2+5*x+2-exp(x)
  * @author Georg Fischer
  */

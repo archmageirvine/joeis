@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123116 Values y of solutions (x, y) to the Diophantine equation (x-y)^4 - 8*x*y = 0 with x &gt;= y.
+ * A123116 Values y of solutions (x, y) to the Diophantine equation (x-y)^4-8xy=0 with x&gt;=y.
  * @author Sean A. Irvine
  */
 public class A123116 extends LinearRecurrence {

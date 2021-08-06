@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001223;
 
 /**
- * A123129 a(n) = ( n + prime(n+1) - prime(n) )^(n-1).
+ * A123129 (n + n-th difference between consecutive primes) raised to power n-1.
  * @author Georg Fischer
  */
 public class A123129 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003586;
 
 /**
- * A072440 3-smooth numbers k with decimal digits &lt;= 3.
+ * A072440 Number of 3-smooth numbers with decimal digits &lt;= 3.
  * @author Georg Fischer
  */
 public class A072440 extends A003586 {

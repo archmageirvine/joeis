@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123115 Values of Y satisfying the equation (X-Y)^4 - 2*X*Y = 0 with integer X &gt;= Y &gt;= 0.
+ * A123115 Values of Y satisfying the equation (X-Y)^4-2XY=0 with integer X&gt;=Y&gt;=0.
  * @author Sean A. Irvine
  */
 public class A123115 extends LinearRecurrence {

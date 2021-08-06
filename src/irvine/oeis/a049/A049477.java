@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049477 For each record-breaking row, m, of A088643, the sequence gives the length, k, of the longest earlier row contained in row m.
+ * A049477 Values of n-g associated with sequences A070862 and A088859.
  * @author Sean A. Irvine
  */
 public class A049477 extends A049476 {

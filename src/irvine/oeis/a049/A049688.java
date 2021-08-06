@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.math.z.Z;
 
 /**
- * A049687.
+ * A049688 a(n) = Sum_{i=0..n} T(i,n-i), array T as in A049687.
  * @author Sean A. Irvine
  */
 public class A049688 extends A049687 {

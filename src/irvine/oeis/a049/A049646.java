@@ -1,0 +1,17 @@
+package irvine.oeis.a049;
+
+import irvine.math.z.Z;
+
+/**
+ * A049646 a(n) = T(n,n+1), array T given by A049639.
+ * @author Sean A. Irvine
+ */
+public class A049646 extends A049639 {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return Z.valueOf(t(++mN, mN + 1));
+  }
+}

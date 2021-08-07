@@ -38,15 +38,15 @@ public class A050000 implements Sequence {
       a[0] = 0; a[1] = 1; a[n_] := a[n] = (b = Floor[a[n-1]/2]; If[FreeQ[Table[ a[k], {k, 0, n-2}], b], b, 3*a[n-1]]);
     */
     mA.add(Z.ZERO);
-    mPrev = Z.ONE;
-    mA.add(Z.ONE);
   }
 
   @Override
   public Z next() {
     ++mN;
     if (mN == 1) {
-      return Z.ONE;
+      mPrev = Z.ONE;
+      mA.add(mPrev);
+      return mPrev;
     }
     Z result = mPrev.divide(mParm2);
     if (mA.contains(result)) {

@@ -40,7 +40,6 @@ A001032 Not obvious how to exclude 842 for example
 A001033 Related A001032
 A001034 Group order
 A001035 Posets [current impl. is a cheat]
-A001062 Sequence is incorrect but not dead
 A001066 Dimensions Lie algebra (depends A003038)
 A001070 Latin squares
 A001086 Elliptic curve continued fraction, have paper

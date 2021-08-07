@@ -167,4 +167,33 @@ public final class French extends AbstractLanguage {
     }
     return toFrench(x, true);
   }
+
+  /**
+   * Generate strings for ordinal numbers.
+   * Apart from a few exceptions for small numbers,
+   * "i&egrave;me" is appended to the cardinal number,
+   * possibly after omitting a trailing "e".
+   * @param x number to be converted
+   * @return the French word
+   */
+  public String toOrdinalText(final int x) {
+    if (x <= 0) {
+      throw new UnsupportedOperationException();
+    }
+    if (x >= 1000000000) {
+      throw new UnsupportedOperationException();
+    }
+    String ord = toText(x);
+    if (ord.endsWith("e")) {
+      ord = ord.substring(0, ord.length() - 1);
+    } else if (ord.endsWith("neuf")) {
+      ord = ord.substring(0, ord.length() - 4) + "neuv";
+    } else if (ord.endsWith("cinq")) {
+      ord = ord + "u";
+    } else if (ord.endsWith("s") && !ord.endsWith("ois")) { // vingts, millions, but not trois
+      ord = ord.substring(0, ord.length() - 1);
+    }
+    return x == 1 ? "premier" : ord + "i\u00E8me"; // ieme with e grave
+  }
+
 }

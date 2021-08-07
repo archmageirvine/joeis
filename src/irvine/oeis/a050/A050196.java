@@ -7,33 +7,21 @@ import irvine.math.z.Z;
  * A050196 a(1) = 1, a(n) = floor(a(n-1)/2) if this is not among 0,a(1),...,a(n-1); otherwise a(n) = a(n-1) + a(n-2).
  * @author Georg Fischer
  */
-public class A050196 extends A050000 {
+public class A050196 extends A050132 {
 
   protected Z mPrev2; // a(n-2)
-
-  /** Construct the sequence. */
-  public A050196() {
-    this(88, 2);
-  }
-
-  /**
-   * Generic constructor with parameter
-   * @param parm1 multiplicator for a(n-1)
-   * @param parm2 divisor in floor()
-   */
-  public A050196(final int parm1, final int parm2) {
-    super(parm1, parm2);
-    mPrev2 = Z.ONE;
-  }
 
   @Override
   public Z next() {
     ++mN;
-    if (mN <= 2) {
-      return Z.ONE;
+    if (mN == 1) {
+      mPrev2 = Z.ZERO;
+      mPrev = Z.ONE;
+      mA.add(mPrev);
+      return mPrev;
     }
     Z result = mPrev.divide(mParm2);
-    if (mA.contains(result)) {
+    if (mA.contains(result) || result.equals(mPrev)) {
       result = mPrev.add(mPrev2);
     }
     mA.add(result);

@@ -98,6 +98,63 @@ public final class English extends AbstractLanguage {
     return b.toString().trim();
   }
 
+  /**
+   * Generate strings for ordinal numbers.
+   * Apart from a few exceptions for small numbers,
+   * "th" is appended to the cardinal number.
+   * @param x number to be converted
+   * @return the English word
+   */
+  public String toOrdinalText(final int x) {
+    if (x <= 0) {
+      throw new UnsupportedOperationException();
+    }
+    if (x >= 1000000000) {
+      throw new UnsupportedOperationException();
+    }
+    final int digit1 = x % 1;
+    final int digit10 = x % 100 - digit1;
+    String ord = toText(x);
+    if (digit10 == 1) { // ends with "1."
+      ord += "th"; // fourteenth
+    } else {
+      if (digit1 == 0) { // ends with "0"
+        if (digit10 == 4) { // "40" 
+          ord = ord.substring(0, ord.length() - 6) + "fortieth"; // fourthy, remove "u"
+        } else if (digit10 != 0) {
+          ord = ord.substring(0, ord.length() - 1) + "ieth"; // fifty -> fiftieth
+        } else { // ends with "00"
+          ord += "th"; // hundredth, thousandth, millionth...
+        }
+      } else { // ends with [1-9]
+        switch (digit1) {
+          case 1:
+            ord = ord.substring(0, ord.length() - 3) + "first"; // |one
+            break;
+          case 2:
+            ord = ord.substring(0, ord.length() - 3) + "second"; // |two
+            break;
+          case 3:
+            ord = ord.substring(0, ord.length() - 3) + "ird"; // th|ree
+            break;
+          case 5:
+            ord = ord.substring(0, ord.length() - 2) + "fth"; // fi|ve 
+            break;
+          case 8:
+            ord = ord.substring(0, ord.length() - 2) + "th"; // eig|ht
+            break;
+          case 9:
+            ord = ord.substring(0, ord.length() - 1) + "th"; // nin|e
+            break;
+          default:
+            ord += "th";
+            break;
+        }
+      }
+    }
+    return ord;
+  }
+
   @Override
   public String toRawText(int x) {
     final StringBuilder b = new StringBuilder();

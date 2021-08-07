@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 public class A002858 implements Sequence {
 
   // Ulam numbers
-  private final ArrayList<Z> mSeq = new ArrayList<>();
+  protected final ArrayList<Z> mSeq = new ArrayList<>();
   private final TreeSet<Z> mSums = new TreeSet<>();
   private final HashSet<Z> mNotUnique = new HashSet<>();
 

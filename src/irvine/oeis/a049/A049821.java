@@ -16,6 +16,10 @@ public class A049821 extends A002859 {
     super.next();
   }
 
+  protected Z select(final int k, final int j) {
+    return Z.valueOf(k + j + 2);
+  }
+
   @Override
   public Z next() {
     final Z t = super.next();
@@ -25,7 +29,7 @@ public class A049821 extends A002859 {
         final int c = r.compareTo(mSeq.get(j));
         if (c >= 0) {
           if (c == 0) {
-            return Z.valueOf(k + j + 2);
+            return select(k, j);
           }
           break;
         }

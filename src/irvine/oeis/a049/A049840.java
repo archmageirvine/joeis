@@ -7,7 +7,14 @@ package irvine.oeis.a049;
 public class A049840 extends A049834 {
 
   @Override
-  protected long t(final long n, final long m) {
-    return m == 0 ? 0 : n + t(m, n % m);
+  protected long t(long n, long m) {
+    long sum = 0;
+    while (m != 0) {
+      sum += n;
+      final long t = m;
+      m = n % m;
+      n = t;
+    }
+    return sum;
   }
 }

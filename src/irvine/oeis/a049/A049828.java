@@ -12,8 +12,15 @@ public class A049828 implements Sequence {
   private long mN = 0;
   private long mM = 0;
 
-  protected long t(final long n, final long m) {
-    return n * m == 0 ? 0 : n % m + t(m, n % m);
+  protected long t(long n, long m) {
+    long sum = 0;
+    while (n * m != 0) {
+      sum += n % m;
+      final long t = m;
+      m = n % m;
+      n = t;
+    }
+    return sum;
   }
 
   @Override

@@ -112,11 +112,15 @@ public final class English extends AbstractLanguage {
     if (x >= 1000000000) {
       throw new UnsupportedOperationException();
     }
-    final int digit1 = x % 1;
+    final int digit1 = x % 10;
     final int digit10 = x % 100 - digit1;
     String ord = toText(x);
-    if (digit10 == 1) { // ends with "1."
-      ord += "th"; // fourteenth
+    if (digit10 == 10) { // ends with "1d"
+      if (x == 12) {
+        ord = "twelfth";
+      } else {
+        ord += "th"; // fourteenth
+      }
     } else {
       if (digit1 == 0) { // ends with "0"
         if (digit10 == 4) { // "40" 
@@ -141,7 +145,7 @@ public final class English extends AbstractLanguage {
             ord = ord.substring(0, ord.length() - 2) + "fth"; // fi|ve 
             break;
           case 8:
-            ord = ord.substring(0, ord.length() - 2) + "th"; // eig|ht
+            ord = ord + "h"; // eigh|t
             break;
           case 9:
             ord = ord.substring(0, ord.length() - 1) + "th"; // nin|e

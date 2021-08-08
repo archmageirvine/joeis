@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049884 a(n) = a(1) + a(2) + ... + a(n-1) - a(m) for n &gt;= 3, where m = 2 * n - 3 - 2^(p+1) and p is the unique integer such that 2^p &lt; n-1 &lt;= 2^(p+1), with a(1) = a(2) = 1.
+ * A049884 a(n) = a(1) + a(2) + ... + a(n-1) - a(m) for n &gt;= 3, where m = 2*n - 3 - 2^(p+1) and p is the unique integer such that 2^p &lt; n-1 &lt;= 2^(p+1), with a(1) = a(2) = 1.
  * p is the unique integer such that 2^p &lt; n-1 &lt;= 2^(p+1), with a(1) = a(2) = 1.
  * @author Georg Fischer
  */

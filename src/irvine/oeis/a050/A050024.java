@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a049.A049884;
 
 /**
- * A050024 a(n) = a(n-1) + a(m) for n &gt;= 4, where m = 2 * n - 3 - 2^(p+1) and p is the smallest integer such that 2^p &lt; n - 1 &lt;= 2^(p+1), starting with a(1) = a(2) = a(3) = 1.
+ * A050024 a(n) = a(n-1) + a(m) for n &gt;= 4, where m = 2*n - 3 - 2^(p+1) and p is the smallest integer such that 2^p &lt; n - 1 &lt;= 2^(p+1), starting with a(1) = a(2) = a(3) = 1.
  * and p is the smallest integer such that 2^p &lt; n - 1 &lt;= 2^(p+1), 
  * starting with a(1) = a(2) = a(3) = 1.
  * @author Georg Fischer

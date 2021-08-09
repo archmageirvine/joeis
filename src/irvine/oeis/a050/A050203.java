@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.RationalFunction;
+import irvine.math.polynomial.RationalFunctionField;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -18,6 +20,7 @@ public class A050203 implements Sequence {
 
   private static final PolynomialRingField<Z> RING_Q = new PolynomialRingField<>("q", IntegerField.SINGLETON);
   private static final PolynomialRingField<Polynomial<Z>> RING_X = new PolynomialRingField<>(RING_Q);
+  private static final RationalFunctionField<Z> RAT = new RationalFunctionField<>(IntegerField.SINGLETON);
   private final ArrayList<Z> mS = new ArrayList<>();
   {
     mS.add(null);
@@ -49,14 +52,27 @@ public class A050203 implements Sequence {
     }
     System.out.println("w1=" + w1);
 
-    Polynomial<Z> q = RING_Q.zero();
+    // for (i=1, n-1, q=q+s[i]/x^i)
+    RationalFunction<Z> q = RAT.zero();
     for (int i = 1; i < n; ++i) {
-      q = RING_Q.series(RING_Q.add(q.shift(i), RING_Q.monomial(mS.get(i), 0)), RING_Q.monomial(Z.ONE, i), n);
+      q = RAT.add(q, new RationalFunction<>(RING_Q.monomial(mS.get(i), 0), RING_Q.monomial(Z.ONE, i)));
     }
     System.out.println("q=" + q);
 
-    // Ugh, there is a very complicated substitution happening here
-    // q in w1 is actually replaced by the output from above loop!
+    // z=eval(w1) (i.e., substitute for q in w1
+    RationalFunction<Z> z = RAT.zero();
+    for (int k = 0; k < w1.degree(); ++k) {
+      final Polynomial<Z> w1k = w1.coeff(k);
+      RationalFunction<Z> zk = RAT.zero();
+      for (int j = 0; j < w1k.degree(); ++j) {
+        final Z c = w1k.coeff(j);
+        if (!c.isZero()) {
+          zk = RAT.add(zk, RAT.multiply(RAT.pow(q, j), c));
+        }
+      }
+      z = RAT.add(z, RAT.multiply(zk, RING_Q.monomial(Z.ONE, k))); // i.e. * x^k
+    }
+    System.out.println("z=" + z);
 
     final Polynomial<Z> h2 = RING_X.coeff(RING_X.one(), w1, n - 1);
     System.out.println("h2=" + h2);

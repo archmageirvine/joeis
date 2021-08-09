@@ -91,6 +91,26 @@ public class RationalFunctionField<E> extends AbstractField<RationalFunction<E>>
     return constructInLowestTerms(mPolyField.multiply(a.left(), b.left()), mPolyField.multiply(a.right(), b.right()));
   }
 
+  /**
+   * Convenience method to multiply by an ordinary polynomial.
+   * @param a rational function
+   * @param b polynomial
+   * @return product
+   */
+  public RationalFunction<E> multiply(final RationalFunction<E> a, final Polynomial<E> b) {
+    return constructInLowestTerms(mPolyField.multiply(a.left(), b), a.right());
+  }
+
+  /**
+   * Convenience method to multiply by a scalar.
+   * @param a rational function
+   * @param b scalar
+   * @return product
+   */
+  public RationalFunction<E> multiply(final RationalFunction<E> a, E b) {
+    return constructInLowestTerms(mPolyField.multiply(a.left(), b), a.right());
+  }
+
   @Override
   public RationalFunction<E> inverse(final RationalFunction<E> element) {
     return new RationalFunction<>(element.right(), element.left());

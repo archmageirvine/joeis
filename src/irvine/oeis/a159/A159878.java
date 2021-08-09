@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A159878 The digits of Pi whose spellings in English contain no i&apos;s. 
+ * A159878 The digits of Pi whose spellings in English contain no i's.
  * @author Georg Fischer
  */
 public class A159878 extends A000796 {

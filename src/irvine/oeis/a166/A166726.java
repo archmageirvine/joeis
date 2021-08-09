@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A166726 Nonnegative integers with English names ending in &quot;o&quot;. 
+ * A166726 Nonnegative integers with English names ending in "o".
  * @author Georg Fischer
  */
 public class A166726 implements Sequence {

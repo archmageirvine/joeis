@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A152160 List of atomic numbers of the 118 permanently named chemical elements, 
+ * A152160 List of atomic numbers of the 118 permanently named chemical elements, sorted in alphabetical order according to their symbols.
  * sorted in alphabetical order according to their symbols.
  * @author Georg Fischer
  */

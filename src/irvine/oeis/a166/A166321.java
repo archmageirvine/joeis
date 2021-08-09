@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A166321 Atomic numbers of the elements of the periodic table
+ * A166321 Atomic numbers of the elements of the periodic table sorted in alphabetical order according to the IUPAC names.
  * sorted in alphabetical order according to the IUPAC names.
  * @author Georg Fischer
  */

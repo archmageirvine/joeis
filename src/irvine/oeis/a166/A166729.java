@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A166729 Positive integers with English names ending in &quot;t&quot;. 
+ * A166729 Positive integers with English names ending in "t".
  * @author Georg Fischer
  */
 public class A166729 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A166727 Positive integers with English names ending in &quot;r&quot;. 
+ * A166727 Positive integers with English names ending in "r".
  * @author Georg Fischer
  */
 public class A166727 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A213746 Position in alphabet of first letter of symbol for chemical element with atomic number n.
+ * A192409 Number of letters in the English name of the n-th element in the periodic table of the elements.
  * @author Georg Fischer
  */
 public class A192409 extends NoncomputableSequence {

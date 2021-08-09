@@ -2,11 +2,12 @@ package irvine.oeis.a050;
 
 import java.util.ArrayList;
 
-import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.RationalFunction;
 import irvine.math.polynomial.RationalFunctionField;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -18,9 +19,9 @@ public class A050203 implements Sequence {
 
   // After Kok Seng Chua
 
-  private static final PolynomialRingField<Z> RING_Q = new PolynomialRingField<>("q", IntegerField.SINGLETON);
-  private static final PolynomialRingField<Polynomial<Z>> RING_X = new PolynomialRingField<>(RING_Q);
-  private static final RationalFunctionField<Z> RAT = new RationalFunctionField<>(IntegerField.SINGLETON);
+  private static final PolynomialRingField<Q> RING_Q = new PolynomialRingField<>("q", Rationals.SINGLETON);
+  private static final PolynomialRingField<Polynomial<Q>> RING_X = new PolynomialRingField<>(RING_Q);
+  private static final RationalFunctionField<Q> RAT = new RationalFunctionField<>(Rationals.SINGLETON);
   private final ArrayList<Z> mS = new ArrayList<>();
   {
     mS.add(null);
@@ -28,23 +29,23 @@ public class A050203 implements Sequence {
   private int mN = 0;
 
   private Z rr(final int n) {
-    Polynomial<Polynomial<Z>> w = RING_X.one();
-    Polynomial<Polynomial<Z>> p = RING_X.one();
-    Polynomial<Polynomial<Z>> po = RING_X.one();
+    Polynomial<Polynomial<Q>> w = RING_X.one();
+    Polynomial<Polynomial<Q>> p = RING_X.one();
+    Polynomial<Polynomial<Q>> po = RING_X.one();
 
     // for(i=1, n, w=p-po*x*q^i; po=p; p=w);
     for (int i = 1; i <= n; ++i) {
-      w = RING_X.subtract(p, RING_X.multiply(po, RING_X.monomial(RING_Q.monomial(Z.ONE, i), 1), n));
+      w = RING_X.subtract(p, RING_X.multiply(po, RING_X.monomial(RING_Q.monomial(Q.ONE, i), 1), n));
       po = p;
       p = w;
     }
     System.out.println("w=" + w);
 
     final int m = w.degree();
-    Polynomial<Polynomial<Z>> w1 = RING_X.zero();
+    Polynomial<Polynomial<Q>> w1 = RING_X.zero();
     for (int i = 0; i <= m; ++i) {
-      final Polynomial<Z> h = w.coeff(i);
-      Polynomial<Z> h1 = RING_Q.zero();
+      final Polynomial<Q> h = w.coeff(i);
+      Polynomial<Q> h1 = RING_Q.zero();
       for (int j = 1; j <= n - 1 + i; ++j) {
         h1 = RING_Q.add(h1, RING_Q.monomial(h.coeff(j), j));
       }
@@ -53,31 +54,42 @@ public class A050203 implements Sequence {
     System.out.println("w1=" + w1);
 
     // for (i=1, n-1, q=q+s[i]/x^i)
-    RationalFunction<Z> q = RAT.zero();
+    RationalFunction<Q> q = RAT.zero();
     for (int i = 1; i < n; ++i) {
-      q = RAT.add(q, new RationalFunction<>(RING_Q.monomial(mS.get(i), 0), RING_Q.monomial(Z.ONE, i)));
+      q = RAT.add(q, new RationalFunction<>(RING_Q.monomial(new Q(mS.get(i)), 0), RING_Q.monomial(Q.ONE, i)));
     }
     System.out.println("q=" + q);
 
+    //final Polynomial<Q> qnum = q.left();
+
     // z=eval(w1) (i.e., substitute for q in w1
-    RationalFunction<Z> z = RAT.zero();
-    for (int k = 0; k < w1.degree(); ++k) {
-      final Polynomial<Z> w1k = w1.coeff(k);
-      RationalFunction<Z> zk = RAT.zero();
-      for (int j = 0; j < w1k.degree(); ++j) {
-        final Z c = w1k.coeff(j);
-        if (!c.isZero()) {
+    RationalFunction<Q> z = RAT.zero();
+    for (int k = 0; k <= w1.degree(); ++k) {
+      final Polynomial<Q> w1k = w1.coeff(k);
+      RationalFunction<Q> zk = RAT.zero();
+      for (int j = 0; j <= w1k.degree(); ++j) {
+        final Q c = w1k.coeff(j);
+        if (!c.equals(Q.ZERO)) {
+          //System.out.println("q=" + q + "^" + j + " * " + c);
           zk = RAT.add(zk, RAT.multiply(RAT.pow(q, j), c));
         }
       }
-      z = RAT.add(z, RAT.multiply(zk, RING_Q.monomial(Z.ONE, k))); // i.e. * x^k
+
+//      final Polynomial<Q> subsk = RING_Q.substitute(w1k, qnum, Integer.MAX_VALUE);
+//      System.out.println(subsk + " cf. " + zk);
+
+      //System.out.println("w1k= " + w1k + " -> zk=" + zk);
+      z = RAT.add(z, RAT.multiply(zk, RING_Q.monomial(Q.ONE, k))); // i.e. * x^k
     }
     System.out.println("z=" + z);
 
-    final Polynomial<Z> h2 = RING_X.coeff(RING_X.one(), w1, n - 1);
-    System.out.println("h2=" + h2);
+    final Q coeff = z.left().coeff(z.right().degree() - mN + 1); //shift(-z.right().degree());
+   // System.out.println("HHHH: " + coeff.coeff(0));
 
-    return Z.ZERO;
+//    final Polynomial<Q> h2 = RING_X.coeff(RING_X.one(), w1, n - 1);
+//    System.out.println("h2=" + h2);
+
+    return coeff.toZ(); //.coeff(0).toZ();
 
   }
 

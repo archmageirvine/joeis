@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a023.A023219;
 
 /**
- * A088555 Primes arising in A023219.
+ * A088555 Primes of the form 5*p + 6 where p is a prime.
  * @author Georg Fischer
  */
 public class A088555 implements Sequence {

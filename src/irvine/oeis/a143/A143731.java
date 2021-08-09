@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a024.A024619;
 
 /**
- * A143731 Characteristic function of numbers n with at least two distinct prime factors.
+ * A143731 Characteristic function of numbers with at least two distinct prime factors (A024619).
  * @author Georg Fischer
  */
 public class A143731 extends CharacteristicFunction {

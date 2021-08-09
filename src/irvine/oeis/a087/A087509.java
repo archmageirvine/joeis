@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087509 a(n) = #{k=0..n, mod(kn,3) = 2}.
+ * A087509 Number of k such that (k*n) == 2 (mod 3) for 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A087509 extends LinearRecurrence {

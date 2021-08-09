@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.math.z.Z;
 
 /**
- * A049631 a(n)=Sum{T(2i+1,n-2i-1): i=0,1,...,[ (n+1)/2 ]}, array T as in A049627.
+ * A049631 a(n) = Sum_{i=0..floor(n/2)} T(2i+1,n-2i-1) where T is A049627.
  * @author Sean A. Irvine
  */
 public class A049631 extends A049627 {

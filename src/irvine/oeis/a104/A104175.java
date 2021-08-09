@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A104175 From the words to the song "Jenny's Letterbox" by Tommy Tutone.
+ * A104175 From the words to the song "867-5309/Jenny" by Tommy Tutone.
  * @author Georg Fischer
  */
 public class A104175 extends GeneratingFunctionSequence {

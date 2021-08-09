@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037393 Numbers n such that every base 5 digit of n is a base 6 digit of n.
+ * A037393 Numbers k such that every base-5 digit of k is a base-6 digit of k.
  * @author Georg Fischer
  */
 public class A037393 extends A037372 {

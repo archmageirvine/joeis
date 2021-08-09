@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a048.A048149;
 
 /**
- * A049714 a(n)=Sum{T(2i,n-2i): i=0,1,...,[ n/2 ]}, array T as in A048149.
+ * A049714 a(n) = Sum_{i=0..floor(n/2)} T(2i,n-2i), array T as in A048149.
  * @author Sean A. Irvine
  */
 public class A049714 extends A048149 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033147 Decimal expansion of n! begins with n.
+ * A033147 Numbers k such that the decimal expansion of k! begins with k.
  * @author Sean A. Irvine
  */
 public class A033147 implements Sequence {

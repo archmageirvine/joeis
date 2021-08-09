@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199183 Decimal expansion of greatest x satisfying x^2+3*x*cos(x)=1.
+ * A199183 Decimal expansion of greatest x satisfying x^2 + 3*x*cos(x) = 1.
  * Equation; x^2+3*x*cos(x)-1
  * @author Georg Fischer
  */

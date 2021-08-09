@@ -1,0 +1,17 @@
+package irvine.oeis.a050;
+
+import irvine.math.z.Z;
+
+/**
+ * A050149 a(n) = T(n,n-3), array T as in A050143.
+ * @author Sean A. Irvine
+ */
+public class A050149 extends A050143 {
+
+  private int mN = 2;
+
+  @Override
+  public Z next() {
+    return get(++mN, mN - 3);
+  }
+}

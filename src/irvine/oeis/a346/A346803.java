@@ -3,7 +3,7 @@ package irvine.oeis.a346;
 import irvine.oeis.DirectSumOfLikePowersSequence;
 
 /**
- * A346803.
+ * A346803 Numbers that are the sum of nine squares in ten or more ways.
  * @author Sean A. Irvine
  */
 public class A346803 extends DirectSumOfLikePowersSequence {

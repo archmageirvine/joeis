@@ -6,7 +6,7 @@ import irvine.oeis.WeylGroupSequence;
 
 
 /**
- * A161435 Number of reduced words of length n in the Weyl group A_3.
+ * A161435 Number of reduced words of length n in the Weyl group A_3 (or D_3).
  * @author Georg Fischer
  */
 public class A161435 extends WeylGroupSequence {

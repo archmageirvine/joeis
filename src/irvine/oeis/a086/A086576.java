@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086576 a(n) = k where R(k+5) = 5.
+ * A086576 a(n) = 5*(10^n - 1).
  * @author Sean A. Irvine
  */
 public class A086576 extends LinearRecurrence {

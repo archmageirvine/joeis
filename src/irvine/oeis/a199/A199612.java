@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199612 Decimal expansion of greatest x satisfying x+4*cos(x)=0.
+ * A199612 Decimal expansion of greatest x satisfying x + 4*cos(x) = 0.
  * Equation; x^2+4*x*cos(x)
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A201906 Decimal expansion of the x nearest 0 that satisfies x^2+4x+2=e^x.
+ * A201906 Decimal expansion of the x nearest 0 that satisfies x^2 + 4*x + 2 = e^x.
  * Equation; x^2+4*x+2-exp(x)
  * @author Georg Fischer
  */

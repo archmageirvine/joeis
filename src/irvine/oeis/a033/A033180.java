@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033180 Numbers n such that n! contains n as a string of digits.
+ * A033180 Numbers k such that k! contains k as a string of digits.
  * @author Sean A. Irvine
  */
 public class A033180 implements Sequence {

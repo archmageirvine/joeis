@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033322 [ 2/n ].
+ * A033322 a(n) = floor(2/n).
  * @author Georg Fischer
  */
 public class A033322 implements Sequence {

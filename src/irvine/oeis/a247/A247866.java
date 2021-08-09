@@ -8,7 +8,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A247866 Numbers n such that n!3 + 3^4 is prime.
+ * A247866 Numbers k such that k!3 + 3^4 is prime.
  * @author Georg Fischer
  */
 public class A247866 extends PrimePositionSubsequence {

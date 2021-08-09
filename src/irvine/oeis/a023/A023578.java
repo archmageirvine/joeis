@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023578 Least odd prime divisor of p(n)+3, or 1 if p(n)+3 is a power of 2.
+ * A023578 Least odd prime divisor of prime(n)+3, or 1 if prime(n)+3 is a power of 2.
  * @author Sean A. Irvine
  */
 public class A023578 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049413 Highest prime dividing sum{k=0 to n}[ k!(n-k)! ].
+ * A049413 Largest prime dividing Sum_{k=0..n} k! * (n-k)!.
  * @author Sean A. Irvine
  */
 public class A049413 implements Sequence {

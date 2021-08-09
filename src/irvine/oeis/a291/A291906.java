@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A291906 Numbers n such that (29^n + 1)/30 is a prime.
+ * A291906 Numbers k such that (29^k + 1)/30 is a prime.
  * @author Georg Fischer
  */
 public class A291906 extends PrimePositionSubsequence {

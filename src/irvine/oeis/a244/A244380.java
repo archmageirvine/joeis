@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A244380 Numbers n such that 1 + n + n^3 + n^5 + n^7 + n^9 + ... + n^25 is prime.
+ * A244380 Numbers k such that 1 + k + k^3 + k^5 + k^7 + k^9 + ... + k^25 is prime.
  * @author Georg Fischer
  */
 public class A244380 extends PrimePositionSubsequence {

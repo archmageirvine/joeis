@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A346907.
+ * A346907 Decimal expansion of 2 - 3 * Pi^3 / (2^6 * sqrt(2)).
  * @author Sean A. Irvine
  */
 public class A346907 extends DecimalExpansionSequence {

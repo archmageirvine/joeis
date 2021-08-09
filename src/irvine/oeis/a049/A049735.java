@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049735 Array T read by diagonals; T(i,j)=number of lattice points (x,y) in circle with radius (0,0)-to-(i,j).
+ * A049735 Array T(i,j) is the number of lattice points (x,y) in circle with radius (0,0)-to-(i,j), read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A049735 implements Sequence {

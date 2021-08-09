@@ -4,7 +4,7 @@ package irvine.oeis.a050;
 import irvine.oeis.PositionOfNSequence;
 
 /**
- * A050009 a(n)=position of n in A050008.
+ * A050009 a(n) = position of n in A050008.
  * @author Georg Fischer
  */
 public class A050009 extends PositionOfNSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A038672 Numbers n such that n is prime but n-th Fibonacci number is composite.
+ * A038672 Primes p such that the p-th Fibonacci number is composite.
  * @author Sean A. Irvine
  */
 public class A038672 extends A000045 {

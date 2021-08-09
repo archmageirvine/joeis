@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A038842 Primes which when converted to base 36 make English words.
+ * A038842 Primes which when converted to base 36 make single letters or English words.
  * The primes were matched against Caldwell's 
  * <a href="http://www.utm.edu/research/primes/notes/words.html">The Prime Lexicon</a>,
  * they are not computable here.

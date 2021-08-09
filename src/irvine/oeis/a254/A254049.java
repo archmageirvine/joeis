@@ -7,7 +7,7 @@ import irvine.oeis.a048.A048673;
 
 
 /**
- * A254049 Odd bisection of A048673: a(n) = A048673((2*n)-1).
+ * A254049 Odd bisection of A048673: a(n) = A048673(2*n-1).
  * @author Georg Fischer
  */
 public class A254049 extends A048673 {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A346850.
+ * A346850 Decimal expansion of 2 - 19 * Pi^5 / (4096 * sqrt(2)).
  * @author Sean A. Irvine
  */
 public class A346850 extends DecimalExpansionSequence {

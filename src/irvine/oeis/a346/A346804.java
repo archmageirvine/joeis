@@ -3,7 +3,7 @@ package irvine.oeis.a346;
 import irvine.oeis.DirectSumOfLikePowersSequence;
 
 /**
- * A346804.
+ * A346804 Numbers that are the sum of ten squares in five or more ways.
  * @author Sean A. Irvine
  */
 public class A346804 extends DirectSumOfLikePowersSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A038524 Numbers n such that the n-th Fibonacci number is composite and the concatenation of its prime factors (written in base 10 in ascending order) is prime.
+ * A038524 Numbers k such that the k-th Fibonacci number is composite and the concatenation of its prime factors (written in base 10 in ascending order) is prime.
  * @author Sean A. Irvine
  */
 public class A038524 extends A000045 {

@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.math.z.Z;
 
 /**
- * A049725 a(n)=Sum{((-1)^i)*T(i,2n-i): i=0,1,...,n}, array T as in A049723.
+ * A049725 a(n) = Sum_{i=0..2n} (-1)^i * T(i,2n-i), array T as in A049723.
  * @author Sean A. Irvine
  */
 public class A049725 extends A049723 {

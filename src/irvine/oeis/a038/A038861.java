@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038861 Numbers n such that n ends with '6' and is difference between two cubes in at least one way.
+ * A038861 Numbers ending with '6' that are the difference of two positive cubes.
  * @author Sean A. Irvine
  */
 public class A038861 implements Sequence {

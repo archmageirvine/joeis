@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A199290 Decimal expansion of x&gt;0 satisfying 3*x^2+2*x*cos(x)=3.
+ * A199290 Decimal expansion of x &gt; 0 satisfying 3*x^2 + 2*x*cos(x) = 3.
  * Equation; 3*x^2+2*x*cos(x)-3
  * @author Georg Fischer
  */

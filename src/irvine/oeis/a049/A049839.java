@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.math.z.Z;
 
 /**
- * A049839 a(n)=MAX{T(n,k): k=1,2,...,n}, array T as in A049837.
+ * A049839 a(n) = Max_{k=1..n} T(n,k), array T as in A049837.
  * @author Sean A. Irvine
  */
 public class A049839 extends A049837 {

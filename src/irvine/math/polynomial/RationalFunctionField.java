@@ -107,7 +107,7 @@ public class RationalFunctionField<E> extends AbstractField<RationalFunction<E>>
    * @param b scalar
    * @return product
    */
-  public RationalFunction<E> multiply(final RationalFunction<E> a, E b) {
+  public RationalFunction<E> multiply(final RationalFunction<E> a, final E b) {
     return constructInLowestTerms(mPolyField.multiply(a.left(), b), a.right());
   }
 

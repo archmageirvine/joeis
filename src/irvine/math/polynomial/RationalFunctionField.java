@@ -142,4 +142,8 @@ public class RationalFunctionField<E> extends AbstractField<RationalFunction<E>>
     return constructInLowestTerms(num, den);
   }
 
+  @Override
+  public RationalFunction<E> pow(final RationalFunction<E> a, final long n) {
+    return constructInLowestTerms(mPolyField.pow(a.left(), n), mPolyField.pow(a.right(), n));
+  }
 }

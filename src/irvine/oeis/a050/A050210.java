@@ -26,7 +26,6 @@ public class A050210 implements Sequence {
       f = f.subtract(unitFraction);
       maxDen = maxDen.max(unitFraction.den());
     }
-    maxDen = maxDen.max(f.den());
-    return maxDen;
+    return maxDen.max(f.den());
   }
 }

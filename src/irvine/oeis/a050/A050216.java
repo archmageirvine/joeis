@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A050216.
+ * A050216 Number of primes between (prime(n))^2 and (prime(n+1))^2, with a(0) = 2 by convention.
  * @author Sean A. Irvine
  */
 public class A050216 extends A000040 {

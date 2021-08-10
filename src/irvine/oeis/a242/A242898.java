@@ -10,16 +10,16 @@ import irvine.oeis.a000.A000796;
  */
 public class A242898 extends A000796 {
 
-  protected int mN = 0;
-  protected Z mSum = Z.ZERO;
+  private int mM = 0;
+  private Z mSum = Z.ZERO;
 
   @Override
   public Z next() {
-    ++mN;
-    if (mN == 1) {
+    ++mM;
+    if (mM == 1) {
       mSum = mSum.add(Z.valueOf("three".length()));
       super.next(); // skip 3.
-    } else if (mN == 2) {
+    } else if (mM == 2) {
       mSum = mSum.add(Z.valueOf("point".length()));
     } else {
       mSum = mSum.add(new int[] {4, 3, 3, 5, 4, 4, 3, 5, 5, 4}[super.next().intValue()]);

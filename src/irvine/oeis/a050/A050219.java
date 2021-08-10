@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006753;
 
 /**
- * A050219.
+ * A050219 Smaller of Smith brothers.
  * @author Sean A. Irvine
  */
 public class A050219 extends A006753 {

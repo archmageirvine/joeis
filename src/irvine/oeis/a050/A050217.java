@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050217.
+ * A050217 Super-Poulet numbers: Poulet numbers whose divisors d all satisfy d|2^d-2.
  * @author Sean A. Irvine
  */
 public class A050217 implements Sequence {

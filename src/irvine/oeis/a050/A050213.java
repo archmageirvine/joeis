@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050213.
+ * A050213 Triangle of number of permutations of {1, 2, ..., n} having exactly k cycles, each of which is of length &gt;=r for r=5.
  * @author Sean A. Irvine
  */
 public class A050213 extends MemoryFunction2<Long, Z> implements Sequence {

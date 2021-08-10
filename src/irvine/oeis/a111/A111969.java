@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A111969 Decimal expansion of the area of Graham&apos;s biggest little hexagon.
+ * A111969 Decimal expansion of the area of Graham's biggest little hexagon.
  * Equation; 4096*x^10+8192*x^9-3008*x^8-30848*x^7+21056*x^6+146496*x^5-221360*x^4+1232*x^3+144464*x^2-78488*x+11993
  * @author Georg Fischer
  */

@@ -1685,4 +1685,4 @@ A050176 T(n,k)=M0(n+1,k,f(n,k)), where M0(p,q,r)=number of upright paths from (0
 A050177 T(n,k)=M0(n,k,f(n,k)), where M0 is given by A050176 and f(n,k) is the next-to-least t for which M0(n,k,t) is not 0.
 A050178 T(n,k)=M0(n,k,f(n,k)), where M0 is given by A050176 and f(n,k) is the 3rd-from-least t for which M0(n,k,t) is not 0.
 A050179 T(n,k) = M0(n,k,f(n,k)), where M0 is given by A050176 and f(n,k) is the 4th-from-least t for which M0(n,k,t) is not 0.
-A050203 a(n) is the coefficient of the term a^(-n) in the asymptotic series for the least positive zero of the generalized Rogers-Ramanujan continued fraction.
+A050204 a(n) is the number of n X n matrices of 0's, 1's and -1's in which the entries in each row or column sum to 1.

@@ -14,6 +14,10 @@ public class A006753 implements Sequence {
 
   private Z mN = Z.THREE;
 
+  protected long multiplier() {
+    return 1;
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -25,7 +29,7 @@ public class A006753 implements Sequence {
         for (final Z p : fs.toZArray()) {
           s += ZUtils.digitSum(p) * fs.getExponent(p);
         }
-        if (s == d) {
+        if (multiplier() * s == d) {
           return mN;
         }
       }

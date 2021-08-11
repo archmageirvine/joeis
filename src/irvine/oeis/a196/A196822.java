@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A264936 Decimal expansion of the positive root of x^(x^x) = gamma.
+ * A196822 Decimal expansion of the number x satisfying 2*x = (1+x^2)*sin(x) and 0 &lt; x &lt; 2*Pi.
  * @author Sean A. Irvine
  */
 public class A196822 extends DecimalExpansionSequence {

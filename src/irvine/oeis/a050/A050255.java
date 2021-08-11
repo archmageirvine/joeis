@@ -13,8 +13,6 @@ import irvine.oeis.Sequence;
  */
 public class A050255 implements Sequence {
 
-  // Diaconis-Mosteller approximation to the birthday problem
-
   private static final CR LN2 = CR.TWO.log();
   private final MemoryFactorial mF = new MemoryFactorial();
   private int mA = 0;

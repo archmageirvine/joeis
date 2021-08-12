@@ -18,10 +18,22 @@ public class Permutation {
    * Construct a new permutation on the specified elements.
    * Individual elements can appear multiple times.
    * @param seq elements
+   * @param sort should the array be sorted
+   */
+  public Permutation(final int[] seq, final boolean sort) {
+    mPermutation = Arrays.copyOf(seq, seq.length);
+    if (sort) {
+      Arrays.sort(mPermutation);
+    }
+  }
+
+  /**
+   * Construct a new permutation on the specified elements.
+   * Individual elements can appear multiple times.
+   * @param seq elements
    */
   public Permutation(final int[] seq) {
-    mPermutation = Arrays.copyOf(seq, seq.length);
-    Arrays.sort(mPermutation);
+    this(seq, true);
   }
 
   /**

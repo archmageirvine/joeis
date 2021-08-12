@@ -12,6 +12,8 @@ import irvine.oeis.Sequence;
  */
 public class A050240 implements Sequence {
 
+  // todo: this is currently wrong, definition in OEIS unclear?
+
   private long mN = 0;
 
   private long countPowerful(final long n, final String s, final int pos, final long[] powers) {
@@ -43,7 +45,7 @@ public class A050240 implements Sequence {
   private boolean isPowerful(final long n) {
     final long[] powers = new long[10];
     LongUtils.identity(powers);
-    return countPowerful(n, String.valueOf(n), 0, powers) > 1;
+    return countPowerful(n, String.valueOf(n), 0, powers) == 2;
   }
 
   @Override

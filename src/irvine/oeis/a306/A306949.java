@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306949 a(n) is the number of different types of faces of Johnson solid J_n, with solids ordered by indices in Johnson&apos;s paper.
+ * A306949 a(n) is the number of different types of faces of Johnson solid J_n, with solids ordered by indices in Johnson's paper.
  * @author Georg Fischer
  */
 

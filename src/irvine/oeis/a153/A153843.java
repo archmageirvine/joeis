@@ -4,7 +4,7 @@ package irvine.oeis.a153;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A153843 First Sunday in n-th month of 365-day year starting on Thursday
+ * A153843 First Sunday in n-th month of 365-day year starting on Thursday.
  * @author Georg Fischer
  */
 

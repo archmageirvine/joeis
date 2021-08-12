@@ -4,7 +4,7 @@ package irvine.oeis.a230;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A230034 Numbers which can&apos;t be represented as a sum of 3 relatively prime positive integers such that each pair of them is not coprime.
+ * A230034 Numbers which can't be represented as a sum of 3 relatively prime positive integers such that each pair of them is not coprime.
  * @author Georg Fischer
  */
 

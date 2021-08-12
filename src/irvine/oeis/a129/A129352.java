@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129352 Number parallelogram based on Pascal&apos;s triangle, read along diagonals.
+ * A129352 Number parallelogram based on Pascal's triangle, read along diagonals.
  * @author Georg Fischer
  */
 

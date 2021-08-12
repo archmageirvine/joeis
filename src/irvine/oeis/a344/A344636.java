@@ -4,7 +4,7 @@ package irvine.oeis.a344;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A344636 Numbers k such that half the numbers from 0 to k inclusive contain the digit &quot;1&quot;.
+ * A344636 Numbers k such that half the numbers from 0 to k inclusive contain the digit "1".
  * @author Georg Fischer
  */
 

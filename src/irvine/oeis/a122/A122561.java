@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122561 Position of letters from the sentence: &apos;aleph is one&apos; in alphabet.
+ * A122561 Position of letters from the sentence: 'aleph is one' in alphabet.
  * @author Georg Fischer
  */
 

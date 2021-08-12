@@ -4,7 +4,7 @@ package irvine.oeis.a344;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A344634 Numbers k such that half the numbers from 0 to k inclusive contain the digit &quot;0&quot;.
+ * A344634 Numbers k such that half the numbers from 0 to k inclusive contain the digit "0".
  * @author Georg Fischer
  */
 

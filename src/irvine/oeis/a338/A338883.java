@@ -4,7 +4,7 @@ package irvine.oeis.a338;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A338883 Orders of elements of the Rubik&apos;s Cube group.
+ * A338883 Orders of elements of the Rubik's Cube group.
  * @author Georg Fischer
  */
 

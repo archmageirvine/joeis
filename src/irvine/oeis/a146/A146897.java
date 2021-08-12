@@ -4,7 +4,7 @@ package irvine.oeis.a146;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A146897 Weight distribution of [108, 54, 20] double circulant code.
+ * A146897 Weight distribution of [108,54,20] double circulant code.
  * @author Georg Fischer
  */
 

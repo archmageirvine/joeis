@@ -4,7 +4,7 @@ package irvine.oeis.a151;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A151623 Weight distribution of [256, 55, 64] extended binary primitive BCH (or XBCH) code.
+ * A151623 Weight distribution of [256,55,64] extended binary primitive BCH (or XBCH) code.
  * @author Georg Fischer
  */
 

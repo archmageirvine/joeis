@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A246770 Decimal expansion of 'beta', an auxiliary constant associated with the optimal stopping problem on patterns in random binary strings.
- * Equation; 45x^3-180x^2+90x+4
+ * Equation; <code>45x^3-180x^2+90x+4</code>
  * @author Georg Fischer
  */
 public class A246770 extends DecimalExpansionSequence {

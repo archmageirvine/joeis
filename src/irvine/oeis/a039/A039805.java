@@ -16,7 +16,11 @@ public class A039805 extends A008284 {
   private long mN = -1;
   private long mM = 0;
   private final DefaultMatrix<Z> mMatrix = new DefaultMatrix<>(0, 0, Z.ZERO);
-  private Matrix<Z> mCube = null;
+  private Matrix<Z> mMatrixPower = null;
+
+  protected int exponent() {
+    return 3;
+  }
 
   @Override
   public Z next() {
@@ -28,8 +32,8 @@ public class A039805 extends A008284 {
       for (long k = 0; k <= mN; ++k) {
         mMatrix.set(mN, k, super.next());
       }
-      mCube = new MatrixRing<>(mN + 1, Integers.SINGLETON).pow(mMatrix, 3);
+      mMatrixPower = new MatrixRing<>(mN + 1, Integers.SINGLETON).pow(mMatrix, exponent());
     }
-    return mCube.get(mN, mM);
+    return mMatrixPower.get(mN, mM);
   }
 }

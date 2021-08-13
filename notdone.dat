@@ -1686,7 +1686,9 @@ A050177 T(n,k)=M0(n,k,f(n,k)), where M0 is given by A050176 and f(n,k) is the ne
 A050178 T(n,k)=M0(n,k,f(n,k)), where M0 is given by A050176 and f(n,k) is the 3rd-from-least t for which M0(n,k,t) is not 0.
 A050179 T(n,k) = M0(n,k,f(n,k)), where M0 is given by A050176 and f(n,k) is the 4th-from-least t for which M0(n,k,t) is not 0.
 A050204 a(n) is the number of n X n matrices of 0's, 1's and -1's in which the entries in each row or column sum to 1.
+A050240 Handsome numbers (A007532) representable as a sum of any positive powers of their digits in two distinct ways, not counting different powers of duplicated digits as distinct.
 A050257 Number of distinct antimagic squares of order n (modulo rotations and reflections)
 A050259 Numbers n such that 2^n == 3 (mod n) [a lot of effort to do efficiently].
 A050276 Nonzero numerators in asymptotic expansion of the Riemann-Seigel Z-function.
 A050277 Integer part of denominators of nonzero terms in asymptotic expansion of the Riemann-Seigel Z-function.
+A050295 Number of strongly triple-free subsets of {1, 2, ..., n}.

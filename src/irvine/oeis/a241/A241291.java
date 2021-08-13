@@ -42,6 +42,7 @@ public class A241291 extends DecimalExpansionSequence {
    * @param base base of power tower
    * @param expr integer expression for the power tower with one level decreased
    * The formula is taken from the Mathematica in A241295:
+   * <code>
    * nbrdgt = 105; 
    * f[base_, exp_] := RealDigits[ 
    *   10^FractionalPart[ 
@@ -49,6 +50,7 @@ public class A241291 extends DecimalExpansionSequence {
    *   ]
    *   , 10, nbrdgt][[1]]; 
    * f[ 6, 6^6^6]
+   * </code>
    * @return or real value
    */
   protected static CR getCR(final int base, final Z expr) {

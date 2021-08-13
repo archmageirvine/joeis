@@ -19,6 +19,10 @@ public class A038498 extends A008284 {
   private int mN = 0;
   private int mM = 0;
 
+  protected int exponent() {
+    return 1;
+  }
+
   @Override
   public Z next() {
     if (++mM >= mN) {
@@ -27,7 +31,8 @@ public class A038498 extends A008284 {
       for (int k = 0; k < mN; ++k) {
         mA.set(mN - 1, k, new Q(super.next()));
       }
-      mAInverse = new MatrixField<>(mN, Rationals.SINGLETON).inverse(mA);
+      final MatrixField<Q> field = new MatrixField<>(mN, Rationals.SINGLETON);
+      mAInverse = field.pow(field.inverse(mA), exponent());
       mM = 0;
     }
     return mAInverse.get(mN - 1, mM).toZ();

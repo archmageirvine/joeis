@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045577 Numbers n such that n | 4^n + 2^n, or n | 8^n + 4^n.
+ * A045577 Numbers k that divide 4^k + 2^k or 8^k + 4^k.
  * @author Sean A. Irvine
  */
 public class A045577 implements Sequence {

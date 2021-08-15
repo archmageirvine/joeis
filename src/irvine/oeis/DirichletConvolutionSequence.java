@@ -27,6 +27,7 @@ public class DirichletConvolutionSequence implements Sequence {
     mSeq1 = MemorySequence.cachedSequence(seq1);
     mSeq2 = mSeq1;
   }
+
   /**
    * Create a Dirichlet convolution of two (different) sequences.
    * @param seq1 first sequence

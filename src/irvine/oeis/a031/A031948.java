@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031948 Numbers in which the number of distinct base 3 digits is 2.
+ * A031948 Numbers with exactly two distinct base-3 digits.
  * @author Sean A. Irvine
  */
 public class A031948 implements Sequence {

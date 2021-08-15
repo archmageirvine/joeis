@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033433 [ 10000/sqrt(n) ].
+ * A033433 a(n) = floor(10000/sqrt(n)).
  * @author Sean A. Irvine
  */
 public class A033433 implements Sequence {

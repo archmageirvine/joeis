@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
 /**
- * A032596 Three consecutive palindromic primes (middle terms).
+ * A032596 Second of three consecutive palindromes all of which are prime.
  * @author Sean A. Irvine
  */
 public class A032596 extends A002385 {

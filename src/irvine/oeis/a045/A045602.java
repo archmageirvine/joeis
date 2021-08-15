@@ -5,7 +5,7 @@ package irvine.oeis.a045;
 import irvine.oeis.a015.A015889;
 
 /**
- * A045602 Numbers n such that n | 9^n + 6^n.
+ * A045602 Numbers k that divide 9^k + 6^k.
  * @author Georg Fischer
  */
 public class A045602 extends A015889 {

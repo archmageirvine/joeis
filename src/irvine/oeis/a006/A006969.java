@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.French;
 
 /**
- * A006969 Letters in ordinal numbers (in French).
+ * A006969 Number of characters in French ordinal numbers.
  * @author Georg Fischer
  */
 public class A006969 implements Sequence {

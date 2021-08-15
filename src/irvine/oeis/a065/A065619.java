@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000111;
 
 /**
- * A065619 E.g.f. x * (tan(x) + sec(x)).
+ * A065619 Expansion of e.g.f. x * (tan(x) + sec(x)).
  * @author Georg Fischer
  */
 public class A065619 implements Sequence {

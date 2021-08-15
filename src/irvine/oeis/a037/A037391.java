@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037391 Numbers n such that every base 4 digit of n is a base 9 digit of n.
+ * A037391 Numbers k such that every base-4 digit of k is a base-9 digit of k.
  * @author Georg Fischer
  */
 public class A037391 extends A037372 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038863 Numbers n such that n ends with '8' and is difference between two cubes in at least one way.
+ * A038863 Numbers ending with '8' that are the difference of two positive cubes.
  * @author Sean A. Irvine
  */
 public class A038863 implements Sequence {

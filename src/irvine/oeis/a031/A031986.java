@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031986 n-th number in which the number of distinct base 9 digits is 5.
+ * A031986 Numbers with exactly five distinct base-9 digits.
  * @author Sean A. Irvine
  */
 public class A031986 extends A031948 {

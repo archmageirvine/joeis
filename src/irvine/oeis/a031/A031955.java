@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031955 Numbers with exactly two distinct base 10 digits.
+ * A031955 Numbers with exactly two distinct base-10 digits.
  * @author Sean A. Irvine
  */
 public class A031955 extends A031948 {

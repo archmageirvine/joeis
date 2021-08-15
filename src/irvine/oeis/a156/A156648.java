@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A156648 Decimal expansion of Product_{k&gt;=1} (1+1/k^2).
+ * A156648 Decimal expansion of Product_{k&gt;=1} (1 + 1/k^2).
  * @author Georg Fischer
  */
 public class A156648 extends DecimalExpansionSequence {

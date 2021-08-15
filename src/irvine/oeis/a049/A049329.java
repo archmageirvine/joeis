@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049329 Numbers n such that n is a substring of n^n.
+ * A049329 Numbers k such that k is a substring of k^k.
  * @author Sean A. Irvine
  */
 public class A049329 implements Sequence {

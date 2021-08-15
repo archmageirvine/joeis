@@ -5,7 +5,7 @@ package irvine.oeis.a045;
 import irvine.oeis.a015.A015889;
 
 /**
- * A045584 Numbers n such that n | 4^n + 3^n.
+ * A045584 Numbers k that divide 4^k + 3^k.
  * @author Georg Fischer
  */
 public class A045584 extends A015889 {

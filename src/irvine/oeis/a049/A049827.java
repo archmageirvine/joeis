@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.math.z.Z;
 
 /**
- * A049827 a(n)=T(2n-1,n)+T(2n,n+1)+...+T(3n-3,2n-2)=sum over a period of n-th diagonal of array T given by A049816.
+ * A049827 a(n) = T(2n-1,n)+T(2n,n+1)+...+T(3n-3,2n-2) = sum over a period of n-th diagonal of array T given by A049816.
  * @author Sean A. Irvine
  */
 public class A049827 extends A049816 {

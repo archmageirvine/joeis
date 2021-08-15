@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033020 n-th number k such that every run of digits of k in base 7 has length &gt;=2.
+ * A033020 Numbers whose base-7 expansion has no run of digits with length &lt; 2.
  * @author Sean A. Irvine
  */
 public class A033020 extends A033015 {

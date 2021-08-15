@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038862 Numbers n such that n ends with '7' and is the difference between two positive cubes in at least one way.
+ * A038862 Numbers ending with '7' that are the difference of two positive cubes.
  * @author Sean A. Irvine
  */
 public class A038862 implements Sequence {

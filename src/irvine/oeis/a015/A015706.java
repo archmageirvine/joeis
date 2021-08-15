@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015706 Numbers n such that n divides phi(n) * sigma(n), n odd.
+ * A015706 Odd numbers k that divide phi(k)*sigma(k).
  * @author Sean A. Irvine
  */
 public class A015706 implements Sequence {

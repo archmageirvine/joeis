@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000138 E.g.f. exp(-x^4/4)/(1-x).
+ * A000138 Expansion of e.g.f. exp(-x^4/4)/(1-x).
  * @author Sean A. Irvine
  */
 public class A000138 implements Sequence {

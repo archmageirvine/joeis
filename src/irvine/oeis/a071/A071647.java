@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034883;
 
 
 /**
- * A071647 a(n) is the maximum number of elements among the continued fractions for n/1, n/2, n/3, n/4 ...., n/n.
+ * A071647 a(n) is the maximum number of elements among the continued fractions for n/1, n/2, n/3, n/4, ..., n/n.
  * @author Georg Fischer
  */
 public class A071647 extends PrependSequence {

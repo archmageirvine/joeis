@@ -5,7 +5,7 @@ package irvine.oeis.a045;
 import irvine.oeis.a015.A015889;
 
 /**
- * A045597 Numbers n such that n | 8^n + 5^n.
+ * A045597 Numbers k that divide 8^k + 5^k.
  * @author Georg Fischer
  */
 public class A045597 extends A015889 {

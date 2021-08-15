@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038859 Numbers that end with '4' and are the difference between two cubes in at least one way.
+ * A038859 Numbers ending with '4' that are the difference of two positive cubes.
  * @author Sean A. Irvine
  */
 public class A038859 implements Sequence {

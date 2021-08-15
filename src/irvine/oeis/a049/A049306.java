@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049306 Numbers n such that n is a substring of 8^n.
+ * A049306 Numbers k such that k is a substring of 8^k.
  * @author Sean A. Irvine
  */
 public class A049306 implements Sequence {

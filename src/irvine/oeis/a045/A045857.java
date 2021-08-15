@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 /**
- * A045857 Numbers n such that n^2 has initial digit '3'.
+ * A045857 Numbers whose square has initial digit '3'.
  * @author Sean A. Irvine
  */
 public class A045857 extends A045856 {

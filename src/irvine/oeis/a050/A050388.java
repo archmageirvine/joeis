@@ -1,0 +1,16 @@
+package irvine.oeis.a050;
+
+import irvine.oeis.ExponentialRevertTransformSequence;
+import irvine.oeis.a008.A008836;
+
+/**
+ * A050388 Exponential reversion of Liouville's lambda function A008836.
+ * @author Sean A. Irvine
+ */
+public class A050388 extends ExponentialRevertTransformSequence {
+
+  /** Construct the sequence. */
+  public A050388() {
+    super(new A008836());
+  }
+}

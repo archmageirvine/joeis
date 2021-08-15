@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031966 n-th number in which the number of distinct base 7 digits is 4.
+ * A031966 Numbers with exactly four distinct base-7 digits.
  * @author Sean A. Irvine
  */
 public class A031966 extends A031948 {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028819 Numbers n such that n^2 has digits in nondecreasing order.
+ * A028819 Numbers whose square has its digits in nondecreasing order.
  * @author Sean A. Irvine
  */
 public class A028819 implements Sequence {

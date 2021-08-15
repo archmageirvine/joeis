@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031987 n-th number in which the number of distinct base 10 digits is 5.
+ * A031987 Numbers with exactly five distinct base-10 digits.
  * @author Sean A. Irvine
  */
 public class A031987 extends A031948 {

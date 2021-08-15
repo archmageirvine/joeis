@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031968 n-th number in which the number of distinct base 9 digits is 4.
+ * A031968 Numbers with exactly four distinct base-9 digits.
  * @author Sean A. Irvine
  */
 public class A031968 extends A031948 {

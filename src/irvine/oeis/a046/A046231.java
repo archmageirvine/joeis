@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A046231 Numbers n such that n^3 is palindromic in base 4.
+ * A046231 Numbers whose cube is palindromic in base 4.
  * @author Sean A. Irvine
  */
 public class A046231 implements Sequence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033027 Every run of digits of n in base 14 has length &gt;=2.
+ * A033027 Numbers whose base-14 expansion has no run of digits with length &lt; 2.
  * @author Sean A. Irvine
  */
 public class A033027 extends A033015 {

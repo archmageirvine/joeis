@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049304 Numbers n such that n is a substring of 6^n.
+ * A049304 Numbers k such that k is a substring of 6^k.
  * @author Sean A. Irvine
  */
 public class A049304 implements Sequence {

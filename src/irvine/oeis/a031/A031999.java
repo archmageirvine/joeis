@@ -4,7 +4,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a023.A023760;
 
 /**
- * A031999 Nonincreasing base 4 digits.
+ * A031999 Numbers whose base-4 digits are in nonincreasing order.
  * @author Sean A. Irvine
  */
 public class A031999 extends SkipSequence {

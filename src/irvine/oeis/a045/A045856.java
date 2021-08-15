@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045856 Numbers n such that n^2 has initial digit '2'.
+ * A045856 Numbers whose square has initial digit '2'.
  * @author Sean A. Irvine
  */
 public class A045856 implements Sequence {

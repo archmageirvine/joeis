@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031958 Numbers in which the number of distinct base 6 digits is 3.
+ * A031958 Numbers with exactly three distinct base-6 digits.
  * @author Sean A. Irvine
  */
 public class A031958 extends A031948 {

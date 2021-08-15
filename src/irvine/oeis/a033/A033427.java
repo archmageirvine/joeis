@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033427 [ 10^5/n ].
+ * A033427 a(n) = floor(10^5/n).
  * @author Sean A. Irvine
  */
 public class A033427 implements Sequence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031959 Numbers in which the number of distinct base 7 digits is 3.
+ * A031959 Numbers with exactly three distinct base-7 digits.
  * @author Sean A. Irvine
  */
 public class A031959 extends A031948 {

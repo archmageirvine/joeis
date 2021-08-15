@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038850 Numbers that are divisible by 8 and are differences between two cubes in at least one way.
+ * A038850 Multiples of 8 that are the difference of two positive cubes.
  * @author Sean A. Irvine
  */
 public class A038850 implements Sequence {

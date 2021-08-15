@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000090 E.g.f. exp((-x^3)/3)/(1-x).
+ * A000090 Expansion of e.g.f. exp((-x^3)/3)/(1-x).
  * @author Sean A. Irvine
  */
 public class A000090 implements Sequence {

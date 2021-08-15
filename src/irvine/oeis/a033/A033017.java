@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033017 Numbers n such that every run of digits of n in base 4 has length &gt;=2.
+ * A033017 Numbers whose base-4 expansion has no run of digits with length &lt; 2.
  * @author Sean A. Irvine
  */
 public class A033017 extends A033015 {

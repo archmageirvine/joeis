@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050260 Quiteprimes.
+ * A050260 Quiteprimes: numbers k such that |2*(k mod p) - p| &lt;= p + 1 - sqrt(p) for all primes p &lt;= sqrt(k).
  * @author Sean A. Irvine
  */
 public class A050260 implements Sequence {

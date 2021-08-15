@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a011.A011775;
 
 /**
- * A047630 Numbers n such that n | Sigma(n) * Phi(n) and n not congruent to 0 (mod 6).
+ * A047630 Numbers k that divide sigma(k) * phi(k) and are not divisible by 6.
  * @author Sean A. Irvine
  */
 public class A047630 extends A011775 {

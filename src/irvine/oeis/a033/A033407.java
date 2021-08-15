@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033407 [ 87/n ].
+ * A033407 a(n) = floor(87/n).
  * @author Sean A. Irvine
  */
 public class A033407 implements Sequence {

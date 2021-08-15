@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038849 Numbers that are divisible by 4 and are differences between two cubes in at least one way.
+ * A038849 Multiples of 4 that are the difference of two positive cubes.
  * @author Sean A. Irvine
  */
 public class A038849 implements Sequence {

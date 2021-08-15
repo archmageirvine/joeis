@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
 /**
- * A032595 Three consecutive palindromic primes (lower terms).
+ * A032595 First of three consecutive palindromes all of which are prime.
  * @author Sean A. Irvine
  */
 public class A032595 extends A002385 {

@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.math.z.Z;
 
 /**
- * A050160 T(n,k)=S(2n,n-1,k-1), 0&lt;=k&lt;=n, n &gt;= 0, array S as in A050157.
+ * A050160 T(n,k) = S(2n,n-1,k-1), 0 &lt;= k &lt;= n, n &gt;= 0, array S as in A050157.
  * @author Sean A. Irvine
  */
 public class A050160 extends A050145 {

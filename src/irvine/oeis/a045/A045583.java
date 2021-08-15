@@ -5,7 +5,7 @@ package irvine.oeis.a045;
 import irvine.oeis.a015.A015889;
 
 /**
- * A045583 Numbers n such that n | 10^n + 2^n.
+ * A045583 Numbers k that divide 10^k + 2^k.
  * @author Georg Fischer
  */
 public class A045583 extends A015889 {

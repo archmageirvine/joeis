@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049301 Numbers n such that n is a substring of 3^n.
+ * A049301 Numbers k such that k is a substring of 3^k.
  * @author Sean A. Irvine
  */
 public class A049301 implements Sequence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031951 Numbers in which the number of distinct base 6 digits is 2.
+ * A031951 Numbers with exactly two distinct base-6 digits.
  * @author Sean A. Irvine
  */
 public class A031951 extends A031948 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038864 Numbers n such that n ends with '9' and is difference between two cubes in at least one way.
+ * A038864 Numbers ending with '9' that are the difference of two positive cubes.
  * @author Sean A. Irvine
  */
 public class A038864 implements Sequence {

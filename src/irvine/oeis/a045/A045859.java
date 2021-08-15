@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 /**
- * A045859 Numbers k such that k^2 has initial digit '5'.
+ * A045859 Numbers whose square has initial digit '5'.
  * @author Sean A. Irvine
  */
 public class A045859 extends A045856 {

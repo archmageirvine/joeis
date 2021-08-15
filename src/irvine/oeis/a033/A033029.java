@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033029 Every run of digits of n in base 16 has length greater than or equal to 2.
+ * A033029 Numbers whose base-16 expansion has no run of digits with length &lt; 2.
  * @author Sean A. Irvine
  */
 public class A033029 extends A033015 {

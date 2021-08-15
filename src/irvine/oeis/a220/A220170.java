@@ -5,7 +5,7 @@ package irvine.oeis.a220;
 import irvine.oeis.a015.A015889;
 
 /**
- * A220170 Numbers n such that n | 5^n + 3^n + 2^n.
+ * A220170 Numbers k that divide 5^k + 3^k + 2^k.
  *
  * @author Georg Fischer
  */

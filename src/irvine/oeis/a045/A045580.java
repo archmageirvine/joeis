@@ -5,7 +5,7 @@ package irvine.oeis.a045;
 import irvine.oeis.a015.A015889;
 
 /**
- * A045580 Numbers n such that n | 7^n + 2^n.
+ * A045580 Numbers k that divide 7^k + 2^k.
  * @author Georg Fischer
  */
 public class A045580 extends A015889 {

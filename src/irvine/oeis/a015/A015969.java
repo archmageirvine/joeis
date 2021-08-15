@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 // DO NOT EDIT here!
 
 /**
- * A015969 Numbers n such that n | 16^n + 1.
+ * A015969 Numbers k that divide 16^k + 1.
  * @author Georg Fischer
  */
 public class A015969 extends A015889 {

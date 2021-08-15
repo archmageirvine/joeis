@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031953 n-th number in which the number of distinct base 8 digits is 2.
+ * A031953 Numbers with exactly two distinct base-8 digits.
  * @author Sean A. Irvine
  */
 public class A031953 extends A031948 {

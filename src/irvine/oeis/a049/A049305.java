@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049305 Numbers n such that n is a substring of 7^n.
+ * A049305 Numbers k such that k is a substring of 7^k.
  * @author Sean A. Irvine
  */
 public class A049305 implements Sequence {

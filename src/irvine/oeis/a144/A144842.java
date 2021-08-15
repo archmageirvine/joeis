@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a046.A046138;
 
 /**
- * A144842 Numbers n such that the three numbers n+3, n-3 and n+5 are all prime.
+ * A144842 Numbers k such that the three numbers k+3, k-3 and k+5 are all prime.
  * @author Georg Fischer
  */
 public class A144842 implements Sequence {

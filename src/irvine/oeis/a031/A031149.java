@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031149 Numbers n such that n^2 with last digit deleted is still a perfect square.
+ * A031149 Numbers whose square with its last digit deleted is also a square.
  * @author Sean A. Irvine
  */
 public class A031149 implements Sequence {

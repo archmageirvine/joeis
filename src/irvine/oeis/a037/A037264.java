@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A037264 Numbers n such that sum of reciprocals of digits is reciprocal of an integer.
+ * A037264 Numbers whose sum of reciprocals of digits is the reciprocal of an integer.
  * @author Sean A. Irvine
  */
 public class A037264 implements Sequence {

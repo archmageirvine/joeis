@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A343851 Decimal expansion of the solution to the Heilbronn triangle problem for seven points in a unit square.
- * Equation; 152x^3+12x^2-14x+1
+ * Equation: <code>152x^3+12x^2-14x+1</code>
  * @author Georg Fischer
  */
 public class A343851 extends DecimalExpansionSequence {

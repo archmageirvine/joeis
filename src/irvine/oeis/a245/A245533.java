@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A245533 Decimal expansion of sigma_3, a Tur\u00e1n's Power Sum Constant.
- * Equation; x^30-81*x^28+2613*x^26-43629*x^24+417429*x^22-2450985*x^20+9516137*x^18-26203659*x^16+53016480x^14-83714418*x^12+112601340*x^10-140002992*x^8+156204288*x^6-124361568*x^4+55427328*x^2-10077696
+ * Equation: <code>x^30-81*x^28+2613*x^26-43629*x^24+417429*x^22-2450985*x^20+9516137*x^18-26203659*x^16+53016480x^14-83714418*x^12+112601340*x^10-140002992*x^8+156204288*x^6-124361568*x^4+55427328*x^2-10077696</code>
  * @author Georg Fischer
  */
 public class A245533 extends DecimalExpansionSequence {

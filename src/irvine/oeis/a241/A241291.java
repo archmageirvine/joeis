@@ -9,7 +9,7 @@ import irvine.util.string.StringUtils;
 
 /**
  * A241291 Decimal expansion of 2^(2^(2^(2^(2^2)))) = 2^^6.
- * Usual DecimalExpansion, but throws <code>UnsupportedOperationException</code> 
+ * Usual <code>DecimalExpansion</code>, but throws <code>UnsupportedOperationException</code>
  * when the limit of number of terms {@link #NBRDGT} is reached.
  * @author Georg Fischer
  */

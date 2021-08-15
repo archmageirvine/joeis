@@ -13,11 +13,12 @@ import irvine.math.z.Z;
  */
 public class ExponentialRevertTransformSequence implements Sequence {
 
-  private final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private Polynomial<Q> mPoly = RING.empty();
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private final Polynomial<Q> mPoly = RING.empty();
   private final MemoryFactorial mF = new MemoryFactorial();
   private int mN = 0;
   private final Sequence mSeq;
+
   {
     mPoly.add(Q.ZERO);
   }

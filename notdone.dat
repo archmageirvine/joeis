@@ -1692,3 +1692,4 @@ A050259 Numbers n such that 2^n == 3 (mod n) [a lot of effort to do efficiently]
 A050276 Nonzero numerators in asymptotic expansion of the Riemann-Seigel Z-function.
 A050277 Integer part of denominators of nonzero terms in asymptotic expansion of the Riemann-Seigel Z-function.
 A050295 Number of strongly triple-free subsets of {1, 2, ..., n}.
+A050437 Dimension of space spanned by symmetric powers of n-dimensional standard representation of symmetric group S_n

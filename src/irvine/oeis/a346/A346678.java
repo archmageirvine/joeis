@@ -10,7 +10,6 @@ import irvine.oeis.Sequence;
  */
 public class A346678 implements Sequence {
 
-  protected Z mK;
   protected int mN;
 
   /**

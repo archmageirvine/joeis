@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a076.A076478;
 
 /**
- * A346301 allocated for Clark Kimberling.
+ * A346301 Positions of words in A076478 such that first digit = last digit.
  * @author Sean A. Irvine
  */
 public class A346301 extends A076478 {

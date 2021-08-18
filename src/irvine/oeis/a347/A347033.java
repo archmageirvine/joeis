@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A347033 allocated for Sean A. Irvine.
+ * A347033 Decimal expansion of (5*exp(4)-1)/8.
  * @author Sean A. Irvine
  */
 public class A347033 extends DecimalExpansionSequence {

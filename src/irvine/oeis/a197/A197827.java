@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197827 Decimal expansion of least x &gt; 0 having sin(2*x) = 2*Pi*sin(2*Pi*x).
+ * A197827 Decimal expansion of least x &gt; 0 having sin(2*x) = 2*Pi*sin(4*Pi*x).
  * Equation; sin(2*x)-2*Pi*sin(4*Pi*x)
  * @author Georg Fischer
  */

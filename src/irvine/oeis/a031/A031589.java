@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031589 Numbers k such that the continued fraction for sqrt(k) has even period and central term 91.
+ * A031589 that the continued fraction for sqrt(k) has even period and if the last term of the periodic part is deleted the central term is 91.
  * @author Sean A. Irvine
  */
 public class A031589 extends A031404 {

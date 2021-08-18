@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031663 Numbers k such that the continued fraction for sqrt(k) has odd period and central terms 75.
+ * A031663 Numbers k such that the continued fraction for sqrt(k) has odd period and if the last term of the periodic part is deleted the two central terms are both 75.
  * @author Sean A. Irvine
  */
 public class A031663 extends A031414 {

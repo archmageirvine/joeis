@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031404 Numbers k such that the continued fraction for sqrt(k) has even period 2*m and the m-th term is 1.
+ * A031404 Numbers k such that the continued fraction for sqrt(k) has even period 2*m and the m-th term of the periodic part is 1.
  * @author Sean A. Irvine
  */
 public class A031404 implements Sequence {

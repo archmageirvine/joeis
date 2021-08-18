@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a003.A003557;
 
 /**
- * A173557 a(n) = Product_{p-1 | p is prime and divisor of n}.
+ * A173557 a(n) = Product_{primes p dividing n} (p-1).
  * @author Georg Fischer
  */
 public class A173557 implements Sequence {

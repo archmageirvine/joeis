@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a076.A076478;
 
 /**
- * A346299 allocated for Clark Kimberling.
+ * A346299 Positions of words in A076478 in which #0's &lt; #1's.
  * @author Sean A. Irvine
  */
 public class A346299 extends A076478 {

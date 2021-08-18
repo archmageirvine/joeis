@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011866 [ n(n-1)/13 ].
+ * A011866 a(n) = floor(n*(n-1)/13).
  * @author Sean A. Irvine
  */
 public class A011866 implements Sequence {

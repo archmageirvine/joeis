@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A347058 allocated for Sean A. Irvine.
+ * A347058 Decimal expansion of (1 + tanh(Pi)) / 2.
  * @author Sean A. Irvine
  */
 public class A347058 extends DecimalExpansionSequence {

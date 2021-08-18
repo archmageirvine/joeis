@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a076.A076478;
 
 /**
- * A346304 allocated for Clark Kimberling.
+ * A346304 Positions of words in A076478 that start with 1 and end with 0.
  * @author Sean A. Irvine
  */
 public class A346304 extends A076478 {

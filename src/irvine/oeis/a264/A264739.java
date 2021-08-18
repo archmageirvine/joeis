@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a002.A002202;
 
 /**
- * A264739 Characteristic function of numbers in the range of Euler's totient function, cf. A000010.
+ * A264739 Characteristic function of A002202, the range of Euler's totient function A000010.
  * @author Georg Fischer
  */
 public class A264739 extends CharacteristicFunction {

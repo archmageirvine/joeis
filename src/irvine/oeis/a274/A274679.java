@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A274679 Numbers n such that 7*10^n + 33 is prime.
+ * A274679 Numbers m such that 7*10^m + 33 is prime.
  * @author Georg Fischer
  */
 public class A274679 extends PowerFactorPrimeSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
 
 /**
- * A031415 Numbers k such that the continued fraction for sqrt(k) has odd period and a pair of central terms both equal to 2.
+ * A031415 Numbers k such that the continued fraction for sqrt(k) has odd period and if the last term of the periodic part is deleted then there are a pair of central terms both equal to 2.
  * @author Sean A. Irvine
  */
 public class A031415 extends A031414 {

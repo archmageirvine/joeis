@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053781 Numbers n such that n divides sum of first n composite numbers.
+ * A053781 Numbers k that divide the sum of the first k composite numbers.
  * @author Sean A. Irvine
  */
 public class A053781 implements Sequence {

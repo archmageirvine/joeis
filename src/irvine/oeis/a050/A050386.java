@@ -4,7 +4,7 @@ import irvine.oeis.ExponentialRevertTransformSequence;
 import irvine.oeis.a008.A008683;
 
 /**
- * A050386 Exponential reversion of Moebius function A008693.
+ * A050386 Exponential reversion of Moebius function A008683.
  * @author Sean A. Irvine
  */
 public class A050386 extends ExponentialRevertTransformSequence {

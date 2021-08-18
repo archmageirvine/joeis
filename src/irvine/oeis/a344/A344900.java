@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000670;
 import irvine.util.array.DynamicArray;
 
 /**
- * A344900 allocated for Christoph B. Kassir.
+ * A344900 a(n) is the number of well-formed formulas (wffs) of zeroth-order logic containing n characters (see comments).
  * @author Sean A. Irvine
  */
 public class A344900 implements Sequence {

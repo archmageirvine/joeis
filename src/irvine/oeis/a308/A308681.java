@@ -4,7 +4,7 @@ package irvine.oeis.a308;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A308681 International telephone country prefix codes in numerical order.
+ * A308681 E.g.f.: (sec(x) - tan(x)) / sqrt(1 - 2*x).
  * @author Georg Fischer
  */
 

@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A274986 Numbers n such that (10^n + 23)/3 is prime.
+ * A274986 Numbers k such that (10^k + 23)/3 is prime.
  * @author Georg Fischer
  */
 public class A274986 extends PrimePositionSubsequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031414 Numbers k such that the continued fraction for sqrt(k) has odd period and a pair of central terms both equal to 1.
+ * A031414 Numbers k such that the continued fraction for sqrt(k) has odd period and if the last term of the periodic part is deleted then there are a pair of central terms both equal to 1.
  * @author Sean A. Irvine
  */
 public class A031414 implements Sequence {

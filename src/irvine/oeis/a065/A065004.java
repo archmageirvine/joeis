@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a095.A095425;
 
 /**
- * A065004 100 written in base n, or -1 if such a representation does not exist.
+ * A065004 100 written in base n, or -1 if the representation requires digits outside of 0 to 9.
  * @author Georg Fischer
  */
 public class A065004 extends A095425 {

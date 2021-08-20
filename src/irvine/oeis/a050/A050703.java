@@ -1,7 +1,6 @@
 package irvine.oeis.a050;
 
 import irvine.factor.factor.Cheetah;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -14,12 +13,7 @@ public class A050703 implements Sequence {
   private long mN = 1;
 
   protected Z f(final Z n) {
-    Z sum = n;
-    final FactorSequence fs = Cheetah.factor(n);
-    for (final Z p : fs.toZArray()) {
-      sum = sum.add(p.multiply(fs.getExponent(p)));
-    }
-    return sum;
+    return Cheetah.factor(n).sopfr().add(n);
   }
 
   protected int iterations() {

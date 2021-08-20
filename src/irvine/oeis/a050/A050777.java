@@ -12,7 +12,7 @@ public class A050777 extends A050703 {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
   private final Fast mPrime = new Fast();
-  private int mM = -1;
+  private int mM = 0;
   private long mN = 1;
 
   @Override

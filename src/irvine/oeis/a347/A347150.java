@@ -1,0 +1,17 @@
+package irvine.oeis.a347;
+
+import irvine.math.cr.CR;
+import irvine.math.cr.Zeta;
+import irvine.oeis.DecimalExpansionSequence;
+
+/**
+ * A347059 Decimal expansion of the Dirichlet eta function at 9.
+ * @author Sean A. Irvine
+ */
+public class A347150 extends DecimalExpansionSequence {
+
+  /** Construct the sequence. */
+  public A347150() {
+    super(Zeta.zeta(8).multiply(127).divide(CR.valueOf(128)));
+  }
+}

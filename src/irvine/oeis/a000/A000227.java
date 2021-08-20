@@ -1,16 +1,19 @@
 package irvine.oeis.a000;
 
-import irvine.math.q.Q;
+import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A000227 Nearest integer to e^n.
  * @author Sean A. Irvine
  */
-public class A000227 extends A000149 {
+public class A000227 implements Sequence {
+
+  private long mN = -1;
 
   @Override
   public Z next() {
-    return nextRational().add(Q.HALF).toZ();
+    return CR.valueOf(++mN).exp().round();
   }
 }

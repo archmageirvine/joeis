@@ -1,0 +1,17 @@
+package irvine.oeis.a347;
+
+import irvine.math.cr.CR;
+import irvine.oeis.DecimalExpansionSequence;
+
+/**
+ * A347081 allocated for Dumitru Damian.
+ * @author Sean A. Irvine
+ */
+public class A347081 extends DecimalExpansionSequence {
+
+  /** Construct the sequence. */
+  public A347081() {
+    super(CR.PI.pow(4).multiply(CR.FIVE.sqrt().multiply(45).add(CR.valueOf(91))).divide(CR.valueOf(18750)));
+  }
+}
+

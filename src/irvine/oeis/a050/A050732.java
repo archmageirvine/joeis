@@ -15,7 +15,7 @@ public class A050732 implements Sequence {
   public Z next() {
     outer:
     while (true) {
-      mT = mT == null ? Z.ONE: mT.multiply2();
+      mT = mT == null ? Z.ONE : mT.multiply2();
       Z r = Z.NEG_ONE;
       Z t = mT;
       do {

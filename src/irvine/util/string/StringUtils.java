@@ -221,4 +221,43 @@ public final class StringUtils {
     return true;
   }
 
+  /**
+   * Test if the supplied string is square free.
+   * @param s string to test
+   * @return true iff string is square free
+   */
+  public static boolean isSquareFreeWord(final String s) {
+    // Assumes that s[1] .. s[length - 1] is already square free
+    for (int k = 1; k <= s.length() / 2; ++k) {
+      if (s.substring(k).startsWith(s.substring(0, k))) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  private static boolean isMatch(final String v, int k, int j, final int l) {
+    for (int i = 0; i < l; ++i) {
+      if (v.charAt(--k) != v.charAt(--j)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
+   * Test if the supplied string is cube free.
+   * @param s string to test
+   * @return true iff string is cube free
+   */
+  public static boolean isCubeFreeWord(final String v) {
+    for (int k = 3; k <= v.length(); ++k) {
+      for (int j = 1; j <= k / 3; ++j) {
+        if (isMatch(v, k, k - j, 2 * j)) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
 }

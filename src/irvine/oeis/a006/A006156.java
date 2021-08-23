@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A006156 Number of ternary squarefree words of length n.
@@ -13,14 +14,8 @@ public class A006156 implements Sequence {
 
   protected ArrayList<String> mWords = new ArrayList<>();
 
-  private boolean isSquareFreeWord(final String s) {
-    // Assumes that s[1] .. s[length - 1] is already square free
-    for (int k = 1; k <= s.length() / 2; ++k) {
-      if (s.substring(k).startsWith(s.substring(0, k))) {
-        return false;
-      }
-    }
-    return true;
+  protected char maxLetter() {
+    return 'c';
   }
 
   @Override
@@ -30,17 +25,11 @@ public class A006156 implements Sequence {
     } else {
       final ArrayList<String> next = new ArrayList<>();
       for (final String w : mWords) {
-        final String a = "a" + w;
-        if (isSquareFreeWord(a)) {
-          next.add(a);
-        }
-        final String b = "b" + w;
-        if (isSquareFreeWord(b)) {
-          next.add(b);
-        }
-        final String c = "c" + w;
-        if (isSquareFreeWord(c)) {
-          next.add(c);
+        for (char letter = 'a'; letter <= maxLetter(); ++letter) {
+          final String a = letter + w;
+          if (StringUtils.isSquareFreeWord(a)) {
+            next.add(a);
+          }
         }
       }
       mWords = next;

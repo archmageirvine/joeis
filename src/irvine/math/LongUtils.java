@@ -268,6 +268,7 @@ public final class LongUtils {
     return b;
   }
 
+
   /**
    * Greatest common divisor of three integers.
    * @param a first number

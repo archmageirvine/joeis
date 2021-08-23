@@ -5,10 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051001 Sum of 4th powers of odd divisors of n.
+ * A051000 Sum of cubes of odd divisors of n.
  * @author Sean A. Irvine
  */
-public class A051001 implements Sequence {
+public class A051000 implements Sequence {
 
   private long mN = 0;
 
@@ -17,7 +17,7 @@ public class A051001 implements Sequence {
     Z sum = Z.ZERO;
     for (final Z d : Cheetah.factor(++mN).divisors()) {
       if (d.isOdd()) {
-        sum = sum.add(d.pow(4));
+        sum = sum.add(d.pow(3));
       }
     }
     return sum;

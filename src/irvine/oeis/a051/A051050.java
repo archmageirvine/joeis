@@ -33,7 +33,7 @@ public class A051050 implements Sequence {
   }
 
   private Q oddBinomial(final int n) {
-    final int m = (n + 1) /2;
+    final int m = (n + 1) / 2;
     return halfBinomial(m);
   }
 

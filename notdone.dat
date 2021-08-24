@@ -1698,3 +1698,6 @@ A050972 Smaller member of friendly pairs ordered by smallest maximal element, [h
 A050973 Larger member of friendly pairs ordered by smallest maximal element
 A050974 Number of binary arrangements on n X n array without three adjacent 1's in a row or column.
 A050996 Decimal expansion of Rényi's parking constant.
+A051056 Depends A048142.
+A051057 Depends A048142.
+A051058 Depends A048142.

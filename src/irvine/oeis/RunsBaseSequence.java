@@ -1,11 +1,23 @@
 package irvine.oeis;
+// 2021-08-24: with distinct RL, raise/fall, peak/pit, pieces, zigzag
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 import irvine.math.z.Z;
 
 /**
- * Runs in a given base.
+ * Runs in a given number base.
+ * This class computes a number of digit related properties of a number:
+ * <ul>
+ * <li>run lengths, distinct run lengths</li>
+ * <li>counts, increasing, decreasing</li>
+ * <li>raises and falls</li>
+ * <li>peaks and pits</li>
+ * <li>pieces</li>
+ * <li>up and down zig-zag pattern</li>
+ * </ul>
+ * All digit expansions use two digits for bases &gt; 10 (especially base 60).
  * @author Georg Fischer
  */
 public abstract class RunsBaseSequence implements Sequence {
@@ -85,6 +97,26 @@ public abstract class RunsBaseSequence implements Sequence {
   } // getRunCount
 
   /**
+   * Expand the number as a String of 1-2 digits.
+   * For bases &gt;= 11 the result always has even length (may with a leading "0").
+   * @param number number to be expanded
+   * @param base number base
+   * @return String of digits
+   */
+  protected String expand(final Z number, final int base) {
+    String digits;
+    if (base <= 10) { // one character per digit
+      digits = number.toString(base);
+    } else { // two characters per digit
+      digits = number.toTwoDigits(base);
+      if ((digits.length() & 1) == 1) { // odd
+        digits = "0" + digits; // make sure that there are pairs
+      }
+    } // > 10
+    return digits;
+  }
+  
+  /**
    * Get the run lengths from a number represented in some base,
    * from left to right in the String representation.
    * @param number get the run lengths from this number
@@ -122,7 +154,163 @@ public abstract class RunsBaseSequence implements Sequence {
     } // while
     runLengths[irl++] = count; // the last one
     return Arrays.copyOfRange(runLengths, 0, irl);
-  } // getRunLengths
+  }
+
+  /**
+   * Get the number of distinct run lengths from a number represented in some base.
+   * @param number get the run lengths from this number
+   * @param base represent in this base
+   * @return number of distinct run lengths
+   */
+  protected int getDistinctRunLengths(final Z number, final int base) {
+    final String digits = expand(number, base);
+    final int dlen = base <= 10 ? 1 : 2;
+    final HashMap<String, Integer> hash = new HashMap<String, Integer>(16);
+    int ipos = 0;
+    int idig = 0; 
+    String oldDig = digits.substring(idig, idig + dlen);
+    idig += dlen;
+    while (idig <= digits.length() - dlen) {
+      final String newDig = digits.substring(idig, idig + dlen);
+      if (!oldDig.equals(newDig)) { // new run starts
+        hash.put(digits.substring(ipos, idig), 1); // remember that run
+        ipos = idig;
+        oldDig = newDig;
+      }
+      idig += dlen;
+    } // while
+    hash.put(digits.substring(ipos, idig), 1);
+    return hash.size();
+  }
+  
+  /**
+   * Determines whether the number of raises is less, equal or greater than the number of falls (see A296712).
+   * @param number get the property from this number
+   * @param base represent in this base
+   * @return signum(#raises - #falls) = -1 , 0, 1 for &gt;, ==, &lt;
+   */
+  protected int signumRaisesFalls(final Z number, final int base) {
+    final String digits = expand(number, base);
+    final int dlen = base <= 10 ? 1 : 2;
+    final int[] counts = new int[2];
+    int idig = 0; 
+    String oldDig = digits.substring(idig, idig + dlen);
+    idig += dlen;
+    while (idig <= digits.length() - dlen) {
+      final String newDig = digits.substring(idig, idig + dlen);
+      final int signum = oldDig.compareTo(newDig);
+      if (signum < 0) { // is a raise
+        ++counts[0];
+      } else if (signum > 0) { // is a fall
+        ++counts[1];
+      } // else ignore
+      oldDig = newDig;
+      idig += dlen;
+    } // while
+    return Integer.compare(counts[0], counts[1]);
+  }
+  
+  /**
+   * Determines whether the number of pits is less, equal or greater than the number of peaks (see A296882).
+   * @param number get the property from this number
+   * @param base represent in this base
+   * @return signum(#pits - #peaks) = -1 , 0, 1 for &gt;, ==, &lt;
+   */
+  protected int signumPitsPeaks(final Z number, final int base) {
+    final String digits = expand(number, base);
+    final int dlen = base <= 10 ? 1 : 2;
+    int[] counts = new int[2];
+    int idig = 0; 
+    String oldDig = digits.substring(idig, idig + dlen);
+    idig += dlen;
+    if (idig <= digits.length() - dlen) {
+      String midDig = digits.substring(idig, idig + dlen);
+      idig += dlen;
+      while (idig <= digits.length() - dlen) {
+        final String newDig = digits.substring(idig, idig + dlen);
+        final int signum1 = oldDig.compareTo(midDig);
+        final int signum2 = midDig.compareTo(newDig);
+        if (signum1 > 0 && signum2 < 0) { // is a pit
+          ++counts[0];
+        } else if (signum1 < 0 && signum2 > 0) { // is a peak
+          ++counts[1];
+        } // else ignore
+        oldDig = midDig;
+        midDig = newDig;
+        idig += dlen;
+      } // while
+    } // midDig exists
+    return Integer.compare(counts[0], counts[1]);
+  }
+  
+  /**
+   * Get the number of pieces from a number represented in some base.
+   * A piece is a flat (0), ascent (1) or descent (-1), see A297030.
+   * A single digit is no piece.
+   * @param number get the run count from this number
+   * @param base represent in this base
+   * @return number of subsequences with identical digits
+   */
+  protected int getPieceCount(final Z number, final int base) {
+    final String digits = expand(number, base);
+    final int dlen = base <= 10 ? 1 : 2;
+    int count = 0;
+    int idig = 0; 
+    String oldDig = digits.substring(idig, idig + dlen); // 1st digit
+    idig += dlen;
+    if (idig <= digits.length() - dlen) { // for 2nd digit
+      String newDig = digits.substring(idig, idig + dlen);
+      idig += dlen;
+      int oldState = newDig.compareTo(oldDig); // 0 = flat, 1 = ascent, -1 = descent
+      oldState = oldState == 0 ? oldState : (oldState < 0 ? -1 : 1);
+      ++count; // 1st piece
+      while (idig <= digits.length() - dlen) { // for 3rd and following 
+        oldDig = newDig;
+        newDig = digits.substring(idig, idig + dlen);
+        idig += dlen;
+        int newState = newDig.compareTo(oldDig);
+        newState = newState == 0 ? newState : (newState < 0 ? -1 : 1);
+        if (newState != oldState) {
+          ++count;
+          oldState = newState;
+        }
+      } // while
+      // >= 2 digits
+    } // else only 1 digit - none
+    return count;
+  }
+
+  /**
+   * Determines whether the digits of the number follow a 
+   * zig-zag-up (1), zig-zag-down (-1) or no zig-zag (0) pattern (see A297146).
+   * @param number get the property from this number
+   * @param base represent in this base
+   * @return 1, -1 or 0
+   */
+  protected int signumZigZag(final Z number, final int base) {
+    final String digits = expand(number, base);
+    final int dlen = base <= 10 ? 1 : 2;
+    int result = 0; // assume none
+    int idig = 0; 
+    String oldDig = digits.substring(idig, idig + dlen);
+    idig += dlen;
+    if (idig <= digits.length() - dlen) { // >= 2 digits
+      String newDig = digits.substring(idig, idig + dlen);
+      idig += dlen;
+      final int oldState = newDig.compareTo(oldDig); // 0 = flat, 1 = ascent, -1 = descent
+      result = oldState == 0 ? oldState : (oldState < 0 ? -1 : 1); // 1st pair -> up / down
+      while (result != 0 && idig <= digits.length() - dlen) { // check that no following is flat
+        oldDig = newDig;
+        newDig = digits.substring(idig, idig + dlen);
+        idig += dlen;
+        if (newDig.compareTo(oldDig) == 0) {
+          result = 0;
+        }
+      } // while
+      // >= 2 digits
+    } // else only 1 digit - none
+    return result;
+  }
   
   /**
    * Determine whether an array contains increasing lengths only
@@ -148,7 +336,7 @@ public abstract class RunsBaseSequence implements Sequence {
     } // while i
     // System.out.println(" hasIncreasingRunLengths=" + result);
     return result;
-  } // hasIncreasingRunLengths
+  }
   
   /**
    * Determine whether an array contains decreasing lengths only
@@ -165,7 +353,7 @@ public abstract class RunsBaseSequence implements Sequence {
       --i;
     } // while i
     return true;
-  } // hasDecreasingRunLengths
+  }
 
   /**
    * Determine whether the number of runs in a number represented 
@@ -202,7 +390,7 @@ public abstract class RunsBaseSequence implements Sequence {
       idig -= dlen;
     } // while
     return busy && count == value;
-  } // hasRunCount
+  }
 
   /**
    * Get the number of digits in the base representation of number.
@@ -236,18 +424,7 @@ public abstract class RunsBaseSequence implements Sequence {
       idig -= dlen;
     } // while
     return count;
-  } // getDigitCount
-
-//  /**
-//   * Get some property of the next number.
-//   * This method is an example only.
-//   * It is typically overwritten in order to return some other property.
-//   * @return property of the next number
-//   */
-//  protected Z getNextProperty() {
-//    mK = mK.add(Z.ONE);
-//    return getProperty();
-//  } // getNextProperty
+  }
 
   /**
    * Get the next term of a sequence which fulfills some property.
@@ -267,7 +444,7 @@ public abstract class RunsBaseSequence implements Sequence {
       throw new IllegalArgumentException("More than 10^8 iterations in RunsBaseSequence.getNextWithProperty()");
     }
     return mK;
-  } // getNextWithProperty
+  }
 
   /**
    * Get some property of the current number.
@@ -277,7 +454,7 @@ public abstract class RunsBaseSequence implements Sequence {
    */
   protected Z getProperty() {
     return mK;
-  } // getProperty
+  }
 
   /**
    * Determine whether the current number has the property which includes it in the sequence.
@@ -287,7 +464,7 @@ public abstract class RunsBaseSequence implements Sequence {
    */
   protected boolean isOk() {
     return true;
-  } // isOk
+  }
 
   /**
    * Get the index of the current term of the sequence.
@@ -295,5 +472,5 @@ public abstract class RunsBaseSequence implements Sequence {
    */
   protected int getIndex() {
     return mN;
-  } // getIndex
+  }
 } // RunsBaseSequence

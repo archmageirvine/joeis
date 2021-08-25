@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A051116 implements Sequence {
 
-  private final int[][] C = {
+  private static final int[][] C = {
     {1, 256},
     {-56, 192},
     {336, 160},

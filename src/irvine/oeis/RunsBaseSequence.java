@@ -219,7 +219,7 @@ public abstract class RunsBaseSequence implements Sequence {
   protected int signumPitsPeaks(final Z number, final int base) {
     final String digits = expand(number, base);
     final int dlen = base <= 10 ? 1 : 2;
-    int[] counts = new int[2];
+    final int[] counts = new int[2];
     int idig = 0; 
     String oldDig = digits.substring(idig, idig + dlen);
     idig += dlen;

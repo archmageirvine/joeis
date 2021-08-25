@@ -13,6 +13,10 @@ public class A051141 extends MemoryFunction2<Long, Z> implements Sequence {
   private long mN = 0;
   private long mM = 0;
 
+  protected long multiplier() {
+    return 3;
+  }
+
   @Override
   protected Z compute(final Long n, final Long m) {
     if (m == 0) {
@@ -21,7 +25,7 @@ public class A051141 extends MemoryFunction2<Long, Z> implements Sequence {
     if (m > n) {
       return Z.ZERO;
     }
-    return get(n - 1, m - 1).subtract(get(n - 1, m).multiply(3 * (n - 1)));
+    return get(n - 1, m - 1).subtract(get(n - 1, m).multiply(multiplier() * (n - 1)));
   }
 
   @Override

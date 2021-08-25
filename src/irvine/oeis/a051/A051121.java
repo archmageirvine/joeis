@@ -1,4 +1,4 @@
-package irvine.oeis.a001;
+package irvine.oeis.a051;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -8,13 +8,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001356 Dates at fortnightly intervals from Jan 01 in the Julian calendar.
+ * A051121 Dates at fortnightly intervals starting on Jan 01 of a leap year in the Julian calendar.
  * @author Sean A. Irvine
  */
-public class A001356 implements Sequence {
+public class A051121 implements Sequence {
 
   // Month is zero based
-  private final GregorianCalendar mCalendar = new GregorianCalendar(4, Calendar.DECEMBER, 18, 0, 0, 1);
+  private final GregorianCalendar mCalendar = new GregorianCalendar(7, Calendar.DECEMBER, 18, 0, 0, 1);
   {
     mCalendar.setGregorianChange(new Date(Long.MAX_VALUE));
   }

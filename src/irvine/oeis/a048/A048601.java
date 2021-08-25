@@ -15,7 +15,7 @@ public class A048601 implements Sequence {
   private int mN = 0;
   private int mM = 0;
 
-  private Z t(final int n, final int k) {
+  protected Z t(final int n, final int k) {
     Z prod = Binomial.binomial(n + k - 2, k - 1).multiply(mF.factorial(2 * n - k - 1).divide(mF.factorial(n - k)));
     for (int j = 0; j <= n - 2; ++j) {
       prod = prod.multiply(mF.factorial(3 * j + 1));

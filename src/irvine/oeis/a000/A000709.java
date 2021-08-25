@@ -1,7 +1,6 @@
 package irvine.oeis.a000;
 
-import org.apfloat.Apfloat;
-
+import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -11,17 +10,41 @@ import irvine.oeis.Sequence;
  */
 public class A000709 implements Sequence {
 
-  private static final int PRECISION = 500;
-  private static final Apfloat HALF = new Apfloat("0.5", PRECISION);
-
   private int mN = -1;
+
+  /**
+   * Compute the integral <code>int_1^(2^k) du/sqrt(ln(u))</code>.
+   * Uses the series <code>sum_{m=1}^infty (2/(2m-1)(m-1)!)(k*ln(2))^((2m-1)/2)</code>.
+   * @param k parameter
+   * @return value of integral
+   */
+  static CR sqrtLnInt2(final int k) {
+    final CR aSqrt = CR.TWO.log().multiply(k).sqrt();
+    return new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        Z sum = Z.ZERO;
+        int m = 0;
+        Z f = Z.ONE;
+        while (true) {
+          if (m > 1) {
+            f = f.multiply(m);
+          }
+          final int n = 2 * ++m - 1;
+          final Z den = f.multiply(n);
+          final Z t = aSqrt.pow(n).multiply(CR.TWO).getApprox(precision).divide(den);
+          if (t.isZero()) {
+            break;
+          }
+          sum = sum.add(t);
+        }
+        return sum;
+      }
+    };
+  }
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.ONE;
-    }
-    final Apfloat u = A000691.sqrtLnInt(mN);
-    return Z.valueOf(u.add(HALF).truncate().toBigInteger());
+    return ++mN == 0 ? Z.ONE : sqrtLnInt2(mN).round();
   }
 }

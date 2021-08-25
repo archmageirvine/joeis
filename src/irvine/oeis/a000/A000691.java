@@ -24,6 +24,7 @@ public class A000691 implements Sequence {
   private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
   private static final Apfloat B = new Apfloat(A000690.C0.substring(0, PRECISION));
 
+  // see A000709 for a CR implementation of this integral
   /**
    * Compute an approximation to the integral <code>int_1^(2^k) du/sqrt(ln(u))</code>.
    * Uses the series <code>sum_{m=1}^infty (2/(2m-1)(m-1)!)(k*ln(2))^((2m-1)/2)</code>.

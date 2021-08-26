@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008831 Log_2 (n) mod 13.
+ * A008831 Discrete logarithm of n to the base 2 modulo 13.
  * @author Sean A. Irvine
  */
 public class A008831 extends FiniteSequence {

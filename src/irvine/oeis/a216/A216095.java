@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A216095 2^n mod 10000.
+ * A216095 a(n) = 2^n mod 10000.
  * @author Georg Fischer
  */
 public class A216095 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 /**
- * A037406 Every base 8 digit of n is a base 10 digit of n.
+ * A037406 Numbers k such that every base-8 digit of k is a base-10 digit of k.
  * @author Georg Fischer
  */
 public class A037406 extends A037372 {

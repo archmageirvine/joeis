@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036229 Smallest n-digit prime containing only digits 1 or 2.
+ * A036229 Smallest n-digit prime containing only digits 1 or 2 or -1 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A036229 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015732 Even numbers n such that d(n) | phi(n).
+ * A015732 Even numbers k such that d(k) | phi(k).
  * @author Sean A. Irvine
  */
 public class A015732 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A347081 allocated for Dumitru Damian.
+ * A347081 Decimal expansion of (91 + 45*sqrt(5)) * Pi^4 / 18750.
  * @author Sean A. Irvine
  */
 public class A347081 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054884 Closed walks of length n along the edges of an icosahedron based at a vertex.
+ * A054884 Number of closed walks of length n along the edges of an icosahedron based at a vertex.
  * @author Georg Fischer
  */
 public class A054884 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000422;
 
 /**
- * A050688 Numbers n such that A050677(n) is nonsquarefree.
+ * A050688 Numbers k such that A000422(k) is nonsquarefree.
  * @author Sean A. Irvine
  */
 public class A050688 extends A000422 {

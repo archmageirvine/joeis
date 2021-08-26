@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000201;
 
 /**
- * A185615 Numbers n such that n divides A000201(n)^m for some integer m&gt;0, where A000201 is the lower Wythoff sequence.
+ * A185615 Numbers k that divide A000201(k)^m for some integer m &gt; 0, where A000201 is the lower Wythoff sequence.
  * @author Sean A. Irvine
  */
 public class A185615 extends A000201 {

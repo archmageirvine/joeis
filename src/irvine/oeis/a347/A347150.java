@@ -5,7 +5,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A347059 Decimal expansion of the Dirichlet eta function at 9.
+ * A347150 Decimal expansion of the Dirichlet eta function at 8.
  * @author Sean A. Irvine
  */
 public class A347150 extends DecimalExpansionSequence {

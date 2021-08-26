@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A346451 Decimal expansion of 23 * Pi^4 / (1296 * sqrt(3)).
+ * A347166 Decimal expansion of (gamma + log(2)) * Pi / 2.
  * @author Sean A. Irvine
  */
 public class A347166 extends DecimalExpansionSequence {

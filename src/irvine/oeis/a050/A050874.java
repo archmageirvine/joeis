@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050874 Binary numbers d(1)...d(j) such that d(i)&lt;&gt;d(j+1-i) for all but 6 i.
+ * A050874 Binary numbers d(1)...d(j) such that d(i) = d(j+1-i) for all but 6 values of i.
  * @author Sean A. Irvine
  */
 public class A050874 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043007 n-th base 5 palindrome that starts with 2.
+ * A043007 Base-5 palindromes that start with 2.
  * @author Georg Fischer
  */
 public class A043007 extends A043001 {

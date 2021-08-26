@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069497 Triangular numbers of the form 6k.
+ * A069497 Triangular numbers of the form 6*k.
  * @author Georg Fischer
  */
 public class A069497 extends LinearRecurrence {

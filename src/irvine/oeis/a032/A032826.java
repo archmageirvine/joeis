@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032826 Numbers whose set of base 14 digits is {1,4}.
+ * A032826 Numbers whose set of base-14 digits is {1,4}.
  * @author Sean A. Irvine
  */
 public class A032826 extends MemorySequence {

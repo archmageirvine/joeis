@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043025 n-th base 8 palindrome that starts with 5.
+ * A043025 Base-8 palindromes that start with 5.
  * @author Georg Fischer
  */
 public class A043025 extends A043001 {

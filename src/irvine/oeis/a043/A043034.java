@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043034 n-th base 9 palindrome that starts with 7.
+ * A043034 Base-9 palindromes that start with 7.
  * @author Georg Fischer
  */
 public class A043034 extends A043001 {

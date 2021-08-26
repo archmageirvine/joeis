@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043012 n-th base 6 palindrome that starts with 3.
+ * A043012 Base-6 palindromes that start with 3.
  * @author Georg Fischer
  */
 public class A043012 extends A043001 {

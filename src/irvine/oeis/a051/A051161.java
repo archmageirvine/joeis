@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A051161 a(n) is the exponent of n-th prime in order (A003131) of Monster simple group.
+ * A051161 a(n) is the exponent of n-th prime in the order (A003131) of the Monster simple group.
  * @author Georg Fischer
  */
 public class A051161 extends PaddingSequence {

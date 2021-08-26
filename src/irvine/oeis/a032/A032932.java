@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032932 Numbers whose set of base 12 digits is {1,2}.
+ * A032932 Numbers whose set of base-12 digits is {1,2}.
  * @author Sean A. Irvine
  */
 public class A032932 extends MemorySequence {

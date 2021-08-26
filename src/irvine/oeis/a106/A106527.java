@@ -5,7 +5,7 @@ package irvine.oeis.a106;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A106527 Values of a in a^2 - 289 = 2*b^2.
+ * A106527 Values of x in x^2 - 289 = 2*y^2.
  * Recurrence: a(n)=6*a(n-3)-a(n-6)
  * @author Georg Fischer
  */

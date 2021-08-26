@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032832 Numbers whose set of base 8 digits is {3,4}.
+ * A032832 Numbers whose set of base-8 digits is {3,4}.
  * @author Sean A. Irvine
  */
 public class A032832 extends MemorySequence {

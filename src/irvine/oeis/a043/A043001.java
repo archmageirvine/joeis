@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043001 n-th base 3 palindrome that starts with 1.
+ * A043001 Base-3 palindromes that start with 1.
  * @author Georg Fischer
  */
 public class A043001 implements Sequence {

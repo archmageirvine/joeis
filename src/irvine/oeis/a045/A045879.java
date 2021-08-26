@@ -10,7 +10,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A045879 Numbers n such that n^2 contains the same digits as some other square.
+ * A045879 Numbers whose square contains the same digits as some other square.
  * @author Sean A. Irvine
  */
 public class A045879 implements Sequence {

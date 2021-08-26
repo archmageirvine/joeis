@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043003 n-th base 4 palindrome that starts with 1.
+ * A043003 Base-4 palindromes that start with 1.
  * @author Georg Fischer
  */
 public class A043003 extends A043001 {

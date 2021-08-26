@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032988 If d,e are consecutive digits of n in base 6, then |d-e|&gt;=4.
+ * A032988 Numbers k such that if d,e are consecutive digits of k in base 6, then |d-e| &gt;= 4.
  * @author Sean A. Irvine
  */
 public class A032988 implements Sequence {

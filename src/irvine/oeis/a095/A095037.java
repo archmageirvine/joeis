@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A095037 The (v,k,lambda)=(23,11,5) cyclic difference set.
+ * A095037 An example of a (v,k,lambda)=(23,11,5) cyclic difference set.
  * @author Georg Fischer
  */
 public class A095037 extends FiniteSequence {

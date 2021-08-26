@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A237695 Maximum length of a +/- 1 sequence of discrepancy n.
+ * A237695 Maximum length of a +- 1 sequence of discrepancy n.
  *
  * @author Georg Fischer
  */

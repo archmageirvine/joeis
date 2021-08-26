@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a019.A019337;
 
 /**
- * A071565 Numbers n such that x^n + x^(n-1) + x^(n-2) + ... + x + 1 is irreducible over GF(7).
+ * A071565 Numbers k such that x^k + x^(k-1) + x^(k-2) + ... + x + 1 is irreducible over GF(7).
  * @author Georg Fischer
  */
 public class A071565 implements Sequence {

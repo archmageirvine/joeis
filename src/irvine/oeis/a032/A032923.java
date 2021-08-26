@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032923 Numbers whose set of base 16 digits is {1,3}.
+ * A032923 Numbers whose set of base-16 digits is {1,3}.
  * @author Sean A. Irvine
  */
 public class A032923 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043047 a(n)=(s(n)+3)/4, where s(n)=n-th base 4 palindrome that starts with 1.
+ * A043047 a(n) = (s(n)+3)/4, where s(n) is the n-th base-4 palindrome that starts with 1 (A043003).
  * @author Georg Fischer
  */
 public class A043047 extends A043045 {

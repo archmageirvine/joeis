@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043035 n-th base 9 palindrome that starts with 8.
+ * A043035 Base-9 palindromes that start with 8.
  * @author Georg Fischer
  */
 public class A043035 extends A043001 {

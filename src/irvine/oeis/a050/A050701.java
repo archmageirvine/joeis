@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050701 If k and its reverse are different and have same number of prime factors, then the larger of them is a term of the sequence.
+ * A050701 If composite k and its reverse are different and have same number of prime factors, then the larger of them is a term of the sequence.
  * @author Sean A. Irvine
  */
 public class A050701 implements Sequence {

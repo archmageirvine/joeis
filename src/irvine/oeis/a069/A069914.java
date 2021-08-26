@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007429;
 import irvine.oeis.a060.A060640;
 
 /**
- * A069914 Sum_{d|n} (d-1)*sigma(n/d).
+ * A069914 a(n) = Sum_{d|n} (d-1)*sigma(n/d).
  * @author Georg Fischer
  */
 public class A069914 implements Sequence {

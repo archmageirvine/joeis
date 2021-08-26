@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A347221.
+ * A347221 allocated for Vo Hoang Anh.
  * @author Sean A. Irvine
  */
 public class A347221 implements Sequence {

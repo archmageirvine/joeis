@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043021 n-th base 8 palindrome that starts with 1.
+ * A043021 Base-8 palindromes that start with 1.
  * @author Georg Fischer
  */
 public class A043021 extends A043001 {

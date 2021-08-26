@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145018 a(1) = 4; then add 1 to the first number, then 2, then 3 and so on.
+ * A145018 a(n) = (n^2 - n + 8)/2.
  * @author Sean A. Irvine
  */
 public class A145018 extends LinearRecurrence {

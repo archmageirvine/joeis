@@ -1,7 +1,7 @@
 package irvine.oeis.a347;
 
 /**
- * A347218.
+ * A347218 Decimal expansion of Sum_{k=2..8} zeta(k).
  * @author Sean A. Irvine
  */
 public class A347218 extends A347213 {

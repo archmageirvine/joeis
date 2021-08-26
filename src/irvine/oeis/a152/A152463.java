@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A152463 Numbers n with the property that 4 + 5n^3 is a square.
+ * A152463 Numbers k such that 4 + 5*k^3 is a square.
  * @author Georg Fischer
  */
 public class A152463 extends FiniteSequence {

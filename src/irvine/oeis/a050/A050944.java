@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050944 Four consecutive integers with decreasing values of sigma start at these numbers; i.e., sigma(x) &gt; sigma(x+1) &gt; sigma(x+2) &gt; sigma(x+3).
+ * A050944 Numbers k such that sigma(k) &gt; sigma(k+1) &gt; sigma(k+2) &gt; sigma(k+3).
  * @author Sean A. Irvine
  */
 public class A050944 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043016 Base 7 palindromes that starts with 2.
+ * A043016 Base-7 palindromes that start with 2.
  * @author Georg Fischer
  */
 public class A043016 extends A043001 {

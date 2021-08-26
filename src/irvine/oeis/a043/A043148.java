@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043148 Numbers n such that 3 and 6 occur juxtaposed in the base 7 representation of n but not of n-1.
+ * A043148 Numbers k such that 3 and 6 occur juxtaposed in the base-7 representation of k but not of k-1.
  * @author Georg Fischer
  */
 public class A043148 implements Sequence {

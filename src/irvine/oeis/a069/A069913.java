@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007425;
 import irvine.oeis.a007.A007429;
 
 /**
- * A069913 Sum_{d|n} (d-1)*tau(n/d).
+ * A069913 a(n) = Sum_{d|n} (d-1)*tau(n/d).
  * @author Georg Fischer
  */
 public class A069913 implements Sequence {

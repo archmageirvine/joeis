@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033022 n-th number k such that every run of digits of k in base 9 has length &gt;=2.
+ * A033022 Numbers whose base-9 expansion has no run of digits with length &lt; 2.
  * @author Sean A. Irvine
  */
 public class A033022 extends A033015 {

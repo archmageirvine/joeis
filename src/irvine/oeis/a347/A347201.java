@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A347199.
+ * A347201 Decimal expansion of sin(sqrt(2)).
  * @author Sean A. Irvine
  */
 public class A347201 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043227 Numbers n such that 1 and 4 occur juxtaposed in the base 10 representation of n but not of n-1.
+ * A043227 Numbers k such that 1 and 4 occur juxtaposed in the base-10 representation of k but not of k-1.
  * @author Georg Fischer
  */
 public class A043227 implements Sequence {

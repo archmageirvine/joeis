@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A033283 n-th number whose maximal base 10 run length is 2.
+ * A033283 Numbers whose maximal base-10 run length is 2.
  * @author Sean A. Irvine
  */
 public class A033283 implements Sequence {

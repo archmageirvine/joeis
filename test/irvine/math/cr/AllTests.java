@@ -19,6 +19,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(AgmTest.class);
     suite.addTestSuite(AssumedCrZTest.class);
     suite.addTestSuite(AtanTest.class);
+    suite.addTestSuite(BesselTest.class);
     suite.addTestSuite(CompositionTest.class);
     suite.addTestSuite(ComputableRealsTest.class);
     suite.addTestSuite(ConvergentsTest.class);
@@ -43,6 +44,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PrescaledErfTest.class);
     suite.addTestSuite(PrescaledExpTest.class);
     suite.addTestSuite(PrescaledLnTest.class);
+    suite.addTestSuite(PsiTest.class);
     suite.addTestSuite(SelectTest.class);
     suite.addTestSuite(ShiftTest.class);
     suite.addTestSuite(SinTest.class);

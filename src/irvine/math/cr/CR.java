@@ -1223,7 +1223,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return <code>BesselJ0()</code>
    */
   public CR besselJ0() {
-    return new PrescaledBesselJ0(this);
+    return Bessel.besselJ0(this);
   }
 
   /**
@@ -1231,7 +1231,33 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return <code>BesselI0()</code>
    */
   public CR besselI0() {
-    return new PrescaledBesselI0(this);
+    return Bessel.besselI0(this);
+  }
+
+  /**
+   * The Bessel <code>I_v(this)</code> function of this real number.
+   * @param v index
+   * @return <code>BesselI_v(this)</code>
+   */
+  public CR besselI(final int v) {
+    return Bessel.besselI(v, this);
+  }
+
+  /**
+   * The Bessel <code>K0</code> function of this real number.
+   * @return <code>BesselK0()</code>
+   */
+  public CR besselK0() {
+    return Bessel.besselK0(this);
+  }
+
+  /**
+   * The Bessel <code>K_v(this)</code> function of this real number.
+   * @param v index
+   * @return <code>BesselK_v(this)</code>
+   */
+  public CR besselK(final int v) {
+    return Bessel.besselK(v, this);
   }
 
   /**
@@ -1239,6 +1265,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return <code>BesselY0()</code>
    */
   public CR besselY0() {
-    return new PrescaledBesselY0(this).add(this.divide(CR.TWO).log().add(GAMMA).multiply(this.besselJ0())).multiply(TWO).divide(PI);
+    return Bessel.besselY0(this);
   }
+
 }

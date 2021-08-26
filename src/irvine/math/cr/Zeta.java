@@ -11,7 +11,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * Compute zeta function.
+ * Compute the zeta function.
  * @author Sean A. Irvine
  */
 public final class Zeta {

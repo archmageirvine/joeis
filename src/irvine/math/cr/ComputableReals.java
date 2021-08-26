@@ -243,6 +243,15 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
     return n.ei();
   }
 
+  /**
+   * Compute the psi function at an integer.
+   * @param n integer
+   * @return psi
+   */
+  public CR psi(final int n) {
+    return Psi.psi(n);
+  }
+
   @Override
   public Z characteristic() {
     return Z.ZERO;

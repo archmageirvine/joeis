@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000720;
 import irvine.oeis.a049.A049575;
 
 /**
- * A051142.
+ * A051143 Numbers k such that the k-th prime is a partition number.
  * @author Sean A. Irvine
  */
 public class A051143 extends NestedSequence {

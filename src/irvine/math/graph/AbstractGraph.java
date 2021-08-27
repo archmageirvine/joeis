@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
+import irvine.math.IntegerUtils;
+
 /**
  * Implementation of common graph functions.
  * @author Sean A. Irvine
@@ -321,4 +323,36 @@ public abstract class AbstractGraph implements Graph {
     return components;
   }
 
+  @Override
+  public int[] distanceVector(final int v) {
+    final int[] d = new int[order()];
+    final int[] queue = new int[order()];
+    Arrays.fill(d, -1);
+    d[v] = 0;
+    queue[0] = v;
+    for (int next = 0, free = 0; next <= free; ++next) {
+      final int u = queue[next];
+      for (int w = nextVertex(u, -1); w >= 0; w = nextVertex(u, w)) {
+        if (d[w] < 0) {
+          d[w] = d[u] + 1;
+          queue[++free] = w;
+        }
+      }
+    }
+    return d;
+  }
+
+  @Override
+  public long wienerIndex() {
+    long sum = 0;
+    for (int v = 0; v < order(); ++v) {
+      sum += IntegerUtils.sum(distanceVector(v));
+    }
+    return sum;
+  }
+
+  @Override
+  public Graph lineGraph() {
+    return new LineGraphCreator(this).getLineGraph();
+  }
 }

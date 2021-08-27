@@ -1704,3 +1704,4 @@ A051058 Depends A048142.
 A051070 a(n) is the n-th term in sequence A_n, respecting the offset, or a(n) = -1 if A_n has fewer than n terms [requires knowing offset of sequences!]
 A051103 Numerator of a certain Selberg integral [hypergeometric].
 A051104 Denominator of a certain Selberg integral [hypergeometric].
+A051174 H*-palindromic trees with n nodes [insufficient detail, email sent]

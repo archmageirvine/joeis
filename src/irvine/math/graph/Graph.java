@@ -175,4 +175,24 @@ public interface Graph {
    * @return true iff the graph is minimally 2-edge-connected
    */
   boolean isMinimallyTwoEdgeConnected();
+
+  /**
+   * Return a vector containing the minimum distances from a given vertex to
+   * every other vertex, with -1 used to indicate no connection.
+   * @param v vertex
+   * @return distances
+   */
+  int[] distanceVector(final int v);
+
+  /**
+   * Return the Wiener index of the graph (sum of minimum distances between very pair of vertices).
+   * @return Wiener index
+   */
+  long wienerIndex();
+
+  /**
+   * Return the line graph corresponding to this graph.
+   * @return line graph
+   */
+  Graph lineGraph();
 }

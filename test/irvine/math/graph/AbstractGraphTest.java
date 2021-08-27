@@ -1,5 +1,7 @@
 package irvine.math.graph;
 
+import java.util.Arrays;
+
 import junit.framework.TestCase;
 
 /**
@@ -125,6 +127,27 @@ public abstract class AbstractGraphTest extends TestCase {
     g.addEdge(0, 3);
     g.addEdge(2, 5);
     assertEquals(4, g.girth());
+  }
+
+  public void testDistanceVector1() {
+    final Graph g = create(3);
+    g.addEdge(0, 1);
+    g.addEdge(1, 2);
+    assertEquals("[0, 1, 2]", Arrays.toString(g.distanceVector(0)));
+    assertEquals("[1, 0, 1]", Arrays.toString(g.distanceVector(1)));
+    assertEquals("[2, 1, 0]", Arrays.toString(g.distanceVector(2)));
+    assertEquals(8, g.wienerIndex());
+  }
+
+  public void testDistanceVector2() {
+    final Graph g = create(5);
+    g.addEdge(0, 1);
+    g.addEdge(1, 2);
+    g.addEdge(2, 3);
+    g.addEdge(3, 4);
+    g.addEdge(4, 0);
+    assertEquals("[0, 1, 2, 2, 1]", Arrays.toString(g.distanceVector(0)));
+    assertEquals(30, g.wienerIndex());
   }
 
 }

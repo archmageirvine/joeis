@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.PositionSequence;
 
 /**
- * A190695 Positions of 1&apos;s in A190693.
+ * A190695 Positions of 1's in A190693.
  * @author Georg Fischer
  */
 public class A190695 extends PositionSequence {

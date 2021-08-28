@@ -14,8 +14,8 @@ public class A184486 extends FloorSequence {
     super(1);
   }
 
-  protected Z evalCR(final long mN) {
-    return CR.EIGHT.multiply(CR.valueOf(mN)).subtract(CR.FIVE.sqrt()).add(CR.ONE).divide(CR.TWO.multiply(CR.FIVE.sqrt()).add(CR.TWO)).floor();
+  protected Z evalCR(final long n) {
+    return CR.EIGHT.multiply(CR.valueOf(n)).subtract(CR.FIVE.sqrt()).add(CR.ONE).divide(CR.TWO.multiply(CR.FIVE.sqrt()).add(CR.TWO)).floor();
   }
 
 }

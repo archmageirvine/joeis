@@ -18,8 +18,8 @@ public class A195910 extends FloorSequence {
     super(0);
   }
 
-  protected Z evalCR(final long mN) {
-    return REALS.tan(CR.valueOf(mN)).ceil();
+  protected Z evalCR(final long n) {
+    return REALS.tan(CR.valueOf(n)).ceil();
   }
 
 }

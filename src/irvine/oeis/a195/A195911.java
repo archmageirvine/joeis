@@ -18,8 +18,8 @@ public class A195911 extends FloorSequence {
     super(1);
   }
 
-  protected Z evalCR(final long mN) {
-    return REALS.cot(CR.valueOf(mN)).ceil();
+  protected Z evalCR(final long n) {
+    return REALS.cot(CR.valueOf(n)).ceil();
   }
 
 }

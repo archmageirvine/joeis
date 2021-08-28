@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A051175.
+ * A051175 Number of trees T of order n such that W(T) = W(L(L(T))) where W(G) and L(G) are the Wiener index and line graph of a graph G.
  * @author Sean A. Irvine
  */
 public class A051175 extends ParallelGenerateGraphsSequence {

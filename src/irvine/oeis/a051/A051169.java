@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051152.
+ * A051169 Smallest number m such that 2*m - p is composite for the first n primes p.
  * @author Sean A. Irvine
  */
 public class A051169 implements Sequence {

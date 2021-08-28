@@ -1,0 +1,13 @@
+package irvine.oeis.a051;
+
+/**
+ * A051186 Generalized Stirling number triangle of first kind.
+ * @author Sean A. Irvine
+ */
+public class A051186 extends A051141 {
+
+  @Override
+  protected long multiplier() {
+    return 7;
+  }
+}

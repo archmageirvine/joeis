@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051152.
+ * A051173 Triangular array T read by rows: T(u,v) = lcm(u,v).
  * @author Sean A. Irvine
  */
 public class A051173 implements Sequence {

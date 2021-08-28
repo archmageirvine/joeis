@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 /**
- * A051150.
+ * A051151 Generalized Stirling number triangle of first kind.
  * @author Sean A. Irvine
  */
 public class A051151 extends A051141 {

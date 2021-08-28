@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A347063.
+ * A347063 allocated for Ivan N. Ianakiev.
  * @author Sean A. Irvine
  */
 public class A347063 implements Sequence {

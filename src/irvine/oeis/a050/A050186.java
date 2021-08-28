@@ -16,23 +16,27 @@ public class A050186 implements Sequence {
   private long mN = -1;
   private long mM = 0;
 
+  protected Z t(final long n, final long m) {
+    if (m == 0) {
+      return n <= 1 ? Z.ONE : Z.ZERO;
+    }
+    Z sum = Z.ZERO;
+    for (final Z dd : Cheetah.factor(LongUtils.gcd(n, m)).divisors()) {
+      final long d = dd.longValue();
+      final int mobius = Mobius.mobius(d);
+      if (mobius != 0) {
+        sum = sum.signedAdd(mobius == 1, Binomial.binomial(n / d, m / d));
+      }
+    }
+    return sum;
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 0;
     }
-    if (mM == 0) {
-      return mN <= 1 ? Z.ONE : Z.ZERO;
-    }
-    Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(LongUtils.gcd(mN, mM)).divisors()) {
-      final long d = dd.longValue();
-      final int mobius = Mobius.mobius(d);
-      if (mobius != 0) {
-        sum = sum.signedAdd(mobius == 1, Binomial.binomial(mN / d, mM / d));
-      }
-    }
-    return sum;
+    return t(mN, mM);
   }
 }

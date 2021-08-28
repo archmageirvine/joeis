@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051152.
+ * A051154 a(n) = 1 + 2^k + 4^k where k = 3^n.
  * @author Sean A. Irvine
  */
 public class A051154 implements Sequence {

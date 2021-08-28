@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051152.
+ * A051155 a(n) = (2^5^(n+1) - 1)/(2^5^n - 1).
  * @author Sean A. Irvine
  */
 public class A051155 implements Sequence {

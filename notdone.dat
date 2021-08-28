@@ -1705,3 +1705,4 @@ A051070 a(n) is the n-th term in sequence A_n, respecting the offset, or a(n) = 
 A051103 Numerator of a certain Selberg integral [hypergeometric].
 A051104 Denominator of a certain Selberg integral [hypergeometric].
 A051174 H*-palindromic trees with n nodes [insufficient detail, email sent]
+A051185 Number of intersecting families of an n-element set. Also number of n-variable clique Boolean functions

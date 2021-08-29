@@ -14,7 +14,7 @@ public class A000170 implements Sequence {
 
   private int mN = -1;
 
-  private boolean isConsistent(final int[] q, final int n) {
+  protected boolean isConsistent(final int[] q, final int n) {
     for (int k = 0; k < n; ++k) {
       if (q[k] == q[n]) {
         return false;   // same column

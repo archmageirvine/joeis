@@ -1706,3 +1706,6 @@ A051103 Numerator of a certain Selberg integral [hypergeometric].
 A051104 Denominator of a certain Selberg integral [hypergeometric].
 A051174 H*-palindromic trees with n nodes [insufficient detail, email sent]
 A051185 Number of intersecting families of an n-element set. Also number of n-variable clique Boolean functions
+A051233 Number of unit squares at least 50% covered by a circle inscribed in an integer square of size n X n, possibly erroneous?
+A051234 Possible orders of central factor groups of groups
+A051236 Depends A013588.

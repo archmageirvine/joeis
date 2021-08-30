@@ -1709,3 +1709,4 @@ A051185 Number of intersecting families of an n-element set. Also number of n-va
 A051233 Number of unit squares at least 50% covered by a circle inscribed in an integer square of size n X n, possibly erroneous?
 A051234 Possible orders of central factor groups of groups
 A051236 Depends A013588.
+A051251 Number of self-complementary 3-plexes.

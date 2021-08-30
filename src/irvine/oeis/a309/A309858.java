@@ -24,7 +24,7 @@ public class A309858 extends MemoryFunction2<Integer, Z> implements Sequence {
   private int mD = -1;
   private int mN = 0;
 
-  private int ilcm(final List<Integer> k, List<Integer> p, final int q) {
+  private int ilcm(final List<Integer> k, final List<Integer> p, final int q) {
     int lcm = 1;
     for (int i = 0; i < q; ++i) {
       if (k.get(i) > 0) {
@@ -67,7 +67,7 @@ public class A309858 extends MemoryFunction2<Integer, Z> implements Sequence {
       final int s = ilcm(k, p, q);
       Z s2 = Z.ZERO;
       for (int t = 1; t <= s; ++t) {
-        if (and(p, k, q, t )) {
+        if (and(p, k, q, t)) {
           Z prod = Z.ONE;
           for (int i = 0; i < q; ++i) {
             final int m = IntegerUtils.gcd(t, p.get(i));

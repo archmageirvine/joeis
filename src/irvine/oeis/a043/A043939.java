@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043939 Numbers n such that 1 and 2 occur juxtaposed in the base 8 representation of n but not of n+1.
+ * A043939 Numbers k such that 1 and 2 occur juxtaposed in the base-8 representation of k but not of k+1.
  * @author Georg Fischer
  */
 public class A043939 implements Sequence {

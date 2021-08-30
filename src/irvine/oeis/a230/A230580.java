@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A230580 Round( (E/2)^n ).
+ * A230580  Round( (E/2)^n ).
  * @author Georg Fischer
  */
 public class A230580 extends FloorSequence {

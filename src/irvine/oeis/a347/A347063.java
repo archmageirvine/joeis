@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A347063 allocated for Ivan N. Ianakiev.
+ * A347063 Double Zumkeller numbers: numbers whose set of divisors can be partitioned into two disjoint subsets with equal sums and equal cardinalities.
  * @author Sean A. Irvine
  */
 public class A347063 implements Sequence {

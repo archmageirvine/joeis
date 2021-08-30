@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050241 Powerful numbers (A007532) representable in exactly two distinct ways (counting different powers of duplicated digits as distinct).
+ * A050241 Handsome numbers (A007532) representable in exactly two distinct ways (counting different powers of duplicated digits as distinct).
  * @author Sean A. Irvine
  */
 public class A050241 implements Sequence {

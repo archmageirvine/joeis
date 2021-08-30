@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A274014 Decimal expansion of the arc length of an ellipse with semi-major axis 1 and excentricity sin(Pi/12), an arc length which evaluates without using elliptic integrals (a computation due to Ramanujan).
+ * A274014 Decimal expansion of the arc length of an ellipse with semi-major axis 1 and eccentricity sin(Pi/12), an arc length which evaluates without using elliptic integrals (a computation due to Ramanujan).
  * Formula: sqrt(Pi/sqrt(3))*(((1+1/sqrt(3))*Gamma(1/3))/Gamma(5/6)+(2*Gamma(5/6))/Gamma(1/3))
  * @author Georg Fischer
  */

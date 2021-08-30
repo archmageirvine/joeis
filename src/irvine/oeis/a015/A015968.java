@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015968 Positive integers n such that n | (15^n + 1).
+ * A015968 Positive integers k such that k | (15^k + 1).
  * @author Sean A. Irvine
  */
 public class A015968 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A058210 Floor( exp(gamma) n log log n ), where gamma is Euler&apos;s constant (A001620).
+ * A058210 Floor( exp(gamma) n log log n ), where gamma is Euler's constant (A001620).
  * @author Georg Fischer
  */
 public class A058210 extends FloorSequence {

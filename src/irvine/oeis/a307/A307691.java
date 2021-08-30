@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A307691 Clique covering number of the n-Menger sponge graph.
+ * A307691 Clique covering and independence number of the n-Menger sponge graph.
  *
  * @author Georg Fischer
  */

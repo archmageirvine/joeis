@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008851;
 
 /**
- * A045953 Numbers n such that n^2 can be obtained from n by inserting an internal block of (contiguous) digits.
+ * A045953 Numbers m such that m^2 can be obtained from m by inserting an internal block of (contiguous) digits.
  * @author Sean A. Irvine
  */
 public class A045953 extends A008851 {

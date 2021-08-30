@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049115 If n is a power of 2, then a(n) = 0; otherwise, a(n) is the number of iterations of the Euler phi function that must be repeatedly applied to n to reach 1.
+ * A049115 a(n) is the number of iterations of the Euler phi function needed to reach a power of 2, when starting from n.
  * @author Sean A. Irvine
  */
 public class A049115 implements Sequence {

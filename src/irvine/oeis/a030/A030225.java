@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000228;
 import irvine.oeis.a006.A006535;
 
 /**
- * A030225 Number of n-celled polyhexes (hexagonal polyominoes) with bilateral symmetry.
+ * A030225 Number of achiral hexagonal polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A030225 extends A000228 {

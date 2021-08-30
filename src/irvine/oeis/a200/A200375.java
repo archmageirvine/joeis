@@ -6,7 +6,7 @@ package irvine.oeis.a200;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A200375 Product of Catalan and Jacobsthal numbers: a(n) = A000108(n)*A001045(n).
+ * A200375 Product of Catalan and Jacobsthal numbers: a(n) = A000108(n)*A001045(n+1).
  * @author Georg Fischer
  */
 public class A200375 extends HolonomicRecurrence {

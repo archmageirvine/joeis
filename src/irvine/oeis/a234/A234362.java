@@ -15,8 +15,8 @@ public class A234362 extends FloorSequence {
     super(0);
   }
 
+  @Override
   protected Z evalCR(final long n) {
     return CR.valueOf(n).pow(2).agm(CR.valueOf(n).pow(3)).floor();
   }
-
 }

@@ -22,7 +22,7 @@ class Agm extends CR {
   @Override
   protected Z approximate(final int p) {
     final Z x = mA.getApprox(p);
-    if (x.equals(mG.getApprox(p))) {
+    if (x.isZero() || x.equals(mG.getApprox(p))) {
       return x;
     }
     return scale(new Agm(mA.add(mG).multiply(CR.HALF), mA.multiply(mG).sqrt()).approximate(p - 2), -2);

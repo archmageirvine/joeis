@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A096228 a(n) = floor(n^2*((n-1)/n)^(n-1/2))
+ * A096228 a(n) = Floor[n^2*((n-1)/n)^(n-1/2)].
  * @author Georg Fischer
  */
 public class A096228 extends FloorSequence {

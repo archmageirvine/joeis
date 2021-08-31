@@ -693,11 +693,12 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return floor of the computable real
    */
   public Z floor(final int precision) {
-    final Z approx = getApprox(-precision);
+    final int workingPrecision = toZ().bitLength() + precision;
+    final Z approx = getApprox(-workingPrecision);
     if (approx.signum() >= 0) {
-      return approx.shiftRight(precision);
+      return approx.shiftRight(workingPrecision);
     } else {
-      return approx.subtract(Z.ONE.shiftLeft(precision).subtract(1)).shiftRight(precision);
+      return approx.subtract(Z.ONE.shiftLeft(workingPrecision).subtract(1)).shiftRight(workingPrecision);
     }
   }
 
@@ -710,22 +711,23 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return floor of the computable real
    */
   public Z floor() {
-    return floor(toZ().bitLength() + DEFAULT_FLOOR_EXTRA_BITS);
+    return floor(DEFAULT_FLOOR_EXTRA_BITS);
   }
 
   /**
    * Return the ceiling function of this computable real accurate to the given
    * precision.  The value can be out by 1 if the value is very close to an
    * integer.
-   * @param precision precision to consider
-   * @return floor of the computable real
+   * @param precision precision to consider (after the decimal point)
+   * @return ceiling of the computable real
    */
   public Z ceil(final int precision) {
-    final Z approx = getApprox(-precision);
+    final int workingPrecision = toZ().bitLength() + precision;
+    final Z approx = getApprox(-workingPrecision);
     if (approx.signum() <= 0) {
-      return approx.shiftRight(precision);
+      return approx.shiftRight(workingPrecision);
     } else {
-      return approx.add(Z.ONE.shiftLeft(precision).subtract(1)).shiftRight(precision);
+      return approx.add(Z.ONE.shiftLeft(workingPrecision).subtract(1)).shiftRight(workingPrecision);
     }
   }
 
@@ -733,10 +735,10 @@ public abstract class CR extends Number implements Comparable<CR> {
    * Return the ceiling function of this computable real accurate to the given
    * precision.  The value can be out by 1 if the value is very close to an
    * integer.
-   * @return floor of the computable real
+   * @return ceiling of the computable real
    */
   public Z ceil() {
-    return ceil(toZ().bitLength() + DEFAULT_FLOOR_EXTRA_BITS);
+    return ceil(DEFAULT_FLOOR_EXTRA_BITS);
   }
 
   /**

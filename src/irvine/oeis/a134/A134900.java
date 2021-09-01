@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A134901 a(n) = floor(n*exp(csc(n))).
+ * A134900 a(n) = ceiling(n*exp(csc(n))).
  * @author Sean A. Irvine
  */
 public class A134900 extends FloorSequence {

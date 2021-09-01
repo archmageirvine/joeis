@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A198076.
+ * A198076 Round((n+1/2)^n).
  * @author Sean A. Irvine
  */
 public class A198076 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 
 /**
  * The constructive real <code>atan(1/n)</code>, where n is a small integer &gt; base.
- * This gives a simple and moderately fast way to compute PI.
+ * This gives a simple and moderately fast way to compute pi.
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */

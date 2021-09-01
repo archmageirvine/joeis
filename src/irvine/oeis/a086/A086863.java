@@ -15,11 +15,11 @@ public class A086863 extends FloorSequence {
     super(1);
   }
 
+  @Override
   protected Z evalCR(final long n) {
     final Z nz = Z.valueOf(n);
     final Z den2 = Z.valueOf(mN + 2).multiply(nz).add(Z.ONE).square();
-    final Z num2 = Z.valueOf(4*mN + 2).multiply(nz).add(Z.ONE).multiply(nz).add(Z.ONE).square();
+    final Z num2 = Z.valueOf(4 * mN + 2).multiply(nz).add(Z.ONE).multiply(nz).add(Z.ONE).square();
     return CR.valueOf(num2).divide(CR.valueOf(den2)).floor();
   }
-
 }

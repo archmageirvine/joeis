@@ -59,25 +59,17 @@ class PrescaledLnGamma extends CR {
     final CR z = mX.add(CR.valueOf(runUp));
     currentSum = C1.subtract(z).add(z.subtract(HALF).multiply(z.log())).approximate(p).subtract(currentSum);
 
-   // StringUtils.message("Starting bernoulli");
     // Use Bernoulli series
     int k = 0;
     while (true) {
-//      final Z ta = bernoulli(++k).approximate(p);
-//      final Z tb = ComputableReals.SINGLETON.pow(z, 2L * k - 1).approximate(p);
-//      final Z currentTerm = ta.divide(tb);
-
       final CR t = bernoulli(++k).divide(ComputableReals.SINGLETON.pow(z, 2L * k - 1));
       final Z currentTerm = t.approximate(p);
       if (currentTerm.isZero()) {
         break;
       }
       currentSum = currentSum.add(currentTerm);
-      //System.out.println("Current sum is now " + currentSum + " ct=" + currentTerm);
     }
-    //StringUtils.message("Done");
     return currentSum;
   }
-
 }
 

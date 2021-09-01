@@ -16,13 +16,12 @@ final class EulerGamma extends SlowCR {
   // There is a refinement of this algorithm which I have not implemented
   // This implementation is confirmed correct to at least 20000 digits
 
-  /**
-   * Compute the gamma constant to the specified number of bits.
-   * Scales up and computes in space of integers.
-   * @param bits number of bits
-   * @return gamma
-   */
-  private static Z gamma(final int bits) {
+  @Override
+  protected Z approximate(final int precision) {
+    if (precision >= 1) {
+      return Z.ZERO;
+    }
+    final int bits = -precision;
     // Use slightly more precision
     final int d = bits + SAFETY_BITS;
     final long n = (long) (1 + 0.25 * Math.log(2) * bits);
@@ -43,14 +42,6 @@ final class EulerGamma extends SlowCR {
     final CR logN = CR.valueOf(n).log();
     final Z scaled = u.shiftLeft(d).divide(v);
     return scaled.subtract(logN.getApprox(-d)).shiftRight(SAFETY_BITS);
-  }
-
-  @Override
-  protected Z approximate(final int p) {
-    if (p >= 1) {
-      return Z.ZERO;
-    }
-    return gamma(-p);
   }
 }
 

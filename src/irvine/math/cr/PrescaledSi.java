@@ -30,8 +30,8 @@ class PrescaledSi extends CR {
       ++k;
       // currentTerm = currentTerm * x^2 / n
       currentTerm = scale(currentTerm.multiply(x2Appr), p);
-      currentTerm = currentTerm.divide(Z.valueOf(2 * k + 1).multiply(2 * k));
-      currentSum = currentSum.signedAdd((k & 1) == 0, currentTerm.divide(2 * k + 1));
+      currentTerm = currentTerm.divide(Z.valueOf(2L * k + 1).multiply(2L * k));
+      currentSum = currentSum.signedAdd((k & 1) == 0, currentTerm.divide(2L * k + 1));
     }
     return currentSum;
   }

@@ -12,7 +12,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A196608 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A196608() {
     super(1, new UnaryCRFunction() { 
       @Override 

@@ -12,7 +12,7 @@ public class A327737 extends A043000 {
 
   protected int mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A327737() {
     mN = 0;
   }

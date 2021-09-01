@@ -17,7 +17,7 @@ public class A189786 extends FloorSequence {
   private final CR mS = REALS.asin(CR.FIVE.divide(CR.valueOf(13)));
   private final CR mT = REALS.asin(CR.valueOf(12).divide(CR.valueOf(13)));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A189786() {
     super(1);
   }

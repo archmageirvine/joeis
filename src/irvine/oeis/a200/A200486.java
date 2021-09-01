@@ -15,7 +15,7 @@ public class A200486 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A200486() {
     super(0, new UnaryCRFunction() { 
       @Override 

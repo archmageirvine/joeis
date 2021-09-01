@@ -10,7 +10,7 @@ import irvine.oeis.a001.A001097;
  */
 public class A164292 extends CharacteristicFunction {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A164292() {
     super(new A001097());
   }

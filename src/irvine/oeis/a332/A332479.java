@@ -15,7 +15,7 @@ import irvine.oeis.FloorSequence;
 public class A332479 extends FloorSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A332479() {
     super(1);
   }

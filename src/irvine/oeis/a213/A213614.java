@@ -11,7 +11,7 @@ import irvine.oeis.ZBaseExpansionSequence;
  */
 public class A213614 extends ZBaseExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A213614() {
     super(16, Z.valueOf(299792458L).multiply(Z.valueOf(36525)).multiply(Z.valueOf(24 * 6 * 6)));
   }

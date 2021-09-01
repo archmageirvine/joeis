@@ -15,7 +15,7 @@ import irvine.util.string.StringUtils;
  */
 public class A241291 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A241291() {
     this(2, Z.ONE.shiftLeft(65536));
   }

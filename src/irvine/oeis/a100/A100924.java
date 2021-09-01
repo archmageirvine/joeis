@@ -9,7 +9,7 @@ import irvine.oeis.BinaryToDecimalExpansionSequence;
  */
 public class A100924 extends BinaryToDecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A100924() {
     super(new A100923());
   }

@@ -13,7 +13,7 @@ public class A059651 extends FloorSequence {
 
   private final CR mK = CR.TWO.pow(CR.ONE_THIRD);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A059651() {
     super(0);
   }

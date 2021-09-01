@@ -16,7 +16,7 @@ public class A071520 implements Sequence {
   protected Z mCount;
   protected int mExpect;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A071520() {
     this(1, new A051037());
   }

@@ -13,7 +13,7 @@ public class A076255 extends FloorSequence {
 
   private final CR mT = CR.valueOf(3450844193L).pow(CR.ONE.divide(CR.NINE));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A076255() {
     super(1);
   }

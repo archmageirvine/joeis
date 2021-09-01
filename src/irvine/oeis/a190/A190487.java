@@ -14,7 +14,7 @@ public class A190487 extends FloorSequence {
   final Z mB = Z.THREE;
   final Z mC = Z.ZERO;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A190487() {
     super(1);
   }

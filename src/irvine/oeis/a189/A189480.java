@@ -13,7 +13,7 @@ public class A189480 extends FloorSequence {
 
   private final CR mR = CR.FIVE.sqrt();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A189480() {
     super(1);
   }

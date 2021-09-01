@@ -7,7 +7,7 @@ package irvine.oeis.a050;
  */
 public class A050073 extends A050072 {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A050073() {
     super(-1, 1, 1, 1);
   }

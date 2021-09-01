@@ -10,7 +10,7 @@ import irvine.oeis.a030.A030437;
  */
 public class A100947 extends ContinuedFractionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A100947() {
     super(new A030437());
   }

@@ -17,7 +17,7 @@ public class A189751 extends FloorSequence {
   private final CR mS = REALS.atan(CR.ONE.divide(CR.THREE));
   private final CR mT = REALS.atan(CR.TWO.divide(CR.THREE));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A189751() {
     super(1);
   }

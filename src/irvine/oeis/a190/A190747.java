@@ -17,7 +17,7 @@ public class A190747 extends FloorSequence {
   private final CR mV = CR.ONE.divide(CR.ONE.cosh());
   private final CR mW = CR.ONE.coth();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A190747() {
     super(1);
   }

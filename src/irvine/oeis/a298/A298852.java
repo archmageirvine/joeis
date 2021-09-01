@@ -12,7 +12,7 @@ import irvine.oeis.PolynomialRootExpansionSequence;
  */
 public class A298852 extends PolynomialRootExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A298852() {
     super(Polynomial.create(3, -1, -4, 0, 1), CR.ONE, CR.TWO);
   }

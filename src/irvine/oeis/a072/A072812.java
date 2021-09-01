@@ -11,7 +11,7 @@ import irvine.oeis.a010.A010051;
  */
 public class A072812 extends PrependSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A072812() {
     super(new BinaryToDecimalExpansionSequence(new A010051()), 1);
   }

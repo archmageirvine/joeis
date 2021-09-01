@@ -10,7 +10,7 @@ import irvine.oeis.FloorSequence;
  * @author Georg Fischer
  */
 public class A181712 extends FloorSequence {
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A181712() {
     super(1);
   }

@@ -13,7 +13,7 @@ public class A224997 extends FloorSequence {
 
   private final CR mR = CR.valueOf(17);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A224997() {
     super(2);
   }

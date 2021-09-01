@@ -12,7 +12,7 @@ public class A093392 implements Sequence {
 
   protected long mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A093392() {
     mN = -1;
   }

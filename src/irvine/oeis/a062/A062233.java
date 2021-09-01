@@ -13,7 +13,7 @@ import irvine.oeis.FloorSequence;
 public class A062233 extends FloorSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A062233() {
     super(1);
   }

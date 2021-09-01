@@ -14,7 +14,7 @@ public class A190087 extends FloorSequence {
   private final CR mS = CR.HALF.sin();
   private final CR mT = CR.HALF.cos();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A190087() {
     super(1);
   }

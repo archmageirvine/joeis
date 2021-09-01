@@ -12,7 +12,7 @@ public class A187385 extends FloorSequence {
 
   private final CR mR = CR.ONE.add(CR.THREE.sqrt()).add(CR.SQRT2);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A187385() {
     super(1);
   }

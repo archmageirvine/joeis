@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A256066 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A256066() {
     super(1, CR.ONE.divide(CR.valueOf(12)).lnGamma());
   }

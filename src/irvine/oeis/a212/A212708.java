@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A212708 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A212708() {
     super(4, CR.valueOf(128).multiply(CR.E.multiply(CR.valueOf(980)).sqrt()));
   }

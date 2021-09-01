@@ -12,7 +12,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A248510 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A248510() {
     super(5, CR.valueOf(new Z("5521725125000000000000")).divide(CR.valueOf(new Z("213914163877964163"))));
   }

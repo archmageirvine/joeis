@@ -12,7 +12,7 @@ public class A088322 extends A000372 {
 
   protected int mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A088322() {
     mN = 0 - 1;
   }

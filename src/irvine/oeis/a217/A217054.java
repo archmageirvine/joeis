@@ -11,7 +11,7 @@ import irvine.oeis.a101.A101264;
  */
 public class A217054 extends BinaryToDecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A217054() {
     super(new SkipSequence(new A101264(), 1));
   }

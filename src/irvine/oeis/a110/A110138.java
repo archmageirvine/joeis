@@ -10,7 +10,7 @@ import irvine.oeis.FloorSequence;
  */
 public class A110138 extends FloorSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A110138() {
     super(0);
   }

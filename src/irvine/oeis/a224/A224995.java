@@ -13,7 +13,7 @@ public class A224995 extends FloorSequence {
 
   private final CR mR = CR.THREE.divide(CR.TWO);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A224995() {
     super(1);
   }

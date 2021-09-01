@@ -20,7 +20,7 @@ public class A190739 extends FloorSequence {
   private final CR mV = CR.ONE.divide(CR.ONE.divide(CR.EIGHT).multiply(CR.PI).cos());
   private final CR mW = REALS.cot(CR.ONE.divide(CR.EIGHT).multiply(CR.PI));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A190739() {
     super(1);
   }

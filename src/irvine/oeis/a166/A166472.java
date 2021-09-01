@@ -11,7 +11,7 @@ public class A166472 extends A166470 {
 
   protected int mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A166472() {
     mN = 1 - 1;
     super.next();

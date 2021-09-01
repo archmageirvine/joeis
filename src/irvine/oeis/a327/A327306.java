@@ -13,7 +13,7 @@ public class A327306 extends FloorSequence {
 
   private final CR mR = CR.SIX.sqrt();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A327306() {
     super(0);
   }

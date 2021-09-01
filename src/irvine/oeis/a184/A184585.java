@@ -15,7 +15,7 @@ public class A184585 extends FloorSequence {
   private final CR mC = CR.ONE_THIRD;
   private final CR mS = mR.divide(mR.subtract(CR.ONE));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A184585() {
     super(1);
   }

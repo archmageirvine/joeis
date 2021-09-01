@@ -12,7 +12,7 @@ public class A065205 extends A033630 {
 
   protected int mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A065205() {
     mN = 1 - 1;
     super.next();

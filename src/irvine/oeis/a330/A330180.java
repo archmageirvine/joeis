@@ -14,7 +14,7 @@ public class A330180 extends FloorSequence {
   private final CR mS = CR.E;
   private final CR mT = CR.E.add(CR.ONE);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A330180() {
     super(1);
   }

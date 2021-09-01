@@ -16,7 +16,7 @@ public class A101264 extends A000040 {
   protected int mN;
   protected int mExpect;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A101264() {
     mN = -1;
     super.next(); // skip the 2

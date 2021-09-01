@@ -16,7 +16,7 @@ public class A033308 implements Sequence {
   protected Sequence mSeq;
   protected int mBase;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A033308() {
     this(new A000040(), 10);
   }

@@ -13,7 +13,7 @@ public class A195125 extends FloorSequence {
 
   private final CR mR = CR.PI.subtract(CR.THREE);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A195125() {
     super(0);
   }

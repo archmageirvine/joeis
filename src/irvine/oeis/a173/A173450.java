@@ -11,7 +11,7 @@ import irvine.oeis.ZBaseExpansionSequence;
  */
 public class A173450 extends ZBaseExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A173450() {
     super(10, Z.valueOf(69).square().multiply(Z.TEN.pow(6)).add(Z.valueOf(69).pow(3)));
   }

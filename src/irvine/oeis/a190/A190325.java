@@ -14,7 +14,7 @@ public class A190325 extends FloorSequence {
   private final CR mS = CR.HALF.multiply(CR.PI).sinh();
   private final CR mT = CR.HALF.multiply(CR.PI).cosh();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A190325() {
     super(1);
   }

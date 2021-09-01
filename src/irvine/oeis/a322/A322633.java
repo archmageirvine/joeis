@@ -16,7 +16,7 @@ public class A322633 extends DecimalExpansionSequence {
 
   private static final CR C = CR.valueOf(new Q(3, 7));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A322633() {
     super(new ZPolynomial(Polynomial.create(-142, 5180, -97580, 628250, -5363750, 11571875)).inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO).multiply(C));
   }

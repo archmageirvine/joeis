@@ -14,7 +14,7 @@ public class A184872 extends FloorSequence {
   private final CR mS = CR.THREE.log();
   private final CR mT = CR.FIVE.log();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A184872() {
     super(1);
   }

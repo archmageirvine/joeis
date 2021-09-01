@@ -14,7 +14,7 @@ public class A190080 extends FloorSequence {
   private final CR mS = CR.ONE.divide(CR.FIVE).multiply(CR.PI).cos();
   private final CR mT = CR.ONE.divide(CR.ONE.divide(CR.FIVE).multiply(CR.PI).cos());
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A190080() {
     super(1);
   }

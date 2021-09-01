@@ -11,7 +11,7 @@ public class A076478 extends A033308 {
 
   protected int mN;
   
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A076478() {
     mBase = 2;
     mN = 1;

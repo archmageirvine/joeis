@@ -13,7 +13,7 @@ public class A224998 extends FloorSequence {
 
   private final CR mR = CR.PI;
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A224998() {
     super(1);
   }

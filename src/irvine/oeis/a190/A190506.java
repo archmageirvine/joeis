@@ -16,7 +16,7 @@ public class A190506 extends FloorSequence {
   private final CR mT = mR.add(CR.TWO);
   private final CR mU = mR.add(CR.THREE);
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A190506() {
     super(1);
   }

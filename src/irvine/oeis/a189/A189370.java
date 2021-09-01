@@ -14,7 +14,7 @@ public class A189370 extends FloorSequence {
   private final CR mS = CR.SQRT2;
   private final CR mT = CR.FIVE.sqrt();
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A189370() {
     super(1);
   }

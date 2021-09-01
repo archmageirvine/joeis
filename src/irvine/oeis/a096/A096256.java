@@ -10,7 +10,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A096256 extends DecimalExpansionSequence {
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A096256() {
     super(0, CR.valueOf(347897).divide(CR.valueOf(7558272)));
   }

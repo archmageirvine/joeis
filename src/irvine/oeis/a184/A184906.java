@@ -14,7 +14,7 @@ public class A184906 extends FloorSequence {
   private final CR mS = CR.TWO.pow(CR.ONE.divide(CR.THREE));
   private final CR mT = CR.TWO.pow(CR.ONE.divide(CR.FIVE));
 
-  /** Construct the sequence */
+  /** Construct the sequence. */
   public A184906() {
     super(1);
   }

@@ -16,31 +16,6 @@ final class EulerGamma extends SlowCR {
   // There is a refinement of this algorithm which I have not implemented
   // This implementation is confirmed correct to at least 20000 digits
 
-  /*
-  // Earlier implementation using Apfloat library
-  private static Apfloat gamma(final int bits) {
-    // Use slightly more precision
-    final long d = bits + 5;
-    final long n = (long) (1 + 0.25 * Math.log(2) * bits);
-
-    Apfloat a = new Apfloat(0, d, 2);
-    Apfloat b = new Apfloat(1, d, 2);
-    Apfloat u = a;
-    Apfloat v = b;
-    final Apfloat nn = new Apfloat(n * n, d, 2);
-    for (long k = 1; k < 4 * n; ++k) {
-      final Apfloat kf = new Apfloat(k, d, 2);
-      final Apfloat kf2 = new Apfloat(k * k, d, 2);
-      b = b.multiply(nn).divide(kf2);
-      a = a.multiply(nn).divide(kf).add(b).divide(kf);
-      u = u.add(a);
-      v = v.add(b);
-    }
-    final Apfloat log = ApfloatMath.log(new Apfloat(n, d, 2));
-    return u.divide(v).subtract(log);
-  }
-  */
-
   /**
    * Compute the gamma constant to the specified number of bits.
    * Scales up and computes in space of integers.

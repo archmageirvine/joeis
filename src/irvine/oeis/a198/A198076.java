@@ -1,6 +1,6 @@
 package irvine.oeis.a198;
 
-import irvine.math.q.Q;
+import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -14,7 +14,6 @@ public class A198076 implements Sequence {
 
   @Override
   public Z next() {
-    //return CR.valueOf(++mN).add(CR.HALF).pow(mN).round();
-    return new Q(2L * ++mN + 1, 2).pow(mN).round();
+    return CR.valueOf(++mN).add(CR.HALF).pow(mN).round();
   }
 }

@@ -183,6 +183,13 @@ public abstract class CR extends Number implements Comparable<CR> {
   public static final CR PHI = CR.ONE.add(CR.FIVE.sqrt()).divide(CR.TWO);
   /** Euler-Mascheroni constant gamma A001620 = 0.57721566... */
   public static final CR GAMMA = new EulerGamma();
+  /** A special half slightly larger than a real half (at any precision). */
+  public static final CR BIG_HALF = new CR() {
+    @Override
+    protected Z approximate(final int precision) {
+      return Z.ONE.shiftLeft(-precision - 1).add(1);
+    }
+  };
 
   static int boundLog2(final int n) {
     final int absN = Math.abs(n);
@@ -453,12 +460,12 @@ public abstract class CR extends Number implements Comparable<CR> {
    */
   public int compareTo(final CR x, final int r, final int a) {
     final int thisMSD = iterMSD(a);
-    final int xMSD = x.iterMSD(thisMSD > a ? thisMSD : a);
-    final int maxMSD = xMSD > thisMSD ? xMSD : thisMSD;
+    final int xMSD = x.iterMSD(Math.max(thisMSD, a));
+    final int maxMSD = Math.max(xMSD, thisMSD);
     final int rel = maxMSD + r;
     // This can't approach overflow, since r and a are
     // effectively divided by 2, and msds are checked.
-    return compareTo(x, rel > a ? rel : a);
+    return compareTo(x, Math.max(rel, a));
   }
 
   /**
@@ -747,7 +754,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    */
   public Z round() {
     final int sign = toZ().signum();
-    return sign >= 0 ? subtract(CR.HALF).ceil() : add(CR.HALF).floor();
+    return sign < 0 ? subtract(CR.BIG_HALF).ceil() : add(CR.BIG_HALF).floor();
   }
 
   /**
@@ -757,7 +764,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    */
   public Z round(final int precision) {
     final int sign = toZ().signum();
-    return sign >= 0 ? subtract(CR.HALF).ceil(precision) : add(CR.HALF).floor(precision);
+    return sign >= 0 ? subtract(CR.BIG_HALF).ceil(precision) : add(CR.BIG_HALF).floor(precision);
   }
 
   /**

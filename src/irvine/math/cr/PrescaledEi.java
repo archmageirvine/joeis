@@ -40,9 +40,6 @@ class PrescaledEi extends CR {
     Z currentSum = Z.ZERO;
     int k = 0;
     while (currentTerm.abs().compareTo(maxTruncError) >= 0) {
-      if (Thread.interrupted() || sPleaseStop) {
-        throw new AbortedError();
-      }
       // currentTerm = currentTerm * x / k
       currentTerm = scale(currentTerm.multiply(xAppr), xPrec);
       final Z kz = Z.valueOf(++k);

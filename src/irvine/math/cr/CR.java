@@ -337,14 +337,6 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
-   * Setting this to true requests that all computations be aborted by
-   * throwing AbortedError.  Must be reset to false before any further
-   * computation.  Ideally <code>Thread.interrupt()</code> should be used instead, but
-   * that doesn't appear to be consistently supported by browser VMs.
-   */
-  static volatile boolean sPleaseStop = false;
-
-  /**
    * Must be defined in subclasses of <code>CR</code>.
    * Most users can ignore the existence of this method, and will
    * not ever need to define a <code>CR</code> subclass.
@@ -417,9 +409,6 @@ public abstract class CR extends Number implements Comparable<CR> {
         return msd;
       }
       checkPrecision(prec);
-      if (Thread.interrupted() || sPleaseStop) {
-        throw new AbortedError();
-      }
     }
     return msd(n);
   }
@@ -506,7 +495,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    */
   @Override
   public int compareTo(final CR x) {
-    if (this == x) {
+    if (this == x) { // == deliberate!
       return 0;
     }
     for (int a = -20; ; a *= 2) {

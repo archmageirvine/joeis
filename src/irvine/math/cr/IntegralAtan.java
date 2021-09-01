@@ -43,9 +43,6 @@ class IntegralAtan extends SlowCR {
     int currentSign = 1;
     int n = 1;
     while (currentTerm.abs().compareTo(maxTruncRrror) >= 0) {
-      if (Thread.interrupted() || sPleaseStop) {
-        throw new AbortedError();
-      }
       n += 2;
       currentPower = currentPower.divide(bigOpSquared);
       currentSign = -currentSign;

@@ -39,9 +39,6 @@ class PrescaledCos extends SlowCR {
     Z currentTerm = Z.ONE.shiftLeft(-calcPrecision);
     Z currentSum = currentTerm;
     while (currentTerm.abs().compareTo(maxTruncError) >= 0) {
-      if (Thread.interrupted() || sPleaseStop) {
-        throw new AbortedError();
-      }
       n += 2;
       // currentTerm = - currentTerm * op * op / n * (n - 1)
       currentTerm = scale(currentTerm.multiply(opAppr), opPrec);

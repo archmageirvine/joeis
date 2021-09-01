@@ -44,9 +44,6 @@ class PrescaledExp extends CR {
     Z currentSum = scaled;
     int n = 0;
     while (currentTerm.abs().compareTo(maxTruncError) >= 0) {
-      if (Thread.interrupted() || sPleaseStop) {
-        throw new AbortedError();
-      }
       ++n;
       // currentTerm = currentTerm * op / n
       currentTerm = scale(currentTerm.multiply(opAppr), opPrec);

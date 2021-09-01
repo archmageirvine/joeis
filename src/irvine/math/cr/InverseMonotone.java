@@ -157,9 +157,6 @@ class InverseMonotone extends UnaryCRFunction {
       }
       Z difference = h.subtract(l);
       while (true) {
-        if (Thread.interrupted() || sPleaseStop) {
-          throw new AbortedError();
-        }
         if (difference.compareTo(Z.SIX) < 0) {
           // Answer is less than 1/2 ulp away from h.
           return scale(h, -extraArgPrec);

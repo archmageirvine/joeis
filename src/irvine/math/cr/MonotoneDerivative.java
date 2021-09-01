@@ -91,9 +91,6 @@ class MonotoneDerivative extends UnaryCRFunction {
       if (derivDifference.compareTo(Z.valueOf(8)) < 0) {
         return scale(apprLeftDeriv, -extraPrec);
       } else {
-        if (Thread.interrupted() || sPleaseStop) {
-          throw new AbortedError();
-        }
         mMono.mDeriv2Msd[0] = evalPrec + derivDifference.bitLength() + 4 /*slop*/;
         mMono.mDeriv2Msd[0] -= logDelta;
         return approximate(p);

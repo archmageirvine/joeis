@@ -40,9 +40,6 @@ class PrescaledLn extends SlowCR {
     int n = 1;
     int currentSign = 1; // (-1)^(n-1)
     while (currentTerm.abs().compareTo(maxTruncError) >= 0) {
-      if (Thread.interrupted() || sPleaseStop) {
-        throw new AbortedError();
-      }
       ++n;
       currentSign = -currentSign;
       xNth = scale(xNth.multiply(opAppr), opPrec);

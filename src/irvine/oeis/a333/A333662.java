@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A333662 Number of electrons per shell in element Z=n expressed as a 32-bit unsigned integer.
  * @author Georg Fischer
  */
-
 public class A333662 extends FiniteSequence {
 
   /** Construct the sequence. */

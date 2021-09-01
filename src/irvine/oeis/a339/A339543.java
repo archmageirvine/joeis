@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A339543 Beginnings of record-length chains of primes under iteration of A339541.
  * @author Georg Fischer
  */
-
 public class A339543 extends BriefSequence {
 
   /** Construct the sequence. */

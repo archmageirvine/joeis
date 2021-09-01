@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A330584 The orders, with repetition, of the non-cyclic finite simple groups that are subquotients of the automorphism groups of sublattices of the Leech lattice.
  * @author Georg Fischer
  */
-
 public class A330584 extends FiniteSequence {
 
   /** Construct the sequence. */

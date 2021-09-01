@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336447 Squares visited by a chess rook moving on a square-spiral numbered board where the rook moves to an unvisited square containing the smallest prime number.
  * @author Georg Fischer
  */
-
 public class A336447 extends FiniteSequence {
 
   /** Construct the sequence. */

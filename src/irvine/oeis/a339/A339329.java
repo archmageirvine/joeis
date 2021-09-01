@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A339329 Primes p such that A001414(p-1)*A001414(p+1) == q (mod p), where q is the prime before p.
  * @author Georg Fischer
  */
-
 public class A339329 extends BriefSequence {
 
   /** Construct the sequence. */

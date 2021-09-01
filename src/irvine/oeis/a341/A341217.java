@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A341217 a(k) is the lesser of the first pair of twin primes that starts a chain of k pairs of twin primes (p(1),p(1)+2), ..., (p(k),p(k)+2) where p(j+1) = 5*p(j)+4.
  * @author Georg Fischer
  */
-
 public class A341217 extends BriefSequence {
 
   /** Construct the sequence. */

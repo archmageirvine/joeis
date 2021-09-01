@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A324031 Decimal expansion of the conversion factor from the old SI unit A (ampere) to the combination of 2019 SI units e*\u0394\u03bd_{Cs}.
  * @author Georg Fischer
  */
-
 public class A324031 extends NoncomputableSequence {
 
   /** Construct the sequence. */

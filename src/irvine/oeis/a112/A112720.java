@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A112720 Numbers m such that phi(m) = 1^d_1 + 2^d_2 + ... + k^d_k where d_1 d_2 ... d_k is the decimal expansion of m.
  * @author Georg Fischer
  */
-
 public class A112720 extends FiniteSequence {
 
   /** Construct the sequence. */

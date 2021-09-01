@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A344230 Squares visited by a knight (chess piece) moving to the lowest-numbered unvisited square at each step on a semi-infinite chess board numbered by starting in the lower left and filling in squares in a counterclockwise way moving to the bottom left-most unnumbered square when the edge of the board is encountered.
  * @author Georg Fischer
  */
-
 public class A344230 extends FiniteSequence {
 
   /** Construct the sequence. */

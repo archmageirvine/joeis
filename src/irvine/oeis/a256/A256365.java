@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A256365 Numbers that are multiple-digit narcissistic numbers in exactly six bases.
  * @author Georg Fischer
  */
-
 public class A256365 extends BriefSequence {
 
   /** Construct the sequence. */

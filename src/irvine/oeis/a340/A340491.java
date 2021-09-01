@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A340491 Number of n-digit numbers x such that rev(x^2) = rev(x)^2 and x does not contain any zero digits, where rev(x) is the digit reversal of x.
  * @author Georg Fischer
  */
-
 public class A340491 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A343777 a(n) is the least integer that can be expressed as the sum of one or more consecutive nonzero n-gonal numbers in exactly n ways.
  * @author Georg Fischer
  */
-
 public class A343777 extends BriefSequence {
 
   /** Construct the sequence. */

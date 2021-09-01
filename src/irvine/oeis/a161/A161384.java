@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A161384 The numbers 0-100 in Spanish lexicographic order.
  * @author Georg Fischer
  */
-
 public class A161384 extends FiniteSequence {
 
   /** Construct the sequence. */

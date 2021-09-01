@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A146897 Weight distribution of [108,54,20] double circulant code.
  * @author Georg Fischer
  */
-
 public class A146897 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A342486 Decimal expansion of number of kilograms (kg) in the mass equivalent of 1 electronvolt (eV/c^2).
  * @author Georg Fischer
  */
-
 public class A342486 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A335856 Squares visited by a chess king moving on a square-spiral numbered board where the king moves to the adjacent unvisited square containing the lowest prime number. In no adjacent prime numbered squares are present it chooses the lowest spiral number.
  * @author Georg Fischer
  */
-
 public class A335856 extends FiniteSequence {
 
   /** Construct the sequence. */

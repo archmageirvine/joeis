@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A122561 Position of letters from the sentence: 'aleph is one' in alphabet.
  * @author Georg Fischer
  */
-
 public class A122561 extends FiniteSequence {
 
   /** Construct the sequence. */

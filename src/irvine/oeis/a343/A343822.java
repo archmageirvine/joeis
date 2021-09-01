@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343822 Numbers k such that the alternating group A_k is not a Hurwitz group.
  * @author Georg Fischer
  */
-
 public class A343822 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336446 Squares visited by a chess queen moving on a square-spiral numbered board where the queen moves to an unvisited square containing the smallest prime number.
  * @author Georg Fischer
  */
-
 public class A336446 extends FiniteSequence {
 
   /** Construct the sequence. */

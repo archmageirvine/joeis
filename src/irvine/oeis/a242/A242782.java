@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A242782 The longest Dewey Decimal number (as of 2001).
  * @author Georg Fischer
  */
-
 public class A242782 extends FiniteSequence {
 
   /** Construct the sequence. */

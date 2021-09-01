@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343434 Sorted numbers of (undirected) Hamiltonian cycles in the graphs of the Catalan solids (the Archimedean duals).
  * @author Georg Fischer
  */
-
 public class A343434 extends FiniteSequence {
 
   /** Construct the sequence. */

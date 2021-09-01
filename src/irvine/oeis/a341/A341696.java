@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A341696 The cumulative sum (1st digit + 2nd digit + 3rd digit + ... + n-th digit of the sequence) is prime.
  * @author Georg Fischer
  */
-
 public class A341696 extends FiniteSequence {
 
   /** Construct the sequence. */

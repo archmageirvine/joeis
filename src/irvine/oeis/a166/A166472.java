@@ -13,7 +13,7 @@ public class A166472 extends A166470 {
   
   /** Construct the sequence. */
   public A166472() {
-    mN = 1 - 1;
+    mN = 0;
     super.next();
     super.next();
   }

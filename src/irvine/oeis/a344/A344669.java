@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A344669 a(n) is the number of preference profiles in the stable marriage problem with n men and n women that generate the maximum possible number of stable matchings.
  * @author Georg Fischer
  */
-
 public class A344669 extends BriefSequence {
 
   /** Construct the sequence. */

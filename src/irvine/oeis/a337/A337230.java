@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A337230 Numbers that are a divisor of the product of the digits of its divisors.
  * @author Georg Fischer
  */
-
 public class A337230 extends FiniteSequence {
 
   /** Construct the sequence. */

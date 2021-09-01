@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A308681 E.g.f.: (sec(x) - tan(x)) / sqrt(1 - 2*x).
  * @author Georg Fischer
  */
-
 public class A308681 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A335899 Squares visited when moving on a square-spiral numbered board to an unvisited diagonally adjacent square containing the spiral number with the fewest divisors. In case of a tie it chooses the square with the lowest spiral number.
  * @author Georg Fischer
  */
-
 public class A335899 extends FiniteSequence {
 
   /** Construct the sequence. */

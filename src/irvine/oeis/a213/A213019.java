@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A213019 Largest n-digit right-truncatable semiprime.
  * @author Georg Fischer
  */
-
 public class A213019 extends FiniteSequence {
 
   /** Construct the sequence. */

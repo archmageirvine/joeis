@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A344338 Smallest number that is the sum of two or more consecutive positive n-th powers in more than one way.
  * @author Georg Fischer
  */
-
 public class A344338 extends BriefSequence {
 
   /** Construct the sequence. */

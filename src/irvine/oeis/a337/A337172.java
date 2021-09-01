@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A337172 Numbers k such that L(k+2)^L(k) mod L(k+1) is a Lucas number, where L = A000032.
  * @author Georg Fischer
  */
-
 public class A337172 extends BriefSequence {
 
   /** Construct the sequence. */

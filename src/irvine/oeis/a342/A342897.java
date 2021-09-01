@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A342897 Smallest number that is the sum of three positive n-th powers in four ways.
  * @author Georg Fischer
  */
-
 public class A342897 extends BriefSequence {
 
   /** Construct the sequence. */

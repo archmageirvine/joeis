@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336092 Squares visited by a chess king moving on a square-spiral numbered board where the king moves to the adjacent unvisited square containing the spiral number with the fewest divisors. In case of a tie it chooses the square with the largest spiral number.
  * @author Georg Fischer
  */
-
 public class A336092 extends FiniteSequence {
 
   /** Construct the sequence. */

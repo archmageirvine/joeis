@@ -7,7 +7,6 @@ import irvine.oeis.NoncomputableSequence;
  * A274846 Numbers described with a single word in Russian.
  * @author Georg Fischer
  */
-
 public class A274846 extends NoncomputableSequence {
 
   /** Construct the sequence. */

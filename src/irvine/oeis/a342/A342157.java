@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A342157 Base-10 numbers m such that k*m = d||d||...||d (here || appears k-1 times), where k is the length of m, d is any m's digit and || represents concatenation.
  * @author Georg Fischer
  */
-
 public class A342157 extends FiniteSequence {
 
   /** Construct the sequence. */

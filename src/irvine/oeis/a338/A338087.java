@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338087 a(n) is the smallest prime number which can be represented as x^2 + h*y^2 with x &gt; 0 and y &gt; 0 for each h in the first n Heegner numbers (A003173).
  * @author Georg Fischer
  */
-
 public class A338087 extends FiniteSequence {
 
   /** Construct the sequence. */

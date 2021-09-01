@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343433 Sorted numbers of (undirected) Hamiltonian cycles in the graphs of the Archimedean solids.
  * @author Georg Fischer
  */
-
 public class A343433 extends FiniteSequence {
 
   /** Construct the sequence. */

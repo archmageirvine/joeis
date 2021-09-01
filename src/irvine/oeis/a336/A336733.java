@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336733 Positive integers which can be written in two bases smaller than 10 as mutually-reversed strings of digit(s).
  * @author Georg Fischer
  */
-
 public class A336733 extends FiniteSequence {
 
   /** Construct the sequence. */

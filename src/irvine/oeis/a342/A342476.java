@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A342476 Numbers m &gt; 1 such that W(m) &gt; W(k) for all 1 &lt; k &lt; m, where W(k) = omega(k)*log(log(k))/log(k).
  * @author Georg Fischer
  */
-
 public class A342476 extends FiniteSequence {
 
   /** Construct the sequence. */

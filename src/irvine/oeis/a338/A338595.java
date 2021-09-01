@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338595 Denominators of resistance values &lt; 1 ohm that can be obtained from a network of exactly 5 one-ohm resistors, but not from any network with fewer than 5 one-ohm resistors. Numerators are in A338580.
  * @author Georg Fischer
  */
-
 public class A338595 extends FiniteSequence {
 
   /** Construct the sequence. */

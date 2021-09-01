@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A118639 Smallest number expressible using the next Roman-numeral symbol.
  * @author Georg Fischer
  */
-
 public class A118639 extends FiniteSequence {
 
   /** Construct the sequence. */

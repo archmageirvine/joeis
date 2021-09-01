@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A335533 BLOSUM62 substitution scoring matrix used to score alignments between evolutionarily divergent protein sequences.
  * @author Georg Fischer
  */
-
 public class A335533 extends FiniteSequence {
 
   /** Construct the sequence. */

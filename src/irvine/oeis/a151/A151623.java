@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A151623 Weight distribution of [256,55,64] extended binary primitive BCH (or XBCH) code.
  * @author Georg Fischer
  */
-
 public class A151623 extends FiniteSequence {
 
   /** Construct the sequence. */

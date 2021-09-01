@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343538 Longest sequence of distinct two-digit numbers (10-99) such that any two or three consecutive terms can be concatenated into a prime number, even when connected into a loop. Smallest number is listed first.
  * @author Georg Fischer
  */
-
 public class A343538 extends FiniteSequence {
 
   /** Construct the sequence. */

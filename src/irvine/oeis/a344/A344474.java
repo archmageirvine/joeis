@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A344474 Least number k such that half of the numbers from 0 to k inclusive contain the digit n.
  * @author Georg Fischer
  */
-
 public class A344474 extends FiniteSequence {
 
   /** Construct the sequence. */

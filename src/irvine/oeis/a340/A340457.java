@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A340457 Squares in A067459.
  * @author Georg Fischer
  */
-
 public class A340457 extends BriefSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336038 Squares visited by a chess king on a square-spiral numbered board and stepping to the lowest unvisited adjacent square, where each step is not in the same direction as the previous step.
  * @author Georg Fischer
  */
-
 public class A336038 extends FiniteSequence {
 
   /** Construct the sequence. */

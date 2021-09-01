@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A309411 Numbers k such that (44^k + 1)/45 is prime.
  * @author Georg Fischer
  */
-
 public class A309411 extends BriefSequence {
 
   /** Construct the sequence. */

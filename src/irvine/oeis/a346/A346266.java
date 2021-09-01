@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A346266 Number of cribs that score n points in 6-card cribbage.
  * @author Georg Fischer
  */
-
 public class A346266 extends FiniteSequence {
 
   /** Construct the sequence. */

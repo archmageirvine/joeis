@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A337034 The number of n-step self avoiding walks on a 3D cubic lattice confined inside a box of size 2x2x2 where the walk starts at one of the box's corners.
  * @author Georg Fischer
  */
-
 public class A337034 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A339538 Irregular table read by rows: The number of k-faced polyhedra, where k&gt;=4, created when an elongated n-bipyramid, with faces that are squares and equilateral triangles,  is internally cut by all the planes defined by any three of its vertices.
  * @author Georg Fischer
  */
-
 public class A339538 extends FiniteSequence {
 
   /** Construct the sequence. */

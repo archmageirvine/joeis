@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A336587 Smallest nonnegative integer containing the n-th letter of the Hebrew alphabet (in Hebrew using masculine numbers), or -1 if no such integer exists.
  * @author Georg Fischer
  */
-
 public class A336587 extends FiniteSequence {
 
   /** Construct the sequence. */

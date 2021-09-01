@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A337741 Numbers all of whose divisors are Niven numbers (A005349).
  * @author Georg Fischer
  */
-
 public class A337741 extends FiniteSequence {
 
   /** Construct the sequence. */

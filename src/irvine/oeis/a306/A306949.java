@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A306949 a(n) is the number of different types of faces of Johnson solid J_n, with solids ordered by indices in Johnson's paper.
  * @author Georg Fischer
  */
-
 public class A306949 extends FiniteSequence {
 
   /** Construct the sequence. */

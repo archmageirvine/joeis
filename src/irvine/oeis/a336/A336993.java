@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336993 List of m such that b(m) has no primitive factor, where {b(m)} is the generalized Lucas sequence defined by b(0) = 0, b(1) = 1 and b(m) = b(m-1) - 2*b(m-2) for m &gt;= 2 (A107920).
  * @author Georg Fischer
  */
-
 public class A336993 extends FiniteSequence {
 
   /** Construct the sequence. */

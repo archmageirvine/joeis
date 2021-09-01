@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A334342 Tatsuru Watanabe's set of 47 squarefree numbers whose reciprocals add to 1, with the property that each number has exactly two distinct prime factors.
  * @author Georg Fischer
  */
-
 public class A334342 extends FiniteSequence {
 
   /** Construct the sequence. */

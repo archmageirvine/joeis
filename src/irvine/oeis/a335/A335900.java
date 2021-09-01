@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A335900 Squares visited by a fairy chess wazir moving on a square-spiral numbered board where the wazir moves to the unvisited square containing the spiral number with the fewest divisors. In case of a tie it chooses the square with the lowest spiral number.
  * @author Georg Fischer
  */
-
 public class A335900 extends FiniteSequence {
 
   /** Construct the sequence. */

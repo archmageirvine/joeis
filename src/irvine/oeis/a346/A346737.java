@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A346737 Number of configurations of the 5 X 3 variant of the sliding block 15-puzzle that require a minimum of n moves to be reached, starting with the empty square in one of the corners.
  * @author Georg Fischer
  */
-
 public class A346737 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336670 Numbers that have decimal expansion c(1)c(2)...c(n) with distinct digits that satisfy c(1) &lt;&gt; 0, c(1) is the largest digit, and for each i in 1..n there is j in {0, 1} such that c(i) == 2*c(i-1) + j (mod 10) (with c(0): = c(n)).
  * @author Georg Fischer
  */
-
 public class A336670 extends FiniteSequence {
 
   /** Construct the sequence. */

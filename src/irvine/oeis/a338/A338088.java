@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338088 Smallest prime numbers which can be represented as x^2 + h*y^2 with x &gt; 0 for every h in the first n idoneal numbers.
  * @author Georg Fischer
  */
-
 public class A338088 extends FiniteSequence {
 
   /** Construct the sequence. */

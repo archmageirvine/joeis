@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A113515 If the name of the n-th Pope is Pope XXX the k-th, then the n-th term is k.
  * @author Georg Fischer
  */
-
 public class A113515 extends NoncomputableSequence {
 
   /** Construct the sequence. */

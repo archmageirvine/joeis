@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338606 Resistance values R &lt; 1 ohm, multiplied by a common denominator 360360 (= A338600(6)), that can be obtained from a network of exactly 6 one-ohm resistors, but not from any network with fewer than 6 one-ohm resistors.
  * @author Georg Fischer
  */
-
 public class A338606 extends FiniteSequence {
 
   /** Construct the sequence. */

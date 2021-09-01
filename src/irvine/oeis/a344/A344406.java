@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A344406 List of numbers that are not the number of subtrees of some caterpillar.
  * @author Georg Fischer
  */
-
 public class A344406 extends FiniteSequence {
 
   /** Construct the sequence. */

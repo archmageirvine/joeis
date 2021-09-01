@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A324033 Decimal expansion of the conversion factor from the old derived SI unit lm (lumen) to the combination of 2019 SI units K_{cd}*h*(\u0394\u03bd_{Cs})^2.
  * @author Georg Fischer
  */
-
 public class A324033 extends NoncomputableSequence {
 
   /** Construct the sequence. */

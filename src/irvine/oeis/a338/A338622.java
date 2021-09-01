@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338622 Irregular table read by rows: The number of k-faced polyhedra, where k&gt;=4, formed when the five Platonic solids, in the order tetrahedron, octahedron, cube, icosahedron, dodecahedron, are internally cut by all the planes defined by any three of their vertices.
  * @author Georg Fischer
  */
-
 public class A338622 extends FiniteSequence {
 
   /** Construct the sequence. */

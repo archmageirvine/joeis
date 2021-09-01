@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A332109 Numbers that are not the sum of nine (9) positive cubes.
  * @author Georg Fischer
  */
-
 public class A332109 extends FiniteSequence {
 
   /** Construct the sequence. */

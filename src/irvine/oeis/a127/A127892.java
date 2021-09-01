@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A127892 Largest n-digit left-truncatable prime.
  * @author Georg Fischer
  */
-
 public class A127892 extends FiniteSequence {
 
   /** Construct the sequence. */

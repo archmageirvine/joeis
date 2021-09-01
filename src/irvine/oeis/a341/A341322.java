@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A341322 Primes p such that (p*r) == q (mod p+r) where q and r are the next primes after p.
  * @author Georg Fischer
  */
-
 public class A341322 extends BriefSequence {
 
   /** Construct the sequence. */

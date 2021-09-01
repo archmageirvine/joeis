@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A230034 Numbers which can't be represented as a sum of 3 relatively prime positive integers such that each pair of them is not coprime.
  * @author Georg Fischer
  */
-
 public class A230034 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338603 Resistance distances occurring between vertices of the 5 Platonic solids, expressed over a common denominator of 60.
  * @author Georg Fischer
  */
-
 public class A338603 extends FiniteSequence {
 
   /** Construct the sequence. */

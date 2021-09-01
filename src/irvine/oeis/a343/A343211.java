@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343211 Number of (undirected) Hamiltonian cycles of the graph of the n-th Johnson solid.
  * @author Georg Fischer
  */
-
 public class A343211 extends FiniteSequence {
 
   /** Construct the sequence. */

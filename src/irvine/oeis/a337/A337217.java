@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A337217 One half of the even numbers of A094739.
  * @author Georg Fischer
  */
-
 public class A337217 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A110548 One of the three ordered sets of positive integers that solves the minimal magic die puzzle.
  * @author Georg Fischer
  */
-
 public class A110548 extends FiniteSequence {
 
   /** Construct the sequence. */

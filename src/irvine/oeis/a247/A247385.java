@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A247385 Erroneous decimal expansion (or digits) of Pi engraved in the wall of the Robertson Tunnel at the Washington Park (MAX station), Portland, Oregon. The digits displayed are digits 1-11, 102-111, 202-211, 302-311, 402-411, 502-511, 602-611, 702-711, 802-811, 902-911, 12-17.
  * @author Georg Fischer
  */
-
 public class A247385 extends NoncomputableSequence {
 
   /** Construct the sequence. */

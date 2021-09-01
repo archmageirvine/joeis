@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338551 Number of ways to make a checkout score of n in darts.
  * @author Georg Fischer
  */
-
 public class A338551 extends FiniteSequence {
 
   /** Construct the sequence. */

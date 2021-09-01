@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A346603 The first of four solutions to a Monthly problem asking if there exist finite sequences 1 &lt; a(1) &lt; a(2) &lt; ... &lt; a(n) such that Sum_i 1/a(i) = 1 and gcd(a(i), a(i+1)) = 1 for 1 &lt;= i &lt; n.
  * @author Georg Fischer
  */
-
 public class A346603 extends FiniteSequence {
 
   /** Construct the sequence. */

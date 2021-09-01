@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338602 Denominators y of resistance values R=x/y that can be obtained by a network of at most 10 one-ohm resistors such that a network of more than 10 one-ohm resistors is needed to obtain the resistance y/x. Numerators are in A338601.
  * @author Georg Fischer
  */
-
 public class A338602 extends FiniteSequence {
 
   /** Construct the sequence. */

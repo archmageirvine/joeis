@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A341667 Primes p such that p^6 - 1 has fewer than 384 divisors.
  * @author Georg Fischer
  */
-
 public class A341667 extends FiniteSequence {
 
   /** Construct the sequence. */

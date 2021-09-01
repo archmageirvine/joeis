@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A340919 Sorted sizes of the 55 squares used in the first known squared square of dimension 4205 X 4205 found by Roland Sprague in 1938.
  * @author Georg Fischer
  */
-
 public class A340919 extends FiniteSequence {
 
   /** Construct the sequence. */

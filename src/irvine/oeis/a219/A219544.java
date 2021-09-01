@@ -14,7 +14,7 @@ public class A219544 extends A007691 {
   
   /** Construct the sequence. */
   public A219544() {
-    mN = 1 - 1;
+    mN = 0;
     super.next();
   }
 

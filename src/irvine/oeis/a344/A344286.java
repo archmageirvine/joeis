@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A344286 Primes that are the largest member of a Wieferich 7-tuple.
  * @author Georg Fischer
  */
-
 public class A344286 extends BriefSequence {
 
   /** Construct the sequence. */

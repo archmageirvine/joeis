@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338571 Number of polyhedra formed when the five Platonic solids, in the order tetrahedron, octahedron, cube, icosahedron, dodecahedron, are internally cut by all the planes defined by any three of their vertices.
  * @author Georg Fischer
  */
-
 public class A338571 extends FiniteSequence {
 
   /** Construct the sequence. */

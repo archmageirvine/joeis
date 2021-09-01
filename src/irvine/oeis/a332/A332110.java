@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A332110 Numbers that are not the sum of ten (10) positive cubes.
  * @author Georg Fischer
  */
-
 public class A332110 extends FiniteSequence {
 
   /** Construct the sequence. */

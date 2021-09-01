@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343744 Zuckerman numbers which divided by the product of their digits give integers which are also divisible by the product of their digits, and so on, until result is 1.
  * @author Georg Fischer
  */
-
 public class A343744 extends FiniteSequence {
 
   /** Construct the sequence. */

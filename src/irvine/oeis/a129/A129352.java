@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A129352 Number parallelogram based on Pascal's triangle, read along diagonals.
  * @author Georg Fischer
  */
-
 public class A129352 extends FiniteSequence {
 
   /** Construct the sequence. */

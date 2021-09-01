@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A341812 Primes p such that p#-1 is divisible by the next prime after p.
  * @author Georg Fischer
  */
-
 public class A341812 extends BriefSequence {
 
   /** Construct the sequence. */

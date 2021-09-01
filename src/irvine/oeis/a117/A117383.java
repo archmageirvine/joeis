@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A117383 Positive numbers whose Spanish names do not include repeated letters.
  * @author Georg Fischer
  */
-
 public class A117383 extends FiniteSequence {
 
   /** Construct the sequence. */

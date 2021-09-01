@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A345319 Numbers whose reciprocals have period 10.
  * @author Georg Fischer
  */
-
 public class A345319 extends FiniteSequence {
 
   /** Construct the sequence. */

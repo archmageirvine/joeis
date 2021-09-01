@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343213 Number of spanning trees of the graphs of the platonic solids sorted by the number of faces.
  * @author Georg Fischer
  */
-
 public class A343213 extends FiniteSequence {
 
   /** Construct the sequence. */

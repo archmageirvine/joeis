@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A338883 Orders of elements of the Rubik's Cube group.
  * @author Georg Fischer
  */
-
 public class A338883 extends FiniteSequence {
 
   /** Construct the sequence. */

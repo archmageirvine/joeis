@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A341660 Primes p such that p^2 - 1 has fewer than 32 divisors.
  * @author Georg Fischer
  */
-
 public class A341660 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A345411 Decimal expansion of the ratio between the position of the peak of the wavelength distribution of black-body radiation and the wavelength corresponding to the position of the peak of this distribution in the frequency domain.
  * @author Georg Fischer
  */
-
 public class A345411 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A124472 Benjamin Franklin's 16 X 16 magic square read by rows.
  * @author Georg Fischer
  */
-
 public class A124472 extends NoncomputableSequence {
 
   /** Construct the sequence. */

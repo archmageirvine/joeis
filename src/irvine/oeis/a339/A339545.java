@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A339545 Primes p such that A007088(p) == A151799(p) (mod p).
  * @author Georg Fischer
  */
-
 public class A339545 extends BriefSequence {
 
   /** Construct the sequence. */

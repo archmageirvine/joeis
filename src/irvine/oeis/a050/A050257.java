@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A050257 Number of distinct antimagic squares of order n (modulo rotations and reflections).
  * @author Georg Fischer
  */
-
 public class A050257 extends BriefSequence {
 
   /** Construct the sequence. */

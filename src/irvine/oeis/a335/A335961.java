@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A335961 Alternating factorions: Numbers m such that m = S_af(m) = af(d_1)+af(d_2)+...+af(d_k) where d_1 d_2 ... d_n is the decimal expansion of m and af(m) = m!-(m-1)!+(m-2)!+...1! (alternating factorial) with af(0) = 0 (base 10).
  * @author Georg Fischer
  */
-
 public class A335961 extends FiniteSequence {
 
   /** Construct the sequence. */

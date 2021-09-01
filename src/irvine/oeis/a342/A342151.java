@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A342151 Maximum number of safe (i.e., not attacked) squares when placing n queens on a standard 8 X 8 chessboard.
  * @author Georg Fischer
  */
-
 public class A342151 extends FiniteSequence {
 
   /** Construct the sequence. */

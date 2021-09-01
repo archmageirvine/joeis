@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343763 Common prime factors of A007663(183)/1093 and A007663(490)/3511.
  * @author Georg Fischer
  */
-
 public class A343763 extends FiniteSequence {
 
   /** Construct the sequence. */

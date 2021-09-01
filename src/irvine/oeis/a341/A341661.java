@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A341661 Primes p such that p^4 - 1 has fewer than 160 divisors.
  * @author Georg Fischer
  */
-
 public class A341661 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -8,7 +8,6 @@ import irvine.oeis.BriefSequence;
  * A341689 a(n) is the sum of the 4th power of the first A125907(n) primes.
  * @author Georg Fischer
  */
-
 public class A341689 extends BriefSequence {
 
   /** Construct the sequence. */

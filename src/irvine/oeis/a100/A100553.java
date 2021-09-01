@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A100553 Prime numbers (including 1) whose number of digits is a power of 2, all digits from the set {1,2,3,5,7}, such that each half of the number is already in this sequence.
  * @author Georg Fischer
  */
-
 public class A100553 extends FiniteSequence {
 
   /** Construct the sequence. */

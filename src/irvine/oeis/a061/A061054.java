@@ -9,7 +9,6 @@ import irvine.oeis.FloorSequence;
  * A061054 Floor(n+n^(3/4)).
  * @author Georg Fischer
  */
-
 public class A061054 extends FloorSequence {
   /** Construct the sequence. */
   public A061054() {

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A339348 The number of n-faced polyhedra formed when a rhombic dodecahedron is internally cut by all the planes defined by any three of its vertices.
  * @author Georg Fischer
  */
-
 public class A339348 extends FiniteSequence {
 
   /** Construct the sequence. */

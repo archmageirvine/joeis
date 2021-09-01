@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A146953 Weight distribution of [256,93,32] Reed-Muller (or RM) code.
  * @author Georg Fischer
  */
-
 public class A146953 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A341992 Take a standard 6-sided die and concatenate the numbers that can be seen around any of the corners and sort into increasing order.
  * @author Georg Fischer
  */
-
 public class A341992 extends FiniteSequence {
 
   /** Construct the sequence. */

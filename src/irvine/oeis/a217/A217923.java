@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A217923 F-block elements for Janet periodic table.
  * @author Georg Fischer
  */
-
 public class A217923 extends NoncomputableSequence {
 
   /** Construct the sequence. */

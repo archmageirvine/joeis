@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A341214 a(n) is the smallest prime p such that p, p - 1, p - 2, ..., p - n + 1 have 2, 4, 6, ..., 2*n divisors respectively.
  * @author Georg Fischer
  */
-
 public class A341214 extends FiniteSequence {
 
   /** Construct the sequence. */

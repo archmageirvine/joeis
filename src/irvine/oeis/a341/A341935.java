@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A341935 a(0) = 0; for n &gt; 0, a(n) is the smallest positive integer not yet in the sequence that can be created by adding 1 or -1, for digits &gt; 0, to every digit in a(n-1).
  * @author Georg Fischer
  */
-
 public class A341935 extends FiniteSequence {
 
   /** Construct the sequence. */

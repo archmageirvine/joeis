@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A344634 Numbers k such that half the numbers from 0 to k inclusive contain the digit "0".
  * @author Georg Fischer
  */
-
 public class A344634 extends FiniteSequence {
 
   /** Construct the sequence. */

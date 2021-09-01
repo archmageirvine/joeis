@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A345405 Integers k such that k = (d1)_c + (d2)_c + ... + (dc)_c, where (d)_c denotes the descending factorial of d, c is the length of k and di is the i-th digit of k in base 10.
  * @author Georg Fischer
  */
-
 public class A345405 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A145107 Expansion of polynomial N_5 in Formula (10) in the reference.
  * @author Georg Fischer
  */
-
 public class A145107 extends FiniteSequence {
 
   /** Construct the sequence. */

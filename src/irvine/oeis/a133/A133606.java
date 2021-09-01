@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A133606 Numbers n with all digits different, such that all of its digits divide n, but none of the nonzero digits not in n divide n.
  * @author Georg Fischer
  */
-
 public class A133606 extends FiniteSequence {
 
   /** Construct the sequence. */

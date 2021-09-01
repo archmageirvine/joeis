@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A153843 First Sunday in n-th month of 365-day year starting on Thursday.
  * @author Georg Fischer
  */
-
 public class A153843 extends FiniteSequence {
 
   /** Construct the sequence. */

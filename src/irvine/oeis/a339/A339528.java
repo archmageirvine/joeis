@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A339528 The number of n-faced polyhedra formed when an elongated dodecahedron is internally cut by all the planes defined by any three of its vertices.
  * @author Georg Fischer
  */
-
 public class A339528 extends FiniteSequence {
 
   /** Construct the sequence. */

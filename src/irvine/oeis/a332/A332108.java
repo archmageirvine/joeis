@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A332108 Numbers that are not the sum of eight (8) positive cubes.
  * @author Georg Fischer
  */
-
 public class A332108 extends FiniteSequence {
 
   /** Construct the sequence. */

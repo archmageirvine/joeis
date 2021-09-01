@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336413 Squares visited by a chess rook moving on a square-spiral numbered board where the rook moves to the closest unvisited square containing a prime number. In case of a tie it chooses the square with the smallest prime number.
  * @author Georg Fischer
  */
-
 public class A336413 extends FiniteSequence {
 
   /** Construct the sequence. */

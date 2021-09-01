@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336384 Numbers of the form k = x*y where phi(k) = 3*(phi(x) + phi(y)).
  * @author Georg Fischer
  */
-
 public class A336384 extends FiniteSequence {
 
   /** Construct the sequence. */

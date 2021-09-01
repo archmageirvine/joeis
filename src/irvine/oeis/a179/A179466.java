@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A179466 Coefficients of x+(x+1)^2+(x+2)^3+(x+3)^4+(x+4)^5+(x+5)^6+(x+6)^7+(x+7)^8, highest power first.
  * @author Georg Fischer
  */
-
 public class A179466 extends FiniteSequence {
 
   /** Construct the sequence. */

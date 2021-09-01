@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248508 Decimal expansion of K_J = 2 e/h (Josephson constant) in units of A s^2 kg^{-1} m^{-2} in the 2019 SI system of units.
  * @author Georg Fischer
  */
-
 public class A248508 extends NoncomputableSequence {
 
   /** Construct the sequence. */

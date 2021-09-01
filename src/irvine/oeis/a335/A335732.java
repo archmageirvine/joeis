@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A335732 Emirps whose concatenation of adjacent digit differences either form an emirp that also has this characteristic or form a single digit prime, and whose emirp also has this characteristic.
  * @author Georg Fischer
  */
-
 public class A335732 extends FiniteSequence {
 
   /** Construct the sequence. */

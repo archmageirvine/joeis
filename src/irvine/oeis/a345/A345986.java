@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A345986 Numbers k &gt; 0 such that the k-th power of the Dedekind eta-function is lacunary.
  * @author Georg Fischer
  */
-
 public class A345986 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A332107 Numbers that are not the sum of seven (7) positive cubes.
  * @author Georg Fischer
  */
-
 public class A332107 extends FiniteSequence {
 
   /** Construct the sequence. */

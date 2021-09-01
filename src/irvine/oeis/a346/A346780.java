@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A346780 Using the NATO phonetic word for each letter, the last letter of the word is used for the next word until a repeated word would be necessary. This sequence shows the number of words for each letter.
  * @author Georg Fischer
  */
-
 public class A346780 extends FiniteSequence {
 
   /** Construct the sequence. */

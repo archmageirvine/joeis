@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A330585 The orders, with repetition, of the non-cyclic finite simple groups that are subquotients of the sporadic finite simple groups.
  * @author Georg Fischer
  */
-
 public class A330585 extends FiniteSequence {
 
   /** Construct the sequence. */

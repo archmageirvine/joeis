@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A343432 Sorted numbers of spanning trees in the graphs of the Archimedean solids.
  * @author Georg Fischer
  */
-
 public class A343432 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.BriefSequence;
  * A343459 Numbers that can be expressed both as the product of two consecutive composite numbers and as the product of three consecutive composite numbers.
  * @author Georg Fischer
  */
-
 public class A343459 extends BriefSequence {
 
   /** Construct the sequence. */

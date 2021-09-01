@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A294666 Decimal expansion of the hyperfine transition of neutral hydrogen in Hertz.
  * @author Georg Fischer
  */
-
 public class A294666 extends NoncomputableSequence {
 
   /** Construct the sequence. */

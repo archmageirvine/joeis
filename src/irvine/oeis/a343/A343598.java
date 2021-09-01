@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343598 Positive integers k such that exactly half the integers in [1..k] are divisible by a 7-smooth composite number.
  * @author Georg Fischer
  */
-
 public class A343598 extends FiniteSequence {
 
   /** Construct the sequence. */

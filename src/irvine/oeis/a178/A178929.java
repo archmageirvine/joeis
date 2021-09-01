@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A178929 Numbers m such that m*reversal(m) contains every decimal digit exactly once.
  * @author Georg Fischer
  */
-
 public class A178929 extends FiniteSequence {
 
   /** Construct the sequence. */

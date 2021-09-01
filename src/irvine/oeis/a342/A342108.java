@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A342108 Smallest positive integer m with n digits and such that omega(m) = bigomega(m) = n.
  * @author Georg Fischer
  */
-
 public class A342108 extends FiniteSequence {
 
   /** Construct the sequence. */

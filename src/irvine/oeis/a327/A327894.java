@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327894 Unicode codes for digit characters in the Basic Multilingual Plane (BMP).
  * @author Georg Fischer
  */
-
 public class A327894 extends NoncomputableSequence {
 
   /** Construct the sequence. */

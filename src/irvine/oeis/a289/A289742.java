@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A289742 Sizes of wrenches (or spanners) using imperial units.
  * @author Georg Fischer
  */
-
 public class A289742 extends NoncomputableSequence {
 
   /** Construct the sequence. */

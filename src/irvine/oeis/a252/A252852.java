@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A252852 Decimal expansion of Boltzmann constant in Hz K^-1.
  * @author Georg Fischer
  */
-
 public class A252852 extends NoncomputableSequence {
 
   /** Construct the sequence. */

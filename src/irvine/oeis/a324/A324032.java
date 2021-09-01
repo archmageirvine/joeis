@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A324032 Decimal expansion of the conversion factor from the old SI K (kelvin) to the combination of 2019 SI units h*\u0394\u03bd_{Cs}/k.
  * @author Georg Fischer
  */
-
 public class A324032 extends NoncomputableSequence {
 
   /** Construct the sequence. */

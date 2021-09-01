@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A201982 Consider the numbers 0 &lt;= n &lt;= 999 whose decimal digits are represented by (a,b,c). Look at the cross product of the vectors (u,v,w) = (a,b,c)^(c,b,a) in 3-dimensional Euclidean space. Sequence gives numbers n such that the components u, v, w are &gt; = 0.
  * @author Georg Fischer
  */
-
 public class A201982 extends FiniteSequence {
 
   /** Construct the sequence. */

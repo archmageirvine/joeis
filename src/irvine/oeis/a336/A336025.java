@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A336025 Numbers m providing record values for the proportion of nonsquarefree integers in the interval [1, m].
  * @author Georg Fischer
  */
-
 public class A336025 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A337138 Numbers that cannot be written as the sum of 5 or less squares of composite numbers, allowing repetitions (complement of A055075).
  * @author Georg Fischer
  */
-
 public class A337138 extends FiniteSequence {
 
   /** Construct the sequence. */

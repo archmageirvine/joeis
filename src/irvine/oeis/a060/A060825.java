@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A060825 Smallest n-digit left truncatable prime of Henry VIII type.
  * @author Georg Fischer
  */
-
 public class A060825 extends FiniteSequence {
 
   /** Construct the sequence. */

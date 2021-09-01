@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343212 Order of the symmetry group of the n-th Johnson solid.
  * @author Georg Fischer
  */
-
 public class A343212 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -6,7 +6,6 @@ import irvine.oeis.NoncomputableSequence;
  * A236629 Decimal expansion of G/(3*c^2), where G is the Newtonian constant of gravitation and c is the speed of light in vacuum, in SI units.
  * @author Georg Fischer
  */
-
 public class A236629 extends NoncomputableSequence {
 
   /** Construct the sequence. */

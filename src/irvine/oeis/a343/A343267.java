@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A343267 Numbers that are not the sum of four or fewer terms from A020330 (not necessarily distinct).
  * @author Georg Fischer
  */
-
 public class A343267 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A339349 The number of n-faced polyhedra formed when a cuboctahedron is internally cut by all the planes defined by any three of its vertices.
  * @author Georg Fischer
  */
-
 public class A339349 extends FiniteSequence {
 
   /** Construct the sequence. */

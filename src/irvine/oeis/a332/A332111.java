@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A332111 Numbers that are not the sum of eleven (11) positive cubes.
  * @author Georg Fischer
  */
-
 public class A332111 extends FiniteSequence {
 
   /** Construct the sequence. */

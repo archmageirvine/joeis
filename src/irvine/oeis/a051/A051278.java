@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051278.
+ * A051278 Numbers n such that n = k/d(k) has a unique solution, where d(k) = number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A051278 implements Sequence {

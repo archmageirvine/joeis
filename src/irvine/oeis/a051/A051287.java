@@ -15,7 +15,7 @@ public class A051287 implements Sequence {
   private int mN = -1;
   private int mM = 0;
 
-  private long p(final int n, final int k, final int c) {
+  protected long p(final int n, final int k, final int c) {
     while (n >= mCounts.size()) {
       final int nn = mCounts.size();
       final long[][] cnts = new long[nn + 1][nn + 1];

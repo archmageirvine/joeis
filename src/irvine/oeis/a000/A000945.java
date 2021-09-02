@@ -10,7 +10,20 @@ import irvine.oeis.Sequence;
  */
 public class A000945 implements Sequence {
 
-  private final Sequence mSeq = EuclidMullinSequence.create(2);
+  private final Sequence mSeq;
+
+  /** Construct the sequence */
+  public A000945() {
+  	this(2);
+  }
+  
+  /** 
+   * Generic constructor with parameter
+   * @param parm initial term
+   */
+  public A000945(final long parm) {
+    mSeq = EuclidMullinSequence.create(parm);
+  }
 
   @Override
   public Z next() {

@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -57,6 +57,7 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
   private int mPos = 0;
   private Z mProd = Z.ONE;
   private boolean mFileBased = false;
+  private final Fast mPrime = new Fast();
 
   EuclidMullinSequence(final Z p) throws IOException {
     mP = p;
@@ -138,10 +139,6 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
   public Z next() {
     if (mPos >= mSeq.size()) {
       // Need to extend current results
-      if (mFileBased) {
-        // If we were working from a file, assume it is hard to go further
-        throw new UnsupportedOperationException(mSeq.get(0).toString());
-      }
       final Z prodPlusOne = mProd.add(1);
       if (prodPlusOne.isProbablePrime()) {
         mSeq.add(prodPlusOne);
@@ -149,12 +146,20 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
         if (mVerbose) {
           System.err.println("em" + mSeq.get(0) + "(" + (mPos + 1) + ") Factoring: " + prodPlusOne);
         }
-        final Fast primes = new Fast();
-        long p = 1;
-        do {
-          p = primes.nextPrime(p);
-        } while (prodPlusOne.mod(p) != 0);
-        mSeq.add(Z.valueOf(p));
+        // Try a quick run up first
+        for (long p = 2; p < 10000; p = mPrime.nextPrime(p)) {
+          if (prodPlusOne.mod(p) == 0) {
+            final Z pp = Z.valueOf(p);
+            mSeq.add(pp);
+            mProd = mProd.multiply(pp);
+            ++mPos;
+            return pp;
+          }
+        }
+        // Try factordb
+        final FactorSequence fs = Jaguar.factor(prodPlusOne);
+        final Z p = fs.toZArray()[0];
+        mSeq.add(p);
       }
     }
     final Z lpf = mSeq.get(mPos++);
@@ -179,7 +184,7 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
       System.out.println("1 " + args[1]);
       while (true) {
         prod = prod.multiply(em.next());
-        final FactorSequence fs = Cheetah.factor(prod.add(1));
+        final FactorSequence fs = Jaguar.factor(prod.add(1));
         final Z[] z = fs.toZArray();
         final StringBuilder sb = new StringBuilder();
         sb.append(++iter).append(' ');

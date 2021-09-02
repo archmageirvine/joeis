@@ -10,6 +10,7 @@ import irvine.oeis.FloorSequence;
  * @author Georg Fischer
  */
 public class A095395 extends FloorSequence {
+
   /** Construct the sequence. */
   public A095395() {
     super(1);
@@ -17,8 +18,8 @@ public class A095395 extends FloorSequence {
 
   @Override
   protected Z evalCR(final long n) {
-    CR n1 = CR.valueOf(mN + 1).divide(CR.valueOf(n));
-    CR n2 = CR.valueOf(n).divide(CR.valueOf(mN + 1));
+    final CR n1 = CR.valueOf(mN + 1).divide(CR.valueOf(n));
+    final CR n2 = CR.valueOf(n).divide(CR.valueOf(mN + 1));
     return        CR.valueOf(n).pow(n1).floor()
         .subtract(CR.valueOf(n).pow(n2).floor());
   }

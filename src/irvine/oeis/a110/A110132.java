@@ -17,7 +17,6 @@ public class A110132 extends FloorSequence {
 
   @Override
   protected Z evalCR(final long n) {
-    return Z.valueOf(mN / 2).pow((mN + 1)/ 2);
+    return Z.valueOf(mN / 2).pow((mN + 1) / 2);
   }
-
 }

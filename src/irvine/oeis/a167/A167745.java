@@ -22,11 +22,10 @@ public class A167745 extends A000045 {
   public Z next() {
     while (true) {
       ++mN;
-      final Z [] quot = super.next().divideAndRemainder(Z.valueOf(mN));
+      final Z[] quot = super.next().divideAndRemainder(Z.valueOf(mN));
       if (quot[1].isZero()) {
         return quot[0];
       }
     }
   }
-
 }

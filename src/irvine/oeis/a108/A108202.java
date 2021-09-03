@@ -10,8 +10,8 @@ import irvine.oeis.a007.A007376;
  * @author Georg Fischer
  */
 public class A108202 extends MemorySequence {
-	
-  private Sequence mSeq = new A007376();
+
+  private final Sequence mSeq = new A007376();
 
   @Override
   protected Z computeNext() {

@@ -14,7 +14,7 @@ public class A000945 implements Sequence {
 
   /** Construct the sequence */
   public A000945() {
-  	this(2);
+    this(2);
   }
   
   /** 

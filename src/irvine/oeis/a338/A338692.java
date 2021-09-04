@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a343.A343500;
 
 /**
- * A338692 Positions of 1&apos;s in A209615.
+ * A338692 Positions of 1's in A209615.
  * @author Georg Fischer
  */
 public class A338692 extends A343500 {

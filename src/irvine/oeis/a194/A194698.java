@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A194698 a(n) = floor((n - 1)/12) - floor((n^2 - 1)/(24 * n)).
+ * A194698 a(n) = floor((n - 1)/12) - floor((n^2 - 1)/(24*n)).
  * @author Georg Fischer
  */
 public class A194698 extends FloorSequence {

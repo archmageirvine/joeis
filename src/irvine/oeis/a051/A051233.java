@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051233.
+ * A051233 Number of unit squares at least 50% covered by a circle inscribed in an integer square of size n X n.
  * @author Sean A. Irvine
  */
 public class A051233 implements Sequence {

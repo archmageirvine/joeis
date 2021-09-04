@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A051233.
+ * A051296 INVERT transform of factorial numbers.
  * @author Sean A. Irvine
  */
 public class A051296 extends MemorySequence {

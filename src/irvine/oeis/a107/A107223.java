@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A107223 Floor(Pi * Floor(n * Pi)).
+ * A107223 Floor(Pi*Floor(n*Pi)).
  * @author Georg Fischer
  */
 public class A107223 extends FloorSequence {

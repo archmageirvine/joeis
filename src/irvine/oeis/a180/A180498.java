@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A180498 a(n) = n^2 - 5 * floor(n/sqrt(5))^2.
+ * A180498 a(n) = n^2 - 5*floor(n/sqrt(5))^2.
  * @author Georg Fischer
  */
 public class A180498 extends FloorSequence {

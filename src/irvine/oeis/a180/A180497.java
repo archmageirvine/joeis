@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A180497 a(n)=n^2-3 * floor[n/sqrt(3)]^2.
+ * A180497 a(n)=n^2-3*floor[n/sqrt(3)]^2.
  * @author Georg Fischer
  */
 public class A180497 extends FloorSequence {

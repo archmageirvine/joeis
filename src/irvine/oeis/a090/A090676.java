@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A090676 a(n) = round(n^3/12) - floor(n/4) * floor((n+2)/4).
+ * A090676 a(n) = round(n^3/12) - floor(n/4)*floor((n+2)/4).
  * @author Georg Fischer
  */
 public class A090676 extends FloorSequence {

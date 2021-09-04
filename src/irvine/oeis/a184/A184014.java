@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A184014 n + floor(sqrt(e * n)); complement of A184015.
+ * A184014 n + floor(sqrt(e*n)); complement of A184015.
  * @author Georg Fischer
  */
 public class A184014 extends FloorSequence {

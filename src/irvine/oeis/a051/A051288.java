@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051287.
+ * A051288 Triangle read by rows: T(n,k) = number of paths of n upsteps U and n downsteps D that contain k UUDs.
  * @author Sean A. Irvine
  */
 public class A051288 implements Sequence {

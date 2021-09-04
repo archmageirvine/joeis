@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A257854 a(n) = 2 * n^4 - floor(2^(1/4) * n)^4.
+ * A257854 a(n) = 2*n^4 - floor(2^(1/4)*n)^4.
  * @author Georg Fischer
  */
 public class A257854 extends FloorSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A278907 a(n) = floor((n * 2^(n+1)+2)/(2 * n-(-1)^n+3)) - floor((n * 2^(n+1)-2)/(2 * n-(-1)^n+3)).
+ * A278907 a(n) = floor((n*2^(n+1)+2)/(2*n-(-1)^n+3)) - floor((n*2^(n+1)-2)/(2*n-(-1)^n+3)).
  * @author Georg Fischer
  */
 public class A278907 extends FloorSequence {

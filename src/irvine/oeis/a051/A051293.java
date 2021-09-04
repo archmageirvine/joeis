@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A051233.
+ * A051293 Number of nonempty subsets of {1,2,3,...,n} whose elements have an integer average.
  * @author Sean A. Irvine
  */
 public class A051293 extends MemorySequence {

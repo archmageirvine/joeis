@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004001;
 
 /**
- * A051284.
+ * A051284 a(n) is the number k, 2^n &lt; k &lt; 2^(n+1), such that k/c(k) is a minimum in the interval, where c(k) is Hofstadter-Conway sequence A004001.
  * @author Sean A. Irvine
  */
 public class A051284 extends A004001 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A051233.
+ * A051295 a(0)=1; thereafter, a(m+1) = Sum_{k=0..m} k!*a(m-k).
  * @author Sean A. Irvine
  */
 public class A051295 extends MemorySequence {

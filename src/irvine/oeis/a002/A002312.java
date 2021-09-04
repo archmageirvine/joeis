@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002312 Arc-cotangent reducible numbers or non-St\u00f8rmer numbers: largest prime factor of n^2 + 1 is less than 2n.
+ * A002312 Arc-cotangent reducible numbers or non-St\u00f8rmer numbers: largest prime factor of k^2 + 1 is less than 2*k.
  * @author Sean A. Irvine
  */
 public class A002312 implements Sequence {

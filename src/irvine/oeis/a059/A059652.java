@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A059652 a(n) = [[(k^2) * n]-(k * [k * n])], where k = sqrt(3/2) and [] is the floor function.
+ * A059652 a(n) = [[(k^2)*n]-(k*[k*n])], where k = sqrt(3/2) and [] is the floor function.
  * @author Georg Fischer
  */
 public class A059652 extends FloorSequence {

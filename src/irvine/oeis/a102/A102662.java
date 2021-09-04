@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.a208.A208509;
 
 /**
- * A102662 Triangle read by rows: T(1, 1)=1,T(2, 1)=1,T(2, 2)=3, T(k-1,r-1)+T(k-1,r)+T(k-2,r-1).
+ * A102662 Triangle read by rows: T(1,1)=1,T(2,1)=1,T(2,2)=3, T(k-1,r-1)+T(k-1,r)+T(k-2,r-1).
  * (a,b,c,d,e,f) = (1, 1, 0, 2x,x, 1)
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051283.
+ * A051283 Numbers k such that if one writes k = Product p_i^e_i (p_i primes) and P = max p_i^e_i, then k/P &gt; P.
  * @author Sean A. Irvine
  */
 public class A051283 implements Sequence {

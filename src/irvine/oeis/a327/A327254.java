@@ -4,7 +4,7 @@ package irvine.oeis.a327;
 import irvine.oeis.PositionSequence;
 
 /**
- * A327254 Positions of 0&apos;s in {A327253(n) : n &gt; 0}.
+ * A327254 Positions of 0's in {A327253(n) : n &gt; 0}.
  * @author Georg Fischer
  */
 public class A327254 extends PositionSequence {

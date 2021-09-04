@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A129972 a(n) = 2 * floor(log_2(n)) + 1.
+ * A129972 a(n) = 2*floor(log_2(n)) + 1.
  * @author Georg Fischer
  */
 public class A129972 extends FloorSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.PositionSequence;
 
 /**
- * A059655 Positions of minus ones (-1&apos;s) in A059652.
+ * A059655 Positions of minus ones (-1's) in A059652.
  * @author Georg Fischer
  */
 public class A059655 extends PositionSequence {

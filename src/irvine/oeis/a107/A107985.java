@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A107985 Triangle read by rows: T(n,k) = (k+1)*(n+2)*(n-k+1)/2 for 0 <= k <= n.
+ * A107985 Triangle read by rows: T(n,k) = (k+1)(n+2)(n-k+1)/2 for 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A107985 implements Sequence {

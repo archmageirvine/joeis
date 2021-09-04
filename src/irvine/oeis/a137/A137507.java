@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A137507 a(n) = 100^[n/10] + 2 * n * 10^[n/10]: inspired by Engel expansion of Pi.
+ * A137507 a(n) = 100^[n/10] + 2*n*10^[n/10]: inspired by Engel expansion of Pi.
  * @author Georg Fischer
  */
 public class A137507 extends FloorSequence {

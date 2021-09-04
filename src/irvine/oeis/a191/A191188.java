@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A191188 a(n) = floor(8 * n * Pi) - 2 * floor(4 * n * Pi).
+ * A191188 a(n) = floor(8*n*Pi) - 2*floor(4*n*Pi).
  * @author Georg Fischer
  */
 public class A191188 extends FloorSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197283 Decimal expansion of least x&gt;0 having sin(5x)=(sin x)^2.
+ * A197283 Decimal expansion of least x&gt;0 having sin(5*x) = (sin(x))^2.
  * Equation; sin(5*x)-((sin(x))^2) = 0.569345...
  * @author Georg Fischer
  */

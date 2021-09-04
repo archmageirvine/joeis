@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A185542 a(n) = m * (m+1)/2, where m = floor(n^(5/2)).
+ * A185542 a(n) = m*(m+1)/2, where m = floor(n^(5/2)).
  * @author Georg Fischer
  */
 public class A185542 extends FloorSequence {

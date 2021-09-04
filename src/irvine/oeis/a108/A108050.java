@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A108050 Integers n such that 10^n+21 is prime.
+ * A108050 Integers k such that 10^k+21 is prime.
  * @author Georg Fischer
  */
 public class A108050 extends PrimePositionSubsequence {

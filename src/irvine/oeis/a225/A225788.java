@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A225788 Floor(72*n^(1/2)*(log(n))^(3/2)).
+ * A225788 a(n) = floor(72*n^(1/2)*(log(n))^(3/2)) for n &gt;= 1, a(0) = 0.
  * @author Georg Fischer
  */
 public class A225788 extends FloorSequence {

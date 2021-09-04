@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A121488 a(n) = 8 * n^2 - floor(n * sqrt(8))^2.
+ * A121488 a(n) = 8*n^2 - floor(n*sqrt(8))^2.
  * @author Georg Fischer
  */
 public class A121488 extends FloorSequence {

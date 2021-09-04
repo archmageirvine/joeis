@@ -8,7 +8,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A123910 Numbers n such that n!!-4 is prime.
+ * A123910 Numbers k such that k!!-4 is prime.
  * @author Georg Fischer
  */
 public class A123910 extends PrimePositionSubsequence {

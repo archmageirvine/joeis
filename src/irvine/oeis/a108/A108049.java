@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A108049 Integers n such that 10^n+43 is a prime number.
+ * A108049 Integers k such that 10^k + 43 is a prime number.
  * @author Georg Fischer
  */
 public class A108049 extends PrimePositionSubsequence {

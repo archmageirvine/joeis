@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102561 2^floor(n/2)((-1)^floor(n/2)+(-1)^n)/2.
+ * A102561 a(n) = 2^floor(n/2)*((-1)^floor(n/2) + (-1)^n)/2.
  * Recurrence: a(n-4) - a(n) = 0.
  * @author Georg Fischer
  */

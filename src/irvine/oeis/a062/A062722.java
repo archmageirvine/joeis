@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A062722 a(n) = ceiling(n/3) * round(n/4).
+ * A062722 a(n) = ceiling(n/3)*round(n/4).
  * @author Georg Fischer
  */
 public class A062722 extends FloorSequence {

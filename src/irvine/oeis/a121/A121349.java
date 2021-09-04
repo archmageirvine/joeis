@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A121349 a(n) = round(Pi*2^(n-1)).
+ * A121349 a(n) = round(Pi*2^(n-1)) for n &gt;= 1, a(0) = 1.
  * @author Georg Fischer
  */
 public class A121349 extends FloorSequence {

@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.a208.A208509;
 
 /**
- * A164975 Triangle T(n,k) read by rows: T(n,k) = T(n-1,k) + 2*T(n-1,k-1) + T(n-2,k) - T(n-2,k-1), T(n, 0) = A000045(n), 0 &lt;= k &lt;= n-1.
+ * A164975 Triangle T(n,k) read by rows: T(n,k) = T(n-1,k) + 2*T(n-1,k-1) + T(n-2,k) - T(n-2,k-1), T(n,0) = A000045(n), 0 &lt;= k &lt;= n-1.
  * (a,b,c,d,e,f) = (1,x+1, 0, 1, 2x, 0)
  * @author Georg Fischer
  */

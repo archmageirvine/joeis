@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.math.z.Z;
 
 /**
- * A190844 Integers in (1+A190804)/3; contains A190804 as a proper subsequence.
+ * A190844 Integers in A190804/3; contains A190804 as a proper subsequence.
  * @author Georg Fischer
  */
 public class A190844 extends A190804 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A191152 [4n * e]-2[2n * e], where [ ]=floor.
+ * A191152 [4n*e]-2[2n*e], where [ ]=floor.
  * @author Georg Fischer
  */
 public class A191152 extends FloorSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.math.z.Z;
 
 /**
- * A051287.
+ * A051290 Triangular array T read by rows: T(n,k)=P(2n+3,n,2k+3), where P(n,k,c)=number of vectors (x(1),x(2,),...,x(n)) of k 1's and n-k 0's such that x(i)=x(n+1-i) for exactly c values of i.
  * @author Sean A. Irvine
  */
 public class A051290 extends A051287 {

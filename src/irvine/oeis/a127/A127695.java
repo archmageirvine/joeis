@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A127695 Floor( 2 * (2 * n+1)^n * sinh(1/2) ) - (2 * n+2)^n + (2 * n)^n.
+ * A127695 Floor( 2*(2*n+1)^n*sinh(1/2) ) - (2*n+2)^n + (2*n)^n.
  * @author Georg Fischer
  */
 public class A127695 extends FloorSequence {

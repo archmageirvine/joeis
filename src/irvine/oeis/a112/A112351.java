@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.a208.A208509;
 
 /**
- * A112351 Triangle read by rows, generated from (...5, 3, 1).
+ * A112351 Triangle read by rows, generated from (...5,3,1).
  * (a,b,c,d,e,f) = (x, 1, 0, 2x,x+1, 0)
  * @author Georg Fischer
  */

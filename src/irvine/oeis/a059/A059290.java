@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A059290 a(n) = round(1/144 * n^2 * (n + 3)).
+ * A059290 a(n) = round(1/144*n^2*(n + 3)).
  * @author Georg Fischer
  */
 public class A059290 extends FloorSequence {

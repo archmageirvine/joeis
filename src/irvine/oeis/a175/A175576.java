@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A175576 Decimal expansion Pi^(3/2)/ (Gamma(3/4))^2.
+ * A175576 Decimal expansion Pi^(3/2)/Gamma(3/4)^2.
  * Formula: Pi^(3/2)/(Gamma(3/4))^2
  * @author Georg Fischer
  */

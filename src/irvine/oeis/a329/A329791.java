@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A329791 a(n) = floor(sqrt(2) * n) + floor(sqrt(3) * n).
+ * A329791 a(n) = floor(sqrt(2)*n) + floor(sqrt(3)*n).
  * @author Georg Fischer
  */
 public class A329791 extends FloorSequence {

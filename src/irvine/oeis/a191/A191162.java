@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A191162 a(n) = [4 * n * Pi] - 2 * [2 * n * Pi], where [ ]=floor.
+ * A191162 a(n) = [4*n*Pi] - 2*[2*n*Pi], where [ ]=floor.
  * @author Georg Fischer
  */
 public class A191162 extends FloorSequence {

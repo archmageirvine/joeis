@@ -66,11 +66,11 @@ public class A051233 implements Sequence {
         final CR sm = ComputableReals.SINGLETON.asin(CR.valueOf(new Q(2 * x - 1, n)));
         final CR a = sp.subtract(sm).multiply(n * n);
         final long p = (n - 1) / 2;
-        final long q = p * (p + 1);
-        final CR b = CR.valueOf(q + x - x * x).sqrt().multiply(2 - 4 * x);
-        final CR c = CR.valueOf(q - x - x * x).sqrt().multiply(2 + 4 * x);
+        final long o = p * (p + 1);
+        final CR b = CR.valueOf(o + x - x * x).sqrt().multiply(2 - 4 * x);
+        final CR c = CR.valueOf(o - x - x * x).sqrt().multiply(2 + 4 * x);
         final CR d = a.add(b).add(c).divide(CR.EIGHT);
-        //System.out.println("n=" + n + " x=" + x + " d=" + d + " q=" + q);
+        //System.out.println("n=" + n + " x=" + x + " d=" + d + " o=" + o);
         h = d.subtract(CR.HALF).round().longValueExact();
       } else {
         h = f(r, CR.valueOf(x)).subtract(CR.HALF).round().longValueExact();

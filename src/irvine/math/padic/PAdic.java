@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Container for the p-adic expansion of a number.  These expansions are lazily
  * evaluated with terms computed on an as-needed basis.
  * @author Sean A. Irvine
-*/
+ */
 public interface PAdic {
 
   /**
@@ -55,7 +55,7 @@ public interface PAdic {
    * @param n expansion
    * @return p-adic number
    */
-  static PAdic create(final long p, final long[] n) {
+  static PAdic create(final long p, final long... n) {
     return new FinitePAdic(p, n);
   }
 }

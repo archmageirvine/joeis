@@ -4,7 +4,7 @@ package irvine.math.padic;
  * Container for the p-adic expansion of a number.  These expansions are lazily
  * evaluated with terms computed on an as-needed basis.
  * @author Sean A. Irvine
-*/
+ */
 public abstract class AbstractPAdic implements PAdic {
 
   @Override

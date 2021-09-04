@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(AddTest.class);
     suite.addTestSuite(FinitePAdicTest.class);
+    suite.addTestSuite(NegateTest.class);
     suite.addTestSuite(PAdicZTest.class);
     return suite;
   }

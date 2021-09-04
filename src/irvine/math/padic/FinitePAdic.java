@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * A finite p-adic expansion.
  * @author Sean A. Irvine
-*/
+ */
 public class FinitePAdic extends AbstractPAdic {
 
   private final long mPrime;

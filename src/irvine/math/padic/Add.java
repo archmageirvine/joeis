@@ -4,10 +4,9 @@ import irvine.math.z.Z;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * Container for the p-adic expansion of a number.  These expansions are lazily
- * evaluated with terms computed on an as-needed basis.
+ * Addition of two p-adics.
  * @author Sean A. Irvine
-*/
+ */
 public class Add extends AbstractPAdic {
 
   private final PAdic mA;
@@ -34,11 +33,7 @@ public class Add extends AbstractPAdic {
     return mA.p();
   }
 
-  /**
-   * Extract a specified digit of the p-adic expansion.
-   * @param n index of digit
-   * @return digit
-   */
+  @Override
   public long get(final int n) {
     if (n < 0) {
       throw new IllegalArgumentException();

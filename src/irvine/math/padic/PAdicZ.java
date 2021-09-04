@@ -7,7 +7,7 @@ import irvine.util.array.DynamicLongArray;
  * Container for the p-adic expansion of a number.  These expansions are lazily
  * evaluated with terms computed on an as-needed basis.
  * @author Sean A. Irvine
-*/
+ */
 public class PAdicZ extends AbstractPAdic {
 
   private final long mPrime;

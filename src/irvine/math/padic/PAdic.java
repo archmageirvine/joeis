@@ -23,6 +23,12 @@ public interface PAdic {
   long p();
 
   /**
+   * Return the valuation of this number of -1 for 0.
+   * @return valuation
+   */
+  int val();
+
+  /**
    * Return a string representation of this number.
    * @param n precision
    * @return string

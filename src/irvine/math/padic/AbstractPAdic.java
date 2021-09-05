@@ -14,6 +14,15 @@ public abstract class AbstractPAdic implements PAdic {
   public abstract long p();
 
   @Override
+  public int val() {
+    int k = 0;
+    while (get(k) == 0) {
+      ++k;
+    }
+    return k;
+  }
+
+  @Override
   public String toString(final int n) {
     final StringBuilder sb = new StringBuilder();
     for (int k = 0; k <= n; ++k) {

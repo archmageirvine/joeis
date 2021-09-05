@@ -33,4 +33,16 @@ public class FinitePAdic extends AbstractPAdic {
   public long p() {
     return mPrime;
   }
+
+  @Override
+  public int val() {
+    int k = 0;
+    while (get(k) == 0) {
+      if (++k >= mExpansion.length) {
+        return -1; // we have a zero
+      }
+    }
+    return k;
+
+  }
 }

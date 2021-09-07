@@ -43,7 +43,7 @@ public class Add extends AbstractPAdic {
       final Z q = mCarry.add(mA.get(mValid)).add(mB.get(mValid));
       final long r = q.mod(p);
       mExpansion.set(mValid++, r);
-      mCarry = q.subtract(r).divide(p);
+      mCarry = q.divide(p); // q.subtract(r).divide(p);
     }
     return mExpansion.get(n);
   }

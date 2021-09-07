@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051299.
+ * A051299 a(n+1) = a(n) + rotate( a(n), 1 digit left).
  * @author Sean A. Irvine
  */
 public class A051299 implements Sequence {

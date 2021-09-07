@@ -89,7 +89,8 @@ final class Root {
       throw new ArithmeticException("Attempt to take zeroth root.");
     } else if (sa < 0) {
       throw new ArithmeticException("Attempt to take even root of negative number.");
-    } else if (sa == 0 && n < 0) {
+    } else if (sa == 0) {
+      // assert n < 0
       throw new ArithmeticException("Attempt to take negative root of zero.");
     } else {
       aa.mAuxiliary = 1L;

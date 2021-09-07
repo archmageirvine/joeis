@@ -21,22 +21,18 @@ public class Mul extends AbstractPAdic {
     if (valb < 0) {
       return b;
     }
-    return new Mul(a, vala, b, valb);
+    return new Mul(a, b);
   }
 
   private final PAdic mA;
   private final PAdic mB;
-  private final int mValA;
-  private final int mValB;
   private final DynamicLongArray mExpansion = new DynamicLongArray();
   private int mValid = 0;
   private Z mCarry = Z.ZERO;
 
-  private Mul(final PAdic a, final int vala, final PAdic b, final int valb) {
+  private Mul(final PAdic a, final PAdic b) {
     mA = a;
     mB = b;
-    mValA = vala;
-    mValB = valb;
   }
 
   @Override
@@ -52,13 +48,12 @@ public class Mul extends AbstractPAdic {
     final long p = p();
     while (n >= mValid) {
       Z q = mCarry;
-      final long a = mA.get(mValid);
       for (int m = 0; m <= mValid; ++m) {
-        q = q.add(a * mB.get(m));
+        q = q.add(mA.get(mValid - m) * mB.get(m));
       }
       final long r = q.mod(p);
       mExpansion.set(mValid++, r);
-      mCarry = q.subtract(r).divide(p);
+      mCarry = q.divide(p); // q.subtract(r).divide(p);
     }
     return mExpansion.get(n);
   }

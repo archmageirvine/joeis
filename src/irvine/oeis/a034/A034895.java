@@ -11,8 +11,16 @@ public class A034895 implements Sequence {
 
   private Z mN = Z.valueOf(21);
 
-  private boolean is(final Z n) {
+  /**
+   * True iff dropping any single digit from n yields a prime.
+   * @param n number to test
+   * @return true iff dropping any digit yields a prime.
+   */
+  public static boolean is(final Z n) {
     final String s = n.toString();
+    if (s.length() <= 1) {
+      return false;
+    }
     for (int k = 0; k < s.length(); ++k) {
       if (!new Z(s.substring(0, k) + s.substring(k + 1)).isProbablePrime()) {
         return false;

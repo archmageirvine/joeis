@@ -10,17 +10,13 @@ import irvine.oeis.a033.A033716;
  */
 public class A096936 extends A033716 {
 
-  protected int mN;
-  
   /** Construct the sequence. */
   public A096936() {
-    mN = 0;
     super.next();
   }
 
   @Override
   public Z next() {
-    ++mN;
     return super.next().divide2();
   }
 }

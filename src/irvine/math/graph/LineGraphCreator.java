@@ -10,7 +10,6 @@ import irvine.util.Pair;
  */
 class LineGraphCreator {
 
-  private final Graph mG;
   private final HashMap<Pair<Integer, Integer>, Integer> mEdgeMap = new HashMap<>();
   private final Graph mL;
 
@@ -29,7 +28,6 @@ class LineGraphCreator {
   }
 
   LineGraphCreator(final Graph g) {
-    mG = g;
     mL = GraphFactory.create(g.size());
     for (int v = 0; v < g.order(); ++v) {
       for (int u = g.nextVertex(v, -1); u >= 0; u = g.nextVertex(v, u)) {

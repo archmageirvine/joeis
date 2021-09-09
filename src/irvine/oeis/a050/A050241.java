@@ -12,7 +12,9 @@ public class A050241 implements Sequence {
   private long mN = 0;
 
   private long isPowerful(final long n, final String s, final int pos) {
-    assert n >= 0;
+    if (n < 0) {
+      return 0;
+    }
     if (pos == s.length()) {
       return n == 0 ? 1 : 0;
     }

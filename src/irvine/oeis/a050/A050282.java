@@ -13,5 +13,10 @@ public class A050282 extends A035117 {
   protected Z digit() {
     return Z.THREE;
   }
+
+  @Override
+  public Z next() {
+    return super.next().max(Z.NINE);
+  }
 }
 

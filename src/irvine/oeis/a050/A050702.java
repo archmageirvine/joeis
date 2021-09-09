@@ -26,16 +26,18 @@ public class A050702 implements Sequence {
         final long rev = LongUtils.reverse(mN);
         if (rev != mN) {
           final FactorSequence fs = Cheetah.factor(mN);
-          if ((long) fs.omega() > 1) {
-            final TreeSet<Z> factors = new TreeSet<>();
-            Collections.addAll(factors, fs.toZArray());
+          if (fs.bigOmega() > 1) {
             final FactorSequence revfs = Cheetah.factor(rev);
-            for (final Z p : revfs.toZArray()) {
-              if (!factors.contains(ZUtils.reverse(p))) {
-                continue outer;
+            if (revfs.omega() == fs.omega()) {
+              final TreeSet<Z> factors = new TreeSet<>();
+              Collections.addAll(factors, fs.toZArray());
+              for (final Z p : revfs.toZArray()) {
+                if (!factors.contains(ZUtils.reverse(p))) {
+                  continue outer;
+                }
               }
+              return Z.valueOf(mN);
             }
-            return Z.valueOf(mN);
           }
         }
       }

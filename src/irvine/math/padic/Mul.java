@@ -7,9 +7,9 @@ import irvine.util.array.DynamicLongArray;
  * Multiplication of two p-adics.
  * @author Sean A. Irvine
  */
-public class Mul extends AbstractPAdic {
+final class Mul extends AbstractPAdic {
 
-  public static PAdic multiply(final PAdic a, final PAdic b) {
+  static PAdic multiply(final PAdic a, final PAdic b) {
     if (a.p() != b.p()) {
       throw new IllegalArgumentException();
     }

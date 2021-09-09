@@ -23,7 +23,6 @@ public class MulTest extends TestCase {
 
   public void testSquare() {
     final PAdic p = PAdic.create(7, 123);
-    System.out.println(p.toString(4));
     assertEquals("2,5,0,2,6", Mul.multiply(p, p).toString(4));
   }
 }

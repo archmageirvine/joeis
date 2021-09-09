@@ -4,7 +4,7 @@ package irvine.math.padic;
  * Fixed point of a p-adic, namely <code>1/(1-p)</code>.
  * @author Sean A. Irvine
  */
-public class Fixed extends AbstractPAdic {
+final class Fixed extends AbstractPAdic {
 
   private final PAdic mA;
 

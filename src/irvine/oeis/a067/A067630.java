@@ -5,7 +5,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A067630 Denominators in power series for cos(x)*cosh(x).
- * Recurrnce: (n-1)*a(n)-(n^2-n)*a(n-1) = 0
+ * Recurrence: (n-1)*a(n)-(n^2-n)*a(n-1) = 0
  * @author Georg Fischer
  */
 public class A067630 extends HolonomicRecurrence {

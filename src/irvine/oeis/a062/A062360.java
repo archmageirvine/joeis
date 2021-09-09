@@ -10,15 +10,13 @@ import irvine.oeis.FloorSequence;
  */
 public class A062360 extends FloorSequence {
 
-  private final CR mK = CR.SQRT2;
-
   /** Construct the sequence. */
   public A062360() {
     super(0);
   }
 
+  @Override
   protected Z evalCR(final long n) {
     return CR.E.pow(CR.valueOf(n).multiply(CR.PI)).floor();
   }
-
 }

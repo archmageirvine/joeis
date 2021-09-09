@@ -1,6 +1,7 @@
 package irvine.oeis.a050;
 
 import irvine.oeis.PositionSequence;
+import irvine.oeis.a048.A048288;
 
 /**
  * A050679 Positions of 2's in A050677.
@@ -10,6 +11,6 @@ public class A050679 extends PositionSequence {
 
   /** Construct the sequence. */
   public A050679() {
-    super(1, new A050677(), 2);
+    super(1, new A048288(), 2);
   }
 }

@@ -9,17 +9,13 @@ import irvine.math.z.Z;
  */
 public class A302857 extends A302856 {
 
-  protected int mN;
-  
   /** Construct the sequence. */
   public A302857() {
-    mN = 0;
     super.next();
   }
 
   @Override
   public Z next() {
-    ++mN;
     return super.next().divide(64);
   }
 }

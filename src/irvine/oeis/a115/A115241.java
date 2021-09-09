@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A115241 Square array read by antidiagonals: T(n,p) is the number of linearly independent, homogeneous harmonic polynomials of degree n in p variables (n,p&gt;=1). 
- * T(n,p) = (2n+p-2) * binomial(n+p-3,n-1)/n for n>=1, p>=1.
+ * <code>T(n,p) = (2n+p-2) * binomial(n+p-3,n-1)/n for n&gt;=1, p&gt;=1.</code>
  * @author Georg Fischer
  */
 public class A115241 implements Sequence {

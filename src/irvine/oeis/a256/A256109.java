@@ -10,16 +10,10 @@ import irvine.oeis.a050.A050279;
  */
 public class A256109 extends A050279 {
 
-  protected int mN;
-  
-  /** Construct the sequence. */
-  public A256109() {
-    mN = 0;
-  }
+  private long mN = 0;
 
   @Override
   public Z next() {
-    ++mN;
-    return super.next().add(mN);
+    return super.next().add(++mN);
   }
 }

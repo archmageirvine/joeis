@@ -17,7 +17,7 @@ public class A208509 extends A208508 {
 
   /**
    * Generic constructor with parameters
-   * @param variant: 1 = normal, 2 = add nRow to parameter d
+   * @param variant: 1 = normal, 2 = add <code>nRow</code> to parameter d
    * @param a factor of u(n-1)
    * @param b factor of v(n-1)
    * @param c constant of u(n)

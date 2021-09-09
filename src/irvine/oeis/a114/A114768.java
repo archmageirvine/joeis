@@ -13,11 +13,11 @@ public class A114768 extends FloorSequence {
 
   /** Construct the sequence. */
   public A114768() {
-    super(1);
+    super(0);
   }
 
+  @Override
   protected Z evalCR(final long n) {
     return CR.THREE.pow(CR.ONE.divide(CR.THREE)).multiply(CR.TEN.pow(n)).floor().pow(3);
   }
-
 }

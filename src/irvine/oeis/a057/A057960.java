@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057960 Number of base 5 n-digit numbers with adjacent digits differing by one or less.
+ * A057960 Number of base 5 (n+1)-digit numbers starting with a zero and with adjacent digits differing by one or less.
  * @author Georg Fischer
  */
 public class A057960 extends GeneratingFunctionSequence {

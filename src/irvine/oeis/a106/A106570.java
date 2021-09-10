@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106570 First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,3],[1,4]] and v is the column vector [0,1].
+ * A106570 a(n) = 4*a(n-1) + 3*a(n-2), with a(0)=0, a(1)=3.
  * @author Sean A. Irvine
  */
 public class A106570 extends LinearRecurrence {

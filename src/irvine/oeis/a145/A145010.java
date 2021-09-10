@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002365;
 import irvine.oeis.a002.A002366;
 
 /**
- * A145010 a(n) = area of Pythagorean triangle with hypotenuse p, where p = A002144(n) = n-th prime == 1 mod 4.
+ * A145010 a(n) = area of Pythagorean triangle with hypotenuse p, where p = A002144(n) = n-th prime == 1 (mod 4).
  * @author Georg Fischer
  */
 public class A145010 implements Sequence {

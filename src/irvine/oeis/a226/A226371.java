@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226371 Number of tilings of a 7 X n rectangle using integer sided square tiles of area &gt; 1.
+ * A226371 Number of tilings of a 7 X n rectangle using integer-sided square tiles of area &gt; 1.
  * @author Georg Fischer
  */
 public class A226371 extends GeneratingFunctionSequence {

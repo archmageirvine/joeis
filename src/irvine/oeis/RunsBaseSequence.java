@@ -187,7 +187,7 @@ public abstract class RunsBaseSequence implements Sequence {
    * Determines whether the number of raises is less, equal or greater than the number of falls (see A296712).
    * @param number get the property from this number
    * @param base represent in this base
-   * @return signum(#raises - #falls) = -1 , 0, 1 for &gt;, ==, &lt;
+   * @return <code>signum(#rises - #falls) = -1 , 0, 1</code> for &gt;, ==, &lt;
    */
   protected int signumRaisesFalls(final Z number, final int base) {
     final String digits = expand(number, base);
@@ -214,7 +214,7 @@ public abstract class RunsBaseSequence implements Sequence {
    * Determines whether the number of pits is less, equal or greater than the number of peaks (see A296882).
    * @param number get the property from this number
    * @param base represent in this base
-   * @return signum(#pits - #peaks) = -1 , 0, 1 for &gt;, ==, &lt;
+   * @return <code>signum(#pits - #peaks) = -1 , 0, 1</code> for &gt;, ==, &lt;
    */
   protected int signumPitsPeaks(final Z number, final int base) {
     final String digits = expand(number, base);

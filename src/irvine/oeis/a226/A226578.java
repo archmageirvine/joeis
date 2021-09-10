@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226578 Smallest number of integer sided squares needed to tile a 5 X n rectangle.
+ * A226578 Smallest number of integer-sided squares needed to tile a 5 X n rectangle.
  * @author Georg Fischer
  */
 public class A226578 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A171381 Numbers n such that (3^n + 1)/2 is prime.
+ * A171381 Numbers k such that (3^k + 1)/2 is prime.
  * @author Georg Fischer
  */
 public class A171381 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a291;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A291623 Number of maximal irredundant sets in the n X n rook complement graph.
+ * A291623 Number of maximal irredundant and minimal dominating sets in the n X n rook complement graph.
  * @author Georg Fischer
  */
 public class A291623 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A036444 Integer sided squares, no more than a(n) of any size, can tile the square with side n.
+ * A036444 Integer-sided squares, no more than a(n) of any size, can tile the square with side n.
  * @author Sean A. Irvine
  */
 public class A036444 extends MemorySequence {

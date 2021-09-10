@@ -56,7 +56,6 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
   private final Z mP;
   private int mPos = 0;
   private Z mProd = Z.ONE;
-  private boolean mFileBased = false;
   private final Fast mPrime = new Fast();
 
   EuclidMullinSequence(final Z p) throws IOException {
@@ -68,20 +67,17 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
     final InputStream input = getClass().getClassLoader().getResourceAsStream("irvine/factor/project/em/em" + p);
     if (input != null) {
       // Read from a trusted resource
-      mFileBased = true;
       process(input);
     } else {
       mSeq.add(mP);
       // Special handling for 3 which has almost same sequence as 2
       if (Z.THREE.equals(mP)) {
-        mFileBased = true;
         mSeq.add(Z.TWO);
         final EuclidMullinSequence em2 = create(2);
         for (int k = 2; k < em2.mSeq.size(); ++k) {
           mSeq.add(em2.mSeq.get(k));
         }
       } else if (Z.SEVEN.equals(mP)) {
-        mFileBased = true;
         mSeq.add(Z.TWO);
         mSeq.add(Z.THREE);
         final EuclidMullinSequence em2 = create(2);
@@ -89,7 +85,6 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
           mSeq.add(em2.mSeq.get(k));
         }
       } else if (Z43.equals(mP)) {
-        mFileBased = true;
         mSeq.add(Z.TWO);
         mSeq.add(Z.THREE);
         mSeq.add(Z.SEVEN);
@@ -131,7 +126,6 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
 
   private EuclidMullinSequence(final EuclidMullinSequence seq, final Z p) {
     mSeq = seq.mSeq;
-    mFileBased = seq.mFileBased;
     mP = p;
   }
 

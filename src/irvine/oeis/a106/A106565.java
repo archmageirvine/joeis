@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106565 Let M={{0, 5}, {1, 5}}, v[n]=M.v[n-1]; then a(n) =v[n][[1]].
+ * A106565 a(n) = 5*a(n-1) + 5*a(n-2) with a(0) = 0, a(1) = 5.
  * @author Sean A. Irvine
  */
 public class A106565 extends LinearRecurrence {

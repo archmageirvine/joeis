@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A332133 Decimal expansion of (sqrt(3) + 1)/2, unique positive root of a^2 - a - 1/2.
+ * A332133 Decimal expansion of (1 + sqrt(3))/2, unique positive root of x^2 - x - 1/2.
  * @author Georg Fischer
  */
 public class A332133 extends DecimalExpansionSequence {

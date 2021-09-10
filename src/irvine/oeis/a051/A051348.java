@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051348 F_n/product{p|n}[ F_p ], where F_k is k-th Fibonacci number and the p's in product are the distinct primes dividing n.
+ * A051348 a(n) = F(n) / Product_{p|n} F(p), where F(k) is k-th Fibonacci number and the p's in product are the distinct primes dividing n.
  * @author Sean A. Irvine
  */
 public class A051348 implements Sequence {

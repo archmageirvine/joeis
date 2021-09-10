@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226892 Number of squares of size n^2 in all tilings of an (n+2) X (n+2) square using integer sided square tiles.
+ * A226892 Number of squares of size n^2 in all tilings of an (n+2) X (n+2) square using integer-sided square tiles.
  * @author Georg Fischer
  */
 public class A226892 extends GeneratingFunctionSequence {

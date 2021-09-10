@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A036445 Maximum size of smallest square when a square of side n is tiled with integer sided squares.
+ * A036445 Maximum size of smallest square when a square of side n is tiled with integer-sided squares.
  * @author Sean A. Irvine
  */
 public class A036445 implements Sequence {

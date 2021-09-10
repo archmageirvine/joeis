@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197265 Decimal expansion of least x&gt;0 having sin(3x)=(sin 7x)^2.
+ * A197265 Decimal expansion of least x&gt;0 having sin(3x) = sin(7x)^2.
  * Equation; sin(3*x)-(sin(7*x))^2
  * @author Georg Fischer
  */

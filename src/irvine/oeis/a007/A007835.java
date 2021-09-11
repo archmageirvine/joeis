@@ -46,7 +46,7 @@ public class A007835 implements Sequence, GraphProcessor {
   public void process(final Graph graph) throws IOException {
     ++mGenCount;
     // Convert to directed tree in all possible ways
-    mDigraph.direct(graph, 0, graph.size(), graph.size(), true, graph.order());
+    mDigraph.direct(graph, 0, graph.size(), graph.size(), true);
   }
 
   @Override

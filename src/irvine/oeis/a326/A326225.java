@@ -39,7 +39,7 @@ public class A326225 extends ParallelGenerateGraphsSequence {
     // non-isomorphic.
     final DigraphCheck mDigraph = new DigraphCheck();
     try {
-      mDigraph.direct(graph, 0, graph.size(), 2 * graph.size(), false, graph.order());
+      mDigraph.direct(graph, 0, graph.size(), 2 * graph.size(), false);
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }

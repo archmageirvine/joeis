@@ -69,7 +69,7 @@ public class A334304 extends DirectedGraph implements Sequence {
     }
     mCount = 0;
     try {
-      direct(g, 0, g.size(), g.size(), true, g.order());
+      direct(g, 0, g.size(), g.size(), true);
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }

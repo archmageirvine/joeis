@@ -355,4 +355,20 @@ public abstract class AbstractGraph implements Graph {
   public Graph lineGraph() {
     return new LineGraphCreator(this).getLineGraph();
   }
+
+  @Override
+  public int diameter() {
+    int diameter = 0;
+    for (int v = 0; v < order(); ++v) {
+      final int[] dv = distanceVector(v);
+      for (final int u : dv) {
+        if (u < 0) {
+          return -1;
+        }
+      }
+      final int m = IntegerUtils.max(dv);
+      diameter = Math.max(diameter, m);
+    }
+    return diameter;
+  }
 }

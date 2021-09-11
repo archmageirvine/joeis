@@ -38,7 +38,7 @@ public class A185193 implements Sequence, GraphProcessor {
   public void process(final Graph graph) throws IOException {
     ++mGenCount;
     final int n = graph.order();
-    mDigraph.direct(graph, 0, 3 * n, 3 * n, false, n);
+    mDigraph.direct(graph, 0, 3 * n, 3 * n, false);
   }
 
 

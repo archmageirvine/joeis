@@ -64,7 +64,7 @@ public class A003141 implements Sequence {
     final Graph graph = GraphFactory.complete(mN);
     final DigraphCheck digraphChecker = new DigraphCheck();
     try {
-      digraphChecker.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, true, graph.order());
+      digraphChecker.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, true);
     } catch (final IOException e) {
       throw new RuntimeException(e); // we are no making output
     }

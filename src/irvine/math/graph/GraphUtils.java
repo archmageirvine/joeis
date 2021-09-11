@@ -457,4 +457,63 @@ public final class GraphUtils {
 //      }
 //    }.next();
   }
+
+  /**
+   * Return a packed representation of the neighbours of a given vertex.
+   * Undefined for graphs with more than 64 vertices.
+   * @param graph the graph
+   * @param u vertex
+   * @return packed neighbours
+   */
+  public static long neighbours(final Graph graph, final int u) {
+    long neighbours = 0;
+    for (int v = graph.nextVertex(u, -1); v >= 0; v = graph.nextVertex(u, v)) {
+      neighbours |= 1L << v;
+    }
+    return neighbours;
+  }
+
+  /**
+   * Test if the given graph is strongly regular.
+   * @param graph graph to test
+   * @return true iff the graph is strongly regular
+   */
+  public static boolean isStronglyRegular(final Graph graph) {
+    if (graph.order() > 64) {
+      throw new UnsupportedOperationException();
+    }
+    int r = -1;
+    int a = -1;
+    int b = -1;
+    for (int u = 0; u < graph.order(); ++u) {
+      final long nu = neighbours(graph, u);
+      final int cu = Long.bitCount(nu);
+      if (r == -1) {
+        r = cu;
+      } else if (r != cu) {
+        return false; // graph is not even regular
+      }
+      for (int v = 0; v < u; ++v) {
+        // u and v a pair of vertices
+        final long nv = neighbours(graph, v);
+        final int cnt = Long.bitCount(nu & nv);
+        if (graph.isAdjacent(u, v)) {
+          if (a == -1) {
+            a = cnt;
+          } else if (a != cnt) {
+            return false;
+          }
+        } else {
+          if (b == -1) {
+            b = cnt;
+          } else if (b != cnt) {
+            return false;
+          }
+        }
+      }
+    }
+    return true;
+  }
+
+
 }

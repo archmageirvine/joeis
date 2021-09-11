@@ -57,7 +57,7 @@ public class A003088 implements Sequence, GraphProcessor {
   @Override
   public void process(final Graph graph) throws IOException {
     ++mGenCount;
-    mDigraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false, graph.order());
+    mDigraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false);
   }
 
 

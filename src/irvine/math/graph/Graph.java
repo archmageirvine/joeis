@@ -195,4 +195,10 @@ public interface Graph {
    * @return line graph
    */
   Graph lineGraph();
+
+  /**
+   * Return the diameter of the graph or -1 if it is infinite.
+   * @return diameter
+   */
+  int diameter();
 }

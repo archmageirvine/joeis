@@ -1,4 +1,4 @@
-package irvine.oeis.a049;
+package irvine.oeis.a051;
 
 import java.io.IOException;
 
@@ -6,47 +6,37 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.Multigraph;
+import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A049512 Number of quasi-initially connected digraphs on n unlabeled nodes.
+ * A051421 Number of n-node digraphs with a sink (or, with a source).
  * @author Sean A. Irvine
  */
-public class A049512 extends ParallelGenerateGraphsSequence {
+public class A051421 extends ParallelGenerateGraphsSequence {
 
   private static final class DigraphCheck extends DirectedGraph {
     private long mCount = 0;
 
-    private void markAll(final Graph g, final boolean[] reachable, final int current) {
-      if (reachable[current]) {
-        return;
+    private long markAll(final Graph g, final long reachable, final int current) {
+      final long bit = 1L << current;
+      if ((reachable & bit) != 0) {
+        return reachable;
       }
-      reachable[current] = true;
+      long r = reachable | bit;
       int j = -1;
       while ((j = g.nextVertex(current, j)) >= 0) {
-        markAll(g, reachable, j);
+        r |= markAll(g, r, j);
       }
-    }
-
-    private boolean testQuasiInitiallyConnected(final Graph g, final int v, final boolean[][] reachable) {
-      for (int k = 0; k < g.order(); ++k) {
-        if (!reachable[k][v] && !reachable[v][k]) {
-          return false;
-        }
-      }
-      return true;
+      return r;
     }
 
     @Override
     protected void process(final Graph g) {
-      // This reachability test is not as low-level as it could be, but we do make checks as we go
-      final boolean[][] reachable = new boolean[g.order()][g.order()];
+      final long success = (1L << g.order()) - 1;
       for (int k = 0; k < g.order(); ++k) {
-        markAll(g, reachable[k], k);
-      }
-      // Test for quasi-initially connectedness
-      for (int k = 0; k < g.order(); ++k) {
-        if (testQuasiInitiallyConnected(g, k, reachable)) {
+        final long reachable = markAll(g, 0L, k);
+        if (reachable == success) {
           ++mCount;
           return;
         }
@@ -55,8 +45,8 @@ public class A049512 extends ParallelGenerateGraphsSequence {
   }
 
   /** Construct the sequence. */
-  public A049512() {
-    super(0, -1, false, false, false);
+  public A051421() {
+    super(-1, -1, false, false, false);
   }
 
   @Override
@@ -78,5 +68,10 @@ public class A049512 extends ParallelGenerateGraphsSequence {
     gg.setConnectionLevel(1);
     gg.setMaxDeg(mN);
     gg.sanitizeParams();
+  }
+
+  @Override
+  public Z next() {
+    return super.next().max(Z.ONE);
   }
 }

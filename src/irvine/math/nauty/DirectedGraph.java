@@ -290,11 +290,11 @@ public class DirectedGraph implements GroupAction {
    * @param minArcs minimum number of edges
    * @param maxArcs maximum number of edges
    * @param orientOneDirectionOnly true if each edge is to be oriented at most one way
-   * @param n size
    * @throws IOException if an I/O error occurs.
    */
   public void direct(final Graph g, final int nFixed, final int minArcs, final int maxArcs,
-                     final boolean orientOneDirectionOnly, final int n) throws IOException {
+                     final boolean orientOneDirectionOnly) throws IOException {
+    final int n = g.order();
     final int[] lab = new int[MAXNV];
     final int[] ptn = new int[MAXNV];
     final int[] orbits = new int[MAXNV];
@@ -490,7 +490,7 @@ public class DirectedGraph implements GroupAction {
       while ((line = r.readLine()) != null) {
         final Graph g = Graph6.toGraph(line);
         dg.mGraphsRead++;
-        dg.direct(g, nfixed, minArcs, maxArcs, oswitch, g.order());
+        dg.direct(g, nfixed, minArcs, maxArcs, oswitch);
       }
     }
     t = System.currentTimeMillis() - t;

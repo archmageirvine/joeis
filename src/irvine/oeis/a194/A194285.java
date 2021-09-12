@@ -7,7 +7,6 @@ import irvine.oeis.Sequence;
 
 /**
  * A194285 Triangular array:  g(n,k)=number of fractional parts (i*sqrt(2)) in interval [(k-1)/n, k/n], for 1&lt;=i&lt;=n, 1&lt;=k&lt;=n.
- * in interval [(k-1)/n, k/n], for 1<=i<=n, 1<=k<=n.
  * @author Georg Fischer
  */
 public class A194285 implements Sequence {

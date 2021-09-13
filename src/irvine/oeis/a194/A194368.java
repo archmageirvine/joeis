@@ -6,8 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A194368 Numbers m such that Sum_{k=1..m} (&lt;1/2 + k*r&gt; - &lt;k*r&gt;) = 0,
- * where r=sqrt(2) and &lt; &gt; denotes fractional part.
+ * A194368 Numbers m such that Sum_{k=1..m} (&lt;1/2 + k*r&gt; - &lt;k*r&gt;) = 0, where r=sqrt(2) and &lt; &gt; denotes fractional part.
  * @author Georg Fischer
  */
 public class A194368 implements Sequence {

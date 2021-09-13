@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073333 Decimal expansion of 1/(e-1) = Sum(k &gt;= 1, exp(-k)).
+ * A073333 Decimal expansion of 1/(e - 1) = Sum_{k &gt;= 1} exp(-k).
  * @author Georg Fischer
  */
 public class A073333 extends DecimalExpansionSequence {

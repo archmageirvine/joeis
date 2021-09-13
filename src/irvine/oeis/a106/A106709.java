@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A106709 First entry of the vector (M^n)v, where M is the 2 X 2 matrix [[0,-2],[1,5]] and v is the column vector [0,1].
+ * A106709 Expansion of g.f. -2*x/(1 - 5*x + 2*x^2).
  * @author Georg Fischer
  */
 public class A106709 extends HolonomicRecurrence {

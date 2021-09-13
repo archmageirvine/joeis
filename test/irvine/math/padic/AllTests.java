@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(AddTest.class);
+    suite.addTestSuite(DivTest.class);
     suite.addTestSuite(FinitePAdicTest.class);
     suite.addTestSuite(MulTest.class);
     suite.addTestSuite(NegateTest.class);

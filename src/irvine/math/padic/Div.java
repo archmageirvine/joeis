@@ -59,14 +59,18 @@ final class Div extends AbstractPAdic {
     final long p = p();
     while (n >= mValid) {
       final long a = mA.get(0);
-      final long b = mB.get(0);
-      // solve b * q = a (mod p)
-      final long q = q(b, a, p);
-      // update numbers
-      final PAdic t = Mul.multiply(mB, PAdic.create(p, q));
-      mA = new Shift(new Add(mA, new Negate(t)));
-      //System.out.println("a=" + mA.toString(10));
-      mExpansion.set(mValid++, q);
+      if (a == 0) {
+        mA = new Shift(mA);
+        mExpansion.set(mValid++, 0);
+      } else {
+        final long b = mB.get(0);
+        // solve b * q = a (mod p)
+        final long q = q(b, a, p);
+        // update numbers
+        final PAdic t = Mul.multiply(mB, PAdic.create(p, q));
+        mA = new Shift(new Add(mA, new Negate(t)));
+        mExpansion.set(mValid++, q);
+      }
     }
     return mExpansion.get(n);
   }

@@ -31,10 +31,9 @@ public class DivTest extends TestCase {
     assertEquals("3,4,2,4,2", Div.divide(one, p).toString(4));
   }
 
-//  public void test2() {
-//    final PAdic a = PAdic.create(5, 7);
-//    final PAdic b = PAdic.create(5, 12);
-//    assertEquals("1,2,0,2,0", Div.divide(a, b).toString(4));
-//  }
-
+  public void test2() {
+    final PAdic a = PAdic.create(5, 7);
+    final PAdic b = PAdic.create(5, 12);
+    assertEquals("1,2,0,2,0", Div.divide(a, b).toString(4));
+  }
 }

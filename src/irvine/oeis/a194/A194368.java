@@ -23,7 +23,7 @@ public class A194368 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param variant type of comparision
+   * @param variant type of comparison
    * @param r 1st parameter for fractional part
    * @param c 2nd parameter for fractional part
    */

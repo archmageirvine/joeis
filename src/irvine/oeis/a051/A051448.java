@@ -1,22 +1,21 @@
 package irvine.oeis.a051;
 
 import irvine.factor.factor.Cheetah;
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051423 Sum of prime divisors of n is congruent to 2^n (mod n).
+ * A001414 Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
  * @author Sean A. Irvine
  */
-public class A051423 implements Sequence {
+public class A051448 implements Sequence {
 
-  private long mN = 14;
+  private long mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      if (Cheetah.factor(++mN).sopfr().mod(mN) == LongUtils.modPow(2, mN, mN)) {
+      if (Cheetah.factor(++mN).sopfr().isSquare()) {
         return Z.valueOf(mN);
       }
     }

@@ -16,6 +16,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FinitePAdicTest.class);
     suite.addTestSuite(MulTest.class);
     suite.addTestSuite(NegateTest.class);
+    suite.addTestSuite(PAdicSqrtTest.class);
     suite.addTestSuite(PAdicZTest.class);
     return suite;
   }

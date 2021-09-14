@@ -2,6 +2,7 @@ package irvine.math.padic;
 
 import java.util.Iterator;
 
+import irvine.math.api.Sqrt;
 import irvine.math.group.AbstractField;
 import irvine.math.z.Z;
 
@@ -9,7 +10,7 @@ import irvine.math.z.Z;
  * Field of rationals under addition and multiplication.
  * @author Sean A. Irvine
  */
-public final class PAdicField extends AbstractField<PAdic> {
+public final class PAdicField extends AbstractField<PAdic> implements Sqrt<PAdic> {
 
   private final long mP;
   private final PAdic mZero;
@@ -97,5 +98,10 @@ public final class PAdicField extends AbstractField<PAdic> {
   @Override
   public PAdic coerce(final long n) {
     return PAdic.create(p(), n);
+  }
+
+  @Override
+  public PAdic sqrt(final PAdic a) {
+    return PAdicSqrt.sqrt(a);
   }
 }

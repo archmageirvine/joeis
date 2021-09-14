@@ -6,7 +6,7 @@ import junit.framework.TestCase;
  * Test the corresponding class.
  * @author Sean A. Irvine
  */
-public class SqrtTest extends TestCase {
+public class PAdicSqrtTest extends TestCase {
 
   public void testSqrt() {
     final CR root2 = CR.SQRT2;

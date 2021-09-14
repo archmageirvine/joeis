@@ -50,8 +50,7 @@ final class PAdicSqrt extends AbstractPAdic {
     while (n >= mValid) {
       if (mX == null) {
         mX = PAdic.create(mA.p(), q(mA.get(0), mA.p()));
-      } else {
-        // todo this is like more precision than required
+      } else if ((mValid & (mValid - 1)) == 0) {
         mX = Div.divide(new Add(mX, Div.divide(mA, mX)), mTwo);
       }
       //System.out.println("a = " + mA.toString(10));

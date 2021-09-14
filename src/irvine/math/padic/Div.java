@@ -60,7 +60,7 @@ final class Div extends AbstractPAdic {
     while (n >= mValid) {
       final long a = mA.get(0);
       if (a == 0) {
-        mA = new Shift(mA);
+        mA = Shift.shift(mA, 1);
         mExpansion.set(mValid++, 0);
       } else {
         final long b = mB.get(0);
@@ -68,7 +68,7 @@ final class Div extends AbstractPAdic {
         final long q = q(b, a, p);
         // update numbers
         final PAdic t = Mul.multiply(mB, PAdic.create(p, q));
-        mA = new Shift(new Add(mA, new Negate(t)));
+        mA = Shift.shift(new Add(mA, new Negate(t)), 1);
         mExpansion.set(mValid++, q);
       }
     }

@@ -42,7 +42,7 @@ public interface PAdic {
    * @return p-adic number
    */
   static PAdic create(final long p, final long n) {
-    return new PAdicZ(p, Z.valueOf(n));
+    return n < 0 ? new Negate(create(p, -n)) : new PAdicZ(p, Z.valueOf(n));
   }
 
   /**

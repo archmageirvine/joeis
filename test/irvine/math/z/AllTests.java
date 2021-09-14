@@ -41,7 +41,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(RootTest.class);
     suite.addTestSuite(ShiftTest.class);
     suite.addTestSuite(SqrTest.class);
-    suite.addTestSuite(PAdicSqrtTest.class);
+    suite.addTestSuite(SqrtTest.class);
     suite.addTestSuite(SubTest.class);
     suite.addTestSuite(StirlingTest.class);
     suite.addTestSuite(ZByteArrayTest.class);

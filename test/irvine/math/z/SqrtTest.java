@@ -10,7 +10,7 @@ import junit.framework.TestCase;
  *
  * @author Sean A. Irvine
  */
-public class PAdicSqrtTest extends TestCase {
+public class SqrtTest extends TestCase {
 
   private static final Random RANDOM = new Random();
 

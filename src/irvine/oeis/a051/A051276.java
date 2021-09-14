@@ -16,11 +16,6 @@ public class A051276 implements Sequence {
 
   @Override
   public Z next() {
-    while (true) {
-      final long d = mA.get(++mN);
-      if (d != 0) {
-        return Z.valueOf(d);
-      }
-    }
+    return Z.valueOf(mA.get(++mN));
   }
 }

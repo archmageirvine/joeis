@@ -1,7 +1,8 @@
 package irvine.math.padic;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
-import irvine.util.array.DynamicLongArray;
 
 /**
  * Multiplication of two p-adics.
@@ -26,8 +27,7 @@ final class Mul extends AbstractPAdic {
 
   private final PAdic mA;
   private final PAdic mB;
-  private final DynamicLongArray mExpansion = new DynamicLongArray();
-  private int mValid = 0;
+  private final ArrayList<Long> mExpansion = new ArrayList<>();
   private Z mCarry = Z.ZERO;
 
   private Mul(final PAdic a, final PAdic b) {
@@ -46,13 +46,14 @@ final class Mul extends AbstractPAdic {
       throw new IllegalArgumentException();
     }
     final long p = p();
-    while (n >= mValid) {
+    while (n >= mExpansion.size()) {
+      final int s = mExpansion.size();
       Z q = mCarry;
-      for (int m = 0; m <= mValid; ++m) {
-        q = q.add(mA.get(mValid - m) * mB.get(m));
+      for (int m = 0; m <= s; ++m) {
+        q = q.add(mA.get(s - m) * mB.get(m));
       }
       final long r = q.mod(p);
-      mExpansion.set(mValid++, r);
+      mExpansion.add(r);
       mCarry = q.divide(p); // q.subtract(r).divide(p);
     }
     return mExpansion.get(n);

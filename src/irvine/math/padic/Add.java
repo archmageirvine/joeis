@@ -1,7 +1,8 @@
 package irvine.math.padic;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
-import irvine.util.array.DynamicLongArray;
 
 /**
  * Addition of two p-adics.
@@ -11,8 +12,7 @@ public class Add extends AbstractPAdic {
 
   private final PAdic mA;
   private final PAdic mB;
-  private final DynamicLongArray mExpansion = new DynamicLongArray();
-  private int mValid = 0;
+  private final ArrayList<Long> mExpansion = new ArrayList<>();
   private Z mCarry = Z.ZERO;
 
   /**
@@ -39,10 +39,11 @@ public class Add extends AbstractPAdic {
       throw new IllegalArgumentException();
     }
     final long p = p();
-    while (n >= mValid) {
-      final Z q = mCarry.add(mA.get(mValid)).add(mB.get(mValid));
+    while (n >= mExpansion.size()) {
+      final int s = mExpansion.size();
+      final Z q = mCarry.add(mA.get(s)).add(mB.get(s));
       final long r = q.mod(p);
-      mExpansion.set(mValid++, r);
+      mExpansion.add(r);
       mCarry = q.divide(p); // q.subtract(r).divide(p);
     }
     return mExpansion.get(n);

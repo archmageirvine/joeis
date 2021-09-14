@@ -1,6 +1,6 @@
 package irvine.math.padic;
 
-import irvine.util.array.DynamicLongArray;
+import java.util.ArrayList;
 
 /**
  * Division of two p-adics.
@@ -28,8 +28,7 @@ final class Div extends AbstractPAdic {
 
   private PAdic mA;
   private final PAdic mB;
-  private final DynamicLongArray mExpansion = new DynamicLongArray();
-  private int mValid = 0;
+  private final ArrayList<Long> mExpansion = new ArrayList<>();
 
   private Div(final PAdic a, final PAdic b) {
     mA = a;
@@ -57,11 +56,11 @@ final class Div extends AbstractPAdic {
       throw new IllegalArgumentException();
     }
     final long p = p();
-    while (n >= mValid) {
+    while (n >= mExpansion.size()) {
       final long a = mA.get(0);
       if (a == 0) {
         mA = Shift.shift(mA, 1);
-        mExpansion.set(mValid++, 0);
+        mExpansion.add(0L);
       } else {
         final long b = mB.get(0);
         // solve b * q = a (mod p)
@@ -69,7 +68,7 @@ final class Div extends AbstractPAdic {
         // update numbers
         final PAdic t = Mul.multiply(mB, PAdic.create(p, q));
         mA = Shift.shift(new Add(mA, new Negate(t)), 1);
-        mExpansion.set(mValid++, q);
+        mExpansion.add(q);
       }
     }
     return mExpansion.get(n);

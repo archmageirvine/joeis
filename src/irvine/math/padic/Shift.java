@@ -4,7 +4,7 @@ package irvine.math.padic;
  * Shift a p-adic by one position.
  * @author Sean A. Irvine
  */
-public class Shift extends AbstractPAdic {
+final class Shift extends AbstractPAdic {
 
   /**
    * Shift.

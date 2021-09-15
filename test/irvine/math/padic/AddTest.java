@@ -18,8 +18,8 @@ public class AddTest extends TestCase {
     final PAdic y = PAdic.create(5, 2, 2, 1);
     assertEquals("3,4,3", new Add(x, y).toString(2));
     assertEquals("2,4,4", new Add(x, x).toString(2));
-    final PAdic z = PAdic.create(5, 0, 1);
-    final PAdic zneg = PAdic.create(5, -5);
+    final PAdic z = PAdic.create(5, 4);
+    final PAdic zneg = new Negate(z);
     assertEquals("0,0,0", new Add(z, zneg).toString(2));
     assertEquals("0,0,0", new Add(zneg, z).toString(2));
   }

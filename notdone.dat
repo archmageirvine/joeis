@@ -1713,3 +1713,4 @@ A051269 Number of self-complementary 3-place relations on a 2n-element set.
 A051390 Number of nonisomorphic Steiner quadruple systems (SQS's) of order n
 A051391 Number of nonisomorphic Steiner triple systems (STS's) S(2,3,v) on v = 6n+1 or 6n+3 points
 A051393 Numbers whose square is expressible as the difference of positive cubes in more than one way (too slow!)
+A051460 Number of asymmetric types of Boolean functions of n variables under action of symmetric group.

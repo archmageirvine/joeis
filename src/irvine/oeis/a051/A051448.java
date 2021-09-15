@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001414 Integer log of n: sum of primes dividing n (with repetition). Also called sopfr(n).
+ * A051448 Sum of prime divisors of n (with multiplicity) is a square.
  * @author Sean A. Irvine
  */
 public class A051448 implements Sequence {

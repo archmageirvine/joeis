@@ -1,21 +1,21 @@
 package irvine.oeis.a051;
 
-import irvine.math.padic.PAdic;
-import irvine.math.padic.PAdicField;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.a210.A210850;
 
 /**
- * A051452.
+ * A051276 Nonzero coefficients in one of the 5-adic expansions of sqrt(-1).
  * @author Sean A. Irvine
  */
-public class A051276 implements Sequence {
-
-  private final PAdic mA = new PAdicField(5).sqrt(PAdic.create(5, -1));
-  private int mN = -1;
+public class A051276 extends A210850 {
 
   @Override
   public Z next() {
-    return Z.valueOf(mA.get(++mN));
+    while (true) {
+      final Z d = super.next();
+      if (!d.isZero()) {
+        return d;
+      }
+    }
   }
 }

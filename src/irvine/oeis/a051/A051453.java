@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A051452.
+ * A051453 Prime powers such that 1 + lcm(1,2,...,p^w) is prime.
  * @author Sean A. Irvine
  */
 public class A051453 extends A000961 {

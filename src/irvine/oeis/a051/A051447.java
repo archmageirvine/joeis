@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051447.
+ * A051447 Integers n such that 2^n == 9 (mod n).
  * @author Sean A. Irvine
  */
 public class A051447 implements Sequence {

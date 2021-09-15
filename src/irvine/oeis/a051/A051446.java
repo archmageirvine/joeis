@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051446.
+ * A051446 Integers n such that 2^n == 13 (mod n).
  * @author Sean A. Irvine
  */
 public class A051446 implements Sequence {

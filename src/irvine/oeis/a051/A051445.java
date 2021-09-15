@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051445.
+ * A051445 Smallest k such that phi(k) = 2n, or 0 if there is no such k.
  * @author Sean A. Irvine
  */
 public class A051445 implements Sequence {

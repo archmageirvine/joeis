@@ -14,7 +14,11 @@ public class MultiplicativeClosureSequence extends MemorySequence {
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mP;
 
-  protected MultiplicativeClosureSequence(final Sequence seq) {
+  /**
+   * Construct the multiplicative closure of another sequence.
+   * @param seq underlying sequence
+   */
+  public MultiplicativeClosureSequence(final Sequence seq) {
     mSeq = MemorySequence.cachedSequence(seq);
     mP = mSeq.next();
   }

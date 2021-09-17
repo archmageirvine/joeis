@@ -202,7 +202,7 @@ public class DirectedGraph implements GroupAction {
 
       ++mGraphsOutput;
 
-      // This block is no really needed unless process does something ...
+      // This block is not really needed unless process does something ...
       final Graph g = GraphFactory.createDigraph(n);
       for (int i = -1; (i = mX.next(i)) >= 0; ) {
         final int k = i >>> 1;
@@ -398,6 +398,10 @@ public class DirectedGraph implements GroupAction {
     mLastRejOk = false;
 
     scan(0, ne, minArcs, maxArcs, 0, orientOneDirectionOnly, group, n);
+  }
+
+  protected long groupSize() {
+    return mNewGroupSize;
   }
 
   static final String EDGES_FLAG = "edges";

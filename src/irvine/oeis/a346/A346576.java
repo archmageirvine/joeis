@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a052.A052382;
 
 /**
- * A346576 allocated for Rakesh Khanna A.
+ * A346576 Let x run through the list of numbers with no zeros (A052382); replace each digit d of x by the digit (x mod d).
  * @author Sean A. Irvine
  */
 public class A346576 extends A052382 {

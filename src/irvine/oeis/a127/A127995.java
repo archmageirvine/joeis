@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A127995 Numbers n such that (20^n - 1)/19 is prime.
+ * A127995 Numbers k such that (20^k - 1)/19 is prime.
  * @author Georg Fischer
  */
 public class A127995 extends PrimePositionSubsequence {

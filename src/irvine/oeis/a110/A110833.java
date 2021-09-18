@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008864;
 
 /**
- * A110833 Squares of the form (p+1)^2, where p is prime.
+ * A110833 a(n) = (prime(n)+1)^2.
  * @author Georg Fischer
  */
 public class A110833 implements Sequence {

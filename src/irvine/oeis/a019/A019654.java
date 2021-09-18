@@ -23,17 +23,14 @@ public class A019654 implements Sequence {
   // coming from.  This makes it easier to incrementally add a new queen.
   //
   // Partially inspired by C code by Manfred Scheucher
-  // todo make this its own class
 
-  // todo this is too slow to be much use ...
+  protected static final int QUEEN_BIT = 1 << 9; // first 8 bits used for directions
 
-  private static final int QUEEN_BIT = 1 << 9; // first 8 bits used for directions
-
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private int mSize = 0;
-  private int mExactAttack = 0;
-  private long mMaximalQueens = 0;
-  private long mMaximalCount = 0;
+  protected final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  protected int mSize = 0;
+  protected int mExactAttack = 0;
+  protected long mMaximalQueens = 0;
+  protected long mMaximalCount = 0;
   // Follow arrays used to avoid churn
   private int[] mWorkspace1 = null;
   private int[] mWorkspace2 = null;
@@ -46,11 +43,11 @@ public class A019654 implements Sequence {
     attacks[y * mSize + x] = v;
   }
 
-  private void or(final int[] attacks, final int x, final int y, final int bit) {
+  protected void or(final int[] attacks, final int x, final int y, final int bit) {
     attacks[y * mSize + x] |= bit;
   }
 
-  private int pop(final int[] attacks, final int x, final int y) {
+  protected int pop(final int[] attacks, final int x, final int y) {
     return Integer.bitCount(get(attacks, x, y) & 0xFF); // mask out queen bit
   }
 
@@ -80,7 +77,7 @@ public class A019654 implements Sequence {
     }
   }
 
-  private boolean isCanonical(final int[] board) {
+  protected boolean isCanonical(final int[] board) {
     // rotate 90
     rotate(board, mWorkspace1);
     if (compare(board, mWorkspace1) > 0) {
@@ -122,7 +119,7 @@ public class A019654 implements Sequence {
     return compare(board, mWorkspace2) <= 0;
   }
 
-  private boolean markAndCheck(final int[] attacks, final int x0, final int y0, final int dx, final int dy, final int bit) {
+  protected boolean markAndCheck(final int[] attacks, final int x0, final int y0, final int dx, final int dy, final int bit) {
     // Placing queen at (x0,y0), fail if the count for an existing queen goes too high
     for (int x = x0 + dx, y = y0 + dy; x >= 0 && y >= 0 && x < mSize && y < mSize; x += dx, y += dy) {
       or(attacks, x, y, bit);
@@ -134,7 +131,7 @@ public class A019654 implements Sequence {
     return true;
   }
 
-  private boolean isExact(final int[] attacks) {
+  protected boolean isExact(final int[] attacks) {
     // Check that each queen attacks the required number of other queens, this
     // is actually done by checking that each queen is attacked by the required
     // number of queens.
@@ -154,7 +151,21 @@ public class A019654 implements Sequence {
     return sb.toString();
   }
 
-  private void search(final int[] attacks, final int queen, final int x, final int y, final int remaining) {
+  protected long solve(final int n, final int queens, final int attack) {
+    if (mVerbose) {
+      System.out.println("Solving for board size " + n + " with " + queens + " queens");
+    }
+    mSize = n;
+    mMaximalQueens = queens;
+    mMaximalCount = 0;
+    mExactAttack = attack;
+    mWorkspace1 = new int[n * n];
+    mWorkspace2 = new int[n * n];
+    search(new int[n * n], 0, 0, 0, n * n);
+    return mMaximalCount;
+  }
+
+  protected void search(final int[] attacks, final int queen, final int x, final int y, final int remaining) {
     if (y >= mSize) {
       // Search is done
       if (queen >= mMaximalQueens && isExact(attacks)) {
@@ -184,27 +195,26 @@ public class A019654 implements Sequence {
       return;
     }
     // Consider placing at queen at (x,y)
-    if (pop(attacks, x, y) > mExactAttack) {
-      return; // This square attacked by too many queens
-    }
-    final int[] newBits = Arrays.copyOf(attacks, attacks.length);
-    // Mark all consequences by expanding in all 8 directions from (x,y)
-    or(newBits, x, y, QUEEN_BIT);
-    if (markAndCheck(newBits, x, y, 1, 0, 1)
-      && markAndCheck(newBits, x, y, -1, 0, 2)
-      && markAndCheck(newBits, x, y, 0, 1, 4)
-      && markAndCheck(newBits, x, y, 0, -1, 8)
-      && markAndCheck(newBits, x, y, 1, 1, 16)
-      && markAndCheck(newBits, x, y, 1, -1, 32)
-      && markAndCheck(newBits, x, y, -1, 1, 64)
-      && markAndCheck(newBits, x, y, -1, -1, 128)) {
-      // Placement looks ok, try another queen
-      search(newBits, queen + 1, x + 1, y, remaining - 1);
+    if (pop(attacks, x, y) <= mExactAttack) {
+      final int[] newBits = Arrays.copyOf(attacks, attacks.length);
+      // Mark all consequences by expanding in all 8 directions from (x,y)
+      or(newBits, x, y, QUEEN_BIT);
+      if (markAndCheck(newBits, x, y, 1, 0, 1)
+        && markAndCheck(newBits, x, y, -1, 0, 2)
+        && markAndCheck(newBits, x, y, 0, 1, 4)
+        && markAndCheck(newBits, x, y, 0, -1, 8)
+        && markAndCheck(newBits, x, y, 1, 1, 16)
+        && markAndCheck(newBits, x, y, 1, -1, 32)
+        && markAndCheck(newBits, x, y, -1, 1, 64)
+        && markAndCheck(newBits, x, y, -1, -1, 128)) {
+        // Placement looks ok, try another queen
+        search(newBits, queen + 1, x + 1, y, remaining - 1);
+      }
     }
     search(attacks, queen, x + 1, y, remaining - 1);
   }
 
-  private long solve(final int n, final int attack) {
+  protected long solve(final int n, final int attack) {
     if (mVerbose) {
       System.out.println("Solving for board size " + n);
     }
@@ -212,7 +222,7 @@ public class A019654 implements Sequence {
     mMaximalQueens = 1; // It could be argued that placing no queens is a solution -- but we avoid that here for consistency with the OEIS
     if (attack == 4 && n > 5) {
       // Known result from theory, see A063724
-      mMaximalQueens = 3 * n - 3;
+      mMaximalQueens = 3L * n - 3;
     }
     mMaximalCount = 0;
     mExactAttack = attack;

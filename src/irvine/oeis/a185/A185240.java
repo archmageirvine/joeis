@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A185240 Numbers n such that (35^n + 1)/36 is prime.
+ * A185240 Numbers k such that (35^k + 1)/36 is prime.
  * @author Georg Fischer
  */
 public class A185240 extends PrimePositionSubsequence {

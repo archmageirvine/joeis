@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098118 a(n) = n!*[x^n](log(x+1)*sum(j=0..n, C(2*n,j)*x^j)).
+ * A098118 a(n) = n!*[x^n] (log(x+1) * Sum_{j=0..n} C(2*n,j)*x^j).
  * @author Georg Fischer
  */
 public class A098118 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051478 Number of values of n satisfying phi(n)=4i+2, i&gt;0.
+ * A051478 a(n) is the number of values k satisfying phi(k) = 4*n+2, n&gt;0.
  * @author Sean A. Irvine
  */
 public class A051478 implements Sequence {

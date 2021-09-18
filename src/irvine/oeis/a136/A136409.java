@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A136409 a(n) = floor(n*log_3 2).
+ * A136409 a(n) = floor(n*log_3(2)).
  * @author Georg Fischer
  */
 public class A136409 extends BeattySequence {

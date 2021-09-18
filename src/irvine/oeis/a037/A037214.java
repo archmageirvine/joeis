@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037214 Expansion of (sum(n*q^(n^2), n=0..inf))^2.
+ * A037214 Expansion of ( Sum_{k&gt;=0} k*q^(k^2) )^2.
  * @author Sean A. Irvine
  */
 public class A037214 implements Sequence {

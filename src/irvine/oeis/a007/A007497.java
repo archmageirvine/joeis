@@ -12,10 +12,14 @@ public class A007497 implements Sequence {
 
   private Z mA = null;
 
+  protected Z start() {
+    return Z.TWO;
+  }
+
   @Override
   public Z next() {
     if (mA == null) {
-      mA = Z.TWO;
+      mA = start();
     } else {
       mA = Jaguar.factor(mA).sigma();
     }

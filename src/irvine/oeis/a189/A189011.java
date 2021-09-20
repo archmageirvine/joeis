@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.a014.A014132;
 
 /**
- * A189011 Zero-one sequence based on triangular numbers: a(A000217(k))=a(k); a(A014132(k))=1-a(k); a(1)=0.
+ * A189011 Zero-one sequence based on triangular numbers:  a(A000217(k))=a(k); a(A014132(k))=1-a(k); a(1)=0.
  * @author Georg Fischer
  */
 public class A189011 extends ArrayList<Z> implements Sequence {

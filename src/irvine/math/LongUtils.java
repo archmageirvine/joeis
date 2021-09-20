@@ -196,7 +196,7 @@ public final class LongUtils {
   public static long sqrt(final long n) {
     if (n <= 8L) {
       if (n < 0) {
-        throw new ArithmeticException();
+        throw new ArithmeticException("Attempted sqrt of " + n);
       } else if (n == 0L) {
         return 0L;
       } else if (n <= 3L) {

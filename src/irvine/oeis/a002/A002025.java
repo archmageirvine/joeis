@@ -1,7 +1,6 @@
 package irvine.oeis.a002;
 
 import irvine.factor.factor.Cheetah;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -18,12 +17,7 @@ public class A002025 implements Sequence {
     if (n.isProbablePrime()) {
       return Z.ONE;
     }
-    final FactorSequence fs = new FactorSequence(n);
-    mCheetah.factor(fs);
-    if (!fs.isComplete()) {
-      throw new UnsupportedOperationException();
-    }
-    return fs.sigma().subtract(n);
+    return mCheetah.factorize(n).sigma().subtract(n);
   }
 
   @Override

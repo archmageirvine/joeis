@@ -1728,3 +1728,4 @@ A051570 Consider the problem of placing N = A051756(n) queens on an n X n board 
 A051571 Consider problem of placing N queens on an n X n board so that each queen attacks precisely k others. Here k=4 and sequence gives number of different solutions when N takes its maximal value [probably erroneous]
 A051590 Number of oriented triangle graphs on binomial(n,2) points [could not get ref]
 A051602 Maximal number of squares that can be formed from n points in the plane [hard to prove?]
+A051637 Chromos with n colors

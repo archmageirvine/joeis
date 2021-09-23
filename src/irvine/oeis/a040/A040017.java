@@ -11,7 +11,7 @@ import irvine.oeis.a007.A007615;
  */
 public class A040017 extends A007615 {
 
-  // Heuristic for sorting, make this bigger if terms observed out out order
+  // Heuristic for sorting, make this bigger if terms observed are out order
   private static final int SORT_SIZE = 10;
   private final TreeSet<Z> mA = new TreeSet<>();
 

@@ -4,7 +4,7 @@ package irvine.oeis.a308;
 import irvine.oeis.MorphismFixedPointSequence;
 
 /**
- * A308187 Fixed point (beginning with a) of the morphism a -&gt; aab, b -&gt; b, over the alphabet {a,b} = {0, 1}.
+ * A308187 Fixed point (beginning with a) of the morphism a -&gt; aab, b -&gt; b, over the alphabet {a,b} = {0,1}.
  * @author Georg Fischer
  */
 public class A308187 extends MorphismFixedPointSequence {

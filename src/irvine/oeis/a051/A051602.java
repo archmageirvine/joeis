@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A051602.
+ * A051602 Maximal number of squares that can be formed from n points in the plane.
  * @author Sean A. Irvine
  */
 public class A051602 implements Sequence {
@@ -53,7 +53,7 @@ public class A051602 implements Sequence {
       return "gray";
     } else if (Math.abs(dx) == Math.abs(dy)) {
       return "blue";
-    } else if (Math.abs(Math.abs(dx) - Math.abs(dy)) == 1){
+    } else if (Math.abs(Math.abs(dx) - Math.abs(dy)) == 1) {
       return "green";
     } else {
       return "red";

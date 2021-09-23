@@ -1,0 +1,27 @@
+package irvine.oeis.a051;
+
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000040;
+
+/**
+ * A051635 Weak primes: prime(n) &lt; (prime(n-1) + prime(n+1))/2.
+ * @author Sean A. Irvine
+ */
+public class A051635 extends A000040 {
+
+  private Z mA = super.next();
+  private Z mB = super.next();
+
+  @Override
+  public Z next() {
+    while (true) {
+      final Z t = mA;
+      mA = mB;
+      mB = super.next();
+      if (mA.compareTo(t.add(mB).add(1).divide2()) < 0) {
+        return mA;
+      }
+    }
+  }
+}
+

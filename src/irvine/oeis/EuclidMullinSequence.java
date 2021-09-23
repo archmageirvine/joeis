@@ -58,7 +58,12 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
   private Z mProd = Z.ONE;
   private final Fast mPrime = new Fast();
 
-  EuclidMullinSequence(final Z p) throws IOException {
+  /**
+   * Construct a new Euclid-Mullin sequence starting at the give prime.
+   * @param p prime
+   * @throws IOException if an I/O error occurs.
+   */
+  public EuclidMullinSequence(final Z p) throws IOException {
     mP = p;
     if (!p.isProbablePrime()) {
       throw new IllegalArgumentException();

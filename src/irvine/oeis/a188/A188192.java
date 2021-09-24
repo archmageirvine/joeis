@@ -11,13 +11,29 @@ import irvine.oeis.Sequence;
  * @author Georg Fischer
  */
 public class A188192 implements Sequence {
-  private long mN = 0;
-  private static final CR R = CR.FIVE.sqrt();
-  private static final CR K = CR.THREE;
+
+  protected long mN = 0;
+  protected CR mR;
+  protected final CR mK;
+
+  /** Construct the sequence. */
+  public A188192() {
+    this(3, CR.FIVE.sqrt());
+  }
+  
+  /**
+   * Generic constructor with parameters.
+   * @param k integer parameter 
+   * @param r real parameter 
+   */
+  public A188192(final int k, final CR r) {
+    mK = CR.valueOf(k);
+    mR = r;
+  }
 
   @Override
   public Z next() {
     final CR n = CR.valueOf(++mN);
-    return n.multiply(R).floor().subtract(K.multiply(R).floor()).subtract(n.multiply(R).subtract(K.multiply(R)).floor());
+    return n.multiply(mR).floor().subtract(mK.multiply(mR).floor()).subtract(n.multiply(mR).subtract(mK.multiply(mR)).floor());
   }
 }

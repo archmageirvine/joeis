@@ -22,7 +22,7 @@ public class MorphismTransform extends MorphismFixedPointSequence {
    * @param seq underlying (MorphismFixedPoint)Sequence
    * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0", also "111->" (remove "111").
    */
-  protected MorphismTransform(final Sequence seq, final String mappings) {
+  public MorphismTransform(final Sequence seq, final String mappings) {
     mSeq = seq;
     configure("", "", mappings); // only to store the mappings into the data structure
     mSrcWord = new StringBuilder(MAX_SRC);

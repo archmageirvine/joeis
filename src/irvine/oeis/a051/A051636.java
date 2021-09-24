@@ -20,7 +20,7 @@ public class A051636 implements Sequence {
     final IntegerPartition part = new IntegerPartition(++mN);
     Z sum = Z.ZERO;
     int[] p;
-    int[] c = new int[mN + 1];
+    final int[] c = new int[mN + 1];
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);
       int even = 0;

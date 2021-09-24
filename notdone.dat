@@ -1729,3 +1729,9 @@ A051571 Consider problem of placing N queens on an n X n board so that each quee
 A051590 Number of oriented triangle graphs on binomial(n,2) points [could not get ref]
 A051602 Maximal number of squares that can be formed from n points in the plane [hard to prove?]
 A051637 Chromos with n colors
+A051655 Continued fraction for imaginary part of first zero (in critical strip) of Riemann zeta function
+A051657 Experimental values for number of equal circles that are packed into a square for which the density of the packing is strictly increasing.
+A051658 Experimental values for maximal number of contacts between equal circles and the box that are packed into a square.
+A051659 Experimental values for maximal number of "loose" circles in packing equal circles into a square
+A051660 Experimental values for number of circles in packing equal circles into a square for which there is a loose circle.
+A051661 Experimental values for number of circles in packing equal circles into a square for which there are no loose circles.

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051598 Rows of triangle formed using Pascal's rule except begin n-th row with n+1 and end it with n+2.
+ * A051598 Rows of triangle formed using Pascal's rule except begin n-th row with 2*n and end it with 2*n+1.
  * @author Sean A. Irvine
  */
 public class A051598 extends MemoryFunction2<Long, Z> implements Sequence {

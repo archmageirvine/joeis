@@ -6,7 +6,7 @@ package irvine.oeis.a226;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A226974 Sum(binomial(n,3*k)*binomial(4*k,k)/(3*k+1), k=0..floor(n/3)).
+ * A226974 a(n) = Sum_{k=0..floor(n/3)} binomial(n,3*k)*binomial(4*k,k)/(3*k+1).
  * @author Georg Fischer
  */
 public class A226974 extends HolonomicRecurrence {

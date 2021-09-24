@@ -26,7 +26,7 @@ public class A049078 extends A000040 {
       do {
         ++cnt;
         p = mPi.a(p - 1).intValueExact();
-      } while (mFast.isPrime(p) && cnt <= target());
+      } while (mPrime.isPrime(p) && cnt <= target());
       if (cnt == target()) {
         return pp;
       }

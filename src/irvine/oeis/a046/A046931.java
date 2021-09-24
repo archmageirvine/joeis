@@ -36,7 +36,7 @@ public class A046931 extends A000040 {
     }
     while (mFirsts.get(mN) == null) {
       final Z p = super.next();
-      final long t = mFast.nextPrime(p).subtract(mFast.prevPrime(p)).divide2().longValueExact();
+      final long t = mPrime.nextPrime(p).subtract(mPrime.prevPrime(p)).divide2().longValueExact();
       if (mFirsts.get(t) == null) {
         mFirsts.set(t, p);
       }

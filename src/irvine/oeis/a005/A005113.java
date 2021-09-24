@@ -16,7 +16,7 @@ public class A005113 extends A005106 {
     ++mN;
     mPrev = mPrev.multiply2().subtract(2);
     while (true) {
-      mPrev = mFast.nextPrime(mPrev);
+      mPrev = mPrime.nextPrime(mPrev);
       if (primeClass(mPrev) == mN) {
         return mPrev;
       }

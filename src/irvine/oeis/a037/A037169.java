@@ -15,7 +15,7 @@ public class A037169 extends A000040 {
   public Z next() {
     ++mN;
     Z prod = super.next();
-    for (long k = 0, p = 2, q = 3; k < mN; ++k, p = q, q = mFast.nextPrime(q)) {
+    for (long k = 0, p = 2, q = 3; k < mN; ++k, p = q, q = mPrime.nextPrime(q)) {
       prod = prod.multiply(q % p);
     }
     return prod;

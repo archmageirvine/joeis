@@ -22,7 +22,7 @@ public class A049202 extends A000040 {
       do {
         ++cnt;
         p = mPi.a(p - 1).intValueExact();
-      } while (mFast.isPrime(p) && cnt < 6);
+      } while (mPrime.isPrime(p) && cnt < 6);
       if (cnt >= 6) {
         return pp;
       }

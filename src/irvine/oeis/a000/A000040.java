@@ -11,11 +11,11 @@ import irvine.oeis.Sequence;
 public class A000040 implements Sequence {
 
   private Z mP = Z.ONE;
-  protected final Fast mFast = new Fast();
+  protected final Fast mPrime = new Fast();
 
   @Override
   public Z next() {
-    mP = mFast.nextPrime(mP);
+    mP = mPrime.nextPrime(mP);
     return mP;
   }
 }

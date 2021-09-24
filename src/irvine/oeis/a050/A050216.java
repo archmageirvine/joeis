@@ -16,7 +16,7 @@ public class A050216 extends A000040 {
     final Z lo = mHi;
     mHi = super.next().square();
     long cnt = 0;
-    for (Z p = mFast.nextPrime(lo); p.compareTo(mHi) < 0; p = mFast.nextPrime(p), ++cnt) {
+    for (Z p = mPrime.nextPrime(lo); p.compareTo(mHi) < 0; p = mPrime.nextPrime(p), ++cnt) {
       // do nothing
     }
     return Z.valueOf(cnt);

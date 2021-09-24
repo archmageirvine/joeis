@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000040;
 public class A005110 extends A000040 {
 
   private int primeClass(final Z n) {
-    if (mFast.isPrime(n)) {
+    if (mPrime.isPrime(n)) {
       int res = 1;
       for (final Z p : Cheetah.factor(n.subtract(1)).toZArray()) {
         if (p.compareTo(Z.THREE) > 0) {

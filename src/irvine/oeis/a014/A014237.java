@@ -13,7 +13,7 @@ public class A014237 extends A000040 {
 
   @Override
   public Z next() {
-    while (mFast.isPrime(++mN)) {
+    while (mPrime.isPrime(++mN)) {
       // do nothing
     }
     return super.next().subtract(mN);

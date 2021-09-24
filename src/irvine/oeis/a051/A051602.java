@@ -110,7 +110,6 @@ public class A051602 implements Sequence {
 
   @Override
   public Z next() {
-
     ++mN;
     mBestCount = 0;
     mBestPoints = null;

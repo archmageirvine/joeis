@@ -12,6 +12,6 @@ public class A050200 extends A000040 {
   @Override
   public Z next() {
     final Z p = super.next();
-    return p.add(mFast.nextPrime(p)).add(mFast.nextPrime(p.add(2)));
+    return p.add(mPrime.nextPrime(p)).add(mPrime.nextPrime(p.add(2)));
   }
 }

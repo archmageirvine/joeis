@@ -14,7 +14,7 @@ public class A014223 extends A000040 {
     while (true) {
       final Z p = super.next();
       final Z p3 = p.multiply(3);
-      if (mFast.isPrime(p3.add(1).divide2()) && mFast.isPrime(p3.add(4))) {
+      if (mPrime.isPrime(p3.add(1).divide2()) && mPrime.isPrime(p3.add(4))) {
         return p;
       }
     }

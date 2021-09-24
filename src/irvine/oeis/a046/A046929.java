@@ -12,7 +12,7 @@ public class A046929 extends A000040 {
   @Override
   public Z next() {
     final Z p = super.next();
-    return p.subtract(mFast.prevPrime(p)).min(mFast.nextPrime(p).subtract(p)).subtract(1);
+    return p.subtract(mPrime.prevPrime(p)).min(mPrime.nextPrime(p).subtract(p)).subtract(1);
   }
 }
 

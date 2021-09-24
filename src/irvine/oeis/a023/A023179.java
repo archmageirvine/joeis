@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023179 Fib(p) == 21 (mod p).
+ * A023179 Numbers k such that Fib(k) == 21 (mod k).
  * @author Sean A. Irvine
  */
 public class A023179 extends A000045 {

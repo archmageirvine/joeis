@@ -1,6 +1,5 @@
 package irvine.oeis.a039;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
@@ -11,8 +10,6 @@ import irvine.util.Permutation;
  * @author Sean A. Irvine
  */
 public class A039986 extends A000040 {
-
-  private final Fast mPrime = new Fast();
 
   private boolean isPrime(final int[] p) {
     long t = 0;

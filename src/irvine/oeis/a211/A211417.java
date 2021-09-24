@@ -5,7 +5,7 @@ package irvine.oeis.a211;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A211417 Integral factorial ratio sequence: (30*n)!*n!/((15*n)!*(10*n)!*(6*n)!).
+ * A211417 Integral factorial ratio sequence: a(n) = (30*n)!*n!/((15*n)!*(10*n)!*(6*n)!).
  * @author Georg Fischer
  */
 public class A211417 extends HolonomicRecurrence {

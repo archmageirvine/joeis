@@ -14,7 +14,7 @@ public class A033300 extends A000040 {
 
   @Override
   public Z next() {
-    mN = mFast.nextPrime(mN);
+    mN = mPrime.nextPrime(mN);
     while (mSafePrime.compareTo(mN) <= 0) {
       do {
         mSafePrime = super.next();

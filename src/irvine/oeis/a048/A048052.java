@@ -16,10 +16,10 @@ public class A048052 extends A000040 {
   private boolean isPrimeChain(Z t, final int n) {
     for (int k = 0; k < n; ++k) {
       final Z reverse = ZUtils.reverse(t);
-      if (!mFast.isPrime(reverse)) {
+      if (!mPrime.isPrime(reverse)) {
         return false;
       }
-      t = mFast.nextPrime(t);
+      t = mPrime.nextPrime(t);
     }
     return true;
   }

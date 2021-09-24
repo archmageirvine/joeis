@@ -14,7 +14,7 @@ public class A046704 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (mFast.isPrime(ZUtils.digitSum(p))) {
+      if (mPrime.isPrime(ZUtils.digitSum(p))) {
         return p;
       }
     }

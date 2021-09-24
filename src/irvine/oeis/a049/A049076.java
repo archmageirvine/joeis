@@ -20,7 +20,7 @@ public class A049076 extends A000040 {
     do {
       ++cnt;
       p = mPi.a(p - 1).intValueExact();
-    } while (mFast.isPrime(p));
+    } while (mPrime.isPrime(p));
     return Z.valueOf(cnt);
   }
 }

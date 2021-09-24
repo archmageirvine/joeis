@@ -12,12 +12,12 @@ public class A031217 extends A000040 {
   @Override
   public Z next() {
     final Z s = super.next();
-    Z t = mFast.nextPrime(s);
+    Z t = mPrime.nextPrime(s);
     final Z d = t.subtract(s);
     long c = 1;
     while (true) {
       ++c;
-      final Z u = mFast.nextPrime(t);
+      final Z u = mPrime.nextPrime(t);
       if (!u.subtract(t).equals(d)) {
         break;
       }

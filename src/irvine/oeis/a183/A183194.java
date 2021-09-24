@@ -10,9 +10,9 @@ import irvine.oeis.a000.A000040;
  */
 public class A183194 extends A000040 {
   
-  private Z mBase;
+  private final Z mBase;
   private Z mPow;
-  private Z mPrime;
+  private Z mP;
   private final StringBuilder mA;
   
   /** Construct the sequence. */
@@ -28,8 +28,8 @@ public class A183194 extends A000040 {
     mBase = Z.valueOf(parm);
     mPow = Z.ONE;
     mA = new StringBuilder();
-    mPrime = super.next();
-    mA.append(mPrime.toString());
+    mP = super.next();
+    mA.append(mP.toString());
   }
   
   @Override
@@ -37,10 +37,10 @@ public class A183194 extends A000040 {
     mPow = mPow.multiply(mBase);
     Z swn = new Z(mA);
     while (swn.mod(mPow) != Z.ZERO) {
-      mPrime = super.next();
-      mA.append(mPrime.toString());
+      mP = super.next();
+      mA.append(mP.toString());
       swn = new Z(mA);
     }
-    return mPrime;
+    return mP;
   }
 }

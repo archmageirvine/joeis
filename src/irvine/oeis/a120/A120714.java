@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120714 Sequence produced by 7 X 7 Markov chain based on adjacency matrix of 7-vertex graph with 10 edges, derived from the Fano plane.
+ * A120714 Expansion of 2*(4*x^2+14*x+7)*x^2/((-1-x+x^2)*(6*x^3+10*x^2+2*x-1)).
  * @author Sean A. Irvine
  */
 public class A120714 extends LinearRecurrence {

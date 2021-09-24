@@ -12,7 +12,7 @@ public class A033274 extends A000040 {
   private boolean isNoPrimeContained(final Z p) {
     final String s = p.toString();
     Z q = Z.ONE;
-    while ((q = mFast.nextPrime(q)).compareTo(p) < 0) {
+    while ((q = mPrime.nextPrime(q)).compareTo(p) < 0) {
       if (s.contains(q.toString())) {
         return false;
       }

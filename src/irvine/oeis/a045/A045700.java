@@ -15,9 +15,9 @@ public class A045700 extends A000040 {
     while (true) {
       final Z prime = super.next();
       final long n = prime.longValueExact();
-      for (long q2, p = 2; (q2 = n - p * p * p) >= 4; p = mFast.nextPrime(p)) {
+      for (long q2, p = 2; (q2 = n - p * p * p) >= 4; p = mPrime.nextPrime(p)) {
         final long q = LongUtils.sqrt(q2);
-        if (q * q == q2 && mFast.isPrime(q)) {
+        if (q * q == q2 && mPrime.isPrime(q)) {
           return prime;
         }
       }

@@ -16,15 +16,15 @@ public class A032592 extends A000040 {
       if (p.mod(10) != 1) {
         continue;
       }
-      final Z p1 = mFast.nextPrime(p);
+      final Z p1 = mPrime.nextPrime(p);
       if (p1.mod(10) != 3) {
         continue;
       }
-      final Z p2 = mFast.nextPrime(p1);
+      final Z p2 = mPrime.nextPrime(p1);
       if (p2.mod(10) != 7) {
         continue;
       }
-      final Z p3 = mFast.nextPrime(p2);
+      final Z p3 = mPrime.nextPrime(p2);
       if (p3.mod(10) != 9) {
         continue;
       }

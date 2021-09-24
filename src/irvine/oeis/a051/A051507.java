@@ -13,7 +13,7 @@ public class A051507 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (p.multiply(mFast.nextPrime(p)).add(2).isProbablePrime()) {
+      if (p.multiply(mPrime.nextPrime(p)).add(2).isProbablePrime()) {
         return p;
       }
     }

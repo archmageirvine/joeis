@@ -17,7 +17,7 @@ public class A014238 extends A000040 {
       mN = 4;
       return Z.valueOf(-3);
     }
-    if (mFast.isPrime(++mN)) {
+    if (mPrime.isPrime(++mN)) {
       ++mN;
     }
     return super.next().subtract(mN);

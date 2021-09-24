@@ -12,7 +12,7 @@ public class A023305 extends A023275 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (mFast.isPrime(p.multiply(16).add(105))) {
+      if (mPrime.isPrime(p.multiply(16).add(105))) {
         return p;
       }
     }

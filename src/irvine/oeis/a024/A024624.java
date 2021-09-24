@@ -1,6 +1,5 @@
 package irvine.oeis.a024;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
@@ -10,7 +9,6 @@ import irvine.oeis.a000.A000961;
  */
 public class A024624 extends A000961 {
 
-  private final Fast mPrime = new Fast();
   private long mN = 0;
   private Z mP = Z.ONE;
 

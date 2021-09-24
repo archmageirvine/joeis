@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A328376 a(n) = floor(|tan(n)|).
+ * A328376 a(n) = floor(abs(tan(n))).
  * @author Georg Fischer
  */
 public class A328376 extends FloorSequence {

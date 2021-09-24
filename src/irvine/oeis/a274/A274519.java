@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A274519 Numbers n for which 4^n - 27 is prime.
+ * A274519 Numbers k for which 4^k - 27 is prime.
  * @author Georg Fischer
  */
 public class A274519 extends PrimePositionSubsequence {

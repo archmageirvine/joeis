@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325958 Sum of corners of a 2n+1 X 2n+1 square spiral.
+ * A325958 Sum of the corners of a 2n+1 X 2n+1 square spiral.
  * @author Georg Fischer
  */
 public class A325958 extends HolonomicRecurrence {

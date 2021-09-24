@@ -2,7 +2,6 @@ package irvine.oeis.a039;
 
 import java.util.TreeSet;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
@@ -13,8 +12,6 @@ import irvine.util.Permutation;
  * @author Sean A. Irvine
  */
 public class A039992 extends A000040 {
-
-  private final Fast mPrime = new Fast();
 
   protected Z count(final Z n) {
     final int[] cnts = ZUtils.digitCounts(n);

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A086867 a(n) = Floor(abs(1/sin(n))).
+ * A086867 a(n) = floor(abs(1/sin(n))).
  * @author Georg Fischer
  */
 public class A086867 extends FloorSequence {

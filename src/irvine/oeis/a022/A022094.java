@@ -16,7 +16,7 @@ public class A022094 extends A000040 {
   public Z next() {
     do {
       mSum = mSum.add(super.next());
-    } while (!mFast.isPrime(++mN));
+    } while (!mPrime.isPrime(++mN));
     return mSum;
   }
 }

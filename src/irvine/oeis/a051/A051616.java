@@ -4,7 +4,7 @@ import irvine.oeis.SetDifferenceSequence;
 import irvine.oeis.a005.A005384;
 
 /**
- * A051616 Primes for which A051614 is 3 but are not in A005834.
+ * A051616 Primes p for which A051614(p) is 3 but are not Sophie Germain primes.
  * @author Sean A. Irvine
  */
 public class A051616 extends SetDifferenceSequence {

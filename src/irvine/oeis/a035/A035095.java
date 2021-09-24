@@ -14,7 +14,7 @@ public class A035095 extends A000040 {
     final Z mod = super.next();
     Z p = Z.ONE;
     while (true) {
-      p = mFast.nextPrime(p);
+      p = mPrime.nextPrime(p);
       if (Z.ONE.equals(p.mod(mod))) {
         return p;
       }

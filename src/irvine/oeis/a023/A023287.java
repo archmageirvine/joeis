@@ -13,7 +13,7 @@ public class A023287 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (mFast.isPrime(p.multiply(6).add(1)) && mFast.isPrime(p.multiply(36).add(7)) && mFast.isPrime(p.multiply(216).add(43))) {
+      if (mPrime.isPrime(p.multiply(6).add(1)) && mPrime.isPrime(p.multiply(36).add(7)) && mPrime.isPrime(p.multiply(216).add(43))) {
         return p;
       }
     }

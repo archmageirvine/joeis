@@ -13,7 +13,7 @@ public class A031926 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (mFast.nextPrime(p).equals(p.add(8))) {
+      if (mPrime.nextPrime(p).equals(p.add(8))) {
         return p;
       }
     }

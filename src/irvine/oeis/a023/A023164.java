@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023164 Fib(p) == -3 (mod p).
+ * A023164 Numbers k such that Fib(k) == -3 (mod k).
  * @author Sean A. Irvine
  */
 public class A023164 extends A000045 {

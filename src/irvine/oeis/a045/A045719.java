@@ -29,7 +29,7 @@ public class A045719 extends A000040 {
       for (final int i : p) {
         q *= 10;
         q += i;
-        if (mFast.isPrime(q)) {
+        if (mPrime.isPrime(q)) {
           primes.add(q);
         }
       }

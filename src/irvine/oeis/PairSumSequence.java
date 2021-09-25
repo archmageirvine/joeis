@@ -15,6 +15,10 @@ public class PairSumSequence implements Sequence {
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mN = Z.ZERO;
 
+  /**
+   * Construct the sequence.
+   * @param seq underlying sequence
+   */
   public PairSumSequence(final Sequence seq) {
     mSeq = MemorySequence.cachedSequence(seq);
     mT = mSeq.next();

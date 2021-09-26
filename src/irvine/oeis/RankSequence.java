@@ -36,7 +36,7 @@ public class RankSequence implements Sequence {
    * Construct an instance from two sequences f and g.
    * @param seqF first underlying sequence
    * @param seqG second underlying sequence
-   * @param order: if 0 then seqF before seqG, if 1 then seqF after seqG.
+   * @param order: if 0 then <code>seqF</code> before <code>seqG</code>, if 1 then <code>seqF</code> after <code>seqG</code>.
    * @param flag: 1 yields sequence a, 2 yields sequence b.
    */
   public RankSequence(final Sequence seqF, final Sequence seqG, final int order, final int flag) {

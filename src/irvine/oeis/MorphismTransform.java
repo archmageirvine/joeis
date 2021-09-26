@@ -19,8 +19,8 @@ public class MorphismTransform extends MorphismFixedPointSequence {
 
   /**
    * Construct an instance which transforms the underlying sequence by some replacements
-   * @param seq underlying (MorphismFixedPoint)Sequence
-   * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0", also "111->" (remove "111").
+   * @param seq underlying <code>(MorphismFixedPoint)Sequence</code>
+   * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0", also "111-&gt;" (remove "111").
    */
   public MorphismTransform(final Sequence seq, final String mappings) {
     mSeq = seq;

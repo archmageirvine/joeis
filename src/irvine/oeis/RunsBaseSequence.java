@@ -1,4 +1,5 @@
 package irvine.oeis;
+// 2021-09-24: Up/down/total-variation
 // 2021-08-24: with distinct RL, raise/fall, peak/pit, pieces, zigzag
 
 import java.util.Arrays;
@@ -59,7 +60,7 @@ public abstract class RunsBaseSequence implements Sequence {
     while (iwid > 0) {
       num *= base;
       --iwid;
-    } // while 
+    } // while
     return Z.valueOf(--num);
   } // ensureWidth
 
@@ -100,7 +101,7 @@ public abstract class RunsBaseSequence implements Sequence {
    * Expand the number as a String of 1-2 digits.
    * For bases &gt;= 11 the result always has even length (may with a leading "0").
    * @param number number to be expanded
-   * @param base number base
+   * @param base number base between 2 and 99
    * @return String of digits
    */
   protected String expand(final Z number, final int base) {
@@ -110,12 +111,35 @@ public abstract class RunsBaseSequence implements Sequence {
     } else { // two characters per digit
       digits = number.toTwoDigits(base);
       if ((digits.length() & 1) == 1) { // odd
-        digits = "0" + digits; // make sure that there are pairs
+        digits = "0" + digits; // add a leading zero to make sure that there are pairs
       }
     } // > 10
     return digits;
   }
-  
+
+  /**
+   * Expand the number into an array of integer digits.
+   * This is independent of the base.
+   * @param number number to be expanded
+   * @param base number base between 2 and 99
+   * @return array of digits, where a[0] has the lowest digit
+   */
+  protected int[] expandInt(final Z number, final int base) {
+    final String digits = expand(number, base);
+    final int dlen = base <= 10 ? 1 : 2;
+    final int[] result = new int[digits.length() / dlen];
+    int idig = 0;
+    try {
+      for (int ires = result.length - 1; ires >= 0; --ires) {
+        result[ires] = Integer.parseInt(digits.substring(idig, idig + dlen));
+        idig += dlen;
+      }
+    } catch (final NumberFormatException exc) {
+      // ignore any error - should not occur
+    }
+    return result;
+  }
+
   /**
    * Get the run lengths from a number represented in some base,
    * from left to right in the String representation.
@@ -138,7 +162,7 @@ public abstract class RunsBaseSequence implements Sequence {
 
     final int[] runLengths = new int[digits.length()];
     int irl = 0;
-    int idig = 0; 
+    int idig = 0;
     String runElem = digits.substring(idig, idig + dlen);
     int count = 1;
     idig += dlen;
@@ -167,7 +191,7 @@ public abstract class RunsBaseSequence implements Sequence {
     final int dlen = base <= 10 ? 1 : 2;
     final HashMap<String, Integer> hash = new HashMap<String, Integer>(16);
     int ipos = 0;
-    int idig = 0; 
+    int idig = 0;
     String oldDig = digits.substring(idig, idig + dlen);
     idig += dlen;
     while (idig <= digits.length() - dlen) {
@@ -182,7 +206,7 @@ public abstract class RunsBaseSequence implements Sequence {
     hash.put(digits.substring(ipos, idig), 1);
     return hash.size();
   }
-  
+
   /**
    * Determines whether the number of raises is less, equal or greater than the number of falls (see A296712).
    * @param number get the property from this number
@@ -193,7 +217,7 @@ public abstract class RunsBaseSequence implements Sequence {
     final String digits = expand(number, base);
     final int dlen = base <= 10 ? 1 : 2;
     final int[] counts = new int[2];
-    int idig = 0; 
+    int idig = 0;
     String oldDig = digits.substring(idig, idig + dlen);
     idig += dlen;
     while (idig <= digits.length() - dlen) {
@@ -209,7 +233,7 @@ public abstract class RunsBaseSequence implements Sequence {
     } // while
     return Integer.compare(counts[0], counts[1]);
   }
-  
+
   /**
    * Determines whether the number of pits is less, equal or greater than the number of peaks (see A296882).
    * @param number get the property from this number
@@ -220,7 +244,7 @@ public abstract class RunsBaseSequence implements Sequence {
     final String digits = expand(number, base);
     final int dlen = base <= 10 ? 1 : 2;
     final int[] counts = new int[2];
-    int idig = 0; 
+    int idig = 0;
     String oldDig = digits.substring(idig, idig + dlen);
     idig += dlen;
     if (idig <= digits.length() - dlen) {
@@ -242,7 +266,7 @@ public abstract class RunsBaseSequence implements Sequence {
     } // midDig exists
     return Integer.compare(counts[0], counts[1]);
   }
-  
+
   /**
    * Get the number of pieces from a number represented in some base.
    * A piece is a flat (0), ascent (1) or descent (-1), see A297030.
@@ -255,7 +279,7 @@ public abstract class RunsBaseSequence implements Sequence {
     final String digits = expand(number, base);
     final int dlen = base <= 10 ? 1 : 2;
     int count = 0;
-    int idig = 0; 
+    int idig = 0;
     String oldDig = digits.substring(idig, idig + dlen); // 1st digit
     idig += dlen;
     if (idig <= digits.length() - dlen) { // for 2nd digit
@@ -264,7 +288,7 @@ public abstract class RunsBaseSequence implements Sequence {
       int oldState = newDig.compareTo(oldDig); // 0 = flat, 1 = ascent, -1 = descent
       oldState = oldState == 0 ? oldState : (oldState < 0 ? -1 : 1);
       ++count; // 1st piece
-      while (idig <= digits.length() - dlen) { // for 3rd and following 
+      while (idig <= digits.length() - dlen) { // for 3rd and following
         oldDig = newDig;
         newDig = digits.substring(idig, idig + dlen);
         idig += dlen;
@@ -281,7 +305,7 @@ public abstract class RunsBaseSequence implements Sequence {
   }
 
   /**
-   * Determines whether the digits of the number follow a 
+   * Determines whether the digits of the number follow a
    * zig-zag-up (1), zig-zag-down (-1) or no zig-zag (0) pattern (see A297146).
    * @param number get the property from this number
    * @param base represent in this base
@@ -291,7 +315,7 @@ public abstract class RunsBaseSequence implements Sequence {
     final String digits = expand(number, base);
     final int dlen = base <= 10 ? 1 : 2;
     int result = 0; // assume none
-    int idig = 0; 
+    int idig = 0;
     String oldDig = digits.substring(idig, idig + dlen);
     idig += dlen;
     if (idig <= digits.length() - dlen) { // >= 2 digits
@@ -311,7 +335,77 @@ public abstract class RunsBaseSequence implements Sequence {
     } // else only 1 digit - none
     return result;
   }
-  
+
+  /**
+   * Get the down-variation of the digits of a number as defined in A297330.
+   * @param number get the property from this number
+   * @param base represent in this base
+   * @return sum of distances between adjacent digits that are decreasing.
+   */
+  protected int getDownVariation(final Z number, final int base) {
+    final int[] digits = expandInt(number, base);
+    int result = 0; // assume none
+    int idig = 0;
+    int oldDig = digits[idig++];
+    while (idig < digits.length) {
+      final int newDig = digits[idig++];
+      if (oldDig < newDig) {
+        result += newDig - oldDig;
+      }
+      oldDig = newDig;
+    } // while
+    return result;
+  }
+
+  /**
+   * Get the up-variation of the digits of a number as defined in A297330.
+   * @param number get the property from this number
+   * @param base represent in this base
+   * @return sum of distances between adjacent digits that are increasing.
+   */
+  protected int getUpVariation(final Z number, final int base) {
+    final int[] digits = expandInt(number, base);
+    int result = 0; // assume none
+    int idig = 0;
+    int oldDig = digits[idig++];
+    while (idig < digits.length) {
+      final int newDig = digits[idig++];
+      if (oldDig > newDig) {
+        result += oldDig - newDig;
+      }
+      oldDig = newDig;
+    } // while
+   return result;
+  }
+
+  /**
+   * Get the total variation of the digits of a number as defined in A297330.
+   * @param number get the property from this number
+   * @param base represent in this base
+   * @return sum of down-variation and up-variation
+   */
+  protected int getTotalVariation(final Z number, final int base) {
+    return getDownVariation(number, base) + getUpVariation(number, base);
+  }
+
+  /**
+   * Compare the variations
+   * @param number get the property from this number
+   * @param base represent in this base
+   * @return 1 if DV &lt; UV, 0 if DV == UV, -1 if DV &gt; UV
+   */
+  protected int signumVariation(final Z number, final int base) {
+    final int dv = getDownVariation(number, base);
+    final int uv = getUpVariation(number, base);
+    if (dv < uv) {
+      return 1;
+    } else if (dv == uv) {
+      return 0;
+    } else {
+      return -1;
+    }
+  }
+
   /**
    * Determine whether an array contains increasing lengths only
    * @param number get the run lengths from this number
@@ -337,7 +431,7 @@ public abstract class RunsBaseSequence implements Sequence {
     // System.out.println(" hasIncreasingRunLengths=" + result);
     return result;
   }
-  
+
   /**
    * Determine whether an array contains decreasing lengths only
    * @param rls array of run lengths
@@ -356,7 +450,7 @@ public abstract class RunsBaseSequence implements Sequence {
   }
 
   /**
-   * Determine whether the number of runs in a number represented 
+   * Determine whether the number of runs in a number represented
    * in some base has a specific value.
    * @param number get the run count from this number
    * @param base represent in this base

@@ -12,7 +12,7 @@ import irvine.util.Pair;
  */
 public abstract class MemoryFunction2<S, R> {
 
-  private final HashMap<Pair<S, S>, R> mCache = new HashMap<>();
+  protected final HashMap<Pair<S, S>, R> mCache = new HashMap<>();
 
   /**
    * Compute the function at specified parameters.

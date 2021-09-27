@@ -4,7 +4,7 @@ import irvine.math.z.Euler;
 import irvine.math.z.Z;
 
 /**
- * A008331 phi(p+1), p prime.
+ * A008331 a(n) = phi(prime(n)+1).
  * @author Sean A. Irvine
  */
 public class A008331 extends A008864 {

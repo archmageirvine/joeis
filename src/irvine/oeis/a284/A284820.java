@@ -6,7 +6,7 @@ import irvine.oeis.PositionSequence;
 import irvine.oeis.a010.A010060;
 
 /**
- * A284820 Positions of 0 in A284792; complement of A284847.
+ * A284820 Positions of 0 in the {1100-&gt;0}-transform of A010060; complement of A284847.
  * @author Georg Fischer
  */
 public class A284820 extends PositionSequence {

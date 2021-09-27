@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.a000.A000566;
 
 /**
- * A186237 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the triangular numbers and hexagonal numbers.  Complement of A186238.
+ * A186237 Adjusted joint rank sequence of (f(i)) and (g(j)) with f(i) after g(j) when f(i)=g(j), where f and g are the triangular numbers (A000217) and heptagonal numbers (A000566).  Complement of A186238.
  * @author Georg Fischer
  */
 public class A186237 extends RankSequence {

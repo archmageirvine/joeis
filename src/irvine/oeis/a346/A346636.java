@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A346636 allocated for Giovanni Corbelli.
+ * A346636 a(n) is the number of quadruples (a_1, a_2, a_3, a_4) having all terms in {1,...,n} such that there exists a quadrilateral with these side lengths.
  * @author Sean A. Irvine
  */
 public class A346636 implements Sequence {

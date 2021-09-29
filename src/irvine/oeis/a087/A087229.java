@@ -8,7 +8,7 @@ import irvine.oeis.a017.A017569;
 
 
 /**
- * A087229 Exponent of p=2 in 12n+4=3(4n+1)+1 numbers.
+ * A087229 Exponent of p=2 in 12n+4 = 3(4n+1)+1.
  * Formula: <code>a(n) = A007814(A017569(n)).</code>
  * @author Georg Fischer
  */

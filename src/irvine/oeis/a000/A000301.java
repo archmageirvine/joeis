@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010098 a(n) = a(n-1)*a(n-2) with a(0)=1, a(1)=3. 
+ * A000301 a(n) = a(n-1)*a(n-2) with a(0) = 1, a(1) = 2; also a(n) = 2^Fibonacci(n).
  * @author Sean A. Irvine
  * @author Georg Fischer
  */

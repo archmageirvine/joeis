@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A051602 Maximal number of squares that can be formed from n points in the plane.
+ * A051602 Maximal number of squares that can be formed from n points chosen from the infinite square grid.
  * @author Sean A. Irvine
  */
 public class A051602 implements Sequence {

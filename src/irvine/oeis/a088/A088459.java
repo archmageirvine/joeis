@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A088459 Triangle read by rows: T(n,k) represents the number of lozenge tilings of an (n, 1,n)-hexagon which include the non-vertical tile above the main diagonal starting in position k+1.
+ * A088459 Triangle read by rows: T(n,k) represents the number of lozenge tilings of an (n,1,n)-hexagon which include the non-vertical tile above the main diagonal starting in position k+1.
  * @author Georg Fischer
  */
 public class A088459 implements Sequence {

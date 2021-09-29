@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A159035 a(0)=1=a(1), a(2)=2, a(3)=5; thereafter a(n+3)=4*a(n+2)-4*a(n+1)+2*a(n) for n>=1
+ * A159035 a(0)=1=a(1), a(2)=2, a(3)=5; thereafter a(n+3)=4*a(n+2)-4*a(n+1)+2*a(n) for n&gt;=1.
  * @author Georg Fischer
  */
 public class A159035 extends HolonomicRecurrence {

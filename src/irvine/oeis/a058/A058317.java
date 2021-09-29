@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A058317 Number of neutrons in atoms of n-th element of periodic table (for most abundant isotope).
+ * A058317 Number of neutrons in atoms of the n-th element of the periodic table (for the most abundant isotope).
  * @author Georg Fischer
  */
 public class A058317 extends NoncomputableSequence {

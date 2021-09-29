@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A127757 Integer part of Gauss&apos; Arithmetic-Geometric Mean M(1,n). 
+ * A127757 Integer part of Gauss' Arithmetic-Geometric Mean M(1,n).
  * @author Georg Fischer
  */
 public class A127757 implements Sequence {

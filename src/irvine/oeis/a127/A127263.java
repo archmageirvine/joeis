@@ -15,7 +15,7 @@ public class A127263 extends A127103 {
   }
 
   /**
-   * Generic constructor with parameters: k^parm1 divides parm2^(k^2) + parm3
+   * Generic constructor with parameters: <code>k^parm1</code> divides <code>parm2^(k^2) + parm3</code>.
    * @param parm1 power of k
    * @param parm2 base
    * @param parm3 additive term

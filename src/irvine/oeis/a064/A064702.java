@@ -12,7 +12,6 @@ import irvine.oeis.Sequence;
 public class A064702 implements Sequence {
 
   protected int mN;
-  protected int mParm;
 
   /** Construct the sequence. */
   public A064702() {

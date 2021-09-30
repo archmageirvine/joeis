@@ -10,11 +10,14 @@ import irvine.oeis.a051.A051293;
  */
 public class A327475 extends A051293 {
 
-  protected long mN = -1;
+  private boolean mFirst = true;
 
   @Override
   public Z next() {
-    ++mN;
-    return mN == 0 ? Z.ONE : super.next().add(1);
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
+    }
+    return super.next().add(1);
   }
 }

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A051812 Number of n-digit numbers with nonzero multiplicative digital root 1.
- * Caution, works for n < 10^18 only!
+ * Caution, works for n &lt; 10^18 only!
  * @author Georg Fischer
  */
 public class A051812 implements Sequence {

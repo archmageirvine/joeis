@@ -21,7 +21,7 @@ public class A127103 implements Sequence {
   }
 
   /**
-   * Generic constructor with parameters: k^parm1 divides parm2^k+parm3
+   * Generic constructor with parameters: <coede>k^parm1</coede> divides <code>parm2^k+parm3</code>.
    * @param parm1 power of k
    * @param parm2 base
    * @param parm3 additive term

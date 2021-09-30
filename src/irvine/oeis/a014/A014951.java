@@ -21,7 +21,7 @@ public class A014951 implements Sequence {
   }
 
   /**
-   * Generic constructor with parameters: k divides parm1^k + parm2
+   * Generic constructor with parameters: k divides <code>parm1^k + parm2</code>.
    * @param parm1 base
    * @param parm2 additive term
    */

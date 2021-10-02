@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.a088.A088459;
 
 /**
- * A247644 Triangle formed from the even-numbered rows of A088855. 
+ * A247644 Triangle formed from the odd-numbered rows of A088855.
  * @author Georg Fischer
  */
 public class A247644 extends A088459 {

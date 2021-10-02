@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A070843 Largest n-digit number with exactly n prime divisors. There are no further terms.
+ * A070843 Largest n-digit number with exactly n distinct prime divisors. There are no further terms.
  * @author Georg Fischer
  */
 public class A070843 extends FiniteSequence {

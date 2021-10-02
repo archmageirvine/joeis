@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035075 a(n) is root of square starting with digit 8: first term of runs.
+ * A035075 a(n) = ceiling(sqrt(8*10^n)).
  * @author Sean A. Irvine
  */
 public class A035075 implements Sequence {

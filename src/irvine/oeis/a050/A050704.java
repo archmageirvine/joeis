@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050704 Composite numbers with property that n minus sum of prime factors of n is prime.
+ * A050704 Composite numbers k with the property that k minus the sum of the prime factors of k is prime.
  * @author Sean A. Irvine
  */
 public class A050704 implements Sequence {

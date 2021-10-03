@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a020.A020701;
 /**
- * A316938 Triangle read by rows formed using Pascal&apos;s rule except that n-th row begins and ends with Fibonacci(n+4).
+ * A316938 Triangle read by rows formed using Pascal's rule except that n-th row begins and ends with Fibonacci(n+4).
  * @author Georg Fischer
  */
 public class A316938 extends BorderedTriangleRecurrence  {

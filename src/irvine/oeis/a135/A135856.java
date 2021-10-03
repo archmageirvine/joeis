@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000012;
 import irvine.oeis.a016.A016813;
 /**
- * A135856 A007318 * a bidiagonal matrix with all 1&apos;s in the main diagonal and all 4&apos;s in the subdiagonal.
+ * A135856 A007318 * a bidiagonal matrix with all 1's in the main diagonal and all 4's in the subdiagonal.
  * @author Georg Fischer
  */
 public class A135856 extends BorderedTriangleRecurrence  {

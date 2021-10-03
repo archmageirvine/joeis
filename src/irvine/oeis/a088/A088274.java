@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A088274 Numbers n such that 10^n + 7 is prime.
+ * A088274 Numbers k such that 10^k + 7 is prime.
  * @author Georg Fischer
  */
 public class A088274 extends PrimePositionSubsequence {

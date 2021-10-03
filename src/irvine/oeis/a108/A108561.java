@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000012;
 import irvine.oeis.a033.A033999;
 /**
- * A108561 Triangle read by rows: T(n, 0)=1, T(n,n)=(-1)^n, T(n+1,k)=T(n,k-1)+T(n,k) for 0 &lt; k &lt; n.
+ * A108561 Triangle read by rows: T(n,0)=1, T(n,n)=(-1)^n, T(n+1,k)=T(n,k-1)+T(n,k) for 0 &lt; k &lt; n.
  * @author Georg Fischer
  */
 public class A108561 extends BorderedTriangleRecurrence  {

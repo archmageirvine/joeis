@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050524 Primes of form 9*2^n-1.
+ * A050524 Primes of the form 9*2^n-1.
  * @author Sean A. Irvine
  */
 public class A050524 implements Sequence {

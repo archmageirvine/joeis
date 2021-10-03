@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000012;
 import irvine.oeis.a007.A007051;
 /**
- * A125170 Binomial transform of an infinite lower triangular matrix with (1, 1, 2, 4, 8...) in every column and the rest zeros. Let the left column = A007051, then for k&gt;1, T(n,k) = (n-1,k) + (n-1,k-1).
+ * A125170 Binomial transform of an infinite lower triangular matrix with (1,1,2,4,8...) in every column and the rest zeros. Let the left column = A007051, then for k&gt;1, T(n,k) = (n-1,k) + (n-1,k-1).
  * @author Georg Fischer
  */
 public class A125170 extends BorderedTriangleRecurrence  {

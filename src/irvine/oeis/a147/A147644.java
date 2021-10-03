@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000012;
 import irvine.oeis.a002.A002483;
 
 /**
- * A147644 Triangle read by rows: t(n,m)=Binomial[n, m] + If[n &gt; 2, 2*Binomial[n - 2, m - 1], 0]; Mod[If[n &gt; 2, 2*Binomial[n - 2, m - 1], 0], 2]=0.
+ * A147644 Triangle read by rows: t(n,m)=Binomial[n, m] + If[n &gt; 2, 2*Binomial[n - 2, m - 1], 0]; Mod[If[n &gt; 2, 2*Binomial[n - 2, m - 1], 0],2]=0.
  * @author Georg Fischer
  */
 public class A147644 extends BorderedTriangleRecurrence {

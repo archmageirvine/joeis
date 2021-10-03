@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000108;
 /**
- * A134634 Triangle formed by Pascal&apos;s rule with left borders = A000108.
+ * A134634 Triangle formed by Pascal's rule with left borders = A000108.
  * @author Georg Fischer
  */
 public class A134634 extends BorderedTriangleRecurrence  {

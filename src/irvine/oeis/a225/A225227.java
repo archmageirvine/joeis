@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A225227 The n X n X n dots problem: minimal number of straight lines (connected at their endpoints) required to pass through n^3 dots arranged in an n X n X n grid.
+ * A225227 The n X n X n dots problem: minimal number of straight lines (connected at their endpoints) required to pass through n^3 dots arranged in an n X n X n grid, without exiting from the box [0, n] X [0, n] X [0, n].
  *
  * @author Georg Fischer
  */

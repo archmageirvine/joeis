@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000290;
 import irvine.oeis.a155.A155559;
 /**
- * A228196 A triangle formed like Pascal&apos;s triangle, but with n^2 on the left border and 2^n on the right border instead of 1.
+ * A228196 A triangle formed like Pascal's triangle, but with n^2 on the left border and 2^n on the right border instead of 1.
  * @author Georg Fischer
  */
 public class A228196 extends BorderedTriangleRecurrence  {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038106 Numbers n with property that n is a substring of its base 6 representation.
+ * A038106 Numbers k with the property that k is a substring of its base-6 representation.
  * @author Sean A. Irvine
  */
 public class A038106 implements Sequence {

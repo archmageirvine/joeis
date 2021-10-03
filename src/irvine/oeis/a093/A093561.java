@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000012;
 import irvine.oeis.a123.A123932;
 /**
- * A093561 (4, 1) Pascal triangle.
+ * A093561 (4,1) Pascal triangle.
  * @author Georg Fischer
  */
 public class A093561 extends BorderedTriangleRecurrence  {

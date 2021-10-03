@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000012;
 import irvine.oeis.a000.A000027;
 
 /**
- * A299146 Modified Pascal&apos;s triangle read by rows: T(n,k) = C(n+1,k) - n, 1 &lt;= k &lt;= n.
+ * A299146 Modified Pascal's triangle read by rows: T(n,k) = C(n+1,k) - n, 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A299146 extends BorderedTriangleRecurrence {

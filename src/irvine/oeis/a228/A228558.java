@@ -7,7 +7,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A228558 Numbers n such that (17^n + 4^n)/21 is prime.
+ * A228558 Numbers k such that (17^k + 4^k)/21 is prime.
  * @author Georg Fischer
  */
 public class A228558 extends PrimePositionSubsequence {

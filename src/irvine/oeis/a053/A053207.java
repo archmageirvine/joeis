@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a005.A005843;
 import irvine.oeis.a172.A172273;
 /**
- * A053207 Rows of triangle formed using Pascal&apos;s rule except begin n-th row with n and end it with n+1.
+ * A053207 Rows of triangle formed using Pascal's rule except begin n-th row with n and end it with n+1.
  * @author Georg Fischer
  */
 public class A053207 extends BorderedTriangleRecurrence  {

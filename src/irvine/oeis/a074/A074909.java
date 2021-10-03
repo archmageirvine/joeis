@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000012;
 import irvine.oeis.a000.A000027;
 /**
- * A074909 Running sum of Pascal&apos;s triangle (A007318), or beheaded Pascal&apos;s triangle read by beheaded rows.
+ * A074909 Running sum of Pascal's triangle (A007318), or beheaded Pascal's triangle read by beheaded rows.
  * @author Georg Fischer
  */
 public class A074909 extends BorderedTriangleRecurrence  {

@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000012;
 import irvine.oeis.a029.A029580;
 /**
- * A204203 Triangle based on (0, 1/4, 1) averaging array.
+ * A204203 Triangle based on (0,1/4,1) averaging array.
  * @author Georg Fischer
  */
 public class A204203 extends BorderedTriangleRecurrence  {

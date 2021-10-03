@@ -5,7 +5,7 @@ import irvine.oeis.BorderedTriangleRecurrence;
 import irvine.oeis.a000.A000012;
 import irvine.oeis.a000.A000930;
 /**
- * A099567 Riordan array (1/(1-x-x^3), 1/(1-x)).
+ * A099567 Riordan array (1/(1-x-x^3),1/(1-x)).
  * @author Georg Fischer
  */
 public class A099567 extends BorderedTriangleRecurrence  {

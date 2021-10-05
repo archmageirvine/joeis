@@ -43,9 +43,21 @@ public class DistinctMultiplicativeClosureSequence implements Sequence {
   private final TreeSet<State> mA = new TreeSet<>();
   private Z mPrev = null;
 
-  protected DistinctMultiplicativeClosureSequence(final Sequence seq) {
+  protected DistinctMultiplicativeClosureSequence(final Sequence seq, final Z initial) {
     mSeq = MemorySequence.cachedSequence(seq);
-    mA.add(new State(Z.ONE, -1));
+    mA.add(new State(initial, -1));
+  }
+
+  protected DistinctMultiplicativeClosureSequence(final Sequence seq) {
+    this(seq, Z.ONE);
+  }
+
+  protected Z op(final Z a, final Z b) {
+    return a.multiply(b);
+  }
+
+  protected Z invOp(final Z a, final Z b) {
+    return a.divide(b);
   }
 
   @Override
@@ -54,10 +66,10 @@ public class DistinctMultiplicativeClosureSequence implements Sequence {
       final State state = mA.pollFirst();
       final Z n = state.mN;
       final int index = state.mIndex;
-      final Z t = n.multiply(mSeq.a(index + 1));
+      final Z t = op(n, mSeq.a(index + 1));
       mA.add(new State(t, index + 1));
       if (index >= 0) {
-        mA.add(new State(t.divide(mSeq.a(index)), index + 1));
+        mA.add(new State(invOp(t, mSeq.a(index)), index + 1));
       }
       if (!n.equals(mPrev)) {
         mPrev = n;

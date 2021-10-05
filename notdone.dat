@@ -1735,3 +1735,6 @@ A051658 Experimental values for maximal number of contacts between equal circles
 A051659 Experimental values for maximal number of "loose" circles in packing equal circles into a square
 A051660 Experimental values for number of circles in packing equal circles into a square for which there is a loose circle.
 A051661 Experimental values for number of circles in packing equal circles into a square for which there are no loose circles.
+A051738 Number of rooted 2-dimensional polyominoes with n pentagonal cells, with no symmetries removed.
+A051752 Number of n X n (real) {0,1}-matrices having determinant A003432(n).
+A051753 Number of n X n (-1,0,1)-matrices having maximum determinant (=A003433(n)).

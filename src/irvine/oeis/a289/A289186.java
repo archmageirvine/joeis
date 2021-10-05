@@ -27,7 +27,7 @@ public class A289186 implements Sequence {
    * @param h 
    */
   public A289186(final int offset, final int g, final int h) {
-  	mN = offset - 1;
+    mN = offset - 1;
     mG = Z.valueOf(g);
     mH = h;
   }

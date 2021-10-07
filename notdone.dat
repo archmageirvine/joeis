@@ -1739,3 +1739,8 @@ A051738 Number of rooted 2-dimensional polyominoes with n pentagonal cells, with
 A051752 Number of n X n (real) {0,1}-matrices having determinant A003432(n).
 A051753 Number of n X n (-1,0,1)-matrices having maximum determinant (=A003433(n)).
 A051763 Number of nonalternating knots with n crossings.
+A051765 Number of satellite knots with n crossings
+A051766 Number of chiral noninvertible knots with n crossings.
+A051767 Number of amphichiral (+) noninvertible knots with n crossings.
+A051768 Number of amphichiral (-) noninvertible knots with n crossings.
+A051769 Number of chiral invertible knots with n crossings

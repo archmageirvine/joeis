@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(BracketsTest.class);
     suite.addTestSuite(CasingTest.class);
+    suite.addTestSuite(CatalanTest.class);
     suite.addTestSuite(CzechTest.class);
     suite.addTestSuite(DanishTest.class);
     suite.addTestSuite(DateTest.class);

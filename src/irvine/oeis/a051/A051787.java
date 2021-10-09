@@ -37,6 +37,10 @@ public class A051787 implements Sequence {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mNuts = 0;
 
+  protected int add() {
+    return 0;
+  }
+
   private Triple<Integer> createState(final int a, final int b, final int p) {
     return p != 0 ? new Triple<>(a, b, p) : new Triple<>(a - 1, b - 1, 2);
   }
@@ -75,8 +79,7 @@ public class A051787 implements Sequence {
           queue.add(nothing);
         }
         transitions.get(id).add(id(stateToId, nothing)); // this state is never terminal
-        //final int half = (state.right() + 1) / 2;
-        final int half = state.right() / 2; // Non-standard rule?
+        final int half = (state.right() + add()) / 2;
         final Triple<Integer> takeHalfPot = createState(state.mid(), state.left() + half, state.right() - half);
         if (!stateToId.containsKey(takeHalfPot)) {
           queue.add(takeHalfPot);

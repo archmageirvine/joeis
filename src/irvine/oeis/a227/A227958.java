@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A227958 Decimal expansion of exp(-1/(2*sqrt(2))).

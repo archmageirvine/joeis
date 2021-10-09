@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A212004 Decimal expansion of (2*Pi)^4.

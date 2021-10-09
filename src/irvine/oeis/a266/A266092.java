@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A266092 Decimal expansion of the power tower of 1/sqrt(3): the real solution to 3^(x/2)*x = 1.

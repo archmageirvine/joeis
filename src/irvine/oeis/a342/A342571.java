@@ -3,7 +3,7 @@ package irvine.oeis.a342;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A342571 Decimal expansion of the surface area of a golden ellipsoid with semi-axes lengths 1, 1 and phi (A001622).

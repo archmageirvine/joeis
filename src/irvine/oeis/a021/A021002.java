@@ -3,7 +3,7 @@ package irvine.oeis.a021;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A021002 Decimal expansion of zeta(2)*zeta(3)*zeta(4)*...

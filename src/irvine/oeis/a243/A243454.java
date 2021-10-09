@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A243454 Decimal expansion of the variance of the maximum of a size 5 sample from a normal (0,1) distribution.

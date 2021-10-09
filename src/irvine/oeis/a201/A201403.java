@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A201403 Decimal expansion of x satisfying x^2 + 8 = sec(x) and 0 &lt; x &lt; Pi.

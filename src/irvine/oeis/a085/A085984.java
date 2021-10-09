@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085984 Decimal expansion of solution to e^x*(-1 + x) == (1 + x)/e^x.

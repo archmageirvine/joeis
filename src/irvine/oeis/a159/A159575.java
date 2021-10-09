@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A159575 Decimal expansion of (339+26*sqrt(2))/337.

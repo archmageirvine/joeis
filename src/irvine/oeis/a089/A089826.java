@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A089826 Decimal expansion of real root of 2*x^3+x^2-1.

@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A274031 Decimal expansion of a doubly infinite sum involving harmonic numbers. Curiously, this sum is very close to 1.

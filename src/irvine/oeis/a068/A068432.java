@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A068432 Expansion of golden ratio (1 + sqrt(5))/2 in base 2.

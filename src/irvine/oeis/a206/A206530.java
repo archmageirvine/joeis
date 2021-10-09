@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A206530 Decimal expansion of 1/(1-sin(1)).

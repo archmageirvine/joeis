@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A099217 Decimal expansion of Li_3(1/2).

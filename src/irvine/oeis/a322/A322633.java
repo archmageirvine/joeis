@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ZPolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A322633 Decimal expansion of the real solution to 11571875*x^5 - 5363750*x^4 + 628250*x^3 - 97580*x^2 + 5180*x - 142 = 0, multiplied by 3/7. Constant occurring in the asymptotic behavior of the number of lattice paths of slope 2/5, observed by D. Knuth.

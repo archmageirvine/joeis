@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 /**
  * A210974 Decimal expansion of the angle (in degrees) between an edge and (the normal of) a face of the regular tetrahedron.
  * Formula: arccos(sqrt(1/3))*180/Pi

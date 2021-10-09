@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A137218 Decimal expansion of the argument of -1 + 2*i.

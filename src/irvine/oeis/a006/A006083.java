@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a019.A019739;
 
 /**

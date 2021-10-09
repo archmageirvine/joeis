@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085661 Decimal expansion of sin(sin(sin(1))).

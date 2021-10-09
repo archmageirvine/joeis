@@ -2,7 +2,7 @@ package irvine.oeis.a196;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A196498 Decimal expansion of the constant Sum_{k&gt;=0} (-1)^k/(10*k)!.

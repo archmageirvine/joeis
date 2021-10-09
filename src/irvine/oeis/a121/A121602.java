@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A121602 Decimal expansion of cosecant of 20 degrees = csc(Pi/9).

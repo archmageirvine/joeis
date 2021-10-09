@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A199060 Decimal expansion of x&lt;0 satisfying 3*x^2+sin(x)=1.

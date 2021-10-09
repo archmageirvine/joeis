@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A107905 Decimal expansion of (5+sqrt(21))/2.

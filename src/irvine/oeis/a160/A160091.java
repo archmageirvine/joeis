@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A160091 Decimal expansion of (587+102*sqrt(2))/569.

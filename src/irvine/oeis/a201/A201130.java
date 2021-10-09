@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A201130 Decimal expansion of root of  x^(e^x) = (e^x)^x.

@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A221185 Decimal expansion of sqrt(120-18*sqrt(3))/3.

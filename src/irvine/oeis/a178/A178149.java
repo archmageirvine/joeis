@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A178149 Decimal expansion of (15+sqrt(1365))/30.

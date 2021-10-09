@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A202142 Decimal expansion of 4/sqrt((1+sqrt(5))/2).

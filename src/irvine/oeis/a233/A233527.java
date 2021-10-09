@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A233527 Decimal expansion of arctan( 1/(2*Pi) ): opposite angle for a right triangle of equal area to a circle.

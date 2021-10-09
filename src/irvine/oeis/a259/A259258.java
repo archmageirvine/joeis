@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A259258 Decimal expansion of the smallest positive solution to sin(x) + cos(x) + tan(x) = 0.

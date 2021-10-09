@@ -2,7 +2,7 @@ package irvine.oeis.a005;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A005481 Decimal expansion of cube root of 5.

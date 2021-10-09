@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A189088 Decimal expansion of Pi - sqrt(Pi^2 - 1).

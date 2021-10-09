@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A159590 Decimal expansion of (451+30*sqrt(2))/449.

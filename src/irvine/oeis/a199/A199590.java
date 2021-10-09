@@ -2,7 +2,7 @@ package irvine.oeis.a199;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A199590 Decimal expansion (unsigned) of the greatest root of 6x^3 + 18x^2 + 12x + 2 = 0.

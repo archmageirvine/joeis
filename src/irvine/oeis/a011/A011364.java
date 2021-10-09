@@ -2,7 +2,7 @@ package irvine.oeis.a011;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A011364 Decimal expansion of 20th root of 15.

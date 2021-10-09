@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A201504 Decimal expansion of sin(1/2).

@@ -1,7 +1,7 @@
 package irvine.oeis.a156;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A156035 Decimal expansion of 3 + 2*sqrt(2).

@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A220610 Decimal expansion of sqrt(2*Pi^3).

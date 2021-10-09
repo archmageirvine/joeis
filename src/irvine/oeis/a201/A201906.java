@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A201906 Decimal expansion of the x nearest 0 that satisfies x^2 + 4*x + 2 = e^x.

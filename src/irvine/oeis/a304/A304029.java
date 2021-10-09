@@ -3,7 +3,7 @@ package irvine.oeis.a304;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A304029 Decimal expansion of positive root of cos(x) - cosh(x) + 1.

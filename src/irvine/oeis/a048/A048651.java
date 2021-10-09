@@ -2,7 +2,7 @@ package irvine.oeis.a048;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A048651 Decimal expansion of Product_{k &gt;= 1} (1 - 1/2^k).

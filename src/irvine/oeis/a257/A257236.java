@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A257236 Decimal expansion of the real root of 4*x^3 + 3*x - 40.

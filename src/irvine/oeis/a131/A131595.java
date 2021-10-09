@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A131595 Decimal expansion of 3*(sqrt(25 + 10*sqrt(5))), the surface area of a regular dodecahedron with edges of unit length.

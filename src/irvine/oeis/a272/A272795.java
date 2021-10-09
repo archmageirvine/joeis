@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A272795 Decimal expansion of 2*sin(1/2).

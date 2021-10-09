@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A135691 Decimal expansion of (6*sqrt(3)+12*log(2+sqrt(3))-Pi)/48.

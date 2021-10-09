@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A092035 Decimal expansion of (Pi/e)^2.

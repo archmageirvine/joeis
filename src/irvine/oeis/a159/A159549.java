@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A159549 Decimal expansion of (201+20*sqrt(2))/199.

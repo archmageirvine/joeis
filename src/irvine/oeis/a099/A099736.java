@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A099736 Decimal expansion of (log_10 Pi) / Pi.

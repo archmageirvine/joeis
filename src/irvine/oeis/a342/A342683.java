@@ -3,7 +3,7 @@ package irvine.oeis.a342;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A342683 Decimal expansion of 1/zeta(8).

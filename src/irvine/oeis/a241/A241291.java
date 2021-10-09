@@ -4,7 +4,7 @@ package irvine.oeis.a241;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.util.string.StringUtils;
 
 /**

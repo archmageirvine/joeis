@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A230151 Decimal expansion of the positive real solution of the equation x^(k+1)+x^k-1=0. Case k=3.

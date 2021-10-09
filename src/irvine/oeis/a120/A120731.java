@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A120731 Decimal expansion of 3 + sqrt(2)/10.

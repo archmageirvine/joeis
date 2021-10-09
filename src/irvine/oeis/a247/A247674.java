@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A247674 Decimal expansion of the integral over the square [0,1]x[0,1] of sqrt(1+(x-y)^2) dx dy.

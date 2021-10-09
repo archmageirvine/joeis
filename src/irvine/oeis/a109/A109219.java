@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A109219 Decimal expansion of Product_{n &gt;= 2} 1-n^(-3).

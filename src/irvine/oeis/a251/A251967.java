@@ -4,7 +4,7 @@ package irvine.oeis.a251;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A251967 Decimal expansion of 29*Pi^3/864.

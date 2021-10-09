@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A286984 Decimal expansion of (2 + sqrt(5) + sqrt(15 - 6*sqrt(5)))/2.

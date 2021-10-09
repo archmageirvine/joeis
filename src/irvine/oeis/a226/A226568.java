@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A226568 Decimal expansion of the number defined by x^x + x = 1.

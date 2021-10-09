@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A091900 Decimal expansion of 1/(exp(2*Pi/sqrt(5))*(sqrt(5)/(1+(5^(3/4)*(phi-1)^(5/2)-1)^(1/5))-phi)).

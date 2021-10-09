@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A127450 Beatty sequence for 1/(e^Pi - Pi^e), complement of A127451.

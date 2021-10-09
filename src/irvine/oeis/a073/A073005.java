@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A073005 Decimal expansion of Gamma(1/3).

@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A090143 Decimal expansion of e^3 - 2e^2 + e/2.

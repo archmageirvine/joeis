@@ -3,7 +3,7 @@ package irvine.oeis.a170;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A170874 Hexadecimal expansion of Euler-Mascheroni constant gamma.

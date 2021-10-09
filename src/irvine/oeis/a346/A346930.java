@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346930 Decimal expansion of 5207 * Pi^8 / 49601160.

@@ -3,7 +3,7 @@ package irvine.oeis.a334;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A334400 Decimal expansion of cosh(e).

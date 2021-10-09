@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A194567 Decimal expansion of the positive solution to x = 3*(1-exp(-x)).

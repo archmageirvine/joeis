@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A258500 Decimal expansion of the nontrivial real solution of x^(3/2) = (3/2)^x.

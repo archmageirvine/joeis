@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A271563 Decimal expansion of Sum_{j&gt;=0} Sum_{i&gt;=0} (-1/4)^i*(-1)^j*binomial(2i,i)/((2j+1)(i+2j+2)).

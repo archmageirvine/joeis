@@ -3,7 +3,7 @@ package irvine.oeis.a170;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A170873 Hexadecimal expansion of e.

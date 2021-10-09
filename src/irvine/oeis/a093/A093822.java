@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093822 Decimal expansion of -109/121 - 82/(121*sqrt(3)) + (2*sqrt(-35139 + 28634*sqrt(3)))/121 - Pi/3 + arccos((-1 + sqrt(3))/2).

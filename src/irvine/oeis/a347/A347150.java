@@ -2,7 +2,7 @@ package irvine.oeis.a347;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347150 Decimal expansion of the Dirichlet eta function at 8.

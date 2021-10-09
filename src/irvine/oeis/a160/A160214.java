@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A160214 Decimal expansion of (1947891+1218490*sqrt(2))/953^2.

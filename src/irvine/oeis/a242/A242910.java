@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A242910 Decimal expansion of exp(sqrt(Pi/24)).

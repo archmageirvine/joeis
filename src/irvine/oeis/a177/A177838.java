@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A177838 Decimal expansion of (44+sqrt(2442))/88.

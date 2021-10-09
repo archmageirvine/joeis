@@ -5,6 +5,7 @@ import java.util.Locale;
 import irvine.math.cr.CR;
 import irvine.math.group.IntegersMod;
 import irvine.math.z.Z;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * Automatically generate reciprocals of integers.

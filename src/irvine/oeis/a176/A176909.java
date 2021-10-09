@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A176909 Decimal expansion of sqrt(230).

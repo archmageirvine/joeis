@@ -1,7 +1,7 @@
 package irvine.oeis.a098;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A098317 Decimal expansion of phi^3 = 2 + sqrt(5).

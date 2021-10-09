@@ -1,9 +1,9 @@
 package irvine.oeis.a102;
 // manually (bindec) at 2021-08-04
 
-import irvine.oeis.BinaryToDecimalExpansionSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a064.A064911;
+import irvine.oeis.cons.BinaryToDecimalExpansionSequence;
 
 /**
  * A102913 Take characteristic function of the semiprimes A001358, interpret it as a binary fraction and convert to a decimal fraction.

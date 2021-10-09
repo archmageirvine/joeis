@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A248510 Decimal expansion of von Klitzing constant R(K) (ohms).

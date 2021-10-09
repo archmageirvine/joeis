@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A127583 Decimal expansion of smallest univoque Pisot Number.

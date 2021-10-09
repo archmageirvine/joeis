@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A004544 Expansion of sqrt(2) in base 7.

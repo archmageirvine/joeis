@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A157123 Decimal expansion of (11 + 3*sqrt(2))/(11 - 3*sqrt(2)).

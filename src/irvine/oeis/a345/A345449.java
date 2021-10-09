@@ -2,7 +2,7 @@ package irvine.oeis.a345;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A345449 Decimal expansion of Gascheau's value, which is defined as the smaller solution of 27*x*(1 - x) = 1.

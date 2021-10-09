@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A318740 Decimal expansion of (sqrt((5 - sqrt(5))/2) - (sqrt(5) - 1)/2) * exp(Pi/5).

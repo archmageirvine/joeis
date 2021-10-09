@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A198609 Decimal expansion of -x where x&lt;0 satisfies 2*x^2+3x=2*sin(x).

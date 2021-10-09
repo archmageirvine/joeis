@@ -3,7 +3,7 @@ package irvine.oeis.a041;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.ContinuedFractionOfSqrtSequence;
+import irvine.oeis.cons.ContinuedFractionOfSqrtSequence;
 
 /**
  * A041868 Numerators of continued fraction convergents to sqrt(456).

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A006752 Decimal expansion of Catalan's constant 1 - 1/9 + 1/25 - 1/49 + 1/81 - ...

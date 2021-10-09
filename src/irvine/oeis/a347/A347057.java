@@ -1,7 +1,7 @@
 package irvine.oeis.a347;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347057 Decimal expansion of Pi^3 * (3*sqrt(2) + 4) / 256.

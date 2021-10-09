@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A318526 Decimal expansion of (7*20^(1/3)-19)^(1/6).

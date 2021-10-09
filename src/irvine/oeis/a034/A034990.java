@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A034990 a(n)^2 is smallest square starting with a string of n 7's.

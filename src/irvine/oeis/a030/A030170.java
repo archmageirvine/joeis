@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A030170 Let c be the point at which Gamma(x), x&gt;0, is minimized; sequence gives continued fraction for c.

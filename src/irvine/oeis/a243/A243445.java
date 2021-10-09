@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A243445 Decimal expansion of the polar angle of the cone circumscribed to a regular dodecahedron from one of its vertices.

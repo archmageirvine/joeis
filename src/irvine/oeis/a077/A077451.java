@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A077451 Decimal expansion of (29+sqrt(145))/12.

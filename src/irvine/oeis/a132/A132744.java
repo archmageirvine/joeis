@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A132744 Decimal expansion of Pi/28.

@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A196763 Decimal expansion of the least x&gt;0 satisfying 5=x*sin(x).

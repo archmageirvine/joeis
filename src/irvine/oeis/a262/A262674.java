@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A262674 Decimal expansion of the real root of x^3 - 6x^2 + 4x - 2.

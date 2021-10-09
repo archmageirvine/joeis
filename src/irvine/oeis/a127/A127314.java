@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A127314 Decimal expansion of number x satisfying log(x) = x/10.

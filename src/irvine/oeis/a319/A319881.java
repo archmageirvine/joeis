@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A319881 Decimal expansion of the steradian solid angle subtended by one triangular facet of the icosidodecahedron.

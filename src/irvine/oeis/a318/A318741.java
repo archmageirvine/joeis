@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A318741 Decimal expansion of Pi^3/48 + Pi*log(2)^2/4.

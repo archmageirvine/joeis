@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A215722 Decimal expansion of Pi*(3 - gamma)/32, where gamma is Euler's constant A001620.

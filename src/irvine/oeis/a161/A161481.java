@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A161481 Decimal expansion of (16131 + 6970*sqrt(2))/113^2.

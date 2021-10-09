@@ -1,7 +1,7 @@
 package irvine.oeis.a347;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347151 Decimal expansion of erf(2).

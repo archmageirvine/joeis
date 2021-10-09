@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A173159 Decimal expansion of the constant x which satisfies x^x = 5. 

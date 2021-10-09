@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A196399 Decimal expansion of the positive number x satisfying e^x = 5*cos(x).

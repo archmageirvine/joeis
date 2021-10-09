@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A157350 Decimal expansion of (130803 + 73738*sqrt(2))/281^2.

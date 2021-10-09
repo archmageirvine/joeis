@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085846 Decimal expansion of root of x = (1+1/x)^x.

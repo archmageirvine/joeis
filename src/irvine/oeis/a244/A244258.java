@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A244258 Decimal expansion of sqrt(2*Pi)*log(2), a constant associated with asymptotic evaluation of random mapping statistics.

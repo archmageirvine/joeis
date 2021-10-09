@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A126586 Decimal expansion of solution to log(x) = sin(x).

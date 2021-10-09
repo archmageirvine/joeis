@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A200623 Decimal expansion of the greater of two values of x satisfying 5*x^2 - 2 = tan(x) and 0 &lt; x &lt; Pi/2.

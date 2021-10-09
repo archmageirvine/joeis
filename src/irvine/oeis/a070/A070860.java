@@ -2,7 +2,7 @@ package irvine.oeis.a070;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A070860 Decimal expansion of (-1)*c(1) where, in a neighborhood of zero, Gamma(x) = 1/x + c(0) + c(1)*x + c(2)*x^2 + ... (Gamma(x) denotes the Gamma function).

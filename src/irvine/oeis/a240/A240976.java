@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A240976 Decimal expansion of 3*zeta(3)/(2*Pi^2), a constant appearing in the asymptotic evaluation of the average LCM of two integers chosen independently from the uniform distribution [1..n].

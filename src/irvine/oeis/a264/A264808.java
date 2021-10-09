@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A264808 Decimal expansion of the positive root of x^(x^x) = e.

@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256854 Decimal expansion of area of a regular 11-gon with unit edge length.

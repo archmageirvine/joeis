@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A265729 Decimal expansion of 32*Pi.

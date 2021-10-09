@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A090611 Decimal expansion of (24e^5-96e^4+108e^3-32e^2+e)/24.

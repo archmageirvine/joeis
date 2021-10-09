@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A191220 Decimal expansion of x, where Arithmetic-Geometric Mean of 1 and x = Pi.

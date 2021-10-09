@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A100954 Decimal expansion of 7/2 - sqrt(2)/4.

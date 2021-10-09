@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A086269 Decimal expansion of -41/16 + (3*sqrt(3))/2.

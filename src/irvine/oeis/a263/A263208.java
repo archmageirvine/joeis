@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A263208 Decimal expansion of the real part of the continued fraction i/(e + i/(e + i/(...))).

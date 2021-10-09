@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093524 Decimal expansion of 3977/216000 - Pi^2/2160.

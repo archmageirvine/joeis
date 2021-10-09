@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A175615 Decimal expansion of sinh(Pi)/(4*Pi).

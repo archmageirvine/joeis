@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A194807 Decimal expansion of 1/(e-2).

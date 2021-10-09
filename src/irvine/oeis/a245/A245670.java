@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A245670 Decimal expansion of 28*sqrt(3) - 48.

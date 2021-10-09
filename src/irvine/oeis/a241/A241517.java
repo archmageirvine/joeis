@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A241517 Decimal expansion of the positive solution to log(x)/x == -3*Pi/2.

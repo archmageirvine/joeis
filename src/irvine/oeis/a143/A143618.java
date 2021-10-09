@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A143618 Decimal expansion of 127/216.

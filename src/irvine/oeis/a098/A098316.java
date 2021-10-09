@@ -1,7 +1,7 @@
 package irvine.oeis.a098;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A098316 Decimal expansion of [3, 3, ...] = (3 + sqrt(13))/2.

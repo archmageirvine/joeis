@@ -2,7 +2,7 @@ package irvine.oeis.a065;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A065442 Decimal expansion of Erd\u0151s-Borwein constant Sum_{k&gt;=1} 1/(2^k - 1).

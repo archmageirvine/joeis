@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A197479 Decimal expansion of least x&gt;0 having cos(2x)=(cos 3x)^2.

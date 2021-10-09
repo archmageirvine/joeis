@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A301755 Decimal expansion of 3/8.

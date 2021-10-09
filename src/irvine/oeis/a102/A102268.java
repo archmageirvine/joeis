@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A102268 Decimal expansion of inverse binary entropy function of 1/2.

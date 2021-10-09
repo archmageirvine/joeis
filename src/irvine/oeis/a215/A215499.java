@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A215499 Decimal expansion of the smallest root of tan(x) = log(x).

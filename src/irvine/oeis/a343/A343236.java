@@ -3,7 +3,7 @@ package irvine.oeis.a343;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A343236 Decimal expansion of (A010476 - 3*A228496)/(4*Pi) - 1/8.

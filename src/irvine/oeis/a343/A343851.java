@@ -3,7 +3,7 @@ package irvine.oeis.a343;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A343851 Decimal expansion of the solution to the Heilbronn triangle problem for seven points in a unit square.

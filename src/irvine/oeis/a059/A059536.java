@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A059536 Beatty sequence for zeta(2)/(zeta(2)-1).

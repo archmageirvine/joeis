@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A159846 Decimal expansion of (293619 + 186550*sqrt(2))/359^2.

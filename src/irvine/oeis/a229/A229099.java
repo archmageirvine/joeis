@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A229099 Decimal expansion of 1 - 6/Pi^2.

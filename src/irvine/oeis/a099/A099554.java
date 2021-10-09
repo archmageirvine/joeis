@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A099554 Decimal expansion of the constant x that satisfies x = exp(1/sqrt(x)).

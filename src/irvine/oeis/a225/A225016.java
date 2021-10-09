@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A225016 Decimal expansion of Pi^3/8.

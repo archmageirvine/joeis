@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A202344 Decimal expansion of x &gt; 0 satisfying 3*x + 1 = exp(x).

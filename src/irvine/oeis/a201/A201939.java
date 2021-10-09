@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A201939 Decimal expansion of x&gt;0 satisfying x*cosh(x)=2.

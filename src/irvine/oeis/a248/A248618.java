@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A248618 Decimal expansion of the solution when inverse Gudermannian(x) equals 1.

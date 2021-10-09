@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A084248 Decimal expansion of c = Product_{k&gt;=1} (1 + 1/t(k)) where t(k) = k(k+1)/2 is the k-th triangular number.

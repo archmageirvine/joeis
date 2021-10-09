@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A051559 Decimal expansion of tan(Pi/2 degrees). (Of course, tan(Pi/2 radians) = infinity.).

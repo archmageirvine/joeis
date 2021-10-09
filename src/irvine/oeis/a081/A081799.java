@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.math.cr.CR;
 import irvine.math.r.PhysicsConstants;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A081799 Decimal expansion of the electric permittivity of vacuum in SI units as defined before 20 May 2019.

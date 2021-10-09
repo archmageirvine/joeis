@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A188883 Decimal expansion of (1 + sqrt(1 + Pi^2))/Pi.

@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A068465 Decimal expansion of Gamma(3/4).

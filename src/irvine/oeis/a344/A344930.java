@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344930 Decimal expansion of the real solution to x^x = 15.

@@ -2,7 +2,7 @@ package irvine.oeis.a160;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A160386 Decimal expansion of Sum_{n&gt;=0}(-1)^n/3^(2^n).

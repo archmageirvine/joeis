@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A320156 Decimal expansion of the unique real root of x^3 - 3*x^2 + 8*x - 16 = 0, or equivalently, the unique positive root of x^4*(x + 5) - 4^4 = 0.

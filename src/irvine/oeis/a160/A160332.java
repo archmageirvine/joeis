@@ -1,7 +1,7 @@
 package irvine.oeis.a160;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A160332 Decimal expansion of the one real root of x^3-8x-10.

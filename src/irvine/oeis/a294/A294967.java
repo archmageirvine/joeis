@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A294967 Decimal expansion of (1/9)*Hurwitz Zeta(2, 2/3) = (1/9)*Psi(1, 2/3), with the Polygamma function Psi.

@@ -3,7 +3,7 @@ package irvine.oeis.a223;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A223709 Decimal expansion of (Pi-1)*(2*Pi-1)/12.

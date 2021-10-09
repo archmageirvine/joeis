@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A202541 Decimal expansion of the number x satisfying e^(2x) - e^(-2x) = 1.

@@ -1,7 +1,7 @@
 package irvine.oeis.a016;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A016718 Decimal expansion of log(95).

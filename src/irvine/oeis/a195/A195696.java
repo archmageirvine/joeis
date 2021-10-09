@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195696 Decimal expansion of arccos(sqrt(1/3)) and of arcsin(sqrt(2/3)) and arctan(sqrt(2)).

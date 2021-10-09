@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093063 Decimal expansion of (2 + 4*sqrt(2) + (4 + sqrt(2))*arcsinh(1))/30.

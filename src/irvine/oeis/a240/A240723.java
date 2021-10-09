@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A240723 Decimal expansion of a constant linked to a normal distribution inequality.

@@ -3,7 +3,7 @@ package irvine.oeis.a042;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.ContinuedFractionOfSqrtSequence;
+import irvine.oeis.cons.ContinuedFractionOfSqrtSequence;
 
 /**
  * A042909 Denominators of continued fraction convergents to sqrt(986).

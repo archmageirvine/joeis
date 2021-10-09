@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A117043 Decimal expansion of (cos 1)^(-4)=(sec(1))^4.

@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A075549 Decimal expansion of 9 - 12*log(2).

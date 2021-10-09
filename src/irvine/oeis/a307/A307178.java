@@ -4,7 +4,7 @@ package irvine.oeis.a307;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A307178 Decimal expansion of coth(1/2).

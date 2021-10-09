@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A068467 Decimal expansion of (1/4)! = Gamma(5/4).

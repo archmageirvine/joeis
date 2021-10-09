@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093588 Decimal expansion of -1/8 + 4/Pi^2.

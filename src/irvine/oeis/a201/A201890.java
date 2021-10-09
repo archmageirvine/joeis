@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A201890 Decimal expansion of the nonzero number x satisfying x^2+2x+1=e^x.

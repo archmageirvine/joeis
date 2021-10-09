@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A243309 Decimal expansion of DeVicci's tesseract constant.

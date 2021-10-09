@@ -3,7 +3,7 @@ package irvine.oeis.a338;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A338815 Decimal expansion of (Pi/4)*coth(Pi).

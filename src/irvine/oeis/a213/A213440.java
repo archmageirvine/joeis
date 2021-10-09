@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A213440 Decimal expansion of 1 + log(gamma), where gamma is Euler's constant A001620.

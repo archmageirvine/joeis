@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346727 Decimal expansion of 361 * Pi^6 / (245760 * sqrt(2)).

@@ -5,7 +5,7 @@ package irvine.oeis.a193;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193712 Decimal expansion of Pi*zeta(3)/4.

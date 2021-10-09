@@ -1,7 +1,7 @@
 package irvine.oeis.a089;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A089491 Decimal expansion of Buffon's constant 3/Pi.

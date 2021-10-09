@@ -4,7 +4,7 @@ package irvine.oeis.a328;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A328229 Decimal expansion of 2^(7/12).

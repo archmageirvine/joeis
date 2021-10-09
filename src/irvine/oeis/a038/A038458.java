@@ -2,7 +2,7 @@ package irvine.oeis.a038;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A038458 Decimal expansion of the solution to 127^x - 113^x = 1. This is the smallest x such that q^x - p^x = 1 for two successive primes p, q.

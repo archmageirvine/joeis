@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A242461 Decimal expansion of the first positive solution to exp(1-1/x)/x = 1/2, a binary search tree constant.

@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A159703 Decimal expansion of (2487411+1629850*sqrt(2))/967^2.

@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A088245 Decimal expansion of 9/(2*Pi^2).

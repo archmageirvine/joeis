@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A204188 Decimal expansion of sqrt(5)/4.

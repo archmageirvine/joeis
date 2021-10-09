@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A235162 Decimal expansion of (sqrt(33) + 1) / 2.

@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A198541 Decimal expansion of x&lt;0 having 4*x^2+3x=sin(x).

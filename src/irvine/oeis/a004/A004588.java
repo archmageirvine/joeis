@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A004588 Expansion of sqrt(10) in base 5.

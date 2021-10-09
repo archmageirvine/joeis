@@ -5,7 +5,7 @@ package irvine.oeis.a185;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A185196 Decimal expansion of 2*Pi/(7*Zeta(3)).

@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A105735 Decimal expansion of arcsin(1/e).

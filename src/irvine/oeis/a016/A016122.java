@@ -2,7 +2,7 @@ package irvine.oeis.a016;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A016122 Decimal expansion of solution to log_10(x) = x - 4.

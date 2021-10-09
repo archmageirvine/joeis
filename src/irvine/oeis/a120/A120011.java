@@ -1,7 +1,7 @@
 package irvine.oeis.a120;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A120011 Decimal expansion of sqrt(3)/4.

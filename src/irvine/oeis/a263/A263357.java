@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A263357 Decimal expansion of the solution of x*(log(x)-1)/(log(x)+1) = 1.

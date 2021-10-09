@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A219300 Decimal expansion of the second smallest known Salem number.

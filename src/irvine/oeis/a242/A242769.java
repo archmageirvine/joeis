@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A242769 Decimal expansion of the positive solution to the equation x/(1-x) = 1+log(1/(1-x)), an auxiliary constant associated with the problem of enumeration of trees by inversions.

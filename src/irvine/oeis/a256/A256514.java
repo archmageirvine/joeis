@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256514 Decimal expansion of the amplitude of a simple pendulum the period of which is twice the period in the small-amplitude approximation.

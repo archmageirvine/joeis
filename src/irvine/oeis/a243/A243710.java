@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A243710 Decimal expansion of the solid angle of an equilateral spherical triangle with a side length of 1 radian.

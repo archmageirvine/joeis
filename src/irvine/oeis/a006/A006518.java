@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
 import irvine.math.cr.CR;
-import irvine.oeis.ContinuedFractionSequence;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a084.A084119;
 
 /**

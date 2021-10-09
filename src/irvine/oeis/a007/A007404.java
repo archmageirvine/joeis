@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A007404 Decimal expansion of Sum_{n&gt;=0} 1/2^(2^n).

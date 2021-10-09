@@ -1,7 +1,7 @@
 package irvine.oeis.a099;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A099285 Decimal expansion of -Ei(-1), negated exponential integral at -1.

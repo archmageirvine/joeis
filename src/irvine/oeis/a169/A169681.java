@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A169681 Decimal expansion of 2^127-1.

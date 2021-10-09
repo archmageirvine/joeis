@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A232092 Decimal expansion of the real root of x^2013 - x - 1 = 0.

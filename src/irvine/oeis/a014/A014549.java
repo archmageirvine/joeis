@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A014549 Decimal expansion of 1 / M(1,sqrt(2)) (Gauss's constant).

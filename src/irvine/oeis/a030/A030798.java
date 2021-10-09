@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A030798 Decimal expansion of the solution to x^x = 2.

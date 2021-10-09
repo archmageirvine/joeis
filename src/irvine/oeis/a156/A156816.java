@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A156816 Decimal expansion of the positive root of the equation 13x^4 - 7x^2 - 581 = 0.

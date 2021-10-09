@@ -1,7 +1,7 @@
 package irvine.oeis.a179;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179449 Decimal expansion of the volume of great icosahedron with edge length 1.

@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A140273 Decimal expansion of 180*arctan(3*sqrt(15)/29)/Pi.

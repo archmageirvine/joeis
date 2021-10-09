@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A077453 Decimal expansion of 1+sqrt(11)*(sqrt(29)+sqrt(5))/24.

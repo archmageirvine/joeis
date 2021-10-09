@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A219705 Decimal expansion of cos(log(2)).

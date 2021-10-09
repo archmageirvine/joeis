@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A114431 Decimal expansion of the real solution of x^3 - x^2 - 2x - 4 = 0.

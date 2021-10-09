@@ -1,7 +1,8 @@
-package irvine.oeis;
+package irvine.oeis.cons;
 
 import irvine.math.cr.Convergents;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence generating the continued fraction of a computable real.

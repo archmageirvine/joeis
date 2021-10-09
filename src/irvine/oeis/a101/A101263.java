@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A101263 Decimal expansion of sqrt(2 - sqrt(3)), edge length of a regular dodecagon with circumradius 1.

@@ -3,7 +3,7 @@ package irvine.oeis.a300;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A300284 Decimal expansion of the probability that a bullet, shot randomly at a cube that is thrown into the air, will pass through the opposite side.

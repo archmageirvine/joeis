@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A161489 Decimal expansion of (52323 + 26522*sqrt(2))/191^2.

@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A239606 Decimal expansion of e^6 - (Pi^5 + Pi^4).

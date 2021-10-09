@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A086463 Decimal expansion of Pi^2/18.

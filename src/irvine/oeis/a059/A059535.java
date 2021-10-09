@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A059535 Beatty sequence for Pi^2/6, or zeta(2).

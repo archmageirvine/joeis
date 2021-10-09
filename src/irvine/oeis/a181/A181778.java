@@ -2,7 +2,7 @@ package irvine.oeis.a181;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A181778 Decimal expansion of root of (x+1)^sqrt(x) = sqrt(x)^(x+1).

@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A305607 Decimal expansion of (Pi/log(2))^2/12.

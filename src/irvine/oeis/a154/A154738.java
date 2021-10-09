@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A154738 Decimal expansion of (log(640320^3 + 744)/Pi)^2.

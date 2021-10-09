@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A236027 Decimal expansion of 5^(1/2) - 7^(1/3).

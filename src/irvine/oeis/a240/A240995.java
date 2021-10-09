@@ -4,7 +4,7 @@ package irvine.oeis.a240;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A240995 Decimal expansion of Pi^2/(12*log(2)*log(10)), a constant appearing in several contexts, namely, Khintchine-L\u00e9vy Constants, Gauss-Kuzmin distribution and Pell's equation.

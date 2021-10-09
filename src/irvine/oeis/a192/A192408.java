@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A192408 Decimal expansion of the solution to x = sin( Pi/6 - x*sqrt(1 - x^2) ).

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A051148 Decimal expansion of BesselK(1,2)/BesselK(0,2).

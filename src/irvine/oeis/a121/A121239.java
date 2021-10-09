@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A121239 Decimal expansion of 10-e.

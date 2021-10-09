@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A259073 Decimal expansion of zeta'(-8) (the derivative of Riemann's zeta function at -8).

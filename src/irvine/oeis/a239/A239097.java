@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A239097 Decimal expansion of -(gamma-log(2))/2.

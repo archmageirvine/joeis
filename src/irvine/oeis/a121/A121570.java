@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A121570 Decimal expansion of cosecant of 36 degrees = csc(Pi/5) = 1/sin(Pi/5).

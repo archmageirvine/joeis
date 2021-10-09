@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A186504 Decimal expansion of the solution x to x^x = 14.

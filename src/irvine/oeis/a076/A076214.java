@@ -2,7 +2,7 @@ package irvine.oeis.a076;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A076214 Decimal expansion of C=sum(k&gt;=0,1/2^(2^k-1)).

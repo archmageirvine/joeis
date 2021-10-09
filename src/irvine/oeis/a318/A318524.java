@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A318524 Decimal expansion of ((32/5)^(1/5)-(27/5)^(1/5))^(1/3).

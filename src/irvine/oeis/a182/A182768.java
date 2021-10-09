@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A182768 Beatty sequence for 1+e^(-2).

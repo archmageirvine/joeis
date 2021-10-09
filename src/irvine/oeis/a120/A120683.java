@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A120683 Decimal expansion of secant of 15 degrees (cosecant of 75 degrees).

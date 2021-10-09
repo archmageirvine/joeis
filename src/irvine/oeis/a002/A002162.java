@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A002162 Decimal expansion of the natural logarithm of 2.

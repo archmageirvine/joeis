@@ -1,7 +1,7 @@
 package irvine.oeis.a347;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347033 Decimal expansion of (5*exp(4)-1)/8.

@@ -1,7 +1,7 @@
 package irvine.oeis.a347;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347081 Decimal expansion of (91 + 45*sqrt(5)) * Pi^4 / 18750.

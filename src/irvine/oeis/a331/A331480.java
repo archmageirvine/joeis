@@ -4,7 +4,7 @@ package irvine.oeis.a331;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A331480 Decimal expansion of arcsin(2/Pi).

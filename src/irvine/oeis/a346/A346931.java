@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346931 Decimal expansion of 403 * Pi^6 / 393660.

@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A244054 Decimal expansion of the maximal circumradius of a planar convex set containing no lattice point except for the origin where it has its circumcenter, and not protuding in opposite directions outside the square max(|x|,|y|) &lt; 1 unless it protudes significantly elsewhere, too.

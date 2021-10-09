@@ -2,7 +2,7 @@ package irvine.oeis.a019;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A019899 Decimal expansion of tangent of 1 degree.

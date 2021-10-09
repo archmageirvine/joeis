@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179275 Decimal expansion of 2*sqrt(Pi)/3^(1/4).

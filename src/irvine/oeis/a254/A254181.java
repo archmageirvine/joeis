@@ -2,7 +2,7 @@ package irvine.oeis.a254;
 
 import irvine.math.r.PhysicsConstants;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A254181 Decimal expansion of reduced Planck constant (in joule seconds).

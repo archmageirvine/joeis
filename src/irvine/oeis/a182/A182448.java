@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A182448 Decimal expansion of Pi^2/15.

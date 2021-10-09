@@ -3,7 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A339925 Decimal expansion of 105*zeta(3)/Pi^4.

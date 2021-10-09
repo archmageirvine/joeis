@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.cr.CR;
-import irvine.oeis.RoundingBeattySequence;
+import irvine.oeis.cons.RoundingBeattySequence;
 
 /**
  * A003153 a(n) = integer nearest n*(1+sqrt(2)).

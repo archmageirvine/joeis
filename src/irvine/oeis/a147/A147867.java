@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A147867 Decimal expansion of smallest positive solution to x^7 = tan x.

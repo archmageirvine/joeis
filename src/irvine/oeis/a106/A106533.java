@@ -2,7 +2,7 @@ package irvine.oeis.a106;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A106533 The rumor constant: decimal expansion of the number x defined by x*e^(2 - 2*x) = 1.

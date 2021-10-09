@@ -1,7 +1,7 @@
 package irvine.oeis.a160;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A160388 Decimal expansion of (e + 1)/3.

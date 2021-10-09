@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195783 Decimal expansion of arcsec(8).

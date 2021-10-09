@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A160100 Decimal expansion of (361299 +5950*sqrt(2))/601^2.

@@ -2,8 +2,8 @@ package irvine.oeis.a013;
 
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
-import irvine.oeis.ContinuedFractionSequence;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A013631 Continued fraction for zeta(3).

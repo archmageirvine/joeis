@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A159845 Decimal expansion of (363 + 38*sqrt(2))/359.

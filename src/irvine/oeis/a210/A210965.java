@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A210965 Decimal expansion of k such that e^(Pi*k) = round(e^(Pi*sqrt(163))).

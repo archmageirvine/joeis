@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A201335 Decimal expansion of x satisfying 8*x^2 = cot(x) and 0 &lt; x &lt; Pi.

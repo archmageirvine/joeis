@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A260595 The binary expansion of log(3)/log(2).

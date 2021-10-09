@@ -3,7 +3,7 @@ package irvine.oeis.a339;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A339802 Decimal expansion of the imaginary part of harmonic number H(1/2 + i*sqrt(3)/2) where i=sqrt(-1).

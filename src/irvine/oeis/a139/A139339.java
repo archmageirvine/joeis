@@ -1,7 +1,7 @@
 package irvine.oeis.a139;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A139339 Decimal expansion of the square root of the golden ratio.

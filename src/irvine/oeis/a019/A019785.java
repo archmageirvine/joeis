@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A019785 Decimal expansion of sqrt(e)/12.

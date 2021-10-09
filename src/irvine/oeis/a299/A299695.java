@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A299695 Decimal expansion of smallest disk radius for which six equal disks can cover the unit disk.

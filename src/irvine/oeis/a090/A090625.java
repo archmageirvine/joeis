@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A090625 Decimal expansion of real solution of x^x = 10.

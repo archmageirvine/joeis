@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A197577 Decimal expansion of least x &gt; 0 having cos(Pi*x) = cos(2*x)^2.

@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A037085 Beatty sequence for Pi^2.

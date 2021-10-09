@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A051554 Decimal expansion of cos(Pi degrees). (Of course, cos(Pi radians) = -1.).

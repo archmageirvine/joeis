@@ -2,7 +2,7 @@ package irvine.oeis.a011;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A011498 Decimal expansion of 79th root of 79.

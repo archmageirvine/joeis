@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A273511 Expansion of log(10) in base 2.

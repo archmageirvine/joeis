@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A246773 Decimal expansion of 'v', an auxiliary constant associated with the asymptotic number of row-convex polyominoes.

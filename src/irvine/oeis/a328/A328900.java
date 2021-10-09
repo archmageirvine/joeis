@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A328900 Decimal expansion of s = 1.507126591638653..., solution to 2^s + 3^s = 4^s.

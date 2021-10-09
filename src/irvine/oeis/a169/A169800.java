@@ -1,7 +1,7 @@
 package irvine.oeis.a169;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A169800 Decimal expansion of 2/log(1+sqrt(2)).

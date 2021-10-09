@@ -1,7 +1,7 @@
 package irvine.oeis.a132;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A132703 Decimal expansion of 13/Pi.

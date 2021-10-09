@@ -2,7 +2,7 @@ package irvine.oeis.a224;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A224233 Decimal expansion of number of inches in a meter.

@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A098801 Decimal expansion of Pi + 1/Pi.

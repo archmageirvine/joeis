@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A244262 Decimal expansion of theta = 2.472548..., an auxiliary constant used to compute the best constant in Friedrichs' inequality in one dimension.

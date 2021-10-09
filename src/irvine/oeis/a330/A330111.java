@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A330111 Decimal expansion of the solution of 1/e^x + sech(x) = 1.

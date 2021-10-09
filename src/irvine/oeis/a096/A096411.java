@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A096411 Decimal expansion of 1/sqrt(Pi*e).

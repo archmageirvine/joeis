@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A161480 Decimal expansion of (129 +44*sqrt(2))/113.

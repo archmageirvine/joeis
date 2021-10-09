@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 // manually cofr at 2021-09-26
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A053003 Continued fraction for M(1,sqrt(2)).

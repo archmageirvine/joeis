@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.factor.prime.Fast;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A066747 Decimal expansion of the "binary" Copeland-Erd\u0151s constant 0.734121515408286120606...: concatenate primes in base two.

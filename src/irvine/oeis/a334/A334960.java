@@ -3,7 +3,7 @@ package irvine.oeis.a334;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A334960 Decimal expansion of the distance from (0,0) to the nearest maximum point of y = sin x.

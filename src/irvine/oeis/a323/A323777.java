@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A323777 Decimal expansion of the root of the equation (1-2*r)^(3-4*r) = (1-r)^(2-2*r) * r^(1-2*r).

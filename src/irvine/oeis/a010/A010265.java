@@ -1,6 +1,6 @@
 package irvine.oeis.a010;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A010265 Continued fraction for cube root of 36.

@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195703 Decimal expansion of arccos(sqrt(3/8)) and of arcsin(sqrt(5/8)).

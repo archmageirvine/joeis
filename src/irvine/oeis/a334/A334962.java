@@ -3,7 +3,7 @@ package irvine.oeis.a334;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A334962 Decimal expansion of the distance from (0,0) to the nearest point of intersection of y = sec x and y = csc x.

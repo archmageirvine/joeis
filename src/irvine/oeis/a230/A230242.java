@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A230242 Decimal expansion of (25+3*sqrt(69))/2.

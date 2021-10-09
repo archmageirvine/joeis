@@ -1,7 +1,7 @@
 package irvine.oeis.a347;
 
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347328 Decimal expansion of zeta(6) / zeta(3).

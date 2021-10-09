@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A014967 Continued fraction for Conway's constant.

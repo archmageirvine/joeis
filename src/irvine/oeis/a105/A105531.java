@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A105531 Decimal expansion of arctan 1/3.

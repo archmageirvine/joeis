@@ -2,7 +2,7 @@ package irvine.oeis.a069;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A069286 Decimal expansion of constant rho satisfying Gaussian Phi(rho * sqrt(2)) = erf(rho) = 1/2.

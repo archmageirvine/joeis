@@ -2,7 +2,7 @@ package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A004711 Positions of 1's in binary expansion of Pi/4.

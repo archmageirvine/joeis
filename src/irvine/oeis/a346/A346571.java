@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346571 Decimal expansion of 2 - 305 * Pi^5 / 93312.

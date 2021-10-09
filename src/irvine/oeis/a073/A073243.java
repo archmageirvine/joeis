@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A073243 Decimal expansion of exp(-LambertW(log(Pi))), solution to x = 1/Pi^x.

@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A243508 Decimal expansion of the real positive root of 48x^4 + 16x^3 - 27x^2 - 18x - 3 = 0.

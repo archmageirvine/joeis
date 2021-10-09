@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A306648 Decimal expansion of 3 + 36/(5*sqrt(3)*Pi) + 48/(5*Pi^2).

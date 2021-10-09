@@ -2,7 +2,7 @@ package irvine.oeis.a145;
 // manually decexp at 2021-07-16 22:36
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145427 Decimal expansion of sum_{n=0..inf} (n!/(n+3)!)^2.

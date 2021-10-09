@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A068959 Decimal expansion of the smallest solution &gt; Pi/2 to sin(x)=sin(x^2).

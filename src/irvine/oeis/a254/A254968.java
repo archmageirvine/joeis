@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A254968 Decimal expansion of the mean reciprocal Euclidean distance from a point in a unit cube to the faces (named B_3(-1) in Bailey's paper).

@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A194362 The decimal expansion of log(1151) / log(95).

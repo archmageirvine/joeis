@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 /**
  * A194940 The Square Peg in the Round Hole constant.
  * Formula: 4*arccos(sqrt(Pi)/2)-sqrt(Pi*(4-Pi))

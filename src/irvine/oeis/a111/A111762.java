@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A111762 Decimal expansion of (tan 1 degree)^(1/4).

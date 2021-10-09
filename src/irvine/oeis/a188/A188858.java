@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A188858 Decimal expansion of the solution to a = cot(a/2).

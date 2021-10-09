@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A298743 Decimal expansion of (1/2)(1 + sqrt(1 + 4*sqrt(3))).

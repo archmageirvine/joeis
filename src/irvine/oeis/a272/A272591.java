@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A272591 The unique positive root of x^5 - 2*x^4 - x^2 - x - 1.

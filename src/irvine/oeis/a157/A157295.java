@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A157295 Decimal expansion of 630/Pi^6.

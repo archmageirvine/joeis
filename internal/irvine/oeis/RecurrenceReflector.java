@@ -11,6 +11,7 @@ import java.nio.channels.Channels;
 import java.nio.charset.StandardCharsets;
 
 import irvine.math.z.Z;
+import irvine.oeis.cons.ContinuedFractionOfSqrtSequence;
 
 /** Reads a list of A-numbers and appends the parameters of the sequences.
  *  The output file is tab-separated: aseqno, callcode, offset, matrix, init, dist, gftype

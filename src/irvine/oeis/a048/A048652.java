@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A048652 Continued fraction for Product_{k &gt;= 1} (1-1/2^k) (Cf. A048651).

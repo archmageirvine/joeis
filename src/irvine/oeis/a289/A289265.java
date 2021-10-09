@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A289265 Decimal expansion of the real root of x^3 - x^2 - 2 = 0.

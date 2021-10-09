@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346585 Decimal expansion of Pi^3 / (18 * sqrt(3)).

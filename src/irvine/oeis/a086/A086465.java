@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A086465 Decimal expansion of (5 + 4*sqrt(5)*arcsch(2))/25.

@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A330864 Decimal expansion of sinh(Pi/2)/2.

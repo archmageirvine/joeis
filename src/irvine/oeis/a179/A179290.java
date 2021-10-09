@@ -1,7 +1,7 @@
 package irvine.oeis.a179;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179290 Decimal expansion of length of edge of a regular icosahedron with radius of circumscribed sphere = 1.

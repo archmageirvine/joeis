@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195694 Decimal expansion of arccos(-1/r), where r = (1+sqrt(5))/2 (the golden ratio).

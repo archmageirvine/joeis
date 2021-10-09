@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A232883 Decimal expansion of sum( i&gt;=0, 1/(2*i^2+1) ).

@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A197380 Decimal expansion of least x &gt; 0 having sin(Pi*x/3) = sin(Pi*x/6)^2.

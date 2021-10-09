@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A196501 Decimal expansion of least positive x satisfying x+cot(x)=1/x.

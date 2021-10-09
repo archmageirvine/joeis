@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A111769 Decimal expansion of abs(log_10(tan 1 degree)).

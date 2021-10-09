@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A227422 Decimal expansion of a Young-Fej\u00e9r-Jackson constant linked to the nonnegativity of certain cosine sums.

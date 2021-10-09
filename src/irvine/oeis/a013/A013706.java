@@ -2,7 +2,7 @@ package irvine.oeis.a013;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A013706 Decimal expansion of 2*Sum_{k=1..50000} (-1)^(k-1)/(2k-1).

@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A013673 Decimal expansion of zeta(15).

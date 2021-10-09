@@ -5,7 +5,7 @@ package irvine.oeis.a193;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193716 Decimal expansion of Pi^3*log(2)/24 - 3*Pi*zeta(3)/16.

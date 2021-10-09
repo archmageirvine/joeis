@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179050 Decimal expansion of 5/(2*sqrt(5+2*sqrt(5))), area of regular pentagram with base edge length 1.

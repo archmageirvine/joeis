@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A240358 Decimal expansion of 'c', a constant linked to an estimate of density of zeros of an entire function of exponential type.

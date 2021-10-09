@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A053511 Decimal expansion of log_10 (Pi).

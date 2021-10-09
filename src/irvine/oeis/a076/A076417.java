@@ -2,7 +2,7 @@ package irvine.oeis.a076;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A076417 Decimal expansion of first solution of equation cos(x)*cosh(x) = -1.

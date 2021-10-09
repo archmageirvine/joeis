@@ -3,7 +3,7 @@ package irvine.oeis.a337;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A337571 Decimal expansion of the real positive solution to x^4 = x+4.

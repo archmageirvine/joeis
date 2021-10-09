@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A094887 Decimal expansion of phi*sqrt(2), where phi = (1+sqrt(5))/2.

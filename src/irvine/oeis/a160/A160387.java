@@ -2,7 +2,7 @@ package irvine.oeis.a160;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A160387 Decimal expansion of 4^5 * Sum_{n&gt;=0} 1/4^(2^n).

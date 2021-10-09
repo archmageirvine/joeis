@@ -1,7 +1,7 @@
 package irvine.oeis.a179;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179553 Decimal expansion of the surface area of pentagonal pyramid with edge length 1.

@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A113792 Decimal expansion of e^(-(cosecant of 1 degree)).

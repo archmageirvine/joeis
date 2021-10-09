@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093443 Decimal expansion of (Pi*e)^(1/3).

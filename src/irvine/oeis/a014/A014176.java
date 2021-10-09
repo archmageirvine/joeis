@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A014176 Decimal expansion of the silver mean, 1+sqrt(2).

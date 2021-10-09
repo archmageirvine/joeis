@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179373 Decimal expansion of the central angle in radians corresponding to a circular segment with area r^2 of a circle with radius r.

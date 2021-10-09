@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A226094 The decimal expansion of the number x defined by x^x+log(x)=0.

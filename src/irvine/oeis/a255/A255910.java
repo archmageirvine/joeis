@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A255910 Decimal expansion of 16/9.

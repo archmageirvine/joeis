@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A248524 Beatty sequence for 1/(1-Pi^(-1/3)).

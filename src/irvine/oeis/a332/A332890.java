@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A332890 Decimal expansion of Sum_{k&gt;=0} 1/(4*k)!.

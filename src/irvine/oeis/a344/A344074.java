@@ -1,7 +1,7 @@
 package irvine.oeis.a344;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344074 Decimal expansion of Bessel Y_0(1).

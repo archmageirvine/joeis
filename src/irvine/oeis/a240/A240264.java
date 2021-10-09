@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A240264 Decimal expansion of sum_(n=1..infinity) (-1)^(n+1)*H(n,2)/n^2, where H(n,2) is the n-th harmonic number of order 2.

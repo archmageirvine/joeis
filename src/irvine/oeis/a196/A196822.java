@@ -2,7 +2,7 @@ package irvine.oeis.a196;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A196822 Decimal expansion of the number x satisfying 2*x = ((1+x^2)^2)*sin(x) and 0 &lt; x &lt; 2*Pi.

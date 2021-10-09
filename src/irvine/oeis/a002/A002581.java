@@ -2,7 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A002581 Decimal expansion of cube root of 3.

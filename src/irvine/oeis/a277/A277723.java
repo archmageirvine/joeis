@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A277723 a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265).

@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A114940 Decimal expansion of the infinite sum Sum_{k&gt;=1} sin(k)/k!.

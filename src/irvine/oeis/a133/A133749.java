@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A133749 Decimal expansion of -2*cos((2*Pi)/9) + 2*sqrt(3)*sin((2*Pi)/9).

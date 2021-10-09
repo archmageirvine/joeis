@@ -3,7 +3,7 @@ package irvine.oeis.a316;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A316161 Decimal expansion of the least x such that 1/x + 1/(x+1) + 1/(x+2) = 2.

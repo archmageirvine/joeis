@@ -2,8 +2,8 @@ package irvine.oeis.a046;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.ContinuedFractionDenominatorSequence;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.ContinuedFractionDenominatorSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A046104 Denominators of convergents to the diesis log_2(5/4).

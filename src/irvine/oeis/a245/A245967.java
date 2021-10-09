@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A245967 Decimal expansion of a constant appearing in a theorem by \u00c1rp\u00e1d Baricz about Mills' ratio of the standard normal distribution.

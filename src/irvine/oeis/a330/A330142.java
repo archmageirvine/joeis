@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A330142 Decimal expansion of the solution of (2/3)^x + (2/5)^x = 1.

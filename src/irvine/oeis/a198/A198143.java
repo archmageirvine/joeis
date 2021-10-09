@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A198143 Decimal expansion of greatest x having x^2-3x=-3*cos(x).

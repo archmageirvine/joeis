@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A259927 Decimal expansion of sum_{n&gt;=1} (PolyGamma(2, n+1)/n^3) (negated).

@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A156648 Decimal expansion of Product_{k&gt;=1} (1 + 1/k^2).

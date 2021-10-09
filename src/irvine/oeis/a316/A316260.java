@@ -3,7 +3,7 @@ package irvine.oeis.a316;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A316260 Decimal expansion of the greatest x such that 1/x + 1/(x+3) + 1/(x+4) = 3.

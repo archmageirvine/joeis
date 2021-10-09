@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A280585 Decimal expansion of 8*sin(Pi/8).

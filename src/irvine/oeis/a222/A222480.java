@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A222480 Decimal expansion of cos(1)/(1+cos(1)).

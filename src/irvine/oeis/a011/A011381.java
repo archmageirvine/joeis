@@ -2,7 +2,7 @@ package irvine.oeis.a011;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A011381 Decimal expansion of 7th root of 17.

@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A126583 Decimal expansion of solution to exp(-x) = x^2.

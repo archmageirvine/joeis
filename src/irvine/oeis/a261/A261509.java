@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A261509 Decimal expansion of -Gamma'''(1).

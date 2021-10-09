@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A253191 Decimal expansion of log(2)^2.

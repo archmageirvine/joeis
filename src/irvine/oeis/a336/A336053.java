@@ -3,7 +3,7 @@ package irvine.oeis.a336;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A336053 Decimal expansion of the solution s of s/c = 5, where s = arclength and c = chord length on the unit circle.

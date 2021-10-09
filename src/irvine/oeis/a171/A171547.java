@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A171547 Decimal expansion of sqrt(3/14).

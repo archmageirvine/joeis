@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A091133 Decimal expansion of (3*e)/2 - 3*e^2 + e^3.

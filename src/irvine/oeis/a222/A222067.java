@@ -1,7 +1,7 @@
 package irvine.oeis.a222;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A222067 Decimal expansion of 1/(8*sqrt(3)).

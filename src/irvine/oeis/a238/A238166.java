@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A238166 Decimal expansion of sum_(n&gt;=1) H(n,2)/n^4 where H(n,2) = A007406(n)/A007407(n) is the n-th harmonic number of order 2.

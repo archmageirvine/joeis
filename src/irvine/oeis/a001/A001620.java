@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A001620 Decimal expansion of Euler's constant (or the Euler-Mascheroni constant), gamma.

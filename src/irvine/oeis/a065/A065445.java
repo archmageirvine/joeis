@@ -2,7 +2,7 @@ package irvine.oeis.a065;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A065445 Decimal expansion of Product{k=0..inf} (1+1/2^(2k))^(1/2).

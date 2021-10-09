@@ -1,7 +1,7 @@
 package irvine.oeis.a188;
 // manually 2021-09-14
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a189.A189044;
 
 /**

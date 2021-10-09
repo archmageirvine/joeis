@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A110191 Decimal expansion of 1/6 - 1/(2*Pi).

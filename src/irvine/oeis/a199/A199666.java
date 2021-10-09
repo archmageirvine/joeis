@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A199666 Decimal expansion of x&lt;0 satisfying 3*x+2*cos(x)=0.

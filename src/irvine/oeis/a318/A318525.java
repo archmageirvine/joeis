@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A318525 Decimal expansion of ((3+2*5^(1/4))/(3-2*5^(1/4)))^(1/4).

@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A319331 Decimal expansion of (1 + sqrt(3 + 2*sqrt(5)))/sqrt(2) * exp(-Pi*sqrt(55)/24).

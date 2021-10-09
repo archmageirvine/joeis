@@ -1,7 +1,7 @@
 package irvine.oeis.a226;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a106.A106533;
 
 /**

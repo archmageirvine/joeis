@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A198140 Decimal expansion of least x having x^2-2x=-3*cos(x). Decimal expansion of greatest x having x^2-2x=-3*cos(x).

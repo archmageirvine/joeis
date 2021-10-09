@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A258502 Decimal expansion of the nontrivial real solution of x^(7/2) = (7/2)^x.

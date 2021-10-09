@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A104752 Decimal expansion of solution to x^(4^x)=4.

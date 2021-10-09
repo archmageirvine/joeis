@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A271836 Decimal expansion of 3^(1/3) / 2^(1/6).

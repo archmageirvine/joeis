@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 /**
  * A182546 Decimal expansion of | log_phi(i) |, where phi is the golden ratio and i is the imaginary unit.
  * Formula: abs(arccos(0)/log(phi))

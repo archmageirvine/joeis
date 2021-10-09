@@ -3,8 +3,8 @@ package irvine.oeis.a033;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.ContinuedFractionSequence;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A033435 Continued fraction for Champernowne constant = 0.01234567891011121314...

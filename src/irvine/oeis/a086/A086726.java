@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A086726 Decimal expansion of sum(1/(6*m)^2,m=1..infinity).

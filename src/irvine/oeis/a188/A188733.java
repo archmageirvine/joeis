@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A188733 Decimal expansion of (9+sqrt(145))/8.

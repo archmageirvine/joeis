@@ -5,7 +5,7 @@ package irvine.oeis.a194;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A194657 Decimal expansion of (4*Pi^6*log(2) - 90*Pi^4*zeta(3) + 1350*Pi^2*zeta(5) - 5715*zeta(7))/1536.

@@ -1,6 +1,6 @@
 package irvine.oeis.a042;
 
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A042976 Decimal expansion of .121121112...^2, cf. A042974.

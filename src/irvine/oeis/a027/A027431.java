@@ -1,7 +1,7 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.ContinuedFractionSequence;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a276.A276120;
 
 /**

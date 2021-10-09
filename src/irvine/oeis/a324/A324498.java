@@ -3,7 +3,7 @@ package irvine.oeis.a324;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A324498 Decimal expansion of the real solution to x^2*(x-1)^3 = 1.

@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A002390 Decimal expansion of natural logarithm of golden ratio.

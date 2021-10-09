@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A227242 Decimal expansion of (e^gamma - 1)/e^gamma.

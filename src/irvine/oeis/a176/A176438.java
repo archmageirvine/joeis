@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A176438 Decimal expansion of (21+sqrt(483))/6.

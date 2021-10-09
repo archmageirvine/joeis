@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A199873 Decimal expansion of x&gt;0 satisfying 4*x^2-4*x*cos(x)=sin(x).

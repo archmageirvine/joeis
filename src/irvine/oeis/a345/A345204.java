@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A345204 Decimal expansion of 5/4 + Pi^2/8 + zeta(3).

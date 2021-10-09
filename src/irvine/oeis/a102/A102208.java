@@ -1,7 +1,7 @@
 package irvine.oeis.a102;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A102208 Decimal expansion of the volume of an icosahedron with unit edge length.

@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A245260 Decimal expansion of the root of the equation r*log(r/(1-r))=1.

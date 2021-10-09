@@ -2,7 +2,7 @@ package irvine.oeis.a069;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A069997 Decimal expansion of (negative of) root of exp(x)+sin(x)=0.

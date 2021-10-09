@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A059557 Beatty sequence for 1 + gamma^2, (gamma is the Euler-Mascheroni constant A001620).

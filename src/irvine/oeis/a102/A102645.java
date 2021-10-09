@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A102645 Decimal expansion of (Pi*sqrt(163))^e.

@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A068960 Decimal expansion of the fifth smallest positive real root of sin(x) - sin(x^3) = 0.

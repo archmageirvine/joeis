@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A236558 Vertex solid angle (steradians) in a regular dodecahedron.

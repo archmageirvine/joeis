@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A244648 Decimal expansion of the sum of the reciprocals of the hendecagonal numbers (A051682).

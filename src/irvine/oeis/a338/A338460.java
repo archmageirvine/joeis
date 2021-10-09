@@ -3,7 +3,7 @@ package irvine.oeis.a338;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A338460 Decimal expansion of largest real root of e^(x-1) = Gamma(x+1).

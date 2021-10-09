@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A238167 Decimal expansion of sum_(n&gt;=1) H(n,3)/n^5 where H(n,3) = A007408(n)/A007409(n) is the n-th harmonic number of order 3.

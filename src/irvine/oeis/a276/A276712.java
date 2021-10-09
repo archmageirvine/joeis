@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A276712 Decimal expansion of zeta(3)/8.

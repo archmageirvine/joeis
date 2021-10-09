@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A051158 Decimal expansion of Sum_{n &gt;= 0} 1/(2^2^n+1).

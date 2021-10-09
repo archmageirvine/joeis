@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A253214 Decimal expansion of log(640320^3)/sqrt(163), a Ramanujan constant producing 16 correct digits of Pi.

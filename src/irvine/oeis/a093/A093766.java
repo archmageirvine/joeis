@@ -1,7 +1,7 @@
 package irvine.oeis.a093;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093766 Decimal expansion of Pi/(2*sqrt(3)).

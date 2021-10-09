@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A111765 Decimal expansion of e^(-(tan 1 degree)).

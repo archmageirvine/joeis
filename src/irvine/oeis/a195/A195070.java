@@ -2,7 +2,7 @@ package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195070 Sum_{k&gt;=0} 1/(10k)!.

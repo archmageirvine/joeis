@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A020829 Decimal expansion of 1/sqrt(72) = 1/(3*2^(3/2)) = sqrt(2)/12.

@@ -2,7 +2,7 @@ package irvine.oeis.a011;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A011484 Decimal expansion of 65th root of 65.

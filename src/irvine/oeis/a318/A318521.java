@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A318521 Decimal expansion of sqrt(5^(1/3)-4^(1/3)).

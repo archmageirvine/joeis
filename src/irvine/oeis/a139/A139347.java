@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A139347 Decimal expansion of negated tangent of the golden ratio. That is, the decimal expansion of -tan((1+sqrt(5))/2).

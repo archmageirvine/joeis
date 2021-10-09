@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A019694 Decimal expansion of 2*Pi/5.

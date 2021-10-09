@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A200616 Decimal expansion of the lesser of two values of x satisfying 4*x^2 - 1 = tan(x) and 0 &lt; x &lt; Pi/2.

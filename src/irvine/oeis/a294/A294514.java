@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A294514 Decimal expansion of (3/2)*log(3) - Pi/(2*sqrt(3)).

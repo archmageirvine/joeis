@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A076419 Decimal expansion of third solution of equation cos(x)*cosh(x) = -1.

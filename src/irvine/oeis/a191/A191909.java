@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A191909 Decimal expansion of the limit of the square root of the ratio of consecutive Padovan numbers.

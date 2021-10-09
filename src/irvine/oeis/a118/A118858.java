@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A118858 Decimal expansion of log(2)/Pi^2.

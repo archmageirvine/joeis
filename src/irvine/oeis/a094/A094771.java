@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A094771 Decimal expansion of e^(e + Pi).

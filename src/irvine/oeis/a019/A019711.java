@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A019711 Decimal expansion of sqrt(Pi)/9.

@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A181446 Decimal expansion of (exp(1/4))/sqrt(2).

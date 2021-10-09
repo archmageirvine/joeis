@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A227423 Decimal expansion of 'lambda', a Young-Fej\u00e9r-Jackson constant linked to the positivity of certain sine sums.

@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A233528 Decimal expansion of arctan(2*Pi): adjacent angle for a right triangle of equal area to a disk.

@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A196605 Decimal expansion of the least x&gt;0 satisfying sec(x)=4x.

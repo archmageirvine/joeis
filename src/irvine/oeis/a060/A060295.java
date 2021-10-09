@@ -1,7 +1,7 @@
 package irvine.oeis.a060;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A060295 Decimal expansion of exp(Pi*sqrt(163)).

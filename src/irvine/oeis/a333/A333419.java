@@ -1,7 +1,7 @@
 package irvine.oeis.a333;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A333419 Decimal expansion of the error function at 1/2, erf(1/2).

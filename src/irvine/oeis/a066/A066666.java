@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A066666 Decimal expansion of area cut out by a rotating Reuleaux triangle.

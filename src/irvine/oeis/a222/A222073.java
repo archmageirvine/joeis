@@ -1,7 +1,7 @@
 package irvine.oeis.a222;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A222073 Decimal expansion of (32/25515)*Pi^4.

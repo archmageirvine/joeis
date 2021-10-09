@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A103616 Decimal expansion of the largest real root of the quintic equation x^5 + 2*x^4 - 2*x^3 - x^2 + 2*x -1 = 0.

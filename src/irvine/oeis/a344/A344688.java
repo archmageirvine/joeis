@@ -1,7 +1,7 @@
 package irvine.oeis.a344;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344688 Decimal expansion of 3236 * Pi^9 / (55801305 * sqrt(3)).

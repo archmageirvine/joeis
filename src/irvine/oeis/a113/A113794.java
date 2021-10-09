@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A113794 Decimal expansion of (cotangent of 1 degree)^2.

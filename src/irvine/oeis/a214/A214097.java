@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A214097 Decimal expansion of the constant C = minimum distance between the circumcenter and the excenter of an ex-bicentric quadrilateral whose sides are in an arithmetic progression 1 : 1+d : 1+2d : 1+3d.

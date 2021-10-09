@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A212952 Decimal expansion of 3*sqrt(3)/16.

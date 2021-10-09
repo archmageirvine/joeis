@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195596 Decimal expansion of alpha, the unique solution on [2,oo) of the equation alpha*log((2*e)/alpha)=1.

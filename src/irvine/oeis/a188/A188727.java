@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A188727 Decimal expansion of (e+sqrt(16+e^2))/4.

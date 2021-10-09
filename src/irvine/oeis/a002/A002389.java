@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A002389 Decimal expansion of -log(gamma), where gamma is Euler's constant A001620.

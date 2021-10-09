@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A258815 Decimal expansion of the Dirichlet beta function of 8.

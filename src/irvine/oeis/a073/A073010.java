@@ -1,7 +1,7 @@
 package irvine.oeis.a073;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A073010 Decimal expansion of Pi/sqrt(27).

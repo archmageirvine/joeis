@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A036665 Decimal expansion of 1/9801980198019801.

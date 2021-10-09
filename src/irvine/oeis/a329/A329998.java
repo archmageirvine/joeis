@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A329998 Decimal expansion of the solution of 1/sqrt(x-1) + 1/sqrt(x+1) = 1.

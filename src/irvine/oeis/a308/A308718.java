@@ -2,7 +2,7 @@ package irvine.oeis.a308;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A308718 Decimal expansion of Pi*sech(Pi/2)/2.

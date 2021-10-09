@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A178308 Decimal expansion of (111+sqrt(25277))/158.

@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A116938 Expansion of e^2 in base 2.

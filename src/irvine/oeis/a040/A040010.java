@@ -1,6 +1,6 @@
 package irvine.oeis.a040;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A040010 Continued fraction for Pi*exp(-Pi^2/2).

@@ -2,7 +2,7 @@ package irvine.oeis.a068;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A068353 Decimal expansion of smallest positive root of cos(Pi x/2) cosh(Pi x/2) = -1.

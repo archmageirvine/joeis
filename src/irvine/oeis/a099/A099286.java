@@ -1,7 +1,7 @@
 package irvine.oeis.a099;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A099286 Decimal expansion of the error function at 1.

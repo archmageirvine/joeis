@@ -4,7 +4,7 @@ package irvine.oeis.a308;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A308666 Decimal expansion of sinh(sqrt(2)*Pi)/(3*sqrt(2)*Pi).

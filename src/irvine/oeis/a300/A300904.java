@@ -3,7 +3,7 @@ package irvine.oeis.a300;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A300904 Decimal expansion of the positive solution to Pi^x = Pi + x.

@@ -1,7 +1,7 @@
 package irvine.oeis.a085;
 
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085548 Decimal expansion of the prime zeta function at 2: Sum_{p prime} 1/p^2.

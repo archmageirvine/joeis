@@ -3,7 +3,7 @@ package irvine.oeis.a346;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A346367 Decimal expansion of (1 - gamma)*zeta(2), where gamma is Euler's constant (or the Euler-Mascheroni constant).

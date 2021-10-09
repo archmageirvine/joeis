@@ -2,7 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.math.r.PhysicsConstants;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A003676 Decimal expansion of the Planck constant h (Joule * second).

@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A187079 Decimal expansion of (sqrt(2 + e^e)/e)^e.

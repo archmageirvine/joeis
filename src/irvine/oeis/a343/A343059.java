@@ -3,7 +3,7 @@ package irvine.oeis.a343;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A343059 Decimal expansion of tan(Pi/14).

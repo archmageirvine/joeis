@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A246825 Decimal expansion of the Narcissus constant, the second real solution of the equation x^(x-1) = x+1.

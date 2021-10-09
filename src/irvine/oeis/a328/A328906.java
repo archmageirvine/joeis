@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A328906 Decimal expansion of the solution x = 0.4895363211996... to 1 + 2^x = 6^x.

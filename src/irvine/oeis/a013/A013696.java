@@ -1,6 +1,6 @@
 package irvine.oeis.a013;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A013696 Continued fraction for zeta(20).

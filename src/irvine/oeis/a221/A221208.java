@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A221208 Decimal expansion of the Borwein integral with 8 sinc functions.

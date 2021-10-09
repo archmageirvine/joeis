@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A098907 Decimal expansion of 1/gamma, where gamma is Euler-Mascheroni constant.

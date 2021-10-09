@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A157292 Decimal expansion of 315/(2*Pi^4).

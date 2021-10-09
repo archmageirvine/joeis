@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A005483 Continued fraction for cube root of 7.

@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A258232 Decimal expansion of Integral_{x=0..1} Product_{k&gt;=1} (1-x^k) dx.

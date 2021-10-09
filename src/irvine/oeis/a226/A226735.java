@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A226735 Decimal expansion of sum_{k&gt;=0} (-1)^k * (3k + 1)^(-3).

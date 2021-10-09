@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A059564 Beatty sequence for (e^2 + 1)/(e^2 - e + 1).

@@ -2,7 +2,7 @@ package irvine.oeis.a161;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A161012 Decimal expansion of tan(1/3).

@@ -1,7 +1,7 @@
 package irvine.oeis.a139;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A139341 Decimal expansion of e^((1+sqrt(5))/2).

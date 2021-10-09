@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A262605 Decimal expansion of Integral_{0..1} log(1-x)*log(x)^2 dx (negated).

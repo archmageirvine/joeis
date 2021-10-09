@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A072097 Decimal expansion of 180/Pi.

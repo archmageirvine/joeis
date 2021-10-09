@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A333304 Decimal expansion of (arccosh(2)/6)^(1/4)*Gamma(3/4))/(2*sqrt(Pi)).

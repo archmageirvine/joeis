@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179048 Decimal expansion of 25*sqrt(3)/4, the area of the equilateral triangle of side 5.

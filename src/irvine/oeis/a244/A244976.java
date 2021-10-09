@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A244976 Decimal expansion of Pi/(8*sqrt(2)).

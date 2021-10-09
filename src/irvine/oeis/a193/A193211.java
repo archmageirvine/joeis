@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A193211 The decimal expansion of the value of r that maximizes the Brahmagupta expression Sqrt((-1+r+r^2+r^3)(1-r+r^2+r^3)(1+r-r^2+r^3)(1+r+r^2-r^3))/4.

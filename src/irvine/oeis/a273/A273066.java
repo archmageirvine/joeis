@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A273066 Decimal expansion of the real root of x^3 - 2x + 2, negated.

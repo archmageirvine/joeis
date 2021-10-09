@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A074948 Decimal representation of sqrt((Pi^2 + e^2)/2).

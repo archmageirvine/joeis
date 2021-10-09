@@ -1,7 +1,7 @@
 package irvine.oeis.a140;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A140239 Decimal expansion of 3*sqrt(15)/4.

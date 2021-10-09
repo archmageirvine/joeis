@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A121598 Decimal expansion of cosecant of 180/7 = 25.7142857+ degrees = csc(Pi/7).

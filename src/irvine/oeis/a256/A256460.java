@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256460 Decimal expansion of 1/273.16, the fraction of the triple point temperature of water corresponding to 1 K (kelvin).

@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256367 Decimal expansion of sec(phi), a constant related to the "broadworm" (or "caliper") problem.

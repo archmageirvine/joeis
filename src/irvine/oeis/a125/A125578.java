@@ -2,7 +2,7 @@ package irvine.oeis.a125;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A125578 Decimal expansion of positive root of x^2 = cos(x).

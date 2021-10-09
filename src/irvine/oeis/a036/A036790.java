@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A036790 Continued fraction for Integral_{x=0..Pi} sin(x)/x.

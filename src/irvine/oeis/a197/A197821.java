@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A197821 Decimal expansion of least x &gt; 0 having sin(2*x) = Pi*sin(2*Pi*x).

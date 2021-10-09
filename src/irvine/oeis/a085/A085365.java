@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085365 Decimal expansion of the Kepler-Bouwkamp or polygon-inscribing constant.

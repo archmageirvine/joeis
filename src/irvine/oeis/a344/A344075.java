@@ -3,7 +3,7 @@ package irvine.oeis.a344;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344075 Decimal expansion of arccos(-sqrt((5+2*sqrt(5))/15)).

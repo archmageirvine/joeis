@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A235214 Decimal expansion of exp(exp(1) + 1).

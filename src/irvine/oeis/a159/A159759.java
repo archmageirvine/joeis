@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A159759 Decimal expansion of (83+18*sqrt(2))/79.

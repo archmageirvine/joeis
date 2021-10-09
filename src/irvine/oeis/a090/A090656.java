@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A090656 Decimal expansion of 5 + sqrt(35).

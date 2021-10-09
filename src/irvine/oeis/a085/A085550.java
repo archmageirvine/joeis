@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085550 Decimal expansion of (sqrt(13)-3)/2.

@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A293509 Decimal expansion of real root of x^5 - x^3 - x^2 - x - 1.

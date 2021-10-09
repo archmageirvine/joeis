@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A133066 Decimal expansion of (e*Pi*Phi)^(1/3).

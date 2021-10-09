@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A196625 Decimal expansion of the number c for which the curve y=1/x is tangent to the curve y=cos(x-c), and 0 &lt; x &lt; 2*Pi; c = sqrt(r) - arccsc(r), where r = (1+sqrt(5))/2 (the golden ratio).

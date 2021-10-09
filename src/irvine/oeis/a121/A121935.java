@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A121935 Decimal expansion of 1/log(3).

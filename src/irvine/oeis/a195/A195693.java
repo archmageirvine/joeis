@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195693 Decimal expansion of arctan(1/r), where r = (1+sqrt(5))/2 (the golden ratio).

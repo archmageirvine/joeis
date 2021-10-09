@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256919 Decimal expansion of Sum_{k&gt;=1} (zeta(4*k) - 1).

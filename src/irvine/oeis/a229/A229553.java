@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A229553 Decimal expansion of the unique solution &gt; 1 of the equation x*log(x)=2(x-1).

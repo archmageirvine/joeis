@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A182587 Decimal expansion of the only solution of x^(4/x^2) = x-1.

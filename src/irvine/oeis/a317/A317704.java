@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A317704 Decimal expansion of arctan(2/Pi)*180/Pi.

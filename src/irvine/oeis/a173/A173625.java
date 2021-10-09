@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A173625 Decimal expansion of -3(1 - Pi).

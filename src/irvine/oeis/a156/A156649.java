@@ -1,7 +1,7 @@
 package irvine.oeis.a156;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A156649 Decimal expansion of (9+4*sqrt(2))/7.

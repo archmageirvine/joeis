@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A156547 Decimal expansion of the central angle of a regular dodecahedron.

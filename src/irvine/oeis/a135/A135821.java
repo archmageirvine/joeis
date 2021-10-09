@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A135821 Decimal expansion of sqrt(4*e - 1).

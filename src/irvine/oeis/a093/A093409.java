@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A093409 Decimal expansion of the smaller real zero of 10x^6 - 75x^3 - 190x + 21.

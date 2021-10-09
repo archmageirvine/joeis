@@ -4,7 +4,7 @@ package irvine.oeis.a237;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A237558 Decimal expansion of (1/Pi)*arccos(1/sqrt(3)).

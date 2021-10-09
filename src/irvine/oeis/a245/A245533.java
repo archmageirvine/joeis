@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A245533 Decimal expansion of sigma_3, a Tur\u00e1n's Power Sum Constant.

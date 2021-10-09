@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A254604 The decimal expansion of the half of a single half-wave constant x.

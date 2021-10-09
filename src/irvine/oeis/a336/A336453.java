@@ -3,7 +3,7 @@ package irvine.oeis.a336;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A336453 Decimal expansion of -Integral_{x=0..Infinity} log(x^2 + 1/4)/cosh(Pi*x)^2.

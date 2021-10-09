@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A103549 Decimal expansion of solution to x*3^x=1.

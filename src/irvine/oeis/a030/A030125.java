@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a002.A002065;
 
 /**

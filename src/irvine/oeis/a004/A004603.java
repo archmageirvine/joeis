@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A004603 Expansion of Pi in base 4.

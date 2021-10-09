@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A320157 Decimal expansion of real root of x^5 - 5x^4 + 24x^3 - 108x^2 + 432x - 1296 = 0, x^6*(x + 7) - 6^6 = 0.

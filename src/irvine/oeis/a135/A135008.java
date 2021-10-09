@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A135008 Decimal expansion of 8/e.

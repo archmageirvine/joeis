@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A293508 Decimal expansion of the positive real root of x^6 - x^5 - x^4 + x^2 - 1.

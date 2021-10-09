@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A232272 Decimal expansion of the arctan of 1/Pi.

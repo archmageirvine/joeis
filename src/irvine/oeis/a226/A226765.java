@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A226765 Decimal expansion of (13-5*sqrt(5))/2.

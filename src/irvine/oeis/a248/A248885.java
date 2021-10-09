@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A248885 Decimal expansion of e^(Pi*42^(1/42)).

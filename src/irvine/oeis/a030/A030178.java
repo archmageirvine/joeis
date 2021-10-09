@@ -2,7 +2,7 @@ package irvine.oeis.a030;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A030178 Decimal expansion of LambertW(1): the solution to x*exp(x) = 1.

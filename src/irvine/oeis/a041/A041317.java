@@ -3,7 +3,7 @@ package irvine.oeis.a041;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.ContinuedFractionOfSqrtSequence;
+import irvine.oeis.cons.ContinuedFractionOfSqrtSequence;
 
 /**
  * A041317 Denominators of continued fraction convergents to sqrt(172).

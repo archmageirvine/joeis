@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A161485 Decimal expansion of (24723 + 6758*sqrt(2))/151^2.

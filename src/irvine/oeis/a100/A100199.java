@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A100199 Decimal expansion of Pi^2/(12*log(2)), inverse of Levy's constant.

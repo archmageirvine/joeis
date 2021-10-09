@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A289505 Decimal expansion of arcsec(3)/(2*Pi).

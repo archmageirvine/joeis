@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A267693 Decimal expansion of 477/4237.

@@ -1,7 +1,7 @@
 package irvine.oeis.a156;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A156164 Decimal expansion of 17 + 12*sqrt(2).

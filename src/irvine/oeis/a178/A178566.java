@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A178566 Decimal expansion of (32 + sqrt(1297))/13.

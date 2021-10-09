@@ -4,7 +4,7 @@ package irvine.oeis.a331;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A331095 Decimal expansion of 32/Pi^3.

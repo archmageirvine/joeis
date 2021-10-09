@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A072908 Decimal expansion of the solution of equation log(2)-X*2^(-r)-exp(-X*r/(2^r-1)) = 0 for r = 4 . Solution is 9.96955802...

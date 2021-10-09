@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A248200 Decimal expansion of x in the solution to x^e = e^(-x), where e = exp(1). Also the smallest value of the constant c where there exists a solution to x^c = c^(-x).

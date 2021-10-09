@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A203816 Decimal expansion of e*gamma*Pi, where gamma is Euler's constant.

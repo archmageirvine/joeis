@@ -1,7 +1,7 @@
 package irvine.oeis.a036;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A036793 Decimal expansion of (2/Pi)*Integral_{x=0..Pi} sin(x)/x.

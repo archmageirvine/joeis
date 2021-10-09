@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A002210 Decimal expansion of Khintchine's constant.

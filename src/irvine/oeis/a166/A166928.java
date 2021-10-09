@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A166928 Decimal expansion of smaller solution to 3^x = x^3.

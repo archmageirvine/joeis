@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A120671 Decimal expansion of arccos(1-8/(Pi^2)) / (2*Pi).

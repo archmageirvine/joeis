@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A322758 Decimal expansion of log(8/sqrt(3)).

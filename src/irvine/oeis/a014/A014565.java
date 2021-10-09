@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.BinaryToDecimalExpansionSequence;
 import irvine.oeis.a005.A005614;
+import irvine.oeis.cons.BinaryToDecimalExpansionSequence;
 
 /**
  * A014565 Decimal expansion of rabbit constant.

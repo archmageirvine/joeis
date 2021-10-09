@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A192938 Decimal expansion of the real positive root of the equation: 4*d^4 + 12*d^3 + 8*d^2 - 1 = 0.

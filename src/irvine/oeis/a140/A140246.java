@@ -1,7 +1,7 @@
 package irvine.oeis.a140;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A140246 Decimal expansion of sqrt(15)/6.

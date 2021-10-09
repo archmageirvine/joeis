@@ -4,7 +4,7 @@ package irvine.oeis.a300;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A300710 Decimal expansion of 17*Pi^8/161280.

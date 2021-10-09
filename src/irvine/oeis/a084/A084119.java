@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.math.cr.CR;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A084119 Decimal expansion of the Fibonacci binary number, Sum_{k&gt;0} 1/2^F(k), where F(k) = A000045(k).

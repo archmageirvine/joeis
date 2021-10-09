@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A171548 Decimal expansion of 2*sqrt(2/35).

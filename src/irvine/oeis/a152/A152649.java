@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A152649 Decimal expansion of Pi^4/72.

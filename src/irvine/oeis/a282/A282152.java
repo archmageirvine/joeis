@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A282152 Decimal expansion of 20/log(10).

@@ -1,8 +1,8 @@
 package irvine.oeis.a036;
 
 import irvine.math.cr.CR;
-import irvine.oeis.ContinuedFractionSequence;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A036568 Continued fraction for ratio of small diagonal to side of regular 17-gon.

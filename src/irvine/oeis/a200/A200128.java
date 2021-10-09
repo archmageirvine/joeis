@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A200128 Decimal expansion of least x satisfying 2*x^2 - 4*cos(x) = sin(x), negated.

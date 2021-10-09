@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085551 Decimal expansion of (sqrt(29)-5)/2.

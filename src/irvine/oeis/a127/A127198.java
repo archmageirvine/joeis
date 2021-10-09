@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A127198 Value of the Foxtrot sum Sum_{k&gt;=1} (-1)^(k + 1)*k^2/(k^3 + 1).

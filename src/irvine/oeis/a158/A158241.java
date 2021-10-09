@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A158241 Decimal expansion of theta = arctan((sqrt(10-2*sqrt(5))-2)/(sqrt(5)-1)).

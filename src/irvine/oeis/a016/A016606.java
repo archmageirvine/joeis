@@ -2,7 +2,7 @@ package irvine.oeis.a016;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A016606 Decimal expansion of log(59/2).

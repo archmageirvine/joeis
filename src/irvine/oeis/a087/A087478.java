@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A087478 Decimal expansion of (sqrt(20467) - sqrt(19578) + sqrt(10177) - sqrt(9553))/2.

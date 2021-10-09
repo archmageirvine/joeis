@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A115365 Decimal expansion of smallest positive root of tan(x) = x.

@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A010503 Decimal expansion of 1/sqrt(2).

@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A228475 Positive real root of 37*x^4+36*x^3+6*x^2-12*x-3.

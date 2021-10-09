@@ -3,7 +3,7 @@ package irvine.oeis.a335;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335605 Decimal expansion of arctan(log(phi)/(Pi/2)), the polar slope angle (in radians) of the golden spiral.

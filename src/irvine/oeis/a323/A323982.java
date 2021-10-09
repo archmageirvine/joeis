@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A323982 Decimal expansion of cosh(Pi/6).

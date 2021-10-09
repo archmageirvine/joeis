@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A259171 Decimal expansion of Sum_{m&gt;=1} 1/(m^2 + 1).

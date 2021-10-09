@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A088246 Decimal expansion of 21/(2*Pi^2).

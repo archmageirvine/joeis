@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A235509 Decimal expansion of arccos(4/5).

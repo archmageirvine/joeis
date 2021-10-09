@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A242721 Decimal expansion of the positive real root of 3*x^4 - x^3 - x^2 - 2, a constant related to quasi-isometric mappings.

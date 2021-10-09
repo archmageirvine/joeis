@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179701 Decimal expansion of e*log(Pi).

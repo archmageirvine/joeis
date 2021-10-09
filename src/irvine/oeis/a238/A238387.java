@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A238387 Decimal expansion of (1 + 4*e^(-3/2))/(3*sqrt(2*Pi)).

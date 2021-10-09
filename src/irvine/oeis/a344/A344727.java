@@ -1,7 +1,7 @@
 package irvine.oeis.a344;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344727 Decimal expansion of 56 * Pi^7 / (98415 * sqrt(3)).

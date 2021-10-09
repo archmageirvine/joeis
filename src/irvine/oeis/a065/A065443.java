@@ -2,7 +2,7 @@ package irvine.oeis.a065;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A065443 Decimal expansion of Sum_{k=1..inf} 1/(2^k-1)^2.

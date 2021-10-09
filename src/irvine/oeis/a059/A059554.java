@@ -2,7 +2,7 @@ package irvine.oeis.a059;
 // manually (beatty2) at 2021-07-10
 
 import irvine.math.cr.CR;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 import irvine.oeis.a073.A073006;
 
 /**

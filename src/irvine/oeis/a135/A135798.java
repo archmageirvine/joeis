@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A135798 Decimal expansion of sqrt(2) + sqrt(3) - Pi.

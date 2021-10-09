@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A137914 Decimal expansion of arccos(1/3).

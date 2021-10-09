@@ -2,7 +2,7 @@ package irvine.oeis.a046;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A046095 Decimal expansion of Calabi's constant.

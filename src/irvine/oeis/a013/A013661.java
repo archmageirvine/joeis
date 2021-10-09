@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A013661 Decimal expansion of Pi^2/6 = zeta(2) = Sum_{m&gt;=1} 1/m^2.

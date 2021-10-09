@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A224750 Expansion of Pi in base 26.

@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A019802 Decimal expansion of sqrt(2*e)/9.

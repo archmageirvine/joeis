@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085665 Decimal expansion of tan(tan(1)).

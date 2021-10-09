@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A181110 Decimal expansion of 1/zeta(2) - 1/e^gamma, where gamma is the Euler-Mascheroni constant and zeta(2) = Pi^2/6.

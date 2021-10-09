@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A210623 Decimal expansion of (11111111/10^8)^(1/4).

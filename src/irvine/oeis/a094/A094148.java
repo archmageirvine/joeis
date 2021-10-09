@@ -1,7 +1,7 @@
 package irvine.oeis.a094;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A094148 Decimal expansion of log(3)/log(4).

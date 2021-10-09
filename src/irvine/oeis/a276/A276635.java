@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A276635 Decimal expansion of the power tower of 1/(2*Pi): the real solution to (2*Pi)^x*x = 1.

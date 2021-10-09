@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A188617 Decimal expansion of angle B of unique side-silver and angle-golden triangle.

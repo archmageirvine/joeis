@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A168546 Decimal expansion of the argument z in (0,Pi/2) for which the function log(cos(sin(x)))/log(sin(cos(x))) possesses the maximum in (0,Pi/2).

@@ -1,7 +1,7 @@
 package irvine.oeis.a082;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A082020 Decimal expansion of 15/Pi^2.

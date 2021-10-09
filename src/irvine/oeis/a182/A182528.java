@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A182528 Decimal expansion of | log_gamma(i) |, where gamma is the Euler-Mascheroni constant and i is the imaginary unit.

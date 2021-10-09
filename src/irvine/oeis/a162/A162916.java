@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A162916 Decimal expansion of 1/(70*exp(Pi*sqrt(163)))^2.

@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A188544 Decimal expansion of the angle B in the doubly e-ratio triangle ABC.

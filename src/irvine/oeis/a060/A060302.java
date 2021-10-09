@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A060302 Decimal expansion of (Pi^4 + Pi^5)^(1/6).

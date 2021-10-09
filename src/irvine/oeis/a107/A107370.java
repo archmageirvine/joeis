@@ -5,7 +5,7 @@ package irvine.oeis.a107;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A107370 Decimal expansion of 8*Pi^4/(21*zeta(3)).

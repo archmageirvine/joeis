@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A114598 Decimal expansion of Pi^2*(Pi/2 - 1).

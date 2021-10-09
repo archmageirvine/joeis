@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A072334 Decimal expansion of e^2.

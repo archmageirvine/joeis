@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A238169 Decimal expansion of sum_(n&gt;=1) H(n)^3/n^4 where H(n) is the n-th harmonic number.

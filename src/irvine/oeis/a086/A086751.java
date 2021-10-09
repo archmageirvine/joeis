@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A086751 Decimal expansion of the solution to x*sqrt(1-x^2) + arcsin(x) = Pi/4, or the length of the line connecting the origin to the center of the chord of a circle, centered at 0 and of radius 1, that divides the circle such that 1/4 of the area is on one side and 3/4 is on the other side.

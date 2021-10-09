@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A320158 Decimal expansion of real root of x^3 + 11x^2 + 27x - 27 = 0, x^2*(x + 5)^3 - 2^2*3^3 = 0.

@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A157298 Decimal expansion of (251+66*sqrt(2))/233.

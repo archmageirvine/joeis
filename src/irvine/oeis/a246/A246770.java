@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A246770 Decimal expansion of 'beta', an auxiliary constant associated with the optimal stopping problem on patterns in random binary strings.

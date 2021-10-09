@@ -1,7 +1,7 @@
 package irvine.oeis.a243;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A243908 Johannes Kepler's polyhedron inscribing constant.

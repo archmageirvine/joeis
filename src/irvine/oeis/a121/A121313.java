@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A121313 Decimal expansion of 22*Pi + 4*e.

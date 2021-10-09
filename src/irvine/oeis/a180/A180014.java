@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A180014 Decimal expansion of Pi/(2*phi^2).

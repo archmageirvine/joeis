@@ -5,7 +5,7 @@ package irvine.oeis.a194;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A194656 Decimal expansion of (2*Pi^5*log(2) - 30*Pi^3*zeta(3) + 225*Pi*zeta(5))/320.

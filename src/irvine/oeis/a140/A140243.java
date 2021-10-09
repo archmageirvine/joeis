@@ -2,7 +2,7 @@ package irvine.oeis.a140;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A140243 Decimal expansion of 180*arccos(11/16)/Pi.

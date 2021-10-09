@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A185110 Decimal expansion of sqrt(3)^sqrt(2).

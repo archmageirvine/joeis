@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A051553 Decimal expansion of sin (Pi degrees). (Of course sin (Pi radians) = 0.).

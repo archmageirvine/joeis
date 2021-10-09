@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A007507 Decimal expansion of 2^sqrt(2).

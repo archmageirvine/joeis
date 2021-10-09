@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A309211 Decimal expansion of a solution to x = 3*tanh(x).

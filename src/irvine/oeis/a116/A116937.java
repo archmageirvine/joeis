@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A116937 Expansion of Pi^2 in base 2.

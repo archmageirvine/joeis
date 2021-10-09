@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A257239 Decimal expansion of the real root of x^3 + 4*x - 13.

@@ -2,7 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A003622 The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5))/2.

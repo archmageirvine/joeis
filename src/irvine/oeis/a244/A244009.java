@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A244009 Decimal expansion of 1 - log(2).

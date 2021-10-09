@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A178233 Decimal expansion of (11+sqrt(229))/18.

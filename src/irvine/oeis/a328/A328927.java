@@ -4,7 +4,7 @@ package irvine.oeis.a328;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A328927 Decimal expansion of (9^2 + (19^2)/22)^(1/4): an approximation for Pi from Srinivasa Ramanujan.

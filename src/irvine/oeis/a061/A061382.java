@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A061382 Decimal expansion of Pi/e.

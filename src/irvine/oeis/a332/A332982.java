@@ -4,7 +4,7 @@ package irvine.oeis.a332;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A332982 Decimal expansion of Pi/exp(gamma).

@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A033150 Decimal expansion of Niven's constant.

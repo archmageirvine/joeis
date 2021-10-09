@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A141251 Decimal expansion of the number c satisfying c*log(c)=1+c.

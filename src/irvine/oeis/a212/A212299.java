@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A212299 Decimal expansion of exp((gamma - 1)/sqrt(e)).

@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A258707 Decimal expansion of ((1/exp(1))^(1/exp(1)))^2.

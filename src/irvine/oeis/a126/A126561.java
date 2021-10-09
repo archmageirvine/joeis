@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A126561 Decimal expansion of (Pi^2-9)/12.

@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A142464 Decimal expansion of 13/36.

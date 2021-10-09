@@ -1,7 +1,7 @@
 package irvine.oeis.a154;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A154583 Decimal expansion of log_13 (15).

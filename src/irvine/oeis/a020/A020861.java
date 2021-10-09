@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A020861 Decimal expansion of log_2(9).

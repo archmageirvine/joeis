@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A210624 Decimal expansion of (7/83)^(2/9).

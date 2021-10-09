@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A176216 Decimal expansion of (6+sqrt(42))/3.

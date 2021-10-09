@@ -1,7 +1,7 @@
 package irvine.oeis.a179;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179451 Decimal expansion of the surface area of an icosidodecahedron with side length 1.

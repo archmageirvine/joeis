@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A173161 Decimal expansion of the solution x to x^x=7.

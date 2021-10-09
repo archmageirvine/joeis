@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A046096 Continued fraction for Calabi's constant.

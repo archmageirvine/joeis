@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A237200 Decimal expansion of Pi - phi.

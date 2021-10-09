@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A333322 Decimal expansion of (3/8) * sqrt(3).

@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A259259 Decimal expansion of the largest negative solution to sin(x) + cos(x) + tan(x) = 0 (negated).

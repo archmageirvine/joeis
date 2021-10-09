@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A236229 Larger of the two real zeros of x - exp(x/(x-1)).

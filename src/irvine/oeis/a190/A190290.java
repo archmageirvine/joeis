@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A190290 Decimal expansion of (3+sqrt(21))/3.

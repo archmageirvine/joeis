@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A267040 Decimal expansion of sqrt(8)*arctan(sqrt(2)/5).

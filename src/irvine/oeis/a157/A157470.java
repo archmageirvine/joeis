@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A157470 Decimal expansion of (99+14*sqrt(2))/97.

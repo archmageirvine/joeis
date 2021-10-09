@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A002163 Decimal expansion of square root of 5.

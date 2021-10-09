@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A202501 Decimal expansion of x satisfying x=e^(-Pi*x/2).

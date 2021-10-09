@@ -4,7 +4,7 @@ package irvine.oeis.a308;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A308713 Decimal expansion of sqrt(2)*sinh(sqrt(2)*Pi)/(33*Pi).

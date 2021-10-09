@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A238239 Decimal expansion of the polar angle, in degrees, of a cone which makes a golden-ratio cut of the full solid angle.

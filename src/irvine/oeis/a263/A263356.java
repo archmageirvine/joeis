@@ -2,7 +2,7 @@ package irvine.oeis.a263;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A263356 Decimal expansion of the solution of (x-1)/(x+1) = exp(-x).

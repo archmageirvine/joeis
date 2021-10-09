@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A109232 a(n) = floor(n*(e^2+1)/(e-1)^2).

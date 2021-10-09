@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A227929 Decimal expansion of 36/Pi^4.

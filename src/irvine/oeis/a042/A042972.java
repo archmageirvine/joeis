@@ -1,7 +1,7 @@
 package irvine.oeis.a042;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A042972 Decimal expansion of i^(-i), where i = sqrt(-1).

@@ -2,7 +2,7 @@ package irvine.oeis.a081;
 
 import irvine.math.r.PhysicsConstants;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A081823 Decimal expansion of the elementary charge e in coulomb (C).

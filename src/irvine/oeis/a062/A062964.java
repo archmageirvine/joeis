@@ -1,7 +1,7 @@
 package irvine.oeis.a062;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A062964 Pi in hexadecimal.

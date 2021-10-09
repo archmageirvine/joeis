@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A085678 Decimal expansion of e^1000.

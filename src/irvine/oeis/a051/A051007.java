@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A051007 Continued fraction for prime constant A051006.

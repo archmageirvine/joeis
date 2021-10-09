@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A189962 Decimal expansion of 3*(1 + 3*sqrt(5))/11.

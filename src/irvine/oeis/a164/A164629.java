@@ -2,7 +2,7 @@ package irvine.oeis.a164;
 // manually (decexp) at 2021-07-16
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A164629 Expansion of phi (golden ratio) in base 5.

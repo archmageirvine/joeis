@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A225134 Decimal expansion of the positive root of x^x^x^x = 2.

@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A260061 Decimal expansion of Pi / (4*sqrt(6*Pi^2 - 72*log(2)^2)).

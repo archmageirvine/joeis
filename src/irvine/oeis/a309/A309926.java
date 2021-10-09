@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A309926 Decimal expansion of Pi^5/Zeta(5).

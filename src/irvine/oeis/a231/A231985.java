@@ -3,7 +3,7 @@ package irvine.oeis.a231;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A231985 Decimal expansion of the side length (in degrees) of the spherical square whose solid angle is exactly one deg^2.

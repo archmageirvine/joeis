@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179021 Decimal expansion of sqrt(231)/4.

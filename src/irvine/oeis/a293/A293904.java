@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A293904 Decimal expansion of zeta(21).

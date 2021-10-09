@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A215496 Decimal expansion of root of sinh(x)^log(x) = log(x)^sinh(x).

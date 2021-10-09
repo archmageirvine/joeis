@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A060006 Decimal expansion of real root of x^3 - x - 1 (the plastic constant).

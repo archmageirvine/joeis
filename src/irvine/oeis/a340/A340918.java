@@ -3,7 +3,7 @@ package irvine.oeis.a340;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A340918 Decimal expansion of largest angular separation (in radians) between 10 points on a unit sphere.

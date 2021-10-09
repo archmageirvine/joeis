@@ -2,7 +2,7 @@ package irvine.oeis.a066;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A066766 Decimal expansion of Sum_{k&gt;=1} sigma(k)/2^k where sigma(k) is the sum of divisors of k, 1 &lt;= d &lt;= k.

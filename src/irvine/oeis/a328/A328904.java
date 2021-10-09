@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A328904 Decimal expansion of x = 0.7271601514124259243... solution to 1 + 3^x = 5^x.

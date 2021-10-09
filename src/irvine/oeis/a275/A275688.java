@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A275688 Decimal expansion of 9*zeta(3)/(Pi^2*log(2)).

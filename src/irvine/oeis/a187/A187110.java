@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A187110 Decimal expansion of sqrt(3/8).

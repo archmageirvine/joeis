@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A298815 Decimal expansion of the greatest real zero of x^8 - 4*x^6 + 6*x^4 - 4*x^2 - x + 1.

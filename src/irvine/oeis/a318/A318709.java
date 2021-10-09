@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A318709 Decimal expansion of the solution to x = sqrt(5 + sqrt(5 - sqrt(5 - sqrt(5 + x)))).

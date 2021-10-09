@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A186282 Decimal expansion of non-right-angle, in degrees, of unique 14th class of convex pentagonal tiling.

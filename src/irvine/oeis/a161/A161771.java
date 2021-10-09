@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A161771 Decimal expansion of (70*exp(Pi*sqrt(163)))^2.

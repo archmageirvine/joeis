@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A235916 Decimal expansion of 3/sqrt(2*Pi).

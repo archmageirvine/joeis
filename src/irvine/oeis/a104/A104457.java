@@ -1,7 +1,7 @@
 package irvine.oeis.a104;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A104457 Decimal expansion of 1 + phi = phi^2 = (3 + sqrt(5))/2.

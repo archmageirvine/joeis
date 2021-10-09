@@ -1,7 +1,7 @@
 package irvine.oeis.a188;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A188640 Decimal expansion of e + sqrt(1+e^2).

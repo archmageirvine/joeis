@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A121225 Decimal expansion of -log(2-2*cos(1))/2.

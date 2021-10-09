@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A020835 Decimal expansion of 1/sqrt(78).

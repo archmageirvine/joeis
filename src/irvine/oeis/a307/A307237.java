@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A307237 Decimal expansion of 2 + (-6 + (1+sqrt(3))*Pi)*sqrt(2/(15*(2*Pi-3 +(Pi-3)*sqrt(3)))).

@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A135154 Decimal expansion of e*Pi*phi/2.

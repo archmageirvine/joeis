@@ -1,7 +1,7 @@
 package irvine.oeis.a091;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A091725 Decimal expansion of second exponential integral at 1, ExpIntegralEi[1].

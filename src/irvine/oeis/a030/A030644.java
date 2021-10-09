@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A030644 Decimal expansion of 10 - Pi.

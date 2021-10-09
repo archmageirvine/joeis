@@ -1,7 +1,7 @@
 package irvine.oeis.a016;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A016655 Decimal expansion of log(32) = 5*log(2).

@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A094042 Beatty sequence for e^Pi - Pi^e - i^i.

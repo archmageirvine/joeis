@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A267033 Decimal expansion of 4*arctan(sqrt(2)/5)-Pi/3.

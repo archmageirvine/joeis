@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A218012 The decimal expansion of -sqrt(7) + sqrt(11), Andrica's Maximum A_n.

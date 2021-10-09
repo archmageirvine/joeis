@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.z.Z;
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A013691 Continued fraction for zeta(15).

@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A245592 Decimal expansion of the Ising constant K_c, the ratio of the coupling constant to the ferromagnetic critical temperature, in the two-dimensional case.

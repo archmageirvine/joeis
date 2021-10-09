@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A303983 Decimal expansion of 2*sin((37/384)*Pi).

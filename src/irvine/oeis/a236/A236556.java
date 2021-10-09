@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A236556 Decimal expansion of the steradian solid angle subtended by one square facet of the cuboctahedron.

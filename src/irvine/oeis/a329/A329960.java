@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A329960 Decimal expansion of least positive number x such that 1/(2 + sin x) + 1/(2 + cos x) = 1.

@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A020759 Decimal expansion of (-1)*Gamma'(1/2)/Gamma(1/2) where Gamma(x) denotes the Gamma function.

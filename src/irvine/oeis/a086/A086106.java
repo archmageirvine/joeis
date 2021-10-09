@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A086106 Decimal expansion of positive root of x^4 - x^3 - 1 = 0.

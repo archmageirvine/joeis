@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179461 Decimal expansion of sqrt(51)/7.

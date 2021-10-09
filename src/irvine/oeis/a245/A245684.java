@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A245684 Decimal expansion of the expected distance from a randomly selected point in the unit circle to a point on the boundary: 32/(9*Pi).

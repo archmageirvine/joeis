@@ -2,7 +2,7 @@ package irvine.oeis.a273;
 // manually (decexp) at 2021-07-27
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A273512 Expansion of Lemniscate constant or Gauss's constant in base 2.

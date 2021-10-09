@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A155968 Decimal expansion of (1/2)*log(Pi).

@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145435 Decimal expansion of log(1/2 + 1/sqrt(2))/sqrt(5).

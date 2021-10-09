@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A102521 Decimal expansion of value of Ahmed's 2nd integral.

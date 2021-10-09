@@ -2,7 +2,7 @@ package irvine.oeis.a303;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A303069 Decimal expansion of the solution to (1 + x)*x^(1 - x) = x^x.

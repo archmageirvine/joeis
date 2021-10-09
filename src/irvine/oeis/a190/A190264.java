@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A190264 Decimal expansion of (sqrt(89) - 6)/2.

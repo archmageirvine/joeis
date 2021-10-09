@@ -2,7 +2,7 @@ package irvine.oeis.a014;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A014715 Decimal expansion of Conway's constant.

@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A038129 Beatty sequence for cube root of 2.

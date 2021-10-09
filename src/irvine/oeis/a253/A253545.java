@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A253545 Decimal expansion of r = 0.527697..., a boundary ratio separating catenoid and Goldschmidt solutions in the minimal surface of revolution problem.

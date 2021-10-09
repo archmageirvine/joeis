@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A013667 Decimal expansion of zeta(9).

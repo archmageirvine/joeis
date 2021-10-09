@@ -2,7 +2,7 @@ package irvine.oeis.a081;
 
 import irvine.math.cr.CR;
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A081824 Decimal expansion of conductance quantum in units of S.

@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A323458 Decimal expansion of log(2^(1/2)*3^(1/3) / 6^(1/6)).

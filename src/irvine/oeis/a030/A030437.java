@@ -2,7 +2,7 @@ package irvine.oeis.a030;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A030437 Decimal expansion of x such that x^x = Pi.

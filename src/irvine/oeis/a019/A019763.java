@@ -2,7 +2,7 @@ package irvine.oeis.a019;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A019763 Decimal expansion of 2*e/3.

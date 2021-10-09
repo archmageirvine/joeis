@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A010778 Decimal expansion of 16th root of 2.

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A180251 Decimal expansion of 6*(phi+1)/5, where phi is (1 + sqrt(5))/2.

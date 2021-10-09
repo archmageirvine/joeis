@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A114864 Decimal expansion of EulerGamma/2 + log(2).

@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A329933 Decimal expansion of greatest negative number x such that csc x + sec x = 1.

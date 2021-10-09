@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A249103 Decimal expansion of (Pi^2/15)^(1/3).

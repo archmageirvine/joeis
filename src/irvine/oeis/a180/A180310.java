@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A180310 Decimal expansion of -4/Pi + Pi/2.

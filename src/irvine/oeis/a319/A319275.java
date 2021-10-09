@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A319275 Decimal expansion of the positive solution to x! = 3.

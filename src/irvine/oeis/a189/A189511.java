@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A189511 Decimal expansion of 35/(48*Pi).

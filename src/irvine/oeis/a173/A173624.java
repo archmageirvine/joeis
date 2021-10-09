@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A173624 Decimal expansion of Pi^2*log(2)/8 - 7*zeta(3)/16, where zeta is the Riemann zeta function.

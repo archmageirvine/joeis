@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A217870 Decimal expansion of sqrt(sqrt(2 + sqrt(3))).

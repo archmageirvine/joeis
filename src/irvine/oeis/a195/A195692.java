@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A195692 Decimal expansion of arccos(1/phi), where phi = (1+sqrt(5))/2 (the golden ratio).

@@ -2,7 +2,7 @@ package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A004714 Positions of ones in binary expansion of the reciprocal of the golden ratio (0.618...).

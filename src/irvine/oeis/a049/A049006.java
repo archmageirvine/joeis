@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A049006 Decimal expansion of i^i = exp(-Pi/2).

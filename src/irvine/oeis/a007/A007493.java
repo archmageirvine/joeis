@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A007493 Decimal expansion of Wallis' number, the real root of x^3 - 2*x - 5.

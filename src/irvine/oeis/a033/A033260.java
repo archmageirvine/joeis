@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A033260 Continued fraction for Laplace's limit constant.

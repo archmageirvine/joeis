@@ -1,7 +1,7 @@
 package irvine.oeis.a132;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A132721 Decimal expansion of 31/Pi.

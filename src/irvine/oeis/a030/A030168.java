@@ -3,8 +3,8 @@ package irvine.oeis.a030;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.ContinuedFractionSequence;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a033.A033308;
 

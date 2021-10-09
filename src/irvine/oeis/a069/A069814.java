@@ -2,7 +2,7 @@ package irvine.oeis.a069;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A069814 Decimal expansion of root of the equation x*cosh(x)=1.

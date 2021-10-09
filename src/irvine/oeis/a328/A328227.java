@@ -4,7 +4,7 @@ package irvine.oeis.a328;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A328227 Decimal expansion of positive solution to x^2 = 1 + (Pi + arccos(1/x))^2.

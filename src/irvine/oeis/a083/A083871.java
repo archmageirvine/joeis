@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A083871 Decimal expansion of sqrt(355/113).

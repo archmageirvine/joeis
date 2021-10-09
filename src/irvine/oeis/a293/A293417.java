@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A293417 Decimal expansion of the minimum ripple factor for a reflectionless, Chebyshev filter, in the limit where the order approaches infinity.

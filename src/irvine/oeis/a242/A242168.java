@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A242168 Decimal expansion of the integral of the q-Pochhammer symbol (reciprocal of the partition function) over the real interval -1 to 1.

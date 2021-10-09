@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145962 Decimal expansion of (1/5)*Hypergeometric2F1[1, 5/8, 13/8, 1/16] used in BBP Pi formula.

@@ -1,7 +1,7 @@
 package irvine.oeis.a197;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A197682 Decimal expansion of Pi/(2 + 2*Pi).

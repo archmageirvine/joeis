@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A173272 Positive solution of sqrt((2-x)(2+x))+sqrt((3-x)(3+x))=sqrt((2-x)(2+x))*sqrt((3-x)(3+x)).

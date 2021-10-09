@@ -3,7 +3,7 @@ package irvine.oeis.a336;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A336199 Decimal expansion of the distance between the centers of two unit-radius spheres such that the volume of intersection is equal to the sum of volumes of the two nonoverlapping parts.

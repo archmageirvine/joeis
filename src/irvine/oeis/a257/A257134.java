@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A257134 Decimal expansion of Pi^4/45.

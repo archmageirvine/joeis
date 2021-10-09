@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A246644 Decimal expansion of the real root of s^3 - s^2 + s - 1/3 = 0.

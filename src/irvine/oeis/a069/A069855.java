@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A069855 Decimal expansion of the root of x*tan(x)=1.

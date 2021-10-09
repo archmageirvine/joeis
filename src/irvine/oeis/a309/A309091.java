@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A309091 Decimal expansion of 4/(Pi-2).

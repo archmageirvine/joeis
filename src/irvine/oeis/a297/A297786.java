@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A297786 Decimal expansion of 10980011/999^3.

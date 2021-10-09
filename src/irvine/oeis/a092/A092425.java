@@ -1,7 +1,7 @@
 package irvine.oeis.a092;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A092425 Decimal expansion of Pi^4.

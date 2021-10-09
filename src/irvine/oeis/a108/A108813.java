@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A108813 Decimal expansion of the continued fraction 2/(5+4/(7+6/(9+8/(11+10/(13+12/...

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A247964 Beatty sequence for e^(1/3): a(n)=floor(n*(e^(1/3))).

@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A093603 Bisecting a triangular cake using a curved cut of minimal length: decimal expansion of sqrt(Pi/sqrt(3))/2 = d/2, where d^2 = Pi/sqrt(3).

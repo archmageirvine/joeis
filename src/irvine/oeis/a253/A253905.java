@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A253905 Decimal expansion of zeta(3)/zeta(2).

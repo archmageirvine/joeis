@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A331501 Decimal expansion of exp(3/4).

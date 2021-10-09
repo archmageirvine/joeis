@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A147709 Decimal expansion of sinh(EulerGamma).

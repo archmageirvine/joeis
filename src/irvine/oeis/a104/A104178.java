@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A104178 Decimal expansion of log_10(3+2*sqrt(2)).

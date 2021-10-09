@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A255899 Decimal expansion of Mrs. Miniver's constant.

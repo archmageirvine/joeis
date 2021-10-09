@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A210522 Decimal expansion of 10^(3/4).

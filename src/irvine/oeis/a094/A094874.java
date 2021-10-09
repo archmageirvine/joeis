@@ -1,7 +1,7 @@
 package irvine.oeis.a094;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A094874 Decimal expansion of (5-sqrt(5))/2.

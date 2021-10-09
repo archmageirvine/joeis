@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A152149 Decimal expansion of the angle B in the doubly golden triangle ABC.

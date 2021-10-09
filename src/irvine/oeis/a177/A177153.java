@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A177153 Decimal expansion of (21+5*sqrt(26))/19.

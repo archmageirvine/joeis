@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A188731 Decimal expansion of (5+sqrt(41))/4.

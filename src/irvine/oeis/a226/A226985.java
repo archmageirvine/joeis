@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A226985 Sum of inverse of increasing integers with a difference of 0, 1, 2, 3, ...: 1 + 1/2 + 1/4 + 1/7 + 1/11 + 1/16 + 1/22 + 1/29 + 1/37 + ....

@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A323986 Decimal expansion of exp(Pi/3).

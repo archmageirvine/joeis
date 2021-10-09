@@ -1,7 +1,8 @@
-package irvine.oeis;
+package irvine.oeis.cons;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * Convert a binary sequence into a real constant and expand as a decimal sequence.

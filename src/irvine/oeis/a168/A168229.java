@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A168229 Decimal expansion of arctan(sqrt(7)).

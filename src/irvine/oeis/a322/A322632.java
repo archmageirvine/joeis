@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A322632 Decimal expansion of the real solution to 23*x^5 - 41*x^4 + 10*x^3 - 6*x^2 - x - 1 = 0. Constant occurring in the asymptotic behavior of the number of lattice paths of slope 2/5, observed by D. Knuth.

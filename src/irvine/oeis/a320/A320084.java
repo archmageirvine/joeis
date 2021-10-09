@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A320084 Decimal expansion of solution of -x*log_2(x) - (1-x)*log_2(1-x) + (1-x)*log_2(3) = 1.

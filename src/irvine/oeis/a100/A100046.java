@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A100046 Decimal expansion of -Pi/4 + (3*log(2))/2.

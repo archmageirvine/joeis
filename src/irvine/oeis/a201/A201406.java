@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A201406 Decimal expansion of least x satisfying 2*x^2 = sec(x) and 0 &lt; x &lt; Pi.

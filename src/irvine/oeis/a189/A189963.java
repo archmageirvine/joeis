@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A189963 Decimal expansion of (5+9*sqrt(5))/12.

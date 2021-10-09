@@ -2,7 +2,7 @@ package irvine.oeis.a058;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A058265 Decimal expansion of the tribonacci constant t, the real root of x^3 - x^2 - x - 1.

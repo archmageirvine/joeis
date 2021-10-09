@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A002211 Continued fraction for Khintchine's constant.

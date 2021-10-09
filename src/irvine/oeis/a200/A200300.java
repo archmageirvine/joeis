@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A200300 Decimal expansion of greatest x satisfying 4*x^2 - 3*cos(x) = sin(x).

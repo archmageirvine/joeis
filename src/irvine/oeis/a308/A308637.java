@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A308637 Decimal expansion of Pi^3/Zeta(3).

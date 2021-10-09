@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A127205 Decimal expansion of 81*sqrt(3)/(8*Pi^3).

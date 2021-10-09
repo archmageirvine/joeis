@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A303985 Decimal expansion of 2*sin(45*Pi/128).

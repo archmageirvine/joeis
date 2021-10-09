@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A177270 Decimal expansion of (684125+sqrt(635918528029))/1033802.

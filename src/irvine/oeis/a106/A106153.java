@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A106153 Decimal expansion of arcsin(sqrt(1 - (e/Pi)^2)) (in degrees), lesser angle in right triangle with hypotenuse Pi and longer leg e.

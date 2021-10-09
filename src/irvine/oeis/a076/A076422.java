@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A076422 Decimal expansion of third solution of equation tan(x) = tanh(x).

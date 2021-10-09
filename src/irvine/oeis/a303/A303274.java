@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A303274 Decimal expansion of 1200/3937.

@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A280819 Decimal expansion of 12*sin(Pi/12).

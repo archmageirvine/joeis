@@ -3,7 +3,7 @@ package irvine.oeis.a335;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335862 Decimal expansion of the zero x1 of the cubic polynomial x^3 - 2*x^2 - 10*x - 6.

@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A121967 Binary expansion of root of cos x = x.

@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A178818 Decimal expansion of the diameter of the regular 7-gon (heptagon) of edge length 1.

@@ -5,7 +5,7 @@ package irvine.oeis.a194;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A194655 Decimal expansion of Pi*(Pi^2*zeta(3)+6*zeta(5))/8.

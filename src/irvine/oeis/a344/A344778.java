@@ -1,7 +1,7 @@
 package irvine.oeis.a344;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A344778 Decimal expansion of 4 * Pi^5 / (729 * sqrt(3)).

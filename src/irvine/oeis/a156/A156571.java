@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A156571 Decimal expansion of (27 + 10*sqrt(2))/23.

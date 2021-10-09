@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A104687 Decimal expansion of e^e/(1+e)-1.

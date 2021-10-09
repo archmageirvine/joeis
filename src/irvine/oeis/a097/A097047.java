@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A097047 Decimal expansion of 1/(2*sqrt(3)) - Pi/36 + log(2 + sqrt(3))/3.

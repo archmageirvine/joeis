@@ -3,7 +3,7 @@ package irvine.oeis.a341;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A341328 Decimal expansion of the smaller solution (i.e., the solution other than x = 5) to 5^x = x^5.

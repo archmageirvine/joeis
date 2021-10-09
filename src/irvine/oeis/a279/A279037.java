@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A279037 Decimal expansion of the total area of Ford circles.

@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A179706 Decimal expansion of e^(1/Pi).

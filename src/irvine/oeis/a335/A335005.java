@@ -3,7 +3,7 @@ package irvine.oeis.a335;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A335005 Decimal expansion of Pi^2/(12*zeta(3)).

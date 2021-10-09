@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A306324 Decimal expansion of 2*Pi*tanh(sqrt(5/3)*Pi/2)/sqrt(15).

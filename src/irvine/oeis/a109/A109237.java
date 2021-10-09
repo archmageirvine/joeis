@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.BeattySequence;
+import irvine.oeis.cons.BeattySequence;
 
 /**
  * A109237 a(n) = floor(n*coth(1)).

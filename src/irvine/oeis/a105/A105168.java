@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A105168 Decimal expansion of a real root of x^Pi = e^x.

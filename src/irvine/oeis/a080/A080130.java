@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A080130 Decimal expansion of exp(-gamma).

@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A255913 Decimal expansion of A such that y = A*x^2 cuts the first quadrant of the unit circle into two equal areas.

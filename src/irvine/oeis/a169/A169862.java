@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A169862 Decimal expansion of root of x^(x-1) = (x-1)^x.

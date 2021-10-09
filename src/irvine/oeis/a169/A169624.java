@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A169624 Decimal expansion of e^(Pi*sqrt(58)).

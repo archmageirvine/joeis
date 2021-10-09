@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A246671 Decimal expansion of Shepp's constant 'alpha', an optimal stopping constant associated with the case of a zero mean and unit variance distribution function.

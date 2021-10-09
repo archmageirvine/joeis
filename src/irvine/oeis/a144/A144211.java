@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A144211 Decimal expansion of solution to (x+1)^(x+1) = x^(x+2).

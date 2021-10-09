@@ -2,7 +2,7 @@ package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A004716 Positions of ones in the binary expansion of log(3)/log(2)-1.

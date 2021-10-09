@@ -2,7 +2,7 @@ package irvine.oeis.a160;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A160155 Decimal expansion of the one real root of x^5-x-1.

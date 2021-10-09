@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A164103 Decimal expansion of 8*Pi^2/15.

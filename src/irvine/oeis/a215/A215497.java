@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A215497 Decimal expansion of root of cosh(x)^log(x) = log(x)^cosh(x).

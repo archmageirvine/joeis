@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A256358 Decimal expansion of log(sqrt(Pi/2)).

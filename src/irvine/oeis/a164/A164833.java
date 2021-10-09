@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A164833 Decimal expansion of Pi/8 - log(2)/2.

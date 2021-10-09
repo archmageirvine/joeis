@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A018939 Continued fraction for e^Pi - Pi.

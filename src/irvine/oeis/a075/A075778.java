@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A075778 Decimal expansion of the real root of x^3 + x^2 - 1.

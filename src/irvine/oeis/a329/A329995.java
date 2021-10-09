@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A329995 Decimal expansion of the solution of 1/x^3 + 1/3^x = 1.

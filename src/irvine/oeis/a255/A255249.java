@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A255249 Decimal expansion of -2*cos(5*Pi/7).

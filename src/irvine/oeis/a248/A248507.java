@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.math.cr.CR;
 import irvine.math.r.PhysicsConstants;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A248507 Decimal expansion of a single magnetic flux quantum Phi_0 in SI units.

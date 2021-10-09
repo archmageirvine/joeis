@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A113212 Decimal expansion of log(6)/log(1 + phi).

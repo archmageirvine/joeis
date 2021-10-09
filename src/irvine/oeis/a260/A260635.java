@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A260635 Decimal expansion of 5^Pi.

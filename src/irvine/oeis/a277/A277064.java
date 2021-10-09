@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A277064 Decimal expansion of (sqrt(3)-1)^(sqrt(2)-1).

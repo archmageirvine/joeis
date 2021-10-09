@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A257136 Decimal expansion of 2*Pi^6/945.

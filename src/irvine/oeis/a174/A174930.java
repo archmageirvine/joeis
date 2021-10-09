@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A174930 Decimal expansion of (4+sqrt(17))/8.

@@ -2,7 +2,7 @@ package irvine.oeis.a276;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A276120 Decimal expansion of zeta(3)/Pi^3.

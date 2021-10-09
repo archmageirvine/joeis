@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A139350 Decimal expansion of csc((1+sqrt(5))/2), where (1+sqrt(5))/2 is the golden ratio.

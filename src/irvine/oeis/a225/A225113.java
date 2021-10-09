@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A225113 Decimal expansion of Integral_{x=0..1} arcsin(x)^2/x dx.

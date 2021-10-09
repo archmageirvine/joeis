@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A118273 Decimal expansion of (4/3)^(3/2).

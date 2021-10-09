@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A124597 Decimal expansion of the solution to x^2 = sin(x).

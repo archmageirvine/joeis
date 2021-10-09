@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A243447 Decimal expansion of 1-9/(4*Pi)+sqrt(3)/(2*Pi), an extreme value constant.

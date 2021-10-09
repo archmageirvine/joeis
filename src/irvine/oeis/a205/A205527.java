@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A205527 Decimal expansion of Pi^(e/Pi).

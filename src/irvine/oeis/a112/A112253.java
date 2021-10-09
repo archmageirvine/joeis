@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A112253 Decimal expansion of (secant of 1 degree)^(1/2).

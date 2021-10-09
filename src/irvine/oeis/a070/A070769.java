@@ -2,7 +2,7 @@ package irvine.oeis.a070;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A070769 Decimal expansion of Soldner's constant.

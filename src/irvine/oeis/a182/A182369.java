@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A182369 Decimal expansion of (7^(e - 1/e) - 9)*Pi^2, also known as Jenny's constant.

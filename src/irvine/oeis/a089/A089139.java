@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A089139 Decimal expansion of e^4 - 3e^3 + 2e^2 - e/6.

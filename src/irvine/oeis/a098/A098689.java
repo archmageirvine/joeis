@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A098689 Decimal expansion of Sum_{n&gt;=0} Fibonacci(n)/n!.

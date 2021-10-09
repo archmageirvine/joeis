@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A139349 Decimal expansion of negated secant of the golden ratio. That is, the decimal expansion of -sec((1+sqrt(5))/2).

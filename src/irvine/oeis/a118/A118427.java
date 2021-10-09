@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A118427 Decimal expansion of hexanacci constant.

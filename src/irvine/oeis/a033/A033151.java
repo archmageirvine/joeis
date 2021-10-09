@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A033151 Continued fraction for Niven's constant.

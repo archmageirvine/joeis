@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A104754 Decimal expansion of solution to x^(6^x)=6.

@@ -2,7 +2,7 @@ package irvine.oeis.a347;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347059 Decimal expansion of the Dirichlet eta function at 9.

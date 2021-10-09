@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A233091 Decimal expansion of Sum_{i&gt;=0} 1/(2*i+1)^3.

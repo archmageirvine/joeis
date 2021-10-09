@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A277117 Decimal expansion of e^6/(Pi^5+Pi^4), where e = exp(1).

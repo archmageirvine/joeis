@@ -2,7 +2,7 @@ package irvine.oeis.a347;
 
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A347331 Decimal expansion of 691 * Pi^6 / 675675.

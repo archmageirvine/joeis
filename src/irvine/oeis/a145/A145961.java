@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A145961 Decimal expansion of 2*log(3) - 4*arccot(2) used in BBP Pi formula.

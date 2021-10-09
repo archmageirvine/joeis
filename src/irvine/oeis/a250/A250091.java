@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A250091 Decimal expansion of 1+2^(1/2)+3^(1/3)+4^(1/4)+5^(1/5)+6^(1/6)+7^(1/7).

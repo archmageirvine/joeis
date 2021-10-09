@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.factor.prime.Fast;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A051021 Decimal expansion of Mills's constant, assuming the Riemann Hypothesis is true.

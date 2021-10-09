@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A305327 Decimal expansion of the middle x such that 1/x + 1/(x+1) + 1/(x+2) = 1.

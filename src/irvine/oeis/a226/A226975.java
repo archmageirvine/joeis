@@ -1,7 +1,7 @@
 package irvine.oeis.a226;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A226975 Decimal expansion I_1(1), the modified Bessel function of the first kind.

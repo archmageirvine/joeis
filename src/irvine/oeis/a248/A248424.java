@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 /**
  * A248424 Decimal expansion of the length of a parsec (meters), prior to its redefinition in August 2015.
  * Formula: 149597870700/tan(Pi/(180*3600))

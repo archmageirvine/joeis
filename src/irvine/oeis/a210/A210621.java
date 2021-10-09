@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A210621 Decimal expansion of 256/81.

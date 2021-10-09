@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.math.cr.CR;
 import irvine.math.cr.MinkowskiQuestionMark;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A048820 Binary expansion of one of four fixed points (mod 1) of Minkowski's question mark function.

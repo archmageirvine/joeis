@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A135800 Decimal expansion of root of (2-x)^(1/(2+x)) + (3-x)^(1/(2+x)) = Pi.

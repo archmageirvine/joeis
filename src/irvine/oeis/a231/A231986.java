@@ -3,7 +3,7 @@ package irvine.oeis.a231;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A231986 Decimal expansion of the solid angle (in steradians) subtended by a spherical square of one radian side.

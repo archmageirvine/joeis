@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.ContinuedFractionDenominatorSequence;
+import irvine.oeis.cons.ContinuedFractionDenominatorSequence;
 
 /**
  * A005485 Denominators of convergents to cube root of 7.

@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A054042 Decimal expansion of 1 - 1/sqrt(10).

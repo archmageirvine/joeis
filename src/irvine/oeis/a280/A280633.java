@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A280633 Decimal expansion of 18*sin(Pi/18).

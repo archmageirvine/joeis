@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A277077 Decimal expansion of the root of cos(sin(x)) - x = 0.

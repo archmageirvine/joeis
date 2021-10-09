@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A010780 Decimal expansion of 18th root of 2.

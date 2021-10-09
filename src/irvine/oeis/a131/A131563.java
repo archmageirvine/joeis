@@ -1,7 +1,7 @@
 package irvine.oeis.a131;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A131563 Decimal expansion of e*Pi*phi, where phi = (sqrt(5) + 1)/2.

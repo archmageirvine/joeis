@@ -1,7 +1,7 @@
 package irvine.oeis.a232;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A232734 Decimal expansion of Integral {x=0..infinity} 1/2^(2^x) dx.

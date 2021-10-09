@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A104112 Decimal expansion of 42^42.

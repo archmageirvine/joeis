@@ -5,7 +5,7 @@ package irvine.oeis.a152;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A152651 Decimal expansion of 3*Zeta(5) - Zeta(3)*Pi^2/6.

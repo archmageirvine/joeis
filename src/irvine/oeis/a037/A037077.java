@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A037077 Decimal expansion of upper limit of - 1^(1/1) + 2^(1/2) - 3^(1/3) + ... .

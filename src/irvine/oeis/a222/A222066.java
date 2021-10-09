@@ -1,7 +1,7 @@
 package irvine.oeis.a222;
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A222066 Decimal expansion of 1/sqrt(128).

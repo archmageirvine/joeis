@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.cons;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ZPolynomial;

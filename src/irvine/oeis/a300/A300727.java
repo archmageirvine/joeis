@@ -2,7 +2,7 @@ package irvine.oeis.a300;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A300727 Decimal expansion of the total harmonic distortion (THD) of the sawtooth signal filtered by a 2nd-order low-pass filter.

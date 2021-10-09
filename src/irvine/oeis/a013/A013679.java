@@ -1,6 +1,6 @@
 package irvine.oeis.a013;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A013679 Continued fraction for zeta(2) = Pi^2/6.

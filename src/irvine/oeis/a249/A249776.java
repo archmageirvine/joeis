@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A249776 Decimal expansion of the connective constant of the (3.12^2) lattice.

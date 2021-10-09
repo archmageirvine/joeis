@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.ContinuedFractionSequence;
+import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
  * A051149 Continued fraction for BesselK(1,2)/BesselK(0,2).

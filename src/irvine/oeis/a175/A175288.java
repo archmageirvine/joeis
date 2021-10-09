@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A175288 Decimal expansion of the constant x satisfying (cos(x))^2 = sin(x).

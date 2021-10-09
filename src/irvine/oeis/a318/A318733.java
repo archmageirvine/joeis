@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 
 import irvine.math.cr.CR;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.PolynomialRootExpansionSequence;
+import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
  * A318733 Decimal expansion of the nontrivial real solution to x^6 + x^5 - x^3 - x^2 - x + 1 = 0.

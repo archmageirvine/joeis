@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A086306 Decimal expansion of (280*(3 - sqrt(3)))/(840 - 280*sqrt(3) + 4*sqrt(5) - sqrt(10)).

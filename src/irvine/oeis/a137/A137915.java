@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A137915 Decimal expansion of 180*arccos(1/3)/Pi.

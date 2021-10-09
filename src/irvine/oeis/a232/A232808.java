@@ -2,7 +2,7 @@ package irvine.oeis.a232;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A232808 Decimal expansion of the surface area of a 3D sphere with unit volume.

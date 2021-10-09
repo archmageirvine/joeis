@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A144663 Decimal expansion of Product_{n&gt;=2} (n^4-1)/(n^4+1).

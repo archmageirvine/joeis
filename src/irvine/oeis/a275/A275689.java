@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A275689 Decimal expansion of 3*Zeta(3)/(4*log(2)).

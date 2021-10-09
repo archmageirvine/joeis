@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A153071 Decimal expansion of L(3, chi4), where L(s, chi4) is the Dirichlet L-function for the non-principal character modulo 4.

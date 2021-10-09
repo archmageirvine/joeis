@@ -12,7 +12,6 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(BikTransformSequenceTest.class);
-    suite.addTestSuite(ContinuedFractionOfSqrtSequenceTest.class);
     suite.addTestSuite(CycleTransformSequenceTest.class);
     suite.addTestSuite(DikTransformSequenceTest.class);
     suite.addTestSuite(EuclidMullinSequenceTest.class);
@@ -52,6 +51,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.oeis.a276.AllTests.suite());
     suite.addTest(irvine.oeis.a307.AllTests.suite());
     suite.addTest(irvine.oeis.a308.AllTests.suite());
+    suite.addTest(irvine.oeis.cons.AllTests.suite());
     return suite;
   }
 

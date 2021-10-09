@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.UnaryCRFunction;
-import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A242673 Decimal expansion of the unique real solution of the equation Ei(x)-gamma-log(x) = 1, where Ei is the exponential integral function and gamma the Euler-Mascheroni constant.

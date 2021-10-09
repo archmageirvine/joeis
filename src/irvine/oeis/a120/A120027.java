@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A120027 Triangle, generated from (3^(n-k) * 5^k) table.

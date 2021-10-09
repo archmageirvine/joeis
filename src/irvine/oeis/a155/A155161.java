@@ -4,7 +4,7 @@ package irvine.oeis.a155;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A155161 A Fibonacci convolution triangle: Riordan array (1, x/(1 - x - x^2)). Triangle T(n,k), 0 &lt;= k &lt;= n, read by rows.

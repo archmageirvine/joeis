@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A123027 Triangle of coefficients of (1 - x)^n*U(n,-(3*x - 2)/(2*x - 2)), where U(n,x) is the n-th Chebyshev polynomial of the second kind.

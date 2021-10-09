@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A117908 Chequered  (or checkered) triangle for odd prime p=3.

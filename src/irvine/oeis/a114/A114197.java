@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A114197 A Pascal-Fibonacci triangle.

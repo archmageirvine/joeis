@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A208532 Mirror image of triangle in A125185; unsigned version of A120058.

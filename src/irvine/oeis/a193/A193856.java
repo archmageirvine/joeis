@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A193856 Triangular array:  the fission of (p(n,x)) by ((2x+1)^n, where p(n,x)=(x+1)^n.

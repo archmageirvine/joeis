@@ -4,7 +4,7 @@ package irvine.oeis.a049;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A049780 Array T, read by descending diagonals: T(n, k) = k*(2*n + k + 1)/2 for n, k &gt;= 0.

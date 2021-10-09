@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A181650 Inverse of number triangle A070909.

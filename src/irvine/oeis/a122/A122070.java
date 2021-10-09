@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A122070 Triangle given by T(n,k) = Fibonacci(n+k+1)*binomial(n,k) for 0&lt;=k&lt;=n.

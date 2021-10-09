@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A038325 Triangle read by rows whose (i,j)-th entry is binomial(i,j)*11^(i-j)*11^j.

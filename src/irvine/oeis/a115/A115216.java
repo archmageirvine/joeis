@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A115216 "Correlation triangle" for 2^n.

@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A255935 Triangle read by rows: a(n) = Pascal's triangle A007318(n) + A197870(n+1).

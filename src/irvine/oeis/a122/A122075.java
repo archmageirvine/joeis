@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A122075 Coefficients of a generalized Pell-Lucas polynomial read by rows.

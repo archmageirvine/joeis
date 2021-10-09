@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A038763 Triangular matrix arising in enumeration of catafusenes, read by rows.

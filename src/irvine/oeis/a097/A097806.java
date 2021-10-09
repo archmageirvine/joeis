@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A097806 Riordan array (1+x, 1) read by rows.

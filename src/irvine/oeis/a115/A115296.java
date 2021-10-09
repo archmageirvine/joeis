@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A115296 Skew version of correlation triangle for constant sequence 1.

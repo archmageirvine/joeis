@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A115284 Correlation triangle of 4-C(1,n)-2*C(0,n) (A113311).

@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A038250 Triangle whose (i,j)-th entry is binomial(i,j)*5^(i-j)*8^j.

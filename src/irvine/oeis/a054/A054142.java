@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A054142 Triangular array C(2*n-k, k), k=0..n, n &gt;= 0.

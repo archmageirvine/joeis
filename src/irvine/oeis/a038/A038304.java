@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A038304 Triangle whose (i,j)-th entry is binomial(i,j)*10^(i-j)*2^j.

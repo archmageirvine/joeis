@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A104562 Inverse of the Motzkin triangle A064189.

@@ -4,7 +4,7 @@ package irvine.oeis.a046;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A046741 Triangle read by rows giving number of arrangements of k dumbbells on 2 X n grid (n &gt;= 0, k &gt;= 0).

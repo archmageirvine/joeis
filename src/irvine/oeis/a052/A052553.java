@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 // dhdop=[1(, 0)*] DELTA [0, 1, -1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A052553 Square array of binomial coefficients T(n,k) = binomial(n,k), n &gt;= 0, k &gt;= 0, read by antidiagonals.

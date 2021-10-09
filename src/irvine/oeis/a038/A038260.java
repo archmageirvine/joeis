@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A038260 Triangle read by rows: T(n,k) = binomial(n,k)*6^(n-k)*6^k, 0&lt;=k&lt;=n.

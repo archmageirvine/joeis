@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A277919 Triangle read by rows: CL(n,k) is the number of labeled subgraphs with k edges of the n-cycle C_n.

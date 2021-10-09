@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 // dhdop=[0, 3, -2/3, 2/3(, 0)*] DELTA [1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A206306 Riordan array (1, x/(1-3*x+2*x^2)).

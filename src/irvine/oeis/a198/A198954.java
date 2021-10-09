@@ -4,7 +4,7 @@ package irvine.oeis.a198;
 // dhdop=[3, -4/3, 1/3(, 0)*] DELTA [0(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A198954 Expansion of the rotational partition function for a heteronuclear diatomic molecule.

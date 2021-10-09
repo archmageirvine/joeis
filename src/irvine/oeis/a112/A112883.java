@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 // dhdop=[0, 1, -1(, 0)*] DELTA [1, 2, -2(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A112883 A skew Jacobsthal-Pascal matrix.

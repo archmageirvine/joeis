@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A173742 Triangle T(n,k) = binomial(n,k) + 6 with T(n,0) = T(n,n) = 1 for n &gt;= 0, read by rows.

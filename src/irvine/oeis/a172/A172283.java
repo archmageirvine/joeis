@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A172283 (-9,11) Pascal triangle.

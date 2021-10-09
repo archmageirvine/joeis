@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A193605 Triangle: (row n) = partial sums of partial sums of row n of Pascal's triangle.

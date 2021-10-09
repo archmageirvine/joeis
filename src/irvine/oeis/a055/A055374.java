@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A055374 Invert transform applied three times to Pascal's triangle A007318.

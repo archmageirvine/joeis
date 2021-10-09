@@ -4,7 +4,7 @@ package irvine.oeis.a207;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A207543 Triangle read by rows, expansion of (1+y*x)/(1-2*y*x+y*(y-1)*x^2).

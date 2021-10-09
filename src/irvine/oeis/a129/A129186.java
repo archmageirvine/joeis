@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A129186 Right shift operator generating 1's in shifted spaces.

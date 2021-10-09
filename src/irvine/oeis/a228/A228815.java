@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A228815 Symmetric triangle, read by rows, related to Fibonacci numbers.

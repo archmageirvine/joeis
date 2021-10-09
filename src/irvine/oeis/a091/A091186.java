@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A091186 Triangle read by rows, in which n-th row gives expansion of x^n/((1-x)(1-x-x^2)^n).

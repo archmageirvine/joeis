@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A060086 Convolution triangle A059594 with extra first column.

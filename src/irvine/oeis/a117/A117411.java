@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A117411 Skew triangle associated to the Euler numbers.

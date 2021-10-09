@@ -4,12 +4,13 @@
  * 2019-08-25: Constructor for Riordan arrays
  * 2019-07-04, Georg Fischer: copied from GeneratingFunctionSequence
  */
-package irvine.oeis;
+package irvine.oeis.triangle;
 
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * Generating functions with 2 variables yielding a (lower left) triangle.
@@ -31,7 +32,7 @@ public class GeneratingFunctionTriangle implements Sequence {
   protected int mTriY; // current triangle index = exponent for y
 
   /**
-   * Empty constructor
+   * Empty constructor.
    */
   protected GeneratingFunctionTriangle() {
   }

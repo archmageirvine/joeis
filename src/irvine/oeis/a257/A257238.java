@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A257238 Triangle T(n, k) = n^3 - k^3, 0 &lt;= k &lt; = n.

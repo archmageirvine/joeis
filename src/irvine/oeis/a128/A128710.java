@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A128710 Triangle read by rows: T(n,k) = (k+2)*binomial(n,k) (0 &lt;= k &lt;= n).

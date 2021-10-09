@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A124216 Generalized Pascal triangle.

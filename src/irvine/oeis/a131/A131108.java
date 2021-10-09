@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A131108 T(n,k) = 2*A007318(n,k) - A097806(n,k).

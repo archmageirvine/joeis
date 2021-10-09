@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A115282 Correlation triangle for the sequence 3-2*0^n.

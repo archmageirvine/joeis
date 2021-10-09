@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A193842 Triangular array: the fission of the polynomial sequence ((x+1)^n: n &gt;= 0) by the polynomial sequence ((x+2)^n: n &gt;= 0). (Fission is defined at Comments.).

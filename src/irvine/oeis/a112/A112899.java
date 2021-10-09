@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 // dhdop=[0, 1/2, -1/2(, 0)*] DELTA [2, 1/2, -1/2(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A112899 A skew Pell-Pascal triangle.

@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A036565 Triangle of numbers in which i-th row is {2^(i-j)*7^j, 0&lt;=j&lt;=i}; i &gt;= 0.

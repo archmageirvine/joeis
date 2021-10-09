@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A127674 Coefficient table for Chebyshev polynomials T(2*n,x) (increasing even powers x, without zeros).

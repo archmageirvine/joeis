@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A094441 Triangular array T(n,k) = Fibonacci(n+1-k)*C(n,k), 0 &lt;= k &lt;= n.

@@ -4,7 +4,7 @@ package irvine.oeis.a046;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A046854 Triangle T(n, k) = binomial(floor((n+k)/2), k), n&gt;=0, n &gt;= k &gt;= 0.

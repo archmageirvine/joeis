@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A103633 Triangle read by rows: triangle of repeated stepped binomial coefficients.

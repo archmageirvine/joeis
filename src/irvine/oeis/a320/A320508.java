@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A320508 T(n,k) = binomial(n - k - 1, k), 0 &lt;= k &lt; n, and T(n,n) = (-1)^n, triangle read by rows.

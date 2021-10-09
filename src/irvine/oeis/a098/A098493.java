@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A098493 Triangle T(n,k) read by rows: difference between A098489 and A098490 at triangular rows.

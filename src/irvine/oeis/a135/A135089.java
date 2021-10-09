@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A135089 Triangle T(n,k) = 5*binomial(n,k) with T(0,0) = 1, read by rows.

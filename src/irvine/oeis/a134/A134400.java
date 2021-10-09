@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 // dhdop=[1, 1, -1, 1(, 0)*] DELTA [1, 1, -1, 1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A134400 M * A007318, where M = triangle with (1, 1, 2, 3,...) in the main diagonal and the rest zeros.

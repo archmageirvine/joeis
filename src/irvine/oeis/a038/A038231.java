@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A038231 Triangle whose (i,j)-th entry is binomial(i,j)*4^(i-j).

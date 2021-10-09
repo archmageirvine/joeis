@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A053538 Triangle: a(n,m) = ways to place p balls in n slots with m in the rightmost p slots, 0&lt;=p&lt;=n, 0&lt;=m&lt;=n, summed over p, a(n,m)= Sum_{k=0..n} binomial(k,m)*binomial(n-k,k-m), (see program line).

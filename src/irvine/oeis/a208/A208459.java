@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A208459 Triangle T_x = T(n,k) given by (0, 1/x, 1-1/x, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (x, 1/x-1, -1/x, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938, for x = 0.

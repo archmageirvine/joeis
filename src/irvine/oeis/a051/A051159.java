@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A051159 Triangular array made of three copies of Pascal's triangle.

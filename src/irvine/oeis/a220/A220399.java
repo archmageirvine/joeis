@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 // dhdop=[0, 2, -1/2, 3/2(, 0)*] DELTA [1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A220399 A convolution triangle of numbers obtained from A057682.

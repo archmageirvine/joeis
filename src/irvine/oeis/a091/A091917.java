@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A091917 Coefficient array of polynomials (z-1)^n-1.

@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A221179 A convolution triangle of numbers obtained from A146559.

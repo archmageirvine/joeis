@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A201701 Riordan triangle ((1-x)/(1-2x), x^2/(1-2x)).

@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A234713 Triangle, read by rows, based on the Fibonacci numbers.

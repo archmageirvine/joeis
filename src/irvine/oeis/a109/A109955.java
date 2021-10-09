@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A109955 Number triangle binomial(n+2k,3k).

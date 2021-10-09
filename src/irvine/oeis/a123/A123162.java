@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A123162 Triangle read by rows: T(n,k) = binomial(2*n - 1, 2*k - 1) for 0 &lt; k &lt;= n and T(n,0) = 1.

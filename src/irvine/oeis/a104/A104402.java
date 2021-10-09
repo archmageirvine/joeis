@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A104402 Matrix inverse of triangle A091491, read by rows.

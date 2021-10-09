@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A098158 Triangle T(n,k) with diagonals T(n,n-k) = binomial(n, 2*k).

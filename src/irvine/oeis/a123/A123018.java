@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A123018 Triangle read by rows: row n gives the coefficients of x^k (0 &lt;= k &lt;= n) in the expansion of Sum_{j=0..n} A320508(n,j)*x^j*(1 - x)^(n - j).

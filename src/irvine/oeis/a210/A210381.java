@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A210381 Triangle by rows, derived from the beheaded Pascal's triangle, A074909.

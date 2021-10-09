@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A115524 Number triangle (1,-x)+(x,x)/2+(x,-x)/2-(x^2,x^2) (expressed using the notation of stretched Riordan arrays).

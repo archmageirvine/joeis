@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A125662 A convolution triangle of numbers based on A001906 (even indexed Fibonacci numbers).

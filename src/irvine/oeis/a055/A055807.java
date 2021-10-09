@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A055807 Triangle T read by rows: T(i,j) = R(i-j,j), where R(i,0) = 1 for i &gt;= 0, R(0,j) = 0 for j &gt;= 1, and R(i,j) = Sum_{h=0..i-1, k=0..j} R(h,k) for i &gt;= 1 and j &gt;= 1.

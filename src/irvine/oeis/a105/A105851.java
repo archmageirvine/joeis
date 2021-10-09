@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A105851 Binomial transform triangle, read by rows.

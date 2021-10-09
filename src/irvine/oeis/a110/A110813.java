@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A110813 A triangle of pyramidal numbers.

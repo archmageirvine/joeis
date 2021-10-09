@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A117898 Number triangle 2^abs(L(C(n,2)/3) - L(C(k,2)/3))*[k&lt;=n] where L(j/p) is the Legendre symbol of j and p.

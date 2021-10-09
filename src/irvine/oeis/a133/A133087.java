@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A133087 A133080 * A007318.

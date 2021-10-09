@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A164948 Fibonacci matrix read by antidiagonals. (Inverse of A136158.).

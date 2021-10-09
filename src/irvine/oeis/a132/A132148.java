@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A132148 Triangular array T(n,k) = C(n,k)*Lucas(n-k), 0 &lt;= k &lt;= n.

@@ -4,7 +4,7 @@ package irvine.oeis.a155;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A155863 Triangle T(n,k) = n*(n^2 - 1)*binomial(n-2, k-1) for 1 &lt;= k &lt;= n-1, n &gt;= 2, and T(n,0) = T(n,n) = 1 for n &gt;= 0, read by rows.

@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A106516 A Pascal-like triangle based on 3^n.

@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 // dhdop=[1, 2, -2(, 0)*] DELTA [1, 2, -2(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A124860 A Jacobsthal-Pascal triangle.

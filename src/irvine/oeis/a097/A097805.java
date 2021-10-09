@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 // dhdop=[0, 1(, 0)*] DELTA [1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A097805 Compositions of n with k parts, T(n, k) = binomial(n-1, k-1) for n, k &gt;= 1 and T(n, 0) = 0^n, triangle read by rows for n &gt;= 0 and 0 &lt;= k &lt;= n.

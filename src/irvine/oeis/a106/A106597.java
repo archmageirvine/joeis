@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A106597 Triangle T(n,k) = T(n-1, k-1) + T(n-1, k) + Sum_{i &gt;= 1} T(n-2*i, k-i), with T(n, 0) = T(n, n) = 1, read by rows.

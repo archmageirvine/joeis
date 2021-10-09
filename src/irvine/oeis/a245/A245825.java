@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A245825 Triangle read by rows: T(n,k) is the number of the vertices of the Fibonacci cube G_n that have degree k (0&lt;=k&lt;=n).

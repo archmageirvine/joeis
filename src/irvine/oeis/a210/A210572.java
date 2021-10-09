@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A210572 Triangle read by rows: T(n,k) = number of vertices of eccentricity k in the Lucas cube graph of order n.

@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A099602 Triangle, read by rows, such that row n equals the inverse binomial transform of column n of the triangle of trinomial coefficients (A027907), omitting leading zeros.

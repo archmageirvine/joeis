@@ -4,7 +4,7 @@ package irvine.oeis.a146;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A146769 Coefficients of polynomial P(n) by rows, with P(n) = (x+1)^n + 2^(n-3)*((x+1)^n - x^n - 1) for n &gt; 0 and P(0) = 1.

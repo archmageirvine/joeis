@@ -4,7 +4,7 @@ package irvine.oeis.a077;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A077028 The rascal triangle, read by rows: T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n) = k(n-k) + 1.

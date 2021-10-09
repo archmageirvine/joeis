@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A127648 Triangle read by rows: row n consists of n zeros followed by n+1.

@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A100852 Triangle read by rows: T(n,k) = 2^k * 3^n, 0 &lt;= k &lt;= n.

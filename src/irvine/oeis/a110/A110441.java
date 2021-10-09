@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A110441 Triangular array formed by the Mersenne numbers.

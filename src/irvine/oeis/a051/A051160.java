@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A051160 Coefficients in expansion of (1-x)^floor(n/2)(1+x)^ceiling(n/2).

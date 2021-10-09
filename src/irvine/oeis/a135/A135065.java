@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A135065 A127733 * A007318 as infinite lower triangular matrices.

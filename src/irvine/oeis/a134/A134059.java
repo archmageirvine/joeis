@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 // dhdop=[3, -2(, 0)*] DELTA [3, -2(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A134059 Triangle T(n, k) = 3*binomial(n,k) with T(0, 0) = 1, read by rows.

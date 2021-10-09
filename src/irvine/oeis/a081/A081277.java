@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 // dhdop=[1(, 0)*] DELTA [1, 1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A081277 Square array of unsigned coefficients of Chebyshev polynomials of the first kind.

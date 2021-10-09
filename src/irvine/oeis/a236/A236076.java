@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A236076 A skewed version of triangular array A122075.

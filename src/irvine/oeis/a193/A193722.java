@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 // dhdop=[1(, 0)*] DELTA [2, 1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A193722 Triangular array: the fusion of (x+1)^n and (x+2)^n; see Comments for the definition of fusion.

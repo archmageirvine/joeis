@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 // dhdop=[0, 1(, 0)*] DELTA [1, 0, -1, 1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A123110 Triangle T(n,k), 0 &lt;= k &lt;= n, read by rows given by [0,1,0,0,0,0,0,0,0,0,...] DELTA [1,0,-1,1,0,0,0,0,0,0,...] where DELTA is the operator defined in A084938.

@@ -4,7 +4,7 @@ package irvine.oeis.a207;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A207815 Triangle of coefficients of Chebyshev's S(n,x-3) polynomials (exponents of x in increasing order).

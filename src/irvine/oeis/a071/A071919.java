@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 // dhdop=[1(, 0)*] DELTA [0, 1(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A071919 Number of monotone nondecreasing functions [n]-&gt;[m] for n&gt;=0, m&gt;=0, read by antidiagonals.

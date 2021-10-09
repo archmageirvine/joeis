@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A078802 Triangular array T given by T(n,k) = number of 01-words of length n containing k 1's, no three of which are consecutive.

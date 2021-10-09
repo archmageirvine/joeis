@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A137372 Triangle read by rows: coefficients of Fermat-Lucas polynomials.

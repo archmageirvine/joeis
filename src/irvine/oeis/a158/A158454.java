@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A158454 Riordan array (1/(1-x^2), x/(1+x)^2).

@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A120493 Triangle T(n,k) read by rows ; multiply row n of Pascal's triangle (A007318) by A024175(n).

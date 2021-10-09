@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A152570 Triangle T(n,k) read by rows: T(n,n) = -1, T(n,0) = 3^(n - 1), T(n,k) = -3^(n - k - 1), 1 &lt;= k &lt;= n - 1.

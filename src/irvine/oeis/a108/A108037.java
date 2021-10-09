@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A108037 Triangle read by rows: n-th row is n-th nonzero Fibonacci number repeated n+1 times.

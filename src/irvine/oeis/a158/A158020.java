@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A158020 Triangle of coefficients in expansion of (-1-x)^floor(n/2)(1-x)^ceiling(n/2).

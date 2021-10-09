@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 // dhdop=[1, 2(, 0)*] DELTA [1, 2(, 0)*]
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A055373 Invert transform applied twice to Pascal's triangle A007318.

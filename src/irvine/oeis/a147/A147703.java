@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 // 
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionTriangle;
+import irvine.oeis.triangle.GeneratingFunctionTriangle;
 
 /**
  * A147703 Triangle [1,1,1,0,0,0,...] DELTA [1,0,0,0,...] with Del\u00e9ham DELTA defined in A084938.

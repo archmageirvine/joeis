@@ -1744,3 +1744,4 @@ A051766 Number of chiral noninvertible knots with n crossings.
 A051767 Number of amphichiral (+) noninvertible knots with n crossings.
 A051768 Number of amphichiral (-) noninvertible knots with n crossings.
 A051769 Number of chiral invertible knots with n crossings
+A051837 Rank of Demjanenko matrix mod n-th prime

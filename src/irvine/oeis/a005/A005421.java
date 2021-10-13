@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005421 Number of numbers of complexity n.
+ * A005421 Number of numbers of complexity n, i.e., that can be built from n ones using + and *, and require at least that many ones.
  * @author Sean A. Irvine
  */
 public class A005421 implements Sequence {

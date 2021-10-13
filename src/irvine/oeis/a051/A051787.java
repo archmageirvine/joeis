@@ -17,7 +17,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A051787 Expected number of spins in a 2-player Dreidel game (rounded to nearest integer).
+ * A051787 Expected number of spins in a 2-player Dreidel game (rounded to nearest integer) (version 1).
  * @author Sean A. Irvine
  */
 public class A051787 implements Sequence {

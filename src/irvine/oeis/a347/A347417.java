@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A347417 allocated for Christoph B. Kassir.
+ * A347417 Decimal expansion of Product_{k&gt;=1} (1 + exp(-k)).
  * @author Sean A. Irvine
  */
 public class A347417 extends DecimalExpansionSequence {

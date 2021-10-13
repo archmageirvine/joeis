@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000204;
 
 /**
- * A005971 Sum of cubes of Lucas numbers.
+ * A005971 Partial sums of cubes of Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A005971 extends A000204 {

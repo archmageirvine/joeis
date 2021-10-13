@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000005;
 
 /**
- * A348157.
+ * A348157 Table read by antidiagonals: T(n,k) = number of factorizations of (n,k) into one or two pairs (i,j) with i &gt; 0, j &gt; 0 (and if i=1 then j=1).
  * @author Sean A. Irvine
  */
 public class A348157 implements Sequence {

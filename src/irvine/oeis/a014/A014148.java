@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a007.A007504;
 
 /**
- * A014148 Apply partial sum operator twice to sequence of primes.
+ * A014148 a(n) = Sum_{m=1..n} Sum_{k=1..m} prime(k).
  * @author Sean A. Irvine
  */
 public class A014148 extends PartialSumSequence {

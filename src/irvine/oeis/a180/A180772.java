@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000188;
 import irvine.oeis.a018.A018804;
 
 /**
- * A180772 Number of distinct solutions of sum{i=1..1}(x(2i-1)*x(2i)) = 0 (mod n), with x() only in 1..n-1.
+ * A180772 Number of distinct solutions to the congruence x(1)*x(2) == 0 (mod n), with x() only in 1..n-1.
  * @author Georg Fischer
  */
 public class A180772 implements Sequence {

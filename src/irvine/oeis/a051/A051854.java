@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import java.util.Arrays;
 
 /**
- * A051853.
+ * A051854 Table of solutions to all possible Chinese Remainder Equations x = a1 mod p1, x = a2 mod p2, ..., x = an mod pn, where p1 - pn are the first n primes and each a1 - an varies between 1 and (its respective) p-1, with the rightmost a (an) varying fastest.
  * @author Sean A. Irvine
  */
 public class A051854 extends A051853 {

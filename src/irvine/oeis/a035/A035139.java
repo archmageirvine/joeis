@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A035139 Digits of prime factors of n do not appear in n.
+ * A035139 Digits of prime factors of k do not appear in k.
  * @author Sean A. Irvine
  */
 public class A035139 implements Sequence {

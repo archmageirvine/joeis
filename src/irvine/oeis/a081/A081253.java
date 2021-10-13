@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081253 Numbers n such that A081252(m)/m^2 has a local minimum for m = n.
+ * A081253 Numbers k such that A081252(m)/m^2 has a local minimum for m = k.
  * @author Sean A. Irvine
  */
 public class A081253 extends LinearRecurrence {

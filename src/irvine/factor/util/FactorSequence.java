@@ -618,6 +618,23 @@ public final class FactorSequence {
   }
 
   /**
+   * Return the minimum exponent of any number in this factor sequence.
+   * @return minimum exponent
+   */
+  public int minExponent() {
+    if (mFactors.isEmpty()) {
+      return 0;
+    }
+    int min = Integer.MAX_VALUE;
+    for (final Factor f : mFactors.values()) {
+      if (f.mExponent < min) {
+        min = f.mExponent;
+      }
+    }
+    return min;
+  }
+
+  /**
    * Return the maximum exponent of any number in this factor sequence.
    * @return maximum exponent
    */

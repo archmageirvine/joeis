@@ -7,7 +7,7 @@ import irvine.oeis.a059.A059841;
 import irvine.oeis.a327.A327767;
 
 /**
- * A057211 n-th run has length n.
+ * A057211 Alternating runs of ones and zeroes, where the n-th run has length n.
  * @author Georg Fischer
  */
 public class A057211 extends BorderedTriangleRecurrence {

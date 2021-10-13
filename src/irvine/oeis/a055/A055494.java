@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A055494 Numbers n such that n^2 - n + 1 is prime.
+ * A055494 Numbers k such that k^2 - k + 1 is prime.
  * @author Georg Fischer
  */
 public class A055494 extends PrimePositionSubsequence {

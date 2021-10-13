@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A051734 a(n)=sum(min(i+1,n-i)*a(i)*(-1)^i,i=0..n-1), a(0)=1.
+ * A051734 a(n) = Sum_{i=0..n-1} (-1)^i * min(i+1,n-i) * a(i), a(0)=1.
  * @author Sean A. Irvine
  */
 public class A051734 extends MemorySequence {

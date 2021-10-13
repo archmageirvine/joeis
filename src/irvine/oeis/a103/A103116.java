@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005598;
 
 /**
- * A103116 a(n) = A005598(n) - 1.
+ * A103116 a(n) = Sum_{i=1..n} (n-i+1)*phi(i).
  * @author Georg Fischer
  */
 public class A103116 implements Sequence {

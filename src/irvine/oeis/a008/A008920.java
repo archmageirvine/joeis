@@ -16,7 +16,7 @@ public class A008920 implements Sequence {
   private long mN = -1;
 
   private boolean isReversibleSum(final long n) {
-    for (long k = 0; k <= 10 * n; ++k) {
+    for (long k = 0; k <= n * n; ++k) {
       if (n == Math.abs(k - LongUtils.reverse(k))) {
         return true;
       }

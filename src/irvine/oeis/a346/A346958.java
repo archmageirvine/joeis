@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A346958 allocated for Mohammed Yaseen.
+ * A346958 a(n) is the minimal number of cubes required to make a void of volume n.
  * @author Sean A. Irvine
  */
 public class A346958 implements Sequence, Keeper {

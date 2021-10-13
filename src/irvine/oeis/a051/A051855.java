@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A051853.
+ * A051855 Numbers n such that (n!)^4+1 is prime.
  * @author Sean A. Irvine
  */
 public class A051855 extends A000142 {

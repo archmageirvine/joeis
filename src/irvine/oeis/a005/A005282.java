@@ -25,6 +25,7 @@ public class A005282 extends MemorySequence {
       for (final Z a : this) {
         if (mSums.contains(a.add(n))) {
           ok = false;
+          break;
         }
       }
       if (ok) {

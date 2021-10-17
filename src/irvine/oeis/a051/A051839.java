@@ -52,7 +52,7 @@ public class A051839 implements Sequence {
     final IntegerPartition part = new IntegerPartition(++mN);
     int[] p;
     long cnt = 0;
-    while ((p =part.next()) != null) {
+    while ((p = part.next()) != null) {
       if (is(p)) {
         ++cnt;
       }

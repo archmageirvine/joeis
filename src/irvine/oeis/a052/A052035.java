@@ -2,20 +2,19 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.a000.A000040;
+import irvine.oeis.a002.A002385;
 
 /**
- * A052019 Sum of digits of prime p is substring of p.
+ * A052035 Palindromic primes whose sum of squared digits is also prime.
  * @author Sean A. Irvine
  */
-public class A052019 extends A000040 {
+public class A052035 extends A002385 {
 
   @Override
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final long sum = ZUtils.digitSum(p);
-      if (p.toString().contains(String.valueOf(sum))) {
+      if (mPrime.isPrime(ZUtils.digitSumSquares(p))) {
         return p;
       }
     }

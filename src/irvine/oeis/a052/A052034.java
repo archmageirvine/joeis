@@ -5,17 +5,16 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A052019 Sum of digits of prime p is substring of p.
+ * A052034 Primes such that the sum of the squares of their digits is also a prime.
  * @author Sean A. Irvine
  */
-public class A052019 extends A000040 {
+public class A052034 extends A000040 {
 
   @Override
   public Z next() {
     while (true) {
       final Z p = super.next();
-      final long sum = ZUtils.digitSum(p);
-      if (p.toString().contains(String.valueOf(sum))) {
+      if (mPrime.isPrime(ZUtils.digitSumSquares(p))) {
         return p;
       }
     }

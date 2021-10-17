@@ -19,6 +19,7 @@
 build.tmp
 .settings
 .idea/workspace.xml
+.idea/runConfigurations.xml
 .made
 out
 src/irvine/math/expression/Grammar.tokens

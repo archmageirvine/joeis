@@ -8,8 +8,8 @@ import irvine.math.z.Z;
  */
 public class A029614 extends A029600 {
 
-  private long mN = 0;
-  private long mM = 0;
+  private int mN = 0;
+  private int mM = 0;
 
   @Override
   public Z next() {

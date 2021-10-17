@@ -141,7 +141,7 @@ public class WrappedRecurrence extends Triangle {
    * @param seqPlus sequence that returns the constant value to be added to each element.
    */
   protected void setPlus(final Sequence seqPlus) {
-    mSeqPlus = seqPlus;;
+    mSeqPlus = seqPlus;
   }
 
   /**
@@ -209,7 +209,7 @@ public class WrappedRecurrence extends Triangle {
    */
   @Override
   protected Z compute(final int n, final int k) {
-    Z result = null;
+    Z result;
     if (k < 0 || k > n) { // outside, for safety only
       result = Z.ZERO;
     } else if (k == 0 || k == n) { 

@@ -1,26 +1,17 @@
 package irvine.oeis.a111;
-// manually 2021-10-01
+// manually 2021-10-13
 
 import irvine.math.z.Z;
-import irvine.oeis.BorderedTriangleRecurrence;
-import irvine.oeis.a005.A005843;
+import irvine.oeis.triangle.Triangle;
 
 /**
  * A111650 2n appears n times (n&gt;0). 
  * @author Georg Fischer
  */
-public class A111650 extends BorderedTriangleRecurrence {
+public class A111650 extends Triangle {
 
-  /** Construct the sequence. */
-  public A111650() {
-    super(new A005843(), new A005843(), new A005843());
-    skipLeft(1);
-    skipRight(1);
-    skipAdd(1);
-  }
-  
   @Override
   protected Z compute(final int n, final int k) {
-    return get(k - 1).add(get(k)).subtract(getA());
+    return Z.valueOf(n + 1).multiply2();
   }
 }

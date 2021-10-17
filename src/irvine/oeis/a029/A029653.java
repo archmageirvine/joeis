@@ -8,13 +8,13 @@ import irvine.oeis.Sequence;
  * A029653 Numbers in (2,1)-Pascal triangle (by row).
  * @author Sean A. Irvine
  */
-public class A029653 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A029653 extends MemoryFunction2<Integer, Z> implements Sequence {
 
-  private long mN = -1;
-  private long mM = 0;
+  private int mN = -1;
+  private int mM = 0;
 
   @Override
-  protected Z compute(final Long n, final Long m) {
+  protected Z compute(final Integer n, final Integer m) {
     if (n.equals(m)) {
       return Z.ONE;
     }

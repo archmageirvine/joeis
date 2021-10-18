@@ -5,7 +5,7 @@ import irvine.oeis.a036.A036563;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A204203 Triangle based on (0, 1/4, 1) averaging array.
+ * A204203 Triangle based on (0,1/4,1) averaging array.
  * @author Georg Fischer
  */
 public class A204203 extends WrappedRecurrence {

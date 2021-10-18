@@ -5,7 +5,7 @@ import irvine.oeis.a134.A134824;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A182533 A symmetrical triangle. Read by rows:  T(n,k) = 2*C(n-2,k-1) - C(n-2,k) - C(n-2,k-2), n &gt;= 2, 0 &lt;= k &lt;= n, with T(0, 0) = 0, T(1, 0) = T(1, 1) = 1.
+ * A182533 A symmetrical triangle. Read by rows:  T(n,k) = 2*C(n-2,k-1) - C(n-2,k) - C(n-2,k-2), n &gt;= 2, 0 &lt;= k &lt;= n, with T(0,0) = 0, T(1,0) = T(1,1) = 1.
  * @author Georg Fischer
  */
 public class A182533 extends WrappedRecurrence {

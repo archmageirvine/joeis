@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A059260 Triangle read by rows giving coefficient T(i,j) of x^i y^j in 1/(1-y-x*y-x^2) = 1/((1+x)(1-x-y)) for (i,j) = (0, 0), (1, 0), (0, 1), (2, 0), (1, 1), (0, 2), ...
+ * A059260 Triangle read by rows giving coefficient T(i,j) of x^i y^j in 1/(1-y-x*y-x^2) = 1/((1+x)(1-x-y)) for (i,j) = (0,0), (1,0), (0,1), (2,0), (1,1), (0,2), ...
  * @author Georg Fischer
  */
 public class A059260 extends WrappedRecurrence {

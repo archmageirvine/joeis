@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**
- * A108036 Triangle read by rows: the triangle in A108035 surrounded by a border of 0&apos;s.
+ * A108036 Triangle read by rows: the triangle in A108035 surrounded by a border of 0's.
  * @author Georg Fischer
  */
 public class A108036 extends WrappedConstantTriangle {

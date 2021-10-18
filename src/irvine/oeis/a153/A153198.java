@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006789;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**
- * A153198 Triangle read by rows, T(n,k) = A006789(k) if (n=k) otherwise zero. = (A006789 * 0^(n-k))
+ * A153198 Triangle read by rows, T(n,k) = A006789(k) if (n=k) otherwise zero. = (A006789 * 0^(n-k)).
  * @author Georg Fischer
  */
 public class A153198 extends WrappedConstantTriangle {

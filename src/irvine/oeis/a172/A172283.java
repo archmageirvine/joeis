@@ -5,7 +5,7 @@ import irvine.oeis.PaddingSequence;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A172283 (-9, 11) Pascal triangle.
+ * A172283 (-9,11) Pascal triangle.
  * @author Georg Fischer
  */
 public class A172283 extends WrappedRecurrence {

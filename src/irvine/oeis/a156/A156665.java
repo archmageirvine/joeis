@@ -5,7 +5,7 @@ import irvine.oeis.a052.A052551;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A156665 Triangle read by rows, A156663 * A007318
+ * A156665 Triangle read by rows, A156663 * A007318.
  * @author Georg Fischer
  */
 public class A156665 extends WrappedRecurrence {

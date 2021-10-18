@@ -5,7 +5,7 @@ import irvine.oeis.a123.A123932;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A132200 Numbers in (4, 4)-Pascal triangle .
+ * A132200 Numbers in (4,4)-Pascal triangle .
  * @author Georg Fischer
  */
 public class A132200 extends WrappedRecurrence {

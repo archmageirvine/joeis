@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001489;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A214292 Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k), 0 &lt; k &lt; n with T(n, 0) = n and T(n,n) = -n.
+ * A214292 Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k), 0 &lt; k &lt; n with T(n,0) = n and T(n,n) = -n.
  * @author Georg Fischer
  */
 public class A214292 extends WrappedRecurrence {

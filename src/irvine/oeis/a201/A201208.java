@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000034;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**
- * A201208 One 1, two 2&apos;s, three 1&apos;s, four 2&apos;s, five 1&apos;s, ...
+ * A201208 One 1, two 2's, three 1's, four 2's, five 1's, ...
  * @author Georg Fischer
  */
 public class A201208 extends WrappedConstantTriangle {

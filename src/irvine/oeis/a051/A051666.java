@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A051666 Rows of triangle formed using Pascal&apos;s rule except begin and end n-th row with n^2.
+ * A051666 Rows of triangle formed using Pascal's rule except begin and end n-th row with n^2.
  * @author Georg Fischer
  */
 public class A051666 extends WrappedRecurrence {

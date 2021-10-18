@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005408;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A134636 Triangle formed by Pascal&apos;s rule given borders = 2n+1.
+ * A134636 Triangle formed by Pascal's rule given borders = 2n+1.
  * @author Georg Fischer
  */
 public class A134636 extends WrappedRecurrence {

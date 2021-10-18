@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A130296 Triangle read by rows: T[i, 1]=i, T[i,j]=1 for 1 < j <= i = 1, 2, 3,...
+ * A130296 Triangle read by rows: T[i,1]=i, T[i,j]=1 for 1 &lt; j &lt;= i = 1,2,3,...
  * @author Georg Fischer
  */
 public class A130296 extends Triangle {

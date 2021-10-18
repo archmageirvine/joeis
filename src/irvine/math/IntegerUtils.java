@@ -435,5 +435,4 @@ public final class IntegerUtils {
     final String s = PADDING + Integer.toBinaryString(n);
     return s.substring(s.length() - Integer.SIZE);
   }
-
 }

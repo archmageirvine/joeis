@@ -5,7 +5,7 @@ import irvine.oeis.a079.A079978;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A118923 Triangle T(n,k) built by placing T(n, 1)=A000012(n) in the left edge, T(n,n)=A079978(n-1) on the right edge and filling the body with the Pascal recurrence T(n,k) = T(n-1,k) + T(n-1,k-1).
+ * A118923 Triangle T(n,k) built by placing T(n,1)=A000012(n) in the left edge, T(n,n)=A079978(n-1) on the right edge and filling the body with the Pascal recurrence T(n,k) = T(n-1,k) + T(n-1,k-1).
  * @author Georg Fischer
  */
 public class A118923 extends WrappedRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A093563 (6, 1)-Pascal triangle.
+ * A093563 (6,1)-Pascal triangle.
  * @author Georg Fischer
  */
 public class A093563 extends WrappedRecurrence {

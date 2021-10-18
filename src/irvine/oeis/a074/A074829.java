@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A074829 Triangle formed by Pascal&apos;s rule, except that the n-th row begins and ends with the n-th Fibonacci number.
+ * A074829 Triangle formed by Pascal's rule, except that the n-th row begins and ends with the n-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A074829 extends WrappedRecurrence {

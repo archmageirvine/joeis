@@ -5,7 +5,7 @@ import irvine.oeis.a057.A057427;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**
- * A073424 Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0, 1, 2, 3 ..., m = 0, 1, 2, 3, ... n.
+ * A073424 Triangle read by rows: T(m,n) = parity of 0^n + 0^m, n = 0,1,2,3 ..., m = 0,1,2,3, ... n.
  * @author Georg Fischer
  */
 public class A073424 extends WrappedConstantTriangle {

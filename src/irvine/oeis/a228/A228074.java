@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001477;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A228074 A Fibonacci-Pascal triangle read by rows: T(n, 0) = Fibonacci(n), T(n,n) = n and for n &gt; 0: T(n,k) = T(n-1,k-1) + T(n-1,k), 0 &lt; k &lt; n.
+ * A228074 A Fibonacci-Pascal triangle read by rows: T(n,0) = Fibonacci(n), T(n,n) = n and for n &gt; 0: T(n,k) = T(n-1,k-1) + T(n-1,k), 0 &lt; k &lt; n.
  * @author Georg Fischer
  */
 public class A228074 extends WrappedRecurrence {

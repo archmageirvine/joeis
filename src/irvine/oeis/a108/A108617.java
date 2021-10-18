@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A108617 Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k) for 0 &lt; k &lt; n, T(n, 0) = T(n,n) = n-th Fibonacci number.
+ * A108617 Triangle read by rows: T(n,k) = T(n-1,k-1) + T(n-1,k) for 0 &lt; k &lt; n, T(n,0) = T(n,n) = n-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A108617 extends WrappedRecurrence {

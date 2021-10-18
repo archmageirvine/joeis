@@ -5,7 +5,7 @@ import irvine.oeis.a024.A024000;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A080233 Triangle T(n,k) obtained by taking differences of consecutive pairs of row elements of Pascal&apos;s triangle A007318.
+ * A080233 Triangle T(n,k) obtained by taking differences of consecutive pairs of row elements of Pascal's triangle A007318.
  * @author Georg Fischer
  */
 public class A080233 extends WrappedRecurrence {

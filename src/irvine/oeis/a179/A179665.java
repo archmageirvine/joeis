@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.a030.A030516;
 
 /**
- * A179645 a(n) = prime(n)^9. 
+ * A179665 a(n) = prime(n)^9.
  * @author Georg Fischer
  */
 public class A179665 extends A030516 {

@@ -5,7 +5,7 @@ import irvine.oeis.a011.A011971;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A123346 Transpose image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken&apos;s array. 
+ * A123346 Mirror image of the Bell triangle A011971, which is also called the Pierce triangle or Aitken's array.
  * @author Georg Fischer
  */
 public class A123346 extends Transpose {

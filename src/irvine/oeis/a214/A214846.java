@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 
 import irvine.oeis.a216.A216201;
 /**
- * A214846 Square array T, read by antidiagonals: T(n,k) = 0 if n-k &gt;= 6 or if k-n &gt;= 6, T(k, 0) = T(0,k) = 1 if 0 &lt;= k &lt;= 5, T(n,k) = T(n-1,k) + T(n,k-1).
+ * A214846 Square array T, read by antidiagonals: T(n,k) = 0 if n-k &gt;= 6 or if k-n &gt;= 6, T(k,0) = T(0,k) = 1 if 0 &lt;= k &lt;= 5, T(n,k) = T(n-1,k) + T(n,k-1).
  * @author Georg Fischer
  */
 public class A214846 extends A216201 {

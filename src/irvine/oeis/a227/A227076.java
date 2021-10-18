@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000351;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A227076 A triangle formed like Pascal&apos;s triangle, but with 5^n on the borders instead of 1.
+ * A227076 A triangle formed like Pascal's triangle, but with 5^n on the borders instead of 1.
  * @author Georg Fischer
  */
 public class A227076 extends WrappedRecurrence {

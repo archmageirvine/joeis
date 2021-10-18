@@ -5,7 +5,7 @@ import irvine.oeis.a057.A057428;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A323211 Level 1 of Pascal&apos;s pyramid. T(n, k) triangle read by rows for n &gt;= 0 and 0 &lt;= k &lt;= n.
+ * A323211 Level 1 of Pascal's pyramid. T(n, k) triangle read by rows for n &gt;= 0 and 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A323211 extends WrappedRecurrence {

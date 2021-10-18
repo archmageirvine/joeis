@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A316939 Triangle read by rows formed using Pascal&apos;s rule except that n-th row begins and ends with Fibonacci(n+2).
+ * A316939 Triangle read by rows formed using Pascal's rule except that n-th row begins and ends with Fibonacci(n+2).
  * @author Georg Fischer
  */
 public class A316939 extends WrappedRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000007;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A144225 Bordered Pascal&apos;s triangle in rectangular format.
+ * A144225 Bordered Pascal's triangle in rectangular format.
  * @author Georg Fischer
  */
 public class A144225 extends WrappedRecurrence {

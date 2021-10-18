@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A216201 Square array T, read by antidiagonals : T(n,k) = 0 if n-k&gt;=3 or if k-n&gt;=4, T(2, 0) = T(1, 0) = T(0, 0) = T(0, 1) = T(0, 2) = T(0, 3) = 1, T(n,k) = T(n-1,k) + T(n,k-1). 
+ * A216201 Square array T, read by antidiagonals : T(n,k) = 0 if n-k&gt;=3 or if k-n&gt;=4, T(2,0) = T(1,0) = T(0,0) = T(0,1) = T(0,2) = T(0,3) = 1, T(n,k) = T(n-1,k) + T(n,k-1).
  * @author Georg Fischer
  */
 public class A216201 extends Triangle {

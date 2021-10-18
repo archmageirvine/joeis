@@ -5,7 +5,7 @@ import irvine.oeis.a011.A011557;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A164844 Generalized Pascal Triangle - satisfying the same recurrence as Pascal&apos;s triangle, but with a(n, 0)=1 and a(n,n)=10^n (instead of both being 1).
+ * A164844 Generalized Pascal Triangle - satisfying the same recurrence as Pascal's triangle, but with a(n,0)=1 and a(n,n)=10^n (instead of both being 1).
  * @author Georg Fischer
  */
 public class A164844 extends WrappedRecurrence {

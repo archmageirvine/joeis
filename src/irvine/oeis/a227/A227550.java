@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A227550 A triangle formed like Pascal&apos;s triangle, but with factorial(n) on the borders instead of 1.
+ * A227550 A triangle formed like Pascal's triangle, but with factorial(n) on the borders instead of 1.
  * @author Georg Fischer
  */
 public class A227550 extends WrappedRecurrence {

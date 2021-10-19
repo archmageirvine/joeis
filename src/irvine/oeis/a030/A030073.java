@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A030073 Numbers n such that n^2 is palindromic in base 15.
+ * A030073 Numbers k such that k^2 is palindromic in base 15.
  * @author Sean A. Irvine
  */
 public class A030073 implements Sequence {

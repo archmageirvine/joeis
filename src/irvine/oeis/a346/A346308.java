@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001951;
 import irvine.oeis.a022.A022838;
 
 /**
- * A346308 allocated for Clark Kimberling.
+ * A346308 Intersection of Beatty sequences for sqrt(2) and sqrt(3).
  * @author Sean A. Irvine
  */
 public class A346308 extends IntersectionSequence {

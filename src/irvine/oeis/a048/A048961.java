@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001203;
 
 /**
- * A048961 Positions of 5-digit terms in the continued fraction for pi (3 is position 0).
+ * A048961 Positions of 5-digit terms in the continued fraction for Pi (3 is position 0).
  * @author Sean A. Irvine
  */
 public class A048961 extends A001203 {

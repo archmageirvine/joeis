@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008472;
 
 /**
- * A075653 a(n) = n + sum of distinct prime factors of n.
+ * A075653 a(n) = n + sopf(n), where sopf is the sum of the distinct prime factors of n (A008472).
  * @author Georg Fischer
  */
 public class A075653 implements Sequence {

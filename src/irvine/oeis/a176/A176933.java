@@ -6,7 +6,7 @@ import irvine.oeis.PrimeSubsequence;
 
 
 /**
- * A176933 Primes of the form 3^n+100^n.
+ * A176933 Primes of the form 3^n + 100^n.
  * @author Georg Fischer
  */
 public class A176933 extends PrimeSubsequence {

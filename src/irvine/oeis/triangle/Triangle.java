@@ -30,25 +30,34 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
    * Generates an ordinary Pascal triangle (A007318).
    */
   public Triangle() {
-    initialize("");
+    initialize(new Z[] { Z.ONE });
+  }
+
+  /**
+   * Constructor with initial terms.
+   * @param inits list of initial terms
+   * Generates a triangle with Pascal's rule.
+   */
+  public Triangle(final String inits) {
+    initialize(inits.length() == 0 ? new Z[] { Z.ONE } : ZUtils.toZ(inits));
   }
 
   /**
    * Constructor with initial terms.
    * @param inits array of initial terms
-   * Generates an ordinary Pascal triangle (A007318).
+   * Generates a triangle with Pascal's rule.
    */
-  public Triangle(final String inits) {
-    initialize(inits);
+  public Triangle(final long... inits) {
+    initialize(ZUtils.toZ(inits));
   }
 
   /**
    * Initializes the data structure.
    * Collects the code that is common to all constructors.
    */
-  private void initialize(final String inits) {
-    mLinit = inits.length();
-    mInits = mLinit == 0 ? new Z[] { Z.ONE } : ZUtils.toZ(inits);
+  private void initialize(final Z[] inits) {
+    mInits = inits;
+    mLinit = mInits.length;
     mIn = -1; // index in mInits, starting with 0
     mRow = -1;
     mCol = -1; // start with first element T(0,0)
@@ -71,7 +80,7 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
    * @return T(n,k), or 0 for k &lt; 0 or k &gt; n.
    */
   protected Z get(final int n, final int k) {
-    if (k > n || k < 0 /*|| n < 0*/) {
+    if (k > n || k < 0) {
       return Z.ZERO;
     } else if (n == mRow && k <= mCol) {
       return mLastRow[k];
@@ -160,6 +169,16 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
         System.out.printf("%5s", term == null ? "null" : term.toString());
       }
       System.out.println();
+    }
+  }
+
+  /**
+   * Debugging output of the whole triangle
+   * @param n row number
+   */
+  public void print() {
+    for (int n = 0; n <= mRow; ++n) {
+      printRow(n);
     }
   }
 }

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A202692 implements Sequence {
 
-  protected final static int MAX_GRIX = 3;
+  protected static final int MAX_GRIX = 3;
   protected int mGrix;
   protected Z[] mOldRow;
   protected Z[] mNewRow;
@@ -77,7 +77,7 @@ public class A202692 implements Sequence {
 
   @Override
   public Z next() {
-    Z result = mNewRow[mGrix * (mRow + 1) + mCol];
+    final Z result = mNewRow[mGrix * (mRow + 1) + mCol];
     if (++mCol > mRow) {
       addRow();
     }

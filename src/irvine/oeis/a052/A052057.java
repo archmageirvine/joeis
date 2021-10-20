@@ -15,7 +15,7 @@ public class A052057 implements Sequence {
   private Z mA = Z.ONE;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
-  private boolean isPalindromeFree(final String s) {
+  static boolean isPalindromeFree(final String s) {
     // Do a cheap test first
     for (final String q : QUICK) {
       if (s.contains(q)) {
@@ -23,7 +23,7 @@ public class A052057 implements Sequence {
       }
     }
     for (int k = 0; k < s.length(); ++k) {
-      for (int j = k + 3; j < s.length(); ++j) {
+      for (int j = k + 3; j <= s.length(); ++j) {
         if (StringUtils.isPalindrome(s.substring(k, j))) {
           return false;
         }

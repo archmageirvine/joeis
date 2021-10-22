@@ -7,7 +7,6 @@ import irvine.oeis.HolonomicRecurrence;
  * A194019 E.g.f. = exp(-x*(x+4)/2)/(1-x)^3.
  * @author Georg Fischer
  */
-
 public class A194019 extends HolonomicRecurrence {
 
   /** Construct the sequence. */

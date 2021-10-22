@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A051990 Discriminants of real quadratic fields of ERD-type with class groups of exponent 2 and discriminants of the form D = r^2*k^2+k, k odd.
  * @author Georg Fischer
  */
-
 public class A051990 extends FiniteSequence {
 
   /** Construct the sequence. */

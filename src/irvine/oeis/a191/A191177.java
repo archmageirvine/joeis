@@ -12,7 +12,7 @@ public class A191177 extends A191126 {
   @Override
   public Z next() {
     while (true) {
-      final Z[] quot = super.next().add(3).divideAndRemainder(Z.valueOf(4));
+      final Z[] quot = super.next().add(3).divideAndRemainder(Z.FOUR);
       if (quot[1].isZero() && !quot[0].isZero()) {
         return quot[0];
       }

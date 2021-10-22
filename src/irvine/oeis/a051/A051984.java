@@ -7,7 +7,6 @@ import irvine.oeis.FiniteSequence;
  * A051984 Discriminants of real quadratic fields with class number 2 and related continued fraction period length of 19.
  * @author Georg Fischer
  */
-
 public class A051984 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -34,6 +34,18 @@ public class PaddingSequence implements Sequence {
     mRList = ZUtils.toZ(rightList);
   }
 
+  /**
+   * Construct the sequence.
+   * @param leftList the left list
+   * @param rightList the right list
+   */
+  public PaddingSequence(final String leftList, final String rightList) {
+    mLList = ZUtils.toZ(leftList);
+    mLLen = mLList.length;
+    mRList = ZUtils.toZ(rightList);
+    mRLen = mRList.length;
+  }
+
   @Override
   public Z next() {
     ++mN;

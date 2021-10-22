@@ -257,7 +257,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
    * Get the index of the current term of the sequence.
    * @return the index starting with the offset of the sequence
    */
-  protected int getIndex() {
+  public int getIndex() {
     return mN;
   } // getIndex
 
@@ -265,7 +265,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
    * Get the numerator of the convergent for the continued fraction.
    * @return numerator of the convergent
    */
-  protected Z getNumerator() {
+  public Z getNumerator() {
     return mC1;
   } // getNumerator
 
@@ -273,7 +273,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
    * Get the denominator of the convergent for the continued fraction.
    * @return denominator of the convergent
    */
-  protected Z getDenominator() {
+  public Z getDenominator() {
     return mD1;
   } // getDenominator
 

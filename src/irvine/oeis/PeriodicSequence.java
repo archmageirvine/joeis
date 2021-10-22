@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 
 /**
  * Base case for certain periodic sequences generated verbatim from a list.
@@ -39,6 +40,14 @@ public class PeriodicSequence implements Sequence {
    */
   public PeriodicSequence(final List<Z> seq) {
     mSeq = seq.toArray(new Z[0]);
+  }
+
+  /**
+   * Construct the sequence.
+   * @param seq the values
+   */
+  public PeriodicSequence(final String seq) {
+    mSeq = ZUtils.toZ(seq);
   }
 
   @Override

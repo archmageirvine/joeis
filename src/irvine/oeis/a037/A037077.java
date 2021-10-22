@@ -20,8 +20,8 @@ public class A037077 extends DecimalExpansionSequence {
           return Z.ZERO;
         }
         //int n = -p;
-        // Following precision might not be enough, if a problem is encountered the 400 can be made smaller.
-        final int n = 1 - 131 * p / 400;
+        // Following precision might not be enough, if a problem is encountered the 350 can be made smaller.
+        final int n = 1 - 131 * p / 350;
         final CR[] a = new CR[n];
         a[0] = CR.ONE;
         for (int m = 1; m < a.length; ++m) {

@@ -19,7 +19,7 @@ public class A000171 implements Sequence {
   private Z period(final int[] k) {
     Z c = Z.ONE;
     for (int j = 1; j < k.length; ++j) {
-      c = c.multiply(mFactorial.factorial(k[j])).multiply(Z.valueOf(4 * j).pow(k[j]));
+      c = c.multiply(mFactorial.factorial(k[j])).multiply(Z.valueOf(4L * j).pow(k[j]));
     }
     return c;
   }

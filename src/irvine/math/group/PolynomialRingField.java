@@ -70,7 +70,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
    * @return integral
    */
   public Polynomial<E> integrate(final Polynomial<E> p) {
-    final Polynomial<E> t = new Polynomial<>(mIndeterminate, mZero, mOne); // we modify this so it can just be zero()
+    final Polynomial<E> t = empty();
     t.add(mZero);
     E kk = mOne;
     for (int k = 0; k < p.size(); ++k, kk = mElementField.add(kk, mOne)) {
@@ -212,11 +212,11 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
    * Construct the series expansion of the ratio of two polynomials.
    * @param num numerator
    * @param den denominator
-   * @param order order to extend series to
+   * @param degree degree to extend series to
    * @return the resulting polynomial series
    * @throws ArithmeticException if <code>den=0</code>.
    */
-  public Polynomial<E> series(final Polynomial<E> num, final Polynomial<E> den, final int order) {
+  public Polynomial<E> series(final Polynomial<E> num, final Polynomial<E> den, final int degree) {
     if (zero().equals(den)) {
       throw new ArithmeticException();
     }
@@ -228,7 +228,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
     }
     final E d = den.coeff(offset);
     final ArrayList<E> a = new ArrayList<>();
-    for (int k = 0; k <= order; ++k) {
+    for (int k = 0; k <= degree; ++k) {
       E s = num.coeff(k + offset);
       for (int j = 0; j < k; ++j) {
         s = mElementField.subtract(s, mElementField.multiply(a.get(j), den.coeff(k + offset - j)));

@@ -3,6 +3,7 @@ package irvine.oeis.a052;
 import java.util.Arrays;
 
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -16,32 +17,30 @@ import irvine.oeis.Sequence;
  */
 public class A052121 implements Sequence {
 
-  private static final PolynomialRingField<Q> Y_RING = new PolynomialRingField<>("y", Rationals.SINGLETON);
-  private static final PolynomialRingField<Polynomial<Q>> X_RING = new PolynomialRingField<>(Y_RING);
-  private static final Polynomial<Q> Y1 = Y_RING.create(Arrays.asList(Q.NEG_ONE, Q.ONE));
-
   private final MemoryFactorial mF = new MemoryFactorial();
-  private Polynomial<Polynomial<Q>> mSum = X_RING.one();
-  private Polynomial<Polynomial<Q>> mEgf = X_RING.zero();
+  private Polynomial<Q> mRow = null;
   private int mN = 0;
   private int mM = 0;
 
   @Override
   public Z next() {
-    final int lim = (mN - 1) * (mN - 2) / 2 + 1;
+    final int lim = mN == 0 ? 1 : (mN - 1) * (mN - 2) / 2 + 1;
     if (++mM >= lim) {
+      // We need to recompute the entire sum with higher degree of expansion
       ++mN;
+      final int max = (mN - 1) * (mN - 2) / 2 + 1;
       mM = 0;
-      final Polynomial<Q> y = Y_RING.series(Y_RING.one(), Y_RING.pow(Y1, mN), lim).shift(mN * (mN - 1) / 2);
-      mSum = X_RING.add(mSum, X_RING.monomial(Y_RING.divide(y, new Q(mF.factorial(mN))), mN));
-      System.out.println("sum=" + mSum);
-      final Polynomial<Polynomial<Q>> log = X_RING.log(mSum, mN);
-      mEgf = X_RING.multiply(log, Y1);
-      System.out.println(mEgf);
+      final PolynomialRingField<Q> yRing = new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, max);
+      final PolynomialRingField<Polynomial<Q>> xRing = new PolynomialRingField<>(yRing);
+      final Polynomial<Q> y1 = yRing.create(Arrays.asList(Q.NEG_ONE, Q.ONE));
+      Polynomial<Polynomial<Q>> sum = xRing.zero(); // omit 1+ because we want log1p
+      for (int k = 1; k <= mN; ++k) {
+        final Polynomial<Q> y = yRing.series(yRing.one().shift(k * (k - 1) / 2), yRing.pow(y1, k, max), max);
+        sum = xRing.add(sum, xRing.monomial(yRing.divide(y, new Q(mF.factorial(k))), k));
+      }
+      final Polynomial<Polynomial<Q>> log = xRing.log1p(sum, mN + 1);
+      mRow = xRing.multiply(log, y1).coeff(mN);
     }
-    return mEgf.coeff(mN).coeff(mM).multiply(mF.factorial(mN)).toZ();
+    return mRow.coeff(mM).multiply(mF.factorial(mN)).toZ();
   }
 }
-/*
-rows = 8; egf = (y - 1)*Log[Sum[(y^Binomial[n, 2]*(x^n/n!))/(y - 1)^n, {n, 0, rows + 1}]]; t = CoefficientList[ Series[egf, {x, 0, rows}, {y, 0, 3*rows}], {x, y}] ; Table[(n - 1)!*t[[n, k]], {n, 2, rows + 1}, {k, 1, Binomial[n - 2, 2] + 1}] // Flatten
- */

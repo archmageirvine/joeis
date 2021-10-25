@@ -14,13 +14,22 @@ public class DegreeLimitedPolynomialRingField<E> extends PolynomialRingField<E> 
 
   /**
    * Construct a new polynomial ring for polynomials of a specified maximum degree.
-   *
+   * @param indeterminate the indeterminate
+   * @param elementField ring of underlying elements
+   * @param maxDegree maximum degree
+   */
+  public DegreeLimitedPolynomialRingField(final String indeterminate, final Field<E> elementField, final int maxDegree) {
+    super(indeterminate, elementField);
+    mMaxDegree = maxDegree;
+  }
+
+  /**
+   * Construct a new polynomial ring for polynomials of a specified maximum degree.
    * @param elementField ring of underlying elements
    * @param maxDegree maximum degree
    */
   public DegreeLimitedPolynomialRingField(final Field<E> elementField, final int maxDegree) {
-    super(elementField);
-    mMaxDegree = maxDegree;
+    this("x", elementField, maxDegree);
   }
 
   @Override

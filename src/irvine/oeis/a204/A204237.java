@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A204237 Symmetric matrix given by f(i,j)=max(3i-j, 3j-i).
+ * A204237 Symmetric matrix given by f(i,j)=max(3i-j,3j-i).
  *
  * @author Georg Fischer
  */

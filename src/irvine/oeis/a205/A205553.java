@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A205553 Square array by antidiagonals: C(max(i-1, 2j-2),min(i-1, 2j-2)), i&gt;=1, j&gt;=1.
+ * A205553 Square array by antidiagonals: C(max(i-1,2j-2),min(i-1,2j-2)), i&gt;=1, j&gt;=1.
  *
  * @author Georg Fischer
  */

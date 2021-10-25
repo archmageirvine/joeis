@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a203.A203991;
 
 /**
- * A204182 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of (f(i,j)), where f(i, 1)=f(1,j)=1, f(i,i)=2i-1; f(i,j)=0 otherwise; as in A204181.
+ * A204182 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of (f(i,j)), where f(i,1)=f(1,j)=1, f(i,i)=2i-1; f(i,j)=0 otherwise; as in A204181.
  *
  * @author Georg Fischer
  */

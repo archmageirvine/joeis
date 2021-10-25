@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A204028 Symmetric matrix based on f(i,j)=min(3i-2, 3j-2), by antidiagonals.
+ * A204028 Symmetric matrix based on f(i,j)=min(3i-2,3j-2), by antidiagonals.
  *
  * @author Georg Fischer
  */

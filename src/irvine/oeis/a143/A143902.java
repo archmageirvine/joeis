@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A143902 Rectangular array R by antidiagonals: R(m,n) = number of black squares
+ * A143902 Rectangular array R by antidiagonals: R(m,n) = number of black squares.
  *
  * @author Georg Fischer
  */

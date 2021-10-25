@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308158 Sum of the smallest sides of all integer-sided isosceles triangles with perimeter n.
+ * A308158 Sum of the smallest side lengths of all integer-sided isosceles triangles with perimeter n.
  * @author Georg Fischer
  */
 public class A308158 extends HolonomicRecurrence {

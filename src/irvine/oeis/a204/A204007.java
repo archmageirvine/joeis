@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a203.A203991;
 
 /**
- * A204007 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of min{2i+j-2, 2j+i-2} (A204006).
+ * A204007 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of min{2i+j-2,2j+i-2} (A204006).
  *
  * @author Georg Fischer
  */

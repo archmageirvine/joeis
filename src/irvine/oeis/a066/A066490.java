@@ -6,7 +6,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a079.A079261;
 
 /**
- * A066490 Number of primes of the form 4m+3 &lt;= n.
+ * A066490 Number of primes of the form 4m+3 that are &lt;= n.
  *
  * @author Georg Fischer
  */

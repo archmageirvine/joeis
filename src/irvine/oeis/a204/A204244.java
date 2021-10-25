@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A204244 Symmetric matrix given by f(i, 1)=1, f(1,j)=1, f(i,i)=i! and f(i,j)=0 otherwise.
+ * A204244 Symmetric matrix given by f(i,1)=1, f(1,j)=1, f(i,i)=i! and f(i,j)=0 otherwise.
  *
  * @author Georg Fischer
  */

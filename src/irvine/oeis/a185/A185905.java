@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A185905 Rectangular array binomial(k+3, 4)*binomial(n+3, 4), by antidiagonals.
+ * A185905 Rectangular array binomial(k+3,4)*binomial(n+3,4), by antidiagonals.
  *
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.a157.A157454;
 import irvine.oeis.a203.A203991;
 
 /**
- * A204021 Triangle read by rows: row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of min(2i-1, 2j-1) (A157454).
+ * A204021 Triangle read by rows: row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of min(2i-1,2j-1) (A157454).
  *
  * @author Georg Fischer
  */

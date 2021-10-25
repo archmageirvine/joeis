@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052787 A simple grammar. Product of 5 consecutive integers.
+ * A052787 Product of 5 consecutive integers.
  * @author Sean A. Irvine
  */
 public class A052787 extends LinearRecurrence {

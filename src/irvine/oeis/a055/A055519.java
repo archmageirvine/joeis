@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055519 a_{k+1} = 9*a_k + 33*a_{k-1} - 76*a_{k-2} - 33*a_{k-3} + 9*a_{k-4} + a_{k-5}, a_1=1, a_2=2, a_3=35, a_4=312, a_5=3779, a_6=41590.
+ * A055519 a(n) = 9*a(n-1) + 33*a(n-2) - 76*a(n-3) - 33*a(n-4) + 9*a(n-5) + a(n-6), a(0)=a(1)=1, a(2)=2, a(3)=35, a(4)=312, a(5)=3779.
  * @author Sean A. Irvine
  */
 public class A055519 extends LinearRecurrence {

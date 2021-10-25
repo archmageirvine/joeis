@@ -6,7 +6,7 @@ import irvine.util.array.DynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A052059 First palindromic substring of length n occurring in 2^n.
+ * A052059 Least k such that the longest palindromic substring (without leading zeros) contained in 2^k has length n.
  * @author Sean A. Irvine
  */
 public class A052059 implements Sequence {

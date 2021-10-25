@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A144216 C(m, 2)+C(n, 2), m&gt;=1, n&gt;=1: a rectangular array R read by antidiagonals.
+ * A144216 C(m,2)+C(n,2), m&gt;=1, n&gt;=1: a rectangular array R read by antidiagonals.
  *
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a203.A203991;
 
 /**
- * A204029 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of f(i,j)=min(3i-2, 3j-2) (A204028).
+ * A204029 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of f(i,j)=min(3i-2,3j-2) (A204028).
  *
  * @author Georg Fischer
  */

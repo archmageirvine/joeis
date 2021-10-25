@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A205545 Symmetric matrix by antidiagonals:  C(max(3i, 3j),min(3i, 3j)), i&gt;=0, j&gt;=0.
+ * A205545 Symmetric matrix by antidiagonals:  C(max(3i,3j),min(3i,3j)), i&gt;=0, j&gt;=0.
  *
  * @author Georg Fischer
  */

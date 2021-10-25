@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A203991 Array: row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of {(i+j)*min(i,j)} (A203990).
+ * A203991 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of {(i+j)*min(i,j)} (A203990).
  *
  * @author Georg Fischer
  */

@@ -6,7 +6,8 @@ import irvine.math.z.Z;
  * Rearrange a matrix M as a {@link Triangle} by enumerating the antidiagonals
  * in descending (NE -&gt; SW) or ascending (SW -&gt; NE) order.
  * The upper left corner of the matrix is <code>M(row0,col0)</code>,
- * while the resulting Triangle always starts with <code>T(0,0)</code>.
+ * while the resulting Triangle always starts with <code>T(0, 0)</code>.
+ *
  * @author Georg Fischer
  */
 public class UpperLeftTriangle extends Triangle {
@@ -47,11 +48,12 @@ public class UpperLeftTriangle extends Triangle {
   /**
    * Computes an element of the matrix.
    * The indices are shifted with <code>mRow0, mCol0</code>.
+   *
    * @param i shifted row number
    * @param j shifted column number
-   * @return M(i,j)
+   * @return M(i, j)
    */
-  protected Z matrixElement(final int i, final int j) {
+  public Z matrixElement(final int i, final int j) {
     return Z.valueOf(i + j);
   }
 

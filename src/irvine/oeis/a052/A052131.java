@@ -21,7 +21,7 @@ public class A052131 extends DecimalExpansionSequence {
         Z a = seq.next();
         Z z = Z.ZERO;
         while (true) {
-          Z b = a;
+          final Z b = a;
           a = seq.next();
           final Z t = CR.valueOf(new Q(a, b)).getApprox(precision);
           if (t.equals(z)) {

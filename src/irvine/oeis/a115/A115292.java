@@ -4,13 +4,13 @@ package irvine.oeis.a115;
 import irvine.oeis.PaddingSequence;
 import irvine.oeis.a202.A202670;
 /**
- * A115281 Correlation triangle for the sequence 2-0^n.
+ * A115292 Correlation triangle for (1+x)^3/(1-x).
  * @author Georg Fischer
  */
-public class A115281 extends A202670 {
+public class A115292 extends A202670 {
 
   /** Construct the sequence. */
-  public A115281() {
-    super(new PaddingSequence("1", "2"), 0);
+  public A115292() {
+    super(new PaddingSequence("1, 4, 7", "8"), 0);
   }
 }

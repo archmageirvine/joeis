@@ -15,8 +15,8 @@ public class A052104 extends MemoryFunction2<Integer, Q> implements Sequence {
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = new MemoryFactorial();
-  private int mN = -1;
+  protected final MemoryFactorial mF = new MemoryFactorial();
+  protected int mN = -1;
 
   @Override
   protected Q compute(final Integer n, final Integer m) {

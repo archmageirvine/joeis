@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A087401 Triangle of n*r-binomial(r+1, 2). 
+ * A087401 Triangle of n*r-binomial(r+1,2).
  * @author Georg Fischer
  */
 public class A087401 extends Triangle {

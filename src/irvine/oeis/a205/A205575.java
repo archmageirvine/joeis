@@ -3,7 +3,7 @@ package irvine.oeis.a205;
 
 import irvine.oeis.a090.A090171;
 /**
- * A205575 Triangle read by rows, related to Pascal&apos;s triangle.
+ * A205575 Triangle read by rows, related to Pascal's triangle.
  * @author Georg Fischer
  */
 public class A205575 extends A090171 {

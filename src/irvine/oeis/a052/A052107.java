@@ -15,7 +15,7 @@ public class A052107 implements Sequence {
   // After Andrew Howroyd
 
   protected final MemoryFactorial mF = new MemoryFactorial();
-  private int mN = 0;
+  protected int mN = 0;
 
   protected Z permCount(final int[] v, final int mult) {
     Z m = Z.ONE;

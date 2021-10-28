@@ -16,11 +16,11 @@ public class A333361 extends A052107 {
 
   // After Andrew Howroyd
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;
   private int mM = 0;
 
-  private Polynomial<Z> edgesPoly(final int[] v, final int degree) {
+  protected Polynomial<Z> edgesPoly(final int[] v, final int degree) {
     Polynomial<Z> prod = RING.one();
     for (int i = 1; i < v.length; ++i) {
       for (int j = 0; j < i; ++j) {

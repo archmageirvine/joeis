@@ -14,10 +14,6 @@ public class A230441 implements Sequence {
 
   final Sequence mA000041 = new A000041();
   final Sequence mA015128 = new A015128();
-  /** Construct the sequence. */
-  public A230441() {
-  }
-  
   @Override
   public Z next() {
     return mA015128.next().subtract(mA000041.next());

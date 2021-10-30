@@ -14,10 +14,6 @@ public class A182582 implements Sequence {
 
   final Sequence mA096268 = new A096268();
   final Sequence mA182581 = new A182581();
-  /** Construct the sequence. */
-  public A182582() {
-  }
-  
   @Override
   public Z next() {
     return mA096268.next().add(mA182581.next()).mod(Z.TWO);

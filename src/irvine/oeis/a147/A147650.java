@@ -10,10 +10,6 @@ import irvine.oeis.a061.A061040;
  */
 public class A147650 extends A061040 {
 
-  /** Construct the sequence. */
-  public A147650() {
-  }
-  
   @Override
   public Z next() {
     final Z result = super.next();

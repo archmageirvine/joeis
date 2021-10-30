@@ -13,10 +13,6 @@ public class A328147 implements Sequence {
 
   final Sequence mA025586 = new SkipSequence(new A025586(), 2);
 
-  /** Construct the sequence. */
-  public A328147() {
-  }
-  
   @Override
   public Z next() {
     return mA025586.next().divide(Z.FOUR);

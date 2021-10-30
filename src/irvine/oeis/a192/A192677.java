@@ -13,10 +13,6 @@ import irvine.oeis.a000.A000085;
  */
 public class A192677 extends A000085 {
 
-  /** Construct the sequence. */
-  public A192677() {
-  }
-  
   @Override
   public Z next() {
     return CR.valueOf(super.next()).sqrt().floor();

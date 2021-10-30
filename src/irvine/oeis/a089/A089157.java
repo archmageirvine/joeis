@@ -12,10 +12,6 @@ import irvine.oeis.a022.A022007;
 public class A089157 implements Sequence {
 
   final Sequence mA022007 = new A022007();
-  /** Construct the sequence. */
-  public A089157() {
-  }
-  
   @Override
   public Z next() {
     return mA022007.next().subtract(Z.SEVEN).divide(Z.valueOf(30));

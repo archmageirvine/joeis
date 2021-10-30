@@ -10,12 +10,6 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A193592 extends Triangle {
 
-  /**
-   * Construct the sequence.
-   */
-  public A193592() {
-  }
-
   @Override
   public Z compute(final int n, final int k) {
     return k == 0 ? Z.ONE : Z.valueOf(n - k + 1);

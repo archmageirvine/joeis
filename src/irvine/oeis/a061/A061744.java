@@ -13,10 +13,6 @@ import irvine.oeis.a000.A000959;
 public class A061744 implements Sequence {
 
   final Sequence mA000959 = new A000959();
-  /** Construct the sequence. */
-  public A061744() {
-  }
-  
   @Override
   public Z next() {
     return Z.TWO.pow(mA000959.next()).subtract(Z.ONE);

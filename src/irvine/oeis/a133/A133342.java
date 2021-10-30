@@ -13,10 +13,6 @@ public class A133342 extends A033308 {
 
   protected int mN = -1;
 
-  /** Construct the sequence. */
-  public A133342() {
-  }
-
   @Override
   public Z next() {
     ++mN;

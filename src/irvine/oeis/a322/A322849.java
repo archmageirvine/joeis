@@ -18,10 +18,6 @@ public class A322849 implements Sequence {
   final Sequence mA065712 = new A065712();
   final Sequence mA065715 = new A065715();
   final Sequence mA065719 = new A065719();
-  /** Construct the sequence. */
-  public A322849() {
-  }
-  
   @Override
   public Z next() {
     return mA065712.next().add(mA065710.next()).add(mA065715.next()).add(mA065719.next());

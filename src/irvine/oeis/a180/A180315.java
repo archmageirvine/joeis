@@ -14,10 +14,6 @@ public class A180315 implements Sequence {
 
   final Sequence mA000367 = new A000367();
   final Sequence mA002445 = new A002445();
-  /** Construct the sequence. */
-  public A180315() {
-  }
-  
   @Override
   public Z next() {
     return mA000367.next().abs().mod(mA002445.next());

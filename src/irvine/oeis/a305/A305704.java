@@ -11,10 +11,6 @@ import irvine.oeis.a051.A051518;
 public class A305704 implements Sequence {
 
   private final Sequence mA051518 = new A051518();
-  /** Construct the sequence. */
-  public A305704() {
-  }
-  
   @Override
   public Z next() {
     return mA051518.next().divide(Z.TWO);

@@ -12,10 +12,6 @@ import irvine.oeis.a000.A000217;
  */
 public class A086072 extends A000217 {
 
-  /** Construct the sequence. */
-  public A086072() {
-  }
-  
   @Override
   public Z next() {
     return Z.valueOf(ZUtils.digitCounts(super.next(), 10)[1]);

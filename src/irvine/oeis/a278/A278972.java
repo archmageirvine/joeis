@@ -12,10 +12,6 @@ import irvine.oeis.a001.A001097;
 public class A278972 implements Sequence {
 
   final Sequence mA001097 = new A001097();
-  /** Construct the sequence. */
-  public A278972() {
-  }
-  
   @Override
   public Z next() {
     return Z.TWO.multiply(mA001097.next());

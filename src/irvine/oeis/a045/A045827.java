@@ -13,10 +13,6 @@ import irvine.oeis.a005.A005872;
 public class A045827 implements Sequence {
 
   final Sequence mA005872 = new A005872();
-  /** Construct the sequence. */
-  public A045827() {
-  }
-  
   @Override
   public Z next() {
     return mA005872.next().divide(Z.SIX);

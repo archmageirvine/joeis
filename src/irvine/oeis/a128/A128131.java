@@ -14,10 +14,6 @@ public class A128131 implements Sequence {
 
   final Sequence mA000096 = new A000096();
   final Sequence mA128130 = new A128130();
-  /** Construct the sequence. */
-  public A128131() {
-  }
-  
   @Override
   public Z next() {
     return Z.TWO.pow(mA000096.next()).multiply(mA128130.next());

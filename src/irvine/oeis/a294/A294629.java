@@ -10,10 +10,6 @@ import irvine.oeis.Sequence;
 public class A294629 implements Sequence {
 
   private final Sequence mA294016 = new A294016();
-  /** Construct the sequence. */
-  public A294629() {
-  }
-  
   @Override
   public Z next() {
     return Z.FOUR.multiply(mA294016.next());

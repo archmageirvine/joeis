@@ -14,10 +14,6 @@ public class A261971 implements Sequence {
 
   final Sequence mA000040 = new A000040();
   final Sequence mA001248 = new A001248();
-  /** Construct the sequence. */
-  public A261971() {
-  }
-  
   @Override
   public Z next() {
     return Z.SIX.multiply(mA001248.next()).subtract(Z.valueOf(12).multiply(mA000040.next())).add(Z.EIGHT);

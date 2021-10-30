@@ -10,10 +10,6 @@ import irvine.oeis.Sequence;
 public class A249720 implements Sequence {
 
   private final Sequence mA249719 = new A249719();
-  /** Construct the sequence. */
-  public A249720() {
-  }
-  
   @Override
   public Z next() {
     return Z.TWO.multiply(mA249719.next());

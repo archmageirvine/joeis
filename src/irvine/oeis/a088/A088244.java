@@ -13,10 +13,6 @@ public class A088244 implements Sequence {
 
   private final Sequence mA011371 = new A011371();
   private final Sequence mA054861 = new A054861();
-  /** Construct the sequence. */
-  public A088244() {
-  }
-  
   @Override
   public Z next() {
     return mA011371.next().add(Z.ONE).multiply(mA054861.next().add(Z.ONE));

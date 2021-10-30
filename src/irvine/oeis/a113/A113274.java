@@ -10,7 +10,7 @@ import irvine.oeis.a036.A036063;
  */
 public class A113274 implements Sequence {
 
-  final Sequence mA036063 = new A036063();
+  private final Sequence mA036063 = new A036063();
 
   @Override
   public Z next() {

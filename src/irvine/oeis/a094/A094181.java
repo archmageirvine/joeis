@@ -11,8 +11,8 @@ import irvine.oeis.a051.A051953;
  */
 public class A094181 implements Sequence {
 
-  final Sequence mA049820 = new A049820();
-  final Sequence mA051953 = new A051953();
+  private final Sequence mA049820 = new A049820();
+  private final Sequence mA051953 = new A051953();
   /** Construct the sequence. */
   public A094181() {
   }

@@ -10,7 +10,7 @@ import irvine.oeis.a061.A061357;
  */
 public class A154787 implements Sequence {
 
-  final Sequence mA061357 = new A061357();
+  private final Sequence mA061357 = new A061357();
   protected long mN;
   /** Construct the sequence. */
   public A154787() {

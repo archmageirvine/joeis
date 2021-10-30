@@ -9,8 +9,8 @@ import irvine.oeis.Sequence;
  */
 public class A136800 implements Sequence {
 
-  final Sequence mA136798 = new A136798();
-  final Sequence mA136799 = new A136799();
+  private final Sequence mA136798 = new A136798();
+  private final Sequence mA136799 = new A136799();
   /** Construct the sequence. */
   public A136800() {
   }

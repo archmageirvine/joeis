@@ -19,7 +19,7 @@ public class A006932 implements Sequence {
   {
     mCoeff.add(Z.ONE);
   }
-  private Z mF = Z.ONE;
+  protected Z mF = Z.ONE;
   private int mN = 0;
 
   @Override

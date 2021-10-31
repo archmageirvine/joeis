@@ -1748,3 +1748,4 @@ A051837 Rank of Demjanenko matrix mod n-th prime
 A052193 Positive integers sorted by length of name in English and alphabetical order.
 A052194 Positive integers sorted by length of name in English and numerical order
 A052196 Largest natural number less than 10^66 requiring exactly n letters in English
+A052253 Triangle T(n,k) (n >= 1, k >= 1) giving filtration of bigrading of Hopf algebra of rooted trees (might be possible -- see paper).

@@ -73,7 +73,7 @@ public class A028657 extends MemoryFunction2<Integer, Z> implements Sequence {
     return sum.toZ();
   }
 
-  private Z a(final int n, final int k) {
+  protected Z a(final int n, final int k) {
     return get(Math.min(n, k), Math.abs(n - k));
   }
 

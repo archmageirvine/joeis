@@ -20,7 +20,7 @@ import irvine.util.string.StringUtils;
  */
 public class LimitedSumOfLikePowersSequence implements Sequence {
 
-  // A version of SumOfLikePowerSequence that can target specific numbers
+  // A version of SumOfLikePowerSequence that can target a specific number
   // of representations.
 
   // We maintain a sorted map, mA, of terms yet to be output.   We also keep
@@ -31,7 +31,7 @@ public class LimitedSumOfLikePowersSequence implements Sequence {
   // possible terms involving mM^p and add them into the map mA.
   // Depending on parameters we might sometimes compute beforehand more
   // terms than strictly necessary.
-  // Finally we return (and remove) the first element from mA.
+  // Finally, we return (and remove) the first element from mA.
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final TreeMap<Z, MutableInteger> mA = new TreeMap<>();

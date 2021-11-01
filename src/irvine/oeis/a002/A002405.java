@@ -12,6 +12,6 @@ public class A002405 extends A002402 {
 
   @Override
   public Z next() {
-    return alefStar(++mN).abs();
+    return alefStar(++mN);
   }
 }

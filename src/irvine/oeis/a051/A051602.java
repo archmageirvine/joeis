@@ -19,7 +19,7 @@ public class A051602 implements Sequence {
   // 2. All required points fit in a square of width ceil(sqrt(n)).
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private int mN = 0;
+  private int mN = -1;
   private final HashSet<Point> mCurrentPoints = new HashSet<>();
   private long mBestCount = 0;
   private HashSet<Point> mBestPoints = null;

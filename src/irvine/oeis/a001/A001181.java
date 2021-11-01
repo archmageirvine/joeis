@@ -16,7 +16,7 @@ public class A001181 implements Sequence {
   @Override
   public Z next() {
     if (++mN == 0) {
-      return Z.ZERO;
+      return Z.ONE;
     } else if (mN > 1) {
       final Z n = Z.valueOf(mN);
       final Z t = mB.multiply(n.square().add(n).multiply(7).subtract(2))

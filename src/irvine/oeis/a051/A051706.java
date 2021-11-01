@@ -94,7 +94,6 @@ public class A051706 implements Sequence {
             next.add(new Score(0, 0, 0, 0, setsA, setsB + 1)); // b's set
           }
         } else {
-          assert b > a;
           if (gamesA < 5 || gamesB >= gamesA) {
             next.add(new Score(0, 0, gamesA + 1, gamesB, setsA, setsB)); // a's game
           } else {

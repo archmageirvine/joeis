@@ -23,11 +23,16 @@ public class NaiveFactorial implements Factorial {
 
   @Override
   public Z doubleFactorial(final int n) {
+  	return multiFactorial(n, 2);
+  }
+
+  @Override
+  public Z multiFactorial(final int n, final int m) {
     if (n < 0) {
       throw new IllegalArgumentException("n must be nonnegative");
     }
     Z r = Z.ONE;
-    for (int k = n; k > 1; k -= 2) {
+    for (int k = n; k > 1; k -= m) {
       r = r.multiply(Z.valueOf(k));
     }
     return r;
@@ -38,6 +43,10 @@ public class NaiveFactorial implements Factorial {
    * @param args number
    */
   public static void main(final String[] args) {
-    System.out.println(new NaiveFactorial().factorial(Integer.parseInt(args[0])));
+  	if (args.length == 1) {
+       System.out.println(new NaiveFactorial().factorial(Integer.parseInt(args[0])));
+    } else {
+       System.out.println(new NaiveFactorial().multiFactorial(Integer.parseInt(args[0]), Integer.parseInt(args[1])));
+    }
   }
 }

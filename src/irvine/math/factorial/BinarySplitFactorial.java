@@ -40,4 +40,9 @@ public class BinarySplitFactorial implements Factorial {
     throw new UnsupportedOperationException();
   }
 
+  @Override
+  public Z multiFactorial(final int n, final int m) {
+    throw new UnsupportedOperationException();
+  }
+
 }

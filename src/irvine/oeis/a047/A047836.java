@@ -12,8 +12,14 @@ import irvine.oeis.Sequence;
 public class A047836 implements Sequence {
 
   private final TreeSet<Z> mA = new TreeSet<>();
-  {
-    mA.add(Z.TWO);
+
+  protected A047836(final Z initial) {
+    mA.add(initial);
+  }
+
+  /** Construct the sequence. */
+  public A047836() {
+    this(Z.TWO);
   }
 
   @Override

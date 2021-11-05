@@ -23,7 +23,7 @@ public class NaiveFactorial implements Factorial {
 
   @Override
   public Z doubleFactorial(final int n) {
-  	return multiFactorial(n, 2);
+    return multiFactorial(n, 2);
   }
 
   @Override
@@ -43,7 +43,7 @@ public class NaiveFactorial implements Factorial {
    * @param args number
    */
   public static void main(final String[] args) {
-  	if (args.length == 1) {
+    if (args.length == 1) {
        System.out.println(new NaiveFactorial().factorial(Integer.parseInt(args[0])));
     } else {
        System.out.println(new NaiveFactorial().multiFactorial(Integer.parseInt(args[0]), Integer.parseInt(args[1])));

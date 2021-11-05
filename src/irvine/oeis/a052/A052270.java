@@ -15,9 +15,9 @@ public class A052270 implements Sequence {
   private long mN = 0;
 
   private long c(final long r, final long s) {
-    if (s<0) {
+    if (s < 0) {
       return 0;
-    } else if (r==1) {
+    } else if (r == 1) {
       return 1 - (s & 1);
     } else if (r == 2) {
       return c1(2, s) + c2(2, s) + (s == 0 ? 1 : 0);

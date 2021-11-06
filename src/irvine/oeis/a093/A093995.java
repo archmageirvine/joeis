@@ -11,7 +11,7 @@ import irvine.oeis.triangle.Triangle;
 public class A093995 extends Triangle {
 
   @Override
-  protected Z compute(int n, int k) {
+  protected Z compute(final int n, final int k) {
     return Z.valueOf(n + 1).square();
   }
 }

@@ -23,7 +23,7 @@ public class A052185 implements Sequence {
     if (remaining <= 0) {
       return countUnseen <= 0;
     }
-    if (countUnseen > (mN - 1) * remaining) {
+    if (countUnseen > (mN - 1) * (long) remaining) {
       return false;
     }
     int dim = 0;

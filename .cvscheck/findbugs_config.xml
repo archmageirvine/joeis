@@ -157,6 +157,9 @@
      <Match classregex="irvine.math.lattice.Animal">
        <BugCode name="EI"/>
      </Match>
+     <Match classregex="rvine.oeis.HolonomicRecurrence">
+       <BugCode name="EI"/>
+     </Match>
 
      <!-- Don't care about serialization in the OEIS -->
      <Match classregex="irvine.oeis.*">

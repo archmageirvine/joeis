@@ -30,7 +30,7 @@ public class A052184 implements Sequence {
     if (Long.bitCount(head) > remaining) {
       return false; // Cannot close the cycle in the remaining time
     }
-    if (countUnseen > (mN - 1) * remaining) {
+    if (countUnseen > (mN - 1) * (long) remaining) {
       return false;
     }
     int dim = 0;

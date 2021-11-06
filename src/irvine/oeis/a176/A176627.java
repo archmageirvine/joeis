@@ -16,16 +16,12 @@ public class A176627 extends Triangle {
     this(12);
   }
 
-  /**
-   * Generic constructor with parameters
-   * @param base 
-   */
-  public A176627(final long base) {
+  protected A176627(final long base) {
     mBase = Z.valueOf(base);
   }
 
   @Override
   public Z compute(final int n, final int k) {
-    return mBase.pow(k * (n - k));
+    return mBase.pow(k * (long) (n - k));
   }
 }

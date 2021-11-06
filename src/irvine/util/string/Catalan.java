@@ -36,7 +36,7 @@ public final class Catalan extends AbstractLanguage {
       if (x == 0) {
         return sb.toString();
       }
-      sb.append(" ");
+      sb.append(' ');
     }
     if (x < SMALL.length) {
       sb.append(SMALL[x]);

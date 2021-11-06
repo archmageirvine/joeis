@@ -20,6 +20,6 @@ public class A204260 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int i, final int j) {
-    return new irvine.math.q.Q(i * j, i + j).ceiling();
+    return new irvine.math.q.Q(i * (long) j, i + j).ceiling();
   }
 }

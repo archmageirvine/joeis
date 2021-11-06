@@ -16,7 +16,7 @@ public class A036045 implements Sequence {
 
   private int mN = 0;
 
-  private static final class Wrapper {
+  private static final class rWrapper {
     private final int[] mPartition;
 
     private Wrapper(final int[] partition) {

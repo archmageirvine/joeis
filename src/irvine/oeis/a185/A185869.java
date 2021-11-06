@@ -5,7 +5,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
  * A185869 (Odd,even)-polka dot array in the natural number array A000027; read by antidiagonals.
- * T(n,k) = 2n-1+(n+k-1)*(2n+2k-3), k&gt;=1, n&gt;=1.
+ * <code>T(n,k) = 2n-1+(n+k-1)*(2n+2k-3), k&gt;=1, n&gt;=1.</code>
  *
  * @author Georg Fischer
  */

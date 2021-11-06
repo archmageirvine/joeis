@@ -145,8 +145,8 @@ public class WrappedRecurrence extends Triangle {
   }
 
   /**
-   * Gets the additive term from mSeqPlus for the current row
-   * @return mPlus
+   * Gets the additive term from <code>mSeqPlus</code> for the current row
+   * @return plus
    */
   protected Z getPlus() {
     return mPlus;

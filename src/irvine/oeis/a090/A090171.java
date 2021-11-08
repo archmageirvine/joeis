@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A090171 Triangle read by rows, related to Pascal's triangle read mod 2.
+ * A090171 Triangle read by rows, related to Pascal's triangle read mod 2, starting with 0, 1, 0.
  * T(n, k) = T(n-1, k) + T(n-1, k-1) + T(n-2, k) + T(n-2, k-1) + T(n-2, k-2) for n &gt;= 2, a(0..2) = (0, 1, 0).
  * @author Georg Fischer
  */

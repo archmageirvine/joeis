@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a011.A011782;
 import irvine.oeis.a025.A025047;
 /**
- * A345192 Number of non-wiggly compositions of n.
+ * A345192 Number of non-alternating compositions of n.
  * @author Georg Fischer
  */
 public class A345192 implements Sequence {

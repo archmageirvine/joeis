@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A052298 Maximal number of distinct prime factors of any composite number between n-th and (n+1)st primes.
+ * A052298 Maximal number of distinct prime factors of any composite number between n-th and (n+1)-st primes.
  * @author Sean A. Irvine
  */
 public class A052298 extends A000040 {

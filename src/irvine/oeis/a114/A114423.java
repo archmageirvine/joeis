@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A114423 Multifactorial array read by antidiagonals.
+ * A114423 Multifactorial array read by ascending antidiagonals.
  * @author Georg Fischer
  */
 public class A114423 extends UpperLeftTriangle {

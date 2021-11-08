@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003242;
 import irvine.oeis.a025.A025047;
 /**
- * A345195 Number of non-wiggly anti-runs (separations) of n.
+ * A345195 Number of non-alternating anti-run compositions of n.
  * @author Georg Fischer
  */
 public class A345195 implements Sequence {

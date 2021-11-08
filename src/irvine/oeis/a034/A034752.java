@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A034752 Dirichlet convolution of 3^(n-1) with Primes (with 1).
+ * A034752 Dirichlet convolution of 3^(n-1) with primes (with 1).
  * @author Sean A. Irvine
  */
 public class A034752 implements Sequence {

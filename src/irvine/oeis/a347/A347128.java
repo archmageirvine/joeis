@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003557;
 import irvine.oeis.a018.A018804;
 /**
- * A347128 a(n) = A018804(n) / A003557(n).
+ * A347128 a(n) = A018804(n) / A003557(n), where A018804 is Pillai's arithmetical function.
  * @author Georg Fischer
  */
 public class A347128 implements Sequence {

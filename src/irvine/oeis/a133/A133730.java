@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001045;
 import irvine.oeis.a033.A033999;
 
 /**
- * A133730 Jacobsthal sequence A001045 interleaved with alternating sign sequence A033999.
+ * A133730 Alternating sign sequence A033999 interleaved with Jacobsthal sequence A001045.
  * @author Georg Fischer
  */
 public class A133730 extends AlternatingSequence {

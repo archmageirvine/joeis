@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A062169 Triangle of n! mod k.
+ * A062169 Triangle T(n, k) = k! mod n for n &gt;= 1, 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A062169 extends Triangle {

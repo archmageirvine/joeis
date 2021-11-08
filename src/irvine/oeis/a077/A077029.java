@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A077029 Rectangle R(i,j) by antidiagonals; column j has j-1 zeros followed by numbers congruent to 1 mod j-1.
+ * A077029 Rectangle R(i,j) read by ascending antidiagonals: column j has j-1 zeros followed by numbers congruent to 1 mod j-1.
  *
  * @author Georg Fischer
  */

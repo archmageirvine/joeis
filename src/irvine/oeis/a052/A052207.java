@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052207 Number of {s(i):i=0..n} such that |s(i)-s(i-1)|=1, i=1..n and s(i)=0 at four values of i, one of which is i=0.
+ * A052207 Number of sequences {s(i): i=0..n} such that |s(i)-s(i-1)|=1, i=1..n and s(i)=0 at four values of i, one of which is i=0.
  * @author Sean A. Irvine
  */
 public class A052207 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A147657 (1, -2, 3,...) interleaved with (1, 2, -2, 2, -2,...).
+ * A147657 a(1)=1, a(2)=2, thereafter (1, -2, 3, -4, 5, -6, ...) interleaved with (-2, 2, -2, 2, ...).
  * @author Georg Fischer
  */
 public class A147657 extends PrependSequence {

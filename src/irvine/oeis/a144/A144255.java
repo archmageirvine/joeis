@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a085.A085722;
 
 /**
- * A144255 Semiprimes of the form n^2+1.
+ * A144255 Semiprimes of the form k^2+1.
  * @author Georg Fischer
  */
 public class A144255 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a059.A059882;
 
 /**
- * A025047 Wiggly sums: number of sums adding to n in which terms alternately increase and decrease or vice versa.
+ * A025047 Alternating compositions, i.e. compositions with alternating increases and decreases, starting with either an increase or a decrease.
  * @author Sean A. Irvine
  */
 public class A025047 extends A059882 {

@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A240264 Decimal expansion of sum_(n=1..infinity) (-1)^(n+1)*H(n,2)/n^2, where H(n,2) is the n-th harmonic number of order 2.
+ * A240264 Decimal expansion of Sum_{n &gt;= 1} (-1)^(n+1)*H(n,2)/n^2, where H(n,2) is the n-th harmonic number of order 2.
  * Formula: zeta(3)-Pi^2/12*log(2)
  * @author Georg Fischer
  */

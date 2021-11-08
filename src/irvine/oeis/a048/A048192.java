@@ -21,7 +21,7 @@ public class A048192 extends ParallelGenerateGraphsSequence {
   // Chordal testing code loosely based on implementation in
   // https://github.com/networkx/networkx
 
-  // Returns a the node in choices that has more connections in graph to nodes in wannaConnect.
+  // Returns a node in choices that has more connections in graph to nodes in wannaConnect.
   private int maxCardinalityNode(final Graph graph, final Set<Integer> choices, final boolean[] wannaConnect) {
     int maxNumber = -1;
     int maxCardinalityNode = -1;

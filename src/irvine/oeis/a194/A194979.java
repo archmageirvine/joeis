@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A194979 1 + floor(n/sqrt(3)).
+ * A194979 a(n) = 1 + floor(n/sqrt(3)).
  * @author Georg Fischer
  */
 public class A194979 extends FloorSequence {

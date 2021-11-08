@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034797 a(0) = 0; a(n+1)=a(n)+2^a(n).
+ * A034797 a(0) = 0; a(n+1) = a(n) + 2^a(n).
  * @author Sean A. Irvine
  */
 public class A034797 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A129116 Multifactorial array: A(k,n) = k-tuple factorial of n, for positive n, read by antidiagonals.
+ * A129116 Multifactorial array: A(k,n) = k-tuple factorial of n, for positive n, read by ascending antidiagonals.
  * @author Georg Fischer
  */
 public class A129116 extends UpperLeftTriangle {

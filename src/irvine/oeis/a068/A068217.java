@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A068217 Denominators of coefficients in log(1+x)*sqrt(1+x) power series.
+ * A068217 Denominators of coefficients in 3*log(sqrt(1+x)) power series.
  * a(n) = 2*n/3 if n==0 (mod 3), a(n) = 2*n
  * @author Georg Fischer
  */

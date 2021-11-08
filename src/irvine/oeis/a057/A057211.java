@@ -5,7 +5,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**
- * A057211 Alternating runs of ones and zeroes, where the n-th run has length n.
+ * A057211 Alternating runs of ones and zeros, where the n-th run has length n.
  * @author Georg Fischer
  */
 public class A057211 extends WrappedConstantTriangle {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029908 Starting with n, repeatedly sum prime factors (with multiplicity) until reaching 0 or a fixed point.
+ * A029908 Starting with n, repeatedly sum prime factors (with multiplicity) until reaching 0 or a fixed point. Then a(n) is the fixed point (or 0).
  * @author Sean A. Irvine
  */
 public class A029908 implements Sequence {

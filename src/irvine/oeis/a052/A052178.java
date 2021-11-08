@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052178 Number of walks on simple cubic lattice.
+ * A052178 Number of walks of length n on the simple cubic lattice terminating at height 2 above the (x,y)-plane.
  * @author Sean A. Irvine
  */
 public class A052178 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -12,9 +12,7 @@ public class A253109 extends A002708 {
 
   protected int mN;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A253109() {
     mN = 0;
   }

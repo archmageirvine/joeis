@@ -13,9 +13,7 @@ public class A133888 implements Sequence {
 
   protected Z mN;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A133888() {
     mN = Z.valueOf(0 - 1);
   }

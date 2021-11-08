@@ -12,9 +12,7 @@ import irvine.oeis.a000.A000142;
  */
 public class A107895 extends EulerTransform {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A107895() {
     super(new A000142(), 1);
     mSeq.next();

@@ -25,9 +25,7 @@ public class A034318 implements Sequence {
   protected int mState; // for zero squeezing
   protected int mCount; // for zero squeezing
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A034318() {
     this(-1, 0, 13, 0, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, -2, 0);
   }

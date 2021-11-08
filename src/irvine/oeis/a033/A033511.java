@@ -9,9 +9,7 @@ import irvine.oeis.GeneratingFunctionSequence;
  */
 public class A033511 extends GeneratingFunctionSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A033511() {
     super(0,
       new Z[] {

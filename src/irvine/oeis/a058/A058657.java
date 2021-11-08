@@ -11,9 +11,7 @@ import irvine.oeis.McKayThompsonSequence;
  */
 public class A058657 extends McKayThompsonSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A058657() {
     super("38A", new long[]{1, 0});
   }

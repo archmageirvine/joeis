@@ -14,9 +14,7 @@ public class A030515 implements Sequence {
   protected long mN; // current index
   protected final Z mK; // exact number of divisors
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A030515() {
     this(6);
   }

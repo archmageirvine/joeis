@@ -10,9 +10,7 @@ import irvine.oeis.a034.A034693;
  */
 public class A047980 extends PositionOfNSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A047980() {
     super(new A034693());
   }

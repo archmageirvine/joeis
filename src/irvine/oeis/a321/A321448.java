@@ -14,9 +14,7 @@ import irvine.oeis.a025.A025442;
  */
 public class A321448 extends GeneralizedEulerTransform {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A321448() {
     super(0, 1);
     mSeqF = new A025442();

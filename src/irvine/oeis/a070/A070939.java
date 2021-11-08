@@ -13,9 +13,7 @@ public class A070939 implements Sequence {
   protected long mPow2; // next power of 2
   protected Z mLen; // current length
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A070939() {
     mN = -1; // offset1 = 0
   }

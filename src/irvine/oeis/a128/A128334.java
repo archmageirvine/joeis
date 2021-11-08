@@ -12,9 +12,7 @@ import irvine.oeis.a000.A000594;
  */
 public class A128334 extends BinomialTransformSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A128334() {
     super(new A000594(), 0);
   }

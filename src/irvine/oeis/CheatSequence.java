@@ -21,9 +21,7 @@ public abstract class CheatSequence implements Sequence {
 
   protected abstract String getName();
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public CheatSequence() {
     try {
       try (final BufferedReader r = IOUtils.reader("cheat/" + getName().replace('A', 'b') + ".txt.gz")) {

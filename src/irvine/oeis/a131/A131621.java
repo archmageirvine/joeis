@@ -14,9 +14,7 @@ public class A131621 extends A000129 {
   protected Z mSum; // current sum
   protected Z mPow10; // least power of 10 > Pell number
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A131621() {
     mPell = super.next();
     mSum = Z.ZERO;

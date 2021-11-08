@@ -12,9 +12,7 @@ import irvine.oeis.a000.A000041;
  */
 public class A095975 extends InverseEulerTransform {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A095975() {
     super(new NegationTransformSequence(new A000041()), 1);
     next();

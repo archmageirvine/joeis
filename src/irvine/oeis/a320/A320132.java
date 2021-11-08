@@ -11,9 +11,7 @@ import irvine.oeis.GramMatrixThetaSeries;
  */
 public class A320132 extends GramMatrixThetaSeries {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A320132() {
     super(new long[][]{{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 2, 0}, {0, 0, 0, 10}});
   }

@@ -8,9 +8,7 @@ package irvine.oeis.a038;
  */
 public class A038978 extends A038873 {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A038978() {
     super(89, false);
   }

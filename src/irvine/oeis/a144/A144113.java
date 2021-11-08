@@ -10,9 +10,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A144113 extends UpperLeftTriangle {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A144113() {
     super(1, 1, -1);
   }

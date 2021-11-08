@@ -12,9 +12,7 @@ import irvine.oeis.RevertTransformSequence;
  */
 public class A191243 extends RevertTransformSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A191243() {
     super(new PaddingSequence(new long[]{1, -1, -1, -1, -1, -1}, new long[]{0}));
   }

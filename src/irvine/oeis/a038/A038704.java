@@ -10,9 +10,7 @@ import irvine.oeis.a030.A030167;
  */
 public class A038704 extends RecordSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A038704() {
     super(new A030167(), Z.ONE);
   }

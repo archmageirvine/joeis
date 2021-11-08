@@ -10,9 +10,7 @@ import irvine.oeis.PeriodicSequence;
  */
 public class A131731 extends PeriodicSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A131731() {
     super(2, -3, 4, -3);
   }

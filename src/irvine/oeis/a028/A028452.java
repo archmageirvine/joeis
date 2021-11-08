@@ -9,9 +9,7 @@ import irvine.oeis.LinearRecurrence;
  */
 public class A028452 extends LinearRecurrence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A028452() {
     super(new long[] {1, -679, 76177, -3519127, 85911555, -1235863045, 11123194131L, -65256474997L, 257866595482L, -705239311926L, 1363115167354L, -1888426032982L, 1888426032982L, -1363115167354L, 705239311926L, -257866595482L, 65256474997L, -11123194131L, 1235863045, -85911555, 3519127, -76177, 679},
       new Z[] {

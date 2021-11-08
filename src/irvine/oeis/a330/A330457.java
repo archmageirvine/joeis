@@ -14,9 +14,7 @@ import irvine.oeis.a089.A089259;
  */
 public class A330457 extends EulerTransform {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A330457() {
     super(new SkipSequence(new A089259(), 1), 1);
   }

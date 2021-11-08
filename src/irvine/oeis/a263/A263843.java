@@ -13,9 +13,7 @@ import irvine.oeis.a162.A162395;
  */
 public class A263843 extends PrependSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A263843() {
     super(new RevertTransformSequence(new A162395()), 0);
   }

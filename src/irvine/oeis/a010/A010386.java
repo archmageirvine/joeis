@@ -8,9 +8,7 @@ import irvine.oeis.FiniteSequence;
  */
 public class A010386 extends FiniteSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A010386() {
     super(0, 1, 4, 9, 12, 16);
   }

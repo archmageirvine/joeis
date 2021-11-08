@@ -12,9 +12,7 @@ import irvine.oeis.a001.A001615;
  */
 public class A173290 extends PartialSumSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A173290() {
     super(new A001615());
   }

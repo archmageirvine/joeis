@@ -12,9 +12,7 @@ import irvine.oeis.a100.A100734;
  */
 public class A268506 extends PartialProductSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A268506() {
     super(new A100734());
   }

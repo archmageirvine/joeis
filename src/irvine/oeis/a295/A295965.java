@@ -12,9 +12,7 @@ import irvine.oeis.ComplementaryEquationSequence;
  */
 public class A295965 extends ComplementaryEquationSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A295965() {
     super(0, "[[-1],[1],[1],[-1]]", new String[]{"[2, 3]", "[1, 4, 5]"});
   }

@@ -9,9 +9,7 @@ import irvine.oeis.LinearRecurrence;
  */
 public class A028486 extends LinearRecurrence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A028486() {
     super(new Z[] {
         Z.NEG_ONE,

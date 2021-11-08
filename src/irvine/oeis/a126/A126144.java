@@ -12,9 +12,7 @@ import irvine.oeis.a109.A109790;
  */
 public class A126144 extends PrimeSubsequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A126144() {
     super(new A109790());
   }

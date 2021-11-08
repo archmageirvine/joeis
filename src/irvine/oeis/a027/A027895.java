@@ -10,9 +10,7 @@ import irvine.oeis.FiniteSequence;
  */
 public class A027895 extends FiniteSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A027895() {
     super(Jaguar.factor(Z.valueOf(9999999999L)).divisorsSorted());
   }

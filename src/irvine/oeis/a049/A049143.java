@@ -9,9 +9,7 @@ package irvine.oeis.a049;
  */
 public class A049143 extends A049125 {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A049143() {
     super(new long[] {+1, -1, -2, +1}, new long[] {+1, +0, -2, -2});
   }

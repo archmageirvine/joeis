@@ -13,9 +13,7 @@ import irvine.oeis.a271.A271102;
  */
 public class A307424 extends DirichletConvolutionSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A307424() {
     super(new A271102(), 1, new A010057(), 0);
   }

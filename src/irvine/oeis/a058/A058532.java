@@ -12,9 +12,7 @@ import irvine.oeis.a052.A052240;
  */
 public class A058532 extends A052240 {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A058532() {
     super(-1, 1, 1, -2, 2, 4, -2, 4, 2, -4, 2, 4, 0, 4, 2, -4, 2, 4, -2, 4, 2, 0);
   }

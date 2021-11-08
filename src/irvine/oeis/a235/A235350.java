@@ -12,9 +12,7 @@ import irvine.oeis.RevertTransformSequence;
  */
 public class A235350 extends RevertTransformSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A235350() {
     super(new GeneratingFunctionSequence(new long[]{+1, -2, -1}, new long[]{1, +0, -1}));
   }

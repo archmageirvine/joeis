@@ -12,9 +12,7 @@ import irvine.oeis.a000.A000085;
  */
 public class A050397 extends RevertTransformSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A050397() {
     super(new A000085());
     mSeq.next();

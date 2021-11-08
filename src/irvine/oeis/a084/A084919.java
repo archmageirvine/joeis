@@ -12,9 +12,7 @@ import irvine.oeis.a048.A048093;
  */
 public class A084919 extends DifferenceSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A084919() {
     super(new A048093());
   }

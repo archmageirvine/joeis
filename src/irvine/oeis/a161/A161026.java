@@ -18,9 +18,7 @@ public class A161026 implements Sequence {
   protected int mN; // current index
   protected int mOccur; // number of occurrences of the parts
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A161026() {
     this(0, 2);
   }

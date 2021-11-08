@@ -13,9 +13,7 @@ import irvine.oeis.a011.A011782;
  */
 public class A098407 extends WeighTransformSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A098407() {
     super(new A011782());
   }

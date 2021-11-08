@@ -13,9 +13,7 @@ import irvine.oeis.a027.A027193;
  */
 public class A339398 extends MobiusTransformSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A339398() {
     super(new A027193(), 1);
     next();

@@ -13,9 +13,7 @@ import irvine.oeis.GeneratingFunctionSequence;
  */
 public class A283224 extends EulerTransform {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A283224() {
     super(new GeneratingFunctionSequence(0, "[5, 8, 5]", "[1, 0,-2, 0, 1]"), new long[]{1});
   }

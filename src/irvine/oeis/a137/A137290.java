@@ -9,9 +9,7 @@ import irvine.oeis.a105.A105471;
  */
 public class A137290 extends A105471 {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A137290() {
     super(30);
     next(); // offset 1

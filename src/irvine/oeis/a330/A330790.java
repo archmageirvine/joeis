@@ -12,9 +12,7 @@ import irvine.oeis.a027.A027870;
  */
 public class A330790 extends RecordPositionSubsequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A330790() {
     super(new A027870(), 0);
   }

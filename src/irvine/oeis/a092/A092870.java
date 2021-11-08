@@ -11,9 +11,7 @@ import irvine.oeis.HolonomicRecurrence;
  */
 public class A092870 extends HolonomicRecurrence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A092870() {
     super(0, "[[0],[-924, 2592,-1728],[0, 0, 1]]", "1", 0);
   }

@@ -11,9 +11,7 @@ import irvine.oeis.a015.A015889;
  */
 public class A057256 extends A015889 {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A057256() {
     super(0, 6, 5, 4, 3, 2);
   }

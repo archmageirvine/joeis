@@ -11,9 +11,7 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A113280 extends Triangle {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A113280() {
     super(1);
   }

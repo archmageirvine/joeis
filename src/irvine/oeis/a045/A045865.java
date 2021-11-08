@@ -8,9 +8,7 @@ import irvine.oeis.GramMatrixThetaSeries;
  */
 public class A045865 extends GramMatrixThetaSeries {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A045865() {
     super(new long[][]{
       {4, 0, 2, 1},

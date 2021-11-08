@@ -15,9 +15,7 @@ public class A204129 extends UpperLeftTriangle {
 
   protected MemorySequence mSeq;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A204129() {
     super(1, 1, -1);
     mSeq = MemorySequence.cachedSequence(new A000032());

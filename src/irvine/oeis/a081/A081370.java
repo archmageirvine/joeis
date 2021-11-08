@@ -13,9 +13,7 @@ public class A081370 implements Sequence {
 
   protected Z mK;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A081370() {
     mK = Z.ZERO;
   }

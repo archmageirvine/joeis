@@ -13,9 +13,7 @@ public class A324472 implements Sequence {
   protected Z mN;
   protected Z mParm;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A324472() {
     mN = Z.ZERO; // offset = 1
     mParm = Z.valueOf(1000);

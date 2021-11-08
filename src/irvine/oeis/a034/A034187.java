@@ -11,9 +11,7 @@ public class A034187 extends LinearRecurrence {
 
   // WARNING: Conjectural
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A034187() {
     super(
       new long[]{1, 8, -150, 195, 1041, -597, 1550, -1529, -3714, 9655, -6736, -4443, 11632, -7707, -142, 3513, -2623, 1009, -218, 24},

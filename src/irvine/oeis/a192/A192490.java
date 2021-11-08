@@ -12,9 +12,7 @@ import irvine.oeis.a003.A003309;
  */
 public class A192490 extends CharacteristicFunction {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A192490() {
     super(1, new A003309());
   }

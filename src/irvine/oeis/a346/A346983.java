@@ -12,9 +12,7 @@ import irvine.oeis.a007.A007696;
  */
 public class A346983 extends Stirling2TransformSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A346983() {
     super(new A007696(), 0);
   }

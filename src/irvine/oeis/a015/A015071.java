@@ -9,9 +9,7 @@ import irvine.oeis.FiniteSequence;
  */
 public class A015071 extends FiniteSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A015071() {
     super(Z.ONE,
       Z.ZERO,

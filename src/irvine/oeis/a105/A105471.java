@@ -15,9 +15,7 @@ public class A105471 implements Sequence {
   protected int mN;
   protected Z mParm;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A105471() {
     this(100);
   }

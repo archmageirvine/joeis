@@ -12,9 +12,7 @@ import irvine.oeis.triangle.GeneratingFunctionTriangle;
  */
 public class A216182 extends GeneratingFunctionTriangle {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A216182() {
     super(0, new long[] {1, -1, 0, -1, 0, 0, 1, 0, 0, 0}, new long[] {1, -4, -1, 6, 0, 0, -4, 2, 0, 0, 1, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0});
   }

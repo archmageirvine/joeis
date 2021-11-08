@@ -12,9 +12,7 @@ import irvine.oeis.GeneratingFunctionSequence;
  */
 public class A338186 extends GeneratingFunctionSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A338186() {
     super(0, "[2, -6, -12]", "[1, -11, 19, -9]");
   }

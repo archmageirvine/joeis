@@ -12,9 +12,7 @@ import irvine.oeis.a019.A019554;
  */
 public class A346613 extends InverseMobiusTransformSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A346613() {
     super(new A019554(), 0);
     next();

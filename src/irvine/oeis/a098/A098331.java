@@ -9,9 +9,7 @@ import irvine.oeis.HolonomicRecurrence;
  */
 public class A098331 extends HolonomicRecurrence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A098331() {
     super(0, "[[0],[-5, 5],[1,-2],[0, 1]]", "[1]", 0);
   }

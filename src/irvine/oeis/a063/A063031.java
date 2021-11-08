@@ -13,9 +13,7 @@ import irvine.oeis.RevertTransformSequence;
  */
 public class A063031 extends PrependSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A063031() {
     super(new RevertTransformSequence(new PaddingSequence(new long[]{1, -1, -1, -1, +1}, new long[]{0})), 0);
   }

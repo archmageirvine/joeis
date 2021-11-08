@@ -13,9 +13,7 @@ import irvine.oeis.BriefSequence;
  */
 public class A074318 extends BriefSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A074318() {
     super(Z.FOUR, new Z("50064"), new Z("208492413443704093346554910065262730566475749"));
   }

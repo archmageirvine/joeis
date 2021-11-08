@@ -13,9 +13,7 @@ public class A057348 implements Sequence {
 
   protected int mN;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A057348() {
     mN = 0;
   }

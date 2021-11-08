@@ -11,9 +11,7 @@ import irvine.oeis.a006.A006355;
  */
 public class A047992 extends PrependSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A047992() {
     super(new SkipSequence(new A006355(), 6), 2, 5);
   }

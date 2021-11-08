@@ -12,9 +12,7 @@ import irvine.oeis.EulerTransform;
  */
 public class A262803 extends EulerTransform {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A262803() {
     super(1);
   }

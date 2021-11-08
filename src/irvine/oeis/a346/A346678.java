@@ -12,9 +12,7 @@ public class A346678 implements Sequence {
 
   protected int mN;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A346678() {
     mN = 0;
   }

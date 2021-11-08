@@ -11,9 +11,7 @@ import irvine.oeis.PartialSumSequence;
  */
 public class A122256 extends PartialSumSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A122256() {
     super(new A122255());
   }

@@ -12,9 +12,7 @@ import irvine.oeis.a050.A050368;
  */
 public class A328731 extends DirichletInverseSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A328731() {
     super(new A050368());
   }

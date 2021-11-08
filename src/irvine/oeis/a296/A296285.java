@@ -12,9 +12,7 @@ import irvine.oeis.ComplementaryEquationSequence;
  */
 public class A296285 extends ComplementaryEquationSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A296285() {
     super(0, "[[0],[1],[1],[-1]]", new String[]{"[1, 2, 11, 25]", "[3, 4, 5]"});
     // this works -> b(0) is broken in the OEIS?

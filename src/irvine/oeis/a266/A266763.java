@@ -13,9 +13,7 @@ import irvine.oeis.PaddingSequence;
  */
 public class A266763 extends EulerTransform {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A266763() {
     super(new PaddingSequence(new long[] {9, -1, 1, -1, 1, -1, 2, -2, 1, -1, 1, -1, 1, -1}, new long[] {0}), 1);
   }

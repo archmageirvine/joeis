@@ -16,9 +16,7 @@ public class A038873 implements Sequence {
   protected long mSquare; // this should be a square mod p
   protected boolean mPolar; // true if mSquare should be a square mod p, false if not
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A038873() {
     this(2, true);
   }

@@ -13,9 +13,7 @@ import irvine.oeis.PeriodicSequence;
  */
 public class A121667 extends EulerTransform {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A121667() {
     super(new PeriodicSequence(-4, -8, 0, -8, -4, 0), 1);
   }

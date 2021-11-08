@@ -9,9 +9,7 @@ import irvine.oeis.PrependSequence;
  */
 public class A038874 extends PrependSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A038874() {
     super(new A038873(3, true), 2);
   }

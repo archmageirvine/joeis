@@ -18,9 +18,7 @@ public class A051504 extends ParallelGenerateGraphsSequence {
   private Z mA = Z.ZERO;
   private Z mB = Z.ZERO;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A051504() {
     super(-1, -1, false, false, false);
   }

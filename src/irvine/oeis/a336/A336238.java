@@ -13,9 +13,7 @@ public class A336238 implements Sequence {
   protected int mN;
   protected Z mA_1;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A336238() {
     mN = 0;
     mA_1 = Z.THREE;

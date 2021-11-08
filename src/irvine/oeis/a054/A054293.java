@@ -13,9 +13,7 @@ import irvine.oeis.a001.A001622;
  */
 public class A054293 extends PositionSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A054293() {
     super(1, new A001622(), 7);
   }

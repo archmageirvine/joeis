@@ -13,9 +13,7 @@ import irvine.oeis.a034.A034838;
  */
 public class A087140 extends ComplementSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A087140() {
     super(new A034838(), Z.ONE);
   }

@@ -14,9 +14,7 @@ public class A080672 implements Sequence {
   protected int mN;
   protected long mParm;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A080672() {
     this(210);
   }

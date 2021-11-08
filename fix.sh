@@ -51,3 +51,8 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         echo "Modified ${s}"
     fi
 done
+
+# Fix constructor comments.
+for f in $(jgrep -l ' \* Construct the sequence'); do
+    perl -0777 -pi -e 's/\/\*\* *\n   \* Construct the sequence.\n   \*\//\/** Construct the sequence. *\//igs' ${f}
+done

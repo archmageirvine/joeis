@@ -15,9 +15,7 @@ public class A322469 implements Sequence {
   protected int mState; // automaton state for flattening of while loops
   protected Z mPrev; // previous result of <code>next()</code>
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A322469() {
     mN = 0;
     mRow = 0;

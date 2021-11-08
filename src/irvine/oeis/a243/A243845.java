@@ -13,9 +13,7 @@ public class A243845 implements Sequence {
   protected int mN;
   protected Z mA_1;
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A243845() {
     mN = 0;
     mA_1 = Z.ONE;

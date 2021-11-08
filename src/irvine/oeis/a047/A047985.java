@@ -9,9 +9,7 @@ import irvine.oeis.PositionSequence;
  */
 public class A047985 extends PositionSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A047985() {
     super(2, new A047988(), 2);
   }

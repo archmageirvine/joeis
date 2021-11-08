@@ -8,9 +8,7 @@ import irvine.oeis.LinearRecurrence;
  */
 public class A001351 extends LinearRecurrence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A001351() {
     super(new long[] {-1, 1, -1, 3, -1, 1}, new long[] {0, 1, 3, 1, 3, 11});
   }

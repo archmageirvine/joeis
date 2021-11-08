@@ -12,9 +12,7 @@ import irvine.oeis.a019.A019434;
  */
 public class A222008 extends PrependSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A222008() {
     super(1, new A019434());
   }

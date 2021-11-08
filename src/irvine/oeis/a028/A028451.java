@@ -1512,9 +1512,7 @@ public class A028451 extends GeneratingFunctionSequence {
     Z.ONE
   );
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A028451() {
     super(NUM, RING.multiply(DEN, Polynomial.create(1, 1, -1)));
   }

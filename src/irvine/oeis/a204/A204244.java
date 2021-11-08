@@ -14,9 +14,7 @@ public class A204244 extends UpperLeftTriangle {
 
   private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A204244() {
     super(1, 1, -1);
   }

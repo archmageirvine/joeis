@@ -12,9 +12,7 @@ import irvine.oeis.a003.A003415;
  */
 public class A131116 extends RecordSubsequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A131116() {
     super(new A003415());
   }

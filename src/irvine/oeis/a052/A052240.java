@@ -23,9 +23,7 @@ public class A052240 implements Sequence {
   protected int mState; // for zero squeezing
   protected int mCount; // for zero squeezing
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A052240() {
     this(-1, 1, 1, 4, -4, -4, -4, -4, -4, -4, 0);
   }

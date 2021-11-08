@@ -13,9 +13,7 @@ import irvine.oeis.HolonomicRecurrence;
  */
 public class A229227 extends HolonomicRecurrence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A229227() {
     super(0, "[[0],[1],[9],[72],[504],[3024],[15120],[60480],[181440],[362880],[362880],[0,-362880]]", "[1]", 0);
     setGfType(1);

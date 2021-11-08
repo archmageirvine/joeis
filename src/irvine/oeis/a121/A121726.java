@@ -11,9 +11,7 @@ import irvine.oeis.a006.A006231;
  */
 public class A121726 extends AddConstantSequence {
 
-  /**
-   * Construct the sequence.
-   */
+  /** Construct the sequence. */
   public A121726() {
     super(1, new A006231());
   }

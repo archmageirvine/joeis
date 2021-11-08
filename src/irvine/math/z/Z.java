@@ -876,9 +876,9 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
-   * Test if this integer is a perfect power.  It it is then returns the base
-   * of the power and sets the auxiliary to the relevant exponent.  Otherwise
-   * returns null.  Returns null for all inputs &lt;= 1.
+   * Test if this integer is a perfect power.  If it is then returns the base
+   * of the power and sets the auxiliary to the relevant exponent.  Otherwise,
+   * return null.  Returns null for all inputs &lt;= 1.
    * @return x such that x^a=this or null if no such x exists.
    */
   public Z isPower() {

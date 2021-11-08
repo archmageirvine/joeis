@@ -21,8 +21,12 @@ import irvine.math.z.Z;
  */
 public class EgyptianFractionSequence implements Sequence {
 
+  /** Flag bit indicating alternating signs starting with positive. */
+  public static final int ALTERNATE_SIGNS_PLUS = 2;
+
   protected CR mEgyptian; // for the iterative calculation of the Egyptian fraction
   protected int mFeatures; // bit mask for variants
+  private long mSign = 1;
 
   /**
    * Construct the Egyptian fraction of the given number
@@ -48,8 +52,16 @@ public class EgyptianFractionSequence implements Sequence {
 
   @Override
   public Z next() {
-    Z result = mEgyptian.inverse().ceil();
-    mEgyptian = mEgyptian.subtract(CR.valueOf(result).inverse());
+    Z result;
+    if (mFeatures == ALTERNATE_SIGNS_PLUS) {
+      result = mEgyptian.multiply(mSign).inverse().floor();
+      mEgyptian = mEgyptian.subtract(CR.valueOf(result.multiply(mSign)).inverse()).multiply(10);
+      mSign = -mSign;
+    } else {
+      result = mEgyptian.inverse().ceil();
+      mEgyptian = mEgyptian.subtract(CR.valueOf(result).inverse());
+    }
+    // Note: the following code might not be correct for mFeatures
     if (result.equals(Z.ONE)) { // add the next terms as long as they are Z.ONE
       Z den = mEgyptian.inverse().ceil();
       while (den.equals(Z.ONE)) {

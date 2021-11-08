@@ -1753,3 +1753,17 @@ A052280 Number of 4 X 4 stochastic matrices under row and column permutations, d
 A052281 Number of 4 X 4 symmetric stochastic matrices under row and column permutations, probably erroneous
 A052315 M-type rooted trees on n nodes
 A052336	Shifts left under transform in formula line
+A052400 Number of fully amphichiral and invertible knots with n crossings
+A052401 Amphichiral knots with n crossings (A051767+A051768+A052400)
+A052402 Number of invertible knots with n crossings
+A052403 Noninvertible knots with n crossings (A002863-A052402).
+A052407 Nonhyperbolic knots with n crossings (A051764+A051765).
+A052408 Hyperbolic knots with n crossings (A002863-A051764-A051765).
+A052411 Number of n-crossing knots having symmetry group Z1.
+A052412 Number of n-crossing knots having symmetry group Z2.
+A052415 Number of n-crossing knots having symmetry group D1.
+A052416 Number of n-crossing knots having symmetry group D2.
+A052417 Number of n-crossing knots having symmetry group D3.
+A052418 Number of n-crossing knots having symmetry group D4.
+A052420 Number of n-crossing knots having symmetry group D6.
+A052422 Number of n-crossing knots having symmetry group D8.

@@ -11,7 +11,9 @@ import irvine.oeis.a000.A000720;
  */
 public class A052434 extends A000720 {
 
-  // todo this has insufficient accuracy
+  // This is slow ... and heuristic ...
+
+  private static final long HEURISTIC_TERMS = 10000;
 
   private long mN = 1;
   {
@@ -28,14 +30,13 @@ public class A052434 extends A000720 {
         while (true) {
           final CR kcr = CR.valueOf(++k);
           final Z t = ncr.pow(kcr.inverse()).li().divide(kcr).getApprox(precision);
-          if (t.isZero() || k > 10000) {
+          if (t.isZero() || k > HEURISTIC_TERMS) {
             break;
           }
           final int mobius = Mobius.mobius(k);
           if (mobius != 0) {
             sum = sum.signedAdd(mobius == 1, t);
           }
-          //System.out.println("n=" + n + " R=" + sum + " t=" + t);
         }
         return sum;
       }
@@ -44,6 +45,8 @@ public class A052434 extends A000720 {
 
   @Override
   public Z next() {
-    return riemann(++mN).subtract(CR.valueOf(super.next())).round();
+    final CR r = riemann(++mN);
+    //System.out.println(mN + " R=" + r);
+    return r.subtract(CR.valueOf(super.next())).round();
   }
 }

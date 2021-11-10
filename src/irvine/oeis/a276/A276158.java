@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A276158 Triangle read by rows: T(n,k) = 6*k*(n + 1 - k) for 0 &lt; k &lt;= n; for k = 0, T(n, 0) = n + 1.
+ * A276158 Triangle read by rows: T(n,k) = 6*k*(n + 1 - k) for 0 &lt; k &lt;= n; for k = 0, T(n,0) = n + 1.
  * @author Georg Fischer
  */
 public class A276158 extends Triangle {

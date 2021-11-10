@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A166918 Triangle T(n,k) read by rows: T(n, 0) = n mod 2. T(n,k) = 2^(k-1), 0&lt;k&lt;=n.
+ * A166918 Triangle T(n,k) read by rows: T(n,0) = n mod 2. T(n,k) = 2^(k-1), 0&lt;k&lt;=n.
  * @author Georg Fischer
  */
 public class A166918 extends Triangle {

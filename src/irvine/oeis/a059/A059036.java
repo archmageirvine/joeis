@@ -15,9 +15,9 @@ public class A059036 extends UpperLeftTriangle {
   public A059036() {
     super(0, 0, -1);
   }
-
+  
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Z.valueOf(n + k + n * k);
+    return Z.valueOf(n + k + n * (long) k);
   }
 }

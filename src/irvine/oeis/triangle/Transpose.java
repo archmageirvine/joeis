@@ -4,48 +4,49 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * Transpose of a triangle S: all rows of S are reversed.
+ * Transpose of a triangle T: all rows of T are reversed.
+ * The underlying sequence should have the "tabl" structure,
+ * but it does not need to extend {@link Triangle}.
  * @author Georg Fischer
  */
-public class Transpose extends Triangle {
+public class Transpose implements Sequence {
 
-  protected Triangle mS; // source triangle
-  
-  /**
-   * Constructor with a Triangle.
-   * @param s sequence for source triangle
-   */
-  public Transpose(final Triangle s) {
-    mS = s;
-  }
-  
+  protected Sequence mSeq; // source sequences (with "tabl" structure)
+  protected int mRow; // current row index n
+  protected int mCol; // current column index k
+  protected Z[] mLastRow;
+
   /**
    * Constructor with a Sequence.
-   * @param s sequence for source triangle
+   * @param seq sequence for source triangle
    */
-  public Transpose(final Sequence s) {
-    this(Triangle.asTriangle(s));
+  public Transpose(final Sequence seq) {
+    mSeq = seq;
+    mRow = -1;
+    mCol = 0; // start with first element T(0,0)
   }
   
   /**
-   * Increases <code>mRow</code>, adds a new, empty target row, resets the column index,
-   * and advances the source sequence such that their <code>mRow</code> is completely filled.
+   * Increases <code>mRow</code> and reads the reverse of the next row from the source triangle into {@#mLastRow}
    */
   protected void addRow() {
-    super.addRow();
+    ++mRow;
+    mLastRow = new Z[mRow + 1];
     for (int k = 0; k <= mRow; ++k) {
-      mS.next();
+      mLastRow[mRow - k] = mSeq.next();
     }
+    mCol = 0;
   }
 
   /**
-   * Computes an element of the resulting triangle.
-   * @param n row number
-   * @param k column number
-   * @return <code>S(n, n-k)</code>, 
+   * Return next term, reading the triangle row by row from left to right, starting with T(0,0).
+   * @return the next term of the sequence.
    */
   @Override
-  protected Z compute(final int n, final int k) {
-    return mS.get(n, n - k);
+  public Z next() {
+    if (mCol > mRow) {
+      addRow();
+    }
+    return mLastRow[mCol++];
   }
 }

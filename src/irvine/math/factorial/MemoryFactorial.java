@@ -35,7 +35,7 @@ public class MemoryFactorial extends MemoryFunction2<Integer, Z> implements Fact
       throw new IllegalArgumentException("n must be nonnegative");
     }
     if (n <= m) {
-      return Z.valueOf(n);
+      return Z.valueOf(Math.max(n, 1));
     }
     return get(n - m, m).multiply(n);
   }

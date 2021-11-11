@@ -14,7 +14,6 @@ import irvine.oeis.Sequence;
 public class A010566 implements Sequence {
 
   private int mN = 0;
-  private final long mC = Lattices.Z2.neighbour(Lattices.Z2.origin(), 0);
   private final ParallelWalker mWalker = new ParallelWalker(8,
     () -> new SelfAvoidingWalker(Lattices.Z2),
     () -> new SelfAvoidingCycler(Lattices.Z2, true));
@@ -22,6 +21,6 @@ public class A010566 implements Sequence {
   @Override
   public Z next() {
     mN += 2;
-    return Z.valueOf(mWalker.count(mN, 4, 1, Lattices.Z2.origin(), mC));
+    return Z.valueOf(mWalker.count(mN, 4, 1, Lattices.Z2.origin(), Lattices.Z2.neighbour(Lattices.Z2.origin(), 0)));
   }
 }

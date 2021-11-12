@@ -94,10 +94,51 @@ public class A052436 implements Sequence {
     return t == null ? '?' : t;
   }
 
+  private static String rotate(final String s) {
+    final int toggle = s.charAt(0) & 1;
+    final char initial = (char) (s.charAt(s.length() - 1) ^ toggle);
+    return s.substring(1, s.length() - 2) + s.charAt(0) + '.' + initial;
+
+//    // Rotate by 1
+//    if ((s.charAt(0) & 1) == 0) { // right angle
+//      return s.substring(1) + s.charAt(0);
+//    } else {
+//      final StringBuilder sb = new StringBuilder();
+//      for (int k = 1; k < s.length(); ++k) {
+//        sb.append((char) (s.charAt(k) ^ 32));
+//      }
+//      sb.append((char) (s.charAt(0) ^ 32));
+//      return sb.toString();
+//    }
+  }
+
+  private static String reverse(final CharSequence s) {
+    final StringBuilder rev = new StringBuilder();
+    for (int k = 0; k < s.length(); ++k) {
+      final char t = s.charAt(k);
+      if (t >= 'a') {
+        rev.append((char) ('`' + (8 - (t - '`'))));
+      } else {
+        rev.append((char) ('@' + (8 - (t - '@'))));
+      }
+    }
+    return rev.toString();
+  }
+
+  private static String mirror(final CharSequence s) {
+    final int toggle = 0; //(s.charAt(0) ^ s.charAt(s.length() - 1)) & 32;
+    final StringBuilder rev = new StringBuilder();
+    for (int k = s.length() - 3; k >= 0; --k) {
+      rev.append((char) (s.charAt(k) ^ toggle));
+    }
+    rev.append('.').append(s.charAt(s.length() - 1));
+    return rev.toString();
+  }
+
   private static String canonRotate(String s) {
     String canon = s;
     for (int k = 1; k < s.length(); ++k) {
-      s = s.substring(1) + s.charAt(0); // rotate by 1
+      s = rotate(s);
       if (s.compareTo(canon) > 0) {
         canon = s;
       }
@@ -115,25 +156,33 @@ public class A052436 implements Sequence {
       final long c = walk[(k + 2) % m];
       sb.append(turn(a, b, c));
     }
+    sb.append('.').append(isDiagonal(walk[0], walk[1]) ? '1' : '0');
     String canon = canonRotate(sb.toString());
-    String rc = canonRotate(sb.reverse().toString());
+    String rc = canonRotate(mirror(sb));
     if (rc.compareTo(canon) > 0) {
       canon = rc;
     }
-    final StringBuilder rev = new StringBuilder();
-    for (int k = 0; k < sb.length(); ++k) {
-      rev.append((char) ('0' + (8 - (sb.charAt(k) - '0'))));
-    }
-    rc = canonRotate(rev.toString());
-    if (rc.compareTo(canon) > 0) {
-      canon = rc;
-    }
-    rc = canonRotate(rev.reverse().toString());
-    if (rc.compareTo(canon) > 0) {
-      canon = rc;
-    }
+//    final String rev = reverse(sb);
+//    rc = canonRotate(rev);
+//    if (rc.compareTo(canon) > 0) {
+//      canon = rc;
+//    }
+//    rc = canonRotate(mirror(rev));
+//    if (rc.compareTo(canon) > 0) {
+//      canon = rc;
+//    }
     //System.out.println("Canon: " + canon);
-    return canon + "." + diagonalCount(walk); // + (walk[1] == LAT.toPoint(1, 0) ? ".0" : ".1");
+    return canon; // + "." + diagonalCount(walk); // + (walk[1] == LAT.toPoint(1, 0) ? ".0" : ".1");
+  }
+
+  private static boolean isDiagonal(final long prevPt, final long point) {
+    final long ax = Z2Q.ordinate(point, 0);
+    final long ay = Z2Q.ordinate(point, 1);
+    final long bx = Z2Q.ordinate(prevPt, 0);
+    final long by = Z2Q.ordinate(prevPt, 1);
+    final long dx = ax - bx;
+    final long dy = ay - by;
+    return dx !=0 && dy != 0;
   }
 
   private static boolean isAcceptableDiagonal(final long[] walk, final long prevPt, final long point, final int t) {
@@ -160,6 +209,19 @@ public class A052436 implements Sequence {
       }
     }
     return true;
+  }
+
+  private static boolean isCounterClockwise(final long[] walk) {
+    long sum = 0;
+    final int m = walk.length - 1;
+    for (int k = 0; k < walk.length - 1; ++k) {
+      final long ax = Z2Q.ordinate(walk[k], 0);
+      final long ay = Z2Q.ordinate(walk[k], 1);
+      final long bx = Z2Q.ordinate(walk[(k + 1) % m], 0);
+      final long by = Z2Q.ordinate(walk[(k + 1) % m], 1);
+      sum += (bx - ax) * (by + ay);
+    }
+    return sum < 0;
   }
 
   private static boolean isAcceptable(final long[] walk, final long point, final int remainingSteps) {
@@ -239,6 +301,9 @@ public class A052436 implements Sequence {
           }
           if (!isAcceptableDiagonal(mWalk, mWalk[mWalk.length - 2], mWalk[0], mWalk.length)) {
             return; // closing the cycle is an X
+          }
+          if (!isCounterClockwise(mWalk)) {
+            return;
           }
           mCount += weight;
           final String canon = canon(walk);

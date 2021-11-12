@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A269947 Triangle read by rows, Stirling cycle numbers of order 3, T(n,n) = 1, T(n,k) = 0 if k&lt;0 or k&gt;n,
+ * A269947 Triangle read by rows, Stirling cycle numbers of order 3, T(n,n) = 1, T(n,k) = 0 if k&lt;0 or k&gt;n, otherwise T(n,k) = T(n-1,k-1)+(n-1)^3*T(n-1,k), for n&gt;=0 and 0&lt;=k&lt;=n.
  * otherwise T(n,k) = T(n-1,k-1)+(n-1)^3*T(n-1,k), for n&gt;=0 and 0&lt;=k&lt;=n.
  * @author Georg Fischer
  */

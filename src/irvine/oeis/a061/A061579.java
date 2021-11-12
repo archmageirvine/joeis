@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001477;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A061579 Reverse one number (0), then two numbers (2, 1), then three (5, 4, 3), then four (9, 8, 7, 6), etc.
+ * A061579 Reverse one number (0), then two numbers (2,1), then three (5,4,3), then four (9,8,7,6), etc.
  * @author Georg Fischer
  */
 public class A061579 extends Transpose {

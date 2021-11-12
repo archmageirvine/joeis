@@ -5,7 +5,7 @@ import irvine.oeis.a047.A047874;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A126065 Triangle of numbers read by rows: T(n,k) = number of permutations sigma of (1, 2,...,n) with n - {length of longest increasing subsequence in sigma} = k (0&lt;=k&lt;=n-1).
+ * A126065 Triangle of numbers read by rows: T(n,k) = number of permutations sigma of (1,2,...,n) with n - {length of longest increasing subsequence in sigma} = k (0&lt;=k&lt;=n-1).
  * @author Georg Fischer
  */
 public class A126065 extends Transpose {

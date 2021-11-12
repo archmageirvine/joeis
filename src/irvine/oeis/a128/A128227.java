@@ -5,7 +5,7 @@ import irvine.oeis.a193.A193592;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A128227 Right border (1, 1, 1,...) added to A002260.
+ * A128227 Right border (1,1,1,...) added to A002260.
  * @author Georg Fischer
  */
 public class A128227 extends Transpose {

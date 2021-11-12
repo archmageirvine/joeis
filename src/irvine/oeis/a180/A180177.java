@@ -5,7 +5,7 @@ import irvine.oeis.a097.A097230;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A180177 Triangle read by rows: T(n,k) is the number of compositions of n without 2&apos;s and having k parts; 1&lt;=k&lt;=n.
+ * A180177 Triangle read by rows: T(n,k) is the number of compositions of n without 2's and having k parts; 1&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A180177 extends Transpose {

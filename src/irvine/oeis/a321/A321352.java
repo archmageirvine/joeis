@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008305;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A321352 Triangle T(n,k) giving the number of permutations pi of {1, 2,...,n} such that for all i, pi(i) is not in {i, i+1, ..., i+k-1} (mod n), with 0 &lt;= k &lt;= n - 1.
+ * A321352 Triangle T(n,k) giving the number of permutations pi of {1,2,...,n} such that for all i, pi(i) is not in {i, i+1, ..., i+k-1} (mod n), with 0 &lt;= k &lt;= n - 1.
  * @author Georg Fischer
  */
 public class A321352 extends Transpose {

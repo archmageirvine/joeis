@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A059369 Triangle of numbers T(n,k) = T(n-1,k-1) + ((n+k-1)/k)*T(n-1,k), n &gt;= 1, 1 &lt;= k &lt;= n, with T(n, 1) = n!, T(n,n) = 1; read from right to left.
+ * A059369 Triangle of numbers T(n,k) = T(n-1,k-1) + ((n+k-1)/k)*T(n-1,k), n &gt;= 1, 1 &lt;= k &lt;= n, with T(n,1) = n!, T(n,n) = 1; read from right to left.
  * @author Georg Fischer
  */
 public class A059369 extends Triangle {

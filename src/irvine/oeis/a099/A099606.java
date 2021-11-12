@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A099606 Row sums of triangle A099605, in which row n equals the inverse Binomial transform of column n of the triangle A034870 of even-indexed rows of Pascal&apos;s triangle.
+ * A099606 Row sums of triangle A099605, in which row n equals the inverse Binomial transform of column n of the triangle A034870 of even-indexed rows of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A099606 extends RowSumSequence {

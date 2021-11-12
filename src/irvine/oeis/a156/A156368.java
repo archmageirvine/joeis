@@ -5,7 +5,7 @@ import irvine.oeis.a058.A058057;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A156368 A m&eacute;nage triangle.
+ * A156368 A m\u00e9nage triangle.
  * @author Georg Fischer
  */
 public class A156368 extends Transpose {

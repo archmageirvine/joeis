@@ -5,7 +5,7 @@ import irvine.oeis.a061.A061554;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A107430 Triangle read by rows: row n is row n of Pascal&apos;s triangle (A007318) sorted into increasing order.
+ * A107430 Triangle read by rows: row n is row n of Pascal's triangle (A007318) sorted into increasing order.
  * @author Georg Fischer
  */
 public class A107430 extends Transpose {

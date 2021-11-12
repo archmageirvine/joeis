@@ -5,7 +5,7 @@ import irvine.oeis.a047.A047812;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A136621 Transpose T(n,k) of Parker&apos;s partition triangle A047812 (n &gt;= 1 and 0 &lt;= k &lt;= n-1).
+ * A136621 Transpose T(n,k) of Parker's partition triangle A047812 (n &gt;= 1 and 0 &lt;= k &lt;= n-1).
  * @author Georg Fischer
  */
 public class A136621 extends Transpose {

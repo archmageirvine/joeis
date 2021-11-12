@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008279;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A094587 Triangle of permutation coefficients arranged with 1&apos;s on the diagonal. Also, triangle of permutations on n letters with exactly k+1 cycles and with the first k+1 letters in separate cycles.
+ * A094587 Triangle of permutation coefficients arranged with 1's on the diagonal. Also, triangle of permutations on n letters with exactly k+1 cycles and with the first k+1 letters in separate cycles.
  * @author Georg Fischer
  */
 public class A094587 extends Transpose {

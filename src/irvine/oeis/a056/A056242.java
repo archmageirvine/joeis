@@ -5,7 +5,7 @@ import irvine.oeis.a117.A117317;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A056242 Triangle read by rows: T(n,k) = number of k-part order-consecutive partition of {1, 2,...,n} (1 &lt;= k &lt;= n).
+ * A056242 Triangle read by rows: T(n,k) = number of k-part order-consecutive partition of {1,2,...,n} (1 &lt;= k &lt;= n).
  * @author Georg Fischer
  */
 public class A056242 extends Transpose {

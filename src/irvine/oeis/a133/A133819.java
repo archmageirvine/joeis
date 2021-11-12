@@ -5,7 +5,7 @@ import irvine.oeis.a055.A055461;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A133819 Triangle whose rows are sequences of increasing squares: 1; 1, 4; 1, 4, 9; ... .
+ * A133819 Triangle whose rows are sequences of increasing squares: 1; 1,4; 1,4,9; ... .
  * @author Georg Fischer
  */
 public class A133819 extends Transpose {

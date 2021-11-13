@@ -1,6 +1,7 @@
 package irvine.oeis.a294;
 
 import java.io.IOException;
+import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
 import irvine.math.graph.Graph;
@@ -8,6 +9,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A294525.
@@ -15,6 +17,7 @@ import irvine.oeis.Sequence;
  */
 public class A294525 implements Sequence, GraphProcessor {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private int mM = 0;
   protected long[] mCount = null;
@@ -54,6 +57,9 @@ public class A294525 implements Sequence, GraphProcessor {
       gg.run(false, false, false, 0, 0);
     } catch (final IOException e) {
       throw new RuntimeException(e);
+    }
+    if (mVerbose) {
+      StringUtils.message(Arrays.toString(mCount));
     }
   }
 

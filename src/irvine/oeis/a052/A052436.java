@@ -147,7 +147,7 @@ public class A052436 implements Sequence {
     final long by = Z2Q.ordinate(prevPt, 1);
     final long dx = ax - bx;
     final long dy = ay - by;
-    return dx !=0 && dy != 0;
+    return dx != 0 && dy != 0;
   }
 
   private static boolean isAcceptableDiagonal(final long[] walk, final long prevPt, final long point, final int t) {

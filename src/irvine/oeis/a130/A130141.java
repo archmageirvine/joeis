@@ -44,7 +44,7 @@ public class A130141 implements Sequence {
       final FactorSequence fs = new FactorSequence(n);
       FACTOR.factor(fs);
       if (mPrintProof) {
-        System.out.println(fs.toString());
+        System.out.println(fs);
       }
       if (!fs.isComplete()) {
         throw new UnsupportedOperationException("n=" + mN + " f=" + n);
@@ -102,7 +102,7 @@ public class A130141 implements Sequence {
           sb.append(z);
         }
       }
-      System.out.println("New n = " + sb.toString());
+      System.out.println("New n = " + sb);
     } else {
       // Generate partial proof for sequence.
       final A130141 seq = new A130141();

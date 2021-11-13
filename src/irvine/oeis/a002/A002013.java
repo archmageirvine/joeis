@@ -55,7 +55,7 @@ public class A002013 implements Sequence {
 
     @Override
     public String toString() {
-      return (mParent == null ? "" : mParent.toString() + "-") + "(" + mX + "," + mY + ")";
+      return (mParent == null ? "" : mParent + "-") + "(" + mX + "," + mY + ")";
     }
 
     void draw(final PrintStream out) {

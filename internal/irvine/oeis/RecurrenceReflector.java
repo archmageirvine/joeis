@@ -151,7 +151,7 @@ public class RecurrenceReflector {
               }
               buffer.append(',');
               buffer.append(den[0]);
-              parts[ipart++] = "[0" + buffer.toString() + "]"; // MATRIX
+              parts[ipart++] = "[0" + buffer + "]"; // MATRIX
 
               buffer.setLength(0);
               for (int iterm = Math.max(dlen, mlen); iterm >= 1; --iterm) {

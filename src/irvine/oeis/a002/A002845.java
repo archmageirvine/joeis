@@ -165,7 +165,7 @@ public class A002845 implements Sequence {
     int part = 0;
     if (n == 1) {
       try (final PrintStream out = new PrintStream(new FileOutputStream(new File(new File(rootDir), fOut)))) {
-        out.println(SparseInteger.create(2).toString());
+        out.println(SparseInteger.create(2));
       }
     } else if (slice == 0) {
       // This is only useful for smaller n, does all slices, in a non-efficient manner

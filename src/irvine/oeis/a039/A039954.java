@@ -18,7 +18,7 @@ public class A039954 extends A000796 {
     while (true) {
       final StringBuilder r = new StringBuilder(mA).reverse();
       mA.append(super.next());
-      final Z t = new Z(mA.toString() + r.toString());
+      final Z t = new Z(mA.toString() + r);
       if (t.isProbablePrime()) {
         return t;
       }

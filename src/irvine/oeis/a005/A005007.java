@@ -70,7 +70,7 @@ public class A005007 implements Sequence, GraphProcessor {
       }
     }
     if (mVerbose) {
-      System.out.println(graph.toString());
+      System.out.println(graph);
     }
     return true;
   }

@@ -53,7 +53,7 @@ public class A117388 implements Sequence {
         .append('^')
         .append(s.substring(k));
     }
-    ps.println(sb.toString());
+    ps.println(sb);
   }
 
   private boolean test(final long c, final PrintStream ps) {

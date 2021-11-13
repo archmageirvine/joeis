@@ -44,7 +44,7 @@ public class A011187 implements Sequence {
       }
       sb.append(str);
     }
-    System.out.println(sb.toString());
+    System.out.println(sb);
   }
 
   private void search(final int pos) {

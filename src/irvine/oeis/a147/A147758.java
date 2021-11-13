@@ -25,7 +25,7 @@ public class A147758 implements Sequence {
       return Z.NINE;
     default:
       mMiddle.append('1');
-      return new Z("10" + mMiddle.toString() + "01", 2);
+      return new Z("10" + mMiddle + "01", 2);
     }
   }
 }

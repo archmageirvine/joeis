@@ -23,7 +23,7 @@ public class A001072 implements Sequence, GraphProcessor {
     if (graph.isMinimallyTwoEdgeConnected()) {
       ++mCount;
       if (mVerbose) {
-        System.out.println(graph.toString());
+        System.out.println(graph);
       }
     }
   }

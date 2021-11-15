@@ -1,21 +1,16 @@
 package irvine.oeis.a006;
 
-import irvine.math.z.Binomial;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A006013 a(n) = binomial(3*n+1,n)/(n+1).
- * @author Sean A. Irvine
+ * Recurrence: 2*(n+1)*(2n+1)*a(n) = 3*(3n-1)*(3n+1)*a(n-1).
+ * @author Georg Fischer
  */
-public class A006013 implements Sequence {
+public class A006013 extends HolonomicRecurrence {
 
-  private long mN = -1;
-
-  @Override
-  public Z next() {
-    ++mN;
-    return Binomial.binomial(3 * mN + 1, mN).divide(mN + 1);
+  /** Construct the sequence. */
+  public A006013() {
+    super(0, "[[0],[-3, 0, 27],[-2,-6,-4]]", "1", 0);
   }
 }
-

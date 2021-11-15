@@ -655,7 +655,7 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
         sb.append(m);
       }
     }
-    return getName() + " = " + sb;
+    return getName().isEmpty() ? sb.toString() : getName() + " = " + sb;
   }
 
   /**

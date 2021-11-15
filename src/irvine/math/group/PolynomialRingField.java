@@ -220,7 +220,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
     if (zero().equals(den)) {
       throw new ArithmeticException();
     }
-    // Find smallest degree non-zero coefficient in denominator.
+    // Find the smallest degree non-zero coefficient in denominator.
     // Such a coefficient must exist because den != 0
     int offset = 0;
     while (mZero.equals(den.coeff(offset))) {

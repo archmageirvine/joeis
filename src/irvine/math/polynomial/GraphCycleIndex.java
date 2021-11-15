@@ -1,7 +1,6 @@
 package irvine.math.polynomial;
 
 import irvine.math.LongUtils;
-import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
@@ -18,14 +17,12 @@ public final class GraphCycleIndex {
   private GraphCycleIndex() {
   }
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-
   private static long getPowersOfTwo(final int[] v) {
     long powersOfTwo = 0;
     for (int k = 1; k < v.length; ++k) {
       if (v[k] > 0) {
-        powersOfTwo += k * v[k] * (v[k] - 1) / 2;
-        powersOfTwo += ((k - 1) / 2) * v[k];
+        powersOfTwo += k * (long) v[k] * (v[k] - 1) / 2;
+        powersOfTwo += ((k - 1) / 2L) * v[k];
         for (int j = k + 1; j < v.length; ++j) {
           powersOfTwo += LongUtils.gcd(j, k) * v[j] * v[k];
         }
@@ -56,6 +53,9 @@ public final class GraphCycleIndex {
    * @return cycle index
    */
   public static CycleIndex cycleIndex(final int vertices) {
+    if (vertices == 0) {
+      return CycleIndex.ONE;
+    }
     final CycleIndex ci = new CycleIndex("Z(H" + vertices + ")");
     final IntegerPartition ip = new IntegerPartition(vertices);
     final int[] v = new int[vertices + 1];

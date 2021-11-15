@@ -327,7 +327,7 @@ A004076 Number of hooked Skolem sequences of order n
 A004077 Extended Skolem sequences of order n
 A004078 Tuscan squares of order n, hard, insufficient detail
 A004079 Maximal m such that an m X n Florentine rectangle exists, hard
-A004115 Number of unlabeled rooted nonseparable graphs with n nodes, sim A002218?
+A004115 Number of unlabeled rooted nonseparable graphs with n nodes, sim A002218? [Howroyd has code now]
 A004118 Maximal excess of a Hadamard matrix of order 4n, hard
 A004145 Number of degenerate simplices in n-cube, hard to get many terms
 A004204 Number of permutations of length n with spread 0, have paper
@@ -1768,3 +1768,4 @@ A052418 Number of n-crossing knots having symmetry group D4.
 A052420 Number of n-crossing knots having symmetry group D6.
 A052422 Number of n-crossing knots having symmetry group D8.
 A052432 Smallest conductor of elliptic curve with rank n
+A052442 Depends A002218

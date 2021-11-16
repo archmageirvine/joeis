@@ -7,7 +7,6 @@ import irvine.oeis.a002.A002036;
 /**
  * A092847 a(n) = Sum_{k=1..n} round(prime(k) / log(prime(k))).
  * Partial sums of A002036. 
- * Implmentation limit at a(4885).
  * @author Georg Fischer
  */
 public class A092847 extends PartialSumSequence {

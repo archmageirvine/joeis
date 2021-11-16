@@ -17,6 +17,6 @@ public class A068606 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Z.valueOf(n * k).multiply(n + k + 1);
+    return Z.valueOf(n * (long) k).multiply(n + k + 1);
   }
 }

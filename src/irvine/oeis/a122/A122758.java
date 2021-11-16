@@ -11,6 +11,6 @@ public class A122758 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return k == 0 ? Z.TWO.multiply(n * n) : (k == 1 ? Z.SIX.multiply(n * n) : get(n, k - 2).multiply(4));
+    return k == 0 ? Z.TWO.multiply(n * (long) n) : (k == 1 ? Z.SIX.multiply(n * (long) n) : get(n, k - 2).multiply(4));
   }
 }

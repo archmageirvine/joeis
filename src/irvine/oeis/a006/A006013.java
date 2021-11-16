@@ -4,7 +4,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A006013 a(n) = binomial(3*n+1,n)/(n+1).
- * Recurrence: 2*(n+1)*(2n+1)*a(n) = 3*(3n-1)*(3n+1)*a(n-1).
+ * Recurrence: <code>2*(n+1)*(2n+1)*a(n) = 3*(3n-1)*(3n+1)*a(n-1)</code>.
  * @author Georg Fischer
  */
 public class A006013 extends HolonomicRecurrence {

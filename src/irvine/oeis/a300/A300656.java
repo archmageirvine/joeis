@@ -17,6 +17,6 @@ public class A300656 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Z.valueOf(30 * k * k).multiply(n - k).multiply(n - k).add(1);
+    return Z.valueOf(30L * k * k).multiply(n - k).multiply(n - k).add(1);
   }
 }

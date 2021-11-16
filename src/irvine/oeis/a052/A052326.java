@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 public class A052326 extends A052325 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private Polynomial<Z> mB = RING.empty();
+  private final Polynomial<Z> mB = RING.empty();
   {
    mB.add(Z.ZERO);
   }
@@ -21,9 +21,7 @@ public class A052326 extends A052325 {
   @Override
   public Z next() {
     mB.add(super.next());
-    if (++mN >= 1) {
-    }
-    if (mN <= 10) {
+    if (++mN <= 10) {
       return mN <= 1 ? Z.ONE : Z.ZERO;
     }
     final Z t = mB.substitutePower(2, mN).coeff(mN).add(RING.pow(mB, 2, mN).coeff(mN)).divide2();

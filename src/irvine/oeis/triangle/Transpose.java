@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 /**
  * Transpose of a triangle T: all rows of T are reversed.
- * The underlying sequence should have the "tabl" structure,
+ * The underlying sequence should have the "<code>tabl</code>" structure,
  * but it does not need to extend {@link Triangle}.
  * @author Georg Fischer
  */
@@ -27,7 +27,7 @@ public class Transpose implements Sequence {
   }
   
   /**
-   * Increases <code>mRow</code> and reads the reverse of the next row from the source triangle into {@#mLastRow}
+   * Increases <code>mRow</code> and reads the reverse of the next row from the source triangle into <code>mLastRow</code>
    */
   protected void addRow() {
     ++mRow;

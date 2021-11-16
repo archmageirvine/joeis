@@ -18,6 +18,6 @@ public class A081458 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Z.THREE.pow(2 * n).add(Z.FIVE.pow(2 * k)).divide2();
+    return Z.THREE.pow(2L * n).add(Z.FIVE.pow(2L * k)).divide2();
   }
 }

@@ -1,5 +1,7 @@
 package irvine.oeis.a004;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import irvine.math.Mobius;
@@ -22,6 +24,7 @@ public class A004115 implements Sequence {
 
   private static final CycleIndexRing CI = new CycleIndexRing();
   private static final PolynomialRing<CycleIndex> RING = new PolynomialRing<>("y", CI);
+  private static final MultivariateMonomial X1 = MultivariateMonomial.create(1, 1);
   private int mN = 2;
 
   // todo move to GraphCycleIndex
@@ -89,7 +92,7 @@ public class A004115 implements Sequence {
     return s;
   }
 
-  private CycleIndex innerSubs(final CycleIndex ci, final int subs, final int degree) {
+  private CycleIndex innerSubs(final CycleIndex ci, final int subs, final int lim) {
     final MultivariateMonomial[] terms = new MultivariateMonomial[ci.size()];
     int k = 0;
     for (final MultivariateMonomial t : ci.values()) {
@@ -97,8 +100,12 @@ public class A004115 implements Sequence {
       terms[k].setCoefficient(t.getCoefficient());
       for (Map.Entry<Pair<String, Integer>, Z> e : t.entrySet()) {
         final int i = e.getKey().right();
-        if (i * subs <= degree) {
+        if (i <= lim) {
           terms[k].add(i * subs, e.getValue());
+        } else {
+          // todo is this right?
+          terms[k] = MultivariateMonomial.ZERO;
+          break;
         }
       }
       ++k;
@@ -106,10 +113,10 @@ public class A004115 implements Sequence {
     return new CycleIndex("", terms);
   }
 
-  private Polynomial<CycleIndex> innerSubs(final Polynomial<CycleIndex> p, final int k) {
+  private Polynomial<CycleIndex> innerSubs(final Polynomial<CycleIndex> p, final int k, final int lim) {
     final Polynomial<CycleIndex> res = RING.empty();
     for (final CycleIndex ci : p) {
-      res.add(innerSubs(ci, k, p.degree()));
+      res.add(innerSubs(ci, k, lim));
     }
     return res;
   }
@@ -121,11 +128,78 @@ public class A004115 implements Sequence {
     for (int k = 0; k <= p.degree(); ++k) {
       final int mobius = Mobius.mobius(k);
       if (k != 0) {
-        final Polynomial<CycleIndex> subs = divide(innerSubs(log.substitutePower(k, p.degree()), k), k);
+        final Polynomial<CycleIndex> subs = divide(innerSubs(log.substitutePower(k, p.degree()), k , p.degree() / k), k);
         res = RING.signedAdd(mobius == 1, res, subs);
       }
     }
     return res;
+  }
+
+  /*
+  \\ Inverse of sSubstOp.
+\\ Returns species A such that Z=A(B).
+sSolve(Z, B)={
+  B -= polcoeff(B,0);
+  my(m=serprec(Z,x)-1, n=serprec(B,x));
+  if(n==oo, n=m, n=min(m, n-1));
+  if(m > n, m=n);
+  my(vars=vector(n, i, sv(i)));
+  my(f=vector(m, k, xsubstvec(B + O(x*x^(n\k)), concat([x, 'y], vars[1..n\k]), concat([x^k, 'y^k], vector(n\k, i, vars[i*k])))/x^k ));
+  my(b1=polcoeff(polcoeff(B,1,x), 1, sv(1)));
+  my(r=polcoeff(Z,0,x));
+  for(i=1, n, my(t=polcoeff(Z,i,x)/b1); r += t*x^i;
+     \\      Z-=x^i*xsubstvec(t + O(x^(n-i+1)), vars[1..i], f[1..i])
+     \\ Faster version of above (in v2.11.1 of PARI)
+     my(X=O(x^(n-i+1))); Z-=x^i*substvec(t + X, vars[1..i], vector(i,j,f[j] + X))
+  );
+  r + O(x*x^n);
+}
+   */
+
+  private Polynomial<CycleIndex> specialSubs(final CycleIndex t, final List<Polynomial<CycleIndex>> f, final int n) {
+    // substvec(t + X, vars[1..i], vector(i,j,f[j] + X)
+    Polynomial<CycleIndex> res = RING.empty();
+    for (final MultivariateMonomial m : t.values()) {
+      Polynomial<CycleIndex> r = RING.zero();
+      for (Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        final int i = e.getKey().right();
+        if (i <= n) {
+          r = RING.multiply(r, RING.pow(f.get(i - 1), e.getValue().intValueExact()));
+        }
+      }
+      final CycleIndex u = CycleIndex.ONE.copy();
+      u.multiply(m.getCoefficient());
+      r = RING.multiply(r, u);
+      res = RING.add(res, r);
+    }
+    return res;
+  }
+
+  private Polynomial<CycleIndex> sSolve(Polynomial<CycleIndex> z, final Polynomial<CycleIndex> b) {
+    final Polynomial<CycleIndex> bb = RING.create(b);
+    bb.set(0, CycleIndex.ZERO); // bb = b - [x^0] b
+    int m = z.degree();
+    final int n = Math.min(bb.size(), m);
+    if (m > n) {
+      m = n;
+    }
+    // valid variables are x1, ..., xn
+    // f=vector(m, k, xsubstvec(B + O(x*x^(n\k)), concat([x, 'y], vars[1..n\k]), concat([x^k, 'y^k], vector(n\k, i, vars[i*k])))/x^k ))
+    final List<Polynomial<CycleIndex>> f = new ArrayList<>(m);
+    for (int k = 1; k <= m; ++k) {
+      f.add(innerSubs(b.substitutePower(k, n), k, n / k).shift(-k));
+    }
+    System.out.println("f=" + f + " n=" + n);
+    final Q b1 = b.coeff(1).get(X1.termKey()).getCoefficient();
+    final Polynomial<CycleIndex> r = RING.empty();
+    r.add(z.coeff(0));
+    for (int i = 1; i <= n; ++i) {
+      final CycleIndex t = z.coeff(i).copy();
+      t.multiply(b1.reciprocal());
+      r.add(t);
+      z = RING.subtract(z, specialSubs(t, f, i).shift(i));
+    }
+    return r;
   }
 
   @Override
@@ -139,7 +213,13 @@ public class A004115 implements Sequence {
     final Polynomial<CycleIndex> gcrxs1 = RING.multiply(gcr.shift(-1), S1NEG1);
     System.out.println("gcrxs1=" + gcrxs1);
     // sLog( gcr/(x*sv(1)) )
-    System.out.println(sLog(gcrxs1));
+    final Polynomial<CycleIndex> log = sLog(gcrxs1);
+    System.out.println("log=" + log);
+    System.out.println(sSolve(log, gcr)); // technically should *x
     return null;
   }
 }
+
+/*
+cycleIndexSeries(n)={my(g=graphsSeries(n), gcr=sPoint(g)/g); x*sSolve( sLog( gcr/(x*sv(1)) ), gcr )}
+ */

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A054144 Triangular array T: put T(n, 0)=n for all n &gt;= 0 and all other T(n,k)=0;
+ * A054144 Triangular array T: put T(n,0)=n for all n &gt;= 0 and all other T(n,k)=0; then put T(n,k)=Sum{T(i,j): 0&lt;=j&lt;=i-n+k, n-k&lt;=i&lt;=n}.
  * then put T(n,k)=Sum{T(i,j): 0&lt;=j&lt;=i-n+k, n-k&lt;=i&lt;=n}.
  * @author Georg Fischer
  */

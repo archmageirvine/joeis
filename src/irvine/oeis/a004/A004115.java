@@ -17,7 +17,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A052436.
+ * A004115 Number of unlabeled rooted nonseparable graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A004115 implements Sequence {

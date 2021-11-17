@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025060 Numbers of the form i*j + j*k + k*i (for i,j,k integers).
+ * A025060 Numbers of the form i*j + j*k + k*i, where 1 &lt;= i &lt; j &lt; k.
  * @author Sean A. Irvine
  */
 public class A025060 implements Sequence {

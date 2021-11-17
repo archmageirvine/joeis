@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244646 Decimal expansion of the sum of the reciprocals of the Enneagonal or Nonagonal numbers (A001106).
+ * A244646 Decimal expansion of the sum of the reciprocals of the 9-gonal (or enneagonal or nonagonal) numbers (A001106).
  * @author Georg Fischer
  */
 public class A244646 extends DecimalExpansionSequence {

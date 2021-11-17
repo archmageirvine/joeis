@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A195916 Table with T(n,n) = n, T(n,k) = xor(T(n-1,k-1), T(n-1,k))
+ * A195916 Table with T(n,n) = n, T(n,k) = xor(T(n-1,k-1), T(n-1,k)).
  * @author Georg Fischer
  */
 public class A195916 extends Triangle {

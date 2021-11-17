@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a294.A294525;
 
 /**
- * A052436.
+ * A052438 Number of simple unlabeled n-node graphs with 2 center nodes.
  * @author Sean A. Irvine
  */
 public class A052438 extends A294525 {

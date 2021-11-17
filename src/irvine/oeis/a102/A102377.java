@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001316;
 
 /**
- * A102377 Gould&apos;s sequence A001316 in binary.
+ * A102377 Gould's sequence A001316 in binary.
  * @author Georg Fischer
  */
 public class A102377 extends A001316 {

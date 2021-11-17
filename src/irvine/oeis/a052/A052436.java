@@ -200,13 +200,13 @@ public class A052436 implements Sequence {
     return isAcceptableDiagonal(walk, p0, point, t - 2);
   }
 
-//  private static String toString(final long[] walk) {
-//    final StringBuilder sb = new StringBuilder();
-//    for (int k = 0; k < walk.length - 1; ++k) {
-//      sb.append(Z2Q.toString(walk[k])).append(',');
-//    }
-//    return sb.toString();
-//  }
+  private static String toString(final long[] walk) {
+    final StringBuilder sb = new StringBuilder();
+    for (int k = 0; k < walk.length - 1; ++k) {
+      sb.append(Z2Q.toString(walk[k])).append(',');
+    }
+    return sb.toString();
+  }
 
   private int mN = 0;
   private final Set<String> mCanons = Collections.synchronizedSet(new HashSet<>());
@@ -234,7 +234,9 @@ public class A052436 implements Sequence {
         if (!isCounterClockwise(walk)) {
           return;
         }
-        mCanons.add(canon(walk));
+        if (mCanons.add(canon(walk)) && mVerbose) {
+          System.out.println("Retained: " + mCanons.size() + " " + A052436.toString(walk));
+        }
       });
     }
   };

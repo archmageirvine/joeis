@@ -11,8 +11,8 @@ import irvine.oeis.Sequence;
  */
 public class A192110 implements Sequence {
 
-  protected long mBasei;
-  protected long mBasej;
+  //protected long mBasei;
+  //protected long mBasej;
   protected final TreeSet<Z> mSet;
 
   /** Construct the sequence. */
@@ -26,13 +26,12 @@ public class A192110 implements Sequence {
    * @param basej base for exponent <code>j</code>
    */
   public A192110(final long basei, final long basej) {
-    mBasei = basei;
-    mBasej = basej;
+    //mBasei = basei;
+    //mBasej = basej;
     mSet = new TreeSet<>();
     mSet.add(Z.ZERO); // a^0 - b^0 = 0 is always a member
     Z powi = Z.ONE;
     for (int i = 0; i <= 40; ++i) {
-      int j = 0;
       Z powj = Z.ONE;
       boolean busy = true;
       while (busy) {
@@ -44,7 +43,6 @@ public class A192110 implements Sequence {
           mSet.add(diff);
           powj = powj.multiply(basej);
         }
-        ++j;
       }
       powi = powi.multiply(basei);
     }

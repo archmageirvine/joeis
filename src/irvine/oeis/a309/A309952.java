@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 
 /**
  * A309952 XOR contraction of binary representation of n.
- * a(0) = 0, a(4n) = 2*a(n), a(4n+1) = 2*a(n)+1, a(4n+2) = 2*a(n)+1, a(4n+3) = 2*a(n)
+ * <code>a(0) = 0, a(4n) = 2*a(n), a(4n+1) = 2*a(n)+1, a(4n+2) = 2*a(n)+1, a(4n+3) = 2*a(n)</code>
  * @author Georg Fischer
  */
 public class A309952 extends MemorySequence {

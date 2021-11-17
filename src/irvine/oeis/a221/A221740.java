@@ -11,16 +11,12 @@ import irvine.oeis.a051.A051846;
 public class A221740 implements Sequence {
 
   private final Sequence mA051846 = new A051846();
-  protected long mN;
-  /** Construct the sequence. */
-  public A221740() {
-    mN = 0;
-  }
-  
+  protected long mN = 0;
+
   @Override
   public Z next() {
     ++mN;
-    return Z.ZERO.subtract(Z.FOUR.multiply(mA051846.next()).divide(Z.ZERO.subtract(Z.THREE).add((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE)).multiply(Z.valueOf(mN)));
+    return Z.FOUR.multiply(mA051846.next()).divide(Z.THREE.signedAdd((mN & 1L) == 1, Z.ONE).multiply(Z.valueOf(mN)));
   }
 
 }

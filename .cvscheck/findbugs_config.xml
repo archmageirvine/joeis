@@ -157,7 +157,7 @@
      <Match classregex="irvine.math.lattice.Animal">
        <BugCode name="EI"/>
      </Match>
-     <Match classregex="rvine.oeis.HolonomicRecurrence">
+     <Match classregex="irvine.oeis.HolonomicRecurrence">
        <BugCode name="EI"/>
      </Match>
 

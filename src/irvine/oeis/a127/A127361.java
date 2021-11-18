@@ -10,10 +10,10 @@ import irvine.oeis.a100.A100098;
  */
 public class A127361 extends A100098 {
 
-  protected int mN = -1;
+  private int mM = -1;
   
   @Override
   public Z next() {
-    return (++mN & 1) == 0 ? super.next() : super.next().negate();
+    return (++mM & 1) == 0 ? super.next() : super.next().negate();
   }
 }

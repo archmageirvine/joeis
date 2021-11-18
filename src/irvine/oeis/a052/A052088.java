@@ -28,6 +28,16 @@ public class A052088 implements Sequence {
       }
       return Long.compare(mM, o.mM);
     }
+
+    @Override
+    public int hashCode() {
+      return mA.hashCode();
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof State && ((State) obj).mA.equals(mA) && ((State) obj).mM == mM;
+    }
   }
 
   private State mNext = new State(Z.valueOf(21), 1);

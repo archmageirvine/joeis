@@ -7,7 +7,9 @@ import java.util.Map;
 import irvine.math.Mobius;
 import irvine.math.group.CycleIndexRing;
 import irvine.math.group.PolynomialRing;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.util.Pair;
 
@@ -203,4 +205,48 @@ public final class CombinatorialSpecies {
     return r;
   }
 
+  /**
+   * Formal integral with respect to a cycle index variable.
+   * @param p species
+   * @param variable cycle index variable number
+   * @return formal integral
+   */
+  public static Polynomial<CycleIndex> integrate(final Polynomial<CycleIndex> p, final int variable) {
+    final Polynomial<CycleIndex> res = RING.empty();
+    for (final CycleIndex ci : p) {
+      res.add(ci.integrate(variable));
+    }
+    return res;
+  }
+
+//  public static Polynomial<CycleIndex> substitute(final Polynomial<CycleIndex> p, final int variable, final Z value) {
+//    final Polynomial<CycleIndex> res = RING.empty();
+//    for (final CycleIndex ci : p) {
+//      res.add(ci.substitute(variable, value));
+//    }
+//    return res;
+//  }
+
+  public static Polynomial<CycleIndex> drop(final Polynomial<CycleIndex> p, final int variable) {
+    final Polynomial<CycleIndex> res = RING.empty();
+    for (final CycleIndex ci : p) {
+      res.add(ci.drop(variable));
+    }
+    return res;
+  }
+
+  private static final PolynomialRingField<Q> POLY = new PolynomialRingField<>(Rationals.SINGLETON);
+
+  /**
+   * Evaluate the species with 1 in every variable.
+   * @param p species
+   * @return evaluation
+   */
+  public static Polynomial<Q> eval1(final Polynomial<CycleIndex> p) {
+    final Polynomial<Q> res = POLY.empty();
+    for (final CycleIndex c : p) {
+      res.add(c.eval(1));
+    }
+    return res;
+  }
 }

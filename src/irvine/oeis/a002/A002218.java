@@ -1,4 +1,4 @@
-package irvine.oeis.a004;
+package irvine.oeis.a002;
 
 import irvine.math.polynomial.CombinatorialSpecies;
 import irvine.math.polynomial.CycleIndex;
@@ -8,10 +8,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004115 Number of unlabeled rooted nonseparable graphs with n nodes.
+ * A002118.
  * @author Sean A. Irvine
  */
-public class A004115 implements Sequence {
+public class A002218 implements Sequence {
 
   // After Andrew Howroyd
 
@@ -21,15 +21,15 @@ public class A004115 implements Sequence {
   @Override
   public Z next() {
     final Polynomial<CycleIndex> g = CombinatorialSpecies.graphSeries(++mN);
-    //StringUtils.message("( " + sPoint(g, 1) + " ) / ( " + g + " )");
-    final Polynomial<CycleIndex> gcr = CombinatorialSpecies.divide(CombinatorialSpecies.sPoint(g, 1), g);
-    //StringUtils.message("gcr=" + gcr);
+    final Polynomial<CycleIndex> gc = CombinatorialSpecies.sLog(g);
+    final Polynomial<CycleIndex> gcr = CombinatorialSpecies.sPoint(gc, 1);
     final Polynomial<CycleIndex> gcrxs1 = CombinatorialSpecies.RING.multiply(gcr.shift(-1), S1NEG1);
-    //StringUtils.message("gcrxs1=" + gcrxs1);
     final Polynomial<CycleIndex> log = CombinatorialSpecies.sLog(gcrxs1);
-    //StringUtils.message("log=" + log);
-    final Polynomial<CycleIndex> solve = CombinatorialSpecies.sSolve(log, gcr);
-    //StringUtils.message("solve=" + solve); // technically should *x
-    return CombinatorialSpecies.eval1(solve).coeff(mN - 1).toZ();
+    final Polynomial<CycleIndex> solve = CombinatorialSpecies.sSolve(log, gcr).shift(1);
+    final Polynomial<CycleIndex> integral = CombinatorialSpecies.integrate(solve, 1);
+    final Polynomial<CycleIndex> subs = CombinatorialSpecies.drop(gc, 1);
+    final Polynomial<CycleIndex> solve1 = CombinatorialSpecies.sSolve(subs, gcr);
+    final Polynomial<CycleIndex> add = CombinatorialSpecies.RING.add(integral, solve1);
+    return CombinatorialSpecies.eval1(add).coeff(mN).toZ();
   }
 }

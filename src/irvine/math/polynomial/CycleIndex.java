@@ -285,6 +285,19 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return res;
   }
 
+  /**
+   * The formal integral of this cycle index with respect to a particular variable.
+   * @param index index of variable
+   * @return integral
+   */
+  public CycleIndex integrate(final int index) {
+    final CycleIndex res = new CycleIndex("integrate(" + getName() + ")");
+    for (final MultivariateMonomial m : values()) {
+      res.add(m.integrate(MultivariateMonomial.DEFAULT_VARIABLE, index));
+    }
+    return res;
+  }
+
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
   private Polynomial<Q> getSubs(final ArrayList<Polynomial<Q>> substitutes, final int power) {
@@ -669,5 +682,15 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
       }
     }
     return lead;
+  }
+
+  public CycleIndex drop(final int variable) {
+    final CycleIndex res = copy();
+    for (final MultivariateMonomial mm : values()) {
+      if (mm.containsKey(new Pair<>(MultivariateMonomial.DEFAULT_VARIABLE, variable))) {
+        res.remove(mm.termKey());
+      }
+    }
+    return res;
   }
 }

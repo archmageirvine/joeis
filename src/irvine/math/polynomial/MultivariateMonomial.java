@@ -326,6 +326,24 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
     return res;
   }
 
+  /**
+   * Return the formal integral of this multivariate monomial with respect
+   * to the given variable.
+   * @param var variable name
+   * @param index variable index
+   * @return integral
+   */
+  public MultivariateMonomial integrate(final String var, final int index) {
+    final Pair<String, Integer> key = new Pair<>(var, index);
+    final Z power = getOrDefault(key, Z.ZERO).add(1);
+    final MultivariateMonomial res = copy();
+    res.mTotalDegree = res.mTotalDegree.add(1);
+    res.mTermKey = null;
+    res.put(key, power);
+    res.multiply(new Q(Z.ONE, power));
+    return res;
+  }
+
   private static void appendTeX(final StringBuilder sb, final Z v) {
     if (v.compareTo(Z.TEN) < 0) {
       sb.append(v);

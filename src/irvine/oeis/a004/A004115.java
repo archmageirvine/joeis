@@ -7,11 +7,13 @@ import java.util.Map;
 import irvine.math.Mobius;
 import irvine.math.group.CycleIndexRing;
 import irvine.math.group.PolynomialRing;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.GraphCycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Pair;
@@ -135,6 +137,26 @@ public class A004115 implements Sequence {
     return res;
   }
 
+  private Polynomial<CycleIndex> specialSubs(final CycleIndex t, final List<Polynomial<CycleIndex>> f, final int n) {
+    // substvec(t + X, vars[1..i], vector(i,j,f[j] + X)
+    //System.out.println("specialSubs: t=" + t + " n=" + n + " f=" + f);
+    Polynomial<CycleIndex> res = RING.empty();
+    for (final MultivariateMonomial m : t.values()) {
+      Polynomial<CycleIndex> r = RING.one();
+      for (Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        final int i = e.getKey().right();
+        if (i <= n) {
+          r = RING.multiply(r, RING.pow(f.get(i - 1), e.getValue().intValueExact()));
+        }
+      }
+      final CycleIndex u = CycleIndex.ONE.copy();
+      u.multiply(m.getCoefficient());
+      r = RING.multiply(r, u);
+      res = RING.add(res, r);
+    }
+    return res;
+  }
+
   /*
   \\ Inverse of sSubstOp.
 \\ Returns species A such that Z=A(B).
@@ -156,25 +178,6 @@ sSolve(Z, B)={
 }
    */
 
-  private Polynomial<CycleIndex> specialSubs(final CycleIndex t, final List<Polynomial<CycleIndex>> f, final int n) {
-    // substvec(t + X, vars[1..i], vector(i,j,f[j] + X)
-    Polynomial<CycleIndex> res = RING.empty();
-    for (final MultivariateMonomial m : t.values()) {
-      Polynomial<CycleIndex> r = RING.zero();
-      for (Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
-        final int i = e.getKey().right();
-        if (i <= n) {
-          r = RING.multiply(r, RING.pow(f.get(i - 1), e.getValue().intValueExact()));
-        }
-      }
-      final CycleIndex u = CycleIndex.ONE.copy();
-      u.multiply(m.getCoefficient());
-      r = RING.multiply(r, u);
-      res = RING.add(res, r);
-    }
-    return res;
-  }
-
   private Polynomial<CycleIndex> sSolve(Polynomial<CycleIndex> z, final Polynomial<CycleIndex> b) {
     final Polynomial<CycleIndex> bb = RING.create(b);
     bb.set(0, CycleIndex.ZERO); // bb = b - [x^0] b
@@ -191,15 +194,27 @@ sSolve(Z, B)={
     }
     System.out.println("f=" + f + " n=" + n);
     final Q b1 = b.coeff(1).get(X1.termKey()).getCoefficient();
+    System.out.println("b1=" + b1);
     final Polynomial<CycleIndex> r = RING.empty();
     r.add(z.coeff(0));
     for (int i = 1; i <= n; ++i) {
       final CycleIndex t = z.coeff(i).copy();
       t.multiply(b1.reciprocal());
       r.add(t);
-      z = RING.subtract(z, specialSubs(t, f, i).shift(i));
+      //System.out.println("SUBS: " + specialSubs(t, f, i)); //.truncate(n - i).shift(i));
+      z = RING.subtract(z, specialSubs(t, f, i).truncate(n - i).shift(i));
     }
     return r;
+  }
+
+  private static final PolynomialRingField<Q> POLY = new PolynomialRingField<>(Rationals.SINGLETON);
+
+  private Polynomial<Q> apply(final Polynomial<CycleIndex> p) {
+    final Polynomial<Q> res = POLY.empty();
+    for (final CycleIndex c : p) {
+      res.add(c.eval(1));
+    }
+    return res;
   }
 
   @Override
@@ -215,8 +230,10 @@ sSolve(Z, B)={
     // sLog( gcr/(x*sv(1)) )
     final Polynomial<CycleIndex> log = sLog(gcrxs1);
     System.out.println("log=" + log);
-    System.out.println(sSolve(log, gcr)); // technically should *x
-    return null;
+    final Polynomial<CycleIndex> solve = sSolve(log, gcr);
+    System.out.println(solve); // technically should *x
+    System.out.println(apply(solve));
+    return apply(solve).coeff(mN - 1).toZ();
   }
 }
 

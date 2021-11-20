@@ -373,7 +373,6 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
   }
 
   private static Q apply(final MultivariateMonomial p, final int... v) {
-    // todo recast this without maxIndex
     final int m = p.maxIndex();
     Z powerOf2 = Z.ZERO;
     for (int k = 1, t = 0; k <= m; ++k) {

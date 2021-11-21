@@ -684,6 +684,11 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
     return lead;
   }
 
+  /**
+   * Drop all terms containing the specified variable.
+   * @param variable variable index
+   * @return cycle index with all terms containing specified variable dropped
+   */
   public CycleIndex drop(final int variable) {
     final CycleIndex res = copy();
     for (final MultivariateMonomial mm : values()) {

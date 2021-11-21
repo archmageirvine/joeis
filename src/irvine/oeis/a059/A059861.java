@@ -14,7 +14,7 @@ public class A059861 implements Sequence {
 
   private int mN;
   private MemorySequence mSeq;
-  private Z mAn_1;
+  private Z mAn1;
   protected long mSub;
 
   /** Construct the sequence */
@@ -30,7 +30,7 @@ public class A059861 implements Sequence {
     mN = 0;
     mSub = sub;
     mSeq = MemorySequence.cachedSequence(new A000040());
-    mAn_1 = Z.ONE;
+    mAn1 = Z.ONE;
   }
 
   @Override
@@ -38,8 +38,8 @@ public class A059861 implements Sequence {
     ++mN;
     final Z mR = mSeq.next().subtract(mSub);
     if (mR.compareTo(Z.ZERO) > 0) {
-      mAn_1 = mAn_1.multiply(mR);
+      mAn1 = mAn1.multiply(mR);
     }
-    return mAn_1;
+    return mAn1;
   }
 }

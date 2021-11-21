@@ -9,10 +9,10 @@ import irvine.oeis.a155.A155069;
  */
 public class A103137 extends A155069 {
 
-  protected int mN = -1;
+  private int mM = -1;
 
   @Override
   public Z next() {
-    return (++mN & 1) == 0 ? super.next() : super.next().negate();
+    return (++mM & 1) == 0 ? super.next() : super.next().negate();
   }
 }

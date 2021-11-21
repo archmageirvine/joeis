@@ -9,11 +9,11 @@ import irvine.oeis.a000.A000041;
  */
 public class A052810 extends A000041 {
 
-  protected int mN = -1;
+  private int mM = -1;
 
   @Override
   public Z next() {
-    ++mN;
-    return mN == 0 ? super.next() : super.next().add(1);
+    ++mM;
+    return mM == 0 ? super.next() : super.next().add(1);
   }
 }

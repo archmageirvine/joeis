@@ -13,16 +13,15 @@ import irvine.oeis.a000.A000005;
 public class A066843 implements Sequence {
 
   private int mN = 0;
-  private MemorySequence mSeq = MemorySequence.cachedSequence(new A000005());
-  private Z mAn_1 = Z.ONE;
+  private final MemorySequence mSeq = MemorySequence.cachedSequence(new A000005());
+  private Z mAn1 = Z.ONE;
 
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
     if (mN > 0) {
-      mAn_1 = mAn_1.multiply(mSeq.next());
+      mAn1 = mAn1.multiply(mSeq.next());
     }
-    return mAn_1;
+    return mAn1;
   }
 }

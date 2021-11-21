@@ -11,22 +11,21 @@ import irvine.oeis.Sequence;
 public class A182229 implements Sequence {
 
   private int mN = -1;
-  private Z mAn_2 = Z.TWO;
-  private Z mAn_1 = Z.THREE;
+  private Z mAn2 = Z.TWO;
+  private Z mAn1 = Z.THREE;
 
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
     if (mN == 0) {
-      return mAn_2;
+      return mAn2;
     } else if (mN == 1) {
-      return mAn_1;
+      return mAn1;
     } else {
-      final Z result = mAn_1.add(mAn_2.divide(3));
-      mAn_2 = mAn_1;
-      mAn_1 = result;
-      return mAn_1;
+      final Z result = mAn1.add(mAn2.divide(3));
+      mAn2 = mAn1;
+      mAn1 = result;
+      return mAn1;
     }
   }
 }

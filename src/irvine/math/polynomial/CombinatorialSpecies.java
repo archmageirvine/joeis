@@ -106,7 +106,7 @@ public final class CombinatorialSpecies {
     return s;
   }
 
-  public static CycleIndex innerSubs(final CycleIndex ci, final int subs, final int lim) {
+  private static CycleIndex innerSubs(final CycleIndex ci, final int subs, final int lim) {
     final MultivariateMonomial[] terms = new MultivariateMonomial[ci.size()];
     int k = 0;
     for (final MultivariateMonomial t : ci.values()) {
@@ -219,14 +219,12 @@ public final class CombinatorialSpecies {
     return res;
   }
 
-//  public static Polynomial<CycleIndex> substitute(final Polynomial<CycleIndex> p, final int variable, final Z value) {
-//    final Polynomial<CycleIndex> res = RING.empty();
-//    for (final CycleIndex ci : p) {
-//      res.add(ci.substitute(variable, value));
-//    }
-//    return res;
-//  }
-
+  /**
+   * Drop all terms containing the specified cycle index variable.
+   * @param p species
+   * @param variable variable index to drop
+   * @return species with all terms involving specified variable dropped
+   */
   public static Polynomial<CycleIndex> drop(final Polynomial<CycleIndex> p, final int variable) {
     final Polynomial<CycleIndex> res = RING.empty();
     for (final CycleIndex ci : p) {

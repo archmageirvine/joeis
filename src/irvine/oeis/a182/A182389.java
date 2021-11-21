@@ -11,15 +11,15 @@ import irvine.oeis.Sequence;
 public class A182389 implements Sequence {
 
   private int mN = -1;
-  private Z mAn_1 = Z.ONE;
+  private Z mAn1 = Z.ONE;
 
   @Override
   public Z next() {
     ++mN;
     final Z n = Z.valueOf(mN);
     if (mN > 0) {
-      mAn_1 = mAn_1.add(n).xor(n);
+      mAn1 = mAn1.add(n).xor(n);
     }
-    return mAn_1;
+    return mAn1;
   }
 }

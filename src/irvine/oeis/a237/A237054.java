@@ -10,14 +10,14 @@ import irvine.oeis.Sequence;
 public class A237054 implements Sequence {
 
   private int mN = 0;
-  private Z mAn_1 = Z.ONE;
+  private Z mAn1 = Z.ONE;
 
   @Override
   public Z next() {
     ++mN;
     if (mN > 1) {
-      mAn_1 = mAn_1.add(mN).xor(Z.valueOf(mN));
+      mAn1 = mAn1.add(mN).xor(Z.valueOf(mN));
     }
-    return mAn_1;
+    return mAn1;
   }
 }

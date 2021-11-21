@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073717 a(n)=T(2n+1), where T(n) are the tribonacci numbers A000073.
+ * A073717 a(n) = T(2n+1), where T(n) are the tribonacci numbers A000073.
  * @author Sean A. Irvine
  */
 public class A073717 extends LinearRecurrence {

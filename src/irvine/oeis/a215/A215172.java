@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A215172 a(0)=1, a(n) = a(n-1)*4^n + 2^n - 1. That is, add n 0&apos;s and n 1&apos;s to the binary representation of previous term.
+ * A215172 a(0)=1, a(n) = a(n-1)*4^n + 2^n - 1. That is, add n 0's and n 1's to the binary representation of previous term.
  * @author Georg Fischer
  */
 public class A215172 implements Sequence {

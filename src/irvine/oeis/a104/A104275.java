@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a047.A047845;
 
 /**
- * A104275 Numbers n such that 2n-1 is not prime.
+ * A104275 Numbers k such that 2k-1 is not prime.
  * @author Georg Fischer
  */
 public class A104275 implements Sequence {

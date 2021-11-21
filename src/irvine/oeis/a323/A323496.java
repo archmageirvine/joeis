@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A323496 a(n) = Product_{k=1..n} (binomial(k-1, 3) + binomial(n-k, 3)).
+ * A323496 a(n) = Product_{k=1..n} (binomial(k-1,3) + binomial(n-k,3)).
  * @author Georg Fischer
  */
 public class A323496 implements Sequence {

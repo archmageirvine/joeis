@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A173497 a(n) = a(n-1) + a(n-2) - floor(a(n-2)/2), starting 2, 1.
+ * A173497 a(n) = a(n-1) + a(n-2) - floor(a(n-2)/2), starting 2,1.
  * @author Georg Fischer
  */
 public class A173497 implements Sequence {

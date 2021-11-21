@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A213081 Exclusive-or based Pascal triangle, read by rows:
+ * A213081 Exclusive-or based Pascal triangle, read by rows: T(n,1)=T(n,n)=n and T(n,k) = T(n-1,k-1) XOR T(n-1,k), where XOR is the bitwise exclusive-or operator.
  * T(n, 1)=T(n,n)=n and T(n,k) = T(n-1,k-1) XOR T(n-1,k), where XOR is the bitwise exclusive-or operator.
  * @author Georg Fischer
  */

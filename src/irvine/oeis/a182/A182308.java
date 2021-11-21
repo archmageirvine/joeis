@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A182308 a(n+1) = a(n) + floor(a(n)/7) with a(0)=7
+ * A182308 a(n+1) = a(n) + floor(a(n)/7) with a(0)=7.
  * @author Georg Fischer
  */
 public class A182308 implements Sequence {

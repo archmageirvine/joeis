@@ -7,7 +7,7 @@ import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A052444.
+ * A052444 Number of simple unlabeled n-node graphs of connectivity 3.
  * @author Sean A. Irvine
  */
 public class A052444 extends ParallelGenerateGraphsSequence {

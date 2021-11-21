@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007420 Berstel sequence: a(n+1) = 2a(n) - 4a(n-1) + 4a(n-2).
+ * A007420 Berstel sequence: a(n+1) = 2*a(n) - 4*a(n-1) + 4*a(n-2).
  * @author Sean A. Irvine
  */
 public class A007420 extends LinearRecurrence {

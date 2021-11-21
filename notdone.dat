@@ -140,7 +140,6 @@ A002167 Specific heat f.c.c, have paper
 A002168 Susceptibility b.c.c, have paper
 A002169 A partition function -- Ising model?, could not get paper
 A002170 A partition function -- Ising model?, could not get paper
-A002218 Very complicated looking cycle index, paper available (doable non-cycle index but only for small n)
 A002268 Dimensions of integral lattices that are irreducible modulo every prime (there may be missing terms!)
 A002273 Theta series, paper available, but insufficient detail?
 A002304 Partially done, can't quite make it work, papers are available
@@ -1767,4 +1766,5 @@ A052418 Number of n-crossing knots having symmetry group D4.
 A052420 Number of n-crossing knots having symmetry group D6.
 A052422 Number of n-crossing knots having symmetry group D8.
 A052432 Smallest conductor of elliptic curve with rank n
-A052442 Depends A002218
+A052443 Depends on A006290
+A042444 Depends on A006290

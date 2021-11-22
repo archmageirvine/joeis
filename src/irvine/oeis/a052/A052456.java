@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
 public class A052456 implements Sequence {
 
   // After Robert Gerbicz
-  // (Note this could probably be made incremental!)
+  // (Note this could perhaps be made incremental!)
 
   private final Fast mPrime = new Fast();
   private int mD = -1;
@@ -54,7 +54,6 @@ public class A052456 implements Sequence {
       int x = 2;
       int y = 2;
 
-      // todo i here should only really need to do one iteration!
       for (int i = 1; i <= mD * mD / 2; ++i) {
         for (int j = 1; j <= mD; ++j) {
           for (int k = (i * j + 1) / 2 + 1; k <= ((i + 1) * j + 1) / 2; ++k) {
@@ -129,20 +128,20 @@ public class A052456 implements Sequence {
       }
 
       while ((completedD + 1 <= mD) && ((int) ((1 + completedD) * (Math.log(1 + completedD) + 1.0) / Math.log(2) / 30.0 + 1.0) <= usedPrimes)) {
-        ++completedD;
-        Z bigT = Z.ONE;
-        seqz = Z.ZERO;
-        for (int j = 1; j <= usedPrimes; ++j) {
-          long re = res[j][completedD];
-          final long q = prime[j];
-          final Z pz = Z.valueOf(q);
-          final long r = (int) seqz.mod(q);
-          re = re < r ? q + re - r : re - r;
-          final Z sz = bigT.modInverse(pz).multiply(re).mod(pz).multiply(bigT);
-          seqz = seqz.add(sz);
-          bigT = bigT.multiply(q);
+        if (++completedD == mD) {
+          Z bigT = Z.ONE;
+          seqz = Z.ZERO;
+          for (int j = 1; j <= usedPrimes; ++j) {
+            long re = res[j][completedD];
+            final long q = prime[j];
+            final Z pz = Z.valueOf(q);
+            final long r = (int) seqz.mod(q);
+            re = re < r ? q + re - r : re - r;
+            final Z sz = bigT.modInverse(pz).multiply(re).mod(pz).multiply(bigT);
+            seqz = seqz.add(sz);
+            bigT = bigT.multiply(q);
+          }
         }
-        // todo this is redoing work for all earlier terms
       }
     }
     return seqz;

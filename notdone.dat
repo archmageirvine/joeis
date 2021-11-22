@@ -1,5 +1,4 @@
 A000019 Primitive permutation groups
-A000066 Smallest number of vertices in trivalent graph with girth (shortest cycle) = n
 A000112 Posets, hard
 A000236 Equivalence classes
 A000241 Crossing number of complete graph, hard
@@ -1767,4 +1766,5 @@ A052420 Number of n-crossing knots having symmetry group D6.
 A052422 Number of n-crossing knots having symmetry group D8.
 A052432 Smallest conductor of elliptic curve with rank n
 A052443 Depends on A006290
-A042444 Depends on A006290
+A052447 Number of simple unlabeled n-node graphs of edge-connectivity 2.
+A052448 Number of simple unlabeled n-node graphs of edge-connectivity 3.

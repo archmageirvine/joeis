@@ -119,8 +119,7 @@ public class A052456 implements Sequence {
             }
           }
 
-          long re = s;
-          res[usedPrimes][x] = re;
+          res[usedPrimes][x] = s;
 
           ++x;
           y = x * x / 2;

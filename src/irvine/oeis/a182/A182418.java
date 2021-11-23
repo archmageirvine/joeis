@@ -16,7 +16,6 @@ public class A182418 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
     if (mN > 0) {
       mAn1 = mAn1.xor(mAn1.divide(6)).add(1);
     }

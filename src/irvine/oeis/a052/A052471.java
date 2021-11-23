@@ -25,8 +25,6 @@ public class A052471 extends A000081 {
     if ((mN & 1) == 0) {
       sum = sum.add(a(mN / 2));
     }
-    sum = sum.divide2();
-    sum = sum.subtract(Z.ONE.shiftLeft(mN - 4).add(Z.ONE.shiftLeft((mN - 2) / 2 - 1)));
-    return sum;
+    return sum.divide2().subtract(Z.ONE.shiftLeft(mN - 4).add(Z.ONE.shiftLeft((mN - 2) / 2 - 1)));
   }
 }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A333291 a(n) = Sum_{i=1..n, gcd(i,n)=1} i*phi(i) where phi is Euler&apos;s totient function A000010.
+ * A333291 a(n) = Sum_{i=1..n, gcd(i,n)=1} i*phi(i) where phi is Euler's totient function A000010.
  * @author Georg Fischer
  */
 public class A333291 implements Sequence {

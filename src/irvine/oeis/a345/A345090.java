@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A345090 a(n) = Sum_{k=1..n} k^floor(1/gcd(k, 2*n-k)).
+ * A345090 a(n) = Sum_{k=1..n} k^floor(1/gcd(k,2*n-k)).
  * @author Georg Fischer
  */
 public class A345090 implements Sequence {

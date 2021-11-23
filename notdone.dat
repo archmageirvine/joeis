@@ -1768,3 +1768,6 @@ A052432 Smallest conductor of elliptic curve with rank n
 A052443 Depends on A006290
 A052447 Number of simple unlabeled n-node graphs of edge-connectivity 2.
 A052448 Number of simple unlabeled n-node graphs of edge-connectivity 3.
+A052457 Number of bimagic series for squares of order n
+A052458 Number of trimagic series for squares of order n
+A052470 Depends on A003416

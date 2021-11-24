@@ -1771,3 +1771,8 @@ A052448 Number of simple unlabeled n-node graphs of edge-connectivity 3.
 A052457 Number of bimagic series for squares of order n
 A052458 Number of trimagic series for squares of order n
 A052470 Depends on A003416
+A052475 Discriminants of real quadratic number fields with class number 2 such that Hilbert class field has splitting field Q(sqrt(5)).
+A052476 Discriminants of real quadratic number fields with class number 2 such that Hilbert class field has splitting field Q(sqrt(2)).
+A052477 Discriminants of real quadratic number fields with class number 2 such that Hilbert class field has splitting field Q(sqrt(3)).
+A052478 Discriminants of real quadratic number fields with class number 2 such that Hilbert class field has splitting field Q(sqrt(13)).
+A052479 Discriminants of real quadratic number fields with class number 2 such that Hilbert class field has splitting field Q(sqrt(17)).

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A052456 Number of magic series of order n.
+ * A052474 Construct difference array so that (1) first row begins with 1, (2) every row is monotonic increasing, (3) no number appears more than once, (4) smallest number not yet used begins a new row. Sequence gives main diagonal.
  * @author Sean A. Irvine
  */
 public class A052474 implements Sequence {

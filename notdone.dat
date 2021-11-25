@@ -1778,3 +1778,4 @@ A052478 Discriminants of real quadratic number fields with class number 2 such t
 A052479 Discriminants of real quadratic number fields with class number 2 such that Hilbert class field has splitting field Q(sqrt(17)).
 A052483 Decimal expansion of Hausdorff dimension of Apollonian packing of circles
 A052487 Number of maximal irreducible integral matrix groups in n dimensions.
+A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fibonacci NIM where the players may not take one stone.

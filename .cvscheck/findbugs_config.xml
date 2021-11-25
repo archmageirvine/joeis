@@ -269,6 +269,9 @@
      <Match classregex="irvine.oeis.a008.A008866">
        <BugCode name="FCBL"/>
      </Match>
+     <Match classregex="irvine.oeis.a000.A000066">
+       <BugCode name="FCBL"/>
+     </Match>
 
      <Match classregex="irvine.util.CliFlags\$Flag">
        <BugCode name="LEST,UCPM,URV"/>

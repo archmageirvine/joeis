@@ -10,8 +10,6 @@ import irvine.oeis.Sequence;
  */
 public class A016741 implements Sequence {
 
-  // todo not yet working
-
   // Player A to move
   private final MemoryFunctionInt3<Boolean> mPlayerACache = new MemoryFunctionInt3<Boolean>() {
     // True if B has a winning strategy starting from this position
@@ -25,10 +23,8 @@ public class A016741 implements Sequence {
         return Boolean.FALSE; // A can simply pick up all remaining stones
       }
       for (int k = 1; k <= limit; ++k) {
-        if (k != prevA) {
-          if (!mPlayerBCache.get(n - k, k, prevB)) {
-            return Boolean.FALSE;
-          }
+        if (k != prevA && !mPlayerBCache.get(n - k, k, prevB)) {
+          return Boolean.FALSE;
         }
       }
       return Boolean.TRUE;
@@ -48,10 +44,8 @@ public class A016741 implements Sequence {
         return Boolean.TRUE; // B can simply pick up all remaining stones
       }
       for (int k = 1; k <= limit; ++k) {
-        if (k != prevB) {
-          if (mPlayerACache.get(n - k, prevA, k)) {
-            return Boolean.TRUE;
-          }
+        if (k != prevB && mPlayerACache.get(n - k, prevA, k)) {
+          return Boolean.TRUE;
         }
       }
       return Boolean.FALSE;

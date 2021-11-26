@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a046.A046933;
 
 /**
- * A147965 a(n) is the difference between n and the n-th gap between primes.
+ * A147965 a(n) = n + 1 - A001223(n) = n - A046933(n). In words, a(n) is the difference between n+1 and the n-th gap between primes.
  * @author Georg Fischer
  */
 public class A147965 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081042 7th binomial transform of (1,6,0,0,0,0,0,0,.....).
+ * A081042 7th binomial transform of (1,6,0,0,0,0,0,0,...).
  * @author Sean A. Irvine
  */
 public class A081042 extends LinearRecurrence {

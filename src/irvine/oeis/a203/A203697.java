@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A203697 Vandermonde sequence using x^2 + xy + y^2 applied to the Fibonacci numbers (1, 2, 3, 5,...F(n+1)).
+ * A203697 Vandermonde sequence using x^2 + xy + y^2 applied to the Fibonacci numbers (1,2,3,5,...F(n+1)).
  * @author Georg Fischer
  */
 public class A203697 implements Sequence {

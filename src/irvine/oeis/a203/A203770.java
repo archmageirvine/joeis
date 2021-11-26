@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203770 Vandermonde sequence using x^4 + y^4 applied to (1, 1, 2, 2,...,floor(n/2)).
+ * A203770 Vandermonde sequence using x^4 + y^4 applied to (1,1,2,2,...,floor(n/2)).
  * @author Georg Fischer
  */
 public class A203770 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a018.A018252;
 
 /**
- * A203315 Vandermonde determinant of the first n nonprimes (A018252).
+ * A203415 Vandermonde determinant of the first n nonprimes (A018252).
  * @author Georg Fischer
  */
 public class A203415 implements Sequence {

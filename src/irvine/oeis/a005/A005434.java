@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A005434 Correlations of length n.
+ * A005434 Number of distinct autocorrelations of binary words of length n.
  * @author Sean A. Irvine
  */
 public class A005434 implements Sequence {

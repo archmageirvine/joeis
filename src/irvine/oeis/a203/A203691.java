@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203691 Vandermonde sequence using x^2 + xy + y^2 applied to the first n triangular numbers: 1, 3, 6, 10,...,n(n+1)/2.
+ * A203691 Vandermonde sequence using x^2 + xy + y^2 applied to the first n triangular numbers: 1,3,6,10,...,n(n+1)/2.
  * @author Georg Fischer
  */
 public class A203691 implements Sequence {

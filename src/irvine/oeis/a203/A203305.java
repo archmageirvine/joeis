@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203305 Vandermonde determinant of the first n terms of (1, 3, 7, 15, 31,...).
+ * A203305 Vandermonde determinant of the first n terms of (1,3,7,15,31,...).
  * @author Georg Fischer
  */
 public class A203305 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203421 Reciprocal of Vandermonde determinant of (1, 1/2,..., 1/n).
+ * A203421 Reciprocal of Vandermonde determinant of (1,1/2,...,1/n).
  * @author Georg Fischer
  */
 public class A203421 implements Sequence {

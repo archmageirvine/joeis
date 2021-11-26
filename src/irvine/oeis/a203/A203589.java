@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203589 Vandermonde sequence using x^2 + y^2 applied to (1, 3, 5,..., 2n-1).
+ * A203589 Vandermonde sequence using x^2 + y^2 applied to (1,3,5,...,2n-1).
  * @author Georg Fischer
  */
 public class A203589 implements Sequence {

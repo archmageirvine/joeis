@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203689 Vandermonde sequence using x^2 + y^2 applied to (1, 2, 6,...,n!).
+ * A203689 Vandermonde sequence using x^2 + y^2 applied to (1,2,6,...,n!).
  * @author Georg Fischer
  */
 public class A203689 implements Sequence {

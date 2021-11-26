@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.Permutation;
 
 /**
- * A052999 Take n-th prime p, let P = all primes that can be obtained by permuting the digits of p and possibly adding or omitting zeros; a(n) = |p-q| where q in P is the closest to p but different from p (a(n)=0 if no such q exists).
+ * A052999 Take n-th prime p, let P(p) = all primes that can be obtained by permuting the digits of p and possibly adding or omitting zeros; a(n) = |p-q| where q in P(p) is the closest to p but different from p (a(n)=0 if no such q exists).
  * @author Sean A. Irvine
  */
 public class A052999 extends A000040 {

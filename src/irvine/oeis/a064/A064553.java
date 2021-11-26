@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A064553 a(1) = 1, a(prime(i)) = i + 1 for i &gt; 0 and a(u * v) = a(u) * a(v) for u, v &gt; 0; prime = A000040.
+ * A064553 a(1) = 1, a(prime(i)) = i + 1 for i &gt; 0 and a(u * v) = a(u) * a(v) for u, v &gt; 0.
  * @author Sean A. Irvine
  */
 public class A064553 implements Sequence {

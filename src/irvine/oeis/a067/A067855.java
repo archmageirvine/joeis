@@ -11,7 +11,7 @@ import irvine.oeis.a001.A001868;
  */
 public class A067855 extends EulerTransform {
 
-  private static class MySequence extends A001868 {
+  private static final class MySequence extends A001868 {
     private MySequence() {
       super.next();
     }

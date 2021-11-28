@@ -1779,3 +1779,12 @@ A052479 Discriminants of real quadratic number fields with class number 2 such t
 A052483 Decimal expansion of Hausdorff dimension of Apollonian packing of circles
 A052487 Number of maximal irreducible integral matrix groups in n dimensions.
 A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fibonacci NIM where the players may not take one stone.
+A052508 Smallest number such that the largest set of positive real numbers whose sum and product equals the number falls short by n
+A052523 Number of unlabeled mobiles with cycles of length at least 3
+A052525 Number of unlabeled rooted trees with n leaves in which the degrees of the root and all internal nodes are >= 3.
+A052755 A simple grammar.
+A052775 A simple grammar.
+A052798 A simple grammar.
+A052814 A simple grammar.
+A052817 Cycles of rooted trees t where for each t all subtrees at root are distinct. n is total number of nodes.
+A052831 A simple grammar.

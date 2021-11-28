@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A272167 a(n) = Product_{k=2..n} (k^2-k)^k.
+ * A272167 a(n) = Product_{k=0..n} (k^2-k)^k.
  * @author Georg Fischer
  */
 public class A272167 implements Sequence {

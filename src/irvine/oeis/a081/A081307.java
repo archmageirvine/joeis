@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000203;
 
 /**
- * A081307 a(n) = (n+1)*tau(n) - sigma(n).
+ * A081307 G.f.: Sum_{k=1..n} Sum_{m=1..k} 1/(1-x^m).
  * @author Georg Fischer
  */
 public class A081307 implements Sequence {

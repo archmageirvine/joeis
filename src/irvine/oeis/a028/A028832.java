@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028832 Number of distinct integers in period of continued fraction for sqrt(n), or 0 if n is a square.
+ * A028832 Number of distinct integers in period of continued fraction for sqrt(n), or 0 if n = square.
  * @author Sean A. Irvine
  */
 public class A028832 implements Sequence {

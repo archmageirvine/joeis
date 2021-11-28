@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014613 Numbers that are products of 4 primes.
+ * A014613 Numbers that are products of 4 primes (these numbers are sometimes called "4-almost primes", a generalization of semiprimes).
  * @author Sean A. Irvine
  */
 public class A014613 implements Sequence {

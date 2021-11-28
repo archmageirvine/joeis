@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197765 a(n) = ceiling((5n+1/n)^n).
+ * A197765 Ceiling((5n+1/n)^n).
  * @author Georg Fischer
  */
 public class A197765 extends A197716 {

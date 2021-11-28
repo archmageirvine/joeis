@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134159 a(n) = 13 + 165*n + 756*n^2 + 1470*n^3 + 1029*n^4.
+ * A134159 a(n) = 13 + 165 n + 756 n^2 + 1470 n^3 + 1029 n^4.
  * @author Georg Fischer
  */
 public class A134159 extends GeneratingFunctionSequence {

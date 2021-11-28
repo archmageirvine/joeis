@@ -14,7 +14,7 @@ import irvine.oeis.a018.A018252;
 public class A203527 implements Sequence {
 
   protected int mN = 0;
-  protected final MemorySequence mA018252 = MemorySequence.cachedSequence(new PrependSequence(new A018252(), 1));
+  private final MemorySequence mA018252 = MemorySequence.cachedSequence(new PrependSequence(new A018252(), 1));
 
   @Override
   public Z next() {

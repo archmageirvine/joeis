@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.a208.A208508;
 
 /**
- * A117919 Triangle read by rows: T(n, k) = 2^floor((k-1)/2)*binomial(n-1, k-1).
+ * A117919 Triangle, row sums = the Pell sequence.
  * (a,b,c,d,e,f) = (1,x, 0, 2x, 1, 0)
  * @author Georg Fischer
  */

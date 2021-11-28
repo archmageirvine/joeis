@@ -25,7 +25,7 @@ public class A052526 implements Sequence {
         Z t = Z.ZERO;
         for (int l = 0; l <= j; ++l) {
           for (int i = 0; i <= l; ++i) {
-            t = t.signedAdd((l & 1) == 0, mF.factorial(mN + k - 1).multiply(Stirling.secondKind(mN + j - i - l - 1, j - l)).shiftLeft(l - 2 * i).divide(mF.factorial(mN + j - i -l - 1)).divide(mF.factorial(i)).divide(mF.factorial(l - i)));
+            t = t.signedAdd((l & 1) == 0, mF.factorial(mN + k - 1).multiply(Stirling.secondKind(mN + j - i - l - 1, j - l)).shiftLeft(l - 2 * i).divide(mF.factorial(mN + j - i - l - 1)).divide(mF.factorial(i)).divide(mF.factorial(l - i)));
           }
         }
         sum = sum.add(t.divide(mF.factorial(k - j)));

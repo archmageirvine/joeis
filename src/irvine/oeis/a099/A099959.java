@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.DoubleRowTriangle;
 
 /**
- * A099959 Triangle read by rows: Each row is constructed by forming the partial sums of the previous row,
+ * A099959 Triangle read by rows: Each row is constructed by forming the partial sums of the previous row, reading from the right and at every other row repeating the final term.
  * reading from the right and at every other row repeating the final term.
  * @author Georg Fischer
  */

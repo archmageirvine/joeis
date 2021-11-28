@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203433 Vandermonde determinant of the first n terms of (2, 3, 5, 6, 8, 9,...)=(j+floor((j+1)/2)).
+ * A203433 Vandermonde determinant of the first n terms of (2,3,5,6,8,9,...)=(j+floor((j+1)/2)).
  * @author Georg Fischer
  */
 public class A203433 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a018.A018252;
 
 /**
- * A203418 Vandermonde determinant of the first n composite numbers (A002808)
+ * A203418 Vandermonde determinant of the first n composite numbers (A002808).
  * @author Georg Fischer
  */
 public class A203418 implements Sequence {

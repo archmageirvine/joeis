@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203428 Reciprocal of Vandermonde determinant of (1/3, 1/6,..., 1/(3n)).
+ * A203428 Reciprocal of Vandermonde determinant of (1/3,1/6,...,1/(3n)).
  * @author Georg Fischer
  */
 public class A203428 implements Sequence {

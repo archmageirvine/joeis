@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A266577 Square array read by descending antidiagonals: T(n,k) = ((2^(n+1) + 1)^(k-1) + 1)/2.
+ * A266577 Table read by antidiagonals (from upper right to lower left): T(i,j) = ((2^(i+1) + 1)^(j-1) + 1)/2.
  * @author Georg Fischer
  */
 public class A266577 extends UpperLeftTriangle {

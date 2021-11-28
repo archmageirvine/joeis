@@ -8,7 +8,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A203311 Vandermonde determinant of (1, 2, 3,...,F(n+1)), where F=A000045 (Fibonacci numbers).
+ * A203311 Vandermonde determinant of (1,2,3,...,F(n+1)), where F=A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A203311 implements Sequence {

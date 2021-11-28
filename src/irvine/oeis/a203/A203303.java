@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203303 Vandermonde determinant of the first n terms of (1, 2, 4, 8, 16,...).
+ * A203303 Vandermonde determinant of the first n terms of (1,2,4,8,16,...).
  * @author Georg Fischer
  */
 public class A203303 implements Sequence {

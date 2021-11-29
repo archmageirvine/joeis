@@ -42,13 +42,26 @@ public class UpperLeftTriangle extends Triangle {
   public UpperLeftTriangle(final int row0, final int col0, final int dir) {
     mRow0 = row0;
     mCol0 = col0;
-    mDir  = dir;
+    mDir = dir;
+  }
+
+  /**
+   * Retrieves an element of the matrix that was previously computed by {@link #matrixElement}.
+   * The indices are shifted with <code>mRow0, mCol0</code>.
+   * @param i shifted row number
+   * @param j shifted column number
+   * @return M(i, j)
+   */
+  public Z getElement(final int i, final int j) {
+    return mDir < 0
+      ? super.get(i + j - mCol0, i - mRow0)
+      : super.get(i - mCol0, i + j - mRow0)
+      ;
   }
 
   /**
    * Computes an element of the matrix.
    * The indices are shifted with <code>mRow0, mCol0</code>.
-   *
    * @param i shifted row number
    * @param j shifted column number
    * @return M(i, j)

@@ -151,7 +151,7 @@ public final class FactorSequence {
    * Add the specified integer with UNKNOWN status.
    * @param n integer to add
    */
-  public final void add(final Z n) {
+  public void add(final Z n) {
     add(n, UNKNOWN, 1);
   }
 
@@ -444,6 +444,15 @@ public final class FactorSequence {
   public Z sigma0() {
     completeOrException();
     return internalSigma0();
+  }
+
+  /**
+   * Alias for {@link #sigma0}: return the number of divisors.
+   * @return number of divisors
+   * @exception UnsupportedOperationException if factor sequence is not complete resolved.
+   */
+  public Z tau() {
+    return sigma0();
   }
 
   /**
@@ -758,6 +767,20 @@ public final class FactorSequence {
     Z product = Z.ONE;
     for (final Map.Entry<Z, Factor> entry : mFactors.entrySet()) {
       product = product.multiply(entry.getKey().pow(entry.getValue().mExponent));
+    }
+    return product;
+  }
+
+  /**
+   * Return the product of the divisors.
+   * @return product of the divisors
+   * @exception UnsupportedOperationException if factor sequence is not completely
+   * resolved to primes and probable primes.
+   */
+  public Z pod() {
+    Z product = Z.ONE;
+    for (final Z dd : divisors()) {
+      product = product.multiply(dd);
     }
     return product;
   }

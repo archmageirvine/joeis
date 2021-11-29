@@ -14,10 +14,6 @@ public class A007955 implements Sequence {
 
   @Override
   public Z next() {
-    Z prod = Z.ONE;
-    for (final Z d : Cheetah.factor(++mN).divisors()) {
-      prod = prod.multiply(d);
-    }
-    return prod;
+    return Cheetah.factor(++mN).pod();
   }
 }

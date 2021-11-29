@@ -12,6 +12,6 @@ public class A108759 extends DoubleRowTriangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return n <= 1 ? Z.ONE : Binomial.binomial(3 * k, k).multiply(Binomial.binomial(n + k, 3 * k)).divide(2 * k + 1);
+    return n <= 1 ? Z.ONE : Binomial.binomial(3L * k, k).multiply(Binomial.binomial(n + k, 3L * k)).divide(2L * k + 1);
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A255517 Number A(n,k) of rooted identity trees with n nodes and k-colored non-root nodes;
+ * A255517 Number A(n,k) of rooted identity trees with n nodes and k-colored non-root nodes; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */

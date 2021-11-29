@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.SelfQuotientSequence;
 
 /**
- * A203686 Vandermonde sequence using x^2 + xy + y^2 applied to (1,2,6,...,n!).
+ * A203686 a(n) = v(n+1)/v(n), where v=A203685.
  * @author Georg Fischer
  */
 public class A203686 extends SelfQuotientSequence {

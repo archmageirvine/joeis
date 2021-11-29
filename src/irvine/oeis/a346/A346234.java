@@ -6,7 +6,7 @@ import irvine.oeis.DirichletInverseSequence;
 import irvine.oeis.a003.A003961;
 
 /**
- * A346234 Dirichlet inverse of A003961.
+ * A346234 Dirichlet inverse of A003961, where A003961(n) is fully multiplicative with a(prime(k)) = prime(k+1).
  *
  * @author Georg Fischer
  */

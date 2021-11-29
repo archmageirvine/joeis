@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000688;
 import irvine.oeis.a058.A058162;
 
 /**
- * A138286 a(n)=A058162(n)/A000688(n).
+ * A138286 a(n) = A058162(n) / A000688(n).
  * @author Georg Fischer
  */
 public class A138286 extends QuotientSequence {

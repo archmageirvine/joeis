@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029940 a(n) = Product_{d divides n} phi(d).
+ * A029940 a(n) = Product_{d|n} phi(d).
  * @author Sean A. Irvine
  */
 public class A029940 implements Sequence {

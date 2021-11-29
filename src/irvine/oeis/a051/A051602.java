@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A051602 a(n) = maximal number of squares that can be formed from n points in the plane.
+ * A051602 a(n) is the maximal number of squares that can be formed from n points in the plane.
  * @author Sean A. Irvine
  */
 public class A051602 implements Sequence {

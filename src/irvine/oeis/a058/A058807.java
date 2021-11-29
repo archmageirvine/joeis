@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058807 a(n) = Product_{k=1..n} s(n,k), where s(n,k) is unsigned Stirling number of the first kind. (s(n,k) = number of permutations of n elements which contain exactly k cycles.)
+ * A058807 a(n) = Product_{k=1..n} s(n,k), where s(n,k) is unsigned Stirling number of the first kind. (s(n,k) = number of permutations of n elements which contain exactly k cycles.).
  * @author Georg Fischer
  */
 public class A058807 implements Sequence {

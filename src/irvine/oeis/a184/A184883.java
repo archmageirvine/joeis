@@ -5,7 +5,7 @@ import irvine.oeis.a114.A114123;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A184883 Number triangle T(n,k)=[k&lt;=n]*Hypergeometric2F1(-k,2k-2n;1,2).
+ * A184883 Number triangle T(n,k) = [k&lt;=n]*Hypergeometric2F1([-k, 2k-2n], [1], 2).
  * @author Georg Fischer
  */
 public class A184883 extends Transpose {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A135396 a(n) = Product_{d divides n} (n-d)!.
+ * A135396 a(n) = Product_{d|n} (n-d)!.
  * @author Georg Fischer
  */
 public class A135396 implements Sequence {

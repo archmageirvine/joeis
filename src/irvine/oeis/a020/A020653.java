@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020653 Denominators in canonical bijection from positive integers to positive rationals.
+ * A020653 Denominators in a certain bijection from positive integers to positive rationals.
  * @author Sean A. Irvine
  */
 public class A020653 implements Sequence {

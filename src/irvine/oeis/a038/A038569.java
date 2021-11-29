@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038569 Denominators in canonical bijection from positive integers to positive rationals.
+ * A038569 Denominators in a certain bijection from positive integers to positive rationals.
  * Offset 0. Follow each term with its reciprocal:
  * 1/1, 1/2, 2/1, 1/3, 3/1, 2/3, 3/2, 1/4, 4/1, 3/4, 4/3
  * @author Georg Fischer

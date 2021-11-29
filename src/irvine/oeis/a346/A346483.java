@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005171;
 /**
- * A346483 Sum of A005171 (the characteristic function of nonprimes) and its Dirichlet inverse.
+ * A346483 Sum of A005171 (characteristic function of nonprimes) and its Dirichlet inverse.
  * @author Georg Fischer
  */
 public class A346483 implements Sequence {

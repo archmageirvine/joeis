@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A286100 Square array A(n,k): If n = k, then A(n,k) = n, otherwise 0,
+ * A286100 Square array A(n,k): If n = k, then A(n,k) = n, otherwise 0, read by antidiagonals as A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), etc.
  * read by antidiagonals as A(1, 1), A(1, 2), A(2, 1), A(1, 3), A(2, 2), A(3, 1), etc.
  * @author Georg Fischer
  */

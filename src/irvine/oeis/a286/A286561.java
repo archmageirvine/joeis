@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A286561 Square array A(n,k): A(n, 1) = 1, and for k &gt; 1, A(n,k) = the highest exponent e such that k^e divides n,
+ * A286561 Square array A(n,k): A(n,1) = 1, and for k &gt; 1, A(n,k) = the highest exponent e such that k^e divides n, read by descending antidiagonals as A(1,1), A(1,2), A(2,1), etc.
  * read by descending antidiagonals as A(1, 1), A(1, 2), A(2, 1), etc.
  * @author Georg Fischer
  */

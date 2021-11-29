@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A285425 Square array A(n,k), n&gt;=1, k&gt;=0, read by antidiagonals,
+ * A285425 Square array A(n,k), n&gt;=1, k&gt;=0, read by antidiagonals, where column k is the expansion of Sum_{j&gt;=1} (2*j - 1)^k*x^(2*j-1)/(1 - x^(2*j-1)).
  * where column k is the expansion of Sum_{j&gt;=1} (2*j - 1)^k*x^(2*j-1)/(1 - x^(2*j-1)).
  * A(n,k) is the sum of k-th powers of odd divisors of n.
  * @author Georg Fischer

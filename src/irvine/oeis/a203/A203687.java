@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A203687 v(n+1)/v(n), where v=A203685.
+ * A203687 Vandermonde sequence using x^2 - x*y + y^2 applied to (1,2,6,...,n!).
  * @author Georg Fischer
  */
 public class A203687 implements Sequence {

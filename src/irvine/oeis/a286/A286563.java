@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A286563 Triangular table T(n,k) read by rows: T(n, 1) = 1, and for 1 < k <= n, T(n,k) = the highest exponent e such that k^e divides n.
+ * A286563 Triangular table T(n,k) read by rows: T(n,1) = 1, and for 1 &lt; k &lt;= n, T(n,k) = the highest exponent e such that k^e divides n.
  * @author Georg Fischer
  */
 public class A286563 extends Triangle {

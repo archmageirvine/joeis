@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141222 Expansion of -1/(2*x)+(2*x-1)^2/(2*x*(1-4x)^(3/2)).
+ * A141222 Expansion of -1/(2*x) + (2*x-1)^2/(2*x*(1-4x)^(3/2)).
  * @author Georg Fischer
  */
 public class A141222 extends HolonomicRecurrence {

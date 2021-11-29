@@ -6,7 +6,7 @@ import irvine.oeis.SelfQuotientSequence;
 import irvine.oeis.a218.A218075;
 
 /**
- * A219194 a(n) =  A218075(n+1)/A218075(n).
+ * A219194 a(n) = max(A218075(n+1), A218075(n)) / min(A218075(n+1), A218075(n)).
  * @author Georg Fischer
  */
 public class A219194 extends SelfQuotientSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a051.A051953;
 
 /**
- * A053158 Sum of n and its cototient function value (A051953).
+ * A053158 Sum of n and its cototient function value (A051953): a(n) = 2*n - phi(n), where phi is Euler phi.
  * @author Georg Fischer
  */
 public class A053158 implements Sequence {

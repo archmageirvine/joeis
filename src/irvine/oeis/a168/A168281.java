@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A168281 Triangle T(n,m) = 2*(min(n+m-1,m))^2 read by rows.
+ * A168281 Triangle T(n,m) = 2*(min(n - m + 1, m))^2 read by rows.
  * @author Georg Fischer
  */
 public class A168281 extends Triangle {

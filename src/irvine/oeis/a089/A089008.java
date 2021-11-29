@@ -6,7 +6,7 @@ import irvine.oeis.PrimePositionSubsequence;
 
 
 /**
- * A089008 Numbers n such that 18*n^2 + 1 is prime.
+ * A089008 Numbers k such that 18*k^2 + 1 is prime.
  * @author Georg Fischer
  */
 public class A089008 extends PrimePositionSubsequence {

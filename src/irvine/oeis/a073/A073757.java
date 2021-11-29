@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a045.A045763;
 
 /**
- * A073757 Number of numbers "related" to n: either divisors or terms in RRS of n.
+ * A073757 a(n) = d(n) + phi(n) - 1.
  * @author Georg Fischer
  */
 public class A073757 implements Sequence {

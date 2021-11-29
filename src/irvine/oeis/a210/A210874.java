@@ -16,7 +16,7 @@ public class A210874 extends Triangle {
 
   /**
    * Generic constructor with parameters.
-   * @param inits intial terms
+   * @param inits initial terms
    */
   public A210874(final long... inits) {
     super(inits);

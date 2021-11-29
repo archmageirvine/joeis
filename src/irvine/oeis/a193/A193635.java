@@ -12,6 +12,6 @@ public class A193635 extends Triangle {
 
   @Override
   public Z compute(final int n, final int k) {
-    return Binomial.binomial(3 * n - k, k);
+    return Binomial.binomial(3L * n - k, k);
   }
 }

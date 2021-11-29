@@ -8,23 +8,23 @@ import irvine.math.z.Z;
  */
 public class A054134 extends A054125 {
 
-  protected int mRow = -1;
-  protected int mCol = -1;
+  private int mRow1 = -1;
+  private int mCol1 = -1;
 
   @Override
   public Z next() {
     while (true) {
-      ++mCol;
-      if (mCol > mRow) {
-        ++mRow;
-        mCol = 0;
+      ++mCol1;
+      if (mCol1 > mRow1) {
+        ++mRow1;
+        mCol1 = 0;
       }
       final Z result = super.next();
-      if ((mRow & 1) == 0) {
-        final int rh = mRow >> 1;
-        if (mCol == rh) {
+      if ((mRow1 & 1) == 0) {
+        final int rh = mRow1 >> 1;
+        if (mCol1 == rh) {
           return result.divide2();
-        } else if (mCol > rh) {
+        } else if (mCol1 > rh) {
           return result;
         }
       }

@@ -8,19 +8,19 @@ import irvine.math.z.Z;
  */
 public class A054126 extends A054125 {
 
-  protected int mRow = -1;
-  protected int mCol = -1;
+  private int mRow1 = -1;
+  private int mCol1 = -1;
 
   @Override
   public Z next() {
     while (true) {
-      ++mCol;
-      if (mCol > mRow) {
-        ++mRow;
-        mCol = 0;
+      ++mCol1;
+      if (mCol1 > mRow1) {
+        ++mRow1;
+        mCol1 = 0;
       }
       final Z result = super.next();
-      if ((mRow & 1) == 1 && mCol > (mRow >> 1)) {
+      if ((mRow1 & 1) == 1 && mCol1 > (mRow1 >> 1)) {
         return result;
       }
     }

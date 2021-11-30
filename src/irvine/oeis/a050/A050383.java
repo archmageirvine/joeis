@@ -12,8 +12,8 @@ import irvine.oeis.Sequence;
  */
 public class A050383 implements Sequence {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private int mN = -1;
+  protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  protected int mN = -1;
 
   @Override
   public Z next() {

@@ -11,6 +11,8 @@ import irvine.oeis.a050.A050383;
  */
 public class A052853 extends A050383 {
 
+  // todo this is not working!
+
   private final Polynomial<Z> mC = RING.empty();
   {
     mC.add(Z.ZERO);

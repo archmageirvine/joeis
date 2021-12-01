@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052851.
+ * A052851 E.g.f.: 1/2 - 1/2*(1+4*log(1-x))^(1/2).
  * @author Sean A. Irvine
  */
 public class A052851 implements Sequence {

@@ -8,24 +8,22 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052842 E.g.f. A(x) = series reversion of (1-x)*(1-exp(-x)).
+ * A052864 E.g.f.: (log(1-x))^2/(1+log(1-x)).
  * @author Sean A. Irvine
  */
-public class A052842 implements Sequence {
+public class A052864 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private Polynomial<Q> mA = RING.empty();
-  private Z mF = Z.ONE;
+  private static final Polynomial<Q> NX = RING.negate(RING.x());
   private int mN = -1;
+  private Z mF = Z.ONE;
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      mA.add(Q.ZERO);
-      return Z.ZERO;
+    if (++mN > 1) {
+      mF = mF.multiply(mN);
     }
-    mF = mF.multiply(mN);
-    mA = RING.negate(RING.log1p(RING.negate(RING.series(RING.x(), RING.subtract(RING.one(), mA), mN)), mN));
-    return mA.coeff(mN).multiply(mF).toZ();
+    final Polynomial<Q> log = RING.log1p(NX, mN);
+    return RING.coeff(RING.pow(log, 2, mN), RING.add(RING.one(), log), mN).multiply(mF).toZ();
   }
 }

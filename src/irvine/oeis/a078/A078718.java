@@ -5,7 +5,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078718 Let f(i,j) = Sum_{k=0..2*i} (binomial(2*i, k)*binomial(2*j, i+j-k)*(-1)^(i+j-k) (this is essentially the same as the triangle in A068555); then a(n) = f(n, n-2)/2.
+ * A078718 a(n) = (-1)^n*(2*n - 1)*CatalanNumber(n - 2) for n &gt;= 2, a(n) = n for n = 0, 1.
  * radtorec(((4*x+1)^(1/2)*(4*x^2+x)+6*x^2+x)/((4*x+1)^(1/2)+4*x+1))
  * @author Georg Fischer
  */

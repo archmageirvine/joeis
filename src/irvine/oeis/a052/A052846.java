@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052836 A simple grammar.
+ * A052846 E.g.f.: (1-exp(x))*log(2-exp(x)).
  * @author Sean A. Irvine
  */
 public class A052846 implements Sequence {

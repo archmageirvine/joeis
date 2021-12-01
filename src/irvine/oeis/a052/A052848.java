@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A052848.
+ * A052848 Number of ordered set partitions with a designated element in each block and no block containing less than two elements.
  * @author Sean A. Irvine
  */
 public class A052848 extends MemorySequence {

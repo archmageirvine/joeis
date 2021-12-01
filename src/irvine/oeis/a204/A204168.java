@@ -4,7 +4,7 @@ import irvine.oeis.a003.A003057;
 import irvine.oeis.a203.A203991;
 
 /**
- * A204168 Array: row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of (i+j), as in A003057.
+ * A204168 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of (i+j), as in A003057.
  * @author Georg Fischer
  */
 public class A204168 extends A203991 {

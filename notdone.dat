@@ -1782,4 +1782,3 @@ A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fib
 A052508 Smallest number such that the largest set of positive real numbers whose sum and product equals the number falls short by n
 A052523 Number of unlabeled mobiles with cycles of length at least 3
 A052525 Number of unlabeled rooted trees with n leaves in which the degrees of the root and all internal nodes are >= 3.
-A052755 A simple grammar.

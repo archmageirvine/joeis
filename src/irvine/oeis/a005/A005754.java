@@ -11,9 +11,24 @@ import irvine.oeis.Sequence;
  */
 public class A005754 extends MemoryFunction2<Long, Z> implements Sequence {
 
+  protected int mLeaves;
+
+  /** Construct the sequence. */
+  public A005754() {
+    this(2);
+  }
+
+  /**
+   * Generic constructor with parameter
+   * @param leaves number of leaves
+   */
+  public A005754(final int leaves) {
+    mLeaves = leaves;
+  }
+
   // After Alois P. Heinz
 
-  private static class BFunction extends MemoryFunction2<Long, Z> {
+  private class BFunction extends MemoryFunction2<Long, Z> {
     @Override
     protected Z compute(final Long n, final Long k) {
       if (n == 0) {
@@ -23,7 +38,7 @@ public class A005754 extends MemoryFunction2<Long, Z> implements Sequence {
         return Z.ZERO;
       }
       Z sum = Z.ZERO;
-      final Z m = get(k - 1, k - 1).multiply2();
+      final Z m = get(k - 1, k - 1).multiply(mLeaves);
       for (long j = 0; j <= n / k; ++j) {
         sum = sum.add(Binomial.binomial(m, Z.valueOf(j)).multiply(get(n - k * j, k - 1)));
       }

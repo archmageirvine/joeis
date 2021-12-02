@@ -1,0 +1,33 @@
+package irvine.oeis.a052;
+
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A052891.
+ * @author Sean A. Irvine
+ */
+public class A052891 implements Sequence {
+
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private int mN = -1;
+  private Polynomial<Q> mS = RING.x();
+
+  @Override
+  public Z next() {
+    if (++mN > 1) {
+      final Polynomial<Q> c = RING.series(RING.one(), RING.subtract(RING.one(), mS), mN).shift(1);
+      mS = RING.zero();
+      for (int k = 1; k <= mN; ++k) {
+        mS = RING.add(mS, RING.divide(c.substitutePower(k, mN), new Q(k)));
+      }
+      mS = RING.subtract(RING.exp(mS, mN), RING.one());
+    }
+    return mS.coeff(mN).toZ();
+  }
+}
+

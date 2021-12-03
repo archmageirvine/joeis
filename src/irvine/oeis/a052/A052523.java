@@ -9,10 +9,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052831 A simple grammar.
+ * A052523 Number of unlabeled mobiles with cycles of length at least 3.
  * @author Sean A. Irvine
  */
-public class A052831 implements Sequence {
+public class A052523 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;
@@ -20,18 +20,15 @@ public class A052831 implements Sequence {
 
   @Override
   public Z next() {
-    if (++mN > 1) {
+    if (++mN > 2) {
       Polynomial<Q> b = RING.zero();
       for (int k = 1; k <= mN; ++k) {
-        b = RING.signedAdd((k & 1) == 1, b, RING.divide(mS.substitutePower(k, mN), new Q(k)));
+        final Polynomial<Q> log = RING.log(RING.series(RING.one(), RING.subtract(RING.one(), mS.substitutePower(k, mN)), mN), mN);
+        b = RING.add(b, RING.multiply(log, new Q(LongUtils.phi(k), k)));
       }
-      b = RING.exp(b, mN);
-      final Polynomial<Q> c = b.shift(1);
-      mS = RING.zero();
-      for (int k = 1; k <= mN; ++k) {
-        final Polynomial<Q> log = RING.log(RING.series(RING.one(), RING.subtract(RING.one(), c.substitutePower(k, mN)), mN), mN);
-        mS = RING.add(mS, RING.multiply(log, new Q(LongUtils.phi(k), k)));
-      }
+      final Polynomial<Q> s2 = RING.divide(RING.add(mS.substitutePower(2, mN), RING.pow(mS, 2, mN)), Q.TWO);
+      b = RING.subtract(RING.subtract(b, mS), s2);
+      mS = RING.add(b, RING.x());
     }
     return mS.coeff(mN).toZ();
   }

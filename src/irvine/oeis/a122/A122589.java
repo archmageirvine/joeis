@@ -4,7 +4,7 @@ package irvine.oeis.a122;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A122589 Expansion of 1/(1 - 11*x + 45*x^2 - 84*x^3 + 70*x^4 - 21*x^5 + x^6).
+ * A122589 Expansion of 1 / (x^6-21*x^5+70*x^4-84*x^3+45*x^2-11*x+1).
  * @author Georg Fischer
  */
 public class A122589 extends GeneratingFunctionSequence {

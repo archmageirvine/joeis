@@ -10,7 +10,6 @@ import irvine.oeis.Sequence;
 
 /**
  * A182825 E.g.f. 1/(cos(sqrt(3)*x) - sin(sqrt(3)*x)/sqrt(3)).
- * E.g.f.: 
  * @author Georg Fischer
  * @author Sean A. Irvine
  */
@@ -32,7 +31,7 @@ public class A182825 implements Sequence {
     final Polynomial<Polynomial<Q>> cos = RING.cos(RING.monomial(SQRT3, 1), mN);
     final Polynomial<Polynomial<Q>> sin = RING.divide(RING.sin(RING.monomial(SQRT3, 1), mN), SQRT3);
     final Polynomial<Polynomial<Q>> series = RING.series(RING.one(), RING.subtract(cos, sin), mN);
-    //System.out.println("series=" + series); // correct to here
+    //System.out.println("series=" + series);
     return series.coeff(mN).coeff(0).multiply(mF).toZ();
   }
 }

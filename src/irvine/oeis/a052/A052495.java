@@ -12,8 +12,13 @@ import irvine.util.Permutation;
  */
 public class A052495 extends A000040 {
 
-  static Permutation permuter(final Z prime) {
-    final int[] cnts = ZUtils.digitCounts(prime);
+  /**
+   * Return on object that can return all the permutations of the digits in a number.
+   * @param n number to permute
+   * @return permuter
+   */
+  public static Permutation permuter(final Z n) {
+    final int[] cnts = ZUtils.digitCounts(n);
     final int sum = (int) IntegerUtils.sum(cnts);
     final int[] digits = new int[sum];
     for (int k = 0, i = 0; k < cnts.length; ++k) {
@@ -24,7 +29,12 @@ public class A052495 extends A000040 {
     return new Permutation(digits);
   }
 
-  static Z permToZ(final int[] p) {
+  /**
+   * Convert a permutation to an integer.
+   * @param p permutation
+   * @return integer
+   */
+  public static Z permToZ(final int[] p) {
     Z t = Z.ZERO;
     for (int v : p) {
       t = t.multiply(10).add(v);

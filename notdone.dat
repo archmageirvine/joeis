@@ -649,7 +649,6 @@ A007133 Number of unlabeled rooted connected strength 3 Eulerian graphs with n n
 A007134 Number of connected labeled chordal graphs (or triangulated graphs) with n nodes, paper hard to understand
 A007135 Number of symmetry sites in all planted 1,3-trees with 2n nodes, not in Bailey paper?
 A007136 Number of symmetry sites in all planted 3-trees with n nodes
-A007140 Number of unlabeled bicolored graphs, with no isolated nodes, on 2n nodes having n nodes of each color and allowing the color classes to be interchanged, cf. A007139
 A007156 Spectrum of a certain 3-element algebra, lot of work for small number of terms
 A007159 Inverse binomial transform of A007156
 A007187 Leech's tree-labeling problem for n nodes (might be doable, lots of work for few terms)
@@ -1780,5 +1779,3 @@ A052483 Decimal expansion of Hausdorff dimension of Apollonian packing of circle
 A052487 Number of maximal irreducible integral matrix groups in n dimensions.
 A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fibonacci NIM where the players may not take one stone.
 A052508 Smallest number such that the largest set of positive real numbers whose sum and product equals the number falls short by n
-A052523 Number of unlabeled mobiles with cycles of length at least 3
-A052525 Number of unlabeled rooted trees with n leaves in which the degrees of the root and all internal nodes are >= 3.

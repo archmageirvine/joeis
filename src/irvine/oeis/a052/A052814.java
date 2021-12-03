@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052869 A simple grammar.
+ * A052814 A simple grammar.
  * @author Sean A. Irvine
  */
 public class A052814 implements Sequence {

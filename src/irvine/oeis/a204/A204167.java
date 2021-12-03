@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a203.A203991;
 
 /**
- * A204167 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of ceiling[(i+j)/2], as in A204166.
+ * A204167 Array:  row n shows the coefficients of the characteristic polynomial of the n-th principal submatrix of floor[(i+j)/2], as in A204164.
  *
  * @author Georg Fischer
  */

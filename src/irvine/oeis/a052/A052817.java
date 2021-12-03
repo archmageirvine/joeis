@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004111;
 
 /**
- * A052869 A simple grammar.
+ * A052817 Cycles of rooted trees t where for each t all subtrees at root are distinct. n is total number of nodes.
  * @author Sean A. Irvine
  */
 public class A052817 extends A004111 {

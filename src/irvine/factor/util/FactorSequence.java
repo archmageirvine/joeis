@@ -531,7 +531,9 @@ public final class FactorSequence {
     Z phi = Z.ONE; // trivial divisor
     for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
       final Z p = e.getKey();
-      phi = phi.multiply(p.subtract(Z.ONE)).multiply(p.pow(e.getValue().mExponent - 1));
+      if (!Z.ONE.equals(p)) {
+        phi = phi.multiply(p.subtract(Z.ONE)).multiply(p.pow(e.getValue().mExponent - 1));
+      }
     }
     return phi;
   }

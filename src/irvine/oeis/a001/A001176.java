@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A001176 implements Sequence {
 
-  private int mN = 0;
+  protected int mN = 0;
 
   private long findZerosInPeriod(final long n) {
     long aa = 1;

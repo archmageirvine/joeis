@@ -1779,3 +1779,4 @@ A052483 Decimal expansion of Hausdorff dimension of Apollonian packing of circle
 A052487 Number of maximal irreducible integral matrix groups in n dimensions.
 A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fibonacci NIM where the players may not take one stone.
 A052508 Smallest number such that the largest set of positive real numbers whose sum and product equals the number falls short by n
+A053022 Number of subdiagonal directed diagonally-convex animals with given diagonal semiperimeter.

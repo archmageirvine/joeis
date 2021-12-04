@@ -25,6 +25,18 @@ public class UnionSequence implements Sequence {
     mNextB = mSeqB.next();
   }
 
+  /**
+   * Union of sequences.
+   * @param a first sequence
+   * @param b other sequences
+   */
+  public UnionSequence(final Sequence a, final Sequence... b) {
+    mSeqA = a;
+    mSeqB = createUnion(b);
+    mNextA = mSeqA.next();
+    mNextB = mSeqB.next();
+  }
+
   @Override
   public Z next() {
     final Z t;

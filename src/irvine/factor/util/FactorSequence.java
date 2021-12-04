@@ -430,8 +430,11 @@ public final class FactorSequence {
   private Z internalSigma0() {
     // Skips check for complete factorization, useful for forcing some calculations
     Z prod = Z.ONE;
-    for (final Factor f : mFactors.values()) {
-      prod = prod.multiply(1L + f.mExponent);
+    for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
+      final Z p = f.getKey();
+      if (!p.equals(Z.ONE)) {
+        prod = prod.multiply(1L + f.getValue().mExponent);
+      }
     }
     return prod;
   }

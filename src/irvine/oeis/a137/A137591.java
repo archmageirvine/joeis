@@ -7,7 +7,7 @@ import irvine.oeis.ExponentialGeneratingFunction;
 import irvine.oeis.PrependSequence;
 
 /**
- * A137591 Number of parenthesizings of products formed by n factors assuming nonassociativity and partial commutativity: individual factors commute, but bracketed expressions don&apos;t commute with anything.
+ * A137591 Number of parenthesizings of products formed by n factors assuming nonassociativity and partial commutativity: individual factors commute, but bracketed expressions don't commute with anything.
  * E.g.f.: (1-x)/sqrt(1-4*x+2*x^2)
  * @author Georg Fischer
  */

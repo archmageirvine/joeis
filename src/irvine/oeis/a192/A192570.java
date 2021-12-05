@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A192570 a(n) = floor(sqrt(Bell(n)))
+ * A192570 a(n) = floor(sqrt(Bell(n))).
  * @author Georg Fischer
  */
 public class A192570 implements Sequence {

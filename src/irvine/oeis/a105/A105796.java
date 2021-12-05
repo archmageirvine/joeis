@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A105796 &quot;Stirling-Bernoulli transform&quot; of Jacobsthal numbers.
+ * A105796 "Stirling-Bernoulli transform" of Jacobsthal numbers.
  * E.g.f.: exp(x)*(1-exp(x))/((2-exp(x))*(1-2*exp(x)))
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A169587 The total number of ways of partitioning the multiset {1, 1, 1, 2, 3,...,n-2}.
+ * A169587 The total number of ways of partitioning the multiset {1,1,1,2,3,...,n-2}.
  * a(n)=(Bell(n)+3Bell(n-1)+5Bell(n-2)+2Bell(n-3))/6
  * @author Georg Fischer
  */

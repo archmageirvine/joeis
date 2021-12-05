@@ -7,10 +7,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053034 Length of sequence when A051953 (cototient function) is repeatedly applied starting with n!.
+ * A053039 Exponent of largest power of 2 which appears in the cototient-iteration started with n!.
  * @author Sean A. Irvine
  */
-public class A053034 implements Sequence {
+public class A053039 implements Sequence {
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private final PrimeDivision mFactor = new PrimeDivision();
@@ -21,14 +21,15 @@ public class A053034 implements Sequence {
   public Z next() {
     mFactorSequence.merge(mFactor.factorize(Z.valueOf(++mN)));
     mF = mF.multiply(mN);
-    long cnt = 1;
+    if (mN <= 2) {
+      return Z.valueOf(mN - 1);
+    }
     FactorSequence fs = mFactorSequence;
     Z s = mF;
     do {
-      ++cnt;
       s = s.subtract(fs.phi());
       fs = Jaguar.factor(s);
-    } while (!s.isZero());
-    return Z.valueOf(cnt);
+    } while (!Z.ONE.equals(s.makeOdd()));
+    return Z.valueOf(s.auxiliary());
   }
 }

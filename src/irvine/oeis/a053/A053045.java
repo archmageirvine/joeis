@@ -7,28 +7,30 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053034 Length of sequence when A051953 (cototient function) is repeatedly applied starting with n!.
+ * A053045 EulerPhi is iterated with initial value n!; a(n) = number of powers of 2 among the iterates.
  * @author Sean A. Irvine
  */
-public class A053034 implements Sequence {
+public class A053045 implements Sequence {
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private final PrimeDivision mFactor = new PrimeDivision();
-  private Z mF = Z.ONE;
   protected int mN = 0;
 
   @Override
   public Z next() {
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(++mN)));
-    mF = mF.multiply(mN);
-    long cnt = 1;
+    if (++mN == 1) {
+      return Z.ONE;
+    }
+    mFactorSequence.merge(mFactor.factorize(Z.valueOf(mN)));
+    if (mN == 2) {
+      return Z.TWO;
+    }
     FactorSequence fs = mFactorSequence;
-    Z s = mF;
+    Z s;
     do {
-      ++cnt;
-      s = s.subtract(fs.phi());
+      s = fs.phi();
       fs = Jaguar.factor(s);
-    } while (!s.isZero());
-    return Z.valueOf(cnt);
+    } while (!Z.ONE.equals(s.makeOdd()));
+    return Z.valueOf(1 + s.auxiliary());
   }
 }

@@ -1664,7 +1664,6 @@ A049344 Prime unoriented alternating links (not necessarily connected knots) wit
 A049387 Number of rooted unlabeled strongly connected digraphs with n nodes.
 A049429 Triangle T(n,d) = number of distinct d-dimensional polyominoes (or polycubes) with n cells (n >= 2,d>=1)
 A049430 Triangle read by rows: T(n,d) is the number of distinct properly d-dimensional polyominoes (or polycubes) with n cells (n >= 1, d >= 0).
-A049461 Number of equivalence classes of self-dual Boolean functions of n variables under action of LSD(n,2).
 A049475 Number of 2n X 2n matrices whose entries are {0,-1,+1} and whose row sums and column sums are all distinct.
 A049487 Number of maximal-length non-crossing paths on n X n square lattice, a(4)=13 suspicious.
 A049507 Number of perfect matchings in graph P_{6} x P_{6} x P_{n}.
@@ -1780,3 +1779,5 @@ A052487 Number of maximal irreducible integral matrix groups in n dimensions.
 A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fibonacci NIM where the players may not take one stone.
 A052508 Smallest number such that the largest set of positive real numbers whose sum and product equals the number falls short by n
 A053022 Number of subdiagonal directed diagonally-convex animals with given diagonal semiperimeter.
+A053040 Number of self-complementary types of Boolean functions of n variables under action of affine self-dual group M(n,2).
+A053043 Number of facets of hypermetric correlation cone

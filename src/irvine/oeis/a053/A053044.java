@@ -7,28 +7,29 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053034 Length of sequence when A051953 (cototient function) is repeatedly applied starting with n!.
+ * A053044 a(n) is the number of iterations of the Euler totient function to reach 1, starting at n!.
  * @author Sean A. Irvine
  */
-public class A053034 implements Sequence {
+public class A053044 implements Sequence {
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private final PrimeDivision mFactor = new PrimeDivision();
-  private Z mF = Z.ONE;
   protected int mN = 0;
 
   @Override
   public Z next() {
-    mFactorSequence.merge(mFactor.factorize(Z.valueOf(++mN)));
-    mF = mF.multiply(mN);
-    long cnt = 1;
+    if (++mN == 1) {
+      return Z.ZERO;
+    }
+    mFactorSequence.merge(mFactor.factorize(Z.valueOf(mN)));
+    long cnt = 0;
     FactorSequence fs = mFactorSequence;
-    Z s = mF;
+    Z s;
     do {
       ++cnt;
-      s = s.subtract(fs.phi());
+      s = fs.phi();
       fs = Jaguar.factor(s);
-    } while (!s.isZero());
+    } while (!Z.ONE.equals(s));
     return Z.valueOf(cnt);
   }
 }

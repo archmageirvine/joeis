@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A152875 Number of permutations of {1, 2,...,n} (n &gt;= 2) with all odd entries preceding all even entries or all even entries preceding all odd entries.
+ * A152875 Number of permutations of {1,2,...,n} (n &gt;= 2) with all odd entries preceding all even entries or all even entries preceding all odd entries.
  * a(2n) = 2n!^2; a(2n+1) = 2n!(n+1)!.
  * @author Georg Fischer
  */

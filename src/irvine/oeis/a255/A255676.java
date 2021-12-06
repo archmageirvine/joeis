@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A255676 E.g.f. satisfies: A&apos;(x) = (1 + A(x))*(1 + A(x)^2).
+ * A255676 E.g.f. satisfies: A'(x) = (1 + A(x))*(1 + A(x)^2).
  * E.g.f.: reverse( (log((1+x)^2/(1+x^2)) + 2*atan(x))/4 )
  * @author Georg Fischer
  */

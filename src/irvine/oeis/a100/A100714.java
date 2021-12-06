@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005811;
 
 
 /**
- * A100714 Number of runs in binary expansion of A000040(n) (the n-th prime number) for n&gt;0.
+ * A100714 Number of runs in binary expansion of A000040(n) (the n-th prime number) for n &gt; 0.
  * Formula: <code>a(n) = A005811(A000040(n)).</code>
  * @author Georg Fischer
  */

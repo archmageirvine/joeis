@@ -65,5 +65,5 @@ done
 
 # Fix constructor comments.
 for f in $(ag -G [.]java -l ' \* Construct the sequence'); do
-    perl -0777 -pi -e 's/\/\*\* *\n   \* Construct the sequence.\n   \*\//\/** Construct the sequence. *\//igs' ${f}
+    perl -0777 -pi -e 's/\/\*\* *\n   \* Construct the sequence.\n   \*\//\/** Construct the sequence. *\//igs' "${f}"
 done

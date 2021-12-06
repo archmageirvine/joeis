@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A145455 Exponential transform of C(n, 5) = A000389.
+ * A145455 Exponential transform of C(n,5) = A000389.
  * E.g.f.: exp(exp(x)*x^5/120)
  * @author Georg Fischer
  */

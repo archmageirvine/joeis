@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A080098 Triangle T(n,k) = n OR k, 0&lt;=k&lt;=n, bitwise logical OR, read by rows.
+ * A080098 Triangle T(n,k) = n OR k, 0 &lt;= k &lt;= n, bitwise logical OR, read by rows.
  * @author Georg Fischer
  */
 public class A080098 extends Triangle {

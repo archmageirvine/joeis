@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052104 Numerators of coefficients in function a(x) such that a(a(x)) = exp(x) - 1.
+ * A052104 Numerators of coefficients of the formal power series a(x) such that a(a(x)) = exp(x) - 1.
  * @author Sean A. Irvine
  */
 public class A052104 extends MemoryFunction2<Integer, Q> implements Sequence {

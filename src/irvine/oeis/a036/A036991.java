@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036991 Numbers n with the property that in the binary expansion of n, reading from right to left, the number of 0's never exceeds the number of 1's.
+ * A036991 Numbers k with the property that in the binary expansion of k, reading from right to left, the number of 0's never exceeds the number of 1's.
  * @author Sean A. Irvine
  */
 public class A036991 implements Sequence {

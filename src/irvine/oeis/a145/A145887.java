@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A145887 Number of excedances in all even permutations of {1, 2,...,n} with no fixed points.
+ * A145887 Number of excedances in all even permutations of {1,2,...,n} with no fixed points.
  * E.g.f.: (1/4)*x^3*(2-x)*exp(-x)/(1-x)^2
  * @author Georg Fischer
  */

@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A145458 Exponential transform of C(n, 8) = A000581.
+ * A145458 Exponential transform of C(n,8) = A000581.
  * E.g.f.: exp(exp(x)*x^8/40320)
  * @author Georg Fischer
  */

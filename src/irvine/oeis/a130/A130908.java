@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A130908 E.g.f.: exp(x+x^2/2!+x^3/3!)/(1-x)
+ * A130908 E.g.f.: exp(x+x^2/2!+x^3/3!)/(1-x).
  * E.g.f.: exp(x+x^2/2+x^3/6)/(1-x)
  * @author Georg Fischer
  */

@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A176024 Reverse concatenation of the first a(n) integers gives a prime.
+ * A176024 Numbers k such that the reverse concatenation of the first k integers (A000422(k)) is a prime.
  *
  * @author Georg Fischer
  */

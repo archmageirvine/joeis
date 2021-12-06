@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A081559 Expansion of e.g.f.: exp(cosh(2*x)), even powers only.
+ * A081559 Expansion of e.g.f.: exp(cosh(2*x)-1), even powers only.
  * E.g.f.: exp(cosh(2*x)-1)
  * @author Georg Fischer
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002014 Number of symmetric filaments with n square cells.
+ * A002014 Number of symmetric filaments (strip polyominoes) with n square cells.
  * @author Sean A. Irvine
  */
 @SuppressWarnings("RedundantIfStatement")

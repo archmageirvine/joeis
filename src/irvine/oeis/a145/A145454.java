@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A145454 Exponential transform of binomial(n, 4) = A000332.
+ * A145454 Exponential transform of binomial(n,4) = A000332.
  * E.g.f.: exp(exp(x)*x^4/24)
  * @author Georg Fischer
  */

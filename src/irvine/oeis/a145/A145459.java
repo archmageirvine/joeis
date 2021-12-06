@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A145459 Exponential transform of C(n, 9) = A000582.
+ * A145459 Exponential transform of C(n,9) = A000582.
  * E.g.f.: exp(exp(x)*x^9/362880)
  * @author Georg Fischer
  */

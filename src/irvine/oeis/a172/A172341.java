@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A172341 a(n)=((2^n+1)^n+(2^n-1)^n)/2
+ * A172341 a(n)=((2^n+1)^n+(2^n-1)^n)/2.
  * @author Georg Fischer
  */
 public class A172341 implements Sequence {

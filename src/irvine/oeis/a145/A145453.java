@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A145453 Exponential transform of binomial(n, 3) = A000292(n-2).
+ * A145453 Exponential transform of binomial(n,3) = A000292(n-2).
  * E.g.f.: exp(exp(x)*x^3/6)
  * @author Georg Fischer
  */

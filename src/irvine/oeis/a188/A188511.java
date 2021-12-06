@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A188511 Floor(7n/10).
+ * A188511 a(n) = floor(7*n/10).
  * @author Georg Fischer
  */
 public class A188511 extends BeattySequence {

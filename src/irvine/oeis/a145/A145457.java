@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A145457 Exponential transform of C(n, 7) = A000580.
+ * A145457 Exponential transform of C(n,7) = A000580.
  * E.g.f.: exp(exp(x)*x^7/5040)
  * @author Georg Fischer
  */

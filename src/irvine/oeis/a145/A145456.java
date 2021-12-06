@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A145456 Exponential transform of C(n, 6) = A000579.
+ * A145456 Exponential transform of C(n,6) = A000579.
  * E.g.f.: exp(exp(x)*x^6/720)
  * @author Georg Fischer
  */

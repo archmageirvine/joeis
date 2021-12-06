@@ -675,7 +675,6 @@ A007232 Number of free subsets of multiplicative group of GF(5^n), couldn't get 
 A007233 Number of free subsets of multiplicative group of GF(7^n), couldn't get paper
 A007234 Number of (x -> x^2)-free subsets of symmetric group, couldn't get paper
 A007239 Energy function for hexagonal lattice
-A007253 McKay-Thompson series of class 5a for Monster, requires solving a quintic
 A007270 Zero-field low-temperature series for 3-state Potts model, have paper
 A007271 Zero-field low-temperature series for 3-state Potts model, have paper
 A007276 Expansion of free energy series related to Potts model, have paper

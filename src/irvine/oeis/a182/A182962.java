@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052829 A(x) = exp( x/(1 - x*A'(x)/A(x)) ).
+ * A182962 E.g.f. satisfies: A(x) = exp( x/(1 - x*A'(x)/A(x)) ).
  * @author Sean A. Irvine
  */
 public class A182962 implements Sequence {

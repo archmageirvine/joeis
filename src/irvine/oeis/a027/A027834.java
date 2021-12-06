@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A027834 implements Sequence {
 
-  private static final class SFunction extends MemoryFunction2<Integer, Z> {
+  static final class SFunction extends MemoryFunction2<Integer, Z> {
     
     private final MemoryFunction2<Integer, Z> mV = new MemoryFunction2<Integer, Z>() {
       @Override
@@ -38,8 +38,8 @@ public class A027834 implements Sequence {
     }
   }
 
-  private Integer mN = 0;
-  private final SFunction mS = new SFunction();
+  private int mN = 0;
+  protected final SFunction mS = new SFunction();
 
   protected int getR() {
     return 2;

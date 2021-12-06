@@ -1066,7 +1066,6 @@ A027763 Smallest k such that 2^^n is not congruent to 2^^(n-1) mod k, where 2^^n
 A027824 If there were a unimodular 25-dimensional lattice with minimal norm 3, it would have this as its theta series. Unfortunately, no such lattice exists
 A027825 If there were a unimodular 25-dimensional lattice with minimal norm 3, it would have this as the theta series of its shadow. Unfortunately, no such lattice exists.
 A027832 Number of symmetric {-1, +1} matrices of order n with nonnegative row and column sums.
-A027835 Number of unlabeled strongly connected n-state 2-input automata, no formula in article?
 A027845 Number of subgroups of index n in fundamental group of a certain fiber space, not in paper, possibly erroneous
 A027846 Number of subgroups of index n in fundamental group of a certain fiber space, not in paper, possibly erroneous
 A027851 Number of nonisomorphic semigroups of order n, hard
@@ -1780,3 +1779,5 @@ A052508 Smallest number such that the largest set of positive real numbers whose
 A053022 Number of subdiagonal directed diagonally-convex animals with given diagonal semiperimeter.
 A053040 Number of self-complementary types of Boolean functions of n variables under action of affine self-dual group M(n,2).
 A053043 Number of facets of hypermetric correlation cone
+A053060 Number of n X n invertible binary matrices A such that A^3+I is invertible
+A053071 Number of n X n invertible binary matrices A such that A^5+I is invertible.

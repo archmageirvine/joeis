@@ -23,6 +23,6 @@ public class A245856 implements Sequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.subtract(RING.series(RING.one(), RING.add(RING.add(RING.subtract(RING.monomial(new Q(2), 0), RING.exp(RING.x(), mN)), RING.x()), RING.series(RING.pow(RING.x(), 2, mN), RING.monomial(new Q(2), 0), mN)), mN), RING.series(RING.one(), RING.add(RING.add(RING.add(RING.subtract(RING.monomial(new Q(2), 0), RING.exp(RING.x(), mN)), RING.x()), RING.series(RING.pow(RING.x(), 2, mN), RING.monomial(new Q(2), 0), mN)), RING.series(RING.pow(RING.x(), 3, mN), RING.monomial(new Q(6), 0), mN)), mN)).coeff(mN).multiply(mF).toZ();
+    return RING.subtract(RING.series(RING.one(), RING.add(RING.add(RING.subtract(RING.monomial(Q.TWO, 0), RING.exp(RING.x(), mN)), RING.x()), RING.series(RING.pow(RING.x(), 2, mN), RING.monomial(Q.TWO, 0), mN)), mN), RING.series(RING.one(), RING.add(RING.add(RING.add(RING.subtract(RING.monomial(Q.TWO, 0), RING.exp(RING.x(), mN)), RING.x()), RING.series(RING.pow(RING.x(), 2, mN), RING.monomial(Q.TWO, 0), mN)), RING.series(RING.pow(RING.x(), 3, mN), RING.monomial(Q.SIX, 0), mN)), mN)).coeff(mN).multiply(mF).toZ();
   }
 }

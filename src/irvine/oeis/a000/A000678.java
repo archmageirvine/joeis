@@ -11,8 +11,8 @@ import irvine.math.z.Z;
 public class A000678 extends A000598 {
 
   private static final Q Q24 = new Q(24);
-  private static final Q SIX = new Q(6);
-  private static final Q EIGHT = new Q(8);
+  private static final Q SIX = Q.SIX;
+  private static final Q EIGHT = Q.EIGHT;
 
   protected Polynomial<Q> mQ = null;
 

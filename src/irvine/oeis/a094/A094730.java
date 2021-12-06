@@ -23,6 +23,6 @@ public class A094730 implements Sequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.subtract(RING.add(RING.subtract(RING.add(RING.add(RING.subtract(RING.exp(RING.monomial(new Q(7), 1), mN), RING.multiply(RING.monomial(new Q(6), 0), RING.exp(RING.monomial(new Q(5), 1), mN), mN)), RING.multiply(RING.monomial(new Q(3), 0), RING.exp(RING.monomial(new Q(4), 1), mN), mN)), RING.multiply(RING.monomial(new Q(17), 0), RING.exp(RING.monomial(new Q(3), 1), mN), mN)), RING.multiply(RING.monomial(new Q(30), 0), RING.exp(RING.monomial(new Q(2), 1), mN), mN)), RING.multiply(RING.monomial(new Q(21), 0), RING.exp(RING.x(), mN), mN)), RING.monomial(new Q(6), 0)).coeff(mN).multiply(mF).toZ();
+    return RING.subtract(RING.add(RING.subtract(RING.add(RING.add(RING.subtract(RING.exp(RING.monomial(Q.SEVEN, 1), mN), RING.multiply(RING.monomial(Q.SIX, 0), RING.exp(RING.monomial(Q.FIVE, 1), mN), mN)), RING.multiply(RING.monomial(Q.THREE, 0), RING.exp(RING.monomial(Q.FOUR, 1), mN), mN)), RING.multiply(RING.monomial(new Q(17), 0), RING.exp(RING.monomial(Q.THREE, 1), mN), mN)), RING.multiply(RING.monomial(new Q(30), 0), RING.exp(RING.monomial(Q.TWO, 1), mN), mN)), RING.multiply(RING.monomial(new Q(21), 0), RING.exp(RING.x(), mN), mN)), RING.monomial(Q.SIX, 0)).coeff(mN).multiply(mF).toZ();
   }
 }

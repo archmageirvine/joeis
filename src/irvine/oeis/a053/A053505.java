@@ -23,6 +23,6 @@ public class A053505 implements Sequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.exp(RING.add(RING.add(RING.add(RING.add(RING.add(RING.add(RING.add(RING.x(), RING.series(RING.pow(RING.x(), 2, mN), RING.monomial(new Q(2), 0), mN)), RING.series(RING.pow(RING.x(), 3, mN), RING.monomial(new Q(3), 0), mN)), RING.series(RING.pow(RING.x(), 5, mN), RING.monomial(new Q(5), 0), mN)), RING.series(RING.pow(RING.x(), 6, mN), RING.monomial(new Q(6), 0), mN)), RING.series(RING.pow(RING.x(), 10, mN), RING.monomial(new Q(10), 0), mN)), RING.series(RING.pow(RING.x(), 15, mN), RING.monomial(new Q(15), 0), mN)), RING.series(RING.pow(RING.x(), 30, mN), RING.monomial(new Q(30), 0), mN)), mN).coeff(mN).multiply(mF).toZ();
+    return RING.exp(RING.add(RING.add(RING.add(RING.add(RING.add(RING.add(RING.add(RING.x(), RING.series(RING.pow(RING.x(), 2, mN), RING.monomial(Q.TWO, 0), mN)), RING.series(RING.pow(RING.x(), 3, mN), RING.monomial(Q.THREE, 0), mN)), RING.series(RING.pow(RING.x(), 5, mN), RING.monomial(Q.FIVE, 0), mN)), RING.series(RING.pow(RING.x(), 6, mN), RING.monomial(Q.SIX, 0), mN)), RING.series(RING.pow(RING.x(), 10, mN), RING.monomial(Q.TEN, 0), mN)), RING.series(RING.pow(RING.x(), 15, mN), RING.monomial(new Q(15), 0), mN)), RING.series(RING.pow(RING.x(), 30, mN), RING.monomial(new Q(30), 0), mN)), mN).coeff(mN).multiply(mF).toZ();
   }
 }

@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
 public class A005871 implements Sequence {
 
   private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
-  private static final Q SIX = new Q(6);
+  private static final Q SIX = Q.SIX;
   private static final Q THREE_HALVES = new Q(3, 2);
   private static final Q ONE_SIXTH = new Q(1, 6);
   private static final Q SIXTEEN_THIRDS = new Q(16, 3);

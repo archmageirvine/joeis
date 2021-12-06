@@ -7,7 +7,6 @@ import irvine.oeis.HolonomicRecurrence;
  * A052725 A simple context-free grammar in a labeled universe.
  * @author Georg Fischer
  */
-
 public class A052725 extends HolonomicRecurrence {
 
   /** Construct the sequence. */

@@ -18,8 +18,8 @@ public class A051550 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C0 = RING.create(Arrays.asList(Q.ONE, new Q(1, 36)));
-  private static final Polynomial<Q> C1 = RING.create(Collections.singletonList(new Q(10)));
-  private static final Q SIX = new Q(6);
+  private static final Polynomial<Q> C1 = RING.create(Collections.singletonList(Q.TEN));
+  private static final Q SIX = Q.SIX;
   private int mN = -1;
 
   protected Z select(final Q n) {

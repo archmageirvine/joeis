@@ -16,7 +16,7 @@ public class A047788 implements Sequence {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NUM = RING.monomial(Q.THREE, 0);
   private static final Polynomial<Q> DEN = RING.monomial(Q.TWO, 0);
-  private static final Q Q4 = new Q(4);
+  private static final Q Q4 = Q.FOUR;
   private int mN = -2;
   private Z mF = Z.ONE;
 

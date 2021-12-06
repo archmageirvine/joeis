@@ -17,9 +17,9 @@ public class A001895 implements Sequence {
 
   private static final Q EIGHTH = new Q(1, 8);
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static final Polynomial<Q> A = RING.create(Arrays.asList(Q.ZERO, new Q(4)));
-  private static final Polynomial<Q> B = RING.create(Arrays.asList(Q.ZERO, Q.ZERO, new Q(4)));
-  private static final Polynomial<Q> C = RING.create(Arrays.asList(new Q(4), Q.ZERO, new Q(-8)));
+  private static final Polynomial<Q> A = RING.create(Arrays.asList(Q.ZERO, Q.FOUR));
+  private static final Polynomial<Q> B = RING.create(Arrays.asList(Q.ZERO, Q.ZERO, Q.FOUR));
+  private static final Polynomial<Q> C = RING.create(Arrays.asList(Q.FOUR, Q.ZERO, new Q(-8)));
   private static final Polynomial<Q> D = RING.create(Arrays.asList(Q.THREE, Q.TWO));
   private int mN = 0;
 

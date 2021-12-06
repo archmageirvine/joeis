@@ -10,7 +10,7 @@ import irvine.math.z.Z;
  */
 public class A000639 extends A000598 {
 
-  private static final Q FOUR = new Q(4);
+  private static final Q FOUR = Q.FOUR;
   private int mL = 0;
 
 

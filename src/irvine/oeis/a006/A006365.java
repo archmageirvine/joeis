@@ -15,7 +15,7 @@ public class A006365 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO = RING.monomial(Q.TWO, 0);
-  private static final Q FOUR = new Q(4);
+  private static final Q FOUR = Q.FOUR;
   private int mN = -1;
 
   @Override

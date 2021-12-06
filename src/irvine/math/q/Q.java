@@ -21,6 +21,20 @@ public class Q implements Comparable<Q>, Serializable {
   public static final Q TWO = new Q(Z.TWO);
   /** Constant three. */
   public static final Q THREE = new Q(Z.THREE);
+  /** Constant four. */
+  public static final Q FOUR = new Q(Z.FOUR);
+  /** Constant five. */
+  public static final Q FIVE = new Q(Z.FIVE);
+  /** Constant six. */
+  public static final Q SIX = new Q(Z.SIX);
+  /** Constant seven. */
+  public static final Q SEVEN = new Q(Z.SEVEN);
+  /** Constant eight. */
+  public static final Q EIGHT = new Q(Z.EIGHT);
+  /** Constant nine. */
+  public static final Q NINE = new Q(Z.NINE);
+  /** Constant ten. */
+  public static final Q TEN = new Q(Z.TEN);
   /** Constant half. */
   public static final Q HALF = new Q(Z.ONE, Z.TWO);
   /** Constant third. */

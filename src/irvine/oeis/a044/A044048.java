@@ -16,10 +16,10 @@ import irvine.oeis.Sequence;
 public class A044048 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static final Polynomial<Q> C1 = RING.create(Arrays.asList(Q.ONE, new Q(-6), new Q(5)));
-  private static final Polynomial<Q> C2 = RING.create(Arrays.asList(new Q(6), Q.ZERO, Q.ZERO, new Q(-18)));
+  private static final Polynomial<Q> C1 = RING.create(Arrays.asList(Q.ONE, new Q(-6), Q.FIVE));
+  private static final Polynomial<Q> C2 = RING.create(Arrays.asList(Q.SIX, Q.ZERO, Q.ZERO, new Q(-18)));
   private static final Polynomial<Q> C3 = RING.create(Arrays.asList(Q.ONE, new Q(-3), Q.TWO));
-  private static final Polynomial<Q> C4 = RING.create(Arrays.asList(Q.THREE, new Q(6)));
+  private static final Polynomial<Q> C4 = RING.create(Arrays.asList(Q.THREE, Q.SIX));
 
   private int mN = 2;
 

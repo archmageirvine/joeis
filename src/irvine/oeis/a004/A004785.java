@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A004785 implements Sequence {
 
-  private Q mA = new Q(10);
+  private Q mA = Q.TEN;
   private long mN = 2;
 
   @Override

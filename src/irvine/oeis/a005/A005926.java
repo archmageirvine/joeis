@@ -17,7 +17,7 @@ public class A005926 implements Sequence {
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private static final Q ONE_SIXTEENTH = new Q(1, 16);
   private static final Q EIGHT_THIRDS = new Q(8, 3);
-  private static final Q EIGHT = new Q(8);
+  private static final Q EIGHT = Q.EIGHT;
 
   private Q mN = ONE_SIXTEENTH.negate();
 

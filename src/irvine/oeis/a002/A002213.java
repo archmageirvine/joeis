@@ -18,7 +18,7 @@ public class A002213 implements Sequence {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> TWO_X = RING.create(Arrays.asList(Q.ZERO, Q.TWO));
   private static final Polynomial<Q> A = RING.create(Arrays.asList(Q.ONE, new Q(-3)));
-  private static final Polynomial<Q> B = RING.create(Arrays.asList(Q.ZERO, new Q(-6), new Q(5)));
+  private static final Polynomial<Q> B = RING.create(Arrays.asList(Q.ZERO, new Q(-6), Q.FIVE));
   private int mN = 0;
 
   @Override

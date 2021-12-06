@@ -13,8 +13,8 @@ public class A005873 implements Sequence {
   // Formula (67) in Sloane paper, but does not seem to reproduce sequence
 
 //  private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
-//  private static final Q SIX = new Q(6);
-//  private static final Q EIGHT = new Q(8);
+//  private static final Q SIX = Q.SIX;
+//  private static final Q EIGHT = Q.EIGHT;
 //  private static final Q ONE_TWELFTH = new Q(1, 12);
 //  private static final Q FOUR_THIRDS = new Q(4, 3);
 //  private static final Q SIXTEEN_THIRDS = new Q(16, 3);

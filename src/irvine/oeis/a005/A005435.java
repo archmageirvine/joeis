@@ -29,10 +29,10 @@ public class A005435 implements Sequence {
    */
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static final Polynomial<Q> A = RING.create(Arrays.asList(new Q(21), Q.ZERO, new Q(-68), Q.ZERO, new Q(82), Q.ZERO, new Q(-40), Q.ZERO, new Q(5)));
+  private static final Polynomial<Q> A = RING.create(Arrays.asList(new Q(21), Q.ZERO, new Q(-68), Q.ZERO, new Q(82), Q.ZERO, new Q(-40), Q.ZERO, Q.FIVE));
   private static final Polynomial<Q> B = RING.create(Arrays.asList(Q.THREE, Q.ZERO, new Q(-3), Q.ZERO, new Q(-3), Q.ZERO, Q.THREE));
   private static final Polynomial<Q> C = RING.create(Arrays.asList(Q.ZERO, Q.ZERO, new Q(-6), Q.ZERO, Q.ONE));
-  private static final Polynomial<Q> D = RING.create(Arrays.asList(new Q(9), Q.ZERO, new Q(-18), Q.ZERO, new Q(9)));
+  private static final Polynomial<Q> D = RING.create(Arrays.asList(Q.NINE, Q.ZERO, new Q(-18), Q.ZERO, Q.NINE));
   private static final Polynomial<Q> E = RING.create(Arrays.asList(Q.NEG_ONE, Q.ZERO, Q.ZERO, Q.ZERO, Q.ONE));
   private static final Polynomial<Q> F = RING.create(Arrays.asList(Q.ONE, Q.ZERO, Q.NEG_ONE, Q.ZERO, Q.NEG_ONE, Q.ZERO, Q.ONE));
   private static final Polynomial<Q> G = RING.create(Arrays.asList(Q.ZERO, Q.NEG_ONE, Q.ZERO, Q.ZERO, Q.ZERO, Q.ONE));

@@ -19,6 +19,6 @@ public class A060190 extends ExponentialGeneratingFunction {
 
   @Override
   public Polynomial<Q> compute(final int mN) {
-    return RING.series(RING.subtract(RING.subtract(RING.add(RING.subtract(RING.exp(RING.monomial(new Q(7), 1), mN), RING.multiply(RING.monomial(new Q(7), 1), RING.exp(RING.monomial(new Q(5), 1), mN), mN)), RING.multiply(RING.series(RING.monomial(new Q(21), 2), RING.monomial(new Q(2), 0), mN), RING.exp(RING.monomial(new Q(3), 1), mN), mN)), RING.multiply(RING.series(RING.monomial(new Q(7), 3), RING.monomial(new Q(6), 0), mN), RING.exp(RING.x(), mN), mN)), RING.one()), RING.monomial(new Q(7), 0), mN);
+    return RING.series(RING.subtract(RING.subtract(RING.add(RING.subtract(RING.exp(RING.monomial(Q.SEVEN, 1), mN), RING.multiply(RING.monomial(Q.SEVEN, 1), RING.exp(RING.monomial(Q.FIVE, 1), mN), mN)), RING.multiply(RING.series(RING.monomial(new Q(21), 2), RING.monomial(Q.TWO, 0), mN), RING.exp(RING.monomial(Q.THREE, 1), mN), mN)), RING.multiply(RING.series(RING.monomial(Q.SEVEN, 3), RING.monomial(Q.SIX, 0), mN), RING.exp(RING.x(), mN), mN)), RING.one()), RING.monomial(Q.SEVEN, 0), mN);
   }
 }

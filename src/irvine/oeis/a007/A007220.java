@@ -19,7 +19,7 @@ public class A007220 implements Sequence {
   private static final Polynomial<Q> A = RING.create(Arrays.asList(Q.ZERO, Q.ZERO, Q.ZERO, new Q(16), new Q(-144), new Q(400), new Q(-368), new Q(48)));
   private static final Polynomial<Q> B = RING.create(Arrays.asList(Q.ZERO, Q.ZERO, Q.ZERO, new Q(-16), new Q(224), new Q(-1200), new Q(3092), new Q(-3892), new Q(2140), new Q(-360), new Q(96)));
   private static final Polynomial<Q> S = RING.oneMinusXToTheN(1);
-  private static final Polynomial<Q> T = RING.oneMinusXToTheN(new Q(4), 1);
+  private static final Polynomial<Q> T = RING.oneMinusXToTheN(Q.FOUR, 1);
   private static final Polynomial<Q> C = RING.pow(T, 5);
   private static final Polynomial<Q> D = RING.multiply(S, RING.multiply(RING.create(Arrays.asList(Q.ONE, new Q(-3), Q.ONE)), RING.pow(T, 3)));
 

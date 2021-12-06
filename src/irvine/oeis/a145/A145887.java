@@ -23,7 +23,7 @@ public class A145887 extends ExponentialGeneratingFunction {
       RING.multiply(
         RING.multiply(
           RING.monomial(Q.ONE, 3),
-          RING.subtract(RING.monomial(new Q(2), 0), RING.x())
+          RING.subtract(RING.monomial(Q.TWO, 0), RING.x())
           , mN),
         RING.exp(RING.monomial(Q.NEG_ONE, 1), mN)
         , mN),

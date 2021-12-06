@@ -17,7 +17,7 @@ public class A333006 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> NUM = RING.create(Arrays.asList(Q.ZERO, new Q(36), new Q(-102), new Q(159), new Q(-148), new Q(81), new Q(-24), Q.THREE));
-  private static final Polynomial<Q> DEN = RING.multiply(RING.pow(RING.oneMinusXToTheN(1), 6), new Q(4));
+  private static final Polynomial<Q> DEN = RING.multiply(RING.pow(RING.oneMinusXToTheN(1), 6), Q.FOUR);
 
   private int mN = 0;
   private Z mF = Z.ONE;

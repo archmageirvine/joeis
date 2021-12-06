@@ -23,6 +23,6 @@ public class A173038 implements Sequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.series(RING.add(RING.add(RING.add(RING.add(RING.subtract(RING.zero(), RING.monomial(new Q(4), 0)), RING.monomial(new Q(2), 1)), RING.monomial(new Q(3), 2)), RING.multiply(RING.multiply(RING.monomial(new Q(4), 0), RING.oneMinusXToTheN(1), mN), RING.exp(RING.x(), mN), mN)), RING.multiply(RING.multiply(RING.monomial(new Q(2), 0), RING.oneMinusXToTheN(2), mN), RING.log(RING.oneMinusXToTheN(1), mN), mN)), RING.multiply(RING.monomial(new Q(4), 0), RING.oneMinusXToTheN(1), mN), mN).coeff(mN).multiply(mF).toZ();
+    return RING.series(RING.add(RING.add(RING.add(RING.add(RING.subtract(RING.zero(), RING.monomial(Q.FOUR, 0)), RING.monomial(Q.TWO, 1)), RING.monomial(Q.THREE, 2)), RING.multiply(RING.multiply(RING.monomial(Q.FOUR, 0), RING.oneMinusXToTheN(1), mN), RING.exp(RING.x(), mN), mN)), RING.multiply(RING.multiply(RING.monomial(Q.TWO, 0), RING.oneMinusXToTheN(2), mN), RING.log(RING.oneMinusXToTheN(1), mN), mN)), RING.multiply(RING.monomial(Q.FOUR, 0), RING.oneMinusXToTheN(1), mN), mN).coeff(mN).multiply(mF).toZ();
   }
 }

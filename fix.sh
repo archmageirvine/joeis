@@ -31,6 +31,14 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/new Q(0)/Q.ZERO/g' \
         -e 's/new Q(1)/Q.ONE/g' \
         -e 's/new Q(2)/Q.TWO/g' \
+        -e 's/new Q(3)/Q.THREE/g' \
+        -e 's/new Q(4)/Q.FOUR/g' \
+        -e 's/new Q(5)/Q.FIVE/g' \
+        -e 's/new Q(6)/Q.SIX/g' \
+        -e 's/new Q(7)/Q.SEVEN/g' \
+        -e 's/new Q(8)/Q.EIGHT/g' \
+        -e 's/new Q(9)/Q.NINE/g' \
+        -e 's/new Q(10)/Q.TEN/g' \
         -e 's/= 2 - 1;/= 1;/g' \
         -e 's/= 1 - 1;/= 0;/g' \
         -e 's/= 0 - 1;/= -1;/g' \
@@ -56,6 +64,6 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
 done
 
 # Fix constructor comments.
-for f in $(jgrep -l ' \* Construct the sequence'); do
+for f in $(ag -G [.]java -l ' \* Construct the sequence'); do
     perl -0777 -pi -e 's/\/\*\* *\n   \* Construct the sequence.\n   \*\//\/** Construct the sequence. *\//igs' ${f}
 done

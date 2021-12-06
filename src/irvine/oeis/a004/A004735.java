@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 public class A004735 implements Sequence {
 
   private long mN = 0;
-  private Q mEven = new Q(4);
+  private Q mEven = Q.FOUR;
   private Q mOdd = Q.TWO;
 
   @Override

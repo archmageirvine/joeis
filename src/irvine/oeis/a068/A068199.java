@@ -18,8 +18,8 @@ public class A068199 extends PrependSequence {
     super(new ExponentialGeneratingFunction(0) {
             @Override
             public Polynomial<Q> compute(final int mN) {
-              return RING.multiply(RING.monomial(new Q(2), 0), RING.exp(RING.subtract(RING.multiply(RING.monomial(new Q(3), 0),
-                RING.exp(RING.x(), mN), mN), RING.monomial(new Q(3), 0)), mN), mN);
+              return RING.multiply(RING.monomial(Q.TWO, 0), RING.exp(RING.subtract(RING.multiply(RING.monomial(Q.THREE, 0),
+                RING.exp(RING.x(), mN), mN), RING.monomial(Q.THREE, 0)), mN), mN);
             }
           }
       , 1);

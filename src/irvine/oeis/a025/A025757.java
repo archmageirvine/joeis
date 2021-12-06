@@ -14,8 +14,8 @@ import irvine.oeis.Sequence;
 public class A025757 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static final Polynomial<Q> NUM = RING.monomial(new Q(4), 0);
-  private static final Polynomial<Q> C1 = RING.monomial(new Q(3), 0);
+  private static final Polynomial<Q> NUM = RING.monomial(Q.FOUR, 0);
+  private static final Polynomial<Q> C1 = RING.monomial(Q.THREE, 0);
   private static final Polynomial<Q> C2 = RING.oneMinusXToTheN(new Q(16), 1);
   private int mN = -1;
 

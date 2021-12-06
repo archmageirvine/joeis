@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A306789 implements Sequence {
 
   private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-  private int mN = 0 - 1;
+  private int mN = -1;
 
   @Override
   public Z next() {

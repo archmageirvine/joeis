@@ -23,6 +23,6 @@ public class A218092 implements Sequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.subtract(RING.exp(RING.add(RING.multiply(RING.x(), RING.exp(RING.x(), mN), mN), RING.series(RING.pow(RING.x(), 2, mN), RING.monomial(new Q(2), 0), mN)), mN), RING.exp(RING.x(), mN)).coeff(mN).multiply(mF).toZ();
+    return RING.subtract(RING.exp(RING.add(RING.multiply(RING.x(), RING.exp(RING.x(), mN), mN), RING.series(RING.pow(RING.x(), 2, mN), RING.monomial(Q.TWO, 0), mN)), mN), RING.exp(RING.x(), mN)).coeff(mN).multiply(mF).toZ();
   }
 }

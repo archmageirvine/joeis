@@ -25,6 +25,6 @@ public class A105072 implements Sequence {
     } else {
       return Z.ONE;
     }
-    return RING.exp(RING.series(RING.add(RING.subtract(RING.monomial(new Q(6), 1), RING.one()), RING.exp(RING.monomial(new Q(2), 1), mN)), RING.monomial(new Q(4), 0), mN), mN).coeff(mN).multiply(mF).toZ();
+    return RING.exp(RING.series(RING.add(RING.subtract(RING.monomial(Q.SIX, 1), RING.one()), RING.exp(RING.monomial(Q.TWO, 1), mN)), RING.monomial(Q.FOUR, 0), mN), mN).coeff(mN).multiply(mF).toZ();
   }
 }

@@ -19,8 +19,8 @@ public class A005890 implements Sequence {
   private static final Q SIXTEEN_THIRDS = new Q(16, 3);
   private static final Q EIGHTEEN_SEVENTHS = new Q(18, 7);
   private static final Q NINE_FIFTHS = new Q(9, 5);
-  private static final Q SIX = new Q(6);
-  private static final Q NINE = new Q(9);
+  private static final Q SIX = Q.SIX;
+  private static final Q NINE = Q.NINE;
   private static final Q Q18 = new Q(18);
 
   private Q mN = TWO_NINTHS.negate();

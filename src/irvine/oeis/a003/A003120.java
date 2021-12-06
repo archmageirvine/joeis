@@ -23,7 +23,7 @@ public class A003120 implements Sequence {
   private static final PolynomialRing<Polynomial<Q>> RING_XY = new PolynomialRing<>("y", RING_X);
 
   private static Polynomial<Polynomial<Q>> s() {
-    final Polynomial<Q> s1 = RING_X.create(Arrays.asList(Q.ZERO, Q.ONE, Q.ONE, Q.TWO, Q.THREE, new Q(7)));
+    final Polynomial<Q> s1 = RING_X.create(Arrays.asList(Q.ZERO, Q.ONE, Q.ONE, Q.TWO, Q.THREE, Q.SEVEN));
     final Polynomial<Q> s2 = RING_X.create(Arrays.asList(Q.ZERO, Q.ZERO, Q.ZERO, Q.ZERO, Q.ONE, Q.ONE));
     final Polynomial<Q> s3 = RING_X.monomial(Q.ONE, 5);
     return RING_XY.create(Arrays.asList(RING_X.zero(), s1, s2, s3));

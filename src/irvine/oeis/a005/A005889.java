@@ -17,7 +17,7 @@ public class A005889 implements Sequence {
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
   private static final Q TWO_THIRDS = new Q(2, 3);
   private static final Q FOUR_THIRDS = new Q(4, 3);
-  private static final Q SIX = new Q(6);
+  private static final Q SIX = Q.SIX;
 
   private Q mN = Q.ZERO;
 

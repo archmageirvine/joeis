@@ -7,7 +7,6 @@ import irvine.oeis.HolonomicRecurrence;
  * A052708 A simple context-free grammar.
  * @author Georg Fischer
  */
-
 public class A052708 extends HolonomicRecurrence {
 
   /** Construct the sequence. */

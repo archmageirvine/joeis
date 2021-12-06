@@ -46,7 +46,7 @@ public class A007236 implements Sequence {
     final Polynomial<Q> s1 = RING.series(RING.multiply(R2, sq1), C1, mN);
     final Polynomial<Q> s2 = RING.add(R1, s1);
     final Polynomial<Q> s3 = RING.multiply(RING.add(RING.multiply(Q2, sq1), Q3), Q.TWO);
-    final Polynomial<Q> s = RING.add(RING.series(s2, RING.multiply(RING.sqrt(RING.divide(s3, new Q(4)), mN), Q.TWO), mN), C5);
+    final Polynomial<Q> s = RING.add(RING.series(s2, RING.multiply(RING.sqrt(RING.divide(s3, Q.FOUR), mN), Q.TWO), mN), C5);
     return RING.coeff(C3, s, mN).toZ();
   }
 }

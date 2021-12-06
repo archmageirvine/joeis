@@ -23,6 +23,6 @@ public class A124211 implements Sequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.exp(RING.subtract(RING.zero(), RING.series(RING.multiply(RING.monomial(new Q(2), 0), RING.subtract(RING.exp(RING.subtract(RING.exp(RING.subtract(RING.zero(), RING.series(RING.x(), RING.subtract(RING.monomial(new Q(2), 1), RING.one()), mN)), mN), RING.one()), mN), RING.one()), mN), RING.add(RING.subtract(RING.zero(), RING.monomial(new Q(2), 0)), RING.exp(RING.subtract(RING.exp(RING.subtract(RING.zero(), RING.series(RING.x(), RING.subtract(RING.monomial(new Q(2), 1), RING.one()), mN)), mN), RING.one()), mN)), mN)), mN).coeff(mN).multiply(mF).toZ();
+    return RING.exp(RING.subtract(RING.zero(), RING.series(RING.multiply(RING.monomial(Q.TWO, 0), RING.subtract(RING.exp(RING.subtract(RING.exp(RING.subtract(RING.zero(), RING.series(RING.x(), RING.subtract(RING.monomial(Q.TWO, 1), RING.one()), mN)), mN), RING.one()), mN), RING.one()), mN), RING.add(RING.subtract(RING.zero(), RING.monomial(Q.TWO, 0)), RING.exp(RING.subtract(RING.exp(RING.subtract(RING.zero(), RING.series(RING.x(), RING.subtract(RING.monomial(Q.TWO, 1), RING.one()), mN)), mN), RING.one()), mN)), mN)), mN).coeff(mN).multiply(mF).toZ();
   }
 }

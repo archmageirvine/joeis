@@ -54,16 +54,16 @@ public class A003614 implements Sequence {
 //    // Eqn (1.2.16)
 //    final int[] limits = {mN + 3, mN + 3}; // +2 allows for /x^2
 //    final Q a = mT.subs(1, Q.TWO).extract(0, mN).eval(Q.ONE);
-//    //System.out.println("T(x^2,4)=" + mT.substitutePowers(Y2X, limits).subs(1, new Q(4)));
-//    final Q b = mT.substitutePowers(Y2X, limits).subs(1, new Q(4)).extract(0, mN + 1).eval(Q.ONE).multiply(new Q(3, 2));
+//    //System.out.println("T(x^2,4)=" + mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR));
+//    final Q b = mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR).extract(0, mN + 1).eval(Q.ONE).multiply(new Q(3, 2));
 //    final Q c = RING.pow(mT.subs(1, Q.TWO), 2, limits).extract(0, mN + 1).eval(Q.ONE).divide(2);
 //    final Q d = RING.pow(mT.subs(1, Q.TWO), 4, limits).extract(0, mN + 2).eval(Q.ONE).divide(24);
-//    //System.out.println("T(x^2,4)T(x,2)^2=" + RING.multiply(mT.substitutePowers(Y2X, limits).subs(1, new Q(4)), RING.pow(mT.subs(1, Q.TWO), 2, limits), limits));
-//    final Q e = RING.multiply(mT.substitutePowers(Y2X, limits).subs(1, new Q(4)), RING.pow(mT.subs(1, Q.TWO), 2, limits), limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(3, 4));
-//    final Q f = RING.pow(mT.substitutePowers(Y2X, limits).subs(1, new Q(4)), 2, limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(9, 8));
+//    //System.out.println("T(x^2,4)T(x,2)^2=" + RING.multiply(mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR), RING.pow(mT.subs(1, Q.TWO), 2, limits), limits));
+//    final Q e = RING.multiply(mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR), RING.pow(mT.subs(1, Q.TWO), 2, limits), limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(3, 4));
+//    final Q f = RING.pow(mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR), 2, limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(9, 8));
 //    final Q g = mT.substitutePowers(new int[] {4, 1}, limits).subs(1, new Q(16)).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(71, 4));
-//    //System.out.println("T(x^3,8)T(x,2)=" + RING.multiply(mT.substitutePowers(new int[] {3, 1}, limits).subs(1, new Q(8)), mT.subs(1, Q.TWO), limits));
-//    final Q h = RING.multiply(mT.substitutePowers(new int[] {3, 1}, limits).subs(1, new Q(8)), mT.subs(1, Q.TWO), limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(13, 3));
+//    //System.out.println("T(x^3,8)T(x,2)=" + RING.multiply(mT.substitutePowers(new int[] {3, 1}, limits).subs(1, Q.EIGHT), mT.subs(1, Q.TWO), limits));
+//    final Q h = RING.multiply(mT.substitutePowers(new int[] {3, 1}, limits).subs(1, Q.EIGHT), mT.subs(1, Q.TWO), limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(13, 3));
 //    System.out.println("a=" + a + " b=" + b + " c=" + c + " d=" + d + " e=" + e + " f=" + f + " g=" + g + " h=" + h);
 //    return a.add(b).subtract(c).add(d).add(e).add(f).add(g).add(h).toZ();
 //  }

@@ -18,7 +18,7 @@ public class A114932 extends ExponentialGeneratingFunction {
   }
 
   @Override
-  public Polynomial<Q> compute(final int mN) {
-    return RING.multiply(RING.series(RING.one(), RING.monomial(Q.SIX, 0), mN), RING.subtract(RING.add(RING.add(RING.subtract(RING.subtract(RING.exp(RING.monomial(Q.SEVEN, 1), mN), RING.multiply(RING.monomial(Q.THREE, 0), RING.exp(RING.monomial(Q.FOUR, 1), mN), mN)), RING.exp(RING.monomial(Q.THREE, 1), mN)), RING.multiply(RING.monomial(Q.THREE, 0), RING.exp(RING.monomial(Q.TWO, 1), mN), mN)), RING.multiply(RING.monomial(Q.TWO, 0), RING.exp(RING.x(), mN), mN)), RING.monomial(Q.TWO, 0)), mN);
+  public Polynomial<Q> compute(final int n) {
+    return RING.multiply(RING.series(RING.one(), RING.monomial(Q.SIX, 0), n), RING.subtract(RING.add(RING.add(RING.subtract(RING.subtract(RING.exp(RING.monomial(Q.SEVEN, 1), n), RING.multiply(RING.monomial(Q.THREE, 0), RING.exp(RING.monomial(Q.FOUR, 1), n), n)), RING.exp(RING.monomial(Q.THREE, 1), n)), RING.multiply(RING.monomial(Q.THREE, 0), RING.exp(RING.monomial(Q.TWO, 1), n), n)), RING.multiply(RING.monomial(Q.TWO, 0), RING.exp(RING.x(), n), n)), RING.monomial(Q.TWO, 0)), n);
   }
 }

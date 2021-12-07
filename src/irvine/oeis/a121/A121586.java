@@ -17,8 +17,8 @@ public class A121586 extends PrependSequence {
   public A121586() {
     super(new ExponentialGeneratingFunction(1) {
             @Override
-            public Polynomial<Q> compute(final int mN) {
-              return RING.series(RING.subtract(RING.subtract(RING.multiply(RING.subtract(RING.x(), RING.one()), RING.log(RING.oneMinusXToTheN(1), mN), mN), RING.x()), RING.one()), RING.pow(RING.subtract(RING.x(), RING.one()), 3, mN), mN);
+            public Polynomial<Q> compute(final int n) {
+              return RING.series(RING.subtract(RING.subtract(RING.multiply(RING.subtract(RING.x(), RING.one()), RING.log(RING.oneMinusXToTheN(1), n), n), RING.x()), RING.one()), RING.pow(RING.subtract(RING.x(), RING.one()), 3, n), n);
             }
           }
       , 1);

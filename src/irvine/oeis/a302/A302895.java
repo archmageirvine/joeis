@@ -18,7 +18,7 @@ public class A302895 extends ExponentialGeneratingFunction {
   }
 
   @Override
-  public Polynomial<Q> compute(final int mN) {
-    return RING.series(RING.add(RING.multiply(RING.subtract(RING.add(RING.monomial(Q.FOUR, 0), RING.multiply(RING.add(RING.subtract(RING.zero(), RING.monomial(Q.TWO, 0)), RING.x()), RING.x(), mN)), RING.multiply(RING.monomial(Q.FOUR, 0), RING.cos(RING.x(), mN), mN)), RING.add(RING.one(), RING.cos(RING.x(), mN)), mN), RING.multiply(RING.add(RING.monomial(Q.FOUR, 0), RING.multiply(RING.add(RING.subtract(RING.zero(), RING.monomial(Q.SIX, 0)), RING.x()), RING.x(), mN)), RING.sin(RING.x(), mN), mN)), RING.subtract(RING.subtract(RING.add(RING.monomial(Q.THREE, 0), RING.multiply(RING.monomial(Q.TWO, 0), RING.cos(RING.x(), mN), mN)), RING.cos(RING.monomial(Q.TWO, 1), mN)), RING.multiply(RING.multiply(RING.monomial(Q.TWO, 0), RING.add(RING.monomial(Q.TWO, 0), RING.cos(RING.x(), mN)), mN), RING.sin(RING.x(), mN), mN)), mN);
+  public Polynomial<Q> compute(final int n) {
+    return RING.series(RING.add(RING.multiply(RING.subtract(RING.add(RING.monomial(Q.FOUR, 0), RING.multiply(RING.add(RING.subtract(RING.zero(), RING.monomial(Q.TWO, 0)), RING.x()), RING.x(), n)), RING.multiply(RING.monomial(Q.FOUR, 0), RING.cos(RING.x(), n), n)), RING.add(RING.one(), RING.cos(RING.x(), n)), n), RING.multiply(RING.add(RING.monomial(Q.FOUR, 0), RING.multiply(RING.add(RING.subtract(RING.zero(), RING.monomial(Q.SIX, 0)), RING.x()), RING.x(), n)), RING.sin(RING.x(), n), n)), RING.subtract(RING.subtract(RING.add(RING.monomial(Q.THREE, 0), RING.multiply(RING.monomial(Q.TWO, 0), RING.cos(RING.x(), n), n)), RING.cos(RING.monomial(Q.TWO, 1), n)), RING.multiply(RING.multiply(RING.monomial(Q.TWO, 0), RING.add(RING.monomial(Q.TWO, 0), RING.cos(RING.x(), n)), n), RING.sin(RING.x(), n), n)), n);
   }
 }

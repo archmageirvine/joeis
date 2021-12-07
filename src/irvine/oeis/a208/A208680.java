@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A208680 Kashaev invariant for the (7, 2)-torus knot.
+ * A208680 Kashaev invariant for the (7,2)-torus knot.
  * E.g.f.: 1/2*sin(2*x)/cos(7*x)
  * @author Georg Fischer
  */

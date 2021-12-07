@@ -7,7 +7,7 @@ import irvine.oeis.a052.A052495;
 import irvine.util.Permutation;
 
 /**
- * A053093.
+ * A053095 Number of primes having exactly the same digits as appear in first n primes.
  * @author Sean A. Irvine
  */
 public class A053095 extends A019518 {

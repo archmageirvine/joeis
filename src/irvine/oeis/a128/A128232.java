@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A128232 Expansion of exp(x)/(1 - x^4/4!), where a(n) = 1 + C(n, 4)*a(n-4).
+ * A128232 Expansion of exp(x)/(1 - x^4/4!), where a(n) = 1 + C(n,4)*a(n-4).
  * E.g.f.: exp(x)/(1 - x^4/24)
  * @author Georg Fischer
  */

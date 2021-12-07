@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A088026 Number of &quot;sets of even lists&quot; for even n, cf. A000262.
+ * A088026 Number of "sets of even lists" for even n, cf. A000262.
  * E.g.f.: exp(x^2/(1-x^2))
  * @author Georg Fischer
  */

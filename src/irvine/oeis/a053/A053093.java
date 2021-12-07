@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053093.
+ * A053093 Smallest composite which when sum of prime factors is repeatedly subtracted reaches a prime after n iterations.
  * @author Sean A. Irvine
  */
 public class A053093 implements Sequence {

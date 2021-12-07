@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A105797 &quot;Stirling-Bernoulli transform&quot; of Pell numbers.
+ * A105797 "Stirling-Bernoulli transform" of Pell numbers.
  * E.g.f.: exp(x)*(1-exp(x))/(1-4*exp(x)+2*exp(2*x))
  * @author Georg Fischer
  */

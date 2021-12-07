@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A257476 E.g.f. satisfies: A&apos;(x) = exp(A(x)) / (1 - A(x))^2.
+ * A257476 E.g.f. satisfies: A'(x) = exp(A(x)) / (1 - A(x))^2.
  * E.g.f.: reverse(1-exp(-x)*(1+x^2))
  * @author Georg Fischer
  */

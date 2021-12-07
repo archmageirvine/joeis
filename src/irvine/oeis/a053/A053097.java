@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A053045 EulerPhi is iterated with initial value n!; a(n) = number of powers of 2 among the iterates.
+ * A053097 When the Euler phi function is iterated with initial value A002110(n) = primorial, a(n) = number of powers of 2 among iterates.
  * @author Sean A. Irvine
  */
 public class A053097 extends A002110 {

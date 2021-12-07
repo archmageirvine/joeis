@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A053044 a(n) is the number of iterations of the Euler totient function to reach 1, starting at n!.
+ * A053096 When the Euler phi function is iterated with initial value A002110(n) = primorial, a(n) = number of iterations required to reach the fixed number = 1.
  * @author Sean A. Irvine
  */
 public class A053096 extends A002110 {

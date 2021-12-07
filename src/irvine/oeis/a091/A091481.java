@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A091481 Number of labeled rooted 2, 3 cacti (triangular cacti with bridges).
+ * A091481 Number of labeled rooted 2,3 cacti (triangular cacti with bridges).
  * E.g.f.: reverse(x/exp(x*(2+x)/2))
  * @author Georg Fischer
  */

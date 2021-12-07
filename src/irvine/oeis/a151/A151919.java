@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A151919 a(n) = (-2)^n*A_{n, 3}(1/2) where A_{n,k}(x) are the generalized Eulerian polynomials.
+ * A151919 a(n) = (-2)^n*A_{n,3}(1/2) where A_{n,k}(x) are the generalized Eulerian polynomials.
  * E.g.f.: exp(-x)/(2 - exp(-3*x))
  * @author Georg Fischer
  */

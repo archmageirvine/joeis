@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A128231 Expansion of exp(x)/(1 - x^3/3!), where a(n) = 1 + binomial(n, 3)*a(n-3).
+ * A128231 Expansion of exp(x)/(1 - x^3/3!), where a(n) = 1 + binomial(n,3)*a(n-3).
  * E.g.f.: exp(x)/(1 - x^3/6)
  * @author Georg Fischer
  */

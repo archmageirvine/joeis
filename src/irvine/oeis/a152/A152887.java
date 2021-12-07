@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A152887 Number of descents beginning with an even number and ending with an odd number in all permutations of {1, 2,...,n}.
+ * A152887 Number of descents beginning with an even number and ending with an odd number in all permutations of {1,2,...,n}.
  * E.g.f.: x/((1-x^2)^2*(1-x))
  * @author Georg Fischer
  */

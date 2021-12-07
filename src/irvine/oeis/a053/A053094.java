@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053093.
+ * A053094 Primes found after n iterations in A053093.
  * @author Sean A. Irvine
  */
 public class A053094 implements Sequence {

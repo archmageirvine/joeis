@@ -14,22 +14,18 @@ import irvine.oeis.ExponentialGeneratingFunction;
  */
 public class A185388 extends ExponentialGeneratingFunction {
 
-  private int mN;
-
   /** Construct the sequence. */
   public A185388() {
     super(1);
-    mN = 0;
   }
 
   @Override
-  public Polynomial<Q> compute(final int mN) {
-    return RING.reversion(RING.series(RING.x(), RING.add(RING.exp(RING.x(), mN), RING.log(RING.exp(RING.multiply(RING.log(RING.oneMinusXToTheN(1), mN), RING.subtract(RING.zero(), RING.one()), mN), mN), mN)), mN), mN);
+  public Polynomial<Q> compute(final int n) {
+    return RING.reversion(RING.series(RING.x(), RING.add(RING.exp(RING.x(), n), RING.log(RING.exp(RING.multiply(RING.log(RING.oneMinusXToTheN(1), n), RING.subtract(RING.zero(), RING.one()), n), n), n)), n), n);
   }
 
   @Override
   public Z next() {
-    ++mN;
-    return super.next().divide(mN);
+    return super.next().divide(mN - 1);
   }
 }

@@ -559,6 +559,23 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
   }
 
   /**
+   * Series expansion of the Lambert W function to specified degree.
+   * @param p polynomial
+   * @param n maximum degree
+   * @return series for <code>LambertW(p)</code>.
+   */
+  public Polynomial<E> lambertW(final Polynomial<E> p, final int n) {
+    final RingFactorial<E> f = RingFactorial.instance(mElementField);
+    Polynomial<E> s = zero();
+    if (!zero().equals(p)) {
+      for (int k = 1; k <= n; ++k) {
+        s = signedAdd((k & 1) == 1, s, divide(multiply(pow(p, k, n), mElementField.pow(mElementField.coerce(k), k - 1)), f.factorial(k)));
+      }
+    }
+    return s;
+  }
+
+  /**
    * Series expansion of <code>sqrt(1+p)</code> to specified number of terms.
    * Does not work for integers.
    * @param p polynomial

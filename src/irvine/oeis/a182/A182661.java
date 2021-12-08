@@ -22,6 +22,6 @@ public class A182661 implements Sequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.series(RING.multiply(RING.pow(RING.x(), 3, mN), RING.exp(RING.subtract(RING.zero(), RING.x()), mN), mN), RING.multiply(RING.monomial(Q.THREE, 0), RING.oneMinusXToTheN(1), mN), mN).coeff(mN).multiply(mF).toZ().multiply2();
+    return RING.series(RING.multiply(RING.pow(RING.x(), 3, mN), RING.exp(RING.negate(RING.x()), mN), mN), RING.multiply(RING.monomial(Q.THREE, 0), RING.oneMinusXToTheN(1), mN), mN).coeff(mN).multiply(mF).toZ().multiply2();
   }
 }

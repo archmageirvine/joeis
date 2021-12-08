@@ -23,6 +23,6 @@ public class A302548 implements Sequence {
     if (++mN != 0) {
       mF = mF.multiply(mN);
     }
-    return RING.subtract(RING.zero(), RING.series(RING.log(RING.add(RING.one(), RING.log(RING.oneMinusXToTheN(1), mN)), mN), RING.add(RING.one(), RING.log(RING.oneMinusXToTheN(1), mN)), mN)).coeff(mN).multiply(mF).toZ();
+    return RING.negate(RING.series(RING.log(RING.add(RING.one(), RING.log(RING.oneMinusXToTheN(1), mN)), mN), RING.add(RING.one(), RING.log(RING.oneMinusXToTheN(1), mN)), mN)).coeff(mN).multiply(mF).toZ();
   }
 }

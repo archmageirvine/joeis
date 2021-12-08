@@ -19,6 +19,6 @@ public class A086677 extends ExponentialGeneratingFunction {
 
   @Override
   public Polynomial<Q> compute(final int n) {
-    return RING.subtract(RING.series(RING.multiply(RING.monomial(Q.FOUR, 0), RING.subtract(RING.x(), RING.monomial(Q.THREE, 0)), n), RING.pow(RING.add(RING.x(), RING.one()), 4, n), n), RING.series(RING.add(RING.add(RING.subtract(RING.zero(), RING.monomial(new Q(13), 0)), RING.monomial(new Q(22), 1)), RING.monomial(Q.THREE, 2)), RING.multiply(RING.exp(RING.multiply(RING.log(RING.add(RING.subtract(RING.subtract(RING.zero(), RING.pow(RING.x(), 2, n)), RING.monomial(Q.FOUR, 1)), RING.one()), n), RING.series(RING.one(), RING.monomial(Q.TWO, 0), n), n), n), RING.pow(RING.add(RING.x(), RING.one()), 4, n), n), n));
+    return RING.subtract(RING.series(RING.multiply(RING.monomial(Q.FOUR, 0), RING.subtract(RING.x(), RING.monomial(Q.THREE, 0)), n), RING.pow(RING.add(RING.x(), RING.one()), 4, n), n), RING.series(RING.add(RING.add(RING.negate(RING.monomial(new Q(13), 0)), RING.monomial(new Q(22), 1)), RING.monomial(Q.THREE, 2)), RING.multiply(RING.exp(RING.multiply(RING.log(RING.add(RING.subtract(RING.negate(RING.pow(RING.x(), 2, n)), RING.monomial(Q.FOUR, 1)), RING.one()), n), RING.series(RING.one(), RING.monomial(Q.TWO, 0), n), n), n), RING.pow(RING.add(RING.x(), RING.one()), 4, n), n), n));
   }
 }

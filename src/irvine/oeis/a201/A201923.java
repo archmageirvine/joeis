@@ -7,14 +7,14 @@ import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
  * A201923 E.g.f. satisfies: A(x) = 1/(cos(x*A(x)) - sin(x*A(x))).
- * E.g.f.: divx(reverse(x*(cos(x)-sin(x))))
+ * E.g.f.: <code>divx(reverse(x*(cos(x)-sin(x))))</code>
  * @author Georg Fischer
  */
 public class A201923 extends ExponentialGeneratingFunction {
 
   /** Construct the sequence. */
   public A201923() {
-    super(0 + 1);
+    super(1);
   }
 
   @Override

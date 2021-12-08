@@ -19,7 +19,7 @@ public class A075497 extends Triangle {
 
   /**
    * Generic constructor with parameters
-   * @param power
+   * @param power exponent
    */
   public A075497(final int power) {
     mPower = power;
@@ -30,6 +30,6 @@ public class A075497 extends Triangle {
     if (n == 0) {
       return Z.ONE;
     }
-    return get(n - 1, k).multiply(mPower * (k + 1)).add(get(n - 1, k - 1));
+    return get(n - 1, k).multiply(mPower * (long) (k + 1)).add(get(n - 1, k - 1));
   }
 }

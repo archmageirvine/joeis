@@ -7,14 +7,14 @@ import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
  * A258922 E.g.f. satisfies: A(x) = 1/(3 - 2*exp(x*A(x))).
- * E.g.f.: divx(reverse(3*x-2*x*exp(x)))
+ * E.g.f.: <code>divx(reverse(3*x-2*x*exp(x)))</code>
  * @author Georg Fischer
  */
 public class A258922 extends ExponentialGeneratingFunction {
 
   /** Construct the sequence. */
   public A258922() {
-    super(0 + 1);
+    super(1);
   }
 
   @Override

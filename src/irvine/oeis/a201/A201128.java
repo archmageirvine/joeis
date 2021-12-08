@@ -7,14 +7,14 @@ import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
  * A201128 E.g.f. satisfies: A(x) = 1 + tan(x*A(x)).
- * E.g.f.: divx(reverse(x/(1+tan(x))))
+ * E.g.f.: <code>divx(reverse(x/(1+tan(x))))</code>
  * @author Georg Fischer
  */
 public class A201128 extends ExponentialGeneratingFunction {
 
   /** Construct the sequence. */
   public A201128() {
-    super(0 + 1);
+    super(1);
   }
 
   @Override

@@ -7,7 +7,7 @@ import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
  * A276359 E.g.f. A(x) satisfies: A( x*exp(x)*cosh(x) ) = x*exp(2*x).
- * E.g.f.: reverse((2*x+lambertw(2*x))/4)
+ * E.g.f.: <code>reverse((2*x+lambertw(2*x))/4)</code>
  * @author Georg Fischer
  */
 public class A276359 extends ExponentialGeneratingFunction {

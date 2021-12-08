@@ -7,7 +7,7 @@ import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
  * A229078 Number of ascending runs in {1,...,n}^n.
- * E.g.f.: 1/2*lambertw(-x)*(lambertw(-x)^3+lambertw(-x)^2-lambertw(-x)-2)/(1+lambertw(-x))^3
+ * E.g.f.: <code>1/2*lambertw(-x)*(lambertw(-x)^3+lambertw(-x)^2-lambertw(-x)-2)/(1+lambertw(-x))^3</code>
  * @author Georg Fischer
  */
 public class A229078 extends ExponentialGeneratingFunction {

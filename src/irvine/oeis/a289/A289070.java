@@ -16,10 +16,7 @@ public class A289070 extends A289064 {
 
   @Override
   public Z next() {
-    Z result = super.next();
-    if ((mN % 1) == 0) {
-      result = super.next();
-    }
-    return result;
+    super.next();
+    return super.next();
   }
 }

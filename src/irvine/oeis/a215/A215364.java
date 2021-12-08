@@ -7,14 +7,14 @@ import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
  * A215364 E.g.f. satisfies: A(x) = 1 + x*A(x)^2*cosh(x*A(x)).
- * E.g.f.: divx(reverse(x-x^2*cosh(x)))
+ * E.g.f.: <code>divx(reverse(x-x^2*cosh(x)))</code>
  * @author Georg Fischer
  */
 public class A215364 extends ExponentialGeneratingFunction {
 
   /** Construct the sequence. */
   public A215364() {
-    super(0 + 1);
+    super(1);
   }
 
   @Override

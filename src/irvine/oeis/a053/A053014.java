@@ -49,6 +49,20 @@ public class A053014 implements Sequence {
     public String toString() {
       return mA + " " + mK + " " + mM;
     }
+
+    @Override
+    public int hashCode() {
+      return mA.hashCode();
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State other = (State) obj;
+      return mA.equals(other.mA) && mK == other.mK && mM == other.mM;
+    }
   }
 
   private long mN = 0;

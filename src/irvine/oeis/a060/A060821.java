@@ -6,7 +6,7 @@ import irvine.oeis.triangle.Triangle;
 
 /**
  * A060821 Triangle T(n,k) read by rows giving coefficients of Hermite polynomial of order n (n &gt;= 0, 0 &lt;= k &lt;= n).
- * T(n, k) = ((-1)^((n-k)/2))*(2^k)*n!/(k!*((n-k)/2)!) if n-k is even and >= 0, else 0.
+ * <code>T(n, k) = ((-1)^((n-k)/2))*(2^k)*n!/(k!*((n-k)/2)!)</code> if n-k is even and &gt;= 0, else 0.
  * @author Georg Fischer
  */
 public class A060821 extends Triangle {

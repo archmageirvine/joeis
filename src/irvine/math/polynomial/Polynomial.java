@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 
 import irvine.math.cr.CR;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
@@ -20,11 +21,11 @@ public class Polynomial<E> extends ArrayList<E> {
    * @return polynomial over integers
    */
   public static Polynomial<Z> create(final long... coeffs) {
-    final ArrayList<Z> c = new ArrayList<>();
+    final Polynomial<Z> res = new Polynomial<>("x", Z.ZERO, Z.ONE);
     for (final long v : coeffs) {
-      c.add(Z.valueOf(v));
+      res.add(Z.valueOf(v));
     }
-    return new Polynomial<>(Z.ZERO, Z.ONE, c);
+    return res;
   }
 
   /**
@@ -33,9 +34,20 @@ public class Polynomial<E> extends ArrayList<E> {
    * @return polynomial over integers
    */
   public static Polynomial<Z> create(final Z... coeffs) {
-    final ArrayList<Z> c = new ArrayList<>();
-    Collections.addAll(c, coeffs);
-    return new Polynomial<>(Z.ZERO, Z.ONE, c);
+    final Polynomial<Z> res = new Polynomial<>("x", Z.ZERO, Z.ONE);
+    Collections.addAll(res, coeffs);
+    return res;
+  }
+
+  /**
+   * Helper convenience method for the common task of creating an integer polynomial.
+   * @param coeffs integer coefficients
+   * @return polynomial over integers
+   */
+  public static Polynomial<Q> create(final Q... coeffs) {
+    final Polynomial<Q> res = new Polynomial<>("x", Q.ZERO, Q.ONE);
+    Collections.addAll(res, coeffs);
+    return res;
   }
 
   private final E mZero;

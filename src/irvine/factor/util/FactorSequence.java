@@ -328,7 +328,7 @@ public final class FactorSequence {
       throw new UnsupportedOperationException();
     }
     final Z[] p = toZArray();
-    if (p.length == 0) {
+    if (p.length == 0 || (p.length == 1 && Z.ONE.equals(p[0]))) {
       return new Z[] {Z.ONE};      // Number was 1
     }
     final int[] limits = new int[p.length];

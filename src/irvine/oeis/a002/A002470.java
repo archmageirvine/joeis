@@ -14,7 +14,7 @@ import irvine.oeis.a100.A100130;
 public class A002470 extends A100130 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private final Polynomial<Z> mA100130 = Polynomial.create(0);
+  private final Polynomial<Z> mA100130 = RING.empty();
   {
     mA100130.add(Z.ZERO);
   }

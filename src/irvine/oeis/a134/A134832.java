@@ -8,7 +8,7 @@ import irvine.oeis.triangle.Triangle;
 
 /**
  * A134832 Triangle of succession numbers for circular permutations.
- * a(n,k) = binomial(n,k)*a(n-k, 0), k&gt;=1 with a(n-k, 0):=A000757(n), n&gt;>=0.
+ * a(n,k) = binomial(n,k)*a(n-k, 0), k&gt;=1 with a(n-k, 0):=A000757(n), n&gt;=0.
  * @author Georg Fischer
  */
 public class A134832 extends Triangle {

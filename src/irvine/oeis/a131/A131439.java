@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A131439 Inverse binomial transform of A131438 (assuming zero offset in both sequences)
+ * A131439 Inverse binomial transform of A131438 (assuming zero offset in both sequences).
  * @author Georg Fischer
  */
 public class A131439 extends BinomialTransform {

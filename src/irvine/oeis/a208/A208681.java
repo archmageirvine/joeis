@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A208681 Kashaev\u2019s invariant for the (9,2)-torus knot.
+ * A208681 Kashaev's invariant for the (9,2)-torus knot.
  * E.g.f.: 1/2*sin(2*x)/cos(9*x)
  * @author Georg Fischer
  */

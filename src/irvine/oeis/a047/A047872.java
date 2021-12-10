@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A047872 a(n) = floor(abs(B_(n+1)/B_(n))) where B_n is the n-th Bernoulli number.
+ * A047872 a(n) = floor(abs(B(2*n + 2)/B(2*n))) where B(n) is the n-th Bernoulli number.
  * @author Sean A. Irvine
  */
 public class A047872 implements Sequence {

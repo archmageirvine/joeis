@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A167417 Largest prime concatenation of the first n primes.
+ * A167417 Largest prime concatenation of the first n primes, or 0 if no such prime exists.
  * @author Georg Fischer
  */
 public class A167417 extends FiniteSequence {

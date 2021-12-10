@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A266787 Binary representation of the n-th iteration of the &quot;Rule 61&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266787 Binary representation of the n-th iteration of the "Rule 61" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266787 extends HolonomicRecurrence {

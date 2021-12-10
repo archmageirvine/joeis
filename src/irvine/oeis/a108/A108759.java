@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.DoubleRowTriangle;
 
 /**
- * A108759 Triangle read by rows: T(n,k) = binomial(3k,k)*binomial(n+k,3k)/(2k+1) (0&lt;=k&lt;=floor(n/2)).
+ * A108759 Triangle read by rows: T(n,k) = binomial(3k,k)*binomial(n+k,3k)/(2k+1) (0 &lt;= k &lt;= floor(n/2)).
  * @author Georg Fischer
  */
 public class A108759 extends DoubleRowTriangle {

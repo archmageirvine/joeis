@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006017;
 
 /**
- * A060147 Nim-binomial transform of the Nim-squares sequence {0, 1, 3, 2, 6, 7, 5, 4, 13, 12, 14,...}.
+ * A060147 Nim-binomial transform of the Nim-squares sequence {0,1,3,2,6,7,5,4,13,12,14,...}.
  * a(2^e) = A006017(e), a(p^e) = 0 otherwise.
  * @author Georg Fischer
  */

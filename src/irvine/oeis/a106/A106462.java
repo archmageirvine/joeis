@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007318;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A106462 Binomial transform of A007318 (Pascal&apos;s triangle by rows).
+ * A106462 Binomial transform of A007318 (Pascal's triangle by rows).
  * @author Georg Fischer
  */
 public class A106462 extends BinomialTransform {

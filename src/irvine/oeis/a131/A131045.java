@@ -4,7 +4,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A131045 Binomial transform of Euler&apos;s totient function phi(n+1).
+ * A131045 Binomial transform of Euler's totient function phi(n+1).
  * @author Georg Fischer
  */
 public class A131045 extends BinomialTransform {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A097750 Reversal of the binomial transform of the Whitney triangle A004070 (see A131250),
+ * A097750 Reversal of the binomial transform of the Whitney triangle A004070 (see A131250), triangle read by rows, T(n,k) for 0 &lt;= k &lt;= n.
  * triangle read by rows, T(n,k) for 0 &lt;= k &lt;= n.
  * T(n, k) = T(n-1,k)+2*T(n-1,k-1)-T(n-2,k-2), T(0, 0)=1, T(1, 0)=1, T(1, 1)=2.
  * @author Georg Fischer

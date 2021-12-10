@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002218 Number of unlabeled nonseparable (or 2-connected) graphs (or blocks) with n nodes.
+ * A002218 Number of unlabeled nonseparable graphs (or blocks) with n nodes.
  * @author Sean A. Irvine
  */
 public class A002218 implements Sequence {

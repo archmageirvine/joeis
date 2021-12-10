@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A103406 Triangle read by rows: n-th row = unsigned coefficients of the characteristic polynomials of an n X n matrix with 2&apos;s on the diagonal and 1&apos;s elsewhere.
+ * A103406 Triangle read by rows: n-th row = unsigned coefficients of the characteristic polynomials of an n X n matrix with 2's on the diagonal and 1's elsewhere.
  * T(n,k) = (k+1)*binomial(n,k)
  * @author Georg Fischer
  */

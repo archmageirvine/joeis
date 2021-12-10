@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005259;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A322519 Inverse binomial transform of the Apéry numbers (A005259).
+ * A322519 Inverse binomial transform of the Ap\u00e9ry numbers (A005259).
  * @author Georg Fischer
  */
 public class A322519 extends BinomialTransform {

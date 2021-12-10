@@ -1,6 +1,7 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the negation of another sequence.

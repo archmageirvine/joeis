@@ -2,7 +2,7 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.WeighTransformSequence;
+import irvine.oeis.transform.WeighTransformSequence;
 
 /**
  * A038086 Number of n-node rooted identity trees of height at most 7.

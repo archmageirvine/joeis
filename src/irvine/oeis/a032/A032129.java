@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.DikTransformSequence;
+import irvine.oeis.transform.DikTransformSequence;
 
 /**
  * A032129 Number of dyslexic rooted planar trees with n nodes.

@@ -2,7 +2,7 @@ package irvine.oeis.a069;
 // Manually modified 2020-09-22
 
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Stirling2TransformSequence;
+import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a001.A001563;
 
 /**

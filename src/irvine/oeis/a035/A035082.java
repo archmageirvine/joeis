@@ -4,11 +4,11 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.BikTransformSequence;
 import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
+import irvine.oeis.transform.BikTransformSequence;
 
 /**
  * A035082 Number of rooted polygonal cacti (Husimi graphs) with n nodes.

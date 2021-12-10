@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Stirling2TransformSequence;
+import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
  * A007832 Number of point labeled 5,6-free two-graphs with n nodes.

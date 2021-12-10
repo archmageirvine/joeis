@@ -1,6 +1,8 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import irvine.math.z.Z;
+import irvine.oeis.InverseEulerTransform;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the Lyndon transform of another sequence.

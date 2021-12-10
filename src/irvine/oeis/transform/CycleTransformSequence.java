@@ -1,7 +1,7 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.InverseMobiusTransformSequence;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the cycle, indistinct, unlabeled transform of another sequence.

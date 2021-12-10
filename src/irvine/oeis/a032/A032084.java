@@ -1,8 +1,8 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.BhjTransformSequence;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.transform.BhjTransformSequence;
 
 /**
  * A032084 Doubles (index 2+) under "BHJ" (reversible, identity, labeled) transform.

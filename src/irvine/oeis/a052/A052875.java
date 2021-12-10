@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Stirling2TransformSequence;
+import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a000.A000142;
 
 

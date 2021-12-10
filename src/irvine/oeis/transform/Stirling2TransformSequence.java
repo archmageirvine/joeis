@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,6 +8,8 @@ import java.util.List;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
+import irvine.oeis.ReaderSequence;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the Stirling numbers of the second kind transform of

@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,6 +11,8 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.ReaderSequence;
+import irvine.oeis.Sequence;
 
 /**
  * DHK transform.

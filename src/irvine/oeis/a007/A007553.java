@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.LogarithmicTransformSequence;
+import irvine.oeis.transform.LogarithmicTransformSequence;
 import irvine.oeis.a000.A000045;
 
 /**

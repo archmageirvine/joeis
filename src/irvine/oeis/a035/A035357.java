@@ -8,8 +8,8 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.BhjTransformSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.transform.BhjTransformSequence;
 
 /**
  * A035357 Number of increasing asymmetric rooted polygonal cacti with bridges (mixed Husimi trees).

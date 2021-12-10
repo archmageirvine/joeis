@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.DikTransformSequence;
+import irvine.oeis.transform.DikTransformSequence;
 import irvine.oeis.a005.A005408;
 
 /**

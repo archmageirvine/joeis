@@ -1,7 +1,7 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.BikTransformSequence;
 import irvine.oeis.a000.A000237;
+import irvine.oeis.transform.BikTransformSequence;
 
 /**
  * A035350 "BIK" (reversible, indistinct, unlabeled) transform of A000237.

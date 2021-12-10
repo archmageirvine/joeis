@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.BhjTransformSequence;
 import irvine.oeis.a000.A000027;
+import irvine.oeis.transform.BhjTransformSequence;
 
 /**
  * A032079 "BHJ" (reversible, identity, labeled) transform of 1,2,3,4...

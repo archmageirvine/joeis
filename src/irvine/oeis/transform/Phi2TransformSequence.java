@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.util.ArrayList;
 
@@ -6,6 +6,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * A transform similar to the Mobius transform but using the odd part of divisors.

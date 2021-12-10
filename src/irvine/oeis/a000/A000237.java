@@ -3,10 +3,10 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.BikTransformSequence;
 import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.transform.BikTransformSequence;
 
 /**
  * A000237 Number of mixed Husimi trees with n nodes; or rooted polygonal cacti with bridges.

@@ -1,8 +1,8 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.BoustrophedonTransformSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001285;
+import irvine.oeis.transform.BoustrophedonTransformSequence;
 
 /**
  * A029885 Boustrophedon transform of 1 followed by Thue-Morse sequence A001285.

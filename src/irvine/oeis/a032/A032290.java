@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.DikTransformSequence;
+import irvine.oeis.transform.DikTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;

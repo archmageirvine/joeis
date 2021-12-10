@@ -2,7 +2,7 @@ package irvine.oeis.a035;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.DikTransformSequence;
+import irvine.oeis.transform.DikTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;

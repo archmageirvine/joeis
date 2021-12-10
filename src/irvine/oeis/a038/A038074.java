@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.WeighTransformSequence;
+import irvine.oeis.transform.WeighTransformSequence;
 
 /**
  * A038074 Shifts left and changes sign under Weigh transform.

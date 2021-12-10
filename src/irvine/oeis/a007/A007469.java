@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Stirling2TransformSequence;
+import irvine.oeis.transform.Stirling2TransformSequence;
 
 /**
  * A007469 Shifts left 2 places under Stirling2 transform.

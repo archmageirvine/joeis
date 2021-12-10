@@ -1,7 +1,7 @@
 package irvine.oeis.a299;
 // manually deris2/weighx at 2021-11-04
 
-import irvine.oeis.WeighTransformSequence;
+import irvine.oeis.transform.WeighTransformSequence;
 import irvine.oeis.a167.A167934;
 
 /**

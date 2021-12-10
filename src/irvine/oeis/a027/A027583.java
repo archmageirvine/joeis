@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.PartitionTransformSequence;
+import irvine.oeis.transform.PartitionTransformSequence;
 import irvine.oeis.Sequence;
 
 /**

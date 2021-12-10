@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.StirlingBernoulliTransform;
+import irvine.oeis.transform.StirlingBernoulliTransform;
 
 /**
  * A052342 Shifts left under Stirling-Bernoulli transform.

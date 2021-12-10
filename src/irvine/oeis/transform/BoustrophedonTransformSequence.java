@@ -1,7 +1,8 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * Return the boustrophedon transform of a sequence.

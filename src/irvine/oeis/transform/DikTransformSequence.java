@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.util.ArrayList;
 
@@ -6,6 +6,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the bracelet, indistinct, unlabeled transform.

@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.BikTransformSequence;
 import irvine.oeis.a000.A000027;
+import irvine.oeis.transform.BikTransformSequence;
 
 /**
  * A032126 "BIK" (reversible, indistinct, unlabeled) transform of 1,2,3,4...

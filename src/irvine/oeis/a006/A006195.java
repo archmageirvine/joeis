@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.RevertTransformSequence;
+import irvine.oeis.transform.RevertTransformSequence;
 import irvine.oeis.a000.A000122;
 
 /**

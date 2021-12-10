@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 // manually 2021-01-01
 
-import irvine.oeis.InverseWeighTransform;
+import irvine.oeis.transform.InverseWeighTransform;
 
 /**
  * A038001 Inverse WEIGH transform of A038000.

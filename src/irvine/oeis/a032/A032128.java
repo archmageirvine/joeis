@@ -4,8 +4,8 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.BikTransformSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.transform.BikTransformSequence;
 
 /**
  * A032128 Number of dyslexic planted planar trees with n nodes.

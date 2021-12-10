@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 
 import irvine.oeis.PaddingSequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.RevertTransformSequence;
+import irvine.oeis.transform.RevertTransformSequence;
 
 
 /**

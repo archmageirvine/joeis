@@ -6,7 +6,7 @@ import java.util.TreeSet;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.PartitionTransformSequence;
+import irvine.oeis.transform.PartitionTransformSequence;
 
 /**
  * A027582 Sequence satisfies T(T(a))=a, where T is defined below.

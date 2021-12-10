@@ -1,7 +1,7 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Stirling1TransformSequence;
+import irvine.oeis.transform.Stirling1TransformSequence;
 import irvine.oeis.a006.A006351;
 
 /**

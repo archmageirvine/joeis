@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,6 +11,9 @@ import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.ReaderSequence;
+import irvine.oeis.Sequence;
 
 /**
  * CHJ transform.

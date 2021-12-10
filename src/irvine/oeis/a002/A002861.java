@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.CycleTransformSequence;
+import irvine.oeis.transform.CycleTransformSequence;
 import irvine.oeis.a000.A000081;
 
 /**

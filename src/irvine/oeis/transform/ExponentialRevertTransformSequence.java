@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRingField;
@@ -6,6 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * Exponential reversion of another sequence.

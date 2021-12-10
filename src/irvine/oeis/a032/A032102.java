@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.DhkTransformSequence;
+import irvine.oeis.transform.DhkTransformSequence;
 
 /**
  * A032102 Number of dyslexic identity rooted planar trees with n nodes.

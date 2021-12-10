@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.LogarithmicTransformSequence;
+import irvine.oeis.transform.LogarithmicTransformSequence;
 import irvine.oeis.a000.A000081;
 
 /**

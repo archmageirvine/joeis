@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.WittTransformSequence;
+import irvine.oeis.transform.WittTransformSequence;
 import irvine.oeis.a022.A022553;
 
 /**

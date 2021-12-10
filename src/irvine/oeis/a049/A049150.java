@@ -2,7 +2,7 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.oeis.PaddingSequence;
-import irvine.oeis.RevertTransformSequence;
+import irvine.oeis.transform.RevertTransformSequence;
 
 /**
  * A049150 Recip transform of 2*(1 + x^2)-1/(1-x).

@@ -1,9 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the inverse Weigh transform of another sequence.

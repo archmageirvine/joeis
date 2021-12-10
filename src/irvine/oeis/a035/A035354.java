@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.DhkTransformSequence;
+import irvine.oeis.transform.DhkTransformSequence;
 import irvine.oeis.SkipSequence;
 
 /**

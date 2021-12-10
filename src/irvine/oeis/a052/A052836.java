@@ -5,7 +5,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.WeighTransformSequence;
+import irvine.oeis.transform.WeighTransformSequence;
 
 /**
  * A052836 A simple grammar.

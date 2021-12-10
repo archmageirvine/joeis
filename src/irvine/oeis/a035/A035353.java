@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.WeighTransformSequence;
+import irvine.oeis.transform.WeighTransformSequence;
 
 /**
  * A035353 Number of asymmetric rooted polygonal cacti with bridges (mixed Husimi trees).

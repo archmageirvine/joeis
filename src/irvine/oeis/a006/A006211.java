@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Phi2TransformSequence;
+import irvine.oeis.transform.Phi2TransformSequence;
 
 /**
  * A006211 Generalized Fibonacci numbers D_{n,3}.

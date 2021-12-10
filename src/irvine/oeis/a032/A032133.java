@@ -4,8 +4,8 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.BikTransformSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.transform.BikTransformSequence;
 
 /**
  * A032133 Number of series-reduced dyslexic planted planar trees with n leaves of 2 colors.

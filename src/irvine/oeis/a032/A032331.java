@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.ChjTransformSequence;
+import irvine.oeis.transform.ChjTransformSequence;
 import irvine.oeis.a000.A000027;
 
 /**

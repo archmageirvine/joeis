@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.Stirling2TransformSequence;
+import irvine.oeis.transform.Stirling2TransformSequence;
 import irvine.oeis.a000.A000290;
 
 /**

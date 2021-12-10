@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.CycleTransformSequence;
+import irvine.oeis.transform.CycleTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
 

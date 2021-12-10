@@ -1,8 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.Sequence;
 
 /**
  * Compute the WEIGH transform of another sequence.  Corresponds to <code>weighout</code>

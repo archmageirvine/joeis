@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 import irvine.math.z.Z;
-import irvine.oeis.DhkTransformSequence;
+import irvine.oeis.transform.DhkTransformSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000004;

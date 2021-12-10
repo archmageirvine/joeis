@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.WeighTransformSequence;
+import irvine.oeis.transform.WeighTransformSequence;
 
 /**
  * A038076 Number of rooted identity trees with 3-colored leaves.

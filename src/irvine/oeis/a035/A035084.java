@@ -1,10 +1,10 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.BikTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
+import irvine.oeis.transform.BikTransformSequence;
 
 /**
  * A035084 BIK(b)-b where b is A035082.

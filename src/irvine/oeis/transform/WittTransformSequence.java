@@ -1,9 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the Witt transform of another sequence.

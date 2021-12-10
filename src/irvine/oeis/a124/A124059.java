@@ -1,7 +1,7 @@
 package irvine.oeis.a124;
 // manually 2021-01-01
 
-import irvine.oeis.InverseWeighTransform;
+import irvine.oeis.transform.InverseWeighTransform;
 import irvine.oeis.a003.A003400;
 
 /**

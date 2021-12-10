@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.StirlingBernoulliTransform;
+import irvine.oeis.transform.StirlingBernoulliTransform;
 import irvine.oeis.a000.A000108;
 
 /**

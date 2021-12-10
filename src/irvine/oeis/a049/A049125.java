@@ -2,7 +2,7 @@ package irvine.oeis.a049;
 
 import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
-import irvine.oeis.RevertTransformSequence;
+import irvine.oeis.transform.RevertTransformSequence;
 
 /**
  * A049125 Revert transform of (1 + x - x^2) / (1 + x)^2.

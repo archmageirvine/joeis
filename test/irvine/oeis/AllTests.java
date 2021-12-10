@@ -11,20 +11,15 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
-    suite.addTestSuite(BikTransformSequenceTest.class);
-    suite.addTestSuite(CycleTransformSequenceTest.class);
-    suite.addTestSuite(DikTransformSequenceTest.class);
     suite.addTestSuite(EuclidMullinSequenceTest.class);
     suite.addTestSuite(EulerTransformSequenceTest.class);
     suite.addTestSuite(FactorizationSequenceTest.class);
     suite.addTestSuite(FiniteSequenceTest.class);
     suite.addTestSuite(HolonomicRecurrenceTest.class);
-    suite.addTestSuite(LyndonTransformSequenceTest.class);
     suite.addTestSuite(NegativePositiveSequenceTest.class);
     suite.addTestSuite(RunsBaseSequenceTest.class);
     suite.addTestSuite(SquareDigitsSequenceTest.class);
     suite.addTestSuite(WalkCubeSequenceTest.class);
-    suite.addTestSuite(WittTransformSequenceTest.class);
     suite.addTest(SequenceTests.suite());
     suite.addTest(irvine.oeis.a001.AllTests.suite());
     suite.addTest(irvine.oeis.a002.AllTests.suite());

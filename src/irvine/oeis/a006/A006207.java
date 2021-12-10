@@ -2,7 +2,7 @@ package irvine.oeis.a006;
 
 import irvine.math.MemoryFunctionInt4;
 import irvine.math.z.Z;
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.Sequence;
 
 /**

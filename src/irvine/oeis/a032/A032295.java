@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A032295 Number of aperiodic bracelets (turn over necklaces) with n beads of 4 colors.

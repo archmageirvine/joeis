@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A045632 Number of 2n-bead black-white complementable necklaces with n black beads and fundamental period 2n.

@@ -19,7 +19,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FactorizationSequenceTest.class);
     suite.addTestSuite(FiniteSequenceTest.class);
     suite.addTestSuite(HolonomicRecurrenceTest.class);
-    suite.addTestSuite(InverseMobiusTransformSequenceTest.class);
     suite.addTestSuite(LyndonTransformSequenceTest.class);
     suite.addTestSuite(NegativePositiveSequenceTest.class);
     suite.addTestSuite(RunsBaseSequenceTest.class);
@@ -52,6 +51,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.oeis.a307.AllTests.suite());
     suite.addTest(irvine.oeis.a308.AllTests.suite());
     suite.addTest(irvine.oeis.cons.AllTests.suite());
+    suite.addTest(irvine.oeis.transform.AllTests.suite());
     return suite;
   }
 

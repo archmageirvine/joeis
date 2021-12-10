@@ -1,7 +1,7 @@
 package irvine.oeis.a271;
 // manually
 
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a008.A008966;
 

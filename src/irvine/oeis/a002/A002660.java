@@ -24,7 +24,7 @@ public class A002660 extends A000203 {
 // import irvine.math.group.PolynomialRingField;
 // import irvine.math.group.IntegerField;
 // import irvine.math.polynomial.Polynomial;
-// import irvine.oeis.InverseMobiusTransformSequence;
+// import irvine.oeis.transform.InverseMobiusTransformSequence;
 // import irvine.oeis.Sequence;
 
 // /**

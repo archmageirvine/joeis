@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.zip.GZIPInputStream;
 
 import irvine.math.z.Z;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * Explore transforms of existing sequences.

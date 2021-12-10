@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A003085 Number of connected digraphs with n nodes.

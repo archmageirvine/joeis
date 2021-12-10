@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a000.A000670;
 
 /**

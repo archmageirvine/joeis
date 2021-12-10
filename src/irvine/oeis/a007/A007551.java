@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A007551 Shifts left when Moebius transformation applied twice.

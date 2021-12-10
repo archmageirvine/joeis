@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A032296 Number of aperiodic bracelets (turnover necklaces) with n beads of 5 colors.

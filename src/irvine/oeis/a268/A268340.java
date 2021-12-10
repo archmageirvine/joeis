@@ -1,7 +1,7 @@
 package irvine.oeis.a268;
 // manually 2021-06-22
 
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a046.A046660;
 
 /**

@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
  * A045631 Number of 2n-bead black-white reversible complementable strings with n black beads and fundamental period 2n.

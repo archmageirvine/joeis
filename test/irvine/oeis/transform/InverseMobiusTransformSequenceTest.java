@@ -1,5 +1,6 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
+import irvine.oeis.FiniteSequence;
 import junit.framework.TestCase;
 
 /**

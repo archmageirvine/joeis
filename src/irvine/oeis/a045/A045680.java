@@ -1,7 +1,7 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.MobiusTransformSequence;
+import irvine.oeis.transform.MobiusTransformSequence;
 import irvine.oeis.a128.A128014;
 
 /**

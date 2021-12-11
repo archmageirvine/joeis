@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036910 (binomial(4*n,2*n)+binomial(2*n,n)^2)/2.
+ * A036910 a(n) = (binomial(4*n, 2*n) + binomial(2*n, n)^2)/2.
  * @author Sean A. Irvine
  */
 public class A036910 implements Sequence {

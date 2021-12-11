@@ -93,10 +93,11 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
       throw new IllegalArgumentException("Expected " + mElementField.zero() + " saw " + t.coeff(0));
     }
     if (t.degree() > 0 && !mElementField.one().equals(t.coeff(1))) {
+      // Cf. A123301 for a version that supports non-unit t.coeff(1)
       throw new IllegalArgumentException("Expected " + mElementField.one() + " saw " + t.coeff(1));
     }
     final ArrayList<E> u = new ArrayList<>();
-    final ArrayList<E> w = new ArrayList<>();
+    final Polynomial<E> w = empty();
     u.add(mOne);
     w.add(mZero);
     w.add(mOne);
@@ -118,7 +119,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
       assert u.size() == n;
       w.add(mElementField.divide(un, jj));  // i.e. /n (since jj=n)
     }
-    return create(w);
+    return w;
   }
 
   /**

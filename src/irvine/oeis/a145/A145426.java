@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A145426 Decimal expansion of Sum_{n&gt;=0} (n!/(n+2)!)^2.
+ * A145426 Decimal expansion of Sum_{k&gt;=0} (k!/(k+2)!)^2.
  * Formula: -3+Pi^2/3
  * @author Georg Fischer
  */

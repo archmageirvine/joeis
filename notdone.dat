@@ -1778,3 +1778,5 @@ A053040 Number of self-complementary types of Boolean functions of n variables u
 A053043 Number of facets of hypermetric correlation cone
 A053060 Number of n X n invertible binary matrices A such that A^3+I is invertible
 A053071 Number of n X n invertible binary matrices A such that A^5+I is invertible.
+A053168 Hamming weights (or nonlinearity) of degree 4 rotation-symmetric functions.
+A053169 A paradoxical sequence: a positive integer n is in this sequence if and only if n is not in sequence A_n in the database. (depends on A000019)

@@ -20,7 +20,10 @@ public class A002218 implements Sequence {
 
   @Override
   public Z next() {
-    final Polynomial<CycleIndex> g = CombinatorialSpecies.graphSeries(++mN);
+    if (++mN == 1) {
+      return Z.ONE;
+    }
+    final Polynomial<CycleIndex> g = CombinatorialSpecies.graphSeries(mN);
     final Polynomial<CycleIndex> gc = CombinatorialSpecies.sLog(g);
     final Polynomial<CycleIndex> gcr = CombinatorialSpecies.sPoint(gc, 1);
     final Polynomial<CycleIndex> gcrxs1 = CombinatorialSpecies.RING.multiply(gcr.shift(-1), S1NEG1);

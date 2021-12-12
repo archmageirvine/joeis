@@ -17,10 +17,6 @@ public class A191719 implements Sequence {
   private int mN = -1;
   private Z mF = Z.ONE;
 
-  {
-    next();
-  }
-
   @Override
   public Z next() {
     if (++mN != 0) {

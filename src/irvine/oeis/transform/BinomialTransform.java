@@ -31,7 +31,7 @@ public class BinomialTransform implements Sequence {
    * @param seq underlying sequence
    * @param skip number of terms of the source sequence to be skipped before the transform
    */
-  public BinomialTransform(final Sequence seq, int skip) {
+  public BinomialTransform(final Sequence seq, final int skip) {
     this(seq, skip, false);
   }
 
@@ -40,7 +40,7 @@ public class BinomialTransform implements Sequence {
    * the specified number of terms in advance.
    * @param seq underlying sequence
    * @param skip number of terms of the source sequence to be skipped before the transform
-   * @param inverse true for an InverseBinomialTransform, false for a BinomialTransorm
+   * @param inverse true for an inverse binomial transform, false for a binomial transform
    */
   public BinomialTransform(final Sequence seq, int skip, final boolean inverse) {
     mSeq = seq;

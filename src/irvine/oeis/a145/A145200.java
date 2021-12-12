@@ -17,7 +17,7 @@ public class A145200 extends A282019 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
-  private final Polynomial<Z> mA = Polynomial.create(0); // effectively x * A282019
+  private final Polynomial<Z> mA = RING.empty(); // effectively x * A282019
   private final Polynomial<Z> mE6 = RING.empty();
   private final Polynomial<Z> mA521 = RING.empty();
   private final Sequence mE6Seq = new A013973();

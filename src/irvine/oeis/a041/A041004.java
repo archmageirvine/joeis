@@ -2,7 +2,7 @@ package irvine.oeis.a041;
 // manually 2021-05-07
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A041004 The sequence b, given that c is a left shift by one place of b.

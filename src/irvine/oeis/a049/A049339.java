@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A049339 Number of n-node planar graphs with even degrees.

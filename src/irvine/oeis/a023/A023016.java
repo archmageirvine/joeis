@@ -1,6 +1,6 @@
 package irvine.oeis.a023;
 
-import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.a010.A010857;
 
 /**

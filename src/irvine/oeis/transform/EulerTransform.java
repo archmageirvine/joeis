@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,6 +7,10 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.FiniteSequence;
+import irvine.oeis.PeriodicSequence;
+import irvine.oeis.ReaderSequence;
+import irvine.oeis.Sequence;
 
 /**
  * Apply the Euler transform to some other sequence.

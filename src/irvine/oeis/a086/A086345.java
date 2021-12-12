@@ -1,7 +1,7 @@
 package irvine.oeis.a086;
 // manually deris/eulerix 0 at 2021-12-09 19:40
 
-import irvine.oeis.InverseEulerTransform;
+import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001174;
 

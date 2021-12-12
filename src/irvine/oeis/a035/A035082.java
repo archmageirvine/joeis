@@ -4,7 +4,7 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;

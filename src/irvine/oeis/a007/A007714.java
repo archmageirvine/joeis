@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.transform.EulerTransformSequence;
 
 /**
  * A007714 Number of 5-level rooted trees with n leaves.

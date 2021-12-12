@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.PeriodicSequence;
 
 

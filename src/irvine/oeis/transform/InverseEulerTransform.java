@@ -1,4 +1,4 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.ReaderSequence;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence comprising the inverse Euler transform of another sequence.

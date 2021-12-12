@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.InverseEulerTransform;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A007718 Number of independent polynomial invariants of matrix of order n.

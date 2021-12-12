@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A052431 Number of perfect simple undirected graphs on n nodes.

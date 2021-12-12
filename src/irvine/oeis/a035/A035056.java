@@ -1,7 +1,7 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
-import irvine.oeis.GeneralizedEulerTransform;
+import irvine.oeis.transform.GeneralizedEulerTransform;
 import irvine.oeis.a000.A000220;
 
 /**

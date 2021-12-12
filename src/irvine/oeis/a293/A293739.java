@@ -2,7 +2,7 @@ package irvine.oeis.a293;
 // manually 2020-12-30
 
 import irvine.math.z.Z;
-import irvine.oeis.GeneralizedEulerTransform;
+import irvine.oeis.transform.GeneralizedEulerTransform;
 import irvine.oeis.a212.A212915;
 
 /**

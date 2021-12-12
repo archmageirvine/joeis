@@ -1,7 +1,7 @@
 package irvine.oeis.a343;
 // manually euleras at 2021-11-24 08:46
 
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a046.A046091;
 

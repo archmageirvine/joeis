@@ -2,7 +2,7 @@ package irvine.oeis.a038;
 
 import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
-import irvine.oeis.InverseEulerTransform;
+import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.MemorySequence;
 
 /**

@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 // manually 2020-12-30
 
-import irvine.oeis.InverseEulerTransform;
+import irvine.oeis.transform.InverseEulerTransform;
 import irvine.oeis.a152.A152623;
 
 /**

@@ -2,7 +2,7 @@ package irvine.oeis.a126;
 // manually euleras at 2021-11-24 08:46
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
 import irvine.oeis.a002.A002861;

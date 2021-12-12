@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.transform.BikTransformSequence;

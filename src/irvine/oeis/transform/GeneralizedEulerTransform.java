@@ -1,9 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.transform;
 
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * Apply the generalized Euler transform to two other sequences f and g, as defined in OEIS A266964:

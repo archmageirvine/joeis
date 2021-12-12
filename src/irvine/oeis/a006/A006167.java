@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001037;
 

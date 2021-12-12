@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
 

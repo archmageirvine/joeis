@@ -1,7 +1,6 @@
 package irvine.oeis.transform;
 
 import irvine.math.z.Z;
-import irvine.oeis.InverseEulerTransform;
 import irvine.oeis.Sequence;
 
 /**

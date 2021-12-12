@@ -2,7 +2,7 @@ package irvine.oeis.a042;
 // manually
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.Sequence;
 
 /**

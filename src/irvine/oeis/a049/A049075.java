@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**

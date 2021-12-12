@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.InverseEulerTransform;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A007719 Number of independent polynomial invariants of symmetric matrix of order n.

@@ -2,7 +2,7 @@ package irvine.oeis.a035;
 // Manually adapted from A035456 2020-09.03
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 

@@ -1,6 +1,8 @@
 package irvine.oeis;
 // 2020-08-23, Georg Fischer
 
+import irvine.oeis.transform.EulerTransform;
+
 /**
  * Sequences with the names <code>Number of reduced words of length n in the Weyl group X_d</code>,
  * where the type X is in A, B, or D, and the group order is d.

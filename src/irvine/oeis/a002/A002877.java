@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.InverseEulerTransform;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A002877 Number of connected weighted linear spaces of total weight n.

@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 // manually for CC=etpadd0 2020-11-14
 
 import irvine.math.z.Z;
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.PeriodicSequence;
 import irvine.oeis.Sequence;
 

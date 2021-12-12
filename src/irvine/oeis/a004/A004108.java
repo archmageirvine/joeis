@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.InverseEulerTransform;
+import irvine.oeis.transform.InverseEulerTransform;
 
 /**
  * A004108 Number of n-node unlabeled connected graphs without endpoints.

@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A049367 Number of triangle-free planar graphs with n nodes.

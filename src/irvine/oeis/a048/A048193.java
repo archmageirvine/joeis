@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 
 /**
  * A048193 Number of chordal graphs (or triangulated graphs) on n vertices.

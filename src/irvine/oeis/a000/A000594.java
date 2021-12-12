@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 // period: -24
 // DO NOT EDIT here!
 
-import irvine.oeis.EulerTransform;
+import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.PeriodicSequence;
 
 

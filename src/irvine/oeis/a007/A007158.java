@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.InverseBinomialTransformSequence;
+import irvine.oeis.transform.InverseBinomialTransformSequence;
 
 /**
  * A007158 Essentially n-ary operations in a certain 3-element algebra.

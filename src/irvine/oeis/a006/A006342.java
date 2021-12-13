@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 import irvine.oeis.AlternatingSequence;
-import irvine.oeis.BinomialTransformSequence;
+import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a000.A000004;
 import irvine.oeis.a002.A002001;
 

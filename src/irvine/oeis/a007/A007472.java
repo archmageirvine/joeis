@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.BinomialTransformSequence;
+import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**

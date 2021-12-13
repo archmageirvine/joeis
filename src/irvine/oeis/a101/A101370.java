@@ -1,7 +1,7 @@
 package irvine.oeis.a101;
 
 import irvine.math.z.Z;
-import irvine.oeis.InverseBinomialTransformSequence;
+import irvine.oeis.transform.InverseBinomialTransformSequence;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007322;
 

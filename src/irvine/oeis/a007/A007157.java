@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.InverseBinomialTransformSequence;
+import irvine.oeis.transform.InverseBinomialTransformSequence;
 
 /**
  * A007157 Essentially n-ary operations in Kleene free algebra.

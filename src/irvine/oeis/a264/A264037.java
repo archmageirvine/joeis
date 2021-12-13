@@ -1,7 +1,7 @@
 package irvine.oeis.a264;
 // manually deris2/binomx at 2021-12-08 08:19
 
-import irvine.oeis.BinomialTransformSequence;
+import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.PrependSequence;
 
 /**

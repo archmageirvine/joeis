@@ -1,7 +1,7 @@
 package irvine.oeis.a136;
 // manually (binomx) at 2021-06-28 
 
-import irvine.oeis.BinomialTransformSequence;
+import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a110.A110041;
 

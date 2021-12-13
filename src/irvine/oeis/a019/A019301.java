@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.BinomialTransformSequence;
+import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a010.A010059;
 
 /**

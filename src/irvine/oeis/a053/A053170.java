@@ -1,12 +1,7 @@
 package irvine.oeis.a053;
 
-import java.util.HashSet;
+import java.util.Arrays;
 
-import irvine.math.api.Matrix;
-import irvine.math.group.IntegersMod;
-import irvine.math.group.MatrixRing;
-import irvine.math.matrix.DefaultMatrix;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,30 +11,108 @@ import irvine.oeis.Sequence;
  */
 public class A053170 implements Sequence {
 
-  // Ralf confirms ordinary matrix multiplication
+  // After Ralf W. Grosse-Kunstleve,
+  // https://github.com/rwgk/stuff/tree/master/loop3x3matrices
+  // Uses special 3x3 matrix routines for speed.
 
-  private static final MatrixRing<Z> M = new MatrixRing<>(3, Integers.SINGLETON);
+  private static final int[] IDENTITY = {1, 0, 0, 0, 1, 0, 0, 0, 1};
   private int mN = 0;
 
-  private boolean isFinite(final Matrix<Z> m, final Z max) {
-    System.out.println(m);
-    Matrix<Z> t = m;
-    final HashSet<Matrix<Z>> seen = new HashSet<>();
-    while (!t.equals(M.one()) && !t.equals(M.zero())) {
-      t = M.multiply(t, m);
-      for (int k = 0; k < 3; ++k) {
-        for (int j = 0; j < 3; ++j) {
-          if (t.get(k, j).abs().compareTo(max) > 0) {
-            return false;
-          }
-        }
-      }
-      if (!seen.add(t)) {
+  private int det(final int[] m) {
+    return m[0] * (m[4] * m[8] - m[5] * m[7]) - m[1] * (m[3] * m[8] - m[5] * m[6]) + m[2] * (m[3] * m[7] - m[4] * m[6]);
+  }
+
+  private void multiply(final int[] res, final int[] a, final int[] b) {
+    int aj = 0;
+    int bj = 0;
+    int k = 0;
+    res[k] = a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj] * b[bj];
+    bj -= 5;
+    ++k;
+    aj = 0;
+    res[k] = a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj] * b[bj];
+    bj -= 5;
+    ++k;
+    aj = 0;
+    res[k] = a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj = 0;
+    ++k;
+    // a = 3
+    res[k] = a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj] * b[bj];
+    bj -= 5;
+    ++k;
+    aj = 3;
+    res[k] = a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj] * b[bj];
+    bj -= 5;
+    ++k;
+    aj = 3;
+    res[k] = a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj = 0;
+    ++k;
+    // a = 6
+    res[k] = a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj] * b[bj];
+    bj -= 5;
+    ++k;
+    aj = 6;
+    res[k] = a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj] * b[bj];
+    bj -= 5;
+    ++k;
+    aj = 6;
+    res[k] = a[aj++] * b[bj];
+    bj += 3; /* r33 */
+    res[k] += a[aj++] * b[bj];
+    bj += 3;
+    res[k] += a[aj] * b[bj];
+  }
+
+  private boolean isFinite(final int[] m) {
+    final int det = det(m);
+    if (det != 1 && det != -1) {
+      return false;
+    }
+    int[] u = new int[9];
+    int[] t = Arrays.copyOf(m, m.length);
+    int k = 0;
+    while (!Arrays.equals(IDENTITY, t)) {
+      multiply(u, t, m);
+      final int[] v = t;
+      t = u;
+      u = v;
+      if (++k > 6) {
         return false;
       }
-//      if (seen.size() > 10) {
-//        System.out.println("Stuck? on " + t + " * " + m);
-//      }
     }
     return true;
   }
@@ -47,20 +120,36 @@ public class A053170 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    System.out.println("Start n=" + mN);
-    final Z zn = Z.valueOf(mN);
     long count = 0;
-    final MatrixRing<Z> ring = new MatrixRing<>(3, new IntegersMod(2L * mN + 1));
-    final Matrix<Z> m = new DefaultMatrix<>(3, 3, Z.ZERO);
-    for (final Matrix<Z> mat : ring) {
-      // Convert to +/- form
-      for (int k = 0; k < 3; ++k) {
-        for (int j = 0; j < 3; ++j) {
-          m.set(k, j, mat.get(k, j).subtract(mN));
+    final int[] m = new int[9];
+    for (int a = -mN; a <= mN; ++a) {
+      m[0] = a;
+      for (int b = -mN; b <= mN; ++b) {
+        m[1] = b;
+        for (int c = -mN; c <= mN; ++c) {
+          m[2] = c;
+          for (int d = -mN; d <= mN; ++d) {
+            m[3] = d;
+            for (int e = -mN; e <= mN; ++e) {
+              m[4] = e;
+              for (int f = -mN; f <= mN; ++f) {
+                m[5] = f;
+                for (int g = -mN; g <= mN; ++g) {
+                  m[6] = g;
+                  for (int h = -mN; h <= mN; ++h) {
+                    m[7] = h;
+                    for (int i = -mN; i <= mN; ++i) {
+                      m[8] = i;
+                      if (isFinite(m)) {
+                        ++count;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
-      }
-      if (isFinite(m, zn)) {
-        ++count;
       }
     }
     return Z.valueOf(count);

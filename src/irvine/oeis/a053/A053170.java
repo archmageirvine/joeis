@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053170.
+ * A053170 Number of 3 X 3 integer matrices with elements in the range [ -n,n ] which generate a group of finite order under binary matrix multiplication.
  * @author Sean A. Irvine
  */
 public class A053170 implements Sequence {
@@ -15,14 +15,14 @@ public class A053170 implements Sequence {
   // https://github.com/rwgk/stuff/tree/master/loop3x3matrices
   // Uses special 3x3 matrix routines for speed.
 
-  private static final int[] IDENTITY = {1, 0, 0, 0, 1, 0, 0, 0, 1};
+  protected static final int[] IDENTITY = {1, 0, 0, 0, 1, 0, 0, 0, 1};
   private int mN = 0;
 
-  private int det(final int[] m) {
+  protected int det(final int[] m) {
     return m[0] * (m[4] * m[8] - m[5] * m[7]) - m[1] * (m[3] * m[8] - m[5] * m[6]) + m[2] * (m[3] * m[7] - m[4] * m[6]);
   }
 
-  private void multiply(final int[] res, final int[] a, final int[] b) {
+  protected void multiply(final int[] res, final int[] a, final int[] b) {
     int aj = 0;
     int bj = 0;
     int k = 0;
@@ -97,7 +97,7 @@ public class A053170 implements Sequence {
     res[k] += a[aj] * b[bj];
   }
 
-  private boolean isFinite(final int[] m) {
+  protected boolean is(final int[] m) {
     final int det = det(m);
     if (det != 1 && det != -1) {
       return false;
@@ -140,7 +140,7 @@ public class A053170 implements Sequence {
                     m[7] = h;
                     for (int i = -mN; i <= mN; ++i) {
                       m[8] = i;
-                      if (isFinite(m)) {
+                      if (is(m)) {
                         ++count;
                       }
                     }

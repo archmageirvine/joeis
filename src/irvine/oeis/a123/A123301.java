@@ -95,7 +95,7 @@ public class A123301 implements Sequence {
   private Polynomial<Polynomial<Q>> swapVariables(final Polynomial<Polynomial<Q>> p) {
     // x <--> y
     final int n = p.degree();
-    Polynomial<Polynomial<Q>> res = RING_X.empty();
+    final Polynomial<Polynomial<Q>> res = RING_X.empty();
     for (int k = 0; k <= n; ++k) {
       final Q[] coeff = new Q[n + 1];
       for (int j = 0; j <= n; ++j) {

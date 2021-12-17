@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267461 Total number of OFF (white) cells after n iterations of the &quot;Rule 133&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A267461 Total number of OFF (white) cells after n iterations of the "Rule 133" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267461 extends Cellular1DAutomaton {

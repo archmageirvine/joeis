@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267604 Number of nX(n+4) arrays of permutations of n+4 copies of 0..n-1 with every element equal to or 1 greater than any north, west or northwest neighbors modulo n and the upper left element equal to 0.
+ * A267604 Decimal representation of the middle column of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267604 extends Cellular1DAutomaton {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266613 Decimal representation of the middle column of the &quot;Rule 41&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266613 Decimal representation of the middle column of the "Rule 41" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266613 extends Cellular1DAutomaton {

@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A103174 Numbers n with increasing digits such that digits of n appears among digits of n-th prime number.
+ * A103174 Numbers k with increasing digits such that the digits of k appear among the digits of the k-th prime number.
  * @author Georg Fischer
  */
 public class A103174 extends FiniteSequence {

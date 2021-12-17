@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A071049 Number of 1&apos;s in n-th generation of 1-D CA using Rule 110, started with a single 1.
+ * A071049 Number of 1's in n-th generation of 1-D CA using Rule 110, started with a single 1.
  * @author Georg Fischer
  */
 public class A071049 extends Cellular1DAutomaton {

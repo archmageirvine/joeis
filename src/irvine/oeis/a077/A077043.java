@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A077043 &quot;Three-quarter squares&quot;: a(n) = n^2 - A002620(n).
+ * A077043 "Three-quarter squares": a(n) = n^2 - A002620(n).
  * @author Georg Fischer
  */
 public class A077043 extends Cellular1DAutomaton {

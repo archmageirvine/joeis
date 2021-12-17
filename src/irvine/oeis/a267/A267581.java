@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267581 Decimal representation of the middle column of the &quot;Rule 167&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A267581 Decimal representation of the middle column of the "Rule 167" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267581 extends Cellular1DAutomaton {

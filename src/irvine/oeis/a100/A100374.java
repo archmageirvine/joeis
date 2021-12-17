@@ -8,7 +8,7 @@ import irvine.oeis.a006.A006519;
 
 
 /**
- * A100374 Largest power of 2 dividing prime(n+1)-prime(n), the n-th consecutive-prime-difference.
+ * A100374 Largest power of 2 dividing prime(n+1) - prime(n), the n-th consecutive prime difference.
  * Formula: <code>a(n) = A006519(A001223(n)).</code>
  * @author Georg Fischer
  */

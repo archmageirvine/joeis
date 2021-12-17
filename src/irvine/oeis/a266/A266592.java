@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266592 Binary representation of the middle column of the &quot;Rule 37&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266592 Binary representation of the middle column of the "Rule 37" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266592 extends Cellular1DAutomaton {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A135528 1, then repeat 1, 0.
+ * A135528 1, then repeat 1,0.
  * @author Georg Fischer
  */
 public class A135528 extends Cellular1DAutomaton {

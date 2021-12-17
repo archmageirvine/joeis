@@ -5,7 +5,7 @@ package irvine.oeis.a226;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A226592 Population of dying rabbits: Rabbit pairs are not fertile during their first 5 months of life, but thereafter give birth to 2 new male/female pairs at the end of every 3 month. Rabbits will die after 12 months from birth.
+ * A226592 a(n) = 2*( a(n-5) + a(n-8) + a(n-11) ) for n &gt;= 12.
  * @author Georg Fischer
  */
 public class A226592 extends HolonomicRecurrence {

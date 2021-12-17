@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A269160 Formula for Wolfram&apos;s Rule 30 cellular automaton: a(n) = n XOR (2n OR 4n).
+ * A269160 Formula for Wolfram's Rule 30 cellular automaton: a(n) = n XOR (2n OR 4n).
  * @author Georg Fischer
  */
 public class A269160 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267854 Binary representation of the n-th iteration of the &quot;Rule 230&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A267854 Binary representation of the n-th iteration of the "Rule 230" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267854 extends Cellular1DAutomaton {

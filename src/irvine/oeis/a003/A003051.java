@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003051 Number of inequivalent sublattices of index n in hexagonal lattice (two sublattices are equivalent if one can be rotated or reflected to give the other).
+ * A003051 Number of inequivalent sublattices of index n in hexagonal lattice, where two sublattices are equivalent if they are related by a rotation or reflection preserving the hexagonal lattice.
  * @author Sean A. Irvine
  */
 public class A003051 implements Sequence {

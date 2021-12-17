@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A265699 Binary representation of the middle column of the &quot;Rule 135&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A265699 Binary representation of the middle column of the "Rule 135" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A265699 extends Cellular1DAutomaton {

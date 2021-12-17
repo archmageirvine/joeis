@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267051 Binary representation of the n-th iteration of the &quot;Rule 92&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A267051 Binary representation of the n-th iteration of the "Rule 92" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267051 extends Cellular1DAutomaton {

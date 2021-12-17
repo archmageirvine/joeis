@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057538 Birthday set of order 5: numbers congruent to +/-1 modulo 2, 3, 4 and 5.
+ * A057538 Birthday set of order 5: numbers congruent to +-1 modulo 2, 3, 4 and 5.
  * @author Georg Fischer
  */
 public class A057538 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.transform.BinomialTransform;
 
 /**
- * A081558 Second binomial transform of expansion of exp(cosh(x)), A005046.
+ * A081558 Exponential generating function: exp(cosh(x)+2*x-1).
  * @author Georg Fischer
  */
 public class A081558 extends BinomialTransform {

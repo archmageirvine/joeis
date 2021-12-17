@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266072 Number of ON (black) cells in the n-th iteration of the &quot;Rule 3&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266072 Number of ON (black) cells in the n-th iteration of the "Rule 3" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266072 extends Cellular1DAutomaton {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267518 Number of OFF (white) cells in the n-th iteration of the &quot;Rule 137&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A267518 Number of OFF (white) cells in the n-th iteration of the "Rule 137" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267518 extends Cellular1DAutomaton {

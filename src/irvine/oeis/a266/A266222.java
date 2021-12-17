@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266222 Number of OFF (white) cells in the n-th iteration of the &quot;Rule 7&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266222 Number of OFF (white) cells in the n-th iteration of the "Rule 7" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266222 extends Cellular1DAutomaton {

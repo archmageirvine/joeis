@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001747;
 
 
 /**
- * A100484 Even semiprimes.
+ * A100484 The primes doubled.
  * @author Georg Fischer
  */
 public class A100484 extends PrependSequence {

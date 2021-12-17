@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A110267 Total number of black cells at the first n generations of a single black cell following Wolfram&apos;s Rule 30 cellular automaton.
+ * A110267 Total number of black cells at the first n generations of a single black cell following Wolfram's Rule 30 cellular automaton.
  * @author Georg Fischer
  */
 public class A110267 extends Cellular1DAutomaton {

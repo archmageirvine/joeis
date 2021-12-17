@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267596 Decimal representation of the n-th iteration of the &quot;Rule 173&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A267596 Decimal representation of the n-th iteration of the "Rule 173" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267596 extends Cellular1DAutomaton {

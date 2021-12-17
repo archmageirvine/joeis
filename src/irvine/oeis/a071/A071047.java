@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A071047 Number of 1&apos;s in n-th row of triangle in A071031, cellular automaton &quot;rule 62&quot;.
+ * A071047 Number of 1's in n-th row of triangle in A071031, cellular automaton "rule 62".
  * @author Georg Fischer
  */
 public class A071047 extends Cellular1DAutomaton {

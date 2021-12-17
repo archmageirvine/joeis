@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266901 Total number of OFF (white) cells after n iterations of the &quot;Rule 75&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266901 Total number of OFF (white) cells after n iterations of the "Rule 75" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266901 extends Cellular1DAutomaton {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A071051 Number of 1&apos;s in n-th row of triangle in A071035.
+ * A071051 Number of 1's in n-th row of triangle in A071035.
  * @author Georg Fischer
  */
 public class A071051 extends Cellular1DAutomaton {

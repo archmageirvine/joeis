@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266255 Decimal representation of the n-th iteration of the &quot;Rule 11&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266255 Decimal representation of the n-th iteration of the "Rule 11" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266255 extends Cellular1DAutomaton {

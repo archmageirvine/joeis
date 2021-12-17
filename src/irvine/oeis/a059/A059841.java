@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A059841 Period 2: Repeat [1, 0]. a(n) = 1 - (n mod 2).
+ * A059841 Period 2: Repeat [1,0]. a(n) = 1 - (n mod 2).
  * @author Georg Fischer
  */
 public class A059841 extends Cellular1DAutomaton {

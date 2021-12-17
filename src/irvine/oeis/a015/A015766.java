@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015766 Phi(n) | Sigma_8(n).
+ * A015766 Numbers n such that phi(n) | sigma_8(n).
  * @author Sean A. Irvine
  */
 public class A015766 implements Sequence {

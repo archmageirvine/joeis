@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A262867 Total number of ON (black) cells after n iterations of the &quot;Rule 153&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A262867 Total number of ON (black) cells after n iterations of the "Rule 153" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A262867 extends Cellular1DAutomaton {

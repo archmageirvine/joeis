@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266179 Binary representation of the n-th iteration of the &quot;Rule 6&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266179 Binary representation of the n-th iteration of the "Rule 6" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266179 extends Cellular1DAutomaton {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267938 Decimal representation of the n-th iteration of the &quot;Rule 251&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A267938 Decimal representation of the n-th iteration of the "Rule 251" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267938 extends Cellular1DAutomaton {

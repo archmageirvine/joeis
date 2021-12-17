@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A267587 Middle column of the &quot;Rule 169&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A267587 Middle column of the "Rule 169" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267587 extends Cellular1DAutomaton {

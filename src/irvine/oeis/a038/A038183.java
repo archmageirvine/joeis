@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A038183 One-dimensional cellular automaton &apos;sigma-minus&apos; (Rule 90): 000, 001, 010, 011, 100, 101, 110, 111 -&gt; 0, 1, 0, 1, 1, 0, 1, 0.
+ * A038183 One-dimensional cellular automaton 'sigma-minus' (Rule 90): 000,001,010,011,100,101,110,111 -&gt; 0,1,0,1,1,0,1,0.
  * @author Georg Fischer
  */
 public class A038183 extends Cellular1DAutomaton {

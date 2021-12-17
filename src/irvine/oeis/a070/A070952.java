@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A070952 Number of 1&apos;s in n-th generation of 1-D CA using Rule 30, started with a single 1.
+ * A070952 Number of 1's in n-th generation of 1-D CA using Rule 30, started with a single 1.
  * @author Georg Fischer
  */
 public class A070952 extends Cellular1DAutomaton {

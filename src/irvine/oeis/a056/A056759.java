@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A056759 The 17 prime powers n = p^w such that d[p^w]^3 &gt; p^w where d = A000005().
+ * A056759 The 17 prime powers k = p^w such that d(p^w)^3 &gt; p^w where d = A000005().
  * @author Georg Fischer
  */
 public class A056759 extends FiniteSequence {

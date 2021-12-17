@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A262779 Binary representation of the n-th iteration of the &quot;Rule 175&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A262779 Binary representation of the n-th iteration of the "Rule 175" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A262779 extends Cellular1DAutomaton {

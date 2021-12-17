@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A048711 2nd row of Family 1 &quot;90 X 150 array&quot;: generations 0 .. n of Rule 90 starting from seed pattern 7.
+ * A048711 2nd row of Family 1 "90 X 150 array": generations 0 .. n of Rule 90 starting from seed pattern 7.
  * @author Georg Fischer
  */
 public class A048711 extends Cellular1DAutomaton {

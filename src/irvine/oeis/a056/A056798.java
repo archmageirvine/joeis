@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000961;
 
 /**
- * A056798 Prime powers with even exponents &gt;=0.
+ * A056798 Prime powers with even nonnegative exponents.
  * @author Georg Fischer
  */
 public class A056798 implements Sequence {

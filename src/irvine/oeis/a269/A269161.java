@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A269161 Formula for Wolfram&apos;s Rule 86 cellular automaton: a(n) = 4n XOR (2n OR n).
+ * A269161 Formula for Wolfram's Rule 86 cellular automaton: a(n) = 4n XOR (2n OR n).
  * @author Georg Fischer
  */
 public class A269161 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A110240 Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram&apos;s Rule 30 cellular automaton starting from a single ON-cell represented as 1.
+ * A110240 Decimal form of binary integer produced by the ON cells at n-th generation following Wolfram's Rule 30 cellular automaton starting from a single ON-cell represented as 1.
  * @author Georg Fischer
  */
 public class A110240 extends Cellular1DAutomaton {

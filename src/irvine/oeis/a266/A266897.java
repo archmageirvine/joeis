@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266897 Decimal representation of the middle column of the &quot;Rule 75&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266897 Decimal representation of the middle column of the "Rule 75" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266897 extends Cellular1DAutomaton {

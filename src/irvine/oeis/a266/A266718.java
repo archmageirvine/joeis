@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A266718 Decimal representation of the n-th iteration of the &quot;Rule 59&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A266718 Decimal representation of the n-th iteration of the "Rule 59" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266718 extends Cellular1DAutomaton {

@@ -5,7 +5,7 @@ package irvine.oeis.a194;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A194222 [sum{(k/5) : 1&lt;=k&lt;=n}], where [ ]=floor, ( )=fractional part.
+ * A194222 a(n) = floor(Sum_{k=1..n} frac(k/5)), where frac() = fractional part.
  * Recurrence: a(n)=a(n-1)+a(n-5)-a(n-6)
  * @author Georg Fischer
  */

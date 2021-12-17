@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A071055 Number of 0&apos;s in n-th row of triangle in A071038.
+ * A071055 Number of 0's in n-th row of triangle in A071038.
  * @author Georg Fischer
  */
 public class A071055 extends Cellular1DAutomaton {

@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226591 A single pair of rabbits (male and female) is born at the beginning of a year. Assume the following conditions: 1. Rabbits are able to mate at the age of 2 months. 2. Rabbit pairs are not fertile during their first 5 months of life, but thereafter give birth to 1 new male/female pairs at the end of every 3 month. 3. Rabbits will die after 12 months from birth.
+ * A226591 Expansion of g.f. (x*(1+x)*(1-x+x^2)*(1+x+x^2)*(1-x^2+x^4))/(1-x^2+x^4-x^5-x^6+x^7-x^9).
  * @author Georg Fischer
  */
 public class A226591 extends LinearRecurrence {

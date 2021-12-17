@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A113476 Decimal expansion of 1/3*(log(2) + Pi/sqrt(3)).
+ * A113476 Decimal expansion of (log(2) + Pi/sqrt(3))/3.
  * @author Georg Fischer
  */
 public class A113476 extends DecimalExpansionSequence {

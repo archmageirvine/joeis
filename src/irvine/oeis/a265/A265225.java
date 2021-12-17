@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A265225 Total number of ON (black) cells after n iterations of the &quot;Rule 54&quot; elementary cellular automaton starting with a single ON (black) cell.
+ * A265225 Total number of ON (black) cells after n iterations of the "Rule 54" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A265225 extends Cellular1DAutomaton {

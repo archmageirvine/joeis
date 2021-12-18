@@ -1,36 +1,38 @@
 package irvine.oeis.a048;
 
-import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.oeis.WolframAutomata;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.ca.Cellular1DAutomaton;
+import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
  * A048710 Family 1 "Rule 90 x Rule 150 Array" read by antidiagonals.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A048710 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A048710 extends UpperLeftTriangle {
 
-  private long mN = -1;
-  private long mM = 0;
-
-  @Override
-  protected Z compute(final Long n, final Long m) {
-    if (n == 0) {
-      if (m == 0) {
-        return Z.ONE;
+  protected int mN;
+  protected MemorySequence mSeq;
+  
+  /** Construct the sequence. */
+  public A048710() {
+    super(0, 0, -1);
+    mSeq = new MemorySequence() {
+      private final Cellular1DAutomaton mCa = new Cellular1DAutomaton(150);
+      @Override
+      protected Z computeNext() {
+        return mCa.nextStageD();
       }
-      return WolframAutomata.step(90, get(n, m - 1));
-    }
-    return WolframAutomata.step(150, get(n - 1, m));
+    };
+    mN = -1;
   }
 
   @Override
-  public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 0;
+  public Z matrixElement(final int n, final int k) {
+    Z term = mSeq.a(n);
+    for (int i = 0; i < k; ++i) {
+      term = term.xor(term.multiply(4));
     }
-    return get(mM, mN - mM);
+    return term;
   }
 }

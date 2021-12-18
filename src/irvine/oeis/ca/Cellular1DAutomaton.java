@@ -336,7 +336,7 @@ public class Cellular1DAutomaton implements Sequence {
       final int irow = riter.nextBlockIndex();
       final int leftBit =   mOldRow[irow - 1] & mLowMask;
       final int rightBit = (mOldRow[irow + 1] & mHighMask) >> (BLOCK_LEN - 1);
-      int newBlock = transformBlock(mOldRow[irow], leftBit, rightBit);
+      final int newBlock = transformBlock(mOldRow[irow], leftBit, rightBit);
 /*
       if (sDebug >= 1) {
           System.out.println("#   computeNextRow.loop"

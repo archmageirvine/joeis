@@ -1,24 +1,29 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.oeis.WolframAutomata;
+import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
  * A048709 Main diagonal of Family 1 "Rule 90 x Rule 150" array.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A048709 implements Sequence {
+public class A048709 extends Cellular1DAutomaton {
 
-  private Z mA = null;
+  protected int mN;
+  
+  /** Construct the sequence. */
+  public A048709() {
+    super(150);
+    mN = -1;
+  }
 
   @Override
   public Z next() {
-    if (mA == null) {
-      mA = Z.ONE;
-    } else {
-      mA = WolframAutomata.step(150, WolframAutomata.step(90, mA));
+    ++mN;
+    Z term = super.nextStageD();
+    for (int i = 0; i < mN; ++i) {
+      term = term.xor(term.multiply(4));
     }
-    return mA;
+    return term;
   }
 }

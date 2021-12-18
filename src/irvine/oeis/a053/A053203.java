@@ -1,4 +1,4 @@
-package irvine.oeis.a014;
+package irvine.oeis.a053;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -8,17 +8,17 @@ import irvine.oeis.Sequence;
  * A014410 Elements in Pascal's triangle (by row) that are not 1.
  * @author Sean A. Irvine
  */
-public class A014410 implements Sequence {
+public class A053203 implements Sequence {
 
-  protected long mN = 1;
-  private long mM = 1;
+  private long mN = 5;
+  private long mM = 3;
 
   @Override
   public Z next() {
-    if (++mM >= mN) {
+    if (++mM >= mN - 2) {
       ++mN;
-      mM = 1;
+      mM = 3;
     }
-    return Binomial.binomial(mN, mM);
+    return Binomial.binomial(mN, mM).mod(Z.valueOf(mN));
   }
 }

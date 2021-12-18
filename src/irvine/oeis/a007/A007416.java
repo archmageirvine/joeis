@@ -18,6 +18,7 @@ public class A007416 extends A005179 {
   public Z next() {
     mSeq.add(super.next());
     mSeq.add(super.next());
+    mSeq.add(super.next());
     final Z a = mSeq.pollFirst();
     if (a.compareTo(mLast) <= 0) {
       // Detect if heuristic sorting ever fails

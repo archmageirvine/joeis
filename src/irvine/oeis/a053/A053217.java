@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a001.A001156;
 
 /**
- * A053192.
+ * A053217 Numbers that do not occur in A001156.
  * @author Sean A. Irvine
  */
 public class A053217 extends ComplementSequence {

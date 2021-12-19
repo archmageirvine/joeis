@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A053192.
+ * A053223 Second differences of sigma(n).
  * @author Sean A. Irvine
  */
 public class A053223 extends DifferenceSequence {

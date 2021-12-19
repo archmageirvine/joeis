@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.math.z.Z;
 
 /**
- * A053192.
+ * A053232 Numbers n for which values not equal to 2 occur in the expansion of A053230.
  * @author Sean A. Irvine
  */
 public class A053232 extends A053230 {

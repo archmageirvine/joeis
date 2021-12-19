@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053192.
+ * A053197 Number of level partitions of n.
  * @author Sean A. Irvine
  */
 public class A053197 extends MemoryFunctionInt3<Z> implements Sequence {

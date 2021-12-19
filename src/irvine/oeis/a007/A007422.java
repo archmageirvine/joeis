@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007422 Multiplicatively perfect numbers n: product of divisors of n is n^2.
+ * A007422 Multiplicatively perfect numbers j: product of divisors of j is j^2.
  * @author Sean A. Irvine
  */
 public class A007422 implements Sequence {

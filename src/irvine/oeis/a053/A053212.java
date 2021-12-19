@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007416;
 
 /**
- * A053192.
+ * A053212 Number of divisors of the minimal numbers (A007416).
  * @author Sean A. Irvine
  */
 public class A053212 extends A007416 {

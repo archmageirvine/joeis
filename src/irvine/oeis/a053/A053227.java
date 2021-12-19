@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.math.z.Z;
 
 /**
- * A053192.
+ * A053227 First differences of sigma(n) that are negative.
  * @author Sean A. Irvine
  */
 public class A053227 extends A053222 {

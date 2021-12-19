@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053192.
+ * A053196 Cototients of even numbers.
  * @author Sean A. Irvine
  */
 public class A053196 implements Sequence {

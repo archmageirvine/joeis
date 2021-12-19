@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A053192.
+ * A053230 First differences between numbers k for which sigma(k) &lt; sigma(k+1).
  * @author Sean A. Irvine
  */
 public class A053230 extends DifferenceSequence {

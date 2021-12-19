@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001156;
 
 /**
- * A053192.
+ * A053216 Number of integers that can be partitioned into squares in n different ways, or the number of times n occurs in A001156.
  * @author Sean A. Irvine
  */
 public class A053216 extends A001156 {

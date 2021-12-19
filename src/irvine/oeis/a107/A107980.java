@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A107980 Triangle read by rows: T(n,k)=(n+2)(k+1)(k+2)(k-2n-2)(k-2n-3)/24 for 0&lt;=k&lt;=n.
+ * A107980 Triangle read by rows: T(n,k) = (n+2)*(k+1)*(k+2)*(2*n-k+2)*(2*n-k+3)/24.
  *
  * @author Georg Fischer
  */

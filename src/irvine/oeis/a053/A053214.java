@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053192.
+ * A053214 Central binomial coefficients (A000984) read mod 2n, with a(0)=1.
  * @author Sean A. Irvine
  */
 public class A053214 implements Sequence {

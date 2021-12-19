@@ -4,7 +4,7 @@ package irvine.oeis.a026;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A026565 a(n) = 6*a(n-2), starting 1,3,9.
+ * A026565 a(n) = 6*a(n-2), starting with 1, 3, 9.
  * @author Georg Fischer
  */
 public class A026565 extends GeneratingFunctionSequence {

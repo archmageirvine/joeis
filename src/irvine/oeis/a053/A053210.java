@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051599;
 
 /**
- * A014410 Elements in Pascal's triangle (by row) that are not 1.
+ * A053210 Row sums of A051599.
  * @author Sean A. Irvine
  */
 public class A053210 extends A051599 {

@@ -5,7 +5,7 @@ import irvine.oeis.a051.A051953;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A053192.
+ * A053194 a(n) is the smallest number k such that cototient(k) = 2n - 1.
  * @author Sean A. Irvine
  */
 public class A053194 extends A051953 {

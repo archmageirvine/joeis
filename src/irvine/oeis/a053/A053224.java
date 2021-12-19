@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A053192.
+ * A053224 Numbers k for which sigma(k) &lt; sigma(k+1).
  * @author Sean A. Irvine
  */
 public class A053224 extends A000203 {

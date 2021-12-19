@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.math.z.Z;
 
 /**
- * A053192.
+ * A053229 Numbers n for which second differences of sigma(n) are negative.
  * @author Sean A. Irvine
  */
 public class A053229 extends A053223 {

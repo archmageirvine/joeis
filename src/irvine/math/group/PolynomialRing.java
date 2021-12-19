@@ -96,10 +96,11 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     if (n < 0) {
       throw new IllegalArgumentException();
     }
-    final Polynomial<E> p = new Polynomial<>(mIndeterminate, mZero, mOne);
-    if (n != 0) {
-      p.add(mOne);
+    if (n == 0) {
+      return create(Collections.singletonList(mElementRing.add(a, mOne)));
     }
+    final Polynomial<E> p = new Polynomial<>(mIndeterminate, mZero, mOne);
+    p.add(mOne);
     for (int k = 1; k < n; ++k) {
       p.add(mZero);
     }

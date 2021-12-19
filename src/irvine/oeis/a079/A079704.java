@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001248;
 
 /**
- * A079704 2p^2 where p runs through the primes.
+ * A079704 a(n) = 2*prime(n)^2.
  * @author Georg Fischer
  */
 public class A079704 implements Sequence {

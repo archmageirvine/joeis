@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014410 Elements in Pascal's triangle (by row) that are not 1.
+ * A053203 Pascal's triangle (excluding first, last three elements of each row) read by rows, row n read mod n.
  * @author Sean A. Irvine
  */
 public class A053203 implements Sequence {

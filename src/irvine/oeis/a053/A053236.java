@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.PositionSequence;
 
 /**
- * A053192.
+ * A053236 Numbers n such that A053230(n) = 4.
  * @author Sean A. Irvine
  */
 public class A053236 extends PositionSequence {

@@ -15,7 +15,7 @@ public class A053170 implements Sequence {
   // https://github.com/rwgk/stuff/tree/master/loop3x3matrices
   // Uses special 3x3 matrix routines for speed.
 
-  protected static final int[] IDENTITY = {1, 0, 0, 0, 1, 0, 0, 0, 1};
+  static final int[] IDENTITY = {1, 0, 0, 0, 1, 0, 0, 0, 1};
   private int mN = 0;
 
   protected int det(final int[] m) {

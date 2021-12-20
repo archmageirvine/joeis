@@ -41,7 +41,7 @@ public class Cellular1DAutomaton implements Sequence {
   protected int mGen;
 
   /** Debugging mode: 0=none, 1=some, 2=more. */
-  protected static int sDebug;
+  static int sDebug;
   /** Buffer for the bits of generation n */
   protected int[] mOldRow;
   /** Buffer for the bits of generation n+1 */
@@ -90,7 +90,6 @@ public class Cellular1DAutomaton implements Sequence {
       mGen = Integer.highestOneBit(seed) / 2;
     }
     mRule = rule;
-    sDebug = 0;
     mRowLen = CHUNK_SIZE;
     mOldRow = new int[mRowLen]; // preset to zeroes
     mNewRow = new int[mRowLen];
@@ -122,7 +121,7 @@ public class Cellular1DAutomaton implements Sequence {
     protected int mIndex;
     /** Index of the first block behind the triangle in <code>mOldRow</code>*/
     protected int mEndIndex;
-    /**
+    /*
      * Position of the current cell in <code>mOldRow[index]</code>.
      * In <code>mOldRow[start]</code>, bitPos addresses the leftmost (first) cell belonging to the triangle.
      * In <code>mOldRow[last]</code>, <code>BLOCK_LEN - bitPos - 1</code> addresses the first cell <em>behind</em> the triangle.
@@ -185,7 +184,7 @@ public class Cellular1DAutomaton implements Sequence {
 
     /**
      * Get the bit position of the next cell in <code>mOldBlock</code>.
-     * @return a position between 0 and BLOCK_LEN - 1.
+     * @return a position between 0 and <code>BLOCK_LEN - 1</code>.
      */
     public Integer next() {
       if (mBitPos < 0) {
@@ -209,7 +208,7 @@ public class Cellular1DAutomaton implements Sequence {
 
     /**
      * Get the bit position of the next cell in <code>mOldBlock</code>.
-     * @return a position between 0 and BLOCK_LEN - 1.
+     * @return a position between 0 and <code>BLOCK_LEN - 1</code>.
      */
     public Integer nextBlockIndex() {
       return mIndex++;
@@ -524,7 +523,7 @@ public class Cellular1DAutomaton implements Sequence {
 //        + (mBackground == 0 ? "-" : "+") + sb.toString() + (mBackground == 0 ? "-" : "+"));
 //  }
 //
-//  /**
+//  /*
 //   * Main method for debugging.
 //   * @param args command line arguments:
 //   * <ul>

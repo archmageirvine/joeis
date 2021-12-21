@@ -13,7 +13,7 @@ public class A053292 implements Sequence {
 
   @Override
   public Z next() {
-    Z t = Z.FIVE.pow(++mN);
+    final Z t = Z.FIVE.pow(++mN);
     Z prod = Z.ONE;
     Z u = Z.ONE;
     for (int k = 0; k < mN; ++k, u = u.multiply(5)) {

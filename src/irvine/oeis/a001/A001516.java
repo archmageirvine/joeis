@@ -20,7 +20,7 @@ public class A001516 extends MemoryFunction1<Polynomial<Z>> implements Sequence 
   @Override
   protected Polynomial<Z> compute(final int n) {
     if (n <= 1) {
-      return RING.onePlusXToTheN(n);
+      return n == 0 ? RING.one() : RING.onePlusXToTheN(n);
     } else {
       return RING.add(get(n - 2), RING.multiply(get(n - 1).shift(1), Z.valueOf(2L * n - 1)));
     }

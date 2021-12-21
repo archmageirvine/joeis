@@ -19,9 +19,10 @@ public class A007839 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final A001037 s = new A001037();
+    final Sequence s = new A001037();
+    s.next();
     Polynomial<Z> gf = RING.one();
-    for (int k = 0; k <= mN; ++k) {
+    for (int k = 1; k <= mN; ++k) {
       gf = RING.multiply(gf, RING.onePlusXToTheN(s.next(), k), mN);
     }
     return gf.coeff(mN);

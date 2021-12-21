@@ -13,7 +13,7 @@ public class A053291 implements Sequence {
 
   @Override
   public Z next() {
-    Z t = Z.ONE.shiftLeft(2 * ++mN);
+    final Z t = Z.ONE.shiftLeft(2 * ++mN);
     Z prod = Z.ONE;
     for (int k = 0; k < mN; ++k) {
       prod = prod.multiply(t.subtract(Z.ONE.shiftLeft(2 * k)));

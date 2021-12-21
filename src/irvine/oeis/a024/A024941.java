@@ -27,7 +27,7 @@ public class A024941 implements Sequence {
     Polynomial<Z> prod = RING.one();
     int p;
     while ((p = primes.next().intValueExact()) <= mN) {
-      prod = RING.multiply(prod, RING.onePlusXToTheN(p), mN);
+      prod = RING.multiply(prod, p == 0 ? RING.one() : RING.onePlusXToTheN(p), mN);
     }
     return prod.coeff(mN);
   }

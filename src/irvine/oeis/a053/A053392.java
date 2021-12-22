@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053392.
+ * A053392 a(n) is the concatenation of the sums of every pair of consecutive digits of n (with a(n) = 0 for 0 &lt;= n &lt;= 9).
  * @author Sean A. Irvine
  */
 public class A053392 implements Sequence {

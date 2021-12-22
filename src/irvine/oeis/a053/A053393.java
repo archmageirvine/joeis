@@ -5,7 +5,7 @@ import java.util.HashSet;
 import irvine.math.z.Z;
 
 /**
- * A053393.
+ * A053393 Periodic points under the map A053392 that adds consecutive pairs of digits and concatenates them.
  * @author Sean A. Irvine
  */
 public class A053393 extends A053392 {

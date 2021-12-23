@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003266;
 
 /**
- * A053413.
+ * A053413 Primes of the form  A003266(n) + 1.
  * @author Sean A. Irvine
  */
 public class A053413 extends A003266 {

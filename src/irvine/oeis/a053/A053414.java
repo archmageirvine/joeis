@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053413.
+ * A053414 Circle numbers (version 2): a(n) is the number of points (i,j), i,j integers, contained in a circle of diameter n, centered at (0, 1/2).
  * @author Sean A. Irvine
  */
 public class A053414 implements Sequence {

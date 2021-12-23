@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053413.
+ * A053417 Circle numbers (version 5): a(n) = number of points (i+j/2,j*sqrt(3)/2), i,j integers (triangular grid) contained in a circle of diameter n, centered at (1/2,0).
  * @author Sean A. Irvine
  */
 public class A053417 implements Sequence {

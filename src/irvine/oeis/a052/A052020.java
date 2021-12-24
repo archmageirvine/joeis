@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A052020 Sum of digits of n is a prime proper factor of n.
+ * A052020 Sum of digits of k is a prime proper factor of k.
  * @author Sean A. Irvine
  */
 public class A052020 implements Sequence {

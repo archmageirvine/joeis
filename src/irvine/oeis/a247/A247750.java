@@ -25,7 +25,7 @@ public class A247750 implements Sequence {
    * @param digits mapping of the digits 0-9 
    * to the lexicographically ascending digit names in some language
    */
-  public A247750(final int distinct, final String digits) {
+  protected A247750(final int distinct, final String digits) {
     mK = -1;
     mDistinct = distinct;
     mDigits = digits;

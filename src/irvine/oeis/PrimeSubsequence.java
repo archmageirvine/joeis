@@ -52,6 +52,6 @@ public class PrimeSubsequence extends Subsequence {
 
   @Override
   public boolean isOk(final Z term) {
-    return term.isProbablePrime();
+    return term == null || term.isProbablePrime();
   }
 }

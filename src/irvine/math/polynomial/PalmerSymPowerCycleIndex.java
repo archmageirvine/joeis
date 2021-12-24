@@ -29,7 +29,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
       final int jk = e.getValue().intValueExact();
       if (k % 3 == 0) {
         m.add(k / 3, jk);
-        m.add(k, jk * k * (k - 3) / 6);
+        m.add(k, jk * k * (k - 3L) / 6);
       } else {
         m.add(k, jk * b(k, 3) / k);
       }
@@ -42,17 +42,17 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
     for (final Map.Entry<Pair<String, Integer>, Z> e : a.entrySet()) {
       final int k = e.getKey().right();
       final int jk = e.getValue().intValueExact();
-      r.add(k, k * (k - 1) * b(jk, 2));
+      r.add(k, k * (k - 1L) * b(jk, 2));
       for (final Map.Entry<Pair<String, Integer>, Z> f : a.entrySet()) {
         final int m = f.getKey().right();
         if (m != k) {
           final int jm = f.getValue().intValueExact();
           final int jj = jk * jm;
           if ((k & 1) == 1) {
-            r.add(IntegerUtils.lcm(k, m), jj * IntegerUtils.gcd(k, m) * (k - 1) / 2);
+            r.add(IntegerUtils.lcm(k, m), jj * IntegerUtils.gcd(k, m) * (k - 1L) / 2);
           } else {
-            r.add(IntegerUtils.lcm(k / 2, m), jj * IntegerUtils.gcd(k / 2, m));
-            r.add(IntegerUtils.lcm(k, m), jj * IntegerUtils.gcd(k, m) * (k - 2) / 2);
+            r.add(IntegerUtils.lcm(k / 2, m), jj * (long) IntegerUtils.gcd(k / 2, m));
+            r.add(IntegerUtils.lcm(k, m), jj * IntegerUtils.gcd(k, m) * (k - 2L) / 2);
           }
         }
       }

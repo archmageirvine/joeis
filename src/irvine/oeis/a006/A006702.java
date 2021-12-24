@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006702 Solution to a Pellian equation: least x such that x^2 - n y^2 = +- 1.
+ * A006702 Solution to a Pellian equation: least x such that x^2 - n*y^2 = +- 1.
  * @author Sean A. Irvine
  */
 public class A006702 implements Sequence {

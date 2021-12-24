@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002240 Numbers n such that 33*2^n-1 is prime.
+ * A002240 Numbers k such that 33*2^k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002240 implements Sequence {

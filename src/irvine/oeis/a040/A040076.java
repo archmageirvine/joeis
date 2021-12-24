@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A040076 Smallest m &gt;= 0 such that n*2^m+1 is prime, or -1 if no such m exists.
+ * A040076 Smallest m &gt;= 0 such that n*2^m + 1 is prime, or -1 if no such m exists.
  * @author Sean A. Irvine
  */
 public class A040076 implements Sequence {

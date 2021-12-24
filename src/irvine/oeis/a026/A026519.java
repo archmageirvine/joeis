@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026519 Irregular triangular array T read by rows: T(i,0) = T(i,2i)=1 for i &gt;= 0; T(i,1) = T(i,2i-1) = floor[(i+1)/2] for i &gt;= 1; for even n &gt;= 2, T(i,j) = T(i-1,j-2) + T(i-1,j) for j = 2..2i-2; for odd n &gt;= 3, T(i,j) = T(i-1,j-2) + T(i-1,j-1) + T(i-1,j) for j = 2..2i-2.
+ * A026519 Irregular triangular array T read by rows: T(n, k) = T(n-1, k-2) + T(n-1, k) if (n mod 2) = 0, otherwise T(n-1, k-2) + T(n-1, k-1) + T(n-1, k), with T(n, 0) = T(n, 2*n) = 1, T(n, 1) = T(n, 2*n-1) = floor((n+1)/2).
  * @author Sean A. Irvine
  */
 public class A026519 extends MemoryFunction2<Long, Z> implements Sequence {

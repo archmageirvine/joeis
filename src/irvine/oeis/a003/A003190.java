@@ -37,7 +37,7 @@ public class A003190 extends MemoryFunction2<Integer, Q> implements Sequence {
     return mSym.get(n, p).subtract(s.divide(p));
   }
 
-  private Z c(final int n, final int p) {
+  protected Z c(final int n, final int p) {
     Q s = Q.ZERO;
     for (final Z dd : Cheetah.factor(p).divisors()) {
       final int d = dd.intValueExact();
@@ -49,46 +49,6 @@ public class A003190 extends MemoryFunction2<Integer, Q> implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
-    return c(2, mN);
+    return c(2, ++mN);
   }
-
-//  static int j(final int r, final int[] j) {
-//    final IntegerPartition pi = new IntegerPartition(r);
-//    final int[] i = new int[r + 1];
-//    int[] p;
-//    int s = 0;
-//    while ((p = pi.nextQ()) != null) {
-//      IntegerPartition.toCountForm(p, i);
-//      int prod = 1;
-//      for (int k = 1; k < i.length; ++k) {
-//        if (i[k] != 0) {
-//          if (j[k] == 0) {
-//            prod = 0;
-//            break;
-//          }
-//          prod *= Binomial.binomial(j[k], i[k]).intValueExact();
-//        }
-//      }
-//      //System.out.println(Arrays.toString(i) + " " + prod);
-//      s += prod;
-//    }
-//    return s;
-//  }
-//
-//  static int j(final int m, final int r, final int[] j) {
-//    int res = j(r, j);
-//    if (m > 1) {
-//      int s = 0;
-//      for (final Z dd : Cheetah.factor(m).divisors()) {
-//        final int d = dd.intValueExact();
-//        if (d != m) {
-//          s += d * j(d, r, j);
-//        }
-//      }
-//      res -= s / m;
-//    }
-//    return res;
-//  }
-
 }

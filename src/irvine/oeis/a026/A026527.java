@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026527 a(n) = T(2n,n-2), T given by A026519.
+ * A026527 a(n) = T(2*n, n-2), where T is given by A026519.
  * @author Sean A. Irvine
  */
 public class A026527 extends A026519 {

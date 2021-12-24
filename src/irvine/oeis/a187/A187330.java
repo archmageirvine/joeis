@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.BeattySequence;
 
 /**
- * A187330 Floor((4-sqrt(5))n); complement of A187339.
+ * A187330 a(n) = floor((4-sqrt(5))*n); complement of A187339.
  * @author Georg Fischer
  */
 public class A187330 extends BeattySequence {

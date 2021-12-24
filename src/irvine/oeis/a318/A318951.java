@@ -30,7 +30,7 @@ public class A318951 implements Sequence {
     for (int i = 0; i < v.length; ++i) {
       final int t = v[i];
       k = i > 0 && t == v[i - 1] ? k + 1 : 1;
-      m = m.multiply(t * k);
+      m = m.multiply(t * (long) k);
       s += t;
     }
     return mF.factorial(s).divide(m);

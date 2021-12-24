@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A112399 a(n) = Sum_{1&lt;=k&lt;=n, gcd(k,n)=1} mu(k), where mu(k) = A008683(k) (the Moebius function).
+ * A112399 a(n) = Sum_{k=1..n, gcd(k,n)=1} mu(k), where mu(k) = A008683(k) (the Moebius function).
  * @author Georg Fischer
  */
 public class A112399 implements Sequence {

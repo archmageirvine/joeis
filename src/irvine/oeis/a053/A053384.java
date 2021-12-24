@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.math.z.Z;
 
 /**
- * A053384 A053398(4, n).
+ * A053384 a(n) = A053398(4,n).
  * @author Georg Fischer
  */
 public class A053384 extends A053398 {

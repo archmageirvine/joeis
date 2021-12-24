@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048098 Numbers n that are sqrt(n)-smooth: if p | n then p^2 &lt;= n when p is prime.
+ * A048098 Numbers k that are sqrt(k)-smooth: if p | k then p^2 &lt;= k when p is prime.
  * @author Sean A. Irvine
  */
 public class A048098 implements Sequence {

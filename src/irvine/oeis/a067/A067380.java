@@ -30,7 +30,13 @@ public class A067380 implements Sequence {
   private final int mMinReps;
   private int mN = 1;
 
-  protected A067380(final int minTerms, final MemorySequence seq, final int minReps) {
+  /**
+   * Construct a sequence.
+   * @param minTerms minimum number of terms in the sum
+   * @param seq underlying sequences
+   * @param minReps minimum number of representations
+   */
+  public A067380(final int minTerms, final MemorySequence seq, final int minReps) {
     mMinTerms = minTerms;
     mSeq = seq;
     mMinReps = minReps;
@@ -52,6 +58,27 @@ public class A067380 implements Sequence {
 
   private Z pull() {
     final State s = mA.pollFirst();
+//    final long target = 311;
+//    if (s.mValue.longValue() == target) {
+//      final List<Long> terms = new ArrayList<>();
+//      int k = s.mLast;
+//      long sum = 0;
+//      while (sum != target) {
+//        final long t = mSeq.a(k--).longValue();
+//        terms.add(t);
+//        sum += t;
+//      }
+//      final StringBuilder sb = new StringBuilder();
+//      Collections.reverse(terms);
+//      for (final long v : terms) {
+//        if (sb.length() > 0) {
+//          sb.append('+');
+//        }
+//        sb.append(v);
+//      }
+//      sb.append(" = ").append(target);
+//      System.out.println(sb);
+//    }
     final int next = s.mLast + 1;
     mA.add(new State(s.mValue.add(mSeq.a(next)), next));
     return s.mValue;

@@ -30,7 +30,6 @@ import irvine.oeis.Sequence;
  */
 public class FiveNeighbor2DAutomaton implements Sequence {
 
-
   /** Allocate rows in multiples of this number */
   protected static final int CHUNK_SIZE = 8;
   /** Rule number 0..1023, cf. ANKOS pp. 170-179 */
@@ -42,8 +41,6 @@ public class FiveNeighbor2DAutomaton implements Sequence {
   protected int mGen;
   /** Buffer for the bits of generation n */
   protected Z[] mOldTri;
-  /** Index of next term */
-  protected int mN;
   /** Debugging mode: 0=none, 1=some, 2=more. */
   protected static int sDebug = 0;
 
@@ -55,7 +52,6 @@ public class FiveNeighbor2DAutomaton implements Sequence {
   public FiveNeighbor2DAutomaton(final int rule) {
     mGen = 0;
     mRule = rule;
-    mN = -1;
     mOldTri = new Z[CHUNK_SIZE];
     mOldTri[0] = Z.ONE; // set origin to black
     mOldTri[1] = Z.ZERO; // initial background
@@ -179,6 +175,15 @@ public class FiveNeighbor2DAutomaton implements Sequence {
    */
   @Override
   public Z next() {
+    return nextOn();
+  }
+
+  /**
+   * Get the next term of the sequence.
+   * Cf. interface {@link Sequence}.
+   * @return total number of black cells in the next generation
+   */
+  public Z nextOn() {
     final long org = mOldTri[0].testBit(0) ? 1 : 0;
     long lsum = 0L; // left border of the triangle
     long rsum = 0L; // right border
@@ -193,9 +198,6 @@ public class FiveNeighbor2DAutomaton implements Sequence {
       }
       tsum += row.bitCount();
     }
-//**    if (sDebug >= 2) {
-//**      System.out.println("nextOn(" + mGen + "): org=" + org + ", tsum=" + tsum + ", lsum=" + lsum + ", rsum=" + rsum);
-//**    }
     tsum = tsum - lsum - rsum + org; // org was counted twice (in lsum and rsum); now we have the count of the inner triangle
     tsum = 8 * tsum + 4 * lsum + 4 * rsum - 7 * org;
     computeNext();
@@ -207,12 +209,10 @@ public class FiveNeighbor2DAutomaton implements Sequence {
    * @return 0 or 1
    */
   public Z nextOn2n1() {
-    ++mN;
-    while (Integer.bitCount(mN + 1) != 1) {
+    while (Integer.bitCount(mGen + 1) != 1) {
       computeNext();
-      ++mN;
     }
-    return next();
+    return nextOn();
   }
 
   /**

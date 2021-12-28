@@ -91,4 +91,14 @@ public class GraphUtilsTest extends TestCase {
     g.addEdge(1, 2);
     assertEquals("graph G {\n  node [shape=point];\n  0 [pos=\"0.000,0.144!\"];\n  1 [pos=\"0.125,-0.072!\"];\n  2 [pos=\"-0.125,-0.072!\"];\n  0--1;\n  1--2;\n}\n", GraphUtils.toDot(g));
   }
+
+  public void testSpanningTrees() {
+    final Graph g = GraphFactory.create(4);
+    g.addEdge(0, 1);
+    g.addEdge(0, 2);
+    g.addEdge(1, 2);
+    g.addEdge(1, 3);
+    g.addEdge(2, 3);
+    assertEquals(Z.EIGHT, GraphUtils.numberOfSpanningTrees(g));
+  }
 }

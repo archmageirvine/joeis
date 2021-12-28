@@ -9,8 +9,10 @@ import java.util.LinkedList;
 
 import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
+import irvine.math.group.MatrixRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
+import irvine.math.matrix.DefaultMatrix;
 import irvine.math.nauty.Nauty;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
@@ -22,6 +24,7 @@ import irvine.math.q.Rationals;
 import irvine.math.r.Constants;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Binomial;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.util.Pair;
 
@@ -267,6 +270,27 @@ public final class GraphUtils {
       }
     }
     return cn;
+  }
+
+  /**
+   * Compute the number of spanning trees in a graph.
+   * @param graph the graph
+   * @return number of spanning trees
+   */
+  public static Z numberOfSpanningTrees(final Graph graph) {
+    // Kirchhoff's Theorem
+    final int n = graph.order();
+    // Matrix has one less dimension than graph
+    final DefaultMatrix<Z> matrix = new DefaultMatrix<>(n - 1, n - 1, Z.ZERO);
+    for (int k = 0; k < n - 1; ++k) {
+      matrix.set(k, k, Z.valueOf(graph.degree(k)));
+      for (int j = 0; j < n - 1; ++j) {
+        if (k != j && graph.isAdjacent(k, j)) {
+          matrix.set(k, j, Z.NEG_ONE);
+        }
+      }
+    }
+    return new MatrixRing<>(n - 1, Integers.SINGLETON).det(matrix);
   }
 
   private static int postorder(final Graph graph, final int[] el, final int[] pa, final boolean[] visited, final int v, final int parent, int k) {

@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A053440.
+ * A053444 x^2 + y^2 mod A053443(n) does not take on value a(n).
  * @author Sean A. Irvine
  */
 public class A053444 extends A053443 {

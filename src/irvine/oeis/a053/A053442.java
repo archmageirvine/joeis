@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053440.
+ * A053442 Moments of generalized Motzkin paths.
  * @author Sean A. Irvine
  */
 public class A053442 implements Sequence {

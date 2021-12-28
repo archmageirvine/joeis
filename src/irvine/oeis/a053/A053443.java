@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053440.
+ * A053443 x^2 + y^2 does not take on all possible values mod n.
  * @author Sean A. Irvine
  */
 public class A053443 implements Sequence {

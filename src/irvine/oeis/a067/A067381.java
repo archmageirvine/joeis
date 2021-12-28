@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067381.
+ * A067381 Smallest prime expressible as the sum of (at least two) consecutive primes in n ways.
  * @author Sean A. Irvine
  */
 public class A067381 implements Sequence {

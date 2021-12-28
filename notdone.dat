@@ -1784,3 +1784,5 @@ A053189 Hamming weights (or nonlinearity) of degree 5 rotation-symmetric functio
 A053346 a(n) = solution to the postage stamp problem with 7 denominations and n stamps.
 A053348 a(n) = solution to the postage stamp problem with 8 denominations and n stamps.
 A053437 Number of least favorable parameter configurations
+A053534 Triangle T(n,k) giving number of pairwise non-isomorphic (i.e., unlabeled) matroids of rank k on n points (n >= 0, 0 <= k <= n)
+A053555 Number of distinct parameter sets (v,k,lambda) for Abelian difference sets of order n = k-lambda with 1 <= lambda <= n-1

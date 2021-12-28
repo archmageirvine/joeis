@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053447.
+ * A053451 Multiplicative order of 8 mod 2n+1.
  * @author Sean A. Irvine
  */
 public class A053451 implements Sequence {

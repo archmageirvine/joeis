@@ -22,8 +22,7 @@ public class A053564 extends A053548 {
       if (r != 0) {
         final int mu = Mobius.mobius(d);
         if (mu != 0) {
-          Z m = m(mN / d, 1, 2);
-          sum = sum.signedAdd(mu == 1, m);
+          sum = sum.signedAdd(mu == 1, m(mN / d, 1, 2));
         }
       }
     }

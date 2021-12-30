@@ -28,11 +28,10 @@ public class A074890 implements Sequence {
     int a2;
     int newDigit;
     final StringBuilder newBase2 = new StringBuilder();
-    final int b2len = base2.length();
     for (int i = -1; i < base2.length(); ++i) {
-      a0 = i < 1 ? 0 : base2.substring(i - 1, i).equals("0") ? 0 : 1;
-      a1 = i < 0 ? 0 : base2.substring(i, i + 1).equals("0") ? 0 : 1;
-      a2 = i == base2.length() - 1 ? 0 : base2.substring(i + 1, i + 2).equals("0") ? 0 : 1;
+      a0 = i < 1 ? 0 : base2.charAt(i - 1) == '0' ? 0 : 1;
+      a1 = i < 0 ? 0 : base2.charAt(i) == '0' ? 0 : 1;
+      a2 = i == base2.length() - 1 ? 0 : base2.charAt(i + 1) == '0' ? 0 : 1;
       newDigit = (a1 == 0 && a2 == 0) ? a0 : 1 - a0; // Wolfram's Rule 30
       newBase2.append(newDigit == 0 ? '0' : '1');
     }
@@ -41,7 +40,7 @@ public class A074890 implements Sequence {
 
   @Override
   public Z next() {
-    Z result = mBase10;
+    final Z result = mBase10;
     mBase10 = new Z(applyR30(mBase10.toString(2)), 2);
     return result;
   }

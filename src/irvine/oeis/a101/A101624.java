@@ -29,7 +29,7 @@ public class A101624 implements Sequence {
       mAn1 = Z.ONE;
       return mAn1;
     } else {
-      Z result = mAn1.xor(mAn2.multiply2());
+      final Z result = mAn1.xor(mAn2.multiply2());
       mAn2 = mAn1;
       mAn1 = result;
       return result;

@@ -19,7 +19,7 @@ public class A101625 extends A101624 {
       mAn1 = Z.ONE;
       return mAn1;
     } else {
-      Z result = mAn1.xor(mAn2.multiply(Z.FOUR));
+      final Z result = mAn1.xor(mAn2.multiply(Z.FOUR));
       mAn2 = mAn1;
       mAn1 = result;
       return result;

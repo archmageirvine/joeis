@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A059317 Pascal&apos;s &quot;rhombus&quot; (actually a triangle T(n,k), n &gt;= 0, 0&lt;=k&lt;=2n) read by rows: each entry is sum of 3 terms above it in previous row and one term above it two rows back.
+ * A059317 Pascal's "rhombus" (actually a triangle T(n,k), n &gt;= 0, 0&lt;=k&lt;=2n) read by rows: each entry is sum of 3 terms above it in previous row and one term above it two rows back.
  * @author Georg Fischer
  */
 public class A059317 extends Triangle {

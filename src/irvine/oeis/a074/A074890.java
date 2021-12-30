@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A074890 Decimal form of binary integers produced by a modified version of Wolfram&apos;s Rule 30 one-dimensional cellular automaton.
+ * A074890 Decimal form of binary integers produced by a modified version of Wolfram's Rule 30 one-dimensional cellular automaton.
  * @author Georg Fischer
  */
 public class A074890 implements Sequence {

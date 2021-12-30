@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053572.
+ * A053572 Maximal number of spanning trees in a planar graph with n nodes.
  * @author Sean A. Irvine
  */
 public class A053572 implements Sequence, GraphProcessor {

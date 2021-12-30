@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053570.
+ * A053570 Sum of totient functions over arguments running through reduced residue system of n.
  * @author Sean A. Irvine
  */
 public class A053570 implements Sequence {

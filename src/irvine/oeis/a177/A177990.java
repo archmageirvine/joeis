@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A177990 Triangle read by rows, variant of A070909, a cellular automaton
+ * A177990 Triangle read by rows, variant of A070909, a cellular automaton.
  * @author Georg Fischer
  */
 public class A177990 extends Triangle {

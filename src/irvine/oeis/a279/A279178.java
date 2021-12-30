@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.FiveNeighbor2DAutomaton;
 
 /**
- * A279178 Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by &quot;Rule 149&quot;, based on the 5-celled von Neumann neighborhood.
+ * A279178 Binary representation of the x-axis, from the origin to the right edge, of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 149", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A279178 extends FiveNeighbor2DAutomaton {

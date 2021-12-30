@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053570.
+ * A053571 Sum of totient functions over arguments running through numbers unrelated to n.
  * @author Sean A. Irvine
  */
 public class A053571 implements Sequence {

@@ -17,7 +17,7 @@ public class A053641 implements Sequence {
     if ((mN & 1L) == 1L) { // odd
       return Z.valueOf(mN);
     } else { // even
-      final long result = mN >> 1;
+      long result = mN >> 1;
       return Z.valueOf(((result ^ Long.highestOneBit(result)) << 1) | 1L);
     }
   }

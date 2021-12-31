@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001954 Wythoff game.
+ * A001954 a(n) = floor((n+1/2)*(2+sqrt(2))); winning positions in the 2-Wythoff game.
  * @author Sean A. Irvine
  */
 public class A001954 implements Sequence {

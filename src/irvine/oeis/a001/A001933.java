@@ -8,7 +8,7 @@ import irvine.oeis.a234.A234007;
 import irvine.oeis.a234.A234008;
 
 /**
- * A001933 Chessboard polyominoes with n squares.
+ * A001933 Number of chessboard polyominoes with n squares.
  * Chessboard polyominoes with n squares.
  * For odd n, <code>a(n) = 2*A000105(n)</code>.
  * For even n, <code>a(n) = 2*A000105(n) - (M(n) + R90(n) + R180(n))</code>.

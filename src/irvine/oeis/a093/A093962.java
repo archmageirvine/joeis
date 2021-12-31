@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 
 import irvine.oeis.cons.ContinuedFractionSequence;
 /**
- * A093962 Continued fraction expansion of binomial (Pi,e) (A093961).
+ * A093962 Continued fraction expansion of binomial(Pi,e) (A093961).
  * @author Georg Fischer
  */
 public class A093962 extends ContinuedFractionSequence {

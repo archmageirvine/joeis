@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001960 Wythoff game.
+ * A001960 a(n) = floor((n+2/3)*(5+sqrt(13))/2); v-pile positions in the 3-Wythoff game.
  * @author Sean A. Irvine
  */
 public class A001960 implements Sequence {

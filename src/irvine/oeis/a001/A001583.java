@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001583 Artiads: the primes p == 1 mod 5 for which Fibonacci((p-1)/5) is divisible by p.
+ * A001583 Artiads: the primes p == 1 (mod 5) for which Fibonacci((p-1)/5) is divisible by p.
  * @author Sean A. Irvine
  */
 public class A001583 implements Sequence {

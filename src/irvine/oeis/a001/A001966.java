@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001966 Wythoff game.
+ * A001966 v-pile counts for the 4-Wythoff game with i=2.
  * @author Sean A. Irvine
  */
 public class A001966 implements Sequence {

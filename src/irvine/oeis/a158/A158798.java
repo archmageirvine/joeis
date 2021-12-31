@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158798 a(n)=a(n-1)+64*a(n-2), a(0)=1, a(1)=8.
+ * A158798 a(n) = a(n-1) + 64*a(n-2), a(0)=1, a(1)=8.
  * @author Georg Fischer
  */
 public class A158798 extends LinearRecurrence {

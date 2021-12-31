@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * A003085 Number of connected digraphs with n nodes.
+ * A003085 Number of weakly connected digraphs with n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A003085 extends MobiusTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053577.
+ * A053577 Cototient function n - phi(n) is a power of 2.
  * @author Sean A. Irvine
  */
 public class A053577 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212963 Number of (w,x,y) with all terms in {0,...,n} and |w-x|!=|x-y|!=|y-z|.
+ * A212963 a(n) = number of ordered triples (w,x,y) such that w,x,y are all in {0,...,n} and the numbers |w-x|, |x-y|, |y-w| are distinct.
  * @author Sean A. Irvine
  */
 public class A212963 extends LinearRecurrence {

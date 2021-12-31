@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003027 Number of weakly connected digraphs with n nodes.
+ * A003027 Number of weakly connected digraphs with n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A003027 extends MemorySequence {

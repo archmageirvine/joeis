@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135318 a(n) = a(n-2) + 2*a(n-4), with a[0..3] = [1, 1, 1, 2].
+ * A135318 The Kentucky-2 sequence: a(n) = a(n-2) + 2*a(n-4), with a[0..3] = [1, 1, 1, 2].
  * @author Sean A. Irvine
  */
 public class A135318 extends LinearRecurrence {

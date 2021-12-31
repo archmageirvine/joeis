@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006032 Numbers n such that (14^n - 1)/13 is prime.
+ * A006032 Numbers k such that (14^k - 1)/13 is prime.
  * @author Sean A. Irvine
  */
 public class A006032 implements Sequence {

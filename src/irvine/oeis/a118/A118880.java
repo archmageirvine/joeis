@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a007.A007953;
 
 /**
- * A118880 Cube numbers equal to sum of decimal digits of n.
+ * A118880 a(n) is the cube of the sum of digits of n.
  * @author Georg Fischer
  */
 public class A118880 implements Sequence {

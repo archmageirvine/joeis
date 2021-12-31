@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006453 Expansion of 1/sqrt(1-12x+x^2).
+ * A006453 Expansion of 1/sqrt(1 - 12x + x^2).
  * @author Sean A. Irvine
  */
 public class A006453 implements Sequence {

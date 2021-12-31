@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053423 Let g(n)=sqrt(n); the mapping F(n)=Floor(Floor(n*g(n))/Floor(g(n))) iterates to a fixed point; a(n)=least k such that f(k,n)=f(k-1,n), where f(0,n)=n, f(1,n)=F(n).
+ * A053423 The mapping F(n) = floor(floor(n*sqrt(n)) / floor(sqrt(n))) iterates to a fixed point; a(n) is the least k such that f(k,n)=f(k-1,n), where f(0,n)=n, f(1,n)=F(n), f(k,n)=f(k-1,F(n)).
  * @author Sean A. Irvine
  */
 public class A053423 implements Sequence {

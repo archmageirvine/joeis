@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A196686 Excess of number of odd digits over even digits of Pi.
+ * A196686 Number of odd digits of Pi minus number of even digits.
  * @author Georg Fischer
  */
 public class A196686 extends A000796 {

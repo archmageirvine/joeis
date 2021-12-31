@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006044 A traffic light problem.
+ * A006044 a(n) = 4^(n-4)*(n-1)*(n-2)*(n-3).
  * @author Sean A. Irvine
  */
 public class A006044 implements Sequence {

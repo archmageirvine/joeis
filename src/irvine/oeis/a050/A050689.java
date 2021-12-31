@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A050689 Sum of digits of composite a(n) equals number of its prime factors, with multiplicity.
+ * A050689 Composites whose sum of digits equals number of its prime factors, with multiplicity.
  * @author Sean A. Irvine
  */
 public class A050689 implements Sequence {

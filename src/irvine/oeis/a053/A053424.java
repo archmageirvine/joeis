@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053424 Fixed point to which iterates of F(n) in A054079 converge.
+ * A053424 Fixed point to which iterates of F(n) in A053423 converge.
  * @author Sean A. Irvine
  */
 public class A053424 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001877 Number of divisors of n of form 5k+2; a(0) = 0.
+ * A001877 Number of divisors of n of the form 5k+2; a(0) = 0.
  * @author Sean A. Irvine
  */
 public class A001877 implements Sequence {

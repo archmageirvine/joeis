@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A051421 Number of n-node digraphs with a sink (or, with a source).
+ * A051421 Number of digraphs on n unlabeled nodes with a sink (or, with a source).
  * @author Sean A. Irvine
  */
 public class A051421 extends ParallelGenerateGraphsSequence {

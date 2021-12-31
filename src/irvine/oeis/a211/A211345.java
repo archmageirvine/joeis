@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A211345 The largest n-digit number where last k digits are divisible by k-th prime for k = 1..n.
+ * A211345 a(n) is the largest n-digit number whose last k digits are divisible by the k-th prime for k = 1..n.
  * @author Georg Fischer
  */
 public class A211345 extends FiniteSequence {

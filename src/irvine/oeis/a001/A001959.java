@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001959 Wythoff game.
+ * A001959 u-pile numbers for the 3-Wythoff game with i=2.
  * @author Sean A. Irvine
  */
 public class A001959 implements Sequence {

@@ -1786,3 +1786,5 @@ A053348 a(n) = solution to the postage stamp problem with 8 denominations and n 
 A053437 Number of least favorable parameter configurations
 A053534 Triangle T(n,k) giving number of pairwise non-isomorphic (i.e., unlabeled) matroids of rank k on n points (n >= 0, 0 <= k <= n)
 A053555 Number of distinct parameter sets (v,k,lambda) for Abelian difference sets of order n = k-lambda with 1 <= lambda <= n-1
+A053617 Number of permutations of length n which avoid the patterns 1234 and 1324.
+A053620 Nearest integer to R(n) = the Riemann prime number formula [could not reproduce]

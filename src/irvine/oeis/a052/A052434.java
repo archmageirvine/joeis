@@ -20,7 +20,7 @@ public class A052434 extends A000720 {
     super.next();
   }
 
-  private CR riemann(final long n) {
+  protected CR riemann(final long n) {
     return new CR() {
       @Override
       protected Z approximate(final int precision) {

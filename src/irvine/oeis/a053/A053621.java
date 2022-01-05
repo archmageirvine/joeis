@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053619.
+ * A053621 Nearest integer to n/(log(n)-1).
  * @author Sean A. Irvine
  */
 public class A053621 implements Sequence {

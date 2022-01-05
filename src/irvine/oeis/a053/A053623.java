@@ -1,13 +1,12 @@
 package irvine.oeis.a053;
 
-import java.util.LinkedList;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053619.
+ * A053623 Number of distinct non-extendable sequences {x(1),x(2),...,x(k)} such that each x(i) is in {1,2,...,n} and x(j) AND x(i)&lt;&gt;x(j) for i=2,..k, j=1,..,i-1.
  * @author Sean A. Irvine
  */
 public class A053623 implements Sequence {
@@ -17,7 +16,7 @@ public class A053623 implements Sequence {
   private TreeSet<Long> mSeen = new TreeSet<>();
 
   private void search() {
-    final LinkedList<Long> extensions = new LinkedList<>();
+    boolean foundExtension = false;
     for (long k = 1; k <= mN; ++k) {
       if (!mSeen.contains(k)) {
         boolean extendable = true;
@@ -28,18 +27,15 @@ public class A053623 implements Sequence {
           }
         }
         if (extendable) {
-          extensions.add(k);
+          foundExtension = true;
+          mSeen.add(k);
+          search();
+          mSeen.remove(k);
         }
       }
     }
-    if (extensions.isEmpty()) {
+    if (!foundExtension) {
       ++mCount;
-    } else {
-      for (final long e : extensions) {
-        mSeen.add(e);
-        search();
-        mSeen.remove(e);
-      }
     }
   }
 

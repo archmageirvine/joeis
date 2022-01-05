@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A053619.
+ * A053619 a(n) = round(n/(log(n)-1) - pi(n)).
  * @author Sean A. Irvine
  */
 public class A053619 extends A000720 {

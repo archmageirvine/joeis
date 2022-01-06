@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A032628 Primes that are concatenations of n with n + 5.

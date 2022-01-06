@@ -1,6 +1,7 @@
-package irvine.oeis;
+package irvine.oeis.prime;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * Sequences with names like 

@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a001.A001067;
 
 /**

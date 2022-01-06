@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.PowerFactorPrimeSequence;
+import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
  * A032418 Numbers n such that 137 * 2^n + 1 is a prime.

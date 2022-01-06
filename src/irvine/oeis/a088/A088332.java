@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 
 import irvine.oeis.AddConstantSequence;
 import irvine.oeis.HolonomicRecurrence;
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**

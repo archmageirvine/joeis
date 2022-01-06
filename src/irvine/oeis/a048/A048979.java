@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a011.A011784;
 
 /**

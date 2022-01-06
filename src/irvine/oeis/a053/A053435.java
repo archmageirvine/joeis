@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A053435 Primes with distinct digits in alphabetical order (in English).

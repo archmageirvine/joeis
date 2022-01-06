@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A048465 Distinct primes in sorted order from generation 2 onwards.

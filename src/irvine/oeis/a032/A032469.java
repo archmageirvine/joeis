@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.PowerFactorPrimeSequence;
+import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
  * A032469 Numbers k such that 185*2^k+1 is a prime.

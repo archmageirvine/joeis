@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.PrimePositionSubsequence;
+import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
  * A048459 Generation indices to 'Prime last odd terms' of sequence A048458.

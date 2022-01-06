@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // DO NOT EDIT here!
 
 import irvine.oeis.AddConstantSequence;
-import irvine.oeis.PrimePositionSubsequence;
+import irvine.oeis.prime.PrimePositionSubsequence;
 import irvine.oeis.a002.A002182;
 
 

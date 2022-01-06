@@ -1,7 +1,7 @@
 package irvine.oeis.a103;
 // manually deris2/primeval at 2021-11-04 15:02
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 /**
  * A103389 Primes in A103379 (= 11-delayed Fibonacci b(n) = b(n-11)+b(n-12) or = 1 for n&lt;12).
  * @author Georg Fischer

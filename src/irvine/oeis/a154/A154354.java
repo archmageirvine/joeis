@@ -2,7 +2,7 @@ package irvine.oeis.a154;
 // manually deris2/primeval at 2021-11-04
 
 import irvine.math.z.Z;
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 /**
  * A154354 List of primes of the form 25n^2-36n+13 with n&gt;=0.
  * @author Georg Fischer

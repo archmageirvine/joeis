@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A048458 'Prime last odd terms' from generation 2 onwards.

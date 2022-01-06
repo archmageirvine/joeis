@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 // manually deris at 2021-10-28 22:51
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a152.A152948;
 
 /**

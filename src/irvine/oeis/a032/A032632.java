@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A032632 Primes that are decimal concatenations of n with n + 9.

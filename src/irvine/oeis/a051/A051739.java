@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a020.A020549;
 

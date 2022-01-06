@@ -1,6 +1,9 @@
-package irvine.oeis;
+package irvine.oeis.prime;
 
 import irvine.math.z.Z;
+import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.Sequence;
+import irvine.oeis.Subsequence;
 
 /**
  * A {@link Subsequence} consisting of the primes in the underlying sequence.

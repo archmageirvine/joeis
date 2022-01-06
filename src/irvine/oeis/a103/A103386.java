@@ -1,7 +1,7 @@
 package irvine.oeis.a103;
 // manually deris2/primeval at 2021-11-04 15:02
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 /**
  * A103386 Primes in A103376.
  * @author Georg Fischer

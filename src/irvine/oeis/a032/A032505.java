@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.PowerFactorPrimeSequence;
+import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
  * A032505 Numbers n such that 257*2^n+1 is prime.

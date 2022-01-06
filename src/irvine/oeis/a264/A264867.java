@@ -4,7 +4,7 @@ package irvine.oeis.a264;
 
 import irvine.oeis.AddConstantSequence;
 import irvine.oeis.HolonomicRecurrence;
-import irvine.oeis.PrimePositionSubsequence;
+import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**

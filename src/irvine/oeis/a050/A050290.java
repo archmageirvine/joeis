@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A050290 Zeroless pandigital primes.

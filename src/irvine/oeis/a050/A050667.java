@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.PrimeSubsequence;
+import irvine.oeis.prime.PrimeSubsequence;
 
 /**
  * A050667 Primes p such that number of primes produced according to rules stipulated in Honaker's A048853 is 5.

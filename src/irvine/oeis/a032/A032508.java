@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.PowerFactorPrimeSequence;
+import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
  * A032508 Numbers k such that 263*2^k+1 is prime.

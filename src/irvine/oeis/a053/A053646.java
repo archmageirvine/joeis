@@ -14,9 +14,9 @@ public class A053646 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    long hb = Long.highestOneBit(mN);
+    final long hb = Long.highestOneBit(mN);
     final long distlo = mN - hb;
     final long disthi = (hb << 1) - mN;
-    return Z.valueOf(distlo <= disthi ? distlo : disthi);
+    return Z.valueOf(Math.min(distlo, disthi));
   }
 }

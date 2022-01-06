@@ -40,7 +40,7 @@ public class A055628 implements Sequence {
       final IntegersModMul r = new IntegersModMul(mPrime);
       final Z pl = r.order(Z.TEN);
       // System.out.println("mPrime=" + mPrime + ", pl=" + pl);
-      final Z quot[] = mPrime.subtract(1).divideAndRemainder(mDiv);
+      final Z[] quot = mPrime.subtract(1).divideAndRemainder(mDiv);
       if (quot[1].isZero() && quot[0].equals(pl)) {
         return mPrime;
       }

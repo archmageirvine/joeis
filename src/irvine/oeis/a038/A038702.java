@@ -10,11 +10,25 @@ import irvine.oeis.a000.A000040;
 public class A038702 extends A000040 {
 
   private Z mA = super.next();
+  protected int mExpon;
+
+  /** Construct the sequence. */
+  public A038702() {
+    this(2);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param expon
+   */
+  public A038702(final int expon) {
+    mExpon = expon;
+  }
 
   @Override
   public Z next() {
     final Z t = mA;
     mA = super.next();
-    return mA.square().mod(t);
+    return mA.pow(mExpon).mod(t);
   }
 }

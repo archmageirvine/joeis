@@ -16,7 +16,7 @@ public class A053586 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      long q = mP;
+      final long q = mP;
       mP = mPrime.nextPrime(mP);
       final StringBuilder sb = new StringBuilder();
       for (long k = mP; k >= q; --k) {

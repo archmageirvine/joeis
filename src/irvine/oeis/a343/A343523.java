@@ -1,5 +1,5 @@
 package irvine.oeis.a343;
-// manually 2021-06-21
+// manually 2022-01-06
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -10,9 +10,23 @@ import irvine.oeis.MemorySequence;
  * @author Georg Fischer
  */
 public class A343523 extends MemorySequence {
-    
+
+  protected int mMult;
   protected int mN = -1; // current index
-  
+
+  /** Construct the sequence. */
+  public A343523() {
+    this(2);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param mult
+   */
+  public A343523(final int mult) {
+    mMult = mult;
+  }
+
   @Override
   public Z computeNext() {
     ++mN;
@@ -23,6 +37,6 @@ public class A343523 extends MemorySequence {
     for (int k = 1; k <= mN; ++k) {
       sum = sum.add(Binomial.binomial(mN, k).multiply(a(k - 1)));
     }
-    return sum.multiply2();
+    return sum.multiply(mMult);
   }
 }

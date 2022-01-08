@@ -9,11 +9,25 @@ import irvine.oeis.Sequence;
  */
 public class A006938 implements Sequence {
 
-  private Z mA = null;
+  protected Z mA;
+
+  /** Construct the sequence. */
+  public A006938() {
+    this(3);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param start
+   */
+  public A006938(final int start) {
+    mA = Z.valueOf(start);
+  }
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.THREE : new Z(mA.toString(2));
-    return mA;
+    final Z result = mA;
+    mA = new Z(mA.toString(2));
+    return result;
   }
 }

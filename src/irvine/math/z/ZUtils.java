@@ -727,6 +727,9 @@ public final class ZUtils {
    * @return the largest <code>n</code> such that <code>a^n</code> divides <code>b</code>
    */
   public static int ord(final Z a, Z b) {
+    if (b.isZero()) {
+      return 0; // convention
+    }
     int d = 0;
     Z[] qr;
     while ((qr = b.divideAndRemainder(a))[1].isZero()) {

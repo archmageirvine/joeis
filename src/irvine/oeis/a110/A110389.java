@@ -1,22 +1,50 @@
 package irvine.oeis.a110;
-// manually deris2/essent 0 A005267 at 2021-11-04
 
 import irvine.math.z.Z;
-import irvine.oeis.a005.A005267;
+import irvine.oeis.Sequence;
 
 /**
  * A110389 Integers with mutual residues -1.
- * Same as A005267 but with the first two terms in reverse order.
+ * Maple:
+ * <pre>a:=proc(k, n::nonnegint) option remember;
+ * if n<3 then RETURN(n*k+1); fi;
+ * if n=3 then RETURN(a(k, 1)*a(k, 2)-k); fi;
+ * a(k, n-1)*(a(k, n-1)+k)-k; end;
+ * seq(a(4, n), n=1..9);
+ * </pre>
  * @author Georg Fischer
  */
-public class A110389 extends A005267 {
+public class A110389 implements Sequence {
 
-  private int mN = 1;
-  
+  protected int mN;
+  protected int mK;
+  protected Z mAm1;
+
+  /** Construct the sequence. */
+  public A110389() {
+    this(1);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param k formula parameter
+   */
+  public A110389(final int k) {
+    mK = k;
+    mAm1 = Z.valueOf(mK + 1);
+    mN = 0;
+  }
+
   @Override
   public Z next() {
     ++mN;
-    final Z result = super.next();
-    return mN <= 3 ? Z.valueOf(mN) : result;
+    if (mN < 3) {
+      mAm1 = Z.valueOf(mN * mK + 1);
+    } else if (mN == 3) {
+      mAm1 = Z.valueOf((mK + 1) * (2 * mK + 1) - mK);
+    } else {
+      mAm1 = mAm1.multiply(mAm1.add(mK)).subtract(mK);
+    }
+    return mAm1;
   }
 }

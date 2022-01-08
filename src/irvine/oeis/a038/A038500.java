@@ -5,20 +5,35 @@ import irvine.oeis.Sequence;
 
 /**
  * A038500 Highest power of 3 dividing n.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
 public class A038500 implements Sequence {
 
-  private long mN = 0;
+  protected long mN;
+  protected long mBase;
+
+  /** Construct the sequence. */
+  public A038500() {
+    this(3);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param base take the power of this parameter
+   */
+  public A038500(final int base) {
+    mBase = base;
+    mN = 0;
+  }
 
   @Override
   public Z next() {
-    int c = 0;
+    long c = 1;
     long m = ++mN;
-    while (m % 3 == 0) {
-      ++c;
-      m /= 3;
+    while (m % mBase == 0) {
+      c *= mBase;
+      m /= mBase;
     }
-    return Z.THREE.pow(c);
+    return Z.valueOf(c);
   }
 }

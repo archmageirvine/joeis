@@ -496,7 +496,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
     if (!isIntegral()) {
       throw new UnsupportedOperationException();
     }
-    final int n = ZUtils.ord(p, discriminant().toZ());
+    final int n = ZUtils.valuation(p, discriminant().toZ());
     if (n == 0) {
       original.mKodaira.put(p, "I0");
       original.mExponentInConductor.put(p, 0L);

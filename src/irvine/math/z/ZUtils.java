@@ -721,12 +721,12 @@ public final class ZUtils {
   }
 
   /**
-   * The order of a number in another.
+   * The valuation of a number in another.
    * @param a divisor
    * @param b number to be divided
    * @return the largest <code>n</code> such that <code>a^n</code> divides <code>b</code>
    */
-  public static int ord(final Z a, Z b) {
+  public static int valuation(final Z a, Z b) {
     if (b.isZero()) {
       return 0; // convention
     }

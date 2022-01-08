@@ -12,6 +12,6 @@ public class A022337 extends A003593 {
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.ord(Z.FIVE, super.next()));
+    return Z.valueOf(ZUtils.valuation(Z.FIVE, super.next()));
   }
 }

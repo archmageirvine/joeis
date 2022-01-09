@@ -68,9 +68,9 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
     mColMix.add(x); // for column iy
     mColMax.add(x);
     mOldTerm = addEntry(x, y).subtract(1);
-//**    if (sDebug >= 1) {
-//**      System.out.println("# BinaryQuadraticForm(" + a + ", " + b + ", " + c + ", anyInteger=" + anyInteger + ", primesOnly=" + primesOnly);
-//**    }
+//    if (sDebug >= 1) {
+//      System.out.println("# BinaryQuadraticForm(" + a + ", " + b + ", " + c + ", anyInteger=" + anyInteger + ", primesOnly=" + primesOnly);
+//    }
   }
 
   /**
@@ -84,18 +84,18 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
     final Pair<Integer, Integer> pair = get(result);
     if (pair == null) { // new key
       put(result, new Pair<>(x, y));
-//**      if (sDebug >= 3) {
-//**        System.out.println("# add new @[" + x + "," + y + "]\t" + result);
-//**      }
+//      if (sDebug >= 3) {
+//        System.out.println("# add new @[" + x + "," + y + "]\t" + result);
+//      }
     } else { // key exists
       //final int x0 = pair.left();
       final int y0 = pair.right();
       if (y > y0) { // replace by the new one that is more to the right
         put(result, new Pair<>(x, y));
       }
-//**      if (sDebug >= 3) {
-//**        System.out.println("# modify @[" + x + "," + y + "]\t" + result);
-//**      }
+//      if (sDebug >= 3) {
+//        System.out.println("# modify @[" + x + "," + y + "]\t" + result);
+//      }
     }
     return result;
   }
@@ -120,17 +120,17 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
         mColMix.add(x1);
         mColMax.add(x1);
         final Z f1 = addEntry(x1, y1);
-//**        if (sDebug >= 1) {
-//**          System.out.println("# stopping element @[" + x1 + "," + y1 + "]\t" + f1);
-//**        }
+//        if (sDebug >= 1) {
+//          System.out.println("# stopping element @[" + x1 + "," + y1 + "]\t" + f1);
+//        }
         // extend the ranges
         int yi = 0;
         while (yi <= y0) {
           int xl = mColMix.get(yi);
           int xh = mColMax.get(yi);
-//**          if (sDebug >= 3) {
-//**            System.out.println("# col. " + yi + "\t old range   [" + xl + ".." + xh + "]");
-//**          }
+//          if (sDebug >= 3) {
+//            System.out.println("# col. " + yi + "\t old range   [" + xl + ".." + xh + "]");
+//          }
           if (mAnyInteger || xl >= 1) {
             while (addEntry(--xl, yi).compareTo(f1) <= 0) { // extend -> -x
             }
@@ -139,17 +139,17 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
           while (addEntry(++xh, yi).compareTo(f1) <= 0) { // extend -> +x
           }
           mColMax.set(yi, xh);
-//**          if (sDebug >= 2) {
-//**            System.out.println("# col. " + yi + "\t extended to [" + xl + ".." + xh + "]");
-//**          }
+//          if (sDebug >= 2) {
+//            System.out.println("# col. " + yi + "\t extended to [" + xl + ".." + xh + "]");
+//          }
           ++yi;
         }
       }
       //--------
       if (mAnyInteger || x0 >= 0) {
-//**        if (sDebug >= 1) {
-//**          System.out.println("# candidate @[" + x0 + "," + y0 + "]\t" + result);
-//**        }
+//        if (sDebug >= 1) {
+//          System.out.println("# candidate @[" + x0 + "," + y0 + "]\t" + result);
+//        }
         if (mOldTerm.compareTo(result) < 0) { // sequence must be strictly increasing
           mOldTerm = result;
           if (!mPrimesOnly || result.isProbablePrime()) {
@@ -157,68 +157,68 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
           }
         }
       } else {
-//**        if (sDebug >= 1) {
-//**          System.out.println("# candidate @[" + x0 + "," + y0 + "]\t" + result + " skipped");
-//**        }
+//        if (sDebug >= 1) {
+//          System.out.println("# candidate @[" + x0 + "," + y0 + "]\t" + result + " skipped");
+//        }
       }
     }
   }
 
-//**  /**
-//**   * Main method for testing
-//**   * @param args command line arguments:
-//**   * <ul>
-//**   * <li>-b   output is b-file format (default: comma separated data line)</li>
-//**   * <li>-d   debugging level (default 0=none; 1=some, 2=more)</li>
-//**   * <li>-m   modulus (default 71)</li>
-//**   * <li>-n   number of terms to be computed (default 64)</li>
-//**   * </ul>
-//**   */
-//**  public static void main(String[] args) {
-//**    boolean bFile = false;
-//**    int noTerms   = 32;
-//**    int a = 2;
-//**    int b = 0;
-//**    int c = 7;
-//**    boolean primesOnly = false;
-//**    boolean anyInteger = false; // x, y nonnegative
-//**    int iarg = 0;
-//**    while (iarg < args.length) { // consume all arguments
-//**      final String opt = args[iarg ++];
-//**      try {
-//**        if (false) {
-//**        } else if (opt.equals    ("-a")     ) {
-//**          a       = Integer.parseInt(args[iarg++]);
-//**        } else if (opt.equals    ("-bf")    ) {
-//**          bFile   = true;
-//**        } else if (opt.equals    ("-b")     ) {
-//**          b       = Integer.parseInt(args[iarg++]);
-//**        } else if (opt.equals    ("-c")     ) {
-//**          c       = Integer.parseInt(args[iarg++]);
-//**        } else if (opt.equals    ("-d")     ) {
-//**          sDebug  = Integer.parseInt(args[iarg++]);
-//**        } else if (opt.equals    ("-i")     ) {
-//**          anyInteger = true; // x, y element of Z
-//**        } else if (opt.equals    ("-n")     ) {
-//**          noTerms = Integer.parseInt(args[iarg++]);
-//**        } else if (opt.equals    ("-p")     ) {
-//**          primesOnly = true;
-//**        } else {
-//**          System.err.println("??? invalid option: \"" + opt + "\"");
-//**        }
-//**      } catch (Exception exc) { // take default
-//**      }
-//**    } // while args
-//**
-//**    final BinaryQuadraticForm bqf = new BinaryQuadraticForm(a, b, c, anyInteger, primesOnly);
-//**    for (int it = 1; it <= noTerms; ++it) {
-//**      final Z term = bqf.next();
-//**      if (bFile) {
-//**        System.out.println(it + " " + term);
-//**      } else {
-//**        System.out.print((it == 1 ? "" : ", ") + " " + term);
-//**      }
-//**    }
-//**    System.out.println();
-//**  } // main
+//  /**
+//   * Main method for testing
+//   * @param args command line arguments:
+//   * <ul>
+//   * <li>-b   output is b-file format (default: comma separated data line)</li>
+//   * <li>-d   debugging level (default 0=none; 1=some, 2=more)</li>
+//   * <li>-m   modulus (default 71)</li>
+//   * <li>-n   number of terms to be computed (default 64)</li>
+//   * </ul>
+//   */
+//  public static void main(String[] args) {
+//    boolean bFile = false;
+//    int noTerms   = 32;
+//    int a = 2;
+//    int b = 0;
+//    int c = 7;
+//    boolean primesOnly = false;
+//    boolean anyInteger = false; // x, y nonnegative
+//    int iarg = 0;
+//    while (iarg < args.length) { // consume all arguments
+//      final String opt = args[iarg ++];
+//      try {
+//        if (false) {
+//        } else if (opt.equals    ("-a")     ) {
+//          a       = Integer.parseInt(args[iarg++]);
+//        } else if (opt.equals    ("-bf")    ) {
+//          bFile   = true;
+//        } else if (opt.equals    ("-b")     ) {
+//          b       = Integer.parseInt(args[iarg++]);
+//        } else if (opt.equals    ("-c")     ) {
+//          c       = Integer.parseInt(args[iarg++]);
+//        } else if (opt.equals    ("-d")     ) {
+//          sDebug  = Integer.parseInt(args[iarg++]);
+//        } else if (opt.equals    ("-i")     ) {
+//          anyInteger = true; // x, y element of Z
+//        } else if (opt.equals    ("-n")     ) {
+//          noTerms = Integer.parseInt(args[iarg++]);
+//        } else if (opt.equals    ("-p")     ) {
+//          primesOnly = true;
+//        } else {
+//          System.err.println("??? invalid option: \"" + opt + "\"");
+//        }
+//      } catch (Exception exc) { // take default
+//      }
+//    } // while args
+//
+//    final BinaryQuadraticForm bqf = new BinaryQuadraticForm(a, b, c, anyInteger, primesOnly);
+//    for (int it = 1; it <= noTerms; ++it) {
+//      final Z term = bqf.next();
+//      if (bFile) {
+//        System.out.println(it + " " + term);
+//      } else {
+//        System.out.print((it == 1 ? "" : ", ") + " " + term);
+//      }
+//    }
+//    System.out.println();
+//  } // main
 }

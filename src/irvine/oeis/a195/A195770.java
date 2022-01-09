@@ -25,11 +25,11 @@ public class A195770 implements Sequence {
   /**
    * Finite automaton state for flattening of loop over b nested in loop over b.
    * <ul>
-   * <li>mState = 0: increment b</li>
-   * <li>mState = 1: increment a, compute limit for c, reset b</li>
+   * <li><code>mState = 0</code>: increment b</li>
+   * <li><code>mState = 1</code>: increment a, compute limit for c, reset b</li>
    * </ul>
    */
-  protected int mState; // 
+  protected int mState;
 
   /**
    * Empty constructor

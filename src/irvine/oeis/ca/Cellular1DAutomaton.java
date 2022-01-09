@@ -149,19 +149,19 @@ public class Cellular1DAutomaton implements Sequence {
       }
       mEndIndex = mCenter + dist + 1; // behind last block covered by the triangle
       mOldBlock = mOldRow[mIndex];
-//**      if (sDebug > 0) {
-//**        System.out.println("--------");
-//**        System.out.println("#   new RowIterator()"
-//**            + ", mGen="      + mGen
-//**            + ", dist="      + dist
-//**            + ", index="     + index
-//**            + ", endIndex="  + endIndex
-//**            + ", mOldBlock=" + Integer.toBinaryString(mOldBlock)
-//**            + ", bitPos="    + bitPos
-//**            + ", count="     + count
-//**            + ", endCount="  + endCount
-//**            );
-//**      }
+//      if (sDebug > 0) {
+//        System.out.println("--------");
+//        System.out.println("#   new RowIterator()"
+//            + ", mGen="      + mGen
+//            + ", dist="      + dist
+//            + ", index="     + index
+//            + ", endIndex="  + endIndex
+//            + ", mOldBlock=" + Integer.toBinaryString(mOldBlock)
+//            + ", bitPos="    + bitPos
+//            + ", count="     + count
+//            + ", endCount="  + endCount
+//            );
+//      }
     }
 
     /**
@@ -281,29 +281,29 @@ public class Cellular1DAutomaton implements Sequence {
       final int tarBit = ((mRule & (1 << key3)) != 0) ? 1 : 0;
       mBlackCount += tarBit;
       newBlock |= tarBit << itar;
-//**      if (sDebug >= 2) {
-//**        System.out.println("#     transformBlock("
-//**            + Integer.toBinaryString(oldBlock)
-//**            + ", " + Integer.toBinaryString(leftBit)
-//**            + ", " + Integer.toBinaryString(rightBit) + ")"
-//**            + ", isrc="         + isrc
-//**            + ", itar="         + itar
-//**            + ", wrappedBlock=" + Integer.toBinaryString(wrappedBlock)
-//**            + ", tarBit="       + Integer.toBinaryString(tarBit)
-//**            + ", newBlock="     + Integer.toBinaryString(newBlock)
-//**            );
-//**      }
+//      if (sDebug >= 2) {
+//        System.out.println("#     transformBlock("
+//            + Integer.toBinaryString(oldBlock)
+//            + ", " + Integer.toBinaryString(leftBit)
+//            + ", " + Integer.toBinaryString(rightBit) + ")"
+//            + ", isrc="         + isrc
+//            + ", itar="         + itar
+//            + ", wrappedBlock=" + Integer.toBinaryString(wrappedBlock)
+//            + ", tarBit="       + Integer.toBinaryString(tarBit)
+//            + ", newBlock="     + Integer.toBinaryString(newBlock)
+//            );
+//      }
       wrappedBlock >>= 1;
       ++itar;
     }
-//**    if (sDebug >= 1) {
-//**        System.out.println("#     transformBlock("
-//**            + Integer.toBinaryString(oldBlock)
-//**            + ", " + Integer.toBinaryString(leftBit)
-//**            + ", " + Integer.toBinaryString(rightBit) + ")"
-//**            + " -> newBlock=" + Integer.toBinaryString(newBlock)
-//**            );
-//**    }
+//    if (sDebug >= 1) {
+//        System.out.println("#     transformBlock("
+//            + Integer.toBinaryString(oldBlock)
+//            + ", " + Integer.toBinaryString(leftBit)
+//            + ", " + Integer.toBinaryString(rightBit) + ")"
+//            + " -> newBlock=" + Integer.toBinaryString(newBlock)
+//            );
+//    }
     return newBlock;
   }
 
@@ -318,27 +318,27 @@ public class Cellular1DAutomaton implements Sequence {
     final int endIndex = riter.getEndIndex();
     mOldRow[index - 1] = mBackground;
     mOldRow[endIndex] = mBackground;
-//**    if (sDebug >= 1) {
-//**      System.out.print("# old row @" + (index - 1) + ": ");
-//**      for (int irow = index - 1; irow <= endIndex; ++irow) {
-//**        System.out.print(" "  + String.format("%" + BLOCK_LEN + "s", Integer.toBinaryString(mOldRow[irow])).replace(' ', '0'));
-//**      }
-//**      System.out.println();
-//**    }
+//    if (sDebug >= 1) {
+//      System.out.print("# old row @" + (index - 1) + ": ");
+//      for (int irow = index - 1; irow <= endIndex; ++irow) {
+//        System.out.print(" "  + String.format("%" + BLOCK_LEN + "s", Integer.toBinaryString(mOldRow[irow])).replace(' ', '0'));
+//      }
+//      System.out.println();
+//    }
     while (riter.hasNextBlock()) {
       final int irow = riter.nextBlockIndex();
       final int leftBit = mOldRow[irow - 1] & mLowMask;
       final int rightBit = (mOldRow[irow + 1] & mHighMask) >> (BLOCK_LEN - 1);
       final int newBlock = transformBlock(mOldRow[irow], leftBit, rightBit);
-//**      if (sDebug >= 1) {
-//**          System.out.println("#   computeNextRow.loop"
-//**              + ", irow="    + irow
-//**              + ", oldBlock="  + Integer.toBinaryString(mOldRow[irow])
-//**              + ", leftBit="   + Integer.toBinaryString(leftBit)
-//**              + ", rightBit="  + Integer.toBinaryString(rightBit)
-//**              + " -> newBlock=" + Integer.toBinaryString(newBlock)
-//**              );
-//**      }
+//      if (sDebug >= 1) {
+//          System.out.println("#   computeNextRow.loop"
+//              + ", irow="    + irow
+//              + ", oldBlock="  + Integer.toBinaryString(mOldRow[irow])
+//              + ", leftBit="   + Integer.toBinaryString(leftBit)
+//              + ", rightBit="  + Integer.toBinaryString(rightBit)
+//              + " -> newBlock=" + Integer.toBinaryString(newBlock)
+//              );
+//      }
       mNewRow[irow] = newBlock;
     }
     if ((mRule & 0x1) == 1) { // odd rule
@@ -351,13 +351,13 @@ public class Cellular1DAutomaton implements Sequence {
     mOldRow = mNewRow;
     mOldRow[index - 1] = mBackground;
     mOldRow[endIndex] = mBackground;
-//**    if (sDebug >= 1) {
-//**      System.out.print("# new row @" + (index - 1) + ": ");
-//**      for (int irow = index - 1; irow <= endIndex; ++irow) {
-//**        System.out.print(" "  + String.format("%" + BLOCK_LEN + "s", Integer.toBinaryString(mOldRow[irow])).replace(' ', '0'));
-//**      }
-//**      System.out.println();
-//**    }
+//    if (sDebug >= 1) {
+//      System.out.print("# new row @" + (index - 1) + ": ");
+//      for (int irow = index - 1; irow <= endIndex; ++irow) {
+//        System.out.print(" "  + String.format("%" + BLOCK_LEN + "s", Integer.toBinaryString(mOldRow[irow])).replace(' ', '0'));
+//      }
+//      System.out.println();
+//    }
     mNewRow = new int[mRowLen];
   }
 
@@ -534,99 +534,99 @@ public class Cellular1DAutomaton implements Sequence {
     return mSum;
   }
 
-//**  /**
-//**   * Displays the old row by using "1" and "." for 0 bits, and " " outside the triangle.
-//**   * @param width total width of the generated line
-//**   * @param mode 2 = binary as decimal, block display otherwise
-//**   */
-//**  public void displayRow(final int width, final int mode) {
-//**    final StringBuilder sb = new StringBuilder(width);
-//**    final RowIterator riter = new RowIterator();
-//**    while (riter.hasNext()) {
-//**      final int bitPos = riter.next();
-//**      if (mode != 2) {
-//**        sb.append(((mOldBlock & (1 << bitPos)) == 0) ? '\u2588' : '\u2591');
-//**      } else {
-//**        sb.append(((mOldBlock & (1 << bitPos)) == 0) ? '0' : '1');
-//**      }
-//**    }
-//**    System.out.println(String.format("%3d: %" + String.valueOf(width / 2 - mGen) + "s", mGen, " ")
-//**        + (mBackground == 0 ? "-" : "+") + sb.toString() + (mBackground == 0 ? "-" : "+"));
-//**  }
-//**
-//**  /*
-//**   * Main method for debugging.
-//**   * @param args command line arguments:
-//**   * <ul>
-//**   * <li>-b  print in b-file format instead of comma separated list</li>
-//**   * <li>-d  level debugging level (default 0=none, 1=some, 2=more)</li>
-//**   * <li>-r  rule number</li>
-//**   * <li>-n  numTerms number of terms to be computed (default: 16)</li>
-//**   * <li>-cc callcode</li>
-//**   * </ul>
-//**   */
-//**  public static void main(String[] args) {
-//**    boolean bfile = false;
-//**    String callCode = "rows";
-//**    int debug    = 0;
-//**    int mode     = 1;
-//**    int numTerms = 32;
-//**    int ruleNo   = 30;
-//**    int iarg = 0;
-//**    while (iarg < args.length) { // consume all arguments
-//**      String opt = args[iarg ++];
-//**      try {
-//**        if (false) {
-//**        } else if (opt.equals    ("-b")     ) {
-//**          bfile    = true;
-//**        } else if (opt.equals    ("-cc")     ) {
-//**          callCode = args[iarg ++];
-//**        } else if (opt.equals    ("-d")     ) {
-//**          debug    = Integer.parseInt(args[iarg ++]);
-//**        } else if (opt.equals    ("-m")     ) {
-//**          mode     = Integer.parseInt(args[iarg ++]);
-//**        } else if (opt.equals    ("-n")     ) {
-//**          numTerms = Integer.parseInt(args[iarg ++]);
-//**        } else if (opt.equals    ("-r")     ) {
-//**          ruleNo   = Integer.parseInt(args[iarg ++]);
-//**        } else {
-//**          System.err.println("??? invalid option: \"" + opt + "\"");
-//**        }
-//**      } catch (Exception exc) { // take default
-//**      }
-//**    } // while args
-//**
-//**    Cellular1DAutomaton ca = new Cellular1DAutomaton(ruleNo);
-//**    ca.setDebug(debug);
-//**    if (false) {
-//**    } else if (callCode.equals("bfile")){
-//**      for (int gen = 0; gen < numTerms; ++gen) {
-//**        ca.mGen = gen;
-//**        System.out.println(gen + " " + ca.toBinaryString());
-//**        ca.computeNextRow();
-//**      }
-//**    } else if (callCode.equals("block")){
-//**      int block = 0x010;
-//**      for (int gen = 0; gen < numTerms; ++gen) {
-//**        System.out.println(Integer.toBinaryString(block));
-//**        block = ca.transformBlock(block, 0, 0);
-//**      }
-//**    } else if (callCode.equals("rows")){
-//**      for (int gen = 0; gen < numTerms; ++gen) {
-//**        ca.displayRow(2 * numTerms + 4, mode);
-//**        ca.computeNextRow();
-//**      }
-//**    } else if (callCode.equals("next")){
-//**      for (int n = 0; n < numTerms; ++n) {
-//**        if (bfile) {
-//**          System.out.println(n + " " + ca.next());
-//**        } else {
-//**          System.out.print((n == 0 ? "" : ",") + ca.next());
-//**        }
-//**      }
-//**    } else {
-//**      System.err.println("??? invalid callCode: \"" + callCode + "\"");
-//**    }
-//**  } // main
+//  /**
+//   * Displays the old row by using "1" and "." for 0 bits, and " " outside the triangle.
+//   * @param width total width of the generated line
+//   * @param mode 2 = binary as decimal, block display otherwise
+//   */
+//  public void displayRow(final int width, final int mode) {
+//    final StringBuilder sb = new StringBuilder(width);
+//    final RowIterator riter = new RowIterator();
+//    while (riter.hasNext()) {
+//      final int bitPos = riter.next();
+//      if (mode != 2) {
+//        sb.append(((mOldBlock & (1 << bitPos)) == 0) ? '\u2588' : '\u2591');
+//      } else {
+//        sb.append(((mOldBlock & (1 << bitPos)) == 0) ? '0' : '1');
+//      }
+//    }
+//    System.out.println(String.format("%3d: %" + String.valueOf(width / 2 - mGen) + "s", mGen, " ")
+//        + (mBackground == 0 ? "-" : "+") + sb.toString() + (mBackground == 0 ? "-" : "+"));
+//  }
+//
+//  /*
+//   * Main method for debugging.
+//   * @param args command line arguments:
+//   * <ul>
+//   * <li>-b  print in b-file format instead of comma separated list</li>
+//   * <li>-d  level debugging level (default 0=none, 1=some, 2=more)</li>
+//   * <li>-r  rule number</li>
+//   * <li>-n  numTerms number of terms to be computed (default: 16)</li>
+//   * <li>-cc callcode</li>
+//   * </ul>
+//   */
+//  public static void main(String[] args) {
+//    boolean bfile = false;
+//    String callCode = "rows";
+//    int debug    = 0;
+//    int mode     = 1;
+//    int numTerms = 32;
+//    int ruleNo   = 30;
+//    int iarg = 0;
+//    while (iarg < args.length) { // consume all arguments
+//      String opt = args[iarg ++];
+//      try {
+//        if (false) {
+//        } else if (opt.equals    ("-b")     ) {
+//          bfile    = true;
+//        } else if (opt.equals    ("-cc")     ) {
+//          callCode = args[iarg ++];
+//        } else if (opt.equals    ("-d")     ) {
+//          debug    = Integer.parseInt(args[iarg ++]);
+//        } else if (opt.equals    ("-m")     ) {
+//          mode     = Integer.parseInt(args[iarg ++]);
+//        } else if (opt.equals    ("-n")     ) {
+//          numTerms = Integer.parseInt(args[iarg ++]);
+//        } else if (opt.equals    ("-r")     ) {
+//          ruleNo   = Integer.parseInt(args[iarg ++]);
+//        } else {
+//          System.err.println("??? invalid option: \"" + opt + "\"");
+//        }
+//      } catch (Exception exc) { // take default
+//      }
+//    } // while args
+//
+//    Cellular1DAutomaton ca = new Cellular1DAutomaton(ruleNo);
+//    ca.setDebug(debug);
+//    if (false) {
+//    } else if (callCode.equals("bfile")){
+//      for (int gen = 0; gen < numTerms; ++gen) {
+//        ca.mGen = gen;
+//        System.out.println(gen + " " + ca.toBinaryString());
+//        ca.computeNextRow();
+//      }
+//    } else if (callCode.equals("block")){
+//      int block = 0x010;
+//      for (int gen = 0; gen < numTerms; ++gen) {
+//        System.out.println(Integer.toBinaryString(block));
+//        block = ca.transformBlock(block, 0, 0);
+//      }
+//    } else if (callCode.equals("rows")){
+//      for (int gen = 0; gen < numTerms; ++gen) {
+//        ca.displayRow(2 * numTerms + 4, mode);
+//        ca.computeNextRow();
+//      }
+//    } else if (callCode.equals("next")){
+//      for (int n = 0; n < numTerms; ++n) {
+//        if (bfile) {
+//          System.out.println(n + " " + ca.next());
+//        } else {
+//          System.out.print((n == 0 ? "" : ",") + ca.next());
+//        }
+//      }
+//    } else {
+//      System.err.println("??? invalid callCode: \"" + callCode + "\"");
+//    }
+//  } // main
 
 }

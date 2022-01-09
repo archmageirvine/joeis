@@ -22,7 +22,7 @@ public class CongruenceForm implements Sequence {
 
   /**
    * Construct an instance from a list of remainders.
-   * @param start number of of initial terms, index of first residue
+   * @param start number of initial terms, index of first residue
    * @param modulus divisor
    * @param residues list of initial terms followed by the residues
    */
@@ -79,54 +79,54 @@ public class CongruenceForm implements Sequence {
         mResIndex = mResStart; // continue behind the initial terms
       }
       final Z candidate = mCandBase.add(mResidues[mResIndex]);
-      //** System.out.println("mCandidate=" + mCandidate + ", mCandBase=" + mCandBase + ", mResIndex=" + mResIndex);
+      // System.out.println("mCandidate=" + mCandidate + ", mCandBase=" + mCandBase + ", mResIndex=" + mResIndex);
       if (candidate.isProbablePrime()) {
         return candidate;
       }
     }
   }
 
-//**  /**
-//**   * Main method for testing
-//**   * @param args command line arguments:
-//**   * <ul>
-//**   * <li>-b   output is b-file format (default: comma separated data line)</li>
-//**   * <li>-d   debugging level (default 0=none; 1=some, 2=more)</li>
-//**   * <li>-m   modulus (default 71)</li>
-//**   * <li>-n   number of terms to be computed (default 64)</li>
-//**   * </ul>
-//**   */
-//**  public static void main(String[] args) {
-//**    boolean bFile = false;
-//**    int debug     = 0;
-//**    int noTerms   = 64;
-//**    int modulus   = 71;
-//**    int iarg = 0;
-//**    while (iarg < args.length) { // consume all arguments
-//**      final String opt = args[iarg ++];
-//**      try {
-//**        if (false) {
-//**        } else if (opt.equals    ("-b")     ) {
-//**          bFile   = true;
-//**        } else if (opt.equals    ("-d")     ) {
-//**          debug   = Integer.parseInt(args[iarg ++]);
-//**        } else if (opt.equals    ("-m")     ) {
-//**          modulus = Integer.parseInt(args[iarg ++]);
-//**        } else if (opt.equals    ("-n")     ) {
-//**          noTerms = Integer.parseInt(args[iarg ++]);
-//**        } else {
-//**          System.err.println("??? invalid option: \"" + opt + "\"");
-//**        }
-//**      } catch (Exception exc) { // take default
-//**      }
-//**    } // while args
-//**
-//**    final CongruenceForm cf = new CongruenceForm(modulus);
-//**    final int[] residues = cf.quadResidues(modulus);
-//**    System.out.print("modulus " + modulus);
-//**    for (int ir = 0; ir < residues.length; ++ir) {
-//**      System.out.print(", " + residues[ir]);
-//**    }
-//**    System.out.println();
-//**  } // main
+//  /**
+//   * Main method for testing
+//   * @param args command line arguments:
+//   * <ul>
+//   * <li>-b   output is b-file format (default: comma separated data line)</li>
+//   * <li>-d   debugging level (default 0=none; 1=some, 2=more)</li>
+//   * <li>-m   modulus (default 71)</li>
+//   * <li>-n   number of terms to be computed (default 64)</li>
+//   * </ul>
+//   */
+//  public static void main(String[] args) {
+//    boolean bFile = false;
+//    int debug     = 0;
+//    int noTerms   = 64;
+//    int modulus   = 71;
+//    int iarg = 0;
+//    while (iarg < args.length) { // consume all arguments
+//      final String opt = args[iarg ++];
+//      try {
+//        if (false) {
+//        } else if (opt.equals    ("-b")     ) {
+//          bFile   = true;
+//        } else if (opt.equals    ("-d")     ) {
+//          debug   = Integer.parseInt(args[iarg ++]);
+//        } else if (opt.equals    ("-m")     ) {
+//          modulus = Integer.parseInt(args[iarg ++]);
+//        } else if (opt.equals    ("-n")     ) {
+//          noTerms = Integer.parseInt(args[iarg ++]);
+//        } else {
+//          System.err.println("??? invalid option: \"" + opt + "\"");
+//        }
+//      } catch (Exception exc) { // take default
+//      }
+//    } // while args
+//
+//    final CongruenceForm cf = new CongruenceForm(modulus);
+//    final int[] residues = cf.quadResidues(modulus);
+//    System.out.print("modulus " + modulus);
+//    for (int ir = 0; ir < residues.length; ++ir) {
+//      System.out.print(", " + residues[ir]);
+//    }
+//    System.out.println();
+//  } // main
 }

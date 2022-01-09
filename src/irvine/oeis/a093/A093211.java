@@ -48,17 +48,17 @@ public class A093211 extends HashSet<Z> implements Sequence {
         btmp[i] = 0; // remove
       }
     }
-//**    if (sDebug >= 2) {
-//**      System.out.print("btmp=");
-//**      String sep = "[";
-//**      for (int i = 0; i < btmp.length; ++i) {
-//**        if (btmp[i] != 0) {
-//**          System.out.print(sep + i);
-//**          sep = ", ";
-//**        }
-//**      }
-//**      System.out.println("]");
-//**    }
+//    if (sDebug >= 2) {
+//      System.out.print("btmp=");
+//      String sep = "[";
+//      for (int i = 0; i < btmp.length; ++i) {
+//        if (btmp[i] != 0) {
+//          System.out.print(sep + i);
+//          sep = ", ";
+//        }
+//      }
+//      System.out.println("]");
+//    }
     return btmp;
   }
 
@@ -67,7 +67,7 @@ public class A093211 extends HashSet<Z> implements Sequence {
     while (ktmp.mod(Z.valueOf(mDivm)).intValue() != 0) {
       ktmp = ktmp.subtract(Z.ONE);
     }
-//**    if (sDebug >= 2) { System.out.println("dropdigs(" + k + "," + l + ") -> " + ktmp); }
+//    if (sDebug >= 2) { System.out.println("dropdigs(" + k + "," + l + ") -> " + ktmp); }
     return ktmp;
   }
 
@@ -75,9 +75,9 @@ public class A093211 extends HashSet<Z> implements Sequence {
     Z aa = Z.ZERO;
     final Z kt = k.multiply(Z.TEN);
     final Z ktl = kt.mod(mLast);
-//**    if (sDebug >= 4) {
-//**      System.out.println("walk in(" + k + "), last=" + mLast + ", ktl=" + ktl);
-//**    }
+//    if (sDebug >= 4) {
+//      System.out.println("walk in(" + k + "), last=" + mLast + ", ktl=" + ktl);
+//    }
     if (ktl.subtract(1).mod(mDivz).add(Z.TEN).compareTo(mDivz) < 0) {
       return aa;
     }
@@ -90,9 +90,9 @@ public class A093211 extends HashSet<Z> implements Sequence {
       remove(al);
     } else {
     }
-//**    if (sDebug >= 4) {
-//**      System.out.println("walk out(" + k + ") -> " + aa);
-//**    }
+//    if (sDebug >= 4) {
+//      System.out.println("walk out(" + k + ") -> " + aa);
+//    }
     return aa;
   }
 
@@ -105,7 +105,7 @@ public class A093211 extends HashSet<Z> implements Sequence {
     while (!i.mod(mDivz).isZero()) {
       i = i.subtract(1);
     }
-//**    if (sDebug >= 2) { System.out.println("i=" + i + ", n=" + n + ", beg=" + beg + ", end=" + end); }
+//    if (sDebug >= 2) { System.out.println("i=" + i + ", n=" + n + ", beg=" + beg + ", end=" + end); }
     Z an = i;
     long anlen = n;
     while (i.compareTo(end) > 0) {
@@ -139,20 +139,20 @@ public class A093211 extends HashSet<Z> implements Sequence {
     return an;
   }
 
-//**  /**
-//**   * Main method for testing
-//**   * @param args command line arguments: divisor
-//**   */
-//**  public static void main(String[] args) {
-//**    long divisor = 11;
-//**    try {
-//**      divisor = Integer.parseInt(args[0]);
-//**    } catch (Exception exc) {
-//**    }
-//**    
-//**    A093211 seq = new A093211(divisor);
-//**    for (int n = 1; n < 12; n ++) { // main loop
-//**      System.out.println(n + " " + seq.next());
-//**    }
-//**  }
+//  /**
+//   * Main method for testing
+//   * @param args command line arguments: divisor
+//   */
+//  public static void main(String[] args) {
+//    long divisor = 11;
+//    try {
+//      divisor = Integer.parseInt(args[0]);
+//    } catch (Exception exc) {
+//    }
+//    
+//    A093211 seq = new A093211(divisor);
+//    for (int n = 1; n < 12; n ++) { // main loop
+//      System.out.println(n + " " + seq.next());
+//    }
+//  }
 }

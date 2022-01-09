@@ -297,7 +297,7 @@ public final class GeneralLinearCycleIndex {
         //zykelind_hoch_dir_prod(hilf, mu[i], hilf1);
         final CycleIndex hilf1 = hilf.pow(OP, mu[i], Integer.MAX_VALUE);
         //zykelind_dir_prod_apply(hilf1, ergeb);
-        System.out.println("hilf1=" + hilf1);
+        //System.out.println("hilf1=" + hilf1);
         ergeb = ergeb.op(OP, hilf1);
       }
     }
@@ -424,6 +424,7 @@ public final class GeneralLinearCycleIndex {
       }  /*3*/
       //add_apply(zs1, ergeb);
       ergeb.add(zs1);
+      System.out.println(ergeb);
     }
 //    freeall(p);
 //    freeall(c); 

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.api.Ring;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
@@ -42,7 +42,7 @@ public final class GeneralLinearCycleIndex {
       final List<Z> aa = new ArrayList<>();
       final List<Z> bb = new ArrayList<>();
       final Z c = Z.valueOf(q).pow(dd).subtract(1);
-      final Z[] e = Cheetah.factor(c).divisors();
+      final Z[] e = Jaguar.factor(c).divisors();
       for (final Z z : e) {
         if (dd == 1 && Z.ONE.equals(z)) {
           bb.add(Z.ONE);
@@ -150,12 +150,11 @@ public final class GeneralLinearCycleIndex {
 
   private static Z multinomialExt(final int a, final int[] b) {
     Z den = Z.ONE;
-    int s = 0;
+    int s = a;
     for (final int j : b) {
-      s += j;
+      s -= j;
       den = den.multiply(FACTORIAL.factorial(j));
     }
-    s = a - s;
     den = den.multiply(FACTORIAL.factorial(s));
     return FACTORIAL.factorial(a).divide(den);
   }

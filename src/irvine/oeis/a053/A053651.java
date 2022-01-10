@@ -3,8 +3,7 @@ package irvine.oeis.a053;
 import java.util.Map;
 import java.util.TreeSet;
 
-import irvine.math.group.GeneralLinearGroup;
-import irvine.math.group.IntegersMod;
+import irvine.math.group.GeneralLinearCycleIndex;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.z.Z;
@@ -21,8 +20,9 @@ public class A053651 implements Sequence {
 
   @Override
   public Z next() {
-    final GeneralLinearGroup<Z> g = new GeneralLinearGroup<>(++mN, new IntegersMod(2));
-    final CycleIndex ci = g.cycleIndex();
+//    final GeneralLinearGroup<Z> g = new GeneralLinearGroup<>(++mN, new IntegersMod(2));
+//    final CycleIndex ci = g.cycleIndex();
+    final CycleIndex ci = new GeneralLinearCycleIndex().zykelind_glkq(++mN, 2); // todo temp
     final TreeSet<Z> orders = new TreeSet<>();
     for (final MultivariateMonomial m : ci.values()) {
       Z order = Z.ONE;

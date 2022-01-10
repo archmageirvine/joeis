@@ -27,7 +27,7 @@ import irvine.util.io.IOUtils;
  */
 public final class GeneralLinearCycleIndex {
 
-  private GeneralLinearCycleIndex() { }
+//  private GeneralLinearCycleIndex() { }
 
   /**
    * Return the cycle index of <code>GL_n(Z_2)</code>.
@@ -376,7 +376,7 @@ public final class GeneralLinearCycleIndex {
   }
 
 
-  CycleIndex zykelind_glkq(final int k, final int q) {
+  public CycleIndex zykelind_glkq(final int k, final int q) {
     // OP p,null,c,c1,c2,c3,d,hilf,hilf1,zs1,zs2,zs3,zs4,zs5,zs6,v1,v2;
     // long i,j,l;
     //INT erg=OK;
@@ -448,16 +448,16 @@ public final class GeneralLinearCycleIndex {
                     continue;
                   }
                   IntegerPartition.toCountForm(p2, c2);
-                  System.out.println("c2: " + Arrays.toString(c2)); // sai
+                  System.out.println("c2: " + Arrays.toString(c2) + " " + Arrays.toString(p2)); // sai
                   CycleIndex zs5 = CycleIndex.ONE.copy();
                   //m_iindex_monom(0L, zs5);
-                  for (int l = 1; l < c2.length; ++l) {  /*9*/ // I made this 1 rather than 0
-                    if (c2[l] != 0L) {  /*10*/
+                  for (int l = 0; l < p2.length; ++l) {  /*9*/ // I made this 1 rather than 0
+                    if (p2[l] != 0L) {  /*10*/
                       CycleIndex zs6 = CycleIndex.ZERO.copy();
                       zs6.setName("zs6"); // sai temp
-                      final IntegerPartition part3 = new IntegerPartition(c2[l]);
+                      final IntegerPartition part3 = new IntegerPartition(p2[l]);
                       int[] p3;
-                      final int[] c3 = new int[c2[l] + 1];
+                      final int[] c3 = new int[p2[l] + 1];
                       while ((p3 = part3.next()) != null) {
                         IntegerPartition.toCountForm(p3, c3);
                         System.out.println("c3: " + Arrays.toString(c3)); // sai

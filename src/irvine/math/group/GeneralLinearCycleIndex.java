@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.TreeSet;
 
 import irvine.factor.factor.Cheetah;
+import irvine.math.api.Ring;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.partitions.NonnegativeIntegerComposition;
@@ -30,7 +31,7 @@ public final class GeneralLinearCycleIndex {
    * @param args cycle index to print.
    */
   public static void main(final String[] args) {
-    System.out.println(cycleIndex(Integer.parseInt(args[0]), args.length <= 1 ? 2 : Integer.parseInt(args[1])));
+    System.out.println(cycleIndex(Integer.parseInt(args[0]), new GaloisField(args.length <= 1 ? 2 : Integer.parseInt(args[1]))));
   }
 
   // a and b are return values here!
@@ -159,8 +160,9 @@ public final class GeneralLinearCycleIndex {
     return FACTORIAL.factorial(a).divide(den);
   }
 
-  static CycleIndex cycleIndex(final int k, final int q) {
-    final int characteristic = new GaloisField(q).characteristic().intValueExact();
+  static CycleIndex cycleIndex(final int k, final Ring<?> fld) {
+    final int q = fld.size().intValueExact();
+    final int characteristic = fld.characteristic().intValueExact();
     final List<List<Z>> v1 = new ArrayList<>();
     final List<List<Z>> v2 = new ArrayList<>();
     getExponents(k, q, v1, v2); // fills v1 and v2

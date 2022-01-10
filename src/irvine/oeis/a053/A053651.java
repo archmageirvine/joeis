@@ -3,8 +3,9 @@ package irvine.oeis.a053;
 import java.util.Map;
 import java.util.TreeSet;
 
+import irvine.math.api.Ring;
+import irvine.math.group.GaloisField;
 import irvine.math.group.GeneralLinearGroup;
-import irvine.math.group.IntegersMod;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.z.Z;
@@ -18,11 +19,20 @@ import irvine.util.Pair;
 public class A053651 implements Sequence {
 
   private int mN = 0;
+  private final Ring<Z> mFld;
+
+  protected A053651(final GaloisField field) {
+    mFld = field;
+  }
+
+  /** Construct the sequence. */
+  public A053651() {
+    this(new GaloisField(2));
+  }
 
   @Override
   public Z next() {
-    final GeneralLinearGroup<Z> g = new GeneralLinearGroup<>(++mN, new IntegersMod(2));
-    final CycleIndex ci = g.cycleIndex();
+    final CycleIndex ci = new GeneralLinearGroup<>(++mN, mFld).cycleIndex();
     final TreeSet<Z> orders = new TreeSet<>();
     for (final MultivariateMonomial m : ci.values()) {
       Z order = Z.ONE;

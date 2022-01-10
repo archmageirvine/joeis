@@ -10,6 +10,6 @@ public class A247758 extends A053432 {
 
   /** Construct the sequence. */
   public A247758() {
-    super(5, 2, 9, 8, 4, 6, 7, 3, 1, 0);
+    super(2, 9, 8, 4, 5, 6, 7, 3, 1, 0);
   }
 }

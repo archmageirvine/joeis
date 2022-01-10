@@ -17,7 +17,7 @@ import irvine.util.Pair;
  *
  * For the minimum TreeMap entry <code>f(x0,y0) -&gt; (x0, y0)</code>:
  * <ul>
- * <li>determine and store the so-called "stopping element", a minimal element (x1, y1) in the next column <code>y1 = y0 + 1</code> by <code>x1 = - b * (y1 + a) / (2*a)</code> (partial d/dx of the form, rounded)</li>
+ * <li>determine and store the so-called "stopping element", a minimal element <code>(x1, y1)</code> in the next column <code>y1 = y0 + 1</code> by <code>x1 = - b * (y1 + a) / (2*a)</code> (partial <code>d/dx</code> of the form, rounded)</li>
  * <li>extend and store the ranges in all columns <code>yi &lt;= y0</code> up to <code>min/max(xi)</code> such that <code>f(xi, yi) &gt;= f(x1,y1)</code></li>
  * <li>find next minimal element <code>f(x0,y0) -&gt; (x0, y0)</code> and repeat</li>
  * </ul>

@@ -39,7 +39,7 @@ public class CongruenceForm implements Sequence {
   }
 
   /**
-   * Initialze the internal data structure.
+   * Initialize the internal data structure.
    */
   protected void initialize(final int modulus, final int start, final int... residues) {
     mModulus = modulus;

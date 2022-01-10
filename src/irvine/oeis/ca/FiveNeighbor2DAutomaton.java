@@ -356,7 +356,7 @@ public class FiveNeighbor2DAutomaton implements Sequence {
 //    }
 //  }
 //
-//  /**
+//  /*
 //   * Main method for debugging.
 //   * @param args command line arguments:
 //   * <ul>

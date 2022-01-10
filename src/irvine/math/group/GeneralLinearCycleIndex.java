@@ -17,10 +17,12 @@ import irvine.math.z.Euler;
 import irvine.math.z.Z;
 
 /**
- * Cycle index for general linear group over <code>GF2</code> from precomputed data.
+ * Cycle index for general linear group over a finite field.
  * @author Sean A. Irvine
  */
 public final class GeneralLinearCycleIndex {
+
+  // Based in part on C code from the SYMMETRICA V2.0 package.
 
   private GeneralLinearCycleIndex() { }
 
@@ -31,35 +33,6 @@ public final class GeneralLinearCycleIndex {
    */
   public static CycleIndex cycleIndex(final int n) {
     return cycleIndex(n, 2);
-//    if (n < 1) {
-//      throw new IllegalArgumentException();
-//    }
-//    try {
-//      try (final BufferedReader r = IOUtils.reader("irvine/math/group/gl/" + n + ".gz")) {
-//        final String s = r.readLine();
-//        if (s == null) {
-//          throw new UnsupportedOperationException();
-//        }
-//        final int space = s.indexOf(' ');
-//        final Z order = new Z(s.substring(0, space));
-//        final CycleIndex ci = new CycleIndex("GL_" + n + "(Z_2)");
-//        final String[] spec = s.substring(space + 1).split("]");
-//        for (final String t : spec) {
-//          final int leftBracket = t.indexOf('[');
-//          final Z m = new Z(t.substring(0, leftBracket));
-//          final String[] coeffs = t.substring(leftBracket + 1).split(",");
-//          final MultivariateMonomial mm = new MultivariateMonomial();
-//          mm.setCoefficient(new Q(m, order));
-//          for (int k = 0; k < coeffs.length; ++k) {
-//            mm.add(k + 1, Integer.parseInt(coeffs[k]));
-//          }
-//          ci.add(mm);
-//        }
-//        return ci;
-//      }
-//    } catch (final IOException | NullPointerException e) {
-//      throw new UnsupportedOperationException(e);
-//    }
   }
 
   /**
@@ -70,86 +43,36 @@ public final class GeneralLinearCycleIndex {
     System.out.println(cycleIndex(Integer.parseInt(args[0]), args.length <= 1 ? 2 : Integer.parseInt(args[1])));
   }
 
-  // todo a and b are return values here!
-  private static void exponenten_bestimmen(final int d, final int q, List<List<Z>> a, List<List<Z>> b) {
-//    OP hilf,hilfv,dd,c,e,f,g,h,speicher;
-//    OP ax_e;
-//    INT erg=OK;
-//    hilf=callocobject();
-//    hilfv=callocobject();
-//    dd=callocobject();
-//    c=callocobject();
-//    e=callocobject();
-//    f=callocobject();
-//    g=callocobject();
-//    h=callocobject();
-//    speicher=callocobject();
-//    init(BINTREE,speicher);
-    final TreeSet<Z> speicher = new TreeSet<>();
-//    a = new Object[d];
-//    b = new Object[d];
+  // a and b are return values here!
+  private static void getExponents(final int d, final int q, List<List<Z>> a, List<List<Z>> b) {
+    final TreeSet<Z> seen = new TreeSet<>();
     for (int i = 0; i < d; ++i) {
       final long dd = i + 1;
       final List<Z> hilf = new ArrayList<>();
       final List<Z> hilfv = new ArrayList<>();
-      long l = 0L;
-      final Z c = Z.valueOf(q).pow(dd).subtract(1); //hoch(q, dd, c);
-      //dec(c);
+      final Z c = Z.valueOf(q).pow(dd).subtract(1);
       final Z[] e = Cheetah.factor(c).divisors();
-      for (int j = 0; j < e.length; ++j) {
-        if (dd == 1 && Z.ONE.equals(e[j])) {
+      for (final Z z : e) {
+        if (dd == 1 && Z.ONE.equals(z)) {
           hilf.add(Z.ONE);
-          hilfv.add(e[j]);
-//          inc(hilf);
-//          inc(hilfv);
-//          copy(e[j], hilfv[l]);
-//          M_I_I(1L, hilf[l]);
-          l = l + 1L; // tracking length of of list
-          final Z ax_e = e[j];
-          speicher.add(ax_e);
-//          insert(ax_e, speicher, NULL, NULL);
+          hilfv.add(z);
+          seen.add(z);
         } else {
-          //euler_phi(S_V_I(e, j), f);
-          final Z f = Euler.phi(e[j]);
+          final Z f = Euler.phi(z);
           final Z[] qr = f.divideAndRemainder(Z.valueOf(dd));
           final Z g = qr[0];
           final Z h = qr[1];
-          //quores(f, dd, g, h);
           if (h.isZero()) {
-//            ax_e = callocobject();
-//            copy(S_V_I(e, j), ax_e);
-            final Z ax_e = e[j];
-            if (speicher.add(ax_e)) {
-//            if (insert(ax_e, speicher, NULL, NULL) == INSERTOK) {
-              hilfv.add(e[j]);
+            if (seen.add(z)) {
+              hilfv.add(z);
               hilf.add(g);
-//              inc(hilf);
-//              inc(hilfv);
-//              copy(S_V_I(e, j), S_V_I(hilfv, l));
-//              copy(g, S_V_I(hilf, l));
-              ++l;
-              /*printf("Exponent = %d , Vielfachheit = %d\n",s_v_ii(e,j),s_i_i(g));*/
             }
           }
         }
       }
-      /* e=callocobject(); AK 260594 */
       a.add(hilfv);
       b.add(hilf);
-//      copy(hilfv, S_V_I(a, i));
-//      copy(hilf, S_V_I(b, i));
     }
-//    freeall(e);
-//    freeall(hilf);
-//    freeall(hilfv);
-//    freeall(dd);
-//    freeall(c);
-//    freeall(f);
-//    freeall(g);
-//    freeall(h);
-//    freeall(speicher);
-//    if (erg!=OK) error("in computation of exponenten_bestimmen(d,q,a,b)");
-//    return(erg);
   }
 
   /* Berechnet anz nach einer Formel von J.P.Kung als die Anzahl der
@@ -369,34 +292,9 @@ public final class GeneralLinearCycleIndex {
 
 
   static CycleIndex cycleIndex(final int k, final int q) {
-    // OP p,null,c,c1,c2,c3,d,hilf,hilf1,zs1,zs2,zs3,zs4,zs5,zs6,v1,v2;
-    // long i,j,l;
-    //INT erg=OK;
-//    p=callocobject();
-//    c=callocobject();
-//    c1=callocobject();
-//    c2=callocobject();
-//    c3=callocobject();
-//    d=callocobject();
-//    hilf=callocobject();
-//    hilf1=callocobject();
-//    zs1=callocobject();
-//    zs2=callocobject();
-//    zs3=callocobject();
-//    zs4=callocobject();
-//    zs5=callocobject();
-//    zs6=callocobject();
-//    null=callocobject();
-//    v1=callocobject();
-//    v2=callocobject();
-//    final Z p = q.characteristic();
-//    if (p == null) {
-//      throw new UnsupportedOperationException();
-//    }
-    //if (charakteristik_bestimmen(q,p)!=OK) return error("in computation of zykelind_glkq(k,q,ergeb)");
     final List<List<Z>> v1 = new ArrayList<>();
     final List<List<Z>> v2 = new ArrayList<>();
-    exponenten_bestimmen(k, q, v1, v2);
+    getExponents(k, q, v1, v2);
     //final long nullv = 0L;
     //m_scalar_polynom(nullv,ergeb);
     CycleIndex ergeb = CycleIndex.ZERO.copy();
@@ -455,7 +353,7 @@ public final class GeneralLinearCycleIndex {
                         //System.out.println("c3: " + Arrays.toString(c3)); // sai
                         //first_part_EXPONENT(c2[l], c3);
                       //do {  /*11*/
-                        final int characteristic = 2; // todo this should
+                        final int characteristic = q; // todo this should
                         final CycleIndex hilf = zykeltyp_poly_part(d, v1.get(i-1).get(j).intValueExact(), c3, characteristic, q);
                         //System.out.println("ykeltyp_poly_part: " + hilf);
                         //add_apply(hilf, zs6);

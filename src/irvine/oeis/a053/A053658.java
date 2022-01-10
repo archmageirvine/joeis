@@ -12,16 +12,16 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A053651 Number of nonisomorphic cyclic subgroups of general linear group GL(n,2).
+ * A053658.
  * @author Sean A. Irvine
  */
-public class A053651 implements Sequence {
+public class A053658 implements Sequence {
 
   private int mN = 0;
 
   @Override
   public Z next() {
-    final GeneralLinearGroup<Z> g = new GeneralLinearGroup<>(++mN, new IntegersMod(2));
+    final GeneralLinearGroup<Z> g = new GeneralLinearGroup<>(++mN, new IntegersMod(3));
     final CycleIndex ci = g.cycleIndex();
     final TreeSet<Z> orders = new TreeSet<>();
     for (final MultivariateMonomial m : ci.values()) {

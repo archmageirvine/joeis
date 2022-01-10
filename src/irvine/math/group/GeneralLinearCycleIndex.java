@@ -26,15 +26,6 @@ public final class GeneralLinearCycleIndex {
   private GeneralLinearCycleIndex() { }
 
   /**
-   * Return the cycle index of <code>GL_n(Z_2)</code>.
-   * @param n index
-   * @return cycle index
-   */
-  public static CycleIndex cycleIndex(final int n) {
-    return cycleIndex(n, 2);
-  }
-
-  /**
    * Print cycle index.
    * @param args cycle index to print.
    */
@@ -43,7 +34,7 @@ public final class GeneralLinearCycleIndex {
   }
 
   // a and b are return values here!
-  private static void getExponents(final int d, final int q, List<List<Z>> a, List<List<Z>> b) {
+  private static void getExponents(final int d, final int q, final List<List<Z>> a, final List<List<Z>> b) {
     final TreeSet<Z> seen = new TreeSet<>();
     for (int i = 0; i < d; ++i) {
       final long dd = i + 1;
@@ -91,7 +82,7 @@ public final class GeneralLinearCycleIndex {
       for (int j = i; j < lambda.length; ++j) {
         mu += lambda[j];
       }
-      Z qp = Z.valueOf(q).pow(d * mu);
+      final Z qp = Z.valueOf(q).pow(d * mu);
       for (int j = 1; j <= lambda[i]; ++j) {
         anz = anz.multiply(qp.subtract(Z.valueOf(q).pow((mu - j) * d)));
       }
@@ -139,7 +130,7 @@ public final class GeneralLinearCycleIndex {
     matrix is determined by the partition mu, p is the characteristic
     of the body, q its order.
    */
-  private static CycleIndex zykeltyp_poly_part(final int d, final int exp, final int[] mu, final int p, final int q) {
+  private static CycleIndex cycleTypePolyPart(final int d, final int exp, final int[] mu, final int p, final int q) {
     //System.out.println("zykeltyp_poly_part(" + d + " " + exp + " " + Arrays.toString(mu) + " " + p + " " + q + ")");
     CycleIndex res = CycleIndex.ONE.copy();
     res.setName("");
@@ -173,8 +164,7 @@ public final class GeneralLinearCycleIndex {
     final List<List<Z>> v1 = new ArrayList<>();
     final List<List<Z>> v2 = new ArrayList<>();
     getExponents(k, q, v1, v2); // fills v1 and v2
-    CycleIndex res = CycleIndex.ZERO.copy();
-    res.setName("GL(" + k + "," + q + ")");
+    final CycleIndex res = new CycleIndex("GL(" + k + "," + q + ")");
 
     final int[] c = new int[k + 1];
     final IntegerPartition part = new IntegerPartition(k);
@@ -185,16 +175,16 @@ public final class GeneralLinearCycleIndex {
       for (int i = 1; i < c.length; ++i) {  /*3*/
         //System.out.printf("Doing c[%d]=%d%n", i-1, c[i]); //sai
         if (c[i] > 0) {  /*4*/
-          CycleIndex zs2 = CycleIndex.ZERO.copy();
+          final CycleIndex zs2 = new CycleIndex("");
           //System.out.println(c[i] + " into " + v1.get(i-1).size() + " parts"); // sai
-          final NonnegativeIntegerComposition comp = new NonnegativeIntegerComposition(c[i], v1.get(i-1).size());
+          final NonnegativeIntegerComposition comp = new NonnegativeIntegerComposition(c[i], v1.get(i - 1).size());
           int[] c1;
           while ((c1 = comp.next()) != null) {
             //System.out.println("c1: " + Arrays.toString(c1)); // sai
             CycleIndex zs3 = CycleIndex.ONE.copy();
             for (int j = 0; j < c1.length; ++j) { /*6*/
               if (c1[j] != 0) { /*7*/
-                CycleIndex zs4 = CycleIndex.ZERO.copy();
+                final CycleIndex zs4 = new CycleIndex("");
                 final int pc2k = v2.get(i - 1).get(j).intValueExact();
                 // We want to partition c1[j] into at most pc2k parts.
                 // todo be better to have a proper class for this
@@ -219,13 +209,13 @@ public final class GeneralLinearCycleIndex {
                       while ((p3 = part3.next()) != null) {
                         IntegerPartition.toCountForm(p3, c3);
                         //System.out.println("c3: " + Arrays.toString(c3)); // sai
-                        zs6.add(zykeltyp_poly_part(i, v1.get(i - 1).get(j).intValueExact(), c3, characteristic, q));
+                        zs6.add(cycleTypePolyPart(i, v1.get(i - 1).get(j).intValueExact(), c3, characteristic, q));
                       }
                       //System.out.println("zs6: " + zs6); //sai
                       zs5 = zs5.op(HararyMultiply.OP, zs6);
                     }  /*10*/
                   }  /*9*/
-                  zs5.multiply(new Q(multinomialExt(v2.get(i-1).get(j).intValueExact(), c2)));
+                  zs5.multiply(new Q(multinomialExt(v2.get(i - 1).get(j).intValueExact(), c2)));
                   zs4.add(zs5);
                 }
                 //System.out.println("zs4: " + zs4); // sai

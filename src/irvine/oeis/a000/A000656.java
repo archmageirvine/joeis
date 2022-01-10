@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.math.group.GeneralLinearCycleIndex;
+import irvine.math.group.GaloisField;
+import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
@@ -15,7 +16,7 @@ public class A000656 extends A000654 {
   @Override
   public Z next() {
     final CycleIndex domain = mDomain.f(++mN);
-    final CycleIndex range = GeneralLinearCycleIndex.cycleIndex(mN);
+    final CycleIndex range = new GeneralLinearGroup<>(mN, new GaloisField(2)).cycleIndex();
     return domain.invertible(range);
   }
 }

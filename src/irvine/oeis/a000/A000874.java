@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.math.group.GeneralLinearCycleIndex;
+import irvine.math.group.GaloisField;
+import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
@@ -10,7 +11,7 @@ import irvine.math.z.Z;
  */
 public class A000874 extends A000721 {
 
-  private static final CycleIndex ZGL2 = GeneralLinearCycleIndex.cycleIndex(2);
+  private static final CycleIndex ZGL2 = new GeneralLinearGroup<>(2, new GaloisField(2)).cycleIndex();
 
   @Override
   public Z next() {

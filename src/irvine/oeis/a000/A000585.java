@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.math.group.GeneralLinearCycleIndex;
+import irvine.math.group.GaloisField;
+import irvine.math.group.GeneralLinearGroup;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -14,7 +15,6 @@ public class A000585 implements Sequence {
 
   @Override
   public Z next() {
-    return GeneralLinearCycleIndex.cycleIndex(++mN).apply(1).toZ();
+    return new GeneralLinearGroup<>(++mN, new GaloisField(2)).cycleIndex().apply(1).toZ();
   }
-
 }

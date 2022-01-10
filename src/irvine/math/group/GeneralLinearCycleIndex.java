@@ -1,9 +1,6 @@
 package irvine.math.group;
 
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -15,11 +12,9 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.MultivariateMonomialOperation;
-import irvine.math.polynomial.StandardMultiply;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.util.io.IOUtils;
 
 /**
  * Cycle index for general linear group over <code>GF2</code> from precomputed data.
@@ -27,7 +22,7 @@ import irvine.util.io.IOUtils;
  */
 public final class GeneralLinearCycleIndex {
 
-//  private GeneralLinearCycleIndex() { }
+  private GeneralLinearCycleIndex() { }
 
   /**
    * Return the cycle index of <code>GL_n(Z_2)</code>.
@@ -35,49 +30,48 @@ public final class GeneralLinearCycleIndex {
    * @return cycle index
    */
   public static CycleIndex cycleIndex(final int n) {
-    if (n < 1) {
-      throw new IllegalArgumentException();
-    }
-    try {
-      try (final BufferedReader r = IOUtils.reader("irvine/math/group/gl/" + n + ".gz")) {
-        final String s = r.readLine();
-        if (s == null) {
-          throw new UnsupportedOperationException();
-        }
-        final int space = s.indexOf(' ');
-        final Z order = new Z(s.substring(0, space));
-        final CycleIndex ci = new CycleIndex("GL_" + n + "(Z_2)");
-        final String[] spec = s.substring(space + 1).split("]");
-        for (final String t : spec) {
-          final int leftBracket = t.indexOf('[');
-          final Z m = new Z(t.substring(0, leftBracket));
-          final String[] coeffs = t.substring(leftBracket + 1).split(",");
-          final MultivariateMonomial mm = new MultivariateMonomial();
-          mm.setCoefficient(new Q(m, order));
-          for (int k = 0; k < coeffs.length; ++k) {
-            mm.add(k + 1, Integer.parseInt(coeffs[k]));
-          }
-          ci.add(mm);
-        }
-        return ci;
-      }
-    } catch (final IOException | NullPointerException e) {
-      throw new UnsupportedOperationException(e);
-    }
+    return cycleIndex(n, 2);
+//    if (n < 1) {
+//      throw new IllegalArgumentException();
+//    }
+//    try {
+//      try (final BufferedReader r = IOUtils.reader("irvine/math/group/gl/" + n + ".gz")) {
+//        final String s = r.readLine();
+//        if (s == null) {
+//          throw new UnsupportedOperationException();
+//        }
+//        final int space = s.indexOf(' ');
+//        final Z order = new Z(s.substring(0, space));
+//        final CycleIndex ci = new CycleIndex("GL_" + n + "(Z_2)");
+//        final String[] spec = s.substring(space + 1).split("]");
+//        for (final String t : spec) {
+//          final int leftBracket = t.indexOf('[');
+//          final Z m = new Z(t.substring(0, leftBracket));
+//          final String[] coeffs = t.substring(leftBracket + 1).split(",");
+//          final MultivariateMonomial mm = new MultivariateMonomial();
+//          mm.setCoefficient(new Q(m, order));
+//          for (int k = 0; k < coeffs.length; ++k) {
+//            mm.add(k + 1, Integer.parseInt(coeffs[k]));
+//          }
+//          ci.add(mm);
+//        }
+//        return ci;
+//      }
+//    } catch (final IOException | NullPointerException e) {
+//      throw new UnsupportedOperationException(e);
+//    }
   }
 
   /**
    * Print cycle index.
-   *
    * @param args cycle index to print.
    */
   public static void main(final String[] args) {
-    System.out.println(new GeneralLinearCycleIndex().zykelind_glkq(5, 2));
-    //System.out.println(cycleIndex(Integer.parseInt(args[0])));
+    System.out.println(cycleIndex(Integer.parseInt(args[0]), args.length <= 1 ? 2 : Integer.parseInt(args[1])));
   }
 
   // todo a and b are return values here!
-  private void exponenten_bestimmen(final int d, final int q, List<List<Z>> a, List<List<Z>> b) {
+  private static void exponenten_bestimmen(final int d, final int q, List<List<Z>> a, List<List<Z>> b) {
 //    OP hilf,hilfv,dd,c,e,f,g,h,speicher;
 //    OP ax_e;
 //    INT erg=OK;
@@ -166,7 +160,7 @@ public final class GeneralLinearCycleIndex {
   ist die hoechste Potenz von p, die das charakteristische Polynom einer
   Matrix teilt, von der D(p,lambda) ein Block ist), q die Maechtigkeit
   des Koerpers und anz das Ergebnis.  */
-  Z kung_formel(final int d, final int[] lambda, final int q) { //OP d,lambda,q,anz;
+  private static Z kung_formel(final int d, final int[] lambda, final int q) { //OP d,lambda,q,anz;
 //    INT i,j;
 //    INT erg=OK;
 //    OP hilf,hilf1,hilf2,mu;
@@ -218,7 +212,7 @@ public final class GeneralLinearCycleIndex {
   irreduziblen normierten Polynom vom Grad d mit Exponenten exp, ueber
   einem Koerper von Charakteristik p und Maechtigkeit q. Das Ergebnis ist
   ergeb*/
-  CycleIndex zykeltyp_hyperbegleitmatrix_poly(final int d, final int exp, final int i, final int p, final int q) {
+  private static CycleIndex zykeltyp_hyperbegleitmatrix_poly(final int d, final int exp, final int i, final int p, final int q) {
 //    OP e,hilf,hilf1,hilf2,hilfpoly;
 //    INT j,k;
 //    INT erg=OK;
@@ -276,11 +270,9 @@ public final class GeneralLinearCycleIndex {
     return new CycleIndex("hb", mm);
   }
 
-  //private static final CycleIndex Z1 = new CycleIndex("Z1", MultivariateMonomial.create(1, 1));
-  private static final CycleIndex EMPTY = CycleIndex.ZERO.copy();
   private static final MultivariateMonomialOperation OP = HararyMultiply.OP;
 
-  private CycleIndex z1(final String name) {
+  private static CycleIndex z1(final String name) {
     return new CycleIndex(name, MultivariateMonomial.create(1, 1));
   }
 
@@ -290,8 +282,8 @@ public final class GeneralLinearCycleIndex {
   Matrix wird durch die Prtition mu festgelegt, p ist die Charakteristik
   des Koerpers, q dessen Maechtigkeit, und ergeb ist der berechnete
   Zykeltyp.  */
-  CycleIndex zykeltyp_poly_part(int d, int exp, int[] mu, int p,int q) {
-    System.out.println("zykeltyp_poly_part(" + d + " " + exp + " " + Arrays.toString(mu) + " " + p + " " + q + ")"); // sai
+  private static CycleIndex zykeltyp_poly_part(int d, int exp, int[] mu, int p,int q) {
+    //System.out.println("zykeltyp_poly_part(" + d + " " + exp + " " + Arrays.toString(mu) + " " + p + " " + q + ")"); // sai
     CycleIndex ergeb = CycleIndex.ONE.copy();
     ergeb.setName("");
 //    INT i;
@@ -303,16 +295,16 @@ public final class GeneralLinearCycleIndex {
     for (int i = 1; i < mu.length; ++i) {
       if (mu[i] != 0) {
         final CycleIndex hilf = zykeltyp_hyperbegleitmatrix_poly(d, exp, i, p, q);
-        System.out.println("hyperbegle: " + hilf);
+        //System.out.println("hyperbegle: " + hilf);
         //zykelind_hoch_dir_prod(hilf, mu[i], hilf1);
-        final CycleIndex hilf1 = hilf.pow(StandardMultiply.OP, mu[i], Integer.MAX_VALUE);
+        final CycleIndex hilf1 = hilf.pow(OP, mu[i], Integer.MAX_VALUE);
         //zykelind_dir_prod_apply(hilf1, ergeb);
         //ergeb = ergeb.op(OP, hilf1);
-        ergeb = ergeb.op(StandardMultiply.OP, hilf1);
+        ergeb = ergeb.op(OP, hilf1);
       }
     }
     final Z hilf = kung_formel(d, mu, q);
-    System.out.println("Kung=" + hilf); // sai
+    //System.out.println("Kung=" + hilf); // sai
     //invers_apply(hilf);
     final Q hilf1 = new Q(Z.ONE, hilf);
     //m_scalar_polynom(hilf, hilf1);
@@ -324,12 +316,12 @@ public final class GeneralLinearCycleIndex {
     return ergeb;
   }
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
 
   /* a ist ein INTEGER objekt.  b ist ein VECTOR objekt. Die Komponenten
   von b sind wieder INTEGER objekte (groesser oder gleich 0). Das Ergebnis
   c ist die Anzahl der moeglichen Anordnungen der Elemente von b. */
-  Z fmultinom_ext(final int a,final int[] b) {
+  private static Z fmultinom_ext(final int a,final int[] b) {
 //    INT i;
 //    OP hilfoben,hilfunten,hilf,hilf1,part;
 //    INT erg=OK;
@@ -344,7 +336,7 @@ public final class GeneralLinearCycleIndex {
 //    part=callocobject();
     final int[] part = b;
     //t_VECTOR_EXPONENT(part, part); // todo to count form?
-    Z hilfoben = mF.factorial(a);
+    Z hilfoben = FACTORIAL.factorial(a);
     //fakul(a,hilfoben);
     Z hilfunten = Z.ONE;
     int hilf1 = 0;
@@ -353,7 +345,7 @@ public final class GeneralLinearCycleIndex {
     for (int i = 0; i < part.length; ++i) {
       hilf1 += part[i];
       //add_apply(S_PA_I(part, i), hilf1);
-      final Z hilf = mF.factorial(part[i]);
+      final Z hilf = FACTORIAL.factorial(part[i]);
       //fakul(S_PA_I(part, i), hilf);
       //mult_apply(hilf, hilfunten);
       hilfunten = hilfunten.multiply(hilf);
@@ -361,7 +353,7 @@ public final class GeneralLinearCycleIndex {
     hilf1 = a - hilf1;
     //sub(a, hilf1, hilf1);
     //fakul(hilf1, hilf);
-    final Z hilf = mF.factorial(hilf1);
+    final Z hilf = FACTORIAL.factorial(hilf1);
     //mult_apply(hilf, hilfunten);
     hilfunten = hilfunten.multiply(hilf);
     final Z c = hilfoben.divide(hilfunten);
@@ -376,7 +368,7 @@ public final class GeneralLinearCycleIndex {
   }
 
 
-  public CycleIndex zykelind_glkq(final int k, final int q) {
+  static CycleIndex cycleIndex(final int k, final int q) {
     // OP p,null,c,c1,c2,c3,d,hilf,hilf1,zs1,zs2,zs3,zs4,zs5,zs6,v1,v2;
     // long i,j,l;
     //INT erg=OK;
@@ -419,16 +411,16 @@ public final class GeneralLinearCycleIndex {
       //zs1.setName("zs1");
       //m_iindex_monom(0L, zs1);
       for (int i = 1; i < c.length; ++i) {  /*3*/
-        System.out.printf("Doing c[%d]=%d%n", i-1, c[i]); //sai
+        //System.out.printf("Doing c[%d]=%d%n", i-1, c[i]); //sai
         if (c[i] > 0) {  /*4*/
           final int d = i; //   M_I_I(i+1L,d); // I already adjusted i by 1
           CycleIndex zs2 = CycleIndex.ZERO.copy();
           //m_scalar_polynom(nullv, zs2);
-          System.out.println(c[i] + " into " + v1.get(i-1).size() + " parts"); // sai
+          //System.out.println(c[i] + " into " + v1.get(i-1).size() + " parts"); // sai
           final NonnegativeIntegerComposition comp = new NonnegativeIntegerComposition(c[i], v1.get(i-1).size());
           int[] c1;
           while ((c1 = comp.next()) != null) {
-            System.out.println("c1: " + Arrays.toString(c1)); // sai
+            //System.out.println("c1: " + Arrays.toString(c1)); // sai
             CycleIndex zs3 = CycleIndex.ONE.copy();
             //m_iindex_monom(0L, zs3);
             for (int j = 0; j < c1.length; ++j) { /*6*/
@@ -438,7 +430,7 @@ public final class GeneralLinearCycleIndex {
                 // todo be better to have a proper class for this
                 //first_part_into_atmost_k_parts(c1[j], v2.get(i - 1).get(j), c2);
                 final int pc2k = v2.get(i - 1).get(j).intValueExact();
-                System.out.println("c1: Starting integer partitions of " + c1[j] + " " + pc2k);
+                //System.out.println("c1: Starting integer partitions of " + c1[j] + " " + pc2k);
                 final IntegerPartition pc2 = new IntegerPartition(c1[j]);
                 //final int[] c2 = new int[pc2k + 1];
                 final int[] c2 = new int[c1[j] + 1]; // todo can I use this instead?
@@ -448,7 +440,7 @@ public final class GeneralLinearCycleIndex {
                     continue;
                   }
                   IntegerPartition.toCountForm(p2, c2);
-                  System.out.println("c2: " + Arrays.toString(c2) + " " + Arrays.toString(p2)); // sai
+                  //System.out.println("c2: " + Arrays.toString(c2) + " " + Arrays.toString(p2)); // sai
                   CycleIndex zs5 = CycleIndex.ONE.copy();
                   //m_iindex_monom(0L, zs5);
                   for (int l = 0; l < p2.length; ++l) {  /*9*/ // I made this 1 rather than 0
@@ -460,16 +452,16 @@ public final class GeneralLinearCycleIndex {
                       final int[] c3 = new int[p2[l] + 1];
                       while ((p3 = part3.next()) != null) {
                         IntegerPartition.toCountForm(p3, c3);
-                        System.out.println("c3: " + Arrays.toString(c3)); // sai
+                        //System.out.println("c3: " + Arrays.toString(c3)); // sai
                         //first_part_EXPONENT(c2[l], c3);
                       //do {  /*11*/
                         final int characteristic = 2; // todo this should
                         final CycleIndex hilf = zykeltyp_poly_part(d, v1.get(i-1).get(j).intValueExact(), c3, characteristic, q);
-                        System.out.println("ykeltyp_poly_part: " + hilf);
+                        //System.out.println("ykeltyp_poly_part: " + hilf);
                         //add_apply(hilf, zs6);
                         zs6.add(hilf);
                       } //while (next(c3, c3)); /*11*/
-                      System.out.println("zs6: " + zs6); //sai
+                      //System.out.println("zs6: " + zs6); //sai
                       zs5 = zs5.op(OP, zs6);
                       //zykelind_dir_prod_apply(zs6, zs5);
                     }  /*10*/
@@ -479,35 +471,35 @@ public final class GeneralLinearCycleIndex {
                   final Z hilf = fmultinom_ext(v2.get(i-1).get(j).intValueExact(), c2);
                   //final Z hilf = Binomial.multinomial(v2.get(i-1).get(j).intValueExact(), c2);
                   //final Z hilf = Binomial.multinomial(v2.get(i-1).get(j).intValueExact(), p2);
-                  System.out.println("multinomial " + v2.get(i-1).get(j).intValueExact() + "; " + Arrays.toString(c2) + " = " + hilf); // sai
+                  //System.out.println("multinomial " + v2.get(i-1).get(j).intValueExact() + "; " + Arrays.toString(c2) + " = " + hilf); // sai
 //                  m_scalar_polynom(hilf, hilf1);
 //                  mult_apply(hilf1, zs5);
                   zs5.multiply(new Q(hilf));
                   //add_apply(zs5, zs4);
                   zs4.add(zs5);
-                  System.out.println("zs5: " + zs5); // sai
+                  //System.out.println("zs5: " + zs5); // sai
                   //l = next_part_into_atmost_k_parts(c2);
                 } //while (l == 1L); /*8*/
-                System.out.println("zs4: " + zs4); // sai
+                //System.out.println("zs4: " + zs4); // sai
                 zs3 = zs3.op(OP, zs4);
                 //zykelind_dir_prod_apply(zs4, zs3);
               }  /*7*/
             }  /*6*/
             //add_apply(zs3, zs2);
-            System.out.println("zs3: " + zs3); // sai
+            //System.out.println("zs3: " + zs3); // sai
             zs2.add(zs3);
             //j = next_unordered_part_into_atmost_k_parts(c1);
           } //while (j == 1L); /*5*/
-          System.out.println("zs2: " + zs2); // sai
+          //System.out.println("zs2: " + zs2); // sai
           zs1 = zs1.op(OP, zs2);
           //zykelind_dir_prod_apply(zs2, zs1);
         }  /*4*/
       }  /*3*/
       //add_apply(zs1, ergeb);
       ergeb.add(zs1);
-      System.out.println("c=" + Arrays.toString(c)); // sai
-      System.out.println("zs1: " + zs1);
-      System.out.println(ergeb);
+      //System.out.println("c=" + Arrays.toString(c)); // sai
+      //System.out.println("zs1: " + zs1);
+      //System.out.println(ergeb);
     }
 //    freeall(p);
 //    freeall(c); 

@@ -145,7 +145,6 @@ public class GeneralLinearGroup<E> extends AbstractGroup<Matrix<E>> {
 
   @Override
   public CycleIndex cycleIndex() {
-    // NOTE: This is actually only correct for GL(n,GF2)
-    return GeneralLinearCycleIndex.cycleIndex(mSize);
+    return GeneralLinearCycleIndex.cycleIndex(mSize, mElementRing.size().intValueExact());
   }
 }

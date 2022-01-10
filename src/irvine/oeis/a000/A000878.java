@@ -1,6 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.math.group.GeneralLinearCycleIndex;
+import irvine.math.group.GaloisField;
+import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -11,12 +12,13 @@ import irvine.oeis.Sequence;
  */
 public class A000878 implements Sequence {
 
-  private static final CycleIndex ZGL3 = GeneralLinearCycleIndex.cycleIndex(3);
+  private static final CycleIndex ZGL3 = new GeneralLinearGroup<>(3, new GaloisField(2)).cycleIndex();
 
   private int mN = 0;
 
   @Override
   public Z next() {
-    return GeneralLinearCycleIndex.cycleIndex(++mN).deBruijn(ZGL3);
+    final int n = ++mN;
+    return new GeneralLinearGroup<>(n, new GaloisField(2)).cycleIndex().deBruijn(ZGL3);
   }
 }

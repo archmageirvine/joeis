@@ -3,18 +3,20 @@ package irvine.math.group;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.TreeSet;
 
 import irvine.factor.factor.Cheetah;
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.partitions.NonnegativeIntegerComposition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.MultivariateMonomialOperation;
+import irvine.math.polynomial.StandardMultiply;
 import irvine.math.q.Q;
-import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
@@ -182,7 +184,8 @@ public final class GeneralLinearCycleIndex {
 //    M_I_I(1L, anz);
     long mu = 0;
     Z anz = Z.ONE;
-    for (int i = 0; i < lambda.length; ++i) { // todo possibly should start at 1
+    // note entry 0 of lambda is not used!
+    for (int i = 1; i < lambda.length; ++i) { // todo possibly should start at 1
       for (int j = i; j < lambda.length; ++j) {
         mu += lambda[j];
         //add_apply(lambda[j], mu);
@@ -215,7 +218,7 @@ public final class GeneralLinearCycleIndex {
   irreduziblen normierten Polynom vom Grad d mit Exponenten exp, ueber
   einem Koerper von Charakteristik p und Maechtigkeit q. Das Ergebnis ist
   ergeb*/
-  CycleIndex zykeltyp_hyperbegleitmatrix_poly(final int d, final int exp, final int i, final int p, final int q) { //OP d,exp,p,q,ergeb; INT i;
+  CycleIndex zykeltyp_hyperbegleitmatrix_poly(final int d, final int exp, final int i, final int p, final int q) {
 //    OP e,hilf,hilf1,hilf2,hilfpoly;
 //    INT j,k;
 //    INT erg=OK;
@@ -238,7 +241,8 @@ public final class GeneralLinearCycleIndex {
         //mult_apply(p, S_V_I(e, j));
       }
     }
-    CycleIndex ergeb = Z1; //CycleIndex.ONE;
+    MultivariateMonomial mm = MultivariateMonomial.create(1, Z.ONE);
+   // CycleIndex ergeb = z1("hb"); //CycleIndex.ONE.copy();
     //m_iindex_monom(0L, ergeb);
     Z hilf = Z.valueOf(q).pow(d);
     //hoch(q, d, hilf);
@@ -250,8 +254,8 @@ public final class GeneralLinearCycleIndex {
 //    m_iindex_iexponent_monom(exp - 1, hilf2.intValueExact(), hilfpoly); /* HF130696 */
 //    mult_apply(hilfpoly, ergeb);
     //MultivariateMonomial hilfpoly = MultivariateMonomial.create(exp -1, hilf2);
-    MultivariateMonomial hilfpoly = MultivariateMonomial.create(exp, hilf2);
-    ergeb.add(hilfpoly);
+   // MultivariateMonomial hilfpoly = MultivariateMonomial.create(exp, hilf2);
+    mm.add(exp, hilf2);
     for (int j = 1; j < i; ++j) {
       //mult_apply(hilf, hilf1);
       hilf1 = hilf1.multiply(hilf);
@@ -260,8 +264,8 @@ public final class GeneralLinearCycleIndex {
 //      m_iindex_iexponent_monom(e[j] - 1, hilf2.intValueExact(), hilfpoly); /* HF130696 */
 //      mult_apply(hilfpoly, ergeb);
       //hilfpoly = MultivariateMonomial.create(e[j] -1, hilf2);
-      hilfpoly = MultivariateMonomial.create(e[j], hilf2);
-      ergeb.add(hilfpoly);
+      //hilfpoly = MultivariateMonomial.create(e[j], hilf2);
+      mm.add(e[j], hilf2);
     }
 //    freeall(e);
 //    freeall(hilf);
@@ -269,13 +273,16 @@ public final class GeneralLinearCycleIndex {
 //    freeall(hilf2);
 //    freeall(hilfpoly);
 //    if (erg != OK) error("in computation of zykeltyp_hyperbegleitmatrix_poly(d,exp,i,p,q,ergeb) ");
-    return ergeb;
+    return new CycleIndex("hb", mm);
   }
 
   //private static final CycleIndex Z1 = new CycleIndex("Z1", MultivariateMonomial.create(1, 1));
-  private static final CycleIndex Z1 = CycleIndex.ZERO.copy();
+  private static final CycleIndex EMPTY = CycleIndex.ZERO.copy();
   private static final MultivariateMonomialOperation OP = HararyMultiply.OP;
 
+  private CycleIndex z1(final String name) {
+    return new CycleIndex(name, MultivariateMonomial.create(1, 1));
+  }
 
   /* Berechnet den Zykeltyp einer Blockdiagonalmatrix besthend aus
   Begleit und Hyperbegleitmatrizen eines irreduziblen normierten Polynoms
@@ -284,24 +291,28 @@ public final class GeneralLinearCycleIndex {
   des Koerpers, q dessen Maechtigkeit, und ergeb ist der berechnete
   Zykeltyp.  */
   CycleIndex zykeltyp_poly_part(int d, int exp, int[] mu, int p,int q) {
-    CycleIndex ergeb = Z1; //CycleIndex.ONE;
+    System.out.println("zykeltyp_poly_part(" + d + " " + exp + " " + Arrays.toString(mu) + " " + p + " " + q + ")"); // sai
+    CycleIndex ergeb = CycleIndex.ONE.copy();
+    ergeb.setName("");
 //    INT i;
 //    INT erg=OK;
 //    OP hilf,hilf1;
 //    hilf=callocobject();
 //    hilf1=callocobject();
 //    m_iindex_monom(0L,ergeb);
-    for (int i = 0; i < mu.length; ++i) {
+    for (int i = 1; i < mu.length; ++i) {
       if (mu[i] != 0) {
-        final CycleIndex hilf = zykeltyp_hyperbegleitmatrix_poly(d, exp, i + 1, p, q);
+        final CycleIndex hilf = zykeltyp_hyperbegleitmatrix_poly(d, exp, i, p, q);
+        System.out.println("hyperbegle: " + hilf);
         //zykelind_hoch_dir_prod(hilf, mu[i], hilf1);
-        final CycleIndex hilf1 = hilf.pow(OP, mu[i], Integer.MAX_VALUE);
+        final CycleIndex hilf1 = hilf.pow(StandardMultiply.OP, mu[i], Integer.MAX_VALUE);
         //zykelind_dir_prod_apply(hilf1, ergeb);
-        //System.out.println("hilf1=" + hilf1);
-        ergeb = ergeb.op(OP, hilf1);
+        //ergeb = ergeb.op(OP, hilf1);
+        ergeb = ergeb.op(StandardMultiply.OP, hilf1);
       }
     }
     final Z hilf = kung_formel(d, mu, q);
+    System.out.println("Kung=" + hilf); // sai
     //invers_apply(hilf);
     final Q hilf1 = new Q(Z.ONE, hilf);
     //m_scalar_polynom(hilf, hilf1);
@@ -311,6 +322,57 @@ public final class GeneralLinearCycleIndex {
 //    freeall(hilf1);
     //if (erg != OK) error("in computation of zykeltyp_poly_part(d,exp,mu,p,q,ergeb) ");
     return ergeb;
+  }
+
+  private final MemoryFactorial mF = new MemoryFactorial();
+
+  /* a ist ein INTEGER objekt.  b ist ein VECTOR objekt. Die Komponenten
+  von b sind wieder INTEGER objekte (groesser oder gleich 0). Das Ergebnis
+  c ist die Anzahl der moeglichen Anordnungen der Elemente von b. */
+  Z fmultinom_ext(final int a,final int[] b) {
+//    INT i;
+//    OP hilfoben,hilfunten,hilf,hilf1,part;
+//    INT erg=OK;
+//    CTO(INTEGER,"fmultinom_ext",a);
+//    CTTO(INTEGERVECTOR,VECTOR,"fmultinom_ext",b);
+//
+//
+//    hilfoben=callocobject();
+//    hilfunten=callocobject();
+//    hilf=callocobject();
+//    hilf1=callocobject();
+//    part=callocobject();
+    final int[] part = b;
+    //t_VECTOR_EXPONENT(part, part); // todo to count form?
+    Z hilfoben = mF.factorial(a);
+    //fakul(a,hilfoben);
+    Z hilfunten = Z.ONE;
+    int hilf1 = 0;
+//    M_I_I(1L, hilfunten);
+//    M_I_I(0L, hilf1);
+    for (int i = 0; i < part.length; ++i) {
+      hilf1 += part[i];
+      //add_apply(S_PA_I(part, i), hilf1);
+      final Z hilf = mF.factorial(part[i]);
+      //fakul(S_PA_I(part, i), hilf);
+      //mult_apply(hilf, hilfunten);
+      hilfunten = hilfunten.multiply(hilf);
+    }
+    hilf1 = a - hilf1;
+    //sub(a, hilf1, hilf1);
+    //fakul(hilf1, hilf);
+    final Z hilf = mF.factorial(hilf1);
+    //mult_apply(hilf, hilfunten);
+    hilfunten = hilfunten.multiply(hilf);
+    final Z c = hilfoben.divide(hilfunten);
+    //div(hilfoben, hilfunten, c);
+//    freeall(hilfoben);
+//    freeall(hilfunten);
+//    freeall(hilf);
+//    freeall(hilf1);
+//    freeall(part);
+//    ENDR("internal func fmultinom_ext");
+    return c;
   }
 
 
@@ -345,85 +407,106 @@ public final class GeneralLinearCycleIndex {
     exponenten_bestimmen(k, q, v1, v2);
     //final long nullv = 0L;
     //m_scalar_polynom(nullv,ergeb);
-    CycleIndex ergeb = new CycleIndex();
+    CycleIndex ergeb = CycleIndex.ZERO.copy();
+    ergeb.setName("Z"); // todo temp
 
     final int[] c = new int[k + 1];
     final IntegerPartition part = new IntegerPartition(k);
     int[] p;
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, c);
-      CycleIndex zs1 = Z1; //CycleIndex.ONE;
+      CycleIndex zs1 = z1("zs1"); //CycleIndex.ONE.copy();
+      //zs1.setName("zs1");
       //m_iindex_monom(0L, zs1);
       for (int i = 1; i < c.length; ++i) {  /*3*/
+        System.out.printf("Doing c[%d]=%d%n", i-1, c[i]); //sai
         if (c[i] > 0) {  /*4*/
           final int d = i; //   M_I_I(i+1L,d); // I already adjusted i by 1
-          CycleIndex zs2 = CycleIndex.ZERO;
+          CycleIndex zs2 = CycleIndex.ZERO.copy();
           //m_scalar_polynom(nullv, zs2);
+          System.out.println(c[i] + " into " + v1.get(i-1).size() + " parts"); // sai
           final NonnegativeIntegerComposition comp = new NonnegativeIntegerComposition(c[i], v1.get(i-1).size());
           int[] c1;
           while ((c1 = comp.next()) != null) {
-            CycleIndex zs3 = Z1; //CycleIndex.ONE;
+            System.out.println("c1: " + Arrays.toString(c1)); // sai
+            CycleIndex zs3 = CycleIndex.ONE.copy();
             //m_iindex_monom(0L, zs3);
             for (int j = 0; j < c1.length; ++j) { /*6*/
               if (c1[j] != 0L) { /*7*/
-                CycleIndex zs4 = CycleIndex.ZERO;
+                CycleIndex zs4 = CycleIndex.ZERO.copy();
                 //m_scalar_polynom(null, zs4);
                 // todo be better to have a proper class for this
                 //first_part_into_atmost_k_parts(c1[j], v2.get(i - 1).get(j), c2);
                 final int pc2k = v2.get(i - 1).get(j).intValueExact();
+                System.out.println("c1: Starting integer partitions of " + c1[j] + " " + pc2k);
                 final IntegerPartition pc2 = new IntegerPartition(c1[j]);
-                final int[] c2 = new int[c1[j] + 1];
+                //final int[] c2 = new int[pc2k + 1];
+                final int[] c2 = new int[c1[j] + 1]; // todo can I use this instead?
                 int[] p2; // todo should this c2 be in count form?
                 while ((p2 = pc2.next()) != null) {
                   if (p2.length > pc2k) {
                     continue;
                   }
                   IntegerPartition.toCountForm(p2, c2);
-                  CycleIndex zs5 = Z1; //CycleIndex.ONE; //MultivariateMonomial.create(1, 1);
+                  System.out.println("c2: " + Arrays.toString(c2)); // sai
+                  CycleIndex zs5 = CycleIndex.ONE.copy();
                   //m_iindex_monom(0L, zs5);
                   for (int l = 1; l < c2.length; ++l) {  /*9*/ // I made this 1 rather than 0
                     if (c2[l] != 0L) {  /*10*/
-                      CycleIndex zs6 = CycleIndex.ZERO;
+                      CycleIndex zs6 = CycleIndex.ZERO.copy();
+                      zs6.setName("zs6"); // sai temp
                       final IntegerPartition part3 = new IntegerPartition(c2[l]);
                       int[] p3;
                       final int[] c3 = new int[c2[l] + 1];
                       while ((p3 = part3.next()) != null) {
                         IntegerPartition.toCountForm(p3, c3);
+                        System.out.println("c3: " + Arrays.toString(c3)); // sai
                         //first_part_EXPONENT(c2[l], c3);
                       //do {  /*11*/
                         final int characteristic = 2; // todo this should
                         final CycleIndex hilf = zykeltyp_poly_part(d, v1.get(i-1).get(j).intValueExact(), c3, characteristic, q);
+                        System.out.println("ykeltyp_poly_part: " + hilf);
                         //add_apply(hilf, zs6);
                         zs6.add(hilf);
                       } //while (next(c3, c3)); /*11*/
+                      System.out.println("zs6: " + zs6); //sai
                       zs5 = zs5.op(OP, zs6);
                       //zykelind_dir_prod_apply(zs6, zs5);
                     }  /*10*/
                   }  /*9*/
                   //fmultinom_ext(v2.get(i-1).get(j), c2, hilf);
+                  //final Z hilf = SymmetricGroup.per(c2);
+                  final Z hilf = fmultinom_ext(v2.get(i-1).get(j).intValueExact(), c2);
                   //final Z hilf = Binomial.multinomial(v2.get(i-1).get(j).intValueExact(), c2);
-                  final Z hilf = Binomial.multinomial(v2.get(i-1).get(j).intValueExact(), p2);
+                  //final Z hilf = Binomial.multinomial(v2.get(i-1).get(j).intValueExact(), p2);
+                  System.out.println("multinomial " + v2.get(i-1).get(j).intValueExact() + "; " + Arrays.toString(c2) + " = " + hilf); // sai
 //                  m_scalar_polynom(hilf, hilf1);
 //                  mult_apply(hilf1, zs5);
                   zs5.multiply(new Q(hilf));
                   //add_apply(zs5, zs4);
                   zs4.add(zs5);
+                  System.out.println("zs5: " + zs5); // sai
                   //l = next_part_into_atmost_k_parts(c2);
                 } //while (l == 1L); /*8*/
+                System.out.println("zs4: " + zs4); // sai
                 zs3 = zs3.op(OP, zs4);
                 //zykelind_dir_prod_apply(zs4, zs3);
               }  /*7*/
             }  /*6*/
             //add_apply(zs3, zs2);
+            System.out.println("zs3: " + zs3); // sai
             zs2.add(zs3);
             //j = next_unordered_part_into_atmost_k_parts(c1);
           } //while (j == 1L); /*5*/
+          System.out.println("zs2: " + zs2); // sai
           zs1 = zs1.op(OP, zs2);
           //zykelind_dir_prod_apply(zs2, zs1);
         }  /*4*/
       }  /*3*/
       //add_apply(zs1, ergeb);
       ergeb.add(zs1);
+      System.out.println("c=" + Arrays.toString(c)); // sai
+      System.out.println("zs1: " + zs1);
       System.out.println(ergeb);
     }
 //    freeall(p);

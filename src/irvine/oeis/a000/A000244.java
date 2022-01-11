@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000244 Powers of 3.
+ * A000244 Powers of 3: a(n) = 3^n.
  * @author Sean A. Irvine
  */
 public class A000244 implements Sequence {

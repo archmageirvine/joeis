@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156573 a(n) = 34*a(n-1)-a(n-2)-4232 for n &gt; 2; a(1)=529, a(2)=13225.
+ * A156573 a(n) = 34*a(n-1) - a(n-2) - 4232 for n &gt; 2; a(1)=529, a(2)=13225.
  * @author Sean A. Irvine
  */
 public class A156573 extends LinearRecurrence {

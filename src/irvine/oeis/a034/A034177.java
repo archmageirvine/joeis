@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034177 a(n) = n-th quartic factorial number divided by 4.
+ * A034177 a(n) is the n-th quartic factorial number divided by 4.
  * @author Georg Fischer
  */
 public class A034177 extends HolonomicRecurrence {

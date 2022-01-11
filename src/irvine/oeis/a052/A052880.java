@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052880 Expansion of e.g.f.: -LambertW(-exp(x)+1)/(exp(x)-1).
+ * A052880 Expansion of e.g.f.: LambertW(1-exp(x))/(1-exp(x)).
  * @author Sean A. Irvine
  */
 public class A052880 implements Sequence {

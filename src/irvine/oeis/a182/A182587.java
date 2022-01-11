@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A182587 Decimal expansion of the only solution of x^(4/x^2) = x-1.
+ * A182587 Decimal expansion of the only solution of x^(4/x^2) = x - 1.
  * Equation; x^(4/x^2)-(x-1)
  * @author Georg Fischer
  */

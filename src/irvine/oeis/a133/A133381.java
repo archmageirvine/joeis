@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133381 Vector Matrix Markov designed so that the matrix row sums are all zero: characteristic polynomial: -3149685x - 88636 x^2 + 1037 x^3 + x^4.
+ * A133381 Expansion of g.f. -x^2*(2835*x^2-1032*x-1)/(3149685*x^3+88636*x^2-1037*x-1).
  * @author Georg Fischer
  */
 public class A133381 extends GeneratingFunctionSequence {

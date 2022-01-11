@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034325 a(n) = n-th quintic factorial number divided by 5.
+ * A034325 a(n) is the n-th quintic factorial number divided by 5.
  * @author Georg Fischer
  */
 public class A034325 extends HolonomicRecurrence {

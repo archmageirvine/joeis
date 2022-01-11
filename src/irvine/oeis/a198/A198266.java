@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A198266 Ceiling(n*sqrt(11)).
+ * A198266 a(n) = ceiling(n*sqrt(11)).
  * @author Georg Fischer
  */
 public class A198266 extends FloorSequence {

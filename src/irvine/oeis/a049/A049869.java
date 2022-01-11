@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049869.
+ * A049869 Number of equivalence classes of 3-valued Post functions of n variables under action of group GL(n,3).
  * @author Sean A. Irvine
  */
 public class A049869 implements Sequence {

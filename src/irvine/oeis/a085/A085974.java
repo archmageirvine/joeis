@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 
 
 /**
- * A085974 Number of 0's in decimal expansion of prime(n).
+ * A085974 Number of 0's in the decimal expansion of prime(n).
  * @author Georg Fischer
  */
 public class A085974 extends A000040 {

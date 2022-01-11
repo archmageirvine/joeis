@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053623 Number of distinct non-extendable sequences {x(1),x(2),...,x(k)} such that each x(i) is in {1,2,...,n} and x(j) AND x(i)&lt;&gt;x(j) for i=2,..k, j=1,..,i-1.
+ * A053623 Number of distinct non-extendable sequences (x(1),x(2),...,x(k)) such that each x(i) is in {1,2,...,n} and (x(j) AND x(i)) &lt;&gt; x(j) for i=2..k, j=1..i-1.
  * @author Sean A. Irvine
  */
 public class A053623 implements Sequence {

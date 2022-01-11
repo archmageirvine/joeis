@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a014.A014574;
 
 /**
- * A054735 Sum of twin prime pairs.
+ * A054735 Sums of twin prime pairs.
  * @author Georg Fischer
  */
 public class A054735 implements Sequence {

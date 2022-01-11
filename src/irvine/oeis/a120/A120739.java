@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001316;
 
 /**
- * A120739 a(n) = Sum{k=0..n} floor(C(n,k)/2).
+ * A120739 a(n) = Sum_{k=0..n} floor(C(n,k)/2).
  * @author Georg Fischer
  */
 public class A120739 implements Sequence {

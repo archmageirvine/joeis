@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004234 10*log(n) rounded down.
+ * A004234 a(n) = floor(10*log(n)).
  * @author Sean A. Irvine
  */
 public class A004234 implements Sequence {

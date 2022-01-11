@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a161.A161840;
 
 /**
- * A183002 Partial sums of A161840.
+ * A183002 a(n) is the total number of noncentral divisors in all positive integers &lt;= n.
  * @author Georg Fischer
  */
 public class A183002 extends PartialSumSequence {

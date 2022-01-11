@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084684 Degrees of certain maps.
+ * A084684 Degrees of certain maps (see Comments and Formulas for more precise definitions).
  * @author Sean A. Irvine
  */
 public class A084684 extends LinearRecurrence {

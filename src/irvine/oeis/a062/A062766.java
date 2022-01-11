@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A062766.
+ * A062766 Number of nonisomorphic cyclic subgroups of general affine group AGL(n,2).
  * @author Sean A. Irvine
  */
 public class A062766 implements Sequence {

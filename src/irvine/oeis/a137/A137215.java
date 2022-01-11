@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137215 a(n) = 3*(10^n) + (n*n+1)*((10^n)-1)/9.
+ * A137215 a(n) = 3*(10^n) + (n^2 + 1)*(10^n - 1)/9.
  * @author Georg Fischer
  */
 public class A137215 extends GeneratingFunctionSequence {

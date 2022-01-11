@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000007;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A071919 Number of monotone nondecreasing functions [n]-&gt;[m] for n&gt;=0, m&gt;=0, read by antidiagonals.
+ * A071919 Number of monotone nondecreasing functions [n]-&gt;[m] for n &gt;= 0, m &gt;= 0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A071919 extends WrappedRecurrence {

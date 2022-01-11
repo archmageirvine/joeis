@@ -76,7 +76,7 @@ public final class GeneralLinearCycleIndex {
     matrix divides of which D(p, lambda) is a block), q the power
     of the body.
    */
-  private static Z kung(final int d, final int[] lambda, final int q) {
+  static Z kung(final int d, final int[] lambda, final int q) {
     long mu = 0;
     Z anz = Z.ONE;
     for (int i = 1; i < lambda.length; ++i) {
@@ -124,28 +124,6 @@ public final class GeneralLinearCycleIndex {
     return new CycleIndex(name, MultivariateMonomial.create(1, 1));
   }
 
-  /*
-    Computes the cycle type of a block diagonal matrix from existing
-    companion and hypercompanion matrices of an irreducible normalized polynomial
-    of degree d, exponent (= period or order) exp; the shape of this
-    matrix is determined by the partition mu, p is the characteristic
-    of the body, q its order.
-   */
-  private static CycleIndex cycleTypePolyPart(final int d, final int exp, final int[] mu, final int p, final int q) {
-    //System.out.println("zykeltyp_poly_part(" + d + " " + exp + " " + Arrays.toString(mu) + " " + p + " " + q + ")");
-    CycleIndex res = CycleIndex.ONE.copy();
-    res.setName("");
-    for (int i = 1; i < mu.length; ++i) {
-      if (mu[i] != 0) {
-        final MultivariateMonomial hct = hypercompanionCycleType(d, exp, i, p, q);
-        final CycleIndex hilf1 = new CycleIndex("", hct).pow(HararyMultiply.OP, mu[i], Integer.MAX_VALUE);
-        res = res.op(HararyMultiply.OP, hilf1);
-      }
-    }
-    res.multiply(new Q(Z.ONE, kung(d, mu, q)));
-    return res;
-  }
-
   private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
 
   private static Z multinomialExt(final int a, final int[] b) {
@@ -159,7 +137,37 @@ public final class GeneralLinearCycleIndex {
     return FACTORIAL.factorial(a).divide(den);
   }
 
+  /*
+    Computes the cycle type of a block diagonal matrix from existing
+    companion and hypercompanion matrices of an irreducible normalized polynomial
+    of degree d, exponent (= period or order) exp; the shape of this
+    matrix is determined by the partition mu, p is the characteristic
+    of the body, q its order.
+   */
+  interface CycleTypeInterface {
+    CycleIndex cycleTypePolyPart(final int d, final int exp, final int[] mu, final int p, final int q);
+  }
+
+  static CycleTypeInterface GL_CYCLE_TYPE = (d, exp, mu, p, q) -> {
+    //System.out.println("zykeltyp_poly_part(" + d + " " + exp + " " + Arrays.toString(mu) + " " + p + " " + q + ")");
+    CycleIndex res = CycleIndex.ONE.copy();
+    res.setName("");
+    for (int i = 1; i < mu.length; ++i) {
+      if (mu[i] != 0) {
+        final MultivariateMonomial hct = hypercompanionCycleType(d, exp, i, p, q);
+        final CycleIndex hilf1 = new CycleIndex("", hct).pow(HararyMultiply.OP, mu[i], Integer.MAX_VALUE);
+        res = res.op(HararyMultiply.OP, hilf1);
+      }
+    }
+    res.multiply(new Q(Z.ONE, kung(d, mu, q)));
+    return res;
+  };
+
   static CycleIndex cycleIndex(final int k, final Ring<?> fld) {
+    return cycleIndex(k, fld, GL_CYCLE_TYPE);
+  }
+
+  static CycleIndex cycleIndex(final int k, final Ring<?> fld, final CycleTypeInterface cycleType) {
     final int q = fld.size().intValueExact();
     final int characteristic = fld.characteristic().intValueExact();
     final List<List<Z>> v1 = new ArrayList<>();
@@ -210,7 +218,7 @@ public final class GeneralLinearCycleIndex {
                       while ((p3 = part3.next()) != null) {
                         IntegerPartition.toCountForm(p3, c3);
                         //System.out.println("c3: " + Arrays.toString(c3)); // sai
-                        zs6.add(cycleTypePolyPart(i, v1.get(i - 1).get(j).intValueExact(), c3, characteristic, q));
+                        zs6.add(cycleType.cycleTypePolyPart(i, v1.get(i - 1).get(j).intValueExact(), c3, characteristic, q));
                       }
                       //System.out.println("zs6: " + zs6); //sai
                       zs5 = zs5.op(HararyMultiply.OP, zs6);

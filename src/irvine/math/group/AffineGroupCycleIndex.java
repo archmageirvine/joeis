@@ -63,6 +63,7 @@ public final class AffineGroupCycleIndex {
     final CycleIndex res = GeneralLinearCycleIndex.cycleIndex(k, fld, AG_CYCLE_TYPE);
     final int q = fld.size().intValueExact();
     res.multiply(new Q(Z.ONE, Z.valueOf(q).pow(k)));
+    res.setName("AG(" + k + "," + q + ")");
     return res;
   }
 

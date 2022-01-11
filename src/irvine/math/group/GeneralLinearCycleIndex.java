@@ -148,7 +148,7 @@ public final class GeneralLinearCycleIndex {
     CycleIndex cycleTypePolyPart(final int d, final int exp, final int[] mu, final int p, final int q);
   }
 
-  static CycleTypeInterface GL_CYCLE_TYPE = (d, exp, mu, p, q) -> {
+  private static final CycleTypeInterface GL_CYCLE_TYPE = (d, exp, mu, p, q) -> {
     //System.out.println("zykeltyp_poly_part(" + d + " " + exp + " " + Arrays.toString(mu) + " " + p + " " + q + ")");
     CycleIndex res = CycleIndex.ONE.copy();
     res.setName("");

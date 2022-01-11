@@ -16,73 +16,21 @@ public final class AffineGroupCycleIndex {
   private AffineGroupCycleIndex() {
   }
 
-  // todo refactor into GeneralLinearCycleIndex
-
-  /*
-    Calculated according to a formula by J.P. Kung as the number of
-    matrices in GL(cd, Fq) with a matrix derived from lambda(1)
-    supplementary matrices of an irreducible polynomial p, lambda(2)
-    There is hyper-accompanying margins of p^2 etc.
-    Here d is the degree of the polynomial p, lambda a partition of c (that
-    is the highest power of p, which is the characteristic polynomial of a
-    matrix divides of which D(p, lambda) is a block), q the power
-    of the body.
-   */
-
-  /*
-  Determines the cycle type of the hypercompanion matrix of p(x)^i, a
-  irreducible normalized polynomial of degree d with exponent exp, over
-  a body with characteristic p and power q.
-   */
-  private static MultivariateMonomial hypercompanionCycleType(final int d, final int exp, final int i, final int p, final int q) {
-    final int[] e = new int[i];
-    e[0] = exp;
-    int k = 1;
-    for (int j = 1; j < i; ++j) {
-      e[j] = e[j - 1];
-      if (k < j + 1L) {
-        k = k * p;
-        e[j] *= p;
-      }
-    }
-    final MultivariateMonomial mm = MultivariateMonomial.create(1, Z.ONE);
-    final Z t = Z.valueOf(q).pow(d);
-    Z t1 = t.subtract(1);
-    Z t2 = t1.divide(exp);
-    mm.add(exp, t2);
-    for (int j = 1; j < i; ++j) {
-      t1 = t1.multiply(t);
-      t2 = t1.divide(e[j]);
-      mm.add(e[j], t2);
-    }
-    return mm;
-  }
-
-  private static MultivariateMonomial hypercompanionCycleTypeAff(final int d, final int exp, final int i, final int p, final int q) {
+  private static MultivariateMonomial hypercompanionCycleTypeAff(final int i, final int p, final int q) {
     int e = 1;
-    int hilf = i;
-    while (hilf > e) {
+    while (i > e) {
       e *= p;
     }
-    --hilf;
-    Z hilf1 = Z.valueOf(q).pow(hilf);
-    Z t2 = hilf1.divide(e);
-    final MultivariateMonomial mm = MultivariateMonomial.create(e, t2);
-    --hilf;
-    hilf1 = Z.valueOf(q).pow(hilf);
-    hilf = q - 1;
-    hilf1 = hilf1.multiply(hilf);
-    mm.setCoefficient(hilf1);
-    return mm;
+    return MultivariateMonomial.create(e, Z.valueOf(q).pow(i - 1).divide(e), new Q(Z.valueOf(q).pow(i - 2).multiply(q - 1)));
   }
 
-  private static GeneralLinearCycleIndex.CycleTypeInterface AG_CYCLE_TYPE = (d, exp, mu, p, q) -> {
+  private static final GeneralLinearCycleIndex.CycleTypeInterface AG_CYCLE_TYPE = (d, exp, mu, p, q) -> {
     CycleIndex res = CycleIndex.ONE.copy();
     res.setName("");
     if (d != 1 || (q != 2 && exp != 1)) {
       for (int i = 1; i < mu.length; ++i) {
         if (mu[i] != 0) {
-          final MultivariateMonomial hct = hypercompanionCycleType(d, exp, i, p, q);
+          final MultivariateMonomial hct = GeneralLinearCycleIndex.hypercompanionCycleType(d, exp, i, p, q);
           hct.setCoefficient(Z.valueOf(q).pow(d * i));
           final CycleIndex hilf1 = new CycleIndex("", hct).pow(HararyMultiply.OP, mu[i], Integer.MAX_VALUE);
           res = res.op(HararyMultiply.OP, hilf1);
@@ -91,10 +39,10 @@ public final class AffineGroupCycleIndex {
     } else {
       for (int i = 1; i < mu.length; ++i) {
         if (mu[i] != 0) {
-          final MultivariateMonomial hct = hypercompanionCycleType(d, exp, i, p, q);
+          final MultivariateMonomial hct = GeneralLinearCycleIndex.hypercompanionCycleType(d, exp, i, p, q);
           hct.setCoefficient(Z.valueOf(q).pow(i - 1));
           final CycleIndex t = new CycleIndex("", hct);
-          final MultivariateMonomial hctAff = hypercompanionCycleTypeAff(d, exp, i + 1, p, q);
+          final MultivariateMonomial hctAff = hypercompanionCycleTypeAff(i + 1, p, q);
           t.add(hctAff);
           final CycleIndex hilf1 = t.pow(HararyMultiply.OP, mu[i], Integer.MAX_VALUE);
           res = res.op(HararyMultiply.OP, hilf1);

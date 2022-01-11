@@ -96,7 +96,7 @@ public final class GeneralLinearCycleIndex {
   irreducible normalized polynomial of degree d with exponent exp, over
   a body with characteristic p and power q.
    */
-  private static MultivariateMonomial hypercompanionCycleType(final int d, final int exp, final int i, final int p, final int q) {
+  static MultivariateMonomial hypercompanionCycleType(final int d, final int exp, final int i, final int p, final int q) {
     final int[] e = new int[i];
     e[0] = exp;
     int k = 1;

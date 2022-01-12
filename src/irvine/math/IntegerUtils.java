@@ -435,4 +435,23 @@ public final class IntegerUtils {
     final String s = PADDING + Integer.toBinaryString(n);
     return s.substring(s.length() - Integer.SIZE);
   }
+
+  /**
+   * Test if the given array is a constant non-zero value.
+   * @param values array
+   * @return true if the array is constant but not zero.
+   */
+  public static int isNonzeroConstant(final int[] values) {
+    int a = -1;
+    for (final int v : values) {
+      if (v > 0) {
+        if (a == -1) {
+          a = v;
+        } else if (a != v) {
+          return 0;
+        }
+      }
+    }
+    return a;
+  }
 }

@@ -1,5 +1,6 @@
 package irvine.oeis.a052;
 
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -17,7 +18,7 @@ public class A052051 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final int[] cnts = ZUtils.digitCounts(mN.pow(3));
-      if (A052046.isNonzeroConstant(cnts) > 1) {
+      if (IntegerUtils.isNonzeroConstant(cnts) > 1) {
         return mN;
       }
     }

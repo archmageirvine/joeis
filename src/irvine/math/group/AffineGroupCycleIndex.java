@@ -31,7 +31,7 @@ public final class AffineGroupCycleIndex {
       for (int i = 1; i < mu.length; ++i) {
         if (mu[i] != 0) {
           final MultivariateMonomial hct = GeneralLinearCycleIndex.hypercompanionCycleType(d, exp, i, p, q);
-          hct.setCoefficient(Z.valueOf(q).pow(d * i));
+          hct.setCoefficient(Z.valueOf(q).pow(d * (long) i));
           final CycleIndex hilf1 = new CycleIndex("", hct).pow(HararyMultiply.OP, mu[i], Integer.MAX_VALUE);
           res = res.op(HararyMultiply.OP, hilf1);
         }

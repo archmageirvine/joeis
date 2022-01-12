@@ -11,10 +11,8 @@ import irvine.oeis.a001.A001898;
  */
 public class A163176 extends A001898 {
     
-  protected int mN = 0;
-
   @Override
   public Z next() {
-    return super.next().divide(Z.valueOf(++mN));
+    return super.next().divide(mN + 1);
   }
 }

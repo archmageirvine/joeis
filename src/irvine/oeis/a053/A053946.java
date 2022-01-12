@@ -5,7 +5,7 @@ package irvine.oeis.a053;
 import irvine.oeis.SquareDigitsSequence;
 
 /**
- * A053946 Numbers k such that k^2 contains only digits {3, 6, 7}.
+ * A053946 Numbers k such that k^2 contains only digits {3,6,7}.
  * @author Georg Fischer
  */
 public class A053946 extends SquareDigitsSequence {

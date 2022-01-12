@@ -5,7 +5,7 @@ package irvine.oeis.a053;
 import irvine.oeis.SquareDigitsSequence;
 
 /**
- * A053919 Squares composed of digits {2, 3, 5}.
+ * A053919 Squares composed of digits {2,3,5}.
  * @author Georg Fischer
  */
 public class A053919 extends SquareDigitsSequence {

@@ -10,16 +10,8 @@ import irvine.oeis.a000.A000031;
  */
 public class A052823 extends A000031 {
 
-  protected int mN;
-
-  /** Construct the sequence. */
-  public A052823() {
-    mN = -1;
-  }
-
   @Override
   public Z next() {
-    ++mN;
     return super.next().subtract(mN == 0 ? 1 : 2);
   }
 }

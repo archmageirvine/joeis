@@ -20,7 +20,7 @@ public class A001898 implements Sequence {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final BernoulliSequence mB = new BernoulliSequence(0);
   private final ArrayList<Polynomial<Q>> mBPoly = new ArrayList<>();
-  private int mN = -1;
+  protected int mN = -1;
 
   @Override
   public Z next() {

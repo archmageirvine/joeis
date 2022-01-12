@@ -3,7 +3,6 @@ package irvine.oeis.a053;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a019.A019518;
-import irvine.oeis.a052.A052495;
 import irvine.util.Permutation;
 
 /**
@@ -19,10 +18,10 @@ public class A053095 extends A019518 {
       return Z.ZERO;
     }
     long cnt = 0;
-    final Permutation perm = A052495.permuter(m);
+    final Permutation perm = Permutation.permuter(m);
     int[] p;
     while ((p = perm.next()) != null) {
-      if (p[0] != 0 && A052495.permToZ(p).isProbablePrime()) {
+      if (p[0] != 0 && Permutation.permToZ(p).isProbablePrime()) {
         ++cnt;
       }
     }

@@ -21,11 +21,11 @@ public class A052507 extends A002385 {
       mA.clear();
       mM = 0;
       final Z palin = super.next();
-      final Permutation perm = A052495.permuter(palin);
+      final Permutation perm = Permutation.permuter(palin);
       int[] p;
       while ((p = perm.next()) != null) {
         if (p[0] != 0) {
-          final Z t = A052495.permToZ(p);
+          final Z t = Permutation.permToZ(p);
           if (t.isProbablePrime()) {
             mA.add(A052495.compute(t));
           }

@@ -3,6 +3,8 @@ package irvine.util;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 
 /**
  * Provides a mechanism for generating all the permutations of the integers
@@ -130,6 +132,37 @@ public class Permutation {
       }
     }
     return even;
+  }
+
+  /**
+   * Construct a permutation object that runs over all the permutations of the digits
+   * in an integer.
+   * @param n integer
+   * @return permutation object
+   */
+  public static Permutation permuter(final Z n) {
+    final int[] cnts = ZUtils.digitCounts(n);
+    final int sum = (int) IntegerUtils.sum(cnts);
+    final int[] digits = new int[sum];
+    for (int k = 0, i = 0; k < cnts.length; ++k) {
+      for (int j = 0; j < cnts[k]; ++j) {
+        digits[i++] = k;
+      }
+    }
+    return new Permutation(digits);
+  }
+
+  /**
+   * Convert a permutation into an integer.
+   * @param p permutation
+   * @return integer
+   */
+  public static Z permToZ(final int[] p) {
+    Z t = Z.ZERO;
+    for (final int v : p) {
+      t = t.multiply(10).add(v);
+    }
+    return t;
   }
 
   /**

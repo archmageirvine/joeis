@@ -33,7 +33,7 @@ public class A052494 extends A000040 {
     final Permutation perm = new Permutation(digits, false);
     int[] p;
     while ((p = perm.next()) != null) {
-      final Z t = A052495.permToZ(p);
+      final Z t = Permutation.permToZ(p);
       if (t.isProbablePrime()) {
         ++cnt;
       }

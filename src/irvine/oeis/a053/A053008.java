@@ -5,7 +5,6 @@ import java.util.TreeSet;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a052.A052495;
 import irvine.util.Permutation;
 
 /**
@@ -42,11 +41,11 @@ public class A053008 implements Sequence {
       final Z[] qr = mP.divideAndRemainder(mMod);
       if (qr[1].compareTo(mUnder) >= 0) {
         final Z prod = qr[0].multiply(qr[1]);
-        final Permutation permuter = A052495.permuter(prod);
+        final Permutation permuter = Permutation.permuter(prod);
         int[] p;
         while ((p = permuter.next()) != null) {
           if (p[0] != 0) {
-            final Z t = A052495.permToZ(p);
+            final Z t = Permutation.permToZ(p);
             if (t.isProbablePrime()) {
               mA.add(select(t, mP, prod));
             }

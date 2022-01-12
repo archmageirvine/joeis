@@ -1,8 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 import irvine.util.Permutation;
 
@@ -12,43 +10,13 @@ import irvine.util.Permutation;
  */
 public class A052495 extends A000040 {
 
-  /**
-   * Return on object that can return all the permutations of the digits in a number.
-   * @param n number to permute
-   * @return permuter
-   */
-  public static Permutation permuter(final Z n) {
-    final int[] cnts = ZUtils.digitCounts(n);
-    final int sum = (int) IntegerUtils.sum(cnts);
-    final int[] digits = new int[sum];
-    for (int k = 0, i = 0; k < cnts.length; ++k) {
-      for (int j = 0; j < cnts[k]; ++j) {
-        digits[i++] = k;
-      }
-    }
-    return new Permutation(digits);
-  }
-
-  /**
-   * Convert a permutation to an integer.
-   * @param p permutation
-   * @return integer
-   */
-  public static Z permToZ(final int[] p) {
-    Z t = Z.ZERO;
-    for (int v : p) {
-      t = t.multiply(10).add(v);
-    }
-    return t;
-  }
-
   static Z compute(final Z prime) {
-    final Permutation perm = permuter(prime);
+    final Permutation perm = Permutation.permuter(prime);
     int[] p;
     Z sol = prime;
     while ((p = perm.next()) != null) {
       if (p[0] != 0) {
-        final Z t = permToZ(p);
+        final Z t = Permutation.permToZ(p);
         if (t.isProbablePrime()) {
           final int c = t.compareTo(prime);
           if (c > 0) {

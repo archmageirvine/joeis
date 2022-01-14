@@ -7,10 +7,10 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005900;
 
 /**
- * A053676 Let Oc(n) = A005900(n) = n-th octahedral number. Consider all integer triples (i,j,k), j &gt;= k &gt; 0, with Oc(i) = Oc(j)+Oc(k), ordered by increasing i; sequence gives i values.
+ * A053677 Let Oc(n) = A005900(n) = n-th octahedral number. Consider all integer triples (i,j,k), j &gt;= k &gt; 0, with Oc(i) = Oc(j)+Oc(k), ordered by increasing i; sequence gives j values.
  * @author Sean A. Irvine
  */
-public class A053676 extends A005900 {
+public class A053677 extends A005900 {
 
   private final LinkedHashSet<Z> mA = new LinkedHashSet<>();
   private Z mPrev = Z.ONE;
@@ -47,8 +47,13 @@ public class A053676 extends A005900 {
           break;
         }
         if (mA.contains(v)) {
-          //StringUtils.message(mA.size() + " " + mOffset);
-          return Z.valueOf(mOffset + mA.size());
+          int k = 0;
+          for (final Z w : mA) {
+            ++k;
+            if (w.equals(v)) {
+              return Z.valueOf(mOffset + k);
+            }
+          }
         }
       }
     }

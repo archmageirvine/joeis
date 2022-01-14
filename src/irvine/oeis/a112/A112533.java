@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112533 Expansion of (4+49*x+108*x^2-432*x^3+54675*x^5)/((1-27*x^2)*(27*x^2-6*x+1)*(27*x^2+6*x+1)).
+ * A112533 Expansion of (4+49*x+108*x^2-432*x^3+54675*x^5)/((1-27*x^2)*(1-6*x+27*x^2)*(1+6*x+27*x^2)).
  * @author Georg Fischer
  */
 public class A112533 extends GeneratingFunctionSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002385;
 
 /**
- * A046368 Numbers with exactly 2 palindromic prime factors (counted with multiplicity), and no other prime factors.
+ * A046368 Products of two palindromic primes.
  * @author Sean A. Irvine
  */
 public class A046368 implements Sequence {

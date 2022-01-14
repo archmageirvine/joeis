@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A195693 Decimal expansion of arctan(1/r), where r = (1+sqrt(5))/2 (the golden ratio).
+ * A195693 Decimal expansion of arctan(1/phi), where phi = (1+sqrt(5))/2 (the golden ratio).
  * @author Georg Fischer
  */
 public class A195693 extends DecimalExpansionSequence {

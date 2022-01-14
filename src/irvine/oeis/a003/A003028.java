@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A003028 Number of n-node digraphs with a source.
+ * A003028 Number of digraphs on n labeled nodes with a source.
  * @author Sean A. Irvine
  */
 public class A003028 extends A003030 {

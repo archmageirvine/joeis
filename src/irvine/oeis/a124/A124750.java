@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A124750 Expansion of (1+x+x^2)/(1-x^3+x^4).
+ * A124750 Expansion of (1 + x + x^2)/(1 - x^3 + x^4).
  * @author Georg Fischer
  */
 public class A124750 extends GeneratingFunctionSequence {

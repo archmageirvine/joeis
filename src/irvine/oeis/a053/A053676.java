@@ -4,25 +4,34 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005900;
 
 /**
  * A053676 Let Oc(n) = A005900(n) = n-th octahedral number. Consider all integer triples (i,j,k), j &gt;= k &gt; 0, with Oc(i) = Oc(j)+Oc(k), ordered by increasing i; sequence gives i values.
  * @author Sean A. Irvine
  */
-public class A053676 extends A005900 {
+public class A053676 implements Sequence {
 
-  private final LinkedHashSet<Z> mA = new LinkedHashSet<>();
+  private final Sequence mUnder;
+  protected final LinkedHashSet<Z> mA = new LinkedHashSet<>();
   private Z mPrev = Z.ONE;
-  private long mOffset = 0;
-  {
-    super.next(); // skip 0
-    mA.add(super.next());
+  protected long mOffset = 0;
+
+  protected A053676(final Sequence seq) {
+    mUnder = seq;
+    mUnder.next(); // skip 0
+    mA.add(mUnder.next());
   }
 
-  private Z update() {
+  /** Construct the sequence. */
+  public A053676() {
+    this(new A005900());
+  }
+
+  protected Z update() {
     // Drops low terms from memory when they will never be used again
-    final Z t = super.next();
+    final Z t = mUnder.next();
     final Z delta = t.subtract(mPrev);
     for (final Iterator<Z> it = mA.iterator(); it.hasNext();) {
       final Z u = it.next();

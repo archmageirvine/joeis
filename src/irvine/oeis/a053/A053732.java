@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053718.
+ * A053732 Number of ways to partition {1,...,n} into arithmetic progressions of length &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A053732 implements Sequence {

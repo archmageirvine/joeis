@@ -965,16 +965,6 @@ A016119 Minimal number of cosets in an orthogonal sublattice of A_n (minimal num
 A016120 Minimal number of cosets in an orthogonal sublattice of {A_n}* (minimal number of paths in any trellis diagram), likely hard
 A016729 Highest minimal Hamming distance of any Type 4^H+ Hermitian additive self-dual code over GF(4) of length n
 A018189 Population of "Triangle" cellular automaton at n-th generation, insufficient detail
-A018195 Possible numbers of complements of topologies on 4 points, pos, just powers of 2 afterwards
-A018196 Possible numbers of complements of topologies on 5 points
-A018197 Possible numbers of complements of topologies on 6 points
-A018198 Possible numbers of complements of topologies on 7 points
-A018199 Possible numbers of complements of topologies on 8 points
-A018200 Possible numbers of complements of topologies on 9 points
-A018201 Possible numbers of complements of topologies on 10 points
-A018202 Possible numbers of complements of topologies on 11 points
-A018203 Possible numbers of complements of topologies on 12 points
-A018204 Possible numbers of complements of topologies on 13 points
 A018216 Maximal number of subgroups in a group with n elements, needs all groups enumeration
 A018223 Number of 5-voter voting schemes with n linearly ranked choices, probably has linear recurrence, cf. A007010, A007009
 A018234 Theta series of 52-dimensional lattice of det 2^26 and minimal norm 3, gross1996.pdf

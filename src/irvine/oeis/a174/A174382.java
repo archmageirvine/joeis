@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.a055.A055187;
 
 /**
- * A174382 T(1, 0)=0 and for n &gt; 1, T(n,k) is the number of k&apos;s in rows 1 to n - 1.
+ * A174382 T(1,0)=0 and for n &gt; 1, T(n,k) is the number of k's in rows 1 to n - 1.
  * @author Georg Fischer
  */
 public class A174382 extends A055187 {

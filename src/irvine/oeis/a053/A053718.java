@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A053718.
+ * A053718 Number of n X n binary matrices of order dividing 4 (also number of solutions to X^4=I in GL(n,2)).
  * @author Sean A. Irvine
  */
 public class A053718 implements Sequence {
@@ -22,9 +22,14 @@ public class A053718 implements Sequence {
   private final Ring<Z> mFld;
   private final Z mMaxOrder;
 
-  protected A053718(final long maxOrder, final GaloisField field) {
+  protected A053718(final long maxOrder, final GaloisField field, final int start) {
+    mN = start - 1;
     mFld = field;
     mMaxOrder = Z.valueOf(maxOrder);
+  }
+
+  protected A053718(final long maxOrder, final GaloisField field) {
+    this(maxOrder, field, 1);
   }
 
   /** Construct the sequence. */
@@ -34,7 +39,10 @@ public class A053718 implements Sequence {
 
   @Override
   public Z next() {
-    final GeneralLinearGroup<Z> group = new GeneralLinearGroup<>(++mN, mFld);
+    if (++mN == 0) {
+      return Z.ONE;
+    }
+    final GeneralLinearGroup<Z> group = new GeneralLinearGroup<>(mN, mFld);
     final CycleIndex ci = group.cycleIndex();
     Q sum = Q.ZERO;
     for (final MultivariateMonomial m : ci.values()) {

@@ -14,7 +14,6 @@ public class A053769 extends A002808 {
   @Override
   public Z next() {
     while (true) {
-      ++mN;
       mA = mA.add(super.next());
       if (mA.isSquare()) {
         return mA;

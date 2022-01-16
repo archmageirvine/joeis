@@ -20,17 +20,18 @@ public class A053718 implements Sequence {
 
   private int mN = 0;
   private final Ring<Z> mFld;
+  private final Z mMaxOrder;
 
-  protected A053718(final GaloisField field) {
+  protected A053718(final long maxOrder, final GaloisField field) {
     mFld = field;
+    mMaxOrder = Z.valueOf(maxOrder);
   }
 
   /** Construct the sequence. */
   public A053718() {
-    this(new GaloisField(2));
+    this(4, new GaloisField(2));
   }
 
-  // todo parameter for the "4"
   @Override
   public Z next() {
     final GeneralLinearGroup<Z> group = new GeneralLinearGroup<>(++mN, mFld);
@@ -41,7 +42,7 @@ public class A053718 implements Sequence {
       for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
         order = order.lcm(Z.valueOf(e.getKey().right()));
       }
-      if (Z.FOUR.mod(order).isZero()) {
+      if (mMaxOrder.mod(order).isZero()) {
         sum = sum.add(m.getCoefficient());
       }
     }

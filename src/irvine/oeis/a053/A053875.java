@@ -16,24 +16,24 @@ import irvine.util.Pair;
  * A053718 Number of n X n binary matrices of order dividing 4 (also number of solutions to X^4=I in GL(n,2)).
  * @author Sean A. Irvine
  */
-public class A053718 implements Sequence {
+public class A053875 implements Sequence {
 
   private int mN;
   private final Ring<Z> mFld;
-  private final Z mMaxOrder;
+  private final Z mOrder;
 
-  protected A053718(final long maxOrder, final GaloisField field, final int start) {
+  protected A053875(final long order, final GaloisField field, final int start) {
     mN = start - 1;
     mFld = field;
-    mMaxOrder = Z.valueOf(maxOrder);
+    mOrder = Z.valueOf(order);
   }
 
-  protected A053718(final long maxOrder, final GaloisField field) {
-    this(maxOrder, field, 1);
+  protected A053875(final long order, final GaloisField field) {
+    this(order, field, 1);
   }
 
   /** Construct the sequence. */
-  public A053718() {
+  public A053875() {
     this(4, new GaloisField(2));
   }
 
@@ -50,7 +50,7 @@ public class A053718 implements Sequence {
       for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
         order = order.lcm(Z.valueOf(e.getKey().right()));
       }
-      if (mMaxOrder.mod(order).isZero()) {
+      if (mOrder.equals(order)) {
         sum = sum.add(m.getCoefficient());
       }
     }

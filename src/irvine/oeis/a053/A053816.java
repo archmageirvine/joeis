@@ -21,7 +21,7 @@ public class A053816 implements Sequence {
         mLimitZ = mLimitZ.multiply(10);
       }
       final Z s = Z.valueOf(mN).square();
-      final Z [] qr = s.divideAndRemainder(mLimitZ);
+      final Z[] qr = s.divideAndRemainder(mLimitZ);
       if (qr[0].add(qr[1]).longValueExact() == mN) {
         return Z.valueOf(mN);
       }

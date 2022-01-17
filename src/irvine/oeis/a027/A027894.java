@@ -1,5 +1,7 @@
 package irvine.oeis.a027;
 
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
@@ -10,6 +12,15 @@ public class A027894 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A027894() {
-    super(1, 3, 9, 11, 33, 99, 101, 303, 909, 1111, 3333, 9999);
+    this(10, 4);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param base base number
+   * @param power power of <code>base</code>
+   */
+  public A027894(final int base, final int power) {
+    super(Jaguar.factor(Z.valueOf(base).pow(power).subtract(1)).divisorsSorted());
   }
 }

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002582;
 
 /**
- * A002592 Largest prime factor of 3^n + 1.
+ * A074476 Largest prime factor of 3^n + 1.
  * @author Georg Fischer
  */
 public class A074476 implements Sequence {

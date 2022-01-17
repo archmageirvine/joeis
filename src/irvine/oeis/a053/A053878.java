@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002182;
 
 /**
- * A053875.
+ * A053878 Difference between numerator and denominator of lowest terms fraction from division of a highly composite number (1) by its predecessor.
  * @author Sean A. Irvine
  */
 public class A053878 extends A002182 {

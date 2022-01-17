@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033981 Integers n such that 2^n == 7 (mod n).
+ * A033981 Integers k such that 2^k == 7 (mod k).
  * @author Sean A. Irvine
  */
 public class A033981 implements Sequence {

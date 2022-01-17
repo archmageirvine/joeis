@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053875.
+ * A053976 Least number such that a(n) and nextprime(a(n)) differ by at least a power of 10, 10^m, where m &gt;= n.
  * @author Sean A. Irvine
  */
 public class A053976 implements Sequence {

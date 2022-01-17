@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A053665 Smallest number m such that m = i^2 mod prime(i) for 1&lt;=i&lt;=n.
+ * A053665 Smallest number m such that m = j^2 (mod prime(j)) for 1 &lt;= j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A053665 implements Sequence {

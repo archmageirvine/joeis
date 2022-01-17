@@ -25,7 +25,7 @@ public class SquareDigitsSequence implements Sequence {
   private final int mFirstDig; // lowest valid digit, or 0
   protected int mBase; // base of the numbers: 2-99
   protected Z mBaseZ; // base as Z
-  protected int mMask; // bitmask for the variants
+  //protected int mMask; // bitmask for the variants
   protected Pattern mAllowPattern; // pattern matching the subset of not-allowed decimal digits
   protected boolean[] mAllowedDigits; // true if a digit = index is allowed
   private Z[] mOldBlock; // array of numbers k that were under concern
@@ -60,7 +60,7 @@ public class SquareDigitsSequence implements Sequence {
   protected SquareDigitsSequence(final int offset, final int base, final int mask, final String subset) {
     mBase = base;
     mBaseZ = Z.valueOf(mBase);
-    mMask = mask;
+    //mMask = mask;
     mTestK = (mask & 2) != 0;
     mNextK2 = (mask & 1) != 0;
     mNoZeroTail = (mask & 8) != 0;
@@ -95,7 +95,7 @@ public class SquareDigitsSequence implements Sequence {
 
   /**
    * Test whether a number has allowable digits only.
-   * Faster version, adapted from ZUtils.digitCounts().
+   * Faster version, adapted from <code>ZUtils.digitCounts()</code>.
    * @param n number to be tested
    * @return -1 if all digits are allowed, or exponent of <code>mBase</code> of first non-matching digit
    */
@@ -141,7 +141,7 @@ public class SquareDigitsSequence implements Sequence {
   @Override
   public Z next() {
     if (mN == 0) {
-      if (badDigitPosition(Z.ZERO) < 0 && !mNoZeroTail) {
+      if (!mNoZeroTail && badDigitPosition(Z.ZERO) < 0) {
         ++mN;
         return Z.ZERO;
       }
@@ -158,9 +158,9 @@ public class SquareDigitsSequence implements Sequence {
             final Z remainder = mFirstDig == 0 ? quot[1] : quot[1].add(mod1);
             if (badDigitPosition(remainder) < 0) {
               mNewBlock[mNewIx++] = k; // push
-//**          if (sDebug >= 1) {
-//**            System.out.println("    # " + k + " " + k2);
-//**          }
+//          if (sDebug >= 1) {
+//            System.out.println("    # " + k + " " + k2);
+//          }
               if ((quot[0].isZero() || badDigitPosition(quot[0]) < 0)
                 && (!mTestK || badDigitPosition(k) < 0)
                 && (!mNoZeroTail || k.mod(mBase) != 0)

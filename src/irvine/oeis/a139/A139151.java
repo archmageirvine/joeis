@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // DO NOT EDIT here!
 
 /**
- * A139151 (n!+4)/4.
+ * A139151 a(n) = (n!+4)/4.
  * @author Georg Fischer
  */
 public class A139151 extends A139149 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A053710 Value of prime balanced factorials: n! is the mean of its 2 closest neighboring primes.
+ * A053710 Prime-balanced factorials: factorials k! that are the mean of their 2 closest neighboring primes.
  * @author Sean A. Irvine
  */
 public class A053710 extends A000142 {

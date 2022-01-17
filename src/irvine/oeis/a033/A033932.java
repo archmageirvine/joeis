@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A033932 Least positive m such that n!+m is prime.
+ * A033932 Least positive m such that n! + m is prime.
  * @author Sean A. Irvine
  */
 public class A033932 extends A000142 {

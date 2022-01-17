@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a030.A030104;
 
 /**
- * A055950 n + reversal of base 5 digits of n (written in base 10).
+ * A055950 a(n) = n + reversal of base 5 digits of n (written in base 10).
  * @author Georg Fischer
  */
 public class A055950 implements Sequence {

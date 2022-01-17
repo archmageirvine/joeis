@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A026136 For n &gt;= 2, let L=n-[ n/2 ], R=n+[ n/2 ]; then a(L)=n if a(L) not yet defined, else a(R)=n; thus |a(n)-n|=[ (1/2)*a(n) ].
+ * A026136 Lexicographically earliest permutation of the positive integers such that |a(n)-n| = [a(n)/2].
  * @author Sean A. Irvine
  */
 public class A026136 implements Sequence {

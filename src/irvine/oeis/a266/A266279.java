@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A266279 implements Sequence {
 
-  protected int mN;
+  protected int mM;
   protected int mBase;
 
   /** Construct the sequence. */
@@ -20,18 +20,18 @@ public class A266279 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param base
+   * @param base base to use
    */
   public A266279(final int base) {
     mBase = base;
-    mN = -1;
+    mM = -1;
   }
 
   @Override
   public Z next() {
     while (true) {
-      ++mN;
-      final int[] counts = ZUtils.digitCounts(mN, mBase);
+      ++mM;
+      final int[] counts = ZUtils.digitCounts(mM, mBase);
       int first = -1;
       boolean same = true; // assume success
       int idig = 0;
@@ -47,7 +47,7 @@ public class A266279 implements Sequence {
         ++idig;
       }
       if (same) {
-        return Z.valueOf(mN);
+        return Z.valueOf(mM);
       }
     }
   }

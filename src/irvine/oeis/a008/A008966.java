@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008966 1 if n is squarefree, else 0.
+ * A008966 a(n) = 1 if n is squarefree, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A008966 implements Sequence {

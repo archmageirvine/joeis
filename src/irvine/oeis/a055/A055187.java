@@ -356,11 +356,11 @@ public class A055187 implements Sequence {
         switch (opt) {
           case "-a":
             final String appears = args[iarg++];
-            if (appears.equals("fa")) {
+            if ("fa".equals(appears)) {
               appear = 1;
-            } else if (appears.equals("do")) {
+            } else if ("do".equals(appears)) {
               appear = 2;
-            } else if (appears.equals("io")) {
+            } else if ("io".equals(appears)) {
               appear = 3;
             } else {
               appear = Integer.parseInt(appears); // keep numeric appear
@@ -400,7 +400,7 @@ public class A055187 implements Sequence {
             System.out.println("invalid option \"" + opt + "\"");
             break;
         }
-      } catch (RuntimeException exc) {
+      } catch (final RuntimeException exc) {
         // ignored
       }
     }

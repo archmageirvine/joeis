@@ -11,14 +11,33 @@ import irvine.oeis.Sequence;
 public class A007693 implements Sequence {
 
   private final Fast mPrime = new Fast();
-  private long mP = 1;
+  private Z mP = Z.ONE;
+
+  private long mMul;
+  private long mAdd;
+
+  /** Construct the sequence. */
+  public A007693() {
+    this(6, 1);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param mul multiply the prime by this number
+   * @param add add this number to the product
+   */
+  public A007693(final long mul, final long add) {
+    mMul = mul;
+    mAdd = add;
+    ;
+  }
 
   @Override
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (mPrime.isPrime(6 * mP + 1)) {
-        return Z.valueOf(mP);
+      if (mPrime.isPrime(mP.multiply(mMul).add(mAdd))) {
+        return mP;
       }
     }
   }

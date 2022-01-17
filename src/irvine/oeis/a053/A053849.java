@@ -36,11 +36,12 @@ public class A053849 implements Sequence {
     final Q[] coeffs = new Q[n + 1];
     Arrays.fill(coeffs, Q.ZERO);
     for (int m = 0; m <= n / e; ++m) {
+      final int me = m * e;
       Z prod = Z.ONE;
       for (int k = 0; k < m; ++k) {
-        prod = prod.multiply(qz.pow(m * e).subtract(qz.pow(k * e)));
+        prod = prod.multiply(qz.pow(me).subtract(qz.pow(k * e)));
       }
-      coeffs[m * e] = new Q(Z.ONE, prod);
+      coeffs[me] = new Q(Z.ONE, prod);
     }
     return Polynomial.create(coeffs);
   }

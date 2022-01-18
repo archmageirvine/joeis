@@ -7,6 +7,7 @@ import irvine.math.z.Z;
 /**
  * Numbers <code>k</code> that contain only a subset of (decimal) digits in its square <code>k^2</code>
  * and optionally in <code>k</code> itself.
+ * Triangular numbers instead of squares can be tested also by this class.
  * For some subsets of the digits there are only rare or no solutions.
  *
  * The algorithm processes a block of possible numbers of length <em>width</em>.
@@ -41,6 +42,7 @@ public class SquareDigitsSequence implements Sequence {
   private final boolean mTestK; // whether k should have valid digits also
   private final boolean mNextK2; // whether k^2 should be emitted isntead of k
   private final boolean mNoZeroTail; // whether a valid k may not have a trailing zero
+  private final boolean mTriangular; // whether to investigate triangular numbers instead of squares
   private Z mBasePower; // for ZUtils.basePower()
   private int mLogU; // for ZUtils.basePower()
 
@@ -54,6 +56,7 @@ public class SquareDigitsSequence implements Sequence {
    * <li>2 = <code>k</code> and <code>k^2</code> must consists of the digits</li>
    * <li>4 = only <code>k^2</code> must consists of the digits</li>
    * <li>8 = the last digit of <code>k</code> may not be 0</li>
+   * <li>16 = investigate triangular numbers instead of squares</li>
    * </ul>
    * @param subset String of decimal digits in ascending order, representing the desired subset
    */
@@ -64,6 +67,7 @@ public class SquareDigitsSequence implements Sequence {
     mTestK = (mask & 2) != 0;
     mNextK2 = (mask & 1) != 0;
     mNoZeroTail = (mask & 8) != 0;
+    mTriangular = (mask & 16) != 0;
     mSubset = subset.replaceAll("\\D", "");
     mAllowPattern = Pattern.compile("[" + mSubset + "]*");
     mAllowedDigits = new boolean[mBase]; // initialized with false
@@ -81,7 +85,7 @@ public class SquareDigitsSequence implements Sequence {
     mMod = Z.valueOf(mBase);
     mOldK = Z.ZERO;
     mDig = 0;
-    mN = 0;
+    mN = mTriangular ? offset - 1 : 0;
     // from ZUtils.basePower():
     mLogU = 0;
     Z t = Z.valueOf(mBase);
@@ -130,61 +134,63 @@ public class SquareDigitsSequence implements Sequence {
     return -1;
   }
 
-  protected int badDigitPositionSlow(final Z k) {
-    return mAllowPattern.matcher(k.toString()).matches() ? -1 : 0;
-  }
-
   /**
    * Get the next term of the sequence.
    * @return the next term
    */
   @Override
   public Z next() {
-    if (mN == 0) {
-      if (!mNoZeroTail && badDigitPosition(Z.ZERO) < 0) {
+    if (mTriangular) {
+      while (true) {
         ++mN;
-        return Z.ZERO;
+        final Z result = Z.valueOf(mN + 1).multiply(mN).divide2();
+        if (badDigitPosition(result) < 0) {
+          return mNextK2 ? result : Z.valueOf(mN);
+        }
       }
-    }
-    while (true) {
-      while (mDig < mBase) {
-        if (!mTestK || mAllowedDigits[mDig]) {
-          // mMod * mFirstDig
-          final Z mod1 = mMod.multiply(mFirstDig);
-          while (mOldIx < mOldLen) {
-            final Z k = mAdd.add(mOldBlock[mOldIx++]); // pop
-            final Z k2 = k.multiply(k);
-            final Z[] quot = k2.divideAndRemainder(mMod);
-            final Z remainder = mFirstDig == 0 ? quot[1] : quot[1].add(mod1);
-            if (badDigitPosition(remainder) < 0) {
-              mNewBlock[mNewIx++] = k; // push
-//          if (sDebug >= 1) {
-//            System.out.println("    # " + k + " " + k2);
-//          }
-              if ((quot[0].isZero() || badDigitPosition(quot[0]) < 0)
-                && (!mTestK || badDigitPosition(k) < 0)
-                && (!mNoZeroTail || k.mod(mBase) != 0)
-                && mOldK.compareTo(k) < 0
-              ) {
-                mOldK = k;
-                ++mN;
-                return mNextK2 ? k2 : k;
+    } else {
+      if (mN == 0) {
+        if (!mNoZeroTail && badDigitPosition(Z.ZERO) < 0) {
+          ++mN;
+          return Z.ZERO;
+        }
+      }
+      while (true) {
+        while (mDig < mBase) {
+          if (!mTestK || mAllowedDigits[mDig]) {
+            final Z mod1 = mMod.multiply(mFirstDig);
+            while (mOldIx < mOldLen) {
+              final Z k = mAdd.add(mOldBlock[mOldIx++]); // pop
+              final Z k2 = k.multiply(k);
+              final Z[] quot = k2.divideAndRemainder(mMod);
+              final Z remainder = mFirstDig == 0 ? quot[1] : quot[1].add(mod1);
+              if (badDigitPosition(remainder) < 0) {
+                mNewBlock[mNewIx++] = k; // push
+                if ((quot[0].isZero() || badDigitPosition(quot[0]) < 0)
+                  && (!mTestK || badDigitPosition(k) < 0)
+                  && (!mNoZeroTail || k.mod(mBase) != 0)
+                  && mOldK.compareTo(k) < 0
+                ) {
+                  mOldK = k;
+                  ++mN;
+                  return mNextK2 ? k2 : k;
+                }
               }
             }
           }
+          mOldIx = 0;
+          mAdd = mAdd.add(mAdd1);
+          ++mDig;
         }
-        mOldIx = 0;
-        mAdd = mAdd.add(mAdd1);
-        ++mDig;
+        mDig = 0;
+        mOldLen = mNewIx;
+        mOldBlock = mNewBlock;
+        mNewBlock = new Z[mOldLen * mBase];
+        mNewIx = 0;
+        mAdd1 = mAdd1.multiply(mBaseZ);
+        mMod = mMod.multiply(mBaseZ);
+        mAdd = Z.ZERO;
       }
-      mDig = 0;
-      mOldLen = mNewIx;
-      mOldBlock = mNewBlock;
-      mNewBlock = new Z[mOldLen * mBase];
-      mNewIx = 0;
-      mAdd1 = mAdd1.multiply(mBaseZ);
-      mMod = mMod.multiply(mBaseZ);
-      mAdd = Z.ZERO;
     }
   }
 

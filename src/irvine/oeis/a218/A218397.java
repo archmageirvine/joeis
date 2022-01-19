@@ -5,7 +5,7 @@ package irvine.oeis.a218;
 import irvine.oeis.SquareDigitsSequence;
 
 /**
- * A218397 Triangular numbers composed of digits {0, 2, 7}.
+ * A218397 Triangular numbers composed of digits {0,2,7}.
  * @author Georg Fischer
  */
 public class A218397 extends SquareDigitsSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a119;
 import irvine.oeis.SquareDigitsSequence;
 
 /**
- * A119220 Triangular numbers composed of digits {5, 6, 8}.
+ * A119220 Triangular numbers composed of digits {5,6,8}.
  * @author Georg Fischer
  */
 public class A119220 extends SquareDigitsSequence {

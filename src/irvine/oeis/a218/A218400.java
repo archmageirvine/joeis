@@ -5,7 +5,7 @@ package irvine.oeis.a218;
 import irvine.oeis.SquareDigitsSequence;
 
 /**
- * A218400 Numbers k such that the k-th triangular number contains only digits {0, 4, 7}.
+ * A218400 Numbers k such that the k-th triangular number contains only digits {0,4,7}.
  * @author Georg Fischer
  */
 public class A218400 extends SquareDigitsSequence {

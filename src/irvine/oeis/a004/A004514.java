@@ -27,7 +27,7 @@ public class A004514 implements Sequence {
     return new Z(sb, base);
   }
 
-  private Z mN = Z.NEG_ONE;
+  protected Z mN = Z.NEG_ONE;
 
   @Override
   public Z next() {

@@ -1778,3 +1778,4 @@ A053620 Nearest integer to R(n) = the Riemann prime number formula [could not re
 A053740 Prime triangle partitions of order n
 A053870 Acyclic orientations of Hamming graph (K_n) x (K_n)
 A053873 Numbers n such that OEIS sequence A_n contains n
+A053991 Number of distinct residues of generalized Catalan number 1/((n^2-1)*k + 1)*binomial(n^2*k, k) modulo n^2 as k runs through the positive integers.

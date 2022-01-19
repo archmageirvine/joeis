@@ -9,9 +9,24 @@ import irvine.math.z.Z;
  */
 public class A000449 extends A000166 {
 
+  protected int mFixP;
+
+  /** Construct the sequence. */
+  public A000449() {
+    this(3);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param fixP
+   */
+  public A000449(final int fixP) {
+    mFixP = fixP;
+  }
+
   @Override
   public Z next() {
-    return super.next().multiply(Binomial.binomial(mN + 3, 3));
+    return super.next().multiply(Binomial.binomial(mN + mFixP, mFixP));
   }
-}
 
+}

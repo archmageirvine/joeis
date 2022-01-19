@@ -2,18 +2,33 @@ package irvine.oeis.a051;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.a002.A002110;
+import irvine.oeis.Sequence;
 
 /**
  * A051801 Product of the nonzero digits of n.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A051801 extends A002110 {
+public class A051801 implements Sequence {
 
-  private long mN = -1;
+  private int mN = -1;
+  private int mBase;
+
+  /** Construct the sequence. */
+  public A051801() {
+    this(10);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param base
+   */
+  public A051801(final int base) {
+    mBase = base;
+  }
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.digitNZProduct(++mN, 10));
+    ++mN;
+    return ZUtils.digitNZProduct(Z.valueOf(mN), mBase);
   }
 }

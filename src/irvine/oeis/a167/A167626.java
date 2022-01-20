@@ -10,8 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A167626 implements Sequence {
 
-  private long mEnding;
-  private long mAdd10;
+  private final long mAdd10;
   private Z mN;
 
   /** Construct the sequence. */
@@ -25,9 +24,8 @@ public class A167626 implements Sequence {
    * @param add add this to the expression
    */
   public A167626(final long ending) {
-    mEnding = ending;
-    mAdd10 = mEnding < 10 ? 10 : (mEnding < 100 ? 100 : 1000);
-    mN = Z.valueOf(mEnding);
+    mAdd10 = ending < 10 ? 10 : (ending < 100 ? 100 : 1000);
+    mN = Z.valueOf(ending);
   }
 
   @Override

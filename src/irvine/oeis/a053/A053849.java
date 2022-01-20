@@ -39,7 +39,7 @@ public class A053849 implements Sequence {
       final int me = m * e;
       Z prod = Z.ONE;
       for (int k = 0; k < m; ++k) {
-        prod = prod.multiply(qz.pow(me).subtract(qz.pow(k * e)));
+        prod = prod.multiply(qz.pow(me).subtract(qz.pow(k * (long) e)));
       }
       coeffs[me] = new Q(Z.ONE, prod);
     }

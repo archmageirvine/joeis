@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.ModifiedPascalTriangle;
 
 /**
- * A144696 Triangle of 4-Eulerian numbers.
+ * A144698 Triangle of 4-Eulerian numbers.
  * @author Georg Fischer
  */
 public class A144698 extends ModifiedPascalTriangle {

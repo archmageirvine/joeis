@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 /**
- * A197972 Ceiling((n+1/3)^n).
+ * A197972 a(n) = ceiling((n+1/3)^n).
  * @author Georg Fischer
  */
 public class A197972 extends A197910 {

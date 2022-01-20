@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A053823 Product of primes in n-th shell of prime spiral.
+ * A053997 Sum of primes in n-th shell of prime spiral.
  * @author Sean A. Irvine
  */
 public class A053997 extends A000040 {

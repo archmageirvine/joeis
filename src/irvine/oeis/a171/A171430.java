@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A171430 Primes that are congruent to 3 mod k, where k is the index of the prime.
+ * A171430 Primes that are congruent to 3 mod n, where n is the index of the prime.
  * @author Sean A. Irvine
  */
 public class A171430 extends A000040 {

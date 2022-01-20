@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051001 Sum of squares of odd divisors of n.
+ * A050999 Sum of squares of odd divisors of n.
  * @author Sean A. Irvine
  */
 public class A050999 implements Sequence {

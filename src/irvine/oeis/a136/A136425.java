@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A136425 Floor((x^n-(1-x)^n)/sqrt(7)+0.5) where x=(sqrt(7)+1)/2.
+ * A136425 a(n) = floor((x^n-(1-x)^n)/sqrt(7)+1/2) where x = (sqrt(7)+1)/2.
  * @author Georg Fischer
  */
 public class A136425 extends FloorSequence {

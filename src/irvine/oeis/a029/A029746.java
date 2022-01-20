@@ -4,7 +4,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A029746 2^n or 7.2^n.
+ * A029746 Numbers of the form 2^k or 7*2^k.
  * @author Georg Fischer
  */
 public class A029746 extends GeneratingFunctionSequence {

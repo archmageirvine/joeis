@@ -5,7 +5,7 @@ package irvine.oeis.a029;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A029748 2^n times 1, 3 or 7.
+ * A029748 Numbers of the form 2^k times 1, 3 or 7.
  * @author Georg Fischer
  */
 public class A029748 extends HolonomicRecurrence {

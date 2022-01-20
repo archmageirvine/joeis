@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A297033 Number of pieces in the list d(m),d(m-1),...,d(0) of base-5 digits of n; see Comments.
+ * A297033 Number of pieces in the list d(m), d(m-1), ..., d(0) of base-5 digits of n; see Comments.
  * @author Georg Fischer
  */
 public class A297033 extends RunsBaseSequence {

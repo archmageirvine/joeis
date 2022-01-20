@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002961;
 
 /**
- * A054001.
+ * A054001 Differences between n such that n and n+1 have the same sum of divisors.
  * @author Sean A. Irvine
  */
 public class A054001 extends DifferenceSequence {

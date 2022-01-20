@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.prime.PowerFactorPrimeSequence;
 
 /**
- * A032409 Numbers k such that 119*2^k+1 is prime.
+ * A032409 Numbers k such that 119*2^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A032409 extends PowerFactorPrimeSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053995.
+ * A053996 Number of bases of n-dimensional vector space over GF(4).
  * @author Sean A. Irvine
  */
 public class A053996 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A053711 For some x, x!+a(n) or x!-a(n) are the upper and lower primes closest to x!.
+ * A053711 Numbers d such that, for some k, the upper and lower primes closest to k! are k! + d and k! - d.
  * @author Sean A. Irvine
  */
 public class A053711 extends A000142 {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A092605 Decimal expansion of e^(-1/2).
+ * A092605 Decimal expansion of e^(-1/2) or 1/sqrt(e).
  * @author Georg Fischer
  */
 public class A092605 extends DecimalExpansionSequence {

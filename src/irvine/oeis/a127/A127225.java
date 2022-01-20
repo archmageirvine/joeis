@@ -1,7 +1,7 @@
 package irvine.oeis.a127;
 
 /**
- * A127224 a(n) = (n^3)!/n!.
+ * A127225 a(n) = (n^4)!/n!.
  * @author Georg Fischer
  */
 public class A127225 extends A127223 {

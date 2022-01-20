@@ -6,7 +6,7 @@ package irvine.oeis.a024;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A024314 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k=[ (n+1)/2) ], s = (natural numbers &gt;= 3), t = A023532.
+ * A024314 a(n) = s(1)*t(n) + s(2)*t(n-1) + ... + s(k)*t(n+1-k), where k = floor((n+1)/2)), s = (natural numbers &gt;= 3), t = A023532.
  * @author Georg Fischer
  */
 public class A024314 extends GeneratingFunctionSequence {

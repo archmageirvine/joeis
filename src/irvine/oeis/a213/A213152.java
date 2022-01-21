@@ -4,13 +4,13 @@ package irvine.oeis.a213;
 import irvine.oeis.a212.A212846;
 
 /**
- * A213129 Polylogarithm li(-n,-1/6) multiplied by (7^(n+1))/6.
+ * A213152 Polylogarithm li(-n,-7/10) multiplied by (17^(n+1))/10.
  * @author Georg Fischer
  */
-public class A213129 extends A212846 {
+public class A213152 extends A212846 {
 
   /** Construct the sequence. */
-  public A213129() {
-    super(1, 6);
+  public A213152() {
+    super(7, 10);
   }
 }

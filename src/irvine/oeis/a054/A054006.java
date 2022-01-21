@@ -1,0 +1,24 @@
+package irvine.oeis.a054;
+
+import irvine.factor.factor.Cheetah;
+import irvine.factor.util.FactorSequence;
+import irvine.math.z.Z;
+import irvine.oeis.a002.A002961;
+
+/**
+ * A054006 Number of divisors of n and n+1 which have the same number and sum of divisors.
+ * @author Sean A. Irvine
+ */
+public class A054006 extends A002961 {
+
+  @Override
+  public Z next() {
+    while (true) {
+      final Z n = super.next();
+      final FactorSequence fs = Cheetah.factor(n);
+      if (fs.sigma0().equals(Cheetah.factor(n.add(1)).sigma0())) {
+        return fs.sigma0();
+      }
+    }
+  }
+}

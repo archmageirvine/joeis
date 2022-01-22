@@ -2,9 +2,9 @@ package irvine.oeis.a046;
 
 import java.util.TreeSet;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.a006.A006016;
 
 /**
  * A046695 Sprague-Grundy values for the game Couples-are-Forever (and for octal games .6, .601, .61, .611, .62, .621, .63, .631).
@@ -26,6 +26,6 @@ public class A046695 extends MemorySequence {
     for (int k = 1; k <= n / 2; ++k) {
       s.add(get(k).longValueExact() ^ get(n - k).longValueExact());
     }
-    return Z.valueOf(A006016.mex(s));
+    return Z.valueOf(LongUtils.mex(s));
   }
 }

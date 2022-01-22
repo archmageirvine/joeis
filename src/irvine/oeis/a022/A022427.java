@@ -2,9 +2,9 @@ package irvine.oeis.a022;
 
 import java.util.TreeSet;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a006.A006016;
 
 /**
  * A022427 a(n) = c(n-1) + c(n-3) where c is the sequence of numbers not in a.
@@ -48,16 +48,16 @@ public class A022427 implements Sequence {
         return Z.valueOf(mA1);
       } else {
         mS.add(mA2);
-        mB0 = A006016.mex(mS);
+        mB0 = LongUtils.mex(mS);
         mS.add(mB0);
-        mB1 = A006016.mex(mS);
+        mB1 = LongUtils.mex(mS);
         mS.add(mB1);
         return Z.valueOf(mA2);
       }
     }
     final long t = mB0;
     mB0 = mB1;
-    mB1 = A006016.mex(mS);
+    mB1 = LongUtils.mex(mS);
     mS.add(mB1);
     final long a = t + mB1;
     mS.add(a);

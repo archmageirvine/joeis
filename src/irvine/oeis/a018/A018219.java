@@ -3,10 +3,10 @@ package irvine.oeis.a018;
 import java.util.ArrayList;
 import java.util.TreeSet;
 
+import irvine.math.LongUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a006.A006016;
 
 /**
  * A018219 Table T(a,b) by antidiagonals of winning positions in 3-pile Wythoff game (a square array).
@@ -39,7 +39,7 @@ public class A018219 extends MemoryFunction2<Long, Long> implements Sequence {
       v.add(get(a - k, b - k));
     }
     addAndClear(mex, v);
-    return A006016.mex(mex);
+    return LongUtils.mex(mex);
   }
 
   private void addAndClear(final TreeSet<Long> mex, final ArrayList<Long> v) {

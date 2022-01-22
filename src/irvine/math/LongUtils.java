@@ -3,6 +3,7 @@ package irvine.math;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Random;
 
 import irvine.factor.factor.Cheetah;
@@ -791,5 +792,18 @@ public final class LongUtils {
       t /= m;
     }
     return k;
+  }
+
+  /**
+   * Return the mex of a collection.
+   * @param mex collection
+   * @return mex value
+   */
+  public static long mex(final Collection<Long> mex) {
+    long m = -1;
+    while (mex.contains(++m)) {
+      // do nothing
+    }
+    return m;
   }
 }

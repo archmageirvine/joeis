@@ -3,10 +3,10 @@ package irvine.oeis.a014;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000040;
-import irvine.oeis.a006.A006016;
 
 /**
  * A014589 Nim function for Take-a-Prime (or Subtract-a-Prime) Game.
@@ -22,6 +22,6 @@ public class A014589 extends MemorySequence {
     for (int f = primes.next().intValueExact(); f <= n; f = primes.next().intValueExact()) {
       moves.add(get(n - f).longValueExact());
     }
-    return Z.valueOf(A006016.mex(moves));
+    return Z.valueOf(LongUtils.mex(moves));
   }
 }

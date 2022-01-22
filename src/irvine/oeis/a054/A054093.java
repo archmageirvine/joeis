@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 /**
- * A054092 T(n,n), array T as in A054090.
+ * A054093 T(n,n-1), array T as in A054090.
  * @author Georg Fischer
  */
 public class A054093 extends A054092 {

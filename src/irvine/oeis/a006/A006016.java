@@ -1,8 +1,8 @@
 package irvine.oeis.a006;
 
-import java.util.Collection;
 import java.util.HashSet;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
@@ -17,19 +17,6 @@ public class A006016 implements Sequence {
   private LongDynamicLongArray mCache = new LongDynamicLongArray();
   {
     mCache.set(0, 1);
-  }
-
-  /**
-   * Return the mex of a collection.
-   * @param mex collection
-   * @return mex value
-   */
-  public static long mex(final Collection<Long> mex) {
-    long m = -1;
-    while (mex.contains(++m)) {
-      // do nothing
-    }
-    return m;
   }
 
   private void symFlips(final long k, final int leftMost, final int length, final HashSet<Long> newMex, final int n) {
@@ -62,7 +49,7 @@ public class A006016 implements Sequence {
         }
       }
     }
-    return mex(seen);
+    return LongUtils.mex(seen);
   }
 
   private long getValue(final long key, final int n) {

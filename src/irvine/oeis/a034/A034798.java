@@ -2,9 +2,9 @@ package irvine.oeis.a034;
 
 import java.util.TreeSet;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.a006.A006016;
 
 /**
  * A034798 Value of n considered as a game.
@@ -26,6 +26,6 @@ public class A034798 extends MemorySequence {
       u >>>= 1;
       ++k;
     }
-    return Z.valueOf(A006016.mex(t));
+    return Z.valueOf(LongUtils.mex(t));
   }
 }

@@ -3,6 +3,7 @@ package irvine.oeis.a006;
 import java.util.HashSet;
 import java.util.Set;
 
+import irvine.math.LongUtils;
 import irvine.math.MemoryFunction;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -42,7 +43,7 @@ public class A006021 extends MemoryFunction<Long, Long> implements Sequence {
     } else {
       augment(seen, -n);
     }
-    return A006016.mex(seen);
+    return LongUtils.mex(seen);
   }
 
   private long mN = -1;

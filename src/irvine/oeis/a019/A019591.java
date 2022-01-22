@@ -2,9 +2,9 @@ package irvine.oeis.a019;
 
 import java.util.HashSet;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.a006.A006016;
 
 /**
  * A019591 Grundy function of game in which each player has to divide precisely one set of coins into two subsets of different sizes.
@@ -26,6 +26,6 @@ public class A019591 extends MemorySequence {
     for (int k = 1; k < (n + 1) / 2; ++k) {
       s.add(get(k).or(get(n - k)).longValueExact());
     }
-    return Z.valueOf(A006016.mex(s));
+    return Z.valueOf(LongUtils.mex(s));
   }
 }

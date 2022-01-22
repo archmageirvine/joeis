@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import irvine.math.IntegerUtils;
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.a006.A006016;
 
 /**
  * A014586 Nim-Grundy function for Take-a-Square (or Subtract-a-Square) game.
@@ -21,6 +21,6 @@ public class A014586 extends MemorySequence {
     for (int r = 1; r <= IntegerUtils.sqrt(n); ++r) {
       moves.add(get(n - r * r).longValueExact());
     }
-    return Z.valueOf(A006016.mex(moves));
+    return Z.valueOf(LongUtils.mex(moves));
   }
 }

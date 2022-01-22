@@ -2,9 +2,9 @@ package irvine.oeis.a022;
 
 import java.util.TreeSet;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a006.A006016;
 
 /**
  * A022424 Solution a( ) of the complementary equation a(n) = b(n-1) + b(n-2), where a(0) = 1, a(1) = 2; see Comments.
@@ -41,13 +41,13 @@ public class A022424 implements Sequence {
         return Z.valueOf(mA0);
       } else {
         mS.add(mA1);
-        mB = A006016.mex(mS);
+        mB = LongUtils.mex(mS);
         mS.add(mB);
         return Z.valueOf(mA1);
       }
     }
     final long t = mB;
-    mB = A006016.mex(mS);
+    mB = LongUtils.mex(mS);
     mS.add(mB);
     final long a = t + mB;
     mS.add(a);

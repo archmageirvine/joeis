@@ -9,7 +9,7 @@ import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A053978.
+ * A053978 Continued fraction expansion of limit_{m-&gt;infinity} [r_m], where r_1=1, r_{m+1}= r_1 + 1/(r_2 + 1/(r_3 +...1/(r_{m-1} + 1/r_m)...)).
  * @author Sean A. Irvine
  */
 public class A053978 implements Sequence {

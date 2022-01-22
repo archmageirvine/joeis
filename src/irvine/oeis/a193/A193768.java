@@ -4,7 +4,7 @@ package irvine.oeis.a193;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A193768 The domination number of the 4 by n board.
+ * A193768 The domination number of the 4 X n board.
  * @author Georg Fischer
  */
 public class A193768 extends GeneratingFunctionSequence {

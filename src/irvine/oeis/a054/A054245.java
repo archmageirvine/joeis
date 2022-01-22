@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A054245 Beethoven&apos;s Fifth Symphony; 1 stands for the first note in the minor scale, etc.
+ * A054245 Beethoven's Fifth Symphony; 1 stands for the first note in the minor scale, etc.
  * @author Georg Fischer
  */
 public class A054245 extends NoncomputableSequence {

@@ -5,18 +5,18 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A054037 Numbers n such that n^2 contains exactly 9 different digits.
+ * A054032 Numbers n such that n^2 contains exactly 4 different digits.
  * @author Sean A. Irvine
  */
-public class A054037 implements Sequence {
+public class A054032 implements Sequence {
 
-  private Z mN = Z.valueOf(10123);
+  private Z mN = Z.valueOf(12);
 
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Integer.bitCount(ZUtils.syn(mN.square())) == 9) {
+      if (Integer.bitCount(ZUtils.syn(mN.square())) == 4) {
         return mN;
       }
     }

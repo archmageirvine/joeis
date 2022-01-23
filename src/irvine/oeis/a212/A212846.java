@@ -41,7 +41,7 @@ public class A212846 extends ArrayList<Z> implements Sequence {
     if (mN == 0) {
       return get(mN);
     }
-    int n = mN - 1;
+    final int n = mN - 1;
     Z sum = Z.ZERO;
     for (int k = 0; k <= n; ++k) {
       sum = sum.add(Binomial.binomial(n, k).multiply(get(k)).multiply(get(n - k)));

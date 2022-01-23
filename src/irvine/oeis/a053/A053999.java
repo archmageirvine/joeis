@@ -15,7 +15,7 @@ public class A053999 extends A000040 {
   @Override
   public Z next() {
     ++mN;
-    long t = 4 * mN * mN + 4 * mN + 1;
+    final long t = 4 * mN * mN + 4 * mN + 1;
     Z p;
     do {
       ++mM;

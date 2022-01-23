@@ -14,7 +14,7 @@ public class A053998 extends A000040 {
   @Override
   public Z next() {
     ++mN;
-    Z p = super.next();
+    final Z p = super.next();
     for (long k = 1; k < Math.max(1, 8 * mN); ++k) {
       super.next();
     }

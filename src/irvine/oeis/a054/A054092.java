@@ -29,7 +29,7 @@ public class A054092 extends A054090 {
 
   /** Construct the sequence. */
   public A054092() {
-    this(0, (n) -> n + 1);
+    this(0, n -> n + 1);
   }
 
   @Override

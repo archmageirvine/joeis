@@ -24,6 +24,7 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
   protected Z[] mInits; // buffer for the initial terms
   protected int mLinit; // = mInits.size()
   protected int mIn; // index for initial terms
+  protected boolean mHasRAM; // random access method: whether <code>compute(n,k)</code> can be called without obeying the usual row-by-row order
 
   /**
    * Empty constructor.
@@ -61,6 +62,23 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
     mIn = -1; // index in mInits, starting with 0
     mRow = -1;
     mCol = -1; // start with first element T(0,0)
+    mHasRAM = false; // default: no random access
+  }
+
+  /**
+   * Determine whether <code>compute(n,k)</code> can be called without obeying the usual row-by-row order
+   * @return true for random access, false if the usual increasing columns, row-by-row calling order must be obeyed
+   */
+  protected boolean hasRAM() {
+    return mHasRAM;
+  }
+
+  /**
+   * Set the "RAM" property
+   * @param ram true for random access, false if the usual increasing columns, row-by-row calling order must be obeyed
+   */
+  protected void hasRAM(final boolean ram) {
+    mHasRAM = ram;
   }
 
   /**

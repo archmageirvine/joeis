@@ -3,18 +3,22 @@ package irvine.oeis.a051;
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
  * A051137 Table T(n,k) read by antidiagonals: number of necklaces allowing turnovers (bracelets) with n beads of k colors.
  * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A051137 implements Sequence {
+public class A051137 extends UpperLeftTriangle {
 
-  private int mN = 0;
-  private int mM = 0;
+  /** Construct the sequence. */
+  public A051137() {
+    super(0, 1, 1);
+  }
 
-  private Z t(final int n, final int k) {
+  @Override
+  public Z matrixElement(final int n, final int k) {
     if (n == 0) {
       return Z.ONE;
     }
@@ -27,13 +31,4 @@ public class A051137 implements Sequence {
     sum = sum.add(zk.pow((n + 1) / 2).add(zk.pow((n + 2) / 2)).divide2());
     return sum.divide2();
   }
-
-  @Override
-  public Z next() {
-    if (--mM < 0) {
-      mM = mN++;
-    }
-    return t(mM, mN - mM);
-  }
 }
-

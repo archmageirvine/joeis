@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A057027 Triangle T read by rows: row n consists of the numbers C(n, 2)+1 to C(n+1, 2);
+ * A057027 Triangle T read by rows: row n consists of the numbers C(n,2)+1 to C(n+1,2); numbers in odd-numbered places form an increasing sequence and the others a decreasing sequence.
  * numbers in odd-numbered places form an increasing sequence and the others a decreasing sequence.
  * @author Georg Fischer
  */

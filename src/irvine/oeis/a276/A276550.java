@@ -7,7 +7,7 @@ import irvine.oeis.a081.A081720;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A276550 Array read by antidiagonals:
+ * A276550 Array read by antidiagonals: T(n,k) = number of primitive (period n) bracelets using a maximum of k different colored beads.
  * T(n,k) = number of primitive (period n) bracelets using a maximum of k different colored beads.
  * T(n, k) = Sum_{d|n} mu(n/d) * A081720(d,k) for k&lt;=n
  * @author Georg Fischer

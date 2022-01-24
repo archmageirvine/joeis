@@ -1780,3 +1780,4 @@ A053870 Acyclic orientations of Hamming graph (K_n) x (K_n)
 A053873 Numbers n such that OEIS sequence A_n contains n
 A053991 Number of distinct residues of generalized Catalan number 1/((n^2-1)*k + 1)*binomial(n^2*k, k) modulo n^2 as k runs through the positive integers.
 A053994 Nonattacking queens on a 2n+1 X 2n+1 toroidal board, solutions which differ only by rotation, reflection or torus shift count only once
+A054081 Array T by antidiagonals: for n >= 0 and k >= 1, let p(k)=least number in N not already an a(i), q(k)=p(k)+k+n-1, a(p(k))=q(k), a(q(k))=p(k); then for h>=1, T(n,h)=a(h).

@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.triangle.TriangleSelector;
 
 /**
- * A054137 T(n, 3), array T as in A054134.
+ * A054137 T(n,3), array T as in A054134.
  * @author Georg Fischer
  */
 public class A054137 extends TriangleSelector {

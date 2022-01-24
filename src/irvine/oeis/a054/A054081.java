@@ -29,8 +29,7 @@ public class A054081 implements Sequence {
     }
     final DynamicIntArray row = mPerm.get(n);
     if (row.get(k) == 0) {
-      final int j = k + 1;
-      row.set(k, j + mStep.get(n));
+      row.set(k, k + 1 + mStep.get(n));
       row.set(k + mStep.get(n), k + 1);
       mStep.set(n, mStep.get(n) + 1);
     }

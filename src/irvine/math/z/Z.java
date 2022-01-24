@@ -13,7 +13,7 @@ import irvine.math.r.Constants;
  * This implementation uses base 2^30 (as opposed to 2^32), this means we can
  * do more operations without resorting to extended precision. We do not
  * force the underlying array to be of minimal length, this simplifies the
- * logic in certain computations (however, we do make a reasonable effort
+ * logic in certain computations, however, we do make a reasonable effort
  * to keep the array at most slightly larger than that which is required
  * to represent the number.<p>
  * It returns a value of 1 for <code>bitLength(-1)</code>.<p>
@@ -36,7 +36,7 @@ public class Z extends Number implements Comparable<Z> {
   /** The base used to perform computation. */
   static final int BASE = 1 << BASE_BITS;
   /** Double version of the base. */
-  static final double DBASE = (double) BASE;
+  static final double DBASE = BASE;
   /** A bit mask for BASE_BITS. */
   static final int BASE_MASK = BASE - 1;
   /** Inverse of base. */
@@ -697,7 +697,7 @@ public class Z extends Number implements Comparable<Z> {
     }
     final int sa = mSign < 0 ? -mSign : mSign;
     if (sa == 1) {
-      return Math.log((double) mValue[0]);
+      return Math.log(mValue[0]);
     }
     return (sa - 2) * BASE_BITS * Constants.LN2 + Math.log(DBASE * mValue[sa - 1] + mValue[sa - 2]);
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.factor.factor.Cheetah;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000217;
@@ -11,15 +11,10 @@ import irvine.oeis.a000.A000217;
  */
 public class A034715 implements Sequence {
 
-  private long mN = 0;
+  private int mN = 0;
 
   @Override
   public Z next() {
-    Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(++mN).divisors()) {
-      final long d = dd.longValue();
-      sum = sum.add(A000217.triangular(d).multiply(A000217.triangular(mN / d)));
-    }
-    return sum;
+    return Integers.SINGLETON.sumdiv(++mN, d -> A000217.triangular(d).multiply(A000217.triangular(mN / d)));
   }
 }

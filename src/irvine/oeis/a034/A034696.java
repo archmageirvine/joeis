@@ -2,7 +2,7 @@ package irvine.oeis.a034;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -21,12 +21,7 @@ public class A034696 extends A000040 {
   @Override
   public Z next() {
     mPrimes.add(super.next());
-    Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(++mN).divisors()) {
-      final int d = dd.intValue();
-      sum = sum.add(mPrimes.get(d).multiply(mPrimes.get(mN / d)));
-    }
-    return sum;
+    return Integers.SINGLETON.sumdiv(++mN, d -> mPrimes.get(d).multiply(mPrimes.get(mN / d)));
   }
 }
 

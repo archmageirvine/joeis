@@ -1,5 +1,8 @@
 package irvine.math.group;
 
+import java.util.function.Function;
+
+import irvine.factor.factor.Cheetah;
 import irvine.math.api.Operation;
 import irvine.math.api.Ring;
 import irvine.math.api.Set;
@@ -255,5 +258,34 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
   @Override
   public E conjugate(final E element) {
     return element;
+  }
+
+  /**
+   * The sum of a function from lo to hi inclusive.
+   * @param lo lower bound
+   * @param hi upper bound
+   * @param function the function
+   * @return sum
+   */
+  public E sum(final int lo, final int hi, final Function<Integer, E> function) {
+    E sum = zero();
+    for (int k = lo; k <= hi; ++k) {
+      sum = add(sum, function.apply(k));
+    }
+    return sum;
+  }
+
+  /**
+   * The sum of a function over all the divisors of a number.
+   * @param n sum over the divisors of this number
+   * @param function the function
+   * @return sum
+   */
+  public E sumdiv(final int n, final Function<Integer, E> function) {
+    E sum = zero();
+    for (final Z d : Cheetah.factor(n).divisors()) {
+      sum = add(sum, function.apply(d.intValueExact()));
+    }
+    return sum;
   }
 }

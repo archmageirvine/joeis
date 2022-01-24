@@ -27,5 +27,4 @@ public abstract class AbstractOrderedField<E> extends AbstractOrderedIntegralDom
   public Group<E> multiplicativeGroup() {
     return new MultiplicativeGroup<>(this);
   }
-
 }

@@ -1,10 +1,10 @@
 package irvine.math.q;
 
+import java.util.Iterator;
+
 import irvine.math.group.AbstractOrderedField;
 import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
-
-import java.util.Iterator;
 
 /**
  * Field of rationals under addition and multiplication.

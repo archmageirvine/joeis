@@ -14,7 +14,7 @@ import irvine.util.AbstractIterator;
  * Ring of integers under addition.
  * @author Sean A. Irvine
  */
-public class Integers extends AbstractOrderedIntegralDomain<Z> implements Sqrt<Z>, Pow<Z> {
+public class Integers extends AbstractOrderedIntegralDomain<Z> implements Pow<Z>, Sqrt<Z> {
 
   /** Ring of integers under addition. */
   public static final Integers SINGLETON = new Integers();

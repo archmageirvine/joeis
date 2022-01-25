@@ -581,7 +581,7 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
-   * Compute the <code>n</code>th root of this integer. In addition the
+   * Compute the <code>n</code>th root of this integer. In addition, the
    * auxiliary is set to 1 for a perfect <code>n</code>th root and 0 otherwise.
    * @param n root number
    * @return <code>n</code>th root

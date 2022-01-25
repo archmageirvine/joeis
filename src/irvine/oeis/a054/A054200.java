@@ -9,7 +9,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A054200.
+ * A054200 Number of binary vectors (x_1,...x_n) satisfying Sum_{i=1..n} i*x_i = 3 (mod n+1) = size of Varshamov-Tenengolts code VT_3(n).
  * @author Sean A. Irvine
  */
 public class A054200 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A054200.
+ * A054203 Smallest primes followed by n consecutive (unequal) prime differences, each divided by 6.
  * @author Sean A. Irvine
  */
 public class A054203 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054200.
+ * A054201 a(n) = (n-1)! * Sum_{k=1..n} k^k/k!.
  * @author Sean A. Irvine
  */
 public class A054201 implements Sequence {

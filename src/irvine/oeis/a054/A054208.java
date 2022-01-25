@@ -10,7 +10,7 @@ import irvine.util.Triple;
 import irvine.util.string.StringUtils;
 
 /**
- * A054200.
+ * A054208 Consider all integer triples (i,j,k), j &gt;= k&gt;0, with i^3=binomial(j+2,3)+binomial(k+2,3), ordered by increasing i; sequence gives i values.
  * @author Sean A. Irvine
  */
 public class A054208 implements Sequence {

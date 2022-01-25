@@ -4,7 +4,7 @@ import irvine.oeis.DistinctAdditiveClosureSequence;
 import irvine.oeis.a001.A001906;
 
 /**
- * A054200.
+ * A054204 Integers expressible as sums of distinct even-subscripted Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A054204 extends DistinctAdditiveClosureSequence {

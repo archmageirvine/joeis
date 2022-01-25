@@ -7,6 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Triple;
+import irvine.util.string.StringUtils;
 
 /**
  * A054200.
@@ -14,11 +15,15 @@ import irvine.util.Triple;
  */
 public class A054208 implements Sequence {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final List<Triple<Long>> mA = new ArrayList<>();
   private long mN = 1;
   private int mM = 0;
 
   protected long select(final Triple<Long> t) {
+    if (mVerbose) {
+      StringUtils.message(t.toString());
+    }
     return t.left();
   }
 

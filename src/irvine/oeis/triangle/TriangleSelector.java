@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * Select a column, row, diagonal or some other subsection of a triangular (keyword "tabl") sequence T(n,k).
+ * Select a column, row, diagonal or some other subsection of a triangular (keyword <code>tabl</code>) sequence T(n,k).
  * @author Georg Fischer
  */
 public class TriangleSelector implements Sequence {

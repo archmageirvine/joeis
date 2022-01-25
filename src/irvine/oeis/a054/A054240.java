@@ -16,7 +16,7 @@ public class A054240 extends UpperLeftTriangle {
 
   /**
    * Add two numbers in base sqrt(2).
-   * From Haskell: a201651 n k = a054240 (n `xor` k) (shift (n .&amp;. k) 2); recursive.
+   * From Haskell: <code>a201651 n k = a054240 (n `xor` k) (shift (n .&amp;. k) 2)</code>; recursive.
    * @param x first number
    * @param y second number
    * @return x "+" y

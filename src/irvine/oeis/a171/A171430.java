@@ -10,8 +10,7 @@ import irvine.oeis.a000.A000040;
 public class A171430 extends A000040 {
 
   private long mN = 0;
-  private int mMod;
-  private Z mModZ;
+  private final int mMod;
 
   /** Construct the sequence. */
   public A171430() {
@@ -20,11 +19,10 @@ public class A171430 extends A000040 {
 
   /**
    * Generic constructor with parameters
-   * @param mod
+   * @param mod modulus
    */
   public A171430(final int mod) {
     mMod = mod;
-    mModZ = Z.valueOf(mMod);
   }
 
   @Override

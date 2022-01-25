@@ -16,7 +16,7 @@ public class A054098 extends Triangle {
 
   /**
    * Compute a row sum
-   * @param n numberof the row
+   * @param n number of the row
    * @return row sum
    */
   private Z rowSum(final int n) {

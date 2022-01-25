@@ -562,10 +562,6 @@ public class ZTest extends TestCase {
     assertEquals(2, z.bitCount());
   }
 
-  public void testSomeStatics() {
-    assertNotNull(Z.probablePrime(5, new Random()));
-  }
-
   public void testLeastCommonMultiple() {
     assertEquals(12, Z.FOUR.lcm(Z.THREE).longValue());
     assertEquals(4, Z.FOUR.lcm(Z.TWO).longValue());

@@ -2,7 +2,6 @@ package irvine.math.z;
 
 import java.math.BigInteger;
 import java.util.Arrays;
-import java.util.Random;
 
 import irvine.math.r.Constants;
 
@@ -90,17 +89,6 @@ public class Z extends Number implements Comparable<Z> {
   public static final Z TEN = Z.valueOf(10L);
   /** The constant negative one. */
   public static final Z NEG_ONE = Z.valueOf(-1L);
-
-  /**
-   * Generate a probable prime with the specified number of bits.
-   * @param bits number of bits
-   * @param random source of randomness
-   * @return a <code>Z</code> value
-   */
-  public static Z probablePrime(final int bits, final Random random) {
-    // TODO proper implementation of this
-    return Z.valueOf(BigInteger.probablePrime(bits, random));
-  }
 
   /**
    * Directly construct the number.  Performs no error checking, assumes user

@@ -4,13 +4,13 @@ package irvine.oeis.a111;
 import irvine.oeis.a034.A034695;
 
 /**
- * A111217 d_7(n), tau_7(n), number of ordered factorizations of n as n = rstuvwx (7-factorizations).
+ * A111219 d_9(n), tau_9(n), number of ordered factorizations of n as n = rstuvwxyz (9-factorizations).
  * @author Georg Fischer
  */
-public class A111217 extends A034695 {
+public class A111219 extends A034695 {
 
   /** Construct the sequence. */
-  public A111217() {
-    super(7);
+  public A111219() {
+    super(9);
   }
 }

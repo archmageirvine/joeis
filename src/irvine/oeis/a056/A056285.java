@@ -18,6 +18,7 @@ public class A056285 extends TriangleSelector {
     super(1, new A087854(), 1, n -> new int[] {n, 5});
   }
 
+  @Override
   public Z next() {
     final Z result = super.next();
     return ++mN <= 4 ? Z.ZERO : result;

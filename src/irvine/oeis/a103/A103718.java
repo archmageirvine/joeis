@@ -6,6 +6,7 @@ import irvine.oeis.triangle.Triangle;
 /**
  * A103718 Triangle of coefficients of certain polynomials used with prime numbers as variables in the computation of the array A103728.
  * a(0, 0)=1, a(k, 0) = (k-1)! + k*a(k-1, 0); a(k, m) = -a(k-1, m-1) + k*a(k-1, m), m > 0 and a(k, m)=0 if k < m.
+ * @author Georg Fischer
  */
 public class A103718 extends Triangle {
 

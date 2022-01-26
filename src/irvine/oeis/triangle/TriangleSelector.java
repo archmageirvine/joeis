@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * Select a column, row, diagonal or some other subsection of a triangular (keyword <code>tabl</code>) sequence T(n,k).
+ * Select a column, row, diagonal or some other subsection of a triangular (keyword "tabl") sequence T(n,k).
  * @author Georg Fischer
  */
 public class TriangleSelector implements Sequence {
@@ -95,6 +95,8 @@ public class TriangleSelector implements Sequence {
         final int[] pair = mSelect.apply(mN);
         if (pair[1] >= 0 && pair[1] <= pair[0]) {
           return mTriangle.compute(pair[0], pair[1]);
+        } else if (mN >= mOffset) {
+          return Z.ZERO;
         }
       } else {
         ++mTri;
@@ -111,6 +113,8 @@ public class TriangleSelector implements Sequence {
         // System.out.println("next n=" + n + ", k=" + k + ", mTri=" + mTri + ", result=" + result + ", mStop=" + mStop);
         if (k >= 0 && k <= n) {
           return result;
+        } else if (n >= mOffset) {
+          return Z.ZERO;
         }
       }
     }

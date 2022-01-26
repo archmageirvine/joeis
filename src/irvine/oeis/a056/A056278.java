@@ -12,6 +12,7 @@ public class A056278 extends A000740 {
 
   private int mN = 0;
 
+  /** Construct the sequence. */
   public Z next() {
     final Z result = super.next();
     return ++mN == 1 ? Z.ZERO : result;

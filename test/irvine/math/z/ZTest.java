@@ -413,6 +413,7 @@ public class ZTest extends TestCase {
       h.add(method.getName());
     }
     h.add("nextProbablePrime"); // ignore this one
+    h.add("probablePrime"); // ignore this one
     for (final Method bimethod : bimethods) {
       if (!h.contains(bimethod.getName())) {
         fail("Missing: " + bimethod.getName());

@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.a005.A005843;
 
 /**
- * A057039 Let R(i,j) be the rectangle with antidiagonals 1; 2, 3; 4, 5, 6; ...; each k is an R(i(k),j(k)) and A057039(n)=j(2n).
+ * A057039 Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057039(n)=j(2n).
  * @author Georg Fischer
  */
 public class A057039 extends A057036 {

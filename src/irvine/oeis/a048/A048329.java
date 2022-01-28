@@ -7,7 +7,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 
 /**
- * A048329 a(n) in base 4 is a repdigit.
+ * A048329 Numbers that are repdigits in base 4.
  * @author Georg Fischer
  */
 public class A048329 extends HolonomicRecurrence {

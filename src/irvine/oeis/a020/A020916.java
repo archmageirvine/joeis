@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020916 A molecule is a row of atoms joined together by bonds; each atom has a valence (e.g. 1 - 3 = 2 is a molecule with 3 atoms); a(n) = number of molecules with n atoms and different valencies from 1 to n.
+ * A020916 A molecule is a row of atoms joined together by bonds; each atom has a valence (e.g., 1-3=2 is a molecule with 3 atoms); a(n) is the number of molecules with n atoms and different valencies from 1 to n.
  * @author Robert Munafo
  * @author Sean A. Irvine (Java port)
  */

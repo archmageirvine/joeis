@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A135116 Integers n such that 10^n+61 is a prime number.
+ * A135116 Integers k such that 10^k + 61 is a prime number.
  * @author Georg Fischer
  */
 public class A135116 extends PrimePositionSubsequence {

@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A036688 Number of distinct n-digit suffixes of base 10 squares not containing digit 0.
+ * A036688 Number of distinct n-digit suffixes of base-10 squares not containing the digit 0.
  * @author Sean A. Irvine
  */
 public class A036688 implements Sequence {

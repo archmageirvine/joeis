@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A220811 Numerators of the Verhulst sequence x(n+1)=4*x(n)-3*x(n)^2, x(0)=1/10; see A220812 for denominators.
+ * A220811 Numerators of the Verhulst sequence x(n+1)=4*x(n)-3*x(n)^2, x(0)=1/10.
  * @author Sean A. Irvine
  */
 public class A220811 implements Sequence {

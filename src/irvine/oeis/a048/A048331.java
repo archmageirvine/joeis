@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048331 a(n) in base 6 is a repdigit.
+ * A048331 Numbers that are repdigits in base 6.
  * @author Sean A. Irvine
  */
 public class A048331 extends LinearRecurrence {

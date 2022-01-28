@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A158934 Decimal expansion of xi = (cos(Pi/5) - 1/2) / (sin(Pi/5) + 1/2) = 0.284079... .
+ * A158934 Decimal expansion of xi = (cos(Pi/5) - 1/2) / (sin(Pi/5) + 1/2).
  * @author Georg Fischer
  */
 public class A158934 extends DecimalExpansionSequence {

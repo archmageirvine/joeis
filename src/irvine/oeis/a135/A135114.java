@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A135114 Integers n such that 10^n+69 is a prime number.
+ * A135114 Integers k such that 10^k + 69 is a prime number.
  * @author Georg Fischer
  */
 public class A135114 extends PrimePositionSubsequence {

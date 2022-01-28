@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.a000.A000040;
 
 /**
- * A057062 Let R(i,j) be the infinite square array with antidiagonals 1; 2, 3; 4, 5, 6; ...; the n-th prime is in antidiagonal a(n).
+ * A057062 Let R(i,j) be the infinite square array with antidiagonals 1; 2,3; 4,5,6; ...; the n-th prime is in antidiagonal a(n).
  * @author Georg Fischer
  */
 public class A057062 extends A057036 {

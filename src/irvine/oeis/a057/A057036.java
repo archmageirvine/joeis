@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005408;
 
 /**
- * A057036 Let R(i,j) be the rectangle with antidiagonals 1; 2, 3; 4, 5, 6; ...; each k is an R(i(k),j(k)) and A057036(n)=i(2n-1).
+ * A057036 Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; each k is an R(i(k),j(k)) and A057036(n)=i(2n-1).
  * @author Georg Fischer
  */
 public class A057036 implements Sequence {

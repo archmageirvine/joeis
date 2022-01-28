@@ -6,7 +6,7 @@ package irvine.oeis.a158;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A158570 A007814((2n-1)!!+1).
+ * A158570 a(n) = A007814((2n-1)!! + 1).
  * @author Georg Fischer
  */
 public class A158570 extends GeneratingFunctionSequence {

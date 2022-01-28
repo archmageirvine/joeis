@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A135118 Integers n such that 10^n+51 is a prime number.
+ * A135118 Integers k such that 10^k + 51 is a prime number.
  * @author Georg Fischer
  */
 public class A135118 extends PrimePositionSubsequence {

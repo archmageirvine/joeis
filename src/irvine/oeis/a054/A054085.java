@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 /**
- * A054085 Order of n in the permutation A054084 of the natural numbers.
+ * A054085 a(n) = order of in the permutation A054084 of the natural numbers if this order exists; a(n) = -1 otherwise.
  * @author Sean A. Irvine
  */
 public class A054085 extends A054083 {

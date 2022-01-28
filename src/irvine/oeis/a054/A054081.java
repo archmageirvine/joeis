@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A054081 Array T by antidiagonals: for n &gt;= 0 and k &gt;= 1, let p(k)=least number in N not already an a(i), q(k)=p(k)+k+n-1, a(p(k))=q(k), a(q(k))=p(k); then for h&gt;=1, T(n,h)=a(h).
+ * A054081 Array T by antidiagonals: for n &gt;= 0 and k &gt;= 1, let p(k)=least positive integer not already in a(i), q(k)=p(k)+k+n-1, a(p(k))=q(k), a(q(k))=p(k); then for h&gt;=1, T(n,h)=a(h).
  * @author Sean A. Irvine
  */
 public class A054081 implements Sequence {

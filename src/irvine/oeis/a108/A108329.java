@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A108329 Integers n such that 10^n-27 is prime.
+ * A108329 Integers k such that 10^k - 27 is prime.
  * @author Georg Fischer
  */
 public class A108329 extends PrimePositionSubsequence {

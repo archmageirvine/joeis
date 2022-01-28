@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 import irvine.oeis.a034.A034936;
 /**
- * A153282 Numbers n such that 3*n+4 is not prime.
+ * A153282 Numbers k such that 3*k + 4 is not prime.
  * @author Georg Fischer
  */
 public class A153282 extends ComplementSequence {

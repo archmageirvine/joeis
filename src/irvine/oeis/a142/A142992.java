@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A142992 Square array, read by antidiagonals, of the crystal ball sequences for the root lattices of type C_n.
+ * A142992 Square array, read by ascending antidiagonals, of the crystal ball sequences for the root lattices of type C_n.
  * T(n,k) = sum {i = 0..n} C(2*n, 2*i)*C(k+i,n).
  * @author Georg Fischer
  */

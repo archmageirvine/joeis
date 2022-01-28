@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A330729 Numbers n that are divisible by all integers less than or equal to the cube root of n.
+ * A330729 Numbers k that are divisible by all integers less than or equal to the cube root of k.
  * @author Georg Fischer
  */
 public class A330729 extends FiniteSequence {

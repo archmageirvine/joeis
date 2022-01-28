@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005490 From expansion of falling factorials.
+ * A005490 Number of partitions of [n] where the first k elements are marked (0 &lt;= k &lt;= n-1) and at least k blocks contain their own index.
  * @author Sean A. Irvine
  */
 public class A005490 extends MemoryFunction2<Integer, Z> implements Sequence {

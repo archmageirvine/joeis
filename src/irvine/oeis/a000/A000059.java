@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000059 Numbers n such that (2n)^4 + 1 is prime.
+ * A000059 Numbers k such that (2k)^4 + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A000059 implements Sequence {

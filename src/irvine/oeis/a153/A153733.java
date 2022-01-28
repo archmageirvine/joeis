@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000265;
 
 /**
- * A153733 Remove all trailing ones in binary representation of n.
+ * A153733 Remove all trailing 1's in the binary representation of n.
  * @author Georg Fischer
  */
 public class A153733 extends A000265 {

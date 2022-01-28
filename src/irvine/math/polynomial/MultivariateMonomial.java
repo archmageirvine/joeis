@@ -44,6 +44,20 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
   }
 
   /**
+   * Create the monomial <code>coeff * x_index^power</code>.
+   * @param index variable index
+   * @param power exponent
+   * @param coeff coefficient
+   * @return monomial
+   */
+  public static MultivariateMonomial create(final int index, final long power, final Q coeff) {
+    final MultivariateMonomial x = new MultivariateMonomial();
+    x.add(index, power);
+    x.setCoefficient(coeff);
+    return x;
+  }
+
+  /**
    * Create the monomial <code>x_index^power</code>.
    * @param index variable index
    * @param power exponent

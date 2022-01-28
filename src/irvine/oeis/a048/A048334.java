@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048334 a(n) in base 9 is a repdigit.
+ * A048334 Numbers that are repdigits in base 9.
  * @author Sean A. Irvine
  */
 public class A048334 extends LinearRecurrence {

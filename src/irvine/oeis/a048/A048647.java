@@ -5,7 +5,7 @@ import irvine.oeis.a248.A248813;
 import irvine.oeis.triangle.ArraySelector;
 
 /**
- * A048647 Write n in base 4, then replace each digit with its base-4 negative.
+ * A048647 Write n in base 4, then replace each digit '1' with '3' and vice versa and convert back to decimal.
  * @author Georg Fischer
  */
 public class A048647 extends ArraySelector {

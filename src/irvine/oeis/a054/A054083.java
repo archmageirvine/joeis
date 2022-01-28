@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A054083 Order of n in the permutation A054082 of the natural numbers.
+ * A054083 a(n) = order of in the permutation A054082 of the natural numbers if this order exists; a(n) = -1 otherwise.
  * @author Sean A. Irvine
  */
 public class A054083 implements Sequence {

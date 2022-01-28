@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.a000.A000045;
 
 /**
- * A057042 Let R(i,j) be the rectangle with antidiagonals 1; 2, 3; 4, 5, 6; ...; the n-th Fibonacci number is in antidiagonal a(n).
+ * A057042 Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; the n-th Fibonacci number is in antidiagonal a(n).
  * @author Georg Fischer
  */
 public class A057042 extends A057036 {

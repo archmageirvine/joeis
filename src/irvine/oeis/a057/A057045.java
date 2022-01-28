@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A057045 Let R(i,j) be the rectangle with antidiagonals 1; 2, 3; 4, 5, 6; ...; the n-th Lucas number is in antidiagonal a(n).
+ * A057045 Let R(i,j) be the rectangle with antidiagonals 1; 2,3; 4,5,6; ...; the n-th Lucas number is in antidiagonal a(n).
  * @author Georg Fischer
  */
 public class A057045 extends A057036 {

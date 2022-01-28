@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032911 Numbers whose set of base-4 digits is {1,3}.
+ * A032911 Numbers whose set of base-4 digits is a subset of {1,3}.
  * @author Sean A. Irvine
  */
 public class A032911 extends MemorySequence {

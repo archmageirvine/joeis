@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A107084 Integers n such that 10^n+33 is prime.
+ * A107084 Integers k such that 10^k + 33 is prime.
  * @author Georg Fischer
  */
 public class A107084 extends PrimePositionSubsequence {

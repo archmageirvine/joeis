@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A135113 Integers n such that 10^n+67 is a prime number.
+ * A135113 Integers k such that 10^k + 67 is a prime number.
  * @author Georg Fischer
  */
 public class A135113 extends PrimePositionSubsequence {

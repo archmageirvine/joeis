@@ -5,7 +5,7 @@ package irvine.oeis.a219;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A219070 (46*n^5 + 30*n^4 + 15*n^3 - n) / 30.
+ * A219070 a(n) = (46*n^5 + 30*n^4 + 15*n^3 - n) / 30.
  * @author Georg Fischer
  */
 public class A219070 extends HolonomicRecurrence {

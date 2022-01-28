@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A153355 Numbers n such that 5n-1 is a prime.
+ * A153355 Numbers k such that 5k-1 is a prime.
  * @author Georg Fischer
  */
 public class A153355 extends PrimePositionSubsequence {

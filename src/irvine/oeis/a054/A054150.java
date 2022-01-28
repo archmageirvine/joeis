@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a020.A020669;
 
 /**
- * A054150 Number of positive integers &lt;= 2^n of form x^2 + 5 y^2.
+ * A054150 Number of positive integers &lt;= 2^n of the form x^2 + 5*y^2.
  * @author Sean A. Irvine
  */
 public class A054150 implements Sequence {

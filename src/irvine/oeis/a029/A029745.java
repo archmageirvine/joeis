@@ -4,7 +4,7 @@ package irvine.oeis.a029;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A029745 Expansion of (1+2x+6x^2+x^3)/(1-2x^2).
+ * A029745 Expansion of (1 + 2x + 6x^2 + x^3)/(1 - 2x^2).
  * @author Georg Fischer
  */
 public class A029745 extends LinearRecurrence {

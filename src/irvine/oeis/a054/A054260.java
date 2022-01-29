@@ -1,6 +1,7 @@
 package irvine.oeis.a054;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 import irvine.factor.prime.Fast;
@@ -21,8 +22,19 @@ public class A054260 implements Sequence {
   private Z mBest = null;
   private int mBestLength = Integer.MAX_VALUE;
 
+  private static final Comparator<String> COMPARATOR = new Comparator<String>() {
+    @Override
+    public int compare(final String a, final String b) {
+      final int c = Integer.compare(b.length(), a.length());
+      if (c != 0) {
+        return c;
+      }
+      return a.compareTo(b);
+    }
+  };
+
   private boolean check(final String s, final long maxPrime) {
-    for (long p = 2; p <= maxPrime; p = mPrime.nextPrime(p)) {
+    for (long p = maxPrime; p >= 2; p = mPrime.prevPrime(p)) {
       if (!s.contains(String.valueOf(p))) {
         return false;
       }
@@ -60,7 +72,8 @@ public class A054260 implements Sequence {
 
   private void pack(final StringBuilder s, final int remaining, final boolean[] used) {
     //System.out.println(s + " " + remaining + " " + Arrays.toString(used));
-    if (s.length() > mBestLength) {
+    final int slen = s.length();
+    if (slen > mBestLength) {
       return; // cannot beat existing solution
     }
     if (remaining == 0) {
@@ -73,14 +86,14 @@ public class A054260 implements Sequence {
             StringUtils.message("Best is now: " + mBest + " (no extra digits were required)");
           }
         }
-      } else {
+      } else if (slen < mBestLength) {
         for (int digit = 0; digit < 10; ++digit) {
           for (int k = digit == 0 ? 1 : 0; k <= s.length(); ++k) {
             final String r = s.substring(0, k) + digit + s.substring(k);
-            final Z rt = new Z(r);
-            if (rt.isProbablePrime() && check(r, mP)) {
-              if (mBest == null || rt.compareTo(mBest) < 0) {
-                mBest = rt;
+            final Z candidate = new Z(r);
+            if (mBest == null || candidate.compareTo(mBest) < 0) {
+              if (candidate.isProbablePrime() && check(r, mP)) {
+                mBest = candidate;
                 mBestLength = r.length();
                 if (mVerbose) {
                   StringUtils.message("Best is now: " + mBest);
@@ -124,6 +137,7 @@ public class A054260 implements Sequence {
     mP = mPrime.nextPrime(mP);
     mRequired.add(String.valueOf(mP));
     mRequired = squeeze(mRequired);
+    mRequired.sort(COMPARATOR);
     if (mVerbose) {
       StringUtils.message("Required: " + mRequired);
     }

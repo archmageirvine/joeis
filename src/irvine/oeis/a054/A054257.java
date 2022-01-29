@@ -1,0 +1,28 @@
+package irvine.oeis.a054;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A054256.
+ * @author Sean A. Irvine
+ */
+public class A054257 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      ++mN;
+      final StringBuilder sb = new StringBuilder();
+      for (int base = 10; base >= 2; --base) {
+        sb.append(Long.toString(mN, base));
+      }
+      if (new Z(sb).isProbablePrime()) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}
+

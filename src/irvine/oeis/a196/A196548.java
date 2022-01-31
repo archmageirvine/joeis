@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A196548 Decimal expansion of sum_{i&gt;=0} 1/((6*i+2)*(6*i+5)).
+ * A196548 Decimal expansion of Sum_{i&gt;=0} 1/((6*i+2)*(6*i+5)).
  * @author Georg Fischer
  */
 public class A196548 extends DecimalExpansionSequence {

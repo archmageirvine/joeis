@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006457 Number of elements in Z[ i ] whose `smallest algorithm' is &lt;= n.
+ * A006457 Number of elements in Z[ i ] whose 'smallest algorithm' is &lt;= n.
  * @author Sean A. Irvine
  */
 public class A006457 extends LinearRecurrence {

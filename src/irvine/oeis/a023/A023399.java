@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023399 If any power of 2 ends with k 2's and 7's, they must be the first k elements of this sequence in reverse order.
+ * A023399 If any power of 2 ends with k 2's and 7's, they must be the first k terms of this sequence in reverse order.
  * @author Sean A. Irvine
  */
 public class A023399 implements Sequence {

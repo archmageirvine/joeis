@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000290;
 
 /**
- * A054256.
+ * A054259 Squares having last digit equal to the sum of the other digits.
  * @author Sean A. Irvine
  */
 public class A054259 extends A000290 {

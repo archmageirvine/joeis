@@ -8,7 +8,7 @@ import irvine.oeis.a020.A020639;
 
 
 /**
- * A082068 Smallest common prime-divisor of n and sigma(n) = A000203(n); a(n)=1 if no common prime-divisor was found.
+ * A082068 Smallest common prime-divisor of n and sigma(n) = A000203(n); a(n)=1 if no common prime-divisor exists.
  * Formula: <code>a(n) = A020639(A009194(n)).</code>
  * @author Georg Fischer
  */

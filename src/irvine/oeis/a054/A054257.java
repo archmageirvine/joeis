@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054256.
+ * A054257 Concatenation of n in base 10 down up to base 2 is prime, all numbers are interpreted as decimals.
  * @author Sean A. Irvine
  */
 public class A054257 implements Sequence {

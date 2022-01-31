@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A212453 Ceiling(4n + log(4n)).
+ * A212453 a(n) = ceiling(4n + log(4n)).
  * @author Georg Fischer
  */
 public class A212453 extends FloorSequence {

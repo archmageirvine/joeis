@@ -92,7 +92,6 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
 
   /**
    * Gets an element of the triangle.
-   * The requirement is that all elements <code>T(0..n-1,m), T(n,0..k)</code>were already computed.
    * @param n row number
    * @param k column number
    * @return T(n,k), or 0 for k &lt; 0 or k &gt; n.
@@ -105,8 +104,7 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
     } else if (n < mRow) {
       return get(n)[k];
     } else {
-      // System.err.println("assertion failed in Triangle.get(" + n + ", " + k + "), mIn=" + mIn);
-      return Z.ZERO;
+      return compute(n, k);
     }
   }
 
@@ -192,7 +190,6 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
 
   /**
    * Debugging output of the whole triangle
-   * @param n row number
    */
   public void print() {
     for (int n = 0; n <= mRow; ++n) {

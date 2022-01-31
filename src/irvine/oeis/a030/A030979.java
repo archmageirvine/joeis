@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000984;
 
 /**
- * A030979 Numbers n such that binomial(2n,n) is not divisible by 3, 5 or 7.
+ * A030979 Numbers k such that binomial(2k,k) is not divisible by 3, 5 or 7.
  * @author Sean A. Irvine
  */
 public class A030979 extends A000984 {

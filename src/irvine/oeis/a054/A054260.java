@@ -10,17 +10,17 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A054256.
+ * A054260 Smallest prime that contains all of the first n primes as substrings.
  * @author Sean A. Irvine
  */
 public class A054260 implements Sequence {
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  protected final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Fast mPrime = new Fast();
   private long mP = 1;
-  private List<String> mRequired = new ArrayList<>();
-  private Z mBest = null;
-  private int mBestLength = Integer.MAX_VALUE;
+  protected List<String> mRequired = new ArrayList<>();
+  protected Z mBest = null;
+  protected int mBestLength = Integer.MAX_VALUE;
 
   private static final Comparator<String> COMPARATOR = new Comparator<String>() {
     @Override
@@ -43,7 +43,7 @@ public class A054260 implements Sequence {
   }
 
   // Remove obviously redundant strings from the list
-  private List<String> squeeze(final List<String> lst) {
+  private static List<String> squeeze(final List<String> lst) {
     final List<String> res = new ArrayList<>();
     outer:
     for (final String a : lst) {
@@ -57,7 +57,7 @@ public class A054260 implements Sequence {
     return res;
   }
 
-  private boolean endsWith(final StringBuilder s, final String query, final int offset) {
+  static boolean endsWith(final StringBuilder s, final String query, final int offset) {
     if (offset > s.length()) {
       return false;
     }
@@ -66,11 +66,10 @@ public class A054260 implements Sequence {
         return false;
       }
     }
-    //System.out.println("Found: " + query + " " + offset);
     return true;
   }
 
-  private void pack(final StringBuilder s, final int remaining, final boolean[] used) {
+  protected void pack(final StringBuilder s, final int remaining, final boolean[] used) {
     //System.out.println(s + " " + remaining + " " + Arrays.toString(used));
     final int slen = s.length();
     if (slen > mBestLength) {

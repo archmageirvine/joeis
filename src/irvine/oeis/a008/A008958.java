@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008958 Triangle of central factorial numbers 4^k T(2n+1,2n+1-2k).
+ * A008958 Triangle of central factorial numbers 4^k T(2n+1, 2n+1-2k).
  * @author Sean A. Irvine
  */
 public class A008958 implements Sequence {

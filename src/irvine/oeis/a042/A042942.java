@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicIntArray;
 public class A042942 implements Sequence {
 
   protected long mN = -1;
-  private LongDynamicIntArray mSeq = new LongDynamicIntArray();
+  protected LongDynamicIntArray mSeq = new LongDynamicIntArray();
   protected long mLimit = 1;
 
   protected void rewrite() {

@@ -11,8 +11,11 @@ import irvine.util.array.LongDynamicIntArray;
 public class A000002 implements Sequence {
 
   protected long mN = -1;
-  private LongDynamicIntArray mSeq = new LongDynamicIntArray();
+  protected LongDynamicIntArray mSeq = new LongDynamicIntArray();
   protected long mLimit = 2;
+  {
+    mSeq.set(0, 3);
+  }
 
   protected void rewrite() {
     // Rewrite entire sequence.  There are probably much more space
@@ -77,7 +80,6 @@ public class A000002 implements Sequence {
   public Z next() {
     // Generation by method of Lagarias
     if (++mN == 0) {
-      mSeq.set(0, 3);
       return Z.ONE;
     }
     if (mN >= mLimit) {

@@ -8,7 +8,7 @@ import irvine.oeis.a009.A009223;
 
 
 /**
- * A082064 Greatest common prime-divisor of phi(n) and sigma(n) = A000203(n); a(n)=1 if no common prime-divisor was found.
+ * A082064 Greatest common prime-divisor of phi(n) and sigma(n) = A000203(n); a(n)=1 if no common prime-divisor exists.
  * Formula: <code>a(n) = A006530(A009223(n)).</code>
  * @author Georg Fischer
  */

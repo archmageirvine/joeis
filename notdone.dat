@@ -1781,3 +1781,10 @@ A053873 Numbers n such that OEIS sequence A_n contains n
 A053991 Number of distinct residues of generalized Catalan number 1/((n^2-1)*k + 1)*binomial(n^2*k, k) modulo n^2 as k runs through the positive integers.
 A053994 Nonattacking queens on a 2n+1 X 2n+1 toroidal board, solutions which differ only by rotation, reflection or torus shift count only once
 A054246 Non-Cayley-isomorphic circulant p^2-tournaments, indexed by odd primes p.
+A054316 Number of unlabeled 2-connected 3-edge-connected graphs with n nodes [complicated looking]
+A054317 Number of unlabeled 2-connected minimally 2-edge-connected graphs with n nodes
+A054345 Number of inequivalent sublattices of index n in square lattice, where two lattices are considered equivalent if one can be rotated to give the other.
+A054346 Number of inequivalent sublattices of index n in square lattice, where two lattices are considered equivalent if one can be rotated or reflected to give the other.
+A054359 Number of polyominoes with n cells that tile the plane.
+A054360 Number of polyominoes with n cells that do not tile the plane
+A054361 Number of polyominoes with n cells without holes that do not tile the plane.

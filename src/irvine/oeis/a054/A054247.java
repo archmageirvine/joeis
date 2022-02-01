@@ -16,7 +16,7 @@ public class A054247 implements Sequence {
     ++mN;
     return Z.ONE.shiftLeft(mN * mN).add(Z.ONE.shiftLeft((mN * mN + 7) / 4))
       .add((mN & 1) == 1
-        ? Z.ONE.shiftLeft((mN * mN + 1) / 2).add(Z.ONE.shiftLeft((mN * mN + mN + 4)/ 2))
+        ? Z.ONE.shiftLeft((mN * mN + 1) / 2).add(Z.ONE.shiftLeft((mN * mN + mN + 4) / 2))
         : Z.THREE.shiftLeft(mN * mN / 2).add(Z.ONE.shiftLeft((mN * mN + mN + 2) / 2)))
       .divide(8);
   }

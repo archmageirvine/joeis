@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A054379 implements Sequence {
 
-  private final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;
   private Polynomial<Q> mA = Polynomial.create(Q.NEG_ONE, Q.TWO);
 

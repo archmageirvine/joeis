@@ -19,7 +19,7 @@ public class A054352 implements Sequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    long s = mS;
+    final long s = mS;
     while (mT < s) {
       mS = mA.next().longValueExact();
       ++mT;

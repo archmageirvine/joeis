@@ -14,7 +14,7 @@ public class A054268 implements Sequence {
   private long mN = 3;
 
   private boolean isRepDigit(long sum) {
-    long r = sum % 10;
+    final long r = sum % 10;
     sum /= 10;
     while (sum != 0) {
       if (sum % 10 != r) {

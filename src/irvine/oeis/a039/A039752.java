@@ -22,8 +22,8 @@ public class A039752 implements Sequence {
     return sum;
   }
 
-  protected Z select(final long mN, final Z sum) {
-    return Z.valueOf(mN);
+  protected Z select(final long n, final Z sum) {
+    return Z.valueOf(n);
   }
 
   @Override

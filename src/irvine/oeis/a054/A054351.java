@@ -12,7 +12,7 @@ public class A054351 extends A000002 {
 
   private final StringBuilder mS = new StringBuilder();
   private final Sequence mRowLengths = new A054352();
-  long mN = 0;
+  private long mN = 0;
 
   @Override
   public Z next() {

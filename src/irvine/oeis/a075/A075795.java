@@ -12,12 +12,8 @@ import irvine.oeis.a001.A001222;
 public class A075795 implements Sequence {
 
   final Sequence mA001222 = new A001222();
-  protected long mN;
-  /** Construct the sequence. */
-  public A075795() {
-    mN = 0;
-  }
-  
+  protected long mN = 0;
+
   @Override
   public Z next() {
     ++mN;

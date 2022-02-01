@@ -18,7 +18,7 @@ public class A000321 implements Sequence {
     if (++mN == 0) {
       return mA;
     } else if (mN != 1) {
-      final Z t = mB.negate().subtract(mA.multiply(2 * (mN - 1)));
+      final Z t = mB.negate().subtract(mA.multiply(2L * (mN - 1)));
       mA = mB;
       mB = t;
     }

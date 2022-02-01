@@ -22,11 +22,16 @@ public class A039752 implements Sequence {
     return sum;
   }
 
+  protected Z select(final long mN, final Z sum) {
+    return Z.valueOf(mN);
+  }
+
   @Override
   public Z next() {
     while (true) {
-      if (f(++mN).equals(f(mN + 1))) {
-        return Z.valueOf(mN);
+      final Z sum = f(++mN);
+      if (sum.equals(f(mN + 1))) {
+        return select(mN, sum);
       }
     }
   }

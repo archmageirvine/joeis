@@ -1788,3 +1788,4 @@ A054346 Number of inequivalent sublattices of index n in square lattice, where t
 A054359 Number of polyominoes with n cells that tile the plane.
 A054360 Number of polyominoes with n cells that do not tile the plane
 A054361 Number of polyominoes with n cells without holes that do not tile the plane.
+A054384 Number of inequivalent sublattices of index n in hexagonal lattice, where two lattices are considered equivalent if one can be rotated to give the other.

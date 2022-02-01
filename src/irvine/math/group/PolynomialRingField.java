@@ -6,6 +6,8 @@ import java.util.Map;
 
 import irvine.math.api.Field;
 import irvine.math.api.Group;
+import irvine.math.api.Matrix;
+import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.Discriminant;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.PolynomialUtils;
@@ -781,5 +783,30 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
     final Polynomial<E> sm = divide(s0, m);
     final Polynomial<E> tm = divide(t0, m);
     return swapped ? makeExtendedGcdResult(d, sm, tm) : makeExtendedGcdResult(d, tm, sm);
+  }
+
+  /**
+   * Compute the resultant of a pair of polynomials.
+   * @param a first polynomial
+   * @param b second polynomial
+   * @return resultant
+   */
+  public E resultant(final Polynomial<E> a, final Polynomial<E> b) {
+    final int d = a.degree();
+    final int e = b.degree();
+    final int n = d + e;
+    final MatrixField<E> matrixField = new MatrixField<>(n, mElementField);
+    final Matrix<E> m = new DefaultMatrix<>(n, n, mElementField.zero());
+    for (int k = 0; k < e; ++k) {
+      for (int j = 0; j <= d && j + k < n; ++j) {
+        m.set(j + k, k, a.coeff(j));
+      }
+    }
+    for (int k = 0; k < d; ++k) {
+      for (int j = 0; j <= e && j + k < n; ++j) {
+        m.set(j + k, k + e, b.coeff(j));
+      }
+    }
+    return matrixField.det(m);
   }
 }

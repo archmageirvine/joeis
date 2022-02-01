@@ -482,6 +482,4 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     }
     return res;
   }
-
-
 }

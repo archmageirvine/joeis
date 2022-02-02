@@ -261,6 +261,21 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
   }
 
   /**
+   * The product of a function from lo to hi inclusive.
+   * @param lo lower bound
+   * @param hi upper bound
+   * @param function the function
+   * @return product
+   */
+  public E product(final int lo, final int hi, final Function<Integer, E> function) {
+    E product = one();
+    for (int k = lo; k <= hi; ++k) {
+      product = multiply(product, function.apply(k));
+    }
+    return product;
+  }
+
+  /**
    * The sum of a function from lo to hi inclusive.
    * @param lo lower bound
    * @param hi upper bound

@@ -10,7 +10,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A054399 extends DecimalExpansionSequence {
 
-  static CR N = new CR() {
+  static final CR N = new CR() {
     @Override
     protected Z approximate(final int precision) {
       final Z one = CR.ONE.getApprox(precision);

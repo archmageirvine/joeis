@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A208661 Number of paths through the subset array of {1, 2,...,n} that have range a subset of {1, 2}; see Comments at A208650.
+ * A208661 Number of paths through the subset array of {1,2,...,n} that have range a subset of {1,2}; see Comments at A208650.
  * (2^n)*Product[Binomial[n - 1, i], {i, 1, n - 1}]
  * @author Georg Fischer
  */

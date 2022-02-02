@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A208651 Number of paths through the subset array whose trace is a permutation of (1, 2,...,n); see Comments.
+ * A208651 Number of paths through the subset array whose trace is a permutation of (1,2,...,n); see Comments.
  * @author Georg Fischer
  */
 public class A208651 implements Sequence {

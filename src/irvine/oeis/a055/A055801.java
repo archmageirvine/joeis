@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A055801 Triangle T read by rows: T(i, 0)=T(i,i)=1, T(i,j) = Sum_{k=1..floor(n/2)} T(i-2k, j-2k+1) for 1&lt;=j&lt;=i-1, where T(m,n) := 0 if m&lt;0 or n&lt;0.
+ * A055801 Triangle T read by rows: T(i,0)=T(i,i)=1, T(i,j) = Sum_{k=1..floor(n/2)} T(i-2k, j-2k+1) for 1&lt;=j&lt;=i-1, where T(m,n) := 0 if m&lt;0 or n&lt;0.
  * @author Georg Fischer
  */
 public class A055801 extends Triangle {

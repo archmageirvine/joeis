@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A208654 Number of palindromic paths through the subset array of {1, 2,...,n}; see Comments.
+ * A208654 Number of palindromic paths through the subset array of {1,2,...,n}; see Comments.
  * @author Georg Fischer
  */
 public class A208654 implements Sequence {

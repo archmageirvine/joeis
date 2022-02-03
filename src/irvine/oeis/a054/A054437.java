@@ -11,7 +11,7 @@ public class A054437 implements Sequence {
 
   private long mN = 0;
 
-  private long findTarget(long a, long b, long target) {
+  private long findTarget(long a, long b, final long target) {
     if (a == target) {
       return 0;
     }

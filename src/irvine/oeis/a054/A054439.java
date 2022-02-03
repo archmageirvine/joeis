@@ -1,13 +1,13 @@
-package irvine.oeis.a038;
+package irvine.oeis.a054;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
- * A038570 Second derivative of n.
+ * A054439 Fourth derivative of n.
  * @author Sean A. Irvine
  */
-public class A038570 extends A038554 {
+public class A054439 extends A054438 {
 
   @Override
   public Z next() {

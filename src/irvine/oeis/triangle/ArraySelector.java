@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 public class ArraySelector implements Sequence {
 
   protected int mOffset; // first index of this sequence
-  private Sequence mSeq; // the underlying sequence
+  private final Sequence mSeq; // the underlying sequence
   protected int mRow0; // first row index
   protected int mCol0; // first columns index 
   private final Function<Integer, int[]> mSelect; // function giving a pair of indexes (coordinates) into the underlying triangle

@@ -14,6 +14,13 @@ public class A211266 implements Sequence {
    */
   @FunctionalInterface
   public interface Long3Cond {
+    /**
+     * Evaluate a function.
+     * @param n parameter
+     * @param y parameter
+     * @param z parameter
+     * @return evaluation
+     */
     boolean evaluate(long n, long y, long z);
   }
 

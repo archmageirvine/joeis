@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A228933 Optimal ascending continued fraction expansion of phi-1=1/phi=(sqrt(5)-1)/2 .
- * Flatten[{2, 4, RecurrenceTable[{a[n] == a[n-1]^2 - 2, a[3] == -18}, a, {n, 3, 10}]}]
+ * <code>Flatten[{2, 4, RecurrenceTable[{a[n] == a[n-1]^2 - 2, a[3] == -18}, a, {n, 3, 10}]}]</code>.
  * @author Georg Fischer
  */
 public class A228933 implements Sequence {

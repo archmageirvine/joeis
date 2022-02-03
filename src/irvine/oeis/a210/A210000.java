@@ -17,6 +17,15 @@ public class A210000 implements Sequence {
    */
   @FunctionalInterface
   public interface Long4 {
+    /**
+     * Evaluate a function.
+     * @param n parameter
+     * @param w parameter
+     * @param x parameter
+     * @param y parameter
+     * @param z parameter
+     * @return evaluation
+     */
     long evaluate(long w, long x, long y, long z);
   }
 

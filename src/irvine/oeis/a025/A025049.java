@@ -9,11 +9,13 @@ import irvine.oeis.a059.A059882;
  */
 public class A025049 extends A059882 {
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 0) {
+      return Z.ONE;
+    }
     Z sum = Z.ZERO;
     for (long k = 1; k <= mN; ++k) {
       sum = sum.add(mS.get(mN, k));

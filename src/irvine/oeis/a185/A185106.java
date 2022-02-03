@@ -4,7 +4,7 @@ import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A185106 Column 4 of A181783.
- * a(n)= (6n+1)*a(n-1) -(11n+6)*(n-1)*a(n-2)*a(n-3) -6*(n-1)*(n-2)*(n-3)*a(n-4)
+ * <code>a(n)= (6n+1)*a(n-1) -(11n+6)*(n-1)*a(n-2)*a(n-3) -6*(n-1)*(n-2)*(n-3)*a(n-4)</code>.
  * @author Georg Fischer
  */
 public class A185106 extends HolonomicRecurrence {

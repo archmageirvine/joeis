@@ -46,7 +46,7 @@ public class A051421 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A051421() {
-    super(-1, -1, false, false, false);
+    super(0, 0, false, false, false);
   }
 
   @Override
@@ -72,6 +72,6 @@ public class A051421 extends ParallelGenerateGraphsSequence {
 
   @Override
   public Z next() {
-    return super.next().max(Z.ONE);
+    return super.next();
   }
 }

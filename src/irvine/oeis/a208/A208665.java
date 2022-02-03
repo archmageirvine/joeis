@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A208665 Numbers that match odd ternary polynomials; see Comments.
- * a(n) = 3*fromdigits(digits(n, 3), 9);
+ * <code>a(n) = 3*fromdigits(digits(n, 3), 9)</code>.
  * @author Georg Fischer
  */
 public class A208665 implements Sequence {

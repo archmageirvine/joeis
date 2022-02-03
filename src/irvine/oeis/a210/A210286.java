@@ -16,6 +16,15 @@ public class A210286 implements Sequence {
    */
   @FunctionalInterface
   public interface Long5Cond {
+    /**
+     * Evaluate a function.
+     * @param n parameter
+     * @param w parameter
+     * @param x parameter
+     * @param y parameter
+     * @param z parameter
+     * @return evaluation
+     */
     boolean evaluate(long n, long w, long x, long y, long z);
   }
 

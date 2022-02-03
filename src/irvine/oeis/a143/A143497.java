@@ -5,7 +5,7 @@ import irvine.oeis.triangle.Triangle;
 
 /**
  * A143497 Triangle of unsigned 2-Lah numbers.
- * Recurrence: T(n,k) = (n+k-1)*T(n-1,k) + T(n-1,k-1) for n,k >= 2
+ * Recurrence: <code>T(n,k) = (n+k-1)*T(n-1,k) + T(n-1,k-1) for n,k &gt;= 2</code>.
  * @author Georg Fischer
  */
 public class A143497 extends Triangle {

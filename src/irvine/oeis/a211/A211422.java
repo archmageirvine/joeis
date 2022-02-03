@@ -16,6 +16,14 @@ public class A211422 implements Sequence {
    */
   @FunctionalInterface
   public interface Long4Cond {
+    /**
+     * Evaluate a function.
+     * @param n parameter
+     * @param w parameter
+     * @param x parameter
+     * @param y parameter
+     * @return evaluation
+     */
     boolean evaluate(long n, long w, long x, long y);
   }
 

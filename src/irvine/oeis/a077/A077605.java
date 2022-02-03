@@ -5,7 +5,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
  * A077605 Left summing matrix, S.
- * S(n, k)=1 if 1<=k<=n, else S(n, k)=0.
+ * S(n, k)=1 if 1&lt;=k&lt;=n, else S(n, k)=0.
  * @author Georg Fischer
  */
 public class A077605 extends UpperLeftTriangle {

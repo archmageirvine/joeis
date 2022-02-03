@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A246959 Numbers of (undirected) Hamiltonian cycles in the n-Sierpi\u0144ski sieve graph.
- * Join[{1, 1}, RecurrenceTable[{a[3] == 8, a[n] == (3 a[n - 1])^3}, a, {n, 3, 8}]]
+ * <code>Join[{1, 1}, RecurrenceTable[{a[3] == 8, a[n] == (3 a[n - 1])^3}, a, {n, 3, 8}]]</code>
  * @author Georg Fischer
  */
 public class A246959 implements Sequence {

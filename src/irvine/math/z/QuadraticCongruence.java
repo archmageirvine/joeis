@@ -31,7 +31,7 @@ public class QuadraticCongruence {
     }
     final TreeSet<Z> res = new TreeSet<>();
     res.add(t);
-    res.add(p.subtract(t));
+    res.add(p.subtract(t).mod(p));
     return res;
   }
 
@@ -46,9 +46,18 @@ public class QuadraticCongruence {
     if (e == 1) {
       return solve(a, p);
     }
+    if (a.isZero()) {
+      final TreeSet<Z> res = new TreeSet<>();
+      res.add(Z.ZERO);
+      res.add(p.pow(e - 1));
+      return res;
+    }
     if (Z.TWO.equals(p)) {
       if (e == 2) {
         return a.mod(4) == 1 ? MOD4 : Collections.emptySet();
+      }
+      if (Z.FOUR.equals(a)) { // todo remove this ugly special case?
+        return Arrays.asList(Z.TWO, Z.SIX);
       }
       if (a.mod(8) != 1) {
         return Collections.emptySet();
@@ -56,7 +65,47 @@ public class QuadraticCongruence {
       if (e == 3) {
         return MOD8;
       }
-      return null; //todo
+
+      // Hensel Lemma
+      final Collection<Z> prev = solve(a, p, e - 1);
+      if (prev.isEmpty()) {
+        return prev;
+      }
+      final Z pe = p.pow(e);
+      for (final Z x : prev) {
+        final Z z = x.multiply2().modInverse(p.pow(e - 1));
+        for (final Z h : solve(z, p, e - 1)) {
+          Z r = x.subtract(x.square().subtract(a).multiply(h)).mod(pe);
+          if (r.signum() < 0) {
+            r = r.add(pe);
+          }
+          final TreeSet<Z> res = new TreeSet<>();
+          res.add(r);
+          res.add(pe.subtract(r));
+          return res;
+        }
+      }
+
+      return null;
+    }
+    // Hensel Lemma
+    final Collection<Z> prev = solve(a, p, e - 1);
+    if (prev.isEmpty()) {
+      return prev;
+    }
+    final Z pe = p.pow(e);
+    for (final Z x : prev) {
+      final Z z = x.multiply2().modInverse(p.pow(e - 1));
+      for (final Z h : solve(z, p, e - 1)) {
+        Z r = x.subtract(x.square().subtract(a).multiply(h)).mod(pe);
+        if (r.signum() < 0) {
+          r = r.add(pe);
+        }
+        final TreeSet<Z> res = new TreeSet<>();
+        res.add(r);
+        res.add(pe.subtract(r));
+        return res;
+      }
     }
     return null;
   }

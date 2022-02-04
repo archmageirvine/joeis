@@ -750,7 +750,7 @@ public class Z extends Number implements Comparable<Z> {
    */
   public Z modInverse(final Z n) {
     if (mSign <= 0 || n.mSign <= 0) {
-      throw new ArithmeticException("Zero or negative inverse attempt.");
+      throw new ArithmeticException("Inverse of " + this + " (mod " + n + ") not defined.");
     } else if (n.mSign == 1 && n.mValue[0] == 1) {
       throw new ArithmeticException("Modulus 1 not supported.");
     }

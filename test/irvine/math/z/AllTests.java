@@ -38,6 +38,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(Mul2Test.class);
     suite.addTestSuite(PowTest.class);
     suite.addTestSuite(PrimeTest.class);
+    suite.addTestSuite(QuadraticCongruenceTest.class);
     suite.addTestSuite(RootTest.class);
     suite.addTestSuite(ShiftTest.class);
     suite.addTestSuite(SqrTest.class);

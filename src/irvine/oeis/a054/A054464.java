@@ -18,7 +18,7 @@ public class A054464 implements Sequence {
 
   @Override
   public Z next() {
-    if (mN == 0) {
+    if (mN >= 0) { // temp should be == 0
       ++mN;
       return Z.FOUR;
     }
@@ -27,7 +27,7 @@ public class A054464 implements Sequence {
       mM = 0;
       final Z tens = Z.TEN.pow(mN);
       final Z t = tens.multiply(9L * ++mN + 1);
-      mA.addAll(QuadraticCongruence.solve(Z.ONE, Z.ONE, t.negate(), Z.FIVE, mN)); // todo handle powers of 2
+      mA.addAll(QuadraticCongruence.solve(Z.ONE, Z.ONE, t.negate(), tens.multiply(20), mN)); // todo handle powers of 2
     }
     return mA.get(mM);
   }

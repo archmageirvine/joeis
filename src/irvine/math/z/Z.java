@@ -1018,7 +1018,7 @@ public class Z extends Number implements Comparable<Z> {
    * and <code>b</code>, together with numbers <code>u</code> and
    * <code>v</code> such that <code>d=this * u+b * v</code>.
    * @param b second number
-   * @return three integers
+   * @return three integers <code>(gcd, u, v)</code>
    */
   public Z[] extendedGcd(final Z b) {
     return ExtendedEuclid.extendedEuclid(this, b);

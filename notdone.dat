@@ -1792,3 +1792,7 @@ A054384 Number of inequivalent sublattices of index n in hexagonal lattice, wher
 A054500	Indicator sequence for classification of nonattacking queens on n X n toroidal board.
 A054501 Multiplicity sequence for classification of nonattacking queens on n X n toroidal board
 A054502 Counting sequence for classification of nonattacking queens on n X n toroidal board.
+A054528 Triangle T(n,k) giving number of codewords with k runs in Varshamov-Tenengolts code VT_0(n) of length n (n >= 1, 1<=k<=n)
+A054529 Number of words with 3 runs in Varshamov-Tenengolts code VT_0(n) of length n
+A054530 Number of words with 4 runs in Varshamov-Tenengolts code VT_0(n) of length n
+A054536 Maximal size of binary code of length n and asymmetric distance 4

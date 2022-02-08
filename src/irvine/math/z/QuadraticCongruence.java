@@ -76,28 +76,27 @@ public class QuadraticCongruence {
         return prev;
       }
       final Z pe = p.pow(e);
+      final TreeSet<Z> res = new TreeSet<>();
       for (final Z x : prev) {
-        final Z z = x.multiply2().modInverse(p.pow(e - 1));
-        for (final Z h : solve(z, p, e - 1)) {
-          Z r = x.subtract(x.square().subtract(a).multiply(h)).mod(pe);
-          if (r.signum() < 0) {
-            r = r.add(pe);
+          final Z pe1 = p.pow(e - 1);
+          final Z x2 = x.multiply2();
+          final Z[] euc = x2.extendedGcd(pe1);
+          final Z z = x.subtract(x.square().subtract(a).multiply(euc[1])).mod(pe);
+          System.out.println(x2 + "*" + euc[1] + "+" + pe1 + "*" + euc[2] + "=" + euc[0] + " ---> " + z);
+          if (z.square().subtract(a).mod(pe).isZero()) {
+            // todo this check should be unecessary ??
+            res.add(z);
+            res.add(pe.subtract(z));
           }
-          final TreeSet<Z> res = new TreeSet<>();
-          res.add(r);
-          res.add(pe.subtract(r));
-          return res;
-        }
       }
-
-      return null;
+      System.out.println("Returning from Hensel with " + res);
+      return res;
     }
     // Hensel Lemma
     final Collection<Z> prev = solve(a, p, e - 1);
     if (prev.isEmpty()) {
       return prev;
     }
-    // Note: this one works unlike some of the others here!
     final Z pe = p.pow(e);
     for (final Z x : prev) {
       final Z pe1 = p.pow(e - 1);
@@ -124,19 +123,26 @@ public class QuadraticCongruence {
    * @return list of solutions
    */
   public static Collection<Z> solve(final Z a, final Z b, final Z c, final Z p, final int e) {
-    final Z d = b.square().subtract(a.multiply(c).multiply(4));
     final Z pe = p.pow(e);
-    System.out.println("Discriminant: " + d + " -> " + d.jacobi(pe));
+    final Z d = b.square().subtract(a.multiply(c).multiply(4));
+    System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " -> " + d.jacobi(pe));
+    if (b.mod(pe).isZero() && Z.ONE.equals(a)) {
+      System.out.println("Using b=0 shortcut");
+      return solve(pe.subtract(c), p, e);
+    }
     switch (d.jacobi(pe)) {
       case -1:
         return Collections.emptySet();
       case 0:
-        return Collections.singleton(p.subtract(b).modMultiply(a.multiply2().modInverse(pe), pe));
+        // todo is this dubious for p==2?
+        return Collections.singleton(p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], pe));
       default: // 1
         final TreeSet<Z> res = new TreeSet<>();
-        final Z inv = a.multiply2().modInverse(pe);
+        //final Z inv = a.multiply2().modInverse(pe);
         for (final Z s : solve(d, p, e)) {
-          res.add(s.subtract(b).modMultiply(inv, pe));
+          final Z[] euc = a.multiply2().extendedGcd(pe);
+          res.add(s.subtract(b).multiply(euc[1]));
+          //res.add(s.subtract(b).modMultiply(inv, pe));
         }
         return res;
     }
@@ -151,6 +157,15 @@ public class QuadraticCongruence {
    * @return list of solutions
    */
   public static Collection<Z> solve(final Z a, final Z b, final Z c, final Z n) {
+    System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + n + ")");
+    if (c.mod(n).isZero()) {
+      // Simplify to a linear congruence
+      Collection<Z> res = new TreeSet<>();
+      res.add(Z.ZERO);
+      final Z[] euc = a.extendedGcd(n);
+      res.add(euc[1].negate());
+      return res;
+    }
     if (n.isProbablePrime()) {
       return solve(a, b, c, n, 1);
     }

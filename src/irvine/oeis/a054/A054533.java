@@ -21,6 +21,6 @@ public class A054533 implements Sequence {
       ++mN;
       mM = 1;
     }
-    return Integers.SINGLETON.sumdiv(IntegerUtils.gcd(mN, mM), d -> Z.valueOf(d * Mobius.mobius(mN / d)));
+    return Integers.SINGLETON.sumdiv(IntegerUtils.gcd(mN, mM), d -> Z.valueOf((long) d * Mobius.mobius(mN / d)));
   }
 }

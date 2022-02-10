@@ -23,7 +23,7 @@ public class QuadraticCongruence {
    * @param p modulus
    * @return solutions
    */
-  public static Collection<Z> solve(Z a, final Z p) {
+  public static Collection<Z> solve(final Z a, final Z p) {
     System.out.println("Trying to solve x^2=" + a + " (mod " + p + ")");
 //    if (a.signum() < 0) {
 //      a = a.add(p);
@@ -46,7 +46,7 @@ public class QuadraticCongruence {
    * @return solutions
    */
   public static Collection<Z> solve(final Z a, final Z p, final int e) {
-    System.out.println("Trying to solve x^2=" + a + " (mod " + p + "^" +e + ")");
+    System.out.println("Trying to solve x^2=" + a + " (mod " + p + "^" + e + ")");
     if (e == 1) {
       return solve(a, p);
     }
@@ -160,7 +160,7 @@ public class QuadraticCongruence {
     System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + n + ")");
     if (c.mod(n).isZero()) {
       // Simplify to a linear congruence
-      Collection<Z> res = new TreeSet<>();
+      final Collection<Z> res = new TreeSet<>();
       res.add(Z.ZERO);
       final Z[] euc = a.extendedGcd(n);
       res.add(euc[1].negate());

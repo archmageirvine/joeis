@@ -18,7 +18,7 @@ public class A054513 extends A001918 {
 
   @Override
   public Z next() {
-    Z b = super.next();
+    final Z b = super.next();
     long lg = 0;
     Z t = Z.ONE;
     while (!Z.TEN.equals(t)) {

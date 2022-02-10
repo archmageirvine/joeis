@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054577 A Catalan-like sequence.
+ * A054578 Number of subsequences of {1..n} such that all differences of pairs of terms are distinct (i.e., number of Golomb rulers on {1..n}).
  * @author Sean A. Irvine
  */
 public class A054578 implements Sequence {

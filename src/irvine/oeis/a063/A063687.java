@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a340.A340811;
 
 /**
- * A340814.
+ * A063687 Number of 2-trees rooted at any symmetric edge.
  * @author Sean A. Irvine
  */
 public class A063687 extends A340811 {

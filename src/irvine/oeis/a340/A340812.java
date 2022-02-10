@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A340814.
+ * A340812 Array read by antidiagonals: T(n,k) is the number of unlabeled oriented k-gonal 2-trees with n oriented polygons, n &gt;= 0, k &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A340812 extends MemoryFunction2<Integer, Z> implements Sequence {

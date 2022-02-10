@@ -9,7 +9,7 @@ import irvine.oeis.a242.A242249;
 import irvine.oeis.transform.EulerTransformSequence;
 
 /**
- * A340814.
+ * A340814 Array read by antidiagonals: T(n,k) is the number of unlabeled oriented edge-rooted k-gonal 2-trees with n oriented polygons, n &gt;= 0, k &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A340814 extends MemoryFunction2<Integer, Z> implements Sequence {

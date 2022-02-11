@@ -22,12 +22,21 @@ public class A054464 implements Sequence {
       ++mN;
       return Z.FOUR;
     }
-    if (++mM > mA.size()) { // todo while?
+    ++mM;
+    while (mM >= mA.size()) {
       ++mN;
       mM = 0;
-      final Z tens = Z.TEN.pow(mN);
-      final Z t = tens.multiply(9L * ++mN + 1);
-      mA.addAll(QuadraticCongruence.solve(Z.ONE, Z.ONE, t.negate(), tens.multiply(20)));
+      mA.clear();
+      final Z tens = Z.TEN.pow(mN - 1);
+      final Z t10 = tens.multiply(10);
+      final Z mod = t10.multiply2();
+      final Z c = tens.modMultiply(9L * mN + 1, mod);
+      for (final Z s : QuadraticCongruence.solve(Z.ONE, Z.ONE, mod.subtract(c), mod)) {
+        System.out.println("Trying " + s);
+        if (s.compareTo(tens) >= 0 && s.compareTo(t10) < 0) {
+          mA.add(s);
+        }
+      }
     }
     return mA.get(mM);
   }

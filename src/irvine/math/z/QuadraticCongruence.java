@@ -23,11 +23,11 @@ public class QuadraticCongruence {
    * @param p modulus
    * @return solutions
    */
-  public static Collection<Z> solve(final Z a, final Z p) {
+  public static Collection<Z> solve(Z a, final Z p) {
     System.out.println("Trying to solve x^2=" + a + " (mod " + p + ")");
-//    if (a.signum() < 0) {
-//      a = a.add(p);
-//    }
+    if (a.signum() < 0) {
+      a = a.add(p);
+    }
     final Z t = a.modSqrt(p);
     if (t == null) {
       return Collections.emptySet();
@@ -45,7 +45,7 @@ public class QuadraticCongruence {
    * @param p modulus
    * @return solutions
    */
-  public static Collection<Z> solve(final Z a, final Z p, final int e) {
+  public static Collection<Z> solve(Z a, final Z p, final int e) {
     System.out.println("Trying to solve x^2=" + a + " (mod " + p + "^" + e + ")");
     if (e == 1) {
       return solve(a, p);
@@ -55,6 +55,9 @@ public class QuadraticCongruence {
       res.add(Z.ZERO);
       res.add(p.pow(e - 1));
       return res;
+    }
+    if (a.signum() < 0) {
+      a = a.add(p.pow(e));
     }
     if (Z.TWO.equals(p)) {
       if (e == 2) {
@@ -124,6 +127,17 @@ public class QuadraticCongruence {
    */
   public static Collection<Z> solve(final Z a, final Z b, final Z c, final Z p, final int e) {
     final Z pe = p.pow(e);
+    if (c.mod(pe).isZero()) {
+      // Simplify to a linear congruence, x * (a*x+b) == 0 (mod p^e)
+      if (pe.gcd(a).equals(Z.ONE)) {
+        final Collection<Z> res = new TreeSet<>();
+        res.add(Z.ZERO);
+        res.add(a.modInverse(pe).modMultiply(pe.subtract(b), pe));
+        return res;
+      } else {
+        return Collections.singleton(Z.ZERO);
+      }
+    }
     final Z d = b.square().subtract(a.multiply(c).multiply(4));
     System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " -> " + d.jacobi(pe));
     if (b.mod(pe).isZero() && Z.ONE.equals(a)) {
@@ -138,11 +152,11 @@ public class QuadraticCongruence {
         return Collections.singleton(p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], pe));
       default: // 1
         final TreeSet<Z> res = new TreeSet<>();
-        //final Z inv = a.multiply2().modInverse(pe);
-        for (final Z s : solve(d, p, e)) {
-          final Z[] euc = a.multiply2().extendedGcd(pe);
-          res.add(s.subtract(b).multiply(euc[1]));
-          //res.add(s.subtract(b).modMultiply(inv, pe));
+        final Z inv = a.multiply2().modInverse(pe);
+        //final Z[] euc = a.multiply2().extendedGcd(pe);
+        for (final Z s : solve(d.mod(pe), p, e)) {
+          //res.add(s.subtract(b).modMultiply(euc[1], pe));
+          res.add(s.subtract(b).modMultiply(inv, pe));
         }
         return res;
     }
@@ -158,13 +172,16 @@ public class QuadraticCongruence {
    */
   public static Collection<Z> solve(final Z a, final Z b, final Z c, final Z n) {
     System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + n + ")");
+    // Simplify to a linear congruence
     if (c.mod(n).isZero()) {
-      // Simplify to a linear congruence
-      final Collection<Z> res = new TreeSet<>();
-      res.add(Z.ZERO);
-      final Z[] euc = a.extendedGcd(n);
-      res.add(euc[1].negate());
-      return res;
+      if (n.gcd(a).equals(Z.ONE)) {
+        final Collection<Z> res = new TreeSet<>();
+        res.add(Z.ZERO);
+        res.add(a.modInverse(n).modMultiply(n.subtract(b), n));
+        return res;
+      } else {
+        return Collections.singleton(Z.ZERO);
+      }
     }
     if (n.isProbablePrime()) {
       return solve(a, b, c, n, 1);
@@ -173,10 +190,11 @@ public class QuadraticCongruence {
     Collection<Z> res = Collections.emptyList();
     Z mod = Z.ONE;
     for (final Z p : fs.toZArray()) {
+      final int e = fs.getExponent(p);
+      final Z pe = p.pow(e);
       final Collection<Z> r = new TreeSet<>();
-      final Z m = p.pow(fs.getExponent(p));
-      final Collection<Z> ss = solve(a, b, c, p, fs.getExponent(p));
-      System.out.println("ss: " + ss);
+      final Collection<Z> ss = solve(a.mod(pe), b.mod(pe), c.mod(pe), p, e);
+      System.out.println("Solutions (mod " + p + "^" + e + "): " + ss);
       if (ss.isEmpty()) {
         return ss; // there is no solution
       }
@@ -185,12 +203,15 @@ public class QuadraticCongruence {
       } else {
         for (final Z s : ss) {
           for (final Z u : res) {
-            r.add(ZUtils.chineseRemainderTheorem(new Z[] {s, u}, new Z[] {m, mod}));
+            final Z w = ZUtils.chineseRemainderTheorem(new Z[] {s, u}, new Z[] {pe, mod});
+            if (w.modSquare(n).modMultiply(a, n).add(w.modMultiply(b, n)).add(c).mod(n).isZero()) { // why is this check needed?
+              r.add(w);
+            }
           }
         }
         res = r;
       }
-      mod = mod.multiply(m);
+      mod = mod.multiply(pe);
       System.out.println("res is now: " + res);
     }
     return res;

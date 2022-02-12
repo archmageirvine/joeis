@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A045545 a(0) = 1; a(n) = Sum(0 &lt;= k &lt; n and gcd(k,n) = 1; a(k)).
+ * A045545 a(0) = 1; a(n) = Sum_{0 &lt;= k &lt; n and gcd(k,n) = 1} a(k).
  * @author Sean A. Irvine
  */
 public class A045545 extends MemorySequence {

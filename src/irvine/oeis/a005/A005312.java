@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005312 Number of symmetric anti-Hadamard matrices of order n.
+ * A005312 Maximal sum of inverse squares of the singular values of symmetric anti-Hadamard matrices of order n.
  * @author Sean A. Irvine
  */
 public class A005312 implements Sequence {

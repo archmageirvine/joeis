@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034303 Prime; becomes nonprime if any digit deleted (zeros not allowed in the number).
+ * A034303 Zeroless primes that become nonprime if any digit is deleted.
  * @author Sean A. Irvine
  */
 public class A034303 implements Sequence {

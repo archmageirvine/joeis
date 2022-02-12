@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000696 Numbers n such that (1,n) is "good".
+ * A000696 Numbers k such that (1,k) is "good".
  * @author Sean A. Irvine
  */
 public class A000696 implements Sequence {

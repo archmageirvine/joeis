@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001315 Sum 2^C(n,k), k = 0..n.
+ * A001315 a(n) = Sum_{k=0..n} 2^binomial(n,k).
  * @author Sean A. Irvine
  */
 public class A001315 implements Sequence {

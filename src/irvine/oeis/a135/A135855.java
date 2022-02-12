@@ -5,7 +5,7 @@ import irvine.oeis.a052.A052905;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A135855 A007318 * a tridiagonal matrix with (1, 4, 1, 0, 0, 0,...) in every column.
+ * A135855 A007318 * a tridiagonal matrix with (1, 4, 1, 0, 0, 0, ...) in every column.
  * @author Georg Fischer
  */
 public class A135855 extends WrappedRecurrence {

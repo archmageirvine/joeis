@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027807 a(n) = 165*(n+1)*C(n+4,11)/4.
+ * A027807 a(n) = 165*(n+1)*binomial(n+4,11)/4.
  * @author Georg Fischer
  */
 public class A027807 extends GeneratingFunctionSequence {

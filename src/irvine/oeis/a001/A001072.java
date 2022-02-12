@@ -28,11 +28,15 @@ public class A001072 implements Sequence, GraphProcessor {
     }
   }
 
+  protected int connectionLevel() {
+    return 1;
+  }
+
   @Override
   public Z next() {
     ++mN;
     final GenerateGraphs gg = new GenerateGraphs(1);
-    gg.setConnectionLevel(1);
+    gg.setConnectionLevel(connectionLevel());
     gg.setVertices(mN);
     gg.setMinEdges(mN);
     gg.setMaxEdges(mN * (mN - 1));

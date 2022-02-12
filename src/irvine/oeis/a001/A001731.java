@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001731 9 in base 10-n.
+ * A001731 a(n) is 9 written in base 10-n.
  * @author Sean A. Irvine
  */
 public class A001731 extends FiniteSequence {

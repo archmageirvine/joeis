@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ca.Cellular1DAutomaton;
 
 /**
- * A140139 Binomial transform of [1, 1, 2, -3, 4, -5, 6, -7,...].
+ * A140139 Binomial transform of [1, 1, 2, -3, 4, -5, 6, -7, ...].
  * @author Georg Fischer
  */
 public class A140139 extends Cellular1DAutomaton {

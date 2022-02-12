@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027799 a(n) = 91*(n+1)*C(n+3,14)/3.
+ * A027799 a(n) = 91*(n+1)*binomial(n+3,14)/3.
  * @author Georg Fischer
  */
 public class A027799 extends GeneratingFunctionSequence {

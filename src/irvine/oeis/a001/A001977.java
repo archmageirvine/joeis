@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001977 Number of partitions of 3n into n parts from the set {0, 1,.., 6} (repetitions admissible).
+ * A001977 Number of partitions of 3n into n parts from the set {0, 1, ..., 6} (repetitions admissible).
  * @author Sean A. Irvine
  */
 public class A001977 implements Sequence {

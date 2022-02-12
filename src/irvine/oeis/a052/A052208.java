@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A052208 Pell(n)*Pell(2*n)/2.
+ * A052208 a(n) = Pell(n)*Pell(2*n)/2.
  * @author Georg Fischer
  */
 public class A052208 extends GeneratingFunctionSequence {

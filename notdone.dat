@@ -1782,7 +1782,6 @@ A053991 Number of distinct residues of generalized Catalan number 1/((n^2-1)*k +
 A053994 Nonattacking queens on a 2n+1 X 2n+1 toroidal board, solutions which differ only by rotation, reflection or torus shift count only once
 A054246 Non-Cayley-isomorphic circulant p^2-tournaments, indexed by odd primes p.
 A054316 Number of unlabeled 2-connected 3-edge-connected graphs with n nodes [complicated looking]
-A054317 Number of unlabeled 2-connected minimally 2-edge-connected graphs with n nodes
 A054345 Number of inequivalent sublattices of index n in square lattice, where two lattices are considered equivalent if one can be rotated to give the other.
 A054346 Number of inequivalent sublattices of index n in square lattice, where two lattices are considered equivalent if one can be rotated or reflected to give the other.
 A054359 Number of polyominoes with n cells that tile the plane.
@@ -1796,3 +1795,5 @@ A054528 Triangle T(n,k) giving number of codewords with k runs in Varshamov-Tene
 A054529 Number of words with 3 runs in Varshamov-Tenengolts code VT_0(n) of length n
 A054530 Number of words with 4 runs in Varshamov-Tenengolts code VT_0(n) of length n
 A054536 Maximal size of binary code of length n and asymmetric distance 4
+A054583 Number of nonisomorphic acyclic orientations of the Hamming graph (K_n) x (K_n).
+A054597 Number of labeled 2-connected 3-edge-connected graphs by nodes

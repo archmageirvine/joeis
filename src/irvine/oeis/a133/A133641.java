@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133641 a(n) = 2*L(n) + L(n-1) - n, L(n) = n-th Lucas number of A000032 starting (1,3,4,...). =.
+ * A133641 a(n) = 2*L(n) + L(n-1) - n, L(n) = n-th Lucas number A000204(n).
  * @author Georg Fischer
  */
 public class A133641 extends GeneratingFunctionSequence {

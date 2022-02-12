@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027772 (n+1)*C(n+1,12).
+ * A027772 a(n) = (n+1)*binomial(n+1,12).
  * @author Georg Fischer
  */
 public class A027772 extends GeneratingFunctionSequence {

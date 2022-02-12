@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A208653 Product{C(n-1,i) : 1&lt;=i&lt;=floor[(n+1)/2]}.
+ * A208653 a(n) = Product_{i=floor((n + 1)/2)..n-1} binomial(n-1, i).
  * @author Georg Fischer
  */
 public class A208653 implements Sequence {

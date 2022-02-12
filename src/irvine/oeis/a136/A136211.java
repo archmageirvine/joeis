@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136211 Denominators in continued fraction [0; 1, 3, 1, 3, 1, 3,...].
+ * A136211 Denominators in continued fraction [0; 1, 3, 1, 3, 1, 3, ...].
  * @author Sean A. Irvine
  */
 public class A136211 extends LinearRecurrence {

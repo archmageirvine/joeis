@@ -5,7 +5,7 @@ package irvine.oeis.a179;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A179903 (1, 3, 5, 7, 9...) convolved with (1, 0, 3, 5, 7, 9,...).
+ * A179903 (1, 3, 5, 7, 9, ...) convolved with (1, 0, 3, 5, 7, 9, ...).
  * @author Georg Fischer
  */
 public class A179903 extends HolonomicRecurrence {

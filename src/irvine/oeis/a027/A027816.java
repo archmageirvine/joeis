@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027816 66*(n+1)*C(n+5,11).
+ * A027816 a(n) = 66*(n+1)*binomial(n+5,11).
  * @author Sean A. Irvine
  */
 public class A027816 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046063 Numbers n such that n-th partition number A000041(n) is prime.
+ * A046063 Numbers k such that the k-th partition number A000041(k) is prime.
  * @author Sean A. Irvine
  */
 public class A046063 implements Sequence {

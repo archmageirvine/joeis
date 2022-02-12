@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001726 Weight distribution of [ 64,22,16 ] 2nd order Reed-Muller code of length 64.
+ * A001726 Weight distribution of [ 64,22,16 ] 2nd-order Reed-Muller code of length 64.
  * @author Sean A. Irvine
  */
 public class A001726 extends FiniteSequence {

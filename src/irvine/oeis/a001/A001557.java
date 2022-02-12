@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001557 1^n + 2^n + ... + 10^n.
+ * A001557 a(n) = 1^n + 2^n + ... + 10^n.
  * @author Sean A. Irvine
  */
 public class A001557 extends A001556 {

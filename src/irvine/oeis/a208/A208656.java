@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A208656 Triangular array:  n*C(n,k)-(n-1,k-1), 1&lt;=k&lt;=n, rows read in reverse order.
+ * A208656 Triangle T(n, k) = n*C(n,k) - C(n-1,k-1), 1 &lt;= k &lt;= n, read by rows.
  * @author Georg Fischer
  */
 public class A208656 extends Triangle {

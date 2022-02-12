@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A050782 Smallest multiplier m (&gt;0) such that mn is palindromic (or zero if no such m exists).
+ * A050782 Smallest positive multiplier m such that m*n is palindromic (or zero if no such m exists).
  * @author Sean A. Irvine
  */
 public class A050782 implements Sequence {

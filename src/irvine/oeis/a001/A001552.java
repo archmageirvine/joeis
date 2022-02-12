@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001552 1^n + 2^n + ... + 5^n.
+ * A001552 a(n) = 1^n + 2^n + ... + 5^n.
  * @author Sean A. Irvine
  */
 public class A001552 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A002988 Trimmed trees with n nodes.
+ * A002988 Number of trimmed trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A002988 extends A002955 {

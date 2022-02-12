@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A052018 Numbers n with property that the sum of the digits of n is substring of n.
+ * A052018 Numbers k with the property that the sum of the digits of k is a substring of k.
  * @author Sean A. Irvine
  */
 public class A052018 implements Sequence {

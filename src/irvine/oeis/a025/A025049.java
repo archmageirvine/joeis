@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a059.A059882;
 
 /**
- * A025049 Descending wiggly sums: number of sums adding to n in which terms alternately decrease and increase.
+ * A025049 Number of down/up (initially descending) compositions of n.
  * @author Sean A. Irvine
  */
 public class A025049 extends A059882 {

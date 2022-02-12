@@ -5,7 +5,7 @@ package irvine.oeis.a204;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A204515 (2*n)! * (2*n+1)! / ((n+1)^2 * n!^3).
+ * A204515 a(n) = (2*n)! * (2*n+1)! / ((n+1)^2 * n!^3).
  * @author Georg Fischer
  */
 public class A204515 extends HolonomicRecurrence {

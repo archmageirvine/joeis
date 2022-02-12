@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A103639 a(n) = Product_{i=1..2n} 2*i+1.
+ * A103639 a(n) = Product_{i=1..2*n} (2*i+1).
  * @author Georg Fischer
  */
 public class A103639 implements Sequence {

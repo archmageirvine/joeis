@@ -6,7 +6,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A147658 (1, 2, -4, 6, -8,...) interleaved with (3, -3, 3, -3, 3,...).
+ * A147658 (1, 2, -4, 6, -8, ...) interleaved with (3, -3, 3, -3, 3, ...).
  * @author Georg Fischer
  */
 public class A147658 extends AlternatingSequence {

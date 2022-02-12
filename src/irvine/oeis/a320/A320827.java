@@ -5,7 +5,7 @@ package irvine.oeis.a320;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A320827 Expansion of ogf(x) = -sqrt(1 - 4*x)*(2*x - 1)/(3*x - 1).
+ * A320827 G.f.: -sqrt(1 - 4*x)*(2*x - 1)/(3*x - 1).
  * Recurrence: a(n)=((-90+66*n-12*n^2)*a(n-2)+(30-34*n+7*n^2)*a(n-1))/((n-4)*n)
  * @author Georg Fischer
  */

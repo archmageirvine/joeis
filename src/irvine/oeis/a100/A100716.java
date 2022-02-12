@@ -7,7 +7,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a048.A048103;
 
 /**
- * A100716 Numbers n such that p^p divides n for some prime p.
+ * A100716 Numbers k such that p^p divides k for some prime p.
  * @author Georg Fischer
  */
 public class A100716 extends ComplementSequence {

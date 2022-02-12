@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098331 Expansion of 1/sqrt(1-2x+5x^2).
+ * A098331 Expansion of 1/sqrt(1 - 2*x + 5*x^2).
  * @author Georg Fischer
  */
 public class A098331 extends HolonomicRecurrence {

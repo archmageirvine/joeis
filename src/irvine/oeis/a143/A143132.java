@@ -6,7 +6,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143132 Binomial transform of [1, 5, 15, 35, 70, 0, 0, 0,...].
+ * A143132 Binomial transform of [1, 5, 15, 35, 70, 0, 0, 0, ...].
  * @author Georg Fischer
  */
 public class A143132 extends GeneratingFunctionSequence {

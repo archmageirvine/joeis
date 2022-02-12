@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A176934 Primes of the form 7^n+10^n.
+ * A176934 Primes of the form 7^m+10^m.
  * @author Georg Fischer
  */
 public class A176934 extends PrimeSubsequence {

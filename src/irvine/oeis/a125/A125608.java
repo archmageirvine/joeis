@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000204;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A125608 Triangle read by rows: given the left border = the Lucas numbers, (1, 3, 4, 7...), T(n,k) = (n-1,k) + (n-1,k-1).
+ * A125608 Triangle read by rows: given the left border = the Lucas numbers, (1, 3, 4, 7, ...), T(n,k) = (n-1,k) + (n-1,k-1).
  * @author Georg Fischer
  */
 public class A125608 extends WrappedRecurrence {

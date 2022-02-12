@@ -10,7 +10,7 @@ import irvine.oeis.MemorySequence;
  */
 public class A001187 extends MemorySequence {
 
-  private int mN = -1;
+  protected int mN = -1;
 
   @Override
   protected Z computeNext() {

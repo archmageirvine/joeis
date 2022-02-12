@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A085916 Array T(i,1)=i, T(1,j)=j and T(i,j)=T(i-1,j)*T(i,j-1) read by antidiagonals.
+ * A085916 Array T(i,1)=i, T(1,j)=j and T(i,j)=T(i-1,j-1)*T(i,j-1) read by antidiagonals.
  * @author Georg Fischer
  */
 public class A085916 extends Triangle {

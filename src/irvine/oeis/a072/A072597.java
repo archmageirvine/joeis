@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A072597 Expansion of 1/(exp(-x)-x) as exponential generating function.
+ * A072597 Expansion of 1/(exp(-x) - x) as exponential generating function.
  * E.g.f.: 1 / (exp(-x) - x)
  * @author Georg Fischer
  */

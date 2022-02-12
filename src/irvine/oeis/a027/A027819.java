@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027819 7*(n+1)*C(n+6,7)/2.
+ * A027819 a(n) = 7*(n+1)*binomial(n+6,7)/2.
  * @author Sean A. Irvine
  */
 public class A027819 extends LinearRecurrence {

@@ -333,13 +333,13 @@ public class ZTest extends TestCase {
       Z.ZERO.modInverse(Z.TWO);
       fail();
     } catch (final ArithmeticException e) {
-      assertEquals("Zero or negative inverse attempt.", e.getMessage());
+      assertEquals("Inverse of 0 (mod 2) not defined.", e.getMessage());
     }
     try {
       Z.TWO.modInverse(Z.ZERO);
       fail();
     } catch (final ArithmeticException e) {
-      assertEquals("Zero or negative inverse attempt.", e.getMessage());
+      assertEquals("Inverse of 2 (mod 0) not defined.", e.getMessage());
     }
     for (int i = 30; i < 1000; i += 13) {
       final BigInteger nn = new BigInteger(i, RANDOM);

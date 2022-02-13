@@ -256,6 +256,10 @@
      <Match classregex="gebhardt.Canonical">
        <BugCode name="SEO"/>
      </Match>
+     <!-- False positives, these are switches. -->
+     <Match classregex="irvine.oeis.a055.A055187">
+       <BugCode name="LSC"/>
+     </Match>
 
      <!-- I am allowed to ignore return values and have absolute paths in a test -->
      <Match classregex=".*Test">

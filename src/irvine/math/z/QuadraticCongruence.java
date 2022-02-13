@@ -12,7 +12,10 @@ import irvine.factor.util.FactorSequence;
  * Solve quadratic congruence equations.
  * @author Sean A. Irvine
  */
-public class QuadraticCongruence {
+public final class QuadraticCongruence {
+
+  private QuadraticCongruence() {
+  }
 
   private static final Collection<Z> MOD4 = Arrays.asList(Z.ONE, Z.THREE);
   private static final Collection<Z> MOD8 = Arrays.asList(Z.ONE, Z.THREE, Z.FIVE, Z.SEVEN);

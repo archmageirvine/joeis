@@ -4,7 +4,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.prime.ConsecutiveSequence;
 
 /**
- * A103169 Start of seven consecutive primes whose digit reversals are also prime
+ * A103169 Start of seven consecutive primes whose digit reversals are also prime.
  */
 public class A103169 extends ConsecutiveSequence {
 

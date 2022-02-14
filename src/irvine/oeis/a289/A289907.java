@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.a078.A078847;
 
 /**
- * A289907 Initial primes of 5 consecutive primes with consecutive gaps 8, 6, 4, 2.
+ * A289907 Initial primes of 5 consecutive primes with consecutive gaps 8,6,4,2.
  * @author Georg Fischer
  */
 public class A289907 extends A078847 {

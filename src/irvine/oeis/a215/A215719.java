@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.a078.A078847;
 
 /**
- * A215719 The smallest of four consecutive primes with prime gaps {a,b,c} = {10, 18, 2}.
+ * A215719 The smallest of four consecutive primes with prime gaps {a,b,c} = {10,18,2}.
  * @author Georg Fischer
  */
 public class A215719 extends A078847 {

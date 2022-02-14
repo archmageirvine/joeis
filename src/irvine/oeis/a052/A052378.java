@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.a078.A078847;
 
 /**
- * A052378 Primes followed by a [4, 2, 4] prime difference pattern of A001223.
+ * A052378 Primes followed by a [4,2,4] prime difference pattern of A001223.
  * @author Georg Fischer
  */
 public class A052378 extends A078847 {

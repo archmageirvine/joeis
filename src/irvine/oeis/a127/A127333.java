@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a082.A082246;
 
 /**
- * A082246 Numbers that are the sum of 6 consecutive primes..
+ * A127333 Numbers that are the sum of 6 consecutive primes.
  * @author Georg Fischer
  */
 public class A127333 extends A082246 {

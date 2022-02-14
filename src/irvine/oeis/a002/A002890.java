@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002890 Low temperature series for spin-1/2 Ising free energy on 2D square lattice.
+ * A002890 Low temperature series for spin-1/2 Ising partition function on 2D square lattice.
  * @author Sean A. Irvine
  */
 public class A002890 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.a078.A078847;
 
 /**
- * A102332 Initial prime p introducing a prime sextuplet of consecutive primes as follows:{p,p+10,p+18,p+28,p+36,p+46} with the corresponding prime-difference-pattern:{10, 8, 10, 8, 10}.
+ * A102332 Initial prime p introducing a prime sextuplet of consecutive primes as follows:{p,p+10,p+18,p+28,p+36,p+46} with the corresponding prime-difference-pattern:{10,8,10,8,10}.
  * @author Georg Fischer
  */
 public class A102332 extends A078847 {

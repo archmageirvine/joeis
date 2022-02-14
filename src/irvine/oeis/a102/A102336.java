@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.a078.A078847;
 
 /**
- * A102336 Initial members of quintuplets (p, p+4, p+12, p+28, p+60) of consecutive primes with the corresponding difference pattern:{4, 8, 16, 32}.
+ * A102336 Initial members of quintuplets (p, p+4, p+12, p+28, p+60) of consecutive primes with the corresponding difference pattern:{4,8,16,32}.
  * @author Georg Fischer
  */
 public class A102336 extends A078847 {

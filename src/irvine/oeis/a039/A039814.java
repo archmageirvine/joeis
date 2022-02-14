@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008275;
 
 /**
- * A039814 Matrix square of Stirling-1 Triangle A008275.
+ * A039814 Matrix square of Stirling-1 triangle A008275.
  * @author Sean A. Irvine
  */
 public class A039814 extends A008275 {

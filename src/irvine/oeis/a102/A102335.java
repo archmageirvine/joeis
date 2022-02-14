@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.a078.A078847;
 
 /**
- * A102335 Initial terms of sextuplets of consecutive primes as follows: {p,p+16,p+24,p+40,p+48,p+64}. The corresponding difference-pattern is {16, 8, 16, 8, 16}.
+ * A102335 Initial terms of sextuplets of consecutive primes as follows: {p,p+16,p+24,p+40,p+48,p+64}. The corresponding difference-pattern is {16,8,16,8,16}.
  * @author Georg Fischer
  */
 public class A102335 extends A078847 {

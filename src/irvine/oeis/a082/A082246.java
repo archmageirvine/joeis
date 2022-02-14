@@ -10,9 +10,9 @@ import irvine.oeis.a000.A000040;
  */
 public class A082246 implements Sequence {
 
-  private Z mSum;
-  private Sequence mHead;
-  private Sequence mTail;
+  protected Z mSum;
+  protected Sequence mHead;
+  protected Sequence mTail;
 
   /** Construct the sequence. */
   public A082246() {

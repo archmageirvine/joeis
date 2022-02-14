@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class ArraySelector implements Sequence {
 
-  protected int mOffset; // first index of this sequence
+  //protected int mOffset; // first index of this sequence
   private final Sequence mSeq; // the underlying sequence
   protected int mRow0; // first row index
   protected int mCol0; // first columns index 
@@ -81,7 +81,7 @@ public class ArraySelector implements Sequence {
    * and all elements of the underlying triangle are computed and investigated for their proper coordinates.
    */
   public ArraySelector(final int offset, final Sequence seq, final int row0, final int col0, final Function<Integer, int[]> select, final boolean hasRAM) {
-    mOffset = offset;
+    //mOffset = offset;
     mSeq = seq;
     mRow0 = row0;
     mCol0 = col0;

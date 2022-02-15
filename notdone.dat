@@ -1798,3 +1798,4 @@ A054536 Maximal size of binary code of length n and asymmetric distance 4
 A054583 Number of nonisomorphic acyclic orientations of the Hamming graph (K_n) x (K_n).
 A054597 Number of labeled 2-connected 3-edge-connected graphs by nodes
 A054645 Triangle T(n,k) of asymmetric n X n binary matrices with k=0..n^2 ones under action of dihedral group of the square D_4
+A054653 Acyclic orientations of the Hamming graph (K_3) x (K_n) [formula with -ve factorials]

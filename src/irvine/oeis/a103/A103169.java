@@ -5,6 +5,7 @@ import irvine.oeis.prime.ConsecutiveSequence;
 
 /**
  * A103169 Start of seven consecutive primes whose digit reversals are also prime.
+ * @author Georg Fischer
  */
 public class A103169 extends ConsecutiveSequence {
 

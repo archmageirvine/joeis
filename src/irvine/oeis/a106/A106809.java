@@ -8,6 +8,7 @@ import irvine.oeis.prime.ConsecutiveSequence;
 
 /**
  * A106809 Smallest prime of the set of eight consecutive primes whose sum of digits is a set of eight distinct primes.
+ * @author Georg Fischer
  */
 public class A106809 extends ConsecutiveSequence {
 
@@ -49,7 +50,7 @@ public class A106809 extends ConsecutiveSequence {
     mSet.clear();
     int m = 0;
     while (result && m < mTuple) {
-      long digSum = mDiffs[(mCix + m) & mMask];
+      final long digSum = mDiffs[(mCix + m) & mMask];
       if (mSet.contains(digSum)) {
         result = false;
       } else if (Z.valueOf(digSum).isPrime()) {

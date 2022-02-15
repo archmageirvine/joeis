@@ -6,6 +6,7 @@ import irvine.oeis.prime.ConsecutiveSequence;
 
 /**
  * A106711 Smaller prime of the set of two consecutive primes each of whose sum of digits is prime.
+ * @author Georg Fischer
  */
 public class A106711 extends ConsecutiveSequence {
 

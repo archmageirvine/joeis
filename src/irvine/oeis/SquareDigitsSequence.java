@@ -1,7 +1,5 @@
 package irvine.oeis;
 
-import java.util.regex.Pattern;
-
 import irvine.math.z.Z;
 
 /**
@@ -27,7 +25,7 @@ public class SquareDigitsSequence implements Sequence {
   protected int mBase; // base of the numbers: 2-99
   protected Z mBaseZ; // base as Z
   //protected int mMask; // bitmask for the variants
-  protected Pattern mAllowPattern; // pattern matching the subset of not-allowed decimal digits
+  //protected Pattern mAllowPattern; // pattern matching the subset of not-allowed decimal digits
   protected boolean[] mAllowedDigits; // true if a digit = index is allowed
   private Z[] mOldBlock; // array of numbers k that were under concern
   private Z[] mNewBlock; // array of numbers k now under concern
@@ -69,7 +67,7 @@ public class SquareDigitsSequence implements Sequence {
     mNoZeroTail = (mask & 8) != 0;
     mTriangular = (mask & 16) != 0;
     mSubset = subset.replaceAll("\\D", "");
-    mAllowPattern = Pattern.compile("[" + mSubset + "]*");
+    //mAllowPattern = Pattern.compile("[" + mSubset + "]*");
     mAllowedDigits = new boolean[mBase]; // initialized with false
     for (int isub = 0; isub < mSubset.length(); ++isub) {
       mAllowedDigits[Character.digit(mSubset.charAt(isub), mBase)] = true;

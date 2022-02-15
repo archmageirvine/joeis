@@ -4,7 +4,7 @@ package irvine.oeis.a033;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A033191 Binomial transform of [ 1, 0, 1, 1, 3, 6, 15, 36, 91, 231, 595,... ], which is essentially binomial(fibonacci(k) + 1, 2).
+ * A033191 Binomial transform of [ 1, 0, 1, 1, 3, 6, 15, 36, 91, 231, 595, ... ], which is essentially binomial(Fibonacci(k) + 1, 2).
  * @author Georg Fischer
  */
 public class A033191 extends GeneratingFunctionSequence {

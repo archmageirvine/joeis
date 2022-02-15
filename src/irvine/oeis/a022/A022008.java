@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022008 Initial members of prime sextuplets (p, p+4, p+6, p+10, p+12, p+16).
+ * A022008 Initial member of prime sextuples (p, p+4, p+6, p+10, p+12, p+16).
  * @author Sean A. Irvine
  */
 public class A022008 extends A022007 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.StanleySequence;
 
 /**
- * A005836 Numbers n whose base 3 representation contains no 2.
+ * A005836 Numbers whose base 3 representation contains no 2.
  * @author Sean A. Irvine
  */
 public class A005836 extends StanleySequence {

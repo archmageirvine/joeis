@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001222;
 
 
 /**
- * A066829 1 if product of odd number of primes; 0 if product of even number of primes.
+ * A066829 Parity of Omega(n): a(n) = 1 if n is the product of an odd number of primes; 0 if product of even number of primes.
  * @author Georg Fischer
  */
 public class A066829 extends A001222 {

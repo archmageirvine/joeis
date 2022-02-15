@@ -11,7 +11,7 @@ public class A002720 implements Sequence {
 
   private Z mA = Z.ONE;
   private Z mB = Z.TWO;
-  private Z mN = Z.NEG_ONE;
+  protected Z mN = Z.NEG_ONE;
 
   @Override
   public Z next() {

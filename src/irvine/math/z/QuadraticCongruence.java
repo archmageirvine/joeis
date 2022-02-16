@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 
 /**
@@ -13,6 +13,8 @@ import irvine.factor.util.FactorSequence;
  * @author Sean A. Irvine
  */
 public final class QuadraticCongruence {
+
+  // A054464 is a good test of this code
 
   private QuadraticCongruence() {
   }
@@ -73,6 +75,7 @@ public final class QuadraticCongruence {
         return Collections.emptySet();
       }
       if (e == 3) {
+        System.out.println("p==2, e==3: " + MOD8);
         return MOD8;
       }
 
@@ -141,12 +144,26 @@ public final class QuadraticCongruence {
         return Collections.singleton(Z.ZERO);
       }
     }
-    final Z d = b.square().subtract(a.multiply(c).multiply(4));
+
+    final Z d = b.square().subtract(a.multiply(c).multiply(4)).mod(pe);
     System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " -> " + d.jacobi(pe));
     if (b.mod(pe).isZero() && Z.ONE.equals(a)) {
       System.out.println("Using b=0 shortcut");
       return solve(pe.subtract(c), p, e);
     }
+
+    // todo Ugly search!
+    if (Z.TWO.equals(p)) {
+      System.out.println("Using ugly");
+      final TreeSet<Z> res = new TreeSet<>();
+      for (Z x = Z.ZERO; x.compareTo(pe) < 0; x = x.add(1)) {
+        if (x.modSquare(pe).modMultiply(a, pe).add(x.modMultiply(b, pe)).add(c).mod(pe).isZero()) {
+          res.add(x);
+        }
+      }
+      return res;
+    }
+
     switch (d.jacobi(pe)) {
       case -1:
         return Collections.emptySet();
@@ -154,12 +171,13 @@ public final class QuadraticCongruence {
         // todo is this dubious for p==2?
         return Collections.singleton(p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], pe));
       default: // 1
+        // todo this does not use c? not supposed to since f'
+        // May not work because 2a in 2^k problematic
+        System.out.println("Appling discriminant 1");
         final TreeSet<Z> res = new TreeSet<>();
-        final Z inv = a.multiply2().modInverse(pe);
-        //final Z[] euc = a.multiply2().extendedGcd(pe);
-        for (final Z s : solve(d.mod(pe), p, e)) {
-          //res.add(s.subtract(b).modMultiply(euc[1], pe));
-          res.add(s.subtract(b).modMultiply(inv, pe));
+        final Z[] euc = a.multiply2().extendedGcd(pe);
+        for (final Z s : solve(d, p, e)) {
+          res.add(s.subtract(b).modMultiply(euc[1], pe));
         }
         return res;
     }
@@ -175,21 +193,10 @@ public final class QuadraticCongruence {
    */
   public static Collection<Z> solve(final Z a, final Z b, final Z c, final Z n) {
     System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + n + ")");
-    // Simplify to a linear congruence
-    if (c.mod(n).isZero()) {
-      if (n.gcd(a).equals(Z.ONE)) {
-        final Collection<Z> res = new TreeSet<>();
-        res.add(Z.ZERO);
-        res.add(a.modInverse(n).modMultiply(n.subtract(b), n));
-        return res;
-      } else {
-        return Collections.singleton(Z.ZERO);
-      }
-    }
     if (n.isProbablePrime()) {
       return solve(a, b, c, n, 1);
     }
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     Collection<Z> res = Collections.emptyList();
     Z mod = Z.ONE;
     for (final Z p : fs.toZArray()) {

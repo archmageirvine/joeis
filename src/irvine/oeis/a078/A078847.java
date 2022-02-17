@@ -8,7 +8,6 @@ import irvine.oeis.prime.ConsecutiveSequence;
  */
 public class A078847 extends ConsecutiveSequence {
 
-  protected int mTermIx; // 0 for first, 1 for second term in the set etc.
   protected int[] mGaps; // gaps between the consecutive primes
 
   /** Construct the sequence. */

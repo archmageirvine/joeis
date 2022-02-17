@@ -35,12 +35,14 @@ public class A106809 extends ConsecutiveSequence {
    * Fill the next prime into the ring buffers and increment the indexes.
    */
   protected void advance() {
-    mCix = ++mCix & mMask;
+    ++mCix;
+    mCix &= mMask;
     mP1 = mFastPrime.nextPrime(mP);
     ++mPrimeNo;
     mTerms[mPix] = mP1;
     mDiffs[mPix] = ZUtils.digitSum(mP1);
-    mPix = ++mPix & mMask;
+    ++mPix;
+    mPix &= mMask;
     mP = mP1;
   }
 

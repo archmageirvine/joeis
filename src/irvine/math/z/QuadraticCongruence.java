@@ -96,7 +96,6 @@ public final class QuadraticCongruence {
           final Z x2 = x.multiply2();
           final Z[] euc = x2.extendedGcd(pe1);
           final Z z = x.subtract(x.square().subtract(a).multiply(euc[1])).mod(pe);
-          System.out.println(x2 + "*" + euc[1] + "+" + pe1 + "*" + euc[2] + "=" + euc[0] + " ---> " + z);
           if (z.square().subtract(a).mod(pe).isZero()) {
             // todo this check should be unnecessary ??
             res.add(z);

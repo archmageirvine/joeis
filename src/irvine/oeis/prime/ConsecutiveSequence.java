@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 /**
  * Superclass for sequences that require a condition on a limited number of consecutive primes.
  * The primes are stored in a ring buffer of size 16.
- * The class maintains the set of consecutive primes, their differences, and the index (prime#) of the first prime in the set.
+ * The class maintains the set of consecutive primes, their differences, and the index (prime-pi) of the first prime in the set.
  * @author Georg Fischer
  */
 public class ConsecutiveSequence implements Sequence {
@@ -62,12 +62,14 @@ public class ConsecutiveSequence implements Sequence {
    * Fill the next prime into the ring buffers and increment the indexes.
    */
   protected void advance() {
-    mCix = ++mCix & mMask;
+    ++mCix;
+    mCix &= mMask;
     mP1 = mFastPrime.nextPrime(mP);
     ++mPrimeNo;
     mTerms[mPix] = mP1;
     mDiffs[mPix] = mP1.subtract(mP).longValue();
-    mPix = ++mPix & mMask;
+    ++mPix;
+    mPix &= mMask;
     mP = mP1;
   }
 

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A054727 Number of forests of rooted trees with n nodes on a circle without crossing edges.
- * seq(add(binomial(n, j-1) * binomial(3*n-2*j-1, n-j) / (2*n - j),j=1..n),n=1..20);
+ * <code>seq(add(binomial(n, j-1) * binomial(3*n-2*j-1, n-j) / (2*n - j),j=1..n),n=1..20);</code>
  * @author Georg Fischer
  */
 public class A054727 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A143260.
+ * A143260 Primes that are not emirps.
  * @author Sean A. Irvine
  */
 public class A143260 implements Sequence {

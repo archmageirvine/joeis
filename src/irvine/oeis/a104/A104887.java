@@ -5,7 +5,7 @@ import irvine.oeis.a037.A037126;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A104887 Triangle T(n,k) = (n-k+1)th prime, read by rows.
+ * A104887 Triangle T(n,k) = (n-k+1)-th prime, read by rows.
  * @author Georg Fischer
  */
 public class A104887 extends Transpose {

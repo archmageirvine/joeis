@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054647.
+ * A054655 Triangle T(n,k) giving coefficients in expansion of n!*binomial(x-n,n) in powers of x.
  * @author Sean A. Irvine
  */
 public class A054655 implements Sequence {

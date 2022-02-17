@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A054657.
+ * A054658 Primes beginning 1, 3, 7, 9 whose reversals are nonprimes.
  * @author Sean A. Irvine
  */
 public class A054658 implements Sequence {

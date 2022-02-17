@@ -16,9 +16,12 @@ public final class QuadraticCongruence {
 
   // A054464 is a good test of this code
 
+  // WARNING: This code likely contains many deficiencies and may yield incorrect results.
+
   private QuadraticCongruence() {
   }
 
+  private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
   private static final Collection<Z> MOD4 = Arrays.asList(Z.ONE, Z.THREE);
   private static final Collection<Z> MOD8 = Arrays.asList(Z.ONE, Z.THREE, Z.FIVE, Z.SEVEN);
 
@@ -29,7 +32,9 @@ public final class QuadraticCongruence {
    * @return solutions
    */
   public static Collection<Z> solve(Z a, final Z p) {
-    System.out.println("Trying to solve x^2=" + a + " (mod " + p + ")");
+    if (VERBOSE) {
+      System.out.println("Solving x^2=" + a + " (mod " + p + ")");
+    }
     if (a.signum() < 0) {
       a = a.add(p);
     }
@@ -40,7 +45,6 @@ public final class QuadraticCongruence {
     final TreeSet<Z> res = new TreeSet<>();
     res.add(t);
     res.add(p.subtract(t).mod(p));
-    System.out.println("Solution: " + res);
     return res;
   }
 
@@ -51,7 +55,9 @@ public final class QuadraticCongruence {
    * @return solutions
    */
   public static Collection<Z> solve(Z a, final Z p, final int e) {
-    System.out.println("Trying to solve x^2=" + a + " (mod " + p + "^" + e + ")");
+    if (VERBOSE) {
+      System.out.println("Solving x^2=" + a + " (mod " + p + "^" + e + ")");
+    }
     if (e == 1) {
       return solve(a, p);
     }
@@ -75,7 +81,6 @@ public final class QuadraticCongruence {
         return Collections.emptySet();
       }
       if (e == 3) {
-        System.out.println("p==2, e==3: " + MOD8);
         return MOD8;
       }
 
@@ -93,12 +98,14 @@ public final class QuadraticCongruence {
           final Z z = x.subtract(x.square().subtract(a).multiply(euc[1])).mod(pe);
           System.out.println(x2 + "*" + euc[1] + "+" + pe1 + "*" + euc[2] + "=" + euc[0] + " ---> " + z);
           if (z.square().subtract(a).mod(pe).isZero()) {
-            // todo this check should be unecessary ??
+            // todo this check should be unnecessary ??
             res.add(z);
             res.add(pe.subtract(z));
           }
       }
-      System.out.println("Returning from Hensel with " + res);
+      if (VERBOSE) {
+        System.out.println("Returning from Hensel with " + res);
+      }
       return res;
     }
     // Hensel Lemma
@@ -112,14 +119,15 @@ public final class QuadraticCongruence {
       final Z x2 = x.multiply2();
       final Z[] euc = x2.extendedGcd(pe1);
       final Z z = x.subtract(x.square().subtract(a).multiply(euc[1])).mod(pe);
-      System.out.println(x2 + "*" + euc[1] + "+" + pe1 + "*" + euc[2] + "=" + euc[0] + " ---> " + z);
       final TreeSet<Z> res = new TreeSet<>();
       res.add(z);
       res.add(pe.subtract(z));
-      System.out.println("Returning from Hensel with " + res);
+      if (VERBOSE) {
+        System.out.println("Returning from Hensel with " + res);
+      }
       return res;
     }
-    return null;
+    return Collections.emptySet();
   }
 
   /**
@@ -146,15 +154,18 @@ public final class QuadraticCongruence {
     }
 
     final Z d = b.square().subtract(a.multiply(c).multiply(4)).mod(pe);
-    System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " -> " + d.jacobi(pe));
+    if (VERBOSE) {
+      System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " -> " + d.jacobi(pe));
+    }
     if (b.mod(pe).isZero() && Z.ONE.equals(a)) {
-      System.out.println("Using b=0 shortcut");
+      if (VERBOSE) {
+        System.out.println("Using b=0 shortcut");
+      }
       return solve(pe.subtract(c), p, e);
     }
 
-    // todo Ugly search!
     if (Z.TWO.equals(p)) {
-      System.out.println("Using ugly");
+      // todo This is terrible, it tries every possible value
       final TreeSet<Z> res = new TreeSet<>();
       for (Z x = Z.ZERO; x.compareTo(pe) < 0; x = x.add(1)) {
         if (x.modSquare(pe).modMultiply(a, pe).add(x.modMultiply(b, pe)).add(c).mod(pe).isZero()) {
@@ -171,9 +182,7 @@ public final class QuadraticCongruence {
         // todo is this dubious for p==2?
         return Collections.singleton(p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], pe));
       default: // 1
-        // todo this does not use c? not supposed to since f'
         // May not work because 2a in 2^k problematic
-        System.out.println("Appling discriminant 1");
         final TreeSet<Z> res = new TreeSet<>();
         final Z[] euc = a.multiply2().extendedGcd(pe);
         for (final Z s : solve(d, p, e)) {
@@ -192,7 +201,9 @@ public final class QuadraticCongruence {
    * @return list of solutions
    */
   public static Collection<Z> solve(final Z a, final Z b, final Z c, final Z n) {
-    System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + n + ")");
+    if (VERBOSE) {
+      System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + n + ")");
+    }
     if (n.isProbablePrime()) {
       return solve(a, b, c, n, 1);
     }
@@ -204,7 +215,6 @@ public final class QuadraticCongruence {
       final Z pe = p.pow(e);
       final Collection<Z> r = new TreeSet<>();
       final Collection<Z> ss = solve(a.mod(pe), b.mod(pe), c.mod(pe), p, e);
-      System.out.println("Solutions (mod " + p + "^" + e + "): " + ss);
       if (ss.isEmpty()) {
         return ss; // there is no solution
       }
@@ -222,7 +232,9 @@ public final class QuadraticCongruence {
         res = r;
       }
       mod = mod.multiply(pe);
-      System.out.println("res is now: " + res);
+      if (VERBOSE) {
+        System.out.println("res is now: " + res);
+      }
     }
     return res;
   }

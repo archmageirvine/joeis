@@ -6,7 +6,7 @@ import irvine.oeis.a122.A122432;
 import irvine.oeis.triangle.Product;
 
 /**
- * A128116 A128064 * A122432.
+ * A128116 A128064 * A122432 (unsigned).
  * @author Georg Fischer
  */
 public class A128116 extends Product {

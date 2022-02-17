@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000048;
 
 /**
- * A054657.
+ * A054660 Number of monic irreducible polynomials over GF(4) of degree n with fixed nonzero trace.
  * @author Sean A. Irvine
  */
 public class A054660 extends A000048 {

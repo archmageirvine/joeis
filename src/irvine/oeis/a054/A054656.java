@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054647.
+ * A054656 Number of primes &lt;= n which do not appear in any partitions of n into distinct primes.
  * @author Sean A. Irvine
  */
 public class A054656 implements Sequence {

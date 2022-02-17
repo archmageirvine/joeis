@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054647.
+ * A054650 Nearest integer to 2^(n-1)/n.
  * @author Sean A. Irvine
  */
 public class A054650 implements Sequence {

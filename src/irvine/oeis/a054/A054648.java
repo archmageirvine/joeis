@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054647.
+ * A054648 Number of labeled pure 2-complexes on n nodes (0-simplexes) with 4 2-simplexes and 11 1-simplexes.
  * @author Sean A. Irvine
  */
 public class A054648 implements Sequence {

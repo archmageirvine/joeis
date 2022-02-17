@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054647.
+ * A054649 Triangle T(n, k) giving coefficients in expansion of n! * Sum_{i=0..n} binomial(x - n, i) in powers of x.
  * @author Sean A. Irvine
  */
 public class A054649 implements Sequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054657.
+ * A054657 Number of leaves on the rooted tree of height n constructed by the following rule. Assign weight 1 to the single node at height 1. At each node of weight w at height k&gt;0, branch to nodes at height k+1 as follows: one node of weight 1 and a node of weight d+1 if d divides w.
  * @author Sean A. Irvine
  */
 public class A054657 implements Sequence {

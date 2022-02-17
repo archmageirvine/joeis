@@ -1,8 +1,8 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Cheetah;
 import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,12 +16,6 @@ public class A046209 implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
-    Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
-      final int d = dd.intValue();
-      sum = sum.add(Z.THREE.pow(mN / d).multiply(IntegerUtils.gcd(d, 3)).multiply(Mobius.mobius(d)));
-    }
-    return sum.divide(3L * mN);
+    return Integers.SINGLETON.sumdiv(++mN, d -> Z.THREE.pow(mN / d).multiply(IntegerUtils.gcd(d, 3)).multiply(Mobius.mobius(d))).divide(3L * mN);
   }
 }

@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a010.A010120;
 
 /**
- * A054646.
+ * A054646 Smallest number to give 2^(2n) in a hailstone (or 3x + 1) sequence.
  * @author Sean A. Irvine
  */
 public class A054646 extends PrependSequence {

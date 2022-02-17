@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054647.
+ * A221433 Number of nX3 1..(max n,3) arrays with each row and column having unrepeated values.
  * @author Sean A. Irvine
  */
 public class A221433 implements Sequence {

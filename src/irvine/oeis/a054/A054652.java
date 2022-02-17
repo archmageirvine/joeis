@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002720;
 
 /**
- * A054647.
+ * A054652 Acyclic orientations of the Hamming graph (K_2) x (K_n).
  * @author Sean A. Irvine
  */
 public class A054652 extends A002720 {

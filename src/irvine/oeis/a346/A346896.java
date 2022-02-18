@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A346896 E.g.f.: (1-12*x)^(-11/12).
+ * A346896 Expansion of e.g.f.: (1-12*x)^(-11/12).
  * E.g.f.: (1-12*x)^(-11/12)
  * @author Georg Fischer
  */

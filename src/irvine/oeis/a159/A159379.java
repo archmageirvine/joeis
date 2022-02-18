@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A159379 Number of n X n arrays of squares of integers summing to 10
+ * A159379 Number of n X n arrays of squares of integers summing to 10.
  * @author Georg Fischer
  */
 public class A159379 extends HolonomicRecurrence {

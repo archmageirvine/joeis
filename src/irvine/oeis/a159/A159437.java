@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A159437 Number of n X n arrays of squares of integers summing to 36
+ * A159437 Number of n X n arrays of squares of integers summing to 36.
  * @author Georg Fischer
  */
 public class A159437 extends HolonomicRecurrence {

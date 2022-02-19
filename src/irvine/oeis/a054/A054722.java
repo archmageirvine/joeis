@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054701.
+ * A054722 Triangle of coefficients of polynomials arising in enumeration of periodic sequences.
  * @author Sean A. Irvine
  */
 public class A054722 extends MemoryFunction2<Integer, Polynomial<Z>> implements Sequence {

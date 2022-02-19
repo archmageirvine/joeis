@@ -10,19 +10,29 @@ import irvine.oeis.Sequence;
  */
 public class A054690 implements Sequence {
 
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
   private long mP = 2;
-  private int mN = 0;
+  protected int mN = 0;
+  private final long mGap;
+
+  protected A054690(final long gap) {
+    mGap = gap;
+  }
+
+  /** Construct the sequence. */
+  public A054690() {
+    this(4);
+  }
 
   private int cnt(long p) {
-    if (p - mPrime.prevPrime(p) >= 4) {
+    if (p - mPrime.prevPrime(p) >= mGap) {
       return 0;
     }
     int cnt = 0;
     while (true) {
       final long q = p;
       p = mPrime.nextPrime(p);
-      if (p - q < 4) {
+      if (p - q < mGap) {
         return cnt;
       }
       ++cnt;

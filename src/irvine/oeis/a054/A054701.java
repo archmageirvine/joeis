@@ -5,30 +5,29 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054689 6 consecutive primes differ by 2n or more starting at a(n).
+ * A054701 Smallest prime followed by three gaps that are multiples of 2n.
  * @author Sean A. Irvine
  */
-public class A054689 implements Sequence {
+public class A054701 implements Sequence {
 
   private final Fast mPrime = new Fast();
-  private long mP = 2;
   private long mN = 0;
   private final int mCount;
 
-  protected A054689(final int count) {
+  protected A054701(final int count) {
     mCount = count - 1;
   }
 
   /** Construct the sequence. */
-  public A054689() {
-    this(6);
+  public A054701() {
+    this(4);
   }
 
   private boolean is(long p) {
     for (int k = 0; k < mCount; ++k) {
       final long q = p;
       p = mPrime.nextPrime(p);
-      if (p - q < 2 * mN) {
+      if ((p - q) % mN != 0) {
         return false;
       }
     }
@@ -37,11 +36,12 @@ public class A054689 implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
-    while (!is(mP)) {
-      mP = mPrime.nextPrime(mP);
+    mN += 2;
+    long p = 3;
+    while (!is(p)) {
+      p = mPrime.nextPrime(p);
     }
-    return Z.valueOf(mP);
+    return Z.valueOf(p);
   }
 }
 

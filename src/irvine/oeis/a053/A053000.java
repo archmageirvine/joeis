@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053000 (Smallest prime &gt; n^2) - n^2.
+ * A053000 a(n) = (smallest prime &gt; n^2) - n^2.
  * @author Sean A. Irvine
  */
 public class A053000 implements Sequence {

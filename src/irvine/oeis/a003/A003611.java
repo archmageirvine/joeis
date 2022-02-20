@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
@@ -28,20 +29,12 @@ public class A003611 implements Sequence {
   protected Polynomial<Polynomial<Q>> mT = RING.x();
   protected int mN = 0;
 
-  protected Polynomial<Polynomial<Q>> innerSubstitute(final Polynomial<Polynomial<Q>> t, final int power, final int n) {
-    final Polynomial<Polynomial<Q>> subs = RING.empty();
-    for (final Polynomial<Q> v : t) {
-      subs.add(v.substitutePower(power, n));
-    }
-    return subs;
-  }
-
   @Override
   public Z next() {
     ++mN;
 
     // Do the y^2 substitution
-    final Polynomial<Polynomial<Q>> subs = innerSubstitute(mT, 2, mN);
+    final Polynomial<Polynomial<Q>> subs = PolynomialUtils.innerSubstitute(RING, mT, 2, mN);
 
     // Apply the T(x,y) relation
     final Polynomial<Polynomial<Q>> s = RING.multiply(subs.substitutePower(2, mN), C1);

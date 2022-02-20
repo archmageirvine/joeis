@@ -15,8 +15,8 @@ public class A052283 extends A052107 {
 
   // After Andrew Howroyd
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  protected Polynomial<Z> mRow = RING.zero();
+  protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private Polynomial<Z> mRow = RING.zero();
   protected int mN = -1;
   protected int mM = 0;
 
@@ -34,20 +34,25 @@ public class A052283 extends A052107 {
     return prod;
   }
 
+  protected Polynomial<Z> g(final int n) {
+    Polynomial<Z> row = RING.zero();
+    final IntegerPartition part = new IntegerPartition(n);
+    int[] p;
+    while ((p = part.next()) != null) {
+      row = RING.add(row, RING.multiply(edgesPoly(p), permCount(p, 1)));
+    }
+    row = RING.divide(row, mF.factorial(n));
+    return row;
+  }
+
   @Override
   public Z next() {
     if (++mM > mRow.degree()) {
       if (++mN <= 1) {
         return Z.ONE;
       }
-      mRow = RING.zero();
-      final IntegerPartition part = new IntegerPartition(mN);
-      int[] p;
-      while ((p = part.next()) != null) {
-        mRow = RING.add(mRow, RING.multiply(edgesPoly(p), permCount(p, 1)));
-      }
+      mRow = g(mN);
       mM = 0;
-      mRow = RING.divide(mRow, mF.factorial(mN));
     }
     return mRow.coeff(mM);
   }

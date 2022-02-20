@@ -7,6 +7,7 @@ import java.util.Set;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
 import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -269,4 +270,23 @@ public final class PolynomialUtils {
     }
     return res;
   }
+
+  /**
+   * Perform substitution of inner variable of a bivariate polynomial.
+   * @param ring ring for outer polynomial
+   * @param t polynomial
+   * @param power power to substitute
+   * @param n degree limit
+   * @param <T> type of element
+   * @return substituted polynomial
+   */
+  public static <T> Polynomial<Polynomial<T>> innerSubstitute(final PolynomialRing<Polynomial<T>> ring, final Polynomial<Polynomial<T>> t, final int power, final int n) {
+    final Polynomial<Polynomial<T>> subs = ring.empty();
+    for (final Polynomial<T> v : t) {
+      subs.add(v.substitutePower(power, n));
+    }
+    return subs;
+  }
+
+
 }

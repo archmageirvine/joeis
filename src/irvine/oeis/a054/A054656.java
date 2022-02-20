@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 
 import irvine.factor.prime.Fast;
-import irvine.math.partitions.IntegerPartition;
+import irvine.math.partitions.DistinctPartsPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -29,10 +29,10 @@ public class A054656 implements Sequence {
       return Z.ZERO;
     }
     final boolean[] seen = new boolean[mN + 1];
-    final IntegerPartition part = new IntegerPartition(mN);
+    final DistinctPartsPartition part = new DistinctPartsPartition(mN);
     int[] p;
     while ((p = part.next()) != null) {
-      if (isPrimePartition(p) && IntegerPartition.isDistinctParts(p)) {
+      if (isPrimePartition(p)) {
         for (final int v : p) {
           seen[v] = true;
         }

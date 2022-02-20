@@ -19,7 +19,7 @@ public class A002854 implements Sequence, Serializable {
 
   private int mN = 0;
 
-  private int m(final int[] j) {
+  protected Z m(final int[] j) {
     int s = 0;
     for (int t = 1; t < j.length; ++t) {
       for (int r = 1; r < t; ++r) {
@@ -33,7 +33,7 @@ public class A002854 implements Sequence, Serializable {
     for (int k = 1; k < j.length; k += 2) {
       u += j[k];
     }
-    return s + (u > 0 ? 1 : 0);
+    return Z.ONE.shiftLeft(s + (u > 0 ? 1 : 0));
   }
 
   @Override
@@ -44,7 +44,7 @@ public class A002854 implements Sequence, Serializable {
     Q sum = Q.ZERO;
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, j);
-      sum = sum.add(new Q(Z.ONE.shiftLeft(m(j)), SymmetricGroup.per(j)));
+      sum = sum.add(new Q(m(j), SymmetricGroup.per(j)));
     }
     return sum.toZ();
   }

@@ -1,10 +1,10 @@
 package irvine.oeis.a052;
 
 import irvine.math.IntegerUtils;
-import irvine.math.group.PolynomialRing;
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
@@ -15,10 +15,10 @@ public class A052283 extends A052107 {
 
   // After Andrew Howroyd
 
-  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private Polynomial<Z> mRow = RING.zero();
-  private int mN = -1;
-  private int mM = 0;
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  protected Polynomial<Z> mRow = RING.zero();
+  protected int mN = -1;
+  protected int mM = 0;
 
   private Polynomial<Z> edgesPoly(final int[] v) {
     Polynomial<Z> prod = RING.one();
@@ -47,7 +47,8 @@ public class A052283 extends A052107 {
         mRow = RING.add(mRow, RING.multiply(edgesPoly(p), permCount(p, 1)));
       }
       mM = 0;
+      mRow = RING.divide(mRow, mF.factorial(mN));
     }
-    return mRow.coeff(mM).divide(mF.factorial(mN));
+    return mRow.coeff(mM);
   }
 }

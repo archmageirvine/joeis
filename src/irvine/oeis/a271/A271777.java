@@ -5,7 +5,7 @@ package irvine.oeis.a271;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A271777 a(n) = Sum_{k=0..n-2}((-1)^(n-k)*(k+1)/(n^2+k*n)*binomial(n,k+2)* binomial(n+k,k+1)^2), a(1)=1.
+ * A271777 a(n) = Sum_{k=1..n} ((-1)^(n-k) * k / ((n+1)^2 + (k-1)*(n+1))) * binomial(n+1, k+1) * binomial(n+k, k)^2.
  * @author Georg Fischer
  */
 public class A271777 extends HolonomicRecurrence {

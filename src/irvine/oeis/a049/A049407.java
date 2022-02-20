@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A049407 Numbers n such that n^3 + n + 1 is prime.
+ * A049407 Numbers m such that m^3 + m + 1 is prime.
  * @author Georg Fischer
  */
 public class A049407 extends PrimePositionSubsequence {

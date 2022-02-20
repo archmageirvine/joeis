@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002854;
 
 /**
- * A054732.
+ * A054732 Number of inequivalent n-state 2-input 2-output automata with respect to input and output permutations.
  * @author Sean A. Irvine
  */
 public class A054732 extends A002854 {

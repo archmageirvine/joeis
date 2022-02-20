@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a052.A052283;
 
 /**
- * A052283 Triangle read by rows: T(n,k) is the number of unlabeled directed graphs on n nodes with k arcs, k=0..n*(n-1).
+ * A054733 Triangle of number of (weakly) connected unlabeled digraphs with n nodes and k arcs (n &gt;=2, k &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A054733 extends A052283 {
@@ -20,8 +20,8 @@ public class A054733 extends A052283 {
   private Polynomial<Z> mRow = RING.zero();
   {
     mP.add(PolynomialUtils.zToQ(RING.one()));
-    next();
-    next();
+    ++mN;
+    ++mN;
   }
 
   private static Polynomial<Polynomial<Q>> inverseEuler(final Polynomial<Polynomial<Q>> p, final int n) {
@@ -31,11 +31,11 @@ public class A054733 extends A052283 {
     return r.sum(1, n, i -> r.divide(r.multiply(PolynomialUtils.innerSubstitute(r, q.substitutePower(i, n), i, m), Polynomial.create(new Q(Mobius.mobius(i)))), Polynomial.create(new Q(i))));
   }
 
-  private Polynomial<Z> getRow(final int n) {
+  protected Polynomial<Z> getRow(final int n) {
     while (mP.size() <= n) {
       mP.add(PolynomialUtils.zToQ(g(mP.size())));
     }
-    return PolynomialUtils.qToZ(inverseEuler(mP, n).coeff(mN).shift(-1));
+    return PolynomialUtils.qToZ(inverseEuler(mP, n).coeff(n).shift(-1));
   }
 
   @Override

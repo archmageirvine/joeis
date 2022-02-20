@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A129234 Triangle read by rows: T(n,k)=n/k + k - 1 if n mod k = 0; otherwise T(n,k)=0 (1&lt;=k&lt;=n).
+ * A129234 Triangle read by rows: T(n,k) = n/k + k - 1 if n mod k = 0; otherwise T(n,k)=0 (1 &lt;= k &lt;= n).
  * @author Georg Fischer
  */
 public class A129234 extends Triangle {

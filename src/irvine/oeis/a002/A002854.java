@@ -17,9 +17,18 @@ public class A002854 implements Sequence, Serializable {
 
   // After M. F. Hasler
 
-  private int mN = 0;
+  protected int mN;
 
-  protected Z m(final int[] j) {
+  protected A002854(final int start) {
+    mN = start - 1;
+  }
+
+  /** Construct the sequence. */
+  public A002854() {
+    this(1);
+  }
+
+  protected Q m(final int[] j) {
     int s = 0;
     for (int t = 1; t < j.length; ++t) {
       for (int r = 1; r < t; ++r) {
@@ -33,18 +42,21 @@ public class A002854 implements Sequence, Serializable {
     for (int k = 1; k < j.length; k += 2) {
       u += j[k];
     }
-    return Z.ONE.shiftLeft(s + (u > 0 ? 1 : 0));
+    return new Q(Z.ONE.shiftLeft(s + (u > 0 ? 1 : 0)));
   }
 
   @Override
   public Z next() {
-    final IntegerPartition part = new IntegerPartition(++mN);
+    if (++mN == 0) {
+      return Z.ONE;
+    }
+    final IntegerPartition part = new IntegerPartition(mN);
     final int[] j = new int[mN + 1];
     int[] p;
     Q sum = Q.ZERO;
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, j);
-      sum = sum.add(new Q(m(j), SymmetricGroup.per(j)));
+      sum = sum.add(m(j).divide(SymmetricGroup.per(j)));
     }
     return sum.toZ();
   }

@@ -29,7 +29,7 @@ public class A147599 extends GeneralizedEulerTransform {
 
   @Override
   protected Z advanceH(final long k) {
-    return Z.valueOf((4 * k - 1));
+    return Z.valueOf(4 * k - 1);
   }
 
 }

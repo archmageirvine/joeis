@@ -1799,3 +1799,4 @@ A054583 Number of nonisomorphic acyclic orientations of the Hamming graph (K_n) 
 A054597 Number of labeled 2-connected 3-edge-connected graphs by nodes
 A054645 Triangle T(n,k) of asymmetric n X n binary matrices with k=0..n^2 ones under action of dihedral group of the square D_4
 A054653 Acyclic orientations of the Hamming graph (K_3) x (K_n) [formula with -ve factorials]
+A054736 Smallest losing position after your opponent has taken k stones in a variation of "Fibonacci Nim"

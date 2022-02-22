@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002854;
 
 /**
- * A054748.
+ * A054748 Number of inequivalent n-state 1-input n-output automata.
  * @author Sean A. Irvine
  */
 public class A054748 extends A002854 {

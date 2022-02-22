@@ -1,0 +1,23 @@
+package irvine.oeis.a054;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A054751 Number of inequivalent n X n matrices over GF(4) under action of dihedral group of the square D_4.
+ * @author Sean A. Irvine
+ */
+public class A054751 implements Sequence {
+
+  private int mN = -1;
+
+  @Override
+  public Z next() {
+    ++mN;
+    return Z.ONE.shiftLeft(2 * mN * mN)
+      .add((mN & 1) == 1
+        ? Z.ONE.shiftLeft((mN * mN + 3) / 2 + 1).add(Z.ONE.shiftLeft(mN * mN + 1)).add(Z.ONE.shiftLeft(mN * mN + mN + 2))
+        : Z.ONE.shiftLeft(mN * mN / 2 + 1).add(Z.THREE.shiftLeft(mN * mN)).add(Z.ONE.shiftLeft(mN * mN + mN + 1)))
+      .divide(8);
+  }
+}

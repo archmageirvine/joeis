@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.transform.InverseEulerTransform;
 
 /**
- * A054745.
+ * A054746 Number of nonisomorphic connected binary n-state automata without output under input permutations.
  * @author Sean A. Irvine
  */
 public class A054746 extends InverseEulerTransform {

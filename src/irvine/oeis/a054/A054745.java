@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002854;
 
 /**
- * A054745.
+ * A054745 Number of nonisomorphic binary n-state automata without output under input permutations.
  * @author Sean A. Irvine
  */
 public class A054745 extends A002854 {

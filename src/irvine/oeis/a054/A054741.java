@@ -15,7 +15,7 @@ public class A054741 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final Z n= Z.valueOf(++mN);
+      final Z n = Z.valueOf(++mN);
       final long phi = Euler.phi(n).longValueExact();
       if (phi < mN - phi) {
         return n;

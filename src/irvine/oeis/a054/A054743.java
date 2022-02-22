@@ -32,7 +32,7 @@ public class A054743 implements Sequence {
       if (res.mod(q) == 0) {
         mA.add(res.multiply(q)); // existing prime divisors
       } else {
-        mA.add(res.multiply(Z.valueOf(q).pow(q+1))); // new divisor with minimum power
+        mA.add(res.multiply(Z.valueOf(q).pow(q + 1))); // new divisor with minimum power
       }
     }
     return res;

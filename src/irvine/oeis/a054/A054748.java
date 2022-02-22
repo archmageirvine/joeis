@@ -18,7 +18,7 @@ public class A054748 extends A002854 {
     Q sum = Q.ZERO;
     final IntegerPartition part = new IntegerPartition(mN);
     int[] pp;
-    int[] qq = new int[mN + 1];
+    final int[] qq = new int[mN + 1];
     while ((pp = part.next()) != null) {
       IntegerPartition.toCountForm(pp, qq);
       Z prod = Z.ONE;

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A054762.
+ * A054762 a(n) is a cube mod a(i) for all i &lt; n.
  * @author Sean A. Irvine
  */
 public class A054762 extends MemorySequence {

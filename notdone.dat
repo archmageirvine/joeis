@@ -1800,3 +1800,5 @@ A054597 Number of labeled 2-connected 3-edge-connected graphs by nodes
 A054645 Triangle T(n,k) of asymmetric n X n binary matrices with k=0..n^2 ones under action of dihedral group of the square D_4
 A054653 Acyclic orientations of the Hamming graph (K_3) x (K_n) [formula with -ve factorials]
 A054736 Smallest losing position after your opponent has taken k stones in a variation of "Fibonacci Nim"
+A054764 Degree of numerator and denominator of n-th order susceptibility series for 2-dimensional Ising model.
+A054767 Period of the sequence of Bell numbers A000110 (mod n)

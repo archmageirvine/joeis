@@ -20,8 +20,8 @@ public class A054733 extends A052283 {
   private Polynomial<Z> mRow = RING.zero();
   {
     mP.add(PolynomialUtils.zToQ(RING.one()));
-    ++mN;
-    ++mN;
+    ++mK;
+    ++mK;
   }
 
   private static Polynomial<Polynomial<Q>> inverseEuler(final Polynomial<Polynomial<Q>> p, final int n) {
@@ -41,10 +41,10 @@ public class A054733 extends A052283 {
   @Override
   public Z next() {
     if (++mM > mRow.degree()) {
-      if (++mN <= 1) {
+      if (++mK <= 1) {
         return Z.ONE;
       }
-      mRow = getRow(mN);
+      mRow = getRow(mK);
       mM = 0;
     }
     return mRow.coeff(mM);

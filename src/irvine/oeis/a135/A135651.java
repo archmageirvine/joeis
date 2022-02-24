@@ -10,8 +10,6 @@ import irvine.util.string.StringUtils;
  */
 public class A135651 extends A000043 {
 
-  private int mN = 0;
-
   @Override
   public Z next() {
     final int len = super.next().intValue();

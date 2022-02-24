@@ -20,7 +20,7 @@ public class A202303 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param seq undlying sequence
+   * @param seq underlying sequence
    * @param base number base
    */
   public A202303(final Sequence seq, final int base) {

@@ -17,7 +17,7 @@ public class A052283 extends A052107 {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Polynomial<Z> mRow = RING.zero();
-  protected int mN = -1;
+  protected int mK = -1;
   protected int mM = 0;
 
   private Polynomial<Z> edgesPoly(final int[] v) {
@@ -41,17 +41,16 @@ public class A052283 extends A052107 {
     while ((p = part.next()) != null) {
       row = RING.add(row, RING.multiply(edgesPoly(p), permCount(p, 1)));
     }
-    row = RING.divide(row, mF.factorial(n));
-    return row;
+    return RING.divide(row, mF.factorial(n));
   }
 
   @Override
   public Z next() {
     if (++mM > mRow.degree()) {
-      if (++mN <= 1) {
+      if (++mK <= 1) {
         return Z.ONE;
       }
-      mRow = g(mN);
+      mRow = g(mK);
       mM = 0;
     }
     return mRow.coeff(mM);

@@ -6,7 +6,7 @@ import irvine.oeis.a079.A079342;
 import irvine.oeis.a152.A152957;
 
 /**
- * A110744 Integers k such that k divides LS(k) or LS(k) divides k, where LS is the &quot;Look and Say&quot; function (A045918).
+ * A110744 Integers k such that k divides LS(k) or LS(k) divides k, where LS is the "Look and Say" function (A045918).
  * @author Georg Fischer
  */
 public class A110744 extends UnionSequence {

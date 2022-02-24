@@ -6,7 +6,7 @@ import irvine.oeis.a006.A006995;
 import irvine.oeis.a031.A031443;
 
 /**
- * A143905 Positive integers n that are palindromic in base 2 and whose binary representation has the same number of 0&apos;s as 1&apos;s.
+ * A143905 Positive integers n that are palindromic in base 2 and whose binary representation has the same number of 0's as 1's.
  * @author Georg Fischer
  */
 public class A143905 extends IntersectionSequence {

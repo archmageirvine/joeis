@@ -7,7 +7,7 @@ import irvine.oeis.a009.A009996;
 import irvine.oeis.a037.A037415;
 
 /**
- * A276349 Numbers consisting of a nonempty string of 1&apos;s followed by a nonempty string of 0&apos;s.
+ * A276349 Numbers consisting of a nonempty string of 1's followed by a nonempty string of 0's.
  * @author Georg Fischer
  */
 public class A276349 extends SkipSequence {

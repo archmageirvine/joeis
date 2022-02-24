@@ -6,7 +6,7 @@ import irvine.oeis.a033.A033870;
 import irvine.oeis.a033.A033871;
 
 /**
- * A222262 Divisors of Descarte&apos;s 198585576189.
+ * A222262 Divisors of Descarte's 198585576189.
  * @author Georg Fischer
  */
 public class A222262 extends UnionSequence {

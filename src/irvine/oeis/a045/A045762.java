@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a000.A000043;
 
 /**
- * A045762 Numbers n such that 2^n-1 is not prime.
+ * A045762 Numbers k such that 2^k - 1 is not prime.
  * @author Georg Fischer
  */
 public class A045762 extends ComplementSequence {

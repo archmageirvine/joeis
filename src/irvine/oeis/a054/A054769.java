@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054769 Number of integer n-tuples {x(1},x(2),...,x(n)} with the following properties: (1) x(1)=1 and, for k&gt;1, if d=x(k)-x(k-1), then (2) d is relatively prime to x(k-1) and (3) d=x(i) for some i in {1,2,...,(k-1)}.
+ * A054769 Number of integer n-tuples {x(1},x(2),...,x(n)} with the following properties: (1) x(1)=1 and, for k&gt;1, if d=x(k)-x(k-1), then (2) d is relatively prime to x(k-1) and (3) d=x(i) for some i in {1,2,...,k-1}.
  * @author Sean A. Irvine
  */
 public class A054769 implements Sequence {

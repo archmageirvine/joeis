@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001743;
 import irvine.oeis.a134.A134808;
 
 /**
- * A274765 Cyclops numbers with circular digits {0,6,8,9}.
+ * A274765 Cyclops numbers with circular digits {0, 6, 8, 9}.
  * @author Georg Fischer
  */
 public class A274765 extends IntersectionSequence {

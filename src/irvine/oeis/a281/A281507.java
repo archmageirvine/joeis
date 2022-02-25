@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RADDSequence;
 
 /**
- * A281507 Trajectory of 1186061987030929990 under the "Reverse and Add!" operation.
+ * A281507 Trajectory of 1186061987030929990 under the &quot;Reverse and Add!&quot; operation.
  * @author Georg Fischer
  */
 public class A281507 extends RADDSequence {

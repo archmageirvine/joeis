@@ -3,7 +3,6 @@ package irvine.oeis.a204;
 
 import irvine.oeis.a055.A055851;
 import irvine.oeis.a202.A202303;
-
 /**
  * A204573 A204519(n)^2 = floor(A055851(n)/6): Squares which written in base 6, with some digit appended, yield another square.
  * @author Georg Fischer

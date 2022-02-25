@@ -3,7 +3,6 @@ package irvine.oeis.a203;
 
 import irvine.oeis.a055.A055812;
 import irvine.oeis.a202.A202303;
-
 /**
  * A203719 A204521(n)^2 = floor[A055812(n)/5]: Squares which written in base 5, with some digit appended, yield another square.
  * @author Georg Fischer

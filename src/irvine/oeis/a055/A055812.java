@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 public class A055812 implements Sequence {
 
   private Z mK;
-  private final int mDiv;
+  private int mDiv;
 
   /** Construct the sequence. */
   public A055812() {

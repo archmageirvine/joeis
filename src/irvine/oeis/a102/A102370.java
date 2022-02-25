@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A102370 "Sloping binary numbers": write numbers in binary under each other (right-justified), read diagonals in upward direction, convert to decimal.
+ * A102370 &quot;Sloping binary numbers&quot;: write numbers in binary under each other (right-justified),
  * read diagonals in upward direction, convert to decimal.
  * @author Georg Fischer
  */

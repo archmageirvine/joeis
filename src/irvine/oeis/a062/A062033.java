@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A062033 Binary expansion of n does not contain 1-bits at even positions. Integers whose base 4 representation consists of only 0's and 2s.
+ * A062033 Binary expansion of n does not contain 1-bits at even positions.
  * Integers whose base 4 representation consists of only 0&apos;s and 2s.
  * @author Georg Fischer
  */

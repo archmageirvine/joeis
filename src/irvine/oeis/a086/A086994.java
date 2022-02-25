@@ -3,7 +3,6 @@ package irvine.oeis.a086;
 
 import irvine.oeis.a000.A000796;
 import irvine.oeis.a204.A204574;
-
 /**
  * A086994 Decimal expansion of Pi written in base 2.
  * @author Georg Fischer

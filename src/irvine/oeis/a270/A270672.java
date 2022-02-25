@@ -6,7 +6,7 @@ import irvine.oeis.a003.A003136;
 import irvine.oeis.a008.A008585;
 
 /**
- * A270672 L\u00f6schian numbers (A003136) that are multiples of 3.
+ * A270672 Löschian numbers (A003136) that are multiples of 3.
  * @author Georg Fischer
  */
 public class A270672 extends IntersectionSequence {

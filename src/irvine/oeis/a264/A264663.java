@@ -3,7 +3,6 @@ package irvine.oeis.a264;
 
 import irvine.oeis.a000.A000108;
 import irvine.oeis.a204.A204574;
-
 /**
  * A264663 Catalan numbers written in base 2.
  * @author Georg Fischer

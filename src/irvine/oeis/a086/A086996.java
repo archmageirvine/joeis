@@ -3,7 +3,6 @@ package irvine.oeis.a086;
 
 import irvine.oeis.a001.A001113;
 import irvine.oeis.a204.A204574;
-
 /**
  * A086996 Decimal expansion of e (A001113) written in base 2.
  * @author Georg Fischer

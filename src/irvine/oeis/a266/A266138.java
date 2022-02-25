@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
- * A266138 Expansion of Product_{k&gt;=1} 1/(1 - k*(x^(2*k+1))).
+ * A266138 Expansion of Product_{k>=1} 1/(1 - k*(x^(2*k+1))).
  * @author Georg Fischer
  */
 public class A266138 extends GeneralizedEulerTransform {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A062131 A062129 written in base 10.
+ * A062129 written in base 10.
  * Limit = 1024
  * @author Georg Fischer
  */

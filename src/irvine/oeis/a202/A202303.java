@@ -10,8 +10,8 @@ import irvine.oeis.a023.A023110;
  */
 public class A202303 implements Sequence {
 
-  private final Sequence mSeq;
-  private final int mBase;
+  private Sequence mSeq;
+  private int mBase;
 
   /** Construct the sequence. */
   public A202303() {
@@ -20,7 +20,7 @@ public class A202303 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param seq underlying sequence
+   * @param seq undlying sequence
    * @param base number base
    */
   public A202303(final Sequence seq, final int base) {
@@ -30,7 +30,7 @@ public class A202303 implements Sequence {
 
   @Override
   public Z next() {
-    final String s = mSeq.next().toString(mBase);
+    String s = mSeq.next().toString(mBase);
     if (s.length() <= 1) {
       return Z.ZERO;
     }

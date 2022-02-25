@@ -3,9 +3,8 @@ package irvine.oeis.a169;
 
 import irvine.oeis.a005.A005132;
 import irvine.oeis.a204.A204574;
-
 /**
- * A169631 Recam\u00e1n's sequence (A005132) written in binary.
+ * A169631 Recamán&apos;s sequence (A005132) written in binary.
  * @author Georg Fischer
  */
 public class A169631 extends A204574 {

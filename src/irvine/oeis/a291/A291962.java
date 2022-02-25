@@ -3,7 +3,6 @@ package irvine.oeis.a291;
 
 import irvine.oeis.a002.A002275;
 import irvine.oeis.a204.A204574;
-
 /**
  * A291962 Decimal repunits written in base 2.
  * @author Georg Fischer

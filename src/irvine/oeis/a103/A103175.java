@@ -3,7 +3,6 @@ package irvine.oeis.a103;
 
 import irvine.oeis.a001.A001787;
 import irvine.oeis.a204.A204574;
-
 /**
  * A103175 A001787 written in base 2.
  * @author Georg Fischer

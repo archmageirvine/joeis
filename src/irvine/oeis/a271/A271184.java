@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002522;
 import irvine.oeis.a003.A003136;
 
 /**
- * A271184 L\u00f6schian numbers (A003136) of the form k^2+1.
+ * A271184 Löschian numbers (A003136) of the form k^2+1.
  * @author Georg Fischer
  */
 public class A271184 extends IntersectionSequence {

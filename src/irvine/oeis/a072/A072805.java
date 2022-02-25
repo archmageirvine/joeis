@@ -3,7 +3,6 @@ package irvine.oeis.a072;
 
 import irvine.oeis.a002.A002145;
 import irvine.oeis.a204.A204574;
-
 /**
  * A072805 Primes of form 4k+3 written in base 3.
  * @author Georg Fischer

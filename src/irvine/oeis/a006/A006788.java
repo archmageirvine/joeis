@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006788 a(n) = floor(2^(n-1)/n).
+ * A006788 Floor( 2^(n-1)/n ).
  * @author Sean A. Irvine
  */
 public class A006788 implements Sequence {

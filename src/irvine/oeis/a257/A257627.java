@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.ModifiedPascalTriangle;
 
 /**
- * A257627 Triangle, read by rows, T(n,k) = t(n-k, k) where t(n,m) = f(m)*t(n-1,m) + f(n)*t(n,m-1) and f(x) = 7*x + 3.
+ * A257627 Triangle read by rows: T(n,k) = t(n-k, k); t(n,m) = f(m)*t(n-1,m) + f(n)*t(n,m-1), where f(x) = 7*x + 3.
  * @author Georg Fischer
  */
 public class A257627 extends ModifiedPascalTriangle {

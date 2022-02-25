@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.RADDSequence;
 
 /**
- * A063054 &apos;Reverse and Add!&apos; trajectory of 1997.
+ * A063054 'Reverse and Add!' trajectory of 1997.
  * @author Georg Fischer
  */
 public class A063054 extends RADDSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A133889 a(n) = binomial(n+9,n) mod 9.
+ * A133889 Binomial(n+9,n) mod 9.
  * @author Georg Fischer
  */
 public class A133889 implements Sequence {

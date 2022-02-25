@@ -6,7 +6,7 @@ import irvine.oeis.a023.A023705;
 import irvine.oeis.a032.A032924;
 
 /**
- * A266001 Numbers with no 0&apos;s in their base 3 and base 4 expansions.
+ * A266001 Numbers with no 0's in their base 3 and base 4 expansions.
  * @author Georg Fischer
  */
 public class A266001 extends IntersectionSequence {

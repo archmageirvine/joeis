@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A062083 Continued fraction expansion of Sierpiński&apos;s Constant.
+ * A062083 Continued fraction expansion of Sierpi\u0144ski's Constant.
  * @author Georg Fischer
  */
 public class A062083 extends ContinuedFractionSequence {

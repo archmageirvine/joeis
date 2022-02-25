@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a000.A000292;
 
 /**
- * A145397 Numbers not of the form m*(m+1)*(m+2)/6, the non-tetrahedral numbers.
+ * A145397 Numbers not of the form 1/6*m*(m+1)*(m+2), the non-tetrahedral numbers.
  * @author Georg Fischer
  */
 public class A145397 extends ComplementSequence {

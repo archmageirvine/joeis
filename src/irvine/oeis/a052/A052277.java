@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052277 a(n) = (4n+2)!/2^(2n+1).
+ * A052277 (4n+2)!/2^(2n+1).
  * @author Georg Fischer
  */
 public class A052277 extends HolonomicRecurrence {

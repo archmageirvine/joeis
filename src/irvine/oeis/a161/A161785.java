@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002191;
 import irvine.oeis.a002.A002202;
 
 /**
- * A161785 Numbers k that are in the range of both Euler&apos;s phi function and the sigma function.
+ * A161785 Numbers k that are in the range of both Euler's phi function and the sigma function.
  * @author Georg Fischer
  */
 public class A161785 extends IntersectionSequence {

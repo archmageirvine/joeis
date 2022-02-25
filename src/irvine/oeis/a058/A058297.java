@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007493;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A058297 Continued fraction for Wallis&apos; number (A007493).
+ * A058297 Continued fraction for Wallis' number (A007493).
  * @author Georg Fischer
  */
 public class A058297 extends ContinuedFractionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A110555 Triangle of partial sums of alternating binomial coefficients: T(n,k) = Sum_{j=0..k} binomial(n,j)*(-1)^j; n &gt;= 0, 0 &lt;= k &lt;= n.
+ * A110555 Triangle of partial sums of alternating binomial coefficients: T(n,k) = Sum_{k=0..n} binomial(n,k)*(-1)^k.
  * @author Georg Fischer
  */
 public class A110555 extends Triangle {

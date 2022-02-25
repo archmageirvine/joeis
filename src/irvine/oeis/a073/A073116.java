@@ -4,14 +4,14 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A073116 Continued fraction expansion of S/2 where S = sum( k&gt;=0, 1/2^floor(k*PHI) ) and PHI is the golden ratio (1+sqrt(5))/2.
+ * A073116 Continued fraction expansion of S/2 where S = sum( k&gt;=0,1/2^floor(k*PHI) ) and PHI is the golden ratio (1+sqrt(5))/2.
  * If n&gt;2 a(2n+1)=2^(F(2n-1)+1), a(2n)= 2^(F(2n-2)-1) where F(n) is the n-th Fibonacci number
  * @author Georg Fischer
  */
 public class A073116 extends A000045 {
 
+  private static final int[] INITS = {0, 1, 5, 1};
   private int mN;
-  private final static int[] INITS = new int[] {0, 1, 5, 1};
 
   /** Construct the sequence. */
   public A073116() {

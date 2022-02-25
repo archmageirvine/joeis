@@ -22,13 +22,7 @@ public class A069951 implements Sequence {
       return result;
     }
     switch (mN % 5) {
-      default:
-      case 0:
-        ++mK;
-        result = Z.ONE;
-        break;
       case 1:
-        result = Z.ONE;
         break;
       case 2:
         result = Z.valueOf(9 * mK + 1);
@@ -38,6 +32,10 @@ public class A069951 implements Sequence {
         break;
       case 4:
         result = Z.valueOf(9 * mK + 7);
+        break;
+      case 0:
+      default:
+        ++mK;
         break;
     }
     return result;

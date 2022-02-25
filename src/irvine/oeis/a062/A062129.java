@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A062129 In base 2: start with n; add to itself with digits reversed; if palindrome, stop;
+ * A062129 In base 2: start with n; add to itself with digits reversed; if palindrome, stop; otherwise repeat; a(n) gives palindrome at which it stops, or -1 if no palindrome is ever reached.
  * otherwise repeat; a(n) gives palindrome at which it stops, or -1 if no palindrome is ever reached.
  * Limit = 1024.
  * @author Georg Fischer

@@ -19,7 +19,7 @@ public class A055685 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param base
+   * @param base base to use
    */
   public A055685(final int base) {
     mBase = Z.valueOf(base);
@@ -27,10 +27,10 @@ public class A055685 implements Sequence {
 
   @Override
   public Z next() {
-    Z k_1 = mK;
+    Z k1 = mK;
     mK = mK.add(Z.ONE);
-    while (!mBase.modPow(mK, k_1).subtract(k_1).equals(Z.NEG_ONE)) {
-      k_1 = mK;
+    while (!mBase.modPow(mK, k1).subtract(k1).equals(Z.NEG_ONE)) {
+      k1 = mK;
       mK = mK.add(Z.ONE);
     }
     return mK;

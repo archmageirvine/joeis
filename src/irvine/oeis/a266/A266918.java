@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001597;
 import irvine.oeis.a003.A003136;
 
 /**
- * A266918 Perfect power Löschian numbers.
+ * A266918 Perfect power L\u00f6schian numbers.
  * @author Georg Fischer
  */
 public class A266918 extends IntersectionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.transform.GeneralizedEulerTransform;
 
 /**
- * A285243 Expansion of Product_{k>=1} 1/(1 - k*x^(k^2))^k.
+ * A285243 Expansion of Product_{k&gt;=1} 1/(1 - k*x^(k^2))^k.
  * @author Georg Fischer
  */
 public class A285243 extends GeneralizedEulerTransform {

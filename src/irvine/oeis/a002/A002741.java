@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002741 Logarithmic numbers: expansion of the e.g.f. -log(1-x) * e^(-x).
+ * A002741 Logarithmic numbers: expansion of -log(1-x) e^(-x).
  * @author Sean A. Irvine
  */
 public class A002741 implements Sequence {

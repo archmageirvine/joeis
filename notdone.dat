@@ -1803,3 +1803,4 @@ A054736 Smallest losing position after your opponent has taken k stones in a var
 A054764 Degree of numerator and denominator of n-th order susceptibility series for 2-dimensional Ising model.
 A054767 Period of the sequence of Bell numbers A000110 (mod n)
 A054798 Let N(k) and D(k) be the sequences defined in A054765 and A012244; write N(k)* D(k+j ) - N(k+j)*D(k) = (-1)^(k+1)*(k!)^2*P(k) where P(k) is a polynomial in k of degree j-1; sequence gives coefficients of expansion of P(k) in powers of k for j=1,2,3,...
+A054853 Number of labeled 3-edge-connected graphs by nodes

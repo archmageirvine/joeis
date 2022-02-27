@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A177738 a(n) = floor( (x^n - x^(-n)) / (x - x^(-1)) ) where x= Pi-2.
+ * A177738 a(n) = floor( (x^n - x^(-n)) / (x - x^(-1)) ) where x = Pi-2.
  * @author Georg Fischer
  */
 public class A177738 implements Sequence {

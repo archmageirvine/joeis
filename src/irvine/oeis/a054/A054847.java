@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.z.Z;
 
 /**
- * A054845.
+ * A054847 Nearest integer to (nearest integer to n^(2/3))^(3/2).
  * @author Sean A. Irvine
  */
 public class A054847 extends A054846 {

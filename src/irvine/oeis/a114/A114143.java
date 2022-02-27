@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A114143 The possible sums of the final scores of completed American football games where both teams score.
+ * A114143 Possible sums of the final scores of completed American football games where both teams score.
  * @author Georg Fischer
  */
 public class A114143 extends NoncomputableSequence {

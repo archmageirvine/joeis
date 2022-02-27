@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002476;
 
 /**
- * A054845.
+ * A054852 As p runs through the primes == 1 mod 3, sequence gives Bernoulli(2p) - 1/6.
  * @author Sean A. Irvine
  */
 public class A054852 extends A002476 {

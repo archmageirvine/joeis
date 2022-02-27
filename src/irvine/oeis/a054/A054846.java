@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054845.
+ * A054846 Nearest integer to n^(2/3).
  * @author Sean A. Irvine
  */
 public class A054846 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.oeis.a042.A042974;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A056030.
+ * A056030 Continued fraction for 0.12112111211112... (A042974).
  * @author Sean A. Irvine
  */
 public class A056030 extends ContinuedFractionSequence {

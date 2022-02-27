@@ -5,7 +5,7 @@ import irvine.oeis.cons.ContinuedFractionSequence;
 import irvine.oeis.a080.A080130;
 
 /**
- * A079650 Continued fraction for e^-gamma.
+ * A079650 Continued fraction for e^(-gamma).
  * @author Georg Fischer
  */
 public class A079650 extends ContinuedFractionSequence {

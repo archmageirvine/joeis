@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052278 (4n+3)!/4^n.
+ * A052278 a(n) = (4n+3)!/4^n.
  * @author Georg Fischer
  */
 public class A052278 extends HolonomicRecurrence {

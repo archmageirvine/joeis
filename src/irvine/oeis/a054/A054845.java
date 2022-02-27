@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054845.
+ * A054845 Number of ways of representing n as the sum of one or more consecutive primes.
  * @author Sean A. Irvine
  */
 public class A054845 implements Sequence {

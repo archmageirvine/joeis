@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054845.
+ * A054860 Number of ways of writing 2n+1 as p + q + r where p, q, r are primes with p &lt;= q &lt;= r.
  * @author Sean A. Irvine
  */
 public class A054860 implements Sequence {

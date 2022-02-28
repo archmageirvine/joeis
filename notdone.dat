@@ -578,7 +578,7 @@ A006796 A subclass of 2n-node trivalent planar graphs without triangles
 A006797 A subclass of 2n-node trivalent planar graphs without triangles
 A006798 A subclass of 2n-node trivalent planar graphs without triangles
 A006799 Number of vertex-transitive graphs with n nodes (possible with nauty but not competitive?)
-A006800 Number of connected vertex-transitive graphs with n nodes
+A006800 Number of connected vertex-transitive graphs with n nodes, mobius transform of A006799
 A006803 Percolation series for hexagonal lattice
 A006804 Percolation series for cubic lattice
 A006805 Percolation series for b.c.c. lattice
@@ -1807,3 +1807,6 @@ A054853 Number of labeled 3-edge-connected graphs by nodes
 A054907 Number of n-dimensional unimodular lattices (or quadratic forms) containing no vectors of norm 1
 A054908 Number of n-dimensional odd unimodular lattice (or quadratic forms) containing no vectors of norm 1
 A054909 Number of 8n-dimensional even unimodular lattice (or quadratic forms)
+A054911 Number of n-dimensional odd unimodular lattice (or quadratic forms).
+A054917 Number of connected unlabeled vertex-transitive graphs with n nodes such that complement is also connected, simple dependency of A006799
+A054930 Number of complementary pairs of circulant digraphs on n nodes, depends A049297

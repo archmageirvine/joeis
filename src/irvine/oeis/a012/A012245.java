@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012245 Characteristic function of factorial numbers; also decimal expansion of Liouville&apos;s number or Liouville&apos;s constant.
+ * A012245 Characteristic function of factorial numbers; also decimal expansion of Liouville's number or Liouville's constant.
  * @author Sean A. Irvine
  */
 public class A012245 implements Sequence {
@@ -13,6 +13,7 @@ public class A012245 implements Sequence {
   private long mM = 1;
   private long mF = 1;
 
+  @Override
   public Z next() {
     if (++mN == mF) {
       mF *= ++mM;

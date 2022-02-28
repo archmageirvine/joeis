@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A056203 Triangle of numbers related to congruum problem: T(n,k)=n^2+2nk-k^2 with n&gt;k&gt;0, starting at T(2, 1)=7.
+ * A056203 Triangle of numbers related to congruum problem: T(n,k)=n^2+2nk-k^2 with n&gt;k&gt;0, starting at T(2,1)=7.
  * @author Georg Fischer
  */
 public class A056203 extends Triangle {

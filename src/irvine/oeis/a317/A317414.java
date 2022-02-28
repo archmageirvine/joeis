@@ -4,7 +4,7 @@ import irvine.oeis.a012.A012245;
 import irvine.oeis.cons.ContinuedFractionSequence;
 
 /**
- * A317413 Continued fraction for ternary expansion of Liouville's number interpreted in base 3 (A012245).
+ * A317414 Continued fraction for ternary expansion of Liouville's number interpreted in base 3 (A012245).
  * @author Georg Fischer
  */
 public class A317414 extends ContinuedFractionSequence {

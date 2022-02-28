@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056540 a(1) = 1; to form a(n+1), append a(n)-1, a(n)+1 at the beginning and the end of a(n), respectively. Ignore any leading 0&apos;s.
+ * A056540 a(1) = 1; to form a(n+1), append a(n)-1, a(n)+1 at the beginning and the end of a(n), respectively. Ignore any leading 0's.
  * @author Georg Fischer
  */
 public class A056540 implements Sequence {

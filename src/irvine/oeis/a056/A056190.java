@@ -17,6 +17,6 @@ public class A056190 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sumdiv(mN, d -> (LongUtils.gcd(d, mN / d) == 1 ? Binomial.binomial(mN, d) : Z.ZERO));
+    return Integers.SINGLETON.sumdiv(mN, d -> LongUtils.gcd(d, mN / d) == 1 ? Binomial.binomial(mN, d) : Z.ZERO);
   }
 }

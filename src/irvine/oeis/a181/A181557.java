@@ -5,7 +5,7 @@ import irvine.oeis.PositionSequence;
 import irvine.oeis.a031.A031883;
 
 /**
- * A181557 Indices k for which A031883(k) = 2 = A000959(k+1)-A000959(k), i.e., indices of (lesser) &quot;twin&quot; lucky numbers.
+ * A181557 Indices k for which A031883(k) = 2 = A000959(k+1)-A000959(k), i.e., indices of (lesser) "twin" lucky numbers.
  * @author Georg Fischer
  */
 public class A181557 extends PositionSequence {

@@ -11,9 +11,7 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A010048 extends Triangle {
 
-  private int mN = -1;
-  private int mM = 0;
-
+  /** Construct the sequence. */
   public A010048() {
     hasRAM(true);
   }

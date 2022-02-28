@@ -11,16 +11,33 @@ public class A008905 implements Sequence {
 
   private Z mF = Z.ONE;
   private long mN = -1;
+  private int mBase;
+
+  /** Construct the sequence. */
+  public A008905() {
+    this(10);
+  }
+
+  /**
+   * Generice constructor with parameter
+   * @param base number base
+   */
+  public A008905(final int base) {
+    mBase = base;
+  }
 
   @Override
   public Z next() {
     if (++mN > 1) {
       mF = mF.multiply(mN);
-      Z[] qr;
-      while ((qr = mF.divideAndRemainder(Z.TEN))[1].isZero()) {
-        mF = qr[0];
+      if (mBase == 10) {
+        Z[] qr;
+        while ((qr = mF.divideAndRemainder(Z.TEN))[1].isZero()) {
+          mF = qr[0];
+        }
       }
     }
-    return Z.valueOf(mF.toString().charAt(0) - '0');
+    final char ch = mF.toString(mBase).charAt(0);
+    return Z.valueOf(ch >= 'a' ? ch - 'a' + 10 : ch - '0');
   }
 }

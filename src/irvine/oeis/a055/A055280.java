@@ -1,0 +1,15 @@
+package irvine.oeis.a055;
+
+import irvine.oeis.HolonomicRecurrence;
+
+/**
+ * A055280 Number of rooted trees with n nodes and 5 leaves.
+ * @author Georg Fischer
+ */
+public class A055280 extends HolonomicRecurrence {
+
+  /** Construct the sequence. */
+  public A055280() {
+    super(5, "[[0],[1],[-5],[8],[0],[-15],[18],[-3],[-16],[19],[0],[-19],[16],[3],[-18],[15],[0],[-8],[5],[-1]", "1, 5, 21, 72, 214, 563, 1344, 2958, 6086, 11820, 21854, 38713, 66069", 0);
+  }
+}

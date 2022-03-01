@@ -3,7 +3,9 @@ package irvine.math.partitions;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
@@ -18,6 +20,7 @@ import irvine.math.z.Z;
  */
 public final class IntegerPartition {
 
+  private static final int[] EMPTY = {};
   private final int[] mX;
   private boolean mFirst = true;
   private int mM = 0;
@@ -30,12 +33,14 @@ public final class IntegerPartition {
    * @exception IllegalArgumentException if <code>n</code> is not positive.
    */
   public IntegerPartition(final int n) {
-    if (n < 1) {
+    if (n < 0) {
       throw new IllegalArgumentException();
     }
     mX = new int[n];
-    Arrays.fill(mX, 1);
-    mX[0] = n;
+    if (n > 0) {
+      Arrays.fill(mX, 1);
+      mX[0] = n;
+    }
   }
 
   /**
@@ -47,9 +52,9 @@ public final class IntegerPartition {
   public int[] next() {
     if (mFirst) {
       mFirst = false;
-      return new int[] {mX[0]};
+      return mX.length == 0 ? EMPTY : new int[] {mX[0]};
     }
-    if (mX[0] == 1) {
+    if (mX.length == 0 || mX[0] == 1) {
       return null;
     }
     if (mX[mH] == 2) {
@@ -205,6 +210,77 @@ public final class IntegerPartition {
     }
     return 0;
   };
+
+  /**
+   * Build an index from partitions to index in the default ordering.
+   * @param n number to partition
+   * @return mapping
+   */
+  public static Map<String, Integer> buildPartitionIndex(final int n) {
+    final Map<String, Integer> map = new HashMap<>();
+    final IntegerPartition part = new IntegerPartition(n);
+    int[] p;
+    int c = -1;
+    while ((p = part.next()) != null) {
+      map.put(Arrays.toString(p), ++c);
+    }
+    return map;
+  }
+
+  /**
+   * Concatenates two sorted small vectors, preserving order.
+   * Used exclusively for combining two partitions.
+   * For example: Merge([4,1,1], [6,3]) => [6,4,3,1,1]
+   * @param p1 first partition
+   * @param p2 second partition
+   * @return merged partition
+   */
+  public static int[] merge(final int[] p1, final int[] p2) {
+    final int[] v = new int[p1.length + p2.length];
+    for (int i = 0, j = 0, k = 0; k < v.length; ++k) {
+      if (i < p1.length && j < p2.length) {
+        if (p1[i] >= p2[j]) {
+          v[k] = p1[i++];
+        } else {
+          v[k] = p2[j++];
+        }
+      } else if (i < p1.length) {
+        v[k] = p1[i++];
+      } else {
+        v[k] = p2[j++];
+      }
+    }
+    return v;
+  }
+
+  /**
+   * Return the count of the number of permutations of a particular type.
+   * @param v permutation type (i.e., a partition)
+   * @param mult multiplicative factor
+   * @return count
+   */
+  public static Z permCount(final int[] v, final int mult) {
+    Z m = Z.ONE;
+    int s = 0;
+    int k = 0;
+    for (int i = 0; i < v.length; ++i) {
+      final int t = v[i];
+      k = i > 0 && t == v[i - 1] ? k + 1 : 1;
+      final int u = mult * t;
+      m = m.multiply(u * (long) k);
+      s += u;
+    }
+    return FACTORIAL.factorial(s).divide(m);
+  }
+
+  /**
+   * Return the count of the number of permutations of a particular type.
+   * @param v permutation type (i.e., a partition)
+   * @return count
+   */
+  public static Z permCount(final int[] v) {
+    return permCount(v, 1);
+  }
 
   /**
    * Print all integer partitions of given argument.

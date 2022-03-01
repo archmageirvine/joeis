@@ -47,11 +47,11 @@ for(n=1, 5, print(row(n)))
     final IntegerPartition part = new IntegerPartition(n);
     int[] q;
     while ((q = part.next()) != null) {
-      final Z pcq = permCount(q, 1);
+      final Z pcq = IntegerPartition.permCount(q, 1);
       final IntegerPartition part2 = new IntegerPartition(n);
       int[] p;
       while ((p = part2.next()) != null) {
-        sum = RING.add(sum, RING.multiply(c(p, q), new Q(permCount(p, 1).multiply(pcq))));
+        sum = RING.add(sum, RING.multiply(c(p, q), new Q(IntegerPartition.permCount(p, 1).multiply(pcq))));
       }
     }
     return RING.multiply(sum, new Q(Z.ONE, mF.factorial(n).square()));

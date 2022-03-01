@@ -44,7 +44,7 @@ public class A318795 extends A052107 {
         s = fld.add(s, fld.monomial(RING_Y.divide(k(q, t, k), new Q(t)), t));
       }
       s = fld.exp(s, n);
-      sum = sum.add(s.coeff(n).coeff(k).multiply(permCount(q, 1)));
+      sum = sum.add(s.coeff(n).coeff(k).multiply(IntegerPartition.permCount(q, 1)));
     }
     return sum.divide(mF.factorial(m)).toZ();
   }

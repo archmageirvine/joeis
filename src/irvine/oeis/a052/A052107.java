@@ -17,20 +17,6 @@ public class A052107 implements Sequence {
   protected final MemoryFactorial mF = new MemoryFactorial();
   protected int mN = 0;
 
-  protected Z permCount(final int[] v, final int mult) {
-    Z m = Z.ONE;
-    int s = 0;
-    int k = 0;
-    for (int i = 0; i < v.length; ++i) {
-      final int t = v[i];
-      k = i > 0 && t == v[i - 1] ? k + 1 : 1;
-      final int u = mult * t;
-      m = m.multiply(u * (long) k);
-      s += u;
-    }
-    return mF.factorial(s).divide(m);
-  }
-
   protected int edges(final int[] v) {
     int sum = 0;
     for (int i = 1; i < v.length; ++i) {
@@ -55,7 +41,7 @@ public class A052107 implements Sequence {
       final IntegerPartition part = new IntegerPartition(mN / 4);
       int[] p;
       while ((p = part.next()) != null) {
-        final Z t = permCount(p, 4).shiftLeft(2 * edges(p));
+        final Z t = IntegerPartition.permCount(p, 4).shiftLeft(2 * edges(p));
         sum = sum.add(t.multiply((mN & 1) == 1 ? Z.valueOf(mN).shiftLeft(2 * p.length) : Z.ONE));
       }
       return sum.divide(mF.factorial(mN));

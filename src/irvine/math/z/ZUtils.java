@@ -1152,6 +1152,19 @@ public final class ZUtils {
   }
 
   /**
+   * Return the sum of the values.
+   * @param values numbers to sum
+   * @return sum
+   */
+  public static Z sum(final Collection<Z> values) {
+    Z sum = Z.ZERO;
+    for (final Z v : values) {
+      sum = sum.add(v);
+    }
+    return sum;
+  }
+
+  /**
    * Return the product of the values
    * @param values numbers to multiply
    * @return product

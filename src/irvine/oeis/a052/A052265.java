@@ -72,7 +72,7 @@ public class A052265 extends A052107 {
       final IntegerPartition part = new IntegerPartition(mN);
       int[] p;
       while ((p = part.next()) != null) {
-        mRow = RING.add(mRow, RING.multiply(fix(p), permCount(p, 1)));
+        mRow = RING.add(mRow, RING.multiply(fix(p), IntegerPartition.permCount(p, 1)));
       }
     }
     return mRow.coeff(mM).divide(mF);

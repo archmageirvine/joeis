@@ -43,7 +43,7 @@ public class A333361 extends A052107 {
     final IntegerPartition part = new IntegerPartition(n);
     int[] p;
     while ((p = part.next()) != null) {
-      s = RING.add(s, RING.multiply(RING.series(RING.one(), edgesPoly(p, degree), degree), permCount(p, 1)));
+      s = RING.add(s, RING.multiply(RING.series(RING.one(), edgesPoly(p, degree), degree), IntegerPartition.permCount(p, 1)));
     }
     return RING.divide(s, mF.factorial(n));
   }

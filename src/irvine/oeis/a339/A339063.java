@@ -48,7 +48,7 @@ public class A339063 extends A052107 {
     while ((p = part.next()) != null) {
       final int[] q = Arrays.copyOf(prefix, p.length + prefix.length);
       System.arraycopy(p, 0, q, prefix.length, p.length);
-      final Polynomial<Z> t = RING.multiply(edgesPoly(q, degreeLimit), permCount(p, 1));
+      final Polynomial<Z> t = RING.multiply(edgesPoly(q, degreeLimit), IntegerPartition.permCount(p, 1));
       sum = RING.add(sum, t);
     }
     return RING.divide(sum, mF.factorial(n));

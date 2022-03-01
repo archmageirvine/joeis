@@ -39,7 +39,7 @@ public class A052283 extends A052107 {
     final IntegerPartition part = new IntegerPartition(n);
     int[] p;
     while ((p = part.next()) != null) {
-      row = RING.add(row, RING.multiply(edgesPoly(p), permCount(p, 1)));
+      row = RING.add(row, RING.multiply(edgesPoly(p), IntegerPartition.permCount(p, 1)));
     }
     return RING.divide(row, mF.factorial(n));
   }

@@ -42,7 +42,7 @@ public class A053588 extends A052107 {
     final IntegerPartition part = new IntegerPartition(mN);
     int[] p;
     while ((p = part.next()) != null) {
-      sum = sum.add(permCount(p, 1).multiply(Z.FIVE.pow(edges(p))));
+      sum = sum.add(IntegerPartition.permCount(p, 1).multiply(Z.FIVE.pow(edges(p))));
     }
     return sum.divide(mF.factorial(mN));
   }

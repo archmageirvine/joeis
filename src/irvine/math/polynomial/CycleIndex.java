@@ -416,19 +416,6 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
   }
 
   /**
-   * Evaluate this cycle index using the given variable substitutions.
-   * @param subs variable substitutions
-   * @return value of cycle index
-   */
-  public Q eval(final List<Z> subs) {
-    Q sum = Q.ZERO;
-    for (final MultivariateMonomial m : values()) {
-      sum = sum.add(m.eval(subs));
-    }
-    return sum;
-  }
-
-  /**
    * Apply the variables to the indeterminates in this cycle index and
    * return the evaluation. Variables are used repeatedly until all
    * indeterminates are handled.

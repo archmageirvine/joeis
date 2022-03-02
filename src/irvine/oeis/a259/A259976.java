@@ -187,10 +187,10 @@ fn xi(q: usize) -> RP {
 */
 
   private long[] cycles(final List<Integer> p) {
-    final long[] r = new long[p.size()];
+    final long[] r = new long[p.size() + 1];
     for (int i0 = 0; i0 < p.size(); ++i0) {
       int i = i0;
-      int j = 0;
+      int j = 1;
       while (p.get(i) > i0) {
         i = p.get(i);
         ++j;
@@ -323,8 +323,9 @@ fn edges(p: Vec<usize>) -> Vec<usize> {
         System.out.println(Arrays.toString(pp) + " permcount=" + t);
       }
       // todo why are these two things different
-      //final long[] sigma = cycles(edges(fromCycles(pp)));
-      final List<Z> sigma = cycles2(edges(fromCycles(pp)));
+      final long[] sigma = cycles(edges(fromCycles(pp)));
+      //final List<Z> sigma = cycles2(edges(fromCycles(pp)));
+      System.out.println(Arrays.toString(pp) + " -> " + cycles2(edges(fromCycles(pp))) + " cf. " + Arrays.toString(cycles(edges(fromCycles(pp)))));
       r = r.add(xiq.eval(sigma).multiply(t));
     }
     assert r.isInteger();

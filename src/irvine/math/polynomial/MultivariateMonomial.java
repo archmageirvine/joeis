@@ -302,24 +302,6 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
    * @param subs values for variables
    * @return evaluation of monomial
    */
-  public Q eval(final List<Z> subs) {
-    Q prod = getCoefficient();
-    for (final Map.Entry<Pair<String, Integer>, Z> e : entrySet()) {
-      final int k = e.getKey().right();
-      final Z s = subs.get(k % subs.size());
-      prod = prod.multiply(new Q(s).pow(e.getValue().intValueExact()));
-      if (Q.ZERO.equals(prod)) {
-        break; // efficiency
-      }
-    }
-    return prod;
-  }
-
-  /**
-   * Evaluate this monomial using the given values as variable substitutions.
-   * @param subs values for variables
-   * @return evaluation of monomial
-   */
   public Q eval(final long... subs) {
     Q prod = getCoefficient();
     for (final Map.Entry<Pair<String, Integer>, Z> e : entrySet()) {

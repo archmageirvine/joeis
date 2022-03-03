@@ -18,34 +18,31 @@ import irvine.util.CliFlags;
 public class Multigraph implements GroupAction {
 
 /*
-#define USAGE \
-"multig [-q] [-u|-T|-G|-A|-B] [-e#|-e#:#] \n" \
-"       [-m#] [-f#] [-D#|-r#|-l#] [infile [mOut]]"
+ multig [-q] [-u|-T|-G|-A|-B] [-e#|-e#:#]
+       [-m#] [-f#] [-D#|-r#|-l#] [infile [mOut]]
 
-#define HELPTEXT \
-" Read undirected loop-free graphs and replace their edges with multiple\n\
-  edges in all possible ways (multiplicity at least 1).\n\
-  Isomorphic multigraphs derived from the same input are suppressed.\n\
-  If the input graphs are non-isomorphic then the output graphs are also.\n\
-\n\
-    -e# | -e#:#  specify a value or range of the total number of edges\n\
-                 counting multiplicities\n\
-    -m# maximum edge multiplicity (minimum is 1)\n\
-    -D# upper bound on maximum degree\n\
-    -r# make regular of specified degree (incompatible with -l, -D, -e)\n\
-    -l# make regular multigraphs with multiloops, degree #\n\
-                 (incompatible with -r, -D, -e)\n\
-    Either -l, -r, -D, -e or -m with a finite maximum must be given\n\
-    -f# Use the group that fixes the first # vertices setwise\n\
-    -T  use a simple text output format (nv ne {mV1 v2 mult})\n\
-    -G  like -T but includes group size as third item (if less than 10^10)\n\
-          The group size does not include exchange of isolated vertices.\n\
-    -A  write as the upper triangle of an adjacency matrix, row by row, \n\
-        including the diagonal, and preceded by the number of vertices\n\
-    -B  write as an integer matrix preceded by the number of rows and\n\
-        number of columns, where -f determines the number of rows\n\
-    -u  no output, just count them\n\
-    -q  suppress auxiliary information\n"
+  Read undirected loop-free graphs and replace their edges with multiple
+  edges in all possible ways (multiplicity at least 1).
+  Isomorphic multigraphs derived from the same input are suppressed.
+  If the input graphs are non-isomorphic then the output graphs are also.
+    -e# | -e#:#  specify a value or range of the total number of edges
+                 counting multiplicities
+    -m# maximum edge multiplicity (minimum is 1)
+    -D# upper bound on maximum degree
+    -r# make regular of specified degree (incompatible with -l, -D, -e)
+    -l# make regular multigraphs with multiloops, degree #
+                 (incompatible with -r, -D, -e)
+    Either -l, -r, -D, -e or -m with a finite maximum must be given
+    -f# Use the group that fixes the first # vertices setwise
+    -T  use a simple text output format (nv ne {mV1 v2 mult})
+    -G  like -T but includes group size as third item (if less than 10^10)
+          The group size does not include exchange of isolated vertices.
+    -A  write as the upper triangle of an adjacency matrix, row by row, 
+        including the diagonal, and preceded by the number of vertices
+    -B  write as an integer matrix preceded by the number of rows and
+        number of columns, where -f determines the number of rows
+    -u  no output, just count them
+    -q  suppress auxiliary information
 */
 
   private static final int MAXNV = 128;
@@ -79,7 +76,7 @@ public class Multigraph implements GroupAction {
   private final boolean mAjacencyOutput;
   private final boolean mMatrixOutput;
 
-  protected GraphProcessor mOutProc = null;
+  protected MultigraphProcessor mOutProc = null;
 
   /**
    * Construct a new multigraph processor.
@@ -99,7 +96,7 @@ public class Multigraph implements GroupAction {
    * Set the output processor.
    * @param outProc output processor
    */
-  public void setProcessor(final GraphProcessor outProc) {
+  public void setProcessor(final MultigraphProcessor outProc) {
     mOutProc = outProc;
   }
 
@@ -185,33 +182,33 @@ public class Multigraph implements GroupAction {
     if (accept) {
       ++mGraphsOutput;
 
-      if (mOut != null) {
+      if (mOutProc != null) {
         int ne2 = ne;
         if (lswitch) {
           for (int i = 0; i < n; ++i) {
             if (deg[i] < maxdeg) {
-              mV0[ne2] = mV1[ne2] = i;
+              mV0[ne2] = i;
+              mV1[ne2] = i;
               mIx[ne2] = (maxdeg - deg[i]) / 2;
               ++ne2;
             }
           }
         }
-        if (mOutProc != null) {
-          throw new UnsupportedOperationException();
-          //mOutProc.process(mOut, n, ne2, mNewGroupSize, mV0, mV1, mIx);
-        }
-        if (mAjacencyOutput || mMatrixOutput) {
-          printAdjacencyMatrix(mOut, n, ne2, mIx);
-        } else {
-          final StringBuilder sb = new StringBuilder();
-          sb.append(n).append(' ').append(ne2);
-          if (sGSwitch) {
-            sb.append(' ').append(mNewGroupSize);
+        mOutProc.process(n, ne, deg);
+        if (mOut != null) {
+          if (mAjacencyOutput || mMatrixOutput) {
+            printAdjacencyMatrix(mOut, n, ne2, mIx);
+          } else {
+            final StringBuilder sb = new StringBuilder();
+            sb.append(n).append(' ').append(ne2);
+            if (sGSwitch) {
+              sb.append(' ').append(mNewGroupSize);
+            }
+            for (int i = 0; i < ne2; ++i) {
+              sb.append(' ').append(mV0[i]).append(' ').append(mV1[i]).append(' ').append(mIx[i]);
+            }
+            mOut.println(sb);
           }
-          for (int i = 0; i < ne2; ++i) {
-            sb.append(' ').append(mV0[i]).append(' ').append(mV1[i]).append(' ').append(mIx[i]);
-          }
-          mOut.println(sb.toString());
         }
       }
     }
@@ -491,7 +488,7 @@ public class Multigraph implements GroupAction {
       return;
     }
     if (n > MAXNV || ne > MAXNE) {
-      throw new IllegalArgumentException(">E multig: MAXNV or MAXNE exceeded\n");
+      throw new IllegalArgumentException(">E multig: MAXNV or MAXNE exceeded");
     }
     final int[] ptn = new int[n];
     Arrays.fill(ptn, 1);
@@ -694,7 +691,7 @@ public class Multigraph implements GroupAction {
         sb.append(" multigraphs generated");
       }
       sb.append(String.format("; %.2f sec", t / 1000));
-      System.err.println(sb.toString());
+      System.err.println(sb);
     }
   }
 }

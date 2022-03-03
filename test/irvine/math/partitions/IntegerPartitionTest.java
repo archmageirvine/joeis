@@ -12,12 +12,9 @@ import junit.framework.TestCase;
 public class IntegerPartitionTest extends TestCase {
 
   public void test0() {
-    try {
-      new IntegerPartition(0);
-      fail();
-    } catch (final IllegalArgumentException e) {
-      // ok
-    }
+    final IntegerPartition ip = new IntegerPartition(0);
+    assertEquals(0, ip.next().length);
+    assertNull(ip.next());
   }
 
   public void test5() {

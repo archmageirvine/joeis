@@ -182,7 +182,7 @@ public class Multigraph implements GroupAction {
     if (accept) {
       ++mGraphsOutput;
 
-      if (mOutProc != null) {
+      if (mOutProc != null || mOut != null) {
         int ne2 = ne;
         if (lswitch) {
           for (int i = 0; i < n; ++i) {
@@ -194,7 +194,9 @@ public class Multigraph implements GroupAction {
             }
           }
         }
-        mOutProc.process(n, ne, deg);
+        if (mOutProc != null) {
+          mOutProc.process(n, ne, deg);
+        }
         if (mOut != null) {
           if (mAjacencyOutput || mMatrixOutput) {
             printAdjacencyMatrix(mOut, n, ne2, mIx);

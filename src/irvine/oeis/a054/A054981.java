@@ -17,6 +17,11 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A054981 implements Sequence, GraphProcessor {
 
+  // todo: I have prototype code in C using nauty that does this sequence correctly
+  // todo: We need a Java version of vcolg
+  // todo: We need to update multigraph to support colors
+  // todo: We need the outproc done here
+
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = -1;
   private final DynamicLongArray mCounts = new DynamicLongArray();

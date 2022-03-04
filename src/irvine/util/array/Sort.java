@@ -63,6 +63,26 @@ public final class Sort {
     }
   }
 
+  private static class IntIntSwapper implements Swapper {
+    IntIntSwapper(final int[] primary, final int[] secondary) {
+      mPrimary = primary;
+      mSecondary = secondary;
+    }
+
+    private final int[] mPrimary;
+    private final int[] mSecondary;
+
+    @Override
+    public void swap(final int a, final int b) {
+      final int t = mPrimary[a];
+      mPrimary[a] = mPrimary[b];
+      mPrimary[b] = t;
+      final int u = mSecondary[a];
+      mSecondary[a] = mSecondary[b];
+      mSecondary[b] = u;
+    }
+  }
+
   private static class DoubleLongSwapper implements Swapper {
     DoubleLongSwapper(final double[] primary, final long[] secondary) {
       mPrimary = primary;
@@ -136,6 +156,20 @@ public final class Sort {
       throw new IllegalArgumentException();
     }
     sort(primary, 0, primary.length, new LongSwapper(primary, secondary));
+  }
+
+  /**
+   * Paired sort of two arrays.
+   *
+   * @param primary array to sort
+   * @param secondary array to keep in sync with <code>primary</code>
+   * @exception IllegalArgumentException if the arrays have different lengths.
+   */
+  public static void sort(final int[] primary, final int[] secondary) {
+    if (primary.length != secondary.length) {
+      throw new IllegalArgumentException();
+    }
+    sort(primary, 0, primary.length, new IntIntSwapper(primary, secondary));
   }
 
   /**

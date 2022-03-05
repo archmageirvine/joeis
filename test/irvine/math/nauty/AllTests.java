@@ -5,7 +5,6 @@ import junit.framework.TestSuite;
 
 /**
  * Links all the tests in this package.
- *
  * @author Sean A. Irvine
  */
 public class AllTests extends TestSuite {
@@ -24,6 +23,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(NautyTest.class);
     suite.addTestSuite(NautyUtilTest.class);
     suite.addTestSuite(RefineXTest.class);
+    suite.addTestSuite(VertexColourTest.class);
     suite.addTestSuite(WriteNautyTest.class);
     return suite;
   }

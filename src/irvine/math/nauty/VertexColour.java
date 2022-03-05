@@ -2,6 +2,7 @@ package irvine.math.nauty;
 
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.Arrays;
 
 import irvine.math.graph.Graph;
 import irvine.math.z.Z;
@@ -42,14 +43,15 @@ class VertexColour {
 // /*************************************************************************/
 
 
-private long vc_nin,vc_nout;
+private long vc_nin;
+private long mGeneratedCount = 0;
 private PrintStream outfile = null;
 
 private static final int MAXNV = 128;   /* Maximum number of vertices */
 
   protected VertexColourProcessor mOutProc = null;
 
-  private final int[] col = new int[MAXNV];
+  private int[] mColour = null;
 private boolean first;
 private final int[] lastreject = new int[MAXNV];
 private boolean lastrejok;
@@ -57,7 +59,7 @@ private Z groupsize;
 private long newgroupsize;
 // static boolean Tswitch,oswitch;
 
-private int fail_level;
+private int mFailLevel;
 
 // #define GROUPTEST_NOT 
 // #ifdef GROUPTEST
@@ -100,19 +102,16 @@ private int fail_level;
 
   /* test if col^p <= col */
   private boolean ismax(final int[] p, final int n) {
-    int i, k;
-    int fail;
-
-    fail = 0;
-    for (i = 0; i < n; ++i) {
-      k = p[i];
+    int fail = 0;
+    for (int i = 0; i < n; ++i) {
+      final int k = p[i];
       if (k > fail) {
         fail = k;
       }
-      if (col[k] > col[i]) {
-        fail_level = fail;
+      if (mColour[k] > mColour[i]) {
+        mFailLevel = fail;
         return false;
-      } else if (col[k] < col[i]) {
+      } else if (mColour[k] < mColour[i]) {
         return true;
       }
     }
@@ -121,21 +120,17 @@ private int fail_level;
     return true;
   }
 
-  /* Called by allgroup2. */
   private final GroupAction testmax = new GroupAction() {
     @Override
     public void groupAction(final int[] p, final int pos, final int n, final int[] abort) {
-      int i;
-
-      if (first) {                       /* only the identity */
+      if (first) { /* only the identity */
         first = false;
         return;
       }
-
       if (!ismax(p, n)) {
         abort[0] = 1;
-        for (i = 0; i < n; ++i) {
-          lastreject[i] = p[i];
+        if (n >= 0) {
+          System.arraycopy(p, 0, lastreject, 0, n);
         }
         lastrejok = true;
       }
@@ -161,7 +156,7 @@ private int fail_level;
 
   /* Try one solution, accept if maximal. */
   /* Return value is level to return to. */
-  private int trythisone(GroupRecord group, Graph g, boolean digraph, int m, int n) {
+  private int trythisone(final GroupRecord group, final Graph g, final boolean digraph, final int n) {
     //int i, j;
     boolean accept;
     //Graph gi;
@@ -171,7 +166,8 @@ private int fail_level;
 
     newgroupsize = 1;
 
-    if (group != null || Z.ONE.equals(groupsize)) {
+    System.out.println("SAI: groupsize=" + groupsize + " lastrejok=" + (lastrejok ? "1" : "0"));
+    if (group == null || Z.ONE.equals(groupsize)) {
       accept = true;
     } else if (lastrejok && !ismax(lastreject, n)) {
       accept = false;
@@ -180,13 +176,10 @@ private int fail_level;
     } else {
       newgroupsize = 1;
       first = true;
-
-      if (NauGroup.allgroup2(group, testmax) == 0) {
-        accept = true;
-      } else {
-        accept = false;
-      }
+      System.out.println("SAI: calling allgroup");
+      accept = NauGroup.allgroup2(group, testmax) == 0;
     }
+    System.out.println("SAI: accept=" + (accept ? "1" : "0"));
 
     if (accept) {
 //#ifdef GROUPTEST
@@ -195,9 +188,9 @@ private int fail_level;
 //        totallab += groupsize/newgroupsize;
 //#endif
 
-      ++vc_nout;
+      ++mGeneratedCount;
       if (mOutProc != null) {
-        mOutProc.process(g, col, m, n);
+        mOutProc.process(g, mColour);
       }
 //
 //	if (outfile != null)
@@ -238,47 +231,41 @@ private int fail_level;
 //        }
       return n - 1;
     } else {
-      return fail_level - 1;
+      return mFailLevel - 1;
     }
   }
 
   /* Recursive scan for default case */
   /* Returned value is level to return to. */
-  private int scan(int level, Graph g, boolean digraph, int[] prev, int mincols,
-     int maxcols, int sofar, int[] colcount, int[] mindeg,
-     int[] maxdeg, int[] deg, int numcols, GroupRecord group, int m, int n) {
-    int left;
-    int min, max, k, ret;
-
+  private int scan(final int level, final Graph g, final boolean digraph, final int[] prev, final int mincols, final int maxcols, final int sofar, final GroupRecord group, int n) {
+    System.out.println("SAI: scan: level=" + level + " sofar=" + sofar + " maxcols=" + maxcols);
     if (level == n) {
-      return trythisone(group, g, digraph, m, n);
+      return trythisone(group, g, digraph, n);
     }
 
-    left = n - level - 1;
-    min = mincols - sofar - numcols * left;
-    if (min < 0) {
-      min = 0;
+    final int left = n - level - 1;
+    final int min = Math.max(0, mincols - sofar - mNumColours * left);
+    int max = maxcols - sofar;
+    if (max >= mNumColours) {
+      max = mNumColours - 1;
     }
-    max = maxcols - sofar;
-    if (max >= numcols) {
-      max = numcols - 1;
+    if (prev[level] >= 0 && mColour[prev[level]] < max) {
+      max = mColour[prev[level]];
     }
-    if (prev[level] >= 0 && col[prev[level]] < max) {
-      max = col[prev[level]];
-    }
+    System.out.println("SAI: min=" + min + " max=" + max + " counts=" + Arrays.toString(mColourCount));
 
-    for (k = min; k <= max; ++k) {
-      if (colcount[k] <= 0) {
+    for (int k = min; k <= max; ++k) {
+      if (mColourCount[k] <= 0) {
         continue;
       }
-      if (mindeg[k] > deg[level] || maxdeg[k] < deg[level]) {
+      if (mMinDeg[k] > g.degree(level) || mMaxDeg[k] < g.degree(level)) {
         continue;
       }
-      --colcount[k];
-      col[level] = k;
-      ret = scan(level + 1, g, digraph, prev, mincols, maxcols,
-        sofar + k, colcount, mindeg, maxdeg, deg, numcols, group, m, n);
-      ++colcount[k];
+      --mColourCount[k];
+      mColour[level] = k;
+      System.out.println("SAI: Recurse with k=" + k);
+      final int ret = scan(level + 1, g, digraph, prev, mincols, maxcols, sofar + k, group, n);
+      ++mColourCount[k];
       if (ret < level) {
         return ret;
       }
@@ -296,59 +283,51 @@ private int fail_level;
   }
 
   /* Define (lab,ptn) with cells in increasing order of weight. */
-  private void setlabptn(int[] weight, int[] lab, int[] ptn, int n) {
-    int i;
-
+  private void setlabptn(final int[] weight, final int[] lab, final int[] ptn, final int n) {
     if (n == 0) {
       return;
     }
 
-    for (i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i) {
       lab[i] = i;
     }
 
     if (weight != null) {
-      Sort.sort(lab, weight); // lack of n?
+      System.out.println("SAI: pre-w:" + Arrays.toString(weight));
+      System.out.println("SAI: pre-l:" + Arrays.toString(lab));
+      Sort.sort(Arrays.copyOf(weight, weight.length), lab); // lack of n?
+      System.out.println("SAI: post-w:" + Arrays.toString(weight));
+      System.out.println("SAI: post-l:" + Arrays.toString(lab));
       //sortwt(lab, weight, n);
-      for (i = 0; i < n - 1; ++i) {
+      for (int i = 0; i < n - 1; ++i) {
         if (weight[lab[i]] != weight[lab[i + 1]]) {
           ptn[i] = 0;
         } else {
           ptn[i] = 1;
         }
       }
-      ptn[n - 1] = 0;
     } else {
-      for (i = 0; i < n - 1; ++i) {
-        ptn[i] = 1;
-      }
-      ptn[n - 1] = 0;
+      Arrays.fill(ptn, 0, n - 1, 1);
     }
+    ptn[n - 1] = 0;
+    System.out.println("SAI: return with ptn: " + Arrays.toString(ptn));
   }
 
-
-  void colourgraph(Graph g, int nfixed, int mincols, int maxcols, int[] colcount, int[] mindeg, int[] maxdeg, int[] deg, int numcols, int m, int n) throws IOException {
-    OptionBlk options = new OptionBlk();
-    StatsBlk stats = new StatsBlk();
-    long[] workspace = new long[2 * MAXNV];
+  private void colourGraph(final Graph g, final int nfixed) {
+    final int n = g.order();
+    final OptionBlk options = new OptionBlk();
+    final StatsBlk stats = new StatsBlk();
+    final long[] workspace = new long[2 * n];
     GroupRecord group;
-    int i, j, k, nloops;
-    NautySet gi, gj;
-    int[] lab = new int[MAXNV];
-    int[] ptn = new int[MAXNV];
-    int[] orbits = new int[MAXNV];
-    boolean[] loop = new boolean[MAXNV];
-    int[] prev = new int[MAXNV]; /* If >= 0, earlier point that must have greater colour */
-    int[] weight = new int[MAXNV];
-    int region, start, stop;
+    mColour = new int[g.order()];
+    final int[] lab = new int[g.order()];
+    final int[] ptn = new int[g.order()];
+    final boolean[] loop = new boolean[g.order()];
+    final int[] prev = new int[g.order()]; /* If >= 0, earlier point that must have greater colour */
+    final int[] weight = new int[g.order()];
 
-    if (n > MAXNV) {
-      throw new UnsupportedOperationException(">E vcolg: MAXNV exceeded");
-    }
-    //nauty_check(WORDSIZE,m,n,NAUTYVERSIONID);
-
-    nloops = 0;
-    for (i = 0; i < n; ++i) {
+    int nloops = 0;
+    for (int i = 0; i < n; ++i) {
       if (g.isAdjacent(i, i)) {
         g.removeEdge(i, i);
         loop[i] = true;
@@ -358,7 +337,9 @@ private int fail_level;
       }
     }
 
-    for (region = 0; region < 2; ++region) {
+    int start;
+    int stop;
+    for (int region = 0; region < 2; ++region) {
       if (region == 0) {
         if (nfixed == 0) {
           continue;
@@ -376,22 +357,24 @@ private int fail_level;
         stop = n;
       }
 
-      for (i = start; i < stop; ++i) {
+      for (int i = start; i < stop; ++i) {
         /* Find most recent equivalent j. */
+        int j;
         for (j = i - 1; j >= start; --j) {
           if (loop[j] != loop[i]) {
             continue;
           }
-          for (k = 0; k < m; ++k) {
+          int k;
+          for (k = 0; k < n; ++k) {
             if (g.isAdjacent(i, k) != g.isAdjacent(j, k)) {
               break;
             }
           }
-          if (k < m) {
+          if (k < n) {
             flip(g, i, j);
 //            FLIPELEMENT(gi, i);
 //            FLIPELEMENT(gj, j);
-            for (k = 0; k < m; ++k) {
+            for (k = 0; k < n; ++k) {
               if (g.isAdjacent(i, k) != g.isAdjacent(j, k)) {
                 break;
               }
@@ -400,7 +383,7 @@ private int fail_level;
 //            FLIPELEMENT(gi, i);
 //            FLIPELEMENT(gj, j);
           }
-          if (k == m) {
+          if (k == n) {
             break;
           }
         }
@@ -415,18 +398,21 @@ private int fail_level;
     }
 
     if (n == 0) {
-      scan(0, g, false, prev, mincols, maxcols, 0, colcount, null, null, null, numcols, null, m, n);
+      scan(0, g, false, prev, mMinColours, mMaxColours, 0, null, n);
       return;
     }
 
-    for (i = nfixed; i < n; ++i) {
+    for (int i = nfixed; i < n; ++i) {
       weight[i] += nfixed;
     }
 
-    if (maxcols == Multigraph.NOLIMIT || maxcols > n * numcols) {
-      maxcols = n * numcols;
+    System.out.println("SAI: weights " + Arrays.toString(weight));
+
+    int maxcols = mMaxColours;
+    if (maxcols == Multigraph.NOLIMIT || maxcols > n * mNumColours) {
+      maxcols = n * mNumColours;
     }
-    if (n * numcols < mincols) {
+    if (n * mNumColours < mMinColours) {
       return;
     }
 
@@ -436,18 +422,25 @@ private int fail_level;
     options.mDefaultPtn = false;
     options.mDigraph = (nloops > 0);
 
+
     setlabptn(weight, lab, ptn, n);
 
     if (nloops > 0) {
-      for (i = 0; i < n; ++i) {
+      for (int i = 0; i < n; ++i) {
         if (loop[i]) {
           g.addEdge(i, i);
         }
       }
     }
 
-    new Nauty(g, lab, ptn, null, orbits, options, stats, workspace);
-    //new Nauty(g, lab, ptn, null, orbits, options, stats, workspace, 2 * MAXNV, m, n, null);
+    System.out.println("SAI: ptn " + Arrays.toString(ptn));
+    final int[] orbits = new int[g.order()];
+    try {
+      new Nauty(g, lab, ptn, null, orbits, options, stats, workspace).canon(); // todo is this canon needed?
+      //new Nauty(g, lab, ptn, null, orbits, options, stats, workspace, 2 * MAXNV, m, n, null);
+    } catch (final IOException e) {
+      throw new RuntimeException(e);
+    }
 
     groupsize = stats.mGrpSize;
 //    if (stats.grpsize2 == 0)
@@ -459,26 +452,26 @@ private int fail_level;
     ng.makeCosetReps(group);  // makecosetreps(group);
 
     if (stats.mNumOrbits < n) {
-      j = n;
-      for (i = 0; i < n; ++i) {
+      int j = n;
+      for (int i = 0; i < n; ++i) {
         if (orbits[i] < i && orbits[i] < j) {
           j = orbits[i];
         }
       }
 
-      for (i = j + 1; i < n; ++i) {
+      for (int i = j + 1; i < n; ++i) {
         if (orbits[i] == j) {
           prev[i] = j;
         }
       }
     }
 
-    lastrejok = false;
-    for (i = 0; i < n; ++i) {
-      col[i] = 0;
-    }
+    System.out.println("SAI: orbits " + Arrays.toString(orbits));
+    System.out.println("SAI: prev " + Arrays.toString(prev));
 
-    scan(0, g, false, prev, mincols, maxcols, 0, colcount, mindeg, maxdeg, deg, numcols, group, m, n);
+    lastrejok = false;
+    Arrays.fill(mColour, 0, n, 0);
+    scan(0, g, false, prev, mMinColours, maxcols, 0, group, n);
   }
 
 // static void
@@ -875,4 +868,84 @@ private int fail_level;
 
 //     exit(0);
 // }
+
+  private final int mNumColours;
+  private final int mMinColours;
+  private final int mMaxColours;
+  private final int[] mColourCount;
+  private final int[] mMinDeg;
+  private final int[] mMaxDeg;
+
+  private static int[] maxArray(final int n) {
+    final int[] res = new int[n];
+    Arrays.fill(res, Multigraph.NOLIMIT);
+    return res;
+  }
+
+  /**
+   * Construct an instance for colouring with the specified number of colours.
+   * @param numColours total number of colours allowed
+   * @param minColours minimum number of colours allowed
+   * @param maxColours maximum number of colours allowed.
+   * @param colourCount maximum number of vertices of each colour.
+   * @param minDeg minimum vertex degree for each colour
+   * @param maxDeg maximum vertex degree for each colour
+   */
+  public VertexColour(final int numColours, final int minColours, final int maxColours, final int[] colourCount, final int[] minDeg, final int[] maxDeg) {
+    if (minColours > numColours) {
+      throw new IllegalArgumentException("Minimum colours exceeds number of colours.");
+    }
+    if (maxColours < minColours) {
+      throw new IllegalArgumentException("Maximum colours is small than minimum colours.");
+    }
+    if (colourCount.length != numColours) {
+      throw new IllegalArgumentException("colourCount array has wrong length: " + colourCount.length + " cf. " + numColours);
+    }
+    if (minDeg.length != numColours) {
+      throw new IllegalArgumentException("minDeg array has wrong length: " + minDeg.length + " cf. " + numColours);
+    }
+    if (maxDeg.length != numColours) {
+      throw new IllegalArgumentException("maxDeg array has wrong length: " + maxDeg.length + " cf. " + numColours);
+    }
+    mNumColours = numColours;
+    mMinColours = minColours;
+    mMaxColours = maxColours;
+    mColourCount = colourCount;
+    mMinDeg = minDeg;
+    mMaxDeg = maxDeg;
+  }
+
+  /**
+   * Construct an instance for colouring with the specified number of colours.
+   * @param numColours total number of colours allowed
+   * @param minColours minimum number of occurrences of a colour
+   * @param maxColours maximum number of occurrences of a colour
+   */
+  public VertexColour(final int numColours, final int minColours, final int maxColours) {
+    this(numColours, minColours, maxColours, maxArray(numColours), new int[numColours], maxArray(numColours));
+  }
+
+  /**
+   * Construct an instance for colouring with the specified number of colours.
+   * @param numColours total number of colours allowed
+   * @param minColours minimum number of occurrences of a colour
+   * @param maxColours maximum number of occurrences of a colour
+   */
+  public VertexColour(final int numColours) {
+    this(numColours, 0, Multigraph.NOLIMIT);
+  }
+
+  /**
+   * Colour the graph is all possible ways, subject to the constraints of this instance,
+   * sending each graph to the supplied processor.
+   * @param g graph to colour
+   * @param proc when to send the graphs.
+   */
+  public long colour(final Graph g, final VertexColourProcessor proc) {
+    mOutProc = proc;
+    mGeneratedCount = 0;
+    colourGraph(g, 0);
+    return mGeneratedCount;
+  }
+
 }

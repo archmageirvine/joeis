@@ -166,7 +166,7 @@ private int mFailLevel;
 
     newgroupsize = 1;
 
-    System.out.println("SAI: groupsize=" + groupsize + " lastrejok=" + (lastrejok ? "1" : "0"));
+    System.out.println("SAI: groupsize " + groupsize + " lastrejok=" + (lastrejok ? "1" : "0"));
     if (group == null || Z.ONE.equals(groupsize)) {
       accept = true;
     } else if (lastrejok && !ismax(lastreject, n)) {
@@ -293,11 +293,7 @@ private int mFailLevel;
     }
 
     if (weight != null) {
-      System.out.println("SAI: pre-w:" + Arrays.toString(weight));
-      System.out.println("SAI: pre-l:" + Arrays.toString(lab));
       Sort.sort(Arrays.copyOf(weight, weight.length), lab); // lack of n?
-      System.out.println("SAI: post-w:" + Arrays.toString(weight));
-      System.out.println("SAI: post-l:" + Arrays.toString(lab));
       //sortwt(lab, weight, n);
       for (int i = 0; i < n - 1; ++i) {
         if (weight[lab[i]] != weight[lab[i + 1]]) {
@@ -310,7 +306,6 @@ private int mFailLevel;
       Arrays.fill(ptn, 0, n - 1, 1);
     }
     ptn[n - 1] = 0;
-    System.out.println("SAI: return with ptn: " + Arrays.toString(ptn));
   }
 
   private void colourGraph(final Graph g, final int nfixed) {
@@ -318,7 +313,6 @@ private int mFailLevel;
     final OptionBlk options = new OptionBlk();
     final StatsBlk stats = new StatsBlk();
     final long[] workspace = new long[2 * n];
-    GroupRecord group;
     mColour = new int[g.order()];
     final int[] lab = new int[g.order()];
     final int[] ptn = new int[g.order()];
@@ -421,6 +415,7 @@ private int mFailLevel;
     options.mUserLevelProc = ng; //grouplevelproc;
     options.mDefaultPtn = false;
     options.mDigraph = (nloops > 0);
+    //options.setCanon(1);
 
 
     setlabptn(weight, lab, ptn, n);
@@ -436,11 +431,18 @@ private int mFailLevel;
     System.out.println("SAI: ptn " + Arrays.toString(ptn));
     final int[] orbits = new int[g.order()];
     try {
-      new Nauty(g, lab, ptn, null, orbits, options, stats, workspace).canon(); // todo is this canon needed?
-      //new Nauty(g, lab, ptn, null, orbits, options, stats, workspace, 2 * MAXNV, m, n, null);
+      new Nauty(g, lab, ptn, null, orbits, options, stats, workspace);
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }
+
+//    orbits[0] = 1;
+//    orbits[1] = 0;
+//    orbits[2] = 1;
+//    orbits[3] = 0;
+//    stats.mNumOrbits = 4;
+    System.out.println("SAI: orbits " + Arrays.toString(orbits));
+    System.out.println("SAI: numOrbits=" + stats.mNumOrbits);
 
     groupsize = stats.mGrpSize;
 //    if (stats.grpsize2 == 0)
@@ -448,7 +450,7 @@ private int mFailLevel;
 //    else
 //      groupsize = 0;
 
-    group = ng.groupPtr(false); //groupptr(false);
+    GroupRecord group = ng.groupPtr(false); //groupptr(false);
     ng.makeCosetReps(group);  // makecosetreps(group);
 
     if (stats.mNumOrbits < n) {
@@ -928,8 +930,6 @@ private int mFailLevel;
   /**
    * Construct an instance for colouring with the specified number of colours.
    * @param numColours total number of colours allowed
-   * @param minColours minimum number of occurrences of a colour
-   * @param maxColours maximum number of occurrences of a colour
    */
   public VertexColour(final int numColours) {
     this(numColours, 0, Multigraph.NOLIMIT);

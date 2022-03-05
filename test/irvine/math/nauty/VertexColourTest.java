@@ -52,7 +52,15 @@ public class VertexColourTest extends TestCase {
     // Square with diagonal
     final VertexColour vc = new VertexColour(2);
     final Graph g = Graph6.toGraph("C^");
-    assertEquals(9, vc.colour(g, (g1, col) -> System.out.println(g1 + " " + Arrays.toString(col))));
-    //assertEquals(9, vc.colour(g, null));
+    //assertEquals(9, vc.colour(g, (g1, col) -> System.out.println(g1 + " " + Arrays.toString(col))));
+    assertEquals(9, vc.colour(g, null));
+  }
+
+  public void test4c() {
+    // Square with diagonal
+    final VertexColour vc = new VertexColour(2);
+    final Graph g = Graph6.toGraph("C~");
+    //assertEquals(9, vc.colour(g, (g1, col) -> System.out.println(g1 + " " + Arrays.toString(col))));
+    assertEquals(5, vc.colour(g, null));
   }
 }

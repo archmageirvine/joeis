@@ -162,8 +162,8 @@ public class Nauty {
         }
       }
       if (active == null) {
+        mActive.clear();
         for (int i = 0; i < mN; ++i) {
-          mActive.clear();
           mActive.set(i);
           while (ptn[i] != 0) {
             ++i;

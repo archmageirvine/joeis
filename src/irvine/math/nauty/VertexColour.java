@@ -1,11 +1,14 @@
 package irvine.math.nauty;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.PrintStream;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 
 import irvine.math.graph.Graph;
+import irvine.math.graph.Graph6;
 import irvine.math.z.Z;
+import irvine.util.CliFlags;
 import irvine.util.array.Sort;
 
 /**
@@ -14,8 +17,7 @@ import irvine.util.array.Sort;
  * @author Sean A. Irvine (Java port)
  */
 class VertexColour {
-
-// Based on vcolg.c version 3.1; B D McKay, Apr 24, 2021
+  // Based on vcolg.c version 3.1; B D McKay, Apr 24, 2021
 
 // #define USAGE \
 // "vcolg [-q] [-u|-T|-o] [-e#|-e#:#] [-m#] [-c#,..,#] [-f#] [infile [outfile]]"
@@ -40,26 +42,24 @@ class VertexColour {
 //     -u  no output, just count them\n\
 //     -q  suppress auxiliary information\n"
 
-// /*************************************************************************/
+  private static final int MAXNV = 128;   /* Maximum number of vertices */
+  private static final String PER_COLOUR_FLAG = "per-colour";
 
-
-private long vc_nin;
-private long mGeneratedCount = 0;
-private PrintStream outfile = null;
-
-private static final int MAXNV = 128;   /* Maximum number of vertices */
+  //private long vc_nin;
+  private long mGeneratedCount = 0;
+  //private PrintStream outfile = null;
 
   protected VertexColourProcessor mOutProc = null;
 
   private int[] mColour = null;
-private boolean first;
-private final int[] lastreject = new int[MAXNV];
-private boolean lastrejok;
-private Z groupsize;
-private long newgroupsize;
+  private boolean mFirst;
+  private final int[] mLastReject = new int[MAXNV];
+  private boolean mLastRejOk;
+  private Z mGroupSize;
+  private long mNewGroupSize;
 // static boolean Tswitch,oswitch;
 
-private int mFailLevel;
+  private int mFailLevel;
 
 // #define GROUPTEST_NOT 
 // #ifdef GROUPTEST
@@ -101,10 +101,10 @@ private int mFailLevel;
 //}
 
   /* test if col^p <= col */
-  private boolean ismax(final int[] p, final int n) {
+  private boolean ismax(final int[] p, final int pos, final int n) {
     int fail = 0;
     for (int i = 0; i < n; ++i) {
-      final int k = p[i];
+      final int k = p[pos + i];
       if (k > fail) {
         fail = k;
       }
@@ -116,23 +116,24 @@ private int mFailLevel;
       }
     }
 
-    ++newgroupsize;
+    ++mNewGroupSize;
     return true;
   }
 
   private final GroupAction testmax = new GroupAction() {
     @Override
     public void groupAction(final int[] p, final int pos, final int n, final int[] abort) {
-      if (first) { /* only the identity */
-        first = false;
+      System.out.println("SAI: testmax " + Arrays.toString(p) + " pos=" + pos);
+      if (mFirst) { /* only the identity */
+        mFirst = false;
         return;
       }
-      if (!ismax(p, n)) {
+      if (!ismax(p, pos, n)) {
         abort[0] = 1;
         if (n >= 0) {
-          System.arraycopy(p, 0, lastreject, 0, n);
+          System.arraycopy(p, pos, mLastReject, 0, n);
         }
-        lastrejok = true;
+        mLastRejOk = true;
       }
     }
   };
@@ -164,18 +165,18 @@ private int mFailLevel;
     //char[] s = new char[20], p;
     //DYNALLSTAT(char,line,line_sz);
 
-    newgroupsize = 1;
+    mNewGroupSize = 1;
 
-    System.out.println("SAI: groupsize " + groupsize + " lastrejok=" + (lastrejok ? "1" : "0"));
-    if (group == null || Z.ONE.equals(groupsize)) {
+    System.out.println("SAI: groupsize " + mGroupSize + " lastrejok=" + (mLastRejOk ? "1" : "0"));
+    if (group == null || Z.ONE.equals(mGroupSize)) {
       accept = true;
-    } else if (lastrejok && !ismax(lastreject, n)) {
+    } else if (mLastRejOk && !ismax(mLastReject, 0, n)) {
       accept = false;
-    } else if (lastrejok && Z.TWO.equals(groupsize)) {
+    } else if (mLastRejOk && Z.TWO.equals(mGroupSize)) {
       accept = true;
     } else {
-      newgroupsize = 1;
-      first = true;
+      mNewGroupSize = 1;
+      mFirst = true;
       System.out.println("SAI: calling allgroup");
       accept = NauGroup.allgroup2(group, testmax) == 0;
     }
@@ -444,7 +445,7 @@ private int mFailLevel;
     System.out.println("SAI: orbits " + Arrays.toString(orbits));
     System.out.println("SAI: numOrbits=" + stats.mNumOrbits);
 
-    groupsize = stats.mGrpSize;
+    mGroupSize = stats.mGrpSize;
 //    if (stats.grpsize2 == 0)
 //      groupsize = stats.grpsize1 + 0.1;
 //    else
@@ -471,7 +472,7 @@ private int mFailLevel;
     System.out.println("SAI: orbits " + Arrays.toString(orbits));
     System.out.println("SAI: prev " + Arrays.toString(prev));
 
-    lastrejok = false;
+    mLastRejOk = false;
     Arrays.fill(mColour, 0, n, 0);
     scan(0, g, false, prev, mMinColours, maxcols, 0, group, n);
   }
@@ -948,4 +949,69 @@ private int mFailLevel;
     return mGeneratedCount;
   }
 
+  private static CliFlags initFlags() {
+    final CliFlags flags = new CliFlags("VertexColour", "Generate all vertex colourings of a graph with given constraints.");
+    flags.registerOptional('q', GenerateGraphsCli.QUIET_FLAG, "produce less output");
+    flags.registerOptional('m', "colours", Integer.class, "INTEGER", "number of colours", 2);
+    flags.registerOptional('d', GenerateGraphsCli.MIN_DEGREE_FLAG, String.class, "INTEGER+", "minimum vertex degree for each colour");
+    flags.registerOptional('D', GenerateGraphsCli.MAX_DEGREE_FLAG, String.class, "INTEGER+", "maximum vertex degree for each colour");
+    flags.registerOptional('c', PER_COLOUR_FLAG, String.class, "INTEGER+", "maximum number of vertices of each colour");
+    //flags.registerOptional('u', GenerateGraphsCli.NO_OUTPUT_FLAG, "do not output generated graphs, just count them");
+    //flags.registerOptional('D', GenerateGraphsCli.MAX_DEGREE_FLAG, Integer.class, "INTEGER", "upper bound for the maximum degree", 1);
+    return flags;
+  }
+
+  private static int[] stringToIntArray(final String s) {
+    final String[] parts = s.split(",");
+    final int[] res = new int[parts.length];
+    for (int k = 0; k < parts.length; ++k) {
+      res[k] = Integer.parseInt(parts[k]);
+    }
+    return res;
+  }
+
+  /**
+   * Main program for colouring graphs.
+   * @param args see usage clues above
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    final CliFlags flags = initFlags();
+    flags.setFlags(args);
+    //final boolean uSwitch = flags.isSet(GenerateGraphsCli.NO_OUTPUT_FLAG);
+
+    final int numColours = (int) flags.getValue("colours");
+    final int[] minDeg = flags.isSet(GenerateGraphsCli.MIN_DEGREE_FLAG)
+      ? stringToIntArray((String) flags.getValue(GenerateGraphsCli.MIN_DEGREE_FLAG))
+      : new int[numColours];
+    final int[] maxDeg = flags.isSet(GenerateGraphsCli.MAX_DEGREE_FLAG)
+      ? stringToIntArray((String) flags.getValue(GenerateGraphsCli.MAX_DEGREE_FLAG))
+      : maxArray(numColours);
+    final int[] colourCount = flags.isSet(PER_COLOUR_FLAG)
+      ? stringToIntArray((String) flags.getValue(PER_COLOUR_FLAG))
+      : maxArray(numColours);
+
+    final VertexColour vc = new VertexColour(numColours, 0, Multigraph.NOLIMIT, colourCount, minDeg, maxDeg);
+    double t = System.currentTimeMillis();
+    long inGraphs = 0;
+    long totalCount = 0;
+    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+      String line;
+      while ((line = r.readLine()) != null) {
+        ++inGraphs;
+        final Graph g = Graph6.toGraph(line);
+        totalCount += vc.colour(g, null);
+      }
+    }
+    t = System.currentTimeMillis() - t;
+    if (!flags.isSet(GenerateGraphsCli.QUIET_FLAG)) {
+      final StringBuilder sb = new StringBuilder(">Z ");
+      sb.append(inGraphs)
+        .append(" graphs read from stdin; ")
+        .append(totalCount)
+        .append(" coloured graphs generated")
+        .append(String.format("; %.2f sec", t / 1000));
+      System.err.println(sb);
+    }
+  }
 }

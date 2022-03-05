@@ -63,4 +63,16 @@ public class VertexColourTest extends TestCase {
     //assertEquals(9, vc.colour(g, (g1, col) -> System.out.println(g1 + " " + Arrays.toString(col))));
     assertEquals(5, vc.colour(g, null));
   }
+
+  public void test8() {
+    final VertexColour vc = new VertexColour(2);
+    final Graph g = Graph6.toGraph("GCdebG");
+    assertEquals(78, vc.colour(g, null));
+  }
+
+  public void test5() {
+    final VertexColour vc = new VertexColour(2, 0, Multigraph.NOLIMIT, new int[] {Multigraph.NOLIMIT, Multigraph.NOLIMIT}, new int[2], new int[] {4, 2});
+    final Graph g = Graph6.toGraph("DUW");
+    assertEquals(8, vc.colour(g, null));
+  }
 }

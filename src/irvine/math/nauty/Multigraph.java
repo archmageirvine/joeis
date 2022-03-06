@@ -45,8 +45,8 @@ public class Multigraph implements GroupAction {
     -q  suppress auxiliary information
 */
 
-  private static final int MAXNV = 128;
-  private static final int MAXNE = 1024;
+  protected static final int MAXNV = 128;
+  protected static final int MAXNE = 1024;
   static final String TEXT_FLAG = "text";
   private static final String REGULAR_FLAG = "regular";
   private static final String LOOP_FLAG = "loop";
@@ -56,21 +56,21 @@ public class Multigraph implements GroupAction {
   static final String GROUP_SIZE_FLAG = "group";
 
   private long mGraphsRead = 0;
-  private long mGraphsOutput = 0;
+  protected long mGraphsOutput = 0;
   private final PrintStream mOut;
   private final boolean mTextOutput;
 
-  private final int[] mV0 = new int[MAXNE + MAXNV];
-  private final int[] mV1 = new int[MAXNE + MAXNV];
-  private final int[][] mEdgeNo = new int[MAXNV][MAXNV];
-  private final int[] mLastLevel = new int[MAXNE];
+  protected final int[] mV0 = new int[MAXNE + MAXNV];
+  protected final int[] mV1 = new int[MAXNE + MAXNV];
+  protected final int[][] mEdgeNo = new int[MAXNV][MAXNV];
+  protected final int[] mLastLevel = new int[MAXNE];
   private final int[] mIx = new int[MAXNE + MAXNV];
   private int mNix;
 
   private boolean mFirst;
   private final int[] mLastReject = new int[MAXNV];
-  private boolean mLastRejectOk;
-  private long mGroupSize;
+  protected boolean mLastRejectOk;
+  protected long mGroupSize;
   private long mNewGroupSize;
   static boolean sGSwitch;
   private final boolean mAjacencyOutput;
@@ -164,7 +164,7 @@ public class Multigraph implements GroupAction {
 
 
   /* Try one solution, getCount if minimal. */
-  private void tryThisOne(final GroupRecord group, final boolean lswitch, final int[] deg, final int maxdeg, final int ne, final int n) {
+  protected void tryThisOne(final GroupRecord group, final boolean lswitch, final int[] deg, final int maxdeg, final int ne, final int n) {
     final boolean accept;
     mNix = ne;
     mNewGroupSize = 1;
@@ -217,7 +217,7 @@ public class Multigraph implements GroupAction {
   }
 
   /* Recursive scan for default case */
-  private void scan(final int level, final int ne, final int minedges, final int maxedges, final int sofar, final int maxmult, final GroupRecord group, final int n) {
+  protected void scan(final int level, final int ne, final int minedges, final int maxedges, final int sofar, final int maxmult, final GroupRecord group, final int n) {
     if (level == ne) {
       tryThisOne(group, false, null, 0, ne, n);
       return;
@@ -238,7 +238,7 @@ public class Multigraph implements GroupAction {
   }
 
   /* Recursive scan, maxDeg version */
-  private void scanMaxDeg(final int level, final int ne, final int minedges, final int maxedges, final int sofar,
+  protected void scanMaxDeg(final int level, final int ne, final int minedges, final int maxedges, final int sofar,
                           final int maxmult, final GroupRecord group, final int n, final int[] deg, final int maxdeg) {
     if (level == ne) {
       tryThisOne(group, false, deg, maxdeg, ne, n);
@@ -274,7 +274,7 @@ public class Multigraph implements GroupAction {
   }
 
   /* Recursive scan, regular-with-loops version. */
-  private void scanLoops(final int level, final int ne, final int minEdges, final int maxEdges, final int soFar,
+  protected void scanLoops(final int level, final int ne, final int minEdges, final int maxEdges, final int soFar,
                          final int maxMult, final GroupRecord group, final int n, final int[] deg, final int maxDeg) {
     if (level == ne) {
       tryThisOne(group, true, deg, maxDeg, ne, n);
@@ -337,7 +337,7 @@ public class Multigraph implements GroupAction {
 
 
   /* Recursive scan, regular version. */
-  private void scanRegular(final int level, final int ne, final int minedges, final int maxedges, final int sofar,
+  protected void scanRegular(final int level, final int ne, final int minedges, final int maxedges, final int sofar,
                            final int maxmult, final GroupRecord group, final int n, final int[] delta, final int[] def, final int maxdeg) {
     if (level == ne) {
       tryThisOne(group, false, null, maxdeg, ne, n);

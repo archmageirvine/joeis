@@ -16,7 +16,7 @@ import irvine.util.array.Sort;
  * @author Brendan McKay
  * @author Sean A. Irvine (Java port)
  */
-class VertexColour {
+public class VertexColour {
   // Based on vcolg.c version 3.1; B D McKay, Apr 24, 2021
 
 // #define USAGE \
@@ -123,7 +123,6 @@ class VertexColour {
   private final GroupAction testmax = new GroupAction() {
     @Override
     public void groupAction(final int[] p, final int pos, final int n, final int[] abort) {
-      System.out.println("SAI: testmax " + Arrays.toString(p) + " pos=" + pos);
       if (mFirst) { /* only the identity */
         mFirst = false;
         return;
@@ -167,7 +166,6 @@ class VertexColour {
 
     mNewGroupSize = 1;
 
-    System.out.println("SAI: groupsize " + mGroupSize + " lastrejok=" + (mLastRejOk ? "1" : "0"));
     if (group == null || Z.ONE.equals(mGroupSize)) {
       accept = true;
     } else if (mLastRejOk && !ismax(mLastReject, 0, n)) {
@@ -177,10 +175,8 @@ class VertexColour {
     } else {
       mNewGroupSize = 1;
       mFirst = true;
-      System.out.println("SAI: calling allgroup");
       accept = NauGroup.allgroup2(group, testmax) == 0;
     }
-    System.out.println("SAI: accept=" + (accept ? "1" : "0"));
 
     if (accept) {
 //#ifdef GROUPTEST
@@ -239,7 +235,6 @@ class VertexColour {
   /* Recursive scan for default case */
   /* Returned value is level to return to. */
   private int scan(final int level, final Graph g, final boolean digraph, final int[] prev, final int mincols, final int maxcols, final int sofar, final GroupRecord group, int n) {
-    System.out.println("SAI: scan: level=" + level + " sofar=" + sofar + " maxcols=" + maxcols);
     if (level == n) {
       return trythisone(group, g, digraph, n);
     }
@@ -253,7 +248,6 @@ class VertexColour {
     if (prev[level] >= 0 && mColour[prev[level]] < max) {
       max = mColour[prev[level]];
     }
-    System.out.println("SAI: min=" + min + " max=" + max + " counts=" + Arrays.toString(mColourCount));
 
     for (int k = min; k <= max; ++k) {
       if (mColourCount[k] <= 0) {
@@ -264,7 +258,6 @@ class VertexColour {
       }
       --mColourCount[k];
       mColour[level] = k;
-      System.out.println("SAI: Recurse with k=" + k);
       final int ret = scan(level + 1, g, digraph, prev, mincols, maxcols, sofar + k, group, n);
       ++mColourCount[k];
       if (ret < level) {
@@ -284,7 +277,7 @@ class VertexColour {
   }
 
   /* Define (lab,ptn) with cells in increasing order of weight. */
-  private void setlabptn(final int[] weight, final int[] lab, final int[] ptn, final int n) {
+  static void setlabptn(final int[] weight, final int[] lab, final int[] ptn, final int n) {
     if (n == 0) {
       return;
     }
@@ -359,28 +352,44 @@ class VertexColour {
           if (loop[j] != loop[i]) {
             continue;
           }
-          int k;
-          for (k = 0; k < n; ++k) {
-            if (g.isAdjacent(i, k) != g.isAdjacent(j, k)) {
-              break;
-            }
+
+          int u = -1;
+          int v = -1;
+          while ((u = g.nextVertex(i, u)) == (v = g.nextVertex(j, v)) && u != -1) {
+            // do nothing
           }
-          if (k < n) {
+          if (u != -1 || v != -1) {
             flip(g, i, j);
-//            FLIPELEMENT(gi, i);
-//            FLIPELEMENT(gj, j);
-            for (k = 0; k < n; ++k) {
-              if (g.isAdjacent(i, k) != g.isAdjacent(j, k)) {
-                break;
-              }
+            u = -1;
+            v = -1;
+            while ((u = g.nextVertex(i, u)) == (v = g.nextVertex(j, v)) && u != -1) {
+              // do nothing
             }
             flip(g, i, j);
-//            FLIPELEMENT(gi, i);
-//            FLIPELEMENT(gj, j);
           }
-          if (k == n) {
+          if (u == -1 && v == -1) {
             break;
           }
+
+          // Alternative version
+//          int k;
+//          for (k = 0; k < n; ++k) {
+//            if (g.isAdjacent(i, k) != g.isAdjacent(j, k)) {
+//              break;
+//            }
+//          }
+//          if (k < n) {
+//            flip(g, i, j);
+//            for (k = 0; k < n; ++k) {
+//              if (g.isAdjacent(i, k) != g.isAdjacent(j, k)) {
+//                break;
+//              }
+//            }
+//            flip(g, i, j);
+//          }
+//          if (k == n) {
+//            break;
+//          }
         }
         if (j >= start) {
           prev[i] = j;
@@ -401,8 +410,6 @@ class VertexColour {
       weight[i] += nfixed;
     }
 
-    System.out.println("SAI: weights " + Arrays.toString(weight));
-
     int maxcols = mMaxColours;
     if (maxcols == Multigraph.NOLIMIT || maxcols > n * mNumColours) {
       maxcols = n * mNumColours;
@@ -412,12 +419,10 @@ class VertexColour {
     }
 
     final NauGroup ng = new NauGroup();
-    options.mUserAutomProc = ng; //groupautomproc;
-    options.mUserLevelProc = ng; //grouplevelproc;
+    options.mUserAutomProc = ng;
+    options.mUserLevelProc = ng;
     options.mDefaultPtn = false;
     options.mDigraph = (nloops > 0);
-    //options.setCanon(1);
-
 
     setlabptn(weight, lab, ptn, n);
 
@@ -429,7 +434,6 @@ class VertexColour {
       }
     }
 
-    System.out.println("SAI: ptn " + Arrays.toString(ptn));
     final int[] orbits = new int[g.order()];
     try {
       new Nauty(g, lab, ptn, null, orbits, options, stats, workspace);
@@ -437,22 +441,9 @@ class VertexColour {
       throw new RuntimeException(e);
     }
 
-//    orbits[0] = 1;
-//    orbits[1] = 0;
-//    orbits[2] = 1;
-//    orbits[3] = 0;
-//    stats.mNumOrbits = 4;
-    System.out.println("SAI: orbits " + Arrays.toString(orbits));
-    System.out.println("SAI: numOrbits=" + stats.mNumOrbits);
-
     mGroupSize = stats.mGrpSize;
-//    if (stats.grpsize2 == 0)
-//      groupsize = stats.grpsize1 + 0.1;
-//    else
-//      groupsize = 0;
-
-    GroupRecord group = ng.groupPtr(false); //groupptr(false);
-    ng.makeCosetReps(group);  // makecosetreps(group);
+    GroupRecord group = ng.groupPtr(false);
+    ng.makeCosetReps(group);
 
     if (stats.mNumOrbits < n) {
       int j = n;
@@ -468,9 +459,6 @@ class VertexColour {
         }
       }
     }
-
-    System.out.println("SAI: orbits " + Arrays.toString(orbits));
-    System.out.println("SAI: prev " + Arrays.toString(prev));
 
     mLastRejOk = false;
     Arrays.fill(mColour, 0, n, 0);
@@ -956,8 +944,6 @@ class VertexColour {
     flags.registerOptional('d', GenerateGraphsCli.MIN_DEGREE_FLAG, String.class, "INTEGER+", "minimum vertex degree for each colour");
     flags.registerOptional('D', GenerateGraphsCli.MAX_DEGREE_FLAG, String.class, "INTEGER+", "maximum vertex degree for each colour");
     flags.registerOptional('c', PER_COLOUR_FLAG, String.class, "INTEGER+", "maximum number of vertices of each colour");
-    //flags.registerOptional('u', GenerateGraphsCli.NO_OUTPUT_FLAG, "do not output generated graphs, just count them");
-    //flags.registerOptional('D', GenerateGraphsCli.MAX_DEGREE_FLAG, Integer.class, "INTEGER", "upper bound for the maximum degree", 1);
     return flags;
   }
 

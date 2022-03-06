@@ -102,7 +102,7 @@ public class A054981 implements Sequence, GraphProcessor {
   @Override
   public Z next() {
     ++mN;
-    while (mM <= 2 * mN + 4) {
+    while (mM <= 2 * mN + 2) {
       generate(mM);
       ++mM;
     }

@@ -36,7 +36,7 @@ public class MultigraphColour extends Multigraph {
     mMaxDeg = maxDeg;
   }
 
-  private void vmulti(final Graph g, final int[] colour, int nfixed, boolean lswitch) {
+  private void vmulti(final Graph g, final int[] colour, final int nfixed, final boolean lswitch) {
 
     final int n = g.order();
     final int ne = g.size();
@@ -48,7 +48,7 @@ public class MultigraphColour extends Multigraph {
     final int[] deg = new int[n];
     int maxd = 0;
     for (int i = 0; i < n; ++i) {
-      int thisdeg = (int) g.degree(i);
+      final int thisdeg = (int) g.degree(i);
       deg[i] = thisdeg;
       if (thisdeg > maxd) {
         maxd = thisdeg;
@@ -170,7 +170,7 @@ public class MultigraphColour extends Multigraph {
     }
 
     mGroupSize = stats.groupSize().longValueExact();
-    GroupRecord group = ng.groupPtr(false);
+    final GroupRecord group = ng.groupPtr(false);
     ng.makeCosetReps(group);
 
     mLastRejectOk = false;

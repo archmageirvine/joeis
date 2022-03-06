@@ -89,7 +89,7 @@ public class A054981 implements Sequence, GraphProcessor {
       final StringBuilder sb = new StringBuilder("Counts after ");
       sb.append(n);
       sb.append(" vertices -> ");
-      int k =0;
+      int k = 0;
       while (mCounts.get(k) != 0 || mCounts.get(k + 1) != 0) {
         sb.append(mCounts.get(k)).append(", ");
         ++k;

@@ -202,5 +202,4 @@ public class MultigraphColour extends Multigraph {
     vmulti(g, colours, 0, false);
     return mGraphsOutput;
   }
-
 }

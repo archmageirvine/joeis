@@ -32,7 +32,7 @@ public class A134818 implements Sequence, GraphProcessor {
     gg.setMaxDeg(4);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    mMultigraph = new Multigraph(null, false, false, false);
+    mMultigraph = new Multigraph(null, false);
     try {
       gg.run(false, false, false, 0, 0);
     } catch (final IOException e) {

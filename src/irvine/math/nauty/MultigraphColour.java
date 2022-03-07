@@ -29,7 +29,7 @@ public class MultigraphColour extends Multigraph {
    * @param maxDeg maximum vertex degree
    */
   public MultigraphColour(final int maxMultiplicity, final int minEdges, final int maxEdges, final int maxDeg) {
-    super(null, false, false, false);
+    super(null, false);
     mMaxMultiplicity = maxMultiplicity;
     mMinEdges = minEdges;
     mMaxEdges = maxEdges;

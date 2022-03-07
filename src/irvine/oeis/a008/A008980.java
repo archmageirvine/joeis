@@ -72,7 +72,10 @@ public class A008980 implements Sequence {
     }
   }
 
-  static final class AllCurves {
+  /**
+   * Container for curves.
+   */
+  public static final class AllCurves {
 
     private final int mMaxCross;
     private final Curve[] mCurves;
@@ -84,7 +87,7 @@ public class A008980 implements Sequence {
     private final long[][] mR2S;
     protected final long[][] mR2;
     protected final long[][] mS;
-    protected final long[][] mNoOrient;
+    public final long[][] mNoOrient;
     /* results in cases when oriented are a plane and a circle, a plane, a circle and nothing */
     private int mCurrent;
     //private long res;
@@ -436,7 +439,7 @@ public class A008980 implements Sequence {
   // The code actually computes everything up to a specified value.  So we step by 5
   // at a time, but this will be extremely slow to get more than 10 terms.
 
-  private int mN = -1;
+  protected int mN = -1;
   protected AllCurves mAllCurves = new AllCurves(5);
   {
     mAllCurves.start();

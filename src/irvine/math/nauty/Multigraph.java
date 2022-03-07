@@ -51,8 +51,6 @@ public class Multigraph implements GroupAction {
   private static final String REGULAR_FLAG = "regular";
   private static final String LOOP_FLAG = "loop";
   static final String FIX_FLAG = "fix";
-  private static final String ADJACENCY_FLAG = "adjacency";
-  private static final String MATRIX_FLAG = "matrix";
   static final String GROUP_SIZE_FLAG = "group";
 
   private long mGraphsRead = 0;
@@ -73,8 +71,6 @@ public class Multigraph implements GroupAction {
   protected long mGroupSize;
   private long mNewGroupSize;
   static boolean sGSwitch;
-  private final boolean mAjacencyOutput;
-  private final boolean mMatrixOutput;
 
   protected MultigraphProcessor mOutProc = null;
 
@@ -82,14 +78,10 @@ public class Multigraph implements GroupAction {
    * Construct a new multigraph processor.
    * @param out output stream (may be null)
    * @param textOutput true to select text output of graphs
-   * @param adjacencyOutput true if adjacency output required
-   * @param matrixOutput true if matrix output is required
    */
-  public Multigraph(final PrintStream out, final boolean textOutput, final boolean adjacencyOutput, final boolean matrixOutput) {
+  public Multigraph(final PrintStream out, final boolean textOutput) {
     mOut = out;
     mTextOutput = textOutput;
-    mAjacencyOutput = adjacencyOutput;
-    mMatrixOutput = matrixOutput;
   }
 
   /**
@@ -132,37 +124,6 @@ public class Multigraph implements GroupAction {
     }
   }
 
-  /* Write adjacency matrix formats */
-  void printAdjacencyMatrix(final PrintStream f, final int n, final int ne, final int[] ix) {
-    throw new UnsupportedOperationException();
-    /*
-    int i, j;
-    if (mAjacencyOutput) {
-        fprintf(f, "%d ", n);
-        for (i = 0; i < n; ++i)
-            for (j = i; j < n; ++j)
-                fprintf(f, " %d", (mEdgeNo[i][j]>=0 ? mIx[mEdgeNo[i][j]]: 0));
-        fprintf(f, "\n");
-    } else  {
-        if (mBrows <= 0 || mBrows > n)
-        {
-            fprintf(stderr, ">E multig: impossible matrix size for output\n");
-            exit(1);
-        }
-        fprintf(f, "%d %d", mBrows, n-mBrows);
-
-        for (i = 0; i < mBrows; ++i)
-        {
-            fprintf(f, " ");
-            for (j = mBrows; j < n; ++j)
-                fprintf(f, " %d", (mEdgeNo[i][j]>=0 ? mIx[mEdgeNo[i][j]]: 0));
-        }
-        fprintf(f, "\n");
-    }
-    */
-  }
-
-
   /* Try one solution, getCount if minimal. */
   protected void tryThisOne(final GroupRecord group, final boolean lswitch, final int[] deg, final int maxdeg, final int ne, final int n) {
     final boolean accept;
@@ -198,19 +159,15 @@ public class Multigraph implements GroupAction {
           mOutProc.process(n, ne, deg);
         }
         if (mOut != null) {
-          if (mAjacencyOutput || mMatrixOutput) {
-            printAdjacencyMatrix(mOut, n, ne2, mIx);
-          } else {
-            final StringBuilder sb = new StringBuilder();
-            sb.append(n).append(' ').append(ne2);
-            if (sGSwitch) {
-              sb.append(' ').append(mNewGroupSize);
-            }
-            for (int i = 0; i < ne2; ++i) {
-              sb.append(' ').append(mV0[i]).append(' ').append(mV1[i]).append(' ').append(mIx[i]);
-            }
-            mOut.println(sb);
+          final StringBuilder sb = new StringBuilder();
+          sb.append(n).append(' ').append(ne2);
+          if (sGSwitch) {
+            sb.append(' ').append(mNewGroupSize);
           }
+          for (int i = 0; i < ne2; ++i) {
+            sb.append(' ').append(mV0[i]).append(' ').append(mV1[i]).append(' ').append(mIx[i]);
+          }
+          mOut.println(sb);
         }
       }
     }
@@ -431,9 +388,6 @@ public class Multigraph implements GroupAction {
     if (maxDegree >= 0 && maxD > maxDegree) {
       return;
     }
-    if (mAjacencyOutput || mMatrixOutput) {
-      resetEdgeNumbering(n);
-    }
     if (ne == 0 && minEdges <= 0 && (!lSwitch || (maxDegree & 1) == 0)) {
       tryThisOne(null, lSwitch, deg, maxDegree, 0, n);
       return;
@@ -532,12 +486,6 @@ public class Multigraph implements GroupAction {
     }
   }
 
-  private void resetEdgeNumbering(final int n) {
-    for (int i = 0; i < n; ++i) {
-      Arrays.fill(mEdgeNo[i], 0, n, -1);
-    }
-  }
-
   /**
    * Get the count of the number of graphs.
    * @return graph count
@@ -561,7 +509,6 @@ public class Multigraph implements GroupAction {
     flags.registerOptional('M', GenerateGraphsCli.MAX_EDGES_FLAG, Integer.class, "INTEGER", "maximum edge multiplicity (minimum 1)", NOLIMIT);
     flags.registerOptional('T', TEXT_FLAG, "use a simple text output format (nv ne {mV1 v2 mult})");
     flags.registerOptional('G', GROUP_SIZE_FLAG, "like -T but includes group size as third item (if less than 10^10). The group size does not include exchange of isolated vertices.");
-    flags.registerOptional('A', ADJACENCY_FLAG, "write as the upper triangle of an adjacency matrix, row by row, including the diagonal, and preceded by the number of vertice");
     flags.registerOptional('r', REGULAR_FLAG, Integer.class, "INTEGER", "make regular of specified degree (incompatible with -l, -D, -e)");
     flags.registerOptional('l', LOOP_FLAG, Integer.class, "INTEGER", "make regular multigraphs with multiloops (incompatible with -r, -D, -e)");
     flags.registerOptional('f', FIX_FLAG, Integer.class, "INTEGER", "use the group that fixes the first n vertices setwise");
@@ -622,21 +569,12 @@ public class Multigraph implements GroupAction {
     double t;
     sGSwitch = flags.isSet(GROUP_SIZE_FLAG);
 
-    final Multigraph mg = new Multigraph(uSwitch ? null : System.out, flags.isSet(TEXT_FLAG), flags.isSet(ADJACENCY_FLAG), flags.isSet(MATRIX_FLAG));
+    final Multigraph mg = new Multigraph(uSwitch ? null : System.out, flags.isSet(TEXT_FLAG));
 //    if ((sGSwitch!=0) + (mTextOutput!=0) + (uSwitch!=0)
 //      + (adjSwitch!=0) + (mMatrixOutput!=0) >= 2) {
 //      throw new IllegalArgumentException(">E multig: -G, -T, -A, -B and -u are incompatible");
 //    }
 
-    if (mg.mOutProc == null) {
-      if (!mg.mTextOutput && !sGSwitch && !mg.mAjacencyOutput && !mg.mMatrixOutput && !uSwitch && !sGSwitch) {
-        throw new IllegalArgumentException(">E multig: must use -A, -B, -T, -G or -u");
-      }
-    }
-
-    if (mg.mMatrixOutput && nFixed == 0) {
-      throw new IllegalArgumentException(">E multig: -B requires -f# with #>0");
-    }
 //    if (fswitch) {
 //      int mBrows = nFixed;
 //    }

@@ -13,6 +13,6 @@ public class A114332 extends PaddingSequence {
 
   /** Construct the sequence. */
   public A114332() {
-    super(new long[] {5, 15, 5, 18, 5, 24, 14, 20, 5, 14, 14, 5, 14, 14, 14, 14, 14, 14, 14}, new long[] {5, 15, 5, 18, 5, 24, 14, 20, 5, 25});
+    super(new long[] {15, 5, 15, 5, 18, 5, 24, 14, 20, 5, 14, 14, 5, 14, 14, 14, 14, 14, 14, 14}, new long[] {25, 5, 15, 5, 18, 5, 24, 14, 20, 5});
   }
 }

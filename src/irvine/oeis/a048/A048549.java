@@ -11,9 +11,15 @@ public class A048549 implements Sequence {
 
   private String mPrefix = null;
   private final String mStart;
+  private final int mBase;
+
+  protected A048549(final String start, final int base) {
+    mStart = start;
+    mBase = base;
+  }
 
   protected A048549(final String start) {
-    mStart = start;
+    this(start, 10);
   }
 
   /** Construct the sequence. */
@@ -22,8 +28,8 @@ public class A048549 implements Sequence {
   }
 
   private Z makeNumber(final String prefix, final StringBuilder zeros, final long m) {
-    final String t = zeros.toString() + m;
-    return new Z(prefix + t.substring(t.length() - zeros.length() - 1));
+    final String t = zeros.toString() + Long.toString(m, mBase);
+    return new Z(prefix + t.substring(t.length() - zeros.length() - 1), mBase);
   }
 
   @Override
@@ -33,19 +39,19 @@ public class A048549 implements Sequence {
     } else {
       // Complicated by the possibility of leading zeros in the suffix
       final StringBuilder zeros = new StringBuilder();
-      long lim = 10;
+      long lim = mBase;
       long m = 1;
       Z t;
       while (!(t = makeNumber(mPrefix, zeros, m)).isProbablePrime()) {
         m += 2;
         if (m > lim) {
-          lim *= 10;
+          lim *= mBase;
           m = 1;
           zeros.append('0');
         }
       }
-      mPrefix = t.toString();
+      mPrefix = t.toString(mBase);
     }
-    return new Z(mPrefix);
+    return new Z(mPrefix, mBase);
   }
 }

@@ -5,10 +5,10 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A055012 Sum of cubes of the digits of n written in base 10.
- * @author Georg Fischer
+ * A055014 Sum of 5th powers of digits of n.
+ * @author Sean A. Irvine
  */
-public class A055012 implements Sequence {
+public class A055014 implements Sequence {
 
   private long mN = -1;
 
@@ -17,7 +17,8 @@ public class A055012 implements Sequence {
     long sum = 0;
     final int[] cnts = ZUtils.digitCounts(++mN);
     for (int k = 1; k < cnts.length; ++k) {
-      sum += k * k * k * cnts[k];
+      final long k2 = k * k;
+      sum += k2 * k2 * k * cnts[k];
     }
     return Z.valueOf(sum);
   }

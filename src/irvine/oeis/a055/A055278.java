@@ -29,7 +29,7 @@ public class A055278 extends HolonomicRecurrence {
     sb.append("[[0");
     Polynomial<Z> prod = Polynomial.create(1);
     for (int k = 1; k <= n; ++k) {
-      int expon = n / k;
+      final int expon = n / k;
       prod = RING.multiply(prod, RING.pow(RING.subtract(RING.pow(RING.x(), k), RING.one()), expon), 1024);
     }
     for (int k = 0; k <= prod.degree(); ++k) {

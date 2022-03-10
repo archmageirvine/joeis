@@ -1,15 +1,16 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A055329 Number of rooted identity trees with n nodes and 4 leaves.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A055329 extends LinearRecurrence {
+public class A055329 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A055329() {
-    super(new long[] {1, -3, 1, 4, -3, 1, -3, 0, 3, -1, 3, -4, -1, 3}, new long[] {2, 11, 40, 109, 254, 524, 998, 1774, 2995, 4833, 7525, 11346, 16659, 23877});
+    super(5, A055278.computeRecurrence(4), "2, 11, 40, 109, 254, 524, 998, 1774, 2995, 4833", 0);
   }
 }
+

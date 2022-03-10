@@ -3,7 +3,6 @@ package irvine.oeis.a104;
 
 import irvine.oeis.IntersectionSequence;
 import irvine.oeis.a000.A000040;
-import irvine.oeis.a104.A104365;
 
 /**
  * A104372 Primes of the form A104350(n) + 1.

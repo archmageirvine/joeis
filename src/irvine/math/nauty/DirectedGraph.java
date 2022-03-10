@@ -25,6 +25,7 @@ public class DirectedGraph implements GroupAction {
   private static final int MAXNE = 1024;
   private static final int WORDSIZE = 64;
   private static final int MAXME = (2 * MAXNE + WORDSIZE - 1) / WORDSIZE;
+  private static final String TEXT_FLAG = "text";
 
   private static boolean sGSwitch;
   private static boolean sVSwitch;
@@ -410,7 +411,7 @@ public class DirectedGraph implements GroupAction {
   private static CliFlags initFlags() {
     final CliFlags flags = new CliFlags("DirectedGraph", "Generate all digraphs from input graphs with given constraints.");
     flags.registerOptional('u', GenerateGraphsCli.NO_OUTPUT_FLAG, "do not output generated graphs, just count them");
-    flags.registerOptional('T', Multigraph.TEXT_FLAG, "use a simple text output format (nv ne edges) instead of digraph6");
+    flags.registerOptional('T', TEXT_FLAG, "use a simple text output format (nv ne edges) instead of digraph6");
     flags.registerOptional('G', Multigraph.GROUP_SIZE_FLAG, "like -T but includes group size as third item (if less than 10^10). The group size does not include exchange of isolated vertices.");
     flags.registerOptional('o', ORIENT_FLAG, "orient each edge in only one direction, never both");
     flags.registerOptional('e', EDGES_FLAG, String.class, "min[:max]", "specify a value or range of the total number of arcs");

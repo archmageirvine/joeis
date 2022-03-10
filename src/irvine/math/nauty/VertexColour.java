@@ -626,9 +626,9 @@ public class VertexColour {
     mNumColours = numColours;
     mMinColours = minColours;
     mMaxColours = maxColours;
-    mColourCount = colourCount;
-    mMinDeg = minDeg;
-    mMaxDeg = maxDeg;
+    mColourCount = Arrays.copyOf(colourCount, colourCount.length);
+    mMinDeg = Arrays.copyOf(minDeg, minDeg.length);
+    mMaxDeg = Arrays.copyOf(maxDeg, maxDeg.length);
   }
 
   /**

@@ -18,7 +18,7 @@ public class A055055 implements Sequence {
 
   // The following is the limit of the largest number of sets in any basic magic carpet of 1..n
   // This can easily be extended, but the search here will never exhaust this in a reasonable time
-  protected static final int[] LARGEST_K = {0, 0, 0, 0, 0, 3, 5, 8, 14, 23, 40, 70}; // A025591
+  static final int[] LARGEST_K = {0, 0, 0, 0, 0, 3, 5, 8, 14, 23, 40, 70}; // A025591
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected int mN = 4;
   private long mCount = 0;

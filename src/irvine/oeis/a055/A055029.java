@@ -26,7 +26,7 @@ public class A055029 implements Sequence {
       }
     } else {
       final long s = LongUtils.sqrt(mN);
-      if (s * s == mN && mPrime.isPrime(s) && (s & 3) == 3) {
+      if (s * s == mN && (s & 3) == 3 && mPrime.isPrime(s)) {
         return Z.ONE;
       }
       return Z.ZERO;

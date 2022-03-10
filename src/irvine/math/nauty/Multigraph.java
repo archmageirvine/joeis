@@ -47,7 +47,6 @@ public class Multigraph implements GroupAction {
 
   protected static final int MAXNV = 128;
   protected static final int MAXNE = 1024;
-  static final String TEXT_FLAG = "text";
   private static final String REGULAR_FLAG = "regular";
   private static final String LOOP_FLAG = "loop";
   static final String FIX_FLAG = "fix";
@@ -56,7 +55,6 @@ public class Multigraph implements GroupAction {
   private long mGraphsRead = 0;
   protected long mGraphsOutput = 0;
   private final PrintStream mOut;
-  private final boolean mTextOutput;
 
   protected final int[] mV0 = new int[MAXNE + MAXNV];
   protected final int[] mV1 = new int[MAXNE + MAXNV];
@@ -77,11 +75,10 @@ public class Multigraph implements GroupAction {
   /**
    * Construct a new multigraph processor.
    * @param out output stream (may be null)
-   * @param textOutput true to select text output of graphs
+   *
    */
-  public Multigraph(final PrintStream out, final boolean textOutput) {
+  public Multigraph(final PrintStream out) {
     mOut = out;
-    mTextOutput = textOutput;
   }
 
   /**
@@ -507,7 +504,6 @@ public class Multigraph implements GroupAction {
     flags.registerOptional('u', GenerateGraphsCli.NO_OUTPUT_FLAG, "do not output generated graphs, just count them");
     flags.registerOptional('D', GenerateGraphsCli.MAX_DEGREE_FLAG, Integer.class, "INTEGER", "upper bound for the maximum degree", 1);
     flags.registerOptional('M', GenerateGraphsCli.MAX_EDGES_FLAG, Integer.class, "INTEGER", "maximum edge multiplicity (minimum 1)", NOLIMIT);
-    flags.registerOptional('T', TEXT_FLAG, "use a simple text output format (nv ne {mV1 v2 mult})");
     flags.registerOptional('G', GROUP_SIZE_FLAG, "like -T but includes group size as third item (if less than 10^10). The group size does not include exchange of isolated vertices.");
     flags.registerOptional('r', REGULAR_FLAG, Integer.class, "INTEGER", "make regular of specified degree (incompatible with -l, -D, -e)");
     flags.registerOptional('l', LOOP_FLAG, Integer.class, "INTEGER", "make regular multigraphs with multiloops (incompatible with -r, -D, -e)");
@@ -569,7 +565,7 @@ public class Multigraph implements GroupAction {
     double t;
     sGSwitch = flags.isSet(GROUP_SIZE_FLAG);
 
-    final Multigraph mg = new Multigraph(uSwitch ? null : System.out, flags.isSet(TEXT_FLAG));
+    final Multigraph mg = new Multigraph(uSwitch ? null : System.out);
 //    if ((sGSwitch!=0) + (mTextOutput!=0) + (uSwitch!=0)
 //      + (adjSwitch!=0) + (mMatrixOutput!=0) >= 2) {
 //      throw new IllegalArgumentException(">E multig: -G, -T, -A, -B and -u are incompatible");

@@ -47,13 +47,13 @@ public class ContinuedFractionSequence implements Sequence {
    * Construct a continued fraction expansion from an existing sequence.
    * Only works for an underlying sequence consisting of single digits.
    * @param seq underlying sequence
-   * @param base seq yields digits in this base
+   * @param base sequence yields digits in this base
    */
   public ContinuedFractionSequence(final Sequence seq, final int base) {
     this(new DecimalExpansionSequence(1, new CR() {
       private Z mNum = Z.ZERO;
       private Z mDen = Z.ONE;
-      private Z mBase = Z.valueOf(base);
+      private final Z mBase = Z.valueOf(base);
 
       @Override
       protected Z approximate(final int precision) {

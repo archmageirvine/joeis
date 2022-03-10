@@ -87,10 +87,19 @@ public class A008980 implements Sequence {
     private final long[][] mR2S;
     protected final long[][] mR2;
     protected final long[][] mS;
-    public final long[][] mNoOrient;
+    protected final long[][] mNoOrient;
     /* results in cases when oriented are a plane and a circle, a plane, a circle and nothing */
     private int mCurrent;
     //private long res;
+
+    /**
+     * Return the sum of the no orients for a given value.
+     * @param n value
+     * @return sum
+     */
+    public Z getNoOrientsSum(final int n) {
+      return LongUtils.sum(mNoOrient[n]);
+    }
 
     private AllCurves(final int maxCross) {
       mMaxCross = maxCross;

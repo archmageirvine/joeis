@@ -24,7 +24,7 @@ public class A056540 implements Sequence {
     if (mN == 1) {
       return mA;
     }
-    final Z result = new Z(mA.subtract(1).toString() + mA.toString() + mA.add(1).toString());
+    final Z result = new Z(mA.subtract(1).toString() + mA + mA.add(1));
     mA = result;
     return result;
   }

@@ -1,6 +1,5 @@
 package irvine.oeis.a054;
 
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a008.A008980;
 
@@ -13,7 +12,7 @@ public class A054993 extends A008980 {
   @Override
   public Z next() {
     super.next();
-    return LongUtils.sum(mAllCurves.mNoOrient[mN]);
+    return mAllCurves.getNoOrientsSum(mN);
   }
 }
 

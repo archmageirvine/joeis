@@ -17,21 +17,21 @@ import junit.framework.TestCase;
 public class MultigraphTest extends TestCase {
 
   public void test1() throws IOException {
-    final Multigraph mg = new Multigraph(null, false);
+    final Multigraph mg = new Multigraph(null);
     final Graph graph = GraphFactory.create(1);
     mg.multi(graph, 0, 0, Multigraph.NOLIMIT, 3, 4, false);
     assertEquals(1, mg.getGraphsOutputCount());
   }
 
   public void testEmpty() throws IOException {
-    final Multigraph mg = new Multigraph(null, false);
+    final Multigraph mg = new Multigraph(null);
     final Graph graph = GraphFactory.create(2);
     mg.multi(graph, 0, 0, Multigraph.NOLIMIT, 3, 4, false);
     assertEquals(1, mg.getGraphsOutputCount());
   }
 
   public void testEdge() throws IOException {
-    final Multigraph mg = new Multigraph(null, false);
+    final Multigraph mg = new Multigraph(null);
     final Graph graph = GraphFactory.create(2);
     graph.addEdge(0, 1);
     mg.multi(graph, 0, 0, Multigraph.NOLIMIT, 3, 4, false);
@@ -39,7 +39,7 @@ public class MultigraphTest extends TestCase {
   }
 
   public void testEdgeOrient() throws IOException {
-    final Multigraph mg = new Multigraph(null, false);
+    final Multigraph mg = new Multigraph(null);
     final Graph graph = GraphFactory.create(2);
     graph.addEdge(0, 1);
     mg.multi(graph, 0, 0, Multigraph.NOLIMIT, 3, 4, true);
@@ -47,7 +47,7 @@ public class MultigraphTest extends TestCase {
   }
 
   public void testBigger() throws IOException {
-    final Multigraph mg = new Multigraph(null, false);
+    final Multigraph mg = new Multigraph(null);
     final Graph graph = GraphFactory.create(6);
     graph.addEdge(0, 1);
     graph.addEdge(0, 2);
@@ -61,7 +61,7 @@ public class MultigraphTest extends TestCase {
   }
 
   public void testAnother() throws IOException {
-    final Multigraph mg = new Multigraph(null, false);
+    final Multigraph mg = new Multigraph(null);
     final Graph graph = GraphFactory.create(6);
     graph.addEdge(0, 1);
     graph.addEdge(0, 2);

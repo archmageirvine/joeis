@@ -6,7 +6,7 @@ import irvine.oeis.triangle.DoubleRowTriangle;
 
 /**
  * A055151 Triangular array of Motzkin polynomial coefficients.
- * T(n,k) = n!/((n-2k)! k! (k+1)!).
+ * <code>T(n,k) = n!/((n-2k)! k! (k+1)!)</code>.
  * @author Georg Fischer
  */
 public class A055151 extends DoubleRowTriangle {

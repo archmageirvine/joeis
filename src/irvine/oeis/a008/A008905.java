@@ -11,7 +11,7 @@ public class A008905 implements Sequence {
 
   private Z mF = Z.ONE;
   private long mN = -1;
-  private int mBase;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A008905() {
@@ -19,7 +19,7 @@ public class A008905 implements Sequence {
   }
 
   /**
-   * Generice constructor with parameter
+   * Generic constructor with parameter
    * @param base number base
    */
   public A008905(final int base) {

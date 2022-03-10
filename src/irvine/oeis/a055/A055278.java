@@ -34,7 +34,7 @@ public class A055278 extends HolonomicRecurrence {
     }
     for (int k = 0; k <= prod.degree(); ++k) {
       sb.append("],[");
-      sb.append(prod.coeff(k).toString());
+      sb.append(prod.coeff(k));
     }
     sb.append("]]");
     //System.out.println(sb.toString());

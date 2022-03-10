@@ -11,14 +11,12 @@ import irvine.oeis.Sequence;
  */
 public class A055154 implements Sequence {
 
-  private int mN;
   private int mRow;
   private int mCol;
   private int mBehind;
 
   /** Construct the sequence. */
   public A055154() {
-    mN = 0;
     mRow = 0;
     mCol = 0;
     mBehind = 0;
@@ -33,7 +31,7 @@ public class A055154 implements Sequence {
   protected Z compute(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int j = 0; j <= n; ++j) {
-      sum = sum.add(Binomial.binomial(n, j).multiply(Binomial.binomial((1 << (n - j)) - 1, k)).multiply(((j & 1) == 0) ? 1 : -1));
+      sum = sum.add(Binomial.binomial(n, j).multiply(Binomial.binomial((1L << (n - j)) - 1, k)).multiply(((j & 1) == 0) ? 1 : -1));
     }
     return sum;
   }

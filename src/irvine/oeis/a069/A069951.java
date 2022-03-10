@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A069951 Continued fraction expansion of the number e^(2/3).
- * If k&gt;0 a(5k)=a(5k+1)=1, a(5k+2)=9k+1, a(5k+3)=36k+18, a(5k+4)=9k+7.
+ * If <code>k&gt;0 a(5k)=a(5k+1)=1, a(5k+2)=9k+1, a(5k+3)=36k+18, a(5k+4)=9k+7</code>.
  * @author Georg Fischer
  */
 public class A069951 implements Sequence {

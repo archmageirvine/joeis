@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
@@ -453,5 +454,18 @@ public final class IntegerUtils {
       }
     }
     return a;
+  }
+
+  /**
+   * Convert an integer array into a list.
+   * @param a array of values
+   * @return list
+   */
+  public static List<Integer> toList(final int... a) {
+    final ArrayList<Integer> res = new ArrayList<>();
+    for (final int v : a) {
+      res.add(v);
+    }
+    return res;
   }
 }

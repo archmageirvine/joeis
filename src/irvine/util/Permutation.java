@@ -170,7 +170,8 @@ public class Permutation {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    final Permutation p = new Permutation(new int[] {0, 1, 1, 2});
+    final int n = Integer.parseInt(args[0]);
+    final Permutation p = new Permutation(n);
     int[] r;
     long c = 0;
     while ((r = p.next()) != null) {

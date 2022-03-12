@@ -40,6 +40,21 @@ public final class Comparators {
     return 0;
   };
 
+  /** Comparator for reverse colexicographic ordering of integer arrays. */
+  public static final Comparator<int[]> REVERSE_COLEXICOGRAPHIC = (a, b) -> {
+    final int c = Integer.compare(a.length, b.length);
+    if (c != 0) {
+      return c;
+    }
+    for (int k = a.length - 1; k >= 0; --k) {
+      final int ck = Integer.compare(b[k], a[k]);
+      if (ck != 0) {
+        return ck;
+      }
+    }
+    return 0;
+  };
+
   /** Comparator for ordering of integer arrays. */
   public static final Comparator<int[]> INCREASING_LENGTH_DECREASING_VALUE = (a, b) -> {
     final int c = Integer.compare(a.length, b.length);

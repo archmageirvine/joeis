@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A055089.
+ * A055089 List of all finite permutations in reversed colexicographic ordering.
  * @author Sean A. Irvine
  */
 public class A055089 implements Sequence {

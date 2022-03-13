@@ -1809,3 +1809,4 @@ A054911 Number of n-dimensional odd unimodular lattice (or quadratic forms).
 A054917 Number of connected unlabeled vertex-transitive graphs with n nodes such that complement is also connected, simple dependency of A006799
 A054930 Number of complementary pairs of circulant digraphs on n nodes, depends A049297
 A055069 Telephone country codes in use as of Jun 13 2000
+A055127 Triangle T(n,k) of numbers of proper k-covers of an unlabeled n-set, k=1..2^n-2

@@ -1,15 +1,16 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.HolonomicRecurrence;
 
 /**
  * A055364 Number of asymmetric mobiles (circular rooted trees) with n nodes and 3 leaves.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A055364 extends LinearRecurrence {
+public class A055364 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A055364() {
-    super(new long[] {1, -3, 2, 1, 0, -1, -2, 3}, new long[] {1, 4, 10, 22, 42, 73, 119, 184});
+    super(4, A055278.computeRecurrence(3), "1, 4, 10, 22, 42, 73", 0);
   }
 }
+

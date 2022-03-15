@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173661  Logarithmic derivative of the squares of the Fibonacci numbers (A007598, with offset).
+ * A173661 Logarithmic derivative of the squares of the Fibonacci numbers (A007598, with offset).
  * @author Georg Fischer
  */
 public class A173661 extends GeneratingFunctionSequence {

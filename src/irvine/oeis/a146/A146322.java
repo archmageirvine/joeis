@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a061.A061039;
 
 /**
- * A146322 A061039(n) mod 9.
+ * A146322 a(n) = A061039(n) mod 9.
  * @author Georg Fischer
  */
 public class A146322 extends A061039 {

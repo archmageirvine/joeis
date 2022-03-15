@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A169603 Table T(n,k) = k*(4*n+2+k) read by rows.
+ * A169603 Triangle T(n,k) = k*(4*n+k+2), read by rows.
  * @author Georg Fischer
  */
 public class A169603 extends Triangle {

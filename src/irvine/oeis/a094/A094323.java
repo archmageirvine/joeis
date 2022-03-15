@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094323 n*(n+1)*(2n+1)*(3n+1)*(4n+1)/30.
+ * A094323 a(n) = n*(n+1)*(2n+1)*(3n+1)*(4n+1)/30.
  * @author Georg Fischer
  */
 public class A094323 extends HolonomicRecurrence {

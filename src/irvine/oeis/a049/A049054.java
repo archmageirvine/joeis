@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A049054 Numbers n such that 10^n + 3 is prime.
+ * A049054 Numbers k such that 10^k + 3 is prime.
  * @author Georg Fischer
  */
 public class A049054 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ import irvine.oeis.a054.A054636;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
- * A055063 Pointers to base-8 digits where primes occur in A055052.
+ * A055063 Positions of primes in A054636 with offset 1.
  * @author Sean A. Irvine
  */
 public class A055063 extends PrimePositionSubsequence {

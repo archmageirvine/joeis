@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048946 Product of divisors of n is a fifth power.
+ * A048946 Numbers k such that the product of divisors of k is a fifth power.
  * @author Sean A. Irvine
  */
 public class A048946 implements Sequence {

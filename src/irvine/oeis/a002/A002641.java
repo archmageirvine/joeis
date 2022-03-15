@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002641 Numbers n such that (n^2 + n + 1)/7 is prime.
+ * A002641 Numbers k such that (k^2 + k + 1)/7 is prime.
  * @author Sean A. Irvine
  */
 public class A002641 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098752 a(n+1) = least number &gt; a(n) that begins with the last digit of a(n) and doesn't end with 0.
+ * A098752 a(1) = 1 and a(n+1) is the least number &gt; a(n) that begins with the last digit of a(n) and doesn't end with 0.
  * @author Georg Fischer
  */
 public class A098752 extends GeneratingFunctionSequence {

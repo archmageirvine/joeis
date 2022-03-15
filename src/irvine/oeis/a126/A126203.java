@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A126203 Middle number of a set of 5 consecutive numbers such that the sum of their cubes is a square.
+ * A126203 Middle number of a set of 5 consecutive integers whose sum of cubes is a square.
  * @author Georg Fischer
  */
 public class A126203 extends FiniteSequence {

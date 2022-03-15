@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a046.A046970;
 
 /**
- * A322360 Multiplicative with a(p^e) = (p^2)-1.
+ * A322360 Multiplicative with a(p^e) = p^2 - 1.
  * @author Georg Fischer
  */
 public class A322360 implements Sequence {

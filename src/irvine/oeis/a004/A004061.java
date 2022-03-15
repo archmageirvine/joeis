@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004061 Numbers n such that (5^n - 1)/4 is prime.
+ * A004061 Numbers k such that (5^k - 1)/4 is prime.
  * @author Sean A. Irvine
  */
 public class A004061 implements Sequence {

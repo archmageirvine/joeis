@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032184 "CIJ" (necklace, indistinct, labeled) transform of 1, 3, 5, 7,...
+ * A032184 a(n) = 2^n*(n-1)! for n &gt; 1, a(1) = 1.
  * @author Georg Fischer
  */
 public class A032184 extends HolonomicRecurrence {

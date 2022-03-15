@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A061778 a(n) = Product_{j=0..floor(n/2)} C(n,j).
+ * A061778 a(n) = Product_{j=0..floor(n/2)} binomial(n,j).
  * @author Georg Fischer
  */
 public class A061778 implements Sequence {

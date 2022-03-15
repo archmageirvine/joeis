@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180920 Number a(n) of terms in the sum of cube of consecutive integers starting from a(n) such that the sum equals a squared integer.
+ * A180920 Numbers k such that the sum of the cubes of the k consecutive integers starting from k is a square.
  * @author Georg Fischer
  */
 public class A180920 extends GeneratingFunctionSequence {

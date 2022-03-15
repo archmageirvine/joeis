@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a139.A139306;
 
 /**
- * A152921 2^(2p-1)/2, where p is A000043(n).
+ * A152921 a(n) = 2^(2p-1)/2, where p is A000043(n).
  * @author Georg Fischer
  */
 public class A152921 extends A139306 {

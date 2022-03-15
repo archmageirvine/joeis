@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A080527 Expansion of exp(3cosh(x))/e^3.
+ * A080527 Expansion of e.g.f. exp(3*cosh(x))/e^3 (even powers only).
  * E.g.f.: exp(3*cosh(x)-3)
  * @author Georg Fischer
  */

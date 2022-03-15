@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A055208 Table T(n,k) = sum of k-th powers of digits of n read by antidiagonals (n &gt;= 1, k &gt;= 1).
+ * A055208 Table read by ascending antidiagonals: T(n,k) (n &gt;= 1, k &gt;= 1) is the sum of k-th powers of digits of n.
  * @author Georg Fischer
  */
 public class A055208 extends UpperLeftTriangle {

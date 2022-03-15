@@ -7,7 +7,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A076850 Numbers n such that (10^n + 2)/6 is prime.
+ * A076850 Numbers k such that (10^k + 2)/6 is prime.
  * @author Georg Fischer
  */
 public class A076850 extends PrimePositionSubsequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a069;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A069078 a(n) = n(4*n^4 + 1).
+ * A069078 a(n) = n*(4*n^4 + 1).
  * @author Georg Fischer
  */
 public class A069078 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a047;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A047865 Number of derangements of n where minimal cycle size is 4.
+ * A047865 Number of derangements of n where minimal cycle size is at least 4.
  * @author Georg Fischer
  */
 public class A047865 extends HolonomicRecurrence {

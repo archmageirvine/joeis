@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002260;
 import irvine.oeis.a003.A003056;
 
 /**
- * A134483 Triangle read by rows: T(n,k)=2n+k-2; 1&lt;=k&lt;=n.
+ * A134483 Triangle read by rows: T(n,k) = 2n + k - 2; 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A134483 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A274339 The 3-cycle of the iterated sum of deficient divisors function.
+ * A274339 The period 3 sequence of the iterated sum of deficient divisors function (A187793) starting at 15.
  * @author Georg Fischer
  */
 public class A274339 extends HolonomicRecurrence {

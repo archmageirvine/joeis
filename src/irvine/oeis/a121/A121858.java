@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006093;
 
 /**
- * A121858 Smallest odd number having p(n) divisors, where p(n) is the n-th prime=A000040(n).
+ * A121858 Smallest odd number having prime(n) divisors, where prime(n) is the n-th prime=A000040(n).
  * @author Georg Fischer
  */
 public class A121858 implements Sequence {

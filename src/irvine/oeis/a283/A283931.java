@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A283931 Numbers n such that tau(2^n) = tau(2^n + 1).
+ * A283931 Numbers m such that tau(2^m) = tau(2^m + 1).
  *
  * @author Georg Fischer
  */

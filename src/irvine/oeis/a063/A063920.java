@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063920 Numbers n such that n = 2*phi(n) + phi(phi(n)).
+ * A063920 Numbers k such that k = 2*phi(k) + phi(phi(k)).
  * @author Sean A. Irvine
  */
 public class A063920 extends LinearRecurrence {

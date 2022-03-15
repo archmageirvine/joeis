@@ -8,7 +8,7 @@ import irvine.oeis.a033.A033286;
 
 
 /**
- * A228529 Prime(n*prime(n)).
+ * A228529 a(n) = prime(n*prime(n)).
  * Formula: <code>a(n) = A000040(A033286(n)).</code>
  * @author Georg Fischer
  */

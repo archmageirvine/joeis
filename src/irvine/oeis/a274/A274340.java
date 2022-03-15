@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274340 A 4-cycle of the iterated sum of deficient divisors function.
+ * A274340 The period 4 sequence of the iterated sum of deficient divisors function (A187793) starting at 19.
  * @author Sean A. Irvine
  */
 public class A274340 extends LinearRecurrence {

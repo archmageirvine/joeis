@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180921 Numbers a(n) whose square equals sums of cubes of b(n) consecutive integers starting from b(n), where b(n)= A180920.
+ * A180921 a(n) is the square root of the sum of the cubes of the b(n) consecutive integers starting from b(n), where b(n) = A180920.
  * @author Georg Fischer
  */
 public class A180921 extends GeneratingFunctionSequence {

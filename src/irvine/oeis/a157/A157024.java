@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A157024 a(0)=1, a(n)=(3n-1)3n(3n+1)/2 for n&gt;0.
+ * A157024 a(0)=1, a(n) = (3n-1)*3n*(3n+1)/2 for n&gt;0.
  * @author Georg Fischer
  */
 public class A157024 extends GeneratingFunctionSequence {

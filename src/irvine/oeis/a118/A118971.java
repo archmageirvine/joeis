@@ -6,7 +6,7 @@ package irvine.oeis.a118;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A118971 a(n) = 4*binomial(5*n+3,n)/(4*n+4).
+ * A118971 a(n) = binomial(5*n+3,n)/(n+1).
  * @author Georg Fischer
  */
 public class A118971 extends HolonomicRecurrence {

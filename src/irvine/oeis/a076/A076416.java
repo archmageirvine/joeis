@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A076416 Decimal expansion of third solution of equation cos(x) cosh(x) = 1.
+ * A076416 Decimal expansion of third solution of equation cos(x)*cosh(x) = 1.
  * Equation; cos(x)cosh(x)-(1)
  * @author Georg Fischer
  */

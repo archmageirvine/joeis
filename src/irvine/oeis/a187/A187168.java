@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187168 Number of 7-step self-avoiding walks on a n X n X n cube summed over all starting positions.
+ * A187168 Number of 7-step self-avoiding walks on an n X n X n cube summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187168 extends GeneratingFunctionSequence {

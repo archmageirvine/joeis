@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A035346 Let F(n) = Q(n) - P(n) be the Fortunate numbers (A005235); sequence gives n such that F(n) = p(n+1).
+ * A035346 Let F(n) = Q(n) - P(n) be the Fortunate numbers (A005235); sequence gives n such that F(n) = prime(n+1).
  * @author Sean A. Irvine
  */
 public class A035346 extends A002110 {

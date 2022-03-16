@@ -16,7 +16,7 @@ public class A016067 implements Sequence {
   private long mPrev = 0;
   private long mN = -1;
 
-  private long countRepresentations(final long n) {
+  protected long countRepresentations(final long n) {
     long rep = 0;
     long t;
     for (long m = 0; (t = n - 2 * m * m) > 0; ++m) {

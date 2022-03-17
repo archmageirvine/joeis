@@ -1811,3 +1811,4 @@ A054930 Number of complementary pairs of circulant digraphs on n nodes, depends 
 A055069 Telephone country codes in use as of Jun 13 2000
 A055127 Triangle T(n,k) of numbers of proper k-covers of an unlabeled n-set, k=1..2^n-2
 A055130 Triangle T(n,k) of numbers of k-covers of an unlabeled n-set, k=1..2^n-1
+A055334 Number of asymmetric (identity) trees with n nodes and k leaves [formula doesn't work?]

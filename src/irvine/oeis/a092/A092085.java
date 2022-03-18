@@ -1,28 +1,33 @@
 package irvine.oeis.a092;
-// manually egfu at 2021-12-03 10:28
+// manually egfsi at 2021-12-01 18:58
 
-import irvine.math.polynomial.Polynomial;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
-import irvine.oeis.ExponentialGeneratingFunction;
+import irvine.math.q.Rationals;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A092085 Alternating row sums of triangle A092082 (S2(7) Stirling2 generalization).
- * E.g.f.: exp(1-(1-6*x)^(1/6))-1
- * -(exp(1 - (1-6*x)^(-1/6)) - 1)
+ * E.g.f.: 1-exp(1-(1-6*x)^(-1/6)).
  * @author Georg Fischer
  */
-public class A092085 extends ExponentialGeneratingFunction {
+public class A092085 implements Sequence {
+
+  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  private int mN = -1;
+  private Z mF = Z.ONE;
 
   /** Construct the sequence. */
   public A092085() {
-    super(0);
     next();
   }
 
   @Override
-  public Polynomial<Q> compute(final int n) {
-    return RING.subtract(RING.one(), RING.exp(RING.subtract(RING.one(),
-      RING.exp(RING.multiply(RING.log(RING.subtract(RING.one(), RING.monomial(Q.SIX, 1)), n),
-        RING.series(RING.one(), RING.monomial(new Q(-6), 0), n), n), n)), n));
+  public Z next() {
+    if (++mN != 0) {
+      mF = mF.multiply(mN);
+    }
+    return RING.subtract(RING.one(), RING.exp(RING.subtract(RING.one(), RING.exp(RING.multiply(RING.log(RING.subtract(RING.one(), RING.monomial(new Q(6), 1)), mN), RING.series(RING.one(), RING.monomial(new Q(-6), 0), mN), mN), mN)), mN)).coeff(mN).multiply(mF).toZ();
   }
 }

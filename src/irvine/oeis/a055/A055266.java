@@ -26,7 +26,7 @@ public class A055266 implements Sequence {
       while (true) {
         u = u.add(1);
         if (!mPrime.isPrime(u)) {
-          Z s = u.subtract(mPrev);
+          final Z s = u.subtract(mPrev);
           if (!mSeen.contains(s)) {
             t = s;
             break;

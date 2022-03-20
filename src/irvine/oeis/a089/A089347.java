@@ -1,7 +1,7 @@
 package irvine.oeis.a089;
 
 /**
- * A089346 Primes of the form identical odd digits followed by a 1.
+ * A089347 Primes of the form identical digits followed by a 1.
  * @author Georg Fischer
  */
 public class A089347 extends A089345 {

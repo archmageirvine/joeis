@@ -47,6 +47,6 @@ public class DegreeLimitedPolynomialRingField<E> extends PolynomialRingField<E> 
 
   @Override
   public Polynomial<E> divide(final Polynomial<E> n, final Polynomial<E> d) {
-    return super.series(n, d, mMaxDegree);
+    return series(n, d, mMaxDegree);
   }
 }

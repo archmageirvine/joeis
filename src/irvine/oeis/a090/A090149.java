@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A089345 Primes of the form identical even digits followed by a 1.
+ * A090149 Primes of the form identical digits preceded by a 1.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

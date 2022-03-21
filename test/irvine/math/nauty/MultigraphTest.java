@@ -123,7 +123,7 @@ public class MultigraphTest extends TestCase {
 
   public void testCli1() throws IOException {
     try (final InputStream is = getClass().getClassLoader().getResourceAsStream("irvine/math/nauty/gen1.lst")) {
-      check(is, new String[] {"-r", "2", "-T"},
+      check(is, new String[] {"-r", "2"},
         "3 3 0 1 1 0 2 1 1 2 1",
         ">Z 2 graphs read from stdin; 1 multigraphs written to stdout;",
         "sec");
@@ -139,7 +139,7 @@ public class MultigraphTest extends TestCase {
 
   public void testCli3() throws IOException {
     try (final InputStream is = getClass().getClassLoader().getResourceAsStream("irvine/math/nauty/gen2.lst")) {
-      check(is, new String[] {"-T", "-D", "9"},
+      check(is, new String[] {"-D", "9"},
         "5 7 0 3 1 0 4 1 1 3 1 1 4 1 2 3 1 2 4 1 3 4 1",
         "5 7 0 3 1 0 4 1 1 3 1 1 4 1 2 3 1 2 4 1 3 4 2",
         "5 7 0 3 1 0 4 1 1 3 1 1 4 1 2 3 1 2 4 1 3 4 3",
@@ -154,7 +154,7 @@ public class MultigraphTest extends TestCase {
 
   public void testCli4() throws IOException {
     try (final InputStream is = getClass().getClassLoader().getResourceAsStream("irvine/math/nauty/gen1.lst")) {
-      check(is, new String[] {"-l", "2", "-T"},
+      check(is, new String[] {"-l", "2"},
         "3 3 0 1 1 0 2 1 1 2 1",
         ">Z 2 graphs read from stdin; 1 multigraphs written to stdout;",
         "sec");

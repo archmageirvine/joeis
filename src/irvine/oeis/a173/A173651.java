@@ -18,6 +18,6 @@ public class A173651 extends RationalTriangle {
   @Override
   public Q compute(int n, final int m) {
     ++n;
-    return m == 0 ? Q.NEG_ONE : new Q(Z.ONE, Z.valueOf(n - m).square()).subtract(new Q(1, m * m));
+    return m == 0 ? Q.NEG_ONE : new Q(Z.ONE, Z.valueOf(n - m).square()).subtract(new Q(1, m * (long) m));
   }
 }

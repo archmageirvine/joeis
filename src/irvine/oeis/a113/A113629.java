@@ -6,8 +6,6 @@ package irvine.oeis.a113;
  */
 public class A113629 extends A113628 {
 
-  protected char mLast;
-
   /** Construct the sequence. */
   public A113629() {
     super(3);

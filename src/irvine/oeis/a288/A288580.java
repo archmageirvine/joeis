@@ -33,14 +33,15 @@ lis:=[op(lis), a(k, n-k)]; od: od: lis; end:
 scan1(T, 12);
 */
   @Override
-  public Z matrixElement(int n, int k) {
+  public Z matrixElement(final int n, final int k) {
     if (k == 0) {
       return Z.ONE;
     }
     Z prod = Z.ONE;
-    for (int i = 0; i <= 2 * n / k; ++i) {
-      if (n - k * i != 0) {
-        prod = prod.multiply(n - k * i);
+    for (int i = 0; k * i <= 2 * n; ++i) {
+      final long s = n - k * (long) i;
+      if (s != 0) {
+        prod = prod.multiply(s);
       }
     }
     return prod;

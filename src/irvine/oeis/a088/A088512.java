@@ -11,7 +11,7 @@ import irvine.oeis.MemorySequence;
 public class A088512 extends MemorySequence {
 
   private int mN;
-  private static final Z[] INITS = new Z[] {Z.ZERO, Z.ZERO};
+  private static final Z[] INITS = {Z.ZERO, Z.ZERO};
 
   /** Construct the sequence. */
   public A088512() {

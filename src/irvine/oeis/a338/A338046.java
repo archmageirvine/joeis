@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A338046 G.f.: Sum_{k>=0} x^(2^k) / (1 - x^(2^k))^4.
+ * A338046 G.f.: Sum_{k&gt;=0} x^(2^k) / (1 - x^(2^k))^4.
  * a(2*n) = a(n) + A002492(n), a(2*n+1) = A000447(n+1).
  * a(2*n) = a(n) + 2*n*(n+1)*(2*n+1)/3, a(2*n+1) = (n + 1)*(4*(n+1)^2 - 1)/3.
  * @author Georg Fischer

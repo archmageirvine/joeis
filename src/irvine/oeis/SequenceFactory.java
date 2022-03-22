@@ -89,7 +89,7 @@ public final class SequenceFactory {
         throw e;
       }
     } catch (final IOException e) {
-      // Ignore broken pipe error so we don't die on | head etc.
+      // Ignore broken pipe error so that we don't die on | head etc.
       if (!e.getMessage().contains("Broken pipe")) {
         throw e;
       }

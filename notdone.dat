@@ -1813,3 +1813,6 @@ A055127 Triangle T(n,k) of numbers of proper k-covers of an unlabeled n-set, k=1
 A055130 Triangle T(n,k) of numbers of k-covers of an unlabeled n-set, k=1..2^n-1
 A055334 Number of asymmetric (identity) trees with n nodes and k leaves [formula doesn't work?]
 A055397 Maximum population of an n X n stable pattern in Conway's Game of Life
+A055440 Distribution of first digit of mantissa following Benford's Law, using d'Hondt method
+A055441 Distribution of first digit of mantissa following Benford's Law, using largest remainder method with Hare quotas
+A055442 Distribution of first digit of mantissa following Benford's Law, using largest remainder method with Droop quotas

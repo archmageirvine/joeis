@@ -13,6 +13,10 @@ public class BernoulliSequence implements RationalSequence {
 
   private long mN = -1;
   private final LongDynamicArray<Q> mB = new LongDynamicArray<>();
+  {
+    mB.set(0, Q.ONE);
+    mB.set(1, new Q(-1, 2)); // only non-zero odd term
+  }
 
   /**
    * Construct the Bernoulli sequence skipping specified initial terms.
@@ -26,17 +30,19 @@ public class BernoulliSequence implements RationalSequence {
 
   @Override
   public final Q nextQ() {
-    if (++mN == 0) {
-      mB.set(0, Q.ONE);
-      return Q.ONE;
+    if (++mN >= mB.length()) {
+      if ((mN & 1) == 1) {
+        mB.set(mN, Q.ZERO);
+      } else {
+        Q s = new Q(-mN - 1, 2); // Contribution from B(1)
+        for (long k = 0; k < mN; k += 2) {
+          s = s.add(mB.get(k).multiply(Binomial.binomial(mN + 1, k)));
+        }
+        s = s.divide(-mN - 1);
+        mB.set(mN, s);
+      }
     }
-    Q s = Q.ZERO;
-    for (long k = 0; k < mN; ++k) {
-      s = s.add(mB.get(k).multiply(Binomial.binomial(mN + 1, k)));
-    }
-    s = s.divide(-mN - 1);
-    mB.set(mN, s);
-    return s;
+    return mB.get(mN);
   }
 
   /**
@@ -57,12 +63,12 @@ public class BernoulliSequence implements RationalSequence {
    */
   public static void main(final String[] args) {
     final BernoulliSequence seq = new BernoulliSequence(0);
-    while (true) {
+    while (!System.out.checkError()) {
       final Q b = seq.nextQ();
       if (b == null) {
         break;
       }
-      System.out.println(b.toString());
+      System.out.println(b);
     }
   }
 }

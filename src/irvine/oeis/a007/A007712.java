@@ -16,7 +16,7 @@ public class A007712 implements Sequence {
   private Z mF = Z.ONE;
 
   // This is like A007709, but we return the reformed permutation
-  private int[] reform(final int[] p) {
+  protected int[] reform(final int[] p) {
     // 0-based rather than 1-based used in papers
     final int[] reform = new int[p.length];
     int nextFree = 0;

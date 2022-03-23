@@ -1,26 +1,15 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.PartialProductSequence;
 
 /**
  * A000178 Superfactorials: product of first n factorials.
  * @author Sean A. Irvine
  */
-public class A000178 implements Sequence {
+public class A000178 extends PartialProductSequence {
 
-  private long mN = -1;
-  private Z mF = Z.ONE;
-  private Z mP = Z.ONE;
-
-  @Override
-  public Z next() {
-    if (++mN < 2) {
-      return Z.ONE;
-    }
-    mF = mF.multiply(mN);
-    mP = mP.multiply(mF);
-    return mP;
+  /** Construct the sequence. */
+  public A000178() {
+    super(new A000142());
   }
 }
-

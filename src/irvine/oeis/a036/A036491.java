@@ -12,7 +12,7 @@ public class A036491 extends A036490 {
   @Override
   public Z next() {
     final Z n = super.next();
-    final int b = Math.max(1, ZUtils.valuation(Z.SEVEN, n)); // this kludge is weird but apparently necessary!
+    final int b = Math.max(1, ZUtils.valuation(n, Z.SEVEN)); // this kludge is weird but apparently necessary!
     final int u = (b + 2) / 2 - b;
     return u >= 0 ? n.multiply(Z.SEVEN.pow(u)) : n.divide(Z.SEVEN.pow(-u));
   }

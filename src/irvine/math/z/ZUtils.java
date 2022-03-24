@@ -722,19 +722,19 @@ public final class ZUtils {
 
   /**
    * The valuation of a number in another.
-   * @param a divisor
-   * @param b number to be divided
-   * @return the largest <code>n</code> such that <code>a^n</code> divides <code>b</code>
+   * @param n number to be divided
+   * @param div divisor
+   * @return the largest <code>k</code> such that <code>div^k</code> divides <code>n</code>
    */
-  public static int valuation(final Z a, Z b) {
-    if (b.isZero()) {
+  public static int valuation(Z n, final Z div) {
+    if (n.isZero()) {
       return 0; // convention
     }
     int d = 0;
     Z[] qr;
-    while ((qr = b.divideAndRemainder(a))[1].isZero()) {
+    while ((qr = n.divideAndRemainder(div))[1].isZero()) {
       ++d;
-      b = qr[0];
+      n = qr[0];
     }
     return d;
   }

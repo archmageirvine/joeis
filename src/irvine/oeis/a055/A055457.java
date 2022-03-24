@@ -15,6 +15,6 @@ public class A055457 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(ZUtils.valuation(Z.FIVE, Z.FIVE.multiply(mN)));
+    return Z.valueOf(ZUtils.valuation(Z.FIVE.multiply(mN), Z.FIVE));
   }
 }

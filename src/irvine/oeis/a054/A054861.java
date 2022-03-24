@@ -33,7 +33,7 @@ public class A054861 implements Sequence {
   public Z next() {
     ++mN;
     if (mN % mBase == 0) {
-      mResult = mResult.add(ZUtils.valuation(Z.valueOf(mBase), Z.valueOf(mN)));
+      mResult = mResult.add(ZUtils.valuation(Z.valueOf(mN), Z.valueOf(mBase)));
     }
     return mResult;
   }

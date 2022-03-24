@@ -16,7 +16,7 @@ public class A084087 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    while (mN % 3 == 0 || (ZUtils.valuation(Z.TWO, Z.valueOf(mN)) & 1) != 0) {
+    while (mN % 3 == 0 || (ZUtils.valuation(Z.valueOf(mN), Z.TWO) & 1) != 0) {
       ++mN;
     }
     return Z.valueOf(mN);

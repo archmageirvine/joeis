@@ -42,10 +42,10 @@ public class ZUtilsTest extends TestCase {
   }
 
   public void testOrd() {
-    assertEquals(3, ZUtils.valuation(Z.TWO, Z.EIGHT));
+    assertEquals(3, ZUtils.valuation(Z.EIGHT, Z.TWO));
     assertEquals(1, ZUtils.valuation(Z.SEVEN, Z.SEVEN));
-    assertEquals(1, ZUtils.valuation(Z.FIVE, Z.TEN));
-    assertEquals(0, ZUtils.valuation(Z.THREE, Z.FOUR));
+    assertEquals(1, ZUtils.valuation(Z.TEN, Z.FIVE));
+    assertEquals(0, ZUtils.valuation(Z.FOUR, Z.THREE));
   }
 
   public void testDescribe() {

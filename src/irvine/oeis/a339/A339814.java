@@ -18,7 +18,7 @@ public class A339814 extends A339809 {
 
   @Override
   public Z next() {
-    final Z result = Z.valueOf(ZUtils.valuation(Z.TWO, super.next()));
+    final Z result = Z.valueOf(ZUtils.valuation(super.next(), Z.TWO));
     super.next();
     return result;
   }

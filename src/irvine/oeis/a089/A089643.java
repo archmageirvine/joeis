@@ -22,6 +22,6 @@ public class A089643 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(ZUtils.valuation(Z.THREE, Binomial.binomial(3 * mN, mN)));
+    return Z.valueOf(ZUtils.valuation(Binomial.binomial(3 * mN, mN), Z.THREE));
   }
 }

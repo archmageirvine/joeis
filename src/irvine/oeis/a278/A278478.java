@@ -13,6 +13,6 @@ public class A278478 extends A000041 {
 
   @Override
   public Z next() {
-    return Z.valueOf(ZUtils.valuation(Z.TWO, super.next()));
+    return Z.valueOf(ZUtils.valuation(super.next(), Z.TWO));
   }
 }

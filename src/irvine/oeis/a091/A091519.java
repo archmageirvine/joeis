@@ -22,6 +22,6 @@ public class A091519 implements Sequence {
   public Z next() {
     ++mN;
     final long n2 = mN * mN;
-    return Z.valueOf(2 * n2 - n2 / (1L << ZUtils.valuation(Z.TWO, Z.valueOf(mN))));
+    return Z.valueOf(2 * n2 - n2 / (1L << ZUtils.valuation(Z.valueOf(mN), Z.TWO)));
   }
 }

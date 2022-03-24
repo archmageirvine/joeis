@@ -21,6 +21,6 @@ public class A078734 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return Z.valueOf(ZUtils.valuation(Z.TWO, mN) % 3 + 1);
+    return Z.valueOf(ZUtils.valuation(mN, Z.TWO) % 3 + 1);
   }
 }

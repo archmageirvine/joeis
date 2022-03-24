@@ -23,7 +23,7 @@ public class A003060 implements Sequence {
     final Z[] divisors = Cheetah.factor(mTen.subtract(1)).divisorsSorted();
     // skip 1 | 10^n-1
     for (int k = 1; k < divisors.length; ++k) {
-      ZUtils.valuation(divisors[k], Z.TEN);
+      ZUtils.valuation(Z.TEN, divisors[k]);
       boolean ok = true;
       Z t = Z.ONE;
       for (int j = 1; j < mN; ++j) {

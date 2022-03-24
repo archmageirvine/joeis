@@ -40,10 +40,10 @@ public class A181447 implements Sequence {
     int ip = 0;
     while (PRIMES[ip] < mPrime) {
       final Z pz = Z.valueOf(PRIMES[ip]);
-      n2 = n2.divide(pz.pow(ZUtils.valuation(pz, n2)));
+      n2 = n2.divide(pz.pow(ZUtils.valuation(n2, pz)));
       ++ip;
     }
-    return n2.compareTo(Z.ONE) > 0 && mPrimeZ.pow(ZUtils.valuation(mPrimeZ, n2)).equals(n2);
+    return n2.compareTo(Z.ONE) > 0 && mPrimeZ.pow(ZUtils.valuation(n2, mPrimeZ)).equals(n2);
   }
 
   @Override

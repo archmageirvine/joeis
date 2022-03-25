@@ -25,7 +25,7 @@ public final class InverseSigma {
   // If this turns out not to be case then we could provide a mechanism to pass
   // in an appropriate factorizer.
 
-  private InverseSigma() {}
+  private InverseSigma() { }
 
   private static final PrimeDivision FACTOR = new PrimeDivision();
 

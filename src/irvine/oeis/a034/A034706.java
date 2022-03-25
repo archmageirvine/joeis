@@ -14,18 +14,27 @@ import irvine.oeis.a000.A000217;
  */
 public class A034706 implements Sequence {
 
-  private static final class State {
-    final Z mValue;
-    final int mLast;
+  protected static final class State {
+    private final Z mValue;
+    private final int mLast;
 
     private State(final Z value, final int last) {
       mValue = value;
       mLast = last;
     }
+
+    public Z getValue() {
+      return mValue;
+    }
+
+    public int getLast() {
+      return mLast;
+    }
+
   }
 
   private final TreeSet<State> mA = new TreeSet<>(Comparator.comparing((State o) -> o.mValue).thenComparingInt(o -> o.mLast));
-  private final MemorySequence mSeq;
+  protected final MemorySequence mSeq;
   private final int mMinTerms;
   private Z mPrev = Z.NEG_ONE;
   private int mN = 1;
@@ -49,6 +58,10 @@ public class A034706 implements Sequence {
     return sum;
   }
 
+  protected boolean accept(final State s) {
+    return true;
+  }
+
   @Override
   public Z next() {
     while (true) {
@@ -64,7 +77,9 @@ public class A034706 implements Sequence {
         continue;
       }
       mPrev = s.mValue;
-      return s.mValue;
+      if (accept(s)) {
+        return s.mValue;
+      }
     }
   }
 }

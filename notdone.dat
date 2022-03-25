@@ -1816,3 +1816,4 @@ A055397 Maximum population of an n X n stable pattern in Conway's Game of Life
 A055440 Distribution of first digit of mantissa following Benford's Law, using d'Hondt method
 A055441 Distribution of first digit of mantissa following Benford's Law, using largest remainder method with Hare quotas
 A055442 Distribution of first digit of mantissa following Benford's Law, using largest remainder method with Droop quotas
+A055513 Class number h = h- * h+ of cyclotomic field Q( exp(2 Pi / prime(n)) )

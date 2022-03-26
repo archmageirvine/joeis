@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026225 a(n) = (1/3)*(s(n+1) - 1), where s = A026224.
+ * A026225 Numbers of the form 3^i * (3k+1).
  * @author Sean A. Irvine
  */
 public class A026225 extends A026224 {

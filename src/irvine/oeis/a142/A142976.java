@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A142976 a(n) = 5/9 + n^2/2 + 7*n/6 - 4^(n+1) * (2*n/3 + 10/9) + 5*7^(n+1)/9.
+ * A142976 a(n) = (1/18)*(9*n^2 + 21*n + 10 - 4^(n+2)*(3*n+5) + 10*7^(n+1)).
  * @author Sean A. Irvine
  */
 public class A142976 extends LinearRecurrence {

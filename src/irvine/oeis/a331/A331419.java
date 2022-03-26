@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331419 a(n) is the number of subsets of {1..n} that contain 4 odd numbers.
+ * A331419 a(n) is the number of subsets of {1..n} that contain exactly 4 odd numbers.
  * @author Georg Fischer
  */
 public class A331419 extends HolonomicRecurrence {

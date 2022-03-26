@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A028937 Denominator of x-coordinate of (2n)*P where P is the generator for rational points on the curve y^2 + y = x^3 - x.
+ * A028937 Denominator of x-coordinate of (2n)*P where P = (0,0) is the generator for rational points on the curve y^2 + y = x^3 - x.
  * @author Sean A. Irvine
  */
 public class A028937 extends A028936 {

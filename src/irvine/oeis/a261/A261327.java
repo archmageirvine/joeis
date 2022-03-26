@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261327 Numerators of 1 + n^2/4.
+ * A261327 a(n) = (n^2 + 4) / 4^((n + 1) mod 2).
  * @author Sean A. Irvine
  */
 public class A261327 extends LinearRecurrence {

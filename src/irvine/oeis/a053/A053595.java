@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053595 Open 3-dimensional ball numbers (version 3): a(n)= number of integer points (i,j,k) contained in a open ball of diameter n, centered at (1/2,1/2,0).
+ * A053595 Open 3-dimensional ball numbers (version 3): a(n) is the number of integer points (i,j,k) contained in an open ball of diameter n, centered at (1/2,1/2,0).
  * @author Sean A. Irvine
  */
 public class A053595 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a028.A028337;
 
 /**
- * A034307 Numbers n such that there are no pronic palindromes of length n.
+ * A034307 Numbers n such that there are no oblong (promic) palindromes of length n.
  * @author Sean A. Irvine
  */
 public class A034307 extends A028337 {

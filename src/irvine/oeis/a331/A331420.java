@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331420 a(n) is the number of subsets of {1..n} that contain 5 odd numbers.
+ * A331420 a(n) is the number of subsets of {1..n} that contain exactly 5 odd numbers.
  * @author Georg Fischer
  */
 public class A331420 extends HolonomicRecurrence {

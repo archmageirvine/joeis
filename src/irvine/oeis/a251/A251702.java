@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A251702 a(1)=5, a(n)=a(n-1)*(a(n-1)-1)*(a(n-1)-2)/6.
+ * A251702 a(1)=5, a(n) = a(n-1)*(a(n-1)-1)*(a(n-1)-2)/6.
  * @author Georg Fischer
  */
 public class A251702 implements Sequence {

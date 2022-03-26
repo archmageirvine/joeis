@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110660 Pronic numbers repeated.
+ * A110660 Oblong (promic) numbers repeated.
  * @author Sean A. Irvine
  */
 public class A110660 extends LinearRecurrence {

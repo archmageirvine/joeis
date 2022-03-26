@@ -6,7 +6,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180004 Nearest integer to n*(27/26).
+ * A180004 a(n) is the nearest integer to n*(27/26).
  * @author Georg Fischer
  */
 public class A180004 extends HolonomicRecurrence {

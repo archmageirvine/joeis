@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002378;
 import irvine.util.array.DynamicArray;
 
 /**
- * A048530 Smallest pronic number containing exactly n 0's.
+ * A048530 Smallest oblong (promic) number containing exactly n 0's.
  * @author Sean A. Irvine
  */
 public class A048530 extends A002378 {

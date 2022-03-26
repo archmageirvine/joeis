@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030517 Number of walks of length n between two vertices on a icosahedron at distance 1.
+ * A030517 Number of walks of length n between two vertices on an icosahedron at distance 1.
  * @author Sean A. Irvine
  */
 public class A030517 extends LinearRecurrence {

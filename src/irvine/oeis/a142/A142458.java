@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.ModifiedPascalTriangle;
 
 /**
- * A142458 Triangle T(n,k) (1 &lt;= k &lt;= n) read by rows: T(n,k) = 1 if k=1 or k=n, else T(n,k) = (3*n-3*k+1)*T(n-1,k-1) + (3*k-2)*T(n-1,k).
+ * A142458 Triangle T(n,k) read by rows: T(n,k) = 1 if k=1 or k=n, otherwise T(n,k) = (3*n-3*k+1)*T(n-1,k-1) + (3*k-2)*T(n-1,k).
  * @author Georg Fischer
  */
 public class A142458 extends ModifiedPascalTriangle {

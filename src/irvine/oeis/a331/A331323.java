@@ -5,7 +5,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331323 a(n) = [x^n] (1 - 2*x)/(4*x^2 - 8*x + 1)^(3/2).
+ * A331323 a(n) = [x^n] (1 - 2*x)/(1 - 8*x + 4*x^2)^(3/2).
  * Recurrence: a(n)=(10*n*a(n-1)+20*(1-n)*a(n-2)+8*(n-1)*a(n-3))/n
  * @author Georg Fischer
  */

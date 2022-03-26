@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331408 Number of subsets of {1..n} that contain three odd numbers.
+ * A331408 Number of subsets of {1..n} that contain exactly three odd numbers.
  * @author Georg Fischer
  */
 public class A331408 extends HolonomicRecurrence {

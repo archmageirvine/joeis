@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.function.Function;
 
 import irvine.math.IntegerUtils;
+import irvine.math.graph.Edges;
 import irvine.math.group.PolynomialRing;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
@@ -23,31 +24,10 @@ import irvine.oeis.Sequence;
  */
 public class A054951 implements Sequence {
 
-  // After Andrew Howroyd, cf. A350489
-
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 0;
 
-  // todo notes these kind of functions exist multiple places
-  private interface Edges {
-    Z edges(final int[] partition, final Function<Integer, Z> yf);
-  }
-
-  private final Edges mDigraphEdges = (partition, yf) -> {
-    Z prod = Z.ONE;
-    for (int i = 1; i < partition.length; ++i) {
-      for (int j = 0; j < i; ++j) {
-        final int g = IntegerUtils.gcd(partition[i], partition[j]);
-        prod = prod.multiply(yf.apply(partition[i] * partition[j] / g).pow(2L * g));
-      }
-    }
-    for (final int j : partition) {
-      prod = prod.multiply(yf.apply(j).pow(j - 1));
-    }
-    return prod;
-  };
-
-  private List<List<Z>> graphCycleIndexData(final int n, final Edges edgeFunc, final Function<Integer, Z> yf) {
+  protected List<List<Z>> graphCycleIndexData(final int n, final Edges edgeFunc, final Function<Integer, Z> yf) {
     final List<List<Z>> results = new ArrayList<>();
     for (int k = 0; k <= n; ++k) {
       final List<Z> v = new ArrayList<>();
@@ -61,7 +41,7 @@ public class A054951 implements Sequence {
     return results;
   }
 
-  private List<List<Z>> invGgfCiData(final List<List<Z>> blocks, final Function<Integer, Z> yf) {
+  protected List<List<Z>> invGgfCiData(final List<List<Z>> blocks, final Function<Integer, Z> yf) {
     final List<List<Z>> results = new ArrayList<>();
     results.add(Collections.singletonList(Z.ONE));
     for (int n = 1; n < blocks.size(); ++n) {
@@ -109,7 +89,7 @@ public class A054951 implements Sequence {
   }
 
   // Helper to convert a cycle index series stored as a vector of vectors into an o.g.f. counting the unlabeled objects.
-  private Polynomial<Z> unlabeledOgf(final List<List<Z>> data) {
+  protected Polynomial<Z> unlabeledOgf(final List<List<Z>> data) {
     final Polynomial<Z> res = RING.empty();
     Z f = Z.ONE;
     for (int n = 0; n < data.size(); f = f.multiply(++n)) {
@@ -120,6 +100,6 @@ public class A054951 implements Sequence {
 
   @Override
   public Z next() {
-    return unlabeledOgf(invGgfCiData(graphCycleIndexData(++mN, mDigraphEdges, e -> Z.TWO), e -> Z.TWO)).coeff(mN).negate();
+    return unlabeledOgf(invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, e -> Z.TWO), e -> Z.TWO)).coeff(mN).negate();
   }
 }

@@ -836,7 +836,7 @@ A010562 Second correlation moment for D_4 lattice
 A010563 Spin-spin correlation function for 4-d cubic lattice
 A010564 Spin-spin correlation function for 4-d b.c.c. lattice
 A010565 Spin-spin correlation function for D_4 lattice
-A010571 High-temperature coefficients for cubic lattice, have paper
+A010571 High-temperature coefficients for cubic lattice, have paper, depends A001393
 A010572 High-temperature coefficients for 4-d cubic lattice
 A010573 High-temperature coefficients for 5-d cubic lattice
 A010574 High-temperature coefficients for 6-d cubic lattice
@@ -1819,3 +1819,4 @@ A055442 Distribution of first digit of mantissa following Benford's Law, using l
 A055513 Class number h = h- * h+ of cyclotomic field Q( exp(2 Pi / prime(n)) )
 A055532 Number of labeled order relations on n nodes in which longest chain has 3 nodes.
 A055534 Number of labeled order relations on n nodes in which longest chain has n-2 nodes.
+A055545 Number of matroids on n points

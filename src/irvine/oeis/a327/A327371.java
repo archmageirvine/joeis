@@ -3,24 +3,24 @@ package irvine.oeis.a327;
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
+import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
-import irvine.math.q.Q;
-import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A327371.
+ * A327371 Triangle read by rows where T(n,k) is the number of unlabeled simple graphs with n vertices and exactly k endpoints (vertices of degree 1).
  * @author Sean A. Irvine
  */
 public class A327371 implements Sequence {
 
+  private static final Polynomial<Z> C1 = Polynomial.create(0, 0, 1);
   private final MemoryFactorial mF = new MemoryFactorial();
   private int mN = -1;
   private int mM = 0;
-  private Polynomial<Polynomial<Q>> mGf = null;
+  private Polynomial<Polynomial<Z>> mGf = null;
 
   private static int edges(final int[] partition) {
     int cnt = 0;
@@ -35,30 +35,28 @@ public class A327371 implements Sequence {
     return cnt;
   }
 
-  // todo make more incremental
-  // todo perhaps Q is not needed?
-  private Polynomial<Polynomial<Q>> g(final int n) {
-    final PolynomialRingField<Q> innerRing = new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, n);
-    final PolynomialRingField<Polynomial<Q>> ring = new PolynomialRingField<>(innerRing);
-    Polynomial<Polynomial<Q>> g = ring.zero();
+  protected Polynomial<Polynomial<Z>> g(final int n) {
+    final PolynomialRingField<Z> innerRing = new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, n);
+    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(innerRing);
+    Polynomial<Polynomial<Z>> g = ring.zero();
     for (int k = 0; k <= n; ++k) {
-      Polynomial<Polynomial<Q>> gp = ring.zero();
+      Polynomial<Polynomial<Z>> gp = ring.zero();
       final IntegerPartition part = new IntegerPartition(k);
       int[] p;
       while ((p = part.next()) != null) {
-        Polynomial<Polynomial<Q>> num = ring.one();
-        Polynomial<Polynomial<Q>> den = ring.one();
+        Polynomial<Polynomial<Z>> num = ring.one();
+        Polynomial<Polynomial<Z>> den = ring.one();
         for (final int v : p) {
           num = ring.multiply(num, ring.oneMinusXToTheN(v), n - k);
-          den = ring.multiply(den, ring.oneMinusXToTheN(innerRing.monomial(Q.ONE, v), v), n - k);
+          den = ring.multiply(den, ring.oneMinusXToTheN(innerRing.monomial(Z.ONE, v), v), n - k);
         }
-        final Polynomial<Polynomial<Q>> t = ring.multiply(ring.series(num, den, n - k), innerRing.monomial(new Q(IntegerPartition.permCount(p).shiftLeft(edges(p))), 0));
+        final Polynomial<Polynomial<Z>> t = ring.multiply(ring.series(num, den, n - k), innerRing.monomial(IntegerPartition.permCount(p).shiftLeft(edges(p)), 0));
         gp = ring.add(gp, t);
       }
-      g = ring.add(g, ring.multiply(gp, innerRing.monomial(new Q(Z.ONE, mF.factorial(k)), 0)).shift(k));
+      g = ring.add(g, ring.divide(gp, innerRing.monomial(mF.factorial(k), 0)).shift(k));
     }
     g = ring.multiply(g, ring.oneMinusXToTheN(innerRing.x(), 2));
-    g = ring.series(g, ring.oneMinusXToTheN(Polynomial.create(Q.ZERO, Q.ZERO, Q.ONE), 2), n);
+    g = ring.series(g, ring.oneMinusXToTheN(C1, 2), n);
     return g;
   }
 
@@ -68,6 +66,6 @@ public class A327371 implements Sequence {
       mGf = g(++mN);
       mM = 0;
     }
-    return mGf.coeff(mN).coeff(mM).toZ();
+    return mGf.coeff(mN).coeff(mM);
   }
 }

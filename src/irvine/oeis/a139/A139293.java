@@ -5,13 +5,13 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060205;
 
 /**
- * A139049 a(n) = prime(n) + 6.
+ * A139293 (2^(2p - 1)/8)-1, where p is prime.
  * @author Georg Fischer
  */
-public class A139049 extends A060205 {
+public class A139293 extends A060205 {
 
   /** Construct the sequence. */
-  public A139049() {
-    super(p -> Z.valueOf(p).add(+6));
+  public A139293() {
+    super(p -> Z.ONE.shiftLeft(2 * p - 1).divide(8).add(-1));
   }
 }

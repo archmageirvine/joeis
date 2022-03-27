@@ -5,13 +5,13 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060205;
 
 /**
- * A242084 5^p - 4^p - 1, where p is prime.
+ * A242083 3^p - 2^p - 1, where p is prime.
  * @author Georg Fischer
  */
-public class A242084 extends A060205 {
+public class A242083 extends A060205 {
 
   /** Construct the sequence. */
-  public A242084() {
-    super(p -> Z.FIVE.pow(p).subtract(Z.ONE.shiftLeft(2 * p)).add(-1));
+  public A242083() {
+    super(p -> Z.THREE.pow(p).subtract(Z.ONE.shiftLeft(p)).add(-1));
   }
 }

@@ -910,7 +910,6 @@ A011996 (n,3,6) difference families over Z_n
 A011997 Number of (n,3,7) difference families over Z_n
 A011998 (n,3,8) difference families over Z_n
 A011999 (2n+1,3,9) difference families over Z_{2n+1}
-A013560 Number of permutations in S_n with a certain property, have paper
 A013561 Triangle of coefficients of polynomials arising as numerators of certain Hilbert series, paper not available
 A013568 Probably erroneous, my attempt is now A317209
 A013575 Minimal scope of an (n,3) difference triangle
@@ -1820,3 +1819,5 @@ A055513 Class number h = h- * h+ of cyclotomic field Q( exp(2 Pi / prime(n)) )
 A055532 Number of labeled order relations on n nodes in which longest chain has 3 nodes.
 A055534 Number of labeled order relations on n nodes in which longest chain has n-2 nodes.
 A055545 Number of matroids on n points
+A055564 Bisection of A055878
+A055614 Number of isomorphism classes of complex filiform Lie algebras of dimension n

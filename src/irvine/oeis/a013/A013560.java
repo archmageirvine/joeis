@@ -28,7 +28,7 @@ public class A013560 implements Sequence {
     return deck;
   }
 
-  private boolean bump(final int[] p, int n) {
+  protected boolean bump(final int[] p, int n) {
     for (int k = 0; k < p.length; ++k) {
       if (++p[k] < n) {
         return true;

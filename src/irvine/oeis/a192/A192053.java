@@ -13,7 +13,9 @@ public class A192053 extends A013560 {
 
   // With this property normal action is suspended and the permutations are written
   // (in packed form) to stdout. Then externally that can be sorted and counted to
-  // find the maximum.  For exampple,
+  // find the maximum.  This is useful for larger n when it is not possible to store
+  // all the results in main memory.
+  // For example,
   // java irvine.oeis.a192.A192053 6 | sort | uniq -c | sort -n | tail
   private boolean mSpecial = false;
   private int mN = 0;
@@ -22,7 +24,7 @@ public class A192053 extends A013560 {
   public Z next() {
     final LongDynamicLongArray counts = new LongDynamicLongArray();
     final int[] deck = new int[++mN];
-    int[] p = new int[mN];
+    final int[] p = new int[mN];
     do {
       // Apply Phi shuffle
       IntegerUtils.identity(deck);

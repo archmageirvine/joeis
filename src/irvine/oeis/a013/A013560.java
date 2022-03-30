@@ -28,7 +28,7 @@ public class A013560 implements Sequence {
     return deck;
   }
 
-  protected boolean bump(final int[] p, int n) {
+  protected boolean bump(final int[] p, final int n) {
     for (int k = 0; k < p.length; ++k) {
       if (++p[k] < n) {
         return true;
@@ -42,7 +42,7 @@ public class A013560 implements Sequence {
   public Z next() {
     final int[] expected = rho(++mN);
     final int[] deck = new int[mN];
-    int[] p = new int[mN];
+    final int[] p = new int[mN];
     long cnt = 0;
     do {
       // Apply Phi shuffle

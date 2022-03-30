@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000040;
 public class A129024 extends A000040 {
 
   protected int mN = 0;
-  private final static int[] INITS = {0, 3, 15, 24, 48, 72, 120, 168, 264};
+  private static final int[] INITS = {0, 3, 15, 24, 48, 72, 120, 168, 264};
 
   @Override
   public Z next() {

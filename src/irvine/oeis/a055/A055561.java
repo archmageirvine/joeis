@@ -50,7 +50,7 @@ public class A055561 implements Sequence {
 
   @Override
   public Z next() {
-    while(!is(++mN)) {
+    while (!is(++mN)) {
       // do nothing
     }
     return Z.valueOf(mN);

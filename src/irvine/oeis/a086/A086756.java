@@ -15,7 +15,6 @@ public class A086756 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
     return Z.valueOf(mN).pow(mN).mod(Z.TEN.pow(mN));
   }
 }

@@ -17,7 +17,6 @@ public class A321222 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
     return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(d).pow(mN).multiply(Mobius.mobius(d)));
   }
 }

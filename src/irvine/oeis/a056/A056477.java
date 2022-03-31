@@ -31,6 +31,6 @@ public class A056477 implements Sequence {
     if (mN == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sumdiv(mN, d -> mSeq.a(new Q(mN, 2 * d).ceiling().intValue()).multiply(Mobius.mobius(d)));
+    return Integers.SINGLETON.sumdiv(mN, d -> mSeq.a(new Q(mN, 2L * d).ceiling().intValue()).multiply(Mobius.mobius(d)));
   }
 }

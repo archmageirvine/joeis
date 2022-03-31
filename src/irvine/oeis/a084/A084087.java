@@ -6,7 +6,6 @@ import irvine.oeis.Sequence;
 
 /**
  * A084087 Numbers k not divisible by 3 such that the exponent of the highest power of 2 dividing k is even.
- * if (valuation(n, 2) % 2 == 0 &amp;&amp; n%3
  * @author Georg Fischer
  */
 public class A084087 implements Sequence {

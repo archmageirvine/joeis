@@ -12,6 +12,6 @@ public class A098935 extends A060205 {
 
   /** Construct the sequence. */
   public A098935() {
-    super(p -> Z.valueOf(p * p - 1).multiply(p * p).add(-1).multiply(p).add(-1).multiply(p * p));
+    super(p -> Z.valueOf(p * (long) p - 1).multiply(p * (long) p).add(-1).multiply(p).add(-1).multiply(p * (long) p));
   }
 }

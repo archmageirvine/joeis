@@ -15,8 +15,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
 public class A320087 implements Sequence {
 
   private int mN;
-  private int mRow;
-  private UpperLeftTriangle mULT;
+  private final UpperLeftTriangle mUlt;
 
   /** Construct the sequence. */
   public A320087() {
@@ -29,13 +28,12 @@ public class A320087 implements Sequence {
    */
   public A320087(final int row) {
     mN = 0;
-    mRow = row;
-    mULT = new A143325();
+    mUlt = new A143325();
   }
 
   @Override
   public Z next() {
     ++mN;
-    return Integers.SINGLETON.sum(1, mN, j -> mULT.matrixElement(j, 3));
+    return Integers.SINGLETON.sum(1, mN, j -> mUlt.matrixElement(j, 3));
   }
 }

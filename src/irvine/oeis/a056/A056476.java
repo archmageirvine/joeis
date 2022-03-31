@@ -20,7 +20,6 @@ public class A056476 implements Sequence {
     if (mN == 0) {
       return Z.ONE;
     }
-    final Z n = Z.valueOf(mN);
     return Integers.SINGLETON.sumdiv(mN, d -> Z.ONE.shiftLeft((mN / d - 1) / 2).multiply(Mobius.mobius(d)));
   }
 

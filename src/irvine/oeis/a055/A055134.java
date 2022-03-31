@@ -6,7 +6,7 @@ import irvine.oeis.triangle.Triangle;
 
 /**
  * A055134 Triangle read by rows: T(n,k) = number of labeled endofunctions on n points with k fixed points.
- * <code>T(n, k) = C(n, k)*(n-1)^(n-k)</code>, for n>1.
+ * <code>T(n, k) = C(n, k)*(n-1)^(n-k)</code>, for n&gt;1.
  * @author Georg Fischer
  */
 public class A055134 extends Triangle {

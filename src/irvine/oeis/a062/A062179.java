@@ -10,22 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A062179 implements Sequence {
 
-  private long mN;
-  private final int mParm;
-
-  /** Construct the sequence. */
-  public A062179() {
-    this(0);
-  }
-
-  /**
-   * Generic constructor with parameters
-   * @param parm parameter
-   */
-  public A062179(final int parm) {
-    mN = 0;
-    mParm = parm;
-  }
+  private long mN = 0;
 
   /**
    * Compute the harmonic mean of the digits of n

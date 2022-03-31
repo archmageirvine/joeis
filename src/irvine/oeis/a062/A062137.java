@@ -7,12 +7,12 @@ import irvine.oeis.triangle.Triangle;
 
 /**
  * A062137 Coefficient triangle of generalized Laguerre polynomials n!*L(n,3,x) (rising powers of x).
- * a(n, m) = ((-1)^m)*n!*binomial(n+3, n-m)/m!.
+ * <code>a(n, m) = ((-1)^m)*n!*binomial(n+3, n-m)/m!</code>.
  * @author Georg Fischer
  */
 public class A062137 extends Triangle {
 
-  private int mParm;
+  private final int mParm;
   private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
 
   /** Construct the sequence. */
@@ -22,7 +22,7 @@ public class A062137 extends Triangle {
 
   /**
    * Generic constructor with parameter.
-   * @param parm parameter in L(n, parm, x)
+   * @param parm parameter in <code>L(n, parm, x)</code>
    */
   public A062137(final int parm) {
     mParm = parm;

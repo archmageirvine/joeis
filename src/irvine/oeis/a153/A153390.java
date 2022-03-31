@@ -20,6 +20,6 @@ public class A153390 implements Sequence {
     if (mN == 0) {
       return Z.ONE;
     }
-    return Integers.SINGLETON.sum(0, mN, k -> Binomial.binomial(3 * k + 2, k).multiply(Binomial.binomial(2 * mN - k, mN - k)).multiply(2 * k).divide(3 * k + 2).divide(2 * mN - k));
+    return Integers.SINGLETON.sum(0, mN, k -> Binomial.binomial(3L * k + 2, k).multiply(Binomial.binomial(2L * mN - k, mN - k)).multiply(2L * k).divide(3L * k + 2).divide(2L * mN - k));
   }
 }

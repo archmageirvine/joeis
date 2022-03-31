@@ -17,7 +17,6 @@ public class A056275 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
     return Integers.SINGLETON.sumdiv(mN, d -> Z.ONE.shiftLeft(mN / d - 1).add(1).multiply(Z.ONE.shiftLeft(mN / d - 1).add(2)).divide(6).multiply(Mobius.mobius(d)));
   }
 }

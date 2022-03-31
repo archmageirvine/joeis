@@ -13,7 +13,7 @@ public class A032008 extends A032005 {
   protected Polynomial<Polynomial<Q>> product(final int n) {
     Polynomial<Polynomial<Q>> prod = RING.one();
     for (int k = 1; k <= n; ++k) {
-      final Polynomial<Q> t1 = Y_RING.monomial(new Q(2 * k - 1), 1);
+      final Polynomial<Q> t1 = Y_RING.monomial(new Q(2L * k - 1), 1);
       final Polynomial<Polynomial<Q>> u = RING.onePlusXToTheN(t1, k);
       prod = RING.multiply(prod, u, n);
     }

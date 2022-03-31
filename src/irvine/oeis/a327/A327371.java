@@ -56,8 +56,7 @@ public class A327371 implements Sequence {
       g = ring.add(g, ring.divide(gp, innerRing.monomial(mF.factorial(k), 0)).shift(k));
     }
     g = ring.multiply(g, ring.oneMinusXToTheN(innerRing.x(), 2));
-    g = ring.series(g, ring.oneMinusXToTheN(C1, 2), n);
-    return g;
+    return ring.series(g, ring.oneMinusXToTheN(C1, 2), n);
   }
 
   @Override

@@ -20,7 +20,6 @@ public class A133755 implements Sequence {
     if (mN == 3) {
       return Z.ZERO;
     }
-    final Z n = Z.valueOf(mN);
-    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(Mobius.mobius(mN / d) * d / 3));
+    return Integers.SINGLETON.sumdiv(mN, d -> Z.valueOf(Mobius.mobius(mN / d) * (long) d / 3));
   }
 }

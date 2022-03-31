@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000045;
  */
 public class A105501 extends PositionSequence {
 
-  private char mDigit;
+  private final char mDigit;
 
   /** Construct the sequence. */
   public A105501() {
@@ -18,7 +18,7 @@ public class A105501 extends PositionSequence {
   }
 
   /**
-   * Generice constructor with parameter
+   * Generic constructor with parameter.
    * @param digit the leading digit
    */
   public A105501(final int digit) {

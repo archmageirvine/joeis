@@ -12,8 +12,8 @@ import irvine.oeis.Sequence;
 public class A137952 implements Sequence {
 
   private int mN;
-  private int mParm1;
-  private int mParm2;
+  private final long mParm1;
+  private final long mParm2;
 
   /** Construct the sequence. */
   public A137952() {

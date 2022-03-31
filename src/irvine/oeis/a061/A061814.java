@@ -1,5 +1,7 @@
 package irvine.oeis.a061;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -11,8 +13,8 @@ import irvine.oeis.Sequence;
 public class A061814 implements Sequence {
 
   private long mN;
-  private long mMult;
-  private boolean[] mWrongDigits;
+  private final long mMult;
+  private final boolean[] mWrongDigits;
 
   /** Construct the sequence. */
   public A061814() {
@@ -21,7 +23,7 @@ public class A061814 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param offset idnex of first term
+   * @param offset index of first term
    * @param mult checks multiples of this number
    * @param digits digits that may be present
    */
@@ -29,11 +31,9 @@ public class A061814 implements Sequence {
     mN = offset - 1;
     mMult = mult;
     mWrongDigits = new boolean[10];
-    for (int i = 0; i < 10; ++i) {
-      mWrongDigits[i] = true;
-    }
-    for (int i = 0; i < digits.length; ++i) {
-      mWrongDigits[digits[i]] = false;
+    Arrays.fill(mWrongDigits, true);
+    for (final int digit : digits) {
+      mWrongDigits[digit] = false;
     }
   }
 

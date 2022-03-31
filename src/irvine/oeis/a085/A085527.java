@@ -15,7 +15,6 @@ public class A085527 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
-    return Z.valueOf(2 * mN + 1).pow(mN);
+    return Z.valueOf(2L * mN + 1).pow(mN);
   }
 }

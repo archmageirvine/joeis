@@ -16,7 +16,6 @@ public class A160939 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
     return Z.valueOf(mN + ZUtils.digitSum(mN - 1));
   }
 }

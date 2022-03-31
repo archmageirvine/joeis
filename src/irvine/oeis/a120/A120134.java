@@ -11,9 +11,8 @@ import irvine.oeis.MemorySequence;
 public class A120134 extends MemorySequence {
 
   private int mN;
-  private int mStart;
-  private int mAdd;
-  private int mDiv;
+  private final int mAdd;
+  private final int mDiv;
 
   /** Construct the sequence. */
   public A120134() {
@@ -28,7 +27,6 @@ public class A120134 extends MemorySequence {
    */
   public A120134(final int start, final int add, final int div) {
     mN = 0;
-    mStart = start;
     mAdd = add;
     mDiv = div;
     add(Z.ZERO); // a(0) does not exist

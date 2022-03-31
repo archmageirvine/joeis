@@ -37,7 +37,7 @@ public class A068849 implements Sequence {
       pow10 = pow10.multiply(10);
       final Z limit = mA.multiply(pow10).add(pow10);
       Z cand = mA.multiply(pow10).add(1);
-//**  System.out.println("pow10=" + pow10 + ", limit=" + limit + ", cand=" + cand + ", mA=" + mA);
+//  System.out.println("pow10=" + pow10 + ", limit=" + limit + ", cand=" + cand + ", mA=" + mA);
       while (cand.compareTo(limit) < 0) {
         if (cand.isProbablePrime()) {
           mA = cand;

@@ -10,8 +10,8 @@ import irvine.oeis.Sequence;
 public class A061751 implements Sequence {
 
   private int mN;
-  private int mAdd;
-  private int mExpon;
+  private final int mAdd;
+  private final int mExpon;
   private Z mFact;
 
   /** Construct the sequence. */
@@ -21,7 +21,7 @@ public class A061751 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param offset idnex of first term
+   * @param offset index of first term
    * @param add additive constant
    * @param expon exponent
    */

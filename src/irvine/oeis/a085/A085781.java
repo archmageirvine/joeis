@@ -16,7 +16,6 @@ public class A085781 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
-    return Binomial.binomial(2 * mN + 1, mN + 1).multiply2().subtract(Z.ONE.shiftLeft(mN));
+    return Binomial.binomial(2L * mN + 1, mN + 1).multiply2().subtract(Z.ONE.shiftLeft(mN));
   }
 }

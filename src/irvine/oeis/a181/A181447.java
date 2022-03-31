@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A181447 Numbers n such that 3 is the largest prime factor of n^2 - 1.
- * is(n)=n=n^2-1; forprime(p=2, 13, n/=p^valuation(n, p)); n&gt;1 && 17^valuation(n, 17)==n
+ * <code>is(n)=n=n^2-1; forprime(p=2, 13, n/=p^valuation(n, p)); n&gt;1 && 17^valuation(n, 17)==n</code>.
  * @author Georg Fischer
  */
 public class A181447 implements Sequence {

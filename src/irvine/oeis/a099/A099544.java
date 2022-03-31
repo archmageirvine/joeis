@@ -6,13 +6,12 @@ import irvine.oeis.Sequence;
 
 /**
  * A099544 Odd part of n modulo 3.
- * (n>>valuation(n, 2)) % 3.
  * @author Georg Fischer
  */
 public class A099544 implements Sequence {
 
   private int mN;
-  private int mRes;
+  private final int mRes;
 
   /** Construct the sequence. */
   public A099544() {

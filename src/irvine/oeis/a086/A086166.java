@@ -15,7 +15,6 @@ public class A086166 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
-    return Z.ONE.shiftLeft(mN).subtract(1).pow((1 << mN) - 1);
+    return Z.ONE.shiftLeft(mN).subtract(1).pow((1L << mN) - 1);
   }
 }

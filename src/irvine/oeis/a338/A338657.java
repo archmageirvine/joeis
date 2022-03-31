@@ -18,7 +18,6 @@ public class A338657 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z n = Z.valueOf(mN);
     return Integers.SINGLETON.sumdiv(mN, d -> Binomial.binomial(d + mN / d - 1, d).multiply(Mobius.mobius(d)));
   }
 }

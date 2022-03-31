@@ -29,13 +29,16 @@ public class A055611 implements Sequence {
       mLimits.add(mLim);
     }
     Z res = Z.ZERO;
+    long mul = 10;
     for (int k = mK; k > 0; --k) {
       long digit = 0;
       while (m - k * digit >= mLimits.get(k - 1)) {
-        ++digit;
+        if (++digit >= mul) {
+          mul *= 10;
+        }
       }
       m -= digit * k;
-      res = res.multiply(10).add(digit);
+      res = res.multiply(mul).add(digit);
     }
     return res;
   }

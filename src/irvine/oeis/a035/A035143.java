@@ -14,17 +14,15 @@ import irvine.oeis.Sequence;
 public class A035143 implements Sequence {
 
   protected final int mM;
-  protected int mN;
+  protected int mN = 0;
 
   /** Construct the sequence. */
   public A035143() {
-    mN = 0;
     mM = -47;
   }
 
   /** Constructor with m */
   public A035143(final int m) {
-    mN = 0;
     mM = m;
   }
 

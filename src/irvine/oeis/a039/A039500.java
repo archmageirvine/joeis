@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a037.A037084;
 
 /**
- * A039500 Iterations of "n-&gt;n/2 if n even, n-&gt;3n-1 if n odd" (A001281) starting at these numbers reach 1.
+ * A039500 Iterations of "k-&gt;k/2 if k is even, k-&gt;3k-1 if k is odd" (A001281) starting at these numbers reach 1.
  * @author Sean A. Irvine
  */
 public class A039500 extends ComplementSequence {

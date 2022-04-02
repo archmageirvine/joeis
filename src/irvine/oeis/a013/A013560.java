@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013560 Number of permutations in S_n with a certain property.
+ * A013560 Cardinality of the permutation (k, k-1, ..., 2, 1)(n, n-1, ..., k+1) in an exchange shuffle applied in all n^n possible ways to (1,2,...,n).
  * @author Sean A. Irvine
  */
 public class A013560 implements Sequence {

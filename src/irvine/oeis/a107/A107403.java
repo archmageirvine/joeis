@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A107403 E.g.f. = 1/(1-3*sinh(x)).
+ * A107403 Expansion of e.g.f. 1/(1-3*sinh(x)).
  * E.g.f.: 1/(1-3*sinh(x))
  * @author Georg Fischer
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257601 a(n) = n^4/12+5*n^3/3+125*n^2/12+125*n/6+2.
+ * A257601 a(n) = (n^4 + 20*n^3 + 125*n^2 + 250*n + 24)/12.
  * @author Sean A. Irvine
  */
 public class A257601 extends LinearRecurrence {

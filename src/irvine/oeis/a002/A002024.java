@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002024 n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+ * A002024 k appears k times; a(n) = floor(sqrt(2n) + 1/2).
  * @author Sean A. Irvine
  */
 public class A002024 implements Sequence, Serializable {

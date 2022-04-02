@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055651 Table read by rows: T(m,k)=m^k-k^m (with 0^0 assumed to be finite).
+ * A055651 Table T(m,k)=m^k-k^m (with 0^0 taken to be 1) as square array read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A055651 implements Sequence {

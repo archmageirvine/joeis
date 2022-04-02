@@ -4,17 +4,11 @@ package irvine.oeis.a035;
 
 import irvine.math.z.Z;
 
-
 /**
  * A035242 Indices of the nonzero terms in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m= -21.
  * @author Georg Fischer
  */
 public class A035242 extends A035169 {
-
-  /** Construct the sequence. */
-  public A035242() {
-    mN = 0;
-  }
 
   @Override
   public Z next() {

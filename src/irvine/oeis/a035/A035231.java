@@ -11,11 +11,6 @@ import irvine.math.z.Z;
  */
 public class A035231 extends A035144 {
 
-  /** Construct the sequence. */
-  public A035231() {
-    mN = 0;
-  }
-
   @Override
   public Z next() {
     Z term = super.next();

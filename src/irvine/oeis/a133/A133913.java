@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007001;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A133913 Triangle, antidiagonals of an array generated from partial sums of A007001.
+ * A133913 Array read by ascending antidiagonals generated from partial sums of A007001.
  * @author Georg Fischer
  */
 public class A133913 extends WrappedRecurrence {

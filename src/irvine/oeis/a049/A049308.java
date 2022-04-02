@@ -6,7 +6,7 @@ package irvine.oeis.a049;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A049308 Sextuple factorial numbers: product_{k=0..n-1} (6*k+4).
+ * A049308 Sextuple factorial numbers: Product_{k=0..n-1} (6*k+4).
  * @author Georg Fischer
  */
 public class A049308 extends HolonomicRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.a030.A030101;
 
 
 /**
- * A072800 Composition of A030101 and A014486. Binary encodings of parenthesizations &amp; other Catalan structures reversed.
+ * A072800 Composition of A030101 and A014486. Binary encodings of parenthesizations, Dyck paths and other Catalan structures reversed.
  * Formula: <code>a(n) = A030101(A014486(n)).</code>
  * @author Georg Fischer
  */

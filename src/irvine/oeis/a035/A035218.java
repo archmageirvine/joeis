@@ -11,6 +11,5 @@ public class A035218 extends A035143 {
   /** Construct the sequence. */
   public A035218() {
     super(36);
-    mN = 0;
   }
 }

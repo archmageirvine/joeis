@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046937 Same rule as Aitken triangle (A011971) except a(0,0)=1, a(1,0)=2.
+ * A046937 Triangle read by rows. Same rule as Aitken triangle (A011971) except T(0,0) = 1, T(1,0) = 2.
  * @author Sean A. Irvine
  */
 public class A046937 extends MemoryFunction2<Long, Z> implements Sequence {

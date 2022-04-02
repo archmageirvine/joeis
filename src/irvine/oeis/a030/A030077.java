@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
  */
 public class A030077 implements Sequence {
 
-  private static final int PRECISION = 50;
+  private static final int PRECISION = 500;
   private final HashSet<List<Integer>> mA = new HashSet<>();
   private int mN = 0;
 

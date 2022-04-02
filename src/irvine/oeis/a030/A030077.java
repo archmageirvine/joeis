@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007874 Distinct perimeter lengths of polygons with regularly spaced vertices.
+ * A030077 Take n equally spaced points on circle, connect them by a path with n-1 line segments; sequence gives number of distinct path lengths under action of dihedral group.
  * @author Sean A. Irvine
  */
 public class A030077 implements Sequence {

@@ -1156,7 +1156,6 @@ A030048 High temperature series for spin-1/2 Ising free energy on 5D simple cubi
 A030049 High temperature series for spin-1/2 Ising free energy on 6D simple cubic lattice
 A030070 Numerator of Second Mills Number M_2(n)
 A030071 Denominator of Second Mills Number M_2(n)
-A030077 Take n equally spaced points on circle, connect them by a path with n-1 line segments; sequence gives number of distinct path lengths under action of dihedral group, sim A007874, but not as simple as 1 less edge
 A030120 Spontaneous magnetization coefficients for square lattice spin 3/2 Ising model
 A030121 Spontaneous magnetization coefficients for square lattice spin 5/2 Ising model
 A030122 Specific heat coefficients for square lattice spin 3 Ising model

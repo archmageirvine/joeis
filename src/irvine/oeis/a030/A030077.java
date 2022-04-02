@@ -1,4 +1,4 @@
-package irvine.oeis.a007;
+package irvine.oeis.a030;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  * A007874 Distinct perimeter lengths of polygons with regularly spaced vertices.
  * @author Sean A. Irvine
  */
-public class A007874 implements Sequence {
+public class A030077 implements Sequence {
 
   private static final int PRECISION = 50;
   private final HashSet<List<Integer>> mA = new HashSet<>();
@@ -22,16 +22,12 @@ public class A007874 implements Sequence {
 
   private void search(final int[] counts, final boolean[] used, final int pos, final int step) {
     if (step == mN) {
-      // We are done, add last step back to 0
-      final int delta = pos < counts.length ? pos : mN - pos;
-      ++counts[delta];
       // Keep this result
       final ArrayList<Integer> res = new ArrayList<>(counts.length);
       for (final int v : counts) {
         res.add(v);
       }
       mA.add(res);
-      --counts[delta];
       return;
     }
     final int limit = step == 1 ? mN / 2 : mN - 1;

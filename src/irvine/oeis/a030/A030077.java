@@ -9,6 +9,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A030077 Take n equally spaced points on circle, connect them by a path with n-1 line segments; sequence gives number of distinct path lengths under action of dihedral group.
@@ -16,7 +17,8 @@ import irvine.oeis.Sequence;
  */
 public class A030077 implements Sequence {
 
-  private static final int PRECISION = 500;
+  private static final int PRECISION = 1000;
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final HashSet<List<Integer>> mA = new HashSet<>();
   private int mN = 0;
 
@@ -51,6 +53,10 @@ public class A030077 implements Sequence {
     final boolean[] used = new boolean[mN];
     used[0] = true;
     search(new int[mN / 2 + 1], used, 0, 1);
+
+    if (mVerbose) {
+      StringUtils.message("Number of multisets for " + mN + ": " + mA.size());
+    }
 
     // Some different polygons in mA are actually the same length
     // I would like a smarter method of determining when they are the same, but this seems to work for now

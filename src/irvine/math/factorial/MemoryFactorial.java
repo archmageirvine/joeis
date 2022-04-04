@@ -9,16 +9,29 @@ import irvine.math.z.Z;
 
 /**
  * Compute factorials and remember their values.
- *
  * @author Sean A. Irvine
  */
 public class MemoryFactorial extends MemoryFunction2<Integer, Z> implements Factorial, Serializable {
 
+  /** Singleton instance. */
+  public static final MemoryFactorial SINGLETON = new MemoryFactorial();
   private static final RingFactorial<Z> MF = RingFactorial.instance(Integers.SINGLETON);
 
   @Override
   public Z factorial(final int n) {
     return MF.factorial(n);
+  }
+
+  /**
+   * Compute the factorial function. Given <code>n</code> return
+   * <code>n</code>!.
+   * @param n a non-negative integer
+   * @return <code>n</code>!
+   * @exception IllegalArgumentException if <code>n</code> &lt; 0.
+   * @exception ArithmeticException if <code>n<</code> is too large for this implementation.
+   */
+  public Z factorial(final Z n) {
+    return MF.factorial(n.intValueExact());
   }
 
   @Override

@@ -21,8 +21,6 @@ public final class RedfieldExponentiation {
 
   private RedfieldExponentiation() { }
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-
   private static CycleIndex d(final int r, final int k, final int i) {
     if (r % i == 0 && IntegerUtils.gcd(r / i, k) == 1) {
       return new CycleIndex("d_" + i, MultivariateMonomial.create(k * i, Z.ONE, new Q(1, k)));
@@ -39,7 +37,7 @@ public final class RedfieldExponentiation {
       d.add(d(r, k, i));
     }
     final CycleIndex jr = SymmetricGroup.create(j).cycleIndex().apply(StandardMultiply.OP, d);
-    jr.multiply(new Q(FACTORIAL.factorial(j).multiply(Z.valueOf(k).pow(j))));
+    jr.multiply(new Q(MemoryFactorial.SINGLETON.factorial(j).multiply(Z.valueOf(k).pow(j))));
     return jr;
   }
 

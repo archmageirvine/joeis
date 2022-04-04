@@ -481,7 +481,7 @@ public class SymmetricGroupTest extends TestCase {
   }
 
   public void testDurbin7p18() {
-    final MemoryFactorial fact = new MemoryFactorial();
+    final MemoryFactorial fact = MemoryFactorial.SINGLETON;
     for (int k = 1; k < 8; ++k) {
       final SymmetricGroup<Integer> h = SymmetricGroup.create(k);
       for (int j = 0; j <= k; ++j) {

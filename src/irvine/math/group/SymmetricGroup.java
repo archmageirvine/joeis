@@ -33,8 +33,6 @@ import irvine.util.AbstractIterator;
  */
 public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-
   /**
    * Construct the symmetric group of order <code>n</code> on the integers
    * 1 to n inclusive.
@@ -60,7 +58,7 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
     mSet = set;
     mName = name;
     mZero = new Permutation<>(set, new HashMap<>());
-    mSize = FACTORIAL.factorial(mSet.size());
+    mSize = MemoryFactorial.SINGLETON.factorial(mSet.size());
   }
 
   /**
@@ -182,7 +180,7 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
   public static Z per(final int[] a) {
     Z c = Z.ONE;
     for (int i = 1; i < a.length; ++i) {
-      c = c.multiply(FACTORIAL.factorial(a[i])).multiply(Z.valueOf(i).pow(a[i]));
+      c = c.multiply(MemoryFactorial.SINGLETON.factorial(a[i])).multiply(Z.valueOf(i).pow(a[i]));
     }
     return c;
   }

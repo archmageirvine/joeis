@@ -20,7 +20,7 @@ public final class Zeta {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private static final BernoulliSequence BERNOULLI = new BernoulliSequence(0);
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private static final CR EXP_PI = REALS.exp(CR.PI);
   private static final HashMap<Integer, CR> ZETA_CACHE = new HashMap<>();
 

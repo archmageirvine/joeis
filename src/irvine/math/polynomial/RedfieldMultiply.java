@@ -15,8 +15,6 @@ public final class RedfieldMultiply implements MultivariateMonomialOperation {
   /** Redfield multiplication operation. */
   public static final RedfieldMultiply OP = new RedfieldMultiply();
 
-  private MemoryFactorial mF = new MemoryFactorial();
-
   private RedfieldMultiply() { }
 
   @Override
@@ -36,7 +34,7 @@ public final class RedfieldMultiply implements MultivariateMonomialOperation {
         //final Z ik = a.getValue(); // same as jk
         final int jk = j.intValueExact();
         res.add(k, jk);
-        res.multiply(mF.factorial(jk).multiply(Z.valueOf(k).pow(jk)));
+        res.multiply(MemoryFactorial.SINGLETON.factorial(jk).multiply(Z.valueOf(k).pow(jk)));
       }
     }
     res.multiply(alpha.getCoefficient().multiply(beta.getCoefficient()));

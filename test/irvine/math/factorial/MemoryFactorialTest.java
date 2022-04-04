@@ -8,7 +8,7 @@ public class MemoryFactorialTest extends AbstractFactorialTest {
 
   @Override
   public Factorial getInstance() {
-    return new MemoryFactorial();
+    return MemoryFactorial.SINGLETON;
   }
 
 }

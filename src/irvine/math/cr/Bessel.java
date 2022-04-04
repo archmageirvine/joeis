@@ -13,7 +13,6 @@ public final class Bessel  {
   private Bessel() { }
 
   private static final int EXTRA_PRECISION = 3;
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
 
   static CR besselI0(final CR z) {
     // Expansion: Sum_{k>=0} (((z/2)^2)^k / (k!)^2.
@@ -48,7 +47,7 @@ public final class Bessel  {
       protected Z approximate(final int precision) {
         final int p = precision - EXTRA_PRECISION;
         final Z z2approx = z.multiply(z).divide(CR.FOUR).getApprox(p);
-        Z term = CR.ONE.getApprox(p).divide(FACTORIAL.factorial(v)); // k = 0
+        Z term = CR.ONE.getApprox(p).divide(MemoryFactorial.SINGLETON.factorial(v)); // k = 0
         Z sum = term;
         long k = 0;
         while (true) {
@@ -115,7 +114,7 @@ public final class Bessel  {
     CR sum1 = CR.ZERO;
     CR zp = CR.ONE;
     for (int k = 0; k < v; ++k, zp = zp.multiply(z2fn)) {
-      sum1 = sum1.add(zp.multiply(FACTORIAL.factorial(v - k - 1)).divide(CR.valueOf(FACTORIAL.factorial(k))));
+      sum1 = sum1.add(zp.multiply(MemoryFactorial.SINGLETON.factorial(v - k - 1)).divide(CR.valueOf(MemoryFactorial.SINGLETON.factorial(k))));
     }
     sum1 = sum1.multiply(CR.HALF).multiply(CR.TWO.divide(z).pow(v));
 
@@ -124,8 +123,8 @@ public final class Bessel  {
       protected Z approximate(final int precision) {
         final int p = precision - EXTRA_PRECISION;
         final Z z2approx = z2f.getApprox(p);
-        Z sum = Psi.psi(1).add(Psi.psi(v + 1)).getApprox(p).divide(FACTORIAL.factorial(v)); // k = 0
-        Z term = scale(Z.ONE, -p).divide(FACTORIAL.factorial(v));
+        Z sum = Psi.psi(1).add(Psi.psi(v + 1)).getApprox(p).divide(MemoryFactorial.SINGLETON.factorial(v)); // k = 0
+        Z term = scale(Z.ONE, -p).divide(MemoryFactorial.SINGLETON.factorial(v));
         int k = 0;
         while (!term.isZero()) {
           term = scale(term.multiply(z2approx), p).divide(++k).divide(v + k);

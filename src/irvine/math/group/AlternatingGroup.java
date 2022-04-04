@@ -25,8 +25,6 @@ import irvine.util.AbstractIterator;
  */
 public class AlternatingGroup<T> extends AbstractGroup<Permutation<T>> {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-
   /**
    * Construct the alternating group of order <code>n</code> on the integers
    * 1 to n inclusive.
@@ -52,7 +50,7 @@ public class AlternatingGroup<T> extends AbstractGroup<Permutation<T>> {
     mSet = set;
     mName = name;
     mZero = new Permutation<>(set, new HashMap<>());
-    mSize = FACTORIAL.factorial(mSet.size()).divide2();
+    mSize = MemoryFactorial.SINGLETON.factorial(mSet.size()).divide2();
   }
 
   /**

@@ -124,7 +124,7 @@ public final class GeneralLinearCycleIndex {
     return new CycleIndex(name, MultivariateMonomial.create(1, 1));
   }
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   private static Z multinomialExt(final int a, final int[] b) {
     Z den = Z.ONE;

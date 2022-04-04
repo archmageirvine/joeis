@@ -66,12 +66,10 @@ public final class GroupGraphs {
     out.println('}');
   }
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-
   private static List<Permutation<Integer>> makeGeneratorsForSymmetricGroup(final int n) {
     assert n >= 3;
     final ArrayList<Permutation<Integer>> gens = new ArrayList<>();
-    final int m = FACTORIAL.factorial(n).intValueExact();
+    final int m = MemoryFactorial.SINGLETON.factorial(n).intValueExact();
     for (int k = 1; k < n; ++k) {
       final int[] p = new int[m];
       for (int j = 0; j < m; ++j) {

@@ -1,11 +1,11 @@
 package irvine.math.polynomial;
 
 import irvine.factor.factor.Cheetah;
+import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.math.Mobius;
 
 /**
  * Cycle index for <code>S_n^{(m)}</code>.
@@ -17,8 +17,6 @@ public final class ExtendedSymmetricGroupCycleIndex {
 
   // Needed for some OEIS sequences defined in "On the Cycle Index of a Product of Permutation Groups",
   // by Harrison and High
-
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
 
   private static int g(final int m, final int i, final int s) {
     if (i % s == 0) {
@@ -77,7 +75,7 @@ public final class ExtendedSymmetricGroupCycleIndex {
     Z d = Z.ONE;
     for (int i = 1; i < j.length; ++i) {
       if (j[i] > 0) {
-        d = d.multiply(FACTORIAL.factorial(j[i]).multiply(Z.valueOf(i).pow(j[i])));
+        d = d.multiply(MemoryFactorial.SINGLETON.factorial(j[i]).multiply(Z.valueOf(i).pow(j[i])));
       }
     }
     return new Q(Z.ONE, d);

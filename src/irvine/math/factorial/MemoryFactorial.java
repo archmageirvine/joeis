@@ -17,6 +17,10 @@ public class MemoryFactorial extends MemoryFunction2<Integer, Z> implements Fact
   public static final MemoryFactorial SINGLETON = new MemoryFactorial();
   private static final RingFactorial<Z> MF = RingFactorial.instance(Integers.SINGLETON);
 
+  /** Users should use SINGLETON. */
+  private MemoryFactorial() {
+  }
+
   @Override
   public Z factorial(final int n) {
     return MF.factorial(n);

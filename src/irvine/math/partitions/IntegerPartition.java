@@ -153,7 +153,7 @@ public final class IntegerPartition {
     return PARTITIONS.get(index);
   }
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /**
    * Return the number of standard Young tableaux corresponding to the given

@@ -18,14 +18,12 @@ public final class CycleIndexReadBigN {
 
   private CycleIndexReadBigN() { }
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-
   private static Z fix(final MultivariateMonomial m) {
     Z fix = Z.ONE;
     for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
       final int d = e.getKey().right();
       final Z j = e.getValue();
-      fix = fix.multiply(FACTORIAL.factorial(j)).multiply(Z.valueOf(d).pow(j));
+      fix = fix.multiply(MemoryFactorial.SINGLETON.factorial(j)).multiply(Z.valueOf(d).pow(j));
     }
     return fix;
   }

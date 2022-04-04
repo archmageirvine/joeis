@@ -13,8 +13,8 @@ import irvine.oeis.Sequence;
  */
 public class A352568 implements Sequence {
 
-  private final HashSet<List<Integer>> mA = new HashSet<>();
-  private int mN = 0;
+  protected final HashSet<List<Integer>> mA = new HashSet<>();
+  protected int mN = 0;
 
   private void search(final int[] counts, final boolean[] used, final int pos, final int step) {
     if (step == mN) {
@@ -40,13 +40,17 @@ public class A352568 implements Sequence {
     }
   }
 
-  @Override
-  public Z next() {
+  protected void step() {
     ++mN;
     mA.clear();
     final boolean[] used = new boolean[mN];
     used[0] = true;
     search(new int[mN / 2 + 1], used, 0, 1);
+  }
+
+  @Override
+  public Z next() {
+    step();
     return Z.valueOf(mA.size());
   }
 }

@@ -1,14 +1,13 @@
-package irvine.oeis.a046;
+package irvine.oeis.a352;
 
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A046510 Numbers with multiplicative persistence value 1.
+ * A352800.
  * @author Sean A. Irvine
  */
-public class A046510 implements Sequence {
+public class A352800 implements Sequence {
 
   private Z mN = Z.NEG_ONE;
 
@@ -16,9 +15,11 @@ public class A046510 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (ZUtils.multiplicativePersistence(mN) == 1) {
+      final Z p = mN.square().multiply2().add(29);
+      if (p.isProbablePrime()) {
         return mN;
       }
     }
   }
 }
+

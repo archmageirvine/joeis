@@ -14,7 +14,7 @@ public class A046501 extends A000040 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (ZUtils.multiplicativePersistence(p) <= 1) {
+      if (ZUtils.multiplicativePersistence(p) == 1) {
         return p;
       }
     }

@@ -12,12 +12,12 @@ import irvine.oeis.Sequence;
 public class A014185 implements Sequence {
 
   private int mN = -1;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   public Z next() {
     ++mN;
-    return mF.factorial(Binomial.binomial(mN + 1, 2).intValueExact())
+    return mF.factorial(Binomial.binomial(mN + 1, 2))
       .multiply(mF.factorial(mN))
       .shiftLeft(2 * mN)
       .divide(mF.factorial(2 * mN));

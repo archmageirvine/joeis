@@ -21,7 +21,7 @@ public class A000691 implements Sequence {
   private static final Apfloat LN2 = ApfloatMath.log(TWO);
   private static final Apfloat HALF = new Apfloat("0.5", PRECISION);
   private static final Apfloat TOLERANCE = new Apfloat(0.00001);
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private static final Apfloat B = new Apfloat(A000690.C0.substring(0, PRECISION));
 
   // see A000709 for a CR implementation of this integral

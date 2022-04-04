@@ -43,7 +43,7 @@ public class A049312 extends MemoryFunction2<Integer, Z> implements Sequence {
   }
 
   private final BFunction mB = new BFunction();
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   private Z mul(final Polynomial<Z> p) {

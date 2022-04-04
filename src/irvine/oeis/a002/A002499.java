@@ -16,7 +16,7 @@ public class A002499 implements Sequence {
   // Compare with A126067.  This is effectively the cycle index polynomials
   // evaluated at 1.
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = 0;
   
   private boolean eta(final int k) {

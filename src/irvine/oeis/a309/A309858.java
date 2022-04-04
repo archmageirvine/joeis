@@ -20,7 +20,7 @@ public class A309858 extends MemoryFunction2<Integer, Z> implements Sequence {
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mD = -1;
   private int mN = 0;
 

@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A274447 extends MemoryFunction2<Integer, Z> implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   // Eulerian2 function

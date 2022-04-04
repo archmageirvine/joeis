@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 public class A050255 implements Sequence {
 
   private static final CR LN2 = CR.TWO.log();
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mA = 0;
   private int mN = 0;
 

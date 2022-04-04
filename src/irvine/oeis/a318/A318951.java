@@ -21,7 +21,7 @@ public class A318951 implements Sequence {
 
   private static final PolynomialRingField<Z> RINGZ = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z permCount(final int[] v) {
     Z m = Z.ONE;

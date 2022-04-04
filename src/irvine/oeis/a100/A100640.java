@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A100640 implements Sequence {
 
-  private static final MemoryFactorial F = new MemoryFactorial();
+  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
 
   /**
    * Cotesian numbers.

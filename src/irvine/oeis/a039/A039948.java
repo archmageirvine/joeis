@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000045;
  */
 public class A039948 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final MemorySequence mFibo = MemorySequence.cachedSequence(new A000045());
   private int mN = -1;
   private int mM = 0;

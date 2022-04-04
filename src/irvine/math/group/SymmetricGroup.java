@@ -60,7 +60,7 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
     mSet = set;
     mName = name;
     mZero = new Permutation<>(set, new HashMap<>());
-    mSize = FACTORIAL.factorial(mSet.size().intValueExact());
+    mSize = FACTORIAL.factorial(mSet.size());
   }
 
   /**

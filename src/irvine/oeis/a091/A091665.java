@@ -12,7 +12,7 @@ public class A091665 implements Sequence {
 
   private int mN = 0;
   private int mM = 0;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   protected Z t(final int n, final int k) {
     if (k > n) {

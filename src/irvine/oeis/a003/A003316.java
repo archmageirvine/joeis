@@ -15,7 +15,7 @@ public class A003316 implements Sequence {
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private Z h(final int[] l) {

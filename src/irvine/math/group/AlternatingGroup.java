@@ -52,7 +52,7 @@ public class AlternatingGroup<T> extends AbstractGroup<Permutation<T>> {
     mSet = set;
     mName = name;
     mZero = new Permutation<>(set, new HashMap<>());
-    mSize = FACTORIAL.factorial(mSet.size().intValueExact()).divide2();
+    mSize = FACTORIAL.factorial(mSet.size()).divide2();
   }
 
   /**

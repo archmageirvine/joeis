@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A051591 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 1;
 
   @Override
@@ -23,7 +23,7 @@ public class A051591 implements Sequence {
     final Z n = Z.valueOf(mN);
     Q sum = Q.ZERO;
     for (final Z d : Cheetah.factor(mN).divisors()) {
-      sum = sum.add(new Q(d.multiply(mF.factorial(mN - 1)).pow(d), n.pow(d).multiply(mF.factorial(d.intValue()))));
+      sum = sum.add(new Q(d.multiply(mF.factorial(mN - 1)).pow(d), n.pow(d).multiply(mF.factorial(d))));
     }
     return sum.toZ();
   }

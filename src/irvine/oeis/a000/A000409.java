@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 public class A000409 implements Sequence {
 
   private int mN = 1;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z poweredBinomial(final int k, final int n) {
     // compute C(2^k-1,n)

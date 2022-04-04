@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A005747 implements Sequence {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /**
    * Compute the number of k-covers of an n-set

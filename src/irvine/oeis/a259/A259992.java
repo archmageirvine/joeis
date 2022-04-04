@@ -12,7 +12,7 @@ public class A259992 implements Sequence {
 
   private int mN = -1;
   private int mM = 0;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z v(final int p, final int q) {
     Z sum = Z.ZERO;

@@ -17,7 +17,7 @@ public class A036039 implements Sequence {
 
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);
   private int mN = 0;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int[] mC;
 
   @Override

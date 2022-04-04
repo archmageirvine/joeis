@@ -10,7 +10,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
  */
 public class A292280 extends GeneralizedEulerTransform {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A292280() {

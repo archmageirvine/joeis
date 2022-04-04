@@ -19,7 +19,7 @@ public class A035796 extends A025487 {
   // After Andrew Howroyd
 
   private final PrimeDivision mFactor = new PrimeDivision();
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z c(final int[] sig) {
     final int s = (int) IntegerUtils.sum(sig);

@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A052136 extends MemoryFunction2<Integer, Q> implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override

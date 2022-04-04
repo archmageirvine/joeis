@@ -12,7 +12,7 @@ public class A025165 implements Sequence {
 
   // After G. C. Greubel
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   @Override

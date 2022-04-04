@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A048602 extends MemoryFunction2<Integer, Q> implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = -1;
 
   @Override

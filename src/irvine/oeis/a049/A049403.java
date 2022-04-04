@@ -10,7 +10,7 @@ import irvine.oeis.a030.A030528;
  */
 public class A049403 extends A030528 {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   public Z next() {

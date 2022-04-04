@@ -18,7 +18,7 @@ public class A003514 implements Sequence {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> P = RING.create(Arrays.asList(Q.ZERO, Q.HALF, new Q(-1, 4)));
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   protected Polynomial<Q> egf(final int n) {

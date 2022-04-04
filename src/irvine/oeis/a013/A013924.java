@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A013924 extends MemoryFunction2<Integer, Z> implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final MemorySequence mB = MemorySequence.cachedSequence(new PrependSequence(new A013922(), 0));
 
   // [x^m z^n]{(\PhiS(x,z))}^q=\sum_{j,k}[x^j z^k]\Phi S(x,z)[x^{m-j}z^{n-k}]{(\Phi S(x,z))}^{q-1}

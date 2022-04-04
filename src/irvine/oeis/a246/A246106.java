@@ -19,7 +19,7 @@ public class A246106 extends MemoryFunction2<Integer, List<List<int[]>>> impleme
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
   private int mM = 0;
 

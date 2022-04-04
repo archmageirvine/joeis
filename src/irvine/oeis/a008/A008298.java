@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
 public class A008298 extends MemoryFunction1<Polynomial<Z>> implements Sequence {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private int mM = 0;
 

@@ -51,7 +51,7 @@ public class A003442 implements Sequence {
     }
   }
 
-  protected final MemoryFactorial mF = new MemoryFactorial();
+  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected final VFunction mV = new VFunction();
   private final HashMap<Pair<Polynomial<Q>, Integer>, Polynomial<Q>> mPowerCache = new HashMap<>();
 

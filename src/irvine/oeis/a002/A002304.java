@@ -14,7 +14,7 @@ public class A002304 implements Sequence {
   // Various papers are available, but can't get this to work out
 
 //  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-//  private final MemoryFactorial mF = new MemoryFactorial();
+//  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 //  private int mN = 0;
 //
 //  private Polynomial<Q> goddard(final int k) {

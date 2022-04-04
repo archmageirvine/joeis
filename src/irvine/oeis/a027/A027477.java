@@ -18,7 +18,7 @@ public class A027477 implements Sequence {
 
   private int mN = 0;
   private int mM = 0;
-  protected final MemoryFactorial mF = new MemoryFactorial();
+  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected Matrix<Q> mMatrix = null;
 
   protected int power() {

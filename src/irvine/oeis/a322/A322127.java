@@ -11,7 +11,7 @@ import irvine.oeis.triangle.RationalTriangle;
  */
 public class A322127 extends RationalTriangle {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A322127() {

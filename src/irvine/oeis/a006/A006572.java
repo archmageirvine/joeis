@@ -11,7 +11,7 @@ import irvine.oeis.a111.A111999;
  */
 public class A006572 extends A111999 {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   protected Z select(final Q n) {

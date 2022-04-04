@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A308820 implements Sequence {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override
@@ -20,7 +20,7 @@ public class A308820 implements Sequence {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 1; k <= mN; ++k) {
-      prod = prod.multiply(FACTORIAL.factorial(new Q(mN, k).ceiling().intValue()));
+      prod = prod.multiply(FACTORIAL.factorial(new Q(mN, k).ceiling()));
     }
     return prod;
   }

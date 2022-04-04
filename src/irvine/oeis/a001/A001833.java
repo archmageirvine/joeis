@@ -19,7 +19,7 @@ public class A001833 implements Sequence {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
   private int mN = -1;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final ArrayList<ArrayList<Q>> mCCoeff = new ArrayList<>();
 
   private Polynomial<Q> cPoly(final int h, final int n) {

@@ -17,7 +17,7 @@ import irvine.oeis.Sequence;
  */
 public class A052121 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Q> mRow = null;
   private int mN = 0;
   private int mM = 0;

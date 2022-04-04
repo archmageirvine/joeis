@@ -14,7 +14,7 @@ public class A000373 extends A000275 {
     super.next();
   }
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z a(final int n) {
     return n == 1 ? Z.ZERO : mA.get(n);

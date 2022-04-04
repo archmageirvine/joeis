@@ -21,7 +21,7 @@ public class A000264 implements Sequence {
   {
     mV.add(null);
   }
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Z> mU = RING.zero();
   private int mN = 0;
 

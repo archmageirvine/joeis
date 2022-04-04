@@ -15,7 +15,7 @@ public class A002785 implements Sequence {
 
   // After Pab Ter
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private Z mOddTerm = Z.ONE;
 

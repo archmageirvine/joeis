@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 public class A000939 implements Sequence {
 
   private int mN = 0;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z sum(final Z initial) {
     Z t = initial;

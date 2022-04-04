@@ -11,11 +11,11 @@ import irvine.oeis.Sequence;
 public class A000197 implements Sequence {
 
   private int mN = -1;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   public Z next() {
-    return mF.factorial(mF.factorial(++mN).intValue());
+    return mF.factorial(mF.factorial(++mN));
   }
 }
 

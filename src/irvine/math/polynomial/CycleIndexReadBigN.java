@@ -25,7 +25,7 @@ public final class CycleIndexReadBigN {
     for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
       final int d = e.getKey().right();
       final Z j = e.getValue();
-      fix = fix.multiply(FACTORIAL.factorial(j.intValueExact())).multiply(Z.valueOf(d).pow(j));
+      fix = fix.multiply(FACTORIAL.factorial(j)).multiply(Z.valueOf(d).pow(j));
     }
     return fix;
   }

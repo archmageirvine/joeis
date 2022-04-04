@@ -20,7 +20,7 @@ public class A000314 implements Sequence {
   private static final Polynomial<Q> TWO = RING.create(Collections.singletonList(Q.TWO));
 
   private int mN = -1;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Q> mPrev = null;
 
  private Polynomial<Q> exp(final Polynomial<Q> p, final int n) {

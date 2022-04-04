@@ -16,7 +16,7 @@ public class A035470 implements Sequence {
 
   // After Alois P. Heinz
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final HashMap<String, Z> mCache = new HashMap<>();
   private int mN = 0;
 

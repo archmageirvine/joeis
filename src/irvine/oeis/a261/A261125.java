@@ -12,8 +12,6 @@ public class A261125 implements Sequence {
 
   private int mN;
   private Z mA;
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
-
 
   /** Construct the sequence. */
   public A261125() {
@@ -27,7 +25,7 @@ public class A261125 implements Sequence {
     if (mN == 1) {
       return Z.ONE;
     }
-    mA = mA.multiply(FACTORIAL.factorial(Z.ONE.shiftLeft(mN - 1).intValue()));
+    mA = mA.multiply(MemoryFactorial.SINGLETON.factorial(Z.ONE.shiftLeft(mN - 1)));
     return mA;
   }
 }

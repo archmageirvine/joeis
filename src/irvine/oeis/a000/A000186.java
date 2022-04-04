@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 public class A000186 implements Sequence, Serializable {
 
   private int mN = -1;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   public Z next() {

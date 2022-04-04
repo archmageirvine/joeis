@@ -10,7 +10,7 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A080159 extends Triangle {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A080159() {

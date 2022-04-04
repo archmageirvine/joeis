@@ -19,7 +19,7 @@ public class A000175 implements Sequence {
   // Using method described by Herman Jamke
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   private Z pi0(final int n) {

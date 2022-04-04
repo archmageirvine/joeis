@@ -140,7 +140,7 @@ public class A259976 extends MemoryFunction1<CycleIndex> implements Sequence {
     return perm;
   }
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   // See Merris & Watkins paper, pp. 539-541
   protected Z t(final int q, final int p) {

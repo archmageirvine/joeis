@@ -17,7 +17,7 @@ import irvine.oeis.Sequence;
 public class A058057 implements Sequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private static final ArrayList<Polynomial<Z>> CACHE = new ArrayList<>();
 
   /**

@@ -16,7 +16,7 @@ public class A210696 implements Sequence {
 
   // Based on existing Maple program in OEIS entry (by R. J. Mathar)
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final A146305 mA146305 = new A146305();
 
   protected Z brownE(final int r, final int n, final int m) {

@@ -14,7 +14,7 @@ public class A013703 implements Sequence {
 
   // After Paolo Bonzini
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   @Override

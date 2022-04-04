@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A152875 implements Sequence {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   protected int mN = 1;
 
   @Override

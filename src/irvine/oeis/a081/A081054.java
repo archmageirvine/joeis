@@ -16,7 +16,7 @@ public class A081054 implements Sequence {
 
   protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final PolynomialRing<Polynomial<Z>> RING2 = new PolynomialRing<>(RING);
-  protected final MemoryFactorial mF = new MemoryFactorial();
+  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Z> mPsiBarCache = null;
   private int mPsiBarCacheIndex = -1;
 

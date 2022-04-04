@@ -13,7 +13,7 @@ public class A000573 implements Sequence {
   // Based on C code by Douglas Stones
 
   protected int mN = 3;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private boolean shouldNegate(final int[] a) {
     return ((a[2] + a[3] + a[5] + a[0]) & 1) == 1;

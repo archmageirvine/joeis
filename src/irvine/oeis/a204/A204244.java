@@ -12,7 +12,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A204244 extends UpperLeftTriangle {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A204244() {

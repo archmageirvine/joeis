@@ -17,7 +17,7 @@ public class A002398 implements Sequence {
   // After Jack Grahl
 
   static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   Z l(final int n) {

@@ -18,7 +18,7 @@ public class A034855 implements Sequence {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
-  protected final MemoryFactorial mF = new MemoryFactorial();
+  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final ArrayList<Polynomial<Q>> mGF = new ArrayList<>();
   {
     mGF.add(RING.x());

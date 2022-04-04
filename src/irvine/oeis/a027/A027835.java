@@ -13,7 +13,7 @@ public class A027835 extends A027834 {
 
   // After Petros Hadjicostas
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override

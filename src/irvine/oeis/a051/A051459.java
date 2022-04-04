@@ -11,7 +11,6 @@ import irvine.oeis.Sequence;
  */
 public class A051459 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
   private long mN = -1;
 
   @Override
@@ -19,7 +18,7 @@ public class A051459 implements Sequence {
     ++mN;
     Z prod = Z.ONE;
     for (long k = 0; k <= mN; ++k) {
-      prod = prod.multiply(mF.factorial(Binomial.binomial(mN, k).intValueExact()));
+      prod = prod.multiply(MemoryFactorial.SINGLETON.factorial(Binomial.binomial(mN, k)));
     }
     return prod;
   }

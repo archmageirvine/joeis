@@ -16,7 +16,7 @@ public class A000159 implements Sequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> BASE = Polynomial.create(-1, 1);
-  private final MemoryFactorial mFactorial = new MemoryFactorial();
+  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
 
   // This will be useful for other sequences
   Polynomial<Z> menageHitPolynomial(final int n) {

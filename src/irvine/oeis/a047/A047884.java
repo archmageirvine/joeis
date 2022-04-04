@@ -19,7 +19,7 @@ public class A047884 implements Sequence {
   // After Alois P. Heinz
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private int mM = 0;
   private Polynomial<Z> mG = null;

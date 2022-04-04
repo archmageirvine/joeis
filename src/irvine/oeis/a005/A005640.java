@@ -14,7 +14,7 @@ public class A005640 extends MemoryFunction1<Z> implements Sequence {
 
   // This could be made faster by caching results
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private int mN = -2;
 
   static Z r(final int n, final int[] cntForm) {

@@ -24,7 +24,7 @@ public class A005489 extends MemoryFunction<Integer, Polynomial<Q>> implements S
   private static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C1 = RING.create(Arrays.asList(Q.NEG_ONE, Q.TWO));
   private static final Polynomial<Q> C2 = RING.create(Arrays.asList(Q.ZERO, Q.NEG_ONE, Q.ONE));
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override

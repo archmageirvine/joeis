@@ -35,7 +35,7 @@ public class A131235 implements Sequence {
   );
   private static final Polynomial<Polynomial<Q>> DEN = RING_X.multiply(C0, constant(2));
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
   private int mM = 0;
 

@@ -10,7 +10,7 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A062169 extends Triangle {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();  
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;  
 
   @Override
   protected Z compute(final int n, final int k) {

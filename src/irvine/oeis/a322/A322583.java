@@ -12,7 +12,7 @@ public class A322583 extends MemorySequence {
 
   // After Antti Karttunen
 
-  protected final MemoryFactorial mF = new MemoryFactorial();
+  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   {
     add(Z.ZERO); // 0 unused
   }

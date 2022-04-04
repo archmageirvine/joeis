@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
  */
 public class A060240 implements Sequence {
 
-  protected final MemoryFactorial mF = new MemoryFactorial();
+  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
   private List<Z> mReps = Collections.emptyList();
   private int mM = 0;

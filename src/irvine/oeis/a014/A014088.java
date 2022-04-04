@@ -17,7 +17,7 @@ public class A014088 extends A050255 {
 
   private static final class QFunction extends MemoryFunctionInt3<Q> {
 
-    private final MemoryFactorial mF = new MemoryFactorial();
+    private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
     @Override
     protected Q compute(final int k, final int n, final int d) {

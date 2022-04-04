@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A000171 implements Sequence {
 
-  private final MemoryFactorial mFactorial = new MemoryFactorial();
+  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private Z period(final int[] k) {

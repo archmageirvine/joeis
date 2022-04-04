@@ -27,7 +27,7 @@ public class A002630 implements Sequence {
   private static final Polynomial<Q> DEN2 = RING.oneMinusXToTheN(3);
 
   private int mN = 0;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Polynomial<Q> poly(final int m, final int n) {
     final Polynomial<Q> c1 = RING.series(NUM0, DEN0, n);

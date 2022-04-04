@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A047916 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = 0;
   private int mM = 0;
 

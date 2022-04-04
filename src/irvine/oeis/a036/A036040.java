@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
  */
 public class A036040 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);
   private int mN = 0;
   private int[] mC;

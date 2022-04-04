@@ -16,7 +16,7 @@ public class A000270 implements Sequence {
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> DEN = Polynomial.create(1, 2, 1);
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Z> mOuter = RING.one();
   private int mN = -1;
 

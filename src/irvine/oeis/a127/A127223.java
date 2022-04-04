@@ -12,7 +12,7 @@ public class A127223 implements Sequence {
 
   private int mExpon;
   private int mN;
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A127223() {

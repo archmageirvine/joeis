@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
  */
 public class A007151 implements Sequence, Serializable {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   private Q sum1(final int n, final int j, final int i) {

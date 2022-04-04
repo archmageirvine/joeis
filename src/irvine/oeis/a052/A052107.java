@@ -14,7 +14,7 @@ public class A052107 implements Sequence {
 
   // After Andrew Howroyd
 
-  protected final MemoryFactorial mF = new MemoryFactorial();
+  protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = 0;
 
   protected int edges(final int[] v) {

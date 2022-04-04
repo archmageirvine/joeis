@@ -12,7 +12,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
  */
 public class A321520 extends GeneralizedEulerTransform {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   /** Construct the sequence. */
   public A321520() {

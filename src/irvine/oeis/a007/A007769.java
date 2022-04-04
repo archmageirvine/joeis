@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 public class A007769 implements Sequence {
 
   private int mN = -1;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z alpha(final int p, final Z q) {
     if (q.isEven()) {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A039622 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private int mN = -1;
 

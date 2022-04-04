@@ -23,7 +23,7 @@ public class A028657 extends MemoryFunction2<Integer, Z> implements Sequence {
   // After Alois P. Heinz
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private MemoryFunction2<Integer, List<Polynomial<Z>>> mB = new MemoryFunction2<Integer, List<Polynomial<Z>>>() {
     @Override
@@ -47,7 +47,7 @@ public class A028657 extends MemoryFunction2<Integer, Z> implements Sequence {
   private Z prod(final Polynomial<Z> p) {
     Z prod = Z.ONE;
     for (int k = 1; k <= p.degree(); ++k) {
-      prod = prod.multiply(Z.valueOf(k).pow(p.coeff(k))).multiply(mF.factorial(p.coeff(k).intValueExact()));
+      prod = prod.multiply(Z.valueOf(k).pow(p.coeff(k))).multiply(mF.factorial(p.coeff(k)));
     }
     return prod;
   }

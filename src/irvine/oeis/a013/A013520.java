@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
 public class A013520 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private Polynomial<Q> mB = RING.monomial(Q.ONE, 2);
   private int mN = 0;
 

@@ -24,7 +24,7 @@ public class A007888 implements Sequence {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Z Z12 = Z.valueOf(12);
   private static final Q Q12 = new Q(-1, 12);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final ArrayList<Q> mBernoulli = new ArrayList<>();
   private final BernoulliSequence mBernoulliSequence = new BernoulliSequence(0);
   private int mN = -2;

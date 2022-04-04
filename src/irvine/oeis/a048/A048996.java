@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
  */
 public class A048996 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);
   protected int mN = -1;
   private int[] mC;
@@ -40,7 +40,7 @@ public class A048996 implements Sequence {
       sum = sum.add(c);
       prod = prod.multiply(mF.factorial(c));
     }
-    return mF.factorial(sum.intValueExact()).divide(prod);
+    return mF.factorial(sum).divide(prod);
   }
 }
 

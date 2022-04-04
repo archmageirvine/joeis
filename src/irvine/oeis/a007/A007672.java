@@ -11,10 +11,9 @@ import irvine.oeis.a002.A002034;
 public class A007672 extends A002034 {
 
   private long mN = 0;
-  private final MemoryFactorial mF = new MemoryFactorial();
 
   @Override
   public Z next() {
-    return mF.factorial(super.next().intValueExact()).divide(++mN);
+    return MemoryFactorial.SINGLETON.factorial(super.next()).divide(++mN);
   }
 }

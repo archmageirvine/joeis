@@ -14,7 +14,7 @@ public class A046650 implements Sequence {
 
   // After R. J. Mathar
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 1;
 
   // Eq. 4.14

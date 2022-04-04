@@ -16,7 +16,7 @@ public class A097749 extends A097474 {
   private int mK = 0;
 
   private final HashMap<Point, Z> mB = new HashMap<>();
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   private Z b(final int n, final int k) {
     final int h = (k + 3) / 2;

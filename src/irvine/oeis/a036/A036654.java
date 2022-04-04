@@ -23,7 +23,7 @@ public class A036654 implements Sequence {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> Y1 = RING.onePlusXToTheN(1);
   private final MemorySequence mD = MemorySequence.cachedSequence(new A036655());
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private final Sequence mA = new A006351();
   private final ArrayList<Polynomial<Q>> mS = new ArrayList<>();
   {

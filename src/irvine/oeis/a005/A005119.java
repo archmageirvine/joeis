@@ -11,7 +11,7 @@ import irvine.oeis.MemorySequence;
  */
 public class A005119 extends MemorySequence {
 
-  private MemoryFactorial mF = new MemoryFactorial();
+  private MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   protected Z computeNext() {

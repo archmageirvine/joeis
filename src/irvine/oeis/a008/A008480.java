@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A008480 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private long mN = 0;
 
   @Override
@@ -25,6 +25,6 @@ public class A008480 implements Sequence {
       sum = sum.add(e);
       prod = prod.multiply(mF.factorial(e));
     }
-    return mF.factorial(sum.intValueExact()).divide(prod);
+    return mF.factorial(sum).divide(prod);
   }
 }

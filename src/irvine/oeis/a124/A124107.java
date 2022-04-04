@@ -19,7 +19,7 @@ public class A124107 implements Sequence {
     for (int k = 0; k < MAX; ++k) {
       ITERATED_FACTORIAL[0][k] = k;
     }
-    final MemoryFactorial f = new MemoryFactorial();
+    final MemoryFactorial f = MemoryFactorial.SINGLETON;
     for (int k = 1; k < MAX; ++k) {
       for (int j = 0; j < MAX; ++j) {
         final long v = ITERATED_FACTORIAL[k - 1][j];

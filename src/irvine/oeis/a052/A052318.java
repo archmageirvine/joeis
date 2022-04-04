@@ -10,7 +10,7 @@ import irvine.math.z.Z;
  */
 public class A052318 extends A052316 {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
 
   @Override

@@ -50,7 +50,7 @@ public class A123301 implements Sequence {
     return diff;
   }
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   // This version of reversion supports non-unit [x^1] coefficient
   // See https://mathworld.wolfram.com/SeriesReversion.html Morse and Feshbach formula

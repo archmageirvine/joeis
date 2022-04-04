@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A002672 extends MemoryFunction2<Integer, Q> implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   @Override
   protected Q compute(final Integer k, final Integer q) {

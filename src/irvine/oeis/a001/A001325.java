@@ -18,7 +18,7 @@ import irvine.oeis.Sequence;
  */
 public class A001325 implements Sequence {
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   private static int bigGPrime(final int m, final int t2) {
     assert (t2 & 1) == 0;

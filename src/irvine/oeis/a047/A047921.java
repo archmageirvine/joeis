@@ -14,7 +14,7 @@ import irvine.oeis.a002.A002628;
 public class A047921 implements Sequence {
 
   private final MemorySequence mCol0 = MemorySequence.cachedSequence(new A002628());
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 0;
   private int mM = -1;
 

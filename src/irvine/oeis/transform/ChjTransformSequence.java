@@ -23,7 +23,7 @@ public class ChjTransformSequence implements Sequence {
 
   // See https://oeis.org/transforms2.html (but beware errors)
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private final MemorySequence mA;
 
   protected ChjTransformSequence(final Sequence seq) {

@@ -41,7 +41,7 @@ public class A034882 implements Sequence {
     }
   }
 
-  private final MemoryFactorial mFactorial = new MemoryFactorial();
+  private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   private final TreeSet<State> mA = new TreeSet<>();
   private Z mPrev = Z.NEG_ONE;
   private Z mF = Z.ONE;

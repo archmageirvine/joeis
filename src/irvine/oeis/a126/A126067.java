@@ -22,7 +22,7 @@ public class A126067 implements Sequence {
   // Compare with A002499.
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
 
   private int mN = -1;
   private int mM = 0;

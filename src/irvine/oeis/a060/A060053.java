@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 public class A060053 implements Sequence {
 
   private static final Q NEG_HALF = Q.HALF.negate();
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
 
   private Q innerSum(final int n, final int m) {

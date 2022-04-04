@@ -32,7 +32,7 @@ public class A007838 extends MemorySequence {
   }
 
   private final BFunction mB = new BFunction();
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
 
   protected MemoryFunction1<Q> getB() {
     return mB;

@@ -17,7 +17,7 @@ import irvine.oeis.Sequence;
 public class A327371 implements Sequence {
 
   private static final Polynomial<Z> C1 = Polynomial.create(0, 0, 1);
-  private final MemoryFactorial mF = new MemoryFactorial();
+  private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = -1;
   private int mM = 0;
   private Polynomial<Polynomial<Z>> mGf = null;

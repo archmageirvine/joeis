@@ -17,7 +17,7 @@ public class BhjTransformSequence implements Sequence {
 
   // See https://oeis.org/transforms2.html (but beware errors)
 
-  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+  private static final MemoryFactorial FACTORIAL = MemoryFactorial.SINGLETON;
   private final MemorySequence mA;
 
   protected BhjTransformSequence(final Sequence seq) {

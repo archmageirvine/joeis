@@ -11,7 +11,7 @@ import irvine.math.z.Z;
  * Compute factorials and remember their values.
  * @author Sean A. Irvine
  */
-public class MemoryFactorial extends MemoryFunction2<Integer, Z> implements Factorial, Serializable {
+public final class MemoryFactorial extends MemoryFunction2<Integer, Z> implements Factorial, Serializable {
 
   /** Singleton instance. */
   public static final MemoryFactorial SINGLETON = new MemoryFactorial();

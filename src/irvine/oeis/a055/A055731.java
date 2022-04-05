@@ -5,10 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055730 Number of primes &lt;= 5^n.
+ * A055731 Number of primes &lt; 6^n.
  * @author Sean A. Irvine
  */
-public class A055730 implements Sequence {
+public class A055731 implements Sequence {
 
   private final Fast mPrime = new Fast();
   private long mLimit = 1;
@@ -21,7 +21,7 @@ public class A055730 implements Sequence {
       mP = mPrime.nextPrime(mP);
       ++mCount;
     }
-    mLimit *= 5;
+    mLimit *= 6;
     return Z.valueOf(mCount - 1);
   }
 }

@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
  */
 public class A007874 implements Sequence {
 
-  private static final int PRECISION = 500;
+  private static final int PRECISION = 100;
   private final HashSet<List<Integer>> mA = new HashSet<>();
   private int mN = 0;
 
@@ -57,7 +57,7 @@ public class A007874 implements Sequence {
     search(new int[mN / 2 + 1], used, 0, 1);
 
     // Some different polygons in mA are actually the same length
-    // I would like a smarter method of determining when they are the same, but this seems to work for now
+    // I would like a smarter method of determining when they are the same.
     final CR[] a = new CR[mN / 2 + 1];
     for (int k = 0; k <= mN / 2; ++k) {
       a[k] = CR.TWO.subtract(CR.TWO.multiply(ComputableReals.SINGLETON.cos(CR.PI.multiply(new Q(2L * k, mN))))).sqrt();
@@ -68,7 +68,7 @@ public class A007874 implements Sequence {
       for (int k = 1; k < v.size(); ++k) {
         sum = sum.add(a[k].multiply(v.get(k)));
       }
-      unique.add(sum.toString(PRECISION));
+      unique.add(sum.toString(PRECISION).substring(0, 50));
     }
     return Z.valueOf(unique.size());
   }

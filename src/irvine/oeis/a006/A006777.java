@@ -4,10 +4,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006776 Number of n-step spirals on hexagonal lattice.
+ * A006777 Number of n-step spirals on hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A006776 implements Sequence {
+public class A006777 implements Sequence {
 
   // Walks on hexagonal/triangular lattice
   // Coordinate of a point is (x,y).
@@ -35,6 +35,7 @@ public class A006776 implements Sequence {
 
   protected int mN = 0;
   private int[] mPath = null;
+  private int[] mU = null;
 
   private void setPathElement(final int pos, final int value) {
     mPath[pos] = value;
@@ -49,18 +50,23 @@ public class A006776 implements Sequence {
     return false;
   }
 
-  private boolean check(final int point, final int n) {
-    return !contains(point, n);
+  private boolean check(final int point, final int n, final int k) {
+    return !contains(point, n) && isSingle(k - 1);
+  }
+
+  private boolean isSingle(final int k) {
+    return k < 4 || mU[k - 4] + mU[k - 3] < mU[k - 1] + mU[k];
   }
 
   protected int model() {
-    return 3;
+    return 2;
   }
 
-  private long count(final int point, final int n, final int theta) {
+  private long count(final int point, final int n, final int theta, final int u, final int k) {
     mPath[n] = point;
     if (n == mN) {
-      return 1;
+      mU[k] = u;
+      return isSingle(k) ? 1 : 0;
     }
     long count = 0;
     int limit = theta + model();
@@ -70,8 +76,13 @@ public class A006776 implements Sequence {
     int t = theta;
     do {
       final int newPoint = point + DELTAS[t];
-      if (check(newPoint, n)) {
-        count += count(newPoint, n + 1, t);
+      if (check(newPoint, n, k)) {
+        if (t == theta) {
+          count += count(newPoint, n + 1, t, u + 1, k);
+        } else {
+          mU[k] = u;
+          count += count(newPoint, n + 1, t, 1, k + 1);
+        }
       }
       if (++t == DELTAS.length) {
         t = 0; // mod
@@ -83,7 +94,8 @@ public class A006776 implements Sequence {
   @Override
   public Z next() {
     mPath = new int[++mN + 1];
+    mU = new int[mPath.length];
     setPathElement(0, ORIGIN);
-    return Z.valueOf(count(ORIGIN + DELTAS[0], 1, 0));
+    return Z.valueOf(count(ORIGIN + DELTAS[0], 1, 0, 1, 1));
   }
 }

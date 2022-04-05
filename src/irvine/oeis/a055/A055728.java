@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a031.A031157;
 
 /**
- * A055728.
+ * A055728 Number of prime lucky numbers &lt;10^n.
  * @author Sean A. Irvine
  */
 public class A055728 extends A031157 {

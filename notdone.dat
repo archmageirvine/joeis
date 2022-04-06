@@ -1816,5 +1816,5 @@ A055534 Number of labeled order relations on n nodes in which longest chain has 
 A055545 Number of matroids on n points
 A055564 Bisection of A055878
 A055614 Number of isomorphism classes of complex filiform Lie algebras of dimension n
-A055747 Expansion of Jacobi form of weight 12 and index 1 for the Niemeier lattice of type E_8^3 or D_16+E_8 [almost seems to be 2*A003763-A003781]
-
+A055877 Least increasing sequence with a(1) = 1 and Hankel transform {1,1,1,1,...}
+A055878 Least positive sequence with Hankel transform {1,1,1,1,1,...}

@@ -13,6 +13,7 @@ public class A108407 implements Sequence {
 
   final Sequence mA062854 = new A062854();
   protected long mN;
+
   /** Construct the sequence. */
   public A108407() {
     mN = 0;
@@ -24,5 +25,4 @@ public class A108407 implements Sequence {
     ++mN;
     return Z.valueOf(mN).add(Z.ONE).subtract(mA062854.next());
   }
-
 }

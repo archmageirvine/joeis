@@ -9,17 +9,19 @@ import irvine.oeis.Sequence;
  */
 public class A053416 implements Sequence {
 
-  // After Jean-Fran&ccedil;ois Alcover
+  // After Jean-Fran&ccedil;ois Alcover; "m = ..." corrected by Georg Fischer 2022-04-07
 
   private long mN = -1;
 
   @Override
   public Z next() {
-    final long m = (++mN + 1) / 2 + 3;
+    final long m = ++mN;
     long sum = 0;
+    final long n2 = mN * mN;
     for (long i = -m; i <= m; ++i) {
+      final long i2 = i * i;
       for (long j = -m; j <= m; ++j) {
-        if (4 * (i * i + i * j + j * j) <= mN * mN) {
+        if (4 * (i2 + j * (i + j)) <= n2) {
           ++sum;
         }
       }

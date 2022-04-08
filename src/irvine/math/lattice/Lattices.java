@@ -27,6 +27,8 @@ public final class Lattices {
   public static final Lattice HONEYCOMB = new HoneycombLattice();
   /** The square lattice also allowing diagonal movement. */
   public static final Lattice Z2Q = new Z2QLattice();
+  /** The directed hexagonal lattice, only positive steps permitted. */
+  public static final Lattice DIRECTED_HEXAGONAL = new DirectedHexagonalLattice();
 
   /** The Kagome lattice. */
   public static final Lattice KAGOME = new KagomeLattice();

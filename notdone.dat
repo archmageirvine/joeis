@@ -1818,3 +1818,6 @@ A055564 Bisection of A055878
 A055614 Number of isomorphism classes of complex filiform Lie algebras of dimension n
 A055877 Least increasing sequence with a(1) = 1 and Hankel transform {1,1,1,1,...}
 A055878 Least positive sequence with Hankel transform {1,1,1,1,1,...}
+A055907 Triangle: number of directed site animals on a hexagonal lattice with n total sites and k sites supported in one particular way
+A055911 Column 5 of triangle A055907 [given g.f. is broken]
+A055919 Number of directed site animals on a hexagonal lattice with n sites

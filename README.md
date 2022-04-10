@@ -112,7 +112,7 @@ Other Acknowledgements
 This project has benefited immensely and on numerous occasions by
 other contributors to the OEIS and members of the seqfan mailing list.
 This ranges from explanations of sequences, detective work, finding
-papers for me, vetting edits resulting from this project.
+papers, vetting edits resulting from this project.
 
 References
 ----------

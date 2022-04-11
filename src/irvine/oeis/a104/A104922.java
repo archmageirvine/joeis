@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.a103.A103812;
 
 /**
- * A104922 Primes from merging of 8 successive digits in decimal expansion of Catalan&apos;s constant.
+ * A104922 Primes from merging of 8 successive digits in decimal expansion of Catalan's constant.
  * @author Georg Fischer
  */
 public class A104922 extends A103812 {

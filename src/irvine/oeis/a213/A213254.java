@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006752;
 import irvine.oeis.a103.A103812;
 
 /**
- * A213254 Primes from merging of ten consecutive digits in decimal expansion of Catalan&apos;s Constant, in the order in which they occur.
+ * A213254 Primes from merging of ten consecutive digits in decimal expansion of Catalan's Constant, in the order in which they occur.
  * @author Georg Fischer
  */
 public class A213254 extends A103812 {

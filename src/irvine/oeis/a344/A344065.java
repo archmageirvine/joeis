@@ -23,7 +23,7 @@ public class A344065 extends GeneralizedEulerTransform {
 
   @Override
   protected Z advanceG(final long k) {
-    return Z.valueOf(6).pow(k - 1).negate();
+    return Z.SIX.pow(k - 1).negate();
   }
 
 }

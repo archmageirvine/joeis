@@ -19,6 +19,6 @@ public class A206405 extends ExponentialGeneratingFunction {
 
   @Override
   public Polynomial<Q> compute(final int n) {
-    return RING.reversion(RING.add(RING.subtract(RING.exp(RING.x(), n), RING.multiply(RING.monomial(new Q(2), 0), RING.exp(RING.pow(RING.x(), 2, n), n), n)), RING.exp(RING.pow(RING.x(), 3, n), n)), n);
+    return RING.reversion(RING.add(RING.subtract(RING.exp(RING.x(), n), RING.multiply(RING.monomial(Q.TWO, 0), RING.exp(RING.pow(RING.x(), 2, n), n), n)), RING.exp(RING.pow(RING.x(), 3, n), n)), n);
   }
 }

@@ -23,7 +23,7 @@ public class A300579 extends GeneralizedEulerTransform {
 
   @Override
   protected Z advanceG(final long k) {
-    return Z.valueOf(3).pow(k - 1);
+    return Z.THREE.pow(k - 1);
   }
 
 }

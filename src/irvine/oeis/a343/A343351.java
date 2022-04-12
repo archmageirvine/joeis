@@ -18,7 +18,7 @@ public class A343351 extends GeneralizedEulerTransform {
 
   @Override
   protected Z[] advanceF(final long k) {
-    return new Z[] {Z.valueOf(6).pow(k - 1)};
+    return new Z[] {Z.SIX.pow(k - 1)};
   }
 
   @Override

@@ -7,11 +7,12 @@ import irvine.oeis.a033.A033307;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A056029.
+ * A056029 Champernowne's constant in base 2.
  * @author Sean A. Irvine
  */
 public class A056029 extends DecimalExpansionSequence {
 
+  /** Construct the sequence. */
   public A056029() {
     super(0, new CR() {
       private final Sequence mChamperknowne = new A033307();

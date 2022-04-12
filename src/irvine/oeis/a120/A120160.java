@@ -12,8 +12,8 @@ import irvine.oeis.MemorySequence;
 public class A120160 extends MemorySequence {
 
   private int mN;
-  private Z mStart;
-  private Z mDiv;
+  private final Z mStart;
+  private final Z mDiv;
 
   /** Construct the sequence. */
   public A120160() {

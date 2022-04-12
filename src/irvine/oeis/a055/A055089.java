@@ -16,20 +16,24 @@ public class A055089 implements Sequence {
 
   private int mN = 1;
   private int mM = -1;
-  private final TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);
+  protected final TreeSet<int[]> mReverseColex = new TreeSet<>(Comparators.REVERSE_COLEXICOGRAPHIC);
   private int[] mCurrentPerm = {0}; // Handle identity as special case
+
+  protected void step() {
+    final Permutation perm = new Permutation(++mN);
+    int[] p;
+    while ((p = perm.next()) != null) {
+      if (p[p.length - 1] != p.length - 1) { // ignore those which we have already
+        mReverseColex.add(Arrays.copyOf(p, p.length));
+      }
+    }
+  }
 
   @Override
   public Z next() {
     if (++mM >= mCurrentPerm.length) {
       if (mReverseColex.isEmpty()) {
-        final Permutation perm = new Permutation(++mN);
-        int[] p;
-        while ((p = perm.next()) != null) {
-          if (p[p.length  - 1] != p.length - 1) { // ignore those which we have already
-            mReverseColex.add(Arrays.copyOf(p, p.length));
-          }
-        }
+        step();
       }
       mCurrentPerm = mReverseColex.pollFirst();
       mM = 0;

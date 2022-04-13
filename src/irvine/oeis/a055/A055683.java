@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055683 Number of Gaussian primes (in the first half quadrant; i.e., 0 to 45 degrees) with real part &lt;= 10^n.
+ * A055683 Number of Gaussian primes (in the first half-quadrant; i.e., 0 to 45 degrees) with real part &lt; 10^n.
  * @author Sean A. Irvine
  */
 public class A055683 implements Sequence {

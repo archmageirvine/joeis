@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A055785 a(n) = smallest prime q of form q=-1+(p+1)*10^w, where p is n-th prime.
+ * A055785 a(n) = smallest prime q of form q=-1+(p+1)*10^w, where p is n-th prime, or 0 if there is no such prime.
  * @author Sean A. Irvine
  */
 public class A055785 extends A000040 {

@@ -19,12 +19,6 @@ public class A055204 implements Sequence {
   public Z next() {
     mFactorSequence.add(++mN, FactorSequence.UNKNOWN);
     mFactor.factor(mFactorSequence);
-    Z core = Z.ONE;
-    for (final Z p : mFactorSequence.toZArray()) {
-      if ((mFactorSequence.getExponent(p) & 1) == 1) {
-        core = core.multiply(p);
-      }
-    }
-    return core;
+    return mFactorSequence.core();
   }
 }

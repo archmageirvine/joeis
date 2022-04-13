@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055677 Smallest k&gt;n where n is a 6th power modulo k.
+ * A055677 Smallest k &gt; n where n is a 6th power modulo k.
  * @author Sean A. Irvine
  */
 public class A055677 implements Sequence {

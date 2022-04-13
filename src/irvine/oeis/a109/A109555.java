@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
 /**
- * A109555 a(n) = If[Floor[2*Mod[(Prime[n + 1] - Prime[n])*PrimePi[n]/n, 8]] == 0, Prime[n]].
+ * A109555 prime(k) for those k where floor(2*(((prime(k + 1) - prime(k))*PrimePi(k)) mod (8*k)) / k) = m with m = 0.
  * @author Georg Fischer
  */
 public class A109555 extends A000040 {

@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103424 E.g.f.: 1 + sinh(2*x).
+ * A103424 Expansion of e.g.f.: 1 + sinh(2*x).
  * @author Georg Fischer
  */
 public class A103424 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023165 Numbers k such that Fib(k) == -5 (mod k).
+ * A023165 Numbers k such that Fibonacci(k) == -5 (mod k).
  * @author Sean A. Irvine
  */
 public class A023165 extends A000045 {

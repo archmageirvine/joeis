@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A088545 Quotient Fib(5n)/(5*Fib(n)), where Fib(n)=A000045(n).
+ * A088545 Quotient Fib(5n)/(5*Fib(n)), where Fib(n) = A000045(n).
  * @author Georg Fischer
  */
 public class A088545 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A051046 n for which pi(n) &gt; n/(H_n-3/2), where pi is the prime-counting function and H_n is the n-th harmonic number.
+ * A051046 Numbers k for which pi(k) &gt; k/(H_k - 3/2), where pi is the prime-counting function and H_k is the k-th harmonic number.
  * @author Sean A. Irvine
  */
 public class A051046 extends A000720 {

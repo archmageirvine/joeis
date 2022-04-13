@@ -1,7 +1,6 @@
 package irvine.oeis.a007;
 
 import irvine.factor.factor.Cheetah;
-import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -15,13 +14,6 @@ public class A007913 implements Sequence {
 
   @Override
   public Z next() {
-    final FactorSequence fs = Cheetah.factor(++mN);
-    long prod = 1;
-    for (final Z p : fs.toZArray()) {
-      if ((fs.getExponent(p) & 1) == 1) {
-        prod *= p.longValueExact();
-      }
-    }
-    return Z.valueOf(prod);
+    return Cheetah.factor(++mN).core();
   }
 }

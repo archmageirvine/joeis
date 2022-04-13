@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050523 Primes of form 7*2^n-1.
+ * A050523 Primes of the form 7*2^k-1.
  * @author Sean A. Irvine
  */
 public class A050523 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A352800.
+ * A352800 Numbers k such that 2*k^2 + 29 is prime.
  * @author Sean A. Irvine
  */
 public class A352800 implements Sequence {

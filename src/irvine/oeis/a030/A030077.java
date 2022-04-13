@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a352.A352568;
 
 /**
- * A030077 Take n equally spaced points on circle, connect them by a path with n-1 line segments; sequence gives number of distinct path lengths under action of dihedral group.
+ * A030077 Take n equally spaced points on circle, connect them by a path with n-1 line segments; sequence gives number of distinct path lengths.
  * @author Sean A. Irvine
  */
 public class A030077 extends A352568 {

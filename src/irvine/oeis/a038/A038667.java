@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038667 Minimal value of |product(A)-product(B)| where A and B are a partition of {1,2,3,...n}.
+ * A038667 Minimal value of |product(A) - product(B)| where A and B are a partition of {1,2,3,...,n}.
  * @author Sean A. Irvine
  */
 public class A038667 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a342;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A342288 C(n)*C(n+2), where C(n) is the n-th Catalan number A000108(n).
+ * A342288 a(n) = C(n)*C(n+2), where C(n) is the n-th Catalan number A000108(n).
  * Recurrence: a(n)=a(n-1)*4*(2*n-1)*(2*n+3)/((n+1)*(n+3))
  * @author Georg Fischer
  */

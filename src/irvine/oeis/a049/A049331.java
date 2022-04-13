@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A049331 Denominator of (1/Pi)*Integral_{0..inf} (sin x / x)^n dx.
+ * A049331 Denominator of (1/Pi)*Integral_{0..oo} (sin x / x)^n dx.
  * @author Sean A. Irvine
  */
 public class A049331 extends A049330 {

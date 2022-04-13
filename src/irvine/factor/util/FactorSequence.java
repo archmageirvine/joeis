@@ -803,4 +803,19 @@ public final class FactorSequence {
     }
     return sf;
   }
+
+  /**
+   * Return the core of this number (unique square free integer dividing this numbers).
+   * @return core
+   */
+  public Z core() {
+    completeOrException();
+    Z core = Z.ONE;
+    for (final Z p : mFactors.keySet()) {
+      if ((getExponent(p) & 1) == 1) {
+        core = core.multiply(p);
+      }
+    }
+    return core;
+  }
 }

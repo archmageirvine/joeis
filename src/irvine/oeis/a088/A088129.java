@@ -6,7 +6,7 @@ import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a037.A037256;
 
 /**
- * A088129 Expansion of sinh(x)/(1-x)^2.
+ * A088129 Expansion of e.g.f. sinh(x)/(1-x)^2.
  * @author Georg Fischer
  */
 public class A088129 extends BinomialTransformSequence {

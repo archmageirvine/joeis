@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023182 Numbers k such that Fib(k) == 89 (mod k).
+ * A023182 Numbers k such that Fibonacci(k) == 89 (mod k).
  * @author Sean A. Irvine
  */
 public class A023182 extends A000045 {

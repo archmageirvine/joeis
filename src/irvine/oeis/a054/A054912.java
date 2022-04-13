@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054912 E.g.f.: sqrt(exp(5*x)/(2-exp(x))).
+ * A054912 Expansion of e.g.f.: sqrt(exp(5*x)/(2-exp(x))).
  * E.g.f.: sqrt(exp(5*x)/(2-exp(x)))
  * @author Georg Fischer
  */

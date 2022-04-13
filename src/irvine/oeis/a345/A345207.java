@@ -4,7 +4,7 @@ package irvine.oeis.a345;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A345207 Number of (unlabeled) 7-paths of order n.
+ * A345207 Number of (unlabeled) 7-paths with n vertices.
  * @author Georg Fischer
  */
 public class A345207 extends HolonomicRecurrence {

@@ -10,12 +10,10 @@ import irvine.oeis.a001.A001622;
  */
 public class A103812 implements Sequence {
 
-  private Sequence mSeq;
-  private int mBlock;
-  private int mVar;
+  private final Sequence mSeq;
   private Z mA; // current result of merging
-  private Z mMod; // 10^mBlock
-  private Z mMin; // 10^(mBlock - 1)
+  private final Z mMod; // 10^mBlock
+  private final Z mMin; // 10^(mBlock - 1)
 
   /** Construct the sequence. */
   public A103812() {
@@ -30,8 +28,6 @@ public class A103812 implements Sequence {
    */
   public A103812(final Sequence seq, final int block, final int var) {
     mSeq = seq;
-    mBlock = block;
-    mVar = var;
     mA = Z.ZERO;
     mMin = var == 0 ? Z.ZERO : Z.TEN.pow(block - 1);
     mMod = Z.TEN.pow(block);

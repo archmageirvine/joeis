@@ -38,7 +38,7 @@ public class A055494 extends PrimePositionSubsequence {
     final StringBuilder sb = new StringBuilder("[");
     for (int k = 0; k <= poly.degree(); ++k) {
       sb.append(k == 0 ? '[' : ',');
-      sb.append(poly.coeff(k).toString());
+      sb.append(poly.coeff(k));
     }
     sb.append("],[-1]]");
     return sb.toString();

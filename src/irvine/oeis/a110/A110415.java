@@ -16,6 +16,6 @@ public class A110415 implements Sequence {
   public Z next() {
     ++mN;
     mF = mF.multiply(mN);
-    return new Z(String.valueOf(mN) + mF.toString()).divide(mN);
+    return new Z(mN + mF.toString()).divide(mN);
   }
 }

@@ -66,8 +66,8 @@ public class A055547 implements Sequence {
         for (long bits = 0; bits < limit(q); ++bits) {
           ltup.add(toTuple(bits, q));
           final List<Integer> r = new ArrayList<>();
-          for (int k = 0; k < m; ++k) {
-            r.add(ltup.get(k).get(n - m - 1));
+          for (final List<Integer> t : ltup.subList(0, m)) {
+            r.add(t.get(n - m - 1));
           }
           r.addAll(ltup.get(m).subList(n - m - 1, ltup.get(m).size()));
           final List<Integer> c = new ArrayList<>(ltup.get(m).subList(0, n - m));

@@ -20,7 +20,7 @@ public class A309148 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(d * k, d).multiply(((n + d) & 1) == 0 ? 1 : -1)
-      .multiply(Euler.phi(Z.valueOf(n / d)))).divide(n * k);
+    return Integers.SINGLETON.sumdiv(n, d -> Binomial.binomial(d * (long) k, d).multiply(((n + d) & 1) == 0 ? 1 : -1)
+      .multiply(Euler.phi(Z.valueOf(n / d)))).divide(n * (long) k);
   }
 }

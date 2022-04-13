@@ -12,6 +12,6 @@ public class A260531 extends A060205 {
 
   /** Construct the sequence. */
   public A260531() {
-    super(p -> Z.ONE.shiftLeft(p).add(1).pow(p - 1).mod(Z.valueOf(p * p)));
+    super(p -> Z.ONE.shiftLeft(p).add(1).pow(p - 1).mod(Z.valueOf(p * (long) p)));
   }
 }

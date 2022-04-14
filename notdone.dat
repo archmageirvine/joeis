@@ -141,7 +141,7 @@ A002169 A partition function -- Ising model?, could not get paper
 A002170 A partition function -- Ising model?, could not get paper
 A002268 Dimensions of integral lattices that are irreducible modulo every prime (there may be missing terms!)
 A002273 Theta series, paper available, but insufficient detail?
-A002304 Partially done, can't quite make it work, papers are available
+A002304 Numerators of coefficients in asymptotic expansion of (2/Pi)*Integral_{0..inf} (sin x / x)^n dx
 A002305 Simple dependency on A002304
 A002319 Finite groups, conjugacy classes
 A002336 Maximal kissing number of n-dimensional laminated lattice
@@ -162,7 +162,7 @@ A002773 Matroids, calculation estimated to be hard
 A002786 Semigroups, hard, some code for GAP might be available
 A002787 Semigroups, hard, some code for GAP might be available
 A002788 Semigroups, hard, some code for GAP might be available
-A002810 English syllables, some formulas exist, pretty stupid overall
+A002810 English syllables, some formulas exist, dumb
 A002823 Metropolis sequence, fractal like, paper available not obvious
 A002827 Unitary perfect, difficult to make a useful implementation
 A002833 Boolean fns, have paper, seq. is in table, but origin unclear
@@ -216,17 +216,14 @@ A003035 Maximal number of 3-tree rows in n-tree orchard problem
 A003036 Number of simplicial arrangements of n lines in the plane
 A003039 Maximal number of prime implicants of a Boolean function of n variables, hard
 A003041 A cycle index style problem, have paper
-A003042 Number of directed Hamiltonian cycles (or Gray codes) on n-cube, hard?
 A003055 Match-stick graphs, homeomorphism is hard to understand
 A003061 Number of non-Abelian (finite) groups with n conjugacy classes, hard, depends A073043
-A003064 Minimal addition chain -- hard to do correctly in sensible time
-A003065 Number of integers with an addition chain of length n
 A003075 Minimal sorting numbers, hard
 A003090 Latin squares, hard
-A003104 Number of hexagonal n-element polyominoes whose graph is a path
+A003104 Number of hexagonal n-element polyominoes whose graph is a path, cf. A336758 needs symmetry constraint?
 A003119 Susceptibility for diamond, have paper
 A003155 Halving chess board - probably possible but lot of effort for small number of terms
-A003171 Finite sequence, but not clear what all the terms are, class groups
+A003171 Class groups [pari code exists]
 A003178 Number of indecomposable self-dual binary codes of length 2n
 A003179 Number of self-dual binary codes of length 2n
 A003181 Nondegenerate Boolean functions of n variables
@@ -258,7 +255,6 @@ A003220 Susceptibility series for diamond
 A003279 High temperature series for spherical model susceptibility on 3-dimensional simple cubic lattice
 A003296 Coefficients of modular function g_2(tau), have paper
 A003297 Coefficients of modular function g_3(tau), have paper
-A003313 Length of shortest addition chain for n, probably possible for smallish values
 A003322 Necklace permutations, Knuth must have a good method, existing paper doesn't explain
 A003323 Multicolor Ramsey numbers R(3,3,...,3)
 A003416 Sociable numbers, hard to make reasonable program, status of some small numbers not known?
@@ -314,7 +310,7 @@ A004043 The coding-theoretic function A(n,8,8)
 A004044 Size of minimal covering code in {Z_3}^n with covering radius 1
 A004045 Minimal size of binary code of length n such that every vector is within distance 1 of at least 2 codewords
 A004047 The coding-theoretic function A(n,10,9)
-A004048 Theta series, might be possible, not in Rains/Sloane paper?
+A004048 Theta series, not in Rains/Sloane paper?
 A004052 The coding-theoretic function A(n,14,8)
 A004056 The coding-theoretic function A(n,14,12)
 A004066 Bicolored, regular, trivalent (see note I added to seq, cf. A008325)
@@ -533,7 +529,7 @@ A006557 Minimal discriminant of number field of degree n
 A006560 Smallest starting prime for n consecutive primes in arithmetic progression, hard
 A006574 Number of domino n-tuples, insufficient detail
 A006602 Number of hierarchical models with linear terms forced, dep. on A003182
-A006607 I think the OEIS entry is incorrect
+A006607 Number of labeled connected rooted trivalent graphs with 2n nodes, I think the OEIS entry is incorrect
 A006627 Number of nonisomorphic 2-graphs with n nodes with first and second cohomology invariants both 0, have paper two-graphs.pdf
 A006638 Restricted postage stamp problem with n denominations and 2 stamps, have paper, and A001212
 A006639 Restricted postage stamp problem
@@ -586,10 +582,10 @@ A006810 Percolation series for cubic lattice
 A006811 Percolation series for b.c.c. lattice
 A006812 Percolation series for f.c.c. lattice
 A006813 Percolation series for directed hexagonal lattice
-A006828 From fundamental unit of Z[(-n)^{1/4}], have paper with algorithm, but hard
-A006829 From fundamental unit of Z[(-n)^{1/4}], have paper with algorithm, but hard
-A006830 From fundamental unit of Z[(-n)^{1/4}], have paper with algorithm, but hard
-A006831 From fundamental unit of Z[(-n)^{1/4}], have paper with algorithm, but hard
+A006828 From fundamental unit of Z[(-n)^{1/4}], have paper with algorithm, hard
+A006829 From fundamental unit of Z[(-n)^{1/4}], have paper with algorithm, hard
+A006830 From fundamental unit of Z[(-n)^{1/4}], have paper with algorithm, hard
+A006831 From fundamental unit of Z[(-n)^{1/4}], have paper with algorithm, hard
 A006832 Discriminants of totally real cubic fields
 A006835 Percolation series for directed square lattice
 A006836 Percolation series for directed hexagonal lattice
@@ -674,7 +670,7 @@ A007271 Zero-field low-temperature series for 3-state Potts model, have paper
 A007276 Expansion of free energy series related to Potts model, have paper
 A007277 Expansion of susceptibility series related to Potts model, have paper
 A007278 Expansion of susceptibility series related to Potts model, have paper
-A007281 Number of `(n,2)'-sequences of length 2n, paper available, likely very hard
+A007281 Number of `(n,2)'-sequences of length 2n, paper available, hard
 A007282 Number of hexaflexagons with 3n triangles that can be folded from a straight strip of paper, insufficient detail, might be possible
 A007285 Minimum diameter of an integral set of n points in the plane, not all on a line, have paper
 A007287 Expansion of layer susceptibility series for cubic lattice, have paper
@@ -1816,7 +1812,7 @@ A055534 Number of labeled order relations on n nodes in which longest chain has 
 A055545 Number of matroids on n points
 A055564 Bisection of A055878
 A055614 Number of isomorphism classes of complex filiform Lie algebras of dimension n
-A055674 a(n) = least nonnegative integer h such that (n,h) is not collinear with any 2 points in the set S(n-1) := {(m,a(m)), (m,b(m)): m = 0,1,...,n-1} for n >= 1 [sequence broken?]
+A055674 a(n) = least nonnegative integer h such that (n,h) is not collinear with any 2 points in the set S(n-1) := {(m,a(m)), (m,b(m)): m = 0,1,...,n-1} for n >= 1 [sequence broken?, emailed Kimberling]
 A055675 b(n) of above [sequence broken?]
 A055676 b(n)-a(n), where a, b are given by A055674, A055675.
 A055877 Least increasing sequence with a(1) = 1 and Hankel transform {1,1,1,1,...}
@@ -1824,3 +1820,4 @@ A055878 Least positive sequence with Hankel transform {1,1,1,1,1,...}
 A055907 Triangle: number of directed site animals on a hexagonal lattice with n total sites and k sites supported in one particular way
 A055911 Column 5 of triangle A055907 [given g.f. is broken]
 A055919 Number of directed site animals on a hexagonal lattice with n sites
+A056063 Coefficients in power series of autocorrelation function of a spin s=1/2 particle in Heisenberg chain at infinite temperature

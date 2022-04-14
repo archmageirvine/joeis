@@ -2,6 +2,7 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.UnimplementedException;
 
 /**
  * A055674 a(n) = least nonnegative integer h such that (n,h) is not collinear with any 2 points in the set S(n-1) := {(m,a(m)), (m,b(m)): m = 0,1,...,n-1} for n &gt;= 1.
@@ -71,6 +72,6 @@ public class A055674 implements Sequence {
 
   @Override
   public Z next() {
-    throw new UnsupportedOperationException();
+    throw new UnimplementedException();
   }
 }

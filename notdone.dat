@@ -1821,3 +1821,9 @@ A055907 Triangle: number of directed site animals on a hexagonal lattice with n 
 A055911 Column 5 of triangle A055907 [given g.f. is broken]
 A055919 Number of directed site animals on a hexagonal lattice with n sites
 A056063 Coefficients in power series of autocorrelation function of a spin s=1/2 particle in Heisenberg chain at infinite temperature
+A056065 Order of certain group related to alternating sign matrices
+A056096 Maximum value in the distribution by first value of Prufer code of noncrossing spanning trees on a circle of n+2 points; perhaps the number whose Prufer code starts with 2
+A056098 Minimum value in the distribution by first value of Prufer code of noncrossing spanning trees on a circle of n+2 points
+A056101 Number of 8-antichain covers of a labeled n-set, probably a long binomial sum
+A056104 Number of 9-antichain covers of a labeled n-set
+

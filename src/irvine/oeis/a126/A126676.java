@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A126676 Product_{i=3..n} |Stirling_1(i, 3)|.
+ * A126676 Product_{i=3..n} |Stirling_1(i,3)|.
  * @author Georg Fischer
  */
 public class A126676 implements Sequence {

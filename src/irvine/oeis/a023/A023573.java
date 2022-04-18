@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023573 Sum of distinct prime divisors of p(n)-3.
+ * A023573 Sum of distinct prime divisors of prime(n)-3.
  * @author Sean A. Irvine
  */
 public class A023573 extends A000040 {

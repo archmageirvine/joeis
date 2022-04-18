@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a053.A053015;
 
 /**
- * A112406 (n+1)^((n+1)^n) - n^(n^(n-1)).
+ * A112406 a(n) = (n+1)^((n+1)^n) - n^(n^(n-1)).
  * @author Georg Fischer
  */
 public class A112406 extends DifferenceSequence {

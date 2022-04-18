@@ -10,7 +10,7 @@ import irvine.math.q.Rationals;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A056079 Number of 7x7 binary matrices with n ones, with no zero rows or columns, up to row and column permutation.
+ * A056079 Number of 7 X 7 binary matrices with n ones, with no zero rows or columns, up to row and column permutation.
  * @author Sean A. Irvine
  */
 public class A056079 extends FiniteSequence {

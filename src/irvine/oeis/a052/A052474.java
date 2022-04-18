@@ -12,7 +12,7 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A052474 implements Sequence {
 
-  private final DynamicLongArray mA = new DynamicLongArray(); // trailing element of each row
+  protected final DynamicLongArray mA = new DynamicLongArray(); // trailing element of each row
   private final TreeSet<Long> mUsed = new TreeSet<>();
 
   private boolean isOk(long s) {

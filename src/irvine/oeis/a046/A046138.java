@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a023.A023201;
 
 /**
- * A046138 p, p+6 and p+8 are primes.
+ * A046138 Primes p such that p+6 and p+8 are also primes.
  * @author Sean A. Irvine
  */
 public class A046138 extends A023201 {

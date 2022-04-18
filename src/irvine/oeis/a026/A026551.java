@@ -4,7 +4,7 @@ package irvine.oeis.a026;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A026551 a(n) = Sum{T(i,j)}, 0&lt;=j&lt;=i, 0&lt;=i&lt;=2n, T given by A026536.
+ * A026551 Expansion of 3*(1+2*x-2*x^2)/((1-x)*(1-6*x^2)).
  * @author Georg Fischer
  */
 public class A026551 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180569 The Wiener index of the P_3 x P_n grid, where P_m is the path graph on m nodes. The Wiener index of a connected graph is the sum of distances between all unordered pairs of nodes in the graph.
+ * A180569 The Wiener index of the P_3 X P_n grid, where P_m is the path graph on m nodes. The Wiener index of a connected graph is the sum of distances between all unordered pairs of nodes in the graph.
  * @author Georg Fischer
  */
 public class A180569 extends GeneratingFunctionSequence {

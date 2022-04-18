@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A078608 a(n) = ceiling( 2/(2^(1/n)-1)).
+ * A078608 a(n) = ceiling(2/(2^(1/n)-1)).
  * @author Georg Fischer
  */
 public class A078608 extends FloorSequence {

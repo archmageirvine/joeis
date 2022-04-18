@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.SelfQuotientSequence;
 
 /**
- * A203423 w(n+1)/(2*w(n)), where w=A203422.
+ * A203423 a(n) = w(n+1)/(2*w(n)), where w=A203422.
  * @author Georg Fischer
  */
 public class A203423 extends SelfQuotientSequence {

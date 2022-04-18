@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A230664 Floor(3^n / n^2).
+ * A230664 a(n) = floor(3^n/n^2).
  * @author Georg Fischer
  */
 public class A230664 extends FloorSequence {

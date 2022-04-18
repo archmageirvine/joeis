@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020700 Sum of n plus its prime factors = sum of n+1 plus its prime factors.
+ * A020700 Numbers k such that k + sum of its prime factors = (k+1) + sum of its prime factors.
  * @author Sean A. Irvine
  */
 public class A020700 implements Sequence {

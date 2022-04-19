@@ -3,13 +3,12 @@ package irvine.oeis.transform;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.List;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 
@@ -19,9 +18,28 @@ import irvine.oeis.Sequence;
  */
 public class MobiusTransformSequence implements Sequence {
 
-  private final Sequence mSeq;
-  private final ArrayList<Z> mTerms = new ArrayList<>();
+  private final MemorySequence mSeq;
+  private final int mOffset;
   private final Z mInitialTerm;
+  private int mN = -1;
+
+  /**
+   * Get the next term from the Mobius transform of the given sequence.
+   * @param seq sequence of terms
+   * @return transform value
+   */
+  public static Z mobiusTransform(final List<Z> seq) {
+    final int n = seq.size() - 1;
+    Z sum = Z.ZERO;
+    for (final Z dd : Cheetah.factor(n).divisors()) {
+      final int d = dd.intValue();
+      final int m = Mobius.mobius(n / d);
+      if (m != 0) {
+        sum = sum.signedAdd(m == 1, seq.get(d));
+      }
+    }
+    return sum;
+  }
 
   /**
    * Creates a new Mobius transform sequence of the given sequence, skipping
@@ -32,10 +50,8 @@ public class MobiusTransformSequence implements Sequence {
    * @param initialTerm initial term to return
    */
   public MobiusTransformSequence(final Sequence seq, final int skip, final Z initialTerm) {
-    mSeq = seq;
-    for (int k = 0; k < skip; ++k) {
-      seq.next();
-    }
+    mSeq = MemorySequence.cachedSequence(seq);
+    mOffset = skip - 1;
     mInitialTerm = initialTerm;
   }
 
@@ -50,35 +66,25 @@ public class MobiusTransformSequence implements Sequence {
     this(seq, skip, Z.ZERO);
   }
 
-  /**
-   * Get the next term from the Mobius transform of the given sequence.
-   * @param seq sequence of terms
-   * @return transform value
-   */
-  public static Z mobiusTransform(final List<Z> seq) {
-    final int n = seq.size() - 1;
-    Z a = Z.ZERO;
+  private Z mobiusTransform(final int n) {
+    Z sum = Z.ZERO;
     for (final Z dd : Cheetah.factor(n).divisors()) {
       final int d = dd.intValue();
-      a = ZUtils.mobiusAdd(Mobius.mobius(n / d), a, seq.get(d));
+      final int m = Mobius.mobius(n / d);
+      if (m != 0) {
+        final Z t = mSeq.a(mOffset + d);
+        if (t == null) {
+          return null; // Handle finite sequences
+        }
+        sum = sum.signedAdd(m == 1, t);
+      }
     }
-    return a;
+    return sum;
   }
 
   @Override
   public Z next() {
-    if (mTerms.isEmpty()) {
-      mTerms.add(Z.ZERO);
-      return mInitialTerm;
-    }
-    // Recomputes for each term, not the most efficient way perhaps,
-    // but saves a lot of housekeeping and memory
-    final Z t = mSeq.next();
-    if (t == null) {
-      return null;
-    }
-    mTerms.add(t);
-    return mobiusTransform(mTerms);
+    return ++mN == 0 ? mInitialTerm : mobiusTransform(mN);
   }
 
   /**

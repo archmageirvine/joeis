@@ -18,8 +18,7 @@ public class A033938 extends A002385 {
       if (Z.TWO.equals(p) || Z.FIVE.equals(p)) {
         return p;
       }
-      final IntegersModMul r = new IntegersModMul(p);
-      final Z period = r.order(Z.TEN.mod(p));
+      final Z period = new IntegersModMul(p).order(Z.TEN);
       if (StringUtils.isPalindrome(period.toString())) {
         return p;
       }

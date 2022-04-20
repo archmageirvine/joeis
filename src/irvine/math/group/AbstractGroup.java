@@ -131,7 +131,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
 
   protected void checkContains(final E element) {
     if (!contains(element)) {
-      throw new IllegalArgumentException(toString() + ": " + element);
+      throw new IllegalArgumentException(this + ": " + element);
     }
   }
 

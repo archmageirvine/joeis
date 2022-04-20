@@ -20,7 +20,6 @@ public class A002371 implements Sequence {
     if (Z.TWO.equals(mP) || Z.FIVE.equals(mP)) {
       return Z.ZERO;
     }
-    final IntegersModMul r = new IntegersModMul(mP);
-    return r.order(Z.TEN.mod(mP));
+    return new IntegersModMul(mP).order(Z.TEN);
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A157207 Triangle T(n, k, m) = (m*(n-k) + 1)*T(n-1, k-1, m) + (m*k + 1)*T(n-1, k, m) + m*f(n,k)*T(n-2, k-1, m)
+ * A157207 Triangle T(n, k, m) = (m*(n-k) + 1)*T(n-1, k-1, m) + (m*k + 1)*T(n-1, k, m) + m*f(n,k)*T(n-2, k-1, m) with T(n, 0, m) = T(n, n, m) = 1, f(n, k) = k if k &lt;= floor(n/2) otherwise n-k, and m = 1, read by rows.
  * with T(n, 0, m) = T(n, n, m) = 1, f(n, k) = k if k &lt;= floor(n/2) otherwise n-k, and m = 1, read by rows.
  * @author Georg Fischer
  */

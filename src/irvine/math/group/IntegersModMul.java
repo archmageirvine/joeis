@@ -105,6 +105,21 @@ public class IntegersModMul extends AbstractGroup<Z> {
   }
 
   @Override
+  public Z order(final Z element) {
+    final Z t = element.mod(mMod); // to support elements outside range
+    if (t.isZero()) {
+      return Z.ONE;
+    }
+    long cnt = 1;
+    Z u = t;
+    while (!Z.ONE.equals(u)) {
+      u = u.modMultiply(t, mMod);
+      ++cnt;
+    }
+    return Z.valueOf(cnt);
+  }
+
+  @Override
   public String toString() {
     return "\\Z_{(" + mMod + ")}";
   }

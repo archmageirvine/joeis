@@ -101,7 +101,6 @@ A001664 Insufficient detail, Weber functions, have doc
 A001676 Homotopy n-spheres, hard
 A001691 Two element generating sets of S_n. Have paper but not English.
 A001776 Insufficient detail, Jordan algebras
-A001843 A(n,4,4)
 A001928 Euler transform A001930
 A001930 Posets, hard
 A002006 Almost trivalent maps, like A002005?
@@ -301,20 +300,10 @@ A004030 Number of n-dimensional Bravais lattices (version 1)
 A004031 Number of n-dimensional crystal systems
 A004032 Number of n-dimensional crystal families
 A004034 Theta series of Leech lattice with respect to deep hole of type A_1, insufficient detail
-A004035 The coding-theoretic function A(n,4,5)
-A004036 The coding-theoretic function A(n,4,6)
-A004037 The coding-theoretic function A(n,6,4)
-A004038 The coding-theoretic function A(n,6,5)
-A004039 The coding-theoretic function A(n,6,6)
-A004043 The coding-theoretic function A(n,8,8)
 A004044 Size of minimal covering code in {Z_3}^n with covering radius 1
 A004045 Minimal size of binary code of length n such that every vector is within distance 1 of at least 2 codewords
-A004047 The coding-theoretic function A(n,10,9)
 A004048 Theta series, not in Rains/Sloane paper?
-A004052 The coding-theoretic function A(n,14,8)
-A004056 The coding-theoretic function A(n,14,12)
 A004066 Bicolored, regular, trivalent (see note I added to seq, cf. A008325)
-A004067 The coding-theoretic function A(n,6,7)
 A004069 Numbers of points in nontrivial partial geometries, insufficient detail
 A004075 Number of Skolem sequences of order n, hard to be competitive
 A004076 Number of hooked Skolem sequences of order n
@@ -425,19 +414,6 @@ A005806 Comparative probability orderings on n elements
 A005816 4-valent labeled graphs with n nodes where multiple edges and loops are allowed, have paper
 A005841 Number of 4-dimensional polytopes with n vertices, hard
 A005842 Minimal integer m such that an m X m square contains non-overlapping squares of sides 1, some conjectural
-A005851 The coding-theoretic function A(n,8,5)
-A005852 The coding-theoretic function A(n,8,6)
-A005853 The coding-theoretic function A(n,8,7)
-A005854 The coding-theoretic function A(n,10,6)
-A005855 The coding-theoretic function A(n,10,7)
-A005856 The coding-theoretic function A(n,10,8)
-A005857 The coding-theoretic function A(n,12,7)
-A005858 The coding-theoretic function A(n,12,8)
-A005859 The coding-theoretic function A(n,12,9)
-A005860 The coding-theoretic function A(n,12,10)
-A005861 The coding-theoretic function A(n,14,9)
-A005862 The coding-theoretic function A(n,14,10)
-A005863 The coding-theoretic function A(n,14,11)
 A005864 The coding-theoretic function A(n,4)
 A005865 The coding-theoretic function A(n,6)
 A005866 The coding-theoretic function A(n,8)

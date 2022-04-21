@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A005814 implements Sequence {
 
-  private Z[] mA = {Z.ONE, Z.TWO, Z.valueOf(47), Z.valueOf(4720)};
+  private final Z[] mA = {Z.ONE, Z.TWO, Z.valueOf(47), Z.valueOf(4720)};
   private long mN = -1;
 
   @Override

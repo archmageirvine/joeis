@@ -17,7 +17,7 @@ public class A304972 extends MemoryFunction2<Integer, Z> implements Sequence {
   protected Z compute(final Integer n, final Integer k) {
     Z res = n < 2 && n >= 0 && n.equals(k) ? Z.ONE : Z.ZERO;
     if (n > 1) {
-      res = res.add(get(n - 2, k).multiply(k).add(get(n - 2, k -1).add(get(n - 2, k - 2))));
+      res = res.add(get(n - 2, k).multiply(k).add(get(n - 2, k - 1).add(get(n - 2, k - 2))));
     }
     return res;
   }

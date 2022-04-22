@@ -20,8 +20,8 @@ public class A006777 implements Sequence {
   // Cf. A001334
   private static final int BITS_PER_COORDINATE = 16;
   private static final int BIAS = 1 << (BITS_PER_COORDINATE - 1);
-  private static final int ORIGIN = c(0, 0);
-  private static final int[] DELTAS = {2 << BITS_PER_COORDINATE,
+  protected static final int ORIGIN = c(0, 0);
+  protected static final int[] DELTAS = {2 << BITS_PER_COORDINATE,
     (1 << BITS_PER_COORDINATE) + 1,
     ((-1) << BITS_PER_COORDINATE) + 1,
     (-2) << BITS_PER_COORDINATE,
@@ -34,10 +34,10 @@ public class A006777 implements Sequence {
   }
 
   protected int mN = 0;
-  private int[] mPath = null;
-  private int[] mU = null;
+  protected int[] mPath = null;
+  protected int[] mU = null;
 
-  private void setPathElement(final int pos, final int value) {
+  protected void setPathElement(final int pos, final int value) {
     mPath[pos] = value;
   }
 
@@ -50,11 +50,11 @@ public class A006777 implements Sequence {
     return false;
   }
 
-  private boolean check(final int point, final int n, final int k) {
+  protected boolean check(final int point, final int n, final int k) {
     return !contains(point, n) && isSingle(k - 1);
   }
 
-  private boolean isSingle(final int k) {
+  protected boolean isSingle(final int k) {
     return k < 4 || mU[k - 4] + mU[k - 3] < mU[k - 1] + mU[k];
   }
 
@@ -62,7 +62,7 @@ public class A006777 implements Sequence {
     return 2;
   }
 
-  private long count(final int point, final int n, final int theta, final int u, final int k) {
+  protected long count(final int point, final int n, final int theta, final int u, final int k) {
     mPath[n] = point;
     if (n == mN) {
       mU[k] = u;
@@ -94,7 +94,7 @@ public class A006777 implements Sequence {
   @Override
   public Z next() {
     mPath = new int[++mN + 1];
-    mU = new int[mPath.length];
+    mU = new int[(model() - 1) * mPath.length];
     setPathElement(0, ORIGIN);
     return Z.valueOf(count(ORIGIN + DELTAS[0], 1, 0, 1, 1));
   }

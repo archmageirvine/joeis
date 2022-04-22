@@ -10,8 +10,6 @@ import irvine.oeis.a000.A000040;
  */
 public class A158217 extends A000040 {
 
-  private long mN = 0;
-
   @Override
   public Z next() {
     while (true) {

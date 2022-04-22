@@ -51,13 +51,15 @@ public class ContinuedFractionSequence implements Sequence {
    */
   public ContinuedFractionSequence(final Sequence seq, final int base) {
     this(new DecimalExpansionSequence(1, new CR() {
+      private static final int EXTRA_PRECISION = 5;
       private Z mNum = Z.ZERO;
       private Z mDen = Z.ONE;
       private final Z mBase = Z.valueOf(base);
 
       @Override
       protected Z approximate(final int precision) {
-        while (mNum.bitLength() <= -precision) {
+        final int wp = EXTRA_PRECISION - precision;
+        while (mNum.bitLength() <= wp) {
           final Z digit = seq.next();
           if (digit.compareTo(mBase) >= 0) {
             throw new UnsupportedOperationException("Value too large in underlying sequence: " + digit);
@@ -67,7 +69,7 @@ public class ContinuedFractionSequence implements Sequence {
         }
         return CR.valueOf(new Q(mNum, mDen)).getApprox(precision);
       }
-    }));
+    }), 1000);
   }
 
   @Override

@@ -16,6 +16,6 @@ public class A157632 extends Triangle {
 
   @Override
   public Z compute(final int n, final int m) {
-    return m == 0 || n == m ? Z.ONE : Z.valueOf(3 * n).multiply(m).multiply(n - m);
+    return m == 0 || n == m ? Z.ONE : Z.valueOf(3L * n).multiply(m).multiply(n - m);
   }
 }

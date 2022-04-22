@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 public class A070676 implements Sequence {
 
   private int mN;
-  private Z mBase;
+  private final Z mBase;
 
   /** Construct the sequence. */
   public A070676() {
@@ -20,7 +20,7 @@ public class A070676 implements Sequence {
 
   /**
    * Generic constructor with parameter
-   * @param base take this to the mth power
+   * @param base base of power
    */
   public A070676(final int base) {
     mN = 0;

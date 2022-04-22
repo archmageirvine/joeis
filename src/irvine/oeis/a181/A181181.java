@@ -12,7 +12,6 @@ import irvine.oeis.Sequence;
 public class A181181 implements Sequence {
 
   private int mN = 0;
-  private Z mProd = Z.ONE;
 
   @Override
   public Z next() {

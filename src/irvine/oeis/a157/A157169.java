@@ -10,9 +10,8 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A157169 extends Triangle {
 
-  private int mN;
-  private int mAdd;
-  private int mM;
+  private final int mAdd;
+  private final long mM;
 
   /** Construct the sequence. */
   public A157169() {
@@ -25,7 +24,6 @@ public class A157169 extends Triangle {
    * @param m multiplicative parameter
    */
   public A157169(final int add, final int m) {
-    mN = -1;
     mAdd = add;
     mM = m;
     hasRAM(true);

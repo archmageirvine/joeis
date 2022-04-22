@@ -12,8 +12,7 @@ public class A091113 implements Sequence {
 
   private final Fast mPrime = new Fast();
   private int mN;
-  private int mMod;
-  private int mRes;
+  private final int mMod;
 
   /** Construct the sequence. */
   public A091113() {
@@ -27,7 +26,6 @@ public class A091113 implements Sequence {
    */
   public A091113(final int mod, final int res) {
     mMod = mod;
-    mRes = res;
     mN = res - mod;
   }
 

@@ -5,14 +5,12 @@ import irvine.oeis.triangle.Triangle;
 
 /**
  * A157147 Triangle T(n, k, m) = (m*(n-k) + 1)*T(n-1, k-1, m) + (m*k + 1)*T(n-1, k, m) + m*k*(n-k)*T(n-2, k-1, m) with T(n, 0, m) = T(n, n, m) = 1 and m = 1, read by rows.
- * with T(n, 0, m) = T(n, n, m) = 1 and m = 1, read by rows.
  * @author Georg Fischer
  */
 public class A157147 extends Triangle {
 
-  private int mN;
-  private int mAdd;
-  private int mM;
+  private final int mAdd;
+  private final long mM;
 
   /** Construct the sequence. */
   public A157147() {
@@ -25,7 +23,6 @@ public class A157147 extends Triangle {
    * @param m multiplicative parameter
    */
   public A157147(final int add, final int m) {
-    mN = -1;
     mAdd = add;
     hasRAM(false);
     mM = m;

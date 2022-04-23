@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A055069.
+ * A055069 Telephone country codes in use as of Jun 13 2000.
  * @author Sean A. Irvine
  */
 public class A055069 extends NoncomputableSequence {

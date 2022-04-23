@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a064.A064062;
 
 /**
- * A157328 Expansion of 1/(1-2x*c(4x)) with c(x) g.f. of Catalan numbers A000108.
+ * A157328 Expansion of 1/(1-2x*c(4x)) with c(x) g.f. of Catalan numbers (A000108).
  * @author Georg Fischer
  */
 public class A157328 implements Sequence {

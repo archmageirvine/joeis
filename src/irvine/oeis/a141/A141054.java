@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141054 Binomial(n+8,8)*8^n and 8-idempotent numbers. example: A059300 Triangle of idempotent numbers binomial(n,k)*k^(n-k), version 4. A059300 formatted as a triangular array: 1 72 ...........
+ * A141054 8-idempotent numbers: a(n) = binomial(n+8,8)*8^n.
  * @author Georg Fischer
  */
 public class A141054 extends GeneratingFunctionSequence {

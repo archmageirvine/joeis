@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A172128 Floor((r^n)/n), where r = golden ratio = (1+sqrt(5))/2.
+ * A172128 a(n) = floor(phi^n/n), where phi = golden ratio = (1+sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A172128 extends FloorSequence {

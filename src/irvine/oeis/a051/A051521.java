@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A051521 Number of ways to represent n as k/d(k), where d(k) is the number of divisors of k, A000005.
+ * A051521 Number of ways to represent n as k/d(k), where d(k) = A000005(k) is the number of divisors of k.
  * @author Sean A. Irvine
  */
 public class A051521 implements Sequence {

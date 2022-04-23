@@ -411,7 +411,6 @@ A005765 Size of Doehlert-Klee design with n blocks (some terms just bounds?)
 A005779 Largest integer such that every tournament on n nodes contains a consistent set of n arcs
 A005788 Conductors of elliptic curves
 A005806 Comparative probability orderings on n elements
-A005816 4-valent labeled graphs with n nodes where multiple edges and loops are allowed, have paper
 A005841 Number of 4-dimensional polytopes with n vertices, hard
 A005842 Minimal integer m such that an m X m square contains non-overlapping squares of sides 1, some conjectural
 A005864 The coding-theoretic function A(n,4)

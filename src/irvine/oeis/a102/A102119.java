@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A102171 Iccanobirt semiprime indices (1 of 15): Indices of semiprime numbers in A102111.
+ * A102119 Iccanobirt numbers (9 of 15): a(n) = R(a(n-1) + a(n-2) + R(a(n-3))), where R is the digit reversal function A004086.
  * @author Georg Fischer
  */
 public class A102119 implements Sequence {

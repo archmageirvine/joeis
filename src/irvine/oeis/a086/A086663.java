@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086663 Number of non-attacking knights on a n*n board with all non-perimeteral squares removed.
+ * A086663 Number of non-attacking knights on an n X n board with all non-perimeteral squares removed.
  * @author Georg Fischer
  */
 public class A086663 extends GeneratingFunctionSequence {

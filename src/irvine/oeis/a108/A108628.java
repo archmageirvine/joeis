@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108628 n-th term of the crystal ball sequence for A_{n+1} lattice for n&gt;=0.
+ * A108628 n-th term of the crystal ball sequence for A_{n+1} lattice for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A108628 extends HolonomicRecurrence {

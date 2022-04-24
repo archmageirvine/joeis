@@ -1808,3 +1808,4 @@ A056532 Bond percolation series for square lattice near a wall
 A056575 Series for first parallel moment of square lattice bond percolation near a wall.
 A056598 Series for 2nd parallel moment of square lattice bond percolation near a wall (eventually goes negative)
 A056599 Series for first perpendicular moment of square lattice bond percolation near a wall (eventually goes negative).
+A056601 Series for 2nd perpendicular moment of square lattice bond percolation near a wall (eventually goes negative)

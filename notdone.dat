@@ -1809,3 +1809,6 @@ A056575 Series for first parallel moment of square lattice bond percolation near
 A056598 Series for 2nd parallel moment of square lattice bond percolation near a wall (eventually goes negative)
 A056599 Series for first perpendicular moment of square lattice bond percolation near a wall (eventually goes negative).
 A056601 Series for 2nd perpendicular moment of square lattice bond percolation near a wall (eventually goes negative)
+A056613 Number of n-celled pseudo still lifes in Conway's Game of Life, up to rotation and reflection.
+A056614 Number of n-celled P2-oscillators in Conway's game of Life
+A056620 Partition function coefficients for square lattice spin 3 Ising model

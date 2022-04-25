@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A056600.
+ * A056600 a(n) is smallest number A such that there is an equality of the form (A=Product of n distinct primes) = (B=Product of n distinct primes) + (C=Product of n distinct primes) with gcd(A,B) = gcd(B,C) = gcd(A,C) = 1, B &lt; C.
  * @author Sean A. Irvine
  */
 public class A056600 implements Sequence {

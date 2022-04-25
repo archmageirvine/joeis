@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A056600.
+ * A056602 Numbers A such that there is an equation of the form (A = Product of m + 1 primes) = (B = Product of m primes) + (C = Product of m primes), where A*B*C is a primorial number (A002110).
  * @author Sean A. Irvine
  */
 public class A056602 implements Sequence {

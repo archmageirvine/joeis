@@ -6,7 +6,7 @@ import irvine.oeis.a008.A008833;
 import irvine.oeis.a055.A055229;
 
 /**
- * A056622.
+ * A056623 Largest unitary square divisor of n: if n=LLgggf (see A056192) and a(n) = LL, then its complementary divisor n/LL = gggf and gcd(L^2, n/LL) = 1.
  * @author Sean A. Irvine
  */
 public class A056623 extends A008833 {

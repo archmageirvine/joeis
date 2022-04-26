@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A102670 Number of digits >= 2 in the decimal representations of all integers from 0 to n.
+ * A102670 Number of digits &gt;= 2 in the decimal representations of all integers from 0 to n.
  * @author Georg Fischer
  */
 public class A102670 implements Sequence {

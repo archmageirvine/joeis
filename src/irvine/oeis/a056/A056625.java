@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002931;
 import irvine.util.Point;
 
 /**
- * A056621 Series expansion for radius of gyration on square lattice.
+ * A056625 Series expansion for first area weighted moment for square lattice.
  * @author Sean A. Irvine
  */
 public class A056625 extends A002931 {

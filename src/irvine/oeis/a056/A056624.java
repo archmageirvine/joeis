@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056622.
+ * A056624 Number of unitary square divisors of n.
  * @author Sean A. Irvine
  */
 public class A056624 implements Sequence {
@@ -16,12 +16,12 @@ public class A056624 implements Sequence {
   @Override
   public Z next() {
     final FactorSequence fs = Cheetah.factor(++mN);
-    Z prod = Z.ONE;
+    int cnt = 0;
     for (final Z p : fs.toZArray()) {
       if ((fs.getExponent(p) & 1) == 0) {
-        prod = prod.multiply2();
+        ++cnt;
       }
     }
-    return prod;
+    return Z.ONE.shiftLeft(cnt);
   }
 }

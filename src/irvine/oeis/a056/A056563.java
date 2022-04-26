@@ -16,7 +16,7 @@ public class A056563 implements Sequence {
   @Override
   public Z next() {
     if (++mN <= 2) {
-      return mN == 2 ? Z.ONE: Z.ZERO;
+      return mN == 2 ? Z.ONE : Z.ZERO;
     }
     long cnt = 0;
     if (mPrime.isPrime(mN)) {

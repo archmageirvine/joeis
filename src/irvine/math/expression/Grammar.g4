@@ -8,6 +8,8 @@
 
 grammar Grammar;
 @parser::header{
+package irvine.math.expression;
+
 import irvine.math.z.Z;
 
 /**
@@ -17,6 +19,8 @@ import irvine.math.z.Z;
 }
 
 @lexer::header{
+package irvine.math.expression;
+
 import irvine.math.z.Z;
 
 /**

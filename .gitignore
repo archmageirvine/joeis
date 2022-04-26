@@ -22,9 +22,9 @@ build.tmp
 .idea/runConfigurations.xml
 .made
 out
-src/irvine/math/expression/Grammar.tokens
+src/irvine/math/expression/*.tokens
+src/irvine/math/expression/*.interp
 src/irvine/math/expression/GrammarLexer.java
-src/irvine/math/expression/GrammarLexer.tokens
 src/irvine/math/expression/GrammarParser.java
 src/irvine/math/expression/GrammarBaseListener.java
 src/irvine/math/expression/GrammarListener.java

@@ -21,14 +21,15 @@
   <target name="compile-grammar" description="Compile the ANTLR grammar">
     <java classname="org.antlr.v4.Tool" fork="true" failonerror="true">
       <classpath>
-        <fileset dir="${lib.dir}" includes="antlr-4.5-complete.jar" />
+        <fileset dir="${lib.dir}" includes="antlr-4.8-complete.jar" />
         <pathelement location="${src.dir}" />
       </classpath>
       <arg value="-Dlanguage=Java"/>
       <arg value="-no-visitor"/>
       <arg value="-no-listener"/>
-      <arg value="-package"/>
-      <arg value="irvine.math.expression"/>
+      <arg value="-Xexact-output-dir"/>
+      <arg value="-o"/>
+      <arg value="${src.dir}/irvine/math/expression"/>
       <arg value="${src.dir}/irvine/math/expression/Grammar.g4"/>
     </java>
   </target>
@@ -82,7 +83,7 @@
       <fileset dir="${src.dir}" includes="cheat/*.dat.gz"/>
 
       <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
-      <zipfileset src="${lib.dir}/antlr-4.5-complete.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/antlr-4.8-complete.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/teherba.jar" excludes="META-INF/**"/>
       <manifest>
@@ -126,7 +127,7 @@
       <fileset dir="${test.dir}" includes="irvine/graph/*.gph"/>
       <fileset dir="${test.dir}" includes="irvine/math/long-suck.dat"/>
 
-      <zipfileset src="${lib.dir}/antlr-4.5-complete.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/antlr-4.8-complete.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/classgraph-4.8.80.jar" excludes="META-INF/**"/>

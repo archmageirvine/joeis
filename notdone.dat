@@ -1812,3 +1812,4 @@ A056601 Series for 2nd perpendicular moment of square lattice bond percolation n
 A056613 Number of n-celled pseudo still lifes in Conway's Game of Life, up to rotation and reflection.
 A056614 Number of n-celled P2-oscillators in Conway's game of Life
 A056620 Partition function coefficients for square lattice spin 3 Ising model
+A056634 Number of polygons of length 2n with one hole on square lattice (not allowing rotations)

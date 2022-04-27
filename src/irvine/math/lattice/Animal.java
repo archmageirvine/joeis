@@ -135,7 +135,7 @@ public class Animal implements Comparable<Animal> {
   }
 
   /**
-   * Return the size of edge edge perimeter of this animal with respect to the specified lattice
+   * Return the size of edge perimeter of this animal with respect to the specified lattice
    * @param lattice the underlying lattice
    * @return perimeter size
    */

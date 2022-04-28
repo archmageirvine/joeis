@@ -13,6 +13,7 @@ public class A051213 implements Sequence {
 
   // Uses a heuristic, but any failure will be (eventually) detected
 
+  private static final int BIT_LIMIT = Integer.parseInt(System.getProperty("oeis.a051213.limit", "1000"));
   private static final int HEURISTIC_STEPS = 5;
   private final TreeSet<Z> mDone = new TreeSet<>();
   private final TreeSet<Z> mA = new TreeSet<>();
@@ -38,7 +39,9 @@ public class A051213 implements Sequence {
     for (Z s, t = Z.ZERO; (s = t.square()).compareTo(mT) <= 0; t = t.add(1)) {
       final Z v = mT.subtract(s);
       if (mDone.isEmpty() || v.compareTo(mDone.last()) > 0) {
-        mA.add(v);
+        if (v.bitLength() <= BIT_LIMIT) {
+          mA.add(v);
+        }
       } else if (mDone.add(v)) {
         throw new RuntimeException("Heuristic failure on " + s + "-" + t + " = " + v);
       }

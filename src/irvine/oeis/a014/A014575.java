@@ -13,7 +13,7 @@ public class A014575 implements Sequence {
 
   private Z mN = Z.valueOf(start() - 1);
   private Z mJump = Z.valueOf(10000);
-  private int mHalfLength = 2;
+  private int mHalfLength = mN.toString().length() / 2;
 
   protected long start() {
     return 1260;

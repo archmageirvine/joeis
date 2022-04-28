@@ -61,7 +61,7 @@ public class Pair<L, R> implements Serializable {
 
   @Override
   public int hashCode() {
-    return mLeft.hashCode() ^ mRight.hashCode();
+    return (mLeft.hashCode() * 65537) ^ mRight.hashCode();
   }
 
 }

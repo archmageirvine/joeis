@@ -38,118 +38,118 @@ expr returns [Expression v]
 
   : 'log' '(' a=expr ')'
     {
-      $expr.v = new Logarithm($a.v);
+      $ctx.v = new Logarithm($a.v);
     }
 
   | 'diff' '(' a=expr ',' IDENTIFIER ')'
     {
-      $expr.v = new Derivative($a.v, new Identifier($IDENTIFIER.text));
+      $ctx.v = new Derivative($a.v, new Identifier($IDENTIFIER.text));
     }
 
   | 'exp' '(' a=expr ')'
     {
-      $expr.v = new Exponential($a.v);
+      $ctx.v = new Exponential($a.v);
     }
 
   | 'cosh' '(' a=expr ')'
     {
-      $expr.v = new HyperbolicCosine($a.v);
+      $ctx.v = new HyperbolicCosine($a.v);
     }
 
   | 'sinh' '(' a=expr ')'
     {
-      $expr.v = new HyperbolicSine($a.v);
+      $ctx.v = new HyperbolicSine($a.v);
     }
 
   | 'tanh' '(' a=expr ')'
     {
-      $expr.v = new HyperbolicTangent($a.v);
+      $ctx.v = new HyperbolicTangent($a.v);
     }
 
   | 'lucas' '(' a=expr ')'
     {
-      $expr.v = new Lucas($a.v);
+      $ctx.v = new Lucas($a.v);
     }
 
   | 'fibonacci' '(' a=expr ')'
     {
-      $expr.v = new Fibonacci($a.v);
+      $ctx.v = new Fibonacci($a.v);
     }
 
   | 'subs' '(' a=expr ',' IDENTIFIER '=' b=expr ')'
     {
-      $expr.v = new Substitution($a.v, new Identifier($IDENTIFIER.text), $b.v);
+      $ctx.v = new Substitution($a.v, new Identifier($IDENTIFIER.text), $b.v);
     }
 
   | 'sum' '(' a=expr ',' IDENTIFIER '=' b=expr '..' c=expr ')'
     {
-      $expr.v = new Sum($a.v, new Identifier($IDENTIFIER.text), $b.v, $c.v);
+      $ctx.v = new Sum($a.v, new Identifier($IDENTIFIER.text), $b.v, $c.v);
     }
 
   | '(' a=expr ')'
     {
-      $expr.v = $a.v;
+      $ctx.v = $a.v;
     }
 
   | a=expr '!'
     {
-      $expr.v = new Factorial($a.v);
+      $ctx.v = new Factorial($a.v);
     }
 
   | a=expr '##'
     {
-      $expr.v = new Primorial($a.v, true);
+      $ctx.v = new Primorial($a.v, true);
     }
 
   | a=expr '#'
     {
-      $expr.v = new Primorial($a.v);
+      $ctx.v = new Primorial($a.v);
     }
 
   | <assoc=right> a=expr '^' b=expr
     {
-     $expr.v = new Power($a.v, $b.v);
+     $ctx.v = new Power($a.v, $b.v);
     }
 
   | '+' a=expr
     {
-      $expr.v = $a.v;
+      $ctx.v = $a.v;
     }
 
   | '-' a=expr
     {
-      $expr.v = new Negate($a.v);
+      $ctx.v = new Negate($a.v);
     }
 
   | a=expr op=('*'|'/'|'%') b=expr
     {
       if ("*".equals($op.text)) {
-        $expr.v = Multiply.create($a.v, $b.v);
+        $ctx.v = Multiply.create($a.v, $b.v);
       } else if ("/".equals($op.text)) {
-        $expr.v = Divide.create($a.v, $b.v);
+        $ctx.v = Divide.create($a.v, $b.v);
       } else {
-      $expr.v = new Modulo($a.v, $b.v);
+      $ctx.v = new Modulo($a.v, $b.v);
       }
     }
 
   | a=expr '-' b=expr
     {
-      $expr.v = Subtract.create($a.v, $b.v);
+      $ctx.v = Subtract.create($a.v, $b.v);
     }
 
   | a=expr '+' b=expr
     {
-      $expr.v = Add.create($a.v, $b.v);
+      $ctx.v = Add.create($a.v, $b.v);
     }
 
   | INTEGER
     {
-      $expr.v = new LiteralZ(new Z($INTEGER.text));
+      $ctx.v = new LiteralZ(new Z($INTEGER.text));
     }
 
   | IDENTIFIER
     {
-      $expr.v = new Identifier($IDENTIFIER.text);
+      $ctx.v = new Identifier($IDENTIFIER.text);
     }
   ;
 

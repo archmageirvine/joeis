@@ -5,6 +5,7 @@ import irvine.math.z.Z;
 import junit.framework.TestCase;
 
 /**
+ * Test the corresponding class.
  * @author Sean A. Irvine
  */
 public class AddTest extends TestCase {

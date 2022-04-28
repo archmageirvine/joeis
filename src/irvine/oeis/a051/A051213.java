@@ -4,6 +4,7 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A051213 Numbers of the form 2^x-y^2 &gt;= 0.
@@ -13,6 +14,7 @@ public class A051213 implements Sequence {
 
   // Uses a heuristic, but any failure will be (eventually) detected
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private static final int BIT_LIMIT = Integer.parseInt(System.getProperty("oeis.a051213.limit", "1000"));
   private static final int HEURISTIC_STEPS = 5;
   private final TreeSet<Z> mDone = new TreeSet<>();
@@ -36,12 +38,17 @@ public class A051213 implements Sequence {
 
   private void step() {
     mT = mT.multiply(base());
-    for (Z s, t = Z.ZERO; (s = t.square()).compareTo(mT) <= 0; t = t.add(1)) {
+    if (mVerbose) {
+      StringUtils.message("Starting search for " + mT);
+    }
+    for (Z t = mT.sqrt(); t.signum() >= 0; t = t.subtract(1)) {
+      final Z s = t.square();
       final Z v = mT.subtract(s);
+      if (v.bitLength() > BIT_LIMIT) {
+        break;
+      }
       if (mDone.isEmpty() || v.compareTo(mDone.last()) > 0) {
-        if (v.bitLength() <= BIT_LIMIT) {
-          mA.add(v);
-        }
+        mA.add(v);
       } else if (mDone.add(v)) {
         throw new RuntimeException("Heuristic failure on " + s + "-" + t + " = " + v);
       }

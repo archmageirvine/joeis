@@ -57,7 +57,10 @@ public class A051213 implements Sequence {
 
   @Override
   public Z next() {
-    if (++mN % HEURISTIC_STEPS == 0 || mA.isEmpty()) {
+    if (++mN % HEURISTIC_STEPS == 0) {
+      step();
+    }
+    while (mA.isEmpty()) {
       step();
     }
     final Z res = mA.pollFirst();

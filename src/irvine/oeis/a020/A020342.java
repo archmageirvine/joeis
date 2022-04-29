@@ -46,7 +46,7 @@ public class A020342 implements Sequence {
     for (int k = pos; k < div.length; ++k) {
       final Z[] qr = n.divideAndRemainder(div[k]);
       if (qr[1].isZero()) {
-        if (isOk(syndrome, div[k]) && isVampire(qr[0], div, k + 1, syndrome)) {
+        if (isOk(syndrome, div[k]) && isVampire(qr[0], div, k, syndrome)) {
           return true;
         }
         replace(syndrome, div[k]);

@@ -16,10 +16,10 @@ seq/10: stripped.gz
 	for ((n=10;n<100;n++)); do zgrep "^A0$$n" <$< | sed 's/^A[0-9]* ,//' >seq/$$n; done
 
 seq/100: stripped.gz
-	# 350[000] is above current number of sequences in OEIS as of 2019
+	# 370[000] is above current number of sequences in OEIS as of 2022
 	# Sometimes later sequences can be missing if the sequence is not yet submitted
 	# We need to detect this and put in placeholders
-	for ((n=100;n<350;n++)); do zgrep "^A$$n" <$< | sed 's/^A//' | awk -vn=$$n '{while (NR-1!=$$1%1000) {print n""(NR-1)" ,"0; NR=NR+1}; print}' | sed 's/^[0-9]* ,//' >seq/$$n; done
+	for ((n=100;n<370;n++)); do zgrep "^A$$n" <$< | sed 's/^A//' | awk -vn=$$n '{while (NR-1!=$$1%1000) {print n""(NR-1)" ,"0; NR=NR+1}; print}' | sed 's/^[0-9]* ,//' >seq/$$n; done
 
 stripped.gz:
 	wget http://oeis.org/stripped.gz

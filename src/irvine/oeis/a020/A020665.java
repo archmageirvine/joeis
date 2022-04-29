@@ -22,8 +22,8 @@ public class A020665 implements Sequence {
       return Z.ZERO;
     }
     int best = 0;
-    Z t = Z.valueOf(mN);
-    for (int m = 2; m <= HEURISTIC_LIMIT; ++m) {
+    Z t = Z.ONE;
+    for (int m = 1; m <= HEURISTIC_LIMIT; ++m) {
       t = t.multiply(mN);
       if (!ZUtils.containsZero(t)) {
         best = m;

@@ -3,7 +3,6 @@ package irvine.oeis.a048;
 import java.util.Arrays;
 import java.util.TreeSet;
 
-import irvine.math.Comparators;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
@@ -16,7 +15,7 @@ import irvine.oeis.Sequence;
 public class A048996 implements Sequence {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
-  private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);
+  private final TreeSet<int[]> mA = new TreeSet<>(IntegerPartition.ABRAHAM_STEGUN_SORT);
   protected int mN = -1;
   private int[] mC;
 

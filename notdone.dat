@@ -1786,9 +1786,6 @@ A055534 Number of labeled order relations on n nodes in which longest chain has 
 A055545 Number of matroids on n points
 A055564 Bisection of A055878
 A055614 Number of isomorphism classes of complex filiform Lie algebras of dimension n
-A055674 a(n) = least nonnegative integer h such that (n,h) is not collinear with any 2 points in the set S(n-1) := {(m,a(m)), (m,b(m)): m = 0,1,...,n-1} for n >= 1 [sequence broken?, emailed Kimberling]
-A055675 b(n) of above [sequence broken?]
-A055676 b(n)-a(n), where a, b are given by A055674, A055675.
 A055877 Least increasing sequence with a(1) = 1 and Hankel transform {1,1,1,1,...}
 A055878 Least positive sequence with Hankel transform {1,1,1,1,1,...}
 A055907 Triangle: number of directed site animals on a hexagonal lattice with n total sites and k sites supported in one particular way

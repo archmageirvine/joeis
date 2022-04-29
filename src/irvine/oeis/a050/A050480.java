@@ -20,10 +20,12 @@ public class A050480 implements Sequence {
     }
     for (int k = 1; k <= n.length(); ++k) {
       final String prefix = n.substring(0, k);
-      if (divisors.contains(prefix) && used.add(prefix) && isConcat(divisors, used, n.substring(k))) {
-        return true;
+      if (divisors.contains(prefix) && used.add(prefix)) {
+        if (isConcat(divisors, used, n.substring(k))) {
+          return true;
+        }
+        used.remove(prefix);
       }
-      used.remove(prefix);
     }
     return false;
   }

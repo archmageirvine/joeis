@@ -116,11 +116,7 @@ public final class English extends AbstractLanguage {
     final int digit10 = x % 100 - digit1;
     String ord = toText(x);
     if (digit10 == 10) { // ends with "1d"
-      if (x == 12) {
-        ord = "twelfth";
-      } else {
-        ord += "th"; // fourteenth
-      }
+      ord += "th"; // fourteenth
     } else {
       if (digit1 == 0) { // ends with "0"
         if (digit10 == 4) { // "40" 
@@ -156,7 +152,7 @@ public final class English extends AbstractLanguage {
         }
       }
     }
-    return ord;
+    return ord.replace("twelveth", "twelfth");
   }
 
   @Override

@@ -33,15 +33,16 @@ public class A046965 implements Sequence {
           mPrev = res;
           return res;
         }
-      }
-      Q u = new Q(mFrac.get(mFrac.size() - 1).add(1));
-      for (int k = mFrac.size() - 2; k >= 0; --k) {
-        u = new Q(mFrac.get(k)).add(u.reciprocal());
-      }
-      final Z res = u.num();
-      if (!res.equals(mPrev)) {
-        mPrev = res;
-        return res;
+      } else {
+        Q u = new Q(mFrac.get(mFrac.size() - 1).add(1));
+        for (int k = mFrac.size() - 2; k >= 0; --k) {
+          u = new Q(mFrac.get(k)).add(u.reciprocal());
+        }
+        final Z res = u.num();
+        if (!res.equals(mPrev)) {
+          mPrev = res;
+          return res;
+        }
       }
     }
   }

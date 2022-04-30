@@ -17,7 +17,7 @@ public class DummyMatrixTest extends TestCase {
     assertEquals(2, m.rows());
     assertEquals("[[42][17]]", m.toString());
     assertFalse(m.isSquare());
-    assertEquals(58, m.hashCode());
+    assertEquals(65594, m.hashCode());
     final Matrix<Long> t = m.transpose();
     assertEquals(2, t.cols());
     assertEquals(1, t.rows());

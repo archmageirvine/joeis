@@ -443,12 +443,12 @@ public final class GraphUtils {
         final Polynomial<Polynomial<Q>> t = p.substitutePower(k, n);
         final Polynomial<Polynomial<Q>> u = RING2.empty();
         for (final Polynomial<Q> v : t) {
-          u.add(RING.divide(v.substitutePower(k, n), new Q(k)));
+          u.add(RING.divide(v.substitutePower(k), new Q(k)));
         }
         sum = RING2.signedAdd(mobius == 1, sum, u);
       }
     }
-    return sum;
+    return sum.truncate(n);
   }
 
   private static Polynomial<Polynomial<Q>> sUnlabelledConnectedGraphs = RING2.zero();

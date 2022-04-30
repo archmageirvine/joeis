@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a049.A049684;
 
 /**
- * A095968 Number of tilings of an n X n section of the square lattice with &quot;ribbon tiles&quot;. A ribbon tile is a polyomino which has at most one square on each diagonal running from northwest to southeast.
+ * A095968 Number of tilings of an n X n section of the square lattice with "ribbon tiles". A ribbon tile is a polyomino which has at most one square on each diagonal running from northwest to southeast.
  * @author Georg Fischer
  */
 public class A095968 extends PrependSequence {

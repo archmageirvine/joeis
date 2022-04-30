@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A106754 extends A000040 {
 
-  private int mDigitSum;
+  private final int mDigitSum;
 
   /** Construct the sequence. */
   public A106754() {

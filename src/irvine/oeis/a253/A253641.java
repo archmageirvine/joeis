@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a052.A052409;
 
 /**
- * A253641 future sequence
+ * A253641 Largest integer b such that n=a^b for some integer a; a(0)=a(1)=1 by convention.
  * @author Georg Fischer
  */
 public class A253641 extends PrependSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a171.A171503;
 
 /**
- * A326354 future sequence
+ * A326354 a(n) is the number of fractions reduced to lowest terms with numerator and denominator less than or equal to n in absolute value.
  * @author Georg Fischer
  */
 public class A326354 extends PrependSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000583;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203229 (n-1)-st elementary symmetric function of (1, 16,...,n^4).
+ * A203229 (n-1)-st elementary symmetric function of (1,16,...,n^4).
  * @author Georg Fischer
  */
 public class A203229 extends ElementarySymmetricFunctionSequence {

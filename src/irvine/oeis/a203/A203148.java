@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000244;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203148 (n-1)-st elementary symmetric function of {3, 9,..., 3^n}.
+ * A203148 (n-1)-st elementary symmetric function of {3,9,...,3^n}.
  * @author Georg Fischer
  */
 public class A203148 extends ElementarySymmetricFunctionSequence {

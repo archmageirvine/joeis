@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A348308 a(n) = Sum_{k=0..floor(n/6)} (-1)^k * binomial(n-3*k, 3*k).
+ * A348308 a(n) = Sum_{k=0..floor(n/6)} (-1)^k * binomial(n-3*k,3*k).
  * @author Georg Fischer
  */
 public class A348308 extends LinearRecurrence {

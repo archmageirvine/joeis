@@ -5,7 +5,7 @@ import irvine.oeis.a124.A124625;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203192 (n-1)-st elementary symmetric function of the first n terms of (1, 2, 1, 4, 1, 6, 1, 8,...)=(A124625 for n&gt;1).
+ * A203192 (n-1)-st elementary symmetric function of the first n terms of (1,2,1,4,1,6,1,8,...)=(A124625 for n&gt;1).
  * @author Georg Fischer
  */
 public class A203192 extends ElementarySymmetricFunctionSequence {

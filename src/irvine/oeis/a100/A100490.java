@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a053.A053795;
 
 /**
- * A100490 Odd numbers ending in {1, 3, 7, 9} that are not primes.
+ * A100490 Odd numbers ending in {1,3,7,9} that are not primes.
  * @author Georg Fischer
  */
 public class A100490 extends PrependSequence {

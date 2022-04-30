@@ -5,7 +5,7 @@ import irvine.oeis.a008.A008619;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203151 (n-1)-st elementary symmetric function of {1, 1, 2, 2, 3, 3, 4, 4, 5, 5,...,Floor[(n+1)/2]}.
+ * A203151 (n-1)-st elementary symmetric function of {1,1,2,2,3,3,4,4,5,5,...,Floor[(n+1)/2]}.
  * @author Georg Fischer
  */
 public class A203151 extends ElementarySymmetricFunctionSequence {

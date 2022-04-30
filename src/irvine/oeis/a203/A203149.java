@@ -5,7 +5,7 @@ import irvine.oeis.a024.A024023;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203149 (n-1)-st elementary symmetric function of {2, 8, 26, 80, 242,...,-1+3^n}.
+ * A203149 (n-1)-st elementary symmetric function of {2,8,26,80,242,...,-1+3^n}.
  * @author Georg Fischer
  */
 public class A203149 extends ElementarySymmetricFunctionSequence {

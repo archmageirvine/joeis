@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A099828 Numerator of Sum_{k=1..n} 1/k^5.
+ * A099828 Numerator of the generalized harmonic number H(n,5) = Sum_{k=1..n} 1/k^5.
  * @author Georg Fischer
  */
 public class A099828 implements Sequence {

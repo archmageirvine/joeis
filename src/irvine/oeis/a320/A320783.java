@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a038.A038063;
 
 /**
- * A320783 future sequence
+ * A320783 Inverse Euler transform of (-1)^(n - 1).
  * @author Georg Fischer
  */
 public class A320783 extends PrependSequence {

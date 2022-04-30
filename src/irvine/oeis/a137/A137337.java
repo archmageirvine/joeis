@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A137337 T(i,j) = (-1)^(i+j)*(i+1)*binomial(i,j)*2^(i-j)*4^j.
+ * A137337 T(i,j) = (i+1)*binomial(i,j)*2^(i-j)*4^j.
  * @author Georg Fischer
  */
 public class A137337 extends Triangle {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A348290 a(n) = Sum_{k=0..floor(n/10)} binomial(n-5*k, 5*k).
+ * A348290 a(n) = Sum_{k=0..floor(n/10)} binomial(n-5*k,5*k).
  * @author Georg Fischer
  */
 public class A348290 extends LinearRecurrence {

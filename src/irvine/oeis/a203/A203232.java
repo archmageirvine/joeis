@@ -5,7 +5,7 @@ import irvine.oeis.a010.A010693;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203232 (n-1)-st elementary symmetric function of the first n terms of the periodic sequence (2, 3, 2, 3, 2, 3,...).
+ * A203232 (n-1)-st elementary symmetric function of the first n terms of the periodic sequence (2,3,2,3,2,3,...).
  * @author Georg Fischer
  */
 public class A203232 extends ElementarySymmetricFunctionSequence {

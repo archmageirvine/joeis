@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203227 (n-1)-st elementary symmetric function of (0!,...,(n-1)!)
+ * A203227 (n-1)-st elementary symmetric function of (0!,...,(n-1)!).
  * @author Georg Fischer
  */
 public class A203227 extends ElementarySymmetricFunctionSequence {

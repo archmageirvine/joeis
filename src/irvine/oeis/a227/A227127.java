@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001223;
 
 /**
- * A227127 The Akiyama-Tanigawa algorithm applied to 1/(1, 2, 3, 5,... old prime numbers). Reduced numerators of the second row.
+ * A227127 The Akiyama-Tanigawa algorithm applied to 1/(1,2,3,5,... old prime numbers). Reduced numerators of the second row.
  * @author Georg Fischer
  */
 public class A227127 extends A001223 {

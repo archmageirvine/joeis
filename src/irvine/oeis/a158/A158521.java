@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.prime.PrimeSubsequence;
 
 /**
- * A158521 Primes which yield primes when &quot;13&quot; is prefixed or appended.
+ * A158521 Primes which yield primes when "13" is prefixed or appended.
  * @author Georg Fischer
  */
 public class A158521 extends PrimeSubsequence {

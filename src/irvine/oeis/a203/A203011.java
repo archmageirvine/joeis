@@ -5,7 +5,7 @@ import irvine.oeis.a126.A126646;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203011 (n-1)-st elementary symmetric function of {1, 3, 7, 15, 31, 63,...-1+2^n}.
+ * A203011 (n-1)-st elementary symmetric function of {1,3,7,15,31,63,...-1+2^n}.
  * @author Georg Fischer
  */
 public class A203011 extends ElementarySymmetricFunctionSequence {

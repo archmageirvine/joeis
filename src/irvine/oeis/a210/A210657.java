@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002114;
 
 /**
- * A210657 a(0)=1; thereafter a(n) = -2*Sum_{k=1..n} binomial(2n, 2k)*a(n-k).
+ * A210657 a(0)=1; thereafter a(n) = -2*Sum_{k=1..n} binomial(2n,2k)*a(n-k).
  * @author Georg Fischer
  */
 public class A210657 extends A002114 {

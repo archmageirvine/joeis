@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203156 (n-1)-st elementary symmetric function of {4, 9, 16, 25,..., (n+1)^2}.
+ * A203156 (n-1)-st elementary symmetric function of {4,9,16,25,..., (n+1)^2}.
  * @author Georg Fischer
  */
 public class A203156 extends ElementarySymmetricFunctionSequence {

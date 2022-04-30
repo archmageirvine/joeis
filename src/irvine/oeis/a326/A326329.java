@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a073.A073717;
 
 /**
- * A326329 future sequence
+ * A326329 Number of simple graphs covering {1..n} with no crossing or nesting edges.
  * @author Georg Fischer
  */
 public class A326329 extends PrependSequence {

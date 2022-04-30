@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a053.A053760;
 
 /**
- * A091382 Distance between the sequence of primes and the largest &quot;mixed&quot; quadratic residues modulo the primes (A091380).
+ * A091382 Distance between the sequence of primes and the largest "mixed" quadratic residues modulo the primes (A091380).
  * @author Georg Fischer
  */
 public class A091382 extends PrependSequence {

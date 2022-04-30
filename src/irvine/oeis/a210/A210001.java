@@ -2,7 +2,7 @@ package irvine.oeis.a210;
 // manually
 
 /**
- * A210001 Number of 2 X 2 matrices having all elements in {1, 2,...,n} and determinant 3.
+ * A210001 Number of 2 X 2 matrices having all elements in {1,2,...,n} and determinant 3.
  * @author Georg Fischer
  */
 public class A210001 extends A210286 {

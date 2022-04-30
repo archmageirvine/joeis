@@ -2,7 +2,7 @@ package irvine.oeis.a211;
 // manually
 
 /**
- * A211415 Number of ordered triples (w,x,y) with all terms in {-n,..., 0,...,n} and w^2 + x*y = 1.
+ * A211415 Number of ordered triples (w,x,y) with all terms in  {-n,...,0,...,n} and w^2 + x*y = 1.
  * @author Georg Fischer
  */
 public class A211415 extends A211422 {

@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a069.A069359;
 
 /**
- * A322068 future sequence
+ * A322068 a(n) = (1/2)*Sum_{p prime &lt;= n} floor(n/p) * floor(1 + n/p).
  * @author Georg Fischer
  */
 public class A322068 extends PartialSumSequence {

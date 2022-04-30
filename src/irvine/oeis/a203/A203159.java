@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005843;
 import irvine.oeis.transform.ElementarySymmetricFunctionSequence;
 
 /**
- * A203159 (n-1)-st elementary symmetric function of {2, 4, 6, 8,..., 2n}.
+ * A203159 (n-1)-st elementary symmetric function of {2,4,6,8,...,2n}.
  * @author Georg Fischer
  */
 public class A203159 extends ElementarySymmetricFunctionSequence {

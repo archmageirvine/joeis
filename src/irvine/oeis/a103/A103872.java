@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a005.A005043;
 
 /**
- * A103872 a(n) = 3*trinomial(n+1, 0) - trinomial(n+2, 0).
+ * A103872 a(n) = 3*trinomial(n+1,0) - trinomial(n+2,0).
  * @author Georg Fischer
  */
 public class A103872 extends SkipSequence {

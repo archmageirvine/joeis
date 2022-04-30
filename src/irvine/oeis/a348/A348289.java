@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A348289 a(n) = Sum_{k=0..floor(n/8)} binomial(n-4*k, 4*k).
+ * A348289 a(n) = Sum_{k=0..floor(n/8)} binomial(n-4*k,4*k).
  * @author Georg Fischer
  */
 public class A348289 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a055.A055266;
 
 /**
- * A253074 future sequence
+ * A253074 Lexicographically earliest sequence of distinct numbers such that a(n-1)+a(n) is not prime.
  * @author Georg Fischer
  */
 public class A253074 extends PrependSequence {

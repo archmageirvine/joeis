@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a024.A024816;
 
 /**
- * A280982 future sequence
+ * A280982 Partial products of A024816; a(1) = a(2) = 1.
  * @author Georg Fischer
  */
 public class A280982 extends PartialProductSequence {

@@ -21,7 +21,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(CliFlagsTest.class);
     suite.addTestSuite(CollectionUtilsTest.class);
     suite.addTestSuite(DummyIteratorTest.class);
-    suite.addTestSuite(KeyboardTest.class);
     suite.addTestSuite(LimitedLengthPriorityQueueTest.class);
     suite.addTestSuite(PairTest.class);
     suite.addTestSuite(PermutationTest.class);

@@ -1,9 +1,7 @@
 package irvine.util.array;
 
-import java.util.ArrayList;
 import java.util.Random;
 
-import irvine.TestUtils;
 import junit.framework.TestCase;
 
 /**
@@ -133,33 +131,4 @@ public class DynamicShortArrayTest extends TestCase {
       assertEquals(d.get(i), flat[i]);
     }
   }
-
-  public void testNastyArrayLength() {
-    final DynamicShortArray m = new DynamicShortArray();
-    m.set(131071, (short) 1);
-    assertEquals(1, m.get(131071));
-    final Object obj = TestUtils.getField("mChunks", m);
-    assertTrue(obj instanceof ArrayList);
-    @SuppressWarnings("unchecked")
-    final ArrayList<short[]> x = (ArrayList<short[]>) obj;
-    assertEquals(2, x.size());
-    assertEquals(1 << 16, x.get(0).length);
-    assertEquals(1 << 16, x.get(1).length);
-    m.set(131073, (short) 2);
-    assertEquals(2, m.get(131073));
-    assertEquals(3, x.size());
-  }
-
-  public void testNastyArrayLength2() {
-    final DynamicShortArray m = new DynamicShortArray();
-    m.set(0, (short) 1);
-    m.set(1, (short) 1);
-    final Object obj = TestUtils.getField("mChunks", m);
-    assertTrue(obj instanceof ArrayList);
-    @SuppressWarnings("unchecked")
-    final ArrayList<short[]> x = (ArrayList<short[]>) obj;
-    assertEquals(1, x.size());
-    assertEquals(1 << 16, x.get(0).length);
-  }
-
 }

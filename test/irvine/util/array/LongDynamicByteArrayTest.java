@@ -1,9 +1,7 @@
 package irvine.util.array;
 
-import java.util.ArrayList;
 import java.util.Random;
 
-import irvine.TestUtils;
 import junit.framework.TestCase;
 
 /**
@@ -114,33 +112,4 @@ public class LongDynamicByteArrayTest extends TestCase {
     assertEquals(42, a.get(ll - 1));
     assertEquals(43, a.get(ll));
   }
-
-  public void testNastyArrayLength() {
-    final LongDynamicByteArray m = new LongDynamicByteArray();
-    m.set((1 << 21) - 1, (byte) 1);
-    assertEquals(1, m.get((1 << 21) - 1));
-    final Object obj = TestUtils.getField("mChunks", m);
-    assertTrue(obj instanceof ArrayList);
-    @SuppressWarnings("unchecked")
-    final ArrayList<Object> x = (ArrayList<Object>) obj;
-    assertEquals(2, x.size());
-    assertEquals(1 << 20, ((byte[]) x.get(0)).length);
-    assertEquals(1 << 20, ((byte[]) x.get(1)).length);
-    m.set((1 << 21) + 1, (byte) 2);
-    assertEquals(2, m.get((1 << 21) + 1));
-    assertEquals(3, x.size());
-  }
-
-  public void testNastyArrayLength2() {
-    final LongDynamicByteArray m = new LongDynamicByteArray();
-    m.set(0, (byte) 1);
-    m.set(1, (byte) 1);
-    final Object obj = TestUtils.getField("mChunks", m);
-    assertTrue(obj instanceof ArrayList);
-    @SuppressWarnings("unchecked")
-    final ArrayList<Object> x = (ArrayList<Object>) obj;
-    assertEquals(1, x.size());
-    assertEquals(1 << 20, ((byte[]) x.get(0)).length);
-  }
-
 }

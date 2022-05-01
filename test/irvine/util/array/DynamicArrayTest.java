@@ -1,9 +1,7 @@
 package irvine.util.array;
 
-import java.util.ArrayList;
 import java.util.Random;
 
-import irvine.TestUtils;
 import junit.framework.TestCase;
 
 /**
@@ -116,33 +114,4 @@ public class DynamicArrayTest extends TestCase {
     assertEquals("42", a.get(0xFFFF));
     assertEquals("43", a.get(0x10000));
   }
-
-  public void testNastyArrayLength() {
-    final DynamicArray<String> m = new DynamicArray<>();
-    m.set(131071, "1");
-    assertEquals("1", m.get(131071));
-    final Object obj = TestUtils.getField("mChunks", m);
-    assertTrue(obj instanceof ArrayList);
-    @SuppressWarnings("unchecked")
-    final ArrayList<Object> x = (ArrayList<Object>) obj;
-    assertEquals(2, x.size());
-    assertEquals(1 << 16, ((Object[]) x.get(0)).length);
-    assertEquals(1 << 16, ((Object[]) x.get(1)).length);
-    m.set(131073, "2");
-    assertEquals("2", m.get(131073));
-    assertEquals(3, x.size());
-  }
-
-  public void testNastyArrayLength2() {
-    final DynamicArray<String> m = new DynamicArray<>();
-    m.set(0, "1");
-    m.set(1, "1");
-    final Object obj = TestUtils.getField("mChunks", m);
-    assertTrue(obj instanceof ArrayList);
-    @SuppressWarnings("unchecked")
-    final ArrayList<Object> x = (ArrayList<Object>) obj;
-    assertEquals(1, x.size());
-    assertEquals(1 << 16, ((Object[]) x.get(0)).length);
-  }
-
 }

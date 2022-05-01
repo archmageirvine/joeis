@@ -1,8 +1,5 @@
 package irvine.util.io;
 
-import irvine.TestUtils;
-import junit.framework.TestCase;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -13,6 +10,8 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
@@ -213,12 +212,6 @@ public class IOUtilsTest extends TestCase {
     final CustomURLStreamHandlerFactory handler = CustomURLStreamHandlerFactory.getInstance();
     assertNotNull(handler.createURLStreamHandler("java"));
     assertNull(handler.createURLStreamHandler("fart"));
-  }
-
-  public void testNastyReflection() {
-    final Object obj = TestUtils.getField("BUFFER_LENGTH", IOUtils.class);
-    assertTrue(obj instanceof Integer);
-    assertEquals(16384, ((Integer) obj).intValue());
   }
 
   public void testMalformed() {

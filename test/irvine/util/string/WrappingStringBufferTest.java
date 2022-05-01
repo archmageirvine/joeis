@@ -1,6 +1,5 @@
 package irvine.util.string;
 
-import irvine.TestUtils;
 import junit.framework.TestCase;
 
 /**
@@ -161,12 +160,4 @@ public class WrappingStringBufferTest extends TestCase {
     b.wrapText("a");
     assertEquals("0123456789012345678901234567890123456789" + LS + "a", b.toString());
   }
-
-  public void testNastyInitialValue() {
-    final WrappingStringBuffer m = new WrappingStringBuffer();
-    final Object obj = TestUtils.getField("mWrapWidth", m);
-    assertTrue(obj instanceof Integer);
-    assertEquals(0, ((Integer) obj).intValue());
-  }
-
 }

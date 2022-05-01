@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
@@ -74,73 +73,6 @@ public final class TestUtils {
    */
   public static void assertEqualsLocal(final double expected, final double actual, final double delta) {
     assertEqualsLocal("", expected, actual, delta);
-  }
-
-  /**
-   * Retrieves a field in the given object. Private fields are retrieved as well
-   * as other ones.
-   *
-   * @param fieldName name of the field to retrieve.
-   * @param instance  the object to retrieve the field from.
-   * @return the field value.
-   * @throws RuntimeException on a reflection error. Since this is primarily a
-   *                          testing method, there is no need to throw a checked exception.
-   */
-  public static Object getField(final String fieldName, final Object instance) {
-    return AccessController.doPrivileged((PrivilegedAction<Object>) () -> {
-      try {
-        final Field f = instance.getClass().getDeclaredField(fieldName);
-        f.setAccessible(true);
-        return f.get(instance);
-      } catch (final NoSuchFieldException | IllegalAccessException e) {
-        throw new RuntimeException(e);
-      }
-    });
-  }
-
-  /**
-   * Retrieves a field in the given object. Private fields are retrieved as well
-   * as other ones.
-   *
-   * @param fieldName name of the field to retrieve.
-   * @param instance  the object to retrieve the field from.
-   * @param value     value to set.
-   * @throws RuntimeException on a reflection error. Since this is primarily a
-   *                          testing method, there is no need to throw a checked exception.
-   */
-  public static void setField(final String fieldName, final Object instance, final Object value) {
-    AccessController.doPrivileged((PrivilegedAction<Object>) () -> {
-      try {
-        final Field f = instance.getClass().getDeclaredField(fieldName);
-        f.setAccessible(true);
-        f.set(instance, value);
-        return null;
-      } catch (final NoSuchFieldException | IllegalAccessException e) {
-        throw new RuntimeException(e);
-      }
-    });
-  }
-
-  /**
-   * Retrieves a static field in the given object. Private fields are retrieved as well
-   * as other ones.
-   *
-   * @param fieldName name of the field to retrieve.
-   * @param theClass  the name of the class.
-   * @return the field value.
-   * @throws RuntimeException on a reflection error. Since this is primarily a
-   *                          testing method, there is no need to throw a checked exception.
-   */
-  public static Object getField(final String fieldName, final Class<?> theClass) {
-    return AccessController.doPrivileged((PrivilegedAction<Object>) () -> {
-      try {
-        final Field f = theClass.getDeclaredField(fieldName);
-        f.setAccessible(true);
-        return f.get(null);
-      } catch (final NoSuchFieldException | IllegalAccessException e) {
-        throw new RuntimeException(e);
-      }
-    });
   }
 
   /**

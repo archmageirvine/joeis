@@ -13,7 +13,7 @@ public class A062117 implements Sequence {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.ONE;
-  private Z mOrder;
+  private final Z mOrder;
 
   /** Construct the sequence. */
   public A062117() {
@@ -24,7 +24,7 @@ public class A062117 implements Sequence {
    * Generic constructor with parameters
    * @param order order of mod n-th prime
    */
-  public A062117(int order) {
+  public A062117(final int order) {
     mOrder = Z.valueOf(order);
   }
 

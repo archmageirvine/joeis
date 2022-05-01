@@ -12,7 +12,7 @@ public class ElementarySymmetricFunctionSequence implements Sequence {
 
   protected final Sequence mSeq; // underlying sequence
   private int mN; // current index
-  private int mOrder; // order of the function/polynomial, number of multiplicative factors in the sum.
+  //private int mOrder; // order of the function/polynomial, number of multiplicative factors in the sum.
   private Z mA; // previous term of the sequence
   private Z mProd; // product of the terms of the underlying sequence
 
@@ -27,7 +27,7 @@ public class ElementarySymmetricFunctionSequence implements Sequence {
   /**
    * Construct the sequence with skip parameter.
    * @param seq underlying sequence
-   * @param skip number of terms in the underlying sequence to be skipped initially.
+   * @param skip number of terms in the underlying sequence to be skipped initially
    */
   public ElementarySymmetricFunctionSequence(final Sequence seq, final int skip) {
     this(1, -1, seq, skip);
@@ -36,9 +36,9 @@ public class ElementarySymmetricFunctionSequence implements Sequence {
   /**
    * Construct the sequence with all parameters.
    * @param offset first index
-   * @param order order of the polynomial, or -1 for (n-1)-st esf.
+   * @param order order of the polynomial, or -1 for (n-1)-st elementary symmetric function
    * @param seq underlying sequence
-   * @param skip number of terms in the underlying sequence to be skipped initially.
+   * @param skip number of terms in the underlying sequence to be skipped initially
    */
   public ElementarySymmetricFunctionSequence(final int offset, final int order, final Sequence seq, int skip) {
     mSeq = seq;
@@ -46,7 +46,7 @@ public class ElementarySymmetricFunctionSequence implements Sequence {
       mSeq.next();
     }
     mN = offset - 1;
-    mOrder = order;
+    //mOrder = order;
     mA = Z.ONE;
     mProd = Z.ONE;
   }

@@ -14,7 +14,6 @@ public class A001322 implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
-    return ExtendedSymmetricGroupCycleIndex.extendedSymmetricGroupCycleIndex(2, mN).eval(mN).toZ();
+    return ExtendedSymmetricGroupCycleIndex.extendedSymmetricGroupCycleIndex(2, ++mN).eval(mN).toZ();
   }
 }

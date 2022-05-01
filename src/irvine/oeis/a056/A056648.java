@@ -1,0 +1,20 @@
+package irvine.oeis.a056;
+
+import irvine.factor.factor.PrimeDivision;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A056629 Number of unitary square divisors of n!.
+ * @author Sean A. Irvine
+ */
+public class A056648 extends A056057 {
+
+  private final Sequence mA = new A056059();
+  private final PrimeDivision mFactor = new PrimeDivision();
+
+  @Override
+  public Z next() {
+    return Z.ONE.shiftLeft(mFactor.factorize(super.next().sqrt().divide(mA.next())).omega());
+  }
+}

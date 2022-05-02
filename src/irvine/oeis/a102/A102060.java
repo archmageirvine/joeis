@@ -25,7 +25,6 @@ public class A102060 implements Sequence {
     }
     ++mN;
     mF = mF.multiply(mN);
-    final Z result = RING.tan(RING.asinh(RING.x(), mN), mN).coeff(mN).multiply(mF).toZ();
-    return result;
+    return RING.tan(RING.asinh(RING.x(), mN), mN).coeff(mN).multiply(mF).toZ();
   }
 }

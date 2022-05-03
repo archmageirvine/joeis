@@ -18,6 +18,7 @@ public class A204890 extends Triangle {
   /** Construct the sequence. */
   public A204890() {
     this(new A000040(), 1);
+    hasRAM(true);
   }
 
   /**
@@ -32,7 +33,10 @@ public class A204890 extends Triangle {
   }
 
   @Override
-  public Z compute(final int n, final int k) {
-    return mSeq.a(n + mDist).subtract(mSeq.a(k));
+  public Z compute(int n, int k) {
+    n += 2;
+    ++k;
+    // System.out.println("n=" + n + ", k=" + k + ", a(n)=" + mSeq.a(n - mDist) + ", a(k)=" + mSeq.a(k - mDist));
+    return mSeq.a(n - mDist).subtract(mSeq.a(k - mDist));
   }
 }

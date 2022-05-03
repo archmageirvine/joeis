@@ -12,9 +12,9 @@ import irvine.oeis.a000.A000040;
 public class A204892 implements Sequence {
 
   private Z mNz;
-  private final int mDist;
-  private final int mVariant;
-  private final MemorySequence mSeq;
+  private int mDist;
+  private int mVariant;
+  private MemorySequence mSeq;
 
   /** Construct the sequence. */
   public A204892() {

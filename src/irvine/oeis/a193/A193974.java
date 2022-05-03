@@ -3,13 +3,13 @@ package irvine.oeis.a193;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A193843 Mirror image of the triangle A193842.
+ * A193974 Mirror of the triangle A193973.
  * @author Georg Fischer
  */
-public class A193843 extends Transpose {
+public class A193974 extends Transpose {
 
   /** Construct the sequence. */
-  public A193843() {
-    super(new A193842());
+  public A193974() {
+    super(new A193973());
   }
 }

@@ -11,8 +11,8 @@ import irvine.oeis.Sequence;
 public class A204891 implements Sequence {
 
   private Z mNz;
-  private int mDist;
-  private MemorySequence mSeq;
+  private final int mDist;
+  private final MemorySequence mSeq;
 
   /** Construct the sequence. */
   public A204891() {
@@ -21,8 +21,8 @@ public class A204891 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param seq
-   * @param dist
+   * @param seq underlying sequence
+   * @param dist distance
    */
   public A204891(final Sequence seq, final int dist) {
     mNz = Z.ZERO;
@@ -35,7 +35,8 @@ public class A204891 implements Sequence {
     mNz = mNz.add(1);
     int k = 1;
     while (true) {
-      if (mSeq.a(k - mDist).mod(mNz).isZero()) {
+      //System.out.println("n=" + mNz + ", k=" + k + ", a(n)=" + mSeq.a(k - mDist) + ", remainder=" + mSeq.a(k - mDist).remainder(mNz));
+      if (mSeq.a(k - mDist).remainder(mNz).isZero()) {
         return Z.valueOf(k);
       }
       ++k;

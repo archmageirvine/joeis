@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000032;
 import irvine.oeis.a204.A204892;
 
 /**
- * A205115 The index j&lt;k such that n divides s(k)-s(j), where k is the least index (A205114) for which such j exists, and s=(1, 3, 4, 7, 11, 18...), the Lucas numbers.
+ * A205115 The index j&lt;k such that n divides s(k)-s(j), where k is the least index (A205114) for which such j exists, and s=(1,3,4,7,11,18...), the Lucas numbers.
  * @author Georg Fischer
  */
 public class A205115 extends A204892 {

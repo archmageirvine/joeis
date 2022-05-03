@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001477;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A213500 Rectangular array T(n,k): (row n) = b**c, where b(h) = h, c(h) = h + n - 1, n &gt;= 1, h &gt;= 1, and ** = convolution.
+ * A213500 Rectangular array T(n,k):  (row n) = b**c, where b(h) = h, c(h) = h + n - 1, n &gt;= 1, h &gt;= 1, and ** = convolution.
  * @author Georg Fischer
  */
 public class A213500 extends UpperLeftTriangle {

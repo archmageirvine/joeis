@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056636.
+ * A056649 Number of non-unitary square divisors of central binomial coefficient.
  * @author Sean A. Irvine
  */
 public class A056649 extends A056061 {

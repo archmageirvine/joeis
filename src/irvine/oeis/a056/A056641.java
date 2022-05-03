@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056636.
+ * A056641 Least positive integer k for which (b+1)^k is not palindromic in base b, b = 2, 3, 4, ...
  * @author Sean A. Irvine
  */
 public class A056641 implements Sequence {

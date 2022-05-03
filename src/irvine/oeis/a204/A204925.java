@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A204925 a(n) is the index j &lt; k such that n divides s(k) - s(j), where k is the least index (A204924) for which such j exists, and s=(1, 2, 3, 5, 8, 13,...), the Fibonacci numbers.
+ * A204925 a(n) is the index j &lt; k such that n divides s(k) - s(j), where k is the least index (A204924) for which such j exists, and s=(1,2,3,5,8,13,...), the Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A204925 extends A204892 {

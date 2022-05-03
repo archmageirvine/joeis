@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A242350 Multiply a(n-1) by 2 and drop all 0&apos;s.
+ * A242350 Multiply a(n-1) by 2 and drop all 0's.
  * @author Georg Fischer
  */
 public class A242350 implements Sequence {

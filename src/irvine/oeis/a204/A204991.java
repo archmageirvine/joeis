@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.a000.A000079;
 
 /**
- * A204991 2^k-2^j, where (2^k, 2^j) is the least pair of distinct positive powers of 2 for which n divides 2^k-2^j.
+ * A204991 2^k-2^j, where (2^k,2^j) is the least pair of distinct positive powers of 2 for which n divides 2^k-2^j.
  * @author Georg Fischer
  */
 public class A204991 extends A204892 {

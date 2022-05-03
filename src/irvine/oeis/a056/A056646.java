@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056636.
+ * A056646 Square root of largest unitary square divisor of central binomial coefficient.
  * @author Sean A. Irvine
  */
 public class A056646 extends A056056 {

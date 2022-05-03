@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A056636.
+ * A056637 a(n) is the least prime of class n-, according to the Erd\u0151s-Selfridge classification of primes.
  * @author Sean A. Irvine
  */
 public class A056637 extends A000040 {

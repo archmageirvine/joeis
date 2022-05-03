@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056636.
+ * A056665 Number of equivalence classes of n-valued Post functions of 1 variable under action of complementing group C(1,n).
  * @author Sean A. Irvine
  */
 public class A056665 implements Sequence {

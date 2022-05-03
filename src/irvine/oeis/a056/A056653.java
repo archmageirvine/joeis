@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A056636.
+ * A056653 Composite numbers together with 1 but excluding 4.
  * @author Sean A. Irvine
  */
 public class A056653 extends PrependSequence {

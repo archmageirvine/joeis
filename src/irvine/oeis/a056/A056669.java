@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056668.
+ * A056669 Number of equivalence classes of n-valued Post functions of 3 variables under action of symmetric group S_3.
  * @author Sean A. Irvine
  */
 public class A056669 implements Sequence {

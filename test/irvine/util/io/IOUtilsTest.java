@@ -1,8 +1,5 @@
 package irvine.util.io;
 
-import irvine.TestUtils;
-import junit.framework.TestCase;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -13,6 +10,9 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import irvine.TestUtils;
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
@@ -146,24 +146,6 @@ public class IOUtilsTest extends TestCase {
       assertTrue(f.delete());
     }
   }
-
-  @SuppressWarnings("deprecation")
-  public void testDecodeUTF8() {
-    final boolean linux = "Linux".equals(System.getProperty("os.name"));
-    try {
-      for (char c = 0; c < 1024; ++c) {
-        if (c != 0 && c != '+' && (linux || c != ' ')) { // special characters
-          // windows can't handle ' ' as a file name, wants to make it a directory
-          final File f = new File(String.valueOf(c));
-          final String res = IOUtils.decodeUTF8(f.toURI().toURL().toString());
-          assertEquals("incorrect url decoding: " + c + "(" + ((int) c) + "): ", f.toURL().toString(), res);
-        }
-      }
-    } catch (final MalformedURLException murle) {
-      fail(murle.getMessage());
-    }
-  }
-
 
   public void testDecodeEncodeUTF8() {
     final String a = "some text with % and // and $? characters";

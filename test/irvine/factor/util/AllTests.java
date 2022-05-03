@@ -17,7 +17,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FactorBaseTest.class);
     suite.addTestSuite(FactorSequenceTest.class);
     suite.addTestSuite(InfinitaryAliquotSequenceTest.class);
-    suite.addTestSuite(SnfsPolynomialTest.class);
     return suite;
   }
 

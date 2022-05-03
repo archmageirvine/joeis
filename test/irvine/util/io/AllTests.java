@@ -13,13 +13,8 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTest(irvine.util.io.java.AllTests.suite());
-    suite.addTestSuite(Base64InputStreamTest.class);
-    suite.addTestSuite(Base64OutputStreamTest.class);
     suite.addTestSuite(CustomURLStreamHandlerFactoryTest.class);
-    suite.addTestSuite(HexadecimalInputStreamTest.class);
-    suite.addTestSuite(HexadecimalOutputStreamTest.class);
     suite.addTestSuite(IOUtilsTest.class);
-    suite.addTestSuite(MappingInputStreamTest.class);
     return suite;
   }
 

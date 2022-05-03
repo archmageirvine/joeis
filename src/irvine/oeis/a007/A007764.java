@@ -123,9 +123,7 @@ public class A007764 implements Sequence {
             if (j != 0) {
               mDP[k][j - 1][i + 1] += mDP[k][j][i];
             }
-            if (j < MAX - 1) {
-              mDP[k][j + 1][i + 1] += mDP[k][j][i];
-            }
+            mDP[k][j + 1][i + 1] += mDP[k][j][i];
           }
         }
       }
@@ -292,11 +290,9 @@ public class A007764 implements Sequence {
           } else if (up != 0) { // extend single edge, case 2
             // extend down: 0x becomes x0
             add(rank(w, (getMask(j, mask) | ((long) SWAP[up << 2] << (j << 1))) << 2), c);
-          } else if ((up | left) == 0) { // no edge
+          } else { // no edge
             // place nothing
             add(rank(w, mask << 2), c);
-          } else {
-            throw new RuntimeException("error uncatched regular " + left + " " + up);
           }
         }
       }
@@ -379,11 +375,9 @@ public class A007764 implements Sequence {
             if (up != 2 || look != 3) {
               add(z, c);
             }
-          } else if ((up | left) == 0) { // no edge
+          } else { // no edge
             // place nothing
             add(z, c);
-          } else {
-            throw new RuntimeException("error uncatched regular " + left + " " + up);
           }
         }
       }
@@ -424,13 +418,11 @@ public class A007764 implements Sequence {
             if (up != 2 || look != 3) {
               add(z, c);
             }
-          } else if ((up | left) == 0) { // no edge
+          } else { // no edge
             // place nothing
             add(z, c);
             // place 23
             add(rank(w, mask | (14L << (j << 1))), c);
-          } else {
-            throw new RuntimeException("error uncatched regular " + left + " " + up);
           }
         }
       }

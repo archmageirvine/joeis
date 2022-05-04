@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A056710.
+ * A056728 Palindromic primes using only two distinct digits and only the exterior digit is different.
  * @author Sean A. Irvine
  */
 public class A056728 implements Sequence {

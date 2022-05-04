@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A056710.
+ * A056711 Plug g.f. for A000108 (minus the leading 1), 1/2*(1-(1-4*x)^(1/2))/x - 1, into cycle index for dihedral group D_3.
  * @author Sean A. Irvine
  */
 public class A056711 extends A000108 {

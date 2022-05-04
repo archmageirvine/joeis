@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A056710.
+ * A056729 If p | n, then p+1 | n+1 for composite n.
  * @author Sean A. Irvine
  */
 public class A056729 extends A002808 {

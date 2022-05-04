@@ -1,7 +1,5 @@
 package irvine.util;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -57,24 +55,4 @@ public final class CollectionUtils {
     }
     return inv;
   }
-
-  /**
-   * Construct a histogram of the lengths of the lists in a collection.
-   * @param dataset lists
-   * @param <T> type
-   * @return histogram
-   */
-  public static <T> List<Integer> histogram(final Collection<List<T>> dataset) {
-    final ArrayList<Integer> histogram = new ArrayList<>();
-    for (final List<?> lst : dataset) {
-      final int n = lst.size();
-      while (n >= histogram.size()) {
-        histogram.add(0);
-      }
-      histogram.set(n, histogram.get(n) + 1);
-    }
-    return histogram;
-  }
-
-
 }

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A056710.
+ * A056710 Near-repdigit primes such that all digits are equal except for an end-digit.
  * @author Sean A. Irvine
  */
 public class A056710 implements Sequence {

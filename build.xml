@@ -40,7 +40,7 @@
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
-      <compilerarg value="-Xlint:unchecked" />
+      <compilerarg value="-Xlint:unchecked -Xms1g -Xmx2g -XX:-UseGCOverheadLimit" />
     </javac>
   </target>
 

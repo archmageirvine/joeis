@@ -55,4 +55,18 @@ public final class CollectionUtils {
     }
     return inv;
   }
+
+  /**
+   * Test if the given list is palindromic.
+   * @param lst list to test
+   * @return true if the list is a palindrome
+   */
+  public static boolean isPalindrome(final List<?> lst) {
+    for (int k = 0, j = lst.size() - 1; k < j; ++k, --j) {
+      if (!lst.get(k).equals(lst.get(j))) {
+        return false;
+      }
+    }
+    return true;
+  }
 }

@@ -1812,3 +1812,5 @@ A056620 Partition function coefficients for square lattice spin 3 Ising model
 A056638 Number of polygons of length 2n with two (self-avoiding polygon) holes on square lattice (not allowing rotations).
 A056639 Number of polygons of length 2n with 3 (self-avoiding polygon) holes on square lattice (not allowing rotations).
 A056642 Number of linear spaces on n (labeled) points
+A056747 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed, final peg in top hole
+A056748 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed, final peg in initial empty hole.

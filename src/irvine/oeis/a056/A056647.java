@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056636.
+ * A056647 Largest unitary square divisor of central binomial coefficient.
  * @author Sean A. Irvine
  */
 public class A056647 extends A056057 {

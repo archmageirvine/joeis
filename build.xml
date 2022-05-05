@@ -71,8 +71,7 @@
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat.gz"/>
       <fileset dir="${src.dir}" includes="irvine/nt/fibonacci/*.dat"/>
-      <fileset dir="${src.dir}" includes="irvine/math/group/ag/*.gz"/>
-      <fileset dir="${src.dir}" includes="irvine/math/group/gl/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/pgl/*.gz"/>
       <fileset dir="${src.dir}" includes="irvine/math/group/resources/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/math/group/resources/*.dat.gz"/>
       <fileset dir="${src.dir}" includes="irvine/math/z/fibonacci/*.dat"/>
@@ -80,7 +79,7 @@
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
-      <fileset dir="${src.dir}" includes="cheat/*.dat.gz"/>
+      <fileset dir="${src.dir}" includes="cheat/*.txt.gz"/>
 
       <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/antlr-4.8-complete.jar" excludes="META-INF/**"/>
@@ -109,8 +108,7 @@
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat.gz"/>
       <fileset dir="${src.dir}" includes="irvine/nt/fibonacci/*.dat"/>
-      <fileset dir="${src.dir}" includes="irvine/math/group/ag/*.gz"/>
-      <fileset dir="${src.dir}" includes="irvine/math/group/gl/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/pgl/*.gz"/>
       <fileset dir="${src.dir}" includes="irvine/math/group/resources/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/math/group/resources/*.dat.gz"/>
       <fileset dir="${src.dir}" includes="irvine/math/z/fibonacci/*.dat"/>
@@ -118,7 +116,7 @@
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
-      <fileset dir="${src.dir}" includes="cheat/*.dat.gz"/>
+      <fileset dir="${src.dir}" includes="cheat/*.txt.gz"/>
 
       <fileset dir="${test.dir}" includes="irvine/oeis/seq/*"/>
       <fileset dir="${test.dir}" includes="irvine/oeis/**/*.dat"/>

@@ -53,6 +53,10 @@ public class A205558 implements Sequence {
           switch (mVariant) {
             case 2:
               return Z.valueOf(mJ);
+            case 3:
+              return sk;
+            case 4:
+              return sj;
             case 5:
               return skmsj;
             case 6:

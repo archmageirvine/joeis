@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A345126.
+ * A345126 a(1) = 1; thereafter, a(n) = A073327(a(n-1)), using the British English version of A073327 when there is a choice.
  * @author Sean A. Irvine
  */
 public class A345126 implements Sequence {

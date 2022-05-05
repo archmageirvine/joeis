@@ -1814,3 +1814,4 @@ A056639 Number of polygons of length 2n with 3 (self-avoiding polygon) holes on 
 A056642 Number of linear spaces on n (labeled) points
 A056747 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed, final peg in top hole
 A056748 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed, final peg in initial empty hole.
+A056755 Number of n-celled polyominoes, where the cells are 1 X 2 rectangles with some of the edges of length 2 replaced by curved arcs that either sag inwards or bulge outwards

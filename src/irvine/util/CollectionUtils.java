@@ -1,7 +1,5 @@
 package irvine.util;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -59,22 +57,16 @@ public final class CollectionUtils {
   }
 
   /**
-   * Construct a histogram of the lengths of the lists in a collection.
-   * @param dataset lists
-   * @param <T> type
-   * @return histogram
+   * Test if the given list is palindromic.
+   * @param lst list to test
+   * @return true if the list is a palindrome
    */
-  public static <T> List<Integer> histogram(final Collection<List<T>> dataset) {
-    final ArrayList<Integer> histogram = new ArrayList<>();
-    for (final List<?> lst : dataset) {
-      final int n = lst.size();
-      while (n >= histogram.size()) {
-        histogram.add(0);
+  public static boolean isPalindrome(final List<?> lst) {
+    for (int k = 0, j = lst.size() - 1; k < j; ++k, --j) {
+      if (!lst.get(k).equals(lst.get(j))) {
+        return false;
       }
-      histogram.set(n, histogram.get(n) + 1);
     }
-    return histogram;
+    return true;
   }
-
-
 }

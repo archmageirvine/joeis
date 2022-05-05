@@ -5,6 +5,7 @@ import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.CollectionUtils;
 
 /**
  * A044918 Positive integers whose base-2 run lengths form a palindrome.
@@ -40,19 +41,10 @@ public class A044918 implements Sequence {
     return res;
   }
 
-  private boolean isPalindrome(final List<?> lst) {
-    for (int k = 0, j = lst.size() - 1; k < j; ++k, --j) {
-      if (!lst.get(k).equals(lst.get(j))) {
-        return false;
-      }
-    }
-    return true;
-  }
-
   @Override
   public Z next() {
     while (true) {
-      if (isPalindrome(getLengths(++mN))) {
+      if (CollectionUtils.isPalindrome(getLengths(++mN))) {
         return Z.valueOf(mN);
       }
     }

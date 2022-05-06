@@ -21,8 +21,8 @@ public class A056733 implements Sequence {
       if (++mM == mN) {
         mN *= 10;
       }
-      long ms = mM * mN * mN;
-      long m3 = mM * mM * mM;
+      final long ms = mM * mN * mN;
+      final long m3 = mM * mM * mM;
       for (long a = 0; a <= mN; ++a) {
         final long as = ms + a * mN;
         final long a3 = a * a * a;

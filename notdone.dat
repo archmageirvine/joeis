@@ -1814,3 +1814,8 @@ A056639 Number of polygons of length 2n with 3 (self-avoiding polygon) holes on 
 A056642 Number of linear spaces on n (labeled) points
 A056747 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed, final peg in top hole
 A056748 Raw solutions to Hi-Q puzzle with n holes on a side, any initial peg removed, final peg in initial empty hole.
+A056755 Number of n-celled polyominoes, where the cells are 1 X 2 rectangles with some of the edges of length 2 replaced by curved arcs that either sag inwards or bulge outwards
+A056769 Puzzle 2, related to polyominoes
+A056778 Number of 3-element antichains on an unlabeled n-element set; equivalence classes of monotone Boolean functions of n variables with 3 mincuts under action of symmetric group S_n
+A056779 Number of poly-IH73-tiles (holes allowed) with n cells
+A056782 Number of 3-element proper antichains (i.e., antichains such that every two members have nonempty intersection) on an unlabeled n-element set

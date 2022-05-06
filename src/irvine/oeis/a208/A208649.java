@@ -1,21 +1,23 @@
 package irvine.oeis.a208;
 
-import irvine.math.z.Binomial;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.a073.A073617;
 
 /**
  * A208649 (1/n)*A073617(n+1).
  * @author Georg Fischer
  */
-public class A208649 implements Sequence {
+public class A208649 extends A073617 {
 
   private int mN = 0;
 
+  {
+    super.next();
+    super.next();
+  }
+
   @Override
   public Z next() {
-    ++mN;
-    return Integers.SINGLETON.product(1, (mN + 1) / 2, k -> Binomial.binomial(mN + 1 - k, k)).divide(mN);
+    return super.next().divide(++mN);
   }
 }

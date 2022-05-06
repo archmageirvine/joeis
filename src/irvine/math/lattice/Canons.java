@@ -214,6 +214,24 @@ public final class Canons {
   };
 
   /**
+   * Check for D4 symmetry.
+   */
+  public static final CanonChecker Z2_D4_SYMMETRIC = animal -> {
+    final Animal a = translate(Lattices.Z2, animal);
+    final long extentX = a.extent(Lattices.Z2, 0);
+    final long extentY = a.extent(Lattices.Z2, 1);
+    if (a.equals(reflectHorizontal(a, extentX)) && a.equals(reflectVertical(a, extentY))) {
+      final Animal r180 = rotate180(a, extentX, extentY);
+      return a.equals(r180)
+        && !a.equals(reflect45(a))
+        && !a.equals(reflect45(r180))
+        && !a.equals(rotate90(a, extentX))
+        && !a.equals(rotate270(a, extentY));
+    }
+    return false;
+  };
+
+  /**
    * Check for mirror 45 degrees symmetry.
    */
   public static final CanonChecker Z2_DIAGONALLY_SYMMETRIC = animal -> {
@@ -223,6 +241,23 @@ public final class Canons {
     final Animal r180 = rotate180(a, extentX, extentY);
     return !a.equals(r180)
       && (a.equals(reflect45(a)) || a.equals(reflect45(r180)))
+      && !a.equals(reflectHorizontal(a, extentX))
+      && !a.equals(reflectVertical(a, extentY))
+      && !a.equals(rotate90(a, extentX))
+      && !a.equals(rotate270(a, extentY));
+  };
+
+  /**
+   * Mirror symmetry on both diagonals.
+   */
+  public static final CanonChecker Z2_ONE_DIAGONAL_SYMMETRIC = animal -> {
+    final Animal a = translate(Lattices.Z2, animal);
+    final long extentX = a.extent(Lattices.Z2, 0);
+    final long extentY = a.extent(Lattices.Z2, 1);
+    final Animal r180 = rotate180(a, extentX, extentY);
+    return a.equals(reflect45(a))
+      && r180.equals(reflect45(r180))
+      && r180.equals(a)
       && !a.equals(reflectHorizontal(a, extentX))
       && !a.equals(reflectVertical(a, extentY))
       && !a.equals(rotate90(a, extentX))

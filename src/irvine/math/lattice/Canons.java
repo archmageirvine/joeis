@@ -216,7 +216,7 @@ public final class Canons {
   /**
    * Check for D4 symmetry.
    */
-  public static final CanonChecker Z2_D4_SYMMETRIC = animal -> {
+  public static final CanonChecker Z2_D4 = animal -> {
     final Animal a = translate(Lattices.Z2, animal);
     final long extentX = a.extent(Lattices.Z2, 0);
     final long extentY = a.extent(Lattices.Z2, 1);
@@ -279,6 +279,23 @@ public final class Canons {
       && !a.equals(reflectVertical(a, extentY))
       && !a.equals(rotate90(a, extentX))
       && !a.equals(rotate270(a, extentY));
+  };
+
+  /**
+   * Check for D8 symmetry.
+   */
+  public static final CanonChecker Z2_D8 = animal -> {
+    final Animal a = translate(Lattices.Z2, animal);
+    final long extentX = a.extent(Lattices.Z2, 0);
+    final long extentY = a.extent(Lattices.Z2, 1);
+    final Animal r180 = rotate180(a, extentX, extentY);
+    return a.equals(r180)
+      && a.equals(reflect45(r180))
+      && a.equals(reflect45(a))
+      && a.equals(reflectHorizontal(a, extentX))
+      && a.equals(reflectVertical(a, extentY))
+      && a.equals(rotate90(a, extentX))
+      && a.equals(rotate270(a, extentY));
   };
 
   /**

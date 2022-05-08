@@ -2,8 +2,10 @@ package irvine.oeis.a056;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -14,6 +16,8 @@ import irvine.oeis.Sequence;
  * @author Sean A. Irvine (Java port)
  */
 public class A056787 implements Sequence {
+
+  // 2022-05-09 Some data structures changed to avoid need for sorting
 
   /**
    * A node is one point on the square lattice.
@@ -284,8 +288,8 @@ public class A056787 implements Sequence {
       /* The algorithm is simply to create the image of each edge separately,
        * and add it to the new tree with addedge().
        */
-      for (int e = 0; e < mEdges.size(); ++e) {
-        final Edge cedge = mEdges.get(e).congruent(mode);
+      for (Edge edge : mEdges) {
+        final Edge cedge = edge.congruent(mode);
         result.addEdge(cedge);
       }
       /* The typical rotation would have created an image in any quadrant of
@@ -355,13 +359,9 @@ public class A056787 implements Sequence {
          * that both trees are congruent.
          */
         Collections.sort(imag.mEdges);
-        //sort(imag.edges.begin(),imag.edges.end() ) ;
         if (mEdges.equals(imag.mEdges)) {
           return true;
         }
-//        if (equal(mEdges.begin(), mEdges.end(), imag.mEdges.begin())) {
-//          return true;
-//        }
       }
       /* If we have fallen through the loop over the 8 images, none of these
        * was congruent and the result is a 'no'.
@@ -385,14 +385,12 @@ public class A056787 implements Sequence {
        * new edges starting from any of these into any of the four directions
        * admitted by the square lattice.
        */
-      final List<Node> thisNode = allNodes();
-      System.out.println("SAI: allnodes=" + thisNode.size());
 
       /* In a loop over all existing nodes we can generate all child trees
        * that have the same skeleton as the current one, but one more edge.
        * This works since a tree is a connected graph, so edges cannot be isolated.
        */
-      for (int n = 0; n < thisNode.size(); ++n) {
+      for (final Node node : allNodes()) {
         /* For each of the eight directions of the node we test whether this
          * can be the direction of a new edge for a potentially new child tree.
          */
@@ -402,8 +400,7 @@ public class A056787 implements Sequence {
            * a new node into the particular direction, and admit this as a new
            * edge if this new site is not yet already occupied.
            */
-          final Node tste = new Node(thisNode.get(n), dir);
-          System.out.println("SAI: tste " + Arrays.toString(tste.mXY) + " " + dir + " " + (haveNode(tste) ? 1 : 0));
+          final Node tste = new Node(node, dir);
           /* Test on occupation of the point in the square lattice. */
           if (!haveNode(tste)) {
             /* If this node is not yet occupied (allowed since a tree is cycle-free),
@@ -411,23 +408,21 @@ public class A056787 implements Sequence {
              * a new edge that spreads between the current node and the new one.
              */
             final Tree candidate = new Tree(this);
-            candidate.addEdge(new Edge(new Node(thisNode.get(n)), tste));
+            candidate.addEdge(new Edge(new Node(node), tste));
 
             /* Adding the edge may have extended the new tree into the
              * quadrant to the left or below, so we shift the tree to the right
              * or up with normalize() to place it into the first quadrant
              * of the coordinate system.
              */
-            System.out.println("SAI: trying=" + dir + " " + Arrays.toString(candidate.mBoundingBox) + " " + Arrays.toString(thisNode.get(n).mXY) + " --> " + Arrays.toString(tste.mXY));
             candidate.normalize();
             /* This new child tree may already exist in the list of trees
              * generated before. We test whether it is congruent to any fo the
              * child trees already accumulated so far in the result list.
              */
-            System.out.println("SAI: normalized=" + dir + " " + Arrays.toString(candidate.mBoundingBox));
             boolean isCongruent = false;
-            for (int pres = 0; pres < result.size(); ++pres) {
-              if (result.get(pres).isCongruent(candidate)) {
+            for (Tree tree : result) {
+              if (tree.isCongruent(candidate)) {
                 isCongruent = true;
                 break;
               }
@@ -436,7 +431,6 @@ public class A056787 implements Sequence {
              * current list of children, we put it into the result list.
              */
             if (!isCongruent) {
-              System.out.println("SAI: accept=" + dir);
               result.add(candidate);
             }
           }
@@ -462,15 +456,15 @@ public class A056787 implements Sequence {
         mBoundingBox[3] = mEdges.get(0).mNodes[0].mXY[1];
         mBoundingBox[1] = mEdges.get(0).mNodes[0].mXY[1];
       }
-      for (int e = 0; e < mEdges.size(); ++e) {
-        mBoundingBox[0] = Math.min(mBoundingBox[0], mEdges.get(e).mNodes[0].mXY[0]);
-        mBoundingBox[0] = Math.min(mBoundingBox[0], mEdges.get(e).mNodes[1].mXY[0]);
-        mBoundingBox[1] = Math.min(mBoundingBox[1], mEdges.get(e).mNodes[0].mXY[1]);
+      for (Edge edge : mEdges) {
+        mBoundingBox[0] = Math.min(mBoundingBox[0], edge.mNodes[0].mXY[0]);
+        mBoundingBox[0] = Math.min(mBoundingBox[0], edge.mNodes[1].mXY[0]);
+        mBoundingBox[1] = Math.min(mBoundingBox[1], edge.mNodes[0].mXY[1]);
         // mBoundingBox[1] = Math.min(mBoundingBox[1], mEdges.get(e).mNodes[1].mXY[1]); // nodes are sorted: sufficient to look at nodes[0] for the minimum y-component
-        mBoundingBox[2] = Math.max(mBoundingBox[2], mEdges.get(e).mNodes[0].mXY[0]);
-        mBoundingBox[2] = Math.max(mBoundingBox[2], mEdges.get(e).mNodes[1].mXY[0]);
+        mBoundingBox[2] = Math.max(mBoundingBox[2], edge.mNodes[0].mXY[0]);
+        mBoundingBox[2] = Math.max(mBoundingBox[2], edge.mNodes[1].mXY[0]);
         // mBoundingBox[3] = Math.max(mBoundingBox[3], mEdges.get(e).mNodes[0].mXY[1]); // nodes are sorted: sufficient to look at nodes[1] for the maximum y
-        mBoundingBox[3] = Math.max(mBoundingBox[3], mEdges.get(e).mNodes[1].mXY[1]);
+        mBoundingBox[3] = Math.max(mBoundingBox[3], edge.mNodes[1].mXY[1]);
       }
     }
 
@@ -484,8 +478,8 @@ public class A056787 implements Sequence {
       if (mBoundingBox[0] != 0 || mBoundingBox[1] != 0) {
         final int dx = -mBoundingBox[0];
         final int dy = -mBoundingBox[1];
-        for (int e = 0; e < mEdges.size(); ++e) {
-          mEdges.get(e).shift(dx, dy);
+        for (Edge edge : mEdges) {
+          edge.shift(dx, dy);
         }
         mBoundingBox[0] = 0;
         mBoundingBox[1] = 0;
@@ -503,8 +497,8 @@ public class A056787 implements Sequence {
       /* In a simple linear search strategy, all edges and both nodes of each
        * of them is compared with the edge n.
        */
-      for (int e = 0; e < mEdges.size(); ++e) {
-        if (mEdges.get(e).mNodes[0].equals(n) || mEdges.get(e).mNodes[1].equals(n)) {
+      for (Edge edge : mEdges) {
+        if (edge.mNodes[0].equals(n) || edge.mNodes[1].equals(n)) {
           /* If we found a node in the tree that matches the candidate,
            * we report this as early as possible for efficiency.
            */
@@ -518,67 +512,22 @@ public class A056787 implements Sequence {
       return false;
     }
 
-//    /**
-//     * Test an edge as a candidate for a new edge in the current tree.
-//     * @param n one node of current instance of a tree.
-//     * @param dir a lookup direction (0 to 3) for extension along a new edge.
-//     * @return true (equivalent to admitted) indicating that the new site
-//     * for the partner node of n is not yet occupied by another node
-//     * in the current tree.
-//     */
-//    boolean tstedge(final Node n, int dir) {
-//      return !haveNode(new Node(n, dir));
-//    }
-
-    // SAI
-    private Node find(final List<Node> nodes, final Node n) {
-      for (final Node t : nodes) {
-        if (t.equals(n)) {
-          return t;
-        }
-      }
-      return null;
-    }
-
     /**
      * Generate a list of all nodes in the current tree.
      * @return the list of all nodes (duplicates removed) of the current tree.
      */
-    private List<Node> allNodes() {
-      // todo better done as a TreeSet or HashSet?
-      /* This is the result list, empty at creation */
-      final List<Node> result = new ArrayList<>();
-      /* We linearly search through all edges that host two nodes each */
-      for (int e = 0; e < mEdges.size(); ++e) {
-        /* The algorithm::find() operation of the STL is used to compare
-         * the node of the current each with the set of nodes already seen
-         * by visiting the previous edges.
-         */
-//        List<node>::iterator fi=result.begin() ;
-//        List<node>::iterator la=result.end() ;
-//        if ( find(fi,la,edges.get(e).nodes[0]) == result.end() ) {
-//          result.add( edges.get(e).nodes[0]) ;
-//        }
-//        fi=result.begin() ;
-//        la=result.end() ;
-//        if ( find(fi,la,edges.get(e).nodes[1]) == result.end() ) {
-//          result.add( edges.get(e).nodes[1]) ;
-//        }
-        if (find(result, mEdges.get(e).mNodes[0]) == null) {
-          //result.add(mEdges.get(e).mNodes[0]);
-          result.add(new Node(mEdges.get(e).mNodes[0]));
-        }
-        if (find(result, mEdges.get(e).mNodes[1]) == null) {
-          //result.add(mEdges.get(e).mNodes[1]);
-          result.add(new Node(mEdges.get(e).mNodes[1]));
-        }
+    private Collection<Node> allNodes() {
+      final TreeSet<Node> result = new TreeSet<>();
+      for (final Edge edge : mEdges) {
+        result.add(new Node(edge.mNodes[0]));
+        result.add(new Node(edge.mNodes[1]));
       }
       return result;
     }
   }
 
   /**
-   * Create a new generation of child trees by generation of all noncongruent
+   * Create a new generation of child trees by generation of all incongruent
    * children of the trees in parent.
    * @param parent the existing forest of parent trees
    * @return the list of all incongruent trees with one more edge than
@@ -588,19 +537,18 @@ public class A056787 implements Sequence {
     /* The result list */
     final List<Tree> result = new ArrayList<>();
     /* New trees are generated by spawning from each of the parent trees in turn, in a loop */
-    for (int t = 0; t < parent.size(); ++t) {
+    for (Tree value : parent) {
       /* The child trees of this particular parent are collected in an intermediate
        * forest children.
        */
-      final List<Tree> children = parent.get(t).children();
-      System.out.println("children(" + t + ")=" + children.size());
-      for (int c = 0; c < children.size(); ++c) {
+      final List<Tree> children = value.children();
+      for (Tree child : children) {
         /* Each of this child trees is tested for congruency relative to the
          * existing full set of trees in the result list.
          */
         boolean congru = false;
-        for (int pres = 0; pres < result.size(); ++pres) {
-          if (result.get(pres).isCongruent(children.get(c))) {
+        for (Tree tree : result) {
+          if (tree.isCongruent(child)) {
             congru = true;
             break;
           }
@@ -609,7 +557,7 @@ public class A056787 implements Sequence {
          * and if the verbose option was used, show and enumerate it on stdout.
          */
         if (!congru) {
-          result.add(children.get(c));
+          result.add(child);
         }
       }
     }
@@ -620,12 +568,11 @@ public class A056787 implements Sequence {
 
   @Override
   public Z next() {
+    // The initialization here is done in a hacky way to handle n=0 case
     if (mA == null) {
       mA = new ArrayList<>();
-      /* The fundamental root trees (great grand root tree) are the ones from (0,0) to (1,0),
-       * and from (0,0) to (1,1),
-       * with one edge and two nodes only.
-       */
+      // The fundamental root trees (great grand root tree) are the ones from (0,0) to (1,0),
+      // and from (0,0) to (1,1), with one edge and two nodes only.
       final Tree root1 = new Tree();
       final Edge strt1 = new Edge(new Node(0, 0), new Node(1, 0));
       root1.addEdge(strt1);
@@ -633,7 +580,8 @@ public class A056787 implements Sequence {
       root1.mBoundingBox[1] = 0;
       root1.mBoundingBox[2] = 1;
       root1.mBoundingBox[3] = 0;
-
+      mA.add(root1);
+    } else if (mA.size() == 1) {
       final Tree root2 = new Tree();
       final Edge strt2 = new Edge(new Node(0, 0), new Node(1, 1));
       root2.addEdge(strt2);
@@ -641,8 +589,6 @@ public class A056787 implements Sequence {
       root2.mBoundingBox[1] = 0;
       root2.mBoundingBox[2] = 1;
       root2.mBoundingBox[3] = 1;
-
-      mA.add(root1);
       mA.add(root2);
     } else {
       mA = step(mA);

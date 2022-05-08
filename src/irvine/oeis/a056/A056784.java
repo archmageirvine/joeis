@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056784.
+ * A056784 First nonprime in a sequence of consecutive nonprimes which is at least twice as long as any earlier run of consecutive nonprimes in this list.
  * @author Sean A. Irvine
  */
 public class A056784 implements Sequence {

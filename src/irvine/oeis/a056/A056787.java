@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056785.
+ * A056787 Number of incongruental unlabeled undirected trees with n nodes on a square lattice and edges of length 1 or sqrt(2) admitted to the 4 nearest or 4 2nd nearest neighbors.
  * @author R. J. Mathar
  * @author Sean A. Irvine (Java port)
  */
@@ -27,7 +27,7 @@ public class A056787 implements Sequence {
    * A node contains simply the two integer coordinates of a point on the
    * square lattice.
    */
-  private static class Node implements Comparable<Node> {
+  private static final class Node implements Comparable<Node> {
 
     private final int[] mXY;
 
@@ -112,6 +112,11 @@ public class A056787 implements Sequence {
     }
 
     @Override
+    public int hashCode() {
+      return Arrays.hashCode(mXY);
+    }
+
+    @Override
     public int compareTo(final Node o) {
       final int c = Integer.compare(mXY[1], o.mXY[1]);
       if (c != 0) {
@@ -122,14 +127,11 @@ public class A056787 implements Sequence {
   }
 
   /**
-   * The edge class is a pair of nodes connected by an edge.
+   * The edge class is an ordered pair of nodes connected by an edge.
    * The connectivity is implicit, and only the two coordinates of the
    * pair of nodes are stored.
    */
   private static final class Edge implements Comparable<Edge> {
-    /* The pair of nodes, assumed  ordered such that nodes[0] < nodes[1].
-     * To form an edge, nodes[0]!=nodes[1] in all cases.
-     */
     private final Node[] mNodes = new Node[2];
 
     /**
@@ -189,6 +191,11 @@ public class A056787 implements Sequence {
       final Edge other = (Edge) obj;
       return mNodes[0].equals(other.mNodes[0]) && mNodes[1].equals(other.mNodes[1]);
     }
+
+    @Override
+    public int hashCode() {
+      return Arrays.hashCode(mNodes);
+    }
   }
 
   /**
@@ -199,15 +206,13 @@ public class A056787 implements Sequence {
   private static final class Tree {
     /* The list of all edges is the only full representation of the tree. */
     private final List<Edge> mEdges;
-    /* The bbox contains a bounding box, such that bbox[0] is the smallest x,
-     * bbox[1] the smallest y, bbox[2] the largest x and bbox[3] the largest y value of
-     * all nodes of the edges.
-     */
+    // The bounding box, such that bbox[0] is the smallest x,
+    // bbox[1] the smallest y, bbox[2] the largest x and bbox[3] the largest y value of
+    // all nodes of the edges.
     private final int[] mBoundingBox;
 
-    /* The default constructor creates an empty tree.
-     * It is useful to generated lists of trees and has no other significance.
-     */
+    // The default constructor creates an empty tree.
+    // It is useful to generated lists of trees and has no other significance.
     private Tree() {
       mEdges = new ArrayList<>();
       mBoundingBox = new int[4];
@@ -227,29 +232,34 @@ public class A056787 implements Sequence {
     }
 
     @Override
+    public int hashCode() {
+      return mEdges.hashCode();
+    }
+
+    @Override
     public boolean equals(final Object obj) {
       if (!(obj instanceof Tree)) {
         return false;
       }
       final Tree t1 = this;
       final Tree t2 = (Tree) obj;
-      /* Trees of different edge counts are different */
       if (t1.mEdges.size() != t2.mEdges.size()) {
+        // Trees of different edge counts are different
         return false;
-      }
-      /* Trees of different bounding boxes are also different */
-      else if ((t1.mBoundingBox[2] != t2.mBoundingBox[2] && t1.mBoundingBox[2] != t2.mBoundingBox[3])
+      } else if ((t1.mBoundingBox[2] != t2.mBoundingBox[2] && t1.mBoundingBox[2] != t2.mBoundingBox[3])
         || (t1.mBoundingBox[3] != t2.mBoundingBox[2] && t1.mBoundingBox[3] != t2.mBoundingBox[3])) {
+        // Trees of different bounding boxes are also different
         return false;
       } else {
-        /* Trees of same edge count and bounding box are the same if the lists
-         * of edges, after sorting according to the same criteria of comparison operators,
-         * are the same.
-         */
-        Collections.sort(t1.mEdges);
-        Collections.sort(t2.mEdges);
+        // Trees of same edge count and bounding box are the same if the lists
+        // of edges, after sorting according to the same criteria of comparison operators,
+        // are the same.
+        // SAI: They were sorted when constructed.
+        //   Collections.sort(t1.mEdges);
+        //   Collections.sort(t2.mEdges);
         return t1.mEdges.equals(t2.mEdges);
       }
+
     }
 
     /**
@@ -261,20 +271,19 @@ public class A056787 implements Sequence {
      */
     private Tree congruent(final int mode) {
       final Tree result = new Tree();
-      /* The algorithm is simply to create the image of each edge separately,
-       * and add it to the new tree with addedge().
-       */
-      for (Edge edge : mEdges) {
+      // The algorithm is simply to create the image of each edge separately,
+      // and add it to the new tree with addEdge().
+      for (final Edge edge : mEdges) {
         final Edge cedge = edge.congruent(mode);
         result.addEdge(cedge);
       }
-      /* The typical rotation would have created an image in any quadrant of
-       * the coordinate system. For quicker comparison of congruent pairs (which are
-       * to be eliminated according to the algorithm), we translate each tree such
-       * it is placed in the upper-right quadrant with the smallest x and the smallest
-       * y coordinate of all nodes being both 0.
-       */
+      // The typical rotation would have created an image in any quadrant of
+      // the coordinate system. For quicker comparison of congruent pairs (which are
+      // to be eliminated according to the algorithm), we translate each tree such
+      // it is placed in the upper-right quadrant with the smallest x and the smallest
+      // y coordinate of all nodes being both 0.
       result.normalize();
+      Collections.sort(result.mEdges);
       return result;
     }
 
@@ -297,17 +306,15 @@ public class A056787 implements Sequence {
      * @return true if this tree and the other one are congruent.
      */
     private boolean isCongruent(final Tree oth) {
-      /* To avoid some overhead during the comparison, we compared some
-       * rough parameters first: if the numbers of edges in the two trees differ,
-       * the trees differ.
-       */
+      // To avoid some overhead during the comparison, we compared some
+      // rough parameters first: if the numbers of edges in the two trees differ,
+      // the trees differ.
       if (mEdges.size() != oth.mEdges.size()) {
         return false;
       }
-      /* The congruent operations of rotations and reflections can swap
-       * the bounding box x and y coordinates, but not change them otherwise.
-       * So we conclude that the two trees differ if this test of matching fails.
-       */
+      // The congruent operations of rotations and reflections can swap
+      // the bounding box x and y coordinates, but not change them otherwise.
+      // So we conclude that the two trees differ if this test of matching fails.
       if (mBoundingBox[2] != oth.mBoundingBox[2] && mBoundingBox[2] != oth.mBoundingBox[3]) {
         return false;
       }
@@ -322,25 +329,19 @@ public class A056787 implements Sequence {
        * instance. This should result in a comparison time which is only linear in the
        * number of edges.
        */
-      Collections.sort(mEdges);
+      //Collections.sort(mEdges);
 
       /* This is the loop over all possible 8 congruent versions of the other tree. */
-      for (int c = 0; c < 8; ++c) {
-        final Tree imag = oth.congruent(c);
-        /* Sorting the edge list of the image copy and figuring out whether the
-         * image lists are then the same is done with two calls of the STL library.
-         * If we found that any of the 8 versions equals the current instance,
-         * we do not need to investigate the other versions and may conclude
-         * that both trees are congruent.
-         */
-        Collections.sort(imag.mEdges);
-        if (mEdges.equals(imag.mEdges)) {
+      for (int c = 0; c < DELTA_X.length; ++c) {
+        // If we found that any of the 8 versions equals the current instance,
+        // we do not need to investigate the other versions and may conclude
+        // that both trees are congruent.
+        if (mEdges.equals(oth.congruent(c).mEdges)) {
           return true;
         }
       }
-      /* If we have fallen through the loop over the 8 images, none of these
-       * was congruent and the result is a 'no'.
-       */
+      // If we have fallen through the loop over the 8 images, none of these
+      // was congruent and the result is a 'no'.
       return false;
     }
 
@@ -352,7 +353,7 @@ public class A056787 implements Sequence {
      * @return a list of the incongruent trees generated.
      */
     private List<Tree> children() {
-      /* collect all new trees with one more edge than the current tree */
+      // Collect all new trees with one more edge than the current tree.
       final List<Tree> result = new ArrayList<>();
 
       /* For some efficiency, we generate a list of all nodes of the existing tree,
@@ -361,41 +362,37 @@ public class A056787 implements Sequence {
        * admitted by the square lattice.
        */
 
-      /* In a loop over all existing nodes we can generate all child trees
-       * that have the same skeleton as the current one, but one more edge.
-       * This works since a tree is a connected graph, so edges cannot be isolated.
-       */
+      // In a loop over all existing nodes we can generate all child trees
+      // that have the same skeleton as the current one, but one more edge.
+      // This works since a tree is a connected graph, so edges cannot be isolated.
       for (final Node node : allNodes()) {
-        /* For each of the eight directions of the node we test whether this
-         * can be the direction of a new edge for a potentially new child tree.
-         */
-        for (int dir = 0; dir < 8; ++dir) {
-          /* For this particular node and direction, we test whether
-           * the node and the new node are a candidate for extension. We generate
-           * a new node into the particular direction, and admit this as a new
-           * edge if this new site is not yet already occupied.
-           */
+        // For each of the eight directions of the node we test whether this
+        // can be the direction of a new edge for a potentially new child tree.
+        for (int dir = 0; dir < DELTA_X.length; ++dir) {
+          // For this particular node and direction, we test whether
+          // the node and the new node are a candidate for extension. We generate
+          // a new node into the particular direction, and admit this as a new
+          // edge if this new site is not yet already occupied.
           final Node tste = new Node(node, dir);
           // Test on occupation of the point in the square lattice.
           if (!haveNode(tste)) {
-            /* If this node is not yet occupied (allowed since a tree is cycle-free),
-             * we create the new child by first copying this tree, and adding
-             * a new edge that spreads between the current node and the new one.
-             */
+            // If this node is not yet occupied (allowed since a tree is cycle-free),
+            // we create the new child by first copying this tree, and adding
+            // a new edge that spreads between the current node and the new one.
             final Tree candidate = new Tree(this);
             candidate.addEdge(new Edge(new Node(node), tste));
 
-            /* Adding the edge may have extended the new tree into the
-             * quadrant to the left or below, so we shift the tree to the right
-             * or up with normalize() to place it into the first quadrant
-             * of the coordinate system.
-             */
+            // Adding the edge may have extended the new tree into the
+            // quadrant to the left or below, so we shift the tree to the right
+            // or up with normalize() to place it into the first quadrant
+            // of the coordinate system.
             candidate.normalize();
+            Collections.sort(candidate.mEdges);
             // This new child tree may already exist in the list of trees
             // generated before. We test whether it is congruent to any fo the
             // child trees already accumulated so far in the result list.
             boolean isCongruent = false;
-            for (Tree tree : result) {
+            for (final Tree tree : result) {
               if (tree.isCongruent(candidate)) {
                 isCongruent = true;
                 break;
@@ -452,7 +449,7 @@ public class A056787 implements Sequence {
       if (mBoundingBox[0] != 0 || mBoundingBox[1] != 0) {
         final int dx = -mBoundingBox[0];
         final int dy = -mBoundingBox[1];
-        for (Edge edge : mEdges) {
+        for (final Edge edge : mEdges) {
           edge.shift(dx, dy);
         }
         mBoundingBox[0] = 0;
@@ -468,21 +465,17 @@ public class A056787 implements Sequence {
      * @return true if the node is part of any edge in the tree.
      */
     private boolean haveNode(final Node n) {
-      /* In a simple linear search strategy, all edges and both nodes of each
-       * of them is compared with the edge n.
-       */
+      // In a simple linear search strategy, all edges and both nodes of each
+      // of them is compared with the edge n.
       for (Edge edge : mEdges) {
         if (edge.mNodes[0].equals(n) || edge.mNodes[1].equals(n)) {
-          /* If we found a node in the tree that matches the candidate,
-           * we report this as early as possible for efficiency.
-           */
+          // If we found a node in the tree that matches the candidate,
+          // we report this as early as possible for efficiency.
           return true;
         }
       }
-
-      /* At this point of the program, we have fallen through the double loop over
-       * edges and nodes and have not found any match. So the result is a 'no'.
-       */
+      // At this point of the program, we have fallen through the double loop over
+      // edges and nodes and have not found any match. So the result is a 'no'.
       return false;
     }
 
@@ -508,18 +501,14 @@ public class A056787 implements Sequence {
    * those of the parent list.
    */
   private List<Tree> step(final List<Tree> parent) {
-    /* The result list */
     final List<Tree> result = new ArrayList<>();
-    /* New trees are generated by spawning from each of the parent trees in turn, in a loop */
-    for (Tree value : parent) {
-      /* The child trees of this particular parent are collected in an intermediate
-       * forest children.
-       */
-      final List<Tree> children = value.children();
-      for (Tree child : children) {
-        /* Each of this child trees is tested for congruency relative to the
-         * existing full set of trees in the result list.
-         */
+    // New trees are generated by spawning from each of the parent trees in turn, in a loop
+    for (final Tree value : parent) {
+      // The child trees of this particular parent are collected in an intermediate
+      // forest children.
+      for (final Tree child : value.children()) {
+        // Each of this child trees is tested for congruency relative to the
+        // existing full set of trees in the result list.
         boolean congru = false;
         for (Tree tree : result) {
           if (tree.isCongruent(child)) {
@@ -527,9 +516,8 @@ public class A056787 implements Sequence {
             break;
           }
         }
-        /* If a congruent version is not yet there, we add the new child tree,
-         * and if the verbose option was used, show and enumerate it on stdout.
-         */
+        // If a congruent version is not yet there, we add the new child tree,
+        // and if the verbose option was used, show and enumerate it on stdout.
         if (!congru) {
           result.add(child);
         }

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056785.
+ * A056785 Number of polydominoes.
  * @author Sean A. Irvine
  */
 public class A056785 implements Sequence {

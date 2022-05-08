@@ -1819,3 +1819,4 @@ A056769 Puzzle 2, related to polyominoes
 A056778 Number of 3-element antichains on an unlabeled n-element set; equivalence classes of monotone Boolean functions of n variables with 3 mincuts under action of symmetric group S_n
 A056779 Number of poly-IH73-tiles (holes allowed) with n cells
 A056782 Number of 3-element proper antichains (i.e., antichains such that every two members have nonempty intersection) on an unlabeled n-element set
+A056786 Number of inequivalent connected planar figures that can be formed from n non-overlapping 1 X 2 rectangles (or dominoes)

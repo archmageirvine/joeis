@@ -12,7 +12,7 @@ public class Hunter {
   protected final Lattice mLattice;
   protected long mCount = 0;
   protected Keeper mKeeper = (animal, forbidden) -> increment(1);
-  private final boolean mForbidden;
+  protected final boolean mForbidden;
 
   /**
    * Construct a hunter on the specified lattice.

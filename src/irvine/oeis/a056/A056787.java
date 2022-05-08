@@ -19,6 +19,9 @@ public class A056787 implements Sequence {
 
   // 2022-05-09 Some data structures changed to avoid need for sorting
 
+  private static final int[] DELTA_X = {1, 1, 0, -1, -1, -1, 0, 1};
+  private static final int[] DELTA_Y = {0, 1, 1, 1, 0, -1, -1, -1};
+
   /**
    * A node is one point on the square lattice.
    * A node contains simply the two integer coordinates of a point on the
@@ -53,34 +56,7 @@ public class A056787 implements Sequence {
        * we create the new node one step into the East (+x),
        * North (+y), West (-x) or South (-y) from the original one.
        */
-      switch (dir) {
-        case 0:
-          mXY = new int[] {n.mXY[0] + 1, n.mXY[1]};
-          break;
-        case 1:
-          mXY = new int[] {n.mXY[0] + 1, n.mXY[1] + 1};
-          break;
-        case 2:
-          mXY = new int[] {n.mXY[0], n.mXY[1] + 1};
-          break;
-        case 3:
-          mXY = new int[] {n.mXY[0] - 1, n.mXY[1] + 1};
-          break;
-        case 4:
-          mXY = new int[] {n.mXY[0] - 1, n.mXY[1]};
-          break;
-        case 5:
-          mXY = new int[] {n.mXY[0] - 1, n.mXY[1] - 1};
-          break;
-        case 6:
-          mXY = new int[] {n.mXY[0], n.mXY[1] - 1};
-          break;
-        case 7:
-          mXY = new int[] {n.mXY[0] + 1, n.mXY[1] - 1};
-          break;
-        default:
-          throw new IllegalArgumentException();
-      }
+      mXY = new int[] {n.mXY[0] + DELTA_X[dir], n.mXY[1] + DELTA_Y[dir]};
     }
 
     /**
@@ -347,7 +323,6 @@ public class A056787 implements Sequence {
        * number of edges.
        */
       Collections.sort(mEdges);
-      //sort(edges.begin(),edges.end() ) ;
 
       /* This is the loop over all possible 8 congruent versions of the other tree. */
       for (int c = 0; c < 8; ++c) {
@@ -401,7 +376,7 @@ public class A056787 implements Sequence {
            * edge if this new site is not yet already occupied.
            */
           final Node tste = new Node(node, dir);
-          /* Test on occupation of the point in the square lattice. */
+          // Test on occupation of the point in the square lattice.
           if (!haveNode(tste)) {
             /* If this node is not yet occupied (allowed since a tree is cycle-free),
              * we create the new child by first copying this tree, and adding
@@ -416,10 +391,9 @@ public class A056787 implements Sequence {
              * of the coordinate system.
              */
             candidate.normalize();
-            /* This new child tree may already exist in the list of trees
-             * generated before. We test whether it is congruent to any fo the
-             * child trees already accumulated so far in the result list.
-             */
+            // This new child tree may already exist in the list of trees
+            // generated before. We test whether it is congruent to any fo the
+            // child trees already accumulated so far in the result list.
             boolean isCongruent = false;
             for (Tree tree : result) {
               if (tree.isCongruent(candidate)) {
@@ -427,17 +401,15 @@ public class A056787 implements Sequence {
                 break;
               }
             }
-            /* If no version of the new child tree is found in the
-             * current list of children, we put it into the result list.
-             */
+            // If no version of the new child tree is found in the
+            // current list of children, we put it into the result list.
             if (!isCongruent) {
               result.add(candidate);
             }
           }
         }
       }
-
-      /* The result list of children that are mutually incongruent is returned */
+      // The result list of children that are mutually incongruent is returned
       return result;
     }
 
@@ -448,15 +420,17 @@ public class A056787 implements Sequence {
       /* The algorithm scans each edge and both nodes in the edge
        * for the maximum and minimum coordinate in x and y, and updates
        * the four bounding box parameters where the edge sprawls outside
-       * the bounding box seen so fare.
+       * the bounding box seen so far.
        */
-      if (!mEdges.isEmpty()) {
-        mBoundingBox[2] = mEdges.get(0).mNodes[0].mXY[0];
-        mBoundingBox[0] = mEdges.get(0).mNodes[0].mXY[0];
-        mBoundingBox[3] = mEdges.get(0).mNodes[0].mXY[1];
-        mBoundingBox[1] = mEdges.get(0).mNodes[0].mXY[1];
-      }
-      for (Edge edge : mEdges) {
+      boolean first = true;
+      for (final Edge edge : mEdges) {
+        if (first) {
+          first = false;
+          mBoundingBox[2] = edge.mNodes[0].mXY[0];
+          mBoundingBox[0] = edge.mNodes[0].mXY[0];
+          mBoundingBox[3] = edge.mNodes[0].mXY[1];
+          mBoundingBox[1] = edge.mNodes[0].mXY[1];
+        }
         mBoundingBox[0] = Math.min(mBoundingBox[0], edge.mNodes[0].mXY[0]);
         mBoundingBox[0] = Math.min(mBoundingBox[0], edge.mNodes[1].mXY[0]);
         mBoundingBox[1] = Math.min(mBoundingBox[1], edge.mNodes[0].mXY[1]);

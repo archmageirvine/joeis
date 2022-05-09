@@ -59,7 +59,7 @@ public class A242784 extends UpperLeftTriangle {
           return sum;
         }
       }
-      return (new B()).get(n, 0, 0);
+      return new B().get(n, 0, 0);
     }
   };
 

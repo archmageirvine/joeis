@@ -1,13 +1,14 @@
 package irvine.oeis.a176;
 
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.triangle.MemoryUpperLeftTriangle;
+import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
  * A176129 Number A(n,k) of solid standard Young tableaux of shape [[n*k,n],[n]]; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
-public class A176129 extends MemoryUpperLeftTriangle<Z> {
+public class A176129 extends UpperLeftTriangle {
 
   /** Construct the sequence. */
   public A176129() {
@@ -22,32 +23,34 @@ public class A176129 extends MemoryUpperLeftTriangle<Z> {
     A:= (n, k)-> b(n*k, n, n):
     seq(seq(A(n, d-n), n=0..d), d=0..8);
   */
-  @Override
-  protected Z calculate(final int x, final int y, final int z) {
-    if (z > y) {
-      return retrieve(x, z, y);
+  private final MemoryFunctionInt3<Z> mB = new MemoryFunctionInt3<Z>() {
+    @Override
+    protected Z compute(final int x, final int y, final int z) {
+      if (z > y) {
+        return get(x, z, y);
+      }
+      if (z > x) {
+        return Z.ZERO;
+      }
+      if (x == 0 && y == 0 && z == 0) {
+        return Z.ONE;
+      }
+      Z sum = Z.ZERO;
+      if (x > y && x > z) {
+        sum = sum.add(get(x - 1, y, z));
+      }
+      if (y > 0) {
+        sum = sum.add(get(x, y - 1, z));
+      }
+      if (z > 0) {
+        sum = sum.add(get(x, y, z - 1));
+      }
+      return sum;
     }
-    if (z > x) {
-      return Z.ZERO;
-    }
-    if (x == 0 && y == 0 && z == 0) {
-      return Z.ONE;
-    }
-    Z sum = Z.ZERO;
-    if (x > y && x > z) {
-      sum = sum.add(retrieve(x - 1, y, z));
-    }
-    if (y > 0) {
-      sum = sum.add(retrieve(x, y - 1, z));
-    }
-    if (z > 0) {
-      sum = sum.add(retrieve(x, y, z - 1));
-    }
-    return sum;
-  }
+  };
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return retrieve(n * k, n, n);
+    return mB.get(n * k, n, n);
   }
 }

@@ -1,8 +1,8 @@
 package irvine.math;
 
-import irvine.util.Triple;
-
 import java.util.HashMap;
+
+import irvine.util.Triple;
 
 /**
  * Definition of a three argument function that remembers previously computed results.
@@ -41,5 +41,3 @@ public abstract class MemoryFunction3<S, R> {
     return r;
   }
 }
-
-

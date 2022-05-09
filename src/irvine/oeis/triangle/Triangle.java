@@ -40,7 +40,7 @@ public class Triangle extends ArrayList<Z[]> implements Sequence {
    * Generates a triangle with Pascal's rule.
    */
   public Triangle(final String inits) {
-    initialize(inits.length() == 0 ? new Z[] { Z.ONE } : ZUtils.toZ(inits));
+    initialize(inits.isEmpty() ? new Z[] { Z.ONE } : ZUtils.toZ(inits));
   }
 
   /**

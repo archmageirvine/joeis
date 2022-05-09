@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 public class A224956 extends MemoryFunctionInt3<Z> implements Sequence {
 
   private int mN;
-  private int mDiff;
+  private final int mDiff;
 
   /** Construct the sequence. */
   public A224956() {
@@ -33,16 +33,6 @@ public class A224956 extends MemoryFunctionInt3<Z> implements Sequence {
    * @param n current row index
    * @param i current column index
    * @return function value
-   * /
-   * /* Maple:
-   * b:= proc(n, i) option remember; `if`(n=0, 1, `if`(i<1, 0,
-   * add(b(n-i*j, i-1), j=0..min(3, n/i))))
-   * end:
-   * g:= proc(n, i) option remember; `if`(n=0, 1, `if`(i<1, 0,
-   * add(b(n-i*j, i-1), j=1..n/i)))
-   * end:
-   * a:= n-> add(g(n, k), k=0..n):
-   * seq(a(n), n=0..60);  # Alois P. Heinz, Mar 09 2014
    */
   @Override
   protected Z compute(final int bg, final int n, final int i) {
@@ -54,7 +44,7 @@ public class A224956 extends MemoryFunctionInt3<Z> implements Sequence {
     }
     final int ni = n / i;
     int jmin = 0;
-    int jmax = mDiff < ni ? mDiff : ni;
+    int jmax = Math.min(mDiff, ni);
     if (bg == 1) {
       jmin = 1;
       jmax = ni;

@@ -15,7 +15,7 @@ public class A204170 extends A203991 {
     super(1, new UpperLeftTriangle(1, 1, -1) {
       @Override
       public Z matrixElement(final int i, final int j) {
-        return Z.valueOf(i * j);
+        return Z.valueOf((long) i * j);
       }
     });
   }

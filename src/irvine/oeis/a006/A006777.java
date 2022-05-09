@@ -21,7 +21,7 @@ public class A006777 implements Sequence {
   private static final int BITS_PER_COORDINATE = 16;
   private static final int BIAS = 1 << (BITS_PER_COORDINATE - 1);
   protected static final int ORIGIN = c(0, 0);
-  protected static final int[] DELTAS = {2 << BITS_PER_COORDINATE,
+  static final int[] DELTAS = {2 << BITS_PER_COORDINATE,
     (1 << BITS_PER_COORDINATE) + 1,
     ((-1) << BITS_PER_COORDINATE) + 1,
     (-2) << BITS_PER_COORDINATE,

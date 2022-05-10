@@ -38,7 +38,7 @@ public class A299038 extends UpperLeftTriangle {
       }
       Z sum = Z.ZERO;
       final int ni = n / i;
-      final int jmax = t < ni ? t : ni;
+      final int jmax = Math.min(t, ni);
       for (int j = 0; j <= jmax; ++j) {
         sum = sum.add(Binomial.binomial(get(i - 1, i - 1, k, k).add(j - 1), Z.valueOf(j)).multiply(get(n - i * j, i - 1, t - j, k)));
       }

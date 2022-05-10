@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a028.A028989;
 
 /**
- * A056732 Smallest palindromic prime using n distinct n digits, or 0 if no such number exists.
+ * A056732 Smallest palindromic prime using n digits, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A056732 extends A028989 {

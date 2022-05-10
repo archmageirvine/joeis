@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056740 Odd solutions x to 2^x mod x = 2^(x+2) mod (x-2).
+ * A056740 Odd numbers k such that 2^k mod k = 2^(k+2) mod (k-2) is also an odd number.
  * @author Sean A. Irvine
  */
 public class A056740 implements Sequence {

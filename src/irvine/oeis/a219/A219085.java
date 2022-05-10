@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A219085 Floor((n + 1/2)^3).
+ * A219085 a(n) = floor((n + 1/2)^3).
  * @author Georg Fischer
  */
 public class A219085 implements Sequence {

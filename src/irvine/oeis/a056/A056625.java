@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002931;
 import irvine.util.Point;
 
 /**
- * A056625 Series expansion for first area weighted moment for square lattice.
+ * A056625 a(n) is the total area of all self-avoiding polygons of length 2n on the square lattice.
  * @author Sean A. Irvine
  */
 public class A056625 extends A002931 {

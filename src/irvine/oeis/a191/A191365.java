@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A191365 E.g.f. (1/(1-x))^exp(x).
+ * A191365 Expansion of e.g.f. (1/(1-x))^exp(x).
  * E.g.f.: (1/(1-x))^exp(x)
  * @author Georg Fischer
  */

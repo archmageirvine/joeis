@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332519 a(n) = 4*(n^2+n-2).
+ * A332519 a(n) = 4*(n^2 + n - 2).
  * @author Georg Fischer
  */
 public class A332519 extends HolonomicRecurrence {

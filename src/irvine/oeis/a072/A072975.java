@@ -5,7 +5,7 @@ package irvine.oeis.a072;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A072975 a(n)=2^n*binomial(3*n,n)*(3*n+1).
+ * A072975 a(n) = 2^n*binomial(3*n,n)*(3*n+1).
  * @author Georg Fischer
  */
 public class A072975 extends HolonomicRecurrence {

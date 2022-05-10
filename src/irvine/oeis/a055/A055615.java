@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055615 a(n) = n*moebius(n) (cf. A008683).
+ * A055615 a(n) = n * mu(n), where mu is the M\u00f6bius function A008683.
  * @author Sean A. Irvine
  */
 public class A055615 implements Sequence {

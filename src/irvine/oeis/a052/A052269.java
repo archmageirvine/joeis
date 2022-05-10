@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a246.A246106;
 
 /**
- * A052269 Number of n X n matrices over GF(3) under row and column permutations.
+ * A052269 Number of n X n matrices over GF(3) up to row and column permutations.
  * @author Sean A. Irvine
  */
 public class A052269 extends A246106 {

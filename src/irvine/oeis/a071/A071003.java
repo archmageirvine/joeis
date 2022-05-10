@@ -5,7 +5,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a068.A068466;
 
 /**
- * A071003 Binary expansion of gamma(5/4).
+ * A071003 Binary expansion of Gamma(5/4).
  * @author Sean A. Irvine
  */
 public class A071003 extends DecimalExpansionSequence {

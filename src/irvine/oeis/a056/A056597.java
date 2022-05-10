@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Croatian;
 
 /**
- * A056597 Number of letters in n (in Serbian or Croatian).
+ * A056597 Number of letters in n in Serbian or Croatian.
  * @author Sean A. Irvine
  */
 public class A056597 implements Sequence {

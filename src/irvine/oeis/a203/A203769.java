@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.math.z.Z;
 
 /**
- * A203769 (-1+A203678(n+1))/2.
+ * A203769 a(n) = (A203768(n+2) - 1)/2.
  * @author Georg Fischer
  */
 public class A203769 extends A203768 {

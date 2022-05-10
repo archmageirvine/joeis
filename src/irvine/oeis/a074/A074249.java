@@ -2,7 +2,7 @@ package irvine.oeis.a074;
 // manually A074476/parm3
 
 /**
- * A074249 a(0) = 1; for n &gt; 0, a(n) = largest prime factor of 7^n-1.
+ * A074249 a(n) = largest prime factor of 7^n-1.
  * @author Georg Fischer
  */
 public class A074249 extends A074477 {

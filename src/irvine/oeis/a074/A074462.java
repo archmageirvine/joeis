@@ -8,7 +8,7 @@ import irvine.oeis.a004.A004427;
 
 
 /**
- * A074462 Average digit (rounded up) in the decimal expansion of a prime number.
+ * A074462 Average digit (rounded up) in the decimal expansion of prime(n).
  * Formula: <code>a(n) = A004427(A000040(n)).</code>
  * @author Georg Fischer
  */

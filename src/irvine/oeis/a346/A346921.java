@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A346921 E.g.f.: 1 / (1 - log(1 - x)^2 / 2).
+ * A346921 Expansion of e.g.f. 1 / (1 - log(1 - x)^2 / 2).
  * E.g.f.: 1 / (1 - log(1 - x)^2 / 2)
  * @author Georg Fischer
  */

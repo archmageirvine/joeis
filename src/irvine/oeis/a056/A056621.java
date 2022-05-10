@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002931;
 import irvine.util.Point;
 
 /**
- * A056621 Series expansion for radius of gyration on square lattice.
+ * A056621 a(n) is the total radius of gyration of all self-avoiding polygons of length 2n on the square lattice.
  * @author Sean A. Irvine
  */
 public class A056621 extends A002931 {

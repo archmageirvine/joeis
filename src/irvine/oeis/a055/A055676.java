@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.math.z.Z;
 
 /**
- * A055676 b(n)-a(n), where a, b are given by A055674, A055675.
+ * A055676 a(n) = A055675(n) - A055674(n).
  * @author Sean A. Irvine
  */
 public class A055676 extends A055674 {

@@ -17,6 +17,6 @@ public class A134446 extends UpperLeftTriangle {
   @Override
   public Z matrixElement(final int n, final int k) {
     // Maple: f := proc(n, k) floor(n) * floor((k+1)/2) end: seq(seq(f(n+1-k, k), k=n..1,-1), n=1..12);
-    return Z.valueOf(n * ((k + 1) / 2));
+    return Z.valueOf((long) n * ((k + 1) / 2));
   }
 }

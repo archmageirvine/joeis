@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A094284 A094283(n+1)/A094283(n).
+ * A094284 a(n) = A094283(n+1)/A094283(n).
  * @author Georg Fischer
  */
 public class A094284 extends PaddingSequence {

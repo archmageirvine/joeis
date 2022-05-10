@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067614 floor(1/(sqrt(prime(n))-floor(sqrt(prime(n))))), where prime(n) is the n-th prime.
+ * A067614 a(n) is the second partial quotient in the simple continued fraction for sqrt(prime(n)).
  * @author Georg Fischer
  */
 public class A067614 extends A000040 {

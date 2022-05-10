@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043046 a(n)=(s(n)+1)/3, where s(n)=n-th base 3 palindrome that starts with 2.
+ * A043046 a(n) = (s(n)+1)/3, where s(n) = n-th base 3 palindrome that starts with 2.
  * @author Georg Fischer
  */
 public class A043046 extends A043045 {

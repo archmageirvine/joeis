@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A073116 Continued fraction expansion of S/2 where S = sum( k&gt;=0,1/2^floor(k*PHI) ) and PHI is the golden ratio (1+sqrt(5))/2.
+ * A073116 Continued fraction expansion of S/2 where S = Sum_{k&gt;=0} 1/2^floor(k*phi) (A073115) and phi is the golden ratio (1+sqrt(5))/2 (A001622).
  * If n&gt;2 a(2n+1)=2^(F(2n-1)+1), a(2n)= 2^(F(2n-2)-1) where F(n) is the n-th Fibonacci number
  * @author Georg Fischer
  */

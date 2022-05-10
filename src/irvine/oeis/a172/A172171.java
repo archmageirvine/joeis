@@ -5,7 +5,7 @@ import irvine.oeis.a017.A017173;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A172171 (1,9) Pascal Triangle read by horizontal rows. Same as A093644, but mirrored and without the additional row/column (1,9,9,9,9,..).
+ * A172171 (1, 9) Pascal Triangle read by horizontal rows. Same as A093644, but mirrored and without the additional row/column (1, 9, 9, 9, 9, ...).
  * @author Georg Fischer
  */
 public class A172171 extends WrappedRecurrence {

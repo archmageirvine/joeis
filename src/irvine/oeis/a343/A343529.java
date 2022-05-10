@@ -5,7 +5,7 @@ package irvine.oeis.a343;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A343529 Number of tilings of a 5 X n rectangle using pentominoes of shapes P, X, Y.
+ * A343529 Number of tilings of a 5 X n rectangle using n pentominoes of shapes P, X, Y.
  * @author Georg Fischer
  */
 public class A343529 extends GeneratingFunctionSequence {

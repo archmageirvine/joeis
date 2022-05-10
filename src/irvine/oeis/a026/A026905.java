@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A026905 Partial sums of the partition numbers A000041.
+ * A026905 Partial sums of the partition numbers A000041 of the positive integers.
  * @author Sean A. Irvine
  */
 public class A026905 extends PartialSumSequence {

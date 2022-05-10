@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051222 Numbers n such that Bernoulli number B_{n} has denominator 6.
+ * A051222 Numbers k such that Bernoulli number B_{k} has denominator 6.
  * @author Sean A. Irvine
  */
 public class A051222 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a008.A008683;
 
 
 /**
- * A209635 a(n) = A008683(A000265(n)).
+ * A209635 M\u00f6bius mu-function applied to the odd part of n: a(n) = A008683(A000265(n)).
  * Formula: <code>a(n) = A008683(A000265(n)).</code>
  * @author Georg Fischer
  */

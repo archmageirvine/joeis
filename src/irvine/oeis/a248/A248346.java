@@ -5,7 +5,7 @@ import irvine.oeis.a051.A051213;
 import irvine.oeis.prime.PrimeSubsequence;
 
 /**
- * A248346 Primes of the form 2^x - y^2.
+ * A248346 Primes of the form 2^x - y^2, with y^2 &lt; 2^x.
  * @author Georg Fischer
  */
 public class A248346 extends PrimeSubsequence {

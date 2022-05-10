@@ -5,7 +5,7 @@ package irvine.oeis.a349;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A349187 Number of tilings of a 5 X n rectangle using pentominoes of shapes X, Y, Z.
+ * A349187 Number of tilings of a 5 X n rectangle using n pentominoes of shapes X, Y, Z.
  * @author Georg Fischer
  */
 public class A349187 extends HolonomicRecurrence {

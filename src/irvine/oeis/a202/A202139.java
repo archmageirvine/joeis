@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A202139 E.g.f. log(1/(1-arctanh(x))).
+ * A202139 Expansion of e.g.f. log(1/(1-arctanh(x))).
  * E.g.f.: log(1/(1-arctanh(x)))
  * @author Georg Fischer
  */

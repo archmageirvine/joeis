@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002931;
 import irvine.util.Point;
 
 /**
- * A056632 Series expansion for first perimeter weighted moment for square lattice.
+ * A056632 a(n) is the total perimeter of all self-avoiding polygons of area n on the square lattice.
  * @author Sean A. Irvine
  */
 public class A056632 extends A002931 {

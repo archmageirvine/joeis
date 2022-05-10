@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
- * A203758 Square root of v(2n+1)/[2v(2n-1)], where v=A203755.
+ * A203758 Square root of v(2n+1)/(2*v(2n)), where v=A203755.
  * @author Georg Fischer
  */
 public class A203758 implements Sequence {

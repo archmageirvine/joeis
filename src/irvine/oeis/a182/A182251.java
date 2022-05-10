@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A182251 a(0)=0, a(n) = (a(n-1) OR n) * n.
+ * A182251 a(0) = 0, a(n) = (a(n-1) OR n) * n.
  * @author Georg Fischer
  */
 public class A182251 implements Sequence {

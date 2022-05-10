@@ -11,8 +11,7 @@ import irvine.oeis.triangle.Triangle;
  */
 public class A086800 extends Triangle {
 
-  private int mDist = 1;
-  private MemorySequence mSeq = MemorySequence.cachedSequence(new A000040());
+  private final MemorySequence mSeq = MemorySequence.cachedSequence(new A000040());
 
   /** Construct the sequence. */
   public A086800() {

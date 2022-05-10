@@ -12,6 +12,6 @@ public class A214750 extends A060035 {
 
   /** Construct the sequence. */
   public A214750() {
-    super(2, 1, (n, m) -> Z.valueOf(n).square().add(m * m).remainder(Z.valueOf(n - m)).isZero());
+    super(2, 1, (n, m) -> Z.valueOf(n).square().add((long) m * m).remainder(Z.valueOf(n - m)).isZero());
   }
 }

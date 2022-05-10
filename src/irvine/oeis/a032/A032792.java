@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000959;
 
 /**
- * A032792 Quotients n(n+1)(n+2) / (n+(n+1)+(n+2)) are lucky numbers.
+ * A032792 Quotients k*(k+1)*(k+2) / (k+(k+1)+(k+2)) that are lucky numbers.
  * @author Sean A. Irvine
  */
 public class A032792 implements Sequence {

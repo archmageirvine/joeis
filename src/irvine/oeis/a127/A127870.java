@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A127870 Number of tilings of a 4xn board with 1x1 and L-shaped tiles (where the L-shaped tiles cover 3 squares).
+ * A127870 Number of tilings of a 4 X n board with 1 X 1 and L-shaped tiles (where the L-shaped tiles cover 3 squares).
  * @author Georg Fischer
  */
 public class A127870 extends GeneratingFunctionSequence {

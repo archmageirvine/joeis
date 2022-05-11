@@ -1822,3 +1822,4 @@ A056779 Number of poly-IH73-tiles (holes allowed) with n cells
 A056782 Number of 3-element proper antichains (i.e., antichains such that every two members have nonempty intersection) on an unlabeled n-element set
 A056786 Number of inequivalent connected planar figures that can be formed from n non-overlapping 1 X 2 rectangles (or dominoes)
 A056814 Triangle partitions of order n: topologically distinct ways to dissect a triangle into n triangles.
+A056840 Number of rounded n-celled polyominoes

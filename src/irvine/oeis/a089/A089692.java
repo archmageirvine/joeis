@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034444;
 import irvine.oeis.a062.A062570;
 
 /**
- * A089692 a(n)=phi(2n)/2^omega(n).
+ * A089692 a(n) = phi(2n)/2^omega(n).
  * @author Georg Fischer
  */
 public class A089692 implements Sequence {

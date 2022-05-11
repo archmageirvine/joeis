@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 /**
- * A043070 a(n)=(s(n)+2)/8, where s(n)=n-th base 8 palindrome that starts with 6.
+ * A043070 a(n)=(s(n)+2)/8, where s(n)=n-th base 8 palindrome that starts with 6 (in base 8), written in decimal digits.
  * @author Georg Fischer
  */
 public class A043070 extends A043045 {

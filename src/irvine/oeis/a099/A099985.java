@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007947;
 
 
 /**
- * A099985 Bisection of A007947.
+ * A099985 a(n) = rad(2n), where rad = A007947.
  * @author Georg Fischer
  */
 public class A099985 extends A007947 {

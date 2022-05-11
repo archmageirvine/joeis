@@ -1,6 +1,5 @@
 package irvine.math.nauty;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import irvine.math.graph.Graph;
@@ -163,11 +162,7 @@ public class MultigraphColour extends Multigraph {
     options.mUserLevelProc = ng;
 
     final int[] orbits = new int[n];
-    try {
-      new Nauty(g, lab, ptn, active, orbits, options, stats, workspace);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    new Nauty(g, lab, ptn, active, orbits, options, stats, workspace);
 
     mGroupSize = stats.groupSize().longValueExact();
     final GroupRecord group = ng.groupPtr(false);

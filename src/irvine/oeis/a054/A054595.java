@@ -1,7 +1,5 @@
 package irvine.oeis.a054;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -33,7 +31,7 @@ public class A054595 implements Sequence, GraphProcessor {
   }
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (graph.isMinimallyTwoEdgeConnected()) {
       // Number of labellings is |V|! / |Aut(graph)|
       final StatsBlk stats = new StatsBlk();
@@ -64,11 +62,7 @@ public class A054595 implements Sequence, GraphProcessor {
     mOrb = new int[mN];
     mSet = new NautySet(mN);
     mCount = Z.ZERO;
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // We are not generating output anyway
-    }
+    gg.run(false, false, false, 0, 0);
     return mCount;
   }
 

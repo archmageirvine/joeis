@@ -1,7 +1,5 @@
 package irvine.oeis.a003;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
@@ -55,7 +53,7 @@ public class A003088 implements Sequence, GraphProcessor {
   private long mGenCount = 0;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     ++mGenCount;
     mDigraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false);
   }
@@ -76,11 +74,7 @@ public class A003088 implements Sequence, GraphProcessor {
     gg.sanitizeParams();
     mDigraph = new DigraphCheck();
     mGenCount = 0;
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // We are not generating output anyway
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println("Undirected generated count was " + mGenCount);
     }

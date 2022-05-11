@@ -1,7 +1,5 @@
 package irvine.oeis.a019;
 
-import java.io.IOException;
-
 import irvine.math.graph.CountIndependentSets;
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
@@ -39,11 +37,7 @@ public class A019534 implements Sequence, GraphProcessor {
     gg.setMaxDeg(5);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    gg.run(false, false, false, 0, 0);
     return Z.valueOf(mMax);
   }
 }

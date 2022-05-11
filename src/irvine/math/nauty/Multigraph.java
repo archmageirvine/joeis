@@ -357,9 +357,8 @@ public class Multigraph implements GroupAction {
    * @param maxMult maximum edge multiplicity
    * @param maxDegree maximum degree of each vertex
    * @param lSwitch generate loops
-   * @throws IOException if an I/O error occurs
    */
-  public void multi(final Graph g, final int nFixed, final int minEdges, int maxEdges, int maxMult, final int maxDegree, final boolean lSwitch) throws IOException {
+  public void multi(final Graph g, final int nFixed, final int minEdges, int maxEdges, int maxMult, final int maxDegree, final boolean lSwitch) {
     ++mGraphsRead;
     final int n = g.order();
     final int[] lab = new int[n];

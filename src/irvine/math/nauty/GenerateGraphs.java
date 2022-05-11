@@ -1,6 +1,5 @@
 package irvine.math.nauty;
 
-import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Arrays;
 
@@ -106,7 +105,7 @@ public class GenerateGraphs {
     return false;
   }
 
-  Graph makeCanon(final Graph g) throws IOException {
+  Graph makeCanon(final Graph g) {
     final int[] lab = new int[MAXN];
     final int[] ptn = new int[MAXN];
     final int[] orbits = new int[MAXN];
@@ -118,7 +117,7 @@ public class GenerateGraphs {
   }
 
   // decide if n in theta(g+x) -  version for n+1 < maxn
-  private Graph accept1(final Graph g, final int x, final int[] deg, final boolean[] rigid) throws IOException {
+  private Graph accept1(final Graph g, final int x, final int[] deg, final boolean[] rigid) {
     int i;
     final int[] lab = new int[MAXN];
     final int[] ptn = new int[MAXN];
@@ -194,7 +193,7 @@ public class GenerateGraphs {
   }
 
   /* decide if n in theta(g+x)  --  version for n+1 < maxn */
-  private Graph accept1b(final Graph g, final int x, final int[] deg, final boolean[] rigid, final MakeH makeh) throws IOException {
+  private Graph accept1b(final Graph g, final int x, final int[] deg, final boolean[] rigid, final MakeH makeh) {
     final int[] lab = new int[MAXN];
     final int[] ptn = new int[MAXN];
     final int[] orbits = new int[MAXN];
@@ -288,7 +287,7 @@ public class GenerateGraphs {
   }
 
   /* decide if n in theta(g+x)  --  version for n+1 == maxn */
-  private Graph accept2(final Graph g, final int x, final int[] deg, final boolean nuniq) throws IOException {
+  private Graph accept2(final Graph g, final int x, final int[] deg, final boolean nuniq) {
     final int n = g.order();
     final int nx = n + 1;
     final Graph gx = g.copy(nx);
@@ -480,7 +479,7 @@ public class GenerateGraphs {
   }
 
   /* extend from n to n+1 -- version for restricted graphs */
-  private void spaExtend(final Graph g, final int[] deg, final int ne, final boolean rigid, int xlb, final int xub, final MakeH makeh) throws IOException {
+  private void spaExtend(final Graph g, final int[] deg, final int ne, final boolean rigid, int xlb, final int xub, final MakeH makeh) {
     final int n = g.order();
     mNodesByLevel[n]++;
 
@@ -569,7 +568,7 @@ public class GenerateGraphs {
   }
 
   // extend from n to n+1 -- version for general graphs
-  private void genExtend(final Graph g, final int[] deg, final int ne, final boolean rigid, int xlb, final int xub) throws IOException {
+  private void genExtend(final Graph g, final int[] deg, final int ne, final boolean rigid, int xlb, final int xub) {
 
     final int n = g.order();
     mNodesByLevel[n]++;
@@ -788,9 +787,8 @@ public class GenerateGraphs {
    * @param triangleFree triangle free graphs only
    * @param splitLevInc split level increment
    * @param res residue
-   * @throws IOException if an I/O error occurs.
    */
-  public void run(boolean bipartite, boolean squareFree, final boolean triangleFree, final int splitLevInc, final int res) throws IOException {
+  public void run(boolean bipartite, boolean squareFree, final boolean triangleFree, final int splitLevInc, final int res) {
     final int[] deg = new int[1];
     boolean sparse = bipartite || squareFree || triangleFree;
     final Graph g1 = GraphFactory.create(1);

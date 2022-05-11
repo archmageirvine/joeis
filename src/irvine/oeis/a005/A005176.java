@@ -1,7 +1,5 @@
 package irvine.oeis.a005;
 
-import java.io.IOException;
-
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -33,11 +31,7 @@ public class A005176 implements Sequence {
       gg.setMinDeg(k);
       gg.setMaxDeg(k);
       gg.sanitizeParams();
-      try {
-        gg.run(false, false, false, 0, 0);
-      } catch (final IOException e) {
-        throw new RuntimeException(e); // We are not generating output anyway
-      }
+      gg.run(false, false, false, 0, 0);
       res = res.add(gg.totalCount());
     }
     return res;

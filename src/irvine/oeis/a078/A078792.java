@@ -1,6 +1,5 @@
 package irvine.oeis.a078;
 
-import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -60,11 +59,7 @@ public class A078792 implements Sequence {
                 h.addEdge(u, n);
                 h.addEdge(v, n);
                 h.addEdge(w, n);
-                try {
-                  next.add(new Nauty(h, lab, ptn, set, orb, mOptions, stats, mWorkspace).canon());
-                } catch (final IOException e) {
-                  throw new RuntimeException(e);
-                }
+                next.add(new Nauty(h, lab, ptn, set, orb, mOptions, stats, mWorkspace).canon());
               }
             }
           }

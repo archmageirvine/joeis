@@ -1,7 +1,5 @@
 package irvine.oeis.a003;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -31,7 +29,7 @@ public class A003400 implements Sequence, GraphProcessor {
   private NautySet mSet;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     ++mGenCount;
     final StatsBlk stats = new StatsBlk();
     new Nauty(graph, mLab, mPtn, mSet, mOrb, mOptions, stats, mWorkspace);
@@ -57,11 +55,7 @@ public class A003400 implements Sequence, GraphProcessor {
     mPtn = new int[mN];
     mOrb = new int[mN];
     mSet = new NautySet(mN);
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // We are not generating output anyway
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println("Undirected generated count was " + mGenCount);
     }

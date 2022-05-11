@@ -1,7 +1,5 @@
 package irvine.oeis.a005;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -41,11 +39,7 @@ public class A005964 implements Sequence, GraphProcessor {
     gg.sanitizeParams();
     mGenCount = 0;
     mPlanarCount = 0;
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // We are not generating output anyway
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println("Undirected generated count was " + mGenCount);
     }

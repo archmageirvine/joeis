@@ -1,6 +1,5 @@
 package irvine.oeis.a336;
 
-import java.io.IOException;
 import java.util.HashSet;
 
 import irvine.math.graph.Graph;
@@ -34,15 +33,11 @@ public class A336545 extends ParallelGenerateGraphsSequence {
     final int[] orb = new int[n];
     final NautySet set = new NautySet(n);
     final StatsBlk stats = new StatsBlk();
-    try {
-      for (int k = 0; k < graph.order(); ++k) {
-        final Graph s = graph.delete(k);
-        if (s.isConnected()) {
-          subgraphs.add(new Nauty(s, lab, ptn, set, orb, options, stats, workspace).canon());
-        }
+    for (int k = 0; k < graph.order(); ++k) {
+      final Graph s = graph.delete(k);
+      if (s.isConnected()) {
+        subgraphs.add(new Nauty(s, lab, ptn, set, orb, options, stats, workspace).canon());
       }
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
     }
     //System.out.println(graph + " " + subgraphs.size() + " " + subgraphs);
     return subgraphs.size();

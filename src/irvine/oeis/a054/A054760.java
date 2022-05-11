@@ -1,7 +1,5 @@
 package irvine.oeis.a054;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -19,7 +17,7 @@ public class A054760 extends A198300 implements GraphProcessor {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (graph.girth() >= mM + 3) {
       throw new FoundItException(); // Abort any further computation we found the solution
     }
@@ -46,8 +44,6 @@ public class A054760 extends A198300 implements GraphProcessor {
         gg.run(false, mM > 2, mM > 1, 0, 0);
       } catch (final FoundItException e) {
         return Z.valueOf(n);
-      } catch (final IOException e) {
-        throw new RuntimeException(e);
       }
       ++n;
     }

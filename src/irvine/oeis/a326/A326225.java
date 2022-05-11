@@ -1,7 +1,5 @@
 package irvine.oeis.a326;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
@@ -37,13 +35,9 @@ public class A326225 extends ParallelGenerateGraphsSequence {
     // Given an undirected graph, convert the edges into a directed graph in all possible ways.
     // Since all the input graphs are non-isomorphic, the resulting graphs are also
     // non-isomorphic.
-    final DigraphCheck mDigraph = new DigraphCheck();
-    try {
-      mDigraph.direct(graph, 0, graph.size(), 2 * graph.size(), false);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
-    return mDigraph.mCount;
+    final DigraphCheck digraph = new DigraphCheck();
+    digraph.direct(graph, 0, graph.size(), 2 * graph.size(), false);
+    return digraph.mCount;
   }
 
   @Override

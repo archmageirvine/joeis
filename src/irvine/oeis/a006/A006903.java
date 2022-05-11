@@ -1,7 +1,5 @@
 package irvine.oeis.a006;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -34,7 +32,7 @@ public class A006903 implements Sequence, GraphProcessor {
   private NautySet mSet;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     // Automorphism to get labellings
     // Number of labellings is |V|! / |Aut(graph)|
     final StatsBlk stats = new StatsBlk();
@@ -63,11 +61,7 @@ public class A006903 implements Sequence, GraphProcessor {
     mPtn = new int[mN];
     mOrb = new int[mN];
     mSet = new NautySet(mN);
-    try {
-      gg.run(false, false, true, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    gg.run(false, false, true, 0, 0);
     return mCount;
   }
 

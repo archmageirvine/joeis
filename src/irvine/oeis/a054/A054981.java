@@ -1,7 +1,5 @@
 package irvine.oeis.a054;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -80,11 +78,7 @@ public class A054981 implements Sequence, GraphProcessor {
     gg.setMaxEdges(Multigraph.NOLIMIT);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       final StringBuilder sb = new StringBuilder("Counts after ");
       sb.append(n);

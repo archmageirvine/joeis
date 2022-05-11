@@ -1,6 +1,5 @@
 package irvine.oeis.a006;
 
-import java.io.IOException;
 import java.util.HashMap;
 
 import irvine.math.api.Matrix;
@@ -44,7 +43,7 @@ public class A006608 implements Sequence, GraphProcessor {
   }
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     mCharPolyCounts.merge(characteristicPolynomial(graph), 1L, (x, y) -> x + y);
   }
 
@@ -68,11 +67,7 @@ public class A006608 implements Sequence, GraphProcessor {
     gg.sanitizeParams();
     mRing = new MatrixRing<>(mN, POLY);
     mCharPolyCounts.clear();
-    try {
-      gg.run(bipartite(), false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    gg.run(bipartite(), false, false, 0, 0);
     long sumRepeated = 0;
     for (final Long v : mCharPolyCounts.values()) {
       if (v > 1) {

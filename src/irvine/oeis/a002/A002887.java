@@ -1,7 +1,5 @@
 package irvine.oeis.a002;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphUtils;
 import irvine.math.nauty.GenerateGraphs;
@@ -68,11 +66,7 @@ public class A002887 implements Sequence, GraphProcessor {
       gg.setConnectionLevel(1);
       gg.setProcessor(this);
       gg.sanitizeParams();
-      try {
-        gg.run(false, false, false, 0, 0);
-      } catch (final IOException e) {
-        throw new RuntimeException(e); // We are not generating output anyway
-      }
+      gg.run(false, false, false, 0, 0);
     }
     if (mVerbose) {
       StringUtils.message("Cutting center size=" + mM + " order=" + mFirstCuttingCenter.get(mM) + " cutting-number=" + mFirstCuttingNumber.get(mM));

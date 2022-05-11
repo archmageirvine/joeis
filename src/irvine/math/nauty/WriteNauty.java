@@ -1,11 +1,11 @@
 package irvine.math.nauty;
 
+import java.io.IOException;
+import java.io.OutputStream;
+
 import irvine.math.graph.Graph;
 import irvine.math.graph.SmallGraph;
 import irvine.util.io.IOUtils;
-
-import java.io.IOException;
-import java.io.OutputStream;
 
 /**
  * Write graph in nauty format.
@@ -24,15 +24,19 @@ class WriteNauty implements GraphProcessor {
   }
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (!(graph instanceof SmallGraph)) {
       throw new UnsupportedOperationException();
     }
     final int n = graph.order();
-    IOUtils.writeInt(mOut, n);
-    for (int k = 0; k < n; ++k) {
-      IOUtils.writeLong(mOut, ((SmallGraph) graph).getEdgeVector(k));
+    try {
+      IOUtils.writeInt(mOut, n);
+      for (int k = 0; k < n; ++k) {
+        IOUtils.writeLong(mOut, ((SmallGraph) graph).getEdgeVector(k));
+      }
+      mOut.flush();
+    } catch(final IOException e) {
+      throw new RuntimeException(e);
     }
-    mOut.flush();
   }
 }

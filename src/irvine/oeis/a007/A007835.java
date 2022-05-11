@@ -1,6 +1,5 @@
 package irvine.oeis.a007;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -43,7 +42,7 @@ public class A007835 implements Sequence, GraphProcessor {
   }
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     ++mGenCount;
     // Convert to directed tree in all possible ways
     mDigraph.direct(graph, 0, graph.size(), graph.size(), true);
@@ -64,11 +63,7 @@ public class A007835 implements Sequence, GraphProcessor {
     mGenCount = 0;
     mDirected = 0;
     mAccepted.clear();
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println("Undirected generated count was " + mGenCount + " directed " + mDirected);
       System.out.println(mAccepted);

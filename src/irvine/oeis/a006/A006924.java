@@ -1,7 +1,5 @@
 package irvine.oeis.a006;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -38,6 +36,7 @@ public class A006924 implements Sequence, GraphProcessor {
     if (mN == 0) {
       return initial();
     }
+    mCount = 0;
     final GenerateGraphs gg = new GenerateGraphs(1);
     gg.setMaxDeg(3);
     gg.setMinDeg(3);
@@ -46,12 +45,7 @@ public class A006924 implements Sequence, GraphProcessor {
     gg.setMaxEdges((mN * mN - mN) / 2);
     gg.sanitizeParams();
     gg.setProcessor(this);
-    mCount = 0;
-    try {
-      gg.run(false, girth() > 4, girth() > 3, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    gg.run(false, girth() > 4, girth() > 3, 0, 0);
     return Z.valueOf(mCount);
   }
 }

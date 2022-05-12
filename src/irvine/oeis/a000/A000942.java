@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
@@ -234,11 +233,7 @@ public class A000942 implements Sequence, GraphProcessor {
     gg.setMaxDeg(3);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // We are not generating output anyway
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println("n: " + mN + " trees: " + mTreeCount + " embeddings: " + mEmbeddings);
     }

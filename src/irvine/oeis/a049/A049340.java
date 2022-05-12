@@ -1,7 +1,5 @@
 package irvine.oeis.a049;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -49,11 +47,7 @@ public class A049340 implements Sequence, GraphProcessor {
     gg.setProcessor(this);
     gg.sanitizeParams();
     mPlanarCount = 0;
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // We are not generating output anyway
-    }
+    gg.run(false, false, false, 0, 0);
     return Z.valueOf(mPlanarCount);
   }
 }

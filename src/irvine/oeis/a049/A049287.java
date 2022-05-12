@@ -1,6 +1,5 @@
 package irvine.oeis.a049;
 
-import java.io.IOException;
 import java.util.HashSet;
 
 import irvine.math.graph.Graph;
@@ -31,12 +30,8 @@ public class A049287 implements Sequence {
 
   private void search(final Graph g, final int pos) {
     if (pos <= 0) {
-      try {
-        final Graph canon = new Nauty(g, mLabels, mPartition, null, mOrbits, mOptions, mStats, mWorkspace).canon();
-        mCanons.add(canon);
-      } catch (final IOException e) {
-        throw new RuntimeException(e);
-      }
+      final Graph canon = new Nauty(g, mLabels, mPartition, null, mOrbits, mOptions, mStats, mWorkspace).canon();
+      mCanons.add(canon);
       return;
     }
     // Do not include pos

@@ -1,6 +1,5 @@
 package irvine.math.graph;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -344,11 +343,7 @@ public final class GraphUtils {
   public static boolean isTransitive(final Graph graph) {
     final StatsBlk mNautyStats = new StatsBlk();
     final int[] orbits = new int[graph.order()];
-    try {
-      new Nauty(graph, new int[graph.order()], new int[graph.order()], null, orbits, new OptionBlk(), mNautyStats, new long[50]);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    new Nauty(graph, new int[graph.order()], new int[graph.order()], null, orbits, new OptionBlk(), mNautyStats, new long[50]);
     return IntegerUtils.isZero(orbits);
   }
 

@@ -302,11 +302,7 @@ public class VertexColour {
     }
 
     final int[] orbits = new int[g.order()];
-    try {
-      new Nauty(g, lab, ptn, null, orbits, options, stats, workspace);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    new Nauty(g, lab, ptn, null, orbits, options, stats, workspace);
 
     mGroupSize = stats.mGrpSize;
     final GroupRecord group = ng.groupPtr(false);

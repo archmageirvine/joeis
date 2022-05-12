@@ -1,7 +1,5 @@
 package irvine.oeis.a003;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.nauty.DirectedGraph;
@@ -63,11 +61,7 @@ public class A003141 implements Sequence {
     }
     final Graph graph = GraphFactory.complete(mN);
     final DigraphCheck digraphChecker = new DigraphCheck();
-    try {
-      digraphChecker.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, true);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // we are no making output
-    }
+    digraphChecker.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, true);
     return Z.valueOf(digraphChecker.mMax);
   }
 

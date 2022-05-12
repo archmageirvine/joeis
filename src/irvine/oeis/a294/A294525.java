@@ -1,6 +1,5 @@
 package irvine.oeis.a294;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
@@ -53,11 +52,7 @@ public class A294525 implements Sequence, GraphProcessor {
     gg.setProcessor(this);
     gg.sanitizeParams();
     mCount = new long[mN + 1]; // index 0 not used
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       StringUtils.message(Arrays.toString(mCount));
     }

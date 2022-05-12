@@ -1,7 +1,5 @@
 package irvine.oeis;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -74,11 +72,7 @@ public abstract class ParallelGenerateGraphsSequence implements Sequence {
       gg.setProcessor(this);
       ParallelGenerateGraphsSequence.this.graphGenInit(gg);
       gg.sanitizeParams();
-      try {
-        gg.run(mBipartite, mSquareFree, mTriangleFree, 0, mResidue);
-      } catch (final IOException e) {
-        throw new RuntimeException(e);
-      }
+      gg.run(mBipartite, mSquareFree, mTriangleFree, 0, mResidue);
     }
   }
 

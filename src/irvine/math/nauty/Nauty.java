@@ -91,9 +91,8 @@ public class Nauty {
    * @param options  a list of options.
    * @param stats    a list of statistics produced by the procedure.
    * @param ws       a chunk of memory for working storage.
-   * @throws IOException if an I/O error occurs
    */
-  public Nauty(final Graph g, final int[] lab, final int[] ptn, final NautySet active, final int[] orbits, final OptionBlk options, final StatsBlk stats, final long[] ws) throws IOException {
+  public Nauty(final Graph g, final int[] lab, final int[] ptn, final NautySet active, final int[] orbits, final OptionBlk options, final StatsBlk stats, final long[] ws) {
     if (options.mDispatch == null) {
       throw new NullPointerException("Null mDispatch vector");
     }
@@ -225,7 +224,7 @@ public class Nauty {
    * @param nc number of cells
    * @return first path node level to return to
    */
-  private int firstPathNode(final int[] lab, final int[] ptn, final int level, final int nc) throws IOException {
+  private int firstPathNode(final int[] lab, final int[] ptn, final int level, final int nc) {
     final int[] numcells = {nc};
     final int[] qinvar = new int[1];
     final int[] refcode = new int[1];
@@ -318,7 +317,11 @@ public class Nauty {
       --mAllSameLevel;
     }
     if (mDoMarkers) {
-      writeMarker(level, tv1, index, tcellsize[0], mStats.mNumOrbits, numcells[0]);
+      try {
+        writeMarker(level, tv1, index, tcellsize[0], mStats.mNumOrbits, numcells[0]);
+      } catch (final IOException e) {
+        throw new RuntimeException(e);
+      }
     }
     if (mUserLevelProc != null) {
       mUserLevelProc.userLevelProc(lab, ptn, level, mOrbits, mStats, tv1, index, tcellsize[0], numcells[0], childcount, mN);

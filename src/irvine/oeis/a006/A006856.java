@@ -1,7 +1,5 @@
 package irvine.oeis.a006;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -44,8 +42,6 @@ public class A006856 implements Sequence, GraphProcessor {
           return Z.valueOf(edges);
         }
         throw e;
-      } catch (final IOException e) {
-        throw new RuntimeException(e);
       }
       --edges;
     }

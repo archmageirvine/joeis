@@ -19,10 +19,12 @@ public final class SmallGraphs implements GraphProcessor {
   private int mIndex = -1;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     final int n = graph.order();
     try (final PrintStream out = new PrintStream(new FileOutputStream("g" + n + "_" + ++mIndex + ".dot"))) {
       out.print(GraphUtils.toDot(graph));
+    } catch (final IOException e) {
+      throw new RuntimeException(e);
     }
   }
 

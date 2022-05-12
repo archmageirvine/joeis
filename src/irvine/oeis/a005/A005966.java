@@ -1,7 +1,5 @@
 package irvine.oeis.a005;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
@@ -22,7 +20,7 @@ public class A005966 implements Sequence, GraphProcessor {
   private Multigraph mMultigraph = null;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     ++mGenCount;
     if (graph.isPlanar()) {
       final int edges = 3 * mN / 2;
@@ -42,11 +40,7 @@ public class A005966 implements Sequence, GraphProcessor {
     gg.setProcessor(this);
     gg.sanitizeParams();
     mMultigraph = new Multigraph(null);
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e); // We are not generating output anyway
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println("Preplanar " + mGenCount + " planar before multiple edges " + mMultigraph.getGraphsInputCount());
     }

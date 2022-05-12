@@ -1,7 +1,5 @@
 package irvine.oeis.a049;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.DirectedGraph;
 import irvine.math.nauty.GenerateGraphs;
@@ -62,11 +60,7 @@ public class A049512 extends ParallelGenerateGraphsSequence {
   @Override
   protected long getCount(final Graph graph) {
     final DigraphCheck digraph = new DigraphCheck();
-    try {
-      digraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    digraph.direct(graph, 0, graph.order() - 1, Multigraph.NOLIMIT, false);
     return digraph.mCount;
   }
 

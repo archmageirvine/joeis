@@ -1,7 +1,5 @@
 package irvine.oeis.a006;
 
-import java.io.IOException;
-
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 
@@ -12,7 +10,7 @@ import irvine.math.nauty.GenerateGraphs;
 public class A006611 extends A006608 {
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (!graph.isCyclic()) {
       super.process(graph);
     }

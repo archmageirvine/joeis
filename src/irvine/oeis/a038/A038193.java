@@ -1,6 +1,5 @@
 package irvine.oeis.a038;
 
-import java.io.IOException;
 import java.util.TreeSet;
 
 import irvine.math.graph.Graph;
@@ -21,8 +20,8 @@ public class A038193 implements Sequence, GraphProcessor {
   private final TreeSet<Long> mSeen = new TreeSet<>();
 
   @Override
-  public void process(final Graph graph) throws IOException {
-    final long m = 2 * graph.size();
+  public void process(final Graph graph) {
+    final long m = 2L * graph.size();
     final int n = graph.order();
     long s = 0;
     for (int k = 0; k < n; ++k) {
@@ -44,11 +43,7 @@ public class A038193 implements Sequence, GraphProcessor {
     gg.setMaxDeg(mN);
     gg.setProcessor(this);
     gg.sanitizeParams();
-    try {
-      gg.run(false, false, false, 0, 0);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    gg.run(false, false, false, 0, 0);
     if (mVerbose) {
       System.out.println(mSeen);
     }

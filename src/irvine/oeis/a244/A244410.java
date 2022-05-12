@@ -15,6 +15,6 @@ public class A244410 extends A244372 {
   public Z next() {
     ++mN;
     // a:= n-> `if`(n=0, 1, b(2*n$2, n$2)-b(2*n$2, n-1$2)):
-    return mN == 0 ? Z.ONE : mB.get(2 * mN, 2 * mN, mN, mN).subtract(mB.get(2 * mN, 2 * mN, mN - 1, mN - 1));
+    return mN == 0 ? Z.ONE : mSeq.mB.get(2 * mN, 2 * mN, mN, mN).subtract(mSeq.mB.get(2 * mN, 2 * mN, mN - 1, mN - 1));
   }
 }

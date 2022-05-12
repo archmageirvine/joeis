@@ -6,12 +6,13 @@ import irvine.oeis.Sequence;
 
 /**
  * A147682 Late-growing permutations: number of permutations of 2 indistinguishable copies of 1..n with every partial sum &lt;= the same partial sum averaged over all permutations.
+ * with every partial sum <= the same partial sum averaged over all permutations.
  * @author Georg Fischer
  */
 public class A147682 implements Sequence {
 
   private int mN;
-  private final Integer mCopies;
+  private Integer mCopies;
 
   /** Construct the sequence. */
   public A147682() {
@@ -26,24 +27,6 @@ public class A147682 implements Sequence {
   public A147682(final int offset, final int copies) {
     mN = offset - 1;
     mCopies = copies;
-  }
-
-  /**
-   * Print a list, but skip the first element
-   * @param list int array
-   * @return "[1, 2, 3]" for example
-   */
-  public String listString(final int[] list) {
-    final StringBuilder sb = new StringBuilder();
-    sb.append('[');
-    for (int i = 1; i < list.length; ++i) {
-      if (i > 1) {
-        sb.append(',');
-      }
-      sb.append(list[i]);
-    }
-    sb.append(']');
-    return sb.toString();
   }
 
   /* Maple:
@@ -71,12 +54,11 @@ public class A147682 implements Sequence {
       Z sum = Z.ZERO;
       long g = 0;
       for (int k = 1; k <= m; ++k) {
-        g += (long) k * list[k];
+        g += k * list[k];
       }
       final long g2 = g * 2 - (m + 1) * (n - 1);
-      // System.out.println(listString(list) + ", g2=" + g2 + ", n=" + n);
       for (int i = 1; i <= m; ++i) {
-        if (list[i] > 0 && i * 2L <= g2) {
+        if (list[i] > 0 && i * 2 <= g2) {
           final int[] list2 = new int[m + 1];
           list2[0] = 0;
           for (int k = 1; k <= m; ++k) {

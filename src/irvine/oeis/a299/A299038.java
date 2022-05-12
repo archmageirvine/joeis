@@ -11,7 +11,6 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A299038 extends UpperLeftTriangle {
 
-
   /** Construct the sequence. */
   public A299038() {
     super(0, 0, -1);
@@ -26,7 +25,7 @@ public class A299038 extends UpperLeftTriangle {
     A:= (n, k)-> `if`(n=0, 1, b(n-1$2, k$2)):
     seq(seq(A(n, d-n), n=0..d), d=0..14);
   */
-  protected final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<Z>() {
+  private class mProc extends MemoryFunctionInt4<Z> {
     @Override
     protected Z compute(final int n, final int i, final int t, final int k) {
       // Protected access is needed for A299039, for example.
@@ -38,16 +37,19 @@ public class A299038 extends UpperLeftTriangle {
       }
       Z sum = Z.ZERO;
       final int ni = n / i;
-      final int jmax = Math.min(t, ni);
+      final int jmax = t < ni ? t : ni;
       for (int j = 0; j <= jmax; ++j) {
         sum = sum.add(Binomial.binomial(get(i - 1, i - 1, k, k).add(j - 1), Z.valueOf(j)).multiply(get(n - i * j, i - 1, t - j, k)));
       }
       return sum;
     }
-  };
+  }
+
+  // used in A244372:
+  public MemoryFunctionInt4<Z> mB = new mProc();
 
   @Override
-  public Z matrixElement(final int n, final int k) {
+  public Z matrixElement(int n, final int k) {
     return n == 0 ? Z.ONE : mB.get(n - 1, n - 1, k, k);
   }
 }

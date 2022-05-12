@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 public class A034886 implements Sequence {
 
   private static final CR LOG10 = CR.TEN.log();
-  private long mN = -1;
+  protected long mN = -1;
   private Z mF = Z.ONE;
 
   @Override

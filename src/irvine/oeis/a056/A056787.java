@@ -18,16 +18,36 @@ import irvine.oeis.Sequence;
 public class A056787 implements Sequence {
 
   // 2022-05-09 Some data structures changed to avoid need for sorting
+  // 2022-05-12 Made more OO to support A056841
 
   private static final int[] DELTA_X = {1, 1, 0, -1, -1, -1, 0, 1};
   private static final int[] DELTA_Y = {0, 1, 1, 1, 0, -1, -1, -1};
+
+  protected int maxDir() {
+    return 8;
+  }
+
+  /**
+   * Create with a given original node translated into a direction.
+   * @param n the node to start from
+   * @param dir a parameter from 0 to 7 to indicate in which
+   * direction of the node n this node that is created here
+   * is to be placed.
+   */
+  protected Node create(final Node n, final int dir) {
+    /* For values of the dir argument from 0 to 3
+     * we create the new node one step into the East (+x),
+     * North (+y), West (-x) or South (-y) from the original one.
+     */
+    return new Node(n.x() + DELTA_X[dir], n.y() + DELTA_Y[dir]);
+  }
 
   /**
    * A node is one point on the square lattice.
    * A node contains simply the two integer coordinates of a point on the
    * square lattice.
    */
-  private static final class Node implements Comparable<Node> {
+  static final class Node implements Comparable<Node> {
 
     private final int[] mXY;
 
@@ -36,27 +56,20 @@ public class A056787 implements Sequence {
      * @param x the x coordinate of the point
      * @param y the y coordinate of the point
      */
-    private Node(final int x, final int y) {
+    Node(final int x, final int y) {
       mXY = new int[] {x, y};
     }
 
     private Node(final Node node) {
-      mXY = new int[] {node.mXY[0], node.mXY[1]};
+      mXY = new int[] {node.x(), node.y()};
     }
-
-    /**
-     * Constructor with a given original node translated into a direction.
-     * @param n the node to start from
-     * @param dir a parameter from 0 to 7 to indicate in which
-     * direction of the node n this node that is created here
-     * is to be placed.
-     */
-    private Node(final Node n, final int dir) {
-      /* For values of the dir argument from 0 to 3
-       * we create the new node one step into the East (+x),
-       * North (+y), West (-x) or South (-y) from the original one.
-       */
-      mXY = new int[] {n.mXY[0] + DELTA_X[dir], n.mXY[1] + DELTA_Y[dir]};
+    
+    int x() {
+      return mXY[0];
+    }
+    
+    int y() {
+      return mXY[1];
     }
 
     /**
@@ -78,25 +91,25 @@ public class A056787 implements Sequence {
           return this;
         case 1:
           // 90 degrees rotated
-          return new Node(-mXY[1], mXY[0]);
+          return new Node(-y(), x());
         case 2:
           // 180 degrees rotated
-          return new Node(-mXY[0], -mXY[1]);
+          return new Node(-x(), -y());
         case 3:
           // 270 degrees rotated
-          return new Node(mXY[1], -mXY[0]);
+          return new Node(y(), -x());
         case 4:
           // mirror main diagonal
-          return new Node(mXY[1], mXY[0]);
+          return new Node(y(), x());
         case 5:
           // mirror main diagonal then 90 degrees rotated
-          return new Node(-mXY[0], mXY[1]);
+          return new Node(-x(), y());
         case 6:
           // mirror main diagonal then 180 degrees rotated
-          return new Node(-mXY[1], -mXY[0]);
+          return new Node(-y(), -x());
         case 7:
           // mirror main diagonal then 270 degrees rotated
-          return new Node(mXY[0], -mXY[1]);
+          return new Node(x(), -y());
         default:
           throw new RuntimeException();
       }
@@ -118,11 +131,11 @@ public class A056787 implements Sequence {
 
     @Override
     public int compareTo(final Node o) {
-      final int c = Integer.compare(mXY[1], o.mXY[1]);
+      final int c = Integer.compare(y(), o.y());
       if (c != 0) {
         return c;
       }
-      return Integer.compare(mXY[0], o.mXY[0]);
+      return Integer.compare(x(), o.x());
     }
   }
 
@@ -131,7 +144,7 @@ public class A056787 implements Sequence {
    * The connectivity is implicit, and only the two coordinates of the
    * pair of nodes are stored.
    */
-  private static final class Edge implements Comparable<Edge> {
+  static final class Edge implements Comparable<Edge> {
     private final Node[] mNodes = new Node[2];
 
     /**
@@ -203,7 +216,7 @@ public class A056787 implements Sequence {
    * share nodes such that one can transverse the graph on a trail that
    * may reach each of the nodes.
    */
-  private static final class Tree {
+  final class Tree {
     /* The list of all edges is the only full representation of the tree. */
     private final List<Edge> mEdges;
     // The bounding box, such that bbox[0] is the smallest x,
@@ -213,9 +226,14 @@ public class A056787 implements Sequence {
 
     // The default constructor creates an empty tree.
     // It is useful to generated lists of trees and has no other significance.
-    private Tree() {
+    Tree() {
       mEdges = new ArrayList<>();
       mBoundingBox = new int[4];
+    }
+
+    Tree(final int... boundingBox) {
+      mEdges = new ArrayList<>();
+      mBoundingBox = Arrays.copyOf(boundingBox, 4);
     }
 
     /**
@@ -293,7 +311,7 @@ public class A056787 implements Sequence {
      * already existing trunks or such as ensuring it is not yet part of the tree.
      * @param e the edge to be added
      */
-    private void addEdge(final Edge e) {
+    void addEdge(final Edge e) {
       mEdges.add(e);
     }
 
@@ -368,12 +386,12 @@ public class A056787 implements Sequence {
       for (final Node node : allNodes()) {
         // For each of the eight directions of the node we test whether this
         // can be the direction of a new edge for a potentially new child tree.
-        for (int dir = 0; dir < DELTA_X.length; ++dir) {
+        for (int dir = 0; dir < maxDir(); ++dir) {
           // For this particular node and direction, we test whether
           // the node and the new node are a candidate for extension. We generate
           // a new node into the particular direction, and admit this as a new
           // edge if this new site is not yet already occupied.
-          final Node tste = new Node(node, dir);
+          final Node tste = create(node, dir);
           // Test on occupation of the point in the square lattice.
           if (!haveNode(tste)) {
             // If this node is not yet occupied (allowed since a tree is cycle-free),
@@ -423,19 +441,19 @@ public class A056787 implements Sequence {
       for (final Edge edge : mEdges) {
         if (first) {
           first = false;
-          mBoundingBox[2] = edge.mNodes[0].mXY[0];
-          mBoundingBox[0] = edge.mNodes[0].mXY[0];
-          mBoundingBox[3] = edge.mNodes[0].mXY[1];
-          mBoundingBox[1] = edge.mNodes[0].mXY[1];
+          mBoundingBox[2] = edge.mNodes[0].x();
+          mBoundingBox[0] = edge.mNodes[0].x();
+          mBoundingBox[3] = edge.mNodes[0].y();
+          mBoundingBox[1] = edge.mNodes[0].y();
         }
-        mBoundingBox[0] = Math.min(mBoundingBox[0], edge.mNodes[0].mXY[0]);
-        mBoundingBox[0] = Math.min(mBoundingBox[0], edge.mNodes[1].mXY[0]);
-        mBoundingBox[1] = Math.min(mBoundingBox[1], edge.mNodes[0].mXY[1]);
-        // mBoundingBox[1] = Math.min(mBoundingBox[1], mEdges.get(e).mNodes[1].mXY[1]); // nodes are sorted: sufficient to look at nodes[0] for the minimum y-component
-        mBoundingBox[2] = Math.max(mBoundingBox[2], edge.mNodes[0].mXY[0]);
-        mBoundingBox[2] = Math.max(mBoundingBox[2], edge.mNodes[1].mXY[0]);
-        // mBoundingBox[3] = Math.max(mBoundingBox[3], mEdges.get(e).mNodes[0].mXY[1]); // nodes are sorted: sufficient to look at nodes[1] for the maximum y
-        mBoundingBox[3] = Math.max(mBoundingBox[3], edge.mNodes[1].mXY[1]);
+        mBoundingBox[0] = Math.min(mBoundingBox[0], edge.mNodes[0].x());
+        mBoundingBox[0] = Math.min(mBoundingBox[0], edge.mNodes[1].x());
+        mBoundingBox[1] = Math.min(mBoundingBox[1], edge.mNodes[0].y());
+        // mBoundingBox[1] = Math.min(mBoundingBox[1], mEdges.get(e).mNodes[1].y()); // nodes are sorted: sufficient to look at nodes[0] for the minimum y-component
+        mBoundingBox[2] = Math.max(mBoundingBox[2], edge.mNodes[0].x());
+        mBoundingBox[2] = Math.max(mBoundingBox[2], edge.mNodes[1].x());
+        // mBoundingBox[3] = Math.max(mBoundingBox[3], mEdges.get(e).mNodes[0].y()); // nodes are sorted: sufficient to look at nodes[1] for the maximum y
+        mBoundingBox[3] = Math.max(mBoundingBox[3], edge.mNodes[1].y());
       }
     }
 
@@ -500,7 +518,7 @@ public class A056787 implements Sequence {
    * @return the list of all incongruent trees with one more edge than
    * those of the parent list.
    */
-  private List<Tree> step(final List<Tree> parent) {
+  List<Tree> step(final List<Tree> parent) {
     final List<Tree> result = new ArrayList<>();
     // New trees are generated by spawning from each of the parent trees in turn, in a loop
     for (final Tree value : parent) {
@@ -526,7 +544,7 @@ public class A056787 implements Sequence {
     return result;
   }
 
-  private List<Tree> mA = null;
+  protected List<Tree> mA = null;
 
   @Override
   public Z next() {
@@ -535,22 +553,14 @@ public class A056787 implements Sequence {
       mA = new ArrayList<>();
       // The fundamental root trees (great grand root tree) are the ones from (0,0) to (1,0),
       // and from (0,0) to (1,1), with one edge and two nodes only.
-      final Tree root1 = new Tree();
+      final Tree root1 = new Tree(0, 0, 1, 0);
       final Edge strt1 = new Edge(new Node(0, 0), new Node(1, 0));
       root1.addEdge(strt1);
-      root1.mBoundingBox[0] = 0;
-      root1.mBoundingBox[1] = 0;
-      root1.mBoundingBox[2] = 1;
-      root1.mBoundingBox[3] = 0;
       mA.add(root1);
     } else if (mA.size() == 1) {
-      final Tree root2 = new Tree();
+      final Tree root2 = new Tree(0, 0, 1, 1);
       final Edge strt2 = new Edge(new Node(0, 0), new Node(1, 1));
       root2.addEdge(strt2);
-      root2.mBoundingBox[0] = 0;
-      root2.mBoundingBox[1] = 0;
-      root2.mBoundingBox[2] = 1;
-      root2.mBoundingBox[3] = 1;
       mA.add(root2);
     } else {
       mA = step(mA);

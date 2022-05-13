@@ -30,8 +30,8 @@ public class A000009 extends MemorySequence {
       ++k;
     }
     sum = sum.multiply2();
-    final long nn = 2 * n;
-    final long d = LongUtils.sqrt(1 + 24 * n);
+    final long nn = 2L * n;
+    final long d = LongUtils.sqrt(1 + 24L * n);
     final long j0 = (d - 1) / 6;
     final long tj0 = 3 * j0;
     final long sigma;
@@ -41,7 +41,7 @@ public class A000009 extends MemorySequence {
       final long j1 = (d + 1) / 6;
       final long tj1 = 3 * j1;
       if (nn == j1 * (tj1 + 1) || nn == j1 * (tj1 - 1)) {
-      sigma = (j1 & 1) == 0 ? 1 : -1;
+        sigma = (j1 & 1) == 0 ? 1 : -1;
       } else {
         sigma = 0;
       }

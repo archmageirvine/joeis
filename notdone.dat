@@ -1823,3 +1823,9 @@ A056782 Number of 3-element proper antichains (i.e., antichains such that every 
 A056786 Number of inequivalent connected planar figures that can be formed from n non-overlapping 1 X 2 rectangles (or dominoes)
 A056814 Triangle partitions of order n: topologically distinct ways to dissect a triangle into n triangles.
 A056840 Number of rounded n-celled polyominoes
+A056842 Number of polydrafters: a(n) is the number of polydrafters with n cells
+A056843 Number of polydudes(1): a(n) is the number of polydudes with n cells
+A056844 Number of polydiamonds: polyominoes made from n diamonds
+A056845 Number of polydiamonds: polyominoes made from n diamonds (another version)
+A056846 Number of polyominoids containing n squares: these are 2-dimensional polyominoes in a three-dimensional grid (edge-connected squares, like the floors, ceilings and walls of a building).
+A056863 Related to triangle A056858 of number of rises in set partitions of n at a given index i

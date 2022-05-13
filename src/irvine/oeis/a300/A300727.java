@@ -21,6 +21,6 @@ public class A300727 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A300727() {
-    super(0, CR.PI.multiply(COT_PI_DIV_SQRT2.multiply(COTH_PI_DIV_SQRT2_SQR).subtract(COT_PI_DIV_SQRT2_SQR.multiply(COTH_PI_DIV_SQRT2)).subtract(COT_PI_DIV_SQRT2).subtract(COTH_PI_DIV_SQRT2)).divide(COT_PI_DIV_SQRT2_SQR.add(COTH_PI_DIV_SQRT2_SQR).multiply(CR.SQRT2)).add(CR.ONE_THIRD.multiply(CR.PI.pow(2))).subtract(CR.ONE).sqrt());
+    super(0, CR.PI.multiply(COT_PI_DIV_SQRT2.multiply(COTH_PI_DIV_SQRT2_SQR).subtract(COT_PI_DIV_SQRT2_SQR.multiply(COTH_PI_DIV_SQRT2)).subtract(COT_PI_DIV_SQRT2).subtract(COTH_PI_DIV_SQRT2)).divide(COT_PI_DIV_SQRT2_SQR.add(COTH_PI_DIV_SQRT2_SQR).multiply(CR.SQRT2)).add(CR.ONE_THIRD.multiply(CR.PI.square())).subtract(CR.ONE).sqrt());
   }
 }

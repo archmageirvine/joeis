@@ -19,7 +19,7 @@ public class A062233 extends FloorSequence {
   }
 
   protected Z evalCR(final long n) {
-    return CR.valueOf(n).sin().multiply(CR.TWO.multiply(CR.valueOf(n)).cos().pow(2)).multiply(REALS.tan(CR.FOUR.multiply(CR.valueOf(n))).pow(3)).floor();
+    return CR.valueOf(n).sin().multiply(CR.TWO.multiply(CR.valueOf(n)).cos().square()).multiply(REALS.tan(CR.FOUR.multiply(CR.valueOf(n))).pow(3)).floor();
   }
 
 }

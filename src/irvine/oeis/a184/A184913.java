@@ -11,7 +11,7 @@ import irvine.oeis.FloorSequence;
 public class A184913 extends FloorSequence {
 
   private final CR mR = CR.TWO.pow(CR.ONE.divide(CR.FIVE));
-  private final CR mS = mR.pow(2);
+  private final CR mS = mR.square();
   private final CR mT = mR.pow(3);
   private final CR mU = mR.pow(4);
 

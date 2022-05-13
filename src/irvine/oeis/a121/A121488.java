@@ -19,7 +19,7 @@ public class A121488 extends FloorSequence {
   @Override
   protected Z evalCR(final long n) {
     return Z.EIGHT.multiply(Z.valueOf(n).square())
-        .subtract(CR.valueOf(n).multiply(CR.EIGHT.sqrt()).floor().pow(2));
+        .subtract(CR.valueOf(n).multiply(CR.EIGHT.sqrt()).floor().square());
   }
 
 }

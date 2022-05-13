@@ -11,7 +11,7 @@ public class A033259 extends A085984 {
 
   @Override
   public CR getCR() {
-    return super.getCR().pow(2).subtract(CR.ONE).sqrt();
+    return super.getCR().square().subtract(CR.ONE).sqrt();
   }
 }
 

@@ -25,7 +25,7 @@ public class A299038 extends UpperLeftTriangle {
     A:= (n, k)-> `if`(n=0, 1, b(n-1$2, k$2)):
     seq(seq(A(n, d-n), n=0..d), d=0..14);
   */
-  private class mProc extends MemoryFunctionInt4<Z> {
+  private static class BProc extends MemoryFunctionInt4<Z> {
     @Override
     protected Z compute(final int n, final int i, final int t, final int k) {
       // Protected access is needed for A299039, for example.
@@ -37,7 +37,7 @@ public class A299038 extends UpperLeftTriangle {
       }
       Z sum = Z.ZERO;
       final int ni = n / i;
-      final int jmax = t < ni ? t : ni;
+      final int jmax = Math.min(t, ni);
       for (int j = 0; j <= jmax; ++j) {
         sum = sum.add(Binomial.binomial(get(i - 1, i - 1, k, k).add(j - 1), Z.valueOf(j)).multiply(get(n - i * j, i - 1, t - j, k)));
       }
@@ -45,11 +45,22 @@ public class A299038 extends UpperLeftTriangle {
     }
   }
 
-  // used in A244372:
-  public MemoryFunctionInt4<Z> mB = new mProc();
+  private final MemoryFunctionInt4<Z> mB = new BProc();
+
+  /**
+   * B function. Used in A244372 and others.
+   * @param a parameter
+   * @param b parameter
+   * @param c parameter
+   * @param d parameter
+   * @return value
+   */
+  public Z b(final int a, final int b, final int c, final int d) {
+    return mB.get(a, b, c, d);
+  }
 
   @Override
-  public Z matrixElement(int n, final int k) {
-    return n == 0 ? Z.ONE : mB.get(n - 1, n - 1, k, k);
+  public Z matrixElement(final int n, final int k) {
+    return n == 0 ? Z.ONE : b(n - 1, n - 1, k, k);
   }
 }

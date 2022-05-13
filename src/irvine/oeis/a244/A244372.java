@@ -20,9 +20,9 @@ public class A244372 extends Triangle {
   @Override
   public Z compute(int n, final int k) {
     ++n;
-    Z result = mSeq.mB.get(n - 1, n - 1, k, k);
+    Z result = mSeq.b(n - 1, n - 1, k, k);
     if (k > 0) {
-      result = result.subtract(mSeq.mB.get(n - 1, n - 1, k - 1, k - 1));
+      result = result.subtract(mSeq.b(n - 1, n - 1, k - 1, k - 1));
     }
     return result;
   }

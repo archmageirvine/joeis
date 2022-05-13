@@ -1,5 +1,7 @@
 package irvine.oeis.a240;
 
+import java.util.Arrays;
+
 import irvine.math.MemoryFunctionInt2Array;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -32,19 +34,16 @@ public class A240608 extends UpperLeftTriangle {
         return Z.ONE;
       }
       final int len = list.length;
-      int[] list2 = null;
       Z sum = Z.ZERO;
       if (len < k) {
-        list2 = new int[len + 1];
-        for (int j = 0; j < len; ++j) {
-          list2[j] = list[j];
-        }
+        final int[] list2 = Arrays.copyOf(list, len + 1);
+        System.arraycopy(list, 0, list2, 0, len);
         list2[len] = 1;
         sum = get(n - 1, k, list2);
       }
       for (int i = 0; i < len; ++i) {
         if (i == 0 || list[i] <= list[i - 1]) {
-          list2 = new int[len];
+          final int[] list2 = new int[len];
           for (int j = 0; j < len; ++j) {
             list2[j] = j == i ? list[j] + 1 : list[j];
           }
@@ -57,6 +56,6 @@ public class A240608 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return mB.get(n, k < n ? k : n, new int[0]);
+    return mB.get(n, Math.min(k, n), new int[0]);
   }
 }

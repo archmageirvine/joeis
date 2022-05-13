@@ -15,6 +15,6 @@ public class A244407 extends A244372 {
   public Z next() {
     ++mN;
     // a:= n-> b(2*n-1$2, n$2)-b(2*n-1$2, n-1$2):
-    return mSeq.mB.get(2 * mN - 1, 2 * mN - 1, mN, mN).subtract(mSeq.mB.get(2 * mN - 1, 2 * mN - 1, mN - 1, mN - 1));
+    return mSeq.b(2 * mN - 1, 2 * mN - 1, mN, mN).subtract(mSeq.b(2 * mN - 1, 2 * mN - 1, mN - 1, mN - 1));
   }
 }

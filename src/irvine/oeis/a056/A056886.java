@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056886.
+ * A056886 Determinant of the n X n Hankel matrix whose entries are s_2 (i+j), 0 &lt;= i, j &lt; n, where s_2 is the sum of the base-2 bits.
  * @author Sean A. Irvine
  */
 public class A056886 implements Sequence {

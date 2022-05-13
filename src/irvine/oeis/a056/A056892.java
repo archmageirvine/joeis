@@ -12,11 +12,12 @@ import irvine.oeis.a000.A000040;
  */
 public class A056892 implements Sequence {
 
-  final Sequence mA000006 = new A000006();
-  final Sequence mA000040 = new A000040();
+  private final Sequence mA000006 = new A000006();
+  private final Sequence mA000040 = new A000040();
+
   @Override
   public Z next() {
-    return mA000040.next().subtract(mA000006.next().pow(Z.TWO));
+    return mA000040.next().subtract(mA000006.next().square());
   }
 
 }

@@ -13,7 +13,7 @@ public class A051856 extends A000142 {
   public Z next() {
     while (true) {
       final Z f = super.next();
-      if (f.pow(2).add(f).add(1).isProbablePrime()) {
+      if (f.square().add(f).add(1).isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

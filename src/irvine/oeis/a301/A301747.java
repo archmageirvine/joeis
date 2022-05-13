@@ -20,7 +20,7 @@ public class A301747 extends EulerTransform {
 
   @Override
   protected Z advance() {
-    return mSeq.next().pow(2);
+    return mSeq.next().square();
   }
 
 }

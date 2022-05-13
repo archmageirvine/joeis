@@ -1360,7 +1360,7 @@ public final class SchreierSims {
 //            mSchreierArray[i + 1] = stabilizers.size();
 //            stabilizers.add(Permutations.createIntegerPermutation(perm));
 //            mSchreierArray[i + 2] = stabilizers.size();
-//            stabilizers.add(stabilizers.get(0).pow(2));
+//            stabilizers.add(stabilizers.get(0).square());
 //
 //            int inverseParity = 1 - ((degree - i) % 2);
 //            IntegerPermutation base = inverseParity == 1 ? stabilizers.get(0) : stabilizers.get(0).getIdentity();
@@ -1419,7 +1419,7 @@ public final class SchreierSims {
 //
 //            //filling Schreier vector for (012)
 //            stabilizers.add(Permutations.createIntegerPermutation(perm));
-//            stabilizers.add(stabilizers.get(0).pow(2));
+//            stabilizers.add(stabilizers.get(0).square());
 //
 //            int inverseParity = 1 - ((degree - i) % 2);
 //            IntegerPermutation base = inverseParity == 1 ? stabilizers.get(0) : stabilizers.get(0).getIdentity();

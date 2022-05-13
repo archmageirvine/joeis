@@ -159,7 +159,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
             //  A, A103881
             //  d:= 4; CoefficientList[Series[Sum[(Binomial[d,k])^2*x^k, {k, 0, d}]/(1 - x)^d, {x,0,11}],x]
             //  {1, 20, 110, 340, 780, 1500, 2570, 4060, 6040, 8580, 11750, 15620}
-            coeff = binomial(d, k).pow(2);
+            coeff = binomial(d, k).square();
             break;
           case 'a':
             //  A*, A008535 (A204621 = coordinator triangle)

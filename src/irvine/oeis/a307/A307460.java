@@ -19,7 +19,7 @@ public class A307460 extends EulerTransform {
 
   @Override
   protected Z advance() {
-    return mN % 2 != 0 ? Z.valueOf(mN).pow(2) : Z.valueOf(mN).pow(2).negate();
+    return mN % 2 != 0 ? Z.valueOf(mN).square() : Z.valueOf(mN).square().negate();
   }
 
 }

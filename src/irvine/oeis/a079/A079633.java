@@ -20,7 +20,7 @@ public class A079633 extends FloorSequence {
   protected Z evalCR(final long n) {
     final CR n3 = CR.valueOf(n).pow(CR.ONE_THIRD);
     return Z.valueOf(n).divide(n3.floor())
-        .subtract(n3.pow(2).floor());
+        .subtract(n3.square().floor());
   }
 
 }

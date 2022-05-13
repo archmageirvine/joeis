@@ -20,7 +20,7 @@ public class A053818 implements Sequence {
     for (int k = 1; k <= mN; ++k) {
       final long gd = LongUtils.gcd(mN, k);
       if (gd == 1) {
-        sum = sum.add(Z.valueOf(k).pow(2));
+        sum = sum.add(Z.valueOf(k).square());
       }
     }
     return sum;

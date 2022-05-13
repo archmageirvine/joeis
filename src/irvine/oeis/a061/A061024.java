@@ -13,6 +13,6 @@ public class A061024 extends A060822 {
 
   /** Construct the sequence. */
   public A061024() {
-    super(1, (n, p) -> MemoryFactorial.SINGLETON.factorial(Z.valueOf(p)).pow(Z.TWO));
+    super(1, (n, p) -> MemoryFactorial.SINGLETON.factorial(Z.valueOf(p)).square());
   }
 }

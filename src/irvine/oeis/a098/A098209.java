@@ -19,7 +19,7 @@ public class A098209 implements Sequence {
   
   @Override
   public Z next() {
-    return mA067275.next().pow(Z.TWO).subtract(Z.ONE);
+    return mA067275.next().square().subtract(Z.ONE);
   }
 
 }

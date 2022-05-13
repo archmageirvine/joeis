@@ -12,6 +12,6 @@ public class A331764 extends A060822 {
 
   /** Construct the sequence. */
   public A331764() {
-    super(1, (n, p) -> Z.valueOf(p).subtract(Z.ONE).pow(Z.THREE).subtract(Z.valueOf(p).subtract(Z.ONE).pow(Z.TWO)).divide(Z.FOUR));
+    super(1, (n, p) -> Z.valueOf(p).subtract(Z.ONE).pow(Z.THREE).subtract(Z.valueOf(p).subtract(Z.ONE).square()).divide(Z.FOUR));
   }
 }

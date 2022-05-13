@@ -24,7 +24,7 @@ public class A066294 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return mA000203.next().pow(Z.TWO).subtract(mA001157.next()).subtract(Z.TWO.multiply(Z.valueOf(mN)));
+    return mA000203.next().square().subtract(mA001157.next()).subtract(Z.TWO.multiply(Z.valueOf(mN)));
   }
 
 }

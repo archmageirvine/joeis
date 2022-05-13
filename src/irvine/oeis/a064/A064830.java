@@ -12,6 +12,6 @@ public class A064830 extends A060822 {
 
   /** Construct the sequence. */
   public A064830() {
-    super(1, (n, p) -> Z.valueOf(n).gcd(Z.valueOf(p).pow(Z.TWO).subtract(Z.ONE)));
+    super(1, (n, p) -> Z.valueOf(n).gcd(Z.valueOf(p).square().subtract(Z.ONE)));
   }
 }

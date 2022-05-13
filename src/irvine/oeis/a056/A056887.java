@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a010.A010060;
 
 /**
- * A056886 Determinant of the n X n Hankel matrix whose entries are s_2 (i+j), 0 &lt;= i, j &lt; n, where s_2 is the sum of the base-2 bits.
+ * A056887 Determinant of n X n Hankel matrix whose entries are t(i+j), 0 &lt;= i, j &lt; n, where t is the Thue-Morse sequence.
  * @author Sean A. Irvine
  */
 public class A056887 implements Sequence {

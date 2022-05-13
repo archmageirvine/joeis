@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056888.
+ * A056889 Numerators of continued fraction for left factorial.
  * @author Sean A. Irvine
  */
 public class A056889 implements Sequence {

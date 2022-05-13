@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A056888.
+ * A056888 a(n) = number of k such that sum of digits of 9^k is 9n.
  * @author Sean A. Irvine
  */
 public class A056888 implements Sequence {

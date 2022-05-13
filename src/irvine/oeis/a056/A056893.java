@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A056892 a(n) = square excess of the n-th prime.
+ * A056893 Smallest prime with square excess of n.
  * @author Sean A. Irvine
  */
 public class A056893 implements Sequence {
@@ -15,7 +15,7 @@ public class A056893 implements Sequence {
   private final LongDynamicArray<Z> mSmallest = new LongDynamicArray<>();
   private final Sequence mA000006 = new A000006();
   private final Sequence mA000040 = new A000040();
-  private int mN = 0;
+  protected int mN = 0;
 
   @Override
   public Z next() {
@@ -29,5 +29,4 @@ public class A056893 implements Sequence {
     }
     return mSmallest.get(mN);
   }
-
 }

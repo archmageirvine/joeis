@@ -16,16 +16,15 @@ public class A240608 extends UpperLeftTriangle {
     hasRAM(true);
   }
 
-  /* Maple:
-    b:= proc(n, k, l) option remember; 
-       printf("# %a,%a,%a\n", n,k,l);
-      `if`(n=0, 1, `if`(nops(l)<k,
-          b(n-1, k, [l[], 1]), 0) +add(`if`(i=1 or l[i]<=l[i-1],
-          b(n-1, k, subsop(i=l[i]+1, l)), 0), i=1..nops(l)))
-        end:
-    A:= (n, k)-> b(n, min(k, n), []):
-    seq(seq(A(n, d-n), n=0..d), d=0..6);
-  */
+//   Maple:
+//    b:= proc(n, k, l) option remember;
+//       printf("# %a,%a,%a\n", n,k,l);
+//      `if`(n=0, 1, `if`(nops(l)<k,
+//          b(n-1, k, [l[], 1]), 0) +add(`if`(i=1 or l[i]<=l[i-1],
+//          b(n-1, k, subsop(i=l[i]+1, l)), 0), i=1..nops(l)))
+//        end:
+//    A:= (n, k)-> b(n, min(k, n), []):
+//    seq(seq(A(n, d-n), n=0..d), d=0..6);
   private final MemoryFunctionInt2Array<Z> mB = new MemoryFunctionInt2Array<Z>() {
     @Override
     protected Z compute(final int n, final int k, final int[] list) {

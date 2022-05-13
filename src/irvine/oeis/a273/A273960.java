@@ -12,6 +12,6 @@ public class A273960 extends A060822 {
 
   /** Construct the sequence. */
   public A273960() {
-    super(1, (n, p) -> Z.ZERO.subtract(Z.ONE).pow(Z.valueOf(n)).multiply(Z.valueOf(p)));
+    super(1, (n, p) -> Z.ONE.negate().pow(Z.valueOf(n)).multiply(Z.valueOf(p)));
   }
 }

@@ -16,7 +16,7 @@ public class A078141 extends FloorSequence {
   }
 
   protected Z evalCR(final long n) {
-    return CR.ZERO.subtract(CR.GAMMA).add(CR.valueOf(n)).exp().floor();
+    return CR.GAMMA.negate().add(CR.valueOf(n)).exp().floor();
   }
 
 }

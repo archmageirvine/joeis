@@ -12,6 +12,6 @@ public class A194145 extends BeattySequence {
 
   /** Construct the sequence. */
   public A194145() {
-    super(1, CR.ZERO.subtract(CR.ONE).add(CR.SIX.sqrt()));
+    super(1, CR.ONE.negate().add(CR.SIX.sqrt()));
   }
 }

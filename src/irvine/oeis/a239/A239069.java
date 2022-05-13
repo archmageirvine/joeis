@@ -12,6 +12,6 @@ public class A239069 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A239069() {
-    super(0, CR.GAMMA.subtract(CR.ZERO.subtract(CR.ONE).ei()));
+    super(0, CR.GAMMA.subtract(CR.ONE.negate().ei()));
   }
 }

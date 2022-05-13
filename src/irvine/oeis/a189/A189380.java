@@ -11,7 +11,7 @@ import irvine.oeis.FloorSequence;
 public class A189380 extends FloorSequence {
 
   private final CR mR = CR.ONE;
-  private final CR mS = CR.ZERO.subtract(CR.ONE).add(CR.SQRT2);
+  private final CR mS = CR.ONE.negate().add(CR.SQRT2);
   private final CR mT = CR.ONE.add(CR.SQRT2);
 
   /** Construct the sequence. */

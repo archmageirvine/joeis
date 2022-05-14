@@ -12,6 +12,6 @@ public class A256667 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A256667() {
-    super(1, CR.ONE.divide(CR.TWO.multiply(CR.PI).sqrt()).multiply(CR.THREE.divide(CR.FOUR).gamma().pow(2).add(CR.FOUR.multiply(CR.FIVE.divide(CR.FOUR).gamma().pow(CR.TWO)))));
+    super(1, CR.ONE.divide(CR.TWO.multiply(CR.PI).sqrt()).multiply(CR.THREE.divide(CR.FOUR).gamma().square().add(CR.FOUR.multiply(CR.FIVE.divide(CR.FOUR).gamma().pow(CR.TWO)))));
   }
 }

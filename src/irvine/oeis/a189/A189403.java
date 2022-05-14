@@ -12,7 +12,7 @@ public class A189403 extends FloorSequence {
 
   private final CR mR = CR.ONE;
   private final CR mS = CR.E;
-  private final CR mT = CR.E.pow(2);
+  private final CR mT = CR.E.square();
 
   /** Construct the sequence. */
   public A189403() {

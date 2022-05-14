@@ -22,7 +22,7 @@ public class A213673 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN).pow(Z.TWO).subtract(mA000695.next()).divide(Z.FOUR);
+    return Z.valueOf(mN).square().subtract(mA000695.next()).divide(Z.FOUR);
   }
 
 }

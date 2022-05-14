@@ -21,7 +21,7 @@ public class A213236 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.ZERO.subtract(((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE).multiply(mA000169.next()));
+    return ((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE).multiply(mA000169.next()).negate();
   }
 
 }

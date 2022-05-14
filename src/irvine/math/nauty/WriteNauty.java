@@ -35,7 +35,7 @@ class WriteNauty implements GraphProcessor {
         IOUtils.writeLong(mOut, ((SmallGraph) graph).getEdgeVector(k));
       }
       mOut.flush();
-    } catch(final IOException e) {
+    } catch (final IOException e) {
       throw new RuntimeException(e);
     }
   }

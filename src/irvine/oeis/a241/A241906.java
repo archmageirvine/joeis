@@ -15,6 +15,6 @@ public class A241906 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return BellNumbers.bell(2 * mN).divide(BellNumbers.bell(mN).pow(2));
+    return BellNumbers.bell(2 * mN).divide(BellNumbers.bell(mN).square());
   }
 }

@@ -12,6 +12,6 @@ public class A248522 extends BeattySequence {
 
   /** Construct the sequence. */
   public A248522() {
-    super(1, CR.ONE.divide(CR.ONE.subtract(CR.ZERO.subtract(CR.ONE.divide(CR.THREE)).exp())));
+    super(1, CR.ONE.divide(CR.ONE.subtract(CR.ONE.divide(CR.THREE).negate().exp())));
   }
 }

@@ -12,6 +12,6 @@ public class A135180 extends A060822 {
 
   /** Construct the sequence. */
   public A135180() {
-    super(1, (n, p) -> Z.valueOf(p).pow(Z.FIVE).subtract(Z.valueOf(p).pow(Z.THREE)).add(Z.valueOf(p).pow(Z.TWO)));
+    super(1, (n, p) -> Z.valueOf(p).pow(Z.FIVE).subtract(Z.valueOf(p).pow(Z.THREE)).add(Z.valueOf(p).square()));
   }
 }

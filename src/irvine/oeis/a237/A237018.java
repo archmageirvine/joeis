@@ -27,7 +27,7 @@ public class A237018 extends UpperLeftTriangle {
         end:
     seq(seq(A(n, d-n), n=0..d), d=0..10);
   */
-  public final class ProcA extends MemoryFunction2<Integer, Z> {
+  private static final class ProcA extends MemoryFunction2<Integer, Z> {
     @Override
     protected Z compute(final Integer n, final Integer k) {
       final class ProcB extends MemoryFunctionInt3<Z> {
@@ -37,12 +37,12 @@ public class A237018 extends UpperLeftTriangle {
             return Z.ONE;
           }
           if (t == 1) {
-            return mProcA.get(n - 1, k);
+            return ProcA.this.get(n - 1, k);
           }
           Z sum = Z.ZERO;
           final int jmax = n - 2;
           for (int j = 0; j <= jmax; ++j) {
-            sum = sum.add(mProcA.get(j, k).multiply(get(n - j - 1, k, t - 1)));
+            sum = sum.add(ProcA.this.get(j, k).multiply(get(n - j - 1, k, t - 1)));
           }
           return sum;
         }
@@ -60,10 +60,20 @@ public class A237018 extends UpperLeftTriangle {
     }
   }
 
-  public final ProcA mProcA = new ProcA();
+  private final ProcA mProcA = new ProcA();
+
+  /**
+   * Get a value.
+   * @param n first parameter
+   * @param k second parameter
+   * @return function value
+   */
+  public Z getA(final int n, final int k) {
+    return mProcA.get(n, k);
+  }
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return mProcA.get(n, k);
+    return getA(n, k);
   }
 }

@@ -16,7 +16,7 @@ public class A274489 extends FloorSequence {
   }
 
   protected Z evalCR(final long n) {
-    return CR.valueOf(n).sinh().divide(CR.valueOf(n).pow(2)).floor();
+    return CR.valueOf(n).sinh().divide(CR.valueOf(n).square()).floor();
   }
 
 }

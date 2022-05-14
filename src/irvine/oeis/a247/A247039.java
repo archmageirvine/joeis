@@ -12,6 +12,6 @@ public class A247039 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A247039() {
-    super(1, CR.PI.pow(2).divide(CR.valueOf(12).multiply(CR.PHI.log())).exp());
+    super(1, CR.PI.square().divide(CR.valueOf(12).multiply(CR.PHI.log())).exp());
   }
 }

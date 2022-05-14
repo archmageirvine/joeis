@@ -12,6 +12,6 @@ public class A153480 extends A060822 {
 
   /** Construct the sequence. */
   public A153480() {
-    super(0, (n, p) -> Z.TWO.multiply(Z.valueOf(p).pow(Z.TWO)).subtract(Z.FOUR));
+    super(0, (n, p) -> Z.TWO.multiply(Z.valueOf(p).square()).subtract(Z.FOUR));
   }
 }

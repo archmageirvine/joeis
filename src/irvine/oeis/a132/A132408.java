@@ -16,7 +16,7 @@ public class A132408 extends FloorSequence {
   }
 
   protected Z evalCR(final long n) {
-    return CR.valueOf(n).exp().divide(CR.valueOf(n).pow(2)).ceil();
+    return CR.valueOf(n).exp().divide(CR.valueOf(n).square()).ceil();
   }
 
 }

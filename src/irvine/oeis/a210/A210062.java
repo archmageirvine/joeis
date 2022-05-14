@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A210062 implements Sequence {
 
-  private static CR LOG;
+  private final CR mLog;
   private long mN;
 
   /** Construct the sequence. */
@@ -24,11 +24,11 @@ public class A210062 implements Sequence {
    */
   public A210062(final int num) {
     mN = -1;
-    LOG = CR.valueOf(num).log().divide(CR.TEN.log());
+    mLog = CR.valueOf(num).log().divide(CR.TEN.log());
   }
 
   @Override
   public Z next() {
-    return LOG.multiply(++mN).floor().add(1);
+    return mLog.multiply(++mN).floor().add(1);
   }
 }

@@ -13,7 +13,7 @@ public class A154670 implements Sequence {
   private final Sequence mA037073 = new A037073();
   @Override
   public Z next() {
-    return Z.valueOf(18).multiply(mA037073.next().pow(Z.TWO));
+    return Z.valueOf(18).multiply(mA037073.next().square());
   }
 
 }

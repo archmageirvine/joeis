@@ -38,7 +38,7 @@ public class A055439 implements Sequence {
     CR sum = CR.ZERO;
     for (int d = 1; d < mBase; ++d) {
       final CR e = expected(n, d);
-      sum = sum.add(CR.valueOf(observed[d]).subtract(e).pow(2).divide(e));
+      sum = sum.add(CR.valueOf(observed[d]).subtract(e).square().divide(e));
     }
     return sum;
   }

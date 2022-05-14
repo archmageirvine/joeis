@@ -21,7 +21,7 @@ public class A140526 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN).pow(Z.FOUR).subtract(Z.TEN.multiply(Z.valueOf(mN).pow(Z.THREE))).add(Z.valueOf(37).multiply(Z.valueOf(mN).pow(Z.TWO))).subtract(Z.valueOf(56).multiply(Z.valueOf(mN))).add(Z.valueOf(25)).multiply(mA000166.next()).add(((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE).multiply(Z.ZERO.subtract(Z.valueOf(mN).pow(Z.THREE)).add(Z.EIGHT.multiply(Z.valueOf(mN).pow(Z.TWO))).subtract(Z.valueOf(22).multiply(Z.valueOf(mN))).add(Z.valueOf(19)))).divide(Z.FOUR);
+    return Z.valueOf(mN).pow(Z.FOUR).subtract(Z.TEN.multiply(Z.valueOf(mN).pow(Z.THREE))).add(Z.valueOf(37).multiply(Z.valueOf(mN).square())).subtract(Z.valueOf(56).multiply(Z.valueOf(mN))).add(Z.valueOf(25)).multiply(mA000166.next()).add(((mN & 1L) == 0 ? Z.ONE : Z.NEG_ONE).multiply(Z.valueOf(mN).pow(Z.THREE).negate().add(Z.EIGHT.multiply(Z.valueOf(mN).square())).subtract(Z.valueOf(22).multiply(Z.valueOf(mN))).add(Z.valueOf(19)))).divide(Z.FOUR);
   }
 
 }

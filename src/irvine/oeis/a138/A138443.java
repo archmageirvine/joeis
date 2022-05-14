@@ -15,6 +15,6 @@ public class A138443 extends A000040 {
   public Z next() {
     ++mN;
     final Z nextPrime = super.next();
-    return nextPrime.pow(6).subtract(nextPrime.pow(2)).divide(Z.FOUR);
+    return nextPrime.pow(6).subtract(nextPrime.square()).divide(Z.FOUR);
   }
 }

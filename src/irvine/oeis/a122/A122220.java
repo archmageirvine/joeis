@@ -12,6 +12,6 @@ public class A122220 extends A060822 {
 
   /** Construct the sequence. */
   public A122220() {
-    super(1, (n, p) -> Z.valueOf(p).pow(Z.SIX).subtract(Z.valueOf(p).pow(Z.TWO)).divide(Z.valueOf(20)));
+    super(1, (n, p) -> Z.valueOf(p).pow(Z.SIX).subtract(Z.valueOf(p).square()).divide(Z.valueOf(20)));
   }
 }

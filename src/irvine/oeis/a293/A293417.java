@@ -16,6 +16,6 @@ public class A293417 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A293417() {
-    super(0, CR.FOUR.multiply(REALS.atanh(CR.ZERO.subtract(CR.PI.multiply(CR.TWO.sqrt())).exp())).exp().subtract(CR.ONE).sqrt());
+    super(0, CR.FOUR.multiply(REALS.atanh(CR.PI.multiply(CR.TWO.sqrt()).negate().exp())).exp().subtract(CR.ONE).sqrt());
   }
 }

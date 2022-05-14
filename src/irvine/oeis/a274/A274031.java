@@ -14,6 +14,6 @@ public class A274031 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A274031() {
-    super(0, CR.ZERO.subtract(CR.FOUR.multiply(Zeta.zeta(2))).subtract(CR.TWO.multiply(Zeta.zeta(3))).add(CR.FOUR.multiply(Zeta.zeta(2)).multiply(Zeta.zeta(3))).add(CR.TWO.multiply(Zeta.zeta(5))));
+    super(0, CR.FOUR.multiply(Zeta.zeta(2)).negate().subtract(CR.TWO.multiply(Zeta.zeta(3))).add(CR.FOUR.multiply(Zeta.zeta(2)).multiply(Zeta.zeta(3))).add(CR.TWO.multiply(Zeta.zeta(5))));
   }
 }

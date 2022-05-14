@@ -20,7 +20,7 @@ public class A344851 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN).pow(Z.TWO).mod(Z.TWO.pow(mA070939.next()));
+    return Z.valueOf(mN).square().mod(Z.TWO.pow(mA070939.next()));
   }
 
 }

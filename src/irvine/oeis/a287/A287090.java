@@ -19,7 +19,7 @@ public class A287090 extends EulerTransform {
 
   @Override
   protected Z advance() {
-    return Z.valueOf(mN).pow(2).multiply(Z.valueOf(mN + 1).pow(2)).divide(Z.FOUR);
+    return Z.valueOf(mN).square().multiply(Z.valueOf(mN + 1).square()).divide(Z.FOUR);
   }
 
 }

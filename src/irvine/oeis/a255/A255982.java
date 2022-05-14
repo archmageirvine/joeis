@@ -33,7 +33,7 @@ public class A255982 extends Triangle {
   public Z compute(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int i = 0; i <= k; ++i) {
-      sum = sum.add(mSeq.mProcA.get(n, k - i).multiply(((i & 1) == 0) ? 1 : -1).multiply(Binomial.binomial(k, i)));
+      sum = sum.add(mSeq.getA(n, k - i).multiply(((i & 1) == 0) ? 1 : -1).multiply(Binomial.binomial(k, i)));
     }
     return sum;
   }

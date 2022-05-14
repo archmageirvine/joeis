@@ -12,6 +12,6 @@ public class A162611 extends Triangle {
 
   @Override
   protected Z compute(final int n, final int k) {
-    return k == 0 ? Z.valueOf(n) : get(n, k - 1).add(Z.valueOf(n).pow(2)).subtract(1);
+    return k == 0 ? Z.valueOf(n) : get(n, k - 1).add(Z.valueOf(n).square()).subtract(1);
   }
 }

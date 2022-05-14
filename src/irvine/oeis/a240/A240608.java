@@ -1,5 +1,7 @@
 package irvine.oeis.a240;
 
+import java.util.Arrays;
+
 import irvine.math.MemoryFunctionInt2Array;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -14,16 +16,15 @@ public class A240608 extends UpperLeftTriangle {
     hasRAM(true);
   }
 
-  /* Maple:
-    b:= proc(n, k, l) option remember; 
-       printf("# %a,%a,%a\n", n,k,l);
-      `if`(n=0, 1, `if`(nops(l)<k,
-          b(n-1, k, [l[], 1]), 0) +add(`if`(i=1 or l[i]<=l[i-1],
-          b(n-1, k, subsop(i=l[i]+1, l)), 0), i=1..nops(l)))
-        end:
-    A:= (n, k)-> b(n, min(k, n), []):
-    seq(seq(A(n, d-n), n=0..d), d=0..6);
-  */
+//   Maple:
+//    b:= proc(n, k, l) option remember;
+//       printf("# %a,%a,%a\n", n,k,l);
+//      `if`(n=0, 1, `if`(nops(l)<k,
+//          b(n-1, k, [l[], 1]), 0) +add(`if`(i=1 or l[i]<=l[i-1],
+//          b(n-1, k, subsop(i=l[i]+1, l)), 0), i=1..nops(l)))
+//        end:
+//    A:= (n, k)-> b(n, min(k, n), []):
+//    seq(seq(A(n, d-n), n=0..d), d=0..6);
   private final MemoryFunctionInt2Array<Z> mB = new MemoryFunctionInt2Array<Z>() {
     @Override
     protected Z compute(final int n, final int k, final int[] list) {
@@ -32,19 +33,16 @@ public class A240608 extends UpperLeftTriangle {
         return Z.ONE;
       }
       final int len = list.length;
-      int[] list2 = null;
       Z sum = Z.ZERO;
       if (len < k) {
-        list2 = new int[len + 1];
-        for (int j = 0; j < len; ++j) {
-          list2[j] = list[j];
-        }
+        final int[] list2 = Arrays.copyOf(list, len + 1);
+        System.arraycopy(list, 0, list2, 0, len);
         list2[len] = 1;
         sum = get(n - 1, k, list2);
       }
       for (int i = 0; i < len; ++i) {
         if (i == 0 || list[i] <= list[i - 1]) {
-          list2 = new int[len];
+          final int[] list2 = new int[len];
           for (int j = 0; j < len; ++j) {
             list2[j] = j == i ? list[j] + 1 : list[j];
           }
@@ -57,6 +55,6 @@ public class A240608 extends UpperLeftTriangle {
 
   @Override
   public Z matrixElement(final int n, final int k) {
-    return mB.get(n, k < n ? k : n, new int[0]);
+    return mB.get(n, Math.min(k, n), new int[0]);
   }
 }

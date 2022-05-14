@@ -15,7 +15,7 @@ public class A153158 implements Sequence {
   final Sequence mA007916 = new A007916();
   @Override
   public Z next() {
-    return mA007916.next().pow(Z.TWO);
+    return mA007916.next().square();
   }
 
 }

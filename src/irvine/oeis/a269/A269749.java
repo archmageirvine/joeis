@@ -12,6 +12,6 @@ public class A269749 extends A060822 {
 
   /** Construct the sequence. */
   public A269749() {
-    super(1, (n, p) -> Z.THREE.multiply(Z.valueOf(p).pow(Z.TWO)).add(Z.valueOf(39).multiply(Z.valueOf(p))).add(Z.valueOf(344)).add(Z.valueOf(24).multiply(Z.valueOf(p).subtract(Z.ONE).gcd(Z.THREE))).add(Z.valueOf(11).multiply(Z.valueOf(p).subtract(Z.ONE).gcd(Z.FOUR))).add(Z.TWO.multiply(Z.valueOf(p).subtract(Z.ONE).gcd(Z.FIVE))));
+    super(1, (n, p) -> Z.THREE.multiply(Z.valueOf(p).square()).add(Z.valueOf(39).multiply(Z.valueOf(p))).add(Z.valueOf(344)).add(Z.valueOf(24).multiply(Z.valueOf(p).subtract(Z.ONE).gcd(Z.THREE))).add(Z.valueOf(11).multiply(Z.valueOf(p).subtract(Z.ONE).gcd(Z.FOUR))).add(Z.TWO.multiply(Z.valueOf(p).subtract(Z.ONE).gcd(Z.FIVE))));
   }
 }

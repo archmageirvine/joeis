@@ -12,6 +12,6 @@ public class A211884 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A211884() {
-    super(0, CR.ZERO.subtract(CR.PI.multiply(CR.E).divide(CR.TWO).sin()));
+    super(0, CR.PI.multiply(CR.E).divide(CR.TWO).sin().negate());
   }
 }

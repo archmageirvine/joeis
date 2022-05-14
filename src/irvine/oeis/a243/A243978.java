@@ -28,7 +28,7 @@ public class A243978 extends Triangle {
       }
       Z sum = get(n, i - 1, k);
       final int jmax = n / i;
-      for (int j = (1 > k ? 1 : k); j <= jmax; ++j) {
+      for (int j = Math.max(1, k); j <= jmax; ++j) {
         sum = sum.add(get(n - i * j, i - 1, k));
       }
       return sum;

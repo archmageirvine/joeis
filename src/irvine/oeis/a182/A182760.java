@@ -15,6 +15,6 @@ public class A182760 extends BeattySequence {
 
   /** Construct the sequence. */
   public A182760() {
-    super(1, CR.THREE.add(REALS.pow(CR.FIVE, CR.ZERO.subtract(CR.ONE.divide(CR.TWO)))).divide(CR.TWO));
+    super(1, CR.THREE.add(REALS.pow(CR.FIVE, CR.ONE.divide(CR.TWO).negate())).divide(CR.TWO));
   }
 }

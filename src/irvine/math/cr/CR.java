@@ -948,6 +948,14 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Square a real number.
+   * @return square
+   */
+  public CR square() {
+    return new Multiply(this, this);
+  }
+
+  /**
    * Power of this computable real to another real.
    * @param e exponent
    * @return <code>this^e</code>

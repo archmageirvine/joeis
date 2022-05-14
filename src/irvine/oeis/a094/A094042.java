@@ -15,6 +15,6 @@ public class A094042 extends BeattySequence {
 
   /** Construct the sequence. */
   public A094042() {
-    super(1, CR.ONE.divide(REALS.pow(CR.E, CR.PI).subtract(REALS.pow(CR.PI, CR.E)).subtract(REALS.pow(CR.E, CR.ZERO.subtract(CR.PI.divide(CR.TWO))))).divide(CR.ONE.divide(REALS.pow(CR.E, CR.PI).subtract(REALS.pow(CR.PI, CR.E)).subtract(REALS.pow(CR.E, CR.ZERO.subtract(CR.PI.divide(CR.TWO))))).subtract(CR.ONE)));
+    super(1, CR.ONE.divide(REALS.pow(CR.E, CR.PI).subtract(REALS.pow(CR.PI, CR.E)).subtract(REALS.pow(CR.E, CR.PI.divide(CR.TWO).negate()))).divide(CR.ONE.divide(REALS.pow(CR.E, CR.PI).subtract(REALS.pow(CR.PI, CR.E)).subtract(REALS.pow(CR.E, CR.PI.divide(CR.TWO).negate()))).subtract(CR.ONE)));
   }
 }

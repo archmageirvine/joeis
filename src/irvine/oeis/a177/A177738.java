@@ -19,6 +19,6 @@ public class A177738 implements Sequence {
   @Override
   public Z next() {
     final CR n = CR.valueOf(++mN);
-    return REALS.pow(X, n).subtract(REALS.pow(X, CR.ZERO.subtract(n))).divide(X.subtract(REALS.pow(X, CR.ZERO.subtract(CR.ONE)))).floor();
+    return REALS.pow(X, n).subtract(REALS.pow(X, n.negate())).divide(X.subtract(REALS.pow(X, CR.ONE.negate()))).floor();
   }
 }

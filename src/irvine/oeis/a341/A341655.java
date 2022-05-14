@@ -13,6 +13,6 @@ public class A341655 extends A060205 {
 
   /** Construct the sequence. */
   public A341655() {
-    super(p -> Cheetah.factor(Z.valueOf(p).pow(2).subtract(1)).sigma0());
+    super(p -> Cheetah.factor(Z.valueOf(p).square().subtract(1)).sigma0());
   }
 }

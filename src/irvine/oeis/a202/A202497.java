@@ -17,7 +17,7 @@ public class A202497 extends DecimalExpansionSequence {
     super(0, new UnaryCRFunction() { 
       @Override 
       public CR execute(final CR x) {
-        return x.subtract(CR.E.pow(CR.ZERO.subtract(CR.TWO.multiply(x)).subtract(CR.TWO)));
+        return x.subtract(CR.E.pow(CR.TWO.multiply(x).negate().subtract(CR.TWO)));
       }
     }.inverseMonotone(CR.valueOf(0.107), CR.valueOf(0.111)).execute(CR.ZERO));
   }

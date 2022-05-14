@@ -94,7 +94,7 @@ public class Cheetah extends AbstractFactorizer {
 
   /**
    * Construct a new factoring engine.
-   * @param tryHard whether or not to attempt factorization beyond table limits
+   * @param tryHard whether to attempt factorization beyond table limits
    */
   public Cheetah(final boolean tryHard) {
     mTryHard = tryHard;
@@ -258,7 +258,7 @@ public class Cheetah extends AbstractFactorizer {
         try {
           final FactorSequence fs = new FactorSequence(new Z(arg));
           c.factor(fs);
-          System.out.println(fs.toString());
+          System.out.println(fs);
         } catch (final NumberFormatException e) {
           System.out.println("Could not parse " + arg + " as a number.");
         }

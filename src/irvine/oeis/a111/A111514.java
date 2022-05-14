@@ -13,6 +13,6 @@ public class A111514 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A111514() {
-    super(0, CR.PI.divide(CR.valueOf(180)).sin().log().divide(CR.TEN.log()).abs().pow(CR.ZERO.subtract(CR.ONE)));
+    super(0, CR.PI.divide(CR.valueOf(180)).sin().log().divide(CR.TEN.log()).abs().pow(CR.ONE.negate()));
   }
 }

@@ -57,7 +57,7 @@ public class A056885 extends MemoryFunction2<Integer, Polynomial<Q>> implements 
     final CycleIndex zn = SymmetricGroup.create(n).cycleIndex();
     final IntegerPartition part = new IntegerPartition(m);
     int[] p;
-    int[] k = new int[m + 1];
+    final int[] k = new int[m + 1];
     while ((p = part.next()) != null) {
       IntegerPartition.toCountForm(p, k);
       final ArrayList<Polynomial<Q>> c = new ArrayList<>();

@@ -14,7 +14,7 @@ public class A346745 extends DecimalExpansionSequence {
   /** Construct the sequence. */
   public A346745() {
     super(CR.PI.sinh()
-      .multiply(CR.PI.multiply(SQRT3).divide(CR.TWO).cosh().pow(2))
+      .multiply(CR.PI.multiply(SQRT3).divide(CR.TWO).cosh().square())
       .multiply(CR.PI.cosh().subtract(CR.PI.multiply(SQRT3).cos()))
       .divide(CR.PI.pow(5).multiply(24))
     );

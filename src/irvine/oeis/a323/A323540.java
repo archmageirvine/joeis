@@ -17,7 +17,7 @@ public class A323540 implements Sequence {
     ++mN;
     Z prod = Z.ONE;
     for (int k = 0; k <= mN; ++k) {
-      prod = prod.multiply(Z.valueOf(k * k).add(Z.valueOf(mN - k).pow(2)));
+      prod = prod.multiply(Z.valueOf(k * k).add(Z.valueOf(mN - k).square()));
     }
     return prod;
   }

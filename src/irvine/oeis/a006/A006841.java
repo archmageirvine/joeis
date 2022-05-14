@@ -80,7 +80,7 @@ public class A006841 implements Sequence {
     for (int d = 1; d <= mN; d++) {
       if (mN % d == 0) {
         final int i = mN / d;
-        final Z t = Z.valueOf(LongUtils.phi(i)).pow(2).multiply(Z.valueOf(i).pow(d)).multiply(mF.factorial(d));
+        final Z t = Z.valueOf(LongUtils.phi(i)).square().multiply(Z.valueOf(i).pow(d)).multiply(mF.factorial(d));
         wk1 = wk1.add(t);
       }
     }
@@ -90,7 +90,7 @@ public class A006841 implements Sequence {
     if (rmd4 == 0 || rmd4 == 2) {
       nrCoset[idxNw2] = mF.factorial(h + 1).multiply(h).shiftLeft(h);
     } else {
-      nrCoset[idxNw2] = Z.TWO.multiply(h).add(Z.ONE).pow(2).multiply(mF.factorial(h)).shiftLeft(h);
+      nrCoset[idxNw2] = Z.TWO.multiply(h).add(Z.ONE).square().multiply(mF.factorial(h)).shiftLeft(h);
     }
 
     // Compute nrCoset [idxNw],   i.e. 90 degrees rotation (or 270 degrees).
@@ -107,7 +107,7 @@ public class A006841 implements Sequence {
         nrCoset[idxNw] = product.multiply(mN * (long) mN).shiftLeft(k);
         break;
       case 2:
-        nrCoset[idxNw] = product.multiply(Z.valueOf(2 * k + 1).pow(2)).shiftLeft(k + 2);
+        nrCoset[idxNw] = product.multiply(Z.valueOf(2 * k + 1).square()).shiftLeft(k + 2);
         break;
       case 3:
       default:

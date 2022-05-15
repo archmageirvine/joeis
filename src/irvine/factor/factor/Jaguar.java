@@ -50,7 +50,7 @@ public final class Jaguar {
   }
 
   /**
-   * Attempt to factor the given number
+   * Attempt to factor the given number.
    * @param n number to factor
    * @return factorization
    * @throws UnsupportedOperationException if the factorization fails

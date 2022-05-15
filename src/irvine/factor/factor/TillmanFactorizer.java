@@ -23,6 +23,7 @@ public class TillmanFactorizer extends AbstractFactorizer {
   {
     // todo how to turn off just for JMA?
     Logger.getRootLogger().setLevel(Level.OFF);
+    //setVerbose(true);
   }
 
   @Override

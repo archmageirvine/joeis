@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346819 Number of partitions of the (n+9)-multiset {0,..., 0, 1, 2,...,n} with nine 0&apos;s into distinct multisets.
+ * A346819 Number of partitions of the (n+9)-multiset {0,...,0,1,2,...,n} with nine 0's into distinct multisets.
  * @author Georg Fischer
  */
 public class A346819 extends A346520 {

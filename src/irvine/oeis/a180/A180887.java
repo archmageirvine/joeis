@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A180887 Array read by antidiagonals: T(n,k)=number of permutations p() of 1..n+k with centered difference p(i+1)-p(i-1) &lt; 0 exactly k-1 times
+ * A180887 Array read by antidiagonals: T(n,k)=number of permutations p() of 1..n+k with centered difference p(i+1)-p(i-1) &lt; 0 exactly k-1 times.
  * @author Georg Fischer
  */
 public class A180887 extends UpperLeftTriangle {

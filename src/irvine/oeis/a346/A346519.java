@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346519 Number of partitions of the 2n-multiset {0,..., 0, 1, 2,...,n} into distinct multisets.
+ * A346519 Number of partitions of the 2n-multiset {0,...,0,1,2,...,n} into distinct multisets.
  * @author Georg Fischer
  */
 public class A346519 extends A346520 {

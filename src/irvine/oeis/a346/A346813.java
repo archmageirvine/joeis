@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346813 Number of partitions of the (n+3)-multiset {0, 0, 0, 1, 2,...,n} into distinct multisets.
+ * A346813 Number of partitions of the (n+3)-multiset {0,0,0,1,2,...,n} into distinct multisets.
  * @author Georg Fischer
  */
 public class A346813 extends A346520 {

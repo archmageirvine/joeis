@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a346.A346426;
 
 /**
- * A169588 The total number of ways of partitioning the multiset {1, 1, 1, 1, 2, 3,...,n-3}.
+ * A169588 The total number of ways of partitioning the multiset {1,1,1,1,2,3,...,n-3}.
  * @author Georg Fischer
  */
 public class A169588 extends A346426 {

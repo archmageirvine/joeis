@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A029722 Smallest positive integer containing the n-th letter of the alphabet (in English), or -1 if no such integer exists.
+ * A029722 Smallest positive integer containing the n-th letter of the alphabet (in US English), or -1 if no such integer exists.
  * @author Georg Fischer
  */
 public class A029722 extends FiniteSequence {

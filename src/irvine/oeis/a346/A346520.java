@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000009;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A346520 Number A(n,k) of partitions of the (n+k)-multiset {0,..., 0, 1, 2,...,k} with n 0&apos;s; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
+ * A346520 Number A(n,k) of partitions of the (n+k)-multiset {0,...,0,1,2,...,k} with n 0's into distinct multisets; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A346520 extends UpperLeftTriangle {

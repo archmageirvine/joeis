@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346822 Number of partitions of the (n+2)-multiset {0,..., 0, 1, 2} with n 0&apos;s into distinct multisets.
+ * A346822 Number of partitions of the (n+2)-multiset {0,...,0,1,2} with n 0's into distinct multisets.
  * @author Georg Fischer
  */
 public class A346822 extends A346520 {

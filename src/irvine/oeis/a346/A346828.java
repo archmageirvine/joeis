@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346828 Number of partitions of the (n+8)-multiset {0,..., 0, 1, 2,..., 8} with n 0&apos;s into distinct multisets.
+ * A346828 Number of partitions of the (n+8)-multiset {0,...,0,1,2,...,8} with n 0's into distinct multisets.
  * @author Georg Fischer
  */
 public class A346828 extends A346520 {

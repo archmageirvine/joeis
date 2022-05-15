@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.math.z.Z;
 
 /**
- * A180884 Number of permutations p() of 1..n+7 with centered difference p(i+1)-p(i-1) &lt; 0 exactly 6 times
+ * A180884 Number of permutations p() of 1..n+7 with centered difference p(i+1)-p(i-1) &lt; 0 exactly 6 times.
  * @author Georg Fischer
  */
 public class A180884 extends A180887 {

@@ -28,9 +28,26 @@ public final class Jaguar {
   private static final String FLAG_BIG_OMEGA = "Omega";
   private static final String FLAG_MULTILINE = "multiline";
 
+  private static final int TILLMAN_CUTOFF_BITS = 250;
+
   private static final CachedFactorizer FACTOR_DB = new CachedFactorizer(new FactorDbFactorizer());
   private static final Cheetah CHEETAH = new Cheetah(false);
   private static final PrimeDivision TRIAL = new PrimeDivision(1000);
+  private static final TillmanFactorizer TILLMAN = new TillmanFactorizer();
+
+  // Maximum bit length among remaining non-primes
+  private static int maxBitLength(final FactorSequence fs) {
+    int len = 0;
+    for (final Z n : fs.toZArray()) {
+      if (fs.getStatus(n) == FactorSequence.UNKNOWN || fs.getStatus(n) == FactorSequence.COMPOSITE) {
+        final int l = n.bitLength();
+        if (l > len) {
+          len = l;
+        }
+      }
+    }
+    return len;
+  }
 
   /**
    * Attempt to factor the given number
@@ -43,6 +60,12 @@ public final class Jaguar {
     if (Z.ONE.compareTo(n) < 0) {
       CHEETAH.factor(fs);
       if (!fs.isComplete()) {
+        if (maxBitLength(fs) <= TILLMAN_CUTOFF_BITS) {
+          TILLMAN.factor(fs);
+          if (fs.isComplete()) {
+            return fs;
+          }
+        }
         // It is generally better to look up the original number in factordb rather than
         // an already partially factored result, hence we recreate the sequence
         fs = new FactorSequence(n);
@@ -65,6 +88,12 @@ public final class Jaguar {
     FactorSequence fs = new FactorSequence(n);
     CHEETAH.factor(fs);
     if (!fs.isComplete()) {
+      if (maxBitLength(fs) <= TILLMAN_CUTOFF_BITS) {
+        TILLMAN.factor(fs);
+        if (fs.isComplete()) {
+          return fs;
+        }
+      }
       // It is generally better to look up the original number in factordb rather than
       // an already partially factored result, hence we recreate the sequence
       fs = new FactorSequence(n);
@@ -85,6 +114,12 @@ public final class Jaguar {
     if (fs.isSemiprime() == FactorSequence.UNKNOWN) {
       TRIAL.factor(fs);
       if (fs.isSemiprime() == FactorSequence.UNKNOWN) {
+        if (maxBitLength(fs) <= TILLMAN_CUTOFF_BITS) {
+          TILLMAN.factor(fs);
+          if (fs.isComplete()) {
+            return fs;
+          }
+        }
         // It is generally better to look up the original number in factordb rather than
         // an already partially factored result, hence we recreate the sequence
         fs = new FactorSequence(n);
@@ -102,7 +137,7 @@ public final class Jaguar {
         final long bigOmega = fs.bigOmegaBound();
         out.println(bigOmega < 0 ? ">=" + -bigOmega : String.valueOf(bigOmega));
       } else if (flags.isSet(FLAG_MULTILINE)) {
-        out.println(fs.toString());
+        out.println(fs);
       } else {
         out.println(FactorSequence.toString(fs));
       }
@@ -129,6 +164,7 @@ public final class Jaguar {
     if (flags.isSet(FLAG_VERBOSE)) {
       FACTOR_DB.setVerbose(true);
       CHEETAH.setVerbose(true);
+      TILLMAN.setVerbose(true);
     }
 
     if (flags.getAnonymousValues(0).isEmpty()) {

@@ -1829,3 +1829,8 @@ A056844 Number of polydiamonds: polyominoes made from n diamonds
 A056845 Number of polydiamonds: polyominoes made from n diamonds (another version)
 A056846 Number of polyominoids containing n squares: these are 2-dimensional polyominoes in a three-dimensional grid (edge-connected squares, like the floors, ceilings and walls of a building).
 A056863 Related to triangle A056858 of number of rises in set partitions of n at a given index i
+A056933 Antichains (or order ideals) in the poset 2*2*6*n or size of the distributive lattice J(2*2*6*n)
+A056934 Antichains (or order ideals) in the poset 2*2*7*n or size of the distributive lattice J(2*2*7*n)
+A056935 Antichains (or order ideals) in the poset 2*3*3*n or size of the distributive lattice J(2*3*3*n)
+A056936 Antichains (or order ideals) in the poset 2*3*4*n or size of the distributive lattice J(2*3*4*n)
+A056937 Number of antichains (or order ideals) in the poset 3*3*3*n or size of the distributive lattice J(3*3*3*n)

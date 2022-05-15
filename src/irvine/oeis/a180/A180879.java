@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.math.z.Z;
 
 /**
- * A180879 Number of permutations p() of 1..n+2 with centered difference p(i+1)-p(i-1) &lt; 0 exactly once
+ * A180879 Number of permutations p() of 1..n+2 with centered difference p(i+1)-p(i-1) &lt; 0 exactly once.
  * @author Georg Fischer
  */
 public class A180879 extends A180887 {

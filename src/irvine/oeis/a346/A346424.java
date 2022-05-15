@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346424 Number of partitions of the 2n-multiset {0,..., 0, 1, 2,...,n}.
+ * A346424 Number of partitions of the 2n-multiset {0,...,0,1,2,...,n}.
  * @author Georg Fischer
  */
 public class A346424 extends A346426 {

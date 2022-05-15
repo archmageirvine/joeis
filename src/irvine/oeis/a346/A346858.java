@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346858 Number of partitions of the (n+5)-multiset {0,..., 0, 1, 2,..., 5} with n 0&apos;s.
+ * A346858 Number of partitions of the (n+5)-multiset {0,...,0,1,2,...,5} with n 0's.
  * @author Georg Fischer
  */
 public class A346858 extends A346426 {

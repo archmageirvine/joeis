@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A346889 E.g.f.: 1 / (1 - x^3 * exp(x) / 3!).
+ * A346889 Expansion of e.g.f. 1 / (1 - x^3 * exp(x) / 3!).
  * E.g.f.: 1 / (1 - x^3 * exp(x) / 6)
  * @author Georg Fischer
  */

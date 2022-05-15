@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A306800 Square array whose entry A(n,k) is the number of endofunctions on a set of size n with preimage constraint {0, 1,...,k}, for n &gt;= 0, k &gt;= 0, read by descending antidiagonals.
+ * A306800 Square array whose entry A(n,k) is the number of endofunctions on a set of size n with preimage constraint {0,1,...,k}, for n &gt;= 0, k &gt;= 0, read by descending antidiagonals.
  * @author Georg Fischer
  */
 public class A306800 extends UpperLeftTriangle {

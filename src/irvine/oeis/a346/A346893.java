@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.ExponentialGeneratingFunction;
 
 /**
- * A346893 E.g.f.: 1 / (1 - x^5 * exp(x) / 5!).
+ * A346893 Expansion of e.g.f. 1 / (1 - x^5 * exp(x) / 5!).
  * E.g.f.: 1 / (1 - x^5 * exp(x) / 120)
  * @author Georg Fischer
  */

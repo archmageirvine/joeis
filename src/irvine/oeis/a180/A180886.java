@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.math.z.Z;
 
 /**
- * A180886 Number of permutations p() of 1..n+9 with centered difference p(i+1)-p(i-1) &lt; 0 exactly 8 times
+ * A180886 Number of permutations p() of 1..n+9 with centered difference p(i+1)-p(i-1) &lt; 0 exactly 8 times.
  * @author Georg Fischer
  */
 public class A180886 extends A180887 {

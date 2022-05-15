@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346852 Number of partitions of the (n+6)-multiset {0,..., 0, 1, 2,...,n} with six 0&apos;s.
+ * A346852 Number of partitions of the (n+6)-multiset {0,...,0,1,2,...,n} with six 0's.
  * @author Georg Fischer
  */
 public class A346852 extends A346426 {

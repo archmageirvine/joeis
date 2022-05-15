@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.oeis.triangle.RowSumSequence;
 
 /**
- * A346428 Total number of partitions of all n-multisets {0,..., 0, 1, 2,...,j} for 0 &lt;= j &lt;= n.
+ * A346428 Total number of partitions of all n-multisets {0,...,0,1,2,...,j} for 0 &lt;= j &lt;= n.
  * @author Georg Fischer
  */
 public class A346428 extends RowSumSequence {

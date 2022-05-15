@@ -4,7 +4,7 @@ package irvine.oeis.a346;
 import irvine.math.z.Z;
 
 /**
- * A346856 Number of partitions of the (n+10)-multiset {0,..., 0, 1, 2,...,n} with ten 0&apos;s.
+ * A346856 Number of partitions of the (n+10)-multiset {0,...,0,1,2,...,n} with ten 0's.
  * @author Georg Fischer
  */
 public class A346856 extends A346426 {

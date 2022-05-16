@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -16,7 +16,7 @@ public class A051348 implements Sequence {
   @Override
   public Z next() {
     Z f = Fibonacci.fibonacci(++mN);
-    for (final Z p : Cheetah.factor(mN).toZArray()) {
+    for (final Z p : Jaguar.factor(mN).toZArray()) {
       f = f.divide(Fibonacci.fibonacci(p.intValue()));
     }
     return f;

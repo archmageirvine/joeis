@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -24,7 +24,7 @@ public class A045885 implements Sequence {
     final double ln = Math.log(mN);
     while ((mN - 1) * (Math.log(++m) / ln + 2) * 2 * (LongUtils.sqrt(m) + 1) >= m) {
       Z s = Z.ZERO;
-      for (final Z d : Cheetah.factor(m).divisors()) {
+      for (final Z d : Jaguar.factor(m).divisors()) {
         s = s.add(ZUtils.digitSum(d, mN));
       }
       if (s.longValueExact() == m) {

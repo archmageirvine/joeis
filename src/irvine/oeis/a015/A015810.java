@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -21,7 +21,7 @@ public class A015810 implements Sequence {
     if (r != 0) {
       return r;
     }
-    final long t = Cheetah.factor(n).sigma().longValue();
+    final long t = Jaguar.factor(n).sigma().longValue();
     mSigma.set(n, t);
     return t;
   }

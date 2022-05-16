@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.a013.A013929;
@@ -15,7 +15,7 @@ public class A049198 extends A013929 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (Cheetah.factor(Euler.phi(t)).isSquareFree()) {
+      if (Jaguar.factor(Euler.phi(t)).isSquareFree()) {
         return t;
       }
     }

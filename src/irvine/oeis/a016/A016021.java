@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -20,7 +20,7 @@ public class A016021 implements Sequence {
   private long divisorSet(final int n) {
     long d = 0;
     if (n > 1) {
-      for (final Z dd : Cheetah.factor(n).divisors()) {
+      for (final Z dd : Jaguar.factor(n).divisors()) {
         final int v = dd.intValue();
         if (v != n) {
           d |= 1L << (v - 1);

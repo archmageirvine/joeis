@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -17,7 +17,7 @@ public class A052305 extends A025487 {
 
   @Override
   public Z next() {
-    final FactorSequence fs = Cheetah.factor(super.next());
+    final FactorSequence fs = Jaguar.factor(super.next());
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
       prod = prod.multiply(mA.a(fs.getExponent(p)));

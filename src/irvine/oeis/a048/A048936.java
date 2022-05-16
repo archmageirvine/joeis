@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -32,7 +32,7 @@ public class A048936 implements Sequence {
       final Z s = mN.sqrt();
       int cnt = 0;
       // We need sorted divisors for A048933 which extends this class
-      for (final Z d : Cheetah.factor(mN).divisorsSorted()) {
+      for (final Z d : Jaguar.factor(mN).divisorsSorted()) {
         if (d.compareTo(s) <= 0 && d.toString().length() == mHalfLength) {
           final Z e = mN.divide(d);
           if (d.mod(10) != 0 || e.mod(10) != 0) {

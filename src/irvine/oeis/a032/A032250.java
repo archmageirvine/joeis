@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -21,7 +21,7 @@ public class A032250 implements Sequence {
   private Polynomial<Z> f(final int k, final int shift, final int m) {
     final int s = m - shift * k;
     Polynomial<Z> sum = RING.zero();
-    for (final Z dd : Cheetah.factor(k).divisors()) {
+    for (final Z dd : Jaguar.factor(k).divisors()) {
       final int d = dd.intValue();
       final Z phi = Euler.phi(dd);
       final Polynomial<Z> t = RING.series(RING.one(), RING.pow(RING.oneMinusXToTheN(d * shift), k / d, s), s);
@@ -39,7 +39,7 @@ public class A032250 implements Sequence {
       return Z.ONE;
     }
     Polynomial<Z> sum = RING.zero();
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       final int mu = Mobius.mobius(d);
       if (mu != 0) {

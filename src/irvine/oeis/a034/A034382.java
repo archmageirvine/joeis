@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
@@ -67,7 +67,7 @@ public class A034382 implements Sequence {
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     mSum = Z.ZERO;
     sum(mF, fs, fs.toZArray(), 0);
     return mSum;

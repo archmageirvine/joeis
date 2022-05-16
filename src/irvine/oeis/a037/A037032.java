@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -18,7 +18,7 @@ public class A037032 implements Sequence {
     ++mN;
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
-      sum = sum.add(IntegerPartition.partitions(mN - k).multiply(Cheetah.factor(k).omega()));
+      sum = sum.add(IntegerPartition.partitions(mN - k).multiply(Jaguar.factor(k).omega()));
     }
     return sum;
   }

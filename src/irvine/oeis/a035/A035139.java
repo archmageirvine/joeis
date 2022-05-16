@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -19,7 +19,7 @@ public class A035139 implements Sequence {
     outer:
     while (true) {
       final int syn = LongUtils.syndrome(++mN);
-      for (final Z p : Cheetah.factor(mN).toZArray()) {
+      for (final Z p : Jaguar.factor(mN).toZArray()) {
         if ((ZUtils.syn(p) & syn) != 0) {
           continue outer;
         }

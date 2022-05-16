@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -89,7 +89,7 @@ public class A046650 implements Sequence {
   // Eq 6.7
   protected Z l(final int n, final int m) {
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(m).divisors()) {
+    for (final Z d : Jaguar.factor(m).divisors()) {
       sum = sum.add(Euler.phi(d).multiply(brnm(d.intValue(), n, m)));
     }
     return sum.divide(m);

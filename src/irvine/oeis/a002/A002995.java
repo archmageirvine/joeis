@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -20,7 +20,7 @@ public class A002995 implements Sequence {
       return Z.ONE;
     }
     Z s = Z.ZERO;
-    for (final Z d : Cheetah.factor(mN - 1).divisors()) {
+    for (final Z d : Jaguar.factor(mN - 1).divisors()) {
       s = s.add(Binomial.binomial(d.multiply2(), d).multiply(LongUtils.phi((mN - 1) / d.longValue())));
     }
     s = s.divide(2 * (mN - 1));

@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
@@ -35,7 +35,7 @@ public class A056866 implements Sequence {
         return true;
       }
     }
-    for (final Z pp : Cheetah.factor(n).toZArray()) {
+    for (final Z pp : Jaguar.factor(n).toZArray()) {
       final long p = pp.longValue();
       if (p > 3 && p % 5 > 1 && p % 5 < 4 && n % (p * p / 2) == 0) {
         return true;

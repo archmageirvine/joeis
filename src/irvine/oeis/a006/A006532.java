@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -19,7 +19,7 @@ public class A006532 implements Sequence {
       if (Z.ONE.equals(mN)) {
         return Z.ONE;
       }
-      final Z sum = Cheetah.factor(mN).sigma();
+      final Z sum = Jaguar.factor(mN).sigma();
       if (sum.isSquare()) {
         return mN;
       }

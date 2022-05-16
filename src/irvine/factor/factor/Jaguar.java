@@ -51,31 +51,67 @@ public final class Jaguar {
 
   /**
    * Attempt to factor the given number.
+   * @param fs number to factor
+   * @return factorization
+   * @throws UnsupportedOperationException if the factorization fails
+   */
+  public static FactorSequence factor(final FactorSequence fs) {
+    CHEETAH.factor(fs);
+    if (!fs.isComplete()) {
+      if (maxBitLength(fs) <= TILLMAN_CUTOFF_BITS) {
+        TILLMAN.factor(fs);
+        if (fs.isComplete()) {
+          return fs;
+        }
+      }
+      FACTOR_DB.factor(fs);
+      if (!fs.isComplete()) {
+        throw new UnsupportedOperationException("Unfactored: " + fs);
+      }
+    }
+    return fs;
+  }
+
+  private static final FactorSequence EMPTY = new FactorSequence();
+
+  /**
+   * Attempt to factor the given number.
    * @param n number to factor
    * @return factorization
    * @throws UnsupportedOperationException if the factorization fails
    */
   public static FactorSequence factor(final Z n) {
     FactorSequence fs = new FactorSequence(n);
-    if (Z.ONE.compareTo(n) < 0) {
-      CHEETAH.factor(fs);
+    if (Z.ONE.compareTo(n) >= 0) {
+      return EMPTY;
+    }
+    CHEETAH.factor(fs);
+    if (!fs.isComplete()) {
+      if (maxBitLength(fs) <= TILLMAN_CUTOFF_BITS) {
+        TILLMAN.factor(fs);
+        if (fs.isComplete()) {
+          return fs;
+        }
+      }
+      // It is generally better to look up the original number in factordb rather than
+      // an already partially factored result, hence we recreate the sequence
+      fs = new FactorSequence(n);
+      FACTOR_DB.factor(fs);
       if (!fs.isComplete()) {
-        if (maxBitLength(fs) <= TILLMAN_CUTOFF_BITS) {
-          TILLMAN.factor(fs);
-          if (fs.isComplete()) {
-            return fs;
-          }
-        }
-        // It is generally better to look up the original number in factordb rather than
-        // an already partially factored result, hence we recreate the sequence
-        fs = new FactorSequence(n);
-        FACTOR_DB.factor(fs);
-        if (!fs.isComplete()) {
-          throw new UnsupportedOperationException("Unfactored: " + n + " -> " + fs);
-        }
+        throw new UnsupportedOperationException("Unfactored: " + n + " -> " + fs);
       }
     }
     return fs;
+  }
+
+  /**
+   * Attempt to factor the given number.
+   * @param n number to factor
+   * @return factorization
+   * @throws UnsupportedOperationException if the factorization fails
+   */
+  public static FactorSequence factor(final long n) {
+    return factor(Z.valueOf(n));
   }
 
   /**

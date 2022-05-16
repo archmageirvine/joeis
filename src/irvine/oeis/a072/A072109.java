@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -20,7 +20,7 @@ public class A072109 implements Sequence {
       ++mN;
       Z l = Z.TWO;
       Q g = Q.ONE;
-      for (final Z d : Cheetah.factor(mN).divisors()) {
+      for (final Z d : Jaguar.factor(mN).divisors()) {
         if (!Z.ONE.equals(d)) {
           final Z phi = Euler.phi(d);
           l = l.add(d.multiply(phi));

@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -16,7 +16,7 @@ public class A034768 implements Sequence {
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(++mN).divisors()) {
+    for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(Binomial.catalan(mN / d - 1).multiply(Binomial.catalan(d - 1)));
     }

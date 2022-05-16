@@ -1,6 +1,6 @@
 package irvine.oeis.a285;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -20,7 +20,7 @@ public class A285425 extends UpperLeftTriangle {
   @Override
   public Z matrixElement(final int n, final int k) {
     Z sumd = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       if (dd.isOdd()) {
         sumd = sumd.add(dd.pow(k));
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
@@ -38,7 +38,7 @@ public class A002484 implements Sequence {
 
   @Override
   public Z next() {
-    final Z[] divisors = Cheetah.factor(++mN).divisors();
+    final Z[] divisors = Jaguar.factor(++mN).divisors();
     Q s = Q.ZERO;
     for (final Z d : divisors) {
       s = s.add(a(mN, d.intValueExact()));

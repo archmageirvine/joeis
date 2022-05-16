@@ -1,6 +1,6 @@
 package irvine.oeis.a162;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -17,7 +17,7 @@ public class A162529 implements Sequence {
   public Z next() {
     while (true) {
       mN += 9;
-      final Z[] d = Cheetah.factor(mN).divisorsSorted();
+      final Z[] d = Jaguar.factor(mN).divisorsSorted();
       final long s = LongUtils.sqrt(mN);
       for (int k = d.length - 1; k >= 0; --k) {
         final long w = d[k].longValue();

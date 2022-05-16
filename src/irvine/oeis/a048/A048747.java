@@ -2,7 +2,7 @@ package irvine.oeis.a048;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -19,7 +19,7 @@ public class A048747 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final FactorSequence fs = Cheetah.factor(++mN);
+      final FactorSequence fs = Jaguar.factor(++mN);
       final Z s0 = fs.sigma0();
       if (!Z.TWO.equals(s0)) { // i.e. mN is composite
         final Z[] qr = fs.sigma().divideAndRemainder(s0);

@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -22,7 +22,7 @@ public class A028572 implements Sequence {
       return Z.ZERO;
     }
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       if (d.isOdd()) {
         sum = sum.add(LongUtils.jacobi(-2, d.longValue()));
       }

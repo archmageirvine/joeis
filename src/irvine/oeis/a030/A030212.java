@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000144;
@@ -31,7 +31,7 @@ public class A030212 implements Sequence {
     } else if ((mN & 3) == 3) {
       sum2 = Z.NEG_ONE;
     }
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       final long dd = d.longValue();
       if (dd == 1) {
         continue;

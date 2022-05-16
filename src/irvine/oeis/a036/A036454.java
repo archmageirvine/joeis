@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
@@ -14,7 +14,7 @@ public class A036454 extends A002808 {
   public Z next() {
     while (true) {
       final Z composite = super.next();
-      if (Cheetah.factor(composite).sigma0().isProbablePrime()) {
+      if (Jaguar.factor(composite).sigma0().isProbablePrime()) {
         return composite;
       }
     }

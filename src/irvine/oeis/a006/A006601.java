@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -37,7 +37,7 @@ public class A006601 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final long s0 = Cheetah.factor(++mN + mA.length).sigma0AsLong();
+      final long s0 = Jaguar.factor(++mN + mA.length).sigma0AsLong();
       final boolean ok = isConstant(s0);
       System.arraycopy(mA, 1, mA, 0, mA.length - 1);
       mA[mA.length - 1] = s0;

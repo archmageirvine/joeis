@@ -1,6 +1,6 @@
 package irvine.oeis.a089;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -14,7 +14,7 @@ public class A089352 implements Sequence {
 
   protected long distinctSigma(final long n) {
     long sum = 0;
-    for (final Z p : Cheetah.factor(n).toZArray()) {
+    for (final Z p : Jaguar.factor(n).toZArray()) {
       sum += p.longValue();
     }
     return sum;

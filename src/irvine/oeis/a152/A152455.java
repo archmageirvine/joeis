@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -22,7 +22,7 @@ public class A152455 extends MemorySequence {
     if (n <= 2) {
       return Z.valueOf(n - 1);
     }
-    final Z[] m = Cheetah.factor(n).toZArray();
+    final Z[] m = Jaguar.factor(n).toZArray();
     if (m.length == 1) {
       // i.e. n == p^a
       return Euler.phi(Z.valueOf(n));

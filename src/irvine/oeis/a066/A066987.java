@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 // manually prodsim/prodsi at 2021-11-28 16:00
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -20,7 +20,7 @@ public class A066987 implements Sequence {
     ++mN;
     Q prod = Q.ONE;
     for (int i = 2; i <= mN; ++i) {
-      final FactorSequence fs = Cheetah.factor(i);
+      final FactorSequence fs = Jaguar.factor(i);
       prod = prod.multiply(fs.sigma()).divide(fs.bigOmega());
     }
     return prod.num();

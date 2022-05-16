@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Euler;
 import irvine.math.z.Integers;
@@ -26,7 +26,7 @@ public class A152175 extends MemoryFunctionInt3<Z> implements Sequence {
 
   protected Z t(final int n, final int k) {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(Euler.phi(dd).multiply(get(d, n / d, k)));
     }

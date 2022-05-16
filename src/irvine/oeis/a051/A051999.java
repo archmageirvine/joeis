@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
@@ -19,7 +19,7 @@ public class A051999 implements Sequence {
     protected Z computeNext() {
       ++mN;
       final Z t = mA.next();
-      return Z.valueOf(!t.isProbablePrime() ? 0 : Cheetah.factor(mN).omega());
+      return Z.valueOf(!t.isProbablePrime() ? 0 : Jaguar.factor(mN).omega());
     }
   };
   private Z mN = Z.ZERO;

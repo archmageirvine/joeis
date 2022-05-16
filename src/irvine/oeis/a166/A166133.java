@@ -2,7 +2,7 @@ package irvine.oeis.a166;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -46,7 +46,7 @@ public class A166133 implements Sequence {
       // Use a naive search for the divisor
       final Z n = mA.square().subtract(1);
       boolean found = false;
-      for (final Z dd : Cheetah.factor(n).divisorsSorted()) {
+      for (final Z dd : Jaguar.factor(n).divisorsSorted()) {
         if (!isUsed(dd)) {
           mA = dd;
           found = true;

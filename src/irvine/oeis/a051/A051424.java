@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Pair;
@@ -49,7 +49,7 @@ public class A051424 implements Sequence {
       return Z.ZERO;
     }
     final Z res = b(n, i - 1, select(s, i));
-    final Z[] f = Cheetah.factor(i).toZArray();
+    final Z[] f = Jaguar.factor(i).toZArray();
     if (i <= n && isEmptyIntersection(s, f)) {
       return res.add(b(n - i, i - 1, select(union(s, f), i)));
     } else {

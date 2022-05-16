@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -31,7 +31,7 @@ public class A032450 implements Sequence {
     final ArrayList<Z> g = new ArrayList<>();
     g.add(Z.valueOf(mN));
     while (true) {
-      final FactorSequence fs = Cheetah.factor(g.get(g.size() - 1));
+      final FactorSequence fs = Jaguar.factor(g.get(g.size() - 1));
       final Z t = (g.size() & 1) == 1 ? fs.sigma() : fs.phi();
       // Check for a cycle
       for (int k = 2 - (g.size() & 1); k < g.size(); k += 2) {

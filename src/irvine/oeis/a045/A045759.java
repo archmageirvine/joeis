@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -16,7 +16,7 @@ public class A045759 implements Sequence {
 
   static long f(final long n) {
     long sum = ZUtils.digitSum(n);
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
       sum += fs.getExponent(p) * ZUtils.digitSum(p);
     }

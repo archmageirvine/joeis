@@ -2,7 +2,7 @@ package irvine.oeis.a002;
 
 import java.io.Serializable;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,7 +17,7 @@ public class A002129 implements Sequence, Serializable {
   @Override
   public Z next() {
     Z s = Z.ZERO;
-    for (final Z d : Cheetah.factor(++mN).divisors()) {
+    for (final Z d : Jaguar.factor(++mN).divisors()) {
       s = s.signedAdd(d.isOdd(), d);
     }
     return s;

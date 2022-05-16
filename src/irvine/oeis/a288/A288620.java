@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.MemoryFunction;
@@ -36,7 +36,7 @@ public class A288620 extends MemoryFunction<Integer, CycleIndex> implements Sequ
     for (int k = 1; k <= n; ++k) {
       if (IntegerUtils.gcd(k, n) == 1) {
         final MultivariateMonomial mm = new MultivariateMonomial();
-        for (final Z dd : Cheetah.factor(n).divisors()) {
+        for (final Z dd : Jaguar.factor(n).divisors()) {
           final int ord = new IntegersModMul(dd).order(Z.valueOf(k)).intValueExact();
           mm.add(ord, Euler.phi(dd).divide(ord));
         }

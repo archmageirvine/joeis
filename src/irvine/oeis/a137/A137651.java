@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
@@ -26,7 +26,7 @@ public class A137651 extends Triangle {
     ++n;
     ++k;
     Z sum = Z.ZERO;
-    for (final Z zd : Cheetah.factor(n).divisors()) {
+    for (final Z zd : Jaguar.factor(n).divisors()) {
       final int d = zd.intValue();
       sum = sum.add(Stirling.secondKind(d, k).multiply(Mobius.mobius(n / d)));
     }

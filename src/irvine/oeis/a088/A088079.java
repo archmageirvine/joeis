@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,7 +17,7 @@ public class A088079 implements Sequence {
     if (power <= 1) {
       return true;
     }
-    final int exp = Cheetah.factor(candidate).maxExponent();
+    final int exp = Jaguar.factor(candidate).maxExponent();
     return exp >= power && cascade(candidate - 1, power - 1);
   }
 

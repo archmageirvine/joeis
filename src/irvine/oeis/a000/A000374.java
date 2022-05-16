@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -31,7 +31,7 @@ public class A000374 implements Sequence {
     mN = mN.add(1);
     final Z m = mN.makeOdd();
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(m).divisors()) {
+    for (final Z d : Jaguar.factor(m).divisors()) {
       sum = sum.add(Euler.phi(d).divide(ord2(d)));
     }
     return sum;

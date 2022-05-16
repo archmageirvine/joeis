@@ -1,6 +1,6 @@
 package irvine.oeis.a308;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -19,7 +19,7 @@ public class A308951 implements Sequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final FactorSequence fs = Cheetah.factor(4 * mN);
+    final FactorSequence fs = Jaguar.factor(4 * mN);
     final Z[] w = new Z[(int) (fs.bigOmega() + 1)];
     for (int v = 0; v < w.length; ++v) {
       Z sum = Z.ZERO;

@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a120.A120944;
 
@@ -12,7 +12,7 @@ public class A029553 extends A120944 {
 
   static boolean isQuasiCarmichael(final Z n, final long base) {
     final Z m = n.subtract(base);
-    for (final Z p : Cheetah.factor(n).toZArray()) {
+    for (final Z p : Jaguar.factor(n).toZArray()) {
       final Z s = p.subtract(base);
       if (s.signum() <= 0 || !m.mod(s).isZero()) {
         return false;

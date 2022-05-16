@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -25,8 +25,8 @@ public class A033634 implements Sequence {
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(++mN).divisors()) {
-      if (isOddPowers(Cheetah.factor(d))) {
+    for (final Z d : Jaguar.factor(++mN).divisors()) {
+      if (isOddPowers(Jaguar.factor(d))) {
         sum = sum.add(d);
       }
     }

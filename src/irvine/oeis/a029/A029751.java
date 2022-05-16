@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -18,7 +18,7 @@ public class A029751 implements Sequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       sum = sum.signedAdd(((mN / dd.longValueExact()) & 1) == 0, dd.pow(5));
     }
     return sum.abs().multiply(8);

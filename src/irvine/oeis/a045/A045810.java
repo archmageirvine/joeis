@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,7 +17,7 @@ public class A045810 implements Sequence {
     while (true) {
       long ones = 0;
       long total = 0;
-      for (final Z d : Cheetah.factor(++mN).divisors()) {
+      for (final Z d : Jaguar.factor(++mN).divisors()) {
         ones += d.bitCount();
         total += d.bitLength();
       }

@@ -2,7 +2,7 @@ package irvine.oeis.a058;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000084;
 
@@ -27,7 +27,7 @@ public class A058352 extends A000084 {
     mS.add(super.next());
     Z sum = Z.ZERO;
     if (++mN > 0) {
-      for (final Z d : Cheetah.factor(mN).divisors()) {
+      for (final Z d : Jaguar.factor(mN).divisors()) {
         final int dd = d.intValueExact();
         if (accept(dd)) {
           sum = sum.add(mS.get(dd).multiply(d));

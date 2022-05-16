@@ -1,7 +1,7 @@
 package irvine.oeis.a253;
 // manually prodsim/prodsid at 2021-11-28 14:44
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
@@ -21,7 +21,7 @@ public class A253901 implements Sequence {
   public Z next() {
     ++mN;
     Q prod = Q.ONE;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       final int mu = Mobius.mobius(mN / d);
       if (mu == -1) {

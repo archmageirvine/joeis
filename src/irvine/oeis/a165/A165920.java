@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -16,7 +16,7 @@ public class A165920 implements Sequence {
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(++mN).divisors()) {
+    for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
       if ((mN / d) % 3 != 0) {
         sum = sum.add(Z.ONE.shiftLeft(d).signedAdd((d & 1) == 0, Z.NEG_ONE).multiply(Mobius.mobius(mN / d)));

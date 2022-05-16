@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -25,11 +25,11 @@ public class A074064 extends A000793 {
     final long a = aa.longValue();
 
     Z coeff = Z.ZERO;
-    for (final Z dd : Cheetah.factor(aa).divisors()) {
+    for (final Z dd : Jaguar.factor(aa).divisors()) {
       final long d = dd.longValue();
       final int mu = Mobius.mobius(a / d);
       Polynomial<Z> div = RING.one();
-      for (final Z k : Cheetah.factor(dd).divisors()) {
+      for (final Z k : Jaguar.factor(dd).divisors()) {
         div = RING.multiply(div, RING.oneMinusXToTheN(k.intValue()), mN);
       }
       coeff = coeff.add(RING.coeff(RING.one(), div, mN).multiply(mu));

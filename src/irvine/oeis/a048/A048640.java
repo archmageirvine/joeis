@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000720;
@@ -21,7 +21,7 @@ public class A048640 extends A005117 {
     if (Z.ONE.equals(t)) {
       return Z.ONE;
     }
-    for (final Z p : Cheetah.factor(t).toZArray()) {
+    for (final Z p : Jaguar.factor(t).toZArray()) {
       res = res.or(Z.ONE.shiftLeft(mPrimePi.a(p.intValueExact() - 1).intValueExact()));
     }
     return res;

@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -24,7 +24,7 @@ public class A055516 implements Sequence {
     long best = 1;
     long k = 1;
     while (best == 1 || k < HEURISTIC_MULTIPLIER * mMax) {
-      final FactorSequence fs = Cheetah.factor(++k);
+      final FactorSequence fs = Jaguar.factor(++k);
       if (fs.phi().add(fs.sigma0()).add(mN).mod(k) == 0) {
         best = k;
       }

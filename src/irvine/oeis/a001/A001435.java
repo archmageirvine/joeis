@@ -2,7 +2,7 @@ package irvine.oeis.a001;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.MemoryFunction1;
 import irvine.math.Mobius;
@@ -55,7 +55,7 @@ public class A001435 extends A001430 {
       return Z.ZERO;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(IntegerUtils.gcd(nodes, edges)).divisors()) {
+    for (final Z dd : Jaguar.factor(IntegerUtils.gcd(nodes, edges)).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(b(nodes / d, edges / d).multiply(Mobius.mobius(d)).divide(d));
     }

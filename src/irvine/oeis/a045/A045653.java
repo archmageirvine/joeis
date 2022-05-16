@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -22,7 +22,7 @@ public class A045653 implements Sequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(mC.a(mN / d - 1).multiply(d).multiply(Binomial.binomial(d & ~1, d / 2)));
     }

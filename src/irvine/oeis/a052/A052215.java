@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import java.util.Collections;
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -21,8 +21,8 @@ public class A052215 implements Sequence {
     ++mN;
     long m = 1;
     while (true) {
-      final FactorSequence fs0 = Cheetah.factor(++m);
-      final FactorSequence fs1 = Cheetah.factor(m + 1);
+      final FactorSequence fs0 = Jaguar.factor(++m);
+      final FactorSequence fs1 = Jaguar.factor(m + 1);
       if (fs0.omega() == fs1.omega()) {
         final TreeSet<Z> set = new TreeSet<>();
         Collections.addAll(set, fs0.toZArray());

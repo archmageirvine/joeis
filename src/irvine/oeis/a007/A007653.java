@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.MemoryFunction;
 import irvine.math.z.Z;
@@ -43,7 +43,7 @@ public class A007653 extends MemoryFunction<Z, Long> implements Sequence {
   @Override
   public Z next() {
     Z prod = Z.ONE;
-    final FactorSequence fs = Cheetah.factor(++mN);
+    final FactorSequence fs = Jaguar.factor(++mN);
     for (final Z p : fs.toZArray()) {
       prod = prod.multiply(a(p, fs.getExponent(p)));
     }

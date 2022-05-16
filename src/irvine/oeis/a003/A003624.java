@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
@@ -20,7 +20,7 @@ public class A003624 implements Sequence {
     while (true) {
       ++mN;
       if (!mPrime.isPrime(mN)) {
-        final Z sigma = Cheetah.factor(mN).sigma();
+        final Z sigma = Jaguar.factor(mN).sigma();
         if (LongUtils.gcd(mN, sigma.longValueExact()) == 1) {
           return Z.valueOf(mN);
         }

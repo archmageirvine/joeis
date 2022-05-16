@@ -1,7 +1,7 @@
 package irvine.oeis.a061;
 // manually 2021-06-22
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -18,7 +18,7 @@ public class A061304 implements Sequence {
     while (true) {
       ++mN;
       final Z result = Z.valueOf(mN).multiply(mN + 1).divide2();
-      if (Cheetah.factor(result).maxExponent() <= 1) {
+      if (Jaguar.factor(result).maxExponent() <= 1) {
         return result;
       }
     }

@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007304;
 
@@ -14,7 +14,7 @@ public class A046443 extends A007304 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      final Z[] p = Cheetah.factor(t).toZArray();
+      final Z[] p = Jaguar.factor(t).toZArray();
       assert p.length == 3;
       final int l0 = p[0].toString().length();
       final int l1 = p[1].toString().length();

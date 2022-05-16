@@ -2,7 +2,7 @@ package irvine.oeis.a036;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -18,7 +18,7 @@ public class A036438 implements Sequence {
   @Override
   public Z next() {
     while (mA.isEmpty() || mA.first().compareTo(mN) >= 0) {
-      mA.add(Cheetah.factor(mN).sigma0().multiply(mN));
+      mA.add(Jaguar.factor(mN).sigma0().multiply(mN));
       mN = mN.add(1);
     }
     return mA.pollFirst();

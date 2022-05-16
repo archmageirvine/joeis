@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Euler;
@@ -22,7 +22,7 @@ public class A056372 implements Sequence {
     for (int k = 1; k <= mN; ++k) {
       if (IntegerUtils.gcd(k, mN) == 1) {
         long s = 0;
-        for (final Z dd : Cheetah.factor(mN).divisors()) {
+        for (final Z dd : Jaguar.factor(mN).divisors()) {
           s += Euler.phi(dd).divide(new IntegersModMul(dd).order(Z.valueOf(k))).intValueExact();
         }
         sum = sum.add(Z.THREE.pow(s));

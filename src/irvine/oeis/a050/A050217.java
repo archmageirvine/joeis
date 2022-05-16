@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -18,7 +18,7 @@ public class A050217 implements Sequence {
     if (mPrime.isPrime(n)) {
       return false;
     }
-    for (final Z d : Cheetah.factor(n).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       if (Z.ONE.equals(d)) {
         continue;
       }

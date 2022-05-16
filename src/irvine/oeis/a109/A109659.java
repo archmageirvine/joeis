@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,7 +16,7 @@ public class A109659 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final String s = Cheetah.factor(++mN).sigma().pow(mN).toString();
+      final String s = Jaguar.factor(++mN).sigma().pow(mN).toString();
       int digitSum = 0;
       for (int k = 0; k < s.length(); ++k) {
         digitSum += s.charAt(k) - '0';

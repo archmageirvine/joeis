@@ -2,7 +2,7 @@ package irvine.oeis.a019;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -123,7 +123,7 @@ public class A019312 implements Sequence {
   @Override
   public Z next() {
     // Update precomputed divisors for mN
-    final Z[] divisors = Cheetah.factor(++mN).divisorsSorted();
+    final Z[] divisors = Jaguar.factor(++mN).divisorsSorted();
     if (mN > 1) {
       final int[] divs = new int[divisors.length - 1];
       for (int k = 0; k < divs.length; ++k) {

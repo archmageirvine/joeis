@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -22,7 +22,7 @@ public class A005782 implements Sequence {
   }
 
   private int omega(final int n) {
-    return Cheetah.factor(n).omega();
+    return Jaguar.factor(n).omega();
   }
 
   private Z either(final int n, final int a, final int dsqf) {
@@ -42,7 +42,7 @@ public class A005782 implements Sequence {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValueExact();
       if (LongUtils.isSquareFree(d)) {
         sum = sum.add(either(mN, mN / d, d));

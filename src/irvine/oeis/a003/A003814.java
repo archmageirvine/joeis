@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.cr.Convergents;
@@ -21,7 +21,7 @@ public class A003814 implements Sequence {
       ++mN;
       final long s = LongUtils.sqrt(mN);
       if (s * s != mN) {
-        final FactorSequence fs = Cheetah.factor(mN);
+        final FactorSequence fs = Jaguar.factor(mN);
         boolean ok = true;
         for (final Z p : fs.toZArray()) {
           if ((p.longValueExact() & 3) == 3) {

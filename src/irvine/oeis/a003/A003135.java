@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -85,7 +85,7 @@ public class A003135 implements Sequence {
       } else {
         // Otherwise factor mN, all factors will be less than current prime limit
         exponents = Arrays.copyOf(mExponentVectors.get(mN - 1), mNextUnusedIndex);
-        final FactorSequence fs = Cheetah.factor(mN);
+        final FactorSequence fs = Jaguar.factor(mN);
         for (final Z pp : fs.toZArray()) {
           final int p = pp.intValueExact();
           final int k = mPrimeToIndex.get(p);

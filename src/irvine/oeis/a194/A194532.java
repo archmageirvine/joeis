@@ -1,6 +1,6 @@
 package irvine.oeis.a194;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007434;
@@ -30,7 +30,7 @@ public class A194532 extends A007434 {
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(++mN).divisors()) {
+    for (final Z d : Jaguar.factor(++mN).divisors()) {
       sum = sum.add(d.pow(mExp).multiply(Mobius.mobius(mN / d.longValue())));
     }
     return sum.divide(super.next());

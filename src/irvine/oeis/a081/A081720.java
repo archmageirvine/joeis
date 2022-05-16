@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
@@ -19,7 +19,7 @@ public class A081720 extends Triangle {
     ++k;
     Z sum = Z.ZERO;
     final Z zk = Z.valueOf(k);
-    for (final Z d : Cheetah.factor(n).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       sum = sum.add(Euler.phi(d).multiply(zk.pow(n / d.intValue())));
     }
     if ((n & 1) == 0) {

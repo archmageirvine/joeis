@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -17,7 +17,7 @@ public class A094501 implements Sequence {
   {
     for (int k = 1; k < mCache.length; ++k) {
       long sum = 0;
-      for (final Z t : Cheetah.factor(k).divisors()) {
+      for (final Z t : Jaguar.factor(k).divisors()) {
         sum += ZUtils.digitSum(t);
       }
       mCache[k] = sum;
@@ -29,7 +29,7 @@ public class A094501 implements Sequence {
       return mCache[(int) m];
     }
     long sum = 0;
-    for (final Z t : Cheetah.factor(m).divisors()) {
+    for (final Z t : Jaguar.factor(m).divisors()) {
       sum += ZUtils.digitSum(t);
     }
     return sum;

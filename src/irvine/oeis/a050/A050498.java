@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,7 +17,7 @@ public class A050498 implements Sequence {
 
   private Z phi(final Z n) {
     //return Euler.phi(n);
-    return Cheetah.factor(n).phi();
+    return Jaguar.factor(n).phi();
   }
 
   @Override

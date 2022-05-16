@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -29,7 +29,7 @@ public class A034597 implements Sequence {
     final Z[] sigma = new Z[md + 1];
     sigma[0] = Z.ONE;
     for (int k = 1; k <= md; ++k) {
-      sigma[k] = Cheetah.factor(k).sigma(3).multiply(240);
+      sigma[k] = Jaguar.factor(k).sigma(3).multiply(240);
     }
     final Polynomial<Z> f = RING.pow(Polynomial.create(sigma), 3, md);
     Polynomial<Z> g = RING.x();

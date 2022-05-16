@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,7 +13,7 @@ public class A052424 implements Sequence {
   private long mN = 0;
 
   private boolean is(final long n) {
-    for (final Z pp : Cheetah.factor(n).toZArray()) {
+    for (final Z pp : Jaguar.factor(n).toZArray()) {
       final long p = pp.longValueExact();
       if (p < 10 && p != n) {
         return false;

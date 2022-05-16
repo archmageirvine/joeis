@@ -1,6 +1,6 @@
 package irvine.oeis.a246;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
@@ -18,7 +18,7 @@ public class A246137 implements Sequence {
   @Override
   public Z next() {
     final Z nf = mF.factorial(++mN - 1);
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     final Z[] z = fs.toZArray();
     if (z.length != 1 || Z.ONE.equals(z[0])) {
       return Z.ZERO;

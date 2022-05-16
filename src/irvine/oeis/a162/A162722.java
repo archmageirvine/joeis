@@ -1,6 +1,6 @@
 package irvine.oeis.a162;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -29,7 +29,7 @@ public class A162722 implements Sequence {
       if (mN.isPrime()) {
         return mN;
       }
-      if (check(mN.toString(2), Cheetah.factor(mN))) {
+      if (check(mN.toString(2), Jaguar.factor(mN))) {
         return mN;
       }
     }

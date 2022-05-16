@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -19,7 +19,7 @@ public class A048098 implements Sequence {
       if (++mN == 1) {
         return Z.ONE;
       }
-      final Z[] p = Cheetah.factor(mN).toZArray();
+      final Z[] p = Jaguar.factor(mN).toZArray();
       if (p[p.length - 1].longValueExact() <= LongUtils.sqrt(mN)) {
         return Z.valueOf(mN);
       }

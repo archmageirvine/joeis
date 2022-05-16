@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -58,7 +58,7 @@ public class A003636 implements Sequence {
     final long bStart = (bigD & 3) == 0 ? 0 : 1;
     for (long b = bStart; b <= bMax; b += 2) {
       final long ac = (bigD + b * b) / 4;
-      for (final Z dd : Cheetah.factor(ac).divisors()) {
+      for (final Z dd : Jaguar.factor(ac).divisors()) {
         final long a = dd.longValueExact();
         final long c = ac / a;
         if ((c > a && b <= a) || c == a) {
@@ -73,7 +73,7 @@ public class A003636 implements Sequence {
   }
 
   static long genera(final long d) {
-    final long r = Cheetah.factor(Math.abs(d)).omega();
+    final long r = Jaguar.factor(Math.abs(d)).omega();
     if (r > 64) {
       throw new UnsupportedOperationException();
     }

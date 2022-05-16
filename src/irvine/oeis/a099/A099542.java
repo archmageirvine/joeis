@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -37,7 +37,7 @@ public class A099542 implements Sequence {
   protected boolean isOk(final long n) {
     final long digProd = ZUtils.digitProduct(n, mBase);
     if (digProd != 0 && digProd % mBase == 0) {
-      mSopfr = Cheetah.factor(n).sopfr();
+      mSopfr = Jaguar.factor(n).sopfr();
       if (mSopfr.multiply(mBase).equals(Z.valueOf(digProd))) {
         return true;
       }

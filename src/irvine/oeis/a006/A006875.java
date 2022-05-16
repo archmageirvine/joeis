@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.MemoryFunction1;
 import irvine.math.Mobius;
@@ -18,7 +18,7 @@ public class A006875 extends MemoryFunction1<Z> implements Sequence {
   @Override
   protected Z compute(final int n) {
     Z sum = Z.ZERO;
-    for (final Z cc : Cheetah.factor(n).divisors()) {
+    for (final Z cc : Jaguar.factor(n).divisors()) {
       final int c = cc.intValueExact();
       sum = sum.add(Z.ONE.shiftLeft(c - 1).multiply(Mobius.mobius(n / c)));
     }
@@ -29,7 +29,7 @@ public class A006875 extends MemoryFunction1<Z> implements Sequence {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValueExact();
       if (d < mN) {
         sum = sum.add(get(d).multiply(LongUtils.phi(mN / d)));

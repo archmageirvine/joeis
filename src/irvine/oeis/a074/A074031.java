@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -37,7 +37,7 @@ public class A074031 implements Sequence {
 
   protected Z h(final int n, final int a) {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       if (dd.isOdd()) {
         final int d = dd.intValue();
         final int mu = Mobius.mobius(d);

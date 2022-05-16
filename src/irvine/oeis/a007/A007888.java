@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
@@ -60,7 +60,7 @@ public class A007888 implements Sequence {
 
   private Polynomial<Q> beta(final int k, final int d) {
     Polynomial<Q> res = RING.zero();
-    for (final Z ll : Cheetah.factor(k).divisors()) {
+    for (final Z ll : Jaguar.factor(k).divisors()) {
       final int l = ll.intValue();
       if (l != k) {
         final int dp = d / IntegerUtils.gcd(d, l);
@@ -91,7 +91,7 @@ public class A007888 implements Sequence {
     }
     Polynomial<Q> gf = RING.zero();
     for (int k = 1; k <= 3 * mN + 2; ++k) {
-      final int[] dk = down(Cheetah.factor(k).divisors());
+      final int[] dk = down(Jaguar.factor(k).divisors());
       for (final int m : dk) {
         for (final int d : dk) {
           final Polynomial<Q> beta = beta(k / m, d / IntegerUtils.gcd(d, m)).substitutePower(m);

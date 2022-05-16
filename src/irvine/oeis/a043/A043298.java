@@ -1,6 +1,6 @@
 package irvine.oeis.a043;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,7 +17,7 @@ public class A043298 implements Sequence {
     outer:
     while (true) {
       int smallPrimes = 0;
-      for (final Z d : Cheetah.factor(6 * ++mN).divisors()) {
+      for (final Z d : Jaguar.factor(6 * ++mN).divisors()) {
         final Z t = d.add(1);
         if (t.isProbablePrime()) {
           if (t.compareTo(Z.SEVEN) > 0) {

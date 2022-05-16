@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
@@ -18,7 +18,7 @@ public class A000358 implements Sequence {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
       sum = sum.add(Fibonacci.fibonacci(dd - 1).add(Fibonacci.fibonacci(dd + 1))
                     .multiply(LongUtils.phi(mN / dd)));

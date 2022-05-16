@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -11,9 +11,9 @@ import irvine.oeis.Sequence;
  */
 public class A015782 implements Sequence {
 
-  private FactorSequence mFactorSequenceA = Cheetah.factor(1);
-  private FactorSequence mFactorSequenceB = Cheetah.factor(2);
-  private FactorSequence mFactorSequenceC = Cheetah.factor(3);
+  private FactorSequence mFactorSequenceA = Jaguar.factor(1);
+  private FactorSequence mFactorSequenceB = Jaguar.factor(2);
+  private FactorSequence mFactorSequenceC = Jaguar.factor(3);
   private long mN = 3;
 
   @Override
@@ -22,7 +22,7 @@ public class A015782 implements Sequence {
       final Z phi3 = mFactorSequenceA.phi().add(3);
       mFactorSequenceA = mFactorSequenceB;
       mFactorSequenceB = mFactorSequenceC;
-      mFactorSequenceC = Cheetah.factor(++mN);
+      mFactorSequenceC = Jaguar.factor(++mN);
       if (mFactorSequenceC.sigma().mod(phi3).isZero()) {
         return Z.valueOf(mN - 3);
       }

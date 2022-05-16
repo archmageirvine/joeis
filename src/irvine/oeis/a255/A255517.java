@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
@@ -32,7 +32,7 @@ public class A255517 extends UpperLeftTriangle {
       Z sumj = Z.ZERO;
       for (int j = 1; j < n; ++j) {
         Z sumd = Z.ZERO;
-        for (final Z dd : Cheetah.factor(j).divisors()) {
+        for (final Z dd : Jaguar.factor(j).divisors()) {
           final int d = dd.intValue();
           sumd = sumd.add(getElement(d, k).multiply(d * k * ((((j / d + 1) & 1) == 0) ? 1 : -1)));
         }

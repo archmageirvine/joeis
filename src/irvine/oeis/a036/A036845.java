@@ -2,7 +2,7 @@ package irvine.oeis.a036;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -23,10 +23,10 @@ public class A036845 implements Sequence {
     Z m = mN;
     while (seen.add(m)) {
       if (phi) {
-        m = Cheetah.factor(m).phi();
+        m = Jaguar.factor(m).phi();
         phi = false;
       } else {
-        m = Cheetah.factor(m).sigma();
+        m = Jaguar.factor(m).sigma();
         phi = true;
       }
     }

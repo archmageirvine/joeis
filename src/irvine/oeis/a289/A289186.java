@@ -1,7 +1,7 @@
 package irvine.oeis.a289;
 // manually 2021-10-04
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -41,7 +41,7 @@ public class A289186 implements Sequence {
   public Z next() {
     Z result = Z.ZERO;
     ++mN;
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       Z t = d.subtract(1).subtract(d.gcd(mG));
       t = (t.compareTo(Z.ZERO) < 0 ? t.divide(mH) : t.divide(mH).add(1)).multiply(mN).divide(d);
       if (t.compareTo(result) > 0) {

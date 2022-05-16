@@ -1,6 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
@@ -19,7 +19,7 @@ public class A039958 implements Sequence {
     if (++mN == 1) {
       return Z.ONE;
     }
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     if (fs.isSquareFree()) {
       final long disc = mN * ((mN & 3) > 1 ? 4 : 1);
       final Z d = Z.valueOf(disc);

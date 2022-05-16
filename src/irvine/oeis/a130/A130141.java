@@ -2,8 +2,7 @@ package irvine.oeis.a130;
 
 import java.util.Arrays;
 
-import irvine.factor.factor.Cheetah;
-import irvine.factor.factor.Factorizer;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -16,7 +15,6 @@ import irvine.oeis.Sequence;
 public class A130141 implements Sequence {
 
   private static final Fast PRIME = new Fast();
-  private static final Factorizer FACTOR = new Cheetah();
   private static final String[] VALUES = {
     "13",
     "127",
@@ -41,13 +39,9 @@ public class A130141 implements Sequence {
       if (PRIME.isPrime(n)) {
         return n;
       }
-      final FactorSequence fs = new FactorSequence(n);
-      FACTOR.factor(fs);
+      final FactorSequence fs = Jaguar.factor(n);
       if (mPrintProof) {
         System.out.println(fs);
-      }
-      if (!fs.isComplete()) {
-        throw new UnsupportedOperationException("n=" + mN + " f=" + n);
       }
       final Z[] d = fs.divisorsSorted();
       if (d[1].equals(Z.TWO)) {

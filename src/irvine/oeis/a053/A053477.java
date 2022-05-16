@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -15,7 +15,7 @@ public class A053477 extends MemoryFunction1<Long> implements Sequence {
 
   @Override
   protected Long compute(final int n) {
-    return n <= 2 ? n : n + get((int) Cheetah.factor(n).sigma0AsLong());
+    return n <= 2 ? n : n + get((int) Jaguar.factor(n).sigma0AsLong());
   }
 
   @Override

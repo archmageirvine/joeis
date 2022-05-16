@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -40,7 +40,7 @@ public class A045515 implements Sequence {
     }
     final Polynomial<Polynomial<Q>> s = RING.series(RING.one(), DEN, mN);
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(s.coeff(d).coeff(0).toZ().multiply(Mobius.mobius(mN / d)));
     }

@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -29,7 +29,7 @@ public class A052053 extends A002808 {
   public Z next() {
     while (true) {
       final Z composite = super.next();
-      final FactorSequence fs = Cheetah.factor(composite);
+      final FactorSequence fs = Jaguar.factor(composite);
       if (fs.maxExponent() == 1) {
         final Z[] p = fs.toZArray();
         final int[][] cnts = new int[p.length][];

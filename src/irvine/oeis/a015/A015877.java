@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -10,15 +10,15 @@ import irvine.oeis.Sequence;
  */
 public class A015877 implements Sequence {
 
-  private Z mSigmaA = Cheetah.factor(1).sigma();
-  private Z mSigmaB = Cheetah.factor(2).sigma();
-  private Z mSigmaC = Cheetah.factor(3).sigma();
-  private Z mSigmaD = Cheetah.factor(4).sigma();
-  private Z mSigmaE = Cheetah.factor(5).sigma();
-  private Z mSigmaF = Cheetah.factor(6).sigma();
-  private Z mSigmaG = Cheetah.factor(7).sigma();
-  private Z mSigmaH = Cheetah.factor(8).sigma();
-  private Z mSigmaI = Cheetah.factor(9).sigma();
+  private Z mSigmaA = Jaguar.factor(1).sigma();
+  private Z mSigmaB = Jaguar.factor(2).sigma();
+  private Z mSigmaC = Jaguar.factor(3).sigma();
+  private Z mSigmaD = Jaguar.factor(4).sigma();
+  private Z mSigmaE = Jaguar.factor(5).sigma();
+  private Z mSigmaF = Jaguar.factor(6).sigma();
+  private Z mSigmaG = Jaguar.factor(7).sigma();
+  private Z mSigmaH = Jaguar.factor(8).sigma();
+  private Z mSigmaI = Jaguar.factor(9).sigma();
   private long mN = 9;
 
   @Override
@@ -33,7 +33,7 @@ public class A015877 implements Sequence {
       mSigmaF = mSigmaG;
       mSigmaG = mSigmaH;
       mSigmaH = mSigmaI;
-      mSigmaI = Cheetah.factor(++mN).sigma();
+      mSigmaI = Jaguar.factor(++mN).sigma();
       if (mSigmaI.equals(sigma)) {
         return Z.valueOf(mN - 9);
       }

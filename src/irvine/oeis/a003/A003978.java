@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
@@ -17,7 +17,7 @@ public class A003978 extends A003964 {
     if (++mN == 1) {
       return Z.ONE;
     }
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
       final Z q = partitionPi(p);

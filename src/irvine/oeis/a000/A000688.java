@@ -2,7 +2,7 @@ package irvine.oeis.a000;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -26,7 +26,7 @@ public class A000688 implements Sequence {
 
   @Override
   public Z next() {
-    final FactorSequence fs = Cheetah.factor(++mN);
+    final FactorSequence fs = Jaguar.factor(++mN);
     Z r = Z.ONE;
     for (final Z p : fs.toZArray()) {
       r = r.multiply(p(fs.getExponent(p)));

@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
@@ -19,7 +19,7 @@ public class A051521 implements Sequence {
   public Z next() {
     ++mN;
     while (mM <= 4 * mN * mN) {
-      final long d = Cheetah.factor(mM).sigma0().longValueExact();
+      final long d = Jaguar.factor(mM).sigma0().longValueExact();
       if (mM % d == 0) {
         final long v = mM / d;
         mA.set(v, mA.get(v) + 1);

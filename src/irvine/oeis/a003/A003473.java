@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.IntegersModMul;
 import irvine.math.q.Q;
 import irvine.math.z.Euler;
@@ -23,7 +23,7 @@ public class A003473 implements Sequence {
   private Q numNormalP(final int n) {
     final Z p = Z.valueOf(p());
     Q pp = Q.ONE;
-    for (final Z d : Cheetah.factor(n).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       //final int r = Z.ONE.equals(d) ? 1 : new IntegersModMul(d).order(p).intValueExact();
       final int r = Z.ONE.equals(d) ? 1 : new IntegersModMul(d).order(p).intValueExact();
       final Z pr = p.pow(r);

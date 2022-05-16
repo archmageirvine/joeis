@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -17,7 +17,7 @@ public class A046315 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(2);
-      final int s = Cheetah.factor(mN).isSemiprime();
+      final int s = Jaguar.factor(mN).isSemiprime();
       if (s == FactorSequence.UNKNOWN) {
         throw new UnsupportedOperationException();
       }

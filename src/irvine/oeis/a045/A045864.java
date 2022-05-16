@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -29,7 +29,7 @@ public class A045864 implements Sequence {
     if (++mN == 1) {
       return Z.ONE;
     }
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     Q prod = new Q(mN, 4);
     for (final Z p : fs.toZArray()) {
       prod = prod.multiply(p.subtract(chim4(p.longValue()))).divide(p);

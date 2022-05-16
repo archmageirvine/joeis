@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -11,13 +11,13 @@ import irvine.oeis.Sequence;
  */
 public class A015845 implements Sequence {
 
-  private FactorSequence mFactorSequenceA = Cheetah.factor(1);
-  private FactorSequence mFactorSequenceB = Cheetah.factor(2);
-  private FactorSequence mFactorSequenceC = Cheetah.factor(3);
-  private FactorSequence mFactorSequenceD = Cheetah.factor(4);
-  private FactorSequence mFactorSequenceE = Cheetah.factor(5);
-  private FactorSequence mFactorSequenceF = Cheetah.factor(6);
-  private FactorSequence mFactorSequenceG = Cheetah.factor(7);
+  private FactorSequence mFactorSequenceA = Jaguar.factor(1);
+  private FactorSequence mFactorSequenceB = Jaguar.factor(2);
+  private FactorSequence mFactorSequenceC = Jaguar.factor(3);
+  private FactorSequence mFactorSequenceD = Jaguar.factor(4);
+  private FactorSequence mFactorSequenceE = Jaguar.factor(5);
+  private FactorSequence mFactorSequenceF = Jaguar.factor(6);
+  private FactorSequence mFactorSequenceG = Jaguar.factor(7);
   private long mN = 7;
 
   @Override
@@ -30,7 +30,7 @@ public class A015845 implements Sequence {
       mFactorSequenceD = mFactorSequenceE;
       mFactorSequenceE = mFactorSequenceF;
       mFactorSequenceF = mFactorSequenceG;
-      mFactorSequenceG = Cheetah.factor(++mN);
+      mFactorSequenceG = Jaguar.factor(++mN);
       if (mFactorSequenceG.sigma().mod(phi).isZero()) {
         return Z.valueOf(mN - 7);
       }

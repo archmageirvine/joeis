@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -35,7 +35,7 @@ public class A033947 implements Sequence {
       return Z.ONE;
     }
     final Z phi = Euler.phi(n);
-    final Z[] primes = Cheetah.factor(phi).toZArray();
+    final Z[] primes = Jaguar.factor(phi).toZArray();
     Z r = Z.ONE;
     if (isPrimitiveRoot(primes, phi, n, n.subtract(1))) {
       return Z.NEG_ONE;

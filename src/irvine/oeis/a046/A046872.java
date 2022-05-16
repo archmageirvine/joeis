@@ -2,7 +2,7 @@ package irvine.oeis.a046;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.a008.A008849;
@@ -24,7 +24,7 @@ public class A046872 extends A008849 {
   public Z next() {
     outer:
     while (true) {
-      final FactorSequence fs = Cheetah.factor(super.next());
+      final FactorSequence fs = Jaguar.factor(super.next());
       if (fs.isSquareFree()) {
         final Z[] p = fs.toZArray();
         for (int k = 0; k < p.length - 1; ++k) {

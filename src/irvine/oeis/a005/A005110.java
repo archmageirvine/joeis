@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -13,7 +13,7 @@ public class A005110 extends A000040 {
   private int primeClass(final Z n) {
     if (mPrime.isPrime(n)) {
       int res = 1;
-      for (final Z p : Cheetah.factor(n.subtract(1)).toZArray()) {
+      for (final Z p : Jaguar.factor(n.subtract(1)).toZArray()) {
         if (p.compareTo(Z.THREE) > 0) {
           res = Math.max(res, primeClass(p) + 1);
         }

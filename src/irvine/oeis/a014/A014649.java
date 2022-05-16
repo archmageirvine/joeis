@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -19,7 +19,7 @@ public class A014649 implements Sequence {
   @Override
   public Z next() {
     Polynomial<Z> prod = RING.one();
-    for (final Z d : Cheetah.factor(++mN).divisors()) {
+    for (final Z d : Jaguar.factor(++mN).divisors()) {
       if (!d.isProbablePrime()) {
         final Z b = d.isPower();
         if (b == null || !b.isProbablePrime()) {

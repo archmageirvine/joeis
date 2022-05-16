@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
@@ -18,7 +18,7 @@ public class A024994 implements Sequence {
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(++mN).divisors()) {
+    for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
       if (d != mN) {
         sum = sum.add(mPartitions.a(d));

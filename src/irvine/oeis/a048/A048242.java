@@ -2,7 +2,7 @@ package irvine.oeis.a048;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.oeis.FiniteSequence;
 
 /**
@@ -19,7 +19,7 @@ public class A048242 extends FiniteSequence {
   private static long[] build() {
     final TreeSet<Integer> s = new TreeSet<>();
     for (int k = 1; k <= 16695; ++k) {
-      if (Cheetah.factor(k).sigma().intValueExact() > 2 * k) {
+      if (Jaguar.factor(k).sigma().intValueExact() > 2 * k) {
         s.add(k);
       }
     }

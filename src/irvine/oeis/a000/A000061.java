@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
@@ -41,7 +41,7 @@ public class A000061 implements Sequence {
   private Z[] handleFactors(final long a, final long n) {
     Z mz = Z.ONE;
     Z bz = Z.ONE;
-    final FactorSequence fs = Cheetah.factor(a);
+    final FactorSequence fs = Jaguar.factor(a);
     final ArrayList<Z> p = new ArrayList<>();
     for (final Z f : fs.toZArray()) {
       final int e = fs.getExponent(f);

@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction2;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -21,7 +21,7 @@ public class A007223 extends MemoryFunction2<Integer, Polynomial<Z>> implements 
   @Override
   protected Polynomial<Z> compute(final Integer b, final Integer v) {
     Polynomial<Z> p = RING.zero();
-    for (final Z dd : Cheetah.factor(b).divisors()) {
+    for (final Z dd : Jaguar.factor(b).divisors()) {
       final int d = dd.intValue();
       p = RING.add(p, RING.multiply(RING.pow(RING.onePlusXToTheN(d), v * b / d), Euler.phi(dd)));
     }

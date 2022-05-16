@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -27,7 +27,7 @@ public class A137723 implements Sequence {
       int gapSize = 0;
       final long searchStart = mSearch + 1;
       while (true) {
-        final Z[] facs = Cheetah.factor(++mSearch).toZArray();
+        final Z[] facs = Jaguar.factor(++mSearch).toZArray();
         boolean hasGap = false;
         for (int k = 0; k < facs.length - 1; ++k) {
           if (!mPrime.nextPrime(facs[k]).equals(facs[k + 1])) {

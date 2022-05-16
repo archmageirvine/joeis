@@ -1,6 +1,6 @@
 package irvine.oeis.a016;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -24,7 +24,7 @@ public class A016112 implements Sequence {
     if (++mN > 7 && mPrime.isPrime(mN)) {
       return Z.ZERO;
     }
-    for (final Z p : Cheetah.factor(mN).toZArray()) {
+    for (final Z p : Jaguar.factor(mN).toZArray()) {
       if (p.longValue() > 7) {
         return Z.ONE;
       }

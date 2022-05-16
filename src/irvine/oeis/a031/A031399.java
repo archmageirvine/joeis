@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
@@ -28,7 +28,7 @@ public class A031399 implements Sequence {
   public Z next() {
     while (true) {
       final Z a = mA.next();
-      final FactorSequence fs = Cheetah.factor(a);
+      final FactorSequence fs = Jaguar.factor(a);
       if (is4kp3Free(fs)) {
         return a;
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
@@ -26,7 +26,7 @@ public class A047996 implements Sequence {
       mM = 0;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(LongUtils.gcd(mN, mM)).divisors()) {
+    for (final Z dd : Jaguar.factor(LongUtils.gcd(mN, mM)).divisors()) {
       final long d = dd.longValue();
       sum = sum.add(Binomial.binomial(mN / d, mM / d).multiply(Euler.phi(dd)));
     }

@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction2;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -41,7 +41,7 @@ public class A054722 extends MemoryFunction2<Integer, Polynomial<Z>> implements 
     if (--mM < 1) {
       ++mN;
       mQ = RING.zero();
-      for (final Z dd : Cheetah.factor(mN).divisors()) {
+      for (final Z dd : Jaguar.factor(mN).divisors()) {
         final int d = dd.intValue();
         mQ = RING.add(mQ, RING.multiply(get(d, mN / d), Euler.phi(dd)));
       }

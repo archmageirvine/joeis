@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -22,7 +22,7 @@ public class A036249 extends MemorySequence {
       Z sum = Z.ZERO;
       for (int j = 1; j <= n; ++j) {
         Z s = Z.ZERO;
-        for (final Z d : Cheetah.factor(j).divisors()) {
+        for (final Z d : Jaguar.factor(j).divisors()) {
           s = s.add(d.multiply(a(d.intValue())));
         }
         sum = sum.add(s.multiply(getValue(n - j)));

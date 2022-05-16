@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 import irvine.util.string.StringUtils;
@@ -19,7 +19,7 @@ public class A028986 extends A002113 {
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (StringUtils.isPalindrome(Cheetah.factor(p).sigma().toString())) {
+      if (StringUtils.isPalindrome(Jaguar.factor(p).sigma().toString())) {
         return p;
       }
     }

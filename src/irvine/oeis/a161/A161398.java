@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -18,7 +18,7 @@ public class A161398 implements Sequence {
     if (pc == 1) {
       return Z.ONE;
     }
-    for (final Z dd : Cheetah.factor(mN).divisorsSorted()) {
+    for (final Z dd : Jaguar.factor(mN).divisorsSorted()) {
       if (dd.bitCount() == pc) {
         return dd;
       }

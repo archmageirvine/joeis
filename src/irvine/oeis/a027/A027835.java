@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
@@ -21,10 +21,10 @@ public class A027835 extends A027834 {
     ++mN;
     Z sum = Z.ZERO;
     final int r = getR();
-    for (final Z dd1 : Cheetah.factor(mN).divisors()) {
+    for (final Z dd1 : Jaguar.factor(mN).divisors()) {
       final int m = dd1.intValue();
       Z s = Z.ZERO;
-      for (final Z dd2 : Cheetah.factor(mN / m).divisors()) {
+      for (final Z dd2 : Jaguar.factor(mN / m).divisors()) {
         final int d2 = dd2.intValue();
         final int mu = Mobius.mobius(mN / (m * (long) d2));
         if (mu != 0) {

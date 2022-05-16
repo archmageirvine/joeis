@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -15,7 +15,7 @@ public class A001284 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final Z[] d = Cheetah.factor(++mN).divisorsSorted();
+      final Z[] d = Jaguar.factor(++mN).divisorsSorted();
       // Think of n = d[k] * d[j], want a case where d[k] < d[j] <= 2 * d[k] - 1
       // First condition is satisfied by order on loop, second by explicit check
       for (int k = 1, j = d.length - 2; k < j; ++k, --j) {

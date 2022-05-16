@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import java.util.Collections;
 import java.util.HashSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -21,7 +21,7 @@ public class A052297 extends A000040 {
     mP = super.next();
     final HashSet<Z> seen = new HashSet<>();
     while (!s.equals(mP)) {
-      Collections.addAll(seen, Cheetah.factor(s).toZArray());
+      Collections.addAll(seen, Jaguar.factor(s).toZArray());
       s = s.add(1);
     }
     return Z.valueOf(seen.size());

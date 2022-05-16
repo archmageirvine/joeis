@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
@@ -32,7 +32,7 @@ public class A054395 implements Sequence {
         }
         continue;
       }
-      final FactorSequence fs = Cheetah.factor(mN);
+      final FactorSequence fs = Jaguar.factor(mN);
       long sum = 0;
       for (final Z q : fs.toZArray()) {
         if (q.longValue() % p == 1) {

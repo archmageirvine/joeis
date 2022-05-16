@@ -2,7 +2,7 @@ package irvine.oeis.a077;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -29,7 +29,7 @@ public class A077208 implements Sequence {
       return false; // 5^2 is a factor
     }
     // general test for square free
-    if (Cheetah.factor(n).maxExponent() > 1) {
+    if (Jaguar.factor(n).maxExponent() > 1) {
       mUsed.add(n); // only for efficiency
       return false;
     }

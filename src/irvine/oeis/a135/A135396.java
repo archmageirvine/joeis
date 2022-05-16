@@ -1,7 +1,7 @@
 package irvine.oeis.a135;
 // manually prodsim/prodsid at 2021-11-28 12:12
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -19,7 +19,7 @@ public class A135396 implements Sequence {
   public Z next() {
     ++mN;
     Z prod = Z.ONE;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       prod = prod.multiply(FACTORIAL.factorial(mN - d));
     }

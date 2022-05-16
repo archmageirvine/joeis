@@ -1,6 +1,6 @@
 package irvine.oeis.a023;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -21,7 +21,7 @@ public class A023881 implements Sequence {
   @Override
   public Z next() {
     if (++mN >= 1) {
-      mP = RING.add(mP, RING.monomial(new Q(Cheetah.factor(mN).sigma(mN), Z.valueOf(mN)), mN));
+      mP = RING.add(mP, RING.monomial(new Q(Jaguar.factor(mN).sigma(mN), Z.valueOf(mN)), mN));
     }
     return RING.exp(mP, mN).coeff(mN).toZ();
   }

@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
@@ -33,7 +33,7 @@ public class A034011 implements Sequence {
   }
 
   private boolean isOk(final long a) {
-    for (final Z pp : Cheetah.factor(-a).toZArray()) {
+    for (final Z pp : Jaguar.factor(-a).toZArray()) {
       final long p = pp.longValue();
       if (p > 2) {
         final long[] vpa = val(a, p);

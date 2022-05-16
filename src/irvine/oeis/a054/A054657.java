@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -32,7 +32,7 @@ public class A054657 implements Sequence {
       for (final Map.Entry<Z, Z> e : mTree.entrySet()) {
         final Z m = e.getValue();
         add(t, Z.ONE, m);
-        for (final Z d : Cheetah.factor(e.getKey()).divisors()) {
+        for (final Z d : Jaguar.factor(e.getKey()).divisors()) {
           add(t, d.add(1), m);
         }
       }

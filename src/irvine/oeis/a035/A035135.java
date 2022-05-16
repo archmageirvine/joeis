@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
@@ -19,7 +19,7 @@ public class A035135 extends A002113 {
   public Z next() {
     while (true) {
       final Z palin = super.next();
-      if (!palin.isProbablePrime() && Cheetah.factor(palin).maxExponent() <= 2) {
+      if (!palin.isProbablePrime() && Jaguar.factor(palin).maxExponent() <= 2) {
         return palin;
       }
     }

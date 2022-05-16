@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,7 +17,7 @@ public class A051772 implements Sequence {
     outer:
     while (true) {
       Z sum = Z.ZERO;
-      for (final Z d : Cheetah.factor(++mN).divisorsSorted()) {
+      for (final Z d : Jaguar.factor(++mN).divisorsSorted()) {
         if (sum.compareTo(d) >= 0) {
           continue outer;
         }

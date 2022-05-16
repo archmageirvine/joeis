@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -23,7 +23,7 @@ public class A051293 extends MemorySequence {
         return Z.ZERO;
       }
       Z sum = Z.ZERO;
-      for (final Z d : Cheetah.factor(n).divisors()) {
+      for (final Z d : Jaguar.factor(n).divisors()) {
         if (d.isOdd()) {
           sum = sum.add(Euler.phi(d).shiftLeft(n / d.intValue()));
         }

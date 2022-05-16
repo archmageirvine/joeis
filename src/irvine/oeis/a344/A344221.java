@@ -19,7 +19,7 @@ public class A344221 implements Sequence {
     Z sum = Z.ZERO;
     for (int k = 1; k <= mN; ++k) {
       final long gd = LongUtils.gcd(mN, k);
-      sum = sum.add(irvine.factor.factor.Cheetah.factor(Z.valueOf(gd).pow(3)).sigma0());
+      sum = sum.add(irvine.factor.factor.Jaguar.factor(Z.valueOf(gd).pow(3)).sigma0());
     }
     return sum;
   }

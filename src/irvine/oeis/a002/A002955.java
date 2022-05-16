@@ -2,7 +2,7 @@ package irvine.oeis.a002;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
@@ -25,7 +25,7 @@ public class A002955 extends MemorySequence {
   private Z sum(final int n) {
     while (n >= mCache.size()) {
       Z s = Z.ZERO;
-      for (final Z d : Cheetah.factor(mCache.size()).divisors()) {
+      for (final Z d : Jaguar.factor(mCache.size()).divisors()) {
         s = s.add(d.multiply(b(d.intValueExact())));
       }
       mCache.add(s);

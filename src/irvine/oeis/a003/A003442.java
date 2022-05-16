@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.MemoryFunction2;
@@ -75,7 +75,7 @@ public class A003442 implements Sequence {
     }
     mPowerCache.clear();
     Polynomial<Q> sum = RING.zero();
-    for (final Z d : Cheetah.factor(r - 1).divisors()) {
+    for (final Z d : Jaguar.factor(r - 1).divisors()) {
       final int dp = d.intValueExact();
       final int q = (r - 1) / dp;
       final IntegerPartition part = new IntegerPartition(q);

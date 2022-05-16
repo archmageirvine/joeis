@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
 import irvine.math.group.PolynomialRing;
@@ -36,7 +36,7 @@ public class A052265 extends A052107 {
   private Polynomial<Z> fix(final int[] q) {
     final Z lcm = lcm(q);
     final ArrayList<Z> u = new ArrayList<>();
-    final Z[] v = Cheetah.factor(lcm).divisors();
+    final Z[] v = Jaguar.factor(lcm).divisors();
     for (final Z d : v) {
       int w = 0;
       for (final int j : q) {

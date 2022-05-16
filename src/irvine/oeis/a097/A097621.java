@@ -2,7 +2,7 @@ package irvine.oeis.a097;
 
 import java.util.TreeMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
@@ -19,7 +19,7 @@ public class A097621 extends A000961 {
 
   @Override
   public Z next() {
-    final FactorSequence fs = Cheetah.factor(++mN);
+    final FactorSequence fs = Jaguar.factor(++mN);
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
       final Z pe = p.pow(fs.getExponent(p));

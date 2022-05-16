@@ -1,6 +1,6 @@
 package irvine.oeis.a104;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.BellNumbers;
 import irvine.math.z.Binomial;
@@ -42,7 +42,7 @@ public class A104725 implements Sequence {
     } else if (mN == 1) {
       return Z.ONE;
     } 
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     int r = 0; // becomes sum of exponents
     final Z[] ps = fs.toZArray();
     final int[] u = new int[ps.length]; // array of exponents

@@ -2,7 +2,7 @@ package irvine.oeis.a161;
 
 import java.util.LinkedList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -23,7 +23,7 @@ public class A161906 implements Sequence {
     if (mLinkedList.isEmpty()) {
       mN = mN.add(1);
       final Z sqrt = mN.sqrt();
-      for (final Z d : Cheetah.factor(mN).divisorsSorted()) {
+      for (final Z d : Jaguar.factor(mN).divisorsSorted()) {
         if (d.compareTo(sqrt) <= 0) {
           mLinkedList.add(d);
         }

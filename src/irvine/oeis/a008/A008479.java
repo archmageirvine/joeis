@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -19,7 +19,7 @@ public class A008479 implements Sequence {
 
   @Override
   public Z next() {
-    final List<Z> primes = Arrays.asList(Cheetah.factor(++mN).toZArray());
+    final List<Z> primes = Arrays.asList(Jaguar.factor(++mN).toZArray());
     final int res = mCounts.merge(primes, 1, (x, y) -> x + y);
     return Z.valueOf(res);
   }

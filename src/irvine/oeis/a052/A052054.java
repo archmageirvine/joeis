@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 
 import java.util.Arrays;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -36,7 +36,7 @@ public class A052054 extends A002808 {
   public Z next() {
     while (true) {
       final Z composite = super.next();
-      final FactorSequence fs = Cheetah.factor(composite);
+      final FactorSequence fs = Jaguar.factor(composite);
       final Z[] p = fs.toZArray();
       final int[][] cnts = new int[p.length][];
       for (int k = 0; k < cnts.length; ++k) {

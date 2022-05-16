@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
@@ -25,7 +25,7 @@ public class A001325 implements Sequence {
     final int t = t2 / 2;
     final Z mm = Z.valueOf(m);
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(t2).divisors()) {
+    for (final Z dd : Jaguar.factor(t2).divisors()) {
       final int d = dd.intValue();
       if (t % d != 0) {
         sum = sum.add(mm.pow(d / 2).subtract(m & 1).multiply(Mobius.mobius(t2 / d)));
@@ -38,7 +38,7 @@ public class A001325 implements Sequence {
     final MultivariateMonomial mm = new MultivariateMonomial();
     mm.setCoefficient(Q.ONE);
     mm.add(1, m & 1);
-    for (final Z dd : Cheetah.factor(2L * i).divisors()) {
+    for (final Z dd : Jaguar.factor(2L * i).divisors()) {
       final int d = dd.intValueExact();
       if (i % d != 0) {
         mm.add(d, bigGPrime(m, d));

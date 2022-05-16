@@ -28,7 +28,7 @@ public final class Jaguar {
   private static final String FLAG_BIG_OMEGA = "Omega";
   private static final String FLAG_MULTILINE = "multiline";
 
-  private static final int TILLMAN_CUTOFF_BITS = 250;
+  private static final int TILLMAN_CUTOFF_BITS = 150;
 
   private static final CachedFactorizer FACTOR_DB = new CachedFactorizer(new FactorDbFactorizer());
   private static final Cheetah CHEETAH = new Cheetah(false);

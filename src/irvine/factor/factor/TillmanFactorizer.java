@@ -21,7 +21,6 @@ public class TillmanFactorizer extends AbstractFactorizer {
   private final CombinedFactorAlgorithm mCfa = new CombinedFactorAlgorithm(THREADS, null, true);
 
   {
-    // todo how to turn off just for JMA?
     Logger.getRootLogger().setLevel(Level.OFF);
     //setVerbose(true);
   }
@@ -40,7 +39,7 @@ public class TillmanFactorizer extends AbstractFactorizer {
     }
     final SortedMultiset<BigInteger> factors = mCfa.factor(n.bigIntegerValue());
     for (final BigInteger p : factors.toList()) {
-      fs.add(Z.valueOf(p), FactorSequence.PRIME, exponent);
+      fs.add(Z.valueOf(p), FactorSequence.PROB_PRIME, exponent);
     }
   }
 

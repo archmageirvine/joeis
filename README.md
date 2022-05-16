@@ -88,8 +88,10 @@ were ported to Java. Included here by permission (see associated
 copyright).  Again a canonical implementation is available from
 [plantri](https://users.cecs.anu.edu.au/~bdm/plantri/).
 
-Certain sequences requiring factorization of large integers are backed
-by queries to [factordb.com](http://factordb.com).
+Certain sequences requiring factorization of make use of Tilman Neumann's
+[Java Math Library](https://github.com/TilmanNeumann/java-math-library),
+larger factorizations are backed by queries to
+[factordb.com](http://factordb.com).
 
 Certain sequences involving counting positions in chess make use of
 the [Chesspresso library](http://www.chesspresso.org/) by Bernhard

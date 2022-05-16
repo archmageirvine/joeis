@@ -27,7 +27,7 @@ public class A323224 extends UpperLeftTriangle {
       if (n <= 0 || k < 0) {
         return Z.ZERO;
       }
-      if (n == k) {
+      if (n.equals(k)) {
         return Z.ONE;
       }
       return get(n - 1, k).add(get(n, k - 1));

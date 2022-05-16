@@ -6,13 +6,13 @@ import irvine.oeis.Sequence;
 
 /**
  * A147682 Late-growing permutations: number of permutations of 2 indistinguishable copies of 1..n with every partial sum &lt;= the same partial sum averaged over all permutations.
- * with every partial sum <= the same partial sum averaged over all permutations.
+ * with every partial sum &lt;= the same partial sum averaged over all permutations.
  * @author Georg Fischer
  */
 public class A147682 implements Sequence {
 
   private int mN;
-  private Integer mCopies;
+  private final Integer mCopies;
 
   /** Construct the sequence. */
   public A147682() {
@@ -54,11 +54,11 @@ public class A147682 implements Sequence {
       Z sum = Z.ZERO;
       long g = 0;
       for (int k = 1; k <= m; ++k) {
-        g += k * list[k];
+        g += (long) k * list[k];
       }
       final long g2 = g * 2 - (m + 1) * (n - 1);
       for (int i = 1; i <= m; ++i) {
-        if (list[i] > 0 && i * 2 <= g2) {
+        if (list[i] > 0 && i * 2L <= g2) {
           final int[] list2 = new int[m + 1];
           list2[0] = 0;
           for (int k = 1; k <= m; ++k) {

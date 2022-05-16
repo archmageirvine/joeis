@@ -2,7 +2,7 @@ package irvine.oeis.transform;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -61,7 +61,7 @@ public class Phi2TransformSequence implements Sequence {
     }
     final int n = mTerms.size() - 1;
     Z a = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if ((d & 1) == 1) {
         a = ZUtils.mobiusAdd(Mobius.mobius(d), a, mTerms.get(n / d));

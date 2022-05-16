@@ -1,6 +1,6 @@
 package irvine.nt.cyclotomic;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -18,7 +18,7 @@ public final class CyclotomicPolynomials extends MemoryFunction1<Polynomial<Z>> 
   @Override
   protected Polynomial<Z> compute(final int n) {
     Polynomial<Z> den = RING.one();
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if (d < n) {
         den = RING.multiply(den, get(d));

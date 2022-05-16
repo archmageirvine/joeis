@@ -1,6 +1,6 @@
 package irvine.oeis;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 
 /**
@@ -46,7 +46,7 @@ public class DirichletConvolutionSequence implements Sequence {
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(++mN).divisors()) {
+    for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(mSeq1.a(mN / d - mOffset1).multiply(mSeq2.a(d - mOffset2)));
     }

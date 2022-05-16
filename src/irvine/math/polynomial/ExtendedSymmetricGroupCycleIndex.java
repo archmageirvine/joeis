@@ -1,6 +1,6 @@
 package irvine.math.polynomial;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
@@ -22,7 +22,7 @@ public final class ExtendedSymmetricGroupCycleIndex {
     if (i % s == 0) {
       final Z mm = Z.valueOf(m);
       Z sum = Z.ZERO;
-      for (final Z d : Cheetah.factor(s).divisors()) {
+      for (final Z d : Jaguar.factor(s).divisors()) {
         sum = sum.add(mm.pow(d).multiply(Mobius.mobius(s / d.intValue())));
       }
       return sum.divide(s).intValueExact();
@@ -40,7 +40,7 @@ public final class ExtendedSymmetricGroupCycleIndex {
   public static MultivariateMonomial mm(final int m, final int i) {
     final MultivariateMonomial mm = new MultivariateMonomial();
     mm.setCoefficient(Q.ONE);
-    for (final Z dd : Cheetah.factor(i).divisors()) {
+    for (final Z dd : Jaguar.factor(i).divisors()) {
       final int d = dd.intValue();
       mm.add(d, g(m, i, d));
     }

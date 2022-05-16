@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Random;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.util.array.DynamicArray;
@@ -555,7 +555,7 @@ public final class ZUtils {
    */
   public static boolean testPrimitiveRoot(final Z r, final Z n) {
     final Z phi = Euler.phi(n);
-    for (final Z pi : Cheetah.factor(phi).toZArray()) {
+    for (final Z pi : Jaguar.factor(phi).toZArray()) {
       if (Z.ONE.equals(r.modPow(phi.divide(pi), n))) {
         return false;
       }
@@ -582,7 +582,7 @@ public final class ZUtils {
       return Z.ONE;
     }
     final Z phi = Euler.phi(n);
-    final Z[] primes = Cheetah.factor(phi).toZArray();
+    final Z[] primes = Jaguar.factor(phi).toZArray();
     Z r = Z.ONE;
     while (true) {
       r = r.add(1);
@@ -1088,7 +1088,7 @@ public final class ZUtils {
       return false;
     }
 
-    final FactorSequence fs = Cheetah.factor(mod);
+    final FactorSequence fs = Jaguar.factor(mod);
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       Z b = a.mod(p.pow(e));

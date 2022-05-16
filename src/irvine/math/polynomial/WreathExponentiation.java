@@ -2,10 +2,10 @@ package irvine.math.polynomial;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
-import irvine.math.z.Z;
 import irvine.math.Mobius;
+import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
@@ -22,13 +22,13 @@ public final class WreathExponentiation {
   // Equation (6)
   private static Z i(final MultivariateMonomial beta, final String indet, final int r, final int v) {
     Z pow = Z.ZERO;
-    for (final Z ww : Cheetah.factor(v).divisors()) {
+    for (final Z ww : Jaguar.factor(v).divisors()) {
       final long w = ww.longValueExact();
       final long mu = Mobius.mobius(v / w);
       if (mu != 0) {
         final long g = LongUtils.gcd(w, r); // actually an int since v was
         Z sum = Z.ZERO;
-        for (final Z kk : Cheetah.factor(w / g).divisors()) {
+        for (final Z kk : Jaguar.factor(w / g).divisors()) {
           final int k = kk.intValue();
           final Z jk = beta.get(new Pair<>(indet, k));
           sum = sum.add(jk.multiply(k));

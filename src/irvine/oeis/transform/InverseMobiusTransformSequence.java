@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
@@ -60,7 +60,7 @@ public class InverseMobiusTransformSequence implements Sequence {
       return null;
     }
     mTerms.add(t);
-    for (final Z d : Cheetah.factor(n).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       s = s.add(mTerms.get(d.intValue()));
     }
     return s;

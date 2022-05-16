@@ -3,7 +3,7 @@ package irvine.math.group;
 import java.util.Iterator;
 import java.util.Random;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
@@ -105,7 +105,7 @@ public class CyclicGroup extends AbstractGroup<Z> {
   @Override
   public CycleIndex cycleIndex() {
     final CycleIndex ci = new CycleIndex("Z(C" + mSize + ")");
-    for (final Z dd : Cheetah.factor(mSize).divisors()) {
+    for (final Z dd : Jaguar.factor(mSize).divisors()) {
       final int d = dd.intValue();
       final MultivariateMonomial m = new MultivariateMonomial();
       m.add(d, mSize / d);

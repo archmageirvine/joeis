@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043299 Numerator of L(n)=sum(k=1,n,k^n)/sum(k=1,n-1,k^n).
+ * A043299 Numerator of L(n) = (Sum_{k=1..n} k^n)/(Sum_{k=1..n-1} k^n).
  * @author Sean A. Irvine
  */
 public class A043299 implements Sequence {

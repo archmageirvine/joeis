@@ -31,9 +31,8 @@ public final class SmallGraphs implements GraphProcessor {
   /**
    * Generate dot files for small graphs.
    * @param args ignored
-   * @exception IOException if an I/O error occurs.
    */
-  public static void main(final String[] args) throws IOException {
+  public static void main(final String[] args) {
     new SmallGraphs().process(GraphFactory.create(0)); // handle empty graph
     for (int n = 1; n <= 5; ++n) {
       final GenerateGraphs gg = new GenerateGraphs(1);

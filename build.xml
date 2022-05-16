@@ -36,7 +36,7 @@
 
   <target name="compile-src" description="Compile the source" depends="compile-grammar">
     <mkdir dir="${build.dir}/classes"/>
-    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.8" includeantruntime="false">
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.10" includeantruntime="false">
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
@@ -45,7 +45,7 @@
   </target>
 
   <target name="compile-internal" description="Compile the internal">
-    <javac srcdir="${internal.dir}" source="1.8" destdir="${build.dir}/classes" includeantruntime="false">
+    <javac srcdir="${internal.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />

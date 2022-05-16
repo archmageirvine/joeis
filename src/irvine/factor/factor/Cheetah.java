@@ -96,13 +96,13 @@ public class Cheetah extends AbstractFactorizer {
    * Construct a new factoring engine.
    * @param tryHard whether to attempt factorization beyond table limits
    */
-  public Cheetah(final boolean tryHard) {
+  Cheetah(final boolean tryHard) {
     mTryHard = tryHard;
     initSmall();
   }
 
   /** Construct a new factoring engine. */
-  public Cheetah() {
+  Cheetah() {
     this(true);
   }
 
@@ -206,7 +206,7 @@ public class Cheetah extends AbstractFactorizer {
    * @return factor sequence
    * @exception UnsupportedOperationException if factorization cannot be completed
    */
-  public static FactorSequence factor(final Z n) {
+  static FactorSequence factor(final Z n) {
     return getFactorSequence(new FactorSequence(n));
   }
 
@@ -216,7 +216,7 @@ public class Cheetah extends AbstractFactorizer {
    * @return factor sequence
    * @exception UnsupportedOperationException if factorization cannot be completed
    */
-  public static FactorSequence factor(final long n) {
+  static FactorSequence factor(final long n) {
     return getFactorSequence(new FactorSequence(n));
   }
 

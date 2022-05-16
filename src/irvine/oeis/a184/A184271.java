@@ -12,7 +12,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A184271 extends UpperLeftTriangle {
 
-  private Z mDim;
+  private final Z mDim;
 
   /** Construct the sequence. */
   public A184271() {
@@ -33,7 +33,8 @@ public class A184271 extends UpperLeftTriangle {
   */
   @Override
   public Z matrixElement(final int n, final int k) {
+    final long t = (long) n * k;
     return Integers.SINGLETON.sumdiv(n, c -> Euler.phi(Z.valueOf(c)).multiply(
-      Integers.SINGLETON.sumdiv(k, d -> Euler.phi(Z.valueOf(d)).multiply(mDim.pow(n * k / LongUtils.lcm(c, d)))))).divide(n * k);
+      Integers.SINGLETON.sumdiv(k, d -> Euler.phi(Z.valueOf(d)).multiply(mDim.pow(t / LongUtils.lcm(c, d)))))).divide(t);
   }
 }

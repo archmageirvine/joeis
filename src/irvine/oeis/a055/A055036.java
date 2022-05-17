@@ -1,7 +1,6 @@
 package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
-import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000400;
 

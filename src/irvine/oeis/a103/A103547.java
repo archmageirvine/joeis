@@ -60,7 +60,7 @@ public class A103547 implements Sequence {
       final Z m5 = shortCircuit(m3, w, '5');
       final Z m7 = shortCircuit(m5, w, '7');
       final Z m9 = shortCircuit(m7, w, '9');
-      if (m9 == n) {
+      if (m9.equals(n)) {
         // n is prime and contains no zeros, verify primes at all splits
         mSeen.clear(); // we are not allowed repeated primes
         boolean ok = true;

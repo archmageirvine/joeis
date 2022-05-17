@@ -15,7 +15,7 @@ public class A001601 implements Sequence {
   public Z next() {
     if (mA == null) {
       mA = Z.ONE;
-    } else if (mA == Z.ONE) {
+    } else if (Z.ONE.equals(mA)) {
       mA = Z.THREE;
     } else {
       mA = mA.square().multiply2().subtract(1);

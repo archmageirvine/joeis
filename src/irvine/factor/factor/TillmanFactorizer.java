@@ -16,13 +16,15 @@ import irvine.math.z.Z;
  */
 public class TillmanFactorizer extends AbstractFactorizer {
 
+  private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
   private final CombinedFactorAlgorithm mCfa = new CombinedFactorAlgorithm(THREADS, null, true);
 
   {
-    Logger.getRootLogger().setLevel(Level.OFF);
-    //setVerbose(true);
+    if (!VERBOSE) {
+      Logger.getLogger("de.tilman_neumann.jml.factor").setLevel(Level.ERROR);
+    }
   }
 
   @Override

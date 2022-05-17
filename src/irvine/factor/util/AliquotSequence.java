@@ -21,7 +21,7 @@ public class AliquotSequence {
   private final Factorizer mFactorizer = new CachedFactorizer(new FactorDbFactorizer());
 
   static FactorSequence getFactorSequence(final Z n, final Factorizer factorizer) {
-    FactorSequence fs = Jaguar.factor(n);
+    FactorSequence fs = Jaguar.factorAllowIncomplete(n);
     // Try a bunch of times at FactorDb because it can take a while to factor
     // some smaller numbers. However, if the pieces remaining are too big then
     // give up straight away.
@@ -70,7 +70,7 @@ public class AliquotSequence {
             sb.append('C').append(v.toString().length());
           }
         }
-        System.out.println("incomplete " + step + " " + sb.toString());
+        System.out.println("incomplete " + step + " " + sb);
         return;
       }
       n = fs.sigma().subtract(n);

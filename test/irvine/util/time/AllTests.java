@@ -13,7 +13,6 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(TimerTest.class);
-    suite.addTestSuite(DelayTest.class);
     return suite;
   }
 

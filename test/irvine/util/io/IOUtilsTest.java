@@ -3,13 +3,10 @@ package irvine.util.io;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 import junit.framework.TestCase;
 
@@ -28,14 +25,14 @@ public class IOUtilsTest extends TestCase {
   private static final byte[] EMPTY = new byte[0];
 
   public void testEmpty() throws IOException {
-    testReadAll(EMPTY);
+    checkRealAll(EMPTY);
   }
 
   public void testString() throws IOException {
-    testReadAll(BYTES);
+    checkRealAll(BYTES);
   }
 
-  public void testReadAll(final byte[] s) throws IOException {
+  public void checkRealAll(final byte[] s) throws IOException {
     try (final InputStream in = new ByteArrayInputStream(s)) {
       final String res = IOUtils.readAll(in);
       final byte[] bres = res.getBytes();
@@ -75,134 +72,9 @@ public class IOUtilsTest extends TestCase {
     }
   }
 
-  public void testReadDataBogusIn() {
-    try {
-      IOUtils.readData((URL) null);
-      fail("Accepted null");
-    } catch (final IOException e) {
-      fail("IO");
-    } catch (final NullPointerException e) {
-      // okay
-    }
-    try {
-      IOUtils.readData((InputStream) null);
-      fail("Accepted null");
-    } catch (final IOException e) {
-      fail("IO");
-    } catch (final NullPointerException e) {
-      // okay
-    }
-  }
-
-
-  public void testReadData() {
-    final String s = "Hobbits live in small holes in the ground";
-    try {
-      final byte[] r = IOUtils.readData(new ByteArrayInputStream(s.getBytes()));
-      assertTrue(r != null);
-      assertEquals(s, new String(r));
-    } catch (final IOException e) {
-      fail("IO: " + e.getMessage());
-    }
-  }
-
-
-  public void testReadDataEmpty() {
-    final String s = "";
-    try {
-      final byte[] r = IOUtils.readData(new ByteArrayInputStream(s.getBytes()));
-      assertTrue(r != null);
-      assertEquals(s, new String(r));
-    } catch (final IOException e) {
-      fail("IO: " + e.getMessage());
-    }
-  }
-
-
-  public void testReadDataZeroLength() {
-    try {
-      final byte[] r = IOUtils.readData(new ByteArrayInputStream(new byte[0]));
-      assertTrue(r != null);
-      assertEquals(0, r.length);
-    } catch (final IOException e) {
-      fail("IO: " + e.getMessage());
-    }
-  }
-
-
-  public void testReadDataViaURL() throws IOException {
-    final File f = File.createTempFile("junit", "test");
-    f.deleteOnExit();
-    try {
-      try (FileOutputStream os = new FileOutputStream(f)) {
-        os.write('0');
-      }
-      final byte[] r = IOUtils.readData(f.toURI().toURL());
-      assertTrue(r != null);
-      assertEquals("0", new String(r));
-      assertEquals("0", IOUtils.readAll(f.toURI().toURL()));
-    } finally {
-      assertTrue(f.delete());
-    }
-  }
-
   public void testDecodeEncodeUTF8() {
     final String a = "some text with % and // and $? characters";
     assertEquals(a, IOUtils.decodeUTF8(IOUtils.encodeUTF8(a)));
-  }
-
-  public void testGetURLFile() throws Exception {
-    final String name = "asdf%5CStu2.xml";
-    final File f = new File(name).getCanonicalFile();
-    final URL url = IOUtils.getURL(f);
-    final File f2 = new File(url.toURI());
-    if (!f.equals(f2)) {
-      System.out.println("Fails on 1.6beta JVM (regression bug with 1.5)");
-    }
-    //    assertEquals("Fails on 1.6beta JVM (regression bug with 1.5)", f, f2);
-  }
-
-
-  public void testGetURL() throws Exception {
-    final File f = File.createTempFile("junit", "test");
-    f.deleteOnExit();
-    final URL url = IOUtils.getURLFromAny(f.toString());
-    assertEquals(f.toURI().toURL().toString(), url.toString());
-    assertTrue(f.delete());
-
-    URL url2 = IOUtils.getURLFromAny(url.toString());
-    assertEquals(url, url2);
-
-    url2 = IOUtils.getURL(url.toString());
-    assertEquals(url, url2);
-
-    url2 = IOUtils.getURL(null, url.toString());
-    assertEquals(url, url2);
-
-    url2 = IOUtils.getURL(f.toURI());
-    assertEquals(url, url2);
-  }
-
-  public void testRegisteredJavaProtocol() throws Exception {
-    final URL u = IOUtils.getURL("java:irvine/util/io/IOUtilsTest.class");
-    assertNotNull(u);
-    assertEquals("irvine/util/io/IOUtilsTest.class", u.getPath());
-    assertEquals("java", u.getProtocol());
-  }
-
-  public void testHandlersEnabled() {
-    final CustomURLStreamHandlerFactory handler = CustomURLStreamHandlerFactory.getInstance();
-    assertNotNull(handler.createURLStreamHandler("java"));
-    assertNull(handler.createURLStreamHandler("fart"));
-  }
-
-  public void testMalformed() {
-    try {
-      IOUtils.getURL(null, ":::");
-      fail();
-    } catch (final MalformedURLException e) {
-      assertEquals("Malformed URI: :::", e.getMessage());
-    }
   }
 
   public void testGetExtension() {

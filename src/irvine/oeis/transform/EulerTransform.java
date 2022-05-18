@@ -97,11 +97,11 @@ public class EulerTransform implements Sequence {
     mPreTerms = preTerms.isEmpty() ? new Z[0] : ZUtils.toZ(preTerms);
     switch (seqType) {
       case 0: // generic
-        final String aseqno = terms;
       /*
+        final String aseqno = terms;
         try {
           mSeq = (Sequence) Class.forName("irvine.oeis." 
-              + aseqno.substring(0, 4).toLowerCase() + "." + aseqno).newInstance();
+              + aseqno.substring(0, 4).toLowerCase() + "." + aseqno).getDeclaredConstructor().newInstance();
         } catch (Exception exc) {
           throw exc;
         }

@@ -5,6 +5,7 @@ import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
 
 import org.apfloat.ApfloatRuntimeException;
@@ -41,8 +42,8 @@ public final class SequenceFactory {
         canonicalId = seqId;
       }
       try {
-        return (Sequence) Class.forName("irvine.oeis.a" + canonicalId.substring(1, 4) + '.' + canonicalId).newInstance();
-      } catch (final ClassNotFoundException | IllegalAccessException | InstantiationException e) {
+        return (Sequence) Class.forName("irvine.oeis.a" + canonicalId.substring(1, 4) + '.' + canonicalId).getDeclaredConstructor().newInstance();
+      } catch (final ClassNotFoundException | IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
         throw new UnsupportedOperationException("Sequence not found", e);
       }
     }

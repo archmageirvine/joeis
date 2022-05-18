@@ -12,19 +12,12 @@ import java.io.OutputStream;
 import java.io.Reader;
 import java.io.StringWriter;
 import java.io.UnsupportedEncodingException;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
-import java.net.URLStreamHandler;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
-import java.util.Properties;
 import java.util.zip.GZIPInputStream;
-
-import irvine.util.io.java.Handler;
 
 /**
  * Various convenience methods related to I/O.
@@ -158,26 +151,6 @@ public final class IOUtils {
     return str.toString();
   }
 
-  /** The property prefix used to define the set of URL handlers we will try to install. */
-  public static final String PROP_HANDLERS = "irvine.util.handler";
-
-  /** The property name for specifying protocol handler package path */
-  private static final String URL_HANDLER_PROPERTY = "java.protocol.handler.pkgs";
-
-  /** True once URL handlers have been enabled */
-  private static boolean sHandlersEnabled = false;
-
-  /**
-   * If true, try to register our handlers via the property method,
-   * otherwise via the custom URL stream handler factory.
-   * <code>enableURLHandlers</code> depends on this being true initially.
-   */
-  private static boolean sRegisterViaProperty = true;
-
-  static {
-    enableURLHandlers();
-  }
-
   /**
    * Performs URL decoding. Do this if your URL contains plenty of
    * percent characters :-).
@@ -192,7 +165,6 @@ public final class IOUtils {
       throw new RuntimeException(uee);
     }
   }
-
 
   /**
    * Performs URL encoding. Do this if your URL contains illegal
@@ -212,223 +184,6 @@ public final class IOUtils {
 
 
   /**
-   * Creates a URL using our customized URL protocol handlers.
-   *
-   * @param file a <code>File</code>.
-   * @return the <code>URL</code>.
-   * @exception MalformedURLException if a URL could not be constructed.
-   */
-  public static URL getURL(final File file) throws MalformedURLException {
-    return getURL(file.toURI());
-  }
-
-
-  /**
-   * Creates a URL from a String argument that could be either a URL
-   * specification or a simple filename. Usually this method is just
-   * used from <code>main()</code> for argument handling.
-   *
-   * @param spec a <code>String</code> specifying either a
-   * <code>URL</code> or a filename.
-   * @return the <code>URL</code>.
-   * @exception MalformedURLException if a URL could not be constructed.
-   */
-  public static URL getURLFromAny(final String spec) throws MalformedURLException {
-    final File maybeFile = new File(spec);
-    return (maybeFile.isFile() || maybeFile.isDirectory()) ? getURL(maybeFile) : getURL(spec);
-  }
-
-
-  /**
-   * Creates a URL using our customized URL protocol handlers.
-   *
-   * @param spec a <code>String</code> specifying the
-   * <code>URL</code>.
-   * @return the <code>URL</code>.
-   * @exception MalformedURLException if a URL could not be constructed.
-   */
-  public static URL getURL(final String spec) throws MalformedURLException {
-    return getURL(null, spec);
-  }
-
-
-  /**
-   * Creates a URL using our customized URL protocol handlers.
-   *
-   * @param context a <code>URL</code> used as a context to resolve
-   * relative <code>URL</code>s.
-   * @param spec a <code>String</code> specifying the
-   * <code>URL</code>.
-   * @return the <code>URL</code>.
-   * @exception MalformedURLException if a URL could not be constructed.
-   */
-  public static URL getURL(final URL context, final String spec) throws MalformedURLException {
-    try {
-      return getURL(context, new URI(spec));
-    } catch (final URISyntaxException use) {
-      throw new MalformedURLException("Malformed URI: " + spec);
-    }
-  }
-
-
-  /**
-   * Creates a URL using our customized URL protocol handlers.
-   *
-   * @param uri a <code>URI</code> specifying the <code>URL</code>.
-   * @return the <code>URL</code>.
-   * @exception MalformedURLException if a URL could not be constructed.
-   */
-  public static URL getURL(final URI uri) throws MalformedURLException {
-    return getURL(null, uri);
-  }
-
-
-  /**
-   * Creates a URL using our customized URL protocol handlers.
-   *
-   * @param context a <code>URL</code> used as a context to resolve
-   * relative <code>URL</code>s.
-   * @param uri a <code>URI</code> specifying the <code>URL</code>.
-   * @return the <code>URL</code>.
-   * @exception MalformedURLException if a URL could not be constructed.
-   */
-  public static URL getURL(final URL context, final URI uri) throws MalformedURLException {
-    final String scheme = uri.getScheme();
-    final URLStreamHandler handler = CustomURLStreamHandlerFactory.getInstance().createURLStreamHandler(scheme);
-    if (handler != null) {
-      return new URL(context, uri.toString(), handler);
-    } else {
-      return new URL(context, uri.toString());
-    }
-  }
-
-  /**
-   * Enable any custom URL handlers we have implemented. This method
-   * registers a set of custom URL protocols so they are available to
-   * the <code>getURL</code> methods in this class. In addition, it attempts to
-   * register the protocols with the JVM built-in URL protocol
-   * resolver. This last step is not guaranteed to succeed,
-   * particularly when running in a controlled environment, such as a
-   * servlet container. In this case, the protocols will not be
-   * available for URLs created by other code.
-   */
-  public static synchronized void enableURLHandlers() {
-    if (!sHandlersEnabled) {
-      sHandlersEnabled = true;
-
-      // Try to add our java handlers via package
-      registerURLHandler(Handler.class);
-
-      try {
-        new URL("java:/test/url");
-      } catch (final MalformedURLException me) {
-        sRegisterViaProperty = false;
-        final CustomURLStreamHandlerFactory cf = CustomURLStreamHandlerFactory.getInstance();
-        try {
-          URL.setURLStreamHandlerFactory(cf);
-        } catch (final Throwable t) {
-          // That didn't work either
-        }
-      }
-    }
-  }
-
-
-  /**
-   * Registers a URL handler class for a URL protocol.
-   *
-   * @param handlerClassName the name of a URLStreamHandler class. The
-   * final package name must be the name of the protocol that the
-   * handler will be registered for.
-   */
-  public static synchronized void registerURLHandler(final String handlerClassName) {
-    Class<? extends URLStreamHandler> c = null;
-    try {
-      c = Class.forName(handlerClassName).asSubclass(URLStreamHandler.class);
-    } catch (final Throwable t) {
-    }
-    if (c != null) {
-      registerURLHandler(c);
-    }
-  }
-
-
-  /**
-   * Registers a URL handler class for a URL protocol.
-   *
-   * @param handlerClass a URLStreamHandler class. The final package
-   * name must be the name of the protocol that the handler will be
-   * registered for.
-   */
-  public static synchronized void registerURLHandler(final Class<? extends URLStreamHandler> handlerClass) {
-    enableURLHandlers();
-    if (handlerClass == null) {
-      throw new NullPointerException();
-    }
-    final String handlerName = handlerClass.getName();
-    if (!handlerName.endsWith("Handler")) {
-      throw new IllegalArgumentException("Handler class must be called Handler");
-    }
-
-    final String handlerPackage;
-    // Used to determine package name through the getPackage() method, but
-    // this may fail for a custom class loader; therefore provide an alternative
-    // string based method
-    int lastDot = handlerName.lastIndexOf('.');
-    if (lastDot <= 0) {
-      throw new IllegalArgumentException("Problem getting package name.");
-    }
-    handlerPackage = handlerName.substring(0, lastDot);
-
-    lastDot = handlerPackage.lastIndexOf('.');
-    if (lastDot <= 0) {
-      throw new IllegalArgumentException("Not enough package name to determine protocol name.");
-    }
-
-    final String protocol = handlerPackage.substring(lastDot + 1);
-    final String packagePath = handlerPackage.substring(0, lastDot);
-
-    if (sRegisterViaProperty) {
-      registerViaProperty(packagePath);
-    }
-    // Always register with our factory as well, so that getURL
-    // methods in this class function.
-    registerViaFactory(protocol, handlerClass);
-  }
-
-
-  /**
-   * Registers a package as containing URL protocol handlers as
-   * subpackages. This method works by editing a system property:
-   * java.protocol.handler.pkgs.
-   *
-   * @param packageName the package name to register.
-   */
-  private static void registerViaProperty(final String packageName) {
-    final Properties p = System.getProperties();
-    String s = (String) p.get(URL_HANDLER_PROPERTY);
-    if (s == null) {
-      s = packageName;
-      p.put(URL_HANDLER_PROPERTY, s);
-    } else if (!s.contains(packageName)) {
-      s = s + "|" + packageName;
-      p.put(URL_HANDLER_PROPERTY, s);
-    }
-  }
-
-
-  /**
-   * Registers a URL protocol handler by adding it to our custom URL
-   * stream handler factory.
-   *
-   * @param protocol the name of the protocol to register.
-   * @param handlerClass the handler class to handle the protocol.
-   */
-  private static void registerViaFactory(final String protocol, final Class<? extends URLStreamHandler> handlerClass) {
-    CustomURLStreamHandlerFactory.getInstance().registerHandler(protocol, handlerClass);
-  }
-
-  /**
    * A method which writes a diagnostic on standard error if a delete
    * operation fails.  This should only be used when the delete is not
    * critical to correct operation.
@@ -439,19 +194,6 @@ public final class IOUtils {
     if (d != null && !d.delete()) {
       System.err.println("Failed to delete: " + d.getPath());
     }
-  }
-
-  /**
-   * Get an already decompressed input steam.  Works with both compressed
-   * and uncompressed files.
-   * @param file file name
-   * @return decompressed file stream
-   * @exception IOException if an I/O error occurs
-   */
-  @SuppressWarnings("resource")
-  public static InputStream decompressedStream(final File file) throws IOException {
-    final FileInputStream fis = new FileInputStream(file);
-    return file.getName().endsWith(".gz") ? new GZIPInputStream(fis) : fis;
   }
 
   /**

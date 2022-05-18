@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a013.A013959;
 
 /**
- * A013959 a(n) = sigma_11(n), the sum of the 11th powers of the divisors of n.
+ * A282548 Expansion of phi_{12, 1}(x) where phi_{r, s}(x) = Sum_{n, m&gt;0} m^r * n^s * x^{m*n}.
  * @author Sean A. Irvine
  */
 public class A282548 extends A013959 {

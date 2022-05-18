@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a144.A144150;
 
 /**
- * A261280 Number of ways to start with set {1, 2,...,n} and then repeat n times: partition each set into subsets.
+ * A261280 Number of ways to start with set {1,2,...,n} and then repeat n times: partition each set into subsets.
  * @author Georg Fischer
  */
 public class A261280 extends A144150 {

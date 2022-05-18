@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.math.z.Z;
 
 /**
- * A204461 Number of n-element subsets that can be chosen from {1, 2,..., 5*n} having element sum n*(5*n+1)/2.
+ * A204461 Number of n-element subsets that can be chosen from {1,2,...,5*n} having element sum n*(5*n+1)/2.
  * @author Georg Fischer
  */
 public class A204461 extends A204459 {

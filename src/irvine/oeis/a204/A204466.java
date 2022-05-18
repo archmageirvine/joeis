@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.math.z.Z;
 
 /**
- * A204466 Number of 2*n-element subsets that can be chosen from {1, 2,..., 20*n} having element sum n*(20*n+1).
+ * A204466 Number of 2*n-element subsets that can be chosen from {1,2,...,20*n} having element sum n*(20*n+1).
  * @author Georg Fischer
  */
 public class A204466 extends A204459 {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000594;
 import irvine.oeis.a029.A029828;
 
 /**
- * A056947.
+ * A056947 Theta series of nonexistent Niemeier lattice of Coxeter number 1.
  * @author Sean A. Irvine
  */
 public class A056947 extends A029828 {

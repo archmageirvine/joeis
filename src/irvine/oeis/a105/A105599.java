@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A105599 Triangle read by rows: T(n, m) = number of forests with n nodes and m labeled trees.
+ * A105599 Triangle read by rows: T(n, m) = number of forests with n nodes and m labeled trees. Also number of forests with exactly n - m edges on n labeled nodes.
  * Also number of forests with exactly n - m edges on n labeled nodes.
  * @author Georg Fischer
  */

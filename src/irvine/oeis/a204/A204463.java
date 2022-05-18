@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.math.z.Z;
 
 /**
- * A204463 Number of n-element subsets that can be chosen from {1, 2,..., 7*n} having element sum n*(7*n+1)/2.
+ * A204463 Number of n-element subsets that can be chosen from {1,2,...,7*n} having element sum n*(7*n+1)/2.
  * @author Georg Fischer
  */
 public class A204463 extends A204459 {

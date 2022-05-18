@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A204459 Square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals: A(n,k) is the number of k-element subsets that can be chosen from {1, 2,...,k*n} having element sum k*(k*n+1)/2.
+ * A204459 Square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals: A(n,k) is the number of k-element subsets that can be chosen from {1,2,...,k*n} having element sum k*(k*n+1)/2.
  * @author Georg Fischer
  */
 public class A204459 extends UpperLeftTriangle {

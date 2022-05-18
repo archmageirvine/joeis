@@ -1834,3 +1834,5 @@ A056934 Antichains (or order ideals) in the poset 2*2*7*n or size of the distrib
 A056935 Antichains (or order ideals) in the poset 2*3*3*n or size of the distributive lattice J(2*3*3*n)
 A056936 Antichains (or order ideals) in the poset 2*3*4*n or size of the distributive lattice J(2*3*4*n)
 A056937 Number of antichains (or order ideals) in the poset 3*3*3*n or size of the distributive lattice J(3*3*3*n)
+A056945 Jacobi form of weight 12 and index 1 associated to a (nonexistent) lattice vector of norm 2 for the Leech lattice
+A056946 Coefficients of J(0)*theta_3(z) where J(0) is sequence A056945.

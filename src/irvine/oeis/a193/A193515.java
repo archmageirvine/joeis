@@ -10,7 +10,7 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A193515 extends UpperLeftTriangle {
 
-  private int mDim;
+  private final int mDim;
 
   /** Construct the sequence. */
   public A193515() {
@@ -18,7 +18,7 @@ public class A193515 extends UpperLeftTriangle {
   }
 
   /**
-   * Generic cosntructor with parameter.
+   * Generic constructor with parameter.
    * @param dim row dimension of tiles
    */
   public A193515(final int dim) {

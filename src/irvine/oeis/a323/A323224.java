@@ -21,7 +21,7 @@ public class A323224 extends UpperLeftTriangle {
     elif n = k then 1 else B(n-1, k) + B(n, k-1) fi end:
     A := (n, k) -> B(n + k, k): seq(lprint(seq(A(n, k), k=0..9)), n=0..9);
   */
-  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mB = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer k) {
       if (n <= 0 || k < 0) {

@@ -2,7 +2,7 @@ package irvine.oeis.a031;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
@@ -31,7 +31,7 @@ public class A031122 implements Sequence {
   public Z next() {
     while (true) {
       final Z fn = mFibo.a(++mN);
-      for (final Z dd : Cheetah.factor(mN).divisors()) {
+      for (final Z dd : Jaguar.factor(mN).divisors()) {
         final int d = dd.intValue();
         final Z r = fn.divide(mFibo.get(d));
         if (!mDone.contains(r)) {

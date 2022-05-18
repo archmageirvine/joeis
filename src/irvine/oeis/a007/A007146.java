@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.CycleIndex;
@@ -35,7 +35,7 @@ public class A007146 implements Sequence {
   // Eqn (4.12)
   private Q v(final Polynomial<Q> u, final int n) {
     Q sum = Q.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(u.coeff(d).multiply(Mobius.mobius(n / d))); // differs from paper!
     }

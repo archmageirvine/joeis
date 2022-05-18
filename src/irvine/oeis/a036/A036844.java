@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -15,7 +15,7 @@ public class A036844 implements Sequence {
 
   protected long sumOfPrimeFactors(final long n) {
     long sum = 0;
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
       sum += p.longValue() * fs.getExponent(p);
     }

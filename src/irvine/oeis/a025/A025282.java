@@ -1,6 +1,6 @@
 package irvine.oeis.a025;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
@@ -41,7 +41,7 @@ public class A025282 implements Sequence {
           }
         }
         // Deal with multiplication
-        for (final Z dd : Cheetah.factor(mM).divisors()) {
+        for (final Z dd : Jaguar.factor(mM).divisors()) {
           final long d = dd.longValue();
           if (d != 1 && d <= mM / d) {
             final long c = mComplexity.get(d) + mComplexity.get(mM / d);

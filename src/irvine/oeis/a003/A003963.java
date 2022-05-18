@@ -2,7 +2,7 @@ package irvine.oeis.a003;
 
 import java.util.HashMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -32,7 +32,7 @@ public class A003963 implements Sequence {
     if (++mN == 1) {
       return Z.ONE;
     }
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
       prod = prod.multiply(pi(p).pow(fs.getExponent(p)));

@@ -2,7 +2,7 @@ package irvine.oeis.a043;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -15,7 +15,6 @@ import irvine.oeis.a000.A000959;
  */
 public class A043754 implements Sequence {
 
-  private final Cheetah mFactor = new Cheetah();
   private final MemorySequence mLuckySeq = MemorySequence.cachedSequence(new A000959());
   private final TreeSet<Z> mLucky = new TreeSet<>();
   {
@@ -26,7 +25,7 @@ public class A043754 implements Sequence {
   protected boolean isLuckyDivisible(final Z t, final int m) {
     final FactorSequence fs = new FactorSequence();
     fs.add(t, FactorSequence.UNKNOWN, m);
-    mFactor.factor(fs);
+    Jaguar.factor(fs);
     for (final Z d : fs.divisors()) {
       while (mLucky.last().compareTo(d) < 0) {
         mLucky.add(mLuckySeq.next());

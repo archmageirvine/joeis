@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -11,7 +11,6 @@ import irvine.oeis.Sequence;
  */
 public class A003458 implements Sequence {
 
-  private final Cheetah mFactor = new Cheetah();
   private long mN = 0;
 
   private Z lprFactoredBinomial(final long n, long m) {
@@ -23,19 +22,13 @@ public class A003458 implements Sequence {
     for (long k = m + 1; k <= n; ++k) {
       num.add(k, FactorSequence.UNKNOWN);
     }
-    mFactor.factor(num);
-    if (!num.isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    Jaguar.factor(num);
     m = n - m;
     final FactorSequence den = new FactorSequence();
     while (m > 1) {
       den.add(m--, FactorSequence.UNKNOWN);
     }
-    mFactor.factor(den);
-    if (!den.isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    Jaguar.factor(den);
     for (final Z p : num.toZArray()) {
       final int pe = num.getExponent(p);
       final int de = den.getExponent(p);

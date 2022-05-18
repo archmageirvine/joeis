@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -15,7 +15,7 @@ public class A048839 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final Z[] p = Cheetah.factor(++mN).toZArray();
+      final Z[] p = Jaguar.factor(++mN).toZArray();
       final long m = p[p.length - 1].longValue();
       if (m == mN) {
         return Z.valueOf(mN); // must have been prime

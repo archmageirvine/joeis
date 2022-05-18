@@ -17,7 +17,7 @@ public class A247951 implements Sequence {
     ++mN;
     Z prod = Z.ONE;
     for (int i = 1; i <= mN; ++i) {
-      prod = prod.multiply(irvine.factor.factor.Cheetah.factor(i).sigma2());
+      prod = prod.multiply(irvine.factor.factor.Jaguar.factor(i).sigma2());
     }
     return prod;
   }

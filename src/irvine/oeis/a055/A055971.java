@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
@@ -16,7 +16,7 @@ public class A055971 extends A018252 {
     while (true) {
       final Z n = super.next();
       if (n.isOdd() || !n.divide2().isProbablePrime()) {
-        final FactorSequence fs = Cheetah.factor(n);
+        final FactorSequence fs = Jaguar.factor(n);
         if (fs.sigma().subtract(fs.sigma0()).subtract(fs.phi()).mod(n).isZero()) {
           return n;
         }

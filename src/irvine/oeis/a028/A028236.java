@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -20,7 +20,7 @@ public class A028236 implements Sequence {
       return Z.ONE;
     }
     Q sum = Q.ZERO;
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     for (final Z p : fs.toZArray()) {
       sum = sum.add(new Q(Z.ONE, p.pow(fs.getExponent(p))));
     }

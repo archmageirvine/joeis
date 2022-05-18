@@ -1,6 +1,6 @@
 package irvine.oeis.a004;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -18,7 +18,7 @@ public class A004611 implements Sequence {
       mN = mN.add(1);
       if (mN.mod(3) != 0) { // Efficiency, avoids entire factorization
         boolean ok = true;
-        for (final Z p : Cheetah.factor(mN).toZArray()) {
+        for (final Z p : Jaguar.factor(mN).toZArray()) {
           if (p.mod(3) != 1) {
             ok = false;
             break;

@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
@@ -43,7 +43,7 @@ public class A007474 extends MemoryFunction2<Long, Z> implements Sequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(2 * mN).divisors()) {
+    for (final Z dd : Jaguar.factor(2 * mN).divisors()) {
       final long d = dd.longValue();
       sum = sum.add(get(2 * mN / d, d).subtract(get(2 * mN / d  - 2, d)).multiply(LongUtils.phi(d)));
     }

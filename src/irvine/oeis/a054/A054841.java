@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -20,7 +20,7 @@ public class A054841 implements Sequence {
     if (++mN == 1) {
       return Z.ZERO;
     }
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     final Z[] q = fs.toZArray();
     final Z max = q[q.length - 1];
     Z sum = Z.ZERO;

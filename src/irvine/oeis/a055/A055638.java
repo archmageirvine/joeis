@@ -1,7 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
-import irvine.factor.factor.Factorizer;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -13,7 +12,6 @@ import irvine.oeis.Sequence;
 public class A055638 implements Sequence {
 
   private Z mN = Z.ONE;
-  private final Factorizer mFactor = new Cheetah();
 
   @Override
   public Z next() {
@@ -21,7 +19,7 @@ public class A055638 implements Sequence {
       mN = mN.add(1);
       final FactorSequence fs = new FactorSequence();
       fs.add(mN, FactorSequence.UNKNOWN, 2);
-      mFactor.factor(fs);
+      Jaguar.factor(fs);
       if (fs.sigma().isProbablePrime()) {
         return mN;
       }

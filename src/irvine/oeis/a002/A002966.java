@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000058;
@@ -102,7 +102,7 @@ public class A002966 extends A000058 {
     for (int toCheck = (int) ((denum * n) / num); toCheck >= start; --toCheck) {
       final long top = num * toCheck - denum;
       final long bot = toCheck * denum;
-      final FactorSequence fs = Cheetah.factor(toCheck);
+      final FactorSequence fs = Jaguar.factor(toCheck);
       for (final Z p : fs.toZArray()) {
         mSoFar.add(p.intValueExact(), fs.getExponent(p));
       }

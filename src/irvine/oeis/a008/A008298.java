@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRing;
@@ -27,7 +27,7 @@ public class A008298 extends MemoryFunction1<Polynomial<Z>> implements Sequence 
     }
     Polynomial<Z> sum = RING.zero();
     for (int k = 1; k <= n; ++k) {
-      sum = RING.add(sum, RING.multiply(get(n - k).shift(1), mF.factorial(n - 1).divide(mF.factorial(n - k)).multiply(Cheetah.factor(k).sigma())));
+      sum = RING.add(sum, RING.multiply(get(n - k).shift(1), mF.factorial(n - 1).divide(mF.factorial(n - k)).multiply(Jaguar.factor(k).sigma())));
     }
     return sum;
   }

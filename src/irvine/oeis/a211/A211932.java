@@ -20,7 +20,7 @@ public class A211932 implements Sequence {
     for (int k = 1; k <= mN; ++k) {
       final long gd = LongUtils.gcd(mN, k);
       if (gd > 1) {
-        sum = sum.add(irvine.factor.factor.Cheetah.factor(k).sigma0());
+        sum = sum.add(irvine.factor.factor.Jaguar.factor(k).sigma0());
       }
     }
     return sum;

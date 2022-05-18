@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -18,7 +18,7 @@ public class A052021 implements Sequence {
     while (true) {
       final long sum = ZUtils.digitSum(++mN);
       if (mN % sum == 0) {
-        final Z[] p = Cheetah.factor(mN).toZArray();
+        final Z[] p = Jaguar.factor(mN).toZArray();
         if (p[p.length - 1].equals(Z.valueOf(sum))) {
           return Z.valueOf(mN);
         }

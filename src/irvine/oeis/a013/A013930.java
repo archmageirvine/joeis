@@ -1,6 +1,6 @@
 package irvine.oeis.a013;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -21,7 +21,7 @@ public class A013930 implements Sequence {
       if (LongUtils.isSquareFree(++mN)) {
         ++mM;
         mSum = mSum.add(mN);
-        if (Cheetah.factor(mSum).isSquareFree()) {
+        if (Jaguar.factor(mSum).isSquareFree()) {
           return Z.valueOf(mM);
         }
       }

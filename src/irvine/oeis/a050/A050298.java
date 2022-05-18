@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -25,7 +25,7 @@ public class A050298 extends MemoryFunction2<Integer, Z> implements Sequence {
     Z k = get(n - 1, m);
     while (true) {
       k = k.add(1);
-      if (Cheetah.factor(k.add(1)).bigOmega() == m) {
+      if (Jaguar.factor(k.add(1)).bigOmega() == m) {
         return k;
       }
     }

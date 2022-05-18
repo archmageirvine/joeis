@@ -1,6 +1,6 @@
 package irvine.oeis.a303;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
@@ -21,7 +21,7 @@ public class A303912 implements Sequence {
     }
     Z sum = Z.ONE;
     final Z zn = Z.valueOf(n);
-    for (final Z d : Cheetah.factor(n).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       sum = sum.add(Euler.phi(zn.divide(d)).multiply(Binomial.binomial(d.multiply(k), d)));
     }
     sum = sum.divide(n);

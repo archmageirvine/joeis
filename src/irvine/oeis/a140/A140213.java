@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,7 +16,7 @@ public class A140213 implements Sequence {
   public Z next() {
     ++mN;
     Z prod = Z.ONE;
-    for (final Z dd : Cheetah.factor(mN).divisors()) {
+    for (final Z dd : Jaguar.factor(mN).divisors()) {
       final int d = dd.intValue();
       if (d % 6 == 1) {
         prod = prod.multiply(Z.valueOf(d));

@@ -2,7 +2,7 @@ package irvine.oeis.a006;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.Sequence;
@@ -35,7 +35,7 @@ public class A006167 extends EulerTransformSequence {
       public Z next() {
         mN = mN.add(1);
         Z sum = Z.ZERO;
-        for (final Z dd : Cheetah.factor(mN).divisors()) {
+        for (final Z dd : Jaguar.factor(mN).divisors()) {
           final int d = dd.intValue();
           if (getA(d).compareTo(mN.divide(dd)) >= 0) {
             sum = sum.add(1);

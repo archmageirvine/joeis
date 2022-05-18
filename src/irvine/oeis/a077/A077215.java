@@ -1,6 +1,6 @@
 package irvine.oeis.a077;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -16,10 +16,10 @@ public class A077215 implements Sequence {
   private long mP = 1;
 
   private FactorSequence composite() {
-    final FactorSequence fs = Cheetah.factor(1);
+    final FactorSequence fs = new FactorSequence();
     final long next = mPrime.nextPrime(mP);
     for (long k = mP + 1; k < next; ++k) {
-      final FactorSequence w = Cheetah.factor(k);
+      final FactorSequence w = Jaguar.factor(k);
       for (final Z z : w.toZArray()) {
         fs.add(z, w.getStatus(z), w.getExponent(z));
       }

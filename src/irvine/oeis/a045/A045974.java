@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -35,7 +35,7 @@ public class A045974 implements Sequence {
   public Z next() {
     ++mN;
     Z prod = Z.ONE;
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       final int i = inverseP(p);

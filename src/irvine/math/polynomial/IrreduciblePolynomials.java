@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
-import irvine.math.z.Z;
 import irvine.math.Mobius;
+import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
 
 /**
@@ -21,7 +21,6 @@ public final class IrreduciblePolynomials {
 
   /**
    * Number of irreducible polynomials of given degree.
-   *
    * @param n degree
    * @return number of irreducible polynomials
    */
@@ -30,7 +29,7 @@ public final class IrreduciblePolynomials {
       return Z.ZERO;
     }
     Z s = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       final int m = Mobius.mobius(n / d);
       if (m == 1) {
@@ -210,7 +209,7 @@ public final class IrreduciblePolynomials {
    */
   public static int exponent(final Polynomial<Z> poly) {
     final long pi = makeLong(poly);
-    final Z[] possibleExponents = Cheetah.factor(Z.ONE.shiftLeft(degree(pi)).subtract(1)).divisors();
+    final Z[] possibleExponents = Jaguar.factor(Z.ONE.shiftLeft(degree(pi)).subtract(1)).divisors();
     Arrays.sort(possibleExponents);
     //System.out.println(Arrays.toString(possibleExponents) +  " poly=" + poly +  " deg=" + degree(pi));
     for (final Z exp : possibleExponents) {

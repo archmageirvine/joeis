@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
@@ -17,7 +17,7 @@ public class A028980 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (StringUtils.isPalindrome(Cheetah.factor(mN).sigma().toString())) {
+      if (StringUtils.isPalindrome(Jaguar.factor(mN).sigma().toString())) {
         return mN;
       }
     }

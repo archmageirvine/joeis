@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -18,7 +18,7 @@ public class A055977 implements Sequence {
     while (true) {
       final Z pn = IntegerPartition.partitions(++mN);
       Z prod = Z.ONE;
-      for (final Z p : Cheetah.factor(mN).toZArray()) {
+      for (final Z p : Jaguar.factor(mN).toZArray()) {
         prod = prod.multiply(IntegerPartition.partitions(p.intValue()));
       }
       if (pn.mod(prod).isZero()) {

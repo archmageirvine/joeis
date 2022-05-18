@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
@@ -31,7 +31,7 @@ public class A045869 implements Sequence {
   public Z next() {
     while (true) {
       final int[] cnt = new int[base()];
-      for (final Z d : Cheetah.factor(++mN).divisors()) {
+      for (final Z d : Jaguar.factor(++mN).divisors()) {
         final int[] c = ZUtils.digitCounts(d, base());
         for (int k = 0; k < c.length; ++k) {
           cnt[k] += c[k];

@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
@@ -22,7 +22,7 @@ public class A027413 implements Sequence {
     if (mPrime.isPrime(++mN)) {
       return mN <= 2 ? Z.ZERO : mPrevPhi;
     } else {
-      final FactorSequence fs = Cheetah.factor(mN);
+      final FactorSequence fs = Jaguar.factor(mN);
       mPrevPhi = fs.phi();
       long prod = 1;
       final long[] pp = new long[fs.omega()];

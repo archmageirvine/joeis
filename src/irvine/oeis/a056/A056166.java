@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -16,7 +16,7 @@ public class A056166 implements Sequence {
   private long mN = 0;
 
   private boolean is(final long n) {
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
       if (!mPrime.isPrime(fs.getExponent(p))) {
         return false;

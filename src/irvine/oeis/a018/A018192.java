@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
@@ -125,7 +125,7 @@ public class A018192 extends A081054 {
     ++mN;
     Z sum = Z.ZERO;
     final int n2 = 2 * mN;
-    for (final Z dd : Cheetah.factor(n2).divisors()) {
+    for (final Z dd : Jaguar.factor(n2).divisors()) {
       final int d = dd.intValue();
       final int c = n2 / d;
       sum = sum.add(gammaTilde(d, c).multiply(LongUtils.phi(c)));

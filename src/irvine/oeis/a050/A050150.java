@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,7 +16,7 @@ public class A050150 implements Sequence {
   public Z next() {
     while (true) {
       mN += 2;
-      if (Cheetah.factor(mN).sigma0().isProbablePrime()) {
+      if (Jaguar.factor(mN).sigma0().isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

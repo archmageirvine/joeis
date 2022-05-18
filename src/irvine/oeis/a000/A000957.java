@@ -16,7 +16,7 @@ public class A000957 extends A000108 {
       mA = Z.NEG_ONE;
       return Z.ZERO;
     }
-    if (mA == Z.NEG_ONE) {
+    if (Z.NEG_ONE.equals(mA)) {
       mA = super.next();
       return Z.ONE;
     }

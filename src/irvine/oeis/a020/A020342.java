@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -66,7 +66,7 @@ public class A020342 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final int[] syndrome = syndrome(mN);
-      final Z[] d = Cheetah.factor(mN).divisors();
+      final Z[] d = Jaguar.factor(mN).divisors();
       final Z[] proper = new Z[d.length - 2];
       for (int k = 0, j = 0; k < d.length; ++k) {
         if (!mN.equals(d[k]) && !Z.ONE.equals(d[k])) {

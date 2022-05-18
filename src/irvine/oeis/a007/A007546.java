@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -30,7 +30,7 @@ public class A007546 extends MemorySequence {
   }
 
   private Z f(final long n) {
-    final Z[] divisors = Cheetah.factor(n).divisorsSorted();
+    final Z[] divisors = Jaguar.factor(n).divisorsSorted();
     final long b = divisors[divisors.length - 2].longValue();
     Z sum = Z.ZERO;
     for (long d = b; d < n; ++d) {

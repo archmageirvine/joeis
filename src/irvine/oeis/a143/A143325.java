@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
@@ -21,7 +21,7 @@ public class A143325 extends UpperLeftTriangle {
   @Override
   public Z matrixElement(final int n, final int k) {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final long d = dd.longValue();
       sum = sum.add(Z.valueOf(k).pow(d - 1).multiply(Mobius.mobius(n / d)));
     }

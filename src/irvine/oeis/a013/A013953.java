@@ -2,7 +2,7 @@ package irvine.oeis.a013;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -29,7 +29,7 @@ public class A013953 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final FactorSequence fs = Cheetah.factor(mN);
+    final FactorSequence fs = Jaguar.factor(mN);
     mE6.add(fs.sigma(5).multiply(-504));
     final Polynomial<Z> e6z4 = RING.create(mE6).substitutePower(4, mN);
     final Polynomial<Z> del12 = RING.pow(RING.eta(X4, mN), 24, mN);

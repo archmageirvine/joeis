@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -22,7 +22,7 @@ public class A056472 implements Sequence {
   private List<List<Long>> factor(final long n, final long min) {
     final ArrayList<List<Long>> lst = new ArrayList<>();
     lst.add(Collections.singletonList(n));
-    for (final Z dd : Cheetah.factor(n).divisorsSorted()) {
+    for (final Z dd : Jaguar.factor(n).divisorsSorted()) {
       final long d = dd.longValue();
       if (d >= min && d <= LongUtils.sqrt(n)) {
         for (final List<Long> t : factor(n / d, d)) {

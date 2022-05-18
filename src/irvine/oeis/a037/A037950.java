@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
@@ -16,7 +16,7 @@ public class A037950 extends A000040 {
 
   private long sigma(final int n) {
     while (n >= mSigma.length()) {
-      mSigma.set(mSigma.length(), Cheetah.factor(mSigma.length()).sigma().longValueExact());
+      mSigma.set(mSigma.length(), Jaguar.factor(mSigma.length()).sigma().longValueExact());
     }
     return mSigma.get(n);
   }

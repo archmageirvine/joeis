@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002808;
@@ -12,7 +12,7 @@ import irvine.oeis.a002.A002808;
 public class A047820 extends A002808 {
 
   private Z sopf(final Z n) {
-    return ZUtils.sum(Cheetah.factor(n).toZArray());
+    return ZUtils.sum(Jaguar.factor(n).toZArray());
   }
 
   protected int iterations() {

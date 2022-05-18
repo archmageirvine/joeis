@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.group.AbstractGroup;
@@ -653,7 +653,7 @@ public class EllipticCurve extends AbstractGroup<EllipticCurvePoint> {
       throw new UnsupportedOperationException();
     }
     final Z delta = discriminant().toZ();
-    final FactorSequence fs = Cheetah.factor(delta);
+    final FactorSequence fs = Jaguar.factor(delta);
     final FactorSequence squarePart = new FactorSequence();
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);

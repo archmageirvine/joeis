@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -28,10 +28,10 @@ public class A051707 extends MemoryFunction2<Integer, Set<Map<Point, Integer>>> 
     }
     final HashSet<Map<Point, Integer>> factorizations = new HashSet<>();
     factorizations.add(Collections.singletonMap(new Point(n, m), 1));
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       if (d > 1 && d < n) {
-        for (final Z ee : Cheetah.factor(m).divisors()) {
+        for (final Z ee : Jaguar.factor(m).divisors()) {
           final int e = ee.intValue();
           for (final Map<Point, Integer> t : get(n / d, m / e)) {
             final Map<Point, Integer> f = new HashMap<>();

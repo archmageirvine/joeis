@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
@@ -23,7 +23,7 @@ public class A052022 extends A000040 {
     while (true) {
       m = m.add(p); // We require p | m
       if (ZUtils.digitSum(m) == pp) {
-        final Z[] f = Cheetah.factor(m).toZArray();
+        final Z[] f = Jaguar.factor(m).toZArray();
         if (f[f.length - 1].equals(p)) {
           return m;
         }

@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.a050.A050530;
@@ -15,7 +15,7 @@ public class A053343 extends A050530 {
   public Z next() {
     while (true) {
       final Z a = super.next();
-      final FactorSequence fs = Cheetah.factor(a);
+      final FactorSequence fs = Jaguar.factor(a);
       if (fs.omega() == 2 && fs.bigOmega() == 2) {
         return a;
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002808;
@@ -17,7 +17,7 @@ public class A035140 extends A002808 {
       final Z c = super.next();
       final int syn = ZUtils.syn(c);
       int s = 0;
-      for (final Z p : Cheetah.factor(c).toZArray()) {
+      for (final Z p : Jaguar.factor(c).toZArray()) {
         s |= ZUtils.syn(p);
       }
       if ((s | syn) == syn) {

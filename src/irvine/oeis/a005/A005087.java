@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -15,7 +15,7 @@ public class A005087 implements Sequence {
   @Override
   public Z next() {
     final Z t = Z.valueOf(++mN).makeOdd();
-    return Z.ONE.equals(t) ? Z.ZERO : Z.valueOf(Cheetah.factor(t).omega());
+    return Z.ONE.equals(t) ? Z.ZERO : Z.valueOf(Jaguar.factor(t).omega());
   }
 }
 

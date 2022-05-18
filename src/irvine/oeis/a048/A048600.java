@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction2;
 import irvine.math.Mobius;
 import irvine.math.factorial.MemoryFactorial;
@@ -20,7 +20,7 @@ public class A048600 extends MemoryFunction2<Integer, Z> implements Sequence {
   @Override
   protected Z compute(final Integer n, final Integer k) {
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(n).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       final int mobius = Mobius.mobius(n / d.intValueExact());
       if (mobius != 0) {
         Z prod = Z.ONE;

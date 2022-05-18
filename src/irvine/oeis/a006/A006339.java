@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -38,7 +38,7 @@ public class A006339 implements Sequence {
     if (n == 1) {
       res.add(new LinkedList<>());
     } else {
-      for (final Z dd : Cheetah.factor(n).divisors()) {
+      for (final Z dd : Jaguar.factor(n).divisors()) {
         final int d = dd.intValueExact();
         if (d > 1 && d <= limit) {
           for (final LinkedList<Integer> z : factorizations(n / d, d)) {

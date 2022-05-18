@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Euler;
@@ -34,7 +34,7 @@ public class A007769 implements Sequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (final Z q : Cheetah.factor(2L * mN).divisors()) {
+    for (final Z q : Jaguar.factor(2L * mN).divisors()) {
       sum = sum.add(Euler.phi(q).multiply(alpha(2 * mN / q.intValueExact(), q)));
     }
     return sum.divide(2L * mN);

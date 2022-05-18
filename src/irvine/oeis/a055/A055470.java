@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -18,7 +18,7 @@ public class A055470 implements Sequence {
     ++mN;
     long k = 1;
     while (true) {
-      final FactorSequence fs = Cheetah.factor(++k);
+      final FactorSequence fs = Jaguar.factor(++k);
       if (fs.phi().add(fs.sigma()).mod(fs.sigma0().pow(mN)).isZero()) {
         return Z.valueOf(k);
       }

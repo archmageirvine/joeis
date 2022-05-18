@@ -2,7 +2,7 @@ package irvine.oeis.a023;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -29,7 +29,7 @@ public class A023195 implements Sequence {
     }
     while (mA.size() < REORDER_BUFFER) {
       final Z n2 = Z.valueOf(++mN).square();
-      final Z sigma = Cheetah.factor(n2).sigma();
+      final Z sigma = Jaguar.factor(n2).sigma();
       if (sigma.isProbablePrime()) {
         mA.add(sigma);
       }

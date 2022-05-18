@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -12,17 +12,12 @@ import irvine.oeis.Sequence;
 public class A007992 implements Sequence {
 
   private Z mN = Z.valueOf(6159);
-  private final Cheetah mCheetah = new Cheetah();
 
   private Z augmentedAliquot(final Z n) {
     if (n.isProbablePrime()) {
       return Z.ONE;
     }
-    final FactorSequence fs = new FactorSequence(n);
-    mCheetah.factor(fs);
-    if (!fs.isComplete()) {
-      throw new UnsupportedOperationException();
-    }
+    final FactorSequence fs = Jaguar.factor(n);
     return fs.sigma().subtract(n).add(1);
   }
 

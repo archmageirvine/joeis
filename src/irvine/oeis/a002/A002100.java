@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.IntegerUtils;
 import irvine.math.group.IntegerField;
@@ -25,7 +25,7 @@ public class A002100 implements Sequence {
     for (int k = 6; k <= mN; ++k) {
       final int s = IntegerUtils.sqrt(k);
       if (s * s != k) {
-        final int semi = Cheetah.factor(k).isSemiprime();
+        final int semi = Jaguar.factor(k).isSemiprime();
         if (semi == FactorSequence.UNKNOWN) {
           throw new UnsupportedOperationException();
         } else if (semi == FactorSequence.YES) {

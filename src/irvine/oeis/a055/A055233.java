@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
@@ -17,7 +17,7 @@ public class A055233 extends A002808 {
   public Z next() {
     while (true) {
       final Z n = super.next();
-      final Z[] t = Cheetah.factor(n).toZArray();
+      final Z[] t = Jaguar.factor(n).toZArray();
       long sum = 0;
       for (long p = t[0].longValueExact(); p <= t[t.length - 1].longValueExact(); p = mPrime.nextPrime(p)) {
         sum += p;

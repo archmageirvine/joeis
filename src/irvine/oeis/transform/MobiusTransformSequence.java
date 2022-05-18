@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -31,7 +31,7 @@ public class MobiusTransformSequence implements Sequence {
   public static Z mobiusTransform(final List<Z> seq) {
     final int n = seq.size() - 1;
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       final int m = Mobius.mobius(n / d);
       if (m != 0) {
@@ -68,7 +68,7 @@ public class MobiusTransformSequence implements Sequence {
 
   private Z mobiusTransform(final int n) {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       final int m = Mobius.mobius(n / d);
       if (m != 0) {

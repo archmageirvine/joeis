@@ -3,7 +3,7 @@ package irvine.math.group;
 import java.util.Arrays;
 import java.util.HashSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.api.Group;
 import irvine.math.z.Z;
@@ -206,7 +206,7 @@ public final class GroupUtils {
     if (y != null) {
       return y;
     }
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     if (!fs.isComplete()) {
       throw new UnsupportedOperationException();
     }

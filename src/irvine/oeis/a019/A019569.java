@@ -2,7 +2,7 @@ package irvine.oeis.a019;
 
 import java.util.TreeMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -36,7 +36,7 @@ public class A019569 extends MemorySequence {
     if (n <= 2) {
       return Z.valueOf(n - 1);
     }
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     Z sum = Z.ZERO;
     int prevPi = 0;
     for (final Z pp : fs.toZArray()) {

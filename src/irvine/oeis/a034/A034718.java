@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -17,7 +17,7 @@ public class A034718 implements Sequence {
   @Override
   public Z next() {
     Z prod = Z.ONE;
-    final FactorSequence fs = Cheetah.factor(++mN);
+    final FactorSequence fs = Jaguar.factor(++mN);
     for (final Z p : fs.toZArray()) {
       prod = prod.multiply(Binomial.binomial(fs.getExponent(p) + 2, 2));
     }

@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -21,7 +21,7 @@ public class A027364 extends A000594 {
   @Override
   public Z next() {
     mEta24.add(super.next());
-    mS.add(Cheetah.factor(++mN).sigma(3).multiply(240));
+    mS.add(Jaguar.factor(++mN).sigma(3).multiply(240));
     return RING.multiply(mS, mEta24, mN).shift(1).coeff(mN);
   }
 }

@@ -2,7 +2,7 @@ package irvine.oeis.a000;
 
 import java.util.HashSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -14,39 +14,14 @@ import irvine.oeis.Sequence;
 public class A000173 implements Sequence {
 
   private long mN = 0;
-  private final Cheetah mFactor = new Cheetah();
   private final HashSet<Z> mAlreadyReported = new HashSet<>();
   {
     mAlreadyReported.add(Z.ZERO);
   }
 
   private Z unitaryDivisorSum(final Z n) {
-    final FactorSequence fs = new FactorSequence();
-    fs.add(n, FactorSequence.UNKNOWN, 1);
-    mFactor.factor(fs);
+    final FactorSequence fs = Jaguar.factor(n);
     return fs.unitaryDivisorSum();
-    /*
-    if (!fs.isComplete()) {
-      throw new UnsupportedOperationException();
-    }
-    // Construct a nasty factor sequence where we claim all the unitary
-    // prime powers in fs are actually prime.  This isn't true of course
-    // but makes the sigma function do the right thing for computing the
-    // sum of all unitary divisors.
-    final FactorSequence flatten = new FactorSequence();
-    Z t = Z.ONE;
-    for (final Z p : fs.toZArray()) {
-      final int e = fs.getExponent(p);
-      final Z unitary = p.pow(e);
-      flatten.add(unitary, FactorSequence.PRIME);
-      t = t.multiply(unitary);
-    }
-    if (n.equals(t)) {
-      return flatten.sigma().subtract(n);
-    } else {
-      return flatten.sigma();
-    }
-    */
   }
 
 

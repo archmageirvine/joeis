@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -14,7 +14,7 @@ public class A005236 implements Sequence {
 
   private boolean isBarrier(final long n) {
     for (long m = 1; m < n; ++m) {
-      if (m + Cheetah.factor(m).omega() > n) {
+      if (m + Jaguar.factor(m).omega() > n) {
         return false;
       }
     }

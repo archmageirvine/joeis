@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -19,7 +19,7 @@ public class A109361 implements Sequence {
     ++mN;
     Q prod = Q.ONE;
     for (int i = 2; i <= mN; ++i) {
-      final FactorSequence fs = Cheetah.factor(i);
+      final FactorSequence fs = Jaguar.factor(i);
       prod = prod.multiply(fs.sigma()).divide(fs.sigma0());
     }
     return prod.isInteger() ? prod.num() : Z.ZERO;

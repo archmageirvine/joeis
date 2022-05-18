@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -19,7 +19,7 @@ public class A049010 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final FactorSequence fs = Cheetah.factor(++mN);
+      final FactorSequence fs = Jaguar.factor(++mN);
       final Z s0 = fs.sigma0();
       final Z s1 = fs.sigma();
       final boolean ok = new Q(s1, s0).subtract(new Q(mSumSigma1, mSumSigma0)).abs().compareTo(Q.ONE) <= 0;

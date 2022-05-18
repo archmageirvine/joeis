@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.a008.A008284;
@@ -21,7 +21,7 @@ public class A055893 extends A008284 {
       mM = 1;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(LongUtils.gcd(mN, mM)).divisors()) {
+    for (final Z dd : Jaguar.factor(LongUtils.gcd(mN, mM)).divisors()) {
       final long d = dd.longValue();
       sum = sum.add(get(mN / d, mM / d));
     }

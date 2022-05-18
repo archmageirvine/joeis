@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import java.util.Collections;
 import java.util.HashSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -24,8 +24,8 @@ public class A011793 implements Sequence {
     }
     Z sum = Z.ZERO;
     final HashSet<Z> divisors = new HashSet<>();
-    Collections.addAll(divisors, Cheetah.factor(mN - k).divisors());
-    for (final Z d : Cheetah.factor(mN + k).divisors()) {
+    Collections.addAll(divisors, Jaguar.factor(mN - k).divisors());
+    for (final Z d : Jaguar.factor(mN + k).divisors()) {
       if (d.isEven() && divisors.contains(d)) {
         final long dd = d.longValue();
         sum = sum.add(Binomial.binomial((n + k) / dd, (n - k) / dd).multiply(Mobius.mobius(dd / 2)));

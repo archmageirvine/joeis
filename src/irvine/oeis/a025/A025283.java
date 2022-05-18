@@ -1,6 +1,6 @@
 package irvine.oeis.a025;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -18,7 +18,7 @@ public class A025283 extends A002808 {
       final Z c = super.next();
       final String syndrome = ZUtils.syndrome(c);
       final StringBuilder flattened = new StringBuilder();
-      final FactorSequence fs = Cheetah.factor(c);
+      final FactorSequence fs = Jaguar.factor(c);
       for (final Z p : fs.toZArray()) {
         flattened.append(p);
         if (fs.getExponent(p) > 1) {

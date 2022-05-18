@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -19,7 +19,7 @@ public class A014650 implements Sequence {
   @Override
   public Z next() {
     Polynomial<Z> prod = RING.oneMinusXToTheN(1); // handle divisor 1
-    for (final Z p : Cheetah.factor(++mN).toZArray()) {
+    for (final Z p : Jaguar.factor(++mN).toZArray()) {
       if (!Z.ONE.equals(p)) {
         final int q = p.intValueExact();
         int r = q;

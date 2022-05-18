@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a002.A002997;
 import irvine.util.array.DynamicArray;
@@ -19,7 +19,7 @@ public class A006931 extends A002997 {
     ++mN;
     while (mLeast.get(mN) == null) {
       final Z n = super.next();
-      final int o = Cheetah.factor(n).omega();
+      final int o = Jaguar.factor(n).omega();
       if (mLeast.get(o) == null) {
         mLeast.set(o, n);
       }

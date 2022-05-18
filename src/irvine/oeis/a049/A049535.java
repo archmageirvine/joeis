@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,7 +16,7 @@ public class A049535 implements Sequence {
   protected A049535(final int repeats) {
     mIsSquareFree = new boolean[repeats + 2];
     for (int k = 0; k < mIsSquareFree.length; ++k) {
-      mIsSquareFree[k] = Cheetah.factor(++mN).isSquareFree();
+      mIsSquareFree[k] = Jaguar.factor(++mN).isSquareFree();
     }
   }
 
@@ -41,7 +41,7 @@ public class A049535 implements Sequence {
   public Z next() {
     do {
       System.arraycopy(mIsSquareFree, 1, mIsSquareFree, 0, mIsSquareFree.length - 1);
-      mIsSquareFree[mIsSquareFree.length - 1] = Cheetah.factor(++mN).isSquareFree();
+      mIsSquareFree[mIsSquareFree.length - 1] = Jaguar.factor(++mN).isSquareFree();
     } while (!isExact());
     return Z.valueOf(mN - mIsSquareFree.length + 2);
   }

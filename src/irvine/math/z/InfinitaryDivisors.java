@@ -1,6 +1,6 @@
 package irvine.math.z;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.factor.util.InfinitaryAliquotSequence;
 
@@ -19,7 +19,7 @@ public final class InfinitaryDivisors {
    */
   public static Z infinitarySigma(final Z n) {
     Z sum = Z.ZERO;
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     for (final Z d : InfinitaryAliquotSequence.infinitaryDivisors(fs)) {
       sum = sum.add(d);
     }
@@ -32,7 +32,7 @@ public final class InfinitaryDivisors {
    * @return number of infinitary divisors
    */
   public static Z infinitarySigma0(final Z n) {
-    return Z.valueOf(InfinitaryAliquotSequence.infinitaryDivisors(Cheetah.factor(n)).size());
+    return Z.valueOf(InfinitaryAliquotSequence.infinitaryDivisors(Jaguar.factor(n)).size());
   }
 
   /**
@@ -42,7 +42,7 @@ public final class InfinitaryDivisors {
    */
   public static Z infinitary3Sigma(final Z n) {
     Z prod = Z.ONE;
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
       int e = fs.getExponent(p);
       Z k = Z.ONE;

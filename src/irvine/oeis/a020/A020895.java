@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
@@ -14,7 +14,7 @@ public class A020895 extends A020894 {
     if (Z.ONE.compareTo(n) >= 0) {
       return false;
     }
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     for (final Z p : fs.toZArray()) {
       if (fs.getExponent(p) >= 3) {
         return false;

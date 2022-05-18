@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
@@ -28,7 +28,7 @@ public class A056637 extends A000040 {
         mClassSets.add(h);
         return prime;
       }
-      final FactorSequence fs = Cheetah.factor(prime.subtract(1));
+      final FactorSequence fs = Jaguar.factor(prime.subtract(1));
       final Z[] t = fs.toZArray();
       if (t[t.length - 1].compareTo(Z.THREE) <= 0) {
         mClassSets.get(0).add(prime);

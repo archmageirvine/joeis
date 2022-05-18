@@ -1,6 +1,6 @@
 package irvine.oeis.a078;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
@@ -23,7 +23,7 @@ public class A078923 implements Sequence {
     while (true) {
       if (++mN > 1) {
         for (long k = (mN - 2) * (mN - 2) + 1; k <= (mN - 1) * (mN - 1); ++k) {
-          final long index = Cheetah.factor(k).sigma().subtract(k).longValueExact();
+          final long index = Jaguar.factor(k).sigma().subtract(k).longValueExact();
           if (index >= 0) {
             mSeen.set(index);
           }

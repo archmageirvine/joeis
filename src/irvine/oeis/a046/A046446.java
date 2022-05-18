@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.a014.A014076;
@@ -17,7 +17,7 @@ public class A046446 extends A014076 {
   }
 
   private boolean is(final Z t) {
-    for (final Z p : Cheetah.factor(t).toZArray()) {
+    for (final Z p : Jaguar.factor(t).toZArray()) {
       if (!isOddDigits(p)) {
         return false;
       }

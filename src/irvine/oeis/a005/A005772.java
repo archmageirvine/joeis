@@ -2,7 +2,7 @@ package irvine.oeis.a005;
 
 import java.util.Arrays;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
@@ -30,7 +30,7 @@ public class A005772 implements Sequence {
         fij = fij.multiply(fi);
         final int nij = mN - i * j;
         final Z fj = mF.factorial(j);
-        for (final Z dd : Cheetah.factor(nij).divisors()) {
+        for (final Z dd : Jaguar.factor(nij).divisors()) {
           final int d = dd.intValueExact();
           if (d < i) {
             final int nijd = nij / d;

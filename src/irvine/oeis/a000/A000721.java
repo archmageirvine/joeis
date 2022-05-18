@@ -2,7 +2,7 @@ package irvine.oeis.a000;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
@@ -30,7 +30,7 @@ public class A000721 implements Sequence {
 
   private static Z e(final int v) {
     Z s = Z.ZERO;
-    for (final Z dd : Cheetah.factor(v).divisors()) {
+    for (final Z dd : Jaguar.factor(v).divisors()) {
       final int d = dd.intValue();
       final int m = Mobius.mobius(v / d);
       if (m != 0) {
@@ -46,7 +46,7 @@ public class A000721 implements Sequence {
     }
     Z s = Z.ZERO;
     final int m = v / 2;
-    for (final Z dd : Cheetah.factor(v).divisors()) {
+    for (final Z dd : Jaguar.factor(v).divisors()) {
       final int d = dd.intValue();
       if (m % d != 0) {
         final int t = Mobius.mobius(v / d);
@@ -64,7 +64,7 @@ public class A000721 implements Sequence {
 
   MultivariateMonomial ia1(final int r) {
     final MultivariateMonomial res = new MultivariateMonomial();
-    for (final Z vv : Cheetah.factor(r).divisors()) {
+    for (final Z vv : Jaguar.factor(r).divisors()) {
       final int v = vv.intValue();
       res.add(v, e(v));
     }
@@ -74,7 +74,7 @@ public class A000721 implements Sequence {
   private MultivariateMonomial ia2(final int r) {
     final MultivariateMonomial res = new MultivariateMonomial();
     final int rr = 2 * r;
-    for (final Z vv : Cheetah.factor(rr).divisors()) {
+    for (final Z vv : Jaguar.factor(rr).divisors()) {
       final int v = vv.intValue();
       if (r % v != 0) {
         res.add(v, g(v));

@@ -36,7 +36,7 @@
 
   <target name="compile-src" description="Compile the source" depends="compile-grammar">
     <mkdir dir="${build.dir}/classes"/>
-    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.8" includeantruntime="false">
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.10" includeantruntime="false">
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
@@ -45,7 +45,7 @@
   </target>
 
   <target name="compile-internal" description="Compile the internal">
-    <javac srcdir="${internal.dir}" source="1.8" destdir="${build.dir}/classes" includeantruntime="false">
+    <javac srcdir="${internal.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
@@ -55,7 +55,7 @@
   </target>
 
   <target name="compile-test" description="Compile the tests">
-    <javac srcdir="${test.dir}" source="1.8" destdir="${build.dir}/classes" includeantruntime="false">
+    <javac srcdir="${test.dir}" source="1.10" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <pathelement path="${internal.dir}"/>
@@ -85,10 +85,11 @@
       <zipfileset src="${lib.dir}/antlr-4.8-complete.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/teherba.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/jml.jar" excludes="META-INF/**"/>
       <manifest>
         <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>
         <attribute name="Implementation-Title" value="jOEIS"/>
-        <attribute name="Implementation-Version" value="1.1"/>
+        <attribute name="Implementation-Version" value="1.2"/>
         <attribute name="Implementation-Vendor" value="Sean A. Irvine"/>
       </manifest>
     </jar>
@@ -131,6 +132,7 @@
       <zipfileset src="${lib.dir}/classgraph-4.8.80.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/teherba.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/jml.jar" excludes="META-INF/**"/>
       <manifest>
         <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>
         <attribute name="Implementation-Title" value="jOEIS"/>

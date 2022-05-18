@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
@@ -23,7 +23,7 @@ public class A045778 extends MemoryFunction2<Long, Z> implements Sequence {
     if (mPrime.isPrime(n)) {
       return t;
     }
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final long d = dd.longValue();
       if (d <= m && d > 1 && d < n) {
         t = t.add(get(n / d, d - 1));

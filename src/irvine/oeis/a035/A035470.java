@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import java.util.Arrays;
 import java.util.HashMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -56,7 +56,7 @@ public class A035470 implements Sequence {
   public Z next() {
     final int m = ++mN * (mN + 1) / 2;
     Z sum = Z.ONE;
-    for (final Z dd : Cheetah.factor(m).divisors()) {
+    for (final Z dd : Jaguar.factor(m).divisors()) {
       final int d = dd.intValue();
       if (d >= mN && d != m) {
         final int[] a = new int[m / d + 1];

@@ -1,6 +1,6 @@
 package irvine.oeis.a210;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
@@ -71,7 +71,7 @@ public class A210696 implements Sequence {
    */
   public Z brownG(final int n, final int m) {
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(m + 3).divisors()) {
+    for (final Z d : Jaguar.factor(m + 3).divisors()) {
       final int s = d.intValueExact();
       sum = sum.add(brownE(s, n, m).multiply(LongUtils.phi(s)));
     }

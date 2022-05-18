@@ -1,7 +1,7 @@
 package irvine.oeis.a038;
 // manually 2020-12-30
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
@@ -19,7 +19,7 @@ public class A038067 implements Sequence {
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(++mN).divisors()) {
+    for (final Z dd : Jaguar.factor(++mN).divisors()) {
       final int d = dd.intValue();
       sum = sum.add(mSeq.a(mN / d - 1).multiply(Z.valueOf(d).bitCount() == 1 ? Z.ONE : Z.ZERO));
     }

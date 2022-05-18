@@ -2,7 +2,7 @@ package irvine.oeis.a052;
 
 import java.util.Arrays;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -18,8 +18,8 @@ public class A052213 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final FactorSequence fs0 = Cheetah.factor(++mN);
-      final FactorSequence fs1 = Cheetah.factor(mN + 1);
+      final FactorSequence fs0 = Jaguar.factor(++mN);
+      final FactorSequence fs1 = Jaguar.factor(mN + 1);
       if (fs0.omega() == fs1.omega()) {
         final int[] a = new int[fs0.omega()];
         final int[] b = new int[fs0.omega()];

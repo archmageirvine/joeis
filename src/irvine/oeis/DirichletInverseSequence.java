@@ -2,7 +2,7 @@ package irvine.oeis;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 
 /**
@@ -39,7 +39,7 @@ public class DirichletInverseSequence implements Sequence {
       return Z.ONE;
     } else {
       Z sum = Z.ZERO;
-      for (final Z dd : Cheetah.factor(mN).divisors()) {
+      for (final Z dd : Jaguar.factor(mN).divisors()) {
         final int d = dd.intValue();
         if (d < mN) {
           sum = sum.add(mSeq.a(mN / d - 1).multiply(mAs.get(d)));

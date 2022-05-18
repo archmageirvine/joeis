@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction2;
 import irvine.math.Mobius;
 import irvine.math.polynomial.PalmerSymPowerCycleIndex;
@@ -39,7 +39,7 @@ public class A003190 extends MemoryFunction2<Integer, Q> implements Sequence {
 
   protected Z c(final int n, final int p) {
     Q s = Q.ZERO;
-    for (final Z dd : Cheetah.factor(p).divisors()) {
+    for (final Z dd : Jaguar.factor(p).divisors()) {
       final int d = dd.intValueExact();
       s = s.add(get(n, p / d).multiply(Mobius.mobius(d)).divide(d));
     }

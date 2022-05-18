@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001222;
 
@@ -17,7 +17,7 @@ public class A028261 extends A001222 {
   @Override
   public Z next() {
     while (true) {
-      if (Cheetah.factor(super.next()).isSquareFree()) {
+      if (Jaguar.factor(super.next()).isSquareFree()) {
         return Z.valueOf(mN);
       }
     }

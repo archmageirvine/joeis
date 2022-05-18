@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.util.string.StringUtils;
@@ -21,7 +21,7 @@ public class A046450 extends A046447 {
       final Z t = super.next();
       if (StringUtils.isPalindrome(t.toString())) {
         final StringBuilder sb = new StringBuilder();
-        final FactorSequence fs = Cheetah.factor(t);
+        final FactorSequence fs = Jaguar.factor(t);
         for (final Z p : fs.toZArray()) {
           sb.append(p);
         }

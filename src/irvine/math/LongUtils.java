@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
@@ -545,7 +545,7 @@ public final class LongUtils {
    * @return true if the number is square free
    */
   public static boolean isSquareFree(final long n) {
-    return Cheetah.factor(n).maxExponent() <= 1;
+    return Jaguar.factor(n).maxExponent() <= 1;
   }
 
   /**

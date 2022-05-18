@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
@@ -25,7 +25,7 @@ public class A000081 extends MemorySequence {
     if (k == 1) {
       sum = Z.ONE;
     } else {
-      for (final Z t : Cheetah.factor(k).divisors()) {
+      for (final Z t : Jaguar.factor(k).divisors()) {
         sum = sum.add(t.multiply(get(t.intValue())));
       }
     }

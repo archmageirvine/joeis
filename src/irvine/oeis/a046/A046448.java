@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
@@ -17,7 +17,7 @@ public class A046448 extends A018252 {
     while (true) {
       final Z t = super.next();
       final StringBuilder sb = new StringBuilder();
-      final FactorSequence fs = Cheetah.factor(t);
+      final FactorSequence fs = Jaguar.factor(t);
       if (fs.isSquareFree()) {
         for (final Z p : fs.toZArray()) {
           sb.append(p);

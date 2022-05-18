@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeMap;
 
-import irvine.factor.factor.AbstractFactorizer;
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
@@ -21,7 +20,6 @@ public class A036471 implements Sequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final TreeMap<Long, List<Long>> mSigmaMap = new TreeMap<>();
-  private final AbstractFactorizer mFactor = new Cheetah();
   private final ArrayList<long[]> mA = new ArrayList<>();
   private int mM = 0;
   private long mN = 1;
@@ -35,7 +33,7 @@ public class A036471 implements Sequence {
     if (mVerbose && n % 1000000 == 0) {
       StringUtils.message("Scan has reached: " + n);
     }
-    return mFactor.factorize(Z.valueOf(n)).sigma().longValue();
+    return Jaguar.factor(n).sigma().longValue();
   }
 
   @Override

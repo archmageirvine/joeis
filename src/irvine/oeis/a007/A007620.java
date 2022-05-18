@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005835;
 
@@ -28,7 +28,7 @@ public class A007620 extends A005835 {
   }
 
   private boolean isProperPractical(final Z n) {
-    final Z[] d = Cheetah.factor(n).divisors();
+    final Z[] d = Jaguar.factor(n).divisors();
     for (Z k = n; k.signum() > 0; k = k.subtract(1)) {
       if (!isSum(k, d, d.length - 1)) {
         return false;

@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
@@ -22,7 +22,7 @@ public class A054200 implements Sequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
       final int g = IntegerUtils.gcd(dd, 3);
       final int dg = dd / g;

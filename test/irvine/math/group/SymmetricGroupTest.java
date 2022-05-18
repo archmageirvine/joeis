@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.api.Group;
 import irvine.math.api.Set;
 import irvine.math.factorial.MemoryFactorial;
@@ -616,7 +616,7 @@ public class SymmetricGroupTest extends TestCase {
   @SuppressWarnings("unchecked")
   public void testDurbin17p26() {
     final SymmetricGroup<Integer> g = SymmetricGroup.create(4);
-    final Z[] divisors = Cheetah.factor(g.size()).divisors();
+    final Z[] divisors = Jaguar.factor(g.size()).divisors();
     final boolean[] used = new boolean[divisors.length];
     int cnt = 0;
     for (final Permutation<Integer> e : g) {

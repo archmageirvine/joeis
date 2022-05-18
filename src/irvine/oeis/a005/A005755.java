@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -22,7 +22,7 @@ public class A005755 extends MemoryFunction1<Z> implements Sequence {
       Z sum = Z.ZERO;
       for (int m = 1; m < n; ++m) {
         Z t = Z.ZERO;
-        for (final Z d : Cheetah.factor(n - m).divisors()) {
+        for (final Z d : Jaguar.factor(n - m).divisors()) {
           final int dd = d.intValueExact();
           t = t.signedAdd((((n - m) / dd) & 1) == 1, get(dd).multiply(d));
         }
@@ -43,7 +43,7 @@ public class A005755 extends MemoryFunction1<Z> implements Sequence {
     Z sum = Z.ZERO;
     for (int m = 1; m < n; ++m) {
       Z t = Z.ZERO;
-      for (final Z d : Cheetah.factor(n - m).divisors()) {
+      for (final Z d : Jaguar.factor(n - m).divisors()) {
         final int dd = d.intValueExact();
         t = t.signedAdd((((n - m) / dd) & 1) == 1, mB2.get(dd).multiply(d));
       }

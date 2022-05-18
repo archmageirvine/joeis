@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
@@ -25,7 +25,7 @@ public class A038536 implements Sequence {
         StringUtils.message("Trying: " + mN);
       }
       for (long m = 2; m <= HEURISTIC_LIMIT * mN; ++m) {
-        final long sigma = Cheetah.factor(m).sigma().longValueExact();
+        final long sigma = Jaguar.factor(m).sigma().longValueExact();
         final long s = sigma - m - 1;
         if (mN * s == m - 1) {
           return Z.valueOf(mN);

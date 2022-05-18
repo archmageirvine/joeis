@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -21,7 +21,7 @@ public class A050766 implements Sequence {
       Z sum = Z.valueOf(++mN);
       if (!sum.isProbablePrime()) {
         final Z nextPrime = mPrime.nextPrime(sum);
-        final FactorSequence fs = Cheetah.factor(mN);
+        final FactorSequence fs = Jaguar.factor(mN);
         for (final Z p : fs.toZArray()) {
           sum = sum.add(p.multiply(fs.getExponent(p)));
         }

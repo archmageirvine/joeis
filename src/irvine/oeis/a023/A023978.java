@@ -1,6 +1,6 @@
 package irvine.oeis.a023;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -11,7 +11,6 @@ import irvine.oeis.Sequence;
  */
 public class A023978 implements Sequence {
 
-  private Cheetah mFactor = new Cheetah();
   private long mN = 0;
 
   protected long multinomialOmega(final long n, final long... m) {
@@ -25,8 +24,8 @@ public class A023978 implements Sequence {
         fsBot.add(k, FactorSequence.UNKNOWN, 1);
       }
     }
-    mFactor.factor(fsTop);
-    mFactor.factor(fsBot);
+    Jaguar.factor(fsTop);
+    Jaguar.factor(fsBot);
     return fsTop.bigOmega() - fsBot.bigOmega();
   }
 

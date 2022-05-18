@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -19,7 +19,7 @@ public class A046759 implements Sequence {
    * @return true if the number is economical
    */
   public static boolean isEconomical(final long n) {
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     final int len = String.valueOf(n).length();
     int l = 0;
     for (final Z p : fs.toZArray()) {

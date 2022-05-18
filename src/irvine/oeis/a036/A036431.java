@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
@@ -16,7 +16,7 @@ public class A036431 implements Sequence {
 
   @Override
   public Z next() {
-    final long m = ++mN + Cheetah.factor(mN).sigma0().longValueExact();
+    final long m = ++mN + Jaguar.factor(mN).sigma0().longValueExact();
     mCnt.set(m, mCnt.get(m) + 1);
     return Z.valueOf(mCnt.get(mN));
   }

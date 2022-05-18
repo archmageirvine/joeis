@@ -1,6 +1,6 @@
 package irvine.oeis.a025;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
@@ -21,7 +21,7 @@ public class A025280 extends A005245 {
       return Z.ONE;
     }
     Z min = super.computeNext();
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     int gcd = -1;
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
@@ -32,7 +32,7 @@ public class A025280 extends A005245 {
     }
     if (gcd > 1) {
       final Z nn = Z.valueOf(n);
-      for (final Z d : Cheetah.factor(gcd).divisors()) {
+      for (final Z d : Jaguar.factor(gcd).divisors()) {
         final int dd = d.intValueExact();
         if (dd > 1) {
           min = min.min(get(nn.root(dd).intValueExact()).add(get(dd)));

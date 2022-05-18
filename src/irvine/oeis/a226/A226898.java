@@ -1,7 +1,7 @@
 package irvine.oeis.a226;
 // manually (core) 2020-11-16
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -24,7 +24,7 @@ public class A226898 implements Sequence {
   @Override
   public Z next() {
     int maxCount = 0;
-    final FactorSequence fs = Cheetah.factor(++mN);
+    final FactorSequence fs = Jaguar.factor(++mN);
     final Z[] divs = fs.divisorsSorted();
     for (int i1 = 0; i1 < divs.length; ++i1) {
       final Z div1 = divs[i1];

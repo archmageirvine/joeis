@@ -5,9 +5,9 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.factor.factor.CachedFactorizer;
-import irvine.factor.factor.Cheetah;
 import irvine.factor.factor.FactorDbFactorizer;
 import irvine.factor.factor.Factorizer;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 
 /**
@@ -18,7 +18,6 @@ import irvine.math.z.Z;
  */
 public class InfinitaryAliquotSequence {
 
-  private final Cheetah mCheetah = new Cheetah(false);
   private final Factorizer mFactorizer = new CachedFactorizer(new FactorDbFactorizer());
 
   private static boolean isInfinitaryExponent(final int u, final int v) {
@@ -95,8 +94,7 @@ public class InfinitaryAliquotSequence {
         System.out.println("prime");
         return;
       }
-      FactorSequence fs = new FactorSequence(n);
-      mCheetah.factor(fs);
+      FactorSequence fs = Jaguar.factor(n);
       // Try a bunch of times at FactorDb because it can take a while to factor
       // some smaller numbers. However, if the pieces remaining are too big then
       // give up straight away.

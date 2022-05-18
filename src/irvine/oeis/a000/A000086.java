@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -20,7 +20,7 @@ public class A000086 implements Sequence {
       return Z.ZERO;
     }
     int s = 1;
-    for (final Z t : Cheetah.factor(mN).toZArray()) {
+    for (final Z t : Jaguar.factor(mN).toZArray()) {
       final long h = t.longValue();
       if (h != 2) {
         s *= 1 + LongUtils.jacobi(-3, h);

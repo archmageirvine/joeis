@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.oeis.FiniteSequence;
 
 /**
@@ -11,7 +11,7 @@ public class A018262 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A018262() {
-    super(Cheetah.factor(50).divisorsSorted());
+    super(Jaguar.factor(50).divisorsSorted());
   }
 }
 

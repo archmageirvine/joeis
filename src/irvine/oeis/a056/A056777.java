@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
@@ -19,8 +19,8 @@ public class A056777 implements Sequence {
   public Z next() {
     while (true) {
       if (!mPrime.isPrime(++mN)) {
-        final FactorSequence fsA = Cheetah.factor(mN + 12);
-        final FactorSequence fsB = Cheetah.factor(mN);
+        final FactorSequence fsA = Jaguar.factor(mN + 12);
+        final FactorSequence fsB = Jaguar.factor(mN);
         if (fsA.phi().equals(fsB.phi().add(12)) && fsA.sigma().equals(fsB.sigma().add(12))) {
           return Z.valueOf(mN);
         }

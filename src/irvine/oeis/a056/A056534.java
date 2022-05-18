@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -18,7 +18,7 @@ public class A056534 implements Sequence {
   @Override
   public Z next() {
     if (++mM >= mD.length) {
-      mD = Cheetah.factor(++mN).divisorsSorted();
+      mD = Jaguar.factor(++mN).divisorsSorted();
       mM = 0;
     }
     final long d = mD[mM].longValueExact();

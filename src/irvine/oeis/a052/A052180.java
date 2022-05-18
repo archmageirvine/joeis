@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a065.A065091;
 
@@ -18,7 +18,7 @@ public class A052180 extends A065091 {
     mP = super.next();
     Z max = Z.ONE;
     while (!s.equals(mP)) {
-      max = max.max(Cheetah.factor(s).toZArray()[0]);
+      max = max.max(Jaguar.factor(s).toZArray()[0]);
       s = s.add(1);
     }
     return max;

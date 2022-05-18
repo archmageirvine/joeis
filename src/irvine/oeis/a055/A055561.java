@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
@@ -33,11 +33,11 @@ public class A055561 implements Sequence {
     if (mPrime.isPrime(p)) {
       return n % (p * p) == 0 && mPrime.isPrime(LongUtils.gcd(p + 1, n));
     }
-    final FactorSequence g = Cheetah.factor(p);
+    final FactorSequence g = Jaguar.factor(p);
     if (g.omega() != 2) {
       return false;
     }
-    final FactorSequence f = Cheetah.factor(n);
+    final FactorSequence f = Jaguar.factor(n);
     if (!f.isSquareFree()) {
       return false;
     }

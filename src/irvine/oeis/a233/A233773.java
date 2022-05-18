@@ -1,6 +1,6 @@
 package irvine.oeis.a233;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -21,7 +21,7 @@ public class A233773 implements Sequence {
       if (++mN == 1) {
         return Z.NEG_ONE;
       }
-      mList = Cheetah.factor(mN).divisorsSorted();
+      mList = Jaguar.factor(mN).divisorsSorted();
       mM = 0;
     }
     return mList[mM].multiply(mM == mList.length - 1 ? -1 : 1);

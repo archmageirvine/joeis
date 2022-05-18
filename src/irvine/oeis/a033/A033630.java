@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -22,7 +22,7 @@ public class A033630 implements Sequence {
       return Z.ONE;
     }
     Polynomial<Z> gf = RING.one();
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       gf = RING.multiply(gf, RING.onePlusXToTheN(d.intValue()), mN);
     }
     return gf.coeff(mN);

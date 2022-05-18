@@ -1,6 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a079.A079896;
@@ -20,7 +20,7 @@ public class A039955 extends PrependSequence {
   public Z next() {
     while (true) {
       final Z n = super.next();
-      if (n.mod(4) == 1 && Cheetah.factor(n).isSquareFree()) {
+      if (n.mod(4) == 1 && Jaguar.factor(n).isSquareFree()) {
         return n;
       }
     }

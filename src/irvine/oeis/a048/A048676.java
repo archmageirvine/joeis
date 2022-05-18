@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -19,7 +19,7 @@ public class A048676 implements Sequence {
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    final FactorSequence fs = Cheetah.factor(++mN);
+    final FactorSequence fs = Jaguar.factor(++mN);
     for (final Z p : fs.toZArray()) {
       sum = sum.add(Z.ONE.shiftLeft(fs.getExponent(p) + mPrimePi.a(p.intValueExact() - 1).intValueExact()));
     }

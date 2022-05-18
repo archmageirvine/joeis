@@ -2,7 +2,7 @@ package irvine.oeis.a003;
 
 import java.io.Serializable;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
@@ -18,9 +18,9 @@ public class A003606 extends MemorySequence {
     @Override
     protected Z compute(final int n) {
       Z s = Z.ZERO;
-      for (final Z dd : Cheetah.factor(n).divisors()) {
+      for (final Z dd : Jaguar.factor(n).divisors()) {
         final int d = dd.intValue();
-        s = s.add(Cheetah.factor(n / d).sigma().multiply(IntegerPartition.partitions(d).multiply(d)));
+        s = s.add(Jaguar.factor(n / d).sigma().multiply(IntegerPartition.partitions(d).multiply(d)));
       }
       return s;
     }

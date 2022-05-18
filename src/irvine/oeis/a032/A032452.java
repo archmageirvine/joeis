@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -25,7 +25,7 @@ public class A032452 implements Sequence {
       mM = 0;
       Z t = Z.valueOf(++mN);
       do {
-        final FactorSequence fs = Cheetah.factor(t);
+        final FactorSequence fs = Jaguar.factor(t);
         t = (mNextTerms.size() % 3) == 1 ? fs.sigma() : fs.phi();
         mNextTerms.add(t);
       } while (!Z.ONE.equals(t));

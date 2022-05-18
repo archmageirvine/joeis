@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a032.A032742;
 
@@ -16,7 +16,7 @@ public class A054576 extends A032742 {
     if (Z.ONE.equals(n)) {
       return Z.ONE;
     }
-    final Z[] divisors = Cheetah.factor(n).divisorsSorted();
+    final Z[] divisors = Jaguar.factor(n).divisorsSorted();
     return divisors[divisors.length - 2];
   }
 }

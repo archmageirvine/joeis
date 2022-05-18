@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Euler;
@@ -27,7 +27,7 @@ public class A055376 implements Sequence {
       }
       mM = 0;
       mRow = RING.zero();
-      for (final Z dd : Cheetah.factor(mN).divisors()) {
+      for (final Z dd : Jaguar.factor(mN).divisors()) {
         final int d = dd.intValue();
         mRow = RING.add(mRow, RING.multiply(RING.pow(RING.onePlusXToTheN(d), mN / d, mN), Euler.phi(dd).multiply(Z.ONE.shiftLeft(mN / d).subtract(1))));
       }

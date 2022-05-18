@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
@@ -24,7 +24,7 @@ public class A007370 implements Sequence {
     while (true) {
       ++mN;
       while (mN >= mS || mN >= mA.length()) {
-        final long sigma = Cheetah.factor(++mS).sigma().longValueExact();
+        final long sigma = Jaguar.factor(++mS).sigma().longValueExact();
         final byte b = mA.get(sigma);
         if (b <= select()) {
           mA.set(sigma, (byte) (b + 1));

@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
@@ -22,7 +22,7 @@ public class A000146 implements Sequence {
     mB.nextQ();
     Q s = mB.nextQ();
     mN += 2;
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       final long dp = d.longValue() + 1;
       if (mPrime.isPrime(dp)) {
         s = s.add(new Q(1, dp));

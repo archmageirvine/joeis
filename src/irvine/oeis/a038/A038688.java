@@ -2,7 +2,7 @@ package irvine.oeis.a038;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -21,7 +21,7 @@ public class A038688 implements Sequence {
   public Z next() {
     while (mA.isEmpty() || mA.first().multiply2().compareTo(mN) >= 0) {
       mN = mN.add(1);
-      final Z sigma = Cheetah.factor(mN).sigma();
+      final Z sigma = Jaguar.factor(mN).sigma();
       if (sigma.isSquare()) {
         if (sigma.compareTo(mPrev) < 0 && mSeen.add(sigma)) {
           throw new RuntimeException("Heuristic failed: " + sigma + " should have been output earlier");

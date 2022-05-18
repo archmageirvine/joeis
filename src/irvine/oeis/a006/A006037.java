@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -27,7 +27,7 @@ public class A006037 implements Sequence {
   }
 
   protected boolean isWeird(final Z n) {
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     if (fs.sigma().compareTo(n.multiply2()) <= 0) {
       return false;
     }

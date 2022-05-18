@@ -1,7 +1,7 @@
 package irvine.oeis.a167;
 // manually 2022-04-27
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a001.A001222;
 
@@ -19,6 +19,6 @@ public class A167746 extends A001222 {
       super.next();
       return Z.valueOf(-mN);
     }
-    return Z.valueOf(Cheetah.factor(super.next()).bigOmega());
+    return Z.valueOf(Jaguar.factor(super.next()).bigOmega());
   }
 }

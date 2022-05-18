@@ -2,7 +2,7 @@ package irvine.oeis.a001;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -28,7 +28,7 @@ public class A001692 implements Sequence {
     }
     mPowers.add(mPowers.get(mN - 1).multiply(colors()));
     Z s = Z.ZERO;
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       final int dd = d.intValue();
       s = s.add(mPowers.get(mN / dd).multiply(Mobius.mobius(dd)));
     }

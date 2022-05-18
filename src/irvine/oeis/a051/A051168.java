@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
 import irvine.math.z.Binomial;
@@ -21,7 +21,7 @@ public class A051168 implements Sequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(LongUtils.gcd(n, k)).divisors()) {
+    for (final Z dd : Jaguar.factor(LongUtils.gcd(n, k)).divisors()) {
       final long d = dd.longValue();
       sum = sum.add(Binomial.binomial(n / d, k / d).multiply(Mobius.mobius(d)));
     }

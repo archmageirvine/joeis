@@ -2,7 +2,7 @@ package irvine.math.group;
 
 import java.util.function.Function;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.api.Operation;
 import irvine.math.api.Ring;
 import irvine.math.api.Set;
@@ -298,7 +298,7 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
    */
   public E sumdiv(final int n, final Function<Integer, E> function) {
     E sum = zero();
-    for (final Z d : Cheetah.factor(n).divisors()) {
+    for (final Z d : Jaguar.factor(n).divisors()) {
       sum = add(sum, function.apply(d.intValueExact()));
     }
     return sum;

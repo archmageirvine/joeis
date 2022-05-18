@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -21,7 +21,7 @@ public class A130466 implements Sequence {
       // Starting a new row
       ++mRow;
       mPositionInRow = 0;
-      mCurrentSigma = Cheetah.factor(mRow).sigma();
+      mCurrentSigma = Jaguar.factor(mRow).sigma();
       mCurrentIndex = 0;
     }
     ++mPositionInRow;

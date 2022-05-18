@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
@@ -22,7 +22,7 @@ public class A007368 implements Sequence {
     while (true) {
       ++k;
       while (k >= mS || k >= mA.length()) {
-        final long sigma = Cheetah.factor(++mS).sigma().longValueExact();
+        final long sigma = Jaguar.factor(++mS).sigma().longValueExact();
         mA.set(sigma, mA.get(sigma) + 1);
       }
       if (mA.get(k) == mN) {

@@ -2,7 +2,7 @@ package irvine.oeis.a051;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.MemoryFunction;
 import irvine.math.MemoryFunction1;
@@ -30,7 +30,7 @@ public class A051026 extends MemorySequence {
       s1.remove(m);
       final long res = getValue(s1);
       final TreeSet<Integer> s2 = new TreeSet<>(set); // copy safety for caching
-      for (final Z d : Cheetah.factor(m).divisors()) {
+      for (final Z d : Jaguar.factor(m).divisors()) {
         s2.remove(d.intValueExact());
       }
       return res + getValue(s2);

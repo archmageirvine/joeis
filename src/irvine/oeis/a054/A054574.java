@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
@@ -14,7 +14,7 @@ public class A054574 extends A000040 {
   public Z next() {
     Z n = super.next().multiply2(); // obviously never prime
     do {
-      n = n.add(Cheetah.factor(n).sopfr());
+      n = n.add(Jaguar.factor(n).sopfr());
     } while (!n.isProbablePrime());
     return n;
   }

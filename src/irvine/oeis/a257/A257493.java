@@ -33,7 +33,7 @@ public class A257493 implements Sequence {
       }
     }
     return fs;
-    //return Cheetah.factor(n);
+    //return Jaguar.factor(n);
   }
 
   private Z compute(final FactorSequence fs, final int k) {

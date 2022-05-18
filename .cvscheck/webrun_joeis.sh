@@ -23,9 +23,9 @@ export JAVADOC_MODULES="src"
 # javadoc is just too slow on a project this large ...
 export DOCUMENTERS=" "
 export DOCUMENT_CHECKERS="classdocs spelldocs2008"
-export JAVAC_OPTS="-source 1.8 -Xlint -Xlint:-serial -proc:none"
+export JAVAC_OPTS="-source 1.10 -Xlint -Xlint:-serial -proc:none"
 export COMPILERS="javacall"
-export JAVADOC_OPTS="-source 1.8"
+export JAVADOC_OPTS="-source 1.10"
 export JUMBLE_OPTS="-r -i -j -k -w -S -x main"
 export JUMBLE_ALLOCATION="0"
 export DISABLE_JUMBLE=1

@@ -2,7 +2,7 @@ package irvine.oeis.a083;
 
 import java.util.Arrays;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -31,7 +31,7 @@ public class A083389 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final FactorSequence fs = Cheetah.factor(++mN);
+      final FactorSequence fs = Jaguar.factor(++mN);
       final long target = sortedForm(2 * mN);
       long sum = 0;
       for (final Z d : fs.divisors()) {

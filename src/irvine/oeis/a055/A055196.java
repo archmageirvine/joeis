@@ -2,7 +2,7 @@ package irvine.oeis.a055;
 
 import java.util.TreeSet;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.a011.A011775;
 
@@ -18,7 +18,7 @@ public class A055196 extends A011775 {
   }
 
   private boolean isPrimitive(final Z t) {
-    for (final Z d : Cheetah.factor(t).divisors()) {
+    for (final Z d : Jaguar.factor(t).divisors()) {
       if (mPrimitive.contains(d)) {
         return false;
       }

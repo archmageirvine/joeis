@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -24,7 +24,7 @@ public class A129645 implements Sequence {
       mB.add(Z.ONE);
     } else {
       mPrev = mPrev.multiply(mB.get(mN++)).add(1);
-      Collections.addAll(mB, Cheetah.factor(mPrev).divisors());
+      Collections.addAll(mB, Jaguar.factor(mPrev).divisors());
     }
     return mPrev;
   }

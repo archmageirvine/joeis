@@ -2,7 +2,7 @@ package irvine.oeis.a007;
 
 import java.io.Serializable;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MemoryFunction1;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -21,7 +21,7 @@ public class A007841 extends A007838 {
         return Q.ONE;
       }
       Q sum = Q.ZERO;
-      for (final Z d : Cheetah.factor(n).divisors()) {
+      for (final Z d : Jaguar.factor(n).divisors()) {
         final int e = n / d.intValueExact() - 1;
         sum = sum.add(new Q(Z.ONE, d.pow(e)));
       }

@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -22,7 +22,7 @@ public class A051591 implements Sequence {
     }
     final Z n = Z.valueOf(mN);
     Q sum = Q.ZERO;
-    for (final Z d : Cheetah.factor(mN).divisors()) {
+    for (final Z d : Jaguar.factor(mN).divisors()) {
       sum = sum.add(new Q(d.multiply(mF.factorial(mN - 1)).pow(d), n.pow(d).multiply(mF.factorial(d))));
     }
     return sum.toZ();

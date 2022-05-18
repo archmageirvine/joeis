@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
@@ -17,7 +17,7 @@ public class A161575 implements Sequence {
   private boolean test(final long t, final int n, final String s) {
     int d = mDivisorCount.get(t);
     if (d == 0) {
-      d = Cheetah.factor(t).sigma0().intValueExact();
+      d = Jaguar.factor(t).sigma0().intValueExact();
       mDivisorCount.set(t, d);
     }
     return d == n && Long.toString(t, 2).contains(s);

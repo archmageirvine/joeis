@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -27,7 +27,7 @@ public class A005245 extends MemorySequence {
     for (int k = 2; k <= n / 2; ++k) {
       min = min.min(get(k).add(get(n - k)));
     }
-    final FactorSequence fs = Cheetah.factor(n);
+    final FactorSequence fs = Jaguar.factor(n);
     for (final Z d : fs.divisors()) {
       final int dd = d.intValueExact();
       if (dd != 1 && dd != n) {

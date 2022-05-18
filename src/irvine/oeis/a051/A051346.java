@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import java.util.Map;
 import java.util.TreeMap;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.MutableInteger;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -25,7 +25,7 @@ public class A051346 implements Sequence {
   public Z next() {
     while (true) {
       while (mSeen.isEmpty() || mM <= 4 * mSeen.firstKey() * mSeen.firstKey()) {
-        final Z s0 = Cheetah.factor(mM).sigma0();
+        final Z s0 = Jaguar.factor(mM).sigma0();
         if (s0.bitLength() < 64) {
           final long s = s0.longValue();
           if (mM % s == 0) {

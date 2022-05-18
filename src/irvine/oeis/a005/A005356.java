@@ -2,7 +2,7 @@ package irvine.oeis.a005;
 
 import java.util.ArrayList;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.Jaguar;
 import irvine.math.Mobius;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -27,7 +27,7 @@ public class A005356 implements Sequence {
       return Z.ONE;
     }
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : Jaguar.factor(n).divisors()) {
       final int d = dd.intValue();
       final Z z = power(d);
       sum = ZUtils.mobiusAdd(Mobius.mobius(n / d), sum, z);

@@ -2,6 +2,7 @@ package irvine.factor.factor;
 
 import java.math.BigInteger;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 
@@ -22,6 +23,7 @@ public class TillmanFactorizer extends AbstractFactorizer {
   private final CombinedFactorAlgorithm mCfa = new CombinedFactorAlgorithm(THREADS, null, true);
 
   {
+    BasicConfigurator.configure();
     if (!VERBOSE) {
       Logger.getLogger("de.tilman_neumann.jml.factor").setLevel(Level.ERROR);
     }

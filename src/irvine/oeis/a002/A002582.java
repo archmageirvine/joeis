@@ -18,7 +18,7 @@ public class A002582 implements Sequence {
   public static Z lpf(final Z n) {
     if (n.isProbablePrime()) {
       return n;
-    } else if (Z.ONE.equals(n)) {
+    } else if (Z.ONE.compareTo(n) >= 0) {
       return Z.ONE;
     } else {
       final Z[] factors = Jaguar.factor(n).toZArray();

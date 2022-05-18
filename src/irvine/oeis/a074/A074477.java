@@ -11,8 +11,8 @@ import irvine.oeis.a002.A002582;
 public class A074477 implements Sequence {
 
   private Z mN;
-  private int mBase;
-  private int mAdd;
+  private final int mBase;
+  private final int mAdd;
 
   /** Construct the sequence. */
   public A074477() {

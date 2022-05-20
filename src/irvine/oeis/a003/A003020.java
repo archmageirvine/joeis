@@ -1,8 +1,8 @@
 package irvine.oeis.a003;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a002.A002582;
 
 /**
  * A003020 Largest prime factor of the "repunit" number 11...1 (cf. A002275).
@@ -15,6 +15,6 @@ public class A003020 implements Sequence {
   @Override
   public Z next() {
     mN = mN.multiply(10).add(1);
-    return A002582.lpf(mN);
+    return Jaguar.factor(mN).lpf();
   }
 }

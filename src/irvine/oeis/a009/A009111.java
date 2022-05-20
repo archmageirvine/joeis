@@ -28,7 +28,7 @@ public class A009111 implements Sequence {
           final long a = LongUtils.sqrt(a2);
           if (a <= b && a * a == a2) {
             final long area = a * b / 2;
-            mAreas.merge(area, 1, (x, y) -> x + y);
+            mAreas.merge(area, 1, Integer::sum);
           }
         }
       }

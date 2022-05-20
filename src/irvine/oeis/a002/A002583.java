@@ -1,5 +1,6 @@
 package irvine.oeis.a002;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,6 +18,6 @@ public class A002583 implements Sequence {
     if (++mN > 1) {
       mF = mF.multiply(mN);
     }
-    return A002582.lpf(mF.add(1));
+    return Jaguar.factor(mF.add(1)).lpf();
   }
 }

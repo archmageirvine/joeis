@@ -23,8 +23,7 @@ public class A034969 implements Sequence {
       }
       return Z.ONE;
     }
-    final Z[] f = Jaguar.factor(new Z(mA.toString() + mB)).toZArray();
-    final Z lpf = f[f.length - 1];
+    final Z lpf = Jaguar.factor(new Z(mA.toString() + mB)).lpf();
     mA = mB;
     mB = lpf;
     return lpf;

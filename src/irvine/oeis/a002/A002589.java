@@ -1,5 +1,6 @@
 package irvine.oeis.a002;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
@@ -35,7 +36,7 @@ public class A002589 implements Sequence {
       System.out.println("Doing: 2^" + mN + "+1 Phi(" + 2 * mN + ",2)=" + n);
     }
     while (true) {
-      final Z lpf = A002582.lpf(n);
+      final Z lpf = Jaguar.factor(n).lpf();
       if (!isIntrinsic(lpf, 2 * mN)) {
         return lpf;
       }

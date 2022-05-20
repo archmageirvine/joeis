@@ -818,4 +818,14 @@ public final class FactorSequence {
     }
     return core;
   }
+
+  /**
+   * Largest prime factor of the number.
+   * @return largest prime factor
+   */
+  public Z lpf() {
+    completeOrException();
+    final Z[] f = toZArray();
+    return f.length == 0 ?Z.ONE : f[f.length - 1];
+  }
 }

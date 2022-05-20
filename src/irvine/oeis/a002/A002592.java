@@ -1,5 +1,6 @@
 package irvine.oeis.a002;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -21,6 +22,6 @@ public class A002592 implements Sequence {
       System.out.println("Doing: 3^" + mN + "+1=" + t);
     }
     mA = mA.multiply(9);
-    return A002582.lpf(t);
+    return Jaguar.factor(t).lpf();
   }
 }

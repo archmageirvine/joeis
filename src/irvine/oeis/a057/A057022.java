@@ -1,23 +1,17 @@
 package irvine.oeis.a057;
-// manually
 
-import irvine.factor.factor.Jaguar;
-import irvine.factor.util.FactorSequence;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A057022 a(n) = floor((sum of divisors of n) / (number of divisors of n)), or floor(sigma_1(n)/sigma_0(n)).
- * (PARI) <code>a(n) = sigma(n)\numdiv(n);</code>
  * @author Georg Fischer
+ * @author Sean A. Irvine
  */
-public class A057022 implements Sequence {
+public class A057022 extends A057020 {
 
-  protected long mN = 0;
-  
   @Override
-  public Z next() {
-    final FactorSequence fs = Jaguar.factor(++mN);
-    return fs.sigma().divide(fs.sigma0());
+  protected Z select(final Q n) {
+    return n.toZ();
   }
 }

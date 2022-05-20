@@ -1,8 +1,8 @@
 package irvine.oeis.a014;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a002.A002582;
 
 /**
  * A014442 Largest prime factor of n^2 + 1.
@@ -14,7 +14,7 @@ public class A014442 implements Sequence {
 
   @Override
   public Z next() {
-    return A002582.lpf(Z.valueOf(++mN).square().add(1));
+    return Jaguar.factor(Z.valueOf(++mN).square().add(1)).lpf();
   }
 }
 

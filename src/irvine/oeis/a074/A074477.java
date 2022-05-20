@@ -1,8 +1,8 @@
 package irvine.oeis.a074;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a002.A002582;
 
 /**
  * A074477 Largest prime factor of 3^n - 1.
@@ -32,7 +32,7 @@ public class A074477 implements Sequence {
 
   @Override
   public Z next() {
-    final Z result = A002582.lpf(mN.add(mAdd));
+    final Z result = Jaguar.factor(mN.add(mAdd)).lpf();
     mN = mN.multiply(mBase);
     return result;
   }

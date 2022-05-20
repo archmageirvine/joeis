@@ -10,28 +10,12 @@ import irvine.oeis.Sequence;
  */
 public class A002582 implements Sequence {
 
-  /**
-   * Find the largest prime factor of n.
-   * @param n number to factor
-   * @return largest prime factor of n
-   */
-  public static Z lpf(final Z n) {
-    if (n.isProbablePrime()) {
-      return n;
-    } else if (Z.ONE.compareTo(n) >= 0) {
-      return Z.ONE;
-    } else {
-      final Z[] factors = Jaguar.factor(n).toZArray();
-      return factors[factors.length - 1];
-    }
-  }
-
   private Z mF = Z.ONE;
   private int mN = 1;
 
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    return lpf(mF.subtract(1));
+    return Jaguar.factor(mF.subtract(1)).lpf();
   }
 }

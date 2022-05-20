@@ -1,8 +1,8 @@
 package irvine.oeis.a003;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a002.A002582;
 
 /**
  * A003021 Largest prime factor of 10^n + 1.
@@ -15,6 +15,6 @@ public class A003021 implements Sequence {
   @Override
   public Z next() {
     mN = mN == null ? Z.ONE : mN.multiply(10);
-    return A002582.lpf(mN.add(1));
+    return Jaguar.factor(mN.add(1)).lpf();
   }
 }

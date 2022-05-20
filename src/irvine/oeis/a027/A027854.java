@@ -17,8 +17,7 @@ public class A027854 implements Sequence {
   public Z next() {
     while (true) {
       final FactorSequence fs = Jaguar.factor(++mN);
-      final Z[] p = fs.toZArray();
-      final Z lpf = p[p.length - 1];
+      final Z lpf = fs.lpf();
       final long pe = lpf.pow(fs.getExponent(lpf)).longValue();
       if (mN / pe > lpf.longValue()) {
         return Z.valueOf(mN);

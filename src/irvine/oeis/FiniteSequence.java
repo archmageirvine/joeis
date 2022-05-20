@@ -1,5 +1,6 @@
 package irvine.oeis;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -9,19 +10,25 @@ import irvine.math.z.Z;
  * Base case for certain finite sequence generated verbatim from a list.
  * @author Sean A. Irvine
  */
-public class FiniteSequence implements Sequence {
+public class FiniteSequence extends ArrayList<Z> implements Sequence {
 
-  private final Z[] mSeq;
   private int mN = 0;
+
+  /**
+   * Construct an empty sequence.
+   * @param seq the values
+   */
+  public FiniteSequence() {
+    super();
+  }
 
   /**
    * Construct the sequence.
    * @param seq the values
    */
   public FiniteSequence(final long... seq) {
-    mSeq = new Z[seq.length];
-    for (int k = 0; k < seq.length; ++k) {
-      mSeq[k] = Z.valueOf(seq[k]);
+    for (final long t : seq) {
+      add(Z.valueOf(t));
     }
   }
 
@@ -30,7 +37,7 @@ public class FiniteSequence implements Sequence {
    * @param seq the values
    */
   public FiniteSequence(final Z... seq) {
-    mSeq = seq;
+    super(Arrays.asList(seq));
   }
 
   /**
@@ -38,12 +45,12 @@ public class FiniteSequence implements Sequence {
    * @param seq the values
    */
   public FiniteSequence(final Collection<Z> seq) {
-    mSeq = seq.toArray(new Z[0]);
+    super(seq);
   }
 
   @Override
   public Z next() {
-    return mN < mSeq.length ? mSeq[mN++] : null;
+    return mN < size() ? get(mN++) : null;
   }
 
   /**
@@ -52,7 +59,7 @@ public class FiniteSequence implements Sequence {
    * @return specified element
    */
   public Z a(final int index) {
-    return mSeq[index];
+    return get(index);
   }
 
   /**
@@ -60,8 +67,7 @@ public class FiniteSequence implements Sequence {
    * @return array of terms
    */
   public Z[] getInitTerms() {
-    return Arrays.copyOf(mSeq, mSeq.length);
+    return toArray(new Z[0]);
   }
 
 }
-

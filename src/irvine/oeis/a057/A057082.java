@@ -19,7 +19,7 @@ public class A057082 implements Sequence {
   @Override
   public Z next() {
     if (mB != null) {
-      Z res = mB;
+      final Z res = mB;
       mB = null;
       return res;
     }

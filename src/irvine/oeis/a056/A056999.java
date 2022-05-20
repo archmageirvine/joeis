@@ -13,14 +13,14 @@ public class A056999 implements Sequence {
   private long mN = 474; // Offset year
   private int mM = -1;
 
-  private static long ceil(double double1, double double2) {
-		return (long) (double1 - double2 * Math.floor(double1 / double2));
-	}
+  private static long ceil(final double double1, final double double2) {
+    return (long) (double1 - double2 * Math.floor(double1 / double2));
+  }
 
   // From https://www.javatips.net/api/Persian-Date-Picker-Dialog-master/persiandatepicker/src/main/java/ir/hamsaa/persiandatepicker/util/PersianCalendarUtils.java
-	private static boolean isPersianLeapYear(final long persianYear) {
-		return ceil((38.0 + (ceil(persianYear - 474L, 2820L) + 474L)) * 682.0, 2816.0) < 682L;
-	}
+  private static boolean isPersianLeapYear(final long persianYear) {
+    return ceil((38.0 + (ceil(persianYear - 474L, 2820L) + 474L)) * 682.0, 2816.0) < 682L;
+  }
 
   @Override
   public Z next() {

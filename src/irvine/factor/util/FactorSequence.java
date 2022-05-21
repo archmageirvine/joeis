@@ -826,6 +826,6 @@ public final class FactorSequence {
   public Z lpf() {
     completeOrException();
     final Z[] f = toZArray();
-    return f.length == 0 ?Z.ONE : f[f.length - 1];
+    return f.length == 0 ? Z.ONE : f[f.length - 1];
   }
 }

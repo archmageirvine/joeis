@@ -33,7 +33,7 @@ public class A121022 implements Sequence {
     while (true) {
       mN = mN.add(mMult);
       if (mN.toString().indexOf(mMultS) >= 0) {
-        return mN;
+       return mN;
       }
     }
   }

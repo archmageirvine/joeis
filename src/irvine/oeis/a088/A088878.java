@@ -33,12 +33,12 @@ public class A088878 extends A000040 {
     mOrder21 = Z.valueOf(mOrder2 + 1);
   }
 
-  /* Mathematica:
-    A136062 Mother primes of order 3.   n = 3; a = {}; Do[If[PrimeQ[(Prime[k] + 2n)/(2n + 1)], AppendTo[a, Prime[k]]], {k, 1, 1500}]; a
-    A136071 Father primes of order 2.   n = 2; a = {}; Do[If[PrimeQ[(Prime[k] - 2n)/(2n + 1)], AppendTo[a, Prime[k]]], {k, 1, 1500}]; a
-    A136052 Daughter primes of order 3. n = 3; a = {}; Do[If[PrimeQ[(Prime[k] + 2n)/(2n + 1)], AppendTo[a, (Prime[k] + 2n)/(2n + 1)]], {k, 1, 1500}]; a
-    A136082 Son primes of order 5.      n = 5; a = {}; Do[If[PrimeQ[(Prime[k] - 2n)/(2n + 1)], AppendTo[a, (Prime[k] - 2n)/(2n + 1)]], {k, 1, 1000}]; a
-  */
+/* Mathematica:
+  A136062 Mother primes of order 3.   n = 3; a = {}; Do[If[PrimeQ[(Prime[k] + 2n)/(2n + 1)], AppendTo[a, Prime[k]]], {k, 1, 1500}]; a
+  A136071 Father primes of order 2.   n = 2; a = {}; Do[If[PrimeQ[(Prime[k] - 2n)/(2n + 1)], AppendTo[a, Prime[k]]], {k, 1, 1500}]; a
+  A136052 Daughter primes of order 3. n = 3; a = {}; Do[If[PrimeQ[(Prime[k] + 2n)/(2n + 1)], AppendTo[a, (Prime[k] + 2n)/(2n + 1)]], {k, 1, 1500}]; a
+  A136082 Son primes of order 5.      n = 5; a = {}; Do[If[PrimeQ[(Prime[k] - 2n)/(2n + 1)], AppendTo[a, (Prime[k] - 2n)/(2n + 1)]], {k, 1, 1000}]; a
+*/
   @Override
   public Z next() {
     while (true) {

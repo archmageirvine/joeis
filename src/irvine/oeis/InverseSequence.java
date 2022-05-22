@@ -10,7 +10,7 @@ import irvine.math.z.Z;
  * sequence.  Sequences exceeding the value of a long will also fail at some point.
  * @author Sean A. Irvine
  */
-public class PositionOfNSequence implements Sequence {
+public class InverseSequence implements Sequence {
 
   private static final int BIT_LIMIT = 50;
   private final Sequence mS;
@@ -24,7 +24,7 @@ public class PositionOfNSequence implements Sequence {
    * @param initial starting value to search for
    * @param offset sequence offset
    */
-  public PositionOfNSequence(final Sequence seq, final long initial, final long offset) {
+  public InverseSequence(final Sequence seq, final long initial, final long offset) {
     mS = seq;
     mN = initial - 1;
     mM = offset - 1;
@@ -35,7 +35,7 @@ public class PositionOfNSequence implements Sequence {
    * @param seq underlying sequence
    * @param initial starting value to search for
    */
-  public PositionOfNSequence(final Sequence seq, final long initial) {
+  public InverseSequence(final Sequence seq, final long initial) {
     this(seq, initial, 1);
   }
 
@@ -43,7 +43,7 @@ public class PositionOfNSequence implements Sequence {
    * Construct a new sequence of positions.
    * @param seq underlying sequence
    */
-  public PositionOfNSequence(final Sequence seq) {
+  public InverseSequence(final Sequence seq) {
     this(seq, 1);
   }
 

@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 
 /**
  * A038027 Least k such that A038025(k)=n-th composite number or 0 if none.
  * @author Sean A. Irvine
  */
-public class A038027 extends PositionOfNSequence {
+public class A038027 extends InverseSequence {
 
   private final Fast mPrime = new Fast();
 

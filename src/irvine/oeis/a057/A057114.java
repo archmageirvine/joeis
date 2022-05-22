@@ -54,6 +54,7 @@ public class A057114 implements Sequence {
     while (mOrdering.get(t) == null) {
       stepSternBrocot();
     }
-    return Z.valueOf(mOrdering.get(t));
+    // We can remove because this is a permutation
+    return Z.valueOf(mOrdering.remove(t));
   }
 }

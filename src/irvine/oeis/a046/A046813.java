@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 
 /**
  * A046813 Smallest number m with nonzero digits such that A046810(m)=n.
  * @author Sean A. Irvine
  */
-public class A046813 extends PositionOfNSequence {
+public class A046813 extends InverseSequence {
 
   /** Construct the sequence. */
   public A046813() {

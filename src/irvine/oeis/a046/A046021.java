@@ -1,13 +1,13 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 import irvine.oeis.a002.A002034;
 
 /**
  * A046021 Least inverse of the Kempner function A002034.
  * @author Sean A. Irvine
  */
-public class A046021 extends PositionOfNSequence {
+public class A046021 extends InverseSequence {
 
   /** Construct the sequence. */
   public A046021() {

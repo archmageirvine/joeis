@@ -3,13 +3,13 @@ package irvine.oeis.a038;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 
 /**
  * A038028 Position reached by frog in A038027 or 0 if none. A038026(A038027(n)).
  * @author Sean A. Irvine
  */
-public class A038028 extends PositionOfNSequence {
+public class A038028 extends InverseSequence {
 
   private MemorySequence mA038026 = MemorySequence.cachedSequence(new A038026());
   private final Fast mPrime = new Fast();

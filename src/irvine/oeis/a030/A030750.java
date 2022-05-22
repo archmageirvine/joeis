@@ -1,12 +1,12 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 
 /**
  * A030750 a(n)=least k such that s(k)=n, where s=A030747.
  * @author Sean A. Irvine
  */
-public class A030750 extends PositionOfNSequence {
+public class A030750 extends InverseSequence {
 
   /** Construct the sequence. */
   public A030750() {

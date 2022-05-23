@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 import irvine.oeis.a034.A034693;
 
 /**
@@ -8,7 +8,7 @@ import irvine.oeis.a034.A034693;
  *
  * @author Sean A. Irvine
  */
-public class A047980 extends PositionOfNSequence {
+public class A047980 extends InverseSequence {
 
   /** Construct the sequence. */
   public A047980() {

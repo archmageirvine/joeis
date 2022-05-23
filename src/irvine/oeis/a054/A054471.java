@@ -2,7 +2,7 @@ package irvine.oeis.a054;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 import irvine.oeis.a006.A006556;
 import irvine.oeis.a008.A008578;
 
@@ -10,7 +10,7 @@ import irvine.oeis.a008.A008578;
  * A054471 Smallest prime p having n different cycles in decimal expansions of k/p, k=1..p-1.
  * @author Sean A. Irvine
  */
-public class A054471 extends PositionOfNSequence {
+public class A054471 extends InverseSequence {
 
   private final MemorySequence mPrimes = MemorySequence.cachedSequence(new A008578());
 

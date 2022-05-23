@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
 import irvine.math.z.Z;
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000688;
 import irvine.oeis.a033.A033637;
@@ -10,7 +10,7 @@ import irvine.oeis.a033.A033637;
  * A046056 Smallest order for which there are n nonisomorphic finite Abelian groups, or 0 if no such order exists.
  * @author Sean A. Irvine
  */
-public class A046056 extends PositionOfNSequence {
+public class A046056 extends InverseSequence {
 
   private final Sequence mProductPartions = new A033637();
   private long mPP = mProductPartions.next().longValueExact();

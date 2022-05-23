@@ -1,13 +1,13 @@
 package irvine.oeis.a050;
 
 import irvine.math.z.Z;
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 
 /**
  * A050810 From sequence A050782, the n's corresponding to the first occurrence of m (or 0 if not defined).
  * @author Sean A. Irvine
  */
-public class A050810 extends PositionOfNSequence {
+public class A050810 extends InverseSequence {
 
   /** Construct the sequence. */
   public A050810() {

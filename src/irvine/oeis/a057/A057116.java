@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A057116.
+ * A057116 n = a*b where ab is cyclic permutation of n.
  * @author Sean A. Irvine
  */
 public class A057116 implements Sequence {

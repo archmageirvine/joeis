@@ -1,12 +1,12 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 
 /**
  * A054428 Inverse permutation to A054427.
  * @author Sean A. Irvine
  */
-public class A054428 extends PositionOfNSequence {
+public class A054428 extends InverseSequence {
 
   /** Construct the sequence. */
   public A054428() {

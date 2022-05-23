@@ -1,12 +1,12 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 
 /**
  * A035237 Smallest number that has exactly n substrings which are square.
  * @author Sean A. Irvine
  */
-public class A035237 extends PositionOfNSequence {
+public class A035237 extends InverseSequence {
 
   /** Construct the sequence. */
   public A035237() {

@@ -1,12 +1,12 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.PositionOfNSequence;
+import irvine.oeis.InverseSequence;
 
 /**
  * A038204 Least k such that factorials have exactly n distinct residues mod k.
  * @author Sean A. Irvine
  */
-public class A038204 extends PositionOfNSequence {
+public class A038204 extends InverseSequence {
 
   /** Construct the sequence. */
   public A038204() {

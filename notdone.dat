@@ -1831,3 +1831,8 @@ A056934 Antichains (or order ideals) in the poset 2*2*7*n or size of the distrib
 A056935 Antichains (or order ideals) in the poset 2*3*3*n or size of the distributive lattice J(2*3*3*n)
 A056936 Antichains (or order ideals) in the poset 2*3*4*n or size of the distributive lattice J(2*3*4*n)
 A056937 Number of antichains (or order ideals) in the poset 3*3*3*n or size of the distributive lattice J(3*3*3*n)
+A057132 Number of equivalence classes of self-dual Boolean functions of n variables under action of symmetric group S_n.
+A057133 Number of equivalence classes of self-dual 3-valued Post functions of n variables under action of symmetric group S_n
+A057134 Number of equivalence classes of self-dual 4-valued Post functions of n variables under action of symmetric group S_n
+A057140 Number of equivalence classes of self-dual 3-valued Post functions of n variables under action of semi-direct product of symmetric group S_n and complementing group C(n,3)
+A057141 Number of equivalence classes of self-dual 4-valued Post functions of n variables under action of semi-direct product of symmetric group S_n and complementing group C(n,4).

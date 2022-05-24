@@ -30,12 +30,12 @@ public class A057117 extends A014486 {
     return mOrdering.remove(n);
   }
 
-  private static class Node {
-    private Node mLeft = null;
-    private Node mRight = null;
+  static class Node {
+    Node mLeft = null;
+    Node mRight = null;
   }
 
-  private void dfs(final Node node, final StringBuilder sb) {
+  private static void dfs(final Node node, final StringBuilder sb) {
     if (node == null) {
       sb.append('0');
     } else {
@@ -45,10 +45,7 @@ public class A057117 extends A014486 {
     }
   }
 
-  private Z bfsTodfs(final Z n) {
-    if (n.isZero()) {
-      return Z.ZERO;
-    }
+  static Node toBfs(final Z n) {
     final String s = n.toString(2);
     // Build dfs tree
     final Node root = new Node();
@@ -67,6 +64,14 @@ public class A057117 extends A014486 {
         bfs.add(t);
       }
     }
+    return root;
+  }
+
+  static Z bfsTodfs(final Z n) {
+    if (n.isZero()) {
+      return Z.ZERO;
+    }
+    final Node root = toBfs(n);
     final StringBuilder sb = new StringBuilder();
     dfs(root, sb);
     //System.out.println(s + " -> " + sb);

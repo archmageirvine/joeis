@@ -14,7 +14,7 @@ public class A014442 implements Sequence {
 
   @Override
   public Z next() {
-    return Jaguar.factor(Z.valueOf(++mN).square().add(1)).lpf();
+    return Jaguar.factor(Z.valueOf(++mN).square().add(1)).largestPrimeFactor();
   }
 }
 

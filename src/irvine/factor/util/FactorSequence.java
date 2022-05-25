@@ -820,12 +820,22 @@ public final class FactorSequence {
   }
 
   /**
-   * Largest prime factor of the number.
+   * Largest prime factor of the number (or 1).
    * @return largest prime factor
    */
-  public Z lpf() {
+  public Z largestPrimeFactor() {
     completeOrException();
     final Z[] f = toZArray();
     return f.length == 0 ? Z.ONE : f[f.length - 1];
+  }
+
+  /**
+   * Least prime factor of the number (or 1).
+   * @return least prime factor
+   */
+  public Z leastPrimeFactor() {
+    completeOrException();
+    final Z[] f = toZArray();
+    return f.length == 0 ? Z.ONE : f[0];
   }
 }

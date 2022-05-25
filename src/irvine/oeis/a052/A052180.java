@@ -18,7 +18,7 @@ public class A052180 extends A065091 {
     mP = super.next();
     Z max = Z.ONE;
     while (!s.equals(mP)) {
-      max = max.max(Jaguar.factor(s).toZArray()[0]);
+      max = max.max(Jaguar.factor(s).leastPrimeFactor());
       s = s.add(1);
     }
     return max;

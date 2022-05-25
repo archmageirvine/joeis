@@ -19,6 +19,6 @@ public class A054415 implements Sequence {
       return Z.ONE;
     }
     mF = mF.multiply(mN);
-    return Jaguar.factor(mF.subtract(1)).toZArray()[0];
+    return Jaguar.factor(mF.subtract(1)).leastPrimeFactor();
   }
 }

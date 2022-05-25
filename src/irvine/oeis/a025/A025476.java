@@ -16,7 +16,7 @@ public class A025476 extends A025475 {
 
   @Override
   public Z next() {
-    return mFactor.factorize(super.next()).toZArray()[0];
+    return mFactor.factorize(super.next()).leastPrimeFactor();
   }
 }
 

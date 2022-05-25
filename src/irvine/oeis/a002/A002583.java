@@ -18,6 +18,6 @@ public class A002583 implements Sequence {
     if (++mN > 1) {
       mF = mF.multiply(mN);
     }
-    return Jaguar.factor(mF.add(1)).lpf();
+    return Jaguar.factor(mF.add(1)).largestPrimeFactor();
   }
 }

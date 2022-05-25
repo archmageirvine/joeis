@@ -25,7 +25,7 @@ public class A002586 implements Sequence {
     } else if (n.isProbablePrime()) {
       return n;
     } else {
-      return Jaguar.factor(n).toZArray()[0];
+      return Jaguar.factor(n).leastPrimeFactor();
     }
   }
 

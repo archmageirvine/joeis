@@ -26,6 +26,6 @@ public class A002591 implements Sequence {
       mN += 2;
       System.out.println("Doing: 3^" + mN + "-1=" + t);
     }
-    return Jaguar.factor(t).lpf();
+    return Jaguar.factor(t).largestPrimeFactor();
   }
 }

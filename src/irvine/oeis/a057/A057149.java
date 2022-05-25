@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057149.
+ * A057149 Triangle T(n,k) of n X n binary matrices with k ones, with no zero rows or columns, up to row and column permutation.
  * @author Sean A. Irvine
  */
 public class A057149 implements Sequence {
@@ -24,12 +24,12 @@ public class A057149 implements Sequence {
     }
   };
 
-  private Z t(final int n, final int k) {
+  protected Z t(final int n, final int k) {
     if (k == 0) {
       return Z.ZERO;
     }
     if (n == 1) {
-      return Z.ONE;
+      return k == 1 ? Z.ONE : Z.ZERO;
     }
     final Q a = mCycleIndexCache.get(n, n).coeff(k);
     final Q b = mCycleIndexCache.get(n - 1, n - 1).coeff(k);

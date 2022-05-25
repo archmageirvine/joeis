@@ -20,7 +20,7 @@ public class A055399 implements Sequence {
 
   @Override
   public Z next() {
-    final int t = mPrime.isPrime(++mN) ? (int) mPrime.nextPrime((int) LongUtils.sqrt(mN)) : Jaguar.factor(mN).toZArray()[0].intValueExact();
+    final int t = mPrime.isPrime(++mN) ? (int) mPrime.nextPrime((int) LongUtils.sqrt(mN)) : Jaguar.factor(mN).leastPrimeFactor().intValueExact();
     return mPrimePi.a(t - 1);
   }
 }

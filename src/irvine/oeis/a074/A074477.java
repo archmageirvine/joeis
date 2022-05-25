@@ -32,7 +32,7 @@ public class A074477 implements Sequence {
 
   @Override
   public Z next() {
-    final Z result = Jaguar.factor(mN.add(mAdd)).lpf();
+    final Z result = Jaguar.factor(mN.add(mAdd)).largestPrimeFactor();
     mN = mN.multiply(mBase);
     return result;
   }

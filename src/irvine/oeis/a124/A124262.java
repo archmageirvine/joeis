@@ -31,7 +31,10 @@ public class A124262 implements Sequence {
   @Override
   public Z next() {
     final Z result = mA;
-    Z cand = mA.multiply(mMult).subtract(1);
+    Z cand = mA.multiply(mMult);
+    if (cand.isEven()) {
+      cand = cand.subtract(1);
+    }
     while (!cand.isProbablePrime()) {
       cand = cand.subtract(2);
     }

@@ -1,5 +1,6 @@
 package irvine.oeis.a037;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
@@ -11,24 +12,9 @@ import irvine.util.array.DynamicLongArray;
 public class A037183 implements Sequence {
 
   private final DynamicLongArray mFirsts = new DynamicLongArray();
-  private final long[] mWorkspace = new long[Long.SIZE];
   private int mN = 0;
   private long mM = 2;
   private long mAdd = 1;
-
-  private boolean isPalindrome(long n, final long base) {
-    int pos = 0;
-    while (n != 0) {
-      mWorkspace[pos++] = n % base;
-      n /= base;
-    }
-    for (int j = 0, k = pos - 1; j < k; ++j, --k) {
-      if (mWorkspace[j] != mWorkspace[k]) {
-        return false;
-      }
-    }
-    return true;
-  }
 
   @Override
   public Z next() {
@@ -40,8 +26,8 @@ public class A037183 implements Sequence {
     while (mFirsts.get(mN) == 0) {
       mM += mAdd;
       int cnt = 0;
-      for (long base = 2; base < mM; ++base) {
-        if (isPalindrome(mM, base)) {
+      for (int base = 2; base < mM; ++base) {
+        if (LongUtils.isPalindrome(mM, base)) {
           ++cnt;
         }
       }

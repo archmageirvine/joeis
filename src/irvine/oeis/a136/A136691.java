@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 public class A136691 implements Sequence {
 
   private int mN;
-  private int mBase;
+  private final int mBase;
   private Z mF;
   private int mTrail; // number of trailing zeros
 
@@ -22,7 +22,7 @@ public class A136691 implements Sequence {
 
   /**
    * Generic constructor with parameters
-   * @param base
+   * @param base the base
    */
   public A136691(final int base) {
     mN = -1;
@@ -38,7 +38,7 @@ public class A136691 implements Sequence {
       return Z.ONE;
     }
     mF = mF.multiply(mN);
-    String str = mF.toString(mBase);
+    final String str = mF.toString(mBase);
     int pos = str.length() - mTrail;
     while (str.charAt(--pos) == '0') {
       ++mTrail;

@@ -22,8 +22,8 @@ public class A020882 implements Sequence {
       }
       if (LongUtils.gcd(mC, mB) == 1) {
         final long a2 = mC * mC - mB * mB;
-        final long s = LongUtils.sqrt(a2);
-        if (s < mB && s * s == a2 && LongUtils.gcd(s, mC) == 1 && LongUtils.gcd(s, mB) == 1) {
+        final long a = LongUtils.sqrt(a2);
+        if (a < mB && a * a == a2 && LongUtils.gcd(a, mC) == 1 && LongUtils.gcd(a, mB) == 1) {
           return Z.valueOf(mC);
         }
       }

@@ -9,6 +9,7 @@ import java.util.Random;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
+import irvine.util.CollectionUtils;
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
 
@@ -805,5 +806,24 @@ public final class LongUtils {
       // do nothing
     }
     return m;
+  }
+
+  /**
+   * Test if the given number is a palindrome in the specified base.
+   * @param n number to test
+   * @param base base to use
+   * @return true iff the number is a palindrome
+   */
+  public static boolean isPalindrome(final long n, final int base) {
+    if (base <= 36) {
+      return StringUtils.isPalindrome(Long.toString(n, base));
+    }
+    final ArrayList<Long> digits = new ArrayList<>();
+    long t = n;
+    while (t != 0) {
+      digits.add(t % base);
+      t /= base;
+    }
+    return CollectionUtils.isPalindrome(digits);
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A144779 Variant of Sylvester&apos;s sequence: a(n+1) = a(n)^2 - a(n) + 1, with a(1) = 5.
+ * A144779 Variant of Sylvester's sequence: a(n+1) = a(n)^2 - a(n) + 1, with a(1) = 5.
  * @author Georg Fischer
  */
 public class A144779 implements Sequence {

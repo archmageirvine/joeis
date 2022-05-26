@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000979;
 
 /**
- * A127964 Number of 0&apos;s in A127962(n).
+ * A127964 Number of 0's in A127962(n).
  * @author Georg Fischer
  */
 public class A127964 extends A000979 {

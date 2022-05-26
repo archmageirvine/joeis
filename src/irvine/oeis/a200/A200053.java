@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 public class A200053 implements Sequence {
 
   private int mN;
-  private int mDim;
+  private final int mDim;
 
   /** Construct the sequence. */
   public A200053() {
@@ -37,7 +37,7 @@ public class A200053 implements Sequence {
    A:= proc(n)  2*add(T(a, n, 0), a=-4..4) end proc: A(1):= 1:
    seq(A(n), n=1..30);
   */
-  public final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<Z>() {
+  private final MemoryFunctionInt4<Z> mB = new MemoryFunctionInt4<Z>() {
     @Override
     protected Z compute(final int a, final int n, final int s, final int dim) {
       if (n == 1) {

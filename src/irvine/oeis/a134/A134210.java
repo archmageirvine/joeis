@@ -10,9 +10,8 @@ import irvine.oeis.a000.A000796;
 public class A134210 extends A000796 {
 
   private int mN;
-  private int mCount;
-  private int mDigit10;
-  private int mDigit1;
+  private final int mDigit10;
+  private final int mDigit1;
   private int mState;
 
   /** Construct the sequence. */
@@ -36,7 +35,7 @@ public class A134210 extends A000796 {
   public Z next() {
     while (true) {
       ++mN;
-      int digitPi = super.next().intValue();
+      final int digitPi = super.next().intValue();
       if (mState == 1) {
         if (digitPi == mDigit10) {
           mState = 2;

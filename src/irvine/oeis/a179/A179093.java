@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.a144.A144779;
 
 /**
- * A179093 Variant of Sylvester&apos;s sequence: a(n + 1) = a(n)^2 - a(n) + 1, with a(1) = 17
+ * A179093 Variant of Sylvester's sequence: a(n + 1) = a(n)^2 - a(n) + 1, with a(1) = 17.
  * @author Georg Fischer
  */
 public class A179093 extends A144779 {

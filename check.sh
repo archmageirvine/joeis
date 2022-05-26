@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Report on various state of implementaitons.
+# Report first unimplemented sequences (excluding those in notdone.dat).
 
 NOT_DONE=notdone.dat
 

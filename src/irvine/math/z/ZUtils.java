@@ -11,8 +11,10 @@ import java.util.Random;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.factor.util.FactorSequence;
+import irvine.util.CollectionUtils;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
+import irvine.util.string.StringUtils;
 
 /**
  * Utility functions.
@@ -1178,5 +1180,26 @@ public final class ZUtils {
       }
     }
     return prod;
+  }
+
+  /**
+   * Test if the given number is a palindrome in the specified base.
+   * @param n number to test
+   * @param base base to use
+   * @return true iff the number is a palindrome
+   */
+  public static boolean isPalindrome(final Z n, final int base) {
+    if (base <= 36) {
+      return StringUtils.isPalindrome(n.toString(base));
+    }
+    final Z b = Z.valueOf(base);
+    final ArrayList<Long> digits = new ArrayList<>();
+    Z t = n;
+    while (!t.isZero()) {
+      final Z[] qr = t.divideAndRemainder(b);
+      digits.add(qr[1].longValue());
+      t = qr[0];
+    }
+    return CollectionUtils.isPalindrome(digits);
   }
 }

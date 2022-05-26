@@ -20,6 +20,6 @@ public class A056110 implements Sequence {
     }
     mF = mF.multiply(mN);
     final Z t = mF.subtract(1);
-    return t.divide(Jaguar.factor(t).toZArray()[0]);
+    return t.divide(Jaguar.factor(t).leastPrimeFactor());
   }
 }

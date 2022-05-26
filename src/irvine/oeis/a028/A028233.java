@@ -19,7 +19,7 @@ public class A028233 implements Sequence {
       return Z.ONE;
     }
     final FactorSequence fs = Jaguar.factor(mN);
-    final Z p = fs.toZArray()[0];
+    final Z p = fs.leastPrimeFactor();
     return p.pow(fs.getExponent(p));
   }
 }

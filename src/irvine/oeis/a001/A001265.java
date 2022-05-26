@@ -28,7 +28,7 @@ public class A001265 implements Sequence {
       mPos = 0;
       final FactorSequence fs = Jaguar.factor(base().pow(++mN).subtract(1));
       if (fs.omega() == 0) {
-        mPending.add(Z.ONE);
+        mPending.add(mN == 0 ? Z.ZERO : Z.ONE);
       } else {
         for (final Z a : fs.toZArray()) {
           for (int k = 0; k < fs.getExponent(a); ++k) {

@@ -24,7 +24,7 @@ public class A034970 implements Sequence {
         return Z.THREE;
       }
     }
-    final Z lpf = Jaguar.factor(mA.multiply(mB).subtract(1)).lpf();
+    final Z lpf = Jaguar.factor(mA.multiply(mB).subtract(1)).largestPrimeFactor();
     mA = mB;
     mB = lpf;
     return lpf;

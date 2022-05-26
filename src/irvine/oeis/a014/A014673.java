@@ -17,11 +17,11 @@ public class A014673 implements Sequence {
     if (++mN == 1) {
       return Z.ONE;
     }
-    final long m = mN / Jaguar.factor(mN).toZArray()[0].longValue();
+    final long m = mN / Jaguar.factor(mN).leastPrimeFactor().longValue();
     if (m == 1) {
       return Z.ONE;
     }
-    return Jaguar.factor(m).toZArray()[0];
+    return Jaguar.factor(m).leastPrimeFactor();
   }
 }
 

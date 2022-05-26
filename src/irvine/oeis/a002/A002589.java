@@ -36,7 +36,7 @@ public class A002589 implements Sequence {
       System.out.println("Doing: 2^" + mN + "+1 Phi(" + 2 * mN + ",2)=" + n);
     }
     while (true) {
-      final Z lpf = Jaguar.factor(n).lpf();
+      final Z lpf = Jaguar.factor(n).largestPrimeFactor();
       if (!isIntrinsic(lpf, 2 * mN)) {
         return lpf;
       }

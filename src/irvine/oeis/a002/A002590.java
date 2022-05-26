@@ -20,6 +20,6 @@ public class A002590 implements Sequence {
     if (mVerbose) {
       System.out.println("Doing: 2^" + mN + "+1=" + t);
     }
-    return Jaguar.factor(t).lpf();
+    return Jaguar.factor(t).largestPrimeFactor();
   }
 }

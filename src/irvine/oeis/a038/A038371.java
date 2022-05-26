@@ -15,6 +15,6 @@ public class A038371 implements Sequence {
   @Override
   public Z next() {
     mT = mT == null ? Z.ONE : mT.multiply(10);
-    return Jaguar.factor(mT.add(1)).toZArray()[0];
+    return Jaguar.factor(mT.add(1)).leastPrimeFactor();
   }
 }

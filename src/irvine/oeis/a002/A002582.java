@@ -16,6 +16,6 @@ public class A002582 implements Sequence {
   @Override
   public Z next() {
     mF = mF.multiply(++mN);
-    return Jaguar.factor(mF.subtract(1)).lpf();
+    return Jaguar.factor(mF.subtract(1)).largestPrimeFactor();
   }
 }

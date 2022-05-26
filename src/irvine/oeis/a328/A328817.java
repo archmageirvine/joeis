@@ -15,7 +15,7 @@ public class A328817 implements Sequence {
 
   private boolean isSquareLeastPrimeFactor(final long n) {
     final FactorSequence fs = Jaguar.factor(n);
-    return fs.getExponent(fs.toZArray()[0]) > 1;
+    return fs.getExponent(fs.leastPrimeFactor()) > 1;
   }
 
   private boolean isSquareLeastPrimeFactor(final long n, final long steps, final int minCount) {

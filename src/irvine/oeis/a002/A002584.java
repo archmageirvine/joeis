@@ -24,6 +24,6 @@ public class A002584 implements Sequence {
     if (mVerbose) {
       System.out.println("Doing: " + mN + "#-1=" + t);
     }
-    return Jaguar.factor(t).lpf();
+    return Jaguar.factor(t).largestPrimeFactor();
   }
 }

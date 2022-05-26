@@ -157,7 +157,7 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
         }
         // Try factordb
         final FactorSequence fs = Jaguar.factor(prodPlusOne);
-        final Z p = fs.toZArray()[0];
+        final Z p = fs.leastPrimeFactor();
         mSeq.add(p);
       }
     }

@@ -16,6 +16,6 @@ public class A051342 extends A002110 {
 
   @Override
   public Z next() {
-    return Jaguar.factor(super.next().add(1)).toZArray()[0];
+    return Jaguar.factor(super.next().add(1)).leastPrimeFactor();
   }
 }

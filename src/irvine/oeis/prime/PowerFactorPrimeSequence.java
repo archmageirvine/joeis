@@ -48,7 +48,7 @@ public class PowerFactorPrimeSequence implements Sequence {
    * @param add additive term
    * @param div optional divisor, or 0 for no divisor
    */
-  protected PowerFactorPrimeSequence(final int offset, final int start, final int num, final int base, final int add) {
+  public PowerFactorPrimeSequence(final int offset, final int start, final int num, final int base, final int add) {
     this(offset, start, num, base, add, 1);
   }
 

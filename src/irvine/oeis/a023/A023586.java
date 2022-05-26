@@ -14,6 +14,6 @@ public class A023586 extends A000040 {
   @Override
   public Z next() {
     final FactorSequence fs = Jaguar.factor(super.next().multiply2().subtract(1));
-    return Z.valueOf(fs.getExponent(fs.toZArray()[0]));
+    return Z.valueOf(fs.getExponent(fs.leastPrimeFactor()));
   }
 }

@@ -17,6 +17,6 @@ public class A055396 implements Sequence {
 
   @Override
   public Z next() {
-    return ++mN == 1 ? Z.ZERO : mPrimePi.a(Jaguar.factor(mN).toZArray()[0].intValueExact() - 1);
+    return ++mN == 1 ? Z.ZERO : mPrimePi.a(Jaguar.factor(mN).leastPrimeFactor().intValueExact() - 1);
   }
 }

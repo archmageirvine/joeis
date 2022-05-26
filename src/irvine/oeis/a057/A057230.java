@@ -53,7 +53,7 @@ public class A057230 implements Sequence {
     while (mA.isEmpty()) {
       final TreeSet<Z> next = getPrimorialSums(++mN);
       if (mVerbose) {
-        StringUtils.message("Computed " + next.size() + " sums for " + mN + " least " + next.first());
+        StringUtils.message("Computed " + next.size() + " sums for " + mN + " min " + next.first() + " max " + next.last());
       }
       mA = new TreeSet<>(next);
       mA.retainAll(mSums);
@@ -67,6 +67,9 @@ public class A057230 implements Sequence {
         it.remove();
       }
       mSums.addAll(next);
+      if (mVerbose) {
+        StringUtils.message("Total sums still in contention " + mSums.size());
+      }
     }
     return mA.pollFirst();
   }

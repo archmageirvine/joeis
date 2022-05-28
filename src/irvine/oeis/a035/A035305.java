@@ -14,8 +14,8 @@ public class A035305 implements Sequence {
   private static final int LENGTH = 200;
   private static final int SPACE = 6;
 
-  private int mN = 1;
-  private int[] mRest = new int[LENGTH];
+  private int mN = 0;
+  private final int[] mRest = new int[LENGTH];
   private long mSavedN;
   //private long[] mSavedSquare = new long[LENGTH];
 
@@ -25,7 +25,7 @@ public class A035305 implements Sequence {
     while (true) {
       long bigN = 0;
       for (int i = 0; i < k; ++i) {
-        square[i] = ((k - 1) * n + index[i]) * ((k - 1) * n + index[i]);
+        square[i] = ((long) (k - 1) * n + index[i]) * ((long) (k - 1) * n + index[i]);
         bigN += square[i];
       }
       bigN /= k - 1;
@@ -69,7 +69,9 @@ public class A035305 implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 1) {
+      return Z.ONE;
+    }
     final int[] index = new int[LENGTH];
     mSavedN = -1;
     for (int k = 0; k < LENGTH; ++k) {

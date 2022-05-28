@@ -472,13 +472,27 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
    * @return Laplace series
    */
   public Polynomial<E> serlaplace(final Polynomial<E> p) {
-    final Polynomial<E> res = create(Collections.emptyList());
+    final Polynomial<E> res = empty();
     E f = mOne;
     for (int k = 0; k <= p.degree(); ++k) {
       if (k > 1) {
         f = mElementRing.multiply(f, mElementRing.coerce(k));
       }
       res.add(mElementRing.multiply(p.coeff(k), f));
+    }
+    return res;
+  }
+
+  /**
+   * Series convolution or Hadamard product of two polynomials.
+   * @param a first polynomial
+   * @param b second polynomial
+   * @return Hadamard product
+   */
+  public Polynomial<E> hadamardMultiply(final Polynomial<E> a, final Polynomial<E> b) {
+    final Polynomial<E> res = empty();
+    for (int k = 0; k <= Math.min(a.degree(), b.degree()); ++k) {
+      res.add(mElementRing.multiply(a.coeff(k), b.coeff(k)));
     }
     return res;
   }

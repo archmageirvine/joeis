@@ -1837,3 +1837,4 @@ A057134 Number of equivalence classes of self-dual 4-valued Post functions of n 
 A057140 Number of equivalence classes of self-dual 3-valued Post functions of n variables under action of semi-direct product of symmetric group S_n and complementing group C(n,3)
 A057141 Number of equivalence classes of self-dual 4-valued Post functions of n variables under action of semi-direct product of symmetric group S_n and complementing group C(n,4).
 A057210 Number of fullerenes with 2n vertices (or carbon atoms), counting enantiomorphic pairs as distinct
+A057241 Circuit cost of the hardest Boolean function of n variables; metric: 2-input AND-gates cost 1, NOT is free, fanout is free, inputs are free, no feedback allowed

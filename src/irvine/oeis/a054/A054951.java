@@ -40,7 +40,7 @@ public class A054951 implements Sequence {
     return results;
   }
 
-  protected <E> List<List<E>> invGgfCiData(final List<List<Z>> blocks, final Field<E> fld, final Function<Integer, E> yf) {
+  protected <E> List<List<E>> invGgfCiData(final List<List<E>> blocks, final Field<E> fld, final Function<Integer, E> yf) {
     final List<List<E>> results = new ArrayList<>();
     results.add(Collections.singletonList(fld.one()));
     for (int n = 1; n < blocks.size(); ++n) {
@@ -49,7 +49,7 @@ public class A054951 implements Sequence {
       for (int i = 1; i <= n; ++i) {
         final int j = n - i;
         final List<E> uj = results.get(j);
-        final List<Z> ui = blocks.get(i);
+        final List<E> ui = blocks.get(i);
         final E b = fld.coerce(Binomial.binomial(n, i));
         int xj = -1;
         final IntegerPartition partj = new IntegerPartition(j);
@@ -79,7 +79,7 @@ public class A054951 implements Sequence {
             while (col >= v.size()) {
               v.add(fld.zero());
             }
-            final E w = fld.multiply(fld.multiply(uj.get(xj), b), fld.coerce(ui.get(xi)));
+            final E w = fld.multiply(fld.multiply(uj.get(xj), b), ui.get(xi));
             v.set(col, fld.subtract(v.get(col), fld.multiply(pr, w)));
           }
         }
@@ -106,7 +106,8 @@ public class A054951 implements Sequence {
 
   @Override
   public Z next() {
-    final IntegerField fld = IntegerField.SINGLETON;
-    return unlabeledOgf(fld, invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, fld, e -> Z.TWO), fld, e -> Z.TWO)).coeff(mN).negate();
+    final List<List<Z>> gcid = graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, IntegerField.SINGLETON, e -> Z.TWO);
+    final List<List<Z>> inv = invGgfCiData(gcid, IntegerField.SINGLETON, e -> Z.TWO);
+    return unlabeledOgf(IntegerField.SINGLETON, inv).coeff(mN).negate();
   }
 }

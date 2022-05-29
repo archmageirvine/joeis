@@ -8,7 +8,9 @@ import java.util.Map;
 import java.util.function.Function;
 
 import irvine.math.IntegerUtils;
+import irvine.math.api.Field;
 import irvine.math.graph.Edges;
+import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
@@ -41,28 +43,30 @@ public class A054951 implements Sequence {
     return results;
   }
 
-  protected List<List<Z>> invGgfCiData(final List<List<Z>> blocks, final Function<Integer, Z> yf) {
-    final List<List<Z>> results = new ArrayList<>();
-    results.add(Collections.singletonList(Z.ONE));
+  protected <E> List<List<E>> invGgfCiData(final List<List<Z>> blocks, final Field<E> fld, final Function<Integer, E> yf) {
+    final List<List<E>> results = new ArrayList<>();
+    results.add(Collections.singletonList(fld.one()));
     for (int n = 1; n < blocks.size(); ++n) {
       final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
-      final List<Z> v = new ArrayList<>();
+      final List<E> v = new ArrayList<>();
       for (int i = 1; i <= n; ++i) {
         final int j = n - i;
-        final List<Z> uj = results.get(j);
+        final List<E> uj = results.get(j);
         final List<Z> ui = blocks.get(i);
-        final Z b = Binomial.binomial(n, i);
-        final Z[] q = new Z[i + 1]; // indexed from 1..n
+        final E b = fld.coerce(Binomial.binomial(n, i));
+//        final List<E> q = new ArrayList<>();
+//        q.add(null); // 0 unused
+        final E[] q = (E[]) new Object[i + 1]; // indexed from 1..n
         int xj = -1;
         final IntegerPartition partj = new IntegerPartition(j);
         int[] pj;
         while ((pj = partj.next()) != null) {
           ++xj;
           for (int s = 1; s < q.length; ++s) {
-            q[s] = Z.ONE;
+            q[s] = fld.one();
             for (final int k : pj) {
               final int g = IntegerUtils.gcd(s, k);
-              q[s] = q[s].multiply(yf.apply(s * k / g).pow(g));
+              q[s] = fld.multiply(q[s], fld.pow(yf.apply(s * k / g), g));
             }
           }
           int xi = -1;
@@ -71,15 +75,15 @@ public class A054951 implements Sequence {
           while ((pi = parti.next()) != null) {
             ++xi;
             final int col = pm.get(Arrays.toString(IntegerPartition.merge(pi, pj)));
-            Z pr = Z.ONE;
+            E pr = fld.one();
             for (final int k : pi) {
-              pr = pr.multiply(q[k]);
+              pr = fld.multiply(pr, q[k]);
             }
             while (col >= v.size()) {
-              v.add(Z.ZERO);
+              v.add(fld.zero());
             }
-            final Z w = uj.get(xj).multiply(b).multiply(ui.get(xi));
-            v.set(col, v.get(col).subtract(pr.multiply(w)));
+            final E w = fld.multiply(fld.multiply(uj.get(xj), b), fld.coerce(ui.get(xi)));
+            v.set(col, fld.subtract(v.get(col), fld.multiply(pr, w)));
           }
         }
       }
@@ -100,6 +104,6 @@ public class A054951 implements Sequence {
 
   @Override
   public Z next() {
-    return unlabeledOgf(invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, e -> Z.TWO), e -> Z.TWO)).coeff(mN).negate();
+    return unlabeledOgf(invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, e -> Z.TWO), IntegerField.SINGLETON, e -> Z.TWO)).coeff(mN).negate();
   }
 }

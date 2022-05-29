@@ -496,4 +496,9 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     }
     return res;
   }
+
+  @Override
+  public Polynomial<E> coerce(final Z n) {
+    return monomial(mElementRing.coerce(n), 0);
+  }
 }

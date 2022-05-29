@@ -41,7 +41,7 @@ public class A057275 extends A057273 {
     final List<List<Polynomial<Q>>> u = new ArrayList<>();
     u.add(Collections.singletonList(inner.zero())); // n == 0
     for (int n = 1; n <= nn; ++n) {
-      List<Polynomial<Q>> un = new ArrayList<>();
+      final List<Polynomial<Q>> un = new ArrayList<>();
       for (int k = 1; k <= n; ++k) {
         Polynomial<Q> sum;
         if (k == n) {

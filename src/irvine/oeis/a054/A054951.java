@@ -54,20 +54,20 @@ public class A054951 implements Sequence {
         final List<E> uj = results.get(j);
         final List<Z> ui = blocks.get(i);
         final E b = fld.coerce(Binomial.binomial(n, i));
-//        final List<E> q = new ArrayList<>();
-//        q.add(null); // 0 unused
-        final E[] q = (E[]) new Object[i + 1]; // indexed from 1..n
         int xj = -1;
         final IntegerPartition partj = new IntegerPartition(j);
         int[] pj;
         while ((pj = partj.next()) != null) {
+          final List<E> q = new ArrayList<>();
+          q.add(null); // 0 unused
           ++xj;
-          for (int s = 1; s < q.length; ++s) {
-            q[s] = fld.one();
+          for (int s = 1; s <= i; ++s) {
+            E qs = fld.one();
             for (final int k : pj) {
               final int g = IntegerUtils.gcd(s, k);
-              q[s] = fld.multiply(q[s], fld.pow(yf.apply(s * k / g), g));
+              qs = fld.multiply(qs, fld.pow(yf.apply(s * k / g), g));
             }
+            q.add(qs);
           }
           int xi = -1;
           final IntegerPartition parti = new IntegerPartition(i);
@@ -77,7 +77,7 @@ public class A054951 implements Sequence {
             final int col = pm.get(Arrays.toString(IntegerPartition.merge(pi, pj)));
             E pr = fld.one();
             for (final int k : pi) {
-              pr = fld.multiply(pr, q[k]);
+              pr = fld.multiply(pr, q.get(k));
             }
             while (col >= v.size()) {
               v.add(fld.zero());

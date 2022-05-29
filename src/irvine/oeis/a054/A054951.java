@@ -11,12 +11,10 @@ import irvine.math.IntegerUtils;
 import irvine.math.api.Field;
 import irvine.math.graph.Edges;
 import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -26,17 +24,16 @@ import irvine.oeis.Sequence;
  */
 public class A054951 implements Sequence {
 
-  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 0;
 
-  protected List<List<Z>> graphCycleIndexData(final int n, final Edges edgeFunc, final Function<Integer, Z> yf) {
-    final List<List<Z>> results = new ArrayList<>();
+  protected <E> List<List<E>> graphCycleIndexData(final int n, final Edges edgeFunc, final Field<E> fld, final Function<Integer, E> yf) {
+    final List<List<E>> results = new ArrayList<>();
     for (int k = 0; k <= n; ++k) {
-      final List<Z> v = new ArrayList<>();
+      final List<E> v = new ArrayList<>();
       final IntegerPartition part = new IntegerPartition(k);
       int[] p;
       while ((p = part.next()) != null) {
-        v.add(IntegerPartition.permCount(p).multiply(edgeFunc.edges(p, yf)));
+        v.add(fld.multiply(edgeFunc.edges(p, fld, yf), fld.coerce(IntegerPartition.permCount(p))));
       }
       results.add(v);
     }
@@ -109,6 +106,7 @@ public class A054951 implements Sequence {
 
   @Override
   public Z next() {
-    return unlabeledOgf(IntegerField.SINGLETON, invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, e -> Z.TWO), IntegerField.SINGLETON, e -> Z.TWO)).coeff(mN).negate();
+    final IntegerField fld = IntegerField.SINGLETON;
+    return unlabeledOgf(fld, invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, fld, e -> Z.TWO), fld, e -> Z.TWO)).coeff(mN).negate();
   }
 }

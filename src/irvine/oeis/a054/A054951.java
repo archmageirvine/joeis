@@ -12,12 +12,12 @@ import irvine.math.api.Field;
 import irvine.math.graph.Edges;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -93,17 +93,22 @@ public class A054951 implements Sequence {
   }
 
   // Helper to convert a cycle index series stored as a vector of vectors into an o.g.f. counting the unlabeled objects.
-  protected Polynomial<Z> unlabeledOgf(final List<List<Z>> data) {
-    final Polynomial<Z> res = RING.empty();
+  protected <E> Polynomial<E> unlabeledOgf(final Field<E> fld, final List<List<E>> data) {
+    final PolynomialRingField<E> ring = new PolynomialRingField<>(fld);
+    final Polynomial<E> res = ring.empty();
     Z f = Z.ONE;
     for (int n = 0; n < data.size(); f = f.multiply(++n)) {
-      res.add(ZUtils.sum(data.get(n)).divide(f));
+      E sum = fld.zero();
+      for (final E d : data.get(n)) {
+        sum = fld.add(sum, d);
+      }
+      res.add(fld.divide(sum, fld.coerce(f)));
     }
     return res;
   }
 
   @Override
   public Z next() {
-    return unlabeledOgf(invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, e -> Z.TWO), IntegerField.SINGLETON, e -> Z.TWO)).coeff(mN).negate();
+    return unlabeledOgf(IntegerField.SINGLETON, invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, e -> Z.TWO), IntegerField.SINGLETON, e -> Z.TWO)).coeff(mN).negate();
   }
 }

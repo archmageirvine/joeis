@@ -29,7 +29,6 @@ public class A057278 implements Sequence {
       final DegreeLimitedPolynomialRingField<Q> fld = new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, mN * (mN - 1));
       final List<List<Polynomial<Q>>> graphs = GraphUtils.graphCycleIndexData(fld, mN, Edges.DIGRAPH_EDGES, e -> fld.onePlusXToTheN(e));
       final Polynomial<Polynomial<Q>> res = GraphUtils.initiallyFinally(fld, graphs, e -> fld.onePlusXToTheN(e));
-      System.out.println(res);
       mRow = res.coeff(mN);
     }
     return mRow.coeff(mM).toZ();

@@ -26,6 +26,7 @@ import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.PairMultiply;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.r.Constants;
@@ -679,7 +680,7 @@ public final class GraphUtils {
             v.set(col, fld.subtract(v.get(col), t));
           }
         }
-      } // i
+      }
       results.add(v);
     }
     return results;
@@ -691,15 +692,6 @@ public final class GraphUtils {
       s[k] = v[k] * m;
     }
     return s;
-  }
-
-  // Substitute every variable (if any) with v -> v^power
-  @SuppressWarnings("unchecked")
-  private static <E, F> E deepSubstitute(final Field<E> fld, final E e, final int power) {
-    if (!(e instanceof Polynomial<?>)) {
-      return e;
-    }
-    return (E) ((PolynomialRingField<F>) fld).deepSubstitute((Polynomial<F>) e, power);
   }
 
   /**
@@ -727,7 +719,7 @@ public final class GraphUtils {
           while ((pi = partI.next()) != null) {
             ++xi;
             final int col = pm.get(Arrays.toString(scaleVSmall(pi, d)));
-            E subs = deepSubstitute(fld, ui.get(xi), d);
+            E subs = PolynomialUtils.deepSubstitute(fld, ui.get(xi), d);
             while (col >= v.size()) {
               v.add(fld.zero());
             }
@@ -855,25 +847,6 @@ public final class GraphUtils {
     return results;
   }
 
-  /*
-  EulerMTS(p)={my(n=serprec(p,x)-1, vars=variables(p)); exp( sum(i=1, n, substvec(p + O(x*x^(n\i)), vars, apply(v->v^i,vars))/i ))}
-   */
-
-  /**
-   * Euler transform of a (possibly) multivariable polynomial.
-   * @param fld underlying field
-   * @param p polynomial
-   * @param <E> underlying field type
-   * @return Euler transform
-   */
-  public static <E> Polynomial<E> eulerTransform(final Field<E> fld, final Polynomial<E> p) {
-    final int n = p.degree();
-    final PolynomialRingField<E> ring = new PolynomialRingField<>(fld);
-    //final Polynomial<E> sum = ring.sum(1, n, i -> ring.divide(deepSubstitute(ring, p, i), fld.coerce(i))); // todo why does this not work correctly
-    final Polynomial<E> sum = ring.sum(1, n, i -> ring.divide(p.substitutePower(i, n), fld.coerce(i))); // todo this does not handle "inner" variables
-    return ring.exp(sum, n);
-  }
-
   /**
    * Generating function for initially (or finally) connected graphs.
    * Formula: <code>D X S*exp(-S)</code>.
@@ -905,23 +878,9 @@ public final class GraphUtils {
     final List<List<E>> tmp3 = multiplyCycleIndexData(fld, tmp2, tmp1); // S*exp(-S)
     final List<List<E>> tmp4 = multiplyGgfCycleIndexData(fld, graphs, multiplyGgfCycleIndexData(fld, tmp3, tmp3, yf), yf);
     final Polynomial<E> sogf = unlabeledOgf(fld, tmp2);
-    System.out.println("sogf=" + sogf);
-    System.out.println("et=" + eulerTransform(fld, sogf));
     final DegreeLimitedPolynomialRingField<E> ring = new DegreeLimitedPolynomialRingField<>(fld, sogf.degree());
     final Polynomial<E> sogf2 = ring.multiply(sogf, sogf);
-    final Polynomial<E> et = ring.multiply(eulerTransform(fld, sogf), unlabeledOgf(fld, tmp4));
+    final Polynomial<E> et = ring.multiply(PolynomialUtils.eulerTransform(fld, sogf), unlabeledOgf(fld, tmp4));
     return ring.add(ring.subtract(sogf, sogf2), et);
   }
-  /*
-InitFinally(graphs, yf=e->2)={
-  my(tmp1 = InvGgfCIData(graphs, yf) \\ exp(-S)
-     , tmp2 = -LogCIData(tmp1) \\ S
-     , tmp3 = MulCIData(tmp2, tmp1) \\ S*exp(-S)
-     , tmp4 = MulGgfCIData(graphs, MulGgfCIData(tmp3, tmp3, yf), yf)
-     , Sogf = UnlabeledOgf(tmp2)
-  );
-  Sogf - Sogf^2 + (EulerMTS(Sogf))*UnlabeledOgf(tmp4);
-}
-
-   */
 }

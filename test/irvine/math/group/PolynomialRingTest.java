@@ -23,9 +23,9 @@ public class PolynomialRingTest extends TestCase {
     assertTrue(ring.contains(ring.x()));
     assertFalse(ring.contains(null));
     assertEquals("\\Z[x]", ring.toString());
-    assertTrue(ring.zero() == ring.zero());
-    assertTrue(ring.one() == ring.one());
-    assertTrue(ring.x() == ring.x());
+    assertSame(ring.zero(), ring.zero());
+    assertSame(ring.one(), ring.one());
+    assertSame(ring.x(), ring.x());
     assertEquals(Polynomial.create(new long[0]), ring.zero());
     assertEquals(Polynomial.create(1), ring.one());
     assertEquals(Polynomial.create(1, 1), ring.add(ring.one(), ring.x()));
@@ -232,5 +232,14 @@ public class PolynomialRingTest extends TestCase {
     final Polynomial<Z> eta = ring.eta(ring.x(), 16);
     assertEquals("1-x-x^2+x^5+x^7-x^12-x^15", eta.toString());
     assertEquals("1-3x^2-9x^4+243x^10+2187x^14", ring.eta(Polynomial.create(0, 0, 3), 16).toString());
+  }
+
+  public void testDeepSubstitute() {
+    final PolynomialRing<Z> ringA = new PolynomialRing<>(Integers.SINGLETON);
+    final Polynomial<Z> a = Polynomial.create(1, 0, 2, 3);
+    assertEquals("1+2x^6+3x^9", ringA.deepSubstitute(a, 3).toString());
+    final PolynomialRing<Polynomial<Z>> ringB = new PolynomialRing<>("y", ringA);
+    final Polynomial<Polynomial<Z>> b = ringB.onePlusXToTheN(a, 2);
+    assertEquals("1+(1+2x^6+3x^9)y^6", ringB.deepSubstitute(b, 3).toString());
   }
 }

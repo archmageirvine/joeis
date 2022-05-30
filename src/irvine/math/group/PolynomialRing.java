@@ -522,7 +522,7 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     for (final E c : p) {
       res.add((E) eRing.deepSubstitute((Polynomial<F>) c, power, maxDegree));
     }
-    return res;
+    return res.substitutePower(power, maxDegree);
   }
 
   /**

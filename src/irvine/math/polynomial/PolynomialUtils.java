@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.Mobius;
+import irvine.math.api.Field;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
@@ -290,6 +291,24 @@ public final class PolynomialUtils {
   }
 
   /**
+   * Substitute an identical power for every variable (if any) in a polynomial.
+   * Substitute every variable (if any) with <code>v -&gt; v^power</code>.
+   * @param fld underlying field
+   * @param e polynomial or element
+   * @param power exponent
+   * @param <E> underlying field type
+   * @param <F> polynomial of E type
+   * @return substituted polynomial
+   */
+  @SuppressWarnings("unchecked")
+  public static <E, F> E deepSubstitute(final Field<E> fld, final E e, final int power) {
+    if (!(e instanceof Polynomial<?>)) {
+      return e;
+    }
+    return (E) ((PolynomialRingField<F>) fld).deepSubstitute((Polynomial<F>) e, power);
+  }
+
+  /**
    * Inverse Euler transform of a bivariate polynomial.
    * @param p bivariate polynomial
    * @param n maximum degree
@@ -300,5 +319,19 @@ public final class PolynomialUtils {
     final PolynomialRingField<Polynomial<Q>> r = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, m));
     final Polynomial<Polynomial<Q>> q = r.log(p, n); // This is where Q is needed
     return r.sum(1, n, i -> r.divide(r.multiply(innerSubstitute(r, q.substitutePower(i, n), i, m), Polynomial.create(new Q(Mobius.mobius(i)))), Polynomial.create(new Q(i))));
+  }
+
+  /**
+   * Euler transform of a (possibly) multivariate polynomial.
+   * @param fld underlying field
+   * @param p polynomial
+   * @param <E> underlying field type
+   * @return Euler transform
+   */
+  public static <E> Polynomial<E> eulerTransform(final Field<E> fld, final Polynomial<E> p) {
+    final int n = p.degree();
+    final PolynomialRingField<E> ring = new PolynomialRingField<>(fld);
+    final Polynomial<E> sum = ring.sum(1, n, i -> ring.divide(deepSubstitute(ring, p.truncate(n / i), i), fld.coerce(i)));
+    return ring.exp(sum, n);
   }
 }

@@ -4,8 +4,10 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+import irvine.math.Mobius;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
+import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
@@ -16,7 +18,6 @@ import irvine.math.z.ZUtils;
 
 /**
  * Utility functions for polynomials.
- *
  * @author Sean A. Irvine
  */
 public final class PolynomialUtils {
@@ -288,5 +289,16 @@ public final class PolynomialUtils {
     return subs;
   }
 
-
+  /**
+   * Inverse Euler transform of a bivariate polynomial.
+   * @param p bivariate polynomial
+   * @param n maximum degree
+   * @param m maximum inner degree
+   * @return inverse Euler transform
+   */
+  public static Polynomial<Polynomial<Q>> inverseEuler(final Polynomial<Polynomial<Q>> p, final int n, final int m) {
+    final PolynomialRingField<Polynomial<Q>> r = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, m));
+    final Polynomial<Polynomial<Q>> q = r.log(p, n); // This is where Q is needed
+    return r.sum(1, n, i -> r.divide(r.multiply(innerSubstitute(r, q.substitutePower(i, n), i, m), Polynomial.create(new Q(Mobius.mobius(i)))), Polynomial.create(new Q(i))));
+  }
 }

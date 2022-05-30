@@ -158,4 +158,9 @@ public class Integers extends AbstractOrderedIntegralDomain<Z> implements Pow<Z>
   public Z coerce(final long n) {
     return Z.valueOf(n);
   }
+
+  @Override
+  public Z coerce(final Z n) {
+    return n;
+  }
 }

@@ -355,6 +355,11 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
   }
 
   @Override
+  public E coerce(final Z n) {
+    throw new UnsupportedOperationException();
+  }
+
+  @Override
   public E random(final Random random) {
     if (isInfinite()) {
       throw new UnsupportedOperationException();

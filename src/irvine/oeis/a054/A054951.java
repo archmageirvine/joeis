@@ -8,14 +8,14 @@ import java.util.Map;
 import java.util.function.Function;
 
 import irvine.math.IntegerUtils;
+import irvine.math.api.Field;
 import irvine.math.graph.Edges;
-import irvine.math.group.PolynomialRing;
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Binomial;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -24,46 +24,47 @@ import irvine.oeis.Sequence;
  */
 public class A054951 implements Sequence {
 
-  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = 0;
 
-  protected List<List<Z>> graphCycleIndexData(final int n, final Edges edgeFunc, final Function<Integer, Z> yf) {
-    final List<List<Z>> results = new ArrayList<>();
+  protected <E> List<List<E>> graphCycleIndexData(final int n, final Edges edgeFunc, final Field<E> fld, final Function<Integer, E> yf) {
+    final List<List<E>> results = new ArrayList<>();
     for (int k = 0; k <= n; ++k) {
-      final List<Z> v = new ArrayList<>();
+      final List<E> v = new ArrayList<>();
       final IntegerPartition part = new IntegerPartition(k);
       int[] p;
       while ((p = part.next()) != null) {
-        v.add(IntegerPartition.permCount(p).multiply(edgeFunc.edges(p, yf)));
+        v.add(fld.multiply(edgeFunc.edges(p, fld, yf), fld.coerce(IntegerPartition.permCount(p))));
       }
       results.add(v);
     }
     return results;
   }
 
-  protected List<List<Z>> invGgfCiData(final List<List<Z>> blocks, final Function<Integer, Z> yf) {
-    final List<List<Z>> results = new ArrayList<>();
-    results.add(Collections.singletonList(Z.ONE));
+  protected <E> List<List<E>> invGgfCiData(final List<List<E>> blocks, final Field<E> fld, final Function<Integer, E> yf) {
+    final List<List<E>> results = new ArrayList<>();
+    results.add(Collections.singletonList(fld.one()));
     for (int n = 1; n < blocks.size(); ++n) {
       final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
-      final List<Z> v = new ArrayList<>();
+      final List<E> v = new ArrayList<>();
       for (int i = 1; i <= n; ++i) {
         final int j = n - i;
-        final List<Z> uj = results.get(j);
-        final List<Z> ui = blocks.get(i);
-        final Z b = Binomial.binomial(n, i);
-        final Z[] q = new Z[i + 1]; // indexed from 1..n
+        final List<E> uj = results.get(j);
+        final List<E> ui = blocks.get(i);
+        final E b = fld.coerce(Binomial.binomial(n, i));
         int xj = -1;
         final IntegerPartition partj = new IntegerPartition(j);
         int[] pj;
         while ((pj = partj.next()) != null) {
+          final List<E> q = new ArrayList<>();
+          q.add(null); // 0 unused
           ++xj;
-          for (int s = 1; s < q.length; ++s) {
-            q[s] = Z.ONE;
+          for (int s = 1; s <= i; ++s) {
+            E qs = fld.one();
             for (final int k : pj) {
               final int g = IntegerUtils.gcd(s, k);
-              q[s] = q[s].multiply(yf.apply(s * k / g).pow(g));
+              qs = fld.multiply(qs, fld.pow(yf.apply(s * k / g), g));
             }
+            q.add(qs);
           }
           int xi = -1;
           final IntegerPartition parti = new IntegerPartition(i);
@@ -71,15 +72,15 @@ public class A054951 implements Sequence {
           while ((pi = parti.next()) != null) {
             ++xi;
             final int col = pm.get(Arrays.toString(IntegerPartition.merge(pi, pj)));
-            Z pr = Z.ONE;
+            E pr = fld.one();
             for (final int k : pi) {
-              pr = pr.multiply(q[k]);
+              pr = fld.multiply(pr, q.get(k));
             }
             while (col >= v.size()) {
-              v.add(Z.ZERO);
+              v.add(fld.zero());
             }
-            final Z w = uj.get(xj).multiply(b).multiply(ui.get(xi));
-            v.set(col, v.get(col).subtract(pr.multiply(w)));
+            final E w = fld.multiply(fld.multiply(uj.get(xj), b), ui.get(xi));
+            v.set(col, fld.subtract(v.get(col), fld.multiply(pr, w)));
           }
         }
       }
@@ -89,17 +90,24 @@ public class A054951 implements Sequence {
   }
 
   // Helper to convert a cycle index series stored as a vector of vectors into an o.g.f. counting the unlabeled objects.
-  protected Polynomial<Z> unlabeledOgf(final List<List<Z>> data) {
-    final Polynomial<Z> res = RING.empty();
+  protected <E> Polynomial<E> unlabeledOgf(final Field<E> fld, final List<List<E>> data) {
+    final PolynomialRingField<E> ring = new PolynomialRingField<>(fld);
+    final Polynomial<E> res = ring.empty();
     Z f = Z.ONE;
     for (int n = 0; n < data.size(); f = f.multiply(++n)) {
-      res.add(ZUtils.sum(data.get(n)).divide(f));
+      E sum = fld.zero();
+      for (final E d : data.get(n)) {
+        sum = fld.add(sum, d);
+      }
+      res.add(fld.divide(sum, fld.coerce(f)));
     }
     return res;
   }
 
   @Override
   public Z next() {
-    return unlabeledOgf(invGgfCiData(graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, e -> Z.TWO), e -> Z.TWO)).coeff(mN).negate();
+    final List<List<Z>> gcid = graphCycleIndexData(++mN, Edges.DIGRAPH_EDGES, IntegerField.SINGLETON, e -> Z.TWO);
+    final List<List<Z>> inv = invGgfCiData(gcid, IntegerField.SINGLETON, e -> Z.TWO);
+    return unlabeledOgf(IntegerField.SINGLETON, inv).coeff(mN).negate();
   }
 }

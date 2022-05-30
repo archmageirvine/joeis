@@ -129,4 +129,9 @@ public final class Rationals extends AbstractOrderedField<Q> {
   public Q coerce(final long n) {
     return new Q(n);
   }
+
+  @Override
+  public Q coerce(final Z n) {
+    return new Q(n);
+  }
 }

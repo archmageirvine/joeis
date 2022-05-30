@@ -223,6 +223,16 @@ public interface Group<E> extends Set<E> {
   E coerce(final long n);
 
   /**
+   * Convenience method to coerce an integer into the type of this ring.
+   * This is often useful and can avoid cumbersome construction of group
+   * elements in some cases.  However, this operation need not be supported
+   * by every group.
+   * @param n number of coerce
+   * @return coerced values
+   */
+  E coerce(final Z n);
+
+  /**
    * Return a random element of the group.
    * @param random underlying source of randomness
    * @return a randomly selected element

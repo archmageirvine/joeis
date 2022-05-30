@@ -10,6 +10,7 @@
     <suppress checks="FileLength" files=".*CliFlags.java"/>
     <suppress checks="FileLength" files=".*FactorSequence.java"/>
     <suppress checks="FileLength" files=".*GenerateGraphs.java"/>
+    <suppress checks="FileLength" files=".*GraphUtils.java"/>
     <suppress checks="FileLength" files=".*LongUtils.java"/>
     <suppress checks="FileLength" files=".*Min4Scanner.java"/>
     <suppress checks="FileLength" files=".*Min5Scanner.java"/>

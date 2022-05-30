@@ -719,7 +719,7 @@ public final class GraphUtils {
           while ((pi = partI.next()) != null) {
             ++xi;
             final int col = pm.get(Arrays.toString(scaleVSmall(pi, d)));
-            E subs = PolynomialUtils.deepSubstitute(fld, ui.get(xi), d);
+            final E subs = PolynomialUtils.deepSubstitute(fld, ui.get(xi), d);
             while (col >= v.size()) {
               v.add(fld.zero());
             }
@@ -739,7 +739,7 @@ public final class GraphUtils {
    * @param <E> element type
    * @return negated data
    */
-  public static <E> List<List<E>> negate(final Field<E> fld, List<List<E>> data) {
+  public static <E> List<List<E>> negate(final Field<E> fld, final List<List<E>> data) {
     final List<List<E>> res = new ArrayList<>();
     for (final List<E> lst : data) {
       final List<E> negation = new ArrayList<>();

@@ -17,6 +17,18 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
   /**
    * Construct a new memory sequence with specified offset.
    * @param offset the offset
+   * @param initialTerms initial terms (starting at offset)
+   */
+  public MemorySequence(final int offset, final long... initialTerms) {
+    mOffset = offset;
+    for (final long t : initialTerms) {
+      add(Z.valueOf(t));
+    }
+  }
+
+  /**
+   * Construct a new memory sequence with specified offset.
+   * @param offset the offset
    */
   public MemorySequence(final int offset) {
     mOffset = offset;

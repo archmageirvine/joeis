@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A038775 a[n] is the number of cycles of the permutation that converts forest[n] of depth-first planar planted binary trees into breadth-first representation.
+ * A038775 a(n) is the number of cycles of the permutation that converts forest(n) of depth-first planar planted binary trees into breadth-first representation.
  * @author Sean A. Irvine
  */
 public class A038775 extends A038774 {

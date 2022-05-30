@@ -5,7 +5,7 @@ package irvine.oeis.a185;
 import irvine.oeis.a183.A183194;
 
 /**
- * A185656 Final prime of first member of A019518 that is divisible by 7^n.
+ * A185656 Final prime in first term of A019518 that is divisible by 7^n.
  * @author Georg Fischer
  */
 public class A185656 extends A183194 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.oeis.a052.A052055;
 /**
- * A068394 Numbers n such that the n-th digit of Pi and the n-th digit of e are the same.
+ * A068394 Numbers k such that the k-th digit of Pi and the k-th digit of e are the same.
  * @author Georg Fischer
  */
 public class A068394 implements Sequence {

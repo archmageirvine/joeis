@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A153844 If A151843 is regarded as a triangle then the rows converge to this sequence.
+ * A151844 If A151843 is regarded as a triangle then the rows converge to this sequence.
  * @author Georg Fischer
  */
 public class A151844 implements Sequence {

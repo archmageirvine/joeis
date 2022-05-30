@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057276.
+ * A057278 Triangle T(n,k) of number of digraphs with a source and a sink on n unlabeled nodes and k arcs, k=0..n*(n-1).
  * @author Sean A. Irvine
  */
 public class A057278 implements Sequence {

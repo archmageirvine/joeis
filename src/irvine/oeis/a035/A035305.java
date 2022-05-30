@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035305 Minimum sum of n numbers, any n-1 of which sum to a square.
+ * A035305 Minimum sum of n distinct positive numbers, any n-1 of which sum to a square.
  * @author Sean A. Irvine
  */
 public class A035305 implements Sequence {

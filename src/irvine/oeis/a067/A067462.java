@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A067462.
+ * A067462 a(n) = (1! + 2! + ... + (n-1)!) mod n.
  * @author Sean A. Irvine
  */
 public class A067462 implements Sequence {

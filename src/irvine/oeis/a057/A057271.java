@@ -8,7 +8,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
- * A057271.
+ * A057271 Triangle T(n,k) of number of digraphs with a source and a sink on n labeled nodes and k arcs, k=0,1,..,n*(n-1).
  * @author Sean A. Irvine
  */
 public class A057271 extends A057273 {

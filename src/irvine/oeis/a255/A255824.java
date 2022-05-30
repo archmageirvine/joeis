@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.a126.A126616;
 
 /**
- * A255824 a(n) = n for n &lt; 4; a(4n) = a(n); if every 4th term (a(4), a(8), a(12),...) is deleted, this gives back the original sequence.
+ * A255824 a(n) = n for n &lt; 4; a(4n) = a(n); if every 4th term (a(4), a(8), a(12), ...) is deleted, this gives back the original sequence.
  * @author Georg Fischer
  */
 public class A255824 extends A126616 {

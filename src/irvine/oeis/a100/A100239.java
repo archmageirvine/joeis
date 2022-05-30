@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100239 G.f. A(x) satisfies: 3^n + 1 = Sum_{k=0..n} [x^k]A(x)^n and also satisfies: (3+z)^n + (1+z)^n - z^n = Sum_{k=0..n} [x^k](A(x)+z*x)^n for all z, where [x^k]A(x)^n denotes the coefficient of x^k in A(x)^n.
+ * A100239 G.f. A(x) satisfies: 3^n + 1 = Sum_{k=0..n} [x^k]A(x)^n and also satisfies: (3+z)^n + (1+z)^n - z^n = Sum_{k=0..n} [x^k](A(x) + z*x)^n for all z, where [x^k]A(x)^n denotes the coefficient of x^k in A(x)^n.
  * @author Georg Fischer
  */
 public class A100239 extends HolonomicRecurrence {

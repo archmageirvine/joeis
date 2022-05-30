@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006882;
 import irvine.oeis.transform.EulerTransform;
 
 /**
- * A280241 Expansion of Product_{k>=1} 1/(1 - x^(k!!)).
+ * A280241 Expansion of Product_{k&gt;=1} 1/(1 - x^(k!!)).
  * @author Georg Fischer
  */
 public class A280241 extends EulerTransform {

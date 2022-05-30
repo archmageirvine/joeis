@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000691 Ramanujan's approximation to population of x^2 + y^2.
+ * A000691 Ramanujan's approximation to population of x^2 + y^2 &lt;= 2^n.
  * @author Sean A. Irvine
  */
 public class A000691 implements Sequence {

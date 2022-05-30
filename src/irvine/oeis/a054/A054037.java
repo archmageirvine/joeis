@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A054037 Numbers n such that n^2 contains exactly 9 different digits.
+ * A054037 Numbers k such that k^2 contains exactly 9 different digits.
  * @author Sean A. Irvine
  */
 public class A054037 implements Sequence {

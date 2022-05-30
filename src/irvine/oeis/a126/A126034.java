@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.a124.A124262;
 
 /**
- * A126034 a(n) is largest prime &lt; 6*a(n-1).
+ * A126034 a(n) is largest prime &lt; 6*a(n-1) for n &gt; 1 with a(1) = 2.
  * @author Georg Fischer
  */
 public class A126034 extends A124262 {

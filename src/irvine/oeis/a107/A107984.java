@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A107984 Triangle read by rows: T(n,k) = (k+1)(n+2)(2n-k+3)(n-k+1)/6 for 0&lt;=k&lt;=n.
+ * A107984 Triangle read by rows: T(n,k) = (k+1)*(n+2)*(2n-k+3)*(n-k+1)/6 for 0 &lt;= k &lt;= n.
  *
  * @author Georg Fischer
  */

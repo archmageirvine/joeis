@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A057192 Least m such that 1 + prime(n)*2^m is a prime, or -1 if no such m exists.
+ * A057247 a(n) is the smallest prime of the form 1 + prime(n)*2^m, with m &gt; 0.
  * @author Sean A. Irvine
  */
 public class A057247 extends A000040 {

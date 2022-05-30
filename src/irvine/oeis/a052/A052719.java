@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052719 E.g.f. (1-2*x*sqrt(1-4*x)) *(1-sqrt(1-4*x))/4.
+ * A052719 Expansion of e.g.f. (1 - 2*x*sqrt(1-4*x))*(1 - sqrt(1-4*x))/4.
  * @author Georg Fischer
  */
 public class A052719 extends HolonomicRecurrence {

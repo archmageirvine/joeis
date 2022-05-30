@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A346398 E.g.f.: -log(1 - x) * exp(-3*x).
+ * A346398 Expansion of e.g.f. -log(1 - x) * exp(-3*x).
  * E.g.f.: -log(1 - x) * exp(-3*x)
  * @author Georg Fischer
  */

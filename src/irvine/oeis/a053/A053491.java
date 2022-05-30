@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053491 E.g.f.: (1-2*x)^(-x).
+ * A053491 Expansion of e.g.f. (1-2*x)^(-x).
  * E.g.f.: (1-2*x)^(-x)
  * @author Georg Fischer
  */

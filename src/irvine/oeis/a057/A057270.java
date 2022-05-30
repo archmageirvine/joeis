@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003088 Number of unilateral digraphs with n unlabeled nodes.
+ * A057270 Triangle T(n,k) of number of unilaterally connected digraphs on n unlabeled nodes with k arcs, k=0..n*(n-1).
  * @author Sean A. Irvine
  */
 public class A057270 implements Sequence, GraphProcessor {

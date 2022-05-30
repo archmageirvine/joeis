@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033950 Refactorable numbers: number of divisors of k divides k. Also known as tau numbers.
+ * A057265 Even refactorable numbers (i.e., the number of divisors is itself a divisor and it is also even).
  * @author Sean A. Irvine
  */
 public class A057265 implements Sequence {

@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057276.
+ * A057276 Triangle T(n,k) of number of strongly connected digraphs on n unlabeled nodes and with k arcs, k=0..n*(n-1).
  * @author Sean A. Irvine
  */
 public class A057276 implements Sequence {

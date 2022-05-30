@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.prime.BinaryQuadraticForm;
 
 /**
- * A106890 Primes of the form x^2+xy+11y^2, with x and y nonnegative.
+ * A106890 Primes of the form x^2 + xy + 11y^2, with x and y nonnegative.
  * @author Georg Fischer
  */
 public class A106890 extends BinaryQuadraticForm {

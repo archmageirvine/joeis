@@ -6,7 +6,7 @@ package irvine.oeis.a198;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A198478 9^n*n^9.
+ * A198478 a(n) = 9^n * n^9.
  * @author Georg Fischer
  */
 public class A198478 extends GeneratingFunctionSequence {

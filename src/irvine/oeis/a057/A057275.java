@@ -13,7 +13,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A057271.
+ * A057275 Triangle T(n,k) of number of unilaterally connected digraphs on n labeled nodes and with k arcs, k=0..n*(n-1).
  * @author Sean A. Irvine
  */
 public class A057275 extends A057273 {

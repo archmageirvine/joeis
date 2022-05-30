@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057276.
+ * A049531 Number of digraphs with a source and a sink on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A049531 implements Sequence {

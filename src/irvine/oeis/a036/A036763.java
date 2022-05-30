@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036763 Numbers n such that x*d(n) = n has no solution for x, where d (A000005) is number of divisors; sequence gives impossible n/d(n) quotients in order of magnitude.
+ * A036763 Numbers k such that k*d(x) = x has no solution for x, where d (A000005) is the number of divisors; sequence gives impossible x/d(x) quotients in order of magnitude.
  * @author Sean A. Irvine
  */
 public class A036763 implements Sequence {

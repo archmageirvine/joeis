@@ -5,7 +5,7 @@ package irvine.oeis.a062;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A062027 a(1) = a(2) = a(3) = 1; and for n&gt;3 a(n) = 1*2*3*4 + 2*3*4*5 + 3*4*5*6 + ... + (n-1)*n*1*2 + n*1*2*3, the sum of the cyclic product of terms taken four at a time, final term being n*1*2*3 = 6n.
+ * A062027 a(1) = a(2) = a(3) = 1 and a(n) = 24*binomial(n+1, 5) + n*(n^2 - n + 6) for n &gt; 3.
  * Recurrence: a(n)=(n+1)*(n)*(n-1)*(n-2)*(n-3)/5+n(n^2-n+6)
  * @author Georg Fischer
  */

@@ -85,7 +85,7 @@ public final class SequenceFactory {
 
   private static boolean dataLineOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {
     final int maxDataLength = (Integer) flags.getValue(DATA_LENGTH);
-    final long numberOfTerms = (Long) flags.getValue(TERMS);
+    final long numberOfTerms = getEffectiveMax(flags, TERMS);
     Z z;
     long termCnt = 0;
     int outputSoFar = 0;
@@ -183,8 +183,8 @@ public final class SequenceFactory {
         if (parseMessage.length() > 0) {
           parseMessage.append(' ');
         }
-        parseMessage.append("Setting --").append(getOptionString(flags.getFlag(pair[0])));
-        parseMessage.append(" incompatible with --").append(getOptionString(flags.getFlag(pair[1])));
+        parseMessage.append("Setting ").append(getOptionString(flags.getFlag(pair[0])));
+        parseMessage.append(" incompatible with ").append(getOptionString(flags.getFlag(pair[1])));
         parseMessage.append('.');
       }
     }
@@ -213,11 +213,11 @@ public final class SequenceFactory {
     flags.registerOptional('B', B_FILE, "Output in b-file format");
     flags.registerOptional('D', DATA, "Output in a format suitable for pasting into a DATA line");
     flags.registerOptional('T', TRIANGLE, "Output data as a triangle");
-    flags.registerOptional('n', TERMS, Long.class, "number", "Maximum number of terms to generate (or 0 for unnounded)", 0L);
+    flags.registerOptional('n', TERMS, Long.class, "number", "Maximum number of terms to generate (or 0 for unbounded)", 0L);
     flags.registerOptional('r', ROWS, Long.class, "number", "Maximum number of rows to generate in a triangle (or 0 for unbounded)", 0L);
     flags.registerOptional('o', OFFSET, Long.class, "number", "Offset to use (relevant for -B and -T with --" + ROW_NUMBERS + ")", 1L);
     flags.registerOptional('t', TIMESTAMP, "Add a timestamp to each line of output");
-    flags.registerOptional(DATA_LENGTH, Integer.class, "number", "Maximum total length of output line in characters (in conjunction with -d)", DEFAULT_DATA_LENGTH);
+    flags.registerOptional(DATA_LENGTH, Integer.class, "number", "Maximum total length of output line in characters (in conjunction with -D)", DEFAULT_DATA_LENGTH);
     flags.registerOptional(HEADER, "Print a header");
     flags.registerOptional(ROW_NUMBERS, "Include row numbers in triangle (-T) output");
     flags.registerRequired(String.class, "A-number", "Sequence to generate");

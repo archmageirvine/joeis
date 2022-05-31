@@ -19,7 +19,6 @@ public class A054951 implements Sequence {
   @Override
   public Z next() {
     final List<List<Z>> gcid = GraphUtils.graphCycleIndexData(IntegerField.SINGLETON, ++mN, Edges.DIGRAPH_EDGES, e -> Z.TWO);
-    final List<List<Z>> inv = GraphUtils.invGgfCycleIndexData(IntegerField.SINGLETON, gcid, e -> Z.TWO);
-    return GraphUtils.unlabeledOgf(IntegerField.SINGLETON, inv).coeff(mN).negate();
+    return GraphUtils.stronglyConnected(IntegerField.SINGLETON, gcid, e -> Z.TWO).coeff(mN);
   }
 }

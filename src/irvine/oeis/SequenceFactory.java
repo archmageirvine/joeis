@@ -33,6 +33,7 @@ public final class SequenceFactory {
   private static final int DEFAULT_DATA_LENGTH = 260;
 
   // Long for command line options
+  private static final String AUTHOR = "author";
   private static final String B_FILE = "b-file";
   private static final String DATA = "data";
   private static final String DATA_LENGTH = "data-length";
@@ -219,6 +220,7 @@ public final class SequenceFactory {
     flags.registerOptional('t', TIMESTAMP, "Add a timestamp to each line of output");
     flags.registerOptional(DATA_LENGTH, Integer.class, "number", "Maximum total length of output line in characters (in conjunction with -D)", DEFAULT_DATA_LENGTH);
     flags.registerOptional(HEADER, "Print a header");
+    flags.registerOptional('a', AUTHOR, String.class, "name", "Specify author name for b-file output");
     flags.registerOptional(ROW_NUMBERS, "Include row numbers in triangle (-T) output");
     flags.registerRequired(String.class, "A-number", "Sequence to generate");
     flags.setValidator(VALIDATOR);
@@ -229,14 +231,26 @@ public final class SequenceFactory {
     final long offset = (Long) flags.getValue(OFFSET);
     final String seqId = getCanonicalId(flags.getAnonymousValue(0).toString());
     boolean generated = false;
+    final long numberOfTerms = getEffectiveMax(flags, TERMS);
     // We use our own version of output stream here, so that we can better detect closed pipes
     // Does what it can to ensure terms are flushed to output as soon as possible
     try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
       final Sequence seq = sequence(seqId);
       try {
-        if (header) {
-          final String headerLine = "# " + Date.now() + " jOEIS: " + seqId;
-          out.write(headerLine.getBytes(StandardCharsets.US_ASCII));
+        if (bfile && header) {
+          final StringBuilder header1 = new StringBuilder("# Table of a(n)");
+          if (numberOfTerms != Long.MAX_VALUE) {
+            header1.append(", ").append(offset).append("..").append(offset + numberOfTerms - 1);
+          }
+          out.write(header1.toString().getBytes(StandardCharsets.US_ASCII));
+          out.write(LS);
+          final StringBuilder header2 = new StringBuilder("# b")
+            .append(seqId.substring(1)).append(".txt generated with jOEIS");
+          if (flags.isSet(AUTHOR)) {
+            header2.append(" by ").append(flags.getValue(AUTHOR));
+          }
+          header2.append(" at ").append(Date.now());
+          out.write(header2.toString().getBytes(StandardCharsets.US_ASCII));
           out.write(LS);
           out.flush();
         }
@@ -245,7 +259,6 @@ public final class SequenceFactory {
         } else if (flags.isSet(TRIANGLE)) {
           generated = triangleOutputMode(flags, out, seq);
         } else {
-          final long numberOfTerms = getEffectiveMax(flags, TERMS);
           Z z;
           long termCnt = 0;
           while (++termCnt <= numberOfTerms && (z = seq.next()) != null) {
@@ -257,6 +270,11 @@ public final class SequenceFactory {
               out.write(SPACE);
             }
             out.write(z.toString().getBytes(StandardCharsets.US_ASCII));
+            out.write(LS);
+            out.flush();
+          }
+          if (bfile && termCnt > numberOfTerms) {
+            out.write(LS); // two blank lines at end of bfile
             out.write(LS);
             out.flush();
           }

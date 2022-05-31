@@ -468,4 +468,20 @@ public final class IntegerUtils {
     }
     return res;
   }
+
+  /**
+   * Return the number of occurrence of the value in the array.
+   * @param value value to count
+   * @param array array to count in
+   * @return number of occurrences
+   */
+  public static int count(final int value, final int... array) {
+    int cnt = 0;
+    for (final int v : array) {
+      if (v == value) {
+        ++cnt;
+      }
+    }
+    return cnt;
+  }
 }

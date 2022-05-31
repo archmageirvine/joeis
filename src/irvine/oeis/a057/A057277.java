@@ -21,15 +21,19 @@ public class A057277 implements Sequence {
   private int mM = 0;
   private Polynomial<Q> mRow = null;
 
+  protected Polynomial<Q> gfRow(final int n, final int m) {
+    final int t = Math.min(m, n * (n - 1));
+    final DegreeLimitedPolynomialRingField<Q> fld = new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, t);
+    final List<List<Polynomial<Q>>> graphs = GraphUtils.graphCycleIndexData(fld, n, Edges.DIGRAPH_EDGES, e -> fld.onePlusXToTheN(e));
+    final Polynomial<Polynomial<Q>> res = GraphUtils.initially(fld, graphs, e -> fld.onePlusXToTheN(e));
+    return res.coeff(n);
+  }
+
   @Override
   public Z next() {
     if (++mM > mN * (mN - 1)) {
-      ++mN;
       mM = 0;
-      final DegreeLimitedPolynomialRingField<Q> fld = new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, mN * (mN - 1));
-      final List<List<Polynomial<Q>>> graphs = GraphUtils.graphCycleIndexData(fld, mN, Edges.DIGRAPH_EDGES, e -> fld.onePlusXToTheN(e));
-      final Polynomial<Polynomial<Q>> res = GraphUtils.initially(fld, graphs, e -> fld.onePlusXToTheN(e));
-      mRow = res.coeff(mN);
+      mRow = gfRow(++mN, mN * (mN - 1));
     }
     return mRow.coeff(mM).toZ();
   }

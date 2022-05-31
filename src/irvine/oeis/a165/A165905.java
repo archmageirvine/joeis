@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneralRecurrence;
 
 /**
- * A165905 Somos-4 recurrence with a(0)=1, a(1)=2, a(2)=4, a(3)=16
+ * A165905 Somos-4 recurrence with a(0)=1, a(1)=2, a(2)=4, a(3)=16.
  * @author Georg Fischer
  */
 public class A165905 extends GeneralRecurrence {

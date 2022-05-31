@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.GeneralRecurrence;
 
 /**
- * A174017 A (1, 1) Somos-4 sequence.
+ * A174017 A (1,1) Somos-4 sequence.
  * @author Georg Fischer
  */
 public class A174017 extends GeneralRecurrence {

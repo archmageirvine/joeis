@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneralRecurrence;
 
 /**
- * A178384 A (-1, 1) Somos-4 sequence associated with the elliptic curve y^2 + y = x^3 + x.
+ * A178384 A (-1,1) Somos-4 sequence associated with the elliptic curve y^2 + y = x^3 + x.
  * @author Georg Fischer
  */
 public class A178384 extends GeneralRecurrence {

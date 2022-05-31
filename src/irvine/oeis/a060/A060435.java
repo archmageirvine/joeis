@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a246.A246609;
 
 /**
- * A060435 Number of functions f: {1, 2,...,n} -&gt; {1, 2,...,n} with even cycles only.
+ * A060435 Number of functions f: {1,2,...,n} -&gt; {1,2,...,n} with even cycles only.
  * @author Georg Fischer
  */
 public class A060435 extends A246609 {

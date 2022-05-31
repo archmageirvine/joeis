@@ -501,4 +501,39 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
   public Polynomial<E> coerce(final Z n) {
     return monomial(mElementRing.coerce(n), 0);
   }
+
+  /**
+   * Perform a substitution of every variable in the polynomial with the
+   * specified power.
+   * @param p polynomial
+   * @param power substitution power
+   * @param maxDegree maximum degree for any variable
+   * @param <F> subfield
+   * @return deep substitution
+   */
+  @SuppressWarnings("unchecked")
+  public <F> Polynomial<E> deepSubstitute(final Polynomial<E> p, final int power, final int maxDegree) {
+    if (!(mElementRing instanceof PolynomialRing<?>)) {
+      return p.substitutePower(power, maxDegree);
+    }
+    // There is an equivalence E == Polynomial<F>
+    final PolynomialRing<F> eRing = (PolynomialRing<F>) mElementRing;
+    final Polynomial<E> res = empty();
+    for (final E c : p) {
+      res.add((E) eRing.deepSubstitute((Polynomial<F>) c, power, maxDegree));
+    }
+    return res.substitutePower(power, maxDegree);
+  }
+
+  /**
+   * Perform a substitution of every variable in the polynomial with the
+   * specified power.
+   * @param p polynomial
+   * @param power substitution power
+   * @param <F> subfield
+   * @return deep substitution
+   */
+  public Polynomial<E> deepSubstitute(final Polynomial<E> p, final int power) {
+    return deepSubstitute(p, power, Integer.MAX_VALUE);
+  }
 }

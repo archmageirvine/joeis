@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108735 Expansion of (1 + 12*x)^(1/2).
+ * A108735 Expansion of sqrt(1 + 12*x).
  * @author Georg Fischer
  */
 public class A108735 extends HolonomicRecurrence {

@@ -12,7 +12,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A057271.
+ * A057274 Triangle T(n,k) of the number of digraphs with a source on n labeled nodes with k arcs, k=0..n*(n-1).
  * @author Sean A. Irvine
  */
 public class A057274 extends A057273 {

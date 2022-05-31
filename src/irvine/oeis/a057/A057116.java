@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A057116 n = a*b where ab is cyclic permutation of n.
+ * A057116 k = a*b where ab is cyclic permutation of the digits of k.
  * @author Sean A. Irvine
  */
 public class A057116 implements Sequence {

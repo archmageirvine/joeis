@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.a237.A237276;
 
 /**
- * A083214 Numbers n for which 3 | p(n), where p(n) = A000041(n) is the n-th partition number.
+ * A083214 Numbers k for which 3 | p(k), where p(k) = A000041(k) is the k-th partition number.
  * @author Georg Fischer
  */
 public class A083214 extends A237276 {

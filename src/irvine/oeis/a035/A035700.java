@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035700 Number of partitions of n is a multiple of 12.
+ * A035700 Numbers k such that the number of partitions of k, A000041(k), is a multiple of 12.
  * @author Sean A. Irvine
  */
 public class A035700 implements Sequence {

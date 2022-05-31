@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A086729 Decimal expansion of Sum_{m=0..infinity} 1/(6*m+3)^2.
+ * A086729 Decimal expansion of Pi^2/72.
  * Formula: (Pi/6)^2/2
  * @author Georg Fischer
  */

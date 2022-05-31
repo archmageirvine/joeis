@@ -5,7 +5,7 @@ import irvine.oeis.a132.A132159;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A121757 Triangle read by rows: multiply Pascal&apos;s triangle by 1, 2, 6, 24, 120, 720,... = A000142.
+ * A121757 Triangle read by rows: multiply Pascal's triangle by 1,2,6,24,120,720,... = A000142.
  * @author Georg Fischer
  */
 public class A121757 extends Transpose {

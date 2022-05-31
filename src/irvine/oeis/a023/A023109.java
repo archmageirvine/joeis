@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A023109 Smallest number that requires exactly n iterations of Reverse and Add to reach a palindrome.
+ * A023109 a(0) = 0. For n &gt; 0, smallest non-palindromic number k such that the smallest palindrome in the Reverse and Add! trajectory of k is reached after exactly n iterations.
  * @author Sean A. Irvine
  */
 public class A023109 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000670;
 
 /**
- * A052862 E.g.f.: log(-1/(-2+exp(x)))*x.
+ * A052862 Expansion of e.g.f. log(-1/(-2+exp(x)))*x.
  * @author Sean A. Irvine
  */
 public class A052862 extends A000670 {

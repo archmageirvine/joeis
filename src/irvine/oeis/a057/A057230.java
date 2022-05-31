@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A057230.
+ * A057230 Numbers k such that k = p+q = r+s with p*q = r*s = primorial number(A002110) (p*q) &lt; (r*s).
  * @author Sean A. Irvine
  */
 public class A057230 implements Sequence {

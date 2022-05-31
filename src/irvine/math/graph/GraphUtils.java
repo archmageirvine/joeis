@@ -3,11 +3,18 @@ package irvine.math.graph;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
 
 import irvine.math.IntegerUtils;
 import irvine.math.Mobius;
+import irvine.math.api.Field;
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.MatrixRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
@@ -15,9 +22,11 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.nauty.Nauty;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
+import irvine.math.partitions.IntegerPartition;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.PairMultiply;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.r.Constants;
@@ -534,5 +543,344 @@ public final class GraphUtils {
     return true;
   }
 
+  // Following functions based on corresponding Pari code by Andrew Howroyd
 
+  /**
+   * Compute cycle index data for graphs.
+   * @param <E> type of underlying field
+   * @param fld field for substitution function
+   * @param n maximum order
+   * @param edgeFunc edge function
+   * @param yf substitution function
+   * @return graph data
+   */
+  public static <E> List<List<E>> graphCycleIndexData(final Field<E> fld, final int n, final Edges edgeFunc, final Function<Integer, E> yf) {
+    final List<List<E>> results = new ArrayList<>();
+    for (int k = 0; k <= n; ++k) {
+      final List<E> v = new ArrayList<>();
+      final IntegerPartition part = new IntegerPartition(k);
+      int[] p;
+      while ((p = part.next()) != null) {
+        v.add(fld.multiply(edgeFunc.edges(p, fld, yf), fld.coerce(IntegerPartition.permCount(p))));
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
+  /**
+   * Compute the inverse of the given graph cycle index data.
+   * @param <E> underlying field
+   * @param fld field for substitution function
+   * @param blocks graph cycle index data
+   * @param yf substitution function
+   * @return inverse of cycle index data
+   */
+  public static <E> List<List<E>> invGgfCycleIndexData(final Field<E> fld, final List<List<E>> blocks, final Function<Integer, E> yf) {
+    final List<List<E>> results = new ArrayList<>();
+    results.add(Collections.singletonList(fld.one()));
+    for (int n = 1; n < blocks.size(); ++n) {
+      final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
+      final List<E> v = new ArrayList<>();
+      for (int i = 1; i <= n; ++i) {
+        final int j = n - i;
+        final List<E> uj = results.get(j);
+        final List<E> ui = blocks.get(i);
+        final E b = fld.coerce(Binomial.binomial(n, i));
+        int xj = -1;
+        final IntegerPartition partj = new IntegerPartition(j);
+        int[] pj;
+        while ((pj = partj.next()) != null) {
+          final List<E> q = new ArrayList<>();
+          q.add(null); // 0 unused
+          ++xj;
+          for (int s = 1; s <= i; ++s) {
+            E qs = fld.one();
+            for (final int k : pj) {
+              final int g = IntegerUtils.gcd(s, k);
+              qs = fld.multiply(qs, fld.pow(yf.apply(s * k / g), g));
+            }
+            q.add(qs);
+          }
+          int xi = -1;
+          final IntegerPartition parti = new IntegerPartition(i);
+          int[] pi;
+          while ((pi = parti.next()) != null) {
+            ++xi;
+            final int col = pm.get(Arrays.toString(IntegerPartition.merge(pi, pj)));
+            E pr = fld.one();
+            for (final int k : pi) {
+              pr = fld.multiply(pr, q.get(k));
+            }
+            while (col >= v.size()) {
+              v.add(fld.zero());
+            }
+            final E w = fld.multiply(fld.multiply(uj.get(xj), b), ui.get(xi));
+            v.set(col, fld.subtract(v.get(col), fld.multiply(pr, w)));
+          }
+        }
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
+  /**
+   * Convert a cycle index series stored as a list of lists into an ordinary generation function
+   * counting the unlabeled objects
+   * @param fld underlying field
+   * @param data cycle index series
+   * @param <E> underlying field type
+   * @return ordinary generation function
+   */
+  public static <E> Polynomial<E> unlabeledOgf(final Field<E> fld, final List<List<E>> data) {
+    final PolynomialRingField<E> ring = new PolynomialRingField<>(fld);
+    final Polynomial<E> res = ring.empty();
+    Z f = Z.ONE;
+    for (int n = 0; n < data.size(); f = f.multiply(++n)) {
+      E sum = fld.zero();
+      for (final E d : data.get(n)) {
+        sum = fld.add(sum, d);
+      }
+      res.add(fld.divide(sum, fld.coerce(f)));
+    }
+    return res;
+  }
+
+  /**
+   * Compute the log of the input in a power series sense.
+   * @param fld underlying field
+   * @param input cycle index data
+   * @param <E> underlying field type
+   * @return log
+   */
+  public static <E> List<List<E>> primLogCycleIndexData(final Field<E> fld, final List<List<E>> input) {
+    final List<List<E>> results = new ArrayList<>();
+    results.add(Collections.singletonList(fld.zero()));
+    for (int n = 1; n < input.size(); ++n) {
+      final List<E> v = new ArrayList<>(input.get(n));
+      final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
+      for (int i = 1; i < n; ++i) {
+        final int j = n - i;
+        final List<E> uj = results.get(j);
+        final List<E> ui = input.get(i);
+        final E b = fld.coerce(Binomial.binomial(n - 1, i));
+        int xj = -1;
+        final IntegerPartition partJ = new IntegerPartition(j);
+        int[] pj;
+        while ((pj = partJ.next()) != null) {
+          ++xj;
+          int xi = -1;
+          final IntegerPartition partI = new IntegerPartition(i);
+          int[] pi;
+          while ((pi = partI.next()) != null) {
+            ++xi;
+            final int col = pm.get(Arrays.toString(IntegerPartition.merge(pi, pj)));
+            final E t = fld.multiply(fld.multiply(uj.get(xj), ui.get(xi)), b);
+            v.set(col, fld.subtract(v.get(col), t));
+          }
+        }
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
+  private static int[] scaleVSmall(final int[] v, final int m) {
+    final int[] s = new int[v.length];
+    for (int k = 0; k < v.length; ++k) {
+      s[k] = v[k] * m;
+    }
+    return s;
+  }
+
+  /**
+   * Compute the log of a cycle index in a combinatorial sense.
+   * @param fld underlying field
+   * @param input cycle index data
+   * @param <E> underlying field type
+   * @return log
+   */
+  public static <E> List<List<E>> logCycleIndexData(final Field<E> fld, final List<List<E>> input) {
+    final List<List<E>> lg = primLogCycleIndexData(fld, input);
+    final List<List<E>> results = new ArrayList<>();
+    results.add(Collections.singletonList(fld.zero()));
+    for (int n = 1; n < input.size(); ++n) {
+      final List<E> v = new ArrayList<>();
+      final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
+      for (int d = 1; d <= n; ++d) {
+        if (n % d == 0) {
+          final int i = n / d;
+          final E r = fld.coerce(MemoryFactorial.SINGLETON.factorial(n).divide(MemoryFactorial.SINGLETON.factorial(i)).divide(d).multiply(Mobius.mobius(d)));
+          final List<E> ui = lg.get(i);
+          int xi = -1;
+          final IntegerPartition partI = new IntegerPartition(n / d);
+          int[] pi;
+          while ((pi = partI.next()) != null) {
+            ++xi;
+            final int col = pm.get(Arrays.toString(scaleVSmall(pi, d)));
+            final E subs = PolynomialUtils.deepSubstitute(fld, ui.get(xi), d);
+            while (col >= v.size()) {
+              v.add(fld.zero());
+            }
+            v.set(col, fld.add(v.get(col), fld.multiply(subs, r)));
+          }
+        }
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
+  /**
+   * Negate the given list of lists.
+   * @param fld underlying field
+   * @param data the data to negate
+   * @param <E> element type
+   * @return negated data
+   */
+  public static <E> List<List<E>> negate(final Field<E> fld, final List<List<E>> data) {
+    final List<List<E>> res = new ArrayList<>();
+    for (final List<E> lst : data) {
+      final List<E> negation = new ArrayList<>();
+      res.add(negation);
+      for (final E l : lst) {
+        negation.add(fld.negate(l));
+      }
+    }
+    return res;
+  }
+
+  /**
+   * Multiply cycle index data.
+   * @param fld underlying field
+   * @param lhs multiplicand
+   * @param rhs multiplicand
+   * @param <E> underlying field type
+   * @return product
+   */
+  public static <E> List<List<E>> multiplyCycleIndexData(final Field<E> fld, final List<List<E>> lhs, final List<List<E>> rhs) {
+    final List<List<E>> results = new ArrayList<>();
+    for (int n = 0; n < Math.min(lhs.size(), rhs.size()); ++n) {
+      final List<E> v = new ArrayList<>();
+      final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
+      for (int i = 0; i <= n; ++i) {
+        final int j = n - i;
+        final List<E> uj = rhs.get(j);
+        final List<E> ui = lhs.get(i);
+        final E b = fld.coerce(Binomial.binomial(n, i));
+        int xj = -1;
+        final IntegerPartition partJ = new IntegerPartition(j);
+        int[] pj;
+        while ((pj = partJ.next()) != null) {
+          ++xj;
+          int xi = -1;
+          final IntegerPartition partI = new IntegerPartition(i);
+          int[] pi;
+          while ((pi = partI.next()) != null) {
+            ++xi;
+            final int col = pm.get(Arrays.toString(IntegerPartition.merge(pi, pj)));
+            while (col >= v.size()) {
+              v.add(fld.zero());
+            }
+            v.set(col, fld.add(v.get(col), fld.multiply(fld.multiply(uj.get(xj), ui.get(xi)), b)));
+          }
+        }
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
+  /**
+   * Multiply cycle index data in a special way.
+   * @param fld underlying field
+   * @param lhs multiplicand
+   * @param rhs multiplicand
+   * @param yf function
+   * @param <E> underlying field type
+   * @return product
+   */
+  public static <E> List<List<E>> multiplyGgfCycleIndexData(final Field<E> fld, final List<List<E>> lhs, final List<List<E>> rhs, final Function<Integer, E> yf) {
+    final List<List<E>> results = new ArrayList<>();
+    for (int n = 0; n < Math.min(lhs.size(), rhs.size()); ++n) {
+      final List<E> v = new ArrayList<>();
+      final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
+      for (int i = 0; i <= n; ++i) {
+        final int j = n - i;
+        final List<E> uj = rhs.get(j);
+        final List<E> ui = lhs.get(i);
+        final E b = fld.coerce(Binomial.binomial(n, i));
+        int xj = -1;
+        final IntegerPartition partJ = new IntegerPartition(j);
+        int[] pj;
+        while ((pj = partJ.next()) != null) {
+          final List<E> q = new ArrayList<>();
+          ++xj;
+          for (int s = 1; s <= i; ++s) {
+            E prod = fld.one();
+            for (final int t : pj) {
+              final int g = IntegerUtils.gcd(s, t);
+              prod = fld.multiply(prod, fld.pow(yf.apply(s * t / g), g));
+            }
+            q.add(prod);
+          }
+          int xi = -1;
+          final IntegerPartition partI = new IntegerPartition(i);
+          int[] pi;
+          while ((pi = partI.next()) != null) {
+            ++xi;
+            final int col = pm.get(Arrays.toString(IntegerPartition.merge(pi, pj)));
+            while (col >= v.size()) {
+              v.add(fld.zero());
+            }
+            E prod = fld.one();
+            for (final int t : pi) {
+              prod = fld.multiply(prod, q.get(t - 1));
+            }
+            v.set(col, fld.add(v.get(col), fld.multiply(fld.multiply(fld.multiply(uj.get(xj), ui.get(xi)), b), prod)));
+          }
+        }
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
+  /**
+   * Generating function for initially (or finally) connected graphs.
+   * Formula: <code>D X S*exp(-S)</code>.
+   * @param <E> underlying field type
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf field function
+   * @return generating function
+   */
+  public static <E> Polynomial<E> initially(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    final List<List<E>> tmp1 = invGgfCycleIndexData(fld, graphs, yf);
+    final List<List<E>> tmp2 = negate(fld, logCycleIndexData(fld, tmp1));
+    final List<List<E>> tmp3 = multiplyGgfCycleIndexData(fld, graphs, multiplyCycleIndexData(fld, tmp2, tmp1), yf);
+    return unlabeledOgf(fld, tmp3);
+  }
+
+  /**
+   * Generating function for initially-finally connected graphs.
+   * Formula: <code>S - S^2 + exp(S) * ((S*exp(-S)) X (S*exp(-S)) X D)</code>.
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf field function
+   * @param <E> underlying field type
+   * @return generating function
+   */
+  public static <E> Polynomial<E> initiallyFinally(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    final List<List<E>> tmp1 = invGgfCycleIndexData(fld, graphs, yf); // exp(-S)
+    final List<List<E>> tmp2 = negate(fld, logCycleIndexData(fld, tmp1)); // S
+    final List<List<E>> tmp3 = multiplyCycleIndexData(fld, tmp2, tmp1); // S*exp(-S)
+    final List<List<E>> tmp4 = multiplyGgfCycleIndexData(fld, graphs, multiplyGgfCycleIndexData(fld, tmp3, tmp3, yf), yf);
+    final Polynomial<E> sogf = unlabeledOgf(fld, tmp2);
+    final DegreeLimitedPolynomialRingField<E> ring = new DegreeLimitedPolynomialRingField<>(fld, sogf.degree());
+    final Polynomial<E> sogf2 = ring.multiply(sogf, sogf);
+    final Polynomial<E> et = ring.multiply(PolynomialUtils.eulerTransform(fld, sogf), unlabeledOgf(fld, tmp4));
+    return ring.add(ring.subtract(sogf, sogf2), et);
+  }
 }

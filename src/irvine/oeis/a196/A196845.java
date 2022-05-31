@@ -5,7 +5,7 @@ import irvine.oeis.a143.A143492;
 import irvine.oeis.triangle.Transpose;
 
 /**
- * A196845 Table of elementary symmetric function a_k(3, 4,...,n+2) (no 1 and 2).
+ * A196845 Table of elementary symmetric function a_k(3,4,...,n+2) (no 1 and 2).
  * @author Georg Fischer
  */
 public class A196845 extends Transpose {

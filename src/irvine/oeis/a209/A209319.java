@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a246.A246522;
 
 /**
- * A209319 Number of functions f:{1, 2,...,n}-&gt;{1, 2,...,n} whose cycle lengths are &lt;= 2.
+ * A209319 Number of functions f:{1,2,...,n}-&gt;{1,2,...,n} whose cycle lengths are &lt;= 2.
  * @author Georg Fischer
  */
 public class A209319 extends A246522 {

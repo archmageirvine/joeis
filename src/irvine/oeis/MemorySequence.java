@@ -12,6 +12,35 @@ import irvine.math.z.Z;
  */
 public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
 
+  private final int mOffset;
+
+  /**
+   * Construct a new memory sequence with specified offset.
+   * @param offset the offset
+   * @param initialTerms initial terms (starting at offset)
+   */
+  public MemorySequence(final int offset, final long... initialTerms) {
+    mOffset = offset;
+    for (final long t : initialTerms) {
+      add(Z.valueOf(t));
+    }
+  }
+
+  /**
+   * Construct a new memory sequence with specified offset.
+   * @param offset the offset
+   */
+  public MemorySequence(final int offset) {
+    mOffset = offset;
+  }
+
+  /**
+   * Construct a new memory sequence with offset 0.
+   */
+  public MemorySequence() {
+    this(0);
+  }
+
   /**
    * Return this sequence as a polynomial.
    * @return polynomial
@@ -29,6 +58,11 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
     return t;
   }
 
+  @Override
+  public Z get(final int n) {
+    return super.get(n - mOffset);
+  }
+
   /**
    * Return <code>a(n)</code>. If the value of <code>a(n)</code> is not already computed,
    * automatically compute all terms &lt;= n before returning with <code>a(n)</code>.
@@ -36,10 +70,19 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
    * @return value of <code>a(n)</code>
    */
   public Z a(final int n) {
-    while (n >= size()) {
+    final int m = n - mOffset;
+    while (m >= size()) {
       add(computeNext());
     }
-    return get(n);
+    return get(n); // NOTE: This really does need to be n
+  }
+
+  /**
+   * Get the offset for this sequence.
+   * @return offset
+   */
+  public int getOffset() {
+    return mOffset;
   }
 
   /**

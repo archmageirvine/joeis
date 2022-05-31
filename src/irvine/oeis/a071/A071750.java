@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 import irvine.oeis.a237.A237276;
 
 /**
- * A071750 Numbers n such that 13 divides p(n), the n-th partition number, A000041(n).
+ * A071750 Numbers k such that 13 divides p(k), the k-th partition number, A000041(k).
  * @author Georg Fischer
  */
 public class A071750 extends A237276 {

@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181442 Solutions a(n) to (r(n)-2)*(r(n)-3) = 6*a(n)*(a(n)-1).
+ * A181442 Expansion of (1 + x - 8*x^2 + x^3 + x^4) / ( (1 - x)*(1 - 10*x^2 + x^4) ).
  * @author Sean A. Irvine
  */
 public class A181442 extends LinearRecurrence {

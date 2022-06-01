@@ -16,6 +16,7 @@ import irvine.math.api.Field;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.MatrixRing;
+import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.group.SymmetricGroup;
 import irvine.math.matrix.DefaultMatrix;
@@ -883,4 +884,58 @@ public final class GraphUtils {
     final Polynomial<E> et = ring.multiply(PolynomialUtils.eulerTransform(fld, sogf), unlabeledOgf(fld, tmp4));
     return ring.add(ring.subtract(sogf, sogf2), et);
   }
+
+  /**
+   * Compute pointing cycle index data.
+   * @param fld underlying field
+   * @param data graph data
+   * @param <E> underlying field type
+   * @return pointing data
+   */
+  public static <E> List<List<E>> pointCycleIndexData(final Field<E> fld, final List<List<E>> data) {
+    final List<List<E>> results = new ArrayList<>();
+    for (int n = 0; n < data.size(); ++n) {
+      final List<E> v = new ArrayList<>(data.get(n));
+      int xi = -1;
+      final IntegerPartition partN = new IntegerPartition(n);
+      int[] pi;
+      while ((pi = partN.next()) != null) {
+        ++xi;
+        v.set(xi, fld.multiply(v.get(xi), fld.coerce(IntegerUtils.count(1, pi))));
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
+  /**
+   * Generating function for strongly connected graphs.
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf underlying field function
+   * @param <E> underlying field type
+   * @return generating function
+   */
+  public static <E> Polynomial<E> stronglyConnected(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    return new PolynomialRing<>(fld).negate(unlabeledOgf(fld, invGgfCycleIndexData(fld, graphs, yf)));
+  }
+
+  /**
+   * Generating function for rooted strongly connected graphs.
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf underlying field function
+   * @param <E> underlying field type
+   * @return generating function
+   */
+  public static <E> Polynomial<E> rootedStronglyConnected(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    return unlabeledOgf(fld, pointCycleIndexData(fld, negate(fld, logCycleIndexData(fld, invGgfCycleIndexData(fld, graphs, yf)))));
+  }
+
+  /*
+  \\ Strong graphs
+Strongly(graphs, yf=e->2)={
+  -InvEulerMTS(UnlabeledOgf(InvGgfCIData(graphs, yf)));
+}
+   */
 }

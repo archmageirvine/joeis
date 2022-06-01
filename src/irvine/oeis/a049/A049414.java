@@ -32,7 +32,7 @@ public class A049414 extends A003030 {
     return k == 0 ? Z.ONE.shiftLeft(i * j).subtract(1) : mLambda.get(i, j, k).shiftLeft(i * j);
   }
 
-  private final MemoryFunction2<Integer, Z> mAlpha = new MemoryFunction2<Integer, Z>() {
+  private final MemoryFunction2<Integer, Z> mAlpha = new MemoryFunction2<>() {
     @Override
     protected Z compute(final Integer n, final Integer i) {
       if (n.equals(i)) {

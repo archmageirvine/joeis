@@ -1604,7 +1604,6 @@ A049309 Number of nonisomorphic self-complementary circulant digraphs (Cayley di
 A049313 Switching classes of tournaments on n nodes.
 A049333 Number of spanning trees in directed graph of spanning trees of the complete directed graph on n vertices.
 A049344 Prime unoriented alternating links (not necessarily connected knots) with n crossings.
-A049387 Number of rooted unlabeled strongly connected digraphs with n nodes.
 A049429 Triangle T(n,d) = number of distinct d-dimensional polyominoes (or polycubes) with n cells (n >= 2,d>=1)
 A049430 Triangle read by rows: T(n,d) is the number of distinct properly d-dimensional polyominoes (or polycubes) with n cells (n >= 1, d >= 0).
 A049475 Number of 2n X 2n matrices whose entries are {0,-1,+1} and whose row sums and column sums are all distinct.
@@ -1839,3 +1838,6 @@ A057141 Number of equivalence classes of self-dual 4-valued Post functions of n 
 A057210 Number of fullerenes with 2n vertices (or carbon atoms), counting enantiomorphic pairs as distinct
 A057241 Circuit cost of the hardest Boolean function of n variables; metric: 2-input AND-gates cost 1, NOT is free, fanout is free, inputs are free, no feedback allowed
 A057272 Triangle T(n,k) of number of digraphs with a quasi-source on n labeled nodes and with k arcs, k=0,1,..,n*(n-1)
+A057280 Coefficient triangle of polynomials (rising powers) related to Fibonacci convolutions. Companion triangle to A057995.
+A057281 Coefficient triangle of polynomials (falling powers) related to Fibonacci convolutions. Companion triangle to A057282.
+A057282 Coefficient triangle of polynomials (falling powers) related to Fibonacci convolutions. Companion triangle to A057281.

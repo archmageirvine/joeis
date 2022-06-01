@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257449 a(n) = 75*(2^n - 1) - 4*n^3 - 18*n^2 - 52*n.

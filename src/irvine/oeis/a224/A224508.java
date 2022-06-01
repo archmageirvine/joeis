@@ -1,6 +1,6 @@
 package irvine.oeis.a224;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A224508 a(n+2) = a(n+1) + a(n) + A*t^n, with A = 1 and t = -2.

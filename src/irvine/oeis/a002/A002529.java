@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A002529 a(n) = A002527(n+1) - A002527(n) - A002526(n).

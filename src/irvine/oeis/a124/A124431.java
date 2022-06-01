@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 // ogf: (((x^2+1)*(1-4*x+x^2))^(1/2)-(1-4*x+x^2))/(2*x*(1-4*x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A124431 a(n) = Sum_{k=0..n} 2^k*C([(n+k)/2],k)*C([(n+k+1)/2],k)) where [x]=floor(x).

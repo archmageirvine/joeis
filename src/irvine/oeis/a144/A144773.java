@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // Recurrence: a[n+0]+(-10*n+9)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144773 10-fold factorials: Product_{k=0..n-1} (10*k+1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140992 a(0) = 0, a(1) = 1; for n &gt; 1, a(n) = a(n-2) + a(n-1) + A000071(n+1).

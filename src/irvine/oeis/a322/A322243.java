@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 // Recurrence: 343*(5+2*n)*(n+1)^2*a[n+0]-7*(3+2*n)*(43*n^2+172*n+163)*a[n+1]-(5+2*n)*(43*n^2+172*n+163)*a[n+2]+(3+2*n)*(n+3)^2*a[n+3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A322243 a(n) = A322242(n)^2, the square of the central coefficient in (1 + 3*x + 4x^2)^n.

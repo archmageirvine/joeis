@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A003756 Number of spanning trees with degrees 1 and 3 in S_4 X P_{2n-1}.

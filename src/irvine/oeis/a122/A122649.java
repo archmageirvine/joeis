@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 // egf: -1+1/sqrt(1-2*x)+log(1-2*x)/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A122649 Difference between the double factorial of the n-th nonnegative odd number and the double factorial of the n-th nonnegative even number.

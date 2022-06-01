@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // egf: (2*exp(x)-x-2)/(x-1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228959 Total sum of squared lengths of ascending runs in all permutations of [n].

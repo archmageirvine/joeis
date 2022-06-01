@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // egf: 1/2*(1+x)*log((1+x)/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098557 E.g.f. (1/2)*(1+x)*log((1+x)/(1-x)).

@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 // ogf: (1/sqrt(1-4*x)+1/sqrt(1+4*x^2))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A119358 Number of n-element subsets of [2n] having an even sum.

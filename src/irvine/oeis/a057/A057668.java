@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 // ogf: x^7/((120*x-1)*(121*x-1)*(122*x-1)*(123*x-1)*(124*x-1)*(125*x-1)*(126*x-1)*(127*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A057668 Number of minimal 7-covers of a labeled n-set.

@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // ogf: (1-sqrt(1-16*x))/(2*(1-16*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055787 a(n) = 2^(4*n-1) - 2^(2*n-1)*binomial(2*n,n).

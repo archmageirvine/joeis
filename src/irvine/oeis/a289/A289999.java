@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289999 Sierpinski cuboctahedral numbers: a(n) = 16*4^n - 12*2^n + 9.

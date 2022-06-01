@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 // Recurrence: a[n+1]=(n+1)*a[n+0]+2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A296943 Number of bisymmetric and quasitrivial operations on an arbitrary n-element set.

@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: 2/(1-2*x-x^2+sqrt(1-2*x^2-3*x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191519 Number of dispersed Dyck paths of semilength n (i.e., Motzkin paths of length n with no (1,0)-steps at positive heights) having no UUU's (U=(1,1)).

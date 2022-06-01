@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 // ogf: (2*(x^2-x+1))/sqrt((x-1)*(2*x-1)*(2*x^2+x+1))+2*(x^3-x^2-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A265118 Number of 3Xn arrays containing n copies of 0..3-1 with row sums equal, column sums equal and full-length antidiagonal sums equal to the short dimension sums.

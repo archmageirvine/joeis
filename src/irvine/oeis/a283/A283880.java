@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // Recurrence: a[n+0]=3*a[n-6]-2*a[n-12]-a[n-18]+a[n-24]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A283880 A linear-recurrent solution to Hofstadter's Q recurrence.

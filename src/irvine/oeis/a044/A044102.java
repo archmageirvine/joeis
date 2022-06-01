@@ -1,6 +1,6 @@
 package irvine.oeis.a044;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A044102 Multiples of 36.

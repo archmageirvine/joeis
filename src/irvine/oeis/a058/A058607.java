@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 // egf: log((1+1/sqrt(1-4*x))/2)/sqrt(1-4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A058607 a(n) = (1 + 1/2 + 1/3 + ... + 1/n)*(2n-1)!/(n-1)!.

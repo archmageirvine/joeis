@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 // ogf: (1/4*(1-(1-4*x*(1+x)^2)^(1/2))^2)/x^2/(1+x)^4
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A073156 Main diagonal sequence of triangle A073153.

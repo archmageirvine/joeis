@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: 1/sqrt(1-8*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059304 a(n) = 2^n * (2*n)! / (n!)^2.

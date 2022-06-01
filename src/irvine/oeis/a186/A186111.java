@@ -1,6 +1,6 @@
 package irvine.oeis.a186;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A186111 a(n) = -n if n odd, a(2n) = 3n if n odd, a(4n) = 2n.

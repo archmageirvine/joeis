@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212579 Number of (w,x,y,z) with all terms in {1,...,n} and min{|w-x|,|w-y|}=min{|x-y|,|x-z|}.

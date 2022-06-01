@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // ogf: (1+x+x^2-sqrt(1+2*x+3*x^2-2*x^3+x^4))*2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129507 G.f.: (1+x+x^2-sqrt(1+2x+3x^2-2x^3+x^4))*2.

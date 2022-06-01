@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A062346 Consider 2n tennis players; a(n) is the number of matches needed to let every possible pair play each other.

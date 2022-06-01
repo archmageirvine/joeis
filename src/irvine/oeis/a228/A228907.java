@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // Recurrence: n*(2*n+1)*(7*n^2-35*n+34)*a[n+0]=(126*n^4-742*n^3+1193*n^2-601*n+78)*a[n-1]-(182*n^4-1253*n^3+2788*n^2-2293*n+450)*a[n-2]+(56*n^4-434*n^3+1189*n^2-1273*n+318)*a[n-3]+(n-4)*(2*n-5)*(7*n^2-21*n+6)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228907 G.f. satisfies: A(x) = Sum_{n&gt;=0} x^n * (1 - A(x)^(2*n))/(1 - A(x)).

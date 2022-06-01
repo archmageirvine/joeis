@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // Recurrence: (n+2)*a[n+0]=(6*n+2)*a[n-1]-(5*n-10)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A045868 Expansion of g.f.: ((1 - x - sqrt(1-6*x+5*x^2))/(2*x))^2.

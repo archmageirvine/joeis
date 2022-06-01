@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 // Recurrence: a[n+0]=a[n-1]+a[n-20]-a[n-21]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A236204 Numbers not divisible by 2, 3 or 11.

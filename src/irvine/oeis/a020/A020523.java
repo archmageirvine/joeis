@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A020523 a(n) = 3rd Euler polynomial evaluated at 2^n and multiplied by 4.

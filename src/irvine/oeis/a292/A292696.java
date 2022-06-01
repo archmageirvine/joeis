@@ -1,6 +1,6 @@
 package irvine.oeis.a292;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A292696 a(n) = L(n)^2 - 5*(-1)^n = L(n+1)*L(n-1), where L = A000032.

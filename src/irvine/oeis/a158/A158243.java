@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 // egf: ((1-exp(-x^2/2))*exp(-x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A158243 Derangements with at least one 2-cycle.

@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101052 Number of preferential arrangements of n labeled elements when only k &lt;= 3 ranks are allowed.

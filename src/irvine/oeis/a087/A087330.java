@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087330 Sum of all digits of all integers less than or equal to 555...55 (with n 5's) in base 10.

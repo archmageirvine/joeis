@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 // Recurrence: a[n+0]=(n+2)*a[n-1]-2*n*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A233449 a(n) = Sum_{k=0..n} k! * 2^(n-k).

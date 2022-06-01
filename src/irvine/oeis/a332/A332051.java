@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: 5*(n-1)*n*(2294*n^5-31267*n^4+168064*n^3-445121*n^2+580494*n-297864)*a[n+0]=(n-1)*(29822*n^6-415647*n^5+2327634*n^4-6668807*n^3+10238782*n^2-7910608*n+2368800)*a[n-1]+2*(27528*n^7-434848*n^6+2851985*n^5-10024036*n^4+20278349*n^3-23438626*n^2+14189888*n-3420000)*a[n-2]-2*(41292*n^7-647684*n^6+4218357*n^5-14743832*n^4+29759871*n^3-34533464*n^2+21199620*n-5259600)*a[n-3]+2*(n-4)*(2*n-7)*(2294*n^5-19797*n^4+65936*n^3-105591*n^2+80846*n-23400)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332051 Number of compositions of 2n where the multiplicity of the first part equals n.

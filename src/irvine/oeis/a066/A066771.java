@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A066771 5^n cos(2n arctan(1/2)) or denominator of tan(2n arctan(1/2)).

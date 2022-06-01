@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049004 First letter of English names for months of year, mapping A -&gt; 1, B -&gt; 2 etc.

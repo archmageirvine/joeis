@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133586 Expansion of x*(1+2*x)/( (x^2-x-1)*(x^2+x-1) ).

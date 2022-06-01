@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 // manually
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A160547 Not divisible by 31.

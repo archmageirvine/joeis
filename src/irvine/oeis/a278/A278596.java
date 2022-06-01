@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 // ogf: (sqrt(1-8*x)+3)^2/(2*(sqrt(1-8*x)+1)^3*sqrt(1-8*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A278596 a(n) = Sum_{k=0..n} binomial(k+n+3,k)*binomial(2*n+1,n-k).

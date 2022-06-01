@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 // egf: (x*exp(2*x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A066534 Total number of walks with length &gt; 0 in the Hasse diagram of a Boolean algebra of order n.

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // ogf: (1+x^4+x^3-x^2+x)/((x+1)*(x^2+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A133131 a(4n) = 3n+1, a(4n+1) = -3n, a(4n+2) = -3n-3, a(4n+3) = 3n+2.

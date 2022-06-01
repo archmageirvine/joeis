@@ -1,6 +1,6 @@
 package irvine.oeis.a070;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A070050 Number of Bottleneck-Monge matrices with 2 rows. In the formula below, P = 2.

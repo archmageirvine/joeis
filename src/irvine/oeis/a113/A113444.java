@@ -1,6 +1,6 @@
 package irvine.oeis.a113;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A113444 a(n) = a(n-1) + Sum_{0&lt;k&lt;=n/5} a(n-5k) with a(0)=1.

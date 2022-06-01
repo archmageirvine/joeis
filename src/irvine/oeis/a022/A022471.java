@@ -1,6 +1,6 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A022471 Length of n-th term of A022470.

@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 // Recurrence: a[n+0]=4*a[n-1]-2*a[n-2]-12*a[n-3]+17*a[n-4]+8*a[n-5]-28*a[n-6]+8*a[n-7]+17*a[n-8]-12*a[n-9]-2*a[n-10]+4*a[n-11]-a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A093199 Number of 4 X 4 magic squares with line sum n.

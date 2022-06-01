@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 // ogf: (1-sqrt(1-4*x))/(sqrt(1-4*x)*x-x+2)*(6*x+sqrt(1-4*x)-1)/(4*x+sqrt(1-4*x)-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A270363 a(n) = (n+1)*Sum_{k=0..(n-1)/2}((binomial(2*n-3*k-2,n-k-1))/(n-k)).

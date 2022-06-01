@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 // Recurrence: (n+1)*a[n+0]+7*(-4*n-1)*a[n-1]+99*(2*n-1)*a[n-2]+7*(-4*n+5)*a[n-3]+(n-2)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A245924 Expansion of (1-x - sqrt(1 - 14*x + x^2)) / (6*x*(1 - 14*x + x^2)).

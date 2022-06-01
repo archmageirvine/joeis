@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 // Recurrence: n*(n+7)*(n+1)*a[n+0]-2*(n+5)*(n+3)*(2*n+7)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A033280 Number of diagonal dissections of a convex (n+8)-gon into n+1 regions.

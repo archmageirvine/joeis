@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 6*a[n+0]=(5*n^3+n^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331353 Number of achiral colorings of the edges (or triangular faces) of a regular 4-dimensional simplex with n available colors.

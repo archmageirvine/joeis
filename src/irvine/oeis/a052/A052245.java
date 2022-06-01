@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052245 Expansion of 10*x / ((1 - x) * (1 - 10*x)^2) in powers of x.

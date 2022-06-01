@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 // ogf: (1-x^2)/sqrt(1-2*x-x^2-x^4+2*x^5+x^6)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A136029 a(n) is the number of central ideals of a garland of order 2n, i.e., a(n) = g(2n,n), where g(n,k) is the number of ideals of size k in a garland (or double fence) of order n (see A137278).

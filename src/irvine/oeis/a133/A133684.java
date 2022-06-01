@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133684 a(2n) = A001045(n); a(1)=1; a(2n+1) = 2*A001045(n-1) for n &gt;= 1.

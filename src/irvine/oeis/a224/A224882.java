@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 // ogf: 1/(1-32*x)^(1/16)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A224882 G.f.: 1/(1 - 32*x)^(1/16).

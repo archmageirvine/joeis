@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 // Recurrence: n*a[n+0]+6*(-2*n+1)*a[n-1]+48*(n-1)*a[n-2]+32*(-2*n+3)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A033504 a(n)/4^n is the expected number of tosses of a coin required to obtain n+1 heads or n+1 tails.

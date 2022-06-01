@@ -1,6 +1,6 @@
 package irvine.oeis.a269;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A269028 a(n) = 40*a(n - 1) - a(n - 2) for n&gt;1, a(0) = 1,  a(1) = 1.

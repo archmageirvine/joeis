@@ -1,6 +1,6 @@
 package irvine.oeis.a156;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A156202 a(n) = 2*a(n-1)+3 for n &gt; 1, a(1) = 10.

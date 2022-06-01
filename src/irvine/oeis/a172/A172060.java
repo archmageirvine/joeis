@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 // ogf: (1-(1-4*x)^(1/2))/(1-4*x)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A172060 The number of returns to the origin in all possible one-dimensional walks of length 2n.

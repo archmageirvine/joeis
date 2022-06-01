@@ -1,6 +1,6 @@
 package irvine.oeis.a092;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A092264 a(n)*a(n-5) = a(n-1)*a(n-4)+a(n-2)+a(n-3), with initial terms a(1) = ... = a(5) = 1.

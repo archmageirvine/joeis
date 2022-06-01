@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // Recurrence: +(n+2)*a[n+0]+2*(-n-1)*a[n-1]+(7*n-4)*a[n-2]+2*(-3*n+4)*a[n-3]+5*(n-2)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A178114 Expansion of (sqrt(1-2x+7x^2-6x^3+5x^4)-(1-x+x^2))/(2x^2(1-x+x^2)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A115504 Number of monic irreducible polynomials of degree 1 in GF(2^n)[x1,x2,x3,x4,x5].

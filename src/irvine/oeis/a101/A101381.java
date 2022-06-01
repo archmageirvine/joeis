@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101381 a(n) = n^2*(n+1)^2*(4*n^2 - 5*n + 4)/12.

@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097773 Pell equation solutions (13*b(n))^2 - 170*a(n)^2 = -1 with b(n):=A097772(n), n &gt;= 0.

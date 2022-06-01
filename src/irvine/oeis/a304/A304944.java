@@ -3,7 +3,7 @@ package irvine.oeis.a304;
 // ogf: x/(1-4*x)^2*((1-4*x)/(1+4*x))^(1/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A304944 a(0) = 0, a(1) = 1 and a(n) = 6*a(n-1)/(n-1) + 16*a(n-2) for n &gt; 1.

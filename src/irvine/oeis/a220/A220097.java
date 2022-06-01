@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 // Recurrence: 4*n*(2*n+1)*a[n+0]+2*(-53*n^2+63*n-16)*a[n-1]+9*(13*n^2-59*n+62)*a[n-2]+18*(n-2)*(2*n-5)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A220097 Number of words on {1,1,2,2,3,3,...,n,n} avoiding the pattern 123.

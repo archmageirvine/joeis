@@ -1,7 +1,7 @@
 package irvine.oeis.a259;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259563 a(n) = 81*n^3*(n-1)^5*(n+1)^2*(n^2-6*n+1)*(n^3-79*n^2+163*n-81).

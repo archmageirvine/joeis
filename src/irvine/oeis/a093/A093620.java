@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 // egf: exp((4*x)/(1-2*x))/(1-2*x)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A093620 Values of Laguerre polynomials: a(n) = 2^n*n!*LaguerreL(n,-1/2,-2).

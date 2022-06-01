@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 // Recurrence: 5443200*a[n+0]=(n+5)*(n+4)*(n+3)*(n+2)*(n+1)*(n)*(175*n^6+1365*n^5+2671*n^4-2805*n^3-14735*n^2-14445*n-2466)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A161741 Fifth right hand column of the RSEG2 triangle A161739.

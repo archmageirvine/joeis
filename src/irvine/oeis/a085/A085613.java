@@ -1,6 +1,6 @@
 package irvine.oeis.a085;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A085613 a(n) = 2^(n-1) + (2 + (-1)^n)^((n-2)/2).

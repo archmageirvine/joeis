@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138826 Concatenation of 2n-1 digits 1, n digits 0 and 2n-1 digits 1.

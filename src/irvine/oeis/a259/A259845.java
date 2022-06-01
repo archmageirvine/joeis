@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 // ogf: 1/(2*x)+x-sqrt(1-4*x-4*x^2+4*x^4)/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A259845 a(0)=1, a(1)=3, and the INVERT transform of the sequence deletes the 3.

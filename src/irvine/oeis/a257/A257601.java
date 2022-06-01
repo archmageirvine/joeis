@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257601 a(n) = (n^4 + 20*n^3 + 125*n^2 + 250*n + 24)/12.

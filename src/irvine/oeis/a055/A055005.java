@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A055005 Number of nonnegative integer 3 X 3 matrices with no zero rows or columns and with sum of elements equal to n.

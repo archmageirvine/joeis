@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076758 a(n) = n*(n+1)^2*(2+n)*(3+2*n)*(19+8*n)/180.

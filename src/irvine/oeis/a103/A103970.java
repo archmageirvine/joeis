@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 // Recurrence: (n+1)*a[n+0]=2*(2*n-1)*a[n-1]+12*(n-2)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A103970 Expansion of (1 - sqrt(1 - 4*x - 12*x^2))/(2*x).

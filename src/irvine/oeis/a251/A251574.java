@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 // Recurrence: 3*(3*n-5)*(3*n-4)*(4*n^2-23*n+34)*a[n+0]=8*(128*n^5-1440*n^4+6520*n^3-14906*n^2+17289*n-8190)*a[n-1]+256*(4*n^2-15*n+15)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A251574 E.g.f.: exp(4*x*G(x)^3) / G(x)^3 where G(x) = 1 + x*G(x)^4 is the g.f. of A002293.

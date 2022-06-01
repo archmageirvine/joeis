@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 // Recurrence: n*a[n+0]+2*(-2*n+3)*a[n-1]+4*(-n+3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A179190 Coefficient [x^n] of the Maclaurin series for 2 - sqrt(1 - 4*x - 4*x^2).

@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 // Recurrence: a[n+0]=5*a[n-1]-10*a[n-2]+10*a[n-3]-5*a[n-4]+a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A071244 n*(n-1)*(n^2+2)/6.

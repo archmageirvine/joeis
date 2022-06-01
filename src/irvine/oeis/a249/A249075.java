@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A249075 Sum of the numbers in row n of the array at A249074.

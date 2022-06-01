@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 // ogf: (3-x-sqrt(1-6*x+x^2))/(2*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A176006 The number of branching configurations of RNA (see Sankoff, 1985) with n or fewer hairpins.

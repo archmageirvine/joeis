@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 // egf: cosh(log(1/(1-x))-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A216778 Number of derangements on n elements with an even number of cycles.

@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // Recurrence: a[n+0]=(16*n^2-4*n-1)*a[n-1]-n*(4*n-6)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277360 Number of self-avoiding planar walks starting at (0,0), ending at (n,n), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1).

@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 // ogf: (1-sqrt(4*(1-x)*(1+x^3)-3))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A233347 G.f. satisfies: 1-x = Sum_{n&gt;=0} (-x)^n*A(x)^(n mod 3).

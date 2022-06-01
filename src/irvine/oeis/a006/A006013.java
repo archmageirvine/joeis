@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A006013 a(n) = binomial(3*n+1,n)/(n+1).

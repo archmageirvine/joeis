@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // egf: exp(x)*(1+x*arctanh(x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166358 Row sums of exponential Riordan array [1+x*arctanh(x), x], A166357.

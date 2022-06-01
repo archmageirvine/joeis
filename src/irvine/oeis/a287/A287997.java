@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287997 Expansion of 1/((1-x)(1-x^3)(1-x^5) ... (1-x^13)).

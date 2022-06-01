@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 // ogf: (x^4+2*x^3-16*x^2+2*x+1)/((1-x)*(1-6*x+x^2)*(1+6*x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A069017 Triangular numbers of the form k^2 + k + 1.

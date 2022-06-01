@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 // ogf: 1/(1-16*x)^(3/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A216702 a(n) = Product_{k=1..n} (16 - 4/k).

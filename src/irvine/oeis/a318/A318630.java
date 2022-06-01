@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 // ogf: -x*(9*x^20+24256*x^19+1416550*x^18+14526732*x^17+58916595*x^16+142251894*x^15+245168253*x^14+328503852*x^13+372895647*x^12+386000952*x^11+387373441*x^10+386005450*x^9+372890715*x^8+328505514*x^7+245169837*x^6+142249572*x^5+58917879*x^4+14526462*x^3+1416486*x^2+24304*x+1)/((x^6+x^3+1)*(x^2+x+1)^3*(x-1)^9)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A318630 Number of 9-member subsets of [9*n] whose elements sum to a multiple of n.

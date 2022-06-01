@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 // Recurrence: 5*(n-2)*n*(n+1)^2*(n+2)^2*(481*n^2-1003*n+540)*a[n+0]=4*n*(n+1)^2*(n+3)*(962*n^4-3449*n^3+3262*n^2-784*n-180)*a[n-1]+4*(n-1)*n*(n+2)*(n+3)*(3848*n^4-11872*n^3+12073*n^2-3572*n-180)*a[n-2]-2*(n-2)*(n-1)*(n+1)*(n+2)*(n+3)*(2*n-5)*(481*n^2-41*n+18)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A255197 Number of dissections of a convex polygon with n+3 sides that have exactly one triangle, and that triangle shares at least one side with the exterior polygon.

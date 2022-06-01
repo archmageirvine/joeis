@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054451 Third column of triangle A054450 (partial row sums of unsigned Chebyshev triangle A049310).

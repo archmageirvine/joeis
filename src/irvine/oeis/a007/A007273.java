@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A007273 Inverse of 1155th cyclotomic polynomial.

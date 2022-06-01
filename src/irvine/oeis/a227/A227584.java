@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // Recurrence: 2*(n+2)^3*(n+3)*(3*n+4)*(3*n+5)*(21546*n^6-45513*n^5-3699*n^4+13101*n^3+6745*n^2+2032*n+228)*a[n+0]=(n+2)*(100641366*n^11+49968333*n^10-359008281*n^9-154345878*n^8+328506480*n^7-50516019*n^6-255412581*n^5+41482508*n^4+116397064*n^3+50875696*n^2+13946672*n+1423680)*a[n-1]-2*(173359116*n^12+510099768*n^11-127771911*n^10-1779706188*n^9-1320942528*n^8+1504634418*n^7+2094287811*n^6+74489810*n^5-783633768*n^4-274711936*n^3+13818000*n^2+12588128*n+862080)*a[n-2]-16*(2*n-3)*(2*n+1)*(3*n-2)*(3*n-1)*(4*n+1)*(4*n+3)*(21546*n^6+83763*n^5+91926*n^4-25905*n^3-108086*n^2-58260*n-5560)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A227584 Number of lattice paths from {4}^n to {0}^n using steps that decrement one component such that for each point (p_1,p_2,...,p_n) we have p_1&lt;=p_2&lt;=...&lt;=p_n.

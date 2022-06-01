@@ -1,6 +1,6 @@
 package irvine.oeis.a231;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A231485 Number of perfect matchings in the graph C_5 X C_{2n}.

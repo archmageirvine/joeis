@@ -1,6 +1,6 @@
 package irvine.oeis.a079;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A079354 a(1)=1; a(n)=a(n-1)-1 if n is already in the sequence, a(n)=a(n-1)+3 otherwise.

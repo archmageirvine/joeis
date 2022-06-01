@@ -1,6 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A115599 Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives Z-X values.

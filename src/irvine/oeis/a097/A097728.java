@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097728 Chebyshev U(n,x) polynomial evaluated at x=73 = 2*6^2+1.

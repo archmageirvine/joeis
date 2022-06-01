@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 // manually 2021-05-29
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A067636 Row 1 of table in A067640.

@@ -1,6 +1,6 @@
 package irvine.oeis.a208;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A208481 Diagonal sums of triangle A185384.

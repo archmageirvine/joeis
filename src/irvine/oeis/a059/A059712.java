@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: ((1-2*x)*(1-3*x)-(1-4*x)*sqrt((1-3*x)*(1+x)))/(2*x*(2-7*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059712 Number of stacked directed animals on the square lattice.

@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A000570 Number of tournaments on n nodes determined by their score vectors.

@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 // Recurrence: n^2*a[n+0]=4*(4*n-3)^2*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A127776 a(n) = ( (2^n / n!) * Product_{k=0..n-1} (4*k + 1) )^2.

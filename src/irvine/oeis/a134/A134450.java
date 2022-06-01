@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134450 a(n) = square part of discriminant of Brioschi quintic polynomial x^5-10*n*x^3+45*n^2*x-n^2.

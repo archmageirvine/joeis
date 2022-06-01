@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 // DO NOT EDIT here!
 
 import irvine.oeis.transform.EulerTransformSequence;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A210964 Column 10 of square array A195825. Also column 1 of triangle A210954. Also 1 together with the row sums of triangle A210954.

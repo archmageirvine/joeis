@@ -1,6 +1,6 @@
 package irvine.oeis.a241;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A241526 Number of different positions in which a square with side length k, 1 &lt;= k &lt;= n - floor(n/3), can be placed within a bi-symmetric triangle of 1 X 1 squares of height n.

@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 // egf: (1+x-exp(x)-log(1-x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A186760 Number of cycles that are either nonincreasing or of length 1 in all permutations of {1,2,...,n}. A cycle (b(1), b(2), ...) is said to be increasing if, when written with its smallest element in the first position, it satisfies b(1)&lt;b(2)&lt;b(3)&lt;... .

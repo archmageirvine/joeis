@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 // Recurrence: (n+9)^2*(n+16)^2*(n+21)^2*(n+24)^2*(n+25)*a[n+0]=2*(110*n^9+13497*n^8+704088*n^7+20286926*n^6+350428790*n^5+3672058745*n^4+22314826244*n^3+68412531600*n^2+64584000000*n-45705600000)*a[n-1]-4*(n-1)^2*(4092*n^7+349536*n^6+12084237*n^5+215646686*n^4+2088552609*n^3+10433770264*n^2+21962910556*n+8002290720)*a[n-2]+8*(n-2)^2*(n-1)^2*(61160*n^5+3273732*n^4+64938154*n^3+580006399*n^2+2208119423*n+2488711560)*a[n-3]-256*(n-3)^2*(n-2)^2*(n-1)^2*(21076*n^3+577824*n^2+4743323*n+11018760)*a[n-4]+7372800*(n-4)^2*(n-3)^2*(n-2)^2*(n-1)^2*(2*n+15)*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A072167 T_10(n) in the notation of Bergeron et al., u_10(n) in the notation of Gessel: Related to Young tableaux of bounded height.

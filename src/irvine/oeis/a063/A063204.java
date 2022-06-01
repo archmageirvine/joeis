@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A063204 Dimension of the space of weight 2n cuspidal newforms for Gamma_0( 25 ).

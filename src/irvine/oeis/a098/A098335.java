@@ -1,7 +1,7 @@
 package irvine.oeis.a098;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098335 Expansion of 1/sqrt(1-4x+8x^2).

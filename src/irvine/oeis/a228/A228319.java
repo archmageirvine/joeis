@@ -1,6 +1,6 @@
 package irvine.oeis.a228;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A228319 The hyper-Wiener index of the graph obtained by applying Mycielski's construction to the star graph K(1,n).

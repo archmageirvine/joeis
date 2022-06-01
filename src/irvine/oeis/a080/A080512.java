@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // ogf: (1+3*x+x^2)/((1-x^2)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A080512 a(n) = n if n is odd, a(n) = 3*n/2 if n is even.

@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 // ogf: (x^10+4*x^9+6*x^7+x^6+3*x^5+x^4+6*x^3+4*x+1)/((x^4+x^3+x^2+x+1)*(x^4-x^3+x^2-x+1)*(x-1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A301724 Coordination sequence for node of type V1 in "kra" 2-D tiling (or net).

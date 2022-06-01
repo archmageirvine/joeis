@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 // ogf: (1-sqrt(1-4*x^2))/(2*(2*x-1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A206603 Maximal apex value of an addition triangle whose base is a permutation of {k-n/2, k=0..n}.

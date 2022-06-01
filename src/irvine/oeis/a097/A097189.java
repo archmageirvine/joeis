@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // ogf: 3/(1-9*x+2*(1-9*x)^(2/3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097189 Row sums of triangle A097186, in which the n-th row polynomial R_n(y) is formed from the initial (n+1) terms of g.f. A057083(y)^(n+1), where R_n(1/3) = 3^n for all n &gt;= 0.

@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // ogf: (-1+x+sqrt(1+6*x+x^2))/x/4
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080243 Signed super-Catalan or little Schroeder numbers.

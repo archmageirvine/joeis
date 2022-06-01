@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 // Recurrence: n*(n+1)*a[n+0]-2*n*(2*n-1)*a[n-1]-8*(2*n-1)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A200375 Product of Catalan and Jacobsthal numbers: a(n) = A000108(n)*A001045(n+1).

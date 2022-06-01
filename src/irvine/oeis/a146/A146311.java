@@ -1,6 +1,6 @@
 package irvine.oeis.a146;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A146311 a(n) = cos(2*n*arcsin(sqrt(3)) = (-1)^n*cosh(2*n*arcsinh(sqrt(2)).

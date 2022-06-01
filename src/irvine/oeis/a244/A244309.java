@@ -1,6 +1,6 @@
 package irvine.oeis.a244;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A244309 a(n) = F(n)^3 - F(n)^2, where F(n) is the n-th Fibonacci number (A000045).

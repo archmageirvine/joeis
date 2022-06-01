@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A014695 Poincar\u00e9 series [or Poincare series] (or Molien series) for mod 2 cohomology of Q_8.

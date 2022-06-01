@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 // Recurrence: 3*(n+1)*a[n+0]+(-17*n+10)*a[n-1]+9*(n-3)*a[n-2]+5*(n-2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A117641 Number of 3-Motzkin paths of length n with no level steps at height 0.

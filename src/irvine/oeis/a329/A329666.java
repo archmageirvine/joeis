@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // ogf: (1/2*(1-x^3-x^2-sqrt(x^6+2*x^5-3*x^4-6*x^3-2*x^2+1)))/x^3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329666 Number of excursions of length n with Motzkin-steps avoiding the consecutive steps UU and HH.

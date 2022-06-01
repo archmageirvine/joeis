@@ -1,6 +1,6 @@
 package irvine.oeis.a197;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A197652 Numbers that are congruent to 0 or 1 mod 10.

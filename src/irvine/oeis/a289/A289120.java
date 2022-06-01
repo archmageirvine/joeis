@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289120 a(n) is the number of odd integers divisible by 7 in ]2*(n-1)^2, 2*n^2[.

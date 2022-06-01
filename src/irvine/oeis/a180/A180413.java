@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180413 Total number of possible knight moves on an n X n X n chessboard, if the knight is placed anywhere.

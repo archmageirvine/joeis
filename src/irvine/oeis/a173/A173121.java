@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173121 a(n) = sinh(2*arccosh(n))^2 = 4*n^2*(n^2 - 1).

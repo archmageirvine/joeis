@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // ogf: (8*x)/(sqrt(1-8*x)*(sqrt(1-8*x)+12*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128418 a(n) = Sum_{k=0..n} 2^(n-k)*C(2n,n-k).

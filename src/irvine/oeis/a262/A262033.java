@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 // egf: ((x+1)*(exp(x^2)-1))/x^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A262033 Number of permutations of [n] beginning with at least floor(n/2) ascents.

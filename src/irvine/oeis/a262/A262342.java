@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A262342 Area of Lewis Carroll's paradoxical F(2n+1) X F(2n+3) rectangle.

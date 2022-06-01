@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 // Recurrence: (3*n-1)*(n+1)^2*a[n+1]-(3*n+1)*(24*n^2+8*n-5)*a[n+0]+(9*n^3-3*n^2-4*n+2)*a[n-1]+(3*n+2)*(n-1)^2*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A124435 Number of effective multiple alignments of three equal-length sequences.

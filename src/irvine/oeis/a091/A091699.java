@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 // ogf: 2/(3+3*x-sqrt(1+6*x+5*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A091699 Row sums of triangle A091698.

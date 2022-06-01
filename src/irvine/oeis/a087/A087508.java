@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087508 Number of k such that mod(k*n,3) = 1 for 0 &lt;= k &lt;= n.

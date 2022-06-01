@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: (2-11*x+12*x^2+(2-9*x)*sqrt(1-4*x))/(2*(1-4*x)*(2-6*x-9*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191585 Central coefficients of the Riordan matrix (1/(1-3*x^2),x/(1-x)) (A191582).

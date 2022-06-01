@@ -1,6 +1,6 @@
 package irvine.oeis.a107;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A107916 a(n) = binomial(n+3,2)*binomial(n+4,3)*binomial(n+5,5)/12.

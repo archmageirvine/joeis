@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287833 Number of words of length n over the alphabet {0,1,...,10} such that no two consecutive terms have distance 2.

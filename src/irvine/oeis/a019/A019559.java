@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A019559 Distance between vowels when alphabet is written around a daisy wheel.

@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 // 0: radtorec(x+1/3*(1-x)*(2-x+1/(1-2*x)^(1/2)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**

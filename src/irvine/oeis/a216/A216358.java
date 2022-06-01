@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 // ogf: 1/((1-32*x)*(1+11*x-x^2)^2)^(1/5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A216358 G.f.: 1/( (1-32*x)*(1+11*x-x^2)^2 )^(1/5).

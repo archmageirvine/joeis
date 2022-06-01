@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114208 Number of permutations of [n] having exactly one fixed point and avoiding the patterns 123 and 231.

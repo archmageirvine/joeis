@@ -1,7 +1,7 @@
 package irvine.oeis.a186;
 // manually ajrank at 2021-09-24 21:19
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 import irvine.oeis.RankSequence;
 import irvine.oeis.a000.A000290;
 

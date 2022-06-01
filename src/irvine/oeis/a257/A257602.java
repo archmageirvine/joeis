@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257602 Expansion of (1 + x + 21*x^2 + x^3 + x^4)/(1 - x)^5.

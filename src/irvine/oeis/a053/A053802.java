@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // Recurrence: a[n+0]=a[n-1]+a[n-2]-a[n-5]-a[n-7]-a[n-8]+a[n-10]+a[n-11]+2*a[n-12]-2*a[n-16]-a[n-17]-a[n-18]+a[n-20]+a[n-21]+a[n-23]-a[n-26]-a[n-27]+a[n-28]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053802 Number of basis partitions of n+49 with Durfee square size 7.

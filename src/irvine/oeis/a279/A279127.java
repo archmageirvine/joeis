@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 // Recurrence: a[n+3]=-a[n+0]+(4*n^2+6*n-1)*a[n+1]+(4*n^2+18*n+17)*a[n+2]+8*n+12
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A279127 a(n) = Sum_{0&lt;=m&lt;n} Product_{-m&lt;=j&lt;=m} (n-j).

@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081057 E.g.f.: Sum_{n&gt;=0} a(n)*x^n/n! = {Sum_{n&gt;=0} F(n+1)*x^n/n!}^2, where F(n) is the n-th Fibonacci number.

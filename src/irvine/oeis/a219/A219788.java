@@ -1,6 +1,6 @@
 package irvine.oeis.a219;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A219788 Consider the succession rule (x, y, z) -&gt; (z, y+z, x+y+z). Sequence gives z values starting at (0, 1, 2).

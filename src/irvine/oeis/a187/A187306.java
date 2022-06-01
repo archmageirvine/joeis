@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // ogf: (1-x-sqrt(1-2*x-3*x^2))/(2*x^2*(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187306 Alternating sum of Motzkin numbers A001006.

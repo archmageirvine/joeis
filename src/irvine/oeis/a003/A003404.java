@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A003404 Number of solid partitions of n supported on graph of cube.

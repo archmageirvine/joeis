@@ -1,6 +1,6 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A022468 Number of 3's in n-th term of A007651.

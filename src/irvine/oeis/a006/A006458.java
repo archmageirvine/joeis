@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A006458 Number of elements in Z[ omega ] whose 'smallest algorithm' is &lt;= n, where omega^2 = -omega - 1.

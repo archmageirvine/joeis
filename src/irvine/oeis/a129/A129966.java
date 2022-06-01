@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // ogf: (-x^2*(x^2+1)*(x^8+2*x^7+11*x^6+4*x^5-4*x^4+4*x^3+11*x^2+2*x+1))/((1+x)^2*(1+x+x^2)^2*(x^2-x+1)^2*(x-1)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A129966 Triangular numbers which are differences of squares.

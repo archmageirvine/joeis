@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099256 G.f.: (3-x)(1+3x+x^2)/((1-x-x^2)(1+x-x^2)).

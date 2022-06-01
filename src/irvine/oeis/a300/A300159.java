@@ -3,7 +3,7 @@ package irvine.oeis.a300;
 // egf: (x^2*(2-x)*exp(x/(1-x)))/(x-1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A300159 Number of ways of converting one set of lists containing n elements to another set of lists containing n elements by removing the last element from one of the lists and either appending it to an existing list or treating it as a new list.

@@ -1,6 +1,6 @@
 package irvine.oeis.a344;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A344126 Coordination sequence for the hypertriangular lattice.

@@ -1,6 +1,6 @@
 package irvine.oeis.a260;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A260334 a(n) = (36*n^6 - 60*n^5 + 30*n^4 + 4*n^3 + 8*n^2 - 4*n + 1 - (-1)^n)/8.

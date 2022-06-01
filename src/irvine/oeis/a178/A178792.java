@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // Recurrence: n*a[n+0]=(7*n-4)*a[n-1]+4*(2*n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A178792 Dot product of the rows of triangle A046899 with vector (1,2,4,8,...) (= A000079).

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // ogf: (1-x-sqrt(x^2-22*x+1))/(10*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A133306 a(n) = (1/n)*Sum_{i=0..n-1} C(n,i)*C(n,i+1)*5^i*6^(n-i), a(0)=1.

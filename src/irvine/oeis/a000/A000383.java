@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A000383 Hexanacci numbers with a(0) = ... = a(5) = 1.

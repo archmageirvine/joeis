@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A026918 Sum{T(n-k,k)}, 0&lt;=k&lt;=[ n/2 ], T given by A026907.

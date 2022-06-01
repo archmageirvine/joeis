@@ -1,6 +1,6 @@
 package irvine.oeis.a113;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A113439 a(n) = a(n-1) + Sum_{k=1..floor(n/4)} a(n-4k), with a(0)=1.

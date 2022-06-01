@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // egf: exp((1+2*x-sqrt(1-4*x))/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100622 Expansion of e.g.f. exp( (1+2*x-sqrt(1-4*x))/4).

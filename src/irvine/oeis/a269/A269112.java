@@ -1,6 +1,6 @@
 package irvine.oeis.a269;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A269112 a(n) = (3*(n-1)*n + (-1)^((n-1)*n/2) + 5)/2.

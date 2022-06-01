@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167808 Numerator of x(n) = x(n-1) + x(n-2), x(0)=0, x(1)=1/2.

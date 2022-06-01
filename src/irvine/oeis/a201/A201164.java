@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 // Recurrence: n*a[n+0]+4*(-n+1)*a[n-1]+2*(-n+5)*a[n-2]+(7*n-18)*a[n-3]+2*(2*n-7)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A201164 Expansion of g.f. -(1+x)*(1+sqrt(1-4*x))/(2*(1-x-x^2)).

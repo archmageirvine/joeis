@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 // ogf: 1/sqrt(1-10*x^2+x^4/(1-8*x^2))+x/(1-9*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A200376 G.f.: 1/sqrt(1-10*x^2 + x^4/(1-8*x^2)) + x/(1-9*x^2).

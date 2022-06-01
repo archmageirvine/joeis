@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 // Recurrence: a[n+0]=a[n-1]+4*a[n-2]-4*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A140590 Exchange successive pairs of terms of A000051.

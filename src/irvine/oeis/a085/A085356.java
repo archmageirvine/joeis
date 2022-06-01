@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // Recurrence: 2*a[n+0]=(n+4)*(n+1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085356 a(n) = polygorial(n,3)/polygorial(3,n), n &gt;= 3.

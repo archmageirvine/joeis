@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153727 Period 3: repeat [1, 4, 2] ; Trajectory of 3x+1 sequence starting at 1.

@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 // manually 2021-09-25
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A052770 A simple grammar.

@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174785 Expansion of (1+2x-x^2+x^3-x^4-x^5)/(1+x^3)^2.

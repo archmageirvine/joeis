@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 // Recurrence: a[n+0]=-(6*n-3)*a[n-1]+a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A065923 Bessel polynomial y_n(-3).

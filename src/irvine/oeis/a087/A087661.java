@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // Recurrence: (n+4)^2*(n+5)*(3*n-1)*(3*n+1)*(3*n+2)*a[n+0]=6*(n+4)*(3*n-1)*(45*n^4+180*n^3+264*n^2+151*n+20)*a[n-1]-3*(n-1)*(3*n+5)*(9*n^4+9*n^3-2*n^2+68*n+16)*a[n-2]+(n-5)*(n-2)*(n-1)*(3*n+2)*(3*n+4)*(3*n+5)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087661 Values of a certain hypergeometric function. Not known to be always integer-valued.

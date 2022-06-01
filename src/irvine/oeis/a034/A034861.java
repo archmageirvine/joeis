@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: (3*n^2-21*n+28)*a[n+0]-n*(3*n^2-15*n+10)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034861 a(n) = n!*(3*n^2 - 15*n + 10)/6.

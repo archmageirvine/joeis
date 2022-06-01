@@ -1,6 +1,6 @@
 package irvine.oeis.a270;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A270797 a(n) = J(n) if n odd, or 4*J(n) if n even, where J = Jacobsthal numbers A001045.

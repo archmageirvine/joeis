@@ -3,7 +3,7 @@ package irvine.oeis.a304;
 // Recurrence: n*(12*n^4-108*n^3+354*n^2-501*n+260)*a[n+0]=2*(n-1)*(24*n^7-306*n^6+1620*n^5-4599*n^4+7516*n^3-7015*n^2+3444*n-696)*a[n-1]-6*(n-2)^4*(12*n^7-162*n^6+906*n^5-2700*n^4+4583*n^3-4378*n^2+2163*n-436)*a[n-2]+2*(n-3)^4*(n-2)^3*(24*n^7-342*n^6+2004*n^5-6201*n^4+10816*n^3-10497*n^2+5208*n-1048)*a[n-3]-(n-4)^5*(n-3)^5*(n-2)^3*(12*n^4-60*n^3+102*n^2-69*n+17)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A304655 a(n) = (n!)^3 * Sum_{k=1..n-1} 1/(k^3*(n-k)^2).

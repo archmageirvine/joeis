@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 // Recurrence: (-n+2)*a[n+0]+(2*n-3)*a[n-1]+(n-1)*(n^2-5*n+5)*a[n-2]-2*(n-1)*(n-2)*(n-3)*a[n-3]+2*(n-1)*(n-2)*(n-3)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A259239 E.g.f.: exp(x-sqrt(1-x^2)+1).

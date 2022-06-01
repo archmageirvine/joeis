@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // Recurrence: a[n+0]-(2*n-1)^3*a[n-1]+a[n-2]-(2*n-5)^3*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166750 a(n) = (A001147(n))^3 = 2^(3*n)*GAMMA(n+1/2)^3/Pi^(3/2).

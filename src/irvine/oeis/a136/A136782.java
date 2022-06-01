@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136782 Number of primitive multiplex juggling sequences of length n, base state &lt;2,2&gt; and hand capacity 2.

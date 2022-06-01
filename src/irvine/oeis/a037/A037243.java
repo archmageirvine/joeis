@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A037243 Molien series for 3-D group R4.

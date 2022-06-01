@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // egf: 1/(1-8*x)^(1/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084948 a(n) = Product_{i=0..n-1} (8*i+2).

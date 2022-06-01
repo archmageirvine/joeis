@@ -1,6 +1,6 @@
 package irvine.oeis.a256;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A256646 26-gonal pyramidal numbers: a(n) = n*(n+1)*(8*n-7)/2.

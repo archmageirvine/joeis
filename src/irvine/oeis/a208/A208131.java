@@ -1,6 +1,6 @@
 package irvine.oeis.a208;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A208131 Partial products of A052901.

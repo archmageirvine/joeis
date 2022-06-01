@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057174 a(n+3)=a(n)+a(n+1)-a(n+2), starting with 1,2,3.

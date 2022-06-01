@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103378 a(n) = a(n-10) + a(n-11) for n &gt; 11, and a(n) = 1 for 1 &lt;= n &lt;= 11.

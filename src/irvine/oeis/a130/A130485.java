@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130485 a(n) = Sum_{k=0..n} (k mod 7) (Partial sums of A010876).

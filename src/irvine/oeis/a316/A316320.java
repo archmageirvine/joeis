@@ -3,7 +3,7 @@ package irvine.oeis.a316;
 // Recurrence: a[n+0]=2*a[n-1]-a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A316320 Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.

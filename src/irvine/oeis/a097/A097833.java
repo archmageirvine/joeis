@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097833 Partial sums of Chebyshev sequence S(n,20)= U(n,10)=A075843(n+1).

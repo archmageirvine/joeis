@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: 1/2-1/2*sqrt(-5+6*sqrt(1-4*x)+4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307696 Number of evolutionary duplication-loss-histories with n leaves of the caterpillar species tree with 2 leaves.

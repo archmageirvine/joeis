@@ -1,6 +1,6 @@
 package irvine.oeis.a112;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A112423 Number of 6-element subsets of {1,2,3,...,n} which have a sum-set with 14 elements.

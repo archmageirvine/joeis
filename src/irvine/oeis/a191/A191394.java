@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: (4*x^2)/((1-x^2)*(1-2*x+sqrt(1-4*x^2))^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191394 Number of base pyramids in all dispersed Dyck paths of length n (i.e., in all Motzkin paths of length n with no (1,0)-steps at positive heights).

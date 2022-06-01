@@ -1,6 +1,6 @@
 package irvine.oeis.a170;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A170933 a(n) = A000930(n) + A000930(n+3) + 4.

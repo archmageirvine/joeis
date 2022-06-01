@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // Recurrence: n*a[n+0]+(-7*n+5)*a[n-1]+3*(5*n-8)*a[n-2]+(-13*n+33)*a[n-3]+2*(2*n-7)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A045992 a(n) = binomial(2n,n) - n; number of (weakly) increasing or decreasing maps from 1,...,n to 1,...,n.

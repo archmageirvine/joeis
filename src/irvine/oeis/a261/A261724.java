@@ -1,6 +1,6 @@
 package irvine.oeis.a261;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A261724 a(n) is the number of ways of putting n labeled balls into 4 indistinguishable boxes such that each box contains at least 3 balls.

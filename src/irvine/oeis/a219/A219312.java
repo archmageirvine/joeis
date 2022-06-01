@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 // ogf: (sqrt(5*x-1)-sqrt(x-1))/(2*((x-1)*sqrt(5*x-1)-x*sqrt(x-1)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A219312 Composition of the binomial transform of Fibonacci numbers and the Catalan transform of Fibonacci numbers.

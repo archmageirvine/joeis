@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 // Recurrence: (4*n^3-n)*a[n-1]+(4*n^2+2*n)*a[n+0]-a[n+1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A202065 The number of simple labeled graphs on 2n nodes whose connected components are even length cycles.

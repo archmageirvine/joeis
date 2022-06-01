@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 // ogf: -(sqrt(1-4*x^2)+2*x^2-1)/(x*sqrt(1-4*x^2)+4*x^3-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A138364 The number of Motzkin n-paths with exactly one flat step.

@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 // ogf: ((3-4*x+2*(4*x^2-8*x+1)^(1/2))/((8*x+5)*(4*x^2-8*x+1)))^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A036692 T(2n,n) with T as in A036355.

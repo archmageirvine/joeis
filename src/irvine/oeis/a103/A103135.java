@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103135 Expansion of (-3x^3-18x^2+14x-1)/(3x^4-5x^2+4x-1).

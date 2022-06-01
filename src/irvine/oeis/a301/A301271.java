@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 // Recurrence: n*a[n+0]+2*(-8*n+9)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A301271 Expansion of (1-16*x)^(1/8).

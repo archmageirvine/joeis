@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A020876 a(n) = ((5+sqrt(5))/2)^n + ((5-sqrt(5))/2)^n.

@@ -1,7 +1,7 @@
 package irvine.oeis.a349;
 // manually linrec/linrec2 at 2022-04-29 07:28
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A349704 Maximum terminal Wiener index for a tree of n vertices.

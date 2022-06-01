@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081019 a(n) = Lucas(4n+3) - 1, or Lucas(2n+1)*Lucas(2n+2).

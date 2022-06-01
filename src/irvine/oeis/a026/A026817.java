@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A026817 Number of sets which can be obtained by selecting unique elements from two sets with 2n and 3n elements respectively and n common elements.

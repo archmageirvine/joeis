@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051609 a(n) = (3*n+9)!!!/9!!!, related to A032031 ((3*n)!!! triple factorials).

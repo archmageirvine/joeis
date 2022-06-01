@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 // Recurrence: a[n+0]=n*(4*n^4+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A069078 a(n) = n*(4*n^4 + 1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a261;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A261418 The UUDDUUD sequence, or the 3/7 sequence: start with 4, then successively add or subtract the integers 1,2,3,..., using the repeating sign pattern  + + - - + + -.

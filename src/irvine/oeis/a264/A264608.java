@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 // Recurrence: 3*n*(2*n-5)*(2*n-3)*(3*n-4)*(3*n-1)*(3*n+1)*a[n+0]=(n-1)*(2*n-5)*(2*n-1)*(3*n-4)*(4*n-3)*(37*n-38)*a[n-1]+7*(n-1)*(2*n-3)*(3*n-1)*(92*n^3-404*n^2+509*n-150)*a[n-2]-49*(n-2)*(n-1)*(2*n-5)*(2*n-1)*(3*n-4)*(4*n-3)*a[n-3]-343*(n-3)*(n-2)*(n-1)*(2*n-3)*(2*n-1)*(3*n-1)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A264608 Degeneracies of entanglement witness eigenstates for spin 3 particles.

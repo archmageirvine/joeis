@@ -204,6 +204,13 @@ public final class SequenceFactory {
     return true;
   };
 
+  private static String getUsername(final CliFlags flags) {
+    if (flags.isSet(AUTHOR)) {
+      return (String) flags.getValue(AUTHOR);
+    }
+    return System.getenv("OEIS_USERNAME");
+  }
+
   /**
    * Generate terms from specified sequence, writing one term per line.
    * @param args sequence identifier
@@ -246,8 +253,9 @@ public final class SequenceFactory {
           out.write(LS);
           final StringBuilder header2 = new StringBuilder("# b")
             .append(seqId.substring(1)).append(".txt generated with jOEIS");
-          if (flags.isSet(AUTHOR)) {
-            header2.append(" by ").append(flags.getValue(AUTHOR));
+          final String author = getUsername(flags);
+          if (author != null) {
+            header2.append(" by ").append(author);
           }
           header2.append(" at ").append(Date.now());
           out.write(header2.toString().getBytes(StandardCharsets.US_ASCII));

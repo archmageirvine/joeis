@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 // ogf: x*(99990000000*x^18+86679000000*x^17-333332100000*x^16-13533210000*x^15+6579000*x^14+8577900*x^13+354357900*x^12+212157900*x^11+60455790*x^10+7924779*x^9+3991239*x^8+1999116*x^7+999558*x^6-221*x^5-61*x^4-8*x^3-4*x^2-2*x-1)/((10*x-1)*(1+10*x)*(100*x^2+10*x+1)*(100*x^2-10*x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A263451 a(n) is the largest anagram of 2*a(n-1), a(1)=1.

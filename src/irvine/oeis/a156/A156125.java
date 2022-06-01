@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // Recurrence: (n+3)*a[n+0]+20*(1-2*n)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A156125 a(n)=10^n*C(2n,n)/C(n+3,3).

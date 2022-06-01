@@ -1,6 +1,6 @@
 package irvine.oeis.a176;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A176738 Expansion of 1 / ((1+x)*(1-x-4*x^2)). (5,4)-Padovan sequence.

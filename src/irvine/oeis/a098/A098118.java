@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // egf: (log((sqrt(1-4*x)+1)/2)*(-3*x+sqrt(1-4*x)*(x-1)+1))/(4*x^2+sqrt(1-4*x)*(3*x-1)-5*x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098118 a(n) = n!*[x^n] (log(x+1) * Sum_{j=0..n} C(2*n,j)*x^j).

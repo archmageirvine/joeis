@@ -1,6 +1,6 @@
 package irvine.oeis.a044;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A044043 Number of tilings of 2 X n rectangle with polyominoes, each of which has area = # of adjacent polyominoes.

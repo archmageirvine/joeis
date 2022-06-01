@@ -1,7 +1,7 @@
 package irvine.oeis.a278;
 // manually 2021-01-21
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A278069 a(n) = hypergeometric([n, -n], [], 1).

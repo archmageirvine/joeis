@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A054393 Number of permutations with certain forbidden subsequences.

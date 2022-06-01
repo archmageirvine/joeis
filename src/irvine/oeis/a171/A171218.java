@@ -1,6 +1,6 @@
 package irvine.oeis.a171;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A171218 a(n) = sum(A109613(k)*A005843(n-k): 0&lt;=k&lt;=n).

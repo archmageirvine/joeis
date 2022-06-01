@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052918 a(0) = 1, a(1) = 5, a(n+1) = 5*a(n) + a(n-1).

@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 // ogf: (3*(1-sqrt(1-4*x)))/(2*x)-2/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A171556 a(n)=3*C(n)-2, where C(n)=A000108(n).

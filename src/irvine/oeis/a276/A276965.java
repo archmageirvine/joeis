@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 // Recurrence: n*(16*n^3-96*n^2+185*n-116)*a[n+0]=2*(32*n^6-272*n^5+930*n^4-1668*n^3+1670*n^2-867*n+164)*a[n-1]-(n-2)*(96*n^7-1056*n^6+4646*n^5-10500*n^4+12990*n^3-8644*n^2+2827*n-364)*a[n-2]+2*(n-3)*(n-2)^3*(32*n^6-336*n^5+1410*n^4-2978*n^3+3268*n^2-1731*n+353)*a[n-3]-(n-4)^2*(n-3)^3*(n-2)^4*(16*n^3-48*n^2+41*n-11)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A276965 Square row sums of the triangle of Lah numbers (A105278).

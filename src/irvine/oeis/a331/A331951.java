@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // ogf: (sqrt(1-4*x+4*x^4)-sqrt(1-4*x))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331951 Number of binary trees with n internal nodes that contain the subtree [Z, [Z, U, U], [Z, U, U]].

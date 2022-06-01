@@ -1,6 +1,6 @@
 package irvine.oeis.a281;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A281698 a(n) = 5*2^(n-1) + 2^(2*n-1) + 6^n + 1.

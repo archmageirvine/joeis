@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057675 1 - (5/6)*n + (5/2)*n^2 + (10/3)*n^3 + n^4.

@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // ogf: (1-3*x+x^2-sqrt(1-10*x+19*x^2-10*x^3+x^4))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166694 A transform of the large Schroeder numbers, A006318.

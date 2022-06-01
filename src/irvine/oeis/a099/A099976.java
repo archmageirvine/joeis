@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 // ogf: (2*sqrt(2))/sqrt(1-16*x)/sqrt(1+sqrt(1-16*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A099976 Bisection of A000984.

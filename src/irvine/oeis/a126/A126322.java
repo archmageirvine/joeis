@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: ((1-3*x+9*x^2)*(1-3*x-sqrt(1-6*x+9*x^2-36*x^4)))/(18*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126322 Number of hex trees with n edges and no branches of length 1.

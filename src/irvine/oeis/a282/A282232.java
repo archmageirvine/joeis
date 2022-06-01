@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 // Recurrence: 9*a[n+0]=((3*n+1)^6-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A282232 a(n) = ((3*n + 1)^6 - 1)/9.

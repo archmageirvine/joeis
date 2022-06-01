@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 import irvine.oeis.transform.RevertTransformSequence;
 
 /**

@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 // ogf: -11x(x^14-3600x^12+110200x^11-1112601x^10+3855898x^9-4841800x^8+4841800x^6-3855898x^5+1112601x^4-110200x^3+3600x^2-1)/(x^16-551x^15+51500x^14-1873400x^13+31993500x^12-271314053x^11+1157139603x^10-2669595000x^9+3507446800x^8-2669595000x^7+1157139603x^6-271314053x^5+31993500x^4-1873400x^3+51500x^2-551x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A167068 Number of spanning trees in G X P_n, where G = {{1, 2}, {1, 3}, {1, 4}, {2, 3}, {2, 5}, {4, 5}}.

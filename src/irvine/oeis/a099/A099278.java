@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 // Recurrence: a[n+0]=21*a[n-1]+21*a[n-2]-a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A099278 Unsigned member r=-20 of the family of Chebyshev sequences S_r(n) defined in A092184.

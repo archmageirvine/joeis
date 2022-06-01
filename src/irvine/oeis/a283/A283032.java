@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // Recurrence: 4*a[n+0]=n^13*(n^2+1)*(n^10-n^8+n^6-n^4+n^2+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A283032 Number of inequivalent 5 X 5 matrices with entries in {1,2,3,...,n} up to vertical and horizontal reflections.

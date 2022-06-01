@@ -3,7 +3,7 @@ package irvine.oeis.a326;
 // Recurrence: a[n+0]=n^18+n^9+1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A326618 a(n) = n^18 + n^9 + 1.

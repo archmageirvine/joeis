@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 // egf: ((1+x)*log(1+x)-log(1-x)/(1-x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A226170 The number of cycles over all even permutations of {1,2,...,n}.

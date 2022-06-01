@@ -1,7 +1,7 @@
 package irvine.oeis.a212;
 // manually 2020-12-30
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A212916 Number of standard Young tableaux of n cells and height &lt;= 10.

@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: ((x-1)*(4*x-1)+sqrt((1-4*x)*(3*x-1)^2))/(2*(4*x-1)*(3*x-1))-1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191993 a(n) = 3^(n-1) + C(2*n, n)/2.

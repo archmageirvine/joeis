@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 // ogf: (1+x)^2*(1+x^2)*(1+x^5)*(1+x^10)^2*(1+x^20)*(1+x^50)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A214774 Number of ways of obtaining a weight of n grams using eight weights of denominations 1, 1, 2, 5, 10, 10, 20 and 50 grams.

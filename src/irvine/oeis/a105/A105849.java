@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 // ogf: (1-2*x-sqrt((1-6*x+8*x^2-4*x^3)/(1-2*x)))/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A105849 Row sums of number triangle A105848.

@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226695 Pell equation solutions (32*b(n))^2 - 41*(5*a(n))^2 = -1 with b(n) := A226694(n), n&gt;=0.

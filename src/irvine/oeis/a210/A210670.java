@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 // Recurrence: (n-1)*n*(2*n+1)*(10*n^3-51*n^2+86*n-49)*a[n+0]=3*(n-1)*(140*n^5-844*n^4+1851*n^3-1784*n^2+701*n-70)*a[n-1]-6*(280*n^6-2308*n^5+7496*n^4-12166*n^3+10376*n^2-4523*n+875)*a[n-2]+4*(2*n-5)*(4*n-9)*(4*n-7)*(10*n^3-21*n^2+14*n-4)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A210670 Central coefficients of triangle A210658.

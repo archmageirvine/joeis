@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 // ogf: (1+sqrt(1-4*x))/(3*sqrt(1-4*x)-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A067336 a(0)=1, a(1)=2, a(n) = a(n-1)*9/2 - Catalan(n-1) where Catalan(n) = binomial(2n,n)/(n+1) = A000108(n).

@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 // ogf: (1-x)/sqrt(1-4*x+4*x^2-4*x^3+4*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A217661 G.f.: Sum_{n&gt;=0} x^n * Sum_{k=0..n} binomial(n,k)^2 * x^k/(1-x)^k.

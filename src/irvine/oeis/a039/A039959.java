@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 // ogf: (x^12-x^11+x^10+6*x^8+x^7+8*x^6+x^5+6*x^4+x^2-x+1)/((1-x)*(1-x^2)*(1-x^3)*(1-x^4))^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A039959 Number of ways of numbering the vertices of a cube so sum of the 8 numbers is n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a203;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A203629 Indices of 10-gonal (decagonal) numbers which are also 9-gonal (nonagonal).

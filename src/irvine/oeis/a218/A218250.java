@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 // Recurrence: 2*(n+2)*(2*n+5)*(43*n^3-48*n^2-43*n+12)*a[n+0]=2*(2*n+1)*(2*n+3)*(43*n^3-5*n^2-94*n+8)*a[n-1]+2*(344*n^5+132*n^4-1303*n^3-399*n^2+554*n+168)*a[n-2]+(473*n^5-528*n^4-1711*n^3+1866*n^2+1256*n-960)*a[n-3]-6*(86*n^5-225*n^4-321*n^3+794*n^2+160*n-416)*a[n-4]+4*(n-4)*(n-2)*(43*n^3+81*n^2-10*n-36)*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A218250 G.f. satisfies: A(x) = (1 + x*A(x)) * (1 + x^2*A(x))^2.

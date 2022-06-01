@@ -1,6 +1,6 @@
 package irvine.oeis.a120;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A120663 Sequence produced by Markov chain based on 20 X 20 pentagonal prism bonding graph.

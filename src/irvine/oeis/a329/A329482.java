@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // Recurrence: a[n+0]=a[n-1]+2*a[n-2]-2*a[n-3]-a[n-4]+a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329482 Interleave 1 - n + 3*n^2, 1 + 3*n*(1+n) for n &gt;= 0.

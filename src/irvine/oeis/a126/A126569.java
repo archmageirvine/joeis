@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // Recurrence: a[n+0]=16*a[n-1]-105*a[n-2]+364*a[n-3]-714*a[n-4]+784*a[n-5]-440*a[n-6]+96*a[n-7]-a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126569 Top-left "head" entry of the n-th power of the E8 Cartan matrix.

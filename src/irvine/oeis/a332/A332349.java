@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: a[n+0]=a[n-1]+4*a[n-2]+3*a[n-3]-4*a[n-4]+6*a[n-5]-3*a[n-6]-6*a[n-7]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332349 Number of maximal independent sets in the 4 X n king graph.

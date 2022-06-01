@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 // Recurrence: 2*n*a[n+0]-(30+19*n)*a[n+1]-(9+8*n)*a[n+2]+(n+3)*a[n+3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A243626 Expansion of (1-3*x-sqrt(x^2-10*x+1))/(4*x+2).

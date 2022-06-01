@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // ogf: 3*(1599+14665*x+140000*x^2-65180*x^3-605152*x^4-886208*x^5+137216*x^6)/((1-x)*(1-2*x)^3*(1-4*x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A227495 The hyper-Wiener index of the nanostar dendrimer D_n, defined pictorially as NS[n] in the Yang et al. reference.

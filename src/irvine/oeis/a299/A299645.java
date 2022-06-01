@@ -1,6 +1,6 @@
 package irvine.oeis.a299;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A299645 Numbers of the form m*(8*m + 5), where m is an integer.

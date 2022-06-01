@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // ogf: (3-13*x+2*x^2+(5*x-1)*sqrt(1-4*x))/(2*(1-4*x-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A111279 Number of permutations avoiding the patterns {3241,3421,4321}; number of weak sorting class based on 3241.

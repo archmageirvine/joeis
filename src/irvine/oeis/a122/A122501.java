@@ -1,6 +1,6 @@
 package irvine.oeis.a122;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A122501 Expansion of -x*(47*x^3+25*x^2+5*x+1)/(38*x^4+54*x^3+22*x^2-1).

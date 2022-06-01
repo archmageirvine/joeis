@@ -1,6 +1,6 @@
 package irvine.oeis.a242;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A242668 Expansion of 1/(1 - 8*x + 16*x^2 + x^4 - 4*x^5).

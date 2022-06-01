@@ -1,7 +1,7 @@
 package irvine.oeis.a321;
 // manually 2021-05-08
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A321959 a(n) = [x^n] ((1 - x)*x)/((1 - 2*x)^2*(2*x^2 - 2*x + 1)).

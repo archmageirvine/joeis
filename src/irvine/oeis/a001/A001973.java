@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A001973 Expansion of (1+x^3)/((1-x)*(1-x^2)^2*(1-x^3)).

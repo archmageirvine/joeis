@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 // ogf: (1+x+x^2-sqrt(1-2*x-5*x^2-6*x^3-3*x^4))/(2*(1+x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A061639 Number of planar planted trees with n non-root nodes and every 2-valent node isolated.

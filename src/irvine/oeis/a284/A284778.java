@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 // ogf: (1-2*x-x^2-sqrt(1-4*x+2*x^2+4*x^3-3*x^4))/(2*(x+1)*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A284778 Number of self-avoiding planar walks of length n+1 starting at (0,0), ending at (n,0), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1) with the restriction that (0,1) is never used below the diagonal and (1,0) is never used above the diagonal.

@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192395 Main (or principal) sequence for a(n) = 2*a(n-1) - 2*a(n-2) + a(n-3) + 2*a(n-4).

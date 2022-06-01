@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 // ogf: (1+x)*(1+x+x^2+x^3+x^4+x^5)*(1+x+x^2+x^3+x^4+x^5+x^6+x^7)*(1+x+x^2+x^3+x^4+x^5+x^6+x^7+x^8+x^9+x^10+x^11)/((1-x)*(1-x^5)*(1-x^7)*(1-x^11))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A266784 The growth series for the affine Weyl group F_4.

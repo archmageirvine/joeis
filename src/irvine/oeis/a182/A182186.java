@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 // Recurrence: -(n-1)*(9*n^2-51*n+76)*a[n+0]+2*(36*n^3-231*n^2+478*n-295)*a[n-1]-8*(2*n-5)*(9*n^2-33*n+34)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A182186 Number b(n) of basic ideals in the Borel subalgebra of the untwisted affine Lie algebra of type B.

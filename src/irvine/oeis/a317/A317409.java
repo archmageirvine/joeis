@@ -3,7 +3,7 @@ package irvine.oeis.a317;
 // Recurrence: -2*(2*n+3)*(n+2)*(n+1)*a[n+1]+(6*n^2+24*n+25)*a[n+2]-2*(2*n+5)*a[n+3]+a[n+4]+n*(n+2)*(n+1)^2*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A317409 Expansion of e.g.f. cos(x/(1 - x)).

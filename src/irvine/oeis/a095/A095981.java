@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 // ogf: (-1+2*x+x^2-x^3+(1-4*x+2*x^2+6*x^3-7*x^4+2*x^5+x^6)^(1/2))/(2*(-1+x)*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A095981 Number of plateau-free Motzkin paths of length n.

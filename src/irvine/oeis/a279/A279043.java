@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279043 Numbers k such that 3*k+1 and 4*k+1 are both triangular numbers (A000217).

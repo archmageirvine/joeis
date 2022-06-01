@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // ogf: 1/(6*x-1+2*sqrt((2*x-1)*(6*x-1)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A227081 Row sums of A124576.

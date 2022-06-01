@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 // Recurrence: 2*(n+3)*a[n+0]+(-11*n-15)*a[n-1]+6*(2*n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A070031 Expansion of (1+x*C)*C^3, where C = (1-sqrt(1-4*x))/(2*x) is g.f. for Catalan numbers, A000108.

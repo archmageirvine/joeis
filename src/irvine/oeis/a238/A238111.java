@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 // ogf: (1-x-sqrt(x^2-6*x+1))/x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A238111 Twice the large Schroeder numbers A006318.

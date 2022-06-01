@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 // ogf: x*(7+4*x)/((1-x-x^2)*(1-x)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A033814 Convolution of positive integers n with Lucas numbers L(k)(A000032) for k &gt;= 4.

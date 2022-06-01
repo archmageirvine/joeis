@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134158 a(n) = 1 + 27n + 252n^2 + 882n^3 + 1029n^4.

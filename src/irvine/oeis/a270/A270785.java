@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 // ogf: (1-x)/(-x^2+(1-x)*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A270785 Number of Schur rings over Z_{3^n}.

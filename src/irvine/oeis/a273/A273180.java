@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273180 Numbers n such that ror(n) + rol(n) is a power of 2, where ror(n)=A038572(n) is n rotated one binary place to the right, rol(n)=A006257(n) is n rotated one binary place to the left.

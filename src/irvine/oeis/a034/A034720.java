@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: 3*a[n+0]=n*(2*n-1)*(5*n-2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034720 Number of different words that can be formed from an n X n grid of letters, reading horizontally, vertically or diagonally.

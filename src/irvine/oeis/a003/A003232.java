@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A003232 Expansion of (x-1)*(x^2-4*x-1)/(1-2*x)^2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290990 p-INVERT of the nonnegative integers (A000027), where p(S) = 1 - S - S^2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a083;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A083445 Largest n-digit number minus the product of its digits; i.e., a(n) = 99999... (n 9's) - 9^n.

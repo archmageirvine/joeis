@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054855 Number of ways to tile a 5 X n area with 1 X 1 and 2 X 2 tiles.

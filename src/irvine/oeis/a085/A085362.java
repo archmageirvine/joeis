@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // ogf: sqrt((1-x)/(1-5*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085362 a(0)=1; for n&gt;0, a(n) = 2*5^(n-1) - (1/2)*Sum_{i=1..n-1} a(i)*a(n-i).

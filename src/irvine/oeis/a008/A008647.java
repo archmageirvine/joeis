@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A008647 Expansion of g.f.: (1+x^9)/((1-x^4)*(1-x^6)).

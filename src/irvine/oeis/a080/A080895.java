@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // egf: exp((1+x-sqrt(1-2*x-3*x^2))/(2*(1+x)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080895 Expansion of the exponential series exp( x R(x) ) = exp((1 + x - sqrt(1 - 2 x - 3x^2))/(2(1 + x))), where R(x) is the ordinary generating series of the Riordan numbers A005043.

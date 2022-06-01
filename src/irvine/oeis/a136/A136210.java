@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136210 Numerators in continued fraction [0; 1, 3, 1, 3, 1, 3, ...].

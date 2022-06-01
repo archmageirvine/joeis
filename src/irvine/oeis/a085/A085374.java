@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // Recurrence: n*(n+1)*a[n+0]-2*(n+3)*(2*n+1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085374 a(n) = binomial(2n+1, n+1)*binomial(n+3, 3).

@@ -1,6 +1,6 @@
 package irvine.oeis.a121;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A121401 a(n)=((sqrt(3)+1)^n+(sqrt(3)-1)^n)^2/2^(n+1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191272 Expansion of x*(4+5*x)/( (1-4*x)*(1 + x + x^2) ).

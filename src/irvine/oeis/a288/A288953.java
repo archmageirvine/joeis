@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 // egf: (2-x)/(3*(1-x)^2)+1/(3*sqrt(1-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A288953 Number of relaxed compacted binary trees of right height at most one with minimal sequences between branch nodes except after the last branch node on level 0.

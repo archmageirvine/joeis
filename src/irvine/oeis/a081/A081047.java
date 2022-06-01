@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // egf: (1+log(1-x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081047 Difference of Stirling numbers of the first kind.

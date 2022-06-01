@@ -1,6 +1,6 @@
 package irvine.oeis.a178;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A178906 a(n) = 111*a(n-1) - 100*a(n-2) with a(0)=0 and a(1)=1.

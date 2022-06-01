@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 192*a[n+0]=(48*n^4+32*n^6+36*n^8+32*n^12+19*n^16+24*n^18+n^32)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331358 Number of oriented colorings of the edges of a tesseract with n available colors.

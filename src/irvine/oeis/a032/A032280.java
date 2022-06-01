@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A032280 Number of bracelets (turnover necklaces) of n beads of 2 colors, 7 of them black.

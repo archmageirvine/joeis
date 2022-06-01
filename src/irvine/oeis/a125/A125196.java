@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 // ogf: (x^4+x^3+6*x^2+x+1)/((1-x)^6*(1+x))*stanley
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A125196 Number of magic labelings of the Petersen graph with magic sum n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127869 Number of L-shaped tiles in all tilings of a 3xn board with 1x1 and L-shaped tiles (where the L-shaped tiles cover 3 squares).

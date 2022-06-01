@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: (-n+5)*a[n+0]+n*(n-4)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034866 a(n) = n!*(n-4)/2, n &gt; 4, and a(4) = 4.

@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 // Recurrence: (n+1)*a[n+0]+(-5*n+1)*a[n-1]+9*(n-1)*a[n-2]+12*(-n+2)*a[n-3]+2*(4*n-11)*a[n-4]+2*(-2*n+7)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A152171 G.f. := (1-sqrt(1-4*x+4*x^2-4*x^3))/(2(1-x+x^2)x).

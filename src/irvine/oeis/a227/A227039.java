@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A227039 Positive solutions x/(2^2*3*89) of the Pell equation x^2 - 73*y^2 = -1.

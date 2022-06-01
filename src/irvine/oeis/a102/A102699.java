@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // ogf: (x*(2*(1-x)-sqrt(1-4*x^2)))/(1-2*x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102699 Number of strings of length n, using as symbols numbers from the set {1, 2, ..., n}, in which consecutive symbols differ by exactly 1.

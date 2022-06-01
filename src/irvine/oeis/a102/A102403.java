@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // Recurrence: (69*n^2+207*n+138)*a[n+0]+(97*n^2+609*n+830)*a[n+1]+(-38*n^2-342*n-694)*a[n+2]+(37*n^2+333*n+734)*a[n+3]+(2*n^2+18*n+34)*a[n+4]+(-7*n^2-87*n-266)*a[n+5]+(n^2+15*n+56)*a[n+6]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102403 Number of Dyck paths of semilength n having no ascents of length 2.

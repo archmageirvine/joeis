@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 // egf: ((exp(x)-1)*(exp(x^2/2)-1)*exp(-x-x^2/2))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A212650 Number of permutations of n elements with at least one fixed point and at least one 2-cycle (transposition).

@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289199 a(n) is the number of odd integers divisible by 13 in the open interval (12*(n-1)^2, 12*n^2).

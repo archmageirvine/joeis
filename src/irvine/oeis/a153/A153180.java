@@ -1,7 +1,7 @@
 package irvine.oeis.a153;
 // manually
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A153180 a(n) = L(13n)/L(n) where L(n) = Lucas number A000204(n).

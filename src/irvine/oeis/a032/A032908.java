@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A032908 One of four 3rd-order recurring sequences for which the first derived sequence and the Galois transformed sequence coincide.

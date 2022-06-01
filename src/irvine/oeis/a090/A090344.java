@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 // Recurrence: (n+2)*a[n+0]-(2*n+2)*a[n-1]-(3*n-4)*a[n-2]+(4*n-6)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A090344 Number of Motzkin paths of length n with no level steps at odd level.

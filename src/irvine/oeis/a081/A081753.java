@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081753 a(n) = floor(n/12) if n==2 (mod 12); a(n)=floor(n/12)+1 otherwise.

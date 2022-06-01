@@ -1,6 +1,6 @@
 package irvine.oeis.a254;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A254598 Numbers of n-length words on alphabet {0,1,...,8} with no subwords ii, for i from {0,1}.

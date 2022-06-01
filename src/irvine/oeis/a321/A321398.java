@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 // egf: -log(1-x)/2-log(1-3*x)/6
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A321398 a(n) = (-1)^(n+1)*n!* [x^n](log(x + 1)/2 + log(3*x + 1)/6).

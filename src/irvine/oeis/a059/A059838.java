@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // egf: (1-sqrt(1-x^2))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059838 Number of permutations in the symmetric group S_n that have even order.

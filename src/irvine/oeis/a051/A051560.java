@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // egf: -log(1-x)/(1-x)^8
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051560 Second unsigned column of triangle A051379.

@@ -1,6 +1,6 @@
 package irvine.oeis.a122;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A122503 a(n) = 22*a(n - 2) + 54*a(n - 3) + 38*a(n - 4).

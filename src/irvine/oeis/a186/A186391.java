@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 // Recurrence: n^2*(2*n-1)^2*(240*n^5-2720*n^4+12016*n^3-25824*n^2+26966*n-10939)*a[n+0]=4*(6000*n^9-81920*n^8+470480*n^7-1486720*n^6+2841766*n^5-3403995*n^4+2557086*n^3-1163574*n^2+291045*n-30429)*a[n-1]-24*(6720*n^9-103040*n^8+678448*n^7-2511512*n^6+5740528*n^5-8358208*n^4+7691502*n^3-4262963*n^2+1269092*n-151182)*a[n-2]+4*(96000*n^9-1633280*n^8+11993280*n^7-49661760*n^6+127015344*n^5-206357088*n^4+210522120*n^3-127943860*n^2+41074746*n-5150007)*a[n-3]-64*(n-3)^2*(4*n-13)*(4*n-11)*(240*n^5-1520*n^4+3536*n^3-3696*n^2+1686*n-261)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A186391 a(n) equals the least sum of the squares of the coefficients in (1 + x^k + x^(2k) + x^p)^n found at sufficiently large p for some fixed k&gt;0.

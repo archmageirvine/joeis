@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 // Recurrence: (-n+1)*a[n+0]+(11*n-20)*a[n-1]+5*(-7*n+19)*a[n-2]+25*(n-4)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A305554 Sum of the areas of all D-elevated skew paths of semi-length n.

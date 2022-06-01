@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 // ogf: (2-3*x-2*x^2+x*sqrt(1-4*x^2))/(2*(1-x-2*x^2-x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A224747 Number of lattice paths from (0,0) to (n,0) that do not go below the x-axis and consist of steps U=(1,1), D=(1,-1) and H=(1,0), where H-steps are only allowed if y=1.

@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // ogf: (603+1113*x+35272*x^2-60952*x^3-21856*x^4)/((1-2*x)*(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A177685 a(n) = 6*a(n-1)-8*a(n-2) for n &gt; 4; a(0)=603, a(1)=4731, a(2)=58834, a(3)=254204, a(4)=1032696.

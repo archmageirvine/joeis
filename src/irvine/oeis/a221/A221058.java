@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 // ogf: (x^2*(1+x-sqrt(1-4*x^2)))/((1-2*x)*sqrt((1-4*x^2)^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A221058 Number of inversions in all Dyck prefixes of length n.

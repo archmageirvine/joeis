@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 // Recurrence: 2*a[n+0]=n^3*(n^5+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A168180 a(n) = n^3*(n^5 + 1)/2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a112;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A112851 a(n) = (n-1)*n*(n+1)*(n+2)*(2*n+1)/40.

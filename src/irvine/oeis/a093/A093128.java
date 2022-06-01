@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 // ogf: 1+((1+x)*(1-2*x-x^3-sqrt((1-3*x+x^2)*(1-x)*(1-x^3))))/(2*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A093128 Number of dissections of a polygon using strictly disjoint diagonals.

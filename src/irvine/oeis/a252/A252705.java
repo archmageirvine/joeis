@@ -1,6 +1,6 @@
 package irvine.oeis.a252;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A252705 The number of ways to color the faces of a regular dodecahedron with n colors, counting mirror images as one.

@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 // Recurrence: a[n+0]=18*a[n-1]-77*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A152106 a(n) = (11^n + 7^n)/2.

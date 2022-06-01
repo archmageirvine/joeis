@@ -1,6 +1,6 @@
 package irvine.oeis.a166;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A166012 a(n) = 2*(A000045(n)-(n mod 2)) + 1 + (n mod 2).

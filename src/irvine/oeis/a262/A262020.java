@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 // Recurrence: a[n+0]=(n-2)*a[n-3]+(n-1)*a[n-2]-2*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A262020 Inverse binomial transform of double factorial n!! = A006882(n).

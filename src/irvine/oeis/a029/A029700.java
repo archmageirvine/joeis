@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A029700 Number of words of length 6 in the n(n-1)/2 transpositions of S[ n ] equivalent to the identity.

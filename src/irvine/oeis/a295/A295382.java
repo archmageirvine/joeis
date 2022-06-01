@@ -3,7 +3,7 @@ package irvine.oeis.a295;
 // egf: exp(-(2*x)/(1-x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A295382 Expansion of e.g.f. exp(-2*x/(1 - x))/(1 - x).

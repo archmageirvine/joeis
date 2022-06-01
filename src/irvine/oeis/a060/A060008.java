@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060008 a(n) = 9*binomial(n,4) = 3n*(n-1)*(n-2)*(n-3)/8.

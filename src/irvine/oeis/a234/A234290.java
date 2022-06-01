@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 // egf: (2-sqrt(1-6*x))/(1+2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A234290 E.g.f. satisfies: A(x) = 1 + A(x)^3 * Integral 1/A(x) dx.

@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 // ogf: (12-4/sqrt(1-4*x))/(8*sqrt(12*x+2*sqrt(1-4*x)+2))+1/(2*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A212696 Central coefficient of the triangle A097609.

@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200220 Product of Fibonacci and Padovan numbers: a(n) = A000045(n+1)*A000931(n+5).

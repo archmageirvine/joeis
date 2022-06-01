@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // ogf: 30/(1+x)^6
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A331434 Column 2 of triangle in A331431.

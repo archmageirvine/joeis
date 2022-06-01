@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // Recurrence: 120*a[n+0]=(n^25+10*n^20+35*n^15+50*n^10+24*n^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A283030 Number of inequivalent 5 X 5 matrices with entries in {1,2,3,...,n} up to row permutations.

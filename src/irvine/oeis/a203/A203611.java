@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 // ogf: (2*x)/((1+x-x^2)*sqrt((x^2+x+1)*(x^2-3*x+1))-x^4+2*x^3+x^2+2*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A203611 Sum_{k=0..n} C(k-1,2*k-1-n)*C(k,2*k-n).

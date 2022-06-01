@@ -1,6 +1,6 @@
 package irvine.oeis.a139;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A139268 Twice nonagonal numbers (or twice 9-gonal numbers): a(n) = n(7n-5).

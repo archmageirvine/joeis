@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027973 a(n) = T(n,n) + T(n,n+1) + ... + T(n,2n), T given by A027960.

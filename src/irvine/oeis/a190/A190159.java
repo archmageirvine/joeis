@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // ogf: (1-x)/(2*x^2*(1-x-x^2+2*x^3))*(1-2*x+2*x^2+x^3-sqrt((1-2*x+2*x^2+x^3)^2-4*x^2*(1-x-x^2+2*x^3)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190159 Number of peakless Motzkin paths of length n and having no uhh...hd's starting at level 0, where u = (1, 1), h = (1, 0) and d = (1, -1).

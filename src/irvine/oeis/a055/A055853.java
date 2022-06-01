@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // ogf: x*(1-x)^6/(1-2*x)^7
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A055853 Convolution of A055852 with A011782.

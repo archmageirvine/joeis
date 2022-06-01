@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A001584 A generalized Fibonacci sequence.

@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // ogf: -1/(2*(x-1))*(1/(2*x-1)+1/sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A306376 Sum of the 2 X 2 minors in the n X n Pascal matrix.

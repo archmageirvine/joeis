@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 // ogf: -2*x^7*(97581*x^22-1758956*x^21+16320562*x^20-100734462*x^19+443795293*x^18-1471049082*x^17+3971393292*x^16-9304893422*x^15+17917931016*x^14-22612415810*x^13+6949925614*x^12+21430418050*x^11+9738010368*x^10-153051533038*x^9+256884162558*x^8-71451647970*x^7-265785285277*x^6+220345759446*x^5+251887022384*x^4+63841610284*x^3+5432696107*x^2+140661216*x+800646)/(x-1)^21
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A220467 Number of ways to place 10 nonattacking kings on an n X n board.

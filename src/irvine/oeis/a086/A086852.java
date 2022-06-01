@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 // Recurrence: (3-n)*a[n+0]+(n+1)*(n-3)*a[n-1]-(n^2-4*n+5)*a[n-2]-(n-1)*(n-5)*a[n-3]+(n-1)*(n-2)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A086852 Number of permutations of length n with exactly 1 rising or falling succession.

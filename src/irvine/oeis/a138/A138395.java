@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138395 a(n) = 6*a(n-1) - 3*a(n-2), a(1) = 1, a(2) = 6.

@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 // Recurrence: 32*(2*n^2-9*n+10)*a[n-3]-8*(2*n^2-14*n+15)*a[n-2]-2*(2*n^2+3*n-5)*a[n-1]+n*(n-1)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A112328 a(n) = (n+1)*binomial(2n+2,n+1)-3*4^n+binomial(2n,n).

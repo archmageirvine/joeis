@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 // ogf: (-1+4*x+2*sqrt(1-4*x))/((1-x)*(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A054113 T(2n,n), array T as in A054110.

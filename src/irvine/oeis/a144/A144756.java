@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // Recurrence: a[n+0]+(-8*n+5)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144756 Partial products of successive terms of A017101; a(0)=1 .

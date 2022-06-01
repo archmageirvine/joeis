@@ -1,6 +1,6 @@
 package irvine.oeis.a197;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A197424 Number of subsets of {1, 2, ..., 4*n + 2} which do not contain two numbers whose difference is 4.

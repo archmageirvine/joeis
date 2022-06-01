@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 // Recurrence: (768*n^7-9760*n^6+42960*n^5-72624*n^4+4272*n^3+120634*n^2-117042*n+29523)*a[n+0]=4*(1536*n^9-17216*n^8+56928*n^7-19536*n^6-199576*n^5+257144*n^4+67826*n^3-200220*n^2+46970*n-201)*a[n-1]-(12288*n^11-143872*n^10+517376*n^9-304896*n^8-1803648*n^7+3174144*n^6-434416*n^5-1420224*n^4-672608*n^3+1216378*n^2-69926*n-51561)*a[n-2]+8*(n-1)*(3072*n^10-40576*n^9+179200*n^8-212640*n^7-583984*n^6+1881504*n^5-1496616*n^4-314158*n^3+703776*n^2-93829*n-15912)*a[n-3]-4*(n-2)*(n-1)*(2*n-9)*(2*n-7)*(768*n^7-4384*n^6+528*n^5+22656*n^4-24944*n^3-2966*n^2+8162*n-1269)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A285673 Total number of nodes summed over all self-avoiding planar walks starting at (0,0), ending at (n,n), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1) with the restriction that (0,1) is never used below the diagonal and (1,0) is never used above the diagonal.

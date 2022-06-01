@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // Recurrence: 2*n*(2*n-1)*(38*n-53)*a[n+0]+(-760*n^3+1820*n^2-1252*n+252)*a[n-1]-8*(n-1)*(19*n^2-36*n+9)*a[n-2]-3*(38*n-15)*(n-1)*(n-2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082759 a(n) = Sum_{k = 0..n} binomial(n,k)*trinomial(n,k), where trinomial(n,k) = trinomial coefficients.

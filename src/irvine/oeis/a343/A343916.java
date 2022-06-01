@@ -1,7 +1,7 @@
 package irvine.oeis.a343;
 // manually holink/holos at 2021-12-08 21:32
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A343916 a(n) is the minimal total number of faces of a polyhedron with at least one i-gonal face for every i in 3..n.

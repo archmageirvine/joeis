@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A000964 The convergent sequence C_n for the ternary continued fraction (3,1;2,2) of period 2.

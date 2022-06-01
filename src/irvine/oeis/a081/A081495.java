@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // ogf: ((1-x)^3-(1-2*x-x^3)*sqrt(1-4*x))/((1-x)^2*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081495 Start with Pascal's triangle; form a rhombus by sliding down n steps from top on both sides then sliding down inwards to complete the rhombus and then deleting the inner numbers; a(n) = sum of entries on perimeter of rhombus.

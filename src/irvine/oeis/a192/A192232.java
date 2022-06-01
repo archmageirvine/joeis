@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192232 Constant term of the reduction of n-th Fibonacci polynomial by x^2 -&gt; x+1.  (See Comments.).

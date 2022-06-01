@@ -1,6 +1,6 @@
 package irvine.oeis.a091;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A091973 Poincar\u00e9 series [or Poincare series] (or Molien series) for a certain three-dimensional group of order 1344.

@@ -1,6 +1,6 @@
 package irvine.oeis.a232;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A232732 a(n) = Sum_{k=0..2*n} (-1)^k * binomial(12*n,6*k).

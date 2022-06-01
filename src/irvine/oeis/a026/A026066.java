@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A026066 dot_product(n,n-1,...2,1)*(7,8,...,n,1,2,3,4,5,6).

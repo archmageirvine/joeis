@@ -1,6 +1,6 @@
 package irvine.oeis.a189;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A189316 Expansion of 5*(1-x-x^2)/((1+x)*(1-3*x+x^2)).

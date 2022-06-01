@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259044 Period 8 sequence [ 0, 1, 0, 1, 1, 1, 0, 1, ...].

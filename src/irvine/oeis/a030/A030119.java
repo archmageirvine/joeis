@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A030119 a(n) = a(n-1) + a(n-2) + n, a(0) = a(1) = 1.

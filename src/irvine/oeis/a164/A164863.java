@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 // ogf: (16687*x^8-67113*x^7+88620*x^6-56993*x^5+20529*x^4-4353*x^3+539*x^2-36*x+1)/((9*x-1)*(7*x-1)*(6*x-1)*(5*x-1)*(4*x-1)*(3*x-1)*(2*x-1)*(x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A164863 Number of ways of placing n labeled balls into 9 indistinguishable boxes; word structures of length n using a 9-ary alphabet.

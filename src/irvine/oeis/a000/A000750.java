@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A000750 Expansion of bracket function.

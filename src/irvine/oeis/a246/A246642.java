@@ -1,6 +1,6 @@
 package irvine.oeis.a246;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A246642 Sequence appearing in the curvature of a certain four circle touching problem:  (-3 + 5*A007805(n))/2.

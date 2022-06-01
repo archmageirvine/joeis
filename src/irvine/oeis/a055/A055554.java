@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A055554 An arithmetic progression each term of which is followed by at least 4 nonsquarefree consecutive integers.

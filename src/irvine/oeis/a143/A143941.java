@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A143941 The Wiener index of a chain of n triangles (i.e., joined like VVV..VV; here V is a triangle!).

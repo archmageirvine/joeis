@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // Recurrence: a[n+0]=6*a[n-15]-a[n-30]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A156835 Positive numbers y such that y^2 is of the form x^2+(x+833)^2 with integer x.

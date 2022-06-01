@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287700 a(n) = (4!)^3 * [z^4] hypergeom([], [1,1], z)^n.

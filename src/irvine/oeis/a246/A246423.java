@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // Recurrence: (n-5)*(n-4)*(n-2)*n^2*a[n+0]=4*(n-5)*(n-4)*(4*n^3-12*n^2+10*n-3)*a[n-1]-16*(n-5)*(n-4)*(n-1)*(2*n-3)^2*a[n-2]+8*(n-5)*(n-2)*(4*n^3-28*n^2+54*n-27)*a[n-3]+24*(n-3)*(5*n^4-60*n^3+248*n^2-408*n+216)*a[n-4]+16*(n-4)*(n-1)*(4*n^3-44*n^2+150*n-153)*a[n-5]-64*(n-5)*(n-2)*(n-1)*(2*n-9)^2*a[n-6]+32*(n-2)*(n-1)*(4*n^3-60*n^2+298*n-489)*a[n-7]-16*(n-6)^2*(n-4)*(n-2)*(n-1)*a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A246423 G.f.: Sum_{n&gt;=0} x^n / (1-3*x)^(2*n+1) * [Sum_{k=0..n} C(n,k)^2 * 2^k * x^k] * [Sum_{k=0..n} C(n,k)^2 * 3^k * x^k].

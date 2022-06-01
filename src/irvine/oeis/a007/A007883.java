@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A007883 Westminster chimes at 15-minute intervals (2).

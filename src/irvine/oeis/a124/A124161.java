@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124161 a(n) = n*(n-1)*(n^3 + 21*n^2 - 4*n + 96)/120.

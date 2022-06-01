@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A061224 a(n) = n^2 + (n + 1)^3 + (n + 2)^4 + (n + 3)^5.

@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // Recurrence: a[n+0]=3*a[n-1]-3*a[n-2]+2*a[n-3]-3*a[n-4]+4*a[n-5]-4*a[n-6]+3*a[n-7]-2*a[n-8]+3*a[n-9]-3*a[n-10]+a[n-11]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053800 Number of basis partitions of n+25 with Durfee square size 5.

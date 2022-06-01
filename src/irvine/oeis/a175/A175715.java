@@ -1,6 +1,6 @@
 package irvine.oeis.a175;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A175715 Expansion of 1/(1 - x - x^2 - 3*x^4 + 4*x^5 - 2*x^6).

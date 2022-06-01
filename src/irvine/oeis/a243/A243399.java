@@ -1,6 +1,6 @@
 package irvine.oeis.a243;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A243399 a(0) = 1, a(1) = 19; for n &gt; 1, a(n) = 19*a(n-1) + a(n-2).

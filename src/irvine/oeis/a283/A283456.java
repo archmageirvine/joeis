@@ -1,6 +1,6 @@
 package irvine.oeis.a283;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A283456 Row n=4 of A144048.

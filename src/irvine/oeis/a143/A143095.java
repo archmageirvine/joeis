@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A143095 (1, 2, 4, 8, ...) interleaved with (4, 8, 16, 32, ...).

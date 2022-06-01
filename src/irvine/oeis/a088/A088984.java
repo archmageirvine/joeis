@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // egf: (x*(1-sqrt(1-x^2)+arcsin(x)))/(1-x^2)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088984 a(n) = (n!!)^2 - n!.

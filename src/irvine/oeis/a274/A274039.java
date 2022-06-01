@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A274039 Expansion of (x^4 + x^10) / (1 - 2*x + x^2).

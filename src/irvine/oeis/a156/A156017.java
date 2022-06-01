@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // ogf: (1-2*x-sqrt(1-12*x+4*x^2))/(4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A156017 Schroeder paths with two rise colors and two level colors.

@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // Recurrence: -512*(4*n+1)*(86*n+213)*(3+4*n)*(n+1)*a[n+0]+32*(2336*n^4+8800*n^3+10524*n^2+11540*n+9703)*a[n+1]-2*(n+2)*(544*n^3-1072*n^2+1138*n+8055)*a[n+2]-(2*n+5)*(26*n-31)*(n+3)*(n+2)*a[n+3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A306609 a(n) = Sum_{k=0..n} k*binomial(4*n+2,2*k).

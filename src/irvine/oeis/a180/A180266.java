@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 // ogf: 1-(1-7*x+10*x^2)/(1-4*x)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A180266 a(0) = 0; a(n) = C(2*n-2,n-1)*(n^2-2*n+2)/n for n &gt;= 1.

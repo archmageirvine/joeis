@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051662 House numbers: a(n) = (n+1)^3 + Sum_{i=1..n} i^2.

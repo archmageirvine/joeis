@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051630 Poincar\u00e9 series [or Poincare series] (or Molien series) for Gamma_2(1,2)_(2).

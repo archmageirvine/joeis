@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195031 Multiples of 5 and of 12 interleaved: a(2n-1) = 5n, a(2n) = 12n.

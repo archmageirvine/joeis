@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 // ogf: (1-2*x+2*x^2-sqrt(1-4*x+4*x^2-4*x^3))/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A152225 Number of Dyck paths of semilength n with no peaks at height 0 (mod 3) and no valleys at height 2 (mod 3).

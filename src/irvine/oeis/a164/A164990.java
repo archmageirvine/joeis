@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 // ogf: (x*(1-x)^2)/(1-2*x)^2-x^3/((1-2*x)*sqrt(1-4*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A164990 Number of square involutions of n.

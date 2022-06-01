@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287831 Number of sequences over the alphabet {0,1,...,9} such that no two consecutive terms have distance 8.

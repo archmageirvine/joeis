@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097739 Pell equation solutions (9*b(n))^2 - 82*a(n)^2 = -1 with b(n):=A097738(n), n &gt;= 0.

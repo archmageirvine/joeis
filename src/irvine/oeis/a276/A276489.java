@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 // Recurrence: a[n+0]=5*(5*n+3)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A276489 a(n) = 25^(n+1)*Gamma(n+8/5)/Gamma(3/5).

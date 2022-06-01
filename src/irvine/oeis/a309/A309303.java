@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // ogf: (sqrt(x+1)-sqrt(1-3*x))/(2*(x+1)^(3/2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A309303 Expansion of g.f. (sqrt(x+1) - sqrt(1-3*x))/(2*(x+1)^(3/2)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a254;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A254782 Indices of centered hexagonal numbers (A003215) which are also centered pentagonal numbers (A005891).

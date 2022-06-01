@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A066443 Number of distinct paths of length 2n+1 along edges of a unit cube between two fixed adjacent vertices.

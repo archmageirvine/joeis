@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // egf: 1/96*(3*exp(2*x)-6*x-6*x^2-4*x^3-2*x^4+48*exp(x)*(4-2*x+x^2)-195)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A130840 a(n) = floor((1/16)*(16 + 2^n - 8*n + 8*n^2)).

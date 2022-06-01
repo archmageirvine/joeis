@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 // Recurrence: a[n+0]=5*a[n-4]-10*a[n-8]+10*a[n-12]-5*a[n-16]+a[n-20]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A110485 n^2 followed by n followed by n^4 followed by n^3.

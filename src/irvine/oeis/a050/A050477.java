@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 // Recurrence: 3*(n+1)*a[n+0]+(-17*n-1)*a[n-1]+10*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A050477 a(n) = C(n)*(7n+1) where C(n)=Catalan numbers (A000108).

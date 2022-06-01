@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134594 a(n) = n^2 + 10*n + 5: coefficients of the irrational part of (1 + sqrt(n))^5.

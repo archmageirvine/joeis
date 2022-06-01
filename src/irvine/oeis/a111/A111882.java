@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // egf: exp(x/(1+x))/sqrt(1-x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A111882 Row sums of triangle A111595 (normalized rescaled squared Hermite polynomials).

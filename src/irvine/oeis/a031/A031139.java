@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A031139 Number of letters in English words for months of year.

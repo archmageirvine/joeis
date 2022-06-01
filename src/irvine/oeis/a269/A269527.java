@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 // Recurrence: a[n+0]=n^20+n^15+n^10+n^5+1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A269527 a(n) = n^20 + n^15 + n^10 + n^5 + 1.

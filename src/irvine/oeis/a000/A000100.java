@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A000100 a(n) is the number of compositions of n in which the maximal part is 3.

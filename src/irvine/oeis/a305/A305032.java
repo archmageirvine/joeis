@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 // ogf: (x*sqrt(1-4*x^2))/(1-2*x)^3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A305032 a(0) = 0, a(1) = 1 and a(n) = 6*a(n-1)/(n-1) + 4*a(n-2) for n &gt; 1.

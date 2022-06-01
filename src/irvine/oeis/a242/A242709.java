@@ -1,6 +1,6 @@
 package irvine.oeis.a242;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A242709 Nonequivalent ways to place two different markers (e.g., a pair of Go stones, black and white) on an n X n grid.

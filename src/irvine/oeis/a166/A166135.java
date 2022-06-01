@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // ogf: (sqrt((2-2*sqrt(1-4*x)-3*x)/x)-1)/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166135 Number of possible paths to each node that lies along the edge of a cut 4-nomial tree, that is rooted one unit from the cut.

@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 // ogf: ((1+2*x)*sqrt(1-2*x-3*x^2)-1+x+2*x^2)/(2*(1+x)*(1-2*x-4*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A219314 Composition of the inverse binomial transform of Fibonacci numbers and the Catalan transform of Fibonacci numbers.

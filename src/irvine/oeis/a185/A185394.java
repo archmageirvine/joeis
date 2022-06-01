@@ -1,6 +1,6 @@
 package irvine.oeis.a185;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A185394 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+193)^2 = y^2.

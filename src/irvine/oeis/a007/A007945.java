@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A007945 Expansion of (2-x-2*x^2)/((1-x)*(1-x+x^2)).

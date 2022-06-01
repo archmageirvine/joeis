@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051745 a(n) = n*(n^4 + 10*n^3 + 35*n^2 + 50*n + 144)/120.

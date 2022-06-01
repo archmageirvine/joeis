@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130472 A permutation of the integers: a(n) = (-1)^n * floor( (n+1)/2 ).

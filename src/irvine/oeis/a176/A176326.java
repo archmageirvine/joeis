@@ -1,6 +1,6 @@
 package irvine.oeis.a176;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A176326 a(3n) is the sequence 7, 6, 5, 4, ...; a(3n+1) is the sequence 9, 11, 13, 15, ...; a(3n+2) is the sequence 11, 8, 5, ...

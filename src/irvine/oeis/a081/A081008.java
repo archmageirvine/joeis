@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081008 a(n) = Fibonacci(4n+2) - 1, or Fibonacci(2n)*Lucas(2n+2).

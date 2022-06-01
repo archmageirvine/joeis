@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 // egf: (1+x)^3*log(1+x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A274266 E.g.f. (1 + x)^3*log(1 + x).

@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // ogf: x*(32*x^4+16*x^3+12*x^2-4*x-2)/(10*x^2-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A078222 a(1) = 2, a(n+1) &gt; a(n) is the smallest multiple of a(n) using only even digits.

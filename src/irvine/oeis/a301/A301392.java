@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 // Recurrence: (n-2)*(n-1)*n^3*(2*n-5)*a[n+0]=24*(n-2)*(n-1)*(2*n-5)*(2*n-1)^3*a[n-1]-32*(n-2)*(2*n-3)^2*(2*n-1)*(25*n^2-75*n+31)*a[n-2]+384*(2*n-5)^3*(2*n-3)*(2*n-1)^2*a[n-3]-256*(n-3)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)^2*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A301392 a(n) = Product_{k=1..L} hypergeom([-n, -n], [1], k) with L = 3.

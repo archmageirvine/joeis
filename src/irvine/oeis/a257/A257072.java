@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 // ogf: 8/(7-27*x+sqrt(1-10*x+9*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A257072 Number of 3-colored Schroeder paths of semilength n in which there are no (2,0)-steps at level 1.

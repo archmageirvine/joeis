@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127595 a(n) = F(4n) - 2F(2n) where F(n) = Fibonacci numbers A000045.

@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // egf: (1+x)*log(1+x)*exp(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A306948 Expansion of e.g.f. (1 + x)*log(1 + x)*exp(x).

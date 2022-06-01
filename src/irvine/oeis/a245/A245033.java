@@ -1,6 +1,6 @@
 package irvine.oeis.a245;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A245033 4*(n + 7)^3 - 27*(n + 7)^2 = (4*n +1)*(n+7)^2.

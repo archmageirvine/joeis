@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // Recurrence: (n-1)*(2*n-7)*a[n+0]=(2*n-5)*(5*n-19)*a[n-1]+(5*n-11)*(2*n-7)*a[n-2]-(2*n-5)*(n-5)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100300 Number of dissections of a convex n-gon by nonintersecting diagonals into an odd number of regions.

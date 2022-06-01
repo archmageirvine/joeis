@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 // Recurrence: (54+36*n)*a[n+0]+(-438-129*n)*a[n+1]+(714+138*n)*a[n+2]+(-432-63*n)*a[n+3]+(110+13*n)*a[n+4]+(-10-n)*a[n+5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A030054 a(n) = binomial(2n+1,n-4).

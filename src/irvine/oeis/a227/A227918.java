@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // egf: (exp(x)-4+4*exp(-x))/(1-x)-1+2*x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A227918 Sum over all permutations beginning and ending with ascents, and without double ascents on n elements and each permutation contributes 2 to the power of the number of double descents.

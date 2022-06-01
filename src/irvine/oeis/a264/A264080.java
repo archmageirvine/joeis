@@ -1,6 +1,6 @@
 package irvine.oeis.a264;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A264080 a(n) = 6*F(n)*F(n+1) + (-1)^n, where F = A000045.

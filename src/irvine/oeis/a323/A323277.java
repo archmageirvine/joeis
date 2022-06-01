@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 // Recurrence: (-n+1)*a[n+0]+6*(4*n-5)*a[n-1]+72*(-2*n+3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A323277 G.f. = (x/6)*( 1/(1-12*x)^(3/2) - 1/(1-12*x) ).

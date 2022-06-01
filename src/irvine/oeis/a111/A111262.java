@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // Recurrence: a[n+0]=10*a[n-1]-23*a[n-2]+10*a[n-3]-a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A111262 a(n) = (1/n)*Sum_{k=1..n} F(4*k)*B(2*n-2*k)*binomial(2*n,2*k)), where F are Fibonacci numbers and B are Bernoulli numbers.

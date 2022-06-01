@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 // ogf: 3*(1+2*x+2*x^2)*x^3/(1-x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A105396 A simple "Fractal Jump Sequence" (FJS).

@@ -1,7 +1,7 @@
 package irvine.oeis.a166;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166338 a(n) = (4*n)!/n!.

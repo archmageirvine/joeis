@@ -1,6 +1,6 @@
 package irvine.oeis.a121;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A121338 Pentagonal numbers P(k) that are one-third of other pentagonal numbers: P(k) such that 3*P(k)=P(m) for some m&gt;k.

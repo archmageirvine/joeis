@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 // ogf: (1-7*x+4*x^2-(1-3*x)*sqrt(1-8*x))/(8*(1+x)*(1-8*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A118093 Numbers of rooted hypermaps on the torus with n darts (darts are semi-edges in the particular case of ordinary maps).

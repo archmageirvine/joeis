@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A143212 a(n) = F(n) * (F(n+2)-1) = A000045(n) * A000071(n+2) = row sums of triangle A143211.

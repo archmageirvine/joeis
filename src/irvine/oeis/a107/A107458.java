@@ -1,6 +1,6 @@
 package irvine.oeis.a107;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A107458 Expansion of g.f.: (1-x^2-x^3)/( (1+x)*(1-x-x^3) ).

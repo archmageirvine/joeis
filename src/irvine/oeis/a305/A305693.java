@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 // ogf: sqrt(1+sqrt(1-16*x))/sqrt(2*(1-16*x))-(4*x*(1-2*x))/(1-4*x)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A305693 a(n) = binomial(4*n, 2*n) - 4*n*binomial(2*n-2, n-1).

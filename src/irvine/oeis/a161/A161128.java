@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 // Recurrence: (n+1)*n*a[n+3]-n*(2*n^2+8*n+7)*a[n+2]+(n+2)*(n^3+5*n^2+6*n+1)*a[n+1]-(n+1)^3*(n+2)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A161128 a(n) = n!*(1/1 + 1/2 + ... + 1/n) - (1! + 2! + ... + n!).

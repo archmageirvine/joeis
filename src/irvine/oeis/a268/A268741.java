@@ -1,6 +1,6 @@
 package irvine.oeis.a268;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A268741 a(n) = 2*a(n - 2) - a(n - 1) for n&gt;1,  a(0) = 4, a(1) = 5.

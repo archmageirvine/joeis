@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 // ogf: 1/x^2-(1-6*x+4*x^2)/((1-4*x)^(3/2)*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A253487 Number of lattice paths of 2*n+2 steps in the first quadrant from (0,0) to (n,n).

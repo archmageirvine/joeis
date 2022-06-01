@@ -1,6 +1,6 @@
 package irvine.oeis.a178;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A178351 Number of collinear point 5-tuples in a 7 X 7 X 7 X ... n-dimensional cubic grid.

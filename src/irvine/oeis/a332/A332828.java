@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // ogf: (x+x^2+x^6-x^7)/(1-x^2+x^4-x^6+x^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A332828 Expansion of (x + x^2 + x^6 - x^7)/(1 - x^2 + x^4 - x^6 + x^8) in powers of x.

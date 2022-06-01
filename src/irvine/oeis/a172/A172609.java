@@ -1,7 +1,7 @@
 package irvine.oeis.a172;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A172609 a(n) = (8n)!/(8!^n).

@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // Recurrence: a[n+0]-4*n*a[n-1]+12*(2*n-7)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126089 Expansion of e.g.f.: (1-2*x)*sqrt(1-4*x).

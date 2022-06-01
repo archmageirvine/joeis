@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 384*a[n+0]=(48*n^3-20*n^6-60*n^7+8*n^8+12*n^9-3*n^12+12*n^13+18*n^14-12*n^15-4*n^18+n^24)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331356 Number of chiral pairs of colorings of the edges of a regular 4-dimensional orthoplex with n available colors.

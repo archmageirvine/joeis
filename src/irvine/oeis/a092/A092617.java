@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 // ogf: x^4*(30+1135*x+1861*x^2-92645*x^3+550840*x^4-1503530*x^5+1204830*x^6+6356840*x^7-30229830*x^8+73564425*x^9-122160215*x^10+145445855*x^11-117446220*x^12+41833425*x^13+45709685*x^14-103484155*x^15+113466775*x^16-87794190*x^17+51657460*x^18-23442310*x^19+8049625*x^20-1954899*x^21+262785*x^22+15815*x^23-16915*x^24+3970*x^25-470*x^26+24*x^27)/(1-x)^31
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A092617 Number of connected ordered 5-element antichains on an unlabeled n-set.

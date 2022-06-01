@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 // Recurrence: 4096*(100*n-341)*a[n+0]=30720*(25*n-83)*a[n-1]+640*(4500*n^3-35595*n^2+92875*n-81419)*a[n-2]-1800*(1500*n^3-13480*n^2+40050*n-39221)*a[n-3]-81*(5*n-19)*(5*n-18)*(5*n-17)*(5*n-16)*(100*n-241)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A235321 E.g.f. satisfies: A'(x) = A(x)^4 * A(-x)^2 with A(0) = 1.

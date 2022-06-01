@@ -3,7 +3,7 @@ package irvine.oeis.a327;
 // Recurrence: n^3*a[n+0]=4*(2*n-1)*(3*n^2-3*n+2)*a[n-1]-16*(n-1)*(13*n^2-26*n+20)*a[n-2]+128*(2*n-3)*(3*n^2-9*n+8)*a[n-3]-1024*(n-2)^3*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A327834 Expansion of 1 / AGM(1, 1 - 8*x)^2 in powers of x.

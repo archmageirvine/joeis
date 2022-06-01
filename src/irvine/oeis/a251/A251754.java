@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251754 Digital root of A027444(n) = n + n^2 + n^3, n&gt;=1. Repeat(3, 5, 3, 3, 2, 6, 3, 8, 9).

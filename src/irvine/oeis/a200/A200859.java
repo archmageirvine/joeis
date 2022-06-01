@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200859 a(n) = 2*a(n-1)+3*a(n-2)+5^n for n&gt;1, a(0)=-2, a(1)=1.

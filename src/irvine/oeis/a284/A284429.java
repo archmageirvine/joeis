@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 // Recurrence: a[n+0]=2*a[n-3]-a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A284429 A quasilinear solution to Hofstadter's Q recurrence.

@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 // ogf: sqrt((1+x+sqrt(1-18*x+x^2))/(2*(1-18*x+x^2)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A243946 Expansion of sqrt( (1+x + sqrt(1-18*x+x^2)) / (2*(1-18*x+x^2)) ).

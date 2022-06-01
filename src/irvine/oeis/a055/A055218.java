@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // ogf: ((2*x-1)*sqrt(-3*x^2-2*x+1)+2*x^3-3*x+1)/(6*x^6+x^5+sqrt(-3*x^2-2*x+1)*(3*x^4-x^3)-4*x^4+x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055218 a(n) = T(2*n+2,n), array T as in A055216.

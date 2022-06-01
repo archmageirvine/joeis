@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // ogf: (1-(1-8*x)^(1/4))/(1+(1-8*x)^(1/4))-1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101478 G.f. satisfies A(x) = x*(1+A)^4/(1+A^2).

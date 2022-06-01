@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // ogf: (7*x^33-42*x^32+105*x^31+3598*x^30-64995*x^29+498369*x^28-2213029*x^27+6169800*x^26-10213560*x^25+4476990*x^24+27664014*x^23-97812519*x^22+197723150*x^21-296237340*x^20+352014180*x^19-334492361*x^18+243984426*x^17-117769575*x^16+9628325*x^15+45726945*x^14-50729175*x^13+31353175*x^12-11717370*x^11+1358280*x^10+1395765*x^9-1068648*x^8+395328*x^7-77805*x^6+882*x^5+4095*x^4-1141*x^3+126*x^2-1)/(x-1)^21
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A060537 Number of homeomorphically irreducible multigraphs (or series-reduced multigraphs or multigraphs without nodes of degree 2) on 7 labeled nodes.

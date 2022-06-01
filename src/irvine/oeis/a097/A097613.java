@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // ogf: ((x-1)*(1-1/sqrt(1-4*x)))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097613 a(n) = binomial(2n-3,n-1) + binomial(2n-2,n-2).

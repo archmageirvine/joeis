@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134965 a(1)=3, a(n) = a(n-1) + 7 + 2*mod(n-1, 2) for n&gt;=2.

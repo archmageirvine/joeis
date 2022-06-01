@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278417 a(n) = n*((2+sqrt(3))^n + (2-sqrt(3))^n)/2.

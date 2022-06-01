@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024191 [ (3rd elementary symmetric function of 3,4,...,n+4)/(3+4+...+n+4) ].

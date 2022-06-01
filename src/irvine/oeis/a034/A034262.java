@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: a[n+0]=n^3+n
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034262 a(n) = n^3 + n.

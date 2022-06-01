@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278718 Numerators of A189733: periodic sequence repeating [0, 1, 1, 1, 0, -1].

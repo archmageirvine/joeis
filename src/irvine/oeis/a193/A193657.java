@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 // Recurrence: a[n+0]+(-n-2)*a[n-1]+(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A193657 First difference of A002627.

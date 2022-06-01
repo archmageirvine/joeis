@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094703 a(1)=1, a(2)=11, a(n+2) = 8*a(n+1) + 21*a(n).

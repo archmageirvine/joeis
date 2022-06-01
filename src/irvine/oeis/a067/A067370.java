@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 // egf: 1/2*((1+x)*log(1+x)-x+x/(1-x)^2+log(1-x)/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A067370 The weight of the periphery of the alternating group, denoted v(P_N).

@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A062728 Second 11-gonal (or hendecagonal) numbers: a(n) = n*(9*n+7)/2.

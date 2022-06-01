@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 // egf: (x*(6+3*x-7*x^2)+(6-18*x+18*x^2-6*x^3)*log(1-x))/(36*(1-x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A140712 Number of white corners in all permutations of {1,2,...,n} (for definition see the Eriksson-Linusson references).

@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A014524 Number of Hamiltonian paths from NW to SW corners in a grid with 2n rows and 4 columns.

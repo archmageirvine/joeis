@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: x^5*(2+x+x^2)/((1-x)^5*(1+x)^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333319 a(n) is the number of subsets of {1..n} that contain exactly 3 odd and 1 even numbers.

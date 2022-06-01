@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // Recurrence: a[n+2]=(n^2+36)*a[n+0]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166748 E.g.f.: exp(6*arcsin(x)).

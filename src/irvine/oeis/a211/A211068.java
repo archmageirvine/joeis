@@ -1,6 +1,6 @@
 package irvine.oeis.a211;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A211068 Number of 2 X 2 matrices having all terms in {1,...,n} and positive odd determinant.

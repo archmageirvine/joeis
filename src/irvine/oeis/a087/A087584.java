@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087584 a(n)=(1/7)*sum(k=0,n,binomial(n,k)*Fibonacci(k)*7^k).

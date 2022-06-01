@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // egf: cosh(x)*exp(x^2/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A111752 Number of partitions of {1,..,n} into lists with an even number of lists of size 1, where a list means an ordered subset (cf. A000262).

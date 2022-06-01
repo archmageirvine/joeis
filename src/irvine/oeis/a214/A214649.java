@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 // ogf: (1-x+sqrt(1-2*x+5*x^2))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A214649 a(-1) = 1 and g.f. A(x) satisfies A(x) - 1/A(x) = 1/x - 1.

@@ -1,6 +1,6 @@
 package irvine.oeis.a107;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A107118 Numbers that are both centered triangular numbers (A005448) and centered hexagonal numbers (A003215).

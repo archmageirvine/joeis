@@ -1,6 +1,6 @@
 package irvine.oeis.a112;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A112497 Fifth column of triangle A112493 used for e.g.f.s of Stirling2 diagonals.

@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A014696 Poincar\u00e9 series [or Poincare series] (or Molien series) for mod 2 cohomology of universal W-group W(3).

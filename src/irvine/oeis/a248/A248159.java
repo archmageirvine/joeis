@@ -1,6 +1,6 @@
 package irvine.oeis.a248;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A248159 Expansion of (1 - 2*x^2)/(1 + x)^4. Third column of Riordan triangle A248156.

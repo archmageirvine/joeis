@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167434 Diagonal sums of the Riordan array (1-4*x+4*x^2, x*(1-2*x)) (A167431).

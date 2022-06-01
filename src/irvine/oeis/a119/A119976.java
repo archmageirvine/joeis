@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 // Recurrence: (n+1)*a[n+0]-2*(n+2)*a[n-1]+12*(1-n)*a[n-2]+8*(2-n)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A119976 E.g.f. exp(2x)*(Bessel_I(0,2*sqrt(2)x) + Bessel_I(1,2*sqrt(2)x)/sqrt(2)).

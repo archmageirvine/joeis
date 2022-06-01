@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 // egf: -exp(x)+exp(x+1/7*x^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A153760 Number of degree-n permutations of order exactly 7.

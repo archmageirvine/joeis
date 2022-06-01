@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A029941 Number of symmetric types of (4,2n)-hypergraphs under action of complementing group C(4,2).

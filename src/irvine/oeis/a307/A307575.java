@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: (sqrt((1+x)*(1-3*x))/(1-3*x)+sqrt((1-x)*(1-2*x)*(1+x+2*x^2))/((1-x)*(1-2*x))-2)/(4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307575 Number of Motzkin meanders of length n with an even number of peaks.

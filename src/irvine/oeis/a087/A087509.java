@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087509 Number of k such that (k*n) == 2 (mod 3) for 0 &lt;= k &lt;= n.

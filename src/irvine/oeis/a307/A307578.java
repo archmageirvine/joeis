@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // Recurrence: 2*n*(n+2)*(6213*n-138098)*a[n+0]+(n-1)*(12426*n^2+978417*n+821680)*a[n-1]+2*(-23065*n^3-728759*n^2+2760574*n-410840)*a[n-2]+2*(-292946*n^3+3649919*n^2-11479673*n+8929300)*a[n-3]+2*(233455*n^3-3707982*n^2+13757984*n-13497400)*a[n-4]+(608874*n^3-5758645*n^2+11199163*n+5963900)*a[n-5]+2*(848625*n^3-11463971*n^2+51225442*n-77109420)*a[n-6]-16*(n-7)*(2213*n^2+270746*n-1493325)*a[n-7]-24*(88769*n-321795)*(n-7)*(n-8)*a[n-8]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307578 Number of Motzkin excursions of length n with an odd number of peaks.

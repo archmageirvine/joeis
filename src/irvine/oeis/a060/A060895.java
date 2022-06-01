@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // ogf: -(2*x^16+65503*x^15+41932865*x^14+3572084695*x^13+85383240369*x^12+782115513931*x^11+3207483186165*x^10+6382798914035*x^9+6382798938345*x^8+3207483166717*x^7+782115526307*x^6+85383234181*x^5+3572087075*x^4+41932185*x^3+65639*x^2-15*x+1)/(x-1)^17
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A060895 n^16 + 1.

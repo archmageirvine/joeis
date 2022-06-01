@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 // Recurrence: (n+1)*(n+2)^2*a[n+0]+6*(n-2)*(n+1)^2*a[n-1]+4*(-16*n^3+25*n^2+4*n-4)*a[n-2]+16*(-4*n^3+25*n^2-56*n+41)*a[n-3]+192*(4*n-7)*(n-3)^2*a[n-4]-256*(2*n-7)*(n-4)^2*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A201204 Half-convolution of Catalan sequence A000108 with itself.

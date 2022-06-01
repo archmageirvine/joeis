@@ -1,6 +1,6 @@
 package irvine.oeis.a162;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A162674 Number of different fixed (possibly) disconnected tetrominoes bounded (not necessarily tightly) by an n X n square.

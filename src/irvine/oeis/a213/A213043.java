@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213043 Convolution of (1,-1,2,-2,3,-3,...) and A000045 (Fibonacci numbers).

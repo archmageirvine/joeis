@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A001360 Crystal ball sequence for hyperbolic tessellation 3^7 (from triangle group (2,3,7)).

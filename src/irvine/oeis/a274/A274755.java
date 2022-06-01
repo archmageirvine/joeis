@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274755 Repunits with even indices multiplied by 99, i.e., 99*(11, 1111, 111111, 11111111, ...).

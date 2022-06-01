@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: -(-2+(-3*x^2-6*x+1)^(1/2))/(1+x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059284 Right edge of triangle in A059283.

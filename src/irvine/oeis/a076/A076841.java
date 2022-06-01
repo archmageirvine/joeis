@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076841 a(1) = a(2) = 1; a(n) = (a(n-1)+1)/a(n-2) (for n&gt;2, n odd), (a(n-1)^3+1)/a(n-2) (for n&gt;2, n even).

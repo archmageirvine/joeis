@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: (1-sqrt(1-(4*x*(1-x))/(1-2*x)))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059279 G.f. is ((1-x)/(1-2*x)) * G(x*(1-x)/(1-2*x)) where G(x) is g.f. for Catalan numbers A000108.

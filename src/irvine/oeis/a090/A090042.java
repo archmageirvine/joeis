@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090042 a(n) = 2*a(n-1) + 11*a(n-2) for n &gt; 1, a(0) = a(1) = 1.

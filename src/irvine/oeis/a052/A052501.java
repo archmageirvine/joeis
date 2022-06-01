@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 // Recurrence: a[n+5]=a[n+4]+(24+50*n+35*n^2+10*n^3+n^4)*a[n+0]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A052501 Number of permutations sigma such that sigma^5=Id; degree-n permutations of order dividing 5.

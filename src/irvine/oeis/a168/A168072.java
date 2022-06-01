@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168072 Expansion of (1-27x^2-108x^3)/((1-3x)^2*(1+3x+9x^2)).

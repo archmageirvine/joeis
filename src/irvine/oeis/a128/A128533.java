@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128533 a(n) = F(n)*L(n+2) where F=Fibonacci and L=Lucas numbers.

@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 // Recurrence: 100*(n-1)*n*(2*n-1)*(2*n+1)*(4913*n^3-26877*n^2+49912*n-30480)*a[n+0]=2*(n-1)*(2*n-1)*(6254249*n^5-40468670*n^4+99110119*n^3-109861414*n^2+52822608*n-8566560)*a[n-1]-3*(2343501*n^7-22194333*n^6+87905623*n^5-187987155*n^4+233161624*n^3-166253172*n^2+62010112*n-8952000)*a[n-2]+6*(n-2)*(2*n-5)*(3*n-8)*(3*n-4)*(4913*n^3-12138*n^2+10897*n-2532)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A215654 G.f. satisfies: A(x) = (1 + x*A(x)^2) * (1 + x*A(x)^3).

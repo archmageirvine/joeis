@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: x^6*(69766476595200*x^11-73112128911360*x^10+31807557729984*x^9-7437208397056*x^8+993276127572*x^7-70229555428*x^6+1198328731*x^5+199609307*x^4-16366808*x^3+505224*x^2-5351*x-15)/((x-1)*(2*x-1)*(3*x-1)*(4*x-1)*(5*x-1)*(6*x-1)*(7*x-1)*(8*x-1)*(10*x-1)*(11*x-1)*(12*x-1)*(15*x-1)*(16*x-1)*(21*x-1)*(22*x-1)*(28*x-1)*(36*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A059950 Number of 9-block bicoverings of an n-set.

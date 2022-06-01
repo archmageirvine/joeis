@@ -3,7 +3,7 @@ package irvine.oeis.a325;
 // egf: (8-3*(3-8*x)*exp(x)+exp(9*x))/24
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A325153 A column of triangle A322220; a(n) = A322220(n,1) for n &gt;= 1.

@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // ogf: (1-3*x-sqrt(1-6*x-27*x^2))/(18*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132900 Colored Motzkin paths where each of the steps has three possible colors.

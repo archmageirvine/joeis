@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // Recurrence: n*a[n+0]+(n-1)*a[n-1]+4*(-n+1)*a[n-2]+4*(-n+2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126869 a(n) = Sum_{k = 0..n} binomial(n,floor(k/2))*(-1)^(n-k).

@@ -3,7 +3,7 @@ package irvine.oeis.a327;
 // Recurrence: a[n+0]=12*a[n-1]-48*a[n-2]+64*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A327999 a(n) = Sum_{k=0..2n}(k!*(2n - k)!)/(floor(k/2)!*floor((2n - k)/2)!)^2.

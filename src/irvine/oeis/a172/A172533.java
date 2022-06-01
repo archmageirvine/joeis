@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 // ogf: 4*x^4*(240*x^21-3120*x^20+20470*x^19-105106*x^18+512024*x^17-2216597*x^16+7650408*x^15-20251702*x^14+41149629*x^13-64905350*x^12+80399423*x^11-78967736*x^10+61875645*x^9-38631940*x^8+19002633*x^7-7392461*x^6+2560624*x^5-840251*x^4-8486*x^3-14835*x^2+182*x-14)/(x-1)^13
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A172533 Number of ways to place 6 nonattacking knights on an n X n toroidal board.

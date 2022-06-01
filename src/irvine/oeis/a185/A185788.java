@@ -1,6 +1,6 @@
 package irvine.oeis.a185;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A185788 Sum of the first k-1 numbers in the k-th column of the natural number array A000027, by antidiagonals.

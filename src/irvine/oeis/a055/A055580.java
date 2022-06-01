@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A055580 Bj\u00f6rner-Welker sequence: 2^n*(n^2 + n + 2) - 1.

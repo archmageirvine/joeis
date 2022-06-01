@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 // Recurrence: -(n+1)*(n+2)*(n+3)*(n+4)*a[n+0]+(5+3*n)*(n+4)*(n+3)*(n+2)*a[n+1]-(n+4)*(n+3)*(3*n^2+15*n+16)*a[n+2]+(n+4)*(n^3+12*n^2+38*n+32)*a[n+3]-(2*n^3+18*n^2+48*n+35)*a[n+4]+(n+3)*(n+1)*a[n+5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A289950 Number of permutations of [n] having exactly two nontrivial cycles.

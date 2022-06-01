@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 // Recurrence: (16*n-15)*a[n+1]=(128*n^3+40*n^2-82*n-45)*a[n+0]-n^2*(256*n^3-240*n^2+64*n-7)*a[n-1]+(16*n+1)*n^2*(n-1)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A217766 Numerators for a rational approximation to Euler constant.

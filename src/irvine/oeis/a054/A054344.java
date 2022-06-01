@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054344 Number of ways of covering a 2n X 2n lattice with 2n^2 dominoes of which exactly 6 are horizontal (or vertical) dominoes.

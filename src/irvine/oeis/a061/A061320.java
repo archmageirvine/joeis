@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 // Recurrence: 331776*a[n+0]=n*(n+1)*(n^8+4*n^7+14*n^6+28*n^5+77*n^4+112*n^3+196*n^2+144*n+2304)*(n^2+n+4)*(n^4+2*n^3+5*n^2+4*n+36)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A061320 Column 4 of A061314.

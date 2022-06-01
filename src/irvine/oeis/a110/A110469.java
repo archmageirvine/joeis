@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 // Recurrence: 3*(n+2)*(10*n^2+9*n-15)*a[n+0]=2*(n+1)*(40*n^3+71*n^2-90*n-30)*a[n-1]-n^2*(10*n^3+9*n^2-116*n+41)*a[n-2]-2*(n-1)^2*n*(40*n^3+66*n^2-107*n-24)*a[n-3]+4*(n-2)^2*(n-1)^2*n*(10*n^2+29*n+4)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A110469 Convolution of J(n)*n! and n! where J(n)=A001045(n), n-th Jacobsthal number.

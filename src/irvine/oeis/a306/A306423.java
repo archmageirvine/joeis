@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // Recurrence: +2*n*a[n+0]+(-11*n+18)*a[n-1]+(11*n-38)*a[n-2]+2*(2*n-11)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A306423 Number of coalescent histories for pseudocaterpillar gene trees G and caterpillar species trees S.

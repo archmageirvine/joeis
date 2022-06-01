@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 // ogf: (-2*(-1+x+x^2-7*x^3+2*x^4))/(-1+x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A181389 Absolute difference between (sum of previous terms) and (n-th-even square) with a(1) = 2.

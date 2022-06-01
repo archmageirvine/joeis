@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 // Recurrence: (n+2)*a[n+0]+(-15*n-14)*a[n-1]+2*(40*n-3)*a[n-2]+8*(-22*n+25)*a[n-3]+64*(2*n-5)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A031970 Tennis ball problem: Balls 1 and 2 are thrown into a room; you throw one on lawn; then balls 3 and 4 are thrown in and you throw any of the 3 balls onto the lawn; then balls 5 and 6 are thrown in and you throw one of the 4 balls onto the lawn; after n turns, consider all possible collections on lawn and add all the values.

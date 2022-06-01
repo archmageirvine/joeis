@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 // ogf: (-1-3*x+6*x^2)/((1-x)*(-1+2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A134351 Binomial transform of [1, 5, -1, 5, -1, 5, ...]. Inverse binomial transform of A134350.

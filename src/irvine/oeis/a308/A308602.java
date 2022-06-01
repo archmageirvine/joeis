@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // Recurrence: a[n+0]=2*n+1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308602 Number of (not necessarily maximum) cliques in the n-cycle graph.

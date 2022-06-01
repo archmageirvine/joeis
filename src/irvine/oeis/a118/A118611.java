@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118611 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+343)^2 = y^2.

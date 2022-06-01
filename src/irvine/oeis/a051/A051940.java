@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051940 Truncated triangular numbers: n*(n+1)/2 - 3*t*(t+1)/2 with t=4.

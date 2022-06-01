@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // ogf: 1/(1-2*x-15*x^2)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084605 G.f.: 1/(1-2x-15x^2)^(1/2); also, a(n) is the central coefficient of (1+x+4x^2)^n.

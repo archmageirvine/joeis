@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133854 a(n)*a(n-13) = a(n-1)*a(n-12)+a(n-6)+a(n-7) with initial terms a(1)=...=a(13)=1.

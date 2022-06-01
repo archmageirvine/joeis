@@ -3,7 +3,7 @@ package irvine.oeis.a348;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A348257 Number of ways we can write [n] as the union of 2 sets of sizes i, j which intersect in exactly 2 elements (2 &lt; i,j &lt; n; i = j allowed).

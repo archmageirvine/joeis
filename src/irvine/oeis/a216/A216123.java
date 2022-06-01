@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216123 The hyper-Wiener index of the nanostar dendrimer NS[n], defined pictorially in the Ashrafi et al. reference.

@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 // Recurrence: 8*(4*n+1)*(2*n+1)*(4*n+3)*(n+1)*a[n+0]-5*(5*n+1)*(5*n+2)*(5*n+3)*(5*n-1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A118971 a(n) = binomial(5*n+3,n)/(n+1).

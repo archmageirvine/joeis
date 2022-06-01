@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191761 Last digit of (2*n)^2. Also period 5: repeat [0, 4, 6, 6, 4].

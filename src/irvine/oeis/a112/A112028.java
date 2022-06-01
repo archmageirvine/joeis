@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 // Recurrence: 3*(3*n-1)*(3*n+1)*(15799*n^5-103177*n^4+265789*n^3-336367*n^2+208000*n-49852)*n^3*a[n+0]=24*(2*n-3)^3*(3*n-4)*(3*n-2)*(15799*n^5-24182*n^4+11071*n^3-72*n^2-1080*n+192)*a[n-1]-(n-1)^2*(15799*n^5-103177*n^4+265789*n^3-336367*n^2+208000*n-49852)*n^3*a[n-2]+8*(n-2)^2*(2*n-3)^3*(15799*n^5-24182*n^4+11071*n^3-72*n^2-1080*n+192)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A112028 a(n) = Sum_{k=0..n} binomial(n+k,k)^3.

@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 // ogf: (1-x-sqrt(1-2*x-3*x^2+4*x^3))/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A090345 Number of Motzkin paths of length n with no level steps at even level.

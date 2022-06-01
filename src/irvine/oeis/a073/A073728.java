@@ -1,6 +1,6 @@
 package irvine.oeis.a073;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A073728 a(n) = Sum_{k=0..n} S(k), where S(n) are the tribonacci generalized numbers A001644.

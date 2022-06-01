@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130481 a(n) = Sum_{k=0..n} (k mod 3) (i.e., partial sums of A010872).

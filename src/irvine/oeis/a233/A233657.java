@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 // Recurrence: +2*n*(n+5)*(2*n+9)*a[n+0]-3*(3*n+7)*(n+3)*(3*n+8)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A233657 a(n) = 10 * binomial(3*n+10,n)/(3*n+10).

@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // Recurrence: a[n+0]=a[n-1]+a[n-2]-a[n-3]+2*a[n-6]-2*a[n-7]-2*a[n-8]+2*a[n-9]-a[n-12]+a[n-13]+a[n-14]-a[n-15]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A309686 Sum of the even parts appearing among the smallest parts of the partitions of n into 3 parts.

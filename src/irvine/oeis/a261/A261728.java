@@ -1,6 +1,6 @@
 package irvine.oeis.a261;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A261728 a(1)=1; a(2*n) = 3*n; for odd n&gt;1, a(n) is the smallest number not already present which is entailed by the rules (i) k present =&gt; 3*k+1 present; (ii) 2*k present =&gt; k present.

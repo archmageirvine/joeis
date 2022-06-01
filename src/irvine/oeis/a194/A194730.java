@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // ogf: 9/10+9/(5*(8+10*sqrt(1-36*x)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A194730 Number of 10-ary words either empty or beginning with the first character of the alphabet, that can be built by inserting n doublets into the initially empty word.

@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097162 Sum( k=0..n, C(floor((n+1)/2),floor((k+1)/2))*2^k ).

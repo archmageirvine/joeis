@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 // Recurrence: (8*n^3-34*n^2+47*n-20)*a[n+0]=(32*n^5-120*n^4+144*n^3-56*n^2+7*n+2)*a[n-1]-2*(2*n-3)*(32*n^5-144*n^4+238*n^3-161*n^2+38*n-1)*a[n-2]+4*(n-2)*(2*n-5)*(2*n-3)*(8*n^3-10*n^2+3*n+1)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A066211 a(n) = Sum_{j=0..n} (2*n)!/(2*n-j)!.

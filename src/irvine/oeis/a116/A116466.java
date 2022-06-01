@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 // ogf: ((1+2*x)*((2*(1+x^2))/(1-x^2)+x^2/(1-4*x^2)^(1/2)))/(2+x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A116466 Unsigned row sums of triangle A114700.

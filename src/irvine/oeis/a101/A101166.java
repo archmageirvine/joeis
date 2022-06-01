@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101166 a(n) = (15*n^4 + 22*n^3 + 45*n^2 + 14*n) / 24.

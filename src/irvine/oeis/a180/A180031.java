@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180031 Number of n-move paths on a 3 X 3 chessboard of a queen starting or ending in the central square.

@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 // Recurrence: a[n+0]=2*a[n-1]-a[n-2]+a[n-3]-a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A092263 a(1)=1, a(n+1)=ceiling(phi*a(n))+1 if a(n) is odd, a(n+1)=ceiling(phi*a(n)) if a(n) is even, where phi=(1+sqrt(5))/2.

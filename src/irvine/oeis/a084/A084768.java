@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // Recurrence: n*a[n+0]+7*(1-2*n)*a[n-1]+(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084768 P_n(7), where P_n is n-th Legendre polynomial; also, a(n) = central coefficient of (1 + 7*x + 12*x^2)^n.

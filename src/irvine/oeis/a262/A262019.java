@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A262019 The first of eleven consecutive positive integers the sum of the squares of which is equal to the sum of the squares of five consecutive positive integers.

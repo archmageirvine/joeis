@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // Recurrence: a[n+0]=4*a[n-1]+3*(n-3)*(n-1)*a[n-2]-6*(n-2)*(2*n-5)*a[n-3]-3*(n-3)*(n-2)*(n^2-7*n+8)*a[n-4]+12*(n-4)^2*(n-3)*(n-2)*a[n-5]+(n-5)*(n-4)*(n-3)*(n-2)*(n^2-10*n+12)*a[n-6]-2*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(2*n-11)*a[n-7]+4*(n-7)*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081439 Expansion of exp(2*x)*cosh(x/sqrt(1 - x^2)).

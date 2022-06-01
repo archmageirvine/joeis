@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124062 Number of ways to write n as an ordered sum of 1's, 2's and 3's such that no 2 precedes any 1.

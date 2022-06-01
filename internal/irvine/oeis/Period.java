@@ -35,7 +35,7 @@ public final class Period {
       if (pos > 0) {
         final StringBuilder out = new StringBuilder();
         final String p = a.substring(0, 4).toLowerCase(Locale.getDefault());
-        out.append("package irvine.oeis.").append(p).append(";\n\nimport irvine.oeis.PeriodicSequence;\n");
+        out.append("package irvine.oeis.").append(p).append(";\n\nimport irvine.oeis.recur.PeriodicSequence;\n");
         if (k > 0) {
           out.append("import irvine.oeis.PrependSequence;\n");
         }

@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103157 Number of ways to choose 4 distinct points from an (n+1) X (n+1) X (n+1) lattice cube.

@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 // Recurrence: a[n+3]=(n+1)^2*(n+2)*a[n+0]-(5+3*n)*(n+2)*a[n+1]+(8+3*n)*a[n+2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A321965 a(n) = n! [x^n] exp((1/(x - 1)^2 - 1)/2)/(1 - x).

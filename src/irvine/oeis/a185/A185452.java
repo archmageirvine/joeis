@@ -1,6 +1,6 @@
 package irvine.oeis.a185;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A185452 Image of n under the map n -&gt; n/2 if n even, (5*n+1)/2 if n odd.

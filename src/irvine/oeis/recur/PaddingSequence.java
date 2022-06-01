@@ -1,9 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.recur;
 
 import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * A sequence generated verbatim from terms of the first (left) list, and when that is exhausted,

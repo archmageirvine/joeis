@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 // ogf: (1+2*x-sqrt(1-4*x))/(2*x*sqrt(1-4*x)*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A274104 a(n) = Sum_{k=0..n} (3*k+2)*Catalan(k).

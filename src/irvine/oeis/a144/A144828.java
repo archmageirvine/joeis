@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // egf: 1/(1-8*x)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144828 Partial products of successive terms of A017113; a(0)=1.

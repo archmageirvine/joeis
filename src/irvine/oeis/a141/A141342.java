@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 // ogf: 1/(1-2*x-2*x^2+x*sqrt(1+8*x+4*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A141342 A transform of the Fibonacci numbers.

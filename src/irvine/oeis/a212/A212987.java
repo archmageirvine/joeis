@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212987 Number of (w,x,y) with all terms in {0,...,n} and 3*w = 2*x+2*y.

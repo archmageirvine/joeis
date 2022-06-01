@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279259 Smallest positive integer m such that m, m+1, m+2, m+3 are divisible by 2n+1, 2n+3, 2n+5, 2n+7 respectively.

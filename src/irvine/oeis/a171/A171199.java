@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 // ogf: (1+x^2-sqrt(1-4*x-2*x^2+x^4))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A171199 G.f. satisfies: A(x) = exp( Sum_{n&gt;=1} [A(x)^n + A(x)^-n]*x^n/n ).

@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 // Recurrence: 315*a[n+0]=(2*n+1)*(9664*n^6+28992*n^5+37360*n^4+26400*n^3+10936*n^2+2568*n+315)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A322535 Number of arrays of 8 integers in -n..n with sum zero.

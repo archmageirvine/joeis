@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180003 a(n) blue and b(n)(A180002) red balls in an urn, draw 5 balls without replacement, Probability(5 red balls) = Probability(3 red and 2 blue balls).

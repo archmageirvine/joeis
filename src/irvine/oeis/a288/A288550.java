@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 // ogf: (4447872*x^35+731808*x^34-31561200*x^33-9438744*x^32+95630316*x^31+43022340*x^30-156898794*x^29-98774388*x^28+140941738*x^27+120112934*x^26-46571519*x^25-49352408*x^24-50794519*x^23-70733352*x^22+118351595*x^21+120154070*x^20-162641593*x^19-54549200*x^18+156403902*x^17-38131997*x^16-93427552*x^15+56672934*x^14+28535743*x^13-26850890*x^12-1996107*x^11+5000082*x^10-264871*x^9-434046*x^8+41593*x^7+13610*x^6+4622*x^5-4524*x^4+1500*x^3-276*x^2+26*x-1)/((9*x-1)*(4*x-1)*(3*x-1)^2*(2*x-1)^3*(x+1)^7*(x-1)^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A288550 Number of strings of n digits from 1...9 such that a signed summation of the digits exists making the sum = 0.

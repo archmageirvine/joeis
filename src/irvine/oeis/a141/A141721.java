@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 // Recurrence: a[n+0]=a[n-10]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A141721 A141631(n) mod 10.

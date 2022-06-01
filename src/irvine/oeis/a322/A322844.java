@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 // ogf: -x^2*(5+6*x+43*x^2+20*x^3+43*x^4+6*x^5+5*x^6)/((-1+x)^5*(1+x)^5))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A322844 a(n) = (1/12)*n^2*(3*(1 + n^2) - 2*(2 + n^2)*(n mod 2)).

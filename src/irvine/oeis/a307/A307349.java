@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: (1/sqrt(1-4*x)-1+(2*x)/(1-x^2))/(2*(2+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307349 a(n) = Sum_{i=1..n} Sum_{j=1..n} (-1)^(i+j) * (i+j)!/(2!*i!*j!).

@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // Recurrence: (n+3)*a[n+0]+2*(-7*n-13)*a[n-1]+24*(2*n+1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082145 A subdiagonal of number array A082137.

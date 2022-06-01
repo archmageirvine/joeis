@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 24*a[n+0]=(8*n^2+6*n^3+n^6+6*n^7+3*n^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331351 Number of achiral colorings of the edges of a cube or regular octahedron.

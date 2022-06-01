@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // Recurrence: n*a[n+0]-2*n*a[n-1]+(-n+2)*a[n-2]+2*(-n+4)*a[n-3]+(n-4)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A078678 Number of binary strings with n 1's and n 0's avoiding zigzags, that is avoiding the substrings 101 and 010.

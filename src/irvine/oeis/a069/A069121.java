@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 // ogf: (2*x*(1+30*x+72*x^2+8*x^3))/(1-4*x)^(9/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A069121 a(n) = n^4*binomial(2n,n).

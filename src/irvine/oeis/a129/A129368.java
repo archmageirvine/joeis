@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // ogf: 1/(1-x)*(1/sqrt(1-4*x)-x/sqrt(1-4*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129368 a(n)=sum{k=floor((n+1)/2)..n, C(2k,k)}.

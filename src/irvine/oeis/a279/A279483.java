@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279483 Number of 2 X 2 matrices with entries in {0,1,...,n} and odd determinant with no entry repeated.

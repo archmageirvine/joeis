@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090730 a(n) = 22*a(n-1) - a(n-2), starting with a(0) = 2 and a(1) = 22.

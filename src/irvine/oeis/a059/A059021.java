@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059021 Number of 3 X n checkerboards (with at least one red square) in which the set of red squares is edge-connected.

@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // Recurrence: -a[n+0]+4*a[n-1]+(n-1)^2*a[n-2]-4*(n-1)*(n-2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081922 Expansion of exp(4x)/sqrt(1-x^2).

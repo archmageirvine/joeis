@@ -3,7 +3,7 @@ package irvine.oeis.a349;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A349414 a(n) = A324245(n) - n.

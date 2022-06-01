@@ -1,6 +1,6 @@
 package irvine.oeis.a197;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A197649 a(n) = Sum_{k=0..n} k*Fibonacci(2*k).

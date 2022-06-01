@@ -2,7 +2,7 @@ package irvine.oeis.a158;
 // manually holose at 2021-12-03
 // egf: exp(14*x-x^2)
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A158530 a(n) = Hermite(n,7).

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // ogf: (x^2*(-1+3*x-x^2+(5*x^4-6*x^3+11*x^2-6*x+1+4*x^6-12*x^5)^(1/2)))/(2*(x^2-3*x+1)*(1-2*x)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A133107 Number of Ferrers diagrams with a single strictly smaller Ferrers puncture with the same orientation removed from the top with half-perimeter = n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259181 a(n) = n*(n+1)*(n+2)*(n+3)*(2*n^2+6*n+7)/360.

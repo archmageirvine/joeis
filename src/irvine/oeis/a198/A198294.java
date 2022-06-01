@@ -1,6 +1,6 @@
 package irvine.oeis.a198;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A198294 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+217)^2 = y^2.

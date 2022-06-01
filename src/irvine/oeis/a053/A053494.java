@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A053494 Number of symmetric 5 X 5 matrices of nonnegative integers with every row and column adding to n.

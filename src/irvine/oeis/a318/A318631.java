@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 // ogf: x*(10*x^26+92338*x^25+9646514*x^24+172035984*x^23+1227946110*x^22+4890258085*x^21+12890246964*x^20+25218221137*x^19+40000080160*x^18+54781619237*x^17+67109913895*x^16+75109489209*x^15+78762565667*x^14+79655768180*x^13+78762567575*x^12+75109489423*x^11+67109913979*x^10+54781618619*x^9+40000079524*x^8+25218220679*x^7+12890245939*x^6+4890259109*x^5+1227947663*x^4+172035752*x^3+9645999*x^2+92248*x+1)/((x^4-x^3+x^2-x+1)*(x^4+x^3+x^2+x+1)^2*(x+1)^5*(x-1)^10)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A318631 Number of 10-member subsets of [10*n] whose elements sum to a multiple of n.

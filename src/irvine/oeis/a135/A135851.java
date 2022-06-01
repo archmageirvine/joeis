@@ -1,6 +1,6 @@
 package irvine.oeis.a135;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A135851 If n &lt;= 1 then n-1 otherwise A107458(n-1) + A107458(n-2).

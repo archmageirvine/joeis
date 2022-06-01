@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094836 a(n) = 2702*a(n-1) - a(n-2); a(-1) = -15; a(0) = 15.

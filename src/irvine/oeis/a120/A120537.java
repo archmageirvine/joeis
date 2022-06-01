@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // ogf: (1+x^3-4*x^2+6*x)/((x-1)*(x^2+x-1)*(x^2-3*x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A120537 Sum of all matrix elements of n X n matrix M[i,j] = Lucas[i+j-1], (i,j = 1..n), where Lucas[n] = A000032[n] = Fibonacci[n-1] + Fibonacci[n+1].

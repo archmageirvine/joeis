@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101169 Lengths of successive words (starting with a) under the substitution: {a -&gt; aab, b -&gt; aac, c -&gt; ab}.

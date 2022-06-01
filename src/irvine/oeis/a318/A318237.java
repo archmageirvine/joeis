@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 // Recurrence: (n+3)*(n+2)*(n+1)*a[n+0]+a[n+4]+a[n+5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A318237 E.g.f. satisfies y'' + y' + x^3*y = 0 with y(0)=1, y'(0)=0.

@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=12*a[n-2]-60*a[n-4]+160*a[n-6]-240*a[n-8]+192*a[n-10]-64*a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331420 a(n) is the number of subsets of {1..n} that contain exactly 5 odd numbers.

@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 // egf: (exp(-x)*(x+log(1-x)))/(x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A162973 Number of cycles in all derangement permutations of {1,2,...,n}.

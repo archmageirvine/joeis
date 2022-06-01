@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+20]-a[n+0]=30*(10+n)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331952 a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8.

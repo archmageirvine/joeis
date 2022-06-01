@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 // ogf: (-1-sqrt(1-8*x)+sqrt(1-8*x)*sqrt(1-4*x)+sqrt(1-4*x)+4*x)/4
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A218185 Number of rows with the value true in the truth tables of all bracketed formulas with n distinct propositions p_1, ..., p_n connected by the binary connective of m-implication (case 3).

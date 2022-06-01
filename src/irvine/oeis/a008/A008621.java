@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A008621 Expansion of 1/((1-x)*(1-x^4)).

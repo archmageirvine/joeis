@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // ogf: -x^5*(14206*x^31+150238*x^30+916976*x^29+3972232*x^28+13522008*x^27+37968860*x^26+90996604*x^25+190236360*x^24+352607230*x^23+586165718*x^22+881664746*x^21+1207443842*x^20+1512654886*x^19+1738866194*x^18+1837742548*x^17+1786911600*x^16+1598078300*x^15+1312598856*x^14+987611934*x^13+677994354*x^12+422347390*x^11+236939238*x^10+118533110*x^9+52176470*x^8+19855936*x^7+6376140*x^6+1672768*x^5+341612*x^4+50540*x^3+4836*x^2+258*x+10)/((x-1)^11*(x+1)^6*(x^2+1)^2*(x^2+x+1)^4*(x^4+x^3+x^2+x+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A108792 Number of ways to place 5 nonattacking queens on an n X n board.

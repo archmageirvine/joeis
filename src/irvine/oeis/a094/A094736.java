@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 // ogf: x*(1-62*x+1651*x^2-24816*x^3+233562*x^4-1431634*x^5+5791471*x^6-15717948*x^7+28663875*x^8-28066500*x^9)/((1-x)*(1-2*x)*(1-3*x)*(1-4*x)*(1-5*x)*(1-6*x)*(1-7*x)*(1-9*x)*(1-11*x)*(1-15*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A094736 Number of connected 4-element multiantichains on a labeled n-set.

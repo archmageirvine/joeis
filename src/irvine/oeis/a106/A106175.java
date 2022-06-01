@@ -1,7 +1,7 @@
 package irvine.oeis.a106;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106175 Numbers n such that n^2 = 67*m^2 + 67*m + 1.

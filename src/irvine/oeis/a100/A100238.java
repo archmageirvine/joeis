@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // ogf: (1+2*x+sqrt(1+4*x-4*x^2))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100238 G.f. A(x) satisfies: 2^n + 1 = Sum_{k=0..n} [x^k] A(x)^n for n&gt;=1.

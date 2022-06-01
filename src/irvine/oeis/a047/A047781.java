@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // Recurrence: n*(2*n-3)*a[n+0]-(12*n^2-24*n+8)*a[n-1]+(2*n-1)*(n-2)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A047781 a(n) = Sum_{k=0..n-1} binomial(n-1,k)*binomial(n+k,k). Also a(n) = T(n,n), array T as in A049600.

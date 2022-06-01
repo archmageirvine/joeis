@@ -1,6 +1,6 @@
 package irvine.oeis.a256;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A256493 Number of factorizations of m^3 into at most 3 factors, where m is a product of exactly n distinct primes.

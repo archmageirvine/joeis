@@ -1,6 +1,6 @@
 package irvine.oeis.a210;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A210699 Number of bilaterally asymmetric 8-hoops with n symbols and no a-rooted trees.

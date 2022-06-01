@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 // ogf: (1+x)/(2*x)*(sqrt((1+2*x)/(1-2*x))-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A050168 a(0) = 1; for n &gt; 0, a(n) = binomial(n, floor(n/2)) + binomial(n-1, floor(n/2)).

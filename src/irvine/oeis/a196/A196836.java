@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 // egf: (1-exp(4*x))/(2*(exp(-x)-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A196836 (1^n + 2^n +3^n + 4^n)/2.

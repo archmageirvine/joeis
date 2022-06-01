@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 // Recurrence: (n-4)*(n-3)*(n-2)*(2100*n^3-22577*n^2+77702*n-86760)*a[n+0]=48*(n-4)*(37800*n^5-463086*n^4+2015601*n^3-3767956*n^2+2822996*n-645120)*a[n-2]-20736*(n-2)*(3*n-10)*(3*n-8)*(2100*n^3-9977*n^2+12594*n-4864)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A269474 Column 2 of A266240.

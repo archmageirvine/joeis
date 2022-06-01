@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: a[n+0]=18*a[n-1]-132*a[n-2]+504*a[n-3]-1056*a[n-4]+1152*a[n-5]-512*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332426 Number of unordered pairs of non-selfintersecting paths with nodes that cover all vertices of a convex n-gon.

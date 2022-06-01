@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A007879 Chimes made by clock striking the hour and half-hour.

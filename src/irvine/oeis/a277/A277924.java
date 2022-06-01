@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // ogf: (x^2*(1-2*x-sqrt(1-4*x)))/(sqrt(1-4*x)*(4*x^3-13*x^2+7*x-1)-20*x^3+25*x^2-9*x+1)-1/x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277924 a(n) = Sum_{i=0..n+1} binomial(2*n,n-i+1).

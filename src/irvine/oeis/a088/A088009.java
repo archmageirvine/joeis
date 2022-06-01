@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // Recurrence: a[n+0]=a[n-1]+2*(n-2)*(n-1)*a[n-2]+(n-2)*(n-1)*a[n-3]-(n-4)*(n-3)*(n-2)*(n-1)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088009 Number of "sets of odd lists", cf. A000262.

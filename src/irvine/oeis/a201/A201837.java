@@ -1,6 +1,6 @@
 package irvine.oeis.a201;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A201837 G.f.: real part of 1/(1 - i*x - i*x^2) where i=sqrt(-1).

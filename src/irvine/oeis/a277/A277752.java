@@ -1,6 +1,6 @@
 package irvine.oeis.a277;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A277752 a(n) = Sum_{k=0..n} (-1)^k*floor(phi^k), where phi is the golden ratio (A001622).

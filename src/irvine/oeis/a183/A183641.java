@@ -1,7 +1,7 @@
 package irvine.oeis.a183;
 // manually 2021-05-25
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A183641 Number of (n+1)X9 0..3 arrays with every 2x2 subblock summing to 6.

@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 // egf: (4*exp(1-2/(sqrt(1-4*x)+1)))/(sqrt(1-4*x)+1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A213507 E.g.f.: exp( Sum_{n&gt;=1} A000108(n)*x^n/n ), where A000108(n) = binomial(2*n,n)/(n+1) forms the Catalan numbers.

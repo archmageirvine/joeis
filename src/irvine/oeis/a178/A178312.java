@@ -1,6 +1,6 @@
 package irvine.oeis.a178;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A178312 a(n) = n * T(ceiling(n/2)), where T are the triangular numbers, A000217.

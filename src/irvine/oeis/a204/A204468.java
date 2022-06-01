@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A204468 Number of 4-element subsets that can be chosen from {1,2,...,4*n} having element sum 8*n+2.

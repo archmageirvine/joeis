@@ -1,6 +1,6 @@
 package irvine.oeis.a219;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A219721 Expansion of (1+7*x+5*x^2+7*x^3+x^4)/(1-x-x^4+x^5).

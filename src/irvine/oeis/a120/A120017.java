@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // ogf: (1-sqrt(1-(4*x*(1-x))/(1-2*x+2*x^2)))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A120017 The 2nd self-composition of A120010; g.f.: A(x) = G(G(x)), where G(x) = g.f. of A120010.

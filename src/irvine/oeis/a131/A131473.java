@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 // Recurrence: a[n+0]=n^6-n
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A131473 a(n) = n^6 - n.

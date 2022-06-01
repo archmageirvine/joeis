@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 // egf: cosh((1-sqrt(1-4*x))/2)/sqrt(1-4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A079165 a(n) = (4n-2)*a(n-1)+a(n-2) with a(0)=1 and a(1)=2.

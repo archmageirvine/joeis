@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // Recurrence: a[n+0]=4*a[n-2]-a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A143643 Numerators of the lower principal convergents and the lower intermediate convergents to 3^(1/2).

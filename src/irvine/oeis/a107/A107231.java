@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 // ogf: ((1+x)*(1-sqrt(1-4*x^2))^3*(sqrt(1-4*x^2)-4*x^2+1)^2)/(8*x^4*(1-4*x^2)^(5/2)*(sqrt(1-4*x^2)+2*x-1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A107231 a(n) = C(n+2,2)*C(n,floor(n/2)).

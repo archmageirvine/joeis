@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // egf: exp((8*x)/(1-x))/(1-x)^5
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055613 n!*LaguerreL(n,4,-8).

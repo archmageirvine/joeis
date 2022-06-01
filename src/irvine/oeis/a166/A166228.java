@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // ogf: (1-x-sqrt(1-6*x+x^2))/(2*x*(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166228 Alternating sum of large Schroeder numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278742 Lexicographically least strictly increasing sequence such that, for any n&gt;0, Sum_{k=1..n} a(k) can be computed without carries in base 10.

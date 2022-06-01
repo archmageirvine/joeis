@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A214616 n*(n+1)*(n+2)*(n+3)*(20*n^2+72*n+43)/360.

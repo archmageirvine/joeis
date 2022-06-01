@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+2]=2*(3+2*n)*a[n+1]-3*(n+1)^2*a[n+0]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331817 a(n) = (n!)^2 * Sum_{k=0..n} (2*k)! / (2^k * (k!)^3 * (n - k)!).

@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 // egf: sqrt((1+2*x)/(1-2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A110491 Expansion of e.g.f.: sqrt(1+2x)/sqrt(1-2x).

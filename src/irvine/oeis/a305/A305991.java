@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 // Recurrence: n*a[n+0]+3*(-9*n+10)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A305991 Expansion of (1-27*x)^(1/9).

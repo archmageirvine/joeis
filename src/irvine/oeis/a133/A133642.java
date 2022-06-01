@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // ogf: (1-4*x^2)/(1-4*x-20*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A133642 a(n) = 4*a(n-1)+20*a(n-2) for n&gt;=3, a(0)=1, a(1)=4, a(2)=32.

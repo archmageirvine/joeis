@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A069128 Centered 15-gonal numbers: a(n) = (15*n^2 - 15*n + 2)/2.

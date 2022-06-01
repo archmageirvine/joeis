@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 // Recurrence: a[n+0]=(3*n-1)*a[n-1]-3*(n-2)*(n-1)*a[n-2]+(n-3)*(n-2)*(n-1)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A136658 Row sums of unsigned triangle A136656 and also of triangle 2*A136657.

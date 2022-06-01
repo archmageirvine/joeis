@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 // ogf: (2-sqrt(1-8*x)-sqrt(3-4*x-2*sqrt(1-8*x)))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A192481 a(n) = Sum_{i=1..n-1} (2^i*C(i)-a(i)) * (2^(n-i)*C(n-i)-a(n-i)), a(1)=1, where C(i)=A000108(i-1) are Catalan numbers.

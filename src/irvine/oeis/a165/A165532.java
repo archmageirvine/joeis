@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 // ogf: (2-13*x+26*x^2-17*x^3+4*x^4-x*(1-2*x-x^2)*sqrt(1-4*x))/(2*sqrt(1-4*x)*(1-3*x+x^2)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A165532 Number of permutations of length n which avoid the patterns 4231 and 3214.

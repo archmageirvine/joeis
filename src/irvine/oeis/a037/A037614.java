@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A037614 Base 7 digits are, in order, the first n terms of the periodic sequence with initial period 1,3,2.

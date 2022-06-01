@@ -1,7 +1,7 @@
 package irvine.oeis.a165;
 // manually 2021-06-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A165233 Signed denominators of terms in series expansion of cos(x)+sin(x).

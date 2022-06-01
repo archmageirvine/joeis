@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056161 Solutions (value of x) of Diophantine equation 2*x^2 + 3*x + 2 = r^2.

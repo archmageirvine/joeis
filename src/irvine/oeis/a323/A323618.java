@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 // Recurrence: a[n+0]=(5-2*n)*a[n-1]-(n-3)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A323618 Expansion of e.g.f. (1 + x)*log(1 + x)*(2 + log(1 + x))/2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101382 a(n) = n*(n+1)*(2*n^3 - n^2 + 2)^2/6.

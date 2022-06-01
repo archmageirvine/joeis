@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // egf: log((2*x-1)/(x-1))/(2*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087751 Weighted sum of the harmonic numbers.

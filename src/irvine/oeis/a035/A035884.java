@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 // ogf: (x^32+496*x^30+35960*x^28+906192*x^26+10551068*x^24+524288*x^23+68444400*x^22+18350080*x^21+285430600*x^20+143130624*x^19+733841744*x^18+374865920*x^17+1022804550*x^16+374865920*x^15+733841744*x^14+143130624*x^13+285430600*x^12+18350080*x^11+68444400*x^10+524288*x^9+10551068*x^8+906192*x^6+35960*x^4+496*x^2+1)/((x-1)^16*(x+1)^16)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A035884 Coordination sequence for diamond structure D^+_16. (Edges defined by l_1 norm = 1.).

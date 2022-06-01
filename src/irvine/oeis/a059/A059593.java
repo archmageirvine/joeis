@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // egf: exp(x+x^5/5)-exp(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059593 Number of degree-n permutations of order exactly 5.

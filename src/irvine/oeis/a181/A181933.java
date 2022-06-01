@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 // ogf: (1/2*(sqrt(4*x+1)*(1+x)-3*x-1))/(sqrt(4*x+1)*(x^2+3*x+1)-4*x^2-5*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A181933 a(n) = Sum_{k=0..n} binomial(n+k,k)*sin(Pi*(n+k)/2).

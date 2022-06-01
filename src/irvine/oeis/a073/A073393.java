@@ -1,6 +1,6 @@
 package irvine.oeis.a073;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A073393 Sixth convolution of A002605(n) (generalized (2,2)-Fibonacci), n &gt;= 0, with itself.

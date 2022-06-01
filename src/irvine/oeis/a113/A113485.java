@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // Recurrence: 2*(n^2-8*n+13)*a[n+0]=2*(4*n^2-31*n+43)*a[n-1]+(n^3-17*n^2+87*n-91)*a[n-2]-(3*n^3-27*n^2+78*n-64)*a[n-3]+2*(n-3)*(n^2-6*n+6)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A113485 Number of partitions of [n] avoiding the pattern 12/34.

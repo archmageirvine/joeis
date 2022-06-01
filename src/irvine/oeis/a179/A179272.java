@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179272 Sharp upper bound on Rosgen overlap number n-vertex graph with n =&gt; 14, formula abused here for nonnegative integers.

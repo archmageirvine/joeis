@@ -1,6 +1,6 @@
 package irvine.oeis.a123;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A123116 Values y of solutions (x, y) to the Diophantine equation (x-y)^4 - 8*x*y = 0 with x &gt;= y.

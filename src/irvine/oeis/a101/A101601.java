@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // ogf: 8/(1+sqrt(1-12*x))^3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101601 G.f.: c(3x)^3, c(x) the g.f. of A000108.

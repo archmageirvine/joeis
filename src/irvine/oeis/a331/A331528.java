@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 12*a[n+0]=n^2*(n+1)^2*(n^2+n+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331528 a(n) = n^2 * (n+1)^2 * (n^2+n+1) / 12.

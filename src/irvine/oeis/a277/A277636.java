@@ -1,6 +1,6 @@
 package irvine.oeis.a277;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A277636 Number of 3 X 3 matrices having all elements in {0,...,n} with determinant = permanent.

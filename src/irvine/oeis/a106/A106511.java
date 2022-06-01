@@ -1,6 +1,6 @@
 package irvine.oeis.a106;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106511 Expansion of (1+x)^2/((1 + x + x^2)*(1 + x - x^2)).

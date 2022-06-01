@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 // Recurrence: a[n+0]=6*a[n-3]-a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A161487 Positive numbers y such that y^2 is of the form x^2+(x+191)^2 with integer x.

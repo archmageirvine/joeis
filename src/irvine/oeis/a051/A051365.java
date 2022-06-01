@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // ogf: -x^3*(47062848*x^7-42816008*x^6+13976678*x^5-2170583*x^4+168932*x^3-5672*x^2+2*x+3)/((x-1)*(2*x-1)*(3*x-1)*(4*x-1)*(7*x-1)*(8*x-1)*(11*x-1)*(12*x-1)*(13*x-1)*(14*x-1)*(16*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A051365 Number of 4-element families of an n-element set such that every 3 members of the family have a nonempty intersection.

@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // Recurrence: n^2*(2*n+1)*(91*n^4-478*n^3+917*n^2-755*n+222)*a[n+0]=3*(2*n-3)*(3*n-5)*(3*n-4)*(91*n^4-114*n^3+29*n^2+9*n-3)*a[n-1]+n^2*(2*n+1)*(91*n^4-478*n^3+917*n^2-755*n+222)*a[n-2]-3*(2*n-3)*(3*n-5)*(3*n-4)*(91*n^4-114*n^3+29*n^2+9*n-3)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144660 a(n) = Sum_{i=0..n} Sum_{j=0..n} Sum_{k=0..n} (i+j+k)!/(i!*j!*k!).

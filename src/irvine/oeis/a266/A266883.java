@@ -1,6 +1,6 @@
 package irvine.oeis.a266;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A266883 Numbers of the form m*(4*m+1)+1, where m = 0,-1,1,-2,2,-3,3,...

@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 // ogf: (9*x^10-99*x^9-140503*x^8-25387417*x^7-510202946*x^6-2566871318*x^5-4166581331*x^4-2313217577*x^3-402028913*x^2-15553109*x-16796)*x/(x-1)^11
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A215550 Number of standard Young tableaux of shape [10n,10].

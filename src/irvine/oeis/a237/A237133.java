@@ -1,6 +1,6 @@
 package irvine.oeis.a237;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A237133 Values of x in the solutions to x^2 - 3xy + y^2 + 19 = 0, where 0 &lt; x &lt; y.

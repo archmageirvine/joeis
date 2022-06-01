@@ -3,7 +3,7 @@ package irvine.oeis.a316;
 // ogf: (1+2*x^3-x^4)/(-1+x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A316571 a(1) = 1; for n &gt; 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1.

@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // ogf: (32*(1-x)^2)/(1+sqrt(1+4*x-4*x^2))^5
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102053 Column 2 of triangle A102051, which is the matrix inverse of triangle A101275 (number of Schroeder paths).

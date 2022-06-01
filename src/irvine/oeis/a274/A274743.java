@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274743 Repunits with odd indices multiplied by 99, i.e., 99*(1, 111, 11111, 1111111, ...).

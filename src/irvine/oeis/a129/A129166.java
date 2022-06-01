@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // ogf: ((1-x)*(3-3*x-sqrt(1-6*x+5*x^2)))/(2-(1-x)*(1-x-sqrt(1-6*x+5*x^2)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129166 Number of skew Dyck paths of semilength n with no base pyramids.

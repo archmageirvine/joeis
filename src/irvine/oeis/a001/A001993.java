@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A001993 Number of two-rowed partitions of length 3.

@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 // egf: exp(x)*cosh(x^2/2+x^4/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A061129 Number of degree-n even permutations of order dividing 4.

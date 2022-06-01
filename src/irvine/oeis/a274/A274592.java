@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274592 Sum of n-th powers of the roots of x^3 -31* x^2 - 25*x - 1.

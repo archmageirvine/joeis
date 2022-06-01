@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 // Recurrence: a[n+0]=(2*n-1)*a[n-1]+(4*n-3)*a[n-2]+(2*n-4)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A278991 a(n) is the number of simple linear diagrams with n+1 chords.

@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 // ogf: (1-sqrt((1-4*x-x^2)/(1-x^2)))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A105864 Expansion of (1/(1-x^2))*c(x/(1-x^2)), where c(x) is the g.f. of A000108.

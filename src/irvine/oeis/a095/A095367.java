@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 // Recurrence: a[n+0]=a[n-1]+5*a[n-2]-4*a[n-3]-5*a[n-4]+2*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A095367 Number of walks of length n between two nodes at distance 2 in the cycle graph C_9.

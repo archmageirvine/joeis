@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: x*(1+2*x*(1-x^2+x^3)/((1+x)*(1-x)^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333574 Number of Hamiltonian paths in the n X 2 grid graph which start at any of the n vertices on left side of the graph and terminate at any of the n vertices on the right side.

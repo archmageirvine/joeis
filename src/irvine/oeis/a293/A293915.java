@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 // Recurrence: (24*n^2-182*n+339)*a[n+0]=(96*n^3-800*n^2+1894*n-991)*a[n-1]-(96*n^4-824*n^3+1804*n^2+650*n-3571)*a[n-2]+2*(144*n^4-1788*n^3+8032*n^2-15489*n+10821)*a[n-3]-2*(144*n^4-2028*n^3+10452*n^2-23337*n+18994)*a[n-4]+(96*n^4-1592*n^3+9452*n^2-23794*n+21419)*a[n-5]+(96*n^3-1040*n^2+3550*n-3841)*a[n-6]+(24*n^2-134*n+181)*a[n-7]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A293915 Number of linear chord diagrams having n chords and minimal chord length two.

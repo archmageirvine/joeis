@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A028345 Molien series for complete weight enumerator of self-dual code over GF(5) containing all-1's vector.

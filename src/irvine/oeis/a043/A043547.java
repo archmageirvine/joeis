@@ -1,6 +1,6 @@
 package irvine.oeis.a043;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A043547 Odd numbers interspersed with double the previous odd number.

@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153783 3 times 11-gonal (or hendecagonal) numbers: 3*n*(9*n-7)/2.

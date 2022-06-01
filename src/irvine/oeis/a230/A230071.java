@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 // Recurrence: a[n+0]=(2-n)*a[n-3]+a[n-2]+n*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A230071 Sum over all permutations without double ascents on n elements and each permutation contributes 2 raised to the power of the number of double descents.

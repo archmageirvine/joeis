@@ -1,6 +1,6 @@
 package irvine.oeis.a276;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A276644 Self-composition of the repunits; g.f.: A(x) = G(G(x)), where G(x) = g.f. of A002275.

@@ -1,6 +1,6 @@
 package irvine.oeis.a199;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A199710 Expansion of (1+x-14*x^2+13*x^3)/(1-28*x^2+169*x^4).

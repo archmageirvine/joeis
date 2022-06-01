@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 // ogf: x*(1+x+2*x^2+3*x^3+5*x^4+8*x^5+13*x^6+13*x^8+13*x^9+5*x^10+18*x^11+2*x^12+20*x^13+x^14)/(1-x^16)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A261694 a(n) = Fibonacci(n) mod 21.

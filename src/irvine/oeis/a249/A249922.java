@@ -1,7 +1,7 @@
 package irvine.oeis.a249;
 // manually 2021-05-29 (offset=0)
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A249922 E.g.f. satisfies: A(x) = x + 4*A(x)^5/5.

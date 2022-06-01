@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 // ogf: (-x^14-2*x^11+x^9-x^8-x^7+x^6-x^4-1)/(2*x^9+2*x^6-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A247301 Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,0) to (n,k), where 0 &gt;= k &lt;= 2, consisting of segments given by the vectors (1,1), (2,1), (1,-1).

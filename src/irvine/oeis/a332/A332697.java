@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: 6*a[n+0]=(n^4+5*n^3+11*n^2+7*n)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332697 a(n) = (n^4 + 5*n^3 + 11*n^2 + 7*n)/6.

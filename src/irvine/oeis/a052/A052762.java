@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052762 Products of 4 consecutive integers: a(n) = n*(n-1)*(n-2)*(n-3).

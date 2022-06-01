@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // egf: sinh(x/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088313 Number of "sets of lists" (cf. A000262) with an odd number of lists.

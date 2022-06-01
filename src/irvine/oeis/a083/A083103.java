@@ -1,7 +1,7 @@
 package irvine.oeis.a083;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A083103 Second-order linear recurrence sequence with a(n) = a(n-1) + a(n-2).

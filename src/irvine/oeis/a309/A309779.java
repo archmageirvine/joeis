@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // Recurrence: a[n+0]=4*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A309779 Squares that can be expressed as the sum of two positive squares but not as the sum of three positive squares.

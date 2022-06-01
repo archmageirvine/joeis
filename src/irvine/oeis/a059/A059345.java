@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // Recurrence: (n+1)*a[n+1]=(2*n+1)*a[n+0]+5*n*a[n-1]-(2*n-1)*a[n-2]-(n-1)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059345 Central column of Pascal's "rhombus" (actually a triangle) A059317.

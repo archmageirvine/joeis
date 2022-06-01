@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057349 Leap years in the Hebrew Calendar starting in year 1 (3761 BCE). The leap year has an extra-month.

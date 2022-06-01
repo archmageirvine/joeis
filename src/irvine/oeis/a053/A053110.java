@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A053110 Expansion of (-1 + 1/(1-7*x)^7)/(49*x); related to A036226.

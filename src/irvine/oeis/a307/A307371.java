@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // Recurrence: a[n+0]=101*a[n-3]-100*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307371 Numbers k such that the digits of sqrt(k) begin with k.

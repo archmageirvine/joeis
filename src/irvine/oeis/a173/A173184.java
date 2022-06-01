@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 // Recurrence: a[n+3]-(n+3)*a[n+2]+(n+2)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A173184 Partial sums of A000166.

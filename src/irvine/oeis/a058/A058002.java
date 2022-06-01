@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 // ogf: -x*(x+1)*(x^14+299*x^13+84940*x^12+6299584*x^11+142482546*x^10+1214416453*x^9+4351647617*x^8+6732281120*x^7+4351647617*x^6+1214416453*x^5+142482546*x^4+6299584*x^3+84940*x^2+299*x+1)/(x-1)^17
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A058002 Number of 4 X 4 matrices with entries mod n, up to row and column permutation.

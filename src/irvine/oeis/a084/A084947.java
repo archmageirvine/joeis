@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // egf: 1/(1-7*x)^(2/7)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084947 a(n) = Product_{i=0..n-1} (7*i+2).

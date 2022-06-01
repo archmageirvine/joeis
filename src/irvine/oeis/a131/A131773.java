@@ -1,6 +1,6 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A131773 Epact in Julian calendar for a year n with Golden Number (n mod 19) + 1 = A074805(n).

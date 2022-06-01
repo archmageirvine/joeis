@@ -1,6 +1,6 @@
 package irvine.oeis.a193;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A193911 Sums of the diagonals of the matrix formed by listing the h-Stohr sequences in increasing order.

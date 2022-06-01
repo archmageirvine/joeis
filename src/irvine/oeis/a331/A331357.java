@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 48*a[n+0]=(8*n^4+8*n^6+18*n^7+6*n^8+n^12+3*n^13+3*n^15+n^18)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331357 Number of achiral colorings of the edges of a regular 4-dimensional orthoplex with n available colors.

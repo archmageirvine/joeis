@@ -1,6 +1,6 @@
 package irvine.oeis.a197;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A197916 Related to the periodic sequence A171654.

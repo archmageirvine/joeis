@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133141 Numbers which are both centered pentagonal (A005891) and centered hexagonal numbers (A003215).

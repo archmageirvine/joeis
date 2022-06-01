@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138750 a(n) = ceiling(n/2) if n == 2 (mod 3), a(n) = 2n otherwise.

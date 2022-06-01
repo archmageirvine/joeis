@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // Recurrence: n*(n+2)*a[n+0]-4*(2*n+1)^2*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A135389 Number of walks of length 2*n+2 from origin to (1,1) in a square lattice.

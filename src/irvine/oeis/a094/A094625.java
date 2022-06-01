@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094625 Expansion of x*(2+22*x+11*x^2)/((x-1)*(1+x)*(10*x^2-1)).

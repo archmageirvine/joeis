@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // Recurrence: (n+1)*a[n+0]+16*(-2*n+1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A156270 a(n) = 8^n*Catalan(n).

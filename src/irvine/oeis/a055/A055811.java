@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // Recurrence: 120*a[n+0]=n*(1584-310*n-85*n^2+10*n^3+n^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055811 a(n) = T(n,n-6), array T as in A055807.

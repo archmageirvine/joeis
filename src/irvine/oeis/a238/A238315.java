@@ -1,6 +1,6 @@
 package irvine.oeis.a238;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A238315 An oscillating sequence: a(n) = n^2 + 2^(n-1) - 2*a(n-1), n&gt;0, with a(1) = 1.

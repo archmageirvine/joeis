@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 // ogf: (x*(sqrt(1-4*x)+1))/(2*sqrt(1-4*x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A258431 Sum over all peaks of Dyck paths of semilength n of the arithmetic mean of the x and y coordinates.

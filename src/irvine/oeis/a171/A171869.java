@@ -1,7 +1,7 @@
 package irvine.oeis.a171;
 // manually 2021-05-29
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A171869 a(n) is the period of A175555(n) in the sequence {A175555}.

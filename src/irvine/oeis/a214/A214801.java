@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 // Recurrence: (n-1)*n^2*(2*n-1)*(2*n+1)*(4*n-1)*(4*n+1)*(392*n^4-2044*n^3+4216*n^2-3944*n+1377)*a[n+0]=2*(n-1)*(1859648*n^10-13670048*n^9+43255264*n^8-75152192*n^7+75863336*n^6-41825576*n^5+7317576*n^4+5067372*n^3-3441344*n^2+785094*n-59535)*a[n-1]-4*(2*n-3)*(4*n-7)*(4*n-5)*(1310848*n^8-7998592*n^7+19695952*n^6-24269488*n^5+15125236*n^4-3514192*n^3-1066614*n^2+533457*n-45927)*a[n-2]+5184*n*(2*n-5)*(2*n-3)*(4*n-11)*(4*n-9)*(4*n-7)*(4*n-5)*(392*n^4-476*n^3+436*n^2-76*n-3)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A214801 Number of solid standard Young tableaux of shape [[2*n,n],[n]].

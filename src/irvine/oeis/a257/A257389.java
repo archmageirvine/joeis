@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 // Recurrence: (2+n)*a[n+0]+(14+4*n)*a[n+1]+(-10-2*n)*a[n+3]+(-20-4*n)*a[n+4]+(8+n)*a[n+6]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A257389 Number of 3-generalized Motzkin paths of length n with no level steps H=(3,0) at odd level.

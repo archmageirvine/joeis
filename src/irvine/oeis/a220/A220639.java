@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220639 Number of ways to reciprocally link elements of an n X 3 array either to themselves or to exactly one king-move neighbor.

@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A037158 Convolution of natural numbers n &gt;= 1 with Fibonacci numbers F(k), for k &gt;= -7, with F(-n)=(-1)^(n+1)*F(n).

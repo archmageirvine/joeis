@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 // ogf: (1-sqrt(1-16*x)-8*x)/(32*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A269796 a(n) = 4^n * A000108(n+1).

@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 // ogf: -(4*x+sqrt(1-4*x)-1)/(8*x^2+sqrt(1-4*x)*(8*x-2)-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A257838 Main diagonal of iterated partial sums array of Fibonacci numbers (starting with the first partial sums).

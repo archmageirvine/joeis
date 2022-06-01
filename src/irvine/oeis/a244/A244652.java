@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 // Recurrence: n*(n+2)*(n^2+5*n-2)*a[n+0]=(18*n^4+103*n^3+39*n^2+56*n+12)*a[n-1]-(49*n^4+264*n^3-169*n^2-372*n-180)*a[n-2]+8*(6*n^4+31*n^3-51*n^2-112*n-48)*a[n-3]-16*(n-3)*(n+1)*(n^2+7*n+4)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A244652 G.f. A(x) satisfies: Sum_{k=0..n} [x^k] A(x)^n = binomial(6*n,3*n).

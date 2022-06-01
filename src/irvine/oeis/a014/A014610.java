@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A014610 Tetranacci numbers arising in connection with current algebras sp(2)_n.

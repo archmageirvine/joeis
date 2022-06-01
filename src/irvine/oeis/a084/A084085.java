@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // ogf: -(1-x+x^3)/(-x^2-1+3x+x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A084085 Length of lists created by n substitutions k -&gt; Range[0,Mod[k+1,4]] starting with {0}.

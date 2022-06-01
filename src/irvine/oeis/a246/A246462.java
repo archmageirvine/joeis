@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // Recurrence: n^3*(2*n-3)*(8*n^4-48*n^3+96*n^2-72*n+13)*a[n+0]=(2*n-1)*(280*n^7-2096*n^6+5728*n^5-6536*n^4+1383*n^3+3160*n^2-2432*n+552)*a[n-1]-(2*n-3)*(280*n^7-1824*n^6+4096*n^5-3384*n^4-345*n^3+2046*n^2-1100*n+192)*a[n-2]+(n-2)^3*(2*n-1)*(8*n^4-16*n^3+8*n-3)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A246462 a(n) = Sum_{k=0..n} (2k+1)*C(n,k)^2*C(n+k,k)^2, where C(n,k) denotes the binomial coefficient n!/(k!*(n-k)!).

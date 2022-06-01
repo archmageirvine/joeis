@@ -3,7 +3,7 @@ package irvine.oeis.a316;
 // ogf: (1+x+x^2)*(1+x^2+2*x^3+x^4-x^5)/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A316319 Coordination sequence for a trivalent node in a chamfered version of the 3^6 triangular tiling of the plane.

@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 // ogf: ((x^4+2*x^3-5*x^2-10*x+1)^(1/2)-x^2-3*x-1)/(2*x*(x-1)*(x+2)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A175939 Number of lattice paths from (0,0) to (n,n) using steps S={(k,0),(0,k),(r,r)|k&gt;0,0&lt;r&lt;=2} which never go above the line y=x.

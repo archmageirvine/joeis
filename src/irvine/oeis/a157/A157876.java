@@ -1,6 +1,6 @@
 package irvine.oeis.a157;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A157876 Let f(x) = 1 + x^2 + x^4 + x^5 + x^6 + x^10 + x^11; sequence has g.f. g(x) = 1/(x^11*f(1/x)).

@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 // ogf: (1-25*x)^(3/5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A049391 Expansion of (1-25*x)^(3/5).

@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 // Recurrence: a[n+0]=a[n-1]+64*a[n-2]-64*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A198586 a(n) = (4^A001651(n+1) - 1)/3: numbers (4^k-1)/3 for k &gt; 1, not multiples of 3.

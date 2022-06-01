@@ -1,6 +1,6 @@
 package irvine.oeis.a178;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A178759 Expansion of e.g.f. 3*x*exp(x)*(exp(x)-1)^2.

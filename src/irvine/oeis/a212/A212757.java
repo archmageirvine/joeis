@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212757 Number of (w,x,y,z) with all terms in {0,...,n} and 2w=max{w,x,y,z}-min{w,x,y,z}.

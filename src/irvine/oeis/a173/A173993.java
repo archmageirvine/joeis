@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 // ogf: (sqrt((1-2*x)*(1-2*x-4*x^2+4*x^3))-2*x^2+4*x-1)/(2*x*(1-4*x+3*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A173993 Sequence whose Hankel transform is the Somos (4) sequence.

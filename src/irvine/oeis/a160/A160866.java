@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // ogf: x*(512+2247605859*x+690419477142*x^2+25828232616295*x^3+263754807172680*x^4+981682771377846*x^5+1503880076779332*x^6+981682771377846*x^7+263754807172680*x^8+25828232616295*x^9+690419477142*x^10+2247605859*x^11+512*x^12)/(1-x)^14
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A160866 512*P_11(n), 512 times the Legendre polynomial of order 13 at n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094968 Indices of Fibonacci numbers in Stern's diatomic series A049456 regarded as a single linear sequence.

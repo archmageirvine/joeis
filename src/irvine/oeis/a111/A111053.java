@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // ogf: ((1-x)*(1-4*x-2*x*x)-(1-5*x)*sqrt(1-4*x))/2/(1-5*x+2*x^2-x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A111053 Number of permutations which avoid the patterns 1324 and (2143 with Bruhat restriction {2&lt;-&gt;3}). Also the number of permutations whose graphs are acyclic.

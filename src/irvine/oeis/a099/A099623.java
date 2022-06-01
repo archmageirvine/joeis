@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099623 Sum C(n-k,k+2)2^(n-k-2)(3/2)^k, k=0..floor(n/2).

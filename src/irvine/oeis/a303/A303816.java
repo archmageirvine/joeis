@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 // Recurrence: a[n+0]=a[n-1]-a[n-8]+a[n-9]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A303816 Decimal expansion of 2700/17.

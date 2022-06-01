@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165310 a(0)=1, a(1)=3, a(n) = 7*a(n-1) - 9*a(n-2) for n &gt; 1.

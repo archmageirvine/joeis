@@ -1,6 +1,6 @@
 package irvine.oeis.a120;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A120715 Sequence produced by 14 X 14 Markov chain based on 14-vertex graph formed from direct product of two copies of the graph used in A120714.

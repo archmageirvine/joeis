@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259403 Pentagonal numbers (A000326) that are the sum of eleven consecutive pentagonal numbers.

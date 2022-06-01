@@ -1,6 +1,6 @@
 package irvine.oeis.a208;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A208902 The sum over all bitstrings b of length n of the number of runs in b not immediately followed by a longer run.

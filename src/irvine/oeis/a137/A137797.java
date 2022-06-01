@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137797 a(n) = 2*( (n+1) mod 5 ) - 2*( (n+1) mod 2 ).

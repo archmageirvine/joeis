@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // Recurrence: (n+2)*a[n+0]+(-2*n-1)*a[n-1]+5*(-n+1)*a[n-2]+(2*n-5)*a[n-3]+(n-4)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128720 Number of paths in the first quadrant from (0,0) to (n,0) using steps U=(1,1), D=(1,-1), h=(1,0) and H=(2,0).

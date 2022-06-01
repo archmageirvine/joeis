@@ -1,6 +1,6 @@
 package irvine.oeis.a147;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A147957 a(n) = ((6 + sqrt(2))^n + (6 - sqrt(2))^n)/2.

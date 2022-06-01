@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 // egf: (exp(x+x^2/2)+exp(x-x^2/2))/2-exp(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A048099 Number of degree-n even permutations of order exactly 2.

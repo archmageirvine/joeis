@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274663 Sum of n-th powers of the roots of x^3 + 4*x^2 - 11*x - 1.

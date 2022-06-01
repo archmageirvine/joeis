@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249169 Fibonacci 16-step numbers, a(n) = a(n-1) + a(n-2) + ... + a(n-16).

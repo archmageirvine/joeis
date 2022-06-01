@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // Recurrence: a[n+0]=20*n-16
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A139245 a(n) = 20*n - 16.

@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 // ogf: (2*x^2*(2-x)+(1-x)^2*(1-sqrt(1-4*x)))/(2*(1-x)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A192480 a(n) = n + A000108(n-1) for n &gt; 1; a(0)=0, a(1)=1.

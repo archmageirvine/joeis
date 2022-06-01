@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A227275 Positive solutions of the Pell equation x^2 - 97*y^2 = -1. Solutions y = 569*a(n).

@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 // Recurrence: a[n+0]=2*a[n-6]-a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A214394 If n mod 6 = 0 then n/6 else n.

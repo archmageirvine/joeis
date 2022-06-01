@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133311 The nonnegative integers reordered in groups of 5 even numbers followed by 5 odd numbers.

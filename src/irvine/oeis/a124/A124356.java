@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124356 Number of (directed) Hamiltonian cycles on the Moebius ladder graph M_n (for n&gt;=4).

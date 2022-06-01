@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // Recurrence: a[n+0]=6
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329502 G.f. = (1+x)*(1+2*x)/(1-x).

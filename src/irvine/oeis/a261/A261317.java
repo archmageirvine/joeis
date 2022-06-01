@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 // egf: exp((x^2*(x^4+2*x+3))/6)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A261317 Number of permutations sigma of [n] without fixed points such that sigma^6 = Id.

@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=a[n-1]+5*a[n-2]-5*a[n-3]-10*a[n-4]+10*a[n-5]+10*a[n-6]-10*a[n-7]-5*a[n-8]+5*a[n-9]+a[n-10]-a[n-11]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330300 a(n) is the number of subsets of {1..n} that contain exactly 2 odd and 3 even numbers.

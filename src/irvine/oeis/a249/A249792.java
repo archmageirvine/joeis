@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 // ogf: (1-x)^3/sqrt((1-2*x+x^2-x^3)*(1-6*x+5*x^2-x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A249792 G.f.: Sum_{n&gt;=0} x^n/(1-x)^(4*n) * Sum_{k=0..n} C(n,k)^2 * x^k.

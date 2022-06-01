@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // egf: arcsin(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177145 E.g.f.: arcsin(x).

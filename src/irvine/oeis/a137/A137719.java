@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137719 Sequence based on the pattern [3n, 3n, 3n, 3n+2, 3n+1, 3n+2].

@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 // Recurrence: (160+64*n)*a[n+0]-(160+48*n)*a[n+1]+(50+12*n)*a[n+2]-(5+n)*a[n+3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A038697 Convolution of A000917 with A000984 (central binomial coefficients).

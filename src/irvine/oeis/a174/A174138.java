@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174138 Numbers congruent to {5,6,7,8,9,15,16,17,18,19} mod 25.

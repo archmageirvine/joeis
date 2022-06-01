@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 // ogf: (1+x^2)/(1-2x-3*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A321573 Row sums of A321624.

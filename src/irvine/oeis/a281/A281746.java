@@ -1,6 +1,6 @@
 package irvine.oeis.a281;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A281746 Nonnegative numbers k such that k == 0 (mod 3) or k == 0 (mod 5).

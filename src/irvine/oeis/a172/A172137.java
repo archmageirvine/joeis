@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 // Recurrence: 2*a[n+0]=(n^4-9*n^2+40*n-48)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A172137 Number of ways to place 2 nonattacking zebras on an n X n board.

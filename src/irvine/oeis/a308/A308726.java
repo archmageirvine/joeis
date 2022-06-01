@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // ogf: (2+(2*x-1)/sqrt(1-4*x)-sqrt(2*sqrt(1-4*x)-1))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308726 The number of permutations of length n and tier at most 1, that is, the number of permutations of length n sortable by two passes through a stack where outputting the longest prefix matching the identity permutation is prioritized.

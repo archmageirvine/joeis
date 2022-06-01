@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // Recurrence: (-12960+8640*n)*a[n+0]+(7200-13680*n)*a[n+1]+(3920+9056*n)*a[n+2]+(-4184-3160*n)*a[n+3]+(1404+620*n)*a[n+4]+(-584-110*n)*a[n+5]+(14+10*n)*a[n+6]+(n+6)*a[n+7]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329913 The fifth moments of the squared binomial coefficients; a(n) = Sum_{m=0..n} m^5*binomial(n, m)^2.

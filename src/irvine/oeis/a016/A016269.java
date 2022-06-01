@@ -1,6 +1,6 @@
 package irvine.oeis.a016;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A016269 Number of monotone Boolean functions of n variables with 2 mincuts. Also number of Sperner systems with 2 blocks.

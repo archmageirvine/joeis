@@ -1,6 +1,6 @@
 package irvine.oeis.a178;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A178396 a(1)=1, a(n) = a(n-1)*1000 + 11^(n-1) for n&gt;=2.

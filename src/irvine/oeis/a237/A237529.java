@@ -1,6 +1,6 @@
 package irvine.oeis.a237;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A237529 Number of ways to choose 4 points in an n X n X n triangular grid so that no 3 of them form a 2 X 2 X 2 subtriangle.

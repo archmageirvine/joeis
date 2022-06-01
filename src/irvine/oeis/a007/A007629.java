@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 import irvine.oeis.Sequence;
 
 /**

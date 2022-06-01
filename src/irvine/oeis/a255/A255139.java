@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 // egf: 1/(1-x)-(2*exp(x/2)*sinh((sqrt(5)*x)/2))/sqrt(5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A255139 a(n) = n! - Fibonacci(n).

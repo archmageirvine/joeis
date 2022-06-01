@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 192*a[n+0]=(48*n^3+32*n^4+12*n^6+12*n^7+32*n^8+12*n^9+n^12+24*n^13+18*n^14+n^24)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331354 Number of oriented colorings of the edges of a regular 4-dimensional orthoplex with n available colors.

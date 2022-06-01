@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 // ogf: sqrt(1+4*x^2)/(sqrt(1+4*x^2)-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A157674 G.f.: A(x) = 1 + x/exp( Sum_{k&gt;=1} (A((-1)^k*x) - 1)^k/k ).

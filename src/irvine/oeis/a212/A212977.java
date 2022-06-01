@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212977 Number of (w,x,y) with all terms in {0,...,n} and  n/2 &lt; w+x+y &lt;= n.

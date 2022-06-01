@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 // Recurrence: n*a[n+0]+(-2*n+3)*a[n-1]+3*(-n+3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A168076 Expansion of 1 - 3*(1-x-sqrt(1-2*x-3*x^2))/2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195309 Row sums of an irregular triangle read by rows in which row n lists the next A026741(n+1) natural numbers A000027.

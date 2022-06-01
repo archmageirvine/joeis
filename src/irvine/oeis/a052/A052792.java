@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 // Recurrence: (1200*n+840*n^2+240*n^3+576+24*n^4)*a[n+0]+(1200-50*n^4+100*n-850*n^2-400*n^3)*a[n+1]+(210*n^3+175*n^2+35*n^4-420*n)*a[n+2]+(10*n^2-40*n^3+40*n-10*n^4)*a[n+3]+(-n^2+n^4-2*n+2*n^3)*a[n+4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A052792 Expansion of e.g.f.: x^2*(exp(x)-1)^4.

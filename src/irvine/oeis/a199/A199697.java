@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 // ogf: ((x+1)^2*sqrt((1-x)/(1-x-4*x^3))-2*x-1)/x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A199697 Number of -1..1 arrays x(0..n-1) of n elements with zero sum and no two neighbors equal.

@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 // ogf: x^4*(8-5*x+x^2-x^3)/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A063724 Consider problem of placing N queens on an n X n board so that each queen attacks precisely 4 others. Sequence gives maximal number of queens.

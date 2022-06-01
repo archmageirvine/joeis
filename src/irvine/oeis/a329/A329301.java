@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // ogf: (-1-x^2)/(-1+x-x^2+2*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A329301 a(0) = a(1) = a(2) = 1; thereafter a(n) = a(n-1) - (-1)^n*a(n-2) + 2*a(n-3).

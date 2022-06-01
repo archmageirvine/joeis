@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 // ogf: x*(x^19-2*x^18+3*x^17-5*x^16+3*x^15-6*x^14+7*x^13-11*x^12-12*x^11+24*x^10-36*x^9+24*x^8-38*x^7+28*x^6-18*x^5-3*x^4-2*x-1)/((x-1)^3*(x^2+1)^3*(x^4+1)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A125650 Numerator of n(n+3)/(4(n+1)(n+2)) = sum(k=1..n, 1/(k(k+1)(k+2)) ).

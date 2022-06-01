@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027660 a(n) = C(n+2,2) + C(n+2,3) + C(n+2,4) + C(n+2,5).

@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // ogf: 2-(1-16*x)^(1/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034256 Expansion of 2 - (1 - 16*x)^(1/4), related to quartic factorial numbers A034176.

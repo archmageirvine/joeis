@@ -3,7 +3,7 @@ package irvine.oeis.a302;
 // egf: -log(1-x)*arcsinh(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A302610 Expansion of e.g.f. -log(1 - x)*arcsinh(x).

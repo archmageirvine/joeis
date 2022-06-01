@@ -1,7 +1,7 @@
 package irvine.oeis.a172;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A172613 a(n) = (9n)!/(9!^n).

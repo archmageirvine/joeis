@@ -1,6 +1,6 @@
 package irvine.oeis.a246;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A246880 6*((10^n-1)/9)*(10^(n+1))+9*(10^n-1)/9.

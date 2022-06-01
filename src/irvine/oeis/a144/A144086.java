@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // Recurrence: (n-1)*a[n+0]=n*(2*n-3)*a[n-1]-n*(n-1)*(n-4)*a[n-2]-n*(n-1)*(n-2)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144086 Number of partial bijections (or subpermutations) of an n-element set with exactly 1 fixed point.

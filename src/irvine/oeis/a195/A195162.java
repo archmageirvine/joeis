@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195162 Generalized 12-gonal numbers: k*(5*k-4) for k = 0, +-1, +-2, ...

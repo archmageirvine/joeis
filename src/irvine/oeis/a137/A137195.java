@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137195 Even-indexed coefficients related to Kirchhoff index of hexagonal (benzene) chains.

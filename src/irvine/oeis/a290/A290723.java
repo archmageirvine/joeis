@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290723 a(n) = (1/11520) * n*(n+7)^2 * (3*n^7 + 83*n^6 + 961*n^5 + 6201*n^4 + 24708*n^3 + 60700*n^2 + 87968*n + 85056).

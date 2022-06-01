@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215502 a(n) = (1+sqrt(3))^n + (-2)^n + (1-sqrt(3))^n + 1.

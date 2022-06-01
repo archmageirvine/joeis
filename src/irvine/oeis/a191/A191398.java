@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: 2/(1-x-2*x^3+(1-x)*sqrt(1-4*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191398 Number of dispersed Dyck paths of length n (i.e., Motzkin paths of length n with no (1,0)-steps at positive heights) having no DHU's (here U=(1,1), H=(1,0), and D=(1,-1)).

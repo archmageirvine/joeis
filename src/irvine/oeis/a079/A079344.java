@@ -1,6 +1,6 @@
 package irvine.oeis.a079;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A079344 F(n) mod 8, where F(n) = A000045(n) is the n-th Fibonacci number.

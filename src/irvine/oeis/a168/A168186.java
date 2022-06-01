@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 // Recurrence: a[n+0]=a[n-1]+a[n-11]-a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A168186 Positive numbers that are not multiples of 12.

@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 // Recurrence: n*a[n+0]+2*(-2*n+1)*a[n-1]+8*(-n+1)*a[n-2]+2*(-2*n+3)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A137635 a(n) = Sum_{k=0..n} C(2k,k)*C(2k,n-k); equals row 0 of square array A137634.

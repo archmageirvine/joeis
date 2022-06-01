@@ -3,7 +3,7 @@ package irvine.oeis.a304;
 // Recurrence: n*a[n+0]=4*a[n-1]+4^2*(n-2)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A304940 Expansion of ((1 + 4*x)/(1 - 4*x))^(1/2).

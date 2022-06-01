@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 // ogf: x(x^8+8x^7+4x^6+5x^4+4x^2+2x+1)/((x-1)^2*(1+x)(x^2+x+1)(x^2-x+1)(x^4-x^2+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A131725 Partial sums of A131711.

@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 // Recurrence: n*(n+1)*a[n+0]+2*(-5*n^2+10*n-3)*a[n-1]+9*(n-2)*(n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A253093 Related to residues of poles of moment function for random walks in 4 dimensions.

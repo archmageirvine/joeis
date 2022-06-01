@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A028724 a(n) = (1/2)*floor(n/2)*floor((n-1)/2)*floor((n-2)/2).

@@ -1,6 +1,6 @@
 package irvine.oeis.a205;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A205961 Expansion of 1/(-32*x^5 + 8*x^3 - 4*x^2 - x + 1).

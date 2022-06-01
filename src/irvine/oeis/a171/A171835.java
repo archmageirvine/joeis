@@ -1,6 +1,6 @@
 package irvine.oeis.a171;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A171835 Partial sums of numbers congruent to {3, 4, 5, 6} mod 8 (A047425).

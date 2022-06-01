@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167603 Expansion of 1/(1 + 837*x + 277760*x^2 + 83891456*x^3 + 7809531904*x^4).

@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 // Recurrence: 720*a[n+0]=(n+1)(n+2)^2*(n+3)(2*n+3)(5*n^2+19*n+20)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A107969 a(n) = (n+1)(n+2)^2*(n+3)(2n+3)(5n^2 + 19n + 20)/720.

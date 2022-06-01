@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 // ogf: (1-sqrt(1-4*x^3-4*x^4))/(2*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A248100 Number of ordered trees with n edges such that non-leaf vertices at even levels have outdegree 1 and those at odd levels have outdegree 2.

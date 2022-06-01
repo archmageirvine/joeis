@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A038391 Expansion of (x^3+2*x+1) / ((x-1)^4*(x^2+x+1)^2).

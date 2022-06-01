@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 // Recurrence: a[n+0]=n^2*(3-4*n^2)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A239608 Sin( arcsin(n)- 2*arccos(n) )^2.

@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
-import irvine.oeis.PaddingSequence;
+import irvine.oeis.recur.PaddingSequence;
 import irvine.oeis.transform.RevertTransformSequence;
 
 /**

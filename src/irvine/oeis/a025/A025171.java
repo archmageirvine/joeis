@@ -1,6 +1,6 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A025171 Reciprocal Chebyshev polynomial of second kind evaluated at 4 multiplied by (-1)^n.

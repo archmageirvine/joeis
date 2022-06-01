@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 // ogf: (8*x^12+8*x^11-4*x^10-8*x^8+6*x^7+20*x^6-7*x^5-16*x^4-4*x^3-1)/(x^4-x^3+x^2+x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A263690 Number of length n arrays of permutations of 0..n-1 with each element moved by -n to n places and every three consecutive elements having its maximum within 3 of its minimum.

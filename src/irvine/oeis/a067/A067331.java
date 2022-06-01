@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A067331 Convolution of Fibonacci F(n+1), n &gt;= 0, with F(n+3), n &gt;= 0.

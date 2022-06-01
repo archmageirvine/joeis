@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // Recurrence: n*a[n+0]+3*(-2*n+3)*a[n-1]+(n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085403 Expansion of (1-x+sqrt(1-6x+x^2))/2 in powers of x.

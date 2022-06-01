@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 // ogf: (3*x^2-3*x+1-x*sqrt(1-3*x^2-2*x))/(1-3*x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A188860 Number of n X n binary arrays without the pattern 0 1 diagonally, vertically or antidiagonally.

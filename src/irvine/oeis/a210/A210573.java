@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 // egf: (1-x^2)^(-3/2)*exp(-x^2+x/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A210573 E.g.f.: (1-x^2)^(-3/2)*exp(-x^2+x/(1-x)).

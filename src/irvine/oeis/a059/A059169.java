@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059169 Number of partitions of n into 3 parts which form the sides of a nondegenerate isosceles triangle.

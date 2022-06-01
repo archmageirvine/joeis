@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A011749 Expansion of 1/(1 + x^3 + x^5) mod 2.

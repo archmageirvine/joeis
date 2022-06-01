@@ -1,6 +1,6 @@
 package irvine.oeis.a209;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A209404 Negated coefficients of Chebyshev T polynomials: a(n) = -A053120(n+14, n), n &gt;= 0.

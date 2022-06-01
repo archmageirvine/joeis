@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // ogf: 2/(1+2*x+x^2+sqrt(1-4*x+6*x^2+x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A178072 Sequence with Hankel transform equal to the Somos-4 sequence A006769(n+2).

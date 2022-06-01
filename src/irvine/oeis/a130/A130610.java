@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130610 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+359)^2 = y^2.

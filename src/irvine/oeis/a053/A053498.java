@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: exp(x+x^2/2+x^4/4+x^8/8)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053498 Number of degree-n permutations of order dividing 8.

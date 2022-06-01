@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // Recurrence: (n+1)*(5*n-4)*a[n+0]-2*(5*n+1)(2*n-1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051945 a(n) = C(n)*(5n+1) where C(n) = Catalan numbers (A000108).

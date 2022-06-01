@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 // ogf: (1-sqrt(1-4*x))/(2*x)-x/(1-x-x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A263986 Difference between Catalan numbers and Fibonacci numbers: a(n) = C(n) - F(n).

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 // Recurrence: a[n+0]=a[n-1]+a[n-5]-a[n-6]-a[n-10]+a[n-11]+a[n-15]-a[n-16]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A180316 Concatenation of n and A008954(n).

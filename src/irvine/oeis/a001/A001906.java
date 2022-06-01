@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A001906 F(2n) = bisection of Fibonacci sequence: a(n) = 3*a(n-1) - a(n-2).

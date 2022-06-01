@@ -1,6 +1,6 @@
 package irvine.oeis.a016;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A016724 Expansion of (2-2*x-x^2)/((1-2*x^2)*(1-x)^2).

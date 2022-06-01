@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * Generates the power series of some root of a polynomial.

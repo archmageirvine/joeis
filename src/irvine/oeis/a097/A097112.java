@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097112 Expansion of (1+4x-6x^2-36x^3)/(1-19x^2+90x^4).

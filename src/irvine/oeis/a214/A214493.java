@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A214493 Numbers of the form ((6k+5)^2+9)/2 or 2(3k+4)^2-9.

@@ -1,6 +1,6 @@
 package irvine.oeis.a243;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A243869 Expansion of x^4/[(1+x)*Product_{k=1..3} (1-k*x)].

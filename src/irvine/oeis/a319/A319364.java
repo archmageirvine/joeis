@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 // egf: exp(x^3/3)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A319364 Expansion of e.g.f. exp(x^3/3)/(1 - x).

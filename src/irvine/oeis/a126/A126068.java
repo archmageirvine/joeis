@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: 1-x-sqrt(1-2*x-3*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126068 Expansion of 1 - x - sqrt(1 - 2*x - 3*x^2) in powers of x.

@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // ogf: (1+9*x-sqrt(81*x^2-22*x+1))/(20*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082148 a(0)=1; for n &gt;= 1, a(n) = Sum_{k=0..n} 10^k*N(n,k), where N(n,k) = (1/n)*C(n,k)*C(n,k+1) are the Narayana numbers (A001263).

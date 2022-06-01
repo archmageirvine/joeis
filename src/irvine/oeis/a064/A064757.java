@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A064757 a(n) = n*11^n - 1.

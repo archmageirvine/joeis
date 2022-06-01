@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220361 a(n) = Fibonacci(n)^3 + (-1)^n*Fibonacci(n-2).

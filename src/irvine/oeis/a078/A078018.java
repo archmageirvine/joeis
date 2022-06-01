@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // ogf: (1+5*x-sqrt(25*x^2-14*x+1))/(12*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A078018 a(n) = Sum_{k=0..n} 6^k*N(n,k), with a(0)=1, where N(n,k) = C(n,k) * C(n,k+1)/n are the Narayana numbers (A001263).

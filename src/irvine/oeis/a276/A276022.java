@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 // Recurrence: n^2*a[n+0]=3*(5*n^2-5*n+2)*a[n-1]-16*(5*n^2-10*n+6)*a[n-2]+36*(5*n^2-15*n+12)*a[n-3]-144*(n-2)^2*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A276022 n^2 * a(n) = 3*(5*n^2 - 5*n + 2) * a(n-1) - 16*(5*n^2 - 10*n + 6) * a(n-2) + 36*(5*n^2 - 15*n + 12) * a(n-3) - 144*(n-2)^2 * a(n-4), with a(0)=1, a(1)=6, a(2)=30, a(3)=144.

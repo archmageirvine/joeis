@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 // Recurrence: (n+1)^2*(1-4*n+5*n^2)*a[n+1]=(5-5*n-26*n^2+11*n^3+55*n^4)*a[n+0]+(n-1)^2*(2+6*n+5*n^2)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A208675 Number of words, either empty or beginning with the first letter of the ternary alphabet, where each letter of the alphabet occurs n times and letters of neighboring word positions are equal or neighbors in the alphabet.

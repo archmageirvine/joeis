@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
+import irvine.oeis.recur.HolonomicRecurrence;
 import junit.framework.TestCase;
 
 /**

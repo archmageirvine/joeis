@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A003479 Expansion of 1/((1-x)*(1-x-2*x^3)).

@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: a[n]-(7*n-1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034833 a(n) = n-th sept-factorial number divided by 6.

@@ -3,7 +3,7 @@ package irvine.oeis.a231;
 // egf: sin(log(1-x))/(x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A231531 Imaginary part of Product_{k=1..n} (k+I).

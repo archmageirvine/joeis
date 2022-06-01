@@ -1,6 +1,6 @@
 package irvine.oeis.a209;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A209400 Number of subsets of {1,...,n} containing a subset of the form {k,k+1,k+3} for some k.

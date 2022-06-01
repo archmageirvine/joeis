@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051582 a(n) = (2*n+8)!!/8!!, related to A000165 (even double factorials).

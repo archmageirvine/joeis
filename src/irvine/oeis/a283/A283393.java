@@ -1,6 +1,6 @@
 package irvine.oeis.a283;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A283393 a(n) = gcd(n^2-1, n^2+9).

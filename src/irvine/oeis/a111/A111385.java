@@ -1,6 +1,6 @@
 package irvine.oeis.a111;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A111385 a(n) = binomial(n,4) - binomial(floor(n/2),4) - binomial(ceiling(n/2),4).

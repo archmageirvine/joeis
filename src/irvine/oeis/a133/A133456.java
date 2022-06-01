@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133456 Period 18: repeat 3, 3, -5, 0, 3, -1, -3, 0, 7 followed by their negatives.

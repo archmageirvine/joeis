@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 // ogf: x*(x^8+3*x^6+x^5+3*x^4+x^3+3*x^2+x+1)/(1-x^2-x^4-2*x^6-x^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A141073 List of central integer pairs in Pascal-like triangles with index of asymmetry y = 3 and index of obliqueness z = 0 or z = 1.

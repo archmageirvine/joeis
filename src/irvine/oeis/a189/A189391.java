@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 // ogf: (2*x+sqrt(1-4*x^2)-1)/(2*(2*x-1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A189391 The minimum possible value for the apex of a triangle of numbers whose base consists of a permutation of the numbers 0 to n, and each number in a higher row is the sum of the two numbers directly below it.

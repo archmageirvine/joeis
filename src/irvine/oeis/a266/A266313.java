@@ -1,6 +1,6 @@
 package irvine.oeis.a266;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A266313 Period 8 zigzag sequence; repeat [0, 1, 2, 3, 4, 3, 2, 1].

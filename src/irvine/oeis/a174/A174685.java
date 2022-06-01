@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174685 Indices of Sophie Germain pentagonal numbers: indices i of pentagonal numbers P(i) = A000326(i) such that 2*P(i)+1 is also a pentagonal number.

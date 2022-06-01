@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // ogf: 1-1/2*(1-4*x)^(1/2)-1/2*(3-2*(1-4*x)^(1/2)-4*x)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055395 Number of bracketings of 0#0#0#...#0 giving result 0, where 0#0 = 0#1 = 1#0 = 1, 1#1 = 0.

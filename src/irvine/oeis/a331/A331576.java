@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=2*a[n-1]+8*a[n-2]-18*a[n-3]-27*a[n-4]+72*a[n-5]+48*a[n-6]-168*a[n-7]-42*a[n-8]+252*a[n-9]-252*a[n-11]+42*a[n-12]+168*a[n-13]-48*a[n-14]-72*a[n-15]+27*a[n-16]+18*a[n-17]-8*a[n-18]-2*a[n-19]+a[n-20]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331576 a(n) is the number of subsets of {1..n} that contain 5 even and 5 odd numbers.

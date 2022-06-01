@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192377 Coefficient of x in the reduction by x^2-&gt;x+2 of the polynomial p(n,x) defined below in Comments.

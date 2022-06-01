@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 // ogf: (1-5*x-6*x^2+45*x^3-24*x^4-(1+x-4*x^2+x^3)*(1-4*x)^(3/2))/(-2*x^2*(1-4*x)^(3/2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A174195 Number of permutations of 1..n that almost avoid 231.

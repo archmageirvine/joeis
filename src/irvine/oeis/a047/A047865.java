@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // Recurrence: a[n+0]=(n-1)*a[n-1]+(n-1)*(n-2)*(n-3)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A047865 Number of derangements of n where minimal cycle size is at least 4.

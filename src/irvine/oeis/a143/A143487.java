@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // Recurrence: a[n+0]=2*a[n-1]-2*a[n-2]+a[n-3]-a[n-6]+2*a[n-7]-2*a[n-8]+a[n-9]-a[n-12]+2*a[n-13]-2*a[n-14]+a[n-15]-a[n-18]+2*a[n-19]-2*a[n-20]+a[n-21]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A143487 "Fourth down, Extream [sic] between the two farthest Bells from it" in bell-ringing is a sequence of permutations p_1=(1,2,3,4), p_2=(1,2,4,3), .. which runs through all permutations of {1,2,3,4} with period 24; sequence gives number in position 4 of n-th permutation.

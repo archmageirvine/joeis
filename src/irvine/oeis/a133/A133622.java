@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // egf: exp(x)-1+(x*sinh(x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A133622 a(n) = 1 if n is odd, a(n) = n/2+1 if n is even.

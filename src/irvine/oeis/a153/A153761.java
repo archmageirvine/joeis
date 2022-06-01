@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 // egf: -exp(x)+exp(x+1/11*x^11)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A153761 Number of degree-n permutations of order exactly 11.

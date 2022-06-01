@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // egf: (1-3*x)^(-1/3)-1-log(1-3*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123333 a(n) = 3^n*(Gamma(n+1/3)/Gamma(1/3) + (n-1)!).

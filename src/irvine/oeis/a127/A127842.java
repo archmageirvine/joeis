@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127842 a(1)=1, a(2)=...=a(8)=0, a(n) = a(n-8)+a(n-7) for n&gt;8.

@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // Recurrence: n*a[n+0]+2*(-2*n+3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115140 O.g.f. inverse of Catalan A000108 o.g.f.

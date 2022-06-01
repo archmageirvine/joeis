@@ -1,6 +1,6 @@
 package irvine.oeis.a104;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A104652 Numbers k such that 29*k^2 + 29*k +1 = n^2, n sequence = A104651.

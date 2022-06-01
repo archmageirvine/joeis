@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099276 Unsigned member r=-18 of the family of Chebyshev sequences S_r(n) defined in A092184.

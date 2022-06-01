@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A011943 Numbers n such that any group of n consecutive integers has integral standard deviation {viz. A011944(n)}.

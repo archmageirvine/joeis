@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 // Recurrence: a[n+5]-5*a[n+4]-20*(n+4)*a[n+3]-30*(n+3)*(n+4)*a[n+2]-20*(n+2)*(n+3)*(n+4)*a[n+1]-5*(n+1)*(n+2)*(n+3)*(n+4)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A202825 Expansion of e.g.f.: exp( (1+x)^5 - 1 ).

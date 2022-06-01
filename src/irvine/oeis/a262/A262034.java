@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 // egf: (exp(x^2)*(x+1)-(x^4/2+x^2+x+1))/x^3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A262034 Number of permutations of [n] beginning with at least ceiling(n/2) ascents.

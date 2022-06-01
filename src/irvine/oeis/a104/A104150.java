@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // egf: -log(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104150 Shifted factorial numbers: a(0)=0, a(n) = (n-1)!.

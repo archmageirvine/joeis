@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: n*a[n+0]+6*(-6*n+5)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034789 Related to sextic factorial numbers A008542.

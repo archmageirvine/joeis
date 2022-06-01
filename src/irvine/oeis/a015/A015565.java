@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A015565 a(n) = 7*a(n-1) + 8*a(n-2), a(0) = 0, a(1) = 1.

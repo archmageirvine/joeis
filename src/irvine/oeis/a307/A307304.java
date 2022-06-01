@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: -x^2*(x^2+1)*(x^2+x+1)/((x+1)^2*(x-1)^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A307304 Number of inequivalent ways of placing 2 nonattacking rooks on n X n board up to rotations and reflections of the board.

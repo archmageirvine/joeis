@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 // Recurrence: a[n+0]=(2*n+5)*a[n-1]-(n-1)*(n+4)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A062192 Row sums of unsigned triangle A062138 (generalized a=5 Laguerre).

@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A008626 Poincar\u00e9 series [or Poincare series] (or Molien series) for H*(M_11, GF(3)) and H*(M_23, GF(3)).

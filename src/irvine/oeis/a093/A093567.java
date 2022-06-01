@@ -1,6 +1,6 @@
 package irvine.oeis.a093;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A093567 Binomial (Binomial (n,2), 3) - Binomial (Binomial (n,3), 2).

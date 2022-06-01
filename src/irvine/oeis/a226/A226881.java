@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 // ogf: (3*x-1)/(2*(x-1)*(2*x-1))+1/(2*sqrt((1+2*x)*(1-2*x)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A226881 Number of n-length binary words w with #(w,0) &gt;= #(w,1) &gt;= 1, where #(w,x) gives the number of digits x in w.

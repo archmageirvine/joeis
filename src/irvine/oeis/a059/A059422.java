@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // egf: exp(1/2*x-1/4*x^2)*(1+x)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059422 Difference between number of even equivalence classes and odd classes of terms in a symmetric determinant of order n.

@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // Recurrence: a[n+0]=+a[n-1]+a[n-16]-a[n-17]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A130910 Sum {0&lt;=k&lt;=n, k mod 16} (Partial sums of A130909).

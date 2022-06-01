@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 // ogf: 3/2*((1+3*x)/(6*x*sqrt(1-2*x-7*x^2))-1/(6*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A119975 E.g.f. exp(x)*(Bessel_I(0,2*sqrt(2)x) + Bessel_I(1,2*sqrt(2)x)/sqrt(2)).

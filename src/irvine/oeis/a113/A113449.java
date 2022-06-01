@@ -1,6 +1,6 @@
 package irvine.oeis.a113;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A113449 Sum of the square root of n-th square triangular number and n-th Pell (or lambda) number (A000129).

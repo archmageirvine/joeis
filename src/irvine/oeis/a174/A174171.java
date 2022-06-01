@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 // ogf: (1-x-2*x^2-sqrt(1-2*x-7*x^2+4*x^3+4*x^4))/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A174171 A generalized Chebyshev transform of the Motzkin numbers A001006.

@@ -1,6 +1,6 @@
 package irvine.oeis.a298;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A298015 Coordination sequence of snub-632 tiling with respect to a trivalent node of type short-short-short.

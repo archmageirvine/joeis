@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // ogf: 1/sqrt(1-4*x^2)+1/(1-2*x)-1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081672 Expansion of exp(2x) - exp(0) + BesselI_0(2x).

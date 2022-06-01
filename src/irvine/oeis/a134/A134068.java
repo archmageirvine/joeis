@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 // Recurrence: a[n+0]=2*a[n-2]+4*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A134068 a(n) = 2*a(n-2) + 4*a(n-3), with initial terms 0, 3, 3.

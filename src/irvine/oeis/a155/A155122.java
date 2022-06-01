@@ -1,6 +1,6 @@
 package irvine.oeis.a155;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A155122 a(n) = 4*(3*n+2)*(2*n+1)*(n+2)*(n+1).

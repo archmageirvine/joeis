@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // Recurrence: a[n+0]=a[n-1]+a[n-11]-a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A194520 First coordinate of (3,8)-Lagrange pair for n.

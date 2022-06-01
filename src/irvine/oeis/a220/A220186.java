@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220186 Numbers n &gt;= 0 such that n^2 + n*(n+1)/2 is a square.

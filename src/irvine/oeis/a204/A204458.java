@@ -1,7 +1,7 @@
 package irvine.oeis.a204;
 // manually
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A204458 Odd numbers not divisible by 17.

@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 // ogf: (1/2*(1-(1-4*x*(1+x)^2)^(1/2)))/x/(1+x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A073155 Leftmost column sequence of triangle A073153.

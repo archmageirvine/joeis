@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 // ogf: sqrt(x^2-6*x+1)/(4*(x-1)^2)+1/(4*sqrt(x^2-6*x+1))-1/(2*(x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A226996 Number of lattice paths from (0,0) to (n,n) consisting of steps U=(1,1), H=(1,0) and S=(0,1) such that the first step leaving and the last step joining the diagonal (if any) is an H step.

@@ -1,6 +1,6 @@
 package irvine.oeis.a110;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A110422 a(n) = sum( (-1)^(r+1)*(n-r)*r, r = 1..floor(n/2) ).

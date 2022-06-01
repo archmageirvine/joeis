@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // Recurrence: (n+2)*a[n+2]-(16*n^2+47*n+34)*a[n+1]-4*(2*n+3)^2*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187538 Alternating partial sums of the central Lah numbers (A187535).

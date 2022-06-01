@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257890 Expansion of the g.f. (x^2-x+1)*(x^2-3*x+3)/(x-1)^6.

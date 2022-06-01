@@ -1,6 +1,6 @@
 package irvine.oeis.a265;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A265227 Nonnegative m for which k*floor(m^2/9) = floor(k*m^2/9), with 2 &lt; k &lt; 9.

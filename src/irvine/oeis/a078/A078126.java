@@ -1,6 +1,6 @@
 package irvine.oeis.a078;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A078126 Negative determinant of n X n matrix M_{i,j}=1 if i=j or i+j=1 (mod 2).

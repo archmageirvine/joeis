@@ -3,7 +3,7 @@ package irvine.oeis.a327;
 // Recurrence: (n-1)*(n-2)*a[n+0]-n*(n-3)*(n-2)*a[n-1]-n*(n-1)^2*a[n-2]+(2*n-7)*n*(n-1)*(n-2)*a[n-3]-n*(n-1)*(n-2)*(n-3)*(n-4)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A327370 Number of labeled simple graphs with n vertices and exactly n - 1 endpoints (vertices of degree 1).

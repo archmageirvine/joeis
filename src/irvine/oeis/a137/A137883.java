@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137883 Number of (directed) Hamiltonian paths in the n-M\u00f6bius ladder graph.

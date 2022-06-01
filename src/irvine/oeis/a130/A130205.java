@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130205 a(n) = n^2 - a(n-1) - a(n-2), with a(1) = 1 and a(2) = 2.

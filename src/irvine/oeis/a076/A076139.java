@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076139 Triangular numbers that are one-third of another triangular number: T(m) such that 3*T(m) = T(k) for some k.

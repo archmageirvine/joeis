@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 // Recurrence: a[n+2]=(4*n+6)*a[n+1]-(n+1)^2*a[n+0]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A285199 Product of n! and the n-th Legendre polynomial evaluated at 2.

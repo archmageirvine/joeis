@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 // Recurrence: n^4*(2*n-1)^2*(220*n^3-858*n^2+1119*n-488)*a[n+0]=5*(110000*n^9-759000*n^8+2252400*n^7-3766690*n^6+3908325*n^5-2609510*n^4+1122418*n^3-300699*n^2+45738*n-3024)*a[n-1]-5*(2*n-3)^2*(5*n-8)*(5*n-7)*(5*n-6)*(5*n-4)*(220*n^3-198*n^2+63*n-7)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A050984 de Bruijn's S(5,n).

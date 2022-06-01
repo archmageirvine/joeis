@@ -1,6 +1,6 @@
 package irvine.oeis.a176;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A176889 a(2*k-1)=1, a(2*k)=2*k^2 (definition by T. M. Apostol, see References).

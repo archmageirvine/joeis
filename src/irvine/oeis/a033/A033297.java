@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 // ogf: (1-2*x-sqrt(1-4*x))/(2*(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A033297 Number of ordered rooted trees with n edges such that the rightmost leaf of each subtree is at even level. Equivalently, number of Dyck paths of semilength n with no return descents of odd length.

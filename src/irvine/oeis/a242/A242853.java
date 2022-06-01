@@ -1,6 +1,6 @@
 package irvine.oeis.a242;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A242853 256*n^8 - 448*n^6 + 240*n^4 - 40*n^2 + 1.

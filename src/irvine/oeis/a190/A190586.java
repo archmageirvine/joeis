@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // Recurrence: (n+1)*(7*n^2-194*n+926)*a[n+0]=n*(42*n^2-1143*n+5320)*a[n-1]-(84*n^3-2349*n^2+13043*n-13734)*a[n-2]+(77*n^3-2267*n^2+15130*n-27824)*a[n-3]-(63*n^3-1893*n^2+13180*n-24672)*a[n-4]-(7*n^3-313*n^2+3298*n-8548)*a[n-5]+(77*n^3-2309*n^2+16800*n-34964)*a[n-6]+2*(14*n^3-563*n^2+6962*n-24347)*a[n-7]+(49*n^3-1456*n^2+10086*n-21316)*a[n-8]-(7*n^3-208*n^2+1687*n-2950)*a[n-9]-6*(7*n^3-236*n^2+2187*n-5968)*a[n-10]-2*(7*n^3-250*n^2+2526*n-7744)*a[n-11]+2*(n-10)*(7*n^2-180*n+739)*a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190586 Number of two-sided n-step prudent walks ending on the top side of their box, avoiding two or more consecutive west steps and south steps.

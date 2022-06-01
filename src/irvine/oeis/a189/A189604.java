@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 // ogf: (x+3*x^2)/(1-3*x-2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A189604 Number of n X 3 array permutations with each element not moving, or moving one space E, S or NW.

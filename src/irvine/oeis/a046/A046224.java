@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 // ogf: 3/2*x^2+(2*x-3*x^2)/(2*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A046224 Distinct numbers seen when writing first numerator and then denominator of central elements of 1/2-Pascal triangle.

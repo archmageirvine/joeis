@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 // egf: 1/(1-36*x)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A254620 a(n) = 9^n*(2*n + 1)!/n!.

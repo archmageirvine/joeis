@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 // Recurrence: n*a[n+0]+(-13*n+15)*a[n-1]+4*(16*n-37)*a[n-2]+2*(-71*n+245)*a[n-3]+60*(2*n-9)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A320825 Expansion of -(10*x^2 - 6*x + 1)*sqrt(1 - 4*x)/(3*x - 1)^2.

@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 // egf: exp((x*(3+x))/(3*x+x^2+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A189244 The n-th derivative of e^((2-x-x^2)/(1-x-x^2)), evaluated at x=1.

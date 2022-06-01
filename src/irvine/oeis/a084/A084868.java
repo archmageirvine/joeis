@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // ogf: (1-4*x+2*x*sqrt(1-4*x))/(1-4*x-4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084868 Main diagonal of symmetric square table A084867, in which the antidiagonal sums (A006012) form the first row shifted left.

@@ -1,6 +1,6 @@
 package irvine.oeis.a004;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A004292 Expansion of (1+x)^2/(1-18*x+x^2).

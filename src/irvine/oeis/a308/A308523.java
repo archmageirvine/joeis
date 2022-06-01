@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // Recurrence: 81*(n-1)*(3*n-2)*(3*n-1)*(24*n-37)*a[n+0]=24*(13824*n^4-59328*n^3+92832*n^2-62278*n+14653)*a[n-1]-2048*(2*n-3)*(4*n-7)*(4*n-5)*(24*n-13)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308523 Number of essentially simple rooted toroidal triangulations with n vertices.

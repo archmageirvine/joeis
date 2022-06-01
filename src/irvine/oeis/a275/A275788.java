@@ -1,6 +1,6 @@
 package irvine.oeis.a275;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A275788 a(0) = 0, a(n+1) = 2*a(n) + (-1)^floor(n/3).

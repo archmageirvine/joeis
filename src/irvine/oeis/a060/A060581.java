@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // ogf: (6*x^30-30*x^29-90*x^28+898*x^27-5703*x^26+67854*x^25-552925*x^24+2795730*x^23-9663357*x^22+24476292*x^21-47540991*x^20+73129860*x^19-91373250*x^18+94675608*x^17-82549758*x^16+60794764*x^15-37293240*x^14+18277860*x^13-6426742*x^12+945252*x^11+680499*x^10-726250*x^9+423825*x^8-187536*x^7+66981*x^6-19092*x^5+4065*x^4-560*x^3+24*x^2+6*x-1)/(x-1)^21
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A060581 Number of homeomorphically irreducible general graphs on 6 labeled node and with n edges.

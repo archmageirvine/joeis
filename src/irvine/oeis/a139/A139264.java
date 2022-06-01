@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // Recurrence: a[n+0]=70*n-63
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A139264 a(n) = 70*n - 63.

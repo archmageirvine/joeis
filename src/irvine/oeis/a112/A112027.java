@@ -1,6 +1,6 @@
 package irvine.oeis.a112;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A112027 a(1)=1; then successively add 1, divide by 2, add 2 and then total up the last 4 terms.

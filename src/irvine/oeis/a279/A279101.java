@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279101 a(n) = Sum_{k=0..n} ceiling((1 + sqrt(2))^k).

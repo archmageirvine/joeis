@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 // ogf: -((-1-2x-x^2+x^4+2x^5+x^6+x^7)/((-1+x)(1+x)(-1+x^2+x^4)))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A259623 Strictly increasing list of F and F + 1, where F = A000045, the Fibonacci numbers.

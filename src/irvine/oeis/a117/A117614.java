@@ -1,6 +1,6 @@
 package irvine.oeis.a117;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A117614 a(0)=1, a(n)=4a(n-1)+2 for n odd, a(n)=4a(n-1) for n even.

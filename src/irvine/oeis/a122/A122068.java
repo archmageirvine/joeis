@@ -1,6 +1,6 @@
 package irvine.oeis.a122;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A122068 Expansion of x*(1-3*x)*(1-x)/(1-7*x+14*x^2-7*x^3).

@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 // ogf: 1/22*x^11*(1/(1-x)^11+11/((-1+x)^6*(1+x)^5)-10/(-1+x^11))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A032282 Number of bracelets (turnover necklaces) of n beads of 2 colors, 11 of them black.

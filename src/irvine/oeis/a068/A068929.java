@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 // ogf: x*(1-x^18+x^17+x^16+x^15+x^13-x^12-2*x^11-2*x^8-4*x^7-3*x^6-x^5-x^4+2*x^2+3*x)/((x^5+x^3-1)*(x^10+x^6-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A068929 Number of incongruent ways to tile a 4 X n room with 1x2 Tatami mats. At most 3 Tatami mats may meet at a point.

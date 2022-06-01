@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 // ogf: (1-4*x+6*x^2-5*x^3+3*x^4)/((1-2*x)*(1-4*x+6*x^2-4*x^3+2*x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A131075 First subdiagonal of triangular array T: T(j,1) = 1 for ((j-1) mod 8) &lt; 4, else 0; T(j,k) = T(j-1,k-1) + T(j,k-1) for 2 &lt;= k &lt;= j.

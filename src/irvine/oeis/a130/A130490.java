@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // ogf: x*(1-12*x^11+11*x^12)/((1-x^12)*(1-x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A130490 a(n) = Sum_{k=0..n} (k mod 12) (Partial sums of A010881).

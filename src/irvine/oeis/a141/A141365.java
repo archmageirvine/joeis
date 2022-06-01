@@ -1,6 +1,6 @@
 package irvine.oeis.a141;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A141365 Expansion of (1-5x^2-7x^3-2x^4+x^6)/((1-x)(1-x^3)^2).

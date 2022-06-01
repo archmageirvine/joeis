@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 // ogf: (3-sqrt(1-8*x))/(2*(x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A064062 Generalized Catalan numbers C(2; n).

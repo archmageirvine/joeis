@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 // Recurrence: a[n+0]+3*(-n+1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A032179 Number of necklaces with n labeled beads of 3 colors.

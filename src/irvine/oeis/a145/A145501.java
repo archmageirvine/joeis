@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 // DO NOT EDIT here!
 
 import irvine.oeis.DirichletConvolutionSequence;
-import irvine.oeis.PaddingSequence;
+import irvine.oeis.recur.PaddingSequence;
 import irvine.oeis.a007.A007425;
 
 /**

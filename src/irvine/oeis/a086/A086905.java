@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 // ogf: (sqrt((1+2*x)/(1-2*x))-1)/2/x/(1+x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A086905 a(n) = Sum_{k=0..n} (-1)^(n-k)*binomial(k,floor(k/2)).

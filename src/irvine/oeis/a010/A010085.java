@@ -4,7 +4,7 @@ package irvine.oeis.a010;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A010085 Weight distribution of [15,11,3] Hamming code of length 15 and minimal distance 3.

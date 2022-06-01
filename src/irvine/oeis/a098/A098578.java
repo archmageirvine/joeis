@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098578 a(n) = Sum_{k=0..floor(n/4)} C(n-3*k,k+1).

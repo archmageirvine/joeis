@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A005710 a(n) = a(n-1) + a(n-8), with a(i) = 1 for i = 0..7.

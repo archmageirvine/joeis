@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289797 p-INVERT of the triangular numbers (A000217), where p(S) = 1 - S - S^2.

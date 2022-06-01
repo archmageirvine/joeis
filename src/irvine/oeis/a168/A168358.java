@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 // Recurrence: (n+1)^2*(n+2)^3*(4*n^2-5*n-3)*a[n+0]=4*(n+1)^2*(48*n^5-12*n^4-136*n^3+15*n^2+49*n-30)*a[n-1]-32*(96*n^7-312*n^6+104*n^5+580*n^4-630*n^3+80*n^2+91*n-12)*a[n-2]+1024*(n-2)^3*(2*n-3)^2*(4*n^2+3*n-4)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A168358 Self-convolution square of A001246, which is the squares of Catalan numbers.

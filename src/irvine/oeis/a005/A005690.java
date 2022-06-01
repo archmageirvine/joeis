@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A005690 Number of Twopins positions.

@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A088941 a(n)=12*sum(1&lt;=i&lt;=j&lt;=k&lt;=n,i*j/k).

@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: a[n+0]=56*a[n-1]-305*a[n-2]+250*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328352 Similar to A328350, but for 5 digits rather then 3.

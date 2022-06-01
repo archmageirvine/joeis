@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099142 a(n) = 6^n * T(n, 4/3) where T is the Chebyshev polynomial of the first kind.

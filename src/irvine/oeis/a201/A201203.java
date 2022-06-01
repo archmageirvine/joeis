@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 // Recurrence: a[n+0]+(2*n+3)*a[n-1]+n*(n+1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A201203 Alternating row sums of triangle A201201: first associated monic Laguerre-Sonin(e) polynomials with parameter alpha=1 evaluated at x=-1.

@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 // Recurrence: 2*n*a[n+0]+4*(-3*n+4)*a[n-1]+(19*n-44)*a[n-2]+(-13*n+36)*a[n-3]+2*(2*n-7)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A035929 Number of Dyck n-paths starting U^mD^m (an m-pyramid), followed by a pyramid-free Dyck path.

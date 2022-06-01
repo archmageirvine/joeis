@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // egf: ((1-2*x+2*x*sqrt(1-2*x))*exp(1-sqrt(1-2*x)))/(1-2*x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144498 Column 2 of array in A144502.

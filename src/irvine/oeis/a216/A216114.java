@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216114 The Wiener index of a link of n fullerenes C_{20} (see the Ghorbani and Hosseinzadeh reference).

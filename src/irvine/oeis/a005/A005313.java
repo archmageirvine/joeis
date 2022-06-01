@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A005313 Maximal sum of inverse squares of the singular values of triangular anti-Hadamard matrices of order n.

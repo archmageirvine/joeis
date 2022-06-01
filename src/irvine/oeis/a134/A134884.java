@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134884 A three person Markov game designed to have a limiting ratio near 1/Alpha: Ma matrix=Mb = {{0, 1}, {-67, -67}}; game value =-67; Mc={{0, 1, 0}, {0, 0, 1}, {134, 0, 137}}: game value=134; Total matrix game value=-601526; Characteristic Polynomial: 601526 + 1203052 x + 1234475 x^2 + 1243453 x^3 + 624507 x^4 + 13735 x^5 + 3 x^6-x^7.

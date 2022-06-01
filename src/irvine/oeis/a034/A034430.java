@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: a[n+0]=(3*n-1)*a[n-1]-(2*n-1)*(n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034430 Convolution of A001147 (double factorial numbers) with itself.

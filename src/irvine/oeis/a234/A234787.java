@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 // Recurrence: a[n+0]=1000*n^6
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A234787 Cubes (with at least two digits) that become squares when their rightmost digit is removed.

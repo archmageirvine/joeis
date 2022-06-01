@@ -1,6 +1,6 @@
 package irvine.oeis.a159;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A159941 Number of trisubstituted linear alkanes of composition C_n H_(2n-1) XYZ.

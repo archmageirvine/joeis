@@ -1,6 +1,6 @@
 package irvine.oeis.a222;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A222591 Numerators of (n*(n - 3)/6) + 1, arising as the maximum possible number of triple lines for an n-element set.

@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // egf: exp(x)*cosh(x+x^2/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085387 E.g.f exp(x)*cosh(x+x^2/2).

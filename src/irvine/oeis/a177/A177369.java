@@ -1,6 +1,6 @@
 package irvine.oeis.a177;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A177369 Expansion of g.f.: (1+4*x-4*x^2)/(1-3*x-4*x^2+4*x^3).

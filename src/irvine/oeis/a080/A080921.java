@@ -1,6 +1,6 @@
 package irvine.oeis.a080;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A080921 a(n) = 2*a(n-1) + 48*a(n-2), a(0)=0, a(1)=1.

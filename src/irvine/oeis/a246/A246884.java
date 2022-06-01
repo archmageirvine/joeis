@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // ogf: 1/sqrt((1-x+x^5)^2-4*x^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A246884 G.f.: Sum_{n&gt;=0} x^n * Sum_{k=0..n} C(n,k)^2 * x^(4*k).

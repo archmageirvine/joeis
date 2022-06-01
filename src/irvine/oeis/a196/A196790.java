@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 // ogf: -x^10*(11+165*x+462*x^2+330*x^3+55*x^4+x^5))/(x-1)^11
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A196790 Binomial coefficients C(2*n-9,10).

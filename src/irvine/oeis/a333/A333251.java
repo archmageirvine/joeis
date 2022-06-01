@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: -(1-x-x^2+x^3-x^5)/((1-x)*(1-x^2)*(1-x^7))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333251 Tropical version of Somos-5 sequence A006721.

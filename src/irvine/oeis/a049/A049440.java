@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049440 Fib(3n)^2 - 2*Fib(3n) + 4*Fib(3n+1) + 5.

@@ -1,6 +1,6 @@
 package irvine.oeis.a112;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A112494 Sixth diagonal of the Stirling2 triangle A048993 and sixth column of triangle A008278.

@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 // ogf: (1+3*x-sqrt(1+2*x+9*x^2))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A152681 [x^(n+1)]Reversion[x*(1-x)/(1-3*x)].

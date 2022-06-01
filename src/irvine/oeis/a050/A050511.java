@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 // ogf: (sqrt((5*x+1)/(x+1))-1)/(2*x*(x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A050511 a(n) = (-1)^n * Sum_{i=0..n} binomial(n+1,i+1)*Catalan(i).

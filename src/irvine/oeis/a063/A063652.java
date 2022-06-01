@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A063652 Number of ways to tile an 8 X n rectangle with 1 X 1 and 2 X 2 tiles.

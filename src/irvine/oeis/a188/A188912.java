@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 // Recurrence: 8*n^2*(n+1)*(2*n+1)^2*(9*n^3-54*n^2+84*n-35)*a[n+0]=24*n*(324*n^7-2187*n^6+4689*n^5-4185*n^4+1464*n^3+122*n^2-223*n+44)*a[n-1]-18*(n-1)*(3645*n^7-30618*n^6+96066*n^5-144585*n^4+103662*n^3-21834*n^2-10860*n+4480)*a[n-2]+2187*(n-2)^2*(n-1)*(3*n-7)*(3*n-5)*(9*n^3-27*n^2+3*n+4)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A188912 Binomial convolution of the binomial coefficients bin(3n,n)/(2n+1) (A001764).

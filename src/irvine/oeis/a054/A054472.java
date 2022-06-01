@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 // ogf: -x*(x+1)*(x^18+17802*x^17+57738159*x^16+17050750284*x^15+1199757591558*x^14+30128721042672*x^13+329847884196810*x^12+1749288479932404*x^11+4727182539811968*x^10+6598854419308684*x^9+4727182539811968*x^8+1749288479932404*x^7+329847884196810*x^6+30128721042672*x^5+1199757591558*x^4+17050750284*x^3+57738159*x^2+17802*x+1)/(x-1)^21
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A054472 Number of ways to color faces of an icosahedron using at most n colors.

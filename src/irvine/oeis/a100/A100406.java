@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100406 a(n) = repeating period of the digital roots of the sequence {m^n, m=1,2,3...}.

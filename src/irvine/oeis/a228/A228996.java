@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // egf: (exp(x)*(30*x^4+60*x^3+60*x^2-60*x+62)-x-62)/(x-1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228996 Total sum of the 6th powers of lengths of ascending runs in all permutations of [n].

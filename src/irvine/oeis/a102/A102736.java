@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // egf: (1-x^3)^(1/3)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102736 Number of permutations of n elements without cycles whose length is a multiple of 3.

@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259860 a(n+8)+34*a(n+4)+a(n)=0 with a(0)-a(7) as shown.

@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // Recurrence: n*(n+5)*a[n+0]-2*(n+4)*(2*n+1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A246507 a(n) = 70*(n+1)*binomial(2*n+1,n+1)/(n+5).

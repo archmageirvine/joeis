@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 // ogf: (1-100*x^2)/(1-x)/(1-100*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A152756 Bisection of A000533.

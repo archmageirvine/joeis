@@ -1,6 +1,6 @@
 package irvine.oeis.a129;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A129762 Sum of all elements of n X n X n cubic array M[i,j,k] = Fibonacci[i+j+k-2].

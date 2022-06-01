@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // Recurrence: n*a[n+0]+6*(1-2*n)*a[n-1]+16*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084772 Coefficients of 1/sqrt(1 - 12*x + 16*x^2); also, a(n) is the central coefficient of (1 + 6*x + 5*x^2)^n.

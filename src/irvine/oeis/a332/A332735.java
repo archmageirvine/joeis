@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // ogf: x^9*(1+4*x+3*x^2+6*x^3+3*x^4+4*x^5+4*x^7-3*x^8+3*x^9-x^10+x^11)/((1-x)^4*(1+x)^2*(1+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A332735 Numbers of graphs which are double triangle descendants of K_5 with four more vertices than triangles.

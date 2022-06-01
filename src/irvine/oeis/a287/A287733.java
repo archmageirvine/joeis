@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 // ogf: 6*(x^2+4*x+1)*(x^2-x+1)/((x-1)^2*(x^2+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A287733 First differences of A069497.

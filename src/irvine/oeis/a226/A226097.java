@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226097 a(n) = ((-1)^n + 2*n - 38)*(2*n - 38) + 41.

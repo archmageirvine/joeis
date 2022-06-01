@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // ogf: (252*x^5+1050*x^4+1200*x^3+450*x^2+50*x+1)/(x-1)^16
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A104673 C(n+5,5)*C(n+10,n+0).

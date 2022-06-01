@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 // Recurrence: a[n+0]=2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A163403 a(n) = 2*a(n-2) for n &gt; 2; a(1) = 1, a(2) = 2.

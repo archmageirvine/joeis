@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: ((1-2*x)*(1-2*x-sqrt(1-4*x)))/(2*x*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126223 Number of level steps in all 2-Motzkin paths (i.e., Motzkin paths with blue and red level steps) of length n, without red level steps on the x-axis.

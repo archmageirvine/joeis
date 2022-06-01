@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 // ogf: 1/((1-x-x^2)^10*(1+4*x-x^2)^5*(1-11*x-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A203805 G.f.: exp( Sum_{n&gt;=1} A000204(n)^5 * x^n/n ) where A000204 is the Lucas numbers.

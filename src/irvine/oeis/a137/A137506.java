@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 // ogf: (22*x^9+26*x^7-83*x^5-17*x^4-24*x^3+124*x^2+59*x+141)/(x^6-x^4-x^2+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A137506 a(2*n+1) = 141 + 124*n, a(2*n+2) = |a(2*n) - 24| with a(2)=59, thus a(4,6,8,...) = 35,11,13,11,13...

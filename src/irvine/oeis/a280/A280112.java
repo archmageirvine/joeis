@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280112 Indices of centered 10-gonal numbers (A062786) that are also triangular numbers (A000217).

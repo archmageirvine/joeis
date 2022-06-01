@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 // ogf: (1/2*x*(((1+2*x)/(1-2*x))^(1/2)-1))/(1-x)-1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A072100 Column 2 of the array m(i,1)=m(1,j)=1 m(i,j)=m(i-1,j-1)+m(i-1,j+1) (a(n)=m(n,2)).

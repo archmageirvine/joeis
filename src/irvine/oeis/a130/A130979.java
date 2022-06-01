@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // Recurrence: n*a[n+0]+2*(-46*n+21)*a[n-1]+896*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A130979 G.f.: 7/(3 + 4*sqrt(1-28*x)).

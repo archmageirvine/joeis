@@ -1,6 +1,6 @@
 package irvine.oeis.a296;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A296805 Sum of the larger parts in the partitions of n into two distinct parts with the larger part even.

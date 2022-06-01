@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 // manually 2021-05-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055589 Convolution of A049612 with A011782.

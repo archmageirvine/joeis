@@ -1,6 +1,6 @@
 package irvine.oeis.a155;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A155923 Positive numbers y such that y^2 is of the form x^2+(x+17)^2 with integer x.

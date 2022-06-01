@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 60*a[n+0]=(24*n^2+20*n^4+15*n^6+n^10)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331350 Number of oriented colorings of the edges (or triangular faces) of a regular 4-dimensional simplex with n available colors.

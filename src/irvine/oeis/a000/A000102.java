@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A000102 a(n) = number of compositions of n in which the maximum part size is 4.

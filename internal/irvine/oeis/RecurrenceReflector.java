@@ -12,6 +12,11 @@ import java.nio.charset.StandardCharsets;
 
 import irvine.math.z.Z;
 import irvine.oeis.cons.ContinuedFractionOfSqrtSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
+import irvine.oeis.recur.PaddingSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /** Reads a list of A-numbers and appends the parameters of the sequences.
  *  The output file is tab-separated: aseqno, callcode, offset, matrix, init, dist, gftype

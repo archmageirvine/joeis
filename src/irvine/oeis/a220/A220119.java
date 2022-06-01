@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 // Recurrence: n^5*a[n+0]=3*(2*n-1)*(3*n^2-3*n+1)*(15*n^2-15*n+4)*a[n-1]+3*(n-1)^3*(3*n-4)*(3*n-2)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A220119 a(n) = Sum_{0&lt;=j&lt;=n, 0&lt;=k&lt;=n} binomial(n,j)^2 * binomial(n,k)^2 * binomial(n+j,n) * binomial(n+k,n) * binomial(j+k,n).

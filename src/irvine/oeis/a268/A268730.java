@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 // Recurrence: a[n+0]=2*(8*n+5)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A268730 a(n) = Product_{k = 0..n} 2*(8*k + 5).

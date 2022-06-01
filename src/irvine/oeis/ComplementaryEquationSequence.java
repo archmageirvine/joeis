@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A complementary equation system has a recurrence equation for sequence <code>a</code> coupled with

@@ -1,6 +1,6 @@
 package irvine.oeis.a092;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A092806 Expansion of (1 + 8x - 9x^2)/(1 - 3x + 3x^2 - 1001x^3).

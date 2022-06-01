@@ -1,6 +1,6 @@
 package irvine.oeis.a344;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A344136 Number of linear intervals in the Tamari lattices.

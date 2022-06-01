@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 // ogf: 1/((1+2*x)*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A167481 Convolution of the central binomial coefficients A000984(n) and (-2)^n.

@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // ogf: (1-sqrt(1-8*x)+4*x*(2*x-2+sqrt(1-8*x)))/(32*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101596 G.f.: c(2*x)^4, where c(x) is the g.f. of A000108.

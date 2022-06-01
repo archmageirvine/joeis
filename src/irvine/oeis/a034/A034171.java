@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: (n+1)*a[n+0]+3*(-3*n-1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034171 Related to triple factorial numbers A007559(n+1).

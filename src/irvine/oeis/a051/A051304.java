@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // ogf: x^4*(5+365*x-7935*x^2+46885*x^3-191420*x^4+2285460*x^5-14380560*x^6+27216000*x^7)/((x-1)*(9*x-1)*(6*x-1)*(7*x-1)*(3*x-1)*(5*x-1)*(2*x-1)*(12*x-1)*(10*x-1)*(4*x-1)*(8*x-1)*(16*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A051304 Number of 4-element proper antichains of an n-element set.

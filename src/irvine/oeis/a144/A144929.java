@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144929 Numbers n such that there exists an integer k with (n+1)^3 - n^3 = 7*k^2.

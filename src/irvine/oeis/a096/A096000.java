@@ -1,6 +1,6 @@
 package irvine.oeis.a096;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A096000 Cupolar numbers: a(n) = (n+1)*(5*n^2+7*n+3)/3.

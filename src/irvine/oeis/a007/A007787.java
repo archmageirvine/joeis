@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A007787 Number of nonintersecting rook paths joining opposite corners of 5 X n board.

@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 // ogf: 1/((1-x)*(1-x^2)*(1-x^3)*(1-x^5)*(1-x^10)*(1-x^20)*(1-x^25)*(1-x^50)*(1-x^100))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A067996 Number of ways of making change for n cents using coins of 1, 2, 3, 5, 10, 20, 25, 50, 100 cents (all historical U.S.A. coinage from 1 to 100 cents).

@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A007904 Crystal ball sequence for diamond.

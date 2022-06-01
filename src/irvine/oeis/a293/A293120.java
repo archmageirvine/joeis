@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 // egf: exp(x^2/(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A293120 E.g.f.: exp(x^2/(1+x)).

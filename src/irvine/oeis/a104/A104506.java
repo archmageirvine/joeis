@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // Recurrence: -(n-1)*(n+1)*a[n+0]+n*(2*n-1)*a[n-1]-5*n*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104506 Column 1 of triangle A104505, which is equal to the right-hand side of the triangle A084610 of coefficients in (1 + x - x^2)^n.

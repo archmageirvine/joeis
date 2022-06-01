@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180664 Golden Triangle sums: a(n) = a(n-1) + A001654(n+1) with a(0)=0.

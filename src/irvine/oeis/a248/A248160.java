@@ -1,6 +1,6 @@
 package irvine.oeis.a248;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A248160 Expansion of (1 - 2*x^2)/(1 + x)^5. Fourth column of Riordan triangle A248156.

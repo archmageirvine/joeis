@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052901 Periodic with period 3: a(3n)=3, a(3n+1)=a(3n+2)=2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a181;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A181099 Exchange rightmost two ternary digits of n &gt; 1; a(0)=0, a(1)=3.

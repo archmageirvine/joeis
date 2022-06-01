@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A160747 Expansion of (1+10*x+20*x^2+10*x^3+x^4)/(1-x)^5.

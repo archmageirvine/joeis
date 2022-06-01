@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // ogf: (1-2*x-sqrt(1-4*x))/(2*x^2*(1+x)*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331473 Alternating sum of (n+1)*A000108(n+1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A038138 Order of n (mod 7).

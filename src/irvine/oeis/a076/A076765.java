@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076765 Partial sums of Chebyshev sequence S(n,8) = U(n,4) = A001090(n+1).

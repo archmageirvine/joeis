@@ -1,6 +1,6 @@
 package irvine.oeis.a163;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A163310 a(n) = 20*a(n-1) - 95*a(n-2) for n &gt; 1; a(0) = 1, a(1) = 11.

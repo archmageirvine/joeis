@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // ogf: (1-x-sqrt(1-2*x-3*x^2))/(2*(1-x)^2*(1+x)*sqrt(1-2*x-3*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104574 Sum of trapezoid weights of all Motzkin paths of length n.

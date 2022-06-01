@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060762 Number of conjugacy classes (the same as the number of irreducible representations) in the dihedral group with 2n elements.

@@ -3,7 +3,7 @@ package irvine.oeis.a327;
 // Recurrence: 24*a[n+0]=n*(n*(n*(n+6)+23)+66)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A327032 a(n) = T(n, 4) with T(n, k) = Sum_{d|k} phi(d)*binomial(n - 1 + k/d, k/d).

@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 // Recurrence: 25000*(2*n+7)*(4*n-1)*(4*n+9)*(n+1)*a[n+0]+(n+5)*(n+4)*(n+3)*(n+2)*a[n+5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A299958 Expansion of root of z^5 + 25*x*z - 1.

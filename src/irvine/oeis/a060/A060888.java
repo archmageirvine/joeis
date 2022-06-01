@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060888 a(n) = n^6 - n^5 + n^4 - n^3 + n^2 - n + 1.

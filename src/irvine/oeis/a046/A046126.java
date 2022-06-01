@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 // egf: (1+3*x+2*x^3)/(1+x^2)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A046126 Denominators q[ n ] of convergents to Stern's non-simple continued fraction for Pi/2.

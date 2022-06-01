@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114220 a(n) = Sum_{k=0..floor(n/2)} k-(k-1)*0^(n-2k).

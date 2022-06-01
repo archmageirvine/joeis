@@ -1,6 +1,6 @@
 package irvine.oeis.a248;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A248974 Floor( 1/(n*sinh(1/n) + n*sin(1/n) - 2) ).

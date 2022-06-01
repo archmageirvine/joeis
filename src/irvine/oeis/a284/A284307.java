@@ -1,6 +1,6 @@
 package irvine.oeis.a284;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A284307 Permutation of the natural numbers partitioned into quadruples [4k-3, 4k, 4k-2, 4k-1], k &gt; 0.

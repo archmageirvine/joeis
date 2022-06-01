@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // egf: (exp(x)*(20*x^3+30*x-30)+x+30)/(x-1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228995 Total sum of the 5th powers of lengths of ascending runs in all permutations of [n].

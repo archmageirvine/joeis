@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // egf: exp((-2*x+1-(1-4*x)^(1/2))/(2*x))/(1-4*x)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082545 a(n) = (2*n)! * Sum_{k=0..n} binomial(n,k)/(n+k)!.

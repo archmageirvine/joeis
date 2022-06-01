@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090843 Number of nodes on a tree with degree 11 interior nodes and degree 1 boundary nodes.

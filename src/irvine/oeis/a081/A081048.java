@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // egf: log(1+x)/(1+x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081048 Signed Stirling numbers of the first kind.

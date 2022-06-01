@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 // ogf: 1+(1-3*x-2*x^2-(1-x-2*x^2)*sqrt(1-4*x))/(1-3*x-(1-x+2*x^2)*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A213090 Number of permutations of length n whose associated Schubert variety is defined by inclusions.

@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // ogf: 1/((1-x)*sqrt(1-2*x-3*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097893 Partial sums of the central trinomial coefficients (A002426).

@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // ogf: (3-sqrt(1-8*x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115125 A sequence related to Catalan numbers A000108.

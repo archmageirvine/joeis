@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165355 a(n) = 3n + 1 if n is even, or a(n) = (3n + 1)/2 if n is odd.

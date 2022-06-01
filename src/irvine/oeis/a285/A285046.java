@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 // ogf: cosh(9*arctanh(2*sqrt(x)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A285046 Expansion of cosh(9*arctanh(2*sqrt(x))).

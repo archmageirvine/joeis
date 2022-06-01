@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200069 a(n) = 4*a(n-1) + 13*a(n-2) for n&gt;2, a(1)=1, a(2)=4.

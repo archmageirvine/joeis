@@ -1,7 +1,7 @@
 package irvine.oeis.a147;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A147527 Numbers k such that there exists x in N : (x + 103)^3 - x^3 = k^2.

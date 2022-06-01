@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 // Recurrence: a[n+0]=n*a[n-1]+3*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A222472 Numerator sequence of the n-th convergent of the continued fraction 1/(1+3/(2+3/(3+3/(4+...

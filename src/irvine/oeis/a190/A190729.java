@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // egf: exp(x+1/6*x^3+1/24*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190729 E.g.f. exp(x+1/6*x^3+1/24*x^4).

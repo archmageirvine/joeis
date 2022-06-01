@@ -12,13 +12,14 @@
  * 2019-12-07, Sean Irvine: jOEIS conventions
  * 2019-12-04, Georg Fischer
  */
-package irvine.oeis;
+package irvine.oeis.recur;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * A holonomic sequence is defined by a recurrence equation

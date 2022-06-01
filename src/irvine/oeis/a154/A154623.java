@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 // ogf: 1/2*(3-sqrt((1-9*x)/(1-5*x)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A154623 Sequence with g.f. 1+(x/(1-5*x))*c(x/(1-5*x)), c(x) the g.f. of A000108.

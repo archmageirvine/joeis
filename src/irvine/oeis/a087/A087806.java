@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // Recurrence: (n+1)^2*a[n+0]-(13*n-4)*(n-1)*a[n-1]-(n-1)*(29*n-31)*a[n-2]-15*(n-1)*(n-2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087806 Inverse binomial transform of squares of Catalan numbers.

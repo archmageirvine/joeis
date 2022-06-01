@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A055539 Number of asymmetric types of (4,n)-hypergraphs without isolated nodes, under action of symmetric group S_4; asymmetric n-covers of an unlabeled 4-set.

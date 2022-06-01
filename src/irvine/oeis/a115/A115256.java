@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // ogf: 1/(sqrt(1-4*x)*sqrt(1-4*x^2)*(1-x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115256 Diagonal sums of correlation triangle of central binomial coefficients.

@@ -1,6 +1,6 @@
 package irvine.oeis.a252;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A252115 Numbers n such that the sum of the heptagonal numbers H(n), H(n+1) and H(n+2) is equal to the pentagonal number P(m) for some m.

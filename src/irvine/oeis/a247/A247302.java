@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 // Recurrence: a[n+0]=2*a[n-6]+2*a[n-9]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A247302 Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,1) to (n,k), where 0 &gt;= k &lt;= 2, consisting of segments given by the vectors (1,1), (2,1), (1,-1).

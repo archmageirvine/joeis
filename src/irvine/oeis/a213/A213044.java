@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213044 Convolution of Fibonacci numbers and positive integers repeated three times (A000045  and A008620).

@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098576 a(n) = Sum_{k=0..floor(n/4)} C(n-2*k,2*k) * 3^k.

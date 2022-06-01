@@ -1,6 +1,6 @@
 package irvine.oeis.a116;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A116966 a(n) = n + {1,2,0,1} according as n == {0,1,2,3} mod 4.

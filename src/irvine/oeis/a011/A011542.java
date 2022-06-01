@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A011542 Minimal number of coins needed to pay n cents using coins of sizes 1, 5, 10, 25, 50 cents.

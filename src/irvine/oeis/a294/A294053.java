@@ -1,6 +1,6 @@
 package irvine.oeis.a294;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A294053 Number of set partitions of [n] such that the maximal absolute difference between consecutive elements within a block equals four.

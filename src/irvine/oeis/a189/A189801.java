@@ -1,6 +1,6 @@
 package irvine.oeis.a189;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A189801 a(n) = 6*a(n-1) + 9*a(n-2), with a(0)=0, a(1)=1.

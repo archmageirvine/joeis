@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 // Recurrence: (n+3)*a[n+0]+2*(-2*n-3)*a[n-1]+2*(-n+1)*a[n-2]+4*(2*n-5)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A071718 Expansion of (1+x^2*C)*C^3, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.

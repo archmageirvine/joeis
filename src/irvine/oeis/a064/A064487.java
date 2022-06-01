@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A064487 Order of twisted Suzuki group Sz(2^(2*n + 1)), also known as the group 2B2(2^(2*n + 1)).

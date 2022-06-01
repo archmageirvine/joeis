@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 // ogf: x^4*(115+11005*x+245015*x^2+2317550*x^3+12037814*x^4+39232894*x^5+85494738*x^6+129182670*x^7+135873108*x^8+97856368*x^9+44499480*x^10+9709722*x^11-1359254*x^12-1352974*x^13-257282*x^14+13866*x^15+7705*x^16+419*x^17+x^18)/((1-x)^15*(1+x)^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A279451 Number of nonequivalent ways to place 7 points on an n X n square grid so that no more than 2 points are on a vertical or horizontal straight line.

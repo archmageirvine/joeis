@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A038578 Number of self-avoiding closed walks from 0 of area n in strip Z X {-1,0,1}.

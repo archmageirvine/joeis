@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // ogf: (x^2-3*x)/(x^2-6*x+1)^2+(3*x^3-4*x^2+3*x)/(x^2-6*x+1)^(5/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277662 2nd-order coefficients of the 1/N-expansion of traces of negative powers of real Wishart matrices with parameter c=2.

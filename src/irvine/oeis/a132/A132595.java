@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // ogf: (x*(x-1))/(3*x-2)*(1+(1-x)/sqrt(1-12*x+16*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132595 Number of ways to move a chess queen from the lower left corner to square (n,n), with the queen moving only up, right, or diagonally up-right.

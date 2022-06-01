@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087213 Expansion of (1+x-4*x^2) / ((1+x)*(1-4*x^2)).

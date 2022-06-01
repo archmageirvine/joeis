@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 // ogf: x^5*(1+x-x^2+x^3)/((-1+x)^4*(1+x)^2*(1+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A032801 Number of unordered sets a, b, c, d of distinct integers from 1..n such that a+b+c+d = 0 (mod n).

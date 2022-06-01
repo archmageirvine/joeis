@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // Recurrence: n*a[n+0]+8*(1-2*n)*a[n-1]+16*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115864 Legendre_P(n,2)*4^n.

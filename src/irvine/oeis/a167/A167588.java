@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 // egf: (4*x*sqrt(1-4*x^2)+2*arcsin(2*x))/(8*(1-2*x)^(3/2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A167588 The second column of the ED4 array A167584.

@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 // ogf: (9216*x^24-129408*x^23+881824*x^22-3910528*x^21+12761816*x^20-31636760*x^19+62309010*x^18-101187417*x^17+139600728*x^16-166854657*x^15+174047204*x^14-158809357*x^13+127270681*x^12-89880736*x^11+55637484*x^10-29668152*x^9+13297571*x^8-4887342*x^7+1441132*x^6-333899*x^5+59267*x^4-7757*x^3+702*x^2-39*x+1)/((8*x-1)*(4*x-1)*(3*x-1)^2*(2*x-1)^6*(x-1)^10)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A288691 Number of n-digit biquanimous strings using digits {0,1,...,7}.

@@ -1,6 +1,6 @@
 package irvine.oeis.a102;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A102841 a(n) = ((9*n^2 + 33*n + 26)*2^n + (-1)^n)/27.

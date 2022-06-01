@@ -1,6 +1,6 @@
 package irvine.oeis.a292;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A292329 p-INVERT of the Fibonacci sequence (A000045), where p(S) = 1 - S^3.

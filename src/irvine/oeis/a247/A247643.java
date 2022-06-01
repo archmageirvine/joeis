@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247643 a(n) = ( 10*n*(n+1)+(2*n+1)*(-1)^n+7 )/8.

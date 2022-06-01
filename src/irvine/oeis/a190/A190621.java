@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // ogf: (x+2*x^2+3*x^3+3*x^5+2*x^6+x^7)/(1-2*x^4+x^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A190621 a(n) = n if n is not divisible by 4, otherwise 0.

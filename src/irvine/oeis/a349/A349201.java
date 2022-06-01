@@ -1,7 +1,7 @@
 package irvine.oeis.a349;
 // manually linrec/linrec2 at 2022-04-29 07:28
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A349201 a(n) = [x^n] ((x^2*(1 + 3*x + x^2 - 2*x^3 + 3*x^4 + x^5 - x^6))/((-1 + x)^4 *(1 + x)^3)).

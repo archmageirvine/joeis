@@ -1,7 +1,7 @@
 package irvine.oeis.a249;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A249181 a(n) = A057137(n)^2 where A057137 = 0,1,12,123,...,123...90,...

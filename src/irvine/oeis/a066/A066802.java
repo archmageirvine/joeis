@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 // Recurrence: n*(3*n-1)*(3*n-2)*a[n+0]=8*(6*n-5)*(6*n-1)*(2*n-1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A066802 a(n) = binomial(6*n,3*n).

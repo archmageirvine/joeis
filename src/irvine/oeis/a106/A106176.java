@@ -1,7 +1,7 @@
 package irvine.oeis.a106;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106176 Numbers n such that 67*n^2 + 67*n + 1 is a square.

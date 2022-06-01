@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 // egf: exp(x^2/2+x^5/5+x^10/10)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A261381 Number of permutations sigma of [n] without fixed points such that sigma^10 = Id.

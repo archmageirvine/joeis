@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // ogf: x*(933561925632000*x^14-1286309121638400*x^13+786606914672640*x^12-287219252934144*x^11+70324589076096*x^10-12248067009984*x^9+1568017231256*x^8-150181430252*x^7+10834851518*x^6-587198697*x^5+23594853*x^4-684354*x^3+13636*x^2-169*x+1)/((6*x-1)*(7*x-1)*(8*x-1)*(9*x-1)*(10*x-1)*(11*x-1)*(12*x-1)*(13*x-1)*(14*x-1)*(15*x-1)*(16*x-1)*(17*x-1)*(18*x-1)*(20*x-1)*(24*x-1)*(32*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A051589 Number of 5xn binary matrices such that any 2 rows have a common 1.

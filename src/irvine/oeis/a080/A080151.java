@@ -1,7 +1,7 @@
 package irvine.oeis.a080;
 // manually
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A080151 Let m = Wonderful Demlo number A002477(n); a(n) = sum of digits of m.

@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 // egf: (1+x)*((1+x)/(1-x))^(1/2)*exp(-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A214849 Number of n-permutations having all cycles of odd length and at most one fixed point.

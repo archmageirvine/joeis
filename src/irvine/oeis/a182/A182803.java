@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 // DO NOT EDIT here!
 
 import irvine.oeis.transform.EulerTransformSequence;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A182803 Number of 8-core partitions of n.

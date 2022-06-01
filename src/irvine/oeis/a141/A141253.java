@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 // ogf: (1-4*x+4*x^2-4*x^3-(1-2*x)*sqrt(1-4*x))/(2*x*(1-x)^2*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A141253 Number of permutations that lie in the cyclic closure of Av(132)--i.e., at least one cyclic rotation of the permutation avoids the pattern 132.

@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 // Recurrence: (n+1)*a[n+0]+(-17*n-4)*a[n-1]+(97*n-57)*a[n-2]+(-191*n+280)*a[n-3]+30*(n-2)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A271197 Expansion of -(sqrt(x^2-6*x+1)+3*x-1)/((7*x-1)*sqrt(x^2-6*x+1)+x^2-6*x+1)/x.

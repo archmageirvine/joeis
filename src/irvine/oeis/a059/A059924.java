@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059924 Write the numbers from 1 to n^2 in a spiraling square; a(n) is the total of the sums of the two diagonals.

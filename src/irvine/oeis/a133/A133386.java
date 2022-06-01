@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133386 Number of forests of labeled rooted trees with n nodes, containing exactly 2 trees of height one, all others having height zero.

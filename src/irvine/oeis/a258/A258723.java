@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 // ogf: 1/(1-12*x+48*x^2)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A258723 Expansion of 1/(1-12*x+48*x^2)^(1/2).

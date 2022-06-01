@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // Recurrence: a[n+0]=2*n^3-3*n^2+4*n-2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A047672 Row 3 of square array defined in A047671.

@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 // Recurrence: a[n+0]=n*(n^6+n^3+1)*(n^6-n^3+1)*(n^2+n+1)*(n^2-n+1)*(n+1)+1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A269446 a(n) = n*(n^6 + n^3 + 1)*(n^6 - n^3 + 1)*(n^2 + n + 1)*(n^2 - n + 1)*(n + 1) + 1.

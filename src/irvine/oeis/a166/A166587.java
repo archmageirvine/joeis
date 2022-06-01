@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // ogf: (1+3*x-sqrt(1+2*x-3*x^2))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166587 A signed variant of the Motzkin numbers.

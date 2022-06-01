@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226649 Fibonacci shuffles: a(2n) = A000071(n) and a(2n+1) = A001611(n+2).

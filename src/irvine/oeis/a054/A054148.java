@@ -1,7 +1,7 @@
 package irvine.oeis.a054;
 // manually 2021-11-15; EFF=0
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A054148 T(2n+1,n), array T as in A054144.

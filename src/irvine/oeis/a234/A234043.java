@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 // Recurrence: 24*a[n+0]=(n+1)*(5*n+2)*(5*n+3)*(5*n+4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A234043 a(n) = C(5*(n+1),4)/5, with n &gt;= 0.

@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 // Recurrence: :(n-5)*(n-1)*a[n+0]=(3*n^2-20*n+23)*a[n-1]+2*(n-2)*(4*n-19)*a[n-2]+4*(n-4)*(n-3)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A238578 Expansion of -(-4*x^4 + sqrt(-4*x^2-4*x+1) * (2*x^3+x^2-2*x) -12*x^3-7*x^2+2*x) / (sqrt(-4*x^2-4*x+1) * (4*x^3+8*x^2+3*x-1) - 4*x^3-8*x^2-3*x+1).

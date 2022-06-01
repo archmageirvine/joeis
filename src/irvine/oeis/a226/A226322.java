@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226322 Number of tilings of a 4 X n rectangle using L tetrominoes and 2 X 2 tiles.

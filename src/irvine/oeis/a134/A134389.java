@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 // ogf: ((2-x)/(1-2*x)+(x*sqrt(1-4*x^2))/(1-2*x)^2)/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A134389 A transform of floor((n+2)/2) with Hankel transform floor((n+2)/2)*(cos(Pi*n/2) + sin(Pi*n/2)).

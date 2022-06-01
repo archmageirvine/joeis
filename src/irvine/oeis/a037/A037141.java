@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A037141 Convolution of natural numbers n &gt;= 1 with Fibonacci numbers F(k), for k &gt;= -5, with F(-n)=(-1)^(n+1)*F(n);.

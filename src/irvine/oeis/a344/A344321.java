@@ -1,6 +1,6 @@
 package irvine.oeis.a344;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A344321 a(n) = 2^(2*n - 5)*binomial(n-5/2, -1/2)*(36*n^4 - 78*n^3 + 54*n^2 - 48*n + 24)/((n + 1)*n*(n - 1)) for n &gt;= 2 and otherwise 1.

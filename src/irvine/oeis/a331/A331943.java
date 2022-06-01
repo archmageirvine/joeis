@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=2*a[n-1]-a[n-2]+a[n-3]-2*a[n-4]+a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331943 a(n) = n^2 + 1 - ceiling((n + 2)/3).

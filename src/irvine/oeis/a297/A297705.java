@@ -3,7 +3,7 @@ package irvine.oeis.a297;
 // ogf: (1-3*x-sqrt(1-18*x+x^2))/(6*x+4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A297705 a(n) = Sum_{k=0..n} binomial(n, k)*hypergeom([k - n, n + 1], [k + 2], -4).

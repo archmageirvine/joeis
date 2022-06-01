@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // ogf: x*(1-4*x^2+4*x^3)/((2*x-1)^2*(1-x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A078501 a(n) = sum(k=1,n^2, A078446(k)).

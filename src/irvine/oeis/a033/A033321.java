@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 // ogf: 2/(1+x+sqrt(1-6*x+5*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A033321 Binomial transform of Fine's sequence A000957: 1, 0, 1, 2, 6, 18, 57, 186, ...

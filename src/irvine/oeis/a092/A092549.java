@@ -1,6 +1,6 @@
 package irvine.oeis.a092;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A092549 Molien series for symmetrized weight enumerators of self-dual codes over GF(4) + GF(4)u with u^2 = 0.

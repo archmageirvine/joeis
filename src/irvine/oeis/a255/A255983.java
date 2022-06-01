@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255983 a(n) = 1 for n &lt;= 5; a(n) = 36*a(n-1) - 450*a(n-2) + 3000*a(n-3) - 11250*a(n-4) + 22500*a(n-5) - 18750*a(n-6) otherwise.

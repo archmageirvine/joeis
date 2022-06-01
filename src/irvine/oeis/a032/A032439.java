@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 // ogf: -(-1+9*x+3*x^2-140*x^3+30*x^4+689*x^5-12*x^6-1189*x^7-129*x^8+572*x^9+46*x^10-77*x^11-5*x^12+2*x^13)/((-1+11*x-18*x^2-113*x^3+258*x^4+283*x^5-644*x^6-179*x^7+302*x^8+41*x^9-38*x^10-3*x^11+x^12)*(-1+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A032439 a(n) = Sum_{i=0..4} binomial(Fibonacci(n),i).

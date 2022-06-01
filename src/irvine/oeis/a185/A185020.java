@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 // ogf: sqrt((1-4*x-sqrt(1-8*x-32*x^2))/24)/x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A185020 a(n) = A000108(n)*A002605(n+1), where A000108 are the Catalan numbers.

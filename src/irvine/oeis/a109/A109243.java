@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A109243 2^(n-1)J(n,1/2) where J(n,x)=n-th Jacobsthal polynomial.

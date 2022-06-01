@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 // Recurrence: a[n+0]=n+9
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A263772 Perimeters of integer-sided scalene triangles.

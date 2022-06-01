@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // Recurrence: a[n+0]=30*n+11
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128467 a(n) = 30*n + 11.

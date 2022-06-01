@@ -1,6 +1,6 @@
 package irvine.oeis.a211;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A211154 Number of 2 X 2 matrices having all terms in {-n,...,0,..,n} and even determinant.

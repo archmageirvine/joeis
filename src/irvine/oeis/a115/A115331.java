@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // egf: exp(x+5/2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115331 E.g.f.: exp(x+5/2*x^2).

@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A069961 Define C(n) by the recursion C(0)=4*I where I^2=-1, C(n+1)=1/(1+C(n)); then a(n)=4*(-1)^n/Im(C(n)) where Im(z) denotes the imaginary part of the complex number z.

@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 // Recurrence: a[n+0]=3*a[n-1]+6*a[n-2]-3*a[n-3]-a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A220362 a(n) = Fibonacci(n-1) * Fibonacci(n) * Fibonacci(n+2).

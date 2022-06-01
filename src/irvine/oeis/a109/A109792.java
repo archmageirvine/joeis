@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 // egf: log(1+x)/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A109792 E.g.f.: log(1+x)/(1-x)^2.

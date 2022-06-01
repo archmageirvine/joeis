@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 // Recurrence: 27*(n-1)*n*(n+1)*(2*n-5)*(4*n-11)*(4*n-7)*a[n+0]=9*(n-1)*n*(4*n-11)*(96*n^3-456*n^2+616*n-197)*a[n-1]-3*(n-1)*(1728*n^5-15552*n^4+53164*n^3-85322*n^2+63369*n-17010)*a[n-2]+(4*n-9)*(4*n-3)*(728*n^4-6188*n^3+19267*n^2-25987*n+12810)*a[n-3]-3*(n-3)*(2*n-3)*(3*n-10)*(3*n-8)*(4*n-7)*(4*n-3)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A215340 Expansion of series_reversion( x/(1 + sum(k&gt;=1, x^A032766(k)) ) ) / x.

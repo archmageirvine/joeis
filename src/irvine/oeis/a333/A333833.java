@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: -(2*x^8+4*x^7+2*x^6+x^5+5*x^4+4*x^3+x^2+1)/(x^4+x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333833 Number of permutations p of [n] such that |p(i) - p(i-1)| &lt;= 2 and |p(i) - p(i-2)| &lt;= 3.

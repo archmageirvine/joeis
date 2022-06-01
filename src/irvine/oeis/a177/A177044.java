@@ -1,6 +1,6 @@
 package irvine.oeis.a177;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A177044 a(n) = 103*(n-1)-a(n-1) with n&gt;1, a(1)=38.

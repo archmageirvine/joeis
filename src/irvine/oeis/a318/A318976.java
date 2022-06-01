@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 // egf: exp((x*(2+x))/(1-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A318976 Expansion of e.g.f. Product_{k&gt;=1} ((1 + x^k)/(1 - x^k))^(phi(k)/k), where phi is the Euler totient function A000010.

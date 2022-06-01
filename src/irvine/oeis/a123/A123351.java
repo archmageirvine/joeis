@@ -1,7 +1,7 @@
 package irvine.oeis.a123;
 // manually holos 2021-08-17
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123351 Kekul\u00e9 numbers for certain benzenoids (see the Cyvin-Gutman book for details).

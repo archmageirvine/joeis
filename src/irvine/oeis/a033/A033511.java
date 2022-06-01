@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A033511 Number of matchings in graph P_{8} X P_{n}.

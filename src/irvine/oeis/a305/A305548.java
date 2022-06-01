@@ -1,6 +1,6 @@
 package irvine.oeis.a305;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A305548 a(n) = 27*n.

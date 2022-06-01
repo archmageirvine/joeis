@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 // Recurrence: -9*(2+n)*(3+n)*a[n+0]+(-198-111*n-15*n^2)*a[n+1]+(-78-102*n-24*n^2)*a[n+2]+(-462-340*n-56*n^2)*a[n+3]+(-186-106*n-14*n^2)*a[n+4]+(1086+426*n+42*n^2)*a[n+5]+(108+49*n+5*n^2)*a[n+6]+(-432-139*n-11*n^2)*a[n+7]+2*(6+n)*(8+n)*a[n+8]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A109192 Number of Grand Motzkin paths of length n and having no hills (i.e., no ud's starting at level 0). (A Grand Motzkin path of length n is a path in the half-plane x &gt;= 0, starting at (0,0), ending at (n,0) and consisting of steps u=(1,1), d=(1,-1) and h=(1,0).).

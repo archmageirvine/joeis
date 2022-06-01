@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 // ogf: (1-2*x+x^2-sqrt(1-8*x+6*x^2-4*x^3+x^4))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A162477 Expansion of (1/(1-x)^2)*c(x/(1-x)^4), c(x) the g.f. of A000108.

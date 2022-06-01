@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 // ogf: (979776*x^18-75600*x^17-12197940*x^16+5916552*x^15+35833019*x^14-19220271*x^13-44070216*x^12+23310438*x^11+26177559*x^10-13274349*x^9-7520073*x^8+3654387*x^7+940365*x^6-451464*x^5-43362*x^4+24495*x^3+25*x^2-468*x+27)/((x-1)*(x+1)*(3*x^3-5*x^2-5*x+1)*(36*x^4-x^3-20*x^2-x+1)*(36*x^4+x^3-20*x^2+x+1)*(28*x^5+42*x^4-109*x^3+17*x^2+13*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A182141 Number of independent sets of nodes in the armchair (3,3) carbon nanotorus graph of breadth n (n&gt;=1).

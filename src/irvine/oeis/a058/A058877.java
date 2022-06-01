@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A058877 Number of labeled acyclic digraphs with n nodes containing exactly n-1 points of in-degree zero.

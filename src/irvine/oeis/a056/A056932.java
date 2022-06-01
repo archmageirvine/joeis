@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056932 Antichains (or order ideals) in the poset 2*2*2*n or size of the distributive lattice J(2*2*2*n).

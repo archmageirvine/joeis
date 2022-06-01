@@ -1,6 +1,6 @@
 package irvine.oeis.a084;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A084330 a(0)=0, a(1)=1, a(n) = 31*a(n-1) - 29*a(n-2).

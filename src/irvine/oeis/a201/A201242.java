@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 // ogf: x^4*(16x^21-566x^20+8182x^19-67700x^18+377824x^17-1531112x^16+4601788x^15-10205035x^14+16637339x^13-21628151x^12+32135719x^11-68863352x^10+138461546x^9-189569712x^8+133644570x^7+20663373x^6-378949513x^5-174710713x^4-19400947x^3-520438x^2-1516x-2)/(x-1)^17
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A201242 Number of ways to place 8 non-attacking wazirs on an n X n toroidal board.

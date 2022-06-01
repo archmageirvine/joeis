@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // egf: exp(x*sqrt(1+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190863 E.g.f. exp(x*sqrt(1+x^2)).

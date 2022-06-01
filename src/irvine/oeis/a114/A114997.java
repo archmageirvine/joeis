@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 // Recurrence: (n+1)*(n+2)*(28*n^2-38*n-15)*a[n+0]=-4*(n+1)*(14*n^3-12*n^2+7*n-15)*a[n-1]+(n-2)*(140*n^3+90*n^2-221*n+45)*a[n-2]+6*(n-2)*(28*n^3-24*n^2-75*n+95)*a[n-3]+23*(n-3)*(n-2)*(28*n^2+18*n-25)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A114997 Number of ordered trees with n edges and no unary or binary nodes.

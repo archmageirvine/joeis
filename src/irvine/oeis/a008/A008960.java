@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A008960 Final digit of cubes: n^3 mod 10.

@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 // Recurrence: 11520*a[n+0]=(45*n^17+780*n^15+3990*n^13+6900*n^11+1205*n^9-3240*n^7+1584*n^5+640*n^3-384*n)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A075669 Sum of next n 8th powers.

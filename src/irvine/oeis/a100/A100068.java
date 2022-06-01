@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // ogf: (2*x)/(sqrt(1-4*x^2)*(3*sqrt(1-4*x^2)+2*x-3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100068 Sum(k=0..floor(n/2), binomial(n,k)*3^(n-2*k) ).

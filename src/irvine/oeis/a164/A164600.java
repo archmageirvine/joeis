@@ -1,6 +1,6 @@
 package irvine.oeis.a164;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A164600 a(n) = 18*a(n-1) - 79*a(n-2) for n &gt; 1; a(0) = 1, a(1) = 17.

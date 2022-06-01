@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 // ogf: 1/(1-4830*x+48828125*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A299206 Ramanujan's tau function (or tau numbers (A000594)) for 5^n.

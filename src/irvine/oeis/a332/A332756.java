@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: a[n+0]=a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332756 A loop sequence within Pi. Let a(1) = 19. For n &gt; 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.

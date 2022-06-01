@@ -1,6 +1,6 @@
 package irvine.oeis.a129;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A129361 a(n) = Sum_{k=floor((n+1)/2)..n} F(k+1), F(k) = A000045(k).

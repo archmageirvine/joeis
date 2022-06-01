@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247698 Brady numbers: B(n) = B(n - 1) + B(n - 2) with B(1) = 2308 and  B(2) = 4261.

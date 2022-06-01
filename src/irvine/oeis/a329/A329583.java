@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // Recurrence: a[n+0]=-a[n-1]+2*a[n-2]+3*a[n-3]-3*a[n-5]-2*a[n-6]+a[n-7]+a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329583 Numerators of 1 + n^2/4 + period 3: repeat [-1, 1, 1].

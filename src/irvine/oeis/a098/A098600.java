@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098600 a(n) = Fibonacci(n-1) + Fibonacci(n+1) - (-1)^n.

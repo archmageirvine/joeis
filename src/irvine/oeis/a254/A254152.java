@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 // ogf: (1-42*x+433*x^2-1745*x^3+3002*x^4-2275*x^5+700*x^6-72*x^7)/(1-74*x+1450*x^2-10672*x^3+34214*x^4-50814*x^5+34671*x^6-9772*x^7+936*x^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A254152 Number of independent sets in the generalized Aztec diamond E(L_9,L_{2n-1}).

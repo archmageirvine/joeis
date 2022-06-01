@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273627 A divisibility sequence: (1/8)*(Pell(4*n) - 2*Pell(2*n)).

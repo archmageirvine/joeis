@@ -1,6 +1,6 @@
 package irvine.oeis.a141;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A141259 a(n) == {0,1,3,4,5,7,9,11} mod 12; n&gt;0.

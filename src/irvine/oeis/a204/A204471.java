@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 // ogf: -(94*x^21+18950*x^20+265472*x^19+1391863*x^18+4387222*x^17+10120300*x^16+18809933*x^15+29668549*x^14+40847915*x^13+49820911*x^12+54281003*x^11+53032087*x^10+46410392*x^9+36173353*x^8+24844747*x^7+14749481*x^6+7293277*x^5+2809833*x^4+741117*x^3+101368*x^2+3368*x+1)/((x^2-x+1)*(x^4+x^3+x^2+x+1)*(x^2+1)*(x^2+x+1)^2*(x+1)^3*(x-1)^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A204471 Number of 7-element subsets that can be chosen from {1,2,...,14*n+7} having element sum 49*n+28.

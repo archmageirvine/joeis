@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 // ogf: 4/(1+3*sqrt(1-8*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A089022 Number of walks of length 2n on the 3-regular tree beginning and ending at some fixed vertex.

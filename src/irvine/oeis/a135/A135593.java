@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // egf: (x^2*(x+2))/2*exp((x*(x+2))/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A135593 Number of n X n symmetric (0,1)-matrices with exactly n+1 entries equal to 1 and no zero rows or columns.

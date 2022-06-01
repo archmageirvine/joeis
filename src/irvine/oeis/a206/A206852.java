@@ -1,7 +1,7 @@
 package irvine.oeis.a206;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A206852 Numbers n such that n/2 is a square, n/3 is a cube, and n/5 is a fifth power.

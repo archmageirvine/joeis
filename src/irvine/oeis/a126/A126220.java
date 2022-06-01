@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: (1-2*x-4*x^3-sqrt(1-8*x^3+4*x^2-4*x))/(8*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126220 Number of binary trees (i.e., rooted trees where each vertex has either 0, 1, or 2 children; and, when only one child is present, it is either a right child or a left child) with n edges and no adjacent vertices of outdegree 2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a163;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A163322 The 3rd Hermite Polynomial evaluated at n: H_3(n) = 8*n^3 - 12*n.

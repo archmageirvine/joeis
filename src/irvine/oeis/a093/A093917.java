@@ -1,6 +1,6 @@
 package irvine.oeis.a093;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A093917 a(n) = n^3+n for odd n, (n^3+n)*3/2 for even n: Row sums of A093915.

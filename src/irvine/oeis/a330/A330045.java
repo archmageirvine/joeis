@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // egf: exp(x)/(1-x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330045 Expansion of e.g.f. exp(x) / (1 - x^4).

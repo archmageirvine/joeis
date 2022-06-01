@@ -1,6 +1,6 @@
 package irvine.oeis.a010;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A010891 Inverse of 5th cyclotomic polynomial.

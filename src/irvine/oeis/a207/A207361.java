@@ -1,6 +1,6 @@
 package irvine.oeis.a207;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A207361 Displacement under constant discrete unit surge.

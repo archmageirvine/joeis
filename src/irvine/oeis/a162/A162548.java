@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 // ogf: (1+x+x^2-sqrt(1-6*x+3*x^2-6*x^3+x^4))/(4*x*(1+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A162548 A Chebyshev transform of the little Schroeder numbers A001003.

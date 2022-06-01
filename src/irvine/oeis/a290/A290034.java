@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 // ogf: -(9268512*x^10-38876992*x^9+72780400*x^8-79985290*x^7+57077965*x^6-27603100*x^5+9151975*x^4-2052330*x^3+297675*x^2-25200*x+945)*x^10/((6*x-1)*(5*x-1)^2*(4*x-1)^3*(3*x-1)^4*(2*x-1)^5*(x-1)^6)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A290034 Number of set partitions of [n] having exactly five blocks of size &gt; 1.

@@ -1,6 +1,6 @@
 package irvine.oeis.a225;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A225799 Sum_{k=0..n} binomial(n,k) * 10^(n-k) * Fibonacci(n+k).

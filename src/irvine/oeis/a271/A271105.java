@@ -1,7 +1,7 @@
 package irvine.oeis.a271;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271105 Square 1000-gonal numbers (or square chiliagonal numbers): numbers that are square and chiliagonal (or 1000-gonal).

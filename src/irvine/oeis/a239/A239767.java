@@ -1,6 +1,6 @@
 package irvine.oeis.a239;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A239767 Degrees of polynomial on the fermionic side of the finite generalization of identity 46 from Slater's List.

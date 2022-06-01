@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=1000001*a[n-1]-1000000*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331630 Numbers M such that 23 * M = 1M1, where 1M1 denotes the concatenation of 1, M and 1.

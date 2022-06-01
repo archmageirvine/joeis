@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 // Recurrence: a[n+0]=44*a[n-1]-887*a[n-2]+10855*a[n-3]-90083*a[n-4]+536398*a[n-5]-2365292*a[n-6]+7860674*a[n-7]-19852652*a[n-8]+38152568*a[n-9]-55523880*a[n-10]+60518766*a[n-11]-48502595*a[n-12]+27783210*a[n-13]-10888525*a[n-14]+2721025*a[n-15]-382125*a[n-16]+22500*a[n-17]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A173782 Number of ways to place 4n nonattacking kings on an 8 X 2n chessboard.

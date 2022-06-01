@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A161584 The list of the k values in the common solutions to the 2 equations 13*k+1=A^2, 17*k+1=B^2.

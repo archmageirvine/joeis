@@ -1,6 +1,6 @@
 package irvine.oeis.a110;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A110654 a(n) = ceiling(n/2), or: a(2*k) = k, a(2*k+1) = k+1.

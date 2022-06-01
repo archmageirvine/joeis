@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A014217 a(n) = floor(phi^n), where phi = (1+sqrt(5))/2 is the golden ratio.

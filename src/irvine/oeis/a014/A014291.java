@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A014291 Imaginary Rabbits: imaginary part of a(0)=i; a(1)=-i; a(n) = a(n-1) + i*a(n-2), with i = sqrt(-1).

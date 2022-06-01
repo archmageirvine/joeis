@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // Recurrence: a[n+0]-(9*n-8)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A045756 Expansion of e.g.f. (1-9*x)^(-1/9), 9-factorial numbers.

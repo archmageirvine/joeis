@@ -1,6 +1,6 @@
 package irvine.oeis.a295;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A295200 Number of nX3 0..1 arrays with each 1 horizontally or vertically adjacent to 2 or 4 1s.

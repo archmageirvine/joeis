@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 // Recurrence: a[n+0]=1729*n
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A138129 Multiples of 1729, the Hardy-Ramanujan number.

@@ -1,6 +1,6 @@
 package irvine.oeis.a292;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A292397 p-INVERT of the tribonacci numbers (A000073(k), k&gt;=2), where p(S) = 1 - S - S^2 - S^3.

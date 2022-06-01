@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 // ogf: -(x*(2+x))/((1-x)^2*(1+3*x+x^2))*seethecommentsection
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A214884 a(n) = Sum_{k=0..n} (-1)^k*F(k)*F(k+2), where F=A000045 (Fibonacci numbers).

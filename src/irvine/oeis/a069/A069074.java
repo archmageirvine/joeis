@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A069074 a(n) = (2*n+2)*(2*n+3)*(2*n+4) = 24*A000330(n+1).

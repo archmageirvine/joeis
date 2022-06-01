@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // Recurrence: a[n+0]+48*a[n-1]+48*a[n-2]+a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A156092 Alternating sum of the squares of the first n Fibonacci numbers with index divisible by 4.

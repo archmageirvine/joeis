@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 // Recurrence: +4*n*a[n+0]+(-41*n+24)*a[n-1]+50*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A076036 G.f.: 1/(1 - 5*x*C(x)), where C(x) = (1 - sqrt(1 - 4*x))/(2*x) = g.f. for the Catalan numbers A000108.

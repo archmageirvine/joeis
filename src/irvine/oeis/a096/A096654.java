@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 // Recurrence: a[n+0]=(n+1)*a[n-1]+n*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A096654 Denominators of self-convergents to 1/(e-2).

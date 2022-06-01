@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // Recurrence: (n-1)*n^2*(4*n^2-15*n+13)*a[n+0]=4*(n-1)*(48*n^5-292*n^4+672*n^3-747*n^2+399*n-76)*a[n-1]-32*(96*n^7-1000*n^6+4408*n^5-10628*n^4+15034*n^3-12312*n^2+5265*n-854)*a[n-2]+1024*(2*n-5)^2*(4*n^2-7*n+2)*(n-2)^4*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187543 Binomial convolutions of the central Lah numbers (A187535).

@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A055518 a_{k+1} = 6*a_k + 11*a_{k-1} - 19*a_{k-2} - 4*a_{k-3} + a_{k-4}, a_1=1, a_2=2, a_3=19, a_4=118, a_5=875.

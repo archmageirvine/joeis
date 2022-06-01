@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=2*a[n-1]+6*a[n-2]-14*a[n-3]-14*a[n-4]+42*a[n-5]+14*a[n-6]-70*a[n-7]+70*a[n-9]-14*a[n-10]-42*a[n-11]+14*a[n-12]+14*a[n-13]-6*a[n-14]-2*a[n-15]+a[n-16]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331575 a(n) is the number of subsets of {1..n} that contain 4 even and 4 odd numbers.

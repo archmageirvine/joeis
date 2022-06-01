@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118485 a(n) = 11321 - 23479*n + 16423*n^2 - 4693*n^3 + 471*n^4.

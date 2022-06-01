@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280056 Number of 2 X 2 matrices with entries in {0,1,...,n} and even trace with no entries repeated.

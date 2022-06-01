@@ -1,6 +1,6 @@
 package irvine.oeis.a184;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A184887 a(n) = (8^n/n!^2) * Product_{k=0..n-1} (16k+3)*(16k+5).

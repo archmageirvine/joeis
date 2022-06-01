@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212959 Number of (w,x,y) such that w,x,y are all in {0,...,n} and |w-x| = |x-y|.

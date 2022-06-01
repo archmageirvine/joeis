@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 // Recurrence: n*a[n+0]-2*a[n-1]+4*(-n+2)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A063886 Number of n-step walks on a line starting from the origin but not returning to it.

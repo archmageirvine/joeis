@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 // Recurrence: 72*n*(6*n+5)*(3*n+5)*(2*n+3)*(3*n+4)*(6*n+7)*a[n+0]-7*(7*n+4)*(7*n+8)*(7*n+5)*(7*n+9)*(7*n+6)*(7*n+3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A233908 10*binomial(7*n+10,n)/(7*n+10).

@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090139 a(n) = 10*a(n-1) - 20*a(n-2), a(0)=1,a(1)=5.

@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A066070 a(1) = 1; for m &gt; 0, a(2m) = 2(2m+1), a(2m+1) = 2m+1.

@@ -1,6 +1,6 @@
 package irvine.oeis.a188;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A188696 G.f.: (1+x^2)/(1-26*x+x^2-26*x^3+2*x^4).

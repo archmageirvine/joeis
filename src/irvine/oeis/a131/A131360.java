@@ -1,6 +1,6 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A131360 a(4n) = a(4n+1) = 0, a(4n+2) = 2n, a(4n+3) = 2n+1.

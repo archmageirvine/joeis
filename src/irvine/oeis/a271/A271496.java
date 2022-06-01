@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 // ogf: -(369435906932736*x^11-32160715112448*x^10-2001454759936*x^9-145223581696*x^8-4454350848*x^7+1392508928*x^6-5865472*x^5-4599808*x^4+123648*x^3+4768*x^2-220*x-1)/(1+16*x)/(32*x-1)/(1443109011456*x^10-135291469824*x^9-6576668672*x^8-528482304*x^7-19922944*x^6+5455872*x^5-41984*x^4-17664*x^3+592*x^2+16*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A271496 Tenth moments of the Rudin-Shapiro polynomials.

@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 // Recurrence: 3*(n-2)*(n-1)*n*(3*n-1)*(3*n+1)*a[n+0]=6*(n-2)*(n-1)*(2*n-1)*(3*n-2)*(3*n-1)*a[n-1]+10*(n-2)*(41*n^4-164*n^3+200*n^2-72*n+3)*a[n-2]+100*(n-3)*n*(2*n-3)*(2*n^2-6*n+3)*a[n-3]+125*(n-4)*(n-3)*(n-1)^2*n*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A259757 G.f. A(x) satisfies: A(x)^2 = 1+x + x*A(x)^5.

@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216108 The Wiener index of the ortho-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).

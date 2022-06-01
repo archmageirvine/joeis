@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279282 Self-composition of the cubes; g.f.: A(x) = G(G(x)), where G(x) = g.f. of A000578.

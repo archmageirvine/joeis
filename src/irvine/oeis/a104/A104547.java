@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // ogf: (1-2*x+2*x^2-sqrt(1-8*x+16*x^2-12*x^3+4*x^4))/(2*x*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104547 Number of Schroeder paths of length 2n having no UHD, UHHD, UHHHD, ..., where U=(1,1),D=(1,-1), H=(2,0).

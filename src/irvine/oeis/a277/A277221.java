@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // Recurrence: n*(n-3)*a[n+0]+(-7*n^2+23*n-12)*a[n-1]+(13*n^2-45*n+36)*a[n-2]-2*(2*n-3)*(n-2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277221 Number of permutations of length n which avoid the patterns 4123, 1324, and 3124.

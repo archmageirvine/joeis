@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A007990 Poincar\u00e9 series [or Poincare series] of Lie algebra associated with a certain braid group.

@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 // ogf: (1/sqrt((1+x)*(1-3*x))+1/(1-x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A257520 Number of factorizations of m^2 into 2 factors, where m is a product of exactly n distinct primes and each factor is a product of n primes (counted with multiplicity).

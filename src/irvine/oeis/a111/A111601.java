@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // egf: (1/sqrt(1-x^2)*x)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A111601 Exponential (binomial) convolution of A001818 (with interspersed zeros) and A000142 (factorials).

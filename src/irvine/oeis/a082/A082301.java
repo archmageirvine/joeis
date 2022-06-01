@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // ogf: (1-4*x-sqrt(16*x^2-12*x+1))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082301 G.f.: (1 - 4*x - sqrt(16*x^2 - 12*x + 1))/(2*x).

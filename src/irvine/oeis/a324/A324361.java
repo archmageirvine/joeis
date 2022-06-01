@@ -3,7 +3,7 @@ package irvine.oeis.a324;
 // Recurrence: a[n+0]=(8*n-12)*a[n-1]-(16*n^2-64*n+59)*a[n-2]-(4*n-10)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A324361 Total number of occurrences of n in the (signed) displacement sets of all permutations of [2n] divided by n!.

@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // Recurrence: a[n+0]=6*a[n-15]-a[n-30]+1666
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129010 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+833)^2 = y^2.

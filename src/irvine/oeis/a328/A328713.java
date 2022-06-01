@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: n^3*a[n+0]=(2*n-1)*(2*n^2-2*n+1)*a[n-1]+(n-1)*(34*n^2-68*n+41)*a[n-2]-38*(n-2)*(n-1)*(2*n-3)*a[n-3]-105*(n-3)*(n-2)*(n-1)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328713 Constant term in the expansion of (1 + x + y + z + 1/x + 1/y + 1/z)^n.

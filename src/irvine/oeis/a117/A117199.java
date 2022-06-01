@@ -1,6 +1,6 @@
 package irvine.oeis.a117;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A117199 Expansion of 1/(1-x^2) + x/(1-x^3) + x^2/(1-x^4).

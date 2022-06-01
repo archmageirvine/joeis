@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A008959 Final digit of squares: a(n) = n^2 mod 10.

@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081219 One sixtieth the product of primitive Pythagorean triangles' sides whose odd values differ by 2.

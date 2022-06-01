@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 // Recurrence: n*a[n+0]+10*(-10*n+9)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A035323 Related to deca-factorial numbers A045757.

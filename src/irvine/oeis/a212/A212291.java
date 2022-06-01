@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 // egf: ((1+x)*exp(-x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A212291 Number of permutations of n elements with at most one fixed point.

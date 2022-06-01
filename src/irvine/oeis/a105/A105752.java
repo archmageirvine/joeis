@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 // egf: cosh(log(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A105752 Expansion of e.g.f. cos(i*log(1 + x)), i = sqrt(-1).

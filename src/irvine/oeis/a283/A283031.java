@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // Recurrence: 4*a[n+0]=n^7*(n^2+1)*(n^4-n^2+1)*(n^12-n^6+2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A283031 Number of inequivalent 5 X 5 matrices with entries in {1,2,3,...,n} up to rotations.

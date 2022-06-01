@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 // egf: exp(3*x)*exp(x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A083886 Expansion of e.g.f. exp(3*x)*exp(x^2).

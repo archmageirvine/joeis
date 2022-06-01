@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // Recurrence: n^3*(2*n-3)*(4*n-9)*(4*n-5)*a[n+0]=(4*n-9)*(4*n-3)*(520*n^4-1820*n^3+2109*n^2-905*n+121)*a[n-1]-(192*n^6-1536*n^5+4748*n^4-7050*n^3+5065*n^2-1563*n+171)*a[n-2]+(4*n-1)*(32*n^5-296*n^4+1040*n^3-1689*n^2+1209*n-279)*a[n-3]-(n-3)^3*(2*n-1)*(4*n-5)*(4*n-1)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082488 a(n) = Sum_{k = 0..n} C(n,k) * C(n+k,k) * C(n+2*k,k) * C(n+3*k,k).

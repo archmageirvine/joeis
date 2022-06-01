@@ -1,6 +1,6 @@
 package irvine.oeis.a169;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A169833 a(n) = 25*2^(n+3) - (198+392*n/3+36*n^2+10*n^3/3).

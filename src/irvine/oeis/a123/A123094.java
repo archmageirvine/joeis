@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // Recurrence: 2730*a[n+0]=n*(n+1)*(2*n+1)*(105*n^10+525*n^9+525*n^8-1050*n^7-1190*n^6+2310*n^5+1420*n^4-3285*n^3-287*n^2+2073*n-691)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123094 Sum of first n 12th powers.

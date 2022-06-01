@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213071 3*n*(9n + 2)*(18n - 1), where n runs through the odd numbers 1, 3, 5,...

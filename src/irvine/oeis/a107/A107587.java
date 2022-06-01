@@ -1,6 +1,6 @@
 package irvine.oeis.a107;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A107587 Number of Motzkin n-paths with an even number of up steps.

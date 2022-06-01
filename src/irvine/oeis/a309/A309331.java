@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // ogf: (x+x^3+x^5)/(1-x-3*x^3-x^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A309331 Expansion of (x+x^3+x^5)/(1-x-3*x^3-x^5).

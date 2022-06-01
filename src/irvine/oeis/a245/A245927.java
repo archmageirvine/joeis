@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 // Recurrence: n*(4*n-3)*(2*n+1)*a[n+0]=(4*n-1)*(28*n^2-14*n-5)*a[n-1]-(n-1)*(2*n-1)*(4*n+1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A245927 G.f.: sqrt( (1-x - sqrt(1-14*x+x^2)) / (6*x*(1-14*x+x^2)) ).

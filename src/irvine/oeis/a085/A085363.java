@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // Recurrence: n*a[n+0]=(10*n-6)*a[n-1]-(9*n-18)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085363 a(0)=1, for n&gt;0: a(n) = 4*9^(n-1) - (1/2)*Sum_{i=1..n-1} a(i)*a(n-i).

@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 // egf: (1+2*(1-2*x)*exp(x)-(1-2*x)^2*exp(2*x))/(2*(1-2*x)*exp(x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A032115 "BIJ" (reversible, indistinct, labeled) transform of 1,3,5,7...

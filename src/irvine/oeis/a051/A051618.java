@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // egf: 1/(1-4*x)^(5/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051618 a(n) = (4*n+6)(!^4)/6(!^4).

@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 // ogf: -(28-57*x+27*x^2+8*x^6-11*x^7+3*x^9)/(1-x)^3
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A155135 Integers n such that n^3+28*n^2 is a square.

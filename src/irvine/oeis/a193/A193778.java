@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 // Recurrence: a[n+0]=2*a[n-1]+4*(n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A193778 Number of signed permutations of length 2n invariant under D and D'bar.

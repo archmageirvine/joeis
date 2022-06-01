@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051865 13-gonal (or tridecagonal) numbers: a(n) = n*(11*n - 9)/2.

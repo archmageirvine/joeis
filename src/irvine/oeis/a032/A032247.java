@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 // Recurrence: a[n+0]=2*a[n-1]-a[n-3]-2*a[n-5]+3*a[n-6]-2*a[n-7]+a[n-8]+a[n-9]-2*a[n-10]+3*a[n-11]-2*a[n-12]-a[n-14]+2*a[n-16]-a[n-17]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A032247 "DHK[ 6 ]" (bracelet, identity, unlabeled, 6 parts) transform of 1,1,1,1,...

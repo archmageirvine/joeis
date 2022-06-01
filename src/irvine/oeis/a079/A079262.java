@@ -1,6 +1,6 @@
 package irvine.oeis.a079;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A079262 Octanacci numbers: a(0)=a(1)=...=a(6)=0, a(7)=1; for n &gt;= 8, a(n) = Sum_{i=1..8} a(n-i).

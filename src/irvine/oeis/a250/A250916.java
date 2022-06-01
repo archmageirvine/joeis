@@ -3,7 +3,7 @@ package irvine.oeis.a250;
 // egf: exp((1-2*x-2*x^2-sqrt(1-4*x))/(2*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A250916 E.g.f.: exp(C(x)^2 - 1) where C(x) = 1 + x*C(x)^2 is the g.f. of the Catalan numbers, A000108.

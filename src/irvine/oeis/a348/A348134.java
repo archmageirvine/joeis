@@ -1,7 +1,7 @@
 package irvine.oeis.a348;
 // manually linrec/linrec2 at 2022-04-29 07:28
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A348134 Number of ways two L-tiles (with rotation) can be placed on an n X n square.

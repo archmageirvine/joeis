@@ -1,6 +1,6 @@
 package irvine.oeis.a291;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A291030 p-INVERT of the positive integers, where p(S) = 1 - S - S^2 - S^3 - S^4.

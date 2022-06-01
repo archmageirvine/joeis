@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A002015 a(n) = n^2 reduced mod 100.

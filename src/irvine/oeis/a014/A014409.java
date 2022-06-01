@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A014409 Number of inequivalent ways (mod D_4) a pair of checkers can be placed on an n X n board.

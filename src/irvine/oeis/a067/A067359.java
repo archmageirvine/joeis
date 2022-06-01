@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 // ogf: (1-5*x)/(1-10*x+169*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A067359 Real part of (5 + 12i)^n.

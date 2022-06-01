@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: (1-x)/(1-11*x+9*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333344 a(n) = 11*a(n-1) - 9*a(n-2) starting a(0)=1, a(1)=10.

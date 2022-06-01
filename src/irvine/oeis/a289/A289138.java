@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289138 a(n) = smallest expomorphic number in base n: least integer k such that n^k ends in k, or 0 if no such k exists.

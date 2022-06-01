@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: sqrt((1-2*x+x^2+x^3+sqrt(1-4*x+6*x^2-6*x^3-11*x^4-2*x^5+x^6))/(2*(1-4*x+6*x^2-6*x^3-11*x^4-2*x^5+x^6)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191349 Binomial sums a(n) = sum(binomial(n-k,2*k)^2,k=0..floor(n/3)).

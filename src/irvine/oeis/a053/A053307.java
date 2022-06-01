@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A053307 Number of nonnegative integer 2 X 2 matrices with sum of elements equal to n, under row and column permutations.

@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=10*a[n-2]-40*a[n-4]+80*a[n-6]-80*a[n-8]+32*a[n-10]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331419 a(n) is the number of subsets of {1..n} that contain exactly 4 odd numbers.

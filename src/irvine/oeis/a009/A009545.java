@@ -1,6 +1,6 @@
 package irvine.oeis.a009;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A009545 E.g.f. sin(x)*exp(x).

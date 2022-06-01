@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // Recurrence: (2*n-1)(n+1)*a[n+1]=4*(3*n^2-1)*a[n+0]-(2*n+1)(n-1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123164 Row sums of A123160.

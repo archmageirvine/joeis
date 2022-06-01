@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 // ogf: 2/(3*sqrt(1-6*x+x^2)+x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A155862 A 'Morgan Voyce' transform of A007854.

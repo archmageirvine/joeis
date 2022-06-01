@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180343 a(0)=-4; a(n+1) = 2*a(n) + period 4: repeat 6,1,2,5.

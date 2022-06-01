@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052926 Expansion of (1-3*x)/(1 - 4*x - x^2 + 3*x^3).

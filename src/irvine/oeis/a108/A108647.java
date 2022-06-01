@@ -1,6 +1,6 @@
 package irvine.oeis.a108;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A108647 a(n) = (n+1)^2*(n+2)^2*(n+3)^2*(n+4)/144.

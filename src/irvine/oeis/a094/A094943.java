@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 // ogf: (1+10*x+18*x^2)/(1-3*x-18*x^3-15*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A094943 A sequence generated from a semi-magic square.

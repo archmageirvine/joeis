@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255497 4th diagonal of triangle in A255494.

@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 // Recurrence: n*(4*n-3)*(2*n+1)*a[n+0]=(4*n-1)*(36*n^2-18*n-7)*a[n-1]-(n-1)*(2*n-1)*(4*n+1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A243947 Expansion of g.f. sqrt( (1+x - sqrt(1-18*x+x^2)) / (10*x*(1-18*x+x^2)) ).

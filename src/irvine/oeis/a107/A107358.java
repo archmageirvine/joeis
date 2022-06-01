@@ -1,6 +1,6 @@
 package irvine.oeis.a107;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A107358 Dying rabbits: a(n) = Fibonacci(n) for n &lt;= 12; for n &gt;= 13, a(n) = a(n-1) + a(n-2) - a(n-13).

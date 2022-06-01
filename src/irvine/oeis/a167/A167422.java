@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 // Recurrence: (n+1)*a[n+0]+(-3*n+1)*a[n-1]+2*(-2*n+5)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A167422 Expansion of (1+x)*c(x), c(x) the g.f. of A000108.

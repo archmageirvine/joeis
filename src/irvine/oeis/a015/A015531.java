@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A015531 Linear 2nd order recurrence: a(n) = 4*a(n-1) + 5*a(n-2).

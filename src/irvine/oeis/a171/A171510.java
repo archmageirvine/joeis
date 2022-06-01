@@ -1,6 +1,6 @@
 package irvine.oeis.a171;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A171510 Generalized Lucas numbers: a(n) = 10*a(n-1) + a(n-2), with a(1)=2 and a(2)=1.

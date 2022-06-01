@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152896 a=b=c=0;c(n)=c+n+a;b(n)=b+n+c;a(n)=a+n+b.

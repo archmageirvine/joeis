@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274526 a(n) = ((1 + sqrt(11))^n - (1 - sqrt(11))^n)/sqrt(11).

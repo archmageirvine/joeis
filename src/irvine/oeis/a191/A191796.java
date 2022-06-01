@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: ((1-3*x^2-x^3)*sqrt(1-4*x^2)-1+5*x^2+x^3-4*x^4)/(2*x*(1-2*x)*sqrt(1-4*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191796 Number of DUU's in all length n left factors of Dyck paths; here U=(1,1) and D=(1,-1).

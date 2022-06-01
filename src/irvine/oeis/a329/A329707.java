@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // Recurrence: a[n+0]=2*a[n-1]+a[n-2]-a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329707 Number of placements of zero or more dominoes on a 2 X n grid where no two empty squares are horizontally adjacent.

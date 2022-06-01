@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 // ogf: (-1)/(2*x^2+2*x)+(-2*x^3-3*x^2+1)/(sqrt(x^4+4*x^3-2*x^2-4*x+1)*(2*x^2+2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A247173 Expansion of g.f. (-1)/(2*x^2+2*x) +(-2*x^3-3*x^2+1) / (sqrt(x^4+4*x^3-2*x^2-4*x+1)*(2*x^2+2*x)).

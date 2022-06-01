@@ -1,6 +1,6 @@
 package irvine.oeis.a004;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A004297 Expansion of (1+2*x+x^2)/(1-58*x+x^2).

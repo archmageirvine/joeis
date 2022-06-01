@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 // Recurrence: 4*(2*n^2+9*n+10)^2*a[n+2]-(713*n^4+4230*n^3+9317*n^2+9000*n+3200)*a[n+1]-9*(9*n^2+27*n+20)^2*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A188685 Partial alternating sums of binomial(3n,n)^2/(2n+1)^2.

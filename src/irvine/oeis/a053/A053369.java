@@ -1,7 +1,7 @@
 package irvine.oeis.a053;
 // manually 2021-07-06
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053369 Linear recursion with Catalan numbers.

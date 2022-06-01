@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 // egf: exp(x)/(1-x-2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A110322 Row sums of a number triangle related to the Jacobsthal numbers.

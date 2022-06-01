@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 // Recurrence: (n+1)*a[n+0]+3*(1-3*n)*a[n-1]+4*(4*n-5)*a[n-2]+8*(2-n)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A174347 Expansion of (1 - 2*x - sqrt(1 - 8*x + 8*x^2))/(2*x*(1-x)).

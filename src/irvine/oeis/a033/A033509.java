@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A033509 Number of matchings in graph P_{6} X P_{n}.

@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271785 a(n) = Sum_{k=0..(n-1)/2} (n+2-k)*binomial(n-1-k,k).

@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: (sqrt((-x^2+1)/(3*x^2-4*x+1))+sqrt((x^2+1)/(5*x^2-4*x+1))-2)/(4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307555 Number of Motzkin meanders of length n with an even number of humps.

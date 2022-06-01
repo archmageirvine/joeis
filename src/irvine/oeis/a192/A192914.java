@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192914 Constant term in the reduction by (x^2 -&gt; x + 1) of the polynomial C(n)*x^n, where C=A000285.

@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 // Recurrence: +2*n*a[n+0]+(-13*n+4)*a[n-1]+2*(7*n+3)*a[n-2]+8*(n-7)*a[n-3]+2*(-8*n+33)*a[n-4]+5*(n-4)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A303952 a(n) is the number of monic polynomials P(z) of degree n over the complex numbers such that P(z) divides P(z^2).

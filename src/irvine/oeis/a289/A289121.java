@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289121 a(n) = (8 - 2*n + 11*n^2 - 6*n^3 + n^4)/4.

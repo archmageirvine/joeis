@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 // Recurrence: a[n+0]=2*n*a[n-1]-(2*n-2)*a[n-2]-a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A105748 Number of ways to use the elements of {1,..,k}, 0&lt;=k&lt;=2n, once each to form a collection of n (possibly empty) sets, each with at most 2 elements.

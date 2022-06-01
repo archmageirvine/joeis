@@ -1,6 +1,6 @@
 package irvine.oeis.a236;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A236191 a(n) = (-1)^floor( (n-1) / 3 ) * F(n), where F = Fibonacci.

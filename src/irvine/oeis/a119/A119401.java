@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 // Recurrence: a[n+0]=-3*(n-1)*n*a[n-1]-3*(n-1)^4*a[n-2]-(n-2)^3*(n-1)^3*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A119401 a(n) = Sum_{k=0..n} (-1)^(n-k)*(n!/k!)^2*binomial(n,k).

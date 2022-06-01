@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A007698 a(n) = 22*a(n-1) - 3*a(n-2) + 18*a(n-3) - 11*a(n-4). Deviates from A007699 at the 1403rd term.

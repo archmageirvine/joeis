@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024214 a(n) = 4th elementary symmetric function of first n+3 positive integers congruent to 1 mod 3.

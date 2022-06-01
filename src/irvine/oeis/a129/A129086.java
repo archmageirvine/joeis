@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // ogf: ((1-2*x)^2-sqrt((1-4*x)*(1-8*x+16*x^2-4*x^3)))/(2*x*(1-3*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129086 Coefficients of solution to A(x) = (1 + x*A(x)^2) * (1-3*x) / (1-2*x)^2.

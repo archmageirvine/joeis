@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A053112 Expansion of (-1 + 1/(1-9*x)^9)/(81*x); related to A053108.

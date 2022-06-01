@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 // Recurrence: (8*n^2-56*n+61)*a[n+0]=(8*n^2-80*n+147)*a[n-1]+(24*n^4-256*n^3+863*n^2-1061*n+258)*a[n-2]-2*(n-2)*(8*n^3-96*n^2+305*n-239)*a[n-3]-(n-3)*(n-2)*(24*n^4-320*n^3+1431*n^2-2295*n+639)*a[n-4]+(n-5)*(n-4)*(n-3)*(n-2)*(8*n^2-64*n+71)*a[n-5]+(n-6)*(n-5)^2*(n-4)*(n-3)*(n-2)*(8*n^2-40*n+13)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A089656 Given a distribution of n balls, labeled 1,...,n, among n unlabeled contents-ordered urns, arrange the nonempty urns in increasing order of their initial elements: U_1,...U_k and sum the quantities (i-1)(card U_i - 1) for i=1,...,k to get the "weight" of this distribution. These numbers represent the number of distributions of even weight minus the number with odd weight.

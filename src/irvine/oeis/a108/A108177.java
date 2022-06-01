@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // ogf: (-16*x^10-32*x^9-48*x^8-56*x^7-48*x^6-24*x^5-16*x^4-8*x^3+x+1)/((4*x^3-1)*(4*x^3+1)*(x^2+x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A108177 Integers of the form 2^(4n-1) or 2^(4n), n&gt;0 and their immediate neighbors, together with -1, 0 and 1.

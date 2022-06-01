@@ -1,6 +1,6 @@
 package irvine.oeis.a043;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A043291 Every run length in base 2 is 2.

@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 // ogf: (1-sqrt(1-4*x^2-8*x^3))/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A253918 Number of Motzkin n-paths with two kinds of level steps both of which are final steps.

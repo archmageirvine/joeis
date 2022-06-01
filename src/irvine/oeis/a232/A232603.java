@@ -1,6 +1,6 @@
 package irvine.oeis.a232;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A232603 a(n) = 2^n * Sum_{k=0..n} k^p*q^k, where p=2, q=-1/2.

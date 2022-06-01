@@ -1,6 +1,6 @@
 package irvine.oeis.a145;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A145301 a(n) = 12*a(n-1) - 30*a(n-2) with a(0)=1 and a(1)=6.

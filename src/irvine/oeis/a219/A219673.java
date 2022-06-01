@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 // ogf: 1/sqrt(1-(3+sqrt(5))*x+(3-sqrt(5))/2*x^2)+1/sqrt(1-(3-sqrt(5))*x+(3+sqrt(5))/2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A219673 a(n) = Sum_{k=0..n} binomial(n,k)^2*Lucas(k) where Lucas(n) = A000032(n).

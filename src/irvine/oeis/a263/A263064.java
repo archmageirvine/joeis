@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 // Recurrence: (n-1)*n^3*(864*n^4-6480*n^3+17763*n^2-21015*n+9059)*a[n+0]=15*(n-1)*(44928*n^7-404352*n^6+1459788*n^5-2712556*n^4+2772389*n^3-1538829*n^2+423093*n-43506)*a[n-1]+(188352*n^8-2166048*n^7+10541118*n^6-28166748*n^5+44769259*n^4-42719172*n^3+23364582*n^2-6470217*n+671094)*a[n-2]+3*(n-2)*(3456*n^7-38016*n^6+169116*n^5-388336*n^4+486619*n^3-322644*n^2+100014*n-10989)*a[n-3]-(n-3)^3*(n-2)*(864*n^4-3024*n^3+3507*n^2-1473*n+191)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A263064 Number of lattice paths from (n,n,n,n) to (0,0,0,0) using steps that decrement one or more components by one.

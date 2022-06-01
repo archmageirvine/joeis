@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: ((90-84*x+39*x^2-12*x^3+4*x^4)*exp(x))/6
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053126 Binomial coefficients binomial(2*n-3,4).

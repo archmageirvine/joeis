@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 // manually holos at 2021-08-18
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051262 10-factorial numbers.

@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 // Recurrence: a[n+0]=n^5-31*n+31
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A107255 a(n) = n^5 - 31*n + 31, with n*a(n) + n*( n - 1 )*31 = n^6.

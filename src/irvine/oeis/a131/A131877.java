@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 // Recurrence: a[n+0]=14*n+1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A131877 a(n) = 14*n + 1.

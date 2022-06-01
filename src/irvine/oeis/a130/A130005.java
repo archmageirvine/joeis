@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130005 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+577)^2 = y^2.

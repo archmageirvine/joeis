@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // ogf: ((-x-1)*sqrt(4*x^4-4*x^3+x^2-2*x+1)-2*x^3-3*x^2+1)/(4*x^3-2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329665 Number of meanders of length n with Motzkin-steps avoiding the consecutive steps UD, HH and DU.

@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // egf: exp(5*x)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080954 E.g.f. exp(5x)/(1-x).

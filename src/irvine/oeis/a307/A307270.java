@@ -1,6 +1,6 @@
 package irvine.oeis.a307;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307270 Coordination sequence for trivalent node of type alpha''' in the first Moore pentagonal tiling.

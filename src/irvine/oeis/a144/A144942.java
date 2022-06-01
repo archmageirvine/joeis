@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144942 Expansion of x^2*(3*x^3+145*x^2-507*x-25) / ((x-1)*(x^2-34*x+1)*(x^2+34*x+1)).

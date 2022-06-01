@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: a[n+0]=a[n-2]+5*a[n-3]+4*a[n-4]+8*a[n-5]+16*a[n-6]-8*a[n-7]-48*a[n-8]-64*a[n-9]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332392 Number of minimal total dominating sets in the 2 X n king graph.

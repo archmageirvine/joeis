@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 // Recurrence: n^2*(10*n-13)*a[n+0]+2*(-220*n^3+506*n^2-334*n+63)*a[n-1]-4*(10*n-3)*(-3+2*n)^2*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A268545 From the diagonal of 1/(1 - (y + z + x w + x z w + x y w)).

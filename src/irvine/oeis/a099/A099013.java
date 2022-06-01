@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099013 a(n) = Sum_{k=0..n} 3^(k-1)*Fibonacci(k).

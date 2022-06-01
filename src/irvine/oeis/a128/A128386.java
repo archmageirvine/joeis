@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // ogf: (sqrt(1-12*x^2)+2*x-1)/(2*x*(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128386 Expansion of c(3x^2)/(1-x*c(3x^2)), c(x) the g.f. of A000108.

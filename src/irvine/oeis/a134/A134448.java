@@ -1,7 +1,7 @@
 package irvine.oeis.a134;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134448 a(n) = discriminant of Brioschi quintic polynomial x^5 - 10*n*x^3 + 45*n^2*x - n^2.

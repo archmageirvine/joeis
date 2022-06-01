@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // ogf: (1-x^2-sqrt(1-2*x^2-12*x^3+x^4))/(6*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A160568 Diagonal sums of number triangle [k&lt;=n]*C(n,2n-2k)3^(n-k)A000108(n-k).

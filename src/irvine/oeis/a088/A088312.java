@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // Recurrence: a[n+4]-2*(2*n+5)*a[n+3]+(6*n^2+24*n+23)*a[n+2]-2*(n+1)*(n+2)*(2*n+3)*a[n+1]+n*(n+1)^2*(n+2)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088312 Number of sets of lists (cf. A000262) with even number of lists.

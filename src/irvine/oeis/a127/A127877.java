@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127877 Integers of the form (x^4)/24 + (x^3)/6 + (x^2)/2 + x + 1 with x &gt; 0.

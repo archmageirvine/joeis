@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // Recurrence: 24*a[n+0]=(240-54*n-49*n^2+6*n^3+n^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055810 a(n) = T(n,n-5), array T as in A055807.

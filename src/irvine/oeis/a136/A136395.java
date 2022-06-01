@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136395 Binomial transform of [1, 3, 4, 3, 2, 0, 0, 0, ...].

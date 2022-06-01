@@ -1,6 +1,6 @@
 package irvine.oeis.a089;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A089947 G.f.: (1-x)^9/((1-5*x+6*x^2-4*x^3+x^4)*(-1+4*x-3*x^2+x^3)*(1-3*x+x^2)*(-1+2*x)).

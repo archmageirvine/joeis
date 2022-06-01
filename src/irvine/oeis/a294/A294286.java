@@ -1,6 +1,6 @@
 package irvine.oeis.a294;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A294286 Sum of the squares of the parts in the partitions of n into two distinct parts.

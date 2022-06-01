@@ -3,7 +3,7 @@ package irvine.oeis.a327;
 // Recurrence: a[n+0]=3*a[n-1]+a[n-2]-4*a[n-3]-2*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A327993 a(n) = [x^n] ((x - 1)*(x + 1)*(2*x^2 - 1))/(2*x^4 + 4*x^3 - x^2 - 3*x + 1).

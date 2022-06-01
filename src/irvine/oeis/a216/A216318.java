@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 // ogf: (16*x*(1+sqrt(1-4*x)+(5+3*sqrt(1-4*x)-2*x)*(-1+x)*x))/((1+sqrt(1-4*x))^5*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A216318 Number of peaks in all Dyck n-paths after changing each valley to a peak by the transform DU -&gt; UD.

@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // ogf: -x^10*(2090188800*x^10-5075343360*x^9+5480510976*x^8-3456747648*x^7+1407037152*x^6-385459712*x^5+71872912*x^4-8997896*x^3+723346*x^2-33704*x+691)/((12*x-1)*(10*x-1)^2*(8*x-1)^3*(6*x-1)^4*(4*x-1)^5*(2*x-1)^6)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A130662 1/512 the number of permutations of 0..n with exactly 6 maxima.

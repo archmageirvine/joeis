@@ -1,6 +1,6 @@
 package irvine.oeis.a224;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A224809 Number of permutations (p(1), p(2), ..., p(n)) satisfying -k &lt;= p(i)-i &lt;= r and p(i)-i not in the set I, i=1..n, with k=2, r=4, I={-1,1,2,3}.

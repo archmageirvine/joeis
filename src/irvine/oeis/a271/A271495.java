@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 // ogf: -(90194313216*x^11-15300820992*x^10-1979711488*x^9-292552704*x^8-22216704*x^7+10649600*x^6-1024*x^5-144384*x^4+7008*x^3+664*x^2-54*x-1)/(8*x+1)/(16*x-1)/(1409286144*x^10-264241152*x^9-25690112*x^8-4128768*x^7-311296*x^6+170496*x^5-2624*x^4-2208*x^3+148*x^2+8*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A271495 Eighth moments of the Rudin-Shapiro polynomials.

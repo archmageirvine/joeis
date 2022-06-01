@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 // Recurrence: a[n+0]=3*a[n-1]-3*a[n-2]+a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A068380 Engel expansion of sinh(1/3).

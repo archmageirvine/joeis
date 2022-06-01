@@ -1,6 +1,6 @@
 package irvine.oeis.a238;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A238539 A fourth-order linear divisibility sequence: a(n) := (1/9)*(2^n + (-1)^n)*(2^(3*n) - (-1)^n).

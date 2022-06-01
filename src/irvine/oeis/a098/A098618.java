@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: n*(n+1)*a[n+0]-6*n*(2*n-1)*a[n-1]-8*(2*n-1)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098618 Products of A007482 and Catalan numbers: a(n) = A007482(n)*A000108(n).

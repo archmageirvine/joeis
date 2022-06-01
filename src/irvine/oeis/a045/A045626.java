@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A045626 Bends in loxodromic sequence of spheres in which each 5 consecutive spheres are in mutual contact.

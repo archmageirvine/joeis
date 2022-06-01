@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 // ogf: (1-x^8)*(1-x^9)/((1-x^3)*(1-x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A089012 a(n) = 1 if n is an exponent of the Weyl group W(E_6), 0 otherwise.

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 // ogf: (1+x+x^2-sqrt(-3*x^4-6*x^3-5*x^2-2*x+1))/(2*x^2+2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A247333 Number of Dyck paths of semilength n avoiding the consecutive step pattern UDUDU, where U=(1,1) and D=(1,-1).

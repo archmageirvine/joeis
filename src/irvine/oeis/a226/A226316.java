@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 // ogf: 1/2+1/(1+sqrt(1-8*x+8*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A226316 Expansion of g.f. 1/2 + 1/(1+sqrt(1-8*x+8*x^2)).

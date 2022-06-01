@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A088945 a(n) =60*sum(1&lt;=u&lt;=v&lt;=w&lt;=m,u^2*v^2/w).

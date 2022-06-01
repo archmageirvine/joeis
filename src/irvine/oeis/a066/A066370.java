@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 // Recurrence: 32768*a[n+0]=n*(n+1)*(n^2+n+2)*(n^4+2*n^3+3*n^2+2*n+8)*(n^8+4*n^7+10*n^6+16*n^5+25*n^4+28*n^3+28*n^2+16*n+128)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A066370 Quadruply triangular numbers.

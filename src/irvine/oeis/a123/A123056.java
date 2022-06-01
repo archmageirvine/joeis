@@ -1,6 +1,6 @@
 package irvine.oeis.a123;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A123056 Values of X satisfying the equation (X-Y)^4 - 2*X*Y = 0 with integer X &gt;= Y &gt;= 0.

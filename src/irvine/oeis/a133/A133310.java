@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133310 a(3n) = 2n+1, a(3n+1) = 2n+2, a(3n+2) = 2n+1.

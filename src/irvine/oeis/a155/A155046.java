@@ -1,6 +1,6 @@
 package irvine.oeis.a155;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A155046 List of pairs: first pair is (1,1); then follow (x,y) with (x+2y, x+y).

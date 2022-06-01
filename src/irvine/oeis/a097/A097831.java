@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // Recurrence: a[n+0]=18*a[n-1]-18*a[n-2]+a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097831 Partial sums of Chebyshev sequence S(n,17)= U(n,17/2)=A078366(n).

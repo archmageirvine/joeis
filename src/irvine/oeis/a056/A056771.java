@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056771 a(n) = a(-n) = 34*a(n-1) - a(n-2), and a(0)=1, a(1)=17.

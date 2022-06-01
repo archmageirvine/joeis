@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // ogf: (1-x^3+2*x^2)/((x-1)*(x^2+x-1)*(x^2-3*x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A120297 Sum of all matrix elements of n X n matrix M(i,j) = Fibonacci(i+j-1).

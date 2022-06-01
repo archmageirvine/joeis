@@ -1,6 +1,6 @@
 package irvine.oeis.a132;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A132270 a(n) = floor((n^7-1)/(7*n^6)), which is the same as integers repeated 7 times.

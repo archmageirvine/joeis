@@ -1,7 +1,7 @@
 package irvine.oeis.a087;
 // manually 2021-09-26
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087547 a(n) = n!*2^(n+1) * (Integral_{x = 0..1} 1/(1+x^2)^(n+1) dx - Pi*(2*n)!/(2^(n+1)*n!).

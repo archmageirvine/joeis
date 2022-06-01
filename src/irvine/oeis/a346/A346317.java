@@ -1,7 +1,7 @@
 package irvine.oeis.a346;
 // manually holos at 2021-12-09
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 /**
  * A346317 Number of permutations of [n] having two cycles of the form (c1, c2, ..., c_m) where c1 = min_{i&gt;=1} c_i and c_j = min_{i&gt;=j} c_i or c_j = max_{i&gt;=j} c_i.
  * radtorec((4*x^3-7*x^2+5*x-1)*x^2/(4*x-1)/(-1+2*x)^2)

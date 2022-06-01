@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 // ogf: (70159+4207656*x+21980*x^2-51514000*x^3+55017216*x^4+32361728*x^5+54272*x^6)/((1-x)*(1-2*x)^3*(1-4*x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A224464 The hyper-Wiener index of the tetrathiafulvalene dendrimer defined pictorially as D[n] in the Shabani reference.

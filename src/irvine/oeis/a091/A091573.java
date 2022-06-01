@@ -1,6 +1,6 @@
 package irvine.oeis.a091;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A091573 Poincar\u00e9 series [or Poincare series] of the preprojective algebra of an extended Dynkin diagram of type E_6.

@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 // Recurrence: (n-9)*(n-6)*a[n+0]=2*(4*n^3-77*n^2+471*n-916)*a[n-1]-14*(2*n^4-49*n^3+439*n^2-1714*n+2474)*a[n-2]+14*(n-5)*(4*n^4-103*n^3+981*n^2-4117*n+6454)*a[n-3]-7*(n-6)*(10*n^5-320*n^4+4070*n^3-25770*n^2+81333*n-102427)*a[n-4]+14*(4*n^7-185*n^6+3661*n^5-40195*n^4+264477*n^3-1042986*n^2+2282488*n-2138058)*a[n-5]-(28*n^8-1554*n^7+37702*n^6-522242*n^5+4517128*n^4-24979724*n^3+86233855*n^2-169871843*n+146155098)*a[n-6]+(8*n^9-526*n^8+15356*n^7-261226*n^6+2853242*n^5-20747608*n^4+100420076*n^3-311890495*n^2+563892963*n-452026202)*a[n-7]-(n-8)^9*(n-5)*a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A285237 Number of entries in the ninth cycles of all permutations of [n].

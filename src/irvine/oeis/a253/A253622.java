@@ -1,6 +1,6 @@
 package irvine.oeis.a253;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A253622 Centered heptagonal numbers (A069099) which are also centered pentagonal numbers (A005891).

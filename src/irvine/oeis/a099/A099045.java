@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 // Recurrence: n*a[n+0]+8*(-2*n+1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A099045 a(n) = (3*0^n + 4^n*binomial(2*n,n))/4.

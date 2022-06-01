@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // egf: 2/sqrt(5)*exp(x/2)*sinh((sqrt(5)*x)/2)+1/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080568 Sum of the Fibonacci numbers A000045 and the factorials A000142.

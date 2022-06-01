@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 // Recurrence: (n-2)*a[n+0]=(8*n-19)*a[n-1]-(20*n-49)*a[n-2]+(11*n-1)*a[n-3]+(19*n-116)*a[n-4]-21*(n-5)*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A054392 Number of permutations with certain forbidden subsequences.

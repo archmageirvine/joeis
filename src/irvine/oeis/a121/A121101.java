@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 // ogf: x*(10*x^4-21*x^3+3*x^2+5*x-1)/((x-1)*(5*x-1)*(5*x^2-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A121101 Catapolyoctagons (see Cyvin et al. for precise definition).

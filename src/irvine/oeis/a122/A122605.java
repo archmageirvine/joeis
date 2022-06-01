@@ -1,6 +1,6 @@
 package irvine.oeis.a122;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A122605 Expansion of -x*(2*x - 1)*(2*x^2 - 1)*(x^3 + 2*x^2 - x - 1)/((x - 1)*(x^2 + x - 1)*(x^4 - 4*x^3 - 4*x^2 + x + 1)).

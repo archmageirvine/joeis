@@ -3,7 +3,7 @@ package irvine.oeis.a300;
 // ogf: 64*x^3*(87-8648*x+319808*x^2-4495488*x^3-11911936*x^4+941117440*x^5-8636104704*x^6+25777668096*x^7)/((1-4*x)^3*(1-12*x)^2*(1-16*x)^2*(1-28*x)*(1-36*x)*(1-48*x)*(1-64*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A300818 Number of 3-cycles in the n-Keller graph.

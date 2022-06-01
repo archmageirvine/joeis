@@ -1,6 +1,6 @@
 package irvine.oeis.a219;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A219113 Sequence of integers which are simultaneously a sum of consecutive squares and a difference of consecutive cubes.

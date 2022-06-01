@@ -1,6 +1,6 @@
 package irvine.oeis.a110;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A110241 J(n)^3+J(n+1)^3, where J(n) = the Jacobsthal number A001045(n).

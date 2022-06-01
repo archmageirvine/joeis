@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // Recurrence: (n+1)^2*a[n+1]=(12*n^2+12*n+4)*a[n+0]-32*n^2*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081085 Expansion of 1 / AGM(1, 1 - 8*x) in powers of x.

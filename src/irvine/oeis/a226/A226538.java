@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226538 a(2t) = a(2t-1) + 1, a(2t+1) = a(2t) + a(2t-2) for t &gt;= 1, with a(0) = a(1) = 1.

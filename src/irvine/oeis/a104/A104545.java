@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // Recurrence: (n+2)*a[n+0]+(n+2)*a[n-1]+4*(-n+1)*a[n-2]+12*(-n+2)*a[n-3]+12*(-n+3)*a[n-4]+4*(-n+4)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104545 Number of Motzkin paths of length n having no consecutive (1,0) steps.

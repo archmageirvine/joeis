@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A055914 Column 8 of triangle A055907.

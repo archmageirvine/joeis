@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // ogf: x^3*(-225*x^3+60-225*x+342*x^2+90*x^5-50*x^6+9*x^7)/(-1+x)^10
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A060489 Number of 5-block ordered tricoverings of an unlabeled n-set.

@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 // ogf: (2*x^2-4*x+1-sqrt(12*x^2-8*x+1))/(2*x^4-8*x^3+4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A202020 Number of 4-colored Motzkin paths of length n with no peaks at level 1.

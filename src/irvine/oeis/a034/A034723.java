@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: a[n]-(6*n-3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034723 a(n) is the n-th sextic factorial number divided by 3.

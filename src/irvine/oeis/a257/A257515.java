@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 // ogf: (1-2*x^3-sqrt((1-2*x^3)*(1-4*x^2-2*x^3)))/(2*x^2*(1-2*x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A257515 Number of 3-generalized 2-Motzkin paths of length n with no level steps H=(3,0) at odd level.

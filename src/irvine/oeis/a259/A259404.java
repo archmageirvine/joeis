@@ -1,7 +1,7 @@
 package irvine.oeis.a259;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259404 Pentagonal numbers (A000326) that are the sum of twelve consecutive pentagonal numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173031 Sequence whose G.f is given by: 1/(1-z)/(1-2*z)^2/(1-z-z^2).

@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249453 a(0) = 4; for n&gt;0, a(n) = a(n-1) + 2^n - 3.

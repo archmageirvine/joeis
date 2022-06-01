@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // ogf: -(3*x^4-x^3+sqrt(-4*x+1)*(4*x^5-9*x^4+9*x^3-2*x^2))/(12*x^4-31*x^3+27*x^2+sqrt(-4*x+1)*(4*x^4-13*x^3+15*x^2-7*x+1)-9*x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228769 The number of skew sum decomposable permutations which avoid the patterns 3124 and 4312.

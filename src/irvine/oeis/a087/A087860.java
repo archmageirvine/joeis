@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // Recurrence: a[n+0]=3*(n-1)*a[n-1]-(n-1)*(3*n-5)*a[n-2]+(n-2)^2*(n-1)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087860 Expansion of e.g.f.: (1-exp(x/(x-1)))/(1-x).

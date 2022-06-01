@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076307 a(n) = n+min(2*floor(a(n-1)/2), 3*floor(a(n-1)/3)) for n &gt; 1, a(1)=1.

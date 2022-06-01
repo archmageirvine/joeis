@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 // egf: log(1+x+x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A136591 Column 1 of triangle A136590.

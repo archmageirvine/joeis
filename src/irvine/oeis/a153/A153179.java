@@ -1,7 +1,7 @@
 package irvine.oeis.a153;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153179 a(n) = L(11*n)/L(n) where L(n) = A000204(n).

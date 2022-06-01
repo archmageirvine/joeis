@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // Recurrence: a[n+0]=4*n-2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308607 Number of (not necessarily maximum) cliques in the wheel graph on n vertices.

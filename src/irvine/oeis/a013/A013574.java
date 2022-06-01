@@ -1,6 +1,6 @@
 package irvine.oeis.a013;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A013574 Minimal scope of an (n,2) difference triangle.

@@ -1,6 +1,6 @@
 package irvine.oeis.a107;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A107908 a(n) = (n+1)(n+2)^2*(n+3)^2*(n+4)(3n+5)/720.

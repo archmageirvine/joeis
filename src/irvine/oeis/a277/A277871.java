@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // ogf: (4*x*(1-sqrt(1-2*(1-sqrt(1-4*x)))))/(1-sqrt(1-4*x))^3/sqrt(1-4*x)-1/x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277871 a(n) = Sum_{i=0..n+1} binomial(2*n-i,n-i+1)*Catalan(i).

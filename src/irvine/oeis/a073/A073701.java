@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 // Recurrence: a[n+0]=(n^2-1)*a[n-1]+(n-1)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A073701 a(n) = n^2*a(n-1)+(-1)^n.

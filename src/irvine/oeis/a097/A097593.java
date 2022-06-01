@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // Recurrence: a[n+0]=(2*n-1)*a[n-1]-(n-2)*(n-1)*a[n-2]-(n-2)*(n-1)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097593 Number of increasing runs of even length in all permutations of [n].

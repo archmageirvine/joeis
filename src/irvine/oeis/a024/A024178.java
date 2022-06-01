@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024178 a(n) = floor(3rd elementary symmetric function of 2,3,...,n+3)/(2+3+...+n+3)).

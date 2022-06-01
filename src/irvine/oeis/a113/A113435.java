@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // ogf: (1-x^3)/(1-x-2*x^3+x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A113435 a(n) = a(n-1) + Sum_{k=0..n/3} a(n-3k) with a(0)=1.

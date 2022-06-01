@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // Recurrence: 24*a[n+0]=(n+1)^2*(n+2)*(n+3)*(3*n+4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108650 a(n) = (n+1)^2*(n+2)*(n+3)*(3*n+4)/24.

@@ -1,6 +1,6 @@
 package irvine.oeis.a275;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A275546 a(n) = (tan(1*Pi/11))^(2*n) + (tan(2*Pi/11))^(2*n) + (tan(3*Pi/11))^(2*n) + (tan(4*Pi/11))^(2*n) + (tan(5*Pi/11))^(2*n).

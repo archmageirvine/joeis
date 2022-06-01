@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // Recurrence: a[n+0]=(12*n^2-24*n+13)*a[n-1]-12*(n-2)*(n-1)*(2*n-3)^2*a[n-2]+16*(n-3)*(n-2)^2*(n-1)*(2*n-5)*(2*n-3)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081442 Expansion of e.g.f.: cosh(x/sqrt(1-x^2)) (even powers).

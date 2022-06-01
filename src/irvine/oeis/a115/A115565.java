@@ -1,6 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A115565 a(n) = 5*n^4 - 10*n^3 + 20*n^2 - 15*n + 11.

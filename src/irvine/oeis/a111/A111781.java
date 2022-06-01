@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // 0: radtorec(1/5040/(-x^2+1)^(1/2)*x^7/(1-x)^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**

@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // Recurrence: a[n+0]=n^7+n
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190578 a(n) = n^7 + n.

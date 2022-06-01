@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A214438 Numerator of correlation kernels arising in adding a list of numbers in base 3 considering the distribution of number of carries.

@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: n*a[n+0]+5*(-5*n+4)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034688 Expansion of (1-25*x)^(-1/5), related to quintic factorial numbers A008548.

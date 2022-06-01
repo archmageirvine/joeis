@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 // Recurrence: (6 + 10*n + 4*n^2) * a(n) + (45 - 4*n  - n^2)*a(n+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A268446 Number of North-East lattice paths from (0,0) to (n,n) that cross the diagonal y = x horizontally exactly three times.

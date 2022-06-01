@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.FiniteSequence;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.ReaderSequence;
 import irvine.oeis.Sequence;
 

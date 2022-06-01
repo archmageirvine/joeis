@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103878 Expansion of x / ((1-12x)(1-15x)(1-20x)(1-30x)(1-60x)).

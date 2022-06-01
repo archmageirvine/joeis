@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 // Recurrence: n*a[n+0]+3*(-2*n+3)*a[n-1]+5*(n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A122737 Expansion of 1 - 3*x - sqrt(1 - 6*x + 5*x^2).

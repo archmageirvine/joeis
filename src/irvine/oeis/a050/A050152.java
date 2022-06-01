@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 // ogf: (x*sqrt(x^2-6*x+1)-x^2+3*x)/(-x^4+sqrt(x^2-6*x+1)*(x^3-3*x^2-3*x+1)+6*x^3-2*x^2+6*x-1)+1/(4*x)-1/(4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A050152 a(n) = T(n,n+3), array T as in A050143.

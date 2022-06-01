@@ -1,6 +1,6 @@
 package irvine.oeis.a248;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A248205 Indices of centered octagonal numbers (A016754) that are also pentagonal numbers (A000326).

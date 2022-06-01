@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137235 a(n) = (n+1)/2 if n is odd; a(n) = n/2 + 6 if n is even.

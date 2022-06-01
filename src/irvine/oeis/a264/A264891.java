@@ -1,6 +1,6 @@
 package irvine.oeis.a264;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A264891 a(n) = n*(5*n - 3)*(25*n^2 - 15*n - 6)/8.

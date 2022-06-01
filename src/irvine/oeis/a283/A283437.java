@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // ogf: (1+x-x^3-x^4+x^5+x^6)/(1-x^2-x^3+x^4+x^5-x^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A283437 Periodic {1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1}.

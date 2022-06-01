@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099622 Sum C(n-k,k-1)4^(n-k-1)(5/4)^k, k=0..floor(n/2).

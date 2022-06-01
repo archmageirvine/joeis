@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 // Recurrence: n^2*a[n+0]=3*(39*n^2-52*n+20)*a[n-1]-441*(3*n-4)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A276021 n^2 * a(n) = 3*(39*n^2 - 52*n + 20) * a(n-1) - 441*(3*n-4)^2 * a(n-2), with a(0)=1, a(1)=21.

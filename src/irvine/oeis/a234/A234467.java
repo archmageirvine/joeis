@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 // Recurrence: +7*n*(7*n+3)*(7*n+4)*(7*n+5)*(7*n+6)*(7*n+8)*(7*n+9)*a[n+0]-128*(2*n+1)*(4*n+1)*(4*n+3)*(8*n+1)*(8*n+3)*(8*n+5)*(8*n+7)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A234467 a(n) = 9*binomial(8*n + 9,n)/(8*n + 9).

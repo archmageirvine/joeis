@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287275 Number of set partitions of [n] such that for each block all absolute differences between consecutive elements are &lt;= three.

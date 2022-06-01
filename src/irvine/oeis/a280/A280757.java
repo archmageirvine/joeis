@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280757 Expansion of x*(2 + x)/(1 - 4*x^2 - x^3 + x^4).

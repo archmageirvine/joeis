@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 // Recurrence: a[n+0]=4*n^5+10*n^4+13*n^3+11*n^2+5*n+1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A094201 a(n) = 4*n^5 + 10*n^4 + 13*n^3 + 11*n^2 + 5*n + 1.

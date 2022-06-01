@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 // ogf: (1+3*x)/(1-2*x-4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A134418 Row sums of triangle A134417.

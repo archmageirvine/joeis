@@ -1,6 +1,6 @@
 package irvine.oeis.a300;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A300760 Number of ways to select 4 numbers from the set of the first n natural numbers avoiding 3-term arithmetic progressions.

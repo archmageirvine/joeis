@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 // DO NOT EDIT here!
 
 import irvine.oeis.transform.EulerTransformSequence;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A094022 Expansion of eta(q^2) * eta(q^30) / (eta(q^3) * eta(q^5)) in powers of q.

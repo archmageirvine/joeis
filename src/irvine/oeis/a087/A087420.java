@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087420 a(n) is the sum of the squares of the sizes of the conjugacy classes in the dihedral group D_2n.

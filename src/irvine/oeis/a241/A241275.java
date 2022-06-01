@@ -1,6 +1,6 @@
 package irvine.oeis.a241;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A241275 a(n) = 6*a(n-1) + 5*(2^(n-1)-1) for n &gt; 0, a(0) = 0.

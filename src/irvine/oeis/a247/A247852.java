@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247852 The 7th Hermite Polynomial evaluated at n: H_7(n) = 128*n^7 -1344*n^5 + 3360*n^3 - 1680*n.

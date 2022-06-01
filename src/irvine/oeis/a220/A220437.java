@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220437 Number of domino tilings of a cross whose center is a 4 X 4 square and in which each of the four arms has length n.

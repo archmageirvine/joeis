@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // ogf: (sqrt(1-20*x^2)+10*x-1)/(10*x*(1-6*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A156195 a(2n+2) = 6*a(2n+1), a(2n+1) = 6*a(2n) - 5^n*A000108(n), a(0)=1.

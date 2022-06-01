@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 // Recurrence: n*a[n+0]+(7-9*n)*a[n-1]+2*(7*n-17)*a[n-2]+10*(3-n)*a[n-3]+5*(n-4)*a[n-4]+(5-n)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A162478 Expansion of 1/sqrt(1-4x/(1-x)^4).

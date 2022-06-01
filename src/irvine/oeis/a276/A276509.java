@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 // ogf: (2+25*x)/(1-11*x+10*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A276509 Numbers n in base 10 such that the digits of 2 + n are the digits of 2n written in reverse order.

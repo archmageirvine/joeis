@@ -1,6 +1,6 @@
 package irvine.oeis.a206;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A206278 Total number of triangles in Cayley graph Cay(Z_{2^n}, QR*(2^n)).

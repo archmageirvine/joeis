@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215097 a(n) = n^3 - a(n-2) for n &gt;= 2 and a(0)=0, a(1)=1.

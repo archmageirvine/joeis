@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 // Recurrence: (2*n+1)*a[n+2]=(2*n^2+5*n+4)*a[n+1]+(2*n^2+5*n+3)*a[n+0]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A105926 First differences of A000166.

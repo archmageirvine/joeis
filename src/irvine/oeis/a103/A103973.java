@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 // ogf: 1/sqrt(1-8*x^2)+(1-sqrt(1-8*x^2))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A103973 Expansion of (sqrt(1-8*x^2)+8*x^2+2*x-1)/(2*x*sqrt(1-8*x^2)).

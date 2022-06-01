@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // ogf: 20/(11+9*sqrt(1-40*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132897 Expansion of 1/(1-9x*c(10x)), where c(x) is the g.f. of A000108.

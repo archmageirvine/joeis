@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A006189 Number of self-avoiding walks of any length from NW to SW corners of a grid or lattice with n rows and 3 columns.

@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 // ogf: (1+7x+22x^2+39x^3+42x^4+27x^5)/((1+x+x^2)(1+3x+3x^2)(1+2x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A141532 Inverse binomial transform of A141425.

@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 // ogf: (1-2*x+x^2-sqrt(1-4*x+2*x^2+x^4))/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A086581 Number of Dyck paths of semilength n with no DDUU.

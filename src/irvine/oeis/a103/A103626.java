@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 // Recurrence: a[n+0]=+a[n-4]+a[n-8]+a[n-12]-2*a[n-16]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A103626 Four interleaved sequences (1,1,1,1,1,1....), (1,2,3,5,8,12,...), (1,2,4,6,10,16,..) and (1,2,4,7,11,18,..) each with recurrence b(n) = b(n-1)+b(n-2)+b(n-3)-2*b(n-4).

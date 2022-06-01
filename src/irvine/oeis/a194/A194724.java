@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // ogf: 3/4+3/(2*(2+4*sqrt(1-12*x)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A194724 Number of quaternary words either empty or beginning with the first character of the alphabet, that can be built by inserting n doublets into the initially empty word.

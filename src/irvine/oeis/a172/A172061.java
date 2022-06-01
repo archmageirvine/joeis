@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 // Recurrence: +2*(n+4)*a[n+0]+(-13*n-36)*a[n-1]+(15*n+16)*a[n-2]+(19*n+14)*a[n-3]+2*(2*n-1)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A172061 Expansion of (2/(3*sqrt(1-4*z)-1+4*z))*((1-sqrt(1-4*z))/(2*z))^k with k=4.

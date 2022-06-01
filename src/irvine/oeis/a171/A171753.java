@@ -1,6 +1,6 @@
 package irvine.oeis.a171;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A171753 Expansion of 1/(1-3x-x^2/(1-3x-x^2/(1-3x))).

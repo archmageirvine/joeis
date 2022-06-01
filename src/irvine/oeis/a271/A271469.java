@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 // Recurrence: 8*n*(2*n-1)*(4*n-1)*(4*n+1)*(204*n^4-1341*n^3+3191*n^2-3286*n+1242)*a[n+0]=12*(45696*n^8-391776*n^7+1376164*n^6-2580579*n^5+2808064*n^4-1797694*n^3+651566*n^2-119476*n+8160)*a[n-1]-6*(n-2)*(29376*n^7-237168*n^6+760044*n^5-1236774*n^4+1082233*n^3-496791*n^2+108530*n-8400)*a[n-2]+9*(n-3)*(n-2)*(3*n-8)*(3*n-4)*(204*n^4-525*n^3+392*n^2-111*n+10)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A271469 G.f. satisfies: A(x) = 1 + x*(A(x)^3 - A(x)^4 + A(x)^5).

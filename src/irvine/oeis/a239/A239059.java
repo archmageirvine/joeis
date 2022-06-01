@@ -1,6 +1,6 @@
 package irvine.oeis.a239;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A239059 Sum of the two smallest parts from the partitions of 4n into 4 parts with smallest part = 1.

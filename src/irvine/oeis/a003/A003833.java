@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A003833 Sectors around outside of dartboard.

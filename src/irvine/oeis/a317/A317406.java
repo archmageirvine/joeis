@@ -3,7 +3,7 @@ package irvine.oeis.a317;
 // egf: sin(x/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A317406 Expansion of e.g.f. sin(x/(1 - x)).

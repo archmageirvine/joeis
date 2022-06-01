@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // ogf: (2*x^2-x^3-x^4+x^5)/(1-4*x+x^2+11*x^3-11*x^4-x^5+4*x^6-x^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A330051 a(n) = 1 + F(2*n+1) - (F(n+4) - (-1)^n*F(n-2))/2 where F=A000045.

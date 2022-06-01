@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // ogf: (629+2182*x-11030*x^2+125276*x^3+678456*x^4+7763712*x^5+22853574*x^6+64054092*x^7+3818545836*x^8-14897917296*x^9+14884638960*x^10-3900734400*x^11)/((1-x)*(1-2*x)*(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A177421 a(n) = 6*a(n-1)-8*a(n-2)-9 for n &gt; 10; a(0)=629, a(1)=6585, a(2)=26259, a(3)=221931, a(4)=1917027, a(5)=18285939, a(6)=125792217, a(7)=703932681, a(8)=7131271077, a(9)=26172260445, a(10)=103884128445.

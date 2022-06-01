@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // ogf: (2*sin(1/3*arcsin(3*sqrt(3)*sqrt(x))))/(sqrt(3)*sqrt(x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098272 a(n) = 2^(2n+1) * binomial(3n,n)/(2n+1).

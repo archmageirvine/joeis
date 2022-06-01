@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A034187 Not necessarily symmetric n X 4 crossword puzzle grids.

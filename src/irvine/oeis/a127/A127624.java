@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127624 An 11th-order Fibonacci sequence: a(n) = a(n-1) + ... + a(n-11).

@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // Recurrence: -(n+3)*(5*n-2)*a[n+0]+(35*n^2+31*n+18)*a[n-1]+4*(5*n+3)*(2*n+1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115194 A sequence related to A000108 (Catalan numbers).

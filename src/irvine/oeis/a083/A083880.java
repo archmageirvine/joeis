@@ -1,6 +1,6 @@
 package irvine.oeis.a083;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A083880 a(0)=1, a(1)=5, a(n) = 10*a(n-1) - 23*a(n-2), n &gt;= 2.

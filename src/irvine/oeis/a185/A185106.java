@@ -1,6 +1,6 @@
 package irvine.oeis.a185;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A185106 Column 4 of A181783.

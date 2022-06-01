@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: x^2*(1-4*x+2*x^2+x^3)/(1-7*x+12*x^2-7*x^3+3*x^4+2*x^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333514 Number of self-avoiding closed paths on an n X 4 grid which pass through four corners ((0,0), (0,3), (n-1,3), (n-1,0)).

@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 // ogf: x*(1+380*x+117570*x^2+7069296*x^3+125309188*x^4+856514276*x^5+2594956089*x^6+3729352800*x^7+2594956089*x^8+856514276*x^9+125309188*x^10+7069296*x^11+117570*x^12+380*x^13+x^14)/(1-x)^16
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A270842 Number of nonisomorphic edge colorings of the Petersen graph with at most n colors.

@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // Recurrence: 4*(n-1)*n*(91*n^2-543*n+788)*a[n+0]=6*(n-1)*(182*n^3-1359*n^2+3228*n-2432)*a[n-1]-4*(91*n^4-907*n^3+3119*n^2-4259*n+1776)*a[n-2]+12*(n-4)*(182*n^3-1359*n^2+3189*n-2332)*a[n-3]-5*(n-5)*(n-4)*(91*n^2-361*n+336)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A113337 Number of noncrossing partitions of [n] with all blocks of odd size and 1 and n in the same block.

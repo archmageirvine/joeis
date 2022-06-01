@@ -1,6 +1,6 @@
 package irvine.oeis.a071;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A071768 Determinant of the n X n matrix whose element (i,j) equals |i-j| (Mod 3).

@@ -1,6 +1,6 @@
 package irvine.oeis.a260;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A260953 List of numbers of the forms (2^(4m+3)-3)/5 and (2^(12m+4)-3)/13 arranged in increasing order.

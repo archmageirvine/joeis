@@ -1,6 +1,6 @@
 package irvine.oeis.a254;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A254465 a(n) = 35*2^n + 10*4^n + 20*3^n + 4*5^n + 6^n + 56.

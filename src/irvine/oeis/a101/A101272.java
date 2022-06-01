@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // ogf: (1-x^6)/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A101272 a(n)=n, n &lt;=6; a(n)=6, n &gt; 6.

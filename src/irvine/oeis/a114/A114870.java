@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 // egf: (exp(x)-1)/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A114870 a(n) = A002627(n+1) - A002627(n) - n!.

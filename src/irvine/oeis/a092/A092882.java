@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 // ogf: -(1159418880*x^10-1168935552*x^9+583922688*x^8-190907480*x^7+43558356*x^6-6961978*x^5+771571*x^4-58030*x^3+2824*x^2-80*x+1)/((2*x-1)*(3*x-1)*(4*x-1)*(5*x-1)*(6*x-1)*(7*x-1)*(8*x-1)*(9*x-1)*(10*x-1)*(12*x-1)*(16*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A092882 Number of ordered 4-multiantichains on an n-set.

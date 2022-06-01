@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 // Recurrence: (n+1)*(3*n-2)*a[n+0]=4*(6*n+1)*(2*n-1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A186229 Expansion of (2F1( (-(1/2), 1/6); (-2/3))( 16 x) -1)/(2*x).

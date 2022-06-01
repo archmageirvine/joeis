@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098574 a(n) = Sum_{k=0..floor(n/7)} C(n-5*k,2*k).

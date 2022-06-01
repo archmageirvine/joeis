@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // Recurrence: a[n+0]=(n^2+1)^2+1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A178390 a(n) = (n^2+1)^2+1.

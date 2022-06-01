@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A053599 Number of nonempty subsequences {s(k)} of 1..n such that the difference sequence is palindromic.

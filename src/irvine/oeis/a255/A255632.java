@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255632 Number of n-length words on {0,1,2,3,4} avoiding runs of zeros of length 1 (mod 3).

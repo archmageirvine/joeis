@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 // egf: (exp(-x)*x^2*(3-2*x+x^2))/(2*(1-x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A065087 a(n) = A000166(n)*binomial(n+1,2).

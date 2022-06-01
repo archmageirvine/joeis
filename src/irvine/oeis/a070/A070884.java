@@ -1,6 +1,6 @@
 package irvine.oeis.a070;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A070884 7 + x where x is congruent to {0, 4, 6, 10, 12, 16, 22, 24} mod 30.

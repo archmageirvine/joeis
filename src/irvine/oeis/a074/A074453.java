@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A074453 Sum of determinants of 2nd order principal minors of powers of inverse of the matrix ((1,1,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,0)).

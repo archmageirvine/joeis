@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165808 Expansion of x*(403+2967*x+1047*x^2-x^3)/(1-x)^4.

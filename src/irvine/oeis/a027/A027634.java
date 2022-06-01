@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027634 Poincar\u00e9 (or Molien) series for ring of Siegel modular forms of genus 3 (associated with full modular group Gamma_3).

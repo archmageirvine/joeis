@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A030654 n^4*a(n) is the number of spheres in complex projective space tangent to 4 smooth surfaces of degree n in general position.

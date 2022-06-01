@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=3*a[n-1]-6*a[n-2]+10*a[n-3]-12*a[n-4]+12*a[n-5]-10*a[n-6]+6*a[n-7]-3*a[n-8]+a[n-9]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330082 a(n) = 5*A064038(n).

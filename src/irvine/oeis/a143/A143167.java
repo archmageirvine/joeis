@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // Recurrence: a[n+0]=(8*n+1)*a[n-1]-2*(4*n-1)*(2*n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A143167 Second column of triangle A000369: |S2(-3;n+2,2)|.

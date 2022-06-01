@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 // Recurrence: n*a[n+0]=(2*n-2)*a[n-2]+(4*n-6)*a[n-3]-(n-2)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A182883 Number of weighted lattice paths of weight n having no (1,0)-steps of weight 1.

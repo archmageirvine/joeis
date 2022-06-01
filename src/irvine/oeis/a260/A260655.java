@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 // ogf: (1/162*(1-18*x-sqrt(1-36*x)))/x^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A260655 a(n) = 4*36^n*Gamma(n+3/2)/(sqrt(Pi)*(n+2)!).

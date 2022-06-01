@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // Recurrence: 4*n*a[n+0]+2*(2*n-7)*a[n-1]+(-51*n+83)*a[n-2]+8*(-2*n+13)*a[n-3]+140*(n-4)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100087 Expansion of x/(sqrt(1-4*x^2)+x-1).

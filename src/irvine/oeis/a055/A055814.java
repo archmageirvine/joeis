@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // Recurrence: a[n+0]=(n-1)*a[n-2]+(n-1)*(n-2)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055814 Expansion of e.g.f.: exp(x^3/3 + x^2/2).

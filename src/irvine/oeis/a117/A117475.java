@@ -1,6 +1,6 @@
 package irvine.oeis.a117;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A117475 The values of c in a^2 + b^2 = c^2 where b - a = 23 and gcd(a,b,c) = 1.

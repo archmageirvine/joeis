@@ -3,7 +3,7 @@ package irvine.oeis.a326;
 // ogf: x*(3*x^2+4*x+3)*(x^2-x+1)/((x+1)*(x^2+1)*(x-1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A326422 Numbers k such that A000045(k) mod 5 is prime.

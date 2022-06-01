@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 // Recurrence: 4*(-n+1)*a[n+0]+5*(79*n-200)*a[n-1]+250*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A064343 Generalized Catalan numbers C(5,5; n).

@@ -1,6 +1,6 @@
 package irvine.oeis.a272;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A272574 a(n) = f(9, f(8, n)), where f(k,m) = floor(m*k/(k-1)).

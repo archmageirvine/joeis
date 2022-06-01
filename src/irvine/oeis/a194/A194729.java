@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // Recurrence: n*a[n+0]+(-113*n+48)*a[n-1]+1296*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A194729 Number of 9-ary words either empty or beginning with the first character of the alphabet, that can be built by inserting n doublets into the initially empty word.

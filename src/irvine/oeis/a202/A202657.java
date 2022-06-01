@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 // ogf: -x^6*(31709*x^16+377288*x^15+2265487*x^14+8441426*x^13+22166758*x^12+43217858*x^11+64805639*x^10+75943200*x^9+70077016*x^8+50738668*x^7+28477437*x^6+12074418*x^5+3711058*x^4+771370*x^3+96173*x^2+5692*x+83)/((x-1)^13*(x+1)^6*(x^2+x+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A202657 Number of ways to place 6 nonattacking semi-queens on an n X n board.

@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // ogf: (1-x^3-sqrt((1-x^3)^2-4*x*x^3))/(2*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308616 Number of well-formed formulas of length n in a formal propositional language with one unitary operator, one binary operator, and one propositional variable.

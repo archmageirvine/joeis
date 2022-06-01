@@ -1,6 +1,6 @@
 package irvine.oeis.a248;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A248094 The hyper-Wiener index of the hexagonal triangle T_n, defined in the He et al. reference.

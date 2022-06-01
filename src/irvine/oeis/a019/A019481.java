@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A019481 a(n) = 3*a(n-1) + a(n-2) - 2*a(n-3) (agrees with A019480 for n &lt;= 19 only).

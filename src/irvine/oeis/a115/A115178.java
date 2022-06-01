@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // ogf: (1-sqrt(1-4*x^2*(1+x)))/(2*x^2*(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115178 Expansion of c(x^2+x^3), c(x) the g.f. of A000108.

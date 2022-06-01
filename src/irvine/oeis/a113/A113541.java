@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // Recurrence: a[n+0]=19*(n-1)-a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A113541 Numbers n such that 18n^2+1 is multiple of 19.

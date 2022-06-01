@@ -1,7 +1,7 @@
 package irvine.oeis.a194;
 // manually 2021-09-25
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A194019 E.g.f. = exp(-x*(x+4)/2)/(1-x)^3.

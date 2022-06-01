@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // ogf: (173568*x^8-3773248*x^7+10330944*x^6-719888*x^5+1468896*x^4-35208*x^3-3608*x^2+170*x-1)/(-98304*x^9+4024832*x^8-36900032*x^7+37771968*x^6-3950640*x^5+5084576*x^4-23648*x^3-9016*x^2+290*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A227667 Number of lattice paths from {n}^5 to {0}^5 using steps that decrement one component by 1 such that for each point (p_1,p_2,...,p_5) we have abs(p_{i}-p_{i+1}) &lt;= 1.

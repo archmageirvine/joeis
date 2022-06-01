@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 // Recurrence: a[n+0]=5*a[n-1]-4*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A155721 Positions of parity change in A033035.

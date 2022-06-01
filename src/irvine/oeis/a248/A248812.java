@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 // egf: log((1+x)/(1-x))/2+1/(1-x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A248812 Repeated terms of (2n)! (A010050).

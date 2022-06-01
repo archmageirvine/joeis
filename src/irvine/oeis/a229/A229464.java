@@ -1,6 +1,6 @@
 package irvine.oeis.a229;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A229464 Binomial transform of (2*n + 1)!.

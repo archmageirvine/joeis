@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114542 Expansion of -x*(x+1)/(9389*x^3 + 4691*x^2 - 1).

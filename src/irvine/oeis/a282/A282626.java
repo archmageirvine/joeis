@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 // egf: ((1+sqrt(1-4*x^3))/2)^(1/3)+((1-sqrt(1-4*x^3))/2)^(1/3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A282626 Exponential expansion of the real root y = y(x) of y^3 - 3*x*y - 1.

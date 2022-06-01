@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // Recurrence: a[n+0]=a[n-19]+(n+1)*(n-19)+128
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177237 Partial sums of round(n^2/19).

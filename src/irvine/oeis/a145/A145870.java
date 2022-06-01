@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 // Recurrence: (n+3)*(n+5)*(n+6)*(192*n^2+992*n+1321)*a[n+0]=4*(192*n^5+3392*n^4+21897*n^3+64596*n^2+84418*n+35925)*a[n-1]+2*(n-1)*(3264*n^4+28000*n^3+74185*n^2+47329*n-41250)*a[n-2]-4*(n-2)*(n-1)*(3648*n^3+30272*n^2+73819*n+38895)*a[n-3]-105*(n-3)*(n-2)*(n-1)*(192*n^2+1376*n+2505)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A145870 Number of involutions of length 2n which are invariant under the reverse-complement map and have no decreasing subsequences of length 8.

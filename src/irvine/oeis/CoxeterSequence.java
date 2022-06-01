@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * Special generating functions for Coxeter group sequences.

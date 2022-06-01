@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212592 a(n) is the difference between multiples of 7 with even and odd digit sum in base 6 in interval [0,6^n).

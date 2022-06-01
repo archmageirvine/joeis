@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 // egf: exp(-x^2+16*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A158531 a(n) = Hermite(n,8).

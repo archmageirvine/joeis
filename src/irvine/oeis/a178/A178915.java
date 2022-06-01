@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // ogf: 3-3*x^3+1/(x-1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A178915 Rearrangement of natural numbers so that every partial sum is composite.

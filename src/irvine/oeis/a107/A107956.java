@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 // Recurrence: 2880*a[n+0]=(n+1)(n+2)^2*(n+3)^2*(n+4)(5*n^2+21*n+20)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A107956 a(n) = (n+1)(n+2)^2*(n+3)^2*(n+4)(5n^2 + 21n + 20)/2880.

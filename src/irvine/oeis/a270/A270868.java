@@ -1,6 +1,6 @@
 package irvine.oeis.a270;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A270868 a(n) = n^4 + 3*n^3 + 8*n^2 + 9*n + 2.

@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 // Recurrence: a[n+0]=(n+1)*a[n-1]+(n-1)^2*a[n-2]-(n-2)*(n-1)^2*a[n-3]+(n-3)*(n-2)*(n-1)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A270229 Number of matchings (i.e., Hosoya index) in P_{2} X K_{n}.

@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // ogf: (2*x)/(3*sqrt(1-4*x^2)+2*x-3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102898 A Catalan-related transform of 3^n.

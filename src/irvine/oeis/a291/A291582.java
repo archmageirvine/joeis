@@ -1,6 +1,6 @@
 package irvine.oeis.a291;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A291582 Maximum number of 6 sphinx tile shapes in a sphinx tiled hexagon of order n.

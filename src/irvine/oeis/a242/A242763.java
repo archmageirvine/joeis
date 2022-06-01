@@ -1,6 +1,6 @@
 package irvine.oeis.a242;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A242763 a(n) = 1 for n &lt;= 7; a(n) = a(n-5) + a(n-7) for n&gt;7.

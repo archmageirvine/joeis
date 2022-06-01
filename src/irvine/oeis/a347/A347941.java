@@ -1,7 +1,7 @@
 package irvine.oeis.a347;
 // manually linrec/linrec2 at 2022-04-29 07:28
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A347941 For sets of n random points in the real plane, a(n) is an upper bound for the minimal number of nearest neighbors.

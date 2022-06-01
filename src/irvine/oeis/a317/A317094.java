@@ -3,7 +3,7 @@ package irvine.oeis.a317;
 // egf: exp(x/(1-x))/(1-x)+exp(x)*(1+3*x+x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A317094 a(n) = (n + 1)^2 + n!*L_n(-1), where L_n(x) is the Laguerre polynomial.

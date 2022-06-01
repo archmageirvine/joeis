@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099764 a(n) = n^2 * (n+1)^2 * (n+2)^2 = 36*A001249(n-1).

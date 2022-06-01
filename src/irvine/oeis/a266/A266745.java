@@ -1,6 +1,6 @@
 package irvine.oeis.a266;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A266745 Expansion of 1/((1-t^5)^2*(1-t)*(1-t^3)*(1-t^7)*(1-t^9)).

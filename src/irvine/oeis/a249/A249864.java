@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249864 A special solution of X(n)^2 - 120*Y(n)^2 = 7^(2*n), n &gt;= 0. The present sequence gives the X values.

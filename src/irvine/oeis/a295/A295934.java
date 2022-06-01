@@ -3,7 +3,7 @@ package irvine.oeis.a295;
 // ogf: (-1+sqrt(1-4*x)+x*(-1+1/(1-4*x)^(3/2)+4/sqrt(1-4*x)-2/(-1+x)+2*x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A295934 Number of (not necessarily maximum) cliques in the n-odd graph.

@@ -1,6 +1,6 @@
 package irvine.oeis.a082;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A082209 a(1) = 1, a(n) = smallest number such that the concatenation of a(n-1) and a(n) is a square.

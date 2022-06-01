@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 // Recurrence: a[n+0]=n^60
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A276377 60th powers: a(n) = n^60.

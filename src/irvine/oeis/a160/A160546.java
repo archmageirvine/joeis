@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // Recurrence: a[n+0]=a[n-1]+a[n-28]-a[n-29]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A160546 Not divisible by 29.

@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: ((1-3*x)*(2-9*x+5*x^2-(2-3*x)*sqrt(1-6*x+5*x^2)))/(2*x^2*sqrt(1-6*x+5*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126180 Number of branches in all hex trees with n edges (n&gt;=1).

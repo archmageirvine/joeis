@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 // ogf: (1+6*x^2+12*x^3+5*x^4+8*x^5+4*x^6-12*x^7+4*x^8-8*x^9+4*x^10+4*x^12)/((1-x)^2*(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A038522 On a (2n+1) X (2n+1) board, let m(i) be the number of squares that are i knight's moves from center; sequence gives max m(i) for i &gt;= 0.

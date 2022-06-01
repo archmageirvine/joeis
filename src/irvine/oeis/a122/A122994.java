@@ -1,6 +1,6 @@
 package irvine.oeis.a122;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A122994 a(n) = a(n-1)+9*a(n-2) initialized with a(0)=1, a(1)=3.

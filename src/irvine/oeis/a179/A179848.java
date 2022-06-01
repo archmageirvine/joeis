@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 // ogf: 1-sinh(arcsinh(sqrt((27*x)/4))/3)/sqrt((3*x)/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A179848 Expansion of series reversion of generating function for triangular numbers.

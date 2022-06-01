@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 // ogf: 1-(2*x^2)/(2*x^2-3*x+1-sqrt(1-2*x-3*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A054391 Number of permutations with certain forbidden subsequences.

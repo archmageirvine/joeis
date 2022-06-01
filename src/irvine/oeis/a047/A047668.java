@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // ogf: x*(4-3*x+7*x^2-x^3+x^4)/(1-x)^5
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A047668 Row 4 of array in A047666.

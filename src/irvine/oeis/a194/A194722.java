@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // ogf: x*(1+92368*x+18396110*x^2+371157402*x^3+1763669368*x^4+2567824154*x^5+1206169122*x^6+163325950*x^7+4293143*x^8+4862*x^9)/(x-1)^10
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A194722 Number of n-ary words beginning with the first character of the alphabet, that can be built by inserting ten doublets into the initially empty word.

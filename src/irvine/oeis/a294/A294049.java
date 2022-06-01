@@ -1,6 +1,6 @@
 package irvine.oeis.a294;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A294049 Number of binary strings of length n avoiding substrings 1000, 1011, 1101, or 1111.

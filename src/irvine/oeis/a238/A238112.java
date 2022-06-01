@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 // Recurrence: (n+1)*a[n+0]+(-8*n+5)*a[n-1]+(13*n-32)*a[n-2]+2*(-n+4)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A238112 Expansion of g.f.: (1-5*x+2*x^2+(2*x-1)*sqrt(x^2-6*x+1))/(4*x).

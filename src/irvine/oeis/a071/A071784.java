@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 // ogf: (-3x^2+2)/((1-x)(1-x^2+x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A071784 Determinant of the n X n matrix whose element (i,j) equals the floor( Phi^(i-j) + 1).

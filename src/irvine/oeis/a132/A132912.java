@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // Recurrence: a[n+0]-(n+2)*(2*n-1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132912 a(n)=C(n+2,2)(2n)!/2^n.

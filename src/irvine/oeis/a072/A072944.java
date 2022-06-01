@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 // ogf: (1+x)/2+(3+5*x+8*x^2)/(2*(1-4*x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A072944 a(1)=2, a(n+1) = 2*a(n) - phi(a(n)) where phi is the Euler totient function A000010.

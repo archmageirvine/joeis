@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 // egf: 2/(1-4*x)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A151817 a(n) = 2*(2*n)!/n!.

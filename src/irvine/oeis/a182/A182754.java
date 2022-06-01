@@ -1,6 +1,6 @@
 package irvine.oeis.a182;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A182754 a(1) = 1, a(2) = 21, a(n) = 77*a(n-2) for n&gt;=3.

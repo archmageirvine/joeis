@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 // Recurrence: (n+1)*(10*n-7)*a[n+0]+2*n*(5*n-88)*a[n-1]-4*(25*n-22)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A110609 a(n) = n * C(2*n,n-1).

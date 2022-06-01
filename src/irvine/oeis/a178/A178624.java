@@ -11,11 +11,7 @@ public class A178624 extends GeneralRecurrence {
 
   /** Construct the sequence */
   public A178624() {
-    super(0, 1, 1, -3, 11);
-  }
-
-  @Override
-  protected void initialize() {
+    super(1, 1, 1, -3, 11);
     mLambda.add(n -> a(n - 1).multiply(a(n - 3)).multiply(1).add(a(n - 2).square().multiply(3)).divide(a(n - 4)));
   }
 }

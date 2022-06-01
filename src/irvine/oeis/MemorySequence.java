@@ -13,6 +13,8 @@ import irvine.math.z.Z;
 public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
 
   private final int mOffset;
+  private final int mNumInitialTerms;
+  private int mPos = 0;
 
   /**
    * Construct a new memory sequence with specified offset.
@@ -21,6 +23,7 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
    */
   public MemorySequence(final int offset, final long... initialTerms) {
     mOffset = offset;
+    mNumInitialTerms = initialTerms.length;
     for (final long t : initialTerms) {
       add(Z.valueOf(t));
     }
@@ -32,6 +35,7 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
    */
   public MemorySequence(final int offset) {
     mOffset = offset;
+    mNumInitialTerms = 0;
   }
 
   /**
@@ -53,6 +57,10 @@ public abstract class MemorySequence extends ArrayList<Z> implements Sequence {
 
   @Override
   public Z next() {
+    if (mPos < mNumInitialTerms) {
+      // These terms are preloaded into the list
+      return super.get(mPos++);
+    }
     final Z t = computeNext();
     add(t);
     return t;

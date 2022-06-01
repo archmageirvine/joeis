@@ -1,5 +1,6 @@
 package irvine.oeis.a054;
 
+import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.PolynomialUtils;
@@ -26,7 +27,8 @@ public class A054733 extends A052283 {
     while (mP.size() <= n) {
       mP.add(PolynomialUtils.zToQ(g(mP.size())));
     }
-    return PolynomialUtils.qToZ(PolynomialUtils.inverseEuler(mP, n, n * (n - 1)).coeff(n).shift(-1));
+    final DegreeLimitedPolynomialRingField<Q> fld = new DegreeLimitedPolynomialRingField<>(Rationals.SINGLETON, n * (n - 1));
+    return PolynomialUtils.qToZ(PolynomialUtils.inverseEuler(fld, mP).coeff(n).shift(-1));
   }
 
   @Override

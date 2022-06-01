@@ -1,6 +1,6 @@
 package irvine.oeis.a139;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A139609 a(n) = 36*n + 9.

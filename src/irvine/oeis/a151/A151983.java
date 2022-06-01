@@ -1,6 +1,6 @@
 package irvine.oeis.a151;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A151983 Numbers congruent to {0, 1} mod 32.

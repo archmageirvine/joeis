@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A006223 Number of binary rooted trees of height n requiring 3 registers.

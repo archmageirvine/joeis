@@ -1,6 +1,6 @@
 package irvine.oeis.a080;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A080239 Antidiagonal sums of triangle A035317.

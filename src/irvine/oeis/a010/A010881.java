@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
 import irvine.math.LongUtils;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A010881 Simple periodic sequence: n mod 12.

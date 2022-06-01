@@ -1,6 +1,6 @@
 package irvine.oeis.a108;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A108680 Kekul\u00e9 numbers for certain benzenoids.

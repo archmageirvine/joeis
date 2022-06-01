@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A288916 Number of 5-cycles in the n X n queen graph.

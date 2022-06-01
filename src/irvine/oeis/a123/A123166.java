@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // egf: exp(4*x)/4+exp(x)-1/4
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123166 Row sums of A123162.

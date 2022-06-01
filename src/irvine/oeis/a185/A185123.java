@@ -1,6 +1,6 @@
 package irvine.oeis.a185;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A185123 a(n) = n 9's sandwiched between two 1's.

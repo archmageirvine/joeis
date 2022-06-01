@@ -1,6 +1,6 @@
 package irvine.oeis.a145;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A145910 a(n) = (1 + 3*n)*(4 + 3*n)/2.

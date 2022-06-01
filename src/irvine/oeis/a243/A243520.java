@@ -1,6 +1,6 @@
 package irvine.oeis.a243;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A243520 Numbers that are congruent to {0, 8} mod 11.

@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // ogf: (1/sqrt(1-6*x+5*x^2)+1/sqrt(1-2*x-3*x^2))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102319 A mean binomial transform of the central binomial numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A143010 Crystal ball sequence for the A4 x A4 lattice.

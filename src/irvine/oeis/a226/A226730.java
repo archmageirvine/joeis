@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 // egf: 1/(1-x)+1/(2*sqrt(1-4*x))-3/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A226730 a(n) = n! + (2*n-1)!/(n-1)!.

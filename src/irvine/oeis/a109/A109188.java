@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 // ogf: (x*(1-x))/(1-2*x-3*x^2)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A109188 Number of (1,0) steps in all Grand Motzkin paths of length n.

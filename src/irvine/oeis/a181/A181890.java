@@ -1,6 +1,6 @@
 package irvine.oeis.a181;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A181890 a(n) = 8*n^2 + 14*n + 5.

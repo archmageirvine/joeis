@@ -1,7 +1,7 @@
 package irvine.oeis.a162;
 // manually 2021-06-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A162970 Number of 2-cycles in all involutions of {1,2,...,n}.

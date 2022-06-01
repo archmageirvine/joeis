@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 // Recurrence: a[n+0]=n^26
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A089081 26th powers: a(n) = n^26.

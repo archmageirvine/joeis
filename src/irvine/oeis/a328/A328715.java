@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: n^5*a[n+0]=(2*n-1)*(n^2-n+1)*(3*n^2-3*n+1)*a[n-1]+(n-1)*(125*n^4-500*n^3+903*n^2-806*n+289)*a[n-2]-2*(n-2)*(n-1)*(2*n-3)*(135*n^2-405*n+419)*a[n-3]-(n-3)*(n-2)*(n-1)*(3319*n^2-13276*n+14637)*a[n-4]+3867*(n-4)*(n-3)*(n-2)*(n-1)*(2*n-5)*a[n-5]+10395*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328715 Constant term in the expansion of (1 + v + w + x + y + z + 1/v + 1/w + 1/x + 1/y + 1/z)^n.

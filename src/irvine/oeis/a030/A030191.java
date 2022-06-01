@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A030191 Scaled Chebyshev U-polynomial evaluated at sqrt(5)/2.

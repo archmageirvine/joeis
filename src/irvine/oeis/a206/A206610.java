@@ -1,6 +1,6 @@
 package irvine.oeis.a206;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A206610 Fibonacci sequence beginning 13, 8.

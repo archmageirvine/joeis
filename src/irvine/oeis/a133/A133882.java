@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // ogf: (1+3*x+2*x^2+2*x^3+3*x^4+x^5)/(1-x^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A133882 a(n) = binomial(n+2,n) mod 2^2.

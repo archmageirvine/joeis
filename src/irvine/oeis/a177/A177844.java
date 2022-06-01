@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // Recurrence: a[n+0]=6*a[n-1]-8*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177844 a(n) = 6*a(n-1)-8*a(n-2) for n &gt; 3; a(0)=279, a(1)=3996, a(2)=16008, a(3)=64784.

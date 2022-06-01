@@ -1,6 +1,6 @@
 package irvine.oeis.a182;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A182868 a(n) = -1 + n + 4*n^2.

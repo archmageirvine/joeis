@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081903 A sequence related to binomial(n+5, 5).

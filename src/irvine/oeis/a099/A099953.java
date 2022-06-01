@@ -1,7 +1,7 @@
 package irvine.oeis.a099;
 // manually 2021-05-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A099953 a(n) = A076795(n) - 1.

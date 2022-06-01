@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A143458 Expansion of 1/(x^k*(1-x-3*x^(k+1))) for k=7.

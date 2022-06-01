@@ -1,6 +1,6 @@
 package irvine.oeis.a254;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A254011 Expansion of (1 - x^18) / ((1 - x^5) * (1 - x^6) * (1 - x^9)) in powers of x.

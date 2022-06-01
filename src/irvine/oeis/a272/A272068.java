@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 // ogf: 59049*x*(1+49940*x+78366000*x^2+4994000000*x^3+10000000000*x^4)/((1-x)*(1-10*x)*(1-100*x)*(1-1000*x)*(1-10000*x)*(1-100000*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A272068 a(n) = (10^n-1)^5.

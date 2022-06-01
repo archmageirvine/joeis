@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124479 From the game of Quod: number of "squares" on an n X n array of points with the four corner points deleted.

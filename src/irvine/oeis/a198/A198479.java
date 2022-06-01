@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 // ogf: -10*x*(10*x+1)*(100000000*x^8+10120000000*x^7+46828000000*x^6+40836400000*x^5+9019900000*x^4+408364000*x^3+4682800*x^2+10120*x+1)/(10*x-1)^11
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A198479 a(n) = 10^n * n^10.

@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // ogf: -512*(232243200*x^11-1275402240*x^10+2252081664*x^9-2074564992*x^8+1174193888*x^7-439150208*x^6+112057808*x^5-19636984*x^4+2325314*x^3-177676*x^2+7899*x-155)*x^10/((10*x-1)^2*(8*x-1)^3*(6*x-1)^4*(4*x-1)^5*(2*x-1)^6)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A159713 Number of permutations of 1..n arranged in a circle with exactly 5 local maxima.

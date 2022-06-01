@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226309 a(n) = a(n-1) + a(n-2) + a(n-3) + 2*a(n-4) with a(0)=2, a(1)=1, a(2)=5, a(3)=10.

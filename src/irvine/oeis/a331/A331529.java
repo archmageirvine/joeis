@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // ogf: x^2*(1-x)*(1+x)^2*(1-x+x^2)*(1+x+x^2)*(1+x^2+2*x^3+x^4)/(1-x^2-x^3-x^4-3*x^5-3*x^6-x^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A331529 a(n) is the number of nonnegative integers that can be represented in a 7-segment display by using only n segments (version A006942).

@@ -1,6 +1,6 @@
 package irvine.oeis.a254;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A254469 Sixth partial sums of cubes (A000578).

@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128429 A linear recurrence sequence: a(n) = a(n-1) + a(n-3) + a(n-5) + a(n-6).

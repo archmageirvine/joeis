@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098647 Trace sequence associated to the 4 X 4 Krawtchouk matrix and its transpose.

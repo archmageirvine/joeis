@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // ogf: -4+2x-2x^2+6x^3+(4+6x^2+80x^4+24x^5+680x^6+246x^7+802x^8+46x^9+8024x^10+6802x^11+4680x^12+24680x^13+246802x^14+46802x^15+68020x^16+68024x^17+80240x^18+80246x^19+24600x^20+68000x^21+24000x^22+80000x^23+46000x^24+80200x^25+60000x^26+40000x^27+20000x^28-200000x^30)/(1-100001x^16+100000x^32)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A098757 Smallest available integer which fits into the repeating pattern 02468.

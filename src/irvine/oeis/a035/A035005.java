@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A035005 Number of possible queen moves on an n X n chessboard.

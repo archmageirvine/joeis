@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 // Recurrence: (n+2)*a[n+0]+3*(-n-1)*a[n-1]+(n-7)*a[n-3]+2*(2*n-3)*a[n-4]+(n-5)*a[n-5]+(-n+4)*a[n-6]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A110320 Number of blocks in all RNA secondary structures with n nodes (an RNA secondary structure can be viewed as a restricted noncrossing partition).

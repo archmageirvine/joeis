@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A204675 a(n) = 16*n^2 + 2*n + 1.

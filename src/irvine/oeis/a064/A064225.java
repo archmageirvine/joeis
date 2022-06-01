@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A064225 (9*n^2+5*n+2)/2.

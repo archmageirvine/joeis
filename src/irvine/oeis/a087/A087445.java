@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087445 Numbers that are congruent to 1 or 5 mod 12.

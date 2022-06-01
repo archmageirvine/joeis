@@ -1,6 +1,6 @@
 package irvine.oeis.a229;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A229144 Partial sums of (Fibonacci numbers mod 3).

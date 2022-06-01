@@ -1,7 +1,7 @@
 package irvine.oeis.a257;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257715 Pentagonal numbers (A000326) that are the sum of six consecutive pentagonal numbers.

@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // Recurrence: (n-1)*n^2*(8*n^3-66*n^2+171*n-139)*a[n+0]=2*(n-1)^2*(32*n^4-288*n^3+886*n^2-1071*n+396)*a[n-1]+24*(2*n-3)*(4*n^4-37*n^3+114*n^2-136*n+50)*a[n-2]-32*(n-2)^2*(32*n^4-288*n^3+886*n^2-1071*n+396)*a[n-3]+128*(n-3)^2*(2*n-7)*(8*n^3-42*n^2+63*n-26)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187151 Number of walks of length n starting at origin and ending in first quadrant on a square lattice.

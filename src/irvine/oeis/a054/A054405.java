@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054405 Row sums of array T as in A055215.

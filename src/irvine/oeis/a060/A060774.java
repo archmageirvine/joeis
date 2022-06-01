@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // ogf: -6/sqrt(1-4*x)+(12*cos(arccos(1-(27*x)/2)/6))/sqrt(4-27*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A060774 a(n) = number of lattice paths from (0,0,0) to (n,n,n) along the cracks on the surface of a Rubik-ized n X n X n cube so that no step increases distance from goal.

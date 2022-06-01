@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 // ogf: 2/(1-x+2*x^3+sqrt(1-2*x-3*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A114582 Number of Motzkin paths of length n having no UDH's starting at level 0 (U=(1,1), H=(1,0), D=(1,-1)).

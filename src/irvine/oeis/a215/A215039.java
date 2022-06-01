@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215039 a(n) = Fibonacci(2*n)^3, n&gt;=0.

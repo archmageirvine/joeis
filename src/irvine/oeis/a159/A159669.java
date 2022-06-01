@@ -1,6 +1,6 @@
 package irvine.oeis.a159;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A159669 Expansion of x*(x + 1)/(x^2 - 28*x + 1).

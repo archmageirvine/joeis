@@ -4,7 +4,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A014073 Number of vectors abcdefg with a,b,... &gt;= 0, a+...+g=n, a&gt;={b,...g}.

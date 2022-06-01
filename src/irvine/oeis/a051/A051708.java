@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // ogf: ((x*(1-x))/sqrt(1-10*x+9*x^2)+x)/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051708 Number of ways to move a chess rook from the lower left corner to square (n,n), with the rook moving only up or right.

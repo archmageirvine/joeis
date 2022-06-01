@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // ogf: (-x^48-x^46-x^45-x^43+x^42+3*x^41+x^40-9*x^39-x^38+3*x^37+x^36-4*x^35+x^34+12*x^33+x^32-2*x^31+x^30+x^29-x^28+x^26-3*x^25-2*x^24-x^23+2*x^22-x^20+2*x^19+3*x^18-2*x^16-x^15+2*x^13-3*x^12+x^11-x^8+x^4+x^3+x^2+x+1)/((1+x)*(1-x+x^2)*(-1+x)^2*(1+x+x^2)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A283904 Relative of Hofstadter Q-sequence: a(1) = 1, a(2) = 1; thereafter a(n) = a(n-2a(n-1)) + a(n-3a(n-2)).

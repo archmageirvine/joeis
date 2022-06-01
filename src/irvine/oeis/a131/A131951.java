@@ -1,6 +1,6 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A131951 a(n) = 2^n + n*(n+3).

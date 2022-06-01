@@ -1,6 +1,6 @@
 package irvine.oeis.a240;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A240924 Digital root of squares of numbers not divisible by 2, 3 or 5.

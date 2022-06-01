@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052390 Number of 4-element intersecting families (with not necessary distinct sets) whose union is an n-element set.

@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100139 a(n) = Sum_{k=0..floor(n/6)} C(n-3k,3k) * 3^k * 2^(n-6k).

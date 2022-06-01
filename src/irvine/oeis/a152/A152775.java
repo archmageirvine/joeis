@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152775 Numbers with 3n binary digits where every run length is 3, written in binary.

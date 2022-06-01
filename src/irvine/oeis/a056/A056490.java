@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056490 Number of periodic palindromes using exactly four different symbols.

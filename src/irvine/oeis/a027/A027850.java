@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027850 (n+1)*(14*n^3+13*n^2+6*n+1).

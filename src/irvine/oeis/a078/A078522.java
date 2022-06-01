@@ -1,6 +1,6 @@
 package irvine.oeis.a078;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A078522 Numbers n such that (n+1)*(2*n+1) is a perfect square.

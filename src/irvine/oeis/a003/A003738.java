@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A003738 Number of Hamiltonian paths in W_5 X P_n.

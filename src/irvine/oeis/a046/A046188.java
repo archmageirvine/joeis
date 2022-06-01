@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A046188 Indices of octagonal numbers which are also pentagonal.

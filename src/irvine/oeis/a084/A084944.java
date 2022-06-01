@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // Recurrence: 2*a[n+0]=n*(9*n-7)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084944 Hendecagorials: n-th polygorial for k=11.

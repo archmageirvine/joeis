@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249910 Digital root of A003500(n).

@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271532 a(n) = (-1)^n*(n + 1)*(5*n^2 + 10*n + 1).

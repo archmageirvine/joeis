@@ -1,6 +1,6 @@
 package irvine.oeis.a276;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A276917 Numbers obtained by alternatively adding centered pentagonal layers of 5*(2^n-1) and 5*(3^n-1) elements.

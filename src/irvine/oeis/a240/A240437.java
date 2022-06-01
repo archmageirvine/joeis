@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 // ogf: (20*x^2)/(1-5*x-5*x^2+25*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A240437 Number of non-palindromic n-tuples of 5 distinct elements.

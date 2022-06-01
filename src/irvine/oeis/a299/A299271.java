@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 // Recurrence: (6+4*n)*a[n+0]+(-14-8*n)*a[n+1]+(4*n+8)*a[n+2]+(4*n+24)*a[n+3]+(-50-8*n)*a[n+4]+(35+5*n)*a[n+5]+(-8-n)*a[n+6]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A299271 Number of Motzkin paths of length n with all ascents ending at odd heights.

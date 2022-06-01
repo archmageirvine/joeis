@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A006010 Number of paraffins (see Losanitsch reference for precise definition).

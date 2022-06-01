@@ -1,6 +1,6 @@
 package irvine.oeis.a084;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A084181 2^n+(-2)^n-(-1)^n.

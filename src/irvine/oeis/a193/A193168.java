@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 // Recurrence: a[n+0]=12*a[n-1]+6*a[n-2]+50*a[n-3]+300*a[n-4]-194*a[n-5]-833*a[n-6]+352*a[n-7]+661*a[n-8]-84*a[n-9]-219*a[n-10]+72*a[n-11]+54*a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A193168 Number of simple paths from (1, 1) to (n, 3) on an n X 3 grid with king moves allowed.

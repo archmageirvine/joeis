@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A003485 Hurwitz-Radon function at powers of 2.

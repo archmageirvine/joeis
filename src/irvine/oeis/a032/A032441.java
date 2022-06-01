@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A032441 a(n) = Sum_{i=0..2} binomial(Fibonacci(n),i).

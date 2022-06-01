@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.transform.BhjTransformSequence;
 
 /**

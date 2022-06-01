@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 // Recurrence: a[n+0]=29*n
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A195819 Multiples of 29.

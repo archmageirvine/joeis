@@ -1,6 +1,6 @@
 package irvine.oeis.a228;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A228081 a(n) = 64^n + 1.

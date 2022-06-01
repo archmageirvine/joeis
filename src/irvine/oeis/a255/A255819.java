@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 // egf: exp((x*(1+4*x+x^2))/(1-x)^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A255819 E.g.f.: exp(Sum_{k&gt;=1} k^3 * x^k).

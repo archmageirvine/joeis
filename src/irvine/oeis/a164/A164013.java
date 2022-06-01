@@ -1,6 +1,6 @@
 package irvine.oeis.a164;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A164013 3 times centered triangular numbers: 9*n*(n+1)/2 + 3.

@@ -1,6 +1,6 @@
 package irvine.oeis.a082;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A082134 Expansion of e.g.f. x*exp(3*x)*cosh(x).

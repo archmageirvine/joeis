@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // ogf: (x^4-x^3-3*x^2-2*x-1)/(x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A329516 G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).

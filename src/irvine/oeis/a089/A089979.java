@@ -1,6 +1,6 @@
 package irvine.oeis.a089;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A089979 Expansion of 1/(1-4x-4x^3).

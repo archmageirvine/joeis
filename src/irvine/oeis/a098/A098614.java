@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: n*(n+1)*a[n+0]-2*n*(2*n-1)*a[n-1]-4*(2*n-1)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098614 Product of Fibonacci and Catalan numbers: a(n) = A000045(n+1)*A000108(n).

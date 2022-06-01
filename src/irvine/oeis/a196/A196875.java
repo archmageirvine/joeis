@@ -1,6 +1,6 @@
 package irvine.oeis.a196;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A196875 a(n) = a(n-4) + a(n-3) + a(n-2) + a(n-1) + (n-5).

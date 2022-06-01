@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056001 A second-order recursive sequence.

@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // Recurrence: n*a[n+0]+2*(-2*n+1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088218 Total number of leaves in all rooted ordered trees with n edges.

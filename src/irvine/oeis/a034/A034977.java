@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: n*a[n+0]+8*(-8*n+7)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034977 Expansion of 1/(1-64*x)^(1/8), related to octo-factorial numbers A045755.

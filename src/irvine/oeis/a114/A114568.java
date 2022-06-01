@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114568 a(n) = 4694*a(n-2) + 9380*a(n-3) for n &gt;= 3 with a(0) = 0 and a(1) = a(2) = 1.

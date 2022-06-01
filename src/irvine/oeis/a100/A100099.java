@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // ogf: (sqrt(1-4*x^2)*(sqrt(1-4*x^2)+4*x-1))/(2*(5*x-2)*(4*x^2-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100099 An inverse Chebyshev transform of x/(1-2x).

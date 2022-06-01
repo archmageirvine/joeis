@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094103 a(n) = sum along n-th diagonal of A094102 (sloping downward to left).

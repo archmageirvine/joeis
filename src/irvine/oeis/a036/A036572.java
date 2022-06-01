@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A036572 Number of tetrahedra in largest triangulation of polygonal prism with regular polygonal base.

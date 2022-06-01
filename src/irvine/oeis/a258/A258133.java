@@ -1,6 +1,6 @@
 package irvine.oeis.a258;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A258133 Expansion of tri-digit zeros interlaced with an arithmetic progression of positive and negative numbers.

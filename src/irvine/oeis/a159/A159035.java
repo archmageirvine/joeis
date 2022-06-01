@@ -1,7 +1,7 @@
 package irvine.oeis.a159;
 // manually linrec 2021-09-26
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A159035 a(0)=1=a(1), a(2)=2, a(3)=5; thereafter a(n+3)=4*a(n+2)-4*a(n+1)+2*a(n) for n&gt;=1.

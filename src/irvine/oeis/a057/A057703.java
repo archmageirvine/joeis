@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057703 a(n) = n*(94 + 5*n + 25*n^2 - 5*n^3 + n^4)/120.

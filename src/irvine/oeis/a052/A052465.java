@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052465 a(n) is the smallest positive integral solution k to 24*k == 1 (mod 11^n).

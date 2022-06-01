@@ -1,6 +1,6 @@
 package irvine.oeis.a083;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A083294 a(n) = (4 + (-9)^n)/5.

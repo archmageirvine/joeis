@@ -1,6 +1,6 @@
 package irvine.oeis.a236;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A236773 a(n) = n + floor( n^2/2 + n^3/3 ).

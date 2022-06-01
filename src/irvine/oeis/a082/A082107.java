@@ -1,6 +1,6 @@
 package irvine.oeis.a082;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A082107 Diagonal sums of number array A082105.

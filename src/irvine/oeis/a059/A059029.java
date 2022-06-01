@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059029 a(n) = n if n is even, 2*n + 1 if n is odd.

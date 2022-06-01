@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A065530 If n is odd then a(n) = n, else a(n) = n*(n+2).

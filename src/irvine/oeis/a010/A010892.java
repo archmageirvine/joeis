@@ -1,6 +1,6 @@
 package irvine.oeis.a010;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A010892 Inverse of 6th cyclotomic polynomial. A period 6 sequence.

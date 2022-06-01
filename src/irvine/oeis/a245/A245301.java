@@ -1,6 +1,6 @@
 package irvine.oeis.a245;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A245301 a(n) = n*(7*n^2 + 15*n + 8)/6.

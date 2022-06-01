@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099371 Expansion of g.f.: x/(1 - 9*x - x^2).

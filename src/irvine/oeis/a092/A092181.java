@@ -1,6 +1,6 @@
 package irvine.oeis.a092;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A092181 Figurate numbers based on the 24-cell (4-D polytope with Schlaefli symbol {3,4,3}).

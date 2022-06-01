@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165716 Number of tilings of a 3 X n rectangle using dominoes and right trominoes.

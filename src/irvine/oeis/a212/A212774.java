@@ -1,7 +1,7 @@
 package irvine.oeis.a212;
 // manually 2021-05-29
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A212774 Amounts (in cents) of coins in denominations 1, 5, 10, 25, and 50 (cents) which, when using the minimal number of coins, have equal numbers of all denominations used.

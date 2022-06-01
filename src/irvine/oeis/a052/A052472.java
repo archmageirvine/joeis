@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052472 Number of independent components for a Weyl tensor in n dimensions.

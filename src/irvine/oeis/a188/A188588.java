@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 // Recurrence: a[n+0]=(n+1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A188588 Row sums of 1-Euler triangle A188587.

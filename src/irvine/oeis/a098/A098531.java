@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098531 Sum of fifth powers of first n Fibonacci numbers.

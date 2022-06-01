@@ -1,6 +1,6 @@
 package irvine.oeis.a080;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A080460 a(1) = 2; for n &gt; 1, a(n) = a(n-1) if n is already in the sequence, a(n) = a(n-1) + 4 otherwise.

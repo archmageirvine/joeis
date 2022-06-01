@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179596 Eight white kings and one red king on a 3 X 3 chessboard. G.f.: (1 + x)/(1 - 2*x - 11*x^2 - 6*x^3).

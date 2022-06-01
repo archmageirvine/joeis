@@ -1,6 +1,6 @@
 package irvine.oeis.a267;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A267711 Numbers k such that k mod 3 = k mod 5.

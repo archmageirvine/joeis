@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // Recurrence: (5*n^16-176*n^15+2888*n^14-29332*n^13+206454*n^12-1068276*n^11+4205934*n^10-12861022*n^9+30891328*n^8-58524140*n^7+87229074*n^6-101275380*n^5+89823673*n^4-58824210*n^3+26795412*n^2-7559784*n+985608)*a[n+0]=8*(n^14-20*n^13+169*n^12-754*n^11+1630*n^10+564*n^9-15184*n^8+52244*n^7-109015*n^6+167071*n^5-202816*n^4+191592*n^3-125145*n^2+45333*n-5832)*a[n-1]-(5*n^16-96*n^15+848*n^14-4580*n^13+16966*n^12-45892*n^11+94310*n^10-151266*n^9+192520*n^8-195196*n^7+155666*n^6-94052*n^5+39329*n^4-6798*n^3-4572*n^2+5400*n-1944)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A078475 Determinant of rank n matrix of 1..n^2 filled successively back and forth along antidiagonals.

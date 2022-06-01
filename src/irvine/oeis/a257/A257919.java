@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257919 The number of combinatorial equivalence classes of n-endomorphisms on a rank-3 semigroup.

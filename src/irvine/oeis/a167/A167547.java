@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167547 The fourth row of the ED1 array A167546.

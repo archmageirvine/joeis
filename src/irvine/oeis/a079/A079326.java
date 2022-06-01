@@ -1,6 +1,6 @@
 package irvine.oeis.a079;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A079326 a(n) = the largest number m such that if m monominoes are removed from an n X n square then an L-tromino must remain.

@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259164 Positive heptagonal numbers (A000566) that are squares (A000290) divided by 2.

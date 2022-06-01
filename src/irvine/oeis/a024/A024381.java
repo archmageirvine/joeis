@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024381 a(n) = sum of squares of first n positive integers congruent to 1 mod 4.

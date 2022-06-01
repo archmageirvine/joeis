@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081034 7th binomial transform of the periodic sequence (1,8,1,1,8,1...).

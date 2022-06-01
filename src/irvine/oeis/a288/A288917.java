@@ -1,7 +1,7 @@
 package irvine.oeis.a288;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A288917 Number of 6-cycles in the n X n queen graph.

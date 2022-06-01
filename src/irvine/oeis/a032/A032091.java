@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A032091 Number of reversible strings with n-1 beads of 2 colors. 4 beads are black. String is not palindromic.

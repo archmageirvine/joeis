@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // Recurrence: a[n+0]=2*a[n-1]+a[n-3]+6
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100691 Number of self-avoiding paths with n steps on a triangular lattice in the strip Z x {0,1}.

@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255815 Numbers of words on {0,1,2,3,4,5} having no isolated zeros.

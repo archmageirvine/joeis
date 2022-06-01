@@ -1,6 +1,6 @@
 package irvine.oeis.a073;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A073636 Period 3: repeat [1, 8, 9] ; Digital root of A000578(n) = n^3 for n &gt;= 1.

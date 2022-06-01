@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // egf: (cos(x)+sin(x)+(-1+4*x+3*x^2)*exp(x))/4
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330707 a(n) = ( 3*n^2 + n - 1 + (-1)^floor(n/2) )/4.

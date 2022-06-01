@@ -1,6 +1,6 @@
 package irvine.oeis.a086;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A086346 On a 3 X 3 board, the number of n-move paths for a chess king ending in a given corner square.

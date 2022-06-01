@@ -1,6 +1,6 @@
 package irvine.oeis.a266;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A266958 Numbers m such that 9*m+13 is a square.

@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098646 Trace sequence of 3 X 3 Krawtchouk matrix.

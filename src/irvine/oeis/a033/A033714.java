@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A033714 Number of zeros in numbers 0 to 999..9 (n digits).

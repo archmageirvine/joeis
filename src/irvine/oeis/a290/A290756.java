@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290756 Number of (non-null) connected induced subgraphs of the complete tripartite graph K_{n,n,n}.

@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A002316 Related to Bernoulli numbers.

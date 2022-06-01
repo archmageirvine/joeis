@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140870 8*P_4(2n), 8 times the Legendre Polynomial of order 4 at 2n.

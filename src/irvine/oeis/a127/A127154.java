@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 // ogf: (2*(1+x))/(1+x+2*x^2+(1+x)*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A127154 Number of Dyck paths of semilength n and having no UDUD's starting at level 0; here U=(1,1), D=(1,-1).

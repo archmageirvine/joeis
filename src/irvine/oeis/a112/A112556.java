@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 // ogf: ((2*(1+x))/(1-x)+x/(1-4*x)^(1/2))/(2+x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A112556 Sums of squared terms in rows of triangle A112555.

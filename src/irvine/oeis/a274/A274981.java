@@ -1,7 +1,7 @@
 package irvine.oeis.a274;
 // manually 2020-12-30
 
-import irvine.oeis.PaddingSequence;
+import irvine.oeis.recur.PaddingSequence;
 
 /**
  * A274981 Decimal expansion of gamma(2) = 7/5.

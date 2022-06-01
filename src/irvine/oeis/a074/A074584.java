@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A074584 Esanacci (hexanacci or "6-anacci") numbers.

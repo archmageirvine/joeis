@@ -1,6 +1,6 @@
 package irvine.oeis.a272;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A272459 The total number of different isosceles trapezoids, excluding squares, that can be drawn on an n X n square grid where the corners of each individual trapezoid lie on a lattice point.

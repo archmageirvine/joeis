@@ -1,6 +1,6 @@
 package irvine.oeis.a217;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A217975 2*n^2 - 7 is a square.

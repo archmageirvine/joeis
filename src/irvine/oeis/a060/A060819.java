@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060819 a(n) = n / gcd(n,4).

@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 // Recurrence: a[n+0]=-a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A155751 A variation on 10^n mod 17.

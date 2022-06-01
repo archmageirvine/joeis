@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A061319 Column 4 of A061315.

@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 // ogf: (1/2*(32*x^4-88*x^3+52*x^2+sqrt(-4*x+1)*(36*x^3-34*x^2+10*x-1)-12*x+1))/(64*x^4-48*x^3+12*x^2-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A217711 Total number of 321 patterns in the set of permutations avoiding 123.

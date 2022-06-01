@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057355 a(n) = floor(3*n/5).

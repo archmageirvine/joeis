@@ -1,6 +1,6 @@
 package irvine.oeis.a238;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A238379 Expansion of (1 - x)/(1 - 36*x + x^2).

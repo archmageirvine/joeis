@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140407 A000225 interleaved with A000051.

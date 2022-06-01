@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179441 Number of solutions to a+b+c &lt; d+e with each of a,b,c,d,e in {1..n+1}.

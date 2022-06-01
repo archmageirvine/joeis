@@ -1,6 +1,6 @@
 package irvine.oeis.a266;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A266046 Real part of Q^n, where Q is the quaternion 2 + j + k.

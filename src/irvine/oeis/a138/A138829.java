@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 // ogf: (-x^14+x^13-x^4+x^3+x+1)/(x^2-2*x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A138829 Bisection of imperfect numbers A132999.

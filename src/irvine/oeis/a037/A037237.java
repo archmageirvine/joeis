@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A037237 Expansion of (3 + x^2) / (1 - x)^4.

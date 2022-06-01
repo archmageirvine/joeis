@@ -1,6 +1,6 @@
 package irvine.oeis.a010;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A010875 a(n) = n mod 6.

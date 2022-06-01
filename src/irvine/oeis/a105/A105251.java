@@ -1,6 +1,6 @@
 package irvine.oeis.a105;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A105251 a(n) = binomial(n+4,n)*binomial(n+8,n).

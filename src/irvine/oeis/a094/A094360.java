@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094360 Pair reversal of Jacobsthal-Lucas numbers.

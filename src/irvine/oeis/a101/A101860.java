@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101860 a(n) = (3+n)*(2 + 33*n + n^2)/6.

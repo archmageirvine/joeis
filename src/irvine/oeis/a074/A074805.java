@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A074805 n mod 19 + 1 ("Golden Number").

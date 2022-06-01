@@ -1,6 +1,6 @@
 package irvine.oeis.a126;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A126284 a(n) = 5*2^n - 4*n - 5.

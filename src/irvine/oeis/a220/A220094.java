@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220094 Sum of the n-digit base-ten numbers whose digits are nonzero.

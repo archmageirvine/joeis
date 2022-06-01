@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081280 Binomial transform of Chebyshev coefficients A006974.

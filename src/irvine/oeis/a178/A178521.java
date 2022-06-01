@@ -1,6 +1,6 @@
 package irvine.oeis.a178;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A178521 The cost of all leaves in the Fibonacci tree of order n.

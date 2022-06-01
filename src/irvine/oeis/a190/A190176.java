@@ -1,6 +1,6 @@
 package irvine.oeis.a190;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A190176 a(n) = n^4 + 2^4 + (n+2)^4.

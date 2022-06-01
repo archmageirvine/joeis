@@ -1,6 +1,6 @@
 package irvine.oeis.a244;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A244842 a(n) = (10^n - 1)*(10^n - 10)/90.

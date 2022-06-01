@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // Recurrence: 2*n*(2*n+1)*(n-2)*a[n+0]-3*(n-1)*(3*n-4)*(3*n-2)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102893 Number of noncrossing trees with n edges and having degree of the root at least 2.

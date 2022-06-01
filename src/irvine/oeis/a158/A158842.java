@@ -1,6 +1,6 @@
 package irvine.oeis.a158;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A158842 1 + n*(n+1)*(n-1)/2.

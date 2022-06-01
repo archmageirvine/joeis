@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215492 a(n) = 21*a(n-2) + 7*a(n-3), with a(0)=0, a(1)=3, and a(2)=6.

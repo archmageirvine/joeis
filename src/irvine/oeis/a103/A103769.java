@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 // ogf: ((3*x+1-(21*x^2-10*x+1)^(1/2))/(2*x*(3*x-4)*(7*x-1)))^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A103769 Trinomial transform of central binomial coefficients A001405.

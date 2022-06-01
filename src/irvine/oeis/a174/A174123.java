@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 // Recurrence: 9*(n+2)^2*a[n+0]-(99+86*n+19*n^2)*a[n+1]+(72+56*n+11*n^2)*a[n+2]-(n+3)^2*a[n+3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A174123 Partial sums of A002893.

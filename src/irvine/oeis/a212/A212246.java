@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212246 Number of (w,x,y,z) with all terms in {1,...,n} and w &lt;= x &gt; y &lt;= z.

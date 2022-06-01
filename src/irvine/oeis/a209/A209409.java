@@ -1,6 +1,6 @@
 package irvine.oeis.a209;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A209409 Number of subsets of {1,...,n} containing {a,a+2,a+4} for some a.

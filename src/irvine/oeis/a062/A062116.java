@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A062116 a(n) = 2^n mod 17.

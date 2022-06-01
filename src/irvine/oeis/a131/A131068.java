@@ -1,6 +1,6 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A131068 Binomial transform of [1, 1, 7, 7, 7, ...].

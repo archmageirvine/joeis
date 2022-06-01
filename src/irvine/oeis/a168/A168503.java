@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 // ogf: (1-sqrt(1-12*x+36*x^2-24*x^3))/(6*x*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A168503 Expansion of 1/(1-x/(1-2x/(1-3x/(1-x/(1-2x/(1-3x/(1-... (continued fraction).

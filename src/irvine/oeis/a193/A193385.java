@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 // egf: cosh(x^2/2)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A193385 Expansion of e.g.f. cosh( x^2/2 )/ (1-x).

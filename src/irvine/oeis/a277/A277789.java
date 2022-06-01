@@ -1,6 +1,6 @@
 package irvine.oeis.a277;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A277789 a(n) = Sum_{k=0..n} (-1)^k*floor((1 + sqrt(2))^k).

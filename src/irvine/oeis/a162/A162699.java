@@ -1,6 +1,6 @@
 package irvine.oeis.a162;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A162699 Odd numbers not divisible by 7.

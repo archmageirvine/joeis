@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051872 20-gonal (or icosagonal) numbers: a(n) = n*(9*n-8).

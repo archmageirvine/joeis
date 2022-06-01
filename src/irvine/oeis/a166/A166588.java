@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // ogf: (1+2*x-sqrt(1-4*x^2))/(2*x*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166588 Partial sums of A097331; binomial transform of A166587.

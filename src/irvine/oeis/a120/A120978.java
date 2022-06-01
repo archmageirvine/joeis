@@ -1,6 +1,6 @@
 package irvine.oeis.a120;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A120978 2n+5^n-3^n.

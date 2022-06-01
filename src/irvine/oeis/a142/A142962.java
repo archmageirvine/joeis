@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 // Recurrence: 2*a[n+0]=n^2*(3+5*n)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A142962 Scaled convolution of (n^3)*A000984(n) with A000984(n). A000984(n) = binomial(2*n,n) (central binomial coefficients).

@@ -1,6 +1,6 @@
 package irvine.oeis.a106;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106845 n^2 * (n^3 + 2n^2 + 7n - 2) / 8.

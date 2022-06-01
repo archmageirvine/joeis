@@ -1,6 +1,6 @@
 package irvine.oeis.a078;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A078427 Sum of all the decimal digits of numbers from 1 to 10^n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A063481 a(n) = 4^n + 8^n.

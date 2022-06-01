@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A030533 Expansion of Molien series for 4-D extraspecial group 2^{1+2*2}.

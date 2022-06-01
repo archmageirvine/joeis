@@ -1,6 +1,6 @@
 package irvine.oeis.a116;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A116149 a(n) = sum of n consecutive cubes after n^3.

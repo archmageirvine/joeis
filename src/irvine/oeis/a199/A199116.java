@@ -1,6 +1,6 @@
 package irvine.oeis.a199;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A199116 6*4^n+1.

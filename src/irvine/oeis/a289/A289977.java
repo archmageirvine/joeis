@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289977 p-INVERT of (0,0,0,1,2,3,5,8,...), the Fibonacci numbers preceded by three zeros, where p(S) = 1 - S - S^2.

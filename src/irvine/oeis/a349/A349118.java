@@ -3,7 +3,7 @@ package irvine.oeis.a349;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A349118 Row sums of a triangle based on A261327.

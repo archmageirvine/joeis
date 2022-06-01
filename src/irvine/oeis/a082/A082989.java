@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // ogf: (2*(1-x))/(1+x+(1-x)*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082989 Number of ordered trees with n edges and having no root-to-leaf branches.

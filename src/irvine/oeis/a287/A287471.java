@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287471 Number of connected dominating sets in the n-crown graph.

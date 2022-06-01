@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216853 18k^2-12k-7 interleaved with 18k^2+6k+5 for k&gt;=0.

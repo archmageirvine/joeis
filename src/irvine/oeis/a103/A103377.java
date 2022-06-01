@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103377 a(1)=a(2)=...=a(10)=1, a(n)=a(n-9)+a(n-10).

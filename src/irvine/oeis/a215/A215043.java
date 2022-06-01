@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215043 a(n) = F(12*n)/(24*L(2*n)), n &gt;= 0, with F = A000045 (Fibonacci) and L = A000032 (Lucas).

@@ -1,6 +1,6 @@
 package irvine.oeis.a269;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A269483 a(n) = n^12 - n^11 + n^9 - n^8 + n^6 - n^4 + n^3 - n + 1.

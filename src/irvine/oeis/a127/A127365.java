@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127365 Signed repeated natural numbers.

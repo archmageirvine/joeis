@@ -1,6 +1,6 @@
 package irvine.oeis.a265;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A265762 Coefficient of x in minimal polynomial of the continued fraction [1^n,2,1,1,1,...], where 1^n means n ones.

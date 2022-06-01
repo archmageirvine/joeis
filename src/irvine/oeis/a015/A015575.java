@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A015575 Expansion of x/(1 - 8*x - 5*x^2).

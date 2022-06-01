@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153265 a(n) = (-2*I)^n + (2*I)^n + (1/2 + 1/2*I*sqrt(3))^n + (1/2 - 1/2*I*sqrt(3))^n.

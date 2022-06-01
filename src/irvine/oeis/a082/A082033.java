@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // Recurrence: 3*a[n+0]+(-3*n-5)*a[n-1]+2*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082033 a(n) = (3n+1)*n!.

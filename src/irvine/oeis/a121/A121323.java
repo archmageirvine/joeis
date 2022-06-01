@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 // egf: ((sqrt(1-2*x)+1)*sin(1-sqrt(1-2*x))+(sqrt(1-2*x)-1)*cos(1-sqrt(1-2*x)))/(1-2*x)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A121323 a(n) = (2*n+1)*a(n-1) - a(n-2) starting a(0)=0, a(1)=1.

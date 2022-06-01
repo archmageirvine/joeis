@@ -1,6 +1,6 @@
 package irvine.oeis.a105;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A105947 a(n) = C(n+6,n)*C(n+4,4).

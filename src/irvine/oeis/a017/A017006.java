@@ -1,6 +1,6 @@
 package irvine.oeis.a017;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A017006 a(n) = (7*n+2)^2.

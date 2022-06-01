@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A020867 Number of forests with no isolated vertices in Moebius ladder M_n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124072 First differences of A129819.

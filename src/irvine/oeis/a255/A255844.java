@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255844 a(n) = 2*n^2 + 6.

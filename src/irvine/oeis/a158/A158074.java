@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 // Recurrence: a[n+0]=6*a[n-1]+64*a[n-2]-200*a[n-3]-1000*a[n-4]+3016*a[n-5]+3488*a[n-6]-24256*a[n-7]+23776*a[n-8]+104168*a[n-9]-203408*a[n-10]-184704*a[n-11]+443392*a[n-12]+14336*a[n-13]-151296*a[n-14]+145920*a[n-15]-263424*a[n-16]+317440*a[n-17]+36864*a[n-18]-966656*a[n-19]+573440*a[n-20]+131072*a[n-21]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A158074 Number of (directed) Hamiltonian cycles on a 3 X (2n) knight's tour graph.

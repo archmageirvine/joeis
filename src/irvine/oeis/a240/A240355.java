@@ -1,6 +1,6 @@
 package irvine.oeis.a240;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A240355 Inverse of 72nd cyclotomic polynomial.

@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180857 Wiener index of the Moebius ladder M(n).

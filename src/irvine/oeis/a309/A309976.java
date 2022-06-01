@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // Recurrence: n*a[n+0]-n*a[n-1]+6*(-n+2)*a[n-2]+3*(n-4)*a[n-3]+8*(n-3)*a[n-4]+4*(n-3)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A309976 Vacation Dyck paths. Discrete analog for vacation M/M/1 queue embedded chain.

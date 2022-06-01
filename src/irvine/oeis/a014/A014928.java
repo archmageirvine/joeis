@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A014928 a(1)=1, a(n)=n*13^(n-1)+a(n-1).

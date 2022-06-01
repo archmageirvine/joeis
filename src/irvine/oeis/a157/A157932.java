@@ -1,6 +1,6 @@
 package irvine.oeis.a157;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A157932 Numbers k such that (3^(35*k) + 5^(21*k) + 7^(15*k)) mod 105 is prime.

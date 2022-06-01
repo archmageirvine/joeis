@@ -1,6 +1,6 @@
 package irvine.oeis.a238;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A238328 Sum of all the parts in the partitions of 4n into 4 parts.

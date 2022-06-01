@@ -1,6 +1,6 @@
 package irvine.oeis.a190;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A190577 a(n) = n*(n+2)*(n+4)*(n+6).

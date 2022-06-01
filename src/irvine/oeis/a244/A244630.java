@@ -1,6 +1,6 @@
 package irvine.oeis.a244;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A244630 a(n) = 17*n^2.

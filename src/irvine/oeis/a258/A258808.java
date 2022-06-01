@@ -1,6 +1,6 @@
 package irvine.oeis.a258;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A258808 a(n) = n^7 - 1.

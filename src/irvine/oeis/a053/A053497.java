@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: exp(x+x^7/7)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053497 Number of degree-n permutations of order dividing 7.

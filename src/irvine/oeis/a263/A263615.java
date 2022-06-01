@@ -1,6 +1,6 @@
 package irvine.oeis.a263;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A263615 Partial sums of A263614 starting at n=2.

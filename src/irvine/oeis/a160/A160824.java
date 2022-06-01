@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // ogf: (-8*x^5+7*x^4-4*x^3-x^2+5*x+1)/(-2*x^2+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A160824 a(1)=1, a(n) = the smallest positive integer such that both a(n) and Sum_{k=1..n} a(k) have the same number of (nonleading) 0's when they are represented in binary.

@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=12*a[n-1]-47*a[n-2]+72*a[n-3]-36*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330170 a(n) = 2^n + 3^n + 6^n - 1.

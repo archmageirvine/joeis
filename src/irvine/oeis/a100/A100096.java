@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // ogf: (x*sqrt(1-4*x^2)*(3*sqrt(1-4*x^2)+2*x+1))/(2*(4*x^2-1)*(10*x^2+x-2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100096 An inverse Chebyshev transform of the Jacobsthal numbers.

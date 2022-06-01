@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152892 Periodic sequence [0,3,1,0,1] of period 5.

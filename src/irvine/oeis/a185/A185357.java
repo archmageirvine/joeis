@@ -1,6 +1,6 @@
 package irvine.oeis.a185;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A185357 Expansion of 1/(1 - x - x^2 + x^18 - x^20).

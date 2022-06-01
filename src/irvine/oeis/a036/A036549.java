@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A036549 a(n) = T(8,n), array T given by A048471.

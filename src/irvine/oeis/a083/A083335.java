@@ -1,6 +1,6 @@
 package irvine.oeis.a083;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A083335 a(n)=12a(n-2)-25a(n-4).

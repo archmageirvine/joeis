@@ -1,6 +1,6 @@
 package irvine.oeis.a171;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A171507 a(n) = (5*2^(n+1)-9-(-1)^n)/6-2*n.

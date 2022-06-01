@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220212 Convolution of natural numbers (A000027) with tetradecagonal numbers (A051866).

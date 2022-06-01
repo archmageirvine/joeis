@@ -1,6 +1,6 @@
 package irvine.oeis.a145;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A145304 Numbers X such that there exists Y in N : X^2=237*Y^2+79.

@@ -1,6 +1,6 @@
 package irvine.oeis.a157;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A157368 a(n) = 49*n^2 - 78*n + 31.

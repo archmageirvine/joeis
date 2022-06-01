@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A037078 In ternary expansion of n, reading from right to left, digits occur in order ...,0,1,2,0,1,2,...

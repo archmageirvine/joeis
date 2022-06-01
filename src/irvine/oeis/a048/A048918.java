@@ -1,7 +1,7 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A048918 9-gonal hexagonal numbers.

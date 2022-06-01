@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191968 a(n) = Fibonacci(8n+5) mod Fibonacci(8n+1).

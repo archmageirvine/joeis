@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098583 Expansion of (1+2*x+4*x^2+8*x^3+16*x^4)/(1-x-32*x^6).

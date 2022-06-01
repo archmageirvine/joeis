@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // egf: (8*(x^3-3*x^2+6*x-6)+(x^3-3*x^2+39*x+48)*cosh(x)+(x^3-6*x^2+3*x-87)*sinh(x))/48
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055803 a(n) = T(n,n-3), array T as in A055801.

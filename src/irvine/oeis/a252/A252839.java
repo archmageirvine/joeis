@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 // Recurrence: a[n+0]=n*(n-1)*(n-2)*(n^22+3*n^21+7*n^20-85*n^19-269*n^18-237*n^17+4177*n^16+8805*n^15-12139*n^14-109047*n^13-9663*n^12+503305*n^11+477366*n^10-1657912*n^9-986868*n^8-206320*n^7+7988176*n^6-5442232*n^5-2404368*n^4-428800*n^3+3512736*n^2-1855392*n+585552)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A252839 Number of ways of n-coloring the square grid graph G_(5,5) such that no rectangle exists with sides parallel to the axes having all 4 corners of the same color.

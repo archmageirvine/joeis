@@ -1,6 +1,6 @@
 package irvine.oeis.a231;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A231559 a(n) = floor( A000326(n)/2 ).

@@ -1,6 +1,6 @@
 package irvine.oeis.a092;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A092476 Numbers that are congruent to {1, 3, 9} mod 13.

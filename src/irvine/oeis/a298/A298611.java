@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 // Recurrence: (16*n-32)*a[n-4]+(-8*n+12)*a[n-3]+(n-1)*a[n-2]+(-6*n+3)*a[n-1]+n*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A298611 Expansion of (1 - 6*x + x^2 - 8*x^3 + 16*x^4)^(-1/2).

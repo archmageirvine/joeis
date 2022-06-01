@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060945 Number of compositions (ordered partitions) of n into 1's, 2's and 4's.

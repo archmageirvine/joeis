@@ -1,6 +1,6 @@
 package irvine.oeis.a064;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A064808 a(n) is the (n+1)st (n+2)-gonal number.

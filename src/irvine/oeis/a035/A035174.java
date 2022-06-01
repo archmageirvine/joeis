@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A035174 Ramanujan's tau function (or tau numbers (A000594)) for 2^n.

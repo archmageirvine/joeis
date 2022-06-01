@@ -1,6 +1,6 @@
 package irvine.oeis.a162;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A162673 Number of different fixed (possibly) disconnected trominoes bounded (not necessarily tightly) by an n*n square.

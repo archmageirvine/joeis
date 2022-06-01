@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A001603 Odd-indexed terms of A124296.

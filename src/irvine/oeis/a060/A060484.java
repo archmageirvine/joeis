@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060484 Number of 6-block tricoverings of an n-set.

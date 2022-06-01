@@ -1,6 +1,6 @@
 package irvine.oeis.a276;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A276054 Sum of the asymmetry degrees of all compositions of n with parts in {1,2,4,6,8,10,...}.

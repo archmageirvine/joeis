@@ -1,6 +1,6 @@
 package irvine.oeis.a121;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A121621 Real part of (2 + 3i)^n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a263;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A263201 Number of perfect matchings on a M\u00f6bius strip of width 4 and length n.

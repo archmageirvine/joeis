@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280523 a(n) = Fibonacci(2n + 1) - n.

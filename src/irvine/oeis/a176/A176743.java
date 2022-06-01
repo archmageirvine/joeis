@@ -1,6 +1,6 @@
 package irvine.oeis.a176;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A176743 a(n) = gcd(A000217(n+1), A002378(n+2)).

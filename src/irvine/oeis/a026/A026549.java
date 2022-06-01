@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A026549 Ratios of successive terms are 2, 3, 2, 3, 2, 3, 2, 3, ...

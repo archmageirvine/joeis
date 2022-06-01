@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056453 Number of palindromes of length n using exactly two different symbols.

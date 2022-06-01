@@ -1,6 +1,6 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A131029 Periodic sequence (11, 5, 2, 5, 11, 14).

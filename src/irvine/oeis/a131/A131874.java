@@ -1,6 +1,6 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A131874 a(n) = (7*n^2 + 15*n + 2) / 2.

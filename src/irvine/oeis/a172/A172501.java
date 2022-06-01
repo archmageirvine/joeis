@@ -1,6 +1,6 @@
 package irvine.oeis.a172;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A172501 a(n) = binomial(n+8,8)*6^n.

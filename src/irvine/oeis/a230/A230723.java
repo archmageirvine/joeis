@@ -1,6 +1,6 @@
 package irvine.oeis.a230;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A230723 Number of non-equivalent ways to choose three points in an equilateral triangle grid of side n.

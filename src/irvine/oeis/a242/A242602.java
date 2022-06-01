@@ -1,6 +1,6 @@
 package irvine.oeis.a242;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A242602 Integers repeated thrice in a canonical order.

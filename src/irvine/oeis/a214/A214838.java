@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A214838 Triangular numbers of the form k^2 + 2.

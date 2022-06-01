@@ -1,6 +1,6 @@
 package irvine.oeis.a210;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A210982 Zero together with A126264 and positive terms of A051624 interleaved.

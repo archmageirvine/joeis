@@ -1,6 +1,6 @@
 package irvine.oeis.a091;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A091055 Expansion of x*(1-2*x)/((1-x)*(1+2*x)*(1-6*x)).

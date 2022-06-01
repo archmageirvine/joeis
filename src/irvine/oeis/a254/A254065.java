@@ -1,6 +1,6 @@
 package irvine.oeis.a254;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A254065 Vulgar fractions whose denominators are numbers ending with nine, the case 1/19.

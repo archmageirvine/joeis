@@ -1,6 +1,6 @@
 package irvine.oeis.a105;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A105754 Lucas 8-step numbers.

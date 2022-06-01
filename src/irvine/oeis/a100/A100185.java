@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100185 Structured meta-anti-prism numbers, the n-th number from a structured n-gonal anti-prism number sequence.

@@ -1,6 +1,6 @@
 package irvine.oeis.a082;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A082106 Main diagonal of number array A082105.

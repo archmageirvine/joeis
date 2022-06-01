@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 // Recurrence: 11*n*(11*n-10)*(11*n-9)*(11*n-8)*(11*n-7)*(11*n-6)*(11*n-5)*(11*n-4)*(11*n-3)*(11*n-2)*(11*n-1)*a[n+0]=41472*(2*n-1)*(3*n-2)*(3*n-1)*(4*n-3)*(4*n-1)*(6*n-5)*(6*n-1)*(12*n-11)*(12*n-7)*(12*n-5)*(12*n-1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A169961 a(n) = binomial(12*n, n).

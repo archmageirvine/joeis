@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 // ogf: -x*(988416*x^33+272448*x^32-6983328*x^31-2873424*x^30+20931912*x^29+11886288*x^28-33545700*x^27-25677164*x^26+28467368*x^25+29854804*x^24-7032026*x^23-11748538*x^22-12593064*x^21-17118040*x^20+24399398*x^19+29412358*x^18-32880510*x^17-15770937*x^16+33016792*x^15-4824040*x^14-21307320*x^13+10258240*x^12+7474762*x^11-5162898*x^10-999324*x^9+1008806*x^8+39654*x^7-89810*x^6+3200*x^5+992*x^4+1248*x^3-468*x^2+90*x-9)/((4*x-1)*(3*x-1)^2*(2*x-1)^3*(x+1)^7*(x-1)^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A065025 Consider biquanimous numbers that exclude 0's; sequence gives number of n-digit non-biquanimous numbers - number of n-digit biquanimous numbers.

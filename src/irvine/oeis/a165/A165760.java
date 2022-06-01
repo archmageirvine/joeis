@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165760 a(n) = (16-9*8^n)/7.

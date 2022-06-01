@@ -1,6 +1,6 @@
 package irvine.oeis.a177;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A177371 Expansion of (1+12*x-24*x^2+8*x^4)/((1-8*x+4*x^2+4*x^3)*(1+2*x-2*x^2)).

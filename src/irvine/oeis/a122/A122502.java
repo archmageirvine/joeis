@@ -1,6 +1,6 @@
 package irvine.oeis.a122;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A122502 Expansion of x/(1 - 22 x^2 - 54 x^3 - 38 x^4).

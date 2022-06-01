@@ -1,6 +1,6 @@
 package irvine.oeis.a158;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A158784 Expansion of (1+4*x+14*x^2)/(1-2*x^2-64*x^3).

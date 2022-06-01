@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // Recurrence: 8*n*(n+2)*a[n+0]+4*(7*n^2-7*n-17)*a[n-1]+6*(-9*n^2+9*n-17)*a[n-2]-21*(3*n-5)*(3*n-7)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A047750 If n mod 2 = 0 then m := n/2 and a(n) = (3*m)!*(5*m+1)/((m+1)!*(2*m+1)!); otherwise m := (n-1)/2, a(n) = 6*(3*m+2)!/(m!*(2*m+3)!).

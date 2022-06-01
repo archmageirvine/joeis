@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // ogf: (1-x+x^3-x^4+x^5-x^6+x^7-x^9+x^10)/((1-x)^2*(1-x^21))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A084630 Floor(C(n+7,7)/C(n+5,5)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A058482 Number of 3 X n binary matrices with no zero rows or columns.

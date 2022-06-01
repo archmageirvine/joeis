@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060104 Fifth column (m=4) of triangle A060102.

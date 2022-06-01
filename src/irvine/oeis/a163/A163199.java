@@ -1,6 +1,6 @@
 package irvine.oeis.a163;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A163199 Sum of the cubes of the first n even-indexed Fibonacci numbers, minus 1.

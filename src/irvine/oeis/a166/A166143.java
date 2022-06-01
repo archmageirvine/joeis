@@ -1,6 +1,6 @@
 package irvine.oeis.a166;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A166143 a(n) = 3*n^2 + 3*n - 5.

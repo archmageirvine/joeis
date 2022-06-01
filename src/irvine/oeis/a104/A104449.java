@@ -1,6 +1,6 @@
 package irvine.oeis.a104;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A104449 Fibonacci sequence with initial values a(0) = 3 and a(1) = 1.

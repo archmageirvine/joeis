@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090200 a(n) = N(7,n), where N(7,x) is the 7th Narayana polynomial.

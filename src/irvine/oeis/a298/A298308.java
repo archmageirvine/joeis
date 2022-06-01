@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 // Recurrence: (-9+9*n)*a[n+0]+(15+9*n)*a[n+2]+(n+3)*a[n+3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A298308 Expansion of (9*x^3+9*x+1)^(1/3).

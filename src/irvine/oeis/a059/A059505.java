@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059505 Transform of A059502 applied to sequence 2,3,4,...

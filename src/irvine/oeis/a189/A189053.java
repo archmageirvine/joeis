@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 // ogf: sqrt(1-4*x^2)/(16*x^4+sqrt(1-4*x^2)*(4*x^3-x)-8*x^2+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A189053 Expansion of d/dx log(1/(1-x/sqrt(1-4*x^2))).

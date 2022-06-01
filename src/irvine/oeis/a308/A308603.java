@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // Recurrence: a[n+0]=6*n+3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308603 Number of (not necessarily maximal) cliques in the n-dipyramidal graph.

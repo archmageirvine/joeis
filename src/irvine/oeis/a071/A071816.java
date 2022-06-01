@@ -1,6 +1,6 @@
 package irvine.oeis.a071;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A071816 Number of ordered solutions to x+y+z = u+v+w, 0 &lt;= x, y, z, u, v, w &lt; n.

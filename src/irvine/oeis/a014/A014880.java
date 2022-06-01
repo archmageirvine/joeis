@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A014880 Inverse of 871st cyclotomic polynomial.

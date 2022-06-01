@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049779 a(n) = Sum_{k=1..floor(n/2)} T(n, 2k), array T as in A049777.

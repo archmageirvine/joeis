@@ -1,6 +1,6 @@
 package irvine.oeis.a218;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A218470 Partial sums of floor(n/9).

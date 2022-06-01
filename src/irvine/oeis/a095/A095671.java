@@ -1,6 +1,6 @@
 package irvine.oeis.a095;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A095671 Ninth column (m=8) of (1,4)-Pascal triangle A095666.

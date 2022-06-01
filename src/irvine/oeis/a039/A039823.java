@@ -1,6 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A039823 a(n) = ceiling( (n^2 + n + 2)/4 ).

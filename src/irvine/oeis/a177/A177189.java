@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // Recurrence: a[n+0]=a[n-16]+(n+1)*(n-16)+94
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177189 Partial sums of round(n^2/16).

@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A056849 Final digit of n^n.

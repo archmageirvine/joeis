@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A028484 Number of perfect matchings in graph C_{13} X P_{2n}.

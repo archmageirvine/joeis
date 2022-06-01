@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051946 Expansion of g.f.: (1+4*x)/(1-x)^7.

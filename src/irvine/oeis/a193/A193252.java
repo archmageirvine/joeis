@@ -1,6 +1,6 @@
 package irvine.oeis.a193;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A193252 Great rhombicuboctahedron with faces of centered polygons.

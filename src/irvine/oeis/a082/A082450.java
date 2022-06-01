@@ -1,6 +1,6 @@
 package irvine.oeis.a082;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A082450 a(n) = 5*(n^2-n+2)/2.

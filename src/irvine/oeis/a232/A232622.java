@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 // Recurrence: a[n+0]=5*a[n-1]-a[n-2]-19*a[n-3]+19*a[n-4]+a[n-5]-5*a[n-6]+a[n-7]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A232622 Number of incongruent domino tilings of the 3 X (2n) board.

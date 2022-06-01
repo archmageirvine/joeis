@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271208 a(n) = n^5 + n - 1.

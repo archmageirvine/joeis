@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127876 Integers of the form (x^3)/6 + (x^2)/2 + x + 1.

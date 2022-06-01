@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // Recurrence: n^3*(2*n-3)*(4*n^4-24*n^3+50*n^2-42*n+11)*(6*n^4-36*n^3+67*n^2-39*n-4)*a[n+0]=(2*n-1)*(840*n^11-10464*n^10+53192*n^9-137864*n^8+172296*n^7-19912*n^6-226019*n^5+271559*n^4-92324*n^3-42188*n^2+39128*n-8466)*a[n-1]-(2*n-3)*(840*n^11-8016*n^10+28712*n^9-44872*n^8+15880*n^7+43992*n^6-64675*n^5+32567*n^4+1692*n^3-9364*n^2+4072*n-606)*a[n-2]+(n-2)^3*(2*n-1)*(4*n^4-8*n^3+2*n^2+2*n-1)*(6*n^4-12*n^3-5*n^2+11*n-6)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A246461 a(n) = Sum_{k=0..n} ((2k+1)*C(n,k)*C(n+k,k))^2, where C(n,k) denotes the binomial coefficient n!/(k!*(n-k)!).

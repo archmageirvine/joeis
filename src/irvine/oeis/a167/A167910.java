@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167910 a(n) = (4*3^n - 5*2^n + (-2)^n)/20.

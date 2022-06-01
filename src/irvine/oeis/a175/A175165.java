@@ -1,6 +1,6 @@
 package irvine.oeis.a175;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A175165 a(n) = 32*(2^n - 1).

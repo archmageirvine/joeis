@@ -1,6 +1,6 @@
 package irvine.oeis.a206;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A206526 a(n) = 137*(n-1) - a(n-1) with n&gt;1, a(1)=31.

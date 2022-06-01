@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055362 Number of increasing mobiles (circular rooted trees) with n nodes and 8 leaves.

@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 // Recurrence: a[n+0]=a[n-1]+2*a[n-2]+4*a[n-3]+7*a[n-4]+13*a[n-5]+22*a[n-6]+28*a[n-7]-4*a[n-8]-6*a[n-9]-6*a[n-10]-4*a[n-12]-10*a[n-13]-10*a[n-14]+a[n-16]+a[n-17]+a[n-20]+a[n-21]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A072852 Number of permutations satisfying i-2&lt;=p(i)&lt;=i+5, i=1..n.

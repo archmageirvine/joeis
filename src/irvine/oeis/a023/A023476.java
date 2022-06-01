@@ -1,6 +1,6 @@
 package irvine.oeis.a023;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A023476 n-34.

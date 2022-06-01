@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259158 Positive triangular numbers (A000217) that are heptagonal numbers (A000566) divided by 2.

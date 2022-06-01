@@ -1,6 +1,6 @@
 package irvine.oeis.a245;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A245906 Numbers of the form 4n^2 + 1 or 4n^2 + 8n + 1.

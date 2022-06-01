@@ -1,6 +1,6 @@
 package irvine.oeis.a080;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A080260 a(n)=1+(1/12)(n*(n+1)*(n+3)*(4-n)).

@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // ogf: (-1-x^4+2*x^3-x^2+2*x)/((x-1)*(x^2+x+1)*(x^2-3*x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A087953 a(n) = floor((Fibonacci(2*n+1)+1)/2).

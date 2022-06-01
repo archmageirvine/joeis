@@ -1,6 +1,6 @@
 package irvine.oeis.a104;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A104678 a(n) =  binomial(n+4,4) * binomial(n+9,4).

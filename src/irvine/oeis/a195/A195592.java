@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195592 Number of ways to place 4n nonattacking kings on a vertical cylinder 8 X 2n.

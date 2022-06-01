@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289706 Number of 5-cycles in the n-triangular honeycomb queen graph.

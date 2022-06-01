@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A143375 Expansion of x/(1 - x^2 -  2*x^5 - x^8 - x^10 - x^12).

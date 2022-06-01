@@ -1,7 +1,7 @@
 package irvine.oeis.a161;
 // manually 2021-06-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A161125 Number of descents in all involutions of {1,2,...,n}.

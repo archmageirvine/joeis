@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A003765 Number of Hamiltonian cycles in W_4 X P_n.

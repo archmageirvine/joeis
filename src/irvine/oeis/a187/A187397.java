@@ -1,6 +1,6 @@
 package irvine.oeis.a187;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A187397 Expansion of -2*x^4 *(3*x^13 +2*x^12 +x^11 -6*x^10 -10*x^9 -6*x^8 +x^7 +7*x^6 +5*x^5 -x^4 -8*x^3 -11*x^2 -8*x -5) / ((x -1)^4 *(x +1)^2 *(x^2 +1)^2 *(x^2 +x +1)^2).

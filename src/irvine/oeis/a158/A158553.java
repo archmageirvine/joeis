@@ -1,6 +1,6 @@
 package irvine.oeis.a158;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A158553 a(n) = 196*n^2 - 14.

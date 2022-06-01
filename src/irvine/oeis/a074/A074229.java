@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A074229 Numbers n such that Kronecker(6,n)==mu(gcd(6,n)).

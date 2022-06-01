@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127211 a(n) = 4^n*Lucas(n), where Lucas = A000204.

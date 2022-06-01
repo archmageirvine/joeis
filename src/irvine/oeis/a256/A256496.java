@@ -1,6 +1,6 @@
 package irvine.oeis.a256;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A256496 a(n) = 15(n mod 2) + 10(n mod 3) + 6(n mod 5).

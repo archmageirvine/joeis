@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051673 Cubic star numbers: a(n) = n^3 + 4*Sum_{i=0..n-1} i^2.

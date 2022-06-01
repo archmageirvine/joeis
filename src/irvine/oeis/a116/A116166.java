@@ -1,6 +1,6 @@
 package irvine.oeis.a116;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A116166 a(n) = 8^n * n*(n+1).

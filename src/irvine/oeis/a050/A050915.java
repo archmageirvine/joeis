@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A050915 a(n) = n*4^n + 1.

@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 // egf: 2-(1-x)*(2+log(1/(1-x)^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A208529 Number of permutations of n &gt; 1 having exactly 2 points on the boundary of their bounding square.

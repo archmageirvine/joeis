@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A001639 A Fielder sequence. a(n) = a(n-1) + a(n-3) + a(n-4) + a(n-5), n &gt;= 6.

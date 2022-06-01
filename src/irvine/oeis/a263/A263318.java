@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 // ogf: (x*(x^4-x^3+3*x^2-x+1))/((x^2+x+1)^3*(1-x)^9)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A263318 Number of aperiodic necklaces (Lyndon words) with 9 black beads and n white beads.

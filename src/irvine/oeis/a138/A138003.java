@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138003 Binomial transform of 1, 1, 0, -1, -1 (periodically continued).

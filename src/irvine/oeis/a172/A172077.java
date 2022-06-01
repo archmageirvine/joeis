@@ -1,6 +1,6 @@
 package irvine.oeis.a172;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A172077 a(n) = n*(n+1)*(7*n^2 - n - 4)/4.

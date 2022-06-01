@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 // Recurrence: n*(2*n-1)*(n-1)*a[n+0]-2*(n-1)*(32*n^2-64*n+39)*a[n-1]+16*(4*n-5)*(4*n-7)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A249519 Expansion of 4*x/(16*x+(sqrt(2)*sqrt(sqrt(1-16*x)+1)-1)*sqrt(1-16*x)-1).

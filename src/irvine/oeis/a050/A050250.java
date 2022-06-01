@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A050250 Number of nonzero palindromes less than 10^n.

@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 // ogf: (((sqrt(1+4*3^4*x^2)+2*3^2*x)*(sqrt(1+4*3^4*x^2)+1))/2)^(1/6)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A196865 G.f. A(x) satisfies: A(x)^-3 + A(-x)^-3 = 2 and A(x)^3 - A(-x)^3 = 18*x.

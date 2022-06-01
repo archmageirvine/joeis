@@ -1,7 +1,7 @@
 package irvine.oeis.a092;
 // manually 2021-01-21
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A092634 a(n) = 1 - Sum_{k=2..n} k*k!.

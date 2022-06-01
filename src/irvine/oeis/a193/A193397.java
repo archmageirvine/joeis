@@ -1,6 +1,6 @@
 package irvine.oeis.a193;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A193397 Wiener index of a benzenoid consisting of a double-step spiral chain of n hexagons (n&gt;=2, s=21; see the Gutman et al. reference).

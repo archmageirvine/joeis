@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173862 a(n) = A158772(n-1)/21.

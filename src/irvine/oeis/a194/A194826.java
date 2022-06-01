@@ -1,6 +1,6 @@
 package irvine.oeis.a194;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A194826 Units' digits of the nonzero 9-gonal (nonagonal) numbers.

@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 // Recurrence: (n-2)^2*(2*n^3-19*n^2+58*n-59)*a[n+0]=2*(2*n^7-31*n^6+200*n^5-700*n^4+1442*n^3-1764*n^2+1205*n-363)*a[n-1]-(n-1)^2*(2*n^7-35*n^6+266*n^5-1139*n^4+2962*n^3-4671*n^2+4130*n-1578)*a[n-2]+2*(n-2)^2*(n-1)^2*(2*n^5-26*n^4+134*n^3-342*n^2+431*n-217)*a[n-3]-(n-3)^2*(n-2)^2*(n-1)^2*(2*n^3-13*n^2+26*n-18)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A070968 Number of cycles in the complete bipartite graph K(n,n).

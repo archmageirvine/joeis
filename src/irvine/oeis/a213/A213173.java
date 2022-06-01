@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213173 a(n) = 4^floor(n/2), Powers of 4 repeated.

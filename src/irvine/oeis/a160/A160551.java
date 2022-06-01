@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // Recurrence: 3*a[n+0]=(3+53*n+270*n^2+400*n^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A160551 Number of (unordered) ways of making change for n dollars using coins of denominations 1, 5, 10, and 25.

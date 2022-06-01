@@ -1,6 +1,6 @@
 package irvine.oeis.a232;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A232599 Alternating sum of cubes, i.e., Sum_{k=0..n} k^p*q^k for p=3, q=-1.

@@ -1,6 +1,6 @@
 package irvine.oeis.a211;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A211381 Number of pairs of intersecting diagonals in the exterior of a regular n-gon.

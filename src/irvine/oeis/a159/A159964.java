@@ -1,6 +1,6 @@
 package irvine.oeis.a159;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A159964 a(n) = 2^n*(1-n).

@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A031940 Length of longest legal domino snake using full set of dominoes up to [n:n].

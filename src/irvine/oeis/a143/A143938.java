@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A143938 The Wiener index of a benzenoid consisting of a linear chain of n hexagons.

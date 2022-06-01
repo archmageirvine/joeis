@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // Recurrence: (n+5)*(3*n^2-27*n+92)*a[n+0]+16*(3*n-19)*a[n-1]+16*(-3*n+22)*a[n-2]+16*(3*n-25)*a[n-3]-4*(n-3)*(3*n^2-21*n+68)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329686 Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, HU, HD and DH.

@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // Recurrence: a[n+0]=3*a[n-1]-3*a[n-2]+3*a[n-3]-6*a[n-4]+7*a[n-5]-6*a[n-6]+6*a[n-7]-6*a[n-8]+7*a[n-9]-6*a[n-10]+3*a[n-11]-3*a[n-12]+3*a[n-13]-a[n-14]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053801 Number of basis partitions of n+36 with Durfee square size 6.

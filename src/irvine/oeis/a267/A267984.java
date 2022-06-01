@@ -1,6 +1,6 @@
 package irvine.oeis.a267;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A267984 Numbers congruent to {17, 23} mod 30.

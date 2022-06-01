@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097830 Partial sums of Chebyshev sequence S(n,16) = U(n,16/2) = A077412(n).

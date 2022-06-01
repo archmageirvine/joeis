@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A033506 Number of matchings in graph P_{3} X P_{n}.

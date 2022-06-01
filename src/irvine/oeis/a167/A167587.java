@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167587 The fifth row of the ED4 array A167584: 80*n^4 + 952*n^2 - 768*n + 525.

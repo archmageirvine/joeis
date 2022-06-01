@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 // Recurrence: (n+1)^2*(11+n)*a[n+1]=4*(7+2*n)*(3+n)*(11+2*n)*a[n+0]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A114253 a(n) = C(5+2*n,5+n)*C(10+2*n,0+n).

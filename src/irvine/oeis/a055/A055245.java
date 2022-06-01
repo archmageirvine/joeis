@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A055245 Numerator sequence of mean length of certain stackings of n+1 squares on a double staircase.

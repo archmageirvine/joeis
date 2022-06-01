@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130424 Main diagonal of array A[k,n] = n-th sum of k consecutive k-gonal numbers, k&gt;2.

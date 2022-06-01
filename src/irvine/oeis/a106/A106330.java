@@ -1,6 +1,6 @@
 package irvine.oeis.a106;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106330 Numbers k such that k^2 = 24*(j^2) + 25.

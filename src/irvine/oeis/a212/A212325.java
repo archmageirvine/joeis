@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212325 Prime-generating polynomial: n^2 + 3*n - 167.

@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099846 An Alexander sequence for the knot 8_5.

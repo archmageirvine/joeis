@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A053493 Number of symmetric 4 X 4 matrices of nonnegative integers with every row and column adding to n.

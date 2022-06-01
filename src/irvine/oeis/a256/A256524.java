@@ -1,6 +1,6 @@
 package irvine.oeis.a256;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A256524 Number of partitions of 3n into at most 4 parts.

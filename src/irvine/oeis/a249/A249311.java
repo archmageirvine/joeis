@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249311 Expansion of x*(1+9*x-8*x^3)/(1-10*x^2+8*x^4).

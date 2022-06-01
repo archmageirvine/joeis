@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A069475 First differences of A069474, successive differences of (n+1)^6-n^6.

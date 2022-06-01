@@ -1,6 +1,6 @@
 package irvine.oeis.a117;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A117652 a(n) = floor(n*(n+2)*(n+4)*(n-6)/192).

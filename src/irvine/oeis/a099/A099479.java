@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099479 Count, repeating 4n three times for n &gt; 0.

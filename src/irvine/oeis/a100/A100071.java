@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // Recurrence: (-n+1)*a[n+0]+2*a[n-1]+4*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100071 a(n) = n * binomial(n-1, floor((n-1)/2)) = n * max_{i=0..n} binomial(n-1, i).

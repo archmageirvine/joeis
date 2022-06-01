@@ -1,7 +1,7 @@
 package irvine.oeis.a057;
 // manually triconst 2021-10-19
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**

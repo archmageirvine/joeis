@@ -1,6 +1,6 @@
 package irvine.oeis.a096;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A096978 Sum of the areas of the first n Jacobsthal rectangles.

@@ -1,6 +1,6 @@
 package irvine.oeis.a277;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A277670 Number of n-length words over a 7-ary alphabet {a_1,a_2,...,a_7} avoiding consecutive letters a_i, a_{i+1}.

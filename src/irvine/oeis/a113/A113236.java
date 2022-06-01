@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // egf: exp((x*(1-x^2+x^3))/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A113236 Number of partitions of {1,..,n} into any number of lists of size not equal to 3, where a list means an ordered subset, cf. A000262.

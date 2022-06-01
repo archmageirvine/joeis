@@ -1,6 +1,6 @@
 package irvine.oeis.a172;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A172482 a(n) = (1+n)*(9 + 11*n + 4*n^2)/3.

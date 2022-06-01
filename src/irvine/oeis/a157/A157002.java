@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 // ogf: (1-sqrt(1-4*x*(1-x^2)))/(2*x*(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A157002 Transform of Catalan numbers whose Hankel transform gives the Somos-4 sequence.

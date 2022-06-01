@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052388 Number of 4 X n binary matrices such that any 2 rows have a common 1, up to column permutations.

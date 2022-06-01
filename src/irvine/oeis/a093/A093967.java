@@ -1,6 +1,6 @@
 package irvine.oeis.a093;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A093967 a(n) = n * Pell(n).

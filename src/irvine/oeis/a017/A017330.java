@@ -1,6 +1,6 @@
 package irvine.oeis.a017;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A017330 a(n) = (10*n + 5)^2.

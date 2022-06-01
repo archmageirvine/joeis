@@ -1,6 +1,6 @@
 package irvine.oeis.a121;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A121442 Expansion of (1-x^2)/(1-x-9*x^2+x^3).

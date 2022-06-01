@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273220 a(n) = 8n^2 - 12n + 1.

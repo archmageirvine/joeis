@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 // egf: (x^2/2+x^3/3+x^4/4)*exp(x+x^2/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A211606 Total number of inversions over all involutions of length n.

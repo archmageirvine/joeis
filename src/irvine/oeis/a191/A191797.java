@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191797 a(n) = binomial(F(n), 2) where F(n) = A000045(n).

@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 // Recurrence: -(n+1)*(n^2-2*n-1)*a[n+0]+2*(n-2)*(n^2+n+1)*a[n-1]+4*(n-1)*(n^2-n-5)*a[n-2]-8*(n-2)*(n^2-2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A296663 Row sums of A296664.

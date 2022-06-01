@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // egf: 1/(1-2*x)^(11/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051583 a(n) = (2*n+9)!!/9!!, related to A001147 (odd double factorials).

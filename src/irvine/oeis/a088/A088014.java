@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A088014 Expansion of e.g.f.: cosh(sqrt(2)*x)*(1+exp(x)).

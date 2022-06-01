@@ -1,6 +1,6 @@
 package irvine.oeis.a091;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A091054 Expansion of (1 - 5*x - 2*x^2) / ((1 - x)*(1 + 2*x)*(1 - 6*x)).

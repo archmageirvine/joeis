@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // ogf: sqrt(1+4*x^2)-2*x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104624 Expansion of exp( arcsinh( -2*x ) ) in powers of x.

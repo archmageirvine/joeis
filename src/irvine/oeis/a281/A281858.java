@@ -1,6 +1,6 @@
 package irvine.oeis.a281;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A281858 Curious cubic identities based on the Armstrong number 370.

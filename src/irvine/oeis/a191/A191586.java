@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // Recurrence: (8*n^2+88*n+240)*a[n+6]-(72*n^2+636*n+1380)*a[n+5]+(180*n^2+1300*n+2232)*a[n+4]-(180*n^2+1170*n+1842)*a[n+3]+(326*n^2+2074*n+3164)*a[n+2]-(228*n^2+948*n+984)*a[n+1]+(35*n^2+105*n+70)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191586 Binomial row sums of the Riordan matrix (1/(1-x),x/(1-x^2)) (A046854).

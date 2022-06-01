@@ -1,6 +1,6 @@
 package irvine.oeis.a157;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A157844 103680000n^2 - 161251200n + 62697601.

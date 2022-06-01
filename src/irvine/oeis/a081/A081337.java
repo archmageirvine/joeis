@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081337 (8^n+4^n)/2.

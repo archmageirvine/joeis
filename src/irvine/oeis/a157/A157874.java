@@ -1,6 +1,6 @@
 package irvine.oeis.a157;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A157874 Expansion of 104*x^2 / (-x^3+675*x^2-675*x+1).

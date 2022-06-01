@@ -1,6 +1,6 @@
 package irvine.oeis.a163;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A163063 Lucas(3n+2) = Fibonacci(3n+1) + Fibonacci(3n+3).

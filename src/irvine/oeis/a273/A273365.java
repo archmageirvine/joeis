@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273365 Numbers k such that 10*k+4 is a perfect square.

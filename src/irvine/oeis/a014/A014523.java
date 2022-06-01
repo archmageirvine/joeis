@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A014523 Number of Hamiltonian paths in a 4 X (2n+1) grid starting at the lower left corner and finishing in the upper right corner.

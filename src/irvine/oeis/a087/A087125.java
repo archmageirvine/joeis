@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087125 Indices n of hex numbers H(n) that are also triangular.

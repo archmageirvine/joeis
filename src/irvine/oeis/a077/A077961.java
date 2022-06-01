@@ -1,6 +1,6 @@
 package irvine.oeis.a077;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A077961 Expansion of 1 / (1 + x^2 - x^3) in powers of x.

@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165516 Perfect squares (A000290) that can be expressed as the sum of three consecutive triangular numbers (A000217).

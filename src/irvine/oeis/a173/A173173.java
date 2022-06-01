@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173173 a(n) = ceiling(Fibonacci(n)/2).

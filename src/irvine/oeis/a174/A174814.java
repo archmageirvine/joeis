@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174814 a(n) = n*(n+1)*(5*n+1)/3.

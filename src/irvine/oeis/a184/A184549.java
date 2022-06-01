@@ -1,6 +1,6 @@
 package irvine.oeis.a184;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A184549 Super-birthdays (falling on the same weekday), version 1 (birth within the year following a February 29).

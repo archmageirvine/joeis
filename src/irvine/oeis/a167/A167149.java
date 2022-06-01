@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167149 10000-gonal numbers: a(n) = n + 4999 * n * (n-1).

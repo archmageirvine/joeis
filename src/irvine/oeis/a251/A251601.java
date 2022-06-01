@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251601 Numbers n such that hexagonal numbers H(n) and H(n+1) sum to another hexagonal number.

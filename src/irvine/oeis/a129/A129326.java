@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // egf: (2*x)/(1-x)-log(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129326 a(n) = (2*n+1)*(n-1)!.

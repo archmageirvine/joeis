@@ -1,6 +1,6 @@
 package irvine.oeis.a210;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A210626 Values of the prime-generating polynomial 4*n^2 - 284*n + 3449.

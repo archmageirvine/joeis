@@ -1,6 +1,6 @@
 package irvine.oeis.a237;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A237420 If n is odd, then a(n) = 0; otherwise, a(n) = n.

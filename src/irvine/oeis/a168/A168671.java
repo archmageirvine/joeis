@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168671 Numbers that are congruent to {1, 10} mod 13.

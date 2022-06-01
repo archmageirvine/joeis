@@ -3,7 +3,7 @@ package irvine.oeis.a348;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A348308 a(n) = Sum_{k=0..floor(n/6)} (-1)^k * binomial(n-3*k,3*k).

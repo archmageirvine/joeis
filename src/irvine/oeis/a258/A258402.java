@@ -1,6 +1,6 @@
 package irvine.oeis.a258;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A258402 a(n) = (n^2 + 4*n + 6) * n^2.

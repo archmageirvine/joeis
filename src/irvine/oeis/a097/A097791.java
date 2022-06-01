@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097791 a(n)=5a(n-1)+C(n+4,4),n&gt;0, a(0)=1.

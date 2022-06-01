@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137881 a(n) = sqrt(A137880(n)).

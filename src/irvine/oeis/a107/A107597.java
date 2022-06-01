@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 // ogf: (1/(1-x-x^2)+1/sqrt((1+x+x^2)*(1-3*x+x^2)))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A107597 Antidiagonal sums of triangle A107105: a(n) = Sum_{k=0..n} A107105(n-k,k), where A107105(n,k) = C(n,k)*(C(n,k) + 1)/2.

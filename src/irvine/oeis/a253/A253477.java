@@ -1,6 +1,6 @@
 package irvine.oeis.a253;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A253477 Indices of centered heptagonal numbers (A069099) which are also centered triangular numbers (A005448).

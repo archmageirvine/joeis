@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287057 a(n) = 2*n^2 + n - (n+1) mod 2.

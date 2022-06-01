@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 // Recurrence: a[n+0]=(2*n-1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A293962 Number of linear chord diagrams having n chords and maximal chord length n, a(0)=1.

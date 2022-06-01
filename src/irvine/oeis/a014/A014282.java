@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A014282 Inverse of 273rd cyclotomic polynomial.

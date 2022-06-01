@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A034326 Hours struck by a clock.

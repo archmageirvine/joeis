@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153234 a(n) = floor(2^n/9).

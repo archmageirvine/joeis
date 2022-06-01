@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060455 7th-order Fibonacci numbers with a(0)=...=a(6)=1.

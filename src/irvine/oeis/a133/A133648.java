@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133648 a(n) = 2*3^n + 3^(n-1) - (n+1).

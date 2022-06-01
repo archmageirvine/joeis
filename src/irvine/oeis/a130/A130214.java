@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130214 Order of modular group of degree 5^(n-1)+1.

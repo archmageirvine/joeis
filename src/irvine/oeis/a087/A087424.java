@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087424 a(n) = S(4*n,4)/S(n,4) where S(n,m) = Sum_{k=0..n} binomial(n,k)*Fibonacci(m*k).

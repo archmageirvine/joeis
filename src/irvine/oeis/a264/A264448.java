@@ -1,6 +1,6 @@
 package irvine.oeis.a264;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A264448 a(n) = n*(n + 11)*(n + 22)*(n + 33)/24.

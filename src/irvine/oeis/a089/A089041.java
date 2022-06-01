@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 // Recurrence: a[n+0]=(n-1)*(n+1)*a[n-1]+(n-1)*(2*n-1)*a[n-2]+(n-2)*(n-1)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A089041 Inverse binomial transform of squares of factorial numbers.

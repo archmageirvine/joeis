@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247853 The 8th Hermite Polynomial evaluated at n: H_8(n) = 256*n^8-3584*n^6+13440*n^4-13440*n^2+1680.

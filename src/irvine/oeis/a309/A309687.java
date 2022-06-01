@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // Recurrence: a[n+0]=2*a[n-1]-2*a[n-2]+2*a[n-3]-a[n-4]+a[n-6]-2*a[n-7]+2*a[n-8]-2*a[n-9]+a[n-10]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A309687 Number of odd parts appearing among the second largest parts of the partitions of n into 3 parts.

@@ -1,6 +1,6 @@
 package irvine.oeis.a181;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A181120 Partial sums of round(n^2/12) (A069905).

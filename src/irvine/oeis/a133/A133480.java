@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // Recurrence: a[n+0]+(3*n-1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A133480 Left 3-step factorial (n,-3)!: a(n) = (-1)^n * A008544(n).

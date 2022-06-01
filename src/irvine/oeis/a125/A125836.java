@@ -1,6 +1,6 @@
 package irvine.oeis.a125;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A125836 Numbers whose base 8 or octal representation is 555555555......5.

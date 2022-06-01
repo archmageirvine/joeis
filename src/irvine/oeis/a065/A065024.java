@@ -1,7 +1,7 @@
 package irvine.oeis.a065;
 // manually
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A065024 Number of n-digit biquanimous numbers in base 10 allowing leading zeros.

@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 // ogf: (77+166*x+36*x^2+186*x^3+96*x^4-636*x^5-672*x^6-348*x^7-44*x^8+632*x^9+504*x^10)/((1-x)*(1+x)*(1-2*x^2)*(1-2*x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A075253 Trajectory of 77 under the Reverse and Add! operation carried out in base 2.

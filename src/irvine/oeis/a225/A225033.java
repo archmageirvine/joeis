@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 // ogf: (1-84*x+2849*x^2-49873*x^3+474601*x^4-2324333*x^5+4567788*x^6-x^7)/(1-92*x+3514*x^2-72168*x^3+860019*x^4-5943768*x^5+22055962*x^6-33922100*x^7+x^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A225033 Non-crossing, non-nesting, 7-colored set partitions.

@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060354 The n-th n-gonal number: a(n) = n*(n^2 - 3*n + 4)/2.

@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // ogf: 1/(sqrt(1+x^2)*sqrt(1-4*x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101500 A Chebyshev transform of the central binomial numbers.

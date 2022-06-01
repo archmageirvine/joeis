@@ -1,6 +1,6 @@
 package irvine.oeis.a248;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A248086 Sum of the eccentricities of all vertices in the Lucas cube Lambda(n).

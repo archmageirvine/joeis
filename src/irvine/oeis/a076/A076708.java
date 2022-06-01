@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076708 Numbers n such that triangular numbers T(n) and T(n+1) sum to another triangular number (that is also a perfect square).

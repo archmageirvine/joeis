@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A034513 a(n) = 1^n + 3^n + 9^n.

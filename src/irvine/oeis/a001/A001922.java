@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A001922 Numbers k such that 3*k^2 - 3*k + 1 is both a square (A000290) and a centered hexagonal number (A003215).

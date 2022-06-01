@@ -1,6 +1,6 @@
 package irvine.oeis.a151;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A151898 First differences of Frobenius numbers for 7 successive numbers A138987.

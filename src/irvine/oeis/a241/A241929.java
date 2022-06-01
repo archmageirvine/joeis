@@ -1,6 +1,6 @@
 package irvine.oeis.a241;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A241929 Number of inequivalent colorings of the Fano plane with n colors.

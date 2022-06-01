@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128800 n*(n-1)*6^n.

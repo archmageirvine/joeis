@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // ogf: 1+sqrt((1+2*x)/(1-2*x))*2*x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A047073 Sum{T(i,n-i): i=0,1,...,n}, array T as in A047072.

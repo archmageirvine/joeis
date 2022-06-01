@@ -1,6 +1,6 @@
 package irvine.oeis.a095;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A095122 Fib(n)(2Fib(n)-1).

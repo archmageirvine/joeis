@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098181 Two consecutive odd numbers separated by multiples of four, repeated twice, between them, written in increasing order.

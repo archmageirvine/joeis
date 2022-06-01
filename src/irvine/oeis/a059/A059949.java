@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: -5*x^6*(3390266880*x^8-3368778336*x^7+1334596314*x^6-268312855*x^5+27919999*x^4-1171492*x^3-29534*x^2+4331*x-107)/((x-1)*(2*x-1)*(3*x-1)*(4*x-1)*(5*x-1)*(6*x-1)*(7*x-1)*(8*x-1)*(10*x-1)*(11*x-1)*(15*x-1)*(16*x-1)*(21*x-1)*(28*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A059949 Number of 8-block bicoverings of an n-set.

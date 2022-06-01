@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099589 Expansion of x^3 / (1 - 4x + 6x^2 - 4x^3 + 2x^4).

@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // ogf: ((2x)(1+x-x^2)(1-4x+x^2))/((1-10x+3x^2)(1-x)^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A108550 Number of ways of packing a 3 X (2n-1) rectangle with dominoes, leaving one space unoccupied.

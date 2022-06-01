@@ -1,6 +1,6 @@
 package irvine.oeis.a224;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A224227 a(n) = (1/50)*((15*n^2-20*n+4)*Fibonacci(n)-(5*n^2-6*n)*A000032(n)).

@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 // ogf: (1-2*x-x^3-(1-x)*sqrt((x^2-3*x+1)*(x^2+x+1)))/(2*x^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A188460 Diagonal sums of number triangle A119308.

@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290593 Number of maximal independent vertex sets (and minimal vertex covers) in the n-antiprism graph.

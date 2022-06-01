@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A061800 a(n) = n + (-1)^(n mod 3).

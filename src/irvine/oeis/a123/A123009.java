@@ -1,6 +1,6 @@
 package irvine.oeis.a123;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A123009 Expansion of x*(1 + 5*x)/(1 - 2*x - 49*x^2).

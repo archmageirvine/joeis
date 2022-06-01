@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 // Recurrence: a[n+0]=36*n-6
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A209876 a(n) = 36*n - 6.

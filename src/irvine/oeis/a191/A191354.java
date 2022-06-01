@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // Recurrence: +(n)*a[n+0]+(-2*n+1)*a[n-1]+3*(-n+1)*a[n-2]+2*(-2*n+3)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191354 Number of lattice paths from (0,0) to (n,n) using steps (1,0), (1,1), (1,2), and (2,1).

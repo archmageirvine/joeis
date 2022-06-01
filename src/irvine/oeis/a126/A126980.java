@@ -1,6 +1,6 @@
 package irvine.oeis.a126;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A126980 a(n) = 14*n + 47.

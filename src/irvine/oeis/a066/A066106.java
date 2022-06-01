@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A066106 a(2n) = (2n)(2n+2); a(2n+1) = 4n + 4.

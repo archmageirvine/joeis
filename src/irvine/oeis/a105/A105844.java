@@ -1,6 +1,6 @@
 package irvine.oeis.a105;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A105844 Numbers n such that 37*n^2 + 37*n + 1 is a square.

@@ -1,6 +1,6 @@
 package irvine.oeis.a218;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A218744 a(n) = (41^n-1)/40.

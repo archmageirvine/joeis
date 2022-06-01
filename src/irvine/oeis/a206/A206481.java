@@ -1,6 +1,6 @@
 package irvine.oeis.a206;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A206481 a(n) + a(n+2) = n^3.

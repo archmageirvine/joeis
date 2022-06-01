@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A020742 Pisot sequence T(7,9).

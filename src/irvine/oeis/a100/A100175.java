@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100175 Structured triakis tetrahedral numbers (vertex structure 4).

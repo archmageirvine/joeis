@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A036226 Expansion of 1/(1-7*x)^7.

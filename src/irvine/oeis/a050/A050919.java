@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A050919 a(n) = n*7^n + 1.

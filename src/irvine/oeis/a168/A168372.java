@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168372 a(n) = n^5*(n^4 + 1)/2.

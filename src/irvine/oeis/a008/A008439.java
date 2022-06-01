@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.oeis.transform.EulerTransformSequence;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A008439 Expansion of Jacobi theta constant theta_2^5 /32.

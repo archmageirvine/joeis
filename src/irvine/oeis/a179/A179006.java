@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179006 Partial sums of floor(Fibonacci(n)/4).

@@ -1,6 +1,6 @@
 package irvine.oeis.a126;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A126567 Sequence generated from the E6 Cartan matrix.

@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054761 Number of positive braids with n crossings of 5 strands.

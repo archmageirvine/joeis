@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // egf: (1-2*x)^(-1/2)-1-log(1-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123332 a(n) = 2^n*(Gamma(n+1/2)/Gamma(1/2) + (n-1)!).

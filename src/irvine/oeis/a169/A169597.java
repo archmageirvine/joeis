@@ -1,6 +1,6 @@
 package irvine.oeis.a169;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A169597 Numbers that are congruent to {2, 15} mod 19.

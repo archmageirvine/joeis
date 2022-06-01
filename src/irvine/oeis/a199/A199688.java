@@ -1,6 +1,6 @@
 package irvine.oeis.a199;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A199688 (8*10^n+1)/3.

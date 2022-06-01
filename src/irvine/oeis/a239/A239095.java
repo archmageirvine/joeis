@@ -1,6 +1,6 @@
 package irvine.oeis.a239;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A239095 a(n) = (n^7 - 21*n^3 + 20*n)/210.

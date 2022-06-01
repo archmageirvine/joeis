@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255184 25-gonal numbers: a(n) = n*(23*n-21)/2.

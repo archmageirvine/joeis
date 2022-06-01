@@ -1,6 +1,6 @@
 package irvine.oeis.a089;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A089594 Alternating sum of squares to n.

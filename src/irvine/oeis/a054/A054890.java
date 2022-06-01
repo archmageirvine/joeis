@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 // ogf: (x^2+x+1)/(x^2-6*x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A054890 Layer counting sequence for hyperbolic tessellation by regular heptagons of angle Pi/3.

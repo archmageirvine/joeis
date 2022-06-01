@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051926 Number of independent sets of nodes in graph C_4 X P_n (n&gt;2).

@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A045943 Triangular matchstick numbers: a(n) = 3*n*(n+1)/2.

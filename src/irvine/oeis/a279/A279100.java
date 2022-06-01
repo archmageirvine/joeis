@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279100 a(n) = Sum_{k=0..n} ceiling(phi^k), where phi is the golden ratio (A001622).

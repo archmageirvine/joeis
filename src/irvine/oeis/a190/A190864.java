@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // Recurrence: (-n+1)*a[n+0]+(-n+2)*a[n-1]+3*(-n+5)*a[n-2]+3*(-n+6)*a[n-3]+4*(2*n-5)*a[n-4]+4*(2*n-7)*a[n-5]+16*(n-4)*a[n-6]+16*(n-5)*a[n-7]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190864 Expansion of 1/(1-x*sqrt(1+4*x^2)).

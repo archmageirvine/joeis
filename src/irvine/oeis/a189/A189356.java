@@ -1,6 +1,6 @@
 package irvine.oeis.a189;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A189356 a(n) gives y-values solving the Diophantine equation 2*x^2 + (x-1)^2 = y^2 for positive x.

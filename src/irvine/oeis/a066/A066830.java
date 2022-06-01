@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A066830 a(n) = lcm(n+1, n-1).

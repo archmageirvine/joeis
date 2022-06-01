@@ -1,6 +1,6 @@
 package irvine.oeis.a116;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A116176 a(n) = 9^n * n*(n+1).

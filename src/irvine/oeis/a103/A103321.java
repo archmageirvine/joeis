@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103321 Expansion of 1 / ((1-x-x^2-x^3)*(1-x-x^3)).

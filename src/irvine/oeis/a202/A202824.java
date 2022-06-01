@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 // Recurrence: a[n+4]-4*a[n+3]-12*(n+3)*a[n+2]-12*(n+2)*(n+3)*a[n+1]-4*(n+1)*(n+2)*(n+3)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A202824 Expansion of e.g.f.: exp( (1+x)^4 - 1 ).

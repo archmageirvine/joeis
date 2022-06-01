@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A204185 Number of quadrilaterals in a triangular matchstick arrangement of side n.

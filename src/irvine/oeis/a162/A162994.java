@@ -1,7 +1,7 @@
 package irvine.oeis.a162;
 // manually 2021-06-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A162994 The third left hand column of triangle A162990.

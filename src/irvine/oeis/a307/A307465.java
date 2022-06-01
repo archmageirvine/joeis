@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: (1-3*x+2*x^2+x^3)/((1-x)^2*(1-2*x-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A307465 Number of Catalan words of length n avoiding the pattern 110.

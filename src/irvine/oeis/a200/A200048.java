@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200048 Number of real singularities on a family of degree-3n algebraic surfaces.

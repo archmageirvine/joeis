@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 // Recurrence: n*(2*n-3)*(4*n-7)*a[n+0]+(2*n-5)*(n-1)*(4*n-3)*a[n-2]-(4*n-5)*(28*n^2-70*n+39)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A299864 a(n) = (-1)^n*hypergeom([-n, n - 1/2], [1], 4).

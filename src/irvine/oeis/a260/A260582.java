@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 // ogf: -(4584825*x^21-32402639*x^20+116197885*x^19-276109240*x^18+466638686*x^17-565360388*x^16+479478061*x^15-263101580*x^14+64737485*x^13+27721713*x^12-36043190*x^11+18319939*x^10-5637417*x^9+1094626*x^8-124221*x^7+5875*x^6+171*x^5-14*x^4-x^3)/(19266000*x^22-234624000*x^21+1345258600*x^20-4829459800*x^19+12177772645*x^18-22934336190*x^17+33487611783*x^16-38844575208*x^15+36384232939*x^14-27820436326*x^13+17485343731*x^12-9066508172*x^11+3881838842*x^10-1369857572*x^9+396588486*x^8-93458208*x^7+17715207*x^6-2654590*x^5+306583*x^4-26260*x^3+1567*x^2-58*x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A260582 Number of ways to place 2n rooks on n X n board, 2 rooks in each row and each column, multiple rooks in a cell allowed, and exactly 4 rooks below the main diagonal.

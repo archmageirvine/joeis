@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167614 a(n) = (n^2 + 3*n + 8)/2.

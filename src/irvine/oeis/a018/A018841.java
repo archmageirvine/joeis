@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A018841 Number of steps for {2,3} fairy knight to reach (n,n) on infinite chessboard.

@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 // ogf: (6*x-1)/sqrt(1-4*x)^3-1/(x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A237664 Interpolation polynomial through n+1 points (0,1), (1,1), ..., (n-1,1) and (n,n) evaluated at 2n.

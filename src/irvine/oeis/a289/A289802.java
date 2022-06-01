@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289802 p-INVERT of the quarter-squares (A002620), where p(S) = 1 - S - S^2.

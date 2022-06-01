@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 // Recurrence: a[n+0]=3*a[n-1]-2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A146529 A two level sequence: v(n)=2*(If[n == 0, 0, 2^(n - 1)] + 2); a(n)=If[n == 0, 6, (v[n] + v[n - 1] - 2)].

@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290312 Third diagonal sequence of the Sheffer triangle A094816 (special Charlier).

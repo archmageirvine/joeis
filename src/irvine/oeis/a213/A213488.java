@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213488 Number of (w,x,y) with all terms in {0,...,n} and |w-x|+|x-y|+|y-w| &lt; w+x+y.

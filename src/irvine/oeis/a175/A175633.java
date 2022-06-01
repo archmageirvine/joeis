@@ -1,6 +1,6 @@
 package irvine.oeis.a175;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A175633 Numbers x such that x^2 - 28*y^2 = 1 for some integer y.

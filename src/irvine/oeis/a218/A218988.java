@@ -1,6 +1,6 @@
 package irvine.oeis.a218;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A218988 Power floor sequence of 2+sqrt(8).

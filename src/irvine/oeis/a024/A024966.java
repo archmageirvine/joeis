@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024966 7 times triangular numbers: 7*n*(n+1)/2.

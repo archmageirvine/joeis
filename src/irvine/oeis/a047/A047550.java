@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A047550 Numbers that are congruent to {5, 7} mod 8.

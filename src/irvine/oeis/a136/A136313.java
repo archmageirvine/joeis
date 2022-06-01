@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136313 a(1) = 1; for n&gt;1, a(n) = a(n-1) + 8 mod 22.

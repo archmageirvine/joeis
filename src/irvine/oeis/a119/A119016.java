@@ -1,6 +1,6 @@
 package irvine.oeis.a119;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A119016 Numerators of "Farey fraction" approximations to sqrt(2).

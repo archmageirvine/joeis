@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140660 a(n) = 3*4^n + 1.

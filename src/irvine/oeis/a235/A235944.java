@@ -1,6 +1,6 @@
 package irvine.oeis.a235;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A235944 Digital roots of squares of Lucas numbers.

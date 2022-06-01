@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 // ogf: 1/(2*x)*(1/sqrt(1-4*x)-1)-1/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A048775 Number of (partially defined) monotone maps from intervals of 1..n to 1..n.

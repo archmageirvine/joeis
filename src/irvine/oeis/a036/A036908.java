@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 // Recurrence: (-n+1)*a[n+0]+(5*n-8)*a[n-1]+3*(-n+1)*a[n-2]+9*(-n+4)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A036908 Number of different compact source directed animals with 1 point on the bottom line.

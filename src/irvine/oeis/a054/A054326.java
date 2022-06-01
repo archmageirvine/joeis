@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054326 Eighth unsigned column of Lanczos triangle A053125 (decreasing powers).

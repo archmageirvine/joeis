@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 // Recurrence: a[n+0]=6*a[n-3]-a[n-6]+302
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A161482 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+151)^2 = y^2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a166;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A166122 a(n) = (7-(-5)^n)/6.

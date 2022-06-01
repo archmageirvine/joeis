@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A008579 Coordination sequence for planar net 3.6.3.6. Spherical growth function for a certain reflection group in plane.

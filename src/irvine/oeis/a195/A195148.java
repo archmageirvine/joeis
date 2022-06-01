@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195148 Concentric 20-gonal numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a093;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A093722 Integers of the form (n^2 - 1) / 120.

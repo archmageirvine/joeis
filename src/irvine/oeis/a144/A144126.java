@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144126 P_6(2n+1), the Legendre polynomial of order 6 at 2n+1.

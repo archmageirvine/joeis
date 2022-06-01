@@ -1,6 +1,6 @@
 package irvine.oeis.a253;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A253072 The subsequence A253071(2^n-1).

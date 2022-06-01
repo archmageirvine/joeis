@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168175 Expansion of 1/(1 - 4*x + 7*x^2).

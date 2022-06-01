@@ -1,6 +1,6 @@
 package irvine.oeis.a145;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A145923 Second bisection of A061041: a(n) = A061041(2n+1) = (2n+1)*(2n+9).

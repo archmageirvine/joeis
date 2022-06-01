@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 // Recurrence: (n-1)*(69642*n-248963)*a[n+0]+(-358060*n^2+1078397*n-66480)*a[n-1]+3*(56652*n^2+710433*n-1732769)*a[n-2]+(749910*n^2-7663147*n+14398378)*a[n-3]-2*(157862*n-346287)*(2*n-7)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A289720 a(n) = 1 + n*binomial(2*n,n) - n^2*(n^2 - 2*n + 3)/2.

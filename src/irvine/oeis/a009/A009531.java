@@ -1,6 +1,6 @@
 package irvine.oeis.a009;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A009531 Expansion of the e.g.f. sin(x)*(1+x).

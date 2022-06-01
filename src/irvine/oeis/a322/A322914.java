@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 // Recurrence: n*a[n+0]+6*(-4*n+3)*a[n-1]+72*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A322914 a(0)=0; for n&gt;0, a(n) is the number of rooted 4-regular maps on the torus having n vertices.

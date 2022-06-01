@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A031138 Numbers k such that 1^5 + 2^5 + ... + k^5 is a square.

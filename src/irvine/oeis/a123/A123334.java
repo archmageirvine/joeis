@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // egf: (1-4*x)^(-1/4)-1-log(1-4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123334 a(n) = 4^n*(Gamma(n+1/4)/Gamma(1/4) + (n-1)!).

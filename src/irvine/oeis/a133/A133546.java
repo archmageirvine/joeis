@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // ogf: ((1-2*x+x^2-x^3)/((x-1)^2*(2*x-1)^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A133546 Binomial transform of [1,3,5,6,7,8,9,10,11,...] (i.e., positive integers except 2 and 4).

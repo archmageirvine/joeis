@@ -3,7 +3,7 @@ package irvine.oeis.a324;
 // egf: (1-exp(-x))/(1-x)^5
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A324354 Total number of occurrences of 4 in the (signed) displacement sets of all permutations of [n+4] divided by 4!.

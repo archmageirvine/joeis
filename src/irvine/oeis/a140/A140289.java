@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140289 First quadrisection of A140287.

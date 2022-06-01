@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A006469 Number of rooted toroidal maps with 2 faces, n vertices and no isthmuses.

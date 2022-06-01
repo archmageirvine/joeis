@@ -1,6 +1,6 @@
 package irvine.oeis.a188;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A188480 a(n) = (n^4 + 16*n^3 + 65*n^2 + 26*n + 12)/12.

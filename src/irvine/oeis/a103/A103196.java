@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103196 a(n) = (1/9)(2^(n+3)-(-1)^n(3n-1)).

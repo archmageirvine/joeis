@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191901 Number of compositions of odd natural numbers into 6 parts &lt;= n.

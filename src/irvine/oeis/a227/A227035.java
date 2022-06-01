@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // Recurrence: -2869*(n-7)*(n-6)*(n-5)*(n-4)*a[n-8]+2*(n-6)*(n-5)*(n-4)*(5226*n-17267)*a[n-7]-(n-5)*(n-4)*(11582*n^2-55156*n+50139)*a[n-6]-3*(n-4)*(612*n^3-18926*n^2+102684*n-155665)*a[n-5]+5*(n-4)*(2959*n^3-26172*n^2+77408*n-76800)*a[n-4]-1024*(n-2)*(2*n-5)*(7*n^2-35*n+48)*a[n-3]+1024*(n-2)*(n-1)*(7*n^2-28*n+30)*a[n-2]-1024*(n-2)*(n-1)*n*(2*n-3)*a[n-1]+256*(n-2)*(n-1)*n*(n+1)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A227035 a(n) = Sum_{k=0..floor(n/4)} binomial(n,4*k)*binomial(5*k,k)/(4*k+1).

@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 // Recurrence: n*(2*n-3)*(n-2)*a[n+0]+6*(9*n-10)*a[n-1]-12*(3*n-10)*(3*n-8)*(2*n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A089436 Number of non-crossing connected graphs on n nodes on a circle in which a fixed (distinguished) node has degree one.

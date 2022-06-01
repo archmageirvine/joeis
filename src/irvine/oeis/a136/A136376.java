@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136376 a(n) = n*F(n) + (n-1)*F(n-1).

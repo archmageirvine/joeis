@@ -1,7 +1,7 @@
 package irvine.oeis.a094;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A094258 a(1) = 1, a(n+1) = n*n! for n &gt;= 1.

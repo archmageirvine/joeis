@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097333 a(n) = Sum_{k=0..n} C(n-k, floor(k/2)).

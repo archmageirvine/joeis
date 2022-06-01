@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215635 a(n) = - 12*a(n-1) - 54*a(n-2) - 112*a(n-3) - 105*a(n-4) -36*a(n-5) - 2*a(n-6), with a(0)=3, a(1)=-6, a(2)=18, a(3)=-60, a(4)=210, a(5)=-756.

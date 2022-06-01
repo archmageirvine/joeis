@@ -1,7 +1,7 @@
 package irvine.oeis.a240;
 
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A240467 Inverse of 152nd cyclotomic polynomial.

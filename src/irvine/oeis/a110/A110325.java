@@ -1,6 +1,6 @@
 package irvine.oeis.a110;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A110325 Row sums of number triangle related to the Jacobsthal numbers.

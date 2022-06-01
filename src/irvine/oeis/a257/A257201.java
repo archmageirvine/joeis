@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257201 a(n) =  n*(n+1)*(n+2)*(n+3)*(n+4)*(n^2+4*n+37)/5040.

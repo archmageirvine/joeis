@@ -1,6 +1,6 @@
 package irvine.oeis.a266;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A266733 a(n) = 21*binomial(n+6,7).

@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173275 a(n) = 169*n^2 + n.

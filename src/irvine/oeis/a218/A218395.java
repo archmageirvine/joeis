@@ -1,6 +1,6 @@
 package irvine.oeis.a218;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A218395 If the sum of the squares of 11 consecutive numbers is a square, then a(n) is the square root of this sum.

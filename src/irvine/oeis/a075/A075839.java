@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A075839 Numbers k such that 11*k^2 - 2 is a square.

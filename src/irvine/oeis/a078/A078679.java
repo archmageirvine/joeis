@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // ogf: sqrt((1-x+x^2)/(1-3*x+x^3+x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A078679 Number of Grand Motzkin paths of length n with no zigzags, that is with no factors UDU and DUD.

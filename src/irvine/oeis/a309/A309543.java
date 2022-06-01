@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // ogf: -x^5*(2*x^11-x^10+2*x^8+4*x^6-4*x^5+5*x^4-2*x^3+5*x^2-6*x+5)/((x^2+1)*(x^2+x+1)*(x^2-x+1)*(x^4+x^3+x^2+x+1)*(x^4-x^3+x^2-x+1)*(x^4+1)*(x+1)^3*(x-1)^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A309543 Number of odd parts in the partitions of n into 5 parts.

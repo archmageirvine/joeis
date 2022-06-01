@@ -1,6 +1,6 @@
 package irvine.oeis.a199;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A199579 Average number of round trips of length n on the Laguerre graph L_4.

@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195146 Concentric 16-gonal numbers.

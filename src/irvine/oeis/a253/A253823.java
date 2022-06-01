@@ -1,6 +1,6 @@
 package irvine.oeis.a253;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A253823 Octagonal numbers (A000567) which are also centered triangular numbers (A005448).

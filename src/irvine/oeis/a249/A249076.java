@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249076 a(n) = (n*(n+1))^6.

@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051794 a(n) = Sum_{i=n-6..n-1} (-1)^i * a(i), a(1)=1, a(2)=1, a(3)=1, a(4)=1, a(5)=1, a(6)=1.

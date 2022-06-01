@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // ogf: (3x^7+2x^6+2x^5+2x^4+6x^3+5x^2+4x+3)/(1-2x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A051916 The Greek sequence: 2^a * 3^b * 5^c where a = 0,1,2,3,..., b,c in {0,1}, excluding the terms 1,2; that is: (a,b,c) != (0,0,0), (1,0,0).

@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212242 Number of (u,v,w,x,y,z) with all terms in {0,1,...,n} and 5u=v+w+x+y+z.

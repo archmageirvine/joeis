@@ -1,6 +1,6 @@
 package irvine.oeis.a196;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A196506 a(n) = 1*3*5 + 3*5*7 + 5*7*9 + ... (n terms).

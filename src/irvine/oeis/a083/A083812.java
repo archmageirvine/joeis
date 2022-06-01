@@ -1,6 +1,6 @@
 package irvine.oeis.a083;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A083812 4n-1 is the digit reversal of n-1.

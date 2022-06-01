@@ -1,7 +1,7 @@
 package irvine.oeis.a147;
 // manually interleave at 2021-11-02 15:18
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 import irvine.oeis.PrependSequence;
 
 /**

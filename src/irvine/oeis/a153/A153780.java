@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153780 10 times pentagonal numbers: a(n) = 5*n*(3*n-1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200562 Expansion of 1 / ((1 - 2*x) * (1 + 3*x + 4*x^2)) in powers of x.

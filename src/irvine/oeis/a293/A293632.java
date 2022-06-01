@@ -1,6 +1,6 @@
 package irvine.oeis.a293;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A293632 Least integer k such that k/Fibonacci(n) &gt;= 3/4.

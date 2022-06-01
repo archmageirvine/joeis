@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101180 Numbers n such that 19*n^2 + 19*n + 1 is a square.

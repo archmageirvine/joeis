@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A014899 a(n) = (16^(n+1) - 15*n - 16)/225.

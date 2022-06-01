@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174902 Denominator of 1 - 1/n^2, using 0 at the pole where n=0.

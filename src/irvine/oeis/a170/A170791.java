@@ -3,7 +3,7 @@ package irvine.oeis.a170;
 // Recurrence: 2*a[n+0]=n^9*(n^9+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A170791 a(n) = n^9*(n^9 + 1)/2.

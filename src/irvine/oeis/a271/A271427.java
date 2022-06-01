@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271427 a(n) = 7^n - a(n-1) for n&gt;0, a(0)=0.

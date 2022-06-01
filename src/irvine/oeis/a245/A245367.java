@@ -1,6 +1,6 @@
 package irvine.oeis.a245;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A245367 Compositions of n into parts 3, 5 and 7.

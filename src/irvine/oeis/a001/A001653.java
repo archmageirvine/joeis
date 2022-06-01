@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A001653 Numbers k such that 2*k^2 - 1 is a square.

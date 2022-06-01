@@ -1,6 +1,6 @@
 package irvine.oeis.a244;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A244871 Number of magic labelings with magic sum n of 3rd graph shown in link.

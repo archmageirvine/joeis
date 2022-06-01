@@ -1,6 +1,6 @@
 package irvine.oeis.a071;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A071355 a(n) = 2*n^2 + 11*n + 12.

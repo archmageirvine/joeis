@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A160749 a(n) = (11*n^2 + 19*n + 10)/2.

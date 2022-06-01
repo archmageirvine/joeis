@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097726 Pell equation solutions (5*a(n))^2 - 26*b(n)^2 = -1 with b(n):=A097727(n), n &gt;= 0.

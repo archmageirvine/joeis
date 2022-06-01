@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A053625 Product of 6 consecutive integers.

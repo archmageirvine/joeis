@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049666 a(n) = Fibonacci(5*n)/5.

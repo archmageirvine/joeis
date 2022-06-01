@@ -1,6 +1,6 @@
 package irvine.oeis.a166;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A166486 Periodic sequence [0,1,1,1] of length 4.

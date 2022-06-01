@@ -1,6 +1,6 @@
 package irvine.oeis.a199;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A199771 Row sums of the triangle in A199332.

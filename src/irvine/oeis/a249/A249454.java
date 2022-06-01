@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 // egf: exp(x*(sqrt(4*x^2+1)+2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A249454 E.g.f. exp(x*(sqrt(4*x^2+1)+2*x)).

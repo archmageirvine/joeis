@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // Recurrence: a[n+0]=n^4-n-1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126423 a(n) = n^4 - n - 1.

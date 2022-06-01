@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // Recurrence: 6*a[n+0]=n*(n+1)*(n+2)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087047 a(n) = n*(n+1)*(n+2)*a(n-1)/6 for n &gt;= 2; a(1) = 1.

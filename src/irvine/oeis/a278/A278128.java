@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278128 a(n) = 288*2^n - 156.

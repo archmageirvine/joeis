@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 // ogf: -3*(1+x)*(1+2*x^2)-2/x+(2*(2+1/x))/sqrt(1-4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A257546 Number of permutations of length n such that numbers at odd positions are monotone and numbers at even positions are also monotone.

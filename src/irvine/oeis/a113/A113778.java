@@ -1,6 +1,6 @@
 package irvine.oeis.a113;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A113778 Invert blocks of four in the sequence of natural numbers.

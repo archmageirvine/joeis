@@ -1,6 +1,6 @@
 package irvine.oeis.a116;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A116689 Partial sums of dodecahedral numbers (A006566).

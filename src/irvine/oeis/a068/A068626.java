@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 // Recurrence: a[n+0]=a[n-1]+2*a[n-3]-2*a[n-4]-a[n-6]+a[n-7]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A068626 a(3n) = a(3n-1) = 3*n^2, a(3n-2) = 3*n^2 - 3*n + 1.

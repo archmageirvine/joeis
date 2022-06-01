@@ -1,6 +1,6 @@
 package irvine.oeis.a147;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A147316 Fibonacci numbers (A000045) starting at offset -20.

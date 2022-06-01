@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 // Recurrence: n*a[n+0]+(-7*n+6)*a[n-1]+2*(7*n-13)*a[n-2]+4*(-2*n+5)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A279561 Number of length n inversion sequences avoiding the patterns 101, 102, 201, and 210.

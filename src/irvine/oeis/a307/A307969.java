@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // Recurrence: (n+2)*a[n+0]=-2*(2*n+1)*a[n-1]-12*(n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307969 Coefficient of x^n in 1/(n+1) * (1 - 2*x - 2*x^2)^(n+1).

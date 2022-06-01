@@ -1,6 +1,6 @@
 package irvine.oeis.a176;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A176737 Expansion of 1 / (1-4*x^2-3*x^3). (4,3)-Padovan sequence.

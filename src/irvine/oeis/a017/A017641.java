@@ -1,6 +1,6 @@
 package irvine.oeis.a017;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A017641 a(n) = 12n + 10.

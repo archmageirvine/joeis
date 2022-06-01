@@ -1,6 +1,6 @@
 package irvine.oeis.a156;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A156718 Numbers k such that k^2 == -1 (mod 13^2).

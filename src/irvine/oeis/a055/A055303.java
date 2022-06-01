@@ -1,7 +1,7 @@
 package irvine.oeis.a055;
 // manually holos 2021-08-17
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055303 Number of labeled rooted trees with n nodes and 2 leaves.

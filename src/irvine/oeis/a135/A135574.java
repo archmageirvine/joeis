@@ -1,6 +1,6 @@
 package irvine.oeis.a135;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A135574 A024495 but with terms swapped in pairs.

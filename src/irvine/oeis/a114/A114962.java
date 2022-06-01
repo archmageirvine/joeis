@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114962 a(n) = n^2 + 14.

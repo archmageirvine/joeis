@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133070 a(n) = n^5 - n^3 - n^2.

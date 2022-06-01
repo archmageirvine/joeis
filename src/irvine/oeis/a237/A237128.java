@@ -1,6 +1,6 @@
 package irvine.oeis.a237;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A237128 Angles n expressed in degrees such that 2*cos(n) = phi where phi is the golden ratio (A001622).

@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: (x^2-x+1)*x*(x^2+3*x+1)*(x+1)^2/((x^2+x-1)^2*(x^2-x-1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A307415 Total number of parts in all symmetric m-color cyclic compositions of n (that is, the total number of parts in all achiral cyclic compositions of n where a part with size m can be colored with one of m colors).

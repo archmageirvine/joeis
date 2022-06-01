@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 // Recurrence: n*a[n+0]+3*(-3*n+4)*a[n-1]+4*(4*n-9)*a[n-2]+8*(-n+3)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A118376 Number of all trees of weight n, where nodes have positive integer weights and the sum of the weights of the children of a node is equal to the weight of the node.

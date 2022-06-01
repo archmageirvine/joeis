@@ -1,7 +1,7 @@
 package irvine.oeis.a016;
 
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A016117 Inverse of 2108th cyclotomic polynomial.

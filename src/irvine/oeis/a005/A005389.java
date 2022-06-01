@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A005389 Number of Hamiltonian circuits on 2n times 4 rectangle.

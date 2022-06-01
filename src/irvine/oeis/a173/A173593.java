@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173593 Numbers having in binary representation exactly two ones in three consecutive digits.

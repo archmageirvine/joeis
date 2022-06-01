@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A262523 a(n+3) = a(n) + 6*n + 13, a(0)=0, a(1)=2, a(2)=7.

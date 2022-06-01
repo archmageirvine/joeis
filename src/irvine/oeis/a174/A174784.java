@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174784 Expansion of x*(1-x+x^3+x^4)/(1+x^6) (Period 12).

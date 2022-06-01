@@ -1,6 +1,6 @@
 package irvine.oeis.a154;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A154355 a(n) = 25*n^2 - 36*n + 13.

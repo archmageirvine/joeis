@@ -1,6 +1,6 @@
 package irvine.oeis.a239;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A239285 a(n) = (15^n - (-2)^n)/17.

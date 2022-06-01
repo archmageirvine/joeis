@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // Recurrence: a[n+0]=a[n-1]+a[n-9]-a[n-10]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A194523 Second coordinate of (4,5)-Lagrange pair for n.

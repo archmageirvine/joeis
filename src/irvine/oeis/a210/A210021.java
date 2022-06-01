@@ -1,6 +1,6 @@
 package irvine.oeis.a210;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A210021 Number of binary words of length n containing no subword 11011.

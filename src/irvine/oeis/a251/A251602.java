@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251602 Numbers n such that hexagonal number H(n) is the sum of two consecutive hexagonal numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a129;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A129868 Binary palindromic numbers with only one 0 bit.

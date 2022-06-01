@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168418 a(n) = 9*n - a(n-1) - 8 with n&gt;1, a(1)=5.

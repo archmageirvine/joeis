@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // Recurrence: n^2*(n+1)^2*(1058*n^4-7061*n^3+16158*n^2-14048*n+3284)*a[n+0]=2*n*(30682*n^7-219052*n^6+555798*n^5-545060*n^4+16565*n^3+323730*n^2-206943*n+39408)*a[n-1]-(834762*n^8-7954803*n^7+30596846*n^6-59518007*n^5+57023894*n^4-13636388*n^3-20674168*n^2+16952656*n-3600432)*a[n-2]+2*(n-2)^2*(744832*n^6-5313736*n^5+13458434*n^4-12947434*n^3-64535*n^2+6504872*n-2110473)*a[n-3]-676*(n-3)^2*(n-2)^2*(1058*n^4-2829*n^3+1323*n^2+1317*n-609)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277639 Double binomial partial sums of A007004.

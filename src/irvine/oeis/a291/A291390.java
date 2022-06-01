@@ -1,6 +1,6 @@
 package irvine.oeis.a291;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A291390 a(n) = (1/5)*A291389(n).

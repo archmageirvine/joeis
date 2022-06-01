@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 // ogf: (2-2*x+x^2-x^3+x^4-x^8+x^9)/((1-x)^2*(1-x-x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A289115 a(n) = 3*a(n-1) - 3*a(n-2) + 2*a(n-3) - 2*a(n-4) + a(n-5) for n &gt;= 10, a(0) = 2, a(1) = 4, a(2) = 7, a(3) = 12, a(4) = 20, a(5) = 32, a(6) = 50, a(7) = 77, a(8) = 116, a(9) = 174.

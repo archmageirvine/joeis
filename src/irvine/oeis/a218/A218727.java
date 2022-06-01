@@ -1,6 +1,6 @@
 package irvine.oeis.a218;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A218727 a(n) = (24^n-1)/23.

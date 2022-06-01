@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A036666 Numbers k such that 5*k + 1 is a square.

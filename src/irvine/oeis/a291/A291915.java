@@ -1,6 +1,6 @@
 package irvine.oeis.a291;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A291915 Number of 6-cycles in the n-Fibonacci cube graph.

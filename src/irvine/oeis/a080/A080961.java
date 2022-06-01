@@ -1,6 +1,6 @@
 package irvine.oeis.a080;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A080961 Fourth binomial transform of A010686 (period 2: repeat 1,5).

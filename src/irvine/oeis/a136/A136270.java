@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136270 a(n) = 20*a(n-1) - 3*a(n-2).

@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 // ogf: -(4*x-1+(-4*x+1)^(1/2))/(6*x^2-5*x+(-4*x+1)^(1/2)*x+1-(-4*x+1)^(1/2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A073525 Result of applying the transformation on generating functions A -&gt; 1/((1-x)*(1-x*A)) to the g.f. for A024718.

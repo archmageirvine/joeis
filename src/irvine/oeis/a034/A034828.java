@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A034828 a(n) = floor(n^2/4)*(n/2).

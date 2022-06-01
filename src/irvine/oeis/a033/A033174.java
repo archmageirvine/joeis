@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 // Recurrence: a[n+0]=a[n-1]+a[n-4]-a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A033174 Number of days in n years (n=1 is the first leap year).

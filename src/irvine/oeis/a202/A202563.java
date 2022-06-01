@@ -1,6 +1,6 @@
 package irvine.oeis.a202;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A202563 Numbers which are both decagonal and pentagonal.

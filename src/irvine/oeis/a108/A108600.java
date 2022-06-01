@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // ogf: (1-3*x-2*x^2+(1+x)*sqrt(1-4*x))/(1-4*x-x^2+(1-x^2)*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108600 Number of freely braided permutations of length n; the freely braided permutations are those that avoid 3421, 4231, 4312 and 4321.

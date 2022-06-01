@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A019528 Poincar\u00e9 series [or Poincare series] for depths of roots in a certain root system.

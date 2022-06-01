@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 // Recurrence: (n+1)*a[n+0]-9*n*a[n-1]+(19*n-27)*a[n-2]+3*(-n+2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A050151 a(n) = T(n,n+2), array T as in A050143.

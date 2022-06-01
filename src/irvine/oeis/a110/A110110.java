@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 // ogf: ((1+x)*(-1+sqrt(1-6*x^2+x^4)/(1-2*x-x^2)))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A110110 Number of symmetric Schroeder paths of length 2n (A Schroeder path of length 2n is a lattice path from (0,0) to (2n,0) consisting of U=(1,1), D=(1,-1) and H=(2,0) steps and never going below the x-axis).

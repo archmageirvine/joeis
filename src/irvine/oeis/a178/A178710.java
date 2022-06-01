@@ -1,6 +1,6 @@
 package irvine.oeis.a178;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A178710 Partial sums of floor(4^n/7).

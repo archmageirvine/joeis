@@ -1,6 +1,6 @@
 package irvine.oeis.a188;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A188129 a(n) = (2^n+3)^2-8.

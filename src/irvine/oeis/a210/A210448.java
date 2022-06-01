@@ -1,6 +1,6 @@
 package irvine.oeis.a210;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A210448 Total number of different letters summed over all ternary words of length n.

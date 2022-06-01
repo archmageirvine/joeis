@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A074752 Number of combinatorially inequivalent cyclic subgroups of S_n of order 6.  Number of partitions of n of order 6.

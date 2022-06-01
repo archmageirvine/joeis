@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A007482 a(n) is the number of subsequences of [ 1, ..., 2n ] in which each odd number has an even neighbor.

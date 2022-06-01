@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134987 Third extended Jacobsthal recurrence: a(n)=4a(n-1)-6(n-2)+4a(n-3)-a(n-4)+2a(n-5).

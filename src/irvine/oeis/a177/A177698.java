@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // egf: sin(arctan(x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177698 Expansion of e.g.f.: sin(arctan(x)).

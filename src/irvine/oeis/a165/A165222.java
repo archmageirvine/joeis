@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 // Recurrence: a[n+0]=7*a[n-1]-14*a[n-2]+8*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A165222 a(n) = (2^(n+4)+1)*(2^n+1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191275 Numbers that are congruent to {0, 1, 3, 5, 7, 9, 11} mod 12.

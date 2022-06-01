@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // ogf: 1/(4*sqrt(1-12*x+4*x^2))-1/(4*(1-2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331396 Number of nonnegative integer matrices with 2 distinct columns and any number of nonzero rows with column sums n and columns in decreasing lexicographic order.

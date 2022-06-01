@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 // Recurrence: a[n+1]=(n+1)*a[n+0]+n^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A319013 a(n) is the sum over each permutation of S_n of the least element of the descent set.

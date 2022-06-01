@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A030280 COMPOSE triangular numbers with triangular numbers.

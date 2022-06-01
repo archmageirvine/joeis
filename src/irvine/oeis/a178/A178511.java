@@ -1,6 +1,6 @@
 package irvine.oeis.a178;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A178511 a(n) = (1/119)*(100^n -(-19)^n).

@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271937 a(n) = (7/4)*n^2 + (5/2)*n + (7 + (-1)^n)/8.

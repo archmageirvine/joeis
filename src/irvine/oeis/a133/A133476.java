@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133476 a(n) = Sum_{k&gt;=0} binomial(n,5*k+1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118058 a(n) = 49n^2 - 28n - 20.

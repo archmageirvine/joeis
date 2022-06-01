@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090409 7*8^n/9+2(-1)^n/9.

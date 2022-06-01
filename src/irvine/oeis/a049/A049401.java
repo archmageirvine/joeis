@@ -1,7 +1,7 @@
 package irvine.oeis.a049;
 // manually 2020-12-30
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A049401 Number of Young tableaux of height &lt;= 5.

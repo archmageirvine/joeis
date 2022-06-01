@@ -1,7 +1,7 @@
 package irvine.oeis.a187;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187188 Parse the infinite string 0123456789012345678901234567890... into distinct phrases 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 01, 23, 45, 67, 89, 012, 34, 56, 78, 90, 12, 345, ...; a(n) = length of n-th phrase.

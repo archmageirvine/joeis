@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A055997 Numbers n such that n(n - 1)/2 is a square.

@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174507 Continued fraction expansion for exp( Sum_{n&gt;=1} 1/(n*A085447(n)) ), where A085447(n) = (3+sqrt(10))^n + (3-sqrt(10))^n.

@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // ogf: 1/(2*x)-((1+(1-4*x)^(1/2))*((2+2*(1-4*x)^(1/2)+12*x)^(1/2)-2))/(8*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187430 Number of nonnegative walks of n steps with step sizes 1 and 2, starting and ending at 0.

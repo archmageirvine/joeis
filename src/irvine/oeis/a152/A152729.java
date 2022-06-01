@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152729 a(n) = (n-2)^4 - a(n-1) - a(n-2), with a(1) = a(2) = 0.

@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057539 Birthday set of order 7, i.e., numbers congruent to +- 1 modulo 2, 3, 4, 5, 6 and 7.

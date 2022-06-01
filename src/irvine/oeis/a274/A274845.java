@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274845 a(0)=1, a(1)=0, a(4n+2) = a(4n+3) = a(4n+5) = (4^(n+1) +(-1)^n)/5, a(4n+4) = (2*4^(n+1) -3*(-1)^n)/5.

@@ -3,7 +3,7 @@ package irvine.oeis.a295;
 // Recurrence: n*(3*n-1)*(2*n-1)*(3*n-2)*a[n+0]-24*(12*n-11)*(12*n-1)*(12*n-5)*(12*n-7)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A295431 a(n) = (12*n)!*n! / ((6*n)!*(4*n)!*(3*n)!).

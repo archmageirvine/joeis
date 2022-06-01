@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A065679 If n is even, a(n) = n^2 else a(n) = n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098590 a(n) = 4^n for n = 0..3; for n &gt; 3, a(n) = 4*a(n-1) + a(n-4).

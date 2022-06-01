@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // ogf: 1/((1-x)*(1-10000*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A330135 a(n) = ((10^(n+1))^4 - 1)/9999 for n &gt;= 0.

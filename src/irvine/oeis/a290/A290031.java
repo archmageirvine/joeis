@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290031 Number of 6-cycles in the n-hypercube graph.

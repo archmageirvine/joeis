@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192464 Constant term of the reduction by x^2-&gt;x+1 of the polynomial p(n,x) = 1 + x^n + x^(2n).

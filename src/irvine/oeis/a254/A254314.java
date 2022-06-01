@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 // ogf: (3-6*x+x^2-sqrt((1-4*x+x^2)^2-4*x^3))/(2*(1-2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A254314 Hankel transform of a(n) is A006720(n). Hankel transform of a(n+1) is A006720(n+2).

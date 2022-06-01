@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 // Recurrence: a[n+0]=5*(6*n-13)*a[n-1]-5*(75*n^2-400*n+557)*a[n-2]+50*(50*n^3-475*n^2+1539*n-1698)*a[n-3]-(9375*n^4-137500*n^3+764625*n^2-1910000*n+1807524)*a[n-4]+(18750*n^5-390625*n^4+3267500*n^3-13716875*n^2+28896490*n-24436079)*a[n-5]-25*(n-5)^2*(5*n-24)*(5*n-23)*(5*n-22)*(5*n-21)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A239301 E.g.f.: exp((1-5*x)^(-1/5)-1)/(1-5*x).

@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226500 Triangular numbers representable as 3 * x^2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A161474 Triple factorials n!!!: a(n) = n*a(n-3).

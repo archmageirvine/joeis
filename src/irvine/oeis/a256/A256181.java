@@ -1,6 +1,6 @@
 package irvine.oeis.a256;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A256181 The number of permutations of length n sortable by 3 block interchanges.

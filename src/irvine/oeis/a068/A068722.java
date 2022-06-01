@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A068722 Number of solenoidal flows (flow in = flow out) in a 3 X 3 square array with integer velocities -n .. n.

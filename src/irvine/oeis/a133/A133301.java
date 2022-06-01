@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133301 a(n) is the n-th pentagonal number which is the sum of two consecutive pentagonal numbers.

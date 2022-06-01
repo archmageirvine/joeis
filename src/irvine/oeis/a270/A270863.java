@@ -1,6 +1,6 @@
 package irvine.oeis.a270;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A270863 Self-composition of the Fibonacci sequence.

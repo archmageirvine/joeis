@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137789 a(n) = 7^n - 6^n - 5^n - 4^n - 3^n - 2^n.

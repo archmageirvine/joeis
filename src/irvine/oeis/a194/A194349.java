@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 // egf: -log(sqrt(1-x^2)-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A194349 E.g.f.: -log( sqrt(1-x^2) - x ).

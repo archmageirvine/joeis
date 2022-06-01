@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027820 a(n) = 28*(n+1)*binomial(n+6,8)/3.

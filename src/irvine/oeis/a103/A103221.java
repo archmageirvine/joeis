@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103221 Number of partitions of n into parts 2 and 3.

@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 // ogf: (sqrt(1-16*x^2)+2*x-1)/(2*x*(1-5*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A121724 Generalized central binomial coefficients for k=2.

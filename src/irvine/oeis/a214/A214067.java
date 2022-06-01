@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A214067 [(5/2)*[(5/2)*n]], where [ ] = floor.

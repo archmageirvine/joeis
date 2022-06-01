@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226701 Positive solutions x/(3*13) of the Pell equation x^2 - 61*y^2 = -4.

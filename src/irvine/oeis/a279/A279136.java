@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 // Recurrence: +n*a[n+0]+(-3*n+2)*a[n-1]+2*(-n+1)*a[n-2]+2*(3*n-7)*a[n-3]+(n-2)*a[n-4]+3*(-n+4)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A279136 a(n) = n*Sum_{i=0..n-1} binomial(n,i)*binomial(i-1,n-i-1)/(n-i).

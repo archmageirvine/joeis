@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A037251 a(n) = n^3*(n^3 + 1)*(n-1).

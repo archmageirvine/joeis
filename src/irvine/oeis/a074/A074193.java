@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 // Recurrence: a[n+0]=-a[n-1]-2*a[n-2]-2*a[n-3]+2*a[n-4]-a[n-5]+a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A074193 Sum of determinants of 2nd order principal minors of powers of the matrix ((1,1,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,0)).

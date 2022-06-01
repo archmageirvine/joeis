@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128055 a(n)=2^A128054(n).

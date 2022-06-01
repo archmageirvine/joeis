@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 // egf: (exp(-x)*x^2*(3-2*x+x^2))/(3*(1-x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A305730 a(n) is the total displacement of all letters in all permutations of n letters with no fixed points.

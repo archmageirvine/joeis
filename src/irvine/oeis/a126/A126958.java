@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // Recurrence: a[n+0]=(n+3)*(n+1)*(n^2-10*n+12)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126958 Define an array by d(m, 0) = 1, d(m, 1) = m; d(m, k) = (m - k + 1) d(m+1, k-1) - (k-1) (m+1) d(m+2, k-2). Sequence gives d(n,4).

@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220892 G.f.: (1+8*x+22*x^2+8*x^3+x^4)/(1-x)^6.

@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144928 Values of k arising in A144927.

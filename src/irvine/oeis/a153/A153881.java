@@ -1,7 +1,7 @@
 package irvine.oeis.a153;
 // manually
 
-import irvine.oeis.PaddingSequence;
+import irvine.oeis.recur.PaddingSequence;
 
 /**
  * A153881 1 followed by -1, -1, -1, ... .

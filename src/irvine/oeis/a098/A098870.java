@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // ogf: x*(342*x^7+24*x^6-645*x^5+42*x^4+378*x^3-504*x^2-6*x-2)/(x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A098870 Sum of the cubes of the digits of the previous term, starting with 2.

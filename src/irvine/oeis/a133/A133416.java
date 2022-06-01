@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133416 a(n) = (1/10)*(2^(4*n-3)-5^n*F(2*n-1)+L(4*n-2)), where F() = Fibonacci numbers A000045 and L() = Lucas numbers A000032.

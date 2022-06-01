@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // egf: 1/(1-5*x)^(11/5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051687 a(n) = (5*n+6)(!^5)/6, related to A008548 ((5*n+1)(!^5) quintic, or 5-factorials).

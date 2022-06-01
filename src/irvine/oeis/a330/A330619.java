@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // ogf: (1-2*x^4+2*x^5)*(1-4*x^4+4*x^8+4*x^10)/((1-2*x^2)*(1+2*x^2)*(1-4*x^4+8*x^8))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A330619 Array read by rows: T(n,k) is the number of solutions to the equation Sum_{i=1..n} x_i^2 == k (mod 4) with x_i in 0..3, where n &gt;= 0 and 0 &lt;= k &lt;= 3.

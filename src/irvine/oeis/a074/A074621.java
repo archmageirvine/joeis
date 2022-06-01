@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A074621 a(n) = 6^n + 9^n.

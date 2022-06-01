@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 // ogf: 7*(4-9*x)/((1-2*x)*(1-9*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A188526 a(n) = 3^(2*n + 3) + 2^n.

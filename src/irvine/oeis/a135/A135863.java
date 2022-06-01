@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // Recurrence: (-n+1)*a[n+0]+(-n+2)*a[n-1]+4*(-n+4)*a[n-2]+4*(-n+5)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A135863 G.f. A(x) = 1 + 4x*A(x)^(1/2); A(x) = 1 + 8x^2 + 4x*sqrt(1 + 4x^2).

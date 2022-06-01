@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // ogf: (1+2x+3x^2+3x^3+5x^4+3x^5+7x^6+2x^7+7x^8+6x^9+5x^10+3x^11+3x^12+x^13+x^14)/(1-x^8)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A111607 Fourth column of A109626.

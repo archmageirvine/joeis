@@ -1,6 +1,6 @@
 package irvine.oeis.a089;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A089911 a(n) = Fibonacci(n) mod 12.

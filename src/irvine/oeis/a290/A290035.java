@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 // ogf: -(46416180096*x^15-267702314880*x^14+715470788032*x^13-1174802003648*x^12+1324630789300*x^11-1085757157800*x^10+667971384675*x^9-313912715655*x^8+113562125600*x^7-31611210400*x^6+6712800710*x^5-1067591910*x^4+123053700*x^3-9702000*x^2+467775*x-10395)*x^12/((7*x-1)*(6*x-1)^2*(5*x-1)^3*(4*x-1)^4*(3*x-1)^5*(2*x-1)^6*(x-1)^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A290035 Number of set partitions of [n] having exactly six blocks of size &gt; 1.

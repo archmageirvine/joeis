@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // Recurrence: a[n+0]=20*a[n-1]-20*a[n-2]+a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097832 Partial sums of Chebyshev sequence S(n,19)= U(n,19/2)=A078368(n).

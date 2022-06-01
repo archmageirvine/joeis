@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103831 For even n, a(n) = n*(n+1), for odd n, a(n) = 2*n + 1.

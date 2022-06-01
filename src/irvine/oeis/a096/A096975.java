@@ -1,6 +1,6 @@
 package irvine.oeis.a096;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A096975 Trace sequence of a path graph plus loop.

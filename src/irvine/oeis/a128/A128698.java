@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // Recurrence: a[n+0]+34*a[n-1]-714*a[n-2]-4641*a[n-3]+12376*a[n-4]+12376*a[n-5]-4641*a[n-6]-714*a[n-7]+34*a[n-8]+a[n-9]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128698 Alternating sum of the eighth powers of the first n Fibonacci numbers.

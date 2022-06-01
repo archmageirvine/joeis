@@ -1,6 +1,6 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A022015 a(n)=2a(n-1)+3a(n-2)+2a(n-3)+3a(n-4).

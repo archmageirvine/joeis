@@ -1,6 +1,6 @@
 package irvine.oeis.a209;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A209547 1/4 the number of (n+1)X3 0..3 arrays with every 2X2 subblock having exactly two distinct clockwise edge differences.

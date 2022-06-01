@@ -1,6 +1,6 @@
 package irvine.oeis.a221;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A221911 9^n + 9*n.

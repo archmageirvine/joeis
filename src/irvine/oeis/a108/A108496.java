@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // Recurrence: 42*a[n+0]=(n^43-n)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108496 a(n) = (n^43 - n)/42.

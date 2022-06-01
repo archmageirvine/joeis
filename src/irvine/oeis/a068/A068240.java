@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 // Recurrence: 2*a[n+0]=n*(n-1)*(n^14-23*n^13+253*n^12-1762*n^11+8675*n^10-31939*n^9+90723*n^8-202160*n^7+355622*n^6-492434*n^5+529770*n^4-430857*n^3+251492*n^2-94782*n+17493)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A068240 1/2 the number of colorings of a 4 X 4 square array with n colors.

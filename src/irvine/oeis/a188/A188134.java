@@ -1,6 +1,6 @@
 package irvine.oeis.a188;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A188134 a(4*n) = n, a(1+2*n) = 4+8*n, a(2+4*n) = 2+4*n.

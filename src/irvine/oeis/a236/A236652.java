@@ -1,6 +1,6 @@
 package irvine.oeis.a236;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A236652 Positive integers n such that n^2 divided by the digital root of n is a square.

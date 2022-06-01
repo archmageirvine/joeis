@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // ogf: (1+1/x^2-sqrt(1+1/x^4-2/x^2-4/x-(4-4*x)/(1-x+x^2)))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190168 Number of peakless Motzkin paths of length n having no (1,0)-steps at levels 1,3,5,... .

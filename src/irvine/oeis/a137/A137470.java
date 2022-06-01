@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137470 Inverse binomial transform of 1, 2, 2, 4, 10, 20, ... = A100088.

@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // Recurrence: n*a[n+0]+2*(-2*n+3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115141 Convolution of A115140 with itself.

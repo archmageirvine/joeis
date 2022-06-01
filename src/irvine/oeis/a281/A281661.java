@@ -1,6 +1,6 @@
 package irvine.oeis.a281;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A281661 The least common multiple of 1 + n^2 and 1 + n^3.

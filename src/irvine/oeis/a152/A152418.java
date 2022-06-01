@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152418 A sevens sequence: a(n)=(7^n - 1)/(2^(4 - 3*Mod[n, 2])).

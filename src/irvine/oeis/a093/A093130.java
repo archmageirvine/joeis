@@ -1,6 +1,6 @@
 package irvine.oeis.a093;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A093130 Third binomial transform of Fibonacci(3n).

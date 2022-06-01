@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118587 Expansion of (17-25*x-23*x^2+133*x^3)/(1-x)^4.

@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 // ogf: x*(1+x+x^2+x^3)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A158411 Maximum number of colors required to paint a map having n regions.

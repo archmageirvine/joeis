@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 // Recurrence: a[n+0]=5*a[n-1]-8*a[n-2]+6*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A137500 Binomial transform of b(n) = (0, 0, A007910).

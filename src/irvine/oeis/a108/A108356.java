@@ -1,6 +1,6 @@
 package irvine.oeis.a108;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A108356 Count, repeating multiples of 3 four times, all other numbers twice.

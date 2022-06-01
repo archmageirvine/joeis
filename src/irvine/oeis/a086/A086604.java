@@ -1,6 +1,6 @@
 package irvine.oeis.a086;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A086604 2^(n-3)n(9n^2-9n+4).

@@ -1,6 +1,6 @@
 package irvine.oeis.a077;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A077291 Second member of Diophantine pair (m,k) that satisfies 6*(m^2 + m) = k^2 + k: a(n) = k.

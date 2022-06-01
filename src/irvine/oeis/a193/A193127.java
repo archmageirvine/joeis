@@ -1,6 +1,6 @@
 package irvine.oeis.a193;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A193127 Numbers of spanning trees of the antiprism graphs.

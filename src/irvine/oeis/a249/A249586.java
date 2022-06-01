@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249586 Sum of the first n^3 cubes.

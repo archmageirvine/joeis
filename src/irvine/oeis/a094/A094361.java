@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094361 Pair-reversal of 1,4,4,16,16...

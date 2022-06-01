@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A015044 Inverse of 1035th cyclotomic polynomial.

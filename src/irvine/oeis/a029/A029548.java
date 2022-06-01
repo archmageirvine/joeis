@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A029548 Expansion of 1/(1-32*x+x^2).

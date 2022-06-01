@@ -1,6 +1,6 @@
 package irvine.oeis.a208;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A208954 a(n) = n^4*(n-1)*(n+1)/12.

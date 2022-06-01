@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 // Recurrence: n*a[n+0]=2*a[n-1]+8*(2*n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A091520 Expansion of 1 / ((1 - 4*x) * sqrt(1 + 4*x)) in powers of x.

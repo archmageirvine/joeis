@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 // Recurrence: a[n+0]=a[n-1]+(n-1)*a[n-2]+(n-1)(n-2)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A057693 Number of permutations on n letters that have only cycles of length 3 or less.

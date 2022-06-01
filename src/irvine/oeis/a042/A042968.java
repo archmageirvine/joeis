@@ -1,6 +1,6 @@
 package irvine.oeis.a042;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A042968 Numbers not divisible by 4.

@@ -1,6 +1,6 @@
 package irvine.oeis.a102;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A102543 Antidiagonal sums of the antidiagonals of Losanitsch's triangle.

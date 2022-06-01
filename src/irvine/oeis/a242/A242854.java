@@ -1,6 +1,6 @@
 package irvine.oeis.a242;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A242854 a(n) = 512*n^9 - 1024*n^7 + 672*n^5 - 160*n^3 + 10*n.

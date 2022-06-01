@@ -1,6 +1,6 @@
 package irvine.oeis.a188;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A188386 Numerator(h(n+2)-h(n-1)), where h(n) is the n-th harmonic number sum(1/k, k=1..n).

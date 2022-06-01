@@ -1,6 +1,6 @@
 package irvine.oeis.a198;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A198412 a(n) = (3^(6*n) - 2^(6*n))/35.

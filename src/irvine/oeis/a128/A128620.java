@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128620 Row sums of A128619.

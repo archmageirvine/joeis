@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // Recurrence: 3*a[n+0]=((n-1)+1)*(5*(n-1)+3)*(8*(n-1)+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100146 Structured great rhombicubeoctahedral numbers.

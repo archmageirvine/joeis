@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A160765 Expansion of (1+13*x+32*x^2+13*x^3+x^4)/(1-x)^5.

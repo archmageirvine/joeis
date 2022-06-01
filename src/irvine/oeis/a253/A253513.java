@@ -1,6 +1,6 @@
 package irvine.oeis.a253;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A253513 The characteristic function of the multiples of eight.

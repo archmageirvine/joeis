@@ -1,6 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A115032 Expansion of (5-14*x+x^2)/((1-x)*(x^2-18*x+1)).

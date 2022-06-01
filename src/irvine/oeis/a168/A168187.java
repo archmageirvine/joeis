@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168187 a(n) = n^3*(n^6 + 1)/2.

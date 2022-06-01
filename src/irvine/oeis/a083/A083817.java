@@ -1,6 +1,6 @@
 package irvine.oeis.a083;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A083817 Interleaving of (1,2,3,4,5,...), (2,2,2,2,...) and (0,1,3,6,10,...).

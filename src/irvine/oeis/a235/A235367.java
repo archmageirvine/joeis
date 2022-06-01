@@ -1,6 +1,6 @@
 package irvine.oeis.a235;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A235367 Sum of positive even numbers up to n^2.

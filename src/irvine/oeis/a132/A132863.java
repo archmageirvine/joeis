@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // ogf: 8/(5+3*sqrt(1-16*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132863 Expansion of 1/(1-3x*c(4x)), where c(x) is the g.f. of A000108.

@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A109720 Periodic sequence {0,1,1,1,1,1,1} or n^6 mod 7.

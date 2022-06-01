@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212892 a(n) = n^4/8 if n is even, a(n) = (n^2-1)^2/8 if n is odd.

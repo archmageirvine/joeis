@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 // ogf: 1/2+(1/2*(1+x))/sqrt(1+6*x+x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A182626 a(n) = Hypergeometric([-n, n], [1], 2).

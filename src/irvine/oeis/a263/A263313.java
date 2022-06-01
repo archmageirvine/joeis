@@ -1,6 +1,6 @@
 package irvine.oeis.a263;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A263313 Permutation of the nonnegative integers: [4k+3, 4k, 4k+1, 4k+2, ...].

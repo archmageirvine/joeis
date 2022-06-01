@@ -1,6 +1,6 @@
 package irvine.oeis.a070;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A070212 Number of 5 X 5 pandiagonal magic squares with sum n.

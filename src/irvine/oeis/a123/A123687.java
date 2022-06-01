@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // Recurrence: (n+1)*(2*n+3)^2*(2*n+1)^2*a[n+0]-(2*n+5)*(2*n+3)^2*a[n+1]+(n+2)*a[n+2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123687 E.g.f.: (1-x^2)^(-1/2)*exp(x^2/(1-x^2))*BesselI(0,x^2/(x^2-1)) (since this is an even function, we do not give the intercalating 0's).

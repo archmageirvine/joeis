@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A227712 a(n) = 9*2^n - 3*n - 5.

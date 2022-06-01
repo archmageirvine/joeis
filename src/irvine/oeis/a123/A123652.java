@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // Recurrence: a[n+0]=1+n^2+n^3+n^5+n^7+n^11+n^13+n^17+n^19+n^23+n^29+n^31+n^37+n^41
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123652 a(n) = 1 + n^2 + n^3 + n^5 + n^7 + n^11 + n^13 + n^17 + n^19 + n^23 + n^29 + n^31 + n^37 + n^41.

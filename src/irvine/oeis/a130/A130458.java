@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // Recurrence: 3*(n-1)*(3*n-4)*(3*n-2)*(5491*n^4-57274*n^3+222641*n^2-382514*n+245280)*a[n+0]=8*(2*n-5)*(4*n-13)*(4*n-11)*(5491*n^4-35310*n^3+83765*n^2-87090*n+33624)*a[n-1]+3*(n-1)*(3*n-4)*(3*n-2)*(5491*n^4-57274*n^3+222641*n^2-382514*n+245280)*a[n-2]-(1553953*n^7-22978945*n^6+143006047*n^5-485316835*n^4+969747472*n^3-1141036300*n^2+732514848*n-198216000)*a[n-3]+8*(2*n-5)*(4*n-13)*(4*n-11)*(5491*n^4-35310*n^3+83765*n^2-87090*n+33624)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A130458 Final term in the rows of triangle A130457: a(n) = A130457(n, 3n), for n&gt;=0.

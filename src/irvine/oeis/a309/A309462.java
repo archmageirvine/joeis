@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // ogf: (x^2+x+1)/(-x^4-2*x^3-x^2-x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A309462 Limiting row sequence for Pascal-like triangle A140995 (Stepan's triangle with index of asymmetry s = 3).

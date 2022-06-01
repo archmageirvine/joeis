@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // ogf: (sqrt(1-20*x^2)+2*x-1)/(2*x*(1-6*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128387 Expansion of c(5x^2)/(1-x*c(5x^2)), where c(x) is the g.f. of A000108.

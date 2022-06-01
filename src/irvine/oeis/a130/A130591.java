@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // Recurrence: a[n+3]=(8-3*n)*a[n-1]+(-24+4*n)*a[n+0]+(22-n)*a[n+1]-8*a[n+2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A130591 a(n+3) = (8 - 3*n)*a(n-1) + (-24 + 4*n)*a(n) + (22 - n)*a(n+1) - 8*a(n+2).

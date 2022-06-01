@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // Recurrence: 8*(n-3)*(n-2)^2*a[n+0]=4*(n-3)*(10*n^5-28*n^4-18*n^3+117*n^2-111*n+32)*a[n-1]-6*(n-1)^3*(3*n-5)*(3*n-4)*(n^4+3*n^3-37*n^2+71*n-36)*a[n-2]+9*(n-2)^3*(n-1)^4*(3*n-8)*(3*n-7)*(3*n-5)*(3*n-4)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A047910 Number of words on {1,1,1,2,2,2,...,n,n,n} with longest increasing subsequence of length n.

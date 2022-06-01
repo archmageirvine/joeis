@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 // ogf: 1/sqrt((1-x)*(1-2*x)*(1+x+2*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A217615 G.f.: Sum_{n&gt;=0} x^n * Sum_{k=0..n} binomial(n,k)^2 * x^k*(1-x)^(n-k).

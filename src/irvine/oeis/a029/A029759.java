@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 // Recurrence: n*a[n+0]+(-9*n+8)*a[n-1]+2*(13*n-23)*a[n-2]+12*(-2*n+5)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A029759 Number of permutations which are the union of an increasing and a decreasing subsequence.

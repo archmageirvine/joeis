@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // Recurrence: a[n+0]=a[n-1]+a[n-16]-a[n-17]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A160543 Not divisible by 17.

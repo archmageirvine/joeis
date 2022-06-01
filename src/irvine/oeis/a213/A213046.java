@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213046 Convolution of Lucas numbers and positive integers repeated (A000032 and A008619).

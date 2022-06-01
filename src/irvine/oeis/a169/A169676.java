@@ -1,6 +1,6 @@
 package irvine.oeis.a169;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A169676 Lexicographically earliest de Bruijn sequence for n = 2 and k = 3.

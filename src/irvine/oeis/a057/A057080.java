@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057080 Even-indexed Chebyshev U-polynomials evaluated at sqrt(10)/2.

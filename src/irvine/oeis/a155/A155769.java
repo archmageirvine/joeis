@@ -1,6 +1,6 @@
 package irvine.oeis.a155;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A155769 a(n) = 2n^2 + 2n - 41.

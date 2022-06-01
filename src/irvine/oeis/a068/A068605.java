@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 // ogf: (4x^2/(1-2x)^3)-(2x^2/(1-x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A068605 Number of functions from [1,2,...,n] to [1,2,...,n] such that the image contains exactly two elements.

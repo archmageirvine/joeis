@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127220 a(n) = 3^n*tetranacci(n) or (2^n)*A001648(n).

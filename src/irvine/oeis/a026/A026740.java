@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A026740 a(n) = 2^n*(2^n - 1)*(2^n - 2)/6.

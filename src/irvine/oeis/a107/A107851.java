@@ -1,6 +1,6 @@
 package irvine.oeis.a107;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A107851 G.f. x*(-1-x-3*x^2-x^3+2*x^5)/((2*x^3+x^2-1)*(x^4+1)).

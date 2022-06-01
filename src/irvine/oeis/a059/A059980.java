@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: -x*(x^14+6544*x^13+1568215*x^12+72338144*x^11+1086859301*x^10+6727188848*x^9+19323413187*x^8+27306899520*x^7+19323413187*x^6+6727188848*x^5+1086859301*x^4+72338144*x^3+1568215*x^2+6544*x+1)/(x-1)^17
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A059980 Number of 8-dimensional cage assemblies.

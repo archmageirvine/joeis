@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // Recurrence: 2*a[n+0]=n*(n-5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307681 Difference between the number of diagonals and the number of sides for a convex n-gon.

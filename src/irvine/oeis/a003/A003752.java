@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A003752 Number of Hamiltonian paths in C_4 X P_n.

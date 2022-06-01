@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // Recurrence: 720*a[n+0]=(n+1)(n+2)^3*(n+3)(13*n^2+37*n+30)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108671 a(n) = (n+1)(n+2)^3*(n+3)(13n^2 + 37n + 30)/720.

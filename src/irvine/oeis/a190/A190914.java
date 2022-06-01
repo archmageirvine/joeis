@@ -1,6 +1,6 @@
 package irvine.oeis.a190;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A190914 Expansion of ( 5-9*x^2-2*x^3 ) / ( (1+x-x^2)*(1-x-x^2-x^3) ).

@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: a[n+0]=2*a[n-1]-2*a[n-3]+a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332044 a(n) is the length of the shortest circuit that visits every edge of an undirected n X n grid graph.

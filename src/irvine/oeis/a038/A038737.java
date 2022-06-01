@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 // ogf: 1/((1-3x+x^2)(1-x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A038737 T(n,n-2), array T as in A038792.

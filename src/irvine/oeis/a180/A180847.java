@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180847 a(n) = (27^n-4^n)/23.

@@ -1,6 +1,6 @@
 package irvine.oeis.a113;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A113754 Number of possible squares on an n^2 X n^2 grid.

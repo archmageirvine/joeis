@@ -1,6 +1,6 @@
 package irvine.oeis.a186;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A186421 Even numbers interleaved with repeated odd numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a187;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A187620 a(n) = n^6 - a(n-1), a(0)=1.

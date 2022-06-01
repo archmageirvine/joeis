@@ -1,6 +1,6 @@
 package irvine.oeis.a084;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A084850 2^(n-1)*(n^2+2n+2).

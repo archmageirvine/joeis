@@ -1,6 +1,6 @@
 package irvine.oeis.a123;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A123350 a(n) = (n^4 + 2n^3 + 5n^2 + 4)/4.

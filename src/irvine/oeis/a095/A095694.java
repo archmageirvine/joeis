@@ -1,6 +1,6 @@
 package irvine.oeis.a095;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A095694 T(n,3) diagonal of triangle in A095693.

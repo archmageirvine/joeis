@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054554 a(n) = 4n^2 - 10n + 7.

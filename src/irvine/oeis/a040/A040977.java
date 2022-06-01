@@ -1,6 +1,6 @@
 package irvine.oeis.a040;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A040977 a(n) = binomial(n+5,5)*(n+3)/3.

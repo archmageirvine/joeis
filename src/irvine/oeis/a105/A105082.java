@@ -1,6 +1,6 @@
 package irvine.oeis.a105;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A105082 Expansion of (5+4x)/(1-2x-x^2).

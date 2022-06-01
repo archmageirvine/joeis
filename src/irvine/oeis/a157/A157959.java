@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 // Recurrence: a[n+0]=n^20-30*n^19+435*n^18-4060*n^17+27405*n^16-142486*n^15+593275*n^14-2029770*n^13+5806295*n^12-14047858*n^11+28942903*n^10-50912200*n^9+76328405*n^8-96864050*n^7+102660272*n^6-88808037*n^5+60384665*n^4-30272495*n^3+9922451*n^2-1585121*n
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A157959 Number of n-colorings of the Desargues graph.

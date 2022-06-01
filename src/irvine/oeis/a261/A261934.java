@@ -1,6 +1,6 @@
 package irvine.oeis.a261;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A261934 The first of ten consecutive positive integers the sum of the squares of which is equal to the sum of the squares of two consecutive positive integers.

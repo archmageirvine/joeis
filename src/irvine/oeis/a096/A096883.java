@@ -1,6 +1,6 @@
 package irvine.oeis.a096;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A096883 Expansion of (1+10x)/(1-101x^2).

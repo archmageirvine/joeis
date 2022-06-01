@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 // egf: log(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A052517 Number of ordered pairs of cycles over all n-permutations having two cycles.

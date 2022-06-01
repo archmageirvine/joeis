@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // Recurrence: a[n+0]-2*n*(2*n-3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166356 Expansion of e.g.f. 1 + x*arctanh(x), even powers only.

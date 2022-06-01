@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 // Recurrence: 2*n^2*(469*n^2-2106*n+2229)*a[n+0]=(11725*n^4-64375*n^3+111011*n^2-68153*n+13344)*a[n-1]+(46431*n^4-301356*n^3+678782*n^2-620403*n+186048)*a[n-2]+(37989*n^4-284553*n^3+757682*n^2-829732*n+299712)*a[n-3]-2*(n-3)^2*(469*n^2-1168*n+592)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A274667 Diagonal of the rational function 1/(1 - x - y - x y - x z - y z + x y z).

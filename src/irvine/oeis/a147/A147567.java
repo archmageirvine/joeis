@@ -1,6 +1,6 @@
 package irvine.oeis.a147;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A147567 a(n) = a(n-4) - a(n-8).

@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124217 Expansion of (1-x-x^2)/(1-2x-x^2+x^4).

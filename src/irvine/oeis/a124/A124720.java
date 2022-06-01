@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124720 Number of ternary Lyndon words of length n with exactly two 1's.

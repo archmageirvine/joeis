@@ -1,6 +1,6 @@
 package irvine.oeis.a102;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A102080 Number of matchings in the C_n X P_2 (n-prism) graph.

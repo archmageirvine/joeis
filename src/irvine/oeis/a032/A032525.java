@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A032525 Floor( 7*n^2/2 ).

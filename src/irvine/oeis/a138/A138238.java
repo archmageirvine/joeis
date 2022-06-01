@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138238 Alternating sum of the squares of the first n Jacobsthal numbers.

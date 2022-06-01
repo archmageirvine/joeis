@@ -1,6 +1,6 @@
 package irvine.oeis.a293;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A293005 Number of associative, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.

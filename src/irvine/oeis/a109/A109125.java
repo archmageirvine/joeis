@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A109125 Column 7 of array illustrated in A089574 and related to A034261.

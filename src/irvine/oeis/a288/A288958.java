@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A288958 Number of cliques in the n X n rook graph.

@@ -1,7 +1,7 @@
 package irvine.oeis.a051;
 // manually 2021-05-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051893 a(n) = Sum_{i=1..n-1} i^2*a(i), a(1) = 1.

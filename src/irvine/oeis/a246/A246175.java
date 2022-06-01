@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // ogf: x(1-x-x^2)/((1+x)^3*(1-3x+x^2)^3
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A246175 The hyper-Wiener index of the Fibonacci cube Gamma(n) (n&gt;=1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A036499 Numbers of the form k*(k+1)/6 for k = 2 or 3 modulo 6.

@@ -1,6 +1,6 @@
 package irvine.oeis.a182;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A182460 a(n) = (3/5)*2^(4n+1) - (1/5).

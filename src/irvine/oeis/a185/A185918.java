@@ -1,6 +1,6 @@
 package irvine.oeis.a185;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A185918 a(n) = 12*n^2 - 2*n - 1.

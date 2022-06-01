@@ -1,6 +1,6 @@
 package irvine.oeis.a181;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A181973 Prime-generating polynomial: 16*n^2 - 300*n + 1447.

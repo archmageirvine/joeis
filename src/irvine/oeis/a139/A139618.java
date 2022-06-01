@@ -1,6 +1,6 @@
 package irvine.oeis.a139;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A139618 a(n) = 153*n + 18.

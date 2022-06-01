@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A072674 3^n+2*2^n-3.

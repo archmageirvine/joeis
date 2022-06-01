@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090949 a(n) = (1/24)*(n+1)*(3*n^3+59*n^2+358*n+648).

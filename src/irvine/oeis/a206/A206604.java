@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 // ogf: 1/(1-x)+(1-sqrt(1-4*x^2))/(2*x-1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A206604 Number of integers in the smallest interval containing both minimal and maximal possible apex values of an addition triangle whose base is a permutation of n+1 consecutive integers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a125;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A125301 a(3n) = n, a(3n+1) = (n+2)*a(3n), a(3n+2) = (n+2)*a(3n+1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A160333 Number of pairs of rabbits in month n in the dying rabbits problem, if they become mature after 4 months and give birth to exactly 7 pairs, one per month.

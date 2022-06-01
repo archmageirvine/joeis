@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // Recurrence: a[n+0]-(8*n-7)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A045755 8-fold factorials: a(n) = Product_{k=0..n-1} (8*k+1).

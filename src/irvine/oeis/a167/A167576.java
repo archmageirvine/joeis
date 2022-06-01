@@ -1,7 +1,7 @@
 package irvine.oeis.a167;
 // manually 2021-10-17
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A167576 The first column of the ED3 array A167572. 

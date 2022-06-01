@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 // egf: x/((1-x)*sqrt(1-2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A233481 Number of singletons (strong fixed points) in pair-partitions.

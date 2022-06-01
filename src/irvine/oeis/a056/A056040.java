@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 // Recurrence: n*a[n+0]+(n-2)*a[n-1]+4*(-2*n+3)*a[n-2]+4*(-n+1)*a[n-3]+16*(n-3)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A056040 Swinging factorial, a(n) = 2^(n-(n mod 2))*Product_{k=1..n} k^((-1)^(k+1)).

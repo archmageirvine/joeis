@@ -1,6 +1,6 @@
 package irvine.oeis.a256;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A256239 Sum of all the parts in the partitions of 6n into 6 parts.

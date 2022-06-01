@@ -1,6 +1,6 @@
 package irvine.oeis.a169;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A169963 Number of (2n+1)-digit squares in carryless arithmetic mod 10.

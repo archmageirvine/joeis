@@ -1,6 +1,6 @@
 package irvine.oeis.a172;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A172244 Integers (up to a sign) that are not representable in the form 2x^2 + xy + 3y^2 + z^3 - z for integer x,y,z.

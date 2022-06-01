@@ -1,6 +1,6 @@
 package irvine.oeis.a256;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A256649 29-gonal pyramidal numbers: a(n) = n*(n+1)*(9*n-8)/2.

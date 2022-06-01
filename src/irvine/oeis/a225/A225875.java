@@ -1,6 +1,6 @@
 package irvine.oeis.a225;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A225875 We write the 1 + 4*k numbers once and twice the others.

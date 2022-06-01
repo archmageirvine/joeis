@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 // Recurrence: 60*a[n+0]=n^6*(n^24+15*n^10+20*n^4+24)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A282670 Number of inequivalent ways to color the edges of a dodecahedron using at most n colors.

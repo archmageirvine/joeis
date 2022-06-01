@@ -1,6 +1,6 @@
 package irvine.oeis.a145;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A145696 Numbers Y such that 111*Y^2+37 is a square.

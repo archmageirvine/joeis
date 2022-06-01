@@ -1,6 +1,6 @@
 package irvine.oeis.a119;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A119633 a(n) = (A046717(n))^3.

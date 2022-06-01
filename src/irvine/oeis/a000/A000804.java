@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A000804 Permanent of a certain cyclic n X n (0,1) matrix.

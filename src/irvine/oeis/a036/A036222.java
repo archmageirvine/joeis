@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A036222 Expansion of 1/(1-3*x)^9; 9-fold convolution of A000244 (powers of 3).

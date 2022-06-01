@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165639 a(n)=(7/4)*(1+3*(-7)^(n-1)).

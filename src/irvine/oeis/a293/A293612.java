@@ -1,6 +1,6 @@
 package irvine.oeis.a293;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A293612 a(n) = (1/2)*(n + 1)*(5*n^2 + 15*n + 6)*Pochhammer(n, 6) / 6!.

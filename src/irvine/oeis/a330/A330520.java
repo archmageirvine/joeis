@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // ogf: 2*(x^2+x+1)*x^2/((x+1)^2*(1-x)^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A330520 Sum of even integers &lt;= n times the sum of odd integers &lt;= n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027766 a(n) = (n+1)*binomial(n+1,6).

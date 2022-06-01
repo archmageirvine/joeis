@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152265 a(n) = ((8+sqrt(7))^n + (8-sqrt(7))^n)/2.

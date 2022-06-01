@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153784 4 times heptagonal numbers: 2n(5n-3).

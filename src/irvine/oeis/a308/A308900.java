@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // Recurrence: a[n+0]=-a[n-1]+10*a[n-2]+10*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308900 An explicit example of an infinite sequence with a(1)=1 and, for n &gt;= 2, a(n) and S(n) = Sum_{i=1..n} a(i) have no digit in common.

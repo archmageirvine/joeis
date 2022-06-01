@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124793 Numbers in a perpendicular plane intersecting a 3D clockwise spiral produced by powers of 2.

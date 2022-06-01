@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090692 Expansion of 2*(x^2-9*x+15) / ((1+x)*(1-3*x+x^2)).

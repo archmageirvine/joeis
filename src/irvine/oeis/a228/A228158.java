@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // ogf: 2*(1+8*x)/((1-x)*(1+x)*(1-10*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A228158 Numbers n such that the cardinality of (natural numbers &lt;=n with a first digit of 1) = n/2.

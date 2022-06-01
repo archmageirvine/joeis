@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247614 a(n) = Sum_{k=0..9} binomial(18,k)*binomial(n,k).

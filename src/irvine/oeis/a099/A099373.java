@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099373 Twice Chebyshev polynomials of the first kind, T(n,x), evaluated at 83/2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A020538 a(n) = 4th Chebyshev polynomial (first kind) evaluated at 2^n.

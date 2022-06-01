@@ -1,6 +1,6 @@
 package irvine.oeis.a089;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A089574 Column 4 of an array closely related to A083480. (Both arrays have shape sequence A083479).

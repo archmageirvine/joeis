@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A011659 A binary m-sequence: expansion of reciprocal of x^4+x+1.

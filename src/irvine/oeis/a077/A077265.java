@@ -1,6 +1,6 @@
 package irvine.oeis.a077;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A077265 Number of cycles in the n-th order prism graph.

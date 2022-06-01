@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A072675 Last digit of F(n) is 1 where F(n) is the n-th Fibonacci number.

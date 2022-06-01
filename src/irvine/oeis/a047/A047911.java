@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // Recurrence: 2*(n-1)*n^2*(2*n-1)*(285*n^5-3103*n^4+13059*n^3-26689*n^2+26560*n-10304)*a[n+0]=(n-1)*(47595*n^8-576626*n^7+2865154*n^6-7617380*n^5+11803635*n^4-10846922*n^3+5730080*n^2-1580640*n+172800)*a[n-1]-3*(3*n-5)*(3*n-4)*(19095*n^7-201061*n^6+842141*n^5-1814447*n^4+2160932*n^3-1410228*n^2+459104*n-55296)*a[n-2]+72*(3*n-8)*(3*n-7)*(3*n-5)*(3*n-4)*(285*n^5-1678*n^4+3497*n^3-3280*n^2+1372*n-192)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A047911 Number of sequences with n copies each of 1, 2, 3 and longest increasing subsequence of length 3.

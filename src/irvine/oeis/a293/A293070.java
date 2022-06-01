@@ -1,6 +1,6 @@
 package irvine.oeis.a293;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A293070 Sum of values of vertices at level n of the hyperbolic Pascal pyramid PP_(4,5).

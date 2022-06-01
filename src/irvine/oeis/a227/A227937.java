@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // egf: exp(x^2/2+x^3/6)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A227937 Partitions of n labeled elements into subsets of two or three elements.

@@ -1,7 +1,7 @@
 package irvine.oeis.a098;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098332 Expansion of 1/sqrt(1 - 2*x + 9*x^2).

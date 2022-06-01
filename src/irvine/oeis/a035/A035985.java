@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 // DO NOT EDIT here!
 
 import irvine.oeis.transform.EulerTransformSequence;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A035985 Number of partitions of n into parts not a multiple of 7. Also number of partitions with at most 6 parts of size 1 and differences between parts at distance 9 are greater than 1.

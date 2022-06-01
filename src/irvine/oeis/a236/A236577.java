@@ -1,6 +1,6 @@
 package irvine.oeis.a236;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A236577 The number of tilings of a 6 X n floor with 1 X 3 trominoes.

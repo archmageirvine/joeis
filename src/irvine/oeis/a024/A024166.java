@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024166 a(n) = Sum_{1 &lt;= i &lt; j &lt;= n} (j-i)^3.

@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A109764 Sum of the first n^2 squares.

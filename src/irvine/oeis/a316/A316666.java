@@ -3,7 +3,7 @@ package irvine.oeis.a316;
 // egf: (3*exp(-x)+x-2)/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A316666 Number of simple relaxed compacted binary trees of right height at most one with no sequences on level 1 and no final sequences on level 0.

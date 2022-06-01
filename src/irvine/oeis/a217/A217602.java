@@ -1,6 +1,6 @@
 package irvine.oeis.a217;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A217602 Let a(1) = 1. If n and a(n-1) have the same parity, a(n) =  n + a(n-1), otherwise a(n) = abs(n - a(n-1)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a183;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A183207 Termwise products of the natural numbers and odd integers repeated.

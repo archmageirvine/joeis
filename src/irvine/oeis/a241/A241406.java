@@ -1,6 +1,6 @@
 package irvine.oeis.a241;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A241406 Numbers n such that n^2 == -1 (mod 61).

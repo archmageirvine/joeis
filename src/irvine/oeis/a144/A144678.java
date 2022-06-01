@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144678 Related to enumeration of quantum states (see reference for precise definition).

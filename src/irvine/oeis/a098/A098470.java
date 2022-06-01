@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: (n^2-25)*a[n+0]=n*(2*n-1)*a[n-1]+3*n*(n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098470 Form array in which n-th row is obtained by expanding (1+x+x^2)^n and taking the 5th column from the center.

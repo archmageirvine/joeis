@@ -1,6 +1,6 @@
 package irvine.oeis.a159;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A159673 Expansion of 56*x^2/(-x^3 + 783*x^2 - 783*x + 1).

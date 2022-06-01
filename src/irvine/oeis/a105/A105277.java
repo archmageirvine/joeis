@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 // Recurrence: a[n+0]=(4*n-3)*a[n-1]-2*(n-1)*(3*n-5)*a[n-2]+(n-2)^2*(4*n-7)*a[n-3]-(n-3)^2*(n-2)^2*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A105277 Let F(n) denote the Fibonacci numbers, A000045: a(n) = Sum_{k=0..n} C(n,k)^2*(n-k)!*F(k).

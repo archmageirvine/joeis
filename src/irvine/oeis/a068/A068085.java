@@ -1,7 +1,7 @@
 package irvine.oeis.a068;
 // manually 2021-02-25
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A068085 Numbers k such that k and 10*k are both triangular numbers.

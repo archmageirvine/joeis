@@ -1,6 +1,6 @@
 package irvine.oeis.a285;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A285188 a(n) = Sum_{k=1..n} (k^2*floor(k/2)).

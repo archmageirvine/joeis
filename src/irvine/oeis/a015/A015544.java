@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A015544 Lucas sequence U(5,-8): a(n+1) = 5*a(n) + 8*a(n-1), a(0)=0, a(1)=1.

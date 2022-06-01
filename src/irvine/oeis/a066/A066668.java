@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 // egf: exp(x/(x-1))/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A066668 Signed row sums of A066667.

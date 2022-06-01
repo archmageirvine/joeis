@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 // Recurrence: n*(n+1)*a[n+0]-2*n*(n+1)*a[n-1]-4*(2*n^2-10*n+9)*a[n-2]+8*(n^2-11*n+21)*a[n-3]-48*(n-3)*(n-4)*a[n-4]+32*(2*n-9)*(n-5)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A071688 Number of plane trees with even number of leaves.

@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: (1-6*x^2-x^3+8*x^4+4*x^5-(1-4*x^2-x^3)*sqrt(1-4*x^2))/(2*x*(1+2*x)*(1-2*x)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191787 Number of triple-rises in all length n left factors of Dyck paths (triple-rise = three consecutive (1,1)-steps).

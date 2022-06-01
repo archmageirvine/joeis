@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 // ogf: (x*(1+5*x-(1-x)*sqrt(1-4*x)))/(2*(2+x)^2*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A116914 Number of UUDD's, where U=(1,1) and D=(1,-1), in all hill-free Dyck paths of semilength n (a hill in a Dyck path is a peak at level 1).

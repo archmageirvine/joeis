@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A227300 Rising diagonal sums of triangle of Fibonacci polynomials (rows displayed as centered text).

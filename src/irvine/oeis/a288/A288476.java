@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A288476 a(n) = a(n-1) + 4*a(n-2) - 2*a(n-3), where a(0) = 2, a(1) = 4, a(2) = 8.

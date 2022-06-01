@@ -1,6 +1,6 @@
 package irvine.oeis.a261;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A261327 a(n) = (n^2 + 4) / 4^((n + 1) mod 2).

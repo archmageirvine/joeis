@@ -1,6 +1,6 @@
 package irvine.oeis.a162;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A162436 a(n) = 3*a(n-2) for n &gt; 2; a(1) = 1, a(2) = 3.

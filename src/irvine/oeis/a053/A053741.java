@@ -1,6 +1,6 @@
 package irvine.oeis.a053;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A053741 Sum of even numbers in range 10*n to 10*n+9.

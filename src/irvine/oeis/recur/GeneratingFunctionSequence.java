@@ -5,13 +5,14 @@
  * 2019-05-10: Sean Irvine, Z parameters
  * 2019-05-09: Georg Fischer
  */
-package irvine.oeis;
+package irvine.oeis.recur;
 
 import java.util.Arrays;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * An ordinary generating function consisting of a fraction of two polynomials in "x".

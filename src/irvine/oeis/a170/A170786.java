@@ -1,6 +1,6 @@
 package irvine.oeis.a170;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A170786 a(n) = n^9*(n^4 + 1)/2.

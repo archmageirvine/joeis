@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 // ogf: 1/((1+x-x^2)^3*(1-4*x-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A203803 G.f.: exp( Sum_{n&gt;=1} A000204(n)^3 * x^n/n ) where A000204 is the Lucas numbers.

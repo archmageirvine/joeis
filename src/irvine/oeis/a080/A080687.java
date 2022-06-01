@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // egf: (3-2*x-sqrt(1-4*x))/(2-2*x+x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080687 Number of labeled n-element posets with no 3-element antichain.

@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100601 Denominator of the best rational approximation to the decimal representation of the digital roots of m^n, m=1,2,..

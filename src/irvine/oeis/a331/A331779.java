@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // ogf: x*(1-x+x^2)*(2+3*x+4*x^2+3*x^3+4*x^4+2*x^5+3*x^6+3*x^7+7*x^8+5*x^9+6*x^10+4*x^11+8*x^12+6*x^13+8*x^14+6*x^15+8*x^16+4*x^17+6*x^18+5*x^19+7*x^20+3*x^21+3*x^22+2*x^23+4*x^24+3*x^25+4*x^26+3*x^27+2*x^28)/((1-x)*(1+x)*(1+x^2)*(1-x+x^2-x^3+x^4)*(1+x^4)*(1+x+x^2+x^3+x^4)*(1-x^2+x^4-x^6+x^8)*(1+x^8))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A331779 Coefficients arising from a 4-dissection of the Rogers-Ramanujan functions.

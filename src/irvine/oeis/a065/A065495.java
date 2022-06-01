@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A065495 Number of (binary) bit strings of length n in which an odd length block of 0's is followed by an odd length block of 1's.

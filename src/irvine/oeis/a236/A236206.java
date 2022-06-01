@@ -1,7 +1,7 @@
 package irvine.oeis.a236;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A236206 Numbers not divisible by 3, 5 or 7.

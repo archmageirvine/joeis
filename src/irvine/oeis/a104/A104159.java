@@ -1,6 +1,6 @@
 package irvine.oeis.a104;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A104159 Numbers on a Manchester or Log-End dartboard, as read in a standard, clockwise direction.

@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271832 Period 12 zigzag sequence: repeat [0,1,2,3,4,5,6,5,4,3,2,1].

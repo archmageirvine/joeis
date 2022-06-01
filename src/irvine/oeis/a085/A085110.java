@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // egf: (x*(exp(-x)-2))/(x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085110 a(1)=1, then add 1 multiply by 2 to get a(2), subtract 1 and multiply by 3 to get a(3), add 1 and multiply by 4 to get a(4) and so on.

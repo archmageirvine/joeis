@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114196 Expansion of (1-3x)/(1-6x+8x^2+x^3).

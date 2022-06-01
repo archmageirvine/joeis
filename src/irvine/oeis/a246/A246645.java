@@ -1,6 +1,6 @@
 package irvine.oeis.a246;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A246645 Expansion of 1/(1 - 22*x + 81*x^2), used in A246643.

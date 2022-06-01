@@ -1,6 +1,6 @@
 package irvine.oeis.a093;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A093041 Expansion of (1-4x+6x^2-3x^3)/(1-5x+9x^2-8x^3+4x^4).

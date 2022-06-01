@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // Recurrence: 2*a[n+0]=n*(1+3*n+6*n^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115519 n*(1+3*n+6*n^2)/2.

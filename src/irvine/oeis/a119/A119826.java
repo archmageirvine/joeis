@@ -1,6 +1,6 @@
 package irvine.oeis.a119;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A119826 Number of ternary words of length n with no 000's.

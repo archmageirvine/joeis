@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 // Recurrence: 3*n*(3*n-2)*(3*n-1)*(115668*n^3-650916*n^2+1167723*n-673723)*a[n+0]=2*(n-1)*(231336*n^5-1417500*n^4+3231306*n^3-3349145*n^2+1574119*n-264960)*a[n-1]-6*(n-2)*(n-1)*(115668*n^4-535248*n^3+861921*n^2-529129*n+122640)*a[n-2]+24*(n-2)*(n-1)*(925344*n^4-4744656*n^3+7608276*n^2-4369418*n+755115)*a[n-3]+229*(n-3)*(n-2)*(n-1)*(115668*n^3-303912*n^2+212895*n-41248)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A192442 Coefficient of x^n in the expansion of (1+x^3+x^4)^n.

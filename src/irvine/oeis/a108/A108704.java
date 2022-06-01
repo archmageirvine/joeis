@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // egf: exp((x*x)/2)/sqrt(1-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108704 Number of partitions of 112233...nn into n pairs.

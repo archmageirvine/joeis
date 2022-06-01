@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A072257 a(n) = ((6*n-17)*4^n - 1)/3.

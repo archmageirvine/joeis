@@ -1,6 +1,6 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A022266 a(n) = n*(9*n - 1)/2.

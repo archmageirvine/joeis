@@ -1,7 +1,7 @@
 package irvine.oeis.a348;
 // manually linrec/linrec2 at 2022-04-29 10:02
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A348237 Coordination sequence for the cpq net with respect to a node where a hexagon and two octagons meet.

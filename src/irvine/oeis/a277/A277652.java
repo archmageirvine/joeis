@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // Recurrence: (-n^3-5*n^2-6*n)*a[n+0]+(6*n^3+27*n^2+35*n+12)*a[n+1]+(-n^3-4*n^2-3*n)*a[n+2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277652 Numerators on factorial moments of order 2 for the number of parts in dissections of rooted and convex polygons.

@@ -1,6 +1,6 @@
 package irvine.oeis.a147;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A147678 Double, add 0, double, add 1, double, add 2, double, add 3, etc.

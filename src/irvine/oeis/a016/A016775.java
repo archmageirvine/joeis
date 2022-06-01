@@ -1,6 +1,6 @@
 package irvine.oeis.a016;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A016775 (3*n)^11.

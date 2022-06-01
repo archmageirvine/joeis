@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118005 a(n) = ((-1)^n*5^(n+1) + 9^(n+1))/14.

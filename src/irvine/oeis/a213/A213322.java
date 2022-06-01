@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 // egf: ((x+x^2/2)*exp(-x-x^2/2-x^3/3)+exp(-x-x^3/3))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A213322 Number of permutations of n objects such that no three-element subset is preserved.

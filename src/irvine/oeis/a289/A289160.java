@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289160 Number of 6-cycles in the n X n black bishop graph.

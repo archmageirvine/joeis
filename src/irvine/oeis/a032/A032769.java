@@ -1,6 +1,6 @@
 package irvine.oeis.a032;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A032769 Numbers that are congruent to {0, 1, 2, 4} mod 5.

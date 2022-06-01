@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056108 Fourth spoke of a hexagonal spiral.

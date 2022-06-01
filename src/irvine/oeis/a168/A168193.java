@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168193 a(n) = a(n-1) + a(n-2) + 4, with a(0)=0, a(1)=2.

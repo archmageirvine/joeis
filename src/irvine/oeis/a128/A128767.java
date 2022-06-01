@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // ogf: -x*(x+1)*(x^14+384*x^13+125020*x^12+9439904*x^11+213777216*x^10+1821620108*x^9+6527222787*x^8+10098845160*x^7+6527222787*x^6+1821620108*x^5+213777216*x^4+9439904*x^3+125020*x^2+384*x+1)/(x-1)^17
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A128767 Number of inequivalent n-colorings of the 4D hypercube under the full orthogonal group of the cube (of order 2^4*4! = 384).

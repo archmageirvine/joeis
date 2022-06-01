@@ -1,6 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A115271 Partial sums of floor((n+4)/4)^2.

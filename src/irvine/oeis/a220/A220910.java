@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 // ogf: ((1-12*x)^(3/2)+(1+36*x))/(2*(4*x+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A220910 Matchings avoiding the pattern 231.

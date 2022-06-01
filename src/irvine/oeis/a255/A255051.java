@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255051 a(1)=1, a(n+1) = a(n)/gcd(a(n),n) if this GCD is &gt; 1, else a(n+1) = a(n) + n + 1.

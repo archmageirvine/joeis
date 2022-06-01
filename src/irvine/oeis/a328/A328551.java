@@ -1,7 +1,7 @@
 package irvine.oeis.a328;
 // manually 2021-01-27
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328551 a(n) is the Severi degree for curves of degree n and cogenus 4.

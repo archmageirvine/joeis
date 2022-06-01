@@ -1,6 +1,6 @@
 package irvine.oeis.a175;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A175395 a(n) = 2*Fibonacci(n)^2.

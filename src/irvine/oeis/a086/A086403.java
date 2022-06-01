@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 // egf: sinh((1-sqrt(1-4*x))/2)/sqrt(1-4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A086403 Numerators in continued fraction representation of (e-1)/(e+1).

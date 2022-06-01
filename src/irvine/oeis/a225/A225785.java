@@ -1,6 +1,6 @@
 package irvine.oeis.a225;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A225785 Numbers n such that triangular(n) + triangular(2*n) is a triangular number.

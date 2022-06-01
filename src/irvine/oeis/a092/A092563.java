@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 // Recurrence: n*a[n+0]-2*(2*n-1)^2*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A092563 Coefficients in asymptotic expansion of I_0(x)sqrt(2*Pi*x)/e^x in powers of 1/(16x).

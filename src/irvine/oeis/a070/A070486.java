@@ -1,6 +1,6 @@
 package irvine.oeis.a070;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A070486 a(n) = n^3 mod 24 (or equivalently, n^5 mod 24).

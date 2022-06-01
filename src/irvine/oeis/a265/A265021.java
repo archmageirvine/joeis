@@ -1,6 +1,6 @@
 package irvine.oeis.a265;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A265021 Sum of fifth powers of the first n even numbers.

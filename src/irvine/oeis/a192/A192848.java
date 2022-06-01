@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192848 Molecular topological indices of the graph join C_n + C_n of cycle graphs.

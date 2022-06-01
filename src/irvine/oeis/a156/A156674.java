@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // ogf: (10*x^2+29*x+10)/(x^3-x^2-x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A156674 Numbers k such that k^2 - 2 == 0 (mod 49).

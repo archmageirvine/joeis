@@ -1,6 +1,6 @@
 package irvine.oeis.a267;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A267796 a(n) = (n+1)*4^(2n+1).

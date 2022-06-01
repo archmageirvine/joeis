@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274323 Number of partitions of n^4 into at most two parts.

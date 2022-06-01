@@ -1,6 +1,6 @@
 package irvine.oeis.a244;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A244803 The 360 degree spoke (or ray) of a hexagonal spiral of Ulam.

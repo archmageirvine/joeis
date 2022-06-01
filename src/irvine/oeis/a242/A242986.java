@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 // ogf: (4*x-1)/(2*x^6)+(-16*x^7+16*x^6-48*x^5+12*x^4+48*x^3-12*x^2-8*x+2)/(4*(1-4*x^2)^(3/2)*x^6)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A242986 a(n) = 6*(n+1)!/((3+floor(n/2))*(floor(n/2)!)^2).

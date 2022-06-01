@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // ogf: (8+6x+7x^2+5x^3+3x^4+9x^6)/(1-x^7)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A104175 From the words to the song "867-5309/Jenny" by Tommy Tutone.

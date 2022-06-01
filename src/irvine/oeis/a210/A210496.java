@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 // ogf: ((1-x^2)*sqrt((1-x)*(1-x-4*x^2))-(1-3*x-2*x^2+14*x^3-15*x^4+3*x^5)/(1-x)^2)/(2*x^2*(1-3*x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A210496 Number of set partitions of [n] avoiding the patterns {1123, 1211}.

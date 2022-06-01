@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 12*a[n+0]=(2*n^6+8*n^8+n^16+n^20)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331361 Number of achiral colorings of the edges of a tesseract with n available colors.

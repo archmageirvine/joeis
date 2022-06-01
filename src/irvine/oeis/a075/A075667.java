@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A075667 Sum of next n 6th powers.

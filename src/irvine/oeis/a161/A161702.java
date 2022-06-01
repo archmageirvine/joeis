@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A161702 a(n) = (-n^3 + 9n^2 - 5n + 3)/3.

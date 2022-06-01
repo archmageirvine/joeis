@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A018836 Number of squares on infinite chessboard at &lt;= n knight's moves from a fixed square.

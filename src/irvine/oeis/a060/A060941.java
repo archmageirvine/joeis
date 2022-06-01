@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // Recurrence: 216*(n-1)*n*(2*n-1)*(3*n-4)*(3*n-2)*(3*n-1)*(3*n+1)*(6*n-1)*(6*n+1)*(5625*n^4-38550*n^3+97425*n^2-107784*n+44044)*a[n+0]=540*(n-1)*(3*n-4)*(3*n-2)*(126562500*n^10-1373625000*n^9+6557484375*n^8-18192221250*n^7+32549973750*n^6-39248008800*n^5+32203028675*n^4-17641491134*n^3+6113558828*n^2-1191132600*n+96112128)*a[n-1]-450*(5*n-9)*(5*n-8)*(5*n-7)*(5*n-6)*(63281250*n^9-718453125*n^8+3556125000*n^7-10046426250*n^6+17765816250*n^5-20240090325*n^4+14698993900*n^3-6468702396*n^2+1533535184*n-142988160)*a[n-2]+78125*(n-2)*(5*n-14)*(5*n-13)*(5*n-12)*(5*n-11)*(5*n-9)*(5*n-8)*(5*n-7)*(5*n-6)*(5625*n^4-16050*n^3+15525*n^2-6084*n+760)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A060941 Duchon's numbers: the number of paths of length 5*n from the origin to the line y = 2*x/3 with unit East and North steps that stay below the line or touch it.

@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // Recurrence: a[n+0]=1+n^4+n^6+n^9+n^10+n^14+n^15+n^21+n^22+n^25+n^26+n^33+n^34+n^35+n^38+n^39+n^46+n^49+n^51+n^55+n^57+n^58
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123665 a(n) = Sum_{k=1..21} n^A001358(k).

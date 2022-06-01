@@ -1,6 +1,6 @@
 package irvine.oeis.a284;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A284032 Poly-Bernoulli numbers B_n^(k) with k = -8.

@@ -1,6 +1,6 @@
 package irvine.oeis.a073;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A073951 Number of strings over Z_3 of length n with trace 1 and subtrace 1.

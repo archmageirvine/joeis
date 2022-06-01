@@ -1,6 +1,6 @@
 package irvine.oeis.a119;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A119996 Numerator of Sum_{k=1..n} 1/(Fibonacci(k)*Fibonacci(k+2)).

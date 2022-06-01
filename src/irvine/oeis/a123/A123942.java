@@ -1,6 +1,6 @@
 package irvine.oeis.a123;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A123942 The (1,4)-entry in the 4 X 4 matrix M^n, where M={{3, 2, 1, 1}, {2, 1, 1, 0}, {1, 1, 0, 0}, {1, 0, 0, 0}} (n&gt;=0).

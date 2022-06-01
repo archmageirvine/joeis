@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A227152 Nonnegative solutions of the Pell equation x^2 - 101*y^2 = +1. Solutions x = a(n).

@@ -1,6 +1,6 @@
 package irvine.oeis.a269;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A269457 a(n) = 5*(n + 1)*(n + 4)/2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a132;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A132112 a(n) = n*(n+1)*(11*n+1)/6.

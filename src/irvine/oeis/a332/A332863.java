@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // ogf: x^2*(-4+7*x-4*x^2-3*x^3+x^4)/(-1+2*x-x^2+x^3)^3
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A332863 Total binary weight squared of all A005251(n) binary sequences of length n not containing any isolated 1's.

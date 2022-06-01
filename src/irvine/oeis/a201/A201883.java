@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 // egf: ((1-x)/(1-2*x))^(1/2)*exp((x^2-2*x)/(4*(1-x)^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A201883 The number of simple labeled graphs on n nodes such that i) all connected components have exactly one cycle, ii) all vertices have degree at most 3, iii) vertices of degree 3 are on a cycle.

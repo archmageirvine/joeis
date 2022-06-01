@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // egf: 1/(1-3*x)^(11/3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051608 a(n) = (3*n+8)!!!/8!!!, related to A008544(n+1) ((3*n+2)!!! triple factorials).

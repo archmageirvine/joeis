@@ -1,6 +1,6 @@
 package irvine.oeis.a344;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A344191 a(n) = Catalan(n) * (n^2 + 2) / (n + 2).

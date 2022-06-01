@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179819 Monetary amounts in U.S. cents such that the smallest number of coins summing to the amount uses only denominations of 10 cents and above.

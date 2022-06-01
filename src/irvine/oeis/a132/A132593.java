@@ -1,6 +1,6 @@
 package irvine.oeis.a132;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A132593 Nonnegative integer solutions X to the equation: X(X + 1) - 10*Y^2 = 0.

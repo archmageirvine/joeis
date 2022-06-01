@@ -1,6 +1,6 @@
 package irvine.oeis.a141;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A141023 a(n) = 2^n - (3-(-1)^n)/2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a272;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A272199 Expansion of 1/(1 - 2*x + 13*x^2).

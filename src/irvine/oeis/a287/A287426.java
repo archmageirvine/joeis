@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287426 Number of connected induced subgraphs in the n-sun graph.

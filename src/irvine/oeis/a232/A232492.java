@@ -1,6 +1,6 @@
 package irvine.oeis.a232;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A232492 Number of symmetry classes of 3-eared triangulations of an n-gon.

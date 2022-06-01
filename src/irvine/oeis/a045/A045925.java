@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A045925 a(n) = n*Fibonacci(n).

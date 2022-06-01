@@ -1,6 +1,6 @@
 package irvine.oeis.a169;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A169832 a(n) = 15*2^(n+1) - (5*n^2+22*n+30).

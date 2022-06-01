@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A001871 Expansion of 1/(1 - 3*x + x^2)^2.

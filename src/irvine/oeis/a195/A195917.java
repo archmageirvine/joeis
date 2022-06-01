@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195917 Numbers k such that both k+1 and 7k+1 are squares.

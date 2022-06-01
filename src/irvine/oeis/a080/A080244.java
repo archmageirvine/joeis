@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // ogf: (x*(-1-x+2*x^2+sqrt(1+6*x+x^2)))/(2*x*(1+x+x^2-x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080244 Signed generalized Fibonacci numbers.

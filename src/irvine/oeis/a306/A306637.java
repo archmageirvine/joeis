@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // ogf: (x+x^3)/(1-x+2*x^2+x^3+x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A306637 a(n) = Fibonacci(n) * A128834(n).

@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127968 a(n) = F(n+1) + (1-(-1)^n)/2, where F() = Fibonacci numbers A000045.

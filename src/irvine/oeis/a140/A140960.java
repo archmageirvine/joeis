@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140960 a(n) = (2*(-1)^n - 2^(n+1) + 3*n*2^n)/9.

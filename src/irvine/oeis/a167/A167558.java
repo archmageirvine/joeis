@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 // Recurrence: (-2*n+5)*a[n+0]+4*(2*n-3)*(n-2)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A167558 The second right hand column of triangle A167557.

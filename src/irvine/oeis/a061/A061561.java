@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 // ogf: (22+35*x+18*x^2-72*x^4-90*x^5-48*x^6-60*x^7+80*x^8+112*x^9)/((1-x)*(1+x)*(1-2*x^2)*(1-2*x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A061561 Trajectory of 22 under the Reverse and Add! operation carried out in base 2.

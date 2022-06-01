@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134241 a(n) = 8*(n-1)*(n-2)*(n-3)*(6*n^2-37*n+60).

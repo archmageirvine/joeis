@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280059 Number of 2 X 2 matrices having all elements in {-n,..,0,..,n} with determinant = permanent.

@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // Recurrence: n*a[n+0]+6*(3*n-4)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108733 Expansion of (1+18*x)^(1/3).

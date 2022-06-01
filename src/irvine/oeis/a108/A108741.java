@@ -1,6 +1,6 @@
 package irvine.oeis.a108;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A108741 Member r=100 of the family of Chebyshev sequences S_r(n) defined in A092184.

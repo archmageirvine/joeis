@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114723 G.f.: x*(1 - 2*x^2)/(1 - x - 3*x^2 - 3*x^3 - x^4).

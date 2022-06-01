@@ -1,6 +1,6 @@
 package irvine.oeis.a066;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A066164 Sum of interior angles in an n-sided polygon in degrees.

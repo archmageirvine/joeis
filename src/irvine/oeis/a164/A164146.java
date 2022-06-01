@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 // ogf: -(4*x^4-2*x^3-2*x^2+x+sqrt((2*x-1)*(2*x^2-1)*(2*x^2-2*x+1)))/((x-1)*(2*x-1)*(2*x^2-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A164146 Number of binary strings of length n with equal numbers of 010 and 101 substrings.

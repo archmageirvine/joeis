@@ -1,6 +1,6 @@
 package irvine.oeis.a175;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A175812 Partial sums of ceiling(n^2/6).

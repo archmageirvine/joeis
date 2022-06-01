@@ -1,6 +1,6 @@
 package irvine.oeis.a198;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A198308 Moore lower bound on the order of an (8,g)-cage.

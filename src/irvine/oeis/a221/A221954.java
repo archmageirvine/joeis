@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 // egf: (1-sqrt(1-12*x))/6
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A221954 a(n) = 3^(n-1) * n! * Catalan(n-1).

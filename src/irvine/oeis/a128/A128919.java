@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128919 Numbers simultaneously heptagonal and centered heptagonal.

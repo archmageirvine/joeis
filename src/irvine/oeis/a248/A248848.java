@@ -1,6 +1,6 @@
 package irvine.oeis.a248;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A248848 Norm of coefficients in the expansion of 1/(1 - 3*x - I*x^2), where I^2=-1.

@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 // ogf: (x^12)*(1-3*x+7*x^2+9*x^3+18*x^4+38*x^5+72*x^6+92*x^7+168*x^8+160*x^9+238*x^10+230*x^11+296*x^12+234*x^13+330*x^14+248*x^15+284*x^16+238*x^17+230*x^18+166*x^19+172*x^20+78*x^21+80*x^22+38*x^23+21*x^24+7*x^25+3*x^26+x^27)/((1+x)*(1-x)*(1-x^2)*(1-x^3)*(1-x)^5*(1+x+x^2)*(1-x^4)^2*(1-x^6)*(1-x^12))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A032197 Number of necklaces with 12 black beads and n-12 white beads.

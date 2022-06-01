@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A160699 A bisection of A063522.

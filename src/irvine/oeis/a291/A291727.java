@@ -1,6 +1,6 @@
 package irvine.oeis.a291;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A291727 p-INVERT of (1,0,1,0,0,0,0,...), where p(S) = (1 - S)^4.

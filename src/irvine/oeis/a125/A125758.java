@@ -1,6 +1,6 @@
 package irvine.oeis.a125;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A125758 Numbers congruent to 4 or 7 mod 9.

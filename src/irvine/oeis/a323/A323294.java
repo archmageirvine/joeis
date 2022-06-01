@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 // egf: 1-x^2/2-x^3/3+(5*x^4)/24+(x^2*exp(x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A323294 Number of 3-uniform hypergraphs spanning n labeled vertices where every two edges have two vertices in common.

@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140716 Blocky integers, i.e., integers n &gt; 1 such that there is a run of n consecutive integer squares the average of which is a square.

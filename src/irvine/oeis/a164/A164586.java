@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 // ogf: (1-2*x-2*x^2-x^3-sqrt(1-4*x^2-10*x^3-4*x^4+x^6))/(2*x*(x^4+3*x^3+4*x^2+x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A164586 Row sums of generalized rhombic triangle A164585.

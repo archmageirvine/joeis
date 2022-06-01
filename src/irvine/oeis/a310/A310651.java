@@ -3,7 +3,7 @@ package irvine.oeis.a310;
 // ogf: (-2*x^15+3*x^14+4*x^13+8*x^12+14*x^11+20*x^10+26*x^9+32*x^8+28*x^7+28*x^6+26*x^5+20*x^4+14*x^3+6*x^2+4*x+1)/(x^14-2*x^7+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A310651 Coordination sequence Gal.6.548.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.

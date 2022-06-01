@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A050410 Truncated square pyramid numbers: a(n) = Sum_{k = n..2*n-1} k^2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a263;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A263948 Positive integers n such that (n+61)^3 - n^3 is a square.

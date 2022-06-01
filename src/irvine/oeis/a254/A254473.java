@@ -1,6 +1,6 @@
 package irvine.oeis.a254;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A254473 24-hedral numbers: a(n) = (2*n + 1)*(8*n^2 + 14*n + 7).

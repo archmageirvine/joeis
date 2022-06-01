@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076264 Number of ternary (0,1,2) sequences without a consecutive '012'.

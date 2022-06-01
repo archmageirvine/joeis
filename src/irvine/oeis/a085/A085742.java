@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // Recurrence: 2*a[n+0]=(n-1)*n*(n+1)*(n^3+n+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085742 a(n) = T(n^3) - T(n), where T() are the triangular numbers (A000217).

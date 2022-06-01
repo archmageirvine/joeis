@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097176 a(n) = Sum_{k=0..n} binomial(floor((n+1)/2), floor((k+1)/2)) * 5^k.

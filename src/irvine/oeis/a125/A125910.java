@@ -1,6 +1,6 @@
 package irvine.oeis.a125;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A125910 a(n) is the number of nonnegative integers k less than 10^n such that the decimal representation of k lacks the digit 1, at least one of digits 2,3,4 and at least one of digits 5,6,7,8,9.

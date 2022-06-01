@@ -1,6 +1,6 @@
 package irvine.oeis.a155;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A155610 5^n - 3^n + 1.

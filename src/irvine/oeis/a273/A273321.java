@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273321 Wiener index of graph of b.c.c. unit cells in a line = Sum of distances in a b.c.c. row graph.

@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A214663 Number of permutations of 1..n for which the partial sums of signed displacements do not exceed 2.

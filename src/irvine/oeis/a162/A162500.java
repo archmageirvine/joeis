@@ -5,7 +5,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A162500 Expansion of the polynomial (1-x^3) * (1-x^6) * (1-x^9) / (1-x)^3.

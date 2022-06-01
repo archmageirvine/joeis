@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 // Recurrence: n*a[n+0]+6*(-288*n+289)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A305886 Expansion of (1 - 1728*x)^(1/288).

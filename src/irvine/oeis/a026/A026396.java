@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A026396 Sum_{T(i,j)}, 0&lt;=j&lt;=i, 0&lt;=i&lt;=n, where T is the array in A026386.

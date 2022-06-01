@@ -1,6 +1,6 @@
 package irvine.oeis.a107;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A107955 Number of chains in the power set lattice or the number of fuzzy subsets of an (n+5)-element set X_(n+5) with specification n elements of one kind, 4 elements of another and 1 of yet another kind.

@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A050486 a(n) = binomial(n+6,6)*(2n+7)/7.

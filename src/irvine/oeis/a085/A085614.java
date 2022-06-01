@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // ogf: 1/6*sqrt(3)*sin(1/3*arcsin(6*sqrt(3)*x))-1/2*cos(1/3*arcsin(6*sqrt(3)*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085614 Number of elementary arches of size n.

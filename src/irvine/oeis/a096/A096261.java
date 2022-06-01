@@ -1,6 +1,6 @@
 package irvine.oeis.a096;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A096261 Number of n-tuples of 0,1,2,3,4,5,6,7,8,9 without consecutive digits.

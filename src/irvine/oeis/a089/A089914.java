@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 // egf: 1/(1-3*x)^(2/3)*exp((3*x)/(1-3*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A089914 a(n) = 3^n *n! *L_{n}^{-1/3}(-1), where L_n^{alpha}(x) are generalized Laguerre polynomials.

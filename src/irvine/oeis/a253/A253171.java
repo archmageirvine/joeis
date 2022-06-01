@@ -1,6 +1,6 @@
 package irvine.oeis.a253;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A253171 a(n) = number of permutations of (1,2,...,n) producible by an ordered triple of distinct transpositions.

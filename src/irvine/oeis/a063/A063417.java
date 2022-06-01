@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A063417 Ninth column (k=8) of septinomial array A063265.

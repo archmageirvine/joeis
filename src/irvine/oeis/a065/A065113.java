@@ -1,6 +1,6 @@
 package irvine.oeis.a065;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A065113 Sum of the squares of the a(n)-th and the (a(n)+1)st triangular numbers (A000217) is a perfect square.

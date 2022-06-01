@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 // egf: (1-2*x-(1-3*x)^(2/3))/(2*(1-3*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A091540 Rescaled second column A091539 of array A091534 ((5,2)-Stirling2).

@@ -1,6 +1,6 @@
 package irvine.oeis.a145;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A145335 Numbers n such that there exists x in N : (x+1)^3-x^3=43*n^2.

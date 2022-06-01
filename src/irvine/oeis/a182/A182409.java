@@ -1,6 +1,6 @@
 package irvine.oeis.a182;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A182409 Prime-generating polynomial: 4n^2 + 12n - 1583.

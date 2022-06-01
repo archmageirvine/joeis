@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A005945 Number of n-step mappings with 4 inputs.

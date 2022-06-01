@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279946 Numbers that are both dodecagonal and centered heptagonal.

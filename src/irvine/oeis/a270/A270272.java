@@ -1,6 +1,6 @@
 package irvine.oeis.a270;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A270272 a(n) = binomial(n+3,n)^3.

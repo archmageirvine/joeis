@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192727 a(n) = Fibonacci(n-2) + 2*a(n-2) - (n mod 2).

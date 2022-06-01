@@ -1,7 +1,7 @@
 package irvine.oeis.a084;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084943 Decagorials: n-th polygorial for k=10.

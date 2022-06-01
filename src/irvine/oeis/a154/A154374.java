@@ -1,6 +1,6 @@
 package irvine.oeis.a154;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A154374 a(n) = 1250*n^2 - 100*n + 1.

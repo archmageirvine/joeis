@@ -1,6 +1,6 @@
 package irvine.oeis.a286;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A286283 a(n) = floor(7*n^2/48).

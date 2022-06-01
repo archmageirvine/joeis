@@ -1,6 +1,6 @@
 package irvine.oeis.a276;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A276659 Accumulation of the upper left triangle used in binomial transform of nonnegative integers.

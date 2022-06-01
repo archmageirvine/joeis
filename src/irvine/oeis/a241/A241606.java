@@ -1,6 +1,6 @@
 package irvine.oeis.a241;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A241606 A linear divisibility sequence of the fourth order related to A003779.

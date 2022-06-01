@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 // ogf: (2*(1-x)^2)/(1+sqrt(1-8*x+16*x^2-8*x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A109034 First differences of A109033.

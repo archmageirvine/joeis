@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 // ogf: (2*x*(1-x*sqrt(1-4*x)))/((1+2*x^2+sqrt(1-4*x))*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A278023 G.f.: 2*x*(1-x*sqrt(1-4*x))/((1+2*x^2+sqrt(1-4*x))*sqrt(1-4*x)).

@@ -1,7 +1,7 @@
 package irvine.oeis.a258;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A258129 Octagonal numbers (A000567) that are the sum of three consecutive octagonal numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255563 a(n) = -3 * n/4 if n divisible by 4, a(n) = -(-1)^n * n otherwise.

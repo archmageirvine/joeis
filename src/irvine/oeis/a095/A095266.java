@@ -1,6 +1,6 @@
 package irvine.oeis.a095;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A095266 A sequence generated from the Narayana triangle considered as a matrix, or from Pascal's triangle.

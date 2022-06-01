@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118442 Column 0 of triangle A118441, which is the matrix log of triangle A118435.

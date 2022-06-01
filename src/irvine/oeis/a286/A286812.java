@@ -1,6 +1,6 @@
 package irvine.oeis.a286;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A286812 a(n) = 105 - 2^n.

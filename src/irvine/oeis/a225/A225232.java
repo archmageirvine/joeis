@@ -1,6 +1,6 @@
 package irvine.oeis.a225;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A225232 The number of FO3C2 moves required to restore a packet of n playing cards to its original state (order and orientation).

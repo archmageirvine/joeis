@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027990 Sum{T(n,k)*T(n,2n-k)}, 0&lt;=k&lt;=n, T given by A027926.

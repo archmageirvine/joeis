@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A007982 Number of non-Abelian metacyclic groups of order 2^n.

@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 // Recurrence: a[n+0]=(n-2)*a[n-1]+a[n-2]+2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A273596 For n &gt;= 2, a(n) is the number of slim rectangular diagrams of length n.

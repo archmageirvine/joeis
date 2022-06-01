@@ -1,6 +1,6 @@
 package irvine.oeis.a120;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A120573 a(n) = n^5 + 3n^3 + 2n = n(n^2+1)(n^2+2).

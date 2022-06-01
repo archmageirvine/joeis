@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A028354 How the astronomical clock ("Orloj") in Prague strikes the hours (digits follow 12343212343... (A028356), n-th group adds to n).

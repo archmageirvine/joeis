@@ -1,6 +1,6 @@
 package irvine.oeis.a139;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A139267 Twice octagonal numbers: 2*n*(3*n-2).

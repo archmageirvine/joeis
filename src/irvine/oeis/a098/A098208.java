@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: a[n+0]=11111*a[n-1]-11222110*a[n-2]+1122211000*a[n-3]-11111000000*a[n-4]+10000000000*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098208 4th powers of A033175(n) near repdigit numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059620 Colors of the 88 keys of the standard piano: white keys = 0, black keys = 1, start with A0 = the 0th key.

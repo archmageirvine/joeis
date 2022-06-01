@@ -1,6 +1,6 @@
 package irvine.oeis.a117;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A117950 a(n) = n^2 + 3.

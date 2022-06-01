@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118057 a(n) = 8*n^2 - 4*n - 3.

@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 // Recurrence: a[n+3]=(3*n+8)*a[n+2]-(3*n+7)*(n+2)*a[n+1]+(n+1)*(n+2)^2*a[n+0]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A196532 a(n) = (n+1)!*(H(n)+H(n+1)), where H(n) = Sum_{k=1..n} 1/k is the n-th harmonic number.

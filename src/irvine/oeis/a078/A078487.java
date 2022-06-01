@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // ogf: (1-9*x+29*x^2-30*x^3+10*x^4-x^5-(1-6*x+x^2)^(1/2)*(1-6*x+13*x^2-7*x^3+x^4))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A078487 G.f.: (1-9*x+29*x^2-30*x^3+10*x^4-x^5-(1-6*x+x^2)^(1/2)*(1-6*x+13*x^2-7*x^3+x^4))/(2*x).

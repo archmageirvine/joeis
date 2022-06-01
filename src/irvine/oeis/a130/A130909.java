@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130909 Simple periodic sequence (n mod 16).

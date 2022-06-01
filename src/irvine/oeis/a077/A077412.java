@@ -1,6 +1,6 @@
 package irvine.oeis.a077;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A077412 Chebyshev U(n,x) polynomial evaluated at x=8.

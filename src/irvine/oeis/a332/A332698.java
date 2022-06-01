@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: 6*a[n+0]=(8*n^3+15*n^2+13*n)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332698 a(n) = (8*n^3 + 15*n^2 + 13*n)/6.

@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 // Recurrence: a[n+0]=n*(4*n^2-3)*(64*n^6-96*n^4+36*n^2-3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A243135 256*n^9 - 576*n^7 + 432*n^5 - 120*n^3 + 9*n.

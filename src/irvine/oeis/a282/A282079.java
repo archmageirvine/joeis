@@ -1,6 +1,6 @@
 package irvine.oeis.a282;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A282079 Number of n-element subsets of [n+2] having an even sum.

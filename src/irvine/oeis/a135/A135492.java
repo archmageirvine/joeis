@@ -1,6 +1,6 @@
 package irvine.oeis.a135;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A135492 Number of ways to toss a coin n times and not get a run of five.

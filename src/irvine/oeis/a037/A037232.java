@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A037232 Number of matchings in graph C_{3} X C_{3} X P_{n}.

@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // ogf: 12*x^3*(3-9*x+6*x^2+4*x^3-2*x^4)/((1-x)*(1+x)^2*(1-2*x)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A309379 Number of unordered pairs of 4-colorings of an n-wheel that differ in the coloring of exactly one vertex.

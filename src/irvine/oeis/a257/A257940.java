@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257940 y-values in the solutions to x^2 + x = 5*y^2 + y.

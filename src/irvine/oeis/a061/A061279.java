@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A061279 a(n) = Sum_{k &gt;= 0} 2^k * binomial(k+2,n-2*k).

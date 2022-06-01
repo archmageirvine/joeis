@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 // ogf: (32*x^2+12*sqrt(1-8*x)*x-4*x)/(-32*x^3+sqrt(1-8*x)*(8*x^2+7*x-1)-36*x^2-3*x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A116881 Row sums of triangle A116880 (generalized Catalan C(1,2)).

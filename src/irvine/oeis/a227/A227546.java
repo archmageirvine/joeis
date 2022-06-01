@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // Recurrence: (n^3-6*n^2+11*n-7)*a[n+0]-(n^4-5*n^3+8*n^2-5*n-1)*a[n-1]+(n-1)*(n^3-3*n^2+2*n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A227546 n! + n^2 + 1.

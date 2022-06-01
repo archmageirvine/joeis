@@ -1,6 +1,6 @@
 package irvine.oeis.a012;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A012864 Take every 5th term of Padovan sequence A000931, beginning with the first term.

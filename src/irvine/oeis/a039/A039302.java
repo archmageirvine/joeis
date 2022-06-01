@@ -1,6 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A039302 Number of distinct quadratic residues mod 5^n.

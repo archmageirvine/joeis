@@ -1,6 +1,6 @@
 package irvine.oeis.a010;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A010699 Period 2: repeat (2,9).

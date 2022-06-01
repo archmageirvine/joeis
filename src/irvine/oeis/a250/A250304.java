@@ -1,6 +1,6 @@
 package irvine.oeis.a250;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A250304 Four-column array read by rows: T(n,k) = the coefficient of x^k in the expanded polynomial x^3 + (x+1)^3 + ... + (x+n-1)^3, for 0 &lt;= k &lt;= 3.

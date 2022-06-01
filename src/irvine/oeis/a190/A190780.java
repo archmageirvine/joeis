@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // Recurrence: a[n+0]=2*(n^8+224*n^4+256)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190780 a(n) = 2*(n^8 + 224*n^4 + 256)^2.

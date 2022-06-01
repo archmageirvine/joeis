@@ -1,6 +1,6 @@
 package irvine.oeis.a021;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A021401 Decimal expansion of 1/397.

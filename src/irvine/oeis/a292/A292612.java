@@ -1,6 +1,6 @@
 package irvine.oeis.a292;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A292612 a(n) = F(n)^2 + 4*(-1)^n = F(n+3)*F(n-3), where F = A000045.

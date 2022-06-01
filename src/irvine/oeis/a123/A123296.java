@@ -1,6 +1,6 @@
 package irvine.oeis.a123;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A123296 Number of permutations of n distinct letters (ABCD...) each of which appears 5 times and having n-2 fixed points.

@@ -1,6 +1,6 @@
 package irvine.oeis.a142;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A142238 Numerators of continued fraction convergents to sqrt(3/2).

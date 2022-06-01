@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153448 3 times 12-gonal (or dodecagonal) numbers: 3*n*(5*n-4).

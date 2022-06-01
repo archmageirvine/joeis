@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: n*a[n+0]+(n)*a[n-1]+(n-2)*a[n-2]+(n-2)*a[n-3]+2*(-n+6)*a[n-4]+6*(-n+7)*a[n-5]+2*(-3*n+23)*a[n-6]+6*(-n+9)*a[n-7]+(-3*n+26)*a[n-8]+(n-12)*a[n-9]+(n-14)*a[n-10]+(n-14)*a[n-11]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331106 Number of plane trees of total weight n of combinatorial class T=Z*U + Z*T^2/(1-T) with nodes Z of weight one and leaves U of weight three.

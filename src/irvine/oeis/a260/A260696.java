@@ -1,6 +1,6 @@
 package irvine.oeis.a260;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A260696 The number of length-n permutations avoiding the patterns 1234, 1324, 1432 and 3214.

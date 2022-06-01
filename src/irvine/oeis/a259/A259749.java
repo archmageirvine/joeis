@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259749 Numbers that are congruent to {1,2,5,7,10,11,13,17,19,23} mod 24.

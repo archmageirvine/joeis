@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 // egf: (log(1-x)^2-log(1-x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A151881 Sum (number of cycles)^2 over all n! permutations of [1..n].

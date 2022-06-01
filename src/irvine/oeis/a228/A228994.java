@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // egf: (exp(x)*(12*x^2-12*x+14)-x-14)/(x-1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228994 Total sum of the 4th powers of lengths of ascending runs in all permutations of [n].

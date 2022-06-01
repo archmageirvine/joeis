@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A005517 Smallest label f(T) given to a rooted tree T with n nodes in Matula-Goebel labeling.

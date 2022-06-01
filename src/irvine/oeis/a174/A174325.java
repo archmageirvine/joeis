@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174325 Trisection A061037(3*n-2) of the Balmer spectrum numerators extended to negative indices.

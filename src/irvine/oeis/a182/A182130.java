@@ -1,6 +1,6 @@
 package irvine.oeis.a182;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A182130 Number of independent sets of nodes in the armchair (3,3) carbon nanotube graph of breadth n (n&gt;=1).

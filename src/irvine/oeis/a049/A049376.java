@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 // Recurrence: a[n+3]-(3*n+7)*a[n+2]+3*(n+1)*(n+2)*a[n+1]-n*(n+1)*(n+2)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A049376 Row sums of triangle A046089.

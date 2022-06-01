@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // ogf: (12*x)^(-1)+(6*x)^(-1)*sin(arcsin(216*x^2-1)/3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A078531 Coefficients of power series that satisfies A(x)^2 - 4*x*A(x)^3 = 1, A(0)=1.

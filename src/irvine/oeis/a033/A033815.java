@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 // Recurrence: a[n+0]=2*n*(2*n-1)*a[n-1]+n*(n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A033815 Number of standard permutations of [ a_1..a_n b_1..b_n ] (b_i is not immediately followed by a_i, for all i).

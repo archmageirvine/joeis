@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 // Recurrence: (3*n^3-43*n^2+120*n+20)*a[n+0]=(21*n^3-289*n^2+712*n+400)*a[n-1]-(51*n^3-665*n^2+1374*n+1540)*a[n-2]+4*(12*n^3-145*n^2+230*n+435)*a[n-3]-(9*n^3-87*n^2+26*n+280)*a[n-4]-2*(3*n^3-34*n^2+43*n+100)*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A243228 Number of isoscent sequences of length n with exactly two ascents.

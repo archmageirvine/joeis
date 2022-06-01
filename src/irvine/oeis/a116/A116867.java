@@ -1,7 +1,7 @@
 package irvine.oeis.a116;
 // manually 2021-05-26
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A116867 Convolution of generalized Catalan sequence A064063 (named C(3;n)).

@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 // egf: (x*(x*(x-2)+2*(x-1)^2*log(1-x)))/(4*(x-1)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A285489 Sum of entries in the second cycles of all permutations of [n].

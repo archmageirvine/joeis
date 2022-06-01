@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // egf: (768-768*x+192*x^2-64*x^3+16*x^4+(-768-441*x+15*x^2-10*x^3+x^4)*cosh(x)+(1209+177*x+93*x^2-6*x^3+x^4)*sinh(x))/384
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055804 a(n) = T(n,n-4), array T as in A055801.

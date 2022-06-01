@@ -1,6 +1,6 @@
 package irvine.oeis.a095;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A095794 a(n) = A005449(n) - 1, where A005449 = second pentagonal numbers.

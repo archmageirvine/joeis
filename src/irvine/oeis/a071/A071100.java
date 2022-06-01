@@ -1,6 +1,6 @@
 package irvine.oeis.a071;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A071100 Expansion of (5 + 3*x + x^2 - x^3) / (1 - 2*x - 2*x^2 - 2*x^3 + x^4) in powers of x.

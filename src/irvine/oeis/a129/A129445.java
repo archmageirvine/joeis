@@ -1,6 +1,6 @@
 package irvine.oeis.a129;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A129445 Numbers k &gt; 0 such that k^2 is a centered triangular number.

@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138287 Palindromic period 10: repeat 0, 2, 8, 4, 6, 6, 4, 8, 2, 0.

@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099254 Self-convolution of A010892. The g.f. is 1/(Alexander polynomial of granny knot).

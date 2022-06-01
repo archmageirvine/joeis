@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 // Recurrence: (531441*n^2+1594323*n+1180980)*a[n+0]+(-196830*n^2-747954*n-656100)*a[n+1]+(24057*n^2+120285*n+131220)*a[n+2]+(-1809*n^2-16362*n-36825)*a[n+3]+(232*n^2+2798*n+8352)*a[n+4]+(-16*n^2-200*n-624)*a[n+5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A049235 Sum of balls on the lawn for the s=3 tennis ball problem.

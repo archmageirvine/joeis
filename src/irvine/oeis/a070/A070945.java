@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 // egf: exp(x+1/2*x^2+1/3*x^3+1/4*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A070945 Number of permutations on n letters that have only cycles of length 4 or less.

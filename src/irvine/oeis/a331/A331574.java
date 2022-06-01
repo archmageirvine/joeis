@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=2*a[n-1]+4*a[n-2]-10*a[n-3]-5*a[n-4]+20*a[n-5]-20*a[n-7]+5*a[n-8]+10*a[n-9]-4*a[n-10]-2*a[n-11]+a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331574 a(n) is the number of subsets of {1..n} that contain 3 even and 3 odd numbers.

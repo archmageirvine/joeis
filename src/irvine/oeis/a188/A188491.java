@@ -1,6 +1,6 @@
 package irvine.oeis.a188;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A188491 Number of permutations p on the set [n] with the properties that abs(p(i)-i) &lt;= 3 for all i, p(1) &lt;= 3, and p(4) &gt;= 2.

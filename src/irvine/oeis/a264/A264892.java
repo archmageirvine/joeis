@@ -1,6 +1,6 @@
 package irvine.oeis.a264;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A264892 a(n) = n*(3*n - 2)*(9*n^2 - 6*n - 2).

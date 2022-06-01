@@ -1,6 +1,6 @@
 package irvine.oeis.a243;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A243011 Sum of the three largest parts in the partitions of 4n into 4 parts.

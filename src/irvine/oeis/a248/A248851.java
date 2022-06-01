@@ -1,6 +1,6 @@
 package irvine.oeis.a248;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A248851 a(n) = ( 2*n*(2*n^2 + 9*n + 14) + (-1)^n - 1 )/16.

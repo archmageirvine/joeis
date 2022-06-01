@@ -1,6 +1,6 @@
 package irvine.oeis.a126;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A126587 a(n) is the number of integer lattice points inside the right triangle with legs 3n and 4n (and hypotenuse 5n).

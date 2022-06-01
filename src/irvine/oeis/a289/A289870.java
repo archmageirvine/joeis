@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289870 a(n) = n*(n + 1) for n odd, otherwise a(n) = (n - 1)*(n + 1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094260 Sum of next n numbers/n if n divides the sum else n times the sum of next n numbers.

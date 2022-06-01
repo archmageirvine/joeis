@@ -1,6 +1,6 @@
 package irvine.oeis.a095;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A095898 The (1,1)-term of the 3 X 3 matrix M^n, where M = [1,2,3 / 4,7,11 / 6,10,16].

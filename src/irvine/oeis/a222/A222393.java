@@ -1,6 +1,6 @@
 package irvine.oeis.a222;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A222393 Nonnegative integers m such that 18*m*(m+1)+1 is a square.

@@ -1,6 +1,6 @@
 package irvine.oeis.a081;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A081065 Numbers n such that n^2 = (1/3)*(n+floor(sqrt(3)*n*floor(sqrt(3)*n))).

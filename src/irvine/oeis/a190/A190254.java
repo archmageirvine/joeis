@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // ogf: (-1+3*x+sqrt(1-2*x-3*x^2-4*x^3))/(2*x*(1-3*x-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190254 Row sums of the Riordan matrix (g(x),x*g(x)), where g(x) = (1-x-sqrt(1-2*x-3*x^2-4*x^3))/(2*x^2*(1+x)) (A190252).

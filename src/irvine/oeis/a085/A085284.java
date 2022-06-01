@@ -1,6 +1,6 @@
 package irvine.oeis.a085;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A085284 C(n+3,3)n^3/4.

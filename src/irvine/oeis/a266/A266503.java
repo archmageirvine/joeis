@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 // Recurrence: (n-6)*(n-4)*(n-2)*a[n+0]=(2*n-7)*(2*n^2-14*n+15)*a[n-1]+3*(n-7)*(n-1)*(n^2-7*n+11)*a[n-2]-(n-2)*(n-1)*(9*n^2-85*n+189)*a[n-3]+(n-3)*(n-2)*(n-1)*(n^2-n-22)*a[n-4]-2*(n-4)^2*(n-3)*(n-2)*(n-1)*a[n-5]-(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*(3*n-19)*a[n-6]+3*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*a[n-7]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A266503 Number of symmetric difference-closed 4-sets consisting of sets consisting of an even number of pairwise disjoint 2-subsets of {1,2,...,n}.

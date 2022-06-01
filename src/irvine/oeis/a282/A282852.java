@@ -1,6 +1,6 @@
 package irvine.oeis.a282;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A282852 37-gonal numbers: a(n) = n*(35*n-33)/2.

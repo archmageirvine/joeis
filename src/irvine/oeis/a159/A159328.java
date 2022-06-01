@@ -1,6 +1,6 @@
 package irvine.oeis.a159;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A159328 Transform of 1 by the T_{1,1} transformation (see link).

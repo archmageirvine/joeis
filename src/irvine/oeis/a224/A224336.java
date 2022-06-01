@@ -1,6 +1,6 @@
 package irvine.oeis.a224;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A224336 Number of idempotent 5X5 0..n matrices of rank 4.

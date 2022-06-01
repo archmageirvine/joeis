@@ -1,6 +1,6 @@
 package irvine.oeis.a120;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A120071 a(n) = n*(n+20).

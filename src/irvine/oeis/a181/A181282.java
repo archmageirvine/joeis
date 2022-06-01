@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 // Recurrence: (n+1)*a[n+0]=4*(2*n-1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A181282 a(n) is the number of associate Rota-Baxter words in one idempotent generator x and one idempotent operator P of degree n. Such words are Rota-Baxter words that begin and/or ends with x, and P is applied n times in the word.

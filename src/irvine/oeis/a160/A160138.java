@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 // Recurrence: a[n+0]=a[n-1]+a[n-2]-a[n-4]-a[n-5]+a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A160138 a(n) = number of solutions to the system: x + y + z + w = n, -2x - y + z + 2w = 5 with nonnegative x, y, z, w.

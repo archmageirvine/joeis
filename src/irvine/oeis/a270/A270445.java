@@ -1,6 +1,6 @@
 package irvine.oeis.a270;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A270445 Expansion of 2*x*(1+4*x) / (1-12*x+16*x^2).

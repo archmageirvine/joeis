@@ -1,6 +1,6 @@
 package irvine.oeis.a121;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A121961 Expansion of g.f.: 1/( (1+2*x)*(1-2*x-4*x^2)*(1-2*x^2)^2 ).

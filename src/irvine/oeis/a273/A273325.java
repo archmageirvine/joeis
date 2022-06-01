@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 // ogf: 1+((8*x+1)*2*x)/(1-4*x)^(5/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A273325 Number of endofunctions on [2n] such that the minimal cardinality of the nonempty preimages equals n.

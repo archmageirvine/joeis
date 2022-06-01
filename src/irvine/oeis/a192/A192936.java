@@ -1,7 +1,7 @@
 package irvine.oeis.a192;
 // manually 2021-11-04
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A192936 Constant term of the reduction by x^2 -&gt; x + 1 of the polynomial p(n,x) = Product_{k=1..n} (x+k).

@@ -1,6 +1,6 @@
 package irvine.oeis.a109;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A109816 n^2 followed by n followed by n^3.

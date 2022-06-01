@@ -1,6 +1,6 @@
 package irvine.oeis.a112;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A112525 Expansion of 1/(1 - 100*x^2 - 100*x^3).

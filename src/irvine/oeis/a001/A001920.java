@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A001920 Expansion of 1/(1+759*x^2+2576*x^3+759*x^4+x^6).

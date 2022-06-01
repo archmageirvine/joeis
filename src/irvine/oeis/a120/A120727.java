@@ -1,6 +1,6 @@
 package irvine.oeis.a120;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A120727 a(n) = a(n-1) + a(n-2), starting with 110, 211.

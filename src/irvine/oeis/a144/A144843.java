@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // ogf: x*(1+12x)/((1-36x)*(1-4x)*(1-12x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A144843 a(n) = (6^n - 2^n)^2 / 16.

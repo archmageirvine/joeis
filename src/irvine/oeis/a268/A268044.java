@@ -1,6 +1,6 @@
 package irvine.oeis.a268;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A268044 The odd numbers congruent to {3, 4} mod 5.

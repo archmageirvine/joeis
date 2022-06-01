@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: a[n+0]=67*a[n-1]-426*a[n-2]+360*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328353 a(n)*S is the sum of all positive integers whose decimal expansion is up to n digits and uses six distinct nonzero digits d1,d2,d3,d4,d5,d6 such that d1+d2+d3+d4+d5+d6=S.

@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103685 Consider the morphism 1-&gt;{1,2}, 2-&gt;{1,3}, 3-&gt;{1}; a(n) is the total number of '3' after n substitutions.

@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A001401 Number of partitions of n into at most 5 parts.

@@ -1,6 +1,6 @@
 package irvine.oeis.a205;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A205646 Number of empty faces in Freij's family of Hansen polytopes.

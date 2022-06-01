@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A068179 Product_{i=1..3} (i+x) / Product_(i=1..3} (i-x) = Sum_{n&gt;=0} (a(n)/b(n))*x^n.

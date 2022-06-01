@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128102 Number of 2 X 2 tiles in all tilings of a 4 X n rectangle with 1 X 1 and 2 X 2 square tiles.

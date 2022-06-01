@@ -1,6 +1,6 @@
 package irvine.oeis.a222;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A222739 Partial sums of the first 10^n terms in A181482.

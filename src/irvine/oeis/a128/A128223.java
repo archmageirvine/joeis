@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128223 a(n) = if n mod 2 = 0 then n*(n+1)/2 otherwise (n+1)^2/2-1.

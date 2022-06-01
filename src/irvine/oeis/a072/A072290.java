@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A072290 Number of digits in the decimal expansion of the Champernowne constant that must be scanned to encounter all n-digit strings.

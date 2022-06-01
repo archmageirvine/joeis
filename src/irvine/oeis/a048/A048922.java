@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A048922 Indices of 9-gonal numbers which are also octagonal.

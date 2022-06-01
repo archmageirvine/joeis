@@ -1,6 +1,6 @@
 package irvine.oeis.a219;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A219258 Numbers k such that 27*k+1 is a square.

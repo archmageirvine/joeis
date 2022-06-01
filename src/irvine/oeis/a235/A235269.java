@@ -1,6 +1,6 @@
 package irvine.oeis.a235;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A235269 floor(s*t/(s+t)), where s(n) are the squares, t(n) the triangular numbers.

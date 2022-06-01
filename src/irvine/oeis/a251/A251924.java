@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251924 Numbers n such that the sum of the triangular numbers T(n) and T(n+1) is equal to a hexagonal number H(m) for some m.

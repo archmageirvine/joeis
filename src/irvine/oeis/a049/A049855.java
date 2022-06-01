@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 // Recurrence: a[n+0]=2*a[n-1]-a[n-2]+a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A049855 a(n)=Sum{a(k): k=0,1,2,...,n-3,n-1}; a(n-2) is not a summand; 2 initial terms required.

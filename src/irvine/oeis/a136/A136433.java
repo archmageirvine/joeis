@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136433 a(n+2)=a(n+1)*(n mod 3 + 1) + (n mod 2 + 1), a(1)=11.

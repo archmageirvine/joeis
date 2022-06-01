@@ -1,6 +1,6 @@
 package irvine.oeis.a111;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A111258 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+601)^2 = y^2.

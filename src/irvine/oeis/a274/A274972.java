@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274972 Numbers x such that there exists n in N : (x+1)^3 - x^3 = 61*n^2.

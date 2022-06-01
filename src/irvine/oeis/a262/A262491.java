@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A262491 The index of the first of two consecutive positive triangular numbers (A000217) the sum of which is equal to the sum of eleven consecutive positive triangular numbers.

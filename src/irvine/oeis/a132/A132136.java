@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 
 import irvine.math.z.Z;
 import irvine.oeis.transform.EulerTransform;
-import irvine.oeis.PaddingSequence;
+import irvine.oeis.recur.PaddingSequence;
 
 
 /**

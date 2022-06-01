@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // ogf: x/((1-x)*(1-x^2)^2*(1-x^3)^8)+1-x^3-5*x^4+7*x^5+82*x^6+783*x^7+17*x^8+10*x^9
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A128526 Number of 4-indecomposable (connected) graphs on n nodes.

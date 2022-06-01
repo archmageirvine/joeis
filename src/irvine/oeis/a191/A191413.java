@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191413 a(n) = 3*n^2 - 2*n + 7.

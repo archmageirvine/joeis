@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // Recurrence: 27*(n-2)*(n-1)*n*(16*n^3-160*n^2+521*n-552)*a[n+0]=18*(n-2)*(n-1)*(32*n-105)*a[n-1]-12*(n-2)*(384*n^5-5376*n^4+29288*n^3-77560*n^2+99709*n-49665)*a[n-2]+48*(2*n-7)*(32*n^3-248*n^2+623*n-505)*a[n-3]+64*(n-4)*(2*n-9)*(2*n-7)*(16*n^3-112*n^2+249*n-175)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A143045 G.f.: A(x) = x + A(-x)^2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a177;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A177107 3*(10^n-7).

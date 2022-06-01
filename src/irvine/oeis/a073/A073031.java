@@ -1,6 +1,6 @@
 package irvine.oeis.a073;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A073031 Number of ways of making change for n cents using coins of sizes 1, 2, 5, 10 cents, when order matters.

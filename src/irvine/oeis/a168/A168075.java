@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168075 Expansion of (1+27x^2-54x^3)/((1+3x)^2*(1-3x+9 x^2)).

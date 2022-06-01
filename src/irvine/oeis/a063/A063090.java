@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 // egf: -(x+2*log(1-x))/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A063090 a(n)/(n*n!) is the average number of comparisons needed to find a node in a binary search tree containing n nodes inserted in a random order.

@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A075536 a(n) = ((1+(-1)^n)*T(n+1) + (1-(-1)^n)*S(n))/2, where T(n) = tribonacci numbers A000073, S(n) = generalized tribonacci numbers A001644.

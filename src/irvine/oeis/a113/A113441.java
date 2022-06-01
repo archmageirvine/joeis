@@ -1,6 +1,6 @@
 package irvine.oeis.a113;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A113441 Second row of A113439.

@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // ogf: (x*(1-x-sqrt(1-6*x+5*x^2)))/(1-6*x+5*x^2+(1+x)*sqrt(1-6*x+5*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128732 Number DL's in all skew Dyck paths of semilength n.

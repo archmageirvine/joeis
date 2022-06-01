@@ -1,6 +1,6 @@
 package irvine.oeis.a228;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A228547 y-values in the solution to the Pell equation x^2 - 74*y^2 = -1.

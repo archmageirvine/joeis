@@ -1,6 +1,6 @@
 package irvine.oeis.a205;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A205088 a(n)=n 8's sandwiched between two 1's.

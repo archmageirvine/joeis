@@ -2,7 +2,7 @@ package irvine.oeis.a160;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A160621 Numerator of Laguerre(n, 1).

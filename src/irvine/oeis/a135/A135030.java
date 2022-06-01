@@ -1,6 +1,6 @@
 package irvine.oeis.a135;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A135030 Generalized Fibonacci numbers: a(n) = 6*a(n-1) + 2*a(n-2).

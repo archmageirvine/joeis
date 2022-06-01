@@ -1,6 +1,6 @@
 package irvine.oeis.a275;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A275944 Gaussian binomial coefficient [n,3] for q = 10.

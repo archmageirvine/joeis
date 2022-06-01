@@ -1,6 +1,6 @@
 package irvine.oeis.a232;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A232229 a(1)=9; thereafter a(n) = 8*10^(n-1) + 8 + a(n-1).

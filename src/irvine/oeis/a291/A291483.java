@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 // egf: arcsinh(x)*exp(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A291483 Expansion of e.g.f. arcsinh(x)*exp(x).

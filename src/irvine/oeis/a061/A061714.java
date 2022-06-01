@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 // egf: exp(-x)*(1-log(1-2*x)/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A061714 Number of types of (n-1)-swap moves for traveling salesman problem. Number of circular permutations on elements 0,1,...,2n-1 where every two elements 2i,2i+1 and no two elements 2i-1,2i are adjacent.

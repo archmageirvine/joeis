@@ -1,7 +1,7 @@
 package irvine.oeis.a152;
 // manually 2020-12-30
 
-import irvine.oeis.PaddingSequence;
+import irvine.oeis.recur.PaddingSequence;
 
 /**
  * A152623 Decimal expansion of 3/2.

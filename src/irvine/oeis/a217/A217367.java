@@ -1,6 +1,6 @@
 package irvine.oeis.a217;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A217367 a(n) = ((n+7) / gcd(n+7,4)) * (n / gcd(n,4)).

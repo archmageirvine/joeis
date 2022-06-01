@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251864 Numbers n such that the sum of the pentagonal numbers P(n), P(n+1) and P(n+2) is equal to the sum of the octagonal numbers N(m), N(m+1) and N(m+2) for some m.

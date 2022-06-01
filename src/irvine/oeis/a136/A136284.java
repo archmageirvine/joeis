@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 // Recurrence: 2*(n-3)*(9*n-64)*a[n+0]=2*(18*n^3-182*n^2+423*n-149)*a[n-1]-2*(n-1)*(9*n^3-91*n^2+243*n-173)*a[n-2]+6*(n-2)*(n-1)*(n+1)*a[n-3]+(n-3)*(n-2)*(n-1)*(9*n^2-91*n+224)*a[n-4]-(n-4)*(n-3)*(n-2)*(n-1)*(9*n-67)*a[n-5]+(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*(9*n-55)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A136284 Number of graphs on n labeled nodes with maximal degree exactly 2.

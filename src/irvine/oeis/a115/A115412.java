@@ -1,6 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A115412 G.f.: (x - 1)/(x^5 - x^3 - x^2 - x - 1).

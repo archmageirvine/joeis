@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // ogf: 2*x*(1-2*x-2*x^2)/((1-x)*(1-4*x)*(1-2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A143960 a(n) = the n-th positive integer with exactly n zeros and n ones in its binary representation.

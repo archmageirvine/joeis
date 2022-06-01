@@ -1,6 +1,6 @@
 package irvine.oeis.a102;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A102301 a(n) = ((3*n + 1)*2^(n+3) + 9 + (-1)^n)/18.

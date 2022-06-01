@@ -1,6 +1,6 @@
 package irvine.oeis.a089;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A089350 Sum of all digits in all even numbers from 0 to 8(10^(k+1)-1)/9 (with (k+1) 8's).

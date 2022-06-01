@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // Recurrence: a[n+0]=2*a[n-1]+3*a[n-2]-4*a[n-3]-4*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A178748 Total number of '1' bits in the terms of 'rows' of A178746.

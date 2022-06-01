@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // Recurrence: a[n+0]=30*n-27
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A139222 a(n) = 30*n - 27.

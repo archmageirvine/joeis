@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A038249 Third line of 4-wave sequence A038197.

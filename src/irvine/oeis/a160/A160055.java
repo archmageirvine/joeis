@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A160055 Positive numbers y such that y^2 is of the form x^2+(x+89)^2 with integer x.

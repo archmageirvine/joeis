@@ -1,6 +1,6 @@
 package irvine.oeis.a159;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A159914 Half the number of (n-3)-element subsets of {1,...,n} whose elements sum up to an odd value.

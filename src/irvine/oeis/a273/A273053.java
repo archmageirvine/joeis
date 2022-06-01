@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273053 Numbers n such that 15*n^2 + 16 is a square.

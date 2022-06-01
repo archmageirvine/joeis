@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 // Recurrence: (n+3)*(n+4)*(n+5)*(2*n+1)*(2*n+3)*a[n+0]=8*(2*n+1)*(5*n^3+33*n^2+67*n+45)*a[n-1]+4*(n-1)*(40*n^4+216*n^3+326*n^2+144*n+45)*a[n-2]-288*(n-2)*(n-1)*(n+1)*(2*n+5)*a[n-3]-144*(n-3)*(n-2)*(n-1)*(2*n+3)*(2*n+5)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A145868 Number of involutions of length 2n+1 which are invariant under the reverse-complement map and have no decreasing subsequences of length 7.

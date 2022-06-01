@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 // Recurrence: a[n+0]=(n-4)*a[n-1]+(4*n-8)*a[n-2]+(5*n-6)*a[n-3]+(n+6)*a[n-4]-(2*n-12)*a[n-5]-(n-5)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A167760 The number of permutations w of [n] with no w(i)+1 == w(i+1) (mod n).

@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165684 Dimension of the space of Siegel cusp forms of genus 2 and dimension 2n (associated with full modular group Gamma_2).

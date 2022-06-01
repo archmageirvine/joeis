@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 // egf: (x*(1-x))/(1-2*x)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A161120 Number of cycles with entries of opposite parities in all fixed-point-free involutions of {1,2,...,2n}.

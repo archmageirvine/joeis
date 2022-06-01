@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 // Recurrence: 637009920*a[n+0]=n*(n-1)*(n-2)*(n-3)*(n+2)*(n+1)*(n^2-n-4)*(n^6-3*n^5-3*n^4+11*n^3+2*n^2-8*n-96)*(n^4-2*n^3+n^2+8)*(n^6-3*n^5-3*n^4+11*n^3+2*n^2-8*n-144)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A175991 a(n) = binomial(binomial(binomial(n, 2), 3), 4)/5.

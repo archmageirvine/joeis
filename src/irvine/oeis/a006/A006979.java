@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A006979 a(n) is the number of compositions of n in which the maximum part size is 5.

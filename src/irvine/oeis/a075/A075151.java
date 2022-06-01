@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A075151 a(n)=L(n)^2*C(n), L(n)=Lucas numbers (A000032), C(n)=reflected Lucas numbers (comment to A061084).

@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247035 Expansion of 2*(x+1)*(x^4+6*x^3+5*x^2+6*x+1)/(x^6-18*x^3+1).

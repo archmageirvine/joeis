@@ -1,6 +1,6 @@
 package irvine.oeis.a197;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A197083 Number of solutions to a+b+c=d+e+f with 0&lt;a&lt;=n, 0&lt;=b,c,d,e,f&lt;=n.

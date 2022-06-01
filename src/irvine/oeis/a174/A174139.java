@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 // Recurrence: a[n+15]=a[n+0]+25
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A174139 Numbers congruent to {0,1,2,3,4,10,11,12,13,14,20,21,22,23,24} mod 25.

@@ -1,6 +1,6 @@
 package irvine.oeis.a211;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A211607 111n^2 - 3123n + 10753.

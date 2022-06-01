@@ -1,6 +1,6 @@
 package irvine.oeis.a187;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A187756 a(n) = n^2 * (4*n^2 - 1) / 3.

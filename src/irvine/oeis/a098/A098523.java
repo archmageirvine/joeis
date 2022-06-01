@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098523 Expansion of (1+x^2)/(1-x-x^5) = (1+x^2)/((1-x+x^2)*(1-x^2-x^3)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a164;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A164828 Generalized Fibonacci numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251963 Numbers n such that the sum of the triangular numbers T(n) and T(n+1) is equal to an octagonal number N(m) for some m.

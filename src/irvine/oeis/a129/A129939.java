@@ -1,6 +1,6 @@
 package irvine.oeis.a129;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A129939 "Self-Lucas"; a(n) is the sum of the last 5 terms. Sequence starts with 12,21,3,1,19 which are l,u,c,a,s if you consider a=1, b=2, c=3, ..., z=26.

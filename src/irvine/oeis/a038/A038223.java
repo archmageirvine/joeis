@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A038223 Bottom line of 3-wave sequence A038196, also bisection of A006356.

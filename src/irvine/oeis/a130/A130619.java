@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // Recurrence: a[n+0]=n*a[n-1]+a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A130619 Let M(n) = {{n, 0, 1}, {1, 0, 0}, {0, 1, 0}}, then a(n) is the upper-right term of M(n)*M(n-1)*...*M(1) (empty matrix product yields the identity).

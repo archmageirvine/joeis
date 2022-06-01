@@ -1,6 +1,6 @@
 package irvine.oeis.a194;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A194274 Concentric square numbers (see Comments lines for definition).

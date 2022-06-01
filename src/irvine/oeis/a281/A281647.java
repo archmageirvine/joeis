@@ -1,6 +1,6 @@
 package irvine.oeis.a281;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A281647 Solutions x to the negative Pell equation x^2 - 10*y^2 = -6 with x &gt; y &gt; 0.

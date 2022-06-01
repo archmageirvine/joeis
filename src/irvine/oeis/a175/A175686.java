@@ -1,6 +1,6 @@
 package irvine.oeis.a175;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A175686 a(n) = binomial(n-j-1,j) + binomial(n-j,j-1) with j= floor((n-1)/2).

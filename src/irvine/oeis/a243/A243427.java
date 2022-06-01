@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 // Recurrence: a[n+0]=n+2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A243427 Floored (rational) values of sqrt(xy) such that sqrt(x) + sqrt(y) = sqrt(xy).

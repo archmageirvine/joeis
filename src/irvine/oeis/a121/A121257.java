@@ -1,6 +1,6 @@
 package irvine.oeis.a121;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A121257 Number of conjugated cycles composed of six carbons in (1,1)-nanotubes in terms of the number of naphthalene units.

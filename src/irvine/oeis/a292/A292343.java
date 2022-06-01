@@ -1,6 +1,6 @@
 package irvine.oeis.a292;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A292343 The PI index of the Aztec diamond AZ(n) (see the Imran et al. reference).

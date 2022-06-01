@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // Recurrence: (6+4*n)*a[n+0]+(-6-4*n)*a[n+1]+(-18-4*n)*a[n+2]+(24+5*n)*a[n+3]+(-6-n)*a[n+4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087626 Expansion of 2/(1-2x+sqrt(1-4x+4x^3)).

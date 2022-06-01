@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173963 Number of nonoverlapping placements of one 1 X 1 square and one 2 X 2 square on an n X n board.

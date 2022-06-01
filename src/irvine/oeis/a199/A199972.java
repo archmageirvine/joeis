@@ -2,7 +2,7 @@ package irvine.oeis.a199;
 // manually 2021-05-29
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A199972  a(n) = the sum of GCQ_B(n, k) for 1 &lt;= k &lt;= n (see definition in comments).

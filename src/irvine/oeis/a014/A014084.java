@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A014084 Inverse of 75th cyclotomic polynomial.

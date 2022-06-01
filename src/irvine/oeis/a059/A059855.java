@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.PaddingSequence;
+import irvine.oeis.recur.PaddingSequence;
 
 /**
  * A059855 Period of continued fraction for sqrt(n^2+4), n &gt;= 1.

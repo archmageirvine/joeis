@@ -1,6 +1,6 @@
 package irvine.oeis.a194;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A194350 Numbers covering A000027: a(n)=(1, 1, 2, 5) * A011557(n)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a106;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106851 Let M = {{0, 0, 0, 1}, {1, 4, 0, 0}, {0, 1, 0, 0}, {0, 0, 1, 4}}, v[1] = {0, 1, 1, 2}', v[n]=M.v[n-1]; then a(n) = v[n][[1]].

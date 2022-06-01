@@ -1,6 +1,6 @@
 package irvine.oeis.a276;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A276276 a(n) = a(n-2)+a(n-3) with a(1)=2 a(2)=1 a(3)=0.

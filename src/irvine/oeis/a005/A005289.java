@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A005289 Number of graphs on n nodes with 3 cliques.

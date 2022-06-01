@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A008954 Final digit of triangular number n*(n+1)/2.

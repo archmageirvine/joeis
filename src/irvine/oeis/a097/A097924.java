@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097924 a(n) = 4*a(n-1) + a(n-2), n&gt;=2, a(0) = 2, a(1) = 7.

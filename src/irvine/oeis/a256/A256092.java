@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 // ogf: (2*x)/((1-(1-8*x)^(1/4))*(1-8*x)^(3/4))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A256092 G.f.: (2*x)/((1-(1-8*x)^(1/4))*(1-8*x)^(3/4)).

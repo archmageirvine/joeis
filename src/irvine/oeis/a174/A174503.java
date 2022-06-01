@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174503 Continued fraction expansion for exp( Sum_{n&gt;=1} 1/(n*A087799(n)) ), where A087799(n) = (5+sqrt(24))^n + (5-sqrt(24))^n.

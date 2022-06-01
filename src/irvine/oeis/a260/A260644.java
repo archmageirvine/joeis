@@ -1,6 +1,6 @@
 package irvine.oeis.a260;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A260644 Four steps forward, three steps back.

@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // Recurrence: n*a[n+0]-6*(6*n-1)*(6*n-5)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087216 a(n) = (6n)!/((3n)!(2n)!2^n).

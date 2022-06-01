@@ -3,7 +3,7 @@ package irvine.oeis.a317;
 // Recurrence: a[n+0]=48277590120607451+(n-1)*8440735245322380
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A317163 a(n) =  48277590120607451 + (n-1)*8440735245322380.

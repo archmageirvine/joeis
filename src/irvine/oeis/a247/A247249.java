@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 // egf: exp(-x/2)*(1-2*x)^(-3/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A247249 a(n) = (2*n-1)*a(n-1) + (n-1)*a(n-2) with a(0) = a(1) = 1.

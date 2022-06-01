@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 // ogf: (1+2*x)^(2/3)/((1-x)*(1-4*x))^(1/3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A211894 G.f.: exp( Sum_{n&gt;=1} 3 * Jacobsthal(n)^2 * x^n/n ), where Jacobsthal(n) = A001045(n).

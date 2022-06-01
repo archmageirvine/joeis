@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279437 Number of ways to place 3 points on an n X n square grid so that no more than 2 points are on a vertical or horizontal straight line.

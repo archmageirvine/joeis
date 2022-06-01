@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A002727 Number of 3 X n binary matrices up to row and column permutations.

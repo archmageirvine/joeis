@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 // Recurrence: n*a[n+0]+30*(-8*n+9)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A303007 Expansion of (1-240*x)^(1/8).

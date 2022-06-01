@@ -1,6 +1,6 @@
 package irvine.oeis.a154;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A154410 a(n) = 5*(3*6^n + 2^n)/2.

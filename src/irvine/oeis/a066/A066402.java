@@ -1,7 +1,7 @@
 package irvine.oeis.a066;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A066402 From expansion of Belyi function for dodecahedron.

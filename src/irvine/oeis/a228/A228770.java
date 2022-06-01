@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // ogf: -(24*x^6-71*x^5+84*x^4-45*x^3+11*x^2+sqrt(-4*x+1)*(4*x^6-25*x^5+40*x^4-29*x^3+9*x^2-x)-x)/(8*x^6-54*x^5+117*x^4-114*x^3+54*x^2-sqrt(-4*x+1)*(12*x^5-43*x^4+58*x^3-36*x^2+10*x-1)-12*x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228770 The number of sum indecomposable permutations which avoid the patterns 3124 and 4312.

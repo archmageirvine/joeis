@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 // ogf: 1/2*(1-sqrt(1-4*x+4*x*sqrt(1-4*x)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A168506 Number of rooted plane trees of total weight n whose nodes are themselves planted plane trees whose roots are distinguished as either red or blue, the weight of each such node being equal to the size of the corresponding planted tree.

@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 // Recurrence: (8+8*n)*a[n+0]+(4*n+16)*a[n+1]+(-20-6*n)*a[n+2]+(-5-n)*a[n+3]+(5+n)*a[n+4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A294175 a(n) = 2^(n-1) + ((1+(-1)^n)/4)*binomial(n, n/2) - binomial(n, floor(n/2)).

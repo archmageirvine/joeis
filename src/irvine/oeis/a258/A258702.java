@@ -1,6 +1,6 @@
 package irvine.oeis.a258;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A258702 Coefficients in Molien series for 5-dimensional faithful representation of Horrocks-Mumford group G_{HM}.

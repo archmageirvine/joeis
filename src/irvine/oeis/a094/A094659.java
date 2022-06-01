@@ -1,6 +1,6 @@
 package irvine.oeis.a094;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094659 Number of closed walks of length n at a vertex of the cyclic graph on 7 nodes C_7.

@@ -1,6 +1,6 @@
 package irvine.oeis.a182;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A182077 Number of independent sets of nodes in the generalized Petersen graph G(2n+1,2) (n&gt;=1).

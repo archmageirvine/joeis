@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // Recurrence: n*(n-4)*a[n+0]+2*(-5*n^2+23*n-15)*a[n-1]+4*(8*n^2-41*n+45)*a[n-2]-16*(2*n-5)*(n-3)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A246472 Number of order-preserving (monotone) functions from the power set of 1 = {0} to the power set of n = {0, ..., n-1}.

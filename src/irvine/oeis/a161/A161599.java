@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A161599 The list of the B values in the common solutions to the 2 equations 15*k + 1 = A^2, 19*k + 1 = B^2.

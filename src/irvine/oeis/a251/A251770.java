@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251770 Numbers n such that n^2 + (n+1)^2 + (n+2)^2 is equal to the sum of the heptagonal numbers H(m), H(m+1) and H(m+2) for some m.

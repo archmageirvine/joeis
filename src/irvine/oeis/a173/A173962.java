@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173962 Averages of two consecutive odd cubes; a(n) = (n^3+(n+2)^3)/2.

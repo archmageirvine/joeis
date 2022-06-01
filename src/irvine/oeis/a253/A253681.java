@@ -1,6 +1,6 @@
 package irvine.oeis.a253;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A253681 Integer squares c^2 that are equal to the sum of an odd number M of consecutive cubed integers b^3 + (b+1)^3 + ... + (b+M-1)^3 = c^2 starting at b(n) (A253679).

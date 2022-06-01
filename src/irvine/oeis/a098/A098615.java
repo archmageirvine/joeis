@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: n*a[n+0]+(n-1)*a[n-1]+3*(-3*n+4)*a[n-2]+3*(-3*n+7)*a[n-3]+20*(n-3)*a[n-4]+20*(n-4)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098615 G.f. A(x) satisfies: A(x*G(x)) = G(x), where G(x) is the g.f. for A098614(n) = Fibonacci(n+1)*Catalan(n).

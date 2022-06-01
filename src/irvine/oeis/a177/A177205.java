@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // Recurrence: a[n+0]=a[n-17]+(n+1)*(n-17)+105
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177205 Partial sums of round(n^2/17).

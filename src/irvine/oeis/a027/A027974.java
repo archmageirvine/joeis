@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027974 a(n) = Sum_{i=0..n} Sum_{j=0..i} T(i,j), T given by A027960.

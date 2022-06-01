@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // ogf: ((1-x)^2*(1+x))/(1-2*x-3*x^2+x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A143787 Number of compositions of n into floor((3*j)/2) kinds of j's for all j&gt;=1.

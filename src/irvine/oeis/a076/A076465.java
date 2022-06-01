@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076465 Sum of squares of numbers that can be written as t*n + u*(n+1) for nonnegative integers t,u in exactly n ways.

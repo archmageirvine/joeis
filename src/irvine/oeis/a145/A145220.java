@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 // egf: (x^2*(1-x^2/2)*exp(-x))/(2*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A145220 a(n) is the number of even permutations (of an n-set) with exactly 2 fixed points.

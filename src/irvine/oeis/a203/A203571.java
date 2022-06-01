@@ -1,6 +1,6 @@
 package irvine.oeis.a203;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A203571 Period length 10: [0, 1, 2, 3, 4, 0, 4, 3, 2, 1] repeated.

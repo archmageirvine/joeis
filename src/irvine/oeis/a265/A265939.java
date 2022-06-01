@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 // ogf: (3-sqrt(1-4*x))/(2*(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A265939 Central terms of triangle A102363.

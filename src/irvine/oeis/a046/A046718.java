@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A046718 Number of permutations of [ n ] with exactly one 132-pattern and two 123-patterns.

@@ -1,7 +1,7 @@
 package irvine.oeis.a052;
 
 import irvine.math.z.Z;
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A052505 Number of labeled 3-constrained functional graphs.

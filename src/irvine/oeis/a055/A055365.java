@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055365 Number of asymmetric mobiles (circular rooted trees) with n nodes and 4 leaves.

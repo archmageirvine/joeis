@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136305 Expansion of g.f. (3 -x +2*x^2)/(1 -3*x +2*x^2 -x^3).

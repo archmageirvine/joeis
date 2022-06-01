@@ -1,6 +1,6 @@
 package irvine.oeis.a110;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A110513 Expansion of (1 + x)/(1 + 2x + x^3).

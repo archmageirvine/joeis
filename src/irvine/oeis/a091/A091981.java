@@ -1,6 +1,6 @@
 package irvine.oeis.a091;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A091981 Poincar\u00e9 series [or Poincare series] (or Molien series) for GL_2(4):2.

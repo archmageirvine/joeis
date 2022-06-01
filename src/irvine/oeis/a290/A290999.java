@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290999 p-INVERT of (1,1,1,1,1,...), where p(S) = 1 - 6*S^2.

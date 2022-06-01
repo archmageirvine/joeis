@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: ((1+x)/sqrt((x-1)*(4*x^2+x-1))-1)/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307557 Number of Motzkin meanders of length n with no level steps at odd level.

@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // Recurrence: 1440*a[n+0]=(n+1)(n+2)^3*(n+3)(n+4)(5*n^2+16*n+15)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108670 a(n) = (n+1)(n+2)^3*(n+3)(n+4)(5n^2 + 16n + 15)/1440.

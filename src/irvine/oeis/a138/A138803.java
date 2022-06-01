@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138803 Imaginary parts of terms (1,1), (2,2) of matrix [1,(1+I); 1,1]^n.

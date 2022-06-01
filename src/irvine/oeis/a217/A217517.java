@@ -1,6 +1,6 @@
 package irvine.oeis.a217;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A217517 Base-n state complexity of partitioned deterministic finite automaton (PDFA) for the periodic sequence (12345)*.

@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A075843 Numbers k such that 99*k^2 + 1 is a square.

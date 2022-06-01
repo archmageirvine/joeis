@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049295 Number of subgroups of index 4 in free group of rank n+1.

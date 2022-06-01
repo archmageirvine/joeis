@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 // Recurrence: 2*a[n+0]=n*(n^2-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A135503 a(n) = n*(n^2 - 1)/2.

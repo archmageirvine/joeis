@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // Recurrence: a[n+0]=1+n^4+n^6+n^9+n^10+n^14
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123659 a(n) = 1 + n^4 + n^6 + n^9 + n^10 + n^14.

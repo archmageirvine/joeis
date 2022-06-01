@@ -1,6 +1,6 @@
 package irvine.oeis.a063;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A063523 a(n) = n*(8*n^2 - 5)/3.

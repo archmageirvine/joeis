@@ -1,6 +1,6 @@
 package irvine.oeis.a243;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A243142 Number of inequivalent (mod D_3) ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.

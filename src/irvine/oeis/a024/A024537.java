@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024537 a(n) = floor( a(n-1)/(sqrt(2) - 1) ), with a(0) = 1.

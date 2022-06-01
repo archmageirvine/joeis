@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // Recurrence: 12*n*(3*n-1)*(3*n-2)*(238*n^2-663*n+457)*a[n+0]=2*(150416*n^5-644640*n^4+1020351*n^3-734334*n^2+237007*n-26880)*a[n-1]-(3*n-3)*(3*n-4)*(3*n-5)*(238*n^2-187*n+32)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A156886 a(n) = Sum_{k=0..n} C(n,k)*C(3*n+k,k).

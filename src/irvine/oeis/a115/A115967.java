@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // ogf: (1+2*sqrt(1-2*x-3*x^2))/(3-8*x-12*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115967 Expansion of 1/(2*sqrt(1-2*x-3*x^2) - 1).

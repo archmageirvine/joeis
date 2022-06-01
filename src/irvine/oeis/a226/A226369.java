@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226369 Number of tilings of a 5 X n rectangle using integer-sided square tiles of area &gt; 1.

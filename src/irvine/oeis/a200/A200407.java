@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200407 The x-values in the solution to 19*x^2 - 18 = y^2.

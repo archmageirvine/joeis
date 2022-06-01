@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055339 Number of asymmetric (identity) trees with n nodes and 8 leaves.

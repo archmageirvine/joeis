@@ -1,6 +1,6 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A020540 a(n) = 8^(n+1) - 2^(n+2).

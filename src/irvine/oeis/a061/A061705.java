@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A061705 Number of matchings in the wheel graph with n spokes.

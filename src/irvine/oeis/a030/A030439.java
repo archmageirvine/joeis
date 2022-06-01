@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 // Recurrence: a[n+0]=4*a[n-2]-3*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A030439 a(n+1) = smallest number not containing any digits of a(n), working in base 3.

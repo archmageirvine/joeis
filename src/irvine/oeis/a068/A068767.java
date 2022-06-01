@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 // Recurrence: (n+1)*a[n+0]=80*(2-n)*a[n-2]+10*(2*n-1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A068767 Generalized Catalan numbers.

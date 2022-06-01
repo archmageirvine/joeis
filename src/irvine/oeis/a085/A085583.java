@@ -1,6 +1,6 @@
 package irvine.oeis.a085;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A085583 Number of (3412,1234)-avoiding involutions in S_n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a079;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A079936 Greedy frac multiples of sqrt(5): a(1)=1, sum(n&gt;0,frac(a(n)*x))=1 at x=sqrt(5).

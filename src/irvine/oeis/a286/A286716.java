@@ -1,6 +1,6 @@
 package irvine.oeis.a286;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A286716 a(n) = floor(n/2) - floor((n+1)/5), n &gt;= 0.

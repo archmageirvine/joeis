@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140413 a(2n) = A000045(6n) + 1, a(2n+1) = A000045(6n+3) - 1.

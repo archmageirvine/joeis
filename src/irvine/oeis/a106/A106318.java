@@ -1,6 +1,6 @@
 package irvine.oeis.a106;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106318 Bhaskara twins: n such that 2*n^2 = X^3 and 2*n^3 = Y^2.

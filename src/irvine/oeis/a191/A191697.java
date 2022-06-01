@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191697 a(n) = r1^n + r2^n + r3^n where r1, r2, r3 are the three roots of x^3 - 2*x - 2 = 0.

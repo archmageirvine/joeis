@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255372 Number of strings of n decimal digits that contain at least one string of exactly 2 consecutive "0" digits.

@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101379 a(n) = n*(n+1)^2*(6*n^3-5*n^2+3*n+2)/24.

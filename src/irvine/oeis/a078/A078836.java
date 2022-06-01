@@ -1,6 +1,6 @@
 package irvine.oeis.a078;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A078836 a(n) = n*2^(n-6).

@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 // ogf: 2*x+sqrt(1+4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A182122 Expansion of exp( arcsinh( 2*x ) ).

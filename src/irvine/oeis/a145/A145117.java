@@ -1,6 +1,6 @@
 package irvine.oeis.a145;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A145117 Numbers of length n binary words with fewer than 9 0-digits between any pair of consecutive 1-digits.

@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179991 Nonhomogeneous three-term sequence a(n) = a(n-1) + a(n-2) + n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a080;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A080341 Sum of the first n terms that are congruent to 1, 4 or 5 mod 6 (A047259).

@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278579 Quadratic non-residues of 23: numbers n such that Jacobi(n,23) = -1.

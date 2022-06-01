@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 // egf: exp(x+x^2-1/6*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A200380 Expansion of e.g.f. exp(x+x^2-1/6*x^3).

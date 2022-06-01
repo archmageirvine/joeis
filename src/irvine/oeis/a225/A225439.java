@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 // Recurrence: n*(n-1)*a[n+0]=18*(n-1)^2*a[n-1]-9*(3*n-5)*(3*n-4)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A225439 Expansion of 3*x/((1-(1-9*x)^(1/3))*(1-9*x)^(2/3)).

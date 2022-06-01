@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054621 Number of ways to color vertices of a heptagon using &lt;= n colors, allowing only rotations.

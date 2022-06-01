@@ -1,6 +1,6 @@
 package irvine.oeis.a209;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A209410 Number of subsets of {1,...,n} not containing {a,a+2,a+4} for any a.

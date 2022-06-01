@@ -1,6 +1,6 @@
 package irvine.oeis.a260;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A260160 a(n) = a(n-2) + a(n-6) - a(n-8) with n&gt;8, the first eight terms are 0 except that for a(5) = a(7) = 1.

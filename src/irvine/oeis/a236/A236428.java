@@ -1,6 +1,6 @@
 package irvine.oeis.a236;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A236428 a(n) = F(n+1)^2 + F(n+1)*F(n) - F(n)^2, where F = A000045.

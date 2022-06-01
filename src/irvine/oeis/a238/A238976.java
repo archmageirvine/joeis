@@ -1,6 +1,6 @@
 package irvine.oeis.a238;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A238976 a(n) = ((3^(n-1)-1)^2)/4.

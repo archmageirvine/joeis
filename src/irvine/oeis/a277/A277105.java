@@ -1,6 +1,6 @@
 package irvine.oeis.a277;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A277105 a(n) = (27*3^n - 63)/2.

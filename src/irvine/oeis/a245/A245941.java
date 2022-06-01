@@ -1,6 +1,6 @@
 package irvine.oeis.a245;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A245941 (16n^6 - 24n^5 + 2n^4 + 11n^3 - 6n^2 + n) / 6.

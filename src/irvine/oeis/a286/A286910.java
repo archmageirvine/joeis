@@ -1,6 +1,6 @@
 package irvine.oeis.a286;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A286910 Number of independent vertex sets and vertex covers in the n-antiprism graph.

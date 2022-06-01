@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 // Recurrence: (n+1)^2*a[n+1]=-(9*n^2+9*n+3)*a[n+0]-27*n^2*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A291898 (n+1)^2*a(n+1) = -(9*n^2 + 9*n + 3)*a(n) - 27*n^2*a(n-1), with a(0) = 1 and a(1) = -3.

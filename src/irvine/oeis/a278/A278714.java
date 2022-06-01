@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 // Recurrence: (2*n+59)*a[n+0]=(2*n-1)*a[n+30]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A278714 Denominators of (n-1)*(n-3)/(6*(2*n-1)), for n &gt;= 1. Denominators of Dedekind sum s(2, 2*n-1).

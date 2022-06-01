@@ -1,6 +1,6 @@
 package irvine.oeis.a154;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A154708 Numbers a such that b and c exist with b &lt;= a &lt; c and a*(a+1) + b^2 = c^2.

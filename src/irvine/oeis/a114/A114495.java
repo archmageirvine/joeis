@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 // ogf: (1-sqrt(1-4*x))^2/(1+sqrt(1-4*x)+2*x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A114495 Number of returns to the x-axis in all hill-free Dyck paths of semilength n (a Dyck path is said to be hill-free if it has no peaks at level 1).

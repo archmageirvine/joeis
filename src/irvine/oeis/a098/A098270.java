@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: n*a[n+0]+10*(1-2*n)*a[n-1]+4*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098270 a(n) = 2^n*P_n(5), 2^n times the Legendre polynomial of order n at 5.

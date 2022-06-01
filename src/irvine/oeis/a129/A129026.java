@@ -1,6 +1,6 @@
 package irvine.oeis.a129;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A129026 a(n) = (1/2)*(n^4 + 11*n^3 + 53*n^2 + 97*n + 54).

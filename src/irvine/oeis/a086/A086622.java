@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 // ogf: (-1+2*x+sqrt(1-4*x+8*x^3))/(2*(-x^2+2*x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A086622 G.f. A(x) satisfies: A(x) = 1/(1-2*x) + x^2*A(x)^2.

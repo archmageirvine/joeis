@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A227665 Number of lattice paths from {n}^3 to {0}^3 using steps that decrement one component by 1 such that for each point (p_1,p_2,p_3) we have abs(p_{i}-p_{i+1}) &lt;= 1.

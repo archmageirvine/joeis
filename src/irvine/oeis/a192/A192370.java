@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192370 Sum of all the n-digit numbers whose digits are all even and nonzero: 2,4,6,8.

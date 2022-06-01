@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // Recurrence: (n+1)*a[n+0]+(n-2)*a[n-1]-2*n*a[n-2]+(-2*n+3)*a[n-3]+(-n+2)*a[n-4]+(-n+4)*a[n-5]+(-2*n+13)*a[n-6]+2*(-n+9)*a[n-7]+(n-10)*a[n-8]+(n-11)*a[n-9]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A329703 Number of meanders of length n with Dyck-steps avoiding the consecutive steps UDU and DUD.

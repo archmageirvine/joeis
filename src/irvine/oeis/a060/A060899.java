@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // Recurrence: (n+1)*a[n+0]-4*a[n-1]+16*(-n+1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A060899 Number of walks of length n on square lattice, starting at origin, staying on points with x+y &gt;= 0.

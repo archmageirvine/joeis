@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138331 a(n) = C(n+5, 5)*(n+3)*(-1)^(n+1)*16/3.

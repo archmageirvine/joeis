@@ -1,6 +1,6 @@
 package irvine.oeis.a132;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A132354 Integers m such that 7*m + 1 is a square.

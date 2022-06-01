@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: (1-x)^(-1/2)*exp(-x/2-x^2/4-x^3/6)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053532 Expansion of e.g.f.: (1-x)^(-1/2)*exp(-x/2 -x^2/4 -x^3/6).

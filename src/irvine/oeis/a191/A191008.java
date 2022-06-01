@@ -1,6 +1,6 @@
 package irvine.oeis.a191;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A191008 a(n) = (n*3^(n+1)+((5*3^(n+1)+(-1)^(n))/4))/4.

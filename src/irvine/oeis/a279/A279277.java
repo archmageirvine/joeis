@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279277 Composition of Lucas numbers A000032 with Fibonacci numbers A000045.

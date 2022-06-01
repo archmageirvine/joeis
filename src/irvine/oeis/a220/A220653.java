@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 // ogf: (131*x^12+21186*x^11+1682460*x^10+24070936*x^9+104942001*x^8+163196604*x^7+91422264*x^6+14484216*x^5-518211*x^4-131726*x^3-1860*x^2-1)/((x-1)^12*(11*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A220653 n^11 + 11*n + 11^n.

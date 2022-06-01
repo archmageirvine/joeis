@@ -1,6 +1,6 @@
 package irvine.oeis.a186;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A186030 a(n) = n*(13*n-3)/2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024163 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that c - b &lt; b - a.

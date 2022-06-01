@@ -1,6 +1,6 @@
 package irvine.oeis.a279;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A279318 Permutation of the nonnegative integers [6k+3, 6k+2, 6k+1, 6k, 6k+5, 6k+4].

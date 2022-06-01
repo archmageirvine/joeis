@@ -3,7 +3,7 @@ package irvine.oeis.a348;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A348621 The number of additions required to compute the permanent of general n X n matrices using Ryser's formula without Gray code ordering.

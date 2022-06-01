@@ -1,6 +1,6 @@
 package irvine.oeis.a221;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A221639 5^(5n+1) + 4^(5n+2) + 3^(5n).

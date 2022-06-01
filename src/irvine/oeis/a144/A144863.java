@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144863 Start with 1, then at each step prepend 10 and append 01.

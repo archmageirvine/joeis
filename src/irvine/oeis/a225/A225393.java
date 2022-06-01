@@ -1,6 +1,6 @@
 package irvine.oeis.a225;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A225393 Expansion of 1/(1 - x - x^2 + x^6 - x^8).

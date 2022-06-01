@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: n*a[n+0]+(n-4)*a[n-1]+2*(-4*n+3)*a[n-2]+4*(-n+2)*a[n-3]+16*(n-2)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328002 a(n) = 2^n * Sum_{k=0..n} Product_{j=1..k} (2/j)^((-1)^j).

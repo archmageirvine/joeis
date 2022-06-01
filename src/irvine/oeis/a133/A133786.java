@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 // Recurrence: a[n+20]=a[n+0]+200
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A133786 Numbers prime to 10, 10's digit is odd and 100's digit is odd.

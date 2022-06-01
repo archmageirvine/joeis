@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // ogf: (sqrt(4*x^2-8*x+1)-1)/(2*x-4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108524 Number of ordered rooted trees with n generators.

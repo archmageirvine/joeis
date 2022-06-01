@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 // ogf: (1-x)^4/sqrt(1-10*x+33*x^2-56*x^3+66*x^4-54*x^5+28*x^6-8*x^7+x^8)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A249793 G.f.: Sum_{n&gt;=0} x^n/(1-x)^(5*n) * Sum_{k=0..n} C(n,k)^2 * x^k.

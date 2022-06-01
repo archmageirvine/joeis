@@ -1,6 +1,6 @@
 package irvine.oeis.a035;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A035597 Number of points of L1 norm 3 in cubic lattice Z^n.

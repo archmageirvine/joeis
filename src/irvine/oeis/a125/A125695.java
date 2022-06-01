@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 // Recurrence: (n+1)*a[n+0]+(2*n-1)*a[n-1]+9*(n-2)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A125695 Expansion of (sqrt(1+2x+9x^2)+x-1)/(2x).

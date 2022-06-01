@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274077 a(n) = n^3 + 4.

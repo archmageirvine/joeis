@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // ogf: (1+2*x)/sqrt(1+4*x+2*x^2-12*x^3-15*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102882 Expansion of (1+2x)/sqrt((1-3x^2)(1+4x+5x^2)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a156;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A156574 a(n) = 34*a(n-1) - a(n-2) - 4232 for n &gt; 2; a(1)=1369, a(2)=42025.

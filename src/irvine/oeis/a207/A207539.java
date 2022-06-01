@@ -1,6 +1,6 @@
 package irvine.oeis.a207;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A207539 Dodecanacci numbers (12th-order Fibonacci sequence): a(n) = a(n-1) +...+ a(n-12) with a(0)=...=a(11)=1.

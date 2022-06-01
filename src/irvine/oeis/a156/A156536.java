@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 // Recurrence: a[n+0]=-a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A156536 Period length 12: repeat 7,5,-1,1,-5,-7,-7,-5,1,-1,5,7.

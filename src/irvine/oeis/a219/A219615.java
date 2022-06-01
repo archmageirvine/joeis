@@ -1,6 +1,6 @@
 package irvine.oeis.a219;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A219615 a(n) = Sum_{k=0..12} binomial(n,k).

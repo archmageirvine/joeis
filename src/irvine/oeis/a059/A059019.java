@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: 2/(2-3*x+x*(1-4*x)^(1/2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059019 Number of Dyck paths of semilength n with no peak at height 3.

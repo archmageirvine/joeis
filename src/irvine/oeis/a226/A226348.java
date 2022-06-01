@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226348 Number of ways to tile a fixed 3 x n square grid with 1 x 1, 2 x 2, and axially-oriented 1 x 2 tiles.

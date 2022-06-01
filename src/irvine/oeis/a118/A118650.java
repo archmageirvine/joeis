@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 // Recurrence: (n+4)*a[n+4]-3*(3*n+10)*a[n+3]+4*(5*n+12)*a[n+2]-2*(8*n+11)*a[n+1]+2*(2*n+1)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A118650 Center column a(2n,n) of A106597.

@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 // Recurrence: (-12*n^2-54*n-54)*a[n+1]+(n^2+6*n+8)*a[n+2]=0*n=01
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A275607 a(n) = 2*12^n*Gamma(n+1/2)*(n+1)/(sqrt(Pi)*Gamma(n+3)).

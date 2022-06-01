@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192812 Constant term in the reduction of the polynomial x^(2*n) + x^n + 1 by x^3 -&gt; x + 1.  See Comments.

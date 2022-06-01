@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A014026 Inverse of 17th cyclotomic polynomial.

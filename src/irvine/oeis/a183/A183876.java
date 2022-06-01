@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 // Recurrence: 8*n*(n+1)*(2*n+1)*(5221*n^4-34247*n^3+79127*n^2-74851*n+23310)*a[n+0]=12*n*(26105*n^6-171235*n^5+398694*n^4-384054*n^3+116038*n^2+18484*n-9792)*a[n-1]+6*(31326*n^7-252471*n^6+759709*n^5-1008483*n^4+452035*n^3+190224*n^2-218420*n+50400)*a[n-2]+(n-2)*(1164283*n^6-8801364*n^5+23941663*n^4-27089928*n^3+8937814*n^2+3724572*n-2026080)*a[n-3]-10*(n-3)*(n-2)*(2*n-7)*(5221*n^4-13363*n^3+7712*n^2+1546*n-1440)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A183876 G.f. satisfies: A(x) = Sum_{n&gt;=0} x^n*[Sum_{k=0..n} C(n,k)^2 *x^k* A(x)^(2k)].

@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273622 a(n) = (1/3)*(Lucas(3*n) - Lucas(n)).

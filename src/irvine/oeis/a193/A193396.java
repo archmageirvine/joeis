@@ -1,6 +1,6 @@
 package irvine.oeis.a193;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A193396 Hyper-Wiener index of a benzenoid consisting of a double-step zig-zag chain of n hexagons (n &gt;= 2, s = 2123; see the Gutman et al. reference).

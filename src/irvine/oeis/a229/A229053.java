@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 // Recurrence: (n+10)*(n+18)*(n+24)*(n+28)*(n+30)*a[n+0]=(6*n^5+535*n^4+17752*n^3+265085*n^2+1658520*n+2755377)*a[n-1]+(n-1)*(125*n^4+7472*n^3+149299*n^2+1090536*n+1857231)*a[n-2]-2*(n-2)*(n-1)*(270*n^3+11843*n^2+154023*n+546120)*a[n-3]-(n-3)*(n-2)*(n-1)*(3319*n^2+74458*n+331317)*a[n-4]+3*(n-4)*(n-3)*(n-2)*(n-1)*(2578*n+28701)*a[n-5]+10395*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A229053 Number of standard Young tableaux of n cells and height &lt;= 11.

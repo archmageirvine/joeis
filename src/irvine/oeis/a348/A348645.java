@@ -3,7 +3,7 @@ package irvine.oeis.a348;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A348645 a(n) = (12*n + 1)*(5184*n^2 + 540*n + 13).

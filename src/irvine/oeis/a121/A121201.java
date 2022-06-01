@@ -1,6 +1,6 @@
 package irvine.oeis.a121;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A121201 7^n+5^n-2n.

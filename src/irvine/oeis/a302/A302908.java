@@ -3,7 +3,7 @@ package irvine.oeis.a302;
 // egf: (6*exp(-x))/(6+x*(3+x)*(6+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A302908 Expansion of e.g.f. 6*exp(-x)/(6 + x*(3 + x)*(6 + x)).

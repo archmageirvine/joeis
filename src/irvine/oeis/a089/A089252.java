@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 // Recurrence: a[n+0]+2*(-5*n+7)*a[n-1]+8*(2*n-3)*(n-2)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A089252 a(n) = ((2*n-1)!!/sqrt(3))*(integral_{x=0..sqrt(3/4)} 1/(1-x^2)^(n+1/2) dx).

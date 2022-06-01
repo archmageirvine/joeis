@@ -1,6 +1,6 @@
 package irvine.oeis.a086;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A086940 a(n) = k where R(k+4) = 2.

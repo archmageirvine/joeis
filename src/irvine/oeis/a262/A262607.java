@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 // Recurrence: -(n+1)*(2*n^2+5*n-6)*a[n+0]+6*(2*n^3+6*n^2-11*n+4)*a[n-1]-(n-2)*(2*n^2+9*n+1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A262607 Sum_{k=0..n} ((k+1)*binomial(n+1,k)*binomial(2*n-k,n))/(n+1).

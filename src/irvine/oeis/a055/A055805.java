@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // ogf: x^5*(1-5*x^2+x^3+11*x^4-3*x^5-12*x^6+5*x^7+7*x^8-3*x^9-2*x^10+x^11)/((1-x)^6*(1+x)^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A055805 a(n) = T(n,n-5), array T as in A055801.

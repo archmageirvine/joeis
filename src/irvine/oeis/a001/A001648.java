@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A001648 Tetranacci numbers A073817 without the leading term 4.

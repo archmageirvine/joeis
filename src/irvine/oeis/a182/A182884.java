@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 // Recurrence: (n+3)*a[n+0]-n*a[n+1]+(-18-4*n)*a[n+2]+(6-n)*a[n+3]+(14+3*n)*a[n+5]+(-5-n)*a[n+6]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A182884 Number of (1,0)-steps of weight 1 in all weighted lattice paths in L_n.

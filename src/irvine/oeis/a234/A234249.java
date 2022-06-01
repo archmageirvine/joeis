@@ -1,6 +1,6 @@
 package irvine.oeis.a234;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A234249 Number of ways to choose 4 points in an n X n X n triangular grid.

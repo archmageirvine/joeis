@@ -1,6 +1,6 @@
 package irvine.oeis.a104;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A104144 a(n) = Sum_{k=1..9} a(n-k); a(8) = 1, a(n) = 0 for n &lt; 8.

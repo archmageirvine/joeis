@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A204557 Right edge of the triangle A045975.

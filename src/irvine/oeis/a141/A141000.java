@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 // ogf: -x^2*(x^7+2*x^6+2*x^4-x^3-4*x^2-3*x-1)/((x-1)^2*(x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A141000 Numbers k for which there is a solution to the Jumping Grasshopper game.

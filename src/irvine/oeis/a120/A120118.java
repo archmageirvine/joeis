@@ -1,6 +1,6 @@
 package irvine.oeis.a120;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A120118 a(n) is the number of binary strings of length n such that no subsequence of length 5 or less contains 3 or more ones.

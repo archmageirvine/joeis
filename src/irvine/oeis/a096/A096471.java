@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 // egf: -1/2*((1+x)/(1-x))^(1/2)*log(1-x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A096471 Number of degree-n permutations with exactly one even cycle.

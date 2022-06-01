@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 // DO NOT EDIT here!
 
 import irvine.oeis.transform.EulerTransform;
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 
 /**

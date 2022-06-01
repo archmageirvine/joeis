@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 // Recurrence: n^2*a[n+0]+2*(-3*n^2+3*n-1)*a[n-1]-4*(n-1)^2*a[n-2]+24*(n-1)*(n-2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A202814 Moments of the quadratic coefficient of the characteristic polynomial of a random matrix in U(1) X U(1) (embedded in USp(4)).

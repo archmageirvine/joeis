@@ -1,6 +1,6 @@
 package irvine.oeis.a061;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A061925 a(n) = ceiling(n^2/2) + 1.

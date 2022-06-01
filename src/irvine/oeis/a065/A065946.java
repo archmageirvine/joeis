@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 // egf: 1/16*(1+4*x)^(-5/2)*((24*x^2+20*x+2)*sqrt(1+4*x)+(16*x^3-12*x^2-24*x-2))*exp((sqrt(1+4*x)-1)/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A065946 Bessel polynomial {y_n}''(-2).

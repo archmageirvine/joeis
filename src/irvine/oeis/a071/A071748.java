@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 // Recurrence: (-6+4*n)*a[n+0]+(-6-13*n)*a[n+1]+(16+7*n)*a[n+2]+(-22-5*n)*a[n+3]+(32+5*n)*a[n+4]+(-8-n)*a[n+5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A071748 Expansion of (1+x^4*C^2)*C^3, where C = (1-(1-4*x)^(1/2))/(2*x) is g.f. for Catalan numbers, A000108.

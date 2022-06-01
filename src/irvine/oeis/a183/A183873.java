@@ -1,6 +1,6 @@
 package irvine.oeis.a183;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A183873 n-1+ceiling((1/5)n^2); complement of A183872.

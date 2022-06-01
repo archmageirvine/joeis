@@ -1,6 +1,6 @@
 package irvine.oeis.a073;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A073999 Number of strings of length n over GF(4) with trace 1 and subtrace x where x = RootOf(z^2+z+1).

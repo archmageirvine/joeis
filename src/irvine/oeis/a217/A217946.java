@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 // ogf: (3-x)/(2*x^3)-(3-19*x+24*x^2-16*x^3)/(2*(1-4*x)^(3/2)*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A217946 4^n*(n+1)*(8*n^2+32*n+33)*P(3/2,n)/(3*P(4,n)) where P(a,n) is the Pochhammer rising factorial.

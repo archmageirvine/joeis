@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 // Recurrence: n*(n-1)*(2*n-1)*(2*n-3)*a[n+0]=20*(5*n-1)*(5*n-3)*(5*n-7)*(5*n-9)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A091496 a(n) = ((5n)!/(n!(2n)!))(gamma(1+n/2)/gamma(1+5n/2)).

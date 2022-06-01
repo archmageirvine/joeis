@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 // ogf: -(2*x^5+x^2+x+1)/(3*x^3-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A091916 Maximum of odd products of partitions of n.

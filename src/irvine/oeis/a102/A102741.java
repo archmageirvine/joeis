@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // ogf: -81*x/(x-1)^5
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A102741 a(n) = 3^4 * binomial(n+3, 4).

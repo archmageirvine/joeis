@@ -1,6 +1,6 @@
 package irvine.oeis.a221;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A221882 Number of order-preserving or order-reversing full contraction mappings of an n-chain.

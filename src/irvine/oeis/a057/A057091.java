@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057091 Scaled Chebyshev U-polynomials evaluated at i*sqrt(2). Generalized Fibonacci sequence.

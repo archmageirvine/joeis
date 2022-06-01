@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 // ogf: (2-9*x+x^2+(x+x^2)*sqrt(1-4*x))/(2-10*x+4*x^2-2*x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A125187 Number of Dumont permutations of the first kind of length 2n avoiding the patterns 1423 and 4132.

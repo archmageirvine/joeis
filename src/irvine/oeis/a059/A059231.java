@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 // ogf: (1+3*x-sqrt(1-10*x+9*x^2))/(8*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A059231 Number of different lattice paths running from (0,0) to (n,0) using steps from S = {(k,k) or (k,-k): k positive integer} that never go below the x-axis.

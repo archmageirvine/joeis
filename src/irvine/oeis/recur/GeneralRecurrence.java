@@ -1,9 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.recur;
 
 import java.util.ArrayList;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
 
 /**
  * A recurrence equation set for <code>a(n)</code> depending on <code>a(f(n)), f(n) &lt; n</code>.

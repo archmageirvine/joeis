@@ -1,6 +1,6 @@
 package irvine.oeis.a275;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A275195 Sum of n-th powers of the roots of x^3 - 7*x^2 - 49*x - 49.

@@ -1,6 +1,6 @@
 package irvine.oeis.a146;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A146086 Number of n-digit numbers with each digit odd where the digits 1 and 3 occur an even number of times.

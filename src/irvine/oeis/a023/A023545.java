@@ -1,6 +1,6 @@
 package irvine.oeis.a023;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A023545 Convolution of natural numbers &gt;= 2 and natural numbers &gt;= 3.

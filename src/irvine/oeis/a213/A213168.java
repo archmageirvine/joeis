@@ -1,7 +1,7 @@
 package irvine.oeis.a213;
 // manually holom 2021-08-25
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A213168 a(n) = n!/2 - (n-1)! - n + 2.

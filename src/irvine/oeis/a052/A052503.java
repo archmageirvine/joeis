@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 // Recurrence: a[n+0]+(-2*n+1)*a[n-1]-2*(n-1)*(2*n-1)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A052503 Number of permutations sigma of [2n] without fixed points such that sigma^4 = Id.

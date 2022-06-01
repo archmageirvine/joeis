@@ -1,6 +1,6 @@
 package irvine.oeis.a292;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A292278 a(n) = (Fibonacci(3*n-1) + 1)/2 for n &gt;= 1.

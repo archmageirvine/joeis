@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // Recurrence: (n+1)*a[n+0]+2*(-8*n+1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097184 G.f. A(x) satisfies A097182(x*A(x)) = A(x) and so equals the ratio of the g.f.s of any two adjacent diagonals of triangle A097181.

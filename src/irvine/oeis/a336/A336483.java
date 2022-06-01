@@ -1,7 +1,7 @@
 package irvine.oeis.a336;
 // manually
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A336483 Floor(n/10) + (5 times last digit of n).

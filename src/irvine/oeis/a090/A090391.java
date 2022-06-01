@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090391 a(n) = n*(n^4 + 30*n^3 + 395*n^2 + 2910*n + 11064)/120.

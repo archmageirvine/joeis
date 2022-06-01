@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049686 a(n) = Fibonacci(8n)/3.

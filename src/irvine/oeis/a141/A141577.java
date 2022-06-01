@@ -1,6 +1,6 @@
 package irvine.oeis.a141;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A141577 Alternating difference recursion: a(0) = -1; a(1) = 0; a(2) = 1; a(3) = -1; a(n) = a(n-1) - 3*a(n-2) + 3*a(n-3) - a(n-4).

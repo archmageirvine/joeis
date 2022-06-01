@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 // ogf: (1-(1-9*x)^(2/3)-6*x)/(9*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A185047 Expansion of 2F1( (1, 4/3);  (3); 9 x).

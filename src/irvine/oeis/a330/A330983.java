@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=3*a[n-2]-3*a[n-4]+a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330983 Alternatively add and multiply pairs of the nonnegative integers.

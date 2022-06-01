@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173205 a(n) = 98*a(n-1)-a(n-2) for n&gt;2, a(1)=1, a(2)=98.

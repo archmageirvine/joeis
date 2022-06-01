@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076817 Let u(1)=u(2)=1, u(n)=(3^floor(u(n-1)/2)+1)/u(n-2); then a(n)=10*u(n).

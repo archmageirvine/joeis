@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 // ogf: 1/((1-x)*(1-x^2)*(1-x^3)*(1-x^4)*(1-x^5))^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A117487 G.f.: 1/((1-x)*(1-x^2)*(1-x^3)*(1-x^4)*(1-x^5))^2.

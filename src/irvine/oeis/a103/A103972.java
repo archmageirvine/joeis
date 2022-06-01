@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 // ogf: 1-sqrt(1-4*x*(1+5*x))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A103972 Expansion of (1-sqrt(1-4x-20x^2))/(2x).

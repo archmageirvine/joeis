@@ -1,6 +1,6 @@
 package irvine.oeis.a233;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A233289 Number of tilings of a 3 X 3 X n box using 3n bricks of shape 3 X 1 X 1.

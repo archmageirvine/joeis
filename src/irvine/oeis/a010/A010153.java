@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
 import irvine.math.z.Z;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**

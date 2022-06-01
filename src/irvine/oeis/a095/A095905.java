@@ -1,6 +1,6 @@
 package irvine.oeis.a095;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A095905 Sequence generated from Golomb's proof of de Bruijn's theorem on a torus considered as a matrix.

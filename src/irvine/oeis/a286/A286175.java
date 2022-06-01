@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 // egf: -2*log(1-x)-(5*x^3-10*x^2+10*x-7)/(2*(1-x)^2)-7/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A286175 Sum of the n-th entries in all cycles of all permutations of [n+1].

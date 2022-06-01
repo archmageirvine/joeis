@@ -1,6 +1,6 @@
 package irvine.oeis.a164;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A164785 a(n) = 5^n - 4.

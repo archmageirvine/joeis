@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274311 a(n) = 15*binomial(n,6)-6*binomial(n-2,4)+binomial(n-4,4).

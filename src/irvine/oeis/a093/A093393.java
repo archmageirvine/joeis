@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 // ogf: (x^3*(2*x^6+x^4+x^3+1))/((x^2+1)*(x^6+x^3+1)*(x-1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A093393 [n/9] + [n/4] + [(n+1)/9] + [(n+1)/4] + [(n+2)/9].

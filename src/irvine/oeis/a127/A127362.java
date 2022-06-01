@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 // ogf: 1/(-1+2*x+2*sqrt(1-4*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A127362 a(n)=sum(k=0..n, C(n,floor(k/2))*(-3)^(n-k)}.

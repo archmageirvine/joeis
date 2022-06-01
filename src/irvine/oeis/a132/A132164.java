@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // egf: exp((1-(1-x)^6)/(6*(1-x)^6))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132164 Row sums of triangle A134141 (S1p(7)).

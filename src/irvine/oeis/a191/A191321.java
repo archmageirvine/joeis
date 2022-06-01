@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // Recurrence: 4*(n-1)*n*(n+1)*(99*n^3-1131*n^2+4170*n-4928)*a[n+0]=4*(n-1)*n*(99*n^4-1032*n^3+2913*n^2-152*n-5348)*a[n-1]+4*(n-1)*(99*n^5-1032*n^4+3543*n^3-4190*n^2+1600*n-3360)*a[n-2]-24*(11*n^2-67*n+96)*(21*n^2-101*n+70)*a[n-3]+3*(891*n^6-15525*n^5+106425*n^4-359079*n^3+600268*n^2-416180*n+44800)*a[n-4]-3*(891*n^6-15525*n^5+103905*n^4-329655*n^3+480420*n^2-222756*n-49280)*a[n-5]-3*n*(3*n-14)*(3*n-13)*(99*n^3-834*n^2+2205*n-1790)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191321 Number of dispersed Dyck paths of length n (i.e., Motzkin paths of length n with no (1,0) steps at positive heights) having only ascents of even length (an ascent is a maximal sequence of consecutive (1,1)-steps).

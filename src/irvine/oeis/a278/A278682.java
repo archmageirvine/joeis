@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278682 Number of non-equivalent ways to place 3 non-attacking ferses on an n X n board.

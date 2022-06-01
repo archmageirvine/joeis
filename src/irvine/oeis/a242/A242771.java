@@ -1,6 +1,6 @@
 package irvine.oeis.a242;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A242771 Number of integer points in a certain quadrilateral scaled by a factor of n (another version).

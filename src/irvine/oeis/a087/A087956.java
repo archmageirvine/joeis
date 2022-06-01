@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // Recurrence: a[n+0]=a[n-1]+3*a[n-2]-a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087956 a(n) is the square of the n-th partial sum minus the n-th partial sum of the squares, divided by a(n-1), for all n&gt;=1, starting with a(0)=1, a(1)=3.

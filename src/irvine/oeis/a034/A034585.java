@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A034585 Dimension of an irreducible Z_2 graded H-module for Clifford algebra Cl_n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a058;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A058187 Expansion of (1+x)/(1-x^2)^4: duplicated tetrahedral numbers.

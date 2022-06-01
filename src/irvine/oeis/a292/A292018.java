@@ -1,6 +1,6 @@
 package irvine.oeis.a292;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A292018 Wiener index for the n-Andrasfai graph.

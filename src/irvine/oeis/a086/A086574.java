@@ -1,6 +1,6 @@
 package irvine.oeis.a086;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A086574 a(n) = 3*(10^n-1).

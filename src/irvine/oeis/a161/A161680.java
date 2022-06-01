@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A161680 a(n) = binomial(n,2): number of size-2 subsets of {0,1,...,n} that contain no consecutive integers.

@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 // Recurrence: a[n+0]=3*a[n-1]-3*a[n-2]+a[n-3]+a[n-5]-3*a[n-6]+3*a[n-7]-a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A122047 Degree of the polynomial P(n,x), defined by a Somos-6 type sequence: P(n,x)=(x^(n-1)*P(n-1,x)*P(n-5,x) + P(n-2,x)*P(n-4,x))/P(n-6,x), initialized with P(n,x)=1 at n&lt;0.

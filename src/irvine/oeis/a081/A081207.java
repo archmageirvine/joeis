@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // ogf: (1+x)/sqrt(1-2*x-x^2-2*x^3+x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081207 Main diagonal of number square A081206.

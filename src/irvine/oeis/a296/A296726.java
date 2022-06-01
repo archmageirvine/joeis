@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 // egf: arcsin(x)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A296726 Expansion of e.g.f. arcsin(x)/(1 - x).

@@ -1,6 +1,6 @@
 package irvine.oeis.a171;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A171681 a(n) = F(2n+1)^3 - F(3n)^2 - F(6n-2), where the F(i) are Fibonacci numbers.

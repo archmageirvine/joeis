@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A160450 Expansion of (1-34*x+276*x^2-584*x^3)/((1-3*x)*(1-4*x)*(1-8*x)*(1-24*x)).

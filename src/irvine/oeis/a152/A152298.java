@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152298 a(n) = (3^n-1)/2 if n odd, (3^n-1)/8 if n even.

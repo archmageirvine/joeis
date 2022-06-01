@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // Recurrence: a[n+0]=2*a[n-1]+3*a[n-2]-4*a[n-3]-4*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102713 Total sum of odd parts in all compositions of n.

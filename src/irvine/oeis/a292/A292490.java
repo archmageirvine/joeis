@@ -1,6 +1,6 @@
 package irvine.oeis.a292;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A292490 p-INVERT of the odd positive integers, where p(S) = 1 - S - 7 S^2.

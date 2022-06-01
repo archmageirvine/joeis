@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: a[n+0]=17*a[n-1]-a[n-2]+2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098304 Member r=19 of the family of Chebyshev sequences S_r(n) defined in A092184.

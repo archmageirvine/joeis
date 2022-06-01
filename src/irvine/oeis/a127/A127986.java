@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 // egf: 1/(1-x)+exp(2*x)-exp(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A127986 a(n) = n! + 2^n - 1.

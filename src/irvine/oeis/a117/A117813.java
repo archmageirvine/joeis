@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 // Recurrence: 36864*(n+1)*(n+2)*(n+3)*a[n+0]-3072*(n+2)*(n+3)*(97*n+142)*a[n+1]-64*(n+3)*(4031*n^2+17601*n+19504)*a[n+2]-(26944*n^3+215856*n^2+498848*n+243840)*a[n+3]+(15912*n^3+173328*n^2+687072*n+997512)*a[n+4]+(1868*n^3+28044*n^2+143368*n+249960)*a[n+5]-2*(n+6)*(115*n^2+1080*n+2273)*a[n+6]-3*(n+7)*(3*n+19)*(3*n+20)*a[n+7]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A117813 Consider 1-D random walk with jumps up to the third neighbor, i.e., set of possible jumps is {-3,-2,-1,+1,+2,+3}. Sequence gives number of paths of length n ending at origin.

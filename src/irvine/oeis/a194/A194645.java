@@ -1,6 +1,6 @@
 package irvine.oeis.a194;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A194645 Number of ways to place 3n nonattacking kings on a 6 X 2n cylindrical chessboard.

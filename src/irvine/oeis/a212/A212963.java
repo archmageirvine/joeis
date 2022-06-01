@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212963 a(n) = number of ordered triples (w,x,y) such that w,x,y are all in {0,...,n} and the numbers |w-x|, |x-y|, |y-w| are distinct.

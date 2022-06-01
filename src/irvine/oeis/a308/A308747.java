@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // ogf: x*(1+x-2*x^2+x^3+x^4)/((1-x)^2*(1-x-x^2)*(1+x-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A308747 Number of achiral m-color cyclic compositions of n (that is, number of cyclic compositions of n with reflection symmetry where each part of size m can be colored with one of m colors).

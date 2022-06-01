@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195035 Multiples of 15 and of 8 interleaved: a(2n-1) = 15n, a(2n) = 8n.

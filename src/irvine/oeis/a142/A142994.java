@@ -1,6 +1,6 @@
 package irvine.oeis.a142;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A142994 Crystal ball sequence for the lattice C_5.

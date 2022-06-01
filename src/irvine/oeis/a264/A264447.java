@@ -1,6 +1,6 @@
 package irvine.oeis.a264;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A264447 a(n) = n*(n + 7)*(n + 14)*(n + 21)/24.

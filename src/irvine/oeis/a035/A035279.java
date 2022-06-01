@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 // Recurrence: a[n]-(10*n-0)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A035279 One tenth of deca-factorial numbers.

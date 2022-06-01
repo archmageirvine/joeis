@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A088439 a(3n) = 3n, otherwise a(n) = 1.

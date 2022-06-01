@@ -1,6 +1,6 @@
 package irvine.oeis.a110;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A110935 a(n) = if n mod 2 = 0 then 8*F(n)-n otherwise 8*F(n)-4, where F() = Fibonacci numbers A000045.

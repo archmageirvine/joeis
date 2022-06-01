@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // ogf: x*(1+x)*(1+2*x+x^3)/((1-x)^2*(1+x+x^2)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A332057 Partial sums (and absolute value of first differences) of A332056: if odd (resp. even) add (resp. subtract) the partial sum to get the next term.

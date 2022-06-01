@@ -1,6 +1,6 @@
 package irvine.oeis.a079;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A079903 a(n) = (9n^4 - 18n^3 + 18n^2 - 9n + 2)/2.

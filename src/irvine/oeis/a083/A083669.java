@@ -1,6 +1,6 @@
 package irvine.oeis.a083;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A083669 Number of ordered quintuples (a,b,c,d,e), -n &lt;= a,b,c,d,e &lt;= n, such that a+b+c+d+e = 0.

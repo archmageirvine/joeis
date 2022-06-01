@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // Recurrence: n*(2*n+1)*(40*n^5-100*n^4-758*n^3+3649*n^2-5474*n+2727)*a[n+0]=(880*n^7-2200*n^6-15316*n^5+79354*n^4-145332*n^3+125379*n^2-48111*n+5220)*a[n-1]+(n-3)*(2*n-5)*(40*n^5+100*n^4-758*n^3+1175*n^2-650*n+84)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108444 Number of triple descents (i.e., ddd's) in all paths from (0,0) to (3n,0) that stay in the first quadrant (but may touch the horizontal axis), consisting of steps u=(2,1),U=(1,2), or d=(1,-1).

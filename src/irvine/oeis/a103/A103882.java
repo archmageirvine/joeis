@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 // Recurrence: n^2*(n-1)*(5*n-8)*a[n+0]=(n-1)*(55*n^3-143*n^2+102*n-24)*a[n-1]+n*(n-2)^2*(5*n-3)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A103882 a(n) = Sum_{i=0..n} C(n+1,i)*C(n-1,i-1)*C(2n-i,n).

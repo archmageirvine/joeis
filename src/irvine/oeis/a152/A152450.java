@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152450 a(0)=a(1)=1, a(2)=4, a(3)=7, a(n+4) = 10*a(n+2) - a(n).

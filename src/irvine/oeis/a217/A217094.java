@@ -1,6 +1,6 @@
 package irvine.oeis.a217;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A217094 Least index k such that A011540(k) &gt;= 10^n.

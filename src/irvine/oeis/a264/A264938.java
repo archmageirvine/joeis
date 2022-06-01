@@ -1,6 +1,6 @@
 package irvine.oeis.a264;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A264938 a(n) = n*(2*n-1) + floor(n/3).

@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // ogf: (2x^2-20x+2)/((1-x)(1-34x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A088920 Solutions k to the Diophantine equation k = 2n^2 = m^2+1.

@@ -1,6 +1,6 @@
 package irvine.oeis.a182;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A182890 Number of (1,0)-steps of weight 1 at level 0 in all weighted lattice paths in L_n.

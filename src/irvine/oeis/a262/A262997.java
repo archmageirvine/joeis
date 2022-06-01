@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A262997 a(n+3) = a(n) + 24*n + 40, a(0)=0, a(1)=5, a(2)=19.

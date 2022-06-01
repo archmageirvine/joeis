@@ -1,6 +1,6 @@
 package irvine.oeis.a201;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A201200 Total number of round trips of length n on the closed Laguerre graph Lc_4 divided by 4.

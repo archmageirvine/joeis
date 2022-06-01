@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 // Recurrence: (n+3)^2*(4*n+5)*a[n+3]+(20*n^3+125*n^2+254*n+165)*a[n+2]+(76*n^3+399*n^2+678*n+375)*a[n+1]-25*(n+1)^2*(4*n+9)*a[n+0]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A244973 a(n) = Sum_{k=0..n} C(n,k)^2*C(2k,k)(-1)^k, where C(n,k) denotes the binomial coefficient n!/(k!(n-k)!).

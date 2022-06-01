@@ -1,6 +1,6 @@
 package irvine.oeis.a240;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A240351 Inverse of 64th cyclotomic polynomial.

@@ -3,7 +3,7 @@ package irvine.oeis.a327;
 // Recurrence: 2*a[n+0]=(9*(n-1)^3+36*(n-1)^2+47*n-27)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A327412 a(n) = multinomial(3*n+2; 2, 3, 3, ..., 3) (n times '3').

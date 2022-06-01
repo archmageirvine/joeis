@@ -1,6 +1,6 @@
 package irvine.oeis.a263;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A263226 a(n) = 15*n^2 - 13*n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a255;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A255876 a(n) = (4*n^2 + 4*n - 3 - 3*(-1)^n)/2.

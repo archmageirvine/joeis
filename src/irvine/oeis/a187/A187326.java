@@ -1,6 +1,6 @@
 package irvine.oeis.a187;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A187326 Floor(n/4)+floor(n/2)+floor(3n/4).

@@ -1,6 +1,6 @@
 package irvine.oeis.a241;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A241200 For the n in A241199, the index of the first of 4 terms in binomial(n,k) that satisfy a quadratic relation.

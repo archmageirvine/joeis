@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099919 a(n) = F(3) + F(6) + F(9) + ... + F(3n), F(n) = Fibonacci numbers A000045.

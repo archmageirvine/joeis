@@ -1,7 +1,7 @@
 package irvine.oeis.a088;
 // manually 2021-05-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088386 a(n) = 2^n*(n!)^3.

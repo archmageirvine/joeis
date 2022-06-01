@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A204090 The number of 1 X n Haunted Mirror Maze puzzles with a unique solution where mirror orientation is fixed.

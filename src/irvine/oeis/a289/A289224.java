@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289224 Number of ways to select 3 disjoint point triples from an n X n X n triangular point grid, each point triple forming a 2 X 2 X 2 triangle.

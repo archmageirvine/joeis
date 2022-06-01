@@ -1,6 +1,6 @@
 package irvine.oeis.a013;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A013977 Molien series of 4-dimensional representation of u.g.g.r. #9.

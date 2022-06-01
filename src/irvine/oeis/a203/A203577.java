@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 // Recurrence: n*(n+1)^2*(n+2)^2*(3*n^6-39*n^5+166*n^4-322*n^3+316*n^2-153*n+27)*a[n+0]=12*(n-1)*n*(n+1)^2*(3*n^7-34*n^6+113*n^5-121*n^4-19*n^3+68*n^2+17*n-18)*a[n-1]+32*(3*n^11-45*n^10+220*n^9-448*n^8+173*n^7+920*n^6-1696*n^5+842*n^4+580*n^3-846*n^2+360*n-54)*a[n-2]-768*(n-2)^3*n*(3*n^7-34*n^6+113*n^5-121*n^4-19*n^3+68*n^2+17*n-18)*a[n-3]+2048*(n-3)^3*(n-2)^2*(3*n^6-21*n^5+16*n^4+12*n^3+n^2-2)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A203577 Exponential (or binomial) half-convolution of the sequence A000108 (Catalan) with itself.

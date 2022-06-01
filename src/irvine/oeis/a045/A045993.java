@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A045993 Expansion of (1-x)/(1 - 10*x + 18*x^2 - 8*x^3).

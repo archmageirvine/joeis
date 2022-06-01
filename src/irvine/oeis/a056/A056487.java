@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056487 a(n) = 5^(n/2) for n even, a(n) = 3*5^((n-1)/2) for n odd.

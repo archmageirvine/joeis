@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // ogf: (1+x+6x^2+16x^3+46x^4)/(1-x)^5
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A143132 Binomial transform of [1, 5, 15, 35, 70, 0, 0, 0, ...].

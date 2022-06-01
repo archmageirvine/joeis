@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289781 p-INVERT of the positive Fibonacci numbers (A000045), where p(S) = 1 - S - S^2.

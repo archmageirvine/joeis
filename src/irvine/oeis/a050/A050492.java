@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A050492 Thickened cube numbers: a(n) = n*(n^2 + (n-1)^2) + (n-1)*2*n*(n-1).

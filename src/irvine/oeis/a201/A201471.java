@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 // ogf: x^3*(3-2*x+x^2-x^3+x^4+2*x^6-2*x^7)/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A201471 Maximal diameter of a connected n-gamma_t-vertex-critical graph.

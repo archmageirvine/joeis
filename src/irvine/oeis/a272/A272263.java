@@ -1,6 +1,6 @@
 package irvine.oeis.a272;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A272263 a(n) = numerator of A000032(n) - 1/2^n.

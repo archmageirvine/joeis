@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 // Recurrence: 4*n*(n-1)*a[n+0]+18*(-n+1)*a[n-1]-9*(3*n-4)*(3*n-5)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A276368 G.f. A(x) satisfies: A(x - 3*x^3) = 1/(1 - 3*x).

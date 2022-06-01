@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 // egf: (x*exp(x))/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A093964 a(n) = Sum_{k=1..n} k*k!*C(n,k).

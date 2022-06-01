@@ -1,6 +1,6 @@
 package irvine.oeis.a227;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A227708 The Wiener index of the dendrimer D_n defined pictorially in Fig. 1 of the Heydari et al. reference.

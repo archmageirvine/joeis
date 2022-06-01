@@ -1,6 +1,6 @@
 package irvine.oeis.a237;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A237654 G.f.: exp( Sum_{n&gt;=1} 5*Fibonacci(n-1)*Fibonacci(n+1) * x^n/n ).

@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A204555 The number of subsets of the numbers {1,2,3...,n} consisting of at most 3 elements and at most two of those are even.

@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271663 Convolution of nonzero squares (A000290) with nonzero pentagonal numbers (A000326).

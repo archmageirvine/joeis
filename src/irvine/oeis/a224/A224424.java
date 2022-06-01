@@ -1,6 +1,6 @@
 package irvine.oeis.a224;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A224424 The hyper-Wiener index of the Micelle-like chiral dendrimer G[n] defined pictorially in the Hassan Yousefi-Azari et al. reference.

@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100531 a(n) = a(n-1) + (2*n - 1) mod 8 + 1 with a(0)=1.

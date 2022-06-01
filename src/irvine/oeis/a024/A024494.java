@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A024494 a(n) = C(n,1) + C(n,4) + ... + C(n, 3*floor(n/3) + 1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a222;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A222964 Numbers n such that 25n+36 is a square.

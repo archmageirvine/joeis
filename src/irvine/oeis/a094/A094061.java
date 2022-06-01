@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 // Recurrence: (n+1)^2*a[n+1]=n*(5*n+1)*a[n+0]+2*(15*n^2+6*n-5)*a[n-1]-8*(5*n^2-23*n+21)*a[n-2]-64*(n-2)^2*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A094061 Number of n-moves paths of a king starting and ending at the origin of an infinite chessboard.

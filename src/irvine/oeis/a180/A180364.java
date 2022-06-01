@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 // Recurrence: -(n+1)*(2*n^2+10*n+11)*a[n+0]+(2*n+3)*(6*n^2+18*n-7)*a[n+1]-(n+2)*(2*n^2+2*n-1)*a[n+2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A180364 a(n) = sum_{k=0..n} C(n,k)*C(n+k,k)*(2*k+1)^2, where C(m,k) denotes the binomial coefficient m!/(k!*(m-k)!).

@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 // Recurrence: n^2*a[n+0]=3*(3*n-2)^2*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A276018 n^2 * a(n) = 3*(3*n-2)^2 * a(n-1), with a(0) = 1.

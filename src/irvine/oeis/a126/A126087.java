@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // Recurrence: (n+1)*a[n+0]-3*(n+1)*a[n-1]+8*(2-n)*a[n-2]+24*(n-2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126087 Expansion of c(2x^2)/(1-xc(2x^2)), where c(x) = (1-sqrt(1-4x))/(2x) is the g.f. of the Catalan numbers (A000108).

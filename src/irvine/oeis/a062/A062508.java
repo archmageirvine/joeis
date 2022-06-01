@@ -1,6 +1,6 @@
 package irvine.oeis.a062;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A062508 a(n) = 3^(2n)+7.

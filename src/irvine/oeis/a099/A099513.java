@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099513 Row sums of triangle A099512, so that a(n) = Sum_{k=0..n} coefficient of z^k in (1 + 3*z + z^2)^(n-[k/2]), where [k/2] is the integer floor of k/2.

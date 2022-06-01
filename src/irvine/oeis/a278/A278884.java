@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 // Recurrence: 4*n^2*(2*n-1)*(2*n+1)*a[n+0]-9*(3*n-1)^2*(3*n-2)^2*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A278884 a(n) = binomial(3*n-1,n) * binomial(3*n,n)/(2*n+1).

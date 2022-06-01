@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 // ogf: x^2*(24+200*x+535*x^2+2250*x^4)/(1-10*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A048355 a(n) is the index of the smallest triangular number containing exactly n 0's.

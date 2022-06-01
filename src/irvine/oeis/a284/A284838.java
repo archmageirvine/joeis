@@ -1,6 +1,6 @@
 package irvine.oeis.a284;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A284838 Number of edges in the n-Keller graph.

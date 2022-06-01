@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 // ogf: (5-sqrt((1-9*x)/(1-x)))/4
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A162326 Let a(0) = a(1) = 1, and n*a(n) = 2*(-7+5*n)*a(n-1) + 9*(2-n)*a(n-2) for n &gt;= 2.

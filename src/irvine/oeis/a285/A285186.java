@@ -1,6 +1,6 @@
 package irvine.oeis.a285;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A285186 Expansion of (x+2*x^2) / (1-2*x-2*x^2+2*x^3).

@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // Recurrence: 3*(64*n^3-280*n^2+414*n-245)*a[n+0]=(2048*n^6-12032*n^5+30400*n^4-42608*n^3+32484*n^2-14624*n+1731)*a[n-1]+3*(3840*n^5-20640*n^4+40104*n^3-36340*n^2+23378*n-13429)*a[n-2]-18*(384*n^4-1488*n^3+1556*n^2-986*n+649)*a[n-3]-27*(64*n^3-88*n^2+46*n-47)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190830 Number of permutations of 4 copies of 1..n introduced in order 1..n with no element equal to another within a distance of 1.

@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114243 a(n) = (n+1)(n+2)^2*(n+3)(n+4)(3n+5)/240.

@@ -3,7 +3,7 @@ package irvine.oeis.a325;
 // egf: 1-2*exp(x)+exp((x*(x+4))/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A325482 Number of colored set partitions of [n] where colors of the elements of subsets are distinct and in increasing order and exactly two colors are used.

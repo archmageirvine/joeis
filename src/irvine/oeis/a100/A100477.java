@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100477 a(n) = 3*a(n-1)+2*a(n-2)+a(n-3) if n&gt;=3 else a(n) = n.

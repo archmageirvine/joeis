@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 // ogf: (3-9*x)/(1-5*x+4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A178789 4^(n-1) + 2: Number of acute angles after n iterations of the Koch snowflake construction.

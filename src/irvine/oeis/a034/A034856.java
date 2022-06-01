@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A034856 a(n) = binomial(n+1, 2) + n - 1 = n*(n+3)/2 - 1.

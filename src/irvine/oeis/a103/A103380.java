@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103380 k=12 case of family of sequences beyond Fibonacci and Padovan: a(n) = a(n-12) + a(n-13).

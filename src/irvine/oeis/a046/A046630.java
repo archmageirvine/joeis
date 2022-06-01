@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A046630 Number of cubic residues mod 2^n.

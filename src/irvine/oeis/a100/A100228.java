@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // ogf: (1+3*x+sqrt(1+2*x+13*x^2))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100228 G.f. A(x) satisfies: 4^n - 1 = Sum_{k=0..n} [x^k] A(x)^n and also satisfies: (4+z)^n - (1+z)^n + z^n = Sum_{k=0..n} [x^k](A(x)+z*x)^n for all z, where [x^k] A(x)^n denotes the coefficient of x^k in A(x)^n.

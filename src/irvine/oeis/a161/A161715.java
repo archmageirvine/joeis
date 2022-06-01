@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A161715 a(n) = (50*n^7 - 1197*n^6 + 11333*n^5 - 53655*n^4 + 132125*n^3 - 156828*n^2 + 73212*n + 5040)/5040.

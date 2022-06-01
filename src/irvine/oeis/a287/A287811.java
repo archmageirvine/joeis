@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287811 Number of septenary sequences of length n such that no two consecutive terms have distance 5.

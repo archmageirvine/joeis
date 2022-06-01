@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // Recurrence: 24*a[n+0]=n^4*(n^4+1)*(n^4+2)*(n^4+3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A283026 Number of inequivalent 4 X 4 matrices with entries in {1,2,3,..,n} up to row permutations.

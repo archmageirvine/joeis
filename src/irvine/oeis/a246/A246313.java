@@ -1,6 +1,6 @@
 package irvine.oeis.a246;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A246313 G.f.: (-1+6*x)/(1-3*x-2*x^2).

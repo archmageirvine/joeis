@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // Recurrence: 2*(n+1)*(3+2*n)^2*a[n+0]-(4*n^2+8*n+1)*a[n+1]-(2*(n+4))*a[n+2]+a[n+3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A143165 Expansion of the exponential generating function arcsin(2*x)/(2*(1-2*x)^(3/2)).

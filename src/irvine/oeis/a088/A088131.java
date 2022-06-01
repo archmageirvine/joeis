@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // Recurrence: a[n+0]=4*a[n-1]-a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088131 a(n) equals the square of the n-th partial sum added to twice the n-th partial sum of the squares, divided by a(n-1), for all n&gt;=1, with a(0)=1, a(1)=1.

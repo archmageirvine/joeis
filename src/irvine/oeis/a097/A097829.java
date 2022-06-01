@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // Recurrence: a[n+0]=16*a[n-1]-16*a[n-2]+a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097829 Partial sums of Chebyshev sequence S(n,15)= U(n,15/2)=A078364(n).

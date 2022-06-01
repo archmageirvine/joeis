@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 // ogf: (1+x(4+x(3+x(2+x(5+x(10+x(5+x(8+x(3+x(4+x(1+2x)))))))))))/(-1+x^6)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A261831 a(2*n-1) = 2*n-1; otherwise a(n) is the smallest even number not already present which is obtained from the existing terms by the rules of (3*n+1)-problem.

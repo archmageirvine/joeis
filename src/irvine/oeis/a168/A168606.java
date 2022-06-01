@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168606 The number of ways of partitioning the multiset {1,1,1,2,3,...,n-2} into exactly four nonempty parts.

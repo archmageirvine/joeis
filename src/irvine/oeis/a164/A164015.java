@@ -1,6 +1,6 @@
 package irvine.oeis.a164;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A164015 5 times centered pentagonal numbers: 5*(5*n^2 + 5*n + 2)/2.

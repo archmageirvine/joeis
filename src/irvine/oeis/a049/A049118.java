@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 // egf: exp(-1+1/sqrt(1-2*x))-1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A049118 Row sums of triangle A035342 and array A134144.

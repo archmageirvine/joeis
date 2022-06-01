@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // Recurrence: n*a[n+0]+(-7*n+13)*a[n-1]+4*(-2*n+1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115197 Convolution of generalized Catalan numbers A064062 (called C(n;2)).

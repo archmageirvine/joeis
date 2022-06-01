@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: a[n+0]=89*a[n-1]-728*a[n-2]+640*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328355 Let S be any integer in the range 36 &lt;= S &lt;= 44. Sequence has the property that a(n)*S is the sum of all positive integers whose decimal expansion has &lt;= n digits and uses eight distinct nonzero digits d1,d2,d3,d4,d5,d6,d7,d8 such that d1+d2+d3+d4+d5+d6+d7+d8=S.

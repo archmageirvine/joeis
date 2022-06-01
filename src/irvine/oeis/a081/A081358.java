@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // egf: arctanh(x)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081358 E.g.f.: log((1+x) / (1-x)) / (2*(1-x)).

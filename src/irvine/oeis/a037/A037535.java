@@ -1,6 +1,6 @@
 package irvine.oeis.a037;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A037535 Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 1,1,2.

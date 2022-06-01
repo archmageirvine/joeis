@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251625 Numbers n such that the octagonal number N(n) is the sum of three consecutive octagonal numbers.

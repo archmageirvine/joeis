@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A030179 Quarter-squares squared: A002620^2.

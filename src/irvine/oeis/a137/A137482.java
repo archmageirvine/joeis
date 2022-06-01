@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 // Recurrence: a[n+0]=(n-1)*a[n-1]-a[n-2]+(n-2)*n*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A137482 Number of permutations of n objects such that no two-element subset is preserved.

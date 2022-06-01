@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: (n+1)^2*(n+2)^2*a[n+0]-4*(n+2)^3*a[n+1]+(6*n^2+30*n+37)*a[n+2]-4*(n+3)*a[n+3]+a[n+4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331325 a(n) = n!*[x^n] cosh(x/(1-x))/(1-x).

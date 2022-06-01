@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220493 Fibonacci 15-step numbers, a(n) = a(n-1) + a(n-2) + ... + a(n-15).

@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A007007 Valence of graph of maximal intersecting families of sets.

@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A072683 Numbers k such that the last digit of F(k) is 3 where F(k) is the k-th Fibonacci number.

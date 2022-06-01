@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247907 Expansion of (1 + x) / ((1 - x^4) * (1 - x - x^5)) in powers of x.

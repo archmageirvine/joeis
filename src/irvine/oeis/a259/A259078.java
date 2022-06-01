@@ -1,7 +1,7 @@
 package irvine.oeis.a259;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259078 Heptagonal numbers (A000566) that are other heptagonal numbers divided by 2.

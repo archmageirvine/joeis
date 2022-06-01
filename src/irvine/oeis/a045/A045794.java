@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A045794 Consider all quadruples {a,b,c,d} which reach {k,k,k,k} in n steps under map {a,b,c,d}-&gt;{|a-b|,|b-c|,|c-d|,|d-a|}; look at max{a,b,c,d}; sequence gives minimal value of this.

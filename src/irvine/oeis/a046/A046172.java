@@ -1,6 +1,6 @@
 package irvine.oeis.a046;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A046172 Indices of pentagonal numbers (A000326) that are also squares (A000290).

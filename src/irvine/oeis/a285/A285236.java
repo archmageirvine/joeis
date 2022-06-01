@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 // Recurrence: (n-8)*(n-5)*a[n+0]=(7*n^3-117*n^2+618*n-1036)*a[n-1]-(21*n^4-450*n^3+3521*n^2-11996*n+15092)*a[n-2]+5*(7*n^5-190*n^4+2039*n^3-10842*n^2+28614*n-30016)*a[n-3]-(35*n^6-1185*n^5+16635*n^4-124015*n^3+518011*n^2-1149493*n+1058400)*a[n-4]+(n-6)*(21*n^6-747*n^5+11033*n^4-86597*n^3+380805*n^2-888917*n+859586)*a[n-5]-(7*n^8-352*n^7+7728*n^6-96726*n^5+754656*n^4-3756732*n^3+11646888*n^2-20547489*n+15780868)*a[n-6]+(n-7)^8*(n-4)*a[n-7]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A285236 Number of entries in the eighth cycles of all permutations of [n].

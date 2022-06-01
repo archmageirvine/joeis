@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // egf: (x*(x+2-2*log(1-x)))/(2*(1-x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098107 Sum of all matrix elements M(i,j) = n!*(i/j), (i,j = 1..n).

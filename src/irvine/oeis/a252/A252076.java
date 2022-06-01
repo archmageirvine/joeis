@@ -1,6 +1,6 @@
 package irvine.oeis.a252;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A252076 Numbers n such that the sum of the heptagonal numbers H(n) and H(n+1) is equal to the hexagonal number X(m) for some m.

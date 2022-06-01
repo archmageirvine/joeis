@@ -1,6 +1,6 @@
 package irvine.oeis.a284;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A284703 Number of maximal matchings in the n-prism graph.

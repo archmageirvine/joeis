@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 // Recurrence: (n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*n*(n+1)*a[n+0]=72*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*n*(2*n-1)*a[n-1]-2184*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*(2*n-3)*(2*n-1)*a[n-2]+36288*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-3]-359184*(n-6)*(n-5)*(n-4)*(n-3)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-4]+2153088*(n-6)*(n-5)*(n-4)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-5]-7559936*(n-6)*(n-5)*(2*n-11)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-6]+14026752*(n-6)*(2*n-13)*(2*n-11)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-7]-10321920*(2*n-15)*(2*n-13)*(2*n-11)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A258396 Number of 2n-length strings of balanced parentheses of exactly 8 different types that are introduced in ascending order.

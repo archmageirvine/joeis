@@ -1,6 +1,6 @@
 package irvine.oeis.a211;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A211033 Number of 2 X 2 matrices having all elements in {0,1,...,n} and determinant = 0 (mod 3).

@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 // egf: (sinh(x)*exp(-x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A063083 Number of permutations of n elements with an odd number of fixed points.

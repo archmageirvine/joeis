@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049601 a(n)=Sum{T(2i,n-2i): i=0,1,...,[ n/2 ]}, array T as in A049600.

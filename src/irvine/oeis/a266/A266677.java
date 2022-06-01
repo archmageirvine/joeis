@@ -1,6 +1,6 @@
 package irvine.oeis.a266;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A266677 Alternating sum of hexagonal pyramidal numbers.

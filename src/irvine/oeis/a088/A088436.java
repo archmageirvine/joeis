@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // egf: x^2/(1-x)/2*exp(-x^2/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088436 Number of permutations in the symmetric group S_n that have exactly one transposition in their cycle decomposition.

@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: a[n+0]=22*a[n-1]-141*a[n-2]+220*a[n-3]-100*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328683 Positive integers that are equal to 99...99 (repdigit with n digits 9) times the sum of their digits.

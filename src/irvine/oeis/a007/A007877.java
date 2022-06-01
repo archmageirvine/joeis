@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A007877 Period 4 zigzag sequence: repeat [0,1,2,1].

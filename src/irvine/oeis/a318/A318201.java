@@ -1,7 +1,7 @@
 package irvine.oeis.a318;
 // manually 2021-01-21
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A318201 Expansion of Hypergeometric function F(17/12, 25/12; 4; 1728*x) in powers of x.

@@ -1,6 +1,6 @@
 package irvine.oeis.a281;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A281787 a(n) = sum of all numbers between 1 and 10^n that are divisible by 3 or 5.

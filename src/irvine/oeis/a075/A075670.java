@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 // Recurrence: 2560*a[n+0]=(5*n^19+105*n^17+666*n^15+1530*n^13+689*n^11-995*n^9+304*n^7+640*n^5-384*n^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A075670 Sum of next n 9th powers.

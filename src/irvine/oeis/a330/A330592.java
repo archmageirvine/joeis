@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=6*a[n-2]-12*a[n-4]+8*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330592 a(n) is the number of subsets of {1,2,...,n} that contain exactly two odd numbers.

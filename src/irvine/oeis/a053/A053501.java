@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: exp(x+x^11/11)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053501 Number of degree-n permutations of order dividing 11.

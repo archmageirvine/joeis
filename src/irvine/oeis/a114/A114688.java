@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114688 Expansion of (1 +3*x -x^2)/((1-x^2)*(1-2*x-x^2)); a Pellian-related sequence.

@@ -1,6 +1,6 @@
 package irvine.oeis.a265;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A265282 Number of triangles in a certain geometric structure: see "Illustration of initial terms" link for precise definition.

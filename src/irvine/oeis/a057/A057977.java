@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 // Recurrence: (n+2)*a[n+0]-n*a[n-1]+4*(-2*n+1)*a[n-2]+4*(n-1)*a[n-3]+16*(n-3)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A057977 GCD of consecutive central binomial coefficients: a(n) = gcd(A001405(n+1), A001405(n)).

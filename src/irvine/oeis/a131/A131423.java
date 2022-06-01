@@ -1,6 +1,6 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A131423 a(n) = n*(n+2)*(2*n-1)/3. Also, row sums of triangle A131422.

@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 // Recurrence: n*a[n+0]+2*(5-4*n)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A048779 Coefficients of power series for (1-(1-8x)^(1/4))/2.

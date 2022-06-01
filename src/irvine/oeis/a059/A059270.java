@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059270 a(n) is both the sum of n+1 consecutive integers and the sum of the n immediately higher consecutive integers.

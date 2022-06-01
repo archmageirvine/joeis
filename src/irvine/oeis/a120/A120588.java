@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // ogf: (3-sqrt(1-4*x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A120588 G.f. is 1 + x*c(x), where c(x) is the g.f. of the Catalan numbers (A000108).

@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097178 Expansion of (1+10*x-101*x^2-900*x^3)/((1-100*x^2)*(1-101*x^2)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A018212 Alkane (or paraffin) numbers l(11,n).

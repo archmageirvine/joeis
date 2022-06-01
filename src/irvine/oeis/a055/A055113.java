@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 // Recurrence: 2*n*(2*n-1)*(n-1)*a[n+0]-(n-1)*(19*n^2-60*n+48)*a[n-1]+(-31*n^3+173*n^2-346*n+264)*a[n-2]+4*(2*n-7)*(17*n^2-83*n+102)*a[n-3]+36*(2*n-7)*(2*n-9)*(n-4)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055113 Number of bracketings of 0^0^0^...^0, with n 0's, giving the result 0, with conventions that 0^0 = 1^0 = 1^1 = 1, 0^1 = 0.

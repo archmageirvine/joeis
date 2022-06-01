@@ -1,6 +1,6 @@
 package irvine.oeis.a237;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A237617 a(n) = n*(n + 1)*(17*n - 14)/6.

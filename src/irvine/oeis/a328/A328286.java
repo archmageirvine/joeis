@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // egf: -log(1-x-x^2/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328286 Expansion of e.g.f. -log(1 - x - x^2/2).

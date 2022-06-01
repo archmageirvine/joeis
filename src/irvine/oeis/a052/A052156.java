@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 // ogf: (1-x)^2/(1-3*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A052156 Number of compositions of n into 2*j-1 kinds of j's for all j&gt;=1.

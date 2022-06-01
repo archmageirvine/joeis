@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180147 Eight rooks and one berserker on a 3 X 3 chessboard. G.f.: (1 + 3*x)/(1 - 4*x - 3*x^2 + 6*x^3).

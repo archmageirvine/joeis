@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 // Recurrence: a[n+0]=8*a[n-3]+6*a[n-4]-16*a[n-6]-24*a[n-7]+3*a[n-8]+16*a[n-9]+24*a[n-10]-16*a[n-12]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A240805 Coefficients in expansion of graph zeta function for complete graph K_4.

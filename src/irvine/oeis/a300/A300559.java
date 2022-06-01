@@ -3,7 +3,7 @@ package irvine.oeis.a300;
 // egf: exp(x)-1/(x-1)^3*x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A300559 a(n) = n*(n+1)!/2 + 1.

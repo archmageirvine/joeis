@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 // Recurrence: n*a[n+0]+2*(-68*n+27)*a[n-1]+1800*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A131521 Expansion of 9/(4 + 5*sqrt(1-36*x)).

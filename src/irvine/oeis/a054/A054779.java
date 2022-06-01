@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054779 6n*(6n-1)*(6n-2)*(6n-3)*(6n-4)*(6n-5).

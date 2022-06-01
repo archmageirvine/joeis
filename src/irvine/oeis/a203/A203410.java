@@ -1,6 +1,6 @@
 package irvine.oeis.a203;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A203410 Indices of decagonal numbers that are also heptagonal.

@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 // Recurrence: 362880*a[n+0]=(362880+1308816*n+1939788*n^2+1550548*n^3+740313*n^4+220416*n^5+41202*n^6+4692*n^7+297*n^8+8*n^9)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A056122 a(n) = (8*n+9)*C(n+8,8)/9.

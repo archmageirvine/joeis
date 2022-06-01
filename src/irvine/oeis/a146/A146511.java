@@ -1,6 +1,6 @@
 package irvine.oeis.a146;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A146511 Numbers congruent to {5, 17} modulo 66.

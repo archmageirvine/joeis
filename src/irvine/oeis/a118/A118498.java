@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 // Recurrence: a[n+0]=11*n^20+11*n^2+152821
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A118498 a(n) = 11*n^20 + 11*n^2 + 152821.

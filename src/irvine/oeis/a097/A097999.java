@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // egf: (-3+2*x-3*x^2)/16+((3-x)*sqrt(1-6*x+x^2))/16+log((3-x-sqrt(1-6*x+x^2))/2)/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097999 Number of 2-connected outerplanar graphs on n labeled nodes.

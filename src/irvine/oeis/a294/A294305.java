@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 // ogf: x^3*(1025+58025*x+1038325*x^2+9068301*x^3+49036000*x^4+177845712*x^5+466571800*x^6+905612928*x^7+1343112850*x^8+1525782114*x^9+1343112850*x^10+906468090*x^11+466571800*x^12+178253064*x^13+49036000*x^14+9115128*x^15+1038325*x^16+59037*x^17+1025*x^18+x^19)/((1-x)^12*(1+x)^11)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A294305 Sum of the tenth powers of the parts in the partitions of n into two distinct parts.

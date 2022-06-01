@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 // ogf: x^6*(17728x^19-301964x^18+2573500x^17-13833040x^16+51521058x^15-143708688x^14+325486412x^13-629393865x^12+996601251x^11-1090603627x^10+426710617x^9+807953488x^8-1328885640x^7+262625618x^6+1106513030x^5-875387697x^4-386005021x^3-30462955x^2-338119x-486)/(x-1)^17
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A179428 Number of ways to place 8 nonattacking kings on an n X n toroidal board.

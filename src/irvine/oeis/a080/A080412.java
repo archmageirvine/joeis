@@ -1,6 +1,6 @@
 package irvine.oeis.a080;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A080412 Exchange rightmost two binary digits of n &gt; 1; a(0)=0, a(1)=2.

@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // Recurrence: n^2*a[n+0]=(2*n+1)*(n^2+n+1)*a[n-1]+(n+1)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144513 a(n) = Sum_{k=0..n} (n+k+2)!/((n-k)!*k!*2^k).

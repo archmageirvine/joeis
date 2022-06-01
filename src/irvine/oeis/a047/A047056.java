@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 // Recurrence: a[n+0]+(-5*n+2)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A047056 Quintuple factorial numbers: Product_{k=0..n-1} (5*k+3).

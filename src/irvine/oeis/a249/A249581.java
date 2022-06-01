@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249581 List of quadruples (r,s,t,u): the matrix M = [[9,24,16][3,10,8][1,4,4]] is raised to successive powers, then (r,s,t,u) are the square roots of M[3,1], M[3,3], M[1,1], M[1,3] respectively.

@@ -1,7 +1,7 @@
 package irvine.oeis.a140;
 // manually deris/essent at 2022-04-28 12:39
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A140662 Number of possible column states for self-avoiding polygons in a slit of width n.

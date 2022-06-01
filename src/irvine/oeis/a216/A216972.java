@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216972 a(4n+2) = 2, otherwise a(n) = n.

@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // egf: 2/(1-2*x)^2-1/((1-2*x)*sqrt(1-2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129890 a(n) = (2*n+2)!! - (2*n+1)!!.

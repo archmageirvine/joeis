@@ -1,6 +1,6 @@
 package irvine.oeis.a234;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A234902 a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3) after n rotations.

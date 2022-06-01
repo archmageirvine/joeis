@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213396 Number of (w,x,y) with all terms in {0,...,n} and 2*w &lt; |x+y-w|.

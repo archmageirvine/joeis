@@ -1,6 +1,6 @@
 package irvine.oeis.a004;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A004191 Expansion of 1/(1 - 12*x + x^2).

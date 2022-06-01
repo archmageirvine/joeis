@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 // egf: (1/(1-x)+(1+x)*exp(-2*x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A186639 a(n) = n!/2-(-2)^(n-2)*(n-2).

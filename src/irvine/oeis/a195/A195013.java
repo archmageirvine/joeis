@@ -1,6 +1,6 @@
 package irvine.oeis.a195;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A195013 Multiples of 2 and of 3 interleaved: a(2n-1) = 2n, a(2n) = 3n.

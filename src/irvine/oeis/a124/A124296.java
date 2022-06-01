@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124296 a(n) = 5*F(n)^2 - 5*F(n) + 1, where F(n) = Fibonacci(n).

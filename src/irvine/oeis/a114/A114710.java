@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 // ogf: 2/(1+3*x+sqrt(1-6*x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A114710 Number of hill-free Schroeder paths of length 2n that have no horizontal steps on the x-axis.

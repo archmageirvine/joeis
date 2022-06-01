@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // Recurrence: a[n+0]+(-n-4)*a[n-1]+3*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081924 E.g.f.: exp(3*x)/(1-x)^2.

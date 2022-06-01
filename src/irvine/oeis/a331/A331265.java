@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=6*a[n-5]-a[n-10]+1922
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331265 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x + 31^2)^2 = y^2.

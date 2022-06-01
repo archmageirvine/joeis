@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // ogf: (sqrt(1+x^2)-sqrt(1-4*x+x^2))/(2*x*sqrt(1+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101499 A Chebyshev transform of the Catalan numbers.

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 // Recurrence: a[n+0]=+a[n-1]+a[n-26]-a[n-27]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A180004 a(n) is the nearest integer to n*(27/26).

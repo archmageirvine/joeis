@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // Recurrence: n*a[n+0]+4*(-4*n+3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034255 Related to quartic factorial numbers A007696.

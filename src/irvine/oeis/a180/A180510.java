@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180510 G.f.: (t^5 + 2*t^4 + t^3 + 2*t^2 + t) / (t^6 + t^5 - 2*t^4 - 5*t^3 - 2*t^2 + t + 1).

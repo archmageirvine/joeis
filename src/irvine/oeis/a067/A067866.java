@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A067866 Numbers n such that n and 2^n end with the same three digits.

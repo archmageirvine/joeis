@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192803 Coefficient of x^2 in the reduction of the polynomial (x+2)^n by x^3-&gt;x^2+x+1.

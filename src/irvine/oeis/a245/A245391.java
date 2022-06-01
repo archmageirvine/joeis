@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 // ogf: 4/(sqrt(1-8*x)*(1+sqrt(1-8*x))^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A245391 a(n) = 2^n*binomial(2*(n+1), n).

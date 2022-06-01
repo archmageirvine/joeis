@@ -1,6 +1,6 @@
 package irvine.oeis.a270;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A270694 Alternating sum of centered heptagonal pyramidal numbers.

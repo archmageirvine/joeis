@@ -1,6 +1,6 @@
 package irvine.oeis.a196;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A196468 a(1)=11; a(n) = floor((2 + sqrt(8))*a(n-1)) for n &gt; 1.

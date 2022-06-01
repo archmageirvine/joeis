@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // egf: exp(-x^2)/(1-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277393 a(n) = Integral_{x=0..infinity} H_n(x) * exp(-x), where H_n(x) is n-th Hermite polynomial.

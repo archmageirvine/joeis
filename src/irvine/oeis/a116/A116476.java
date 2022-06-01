@@ -1,6 +1,6 @@
 package irvine.oeis.a116;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A116476 Numbers n such that T(n) + T(n+1) + ... + T(n+10) is a square, where T(m) = A000217(m) is the m-th triangular number.

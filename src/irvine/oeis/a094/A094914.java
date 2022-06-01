@@ -2,7 +2,7 @@ package irvine.oeis.a094;
 // 2019-04-11, Georg Fischer: abs() inserted
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A094914 Absolute value of n^2 + n - 1354363.

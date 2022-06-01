@@ -1,6 +1,6 @@
 package irvine.oeis.a189;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A189834 a(n) = n^2 + 9.

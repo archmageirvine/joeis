@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 // Recurrence: a[n+0]=n^4-n^3-n^2-n
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A152016 a(n) = n^4 - n^3 - n^2 - n.

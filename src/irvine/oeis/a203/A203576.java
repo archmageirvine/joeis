@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 // Recurrence: (n-1)^2*n^3*(3*n^5-40*n^4+200*n^3-476*n^2+544*n-241)*a[n+0]=4*(n-1)^3*(9*n^7-126*n^6+699*n^5-1997*n^4+3165*n^3-2770*n^2+1239*n-228)*a[n-1]+32*(3*n^10-55*n^9+420*n^8-1786*n^7+4731*n^6-8232*n^5+9630*n^4-7580*n^3+3900*n^2-1194*n+162)*a[n-2]-256*(n-2)^3*(9*n^7-126*n^6+699*n^5-1997*n^4+3165*n^3-2770*n^2+1239*n-228)*a[n-3]+2048*(n-3)^3*(n-2)^2*(3*n^5-25*n^4+70*n^3-86*n^2+47*n-10)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A203576 Exponential (or binomial) half-convolution of A000984 (central binomial) with itself.

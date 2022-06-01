@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // egf: exp(x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101109 Number of sets of lists (sequences) of n labeled elements with k=3 elements per list.

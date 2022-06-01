@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 // ogf: 1/(1-2*x-3*x^2)^(5/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A245551 G.f.: 1/(1-2*x-3*x^2)^(5/2).

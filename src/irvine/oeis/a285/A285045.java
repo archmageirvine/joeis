@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 // Recurrence: n*(2*n-1)*a[n+0]+2*(-8*n^2+16*n-57)*a[n-1]+16*(2*n-3)*(n-2)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A285045 Expansion of cosh(7*arctanh(2*sqrt(x))).

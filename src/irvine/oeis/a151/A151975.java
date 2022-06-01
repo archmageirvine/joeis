@@ -1,6 +1,6 @@
 package irvine.oeis.a151;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A151975 The number of ways one can flip seven consecutive tails (or heads) when flipping a coin n times.

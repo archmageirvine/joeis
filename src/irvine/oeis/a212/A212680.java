@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212680 Number of (w,x,y,z) with all terms in {1,...,n} and |x-y|=|y-z|+1.

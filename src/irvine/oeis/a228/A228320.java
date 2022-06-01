@@ -1,6 +1,6 @@
 package irvine.oeis.a228;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A228320 The Wiener index of the graph obtained by applying Mycielski's construction to the cycle graph C(n).

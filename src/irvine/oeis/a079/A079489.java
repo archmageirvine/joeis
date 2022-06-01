@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 // ogf: (sqrt(2)*sqrt(1+sqrt(1-16*x))-sqrt(1-16*x)-1)/(4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A079489 Series reversion of x(1-x^2)/(1+x^2)^2 expanded in odd powers of x.

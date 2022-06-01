@@ -1,6 +1,6 @@
 package irvine.oeis.a085;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A085750 Determinant of the symmetric n X n matrix A defined by A[i,j] = |i-j| for 1 &lt;= i,j &lt;= n.

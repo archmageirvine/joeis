@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 // Recurrence: a[n+0]=(2*n+1)(2*n+2)(2*n+4)(2*n+5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A069079 a(n) = (2n+1)(2n+2)(2n+4)(2n+5).

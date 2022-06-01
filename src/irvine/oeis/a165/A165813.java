@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 // manually
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A165813 a(n) = n*(a(n-1)+3), a(0)=1.

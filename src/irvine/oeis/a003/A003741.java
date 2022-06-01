@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A003741 Number of perfect matchings (or domino tilings) in O_5 X P_2n.

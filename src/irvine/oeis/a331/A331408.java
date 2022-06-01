@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: a[n+0]=8*a[n-2]-24*a[n-4]+32*a[n-6]-16*a[n-8]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331408 Number of subsets of {1..n} that contain exactly three odd numbers.

@@ -1,6 +1,6 @@
 package irvine.oeis.a160;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A160451 (4/3)u(u^3+6*u^2+8u-3) where u=Floor[{3n+5)/2].

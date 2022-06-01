@@ -1,6 +1,6 @@
 package irvine.oeis.a224;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A224419 Numbers n such that triangular(n) + triangular(2*n) is a square.

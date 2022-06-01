@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // ogf: (1-sqrt(1-(4*(x-x^2))/(1-x+x^2)))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A120010 G.f.: A(x) = (1-sqrt(1-4*x))/2 o x/(1-x) o (x-x^2), a composition of functions involving the Catalan function and its inverse.

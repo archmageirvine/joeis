@@ -3,7 +3,7 @@ package irvine.oeis.a205;
 // egf: (exp(x^2)*(x+1)-1)/x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A205825 a(n) = n!/ceiling(n/2)!.

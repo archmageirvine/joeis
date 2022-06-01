@@ -2,7 +2,7 @@ package irvine.oeis.a279;
 // manually 2021-05-29: terms <= 29
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A279289 Numbers n such that phi(n) &gt; tau(n).

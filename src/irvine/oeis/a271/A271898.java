@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271898 Expansion of  ( 1+x^2 ) / ( 1-4*x+5*x^2-4*x^3 ).

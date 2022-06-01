@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // egf: log(1+sin(arctan(x)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191011 E.g.f. log(1 + sin(arctan(x))).

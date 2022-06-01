@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A011906 If b(n) is A011900(n) and c(n) is A001109(n), then a(n) = b(n)*c(n) = b(n) + (b(n)+1) + (b(n)+2) + ... + c(n).

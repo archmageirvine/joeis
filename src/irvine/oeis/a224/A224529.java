@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 // Recurrence: n^2*a[n+0]=(14*n^2-21*n+9)*a[n-1]+(-57*n^2+171*n-136)*a[n-2]+(106*n^2-477*n+551)*a[n-3]+(-90*n^2+540*n-816)*a[n-4]+(16*n^2-120*n+224)*a[n-5]+(19*n^2-171*n+380)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A224529 Sequence f_n from a paper by Robert Osburn and Brundaban Sahu.

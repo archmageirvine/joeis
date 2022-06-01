@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: exp(x+x^2/2+x^5/5+x^10/10)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053500 Number of degree-n permutations of order dividing 10.

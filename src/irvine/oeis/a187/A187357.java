@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // Recurrence: n*(3*n-1)*(3*n+1)*a[n+0]-8*(6*n-5)*(6*n-1)*(2*n-1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187357 Catalan trisection: A000108(3*n), n&gt;=0.

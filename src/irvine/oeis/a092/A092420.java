@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 // Recurrence: a[n+2]=9*a[n+1]-a[n+0]+1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A092420 a(n+2) = 9*a(n+1) - a(n) + 1, with a(1)=1, a(2)=10.

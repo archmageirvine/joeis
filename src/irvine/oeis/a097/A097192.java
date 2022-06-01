@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // ogf: 1/(1-27*x)^(8/9)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097192 Main diagonal of triangle A097190, in which the n-th row polynomial R_n(y) is formed from the initial (n+1) terms of g.f. A097191(y)^(n+1), where R_n(1/3) = 9^n for all n&gt;=0.

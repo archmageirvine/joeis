@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 // Recurrence: a[n+0]=81*a[n-1]-3114*a[n-2]+75618*a[n-3]-1302183*a[n-4]+16924743*a[n-5]-172522788*a[n-6]+1414869228*a[n-7]-9501687423*a[n-8]+52906702383*a[n-9]-246402134298*a[n-10]+965539475298*a[n-11]-3194875953273*a[n-12]+8941122759033*a[n-13]-21157696301688*a[n-14]+42243068089008*a[n-15]-70868692309248*a[n-16]+99257760429408*a[n-17]-114988409883008*a[n-18]+108762502457088*a[n-19]-82478130147072*a[n-20]+48857688836352*a[n-21]-21745388335104*a[n-22]+6829114613760*a[n-23]-1347275980800*a[n-24]+125411328000*a[n-25]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A241875 Number of ascent sequences of length n with exactly five descents.

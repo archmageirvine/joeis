@@ -1,6 +1,6 @@
 package irvine.oeis.a282;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A282612 Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to row permutations.

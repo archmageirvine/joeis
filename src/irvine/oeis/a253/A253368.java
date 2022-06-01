@@ -1,6 +1,6 @@
 package irvine.oeis.a253;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A253368 a(n) = F(12*n)/(12^2) with the Fibonacci numbers F = A000045.

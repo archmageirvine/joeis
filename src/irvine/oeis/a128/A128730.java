@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // Recurrence: +2*(n-1)*(3*n-8)*a[n+0]+(-39*n^2+161*n-148)*a[n-1]+(48*n^2-215*n+220)*a[n-2]-5*(3*n-5)*(n-3)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128730 Number of UDL's in all skew Dyck paths of semilength n.

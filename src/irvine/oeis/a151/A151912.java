@@ -1,6 +1,6 @@
 package irvine.oeis.a151;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A151912 Expansion of (1-8x-8x^3)/(1-2x+4x^2)^2.

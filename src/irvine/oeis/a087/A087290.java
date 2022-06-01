@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087290 Number of pairs of polynomials (f,g) in GF(3)[x] satisfying deg(f) &lt;= n, deg(g) &lt;= n and gcd(f,g) = 1.

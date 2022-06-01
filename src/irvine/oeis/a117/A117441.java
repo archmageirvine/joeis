@@ -1,6 +1,6 @@
 package irvine.oeis.a117;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A117441 Periodic with repeating part {1,1,0,1,-1,0,-1,-1,0,-1,1,0}.

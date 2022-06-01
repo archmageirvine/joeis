@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // ogf: -2*(-1-2*x^2-2*x^3-x^4-2*x^5+2*x^6)/((-1+x)^2*(1+x+x^2+x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A080456 a(1) = a(2) = 2; for n &gt; 2, a(n) = a(n-1) if n is already in the sequence, a(n) = a(n-1) + 4 otherwise.

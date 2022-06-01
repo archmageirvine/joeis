@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200999 Triangular numbers, T(m), that are four-thirds of another triangular number; T(m) such that 3*T(m) = 4*T(k) for some k.

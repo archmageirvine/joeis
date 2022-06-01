@@ -1,6 +1,6 @@
 package irvine.oeis.a186;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A186439 Numbers whose squares end in three identical digits.

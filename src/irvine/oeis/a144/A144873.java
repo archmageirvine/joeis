@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144873 If n mod 8 = 0 or n mod 10 = 0 then floor(n^2/4)+n otherwise floor(n^2/4)+n-1.

@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 // Recurrence: a[n+0]=17*a[n-15]-16*a[n-30]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A048340 a(n) in base 16 is a repdigit.

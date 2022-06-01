@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 // ogf: (1-153*x+6777*x^2-132415*x^3+1336362*x^4-7606262*x^5+25527903*x^6-51325185*x^7+61507605*x^8-42648785*x^9+16029360*x^10-2890728*x^11+181440*x^12)/(1-185*x+10404*x^2-259107*x^3+3361183*x^4-24886632*x^5+110360811*x^6-299572675*x^7+499926324*x^8-508443601*x^9+305734685*x^10-101727600*x^11+16409736*x^12-907200*x^13)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A254458 Number of tilings of a 6 X n rectangle using polyominoes of shape I.

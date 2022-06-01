@@ -1,6 +1,6 @@
 package irvine.oeis.a285;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A285009 Subset sums (see Comments).

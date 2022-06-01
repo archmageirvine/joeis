@@ -1,6 +1,6 @@
 package irvine.oeis.a284;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A284700 Number of edge covers in the n-antiprism graph.

@@ -1,6 +1,6 @@
 package irvine.oeis.a237;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A237132 Values of x in the solutions to x^2 - 3xy + y^2 + 11 = 0, where 0 &lt; x &lt; y.

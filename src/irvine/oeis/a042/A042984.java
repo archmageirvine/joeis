@@ -1,6 +1,6 @@
 package irvine.oeis.a042;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A042984 Number of n-dimensional partitions of 6.

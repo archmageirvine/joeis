@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 // ogf: (sqrt(1+4*x-4*x^2)+4*x^2-2*x-1)/(8*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A136576 Series reversion of x*c(x)/(1-2x), c(x) the g.f. of A000108.

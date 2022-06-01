@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 // Recurrence: n*(n+1)*(28*n^2-94*n+51)*a[n+0]=-4*n*(14*n^3-54*n^2+73*n-48)*a[n-1]+(n-3)*(140*n^3-330*n^2+19*n+216)*a[n-2]+6*(n-3)*(28*n^3-108*n^2+57*n+118)*a[n-3]+23*(n-4)*(n-3)*(28*n^2-38*n-15)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A115344 Numerators of asymptotic expansion of first root of Ziegler's cubic in an imaginary quadratic field.

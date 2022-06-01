@@ -1,6 +1,6 @@
 package irvine.oeis.a298;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A298950 Numbers k such that 5*k - 4 is a square.

@@ -1,6 +1,6 @@
 package irvine.oeis.a167;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A167387 a(n) = (-1)^(n+1) * n*(n-1)*(n-4)*(n+1)/12.

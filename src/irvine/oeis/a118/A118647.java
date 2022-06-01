@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118647 a(n) is the number of binary strings of length n such that no subsequence of length 4 contains 3 or more ones.

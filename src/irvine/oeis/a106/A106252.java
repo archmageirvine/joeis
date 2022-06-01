@@ -1,6 +1,6 @@
 package irvine.oeis.a106;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106252 Number of positive integer triples (x,y,z), with x&lt;=y&lt;=z&lt;=n, such that each of x,y and z divides the sum of the other two.

@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271357 a(n) = k*Fibonacci(2*n+1) + (k+1)*Fibonacci(2*n), where k=3.

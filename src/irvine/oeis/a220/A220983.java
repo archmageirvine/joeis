@@ -1,7 +1,7 @@
 package irvine.oeis.a220;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220983 The left Aurifeuillian factor of 7^(14n+7) + 1.

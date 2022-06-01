@@ -1,6 +1,6 @@
 package irvine.oeis.a219;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A219395 Numbers k such that 18*k+1 is a square.

@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A288165 Expansion of x^4/((1-x^4)*(1-x^3)*(1-x^6)*(1-x^9)).

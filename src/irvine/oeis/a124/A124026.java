@@ -1,6 +1,6 @@
 package irvine.oeis.a124;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A124026 Let M = {{0, -1, 2}, {-1, 2, -1}, {2, -1, 0}}; v[1] = {0, 0, 1}; v[n] = M.v[n - 1]; then a(n) = v[n][[1]].

@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 // Recurrence: a[n+0]=n^2*a[n-1]+a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A036246 CONTINUANT transform of squares 1, 4, 9, ...

@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 // DO NOT EDIT here!
 
 import irvine.oeis.transform.EulerTransform;
-import irvine.oeis.PaddingSequence;
+import irvine.oeis.recur.PaddingSequence;
 
 
 /**

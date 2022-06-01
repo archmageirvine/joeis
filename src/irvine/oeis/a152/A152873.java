@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 // egf: (24*sqrt(4-x^2)*arcsin(x/2))/((2-x)^3*(2+x)^2)-(x*(6-8*x-3*x^2+2*x^3))/((2+x)*(2-x)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A152873 Number of permutations of {1,2,...,n} (n&gt;=2) having a single run of even entries. For example, the permutation 513284679 has a single run of even entries: 2846.

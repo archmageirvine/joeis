@@ -1,6 +1,6 @@
 package irvine.oeis.a069;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A069294 Number of n X 3 binary arrays with a path of adjacent 1's from upper left corner to anywhere in right hand column.

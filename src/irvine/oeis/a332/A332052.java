@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // ogf: (x^4-4*x^3+2*x^2-2*x+1)/((1-2*x)*(2*x^4-4*x^3+2*x^2-2*x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A332052 Number of binary words of length n with an even number of occurrences of the subword 0101.

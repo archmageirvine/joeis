@@ -1,7 +1,7 @@
 package irvine.oeis.a257;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257954 Heptagonal numbers (A000566) that are the sum of seven consecutive heptagonal numbers.

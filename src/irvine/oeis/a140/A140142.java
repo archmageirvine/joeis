@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 // ogf: x*(x^8+16*x^7-4*x^6+176*x^5+6*x^4+176*x^3-4*x^2+16*x+1)/((-1+x)^6*(1+x)^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A140142 a(1)=1, a(n)=a(n-1)+n^0 if n odd, a(n)=a(n-1)+ n^4 if n is even.

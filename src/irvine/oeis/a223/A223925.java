@@ -1,6 +1,6 @@
 package irvine.oeis.a223;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A223925 a(2n+1) = 2*n-1; a(2n)= 4^n.

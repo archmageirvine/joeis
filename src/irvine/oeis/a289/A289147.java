@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 // Recurrence: a[n+0]=(2*n+3)*a[n-1]-(n-1)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A289147 Number of (n+1) X (n+1) binary matrices M with at most one 1 in each of the first n rows and each of the first n columns and M[n+1,n+1] = 0.

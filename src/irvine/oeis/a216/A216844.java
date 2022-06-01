@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216844 4k^2-8k+2 interleaved with 4k^2-4k+2 for k&gt;=0.

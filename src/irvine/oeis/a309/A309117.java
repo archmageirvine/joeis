@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // ogf: (1-x)*(1+x)*(1-x-5*x^2-x^3+x^4)/((1+x-3*x^2-3*x^3+x^4)*(1-3*x-3*x^2+x^3+x^4))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A309117 Number of perfect matchings on a triangular lattice of width 4 and length n.

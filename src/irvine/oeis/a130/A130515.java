@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130515 In triangular peg solitaire, number of distinct feasible pairs starting with one peg missing and finishing with one peg.

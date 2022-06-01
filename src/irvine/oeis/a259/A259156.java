@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259156 Positive triangular numbers (A000217) that are pentagonal numbers (A000326) divided by 2.

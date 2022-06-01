@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // ogf: (5-2*x-3*sqrt(1-4*x))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A120589 Self-convolution of A120588, such that a(n) = 3*A120588(n) for n &gt;= 2.

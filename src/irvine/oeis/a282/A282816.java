@@ -1,6 +1,6 @@
 package irvine.oeis.a282;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A282816 Number of inequivalent ways to color the faces of a cube using at most n colors so that no two opposite sides have the same color.

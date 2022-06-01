@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 // egf: exp(6*arcsin(x))-6*arcsin(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A176696 E.g.f.: exp(6*arcsin(x))-6*arcsin(x).

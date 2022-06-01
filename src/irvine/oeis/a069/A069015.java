@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 // egf: -log(1-x)/(1-3*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A069015 a(n) = n! * 3^n * Sum_{i=1..n} 1/(i * 3^i).

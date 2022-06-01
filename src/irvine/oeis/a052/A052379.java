@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052379 Number of integers from 1 to 10^(n+1)-1 that lack 0 and 1 as a digit.

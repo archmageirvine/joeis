@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // egf: 1/(1-4*x)^(7/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051622 a(n) = (4*n+10)(!^4)/10(!^4), related to A000407 ((4*n+2)(!^4) quartic, or 4-factorials).

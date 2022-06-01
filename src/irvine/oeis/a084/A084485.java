@@ -1,6 +1,6 @@
 package irvine.oeis.a084;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A084485 Number of 3 X n 0-1 matrices which have n+2 1's and have no zero rows or zero columns.

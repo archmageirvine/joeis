@@ -1,6 +1,6 @@
 package irvine.oeis.a004;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A004054 Expansion of (1-x)/((1+x)*(1-2*x)*(1-3*x)).

@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 // ogf: (2*x)/((1-2*x)*(1+2*x+((1+2*x)*(1-2*x))^(1/2)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A058622 a(n) = 2^(n-1) - ((1+(-1)^n)/4)*binomial(n, n/2).

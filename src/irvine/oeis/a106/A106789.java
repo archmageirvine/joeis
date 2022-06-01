@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 // ogf: 2*(5-5*x+4*x^2-18*x^3-x^4-5*x^5)/((1+x+x^2-x^3)*(1-3*x-x^2-x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A106789 Sum of two consecutive squares of Lucas 3-step numbers (A001644).

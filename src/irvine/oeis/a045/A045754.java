@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // Recurrence: a[n+0]-(7*n-6)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A045754 7-fold factorials: a(n) = Product_{k=0..n-1} (7*k+1).

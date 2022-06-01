@@ -1,6 +1,6 @@
 package irvine.oeis.a104;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A104237 Expansion of (1 + x^2 - x^3 + 4*x^4 - 3*x^5 + 2*x^6)/((x^5 - x^4 + 2*x^3 + x + 1)*(x - 1)*(x + 1)^2).

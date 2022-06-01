@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 // ogf: 1/(sqrt(1+x)*(1-6*x+x^2)^(1/4))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A204061 G.f.: exp( Sum_{n&gt;=1} A001333(n)^2 * x^n/n ) where A001333(n) = A002203(n)/2, one-half the companion Pell numbers.

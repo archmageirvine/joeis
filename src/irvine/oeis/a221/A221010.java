@@ -1,6 +1,6 @@
 package irvine.oeis.a221;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A221010 The Wiener index of the nanostar dendrimer G[n], defined pictorially in the Nadjafi-Arani et al. reference.

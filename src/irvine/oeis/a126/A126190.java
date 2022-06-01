@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // Recurrence: 90*n*a[n+0]+(-294-228*n)*a[n+1]+(558+207*n)*a[n+2]+(-345-83*n)*a[n+3]+(84+15*n)*a[n+4]+(-7-n)*a[n+5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126190 Number of pairs of adjacent vertices of outdegree 2 in all hex trees with n edges.

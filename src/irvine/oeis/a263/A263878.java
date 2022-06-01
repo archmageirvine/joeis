@@ -1,6 +1,6 @@
 package irvine.oeis.a263;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A263878 a(n) = Sum_{k=0..n} (-1)^k*k*Fibonacci(k), where Fibonacci(k) = A000045(k).

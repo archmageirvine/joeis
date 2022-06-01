@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 // ogf: x^2*(26747100*x^9+25850210*x^8+11594958*x^7+3379095*x^6+722576*x^5+120194*x^4+15931*x^3+1710*x^2+149*x+18)/(1-10*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A222812 Number of n-digit numbers N such that the number formed by some nontrivial permutation of the digits of N divides N.

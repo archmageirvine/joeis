@@ -1,6 +1,6 @@
 package irvine.oeis.a222;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A222182 Numbers m such that 2*m+11 is a square.

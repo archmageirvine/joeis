@@ -1,6 +1,6 @@
 package irvine.oeis.a228;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A228912 a(n) = 10^n - 9*9^n + 36*8^n - 84*7^n + 126*6^n - 126*5^n + 84*4^n - 36*3^n + 9*2^n - 1.

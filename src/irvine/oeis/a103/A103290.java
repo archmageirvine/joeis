@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 // ogf: -2*x^2*(x^2+1)/(x-1)^5
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A103290 n*(n-1)*(n^2-n+4)/6.

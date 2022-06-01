@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // Recurrence: (n+1)*a[n+0]+(7*n-3)*a[n-1]+2*(7*n-12)*a[n-2]+4*(2*n-5)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104496 Expansion of 2*(2*x+1)/((x+1)*(sqrt(4*x+1)+1)).

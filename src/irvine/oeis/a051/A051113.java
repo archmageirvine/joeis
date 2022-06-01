@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // ogf: -2*x^4*(140561100029952000*x^15-73258140662784000*x^14-8396658614522880*x^13+15284070825850368*x^12-4918391338514880*x^11+748203166795520*x^10-45197506544400*x^9-3280961201664*x^8+887950976060*x^7-80597007540*x^6+3942400065*x^5-98697251*x^4+532770*x^3+26970*x^2-335*x-3)/((2*x-1)*(3*x-1)*(4*x-1)*(5*x-1)*(6*x-1)*(7*x-1)*(8*x-1)*(9*x-1)*(10*x-1)*(11*x-1)*(12*x-1)*(13*x-1)*(14*x-1)*(15*x-1)*(16*x-1)*(17*x-1)*(18*x-1)*(20*x-1)*(24*x-1)*(32*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A051113 Number of monotone Boolean functions of n variables with 5 mincuts.

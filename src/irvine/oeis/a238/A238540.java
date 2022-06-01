@@ -1,6 +1,6 @@
 package irvine.oeis.a238;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A238540 A fourth-order linear divisibility sequence: a(n) := (3^n + 1)*(3^(3*n) - 1)/( (3 + 1)*(3^3 - 1)).

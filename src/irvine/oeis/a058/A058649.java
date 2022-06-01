@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 // ogf: (x*(8*x^2-8*x-1))/(2*x-1)^5
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A058649 a(n) = 2^(n-4)*n*(n+1)*(n^2+5*n-2).

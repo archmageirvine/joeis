@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 // ogf: -((-1-2x-x^2+x^4+x^5+x^6+x^7+x^8)/((-1+x)(1+x)(-1+x^2+x^4)))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A259626 List of numbers L and L + 1, where L = A000032, the Lucas numbers, sorted into increasing order and duplicates removed.

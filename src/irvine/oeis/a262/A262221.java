@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A262221 a(n) = 25*n*(n + 1)/2 + 1.

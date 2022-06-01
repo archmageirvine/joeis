@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A067844 Numbers k such that k and 2^k end with the same digit.

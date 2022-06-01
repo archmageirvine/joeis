@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 // Recurrence: (2+4*n)*a[n+0]+(4+5*n)*a[n+1]+(n+2)*a[n+2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A099324 Expansion of (1 + sqrt(1 + 4x))/(2(1 + x)).

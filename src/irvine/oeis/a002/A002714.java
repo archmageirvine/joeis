@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 
 /**

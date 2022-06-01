@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087579 a(n)=(1/6)*sum(k=0,n,binomial(n,k)*Fibonacci(k)*6^k).

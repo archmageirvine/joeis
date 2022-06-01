@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A031923 Let r and s be consecutive Fibonacci numbers. Sequence is r^4, r^3 s, r^2 s^2, and r s^3.

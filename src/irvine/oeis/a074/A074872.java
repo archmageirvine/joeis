@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A074872 Inverse BinomialMean transform of the Fibonacci sequence A000045 (with the initial 0 omitted).

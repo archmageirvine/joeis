@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: 1/(1-8*x)^(17/8)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053114 a(n) = ((8*n+9)(!^8))/9, related to A045755 ((8*n+1)(!^8) octo- or 8-factorials).

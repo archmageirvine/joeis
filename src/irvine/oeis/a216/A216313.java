@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 // Recurrence: a[n+0]=(4*n-3)*a[n-1]-(6*n^2-17*n+13)*a[n-2]+(n-2)^2*(4*n-9)*a[n-3]-(n-3)^3*(n-2)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A216313 Total number of cycles in all partial permutations of {1,2,...,n}.

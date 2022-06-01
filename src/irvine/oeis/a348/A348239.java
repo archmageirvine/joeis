@@ -3,7 +3,7 @@ package irvine.oeis.a348;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A348239 Partial sums of A348237.

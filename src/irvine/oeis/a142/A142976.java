@@ -1,6 +1,6 @@
 package irvine.oeis.a142;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A142976 a(n) = (1/18)*(9*n^2 + 21*n + 10 - 4^(n+2)*(3*n+5) + 10*7^(n+1)).

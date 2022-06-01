@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A055352 Number of labeled mobiles (circular rooted trees) with n nodes and 5 leaves.

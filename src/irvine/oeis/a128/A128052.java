@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128052 a(n) = (F(2*n-1) + F(2*n+1))*(5/6 - cos(2*Pi*n/3)/3), where F(n) = Fibonacci(n).

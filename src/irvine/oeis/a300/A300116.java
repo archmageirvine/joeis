@@ -3,7 +3,7 @@ package irvine.oeis.a300;
 // Recurrence: n^3*a[n+0]=8*(2*n-1)*(8*n^2-8*n+5)*a[n-1]-4096*(n-1)^3*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A300116 a(n) = Sum_{k=0..n} binomial(2k,k)^3 *  binomial(2n-2k,n-k) * 2^(4*(n-k)).

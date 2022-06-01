@@ -1,6 +1,6 @@
 package irvine.oeis.a122;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A122883 The (1,3)-entry in the 3 X 3 matrix M^n, where M = [1,1,1 / 4,2,1 / 9,3,1].

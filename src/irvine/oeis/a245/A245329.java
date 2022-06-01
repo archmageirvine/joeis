@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 // Recurrence: 343*(3*n+7)*(n+1)^2*a[n+0]+(3*n+5)*(363*n^2+1331*n+1113)*a[n+1]+7*(9*n^3+57*n^2+116*n+74)*a[n+2]+(3*n+4)*(n+3)^2*a[n+3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A245329 a(n) = sum_{k=0..n}C(n,k)^3*(-8)^k with C(n,k) = n!/(k!(n-k)!).

@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179986 Second 9-gonal (or nonagonal) numbers: a(n) = n*(7*n+5)/2.

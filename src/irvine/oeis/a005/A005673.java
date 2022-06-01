@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A005673 F(n+1)-2^[ (n+1)/2 ] -2^[ n/2 ] +1.

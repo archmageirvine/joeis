@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179824 Chromatic polynomial of the star graph on 4 vertices (claw graph) and the path graph on 4 vertices.

@@ -1,6 +1,6 @@
 package irvine.oeis.a254;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A254874 a(n) = floor((10*n^3 + 63*n^2 + 126*n + 89) / 72).

@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A003739 Number of spanning trees in W_5 X P_n.

@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 // ogf: (-x^2+x-1-(x^2+3*x-1)/sqrt(1-4*x))/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A265610 a(n) = rf(n, n+2)/(n+2)! - rf(n, n)/n!, rf the rising factorial A265609.

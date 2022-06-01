@@ -1,6 +1,6 @@
 package irvine.oeis.a021;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A021829 Expansion of 1/((1-x)(1-4x)(1-6x)(1-10x)).

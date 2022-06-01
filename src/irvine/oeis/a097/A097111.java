@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097111 Expansion of (1 + 3x - 2x^2 - 12x^3)/(1 - 9x^2 + 20x^4).

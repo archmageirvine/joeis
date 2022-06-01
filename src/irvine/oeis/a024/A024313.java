@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 // ogf: (-3+2*x^7+3*x^5+x^4-4*x^3+2*x^2)/((x^2+x-1)*(x^4+x^2-1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A024313 a(n) = s(1)*t(n) + s(2)*t(n-1) + ... + s(k)*t(n+1-k), where k = floor((n+1)/2)), s = (natural numbers &gt;= 3), t = A023531.

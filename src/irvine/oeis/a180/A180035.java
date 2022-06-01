@@ -1,6 +1,6 @@
 package irvine.oeis.a180;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A180035 Eight white queens and one red queen on a 3 X 3 chessboard. G.f.: (1+x)/(1-5*x-3*x^2).

@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 // ogf: (1+x)*(x^3-1)*(x^5-1)*(x^7-1)/(x^16-2*x^15+x^12+x^10-x^4-x^6+2*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A054887 Layer counting sequence for hyperbolic tessellation by cuspidal triangles of angles (Pi/3,Pi/5,Pi/7).

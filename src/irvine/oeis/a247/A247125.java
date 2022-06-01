@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247125 Number of tilings of a 5 X n rectangle using n pentominoes of shapes L, U, X.

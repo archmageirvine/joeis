@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // ogf: (1-4x-x^2+2x^3-x^4)/(1-6x+8x^2-3x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A087164 Records in A087162: A087162(a(n))=n.

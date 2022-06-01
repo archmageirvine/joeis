@@ -1,6 +1,6 @@
 package irvine.oeis.a099;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A099141 a(n) = 5^n * T(n,7/5) where T is the Chebyshev polynomial of the first kind.

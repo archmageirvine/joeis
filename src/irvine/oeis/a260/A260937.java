@@ -1,6 +1,6 @@
 package irvine.oeis.a260;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A260937 Indices i of pentagonal numbers P(i) such that (P(i)-1)/2 is also a pentagonal number.

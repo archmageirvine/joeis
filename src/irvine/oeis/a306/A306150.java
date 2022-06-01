@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // Recurrence: a[n+0]=n*a[n-1]+a[n-2]-(n-2)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A306150 Row sums of A306015.

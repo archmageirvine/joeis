@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097110 Expansion of (1 + 2x - 2x^3) / (1 - 3x^2 + 2x^4).

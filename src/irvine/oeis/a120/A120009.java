@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // Recurrence: (n+2)*a[n+0]+(-7*n-2)*a[n-1]+6*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A120009 G.f.: A(x) = (x-x^2) o x/(1-x) o (1-sqrt(1-4*x))/2, a composition of functions involving the Catalan function and its inverse.

@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257724 Hexagonal numbers (A000384) that are the sum of fourteen consecutive hexagonal numbers.

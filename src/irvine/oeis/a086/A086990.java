@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 // ogf: (1+4*x-sqrt(1+4*x^2))/(4+6*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A086990 Expansion of (1+4x-sqrt(1+4x^2))/(4+6x) in powers of x.

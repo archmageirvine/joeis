@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A031150 Appending a digit to n^2 gives another perfect square.

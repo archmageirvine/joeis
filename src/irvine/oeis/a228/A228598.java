@@ -1,6 +1,6 @@
 package irvine.oeis.a228;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A228598 The Wiener index of the graph obtained by applying Mycielski's construction to the crown graph G(n) (n&gt;=3).

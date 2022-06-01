@@ -1,6 +1,6 @@
 package irvine.oeis.a105;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A105099 Nonnegative numbers n such that 23*n^2 + 23*n + 1 = j^2 = a square.

@@ -1,6 +1,6 @@
 package irvine.oeis.a086;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A086113 Number of 3 X n (0,1) matrices such that each row and each column is nondecreasing or nonincreasing.

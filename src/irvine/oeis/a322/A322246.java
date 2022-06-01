@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 // Recurrence: (11*n+11)*a[n+0]+(15+10*n)*a[n+1]+(-n-2)*a[n+2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A322246 Expansion of g.f.: 1/sqrt(1 - 10*x - 11*x^2).

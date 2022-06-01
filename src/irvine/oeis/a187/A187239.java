@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // ogf: -8x^5*(630x^18+10620x^17+153525x^16+1211058x^15+6621390x^14+24647178x^13+66958554x^12+133891418x^11+202680754x^10+232634698x^9+204008900x^8+135332502x^7+67245306x^6+24326718x^5+6174582x^4+1024222x^3+99344x^2+4466x+55)/((x-1)^15*(x+1)^9)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A187239 Number of ways to place 7 nonattacking bishops on an n X n board.

@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174562 a(1)=2, a(2)=3, then a(n)=a(n-1)+a(n-2) if n odd, a(n)=a(n-1)-a(n-2) if n even.

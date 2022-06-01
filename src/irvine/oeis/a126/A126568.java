@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: (11*x^4-12*x^3-x^2+3*x-1-sqrt(5*x^2-6*x+1)*(5*x^3-3*x^2-1))/(sqrt(5*x^2-6*x+1)*(4*x^4-8*x^3-3*x^2+7*x-2)-10*x^5+32*x^4-31*x^3+20*x^2-13*x+2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126568 Binomial transform of A026641.

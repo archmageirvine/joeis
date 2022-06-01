@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 // egf: (2-sqrt(1-6*x))/(1+2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A095839 a(n) = ((2*n)!/(n!*2^(n-1)))*integral_{x=1/2..1} (Sqrt(1-x^2)/x)^(2*n) dx.

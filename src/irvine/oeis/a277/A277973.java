@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 // ogf: (2*x^3*(x^2-sqrt(x^4+2*x^2-4*x+1)+1))/((1-x)*(-x^2+sqrt(x^4+2*x^2-4*x+1)-2*x+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A277973 Sum of horizontal positions of the first peak in all bargraphs of semiperimeter n.

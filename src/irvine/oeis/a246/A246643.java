@@ -1,6 +1,6 @@
 package irvine.oeis.a246;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A246643 A sequence used in the touching circle problem described in A247512.

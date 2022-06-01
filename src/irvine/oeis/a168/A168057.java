@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168057 Expansion of (1+8x^2+8x^3)/((1-2x)^2*(1+2x+4x^2)).

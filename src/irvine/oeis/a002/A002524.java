@@ -1,6 +1,6 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A002524 Number of permutations of length n within distance 2 of a fixed permutation.

@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 import irvine.oeis.UnionSequence;
 
 /**

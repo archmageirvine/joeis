@@ -1,6 +1,6 @@
 package irvine.oeis.a177;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A177046 a(n) = 127*(n-1)-a(n-1) with n&gt;1, a(1)=16.

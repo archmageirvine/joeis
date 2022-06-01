@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A088578 a(n) = n*x^n + (n-1)*x^(n-1) + . . . + x + 1 for x=2.

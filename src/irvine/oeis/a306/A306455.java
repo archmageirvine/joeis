@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // egf: (exp(-x)*(x+1)+x-1)/(x-1)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A306455 Total number of covered falling diagonals in all n X n permutation matrices.

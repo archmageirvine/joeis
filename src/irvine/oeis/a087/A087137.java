@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // egf: 1/(1-x)-1/sqrt(1-x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087137 a(n) is the number of permutations in the symmetric group S_n that contain an odd cycle.

@@ -1,6 +1,6 @@
 package irvine.oeis.a181;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A181443 Solutions a(n) to (r(n)-5)*(r(n)-6) = 21 *a(n)*(a(n)-1).

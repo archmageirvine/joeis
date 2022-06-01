@@ -1,6 +1,6 @@
 package irvine.oeis.a234;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A234041 a(n) = binomial(n+2,2)*gcd(n,3)/3, n &gt;= 0.

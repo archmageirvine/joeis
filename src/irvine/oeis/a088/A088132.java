@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A088132 a(n) equals the square of the n-th partial sum added to twice the n-th partial sum of the squares, divided by a(n-1), for all n&gt;1, with a(0)=1, a(1)=3.

@@ -1,6 +1,6 @@
 package irvine.oeis.a097;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A097315 Pell equation solutions (3*b(n))^2 - 10*a(n)^2 = -1 with b(n) = A097314(n), n &gt;= 0.

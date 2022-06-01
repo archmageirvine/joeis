@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 // ogf: (1-x-sqrt(1-2*x-3*x^2))/(2*(1-2*x-3*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A109196 Number of returns to the x-axis from above (i.e., d steps hitting the x-axis) in all Grand Motzkin paths of length n.

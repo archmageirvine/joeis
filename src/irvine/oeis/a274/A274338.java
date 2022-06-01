@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274338 The period 10 sequence of the iterated sum of deficient divisors function (A187793) starting at 52.

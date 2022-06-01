@@ -1,6 +1,6 @@
 package irvine.oeis.a284;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A284016 a(-1)=-1; a(n) = 2*A000108(n) for n &gt;= 0.

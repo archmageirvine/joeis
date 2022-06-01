@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 // egf: (2/sqrt(1-6*x)-1)/(1+2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A077745 Numerator of integral_{x=1..2} (x^2-1)^n dx.

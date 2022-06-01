@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // Recurrence: n^2*(2*n-3)*a[n+0]=(2*n-1)*(79*n^2-158*n+54)*a[n-1]-21*(2*n-3)*(79*n^2-158*n+54)*a[n-2]+9261*(n-2)^2*(2*n-1)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A246906 G.f.:  1 / AGM(1-21*x, sqrt((1-9*x)*(1-49*x))).

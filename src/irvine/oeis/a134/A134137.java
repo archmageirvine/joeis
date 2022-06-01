@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 // egf: 1-exp(-(x*(3-3*x+x^2))/(3*(1-x)^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A134137 Alternating row sums of triangle A049352 (S1p(4)).

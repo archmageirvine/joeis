@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // egf: (1+2*x)/(1-2*x)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126119 Numerators of sequence of fractions with e.g.f. (1+x)/(1-x)^(3/2).

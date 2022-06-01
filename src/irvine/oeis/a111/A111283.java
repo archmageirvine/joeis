@@ -1,6 +1,6 @@
 package irvine.oeis.a111;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A111283 Number of permutations avoiding the patterns {4321, 45132, 45231, 35412, 53412, 45213, 43512, 45312, 456123, 451623, 356124}; number of strong sorting class based on 4321.

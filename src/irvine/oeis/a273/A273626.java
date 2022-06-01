@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273626 A fourth-order divisibility sequence: a(n) = (1/14)*(Pell(4*n) + Pell(2*n)).

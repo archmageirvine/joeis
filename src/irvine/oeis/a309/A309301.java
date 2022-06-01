@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // ogf: -x^4*(64*x^33-160*x^30+32*x^29+80*x^28+216*x^27+96*x^26-312*x^25-160*x^24-200*x^23+376*x^22+40*x^21-4*x^20+164*x^19-48*x^18+60*x^17-516*x^16+114*x^15+4*x^14+340*x^13-79*x^12-30*x^11-78*x^10+4*x^9+45*x^8-33*x^7+20*x^6-24*x^5+24*x^4-9*x^3+3*x^2-3*x+1)/((2*x-1)^3*(2*x^3-1)^3*(2*x^9-1)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A309301 (1/9) times the sum of the elements of all subsets of [n] whose sum is divisible by nine.

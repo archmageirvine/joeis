@@ -1,6 +1,6 @@
 package irvine.oeis.a146;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A146509 Numbers that are congruent to {1, 5} mod 18.

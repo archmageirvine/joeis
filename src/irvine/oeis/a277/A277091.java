@@ -1,6 +1,6 @@
 package irvine.oeis.a277;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A277091 a(n) = ((1 + sqrt(15))^n - (1 - sqrt(15))^n)/sqrt(15).

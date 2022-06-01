@@ -1,6 +1,6 @@
 package irvine.oeis.a291;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A291288 a(n) = binomial(n+3, 3)*(1 + binomial(n+2, 3)/4).

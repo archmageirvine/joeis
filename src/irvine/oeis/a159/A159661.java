@@ -1,6 +1,6 @@
 package irvine.oeis.a159;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A159661 The general form of the recurrences are the a(j, b(j) and n(j) solutions of the 2 equations problem: 11*n(j)+1=a(j)*a(j) and 13*n(j)+1=b(j)*b(j) with positive integer elements. the solutions of the 2 equations problem: 11*n(j)+1=a(j)*a(j); 13*n(j)+1=b(j)*b(j); with integer numbers.

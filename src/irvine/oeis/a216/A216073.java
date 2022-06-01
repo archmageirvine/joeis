@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216073 The list of the a(n)-values in the common solutions to  k+1=b^2 and 6*k+1=a^2.

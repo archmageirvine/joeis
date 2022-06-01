@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // ogf: (((1+x)/(1-x)/(1-6*x+x^2)*(1-x+(1-6*x+x^2)^(1/2)))/2)^(1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A113283 Even bisection of A113281: a(n) = A113281(2*n).

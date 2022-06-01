@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100212 Expansion of (x^5 + 2*x^4)/(1/2*x^2 - 2*x^6 + 2*x^5 - x^4 - 1/2*x + 1/4).

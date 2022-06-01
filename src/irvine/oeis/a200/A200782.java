@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200782 Expansion of 1 / (1 - 6*x + 20*x^3 - 15*x^4 + x^6).

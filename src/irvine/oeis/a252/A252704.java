@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 // Recurrence: 120*a[n+0]=n^2*(n^18+15*n^10+16*n^8+20*n^6+44*n^2+24)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A252704 The number of ways to color the faces of a regular icosahedron with n colors, counting mirror images as one.

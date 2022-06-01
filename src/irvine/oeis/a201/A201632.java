@@ -1,6 +1,6 @@
 package irvine.oeis.a201;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A201632 If the sum of the squares of 4 consecutive numbers is a triangular number t(u), then a(n) is its index u.

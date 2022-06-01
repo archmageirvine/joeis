@@ -3,7 +3,7 @@ package irvine.oeis.a347;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A347836 a(n) = 8*(n + floor(n/3)) - 3; second column of A347834.

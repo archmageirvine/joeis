@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137880 Indices k of perfect squares among 17-gonal numbers A051869(k) = k*(15*k - 13)/2.

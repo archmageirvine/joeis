@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: n*a[n+0]+(1-2*n)*a[n-1]+19*(1-n)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098264 G.f.: 1/(1-2x-19x^2)^(1/2).

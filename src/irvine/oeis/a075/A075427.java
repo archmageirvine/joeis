@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A075427 a(0) = 1; a(n) = a(n-1)+1  if n is even, otherwise a(n) = 2*a(n-1).

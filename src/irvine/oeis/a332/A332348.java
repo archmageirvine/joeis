@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: a[n+0]=a[n-1]+2*a[n-2]+a[n-3]-2*a[n-4]+2*a[n-5]-2*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332348 Number of maximal independent sets in the 3 X n king graph.

@@ -3,7 +3,7 @@ package irvine.oeis.a347;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A347725 Number of irredundant sets in the (2n-1)-triangular snake graph (for n &gt; 1).

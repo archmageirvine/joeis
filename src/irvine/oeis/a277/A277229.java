@@ -1,6 +1,6 @@
 package irvine.oeis.a277;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A277229 Convolution of the odd-indexed triangular numbers (A000384(n+1)) and the squares (A000290).

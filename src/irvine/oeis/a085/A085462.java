@@ -1,6 +1,6 @@
 package irvine.oeis.a085;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A085462 Number of 5-tuples (v1,v2,v3,v4,v5) of nonnegative integers less than n such that v1&lt;=v4, v1&lt;=v5, v2&lt;=v4 and v3&lt;=v4.

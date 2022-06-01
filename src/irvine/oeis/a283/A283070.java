@@ -1,6 +1,6 @@
 package irvine.oeis.a283;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A283070 Sierpinski tetrahedron or tetrix numbers: a(n) = 2*4^n + 2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114775 Expansion of x^2*(1+x^2)*(1 - x^4 + x^7)/((1 - x^4 + x^6)*(1 - x^4 - x^6)).

@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: (1-3*x-6*x^3-sqrt(1-6*x+9*x^2-12*x^3))/(18*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126189 Number of hex trees with n edges and no adjacent vertices of outdegree 2.

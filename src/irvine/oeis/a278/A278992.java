@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 // egf: (1+sqrt(1-2*x))*(1-2*x)^(-1/2)*exp(-1-x+sqrt(1-2*x))-(2-x)*exp(-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A278992 Number of simple chord-labeled chord diagrams with n chords.

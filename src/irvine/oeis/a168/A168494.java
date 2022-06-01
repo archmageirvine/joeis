@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 // ogf: (1+x-sqrt(1-10*x+25*x^2-12*x^3))/(6*x*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A168494 Sequence with Hankel transform equal to 3^floor(n^2/3).

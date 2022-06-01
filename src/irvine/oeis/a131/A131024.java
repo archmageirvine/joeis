@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 // ogf: (1-3*x+3*x^2-3*x^3+6*x^4-4*x^5+x^6)/((1-x)*(1+x)*(1-2*x)*(1-x+x^2)*(1-3*x+3*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A131024 Row sums of triangular array T: T(j,1) = 1 for ((j-1) mod 6) &lt; 3, else 0; T(j,k) = T(j-1,k-1) + T(j-1,k) for 2 &lt;= k &lt;= j.

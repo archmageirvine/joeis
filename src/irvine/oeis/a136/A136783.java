@@ -1,6 +1,6 @@
 package irvine.oeis.a136;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A136783 Number of multiplex juggling sequences of length n, base state &lt;3&gt; and hand capacity 3.

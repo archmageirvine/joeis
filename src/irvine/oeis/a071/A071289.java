@@ -1,6 +1,6 @@
 package irvine.oeis.a071;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A071289 a(n) = n*(n^2 + 1) if n is even, otherwise (n - 1/2)*(n^2 + 1).

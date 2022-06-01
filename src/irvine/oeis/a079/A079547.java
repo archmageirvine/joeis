@@ -1,6 +1,6 @@
 package irvine.oeis.a079;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A079547 a(n) = ((n^6 - (n-1)^6) - (n^2 - (n-1)^2))/60.

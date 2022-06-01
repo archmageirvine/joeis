@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A011945 Areas of almost-equilateral Heronian triangles (integral side lengths m-1, m, m+1 and integral area).

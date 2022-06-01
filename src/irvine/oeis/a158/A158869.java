@@ -1,6 +1,6 @@
 package irvine.oeis.a158;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A158869 Number of ways of filling a 2 X 3 X 2n hole with 1 X 2 X 2 bricks.

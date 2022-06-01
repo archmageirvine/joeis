@@ -1,6 +1,6 @@
 package irvine.oeis.a201;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A201633 Numbers k such that Sum_{j=0..3} (k + j)^2 is a triangular number.

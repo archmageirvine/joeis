@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 // ogf: (1-x)/sqrt(1-4*x+4*x^2-4*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A162533 a(n) = Sum_{k=0..n} binomial(n,2k)*A002426(k).

@@ -1,6 +1,6 @@
 package irvine.oeis.a252;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A252994 Multiples of 26.

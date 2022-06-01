@@ -1,6 +1,6 @@
 package irvine.oeis.a117;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A117717 Maximal number of regions obtained by a straight line drawing of the complete bipartite graph K_{n,n}.

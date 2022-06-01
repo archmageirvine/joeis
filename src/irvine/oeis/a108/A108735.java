@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // ogf: sqrt(1+12*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108735 Expansion of sqrt(1 + 12*x).

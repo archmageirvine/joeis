@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247850 The 5th Hermite Polynomial evaluated at n: H_5(n) = 32*n^5 - 160*n^3 + 120*n.

@@ -1,6 +1,6 @@
 package irvine.oeis.a146;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A146535 Numerator of (2*n-1)/3.

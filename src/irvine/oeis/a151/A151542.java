@@ -1,6 +1,6 @@
 package irvine.oeis.a151;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A151542 Generalized pentagonal numbers: a(n) = 12*n + 3*n*(n-1)/2.

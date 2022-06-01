@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 // ogf: (2*x-1+sqrt(1-8*x+12*x^2-4*x^3))/(2*x*(x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A215973 a(0) = 1, for n &gt; 0: a(n) = Sum_{k=0..n-1} a(k) * (1 + a(n-1-k)).

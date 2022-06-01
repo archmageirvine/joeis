@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138268 Negative of the Hankel transform of C(n)-C(n+2), where C(n)=A000108(n).

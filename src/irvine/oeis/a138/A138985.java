@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138985 a(n) = Frobenius number for 5 successive numbers = F(n+1,n+2,n+3,n+4,n+5).

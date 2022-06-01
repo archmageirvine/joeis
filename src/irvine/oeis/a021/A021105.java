@@ -1,6 +1,6 @@
 package irvine.oeis.a021;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A021105 Decimal expansion of 1/101.

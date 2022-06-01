@@ -1,7 +1,7 @@
 package irvine.oeis.a056;
 // manually 2022-02-26
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A056103 Numbers k such that k^6 == 1 (mod 7^5).

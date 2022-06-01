@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 // ogf: (1-sqrt(1-16*x))/8
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A052704 Apart from the leading term, a(n) = Catalan(n-1)*4^(n-1).

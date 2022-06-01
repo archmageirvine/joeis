@@ -1,6 +1,6 @@
 package irvine.oeis.a233;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A233325 (2*6^(n+1) - 7) / 5.

@@ -1,6 +1,6 @@
 package irvine.oeis.a246;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A246508 Digital root of numbers congruent to {1,7,11,13,17,19,23,29} modulo 30.

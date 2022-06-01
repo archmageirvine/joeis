@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 // egf: cosh(sqrt(2)*x)+(4+x)/(2*sqrt(2))*sinh(sqrt(2)*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A211227 Row sums of A211226.

@@ -1,6 +1,6 @@
 package irvine.oeis.a112;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A112260 Expansion of -x*(8*x^2-4*x+1) / ((2*x-1)*(4*x^2-x+1)).

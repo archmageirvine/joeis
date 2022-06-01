@@ -1,7 +1,7 @@
 package irvine.oeis.a017;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A017314 a(n) = (10*n + 3)^10.

@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247854 The 9th Hermite Polynomial evaluated at n: H_9(n) = 512*n^9 - 9216*n^7 + 48384*n^5 - 80640*n^3 + 30240*n.

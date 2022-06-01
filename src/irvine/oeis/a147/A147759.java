@@ -1,6 +1,6 @@
 package irvine.oeis.a147;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A147759 Palindromes formed from the reflected decimal expansion of the infinite concatenation of 1's and 0's.

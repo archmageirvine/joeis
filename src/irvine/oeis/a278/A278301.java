@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 // ogf: (1-(1-4*x)^(1/2)+x*(-4+(1-4*x)^(1/2)+(-1+5*x)^(1/2)/(-1+x)^(1/2)))/(-2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A278301 Number of permutations of length n in the class of juxtapositions of 321-avoiders with 21-avoiders.

@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // Recurrence: +3*a[n+0]+(-14*n+9)*a[n-1]+8*(n-1)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308939 Expansion of e.g.f. 1 / (1 - Sum_{k&gt;=1} (2*k - 1)!!*x^k/k!).

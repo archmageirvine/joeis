@@ -1,6 +1,6 @@
 package irvine.oeis.a039;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A039720 Period of n-countdown club-passing juggling pattern.

@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A088163 Numbers for which rotating one binary place to the right less rotating one binary place to the left is equal to zero.

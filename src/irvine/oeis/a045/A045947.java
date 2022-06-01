@@ -1,6 +1,6 @@
 package irvine.oeis.a045;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A045947 Triangles in open triangular matchstick arrangement (triangle minus one side) of side n.

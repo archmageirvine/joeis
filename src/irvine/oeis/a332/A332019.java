@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // ogf: x*(1+7*x+4*x^2+2*x^3-x^4-x^5)/(-1+x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A332019 The number of cells added in the n-th generation of the following procedure: start by coloring any triangle on the snub square tiling, then repeatedly color every cell that shares a vertex with a colored cell.

@@ -1,7 +1,7 @@
 package irvine.oeis.a187;
 // manually (bisect) 2021-07-05
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187366 One half of a trisection of A001700: binomial(6n+5,3(n+1))/2, n&gt;=0.

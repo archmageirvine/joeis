@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // egf: 1-exp(-(1-(1-4*x)^(1/4)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132063 Alternating row sums of Jabotinsky type triangle S2p(-3):= A000369.

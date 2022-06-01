@@ -1,6 +1,6 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A022018 Define the sequence UD(a(0),a(1)) by a(n) is the least integer such that a(n)/a(n-1) &gt; a(n-1)/a(n-2)+1 for even n &gt;= 2 and such that a(n)/a(n-1) &gt; a(n-1)/a(n-2) for odd n&gt;=2. This is UD(2,16).

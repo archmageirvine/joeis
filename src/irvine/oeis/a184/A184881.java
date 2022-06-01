@@ -3,7 +3,7 @@ package irvine.oeis.a184;
 // Recurrence: (n+1)*a[n+0]+2*(2*n-3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A184881 a(n) = A184879(2*n, n) - A184879(2*n, n+1) where A184879(n, k) = Hypergeometric2F1(-2*k, 2*k-2*n, 1, -1) if 0&lt;=k&lt;=n.

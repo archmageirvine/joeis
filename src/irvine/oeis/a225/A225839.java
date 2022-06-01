@@ -1,6 +1,6 @@
 package irvine.oeis.a225;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A225839 Triangular numbers representable as triangular(m) + triangular(2m).

@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // egf: exp(x/sqrt(1-2*x-3*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080896 Expansion of the exponential series exp( x * T(x) ) = exp( x / sqrt(1 - 2*x - 3*x^2) ), where T(x) is the ordinary generating series of the central trinomial coefficients (A002426).

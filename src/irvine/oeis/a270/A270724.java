@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 // ogf: ((-x^2+x+1)*(1-sqrt(1-(4*x^2*(x+1))/(1-x))))/(2*x^2*(1-x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A270724 a(n) = ((n+2)/2)*Sum_{k=0..n/2} (Sum_{i=0..n-2*k} (binomial(k+1,n-2*k-i)*binomial(k+i,k))/(k+1)*C(k)), where C(k) is Catalan numbers.

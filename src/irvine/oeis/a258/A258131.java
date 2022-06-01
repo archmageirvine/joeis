@@ -1,6 +1,6 @@
 package irvine.oeis.a258;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A258131 Octagonal numbers (A000567) that are the sum of eleven consecutive octagonal numbers.

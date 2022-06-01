@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A007450 Decimal expansion of 1/17.

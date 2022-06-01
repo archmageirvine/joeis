@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A028449 Number of perfect matchings in graph P_{2} X P_{5} X P_{n}.

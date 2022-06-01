@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259966 Total binary weight (cf. A000120) of all A005251(n) binary sequences of length n not containing any isolated 1's.

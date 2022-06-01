@@ -1,6 +1,6 @@
 package irvine.oeis.a173;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A173116 a(n) = sinh(2*arcsinh(n))^2 = 4*n^2*(n^2 + 1).

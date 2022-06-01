@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 // Recurrence: n*a[n+0]-2*a[n-1]+4*(2-n)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A210736 Expansion of (1 + sqrt( (1 + 2*x) / (1 - 2*x))) / 2 in powers of x.

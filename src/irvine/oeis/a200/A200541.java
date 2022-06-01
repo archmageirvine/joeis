@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200541 Product of Fibonacci and tribonacci numbers: a(n) = A000045(n+1)*A000073(n+2).

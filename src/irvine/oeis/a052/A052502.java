@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 // Recurrence: a[n+0]=(3*n-1)*(3*n-2)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A052502 Number of permutations sigma of [3n] without fixed points such that sigma^3 = Id.

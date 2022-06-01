@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 // Recurrence: n*a[n+0]+42*(-12*n+13)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A303055 Expansion of (1-504*x)^(1/12).

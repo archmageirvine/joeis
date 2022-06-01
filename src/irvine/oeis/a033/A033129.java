@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A033129 Base-2 digits are, in order, the first n terms of the periodic sequence with initial period [1,1,0].

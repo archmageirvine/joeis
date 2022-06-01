@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: (x^3-x^2+x)/(x^4+3*x^2+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333378 a(n) = F(n) * (-1)^(n*(n-1)/2) where F(n) = A000045(n) Fibonacci numbers.

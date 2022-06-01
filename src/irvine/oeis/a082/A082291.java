@@ -1,6 +1,6 @@
 package irvine.oeis.a082;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A082291 Expansion of x(2 + 5x - x^2)/((1 - x)(1 - 6x + x^2)).

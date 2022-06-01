@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // ogf: (4-5*x-2*x^2-(2+x)*sqrt(1-8*x+4*x^2))/(2*(1-x+2*x^2+x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190736 Diagonal sums of the Riordan matrix A121576.

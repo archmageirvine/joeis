@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137360 a(n) = Sum_{k &lt;= n/2 } k*binomial(n-2k, 3k+1).

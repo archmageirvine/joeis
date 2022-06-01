@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 // Recurrence: a[n+0]=42*a[n-1]-770*a[n-2]+8190*a[n-3]-56854*a[n-4]+275758*a[n-5]-980010*a[n-6]+2645668*a[n-7]-5576808*a[n-8]+9366788*a[n-9]-12715312*a[n-10]+14078260*a[n-11]-12772248*a[n-12]+9499064*a[n-13]-5769584*a[n-14]+2837496*a[n-15]-1113568*a[n-16]+340784*a[n-17]-78416*a[n-18]+12768*a[n-19]-1312*a[n-20]+64*a[n-21]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A293583 Number of compositions of n where each part i is marked with a word of length i over a senary alphabet whose letters appear in alphabetical order and all six letters occur at least once in the composition.

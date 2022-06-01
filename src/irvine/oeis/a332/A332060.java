@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // ogf: x*(1-x-4*x^2-6*x^3-5*x^4)/(1-3*x-x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A332060 a(n) = 3*a(n-1) + a(n-2) after initial values a(0..5) = (0, 1, 2, 3, 5, 13).

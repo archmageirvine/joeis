@@ -1,6 +1,6 @@
 package irvine.oeis.a234;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A234717 a(n) = floor(n/(exp(1/(2*n))-1)).

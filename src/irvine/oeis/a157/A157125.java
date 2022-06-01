@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 // ogf: ((1-x)*(sqrt(1+x^2+4*x^3)-sqrt(1+x^2)))/(2*x^3*sqrt(1+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A157125 A transform of the Catalan numbers.

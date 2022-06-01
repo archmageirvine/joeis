@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215503 a(n) = (u+1)^n + (-s-1)^n + (t+1)^n + (-1)^n + (-t+1)^n + (s-1)^n + (-u+1)^n where s = sqrt(2), t = sqrt(2-s), u = sqrt(2+s).

@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=a[n-2]+a[n-4]-a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330602 a(n) = a(n-1) XOR (n+1), with a(0) = 0.

@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 import irvine.oeis.transform.DhkTransformSequence;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A032253 "DHK" (bracelet, identity, unlabeled) transform of 3,3,3,3,...

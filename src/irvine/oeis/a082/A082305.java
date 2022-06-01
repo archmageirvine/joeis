@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // Recurrence: (n+1)*a[n+0]+8*(1-2*n)*a[n-1]+36*(n-2)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082305 G.f.: (1 - 6*x - sqrt(36*x^2 - 16*x + 1))/(2*x).

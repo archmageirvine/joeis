@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 // ogf: (-9*x^6+2*x^5+x^4+2*x^3+x^2+2*x+11)/(x^7-x^6-x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A320427 a(n) = floor(3*n/2) + ceiling(n/6) + 9.

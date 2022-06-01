@@ -1,6 +1,6 @@
 package irvine.oeis.a268;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A268484 a(n) = (n + 1)*(4*n^2 + 14*n + 9)/3.

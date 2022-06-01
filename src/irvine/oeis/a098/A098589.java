@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098589 a(n) = 3*a(n-1) + 2*a(n-3), with a(0)=1, a(1)=3.

@@ -1,6 +1,6 @@
 package irvine.oeis.a271;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A271567 Convolution of nonzero triangular numbers (A000217) and nonzero tetradecagonal numbers (A051866).

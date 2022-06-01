@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174192 Expansion of (1-x+2x^2)/ ((1-x)*(1-2x-x^2)).

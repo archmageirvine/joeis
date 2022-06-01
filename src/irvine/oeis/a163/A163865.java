@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 // ogf: (1-x-4*x^2)/((1+x)*(1-3*x))^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A163865 The binomial transform of the swinging factorial (A056040).

@@ -1,6 +1,6 @@
 package irvine.oeis.a184;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A184337 a(n) is the integer whose decimal representation consists of n 8's followed by n 1's.

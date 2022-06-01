@@ -1,7 +1,7 @@
 package irvine.oeis.a017;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A017543 a(n) = (12*n + 1)^11.

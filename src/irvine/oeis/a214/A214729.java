@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A214729 Member m=6 of the m-family of sums b(m,n) = Sum_{k=0..n} F(k+m)*F(k), m &gt;= 0, n &gt;= 0, with the Fibonacci numbers F.

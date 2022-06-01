@@ -1,6 +1,6 @@
 package irvine.oeis.a154;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A154247 a(n) = ( (6 + sqrt(7))^n - (6 - sqrt(7))^n )/(2*sqrt(7)).

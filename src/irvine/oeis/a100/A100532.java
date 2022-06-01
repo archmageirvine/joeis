@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100532 The first four numbers of this sequence are the primes 2,3,5,7. The other terms are calculated by adding the previous four terms.

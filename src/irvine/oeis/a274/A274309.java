@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274309 Related to integral generalized binomial coefficients of multiplicative functions (see Comments for precise definition).

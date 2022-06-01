@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 // Recurrence: -(n-2)*(n+1)*(n^3-3*n^2-2*n+12)*a[n+0]-4*n*(n-1)*(2*n-7)*a[n-1]+4*(n-1)*(n-2)*(n^3-5*n+8)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A274707 a(n) = A(n) if n is even else a(n) = A(n)*(n-1)/(n+1) with A(n) = ((n-1)!/ floor((n-1)/2)!^2).

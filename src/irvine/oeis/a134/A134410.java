@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134410 Second-order Lucas numbers; a(n) = (2n+3)*Lucas(n) - n*Lucas(n-1).

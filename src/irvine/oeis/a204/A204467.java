@@ -1,6 +1,6 @@
 package irvine.oeis.a204;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A204467 Number of 3-element subsets that can be chosen from {1,2,...,6*n+3} having element sum 9*n+6.

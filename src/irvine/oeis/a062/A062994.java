@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 // Recurrence: 128*n*(8*n-5)*(4*n-1)*(8*n+1)*(2*n-1)*(8*n-1)*(4*n-3)*(8*n-3)*a[n+0]-81*(9*n-7)*(9*n-5)*(3*n-1)*(9*n-1)*(9*n-8)*(3*n-2)*(9*n-4)*(9*n-2)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A062994 Eighth column of triangle A062993 (without leading zeros). A Pfaff-Fuss or 9-Raney sequence.

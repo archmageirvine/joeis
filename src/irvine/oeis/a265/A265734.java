@@ -1,6 +1,6 @@
 package irvine.oeis.a265;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A265734 Permutation of nonnegative integers: a(n) = n + floor(n/5)*(-1)^(n mod 5).

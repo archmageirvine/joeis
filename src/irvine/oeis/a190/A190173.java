@@ -1,6 +1,6 @@
 package irvine.oeis.a190;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A190173 a(n) = Sum_{1 &lt;= i &lt; j &lt;= n} F(i)*F(j), where F(k) is the k-th Fibonacci number.

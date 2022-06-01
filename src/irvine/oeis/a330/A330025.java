@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // ogf: x*(1+x)*(1+x^2)/(1+x^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A330025 a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).

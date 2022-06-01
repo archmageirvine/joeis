@@ -1,6 +1,6 @@
 package irvine.oeis.a157;
 
-import irvine.oeis.GeneralRecurrence;
+import irvine.oeis.recur.GeneralRecurrence;
 
 /**
  * A157101 A Somos-4 variant.

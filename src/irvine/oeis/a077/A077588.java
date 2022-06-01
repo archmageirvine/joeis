@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 // Recurrence: a[n+0]=3*n^2-3*n+2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A077588 Maximum number of regions into which the plane is divided by n triangles.

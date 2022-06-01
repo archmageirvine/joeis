@@ -1,6 +1,6 @@
 package irvine.oeis.a208;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A208743 Number of subsets of the set {1,2,...,n} which do not contain two elements whose difference is 6.

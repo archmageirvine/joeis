@@ -1,6 +1,6 @@
 package irvine.oeis.a240;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A240933 a(n) = n^10 - n^9.

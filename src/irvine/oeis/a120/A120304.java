@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 // Recurrence: (n+1)*a[n+0]+2*(-3*n+1)*a[n-1]+(9*n-13)*a[n-2]+2*(-2*n+5)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A120304 Catalan number minus 2, or ((2n)!/(n!*(n+1)!) - 2).

@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174506 Continued fraction expansion for exp( Sum_{n&gt;=1} 1/(n*A014448(n)) ), where A014448(n) = (2+sqrt(5))^n + (2-sqrt(5))^n.

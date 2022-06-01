@@ -3,7 +3,7 @@ package irvine.oeis.a295;
 // Recurrence: a[n+0]=(2*n-4)*a[n-3]+(3-3*n)*a[n-2]+(2+n)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A295518 a(n) = e^2 * Sum_{k=0..n-1} Gamma(k + 1, 2).

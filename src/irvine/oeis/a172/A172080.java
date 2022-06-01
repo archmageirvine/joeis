@@ -1,6 +1,6 @@
 package irvine.oeis.a172;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A172080 a(n) = n*(12*n^3 + 10*n^2 - 9*n - 7)/6.

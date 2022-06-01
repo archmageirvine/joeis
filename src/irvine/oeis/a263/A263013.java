@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 // ogf: (1+x^3)/(1+x)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A263013 a(0) = -a(1) = a(2) = 1, a(n) = 0 for n&gt;2.

@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 // ogf: ((x-1)*(-1+3*x+sqrt(1-6*x+x^2)))/(x^2*(3-x+sqrt(1-6*x+x^2)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A268208 Number of paths from (0,0) to (n,n) using only steps North, Northeast and East (i.e., steps E(1,0), D(1,1), and N(0,1)) that do not cross y=x "vertically".

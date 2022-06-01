@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 // egf: exp(4*x)/(1-4*x)^(1/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A094856 E.g.f.: exp(4x)/(1-4x)^(1/4).

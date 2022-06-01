@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // ogf: (1+7*x-sqrt(49*x^2-18*x+1))/(16*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082147 a(0)=1; for n &gt;= 1, a(n) = Sum_{k=0..n} 8^k*N(n,k) where N(n,k) = (1/n)*C(n,k)*C(n,k+1) are the Narayana numbers (A001263).

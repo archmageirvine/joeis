@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144844 a(n) = ((2 + sqrt(2))^n - (2 - sqrt(2))^n)^2/8.

@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 // ogf: ((1+x)*(1-3*x-(1-x)*sqrt(1-4*x)))/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A280891 Number of certain noncrossing set partitions.

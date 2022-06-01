@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 // egf: (x*(1+x-(x^2-6*x+1)^(1/2)))/8+x^2/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A266758 E.g.f.: x*(1+x-(x^2-6*x+1)^(1/2))/8 + x^2/2.

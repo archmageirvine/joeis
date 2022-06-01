@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133379 Vector Markov with characteristic polynomial: 160264 + 80136 x - 49 x^2 - x^3.

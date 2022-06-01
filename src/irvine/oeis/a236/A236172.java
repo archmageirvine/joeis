@@ -1,6 +1,6 @@
 package irvine.oeis.a236;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A236172 a(n) = ( a(n-2)*(3*a(n-3) + a(n-2)) + a(n-1)*(a(n-1) + 2*a(n-2) + a(n-3)) ) / ( 2*a(n-3) - a(n-2) - 3*a(n-1) ), with a(0)=-3, a(1)=1, a(2)=-2, a(3)=2.

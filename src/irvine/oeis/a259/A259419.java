@@ -1,7 +1,7 @@
 package irvine.oeis.a259;
 // manually somos4 at 2022-05-31 19:26
 
-import irvine.oeis.GeneralRecurrence;
+import irvine.oeis.recur.GeneralRecurrence;
 
 /**
  * A259419 A Somos-4 like sequence connected with the elliptic curve y^2 + y = x^3 - 3x + 4.

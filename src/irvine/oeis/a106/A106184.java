@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 // Recurrence: n*a[n+0]+2*(1-2*n)*a[n-1]+8*(1-n)*a[n-2]+16*(2*n-3)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A106184 Expansion of 1/sqrt(1-4*x-8*x^2+32*x^3).

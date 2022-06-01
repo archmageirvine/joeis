@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A026048 (d(n)-r(n))/5, where d = A026046 and r is the periodic sequence with fundamental period (1,0,4,0,0).

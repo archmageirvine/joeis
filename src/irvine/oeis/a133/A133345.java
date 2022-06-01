@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133345 a(n)=2a(n-1)+14a(n-2) for n&gt;1, a(0)=1, a(1)=1.

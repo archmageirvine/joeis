@@ -1,6 +1,6 @@
 package irvine.oeis.a158;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A158745 a(3n)=A130750(n). a(3n+1)=A130752(n). a(3n+2)=A130755(n).

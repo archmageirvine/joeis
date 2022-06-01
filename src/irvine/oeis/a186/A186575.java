@@ -1,6 +1,6 @@
 package irvine.oeis.a186;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A186575 Expansion of (1 + 2*x + 6*x^2)/(1 - x - x^2 - 2*x^3) in powers of x.

@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 // Recurrence: a[n+0]=4*a[n-1]+a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A155179 a(n)=4*a(n-1)+a(n-2), n&gt;2; a(0)=1, a(1)=3, a(2)=12.

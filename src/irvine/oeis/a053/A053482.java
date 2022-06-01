@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: exp(x)*(2/(1-2*x)-1/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053482 Binomial transform of A029767.

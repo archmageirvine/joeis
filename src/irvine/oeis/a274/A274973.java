@@ -1,6 +1,6 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A274973 Centered cubohemioctahedral numbers: a(n) = 2*n^3+9*n^2+n+1.

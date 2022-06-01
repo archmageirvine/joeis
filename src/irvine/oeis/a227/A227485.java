@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // ogf: (1165+772926*x+4259002*x^2-23338464*x^3+8025448*x^4+35155008*x^5+2325120*x^6)/((1-x)*(1-2*x)^3*(1-4*x)^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A227485 The hyper-Wiener index of the dendrimer D_4[n], defined pictorially in the A. R. Ashrafi et al. reference.

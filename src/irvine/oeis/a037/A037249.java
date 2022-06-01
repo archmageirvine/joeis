@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // Recurrence: a[n+0]=n^24*(n^2-1)*(n^6-1)*(n^8-1)*(n^12-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A037249 a(n) = n^24*(n^2-1)*(n^6-1)*(n^8-1)*(n^12-1).

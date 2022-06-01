@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278330 Number of tilings of a 5 X n rectangle using n pentominoes of shapes P, U, X.

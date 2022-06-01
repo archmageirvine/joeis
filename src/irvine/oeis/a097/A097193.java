@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 // ogf: (1-(1-27*x)^(1/9))/(3*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A097193 G.f. A(x) satisfies A097191(x*A(x)) = A(x) and so equals the ratio of the g.f.s of any two adjacent diagonals of triangle A097190.

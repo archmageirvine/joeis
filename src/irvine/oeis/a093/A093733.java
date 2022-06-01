@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 // ogf: x*(96368590080*x^9+27682953984*x^8-13185435000*x^7+774468980*x^6+143028190*x^5-19071533*x^4+626800*x^3+6970*x^2-470*x-1)/((6*x-1)*(7*x-1)*(8*x-1)*(9*x-1)*(10*x-1)*(11*x-1)*(14*x-1)*(17*x-1)*(18*x-1)*(32*x-1)*(63*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A093733 Number of connected relations.

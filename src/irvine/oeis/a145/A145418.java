@@ -1,7 +1,7 @@
 package irvine.oeis.a145;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A145418 Number of Hamiltonian cycles in P_8 X P_n.

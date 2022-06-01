@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 // Recurrence: a[n+0]=4*a[n-1]+3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A140529 a(n) = 6*4^n - 1.

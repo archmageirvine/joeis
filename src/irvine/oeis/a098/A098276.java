@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // egf: x+((1-x)^2/(1+x)+x/(1+x)^2)*exp(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098276 Difference between the number of even reduced Latin rectangles of size 3 X n and the number of odd ones.

@@ -1,6 +1,6 @@
 package irvine.oeis.a115;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A115525 Periodic {1,1,-2,0,1,0,-1,0,0,1,-1,-1}.

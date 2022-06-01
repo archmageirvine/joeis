@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // Recurrence: (n+1)(n-2)*a[n+0]-(11*n^2-20*n-6)*a[n-1]+5*(7*n^2-19*n+7)*a[n-2]-25*(n-1)(n-3)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129173 Total area below all skew Dyck paths of semilength n.

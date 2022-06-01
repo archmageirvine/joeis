@@ -1,7 +1,7 @@
 package irvine.oeis.a333;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A333348 Matching number of the tree of n vertices with the largest number of maximum matchings.

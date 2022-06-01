@@ -1,6 +1,6 @@
 package irvine.oeis.a261;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A261480 Number of set partitions of [n] into exactly four parts such that no part contains two elements with a circular distance less than three.

@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 // ogf: 1/sqrt(1-4*x)+x/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A244174 Number of compositions of 3n in which the minimal multiplicity of parts equals n.

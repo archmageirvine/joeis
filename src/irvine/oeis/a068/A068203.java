@@ -1,6 +1,6 @@
 package irvine.oeis.a068;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A068203 Chebyshev T-polynomials T(n,15) with Diophantine property.

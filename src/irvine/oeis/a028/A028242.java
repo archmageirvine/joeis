@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A028242 Follow n+1 by n. Also (essentially) Molien series of 2-dimensional quaternion group Q_8.

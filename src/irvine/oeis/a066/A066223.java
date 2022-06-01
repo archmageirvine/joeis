@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 // egf: exp(x/(1-2*x))/sqrt(1-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A066223 Bisection of A000085.

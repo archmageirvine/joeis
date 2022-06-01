@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 // egf: log(1-x)^2/(1-x)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A193446 a(n) = n! * Sum_{k=1..n-1} H(k)*H(n-k) for n&gt;=2, where H(n) is the n-th harmonic number.

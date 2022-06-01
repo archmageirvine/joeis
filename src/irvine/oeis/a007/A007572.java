@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A007572 Generalization of the golden ratio (expansion of (5-13x)/((1+x)(1-4x))).

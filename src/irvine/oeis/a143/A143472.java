@@ -1,6 +1,6 @@
 package irvine.oeis.a143;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A143472 Expansion of 1/(1 - x^3 - x^5 - x^7 + x^10), inverse of a Salem polynomial.

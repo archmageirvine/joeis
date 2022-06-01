@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 // egf: 3-2*(1-3*x)^(2/3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A091541 Four times triple factorials (3*n-2)!!! with leading 1 added.

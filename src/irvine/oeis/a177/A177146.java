@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // egf: arctan(x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177146 n-th derivative of arctan(x) at x = 1, n &gt;= 4.

@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A055607 a(2n+1) = n^2 - 1 + A002620(n), a(2n) = a(2n-1) + n.

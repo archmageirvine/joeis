@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // ogf: (sqrt(1+4*x+8*x^2)-1-2*x)/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104565 Reversion of Pell numbers A000129(n+1).

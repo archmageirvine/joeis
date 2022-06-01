@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // ogf: (-1+(1-25*x)^(-1/5))/5
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034687 Related to quintic factorial numbers A008548.

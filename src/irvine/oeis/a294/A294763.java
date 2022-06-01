@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 // Recurrence: a[n+0]=10*a[n-1]-45*a[n-2]+120*a[n-3]-210*a[n-4]+252*a[n-5]-210*a[n-6]+120*a[n-7]-45*a[n-8]+10*a[n-9]-a[n-10]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A294763 Number of permutations of [n] avoiding {4231, 1324, 1234}.

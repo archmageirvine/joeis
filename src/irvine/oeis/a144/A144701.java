@@ -1,6 +1,6 @@
 package irvine.oeis.a144;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A144701 Hankel transform of expansion of 1/c(x)^3, c(x) the g.f. of A000108.

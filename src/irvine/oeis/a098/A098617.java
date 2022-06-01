@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // Recurrence: n*a[n+0]=12*(n-1)*a[n-2]-32*(n-3)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098617 G.f. A(x) satisfies: A(x*G(x)) = G(x), where G(x) is the g.f. for A098616(n) = Pell(n+1)*Catalan(n).

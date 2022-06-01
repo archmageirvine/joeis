@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289006 Conversion to octal of the binary expansion given by the first n terms of the period-3 sequence A011655 (repeat 0, 1, 1).

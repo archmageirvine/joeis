@@ -1,6 +1,6 @@
 package irvine.oeis.a228;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A228913 a(n) = 11^n-10*10^n+45*9^n-120*8^n+210*7^n-252*6^n+210*5^n-120*4^n+45*3^n-10*2^n+1.

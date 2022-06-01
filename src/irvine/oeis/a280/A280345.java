@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280345 a(0) = 3, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [1, -2].

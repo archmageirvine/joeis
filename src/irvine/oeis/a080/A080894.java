@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // egf: exp((1-x-sqrt(1-2*x-3*x^2))/(2*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080894 Expansion of the exponential series exp( x M(x) ) = exp( (1-sqrt(1-2x-3x^2))/(2x) ), where M(x) is the ordinary generating series of the Motzkin numbers A001006.

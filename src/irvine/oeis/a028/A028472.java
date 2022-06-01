@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A028472 Number of perfect matchings in graph P_{10} X P_{n}.

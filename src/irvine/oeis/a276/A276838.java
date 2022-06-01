@@ -1,6 +1,6 @@
 package irvine.oeis.a276;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A276838 Number of permutations of [n] such that for each cycle c the smallest integer interval containing all elements of c has at most four elements.

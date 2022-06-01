@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A027084 G.f.: x^2*(x^2 + x + 1)/(x^4 - 2*x + 1).

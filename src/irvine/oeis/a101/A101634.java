@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101634 Subtract 1, multiply by 1, subtract 2, multiply by 2, etc.

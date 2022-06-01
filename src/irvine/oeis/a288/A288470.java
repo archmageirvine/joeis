@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 // Recurrence: n*(2*n-1)*a[n+0]=(32*(n-2))*(2*n-5)*a[n-3]+(8*(9*n^2-31*n+28))*a[n-2]+(2*(3*n^2+7*n-9))*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A288470 a(n) = Sum_{k=0..n} binomial(n,k)*binomial(2*n,2*k).

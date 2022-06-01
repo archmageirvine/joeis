@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A005120 A sixth-order linear divisibility sequence: a(n+6) = -3*a(n+5) - 5*a(n+4) - 5*a(n+3) - 5*a(n+2) - 3*a(n+1) - a(n).

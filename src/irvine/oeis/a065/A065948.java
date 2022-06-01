@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 // egf: (-1/81)*(1+6*x)^(-5/2)*((-99*x^2-54*x-4)*sqrt(1+6*x)+(-54*x^3+66*x+4))*exp(-(1-sqrt(1+6*x))/3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A065948 Bessel polynomial {y_n}''(-3).

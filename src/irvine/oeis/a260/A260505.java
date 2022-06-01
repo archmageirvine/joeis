@@ -1,6 +1,6 @@
 package irvine.oeis.a260;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A260505 Number of binary words of length n with exactly one occurrence of subword 010 and exactly two occurrences of subword 101.

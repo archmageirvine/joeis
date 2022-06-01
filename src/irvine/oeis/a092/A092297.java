@@ -1,6 +1,6 @@
 package irvine.oeis.a092;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A092297 Number of ways of 3-coloring an annulus consisting of n zones joined like a pearl necklace.

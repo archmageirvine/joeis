@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 // Recurrence: n^2*a[n+0]-6*(2*n-1)^2*a[n-1]+4*(2*n-1)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A268555 Diagonal of the rational function of six variables 1/((1 - w - u v - u v w) * (1 - z - x y)).

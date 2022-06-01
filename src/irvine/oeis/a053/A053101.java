@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: 1/(1-6*x)^(7/3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053101 a(n) = ((6*n+8)(!^6))/8(!^6), related to A034689 (((6*n+2)(!^6))/2 sextic, or 6-factorials).

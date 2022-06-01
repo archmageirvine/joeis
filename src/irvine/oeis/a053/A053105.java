@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 // egf: 1/(1-7*x)^(16/7)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A053105 a(n) = ((7*n+9)(!^7))/9(!^7), related to A034829 (((7*n+2)(!^7))/2 sept-, or 7-factorials).

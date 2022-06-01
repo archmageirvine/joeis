@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // ogf: (-x^10-3*x^9+3*x^8+2*x^7+4*x^5-5*x^4+3*x^2-3*x+4)/((1+x)*(-1+x)^2*(1+x^2)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A283879 An eventually quasilinear solution to Hofstadter's Q recurrence.

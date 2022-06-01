@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289807 p-INVERT of (1,2,2,3,3,4,4,...) (A080513), where p(S) = 1 - S - S^2.

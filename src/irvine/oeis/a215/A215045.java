@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215045 a(n) = F(2*n+1)^5 with n &gt;= 0, F=A000045 (Fibonacci numbers).

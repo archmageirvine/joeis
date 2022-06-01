@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 // Recurrence: 1440*a[n+0]=(n+1)(n+2)^3*(n+3)^2*(n+4)(3*n+5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A107968 a(n) = (n+1)(n+2)^3*(n+3)^2*(n+4)(3n+5)/1440.

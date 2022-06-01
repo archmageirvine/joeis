@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 // Recurrence: a[n+0]=28*a[n-1]-2*(n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A158545 a(n) = Hermite(n,14).

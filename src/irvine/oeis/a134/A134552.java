@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 // ogf: x/((-1+x+x^6)^4*(-1+2*x+x^6)*(-1+46*x+21*x^6))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A134552 G.f.: 1/(x^36*p(1/x)), where p(x)=(-1 - x^5 + x^6)^4*(-1 - 2*x^5 + x^6)*(-21 - 46 x^5 + x^6).

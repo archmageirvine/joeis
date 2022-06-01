@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // Recurrence: (n+3)*(n+2)*a[n+0]-18*(n+1)^2*a[n-1]+8*(2*n-1)^2*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A227169 a(n) = 3*((2*n+2)!)^2 / (n!*(n+1)!*(n+2)!*(n+3)!).

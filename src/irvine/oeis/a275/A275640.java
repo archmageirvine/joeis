@@ -1,6 +1,6 @@
 package irvine.oeis.a275;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A275640 Expansion of (1-q)^k/Product_{j=1..k} (1-q^j) for k=6.

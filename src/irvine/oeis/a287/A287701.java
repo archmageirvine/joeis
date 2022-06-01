@@ -1,6 +1,6 @@
 package irvine.oeis.a287;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A287701 a(n) = (5!)^3 * [z^5] hypergeom([], [1,1], z)^n.

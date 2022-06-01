@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // egf: (1-x/2)/sqrt(1-x^2/4)*arccos(1-x^2/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A111942 Column 0 of the matrix logarithm (A111941) of triangle A111940, which shifts columns left and up under matrix inverse; these terms are the result of multiplying the element in row n by n!.

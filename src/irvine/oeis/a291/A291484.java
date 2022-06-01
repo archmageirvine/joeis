@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 // Recurrence: a[n+3]-a[n+2]-(n+1)*(n+2)*a[n+1]+(n+1)*(n+2)*a[n+0]=1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A291484 Expansion of e.g.f. arctanh(x)*exp(x).

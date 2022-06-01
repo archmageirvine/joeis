@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // Recurrence: (n^4*a[n+0]-16*(4*n-1)*(4*n-3)*(-1+2*n)^2*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307618 A Calabi-Yau period integral: a(n) = C(4*n,2*n)*C(2*n,n)^3.

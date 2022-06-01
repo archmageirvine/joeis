@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // Recurrence: n^2*a[n+0]-4*(2*n-1)^2*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A060150 a(0) = 1; for n &gt; 0, binomial(2n-1, n-1)^2.

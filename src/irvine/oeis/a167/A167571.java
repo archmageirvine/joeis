@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 // egf: 1/(4*sqrt(x))*log((1-3*x+2*x^(3/2))/(1-3*x-2*x^(3/2)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A167571 The row sums of triangle A167569.

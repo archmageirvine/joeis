@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A072827 Number of permutations satisfying i-2&lt;=p(i)&lt;=i+3, i=1..n.

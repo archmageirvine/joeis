@@ -1,6 +1,6 @@
 package irvine.oeis.a270;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A270346 a(n) is the number whose base-11 digits are, in order, the first n terms of the simple periodic sequence: repeat 2,3,5,7.

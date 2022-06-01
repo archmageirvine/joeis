@@ -1,6 +1,6 @@
 package irvine.oeis.a134;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A134175 a(n) = (32/2)*(n-1)*(n-2)*(n-3)*(n-4).

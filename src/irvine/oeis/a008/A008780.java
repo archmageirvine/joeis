@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A008780 a(n) = (n-dimensional partitions of 6) + C(n,4) + C(n,3).

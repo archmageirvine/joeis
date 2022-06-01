@@ -1,6 +1,6 @@
 package irvine.oeis.a251;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A251895 Numbers n such that the sum of the octagonal numbers N(n) and N(n+1) is equal to another octagonal number.

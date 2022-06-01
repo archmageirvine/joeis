@@ -4,6 +4,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * Coordination sequence for a zeolite defined by a generating function.

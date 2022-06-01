@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 // DO NOT EDIT here!
 
 import irvine.oeis.transform.EulerTransformSequence;
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A161293 Number of partitions of n into numbers not divisible by 4 where every part appears at least 2 times.

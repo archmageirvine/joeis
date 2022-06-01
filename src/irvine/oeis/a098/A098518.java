@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // ogf: (2*x)/(1-2*x-7*x^2+(1-x)*sqrt(1-2*x-7*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A098518 E.g.f. exp(x)*BesselI(1,2*sqrt(2)*x)/sqrt(2).

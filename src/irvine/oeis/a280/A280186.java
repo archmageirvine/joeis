@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280186 Number of 3-element subsets of S = {1..n} whose sum is odd.

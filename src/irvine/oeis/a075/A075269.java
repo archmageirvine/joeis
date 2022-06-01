@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A075269 Product of Lucas numbers and inverted Lucas numbers: a(n)=A000032(n)*A075193(n).

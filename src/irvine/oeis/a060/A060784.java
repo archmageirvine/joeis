@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 // Recurrence: 2*a[n+0]=n*(n-2)*(n-3)*(n+3)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A060784 Number of double tangents of order n.

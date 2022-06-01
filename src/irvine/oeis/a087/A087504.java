@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087504 Composition length of the n-th symmetric power of the natural representation of a finite subgroup of SL(2,C) of type E_7 (binary octahedral group).

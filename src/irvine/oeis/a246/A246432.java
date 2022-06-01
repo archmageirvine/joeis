@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 // ogf: (1+sqrt(1-4*x))/2-2*x
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A246432 Convolution inverse of A001700.

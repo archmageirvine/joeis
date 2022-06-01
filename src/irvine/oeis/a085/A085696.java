@@ -1,6 +1,6 @@
 package irvine.oeis.a085;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A085696 a(n) = L(n) * L(n+1) * L(n+2) / 2, where L(n) = Lucas number (A000032).

@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // ogf: (1-2*x+4*x^3)/(2*x^2*(1-2*x)*sqrt(1-4*x^2))-1/(2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088662 Number of peaks at even level in all symmetric Dyck paths of semilength n+2.

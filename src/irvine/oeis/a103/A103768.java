@@ -1,6 +1,6 @@
 package irvine.oeis.a103;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A103768 (29*3^n - 18(n + 3)*2^n + 6n^2 + 24n + 27)/12.

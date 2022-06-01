@@ -1,6 +1,6 @@
 package irvine.oeis.a244;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A244352 Pell(n)^3 - Pell(n)^2, where Pell(n) is the n-th Pell number (A000129).

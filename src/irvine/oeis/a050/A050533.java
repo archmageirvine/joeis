@@ -1,6 +1,6 @@
 package irvine.oeis.a050;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A050533 Thickened pyramidal numbers: a(n) = 2*(n+1)*n + Sum_{i=1..n} (4*i*(i-1) + 1).

@@ -1,6 +1,6 @@
 package irvine.oeis.a170;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A170832 a(n) = 3^(floor(n/2))+3^(floor(n/2)-1)-3^(floor((n-1)/3)).

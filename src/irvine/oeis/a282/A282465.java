@@ -1,6 +1,6 @@
 package irvine.oeis.a282;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A282465 a(n) = 11*Fibonacci(n+3) + Fibonacci(n-8) with n&gt;=0.

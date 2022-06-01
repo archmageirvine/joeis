@@ -1,6 +1,6 @@
 package irvine.oeis.a087;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A087483 Row 0 of the order array of 3/2, i.e., row 0 of the transposable dispersion in A087465.

@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090392 Seventh diagonal (m=6) of triangle A084938; a(n) = A084938(n+6,n) = (n^6 + 45*n^5 + 925*n^4 + 11475*n^3 + 92314*n^2 + 413640*n)/720.

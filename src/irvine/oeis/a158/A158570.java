@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 // ogf: -x*(1+2*x+4*x^2+x^3+x^4+2*x^5+5*x^6+x^7)/((x-1)*(1+x)*(x^2+1)*(x^4+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A158570 a(n) = A007814((2n-1)!! + 1).

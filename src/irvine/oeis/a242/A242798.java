@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 // Recurrence: 2*(n-1)*(2*n-1)*(91*n^3-531*n^2+962*n-516)*a[n+0]=(2821*n^5-21921*n^4+62005*n^3-75435*n^2+33274*n-24)*a[n-1]-(2821*n^5-21921*n^4+62005*n^3-75435*n^2+33274*n-24)*a[n-2]+3*(3*n-8)*(3*n-7)*(91*n^3-258*n^2+173*n+6)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A242798 Expansion of -x*d(log((1-x*(2/sqrt(3*x)) * sin((1/3) * arcsin(sqrt(27*x/4))))))/dx.

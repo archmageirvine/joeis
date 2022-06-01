@@ -1,6 +1,6 @@
 package irvine.oeis.a147;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A147537 Numbers whose binary representation is the concatenation of 2n-1 digits 1 and n digits 0.

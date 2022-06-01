@@ -1,6 +1,6 @@
 package irvine.oeis.a118;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A118263 a(3n) = 2^n, a(3n+1) = 3^n, a(3n+2) = 4^n.

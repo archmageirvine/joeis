@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200561 Expansion of -2*x / ( (2*x-1)*(4*x^2+3*x+1) ).

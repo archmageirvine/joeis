@@ -1,6 +1,6 @@
 package irvine.oeis.a214;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A214525 a(n) = 7*a(n-1) - 23*a(n-2) + 49*a(n-3) - 49*a(n-4) with a(0)=0, a(1)=1, a(2)=7, a(3)=19.

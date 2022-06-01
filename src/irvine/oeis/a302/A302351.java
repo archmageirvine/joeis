@@ -1,6 +1,6 @@
 package irvine.oeis.a302;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A302351 Hyper-Wiener index of body-centered cubic grid cells in a row.

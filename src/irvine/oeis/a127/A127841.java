@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127841 a(1)=1, a(2)=...=a(7)=0, a(n) = a(n-7)+a(n-6) for n&gt;7.

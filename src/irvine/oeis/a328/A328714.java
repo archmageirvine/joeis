@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: n^4*a[n+0]=(5*n^4-10*n^3+10*n^2-5*n+1)*a[n-1]+(n-1)^2*(70*n^2-140*n+113)*a[n-2]-(n-2)*(n-1)*(230*n^2-690*n+583)*a[n-3]-789*(n-3)*(n-2)^2*(n-1)*a[n-4]+945*(n-4)*(n-3)*(n-2)*(n-1)*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328714 Constant term in the expansion of (1 + w + x + y + z + 1/w + 1/x + 1/y + 1/z)^n.

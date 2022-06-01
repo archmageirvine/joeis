@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // Recurrence: n^2*(n+1)*(4*n^3-13*n^2-3*n+24)*a[n+0]=2*n*(8*n^5-14*n^4-67*n^3+152*n^2-67*n+12)*a[n-1]+8*(8*n^6-66*n^5+156*n^4+6*n^3-461*n^2+543*n-180)*a[n-2]-32*(n-3)*(n-2)*(2*n-5)*(4*n^3-n^2-17*n+12)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132889 Sum of the lengths of the longest increasing subsequence over all 321-avoiding permutations of [n].

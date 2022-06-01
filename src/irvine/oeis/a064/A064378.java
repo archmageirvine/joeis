@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 // egf: 2-2*log(1-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A064378 a(0) = 2, a(n) = 2^(n+1)*(n-1)! (n &gt;= 1).

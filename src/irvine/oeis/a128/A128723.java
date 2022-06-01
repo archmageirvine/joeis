@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 // ogf: (3-3*x-sqrt(1-6*x+5*x^2))/(1+3*x+sqrt(1-6*x+5*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A128723 Number of skew Dyck paths of semilength n having no peaks at level 1.

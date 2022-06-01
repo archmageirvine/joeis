@@ -1,6 +1,6 @@
 package irvine.oeis.a203;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A203242 Second elementary symmetric function of the first n terms of (1, 3, 7, 15, 31, ...).

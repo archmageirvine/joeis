@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // Recurrence: a[n+0]=4+8*n+10*n^2+4*n^3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100207 a(n) = 4 + 8*n + 10*n^2 + 4*n^3.

@@ -1,6 +1,6 @@
 package irvine.oeis.a164;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A164552 a(n) = 12*a(n-1)-30*a(n-2) for n &gt; 1; a(0) = 1, a(1) = 10.

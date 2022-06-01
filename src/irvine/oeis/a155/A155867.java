@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 // ogf: (sqrt(1-10*x+19*x^2-10*x^3+x^4)-x^2+3*x-1)/(2*x*(x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A155867 A 'Morgan Voyce' transform of the large Schroeder numbers A006318.

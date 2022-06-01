@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 // Recurrence: (-n+1)*a[n+0]+4*(2*n-3)*a[n-1]+64*(-2*n+5)*a[n-3]+256*(n-3)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A292029 Wiener index of the n-folded cube graph.

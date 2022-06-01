@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 // ogf: (((sqrt(1+64*x^2)+1)*(sqrt(1+64*x^2)-8*x))/2)^(1/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A193619 G.f. A(x) satisfies: A(x)^-2 + A(-x)^-2 = 2 and A(x)^2 - A(-x)^2 = -8*x.

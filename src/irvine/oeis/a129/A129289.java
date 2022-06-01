@@ -1,6 +1,6 @@
 package irvine.oeis.a129;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A129289 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+73)^2 = y^2.

@@ -1,6 +1,6 @@
 package irvine.oeis.a182;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A182465 a(n) = 3a(n-1) - 2a(n-2) with a(0)=28 and a(1)=70.

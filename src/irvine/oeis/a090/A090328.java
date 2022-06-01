@@ -1,6 +1,6 @@
 package irvine.oeis.a090;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A090328 Number of rules of a context-free grammar in Chomsky normal form that generates all permutations of n symbols.

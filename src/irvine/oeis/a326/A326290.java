@@ -3,7 +3,7 @@ package irvine.oeis.a326;
 // ogf: 1+3*x-4*x^2-x*sqrt(1-24*x+16*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A326290 Number of non-crossing n-vertex graphs with loops.

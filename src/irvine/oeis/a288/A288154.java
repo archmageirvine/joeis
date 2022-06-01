@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 // DO NOT EDIT here!
 
 import irvine.oeis.AddConstantSequence;
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 

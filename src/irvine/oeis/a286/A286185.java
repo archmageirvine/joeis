@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 // Recurrence: a[n+0]=6*a[n-1]-11*a[n-2]+4*a[n-3]+5*a[n-4]-2*a[n-5]-a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A286185 Number of connected induced (non-null) subgraphs of the M\u00f6bius ladder graph with 2n nodes.

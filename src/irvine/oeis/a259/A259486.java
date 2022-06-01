@@ -1,6 +1,6 @@
 package irvine.oeis.a259;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A259486 a(n) = 3*n^2 - 3*n + 1 + 6*floor((n-1)*(n-2)/6).

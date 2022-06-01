@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A031982 1(01)^(2n+1).

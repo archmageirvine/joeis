@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 // ogf: -((2*x-1)*(3*x-1)+(x-1)*sqrt(1-4*x^2))/(2*x*(x-1)*(2*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A051920 a(n) = binomial(n, floor(n/2)) + 1.

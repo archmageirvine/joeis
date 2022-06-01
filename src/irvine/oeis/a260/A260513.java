@@ -1,6 +1,6 @@
 package irvine.oeis.a260;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A260513 a(n) = (8*n+13*n^3+3*n^5)/24; also the sum of triangular numbers taken in successive groups of increasing size (see Example).

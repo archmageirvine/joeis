@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138986 a(n) = Frobenius number for 6 successive numbers = F(n+1,n+2,n+3,n+4,n+5,n+6).

@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // ogf: (1-344*x+51428*x^2-4415688*x^3+242115073*x^4-8897167926*x^5+223317141174*x^6-3827454303870*x^7+44109912725856*x^8-331501702734000*x^9+1522496648595168*x^10-3394508914171872*x^11)/((6*x-1)*(54*x-1)*(42*x-1)*(3*x-1)*(9*x-1)*(27*x-1)*(31*x-1)*(26*x-1)*(18*x-1)*(81*x-1)*(36*x-1)*(14*x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A084881 Number of (k,m,n)-multiantichains of multisets with k=3 and m=4.

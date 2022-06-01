@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 // ogf: (1-x^2-sqrt(1-4*x-2*x^2+x^4))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A143330 G.f. satisfies: A(x) = (1 + x*A(x)^2)/(1 - x^2).

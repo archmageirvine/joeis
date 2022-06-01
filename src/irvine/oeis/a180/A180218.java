@@ -1,7 +1,7 @@
 package irvine.oeis.a180;
 // manually simplified 2021-01-28
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A180218 a(n) = (n+2)!*sum(1/k, k=1..n).

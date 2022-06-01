@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // ogf: x/(1-x)+1/(-sqrt(5*x^2-2*x+1)+x+1)*x*(1-(5*x-1)/sqrt(5*x^2-2*x+1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104507 Row sums of triangle A104505, which is equal to the right-hand side of the triangle A084610 of coefficients in (1+x-x^2)^n.

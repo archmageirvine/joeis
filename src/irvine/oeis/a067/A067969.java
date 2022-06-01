@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 // ogf: x*(11-2*x-12*x^2+8*x^3+26*x^4-12*x^5-12*x^6+8*x^7+3*x^8-2*x^9)/((1+x)^4*(x-1)^6)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A067969 Number of nodes in virtual, "optimal", chordal graphs of diameter 5, degree =n+1.

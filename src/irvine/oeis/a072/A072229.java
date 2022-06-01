@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A072229 Witt index of the standard bilinear form &lt;1,1,1,...,1&gt; over the 2-adic rationals.

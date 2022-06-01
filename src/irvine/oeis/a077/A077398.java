@@ -1,6 +1,6 @@
 package irvine.oeis.a077;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A077398 First member of the Diophantine pair (m,k) that satisfies 7*(m^2+m) = k^2+k; a(n)=m.

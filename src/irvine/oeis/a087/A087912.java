@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 // Recurrence: a[n+0]+(-2*n-1)*a[n-1]+(n-1)^2*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A087912 Exponential generating function is exp(2*x/(1-x))/(1-x).

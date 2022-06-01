@@ -1,6 +1,6 @@
 package irvine.oeis.a123;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A123020 Expansion of (1 -5*x +5*x^2)/((1 -2*x)*(1 -4*x +x^2)).

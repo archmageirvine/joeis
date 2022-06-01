@@ -1,6 +1,6 @@
 package irvine.oeis.a273;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A273624 a(n) = (1/11)*(Fibonacci(4*n) + Fibonacci(6*n)).

@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // Recurrence: n*a[n+0]+5*(-2*n+1)*a[n-1]+9*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084771 Coefficients of expansion of 1/sqrt(1 - 10*x + 9*x^2); also, a(n) is the central coefficient of (1 + 5*x + 4*x^2)^n.

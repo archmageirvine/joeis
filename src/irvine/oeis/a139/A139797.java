@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 // ogf: -x^4/((2*x-1)*(x^2-x+1)*(x+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A139797 Inverse binomial transform of [0, A133474].

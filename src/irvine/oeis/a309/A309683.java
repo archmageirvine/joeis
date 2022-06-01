@@ -3,7 +3,7 @@ package irvine.oeis.a309;
 // Recurrence: a[n+0]=a[n-1]+a[n-2]-a[n-3]+a[n-6]-a[n-7]-a[n-8]+a[n-9]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A309683 Number of odd parts appearing among the smallest parts of the partitions of n into 3 parts.

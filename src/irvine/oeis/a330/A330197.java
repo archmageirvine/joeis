@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=2*a[n-2]+2*a[n-3]-a[n-4]-4*a[n-5]-a[n-6]+2*a[n-7]+2*a[n-8]-a[n-10]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330197 Number of scalene triangles whose vertices are the vertices of a regular n-gon.

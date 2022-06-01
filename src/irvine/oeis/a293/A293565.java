@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 // egf: exp(x/(x^3-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A293565 E.g.f.: Product_{m&gt;=0} exp(-x^(3*m+1)).

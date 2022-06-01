@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: (2*(1+3*x-sqrt(1-6*x+5*x^2)))/(1-3*x+sqrt(1-6*x+5*x^2))^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126187 Sum of the levels of the first leaf (in the preorder traversal) over all hex trees with n edges.

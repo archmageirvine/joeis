@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 // ogf: (1-12*x+1494*x^2+380888*x^3+17292525*x^4+248136510*x^5+1532347656*x^6+4916629962*x^7+9347647209*x^8+11464268960*x^9+9347652702*x^10+4916635404*x^11+1532337619*x^12+248138478*x^13+17294340*x^14+380562*x^15+1302*x^16)/((1-x)^15*(1+x)*(1+x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A274253 Number of partitions of n^7 into at most three parts.

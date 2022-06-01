@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // Recurrence: a[n+0]+(-2*n+3)*a[n-1]+(-4*n^2+16*n-13)*a[n-2]+4*(-2*n+3)*a[n-3]-16*(n-1)*(n-3)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144576 E.g.f.: exp(1-sqrt(1-2*x-4*x^2)).

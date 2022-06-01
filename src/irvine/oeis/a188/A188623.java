@@ -1,6 +1,6 @@
 package irvine.oeis.a188;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A188623 Number of reachable configurations in a chip-firing game on a triangle starting with n chips on one vertex.

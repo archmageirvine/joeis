@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // ogf: (5x^3+4x^2+3x+2)/(1-x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A328943 a(n) = 2 + (n mod 4).

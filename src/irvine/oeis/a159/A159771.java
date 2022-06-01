@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // ogf: (1-2*x+3*x^2-sqrt((1+x^2)*(1-4*x+x^2)))/(4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A159771 Number of n-leaf binary trees that do not contain (()((()())((()())()))) as a subtree.

@@ -1,6 +1,6 @@
 package irvine.oeis.a085;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A085502 Number of (unordered) ways of making change for n dollars using coins of denominations 1, 5, 10, 25, 50 and 100.

@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // Recurrence: a[n+0]=(2*n-1)*a[n-1]-(n-1)*n*a[n-2]+4*(n-2)*(n-1)*a[n-3]-2*(n-3)*(n-2)*(n-1)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A113235 Number of partitions of {1,..,n} into any number of lists of size not equal to 2, where a list means an ordered subset, cf. A000262.

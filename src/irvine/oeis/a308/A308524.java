@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // ogf: (x*(1+8*x+(2*x-1)*sqrt(1-4*x)))/(2*(2+x)*(1-4*x)*(3+4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308524 Number of essentially 3-connected rooted toroidal maps with n edges.

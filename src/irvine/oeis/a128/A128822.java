@@ -1,6 +1,6 @@
 package irvine.oeis.a128;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A128822 Number of solutions to x/3 + y/4 + z/6 &lt; n with x,y,z&gt;=1 .

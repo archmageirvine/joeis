@@ -1,6 +1,6 @@
 package irvine.oeis.a200;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A200993 Triangular numbers, T(m), that are two-thirds of another triangular number; T(m) such that 3*T(m) = 2*T(k) for some k.

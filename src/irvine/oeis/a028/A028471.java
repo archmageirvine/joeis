@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A028471 Number of perfect matchings (or domino tilings) in the graph P_9 X P_2n.

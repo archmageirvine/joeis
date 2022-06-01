@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 // Recurrence: a[n]-(10*n-3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A035276 One seventh of deca-factorial numbers.

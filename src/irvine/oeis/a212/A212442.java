@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212442 G.f.: exp( Sum_{n&gt;=1} A002203(n)^3 * x^n/n ), where A002203 is the companion Pell numbers.

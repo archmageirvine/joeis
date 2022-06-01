@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 // egf: (exp(x)*(x+2*x^2))/(1-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A271476 Total number of burnt pancakes flipped using the Min-bar(n) greedy algorithm.

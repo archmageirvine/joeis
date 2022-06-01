@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 // ogf: (1-4*x^2+6*x^4-x^5-4*x^6+3*x^7+x^8-3*x^9+x^10+2*x^11-x^12)/((1-x)*(1-2*x^2)*(1+x^4)*(1-4*x^2+6*x^4-4*x^6+2*x^8))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A131077 Antidiagonal sums of triangular array T: T(j,1) = 1 for ((j-1) mod 8) &lt; 4, else 0; T(j,k) = T(j-1,k-1) + T(j,k-1) for 2 &lt;= k &lt;= j.

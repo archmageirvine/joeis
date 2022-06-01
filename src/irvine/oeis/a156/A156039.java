@@ -1,6 +1,6 @@
 package irvine.oeis.a156;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A156039 Number of compositions (ordered partitions) of n into 4 parts, where the first is at least as great as each of the others.

@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 // ogf: x*(1-x)^2/((1-x+x^2)*(1+x+x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A112300 Expansion of x * (1 - x)^2 * (1 - x^2) / (1 - x^6) in powers of x.

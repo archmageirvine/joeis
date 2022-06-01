@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // Recurrence: (n+1)*a[n+0]+2*a[n-1]+4*(-n+1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126930 Inverse binomial transform of A005043.

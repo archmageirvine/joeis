@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // Recurrence: (n+1)*a[n+0]+9*(1-2*n)*a[n-1]+49*(n-2)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082366 G.f.: (1 - 7*x - sqrt(49*x^2 - 18*x + 1))/(2*x).

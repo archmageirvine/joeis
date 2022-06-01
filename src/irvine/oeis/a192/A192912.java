@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192912 Coefficient of x in the reduction by (x^3 -&gt; x + 1) of the polynomial F(n+1)*x^n, where F(n)=A000045 (Fibonacci sequence).

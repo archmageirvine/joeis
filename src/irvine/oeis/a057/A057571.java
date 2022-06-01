@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 // Recurrence: (n+1)*(4*n^3-28*n^2+55*n-27)*a[n+0]=2*(8*n^3-48*n^2+52*n+27)*a[n-1]+4*(2*n-1)*(4*n^3-24*n^2+29*n+18)*a[n-2]-16*(2*n-3)*(2*n^2-8*n-1)*a[n-3]-16*(n-3)*(4*n^3-16*n^2+11*n+4)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A057571 Area under Dyck paths.

@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174509 Continued fraction expansion for exp( Sum_{n&gt;=1} 1/(n*A086927(n)) ), where A086927(n) = (5+sqrt(26))^n + (5-sqrt(26))^n.

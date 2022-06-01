@@ -1,6 +1,6 @@
 package irvine.oeis.a159;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A159626 Positive numbers y such that y^2 is of the form x^2+(x+577)^2 with integer x.

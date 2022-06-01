@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280071 Indices of 11-gonal numbers (A051682) that are also centered 11-gonal numbers (A060544).

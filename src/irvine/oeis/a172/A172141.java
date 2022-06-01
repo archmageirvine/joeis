@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 // ogf: -2*x^2*(x^2+2*x+3)*(2*x^2+x+1)/((x-1)^5*(x+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A172141 Number of ways to place 2 nonattacking nightriders on an n X n board.

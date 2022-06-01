@@ -1,7 +1,7 @@
 package irvine.oeis.a067;
 // manually holos 2021-08-17
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A067630 Denominators in power series for cos(x)*cosh(x).

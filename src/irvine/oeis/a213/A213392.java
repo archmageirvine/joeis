@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213392 Number of (w,x,y) with all terms in {0,...,n} and 2*max(w,x,y) &gt;= 3*min(w,x,y).

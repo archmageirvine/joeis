@@ -1,6 +1,6 @@
 package irvine.oeis.a229;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A229702 Expansion of 1/((1-x)^4*(1-6x)).

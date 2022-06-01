@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A026937 a(n) = Sum_{k=0..n} (k+1)*T(n,n-k), where T is given by A008288.

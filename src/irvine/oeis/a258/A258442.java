@@ -1,7 +1,7 @@
 package irvine.oeis.a258;
 
 import irvine.math.z.Z;
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A258442 9-gonal numbers (A001106) that are the sum of eight consecutive 9-gonal numbers.

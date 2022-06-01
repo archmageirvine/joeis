@@ -1,6 +1,6 @@
 package irvine.oeis.a210;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A210428 Number of semistandard Young tableaux over all partitions of 6 with maximal element &lt;= n.

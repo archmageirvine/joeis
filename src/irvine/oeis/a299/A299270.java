@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 // Recurrence: (6+4*n)*a[n+0]+(-18-8*n)*a[n+1]+(18+8*n)*a[n+2]+12*a[n+3]+(-54-8*n)*a[n+4]+(9*n+63)*a[n+5]+(-39-5*n)*a[n+6]+(9+n)*a[n+7]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A299270 Number of Motzkin paths of length n with all ascents ending at even heights.

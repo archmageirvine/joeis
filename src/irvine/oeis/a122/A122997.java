@@ -1,6 +1,6 @@
 package irvine.oeis.a122;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A122997 Pentanacci numbers for following initial values: a(0) = 1, a(1) = -1, a(2) = 1, a(3) = -1, a(4) = 1.

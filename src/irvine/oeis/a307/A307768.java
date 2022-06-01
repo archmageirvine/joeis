@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // ogf: (1-sqrt(1-4*x^2))/(1-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307768 Number of n-step random walks on a line starting from the origin and returning to it at least once.

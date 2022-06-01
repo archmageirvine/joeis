@@ -1,6 +1,6 @@
 package irvine.oeis.a072;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A072819 Variance of time for a random walk starting at 0 to reach one of the boundaries at +n or -n for the first time.

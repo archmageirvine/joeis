@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 // egf: 3*(x-2)*log(1-x)-5*x+x^2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A083746 a(1) = 1, a(2) = 2; for n&gt;2, a(n) = 3*(n-2)*(n-2)!.

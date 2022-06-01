@@ -1,6 +1,6 @@
 package irvine.oeis.a296;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A296996 Number of nonequivalent (mod D_8) ways to place 3 points on an n X n point grid so that no point is equally distant from two other points on the same row or the same column.

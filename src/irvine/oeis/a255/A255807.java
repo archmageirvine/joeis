@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 // Recurrence: a[n+0]=(4*n-3)*a[n-1]-2*(n-1)*(3*n-8)*a[n-2]+(n-1)*(n-2)*(4*n-11)*a[n-3]-(n-1)*(n-2)*(n-3)*(n-4)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A255807 E.g.f.: exp(Sum_{k&gt;=1} k^2 * x^k).

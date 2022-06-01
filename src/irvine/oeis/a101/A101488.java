@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // ogf: ((1-4*x)^(3/2)-1+8*x-2*x^2)/(2*x*(1+x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101488 Number of naturally embedded binary trees with n nodes that have no label greater than 0.

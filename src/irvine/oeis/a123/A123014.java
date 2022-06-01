@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 // egf: ((1+x)/(1-x))^(1/3)*((1+x+x^2)/(1-x+x^2))^(1/6)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A123014 E.g.f.: ((1+x)/(1-x))^(1/3)*((1+x+x^2)/(1-x+x^2))^(1/6).

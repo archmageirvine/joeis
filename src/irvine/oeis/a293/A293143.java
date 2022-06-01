@@ -1,6 +1,6 @@
 package irvine.oeis.a293;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A293143 Number of vertex points in a Sierpinski Carpet grid subdivided into squares: a(n+1) = 8*a(n) - 8*(3^n+1), a(0) = 4.

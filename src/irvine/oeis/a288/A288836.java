@@ -1,6 +1,6 @@
 package irvine.oeis.a288;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A288836 a(n) = (1/3!)*3^(n+1)*(n+5)*(n+1)*(n).

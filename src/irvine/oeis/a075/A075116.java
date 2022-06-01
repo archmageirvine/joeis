@@ -1,6 +1,6 @@
 package irvine.oeis.a075;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A075116 Binomial transform of A073817: a(n)=Sum(Binomial(n,k)*A073817(k),(k=0,..,n)).

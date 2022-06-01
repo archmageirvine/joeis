@@ -1,6 +1,6 @@
 package irvine.oeis.a060;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A060562 Number of ways to color vertices of a 10-gon using &lt;= n colors, allowing rotations and reflections.

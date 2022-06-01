@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // Recurrence: (n+3)*a[n+0]-2*(5*n+7)*a[n-1]+8*(2*n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085687 G.f.: 8/(1+sqrt(1-8*x))^3.

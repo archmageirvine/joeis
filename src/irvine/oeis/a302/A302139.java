@@ -1,7 +1,7 @@
 package irvine.oeis.a302;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A302139 Numbers k such that A111336(k) = 4.

@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // Recurrence: a[n+0]=(8*n-3)*a[n-1]-16*(n-1)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102773 a(n) = Sum_{i=0..n} binomial(n,i)^2*i!*4^i.

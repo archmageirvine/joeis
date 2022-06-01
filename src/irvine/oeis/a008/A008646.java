@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A008646 Molien series for cyclic group of order 5.

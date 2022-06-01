@@ -1,7 +1,7 @@
 package irvine.oeis.a269;
 // manually 2021-05-29 (1 more term)
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A269889 The number of permutations of 1, 2,..., n such that none of 123, 132, 213, 231, 312, 321 appear in the permutation.

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 // Recurrence: (n+1)*a[n+0]+2*(-2*n+1)*a[n-1]+2*(-n+2)*a[n-2]+2*(2*n-7)*a[n-3]+(n-5)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A247172 Expansion of -1-(sqrt(x^4+4*x^3-2*x^2-4*x+1)-x^2-2*x-1)/(4*x).

@@ -1,6 +1,6 @@
 package irvine.oeis.a192;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A192800 Coefficient of x^2 in the reduction of the n-th Fibonacci polynomial by x^3-&gt;x^2+2.

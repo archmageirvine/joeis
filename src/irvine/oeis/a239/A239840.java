@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 // Recurrence: a[n+0]=n*a[n-1]+n*(n-1)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A239840 Number of ordered pairs of permutation functions (f,g) on n elements satisfying f(x) = f(g(g(x))).

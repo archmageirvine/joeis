@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 // Recurrence: (n+2)*a[n+0]+(-7*n-8)*a[n-1]+(7*n-8)*a[n-2]+(-n+2)*a[n-3]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A035029 a(n) = Sum_{k=0..n} (k+1) * Sum_{j=0..n} 2^j*binomial(n,j)*binomial(n-k,j).

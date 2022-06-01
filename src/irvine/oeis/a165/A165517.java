@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165517 Indices of the least triangular numbers (A000217) for which three consecutive triangular numbers sum to a perfect square (A000290).

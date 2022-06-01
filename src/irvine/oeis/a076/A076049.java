@@ -1,6 +1,6 @@
 package irvine.oeis.a076;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A076049 Numbers k such that the sum of the k-th triangular number and (k+2)-nd triangular number is a triangular number.

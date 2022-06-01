@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 // Recurrence: (n-7)*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*n*(n+1)*a[n+0]=90*(n-7)*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*n*(2*n-1)*a[n-1]-3480*(n-7)*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*(2*n-3)*(2*n-1)*a[n-2]+75600*(n-7)*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-3]-1012368*(n-7)*(n-6)*(n-5)*(n-4)*(n-3)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-4]+8618400*(n-7)*(n-6)*(n-5)*(n-4)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-5]-46315520*(n-7)*(n-6)*(n-5)*(2*n-11)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-6]+150105600*(n-7)*(n-6)*(2*n-13)*(2*n-11)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-7]-262803456*(n-7)*(2*n-15)*(2*n-13)*(2*n-11)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-8]+185794560*(2*n-17)*(2*n-15)*(2*n-13)*(2*n-11)*(2*n-9)*(2*n-7)*(2*n-5)*(2*n-3)*(2*n-1)*a[n-9]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A258397 Number of 2n-length strings of balanced parentheses of exactly 9 different types that are introduced in ascending order.

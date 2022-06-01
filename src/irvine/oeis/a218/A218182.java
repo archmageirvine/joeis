@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 // ogf: (((1-8*x)^(1/2)-3)*((2+2*(1-8*x)^(1/2)+8*x)^(1/2)-2))/8
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A218182 Number of truth tables of bracketed formulas (case 1).

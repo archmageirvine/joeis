@@ -1,6 +1,6 @@
 package irvine.oeis.a247;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A247855 The 10th Hermite Polynomial evaluated at n: H_10(n) = 1024*n^10 - 23040*n^8 + 161280*n^6 - 403200*n^4 + 302400*n^2 - 30240.

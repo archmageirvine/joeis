@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290055 Expansion of x*(1 + 4*x + x^2)/((1 - x)^5*(1 + x)^4).

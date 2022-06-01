@@ -1,6 +1,6 @@
 package irvine.oeis.a028;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A028295 a(n) = n^6 - (883/60)*n^5 + (157/3)*n^4 + (2155/12)*n^3 - (4570/3)*n^2 + (42767/15)*n - 967.

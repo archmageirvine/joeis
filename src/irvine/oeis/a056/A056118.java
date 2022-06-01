@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A056118 a(n) = (11*n+5)*(n+4)*(n+3)*(n+2)*(n+1)/120.

@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 // Recurrence: 2*n*(n+1)^2*(59*n^2-121*n+48)*a[n+0]=n*(2301*n^4-4719*n^3+1411*n^2+943*n-384)*a[n-1]+(n-1)*(295*n^4-900*n^3+631*n^2+170*n-168)*a[n-2]+(n-3)*(n-2)*(n-1)*(59*n^2-3*n-14)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A075132 a(0)=1; for n &gt; 0, a(n)=sum(binomial(n,k)*binomial(n+k,k+1)*binomial(n+k+1,k),k=0..n)/n.

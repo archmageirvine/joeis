@@ -1,6 +1,6 @@
 package irvine.oeis.a187;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A187179 Number of nontrivial compositions of differential operations and directional derivative of the n-th order on the space R^10.

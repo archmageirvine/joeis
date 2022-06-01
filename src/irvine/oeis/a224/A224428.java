@@ -1,6 +1,6 @@
 package irvine.oeis.a224;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A224428 The hyper-Wiener index of the dendrimer NS[n], defined pictorially in the A. R. Ashrafi et al. reference.

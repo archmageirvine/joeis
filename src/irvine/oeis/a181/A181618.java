@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 // ogf: 2+1/(1-3*x)-3/sqrt(1-2*x-3*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A181618 Number of n-game win/loss/draw series that contain at least one dead game.

@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 // ogf: (1+2*(1-8*x)*x)/(1-16*x^2)^(3/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A253665 a(n) = 2^n*n!/(floor(n/2)!)^2.

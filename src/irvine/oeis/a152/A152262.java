@@ -1,6 +1,6 @@
 package irvine.oeis.a152;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A152262 a(n) = 14*a(n-1) - 43*a(n-2), n &gt; 1; a(0)=1, a(1)=7.

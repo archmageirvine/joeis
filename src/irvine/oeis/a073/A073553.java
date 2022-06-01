@@ -1,6 +1,6 @@
 package irvine.oeis.a073;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A073553 Number of Fibonacci numbers F(k), k &lt;= 10^n, which end in 5.

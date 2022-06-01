@@ -1,6 +1,6 @@
 package irvine.oeis.a013;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A013982 Expansion of 1/(1-x^2-x^3-x^4-x^5).

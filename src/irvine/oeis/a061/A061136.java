@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 // egf: 1/2*exp(x+1/2*x^2+1/4*x^4)-1/2*exp(x-1/2*x^2-1/4*x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A061136 Number of degree-n odd permutations of order dividing 4.

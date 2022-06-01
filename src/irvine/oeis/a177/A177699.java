@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // egf: log(1+x)*sinh(x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177699 E.g.f.: log(1+x)*sinh(x).

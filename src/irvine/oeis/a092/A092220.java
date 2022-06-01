@@ -1,6 +1,6 @@
 package irvine.oeis.a092;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A092220 Expansion of x*(1-x)/ ((1+x)*(1-x+x^2)) in powers of x.

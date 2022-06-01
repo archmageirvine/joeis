@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // Recurrence: 23*(n-3)*(n-2)*(n-1)*n*(8246*n^2-55353*n+91462)*a[n+0]=6*(n-3)*(n-2)*(n-1)*(445284*n^3-3656988*n^2+9421621*n-7409572)*a[n-1]-20*(n-3)*(n-2)*(8246*n^4-88337*n^3+344800*n^2-600301*n+406224)*a[n-2]-2*(n-3)*(2*n-7)*(140182*n^4-1501729*n^3+5829293*n^2-9697466*n+5806800)*a[n-3]+4*(n-4)*(n-2)*(2*n-9)*(2*n-7)*(8246*n^2-38861*n+44355)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228714 G.f. satisfies: A(x) = -1 + x + A(x)^2 + 1/A(x)^2.

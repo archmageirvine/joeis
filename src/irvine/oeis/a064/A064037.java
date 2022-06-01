@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 // Recurrence: (n+3)*(n+2)*(n+1)*a[n+0]-4*(2*n-1)*(5*n^2+10*n+3)*a[n-1]+36*(n-1)*(2*n-1)*(2*n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A064037 Number of walks of length 2n on cubic lattice, starting and finishing at origin and staying in first (nonnegative) octant.

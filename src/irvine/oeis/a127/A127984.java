@@ -1,6 +1,6 @@
 package irvine.oeis.a127;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A127984 a(n) = (n/3 + 7/9)*2^(n - 1) + (-1)^n/9.

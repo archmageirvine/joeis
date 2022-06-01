@@ -1,6 +1,6 @@
 package irvine.oeis.a262;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A262077 The first of thirteen consecutive positive integers the sum of the squares of which is equal to the sum of the squares of seven consecutive positive integers.

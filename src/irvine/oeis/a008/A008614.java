@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A008614 Molien series of 3-dimensional representation of group GL(3,2) (= L(2,7)); a simple group of order 168.

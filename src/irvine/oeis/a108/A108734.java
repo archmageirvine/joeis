@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 // Recurrence: n*a[n+0]+12*(2*n-3)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A108734 Expansion of (1 + 24*x)^(1/2).

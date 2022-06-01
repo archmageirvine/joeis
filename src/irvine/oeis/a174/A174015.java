@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 // ogf: (sqrt(1-2*x+x^2+4*x^3)+3*x-1)/(2*x*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A174015 A generalized Catalan number sequence.

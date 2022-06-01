@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 // egf: exp((7*x)/(1-x))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A289213 a(n) = n! * Laguerre(n,-7).

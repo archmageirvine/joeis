@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 // ogf: -(x^30+x^29-154*x^28+6777*x^26-1440*x^25-123961*x^24+26752*x^23+1132714*x^22-185889*x^21-5684515*x^20+574750*x^19+16401668*x^18-708928*x^17-27757938*x^16+27757938*x^14+708928*x^13-16401668*x^12-574750*x^11+5684515*x^10+185889*x^9-1132714*x^8-26752*x^7+123961*x^6+1440*x^5-6777*x^4+154*x^2-x-1)/(x^32-209*x^30+11936*x^28-274208*x^26+3112032*x^24-19456019*x^22+70651107*x^20-152325888*x^18+196664896*x^16-152325888*x^14+70651107*x^12-19456019*x^10+3112032*x^8-274208*x^6+11936*x^4-209*x^2+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A189005 Number of domino tilings of the 9 X n grid with upper left corner removed iff n is odd.

@@ -1,6 +1,6 @@
 package irvine.oeis.a293;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A293642 a(n) is the greatest integer k such that k/Fibonacci(n) &lt; 3/5.

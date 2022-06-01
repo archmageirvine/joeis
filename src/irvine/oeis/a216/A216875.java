@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216875 20k^2-40k+10 interleaved with 20k^2-20k+10 for k&gt;=0.

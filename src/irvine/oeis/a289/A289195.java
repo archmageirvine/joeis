@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289195 a(n) is the number of odd integers divisible by 5 in ]4*(n-1)^2, 4*n^2[.

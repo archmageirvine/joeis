@@ -1,6 +1,6 @@
 package irvine.oeis.a220;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A220989 12^(2n+1) - 6 * 12^n + 1: the left Aurifeuillian factor of 12^(6n+3) + 1.

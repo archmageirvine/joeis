@@ -1,6 +1,6 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A025170 G.f.: 1/(1 + 2*x + 9*x^2).

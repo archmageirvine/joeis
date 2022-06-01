@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A036240 Number of 3-way interactions when 3 subsets of power set on {1..n} are chosen at random; number of Boolean functions of n variables and rank 3 from Post class F(8,inf).

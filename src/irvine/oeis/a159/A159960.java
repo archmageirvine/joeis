@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // Recurrence: (6*n-17)*a[n+0]=2*(n-1)*(36*n^2-156*n+151)*a[n-1]-4*(n-1)*(72*n^4-636*n^3+2062*n^2-2909*n+1511)*a[n-2]+4*(n-2)*(n-1)*(96*n^5-1280*n^4+6704*n^3-17208*n^2+21596*n-10569)*a[n-3]+8*(n-3)*(n-2)*(n-1)*(2*n-7)*(6*n-11)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A159960 Number of permutations of the set 1,2,..., 2n such that at least one pair of adjacent numbers in the permutation differ by n.

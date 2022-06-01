@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // egf: (x+(x+1)*log(1+x))/(1-x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080958 a(n) = n!*(2/1 - 3/2 + 4/3 - ... + s*(n+1)/n), where s = (-1)^(n+1).

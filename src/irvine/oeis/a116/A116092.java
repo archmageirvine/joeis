@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 // Recurrence: n*a[n+0]+4*(2*n-1)*a[n-1]+64*(n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A116092 Expansion of 1/sqrt(1+8*x+64*x^2).

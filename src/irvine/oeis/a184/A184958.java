@@ -3,7 +3,7 @@ package irvine.oeis.a184;
 // egf: (1/2*(2*(1-cosh(x))-log(1-x^2)))/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A184958 Number of nonincreasing even cycles in all permutations of {1,2,...,n}. A cycle (b(1), b(2), ...) is said to be increasing if, when written with its smallest element in the first position, it satisfies b(1)&lt;b(2)&lt;b(3)&lt;... .  A cycle is said to be even if it has an even number of entries.

@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153509 Period 9: repeat [6, 6, 6, 3, 3, 3, 0, 0, 0].

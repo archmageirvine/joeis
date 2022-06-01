@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278476 a(n) = floor((1 + sqrt(2))^3*a(n-1)) for n&gt;0, a(0) = 1.

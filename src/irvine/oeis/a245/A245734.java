@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 // ogf: (1-x-x^2-sqrt(1-6*x+3*x^2+2*x^3+x^4))/(2*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A245734 G.f. A(x) satisfies 0 = A(0) and 0 = f(x, A(x)) where f(u, v) = (v - u) * (1 + u*v) - v * (v + u).

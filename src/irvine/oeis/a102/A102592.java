@@ -1,6 +1,6 @@
 package irvine.oeis.a102;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A102592 a(n) = Sum_{k=0..n} binomial(2n+1, 2k)*5^(n-k).

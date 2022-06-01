@@ -1,6 +1,6 @@
 package irvine.oeis.a235;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A235800 Length of n-th vertical line segment from left to right in a diagram of a two-dimensional version of the 3x+1 (or Collatz) problem.

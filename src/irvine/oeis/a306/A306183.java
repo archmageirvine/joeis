@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // Recurrence: a[n+0]=2*n*a[n-1]-(n^2-n-1)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A306183 The coefficients of x in the reduction of x^2 -&gt; x + 1 for the polynomial p(n,x) = Product_{k=1..n} (x+k).

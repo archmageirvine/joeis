@@ -1,6 +1,6 @@
 package irvine.oeis.a100;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A100134 a(n) = Sum_{k=0..floor(n/6)} binomial(n-3k,3k).

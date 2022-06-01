@@ -1,6 +1,6 @@
 package irvine.oeis.a229;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A229031 Number of 5-colorings of the strong product of the complete graph K2 and the cycle graph Cn.

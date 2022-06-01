@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 // egf: 1/2+1/(2*(1-x)^2)-x-log(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A187742 G.f.: Sum_{n&gt;=0} (n+x)^n * x^n / (1 + n*x + x^2)^n.

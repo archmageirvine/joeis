@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 // Recurrence: a[n+0]=111*a[n-1]-1110*a[n-2]+1000*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A171461 a(n) = 1 + 6*10^n + 100^n.

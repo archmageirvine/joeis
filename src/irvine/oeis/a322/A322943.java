@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 // Recurrence: a[n+0]=(4*n-2)*a[n-1]-3*(n-1)*(2*n-3)*a[n-2]+(n-1)*(n-2)*(4*n-9)*a[n-3]-(n-2)*(n-1)*(n-3)^2*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A322943 a(n) = n! [x^n] -exp(-1/(3*(x - 1)^3) - 1/3)/(x - 1).

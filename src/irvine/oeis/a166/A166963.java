@@ -1,6 +1,6 @@
 package irvine.oeis.a166;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A166963 Number of permutations in S_{2n} avoiding 123 and 1432 whose matrices are 180-degree symmetric.

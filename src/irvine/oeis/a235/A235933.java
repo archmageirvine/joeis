@@ -1,7 +1,7 @@
 package irvine.oeis.a235;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A235933 Numbers coprime to 35.

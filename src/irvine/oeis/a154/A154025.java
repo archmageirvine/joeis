@@ -1,6 +1,6 @@
 package irvine.oeis.a154;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A154025 a(n+2) = 64*a(n+1) - a(n), a(1)=0, a(2)=8.

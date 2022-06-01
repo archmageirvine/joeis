@@ -1,6 +1,6 @@
 package irvine.oeis.a244;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A244877 Number of 4 X 4 traceless matrices of nonnegative integers with all row and column sums &lt;= n.

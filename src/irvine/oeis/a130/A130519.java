@@ -1,6 +1,6 @@
 package irvine.oeis.a130;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A130519 a(n) = Sum_{k=0..n} floor(k/4). (Partial sums of A002265.).

@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 // ogf: (1-4*x+x^2-sqrt(1-6*x+x^2)+x*sqrt(1+6*x+x^2))/(8*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A227506 Schroeder triangle sums: a(2*n-1) = A010683(2*n-2) and a(2*n) = A010683(2*n-1) - A001003(2*n-1).

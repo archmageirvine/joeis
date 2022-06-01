@@ -2,7 +2,7 @@ package irvine.oeis.a349;
 // manually linrec/linrec2 at 2022-04-29 07:28
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A349187 Number of tilings of a 5 X n rectangle using n pentominoes of shapes X, Y, Z.

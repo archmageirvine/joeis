@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 // Recurrence: (n+2)^2*(n+3)^2*(64*n^3+96*n^2-36*n-79)*a[n+0]=(2240*n^7+13664*n^6+26068*n^5+7303*n^4-27638*n^3-20581*n^2+5964*n+5940)*a[n-1]-(n-1)^2*(16576*n^5+61344*n^4+25556*n^3-84501*n^2-46860*n-15300)*a[n-2]+225*(n-2)^2*(n-1)^2*(64*n^3+288*n^2+348*n+45)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A145846 Number of permutations of length 2n which are invariant under the reverse-complement map and have no decreasing subsequences of length 6.

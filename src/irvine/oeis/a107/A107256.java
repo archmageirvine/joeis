@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 // Recurrence: a[n+0]=n^6-63*n+63
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A107256 a(n) = n^6 - 63*n + 63, with n*a(n) + n*(n-1)*63 = n^7.

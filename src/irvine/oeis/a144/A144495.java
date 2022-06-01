@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // egf: (exp(x)*(2-x))/(1-x)^3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144495 Row 2 of array in A144502.

@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 // egf: sinh(x)*exp(x^2/(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A111753 Number of partitions of {1,..,n} into lists with an odd number of lists of size 1, where a list means an ordered subset, cf. A000262.

@@ -1,6 +1,6 @@
 package irvine.oeis.a174;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A174508 Continued fraction expansion for exp( Sum_{n&gt;=1} 1/(n*A086594(n)) ), where A086594(n) = (4+sqrt(17))^n + (4-sqrt(17))^n.

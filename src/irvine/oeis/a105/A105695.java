@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 // ogf: ((1-x^2)*(1-sqrt((1-3*x)/(1+x))))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A105695 Expansion of (1-x)*c(x/(1+x)), where c(x) is the g.f. of the Catalan numbers (A000108).

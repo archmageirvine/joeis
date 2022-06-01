@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 // ogf: 1+(2*x^2)/(-1+4*x-2*x^2+sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A129775 Number of maximally clustered permutations in S_n; the maximally clustered permutations are those that avoid 3421, 4312 and 4321.

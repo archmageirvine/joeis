@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 // Recurrence: 2*n*(n+1)*(31*n^2-127*n+120)*a[n+0]=3*n*(62*n^3-285*n^2+359*n-88)*a[n-1]+(62*n^4-378*n^3+1009*n^2-1425*n+792)*a[n-2]+(n-3)*(682*n^3-3135*n^2+4133*n-1272)*a[n-3]-9*(n-4)*(n-3)*(31*n^2-65*n+24)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A101786 G.f. satisfies: A(x) = 1 + x*A(x)/(1 - 2*x^2*A(x)^2).

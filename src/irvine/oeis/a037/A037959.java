@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 // Recurrence: (n-1)^2*a[n+0]-n*(n+2)*(n+1)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A037959 (n+2)!*n^2*(n+1)/48.

@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 // egf: exp(x/(1+x)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A318215 Expansion of e.g.f. exp(x/(1 + x)^2).

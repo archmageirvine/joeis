@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 // Recurrence: 8*a[n+0]=n^7*(n^18+4*n^8+n^6+2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A283033 Number of inequivalent 5 X 5 matrices with entries in {1,2,3,...,n} up to rotations and reflections.

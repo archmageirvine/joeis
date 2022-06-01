@@ -3,7 +3,7 @@ package irvine.oeis.a331;
 // Recurrence: 384*a[n+0]=(48*n^4-92*n^8+32*n^12+3*n^16+24*n^18-16*n^20+n^32)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A331360 Number of chiral pairs of colorings of the edges of a tesseract with n available colors.

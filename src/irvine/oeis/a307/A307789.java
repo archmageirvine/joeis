@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 // Recurrence: +(-n+1)*a[n+0]+2*(n-1)*a[n-1]+3*(n-3)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307789 Number of valid hook configurations of permutations of [n] that avoid the patterns 231 and 1243.

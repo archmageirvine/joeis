@@ -3,7 +3,7 @@ package irvine.oeis.a328;
 // Recurrence: n^4*(40*n^2-24*n-79)*a[n+0]=(1080*n^6-2808*n^5+875*n^4+2928*n^3-3762*n^2+1834*n-336)*a[n-1]+(9320*n^6-42872*n^5+61193*n^4-12152*n^3-35518*n^2+21658*n-2016)*a[n-2]-(n-2)*(48560*n^5-223376*n^4+216118*n^3+381866*n^2-791133*n+355194)*a[n-3]+(n-3)*(n-2)*(79560*n^4-286416*n^3-56675*n^2+976675*n-616322)*a[n-4]-11*(n-4)*(n-3)*(n-2)*(5080*n^3-8128*n^2-25641*n+21693)*a[n-5]+363*(n-5)*(n-4)*(n-3)*(n-2)*(40*n^2+56*n-63)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A328809 Constant term in the expansion of (1 + (1 + w) * (1 + x) * (1 + y) * (1 + z) + (1 + 1/w) * (1 + 1/x) * (1 + 1/y) * (1 + 1/z))^n.

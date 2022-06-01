@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // ogf: (1-5*x^6+2*x^7+x^9+2*x^10+8*x^12-4*x^13+8*x^14-4*x^15-4*x^16+8*x^17-36*x^18+36*x^21)/((1-6*x^6)*(1+12*x^12))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A330635 Array read by rows: T(n,k) is the number of solutions to the equation Sum_{i=1..n} x_i^2 == k (mod 6) with x_i in 0..5, where n &gt;= 0 and 0 &lt;= k &lt;= 5.

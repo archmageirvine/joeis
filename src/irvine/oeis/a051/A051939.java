@@ -1,6 +1,6 @@
 package irvine.oeis.a051;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A051939 Truncated triangular pyramid numbers: a(n) = (n-5)*(n^2 + 8*n - 66)/6.

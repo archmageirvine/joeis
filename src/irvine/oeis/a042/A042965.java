@@ -1,6 +1,6 @@
 package irvine.oeis.a042;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A042965 Nonnegative integers not congruent to 2 mod 4.

@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 // ogf: (2-x+2*x^2)/sqrt((x^2+x+1)*(x^2-3*x+1))-1
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A132461 Row squared sums of triangle of Lucas polynomials (A034807) for n&gt;0: Sum_{k=0..floor(n/2)} A034807(n,k)^2, with a(0)=1.

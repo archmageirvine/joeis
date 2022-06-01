@@ -1,6 +1,6 @@
 package irvine.oeis.a307;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A307205 Coordination sequence for tetravalent node in the first Moore pentagonal tiling.

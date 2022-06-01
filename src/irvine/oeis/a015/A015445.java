@@ -1,6 +1,6 @@
 package irvine.oeis.a015;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A015445 Generalized Fibonacci numbers: a(n) = a(n-1) + 9*a(n-2).

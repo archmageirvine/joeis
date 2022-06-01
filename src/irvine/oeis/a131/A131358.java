@@ -1,6 +1,6 @@
 package irvine.oeis.a131;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A131358 a(3*k) = 0, a(3*k+1) = k+1, a(3*k+2) = -k.

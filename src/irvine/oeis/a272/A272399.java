@@ -1,6 +1,6 @@
 package irvine.oeis.a272;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A272399 The intersection of hexagonal numbers (A000384) and centered 9-gonal numbers (A060544).

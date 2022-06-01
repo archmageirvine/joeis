@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 // egf: (1-exp(-x^2))/(2*(1-x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A088506 Number of permutations in the symmetric group S_n that have odd number of transpositions in their cycle decomposition.

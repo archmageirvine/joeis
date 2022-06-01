@@ -3,7 +3,7 @@ package irvine.oeis.a317;
 // Recurrence: (n^2+n)*a[n+0]+2*n*a[n+1]+a[n+2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A317364 Expansion of e.g.f. exp(2*x/(1 + x)).

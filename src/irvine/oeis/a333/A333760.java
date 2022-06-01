@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: x^2/(1-3*x-2*x^2+3*x^3-x^4)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333760 Number of self-avoiding closed paths in the 4 X n grid graph which pass through all vertices on four (left, right, upper, lower) sides of the graph.

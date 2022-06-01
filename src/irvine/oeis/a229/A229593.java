@@ -1,6 +1,6 @@
 package irvine.oeis.a229;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A229593 Number of boomerang patterns appearing in n X n coins, rotation not allowed.

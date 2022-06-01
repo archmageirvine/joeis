@@ -3,7 +3,7 @@ package irvine.oeis.a308;
 // Recurrence: a[n+0]=10*a[n-1]-40*a[n-2]+80*a[n-3]-80*a[n-4]+32*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A308914 Number of unordered pairs of non-intersecting non-selfintersecting paths with nodes that cover all vertices of a convex n-gon, n &gt; 3.

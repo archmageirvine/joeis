@@ -1,6 +1,6 @@
 package irvine.oeis.a256;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A256178 Expansion of exp( Sum_{n &gt;= 1} L(2*n)*L(4*n)*x^n/n ), where L(n) = A000032(n) is a Lucas number.

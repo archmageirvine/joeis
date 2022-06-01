@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A011920 a(n) = b(n)*(b(n)+1) = b(n) + ... + c(n), where b(n) = A011916(n), c(n) = A011918(n).

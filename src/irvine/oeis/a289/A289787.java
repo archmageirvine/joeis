@@ -1,6 +1,6 @@
 package irvine.oeis.a289;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A289787 p-INVERT of the even positive integers (A005843), where p(S) = 1 - S - S^2.

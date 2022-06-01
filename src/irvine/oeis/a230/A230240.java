@@ -1,6 +1,6 @@
 package irvine.oeis.a230;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A230240 Values of N for which the equation x^2 - 9*y^2 = N has integer solutions.

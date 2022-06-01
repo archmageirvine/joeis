@@ -1,6 +1,6 @@
 package irvine.oeis.a280;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A280931 a(n) = 2*F(n-1) + 9*F(n-4) + 9*F(n-7) where n &gt;= 7 and F = A000045.

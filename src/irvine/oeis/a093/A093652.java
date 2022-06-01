@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 // ogf: x*(1+2*x-x^2-x^3+7*x^4+2*x^5-3*x^6-x^7)/(1-4*x^2+x^4)^2
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A093652 Let a(1) = 1, a(2) = 2, a(3) = 7, a(4) = 15 and for n &gt;= 5 set a(n) = (n*b(n) - b(n-2)) / 2, where b(n) = 4*b(n-2) - b(n-4) for n &gt;= 5 and b(1) = 1, b(2) = 2, b(3) = 5, b(4) = 8.

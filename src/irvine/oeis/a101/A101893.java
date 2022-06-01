@@ -1,6 +1,6 @@
 package irvine.oeis.a101;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A101893 a(n) = sum_{k=0..floor(n/2)} C(n,2k)*Pell(k).

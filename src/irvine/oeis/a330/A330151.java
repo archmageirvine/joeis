@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=6*a[n-1]-15*a[n-2]+20*a[n-3]-15*a[n-4]+6*a[n-5]-a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330151 Partial sums of 4th powers of the even numbers.

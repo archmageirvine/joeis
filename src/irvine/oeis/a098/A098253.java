@@ -1,6 +1,6 @@
 package irvine.oeis.a098;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A098253 First differences of Chebyshev polynomials S(n,363) = A098251(n) with Diophantine property.

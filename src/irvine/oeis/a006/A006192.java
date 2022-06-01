@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A006192 Number of nonintersecting (or self-avoiding) rook paths joining opposite corners of 3 X n board.

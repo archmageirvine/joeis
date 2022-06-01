@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 // ogf: (-1-244911168*x^14+51*x+424049816*x^13+16848*x^3-1189*x^2-162623*x^4+1135115*x^5-5933360*x^6+93180816*x^15+176551085*x^9+475936304*x^11+23718538*x^7-330046233*x^10+1620000*x^17-73376545*x^8-20032128*x^16-521745326*x^12)/(9720000*x^17-68563152*x^16+235662840*x^15-511522200*x^14+774005724*x^13-859429792*x^12+721925168*x^11-467470314*x^10+235918701*x^9-93247962*x^8+28849981*x^7-6944099*x^6+1283865*x^5-178422*x^4+17989*x^3-1239*x^2+52*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A164873 The number of permutations of length n that can be sorted by 5 pop stacks in parallel.

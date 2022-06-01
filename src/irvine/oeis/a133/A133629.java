@@ -1,6 +1,6 @@
 package irvine.oeis.a133;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A133629 a(1)=1, a(n) = a(n-1) + (p-1)*p^(n/2-1) if n is even, otherwise a(n) = a(n-1) + p^((n-1)/2), where p=5.

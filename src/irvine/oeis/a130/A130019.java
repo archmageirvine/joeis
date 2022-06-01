@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // Recurrence: a[n+2]=6*a[n+1]+(-11+n)*a[n+0]+(6-2*n)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A130019 a(n+2) = 6*a(n+1) + (-11 + n)*a(n) + (6 - 2*n)*a(n-1) for n &gt;= 1.

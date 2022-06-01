@@ -1,6 +1,6 @@
 package irvine.oeis.a281;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A281098 a(n) is the GCD of the sequence d(n) = A261327(k+n) - A261327(k) for all k.

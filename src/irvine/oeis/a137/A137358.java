@@ -1,6 +1,6 @@
 package irvine.oeis.a137;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A137358 a(n) = Sum_{k &lt;= n/2 } binomial(n-2k, 3k+2).

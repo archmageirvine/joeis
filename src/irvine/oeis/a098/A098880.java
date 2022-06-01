@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 // ogf: 11*x*(25937424601*x^10+4800781498876*x^9+32719096519197*x^8+42939747452448*x^7+17251662975954*x^6+2532405864648*x^5+142575727074*x^4+2932842528*x^3+18469077*x^2+22396*x+1)/(11*x-1)^12
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A098880 a(n) = 11^n * n^11.

@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 // Recurrence: a[n+0]+(6*n-7)*a[n-1]+8*(n-1)*(n-2)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A127189 E.g.f.: sqrt((1+4*x)/(1+2*x)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215862 Number of simple labeled graphs on n+2 nodes with exactly n connected components that are trees or cycles.

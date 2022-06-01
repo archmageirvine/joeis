@@ -3,7 +3,7 @@ package irvine.oeis.a313;
 // Recurrence: a[n+0]=2*a[n-1]-2*a[n-2]+2*a[n-3]-2*a[n-4]+2*a[n-5]-2*a[n-6]+2*a[n-7]-2*a[n-8]+2*a[n-9]-a[n-10]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A313025 Coordination sequence Gal.5.65.5 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.

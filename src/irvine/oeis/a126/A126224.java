@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // egf: (((-16*x^2-1)*sqrt(2*sqrt(16*x^2+1)+2)-8*sqrt(16*x^2+1)*x^2+16*x^2+sqrt(16*x^2+1)+1)*sqrt(2*sqrt(16*x^2+1)-2)+8*(sqrt(16*x^2+1)*x^2+2*x^2-1/8*sqrt(16*x^2+1)+1/8)*sqrt(2*sqrt(16*x^2+1)+2))/(512*x^3+32*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126224 Determinant of the n X n matrix in which the entries are 1 through n^2, spiraling inward starting with 1 in the (1,1)-entry.

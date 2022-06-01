@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 // Recurrence: n*a[n+0]+6*(24*n-25)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A106206 Coefficients of (1 + 144*x)^(1/24).

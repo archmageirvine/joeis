@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 // Recurrence: a[n+0]=2*a[n-1]+(n-3)*a[n-2]-(n-2)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A294129 Numbers n for which exactly one length minimal language exists having exactly n nonempty words over a countably infinite alphabet such that within each prefix of a word every letter of the alphabet is at least as frequent as the subsequent alphabet letter.

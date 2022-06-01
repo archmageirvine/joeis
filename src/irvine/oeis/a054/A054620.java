@@ -1,6 +1,6 @@
 package irvine.oeis.a054;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A054620 Number of ways to color vertices of a pentagon using &lt;= n colors, allowing only rotations.

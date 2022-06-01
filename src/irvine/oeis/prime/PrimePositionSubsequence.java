@@ -1,7 +1,7 @@
 package irvine.oeis.prime;
 
 import irvine.math.z.Z;
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 import irvine.oeis.PositionSubsequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.Subsequence;

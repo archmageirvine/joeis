@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 // Recurrence: 105*a[n+0]=n*(n+1)*(2*n+1)*(17*n^4+34*n^3+28*n^2+11*n+15)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A305167 Constant term in the expansion of (Sum_{k=0..n} k*(x^k + x^(-k)))^4.

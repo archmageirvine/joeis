@@ -1,6 +1,6 @@
 package irvine.oeis.a226;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A226940 a(0)=0; if a(n-1) is odd, a(n) = n + a(n-1), otherwise a(n) = n - a(n-1).

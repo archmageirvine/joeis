@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // egf: ((1+x)*log(1+x))^2/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A045406 A diagonal of A008296.

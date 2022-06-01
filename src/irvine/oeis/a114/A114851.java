@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 // ogf: (1-x-x^2+x^3-sqrt((1+x-x^2-x^3)^2-4*(x-2*x^3+x^4)))/(2*(x^2-x^3))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A114851 Number of lambda calculus terms of size n, where size(lambda x.M) = 2 + size(M), size(M N) = 2 + size(M) + size(N), and size(V) = 1 + i for a variable V bound by the i-th enclosing lambda (corresponding to a binary encoding).

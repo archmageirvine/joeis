@@ -1,6 +1,6 @@
 package irvine.oeis.a052;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A052899 Expansion of g.f.: ( 1-2*x ) / ((x-1)*(4*x^2+2*x-1)).

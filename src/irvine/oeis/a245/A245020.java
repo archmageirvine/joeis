@@ -1,6 +1,6 @@
 package irvine.oeis.a245;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A245020 Number of ordered n-tuples of positive integers, whose minimum is 0 and maximum is 5.

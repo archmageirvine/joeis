@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 // egf: sinh(log(1/(1-x))-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A216779 Number of derangements on n elements with an odd number of cycles.

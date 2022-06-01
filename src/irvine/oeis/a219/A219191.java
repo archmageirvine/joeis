@@ -1,6 +1,6 @@
 package irvine.oeis.a219;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A219191 Numbers of the form k*(7*k+1), where k = 0,-1,1,-2,2,-3,3,...

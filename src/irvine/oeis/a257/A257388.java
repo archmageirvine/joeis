@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 // ogf: (1-4*x-sqrt((1-4*x)*(1-4*x-4*x^2)))/(2*x^2*(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A257388 Number of 4-Motzkin paths of length n with no level steps at odd level.

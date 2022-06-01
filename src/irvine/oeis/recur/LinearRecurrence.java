@@ -1,10 +1,11 @@
-package irvine.oeis;
+package irvine.oeis.recur;
 
 import java.util.Arrays;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * An integer linear recurrence.
@@ -14,9 +15,9 @@ public class LinearRecurrence implements Sequence {
 
   private static final Z[] EMPTY = new Z[0];
 
-  private Z[] mPreTerms;
-  private Z[] mPrev;
-  private Z[] mRecur;
+  private final Z[] mPreTerms;
+  private final Z[] mPrev;
+  private final Z[] mRecur;
   private int mN;
 
   private static void checkLength(final int a, final int b) {

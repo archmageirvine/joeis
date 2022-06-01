@@ -1,6 +1,6 @@
 package irvine.oeis.a067;
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A067353 Divide the natural numbers in sets of consecutive numbers starting with {1,2} as the first set. The number of elements of the n-th set is equal to the sum of the n-1 final numbers in the (n-1)st set. The final number of the n-th set gives a(n).

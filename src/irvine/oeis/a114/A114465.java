@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 // Recurrence: (n+1)*a[n+0]=(5*n-1)*a[n-1]-(7*n-5)*a[n-2]+10*(n-2)*a[n-3]-(7*n-23)*a[n-4]+(5*n-19)*a[n-5]-(n-5)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A114465 Number of Dyck paths of semilength n having no ascents of length 2 that start at an odd level.

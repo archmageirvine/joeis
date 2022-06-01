@@ -1,7 +1,7 @@
 package irvine.oeis.a139;
 // manually 
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A139172 Natural numbers of the form (n!-2)/2.

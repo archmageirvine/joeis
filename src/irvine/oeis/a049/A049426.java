@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 // egf: exp((-1+(1+x)^4)/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A049426 Row sums of triangle A049410.

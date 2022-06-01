@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 // Recurrence: (n+1)*a[n+0]+(-5*n+1)*a[n-1]+2*(2*n-1)*a[n-2]+(n+1)*a[n-3]+2*(-2*n+1)*a[n-4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A030238 Backwards shallow diagonal sums of Catalan triangle A009766.

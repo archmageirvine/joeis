@@ -1,6 +1,6 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A059585 Number of labeled 3-node T_0-hypergraphs with n hyperedges (empty hyperedges and multiple hyperedges included).

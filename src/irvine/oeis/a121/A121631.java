@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 // Recurrence: a[n+0]=2*(10*n-17)*a[n-1]-(160*n^2-704*n+811)*a[n-2]+2*(320*n^3-2592*n^2+7138*n-6675)*a[n-3]-(1280*n^4-16384*n^3+79120*n^2-170816*n+139079)*a[n-4]+32*(n-4)^2*(2*n-7)*(4*n-15)*(4*n-13)*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A121631 Finite sum involving signless Stirling numbers of the first kind and the Bell numbers. Appears in the process of normal ordering of n-th power of (a)^4*(a+*a), where a+ and a are boson creation and annihilation operators, respectively.

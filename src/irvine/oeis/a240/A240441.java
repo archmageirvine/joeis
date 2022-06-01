@@ -1,6 +1,6 @@
 package irvine.oeis.a240;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A240441 Number of ways to place 4 points on a triangular grid of side n so that no three of these points are vertices of an equilateral triangle of any orientation.

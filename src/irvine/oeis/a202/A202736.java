@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 // ogf: 1/(1-2*x)-1/sqrt(1-4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A202736 Number of n X 2 0..1 arrays with row sums equal and column sums unequal to adjacent columns.

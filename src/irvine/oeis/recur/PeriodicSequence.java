@@ -1,10 +1,11 @@
-package irvine.oeis;
+package irvine.oeis.recur;
 
 import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * Base case for certain periodic sequences generated verbatim from a list.

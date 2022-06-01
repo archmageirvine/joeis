@@ -1,6 +1,6 @@
 package irvine.oeis.a165;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A165799 Number of tilings of a 4 X n rectangle using right trominoes and 2 X 2 tiles.

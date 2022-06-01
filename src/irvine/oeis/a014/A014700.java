@@ -4,7 +4,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A014700 Poincar\u00e9 series [or Poincare series] (or Molien series) for mod 2 cohomology of universal W-group W(5).

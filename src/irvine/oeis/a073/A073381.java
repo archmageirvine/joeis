@@ -1,6 +1,6 @@
 package irvine.oeis.a073;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A073381 Fourth convolution of A000129(n+1) (generalized (2,1)-Fibonacci, called Pell numbers), n&gt;=0, with itself.

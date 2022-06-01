@@ -1,6 +1,6 @@
 package irvine.oeis.a257;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A257199 a(n) =  n*(n+1)*(n+2)*(n^2+2*n+17)/120.

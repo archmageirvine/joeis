@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 // Recurrence: 243*n*(8*n-17)*(3*n-1)*(3*n-4)*(3*n-2)*(3*n-5)*a[n+0]=72*(3*n-5)*(3*n-4)*(6912*n^4-33120*n^3+58256*n^2-47798*n+15309)*a[n-1]-3072*(2*n-3)*(6912*n^5-55008*n^4+175696*n^3-282180*n^2+227825*n-73710)*a[n-2]+262144*(n-2)*(4*n-7)*(2*n-3)*(2*n-5)*(4*n-9)*(8*n-9)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A078995 a(n) = Sum_{k=0..n} C(4*k,k)*C(4*(n-k),n-k).

@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: a[n+0]=4*a[n-1]-a[n-2]-a[n-4]-a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332750 The number of flips to go from Hamiltonian cycle alpha_n to beta_n in the Cameron graph of size n using Thomason's algorithm.

@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 // Recurrence: (n-7)*(n-4)*a[n+0]=(n-3)*(6*n^2-67*n+176)*a[n-1]-5*(n-4)*(3*n^3-43*n^2+195*n-283)*a[n-2]+10*(2*n^5-47*n^4+436*n^3-1999*n^2+4532*n-4062)*a[n-3]-(15*n^6-445*n^5+5465*n^4-35555*n^3+129161*n^2-248111*n+196528)*a[n-4]+(6*n^7-221*n^6+3473*n^5-30165*n^4+156251*n^3-482105*n^2+819087*n-589808)*a[n-5]-(n-6)^7*(n-3)*a[n-6]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A285235 Number of entries in the seventh cycles of all permutations of [n].

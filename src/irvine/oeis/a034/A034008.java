@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 // egf: 1/4*(3+exp(2*x)-2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A034008 a(n) = floor(2^|n-1|/2). Or: 1, 0, followed by powers of 2.

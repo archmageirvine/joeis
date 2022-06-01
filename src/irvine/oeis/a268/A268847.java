@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 // Recurrence: 81*(n-4)*(n-3)^2*(n-2)^3*a[n+0]=27*(n-4)*(n-3)^2*(57*n^7-328*n^6+560*n^5+159*n^4-1591*n^3+1942*n^2-994*n+192)*a[n-1]-18*(n-4)*(n-1)^3*(2*n-3)*(4*n-7)*(4*n-5)*(18*n^7-111*n^6-76*n^5+2183*n^4-6887*n^3+9632*n^2-6371*n+1620)*a[n-2]+24*(n-2)^3*(n-1)^4*(2*n-5)*(2*n-3)*(4*n-11)*(4*n-9)*(4*n-7)*(4*n-5)*(n^5+6*n^4-115*n^3+440*n^2-626*n+288)*a[n-3]-32*(n-3)^3*(n-2)^4*(n-1)^5*(2*n-7)*(2*n-5)*(2*n-3)*(4*n-15)*(4*n-13)*(4*n-11)*(4*n-9)*(4*n-7)*(4*n-5)*a[n-4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A268847 Number of sequences with 4 copies each of 1,2,...,n and longest increasing subsequence of length n.

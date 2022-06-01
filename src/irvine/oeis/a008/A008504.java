@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A008504 10-dimensional centered tetrahedral numbers.

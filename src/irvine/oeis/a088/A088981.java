@@ -1,6 +1,6 @@
 package irvine.oeis.a088;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A088981 a(n+2) = a(n+1) + a(n) - [(2*n)+1] where a(0)=7, a(1)=11.

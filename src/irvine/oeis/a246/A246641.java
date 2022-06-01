@@ -1,6 +1,6 @@
 package irvine.oeis.a246;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A246641 Sequence a(n) = (1 + A007805(n))/2, appearing in a certain touching problem for three circles and a chord, together with A007805.

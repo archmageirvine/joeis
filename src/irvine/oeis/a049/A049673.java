@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049673 a(n) = (F(3n) + F(n))/3, where F = A000045 (the Fibonacci sequence).

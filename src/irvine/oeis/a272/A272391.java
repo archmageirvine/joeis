@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 // Recurrence: 5*n*(5*n-8)*(5*n-3)*(5*n-2)*(5*n-1)*(5*n+1)*(7*n-16)*(7*n-10)*(7*n-9)*a[n+0]=6*(2*n-1)*(5*n-8)*(7*n-16)*(499359*n^6-2314137*n^5+4264709*n^4-3984323*n^3+1983172*n^2-496780*n+48720)*a[n-1]-864*(n-1)*(2*n-3)*(2*n-1)*(7*n-2)*(25480*n^5-160398*n^4+375142*n^3-401079*n^2+192819*n-33500)*a[n-2]+31104*(n-2)*(n-1)*(2*n-5)*(2*n-3)*(2*n-1)*(5*n-3)*(7*n-9)*(7*n-3)*(7*n-2)*a[n-3]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A272391 Degeneracies of entanglement witness eigenstates for 2n spin 5/2 irreducible representations.

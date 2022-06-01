@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 // ogf: 2/(5-3*sqrt(1-4*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A126982 Expansion of 1/(1+3*x*c(x)), c(x) the g.f. of Catalan numbers A000108.

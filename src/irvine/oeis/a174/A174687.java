@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 // Recurrence: 2*n*(2*n+1)*a[n+0]+3*(-13*n^2+10*n-1)*a[n-1]+9*(3*n-4)*(3*n-5)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A174687 Central coefficients T(2n,n) of the Catalan triangle A033184.

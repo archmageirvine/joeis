@@ -1,6 +1,7 @@
 package irvine.oeis;
 // 2020-08-23, Georg Fischer
 
+import irvine.oeis.recur.PaddingSequence;
 import irvine.oeis.transform.EulerTransform;
 
 /**

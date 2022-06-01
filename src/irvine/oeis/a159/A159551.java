@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 // Recurrence: a[n+0]=101*n+10
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A159551 a(n) = 101*n + 10.

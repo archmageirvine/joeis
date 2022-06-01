@@ -1,6 +1,6 @@
 package irvine.oeis.a010;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 
 /**
  * A010889 Simple periodic sequence: repeat 1,2,3,4,5,6,7,8,9,10.

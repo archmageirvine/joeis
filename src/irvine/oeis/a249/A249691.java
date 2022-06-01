@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 // Recurrence: 2*n*(2*n+1)*(5*n-3)*a[n+0]-3*(5*n+2)*(3*n-1)*(3*n-2)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A249691 a(n) = binomial(3*n,n)*(5*n+2)/(2*n+1).

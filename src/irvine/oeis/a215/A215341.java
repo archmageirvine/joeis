@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 // Recurrence: 2*n*(n+1)*(2*n+3)*(16204*n^4-82948*n^3+139973*n^2-85643*n+10674)*a[n+0]=-(n-1)*n*(307876*n^5-960260*n^4+288863*n^3+582749*n^2+5406*n+12696)*a[n-1]+4*(n-2)*(129632*n^6-469136*n^5+354226*n^4+317255*n^3-469674*n^2+176517*n-21420)*a[n-2]-2*(n-3)*(n-2)*(16204*n^5-34336*n^4+82943*n^3-208775*n^2+192120*n-40656)*a[n-3]+6*(n-3)*(n-2)*(97224*n^5-351852*n^4+179198*n^3+540009*n^2-571727*n+92968)*a[n-4]+229*(n-4)*(n-3)*(n-2)*(16204*n^4-18132*n^3-11647*n^2+10275*n-1740)*a[n-5]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A215341 Expansion of series_reversion( x/(1+x^4*sum(k&gt;=0, x^k)) ) / x.

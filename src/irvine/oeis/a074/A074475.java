@@ -1,6 +1,6 @@
 package irvine.oeis.a074;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A074475 a(n) = Sum_{j=0..floor(n/2)} T(2*j + q), where T(n) are generalized tribonacci numbers (A001644) and q = n - 2*floor(n/2).

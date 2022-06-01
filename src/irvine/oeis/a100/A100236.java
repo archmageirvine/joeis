@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 // Recurrence: a[n+0]=5*a[n-1]+a[n-2]+5
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100236 Main diagonal of triangle A100235.

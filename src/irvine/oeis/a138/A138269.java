@@ -1,6 +1,6 @@
 package irvine.oeis.a138;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A138269 a(n+1) is the Hankel transform of C(n)+C(n+2), where C(n) = A000108(n).

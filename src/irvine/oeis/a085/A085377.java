@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // Recurrence: a[n+0]=15*n^2+13*n^3
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085377 a(n) = 15n^2 + 13n^3.

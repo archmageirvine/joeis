@@ -1,6 +1,6 @@
 package irvine.oeis.a298;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A298397 Pentagonal numbers divisible by 4.

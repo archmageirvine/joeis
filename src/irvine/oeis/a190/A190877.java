@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 // egf: exp(x+x^5)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A190877 Expansion of e.g.f. exp(x+x^5).

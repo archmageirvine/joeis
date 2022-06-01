@@ -1,6 +1,6 @@
 package irvine.oeis.a106;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A106201 Expansion of Re(x/(1-x-2*i*x^2)), i=sqrt(-1).

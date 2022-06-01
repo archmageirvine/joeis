@@ -1,6 +1,6 @@
 package irvine.oeis.a272;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A272775 Squares of the form P(n, 5) + n, where P(x,k) is the Pochhammer function and n = square (A000290).

@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 // ogf: (2-x-2*x^2-(x+2)*sqrt(1-4*x-4*x^2))/(2*(x+1)^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A157418 a(n) is the number of ways to insert single pairs of parenthesis to completely separate n identical objects in a straight line such that at least one of the objects at the two ends is not enclosed.

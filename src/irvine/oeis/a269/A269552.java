@@ -1,6 +1,6 @@
 package irvine.oeis.a269;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A269552 Expansion of (-3*x^2 + 94*x - 3)/(x^3 - 99*x^2 + 99*x - 1).

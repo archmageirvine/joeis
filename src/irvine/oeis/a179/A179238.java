@@ -1,6 +1,6 @@
 package irvine.oeis.a179;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A179238 Numerators in convergents to infinitely repeating period 3 palindromic continued fraction [1,2,1,...].

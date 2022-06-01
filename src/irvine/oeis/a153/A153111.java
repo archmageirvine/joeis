@@ -1,6 +1,6 @@
 package irvine.oeis.a153;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A153111 Solutions of the Pell-like equation 1 + 6*A*A = 7*B*B, with A, B integers.

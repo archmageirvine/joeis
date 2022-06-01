@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 // ogf: (1+8*x)/(1-4*x)^(5/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A294486 a(n) = binomial(2n,n) * (2n+1)^2.

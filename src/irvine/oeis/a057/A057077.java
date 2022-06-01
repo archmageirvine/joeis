@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A057077 Periodic sequence 1,1,-1,-1; expansion of (1+x)/(1+x^2).

@@ -1,6 +1,6 @@
 package irvine.oeis.a272;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A272690 a(n) = 22*Sum_{i=0..n-2} 46^i*2^(n-2-i) + 2^(n-1).

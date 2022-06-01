@@ -1,6 +1,6 @@
 package irvine.oeis.a184;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A184959 Fibonacci sequence beginning 10, 9.

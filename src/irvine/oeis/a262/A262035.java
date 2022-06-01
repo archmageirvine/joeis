@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 // egf: (1-2*x)/(4*sqrt(1-4*x)*x^2)+(2*x^2-1)/(4*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A262035 Number of permutations of [2n+1] beginning with exactly n ascents.

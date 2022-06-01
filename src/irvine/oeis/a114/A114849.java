@@ -1,6 +1,6 @@
 package irvine.oeis.a114;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A114849 F(4n+4)/F(4)-F(3n+3)/F(3) where F(n)=A000045(n).

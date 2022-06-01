@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 // egf: (1+2*x)^(1/4)/(1-2*x)^(3/4)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A177373 a(n) = 2*n*a(n-1) if the parity of the ratio a(n-1)/a(n-2) is odd, otherwise (for even parity) a(n) = (2n-1)*a(n-1).

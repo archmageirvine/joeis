@@ -1,6 +1,6 @@
 package irvine.oeis.a129;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A129346 a(2n) = A100525(n), a(2n+1) = A001653(n+1); a Pellian-related sequence.

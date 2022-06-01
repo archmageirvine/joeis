@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A000352 One half of the number of permutations of [n] such that the differences have three runs with the same signs.

@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 // Recurrence: (n+2)*a[n+0]-(2*n+1)*a[n-1]+19*(1-n)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A091148 Expansion of (1-x-sqrt(1-2x-19x^2))/(10x^2).

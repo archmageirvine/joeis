@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 // Recurrence: a[n+0]=1852*n
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A303272 Multiples of 1852.

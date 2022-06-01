@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 // Recurrence: a[n+2]=2*(2*n+1)*a[n+1]+a[n+0]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A080893 E.g.f. exp(x*C(x)) = exp((1-sqrt(1-4*x))/2), where C(x) is the g.f. of the Catalan numbers A000108.

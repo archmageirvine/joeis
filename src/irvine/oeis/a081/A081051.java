@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 // egf: ((1+x)^(-1)*log(1+x)^2)/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A081051 Stirling numbers of the first kind.

@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 // Recurrence: -(n+1)*(n^2+n-3)*a[n+0]+2*(n^3+3*n^2-4*n-3)*a[n-1]+3*(n-1)*(n^2+3*n-1)*a[n-2]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A263841 Expansion of (1-2*x-x^2)/(sqrt(1+x)*(1-3*x)^(3/2)*2*x)-1/(2*x).

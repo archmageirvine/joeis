@@ -1,6 +1,6 @@
 package irvine.oeis.a161;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A161734 a(n) = ((2+sqrt(2))*(5+sqrt(2))^n+(2-sqrt(2))*(5-sqrt(2))^n)/4.

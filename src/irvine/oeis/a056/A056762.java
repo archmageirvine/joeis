@@ -1,6 +1,6 @@
 package irvine.oeis.a056;
 
-import irvine.oeis.PeriodicSequence;
+import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**

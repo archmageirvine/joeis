@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 // Recurrence: (n-1)*a[n+0]+(2*n+4)*a[n+2]+(-14-4*n)*a[n+3]+(5+n)*a[n+4]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A082582 Expansion of (1 + x^2 - sqrt( 1 - 4*x + 2*x^2 + x^4)) / (2*x) in powers of x.

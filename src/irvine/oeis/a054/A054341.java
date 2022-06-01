@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 // ogf: 2/(1-4*x+sqrt(1-4*x^2))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A054341 Row sums of triangle A054336 (central binomial convolutions).

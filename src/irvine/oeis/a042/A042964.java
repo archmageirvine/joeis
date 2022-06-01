@@ -1,6 +1,6 @@
 package irvine.oeis.a042;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A042964 Numbers congruent to 2 or 3 mod 4.

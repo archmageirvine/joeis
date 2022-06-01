@@ -1,6 +1,6 @@
 package irvine.oeis.a338;
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A338186 Expansion of (2-6*x-12*x^2)/((1-x)^2*(1-9*x)).

@@ -1,6 +1,6 @@
 package irvine.oeis.a175;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A175322 a(n) = A053141(n)*A001109(n+1) = Sum_{k=A053141(n)+1..A001109(n+1)-1} k.

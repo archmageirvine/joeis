@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 // Recurrence: -2*(n-1)*(2*n+1)*(n+2)*(n+1)*a[n+0]+(n+1)*(43*n^3-48*n^2-7*n+2)*a[n-1]+(-124*n^4+370*n^3-255*n^2-15*n+14)*a[n-2]+5*(n-2)*(2*n^3-52*n^2+65*n-1)*a[n-3]+25*(n-2)*(n-3)*(8*n^2-8*n-1)*a[n-4]-125*n*(n-2)*(n-3)*(n-4)*a[n-5]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A104184 a(n) is the number of paths from (0,0) to (n,0) using steps of the form (1,2),(1,1),(1,0),(1,-1) or (1,-2) and staying above the x-axis. Also, a(n) is the number of possible combinations of balls on the lawn after n turns, using a Motzkin variation of the (4,2)-case of the tennis ball problem considered by D. Merlini, R. Sprugnoli and M. C. Verri.

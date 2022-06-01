@@ -1,6 +1,6 @@
 package irvine.oeis.a055;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A055519 a(n) = 9*a(n-1) + 33*a(n-2) - 76*a(n-3) - 33*a(n-4) + 9*a(n-5) + a(n-6), a(0)=a(1)=1, a(2)=2, a(3)=35, a(4)=312, a(5)=3779.

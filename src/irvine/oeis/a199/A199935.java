@@ -1,6 +1,6 @@
 package irvine.oeis.a199;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A199935 Size (b^3_n) of unit sphere in a certain graph (see Hazama article for precise definition).

@@ -1,6 +1,6 @@
 package irvine.oeis.a216;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A216162 Sequences A006452 and A216134 interlaced, where A216134 are the indices of the Sophie Germain triangular numbers.

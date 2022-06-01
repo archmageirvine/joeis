@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 // Recurrence: a[n+5]=(-8+5*n)*a[n-1]+(72-20*n)*a[n+0]+(-146+21*n)*a[n+1]+(128-8*n)*a[n+2]+(-56+n)*a[n+3]+12*a[n+4]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A130592 a(n+5) = (-8 + 5*n)*a(n-1) + (72 - 20*n)*a(n) + (-146 + 21*n)*a(n+1) + (128 - 8*n)*a(n+2) + (-56 + n)*a(n+3) + 12*a(n+4).

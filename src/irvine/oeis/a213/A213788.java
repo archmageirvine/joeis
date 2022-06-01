@@ -1,6 +1,6 @@
 package irvine.oeis.a213;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A213788 a(n) = Sum_{1&lt;=i&lt;j&lt;k&lt;=n} (P(i)*P(j)*P(k), where P(m) is the k-th Pell number A000129(m).

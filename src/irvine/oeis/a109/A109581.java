@@ -1,7 +1,7 @@
 package irvine.oeis.a109;
 // manually 2021-06-23
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A109581 E.g.f.: x/(1+x-x^3).

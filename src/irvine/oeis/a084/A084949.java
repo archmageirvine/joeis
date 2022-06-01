@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 // Recurrence: a[n+0]+(-9*n+7)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A084949 a(n) = Product_{i=0..n-1} (9*i+2).

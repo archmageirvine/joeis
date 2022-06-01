@@ -1,6 +1,6 @@
 package irvine.oeis.a140;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A140342 a(n)=5a(n-1)-11a(n-2)+13a(n-3)-9a(n-4)+3a(n-5)-a(n-6).

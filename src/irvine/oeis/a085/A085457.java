@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 // ogf: sqrt((1-x)/(1+11*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A085457 Sum(Sum a(j)a(i-j),(j=0,..,i)),(i=0,..,n)=(-11)^n.

@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 // Recurrence: a[n+0]=-2*(n-2)*a[n-1]-(n^2-5*n+5)*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A323620 Expansion of e.g.f. 2*sqrt(1 + x)*sinh(sqrt(5)*log(1 + x)/2)/sqrt(5).

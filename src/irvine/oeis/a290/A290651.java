@@ -1,6 +1,6 @@
 package irvine.oeis.a290;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A290651 a(n) = 5 - 2^(n - 1) + 3^(n - 1) + n - 2.

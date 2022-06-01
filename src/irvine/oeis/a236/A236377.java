@@ -1,6 +1,6 @@
 package irvine.oeis.a236;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A236377 Real part of Sum_{k=0..n} (k + i^k)^2, where i=sqrt(-1).

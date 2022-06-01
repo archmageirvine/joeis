@@ -1,6 +1,6 @@
 package irvine.oeis.a291;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A291985 Expansion of 1/((1+x)*(1+x^2)*(1+x^3)*(1+x^4)*(1+x^5)).

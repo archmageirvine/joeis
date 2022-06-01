@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 // ogf: (1+x)/(1+x-2*x^2)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A151575 G.f.: (1+x)/(1+x-2*x^2).

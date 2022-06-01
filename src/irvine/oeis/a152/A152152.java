@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 // ogf: -x*(x^6-2*x^5+10*x^4-14*x^3+10*x^2-2*x+1)/((x-1)*(x+1)*(x^2-3*x+1)*(x^2-x-1)*(x^2+x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A152152 A sequence related to sine products and the Fibonacci numbers A000045: a(n) = Product_{k=1..n} (1 + 4*sin(2*Pi*k/n)^2).

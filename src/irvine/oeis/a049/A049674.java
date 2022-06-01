@@ -1,6 +1,6 @@
 package irvine.oeis.a049;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A049674 a(n) = (F(3*n) - 2*F(n))/6, where F=A000045 (the Fibonacci sequence).

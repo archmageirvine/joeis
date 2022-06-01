@@ -1,6 +1,6 @@
 package irvine.oeis.a249;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A249863 Chebyshev S polynomial (A049310) evaluated at x = 26/7 and multiplied by powers of 7 (A000420).

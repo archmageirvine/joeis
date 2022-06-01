@@ -3,7 +3,7 @@ package irvine.oeis.a329;
 // ogf: (1+x+x^2-x^4)/(1-x^3)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A329682 Number of excursions of length n with Motzkin-steps forbidding all consecutive steps of length 2 except UH, UD, HU and DD.

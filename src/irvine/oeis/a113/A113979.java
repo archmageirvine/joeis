@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 // egf: (exp(2*x)+sqrt(2)*sinh(x*sqrt(2))-cosh(x*sqrt(2)))/2
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A113979 Number of compositions of n with an even number of 1's.

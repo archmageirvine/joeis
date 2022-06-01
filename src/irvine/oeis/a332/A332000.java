@@ -3,7 +3,7 @@ package irvine.oeis.a332;
 // Recurrence: a[n+0]=6*a[n-5]-a[n-10]+4418
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A332000 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x + 47^2)^2 = y^2.

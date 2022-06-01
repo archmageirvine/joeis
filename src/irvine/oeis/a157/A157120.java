@@ -1,6 +1,6 @@
 package irvine.oeis.a157;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A157120 Positive numbers y such that y^2 is of the form x^2+(x+103)^2 with integer x.

@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 // ogf: (sqrt(1-2*x-3*x^2)-sqrt(1-4*x)-x)/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A058987 a(n) = Catalan(n) - Motzkin(n-1).

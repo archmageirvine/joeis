@@ -1,6 +1,6 @@
 package irvine.oeis.a011;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A011916 a(n) = ((b(n)-1)+sqrt(3*b(n)^2-4*b(n)+1))/2, where b(n) is A011922(n).

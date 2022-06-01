@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 // Recurrence: (n+1)*a[n+0]=(5-n)*a[n-6]+5*(2*n-7)*a[n-5]+(11-4*n)*a[n-4]+20*(n-2)*a[n-3]+(5-4*n)*a[n-2]+5*(2*n-1)*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A240881 Chebyshev transform of A107841.

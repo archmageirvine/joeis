@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 // ogf: (1-(1-25*x)^(1/5))/(6*(1-25*x)^(1/5)-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A039746 Row sums of triangle A049375.

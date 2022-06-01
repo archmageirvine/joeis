@@ -1,6 +1,6 @@
 package irvine.oeis.a224;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A224520 Numbers a(n) with property a(n) + a(n+4) = 2^(n+4) - 1 = A000225(n+4).

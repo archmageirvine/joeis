@@ -3,7 +3,7 @@ package irvine.oeis.a333;
 // ogf: (3-23*x)/((1-3*x)*(1-17*x))
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A333385 a(n) = 3^n + 2 * 17^n for n &gt;= 0.

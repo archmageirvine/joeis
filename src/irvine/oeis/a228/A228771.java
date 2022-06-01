@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 // ogf: (8*x^6-28*x^5+50*x^4-35*x^3+10*x^2-sqrt(-4*x+1)*(6*x^5-18*x^4+21*x^3-8*x^2+x)-x)/(8*x^5-46*x^4+71*x^3-43*x^2-sqrt(-4*x+1)*(12*x^4-31*x^3+27*x^2-9*x+1)+11*x-1)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A228771 The number of skew sum indecomposable permutations which avoid the patterns 3124 and 4312.

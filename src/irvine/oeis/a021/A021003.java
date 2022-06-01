@@ -1,6 +1,6 @@
 package irvine.oeis.a021;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A021003 a(n) = (n/2)*(n^4+1).

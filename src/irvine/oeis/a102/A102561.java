@@ -1,7 +1,7 @@
 package irvine.oeis.a102;
 // manually
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102561 a(n) = 2^floor(n/2)*((-1)^floor(n/2) + (-1)^n)/2.

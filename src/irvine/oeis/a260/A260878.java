@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 // ogf: (4*x^2-13*x+3+sqrt((1-4*x)*(x-1)^2))/(2*(4*x-1)*(x-1))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A260878 Number of set partitions of {1, 2, ..., 2*n} with sizes in {[n, n], [2n]}.

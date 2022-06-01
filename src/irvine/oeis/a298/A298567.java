@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 // Recurrence: n*a[n+0]-2*(n-1)*a[n-2]-(2*n-3)*a[n-3]+(n-2)*a[n-4]-(2*n-5)*a[n-5]+(n-3)*a[n-6]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A298567 a(n) = Sum_{k=0..2*n/3} C(n-k,2*k-n)^2.

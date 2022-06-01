@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 // Recurrence: a[n+0]=2*(3*n-1)*a[n-1]-9*(n-1)^2*a[n-2]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A102757 a(n) = Sum_{i=0..n} C(n,i)^2 * i! * 3^i.

@@ -1,6 +1,6 @@
 package irvine.oeis.a211;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A211624 Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and w+2x+2y&gt;0.

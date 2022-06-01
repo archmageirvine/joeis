@@ -3,7 +3,7 @@ package irvine.oeis.a330;
 // Recurrence: a[n+0]=5*a[n-5]+5*a[n-10]-25*a[n-15]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A330607 Array read by rows: T(n,k) is the number of solutions to the equation Sum_{i=1..n} x_i^2 == k (mod 5) with x_i in 0..4, where n &gt;= 0 and 0 &lt;= k &lt;= 4.

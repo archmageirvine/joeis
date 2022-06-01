@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 // egf: exp(1/(2*(1-x))-x/2-1/2)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A185369 Number of simple labeled graphs on n nodes of degree 1 or 2 without cycles.

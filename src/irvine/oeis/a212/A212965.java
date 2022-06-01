@@ -1,6 +1,6 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A212965 Number of triples (w,x,y) with all terms in {0,...,n} and such that w = max(w,x,y) - min(w,x,y).

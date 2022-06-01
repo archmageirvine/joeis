@@ -1,6 +1,6 @@
 package irvine.oeis.a025;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A025827 Expansion of 1/((1-x^2)(1-x^11)(1-x^12)).

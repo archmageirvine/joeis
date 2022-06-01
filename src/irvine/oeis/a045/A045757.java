@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // egf: -1+(1-10*x)^(-1/10)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A045757 10-factorial numbers.

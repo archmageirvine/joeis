@@ -1,6 +1,6 @@
 package irvine.oeis.a162;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A162483 a(n) is the number of perfect matchings of an edge-labeled 2 X (2n+1) Mobius grid graph.

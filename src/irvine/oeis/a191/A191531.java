@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 // ogf: (x*(3-2*x-sqrt(1-4*x^2)))/((1-x)^2*(1-2*x+sqrt(1-4*x^2)))
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A191531 Sum of lengths of initial and final horizontal segments over all dispersed Dyck paths of semilength n (i.e., over all Motzkin paths of length n with no (1,0)-steps at positive heights).

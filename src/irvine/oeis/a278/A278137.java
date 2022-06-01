@@ -1,6 +1,6 @@
 package irvine.oeis.a278;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A278137 Maximum number of disjoint subgraphs of the Fibonacci cube Gamma(n) that are isomorphic to the hypercube of dimension k, summed over all k.

@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 // egf: (sqrt(1-2*x)-sqrt(1-6*x))/(2*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A069736 Total number of Eulerian circuits in labeled multigraphs with n edges.

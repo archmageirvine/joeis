@@ -1,6 +1,6 @@
 package irvine.oeis.a168;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A168582 a(n) = (4*n^3 - 6*n^2 + 8*n + 9 + 3*(-1)^n)/12.

@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 // Recurrence: a[n+0]+(-7*n+4)*a[n-1]=0
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A144739 7-factorial numbers A114799(7*n+3): Partial products of A017017(k) = 7*k+3, a(0) = 1.

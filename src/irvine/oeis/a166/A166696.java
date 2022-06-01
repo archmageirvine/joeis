@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 // ogf: (1-3*x+x^2-sqrt(1-14*x+27*x^2-14*x^3+x^4))/(4*x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A166696 A transform of A103210.

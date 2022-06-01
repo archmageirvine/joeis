@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 // egf: 2*exp(x)-(2*(1-4*x))/(1-x)^4
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A280556 a(n) = Sum_{k=1..n} k^2 * (k+1)!.

@@ -1,6 +1,6 @@
 package irvine.oeis.a215;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.recur.LinearRecurrence;
 
 /**
  * A215004 a(0) = a(1) = 1; for n&gt;1, a(n) = a(n-1) + a(n-2) + floor(n/2).

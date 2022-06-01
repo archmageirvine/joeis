@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 // egf: arctan(x)/(1-x)
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A281964 Real part of n!*Sum_{k=1..n} i^(k-1)/k, where i is sqrt(-1).

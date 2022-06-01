@@ -3,7 +3,7 @@ package irvine.oeis.a336;
 // 4: 4
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**

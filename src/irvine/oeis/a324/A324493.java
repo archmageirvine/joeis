@@ -3,7 +3,7 @@ package irvine.oeis.a324;
 // ogf: (1-18*x+x^2)^3*(1+18*x+x^2)^3*(1-x^2)^10/((1-76*x-x^2)*(1-4*x-x^2)^6*(1+4*x-x^2)^9)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A324493 Expansion of (1-18*x+x^2)^3*(1+18*x+x^2)^3*(1-x^2)^10/((1-76*x-x^2)*(1-4*x-x^2)^6*(1+4*x-x^2)^9).

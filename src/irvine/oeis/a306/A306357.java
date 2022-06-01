@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 // ogf: x*(x^5+x^4-2*x^3+x+1)/(x^4-2*x+1)
 // DO NOT EDIT here!
 
-import irvine.oeis.GeneratingFunctionSequence;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
  * A306357 Number of nonempty subsets of {1, ..., n} containing no three cyclically successive elements.

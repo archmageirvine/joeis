@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 // Recurrence: a[n+0]=3*a[n-1]
 // DO NOT EDIT here!
 
-import irvine.oeis.HolonomicRecurrence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A155734 Binomial transform of A154879.

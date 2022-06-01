@@ -33,7 +33,6 @@ public class GeneralRecurrence extends MemorySequence {
    * The number of added lambda expressions gives the number of n-sections of the recurrence.
    */
   protected void initialize() {
-    
   }
 
   @Override

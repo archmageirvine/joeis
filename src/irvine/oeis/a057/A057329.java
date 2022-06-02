@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A057328 First member of a prime 5-tuple in a 2p-1 progression.
+ * A057329 First member of a prime sextuplet in a 2p-1 progression.
  * @author Sean A. Irvine
  */
 public class A057329 extends A000040 {

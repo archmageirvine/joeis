@@ -314,6 +314,7 @@ public final class PolynomialUtils {
    * @return inverse Euler transform
    */
   public static <E> Polynomial<E> inverseEuler(final Field<E> fld, final Polynomial<E> p) {
+    // WARNING: Because of the log, in practice the ultimate underlying field here should be Q
     final int n = p.degree();
     final PolynomialRingField<E> r = new PolynomialRingField<>(fld);
     final Polynomial<E> q = r.log(p, n);

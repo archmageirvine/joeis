@@ -848,6 +848,38 @@ public final class GraphUtils {
     return results;
   }
 
+  private static final int[] ONE = {1};
+
+  /**
+   * Shift data up by one position, inserting a zero.
+   * @param fld underlying field
+   * @param data data to shift
+   * @param <E> underlying field type
+   * @return shifted data
+   */
+  public static <E> List<List<E>> shift(final Field<E> fld, final List<List<E>> data) {
+    final List<List<E>> results = new ArrayList<>();
+    results.add(Collections.singletonList(fld.zero()));
+    for (int n = 1; n <= data.size(); ++n) {
+      final Map<String, Integer> pm = IntegerPartition.buildPartitionIndex(n);
+      final List<E> ui = data.get(n - 1);
+      final List<E> v = new ArrayList<>();
+      int xi = -1;
+      final IntegerPartition partI = new IntegerPartition(n - 1);
+      int[] pi;
+      while ((pi = partI.next()) != null) {
+        ++xi;
+        final int col = pm.get(Arrays.toString(IntegerPartition.merge(ONE, pi)));
+        while (col >= v.size()) {
+          v.add(fld.zero());
+        }
+        v.set(col, fld.multiply(ui.get(xi), fld.coerce(n)));
+      }
+      results.add(v);
+    }
+    return results;
+  }
+
   /**
    * Generating function for initially (or finally) connected graphs.
    * Formula: <code>D X S*exp(-S)</code>.
@@ -861,6 +893,22 @@ public final class GraphUtils {
     final List<List<E>> tmp1 = invGgfCycleIndexData(fld, graphs, yf);
     final List<List<E>> tmp2 = negate(fld, logCycleIndexData(fld, tmp1));
     final List<List<E>> tmp3 = multiplyGgfCycleIndexData(fld, graphs, multiplyCycleIndexData(fld, tmp2, tmp1), yf);
+    return unlabeledOgf(fld, tmp3);
+  }
+
+  /**
+   * Generating function for initially (or finally) connected graphs with a global source (or sink).
+   * Formula: <code>D X x*exp(-S)</code>.
+   * @param <E> underlying field type
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf field function
+   * @return generating function
+   */
+  public static <E> Polynomial<E> initiallyV(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    final List<List<E>> tmp1 = invGgfCycleIndexData(fld, graphs, yf); // exp(-S)
+    final List<List<E>> tmp2 = shift(fld, tmp1); // x * exp(-S)
+    final List<List<E>> tmp3 = multiplyGgfCycleIndexData(fld, graphs, tmp2, yf);
     return unlabeledOgf(fld, tmp3);
   }
 
@@ -883,6 +931,25 @@ public final class GraphUtils {
     final Polynomial<E> sogf2 = ring.multiply(sogf, sogf);
     final Polynomial<E> et = ring.multiply(PolynomialUtils.eulerTransform(fld, sogf), unlabeledOgf(fld, tmp4));
     return ring.add(ring.subtract(sogf, sogf2), et);
+  }
+
+  /**
+   * Generating function for initially-finally connected graphs with a global source and sink.
+   * Formula: <code>x - x^2 + exp(S) * ((x*exp(-S)) X (x*exp(-S)) X D)</code>.
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf field function
+   * @param <E> underlying field type
+   * @return generating function
+   */
+  public static <E> Polynomial<E> initiallyFinallyV(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    final List<List<E>> tmp1 = invGgfCycleIndexData(fld, graphs, yf); // exp(-S)
+    final List<List<E>> tmp2 = shift(fld, tmp1); // x*exp(-S)
+    final List<List<E>> tmp3 = multiplyGgfCycleIndexData(fld, graphs, multiplyGgfCycleIndexData(fld, tmp2, tmp2, yf), yf);
+    final Polynomial<E> sogf = new PolynomialRingField<>(fld).negate(PolynomialUtils.inverseEuler(fld, unlabeledOgf(fld, tmp1)));
+    final DegreeLimitedPolynomialRingField<E> ring = new DegreeLimitedPolynomialRingField<>(fld, sogf.degree());
+    final Polynomial<E> et = ring.multiply(PolynomialUtils.eulerTransform(fld, sogf), unlabeledOgf(fld, tmp3));
+    return ring.add(ring.subtract(ring.x(), ring.x().shift(1)), et);
   }
 
   /**
@@ -921,6 +988,18 @@ public final class GraphUtils {
   }
 
   /**
+   * Generating function for strong graphs.
+   * @param fld underlying field
+   * @param graphs graph data
+   * @param yf underlying field function
+   * @param <E> underlying field type
+   * @return generating function
+   */
+  public static <E> Polynomial<E> strong(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
+    return new PolynomialRing<>(fld).negate(PolynomialUtils.inverseEuler(fld, unlabeledOgf(fld, invGgfCycleIndexData(fld, graphs, yf))));
+  }
+
+  /**
    * Generating function for rooted strongly connected graphs.
    * @param fld underlying field
    * @param graphs graph data
@@ -931,11 +1010,4 @@ public final class GraphUtils {
   public static <E> Polynomial<E> rootedStronglyConnected(final Field<E> fld, final List<List<E>> graphs, final Function<Integer, E> yf) {
     return unlabeledOgf(fld, pointCycleIndexData(fld, negate(fld, logCycleIndexData(fld, invGgfCycleIndexData(fld, graphs, yf)))));
   }
-
-  /*
-  \\ Strong graphs
-Strongly(graphs, yf=e->2)={
-  -InvEulerMTS(UnlabeledOgf(InvGgfCIData(graphs, yf)));
-}
-   */
 }

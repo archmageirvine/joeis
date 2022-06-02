@@ -39,9 +39,7 @@ public interface Edges {
     }
   };
 
-  /**
-   * Ordinary undirected edges.
-   */
+  /** Ordinary undirected edges. */
   Edges GRAPH_EDGES = new Edges() {
     @Override
     public <E> E edges(final int[] partition, final Field<E> fld, final Function<Integer, E> yf) {
@@ -59,4 +57,26 @@ public interface Edges {
     }
   };
 
+  /** Oriented undirected edges. */
+  Edges ORIENTED_GRAPH_EDGES = new Edges() {
+    @Override
+    public <E> E edges(final int[] partition, final Field<E> fld, final Function<Integer, E> yf) {
+      E prod = fld.one();
+      for (int i = 1; i < partition.length; ++i) {
+        for (int j = 0; j < i; ++j) {
+          final int g = IntegerUtils.gcd(partition[i], partition[j]);
+          prod = fld.multiply(prod, fld.pow(yf.apply(partition[i] * partition[j] / g), g));
+        }
+      }
+      for (final int c : partition) {
+        prod = fld.multiply(prod, fld.pow(yf.apply(c), (c - 1) / 2));
+      }
+      return prod;
+    }
+  };
+
+  /*
+  OrientedGraphEdges(v, yf) = {prod(i=2, #v, prod(j=1, i-1, my(g=gcd(v[i], v[j])); yf(v[i]*v[j]/g)^g )) * prod(i=1, #v, my(c=v[i]); yf(c)^((c-1)\2))}
+
+   */
 }

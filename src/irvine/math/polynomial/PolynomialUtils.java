@@ -8,7 +8,6 @@ import irvine.math.Mobius;
 import irvine.math.api.Field;
 import irvine.math.c.C;
 import irvine.math.c.ComplexField;
-import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
@@ -309,16 +308,17 @@ public final class PolynomialUtils {
   }
 
   /**
-   * Inverse Euler transform of a bivariate polynomial.
+   * Inverse Euler transform of a (possibly) multivariate polynomial.
    * @param p bivariate polynomial
-   * @param n maximum degree
-   * @param m maximum inner degree
+   * @param <E> underlying field type
    * @return inverse Euler transform
    */
-  public static Polynomial<Polynomial<Q>> inverseEuler(final Polynomial<Polynomial<Q>> p, final int n, final int m) {
-    final PolynomialRingField<Polynomial<Q>> r = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, m));
-    final Polynomial<Polynomial<Q>> q = r.log(p, n); // This is where Q is needed
-    return r.sum(1, n, i -> r.divide(r.multiply(innerSubstitute(r, q.substitutePower(i, n), i, m), Polynomial.create(new Q(Mobius.mobius(i)))), Polynomial.create(new Q(i))));
+  public static <E> Polynomial<E> inverseEuler(final Field<E> fld, final Polynomial<E> p) {
+    // WARNING: Because of the log, in practice the ultimate underlying field here should be Q
+    final int n = p.degree();
+    final PolynomialRingField<E> r = new PolynomialRingField<>(fld);
+    final Polynomial<E> q = r.log(p, n);
+    return r.sum(1, n, i -> r.divide(r.multiply(r.deepSubstitute(q.truncate(n / i), i), fld.coerce(Mobius.mobius(i))), fld.coerce(i)));
   }
 
   /**

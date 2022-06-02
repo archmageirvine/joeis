@@ -19,7 +19,7 @@ public class A031214 implements Sequence {
 
   @Override
   public Z next() {
-    final Sequence sequence = SequenceFactory.sequence("A" + ++mN);
+    final Sequence sequence = SequenceFactory.sequence(SequenceFactory.getCanonicalId("A" + ++mN));
     return sequence instanceof DeadSequence ? Z.valueOf(DEADS[++mDeadIndex]) : sequence.next();
   }
 }

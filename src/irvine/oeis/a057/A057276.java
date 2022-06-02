@@ -30,7 +30,7 @@ public class A057276 implements Sequence {
       final DegreeLimitedPolynomialRingField<Q> fld = new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, mN * (mN - 1));
       final List<List<Polynomial<Q>>> graphs = GraphUtils.graphCycleIndexData(fld, mN, Edges.DIGRAPH_EDGES, e -> fld.onePlusXToTheN(e));
       final List<List<Polynomial<Q>>> inv = GraphUtils.invGgfCycleIndexData(fld, graphs, e -> fld.onePlusXToTheN(e));
-      final Polynomial<Polynomial<Q>> res = PolynomialUtils.inverseEuler(GraphUtils.unlabeledOgf(fld, inv), mN, mN * (mN - 1));
+      final Polynomial<Polynomial<Q>> res = PolynomialUtils.inverseEuler(fld, GraphUtils.unlabeledOgf(fld, inv));
       mRow = res.coeff(mN);
     }
     return mRow.coeff(mM).toZ().negate();

@@ -7,12 +7,15 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apfloat.ApfloatRuntimeException;
 
 import irvine.math.z.Z;
 import irvine.util.CliFlags;
 import irvine.util.string.Date;
+import irvine.util.string.StringUtils;
 
 /**
  * A factory providing methods to get an object capable to generating a
@@ -44,6 +47,7 @@ public final class SequenceFactory {
   private static final String TERMS = "terms";
   private static final String TIMESTAMP = "timestamp";
   private static final String TRIANGLE = "triangle";
+  private static final String UPPER = "urt";
 
   /**
    * Convert a sequence identifier to a padded out A-number.
@@ -158,13 +162,82 @@ public final class SequenceFactory {
     return rowCount > 0 || rowLimit > 0;
   }
 
+  private static boolean upperRightTriangleOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {
+    // This is different from other output modes in that we need to know exactly how many
+    // terms are to be produced in advance.  We precompute the entire triangle before
+    // output.
+    final long numberOfTerms = getEffectiveMax(flags, TERMS);
+    final long maxRow = getEffectiveMax(flags, ROWS);
+
+    // Rows are padded on the left with empty cells
+    final ArrayList<ArrayList<String>> asSquareTable = new ArrayList<>();
+    Z z;
+    long termCnt = 0;
+    int col = -1;
+    int row = -1;
+    while (++termCnt <= numberOfTerms && (z = seq.next()) != null) {
+      if (++row > col) {
+        // We are starting a new column
+        if (asSquareTable.size() == maxRow) {
+          break; // We are finished collecting terms
+        }
+        final ArrayList<String> t = new ArrayList<>();
+        for (int k = 0; k < row; ++ k) {
+          t.add(""); // padding
+        }
+        asSquareTable.add(t);
+        ++col;
+        row = 0;
+      }
+      asSquareTable.get(row).add(z.toString());
+    }
+    if (asSquareTable.isEmpty()) {
+      return false; // There were no terms
+    }
+    if (row != 0) {
+      while (++row < asSquareTable.size()) {
+        asSquareTable.get(row).add(".");
+      }
+    }
+    // Compute width for each column
+    final int[] padding = new int[asSquareTable.get(0).size()];
+    for (final List<String> lst : asSquareTable) {
+      for (int k = 0; k < lst.size(); ++k) {
+        padding[k] = Math.max(padding[k], lst.get(k).length());
+      }
+    }
+    final String[] pads = new String[padding.length];
+    for (int k = 0; k < padding.length; ++k) {
+      pads[k] = StringUtils.rep(' ', padding[k]);
+    }
+    // Generate the actual output
+    for (final List<String> lst : asSquareTable) {
+      for (int k = 0; k < lst.size(); ++k) {
+        if (k > 0) {
+          out.write(SPACE); // minimum space between columns
+        }
+        // Write the term, right justified
+        final String paddedTerm = pads[k] + lst.get(k);
+        out.write(paddedTerm.substring(paddedTerm.length() - padding[k]).getBytes(StandardCharsets.US_ASCII));
+      }
+      out.write(LS);
+    }
+    return true;
+  }
+
   private static final String[][] INCOMPATIBLE_OPTIONS = {
     {B_FILE, TIMESTAMP},
     {B_FILE, DATA},
     {B_FILE, TRIANGLE},
+    {B_FILE, UPPER},
     {DATA, HEADER},
     {DATA, TIMESTAMP},
     {DATA, TRIANGLE},
+    {DATA, UPPER},
+    {TRIANGLE, UPPER},
+    {TRIANGLE, HEADER},
+    {UPPER, TIMESTAMP},
+    {UPPER, HEADER},
   };
 
   private static String getOptionString(final CliFlags.Flag<?> flag) {
@@ -196,10 +269,15 @@ public final class SequenceFactory {
     final int dl = (Integer) flags.getValue(DATA_LENGTH);
     if (dl < 1) {
       flags.setParseMessage("--" + DATA_LENGTH + " must be positive");
+      return false;
     }
     final long n = (Long) flags.getValue(TERMS);
     if (n < 0) {
       flags.setParseMessage("--" + TERMS + " must be non-negative");
+      return false;
+    }
+    if (flags.isSet(UPPER) && !(flags.isSet(TERMS) || flags.isSet(ROWS))) {
+      flags.setParseMessage(getOptionString(flags.getFlag(UPPER)) + " requires either -n or -r to be specified");
     }
     return true;
   };
@@ -221,6 +299,7 @@ public final class SequenceFactory {
     flags.registerOptional('B', B_FILE, "Output in b-file format");
     flags.registerOptional('D', DATA, "Output in a format suitable for pasting into a DATA line");
     flags.registerOptional('T', TRIANGLE, "Output data as a triangle");
+    flags.registerOptional('U', UPPER, "Output data as an upper right triangle");
     flags.registerOptional('n', TERMS, Long.class, "number", "Maximum number of terms to generate (or 0 for unbounded)", 0L);
     flags.registerOptional('r', ROWS, Long.class, "number", "Maximum number of rows to generate in a triangle (or 0 for unbounded)", 0L);
     flags.registerOptional('o', OFFSET, Long.class, "number", "Offset to use (relevant for -B and -T with --" + ROW_NUMBERS + ")", 1L);
@@ -266,6 +345,8 @@ public final class SequenceFactory {
           generated = dataLineOutputMode(flags, out, seq);
         } else if (flags.isSet(TRIANGLE)) {
           generated = triangleOutputMode(flags, out, seq);
+        } else if (flags.isSet(UPPER)) {
+          generated = upperRightTriangleOutputMode(flags, out, seq);
         } else {
           Z z;
           long termCnt = 0;

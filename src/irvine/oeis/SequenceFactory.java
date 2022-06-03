@@ -336,6 +336,10 @@ public final class SequenceFactory {
       flags.setParseMessage(getOptionString(flags.getFlag(RIGHT)) + " requires either -n or -r to be specified");
       return false;
     }
+    if (flags.isSet(SQUARE) && !(flags.isSet(TERMS) || flags.isSet(ROWS))) {
+      flags.setParseMessage(getOptionString(flags.getFlag(SQUARE)) + " requires either -n or -r to be specified");
+      return false;
+    }
     return true;
   };
 

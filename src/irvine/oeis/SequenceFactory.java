@@ -278,6 +278,7 @@ public final class SequenceFactory {
     }
     if (flags.isSet(UPPER) && !(flags.isSet(TERMS) || flags.isSet(ROWS))) {
       flags.setParseMessage(getOptionString(flags.getFlag(UPPER)) + " requires either -n or -r to be specified");
+      return false;
     }
     return true;
   };

@@ -1,12 +1,10 @@
 package irvine.factor.factor;
 
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-
 import irvine.factor.util.FactorSequence;
 import irvine.math.expression.LiteralZ;
 import irvine.math.expression.Sircon;
 import irvine.math.z.Z;
+import irvine.util.string.StringUtils;
 
 /**
  * Provides an implementation of the factor method, which in turn
@@ -38,39 +36,7 @@ public abstract class AbstractFactorizer implements Factorizer {
    */
   protected void message(final String s) {
     if (isVerbose()) {
-      final StringBuilder sb = new StringBuilder();
-      final Calendar cal = new GregorianCalendar();
-      sb.append(cal.get(Calendar.YEAR)).append('-');
-      final int month = 1 + cal.get(Calendar.MONTH);
-      if (month < 10) {
-        sb.append('0');
-      }
-      sb.append(month).append('-');
-      final int date = cal.get(Calendar.DATE);
-      if (date < 10) {
-        sb.append('0');
-      }
-      sb.append(date).append(' ');
-      final int hour = cal.get(Calendar.HOUR_OF_DAY);
-      if (hour < 10) {
-        sb.append('0');
-      }
-      sb.append(hour).append(':');
-      final int min = cal.get(Calendar.MINUTE);
-      if (min < 10) {
-        sb.append('0');
-      }
-      sb.append(min).append(':');
-      final int sec = cal.get(Calendar.SECOND);
-      if (sec < 10) {
-        sb.append('0');
-      }
-      sb.append(sec)
-        .append(' ')
-        .append(getClass().getName())
-        .append(' ')
-        .append(s);
-      System.err.println(sb);
+      StringUtils.message(System.err, getClass().getName() + " " + s);
     }
   }
 

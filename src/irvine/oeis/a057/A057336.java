@@ -37,7 +37,7 @@ public class A057336 implements Sequence {
   @Override
   public Z next() {
     final List<Integer> rle = rle(++mN);
-    StringBuilder sb = new StringBuilder();
+    final StringBuilder sb = new StringBuilder();
     sb.append("1");
     for (int k = rle.size() - 1; k >= 0; --k) {
       sb.append('0');

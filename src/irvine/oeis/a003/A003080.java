@@ -22,11 +22,7 @@ public class A003080 implements Sequence {
     private final Polynomial<Z> mP;
     private int mN = -1;
 
-    /**
-     * Construct a new polynomial backed sequence.
-     * @param poly the polynomial
-     */
-    public PolynomialSequence(final Polynomial<Z> poly) {
+    private PolynomialSequence(final Polynomial<Z> poly) {
       mP = poly;
     }
 

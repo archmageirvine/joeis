@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A178075 A (1, 2) Somos-4 sequence.
+ * A178075 A (1,2) Somos-4 sequence.
  * @author Georg Fischer
  */
 public class A178075 extends ConstantOrderRecurrence {

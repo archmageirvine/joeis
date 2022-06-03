@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A178624 A (1, 3) Somos-4 sequence associated to the elliptic curve E: y^2 + 2*x*y - y = x^3 - x.
+ * A178624 A (1,3) Somos-4 sequence associated to the elliptic curve E: y^2 + 2*x*y - y = x^3 - x.
  * @author Georg Fischer
  */
 public class A178624 extends ConstantOrderRecurrence {

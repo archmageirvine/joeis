@@ -10,6 +10,7 @@ import irvine.util.array.LongDynamicLongArray;
  */
 public class A057338 implements Sequence {
 
+  private static final int[] MULTS = {0, 1, 3, 6};
   private final LongDynamicLongArray mCounts = new LongDynamicLongArray();
   private long mMax = 0;
   private long mN = 0;
@@ -18,17 +19,10 @@ public class A057338 implements Sequence {
   public Z next() {
     ++mN;
     for (long k = 1; k <= mN; ++k) {
+      final int sk = k == mN ? 2 : 3;
       for (long j = 1; j <= k; ++j) {
         final long r = j * k * mN;
-        final int m;
-        if (k == mN) {
-          m = j == mN ? 1 : 3;
-        } else if (k == j) {
-          m = 3;
-        } else {
-          m = 6;
-        }
-        final long c = mCounts.get(r) + m;
+        final long c = mCounts.get(r) + MULTS[sk - (j == k ? 1 : 0)];
         mCounts.set(r, c);
         if (c > mMax) {
           mMax = c;

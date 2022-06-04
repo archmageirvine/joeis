@@ -22,7 +22,7 @@ public class A057343 implements Sequence {
       for (long j = 1; j <= k; ++j) {
         for (long i = 1; i <= j; ++i) {
           final int m;
-          if (k == mN && j ==k && i == j) {
+          if (k == mN && j == k && i == j) {
             // aaaa, multinomial(4; 4)
             m = 1;
           } else if ((j == k && i == j) || (k == mN && j == k)) {

@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -106,8 +107,16 @@ public final class StringUtils {
    * Print a dated message on standard output.
    * @param message message to print
    */
+  public static void message(final PrintStream out, final String message) {
+    out.println(Date.now() + message);
+  }
+
+  /**
+   * Print a dated message on standard output.
+   * @param message message to print
+   */
   public static void message(final String message) {
-    System.out.println(Date.now() + message);
+    message(System.out, message);
   }
 
   /**

@@ -102,7 +102,7 @@ public abstract class ConstantOrderRecurrence implements Sequence {
     if (++mIn <= mInitLen) {
       return mBuffer[mN & mMask];
     }
-    Z result = compute(mN - mShift);
+    final Z result = compute(mN - mShift);
     mBuffer[mN & mMask] = result;
 //** System.out.print("next2: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
     return result;

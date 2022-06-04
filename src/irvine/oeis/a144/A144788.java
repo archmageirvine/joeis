@@ -2,7 +2,6 @@ package irvine.oeis.a144;
 
 import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
-
 /**
  * A144788 a(n+1) = a(n)^3 - a(n) + 1 with a(1) = 3.
  * @author Georg Fischer

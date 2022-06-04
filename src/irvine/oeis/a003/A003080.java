@@ -17,16 +17,12 @@ public class A003080 implements Sequence {
   protected int mN = -1;
   protected Polynomial<Z> mB = null;
 
-  private static class PolynomialSequence implements Sequence {
+  private static final class PolynomialSequence implements Sequence {
 
     private final Polynomial<Z> mP;
     private int mN = -1;
 
-    /**
-     * Construct a new polynomial backed sequence.
-     * @param poly the polynomial
-     */
-    public PolynomialSequence(final Polynomial<Z> poly) {
+    private PolynomialSequence(final Polynomial<Z> poly) {
       mP = poly;
     }
 

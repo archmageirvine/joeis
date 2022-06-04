@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A111459 a(n) = (a(n-1)*a(n-3) + a(n-2)^5)/a(n-4)
+ * A111459 Generalized Somos-4 sequence with a(n-2)^2 replaced by a(n-2)^5.
  * @author Georg Fischer
  */
 public class A111459 extends ConstantOrderRecurrence {

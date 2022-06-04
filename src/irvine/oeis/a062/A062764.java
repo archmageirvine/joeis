@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A062764 a(n) = 2a(n-1)^2 - a(n-2)^4
+ * A062764 Number of partitions of the unit square into 2^n dyadic rectangles, each of area 2^{-n}.
  * @author Georg Fischer
  */
 public class A062764 extends ConstantOrderRecurrence {

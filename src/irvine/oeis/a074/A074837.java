@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A074837 a(n) = a(n-4) + 60
+ * A074837 Numbers k such that the penultimate 3 divisors of k sum to k.
  * @author Georg Fischer
  */
 public class A074837 extends ConstantOrderRecurrence {

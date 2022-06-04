@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A204321 a(n) = a(n-1)*(a(n-1)-1)
+ * A204321 Start with 4. Square the previous term and subtract it.
  * @author Georg Fischer
  */
 public class A204321 extends ConstantOrderRecurrence {

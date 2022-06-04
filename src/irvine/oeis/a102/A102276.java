@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A102276 a(n) = (a(n-1) * a(n-5) + a(n-3)^2) / a(n-6)
+ * A102276 a(n) = (a(n-1) * a(n-5) + a(n-3)^2) / a(n-6) with a(0) = ... = a(5) = 1, a(n) = a(5-n) for all n in Z.
  * @author Georg Fischer
  */
 public class A102276 extends ConstantOrderRecurrence {

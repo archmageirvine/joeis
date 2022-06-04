@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A231579 a(n) = (a(n-1)^2 + 1) / 2
+ * A231579 a(1) = 7; for n &gt; 1, a(n) is the hypotenuse of the right triangle with legs a(n) - 1 and a(n-1).
  * @author Georg Fischer
  */
 public class A231579 extends ConstantOrderRecurrence {

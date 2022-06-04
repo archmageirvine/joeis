@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A337188 a(n) = a(n-1)*a(n-3) - a(n-2)*a(n-4)
+ * A337188 a(n) = determinant([a(n-1), a(n-2); a(n-4), a(n-3)]) for n &gt;= 5, a(n) = n otherwise.
  * @author Georg Fischer
  */
 public class A337188 extends ConstantOrderRecurrence {

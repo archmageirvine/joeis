@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057350.
+ * A057350 Days in months in the Hebrew calendar starting from Nisan 5760 (Spring 2000 CE).
  * @author Ulrich Greve
  * @author David Greve
  * @author Sean A. Irvine

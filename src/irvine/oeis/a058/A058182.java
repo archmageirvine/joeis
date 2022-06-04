@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A058182 a(n) = a(n-1)^2 + a(n-2)
+ * A058182 a(n) = a(n-1)^2 + a(n-2) for n &gt;= 2 with a(0) = 1 and a(1) = 0.
  * @author Georg Fischer
  */
 public class A058182 extends ConstantOrderRecurrence {

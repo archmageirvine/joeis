@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A208211 a(n)=(a(n-1)^2*a(n-2)^4+1)/a(n-3)
+ * A208211 a(n)=(a(n-1)^2*a(n-2)^4+1)/a(n-3) with a(0)=a(1)=a(2)=1.
  * @author Georg Fischer
  */
 public class A208211 extends ConstantOrderRecurrence {

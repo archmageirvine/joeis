@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A097495 a(n) = (a(n-1)*a(n-3) + 8*a(n-2)^2)/a(n-4)
+ * A097495 Subsequence of terms of even index in the Somos-5 sequence.
  * @author Georg Fischer
  */
 public class A097495 extends ConstantOrderRecurrence {

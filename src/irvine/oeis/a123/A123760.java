@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A123760 a(n) = 2*a(n-4)
+ * A123760 Numbers whose binary expansion is 1xy100...0 where x,y = 0 or 1.
  * @author Georg Fischer
  */
 public class A123760 extends ConstantOrderRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A061021 a(n) = a(n-1)*a(n-2) - a(n-3)
+ * A061021 a(n) = a(n-1)*a(n-2) - a(n-3) with a(0) = a(1) = a(2) = 3.
  * @author Georg Fischer
  */
 public class A061021 extends ConstantOrderRecurrence {

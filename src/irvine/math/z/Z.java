@@ -611,7 +611,7 @@ public class Z extends Number implements Comparable<Z> {
    * @return true iff this number is a perfect square
    */
   public boolean isSquare() {
-    return Sqrt.sqrt(this)[1].isZero();
+    return signum() >= 0 && Sqrt.sqrt(this)[1].isZero();
   }
 
   /**

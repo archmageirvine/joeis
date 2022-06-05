@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A135361 a(n) = a(n-1)^3 + 1
+ * A135361 a(n) = a(n-1)^3 + 1 with a(0) = 0.
  * @author Georg Fischer
  */
 public class A135361 extends ConstantOrderRecurrence {

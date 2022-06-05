@@ -1841,3 +1841,47 @@ A057272 Triangle T(n,k) of number of digraphs with a quasi-source on n labeled n
 A057280 Coefficient triangle of polynomials (rising powers) related to Fibonacci convolutions. Companion triangle to A057995.
 A057281 Coefficient triangle of polynomials (falling powers) related to Fibonacci convolutions. Companion triangle to A057282.
 A057282 Coefficient triangle of polynomials (falling powers) related to Fibonacci convolutions. Companion triangle to A057281.
+A057374 Low-temperature magnetization expansion for square lattice (Potts model, q=3).
+A057375 Low-temperature susceptibility expansion for square lattice (Potts model, q=3)
+A057376 Low-temperature specific heat expansion for square lattice (Potts model, q=3)
+A057377 Low-temperature partition function expansion for square lattice (Potts model, q=3)
+A057378 Low-temperature magnetization expansion for square lattice (Potts model, q=4)
+A057379 Low-temperature susceptibility expansion for square lattice (Potts model, q=4).
+A057380 Low-temperature specific heat expansion for square lattice (Potts model, q=4).
+A057381 Low-temperature partition function expansion for square lattice (Potts model, q=4).
+A057382 Low-temperature magnetization expansion for hexagonal lattice (Potts model, q=3).
+A057383 Low-temperature susceptibility expansion for hexagonal lattice (Potts model, q=3).
+A057384 Low-temperature specific heat expansion for hexagonal lattice (Potts model, q=3).
+A057385 Low-temperature partition function expansion for hexagonal lattice (Potts model, q=3).
+A057386 Low-temperature magnetization expansion for hexagonal lattice (Potts model, q=4).
+A057387 Low-temperature susceptibility expansion for hexagonal lattice (Potts model, q=4).
+A057388 Low-temperature specific heat expansion for hexagonal lattice (Potts model, q=4).
+A057389 Low-temperature partition function expansion for hexagonal lattice (Potts model, q=4).
+A057390 Low-temperature magnetization expansion for honeycomb net (Potts model, q=3).
+A057391 Low-temperature susceptibility expansion for honeycomb net (Potts model, q=3).
+A057392 Low-temperature specific heat expansion for honeycomb net (Potts model, q=3).
+A057393 Low-temperature partition function expansion for honeycomb net (Potts model, q=3).
+A057394 Low-temperature magnetization expansion for honeycomb net (Potts model, q=4).
+A057395 Low-temperature susceptibility expansion for honeycomb net (Potts model, q=4).
+A057396 Low-temperature specific heat expansion for honeycomb net (Potts model, q=4).
+A057397 Low-temperature partition function expansion for honeycomb net (Potts model, q=4).
+A057398 Low-temperature magnetization expansion for Kagome net (Potts model, q=3).
+A057399 Low-temperature susceptibility expansion for Kagome net (Potts model, q=3).
+A057400 Low-temperature specific heat expansion for Kagome net (Potts model, q=3).
+A057401 Low-temperature partition function expansion for Kagome net (Potts model, q=3).
+A057402 Low-temperature magnetization expansion for Kagome net (Potts model, q=4).
+A057403 Low-temperature susceptibility expansion for Kagome net (Potts model, q=4).
+A057404 Low-temperature specific heat expansion for Kagome net (Potts model, q=4).
+A057405 Low-temperature partition function expansion for Kagome net (Potts model, q=4).
+A057406 Number of self-avoiding polygons of area n with one (self-avoiding polygon) hole on square lattice (not allowing rotations).
+A057407 Number of self-avoiding polygons of area n with 2 (self-avoiding polygon) holes on square lattice (not allowing rotations).
+A057408 Number of self-avoiding polygons of area n with 3 (self-avoiding polygon) holes on square lattice (not allowing rotations).
+A057409 Number of self-avoiding polygons of area n with any number of (self-avoiding polygon) holes on square lattice (not allowing rotations).
+A057410 Number of staircase polygons of perimeter 2n with one (staircase polygon) hole on square lattice (not allowing rotations).
+A057411 Number of staircase polygons of perimeter 2n with 2 (staircase polygon) holes on square lattice (not allowing rotations).
+A057412 Number of staircase polygons of perimeter 2n with 3 (staircase polygon) holes on square lattice (not allowing rotations).
+A057413 Number of staircase polygons of perimeter 2n with any number of (staircase polygon) holes on square lattice (not allowing rotations).
+A057414 Number of staircase polygons of area n with one (staircase polygon) hole on square lattice (not allowing rotations).
+A057415 Number of staircase polygons of area n with 2 (staircase polygon) holes on square lattice (not allowing rotations).
+A057416 Number of staircase polygons of area n with 3 (staircase polygon) holes on square lattice (not allowing rotations).
+A057417 Number of staircase polygons of area n with any number of (staircase polygon) holes on square lattice (not allowing rotations).

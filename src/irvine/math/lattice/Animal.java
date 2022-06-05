@@ -157,15 +157,15 @@ public class Animal implements Comparable<Animal> {
 
   }
 
-  private void fillIt(final boolean[][] marks, final int extentX, final int extentY, final int x, final int y) {
+  private void fillExtent(final boolean[][] marks, final int extentX, final int extentY, final int x, final int y) {
     if (x < 0 || y < 0 || x > extentX || y > extentY || marks[x][y]) {
       return;
     }
     marks[x][y] = true;
-    fillIt(marks, extentX, extentY, x + 1, y);
-    fillIt(marks, extentX, extentY, x - 1, y);
-    fillIt(marks, extentX, extentY, x, y + 1);
-    fillIt(marks, extentX, extentY, x, y - 1);
+    fillExtent(marks, extentX, extentY, x + 1, y);
+    fillExtent(marks, extentX, extentY, x - 1, y);
+    fillExtent(marks, extentX, extentY, x, y + 1);
+    fillExtent(marks, extentX, extentY, x, y - 1);
   }
 
   /**
@@ -201,12 +201,12 @@ public class Animal implements Comparable<Animal> {
       marks[(int) (lattice.ordinate(cell, 0) - min[0])][(int) (lattice.ordinate(cell, 1) - min[1])] = true;
     }
     for (int x = 0; x <= extentX; ++x) {
-      fillIt(marks, extentX, extentY, x, 0);
-      fillIt(marks, extentX, extentY, x, extentY);
+      fillExtent(marks, extentX, extentY, x, 0);
+      fillExtent(marks, extentX, extentY, x, extentY);
     }
     for (int y = 1; y < extentY; ++y) {
-      fillIt(marks, extentX, extentY, 0, y);
-      fillIt(marks, extentX, extentY, extentX, y);
+      fillExtent(marks, extentX, extentY, 0, y);
+      fillExtent(marks, extentX, extentY, extentX, y);
     }
     for (int x = 0; x <= extentX; ++x) {
       final boolean[] row = marks[x];
@@ -217,6 +217,69 @@ public class Animal implements Comparable<Animal> {
       }
     }
     return false;
+  }
+
+  private void fillHole(final boolean[][] marks, final int x, final int y) {
+    if (!marks[x][y]) {
+      marks[x][y] = true;
+      fillHole(marks, x - 1, y);
+      fillHole(marks, x + 1, y);
+      fillHole(marks, x, y + 1);
+      fillHole(marks, x, y - 1);
+    }
+  }
+
+  /**
+   * Count the number of holes in his animal.
+   * @return hole count
+   */
+  public int countHoles(final Lattice lattice) {
+    final int dim = lattice.dimension();
+    if (dim != 2) {
+      // Be nice to remove this limitation
+      throw new UnsupportedOperationException();
+    }
+    final long[] min = new long[dim];
+    Arrays.fill(min, Long.MAX_VALUE);
+    final long[] max = new long[dim];
+    Arrays.fill(max, Long.MIN_VALUE);
+    for (final long p : mAnimal) {
+      for (int k = 0; k < dim; ++k) {
+        min[k] = Math.min(min[k], lattice.ordinate(p, k));
+        max[k] = Math.max(max[k], lattice.ordinate(p, k));
+      }
+    }
+    final long[] extent = new long[dim];
+    for (int k = 0; k < dim; ++k) {
+      extent[k] = max[k] - min[k];
+    }
+
+    // From here on, currently limited to 2D (in fact probably only correct for Z2)
+    int count = 0;
+    final int extentX = (int) extent[0];
+    final int extentY = (int) extent[1];
+    final boolean[][] marks = new boolean[extentX + 1][extentY + 1];
+    for (final long cell : mAnimal) {
+      marks[(int) (lattice.ordinate(cell, 0) - min[0])][(int) (lattice.ordinate(cell, 1) - min[1])] = true;
+    }
+    for (int x = 0; x <= extentX; ++x) {
+      fillExtent(marks, extentX, extentY, x, 0);
+      fillExtent(marks, extentX, extentY, x, extentY);
+    }
+    for (int y = 1; y < extentY; ++y) {
+      fillExtent(marks, extentX, extentY, 0, y);
+      fillExtent(marks, extentX, extentY, extentX, y);
+    }
+    for (int x = 0; x <= extentX; ++x) {
+      final boolean[] row = marks[x];
+      for (int y = 0; y <= extentY; ++y) {
+        if (!row[y]) {
+          ++count; // todo
+          fillHole(marks, x, y);
+        }
+      }
+    }
+    return count;
   }
 
   /**

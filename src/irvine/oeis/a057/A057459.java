@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057459.
+ * A057459 a(n+1) = smallest prime p in the range a(n) &lt; p &lt; a(1)*a(2)*...*a(n) such that p-1 divides a(1)*a(2)*...*a(n); or if no such prime p exists, then a(n+1) = smallest prime &gt; a(n).
  * @author Sean A. Irvine
  */
 public class A057459 implements Sequence {

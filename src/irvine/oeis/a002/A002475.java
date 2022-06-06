@@ -14,11 +14,15 @@ import irvine.oeis.Sequence;
  */
 public class A002475 implements Sequence {
 
-  private int mN = 0;
+  private static final Polynomial<Z> ONE = Polynomial.create(1);
+  private int mN = -1;
+  private int mM = 0;
 
-  private Polynomial<Z> makePoly(final int n) {
-    if (n == 1) {
+  protected Polynomial<Z> makePoly(final int n) {
+    if (n == 0) {
       return Polynomial.create(1);
+    } else if (n == 1) {
+      return Polynomial.create(0);
     }
     final long[] coeff = new long[n + 1];
     coeff[0] = 1;
@@ -39,19 +43,23 @@ public class A002475 implements Sequence {
 
   @Override
   public Z next() {
-    if (mN == 0) {
-      ++mN;
-      return Z.ZERO;
-    }
     while (true) {
       final Polynomial<Z> p = makePoly(++mN);
-      int i = -1;
+      //System.out.println(mN + " " + p);
+      if (p.equals(ONE)) {
+        return Z.valueOf(mN); // "1" is irreducible
+      }
+      int i = mM;
       while (true) {
-        final Polynomial<Z> d = irreducible(++i);
+        final Polynomial<Z> d = irreducible(i);
+        if (d.degree() < p.degree()) {
+          mM = i;
+        }
+        ++i;
         if (p.equals(d)) {
           return Z.valueOf(mN);
         }
-        if (d.degree() >= p.degree()) {
+        if (d.degree() > p.degree()) {
           break;
         }
       }

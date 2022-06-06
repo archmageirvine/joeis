@@ -1,4 +1,4 @@
-package irvine.oeis.a027;
+package irvine.oeis.a057;
 
 import irvine.math.group.GaussianIntegers;
 import irvine.math.z.Z;
@@ -6,28 +6,24 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A027206 Numbers m such that (1+i)^m + i is a Gaussian prime.
+ * A057429 Numbers n such that (1+i)^n - 1 times its conjugate is prime.
  * @author Sean A. Irvine
  */
-public class A027206 implements Sequence {
+public class A057429 implements Sequence {
 
   private static final GaussianIntegers G = GaussianIntegers.SINGLETON;
   private static final Pair<Z, Z> C0 = new Pair<>(Z.ONE, Z.ONE);
   private Pair<Z, Z> mC = new Pair<>(Z.ONE, Z.ZERO);
-  private int mN = -1;
+  private int mN = 0;
 
   @Override
   public Z next() {
     while (true) {
-      if (++mN > 0) {
-        mC = G.multiply(mC, C0);
-      }
-      final Pair<Z, Z> u = G.add(mC, G.i());
+      ++mN;
+      mC = G.multiply(mC, C0);
+      final Pair<Z, Z> u = G.subtract(mC, G.one());
       final Z t = G.multiply(u, G.conjugate(u)).left();
       if (t.isProbablePrime()) {
-        return Z.valueOf(mN);
-      }
-      if ((mN & 3) == 2 && Z.ONE.shiftLeft(mN / 2).signedAdd(((mN - 2) & 4) == 0, Z.ONE).isProbablePrime()) {
         return Z.valueOf(mN);
       }
     }

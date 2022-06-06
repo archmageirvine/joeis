@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a109.A109041;
 
 /**
- * A205973 _Paul D. Hanna_, Feb 04 2012
+ * A205973 a(n) = Fibonacci(n)*A109041(n) for n&gt;=1, with a(0)=1, where A109041 lists the coefficients in eta(q)^9/eta(q^3)^3.
  * @author Georg Fischer
  */
 public class A205973 extends A205963 {

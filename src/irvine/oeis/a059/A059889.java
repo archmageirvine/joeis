@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a212.A212957;
 
 /**
- * A059889 x
+ * A059889 a(n) = |{m : multiplicative order of 7 mod m=n}|.
  * @author Georg Fischer
  */
 public class A059889 extends A212957 {

@@ -9,7 +9,7 @@ import irvine.util.Permutation;
 import irvine.util.string.StringUtils;
 
 /**
- * A057439.
+ * A057439 Values of S from sequence A007773.
  * @author Sean A. Irvine
  */
 public class A057439 implements Sequence {

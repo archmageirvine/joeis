@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a002.A002652;
 
 /**
- * A205975 _Paul D. Hanna_, Feb 04 2012
+ * A205975 a(n) = Fibonacci(n)*A002652(n) for n&gt;=1, with a(0)=1, where A002652 lists the coefficients in theta series of Kleinian lattice Z[(-1+sqrt(-7))/2].
  * @author Georg Fischer
  */
 public class A205975 extends A205963 {

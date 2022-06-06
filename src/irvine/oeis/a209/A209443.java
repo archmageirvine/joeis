@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000118;
 import irvine.oeis.a000.A000129;
 
 /**
- * a(n) = Pell(n)*A000118(n) for n>=1 with a(0)=1, where A000118(n) is the number of ways of writing n as a sum of 4 squares.
+ * A209443 a(n) = Pell(n)*A000118(n) for n&gt;=1 with a(0)=1, where A000118(n) is the number of ways of writing n as a sum of 4 squares.
  * @author Georg Fischer
  */
 public class A209443 extends A000129 {

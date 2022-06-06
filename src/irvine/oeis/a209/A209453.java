@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a109.A109041;
 
 /**
- * A209453 _Paul D. Hanna_, Mar 10 2012
+ * A209453 a(n) = Pell(n)*A109041(n) for n&gt;=1, with a(0)=1, where A109041 lists the coefficients in eta(q)^9/eta(q^3)^3.
  * @author Georg Fischer
  */
 public class A209453 extends A209443 {

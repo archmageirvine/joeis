@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a033.A033719;
 
 /**
- * A209454 _Paul D. Hanna_, Mar 10 2012
+ * A209454 a(n) = Pell(n)*A033719(n) for n&gt;=1, with a(0)=1, where A033719 lists the coefficients in theta_3(q)*theta_3(q^7).
  * @author Georg Fischer
  */
 public class A209454 extends A209443 {

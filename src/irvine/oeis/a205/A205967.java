@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a008.A008653;
 
 /**
- * A205967 _Paul D. Hanna_, Feb 04 2012
+ * A205967 a(n) = Fibonacci(n)*A008653(n) for n&gt;=1, with a(0)=1, where A008653 is the theta series of direct sum of 2 copies of hexagonal lattice.
  * @author Georg Fischer
  */
 public class A205967 extends A205963 {

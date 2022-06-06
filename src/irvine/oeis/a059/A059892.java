@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a212.A212957;
 
 /**
- * A059892 x
+ * A059892 a(n) = |{m : multiplicative order of 10 mod m is equal to n}|.
  * @author Georg Fischer
  */
 public class A059892 extends A212957 {

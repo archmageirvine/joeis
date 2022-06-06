@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a000.A000143;
 
 /**
- * A205964 _Paul D. Hanna_, Feb 03 2012
+ * A205964 a(n) = Fibonacci(n)*A000143(n) for n&gt;=1 with a(0)=1, where A000143(n) is the number of ways of writing n as a sum of 8 squares.
  * @author Georg Fischer
  */
 public class A205964 extends A205963 {

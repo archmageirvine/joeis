@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a004.A004016;
 
 /**
- * A205966 _Paul D. Hanna_, Feb 03 2012
+ * A205966 a(n) = Fibonacci(n)*A004016(n) for n&gt;=1, with a(0)=1, where A004016(n) is the number of integer solutions (x,y) to x^2 + x*y + y^2 = n.
  * @author Georg Fischer
  */
 public class A205966 extends A205963 {

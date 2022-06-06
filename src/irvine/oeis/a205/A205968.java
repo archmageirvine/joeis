@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a008.A008655;
 
 /**
- * A205968 _Paul D. Hanna_, Feb 04 2012
+ * A205968 a(n) = Fibonacci(n)*A008655(n) for n &gt;= 1, with a(0)=1, where A008655 lists the coefficients in (theta_3(x)*theta_3(3*x) + theta_2(x)*theta_2(3*x))^4.
  * @author Georg Fischer
  */
 public class A205968 extends A205963 {

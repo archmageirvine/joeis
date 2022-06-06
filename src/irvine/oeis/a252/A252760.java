@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a212.A212957;
 
 /**
- * A252760 x
+ * A252760 Number of moduli m such that the multiplicative order of n mod m equals n.
  * @author Georg Fischer
  */
 public class A252760 extends A212957 {

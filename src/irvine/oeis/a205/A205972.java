@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a122.A122859;
 
 /**
- * A205972 _Paul D. Hanna_, Feb 04 2012
+ * A205972 a(n) = Fibonacci(n)*A122859(n) for n&gt;=1, with a(0)=1, where A122859 lists the coefficients in phi(-q)^3/phi(-q^3) and phi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A205972 extends A205963 {

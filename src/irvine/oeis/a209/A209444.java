@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a000.A000143;
 
 /**
- * A209444 _Paul D. Hanna_, Mar 09 2012
+ * A209444 a(n) = Pell(n)*A000143(n) for n&gt;=1 with a(0)=1, where A000143(n) is the number of ways of writing n as a sum of 8 squares.
  * @author Georg Fischer
  */
 public class A209444 extends A209443 {

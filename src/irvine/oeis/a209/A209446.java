@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a004.A004016;
 
 /**
- * A209446 _Paul D. Hanna_, Mar 10 2012
+ * A209446 a(n) = Pell(n)*A004016(n) for n &gt;= 1, with a(0)=1, where A004016(n) is the number of integer solutions (x,y) to x^2 + x*y + y^2 = n.
  * @author Georg Fischer
  */
 public class A209446 extends A209443 {

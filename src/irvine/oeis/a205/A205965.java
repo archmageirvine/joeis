@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a001.A001227;
 
 /**
- * A205965 _Paul D. Hanna_, Feb 03 2012
+ * A205965 a(n) = Fibonacci(n)*A001227(n) for n&gt;=1, where A001227(n) is the number of odd divisors of n.
  * @author Georg Fischer
  */
 public class A205965 extends A205963 {

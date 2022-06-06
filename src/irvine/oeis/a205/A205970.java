@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a132.A132973;
 
 /**
- * A205970 _Paul D. Hanna_, Feb 04 2012
+ * A205970 a(n) = Fibonacci(n)*A132973(n) for n&gt;=1, with a(0)=1, where A132973 lists the coefficients in psi(-q)^3/psi(-q^3) and where psi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A205970 extends A205963 {

@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a008.A008653;
 
 /**
- * A209447 _Paul D. Hanna_, Mar 10 2012
+ * A209447 a(n) = Pell(n)*A008653(n) for n&gt;=1, with a(0)=1, where A008653 is the theta series of direct sum of 2 copies of hexagonal lattice.
  * @author Georg Fischer
  */
 public class A209447 extends A209443 {

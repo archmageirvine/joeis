@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a002.A002652;
 
 /**
- * A209455 _Paul D. Hanna_, Mar 10 2012
+ * A209455 a(n) = Pell(n)*A002652(n) for n&gt;=1, with a(0)=1, where A002652 lists the coefficients in theta series of Kleinian lattice Z[(-1+sqrt(-7))/2].
  * @author Georg Fischer
  */
 public class A209455 extends A209443 {

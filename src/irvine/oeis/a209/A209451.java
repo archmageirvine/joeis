@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a034.A034896;
 
 /**
- * A209451 _Paul D. Hanna_, Mar 10 2012
+ * A209451 a(n) = Pell(n)*A034896(n) for n &gt;= 1, with a(0)=1, where A034896 lists the number of solutions to a^2 + b^2 + 3*c^2 + 3*d^2 = n.
  * @author Georg Fischer
  */
 public class A209451 extends A209443 {

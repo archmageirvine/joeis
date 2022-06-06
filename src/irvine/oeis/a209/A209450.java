@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a132.A132973;
 
 /**
- * A209450 _Paul D. Hanna_, Mar 10 2012
+ * A209450 a(n) = Pell(n)*A132973(n) for n&gt;=1, with a(0)=1, where A132973 lists the coefficients in psi(-q)^3/psi(-q^3) and where psi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A209450 extends A209443 {

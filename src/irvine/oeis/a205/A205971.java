@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.a034.A034896;
 
 /**
- * A205971 _Paul D. Hanna_, Feb 04 2012
+ * A205971 a(n) = Fibonacci(n)*A034896(n) for n &gt;= 1, with a(0)=1, where A034896 lists the number of solutions to a^2 + b^2 + 3*c^2 + 3*d^2 = n.
  * @author Georg Fischer
  */
 public class A205971 extends A205963 {

@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.a001.A001227;
 
 /**
- * A209445 _Paul D. Hanna_, Mar 09 2012
+ * A209445 a(n) = Pell(n)*A001227(n) for n &gt;= 1, where A001227(n) is the number of odd divisors of n.
  * @author Georg Fischer
  */
 public class A209445 extends A209443 {

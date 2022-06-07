@@ -1885,3 +1885,6 @@ A057414 Number of staircase polygons of area n with one (staircase polygon) hole
 A057415 Number of staircase polygons of area n with 2 (staircase polygon) holes on square lattice (not allowing rotations).
 A057416 Number of staircase polygons of area n with 3 (staircase polygon) holes on square lattice (not allowing rotations).
 A057417 Number of staircase polygons of area n with any number of (staircase polygon) holes on square lattice (not allowing rotations).
+A057495 Number of association schemes of order n
+A057498 Number of noncommutative association schemes of order n.
+A057499 Number of primitive association schemes of order n

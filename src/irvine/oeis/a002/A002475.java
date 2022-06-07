@@ -14,6 +14,8 @@ import irvine.oeis.Sequence;
  */
 public class A002475 implements Sequence {
 
+  // This is very slow...
+
   private static final Polynomial<Z> ONE = Polynomial.create(1);
   private int mN = -1;
   private int mM = 0;

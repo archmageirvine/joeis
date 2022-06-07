@@ -23,7 +23,7 @@ import java.util.GregorianCalendar;
  * @author Soroosh Pezeshki
  * @author Sean A. Irvine (cut down functionality)
  */
-public class BadiDate {
+public final class BadiDate {
 
   private static final byte[] NAW_RUZ_OFFSET = {1, 1, 0, 0, 1, 1, 0, 0, 1,
     1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0,

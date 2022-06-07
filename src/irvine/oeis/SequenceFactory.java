@@ -1,9 +1,11 @@
 package irvine.oeis;
 
 import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
@@ -56,7 +58,10 @@ public final class SequenceFactory {
    * @return canonical name
    */
   public static String getCanonicalId(String seqId) {
-    if (seqId != null && seqId.length() > 1) {
+    if (seqId != null && !seqId.isEmpty()) {
+      if ("-".equals(seqId)) {
+        return seqId;
+      }
       if (!seqId.startsWith("A")) {
         seqId = "A" + seqId;
       }
@@ -82,6 +87,9 @@ public final class SequenceFactory {
    * <code>seqId</code>.
    */
   public static Sequence sequence(final String seqId) {
+    if ("-".equals(seqId)) {
+      return new ReaderSequence(new BufferedReader(new InputStreamReader(System.in)));
+    }
     try {
       return (Sequence) Class.forName("irvine.oeis.a" + seqId.substring(1, 4) + '.' + seqId).getDeclaredConstructor().newInstance();
     } catch (final ClassNotFoundException | IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
@@ -370,7 +378,7 @@ public final class SequenceFactory {
     flags.registerOptional(HEADER, "Print a header");
     flags.registerOptional('a', AUTHOR, String.class, "name", "Specify author name for b-file output");
     flags.registerOptional(ROW_NUMBERS, "Include row numbers in triangle (-T) output");
-    flags.registerRequired(String.class, "A-number", "Sequence to generate");
+    flags.registerRequired(String.class, "A-number", "Sequence to generate (or \"-\" to read standard input)");
     flags.setValidator(VALIDATOR);
     flags.setFlags(args);
     final boolean timestamp = flags.isSet(TIMESTAMP);

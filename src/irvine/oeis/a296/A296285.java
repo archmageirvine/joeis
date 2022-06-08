@@ -2,7 +2,7 @@ package irvine.oeis.a296;
 // manually; compleq at 2020-09-30 11:27
 
 import irvine.math.z.Z;
-import irvine.oeis.ComplementaryEquationSequence;
+import irvine.oeis.recur.ComplementaryEquationSequence;
 
 
 /**

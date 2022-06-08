@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008823 Expansion of (1+2*x^3+x^5)/((1-x)^2*(1-x^5)).

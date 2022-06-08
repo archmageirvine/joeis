@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.ComplementaryEquationSequence;
+import irvine.oeis.recur.ComplementaryEquationSequence;
 
 /**
  * A296003 Solution of the complementary equation a(n) = a(0)*b(n-1) + a(1)*b(n-2) + ... + a(n-1)*b(0), where a(0) = 2, a(1) = 4, b(0) = 1, and (a(n)) and (b(n)) are increasing complementary sequences.

@@ -3,7 +3,7 @@ package irvine.oeis.a297;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.ComplementaryEquationSequence;
+import irvine.oeis.recur.ComplementaryEquationSequence;
 
 
 /**

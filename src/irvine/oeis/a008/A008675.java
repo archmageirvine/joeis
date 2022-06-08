@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008675 Expansion of 1/( Product_{j=0..5} (1-x^(2*j+1)) ).

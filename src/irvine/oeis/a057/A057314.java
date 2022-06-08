@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A057314 Coordination sequence T1 for Zeolite Code SAV.

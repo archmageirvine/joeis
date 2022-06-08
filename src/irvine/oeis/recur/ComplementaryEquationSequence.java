@@ -2,13 +2,12 @@
  * @(#) $Id$
  * 2020-09-27, Georg Fischer
  */
-package irvine.oeis;
+package irvine.oeis.recur;
 
 import java.util.ArrayList;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A complementary equation system has a recurrence equation for sequence <code>a</code> coupled with
@@ -24,6 +23,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
  * @author Georg Fischer
  */
 public class ComplementaryEquationSequence extends HolonomicRecurrence {
+  
   static int sDebug = 0; // 0 = no debugging, 1 = some, 2 = more
   /** Some value lower than all possible sequence terms. */
   public static final long MEX = Long.MIN_VALUE;

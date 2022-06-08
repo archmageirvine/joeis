@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A027368 Coordination sequence T4 for Zeolite Code CGS.

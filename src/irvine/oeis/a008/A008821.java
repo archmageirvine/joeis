@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008821 Expansion of (1+2*x^9+x^16)/((1-x^2)^2*(1-x^16)).

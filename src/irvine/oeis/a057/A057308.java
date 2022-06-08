@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A057308 Coordination sequence T5 for Zeolite Code MTF.

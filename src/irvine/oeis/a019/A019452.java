@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A019452 Coordination sequence T2 for Zeolite Code CGF.

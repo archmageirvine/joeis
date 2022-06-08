@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A019450 Conjectured formula for irreducible 5-fold Euler sums of weight 2n+13.

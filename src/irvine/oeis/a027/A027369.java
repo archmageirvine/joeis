@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A027369 Coordination sequence T1 for Zeolite Code ITE.

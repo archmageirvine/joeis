@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.ComplementaryEquationSequence;
+import irvine.oeis.recur.ComplementaryEquationSequence;
 
 /**
  * A305129 Solution (a(n)) of the complementary equation a(n) = 2*a(n-1) - a(n-2) + b(n); see Comments.

@@ -1,6 +1,6 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A022495 Conjectured number of irreducible multiple zeta values of depth 7 and weight 2n+19.

@@ -1,6 +1,6 @@
 package irvine.oeis.a016;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A016437 Coordination sequence T5 for Zeolite Code TER.

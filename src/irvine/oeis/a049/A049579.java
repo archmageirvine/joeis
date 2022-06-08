@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A049579 Prime subscripts for which residue of (prime(n)-1)!+1 modulo prime(n)+2 equals 1.
+ * A049579 Numbers k such that prime(k)+2 divides (prime(k)-1)!.
  * @author Sean A. Irvine
  */
 public class A049579 extends A000040 {

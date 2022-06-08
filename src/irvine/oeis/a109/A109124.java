@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A109124 a(n) = (n+1)(n+2)^3*(n+3)^4*(n+4)^3*(n+5)(2n+5)(2n+7)/7257600.
+ * A109124 a(n) = (n+1)*(n+2)^3*(n+3)^4*(n+4)^3*(n+5)*(2n+5)*(2n+7)/7257600.
  * @author Georg Fischer
  */
 public class A109124 extends GeneratingFunctionSequence {

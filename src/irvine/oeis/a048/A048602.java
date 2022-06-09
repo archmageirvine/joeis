@@ -24,7 +24,7 @@ public class A048602 extends MemoryFunction2<Integer, Q> implements Sequence {
     Q sum = Q.ZERO;
     if (((n + m) & 1) == 0) {
       for (int k = 0; k <= m / 2; ++k) {
-        sum = sum.signedAdd((((n + m) / 2 - k) & 1) == 0, new Q(Binomial.binomial(m, k).multiply(Z.valueOf(2 * k - m).pow(n))));
+        sum = sum.signedAdd((((n + m) / 2 - k) & 1) == 0, new Q(Binomial.binomial(m, k).multiply(Z.valueOf(2L * k - m).pow(n))));
       }
       sum = sum.divide(mF.factorial(n).shiftLeft(m));
       sum = sum.multiply(2);

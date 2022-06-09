@@ -19,7 +19,7 @@ public class A048140 extends A000219 {
 
   @Override
   public Z next() {
-    return super.next().add(mS.next()).divide(2);
+    return super.next().add(mS.next()).divide2();
   }
 }
 

@@ -18,6 +18,6 @@ public class A002216 extends A002215 {
       mFirst = false;
       return Z.ZERO;
     }
-    return super.next().add(mA002214.next()).divide(2);
+    return super.next().add(mA002214.next()).divide2();
   }
 }

@@ -23,7 +23,7 @@ public class A039502 implements Sequence {
         } else if (Z17.equals(m)) {
           return mN;
         }
-        m = m.isEven() ? m.divide(2) : m.multiply(3).subtract(1);
+        m = m.isEven() ? m.divide2() : m.multiply(3).subtract(1);
       }
     }
   }

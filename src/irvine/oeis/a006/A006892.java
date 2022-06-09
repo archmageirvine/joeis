@@ -17,7 +17,7 @@ public class A006892 implements Sequence {
     if (++mN <= 3) {
       return Z.valueOf(mN);
     }
-    mA = mA.add(3).divide(2).square().subtract(2);
+    mA = mA.add(3).divide2().square().subtract(2);
     return mA;
   }
 }

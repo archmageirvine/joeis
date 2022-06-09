@@ -32,6 +32,6 @@ public class A006296 implements Sequence {
     mSqrtCoeffs.add(mSqrtSeq.next());
     final Polynomial<Z> sqrt = RING.create(mSqrtCoeffs);
     ++mN;
-    return RING.coeff(RING.add(M0, RING.multiply(sqrt, M1, mN)), RING.pow(sqrt, 11, mN), mN).divide(2);
+    return RING.coeff(RING.add(M0, RING.multiply(sqrt, M1, mN)), RING.pow(sqrt, 11, mN), mN).divide2();
   }
 }

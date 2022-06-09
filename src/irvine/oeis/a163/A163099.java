@@ -9,21 +9,9 @@ import irvine.math.z.Z;
  * @author Georg Fischer
  */
 public class A163099 extends A163097 {
-  private int mN = 0;
-  
-  /** Construct the sequence. */
-  public A163099() {
-    super();
-    int bOffset = 0;
-    while (bOffset < mN) {
-      ++bOffset;
-      super.next();
-    }
-  }
 
   @Override
   public Z next() {
-    ++mN;
-    return super.next().divide(2);
+    return super.next().divide2();
   }
 }

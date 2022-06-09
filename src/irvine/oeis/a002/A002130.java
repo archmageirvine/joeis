@@ -27,6 +27,6 @@ public class A002130 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return RING.pow(t(1, mN), 2, mN).coeff(mN).subtract(t(2, mN).coeff(mN)).divide(2);
+    return RING.pow(t(1, mN), 2, mN).coeff(mN).subtract(t(2, mN).coeff(mN)).divide2();
   }
 }

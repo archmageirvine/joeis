@@ -20,9 +20,9 @@ public class A006849 extends A005159 {
   public Z next() {
     mEven = !mEven;
     if (mEven) {
-      return super.next().divide(2);
+      return super.next().divide2();
     } else {
-      return mHalfRate.next().add(super.next()).divide(2);
+      return mHalfRate.next().add(super.next()).divide2();
     }
   }
 }

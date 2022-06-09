@@ -106,7 +106,7 @@ public abstract class ConstantOrderRecurrence implements Sequence {
   protected abstract Z compute(final int n);
 
   /**
-   * Gets the index distance between the highest recurrence element and a[n]: 0..k-1
+   * Gets the index distance between the highest recurrence element and <code>a[n]: 0..k-1</code>.
    * @return a non-negative number
    */
   public int getDistance() {
@@ -134,13 +134,13 @@ public abstract class ConstantOrderRecurrence implements Sequence {
   @Override
   public Z next() {
     ++mN;
-//**System.out.print("next1: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
+//System.out.print("next1: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
     if (++mIn <= mInitLen) {
       return mBuffer[mN & mMask];
     }
     final Z result = compute(mN - mShift);
     mBuffer[mN & mMask] = result;
-//**System.out.print("next2: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
+//System.out.print("next2: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
     return result;
   }
 }

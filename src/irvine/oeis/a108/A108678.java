@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A108678 a(n) = (n+1)^2*(n+2)(2n+3)/6.
+ * A108678 a(n) = (n+1)^2*(n+2)*(2n+3)/6.
  * @author Georg Fischer
  */
 public class A108678 extends GeneratingFunctionSequence {

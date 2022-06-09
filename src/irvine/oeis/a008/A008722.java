@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008722 Molien series for 3-dimensional group [2,9] = *229.

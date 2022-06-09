@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A057323 Coordination sequence T7 for Zeolite Code SFE.

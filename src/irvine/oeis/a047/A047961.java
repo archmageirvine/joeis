@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A047961 Coordination sequence T4 for Zeolite Code ISV.

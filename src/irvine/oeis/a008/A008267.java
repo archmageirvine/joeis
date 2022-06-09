@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008267 Coordination sequence T1 for Coesite.

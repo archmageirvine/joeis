@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A014671 Poincar\u00e9 series [or Poincare series] (or Molien series) for mod 2 cohomology of alternating group A_7 subset A_8 acting on polynomial ring F_2[ x_1,y_1,z_1,w_1 ].

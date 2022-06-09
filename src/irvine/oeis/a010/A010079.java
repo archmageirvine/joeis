@@ -1,6 +1,6 @@
 package irvine.oeis.a010;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A010079 Coordination sequence for net formed by holes in D_4 lattice.

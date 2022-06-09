@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A047955 Coordination sequence T3 for Zeolite Code DON.

@@ -1,6 +1,6 @@
 package irvine.oeis.a301;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A301187 Coordination sequence T1 for Zeolite Code SFN.

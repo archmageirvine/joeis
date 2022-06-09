@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A024984 Coordination sequence T3 for Zeolite Code IFR.

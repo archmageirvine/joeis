@@ -1,6 +1,6 @@
 package irvine.oeis.a009;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A009948 Coordination sequence for alpha-Nd, Position Nd1.

@@ -1,6 +1,6 @@
 package irvine.oeis.a027;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A027374 Coordination sequence T2 for Zeolite Code SAT.

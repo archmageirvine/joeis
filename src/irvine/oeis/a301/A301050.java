@@ -1,6 +1,6 @@
 package irvine.oeis.a301;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A301050 Coordination sequence T6 for Zeolite Code IHW.

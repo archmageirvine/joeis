@@ -1,6 +1,6 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A024991 Coordination sequence T6 for Zeolite Code MWW.

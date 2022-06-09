@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A033615 Coordination sequence T4 for Zeolite Code SBT.

@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A033605 Coordination sequence T2 for Zeolite Code SBE.

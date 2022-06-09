@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008013 Coordination sequence occurring in Zeolite Codes AFG, CAN, LIO, LOS.

@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008421 Crystal ball sequence for 10-dimensional cubic lattice.

@@ -1,6 +1,6 @@
 package irvine.oeis.a301;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A301235 Coordination sequence T16 for Zeolite Code TUN.

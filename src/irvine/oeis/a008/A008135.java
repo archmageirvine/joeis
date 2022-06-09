@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008135 Coordination sequence T2 for Zeolite Code LOV.

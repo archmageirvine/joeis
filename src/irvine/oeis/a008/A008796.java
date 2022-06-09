@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008796 Molien series for 3-dimensional group [2,3]+ = 223; also for group H_{1,2} of order 384.

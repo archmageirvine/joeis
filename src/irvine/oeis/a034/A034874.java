@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A034874 a(n) = n times the reverse of a(n-1).
+ * A034874 a(1) = 1; for n &gt;= 2, a(n) = n times the reverse of a(n-1).
  * @author Sean A. Irvine
  */
 public class A034874 implements Sequence {

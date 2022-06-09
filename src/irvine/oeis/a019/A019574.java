@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A019574 Coordination sequence T4 for Zeolite Code SAO.

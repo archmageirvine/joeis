@@ -1,6 +1,6 @@
 package irvine.oeis.a300;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A300743 Coordination sequence T5 for Zeolite Code *BEA.

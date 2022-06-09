@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008530 Coordination sequence for 4-dimensional primitive di-isohexagonal orthogonal lattice.

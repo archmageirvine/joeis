@@ -1,6 +1,6 @@
 package irvine.oeis.a047;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A047965 Coordination sequence T3 for Zeolite Code MSO.

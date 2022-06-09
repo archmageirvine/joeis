@@ -5,7 +5,7 @@ package irvine.oeis.a054;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A054108 a(n) = (-1)^(n+1)*sum(k=0,n+1,(-1)^k*binomial(2*k,k)).
+ * A054108 a(n) = (-1)^(n+1)*Sum_{k=0..n+1}(-1)^k*binomial(2*k,k).
  * @author Georg Fischer
  */
 public class A054108 extends HolonomicRecurrence {

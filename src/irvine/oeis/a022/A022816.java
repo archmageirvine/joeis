@@ -1,6 +1,6 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A022816 Number of terms in 6th derivative of a function composed with itself n times.

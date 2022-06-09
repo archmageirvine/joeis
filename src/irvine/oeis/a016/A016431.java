@@ -1,6 +1,6 @@
 package irvine.oeis.a016;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A016431 Coordination sequence T2 for Zeolite Code OSI.

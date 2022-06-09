@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A038413 Coordination sequence T6 for Zeolite Code ESV.

@@ -1,6 +1,6 @@
 package irvine.oeis.a009;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A009900 Coordination sequence T4 for Zeolite Code RUT.

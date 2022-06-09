@@ -1,6 +1,6 @@
 package irvine.oeis.a009;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A009945 Coordination sequence for NiAs(2), As position.

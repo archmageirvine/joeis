@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A038420 Coordination sequence T13 for Zeolite Code STT.

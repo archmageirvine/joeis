@@ -1,6 +1,6 @@
 package irvine.oeis.a038;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A038401 Coordination sequence T3 for Zeolite Code AFN.

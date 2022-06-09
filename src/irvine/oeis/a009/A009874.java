@@ -1,6 +1,6 @@
 package irvine.oeis.a009;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A009874 Coordination sequence T7 for Zeolite Code CON.

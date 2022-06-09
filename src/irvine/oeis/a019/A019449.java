@@ -1,6 +1,6 @@
 package irvine.oeis.a019;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A019449 Irreducible quadruple Euler sums of weight 2n+10 (verified for n &lt;= 14).

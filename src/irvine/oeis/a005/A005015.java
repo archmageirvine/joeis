@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005015 11*2^n.
+ * A005015 a(n) = 11*2^n.
  * @author Sean A. Irvine
  */
 public class A005015 implements Sequence {

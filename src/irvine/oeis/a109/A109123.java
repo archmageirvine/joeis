@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A109123 a(n) = 4(n+1)^2*(n+3)^2*(5n^2 + 20n + 12).
+ * A109123 a(n) = 4*(n+1)^2*(n+3)^2*(5*n^2 + 20*n + 12).
  * @author Georg Fischer
  */
 public class A109123 extends GeneratingFunctionSequence {

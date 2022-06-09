@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A085606 (n-1)^n - 1.
+ * A085606 a(n) = (n-1)^n - 1.
  * @author Georg Fischer
  */
 public class A085606 implements Sequence {

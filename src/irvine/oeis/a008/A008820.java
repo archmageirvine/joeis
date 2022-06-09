@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008820 Expansion of (1+2*x^7+x^12)/((1-x^2)^2*(1-x^12)).

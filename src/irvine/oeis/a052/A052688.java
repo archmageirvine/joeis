@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052688 E.g.f. x/((1-x)(1-x^3)).
+ * A052688 Expansion of e.g.f. x/((1-x)*(1-x^3)).
  * @author Georg Fischer
  */
 public class A052688 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A011943 Numbers n such that any group of n consecutive integers has integral standard deviation {viz. A011944(n)}.
+ * A011943 Numbers k such that any group of k consecutive integers has integral standard deviation (viz. A011944(k)).
  * @author Sean A. Irvine
  */
 public class A011943 extends LinearRecurrence {

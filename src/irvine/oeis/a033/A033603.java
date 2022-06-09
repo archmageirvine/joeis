@@ -1,6 +1,6 @@
 package irvine.oeis.a033;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A033603 Coordination sequence T5 for Zeolite Code CFI.

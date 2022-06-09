@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.CoordinationSequence;
+import irvine.oeis.recur.CoordinationSequence;
 
 /**
  * A008726 Molien series 1/((1-x)^2*(1-x^8)) for 3-dimensional group [2,n] = *22n.

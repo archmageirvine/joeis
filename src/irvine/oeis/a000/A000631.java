@@ -23,7 +23,7 @@ public class A000631 extends A000642 {
         s = s.add(mA642.get(k).multiply(mA642.get(mN - k)));
       }
       final Z f = mA642.get(mN / 2);
-      s = s.add(f.multiply(f.add(1)).divide(2));
+      s = s.add(f.multiply(f.add(1)).divide2());
     } else {
       for (int k = 1; k <= mN / 2; ++k) {
         s = s.add(mA642.get(k).multiply(mA642.get(mN - k)));

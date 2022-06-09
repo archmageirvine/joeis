@@ -27,7 +27,7 @@ public class A000114 implements Sequence {
       }
       d = mPrime.nextPrime(d);
     }
-    return b.divide(2);
+    return b.divide2();
   }
 }
 

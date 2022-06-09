@@ -14,6 +14,6 @@ public class A011848 implements Sequence {
 
   @Override
   public Z next() {
-    return Binomial.binomial(++mN, 2).divide(2);
+    return Binomial.binomial(++mN, 2).divide2();
   }
 }

@@ -26,7 +26,7 @@ public class A000055 implements Sequence {
     if ((n & 1) == 0) {
       sum = sum.subtract(mB.a(n / 2));
     }
-    return mB.a(n).subtract(sum.divide(2));
+    return mB.a(n).subtract(sum.divide2());
   }
 
 }

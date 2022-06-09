@@ -21,7 +21,7 @@ public class A037084 implements Sequence {
         if (Z.FIVE.equals(m) || Z17.equals(m)) {
           return mN;
         }
-        m = m.isEven() ? m.divide(2) : m.multiply(3).subtract(1);
+        m = m.isEven() ? m.divide2() : m.multiply(3).subtract(1);
       }
     }
   }

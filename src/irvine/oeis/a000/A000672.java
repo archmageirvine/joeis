@@ -14,7 +14,7 @@ public class A000672 extends A001190 {
   private final ArrayList<Z> mS = new ArrayList<>();
 
   private Z bin2(final Z n) {
-    return n.square().subtract(n).divide(2);
+    return n.square().subtract(n).divide2();
   }
 
   private Z bin3(final Z n) {

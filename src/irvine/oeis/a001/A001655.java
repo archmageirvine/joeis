@@ -19,7 +19,7 @@ public class A001655 extends A000045 {
   @Override
   public Z next() {
     final Z t = super.next();
-    final Z r = t.multiply(mA).multiply(mB).divide(2);
+    final Z r = t.multiply(mA).multiply(mB).divide2();
     mA = mB;
     mB = t;
     return r;

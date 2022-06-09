@@ -22,7 +22,7 @@ public class A000900 extends A000085 {
       t = mT;
       mT = null;
     }
-    return super.next().subtract(t).divide(2);
+    return super.next().subtract(t).divide2();
   }
 }
 

@@ -36,7 +36,7 @@ public class A001258 implements Sequence {
       if (n <= 4) {
         return Z.ONE;
       } else {
-        return mFactorial.factorial(n - 2).divide(2);
+        return mFactorial.factorial(n - 2).divide2();
       }
     }
     if (k <= n - 2) {

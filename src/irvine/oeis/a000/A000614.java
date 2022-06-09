@@ -16,6 +16,6 @@ public class A000614 implements Sequence {
   @Override
   public Z next() {
     final CycleIndex ans = AffineGroupCycleIndex.cycleIndex(++mN);
-    return ans.apply(1).add(ans.apply(0, 1)).toZ().divide(2);
+    return ans.apply(1).add(ans.apply(0, 1)).toZ().divide2();
   }
 }

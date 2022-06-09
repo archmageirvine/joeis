@@ -19,6 +19,6 @@ public class A001318 implements Sequence {
       return Z.ZERO;
     }
     mN = mN <= 0 ? 1 - mN : -mN;
-    return Z.valueOf(mN).multiply(3 * mN - 1).divide(2);
+    return Z.valueOf(mN).multiply(3 * mN - 1).divide2();
   }
 }

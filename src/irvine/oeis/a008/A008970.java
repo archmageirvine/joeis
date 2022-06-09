@@ -30,7 +30,7 @@ public class A008970 extends MemoryFunction2<Integer, Z> implements Sequence {
       ++mRow;
       mPos = 1;
     }
-    return get(mRow, mPos++).divide(2);
+    return get(mRow, mPos++).divide2();
   }
 
 }

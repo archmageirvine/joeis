@@ -18,7 +18,7 @@ public class A000353 implements Sequence {
     while (true) {
       mP = mPrime.nextPrime(mP);
       final long r = mP.mod(40);
-      if ((r == 7 || r == 19 || r == 23) && mPrime.isPrime(mP.subtract(Z.ONE).divide(2))) {
+      if ((r == 7 || r == 19 || r == 23) && mPrime.isPrime(mP.subtract(Z.ONE).divide2())) {
         return mP;
       }
     }

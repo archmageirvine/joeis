@@ -17,7 +17,7 @@ public class A000131 implements Sequence {
     ++mN;
     Z t = Binomial.catalan(mN - 2).subtract(Binomial.catalan(mN / 2 - 1).multiply(mN));
     if ((mN & 1) == 0) {
-      t = t.subtract(Binomial.catalan(mN / 2 - 1).multiply(mN).divide(2));
+      t = t.subtract(Binomial.catalan(mN / 2 - 1).multiply(mN).divide2());
     }
     if (mN % 3 == 0) {
       t = t.subtract(Binomial.catalan(mN / 3 - 1).multiply(mN).divide(3));

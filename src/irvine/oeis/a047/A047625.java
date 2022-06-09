@@ -15,7 +15,7 @@ public class A047625 implements Sequence {
 
   @Override
   public Z next() {
-    mA = mA == null ? Q.ONE : mA.multiply(3).divide(2);
+    mA = mA == null ? Q.ONE : mA.multiply(3).divide(Q.TWO);
     return CR.PI.multiply(CR.valueOf(mA)).floor();
   }
 }

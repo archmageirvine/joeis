@@ -37,6 +37,6 @@ public class A002133 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return d(mN).add(tau(mN)).subtract(Jaguar.factor(mN).sigma()).divide(2);
+    return d(mN).add(tau(mN)).subtract(Jaguar.factor(mN).sigma()).divide2();
   }
 }

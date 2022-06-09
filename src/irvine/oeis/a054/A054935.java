@@ -20,6 +20,6 @@ public class A054935 extends A006384 {
   @Override
   public Z next() {
     mAlt = !mAlt;
-    return super.next().add(mAlt ? mSeq.next() : Z.ZERO).divide(2);
+    return super.next().add(mAlt ? mSeq.next() : Z.ZERO).divide2();
   }
 }

@@ -30,6 +30,6 @@ public class A001188 implements Sequence {
     final Z g = mA.next().square();
     mSeq = RING.add(mSeq, RING.monomial(new Q(g, mF), mN));
     final Polynomial<Q> egf = RING.add(RING.log1p(mSeq, mN), RING.exp(RING.x(), mN));
-    return egf.coeff(mN).multiply(mF).toZ().divide(2);
+    return egf.coeff(mN).multiply(mF).toZ().divide2();
   }
 }

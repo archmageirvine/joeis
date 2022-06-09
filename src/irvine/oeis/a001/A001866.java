@@ -20,7 +20,7 @@ public class A001866 implements Sequence {
     }
     Z s = Z.ZERO;
     Z m = Z.valueOf(mN);
-    final Z f = mF.factorial(mN).square().multiply(m.pow(mN - 1)).divide(2);
+    final Z f = mF.factorial(mN).square().multiply(m.pow(mN - 1)).divide2();
     for (int k = 2; k <= mN; ++k) {
       m = m.multiply(mN);
       s = s.add(f.divide(m).divide(mF.factorial(mN - k)));

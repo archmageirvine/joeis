@@ -15,7 +15,7 @@ public class A002731 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(2);
-      if (mN.square().add(1).divide(2).isProbablePrime()) {
+      if (mN.square().add(1).divide2().isProbablePrime()) {
         return mN;
       }
     }

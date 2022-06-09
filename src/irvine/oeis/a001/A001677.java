@@ -30,6 +30,6 @@ public class A001677 extends A000084 {
     if ((mN & 1) != 0) {
       s = s.add(mA84.get(mN / 2));
     }
-    return t.subtract(s.divide(2));
+    return t.subtract(s.divide2());
   }
 }

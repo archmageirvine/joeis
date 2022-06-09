@@ -14,6 +14,6 @@ public class A001447 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.FIVE.pow(mN).add(Z.FIVE.pow(mN / 2)).divide(2);
+    return Z.FIVE.pow(mN).add(Z.FIVE.pow(mN / 2)).divide2();
   }
 }

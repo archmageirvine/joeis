@@ -12,7 +12,7 @@ public class A000701 extends A000700 {
 
   @Override
   public Z next() {
-    return mA41.next().subtract(super.next()).divide(2);
+    return mA41.next().subtract(super.next()).divide2();
   }
 }
 

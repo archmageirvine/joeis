@@ -47,6 +47,6 @@ public class A001267 implements Sequence {
 
   @Override
   public Z next() {
-    return s(++mN).coeff(coeff()).divide(2);
+    return s(++mN).coeff(coeff()).divide2();
   }
 }

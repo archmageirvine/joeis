@@ -51,6 +51,6 @@ public class A000349 implements Sequence {
     mS1 = mS2;
     mS2 = mS3;
     mS3 = t;
-    return t.coeff(2).divide(2);
+    return t.coeff(2).divide2();
   }
 }

@@ -20,7 +20,7 @@ public class A000957 extends A000108 {
       mA = super.next();
       return Z.ONE;
     }
-    mA = super.next().subtract(mA).divide(2);
+    mA = super.next().subtract(mA).divide2();
     return mA;
   }
 }

@@ -27,6 +27,6 @@ public class A001514 implements Sequence {
     for (int k = 0; k <= mN; ++k) {
       s = s.add(t(mN, k));
     }
-    return s.divide(2);
+    return s.divide2();
   }
 }

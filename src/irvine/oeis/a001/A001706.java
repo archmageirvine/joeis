@@ -26,6 +26,6 @@ public class A001706 extends A000254 {
     for (int k = 0; k <= n; ++k) {
       s = s.add(Binomial.binomial(mN, k).multiply(mA254.get(k)).multiply(mA254.get(n - k)));
     }
-    return s.divide(2);
+    return s.divide2();
   }
 }

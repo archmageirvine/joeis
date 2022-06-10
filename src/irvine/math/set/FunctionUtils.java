@@ -162,7 +162,7 @@ public final class FunctionUtils {
     if (domainSize == null) {
       return null;
     }
-    return domainSize.pow(domainSize.multiply(domainSize.add(1)).divide(2));
+    return domainSize.pow(domainSize.multiply(domainSize.add(1)).divide2());
   }
 
   /**

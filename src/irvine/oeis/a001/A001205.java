@@ -16,7 +16,7 @@ public class A001205 implements Sequence {
 
   @Override
   public Z next() {
-    final Z t = mC.multiply2().add(mA.multiply(mN - 1)).multiply(mN++).divide(2);
+    final Z t = mC.multiply2().add(mA.multiply(mN - 1)).multiply(mN++).divide2();
     mA = mB;
     mB = mC;
     mC = t;

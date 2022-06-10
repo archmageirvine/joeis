@@ -12,6 +12,6 @@ public class A088763 extends A087695 {
 
   @Override
   public Z next() {
-    return super.next().divide(2);
+    return super.next().divide2();
   }
 }

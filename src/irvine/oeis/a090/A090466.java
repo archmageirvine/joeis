@@ -18,12 +18,12 @@ public class A090466 implements Sequence {
   public Z next() {
     while (true) {
       final Z r = mPriority.isEmpty() ? null : mPriority.first();
-      final Z h = Z.valueOf(mN).multiply(mN + 1).divide(2);
+      final Z h = Z.valueOf(mN).multiply(mN + 1).divide2();
       final Z y = Z.valueOf(mN - 1).multiply(3);
       if (r == null || h.compareTo(r) <= 0 || y.compareTo(r) <= 0) {
         final Z o = Z.valueOf(mN - 1);
         final Z s = Z.ONE.subtract(o.square());
-        final Z u = o.multiply(mN).divide(2);
+        final Z u = o.multiply(mN).divide2();
         // Extend n
         for (long k = 3; k <= mN; ++k) {
           final Z t = s.add(u.multiply(k));
@@ -32,7 +32,7 @@ public class A090466 implements Sequence {
         // Extend k
         for (long n = 3; n < mN; ++n) {
           final Z g = Z.valueOf(n - 1);
-          final Z t = Z.ONE.add(g.multiply(n).multiply(mN).divide(2)).subtract(g.square());
+          final Z t = Z.ONE.add(g.multiply(n).multiply(mN).divide2()).subtract(g.square());
           mPriority.add(t);
         }
         ++mN;

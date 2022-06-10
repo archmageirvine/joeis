@@ -56,7 +56,7 @@ public class A003614 implements Sequence {
 //    final Q a = mT.subs(1, Q.TWO).extract(0, mN).eval(Q.ONE);
 //    //System.out.println("T(x^2,4)=" + mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR));
 //    final Q b = mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR).extract(0, mN + 1).eval(Q.ONE).multiply(new Q(3, 2));
-//    final Q c = RING.pow(mT.subs(1, Q.TWO), 2, limits).extract(0, mN + 1).eval(Q.ONE).divide(2);
+//    final Q c = RING.pow(mT.subs(1, Q.TWO), 2, limits).extract(0, mN + 1).eval(Q.ONE).divide2();
 //    final Q d = RING.pow(mT.subs(1, Q.TWO), 4, limits).extract(0, mN + 2).eval(Q.ONE).divide(24);
 //    //System.out.println("T(x^2,4)T(x,2)^2=" + RING.multiply(mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR), RING.pow(mT.subs(1, Q.TWO), 2, limits), limits));
 //    final Q e = RING.multiply(mT.substitutePowers(Y2X, limits).subs(1, Q.FOUR), RING.pow(mT.subs(1, Q.TWO), 2, limits), limits).extract(0, mN + 2).eval(Q.ONE).multiply(new Q(3, 4));

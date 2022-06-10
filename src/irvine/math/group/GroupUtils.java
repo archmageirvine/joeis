@@ -84,7 +84,7 @@ public final class GroupUtils {
         } else if (Z.THREE.equals(p) && Z.TWO.equals(q)) {
           return Z.FIVE;
         } else {
-          return p.add(9).divide(2);
+          return p.add(9).divide2();
         }
       case 3:
         if (Z.TWO.equals(q)) { // 2^3p

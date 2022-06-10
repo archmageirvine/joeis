@@ -19,7 +19,7 @@ public class A002715 implements Sequence {
     } else {
       mEven = !mEven;
       if (mEven) {
-        mP = mP.square().subtract(3).divide(2);
+        mP = mP.square().subtract(3).divide2();
       } else {
         mP = mP.multiply2().add(1);
       }

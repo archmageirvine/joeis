@@ -19,6 +19,6 @@ public class A005957 extends A000625 {
     super.next();
     final Polynomial<Z> a = RING.create(mT);
     final Polynomial<Z> gf = RING.add(RING.pow(a, 2, mN), a.substitutePower(2, mN));
-    return gf.coeff(mN).divide(2);
+    return gf.coeff(mN).divide2();
   }
 }

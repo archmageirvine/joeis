@@ -18,7 +18,7 @@ public class A001499 implements Sequence {
   public Z next() {
     if (++mN > 0) {
       final Z t = mB.multiply(2 * mN - 3).add(mA.multiply(mN - 2).multiply(mN - 2))
-        .multiply(mN).multiply(mN - 1).multiply(mN - 1).divide(2);
+        .multiply(mN).multiply(mN - 1).multiply(mN - 1).divide2();
       mA = mB;
       mB = mC;
       mC = t;

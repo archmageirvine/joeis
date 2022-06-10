@@ -24,7 +24,7 @@ public class A071887 implements Sequence {
         a = a.add(b.multiply(s));
       }
       b = a.add(b);
-      k = t.divide(2);
+      k = t.divide2();
     }
     return b;
   }

@@ -64,7 +64,7 @@ public class A000233 implements Sequence {
       }
     }
     final Z r = prod2.multiply(Z.valueOf(prod1).pow(2 * n + 1)).multiply(mz.pow(2 * n));
-    return new Z[] {bz, b == 1 && a != 1 ? r.divide(2) : r};
+    return new Z[] {bz, b == 1 && a != 1 ? r.divide2() : r};
   }
 
   private Z uncachedCbn(final long b, final int n) {

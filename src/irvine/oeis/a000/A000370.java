@@ -17,6 +17,6 @@ public class A000370 extends A000610 {
       return Z.ONE;
     }
     final CycleIndex ans = f(mN);
-    return ans.apply(1).add(ans.apply(0, 1)).toZ().divide(2);
+    return ans.apply(1).add(ans.apply(0, 1)).toZ().divide2();
   }
 }

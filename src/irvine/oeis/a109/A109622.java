@@ -23,7 +23,7 @@ public class A109622 implements Sequence {
     }
     if ((mN & 1) == 0) {
       final Z t = Z.valueOf(mN / 2);
-      sum = sum.add(t.square().add(t.multiply(3)).add(2).divide(2));
+      sum = sum.add(t.square().add(t.multiply(3)).add(2).divide2());
     }
     return sum;
   }

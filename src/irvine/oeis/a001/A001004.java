@@ -53,6 +53,6 @@ public class A001004 extends A001003 {
       r = r.add(q.divide(k));
     }
 
-    return c.add(r).divide(2);
+    return c.add(r).divide2();
   }
 }

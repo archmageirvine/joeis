@@ -1208,7 +1208,7 @@ public final class ZUtils {
   /**
    * Test if the given number undulates.
    * @param n number to test
-   * @return true iff the number undaltes
+   * @return true iff the number undulates
    */
   public static boolean isUndulate(final Z n) {
     if (n.compareTo(Z.TEN) < 0) {

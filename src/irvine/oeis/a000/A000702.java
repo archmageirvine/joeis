@@ -21,7 +21,7 @@ public class A000702 extends A000700 {
       mA41.next();
       return Z.ONE;
     }
-    return mA41.next().add(super.next().multiply(3)).divide(2);
+    return mA41.next().add(super.next().multiply(3)).divide2();
   }
 }
 

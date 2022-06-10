@@ -16,9 +16,9 @@ public class A001224 implements Sequence {
   public Z next() {
     ++mN;
     if ((mN & 1) == 0) {
-      return Fibonacci.fibonacci(mN + 1).add(Fibonacci.fibonacci(mN / 2 + 2)).divide(2);
+      return Fibonacci.fibonacci(mN + 1).add(Fibonacci.fibonacci(mN / 2 + 2)).divide2();
     } else {
-      return Fibonacci.fibonacci(mN + 1).add(Fibonacci.fibonacci((mN + 1) / 2)).divide(2);
+      return Fibonacci.fibonacci(mN + 1).add(Fibonacci.fibonacci((mN + 1) / 2)).divide2();
     }
   }
 }

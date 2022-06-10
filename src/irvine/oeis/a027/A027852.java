@@ -23,7 +23,7 @@ public class A027852 extends A000081 {
     mSeq.add(super.next());
     final Polynomial<Z> p = RING.create(mSeq);
     ++mN;
-    return RING.add(RING.multiply(p, p, mN), p.substitutePower(2, mN)).coeff(mN).divide(2);
+    return RING.add(RING.multiply(p, p, mN), p.substitutePower(2, mN)).coeff(mN).divide2();
   }
 }
 

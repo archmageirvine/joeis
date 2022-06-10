@@ -1,6 +1,7 @@
 package irvine.oeis.recur;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -35,22 +36,57 @@ public abstract class ConstantOrderRecurrence implements Sequence {
    * @param shift compute next element <code>a(n+shift)</code> instead of <code>a(n)</code>
    * @param initTerms initial values of <code>a(offset..order+offset-1)</code>
    */
+  public ConstantOrderRecurrence(final int offset, final int order, final int shift, final String initTerms) {
+    this(offset, order, shift, ZUtils.toZ(initTerms));
+  }
+
+  /**
+   * Construct a general recurrence sequence with shift 0.
+   * @param offset first valid term has this index
+   * @param order order (depth) of the recurrence, index distance between <code>a(n+kmin)</code> and <code>a(n+kmax)</code>
+   * @param initTerms initial values of <code>a(offset..order+offset-1)</code>
+   */
+  public ConstantOrderRecurrence(final int offset, final int order, final String initTerms) {
+    this(offset, order, 0, ZUtils.toZ(initTerms));
+  }
+
+  /**
+   * Construct a general recurrence sequence.
+   * @param offset first valid term has this index
+   * @param order order (depth) of the recurrence, index distance between <code>a(n+kmin)</code> and <code>a(n+kmax)</code>
+   * @param shift compute next element <code>a(n+shift)</code> instead of <code>a(n)</code>
+   * @param initTerms initial values of <code>a(offset..order+offset-1)</code>
+   */
   public ConstantOrderRecurrence(final int offset, final int order, final int shift, final long... initTerms) {
+    this(offset, order, shift, ZUtils.toZ(initTerms));
+  }
+
+  /**
+   * Construct a general recurrence sequence.
+   * @param offset first valid term has this index
+   * @param order order (depth) of the recurrence, index distance between <code>a(n+kmin)</code> and <code>a(n+kmax)</code>
+   * @param shift compute next element <code>a(n+shift)</code> instead of <code>a(n)</code>
+   * @param initTerms initial values of <code>a(offset..order+offset-1)</code>
+   */
+  public ConstantOrderRecurrence(final int offset, final int order, final int shift, final Z... initTerms) {
     mOffset = offset;
     mOrder = order;
     mShift = shift;
+    mIn = 0;
+    mN = offset - 1; //  + mBufLen) & mMask;
     mInitLen = initTerms.length;
     mBufLen = Integer.highestOneBit(mOrder + 1) << 1;
+    if (mBufLen < mInitLen) {
+      mBufLen = Integer.highestOneBit(mInitLen + 1) << 1; // does not matter if too high
+    }
     mMask = mBufLen - 1;
     mBuffer = new Z[mBufLen];
     for (int i = 0; i < mBufLen; ++i) {
       mBuffer[i] = Z.ZERO;
     }
     for (int i = 0; i < mInitLen; ++i) {
-      mBuffer[(i + offset + mBufLen) & mMask] = Z.valueOf(initTerms[i]);
+      mBuffer[(i + offset + mBufLen) & mMask] = initTerms[i];
     }
-    mIn = 0;
-    mN = (offset - 1 + mBufLen) & mMask;
   }
 
   /**
@@ -70,7 +106,7 @@ public abstract class ConstantOrderRecurrence implements Sequence {
   protected abstract Z compute(final int n);
 
   /**
-   * Gets the index distance between the highest recurrence element and a[n]: 0..k-1
+   * Gets the index distance between the highest recurrence element and <code>a[n]: 0..k-1</code>.
    * @return a non-negative number
    */
   public int getDistance() {
@@ -98,13 +134,13 @@ public abstract class ConstantOrderRecurrence implements Sequence {
   @Override
   public Z next() {
     ++mN;
-//** System.out.print("next1: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
+//System.out.print("next1: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
     if (++mIn <= mInitLen) {
       return mBuffer[mN & mMask];
     }
     final Z result = compute(mN - mShift);
     mBuffer[mN & mMask] = result;
-//** System.out.print("next2: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
+//System.out.print("next2: mN=" + mN + "; "); for (int i = 0; i < mBufLen; ++i) { System.out.print(mBuffer[i] + ","); } System.out.println();
     return result;
   }
 }

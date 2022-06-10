@@ -23,7 +23,7 @@ public class A000514 implements Sequence {
     ++mN;
     return Z.SIX.pow(mN - 1)
       .subtract(Z.FIVE.pow(mN - 1).multiply(prod(mN, 1)))
-      .add(Z.FOUR.pow(mN - 1).multiply(prod(mN, 2).divide(2)))
+      .add(Z.FOUR.pow(mN - 1).multiply(prod(mN, 2).divide2()))
       .subtract(Z.THREE.pow(mN - 1).multiply(prod(mN, 3).divide(6)))
       .add(Z.TWO.pow(mN - 1).multiply(prod(mN, 4).divide(24)))
       .subtract(prod(mN, 5).divide(120));

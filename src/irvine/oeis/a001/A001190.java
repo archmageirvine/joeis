@@ -23,7 +23,7 @@ public class A001190 extends MemorySequence {
         s = s.add(get(k).multiply(get(j)));
       }
       final Z t = get(mN / 2);
-      return s.add(t.multiply(t.add(1)).divide(2));
+      return s.add(t.multiply(t.add(1)).divide2());
     } else {
       Z s = Z.ZERO;
       for (int k = 1, j = size() - 1; k <= mN / 2; ++k, --j) {

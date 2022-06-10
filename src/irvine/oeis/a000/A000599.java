@@ -14,7 +14,7 @@ public class A000599 extends A000598 {
   public Z next() {
     super.next();
     final Polynomial<Q> f = RING.subtract(mG, RING.one());
-    return RING.add(RING.pow(f, 2, mN), f.substitutePower(2, mN)).coeff(mN).toZ().divide(2);
+    return RING.add(RING.pow(f, 2, mN), f.substitutePower(2, mN)).coeff(mN).toZ().divide2();
   }
 }
 

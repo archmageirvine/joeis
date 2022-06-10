@@ -64,6 +64,6 @@ public class A000677 implements Sequence, Serializable {
       mLim *= 2;
       mPoly = munch(mLim);
     }
-    return mPoly.coeff(mN).divide(2);
+    return mPoly.coeff(mN).divide2();
   }
 }

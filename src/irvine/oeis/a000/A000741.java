@@ -14,7 +14,7 @@ public class A000741 implements Sequence {
   private long mN = 0;
 
   protected Z p(final Z n) {
-    return n.subtract(2).multiply(n.subtract(1)).divide(2);
+    return n.subtract(2).multiply(n.subtract(1)).divide2();
   }
 
   @Override

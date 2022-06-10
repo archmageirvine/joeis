@@ -37,15 +37,15 @@ public class A000521 implements Sequence {
       switch (mN & 3) {
       case 0:
         final Z cn = c(n);
-        sum = c(2 * n + 1).add(cn.square().subtract(cn).divide(2));
+        sum = c(2 * n + 1).add(cn.square().subtract(cn).divide2());
         for (int k = 1; k < n; ++k) {
           sum = sum.add(c(k).multiply(c(2 * n - k)));
         }
         break;
       case 1:
         sum = c(2 * n + 3).subtract(c(2).multiply(c(2 * n)))
-          .add(c(n + 1).square().subtract(c(n + 1)).divide(2))
-          .add(c(2 * n).square().add(c(2 * n)).divide(2));
+          .add(c(n + 1).square().subtract(c(n + 1)).divide2())
+          .add(c(2 * n).square().add(c(2 * n)).divide2());
         for (int k = 1; k <= n; ++k) {
           sum = sum.add(c(k).multiply(c(2 * n - k + 2)));
         }
@@ -65,7 +65,7 @@ public class A000521 implements Sequence {
         break;
       default:
         sum = c(2 * n + 4).subtract(c(2).multiply(c(2 * n + 1)))
-          .subtract(c(2 * n + 1).square().subtract(c(2 * n + 1)).divide(2));
+          .subtract(c(2 * n + 1).square().subtract(c(2 * n + 1)).divide2());
         for (int k = 1; k <= n + 1; ++k) {
           sum = sum.add(c(k).multiply(c(2 * n - k + 3)));
         }

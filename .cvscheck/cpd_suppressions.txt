@@ -119,3 +119,6 @@ irvine/oeis/a036/A036369.java
 irvine/oeis/a037/A037260.java
 irvine/oeis/a037/A037257.java
 irvine/oeis/a057/A057112.java
+irvine/oeis/a057/A057344.java
+irvine/oeis/a057/A057345.java
+irvine/oeis/a057/A057346.java

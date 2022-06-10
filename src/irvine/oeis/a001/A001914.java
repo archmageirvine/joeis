@@ -19,7 +19,7 @@ public class A001914 implements Sequence {
       return false;
     }
     Z q = Z.TWO;
-    final Z lim = p.subtract(1).divide(2);
+    final Z lim = p.subtract(1).divide2();
     Z r = Z.ONE;
     while (q.compareTo(lim) < 0) {
       r = r.multiply(Z.TEN).add(1).mod(p);

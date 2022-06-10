@@ -21,7 +21,7 @@ public class A000550 extends A000235 {
     do {
       mA = RING.add(mA, RING.monomial(super.next(), ++mN));
     } while (mN < 6);
-    return RING.add(RING.pow(mA, 2, mN), mA.substitutePower(2, mN)).coeff(mN).divide(2);
+    return RING.add(RING.pow(mA, 2, mN), mA.substitutePower(2, mN)).coeff(mN).divide2();
   }
 }
 

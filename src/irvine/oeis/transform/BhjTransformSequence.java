@@ -52,7 +52,7 @@ public class BhjTransformSequence implements Sequence {
       sum = sum.add(t);
     }
 
-    return sum.divide(2);
+    return sum.divide2();
   }
 
   /**

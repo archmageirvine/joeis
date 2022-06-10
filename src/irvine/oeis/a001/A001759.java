@@ -24,7 +24,7 @@ public class A001759 extends A001758 {
     ++mN;
     final Z q = mT;
     final Z t = super.next();
-    final Z r = t.divide(2).subtract(mB).subtract(mR.multiply(mN - 1).divide(2));
+    final Z r = t.divide2().subtract(mB).subtract(mR.multiply(mN - 1).divide2());
     mR = q;
     mB = t;
     return r;

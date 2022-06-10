@@ -14,6 +14,6 @@ public class A001840 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return Z.valueOf(mN + mN % 3).multiply(mN / 3 + 1).divide(2);
+    return Z.valueOf(mN + mN % 3).multiply(mN / 3 + 1).divide2();
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A193286 a(n) is the maximal number of a&apos;s that can be produced in a blank document with n &quot;keystrokes&quot;.
+ * A193286 a(n) is the maximal number of a's that can be produced in a blank document with n "keystrokes".
  * <code>a(n) = 4*a(n-6)</code>
  * @author Georg Fischer
  */

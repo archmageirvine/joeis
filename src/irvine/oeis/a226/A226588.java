@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A226588 a(n) = c({1}^n), the Cantor tuple function c applied to an n-tuple of 1&apos;s.
+ * A226588 a(n) = c({1}^n), the Cantor tuple function c applied to an n-tuple of 1's.
  * <code>a(n) = (a(n-1)+1)*(a(n-1)+2)/2+1</code>
  * @author Georg Fischer
  */

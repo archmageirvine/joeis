@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A181560 a(n+1) = a(n-1) + 2 a(n-2) - a(n-4) ; a(0)=1, a(n)=0 for 0 &lt; n &lt; 5;
+ * A181560 a(n+1) = a(n-1) + 2 a(n-2) - a(n-4) ; a(0)=1, a(n)=0 for 0 &lt; n &lt; 5;.
  * <code>a(n+1) = a(n-1) + 2 a(n-2) - a(n-4) ; a(n)=0</code>
  * @author Georg Fischer
  */

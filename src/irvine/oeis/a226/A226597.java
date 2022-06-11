@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A226597 a(n) = c(1, 2,...,n), the Cantor tuple function c applied to n-tuple (1, 2,...,n).
+ * A226597 a(n) = c(1,2,...,n), the Cantor tuple function c applied to n-tuple (1,2,...,n).
  * <code>a(n) = (a(n-1)+n)*(a(n-1)+n+1)/2+n</code>
  * @author Georg Fischer
  */

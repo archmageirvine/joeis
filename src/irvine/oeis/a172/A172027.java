@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A172027 a(n) = 1 + 3*a(n-1)*(a(n-1) + 1)
+ * A172027 a(1) = 1; for n &gt; 1, a(n) = smallest k such that a(n-1)^3 + k is a cube.
  * @author Georg Fischer
  */
 public class A172027 extends ConstantOrderRecurrence {

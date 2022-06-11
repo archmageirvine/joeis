@@ -1,0 +1,154 @@
+package irvine.lisp;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
+
+/**
+ * Lisp like list.
+ * @author Sean A. Irvine
+ */
+public final class SExpression extends ArrayList<SExpression> {
+
+  private static int lg(final Z n) {
+    return n.bitLength() - 1;
+  }
+
+  private static Z peelNextBalSubSeq(final Z nn) {
+    if (nn.isZero()) {
+      return Z.ZERO;
+    }
+    Z n = nn;
+    long c = 0;
+    Z z = Z.ZERO;
+    while (true) {
+      z = z.multiply2().add(n.mod(2));
+      c += n.isEven() ? 1 : -1;
+      n = n.divide2();
+      if (c >= 0) {
+        return z.subtract(Z.ONE.shiftLeft(lg(z))).divide2();
+      }
+    }
+  }
+
+  private static Z restBalSubSeq(final Z nn) {
+    Z n = nn;
+    long c = 0;
+    do {
+      c += n.isEven() ? 1 : -1;
+      n = n.divide2();
+    } while (c < 0);
+    Z z = Z.ZERO;
+    c = -1;
+    while (true) {
+      z = z.multiply2().add(n.mod(2));
+      c += n.isEven() ? 1 : -1;
+      n = n.divide2();
+      if (c > 0) {
+        return z.divide2();
+      }
+    }
+  }
+
+  private static SExpression binexp2parsR(final Z n) {
+    final SExpression s = new SExpression();
+    s.add(SExpression.binexp2pars(peelNextBalSubSeq(n)));
+    s.addAll(SExpression.binexp2pars(restBalSubSeq(n)));
+    return s;
+  }
+
+  /**
+   * Create an S expression from a number.
+   * @param n number
+   * @return expression
+   */
+  public static SExpression binexp2pars(final Z n) {
+    return n.isZero() ? new SExpression() : binexp2parsR(ZUtils.reverse(n, 2));
+  }
+
+  /**
+   * Return the first element of the expression.
+   * @return first element.
+   */
+  public SExpression car() {
+    if (isEmpty()) {
+      return new SExpression();
+    } else {
+      return get(0);
+    }
+  }
+
+  /**
+   * Return everything except the first element of the list.
+   * @return tail of the list
+   */
+  public SExpression cdr() {
+    if (isEmpty()) {
+      return new SExpression();
+    } else {
+      final SExpression res = new SExpression();
+      res.addAll(subList(1, size()));
+      return res;
+    }
+  }
+
+  /**
+   * Reverse of the expression.
+   * @return reverse
+   */
+  public SExpression reverse() {
+    final SExpression s = new SExpression();
+    s.addAll(this);
+    Collections.reverse(s);
+    return s;
+  }
+
+  /**
+   * Rotate the expression one position to the left.
+   * @return rotation
+   */
+  public SExpression rotateLeft() {
+    if (isEmpty()) {
+      return this;
+    }
+    final SExpression s = new SExpression();
+    s.addAll(subList(1, size()));
+    s.add(get(0));
+    return s;
+  }
+
+  // deeprotateL := proc(a) if 0 = nops(a) or list <> whattype(a) then (a) else rotateL(map(deeprotateL, a)); fi; end;
+  /**
+   * Rotate the expression one position to the left.
+   * @return rotation
+   */
+  public SExpression deepRotateLeft() {
+    if (isEmpty()) {
+      return this;
+    }
+    final SExpression s = new SExpression();
+    for (final SExpression t : this) {
+      s.add(t.deepRotateLeft());
+    }
+    return s.rotateLeft();
+  }
+
+  /**
+   * Convert an S expression into a number.
+   * @return number
+   */
+  public Z toZ() {
+    if (isEmpty()) {
+      return Z.ZERO;
+    }
+    Z e = Z.ZERO;
+    for (final SExpression s : this) {
+      final Z x = s.toZ();
+      final int w = lg(x);
+      e = e.shiftLeft(w + 3).add(Z.ONE.shiftLeft(w + 2)).add(x.multiply2());
+    }
+    return e;
+  }
+}

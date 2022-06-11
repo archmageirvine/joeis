@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A061312 Triangle T[n,m]: T[n,-1] = 0; T[0, 0] = 0; T[n, 0] = n*n!; T[n,m] = T[n,m-1] - T[n-1,m-1].
+ * A061312 Triangle T[n,m]: T[n,-1] = 0; T[0,0] = 0; T[n,0] = n*n!; T[n,m] = T[n,m-1] - T[n-1,m-1].
  * @author Georg Fischer
  */
 public class A061312 extends Triangle {

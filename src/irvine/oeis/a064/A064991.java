@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A064991 In A064990, drop leading 0&apos;s from A_k (for k&gt;0) and convert to decimal.
+ * A064991 In A064990, drop leading 0's from A_k (for k&gt;0) and convert to decimal.
  * <code>a(n+1) = a(n)(4^3^n + 2^3^n - 1) + 2^3^n - 1</code>
  * @author Georg Fischer
  */

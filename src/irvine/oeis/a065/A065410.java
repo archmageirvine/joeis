@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A065410 a(n) = n*(a(n-1))^2 + 2
+ * A065410 Number of labeled, rooted, binary trees with internal nodes labeled from {1, ...,n} and leaves labeled from {0,1} such that for any path from the root to a leaf, the internal nodes receive distinct labels. In other words, the number of decision trees on n Boolean variables.
  * @author Georg Fischer
  */
 public class A065410 extends ConstantOrderRecurrence {

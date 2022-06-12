@@ -72,6 +72,8 @@ public class PariSequence implements Sequence, Closeable {
     } catch (final IOException e) {
       // too bad we failed to close
     }
+    // todo perhaps we should not bother with the following wait
+    // but it gives PARI a chance to exit cleanly
     try {
       mProc.waitFor(1, TimeUnit.SECONDS);
     } catch (final InterruptedException e) {

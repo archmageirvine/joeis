@@ -1,13 +1,10 @@
 package irvine.oeis;
 
 import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +12,8 @@ import java.util.List;
 import org.apfloat.ApfloatRuntimeException;
 
 import irvine.math.z.Z;
+import irvine.oeis.producer.MetaProducer;
+import irvine.oeis.producer.Producer;
 import irvine.util.CliFlags;
 import irvine.util.string.Date;
 import irvine.util.string.StringUtils;
@@ -77,24 +76,22 @@ public final class SequenceFactory {
     throw new UnsupportedOperationException("Unknown sequence number");
   }
 
+  private static final Producer PRODUCER = MetaProducer.createDefaultProducer();
+
   /**
    * Return the sequence for the specified A-number. The sequence is not
    * known then <code>UnsupportedOperationException</code> is thrown.
    *
-   * @param seqId A-number identifier in the form <code>A000001</code>
-   * @return sequence for id
-   * @exception UnsupportedOperationException for an unknown
-   * <code>seqId</code>.
+   * @param aNumber A-number identifier in the form <code>A000001</code>
+   * @return sequence for A-number
+   * @exception UnsupportedOperationException for an unknown A-number.
    */
-  public static Sequence sequence(final String seqId) {
-    if ("-".equals(seqId)) {
-      return new ReaderSequence(new BufferedReader(new InputStreamReader(System.in)));
+  public static Sequence sequence(final String aNumber) {
+    final Sequence seq = PRODUCER.getSequence(aNumber);
+    if (seq == null) {
+      throw new UnsupportedOperationException("No implementation of the sequence was found");
     }
-    try {
-      return (Sequence) Class.forName("irvine.oeis.a" + seqId.substring(1, 4) + '.' + seqId).getDeclaredConstructor().newInstance();
-    } catch (final ClassNotFoundException | IllegalAccessException | InstantiationException | NoSuchMethodException | InvocationTargetException e) {
-      throw new UnsupportedOperationException("Sequence not found", e);
-    }
+    return seq;
   }
 
   private static boolean dataLineOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {

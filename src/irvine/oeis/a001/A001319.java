@@ -6,8 +6,8 @@ package irvine.oeis.a001;
  */
 public class A001319 extends A001312 {
 
-  @Override
-  protected int[] coins() {
-    return new int[] {2, 5, 10, 20, 50};
+  /** Construct the sequence. */
+  public A001319() {
+    super(2, 5, 10, 20, 50);
   }
 }

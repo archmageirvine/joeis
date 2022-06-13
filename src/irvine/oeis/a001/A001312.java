@@ -1,5 +1,7 @@
 package irvine.oeis.a001;
 
+import java.util.Arrays;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -13,24 +15,26 @@ import irvine.oeis.Sequence;
 public class A001312 implements Sequence {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private final int[] mCoins;
+  private int mM = 0;
   private int mN = -1;
-  private final Polynomial<Z> mDen = den();
+  private Polynomial<Z> mDen = RING.one();
 
-  protected int[] coins() {
-    return new int[] {1, 2, 5, 10, 50, 100};
+  protected A001312(final int... coins) {
+    mCoins = Arrays.copyOf(coins, coins.length);
   }
 
-  protected Polynomial<Z> den() {
-    Polynomial<Z> p = RING.one();
-    for (final int c : coins()) {
-      p = RING.multiply(p, RING.oneMinusXToTheN(c));
-    }
-    return p;
+  /** Construct the sequence. */
+  public A001312() {
+    this(1, 2, 5, 10, 50, 100);
   }
-
 
   @Override
   public Z next() {
-    return RING.coeff(RING.one(), mDen, ++mN);
+    ++mN;
+    while (mM < mCoins.length && mN >= mCoins[mM]) {
+      mDen = RING.multiply(mDen, RING.oneMinusXToTheN(mCoins[mM++]));
+    }
+    return RING.coeff(RING.one(), mDen, mN);
   }
 }

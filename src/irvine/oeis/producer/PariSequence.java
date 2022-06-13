@@ -26,6 +26,28 @@ public class PariSequence implements Sequence, Closeable {
   private final PrintWriter mOut;
   private final BufferedReader mIn;
 
+  // The follow is more of utility applicable to other CAS as well
+  // todo Perhaps as a class that can pull out other features from the header line
+  private static final String OFFSET_TAG = "offset=";
+  private static int getOffset(final String program) {
+    int offset = 0;
+    final int offsetPos = program.indexOf(OFFSET_TAG);
+    if (offsetPos >= 0) {
+      int k = offsetPos + OFFSET_TAG.length();
+      while (Character.isDigit(program.charAt(k))) {
+        offset *= 10;
+        offset += program.charAt(k) - '0';
+        ++k;
+      }
+    }
+    return offset;
+  }
+
+  private static int getPariType(final String program) {
+    // todo parse header line or similar to determine program type
+    return 0; // a(n) = ... type
+  }
+
   public PariSequence(final String pariProgram) {
     final ProcessBuilder pb = new ProcessBuilder(PariProducer.PARI_COMMAND, "--fast", "--quiet");
     try {
@@ -36,10 +58,16 @@ public class PariSequence implements Sequence, Closeable {
       throw new RuntimeException(e);
     }
     //System.out.println("Sending: " + pariProgram);
+    final int offset = getOffset(pariProgram);
+    final int programType = getPariType(pariProgram);
     mOut.println(pariProgram); // Send the program to PARI
-//    if (pariProgram.startsWith("a(n)")) {
-//      mOut.println("for(n=0,+oo,print(a(n)));"); // todo deal with offset
-//    }
+    switch (programType) {
+      case 0:
+        mOut.println("for(n=" + offset + ",+oo,print(a(n)));");
+        break;
+      default:
+        throw new RuntimeException("Unknown type of PARI program " + programType + "\n" + pariProgram);
+    }
     mOut.flush();
   }
 

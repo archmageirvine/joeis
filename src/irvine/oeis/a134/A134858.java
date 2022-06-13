@@ -1,4 +1,4 @@
-package irvine.oeis.a057;
+package irvine.oeis.a134;
 
 import java.util.TreeSet;
 
@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  * A057535 Numbers expressible as (a^2 - 1)(b^2 - 1) in 5 distinct ways.
  * @author Sean A. Irvine
  */
-public class A057535 implements Sequence {
+public class A134858 implements Sequence {
 
   private static final int MOD = 134217757;
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
@@ -43,9 +43,12 @@ public class A057535 implements Sequence {
       for (long k = 2; k <= mN; ++k) {
         final Z s = t.multiply(k - 1).multiply(k + 1);
         final int hash = (int) s.mod(MOD);
-        if (++mHashCounts[hash] >= 5 && getExactCount(s) == 5) {
-          mHashCounts[hash] -= 5;
-          return s;
+        if (++mHashCounts[hash] >= 5) {
+          final int cnt = getExactCount(s);
+          if (cnt >= 5) {
+            mHashCounts[hash] -= cnt;
+            return s;
+          }
         }
       }
     }

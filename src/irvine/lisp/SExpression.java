@@ -1,6 +1,7 @@
 package irvine.lisp;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 import irvine.math.z.Z;
@@ -66,6 +67,18 @@ public final class SExpression extends ArrayList<SExpression> {
    */
   public static SExpression binexp2pars(final Z n) {
     return n.isZero() ? new SExpression() : binexp2parsR(ZUtils.reverse(n, 2));
+  }
+
+  /** Construct an empty S expression. */
+  public SExpression() {
+  }
+
+  /**
+   * Construct an S expression containing other expressions.
+   * @param expressions S expressions
+   */
+  public SExpression(final SExpression... expressions) {
+    addAll(Arrays.asList(expressions));
   }
 
   /**

@@ -84,15 +84,28 @@ public final class SequenceFactory {
    * known then <code>UnsupportedOperationException</code> is thrown.
    *
    * @param aNumber A-number identifier in the form <code>A000001</code>
+   * @param producer the Producer to use
    * @return sequence for A-number
    * @exception UnsupportedOperationException for an unknown A-number.
    */
-  public static Sequence sequence(final String aNumber) {
-    final Sequence seq = sProducer.getSequence(aNumber);
+  public static Sequence sequence(final String aNumber, final Producer producer) {
+    final Sequence seq = producer.getSequence(aNumber);
     if (seq == null) {
       throw new UnsupportedOperationException("No implementation of the sequence was found");
     }
     return seq;
+  }
+
+  /**
+   * Return the sequence for the specified A-number. The sequence is not
+   * known then <code>UnsupportedOperationException</code> is thrown.
+   *
+   * @param aNumber A-number identifier in the form <code>A000001</code>
+   * @return sequence for A-number
+   * @exception UnsupportedOperationException for an unknown A-number.
+   */
+  public static Sequence sequence(final String aNumber) {
+    return sequence(aNumber, sProducer);
   }
 
   private static boolean dataLineOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {

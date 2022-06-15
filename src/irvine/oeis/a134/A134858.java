@@ -35,7 +35,7 @@ public class A134858 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      Z t = Z.valueOf(++mN).square().subtract(1);
+      final Z t = Z.valueOf(++mN).square().subtract(1);
       mProducts.add(t);
       if (mVerbose && mN % 1000 == 0) {
         StringUtils.message("n=" + mN);

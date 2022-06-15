@@ -11,7 +11,7 @@ public class A057514 extends A014486 {
 
   @Override
   public Z next() {
-    Z n = super.next();
+    final Z n = super.next();
     if (n.isZero()) {
       return Z.ZERO;
     }

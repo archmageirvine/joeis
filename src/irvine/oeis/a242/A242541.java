@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004022;
 import irvine.oeis.a032.A032758;
 
 /**
- * A242541 Undulating primes: prime numbers whose digits follow the pattern A, B, A, B, A, B, A, B...
+ * A242541 Undulating primes: prime numbers whose digits follow the pattern A, B, A, B, A, B, A, B, ...
  * @author Georg Fischer
  */
 public class A242541 extends UnionSequence {

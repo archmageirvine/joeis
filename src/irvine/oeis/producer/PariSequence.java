@@ -48,6 +48,10 @@ public class PariSequence implements Sequence, Closeable {
     return 0; // a(n) = ... type
   }
 
+  /**
+   * Construct a sequence backed by a PARI program.
+   * @param pariProgram PARI program
+   */
   public PariSequence(final String pariProgram) {
     final ProcessBuilder pb = new ProcessBuilder(PariProducer.PARI_COMMAND, "--fast", "--quiet");
     try {

@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A100069 Sum(k=0..floor(n/2) binomial(n,k)*4^(n-2*k) ).
+ * A100069 a(n) = Sum_{k=0..floor(n/2)} binomial(n,k)*4^(n-2*k).
  * @author Georg Fischer
  */
 public class A100069 extends HolonomicRecurrence {

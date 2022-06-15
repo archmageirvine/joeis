@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049439 Numbers n such that the number of odd divisors of n is an odd divisor of n.
+ * A049439 Numbers k such that the number of odd divisors of k is an odd divisor of k.
  * @author Sean A. Irvine
  */
 public class A049439 implements Sequence {

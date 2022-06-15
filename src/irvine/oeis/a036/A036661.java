@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001190;
 
 /**
- * A036661 Number of n-node rooted labeled trees with deg &lt;=4 at root and out-degree &lt;=2 elsewhere.
+ * A036661 Number of n-node rooted labeled trees with deg &lt;= 4 at root and outdegree &lt;= 2 elsewhere.
  * @author Sean A. Irvine
  */
 public class A036661 extends A001190 {

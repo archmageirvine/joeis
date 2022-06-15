@@ -15,7 +15,7 @@ import irvine.util.string.StringUtils;
  */
 public class PariProducer implements Producer {
 
-  private static final String PARI_ROOT = System.getProperty("pari.root", "pari");
+  private static final String PARI_ROOT = System.getProperty("pari.root", "gp");
   static final String PARI_COMMAND = System.getProperty("pari.command", "gp");
   private static final String VERSION_TAG = "Version ";
 

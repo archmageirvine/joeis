@@ -7,7 +7,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A273599  Numbers n such that (11^n - 7^n)/4 is prime.
+ * A273599 Numbers k such that (11^k - 7^k)/4 is prime.
  * @author Georg Fischer
  */
 public class A273599 extends PrimePositionSubsequence {

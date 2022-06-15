@@ -9,7 +9,7 @@ import irvine.oeis.a038.A038776;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A057542 Maximum cycle length in each permutation between A038776[1] and A038776[A000108[n]].
+ * A057542 Maximum cycle length in each permutation between A038776(1) and A038776(A000108(n)).
  * @author Sean A. Irvine
  */
 public class A057542 implements Sequence {

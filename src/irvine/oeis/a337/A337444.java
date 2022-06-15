@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A337444 E.g.f.: (1 + 2*x) * exp(x) / (sec(x) + tan(x)).
+ * A337444 Expansion of e.g.f. (1 + 2*x) * exp(x) / (sec(x) + tan(x)).
  * E.g.f.: (1 + 2*x) * exp(x) / (sec(x) + tan(x))
  * @author Georg Fischer
  */

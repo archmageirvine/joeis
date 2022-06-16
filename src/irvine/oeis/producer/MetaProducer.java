@@ -23,7 +23,8 @@ public class MetaProducer implements Producer {
     return new MetaProducer(
       new ReaderProducer(),
       new JavaProducer(),
-      new PariProducer()
+      new PariProducer(),
+      new GapProducer()
     );
   }
 
@@ -42,6 +43,9 @@ public class MetaProducer implements Producer {
     for (final String s : p) {
       final String t = s.trim().toLowerCase(Locale.getDefault());
       switch (t) {
+        case "gap":
+          prods[++k] = new GapProducer();
+          break;
         case "java":
           prods[++k] = new JavaProducer();
           break;

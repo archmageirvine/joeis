@@ -52,6 +52,7 @@ public class PariSequence implements Sequence, Closeable {
         throw new RuntimeException("Unknown type of PARI program " + programType + "\n" + pariProgram);
     }
     mOut.flush();
+    mOut.close();
   }
 
   @Override

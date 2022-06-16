@@ -388,7 +388,7 @@ public final class SequenceFactory {
     flags.registerOptional(DATA_LENGTH, Integer.class, "number", "Maximum total length of output line in characters (in conjunction with -D)", DEFAULT_DATA_LENGTH);
     flags.registerOptional(HEADER, "Print a header");
     flags.registerOptional('a', AUTHOR, String.class, "name", "Specify author name for b-file output");
-    flags.registerOptional(PRIORITY, String.class, "name", "Comma separated list of priority for programs (e.g., java,gp)");
+    flags.registerOptional(PRIORITY, String.class, "string", "Comma separated list of priority for programs (e.g., java,gp)");
     flags.registerOptional(ROW_NUMBERS, "Include row numbers in triangle (-T) output");
     flags.registerRequired(String.class, "A-number", "Sequence to generate (or \"-\" to read standard input)");
     flags.setValidator(VALIDATOR);

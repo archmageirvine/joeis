@@ -43,6 +43,7 @@ public final class SequenceFactory {
   private static final String DATA_LENGTH = "data-length";
   private static final String HEADER = "header";
   private static final String OFFSET = "offset";
+  private static final String PRIORITY = "priority";
   private static final String RIGHT = "right";
   private static final String ROW_NUMBERS = "row-numbers";
   private static final String ROWS = "rows";
@@ -76,7 +77,24 @@ public final class SequenceFactory {
     throw new UnsupportedOperationException("Unknown sequence number");
   }
 
-  private static final Producer PRODUCER = MetaProducer.createDefaultProducer();
+  private static Producer sProducer = MetaProducer.createDefaultProducer();
+
+  /**
+   * Return the sequence for the specified A-number. The sequence is not
+   * known then <code>UnsupportedOperationException</code> is thrown.
+   *
+   * @param aNumber A-number identifier in the form <code>A000001</code>
+   * @param producer the Producer to use
+   * @return sequence for A-number
+   * @exception UnsupportedOperationException for an unknown A-number.
+   */
+  public static Sequence sequence(final String aNumber, final Producer producer) {
+    final Sequence seq = producer.getSequence(aNumber);
+    if (seq == null) {
+      throw new UnsupportedOperationException("No implementation of the sequence was found");
+    }
+    return seq;
+  }
 
   /**
    * Return the sequence for the specified A-number. The sequence is not
@@ -87,11 +105,7 @@ public final class SequenceFactory {
    * @exception UnsupportedOperationException for an unknown A-number.
    */
   public static Sequence sequence(final String aNumber) {
-    final Sequence seq = PRODUCER.getSequence(aNumber);
-    if (seq == null) {
-      throw new UnsupportedOperationException("No implementation of the sequence was found");
-    }
-    return seq;
+    return sequence(aNumber, sProducer);
   }
 
   private static boolean dataLineOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {
@@ -374,6 +388,7 @@ public final class SequenceFactory {
     flags.registerOptional(DATA_LENGTH, Integer.class, "number", "Maximum total length of output line in characters (in conjunction with -D)", DEFAULT_DATA_LENGTH);
     flags.registerOptional(HEADER, "Print a header");
     flags.registerOptional('a', AUTHOR, String.class, "name", "Specify author name for b-file output");
+    flags.registerOptional(PRIORITY, String.class, "string", "Comma separated list of priority for programs (e.g., java,gp)");
     flags.registerOptional(ROW_NUMBERS, "Include row numbers in triangle (-T) output");
     flags.registerRequired(String.class, "A-number", "Sequence to generate (or \"-\" to read standard input)");
     flags.setValidator(VALIDATOR);
@@ -382,6 +397,9 @@ public final class SequenceFactory {
     final boolean bfile = flags.isSet(B_FILE);
     final boolean header = flags.isSet(HEADER);
     final long offset = (Long) flags.getValue(OFFSET);
+    if (flags.isSet(PRIORITY)) {
+      sProducer = MetaProducer.createProducer((String) flags.getValue(PRIORITY));
+    }
     final String seqId = getCanonicalId(flags.getAnonymousValue(0).toString());
     boolean generated = false;
     final long numberOfTerms = getEffectiveMax(flags, TERMS);

@@ -1888,3 +1888,5 @@ A057417 Number of staircase polygons of area n with any number of (staircase pol
 A057495 Number of association schemes of order n
 A057498 Number of noncommutative association schemes of order n.
 A057499 Number of primitive association schemes of order n
+A057560 Weakly distance-regular digraphs on n nodes (excluding distance-regular graphs)
+A057565 Number of regions of linearity for Lusztig's piecewise-linear function in type A_n

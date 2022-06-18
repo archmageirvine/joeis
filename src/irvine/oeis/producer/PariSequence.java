@@ -5,7 +5,6 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.util.concurrent.TimeUnit;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -22,6 +21,7 @@ public class PariSequence implements Sequence, Closeable {
   //  - it needs to check the error stream
   //  - it needs to check other error conditions
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final Process mProc;
   private final PrintWriter mOut;
   private final BufferedReader mIn;
@@ -34,6 +34,7 @@ public class PariSequence implements Sequence, Closeable {
     final ProcessBuilder pb = new ProcessBuilder(PariProducer.PARI_COMMAND, "--fast", "--quiet");
     try {
       mProc = pb.start();
+      new DrainStreamThread(mProc.getErrorStream(), mVerbose);
       mOut = new PrintWriter(mProc.getOutputStream());
       mIn = new BufferedReader(new InputStreamReader(mProc.getInputStream()));
     } catch (final IOException e) {
@@ -83,13 +84,6 @@ public class PariSequence implements Sequence, Closeable {
       mIn.close();
     } catch (final IOException e) {
       // too bad we failed to close
-    }
-    // todo perhaps we should not bother with the following wait
-    // but it gives PARI a chance to exit cleanly
-    try {
-      mProc.waitFor(1, TimeUnit.SECONDS);
-    } catch (final InterruptedException e) {
-      // too bad we will attempt to kill it
     }
     if (mProc.isAlive()) {
       mProc.destroyForcibly();

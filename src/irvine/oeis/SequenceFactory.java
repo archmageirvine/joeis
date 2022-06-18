@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import java.io.BufferedOutputStream;
+import java.io.Closeable;
 import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -461,6 +462,10 @@ public final class SequenceFactory {
           return;
         }
         throw e;
+      } finally {
+        if (seq instanceof Closeable) {
+          ((Closeable) seq).close();
+        }
       }
     } catch (final ApfloatRuntimeException e) {
       // Catch nasty shutdown exception from Apfloat and just ignore it

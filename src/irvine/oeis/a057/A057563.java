@@ -7,7 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A057562.
+ * A057563 Numbers k such that the k initial decimal digits of e - 2 form a prime number.
  * @author Sean A. Irvine
  */
 public class A057563 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.a057.A057572;
 
 /**
- * A057562.
+ * A064732 Number of labeled Hugenholtz diagrams with n nodes.
  * @author Sean A. Irvine
  */
 public class A064732 extends A057572 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057562.
+ * A057572 Number of unlabeled Hugenholz diagrams with n nodes.
  * @author Sean A. Irvine
  */
 public class A057572 implements Sequence {

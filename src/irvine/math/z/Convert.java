@@ -51,7 +51,7 @@ public final class Convert {
         final char c = val.charAt(cnt++);
         final int v = IntegerUtils.charToValue(c);
         if (v < 0 || v >= radix) {
-          throw new IllegalArgumentException("Bad character in number: " + c);
+          throw new IllegalArgumentException("Bad character in number: " + c + " in " + val);
         }
         m *= radix;
         m += v;

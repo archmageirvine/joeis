@@ -168,7 +168,7 @@ public class ConvertTest extends TestCase {
       Convert.valueOf("-10$", 2);
       fail();
     } catch (final IllegalArgumentException e) {
-      assertEquals("Bad character in number: $", e.getMessage());
+      assertEquals("Bad character in number: $ in -10$", e.getMessage());
     }
   }
 

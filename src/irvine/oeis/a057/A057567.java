@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001055;
 
 /**
- * A057562.
+ * A057567 Number of partitions of n where the product of parts divides n.
  * @author Sean A. Irvine
  */
 public class A057567 implements Sequence {

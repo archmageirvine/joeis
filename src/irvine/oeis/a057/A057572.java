@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057562.
+ * A057572 Number of unlabeled Hugenholz diagrams with n nodes.
  * @author Sean A. Irvine
  */
 public class A057572 implements Sequence {
@@ -50,18 +50,7 @@ public class A057572 implements Sequence {
     return false;
   }
 
-  private boolean isConsistent(final int[] diagram, final int[][] pairs) {
-    final int[] deg = new int[mN];
-    for (int k = 0; k < diagram.length; ++k) {
-      deg[pairs[k][0]] += diagram[k];
-      if (deg[pairs[k][0]] > 4) {
-        return false;
-      }
-      deg[pairs[k][1]] += diagram[k];
-      if (deg[pairs[k][1]] > 4) {
-        return false;
-      }
-    }
+  private boolean isConsistent(final int[] diagram, final int[][] pairs, final int[] deg) {
     for (final int i : deg) {
       if (i != 4) {
         return false;
@@ -75,21 +64,29 @@ public class A057572 implements Sequence {
     ++mCount;
   }
 
-  private void count(final int offset, final int[] diagram, final int sum, final int[][] pairs) {
+  private void count(final int offset, final int[] diagram, final int sum, final int[][] pairs, final int[] deg) {
     if (offset == pairs.length) {
-      if (sum == mNLines && isConsistent(diagram, pairs)) {
+      if (sum == mNLines && isConsistent(diagram, pairs, deg)) {
         //System.out.println("+" + Arrays.toString(diagram));
         label(diagram, pairs);
       }
       return;
     }
-    if (2 * offset == mNLines - 1 && sum != 4) {
-      return;
+    final int u = pairs[offset][0];
+    final int v = pairs[offset][1];
+    if (u > 0 && deg[u - 1] != 4) {
+      return; // Failed to achieve degree 4 on previous vertex
     }
     for (int i = 0; i < 4; ++i) {
-      diagram[offset] = i;
       if (sum <= mNLines) {
-        count(offset + 1, diagram, sum + i, pairs);
+        if (deg[u] + i <= 4 && deg[v] + i <= 4) {
+          diagram[offset] = i;
+          deg[u] += i;
+          deg[v] += i;
+          count(offset + 1, diagram, sum + i, pairs, deg);
+          deg[v] -= i;
+          deg[u] -= i;
+        }
       }
     }
   }
@@ -110,7 +107,7 @@ public class A057572 implements Sequence {
       }
     }
     final int[] diagram = new int[npairs];
-    count(0, diagram, 0, pairs);
+    count(0, diagram, 0, pairs, new int[mN]);
     return Z.valueOf(mCount);
   }
 }

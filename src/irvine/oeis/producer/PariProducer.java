@@ -34,6 +34,7 @@ public class PariProducer implements Producer {
         final Process proc = pb.start();
         final String res;
         // PARI version information is on standard error
+        new DrainStreamThread(proc.getInputStream(), mVerbose);
         try (final InputStream is = proc.getErrorStream()) {
           res = IOUtils.readAll(is);
         }

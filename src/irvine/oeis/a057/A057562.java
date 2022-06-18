@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057562.
+ * A057562 Number of partitions of n into parts all relatively prime to n.
  * @author Sean A. Irvine
  */
 public class A057562 implements Sequence {

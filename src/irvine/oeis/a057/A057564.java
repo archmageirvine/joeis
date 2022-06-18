@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057562.
+ * A057564 Natural numbers n for which the following three properties hold: (i) Phi[Sigma[n]]=2*phi(n), (ii) Sigma[n-2]=2*Sigma[Phi[n-2]], (iii) Sigma[n+2]=2*Sigma[Phi[n+2]].
  * @author Sean A. Irvine
  */
 public class A057564 implements Sequence {

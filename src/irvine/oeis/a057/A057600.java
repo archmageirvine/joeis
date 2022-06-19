@@ -47,32 +47,30 @@ public class A057600 extends A000959 {
   @Override
   public Z next() {
     ++mN;
+    Z luckyPrime = Z.ONE;
     final TreeMap<Z, FactorSequence> candidates = new TreeMap<>();
     final FactorSequence fs = new FactorSequence();
-    Z p = Z.THREE; // 2 is not lucky
-    for (int k = 0; k < mN; p = nextLuckyPrime(p), ++k) {
-      fs.add(p, FactorSequence.PRIME);
-    }
-    candidates.put(fs.product(), fs);
+    candidates.put(Z.ONE, fs);
     while (true) {
-      final Map.Entry<Z, FactorSequence> e = candidates.pollFirstEntry();
+      final TreeMap<Z, FactorSequence> newCandidates = new TreeMap<>();
+      luckyPrime = nextLuckyPrime(luckyPrime);
       if (mVerbose) {
-        StringUtils.message("Testing: " + e.getKey() + " = " + FactorSequence.toString(e.getValue()));
+        final Map.Entry<Z, FactorSequence> e = candidates.lastEntry();
+        StringUtils.message("Testing: " + luckyPrime + " #candidates: " + candidates.size() + " last: " + e.getKey() + " = " + FactorSequence.toString(e.getValue()));
       }
-      if (isLucky(e.getValue())) {
-        return e.getKey();
-      }
-      final Z[] lst = e.getValue().toZArray();
-      for (int k = lst.length - 1; k >= 0; --k) {
-        final Z q = nextLuckyPrime(lst[k]);
-        if (k == lst.length - 1 || q.compareTo(lst[k + 1]) < 0) {
-          final FactorSequence fs1 = new FactorSequence();
-          for (int j = 0; j < lst.length; ++j) {
-            fs1.add(j == k ? q : lst[j], FactorSequence.PRIME);
+      for (final FactorSequence fs1 : candidates.values()) {
+        final FactorSequence fs2 = new FactorSequence(fs1);
+        fs2.add(luckyPrime, FactorSequence.PRIME);
+        if (isLucky(fs2)) {
+          final Z n = fs2.product();
+          if (fs2.omega() == mN) {
+            return n;
+          } else if (fs2.omega() < mN) {
+            newCandidates.put(n, fs2);
           }
-          candidates.put(e.getKey().divide(lst[k]).multiply(q), fs1);
         }
       }
+      candidates.putAll(newCandidates);
     }
   }
 }

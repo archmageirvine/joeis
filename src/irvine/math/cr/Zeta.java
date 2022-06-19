@@ -226,7 +226,12 @@ public final class Zeta {
         int k = -1;
         while (true) {
           ++k;
-          final Z t = zeta(s + k).getApprox(precision).multiply(Binomial.binomial(s + k - 1, k)).multiply(x.pow(k).getApprox(precision)).shiftRight(-precision);
+          // Note: this is pretty slow, but care is needed with the precision because of the
+          // size of b. zetaHurwitz(64, 3/4) is an interesting test.
+          final Z b = Binomial.binomial(s + k - 1, k);
+          final Z t = zeta(s + k).multiply(x.pow(k).multiply(b)).getApprox(precision);
+          //final int extra = b.bitLength();
+          //final Z t = x.pow(k).getApprox(precision - extra).multiply(b).multiply(zeta(s + k).getApprox(precision)).shiftRight(-precision + extra);
           if (t.isZero()) {
             break;
           }
@@ -235,6 +240,36 @@ public final class Zeta {
         return sum;
       }
     }.add(x.pow(s).inverse());
+  }
+
+  /**
+   * Compute the Hurwitz zeta function.
+   * @param s order
+   * @param x value
+   * @return zeta function
+   */
+  public static CR zetaHurwitz(final int s, final Q x) {
+    // e.g. for A294967, A258815
+    return new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        Z sum = Z.ZERO;
+        int k = -1;
+        while (true) {
+          ++k;
+          final Z b = Binomial.binomial(s + k - 1, k);
+          final Q c = x.pow(k).multiply(b);
+          final Z t = zeta(s + k).multiply(c).getApprox(precision);
+          //final int extra = b.bitLength();
+          //final Z t = x.pow(k).getApprox(precision - extra).multiply(b).multiply(zeta(s + k).getApprox(precision)).shiftRight(-precision + extra);
+          if (t.isZero()) {
+            break;
+          }
+          sum = sum.signedAdd((k & 1) == 0, t);
+        }
+        return sum;
+      }
+    }.add(CR.valueOf(x.pow(s).reciprocal()));
   }
 
 //  /**

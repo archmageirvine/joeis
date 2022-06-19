@@ -1,6 +1,5 @@
 package irvine.oeis.a057;
 
-<<<<<<< Updated upstream
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -26,25 +25,5 @@ public class A057596 extends A039834 {
   public Z next() {
     mE.add(new Q(super.next().abs(), MemoryFactorial.SINGLETON.factorial(++mN)));
     return RING.coeff(RING.one(), mE, mN).multiply(MemoryFactorial.SINGLETON.factorial(mN)).toZ();
-=======
-import irvine.math.z.Z;
-
-/**
- * A057593.
- * @author Sean A. Irvine
- */
-public class A057595 extends A057593 {
-
-  private long mN = 1;
-  private long mM = 1;
-
-  @Override
-  public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 2;
-    }
-    return Z.valueOf((2 * t(mN, mM == mN ? 1 : mM)) % (mN - 1));
->>>>>>> Stashed changes
   }
 }

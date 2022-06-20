@@ -60,10 +60,13 @@ public class PariSequence implements Sequence, Closeable {
   public Z next() {
     // If we detect a problem, try hard to close things down
     if (!mProc.isAlive()) {
-      close();
+      try {
+        close();
+      } catch (final IOException e) {
+        // too bad, we tried to clean up
+      }
       return null;
     }
-    // todo check error stream
     try {
       final String line = mIn.readLine();
       if (line == null) {
@@ -77,16 +80,17 @@ public class PariSequence implements Sequence, Closeable {
   }
 
   @Override
-  public void close() {
-    // todo each of these steps needs care!
+  public void close() throws IOException {
     try {
       mOut.close();
-      mIn.close();
-    } catch (final IOException e) {
-      // too bad we failed to close
-    }
-    if (mProc.isAlive()) {
-      mProc.destroyForcibly();
+    } finally {
+      try {
+        mIn.close();
+      } finally {
+        if (mProc.isAlive()) {
+          mProc.destroyForcibly();
+        }
+      }
     }
   }
 }

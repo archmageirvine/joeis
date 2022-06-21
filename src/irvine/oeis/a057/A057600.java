@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000959;
 import irvine.util.string.StringUtils;
 
 /**
- * A05600.
+ * A057600 a(n) is smallest number m such that (m = product of n distinct primes) and all divisors of m are lucky numbers.
  * @author Sean A. Irvine
  */
 public class A057600 extends A000959 {

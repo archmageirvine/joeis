@@ -9,6 +9,8 @@ import irvine.oeis.a000.A000959;
  */
 public class A057610 extends A000959 {
 
+  // todo data does not match definition!
+
   private int mN = 0;
   private Z mA = super.next();
 

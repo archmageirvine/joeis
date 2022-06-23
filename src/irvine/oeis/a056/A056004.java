@@ -11,15 +11,17 @@ public class A056004 implements Sequence {
 
   private long mN = 0;
 
-  private Z code(final long n) {
+  protected Z code(final Z n, final int base) {
     Z sum = Z.ZERO;
-    long m = n;
+    Z m = n;
     int k = 0;
-    while (m != 0) {
-      if ((m & 1) == 1) {
-        sum = sum.add(Z.THREE.pow(k < 2 ? k : code(k).longValueExact() + 1));
+    while (!m.isZero()) {
+      final long r = m.mod(base);
+      if (r != 0) {
+        final Z zk = Z.valueOf(k);
+        sum = sum.add(Z.valueOf(base + 1).pow(k < base ? zk : code(zk, base).add(1)).multiply(r));
       }
-      m >>>= 1;
+      m = m.divide(base);
       ++k;
     }
     return sum.subtract(1);
@@ -27,6 +29,6 @@ public class A056004 implements Sequence {
 
   @Override
   public Z next() {
-    return code(++mN);
+    return code(Z.valueOf(++mN), 2);
   }
 }

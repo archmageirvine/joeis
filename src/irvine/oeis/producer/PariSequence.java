@@ -21,7 +21,8 @@ public class PariSequence implements Sequence, Closeable {
   //  - it needs to check the error stream
   //  - it needs to check other error conditions
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose", "false"));
+  private final String mTimeout = System.getProperty("oeis.timeout", "3600000"); // 1000 hours = almost never
   private final Process mProc;
   private final PrintWriter mOut;
   private final BufferedReader mIn;
@@ -33,6 +34,7 @@ public class PariSequence implements Sequence, Closeable {
   public PariSequence(final String pariProgram) {
     final ProcessBuilder pb = new ProcessBuilder(PariProducer.PARI_COMMAND, "--fast", "--quiet");
     try {
+      
       mProc = pb.start();
       new DrainStreamThread(mProc.getErrorStream(), mVerbose);
       mOut = new PrintWriter(mProc.getOutputStream());
@@ -46,8 +48,17 @@ public class PariSequence implements Sequence, Closeable {
     final String programType = header.getType();
     mOut.println(pariProgram); // Send the program to PARI
     switch (programType) {
+      case "an0":
+        mOut.println("alarm(" + mTimeout + ",for(n=0,+oo,print(a(n))));"); // special for P.H.
+        break;
       case "an":
-        mOut.println("for(n=" + offset + ",+oo,print(a(n)));");
+        mOut.println("alarm(" + mTimeout + ",for(n=" + offset + ",+oo,print(a(n))));");
+        break;
+      case "isok0":
+        mOut.println("alarm(" + mTimeout + ",for(n=0,+oo,if(isok(n),print(n))));");
+        break;
+      case "isok":
+        mOut.println("alarm(" + mTimeout + ",for(n=" + offset + ",+oo,if(isok(n),print(n))));");
         break;
       default:
         throw new RuntimeException("Unknown type of PARI program " + programType + "\n" + pariProgram);

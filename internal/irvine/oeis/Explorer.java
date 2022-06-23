@@ -11,15 +11,15 @@ import java.util.List;
 import java.util.zip.GZIPInputStream;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.MobiusTransformSequence;
 
 /**
- * Explore transforms of existing sequences.
+ * Explore various transforms of existing sequences.
  * @author Sean A. Irvine
  */
 public final class Explorer {
 
   private static final int A_NUMBER_LENGTH = 6;
+  private static final int MIN_MATCH = 10;
 
   private Explorer() { }
 
@@ -31,7 +31,8 @@ public final class Explorer {
         res.add(new Z(z));
       }
     }
-    return res;
+    // To reduce false-positives require a minimum number of terms in a sequence
+    return res.size() >= MIN_MATCH ? res : Collections.emptyList();
   }
 
   private static List<List<Z>> loadSequences(final String namesFile) throws IOException {
@@ -59,7 +60,8 @@ public final class Explorer {
 
   private static List<Z> transform(final List<Z> seq) {
     final ArrayList<Z> res = new ArrayList<>(seq.size());
-    final MobiusTransformSequence transform = new MobiusTransformSequence(new FiniteSequence(seq), 0);
+    //final MobiusTransformSequence transform = new MobiusTransformSequence(new FiniteSequence(seq), 0);
+    final PartialSumSequence transform = new PartialSumSequence(new FiniteSequence(seq));
     for (int k = 0; k < seq.size(); ++k) {
       res.add(transform.next());
     }
@@ -80,8 +82,6 @@ public final class Explorer {
     }
     return Math.min(query.size(), seq.size());
   }
-
-  private static final int MIN_MATCH = 10;
 
   /**
    * Explore transforms of sequences.

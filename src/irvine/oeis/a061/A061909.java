@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A061909.
+ * A061909 Skinny numbers: numbers n such that there are no carries when n is squared by "long multiplication".
  * @author Sean A. Irvine
  */
 public class A061909 implements Sequence {

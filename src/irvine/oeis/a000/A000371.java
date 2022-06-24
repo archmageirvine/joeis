@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.transform.InverseBinomialTransformSequence;
 import irvine.oeis.a001.A001146;
+import irvine.oeis.transform.InverseBinomialTransformSequence;
 
 /**
  * A000371 a(n) = Sum_{k=0..n} (-1)^(n-k)*binomial(n,k)*2^(2^k).

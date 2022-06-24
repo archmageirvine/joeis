@@ -8,12 +8,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057624.
+ * A057647 Number of walks of length n on the upper-right part of the honeycomb lattice.
  * @author Sean A. Irvine
  */
 public class A057647 implements Sequence {
 
-  private HashMap<Long, Z> mCounts = new HashMap<>();
+  protected HashMap<Long, Z> mCounts = new HashMap<>();
 
   @Override
   public Z next() {

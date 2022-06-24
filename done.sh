@@ -60,3 +60,4 @@ gnuplot <<EOF
 EOF
 
 mv ./*.png doc
+/bin/rm -f oeis_done.dat

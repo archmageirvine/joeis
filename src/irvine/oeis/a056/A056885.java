@@ -73,7 +73,7 @@ public class A056885 extends MemoryFunction2<Integer, Polynomial<Q>> implements 
     return n == 0 ? get(m, n) : RING.subtract(get(m, n), get(m, n - 1));
   }
 
-  private Z a(final int n, final int k) {
+  protected Z a(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int j = 0; j <= k; ++j) {
       sum = sum.add(bbar(j, n - j).coeff(k - j).toZ());

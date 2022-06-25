@@ -303,12 +303,11 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   public int perimeterSize() {
     final HashSet<Pair<Integer, Integer>> h = new HashSet<>();
     for (int k = 0; k < mSize; k++) {
-      final Triangle t = mSet.mSet[k];
       final int x = mSet.getX(k);
       final int y = mSet.getY(k);
       h.add(new Pair<>(x + 1, y));
       h.add(new Pair<>(x - 1, y));
-      h.add(new Pair<>(x, t.up() ? y - 2 : y + 2));
+      h.add(new Pair<>(x, mSet.mSet[k].up() ? y - 2 : y + 2));
     }
     for (int k = 0; k < mSize; k++) {
       final int x = mSet.getX(k);
@@ -316,5 +315,33 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
       h.remove(new Pair<>(x, y));
     }
     return h.size();
+  }
+
+  /**
+   * Compute the size of the edge perimeter of this coordinate set.
+   * @return perimeter size
+   */
+  public int edgePerimeterSize() {
+    final HashSet<Pair<Integer, Integer>> h = new HashSet<>();
+    for (int k = 0; k < mSize; k++) {
+      final int x = mSet.getX(k);
+      final int y = mSet.getY(k);
+      h.add(new Pair<>(x, y));
+    }
+    int perim = 0;
+    for (int k = 0; k < mSize; k++) {
+      final int x = mSet.getX(k);
+      final int y = mSet.getY(k);
+      if (!h.contains(new Pair<>(x + 1, y))) {
+        ++perim;
+      }
+      if (!h.contains(new Pair<>(x - 1, y))) {
+        ++perim;
+      }
+      if (!h.contains(new Pair<>(x, mSet.mSet[k].up() ? y - 2 : y + 2))) {
+        ++perim;
+      }
+    }
+    return perim;
   }
 }

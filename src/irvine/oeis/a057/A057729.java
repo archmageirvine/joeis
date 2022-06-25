@@ -8,7 +8,7 @@ import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
 /**
- * A000577.
+ * A057729 Number of triangular polyominoes (or polyiamonds) [A000577] with perimeter n.
  * @author Sean A. Irvine
  */
 public class A057729 implements Sequence {

@@ -3,8 +3,8 @@ package irvine.oeis.a000;
 // period: 1, 1, 0
 // DO NOT EDIT here!
 
-import irvine.oeis.transform.EulerTransform;
 import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.transform.EulerTransform;
 
 
 /**

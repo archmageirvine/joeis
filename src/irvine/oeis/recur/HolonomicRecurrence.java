@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * A holonomic sequence is defined by a recurrence equation
@@ -36,7 +36,7 @@ import irvine.oeis.Sequence;
  * of any sequence term.
  * @author Georg Fischer
  */
-public class HolonomicRecurrence implements Sequence {
+public class HolonomicRecurrence implements SequenceWithOffset {
   static int sDebug = 0;
 
   protected Z[] mInitTerms; // initial terms for a(n)
@@ -356,10 +356,7 @@ public class HolonomicRecurrence implements Sequence {
      return result;
   } // next
 
-  /**
-   * Gets the offset
-   * @return the index where the sequence elements start
-   */
+  @Override
   public int getOffset() {
     return mOffset;
   }

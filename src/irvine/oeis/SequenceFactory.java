@@ -109,6 +109,19 @@ public final class SequenceFactory {
     return sequence(aNumber, sProducer);
   }
 
+  /**
+   * Attempt to retrieve the offset associated with a sequence.
+   * @param seq the sequence
+   * @return the offset
+   */
+  public static int getOffset(final Sequence seq) {
+    // todo this is preliminary
+    if (seq instanceof SequenceWithOffset) {
+      return ((SequenceWithOffset) seq).getOffset();
+    }
+    throw new UnsupportedOperationException();
+  }
+
   private static boolean dataLineOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {
     final int maxDataLength = (Integer) flags.getValue(DATA_LENGTH);
     final long numberOfTerms = getEffectiveMax(flags, TERMS);
@@ -489,4 +502,3 @@ public final class SequenceFactory {
   }
 
 }
-

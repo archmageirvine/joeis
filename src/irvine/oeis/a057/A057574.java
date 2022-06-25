@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  */
 public class A057574 implements Sequence {
 
-  private static class Codeword {
+  private static final class Codeword {
     private final long mBinary;
     private final long mTernary;
 
@@ -33,15 +33,15 @@ public class A057574 implements Sequence {
 //      return d;
 //    }
 
-    private boolean isHamming(final Codeword other, final int distance) {
+    private boolean isHamming(final Codeword other, final int minDistance) {
       int d = Long.bitCount(mBinary ^ other.mBinary);
-      if (d >= distance) {
+      if (d >= minDistance) {
         return true;
       }
       long a = mTernary;
       long b = other.mTernary;
       while (a != 0 || b != 0) {
-        if ((a & 3) != (b & 3) && ++d >= distance) {
+        if ((a & 3) != (b & 3) && ++d >= minDistance) {
           return true;
         }
         a >>>= 2;

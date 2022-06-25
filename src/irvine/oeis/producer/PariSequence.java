@@ -7,13 +7,13 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Produce a sequence from a PARI program.
  * @author Sean A. Irvine
  */
-public class PariSequence implements Sequence, Closeable {
+public class PariSequence implements SequenceWithOffset, Closeable {
 
   // todo This should be considered preliminary
   //  - it needs to handle more styles of PARI programs
@@ -26,6 +26,7 @@ public class PariSequence implements Sequence, Closeable {
   private final Process mProc;
   private final PrintWriter mOut;
   private final BufferedReader mIn;
+  private final Header mHeader;
 
   /**
    * Construct a sequence backed by a PARI program.
@@ -43,9 +44,9 @@ public class PariSequence implements Sequence, Closeable {
       throw new RuntimeException(e);
     }
     //System.out.println("Sending: " + pariProgram);
-    final Header header = new Header(pariProgram);
-    final int offset = header.getOffset();
-    final String programType = header.getType();
+    mHeader = new Header(pariProgram);
+    final int offset = mHeader.getOffset();
+    final String programType = mHeader.getType();
     mOut.println(pariProgram); // Send the program to PARI
     switch (programType) {
       case "an0":
@@ -88,6 +89,11 @@ public class PariSequence implements Sequence, Closeable {
     } catch (final IOException e) {
       throw new UnsupportedOperationException("PARI failed to produce more terms", e);
     }
+  }
+
+  @Override
+  public int getOffset() {
+    return mHeader.getOffset();
   }
 
   @Override

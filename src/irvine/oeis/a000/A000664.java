@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.a002.A002905;
+import irvine.oeis.transform.EulerTransformSequence;
 
 /**
  * A000664 Number of graphs with n edges.

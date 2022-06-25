@@ -1,8 +1,8 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.transform.EulerTransformSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.transform.EulerTransformSequence;
 
 /**
  * A000713 EULER transform of 3, 2, 2, 2, 2, 2, 2, 2, ...

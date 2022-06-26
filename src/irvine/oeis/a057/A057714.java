@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057708.
+ * A057714 If (p_k)^(c_k) is highest power of p_k dividing n (where p_k is a prime dividing n and p_k &gt; p_j for all k &gt; j), then (p_k)^(c_k) &gt; (p_j)^(c_j) for all k &gt; j.
  * @author Sean A. Irvine
  */
 public class A057714 implements Sequence {

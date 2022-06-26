@@ -17,14 +17,6 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
     ((CoordSet2T) mCs).calculate();
   }
 
-  // build a polyomino from a coordinate set, with or without cloning
-  Polyiamond(final CoordSet2T c, final boolean copy) {
-    builder(c, copy);
-    ((CoordSet2T) mCs).calculate();
-  }
-
-  // build a polyomino from a coordinate set, with or without cloning
-
   // build a polyomino from a coordinate set adding one square
   Polyiamond(final CoordSet2T c, final int x, final int y) {
     mCs = c.copy(x, y);
@@ -115,5 +107,13 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
    */
   public int perimeterSize() {
     return ((CoordSet2T) mCs).perimeterSize();
+  }
+
+  /**
+   * Compute the size of the edge perimeter of this polyomino.
+   * @return the size of the edge perimeter
+   */
+  public int edgePerimeterSize() {
+    return ((CoordSet2T) mCs).edgePerimeterSize();
   }
 }

@@ -19,6 +19,8 @@ import irvine.oeis.Sequence;
  */
 public class A002410 implements Sequence {
 
+  // WARNING: This might not have sufficient accuracy, cf. A162774 diff
+
   private static final double ROOT_1 = 14.13472514;
 
   //============== Riemann-Siegel formula ===============================

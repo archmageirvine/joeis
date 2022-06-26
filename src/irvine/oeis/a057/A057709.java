@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A057708.
+ * A057709 Numbers k such that there is a unique m for which the sum of the aliquot parts of m (A001065) is k.
  * @author Sean A. Irvine
  */
 public class A057709 implements Sequence {

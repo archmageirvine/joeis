@@ -119,7 +119,21 @@ public final class SequenceFactory {
     if (seq instanceof SequenceWithOffset) {
       return ((SequenceWithOffset) seq).getOffset();
     }
-    throw new UnsupportedOperationException();
+    return 1; // Don't know the offset, assume 1
+  }
+
+  /**
+   * Attempt to retrieve the offset associated with a sequence.
+   * If the offset was set on the command line that takes priority.
+   * @param flags command line flags
+   * @param seq the sequence
+   * @return the offset
+   */
+  public static int getOffset(final CliFlags flags, final Sequence seq) {
+    if (flags.isSet(OFFSET)) {
+      return (Integer) flags.getValue(OFFSET);
+    }
+    return getOffset(seq);
   }
 
   private static boolean dataLineOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {
@@ -154,7 +168,7 @@ public final class SequenceFactory {
   private static boolean triangleOutputMode(final CliFlags flags, final OutputStream out, final Sequence seq) throws IOException {
     final boolean timestamp = flags.isSet(TIMESTAMP);
     final boolean rowNumbers = flags.isSet(ROW_NUMBERS);
-    final long offset = (Long) flags.getValue(OFFSET);
+    final long offset = getOffset(flags, seq);
     final long numberOfTerms = getEffectiveMax(flags, TERMS);
     final long maxRow = getEffectiveMax(flags, ROWS);
     Z z;
@@ -397,7 +411,7 @@ public final class SequenceFactory {
     flags.registerOptional('S', SQUARE, "Output data as a square array");
     flags.registerOptional('n', TERMS, Long.class, "number", "Maximum number of terms to generate (or 0 for unbounded)", 0L);
     flags.registerOptional('r', ROWS, Long.class, "number", "Maximum number of rows to generate in a triangle (or 0 for unbounded)", 0L);
-    flags.registerOptional('o', OFFSET, Long.class, "number", "Offset to use (relevant for -B and -T with --" + ROW_NUMBERS + ")", 1L);
+    flags.registerOptional('o', OFFSET, Long.class, "number", "Offset to use (relevant for -B and -T with --" + ROW_NUMBERS + ")");
     flags.registerOptional('t', TIMESTAMP, "Add a timestamp to each line of output");
     flags.registerOptional(DATA_LENGTH, Integer.class, "number", "Maximum total length of output line in characters (in conjunction with -D)", DEFAULT_DATA_LENGTH);
     flags.registerOptional(HEADER, "Print a header");
@@ -410,7 +424,6 @@ public final class SequenceFactory {
     final boolean timestamp = flags.isSet(TIMESTAMP);
     final boolean bfile = flags.isSet(B_FILE);
     final boolean header = flags.isSet(HEADER);
-    final long offset = (Long) flags.getValue(OFFSET);
     if (flags.isSet(PRIORITY)) {
       sProducer = MetaProducer.createProducer((String) flags.getValue(PRIORITY));
     }
@@ -421,6 +434,7 @@ public final class SequenceFactory {
     // Does what it can to ensure terms are flushed to output as soon as possible
     try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
       final Sequence seq = sequence(seqId);
+      final int offset = getOffset(flags, seq);
       try {
         if (bfile && header) {
           final StringBuilder header1 = new StringBuilder("# Table of a(n)");

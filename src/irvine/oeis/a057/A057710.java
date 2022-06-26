@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A057708.
+ * A057710 Positive integers k with exactly 2 aliquot sequence predecessors. In other words, there are exactly two solutions x for which s(x) = n. The function s(x) here is the sum of all proper divisors of x (A001065).
  * @author Sean A. Irvine
  */
 public class A057710 implements Sequence {

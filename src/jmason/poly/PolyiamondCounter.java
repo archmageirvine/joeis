@@ -9,10 +9,10 @@ import java.util.List;
  */
 public class PolyiamondCounter {
 
-  private ArrayList<Polyiamond> mList = new ArrayList<>();
-  private UniquenessTester mUt = new UniquenessTester();
-  private Cumulator mCu;
-  private int mMax;
+  private final ArrayList<Polyiamond> mList = new ArrayList<>();
+  private final UniquenessTester mUt = new UniquenessTester();
+  private final Cumulator mCu;
+  private final int mMax;
 
   public Cumulator getCu() {
     return mCu;

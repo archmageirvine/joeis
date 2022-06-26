@@ -1897,3 +1897,4 @@ A057707 Number of poly-octagon squares: a(n) = number of 'polyominoes' that can 
 A057712 Number of "polyhes" of order n: a polyhe of order n is obtained by taking a polyhex made of n hexagons (A000228); cutting each of the n hexagons along a diameter and throwing away half that hexagon, in such a way that the remaining figure (made of n half-hexagons) is connected.
 A057724 Number of "polyares" of order n (turning over allowed).
 A057725 Number of "polyares" of order n (turning over not allowed).
+A057749 Prime degrees of absolutely reducible trinomials: primes p such that x^p + x^k + 1 is reducible over GF(2) for all k, p>k>0 [my code not efficient enough]

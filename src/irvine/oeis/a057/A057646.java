@@ -17,7 +17,7 @@ public class A057646 implements Sequence {
   private Polynomial<Z> mP = mPolynomialIterator.next();
   private int mN = 1;
 
-  private boolean isTrinomial(final Polynomial<Z> p) {
+  static boolean isTrinomial(final Polynomial<Z> p) {
     int nonzero = 0;
     // exclude 1 and p.degree which are known to be present
     for (int k = 1; k < p.degree(); ++k) {

@@ -1898,3 +1898,4 @@ A057712 Number of "polyhes" of order n: a polyhe of order n is obtained by takin
 A057724 Number of "polyares" of order n (turning over allowed).
 A057725 Number of "polyares" of order n (turning over not allowed).
 A057749 Prime degrees of absolutely reducible trinomials: primes p such that x^p + x^k + 1 is reducible over GF(2) for all k, p>k>0 [my code not efficient enough]
+A057771 Number of loops (quasigroups with an identity element) of order n.

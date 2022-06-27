@@ -17,17 +17,6 @@ public class A057646 implements Sequence {
   private Polynomial<Z> mP = mPolynomialIterator.next();
   private int mN = 1;
 
-  static boolean isTrinomial(final Polynomial<Z> p) {
-    int nonzero = 0;
-    // exclude 1 and p.degree which are known to be present
-    for (int k = 1; k < p.degree(); ++k) {
-      if (!p.coeff(k).isZero() && ++nonzero > 1) {
-        return false;
-      }
-    }
-    return nonzero == 1;
-  }
-
   @Override
   public Z next() {
     ++mN;
@@ -36,7 +25,7 @@ public class A057646 implements Sequence {
     }
     long count = 0;
     while (mP.degree() == mN) {
-      if (isTrinomial(mP)) {
+      if (IrreduciblePolynomials.isTrinomial(mP)) {
         ++count;
       }
       mP = mPolynomialIterator.next();

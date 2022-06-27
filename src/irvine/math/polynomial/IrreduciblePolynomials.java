@@ -145,6 +145,21 @@ public final class IrreduciblePolynomials {
     return exactlyDivides(makeLong(n), makeLong(d), d.degree());
   }
 
+  /**
+   * Test if the given polynomial is a trinomial.
+   * @param p polynomial to test.
+   * @return true iff the polynomial is a trinomial
+   */
+  public static boolean isTrinomial(final Polynomial<Z> p) {
+    int nonzero = 0;
+    for (int k = 0; k <= p.degree(); ++k) {
+      if (!p.coeff(k).isZero() && ++nonzero > 3) {
+        return false;
+      }
+    }
+    return nonzero == 3;
+  }
+
   private static class IrreducibleIterator extends AbstractIterator<Polynomial<Z>> {
 
     private int mPos = -1;

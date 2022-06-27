@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A057765 implements Sequence {
 
-  private int mN = 0;
+  protected int mN = 0;
   private long mLim = 0;
   private final Set<Long> mFactorable = new HashSet<>();
 

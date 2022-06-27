@@ -120,6 +120,16 @@ public class IntegersModMul extends AbstractGroup<Z> {
   }
 
   @Override
+  public Z coerce(final Z n) {
+    return n.mod(mMod);
+  }
+
+  @Override
+  public Z coerce(final long n) {
+    return coerce(Z.valueOf(n));
+  }
+
+  @Override
   public String toString() {
     return "\\Z_{(" + mMod + ")}";
   }

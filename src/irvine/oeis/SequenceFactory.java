@@ -411,7 +411,7 @@ public final class SequenceFactory {
     flags.registerOptional('S', SQUARE, "Output data as a square array");
     flags.registerOptional('n', TERMS, Long.class, "number", "Maximum number of terms to generate (or 0 for unbounded)", 0L);
     flags.registerOptional('r', ROWS, Long.class, "number", "Maximum number of rows to generate in a triangle (or 0 for unbounded)", 0L);
-    flags.registerOptional('o', OFFSET, Long.class, "number", "Offset to use (relevant for -B and -T with --" + ROW_NUMBERS + ")");
+    flags.registerOptional('o', OFFSET, Integer.class, "number", "Offset to use (relevant for -B and -T with --" + ROW_NUMBERS + ")");
     flags.registerOptional('t', TIMESTAMP, "Add a timestamp to each line of output");
     flags.registerOptional(DATA_LENGTH, Integer.class, "number", "Maximum total length of output line in characters (in conjunction with -D)", DEFAULT_DATA_LENGTH);
     flags.registerOptional(HEADER, "Print a header");

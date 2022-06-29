@@ -29,7 +29,7 @@ public class A057753 implements Sequence {
     }
   };
 
-  private int mN = 0;
+  private int mN = 2;
   private int mM = 0;
 
   @Override

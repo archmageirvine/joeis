@@ -2,6 +2,7 @@ package jmason.poly;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeSet;
 
 /**
  * An integral polytriamond.
@@ -92,11 +93,15 @@ public class Polytriamond extends PolyGen<Triangle, CoordSet2T> {
       }
     }
 
-    // todo make entire triple as key -- but sorted?
-//    final String t = x + " " + y;
-//    if (!hc.add(t)) {
-//      return;
-//    }
+    final TreeSet<String> key = new TreeSet<>();
+    for (int k = 0; k < dx.length; ++k) {
+      final int x = mCs.getX(i) + dx[k];
+      final int y = mCs.getY(i) + dy[k] * d;
+      key.add(x + " " + y);
+    }
+    if (!hc.add(key.toString())) {
+      return;
+    }
 
     final int size = mCs.mSize;
     final CoordSet2T cs = new CoordSet2T(size + 3, true, false, false); // todo these flags should come from elsewhere
@@ -110,12 +115,6 @@ public class Polytriamond extends PolyGen<Triangle, CoordSet2T> {
     }
     cs.placeInSextant();
 
-//    CoordSet2T cs = (CoordSet2T) mCs;
-//    for (int k = 0; k < dx.length; ++k) {
-//      final int x = mCs.getX(i) + dx[k];
-//      final int y = mCs.getY(i) + dy[k] * d;
-//      cs = cs.copy(x, y); // todo is this doing canon and screwing it up
-//    }
     final Polytriamond p = new Polytriamond(cs);
     if (!h.add(p.mUniq)) {
       return;

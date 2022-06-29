@@ -1,6 +1,7 @@
 package jmason.poly;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * An integral polyiamond.
@@ -17,7 +18,7 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
     ((CoordSet2T) mCs).calculate();
   }
 
-  // build a polyomino from a coordinate set adding one square
+  // build a polyomino from a coordinate set adding one cell
   Polyiamond(final CoordSet2T c, final int x, final int y) {
     mCs = c.copy(x, y);
     mUniq = mCs.makeUnique();
@@ -38,7 +39,7 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
    * @param addOnlyToColour color
    * @return children
    */
-  public ArrayList<Polyiamond> listSons(final int addOnlyToColour) {
+  public List<Polyiamond> listSons(final int addOnlyToColour) {
     final ArrayList<Polyiamond> list = new ArrayList<>();
     final UniquenessTester h = new UniquenessTester();
     final UniquenessTester hc = new UniquenessTester();

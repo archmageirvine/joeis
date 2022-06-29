@@ -108,6 +108,13 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     setTriangle(0, 1, 1, Square.BLACK);
   }
 
+  /** The monotriamond. */
+  public void initMonotriamond() {
+    setTriangle(0, 1, 1, Square.BLACK);
+    setTriangle(1, 2, 1, Square.BLACK);
+    setTriangle(2, 3, 1, Square.BLACK);
+  }
+
   private void add(final int i, final int x, final int y) {
     ((TriangleSet) mSet).setTriangle(i, x, y);
   }
@@ -161,7 +168,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     return cs;
   }
 
-  private void placeInSextant() {
+  void placeInSextant() {
     int maxd = 0;
     for (int i = 0; i < mSize; ++i) {
       final Triangle t = mSet.getElement(i);

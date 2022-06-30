@@ -20,9 +20,9 @@ public abstract class PolyGen<U extends Element<U>, T extends CoordSetGen<U>> ex
     return mCs.mSize;
   }
 
-  protected void builder(final T c, final boolean copy) {
+  protected void builder(final T c, final boolean copy, final boolean withColor) {
     mCs = copy ? c.copySet() : c;
-    mUniq = mCs.makeUnique();
+    mUniq = mCs.makeUnique(withColor);
   }
 
   public String getUniq() {

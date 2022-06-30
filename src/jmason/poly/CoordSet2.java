@@ -869,7 +869,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
   }
 
   @Override
-  protected String makeUnique() {
+  protected String makeUnique(final boolean withColor) {
     return new UniqueMaker2(this).uniqString();
   }
 

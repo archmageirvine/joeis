@@ -6,32 +6,34 @@ package jmason.poly;
  */
 public class UniqueMaker2T {
 
-  private CoordSet2T mCs;
+  private final CoordSet2T mCs;
+  private final boolean mWithColor;
 
-  UniqueMaker2T(final CoordSet2T cs) {
+  UniqueMaker2T(final CoordSet2T cs, final boolean withColor) {
     mCs = cs;
+    mWithColor = withColor;
   }
 
   String uniqString() {
     if (mCs.mFlagFixed) {
-      return mCs.makeString();
+      return mCs.makeString(mWithColor);
     } else if (mCs.mFlagOneSided) {
-      final String tmp1 = mCs.makeString();
+      final String tmp1 = mCs.makeString(mWithColor);
       CoordSet2T ts = mCs.rotate60();
 
-      final String tmp2 = ts.makeString();
+      final String tmp2 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp3 = ts.makeString();
+      final String tmp3 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp4 = ts.makeString();
+      final String tmp4 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp5 = ts.makeString();
+      final String tmp5 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp6 = ts.makeString();
+      final String tmp6 = ts.makeString(mWithColor);
 
       // ret.compare(tmp) > 0 means ret greater than tmp
       String ret = tmp1;
@@ -53,40 +55,40 @@ public class UniqueMaker2T {
 
       return ret;
     } else {
-      final String tmp1 = mCs.makeString();
+      final String tmp1 = mCs.makeString(mWithColor);
       CoordSet2T ts = mCs.rotate60();
 
-      final String tmp2 = ts.makeString();
+      final String tmp2 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp3 = ts.makeString();
+      final String tmp3 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp4 = ts.makeString();
+      final String tmp4 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp5 = ts.makeString();
+      final String tmp5 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp6 = ts.makeString();
+      final String tmp6 = ts.makeString(mWithColor);
       ts = ts.mirrorVert();
 
-      final String tmp7 = ts.makeString();
+      final String tmp7 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp8 = ts.makeString();
+      final String tmp8 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp9 = ts.makeString();
+      final String tmp9 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp10 = ts.makeString();
+      final String tmp10 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp11 = ts.makeString();
+      final String tmp11 = ts.makeString(mWithColor);
       ts = ts.rotate60();
 
-      final String tmp12 = ts.makeString();
+      final String tmp12 = ts.makeString(mWithColor);
       String ret = tmp1;
       if (ret.compareTo(tmp2) > 0) {
         ret = tmp2;

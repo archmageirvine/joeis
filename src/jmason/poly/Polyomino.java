@@ -17,7 +17,7 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
    * @param c the coordinate set
    */
   public Polyomino(final CoordSet2 c) {
-    builder(c, true);
+    builder(c, true, false);
     ((CoordSet2) mCs).calculate();
   }
 
@@ -33,13 +33,13 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
   // build a polyomino from a coordinate set adding one square
   Polyomino(final CoordSet2 c, final int x, final int y) {
     mCs = c.copy(x, y);
-    mUniq = mCs.makeUnique();
+    mUniq = mCs.makeUnique(false);
     ((CoordSet2) mCs).calculate();
   }
 
   Polyomino(final CoordSet2 c, final int x1, final int y1, final int x2, final int y2) {
     mCs = c.copy(x1, y1, x2, y2);
-    mUniq = mCs.makeUnique();
+    mUniq = mCs.makeUnique(false);
     ((CoordSet2) mCs).calculate();
   }
 
@@ -48,14 +48,6 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
 //    mUniq = mCs.makeUnique();
 //    ((CoordSet2) mCs).calculate();
 //  }
-
-  int getWidth() {
-    return ((CoordSet2) mCs).getWidth();
-  }
-
-  int getHeight() {
-    return ((CoordSet2) mCs).getHeight();
-  }
 
   // build list of mirror polyominoes generatable form current
   // No guarantee that not generatable from previous

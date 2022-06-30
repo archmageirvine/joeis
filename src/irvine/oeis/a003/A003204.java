@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -31,7 +31,7 @@ public class A003204 implements Sequence {
     if (c == max) {
       ++mPerimeterCounts[p.perimeterSize()];
     } else {
-      final ArrayList<Polyiamond> sons = p.listSons(0 /* onlyIfColour */); // guarantee of uniqueness
+      final List<Polyiamond> sons = p.listSons(0 /* onlyIfColour */); // guarantee of uniqueness
       for (final Polyiamond son : sons) {
         count(c + 1, max, son);
       }

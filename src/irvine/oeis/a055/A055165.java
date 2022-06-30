@@ -11,9 +11,14 @@ import irvine.oeis.a000.A000410;
 public class A055165 extends A000410 {
 
   private Z mF = Z.ONE;
+  private boolean mFirst = true;
 
   @Override
   public Z next() {
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
+    }
     final Z t = super.next();
     mF = mF.multiply(mN);
     return Binomial.binomial((1L << mN) - 1, mN).subtract(t).multiply(mF);

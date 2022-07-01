@@ -8,6 +8,7 @@ import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.Pair;
 
 /**
  * A057783.
@@ -25,7 +26,9 @@ public class A057783 implements Sequence {
       mCanons.add(new Animal(H.origin(), H.toPoint(2, 0)));
     } else {
       final HashSet<Animal> newCanons = new HashSet<>();
+      final HashSet<Pair<Long, Long>> tried = new HashSet<>(); // for efficiency only
       for (final Animal a : mCanons) {
+        tried.clear();
         for (final long pt : a.points()) {
           // Choose two new adjacent points for the dohex
           for (int k = 0; k < NEIGHBOURS; ++k) {
@@ -33,7 +36,7 @@ public class A057783 implements Sequence {
             if (!a.contains(q)) {
               for (int j = 0; j < NEIGHBOURS; ++j) {
                 final long r = H.neighbour(q, j);
-                if (r != pt && !a.contains(r)) { // Strictly r != pt check is not needed
+                if (r != pt && !a.contains(r) && tried.add(new Pair<>(q, r))) {
                   final Animal b = new Animal(new Animal(a, q), r);
                   newCanons.add(Hexagonal.freeCanonical(b));
                 }

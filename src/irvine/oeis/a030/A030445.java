@@ -17,7 +17,7 @@ public class A030445 implements Sequence {
   private final ParallelHunter mHunter = new ParallelHunter(6, () -> new Hunter(Lattices.KNIGHT, true) {
     {
       setKeeper((animal, forbidden) -> {
-        if (Canons.Z2_ONE_SIDED.isCanonical(animal)) {
+        if (Canons.Z2_ONE_SIDED.isFreeCanonical(animal)) {
           increment(1);
         }
       });

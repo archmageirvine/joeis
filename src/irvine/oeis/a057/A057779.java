@@ -1,48 +1,44 @@
 package irvine.oeis.a057;
 
-import java.util.HashSet;
-import java.util.List;
-
+import irvine.math.lattice.Hexagonal;
+import irvine.math.lattice.Hunter;
+import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000228;
+import irvine.oeis.Sequence;
 
 /**
- * A057779 Hexagonal polyominoes (or polyhexes, A000228) with perimeter 2n.
+ * A057730 Number of polyominoes (A000105) with perimeter 2n.
  * @author Sean A. Irvine
  */
-public class A057779 extends A000228 {
+public class A057779 implements Sequence {
+
+  private final long[] mPerimeterCounts = new long[1000];
+  private int mLeastChange = 0;
+
+  private final Hunter mHunter = new Hunter(Lattices.HEXAGONAL, true) {
+    {
+      setKeeper((animal, forbidden) -> {
+        if (Hexagonal.isFreeCanonical(animal)) {
+          final int p = animal.edgePerimeterSize(Lattices.HEXAGONAL);
+          ++mPerimeterCounts[p];
+          if (p < mLeastChange) {
+            mLeastChange = p;
+          }
+        }
+      });
+    }
+  };
 
   private int mN = 0;
-  private final long[] mPerimeterCounts = new long[1000];
-
-  private int edgePerimeterSize(final List<Point> p) {
-    final HashSet<Point> pts = new HashSet<>(p);
-    int perim = 0;
-    for (final Point pt : p) {
-      for (final Point n : neighborhoods(pt)) {
-        if (!pts.contains(n)) {
-          ++perim;
-        }
-      }
-    }
-    return perim;
-  }
+  private int mM = 0;
 
   @Override
   public Z next() {
     mN += 2;
-    int leastChangeIndex;
     do {
-      leastChangeIndex = Integer.MAX_VALUE;
-      super.next();
-      for (final List<Point> p : mPrev) {
-        final int perim = edgePerimeterSize(p);
-        ++mPerimeterCounts[perim];
-        if (perim < leastChangeIndex) {
-          leastChangeIndex = perim;
-        }
-      }
-    } while (leastChangeIndex - 1 <= mN);
+      mLeastChange = Integer.MAX_VALUE;
+      mHunter.count(++mM);
+    } while (mLeastChange <= mN); // somewhat heuristic
     return Z.valueOf(mPerimeterCounts[mN]);
   }
 }

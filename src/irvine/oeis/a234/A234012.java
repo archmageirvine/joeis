@@ -17,7 +17,7 @@ public class A234012 implements Sequence {
   private final ParallelHunter mHunter = new ParallelHunter(7, () -> new Hunter(Lattices.Z2, true) {
     {
       setKeeper((animal, forbidden) -> {
-        if (Canons.Z2_FREE.isCanonical(animal)) {
+        if (Canons.Z2_FREE.isFreeCanonical(animal)) {
           int white = 0;
           for (final long p : animal.points()) {
             final long x = Lattices.Z2.ordinate(p, 0);

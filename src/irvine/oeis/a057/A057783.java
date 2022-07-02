@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057783.
+ * A057783 Building block is 2 hexagons side-by-side; sequence gives number of pieces (polydohexes) that can be formed from n such pairs of hexagons.
  * @author Sean A. Irvine
  */
 public class A057783 implements Sequence {

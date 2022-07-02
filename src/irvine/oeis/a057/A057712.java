@@ -8,7 +8,7 @@ import jmason.poly.Polyhe;
 import jmason.poly.PolyheCounter;
 
 /**
- * A057782.
+ * A057712 Number of "polyhes" of order n: a polyhe of order n is obtained by taking a polyhex made of n hexagons (A000228); cutting each of the n hexagons along a diameter and throwing away half that hexagon, in such a way that the remaining figure (made of n half-hexagons) is connected.
  * @author Sean A. Irvine
  */
 public class A057712 implements Sequence {

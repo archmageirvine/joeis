@@ -8,7 +8,7 @@ import jmason.poly.Polyare;
 import jmason.poly.PolyareCounter;
 
 /**
- * A057782.
+ * A057725 Number of "polyares" of order n (turning over not allowed).
  * @author Sean A. Irvine
  */
 public class A057725 implements Sequence {

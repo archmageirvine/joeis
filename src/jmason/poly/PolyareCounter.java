@@ -39,18 +39,18 @@ public class PolyareCounter {
     if (prevList == null || !optim) {
       final CoordSet2 cs = new CoordSet2(4, flagFree, flagFixed, flagOneSided);
       cs.initMonoare();
-      count(1, mMax, new Polyare(cs), optim);
+      count(1, mMax, new Polyare(cs), optim, flagOneSided);
     } else {
       for (final Polyare p : prevList) {
         // guarantee of uniqueness
-        for (final Polyare son : p.listSons()) {
-          count(mMax, mMax, son, optim);
+        for (final Polyare son : p.listSons(flagOneSided)) {
+          count(mMax, mMax, son, optim, flagOneSided);
         }
       }
     }
   }
 
-  private void count(final int c, final int max, final Polyare p, final boolean optim) {
+  private void count(final int c, final int max, final Polyare p, final boolean optim, final boolean oneSided) {
     p.mCs.verify();
     if (!mUt.add(p.mUniq)) {
       return;
@@ -63,8 +63,8 @@ public class PolyareCounter {
 
     if (c < max) {
       // guarantee of uniqueness
-      for (final Polyare son : p.listSons()) {
-        count(c + 1, max, son, optim);
+      for (final Polyare son : p.listSons(oneSided)) {
+        count(c + 1, max, son, optim, oneSided);
       }
     }
   }

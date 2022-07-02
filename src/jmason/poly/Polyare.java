@@ -10,15 +10,6 @@ import java.util.TreeSet;
  */
 public class Polyare extends PolyGen<Square, CoordSet2> {
 
-  /**
-   * Build a polyare from a coordinate set.
-   * @param c coordinates
-   */
-  public Polyare(final CoordSet2 c) {
-    builder(c, true, true);
-    ((CoordSet2) mCs).calculate();
-  }
-
   private static final int[][][] DELTAS = {
     // For a top-left black cell (others handled by symmetry on this)
     {{1, 2, 1, 2}, {0, 0, -1, -1}, {1, 1, -1, -1}},
@@ -28,10 +19,20 @@ public class Polyare extends PolyGen<Square, CoordSet2> {
   };
 
   /**
-   * Build list (without duplicates) of polyhes that can be generated from this polyhes.
+   * Build a polyare from a coordinate set.
+   * @param c coordinates
+   *
+   */
+  public Polyare(final CoordSet2 c) {
+    builder(c, true, true);
+    ((CoordSet2) mCs).calculate();
+  }
+
+  /**
+   * Build list (without duplicates) of polyares that can be generated from this polyares.
    * @return children
    */
-  public List<Polyare> listSons() {
+  public List<Polyare> listSons(final boolean oneSided) {
     final ArrayList<Polyare> list = new ArrayList<>();
     final UniquenessTester h = new UniquenessTester();
     final UniquenessTester hc = new UniquenessTester();
@@ -42,14 +43,14 @@ public class Polyare extends PolyGen<Square, CoordSet2> {
         final int x = t.getX();
         final int y = t.getY();
         for (final int[][] delta : DELTAS) {
-          tryShape(i, delta, (x & 1) == 0 ? -1 : 1, (y & 1) == 0 ? -1 : 1, list, h, hc);
+          tryShape(i, delta, (x & 1) == 0 ? -1 : 1, (y & 1) == 0 ? -1 : 1, list, h, hc, oneSided);
         }
       }
     }
     return list;
   }
 
-  private void tryShape(final int i, final int[][] deltas, final int mx, final int my, final ArrayList<Polyare> list, final UniquenessTester h, final UniquenessTester hc) {
+  private void tryShape(final int i, final int[][] deltas, final int mx, final int my, final ArrayList<Polyare> list, final UniquenessTester h, final UniquenessTester hc, final boolean oneSided) {
 
     final int xi = mCs.getX(i);
     final int yi = mCs.getY(i);
@@ -74,7 +75,7 @@ public class Polyare extends PolyGen<Square, CoordSet2> {
     }
 
     final int size = mCs.mSize;
-    final CoordSet2 cs = new CoordSet2(size + 4, true, false, false); // todo these flags should come from elsewhere
+    final CoordSet2 cs = new CoordSet2(size + 4, true, false, oneSided); // todo these flags should come from elsewhere
     for (int k = 0; k < size; ++k) {
       cs.mSet.setElement(k, mCs.mSet.getElement(k).copy());
     }

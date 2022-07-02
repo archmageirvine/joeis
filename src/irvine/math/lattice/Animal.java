@@ -42,7 +42,6 @@ public class Animal implements Comparable<Animal> {
       mAnimal[k + 1] = mAnimal[k];
     }
     mAnimal[k + 1] = q;
-    Arrays.sort(mAnimal);
     mHashCode = Arrays.hashCode(mAnimal);
   }
 

@@ -20,6 +20,7 @@ public final class Canons {
    * @return translated animal
    */
   public static Animal translate(final Lattice lattice, final Animal animal) {
+    // WARNING: This does not work for every lattice (e.g. hexagonal)
     final int dim = lattice.dimension();
     final long[] min = new long[dim];
     Arrays.fill(min, Long.MAX_VALUE);
@@ -129,7 +130,7 @@ public final class Canons {
    */
   public static final CanonChecker Z2_FREE = animal -> {
     // todo this is pretty ugly needs improvements
-    if (!Z2_ONE_SIDED.isCanonical(animal)) {
+    if (!Z2_ONE_SIDED.isFreeCanonical(animal)) {
       return false;
     }
     final Animal a = translate(Lattices.Z2, animal);

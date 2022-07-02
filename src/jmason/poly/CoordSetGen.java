@@ -119,7 +119,7 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
     return Math.abs(mSet.getWhite() - mSet.getBlack());
   }
 
-  protected abstract String makeUnique();
+  protected abstract String makeUnique(final boolean withColor);
 
   int less() {
     return Math.min(mSet.getWhite(), mSet.getBlack());

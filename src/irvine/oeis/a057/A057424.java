@@ -18,7 +18,7 @@ public class A057424 implements Sequence {
     () -> new Hunter(Lattices.Z2, true) {
       {
         setKeeper((animal, forbidden) -> {
-          if (Canons.Z2_FREE.isCanonical(animal) && Canons.Z2_ONE_DIAGONAL_SYMMETRIC.isCanonical(animal) && animal.countHoles(Lattices.Z2) == 1) {
+          if (Canons.Z2_FREE.isFreeCanonical(animal) && Canons.Z2_ONE_DIAGONAL_SYMMETRIC.isFreeCanonical(animal) && animal.countHoles(Lattices.Z2) == 1) {
             increment(1);
           }
         });

@@ -11,5 +11,5 @@ public interface CanonChecker {
    * @param animal the animal
    * @return true iff the animal is canonical
    */
-  boolean isCanonical(final Animal animal);
+  boolean isFreeCanonical(final Animal animal);
 }

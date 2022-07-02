@@ -14,14 +14,14 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
    * @param c coordinates
    */
   public Polyiamond(final CoordSet2T c) {
-    builder(c, true);
+    builder(c, true, false);
     ((CoordSet2T) mCs).calculate();
   }
 
   // build a polyomino from a coordinate set adding one cell
   Polyiamond(final CoordSet2T c, final int x, final int y) {
     mCs = c.copy(x, y);
-    mUniq = mCs.makeUnique();
+    mUniq = mCs.makeUnique(false);
     ((CoordSet2T) mCs).calculate();
   }
 

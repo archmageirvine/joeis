@@ -8,7 +8,7 @@ import jmason.poly.Polytriamond;
 import jmason.poly.PolytriamondCounter;
 
 /**
- * A057782.
+ * A057782 Building block is trapezoid formed from 3 equilateral triangles; sequence gives number of pieces (polytraps) that can be formed from n such trapezoids.
  * @author Sean A. Irvine
  */
 public class A057782 implements Sequence {

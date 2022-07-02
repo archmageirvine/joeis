@@ -1,6 +1,5 @@
 package jmason.poly;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 
 import irvine.util.Pair;
@@ -83,22 +82,6 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     return mHeight;
   }
 
-  int getMinX() {
-    return mMinX;
-  }
-
-  int getMinY() {
-    return mMinY;
-  }
-
-  int getMaxX() {
-    return mMaxX;
-  }
-
-  int getMaxY() {
-    return mMaxY;
-  }
-
   void setTriangle(final int i, final int x, final int y, final int colour) {
     ((TriangleSet) mSet).setTriangle(i, x, y, colour);
   }
@@ -113,6 +96,17 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     setTriangle(0, 1, 1, Square.BLACK);
     setTriangle(1, 2, 1, Square.BLACK);
     setTriangle(2, 3, 1, Square.BLACK);
+  }
+
+  /** The monohes. */
+  public void initMonohes() {
+    setTriangle(0, 2, 1, Square.BLACK);
+    setTriangle(1, 3, 1, Square.BLACK);
+    setTriangle(2, 4, 1, Square.BLACK);
+    setTriangle(3, 2, 3, Square.WHITE);
+    setTriangle(4, 3, 3, Square.WHITE);
+    setTriangle(5, 4, 3, Square.WHITE);
+    placeInSextant();
   }
 
   private void add(final int i, final int x, final int y) {
@@ -275,32 +269,14 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     return ret;
   }
 
-  String makeColourString() {
-    final StringBuilder ret = new StringBuilder();
-    for (int i = 0; i < mSize; ++i) {
-      final int col = getColour(i);
-      ret.append(CoordSet2.TRANSFORM, col, col + 1);
-    }
-    return ret.toString();
-  }
-
-  protected CoordSet2T aToCs(final ArrayList<int[]> a) {
-    final CoordSet2T cs = makeAnother(a.size());
-    for (int i = 0; i < cs.mSize; ++i) {
-      final int[] pair = a.get(i);
-      cs.mSet.setElement(i, new Triangle(pair[0], pair[1], pair[2]));
-    }
-    return cs;
-  }
-
   @Override
   protected CoordSet2T makeAnother(final int size) {
     return new CoordSet2T(size, mFlagFree, mFlagFixed, mFlagOneSided);
   }
 
   @Override
-  protected String makeUnique() {
-    return new UniqueMaker2T(this).uniqString();
+  protected String makeUnique(final boolean withColor) {
+    return new UniqueMaker2T(this, withColor).uniqString();
   }
 
   /**

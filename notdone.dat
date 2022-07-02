@@ -1894,8 +1894,5 @@ A057608 Maximal size of binary code of length n that corrects one transposition 
 A057617 Order of subgroup bP_{m+1} of group Theta_m of h-cobordism classes of smooth homotopy m-spheres defined by those homotopy m-spheres which bound parallelizable (m+1)-manifolds, where m = 2n+1
 A057657 Maximal size of binary code of length n that corrects one transposition (end-around transposition included).
 A057707 Number of poly-octagon squares: a(n) = number of 'polyominoes' that can be formed by n octagons and n squares (of perimeter 8m and 4m respectively) not counting rotations or reflections such that the resulting objects will fit on the plane that is uniformly tiled by the same size octagons and squares.
-A057712 Number of "polyhes" of order n: a polyhe of order n is obtained by taking a polyhex made of n hexagons (A000228); cutting each of the n hexagons along a diameter and throwing away half that hexagon, in such a way that the remaining figure (made of n half-hexagons) is connected.
-A057724 Number of "polyares" of order n (turning over allowed).
-A057725 Number of "polyares" of order n (turning over not allowed).
 A057749 Prime degrees of absolutely reducible trinomials: primes p such that x^p + x^k + 1 is reducible over GF(2) for all k, p>k>0 [my code not efficient enough]
 A057771 Number of loops (quasigroups with an identity element) of order n.

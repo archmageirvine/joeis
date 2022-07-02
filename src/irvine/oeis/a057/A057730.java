@@ -18,7 +18,7 @@ public class A057730 implements Sequence {
   private final Hunter mHunter = new Hunter(Lattices.Z2, true) {
     {
       setKeeper((animal, forbidden) -> {
-        if (Canons.Z2_FREE.isCanonical(animal)) {
+        if (Canons.Z2_FREE.isFreeCanonical(animal)) {
           final int p = animal.edgePerimeterSize(Lattices.Z2);
           ++mPerimeterCounts[p];
           if (p < mLeastChange) {

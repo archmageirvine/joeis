@@ -35,7 +35,7 @@ public class A338213 implements Sequence {
       final Hunter h = new Hunter(Lattices.Z2, true) {
         {
           setKeeper((animal, forbidden) -> {
-            if (Canons.Z2_FREE.isCanonical(animal)) {
+            if (Canons.Z2_FREE.isFreeCanonical(animal)) {
               ++counts[animal.perimeterSize(Lattices.Z2)];
             }
           });

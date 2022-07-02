@@ -178,6 +178,13 @@ public class CoordSet2 extends CoordSetGen<Square> {
     setSquare(1, Square.opp(0), 0, Square.WHITE);
   }
 
+  void initMonoare() {
+    setSquare(0, 0, 0, Square.BLACK);
+    setSquare(1, 1, 0, Square.BLACK);
+    setSquare(2, 0, 1, Square.WHITE);
+    setSquare(3, 1, 1, Square.WHITE);
+  }
+
 //  public void initSquare(final int dy) {
 //    setSquare(0, 0, dy, Square.BLACK);
 //    setSquare(1, Square.opp(0), Square.opp(0) + dy, Square.BLACK);
@@ -746,7 +753,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     }
 
     final CoordSet2 cs = copy(x, y, -x, Square.opp(y));
-    final String uniq = new UniqueMaker2(cs).uniqString();
+    final String uniq = new UniqueMaker2(cs, false).uniqString(); // todo support color
     if (!h.add(uniq)) {
       return;
     }
@@ -869,8 +876,8 @@ public class CoordSet2 extends CoordSetGen<Square> {
   }
 
   @Override
-  protected String makeUnique() {
-    return new UniqueMaker2(this).uniqString();
+  protected String makeUnique(final boolean withColor) {
+    return new UniqueMaker2(this, withColor).uniqString();
   }
 
   // return true if current object contains any piece of another

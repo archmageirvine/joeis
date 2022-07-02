@@ -130,7 +130,7 @@ public final class Hexagonal {
    * @return true if is in canonical form
    */
   public static boolean isFreeCanonical(final Animal animal) {
-    Animal canon = translate(animal);
+    final Animal canon = translate(animal);
     Animal b = canon;
     // Rotate by 60, 120, 180, 240, 300
     for (int k = 0; k < 5; ++k) {

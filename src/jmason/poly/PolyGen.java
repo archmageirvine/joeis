@@ -12,10 +12,6 @@ public abstract class PolyGen<U extends Element<U>, T extends CoordSetGen<U>> ex
   protected String mUniq;
   protected CoordSetGen<U> mCs;
 
-  boolean odd() {
-    return (size() & 1) == 1;
-  }
-
   int size() {
     return mCs.mSize;
   }

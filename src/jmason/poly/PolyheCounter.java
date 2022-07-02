@@ -7,9 +7,9 @@ import java.util.List;
  * A counter of polyhes.
  * @author Sean A. Irvine
  */
-public class PolyhesCounter {
+public class PolyheCounter {
 
-  private final List<Polyhes> mList = new ArrayList<>();
+  private final List<Polyhe> mList = new ArrayList<>();
   private final UniquenessTester mUt = new UniquenessTester();
   private final Cumulator mCu;
   private final int mMax;
@@ -22,7 +22,7 @@ public class PolyhesCounter {
    * Construct a new counter.
    * @param max size
    */
-  public PolyhesCounter(final int max) {
+  public PolyheCounter(final int max) {
     mCu = new Cumulator("counters", max);
     mMax = max;
   }
@@ -35,22 +35,22 @@ public class PolyhesCounter {
    * @param prevList previous results
    * @param optim optimization flag
    */
-  public void run(final boolean flagFree, final boolean flagFixed, final boolean flagOneSided, final List<Polyhes> prevList, final boolean optim) {
+  public void run(final boolean flagFree, final boolean flagFixed, final boolean flagOneSided, final List<Polyhe> prevList, final boolean optim) {
     if (prevList == null || !optim) {
       final CoordSet2T cs = new CoordSet2T(6, flagFree, flagFixed, flagOneSided);
       cs.initMonohes();
-      count(1, mMax, new Polyhes(cs), optim);
+      count(1, mMax, new Polyhe(cs), optim);
     } else {
-      for (final Polyhes p : prevList) {
+      for (final Polyhe p : prevList) {
         // guarantee of uniqueness
-        for (final Polyhes son : p.listSons()) {
+        for (final Polyhe son : p.listSons()) {
           count(mMax, mMax, son, optim);
         }
       }
     }
   }
 
-  private void count(final int c, final int max, final Polyhes p, final boolean optim) {
+  private void count(final int c, final int max, final Polyhe p, final boolean optim) {
     p.mCs.verify();
     if (!mUt.add(p.mUniq)) {
       return;
@@ -63,13 +63,13 @@ public class PolyhesCounter {
 
     if (c < max) {
       // guarantee of uniqueness
-      for (final Polyhes son : p.listSons( /* onlyIfColour */)) {
+      for (final Polyhe son : p.listSons()) {
         count(c + 1, max, son, optim);
       }
     }
   }
 
-  public List<Polyhes> getList() {
+  public List<Polyhe> getList() {
     return mList;
   }
 }

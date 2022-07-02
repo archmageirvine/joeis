@@ -72,7 +72,7 @@ public class Rot90CornerCounter extends Counter {
         if (onlyForPerim && newcs.perimeterEstimate() > max) {
           continue;
         }
-        final String uniq = new UniqueMaker2(newcs).uniqString();
+        final String uniq = new UniqueMaker2(newcs, false).uniqString(); // todo color support
         if (!mH.add(uniq)) {
           continue;
         }

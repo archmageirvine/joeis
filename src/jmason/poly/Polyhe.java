@@ -5,16 +5,16 @@ import java.util.List;
 import java.util.TreeSet;
 
 /**
- * An integral polyhes.
+ * An integral polyhe.
  * @author Sean A. Irvine
  */
-public class Polyhes extends PolyGen<Triangle, CoordSet2T> {
+public class Polyhe extends PolyGen<Triangle, CoordSet2T> {
 
   /**
-   * Build a polyhes from a coordinate set.
+   * Build a polyhe from a coordinate set.
    * @param c coordinates
    */
-  public Polyhes(final CoordSet2T c) {
+  public Polyhe(final CoordSet2T c) {
     builder(c, true, true);
     ((CoordSet2T) mCs).calculate();
   }
@@ -34,11 +34,11 @@ public class Polyhes extends PolyGen<Triangle, CoordSet2T> {
   };
 
   /**
-   * Build list (without duplicates) of polyhes that can be generated from this polyhes.
+   * Build list (without duplicates) of polyhe that can be generated from this polyhe.
    * @return children
    */
-  public List<Polyhes> listSons() {
-    final ArrayList<Polyhes> list = new ArrayList<>();
+  public List<Polyhe> listSons() {
+    final ArrayList<Polyhe> list = new ArrayList<>();
     final UniquenessTester h = new UniquenessTester();
     final UniquenessTester hc = new UniquenessTester();
 
@@ -59,13 +59,15 @@ public class Polyhes extends PolyGen<Triangle, CoordSet2T> {
     return list;
   }
 
-  private void tryShape(final int i, final int[][] deltas, final int d, final ArrayList<Polyhes> list, final UniquenessTester h, final UniquenessTester hc) {
+  private void tryShape(final int i, final int[][] deltas, final int d, final ArrayList<Polyhe> list, final UniquenessTester h, final UniquenessTester hc) {
 
     //System.out.println("Trying: " + Arrays.deepToString(deltas) + " d=" + d + " on " + this + " at " + mCs.getX(i) + "," + mCs.getY(i));
 
+    final int xi = mCs.getX(i);
+    final int yi = mCs.getY(i);
     for (int k = 0; k < deltas[0].length; ++k) {
-      final int x = mCs.getX(i) + deltas[0][k];
-      final int y = mCs.getY(i) + deltas[1][k] * d;
+      final int x = xi + deltas[0][k];
+      final int y = yi + deltas[1][k] * d;
       if (((CoordSet2T) mCs).exists(x, y)) {
         //System.out.println("Failed on collision");
         return;
@@ -74,8 +76,8 @@ public class Polyhes extends PolyGen<Triangle, CoordSet2T> {
 
     final TreeSet<String> key = new TreeSet<>();
     for (int k = 0; k < deltas[0].length; ++k) {
-      final int x = mCs.getX(i) + deltas[0][k];
-      final int y = mCs.getY(i) + deltas[1][k] * d;
+      final int x = xi + deltas[0][k];
+      final int y = yi + deltas[1][k] * d;
       key.add(x + " " + y + " " + deltas[2][k]);
     }
     if (!hc.add(key.toString())) {
@@ -88,13 +90,13 @@ public class Polyhes extends PolyGen<Triangle, CoordSet2T> {
       cs.mSet.setElement(k, mCs.mSet.getElement(k).copy());
     }
     for (int k = 0; k < deltas[0].length; ++k) {
-      final int x = mCs.getX(i) + deltas[0][k];
-      final int y = mCs.getY(i) + deltas[1][k] * d;
+      final int x = xi + deltas[0][k];
+      final int y = yi + deltas[1][k] * d;
       cs.setTriangle(size + k, x, y, deltas[2][k]);
     }
     cs.placeInSextant();
 
-    final Polyhes p = new Polyhes(cs);
+    final Polyhe p = new Polyhe(cs);
     if (!h.add(p.mUniq)) {
       //System.out.println("Already present");
       return;
@@ -104,7 +106,7 @@ public class Polyhes extends PolyGen<Triangle, CoordSet2T> {
   }
 
   /**
-   * Compute the size of the perimeter of this polyomino.
+   * Compute the size of the perimeter of this polyhe.
    * @return the size of the perimeter
    */
   public int perimeterSize() {
@@ -112,7 +114,7 @@ public class Polyhes extends PolyGen<Triangle, CoordSet2T> {
   }
 
   /**
-   * Compute the size of the edge perimeter of this polyomino.
+   * Compute the size of the edge perimeter of this polyhe.
    * @return the size of the edge perimeter
    */
   public int edgePerimeterSize() {

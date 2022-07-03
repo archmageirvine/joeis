@@ -112,7 +112,6 @@ A002012 Almost trivalent maps, like A002005?
 A002043 Have attempt, recurrence and g.f. in paper does not reproduce numbers, see blog2018.tex
 A002044 Have attempt, recurrence in paper does not reproduce numbers
 A002045 Have attempt, recurrence in paper does not reproduce numbers
-A002060 Sequence is almost certainly erroneous
 A002077 Self-dual functions
 A002078 Depends A000609
 A002079 Self-dual functions
@@ -1716,7 +1715,6 @@ A052478 Discriminants of real quadratic number fields with class number 2 such t
 A052479 Discriminants of real quadratic number fields with class number 2 such that Hilbert class field has splitting field Q(sqrt(17)).
 A052483 Decimal expansion of Hausdorff dimension of Apollonian packing of circles
 A052487 Number of maximal irreducible integral matrix groups in n dimensions.
-A052492 Initial pile sizes that guarantee a win for player 2 in a variant of Fibonacci NIM where the players may not take one stone.
 A052508 Smallest number such that the largest set of positive real numbers whose sum and product equals the number falls short by n
 A053022 Number of subdiagonal directed diagonally-convex animals with given diagonal semiperimeter.
 A053040 Number of self-complementary types of Boolean functions of n variables under action of affine self-dual group M(n,2).

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057784.
+ * A057784 Number of polypons with n cells.
  * @author Sean A. Irvine
  */
 public class A057784 implements Sequence {

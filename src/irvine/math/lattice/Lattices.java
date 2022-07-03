@@ -40,6 +40,9 @@ public final class Lattices {
   public static final Lattice L = new LLattice();
   /** Chess knight. */
   public static final Lattice KNIGHT = new KnightLattice();
+  /** Pon lattice. */
+  public static final Lattice PON = new PonLattice();
+
 
   // Other 3D lattices
 

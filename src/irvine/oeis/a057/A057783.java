@@ -15,14 +15,14 @@ import irvine.oeis.Sequence;
  */
 public class A057783 implements Sequence {
 
-  private static final Lattice H = Lattices.HEXAGONAL;
-  private static final int NEIGHBOURS = H.neighbourCount(H.origin()); // constant for all points in this lattice
+  private static final Lattice L = Lattices.HEXAGONAL;
+  private static final int NEIGHBOURS = L.neighbourCount(L.origin()); // constant for all points in this lattice
   private HashSet<Animal> mCanons = new HashSet<>();
 
   @Override
   public Z next() {
     if (mCanons.isEmpty()) {
-      mCanons.add(new Animal(H.origin(), H.toPoint(2, 0))); // two adjacent hexes
+      mCanons.add(new Animal(L.origin(), L.toPoint(2, 0))); // two adjacent hexes
     } else {
       final HashSet<Animal> newCanons = new HashSet<>();
       final HashSet<Long> tried = new HashSet<>(); // for efficiency only
@@ -35,10 +35,10 @@ public class A057783 implements Sequence {
           // the set of new results.
           tried.add(pt);
           for (int k = 0; k < NEIGHBOURS; ++k) {
-            final long q = H.neighbour(pt, k);
+            final long q = L.neighbour(pt, k);
             if (!a.contains(q)) {
               for (int j = 0; j < NEIGHBOURS; ++j) {
-                final long r = H.neighbour(q, j);
+                final long r = L.neighbour(q, j);
                 if (!tried.contains(r) && !a.contains(r)) {
                   final Animal b = new Animal(new Animal(a, q), r);
                   newCanons.add(Hexagonal.freeCanonical(b));

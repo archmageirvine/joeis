@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(HexagonalTest.class);
     suite.addTestSuite(ManhattanLatticeTest.class);
+    suite.addTestSuite(PonTest.class);
     suite.addTestSuite(SquareLatticeTest.class);
     return suite;
   }

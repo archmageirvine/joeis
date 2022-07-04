@@ -26,7 +26,7 @@ public final class Pon {
   }
 
   /**
-   * Translate points to a canonical position on the pon lattice.
+   * Translate points to a canonical position.
    * @param points points to translate
    * @return translated points
    */
@@ -58,7 +58,7 @@ public final class Pon {
   }
 
   /**
-   * Translate an animal to a canonical position on the pon lattice.
+   * Translate an animal to a canonical position.
    * @param animal animal to translate
    * @return translated animal
    */
@@ -75,7 +75,7 @@ public final class Pon {
     final long[] rotatedPoints = new long[animal.size()];
     int k = 0;
     for (final long point : animal.points()) {
-      rotatedPoints[k++] = Pon.rotate(point);
+      rotatedPoints[k++] = rotate(point);
     }
     return new Animal(translate(rotatedPoints));
   }
@@ -242,7 +242,7 @@ public final class Pon {
         canon = b;
       }
     }
-    b = Pon.reflect(b);
+    b = reflect(b);
     if (canon.compareTo(b) > 0) {
       canon = b;
     }
@@ -253,7 +253,7 @@ public final class Pon {
         canon = b;
       }
     }
-    b = Pon.glideReflect(b);
+    b = glideReflect(b);
     if (canon.compareTo(b) > 0) {
       canon = b;
     }
@@ -264,7 +264,7 @@ public final class Pon {
         canon = b;
       }
     }
-    b = Pon.reflect(b);
+    b = reflect(b);
     if (canon.compareTo(b) > 0) {
       canon = b;
     }

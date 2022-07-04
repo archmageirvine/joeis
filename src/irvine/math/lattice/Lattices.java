@@ -42,6 +42,8 @@ public final class Lattices {
   public static final Lattice KNIGHT = new KnightLattice();
   /** Pon lattice. */
   public static final Lattice PON = new PonLattice();
+  /** Kite lattice. */
+  public static final Lattice KITE = new KiteLattice();
 
 
   // Other 3D lattices

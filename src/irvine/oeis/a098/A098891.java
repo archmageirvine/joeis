@@ -29,7 +29,7 @@ public class A098891 implements Sequence {
       {
         setKeeper((animal, forbidden) -> {
           if (Canons.Z2_FREE.isFreeCanonical(animal)) {
-            mAnimals.add(Canons.freeCanon(animal));
+            mAnimals.add(Lattices.Z2.freeCanonical(animal));
           }
         });
       }

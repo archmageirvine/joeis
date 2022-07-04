@@ -3,7 +3,6 @@ package irvine.oeis.a057;
 import java.util.HashSet;
 
 import irvine.math.lattice.Animal;
-import irvine.math.lattice.Hexagonal;
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
@@ -41,7 +40,7 @@ public class A057783 implements Sequence {
                 final long r = L.neighbour(q, j);
                 if (!tried.contains(r) && !a.contains(r)) {
                   final Animal b = new Animal(new Animal(a, q), r);
-                  newCanons.add(Hexagonal.freeCanonical(b));
+                  newCanons.add(L.freeCanonical(b));
                 }
               }
             }

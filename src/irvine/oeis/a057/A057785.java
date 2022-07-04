@@ -1,6 +1,8 @@
 package irvine.oeis.a057;
 
 import irvine.math.lattice.Animal;
+import irvine.math.lattice.Lattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
 
 /**
@@ -8,6 +10,8 @@ import irvine.math.z.Z;
  * @author Sean A. Irvine
  */
 public class A057785 extends A057784 {
+
+  private static final Lattice L  = Lattices.PON;
 
   private boolean isBlunt(final Animal a, final long x, final long y, final long z) {
     switch ((int) z) {

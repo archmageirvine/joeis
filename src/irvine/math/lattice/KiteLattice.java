@@ -42,4 +42,9 @@ class KiteLattice extends CubicLattice {
   public long distanceBound(final long point) {
     throw new UnsupportedOperationException();
   }
+
+  @Override
+  public Animal freeCanonical(final Animal animal) {
+    return Kite.freeCanonical(animal);
+  }
 }

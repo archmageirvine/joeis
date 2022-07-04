@@ -4,7 +4,7 @@ import irvine.math.lattice.Lattices;
 import irvine.oeis.NaiveHunterSequence;
 
 /**
- * A057784 Number of polypons with n cells.
+ * A057786 Number of polykites with n cells.
  * @author Sean A. Irvine
  */
 public class A057786 extends NaiveHunterSequence {

@@ -6,7 +6,7 @@ import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
 
 /**
- * A057784 Number of polypons with n cells.
+ * A057785 Blunt polypons (no 30-degree angles) with n cells.
  * @author Sean A. Irvine
  */
 public class A057785 extends A057784 {

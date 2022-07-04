@@ -10,7 +10,7 @@ class CubicLattice extends AbstractLattice {
   // Coordinate of a point is (x,y,z).
   // Pack (x,y,z) into a single long with 21-bits per entry.  To avoid
   // having to worry about propagation of negatives, bias each coordinate by
-  // 2^20.  Hence we can deal with lattice extent of roughly 2^20 in any
+  // 2^20.  Hence, we can deal with lattice extent of roughly 2^20 in any
   // direction (an amount that will not be exhausted in a brute force
   // counting of paths, etc.)
   // Neighbours change one coordinate by +/- 1.

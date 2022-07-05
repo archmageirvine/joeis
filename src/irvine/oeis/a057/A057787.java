@@ -7,7 +7,7 @@ import irvine.math.lattice.Lattices;
 import irvine.oeis.NaiveHunterSequence;
 
 /**
- * A057787.
+ * A057787 Number of polyarcs with n cells.
  * @author Sean A. Irvine
  */
 public class A057787 extends NaiveHunterSequence {

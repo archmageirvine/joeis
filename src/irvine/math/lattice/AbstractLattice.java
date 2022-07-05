@@ -57,4 +57,9 @@ public abstract class AbstractLattice implements Lattice {
   public boolean isAdjacentToOrigin(final long point) {
     return isAdjacent(point, origin());
   }
+
+  @Override
+  public Animal freeCanonical(final Animal animal) {
+    throw new UnsupportedOperationException();
+  }
 }

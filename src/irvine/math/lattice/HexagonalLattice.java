@@ -24,4 +24,9 @@ class HexagonalLattice extends SquareLattice {
     final long y = Math.abs(y(point));
     return Math.max(y, x / 2);
   }
+
+  @Override
+  public Animal freeCanonical(final Animal animal) {
+    return Hexagonal.freeCanonical(animal);
+  }
 }

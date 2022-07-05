@@ -106,4 +106,12 @@ public interface Lattice {
    * @return point
    */
   long toPoint(final long... coordinates);
+
+  /**
+   * Return the canonical form of an animal in this lattice up to all
+   * possible symmetries of the lattice.
+   * @param animal the animal
+   * @return canonical form
+   */
+  Animal freeCanonical(Animal animal);
 }

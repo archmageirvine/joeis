@@ -23,7 +23,7 @@ public class A056785 implements Sequence {
   private final Hunter mHunter = new Hunter(Lattices.Z2, false) {
     {
       setKeeper((animal, forbidden) -> {
-        mCanons.add(Canons.freeCanon(Canons.translate(Lattices.Z2, animal)));
+        mCanons.add(Lattices.Z2.freeCanonical(Canons.translate(Lattices.Z2, animal)));
       });
     }
 

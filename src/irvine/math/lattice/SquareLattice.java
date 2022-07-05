@@ -72,4 +72,9 @@ class SquareLattice extends AbstractLattice {
   public long distanceBound(final long point) {
     return Math.abs(x(point)) + Math.abs(y(point));
   }
+
+  @Override
+  public Animal freeCanonical(final Animal animal) {
+    return Canons.freeCanon(animal);
+  }
 }

@@ -1,17 +1,20 @@
 package irvine.math.lattice;
 
+import java.util.Arrays;
+
 /**
- * Support functions for the kite lattice.
+ * Support functions for the arc lattice.
  * @author Sean A. Irvine
  */
-public final class Kite {
+public final class Arc {
 
-  private Kite() {
+  private Arc() {
   }
 
-  private static final Lattice L = Lattices.KITE;
-  private static final long[] ROTATE_Z = {5, 0, 1, 2, 3, 4};
-  private static final long[] REFLECT_Z = {0, 5, 4, 3, 2, 1};
+  private static final Lattice L = Lattices.ARC;
+  private static final long[] ROTATE_Z = {1, 2, 3, 0, 5, 6, 7, 4};
+  private static final long[] REFLECT_Z = {1, 0, 3, 2, 5, 4, 7, 6};
+  private static final long[] REFLECT_DIAG = {0, 3, 2, 1, 4, 7, 6, 5};
 
   /**
    * Rotate the given point by 60 degress anticlockwise.
@@ -22,7 +25,7 @@ public final class Kite {
     final long x = L.ordinate(point, 0);
     final long y = L.ordinate(point, 1);
     final long z = L.ordinate(point, 2);
-    return L.toPoint(-y, x + y, ROTATE_Z[(int) z]);
+    return L.toPoint(-y, x, ROTATE_Z[(int) z]);
   }
 
   /**
@@ -92,33 +95,77 @@ public final class Kite {
       final long x = L.ordinate(point, 0);
       final long y = L.ordinate(point, 1);
       final long z = L.ordinate(point, 2);
-      reflectedPoints[k++] = L.toPoint(-(x + y), y, REFLECT_Z[(int) z]);
+      reflectedPoints[k++] = L.toPoint(-x, y, REFLECT_Z[(int) z]);
     }
     return new Animal(translate(reflectedPoints));
   }
 
+  static Animal handleFullCell(final Animal animal) {
+    // (x,y,1) & (x,y,5) -> (x,y,0) & (x,y,4)
+    // (x,y,2) & (x,y,6) -> (x,y,0) & (x,y,4)
+    // (x,y,3) & (x,y,7) -> (x,y,0) & (x,y,4)
+    boolean needsFixing = false;
+    final long[] pts = animal.points();
+    for (final long pt : pts) {
+      final long z = L.ordinate(pt, 2);
+      if (z == 1 || z == 2 || z == 3) {
+        final long x = L.ordinate(pt, 0);
+        final long y = L.ordinate(pt, 1);
+        final long c = L.toPoint(x, y, z + 4);
+        if (animal.contains(c)) {
+          needsFixing = true;
+          break;
+        }
+      }
+    }
+    if (!needsFixing) {
+      return animal;
+    }
+
+    final long[] newPts = Arrays.copyOf(pts, pts.length);
+    for (int k = 0; k < newPts.length; ++k) {
+      final long pt = newPts[k];
+      final long z = L.ordinate(pt, 2);
+      if (z == 1 || z == 2 || z == 3) {
+        final long x = L.ordinate(pt, 0);
+        final long y = L.ordinate(pt, 1);
+        final long c = L.toPoint(x, y, z + 4);
+        if (animal.contains(c)) {
+          newPts[k] = L.toPoint(x, y, 0);
+          for (int j = 0; j < newPts.length; ++j) {
+            if (newPts[j] == c) {
+              newPts[j] = L.toPoint(x, y, 4);
+              break;
+            }
+          }
+        }
+      }
+    }
+    return new Animal(newPts);
+  }
+
   /**
-   * Test if the given animal is the canonical representation.
+   * Test if the given animal is the canonical representation
    * @param animal the animal
    * @return true if is in canonical form
    */
   public static boolean isFreeCanonical(final Animal animal) {
-    final Animal canon = translate(animal);
+    final Animal canon = handleFullCell(translate(animal));
     Animal b = canon;
-    // Rotate by 60, 120, 180, 240, 300
-    for (int k = 0; k < 5; ++k) {
-      b = rotate(b);
+    // Rotate by 90, 180, 270
+    for (int k = 0; k < 3; ++k) {
+      b = handleFullCell(rotate(b));
       if (canon.compareTo(b) > 0) {
         return false;
       }
     }
-    b = reflect(b);
+    b = handleFullCell(reflect(b));
     if (canon.compareTo(b) > 0) {
       return false;
     }
-    // Rotate by 60, 120, 180, 240, 300
-    for (int k = 0; k < 5; ++k) {
-      b = rotate(b);
+    // Rotate by 90, 180, 270
+    for (int k = 0; k < 3; ++k) {
+      b = handleFullCell(rotate(b));
       if (canon.compareTo(b) > 0) {
         return false;
       }
@@ -132,22 +179,22 @@ public final class Kite {
    * @return canonical form
    */
   public static Animal freeCanonical(final Animal animal) {
-    Animal canon = translate(animal);
+    Animal canon = handleFullCell(translate(animal));
     Animal b = canon;
-    // Rotate by 60, 120, 180, 240, 300
-    for (int k = 0; k < 5; ++k) {
-      b = rotate(b);
+    // Rotate by 90, 180, 270
+    for (int k = 0; k < 3; ++k) {
+      b = handleFullCell(rotate(b));
       if (canon.compareTo(b) > 0) {
         canon = b;
       }
     }
-    b = reflect(b);
+    b = handleFullCell(reflect(b));
     if (canon.compareTo(b) > 0) {
       canon = b;
     }
-    // Rotate by 60, 120, 180, 240, 300
-    for (int k = 0; k < 5; ++k) {
-      b = rotate(b);
+    // Rotate by 90, 180, 270
+    for (int k = 0; k < 3; ++k) {
+      b = handleFullCell(rotate(b));
       if (canon.compareTo(b) > 0) {
         canon = b;
       }

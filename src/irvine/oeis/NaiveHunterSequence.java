@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import java.util.HashSet;
+import java.util.Set;
 
 import irvine.math.lattice.Animal;
 import irvine.math.lattice.Lattice;
@@ -13,17 +14,26 @@ import irvine.math.z.Z;
  */
 public class NaiveHunterSequence implements Sequence {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected final Lattice mL;
-  protected HashSet<Animal> mCanons = new HashSet<>();
+  protected Set<Animal> mCanons = new HashSet<>();
 
   protected NaiveHunterSequence(final Lattice lattice) {
     mL = lattice;
   }
 
+  protected void init(final Set<Animal> animals) {
+    animals.add(new Animal(mL.origin()));
+  }
+
+  protected boolean accept(final Animal animal, final long pt) {
+    return !animal.contains(pt);
+  }
+
   @Override
   public Z next() {
     if (mCanons.isEmpty()) {
-      mCanons.add(new Animal(mL.origin()));
+      init(mCanons);
     } else {
       final HashSet<Animal> newCanons = new HashSet<>();
       final HashSet<Long> tried = new HashSet<>(); // for efficiency only
@@ -32,14 +42,18 @@ public class NaiveHunterSequence implements Sequence {
         for (final long pt : a.points()) {
           for (int k = 0; k < mL.neighbourCount(pt); ++k) {
             final long q = mL.neighbour(pt, k);
-            if (!a.contains(q) && tried.add(q)) {
-              final Animal b = new Animal(a, q);
-              newCanons.add(mL.freeCanonical(b));
+            if (accept(a, q) && tried.add(q)) {
+              newCanons.add(mL.freeCanonical(new Animal(a, q)));
             }
           }
         }
       }
       mCanons = newCanons;
+    }
+    if (mVerbose) {
+      for (final Animal a : mCanons) {
+        System.out.println(a.toString(mL));
+      }
     }
     return Z.valueOf(mCanons.size());
   }

@@ -177,7 +177,7 @@ public final class Pon {
   }
 
   /**
-   * Test if the given animal is the canonical representation
+   * Test if the given animal is the canonical representation.
    * @param animal the animal
    * @return true if is in canonical form
    */
@@ -228,9 +228,9 @@ public final class Pon {
   }
 
   /**
-   * Test if the given animal is the canonical representation
+   * Compute the canonical representation of an animal.
    * @param animal the animal
-   * @return true if is in canonical form
+   * @return canonical form
    */
   public static Animal freeCanonical(final Animal animal) {
     Animal canon = translate(animal);

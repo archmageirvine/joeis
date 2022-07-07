@@ -1,15 +1,16 @@
-package irvine.oeis.a057;
+package irvine.oeis.a355;
 
 import irvine.math.lattice.Animal;
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
+import irvine.oeis.a057.A057784;
 
 /**
  * A057785 Blunt polypons (no 30-degree angles) with n cells.
  * @author Sean A. Irvine
  */
-public class A057785 extends A057784 {
+public class A355562 extends A057784 {
 
   private static final Lattice L  = Lattices.PON;
 

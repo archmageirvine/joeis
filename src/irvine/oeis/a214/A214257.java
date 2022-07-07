@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A214269 Number A(n,k) of compositions of n where the difference between largest and smallest parts is &lt;= k;
+ * A214257 Number A(n,k) of compositions of n where the difference between largest and smallest parts is &lt;= k; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */

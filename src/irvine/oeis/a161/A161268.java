@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.math.z.Fibonacci;
 
 /**
- * A161268 Number of partitions of n into Lucas numbers A000032 where every part appears at least 2 times
+ * A161268 Number of partitions of n into Lucas numbers A000032 where every part appears at least 2 times.
  * @author Georg Fischer
  */
 public class A161268 extends A161026 {

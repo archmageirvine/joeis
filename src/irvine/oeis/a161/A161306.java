@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a006.A006720;
 
 /**
- * A161306 Number of partitions of n into Somos-4 sequence numbers A006720 where every part appears at least 1 times
+ * A161306 Number of partitions of n into Somos-4 sequence numbers A006720 where every part appears at least 1 times.
  * @author Georg Fischer
  */
 public class A161306 extends A161026 {

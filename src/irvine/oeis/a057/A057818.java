@@ -36,7 +36,10 @@ public class A057818 implements Sequence {
 
   @Override
   public Z next() {
-    mLim = 1L << ++mN;
+    if (++mN > 31) {
+      throw new UnsupportedOperationException();
+    }
+    mLim = 1L << mN;
     mFactorable.clear();
     for (int bits = 2; bits <= mN; ++bits) {
       for (long set = (1L << bits) - 1; set < mLim; set = LongUtils.swizzle(set)) {

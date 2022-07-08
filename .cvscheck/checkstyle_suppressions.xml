@@ -68,5 +68,6 @@
     <suppress checks="ParameterNumber" files=".*UserLevelProc.java"/>
     <suppress checks="" files=".*GrammarLexer.java"/>
     <suppress checks="" files=".*GrammarParser.java"/>
+    <suppress checks="" files="org/teherba/*"/>
 </suppressions>
 

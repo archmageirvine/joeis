@@ -39,11 +39,13 @@ public class DifferenceSequence implements Sequence {
    */
   public DifferenceSequence(final Sequence seq) {
     mSeq = seq;
-    mPrev = seq.next();
   }
 
   @Override
   public Z next() {
+    if (mPrev == null) {
+      mPrev = mSeq.next();
+    }
     final Z t = mPrev;
     mPrev = mSeq.next();
     return mPrev.subtract(t);

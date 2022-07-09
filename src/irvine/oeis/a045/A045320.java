@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 
 
 /**
- * A045320 Primes not congruent to 5 mod 7.
+ * A045320 Primes not congruent to 5 (mod 7).
  * @author Georg Fischer
  */
 public class A045320 extends A000040 {

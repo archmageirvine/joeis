@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a010.A010554;
 
 /**
- * A111409 f(f(n+1))-f(f(n)), where f(0)=0, and for m&gt;0, f(m) = phi(m) = A000010(m).
+ * A111409 a(n) = f(f(n+1)) - f(f(n)), where f(0)=0, and for m&gt;0, f(m) = phi(m) = A000010(m).
  * @author Sean A. Irvine
  */
 public class A111409 extends DifferenceSequence {

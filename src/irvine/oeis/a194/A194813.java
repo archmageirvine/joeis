@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a327.A327174;
 
 /**
- * A194813 Number of integers k in [1,n] such that {n*r+k*r} &lt; {n*r-k*r}, where { } = fractional part and r=(1+sqrt(5))/2 (the golden ratio).
+ * A194813 Number of integers k in [1,n] such that {n*r + k*r} &lt; {n*r - k*r}, where { } = fractional part and r = (1+sqrt(5))/2 (the golden ratio).
  * @author Sean A. Irvine
  */
 public class A194813 extends PartialSumSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003418;
 
 /**
- * A056793 Number of divisors of lcm(1,...,n).
+ * A056793 Number of divisors of lcm(1..n).
  * @author Sean A. Irvine
  */
 public class A056793 extends A003418 {

@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A144707 Diagonal sums of Pascal-like triangle A132047.
+ * A144707 Diagonal sums of the triangle A132047.
  * @author Georg Fischer
  */
 public class A144707 extends GeneratingFunctionSequence {

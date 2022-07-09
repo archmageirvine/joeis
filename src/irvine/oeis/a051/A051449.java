@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A051449 Fibered rational knots with n crossings.
+ * A051449 Number of fibered rational knots with n crossings.
  * @author Sean A. Irvine
  */
 public class A051449 extends LinearRecurrence {

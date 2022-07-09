@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007955;
 
 
 /**
- * A325838 Product of divisors of n-th triangular number.
+ * A325838 a(n) is the product of divisors of the n-th triangular number.
  * Formula: <code>a(n) = A007955(A000217(n)).</code>
  * @author Georg Fischer
  */

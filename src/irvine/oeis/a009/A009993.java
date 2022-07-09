@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009993 List of numbers whose decimal digits are in strictly increasing order.
+ * A009993 Numbers whose decimal digits are in strictly increasing order.
  * @author Sean A. Irvine
  */
 public class A009993 implements Sequence {

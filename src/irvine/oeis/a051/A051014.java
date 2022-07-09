@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A051014 Nondividing sets on {1,2,...,n}.
+ * A051014 Number of nondividing sets on {1,2,...,n}.
  * @author Sean A. Irvine
  */
 public class A051014 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.math.z.Z;
 
 /**
- * A036621 Number of 6-ary rooted trees with n nodes and height at most 4.
+ * A036626 Number of 6-ary rooted trees with n nodes and height at most 9.
  * @author Sean A. Irvine
  */
 public class A036626 extends A036606 {

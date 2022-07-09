@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a022.A022158;
 
 /**
- * A083657 a(n)=sum(i=1,n,floor(r*floor(r*i))) where r=sqrt(3).
+ * A083657 a(n) = Sum_{i=1..n} floor(r*floor(r*i)) where r=sqrt(3).
  * @author Sean A. Irvine
  */
 public class A083657 extends PartialSumSequence {

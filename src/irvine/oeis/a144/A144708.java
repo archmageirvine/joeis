@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A144708 a(n)=6^n*(1-4n);.
+ * A144708 a(n) = 6^n * (1-4*n).
  * @author Sean A. Irvine
  */
 public class A144708 extends LinearRecurrence {

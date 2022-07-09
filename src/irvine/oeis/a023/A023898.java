@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023898 Divisor balance of n is an integer.
+ * A023898 Numbers whose divisor balance is an integer.
  * @author Sean A. Irvine
  */
 public class A023898 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057836 Integers with 2 or more consecutive anti-divisors.
+ * A057836 Integers with 2 or more pairs of consecutive anti-divisors.
  * @author Sean A. Irvine
  */
 public class A057836 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A064205 Numbers n such that sigma(n) + tau(n) is a prime.
+ * A064205 Numbers k such that sigma(k) + tau(k) is a prime.
  * @author Sean A. Irvine
  */
 public class A064205 implements Sequence {

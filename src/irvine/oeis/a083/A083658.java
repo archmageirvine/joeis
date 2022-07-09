@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A083658 a(n) = a(n-1) + a(n-2) + gcd(a(n-1),a(n-2)) for n&gt;1, with a(0)=1, a(1)=1.
+ * A083658 a(n) = a(n-1) + a(n-2) + gcd(a(n-1), a(n-2)) for n &gt; 1; a(0)=1, a(1)=1.
  * @author Georg Fischer
  */
 public class A083658 extends GeneratingFunctionSequence {

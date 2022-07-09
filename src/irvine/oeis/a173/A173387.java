@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002822;
 
 /**
- * A173387 The absolute values of n-th prime number minus n-th number k such that 6*k-+1 is twin prime paire.
+ * A173387 The absolute value of n-th prime number minus n-th number k such that 6*k-+1 is a twin prime pair.
  * @author Georg Fischer
  */
 public class A173387 implements Sequence {

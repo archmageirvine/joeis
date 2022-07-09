@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037951 binomial(n,[ (n-3)/2 ]).
+ * A037951 a(n) = binomial(n, floor((n-3)/2)).
  * @author Sean A. Irvine
  */
 public class A037951 implements Sequence {

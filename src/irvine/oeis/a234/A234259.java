@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A234259 Number of (n+1) X (1+1) 0..2 arrays with every 2 X 2 subblock having its diagonal sum differing from its antidiagonal sum by 2 (constant stress 1 X 1 tilings).
+ * A234259 Number of (n+1) X (1+1) 0..2 arrays with every 2 X 2 subblock having its diagonal sum differing from its antidiagonal sum by 2 (constant-stress 1 X 1 tilings).
  * @author Georg Fischer
  */
 public class A234259 extends GeneratingFunctionSequence {

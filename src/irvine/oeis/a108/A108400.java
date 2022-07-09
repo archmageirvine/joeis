@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000178;
 import irvine.oeis.a006.A006125;
 
 /**
- * A108400 a(n) = Product_{k = 0..n} k!*2^k.
+ * A108400 a(n) = Product_{k = 0..n} (2^k * k!).
  * @author Georg Fischer
  */
 public class A108400 implements Sequence {

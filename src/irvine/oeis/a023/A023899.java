@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023899 Integer values of Divisor balance.
+ * A023899 Integer values of divisor balance: Sum_{d divides k} {d / phi(d)} for numbers k in A023898.
  * @author Sean A. Irvine
  */
 public class A023899 implements Sequence {

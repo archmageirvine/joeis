@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a052.A052889;
 
 /**
- * A177255 a(n) = Sum_{j=1..n}j*B(j-1), where B(k) = A000110(k) are the Bell numbers.
+ * A177255 a(n) = Sum_{j=1..n} j*B(j-1), where B(k) = A000110(k) are the Bell numbers.
  * @author Sean A. Irvine
  */
 public class A177255 extends PartialSumSequence {

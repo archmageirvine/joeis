@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A020344 Fib(a(n)) is least Fibonacci number beginning with n.
+ * A020344 Fibonacci(a(n)) is the least Fibonacci number beginning with n.
  * @author Sean A. Irvine
  */
 public class A020344 implements Sequence {

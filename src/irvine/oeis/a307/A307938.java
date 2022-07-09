@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A307938 Number of (undirected) paths in the n-Sieprinski carpet graph.
+ * A307938 Number of (undirected) paths in the n-Sierpi\u0144ski carpet graph.
  *
  * @author Georg Fischer
  */

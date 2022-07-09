@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007947;
 
 
 /**
- * A080400 Largest squarefree number dividing phi of n.
+ * A080400 Largest squarefree number dividing phi(n).
  * Formula: <code>a(n) = A007947(A000010(n)).</code>
  * @author Georg Fischer
  */

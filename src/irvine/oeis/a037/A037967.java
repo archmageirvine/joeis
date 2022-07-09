@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037967 a(n) = (C(2*n,n)^2+C(2*n,n))/2.
+ * A037967 a(n) = (binomial(2*n, n)^2 + binomial(2*n, n))/2.
  * @author Sean A. Irvine
  */
 public class A037967 implements Sequence {

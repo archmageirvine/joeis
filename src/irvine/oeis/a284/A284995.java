@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A284995 Ceiling(Gamma(n/2)).
+ * A284995 a(n) = ceiling(Gamma(n/2)).
  * @author Georg Fischer
  */
 public class A284995 extends FloorSequence {

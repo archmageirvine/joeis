@@ -3,7 +3,7 @@ package irvine.oeis.a345;
 
 import irvine.oeis.recur.HolonomicRecurrence;
 /**
- * A345448 Number of tilings of a 2 X n rectangle with dominos and long L-shaped 4-minos.
+ * A345448 Number of tilings of a 2 X n rectangle with dominoes and long L-shaped 4-minoes.
  * radtorec(1/(-2*x^4-4*x^3-x^2-x+1))
  * @author Georg Fischer
  */

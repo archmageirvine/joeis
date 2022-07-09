@@ -4,7 +4,7 @@ package irvine.oeis.a045;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A045334 Primes congruent to {1, 2, 3, 4, 6} mod 7.
+ * A045334 Primes congruent to {1, 2, 3, 4, 6} (mod 7).
  * @author Georg Fischer
  */
 public class A045334 extends CongruenceForm {

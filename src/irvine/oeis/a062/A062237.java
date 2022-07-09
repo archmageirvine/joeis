@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A062237 Numbers n which are (sum of digits of n) concatenated with (product of digits of n).
+ * A062237 Numbers k which are (sum of digits of k) concatenated with (product of digits of k).
  * @author Georg Fischer
  */
 public class A062237 extends FiniteSequence {

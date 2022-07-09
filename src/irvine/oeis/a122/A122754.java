@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a072.A072003;
 
 /**
- * A122754 10*n-A101306(n).
+ * A122754 a(n) = 10*n - A101306(n).
  * @author Sean A. Irvine
  */
 public class A122754 extends PartialSumSequence {

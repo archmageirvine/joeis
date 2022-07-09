@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A226782 If n=0 (mod 2) then a(n)=0, otherwise a(n)=4^(-1) in Z/nZ*.
+ * A226782 If n == 0 (mod 2) then a(n) = 0, otherwise a(n) = 4^(-1) in Z/nZ*.
  * @author Georg Fischer
  */
 public class A226782 extends GeneratingFunctionSequence {

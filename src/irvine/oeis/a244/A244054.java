@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A244054 Decimal expansion of the maximal circumradius of a planar convex set containing no lattice point except for the origin where it has its circumcenter, and not protuding in opposite directions outside the square max(|x|,|y|) &lt; 1 unless it protudes significantly elsewhere, too.
+ * A244054 Decimal expansion of the maximal circumradius of a planar convex set containing no lattice point except for the origin where it has its circumcenter, and not protruding in opposite directions outside the square max(|x|,|y|) &lt; 1 unless it protrudes significantly elsewhere, too.
  * Equation; 5*x^6-15*x^4+3*x^2-2
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a058.A058061;
 
 /**
- * A079057 a(n)=sum(k=1,n,bigomega(tau(k))).
+ * A079057 a(n) = Sum_{k=1..n} bigomega(tau(k)).
  * @author Sean A. Irvine
  */
 public class A079057 extends PartialSumSequence {

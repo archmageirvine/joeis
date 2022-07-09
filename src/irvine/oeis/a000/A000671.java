@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001190;
 
 /**
- * A000671 Boron trees with n nodes = n-node rooted trees with deg &lt;= 3 at root and out-degree &lt;= 2 elsewhere.
+ * A000671 Number of boron trees with n nodes = n-node rooted trees with deg &lt;= 3 at root and out-degree &lt;= 2 elsewhere.
  * @author Sean A. Irvine
  */
 public class A000671 extends A001190 {

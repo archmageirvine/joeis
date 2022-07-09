@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037980 ( binomial(4*n,2*n)/4-(-1)^n*binomial(2*n,n)/4+(1-(-1)^n)*binomial(2*n,n)^2/4 )/4.
+ * A037980 a(n) = (1/16)*( binomial(4*n, 2*n) - (-1)^n*binomial(2*n, n) + (1-(-1)^n)*binomial(2*n, n)^2 ).
  * @author Sean A. Irvine
  */
 public class A037980 implements Sequence {

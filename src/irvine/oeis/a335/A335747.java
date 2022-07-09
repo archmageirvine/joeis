@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A335747 Number of ways to tile vertically-fault-free 3 X n strip with squares and dominos.
+ * A335747 Number of ways to tile vertically-fault-free 3 X n strip with squares and dominoes.
  * @author Georg Fischer
  */
 public class A335747 extends HolonomicRecurrence {

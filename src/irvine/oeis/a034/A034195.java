@@ -1,7 +1,6 @@
 package irvine.oeis.a034;
 
 import irvine.math.group.SymmetricGroup;
-import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.WreathExponentiation;
 import irvine.math.q.Q;
@@ -14,13 +13,26 @@ import irvine.oeis.Sequence;
  */
 public class A034195 implements Sequence {
 
-  private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
-  private static final CycleIndex Z10 = SymmetricGroup.create(10).cycleIndex();
-  private final Polynomial<Q> mA = WreathExponentiation.exponentiation(Z2, Z10).applyOnePlusXToTheN();
+  private final int mBase;
+  private final int mLength;
+  private Polynomial<Q> mA = null;
   private int mN = -1;
+
+  protected A034195(final int base, final int length) {
+    mBase = base;
+    mLength = length;
+  }
+
+  /** Construct the sequence. */
+  public A034195() {
+    this(2, 10);
+  }
 
   @Override
   public Z next() {
+    if (mA == null) {
+      mA = WreathExponentiation.exponentiation(SymmetricGroup.create(mBase).cycleIndex(), SymmetricGroup.create(mLength).cycleIndex()).applyOnePlusXToTheN();
+    }
     final Z r = mA.coeff(++mN).toZ();
     return r.isZero() ? null : r;
   }

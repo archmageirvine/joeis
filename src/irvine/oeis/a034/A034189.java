@@ -1,15 +1,13 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.FiniteSequence;
-
 /**
- * A034189 Number of binary codes of length 4 with n words.
- * @author Georg Fischer
+ * A034196 Number of binary codes of length 11 with n words.
+ * @author Sean A. Irvine
  */
-public class A034189 extends FiniteSequence {
+public class A034189 extends A034195 {
 
   /** Construct the sequence. */
   public A034189() {
-    super(1, 1, 4, 6, 19, 27, 50, 56, 74, 56, 50, 27, 19, 6, 4, 1, 1);
+    super(2, 4);
   }
 }

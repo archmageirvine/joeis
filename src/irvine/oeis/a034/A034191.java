@@ -1,28 +1,13 @@
 package irvine.oeis.a034;
 
-import irvine.math.group.SymmetricGroup;
-import irvine.math.polynomial.CycleIndex;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.polynomial.WreathExponentiation;
-import irvine.math.q.Q;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 /**
- * A034191 Number of binary codes of length 6 with n words.
+ * A034196 Number of binary codes of length 11 with n words.
  * @author Sean A. Irvine
  */
-public class A034191 implements Sequence {
+public class A034191 extends A034195 {
 
-  private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
-  private static final CycleIndex Z6 = SymmetricGroup.create(6).cycleIndex();
-  private final Polynomial<Q> mA = WreathExponentiation.exponentiation(Z2, Z6).applyOnePlusXToTheN();
-  private int mN = -1;
-
-  @Override
-  public Z next() {
-    final Z r = mA.coeff(++mN).toZ();
-    return r.isZero() ? null : r;
+  /** Construct the sequence. */
+  public A034191() {
+    super(2, 6);
   }
 }
-

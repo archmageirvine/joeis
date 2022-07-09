@@ -43,7 +43,7 @@ public final class Report {
     int pari = 0;
     final LimitedLengthPriorityQueue<String> slowest = new LimitedLengthPriorityQueue<>(10, true);
     for (int a = 1; a < MAX_ID; ++a) {
-      if (a >= 36612 && a <= 36647) { // todo fix these cases!
+      if (a >= 36631 && a <= 36647) { // todo fix these cases!
         continue;
       }
       final String aNumber = SequenceFactory.getCanonicalId("A" + a);

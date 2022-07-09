@@ -10,6 +10,11 @@ import irvine.math.z.Z;
  */
 public class A036646 extends A036606 {
 
+  /** Construct the sequence. */
+  public A036646() {
+    super(6, 0);
+  }
+
   private final Polynomial<Q> mB;
   {
     for (int k = 0; k <= 7; ++k) {
@@ -17,11 +22,6 @@ public class A036646 extends A036606 {
     }
     mB = mA;
     step();
-  }
-
-  @Override
-  protected int ary() {
-    return 6;
   }
 
   @Override

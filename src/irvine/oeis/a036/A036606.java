@@ -41,7 +41,6 @@ public class A036606 implements Sequence {
   }
 
   protected void step() {
-    init();
     if (RING.zero().equals(mA)) {
       mA = RING.one();
     } else {

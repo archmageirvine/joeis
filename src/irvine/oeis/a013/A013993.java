@@ -12,15 +12,10 @@ import irvine.math.z.Z;
  */
 public class A013993 extends A013990 {
 
-  private final Map<Comb, Integer> mCode;
-  private final int[][] mTransitions;
+  private Map<Comb, Integer> mCode = null;
+  private int[][] mTransitions = null;
   private Z[] mCounts = null;
   private int mN = -1;
-  {
-    final Collection<Comb> combs = combs(height() + 1);
-    mCode = combToCode(combs);
-    mTransitions = packTransitions(mCode, successors(mCode, combs, height() + 1));
-  }
 
   protected int height() {
     return 4;
@@ -29,6 +24,9 @@ public class A013993 extends A013990 {
   @Override
   public Z next() {
     if (++mN <= 0) {
+      final Collection<Comb> combs = combs(height() + 1);
+      mCode = combToCode(combs);
+      mTransitions = packTransitions(mCode, successors(mCode, combs, height() + 1));
       mCounts = new Z[mCode.size()];
       Arrays.fill(mCounts, Z.ZERO);
       mCounts[mCode.get(new Comb(0))] = Z.ONE;

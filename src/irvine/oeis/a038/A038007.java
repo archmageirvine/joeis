@@ -9,11 +9,15 @@ import irvine.oeis.a033.A033178;
  */
 public class A038007 extends A033178 {
 
-  private Z mA = super.next();
-  private Z mB = super.next();
+  private Z mA = null;
+  private Z mB = null;
 
   @Override
   public Z next() {
+    if (mA == null) {
+      mA = super.next();
+      mB = super.next();
+    }
     while (true) {
       final Z t = mA;
       mA = mB;

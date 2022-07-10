@@ -6,7 +6,7 @@ import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A003216 Number of Hamiltonian graphs with n nodes.
+ * A057865 Number of simple Hamilton-connected graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A057865 extends ParallelGenerateGraphsSequence {

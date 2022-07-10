@@ -6,7 +6,7 @@ import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A003216 Number of Hamiltonian graphs with n nodes.
+ * A057864 Number of simple traceable graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A057864 extends ParallelGenerateGraphsSequence {

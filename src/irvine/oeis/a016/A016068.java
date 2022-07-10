@@ -1,16 +1,15 @@
 package irvine.oeis.a016;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A016068 Inverse of 2059th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A016068 extends PeriodicSequence {
+public class A016068 extends A007273 {
 
   /** Construct the sequence. */
   public A016068() {
-    super(Cyclotomic.inverse(2059));
+    super(2059);
   }
 }

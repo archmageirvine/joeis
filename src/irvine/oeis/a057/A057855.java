@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
 /**
- * A057853.
+ * A057855 Greatest k such that (k-th prime) &lt;= (n times n-th prime).
  * @author Sean A. Irvine
  */
 public class A057855 extends A000040 {

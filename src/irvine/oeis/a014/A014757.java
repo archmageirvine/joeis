@@ -1,16 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A014757 Inverse of 748th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A014757 extends PeriodicSequence {
+public class A014757 extends A007273 {
 
   /** Construct the sequence. */
   public A014757() {
-    super(Cyclotomic.inverse(748));
+    super(748);
   }
 }

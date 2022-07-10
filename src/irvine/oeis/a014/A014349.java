@@ -1,16 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A014349 Inverse of 340th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A014349 extends PeriodicSequence {
+public class A014349 extends A007273 {
 
   /** Construct the sequence. */
   public A014349() {
-    super(Cyclotomic.inverse(340));
+    super(340);
   }
 }

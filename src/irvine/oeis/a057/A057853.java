@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Esperanto;
 
 /**
- * A057853.
+ * A057853 Number of letters in n (in Esperanto).
  * @author Sean A. Irvine
  */
 public class A057853 implements Sequence {

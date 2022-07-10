@@ -1,15 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A014038 Inverse of 29th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A014038 extends PeriodicSequence {
+public class A014038 extends A007273 {
 
   /** Construct the sequence. */
   public A014038() {
-    super(1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+    super(29);
   }
 }

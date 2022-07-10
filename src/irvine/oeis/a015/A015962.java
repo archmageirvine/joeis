@@ -1,16 +1,15 @@
 package irvine.oeis.a015;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A015962 Inverse of 1953rd cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A015962 extends PeriodicSequence {
+public class A015962 extends A007273 {
 
   /** Construct the sequence. */
   public A015962() {
-    super(Cyclotomic.inverse(1953));
+    super(1953);
   }
 }

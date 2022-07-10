@@ -1,16 +1,15 @@
 package irvine.oeis.a015;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A015941 Inverse of 1932nd cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A015941 extends PeriodicSequence {
+public class A015941 extends A007273 {
 
   /** Construct the sequence. */
   public A015941() {
-    super(Cyclotomic.inverse(1932));
+    super(1932);
   }
 }

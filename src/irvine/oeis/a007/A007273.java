@@ -11,13 +11,23 @@ import irvine.oeis.Sequence;
  */
 public class A007273 implements Sequence {
 
+  private final int mN;
   private Polynomial<Z> mA = null;
   private int mM = -1;
+
+  protected A007273(final int n) {
+    mN = n;
+  }
+
+  /** Construct the sequence. */
+  public A007273() {
+    this(1155);
+  }
 
   @Override
   public Z next() {
     if (mA == null) {
-      mA = Cyclotomic.inverse(1155);
+      mA = Cyclotomic.inverse(mN);
     }
     if (++mM > mA.degree()) {
       mM = 0;

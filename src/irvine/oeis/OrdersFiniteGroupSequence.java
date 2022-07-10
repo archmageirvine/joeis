@@ -7,10 +7,12 @@ import irvine.util.array.DynamicLongArray;
 /**
  * The number of elements of each order in a finite group.
  * @author Sean A. Irvine
+ * @param <T> underlying element type
  */
-public class OrdersFiniteGroupSequence implements Sequence {
+public class OrdersFiniteGroupSequence<T> implements Sequence {
 
-  private final DynamicLongArray mA = new DynamicLongArray();
+  private final Group<T> mGroup;
+  private DynamicLongArray mA = null;
   private int mN = 1;
 
   /**
@@ -18,15 +20,19 @@ public class OrdersFiniteGroupSequence implements Sequence {
    * @param group the group to get counts for
    * @param <T> the type of the group
    */
-  public <T> OrdersFiniteGroupSequence(final Group<T> group) {
-    for (final T e : group) {
-      final int order = group.order(e).intValueExact();
-      mA.set(order, mA.get(order) + 1);
-    }
+  public OrdersFiniteGroupSequence(final Group<T> group) {
+    mGroup = group;
   }
 
   @Override
   public Z next() {
+    if (mA == null) {
+      mA = new DynamicLongArray();
+      for (final T e : mGroup) {
+        final int order = mGroup.order(e).intValueExact();
+        mA.set(order, mA.get(order) + 1);
+      }
+    }
     return mN < mA.length() ? Z.valueOf(mA.get(mN++)) : null;
   }
 }

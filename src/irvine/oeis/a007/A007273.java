@@ -1,16 +1,27 @@
 package irvine.oeis.a007;
 
+import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.Sequence;
 
 /**
  * A007273 Inverse of 1155th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A007273 extends PeriodicSequence {
+public class A007273 implements Sequence {
 
-  /** Construct the sequence. */
-  public A007273() {
-    super(Cyclotomic.inverse(1155));
+  private Polynomial<Z> mA = null;
+  private int mM = -1;
+
+  @Override
+  public Z next() {
+    if (mA == null) {
+      mA = Cyclotomic.inverse(1155);
+    }
+    if (++mM > mA.degree()) {
+      mM = 0;
+    }
+    return mA.coeff(mM);
   }
 }

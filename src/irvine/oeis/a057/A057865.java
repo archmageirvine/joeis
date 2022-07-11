@@ -32,7 +32,7 @@ public class A057865 extends ParallelGenerateGraphsSequence {
 
   private boolean isHamiltonianPath(final Graph graph) {
     final int n = graph.order();
-    if (n == 1) {
+    if (n <= 2) {
       return true;
     }
     if (!graph.isHamiltonian()) {

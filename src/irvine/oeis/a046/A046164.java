@@ -38,6 +38,7 @@ public class A046164 extends A343146 {
 
   @Override
   public Z next() {
+    init();
     mCount = 0;
     mN += 2;
     search(mStateToId.get(START_STATE), mN);

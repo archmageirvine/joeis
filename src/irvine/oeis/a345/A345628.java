@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 public class A345628 implements Sequence {
 
   private int mN = 2;
-  private OrdersFiniteGroupSequence mSeq = new OrdersFiniteGroupSequence(new DicyclicGroup(2));
+  private OrdersFiniteGroupSequence<?> mSeq = new OrdersFiniteGroupSequence<>(new DicyclicGroup(2));
 
   @Override
   public Z next() {
@@ -21,7 +21,7 @@ public class A345628 implements Sequence {
       return t;
     }
     // Step to next row and group
-    mSeq = new OrdersFiniteGroupSequence(new DicyclicGroup(++mN));
+    mSeq = new OrdersFiniteGroupSequence<>(new DicyclicGroup(++mN));
     return mSeq.next();
   }
 }

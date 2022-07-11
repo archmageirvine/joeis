@@ -4,7 +4,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.a060.A060352;
 
 /**
- * A242274 Numbers n such that n*3^n - 1 is semiprime.
+ * A242274 Numbers k such that k*3^k - 1 is semiprime.
  * @author Sean A. Irvine
  */
 public class A242274 extends SemiprimeSequence {

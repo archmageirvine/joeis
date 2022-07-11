@@ -6,7 +6,7 @@ package irvine.oeis.a329;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A329516 G.f. = (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
+ * A329516 Expansion of (x^4 - x^3 - 3*x^2 - 2*x - 1)/(x - 1).
  * @author Georg Fischer
  */
 public class A329516 extends GeneratingFunctionSequence {

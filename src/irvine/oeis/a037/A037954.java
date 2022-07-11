@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037954 C(n,[ (n-7)/2 ]).
+ * A037954 a(n) = binomial(n, floor((n-7)/2)).
  * @author Sean A. Irvine
  */
 public class A037954 implements Sequence {

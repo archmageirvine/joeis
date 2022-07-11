@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A201760 Decimal expansion of the greatest x satisfying -x^2+6=e^x.
+ * A201760 Decimal expansion of the greatest x satisfying -x^2+6 = e^x.
  * Equation; -x^2+6-(e^x)
  * @author Georg Fischer
  */

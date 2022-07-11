@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.math.z.Binomial;
 
 /**
- * A161240 Number of partitions of n into central binomial coefficients A001405 where every part appears at least 1 times.
+ * A161240 Number of partitions of n into central binomial coefficients A001405.
  * @author Georg Fischer
  */
 public class A161240 extends A161026 {

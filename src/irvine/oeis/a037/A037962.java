@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037962 (n+4)!*n*(15*n^3+30*n^2+5*n-2)/5760.
+ * A037962 a(n) = n*(15*n^3 + 30*n^2 + 5*n - 2)*(n+4)!/5760.
  * @author Sean A. Irvine
  */
 public class A037962 implements Sequence {

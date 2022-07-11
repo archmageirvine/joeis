@@ -4,7 +4,7 @@ import irvine.math.IntegerUtils;
 import irvine.oeis.a000.A000595;
 
 /**
- * A001377 Relations with 4 arguments on n nodes.
+ * A001377 Number of relations with 4 arguments on n nodes.
  * @author Sean A. Irvine
  */
 public class A001377 extends A000595 {

@@ -1,16 +1,15 @@
 package irvine.oeis.a015;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A015274 Inverse of 1265th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A015274 extends PeriodicSequence {
+public class A015274 extends A007273 {
 
   /** Construct the sequence. */
   public A015274() {
-    super(Cyclotomic.inverse(1265));
+    super(1265);
   }
 }

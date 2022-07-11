@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037963 (n+5)!*n^2*(n+1)*(3*n^2+7*n-2)/11520.
+ * A037963 a(n) = n^2*(n+1)*(3*n^2 + 7*n - 2)*(n+5)!/11520.
  * @author Sean A. Irvine
  */
 public class A037963 implements Sequence {

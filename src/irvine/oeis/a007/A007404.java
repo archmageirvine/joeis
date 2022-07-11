@@ -10,16 +10,23 @@ import irvine.oeis.cons.DecimalExpansionSequence;
  */
 public class A007404 extends DecimalExpansionSequence {
 
-  private static CR build() {
-    CR n = CR.HALF;
-    for (int k = 1; k < 31; ++k) {
-      n = n.add(CR.valueOf(Z.ONE.shiftLeft(1 << k)).inverse());
-    }
-    return n;
-  }
-
   /** Construct the sequence. */
   public A007404() {
-    super(build());
+    super(new CR() {
+      @Override
+      protected Z approximate(final int precision) {
+        final Z one = CR.ONE.getApprox(precision);
+        Z sum = one.divide2(); // 1/2
+        int k = 0;
+        while (true) {
+          final Z t = one.divide(Z.ONE.shiftLeft(1 << ++k));
+          if (t.isZero()) {
+            break;
+          }
+          sum = sum.add(t);
+        }
+        return sum;
+      }
+    });
   }
 }

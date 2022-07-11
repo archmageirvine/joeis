@@ -1,16 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A014669 Inverse of 660th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A014669 extends PeriodicSequence {
+public class A014669 extends A007273 {
 
   /** Construct the sequence. */
   public A014669() {
-    super(Cyclotomic.inverse(660));
+    super(660);
   }
 }

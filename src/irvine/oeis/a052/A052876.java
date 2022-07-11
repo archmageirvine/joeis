@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052876 A simple grammar.
+ * A052876 Expansion of e.g.f. (exp(x)-1)^2/(-2+exp(x))^2.
  * E.g.f.: (exp(x)-1)^2/(-2+exp(x))^2
  * @author Georg Fischer
  */

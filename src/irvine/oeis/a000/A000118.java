@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000118 Number of ways of writing n as a sum of 4 squares; also theta series of lattice Z^4.
+ * A000118 Number of ways of writing n as a sum of 4 squares; also theta series of four-dimensional cubic lattice Z^4.
  * @author Sean A. Irvine
  */
 public class A000118 implements Sequence {

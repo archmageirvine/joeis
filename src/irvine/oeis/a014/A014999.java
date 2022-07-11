@@ -1,16 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A014999 Inverse of 990th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A014999 extends PeriodicSequence {
+public class A014999 extends A007273 {
 
   /** Construct the sequence. */
   public A014999() {
-    super(Cyclotomic.inverse(990));
+    super(990);
   }
 }

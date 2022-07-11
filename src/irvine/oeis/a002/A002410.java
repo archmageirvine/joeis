@@ -102,12 +102,15 @@ public class A002410 implements Sequence {
     return table;
   }
 
-  private static final double[][] TABLE_C = initTableC();
+  private static double[][] sTableC = null;
 
   // C coeff for Riemann-Siegel formula
   private static double coeff(final int n, final double z) {
+    if (sTableC == null) {
+      sTableC = initTableC();
+    }
     final double z2 = z * z;
-    final double[] table = TABLE_C[n];
+    final double[] table = sTableC[n];
     double s = 0;
     double p = (n & 1) != 0 ? z : 1;
     for (final double k : table) {

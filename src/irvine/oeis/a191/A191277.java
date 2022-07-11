@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A191277 E.g.f. 1/(1-sinh(x)*cosh(x)).
+ * A191277 Expansion of e.g.f. 1/(1 - sinh(x)*cosh(x)).
  * E.g.f.: 1/(1-sinh(x)*cosh(x))
  * @author Georg Fischer
  */

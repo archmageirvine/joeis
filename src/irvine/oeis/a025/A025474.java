@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A025474 Exponent of n-th prime power (A000961).
+ * A025474 Exponent of the n-th prime power A000961(n).
  * @author Sean A. Irvine
  */
 public class A025474 extends A000961 {

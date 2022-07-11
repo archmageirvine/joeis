@@ -6,7 +6,7 @@ package irvine.oeis.a144;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A144706 Central coefficients of Pascal-like triangle A132047.
+ * A144706 Central coefficients of the triangle A132047.
  * @author Georg Fischer
  */
 public class A144706 extends HolonomicRecurrence {

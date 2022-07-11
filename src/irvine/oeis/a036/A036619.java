@@ -1,12 +1,21 @@
 package irvine.oeis.a036;
 
+import irvine.math.z.Z;
+
 /**
  * A036619 Number of 5-ary rooted trees with n nodes and height at most 8.
  * @author Sean A. Irvine
  */
-public class A036619 extends A036618 {
+public class A036619 extends A036606 {
 
-  {
-    step();
+  /** Construct the sequence. */
+  public A036619() {
+    super(5, 9);
+  }
+
+  @Override
+  public Z next() {
+    init();
+    return mM >= mA.degree() ? null : mA.coeff(mM++).toZ();
   }
 }

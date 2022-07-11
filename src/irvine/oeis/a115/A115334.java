@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.prime.PrimeConditionListSequence;
 
 /**
- * A115334 Numbers n such that 3+2n and 3+4n are primes.
+ * A115334 Numbers d &gt; 0 such that 3+2d and 3+4d are primes.
  * @author Georg Fischer
  */
 public class A115334 extends PrimeConditionListSequence {

@@ -1,16 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A014863 Inverse of 854th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A014863 extends PeriodicSequence {
+public class A014863 extends A007273 {
 
   /** Construct the sequence. */
   public A014863() {
-    super(Cyclotomic.inverse(854));
+    super(854);
   }
 }

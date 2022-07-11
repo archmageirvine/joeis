@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A191422 E.g.f. (1 + x + x^2)^x.
+ * A191422 Expansion of e.g.f. (1 + x + x^2)^x.
  * E.g.f.: (1 + x + x^2)^x
  * @author Georg Fischer
  */

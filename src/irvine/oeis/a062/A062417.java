@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A062417 Integer part of log(n!)^((1 - 1/n)^1/n).
+ * A062417 Integer part of log(n!)^((1 - 1/n)^(1/n)).
  * @author Georg Fischer
  */
 public class A062417 implements Sequence {

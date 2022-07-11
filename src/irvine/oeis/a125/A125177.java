@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A125177 Triangle read by rows: T(n,0)=C(2n,n)/(n+1) for n&gt;=0; T(0,k)=0 for k&gt;=1; T(n,k)=T(n-1,k)+T(n-1,k-1) for n&gt;=1, k&gt;=1.
+ * A125177 Triangle read by rows: T(n,0)=C(2n,n)/(n+1) for n&gt;=0; T(n,n+1)=0; T(n,k)=T(n-1,k)+T(n-1,k-1) for 1&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A125177 extends Triangle {

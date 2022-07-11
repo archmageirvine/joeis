@@ -1,16 +1,15 @@
 package irvine.oeis.a014;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A014849 Inverse of 840th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A014849 extends PeriodicSequence {
+public class A014849 extends A007273 {
 
   /** Construct the sequence. */
   public A014849() {
-    super(Cyclotomic.inverse(840));
+    super(840);
   }
 }

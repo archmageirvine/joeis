@@ -1,15 +1,23 @@
 package irvine.oeis.a036;
 
-import irvine.oeis.FiniteSequence;
+import java.util.TreeSet;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A036330 Composite numbers n such that juxtaposition of prime factors of n has length 6.
  * @author Sean A. Irvine
  */
-public class A036330 extends FiniteSequence {
+public class A036330 implements Sequence {
 
-  /** Construct the sequence. */
-  public A036330() {
-    super(A036328.build(6));
+  private TreeSet<Z> mA = null;
+
+  @Override
+  public Z next() {
+    if (mA == null) {
+      mA = A036328.build(6);
+    }
+    return mA.isEmpty() ? null : mA.pollFirst();
   }
 }

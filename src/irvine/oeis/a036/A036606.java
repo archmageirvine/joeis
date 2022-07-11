@@ -16,12 +16,28 @@ import irvine.oeis.Sequence;
 public class A036606 implements Sequence {
 
   protected static final PolynomialRing<Q> RING = new PolynomialRing<>(Rationals.SINGLETON);
-  private final CycleIndex mSym = SymmetricGroup.create(ary()).cycleIndex();
-  protected Polynomial<Q> mA = RING.zero();
+  private final CycleIndex mSym;
+  private final int mHeight;
+  protected Polynomial<Q> mA = null;
   protected int mM = 0;
 
-  protected int ary() {
-    return 4;
+  protected A036606(final int ary, final int height) {
+    mHeight = height;
+    mSym = SymmetricGroup.create(ary).cycleIndex();
+  }
+
+  /** Construct the sequence. */
+  public A036606() {
+    this(4, 0);
+  }
+
+  protected void init() {
+    if (mA == null) {
+      mA = RING.zero();
+      for (int h = 0; h < mHeight; ++h) {
+        step();
+      }
+    }
   }
 
   protected void step() {
@@ -35,6 +51,7 @@ public class A036606 implements Sequence {
 
   @Override
   public Z next() {
+    init();
     if (++mM > mA.degree()) {
       step();
     }

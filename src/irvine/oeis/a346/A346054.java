@@ -3,7 +3,7 @@ package irvine.oeis.a346;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A346054 Number of ways to tile a 3 X n strip with dominos, and L-shaped 5-minos.
+ * A346054 Number of ways to tile a 3 X n strip with dominoes and L-shaped 5-minoes.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

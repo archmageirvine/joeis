@@ -7,7 +7,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 
 /**
- * A334396 Number of fault-free tilings of a 3 X n rectangle with squares and dominos.
+ * A334396 Number of fault-free tilings of a 3 X n rectangle with squares and dominoes.
  * @author Georg Fischer
  */
 public class A334396 extends HolonomicRecurrence {

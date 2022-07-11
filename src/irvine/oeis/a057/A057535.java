@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A057535 Numbers expressible as (a^2 - 1)(b^2 - 1) in 5 distinct ways.
+ * A057535 Numbers expressible as (a^2 - 1)*(b^2 - 1) in 5 distinct ways.
  * @author Sean A. Irvine
  */
 public class A057535 implements Sequence {

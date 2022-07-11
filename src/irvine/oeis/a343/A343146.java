@@ -52,37 +52,40 @@ public class A343146 implements Sequence {
   }
 
   protected final Map<Long, Integer> mStateToId = new HashMap<>();
-  protected final int[][] mTransitions;
-  protected final int mTargetId;
+  protected int[][] mTransitions = null;
+  protected int mTargetId = 0;
   private Z[] mCounts;
-  {
-    // Precompute all possible transitions
-    // Assign each possible state a unique id
-    final Permutation perm = new Permutation(9);
-    int[] p;
-    while ((p = perm.next()) != null) {
-      long s = 0;
-      for (final int v : p) {
-        s <<= BITS_PER_CELL;
-        s += v;
+
+  protected void init() {
+    if (mTransitions == null) {
+      // Precompute all possible transitions
+      // Assign each possible state a unique id
+      final Permutation perm = new Permutation(9);
+      int[] p;
+      while ((p = perm.next()) != null) {
+        long s = 0;
+        for (final int v : p) {
+          s <<= BITS_PER_CELL;
+          s += v;
+        }
+        mStateToId.put(s, mStateToId.size());
       }
-      mStateToId.put(s, mStateToId.size());
-    }
-    mTargetId = mStateToId.get(targetState());
-    // Compute transition matrix between states
-    mTransitions = new int[mStateToId.size()][];
-    for (final Map.Entry<Long, Integer> e : mStateToId.entrySet()) {
-      final long s = e.getKey();
-      final int id = e.getValue();
-      final int empty = findEmpty(s);
-      mTransitions[id] = new int[MOVE_DELTAS[empty].length];
-      for (int k = 0; k < MOVE_DELTAS[empty].length; ++k) {
-        final long delta = MOVE_DELTAS[empty][k];
-        final long dmask = CELL_MASK << (BITS_PER_CELL * (empty + delta));
-        final long clear = s & ~dmask;
-        final long set = s & dmask;
-        final long shift = delta > 0 ? set >>> (BITS_PER_CELL * delta) : set << (BITS_PER_CELL * -delta);
-        mTransitions[id][k] = mStateToId.get(clear + shift);
+      mTargetId = mStateToId.get(targetState());
+      // Compute transition matrix between states
+      mTransitions = new int[mStateToId.size()][];
+      for (final Map.Entry<Long, Integer> e : mStateToId.entrySet()) {
+        final long s = e.getKey();
+        final int id = e.getValue();
+        final int empty = findEmpty(s);
+        mTransitions[id] = new int[MOVE_DELTAS[empty].length];
+        for (int k = 0; k < MOVE_DELTAS[empty].length; ++k) {
+          final long delta = MOVE_DELTAS[empty][k];
+          final long dmask = CELL_MASK << (BITS_PER_CELL * (empty + delta));
+          final long clear = s & ~dmask;
+          final long set = s & dmask;
+          final long shift = delta > 0 ? set >>> (BITS_PER_CELL * delta) : set << (BITS_PER_CELL * -delta);
+          mTransitions[id][k] = mStateToId.get(clear + shift);
+        }
       }
     }
   }
@@ -105,6 +108,7 @@ public class A343146 implements Sequence {
 
   @Override
   public Z next() {
+    init();
     if (mCounts == null) {
       mCounts = new Z[mTransitions.length];
       Arrays.fill(mCounts, Z.ZERO);

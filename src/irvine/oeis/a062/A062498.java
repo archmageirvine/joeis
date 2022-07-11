@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A062498 Integer part of (Product((n - i)^(1 + log(i)), {i, 1, n - 1})).
+ * A062498 Integer part of Product_{j=1..n-1} (n-j)^(1 + log(j)).
  * @author Georg Fischer
  */
 public class A062498 implements Sequence {

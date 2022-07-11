@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036915 Sum_{k=0..n} C(2*n-2*k,n-k)^2 * C(2*n,k)^2.
+ * A036915 a(n) = Sum_{k=0..n} C(2*n-2*k,n-k)^2 * C(2*n,k)^2.
  * @author Sean A. Irvine
  */
 public class A036915 implements Sequence {

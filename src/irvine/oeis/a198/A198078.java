@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A198078 Round((n+1/4)^n).
+ * A198078 a(n) = round((n+1/4)^n).
  * @author Georg Fischer
  */
 public class A198078 extends FloorSequence {

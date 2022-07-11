@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A221942 Floor(sqrt(5*2^n)).
+ * A221942 a(n) = floor(sqrt(5*2^n)).
  * @author Georg Fischer
  */
 public class A221942 extends FloorSequence {

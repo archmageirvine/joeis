@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A062418 Nearest integer to log(n!)^((1 - 1/n)^1/n).
+ * A062418 Nearest integer to log(n!)^((1 - 1/n)^(1/n)).
  * @author Georg Fischer
  */
 public class A062418 implements Sequence {

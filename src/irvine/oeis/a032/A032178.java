@@ -7,7 +7,7 @@ import irvine.oeis.transform.GeneralizedEulerTransform;
 
 
 /**
- * A032178 Functions of n points with no fixed points and with no symmetries.
+ * A032178 Number of functions of n points with no fixed points and with no symmetries.
  * G.f.: <code>Product_{k&gt;=1} ((1+x^k)^A032177(k))</code>
  * @author Georg Fischer
  */

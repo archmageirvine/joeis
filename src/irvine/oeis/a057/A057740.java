@@ -22,7 +22,7 @@ public class A057740 implements Sequence {
       if (++mN == 1) {
         return Z.ONE;
       }
-      mSeq = new OrdersFiniteGroupSequence(new AlternatingGroup<>(new IntegersMod(mN)));
+      mSeq = new OrdersFiniteGroupSequence<>(new AlternatingGroup<>(new IntegersMod(mN)));
       t = mSeq.next();
     }
     return t;

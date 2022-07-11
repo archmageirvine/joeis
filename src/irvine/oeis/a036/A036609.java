@@ -8,14 +8,14 @@ import irvine.math.z.Z;
  */
 public class A036609 extends A036606 {
 
-  {
-    for (int k = 0; k <= 4; ++k) {
-      step();
-    }
+  /** Construct the sequence. */
+  public A036609() {
+    super(4, 5);
   }
 
   @Override
   public Z next() {
+    init();
     return mM >= mA.degree() ? null : mA.coeff(mM++).toZ();
   }
 }

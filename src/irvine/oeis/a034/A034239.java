@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
 /**
- * A034196 Number of binary codes of length 11 with n words.
+ * A034239 Number of quaternary codes of length 8 with n words.
  * @author Sean A. Irvine
  */
 public class A034239 extends A034195 {

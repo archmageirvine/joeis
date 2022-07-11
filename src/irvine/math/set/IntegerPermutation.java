@@ -26,7 +26,7 @@ public class IntegerPermutation implements Comparable<IntegerPermutation> {
     return r;
   }
 
-  private int[] mPerm;
+  private final int[] mPerm;
 
   /**
    * Create a permutation starting from a 1-based representation

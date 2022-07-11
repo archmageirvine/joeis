@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037972 a(n) = n^2*(n+1)*C(2*n-2,n-1)/2.
+ * A037972 a(n) = n^2*(n+1)*binomial(2*n-2, n-1)/2.
  * @author Sean A. Irvine
  */
 public class A037972 implements Sequence {

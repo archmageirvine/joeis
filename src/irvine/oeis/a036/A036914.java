@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036914 a(n) = C(2*n,n)*C(3*n,2*n)^4.
+ * A036914 a(n) = binomial(2*n,n)*binomial(3*n,2*n)^4.
  * @author Sean A. Irvine
  */
 public class A036914 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036561 Triangle of numbers in which i-th row is {2^(i-j)*3^j, 0&lt;=j&lt;=i}; i &gt;= 0.
+ * A036561 Nicomachus triangle read by rows, T(n, k) = 2^(n - k)*3^k, for 0 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A036561 implements Sequence {

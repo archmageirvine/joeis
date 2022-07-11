@@ -6,7 +6,7 @@ package irvine.oeis.a037;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A037960 a(n) = (n+2)!*n*(3*n+1)/24.
+ * A037960 a(n) = n*(3*n+1)*(n+2)!/24.
  * @author Georg Fischer
  */
 public class A037960 extends HolonomicRecurrence {

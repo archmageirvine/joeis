@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a130.A130638;
 
 /**
- * A074802 Number of numbers k &lt;= n such that tau(k)=tau(k+1) where tau(x)=A000005(x) is the number of divisors of x.
+ * A074802 Number of numbers k &lt;= n such that tau(k) = tau(k+1) where tau(x) = A000005(x) is the number of divisors of x.
  * @author Sean A. Irvine
  */
 public class A074802 extends PartialSumSequence {

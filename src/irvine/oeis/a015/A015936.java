@@ -1,16 +1,15 @@
 package irvine.oeis.a015;
 
-import irvine.nt.cyclotomic.Cyclotomic;
-import irvine.oeis.recur.PeriodicSequence;
+import irvine.oeis.a007.A007273;
 
 /**
  * A015936 Inverse of 1927th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
-public class A015936 extends PeriodicSequence {
+public class A015936 extends A007273 {
 
   /** Construct the sequence. */
   public A015936() {
-    super(Cyclotomic.inverse(1927));
+    super(1927);
   }
 }

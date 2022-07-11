@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a186.A186546;
 
 /**
- * A192633  Partial sums of the Floor-Sqrt transform of Catalan numbers.
+ * A192633 Partial sums of the Floor-Sqrt transform of Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A192633 extends PartialSumSequence {

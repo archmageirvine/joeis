@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A062495 Nearest integer to (Product((n - i)^log(i), {i, 1, n - 1})).
+ * A062495 Nearest integer to Product_{j=1..n-1} (n-j)^log(j).
  * @author Georg Fischer
  */
 public class A062495 implements Sequence {

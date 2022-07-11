@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A101927 E.g.f. of sin(arcsinh(x)) = cos(arccosh(x)) (odd powers only).
+ * A101927 E.g.f. of sin(arcsinh(x)) (odd powers only).
  * E.g.f.:
  * @author Georg Fischer
  */

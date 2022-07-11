@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a023.A023506;
 
 /**
- * A057773 Sum_{i=1..n} nu_2 ( prime(i) - 1), where prime(i) is the i-th prime and nu_2(m) = exponent of highest power of 2 dividing m.
+ * A057773 a(n) = Sum_{i=1..n} nu_2 ( prime(i) - 1), where prime(i) is the i-th prime and nu_2(m) = exponent of highest power of 2 dividing m.
  * @author Sean A. Irvine
  */
 public class A057773 extends PartialSumSequence {

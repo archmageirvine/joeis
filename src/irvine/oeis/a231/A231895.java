@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A231895 a(n) = 2*A000111(n+1)+A000111(n).
+ * A231895 a(n) = 2*A000111(n+1) + A000111(n).
  * E.g.f.: 1+(sec(x)+tan(x)+1)*(sec(x)+tan(x))
  * @author Georg Fischer
  */

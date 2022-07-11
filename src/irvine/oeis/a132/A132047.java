@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a007.A007318;
 import irvine.oeis.a103.A103451;
 /**
- * A132047 3*A007318 - 2*A103451.
+ * A132047 3*A007318 - 2*A103451 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A132047 implements Sequence {

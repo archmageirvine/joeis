@@ -5,7 +5,7 @@ package irvine.oeis.a184;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A184358  a(n) = (n+1)!^2/2^n.
+ * A184358 a(n) = (n+1)!^2/2^n.
  * @author Georg Fischer
  */
 public class A184358 extends HolonomicRecurrence {

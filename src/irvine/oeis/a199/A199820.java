@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A199820 Primes of form 11^n-10^n.
+ * A199820 Primes of the form 11^n - 10^n.
  * @author Georg Fischer
  */
 public class A199820 extends PrimeSubsequence {

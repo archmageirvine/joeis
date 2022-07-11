@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057779 Hexagonal polyominoes (or polyhexes, A000228) with perimeter 2n.
+ * A057779 Number of hexagonal polyominoes (or polyhexes, A000228) with perimeter 2n.
  * @author Sean A. Irvine
  */
 public class A057779 implements Sequence {

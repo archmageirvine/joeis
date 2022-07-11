@@ -3,6 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.graph.Graph;
 import irvine.math.plantri.Plantri;
 import irvine.math.plantri.PlantriGraphState;
+import irvine.math.z.Z;
 
 /**
  * A007085 Number of unlabeled trivalent 3-connected bipartite planar graphs with 2n nodes without subgraphs R1 and R4.
@@ -10,13 +11,7 @@ import irvine.math.plantri.PlantriGraphState;
  */
 public class A007085 extends A007083 {
 
-  /** Construct the sequence. */
-  public A007085() {
-    super();
-    next();
-    next();
-    next();
-  }
+  private boolean mFirst = true;
 
   private boolean containsR1(final Graph graph) {
     if (graph.order() < 6) {
@@ -55,6 +50,18 @@ public class A007085 extends A007083 {
   protected boolean accept(final Plantri plantri, final PlantriGraphState state) {
     final Graph g = plantri.makeDualGraph();
     return !containsR1(g) && !A007084.containsR4(g);
+  }
+
+  @Override
+  public Z next() {
+    if (mFirst) {
+      // Skip leading terms
+      mFirst = false;
+      super.next();
+      super.next();
+      super.next();
+    }
+    return super.next();
   }
 }
 

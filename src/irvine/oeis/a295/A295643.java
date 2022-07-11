@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A295643 Squares repeated 4 times; a(n) = (floor(n/4))^2.
+ * A295643 Squares repeated 4 times; a(n) = floor(n/4)^2.
  * @author Georg Fischer
  */
 public class A295643 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a048.A048140;
 import irvine.oeis.a048.A048141;
 
 /**
- * A000784 Symmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have just one symmetry plane).
+ * A000784 Number of symmetrical planar partitions of n (planar partitions (A000219) that when regarded as 3-D objects have just one symmetry plane).
  * @author Sean A. Irvine
  */
 public class A000784 extends A048140 {

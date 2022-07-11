@@ -5,7 +5,7 @@ package irvine.oeis.a069;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A069975 a(n) = n*(16n^2-1).
+ * A069975 a(n) = n*(16*n^2-1).
  * @author Georg Fischer
  */
 public class A069975 extends HolonomicRecurrence {

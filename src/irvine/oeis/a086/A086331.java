@@ -6,7 +6,7 @@ import irvine.oeis.transform.BinomialTransformSequence;
 import irvine.oeis.a000.A000312;
 
 /**
- * A086331 E.g.f.: exp(x)/(1 + LambertW(-x)).
+ * A086331 Expansion of e.g.f. exp(x)/(1 + LambertW(-x)).
  * @author Georg Fischer
  */
 public class A086331 extends BinomialTransformSequence {

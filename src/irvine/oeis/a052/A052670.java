@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A052670 E.g.f. x^2/(1-4x).
+ * A052670 Expansion of e.g.f. x^2/(1-4*x).
  * @author Georg Fischer
  */
 public class A052670 extends HolonomicRecurrence {

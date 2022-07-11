@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A192656  Partial sums of the Floor-Sqrt transform of central binomial coefficients.
+ * A192656 Partial sums of the Floor-Sqrt transform of central binomial coefficients.
  * @author Sean A. Irvine
  */
 public class A192656 extends PartialSumSequence {

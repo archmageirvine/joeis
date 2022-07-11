@@ -6,7 +6,7 @@ package irvine.oeis.a037;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A037961 a(n) = (n+3)!*n^2*(n+1)/48.
+ * A037961 a(n) = n^2*(n+1)*(n+3)!/48.
  * @author Georg Fischer
  */
 public class A037961 extends HolonomicRecurrence {

@@ -13,14 +13,14 @@ public final class Japanese extends AbstractLanguage {
   }
 
   private static final String[] SMALL = {
-    "れい", "いち", "に", "さん", "よん", "ご", "ろく", "なな", "はち", "きゅう"
+    "\u308C\u3044", "\u3044\u3061", "\u306B", "\u3055\u3093", "\u3088\u3093", "\u3054", "\u308D\u304F", "\u306A\u306A", "\u306F\u3061", "\u304D\u3085\u3046"
   };
   private static final String[] POWERS_OF_TEN = {
     "", // 1
-    "じゅう", // 10
-    "ひゃく", // 100
-    "せん", // 1000
-    "まん", // 10000
+    "\u3058\u3085\u3046", // 10
+    "\u3072\u3083\u304F", // 100
+    "\u305B\u3093", // 1000
+    "\u307E\u3093", // 10000
   };
 
   @Override

@@ -17,7 +17,7 @@ public class A057875 implements Sequence {
   @Override
   public Z next() {
     long cnt = 0;
-    long min = mMod;
+    final long min = mMod;
     long p = mPrime.nextPrime(mLim * 10);
     mLim *= 100;
     mMod *= 10;

@@ -61,7 +61,7 @@ public final class Explorer {
   private static List<Z> transform(final List<Z> seq) {
     final ArrayList<Z> res = new ArrayList<>(seq.size());
     //final MobiusTransformSequence transform = new MobiusTransformSequence(new FiniteSequence(seq), 0);
-    final PartialSumSequence transform = new PartialSumSequence(new FiniteSequence(seq));
+    final PartialSumSequence transform = new PartialSumSequence(new PrependSequence(new FiniteSequence(seq), 0));
     for (int k = 0; k < seq.size(); ++k) {
       res.add(transform.next());
     }

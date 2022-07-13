@@ -2,7 +2,6 @@ package irvine.oeis.a007;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
@@ -37,21 +36,36 @@ public class A007499 implements Sequence {
 
   private List<Integer> canon(final List<Integer> lst) {
     List<Integer> canon = lst;
-    final ArrayList<Integer> t = new ArrayList<>(lst);
-    for (int k = 1; k < lst.size(); ++k) {
-      t.add(t.remove(0));
-      if (COMPARATOR.compare(t, canon) > 0) {
-        canon = new ArrayList<>(t);
+    int max = 0;
+    for (final int v : lst) {
+      if (v > max) {
+        max = v;
       }
     }
-    Collections.reverse(t);
-    if (COMPARATOR.compare(t, canon) > 0) {
-      canon = new ArrayList<>(t);
-    }
-    for (int k = 1; k < lst.size(); ++k) {
-      t.add(t.remove(0));
-      if (COMPARATOR.compare(t, canon) > 0) {
-        canon = new ArrayList<>(t);
+    for (int k = 0; k < lst.size(); ++k) {
+      if (lst.get(k) == max) {
+        if (k > 0) {
+          final ArrayList<Integer> candidate = new ArrayList<>(lst.size());
+          for (int j = k; j < lst.size(); ++j) {
+            candidate.add(lst.get(j));
+          }
+          for (int j = 0; j < k; ++j) {
+            candidate.add(lst.get(j));
+          }
+          if (COMPARATOR.compare(candidate, canon) > 0) {
+            canon = candidate;
+          }
+        }
+        final ArrayList<Integer> reverse = new ArrayList<>(lst.size());
+        for (int j = k; j >= 0; --j) {
+          reverse.add(lst.get(j));
+        }
+        for (int j = lst.size() - 1; j > k; --j) {
+          reverse.add(lst.get(j));
+        }
+        if (COMPARATOR.compare(reverse, canon) > 0) {
+          canon = reverse;
+        }
       }
     }
     return canon;

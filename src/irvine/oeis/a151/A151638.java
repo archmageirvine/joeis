@@ -5,17 +5,17 @@ import irvine.math.z.Z;
 import irvine.oeis.a174.A174266;
 
 /**
- * A151634 Number of permutations of 3 indistinguishable copies of 1..n with exactly 4 adjacent element pairs in decreasing order.
+ * A151638 Number of permutations of 3 indistinguishable copies of 1..n with exactly 8 adjacent element pairs in decreasing order.
  * @author Georg Fischer
  */
-public class A151634 extends A174266 {
+public class A151638 extends A174266 {
 
   private int mN = 0;
 
   @Override
   public Z next() {
     ++mN;
-    return super.triangleElement(mN, 4);
+    return super.triangleElement(mN, 8);
   }
 }
 

@@ -5,17 +5,17 @@ import irvine.math.z.Z;
 import irvine.oeis.a237.A237252;
 
 /**
- * A151652 Number of permutations of 6 indistinguishable copies of 1..n with exactly 3 adjacent element pairs in decreasing order.
+ * A151654 Number of permutations of 6 indistinguishable copies of 1..n with exactly 5 adjacent element pairs in decreasing order.
  * @author Georg Fischer
  */
-public class A151652 extends A237252 {
+public class A151654 extends A237252 {
 
   private int mN = 0;
 
   @Override
   public Z next() {
     ++mN;
-    return super.triangleElement(mN, 3);
+    return super.triangleElement(mN, 5);
   }
 }
 

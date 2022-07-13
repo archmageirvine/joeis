@@ -1,6 +1,7 @@
 package irvine.oeis.recur;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
@@ -35,13 +36,11 @@ public class GeneralRecurrence extends MemorySequence implements SequenceWithOff
    * @param offset first valid term has this index
    * @param initTerms initial values of <code>a[0..k]</code>
    */
-  public GeneralRecurrence(final int offset, final long[] initTerms, Function<Integer, Z>[] lambda) {
+  public GeneralRecurrence(final int offset, final long[] initTerms, final Function<Integer, Z>[] lambda) {
     super(offset, initTerms);
     mOffset = offset;
     mLambda = new ArrayList<>();
-    for (int i = 0; i < lambda.length; ++i) {
-      mLambda.add(lambda[i]);
-    }
+    mLambda.addAll(Arrays.asList(lambda));
   }
 
   /**

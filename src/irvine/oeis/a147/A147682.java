@@ -2,16 +2,17 @@ package irvine.oeis.a147;
 
 import irvine.math.MemoryFunctionIntArray;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * A147682 Late-growing permutations: number of permutations of 2 indistinguishable copies of 1..n with every partial sum &lt;= the same partial sum averaged over all permutations.
  * with every partial sum &lt;= the same partial sum averaged over all permutations.
  * @author Georg Fischer
  */
-public class A147682 implements Sequence {
+public class A147682 implements SequenceWithOffset {
 
   private int mN;
+  private final int mOffset;
   private final Integer mCopies;
 
   /** Construct the sequence. */
@@ -25,6 +26,7 @@ public class A147682 implements Sequence {
    * @param copies number of copies
    */
   public A147682(final int offset, final int copies) {
+    mOffset = offset;
     mN = offset - 1;
     mCopies = copies;
   }
@@ -40,7 +42,10 @@ public class A147682 implements Sequence {
     a:= n-> b([2$n]):
     seq(a(n), n=1..4);  # Alois P. Heinz, Aug 16 2012
   */
-  private final MemoryFunctionIntArray<Z> mB = new MemoryFunctionIntArray<Z>() {
+  /**
+   * B function.
+   */
+  public static final MemoryFunctionIntArray<Z> B = new MemoryFunctionIntArray<>() {
     @Override
     protected Z compute(final int[] list) {
       final int m = list.length - 1;
@@ -72,6 +77,11 @@ public class A147682 implements Sequence {
   };
 
   @Override
+  public int getOffset() {
+    return mOffset;
+  }
+
+  @Override
   public Z next() {
     ++mN;
     final int[] list = new int[mN + 1];
@@ -79,6 +89,6 @@ public class A147682 implements Sequence {
     for (int k = 1; k <= mN; ++k) {
       list[k] = mCopies;
     }
-    return mB.get(list);
+    return B.get(list);
   }
 }

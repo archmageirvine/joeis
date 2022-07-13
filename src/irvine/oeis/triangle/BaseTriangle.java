@@ -1,10 +1,8 @@
 package irvine.oeis.triangle;
 
-import java.util.ArrayList;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 import irvine.oeis.SequenceWithOffset;
 
 /**
@@ -100,7 +98,7 @@ public abstract class BaseTriangle extends Triangle implements SequenceWithOffse
   }
 
   /**
-   * Set a the value of a column in the last row.
+   * Set the value of a column in the last row.
    * @param k 0-based column number
    * @param value T(n,k)
    */

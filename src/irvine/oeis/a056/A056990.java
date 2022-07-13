@@ -9,14 +9,8 @@ import irvine.oeis.a055.A055165;
  */
 public class A056990 extends A055165 {
 
-  private boolean mFirst = true;
-
   @Override
   public Z next() {
-    if (mFirst) {
-      mFirst = false;
-      return Z.TWO;
-    }
     return super.next().shiftLeft(2 * mN + 1);
   }
 }

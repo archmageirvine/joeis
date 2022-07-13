@@ -37,8 +37,10 @@ public class Position implements Serializable {
   public Position() {
     xtuple = new int/*s*/[4];
     ytuple = new int/*s*/[4];
-    Arrays.fill(xtuple, (int/*s*/) 0);
-    Arrays.fill(ytuple, (int/*s*/) 0);
+    /*s*/
+    Arrays.fill(xtuple, 0);
+    /*s*/
+    Arrays.fill(ytuple, 0);
   } // Position()
 
   /**

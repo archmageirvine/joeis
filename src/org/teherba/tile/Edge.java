@@ -34,7 +34,7 @@ public class Edge implements Serializable {
    * @param distance distance from the base set, for coloring
   */
   public Edge(final int ifocus, final int iproxy, final int iedge, final int distance) {
-  	index = -1; // the index is filled by EdgeList.add()
+    index = -1; // the index is filled by EdgeList.add()
     this.ifocus   = ifocus;
     this.iproxy   = iproxy;
     this.iedge    = iedge;

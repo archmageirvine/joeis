@@ -52,8 +52,8 @@ public class PositionMap {
    * @return the index of the Vertex at expos, or -1 if the position is empty
    */
   public int get(final Position expos) {
-  	final Integer value = mPositionHash.get(expos.toString());
-  	return value == null ? -1 : value.intValue();
+    final Integer value = mPositionHash.get(expos.toString());
+    return value == null ? -1 : value.intValue();
   } // get
  
   /**

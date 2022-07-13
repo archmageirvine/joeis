@@ -12,7 +12,7 @@ import irvine.util.Pair;
  */
 public class A057896 implements Sequence {
 
-  private static class State extends Pair<Integer, Integer> implements Comparable<State> {
+  private static final class State extends Pair<Integer, Integer> implements Comparable<State> {
 
     private State(final int base, final int exponent) {
       super(base, exponent);

@@ -5,13 +5,13 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A131119 a(n) = (-1)^n * Sum_{i=1..floor(n/2)} i * floor(n/(n-i)).
+ * A131452 a(3n)=4n, a(3n+1)=4n+2, a(3n+2)=4n+1.
  * @author Sean A. Irvine
  */
-public class A131119 extends PartialSumSequence {
+public class A131452 extends PartialSumSequence {
 
   /** Construct the sequence. */
-  public A131119() {
-    super(new PrependSequence(new A131723(), 0));
+  public A131452() {
+    super(new PrependSequence(new A131756(), 0));
   }
 }

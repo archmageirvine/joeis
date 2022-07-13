@@ -3,15 +3,16 @@ package irvine.oeis.a131;
 
 import irvine.oeis.PartialSumSequence;
 import irvine.oeis.PrependSequence;
+import irvine.oeis.a071.A071986;
 
 /**
- * A131119 a(n) = (-1)^n * Sum_{i=1..floor(n/2)} i * floor(n/(n-i)).
+ * A131808 Partial sums of A131378.
  * @author Sean A. Irvine
  */
-public class A131119 extends PartialSumSequence {
+public class A131808 extends PartialSumSequence {
 
   /** Construct the sequence. */
-  public A131119() {
-    super(new PrependSequence(new A131723(), 0));
+  public A131808() {
+    super(new PrependSequence(new A071986(), 0));
   }
 }

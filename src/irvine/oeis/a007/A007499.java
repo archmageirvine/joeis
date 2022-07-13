@@ -93,7 +93,7 @@ public class A007499 implements Sequence {
     for (final List<Integer> h : mH) {
       for (int k = h.size() - 2; k >= 0; --k) {
         if (h.get(k) == 2) {
-          for (int j = k;j < h.size(); ++j) {
+          for (int j = k; j < h.size(); ++j) {
             newH.add(augment(h, j));
             ++cnt;
           }

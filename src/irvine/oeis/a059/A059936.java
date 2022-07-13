@@ -8,10 +8,6 @@ import irvine.math.z.Z;
  */
 public class A059936 extends A059935 {
 
-  {
-    super.next();
-  }
-
   @Override
   public Z next() {
     return code(super.next(), 6);

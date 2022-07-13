@@ -11,16 +11,28 @@ public class A051145 implements Sequence {
 
   private Z mA = null;
   private Z mB = null;
+  private final Z mFirstTerm;
+  private final Z mSecondTerm;
+
+  protected A051145(final Z firstTerm, final Z secondTerm) {
+    mFirstTerm = firstTerm;
+    mSecondTerm = secondTerm;
+  }
+
+  /** Construct the sequence. */
+  public A051145() {
+    this(Z.ZERO, Z.ONE);
+  }
 
   @Override
   public Z next() {
     if (mB == null) {
       if (mA == null) {
-        mA = Z.ZERO;
-        return Z.ZERO;
+        mA = mFirstTerm;
+        return mFirstTerm;
       }
-      mB = Z.ONE;
-      return Z.ONE;
+      mB = mSecondTerm;
+      return mSecondTerm;
     }
     final Z t = mB.or(mA).add(1).and(mB.not());
     mA = mB;

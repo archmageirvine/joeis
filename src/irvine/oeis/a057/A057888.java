@@ -13,8 +13,8 @@ import irvine.util.string.Japanese;
 public class A057888 implements Sequence {
 
   private final TreeMap<String, Integer> mA = new TreeMap<>();
-  int mN = 0;
-  int mLim = 1;
+  private int mN = 0;
+  private int mLim = 1;
 
   @Override
   public Z next() {

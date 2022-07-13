@@ -10,17 +10,23 @@ import irvine.math.z.Z;
  */
 public class A036630 extends A036606 {
 
-  private final Polynomial<Q> mB;
-  {
-    for (int k = 0; k <= 5; ++k) {
+  private Polynomial<Q> mB = null;
+
+  @Override
+  protected void init() {
+    if (mA == null) {
+      super.init();
+      for (int k = 0; k <= 5; ++k) {
+        step();
+      }
+      mB = mA;
       step();
     }
-    mB = mA;
-    step();
   }
 
   @Override
   public Z next() {
+    init();
     return mM >= mA.degree() ? null : mA.coeff(mM).subtract(mB.coeff(mM++)).toZ();
   }
 }

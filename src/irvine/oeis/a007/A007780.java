@@ -14,7 +14,7 @@ public class A007780 implements Sequence {
   // where 1 = solvable, 2 = unsolvable, and 0 means not yet computed.
 
   private static final int CACHE_SIZE = Integer.parseInt(System.getProperty("oeis.cache", "25000"));
-  private final byte[][] mCache = new byte[CACHE_SIZE][CACHE_SIZE];
+  private byte[][] mCache = null;
   private long mN = 0;
 
   private boolean isSolvable(final long[] state, final int hole) {
@@ -98,6 +98,9 @@ public class A007780 implements Sequence {
 
   @Override
   public Z next() {
+    if (mCache == null) {
+      mCache = new byte[CACHE_SIZE][CACHE_SIZE];
+    }
     while (true) {
       if (!isSolvable(++mN)) {
         return Z.valueOf(mN);

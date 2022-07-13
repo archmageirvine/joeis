@@ -405,14 +405,11 @@ public class CoordSet2 extends CoordSetGen<Square> {
       ++white;
     }
     for (int i = 1; i < mSize; i++) {
-      final int t = (mSet.getX(0) - mSet.getX(i)) + (mSet.getY(0) - mSet.getY(i));
-      final boolean b = (t & 1) == 0;
       if (mSet.getColour(i) == Square.BLACK) {
         ++black;
       } else {
         ++white;
       }
-      assert b && mSet.getColour(0) == mSet.getColour(i) || !b && mSet.getColour(0) == -mSet.getColour(i) : "wrong colour";
     }
     assert getBlack() == black && getWhite() == white && black + white == mSize : "bad colours";
   }

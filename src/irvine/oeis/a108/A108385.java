@@ -6,7 +6,7 @@ import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a014.A014261;
 
 /**
- * A108385 Primes p such that p&apos;s set of distinct digits is {3, 7, 9}.
+ * A108385 Primes p such that p's set of distinct digits is {3,7,9}.
  * @author Georg Fischer
  */
 public class A108385 implements SequenceWithOffset {

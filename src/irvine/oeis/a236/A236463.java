@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.a237.A237202;
 
 /**
- * A236463 Irregular triangle read by rows: T(n,k) = Sum_{i=0..k} (-1)^i * binomial(4*n+1,i) * binomial(k+4-i, 4)^n, 0 &lt;= k &lt;= 4*(n-1).
+ * A236463 Irregular triangle read by rows: T(n,k) = Sum_{i=0..k} (-1)^i * binomial(4*n+1,i) * binomial(k+4-i,4)^n, 0 &lt;= k &lt;= 4*(n-1).
  * @author Georg Fischer
  */
 public class A236463 extends A237202 {

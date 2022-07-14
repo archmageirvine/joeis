@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A135404 Gessel sequence: the number of paths of length 2m in the plane, starting and ending at (0, 1), with unit steps in the four directions (north, east, south, west) and staying in the region y &gt; 0, x &gt; -y.
+ * A135404 Gessel sequence: the number of paths of length 2m in the plane, starting and ending at (0,1), with unit steps in the four directions (north, east, south, west) and staying in the region y &gt; 0, x &gt; -y.
  * @author Georg Fischer
  */
 public class A135404 extends HolonomicRecurrence {

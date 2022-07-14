@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A275053 G.f.: 3F2([1/9, 2/9, 7/9], [2/3, 1], 729x).
+ * A275053 G.f.: 3F2([1/9, 2/9, 7/9], [2/3,1], 729x).
  * @author Georg Fischer
  */
 public class A275053 extends HolonomicRecurrence {

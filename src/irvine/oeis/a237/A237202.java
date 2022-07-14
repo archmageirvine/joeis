@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A237202 Irregular triangle read by rows: T(n,k) = Sum_{i=0..k} (-1)^i * binomial(5*n+1,i) * binomial(k+5-i, 5)^n, 0 &lt;= k &lt;= 5*(n-1).
+ * A237202 Irregular triangle read by rows: T(n,k) = Sum_{i=0..k} (-1)^i * binomial(5*n+1,i) * binomial(k+5-i,5)^n, 0 &lt;= k &lt;= 5*(n-1).
  * @author Georg Fischer
  */
 public class A237202 extends BaseTriangle {

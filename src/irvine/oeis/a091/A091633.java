@@ -5,7 +5,7 @@ import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a014.A014261;
 
 /**
- * A091633 Primes whose digits are restricted to 1, 3, 7, 9 (same as terminal digits of primes).
+ * A091633 Primes whose digits are restricted to 1,3,7,9 (same as terminal digits of primes).
  * @author Georg Fischer
  */
 public class A091633 implements SequenceWithOffset {

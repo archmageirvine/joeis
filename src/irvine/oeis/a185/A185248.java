@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A185248 Expansion of 3F2( (1/2, 3/2, 5/2); (3, 5))(64 x)
+ * A185248 Expansion of 3F2( (1/2, 3/2, 5/2); (3, 5))(64 x).
  * @author Georg Fischer
  */
 public class A185248 extends HolonomicRecurrence {

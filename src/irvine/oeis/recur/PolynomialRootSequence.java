@@ -1,9 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.recur;
 
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.HolonomicRecurrence;
+import irvine.oeis.FiniteSequence;
+import irvine.oeis.Sequence;
 
 /**
  * Generates the power series of some root of a polynomial.

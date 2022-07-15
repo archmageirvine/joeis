@@ -69,4 +69,21 @@ public final class CollectionUtils {
     }
     return true;
   }
+
+  /**
+   * Test if the given list is antipalindromic.
+   * @param lst list to test
+   * @return true if the list is a antipalindrome
+   */
+  public static boolean isAntipalindrome(final List<?> lst) {
+    if ((lst.size() & 1) == 1) {
+      return false; // Nothing of odd length can be an antipalindome
+    }
+    for (int k = 0, j = lst.size() - 1; k < j; ++k, --j) {
+      if (lst.get(k).equals(lst.get(j))) {
+        return false;
+      }
+    }
+    return true;
+  }
 }

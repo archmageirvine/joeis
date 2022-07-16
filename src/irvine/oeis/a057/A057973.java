@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057973.
+ * A057973 Number of polybricks: number of ways to arrange n 1 X 2 "bricks" in a wall (see illustrations).
  * @author Sean A. Irvine
  */
 public class A057973 implements Sequence {

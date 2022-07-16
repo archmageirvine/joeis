@@ -9,7 +9,7 @@ public final class Hexagonal {
   private Hexagonal() {
   }
 
-  private static final Lattice H = Lattices.HEXAGONAL;
+  private static final Lattice L = Lattices.HEXAGONAL;
 
   /**
    * Rotate the given point by 60 degress anticlockwise.
@@ -17,9 +17,9 @@ public final class Hexagonal {
    * @return rotated point
    */
   public static long rotate(final long point) {
-    final long x = H.ordinate(point, 0);
-    final long y = H.ordinate(point, 1);
-    return H.toPoint((x - 3 * y) / 2, (x + y) / 2);
+    final long x = L.ordinate(point, 0);
+    final long y = L.ordinate(point, 1);
+    return L.toPoint((x - 3 * y) / 2, (x + y) / 2);
   }
 
   /**
@@ -31,11 +31,11 @@ public final class Hexagonal {
     long minX = Long.MAX_VALUE;
     long minY = Long.MAX_VALUE;
     for (final long p : points) {
-      final long x = H.ordinate(p, 0);
+      final long x = L.ordinate(p, 0);
       if (x < minX) {
         minX = x;
       }
-      final long y = H.ordinate(p, 1);
+      final long y = L.ordinate(p, 1);
       if (y < minY) {
         minY = y;
       }
@@ -49,9 +49,9 @@ public final class Hexagonal {
     final long dx = minX - bit;
     final long dy = minY;
     for (final long point : points) {
-      final long x = H.ordinate(point, 0);
-      final long y = H.ordinate(point, 1);
-      translate[k++] = H.toPoint(x - dx, y - dy);
+      final long x = L.ordinate(point, 0);
+      final long y = L.ordinate(point, 1);
+      translate[k++] = L.toPoint(x - dx, y - dy);
     }
     return translate;
   }
@@ -88,9 +88,9 @@ public final class Hexagonal {
     final long[] reflectedPoints = new long[animal.size()];
     int k = 0;
     for (final long point : animal.points()) {
-      final long x = H.ordinate(point, 0);
-      final long y = H.ordinate(point, 1);
-      reflectedPoints[k++] = H.toPoint(x, -y);
+      final long x = L.ordinate(point, 0);
+      final long y = L.ordinate(point, 1);
+      reflectedPoints[k++] = L.toPoint(x, -y);
     }
     return new Animal(translate(reflectedPoints));
   }

@@ -39,7 +39,7 @@ public class A090702 implements Sequence {
         mA.set(mN, (byte) 0);
       } else {
         int min = Integer.MAX_VALUE;
-        for (long k = 1; k <= mN; k <<= 1) {
+        for (long k = 1; k < mN; k <<= 1) {
           final long lo = k - 1;
           final long hi = ~lo - k;
           final long l = mN & lo;

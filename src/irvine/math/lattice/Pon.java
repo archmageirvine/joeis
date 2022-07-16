@@ -14,7 +14,7 @@ public final class Pon {
   private static final long[] REFLECT_Z = {0, 2, 1, 3, 5, 4};
 
   /**
-   * Rotate the given point by 120 degress anticlockwise.
+   * Rotate the given point by 120 degrees anticlockwise.
    * @param point point to rotate
    * @return rotated point
    */

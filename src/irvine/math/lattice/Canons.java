@@ -33,15 +33,15 @@ public final class Canons {
       return animal;
     }
     final int bitsPerCoordinate = lattice.bitsPerCoordinate();
-    final long mask = (1L << bitsPerCoordinate) - 1;
     long delta = 0;
     for (int k = dim - 1; k >= 0; --k) {
       delta <<= bitsPerCoordinate;
-      delta += min[k] & mask;
+      delta += min[k];
     }
     final long[] translate = new long[animal.size()];
     int k = 0;
     for (final long point : animal.points()) {
+      //translate[k++] = lattice.toPoint(lattice.ordinate(point, 0) - min[0], lattice.ordinate(point, 1) - min[1]);
       translate[k++] = point - delta;
     }
     return new Animal(translate);
@@ -337,6 +337,38 @@ public final class Canons {
     if (r45r270.compareTo(canon) < 0) {
       canon = r45r270;
     }
+    return canon;
+  }
+
+  /**
+   * Return the canonical form of the given animal.
+   */
+  public static Animal dihedralCanon(final Animal animal) {
+    // todo something is broken here
+    final Animal a = translate(Lattices.Z2, animal);
+    //System.out.println("a=" + a.toString(Lattices.Z2));
+    Animal canon = a;
+    long extentX = a.extent(Lattices.Z2, 0);
+    long extentY = a.extent(Lattices.Z2, 1);
+    final Animal reflect = translate(Lattices.Z2, reflectHorizontal(a, extentX));
+    //System.out.println("reflect=" + reflect.toString(Lattices.Z2));
+    if (reflect.compareTo(canon) < 0) {
+      canon = reflect;
+      //System.out.println("Now canon");
+    }
+    final Animal vertical = translate(Lattices.Z2, reflectVertical(a, extentY));
+    //System.out.println("vertical=" + vertical.toString(Lattices.Z2));
+    if (vertical.compareTo(canon) < 0) {
+      canon = vertical;
+      //System.out.println("Now canon");
+    }
+    final Animal r2 = translate(Lattices.Z2, reflectHorizontal(vertical, extentX));
+    //System.out.println("rot180=" + r2.toString(Lattices.Z2));
+    if (r2.compareTo(canon) < 0) {
+      canon = r2;
+      //System.out.println("Now canon");
+    }
+//    System.out.println("canon=" + canon.toString(Lattices.Z2));
     return canon;
   }
 }

@@ -20,7 +20,7 @@ public class A035485 implements Sequence {
   {
     mDeck.add(1L);
   }
-  private int mN = 0;
+  protected int mN = 0;
 
   @Override
   public Z next() {

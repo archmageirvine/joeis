@@ -9,17 +9,17 @@ import irvine.oeis.Sequence;
  */
 public class A047830 implements Sequence {
 
-  private int mN = -1;
+  private int mM = -1;
 
   @Override
   public Z next() {
-    if (++mN == 0) {
+    if (++mM == 0) {
       return Z.TWO;
     }
     return new A047820() {
       @Override
       protected int iterations() {
-        return mN;
+        return mM;
       }
     }.next();
   }

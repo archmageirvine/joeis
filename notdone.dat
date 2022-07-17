@@ -1893,3 +1893,10 @@ A057657 Maximal size of binary code of length n that corrects one transposition 
 A057707 Number of poly-octagon squares: a(n) = number of 'polyominoes' that can be formed by n octagons and n squares (of perimeter 8m and 4m respectively) not counting rotations or reflections such that the resulting objects will fit on the plane that is uniformly tiled by the same size octagons and squares.
 A057749 Prime degrees of absolutely reducible trinomials: primes p such that x^p + x^k + 1 is reducible over GF(2) for all k, p>k>0 [my code not efficient enough]
 A057771 Number of loops (quasigroups with an identity element) of order n.
+A057991 Number of quasigroups of order n.
+A057992 Number of commutative quasigroups of order n.
+A057993 Number of self-converse quasigroups of order n
+A057994 Number of asymmetric quasigroups of order n
+A057995 Coefficient triangle of polynomials (rising powers) related to Fibonacci convolutions. Companion triangle to A057280.
+A057996 Number of self-converse loops (quasigroups with an identity element) of order n
+A057998 Number of asymmetric loops (quasigroups with an identity element).

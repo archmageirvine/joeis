@@ -140,7 +140,11 @@ public class A353700 implements Sequence {
             }).count();
             if (!mRecord.containsKey(n) /* || r2.compareTo(mRecord.get(n)) < 0 */) {
               // Record (distance squared, canonical centre)
-              mRecord.put(n, new Q(s2, d2));
+              final Q r2 = new Q(s2, d2);
+              if (mVerbose) {
+                StringUtils.message(n + " -> " + r2);
+              }
+              mRecord.put(n, r2);
             }
           }
         }

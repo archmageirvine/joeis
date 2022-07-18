@@ -47,8 +47,8 @@ public class A353700 implements Sequence {
       // Collect lattice points
       final ArrayList<long[]> lattice = new ArrayList<>();
       for (long x = -mZ; x <= mZ; ++x) {
+        final long x0 = x * x;
         for (long y = -mZ; y <= mZ; ++y) {
-          final long x0 = x * x;
           final long y0 = y * y;
           final long x1 = (x - 1) * (x - 1);
           final long y1 = (y - 1) * (y - 1);
@@ -61,26 +61,25 @@ public class A353700 implements Sequence {
         ++mNMin;
       }
       // We only need to check points in one sector of the circle
-      final long kk;
+      final long sector;
       final List<long[]> check;
       if (mNMin > 16) {
-        kk = 8;
+        sector = 8;
         check = lattice.stream().filter(p -> !(p[1] < 0 || p[0] < 0 || p[0] + 1 < p[1])).collect(Collectors.toList());
       } else if (mNMin > 8) {
-        kk = 4;
+        sector = 4;
         check = lattice.stream().filter(p -> !(p[1] < 0 || p[0] < 0)).collect(Collectors.toList());
       } else if (mNMin > 4) {
-        kk = 2;
+        sector = 2;
         check = lattice.stream().filter(p -> p[1] >= 0).collect(Collectors.toList());
       } else {
-        kk = 1;
+        sector = 1;
         check = lattice;
       }
       if (mVerbose) {
-        StringUtils.message("Checking radius <" + mZ + "] [nmin=" + mNMin + "] [" + check.size() + " points in 1/" + kk + " sector] ...");
+        StringUtils.message("Checking radius <" + mZ + "] [nmin=" + mNMin + "] [" + check.size() + " points in 1/" + sector + " sector] ...");
       }
       final long[][] chk = check.toArray(new long[0][]);
-
       // Choose two lattice points
       for (int i = 0; i < chk.length - 2; ++i) {
         final long[] p1 = chk[i];
@@ -97,9 +96,8 @@ public class A353700 implements Sequence {
           final long b1 = 2 * (y2 - y1);
           final long c1 = x12 - x2 * x2 + y12 - y2 * y2;
           // Does it pass through the origin square
-          final Q t = Q.HALF.multiply(a1 + b1 + 2 * c1);
-          final Q d2 = t.square().divide(a1 * a1 + b1 * b1);
-          if (d2.compareTo(Q.HALF) > 0) {
+          final long t = a1 + b1 + 2 * c1;
+          if (t * t > 2 * (a1 * a1 + b1 * b1)) {
             continue;
           }
           // Choose the remaining lattice point
@@ -115,26 +113,34 @@ public class A353700 implements Sequence {
             if (d == 0) {
               continue;
             }
+            final long da = Math.abs(d);
             final long c2 = x12 - x3 * x3 + y12 - y3 * y3;
             // Do they intersect the square
-            final Q y0 = new Q(a2 * c1 - a1 * c2, d);
-            if (y0.signum() < 0 || y0.compareTo(Q.ONE) > 0) {
-              continue;
+            final long u0 = a2 * c1 - a1 * c2;
+            if (u0 * d < 0 || Math.abs(u0) > da) {
+              continue; // y0 < 0 or y0 > 1
             }
-            final Q x0 = new Q(b1 * c2 - b2 * c1, d);
-            if (x0.signum() < 0 || x0.compareTo(Q.ONE) > 0) {
-              continue;
+            final long v0 = b1 * c2 - b2 * c1;
+            if (v0 * d < 0 || Math.abs(v0) > da) {
+              continue; // x0 < 0 or x0 > 1
             }
             // Work out the radius of the circle
-            final Q r2 = x0.subtract(x1).square().add(y0.subtract(y1).square());
-            if (new Q(min2).compareTo(r2) > 0 || r2.compareTo(new Q(max2)) >= 0) {
+            final long wx0 = v0 - d * x1;
+            final long wy0 = u0 - d * y1;
+            final long s2 = wx0 * wx0 + wy0 * wy0;
+            final long d2 = d * d;
+            if (s2 < d2 * min2 || s2 >= d2 * max2) {
               continue;
             }
             // Count lattice points with the same distance
-            final long n = lattice.stream().filter(pt -> x0.subtract(pt[0]).square().add(y0.subtract(pt[1]).square()).equals(r2)).count();
-            if (!mRecord.containsKey(n) || r2.compareTo(mRecord.get(n)) < 0) {
+            final long n = lattice.stream().filter(pt -> {
+              final long q0 = u0 - d * pt[0];
+              final long q1 = v0 - d * pt[1];
+              return q0 * q0 + q1 * q1 == s2;
+            }).count();
+            if (!mRecord.containsKey(n) /* || r2.compareTo(mRecord.get(n)) < 0 */) {
               // Record (distance squared, canonical centre)
-              mRecord.put(n, r2);
+              mRecord.put(n, new Q(s2, d2));
             }
           }
         }

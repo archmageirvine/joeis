@@ -1900,3 +1900,4 @@ A057994 Number of asymmetric quasigroups of order n
 A057995 Coefficient triangle of polynomials (rising powers) related to Fibonacci convolutions. Companion triangle to A057280.
 A057996 Number of self-converse loops (quasigroups with an identity element) of order n
 A057998 Number of asymmetric loops (quasigroups with an identity element).
+A058016 Digits of the zero of the 37-adic L-function with cyclotomic character of index 31 (C/Pari code exists -- but not easy to replicate)

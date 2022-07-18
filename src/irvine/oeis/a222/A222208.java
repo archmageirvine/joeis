@@ -1,5 +1,7 @@
 package irvine.oeis.a222;
 
+import java.util.HashSet;
+
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
@@ -17,7 +19,24 @@ public class A222208 implements Sequence {
 
   protected final LongDynamicLongArray mA = new LongDynamicLongArray();
   private final LongDynamicBooleanArray mB = new LongDynamicBooleanArray();
+  private final HashSet<Long> mBBig = new HashSet<>();
   private long mN = 0;
+
+  private boolean isSet(final long n) {
+    if (n <= Integer.MAX_VALUE) {
+      return mB.isSet(n);
+    } else {
+      return mBBig.contains(n);
+    }
+  }
+
+  private void set(final long n) {
+    if (n <= Integer.MAX_VALUE) {
+      mB.set(n);
+    } else {
+      mBBig.add(n);
+    }
+  }
 
   @Override
   public Z next() {
@@ -34,10 +53,10 @@ public class A222208 implements Sequence {
       }
     }
     long i = 1;
-    while (mB.isSet(i * h)) {
+    while (isSet(i * h)) {
       ++i;
     }
-    mB.set(i * h);
+    set(i * h);
     mA.set(mN, i * h);
     return Z.valueOf(i * h);
   }

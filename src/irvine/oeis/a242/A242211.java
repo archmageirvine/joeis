@@ -4,10 +4,12 @@ import irvine.math.z.Z;
 import irvine.oeis.a222.A222208;
 
 /**
- * A222208.
+ * A242211 a(1) = 4, a(n) = A222208(a(n-1)).
  * @author Sean A. Irvine
  */
 public class A242211 extends A222208 {
+
+  // Computing a(9) was done with -Xmx200g
 
   private long mM = 0;
 

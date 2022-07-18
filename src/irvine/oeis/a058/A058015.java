@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058015.
+ * A058015 Numbers k such that 2^k + k^3 is prime.
  * @author Sean A. Irvine
  */
 public class A058015 implements Sequence {

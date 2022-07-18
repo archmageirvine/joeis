@@ -8,11 +8,10 @@ import java.util.stream.Collectors;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.util.Pair;
 import irvine.util.string.StringUtils;
 
 /**
- * A058010.
+ * A353700 allocated for Sofia Lacerda.
  * @author Sean A. Irvine
  */
 public class A353700 implements Sequence {
@@ -27,24 +26,6 @@ public class A353700 implements Sequence {
   private final HashMap<Long, Q> mRecord = new HashMap<>(); // record smallest circle
   {
     mRecord.put(2L, Q.ONE_QUARTER);
-  }
-
-  private static class Point extends Pair<Q, Q> {
-    private Point(final Q x, final Q y) {
-      super(x, y);
-    }
-
-    private Point canonical() {
-      Q x = left().subtract(left().toZ());
-      Q y = right().subtract(right().toZ());
-      if (y.compareTo(Q.HALF) > 0) {
-        y = Q.ONE.subtract(y);
-      }
-      if (x.compareTo(Q.HALF) > 0) {
-        x = Q.ONE.subtract(x);
-      }
-      return y.compareTo(x) > 0 ? new Point(y, x) : new Point(x, y);
-    }
   }
 
   protected Z select(final Q n) {
@@ -105,6 +86,8 @@ public class A353700 implements Sequence {
         final long[] p1 = chk[i];
         final long x1 = p1[0];
         final long y1 = p1[1];
+        final long x12 = x1 * x1;
+        final long y12 = y1 * y1;
         for (int j = i + 1; j < chk.length - 1; ++j) {
           final long[] p2 = chk[j];
           final long x2 = p2[0];
@@ -112,15 +95,15 @@ public class A353700 implements Sequence {
           // The parameters for the perpendicular bisector of p1 and p2 (Ax + By = C)
           final long a1 = 2 * (x2 - x1);
           final long b1 = 2 * (y2 - y1);
-          final long c1 = x1 * x1 - x2 * x2 + y1 * y1 - y2 * y2;
+          final long c1 = x12 - x2 * x2 + y12 - y2 * y2;
           // Does it pass through the origin square
-          final Q t = Q.HALF.multiply(a1 + b1).add(c1);
+          final Q t = Q.HALF.multiply(a1 + b1 + 2 * c1);
           final Q d2 = t.square().divide(a1 * a1 + b1 * b1);
           if (d2.compareTo(Q.HALF) > 0) {
             continue;
           }
           // Choose the remaining lattice point
-          for (int k = j + 1; k < check.size(); ++k) {
+          for (int k = j + 1; k < chk.length; ++k) {
             final long[] p3 = chk[k];
             final long x3 = p3[0];
             final long y3 = p3[1];
@@ -132,7 +115,7 @@ public class A353700 implements Sequence {
             if (d == 0) {
               continue;
             }
-            final long c2 = x1 * x1 - x3 * x3 + y1 * y1 - y3 * y3;
+            final long c2 = x12 - x3 * x3 + y12 - y3 * y3;
             // Do they intersect the square
             final Q y0 = new Q(a2 * c1 - a1 * c2, d);
             if (y0.signum() < 0 || y0.compareTo(Q.ONE) > 0) {
@@ -144,7 +127,7 @@ public class A353700 implements Sequence {
             }
             // Work out the radius of the circle
             final Q r2 = x0.subtract(x1).square().add(y0.subtract(y1).square());
-            if (!(new Q(min2).compareTo(r2) <= 0 && r2.compareTo(new Q(max2)) < 0)) {
+            if (new Q(min2).compareTo(r2) > 0 || r2.compareTo(new Q(max2)) >= 0) {
               continue;
             }
             // Count lattice points with the same distance

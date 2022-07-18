@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007821;
 import irvine.oeis.a008.A008578;
 
 /**
- * A236542.
+ * A236542 Array T(n,k) read along descending antidiagonals: row n contains the primes with n steps in the prime index chain.
  * @author Sean A. Irvine
  */
 public class A236542 extends MemoryFunctionInt2<Z> implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a236.A236542;
 
 /**
- * A058010.
+ * A058010 The main diagonal of N. Fernandez's Order of Primeness array.
  * @author Sean A. Irvine
  */
 public class A058010 extends A236542 {

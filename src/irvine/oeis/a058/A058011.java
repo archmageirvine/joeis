@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a057.A057809;
 
 /**
- * A058010.
+ * A058011 Consider the sequence {b(m)} of nonprimes; sequence gives values of m where gcd{m, b(m)} increases.
  * @author Sean A. Irvine
  */
 public class A058011 extends PrependSequence {

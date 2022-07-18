@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058010.
+ * A058014 Number of labeled trees with n+1 nodes such that the degrees of all nodes, excluding the first node, are odd.
  * @author Sean A. Irvine
  */
 public class A058014 implements Sequence {

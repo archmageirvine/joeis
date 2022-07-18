@@ -3,7 +3,7 @@ package irvine.oeis.a353;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A354139.
+ * A353935 allocated for Laurence Reeves.
  * @author Sean A. Irvine
  */
 public class A353935 extends FiniteSequence {

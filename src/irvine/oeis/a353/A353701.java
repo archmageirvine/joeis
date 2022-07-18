@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A058010.
+ * A353701 allocated for Sofia Lacerda.
  * @author Sean A. Irvine
  */
 public class A353701 extends A353700 {

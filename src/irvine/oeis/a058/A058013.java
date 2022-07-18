@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058010.
+ * A058013 Smallest prime p such that (n+1)^p - n^p is prime.
  * @author Sean A. Irvine
  */
 public class A058013 implements Sequence {

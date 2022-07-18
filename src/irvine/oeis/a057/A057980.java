@@ -22,7 +22,7 @@ public class A057980 extends A005114 {
       for (int j = 2; j < k; ++j) {
         if (k % j == 0) {
           mat.set(j - 2, k - 2, Q.ONE);
-        } else{
+        } else {
           mat.set(k - 2, j - 2, Q.ONE);
         }
       }

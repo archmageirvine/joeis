@@ -1,27 +1,17 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.ComplementSequence;
+import irvine.oeis.a353.A353935;
 
 /**
  * A014544 Numbers k such that a cube can be divided into k subcubes.
  * @author Sean A. Irvine
  */
-public class A014544 implements Sequence {
+public class A014544 extends ComplementSequence {
 
-  private static final int[] SMALL = {1, 8, 15, 20, 22, 27, 29, 34, 36, 38, 39, 41, 43, 45, 46};
-
-  private long mN = -1;
-
-  @Override
-  public Z next() {
-    if (++mN <= SMALL.length) {
-      if (mN == SMALL.length) {
-        mN = 48;
-      } else {
-        return Z.valueOf(SMALL[(int) mN]);
-      }
-    }
-    return Z.valueOf(mN);
+  /** Construct the sequence. */
+  public A014544() {
+    super(new A353935(), Z.ONE);
   }
 }

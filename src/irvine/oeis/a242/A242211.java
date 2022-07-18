@@ -9,11 +9,18 @@ import irvine.oeis.a222.A222208;
  */
 public class A242211 extends A222208 {
 
-  private Z mA = null;
+  private long mM = 0;
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.FOUR : super.a(mA.intValueExact());
-    return mA;
+    if (mM == 0) {
+      mM = 4;
+    } else {
+      while (mA.get(mM) == 0) {
+        super.next();
+      }
+      mM = mA.get(mM);
+    }
+    return Z.valueOf(mM);
   }
 }

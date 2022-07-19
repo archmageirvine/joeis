@@ -14,7 +14,21 @@ public class MultiplicativeSequence implements SequenceWithOffset {
 
   private final BiFunction<Z, Integer, Z> mF;
   private final int mOffset;
-  private long mN;
+  private final long mStep;
+  protected long mN;
+
+  /**
+   * Construct a multiplicative sequence with the given function.
+   * @param offset index of first term
+   * @param step step between values of n
+   * @param f function
+   */
+  public MultiplicativeSequence(final int offset, final long step, final BiFunction<Z, Integer, Z> f) {
+    mOffset = offset;
+    mStep = step;
+    mN = mOffset - 1;
+    mF = f;
+  }
 
   /**
    * Construct a multiplicative sequence with the given function.
@@ -22,14 +36,13 @@ public class MultiplicativeSequence implements SequenceWithOffset {
    * @param f function
    */
   public MultiplicativeSequence(final int offset, final BiFunction<Z, Integer, Z> f) {
-    mOffset = offset;
-    mN = mOffset - 1;
-    mF = f;
+    this(offset, 1, f);
   }
 
   @Override
   public Z next() {
-    final FactorSequence fs = Jaguar.factor(++mN);
+    mN += mStep;
+    final FactorSequence fs = Jaguar.factor(mN);
     Z prod = Z.ONE;
     for (final Z p : fs.toZArray()) {
       prod = prod.multiply(mF.apply(p, fs.getExponent(p)));

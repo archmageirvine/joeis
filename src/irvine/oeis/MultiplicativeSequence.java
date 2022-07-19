@@ -10,16 +10,20 @@ import irvine.math.z.Z;
  * Base class for (multiplicative) arithmetic functions.
  * @author Sean A. Irvine
  */
-public class MultiplicativeSequence implements Sequence {
+public class MultiplicativeSequence implements SequenceWithOffset {
 
   private final BiFunction<Z, Integer, Z> mF;
-  private long mN = 0;
+  private final int mOffset;
+  private long mN;
 
   /**
    * Construct a multiplicative sequence with the given function.
+   * @param offset index of first term
    * @param f function
    */
-  public MultiplicativeSequence(final BiFunction<Z, Integer, Z> f) {
+  public MultiplicativeSequence(final int offset, final BiFunction<Z, Integer, Z> f) {
+    mOffset = offset;
+    mN = mOffset - 1;
     mF = f;
   }
 
@@ -31,5 +35,10 @@ public class MultiplicativeSequence implements Sequence {
       prod = prod.multiply(mF.apply(p, fs.getExponent(p)));
     }
     return prod;
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 }

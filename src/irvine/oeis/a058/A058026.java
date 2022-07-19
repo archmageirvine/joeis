@@ -10,6 +10,6 @@ public class A058026 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A058026() {
-    super((p, e) -> p.pow(e - 1).multiply(p.subtract(2)));
+    super(1, (p, e) -> p.pow(e - 1).multiply(p.subtract(2)));
   }
 }

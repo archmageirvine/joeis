@@ -138,9 +138,9 @@ public class A353700 implements Sequence {
               final long q1 = v0 - d * pt[1];
               return q0 * q0 + q1 * q1 == s2;
             }).count();
-            if (!mRecord.containsKey(n) /* || r2.compareTo(mRecord.get(n)) < 0 */) {
+            final Q r2 = new Q(s2, d2);
+            if (!mRecord.containsKey(n) || r2.compareTo(mRecord.get(n)) < 0) {
               // Record (distance squared, canonical centre)
-              final Q r2 = new Q(s2, d2);
               if (mVerbose) {
                 StringUtils.message(n + " -> " + r2);
               }

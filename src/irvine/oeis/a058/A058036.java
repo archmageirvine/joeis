@@ -1,27 +1,25 @@
-package irvine.oeis.a001;
+package irvine.oeis.a058;
 
 import java.util.Arrays;
 import java.util.HashSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.a000.A000032;
 
 /**
- * A001578 Smallest primitive prime factor of Fibonacci number F(n), or 1 if F(n) has no primitive prime factor.
+ * A058036 Smallest primitive prime factor of the n-th Lucas number (A000032); i.e., L(n), L(0) = 2, L(1) = 1 and L(n) = L(n-1) + L(n-2).
  * @author Sean A. Irvine
  */
-public class A001578 implements Sequence {
+public class A058036 extends A000032 {
 
-  private int mN = 0;
   private final HashSet<Z> mPrimitives = new HashSet<>();
 
   @Override
   public Z next() {
-    final Z f = Fibonacci.fibonacci(++mN);
-    final FactorSequence fs = Jaguar.factor(f);
+    final Z lucas = super.next();
+    final FactorSequence fs = Jaguar.factor(lucas);
     final Z[] factors = fs.toZArray();
     for (final Z p : factors) {
       if (Z.ONE.equals(p)) {

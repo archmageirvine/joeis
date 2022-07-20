@@ -976,6 +976,19 @@ public final class ZUtils {
   }
 
   /**
+   * Return integers as an array of longs.
+   * @param a array
+   * @return Z array
+   */
+  public static long[] toLong(final Z... a) {
+    final long[] res = new long[a.length];
+    for (int k = 0; k < res.length; ++k) {
+      res[k] = a[k].longValueExact();
+    }
+    return res;
+  }
+
+  /**
    * Convert a list of integers specified as a string into an array of Z.
    * The numbers in the string can be space or comma separated.
    * @param string string containing numbers

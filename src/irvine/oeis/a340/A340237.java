@@ -4,7 +4,6 @@ package irvine.oeis.a340;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a052.A052918;
 import irvine.oeis.a339.A339130;
-
 /**
  * A340237 Odd composite integers m such that A052918(3*m-J(m,29)) == 5 (mod m), where J(m,29) is the Jacobi symbol.
  * @author Georg Fischer

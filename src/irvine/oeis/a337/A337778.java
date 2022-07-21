@@ -3,7 +3,6 @@ package irvine.oeis.a337;
 
 import irvine.oeis.a001.A001353;
 import irvine.oeis.a003.A003500;
-
 /**
  * A337778 Odd composite integers m such that U(m)^2 == 1 (mod m) and V(m) == 4 (mod m), where U(m)=A001353(m) and V(m)=A003500(m) are the m-th generalized Lucas and Pell-Lucas numbers of parameters a=4 and b=1, respectively.
  * @author Georg Fischer

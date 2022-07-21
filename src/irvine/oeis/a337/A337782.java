@@ -3,7 +3,6 @@ package irvine.oeis.a337;
 
 import irvine.oeis.a004.A004187;
 import irvine.oeis.a056.A056854;
-
 /**
  * A337782 Even composite integers m such that U(m)^2 == 1 (mod m) and V(m) == 7 (mod m), where U(m)=A004187(m) and V(m)=A056854(m) are the m-th generalized Lucas and Pell-Lucas numbers of parameters a=7 and b=1, respectively.
  * @author Georg Fischer

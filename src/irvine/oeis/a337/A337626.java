@@ -3,7 +3,6 @@ package irvine.oeis.a337;
 
 import irvine.oeis.a006.A006190;
 import irvine.oeis.a006.A006497;
-
 /**
  * A337626 Odd composite integers m such that U(m)^2 == 1 (mod m) and  V(m) == 3 (mod m), where U(m) and V(m) are the m-th generalized Lucas and Pell-Lucas numbers of parameters a=3 and b=-1, respectively.
  * @author Georg Fischer

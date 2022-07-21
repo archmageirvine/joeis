@@ -3,7 +3,6 @@ package irvine.oeis.a340;
 
 import irvine.oeis.a001.A001906;
 import irvine.oeis.a339.A339130;
-
 /**
  * A340097 Odd composite integers m such that A001906(m-J(m,5)) == 0 (mod m), where J(m,5) is the Jacobi symbol.
  * @author Georg Fischer

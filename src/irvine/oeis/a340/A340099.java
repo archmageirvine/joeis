@@ -3,7 +3,6 @@ package irvine.oeis.a340;
 
 import irvine.oeis.a004.A004187;
 import irvine.oeis.a339.A339130;
-
 /**
  * A340099 Odd composite integers m such that A004187(m-J(m,45)) == 0 (mod m) and gcd(m,45)=1, where J(m,45) is the Jacobi symbol.
  * @author Georg Fischer

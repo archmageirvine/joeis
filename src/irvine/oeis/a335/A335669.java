@@ -53,7 +53,7 @@ public class A335669 extends A014076 implements SequenceWithOffset {
       if (mExp > 1) {
         val = val.pow(mExp);
       }
-      //  if (val.mod(m).equals(mMod)) {
+  //  if (val.mod(m).equals(mMod)) {
       if (val.subtract(mMod).remainder(m).isZero()) {
         return m;
       }

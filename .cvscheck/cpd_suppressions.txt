@@ -1,6 +1,9 @@
 gebhardt/Canonical.java
 irvine/math/expression/GrammarLexer.java
 irvine/math/expression/GrammarParser.java
+irvine/math/lattice/Kite.java
+irvine/math/lattice/Pon.java
+irvine/math/lattice/Arc.java
 irvine/oeis/a093/A093385.java
 irvine/oeis/a093/A093386.java
 irvine/oeis/a021/A021495.java
@@ -122,3 +125,4 @@ irvine/oeis/a057/A057112.java
 irvine/oeis/a057/A057344.java
 irvine/oeis/a057/A057345.java
 irvine/oeis/a057/A057346.java
+irvine/oeis/a057/A057535.java

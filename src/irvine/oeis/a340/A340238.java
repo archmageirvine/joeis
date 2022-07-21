@@ -4,7 +4,6 @@ package irvine.oeis.a340;
 import irvine.oeis.PrependSequence;
 import irvine.oeis.a054.A054413;
 import irvine.oeis.a339.A339130;
-
 /**
  * A340238 Odd composite integers m such that A054413(3*m-J(m,53)) == 7 (mod m), where J(m,53) is the Jacobi symbol.
  * @author Georg Fischer

@@ -14,13 +14,12 @@ import irvine.oeis.a014.A014076;
  */
 public class A337625 extends A014076 implements SequenceWithOffset {
 
-  private int mK;
-  private int mOffset;
-  private MemorySequence mSeq1;
-  private int mExp;
-  private Z mMod1;
-  private MemorySequence mSeq2;
-  private Z mMod2;
+  private final int mOffset;
+  private final MemorySequence mSeq1;
+  private final int mExp;
+  private final Z mMod1;
+  private final MemorySequence mSeq2;
+  private final Z mMod2;
 
   /** Construct the sequence. */
   public A337625() {
@@ -55,13 +54,13 @@ public class A337625 extends A014076 implements SequenceWithOffset {
   public Z next() {
     while (true) {
       final Z m = super.next();
-      mK = m.intValueExact();
-      Z val = mSeq1.a(mK);
+      final int k = m.intValueExact();
+      Z val = mSeq1.a(k);
       if (mExp > 1) {
         val = val.pow(mExp);
       }
       //  if (val.mod(m).equals(mMod1) && mSeq2.a(mK).mod(m).equals(mMod2)) {
-      if (val.subtract(mMod1).remainder(m).isZero() && mSeq2.a(mK).subtract(mMod2).remainder(m).isZero()) {
+      if (val.subtract(mMod1).mod(m).isZero() && mSeq2.a(k).subtract(mMod2).mod(m).isZero()) {
         return m;
       }
     }

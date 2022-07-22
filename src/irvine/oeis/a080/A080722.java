@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a079.A079000;
 
 /**
- * A080722 a(0) = 0; for n&gt;0, a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a member of the sequence if and only if a(n) == 1 mod 3".
+ * A080722 a(0) = 0; for n &gt; 0, a(n) is taken to be the smallest positive integer greater than a(n-1) which is consistent with the condition "n is a term of the sequence if and only if a(n) == 1 (mod 3)".
  * @author Georg Fischer
  */
 public class A080722 extends A079000 {

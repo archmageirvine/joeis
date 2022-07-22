@@ -5,7 +5,7 @@ package irvine.oeis.a069;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A069071 (2n+1)*((2n+1)^4+4).
+ * A069071 a(n) = (2n+1) * ((2n+1)^4 + 4).
  * @author Georg Fischer
  */
 public class A069071 extends HolonomicRecurrence {

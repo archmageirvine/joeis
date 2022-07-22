@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A292970 E.g.f.: exp(x^5 * exp(-x)).
+ * A292970 Expansion of e.g.f. exp(x^5 * exp(-x)).
  * E.g.f.: exp(x^5 * exp(-x))
  * @author Georg Fischer
  */

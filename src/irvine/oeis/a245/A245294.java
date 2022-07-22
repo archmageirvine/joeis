@@ -7,7 +7,7 @@ import irvine.oeis.a176.A176057;
 
 
 /**
- * A245294 Decimal expansion of the square root of 1.2.
+ * A245294 Decimal expansion of the square root of 6/5.
  * @author Georg Fischer
  */
 public class A245294 extends PrependSequence {

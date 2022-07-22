@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A198395 Ceiling(n*sqrt(17)).
+ * A198395 a(n) = ceiling(n*sqrt(17)).
  * @author Georg Fischer
  */
 public class A198395 extends FloorSequence {

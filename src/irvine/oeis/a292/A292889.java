@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A292889 E.g.f.: exp(x^3 * exp(x)).
+ * A292889 Expansion of e.g.f. exp(x^3 * exp(x)).
  * E.g.f.: exp(x^3 * exp(x))
  * @author Georg Fischer
  */

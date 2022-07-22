@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A181427 n+[n^2 if n is odd or n^3 if n is even].
+ * A181427 a(n) = n + [n^2 if n is odd or n^3 if n is even].
  * @author Sean A. Irvine
  */
 public class A181427 extends LinearRecurrence {

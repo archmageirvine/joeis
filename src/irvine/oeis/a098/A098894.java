@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a152.A152113;
 
 /**
- * A098894 Values of n such that {s(1),...,s(n)} is a palindrome, where {s(1),s(2),...} is the fixed-point of the substitutions 0-&gt;1 and 1-&gt;110.
+ * A098894 Values of k such that {s(1),...,s(k)} is a palindrome, where {s(1),s(2),...} is the fixed point of the substitutions 0-&gt;1 and 1-&gt;110.
  * @author Sean A. Irvine
  */
 public class A098894 extends PartialSumSequence {

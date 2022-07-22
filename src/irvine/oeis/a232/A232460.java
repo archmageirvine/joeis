@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000215;
 
 /**
- * A232460 2^(2^n) - 5.
+ * A232460 a(n) = 2^(2^n) - 5.
  * @author Georg Fischer
  */
 public class A232460 implements Sequence {

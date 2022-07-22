@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A292969 E.g.f.: exp(x^4 * exp(-x)).
+ * A292969 Expansion of e.g.f. exp(x^4 * exp(-x)).
  * E.g.f.: exp(x^4 * exp(-x))
  * @author Georg Fischer
  */

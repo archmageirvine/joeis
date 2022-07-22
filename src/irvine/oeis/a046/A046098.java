@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046098 Numbers n such that central binomial coefficient C(n, floor[n/2]) is squarefree.
+ * A046098 Numbers n such that central binomial coefficient C(n, floor(n/2)) is squarefree.
  * @author Sean A. Irvine
  */
 public class A046098 implements Sequence {

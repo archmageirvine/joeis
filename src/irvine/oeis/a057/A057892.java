@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005351;
 import irvine.oeis.a005.A005352;
 
 /**
- * A057892 Negabinary numbral addition table.
+ * A057892 Negabinary numbral addition table read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A057892 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a031.A031974;
 
 /**
- * A097708 Sum of prime length repunits; sum_k=1..n (r(p(k))), where r()= A002275 and p(k) is the k-th prime.
+ * A097708 Sum of prime-length repunits: Sum_{k=1..n} r(prime(k)), where r()=A002275.
  * @author Sean A. Irvine
  */
 public class A097708 extends PartialSumSequence {

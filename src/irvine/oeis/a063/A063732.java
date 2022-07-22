@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A063732 Numbers n such that Lucas representation of n excludes L_0 = 2.
+ * A063732 Numbers whose Lucas representation excludes L_0 = 2.
  * @author Sean A. Irvine
  */
 public class A063732 implements Sequence {

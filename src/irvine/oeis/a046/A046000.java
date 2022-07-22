@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A046000 a(n) is largest number m equal to the sum of digits of m^n.
+ * A046000 a(n) is the largest number m equal to the sum of digits of m^n.
  * @author Sean A. Irvine
  */
 public class A046000 implements Sequence {

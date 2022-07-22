@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a051.A051451;
 
 /**
- * A058024 a(n) = A058019(n) - A058023(n).
+ * A058024 a(n) = A051451(n) - A058023(n).
  * @author Sean A. Irvine
  */
 public class A058024 extends A051451 {

@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A075270 Sum of Lucas numbers and inverted Lucas numbers: a(n)=A000032(n)*A075193(n).
+ * A075270 Sum of Lucas numbers and inverted Lucas numbers: a(n) = A000032(n)*A075193(n).
  * @author Georg Fischer
  */
 public class A075270 extends HolonomicRecurrence {

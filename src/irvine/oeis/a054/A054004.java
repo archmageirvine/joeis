@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002961;
 
 /**
- * A054004 Numbers n such that n and n+1 have the same number and sum of divisors.
+ * A054004 Numbers k such that k and k+1 have the same number and sum of divisors.
  * @author Sean A. Irvine
  */
 public class A054004 extends A002961 {

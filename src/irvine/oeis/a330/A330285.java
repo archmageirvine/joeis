@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a002.A002541;
 
 /**
- * A330285 The maximum number of arithmetic progressions for a sequence of length n.
+ * A330285 The maximum number of arithmetic progressions in a sequence of length n.
  * @author Sean A. Irvine
  */
 public class A330285 extends PartialSumSequence {

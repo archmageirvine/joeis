@@ -5,7 +5,7 @@ package irvine.oeis.a183;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A183860 n+floor(sqrt(3n+1)); complement of A183861.
+ * A183860 a(n) = n+floor(sqrt(3n+1)); complement of A183861.
  * @author Georg Fischer
  */
 public class A183860 extends ComplementSequence {

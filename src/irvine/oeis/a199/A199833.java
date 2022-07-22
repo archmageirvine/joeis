@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a016.A016826;
 
 /**
- * A199833 Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two neighbors summing to zero.
+ * A199833 Number of -n..n arrays of 4 elements with zero sum and no two neighbors summing to zero.
  * @author Sean A. Irvine
  */
 public class A199833 extends PartialSumSequence {

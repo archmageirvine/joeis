@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A131519 Number of partitions of the graph G_n (defined below) into "strokes".
+ * A131519 a(1) = 1, a(2) = 6, a(3) = 66, a(4) = 714, and  a(n) = 11*a(n-1) - 24*a(n-3) for n &gt;= 5.
  * @author Georg Fischer
  */
 public class A131519 extends GeneratingFunctionSequence {

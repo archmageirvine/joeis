@@ -6,7 +6,7 @@ package irvine.oeis.a219;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A219562 Sum(binomial(n+k,k)^4, k=0..n).
+ * A219562 a(n) = Sum_{k=0..n} binomial(n+k,k)^4.
  * @author Georg Fischer
  */
 public class A219562 extends HolonomicRecurrence {

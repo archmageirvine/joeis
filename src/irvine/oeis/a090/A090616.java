@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a011.A011371;
 
 /**
- * A090616 Highest power of 4 dividing n!.
+ * A090616 Exponent of highest power of 4 dividing n!.
  * @author Georg Fischer
  */
 public class A090616 extends A011371 {

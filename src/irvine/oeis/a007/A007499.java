@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007499 Related to hexaflexagrams.
+ * A007499 Number of cases considered in a particular algorithm for enumerating hexaflexagrams.
  * @author Sean A. Irvine
  */
 public class A007499 implements Sequence {

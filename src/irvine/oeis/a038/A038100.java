@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A038100 a(n) &lt; first location of string of a(n) in decimal expansion of Pi.
+ * A038100 Numbers k such that k &lt; first location of string of k in decimal expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A038100 extends A000796 {

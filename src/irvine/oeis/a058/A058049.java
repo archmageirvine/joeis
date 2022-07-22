@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A058049.
+ * A058049 Numbers k such that the sum of the digits of the first k primes is a prime.
  * @author Sean A. Irvine
  */
 public class A058049 extends A000040 {

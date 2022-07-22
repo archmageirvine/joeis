@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A354223 allocated for Tamas Sandor Nagy.
+ * A354223 The initial sequence of the positive integers gradually becomes interspersed with the copies of its terms and so is transformed into this sequence. The method is described in the Comments section.
  * @author Sean A. Irvine
  */
 public class A354223 implements Sequence {

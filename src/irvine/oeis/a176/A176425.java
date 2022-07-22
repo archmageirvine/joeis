@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a046.A046091;
 
 /**
- * A176425 Partial sums of A046091.
+ * A176425 Number of connected planar graphs with at most n edges.
  * @author Georg Fischer
  */
 public class A176425 extends PartialSumSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A075419 a(n)=Sum((-1)^(i+Floor(n/2))C(2i+e),(i=0,..,Floor(n/2))), where C(n) are reflected tribonacci numbers (A073145).
+ * A075419 Convolution of A073145 with A056594.
  * @author Georg Fischer
  */
 public class A075419 extends HolonomicRecurrence {

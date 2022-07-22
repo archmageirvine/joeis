@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A117658 Number of solutions to x^(k+1)=x^k mod n for some k&gt;=1.
+ * A117658 Number of solutions to x^(k+1) = x^k mod n for some k &gt;= 1.
  * @author Georg Fischer
  */
 public class A117658 extends MultiplicativeSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 import irvine.oeis.a014.A014311;
 
 /**
- * A081091 Primes of the form 2^i + 2^j + 1, i&gt;j&gt;0.
+ * A081091 Primes of the form 2^i + 2^j + 1, i &gt; j &gt; 0.
  *
  * @author Georg Fischer
  */

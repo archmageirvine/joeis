@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A240989 E.g.f.: exp(x^2 * (exp(x) - 1)).
+ * A240989 Expansion of e.g.f. exp(x^2 * (exp(x) - 1)).
  * E.g.f.: exp(x^2 * (exp(x) - 1))
  * @author Georg Fischer
  */

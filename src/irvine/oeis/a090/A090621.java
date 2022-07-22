@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a011.A011371;
 
 /**
- * A090621 Highest power of 16 dividing n!.
+ * A090621 Exponent of highest power of 16 dividing n!.
  * @author Georg Fischer
  */
 public class A090621 extends A011371 {

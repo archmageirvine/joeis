@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A353700 allocated for Sofia Lacerda.
+ * A353700 Numerator of squared radius of smallest circle passing through exactly n integral points.
  * @author Sean A. Irvine
  */
 public class A353700 implements Sequence {

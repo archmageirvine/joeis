@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002961;
 
 /**
- * A231546 Numbers n such that sigma(n) = sigma(n-1).
+ * A231546 Numbers k such that sigma(k) = sigma(k-1).
  * @author Georg Fischer
  */
 public class A231546 extends A002961 {

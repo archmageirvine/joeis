@@ -6,7 +6,7 @@ package irvine.oeis.a120;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A120304 Catalan number minus 2, or ((2n)!/(n!*(n+1)!) - 2).
+ * A120304 Catalan numbers minus 2.
  * @author Georg Fischer
  */
 public class A120304 extends HolonomicRecurrence {

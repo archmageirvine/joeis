@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A058040 (p_1,p_2,...,p_m) = prime factors of n; (m&gt;1,k&gt;0); n such that n = Sum_{i=1,2,..,m} k^(p_i).
+ * A058040 Numbers k such that if p_1,p_2,...,p_m, m&gt;1, are the prime factors of k, then there is some b&gt;0 such that k = Sum_{i=1..m} b^(p_i).
  * @author Sean A. Irvine
  */
 public class A058040 implements Sequence {

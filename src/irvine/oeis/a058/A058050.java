@@ -9,9 +9,15 @@ import irvine.oeis.Sequence;
  */
 public class A058050 implements Sequence {
 
+  // It would be possible to squeeze one more bit here as bit 0 is not currently used.
+  // It would be possible to cache smaller results to make it faster.
+
   private int mN = 0;
 
   private long count(final long bits, final int pos) {
+    // pos counts down from the number of vertices
+    // bits is a set indicating which vertices are not isolated, and thus
+    // controls which vertices need to be expanded.
     if (pos <= 1) {
       return 1;
     }
@@ -20,8 +26,8 @@ public class A058050 implements Sequence {
       return count(bits, pos - 1);
     } else {
       long cnt = 0;
-      for (int k = 1; k <= pos / 2; ++k) {
-        cnt += count(bits | (1L << k) | 1L << (pos - k), pos - 1);
+      for (int x = 1; x <= pos / 2; ++x) {
+        cnt += count(bits | (1L << x) | 1L << (pos - x), pos - 1);
       }
       return cnt;
     }

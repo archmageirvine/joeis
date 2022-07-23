@@ -1,5 +1,6 @@
 package irvine.math.group;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
@@ -240,7 +241,38 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
 
   @Override
   public Iterator<Polynomial<E>> iterator() {
-    throw new UnsupportedOperationException();
+    return new Iterator<>() {
+      // Generate all degree 0, then all degree 1, and so on
+      private final ArrayList<E> mCoeffs = new ArrayList<>();
+      private final ArrayList<Iterator<E>> mIterators = new ArrayList<>();
+
+      @Override
+      public boolean hasNext() {
+        return true;
+      }
+
+      @Override
+      public Polynomial<E> next() {
+        int k = 0;
+        while (true) {
+          if (k >= mCoeffs.size()) {
+            mIterators.add(mElementRing.iterator());
+            if (k > 0) {
+              mIterators.get(k).next(); // skip the 0 of the underlying field
+            }
+            mCoeffs.add(mIterators.get(k).next());
+          }
+          if (mIterators.get(k).hasNext()) {
+            mCoeffs.set(k, mIterators.get(k).next());
+            return create(mCoeffs);
+          } else {
+            mIterators.set(k, mElementRing.iterator());
+            mCoeffs.set(k, mIterators.get(k).next());
+            ++k;
+          }
+        }
+      }
+    };
   }
 
   @Override

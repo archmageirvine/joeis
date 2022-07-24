@@ -200,7 +200,7 @@ public final class PolynomialUtils {
    * @param n the maximum degree to retain
    * @return power series
    */
-  public static Polynomial<Q> cubeRoot(final Polynomial<Q> x, final int n) {
+  public static Polynomial<Q> cubeRootP(final Polynomial<Q> x, final int n) {
     final PolynomialRingField<Q> ring = new PolynomialRingField<>(Rationals.SINGLETON);
     Polynomial<Q> res = ring.one();
     Polynomial<Q> f = ring.one();

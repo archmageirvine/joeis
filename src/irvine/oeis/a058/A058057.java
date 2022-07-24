@@ -22,7 +22,6 @@ public class A058057 implements Sequence {
 
   /**
    * Return an element from the triangle defining these menage polynomials.
-   *
    * @param n row
    * @param m column
    * @return value

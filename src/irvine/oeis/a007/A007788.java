@@ -25,7 +25,7 @@ public class A007788 implements Sequence {
       mF = mF.multiply(mN);
     }
     final Polynomial<Q> nsin = RING.negate(RING.sin(THREE_X, mN));
-    final Polynomial<Q> a = PolynomialUtils.cubeRoot(nsin, mN);
+    final Polynomial<Q> a = PolynomialUtils.cubeRootP(nsin, mN);
     return RING.coeff(RING.one(), a, mN).multiply(mF).toZ();
   }
 }

@@ -48,7 +48,7 @@ public class PolynomialUtilsTest extends TestCase {
   }
 
   public void testSeriesCubeRoot() {
-    assertEquals("1+1/3x-1/9x^2+5/81x^3-10/243x^4", PolynomialUtils.cubeRoot(new PolynomialRingField<>(Rationals.SINGLETON).x(), 4).toString());
+    assertEquals("1+1/3x-1/9x^2+5/81x^3-10/243x^4", PolynomialUtils.cubeRootP(new PolynomialRingField<>(Rationals.SINGLETON).x(), 4).toString());
 
   }
 }

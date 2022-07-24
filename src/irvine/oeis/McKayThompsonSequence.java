@@ -85,14 +85,7 @@ public class McKayThompsonSequence implements Sequence {
   protected int mN;
 
   /**
-   * Empty constructor
-   */
-  public McKayThompsonSequence() {
-    this(new String[]{"1A"}, new long[]{-1, 0}, 0);
-  }
-
-  /**
-   * Constructor
+   * Constructor for a specific McKay-Thompson sequence..
    * @param selectedClasses class codes from the ATLAS,
    * for example "1A", "119B", or combined like "39CD"
    * @param prefix values for a(-1) and a(0)

@@ -4,7 +4,6 @@ package irvine.oeis.a058;
 
 import irvine.oeis.McKayThompsonSequence;
 
-
 /**
  * A058091 McKay-Thompson series of class 9B for the Monster group.
  * @author Georg Fischer

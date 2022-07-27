@@ -11,26 +11,25 @@ public abstract class MemoryFunctionInt2<R> extends HashMap<String, R> {
 
   /**
    * Compute the function at specified parameters.
-   * @param a first parameter
-   * @param b second parameter
+   * @param n first parameter
+   * @param m second parameter
    * @return value of function
    */
-  protected abstract R compute(final int a, final int b);
+  protected abstract R compute(final int n, final int m);
 
   /**
    * Return the value of the function at specified parameters.
-   * @param a first parameter
-   * @param b second parameter
-   * @param c third parameter
+   * @param n first parameter
+   * @param m second parameter
    * @return value of function
    */
-  public R get(final int a, final int b) {
-    final String key = a + "," + b;
+  public R get(final int n, final int m) {
+    final String key = n + "," + m;
     final R res = get(key);
     if (res != null) {
       return res;
     }
-    final R r = compute(a, b);
+    final R r = compute(n, m);
     put(key, r);
     return r;
   }

@@ -13,8 +13,8 @@ import irvine.oeis.Sequence;
  */
 public class A039796 implements Sequence {
 
-  private int mN = 1;
-  private long mLim = 0;
+  protected int mN = 1;
+  protected long mLim = 0;
   private double[] mSin = null;
   private double[] mCos = null;
 
@@ -29,17 +29,7 @@ public class A039796 implements Sequence {
     return sum;
   }
 
-  private boolean isCompatible(final long n, final long m) {
-    final int a = autocorrelation(n, 1) + autocorrelation(m, 1);
-    for (int k = 2; k < mN; ++k) {
-      if (autocorrelation(n, k) + autocorrelation(m, k) != a) {
-        return false;
-      }
-    }
-    return true;
-  }
-
-  private boolean isCanonical(final long n) {
+  protected boolean isCanonical(final long n) {
     // largest is canon
     long m = n;
     for (int k = 1; k < mN; ++k) {
@@ -81,6 +71,15 @@ public class A039796 implements Sequence {
     return true;
   }
 
+  private boolean isCompatible(final int[] a, final int[] b) {
+    final int c = a[0] + b[0];
+    for (int k = 1; k < a.length; ++k) {
+      if (a[k] + b[k] != c) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   @Override
   public Z next() {
@@ -108,10 +107,22 @@ public class A039796 implements Sequence {
       }
     }
     System.out.println("n=" + mN + " w=" + w + " c=" + c(mN, w) + " canons=" + canons.size());
+
+    // Precompute autocorrelations
+    final int[][] autoc = new int[canons.size()][mN - 1];
+    for (int k = 0; k < autoc.length; ++k) {
+      final long canon = canons.get(k);
+      for (int j = 0; j < autoc[k].length; ++j) {
+        autoc[k][j] = autocorrelation(canon, j + 1);
+      }
+    }
+
+    System.out.println("Auto correlations done");
+
     long cnt = 0;
-    for (final long c1 : canons) {
-      for (final long c2 : canons) {
-        if (c1 != c2 && isCompatible(c1, c2)) {
+    for (int k = 0; k < autoc.length; ++k) {
+      for (int j = 0; j < autoc.length; ++j) {
+        if (j != k && isCompatible(autoc[k], autoc[j])) {
           ++cnt;
           break;
         }

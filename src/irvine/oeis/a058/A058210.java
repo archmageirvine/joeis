@@ -10,13 +10,16 @@ import irvine.oeis.FloorSequence;
  * @author Georg Fischer
  */
 public class A058210 extends FloorSequence {
+
+  private static final CR EXP_GAMMA = CR.GAMMA.exp();
+
   /** Construct the sequence. */
   public A058210() {
     super(2);
   }
 
   protected Z evalCR(final long n) {
-    return CR.GAMMA.exp().multiply(CR.valueOf(n)).multiply(CR.valueOf(n).log().log()).floor();
+    return EXP_GAMMA.multiply(CR.valueOf(n)).multiply(CR.valueOf(n).log().log()).floor();
   }
 
 }

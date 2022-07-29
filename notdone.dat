@@ -1966,3 +1966,5 @@ A058175 Triangle: Number of quasigroups of order n with k idempotents.
 A058176 Triangle: Number of asymmetric quasigroups of order n with k idempotents.
 A058177 Triangle: Number of commutative quasigroups of order n with k idempotents.
 A058178 Triangle: Self-converse quasigroups of order n with k idempotents.
+A058211 Numbers k such that there is an arrangement of k points in the plane such that no point is on >= k/2 connecting lines
+A058224 Largest d such that the linear programming bound for quantum codes of length n is feasible for some real K>1.

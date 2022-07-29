@@ -9,9 +9,10 @@ import irvine.oeis.FloorSequence;
  * @author Georg Fischer
  */
 public class A125892 extends FloorSequence {
+
   /** Construct the sequence. */
   public A125892() {
-    super(1);
+    super(0);
   }
 
   protected Z evalCR(final long n) {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A058225.
+ * A058226 Panconsummate numbers (consummate in all bases &gt;=2).
  * @author Sean A. Irvine
  */
 public class A058226 extends ComplementSequence {

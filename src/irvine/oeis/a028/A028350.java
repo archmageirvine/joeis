@@ -1,23 +1,16 @@
 package irvine.oeis.a028;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A028350 Expansion of -1/x + 6*3F2( 5/6, 1, 7/6; 3/2, 2; 108*x).
- * @author Sean A. Irvine
+ * Recurrence: (n+1)*(2*n+1)*a(n) -6*(6*n-1)*(6*n+1)*a(n-1)=0.
+ * @author Georg Fischer
  */
-public class A028350 implements Sequence {
+public class A028350 extends HolonomicRecurrence {
 
-  private long mN = -2;
-  private Z mA = Z.NEG_ONE;
-  
-  @Override
-  public Z next() {
-    if (++mN >= 0) {
-     mA = mA.multiply(6 * mN + 1).multiply(6 * mN - 1).multiply(6).divide(mN + 1).divide(2 * mN + 1);
-    }
-    return mA;
+  /** Construct the sequence. */
+  public A028350() {
+    super(-1, "[[0],[6, 0,-216],[1, 3, 2]", "-1", 0);
   }
 }
-

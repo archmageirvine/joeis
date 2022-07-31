@@ -9,6 +9,8 @@ import irvine.oeis.Sequence;
  */
 public class A058227 implements Sequence {
 
+  // WARNING: Conjectural
+
   private Z mA = Z.ZERO;
   private int mN = 0;
 

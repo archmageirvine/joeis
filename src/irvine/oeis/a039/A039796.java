@@ -1,11 +1,14 @@
 package irvine.oeis.a039;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A039796 Sequence arising in search for Legendre sequences.
@@ -13,6 +16,7 @@ import irvine.oeis.Sequence;
  */
 public class A039796 implements Sequence {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected int mN = 1;
   protected long mLim = 0;
   private double[] mSin = null;
@@ -72,9 +76,8 @@ public class A039796 implements Sequence {
   }
 
   private boolean isCompatible(final int[] a, final int[] b) {
-    final int c = a[0] + b[0];
-    for (int k = 1; k < a.length; ++k) {
-      if (a[k] + b[k] != c) {
+    for (int k = 0; k < a.length; ++k) {
+      if (a[k] + b[k] != 0) {
         return false;
       }
     }
@@ -106,29 +109,44 @@ public class A039796 implements Sequence {
         canons.add(k);
       }
     }
-    System.out.println("n=" + mN + " w=" + w + " c=" + c(mN, w) + " canons=" + canons.size());
-
-    // Precompute autocorrelations
-    final int[][] autoc = new int[canons.size()][mN - 1];
-    for (int k = 0; k < autoc.length; ++k) {
-      final long canon = canons.get(k);
-      for (int j = 0; j < autoc[k].length; ++j) {
-        autoc[k][j] = autocorrelation(canon, j + 1);
-      }
+    if (mVerbose) {
+      StringUtils.message("n=" + mN + " w=" + w + " c=" + c(mN, w) + " canons=" + canons.size());
     }
 
-    System.out.println("Auto correlations done");
+    // Precompute autocorrelations
+    // Normalize by a(0)
+    final int[][] autoc = new int[canons.size()][mN - 2];
+    final HashMap<Integer, List<int[]>> compats = new HashMap<>();
+    for (int k = 0; k < autoc.length; ++k) {
+      final long canon = canons.get(k);
+      final int a0 = autocorrelation(canon, 1);
+      for (int j = 0; j < autoc[k].length; ++j) {
+        autoc[k][j] = autocorrelation(canon, j + 2) - a0;
+      }
+      final int akKey = autoc[k][0];
+      if (!compats.containsKey(akKey)) {
+        compats.put(akKey, new ArrayList<>());
+      }
+      compats.get(akKey).add(autoc[k]);
+    }
+    if (mVerbose) {
+      StringUtils.message("Auto correlations done, classes " + compats.size());
+    }
 
     long cnt = 0;
-    for (int k = 0; k < autoc.length; ++k) {
-      for (int j = 0; j < autoc.length; ++j) {
-        if (j != k && isCompatible(autoc[k], autoc[j])) {
-          ++cnt;
-          break;
+    for (final Map.Entry<Integer, List<int[]>> e : compats.entrySet()) {
+      final int autoKey = e.getKey();
+      if (compats.containsKey(-autoKey)) {
+        for (final int[] autock : autoc) {
+          for (final int[] autocj : compats.get(-autoKey)) {
+            if (autocj != autock && isCompatible(autock, autocj)) {
+              ++cnt;
+              break;
+            }
+          }
         }
       }
     }
-    //System.out.println(mN + " " + w);
     return Z.valueOf(cnt);
   }
 }

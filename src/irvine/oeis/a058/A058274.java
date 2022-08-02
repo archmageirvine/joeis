@@ -1,0 +1,24 @@
+package irvine.oeis.a058;
+
+import irvine.factor.factor.Jaguar;
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A058274 An approximation to sigma_{5/2}(n): ceiling( sum_{d|n} d^(5/2) ).
+ * @author Sean A. Irvine
+ */
+public class A058274 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    CR sum = CR.ZERO;
+    for (final Z d : Jaguar.factor(++mN).divisors()) {
+      sum = sum.add(CR.valueOf(d.pow(5)).sqrt());
+    }
+    return sum.ceil();
+  }
+}

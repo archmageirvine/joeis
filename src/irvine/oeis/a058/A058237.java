@@ -3,6 +3,7 @@ package irvine.oeis.a058;
 import java.util.ArrayList;
 import java.util.List;
 
+import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.z.Z;
 
 /**
@@ -30,7 +31,7 @@ public class A058237 extends A058059 {
         coeffs.add(Z.ZERO);
       }
       coeffs.add(Z.ONE);
-      if (isIrreducible(GF3.create(coeffs))) {
+      if (IrreduciblePolynomials.isIrreducible(GF3, GF3X.create(coeffs))) {
         return Z.valueOf(mN);
       }
     }

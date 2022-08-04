@@ -7,6 +7,8 @@ import java.util.Iterator;
 import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.Mobius;
+import irvine.math.group.GaloisField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
 
@@ -240,6 +242,44 @@ public final class IrreduciblePolynomials {
     // This should never happen for a well formed irreducible
     throw new UnsupportedOperationException();
   }
+
+  private static Polynomial<Z> powMod(final PolynomialRingField<Z> ring, final Polynomial<Z> x, final Z n, final Polynomial<Z> mod) {
+    // x^0
+    if (n.isZero()) {
+      return ring.one();
+    }
+    // x^1
+    if (Z.ONE.equals(n)) {
+      return x;
+    }
+    // x^2 (this case for efficiency)
+    if (Z.TWO.equals(n)) {
+      return ring.mod(ring.multiply(x, x), mod);
+    }
+    final Polynomial<Z> s = powMod(ring, ring.mod(ring.multiply(x, x), mod), n.divide2(), mod);
+    return n.isEven() ? s : ring.mod(ring.multiply(s, x), mod);
+  }
+
+  /**
+   * Test if the given polynomial is irreducible over <code>GF(q)[x]</code>
+   * @param q field order
+   * @param f polynomial
+   * @return true iff the polynomial is irreducible
+   */
+  public static boolean isIrreducible(final GaloisField q, final Polynomial<Z> f) {
+    final PolynomialRingField<Z> ring = new PolynomialRingField<>(q);
+    final int n = f.degree();
+    for (final Z p : Jaguar.factor(n).toZArray()) {
+      final Polynomial<Z> h = ring.mod(ring.subtract(powMod(ring, ring.x(), q.size().pow(n / p.intValue()), f), ring.x()), f);
+      final Polynomial<Z> g = ring.gcd(f, h);
+      if (!ring.one().equals(g)) {
+        return false;
+      }
+    }
+    final Polynomial<Z> g = ring.mod(ring.subtract(powMod(ring, ring.x(), q.size().pow(n), f), ring.x()), f);
+    return ring.zero().equals(g);
+  }
+
 
   /**
    * Print irreducible polynomials.

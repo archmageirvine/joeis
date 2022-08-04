@@ -1970,3 +1970,6 @@ A058211 Numbers k such that there is an arrangement of k points in the plane suc
 A058224 Largest d such that the linear programming bound for quantum codes of length n is feasible for some real K>1.
 A058259 Number of split semiorders on n points
 A058260 Number of minimal forbidden posets for split semiorders on n points.
+A058303 Decimal expansion of the imaginary part of the first nontrivial zero of the Riemann zeta function.
+A058337 Number of connected loop-free Eulerian digraphs with n nodes.
+A058338 Number of digraphs with indegree = outdegree at each vertex, or Eulerian digraphs (including disconnected graphs) with n nodes.

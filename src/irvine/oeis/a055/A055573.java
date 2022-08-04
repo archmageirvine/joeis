@@ -13,7 +13,12 @@ public class A055573 implements Sequence {
 
   private final HarmonicSequence mH = new HarmonicSequence();
 
-  private long continuedFractionLength(Q n) {
+  /**
+   * Length of a finite continued fraction.
+   * @param n rational number
+   * @return length of continued fraction
+   */
+  public static long continuedFractionLength(Q n) {
     long cnt = 0;
     while (true) {
       ++cnt;

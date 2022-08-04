@@ -10,29 +10,29 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058059 Numbers n such that x^n + x + 2 is irreducible over GF(3).
+ * A058334 Numbers n such that the trinomial x^n + x + 1 is irreducible over GF(5).
  * @author Sean A. Irvine
  */
-public class A058059 implements Sequence {
+public class A058334 implements Sequence {
 
-  // Only a few terms can be generated
-
-  protected static final GaloisField GF3 = new GaloisField(3);
-  protected static final PolynomialRingField<Z> GF3X = new PolynomialRingField<>(GF3);
-  private int mN = 1;
+  private static final GaloisField GF5 = new GaloisField(5);
+  private static final PolynomialRingField<Z> GF5X = new PolynomialRingField<>(GF5);
+  private int mN = -1;
 
   @Override
   public Z next() {
     while (true) {
-      ++mN;
+      if (++mN <= 3) {
+        return Z.valueOf(mN);
+      }
       final List<Z> coeffs = new ArrayList<>();
-      coeffs.add(Z.TWO);
+      coeffs.add(Z.ONE);
       coeffs.add(Z.ONE);
       for (int k = 2; k < mN; ++k) {
         coeffs.add(Z.ZERO);
       }
       coeffs.add(Z.ONE);
-      if (IrreduciblePolynomials.isIrreducible(GF3, GF3X.create(coeffs))) {
+      if (IrreduciblePolynomials.isIrreducible(GF5, GF5X.create(coeffs))) {
         return Z.valueOf(mN);
       }
     }

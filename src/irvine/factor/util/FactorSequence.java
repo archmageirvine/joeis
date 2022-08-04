@@ -805,7 +805,7 @@ public final class FactorSequence {
   }
 
   /**
-   * Return the core of this number (unique square free integer dividing this numbers).
+   * Return the core of this number (unique square free integer dividing this number).
    * @return core
    */
   public Z core() {

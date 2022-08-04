@@ -14,7 +14,13 @@ public class A000003 implements Sequence {
 
   // Cf. Cohen 5.3.5 and implementation in LongUtils.
   // This one has primitiveness check
-  protected long classNumber(final long discriminant) {
+
+  /**
+   * Compute the class number for a discriminant.
+   * @param discriminant the discriminant
+   * @return class number
+   */
+  public static long classNumber(final long discriminant) {
     long h = 1;
     final long bLimit = LongUtils.sqrt(-discriminant / 3);
     for (long b = discriminant & 1; b <= bLimit; b += 2) {

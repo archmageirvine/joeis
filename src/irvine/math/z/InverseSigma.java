@@ -68,27 +68,6 @@ public final class InverseSigma {
     return Z.ONE.equals(n) ? Z.ONE : dynamicMax(n, cookSigma(n, k));
   }
 
-//  { invsigma(N,k=1) =
-//    if(N==1, [1], dynamicPreimage(N,cook_sigma(N,k)) );
-//  }
-//
-//
-//  { cook_phi(N) = my(L,p,l);
-//    L=Map();
-//
-//    fordiv(N,n,
-//      p = n+1;
-//    if( !ispseudoprime(p), next );
-//
-//    l = [];
-//    mapisdefined(L,p,&l);
-//    mapput(L, p, concat(l, vector(valuation(N,p)+1,i,[(p-1)*p^(i-1),p^i])) );
-//  );
-//
-//    if(#L,Mat(L)[,2],[]);
-//  }
-//
-
   private static Map<Z, List<Pair<Z, Z>>> cookSigma(final Z n, final long k) {
     final Map<Z, List<Pair<Z, Z>>> lst = new TreeMap<>();
     for (final Z d : FACTOR.factorize(n).divisors()) {
@@ -132,24 +111,6 @@ public final class InverseSigma {
     }
     return r.getOrDefault(n, Z.ZERO);
   }
-
-//  { dynamicPreimage(N,L) = my(l, D, r, t);
-//  \\ dynamic programming
-//    D = Set(divisors(N));
-//    r = vector(#D,i,[]);
-//    r[setsearch(D,1)] = [1];
-//    for(i=1,#L,
-//    t = r;       \\ stands for 1 in (1 + terms of L)
-//    for(j=1,#(L[i]),
-//    fordiv(N/L[i][j][1],n,
-//      l = setsearch(D,n*L[i][j][1]);
-//    t[l] = vecsort(concat(t[l],r[setsearch(D,n)]*L[i][j][2]),,8);
-//      );
-//    );
-//    r = t;
-//  );
-//    r[setsearch(D,N)];
-//  }
 
   private static Z dynamicMin(final Z n, final Map<Z, List<Pair<Z, Z>>> lst) {
     // Uses -1 to represent infinity

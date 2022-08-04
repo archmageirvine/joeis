@@ -12,11 +12,28 @@ import irvine.oeis.MemorySequence;
 public class A005282 extends MemorySequence {
 
   private final TreeSet<Z> mSums = new TreeSet<>();
+  private final Z mFirst;
+  private final Z mSecond;
+
+  protected A005282(final Z first, final Z second) {
+    mFirst = first;
+    mSecond = second;
+  }
+
+  /** Construct the sequence. */
+  public A005282() {
+    this(Z.ONE, Z.TWO);
+  }
 
   @Override
   protected Z computeNext() {
-    if (isEmpty()) {
-      return Z.ONE;
+    final int s = size();
+    if (s == 0) {
+      return mFirst;
+    } else if (s == 1) {
+      mSums.add(mSecond.multiply2());
+      mSums.add(mFirst.add(mSecond));
+      return mSecond;
     }
     Z n = get(size() - 1);
     while (true) {

@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A005964 Number of trivalent connected (or cubic) planar graphs with 2n nodes.
+ * A058378 Number of trivalent 2-connected planar graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A058378 extends ParallelGenerateGraphsSequence {

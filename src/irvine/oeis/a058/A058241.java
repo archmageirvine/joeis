@@ -109,7 +109,9 @@ public class A058241 implements Sequence {
         return false;
       }
     }
-    StringUtils.message("Bruck-Ryser implies no solution for " + (q + 1));
+    if (mVerbose) {
+      StringUtils.message("Bruck-Ryser implies no solution for " + (q + 1));
+    }
     return true;
   }
 
@@ -131,4 +133,3 @@ public class A058241 implements Sequence {
     return Z.valueOf(mCount);
   }
 }
-

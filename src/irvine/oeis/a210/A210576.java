@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A210576 Natural numbers that cannot be expressed as sum of one or more nontrivial binomial coefficients.
+ * A210576 Positive integers that cannot be expressed as sum of one or more nontrivial binomial coefficients.
  * @author Georg Fischer
  */
 public class A210576 extends FiniteSequence {

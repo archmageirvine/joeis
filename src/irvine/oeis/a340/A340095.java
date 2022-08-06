@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a052.A052918;
 import irvine.oeis.a339.A339130;
 /**
- * A340095 Odd composite integers m such that A052918(m-J(m,29)) == 0 (mod m), where J(m,29) is the Jacobi symbol.
+ * A340095 Odd composite integers m such that A052918(m-J(m,29)) == 0 (mod m) and gcd(m,29)=1, where J(m,29) is the Jacobi symbol.
  * @author Georg Fischer
  */
 public class A340095 extends A339130 {

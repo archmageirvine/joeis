@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A062034 Numbers whose product of digits is twice the sum of the digits.
+ * A062034 Positive numbers whose product of digits is twice the sum of the digits.
  * @author Georg Fischer
  */
 public class A062034 implements Sequence {

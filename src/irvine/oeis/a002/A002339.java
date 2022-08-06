@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002339 y such that p = (x^2 + 27y^2 )/4.
+ * A002339 Positive y such that p = (x^2 + 27y^2)/4 where p is the n-th prime of the form 6k+1.
  * @author Sean A. Irvine
  */
 public class A002339 implements Sequence {

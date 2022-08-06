@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001358;
 
 /**
- * A137701 Semiprime(n)^prime(n).
+ * A137701 a(n) = semiprime(n)^prime(n).
  * @author Georg Fischer
  */
 public class A137701 implements Sequence {

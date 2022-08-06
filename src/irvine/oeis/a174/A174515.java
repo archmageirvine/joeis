@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A174515 O.g.f.: exp( Sum_{n&gt;=1} (2^n+3^n)^2*x^n/n ).
+ * A174515 Expansion of g.f. exp( Sum_{n&gt;=1} (2^n+3^n)^2*x^n/n ).
  * @author Georg Fischer
  */
 public class A174515 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A179976 2^(2n+1) mod (2n+1).
+ * A179976 a(n) = 2^(2n+1) mod (2n+1).
  * @author Georg Fischer
  */
 public class A179976 implements Sequence {

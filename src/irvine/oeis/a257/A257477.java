@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MultiplicativeSequence;
 
 /**
- * A257477 Multiplicative with a(2) = 0, a(4) = -1, a(2^e) = 0 if e&gt;2, a(3) = -1, a(3^e) = 0^e if e&gt;1, a(p^e) = 1 if p == 1, 3 (mod 8), a(p^e) = (1 + (-1)^e) / 2 if p == 5, 7 (mod 8).
+ * A257477 Multiplicative with a(2) = 0, a(4) = -1, a(2^e) = 0 if e&gt;2, a(3) = -1, a(3^e) = 0^e if e&gt;1, a(p^e) = 1 if p == 1, 3 (mod 8), a(p^e) = (-1)^e if p == 5, 7 (mod 8).
  * @author Georg Fischer
  */
 public class A257477 extends MultiplicativeSequence {

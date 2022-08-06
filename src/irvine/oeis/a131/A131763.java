@@ -7,7 +7,7 @@ import irvine.oeis.transform.RevertTransformSequence;
 
 
 /**
- * A131763 Series reversion of x(1-4x)/(1-x).
+ * A131763 Series reversion of x*(1-4x)/(1-x) is x*A(x) where A(x) is the generating function.
  * @author Georg Fischer
  */
 public class A131763 extends RevertTransformSequence {

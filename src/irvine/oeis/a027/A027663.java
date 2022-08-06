@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027663 a(n)/100000 gives sqrt(n) to 5 places.
+ * A027663 a(n)/100000 gives sqrt(n) to 5 places after the decimal point.
  * @author Sean A. Irvine
  */
 public class A027663 implements Sequence {

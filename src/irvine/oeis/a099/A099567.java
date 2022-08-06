@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000930;
 import irvine.oeis.triangle.WrappedRecurrence;
 
 /**
- * A099567 Riordan array (1/(1-x-x^3),1/(1-x)).
+ * A099567 Riordan array (1/(1-x-x^3), 1/(1-x)).
  * @author Georg Fischer
  */
 public class A099567 extends WrappedRecurrence {

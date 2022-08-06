@@ -5,7 +5,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A087278 Distance to nearest square is not greater than 1.
+ * A087278 Nonnegative integers whose distance to the nearest square is not greater than 1.
  * @author Georg Fischer
  */
 public class A087278 extends HolonomicRecurrence {

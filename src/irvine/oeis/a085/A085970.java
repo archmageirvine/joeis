@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a143.A143731;
 
 /**
- * A085970 Number of numbers &lt;= n that are not prime powers.
+ * A085970 Number of integers ranging from 2 to n that are not prime-powers.
  * @author Sean A. Irvine
  */
 public class A085970 extends PartialSumSequence {

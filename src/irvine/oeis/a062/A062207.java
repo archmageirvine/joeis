@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a013.A013499;
 
 /**
- * A062207 2*n^n-1.
+ * A062207 a(n) = 2*n^n-1.
  * @author Georg Fischer
  */
 public class A062207 extends A013499 {

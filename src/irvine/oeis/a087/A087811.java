@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A087811 Numbers n such that ceiling(sqrt(n)) divides n.
+ * A087811 Numbers k such that ceiling(sqrt(k)) divides k.
  * @author Sean A. Irvine
  */
 public class A087811 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000595 Relations: number of nonisomorphic unlabeled binary relations on n labeled nodes.
+ * A000595 Number of binary relations on n unlabeled points.
  * @author Sean A. Irvine
  */
 public class A000595 implements Sequence {

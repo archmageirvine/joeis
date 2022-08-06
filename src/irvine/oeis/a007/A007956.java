@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007956 Product of proper divisors of n.
+ * A007956 Product of the proper divisors of n.
  * @author Sean A. Irvine
  */
 public class A007956 implements Sequence {

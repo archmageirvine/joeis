@@ -5,7 +5,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173323 3*n! - 1.
+ * A173323 a(n) = 3*n! - 1.
  * @author Georg Fischer
  */
 public class A173323 extends HolonomicRecurrence {

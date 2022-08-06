@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058356 Coefficients in the series (1 + 2x^2 + 3x^3 + 5x^5 + 7x^7 + 11x^11 + 13x^13 + ... )/(1 - 4x^4 - 6x^6 - 8x^8 - 9x^9 - 10x^10 - 12x^12 - 14x^14 - ... ).
+ * A058356 Coefficients in the series (1 + 2x^2 + 3x^3 + 5x^5 + 7x^7 + 11x^11 + 13x^13 + ... )/(1 - x - 4x^4 - 6x^6 - 8x^8 - 9x^9 - 10x^10 - 12x^12 - 14x^14 - ... ).
  * @author Sean A. Irvine
  */
 public class A058356 implements Sequence {

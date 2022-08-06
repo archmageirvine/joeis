@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A112611 a(n)= +5*a(n-1) +45*a(n-3) -225*a(n-4).
+ * A112611 a(n) = 5*a(n-1) + 45*a(n-3) - 225*a(n-4), a(0)=0, a(1)=4, a(2)=24, a(3)=60, a(4)=480.
  * @author Georg Fischer
  */
 public class A112611 extends GeneratingFunctionSequence {

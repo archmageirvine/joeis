@@ -1,7 +1,7 @@
 package irvine.oeis.a046;
 
 /**
- * A046233 Numbers n such that n^3 is palindromic in base 5.
+ * A046233 Numbers whose cube is palindromic in base 5.
  * @author Sean A. Irvine
  */
 public class A046233 extends A046231 {

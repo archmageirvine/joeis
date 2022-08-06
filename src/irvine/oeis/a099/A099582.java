@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099582 Sum C(n-k,k-1)4^(n-k-1), k=0..floor(n/2).
+ * A099582 a(n) = Sum_{k=0..floor(n/2)} binomial(n-k, k-1)*4^(n-k-1).
  * @author Sean A. Irvine
  */
 public class A099582 extends LinearRecurrence {

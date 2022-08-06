@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a046.A046346;
 
 /**
- * A134330 Nonprime numbers which are divisible by the sum of their prime factors (counted with multiplicity).
+ * A134330 Incorrect version of A046346.
  * @author Georg Fischer
  */
 public class A134330 extends PrependSequence {

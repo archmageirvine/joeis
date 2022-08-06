@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052089 Primes formed by concatenating n with n-1.
+ * A052089 Primes formed by concatenating k with k-1.
  * @author Sean A. Irvine
  */
 public class A052089 implements Sequence {

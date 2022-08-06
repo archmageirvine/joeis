@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A200112 Decimal expansion of greatest x satisfying 2*x^2-cos(x)=3*sin(x).
+ * A200112 Decimal expansion of greatest x satisfying 2*x^2-cos(x) = 3*sin(x).
  * Equation; 2*x^2-cos(x)-3*sin(x)
  * @author Georg Fischer
  */

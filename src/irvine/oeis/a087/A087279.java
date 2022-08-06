@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A087279 Nonnegative numbers such that distance to nearest positive square equals exactly 1.
+ * A087279 Nonnegative numbers whose distance to the nearest positive square equals exactly 1.
  * @author Sean A. Irvine
  */
 public class A087279 extends LinearRecurrence {

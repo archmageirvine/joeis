@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a040.A040039;
 
 /**
- * A102379 a(n) = minimal number of nodes in a binary tree of height n.
+ * A102379 a(n) is the minimal number of nodes in a binary tree of height n.
  * @author Sean A. Irvine
  */
 public class A102379 extends PartialSumSequence {

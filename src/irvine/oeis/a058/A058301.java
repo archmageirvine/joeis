@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002083;
 
 /**
- * A058301 Number of solutions to c(0)F(0)+...+c(n)F(n) = 0, where c(i) = +-1 for i&gt;=0, number of (+1)'s &gt;= number of (-1)'s, F(i) = A000045(i) = Fibonacci numbers.
+ * A058301 Number of solutions to c(0)F(0) + ... + c(n)F(n) = 0, where c(i) = +-1 for i &gt;= 0, number of (+1)'s &gt;= number of (-1)'s, F(i) = A000045(i) = Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A058301 extends A002083 {

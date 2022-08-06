@@ -6,7 +6,7 @@ import irvine.oeis.NumericalAronsonSequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A054048 Earliest sequence with a(a(n))=n*(n+1)/2 (Triangular numbers).
+ * A054048 Earliest sequence with a(a(n)) = n*(n+1)/2 (Triangular numbers).
  * @author Georg Fischer
  */
 public class A054048 extends NumericalAronsonSequence {

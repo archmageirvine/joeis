@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a129.A129164;
 
 /**
- * A246657 a(n) = 3F2([1, 3/2, 1 - n], [2, 2], -4).
+ * A246657 a(n) = round(3F2([1, 3/2, 1 - n], [2, 2], -4)).
  * @author Georg Fischer
  */
 public class A246657 extends A129164 {

@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A206852 Numbers n such that n/2 is a square, n/3 is a cube, and n/5 is a fifth power.
+ * A206852 Numbers N such that N/2 is a square, N/3 is a cube, and N/5 is a fifth power.
  * a(n) = 30233088000000 * n^30
  * @author Georg Fischer
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A135851 If n &lt;= 1 then n-1 otherwise A107458(n-1) + A107458(n-2).
+ * A135851 a(n) =  n-1, if n &lt;= 2, otherwise A107458(n-1) + A107458(n-2).
  * @author Sean A. Irvine
  */
 public class A135851 extends LinearRecurrence {

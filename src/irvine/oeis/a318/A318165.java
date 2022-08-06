@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A318165 The n^n dots problem (n times n): minimal number of straight lines (connected at their endpoints) required to pass through n^n dots arranged in an n X n X ... X n grid.
+ * A318165 The n^n dots problem: minimal number of straight lines (connected at their endpoints) required to pass through n^n dots arranged in an n X n X ... X n grid.
  *
  * @author Georg Fischer
  */

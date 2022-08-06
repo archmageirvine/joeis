@@ -7,7 +7,7 @@ import irvine.oeis.a003.A003319;
 
 
 /**
- * A272657 Bisection of A003319: A003319(2n+1).
+ * A272657 Bisection of A003319: a(n) = A003319(2n+1).
  * @author Georg Fischer
  */
 public class A272657 extends A003319 {

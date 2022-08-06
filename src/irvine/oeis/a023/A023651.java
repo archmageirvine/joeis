@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A023651 (product of digits of n) * (sum of digits of n) = 2n.
+ * A023651 Numbers k such that (product of digits of k) * (sum of digits of k) = 2k.
  * @author Sean A. Irvine
  */
 public class A023651 extends FiniteSequence {

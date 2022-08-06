@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A099572 Sum C(n-k+4,k), k=0..floor(n/2).
+ * A099572 a(n) = Sum_{k=0..floor(n/2)} binomial(n-k+4, k).
  * @author Sean A. Irvine
  */
 public class A099572 extends LinearRecurrence {

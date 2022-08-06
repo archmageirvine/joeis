@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HypergeometricSequence;
 
 /**
- * A153029 Special values of the hypergeometric function of the type 5F0.
+ * A153029 Special rounded values of the generalized hypergeometric function of the type 5F0.
  * @author Georg Fischer
  */
 public class A153029 extends HypergeometricSequence {

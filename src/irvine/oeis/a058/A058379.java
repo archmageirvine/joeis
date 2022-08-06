@@ -13,10 +13,10 @@ import irvine.oeis.Sequence;
  */
 public class A058379 implements Sequence {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   protected int mN = -1;
   protected Z mF = Z.ONE;
-  private Polynomial<Q> mA = RING.x();
+  protected Polynomial<Q> mA = RING.x();
 
   @Override
   public Z next() {

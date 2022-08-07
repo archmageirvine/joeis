@@ -1973,3 +1973,6 @@ A058260 Number of minimal forbidden posets for split semiorders on n points.
 A058303 Decimal expansion of the imaginary part of the first nontrivial zero of the Riemann zeta function.
 A058337 Number of connected loop-free Eulerian digraphs with n nodes.
 A058338 Number of digraphs with indegree = outdegree at each vertex, or Eulerian digraphs (including disconnected graphs) with n nodes.
+A058488 Total number of interior nodes in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges not allowed
+A058494 Total number of interior nodes in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges allowed.
+A058495 Total number of multiple edges in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges allowed.

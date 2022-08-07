@@ -4,7 +4,7 @@ import java.util.Map;
 
 import irvine.math.api.Ring;
 import irvine.math.group.GaloisField;
-import irvine.math.group.SpecialLinearGroup;
+import irvine.math.group.GeneralLinearGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
@@ -37,7 +37,7 @@ public class A058502 implements Sequence {
 
   @Override
   public Z next() {
-    final CycleIndex ci = new SpecialLinearGroup<>(++mN, mFld).cycleIndex();
+    final CycleIndex ci = new GeneralLinearGroup<>(++mN, mFld).cycleIndex();
     Q sum = Q.ZERO;
     for (final MultivariateMonomial m : ci.values()) {
       Z order = Z.ONE;
@@ -46,7 +46,6 @@ public class A058502 implements Sequence {
       }
       sum = sum.add(m.getCoefficient().divide(Euler.phi(order)));
     }
-    final Z t = mA.next();
-    return sum.multiply(t).toZ();
+    return sum.multiply(mA.next()).toZ();
   }
 }

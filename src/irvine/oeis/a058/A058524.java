@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058515.
+ * A058524 Each c(i) is "multiply" (*) or "divide" (/). a(n) is number of choices for c(1), ..., c(n-1) so that 1 c(1) 2 c(2) 3,.., c(n-1) n is an integer.
  * @author Sean A. Irvine
  */
 public class A058524 implements Sequence {

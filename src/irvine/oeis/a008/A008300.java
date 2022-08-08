@@ -21,9 +21,9 @@ public class A008300 implements Sequence {
   // from product(product(1+x_i*y_i, j=1..n), i=1..n)
   // Uses a lot of memory and no good for more than a few terms
 
-  private MultivariatePolynomial<Z> mP = null;
+  protected MultivariatePolynomial<Z> mP = null;
 
-  private Z coeff(final MultivariatePolynomial<Z> p, final int m) {
+  protected Z coeff(final MultivariatePolynomial<Z> p, final int m) {
     for (final Map.Entry<MultivariatePolynomial.Term, Z> e : p.entrySet()) {
       final MultivariatePolynomial.Term key = e.getKey();
       boolean ok = true;
@@ -47,19 +47,22 @@ public class A008300 implements Sequence {
     return new MultivariatePolynomial<>(IntegerField.SINGLETON, 2 * n, terms, Arrays.asList(Z.ONE, Z.ONE));
   }
 
+  protected void step() {
+    MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, 2 * ++mN);
+    for (int i = 0; i < mN; ++i) {
+      for (int j = 0; j < mN; ++j) {
+        p = p.multiply(make(mN, i, j));
+      }
+    }
+    //System.out.println(p);
+    mP = p;
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
-      ++mN;
       mM = 0;
-      MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, 2 * mN);
-      for (int i = 0; i < mN; ++i) {
-        for (int j = 0; j < mN; ++j) {
-          p = p.multiply(make(mN, i, j));
-        }
-      }
-      //System.out.println(p);
-      mP = p;
+      step();
     }
     return coeff(mP, mM);
   }

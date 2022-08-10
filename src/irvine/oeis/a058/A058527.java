@@ -16,10 +16,6 @@ public class A058527 extends A008300 {
 
   @Override
   public Z next() {
-    if (++mN > 0) {
-      step();
-    }
-    step();
-    return coeff(mP, mN);
+    return t(2 * ++mN, mN);
   }
 }

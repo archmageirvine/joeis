@@ -14,16 +14,18 @@ import irvine.oeis.Sequence;
  */
 public class A058092 implements Sequence {
 
-  private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
+  protected  static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> X3 = RING.monomial(Q.ONE, 3);
   private static final Q Q27 = new Q(27);
-  private int mN = -1;
+  protected int mN = -1;
+  protected Polynomial<Q> mGf = null;
 
   @Override
   public Z next() {
     ++mN;
     final Polynomial<Q> a = RING.pow(RING.series(RING.eta(X3, mN), RING.eta(RING.x(), mN), mN), 12, mN);
     final Polynomial<Q> t = RING.series(RING.pow(RING.add(RING.one(), RING.multiply(a.shift(1), Q27)), 2, mN), a, mN);
-    return PolynomialUtils.cubeRootP(RING.subtract(t, RING.one()), mN).coeff(mN).toZ();
+    mGf = PolynomialUtils.cubeRootP(RING.subtract(t, RING.one()), mN);
+    return mGf.coeff(mN).toZ();
   }
 }

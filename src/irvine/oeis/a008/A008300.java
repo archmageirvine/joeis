@@ -1,11 +1,14 @@
 package irvine.oeis.a008;
 
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 
 import irvine.math.group.IntegerField;
-import irvine.math.polynomial.MultivariatePolynomial;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Binomial;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -14,56 +17,53 @@ import irvine.oeis.Sequence;
  */
 public class A008300 implements Sequence {
 
+  // After Andrew Howroyd
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;
   private int mM = 0;
 
-  // Direct implementation extracting coefficient [x_1^m ... x_n^m y_1^m ... y_n^m]
-  // from product(product(1+x_i*y_i, j=1..n), i=1..n)
-  // Uses a lot of memory and no good for more than a few terms
-
-  protected MultivariatePolynomial<Z> mP = null;
-
-  protected Z coeff(final MultivariatePolynomial<Z> p, final int m) {
-    for (final Map.Entry<MultivariatePolynomial.Term, Z> e : p.entrySet()) {
-      final MultivariatePolynomial.Term key = e.getKey();
-      boolean ok = true;
-      for (int k = 0; k < 2 * mN; ++k) {
-        if (key.get(k) != m) {
-          ok = false;
-          break;
-        }
-      }
-      if (ok) {
-        return e.getValue();
-      }
-    }
-    throw new RuntimeException();
+  private void acc(final Map<Polynomial<Z>, Z> m, final Polynomial<Z> p, final Z v) {
+    final Z t = m.get(p);
+    m.put(p, t == null ? v : t.add(v));
   }
 
-  private MultivariatePolynomial<Z> make(final int n, final int i, final int j) {
-    final int[][] terms = new int[2][2 * n];
-    terms[1][i] = 1;
-    terms[1][n + j] = 1;
-    return new MultivariatePolynomial<>(IntegerField.SINGLETON, 2 * n, terms, Arrays.asList(Z.ONE, Z.ONE));
-  }
-
-  protected void step() {
-    MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, 2 * ++mN);
-    for (int i = 0; i < mN; ++i) {
-      for (int j = 0; j < mN; ++j) {
-        p = p.multiply(make(mN, i, j));
+  private void recurse(final Map<Polynomial<Z>, Z> m, final int i, final Polynomial<Z> p, final Z v, final int e) {
+    if (i < 0) {
+      if (e == 0) {
+        acc(m, p, v);
+      }
+    } else {
+      final Z t = p.coeff(i);
+      final int min = t.min(Z.valueOf(e)).intValueExact();
+      for (int j = 0; j <= min; ++j) {
+        recurse(m, i - 1, RING.add(p, Polynomial.create(-j, j).shift(i)), Binomial.binomial(t, Z.valueOf(j)).multiply(v), e - j);
       }
     }
-    //System.out.println(p);
-    mP = p;
+  }
+
+  protected Z t(final int n, final int k) {
+    if (k > n) {
+      return n == 0 ? Z.ONE : Z.ZERO;
+    }
+    HashMap<Polynomial<Z>, Z> m = new HashMap<>();
+    m.put(Polynomial.create(n), Z.ONE);
+    for (int r = 1; r <= n; ++r) {
+      final HashMap<Polynomial<Z>, Z> res = new HashMap<>();
+      for (final Map.Entry<Polynomial<Z>, Z> e : m.entrySet()) {
+        recurse(res, k - 1, e.getKey(), e.getValue(), k);
+      }
+      m = res;
+    }
+    return ZUtils.sum(m.values());
   }
 
   @Override
   public Z next() {
     if (++mM > mN) {
+      ++mN;
       mM = 0;
-      step();
     }
-    return coeff(mP, mM);
+    return t(mN, mM);
   }
 }

@@ -104,7 +104,7 @@ public class HypergeometricSequence implements SequenceWithOffset {
     Q result = Q.ONE;
     final Q[] poly = mPolyArray[ix];
     final int plen = poly.length;
-    if (plen > 1) { // contains the variable
+    //if (true || plen > 1) { // contains the variable
       Q npow = Q.ONE;
       Q sum = poly[0];
       for (int ip = 1; ip < plen; ++ip) { // compute the base value elem
@@ -124,9 +124,9 @@ public class HypergeometricSequence implements SequenceWithOffset {
         //** System.out.println("\t\tevp, ix=" + ix + ", k=" + k + ", n=" + n + ", elem=" + elem + ", result=" + result);
         ++k;
       }
-    } else { // is constant
-      // optimize later by remembering old values
-    }
+//    } else { // is constant
+//      // optimize later by remembering old values
+//    }
     //** System.out.println("\tevalPochhammer(" + ix + ") --> " + result);
     return result;
   }

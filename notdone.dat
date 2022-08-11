@@ -1976,3 +1976,5 @@ A058338 Number of digraphs with indegree = outdegree at each vertex, or Eulerian
 A058488 Total number of interior nodes in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges not allowed
 A058494 Total number of interior nodes in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges allowed.
 A058495 Total number of multiple edges in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges allowed.
+A058642 Number of unlabeled graphs with n edges, no nodes of degree 1 or 2, no multiple edges and no cut nodes, under "series-equivalence"
+A058643 McKay-Thompson series of class 35a for Monster.

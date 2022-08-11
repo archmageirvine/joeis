@@ -10,16 +10,16 @@ import irvine.oeis.SequenceWithOffset;
 public class A225401 implements SequenceWithOffset {
 
   private int mN;
-  private final int mOffset;
+  private int mOffset;
   private Z mBn0;
   private Z mBn1;
-  private final Z mPm1;
-  private final Z mPm2;
-  private final int mExp;
-  private final Z mPa;
-  private final int mBase;
+  private Z mPm1;
+  private Z mPm2;
+  private int mExp;
+  private Z mPa;
+  private int mBase;
   private Z mPow; // base^n
-  private final int mVariant; // for different formulas
+  private int mVariant; // for different formulas
 
   /** Construct the sequence. */
   public A225401() {
@@ -76,6 +76,47 @@ public class A225401 implements SequenceWithOffset {
     final Z an = mN == 0 ? mBn0 : mBn1.subtract(mBn0).divide(mPow);
     mPow = pow1;
     // System.out.println("mN=" + mN + ", b(n)=" + mBn0 + ", b(n+1)=" + mBn1 + ", base^n=" + mPow + ", a(n)=" + an);
+    //System.err.print("," + mBn0);
     return an;
+  }
+
+  /**
+   * Test program.
+   * Arguments: b1, m1, m2, exp, a, base.
+   */
+  public static void main(final String[] args) {
+    int iarg = 0;
+    int b1 = 3;
+    int pm1 = 3;
+    int pm2 = 9;
+    int exp = 3;
+    int pa = 7;
+    int base = 10;
+    try {
+      if (iarg < args.length) {
+        b1 = Integer.parseInt(args[iarg++]);
+      }
+      if (iarg < args.length) {
+        pm1 = Integer.parseInt(args[iarg++]);
+      }
+      if (iarg < args.length) {
+        pm2 = Integer.parseInt(args[iarg++]);
+      }
+      if (iarg < args.length) {
+        exp = Integer.parseInt(args[iarg++]);
+      }
+      if (iarg < args.length) {
+        pa = Integer.parseInt(args[iarg++]);
+      }
+      if (iarg < args.length) {
+        base = Integer.parseInt(args[iarg++]);
+      }
+    } catch (final RuntimeException exc) {
+      // ignored
+    }
+    final SequenceWithOffset seq = new A225401(0, b1, pm1, pm2, exp, pa, base);
+    for (int ix = 0; ix < 32; ++ix) {
+      System.out.print(seq.next() + ", ");
+    }
   }
 }

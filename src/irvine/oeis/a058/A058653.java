@@ -1,0 +1,27 @@
+package irvine.oeis.a058;
+
+import irvine.factor.factor.Jaguar;
+import irvine.factor.util.FactorSequence;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A058653 Numbers k such that sigma(phi(k)) = phi(sigma(k)-k).
+ * @author Sean A. Irvine
+ */
+public class A058653 implements Sequence {
+
+  private long mN = 1;
+
+  @Override
+  public Z next() {
+    while (true) {
+      final FactorSequence fs = Jaguar.factor(++mN);
+      final Z sigma = fs.sigma();
+      final Z phi = fs.phi();
+      if (Jaguar.factor(phi).sigma().equals(Jaguar.factor(sigma.subtract(mN)).phi())) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

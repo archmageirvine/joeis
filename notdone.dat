@@ -1978,3 +1978,20 @@ A058494 Total number of interior nodes in all essentially parallel series-parall
 A058495 Total number of multiple edges in all essentially parallel series-parallel networks with n unlabeled edges, multiple edges allowed.
 A058642 Number of unlabeled graphs with n edges, no nodes of degree 1 or 2, no multiple edges and no cut nodes, under "series-equivalence"
 A058643 McKay-Thompson series of class 35a for Monster.
+A058655 Decimal expansion of area under the curve 1/Gamma(x) from zero to infinity.
+A058668 Number of unlabeled graphs with n edges, no nodes of degree 1 and no cut nodes, under "series-equivalence"; multiple edges are allowed.
+A058669 Triangle T(n,k) read by rows, giving number of matroids of rank k on n labeled points (n >= 0, 0 <= k <= n). [depends on A058711]
+A058673 Number of matroids on n labeled points.
+A058687 Number of matroids of rank 3 on n labeled points (column of A058669)
+A058693 Number of nonisomorphic matroids of rank 3 on n labeled points
+A058710 Triangle T(n,k) giving number of loopless matroids of rank k on n labeled points (n >= 0, 0 <= k <= n).
+A058711 Triangle T(n,k) giving the number of loopless matroids of rank k on n labeled points (n >= 1, 1 <= k <= n).
+A058712 Number of loopless matroids on n labeled points
+A058715 Number of loopless matroids of rank 3 on n labeled points.
+A058719 Number of nonisomorphic loopless matroids of rank 3 on n labeled points.
+A058720 Triangle T(n,k) giving the number of simple matroids of rank k on n labeled points (n >= 2, 2 <= k <= n).
+A058721 Number of simple matroids on n labeled points.
+A058722 Number of simple matroids of rank 4 on n labeled points.
+A058730 Triangle T(n,k) giving number of nonisomorphic simple matroids of rank k on n labeled points (n >= 2, 2 <= k <= n).
+A058731 Number of nonisomorphic simple matroids of rank 3 on n unlabeled points.
+A058733 Number of nonisomorphic simple matroids of rank 4 on n labeled points.

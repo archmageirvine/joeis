@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A202410 Inverse Lah transform of 1, 2, 3,...; e.g.f. exp(x/(x-1))*(2*x-1)/(x-1).
+ * A202410 Inverse Lah transform of 1,2,3,...; e.g.f. exp(x/(x-1))*(2*x-1)/(x-1).
  * sumrecursion((-1)^k*(n-k)!*binomial(n,n-k)*binomial(n-1,n-k)* (k+1),k,a(n));
  * @author Georg Fischer
  */

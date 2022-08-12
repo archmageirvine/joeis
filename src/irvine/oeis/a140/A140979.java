@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FloorSequence;
 
 /**
- * A140979 Floor(2*phi*floor(n*phi)) where phi = A001622.
+ * A140979 a(n) = floor(2*phi*floor(n*phi)) where phi = A001622.
  * @author Georg Fischer
  */
 public class A140979 extends FloorSequence {

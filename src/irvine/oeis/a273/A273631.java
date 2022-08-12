@@ -4,7 +4,7 @@ package irvine.oeis.a273;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A273631 a(n) = Sum_{k = 0..n} (-1)^k*binomial(k, 2)^3*binomial(n,k)^3.
+ * A273631 a(n) = Sum_{k = 0..n} (-1)^k*binomial(k,2)^3*binomial(n,k)^3.
  * sumrecursion((-1)^k*binomial(k, 2)^3*binomial(n,k)^3,k,a(n));
  * @author Georg Fischer
  */

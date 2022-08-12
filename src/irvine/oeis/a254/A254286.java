@@ -5,7 +5,7 @@ package irvine.oeis.a254;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A254286 Expansion of (1-(1-256*x)^(1/4)) / (64*x).
+ * A254286 Expansion of (1 - (1-256*x)^(1/4)) / (64*x).
  * @author Georg Fischer
  */
 public class A254286 extends HolonomicRecurrence {

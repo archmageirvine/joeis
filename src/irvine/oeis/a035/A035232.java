@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035232 Number of substrings of n which are primes.
+ * A035232 Number of substrings of n which are primes (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A035232 implements Sequence {

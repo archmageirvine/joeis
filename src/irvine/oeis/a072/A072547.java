@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A072547 Main diagonal of the array in which first column and row are filled alternatively with 1&apos;s or 0&apos;s and then T(i,j) = T(i-1,j) + T(i,j-1).
+ * A072547 Main diagonal of the array in which first column and row are filled alternatively with 1's or 0's and then T(i,j) = T(i-1,j) + T(i,j-1).
  * 2*(-n+1)*a(n)+(9*n-17)*a(n-1)+(-3*n+19)*a(n-2)+2*(-2*n+7)*a(n-3)
  * @author Georg Fischer
  */

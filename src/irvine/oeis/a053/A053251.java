@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053251 Coefficients of the '3rd order' mock theta function psi(q).
+ * A053251 Coefficients of the '3rd-order' mock theta function psi(q).
  * @author Sean A. Irvine
  */
 public class A053251 extends MemoryFunction2<Integer, Z> implements Sequence {

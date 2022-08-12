@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A243644 Expansion of x*log&apos;(((1-sqrt(1-4*x))/2-sqrt(((-sqrt(1-4*x)-11)*(1-sqrt(1-4*x)))/4+1)+1)/4).
+ * A243644 Expansion of x*log'(((1-sqrt(1-4*x))/2-sqrt(((-sqrt(1-4*x)-11)*(1-sqrt(1-4*x)))/4+1)+1)/4).
  * sumrecursion(binomial(n+(k)-1,(k))*binomial(3*n-1,n-4*k),k,a(n));
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A018890 Smallest expression as sum of positive cubes requires exactly 7 cubes.
+ * A018890 Numbers whose smallest expression as a sum of positive cubes requires exactly 7 cubes.
  * @author Sean A. Irvine
  */
 public class A018890 implements Sequence {

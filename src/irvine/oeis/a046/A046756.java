@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046756 Number k such that d(k)^4 divides k.
+ * A046756 Numbers k such that d(k)^4 divides k.
  * @author Sean A. Irvine
  */
 public class A046756 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a003.A003459;
 
 /**
- * A172059 Partial sums of absolute primes A003459.
+ * A172059 Partial sums of A003459.
  * @author Sean A. Irvine
  */
 public class A172059 extends PartialSumSequence {

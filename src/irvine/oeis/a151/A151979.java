@@ -4,7 +4,7 @@ package irvine.oeis.a151;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A151979 Numbers congruent to {0, 1} mod 19.
+ * A151979 Numbers congruent to {0, 1} (mod 19).
  * @author Georg Fischer
  */
 public class A151979 extends GeneratingFunctionSequence {

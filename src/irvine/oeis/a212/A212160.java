@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A212160 Numbers congruent to 2 or 10 modulo 13.
+ * A212160 Numbers that are congruent to {2, 10} mod 13.
  * @author Georg Fischer
  */
 public class A212160 extends GeneratingFunctionSequence {

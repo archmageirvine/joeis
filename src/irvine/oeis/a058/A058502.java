@@ -16,7 +16,7 @@ import irvine.oeis.a053.A053290;
 import irvine.util.Pair;
 
 /**
- * A058502 Number of cyclic subgroups of Chevalley group A_n(3) (the group of nonsingular n X n matrices over GF(3) ).
+ * A058502 Number of cyclic subgroups of Chevalley group A_n(3) (the group of nonsingular n X n matrices over GF(3)).
  * @author Sean A. Irvine
  */
 public class A058502 implements Sequence {

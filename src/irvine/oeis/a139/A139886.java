@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.prime.CongruenceForm;
 
 /**
- * A139886 Primes of the form 10x^2+19y^2.
+ * A139886 Primes of the form 10x^2 + 19y^2.
  * @author Georg Fischer
  */
 public class A139886 extends CongruenceForm {

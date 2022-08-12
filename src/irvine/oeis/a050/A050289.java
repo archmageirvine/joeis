@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A050289 Zeroless pandigital numbers: numbers containing the digits 1-9 and no 0's.
+ * A050289 Zeroless pandigital numbers: numbers containing the digits 1-9 (each appearing at least once) and no 0's.
  * @author Sean A. Irvine
  */
 public class A050289 implements Sequence {

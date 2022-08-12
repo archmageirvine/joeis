@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A094739 Numbers m such that 4^k m, for integer k &gt;= 0, are numbers having a unique partition into three squares.
+ * A094739 Numbers m such that 4^k*m, for integer k &gt;= 0, are numbers having a unique partition into three squares.
  * @author Georg Fischer
  */
 public class A094739 extends FiniteSequence {

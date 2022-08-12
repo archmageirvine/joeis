@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A116363 a(n) = dot product of row n in Catalan triangle A033184 with row n in Pascal&apos;s triangle.
+ * A116363 a(n) = dot product of row n in Catalan triangle A033184 with row n in Pascal's triangle.
  * sumrecursion(C(n,k)*C(2*n-k+1,n-k)*(k+1)/(2*n-k+1),k,a(n));
  * @author Georg Fischer
  */

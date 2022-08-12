@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A027991 a(n)=Sum{T(n,k)*T(n,2n-k)}, 0&lt;=k&lt;=n-1, T given by A027926.
+ * A027991 a(n) = Sum{T(n,k)*T(n,2n-k)}, 0&lt;=k&lt;=n-1, T given by A027926.
  * @author Georg Fischer
  */
 public class A027991 extends GeneratingFunctionSequence {

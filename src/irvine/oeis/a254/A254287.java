@@ -5,7 +5,7 @@ package irvine.oeis.a254;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A254287 Expansion of (1-(1-3125*x)^(1/5)) / (625*x).
+ * A254287 Expansion of (1 - (1 - 3125*x)^(1/5)) / (625*x).
  * @author Georg Fischer
  */
 public class A254287 extends HolonomicRecurrence {

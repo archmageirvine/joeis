@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A139468 a(n) = Sum{k=0..n} C(n, 3k+1)^2.
+ * A139468 a(n) = Sum{k=0..n} C(n,3k+1)^2.
  * sumrecursion( C(n, 3*k+1)^2,k,a(n));
  * @author Georg Fischer
  */

@@ -5,7 +5,7 @@ package irvine.oeis.a060;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A060106 Numbers that are congruent to {1, 4, 6, 9, 11} mod 12. The Ebony keys on a piano, start with A0 = the 0th key.
+ * A060106 Numbers that are congruent to {1, 4, 6, 9, 11} mod 12. The ebony keys on a piano, starting with A0 = the 0th key.
  * @author Georg Fischer
  */
 public class A060106 extends HolonomicRecurrence {

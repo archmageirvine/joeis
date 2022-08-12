@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A138191 Denominator of (n-1)n(n+1)/12.
+ * A138191 Denominator of (n-1)*n*(n+1)/12.
  * @author Georg Fischer
  */
 public class A138191 extends GeneratingFunctionSequence {

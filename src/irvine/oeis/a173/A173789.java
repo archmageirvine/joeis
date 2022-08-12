@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A173789 a(n) is the number of (0, 1) matrices A=(a_{ij}) of size n X (3n) such that each row has exactly three 1&apos;s and each column has exactly one 1 and with the restriction that no 1 stands on the diagonal from a_{11} to a_{22}.
+ * A173789 a(n) is the number of (0,1) matrices A=(a_{ij}) of size n X (3n) such that each row has exactly three 1's and each column has exactly one 1 and with the restriction that no 1 stands on the diagonal from a_{11} to a_{22}.
  * sumrecursion((-1)^k*(3*n-k)!/(6^(n-k)*2^k) * binomial(n,k),k,a(n));
  * @author Georg Fischer
  */

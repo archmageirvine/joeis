@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A081031 Positions of white keys on piano keyboard, start with A0 = the 1st key.
+ * A081031 Positions of white keys on piano keyboard, starting with A0 = the 1st key.
  * @author Georg Fischer
  */
 public class A081031 extends FiniteSequence {

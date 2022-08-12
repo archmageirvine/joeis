@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018889 Shortest representation as sum of positive cubes requires exactly 8 cubes.
+ * A018889 Numbers whose shortest representation as a sum of positive cubes requires exactly 8 cubes.
  * @author Sean A. Irvine
  */
 public class A018889 extends FiniteSequence {

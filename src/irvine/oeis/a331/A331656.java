@@ -4,12 +4,10 @@ import irvine.oeis.HypergeometricSequence;
 
 /**
  * A331656 a(n) = Sum_{k=0..n} binomial(n,k) * binomial(n+k,k) * n^k.
- * Hypergeometric2F1([-n, n + 1], [1], -n]
+ * <code>Hypergeometric2F1([-n, n + 1], [1], -n]</code>
  * @author Georg Fischer
  */
 public class A331656 extends HypergeometricSequence {
-
-  private int mN;
 
   /** Construct the sequence. */
   public A331656() {

@@ -4,8 +4,7 @@
  * 2020-05-15, Georg Fischer: extracted from Tiler.java
  */
 package org.teherba.tile;
-import org.teherba.tile.Position;
-import org.teherba.tile.VertexType;
+
 import java.io.Serializable;
 
 /**
@@ -14,7 +13,6 @@ import java.io.Serializable;
  * @author Georg Fischer
  */
 public class Vertex implements Serializable {
-  public final static String CVSID = "@(#) $Id: Vertex.java $";
 
   /** Debugging mode: 0=none, 1=some, 2=more */
   public static int sDebug;
@@ -109,7 +107,7 @@ public class Vertex implements Serializable {
 
   /**
    * Returns a representation of the Vertex
-   * @return the more important propertiesin human readable form
+   * @return the more important properties in human readable form
    */
   public String toString() {
     return index + getName() + " @" + rotate + expos + "->" + getProxyList();
@@ -128,7 +126,7 @@ public class Vertex implements Serializable {
   } // normAngle
 
   /**
-   * Normalizes an edge
+   * Normalizes an edge.
    * @param iedge, zero based, maybe negative or &gt;= edgeNo
    * @return integer between 0 and edgeNo - 1.
    */

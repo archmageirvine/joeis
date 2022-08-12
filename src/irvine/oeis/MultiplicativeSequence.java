@@ -156,7 +156,7 @@ public class MultiplicativeSequence implements SequenceWithOffset {
   }
 
   /**
-   * Convert the exponente.
+   * Convert the exponents.
    * @param e exponent
    * @return 1 if e is even, 0 if it is odd
    */

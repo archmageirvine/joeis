@@ -15,10 +15,10 @@ import irvine.oeis.SequenceWithOffset;
  */
 public class A161026 implements SequenceWithOffset {
 
-  private int mAppears; // every part appears at least this many times.
+  private final int mAppears; // every part appears at least this many times.
   private int mN; // index of next term
-  private int mOffset; // first index
-  private int mParm2; // second parameter of recursive function
+  private final int mOffset; // first index
+  private final int mParm2; // second parameter of recursive function
   protected Function<Integer, Integer> mLambda;
 
   /** Construct with default parameters. */
@@ -27,7 +27,7 @@ public class A161026 implements SequenceWithOffset {
   }
 
   /**
-   * Generic constructor with default parm2=2.
+   * Generic constructor with default recursion.
    * @param offset first index
    * @param appears how often every part appears
    */

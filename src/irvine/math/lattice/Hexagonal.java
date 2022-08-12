@@ -12,7 +12,7 @@ public final class Hexagonal {
   private static final Lattice L = Lattices.HEXAGONAL;
 
   /**
-   * Rotate the given point by 60 degress anticlockwise.
+   * Rotate the given point by 60 degrees anticlockwise.
    * @param point point to rotate
    * @return rotated point
    */

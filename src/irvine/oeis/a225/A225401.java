@@ -10,16 +10,16 @@ import irvine.oeis.SequenceWithOffset;
 public class A225401 implements SequenceWithOffset {
 
   private int mN;
-  private int mOffset;
+  private final int mOffset;
   private Z mBn0;
   private Z mBn1;
-  private Z mPm1;
-  private Z mPm2;
-  private int mExp;
-  private Z mPa;
-  private int mBase;
+  private final Z mPm1;
+  private final Z mPm2;
+  private final int mExp;
+  private final Z mPa;
+  private final int mBase;
   private Z mPow; // base^n
-  private int mVariant; // for different formulas
+  private final int mVariant; // for different formulas
 
   /** Construct the sequence. */
   public A225401() {
@@ -82,7 +82,7 @@ public class A225401 implements SequenceWithOffset {
 
   /**
    * Test program.
-   * Arguments: b1, m1, m2, exp, a, base.
+   * @param args <code>b1, m1, m2, exp, a, base</code>
    */
   public static void main(final String[] args) {
     int iarg = 0;

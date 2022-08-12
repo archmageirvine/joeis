@@ -14,7 +14,7 @@ public final class Kite {
   private static final long[] REFLECT_Z = {0, 5, 4, 3, 2, 1};
 
   /**
-   * Rotate the given point by 60 degress anticlockwise.
+   * Rotate the given point by 60 degrees anticlockwise.
    * @param point point to rotate
    * @return rotated point
    */

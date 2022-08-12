@@ -7,7 +7,7 @@ import irvine.oeis.HypergeometricSequence;
 
 /**
  * A293145 a(n) = n! * [x^n] exp(n*x/(1 - x)).
- * Join[{1}, Table[n n! Hypergeometric1F1[1 - n, 2, -n], {n, 1, 18}]]
+ * <code>Join[{1}, Table[n n! Hypergeometric1F1[1 - n, 2, -n], {n, 1, 18}]]</code>
  * @author Georg Fischer
  */
 public class A293145 extends HypergeometricSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A100444 Bisection of A000255.
- * Reecurrence: a(n) +(-4*n^2-2*n+1)*a(n-1) +2*n*(2*n-3)*a(n-2)=0.
+ * Recurrence: a(n) +(-4*n^2-2*n+1)*a(n-1) +2*n*(2*n-3)*a(n-2)=0.
  * @author Georg Fischer
  */
 public class A100444 extends HolonomicRecurrence {

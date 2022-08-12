@@ -14,13 +14,13 @@ import irvine.oeis.Sequence;
 public class A120602 implements Sequence {
 
   private int mN;
-  private int mFa;
-  private int mDiv;
-  private int mPow;
-  private Q[] mInits;
-  private int mInLen;
+  private final int mFa;
+  private final int mDiv;
+  private final int mPow;
+  private final Q[] mInits;
+  private final int mInLen;
   private Polynomial<Q> mA;
-  private Polynomial<Q> mX;
+  private final Polynomial<Q> mX;
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
   /** Construct the sequence. */
@@ -29,11 +29,11 @@ public class A120602 implements Sequence {
   }
 
   /**
-   * Generic constructor with parameters. The equation is <ode>fa*A(x) = x0 + x1*x + A(x)^pow.
-   * @param fa
+   * Generic constructor with parameters. The equation is <code>fa*A(x) = x0 + x1*x + A(x)^pow</code>.
+   * @param fa parameter
    * @param div divisor
-   * @param x1
-   * @param pow
+   * @param x1 first x
+   * @param pow power
    * @param inits initial terms
    */
   public A120602(final int fa, final int div, final int x1, final int pow, final long... inits) {

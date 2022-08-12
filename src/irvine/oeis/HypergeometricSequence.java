@@ -118,16 +118,16 @@ public class HypergeometricSequence implements SequenceWithOffset {
           result = result.multiply(elem);
         } else {
           result = Q.ZERO;
-          //** System.out.println("\tZERO, ix=" + ix + ", k=" + k + ", result=" + result);
+          // System.out.println("\tZERO, ix=" + ix + ", k=" + k + ", result=" + result);
           mNonZero = false;
         }
-        //** System.out.println("\t\tevp, ix=" + ix + ", k=" + k + ", n=" + n + ", elem=" + elem + ", result=" + result);
+        // System.out.println("\t\tevp, ix=" + ix + ", k=" + k + ", n=" + n + ", elem=" + elem + ", result=" + result);
         ++k;
       }
 //    } else { // is constant
 //      // optimize later by remembering old values
 //    }
-    //** System.out.println("\tevalPochhammer(" + ix + ") --> " + result);
+    // System.out.println("\tevalPochhammer(" + ix + ") --> " + result);
     return result;
   }
 
@@ -154,11 +154,11 @@ public class HypergeometricSequence implements SequenceWithOffset {
         } else { // in the "denominator" - divide
           prod = prod.divide(evalPochhammer(ix, mExp));
         }
-        //** System.out.println("\tprod, n=" + n + ", mExp=" + mExp + ", ix=" + ix + ", prod=" + prod + (ix < mP ? ", mul" : ", div") + ", sum=" + sum);
+        // System.out.println("\tprod, n=" + n + ", mExp=" + mExp + ", ix=" + ix + ", prod=" + prod + (ix < mP ? ", mul" : ", div") + ", sum=" + sum);
         ++ix;
       }
       sum = sum.add(prod.multiply(varPow).divide(fact));
-      //** System.out.println("nextQ(n=" + mExp + "), varPow=" + varPow + ", fact=" + fact + ", sum=" + sum + "\n");
+      // System.out.println("nextQ(n=" + mExp + "), varPow=" + varPow + ", fact=" + fact + ", sum=" + sum + "\n");
       ++mExp;
     }
     if (mNonZero && mExp > 1) {

@@ -14,10 +14,9 @@ public final class Arc {
   private static final Lattice L = Lattices.ARC;
   private static final long[] ROTATE_Z = {1, 2, 3, 0, 5, 6, 7, 4};
   private static final long[] REFLECT_Z = {1, 0, 3, 2, 5, 4, 7, 6};
-  private static final long[] REFLECT_DIAG = {0, 3, 2, 1, 4, 7, 6, 5};
 
   /**
-   * Rotate the given point by 60 degress anticlockwise.
+   * Rotate the given point by 60 degrees anticlockwise.
    * @param point point to rotate
    * @return rotated point
    */

@@ -35,7 +35,7 @@ public class A057522 implements Sequence {
   }
 
   /**
-   * Maps a number under the "Px+1" map.
+   * Maps a number under the <code>Px+1</code> map.
    * P is a prime &gt;= 3.
    * @param a the number to be mapped
    */

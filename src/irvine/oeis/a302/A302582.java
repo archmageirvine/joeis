@@ -7,7 +7,7 @@ import irvine.oeis.HypergeometricSequence;
 
 /**
  * A302582 a(n) = n! * [x^n] log(1 + x)/(1 - x)^n.
- * Join[{0}, Table[n^2 (2 (n - 1))! HypergeometricPFQ[{1, 1, 1 - n}, {2, 2 - 2 n}, -1]/n!, {n, 19}]]
+ * <code>Join[{0}, Table[n^2 (2 (n - 1))! HypergeometricPFQ[{1, 1, 1 - n}, {2, 2 - 2 n}, -1]/n!, {n, 19}]]</code>
  * @author Georg Fischer
  */
 public class A302582 extends HypergeometricSequence {

@@ -4,19 +4,11 @@
  * 2020-05-15, Georg Fischer: extracted from Tiler.java
  */
 package org.teherba.tile;
-import org.teherba.tile.Position;
-import org.teherba.tile.PositionMap;
-import org.teherba.tile.Vertex;
-import org.teherba.tile.VertexList;
-import org.teherba.tile.VertexType;
-import org.teherba.tile.VertexTypeArray;
-import irvine.oeis.Sequence;
-import irvine.math.z.Z;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
 import java.util.LinkedList;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * This class generates coordination sequences for k-uniform tilings
@@ -24,7 +16,7 @@ import java.util.LinkedList;
  * A uniform tiling is built from a subset of the regular polygons
  * triangle, square, hexagon and dodecagon (other regular polygons like
  * the pentagon cannot be used). All edges are of unit length.
- * At the corners one of the 11 archimedian vertex types occur,
+ * At the corners one of the 11 Archimedian vertex types occur,
  * maybe in reverse (flipped) orientation.
  * A coordination sequence enumerates the number of vertices
  * which have a certain minimal distance to the base vertex.

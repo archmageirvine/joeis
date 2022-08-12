@@ -14,13 +14,12 @@ import java.util.Arrays;
  * such that (a + b*sqrt(2) + c*sqrt(3) + d*sqrt(6)) / 4 give the
  * real value for a position.
  * All edges of unit length under angles of n * 15 degrees can exactly be represented by such tuples.
- * Cf. https://math.stackexchange.com/questions/96946/how-to-prove-1-sqrt2-sqrt3-and-sqrt6-are-linearly-independent-ove
+ * Cf. <a href="https://math.stackexchange.com/questions/96946/how-to-prove-1-sqrt2-sqrt3-and-sqrt6-are-linearly-independent-ove">here</a>
  * @author Georg Fischer
  */
 public class Position implements Serializable {
   private static final long serialVersionUID = 1L;
-  public  final static String CVSID = "@(#) $Id: Position.java $";
-  
+
   /* Linearily independant constants */
   private static final Double SQRT2 = Math.sqrt(2.0);
   private static final Double SQRT3 = Math.sqrt(3.0);

@@ -4,8 +4,6 @@
  * 2020-05-15, Georg Fischer: extracted from Tiler.java
  */
 package org.teherba.tile;
-import org.teherba.tile.Position;
-import org.teherba.tile.Vertex;
 import java.io.Serializable;
 
 /**
@@ -155,7 +153,7 @@ public class VertexType implements Serializable {
       if (ind > 0) {
         result.append(delim);
       }
-      result.append(String.valueOf(vector[ind]));
+      result.append(vector[ind]);
     } // for
     result.append(']');
     return result.toString();
@@ -164,7 +162,7 @@ public class VertexType implements Serializable {
   /**
    * Returns a String representation of <em>this</em> VertexTypeArray
    * @return a tab-separated line for each {@link VertexType} with the fields
-   * of the long call to VertexTypeArray.decodeNotation
+   * of the long call to <code>VertexTypeArray.decodeNotation</code>
    */
   public String toString() {
     StringBuffer result = new StringBuffer(1024);
@@ -182,17 +180,17 @@ public class VertexType implements Serializable {
       }
       result.append((char) (pxTinds[iedge] + 'A'));
       if (pxRotas[iedge] >= 0) {
-        result.append(String.valueOf(pxRotas[iedge]));
+        result.append(pxRotas[iedge]);
       }
       result.append(pxOrients[iedge] < 0 ? '-' : '+');
       if (pxEdges[iedge] >= 0) {
-        result.append(String.valueOf(pxEdges[iedge] + 1)); // external edge no
+        result.append(pxEdges[iedge] + 1); // external edge no
       }
     } // for iedge
     result.append("\t");
     result.append(sequence);
     result.append("\t");
-    result.append(String.valueOf(tilingNo));
+    result.append(tilingNo);
     return result.toString();
   } // toString()
 

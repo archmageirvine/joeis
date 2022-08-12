@@ -81,7 +81,7 @@ public abstract class BaseTriangle extends Triangle implements SequenceWithOffse
    * Get the length of a row.
    * This is the length of the Z array for the row.
    * @param n 0-based number of the row
-   * @return <code>n + 1</code> for "tabl" triangles, or some other value for irregular ("tabf") triangles
+   * @return <code>n + 1</code> for <code>tabl</code> triangles, or some other value for irregular (<code>tabf</code>) triangles
    */
   protected int getRowLength(final int n) {
     return get(n).length;

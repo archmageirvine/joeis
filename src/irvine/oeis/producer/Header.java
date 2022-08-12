@@ -17,7 +17,7 @@ public class Header {
 
   /**
    * Construct a new object capturing information from the header line of a program.
-   * @param program program in PARI, MMA, etc.
+   * @param program program in PARI, Mathematica, etc.
    */
   Header(final String program) {
     final int endOfline = program.indexOf('\n');

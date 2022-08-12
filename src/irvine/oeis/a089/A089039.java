@@ -8,7 +8,7 @@ import irvine.oeis.SequenceWithOffset;
 
 /**
  * A089039 Number of circular permutations of 2n letters that are free of jealousy.
- * a(1)=1, a(n) = Sum_{k=1..floor(n/2)} n!*(n-k-1)!^2/((k-1)!^2*(n-2*k)!*k) for n > 1
+ * <code></code>a(1)=1, a(n) = Sum_{k=1..floor(n/2)} n!*(n-k-1)!^2/((k-1)!^2*(n-2*k)!*k)</code> for n &gt; 1
  * @author Georg Fischer
  */
 public class A089039 implements SequenceWithOffset {

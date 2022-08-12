@@ -4,7 +4,7 @@ import irvine.oeis.HypergeometricSequence;
 
 /**
  * A333990 a(n) = Sum_{k=0..n} n^k * binomial(2*n,2*k).
- * a(n) = hypergeometric2F1(1/2 - n, -n, 1/2, n).
+ * <code>a(n) = hypergeometric2F1(1/2 - n, -n, 1/2, n)</code>.
  * @author Georg Fischer
  */
 public class A333990 extends HypergeometricSequence {

@@ -1995,3 +1995,4 @@ A058722 Number of simple matroids of rank 4 on n labeled points.
 A058730 Triangle T(n,k) giving number of nonisomorphic simple matroids of rank k on n labeled points (n >= 2, 2 <= k <= n).
 A058731 Number of nonisomorphic simple matroids of rank 3 on n unlabeled points.
 A058733 Number of nonisomorphic simple matroids of rank 4 on n labeled points.
+A058759 Shannon switching function: a(n) is the least number k such that any switching (or Boolean) function of n variables can be realized as a two-terminal network of AND's and OR's in which the total number of occurrences of the variables X_1, X_1', ..., X_n, X_n' is no more than k (where the primes indicate complements).

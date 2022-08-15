@@ -157,4 +157,21 @@ public final class GaussianIntegers extends AbstractIntegralDomain<Pair<Z, Z>> {
   public Pair<Z, Z> coerce(final long n) {
     return new Pair<>(Z.valueOf(n), Z.ZERO);
   }
+
+  /**
+   * Return true iff this Gaussian integer is a Gaussian prime.
+   * @return true for a Gaussian prime
+   */
+  public boolean isProbablePrime(final Pair<Z, Z> n) {
+    if (n.left().isZero()) {
+      final Z t = n.right().abs();
+      return t.mod(4) == 3 && t.isProbablePrime();
+    }
+    if (n.right().isZero()) {
+      final Z t = n.left().abs();
+      return t.mod(4) == 3 && t.isProbablePrime();
+    }
+    final Z t = abs(n);
+    return /*t.mod(4) != 3 &&*/ t.isProbablePrime();
+  }
 }

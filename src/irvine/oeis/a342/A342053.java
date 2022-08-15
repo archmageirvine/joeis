@@ -1,0 +1,321 @@
+package irvine.oeis.a342;
+
+import java.util.function.BiFunction;
+
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Integers;
+import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.Sequence;
+import irvine.oeis.a002.A002712;
+
+/**
+ * A342053 Array read by antidiagonals: T(n,k) is the number of unrooted 3-connected triangulations of a disk with n interior nodes and k nodes on the boundary, n &gt;= 1, k &gt;= 3.
+ * @author Sean A. Irvine
+ */
+public class A342053 implements Sequence {
+
+  // After Andrew Howroyd
+
+  // References
+  // William G. Brown, Enumeration of Triangulations of the Disk, Proc. Lond. Math. Soc. s3-14 (1964) 746-768.
+  // William T. Tutte, A census of planar triangulations, Canad. J. Math. 14 (1962), 21-38. See Eq. 5.12.
+
+  // This script is for the arrays A341923 and A342053.
+
+  // This script is for 3-connected triangulations of a disk. Brown's paper mostly covers the 2-connected case.
+  // In the final section (section IV) he briefly describes how to extend the results to 3-connected, but is
+  // short on detail. He also mentions that a direct route is probably much harder. The basic principle is
+  // that to every 2-connected triangulation one can associate a 3-connected core. Substituting the edges on
+  // the boundary of a 3-connected triangulation with possibly empty rooted 2-triangulations gives the
+  // 2-connected triangulations associated with the 3-connected triangulation. Series reversion can be
+  // used to reverse this process.
+
+  // In the bivariate power series used here, x counts the external vertices (or edges) and y counts the
+  // internal vertices. This is the opposite to the Brown paper. The reason for this is that PARI
+  // does series reversion only on the primary series variable - in this case we are considering
+  // substitutions on the external edges.
+
+  // See also PARI script in A169808 which is the for the 2-connected case.
+
+  private static final PolynomialRingField<Z> INNER = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);
+  private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
+
+// 
+// // Rooted disk triangulations
+// 
+// // A146305: Biconnected with n internal nodes and m+3 external nodes.
+// D(n,m)={2*(2*m+3)!*(4*n+2*m+1)!/(m!*(m+2)!*n!*(3*n+2*m+3)!)}
+
+  private final BiFunction<Integer, Integer, Z> mD = (n, m) -> F.factorial(2 * m + 3).multiply(F.factorial(4 * n + 2 * m + 1)).multiply2()
+    .divide(F.factorial(m).multiply(F.factorial(m + 2)).multiply(F.factorial(n)).multiply(F.factorial(3 * n + 2 * m + 3)));
+
+// // A341856: 3-connected
+// W(n,m)={if(m==0, 2*(4*n+1)!/((3*n+2)!*(n+1)!), (3*(m+2)!*(m-1)!/(3*n+3*m+3)!)*sum(j=0, min(m, n-1), (4*n+3*m-j+1)!*(m+j+2)*(m-3*j)/(j!*(j+1)!*(m-j)!*(m-j+2)!*(n-j-1)!)))}
+
+  private final BiFunction<Integer, Integer, Z> mW = (n, m) -> m == 0
+    ? F.factorial(4 * n + 1).multiply2().divide(F.factorial(3 * n + 2).multiply(F.factorial(n + 1)))
+    : F.factorial(m + 2).multiply(F.factorial(m - 1).multiply(3)).divide(F.factorial(3 * n + 3 * m + 3))
+    .multiply(Integers.SINGLETON.sum(0, Math.min(m, n - 1), j -> F.factorial(4 * n + 3 * m - j + 1).multiply(F.factorial(m + j + 2)).multiply(m - 3L * j).divide(F.factorial(j).multiply(F.factorial(j + 1)).multiply(F.factorial(m - j)).multiply(F.factorial(m - j + 2)).multiply(F.factorial(n - j - 1)))));
+
+// // Triangulations with Rotational Symmetry
+// 
+// // Formula for 2-connected
+// // 8.12, 8.11, 8.10 in Brown
+// Er(s,p)={(2*p+2)!*(4*s+2*p+1)!/(p!*(p+1)!*s!*(3*s+2*p+2)!)}
+
+  private final BiFunction<Integer, Integer, Z> mEr = (s, p) -> F.factorial(2 * p + 2).multiply(F.factorial(4 * s + 2 * p + 1))
+    .divide(F.factorial(p).multiply(F.factorial(p + 1)).multiply(F.factorial(s)).multiply(F.factorial(3 * s + 2 * p + 2)));
+
+// E3(s,p)={(2*p+1)!*(4*s+2*p)!/(p!*p!*s!*(3*s+2*p+1)!)}
+// E2(s,j,p)=2*(2*p)!*(4*s+2*p+2*j-1)!/(p!*(p-1)!*s!*(3*s+2*p+2*j)!)
+// 
+// // Oriented triangulations.
+// // See 6.3 in Brown.
+// // A262586: 2-connected
+// OrientedTriangs(n,m)={(D(n,m) + if(m%2==1, E2(n\2, n%2, (m+1)/2)) + if(gcd(m,n)%3==0, 2*E3(n/3, m/3)) + sumdiv(gcd(m+3,n-1), d, if(d>2, eulerphi(d)*Er((n-1)/d, (m+3)/d-1))))/(m+3)}
+// 
+// // Helper to make matrix from bivariate g.f.
+// BgfToArray(gf, N, M)={matrix(N+1, M+1, n, m, polcoeff(polcoeff(gf, n-1, x), m-1, y))}
+// 
+// // Helper to make bivariate g.f. from a function. Transposes function.
+// MakeSquareBgfTr(fun, N, M, x, y)={sum(n=0, N, x^n*(O(y*y^M) + sum(m=0, M, y^m*fun(m,n)))) + O(x*x^N)}
+
+  private Polynomial<Polynomial<Z>> makeSquareBgfTr(final BiFunction<Integer, Integer, Z> fun, final int n, final int m, final int yStep) {
+    final Polynomial<Polynomial<Z>> sum = RING.empty();
+    for (int k = 0; k <= n; ++k) {
+      final Polynomial<Z> s = INNER.empty();
+      for (int j = 0; j <= m; ++j) {
+        s.add(fun.apply(j, k));
+        for (int i = 1; i < yStep; ++i) {
+          s.add(Z.ZERO);
+        }
+      }
+      sum.add(s);
+    }
+    return sum;
+  }
+
+// // Substitutes x with x^e and y with y^e in s.
+// BgfRaise(s,e)={subst(subst(s, x, x^e), y, y^e)}
+
+  private Polynomial<Polynomial<Z>> bgfRaise(final Polynomial<Polynomial<Z>> s, final int e) {
+    return RING.deepSubstitute(s, e);
+  }
+
+// 
+// // Does an inversion for rotational symmetry.
+// // The functional equation we are inverting is:
+// //      P(x,y) = F'(x,y) * Z(F(x,y), y)
+// // where P(x,y) give the number of 2-connected triangulations with some rotational symmetry
+// // and Z(x,y) is the corresponding number of 3-connected triangulations that we wish to calculate.
+// // Here F(x,y) gives the number of possibly empty triangulations rooted at an edge.
+// // F(x,y) is in Brown's paper x*(1 + x*D(y,x)) = x*Dbar(y,x).
+// // Note F'(x,y) is d/dx of F(x,y)
+// // To invert this we integrate both sides applying the chain rule and then use Lagrangian inversion.
+// // The method parameters are bgf=P(x,y) and Fi(x,y) the series reversion of F(x,y).
+// InvHelp(bgf, Fi)={deriv(subst(intformal(bgf), x, Fi ))}
+
+  private Polynomial<Polynomial<Z>> invHelp(final Polynomial<Polynomial<Z>> bgf, final Polynomial<Polynomial<Z>> fi) {
+    // todo could this need Q
+    return RING.diff(RING.substitute(RING.integrate(bgf), fi, bgf.degree()));
+  }
+
+// // Main method for oriented triangulations - returns bivariate g.f.
+// OrientedStrongTriangsGf(M,N)={
+//   my(Fi = serreverse(x*(1 + x*MakeSquareBgfTr(D,M\2,N\2,x,y))));
+//   my(Gr = x*InvHelp(MakeSquareBgfTr(Er, M\3, N\3, x, y), Fi));
+//   my(p=x^3*MakeSquareBgfTr(W, M-3, N, x, y)
+//           + BgfRaise(x*InvHelp(1+x*MakeSquareBgfTr((s,p)->E2(s,0,p+1), M\2, N\2, x, y), Fi), 2)
+//           + y*BgfRaise(x*InvHelp(x*MakeSquareBgfTr((s,p)->E2(s,1,p+1), M\2, N\2, x, y), Fi), 2)
+//           + 2*BgfRaise(x*InvHelp(MakeSquareBgfTr(E3, M\3, N\3, x, y), Fi), 3)
+//           + y*sum(d=3, M, eulerphi(d)*BgfRaise(BgfTrim(Gr, M\d+1, N\d+1), d)));
+//   intformal(p/x - x)
+// }
+
+  private Polynomial<Polynomial<Z>> orientedStrongTriangsGf(final int m, final int n) {
+    final Polynomial<Polynomial<Z>> fi = RING.reversion(RING.add(RING.one(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(1)).shift(1), n);
+    final Polynomial<Polynomial<Z>> gr = invHelp(makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
+    final Polynomial<Polynomial<Z>> p = makeSquareBgfTr(mW, m -3, n, 1).shift(3);
+    // todo p needs more
+    return null; // todo
+  }
+
+// // Sequences for OrientedStrongTriangsGf.
+// A341923Array(N,M)={BgfToArray(OrientedStrongTriangsGf(M+2,N)/(y*x^3), M-1, N-1)~}
+// A341923ColSeq(N,k)={Vec(polcoeff(OrientedStrongTriangsGf(k,N)-x^3, k, x), N)}
+
+  private Polynomial<Z> a341923ColSeq(final int n, final int k) {
+    return RING.subtract(orientedStrongTriangsGf(k, n), X3).coeff(k);
+  }
+
+// A341923RowSeq(N,k)={Vec(polcoeff(OrientedStrongTriangsGf(N,k), k, y))}
+// A341923AntidiagonalSums(N)=Vec(subst(OrientedStrongTriangsGf(N+3,N), y, x)-x^3)
+// 
+// // Triangles with Reflection symmetry.
+// 
+// // Trims a bivariate g.f. to required precision (both x and y)
+// BgfTrim(s,N,M)={subst(s + O(x^N), y, y+O(y^M))}
+
+  private Polynomial<Polynomial<Z>> bgfTrim(final Polynomial<Polynomial<Z>> s, final int n, final int m) {
+    final Polynomial<Polynomial<Z>> res = RING.empty();
+    for (int k = 0; k < Math.min(s.degree(), n); ++k) {
+      res.add(s.coeff(k).truncate(m));
+    }
+    return res;
+  }
+
+// 
+// // J_0 function (sequence A002712 as g.f.)
+// // See 13.10: Satisfies J = 1 + x*J + x^2*J*(1 + x*J/2)*(J^2 - D(x^2,0)).
+// // Compute by iteratively growing precision.
+// Jgf(n,x='x)={my(q=Ser(vector(n+1, i, if(i%2, D(i\2,0))), x), p=1+O(x)); for(n=1, n, p = 1 + x*p + x^2*p*(1 + x*p/2)*(p^2 - q)); p}
+
+  private final MemorySequence mJ = MemorySequence.cachedSequence(new A002712());
+
+  private Polynomial<Z> jgf(final int n) {
+    mJ.a(n); // Force enough terms
+    return INNER.create(mJ);
+  }
+
+// 
+// // Q1, Q2, Q3: The first is for an odd number of external vertices, the other two are for even.
+// //   __        ___         __
+// //  |   \     |   |      /    \
+// //  |__ /     |___|      \ __ /
+// // These have respectively 1, 0 and 2 external vertices on the symmetry line.
+// // The relation of these to K(x,y) and L(x,y) given by Brown follows.
+// // Let P1(x,y) be even terms of K(y,x) or even terms of L(y,x), P2(x,y) be odd terms of K(y,x) and P3(x,y) be odd terms of L(y,x).
+// // More precisely 2*P1(x^2,y) = K(y,x) + K(y,-x) = L(y,x) + L(y,-x); 2*x*P2(x^2,y) = K(y,x) - K(y,-x); 2*x*P3(x^2,y) = L(y,x) - L(y,-x).
+// // P1, P2, P3 enumerate 2-connected triangulations with reflection symmetry with the types shown above.
+// // Q1, Q2, Q3 will enumerate the same triangulations but without edges that cross the symmetry line
+// // or in the case of Q3 join the two external vertices on the symmetry line.
+// // These are related to P1, P2, P3 by the following:
+// //    Q1 = P1/(1 + x*P2); Q2 = P2/(1 + x*P2); Q3 = P3 - P1*Q1 - (D-1)/x.
+// // The following functions give Q1, Q2, Q3 in terms of D,J,x,y (see Brown/A169808/below for meaning of D/J)
+// // In the case of Q2 and Q3 we actually multiply by an extra x to keep denominators consistent.
+// 
+// Q1(D,J,x,y)={(y^3*J^2 + y^2*J - x)*D/(y*(y^2*J + x)*D + (-x + y^2))}
+
+  private Polynomial<Polynomial<Z>> q1(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j, final int m, final int n) {
+    final Polynomial<Polynomial<Z>> t = RING.empty();
+    t.add(INNER.negate(INNER.x())); // y^0
+    t.add(INNER.zero()); // y^1
+    t.add(j); // y^2
+    t.add(INNER.multiply(j, j, m)); // y^3
+    final Polynomial<Polynomial<Z>> num = RING.multiply(t, d, n);
+    final Polynomial<Polynomial<Z>> u = RING.empty();
+    u.add(INNER.zero()); // y^0
+    u.add(INNER.x()); // y^1
+    u.add(INNER.x()); // y^2
+    u.add(j); // y^3
+    final Polynomial<Polynomial<Z>> v = RING.empty();
+    v.add(INNER.negate(INNER.x())); // y^0
+    v.add(INNER.zero()); // y^1
+    v.add(INNER.one()); // y^2
+    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, n), v);
+    return RING.series(num, den, n);
+  }
+
+// Q2(D,J,x,y)={(((-y^2*x + y^3)*J - y*x)*D + (y*x - y^3)*J)/(y*(y^2*J + x)*D + (-x + y^2))}
+
+  private Polynomial<Polynomial<Z>> q2(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j, final int m, final int n) {
+    final Polynomial<Polynomial<Z>> t = RING.empty();
+    t.add(INNER.zero()); // y^0
+    t.add(INNER.negate(INNER.x())); // y^1
+    t.add(INNER.negate(j).shift(1)); // y^2
+    t.add(j); // y^3
+    final Polynomial<Polynomial<Z>> w = RING.empty();
+    w.add(INNER.zero()); // y^0
+    w.add(j.shift(1)); // y^1
+    w.add(INNER.zero()); // y^2
+    w.add(INNER.negate(j)); // y^3
+    w.add(j); // y^3
+    final Polynomial<Polynomial<Z>> num = RING.add(RING.multiply(t, d, n), w);
+    final Polynomial<Polynomial<Z>> u = RING.empty();
+    u.add(INNER.zero()); // y^0
+    u.add(INNER.x()); // y^1
+    u.add(INNER.zero()); // y^2
+    u.add(j); // y^3
+    final Polynomial<Polynomial<Z>> v = RING.empty();
+    v.add(INNER.negate(INNER.x())); // y^0
+    v.add(INNER.zero()); // y^1
+    v.add(INNER.one()); // y^2
+    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, n), v);
+    return RING.series(num, den, n);
+  }
+
+// Q3(D,J,x,y)={(((-y^2*x*J - x^2)*D + (y^2*x*J^2 + y*x*J - y*x))/(y*(y^2*J + x)*D + (-x + y^2)) - 1)*D + 1}
+
+  private static final Polynomial<Z> NX2 = Polynomial.create(0, 0, -1);
+
+  private Polynomial<Polynomial<Z>> q3(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j, final int m, final int n) {
+    final Polynomial<Polynomial<Z>> t = RING.empty();
+    t.add(NX2); // y^0
+    t.add(INNER.zero()); // y^1
+    t.add(INNER.negate(j).shift(1)); // y^2
+    final Polynomial<Polynomial<Z>> w = RING.empty();
+    w.add(INNER.zero()); // y^0
+    w.add(INNER.subtract(j, INNER.one()).shift(1)); // y^1
+    w.add(INNER.multiply(j, j, m).shift(1)); // y^2
+    final Polynomial<Polynomial<Z>> num = RING.add(RING.multiply(t, d, n), w);
+    final Polynomial<Polynomial<Z>> u = RING.empty();
+    u.add(INNER.zero()); // y^0
+    u.add(INNER.x()); // y^1
+    u.add(INNER.zero()); // y^2
+    u.add(j); // y^3
+    final Polynomial<Polynomial<Z>> v = RING.empty();
+    v.add(INNER.negate(INNER.x())); // y^0
+    v.add(INNER.zero()); // y^1
+    v.add(INNER.one()); // y^2
+    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, n), v);
+    return RING.add(RING.series(num, den, n), RING.one());
+  }
+
+// 
+// // Main method for achiral triangulations - returns bivariate g.f.
+// AchiralStrongTriangsGf(M,N)={
+//   my( Ds = 1 + x*MakeSquareBgfTr(D, M-1, N+M-1, x, y^2),
+//       Fi = BgfRaise(serreverse(x*(1 + x*MakeSquareBgfTr(D,M,N,x,y))), 2),
+//       J = Jgf(2*(N+M),y)
+//     );
+//   x*subst(x*BgfTrim(Q1(Ds,J,x,y), M+1, 2*N+1), x, Fi) - x^3
+//    + (x^2*subst(BgfTrim(serchop(Q2(Ds,J,x,y),1), M+1, 2*N+1), x, Fi) 
+//       + subst(x*BgfTrim(serchop(Q3(Ds,J,x,y),1), M+1, 2*N+1), x, Fi))/2
+// }
+
+  private static final Polynomial<Polynomial<Z>> X3 = RING.monomial(INNER.one(), 3);
+  private static final Polynomial<Z> TWO = Polynomial.create(2);
+
+  private Polynomial<Polynomial<Z>> achiralStrongTriangsGf(final int m, final int n) {
+    final Polynomial<Polynomial<Z>> ds = RING.add(RING.one(), makeSquareBgfTr(mD, m - 1, n + m - 1, 2).shift(1));
+    final Polynomial<Polynomial<Z>> fi = bgfRaise(RING.reversion(RING.add(RING.one(), makeSquareBgfTr(mD, m, n, 1).shift(1)), n), 2);
+    final Polynomial<Z> j = jgf(2 * (n + m));
+    return RING.add(RING.subtract(RING.substitute(bgfTrim(q1(ds, j, m, n), m + 1, 2 * n + 1).shift(1), fi, n).shift(1), X3),
+      RING.divide(RING.add(
+          RING.substitute(bgfTrim(RING.leftTruncate(q2(ds, j, m, n), 1), m + 1, 2 * n + 1), fi, n).shift(2),
+          RING.substitute(bgfTrim(RING.leftTruncate(q3(ds, j, m, n), 1), m + 1, 2 * n + 1).shift(1), fi, n)),
+        TWO));
+  }
+
+// 
+// // Sequences for unrooted triangulations
+// A342053Array(N,M)={(BgfToArray(AchiralStrongTriangsGf(M\2, (N+1)\2)/(y*x^3), M-1, N-1)~ + A341923Array(N,M))/2}
+// A342053ColSeq(N,k)={(Vec(O(y*y^N) + polcoeff(AchiralStrongTriangsGf(max(0,k\2-1),(N+1)\2),k), N) + A341923ColSeq(N,k))/2}
+
+  private Polynomial<Z> a342053ColSeq(final int n, final int k) {
+    return INNER.divide(INNER.add(achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k), a341923ColSeq(n,k)), Z.TWO);
+  }
+
+  // A342053RowSeq(N,k)={(Vec(O(x*x^N) + polcoeff(AchiralStrongTriangsGf(N\2-1, (k+1)\2), k, y)) + A341923RowSeq(N,k))/2}
+// A342053AntidiagonalSums(N)={(Vec(O(x^(N+4)) + subst(AchiralStrongTriangsGf((N+1)\2,(N+1)\2), y, x)) + A341923AntidiagonalSums(N))/2}
+
+  @Override
+  public Z next() {
+    return null;
+  }
+}

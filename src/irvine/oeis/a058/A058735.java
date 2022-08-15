@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000669;
 
 /**
- * A058735.
+ * A058735 Triangle of coefficients in expansion of enumerators for series-reduced rooted trees by lines at the root.
  * @author Sean A. Irvine
  */
 public class A058735 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SequenceWithOffset;
 
 /**
- * A273652 Number of forests of labeled rooted trees of height at most 1, with n labels,
+ * A273652 Number of forests of labeled rooted trees of height at most 1, with n labels, two of which are used for root nodes and any root may contain &gt;= 1 labels.
  * two of which are used for root nodes and any root may contain &gt;= 1 labels.
  * a(n) = C(n, 2) * Sum_{j=0.. 2} Stirling2( 2,j) * j^(n- 2)
  * @author Georg Fischer

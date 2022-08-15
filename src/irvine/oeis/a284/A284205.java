@@ -4,7 +4,7 @@ package irvine.oeis.a284;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A284205 Ninth column of Euler&apos;s difference table in A068106.
+ * A284205 Ninth column of Euler's difference table in A068106.
  * @author Georg Fischer
  */
 public class A284205 extends HolonomicRecurrence {

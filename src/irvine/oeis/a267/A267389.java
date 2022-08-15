@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.math.z.Z;
 
 /**
- * A267389 Number of acyclic orientations of the Tur√°n graph T(n, 9).
+ * A267389 Number of acyclic orientations of the Tur\u00e1n graph T(n,9).
  * @author Georg Fischer
  */
 public class A267389 extends A267383 {

@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A277609 Fourth column of Euler&apos;s difference table in A068106. It is 6 times the sequence A000261.
+ * A277609 Fourth column of Euler's difference table in A068106. It is 6 times the sequence A000261.
  * @author Georg Fischer
  */
 public class A277609 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A267383 Number A(n,k) of acyclic orientations of the Turán graph T(n,k); square array A(n,k), n&gt;=0, k&gt;=1, read by antidiagonals.
+ * A267383 Number A(n,k) of acyclic orientations of the Tur\u00e1n graph T(n,k); square array A(n,k), n&gt;=0, k&gt;=1, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A267383 extends UpperLeftTriangle {

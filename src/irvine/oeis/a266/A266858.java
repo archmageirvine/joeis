@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a267.A267383;
 
 /**
- * A266858 Number of acyclic orientations of the Tur√°n graph T(n, 3).
+ * A266858 Number of acyclic orientations of the Tur\u00e1n graph T(n,3).
  * @author Georg Fischer
  */
 public class A266858 extends A267383 {

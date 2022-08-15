@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000669;
 
 /**
- * A058735.
+ * A058737 Main diagonal of A058735.
  * @author Sean A. Irvine
  */
 public class A058737 extends A000669 {

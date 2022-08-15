@@ -568,4 +568,23 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
   public Polynomial<E> deepSubstitute(final Polynomial<E> p, final int power) {
     return deepSubstitute(p, power, Integer.MAX_VALUE);
   }
+
+  /**
+   * Remove all terms of degree lower than specified from the polynomial.
+   * Corresponds with Pari <code>serchop</code>
+   * @param p polynomial
+   * @param degree degree limit
+   * @return polynomial with low degree terms removed.
+   */
+  public Polynomial<E> leftTruncate(final Polynomial<E> p, final int degree) {
+    if (degree > p.degree()) {
+      return zero();
+    }
+    final Polynomial<E> res = empty();
+    for (int k = 0; k < degree; ++k) {
+      res.add(mZero);
+    }
+    res.addAll(p.subList(degree, p.size()));
+    return res;
+  }
 }

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000084;
 
 /**
- * A058735.
+ * A058756 G.f. is (1-S)/(1+S), where S = g.f. for A000084.
  * @author Sean A. Irvine
  */
 public class A058756 extends A000084 {

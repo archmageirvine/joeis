@@ -273,7 +273,24 @@ public final class PolynomialUtils {
   }
 
   /**
-   * Perform substitution of inner variable of a bivariate polynomial.
+   * Perform a shift of the inner variable of a bivariate polynomial.
+   * @param ring ring for outer polynomial
+   * @param t polynomial
+   * @param power power to substitute
+   * @param n degree limit
+   * @param <T> type of element
+   * @return substituted polynomial
+   */
+  public static <T> Polynomial<Polynomial<T>> innerShift(final PolynomialRing<Polynomial<T>> ring, final Polynomial<Polynomial<T>> t, final int shift) {
+    final Polynomial<Polynomial<T>> subs = ring.empty();
+    for (final Polynomial<T> v : t) {
+      subs.add(v.shift(shift));
+    }
+    return subs;
+  }
+
+  /**
+   * Perform substitution of the inner variable of a bivariate polynomial.
    * @param ring ring for outer polynomial
    * @param t polynomial
    * @param power power to substitute

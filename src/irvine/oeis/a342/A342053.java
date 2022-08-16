@@ -2,10 +2,13 @@ package irvine.oeis.a342;
 
 import java.util.function.BiFunction;
 
+import irvine.math.LongUtils;
 import irvine.math.factorial.MemoryFactorial;
+import irvine.math.group.DegreeLimitedPolynomialRingField;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.polynomial.PolynomialUtils;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -45,35 +48,35 @@ public class A342053 implements Sequence {
   private static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);
   private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
 
-// 
-// // Rooted disk triangulations
-// 
-// // A146305: Biconnected with n internal nodes and m+3 external nodes.
-// D(n,m)={2*(2*m+3)!*(4*n+2*m+1)!/(m!*(m+2)!*n!*(3*n+2*m+3)!)}
+  // Rooted disk triangulations
 
-  private final BiFunction<Integer, Integer, Z> mD = (n, m) -> F.factorial(2 * m + 3).multiply(F.factorial(4 * n + 2 * m + 1)).multiply2()
+  // A146305: Biconnected with n internal nodes and m+3 external nodes.
+  final BiFunction<Integer, Integer, Z> mD = (n, m) -> F.factorial(2 * m + 3).multiply(F.factorial(4 * n + 2 * m + 1)).multiply2()
     .divide(F.factorial(m).multiply(F.factorial(m + 2)).multiply(F.factorial(n)).multiply(F.factorial(3 * n + 2 * m + 3)));
 
-// // A341856: 3-connected
-// W(n,m)={if(m==0, 2*(4*n+1)!/((3*n+2)!*(n+1)!), (3*(m+2)!*(m-1)!/(3*n+3*m+3)!)*sum(j=0, min(m, n-1), (4*n+3*m-j+1)!*(m+j+2)*(m-3*j)/(j!*(j+1)!*(m-j)!*(m-j+2)!*(n-j-1)!)))}
-
-  private final BiFunction<Integer, Integer, Z> mW = (n, m) -> m == 0
+  // A341856: 3-connected
+  final BiFunction<Integer, Integer, Z> mW = (n, m) -> m == 0
     ? F.factorial(4 * n + 1).multiply2().divide(F.factorial(3 * n + 2).multiply(F.factorial(n + 1)))
-    : F.factorial(m + 2).multiply(F.factorial(m - 1).multiply(3)).divide(F.factorial(3 * n + 3 * m + 3))
-    .multiply(Integers.SINGLETON.sum(0, Math.min(m, n - 1), j -> F.factorial(4 * n + 3 * m - j + 1).multiply(F.factorial(m + j + 2)).multiply(m - 3L * j).divide(F.factorial(j).multiply(F.factorial(j + 1)).multiply(F.factorial(m - j)).multiply(F.factorial(m - j + 2)).multiply(F.factorial(n - j - 1)))));
+    : F.factorial(m + 2).multiply(F.factorial(m - 1).multiply(3))
+    .multiply(Integers.SINGLETON.sum(0, Math.min(m, n - 1), j -> F.factorial(4 * n + 3 * m - j + 1).multiply(m + j + 2).multiply(m - 3L * j).divide(F.factorial(j).multiply(F.factorial(j + 1)).multiply(F.factorial(m - j)).multiply(F.factorial(m - j + 2)).multiply(F.factorial(n - j - 1))))).divide(F.factorial(3 * n + 3 * m + 3));
 
-// // Triangulations with Rotational Symmetry
-// 
-// // Formula for 2-connected
-// // 8.12, 8.11, 8.10 in Brown
-// Er(s,p)={(2*p+2)!*(4*s+2*p+1)!/(p!*(p+1)!*s!*(3*s+2*p+2)!)}
-
-  private final BiFunction<Integer, Integer, Z> mEr = (s, p) -> F.factorial(2 * p + 2).multiply(F.factorial(4 * s + 2 * p + 1))
+  // Triangulations with Rotational Symmetry
+  final BiFunction<Integer, Integer, Z> mEr = (s, p) -> F.factorial(2 * p + 2).multiply(F.factorial(4 * s + 2 * p + 1))
     .divide(F.factorial(p).multiply(F.factorial(p + 1)).multiply(F.factorial(s)).multiply(F.factorial(3 * s + 2 * p + 2)));
 
-// E3(s,p)={(2*p+1)!*(4*s+2*p)!/(p!*p!*s!*(3*s+2*p+1)!)}
-// E2(s,j,p)=2*(2*p)!*(4*s+2*p+2*j-1)!/(p!*(p-1)!*s!*(3*s+2*p+2*j)!)
-// 
+  // E3(s,p)={(2*p+1)!*(4*s+2*p)!/(p!*p!*s!*(3*s+2*p+1)!)}
+  final BiFunction<Integer, Integer, Z> mE3 = (s, p) -> F.factorial(2 * p + 1).multiply(F.factorial(4 * s + 2 * p))
+    .divide(F.factorial(p).square().multiply(F.factorial(s)).multiply(F.factorial(3 * s + 2 * p + 1)));
+
+  @FunctionalInterface
+  interface TriFunction<A, B, C, R> {
+    R apply(final A s, final B j, final C p);
+  }
+
+  // E2(s,j,p)=2*(2*p)!*(4*s+2*p+2*j-1)!/(p!*(p-1)!*s!*(3*s+2*p+2*j)!)
+  final TriFunction<Integer, Integer, Integer, Z> mE2 = (s, j, p) -> F.factorial(2 * p).multiply(F.factorial(4 * s + 2 * p + 2 * j - 1)).multiply2()
+    .divide(F.factorial(p).multiply(F.factorial(p - 1)).multiply(F.factorial(s)).multiply(F.factorial(3 * s + 2 * p + 2 * j)));
+
 // // Oriented triangulations.
 // // See 6.3 in Brown.
 // // A262586: 2-connected
@@ -120,9 +123,9 @@ public class A342053 implements Sequence {
 // // The method parameters are bgf=P(x,y) and Fi(x,y) the series reversion of F(x,y).
 // InvHelp(bgf, Fi)={deriv(subst(intformal(bgf), x, Fi ))}
 
-  private Polynomial<Polynomial<Z>> invHelp(final Polynomial<Polynomial<Z>> bgf, final Polynomial<Polynomial<Z>> fi) {
+  private Polynomial<Polynomial<Z>> invHelp(final PolynomialRingField<Polynomial<Z>> ring, final Polynomial<Polynomial<Z>> bgf, final Polynomial<Polynomial<Z>> fi) {
     // todo could this need Q
-    return RING.diff(RING.substitute(RING.integrate(bgf), fi, bgf.degree()));
+    return ring.diff(ring.substitute(ring.integrate(bgf), fi, bgf.degree()));
   }
 
 // // Main method for oriented triangulations - returns bivariate g.f.
@@ -138,11 +141,17 @@ public class A342053 implements Sequence {
 // }
 
   private Polynomial<Polynomial<Z>> orientedStrongTriangsGf(final int m, final int n) {
-    final Polynomial<Polynomial<Z>> fi = RING.reversion(RING.add(RING.one(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(1)).shift(1), n);
-    final Polynomial<Polynomial<Z>> gr = invHelp(makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
-    final Polynomial<Polynomial<Z>> p = makeSquareBgfTr(mW, m -3, n, 1).shift(3);
-    // todo p needs more
-    return null; // todo
+    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>(IntegerField.SINGLETON, m));
+    final Polynomial<Polynomial<Z>> fi = ring.reversion(ring.add(ring.one(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(1)).shift(1), n);
+    final Polynomial<Polynomial<Z>> gr = invHelp(ring, makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
+    final Polynomial<Polynomial<Z>> p = ring.add(ring.add(ring.add(ring.add(
+          makeSquareBgfTr(mW, m -3, n, 1).shift(3),
+          bgfRaise(invHelp(ring, ring.add(ring.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 0, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2)),
+        PolynomialUtils.innerShift(ring, bgfRaise(invHelp(ring, ring.add(RING.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 1, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2), 1)),
+      ring.multiply(bgfRaise(invHelp(ring, ring.add(RING.one(), makeSquareBgfTr(mE3, m / 3, n / 3, 1)), fi).shift(1), 2), TWO)),
+      PolynomialUtils.innerShift(ring, ring.sum(3, m, d -> ring.multiply(bgfRaise(bgfTrim(gr, m / d + 1, n / d + 1), d), INNER.monomial(Z.valueOf(LongUtils.phi(d)), 1))), 1)
+    );
+    return ring.integrate(ring.subtract(p.shift(-1), ring.x()));
   }
 
 // // Sequences for OrientedStrongTriangsGf.
@@ -292,13 +301,14 @@ public class A342053 implements Sequence {
   private static final Polynomial<Z> TWO = Polynomial.create(2);
 
   private Polynomial<Polynomial<Z>> achiralStrongTriangsGf(final int m, final int n) {
-    final Polynomial<Polynomial<Z>> ds = RING.add(RING.one(), makeSquareBgfTr(mD, m - 1, n + m - 1, 2).shift(1));
-    final Polynomial<Polynomial<Z>> fi = bgfRaise(RING.reversion(RING.add(RING.one(), makeSquareBgfTr(mD, m, n, 1).shift(1)), n), 2);
+    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>(IntegerField.SINGLETON, m));
+    final Polynomial<Polynomial<Z>> ds = ring.add(ring.one(), makeSquareBgfTr(mD, m - 1, n + m - 1, 2).shift(1));
+    final Polynomial<Polynomial<Z>> fi = bgfRaise(ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m, n, 1).shift(2)), n), 2);
     final Polynomial<Z> j = jgf(2 * (n + m));
-    return RING.add(RING.subtract(RING.substitute(bgfTrim(q1(ds, j, m, n), m + 1, 2 * n + 1).shift(1), fi, n).shift(1), X3),
-      RING.divide(RING.add(
-          RING.substitute(bgfTrim(RING.leftTruncate(q2(ds, j, m, n), 1), m + 1, 2 * n + 1), fi, n).shift(2),
-          RING.substitute(bgfTrim(RING.leftTruncate(q3(ds, j, m, n), 1), m + 1, 2 * n + 1).shift(1), fi, n)),
+    return ring.add(ring.subtract(ring.substitute(bgfTrim(q1(ds, j, m, n), m + 1, 2 * n + 1).shift(1), fi, n).shift(1), X3),
+      ring.divide(ring.add(
+          ring.substitute(bgfTrim(ring.leftTruncate(q2(ds, j, m, n), 1), m + 1, 2 * n + 1), fi, n).shift(2),
+          ring.substitute(bgfTrim(ring.leftTruncate(q3(ds, j, m, n), 1), m + 1, 2 * n + 1).shift(1), fi, n)),
         TWO));
   }
 
@@ -314,8 +324,10 @@ public class A342053 implements Sequence {
   // A342053RowSeq(N,k)={(Vec(O(x*x^N) + polcoeff(AchiralStrongTriangsGf(N\2-1, (k+1)\2), k, y)) + A341923RowSeq(N,k))/2}
 // A342053AntidiagonalSums(N)={(Vec(O(x^(N+4)) + subst(AchiralStrongTriangsGf((N+1)\2,(N+1)\2), y, x)) + A341923AntidiagonalSums(N))/2}
 
+  private int mN = 4;
+
   @Override
   public Z next() {
-    return null;
+    return a342053ColSeq(++mN, 4).coeff(mN);
   }
 }

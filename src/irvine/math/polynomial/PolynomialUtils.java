@@ -213,9 +213,9 @@ public final class PolynomialUtils {
     return res;
   }
 
-  private static final PolynomialRingField<Z> ZX = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private static final PolynomialRingField<Z> ZX = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   /** Polynomial field over the rationals. */
-  public static final PolynomialRingField<Q> QX = new PolynomialRingField<>(Rationals.SINGLETON);
+  public static final PolynomialRingField<Q> QX = new PolynomialRingField<>("y", Rationals.SINGLETON);
   /** Bivariate polynomial over the rationals. */
   public static final PolynomialRingField<Polynomial<Q>> QXX = new PolynomialRingField<>(QX);
   private static final PolynomialRingField<Polynomial<Z>> ZXX = new PolynomialRingField<>(ZX);

@@ -9,6 +9,8 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.PolynomialUtils;
+import irvine.math.q.Q;
+import irvine.math.q.Rationals;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
@@ -44,8 +46,8 @@ public class A342053 implements Sequence {
 
   // See also PARI script in A169808 which is the for the 2-connected case.
 
-  private static final PolynomialRingField<Z> INNER = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);
+  private static final PolynomialRingField<Z> INNER = new PolynomialRingField<>("y", IntegerField.SINGLETON);
+  static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);
   private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
 
   // Rooted disk triangulations
@@ -84,11 +86,10 @@ public class A342053 implements Sequence {
 // 
 // // Helper to make matrix from bivariate g.f.
 // BgfToArray(gf, N, M)={matrix(N+1, M+1, n, m, polcoeff(polcoeff(gf, n-1, x), m-1, y))}
-// 
-// // Helper to make bivariate g.f. from a function. Transposes function.
-// MakeSquareBgfTr(fun, N, M, x, y)={sum(n=0, N, x^n*(O(y*y^M) + sum(m=0, M, y^m*fun(m,n)))) + O(x*x^N)}
 
-  private Polynomial<Polynomial<Z>> makeSquareBgfTr(final BiFunction<Integer, Integer, Z> fun, final int n, final int m, final int yStep) {
+
+  // Helper to make bivariate g.f. from a function. Transposes function.
+  Polynomial<Polynomial<Z>> makeSquareBgfTr(final BiFunction<Integer, Integer, Z> fun, final int n, final int m, final int yStep) {
     final Polynomial<Polynomial<Z>> sum = RING.empty();
     for (int k = 0; k <= n; ++k) {
       final Polynomial<Z> s = INNER.empty();
@@ -103,9 +104,7 @@ public class A342053 implements Sequence {
     return sum;
   }
 
-// // Substitutes x with x^e and y with y^e in s.
-// BgfRaise(s,e)={subst(subst(s, x, x^e), y, y^e)}
-
+  // Substitutes x with x^e and y with y^e in s.
   private Polynomial<Polynomial<Z>> bgfRaise(final Polynomial<Polynomial<Z>> s, final int e) {
     return RING.deepSubstitute(s, e);
   }
@@ -123,9 +122,10 @@ public class A342053 implements Sequence {
 // // The method parameters are bgf=P(x,y) and Fi(x,y) the series reversion of F(x,y).
 // InvHelp(bgf, Fi)={deriv(subst(intformal(bgf), x, Fi ))}
 
-  private Polynomial<Polynomial<Z>> invHelp(final PolynomialRingField<Polynomial<Z>> ring, final Polynomial<Polynomial<Z>> bgf, final Polynomial<Polynomial<Z>> fi) {
-    // todo could this need Q
-    return ring.diff(ring.substitute(ring.integrate(bgf), fi, bgf.degree()));
+  Polynomial<Polynomial<Z>> invHelp(final int m, final Polynomial<Polynomial<Z>> bgf, final Polynomial<Polynomial<Z>> fi) {
+    // Intermediate result here is rational, so need to promote to over Q
+    final PolynomialRingField<Polynomial<Q>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, m));
+    return PolynomialUtils.qxToZx(ring.diff(ring.substitute(ring.integrate(PolynomialUtils.zxToQx(bgf)), PolynomialUtils.zxToQx(fi), bgf.degree() + 1)));
   }
 
 // // Main method for oriented triangulations - returns bivariate g.f.
@@ -143,12 +143,12 @@ public class A342053 implements Sequence {
   private Polynomial<Polynomial<Z>> orientedStrongTriangsGf(final int m, final int n) {
     final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>(IntegerField.SINGLETON, m));
     final Polynomial<Polynomial<Z>> fi = ring.reversion(ring.add(ring.one(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(1)).shift(1), n);
-    final Polynomial<Polynomial<Z>> gr = invHelp(ring, makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
+    final Polynomial<Polynomial<Z>> gr = invHelp(m, makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
     final Polynomial<Polynomial<Z>> p = ring.add(ring.add(ring.add(ring.add(
           makeSquareBgfTr(mW, m -3, n, 1).shift(3),
-          bgfRaise(invHelp(ring, ring.add(ring.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 0, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2)),
-        PolynomialUtils.innerShift(ring, bgfRaise(invHelp(ring, ring.add(RING.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 1, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2), 1)),
-      ring.multiply(bgfRaise(invHelp(ring, ring.add(RING.one(), makeSquareBgfTr(mE3, m / 3, n / 3, 1)), fi).shift(1), 2), TWO)),
+          bgfRaise(invHelp(m, ring.add(ring.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 0, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2)),
+        PolynomialUtils.innerShift(ring, bgfRaise(invHelp(m, ring.add(RING.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 1, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2), 1)),
+      ring.multiply(bgfRaise(invHelp(m, ring.add(RING.one(), makeSquareBgfTr(mE3, m / 3, n / 3, 1)), fi).shift(1), 2), TWO)),
       PolynomialUtils.innerShift(ring, ring.sum(3, m, d -> ring.multiply(bgfRaise(bgfTrim(gr, m / d + 1, n / d + 1), d), INNER.monomial(Z.valueOf(LongUtils.phi(d)), 1))), 1)
     );
     return ring.integrate(ring.subtract(p.shift(-1), ring.x()));

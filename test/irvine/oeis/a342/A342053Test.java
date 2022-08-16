@@ -1,5 +1,11 @@
 package irvine.oeis.a342;
 
+import java.util.Arrays;
+
+import irvine.math.group.DegreeLimitedPolynomialRingField;
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import junit.framework.TestCase;
 
@@ -36,4 +42,27 @@ public class A342053Test extends TestCase {
     assertEquals(Z.valueOf(1174544280), seq.mE2.apply(7, 1, 5));
   }
 
+  public void testMakeSquareBgfTr() {
+    final A342053 seq = new A342053();
+    assertEquals("(1+y+3y^2+13y^3)+(2+5y+20y^2+100y^3)x+(5+21y+105y^2+595y^3)x^2+(14+84y+504y^2+3192y^3)x^3+(42+330y+2310y^2+16170y^3)x^4", seq.makeSquareBgfTr(seq.mD, 4, 3, 1).toString());
+    assertEquals("(1+y^2+3y^4+13y^6)+(2+5y^2+20y^4+100y^6)x+(5+21y^2+105y^4+595y^6)x^2+(14+84y^2+504y^4+3192y^6)x^3+(42+330y^2+2310y^4+16170y^6)x^4", seq.makeSquareBgfTr(seq.mD, 4, 3, 2).toString());
+  }
+
+  public void testInvHelp() {
+    final A342053 seq = new A342053();
+    final DegreeLimitedPolynomialRingField<Z> inner = new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, 1);
+    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(inner);
+    final Polynomial<Polynomial<Z>> bgf = ring.create(Arrays.asList(
+      Polynomial.create(1, 2),
+      Polynomial.create(3, 12)
+    ));
+    final Polynomial<Polynomial<Z>> fi = ring.create(Arrays.asList(
+      inner.zero(),
+      inner.one(),
+      Polynomial.create(-1, -1),
+      Polynomial.create(0, -1),
+      Polynomial.create(0, -1)
+    ));
+    assertEquals("(1+2y)+(1+6y)x", seq.invHelp(1, bgf, fi).toString());
+  }
 }

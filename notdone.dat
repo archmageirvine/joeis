@@ -1988,6 +1988,9 @@ A058710 Triangle T(n,k) giving number of loopless matroids of rank k on n labele
 A058711 Triangle T(n,k) giving the number of loopless matroids of rank k on n labeled points (n >= 1, 1 <= k <= n).
 A058712 Number of loopless matroids on n labeled points
 A058715 Number of loopless matroids of rank 3 on n labeled points.
+A058716 Triangle T(n,k) giving number of nonisomorphic loopless matroids of rank k on n labeled points (n &gt;= 0, 0 &lt;= k &lt;= n).
+A058717 Depends A058716
+A058718 Depends A058716
 A058719 Number of nonisomorphic loopless matroids of rank 3 on n labeled points.
 A058720 Triangle T(n,k) giving the number of simple matroids of rank k on n labeled points (n >= 2, 2 <= k <= n).
 A058721 Number of simple matroids on n labeled points.

@@ -11,7 +11,7 @@ public class A339935 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A339935() {
-    super(0, "[[-24],[1],[0],[-10],[0],[1]]", "1, 1, 5, 29", 0);
+    super(1, "[[-24],[1],[0],[-10],[0],[1]]", "1, 1, 5, 29", 0);
   }
 
   @Override

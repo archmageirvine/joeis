@@ -10,7 +10,7 @@ public class A055365 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A055365() {
-    super(5, A055278.computeRecurrence(4), "1, 5, 19, 53, 130, 280, 556, 1024, 1788, 2971, 4752, 7338", 0);
+    super(6, A055278.computeRecurrence(4), "1, 5, 19, 53, 130, 280, 556, 1024, 1788, 2971, 4752, 7338", 0);
   }
 }
 

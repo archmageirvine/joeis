@@ -10,6 +10,6 @@ public class A055328 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A055328() {
-    super(4, A055278.computeRecurrence(3), "1, 5, 13, 28", 0);
+    super(6, A055278.computeRecurrence(3), "1, 5, 13, 28", 0);
   }
 }

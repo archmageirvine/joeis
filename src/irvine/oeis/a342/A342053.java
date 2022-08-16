@@ -140,7 +140,7 @@ public class A342053 implements Sequence {
   Polynomial<Polynomial<Z>> orientedStrongTriangsGf(final int m, final int n) {
     final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, n - 1));
     final Polynomial<Polynomial<Z>> fi = ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(2)), m - 1);
-    System.out.println("fi=" +fi);
+    System.out.println("fi=" + fi);
     final Polynomial<Polynomial<Z>> gr = invHelp(n, makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
     final Polynomial<Polynomial<Z>> p = ring.add(ring.add(ring.add(ring.add(
           makeSquareBgfTr(mW, m - 3, n, 1).shift(3),
@@ -316,7 +316,7 @@ public class A342053 implements Sequence {
 // A342053ColSeq(N,k)={(Vec(O(y*y^N) + polcoeff(AchiralStrongTriangsGf(max(0,k\2-1),(N+1)\2),k), N) + A341923ColSeq(N,k))/2}
 
   private Polynomial<Z> a342053ColSeq(final int n, final int k) {
-    return INNER.divide(INNER.add(achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k), a341923ColSeq(n,k)), Z.TWO);
+    return INNER.divide(INNER.add(achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k), a341923ColSeq(n, k)), Z.TWO);
   }
 
   // A342053RowSeq(N,k)={(Vec(O(x*x^N) + polcoeff(AchiralStrongTriangsGf(N\2-1, (k+1)\2), k, y)) + A341923RowSeq(N,k))/2}

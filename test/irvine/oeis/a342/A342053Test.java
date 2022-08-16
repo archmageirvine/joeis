@@ -65,4 +65,11 @@ public class A342053Test extends TestCase {
     ));
     assertEquals("(1+2y)+(1+6y)x", seq.invHelp(1, bgf, fi).toString());
   }
+
+  // (1 + y + y^2 + 5*y^3 + 24*y^4 + O(y^5))*x^3 + (y + 2*y^2 + 10*y^3 + 60*y^4 + O(y^5))*x^4 + (y + 2*y^2 + 16*y^3 + 122*y^4 + O(y^5))*x^5 + O(x^6)
+
+  public void testOrientedStrongTriangsGf() {
+    final A342053 seq = new A342053();
+    assertEquals("", seq.orientedStrongTriangsGf(5, 4).toString());
+  }
 }

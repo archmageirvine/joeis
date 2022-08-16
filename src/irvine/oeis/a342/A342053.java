@@ -109,19 +109,16 @@ public class A342053 implements Sequence {
     return RING.deepSubstitute(s, e);
   }
 
-// 
-// // Does an inversion for rotational symmetry.
-// // The functional equation we are inverting is:
-// //      P(x,y) = F'(x,y) * Z(F(x,y), y)
-// // where P(x,y) give the number of 2-connected triangulations with some rotational symmetry
-// // and Z(x,y) is the corresponding number of 3-connected triangulations that we wish to calculate.
-// // Here F(x,y) gives the number of possibly empty triangulations rooted at an edge.
-// // F(x,y) is in Brown's paper x*(1 + x*D(y,x)) = x*Dbar(y,x).
-// // Note F'(x,y) is d/dx of F(x,y)
-// // To invert this we integrate both sides applying the chain rule and then use Lagrangian inversion.
-// // The method parameters are bgf=P(x,y) and Fi(x,y) the series reversion of F(x,y).
-// InvHelp(bgf, Fi)={deriv(subst(intformal(bgf), x, Fi ))}
-
+  // Does an inversion for rotational symmetry.
+  // The functional equation we are inverting is:
+  //      P(x,y) = F'(x,y) * Z(F(x,y), y)
+  // where P(x,y) give the number of 2-connected triangulations with some rotational symmetry
+  // and Z(x,y) is the corresponding number of 3-connected triangulations that we wish to calculate.
+  // Here F(x,y) gives the number of possibly empty triangulations rooted at an edge.
+  // F(x,y) is in Brown's paper x*(1 + x*D(y,x)) = x*Dbar(y,x).
+  // Note F'(x,y) is d/dx of F(x,y)
+  // To invert this we integrate both sides applying the chain rule and then use Lagrangian inversion.
+  // The method parameters are bgf=P(x,y) and Fi(x,y) the series reversion of F(x,y).
   Polynomial<Polynomial<Z>> invHelp(final int m, final Polynomial<Polynomial<Z>> bgf, final Polynomial<Polynomial<Z>> fi) {
     // Intermediate result here is rational, so need to promote to over Q
     final PolynomialRingField<Polynomial<Q>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", Rationals.SINGLETON, m));
@@ -140,15 +137,16 @@ public class A342053 implements Sequence {
 //   intformal(p/x - x)
 // }
 
-  private Polynomial<Polynomial<Z>> orientedStrongTriangsGf(final int m, final int n) {
-    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>(IntegerField.SINGLETON, m));
-    final Polynomial<Polynomial<Z>> fi = ring.reversion(ring.add(ring.one(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(1)).shift(1), n);
-    final Polynomial<Polynomial<Z>> gr = invHelp(m, makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
+  Polynomial<Polynomial<Z>> orientedStrongTriangsGf(final int m, final int n) {
+    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, n - 1));
+    final Polynomial<Polynomial<Z>> fi = ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(2)), m - 1);
+    System.out.println("fi=" +fi);
+    final Polynomial<Polynomial<Z>> gr = invHelp(n, makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
     final Polynomial<Polynomial<Z>> p = ring.add(ring.add(ring.add(ring.add(
-          makeSquareBgfTr(mW, m -3, n, 1).shift(3),
-          bgfRaise(invHelp(m, ring.add(ring.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 0, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2)),
-        PolynomialUtils.innerShift(ring, bgfRaise(invHelp(m, ring.add(RING.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 1, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2), 1)),
-      ring.multiply(bgfRaise(invHelp(m, ring.add(RING.one(), makeSquareBgfTr(mE3, m / 3, n / 3, 1)), fi).shift(1), 2), TWO)),
+          makeSquareBgfTr(mW, m - 3, n, 1).shift(3),
+          bgfRaise(invHelp(n, ring.add(ring.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 0, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2)),
+        PolynomialUtils.innerShift(ring, bgfRaise(invHelp(n, ring.add(RING.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 1, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2), 1)),
+      ring.multiply(bgfRaise(invHelp(n, ring.add(RING.one(), makeSquareBgfTr(mE3, m / 3, n / 3, 1)), fi).shift(1), 2), TWO)),
       PolynomialUtils.innerShift(ring, ring.sum(3, m, d -> ring.multiply(bgfRaise(bgfTrim(gr, m / d + 1, n / d + 1), d), INNER.monomial(Z.valueOf(LongUtils.phi(d)), 1))), 1)
     );
     return ring.integrate(ring.subtract(p.shift(-1), ring.x()));

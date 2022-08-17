@@ -303,4 +303,19 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
     }
     return sum;
   }
+
+
+  /**
+   * Convenience method to sum a list of elements.
+   * @param n elements to add together
+   * @return sum
+   */
+  @SafeVarargs
+  public final E add(final E... n) {
+    E sum = zero();
+    for (final E e : n) {
+      sum = add(sum, e);
+    }
+    return sum;
+  }
 }

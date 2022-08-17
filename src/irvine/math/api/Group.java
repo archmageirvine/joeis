@@ -26,7 +26,7 @@ public interface Group<E> extends Set<E> {
    * @return <code>a+b</code>
    * @exception IllegalArgumentException if supplied elements are not in the
    * group (or in some cases, if they cannot be coerced into members of the
-   * group. This may be thrown for null arguments.
+   * group). This may be thrown for null arguments.
    * @exception NullPointerException may be thrown for null arguments.
    */
   E add(E a, E b);

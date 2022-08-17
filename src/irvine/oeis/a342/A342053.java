@@ -50,6 +50,10 @@ public class A342053 implements Sequence {
   static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);
   private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
 
+  private static PolynomialRingField<Polynomial<Z>> r(final int n) {
+    return new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, n));
+  }
+
   // Rooted disk triangulations
 
   // A146305: Biconnected with n internal nodes and m+3 external nodes.
@@ -125,38 +129,31 @@ public class A342053 implements Sequence {
     return PolynomialUtils.qxToZx(ring.diff(ring.substitute(ring.integrate(PolynomialUtils.zxToQx(bgf)), PolynomialUtils.zxToQx(fi), bgf.degree() + 1)));
   }
 
-// // Main method for oriented triangulations - returns bivariate g.f.
-// OrientedStrongTriangsGf(M,N)={
-//   my(Fi = serreverse(x*(1 + x*MakeSquareBgfTr(D,M\2,N\2,x,y))));
-//   my(Gr = x*InvHelp(MakeSquareBgfTr(Er, M\3, N\3, x, y), Fi));
-//   my(p=x^3*MakeSquareBgfTr(W, M-3, N, x, y)
-//           + BgfRaise(x*InvHelp(1+x*MakeSquareBgfTr((s,p)->E2(s,0,p+1), M\2, N\2, x, y), Fi), 2)
-//           + y*BgfRaise(x*InvHelp(x*MakeSquareBgfTr((s,p)->E2(s,1,p+1), M\2, N\2, x, y), Fi), 2)
-//           + 2*BgfRaise(x*InvHelp(MakeSquareBgfTr(E3, M\3, N\3, x, y), Fi), 3)
-//           + y*sum(d=3, M, eulerphi(d)*BgfRaise(BgfTrim(Gr, M\d+1, N\d+1), d)));
-//   intformal(p/x - x)
-// }
-
+  // Main method for oriented triangulations - returns bivariate g.f.
   Polynomial<Polynomial<Z>> orientedStrongTriangsGf(final int m, final int n) {
-    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, n - 1));
-    final Polynomial<Polynomial<Z>> fi = ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(2)), m - 1);
-    System.out.println("fi=" + fi);
-    final Polynomial<Polynomial<Z>> gr = invHelp(n, makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
-    final Polynomial<Polynomial<Z>> p = ring.add(ring.add(ring.add(ring.add(
-          makeSquareBgfTr(mW, m - 3, n, 1).shift(3),
-          bgfRaise(invHelp(n, ring.add(ring.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 0, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2)),
-        PolynomialUtils.innerShift(ring, bgfRaise(invHelp(n, ring.add(RING.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 1, q + 1), m / 2, n / 2, 1)), fi).shift(1), 2), 1)),
-      ring.multiply(bgfRaise(invHelp(n, ring.add(RING.one(), makeSquareBgfTr(mE3, m / 3, n / 3, 1)), fi).shift(1), 2), TWO)),
-      PolynomialUtils.innerShift(ring, ring.sum(3, m, d -> ring.multiply(bgfRaise(bgfTrim(gr, m / d + 1, n / d + 1), d), INNER.monomial(Z.valueOf(LongUtils.phi(d)), 1))), 1)
-    );
-    return ring.integrate(ring.subtract(p.shift(-1), ring.x()));
+    final PolynomialRingField<Polynomial<Z>> ring = r(n);
+    final Polynomial<Polynomial<Z>> fi = bgfTrim(ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m / 2, n / 2, 1).shift(2)), m), m, n / 2);
+    final Polynomial<Polynomial<Z>> gr = invHelp(n / 3, makeSquareBgfTr(mEr, m / 3, n / 3, 1), fi).shift(1);
+    final Polynomial<Polynomial<Z>> a = makeSquareBgfTr(mW, m - 3, n, 1).shift(3);
+    final Polynomial<Polynomial<Z>> b = bgfRaise(invHelp(n / 2, ring.add(ring.one(), makeSquareBgfTr((s, q) -> mE2.apply(s, 0, q + 1), m / 2, n / 2, 1).shift(1)), fi).shift(1), 2);
+    final Polynomial<Polynomial<Z>> c = PolynomialUtils.innerShift(ring, bgfRaise(invHelp(n / 2, makeSquareBgfTr((s, q) -> mE2.apply(s, 1, q + 1), m / 2, n / 2, 1).shift(1), fi).shift(1), 2), 1);
+    final Polynomial<Polynomial<Z>> d = ring.multiply(bgfRaise(invHelp(n / 3, makeSquareBgfTr(mE3, m / 3, n / 3, 1), fi).shift(1), 3), TWO);
+    final Polynomial<Polynomial<Z>> e = PolynomialUtils.innerShift(ring, ring.sum(3, m, k -> ring.multiply(bgfRaise(bgfTrim(gr, m / k + 1, n / k + 1), k), Polynomial.create(LongUtils.phi(k)))), 1);
+    final Polynomial<Polynomial<Z>> p = ring.add(a, b, c, d, e);
+//    System.out.println("Fi=" + fi);
+//    System.out.println("Gr=" + gr);
+//    System.out.println("a=" + a);
+//    System.out.println("b=" + b);
+//    System.out.println("c=" + c);
+//    System.out.println("d=" + d);
+//    System.out.println("e=" + e);
+    return ring.integrate(ring.subtract(p.shift(-1), ring.x())).truncate(m);
   }
 
-// // Sequences for OrientedStrongTriangsGf.
-// A341923Array(N,M)={BgfToArray(OrientedStrongTriangsGf(M+2,N)/(y*x^3), M-1, N-1)~}
-// A341923ColSeq(N,k)={Vec(polcoeff(OrientedStrongTriangsGf(k,N)-x^3, k, x), N)}
+  // // Sequences for OrientedStrongTriangsGf.
+  // A341923Array(N,M)={BgfToArray(OrientedStrongTriangsGf(M+2,N)/(y*x^3), M-1, N-1)~}
 
-  private Polynomial<Z> a341923ColSeq(final int n, final int k) {
+  protected Polynomial<Z> a341923ColSeq(final int n, final int k) {
     return RING.subtract(orientedStrongTriangsGf(k, n), X3).coeff(k);
   }
 

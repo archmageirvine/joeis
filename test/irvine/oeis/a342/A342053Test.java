@@ -71,4 +71,14 @@ public class A342053Test extends TestCase {
     assertEquals("(1+y+y^2+5y^3+24y^4)x^3+(y+2y^2+10y^3+60y^4)x^4+(y+2y^2+16y^3+122y^4)x^5", seq.orientedStrongTriangsGf(5, 4).toString());
     assertEquals("(1+y+y^2+5y^3+24y^4)x^3", seq.orientedStrongTriangsGf(3, 4).toString());
   }
+
+  public void testJgf() {
+    final A342053 seq = new A342053();
+    assertEquals("1+y+y^2+3y^3+8y^4+23y^5+68y^6+215y^7", seq.jgf(7).toString());
+  }
+
+  public void testAchiralStrongTriangsGf() {
+    final A342053 seq = new A342053();
+    assertEquals("", seq.achiralStrongTriangsGf(3, 2).toString());
+  }
 }

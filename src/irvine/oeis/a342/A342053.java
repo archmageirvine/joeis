@@ -1,5 +1,6 @@
 package irvine.oeis.a342;
 
+import java.util.Arrays;
 import java.util.function.BiFunction;
 
 import irvine.math.LongUtils;
@@ -49,6 +50,9 @@ public class A342053 implements Sequence {
   private static final PolynomialRingField<Z> INNER = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);
   private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
+  private static final Polynomial<Polynomial<Z>> X3 = RING.monomial(INNER.one(), 3);
+  private static final Polynomial<Z> NEG_ONE = Polynomial.create(-1);
+  private static final Polynomial<Z> TWO = Polynomial.create(2);
 
   private static PolynomialRingField<Polynomial<Z>> r(final int n) {
     return new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, n));
@@ -140,18 +144,15 @@ public class A342053 implements Sequence {
     final Polynomial<Polynomial<Z>> d = ring.multiply(bgfRaise(invHelp(n / 3, makeSquareBgfTr(mE3, m / 3, n / 3, 1), fi).shift(1), 3), TWO);
     final Polynomial<Polynomial<Z>> e = PolynomialUtils.innerShift(ring, ring.sum(3, m, k -> ring.multiply(bgfRaise(bgfTrim(gr, m / k + 1, n / k + 1), k), Polynomial.create(LongUtils.phi(k)))), 1);
     final Polynomial<Polynomial<Z>> p = ring.add(a, b, c, d, e);
-//    System.out.println("Fi=" + fi);
-//    System.out.println("Gr=" + gr);
-//    System.out.println("a=" + a);
-//    System.out.println("b=" + b);
-//    System.out.println("c=" + c);
-//    System.out.println("d=" + d);
-//    System.out.println("e=" + e);
     return ring.integrate(ring.subtract(p.shift(-1), ring.x())).truncate(m);
   }
 
-  // // Sequences for OrientedStrongTriangsGf.
+  // Sequences for OrientedStrongTriangsGf.
   // A341923Array(N,M)={BgfToArray(OrientedStrongTriangsGf(M+2,N)/(y*x^3), M-1, N-1)~}
+
+  protected Z a341923(final int n, final int k) {
+    return orientedStrongTriangsGf(k + 3, n).coeff(k + 3).coeff(n);
+  }
 
   protected Polynomial<Z> a341923ColSeq(final int n, final int k) {
     return RING.subtract(orientedStrongTriangsGf(k, n), X3).coeff(k);
@@ -159,70 +160,71 @@ public class A342053 implements Sequence {
 
 // A341923RowSeq(N,k)={Vec(polcoeff(OrientedStrongTriangsGf(N,k), k, y))}
 // A341923AntidiagonalSums(N)=Vec(subst(OrientedStrongTriangsGf(N+3,N), y, x)-x^3)
-// 
-// // Triangles with Reflection symmetry.
-// 
-// // Trims a bivariate g.f. to required precision (both x and y)
-// BgfTrim(s,N,M)={subst(s + O(x^N), y, y+O(y^M))}
 
+  // Triangles with Reflection symmetry.
+
+  // Trims a bivariate g.f. to required precision (both x and y)
   private Polynomial<Polynomial<Z>> bgfTrim(final Polynomial<Polynomial<Z>> s, final int n, final int m) {
     final Polynomial<Polynomial<Z>> res = RING.empty();
-    for (int k = 0; k < Math.min(s.degree(), n); ++k) {
+    for (int k = 0; k < Math.min(s.size(), n); ++k) {
       res.add(s.coeff(k).truncate(m));
     }
     return res;
   }
 
-// 
-// // J_0 function (sequence A002712 as g.f.)
-// // See 13.10: Satisfies J = 1 + x*J + x^2*J*(1 + x*J/2)*(J^2 - D(x^2,0)).
-// // Compute by iteratively growing precision.
+
+  // J_0 function (sequence A002712 as g.f.)
+  // See 13.10: Satisfies J = 1 + x*J + x^2*J*(1 + x*J/2)*(J^2 - D(x^2,0)).
+  // Compute by iteratively growing precision.
 // Jgf(n,x='x)={my(q=Ser(vector(n+1, i, if(i%2, D(i\2,0))), x), p=1+O(x)); for(n=1, n, p = 1 + x*p + x^2*p*(1 + x*p/2)*(p^2 - q)); p}
 
   private final MemorySequence mJ = MemorySequence.cachedSequence(new A002712());
 
-  private Polynomial<Z> jgf(final int n) {
+  Polynomial<Z> jgf(final int n) {
     mJ.a(n); // Force enough terms
     return INNER.create(mJ);
   }
 
-// 
-// // Q1, Q2, Q3: The first is for an odd number of external vertices, the other two are for even.
-// //   __        ___         __
-// //  |   \     |   |      /    \
-// //  |__ /     |___|      \ __ /
-// // These have respectively 1, 0 and 2 external vertices on the symmetry line.
-// // The relation of these to K(x,y) and L(x,y) given by Brown follows.
-// // Let P1(x,y) be even terms of K(y,x) or even terms of L(y,x), P2(x,y) be odd terms of K(y,x) and P3(x,y) be odd terms of L(y,x).
-// // More precisely 2*P1(x^2,y) = K(y,x) + K(y,-x) = L(y,x) + L(y,-x); 2*x*P2(x^2,y) = K(y,x) - K(y,-x); 2*x*P3(x^2,y) = L(y,x) - L(y,-x).
-// // P1, P2, P3 enumerate 2-connected triangulations with reflection symmetry with the types shown above.
-// // Q1, Q2, Q3 will enumerate the same triangulations but without edges that cross the symmetry line
-// // or in the case of Q3 join the two external vertices on the symmetry line.
-// // These are related to P1, P2, P3 by the following:
-// //    Q1 = P1/(1 + x*P2); Q2 = P2/(1 + x*P2); Q3 = P3 - P1*Q1 - (D-1)/x.
-// // The following functions give Q1, Q2, Q3 in terms of D,J,x,y (see Brown/A169808/below for meaning of D/J)
-// // In the case of Q2 and Q3 we actually multiply by an extra x to keep denominators consistent.
-// 
+
+  // Q1, Q2, Q3: The first is for an odd number of external vertices, the other two are for even.
+  //   __        ___         __
+  //  |   \     |   |      /    \
+  //  |__ /     |___|      \ __ /
+  // These have respectively 1, 0 and 2 external vertices on the symmetry line.
+  // The relation of these to K(x,y) and L(x,y) given by Brown follows.
+  // Let P1(x,y) be even terms of K(y,x) or even terms of L(y,x), P2(x,y) be odd terms of K(y,x) and P3(x,y) be odd terms of L(y,x).
+  // More precisely 2*P1(x^2,y) = K(y,x) + K(y,-x) = L(y,x) + L(y,-x); 2*x*P2(x^2,y) = K(y,x) - K(y,-x); 2*x*P3(x^2,y) = L(y,x) - L(y,-x).
+  // P1, P2, P3 enumerate 2-connected triangulations with reflection symmetry with the types shown above.
+  // Q1, Q2, Q3 will enumerate the same triangulations but without edges that cross the symmetry line
+  // or in the case of Q3 join the two external vertices on the symmetry line.
+  // These are related to P1, P2, P3 by the following:
+  //    Q1 = P1/(1 + x*P2); Q2 = P2/(1 + x*P2); Q3 = P3 - P1*Q1 - (D-1)/x.
+  // The following functions give Q1, Q2, Q3 in terms of D,J,x,y (see Brown/A169808/below for meaning of D/J)
+  // In the case of Q2 and Q3 we actually multiply by an extra x to keep denominators consistent.
+
+//
 // Q1(D,J,x,y)={(y^3*J^2 + y^2*J - x)*D/(y*(y^2*J + x)*D + (-x + y^2))}
 
   private Polynomial<Polynomial<Z>> q1(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j, final int m, final int n) {
-    final Polynomial<Polynomial<Z>> t = RING.empty();
-    t.add(INNER.negate(INNER.x())); // y^0
-    t.add(INNER.zero()); // y^1
-    t.add(j); // y^2
-    t.add(INNER.multiply(j, j, m)); // y^3
-    final Polynomial<Polynomial<Z>> num = RING.multiply(t, d, n);
-    final Polynomial<Polynomial<Z>> u = RING.empty();
-    u.add(INNER.zero()); // y^0
-    u.add(INNER.x()); // y^1
-    u.add(INNER.x()); // y^2
-    u.add(j); // y^3
-    final Polynomial<Polynomial<Z>> v = RING.empty();
-    v.add(INNER.negate(INNER.x())); // y^0
-    v.add(INNER.zero()); // y^1
-    v.add(INNER.one()); // y^2
-    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, n), v);
-    return RING.series(num, den, n);
+    final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
+    final Polynomial<Polynomial<Z>> t = ring.create(Arrays.asList(
+      INNER.add(j.shift(2), INNER.multiply(j, j, j.degree()).shift(3)),
+      NEG_ONE
+    ));
+    final Polynomial<Polynomial<Z>> num = ring.multiply(t, d, d.degree());
+    final Polynomial<Polynomial<Z>> u = ring.create(Arrays.asList(
+      j.shift(3),
+      INNER.x()
+    ));
+    final Polynomial<Polynomial<Z>> v = ring.create(Arrays.asList(
+      Polynomial.create(0, 0, 1),
+      NEG_ONE
+    ));
+    final Polynomial<Polynomial<Z>> den = ring.add(ring.multiply(u, d, d.degree()), v);
+    System.out.println("num=" + num);
+    System.out.println("den=" + den);
+    System.out.println("n=" + n);
+    return ring.series(num, den, n);
   }
 
 // Q2(D,J,x,y)={(((-y^2*x + y^3)*J - y*x)*D + (y*x - y^3)*J)/(y*(y^2*J + x)*D + (-x + y^2))}
@@ -280,8 +282,8 @@ public class A342053 implements Sequence {
     return RING.add(RING.series(num, den, n), RING.one());
   }
 
-// 
-// // Main method for achiral triangulations - returns bivariate g.f.
+  // Main method for achiral triangulations - returns bivariate g.f.
+
 // AchiralStrongTriangsGf(M,N)={
 //   my( Ds = 1 + x*MakeSquareBgfTr(D, M-1, N+M-1, x, y^2),
 //       Fi = BgfRaise(serreverse(x*(1 + x*MakeSquareBgfTr(D,M,N,x,y))), 2),
@@ -292,16 +294,21 @@ public class A342053 implements Sequence {
 //       + subst(x*BgfTrim(serchop(Q3(Ds,J,x,y),1), M+1, 2*N+1), x, Fi))/2
 // }
 
-  private static final Polynomial<Polynomial<Z>> X3 = RING.monomial(INNER.one(), 3);
-  private static final Polynomial<Z> TWO = Polynomial.create(2);
 
-  private Polynomial<Polynomial<Z>> achiralStrongTriangsGf(final int m, final int n) {
-    final PolynomialRingField<Polynomial<Z>> ring = new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>(IntegerField.SINGLETON, m));
+  Polynomial<Polynomial<Z>> achiralStrongTriangsGf(final int m, final int n) {
+    // todo all kinds of hell here to do with degrees of expansions!
+    // todo Q2 and Q3 are definitely implemented wrong
+    final PolynomialRingField<Polynomial<Z>> ring = r(n);
     final Polynomial<Polynomial<Z>> ds = ring.add(ring.one(), makeSquareBgfTr(mD, m - 1, n + m - 1, 2).shift(1));
-    final Polynomial<Polynomial<Z>> fi = bgfRaise(ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m, n, 1).shift(2)), n), 2);
+    final Polynomial<Polynomial<Z>> fi = bgfRaise(ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m, n, 1).shift(2)), m + 2), 2);
     final Polynomial<Z> j = jgf(2 * (n + m));
-    return ring.add(ring.subtract(ring.substitute(bgfTrim(q1(ds, j, m, n), m + 1, 2 * n + 1).shift(1), fi, n).shift(1), X3),
-      ring.divide(ring.add(
+    final Polynomial<Polynomial<Z>> a = RING.subtract(RING.substitute(bgfTrim(q1(ds, j, m + 1, 2 * n + 1), m + 1, 2 * n + 1).shift(1), fi, 2 * n + 1).shift(1), X3);
+    System.out.println("Ds=" + ds);
+    System.out.println("Fi=" + fi);
+    System.out.println("Q1=" + q1(ds, j, 2 * n + 1, 2 * n + 1));
+    System.out.println("trimQ1=" + bgfTrim(q1(ds, j, m + 1, 2 * n + 1), m + 1, 2 * n + 1));
+    System.out.println("a=" + a);
+    return ring.add(a, ring.divide(ring.add(
           ring.substitute(bgfTrim(ring.leftTruncate(q2(ds, j, m, n), 1), m + 1, 2 * n + 1), fi, n).shift(2),
           ring.substitute(bgfTrim(ring.leftTruncate(q3(ds, j, m, n), 1), m + 1, 2 * n + 1).shift(1), fi, n)),
         TWO));

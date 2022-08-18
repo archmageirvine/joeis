@@ -22,7 +22,7 @@ public class A038458 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A038458() {
-    super(new MyFunction().inverseMonotone(CR.HALF, CR.ONE).execute(CR.ZERO));
+    super(0, new MyFunction().inverseMonotone(CR.HALF, CR.ONE).execute(CR.ZERO));
   }
 }
 

@@ -11,6 +11,6 @@ public class A073226 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A073226() {
-    super(CR.E.exp());
+    super(2, CR.E.exp());
   }
 }

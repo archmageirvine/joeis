@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a342.A342053;
 
 /**
- * A342053.
+ * A341925 Number of 3-connected triangulations of a pentagon up to orientation-preserving isomorphisms with n interior nodes.
  * @author Sean A. Irvine
  */
 public class A341925 extends A342053 {

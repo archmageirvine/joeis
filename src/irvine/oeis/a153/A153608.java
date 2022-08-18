@@ -11,6 +11,6 @@ public class A153608 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A153608() {
-    super(CR.SIX.log().divide(CR.valueOf(18).log()));
+    super(0, CR.SIX.log().divide(CR.valueOf(18).log()));
   }
 }

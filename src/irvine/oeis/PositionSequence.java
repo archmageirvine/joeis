@@ -3,11 +3,11 @@ package irvine.oeis;
 import irvine.math.z.Z;
 
 /**
- * A sequence consisting of position of consecutive records in another sequence.
+ * A sequence consisting of the positions of consecutive records in another sequence.
  * Derived from <code>RecordPositionSequence</code>.
  * @author Georg Fischer
  */
-public class PositionSequence implements Sequence {
+public class PositionSequence implements SequenceWithOffset {
 
   protected final Sequence mSeq; // the underlying sequence
   protected Z mValue; // return the positions of this number
@@ -16,13 +16,13 @@ public class PositionSequence implements Sequence {
   /**
    * Creates a sequence of the positions where a digit occurs in another sequence.
    * @param seq underlying sequence
-   * @param offset offset of <code>seq</code>
+   * @param start offset of <code>seq</code>
    * @param value the positions of this number are returned
    */
-  public PositionSequence(final int offset, final Sequence seq, final long value) {
+  public PositionSequence(final int start, final Sequence seq, final long value) {
     mSeq = seq;
     mValue = Z.valueOf(value);
-    mN = offset - 1;
+    mN = start - 1;
   }
 
   /**
@@ -33,7 +33,12 @@ public class PositionSequence implements Sequence {
    */
   protected boolean isOk(final Z term) {
     return term.equals(mValue);
-  } // isOk
+  }
+
+  @Override
+  public int getOffset() {
+    return 1; // is a list
+  }
 
   @Override
   public Z next() {

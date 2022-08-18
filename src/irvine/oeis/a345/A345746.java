@@ -12,6 +12,6 @@ public class A345746 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A345746() {
-    super(CR.PI.pow(CR.valueOf(new Q(-1, 9))));
+    super(0, CR.PI.pow(CR.valueOf(new Q(-1, 9))));
   }
 }

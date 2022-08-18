@@ -39,7 +39,7 @@ import irvine.math.z.Z;
  * </pre>
  * @author Georg Fischer
  */
-public class WalkCubeSequence implements Sequence {
+public class WalkCubeSequence implements SequenceWithOffset {
 
   protected Z mK; // current number with some property
   protected int mN; // index of current term to be returned
@@ -402,6 +402,11 @@ public class WalkCubeSequence implements Sequence {
         .add(get(i - mMatrix[4][0], j - mMatrix[4][1], k - mMatrix[4][2], mn1))
         ;
     }
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   /**

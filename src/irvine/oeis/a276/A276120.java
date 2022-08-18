@@ -12,6 +12,6 @@ public class A276120 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A276120() {
-    super(Zeta.zeta(3).divide(CR.PI.multiply(CR.PI).multiply(CR.PI)));
+    super(0, Zeta.zeta(3).divide(CR.PI.multiply(CR.PI).multiply(CR.PI)));
   }
 }

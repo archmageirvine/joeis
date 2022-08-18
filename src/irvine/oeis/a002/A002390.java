@@ -11,6 +11,6 @@ public class A002390 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A002390() {
-    super(CR.PHI.log());
+    super(0, CR.PHI.log());
   }
 }

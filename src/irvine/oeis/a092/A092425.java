@@ -13,6 +13,6 @@ public class A092425 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A092425() {
-    super(PI_SQUARED.multiply(PI_SQUARED));
+    super(2, PI_SQUARED.multiply(PI_SQUARED));
   }
 }

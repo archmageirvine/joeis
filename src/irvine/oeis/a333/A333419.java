@@ -11,6 +11,6 @@ public class A333419 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A333419() {
-    super(CR.HALF.erf());
+    super(0, CR.HALF.erf());
   }
 }

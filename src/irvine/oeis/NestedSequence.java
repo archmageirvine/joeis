@@ -6,11 +6,12 @@ import irvine.math.z.Z;
  * A sequence derived from two nested sequences.
  * @author Georg Fischer
  */
-public class NestedSequence implements Sequence {
+public class NestedSequence implements SequenceWithOffset {
 
   protected MemorySequence mSeqA;
   protected Sequence mSeqB;
   private final int mOffsetA;
+  private final int mOffset;
 
   /**
    * Constructor with parameters. 
@@ -21,6 +22,7 @@ public class NestedSequence implements Sequence {
    * @param offsetB offset of sequence B
    */
   public NestedSequence(final int offset, final Sequence seqA, final Sequence seqB, final int offsetA, final int offsetB) {
+    mOffset = offset;
     mSeqA = MemorySequence.cachedSequence(seqA);
     mSeqB = seqB;
     mOffsetA = offsetA;
@@ -31,6 +33,11 @@ public class NestedSequence implements Sequence {
     if (nB != offset) {
       throw new RuntimeException("offsets do not match: this=" + offset + ", seqB=" + offsetB);
     }
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

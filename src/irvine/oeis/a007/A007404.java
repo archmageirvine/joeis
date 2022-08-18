@@ -12,7 +12,7 @@ public class A007404 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A007404() {
-    super(new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
         final Z one = CR.ONE.getApprox(precision);

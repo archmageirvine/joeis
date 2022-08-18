@@ -11,6 +11,6 @@ public class A068985 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A068985() {
-    super(CR.E.inverse());
+    super(0, CR.E.inverse());
   }
 }

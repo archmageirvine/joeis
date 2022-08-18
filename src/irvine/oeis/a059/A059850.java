@@ -14,6 +14,6 @@ public class A059850 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A059850() {
-    super(REALS.pow(CR.PI, CR.E));
+    super(2, REALS.pow(CR.PI, CR.E));
   }
 }

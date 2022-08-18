@@ -12,6 +12,6 @@ public class A019771 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A019771() {
-    super(CR.E.multiply(new Q(2, 19)));
+    super(0, CR.E.multiply(new Q(2, 19)));
   }
 }

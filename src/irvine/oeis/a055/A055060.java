@@ -13,7 +13,7 @@ public class A055060 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A055060() {
-    super(0, new UnaryCRFunction() {
+    super(1, new UnaryCRFunction() {
       @Override
       public CR execute(final CR x) {
         return new CR() {

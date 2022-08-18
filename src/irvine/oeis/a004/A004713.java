@@ -12,7 +12,7 @@ public class A004713 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004713() {
-    super(0, CR.SQRT2.inverse(), 2);
+    super(1, CR.SQRT2.inverse(), 2);
   }
 
   private long mPos = 0;

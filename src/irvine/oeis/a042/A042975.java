@@ -3,8 +3,8 @@ package irvine.oeis.a042;
 import irvine.math.cr.CR;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A042975 Decimal expansion of sqrt(0.121121112...), cf. A042974.
@@ -35,6 +35,6 @@ public class A042975 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A042975() {
-    super(M.sqrt());
+    super(0, M.sqrt());
   }
 }

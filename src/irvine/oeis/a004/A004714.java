@@ -12,7 +12,7 @@ public class A004714 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004714() {
-    super(0, CR.PHI, 2);
+    super(1, CR.PHI, 2);
     super.next();
   }
 

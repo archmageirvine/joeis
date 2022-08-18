@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 import irvine.util.Pair;
 
 /**
@@ -24,7 +24,7 @@ import irvine.util.Pair;
  * <code>mColMix[y], mColMax[y]</code> give the lower and upper <code>x</code> indexes for the entries that have already been stored in the TreeMap.
  * @author Georg Fischer
  */
-public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> implements Sequence {
+public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> implements SequenceWithOffset {
 
   protected int mA; // factor of x^2
   protected int mB; // factor of x*y, maybe 0 or negative
@@ -98,6 +98,11 @@ public class BinaryQuadraticForm extends TreeMap<Z, Pair<Integer, Integer>> impl
 //      }
     }
     return result;
+  }
+
+  @Override
+  public int getOffset() {
+    return 1;
   }
 
   @Override

@@ -12,6 +12,6 @@ public class A161012 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A161012() {
-    super(ComputableReals.SINGLETON.tan(CR.ONE_THIRD));
+    super(0, ComputableReals.SINGLETON.tan(CR.ONE_THIRD));
   }
 }

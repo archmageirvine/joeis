@@ -13,6 +13,6 @@ public class A161014 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A161014() {
-    super(ComputableReals.SINGLETON.tan(CR.valueOf(new Q(1, 5))));
+    super(0, ComputableReals.SINGLETON.tan(CR.valueOf(new Q(1, 5))));
   }
 }

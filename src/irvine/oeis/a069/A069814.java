@@ -19,7 +19,7 @@ public class A069814 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A069814() {
-    super(new MyFunction().inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO));
+    super(0, new MyFunction().inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO));
   }
 }
 

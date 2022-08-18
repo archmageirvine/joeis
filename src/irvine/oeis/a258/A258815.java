@@ -13,6 +13,6 @@ public class A258815 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A258815() {
-    super(Zeta.zetaHurwitz(8, Q.ONE_QUARTER).subtract(Zeta.zetaHurwitz(8, new Q(3, 4))).divide(CR.valueOf(65536)));
+    super(0, Zeta.zetaHurwitz(8, Q.ONE_QUARTER).subtract(Zeta.zetaHurwitz(8, new Q(3, 4))).divide(CR.valueOf(65536)));
   }
 }

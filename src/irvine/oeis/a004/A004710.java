@@ -12,7 +12,7 @@ public class A004710 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004710() {
-    super(0, CR.GAMMA, 2);
+    super(1, CR.GAMMA, 2);
   }
 
   private long mPos = 0;

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a342.A342053;
 
 /**
- * A342053.
+ * A341923 Array read by antidiagonals: T(n,k) is the number of 3-connected triangulations of a disk up to orientation-preserving isomorphisms with n interior nodes and k nodes on the boundary, n &gt;= 1, k &gt;= 3.
  * @author Sean A. Irvine
  */
 public class A341923 extends A342053 {

@@ -3,8 +3,8 @@ package irvine.oeis.a030;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a002.A002065;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A030125 Decimal expansion of Lehmer's constant.
@@ -14,7 +14,7 @@ public class A030125 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A030125() {
-    super(ComputableReals.SINGLETON.cot(new CR() {
+    super(0, ComputableReals.SINGLETON.cot(new CR() {
       @Override
       protected Z approximate(final int precision) {
         if (precision >= 0) {

@@ -1,15 +1,16 @@
 package irvine.oeis.prime;
 
 import irvine.math.z.Z;
-import irvine.oeis.recur.HolonomicRecurrence;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.Subsequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A {@link Subsequence} consisting of the primes in the underlying sequence.
  * @author Georg Fischer
  */
-public class PrimeSubsequence extends Subsequence {
+public class PrimeSubsequence extends Subsequence implements SequenceWithOffset {
 
   /**
    * Creates a sequence of the primes in another sequence.
@@ -56,5 +57,10 @@ public class PrimeSubsequence extends Subsequence {
   @Override
   public boolean isOk(final Z term) {
     return term == null || term.isProbablePrime();
+  }
+
+  @Override
+  public int getOffset() {
+    return 1; // is a list
   }
 }

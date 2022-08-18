@@ -11,6 +11,6 @@ public class A020822 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A020822() {
-    super(CR.valueOf(65).sqrt().inverse());
+    super(0, CR.valueOf(65).sqrt().inverse());
   }
 }

@@ -11,7 +11,7 @@ public class A085541 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A085541() {
-    super(Zeta.zetap(3));
+    super(0, Zeta.zetap(3));
   }
 }
 

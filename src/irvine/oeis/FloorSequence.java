@@ -6,11 +6,13 @@ import irvine.math.z.Z;
  * Sequence formed from a real function of n.
  * @author Georg Fischer
  */
-public abstract class FloorSequence implements Sequence {
+public abstract class FloorSequence implements SequenceWithOffset {
 
   protected long mN;
+  private int mOffset;
 
   protected FloorSequence(final int offset) {
+    mOffset = offset;
     mN = offset - 1;
   }
 
@@ -20,6 +22,11 @@ public abstract class FloorSequence implements Sequence {
    */
   protected Z evalCR(final long n) {
     return Z.ZERO;
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

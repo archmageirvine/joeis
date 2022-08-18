@@ -12,6 +12,6 @@ public class A002580 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A002580() {
-    super(0, ComputableReals.SINGLETON.pow(CR.TWO, CR.THREE.inverse()));
+    super(1, ComputableReals.SINGLETON.pow(CR.TWO, CR.THREE.inverse()));
   }
 }

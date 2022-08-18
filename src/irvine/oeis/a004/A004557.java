@@ -11,6 +11,6 @@ public class A004557 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004557() {
-    super(0, CR.FIVE.sqrt(), 4);
+    super(1, CR.FIVE.sqrt(), 4);
   }
 }

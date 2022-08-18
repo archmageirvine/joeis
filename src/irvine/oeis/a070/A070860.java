@@ -12,7 +12,7 @@ public class A070860 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A070860() {
-    super(CR.GAMMA.multiply(CR.GAMMA).subtract(Zeta.zeta(2)).divide(CR.TWO).negate());
+    super(0, CR.GAMMA.multiply(CR.GAMMA).subtract(Zeta.zeta(2)).divide(CR.TWO).negate());
   }
 }
 

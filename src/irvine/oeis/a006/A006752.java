@@ -37,6 +37,6 @@ public class A006752 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A006752() {
-    super(SCALED_G.multiply(D).add(C));
+    super(0, SCALED_G.multiply(D).add(C));
   }
 }

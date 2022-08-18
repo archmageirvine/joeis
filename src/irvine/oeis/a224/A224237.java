@@ -13,6 +13,6 @@ public class A224237 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A224237() {
-    super(CR.valueOf(new Q(299792458L * 10000L, 5280L * 3048L)));
+    super(6, CR.valueOf(new Q(299792458L * 10000L, 5280L * 3048L)));
   }
 }

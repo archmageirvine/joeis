@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Generating functions with 2 variables yielding a (lower left) triangle.
@@ -23,8 +23,9 @@ import irvine.oeis.Sequence;
  * <code>mDen[0]</code> must be +1.
  * @author Georg Fischer
  */
-public class GeneratingFunctionTriangle implements Sequence {
+public class GeneratingFunctionTriangle implements SequenceWithOffset {
 
+  private int mOffset; // first index
   protected ArrayList<Z> mNum; // coefficients of the numerator   polynomial
   protected ArrayList<Z> mDen; // coefficients of the denominator polynomial
   protected int mIndex; // index of next term to be generated
@@ -44,6 +45,7 @@ public class GeneratingFunctionTriangle implements Sequence {
    * @param den coefficients of denominator polynomial in triangular order
    */
   public GeneratingFunctionTriangle(final int offset, final Z[] num, final Z[] den) {
+    mOffset = offset;
     mNum = new ArrayList<>(num.length + 128); // will extend in 'next'
     int itri = 0;
     int ix = 0;
@@ -135,6 +137,10 @@ public class GeneratingFunctionTriangle implements Sequence {
     this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
   }
 
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
 
   /**
    * Gets a triangle element.
@@ -234,4 +240,4 @@ public class GeneratingFunctionTriangle implements Sequence {
     } // for iterm
     System.out.println();
   } // main
-} // GeneratingFunctionTriangle
+}

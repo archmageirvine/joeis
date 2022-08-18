@@ -4,9 +4,9 @@ import irvine.math.MemoryFunction1;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.a001.A001037;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A005597 Decimal expansion of the twin prime constant C_2 = Product_{ p prime &gt;= 3 } (1-1/(p-1)^2).
@@ -28,7 +28,7 @@ public class A005597 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A005597() {
-    super(new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
         final int opPrec = -precision;

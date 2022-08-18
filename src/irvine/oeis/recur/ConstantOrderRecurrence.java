@@ -2,14 +2,14 @@ package irvine.oeis.recur;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * A recurrence with constant order (depth), specified by a single formula,
  * depending on <code>a(n+k)</code>.
  * @author Georg Fischer
  */
-public abstract class ConstantOrderRecurrence implements Sequence {
+public abstract class ConstantOrderRecurrence implements SequenceWithOffset {
 
   protected int mInitLen; // number of initial terms
   protected int mIn; // index for counting initial terms
@@ -130,7 +130,6 @@ public abstract class ConstantOrderRecurrence implements Sequence {
   public int getOffset() {
     return mOffset;
   }
-
   @Override
   public Z next() {
     ++mN;

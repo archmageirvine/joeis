@@ -10,6 +10,6 @@ public class A042976 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A042976() {
-    super(A042975.M.multiply(A042975.M));
+    super(0, A042975.M.multiply(A042975.M));
   }
 }

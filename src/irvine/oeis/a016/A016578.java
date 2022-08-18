@@ -12,6 +12,6 @@ public class A016578 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A016578() {
-    super(CR.valueOf(new Q(3, 2)).log());
+    super(0, CR.valueOf(new Q(3, 2)).log());
   }
 }

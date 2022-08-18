@@ -11,6 +11,6 @@ public class A049470 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A049470() {
-    super(CR.ONE.cos());
+    super(0, CR.ONE.cos());
   }
 }

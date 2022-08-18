@@ -1,8 +1,8 @@
 package irvine.oeis.a226;
 
 import irvine.math.cr.CR;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a106.A106533;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A226775 Decimal expansion of the number x other than -2 defined by x*exp(x) = -2/e^2.
@@ -15,7 +15,7 @@ public class A226775 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A226775() {
-    super(N);
+    super(0, N);
   }
 }
 

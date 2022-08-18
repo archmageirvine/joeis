@@ -11,6 +11,6 @@ public class A347151 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A347151() {
-    super(CR.TWO.erf());
+    super(0, CR.TWO.erf());
   }
 }

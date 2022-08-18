@@ -34,7 +34,7 @@ public class A085365 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A085365() {
-    super(KEPLER_BOUWKAMP);
+    super(0, KEPLER_BOUWKAMP);
   }
 }
 

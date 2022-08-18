@@ -13,7 +13,7 @@ public class A037077 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A037077() {
-    super(new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int p) {
         if (p >= 1) {

@@ -11,6 +11,6 @@ public class A091681 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A091681() {
-    super(CR.TWO.besselJ0());
+    super(0, CR.TWO.besselJ0());
   }
 }

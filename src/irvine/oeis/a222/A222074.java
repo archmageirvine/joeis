@@ -13,6 +13,6 @@ public class A222074 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A222074() {
-    super(PI_SQUARED.multiply(PI_SQUARED).multiply(CR.PI).divide(CR.valueOf(1920)));
+    super(0, PI_SQUARED.multiply(PI_SQUARED).multiply(CR.PI).divide(CR.valueOf(1920)));
   }
 }

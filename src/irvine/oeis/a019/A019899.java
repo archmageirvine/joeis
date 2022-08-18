@@ -11,7 +11,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 public class A019899 extends DecimalExpansionSequence {
 
   protected A019899(final long angle) {
-    super(UnaryCRFunction.TAN.execute(CR.PI.multiply(angle).divide(CR.valueOf(180))));
+    super(0, UnaryCRFunction.TAN.execute(CR.PI.multiply(angle).divide(CR.valueOf(180))));
   }
 
   /** Construct the sequence. */

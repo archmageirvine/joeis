@@ -8,18 +8,18 @@ import irvine.math.z.Z;
  * where usually 1 indicates that the index of this sequence is a member of the underlying sequence,
  * and 0 that it is not a member..
  * The default implementation returns <code>b(k) = 1</code> if <code>k in a(n)</code>
- * and zero otherwise. 
+ * and zero otherwise.
  * The underlying sequence <code>a(n)</code> should be monotone, with the exception
  * of the first few elements as controlled by the parameter <code>cacheNo</code>.
  * Subclasses may return other small values (different from 0 and 1).
  * This sequence returns Z.ZERO even if the underlying sequence is finite and returns null.
  * @author Georg Fischer
  */
-public class CharacteristicFunction implements Sequence {
+public class CharacteristicFunction implements SequenceWithOffset {
 
   protected final Sequence mSeq; // underlying Sequence
   protected final int mOffset; // first index of this CharacteristicFunction
-  protected final int mCacheNo; // number of leading terms of {@link #mSeq} to be cached 
+  protected final int mCacheNo; // number of leading terms of {@link #mSeq} to be cached
   protected final boolean mMemberIs1; // whether (non-) membership is indicated with 1 (0).
   protected final int[] mCache; // stores the numbers for the first {@link #mCacheNo} terms of {@link #mSeq}.
   protected int mCacheMax; // == mCache.length
@@ -76,7 +76,7 @@ public class CharacteristicFunction implements Sequence {
   public CharacteristicFunction(final int offset, final Sequence seq, final boolean memberIs1) {
    this(offset, seq, memberIs1, 4);
   }
-  
+
   /**
    * Create a new characteristic function from the numbers returned by a {@link Sequence}.
    * @param offset number of leading numbers not to be returned by {@link #next}
@@ -85,15 +85,15 @@ public class CharacteristicFunction implements Sequence {
   public CharacteristicFunction(final int offset, final Sequence seq) {
    this(offset, seq, true, 4);
   }
-  
+
   /**
    * Create a new CharacteristicFunction from the numbers returned by a {@link Sequence}.
    * @param seq sequence to be transformed in a characteristic function
    */
   public CharacteristicFunction(final Sequence seq) {
-   this(1, seq, true, 4);
+    this(1, seq, true, 4);
   }
-  
+
   /**
    * Function should return 0 even if the underlying sequence is finite and returns null
    */
@@ -101,13 +101,18 @@ public class CharacteristicFunction implements Sequence {
     final Z un = mSeq.next();
     return un != null ? un.intValue() : 0x7fffffff; // a very high value
   }
-  
+
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
+
   @Override
   public Z next() {
     ++mIN;
     if (mIN < mCacheMax) {
       return Z.valueOf(mCache[mIN]);
-    } 
+    }
     if (mIN < mNextTerm) {
       return Z.valueOf(indicate(mIN, 0)); // still not next member
     } else if (mIN == mNextTerm) {
@@ -122,11 +127,11 @@ public class CharacteristicFunction implements Sequence {
   /**
    * Maps the state of the term if the underlying sequence
    * to a value of this characteristic function.
-   * This method may be overwritten. 
+   * This method may be overwritten.
    * For example, a negation can be accomplished by
    * <code>return super.indicate(num, 1 - state)</code>
    * @param num term of the underlying sequence to be indicated
-   * @param state usually 1 for "is a member" and 0 for "is not a member" 
+   * @param state usually 1 for "is a member" and 0 for "is not a member"
    * (of the underlying sequence).
    * @return value for <code>this</code> characteristic function, default 1
    */

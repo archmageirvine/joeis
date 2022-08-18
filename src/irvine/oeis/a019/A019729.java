@@ -11,6 +11,6 @@ public class A019729 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A019729() {
-    super(CR.TAU.sqrt().divide(CR.FIVE));
+    super(0, CR.TAU.sqrt().divide(CR.FIVE));
   }
 }

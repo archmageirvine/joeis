@@ -2,10 +2,10 @@ package irvine.oeis.a048;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002034;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A048835 Decimal expansion of Sum_{n &gt;= 2} (1/Product_{i=2..n} K(i)) where K(i) is the Kempner function A002034.
@@ -15,7 +15,7 @@ public class A048835 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A048835() {
-    super(new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
         Z sum = Z.ZERO;

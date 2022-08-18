@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.LinkedList;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * This class generates coordination sequences for k-uniform tilings
@@ -23,8 +23,7 @@ import irvine.oeis.Sequence;
  *
  * @author Georg Fischer
  */
-public class TilingSequence implements Serializable, Sequence
-    {
+public class TilingSequence implements Serializable, SequenceWithOffset {
   public final static String CVSID = "@(#) $Id: Vertex.java $";
 
   /** Debugging mode: 0=none, 1=some, 2=more */
@@ -112,6 +111,11 @@ public class TilingSequence implements Serializable, Sequence
     mTypeArray = typeArray;
     mTypeArray.complete();
   } // configure(VertexTypeArray)
+
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
 
   /**
    * Defines the initial set of vertices, and initializes the tiling's dynamic data structures.

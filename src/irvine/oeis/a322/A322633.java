@@ -18,6 +18,6 @@ public class A322633 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A322633() {
-    super(new ZPolynomial(Polynomial.create(-142, 5180, -97580, 628250, -5363750, 11571875)).inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO).multiply(C));
+    super(0, new ZPolynomial(Polynomial.create(-142, 5180, -97580, 628250, -5363750, 11571875)).inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO).multiply(C));
   }
 }

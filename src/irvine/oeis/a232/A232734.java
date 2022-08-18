@@ -13,6 +13,6 @@ public class A232734 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A232734() {
-    super(LOG2.negate().ei().negate().divide(LOG2));
+    super(0, LOG2.negate().ei().negate().divide(LOG2));
   }
 }

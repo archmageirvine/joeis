@@ -22,7 +22,7 @@ public class A106533 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A106533() {
-    super(RUMOUR_CONSTANT);
+    super(0, RUMOUR_CONSTANT);
   }
 }
 

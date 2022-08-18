@@ -16,7 +16,7 @@ import irvine.math.z.Z;
  * Complications arise when the digits subset contains '0' and by the omission of leading zeroes.
  * @author Georg Fischer
  */
-public class SquareDigitsSequence implements Sequence {
+public class SquareDigitsSequence implements SequenceWithOffset {
 
   protected static int sDebug = 0;
   protected String mSubset; // the decimal digits of the subset in ascending order
@@ -43,6 +43,7 @@ public class SquareDigitsSequence implements Sequence {
   private final boolean mTriangular; // whether to investigate triangular numbers instead of squares
   private Z mBasePower; // for ZUtils.basePower()
   private int mLogU; // for ZUtils.basePower()
+  private int mOffset; // first index
 
   /**
    * Construct an instance for some variant.
@@ -59,6 +60,7 @@ public class SquareDigitsSequence implements Sequence {
    * @param subset String of decimal digits in ascending order, representing the desired subset
    */
   protected SquareDigitsSequence(final int offset, final int base, final int mask, final String subset) {
+    mOffset = offset;
     mBase = base;
     mBaseZ = Z.valueOf(mBase);
     //mMask = mask;
@@ -130,6 +132,11 @@ public class SquareDigitsSequence implements Sequence {
       }
     }
     return -1;
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   /**

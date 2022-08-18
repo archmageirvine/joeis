@@ -10,7 +10,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 public class A019810 extends DecimalExpansionSequence {
 
   protected A019810(final long angle) {
-    super(CR.PI.multiply(angle).divide(CR.valueOf(180)).sin());
+    super(0, CR.PI.multiply(angle).divide(CR.valueOf(180)).sin());
   }
 
   /** Construct the sequence. */

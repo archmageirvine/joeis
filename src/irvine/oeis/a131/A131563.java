@@ -11,6 +11,6 @@ public class A131563 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A131563() {
-    super(CR.E.multiply(CR.PI).multiply(CR.PHI));
+    super(2, CR.E.multiply(CR.PI).multiply(CR.PHI));
   }
 }

@@ -11,6 +11,6 @@ public class A052119 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A052119() {
-    super(CR.TWO.besselI(1).divide(CR.TWO.besselI0()));
+    super(0, CR.TWO.besselI(1).divide(CR.TWO.besselI0()));
   }
 }

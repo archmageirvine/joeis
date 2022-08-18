@@ -4,12 +4,13 @@ import java.util.function.Function;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Select a column, row, diagonal or some other subsection of a triangular (keyword "<code>tabl</code>") sequence T(n,k).
  * @author Georg Fischer
  */
-public class TriangleSelector implements Sequence {
+public class TriangleSelector implements SequenceWithOffset {
 
   protected int mOffset; // first index of this sequence
   private final Sequence mSeq; // the underlying sequence
@@ -85,6 +86,11 @@ public class TriangleSelector implements Sequence {
     mStop = n * (n + 1) / 2 + k;
     // System.out.println("init n=" + n + ", k=" + k + ", mTri=" + mTri + ", mStop=" + mStop);
     mTri = -1; // we always think it would start with T(0,0)
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

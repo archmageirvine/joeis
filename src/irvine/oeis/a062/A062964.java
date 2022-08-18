@@ -11,6 +11,6 @@ public class A062964 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A062964() {
-    super(0, CR.PI, 16);
+    super(1, CR.PI, 16);
   }
 }

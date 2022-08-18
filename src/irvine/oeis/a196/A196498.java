@@ -13,7 +13,7 @@ public class A196498 extends DecimalExpansionSequence {
   private static final int EXTRA_PRECISION = 5;
 
   protected A196498(final long stride) {
-    super(new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
         if (precision >= 0) {

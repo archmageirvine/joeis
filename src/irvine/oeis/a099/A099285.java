@@ -11,6 +11,6 @@ public class A099285 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A099285() {
-    super(CR.ONE.negate().ei().negate());
+    super(0, CR.ONE.negate().ei().negate());
   }
 }

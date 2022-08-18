@@ -11,6 +11,6 @@ public class A347058 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A347058() {
-    super(CR.PI.tanh().add(CR.ONE).multiply(CR.HALF));
+    super(0, CR.PI.tanh().add(CR.ONE).multiply(CR.HALF));
   }
 }

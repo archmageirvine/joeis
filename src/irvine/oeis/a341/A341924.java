@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a342.A342053;
 
 /**
- * A342053.
+ * A341924 Number of 3-connected triangulations of a quadrilateral up to orientation-preserving isomorphisms with n interior nodes.
  * @author Sean A. Irvine
  */
 public class A341924 extends A342053 {

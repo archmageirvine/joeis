@@ -14,6 +14,6 @@ public class A140240 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A140240() {
-    super(REALS.acos(CR.SEVEN.divide(CR.EIGHT)));
+    super(0, REALS.acos(CR.SEVEN.divide(CR.EIGHT)));
   }
 }

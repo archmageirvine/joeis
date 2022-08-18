@@ -11,6 +11,6 @@ public class A073003 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A073003() {
-    super(CR.ONE.negate().ei().negate().multiply(CR.E));
+    super(0, CR.ONE.negate().ei().negate().multiply(CR.E));
   }
 }

@@ -1,7 +1,7 @@
 package irvine.oeis.cons;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Properties of a (simple) periodic continued fraction
@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  * the continued fractions of all square roots.
  * @author Georg Fischer
  */
-public class ContinuedFractionOfSqrtSequence implements Sequence {
+public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
 
   protected int mN; // index of current term to be returned
   protected int mK; // compute the sqrt of this number
@@ -20,9 +20,9 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   protected int mRoot; // the integer root, floor(sqrt(n))
   protected int mB0; // numerator   of old partial fraction
   protected int mB1; // denominator of new partial fraction
-  protected Z   mC0; // old convergent numerator
-  protected Z   mC1; // new convergent numerator
-  protected Z   mD0; // old convergent denominator
+  protected Z mC0; // old convergent numerator
+  protected Z mC1; // new convergent numerator
+  protected Z mD0; // old convergent denominator
   protected Z   mD1; // new convergent denominator
   protected int mP0; // numerator   of old partial fraction
   protected int mP1; // denominator of new partial fraction

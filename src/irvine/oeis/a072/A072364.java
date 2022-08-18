@@ -13,6 +13,6 @@ public class A072364 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A072364() {
-    super(INV_E.pow(INV_E));
+    super(0, INV_E.pow(INV_E));
   }
 }

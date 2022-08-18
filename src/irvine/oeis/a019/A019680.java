@@ -11,6 +11,6 @@ public class A019680 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A019680() {
-    super(CR.PI.divide(CR.valueOf(13)));
+    super(0, CR.PI.divide(CR.valueOf(13)));
   }
 }

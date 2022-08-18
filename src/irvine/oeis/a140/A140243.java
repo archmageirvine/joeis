@@ -14,6 +14,6 @@ public class A140243 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A140243() {
-    super(REALS.acos(CR.valueOf(11).divide(CR.valueOf(16))).multiply(180).divide(CR.PI));
+    super(2, REALS.acos(CR.valueOf(11).divide(CR.valueOf(16))).multiply(180).divide(CR.PI));
   }
 }

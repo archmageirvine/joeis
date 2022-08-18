@@ -12,6 +12,6 @@ public class A347150 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A347150() {
-    super(Zeta.zeta(8).multiply(127).divide(CR.valueOf(128)));
+    super(0, Zeta.zeta(8).multiply(127).divide(CR.valueOf(128)));
   }
 }

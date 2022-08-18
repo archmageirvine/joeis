@@ -11,7 +11,7 @@ public class A347201 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A347201() {
-    super(CR.SQRT2.sin());
+    super(0, CR.SQRT2.sin());
   }
 }
 

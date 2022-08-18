@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  * Earliest sequence with a(a(n))=b(n), where b(n) is some underlying sequence.
  * @author Georg Fischer
  */
-public class NumericalAronsonSequence implements Sequence {
+public class NumericalAronsonSequence implements SequenceWithOffset {
 
   private static int sDebug = 0;
   protected MemorySequence mSeq; // underlying sequence
@@ -71,7 +71,12 @@ public class NumericalAronsonSequence implements Sequence {
     }
     // if (sDebug >= 1) { System.out.println("    end   chain(" + n + "," + an + ")"); }
     return true;
-  } 
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
 
   @Override
   public Z next() {

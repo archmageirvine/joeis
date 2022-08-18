@@ -11,6 +11,6 @@ public class A019784 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A019784() {
-    super(CR.E.sqrt().divide(CR.valueOf(11)));
+    super(0, CR.E.sqrt().divide(CR.valueOf(11)));
   }
 }

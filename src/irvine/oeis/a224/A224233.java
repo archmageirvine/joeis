@@ -13,6 +13,6 @@ public class A224233 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A224233() {
-    super(CR.valueOf(new Q(10000, 254)));
+    super(2, CR.valueOf(new Q(10000, 254)));
   }
 }

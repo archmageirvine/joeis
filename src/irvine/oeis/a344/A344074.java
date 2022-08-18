@@ -11,6 +11,6 @@ public class A344074 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A344074() {
-    super(CR.ONE.besselY0());
+    super(0, CR.ONE.besselY0());
   }
 }

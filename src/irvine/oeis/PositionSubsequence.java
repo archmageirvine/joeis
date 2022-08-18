@@ -7,18 +7,23 @@ import irvine.math.z.Z;
  * that fulfill some condition.
  * @author Georg Fischer
  */
-public class PositionSubsequence extends Subsequence {
+public class PositionSubsequence extends Subsequence implements SequenceWithOffset {
 
   protected int mN; // current index
 
   /**
    * Creates sequence of the indices of the terms in another sequence that fulfill some condition.
    * @param seq underlying sequence
-   * @param offset sequence offset
+   * @param start offset of <code>seq</code>
    */
-  public PositionSubsequence(final Sequence seq, final int offset) {
+  public PositionSubsequence(final Sequence seq, final int start) {
     super(seq);
-    mN = offset - 1;
+    mN = start - 1;
+  }
+
+  @Override
+  public int getOffset() {
+    return 1; // is a list
   }
 
   @Override

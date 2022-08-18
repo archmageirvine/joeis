@@ -1,6 +1,4 @@
 package irvine.oeis;
-// 2021-09-24: Up/down/total-variation
-// 2021-08-24: with distinct RL, raise/fall, peak/pit, pieces, zigzag
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -21,18 +19,19 @@ import irvine.math.z.Z;
  * All digit expansions use two digits for bases &gt; 10 (especially base 60).
  * @author Georg Fischer
  */
-public abstract class RunsBaseSequence implements Sequence {
+public abstract class RunsBaseSequence implements SequenceWithOffset {
 
   protected int mBase; // number base
   protected int mN; // index of current term to be returned
   protected Z mK; // current number with some property
+  private int mOffset; // first index
 
   /**
    * Constructor for runs of the index
    * @param offset first valid term has this index
    */
   protected RunsBaseSequence(final int offset) {
-    //mOffset = offset;
+    mOffset = offset;
     mN = offset - 1;
     mK = Z.valueOf(mN);
     mBase = 10;
@@ -567,4 +566,9 @@ public abstract class RunsBaseSequence implements Sequence {
   protected int getIndex() {
     return mN;
   }
-} // RunsBaseSequence
+
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
+}

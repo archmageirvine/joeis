@@ -11,6 +11,6 @@ public class A004576 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A004576() {
-    super(0, CR.SEVEN.sqrt(), 9);
+    super(1, CR.SEVEN.sqrt(), 9);
   }
 }

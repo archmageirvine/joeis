@@ -24,7 +24,7 @@ public class A030178 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A030178() {
-    super(N);
+    super(0, N);
   }
 }
 

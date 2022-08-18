@@ -12,6 +12,6 @@ public class A213610 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A213610() {
-    super(CR.TAU.multiply(CR.TWO).multiply(PhysicsConstants.SPEED_OF_LIGHT));
+    super(3, CR.TAU.multiply(CR.TWO).multiply(PhysicsConstants.SPEED_OF_LIGHT));
   }
 }

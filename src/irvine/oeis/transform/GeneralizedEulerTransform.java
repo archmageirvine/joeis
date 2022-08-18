@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Apply the generalized Euler transform to two other sequences f and g, as defined in OEIS A266964:
@@ -24,7 +25,7 @@ import irvine.oeis.Sequence;
  * 4. With the default f(k) := g(k) := A000012 (all 1's), we get A000041 (number of partitions of n). <br />
  * @author Georg Fischer
  */
-public class GeneralizedEulerTransform implements Sequence {
+public class GeneralizedEulerTransform implements SequenceWithOffset {
 
   // protected static String mDebug = System.getProperty("debug", "0");
   private static final int ESTLEN = 16384; // estimated length of arrays
@@ -41,6 +42,7 @@ public class GeneralizedEulerTransform implements Sequence {
   protected Sequence mSeqF; // sequence for the exponent of the parenthesis: 1/(1-x^k)^f(k)
   protected Sequence mSeqG; // sequence for the factor of x^k: 1/(1-g(k)*x^k)^f(k)
   protected Sequence mSeqH; // monontone increasing (!) sequence for the exponent of x: 1/(1-g(k)*x^h(k))^f(k)
+  private int mOffset; // first index
   //protected int[] mParms; // additional parameters
 
   /**
@@ -67,6 +69,7 @@ public class GeneralizedEulerTransform implements Sequence {
    * @param preTerms additional terms to be prepended;
    */
   public GeneralizedEulerTransform(final int offset, final int kStart, final long[] preTerms) {
+    mOffset = offset;
     mSeqF = null;
     mSeqG = null;
     mPreTerms = ZUtils.toZ(preTerms);
@@ -199,6 +202,11 @@ public class GeneralizedEulerTransform implements Sequence {
    */
   protected Z advanceH(final long k) {
     return Z.valueOf(k);
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
 }

@@ -12,6 +12,6 @@ public class A308718 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A308718() {
-    super(CR.HALF_PI.multiply(ComputableReals.SINGLETON.sech(CR.HALF_PI)));
+    super(0, CR.HALF_PI.multiply(ComputableReals.SINGLETON.sech(CR.HALF_PI)));
   }
 }

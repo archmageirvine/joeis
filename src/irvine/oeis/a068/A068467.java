@@ -11,6 +11,6 @@ public class A068467 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A068467() {
-    super(A068466.GAMMA_QUARTER.divide(CR.FOUR));
+    super(0, A068466.GAMMA_QUARTER.divide(CR.FOUR));
   }
 }

@@ -12,6 +12,6 @@ public class A347059 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A347059() {
-    super(Zeta.zeta(9).multiply(255).divide(CR.valueOf(256)));
+    super(0, Zeta.zeta(9).multiply(255).divide(CR.valueOf(256)));
   }
 }

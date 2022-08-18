@@ -20,6 +20,6 @@ public class A303069 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A303069() {
-    super(new MyFunction().inverseMonotone(CR.valueOf(0.2), CR.HALF).execute(CR.ZERO));
+    super(0, new MyFunction().inverseMonotone(CR.valueOf(0.2), CR.HALF).execute(CR.ZERO));
   }
 }

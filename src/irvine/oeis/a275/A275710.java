@@ -12,6 +12,6 @@ public class A275710 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A275710() {
-    super(Zeta.zeta(7).multiply(63).divide(CR.valueOf(64)));
+    super(0, Zeta.zeta(7).multiply(63).divide(CR.valueOf(64)));
   }
 }

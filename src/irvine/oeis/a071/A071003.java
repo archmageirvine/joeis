@@ -1,8 +1,8 @@
 package irvine.oeis.a071;
 
 import irvine.math.cr.CR;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.a068.A068466;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A071003 Binary expansion of Gamma(5/4).
@@ -12,7 +12,7 @@ public class A071003 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A071003() {
-    super(1, A068466.GAMMA_QUARTER.divide(CR.FOUR), 2);
+    super(0, A068466.GAMMA_QUARTER.divide(CR.FOUR), 2);
   }
 }
 

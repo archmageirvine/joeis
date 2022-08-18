@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * Generate an aliquot sequence.
  * @author Sean A. Irvine
  */
-public class AliquotSequence implements Sequence {
+public class AliquotSequence implements SequenceWithOffset {
 
   private Z mA = null;
   private final Z mStart;
@@ -35,6 +35,11 @@ public class AliquotSequence implements Sequence {
       return Z.ONE;
     }
     return Jaguar.factor(n).sigma().subtract(n);
+  }
+
+  @Override
+  public int getOffset() {
+    return 0;
   }
 
   @Override

@@ -15,6 +15,15 @@ public class BinaryToDecimalExpansionSequence extends DecimalExpansionSequence {
    * @param binarySequence underlying binary sequence
    */
   public BinaryToDecimalExpansionSequence(final Sequence binarySequence) {
+    this(1, binarySequence);
+  }
+
+  /**
+   * Construct the decimal expansion of a binary sequence.
+   * @param offset first index
+   * @param binarySequence underlying binary sequence
+   */
+  public BinaryToDecimalExpansionSequence(final int offset, final Sequence binarySequence) {
     super(new CR() {
       private final Sequence mBinarySeq = binarySequence;
       private Z mA = Z.ZERO;

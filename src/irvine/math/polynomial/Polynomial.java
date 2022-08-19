@@ -52,7 +52,7 @@ public class Polynomial<E> extends ArrayList<E> {
 
   private final E mZero;
   private final E mOne;
-  private final String mIndeterminate;
+  private String mIndeterminate;
 
   /**
    * Adjust the polynomial to be correct in the presence of zeros. This ensures
@@ -285,5 +285,13 @@ public class Polynomial<E> extends ArrayList<E> {
    */
   public String getIndeterminate() {
     return mIndeterminate;
+  }
+
+  /**
+   * Set the indeterminate used in this polynomial. Only affects printing.
+   * @param indeterminate the indeterminate
+   */
+  public void setIndeterminate(final String indeterminate) {
+    mIndeterminate = indeterminate;
   }
 }

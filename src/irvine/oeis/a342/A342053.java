@@ -51,8 +51,9 @@ public class A342053 implements Sequence {
   static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);
   private static final MemoryFactorial F = MemoryFactorial.SINGLETON;
   private static final Polynomial<Polynomial<Z>> X3 = RING.monomial(INNER.one(), 3);
-  private static final Polynomial<Z> NEG_ONE = Polynomial.create(-1);
-  private static final Polynomial<Z> TWO = Polynomial.create(2);
+  private static final Polynomial<Z> NEG_ONE = INNER.negate(INNER.one());
+  private static final Polynomial<Z> TWO = INNER.monomial(Z.TWO, 0);
+  private static final Polynomial<Z> Y2 = INNER.monomial(Z.ONE, 2);
 
   private static PolynomialRingField<Polynomial<Z>> r(final int n) {
     return new PolynomialRingField<>(new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, n));
@@ -205,81 +206,69 @@ public class A342053 implements Sequence {
 //
 // Q1(D,J,x,y)={(y^3*J^2 + y^2*J - x)*D/(y*(y^2*J + x)*D + (-x + y^2))}
 
-  private Polynomial<Polynomial<Z>> q1(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j, final int m, final int n) {
-    final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
-    final Polynomial<Polynomial<Z>> t = ring.create(Arrays.asList(
+  Polynomial<Polynomial<Z>> q1(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j) {
+    final Polynomial<Polynomial<Z>> t = RING.create(Arrays.asList(
       INNER.add(j.shift(2), INNER.multiply(j, j, j.degree()).shift(3)),
       NEG_ONE
     ));
-    final Polynomial<Polynomial<Z>> num = ring.multiply(t, d, d.degree());
-    final Polynomial<Polynomial<Z>> u = ring.create(Arrays.asList(
-      j.shift(3),
-      INNER.x()
-    ));
-    final Polynomial<Polynomial<Z>> v = ring.create(Arrays.asList(
-      Polynomial.create(0, 0, 1),
-      NEG_ONE
-    ));
-    final Polynomial<Polynomial<Z>> den = ring.add(ring.multiply(u, d, d.degree()), v);
-    System.out.println("num=" + num);
-    System.out.println("den=" + den);
-    System.out.println("n=" + n);
-    return ring.series(num, den, n);
+    final Polynomial<Polynomial<Z>> num = RING.multiply(t, d);
+
+    final Polynomial<Polynomial<Z>> u = RING.create(Arrays.asList(j.shift(3), INNER.x()));
+    final Polynomial<Polynomial<Z>> v = RING.create(Arrays.asList(Y2, NEG_ONE)); // todo constant
+    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, d.degree()), v);
+
+//    System.out.println("u=" + u);
+//    System.out.println("v=" + v);
+//    System.out.println("num=" + num);
+//    System.out.println("den=" + den);
+    final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
+    return ring.series(num, den, d.degree());
   }
+
+  /*
+  ? Q1(1+(1+y^2+O(y^3))*x+O(x^2),1 + y + y^2 + 3*y^3+O(y^4),x,y)
+num=(y^2 + 2*y^3 + 3*y^4 + 6*y^5 + O(y^6)) + (-1 + y^2 + 2*y^3 + 4*y^4 + O(y^5))*x + O(x^2)
+den=(y^2 + y^3 + y^4 + y^5 + 3*y^6 + O(y^7)) + (-1 + y + y^3 + y^4 + 2*y^5 + O(y^6))*x + O(x^2)
+%103 = (1 + y + y^2 + 3*y^3 + O(y^4)) + (1 + 2*y + O(y^2))*x + O(x^2)
+
+   */
 
 // Q2(D,J,x,y)={(((-y^2*x + y^3)*J - y*x)*D + (y*x - y^3)*J)/(y*(y^2*J + x)*D + (-x + y^2))}
 
-  private Polynomial<Polynomial<Z>> q2(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j, final int m, final int n) {
-    final Polynomial<Polynomial<Z>> t = RING.empty();
-    t.add(INNER.zero()); // y^0
-    t.add(INNER.negate(INNER.x())); // y^1
-    t.add(INNER.negate(j).shift(1)); // y^2
-    t.add(j); // y^3
-    final Polynomial<Polynomial<Z>> w = RING.empty();
-    w.add(INNER.zero()); // y^0
-    w.add(j.shift(1)); // y^1
-    w.add(INNER.zero()); // y^2
-    w.add(INNER.negate(j)); // y^3
-    w.add(j); // y^3
-    final Polynomial<Polynomial<Z>> num = RING.add(RING.multiply(t, d, n), w);
-    final Polynomial<Polynomial<Z>> u = RING.empty();
-    u.add(INNER.zero()); // y^0
-    u.add(INNER.x()); // y^1
-    u.add(INNER.zero()); // y^2
-    u.add(j); // y^3
-    final Polynomial<Polynomial<Z>> v = RING.empty();
-    v.add(INNER.negate(INNER.x())); // y^0
-    v.add(INNER.zero()); // y^1
-    v.add(INNER.one()); // y^2
-    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, n), v);
-    return RING.series(num, den, n);
+  Polynomial<Polynomial<Z>> q2(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j) {
+    final Polynomial<Polynomial<Z>> t = RING.create(Arrays.asList(
+      Polynomial.create(0, 0, 0, 1),
+      INNER.negate(Y2)
+    ));
+    final Polynomial<Polynomial<Z>> t1 = RING.subtract(RING.multiply(t, j), RING.monomial(Polynomial.create(0, -1), 1));
+    final Polynomial<Polynomial<Z>> w = RING.create(Arrays.asList(INNER.negate(j.shift(3)), j.shift(1)));
+    final Polynomial<Polynomial<Z>> num = RING.add(RING.multiply(t1, d, d.degree()), w);
+    final Polynomial<Polynomial<Z>> u = RING.create(Arrays.asList(j.shift(3), INNER.x()));
+    final Polynomial<Polynomial<Z>> v = RING.create(Arrays.asList(Y2, NEG_ONE)); // todo constant
+    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, d.degree()), v);
+
+//    System.out.println("num=" + num);
+//    System.out.println("den=" + den);
+
+    final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
+    return ring.series(num, den, num.degree());
   }
 
 // Q3(D,J,x,y)={(((-y^2*x*J - x^2)*D + (y^2*x*J^2 + y*x*J - y*x))/(y*(y^2*J + x)*D + (-x + y^2)) - 1)*D + 1}
 
-  private static final Polynomial<Z> NX2 = Polynomial.create(0, 0, -1);
-
-  private Polynomial<Polynomial<Z>> q3(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j, final int m, final int n) {
-    final Polynomial<Polynomial<Z>> t = RING.empty();
-    t.add(NX2); // y^0
-    t.add(INNER.zero()); // y^1
-    t.add(INNER.negate(j).shift(1)); // y^2
-    final Polynomial<Polynomial<Z>> w = RING.empty();
-    w.add(INNER.zero()); // y^0
-    w.add(INNER.subtract(j, INNER.one()).shift(1)); // y^1
-    w.add(INNER.multiply(j, j, m).shift(1)); // y^2
-    final Polynomial<Polynomial<Z>> num = RING.add(RING.multiply(t, d, n), w);
-    final Polynomial<Polynomial<Z>> u = RING.empty();
-    u.add(INNER.zero()); // y^0
-    u.add(INNER.x()); // y^1
-    u.add(INNER.zero()); // y^2
-    u.add(j); // y^3
-    final Polynomial<Polynomial<Z>> v = RING.empty();
-    v.add(INNER.negate(INNER.x())); // y^0
-    v.add(INNER.zero()); // y^1
-    v.add(INNER.one()); // y^2
-    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, n), v);
-    return RING.add(RING.series(num, den, n), RING.one());
+  Polynomial<Polynomial<Z>> q3(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j) {
+    final Polynomial<Polynomial<Z>> t = RING.create(Arrays.asList(
+      INNER.zero(),
+      INNER.negate(j.shift(2)),
+      INNER.one()
+    ));
+    final Polynomial<Polynomial<Z>> w = RING.monomial(INNER.add(INNER.multiply(j, j, j.degree()).shift(2), j.shift(1), INNER.negate(INNER.x())), 1);
+    final Polynomial<Polynomial<Z>> num = RING.add(RING.multiply(t, d, d.degree()), w);
+    final Polynomial<Polynomial<Z>> u = RING.create(Arrays.asList(j.shift(3), INNER.x()));
+    final Polynomial<Polynomial<Z>> v = RING.create(Arrays.asList(Y2, NEG_ONE)); // todo constant
+    final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, d.degree()), v);
+    final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
+    return RING.add(RING.multiply(RING.subtract(ring.series(num, den, d.degree()), RING.one()), d, d.degree()), RING.one());
   }
 
   // Main method for achiral triangulations - returns bivariate g.f.
@@ -297,20 +286,24 @@ public class A342053 implements Sequence {
 
   Polynomial<Polynomial<Z>> achiralStrongTriangsGf(final int m, final int n) {
     // todo all kinds of hell here to do with degrees of expansions!
-    // todo Q2 and Q3 are definitely implemented wrong
-    final PolynomialRingField<Polynomial<Z>> ring = r(n);
+    System.out.println("m=" + m + " n=" + n);
+    final PolynomialRingField<Polynomial<Z>> ring = r(2 * n + 1);
     final Polynomial<Polynomial<Z>> ds = ring.add(ring.one(), makeSquareBgfTr(mD, m - 1, n + m - 1, 2).shift(1));
     final Polynomial<Polynomial<Z>> fi = bgfRaise(ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m, n, 1).shift(2)), m + 2), 2);
     final Polynomial<Z> j = jgf(2 * (n + m));
-    final Polynomial<Polynomial<Z>> a = RING.subtract(RING.substitute(bgfTrim(q1(ds, j, m + 1, 2 * n + 1), m + 1, 2 * n + 1).shift(1), fi, 2 * n + 1).shift(1), X3);
+    final Polynomial<Polynomial<Z>> q1 = bgfTrim(q1(ds, j), m + 1, 2 * n + 1);
+    final Polynomial<Polynomial<Z>> q2 = bgfTrim(ring.leftTruncate(q2(ds, j), 1), m + 1, 2 * n + 1);
+    final Polynomial<Polynomial<Z>> q3 = bgfTrim(ring.leftTruncate(q3(ds, j), 1), m + 1, 2 * n + 1);
+    final Polynomial<Polynomial<Z>> a = RING.subtract(ring.substitute(q1.shift(1), fi, Integer.MAX_VALUE).shift(1), X3);
     System.out.println("Ds=" + ds);
     System.out.println("Fi=" + fi);
-    System.out.println("Q1=" + q1(ds, j, 2 * n + 1, 2 * n + 1));
-    System.out.println("trimQ1=" + bgfTrim(q1(ds, j, m + 1, 2 * n + 1), m + 1, 2 * n + 1));
+    System.out.println("trimQ1=" + q1);
+    System.out.println("trimQ2=" + q2);
+    System.out.println("trimQ3=" + q3);
     System.out.println("a=" + a);
     return ring.add(a, ring.divide(ring.add(
-          ring.substitute(bgfTrim(ring.leftTruncate(q2(ds, j, m, n), 1), m + 1, 2 * n + 1), fi, n).shift(2),
-          ring.substitute(bgfTrim(ring.leftTruncate(q3(ds, j, m, n), 1), m + 1, 2 * n + 1).shift(1), fi, n)),
+          ring.substitute(q2, fi, n).shift(2),
+          ring.substitute(q3.shift(1), fi, n)),
         TWO));
   }
 

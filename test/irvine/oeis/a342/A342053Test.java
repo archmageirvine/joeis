@@ -77,6 +77,19 @@ public class A342053Test extends TestCase {
     assertEquals("1+y+y^2+3y^3+8y^4+23y^5+68y^6+215y^7", seq.jgf(7).toString());
   }
 
+  public void testQ() {
+    final A342053 seq = new A342053();
+    final Polynomial<Z> j = Polynomial.create(1, 1, 1, 3);
+    j.setIndeterminate("y");
+    final DegreeLimitedPolynomialRingField<Z> inner = new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, 2);
+    final Polynomial<Polynomial<Z>> d = new PolynomialRingField<>(inner)
+      .create(Arrays.asList(inner.one(), inner.onePlusXToTheN(2)));
+    assertEquals("1+(1+y^2)x", d.toString());
+    assertEquals("(1+y+y^2+3y^3)+(1+2y+y^2+4y^3)x", seq.q1(d, j).toString());
+    assertEquals("(y+2y^2-4y^3)x", seq.q2(d, j).toString());
+    assertEquals("(y+2y^2)x", seq.q3(d, j).toString());
+  }
+
   public void testAchiralStrongTriangsGf() {
     final A342053 seq = new A342053();
     assertEquals("", seq.achiralStrongTriangsGf(3, 2).toString());

@@ -1,21 +1,15 @@
 package irvine.oeis.a005;
 
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Z;
-import irvine.oeis.recur.GeneratingFunctionSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A005340 Number of ways in which n identical balls can be distributed among 7 boxes in a row such that each pair of adjacent boxes contains at least 4 balls.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A005340 extends GeneratingFunctionSequence {
-
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+public class A005340 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A005340() {
-    super(Polynomial.create(1, 6, 6, 1, 0, -66, 74, -21), RING.pow(Polynomial.create(1, -1), 7));
+    super(12, "[0,-1, 7,-21, 35,-35, 21,-7, 1]", "[1, 13, 76, 295, 889, 2188, 4652, 8891]", 0);
   }
 }

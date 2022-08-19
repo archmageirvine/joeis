@@ -1,16 +1,15 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.recur.GeneratingFunctionSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A005690 Number of Twopins positions.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A005690 extends GeneratingFunctionSequence {
+public class A005690 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A005690() {
-    super(new long[] {1},
-      new long[] {1, -2, 0, 2, -1, 0, -2, 2, 0, 0, 0, 0, 1});
+    super(8, "[0, 1, 0, 0, 0, 0, 2,-2, 0,-1, 2, 0,-2, 1]", "1", 0);
   }
 }

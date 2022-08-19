@@ -1,22 +1,15 @@
 package irvine.oeis.a006;
 
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Z;
-import irvine.oeis.recur.GeneratingFunctionSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A006493 Generalized Lucas numbers.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A006493 extends GeneratingFunctionSequence {
-
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+public class A006493 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A006493() {
-    super(RING.multiply(RING.pow(Polynomial.create(1, -1), 3), Polynomial.create(1, -2, 2)), RING.pow(Polynomial.create(1, -1, -1), 5));
+    super(3, "[0,-1,-5,-5, 10, 15,-11,-15, 10, 5,-5, 1]", "[1, 0, 6, 7, 28, 54, 135, 286, 627, 1313, 2730]", 0);
   }
 }
-

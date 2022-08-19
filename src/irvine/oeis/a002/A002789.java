@@ -1,16 +1,15 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.recur.GeneratingFunctionSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A002789 Number of integer points in a certain quadrilateral scaled by a factor of n.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A002789 extends GeneratingFunctionSequence {
+public class A002789 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A002789() {
-    super(new long[] {2, 2, 1},
-      new long[] {1, -1, -1, 0, 1, 1, -1});
+    super(1, "[0,-1, 1, 1, 0,-1,-1, 1]", "[2, 4, 7]", 0);
   }
 }

@@ -1,17 +1,15 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.recur.GeneratingFunctionSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A001570 Numbers k such that k^2 is centered hexagonal.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A001570 extends GeneratingFunctionSequence {
+public class A001570 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A001570() {
-    super(new long[] {0, 1, -1},
-      new long[] {1, -14, 1});
-    next();
+    super(1, "[0, 1,-14, 1]", "[1, 13]", 0);
   }
 }

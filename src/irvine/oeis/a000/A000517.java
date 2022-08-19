@@ -1,16 +1,15 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.recur.GeneratingFunctionSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A000517 Number of permutations of length n with exactly three valleys.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A000517 extends GeneratingFunctionSequence {
+public class A000517 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A000517() {
-    super(new long[] {272, -2944, 10176, -11520},
-      new long[] {1, -40, 700, -7056, 45360, -194304, 561728, -1082624, 1332224, -946176, 294912});
+    super(7, "[0, 294912,-946176, 1332224,-1082624, 561728,-194304, 45360,-7056, 700,-40, 1]", "[272, 7936, 137216, 1841152]");
   }
 }

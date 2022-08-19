@@ -1,15 +1,14 @@
 package irvine.oeis.a157;
-// manually 2021-09-27
 
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.recur.GeneratingFunctionSequence;
 import irvine.oeis.a088.A088855;
+import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A157052 Number of integer sequences of length n+1 with sum zero and sum of absolute values 6. 
+ * A157052 Number of integer sequences of length n+1 with sum zero and sum of absolute values 6.
  * @author Georg Fischer
  */
 public class A157052 extends GeneratingFunctionSequence {

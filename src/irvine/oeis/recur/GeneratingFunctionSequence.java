@@ -12,13 +12,13 @@ import java.util.Arrays;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * An ordinary generating function consisting of a fraction of two polynomials in "x".
  * @author Georg Fischer
  */
-public class GeneratingFunctionSequence implements Sequence {
+public class GeneratingFunctionSequence implements SequenceWithOffset {
 
   protected Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
   protected Z[] mDen; // coefficients of the denominator polynomial

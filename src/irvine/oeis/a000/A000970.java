@@ -1,16 +1,15 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.recur.GeneratingFunctionSequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A000970 Fermat coefficients.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A000970 extends GeneratingFunctionSequence {
+public class A000970 extends HolonomicRecurrence {
 
   /** Construct the sequence. */
   public A000970() {
-    super(new long[] {1, 3, 3, 4, 2, 3},
-      new long[] {1, -4, 6, -4, 1, -1, 4, -6, 4, -1});
+    super(5, "[0,-1, 4,-6, 4,-1, 1,-4, 6,-4, 1]", "[1, 7, 25, 66, 143, 273]");
   }
 }

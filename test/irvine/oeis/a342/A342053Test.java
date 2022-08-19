@@ -92,6 +92,6 @@ public class A342053Test extends TestCase {
 
   public void testAchiralStrongTriangsGf() {
     final A342053 seq = new A342053();
-    assertEquals("", seq.achiralStrongTriangsGf(3, 2).toString());
+    assertTrue(seq.achiralStrongTriangsGf(3, 2).toString().startsWith("(y+y^2+3y^3+8y^4+23y^5)x^3+(y^2+2y^3+6y^4+18y^5)x^4"));
   }
 }

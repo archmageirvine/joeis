@@ -203,38 +203,21 @@ public class A342053 implements Sequence {
   // The following functions give Q1, Q2, Q3 in terms of D,J,x,y (see Brown/A169808/below for meaning of D/J)
   // In the case of Q2 and Q3 we actually multiply by an extra x to keep denominators consistent.
 
-//
-// Q1(D,J,x,y)={(y^3*J^2 + y^2*J - x)*D/(y*(y^2*J + x)*D + (-x + y^2))}
-
+  // Q1(D,J,x,y)={(y^3*J^2 + y^2*J - x)*D/(y*(y^2*J + x)*D + (-x + y^2))}
   Polynomial<Polynomial<Z>> q1(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j) {
     final Polynomial<Polynomial<Z>> t = RING.create(Arrays.asList(
       INNER.add(j.shift(2), INNER.multiply(j, j, j.degree()).shift(3)),
       NEG_ONE
     ));
     final Polynomial<Polynomial<Z>> num = RING.multiply(t, d);
-
     final Polynomial<Polynomial<Z>> u = RING.create(Arrays.asList(j.shift(3), INNER.x()));
     final Polynomial<Polynomial<Z>> v = RING.create(Arrays.asList(Y2, NEG_ONE)); // todo constant
     final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, d.degree()), v);
-
-//    System.out.println("u=" + u);
-//    System.out.println("v=" + v);
-//    System.out.println("num=" + num);
-//    System.out.println("den=" + den);
     final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
     return ring.series(num, den, d.degree());
   }
 
-  /*
-  ? Q1(1+(1+y^2+O(y^3))*x+O(x^2),1 + y + y^2 + 3*y^3+O(y^4),x,y)
-num=(y^2 + 2*y^3 + 3*y^4 + 6*y^5 + O(y^6)) + (-1 + y^2 + 2*y^3 + 4*y^4 + O(y^5))*x + O(x^2)
-den=(y^2 + y^3 + y^4 + y^5 + 3*y^6 + O(y^7)) + (-1 + y + y^3 + y^4 + 2*y^5 + O(y^6))*x + O(x^2)
-%103 = (1 + y + y^2 + 3*y^3 + O(y^4)) + (1 + 2*y + O(y^2))*x + O(x^2)
-
-   */
-
-// Q2(D,J,x,y)={(((-y^2*x + y^3)*J - y*x)*D + (y*x - y^3)*J)/(y*(y^2*J + x)*D + (-x + y^2))}
-
+  // Q2(D,J,x,y)={(((-y^2*x + y^3)*J - y*x)*D + (y*x - y^3)*J)/(y*(y^2*J + x)*D + (-x + y^2))}
   Polynomial<Polynomial<Z>> q2(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j) {
     final Polynomial<Polynomial<Z>> t = RING.create(Arrays.asList(
       Polynomial.create(0, 0, 0, 1),
@@ -246,16 +229,11 @@ den=(y^2 + y^3 + y^4 + y^5 + 3*y^6 + O(y^7)) + (-1 + y + y^3 + y^4 + 2*y^5 + O(y
     final Polynomial<Polynomial<Z>> u = RING.create(Arrays.asList(j.shift(3), INNER.x()));
     final Polynomial<Polynomial<Z>> v = RING.create(Arrays.asList(Y2, NEG_ONE)); // todo constant
     final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, d.degree()), v);
-
-//    System.out.println("num=" + num);
-//    System.out.println("den=" + den);
-
     final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
     return ring.series(num, den, num.degree());
   }
 
-// Q3(D,J,x,y)={(((-y^2*x*J - x^2)*D + (y^2*x*J^2 + y*x*J - y*x))/(y*(y^2*J + x)*D + (-x + y^2)) - 1)*D + 1}
-
+  // Q3(D,J,x,y)={(((-y^2*x*J - x^2)*D + (y^2*x*J^2 + y*x*J - y*x))/(y*(y^2*J + x)*D + (-x + y^2)) - 1)*D + 1}
   Polynomial<Polynomial<Z>> q3(final Polynomial<Polynomial<Z>> d, final Polynomial<Z> j) {
     final Polynomial<Polynomial<Z>> t = RING.create(Arrays.asList(
       INNER.zero(),
@@ -285,8 +263,6 @@ den=(y^2 + y^3 + y^4 + y^5 + 3*y^6 + O(y^7)) + (-1 + y + y^3 + y^4 + 2*y^5 + O(y
 
 
   Polynomial<Polynomial<Z>> achiralStrongTriangsGf(final int m, final int n) {
-    // todo all kinds of hell here to do with degrees of expansions!
-    System.out.println("m=" + m + " n=" + n);
     final PolynomialRingField<Polynomial<Z>> ring = r(2 * n + 1);
     final Polynomial<Polynomial<Z>> ds = ring.add(ring.one(), makeSquareBgfTr(mD, m - 1, n + m - 1, 2).shift(1));
     final Polynomial<Polynomial<Z>> fi = bgfRaise(ring.reversion(ring.add(ring.x(), makeSquareBgfTr(mD, m, n, 1).shift(2)), m + 2), 2);
@@ -294,35 +270,50 @@ den=(y^2 + y^3 + y^4 + y^5 + 3*y^6 + O(y^7)) + (-1 + y + y^3 + y^4 + 2*y^5 + O(y
     final Polynomial<Polynomial<Z>> q1 = bgfTrim(q1(ds, j), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> q2 = bgfTrim(ring.leftTruncate(q2(ds, j), 1), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> q3 = bgfTrim(ring.leftTruncate(q3(ds, j), 1), m + 1, 2 * n + 1);
-    final Polynomial<Polynomial<Z>> a = RING.subtract(ring.substitute(q1.shift(1), fi, Integer.MAX_VALUE).shift(1), X3);
-    System.out.println("Ds=" + ds);
-    System.out.println("Fi=" + fi);
-    System.out.println("trimQ1=" + q1);
-    System.out.println("trimQ2=" + q2);
-    System.out.println("trimQ3=" + q3);
-    System.out.println("a=" + a);
+    final Polynomial<Polynomial<Z>> a = RING.subtract(RING.substitute(q1.shift(1), fi, Integer.MAX_VALUE).shift(1), X3);
+//    System.out.println("Ds=" + ds);
+//    System.out.println("Fi=" + fi);
+//    System.out.println("trimQ1=" + q1);
+//    System.out.println("trimQ2=" + q2);
+//    System.out.println("trimQ3=" + q3);
+//    System.out.println("a=" + a);
     return ring.add(a, ring.divide(ring.add(
           ring.substitute(q2, fi, n).shift(2),
           ring.substitute(q3.shift(1), fi, n)),
         TWO));
   }
 
-// 
-// // Sequences for unrooted triangulations
+  // Sequences for unrooted triangulations
 // A342053Array(N,M)={(BgfToArray(AchiralStrongTriangsGf(M\2, (N+1)\2)/(y*x^3), M-1, N-1)~ + A341923Array(N,M))/2}
+
+  protected Z a342053(final int nn, final int kk) {
+    System.out.println("n=" + nn + " k=" + kk);
+    final int k = kk + 3;
+    final int n = Math.max(nn, 9); // hack for degree of polynomial problems
+    return INNER.divide(INNER.add(achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k), a341923ColSeq(nn, k)), Z.TWO).coeff(nn);
+  }
+
+
+
 // A342053ColSeq(N,k)={(Vec(O(y*y^N) + polcoeff(AchiralStrongTriangsGf(max(0,k\2-1),(N+1)\2),k), N) + A341923ColSeq(N,k))/2}
 
-  private Polynomial<Z> a342053ColSeq(final int n, final int k) {
-    return INNER.divide(INNER.add(achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k), a341923ColSeq(n, k)), Z.TWO);
+  protected Polynomial<Z> a342053ColSeq(final int nn, final int k) {
+    final int n = Math.max(nn, 9); // hack for degree of polynomial problems
+    return INNER.divide(INNER.add(achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k), a341923ColSeq(nn, k)), Z.TWO);
   }
 
   // A342053RowSeq(N,k)={(Vec(O(x*x^N) + polcoeff(AchiralStrongTriangsGf(N\2-1, (k+1)\2), k, y)) + A341923RowSeq(N,k))/2}
 // A342053AntidiagonalSums(N)={(Vec(O(x^(N+4)) + subst(AchiralStrongTriangsGf((N+1)\2,(N+1)\2), y, x)) + A341923AntidiagonalSums(N))/2}
 
-  private int mN = 4;
+  private int mN = 0;
+  private int mM = 0;
 
   @Override
   public Z next() {
-    return a342053ColSeq(++mN, 4).coeff(mN);
+    if (++mM > mN) {
+      ++mN;
+      mM = 1;
+    }
+    return a342053(mM, mN - mM);
   }
 }

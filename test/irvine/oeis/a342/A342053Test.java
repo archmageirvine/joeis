@@ -106,7 +106,6 @@ public class A342053Test extends TestCase {
     final DegreeLimitedPolynomialRingField<Z> inner = new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, 2);
     final Polynomial<Polynomial<Z>> d = new PolynomialRingField<>(inner).create(Arrays.asList(inner.one(), inner.onePlusXToTheN(2)));
     assertEquals("(1+y+y^2+3y^3+8y^4)+(1+2y+4y^2+y^3+9y^4)x", seq.q1(d, j).toString());
-    // Q1=(1 + y + y^2 + 3*y^3 + 8*y^4 + O(y^5)) + (1 + 2*y + 4*y^2 + O(y^3))*x + O(x^2)
   }
 
   public void testQ1C() {
@@ -116,8 +115,6 @@ public class A342053Test extends TestCase {
     final DegreeLimitedPolynomialRingField<Z> inner = new DegreeLimitedPolynomialRingField<>("y", IntegerField.SINGLETON, 5);
     final Polynomial<Polynomial<Z>> d = new PolynomialRingField<>(inner).create(Arrays.asList(inner.one(), Polynomial.create(1, 0, 1, 0, 3)));
     assertEquals("(1+y+y^2+3y^3+8y^4+23y^5+68y^6)+(1+2y+4y^2+12y^3+36y^4-8y^5+70y^6)x", seq.q1(d, j).toString());
-    // Q1=(1 + y + y^2 + 3*y^3 + 8*y^4 + 23*y^5 + 68*y^6 + O(y^7)) + (1 + 2*y + 4*y^2 + 12*y^3 + 36*y^4 + O(y^5))*x + O(x^2)
-    // 2 :: 5 trimQ1=(1 + y + y^2 + 3*y^3 + 8*y^4 + O(y^5)) + (1 + 2*y + 4*y^2 + 12*y^3 + 36*y^4 + O(y^5))*x + O(x^2)
   }
 
   public void testQ1D() {
@@ -129,25 +126,7 @@ public class A342053Test extends TestCase {
     assertEquals("(1+y+y^2+3y^3+8y^4+23y^5+68y^6+215y^7+680y^8)+(1+2y+4y^2+12y^3+36y^4+110y^5+348y^6-164y^7+622y^8)x+(2+5y+14y^2+44y^3+144y^4-832y^5+1099y^6+488y^7+1349y^8)x^2", seq.q1(d, j).toString());
     assertEquals("(y+2y^2+4y^3+12y^4+36y^5+110y^6+348y^7-1096y^8)x+(2y+5y^2+14y^3+44y^4+144y^5-1764y^6+1484y^7-439y^8)x^2", seq.q2(d, j).toString());
     assertEquals("(y+2y^2+8y^3+20y^4+68y^5+202y^6+680y^7)x+(3y+7y^2+33y^3+90y^4+335y^5-1196y^6+1294y^7-841y^8+988y^9+944y^10+2924y^11+2795y^12+8840y^13)x^2", seq.q3(d, j).toString());
-
-    // Q1=(1 + y + y^2 + 3*y^3 + 8*y^4 + 23*y^5 + 68*y^6 + 215*y^7 + 680*y^8 + O(y^9)) + (1 + 2*y + 4*y^2 + 12*y^3 + 36*y^4 + 110*y^5 + 348*y^6 + O(y^7))*x + (2 + 5*y + 14*y^2 + 44*y^3 + 144*y^4 + O(y^5))*x^2 + O(x^3)
-    // Q2=O(y^10) + (y + 2*y^2 + 4*y^3 + 12*y^4 + 36*y^5 + 110*y^6 + 348*y^7 + O(y^8))*x + (2*y + 5*y^2 + 14*y^3 + 44*y^4 + 144*y^5 + O(y^6))*x^2 + O(x^3)
-    // Q3=(y + 2*y^2 + 8*y^3 + 20*y^4 + 68*y^5 + 202*y^6 + 680*y^7 + O(y^8))*x + (3*y + 7*y^2 + 33*y^3 + 90*y^4 + 335*y^5 + O(y^6))*x^2 + O(x^3)
   }
-
-  /*
-D=1 + (1 + y^2 + 3*y^4 + 13*y^6 + O(y^8))*x + (2 + 5*y^2 + 20*y^4 + 100*y^6 + O(y^8))*x^2 + O(x^3)
-J=1 + y + y^2 + 3*y^3 + 8*y^4 + 23*y^5 + 68*y^6 + 215*y^7 + 680*y^8 + O(y^9)
-3 :: 5 trimQ1=(1 + y + y^2 + 3*y^3 + 8*y^4 + O(y^5)) + (1 + 2*y + 4*y^2 + 12*y^3 + 36*y^4 + O(y^5))*x + (2 + 5*y + 14*y^2 + 44*y^3 + 144*y^4 + O(y^5))*x^2 + O(x^3)
-num=O(y^12) + (y^3 + 3*y^4 + 7*y^5 + 19*y^6 + 57*y^7 + 176*y^8 + 557*y^9 + O(y^10))*x + (-y - y^2 - y^6 - y^7 - 11*y^8 + O(y^9))*x^2 + O(x^3)
-den=(y^2 + y^3 + y^4 + y^5 + 3*y^6 + 8*y^7 + 23*y^8 + 68*y^9 + 215*y^10 + 680*y^11 + O(y^12)) + (-1 + y + y^3 + y^4 + 2*y^5 + 4*y^6 + 12*y^7 + 29*y^8 + 92*y^9 + 260*y^10 + O(y^11))*x + (y + 3*y^3 + 2*y^4 + 10*y^5 + 11*y^6 + 54*y^7 + 81*y^8 + O(y^9))*x^2 + O(x^3)
-
-Me:
-num=(2y+y^3+3y^4+7y^5+19y^6+57y^7+176y^8+557y^9-420y^10+785y^11+323y^12+988y^13+944y^14+2924y^15+2795y^16+8840y^17)x+(y-y^2+2y^3+6y^5-y^6+25y^7-11y^8+36y^9-80y^10+1637y^11+847y^12+4616y^13+3676y^14+17605y^15+12660y^16+68000y^17)x^2
-den=(y^2+y^3+y^4+y^5+3y^6+8y^7+23y^8+68y^9+215y^10+680y^11)+(-1+y+y^3+y^4+2y^5+4y^6+12y^7+29y^8+92y^9+260y^10+785y^11+323y^12+988y^13+944y^14+2924y^15+2795y^16+8840y^17)x+(y+3y^3+2y^4+10y^5+11y^6+54y^7+81y^8+296y^9+705y^10+1960y^11+1835y^12+5560y^13+6600y^14+20400y^15+21500y^16+68000y^17)x^2
-
-
-   */
 
   public void testAchiralStrongTriangsGf() {
     final A342053 seq = new A342053();

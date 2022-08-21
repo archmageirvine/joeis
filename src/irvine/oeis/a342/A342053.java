@@ -211,7 +211,7 @@ public class A342053 implements Sequence {
     ));
     final Polynomial<Polynomial<Z>> num = RING.multiply(t, d);
     final Polynomial<Polynomial<Z>> u = RING.create(Arrays.asList(j.shift(3), INNER.x()));
-    final Polynomial<Polynomial<Z>> v = RING.create(Arrays.asList(Y2, NEG_ONE)); // todo constant
+    final Polynomial<Polynomial<Z>> v = RING.create(Arrays.asList(Y2, NEG_ONE));
     final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, d.degree()), v);
     final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
     return ring.series(num, den, d.degree());
@@ -259,12 +259,6 @@ public class A342053 implements Sequence {
     final Polynomial<Polynomial<Z>> q2 = bgfTrim(RING.leftTruncate(q2(ds, j), 1), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> q3 = bgfTrim(RING.leftTruncate(q3(ds, j), 1), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> a = RING.subtract(RING.substitute(q1.shift(1), fi, Integer.MAX_VALUE).shift(1), X3);
-//    System.out.println("Ds=" + ds);
-//    System.out.println("Fi=" + fi);
-//    System.out.println("trimQ1=" + q1);
-//    System.out.println("trimQ2=" + q2);
-//    System.out.println("trimQ3=" + q3);
-//    System.out.println("a=" + a);
     return RING.add(a, ring.divide(RING.add(
           RING.substitute(q2, fi, j.degree()).shift(2),
           RING.substitute(q3.shift(1), fi, j.degree())),
@@ -274,17 +268,15 @@ public class A342053 implements Sequence {
   // Sequences for unrooted triangulations
 // A342053Array(N,M)={(BgfToArray(AchiralStrongTriangsGf(M\2, (N+1)\2)/(y*x^3), M-1, N-1)~ + A341923Array(N,M))/2}
 
-  protected Z a342053(final int nn, final int kk) {
+  protected Z a342053(final int n, final int kk) {
     final int k = kk + 3;
-    final int n = Math.max(nn, 9); // hack for degree of polynomial problems
-    return achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k).coeff(nn).add(a341923(nn, kk)).divide2();
+    return achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k).coeff(n).add(a341923(n, kk)).divide2();
   }
 
 // A342053ColSeq(N,k)={(Vec(O(y*y^N) + polcoeff(AchiralStrongTriangsGf(max(0,k\2-1),(N+1)\2),k), N) + A341923ColSeq(N,k))/2}
 
-  protected Polynomial<Z> a342053ColSeq(final int nn, final int k) {
-    final int n = Math.max(nn, 9); // hack for degree of polynomial problems
-    return INNER.divide(INNER.add(achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k), a341923ColSeq(nn, k)), Z.TWO);
+  protected Polynomial<Z> a342053ColSeq(final int n, final int k) {
+    return INNER.divide(INNER.add(achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k), a341923ColSeq(n, k)), Z.TWO);
   }
 
   // A342053RowSeq(N,k)={(Vec(O(x*x^N) + polcoeff(AchiralStrongTriangsGf(N\2-1, (k+1)\2), k, y)) + A341923RowSeq(N,k))/2}

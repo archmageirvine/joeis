@@ -226,11 +226,9 @@ public class A342053 implements Sequence {
     final Polynomial<Polynomial<Z>> t1 = RING.subtract(RING.multiply(t, j), RING.monomial(INNER.x(), 1));
     final Polynomial<Polynomial<Z>> w = RING.create(Arrays.asList(INNER.negate(j.shift(3)), j.shift(1)));
     final Polynomial<Polynomial<Z>> num = RING.add(RING.multiply(t1, d, d.degree()), w);
-    System.out.println("num=" + num);
     final Polynomial<Polynomial<Z>> u = RING.create(Arrays.asList(j.shift(3), INNER.x()));
     final Polynomial<Polynomial<Z>> v = RING.create(Arrays.asList(Y2, NEG_ONE)); // todo constant
     final Polynomial<Polynomial<Z>> den = RING.add(RING.multiply(u, d, d.degree()), v);
-    System.out.println("den=" + den);
     final PolynomialRingField<Polynomial<Z>> ring = r(j.degree());
     return ring.series(num, den, num.degree());
   }
@@ -252,32 +250,20 @@ public class A342053 implements Sequence {
   }
 
   // Main method for achiral triangulations - returns bivariate g.f.
-
-// AchiralStrongTriangsGf(M,N)={
-//   my( Ds = 1 + x*MakeSquareBgfTr(D, M-1, N+M-1, x, y^2),
-//       Fi = BgfRaise(serreverse(x*(1 + x*MakeSquareBgfTr(D,M,N,x,y))), 2),
-//       J = Jgf(2*(N+M),y)
-//     );
-//   x*subst(x*BgfTrim(Q1(Ds,J,x,y), M+1, 2*N+1), x, Fi) - x^3
-//    + (x^2*subst(BgfTrim(serchop(Q2(Ds,J,x,y),1), M+1, 2*N+1), x, Fi) 
-//       + subst(x*BgfTrim(serchop(Q3(Ds,J,x,y),1), M+1, 2*N+1), x, Fi))/2
-// }
-
   Polynomial<Polynomial<Z>> achiralStrongTriangsGf(final int m, final int n) {
     final PolynomialRingField<Polynomial<Z>> ring = r(2 * n + 1);
     final Polynomial<Polynomial<Z>> ds = RING.add(RING.one(), makeSquareBgfTr(mD, m - 1, n + m - 1, 2).shift(1));
     final Polynomial<Polynomial<Z>> fi = bgfRaise(ring.reversion(RING.add(RING.x(), makeSquareBgfTr(mD, m, n, 1).shift(2)), m + 2), 2);
     final Polynomial<Z> j = jgf(2 * (n + m));
-    System.out.println("inner: " + (m + 1) + " :: " + (2 * n + 1));
     final Polynomial<Polynomial<Z>> q1 = bgfTrim(q1(ds, j), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> q2 = bgfTrim(RING.leftTruncate(q2(ds, j), 1), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> q3 = bgfTrim(RING.leftTruncate(q3(ds, j), 1), m + 1, 2 * n + 1);
     final Polynomial<Polynomial<Z>> a = RING.subtract(RING.substitute(q1.shift(1), fi, Integer.MAX_VALUE).shift(1), X3);
 //    System.out.println("Ds=" + ds);
 //    System.out.println("Fi=" + fi);
-    System.out.println("trimQ1=" + q1);
-    System.out.println("trimQ2=" + q2);
-    System.out.println("trimQ3=" + q3);
+//    System.out.println("trimQ1=" + q1);
+//    System.out.println("trimQ2=" + q2);
+//    System.out.println("trimQ3=" + q3);
 //    System.out.println("a=" + a);
     return RING.add(a, ring.divide(RING.add(
           RING.substitute(q2, fi, j.degree()).shift(2),
@@ -289,13 +275,10 @@ public class A342053 implements Sequence {
 // A342053Array(N,M)={(BgfToArray(AchiralStrongTriangsGf(M\2, (N+1)\2)/(y*x^3), M-1, N-1)~ + A341923Array(N,M))/2}
 
   protected Z a342053(final int nn, final int kk) {
-    System.out.println("n=" + nn + " k=" + kk + " " + a341923(nn, kk));
     final int k = kk + 3;
     final int n = Math.max(nn, 9); // hack for degree of polynomial problems
     return achiralStrongTriangsGf(Math.max(0, k / 2 - 1), (n + 1) / 2).coeff(k).coeff(nn).add(a341923(nn, kk)).divide2();
   }
-
-
 
 // A342053ColSeq(N,k)={(Vec(O(y*y^N) + polcoeff(AchiralStrongTriangsGf(max(0,k\2-1),(N+1)\2),k), N) + A341923ColSeq(N,k))/2}
 

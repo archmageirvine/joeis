@@ -28,4 +28,9 @@ public class A293145 extends HypergeometricSequence {
       return super.nextQ().multiply(mN).multiply(MemoryFactorial.SINGLETON.factorial(mN)).num();
     }
   }
+
+  @Override
+  public int getOffset() {
+    return 0;
+  }
 }

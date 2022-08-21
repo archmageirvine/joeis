@@ -12,6 +12,6 @@ public class A058265 extends PolynomialRootExpansionSequence {
 
   /** Construct the sequence. */
   public A058265() {
-    super(Polynomial.create(-1, -1, -1, 1), CR.ONE, CR.TWO);
+    super(1, Polynomial.create(-1, -1, -1, 1), CR.ONE, CR.TWO);
   }
 }

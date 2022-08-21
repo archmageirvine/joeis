@@ -1,4 +1,5 @@
 package irvine.oeis.a157;
+// manually 2021-09-27
 
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -14,17 +15,20 @@ import irvine.oeis.recur.GeneratingFunctionSequence;
 public class A157052 extends GeneratingFunctionSequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  
+  private int mOffset;
+
   /** Construct the sequence. */
   public A157052() {
-    this(6);
+    this(1, 6);
   }
 
   /**
    * Generic constructor with parameter
+   * @param offset first index
    * @param parm parameter "of absolute value"
    */
-  public A157052(final int parm) {
+  public A157052(final int offset, final int parm) {
+    mOffset = offset;
     final Polynomial<Z> den = RING.pow(RING.oneMinusXToTheN(1), parm + 1);
     Polynomial<Z> num = RING.zero();
     for (int i = 1; i <= parm - 1; ++i) {
@@ -43,4 +47,7 @@ public class A157052 extends GeneratingFunctionSequence {
     next();
   }
 
+  public int getOffset() {
+    return mOffset;
+  }
 }

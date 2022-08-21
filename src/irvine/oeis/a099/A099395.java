@@ -16,4 +16,9 @@ public class A099395 extends CharacteristicFunction {
     super(0, new A007283());
     next();
   }
+
+  @Override
+  public int getOffset() {
+    return 1;
+  }
 }

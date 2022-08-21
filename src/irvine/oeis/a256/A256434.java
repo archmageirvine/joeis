@@ -18,10 +18,15 @@ public class A256434 extends CharacteristicFunction {
     super(1, new A006564());
     mN = -1;
   }
-  
+
   @Override
   public Z next() {
     ++mN;
     return mN < 1 ? Z.ONE : super.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return 0;
   }
 }

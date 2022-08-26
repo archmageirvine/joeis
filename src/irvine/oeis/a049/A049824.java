@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.math.z.Z;
 
 /**
- * A049824 a(n)=number of 3's in n-th row of array T given by A049816.
+ * A049824 a(n) = number of 3's in n-th row of array T given by A049816.
  * @author Sean A. Irvine
  */
 public class A049824 extends A049816 {

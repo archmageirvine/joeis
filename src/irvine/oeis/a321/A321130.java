@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321130 Values of m (mod 25), where A317905(m) &gt;= 2.
+ * A321130 Values of m (mod 25) such that V(m) &gt;= 2, where V(m) indicates the constant convergence speed of the tetration base m.
  * @author Georg Fischer
  */
 public class A321130 extends FiniteSequence {

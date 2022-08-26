@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058790.
+ * A058791 Number of covers of an unlabeled n-set such that every point of the set is covered by exactly 4 subsets of the cover and that intersection of every 4 subsets of the cover contains at most one point.
  * @author Sean A. Irvine
  */
 public class A058791 implements Sequence {

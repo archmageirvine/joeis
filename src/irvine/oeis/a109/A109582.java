@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A109582 E.g.f.: -1/(1+x-x^3).
+ * A109582 Expansion of e.g.f.: -1/(1+x-x^3).
  * @author Georg Fischer
  */
 public class A109582 extends HolonomicRecurrence {

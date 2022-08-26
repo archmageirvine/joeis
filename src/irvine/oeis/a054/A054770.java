@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000201;
 
 /**
- * A054770 Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11 ... (A000204).
+ * A054770 Numbers that are not the sum of distinct Lucas numbers 1,3,4,7,11, ... (A000204).
  * @author Georg Fischer
  */
 public class A054770 implements Sequence {

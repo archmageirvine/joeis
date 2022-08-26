@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055773 a(n) = product(p in P_n) where P_n = {p prime, n/2 &lt; p &lt;= n }.
+ * A055773 a(n) = Product_{p in P_n} where P_n = {p prime, n/2 &lt; p &lt;= n }.
  * @author Sean A. Irvine
  */
 public class A055773 implements Sequence {

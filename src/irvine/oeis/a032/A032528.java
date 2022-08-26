@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A032528 Concentric hexagonal numbers: floor( 3*n^2 / 2 ).
+ * A032528 Concentric hexagonal numbers: floor(3*n^2/2).
  * @author Sean A. Irvine
  */
 public class A032528 extends LinearRecurrence {

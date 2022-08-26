@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058767 Numbers n such that n^2*2^n + 1 is prime.
+ * A058767 Numbers k such that k*2^(k/2) + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A058767 implements Sequence {

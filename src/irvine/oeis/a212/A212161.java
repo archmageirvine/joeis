@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A212161 Numbers 6 or 10 modulo 17.
+ * A212161 Numbers congruent to 6 or 10 mod 17.
  * @author Georg Fischer
  */
 public class A212161 extends GeneratingFunctionSequence {

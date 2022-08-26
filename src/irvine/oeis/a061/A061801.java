@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A061801 (7*6^n - 2)/5.
+ * A061801 a(n) = (7*6^n - 2)/5.
  * @author Georg Fischer
  */
 public class A061801 extends HolonomicRecurrence {

@@ -182,7 +182,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
     return res;
   }
 
-  private CycleIndex cycleIndexX(final int n, final int m) {
+  private CycleIndex computeCycleIndex(final int n, final int m) {
     final CycleIndex res = new CycleIndex("Z(S_" + m + "^(" + n + "))");
     final IntegerPartition part = new IntegerPartition(m);
     final int[] c = new int[m + 1];
@@ -213,7 +213,7 @@ public final class PalmerSymPowerCycleIndex extends MemoryFunction2<Integer, Q> 
       case 3:
         return triple(sp);
       default:
-        return cycleIndexX(n, p);
+        return computeCycleIndex(n, p);
     }
   }
 

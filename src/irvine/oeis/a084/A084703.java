@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A084703 Squares n such that 2*n+1 is also a square.
+ * A084703 Squares k such that 2*k+1 is also a square.
  * @author Sean A. Irvine
  */
 public class A084703 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000108;
 import irvine.oeis.triangle.WrappedConstantTriangle;
 
 /**
- * A172417 n*Catalan number(n) triangle.
+ * A172417 Triangle read by rows: Catalan number C(n) repeated n times.
  * @author Georg Fischer
  */
 public class A172417 extends WrappedConstantTriangle {

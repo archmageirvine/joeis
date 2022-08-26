@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A114619 2*A079291 (twice squares of Pell numbers).
+ * A114619 a(n) = 2*A079291(n) (twice squares of Pell numbers).
  * @author Georg Fischer
  */
 public class A114619 extends GeneratingFunctionSequence {

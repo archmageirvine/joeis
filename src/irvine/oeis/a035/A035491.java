@@ -5,7 +5,7 @@ import java.util.Iterator;
 import irvine.math.z.Z;
 
 /**
- * A035491 Relevant part of deck in Guy's shuffling problem (A035485), regarded as a triangular array.
+ * A035491 Relevant part of deck in Guy's shuffling problem (A035485): row n of the table lists the first 2n "cards" (numbers) after the n-th shuffle.
  * @author Sean A. Irvine
  */
 public class A035491 extends A035485 {

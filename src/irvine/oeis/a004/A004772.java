@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004772 Numbers that are not congruent to 1 mod 4.
+ * A004772 Numbers that are not congruent to 1 (mod 4).
  * @author Sean A. Irvine
  */
 public class A004772 implements Sequence {

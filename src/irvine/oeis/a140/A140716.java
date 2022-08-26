@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A140716 Blocky integers, i.e., integers n &gt; 1 such that there is a run of n consecutive integer squares the average of which is a square.
+ * A140716 Blocky integers, i.e., integers m &gt; 1 such that there is a run of m consecutive integer squares the average of which is a square.
  * @author Sean A. Irvine
  */
 public class A140716 extends LinearRecurrence {

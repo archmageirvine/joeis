@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.a000.A000578;
 
 /**
- * A186147 Rank of n^3 when {i^2: i&gt;=1} and {j^3: j&gt;=1} are jointly ranked with i^2 after j^3 when i^2=j^3.  Complement of A135674.
+ * A186147 Rank of n^3 when {i^2: i&gt;=1} and {j^3: j&gt;=1} are jointly ranked with i^2 after j^3 when i^2=j^3. Complement of A135674.
  * @author Georg Fischer
  */
 public class A186147 extends RankSequence {

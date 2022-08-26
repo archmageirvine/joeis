@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A037169 Prime(n)* Product(prime(n-k) mod prime(n-k-1)); k=0,1...n-2.
+ * A037169 a(n) = prime(n) * Product_{k=0..n-2} prime(n-k) mod prime(n-k-1).
  * @author Sean A. Irvine
  */
 public class A037169 extends A000040 {

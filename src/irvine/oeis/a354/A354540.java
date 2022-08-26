@@ -4,7 +4,7 @@ package irvine.oeis.a354;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A354540 allocated for Arman Shamsgovara.
+ * A354540 Number of decorated Dyck paths of length n ending at arbitrary levels.
  * Recurrence: 2*(n+1)*a(n) +(-3*n-5)*a(n-1) +8*(-2*n+3)*a(n-2) +(17*n-23)*a(n-3) +2*(17*n-61)*a(n-4) +(-9*n+41)*a(n-5) +20*(-n+6)*a(n-6) +5*(-n+7)*a(n-7)=0.
  * @author Georg Fischer
  */

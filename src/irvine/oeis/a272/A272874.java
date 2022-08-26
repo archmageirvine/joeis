@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A272874 Decimal expansion of the infinite nested radical sqrt(-1+sqrt(1+sqrt(-1+sqrt(1+ ... ))).
+ * A272874 Decimal expansion of the infinite nested radical sqrt(-1 + sqrt(1 + sqrt(-1 + sqrt(1 + ...))).
  * Formula: 1/6*(108+12*sqrt(177))^(1/3)-4/(108+12*sqrt(177))^(1/3)
  * @author Georg Fischer
  */

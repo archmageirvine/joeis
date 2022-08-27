@@ -14,4 +14,8 @@ public class A054586 extends MultiplicativeSequence {
   public A054586() {
     super(1, 2, (p, e) -> Z.TWO.subtract(p));
   }
+
+  public int getOffset() {
+    return 0;
+  }
 }

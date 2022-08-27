@@ -29,7 +29,7 @@ public class A023055 extends A001597 {
         }
         mDifferences.add(d);
       }
-      mA =b;
+      mA = b;
     }
     final Z res = mDifferences.pollFirst();
     mDone.add(res);

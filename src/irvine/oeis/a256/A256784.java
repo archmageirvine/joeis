@@ -12,6 +12,10 @@ public class A256784 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A256784() {
-    super(-1, CR.GAMMA.divide(CR.valueOf(12)).add(CR.ONE.divide(CR.valueOf(24)).multiply(CR.PI.multiply(CR.TWO.subtract(CR.THREE.sqrt())).add(CR.TWO.multiply(CR.THREE.sqrt().add(CR.ONE)).multiply(CR.TWO.log())).add(CR.THREE.log()).subtract(CR.FOUR.multiply(CR.THREE.sqrt()).multiply(CR.THREE.sqrt().add(CR.ONE).log())))));
+    super(0, CR.GAMMA.divide(CR.valueOf(12)).add(CR.ONE.divide(CR.valueOf(24)).multiply(CR.PI.multiply(CR.TWO.subtract(CR.THREE.sqrt()))
+      .add(CR.TWO.multiply(CR.THREE.sqrt().add(CR.ONE)).multiply(CR.TWO.log())).add(CR.THREE.log())
+      .subtract(CR.FOUR.multiply(CR.THREE.sqrt()).multiply(CR.THREE.sqrt().add(CR.ONE).log())))));
+    next();
+    next();
   }
 }

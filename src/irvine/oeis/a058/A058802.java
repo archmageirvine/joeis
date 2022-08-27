@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006966;
 
 /**
- * A058793.
+ * A058802 Vertically decomposable lattices on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A058802 extends A006966 {

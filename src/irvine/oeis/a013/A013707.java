@@ -36,6 +36,6 @@ public class A013707 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A013707() {
-    super(build5());
+    super(0, build5());
   }
 }

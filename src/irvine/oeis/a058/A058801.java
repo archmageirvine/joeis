@@ -5,7 +5,7 @@ import irvine.oeis.a051.A051573;
 import irvine.oeis.transform.InverseEulerTransform;
 
 /**
- * A058793.
+ * A058801 Number of connected vertically indecomposable partial lattices on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A058801 extends InverseEulerTransform {

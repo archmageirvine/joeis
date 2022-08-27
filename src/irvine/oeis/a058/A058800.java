@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006966;
 import irvine.oeis.a051.A051573;
 
 /**
- * A058793.
+ * A058800 Vertically indecomposable lattices on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A058800 extends PrependSequence {

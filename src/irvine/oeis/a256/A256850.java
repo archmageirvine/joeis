@@ -12,6 +12,8 @@ public class A256850 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A256850() {
-    super(-1, CR.GAMMA.subtract(CR.FIVE.log()).divide(CR.FIVE));
+    super(0, CR.GAMMA.subtract(CR.FIVE.log()).divide(CR.FIVE));
+    next();
+    next();
   }
 }

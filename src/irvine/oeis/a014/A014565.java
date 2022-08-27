@@ -11,6 +11,6 @@ public class A014565 extends BinaryToDecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A014565() {
-    super(new A005614());
+    super(0, new A005614());
   }
 }

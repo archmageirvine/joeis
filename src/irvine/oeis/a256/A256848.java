@@ -12,6 +12,10 @@ public class A256848 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A256848() {
-    super(-1, CR.GAMMA.divide(CR.FIVE).add(CR.PI.divide(CR.TEN.multiply(CR.TWO.multiply(CR.FIVE.add(CR.FIVE.sqrt())).sqrt()))).subtract(CR.PI.divide(CR.TWO.multiply(CR.TEN.multiply(CR.FIVE.add(CR.FIVE.sqrt())).sqrt()))).add(CR.FIVE.log().divide(CR.valueOf(20))).add(CR.FIVE.subtract(CR.FIVE.sqrt()).divide(CR.FIVE.add(CR.FIVE.sqrt())).log().divide(CR.FOUR.multiply(CR.FIVE.sqrt()))));
+    super(0, CR.GAMMA.divide(CR.FIVE).add(CR.PI.divide(CR.TEN.multiply(CR.TWO.multiply(CR.FIVE.add(CR.FIVE.sqrt())).sqrt())))
+      .subtract(CR.PI.divide(CR.TWO.multiply(CR.TEN.multiply(CR.FIVE.add(CR.FIVE.sqrt())).sqrt()))).add(CR.FIVE.log().divide(CR.valueOf(20)))
+      .add(CR.FIVE.subtract(CR.FIVE.sqrt()).divide(CR.FIVE.add(CR.FIVE.sqrt())).log().divide(CR.FOUR.multiply(CR.FIVE.sqrt()))));
+    next();
+    next();
   }
 }

@@ -4,9 +4,9 @@ import irvine.math.MemoryFunction1;
 import irvine.math.cr.CR;
 import irvine.math.cr.Zeta;
 import irvine.math.z.Z;
-import irvine.oeis.cons.DecimalExpansionSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.a006.A006206;
+import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
  * A005596 Decimal expansion of Artin's constant Product_{p=prime} (1-1/(p^2-p)).
@@ -28,7 +28,7 @@ public class A005596 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A005596() {
-    super(new CR() {
+    super(0, new CR() {
       @Override
       protected Z approximate(final int precision) {
         final int opPrec = -precision;

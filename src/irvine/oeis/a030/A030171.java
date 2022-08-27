@@ -17,6 +17,6 @@ public class A030171 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A030171() {
-    super(PSI.inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO).lnGamma().exp());
+    super(0, PSI.inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO).lnGamma().exp());
   }
 }

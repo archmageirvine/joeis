@@ -9,7 +9,7 @@ import irvine.oeis.a051.A051775;
  */
 public class A006042 extends A051775 {
 
-  private Z mN = Z.ZERO;
+  private Z mN = Z.NEG_ONE;
 
   @Override
   public Z next() {

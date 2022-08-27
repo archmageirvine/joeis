@@ -10,7 +10,7 @@ import irvine.oeis.a005.A005747;
  */
 public class A055066 implements Sequence {
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {

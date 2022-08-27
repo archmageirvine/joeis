@@ -16,7 +16,7 @@ public class A003319 extends MemorySequence {
   protected Z computeNext() {
     final int n = size() - 1;
     if (n <= 1) {
-      return n == -1 ? Z.ZERO : Z.ONE;
+      return Z.ONE;
     }
     Z s = Z.ZERO;
     for (int j = 1; j < n; ++j) {

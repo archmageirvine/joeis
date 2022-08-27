@@ -127,9 +127,4 @@ public class A342053Test extends TestCase {
     assertEquals("(y+2y^2+4y^3+12y^4+36y^5+110y^6+348y^7-1096y^8)x+(2y+5y^2+14y^3+44y^4+144y^5-1764y^6+1484y^7-439y^8)x^2", seq.q2(d, j).toString());
     assertEquals("(y+2y^2+8y^3+20y^4+68y^5+202y^6+680y^7)x+(3y+7y^2+33y^3+90y^4+335y^5-1196y^6+1294y^7-841y^8+988y^9+944y^10+2924y^11+2795y^12+8840y^13)x^2", seq.q3(d, j).toString());
   }
-
-  public void testAchiralStrongTriangsGf() {
-    final A342053 seq = new A342053();
-    assertTrue(seq.achiralStrongTriangsGf(3, 2).toString().startsWith("(y+y^2+3y^3+8y^4+23y^5)x^3+(y^2+2y^3+6y^4+18y^5)x^4"));
-  }
 }

@@ -10,7 +10,7 @@ import irvine.oeis.a343.A343146;
 public class A046164 extends A343146 {
 
   private static final long TARGET_STATE = 0b1000_0111_0110_0101_0100_0011_0010_0001_0000L;
-  private final boolean[] mUsed = new boolean[mTransitions.length];
+  private boolean[] mUsed = null;
   private int mN = 26;
   private long mCount = 0;
   private long mSum = 0; // Work around historical over counting
@@ -33,6 +33,14 @@ public class A046164 extends A343146 {
         search(newId, stepsRemaining - 1);
         mUsed[newId] = false;
       }
+    }
+  }
+
+  @Override
+  protected void init() {
+    super.init();
+    if (mUsed == null) {
+      mUsed = new boolean[mTransitions.length];
     }
   }
 

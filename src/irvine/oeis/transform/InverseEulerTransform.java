@@ -87,11 +87,6 @@ public class InverseEulerTransform implements Sequence {
     this(seq, skip, Z.ONE);
   }
 
-  /**
-   * Return a term.
-   *
-   * @return the next term of the transformed sequence.
-   */
   @Override
   public Z next() {
     if (mIn < mPreTerms.length) { // during prepend phase

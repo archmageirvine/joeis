@@ -16,7 +16,8 @@ public final class RuntimeUtils {
   public static boolean isTest() {
     final StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
     for (final StackTraceElement element : stackTrace) {
-      if (element.getClassName().contains("junit")) {
+      final String c = element.getClassName();
+      if (c.contains("junit") || c.contains("AbstractSequenceTest")) {
         return true;
       }
     }

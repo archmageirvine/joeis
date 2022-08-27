@@ -36,33 +36,34 @@ public class A018940 implements Sequence {
 
   private int mN = 2;
   private long mCount = 0;
-  private final int mBitsPerNode;
-  private final int mC;
-  private final int mD;
-  private final int mNodeMask;
-  private final int mOrigin;
+  private int mBitsPerNode;
+  private int mC;
+  private int mD;
+  private int mNodeMask;
+  private int mOrigin;
 
   // Minimum distance from origin + 1 (uses 0 as sentinel)
-  private final byte[] mDistance;
+  private byte[] mDistance;
   private int mDistanceDone = 0;
   // Keep track of nodes on current path in depth first search
-  private final boolean[] mVisited;
+  private boolean[] mVisited;
   // Stores the delta to step from one node to next for each neighbour of a node
-  private final int[][] mQuotientDelta;
+  private int[][] mQuotientDelta = null;
 
-  /** Construct the sequence. */
-  public A018940() {
-    final int[][][] graph = topolanNeighbourhoodToQuotientGraph(getNeighbourhoodDescription());
-    mBitsPerNode = IntegerUtils.lg(graph.length - 1);
-    final int b = mBitsPerNode + 3 * BITS_PER_COORD;
-    mC = mBitsPerNode + 2 * BITS_PER_COORD;
-    mD = mBitsPerNode + BITS_PER_COORD;
-    mNodeMask = (1 << mBitsPerNode) - 1;
-    mOrigin = mNodeToIndex.get(startNode()) + (1 << (b - 1)) + (1 << (mC - 1)) + (1 << (mD - 1));
-    mDistance = new byte[2 * mOrigin];
-    mDistance[mOrigin] = 1;
-    mVisited = new boolean[2 * mOrigin];
-    mQuotientDelta = quotientToLongDeltas(graph);
+  private void init() {
+    if (mQuotientDelta == null) {
+      final int[][][] graph = topolanNeighbourhoodToQuotientGraph(getNeighbourhoodDescription());
+      mBitsPerNode = IntegerUtils.lg(graph.length - 1);
+      final int b = mBitsPerNode + 3 * BITS_PER_COORD;
+      mC = mBitsPerNode + 2 * BITS_PER_COORD;
+      mD = mBitsPerNode + BITS_PER_COORD;
+      mNodeMask = (1 << mBitsPerNode) - 1;
+      mOrigin = mNodeToIndex.get(startNode()) + (1 << (b - 1)) + (1 << (mC - 1)) + (1 << (mD - 1));
+      mDistance = new byte[2 * mOrigin];
+      mDistance[mOrigin] = 1;
+      mVisited = new boolean[2 * mOrigin];
+      mQuotientDelta = quotientToLongDeltas(graph);
+    }
   }
 
   private static int getNodeId(final HashMap<String, Integer> nodeToIndex, final ArrayList<ArrayList<int[]>> q, final String node) {
@@ -197,6 +198,7 @@ public class A018940 implements Sequence {
 
   @Override
   public Z next() {
+    init();
     mN += step();
     if (mN >= (1 << (BITS_PER_COORD - 1))) {
       throw new UnsupportedOperationException(); // exceeds implementation limits

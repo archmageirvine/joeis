@@ -23,7 +23,7 @@ public class A000013 implements Sequence {
     // divisors below does not include 1
     for (final Z d : Jaguar.factor(n).divisors()) {
       final int ld = d.intValue();
-      sum = sum.add(Z.valueOf(LongUtils.phi(2 * ld)).shiftLeft(mN / ld));
+      sum = sum.add(Z.valueOf(LongUtils.phi(2L * ld)).shiftLeft(mN / ld));
     }
     return sum.divide(2L * mN);
   }

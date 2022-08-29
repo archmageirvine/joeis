@@ -35,4 +35,3 @@ public class A005278 extends A051953 {
     }
   }
 }
-

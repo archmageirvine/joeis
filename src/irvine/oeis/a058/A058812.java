@@ -23,7 +23,7 @@ public class A058812 implements Sequence {
     if (mA == null) {
       mA = Collections.singleton(Z.ONE);
       mB.add(Z.ONE);
-    } if (mB.isEmpty()) {
+    } else if (mB.isEmpty()) {
       final Set<Z> t = new HashSet<>();
       for (final Z u : mA) {
         t.addAll(Euler.inversePhi(u));

@@ -32,4 +32,9 @@ public class A046168 extends GeneratingFunctionSequence {
   public A046168() {
     this(8);
   }
+
+  @Override
+  public int getOffset() {
+    return 1;
+  }
 }

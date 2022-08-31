@@ -4,13 +4,13 @@ package irvine.oeis.a317;
 import irvine.oeis.a058.A058304;
 
 /**
- * A317414 Continued fraction for ternary expansion of Liouville&apos;s number interpreted in base 3 (A012245).
+ * A317413 Continued fraction for binary expansion of Liouville&apos;s number interpreted in base 2 (A092874).
  * @author Georg Fischer
  */
-public class A317414 extends A058304 {
+public class A317413 extends A058304 {
 
   /** Construct the sequence. */
-  public A317414() {
-    super(3);
+  public A317413() {
+    super(2);
   }
 }

@@ -13,7 +13,6 @@ public class A339935 extends HolonomicRecurrence {
   public A339935() {
     super(1, "[[-24],[1],[0],[-10],[0],[1]]", "1, 1, 5, 29", 0);
   }
-
   @Override
   public Z next() {
     while (true) {

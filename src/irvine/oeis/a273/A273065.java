@@ -15,6 +15,8 @@ public class A273065 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A273065() {
-    super(-1, new ZPolynomial(Polynomial.create(2, -2, 0, 1)).inverseMonotone(CR.valueOf(-2), CR.valueOf(-1)).execute(CR.ZERO).inverse());
+    super(0, new ZPolynomial(Polynomial.create(2, -2, 0, 1)).inverseMonotone(CR.valueOf(-2), CR.valueOf(-1)).execute(CR.ZERO).inverse());
+    next();
+    next();
   }
 }

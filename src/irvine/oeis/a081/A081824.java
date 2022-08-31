@@ -7,6 +7,7 @@ import irvine.oeis.cons.DecimalExpansionSequence;
 /**
  * A081824 Decimal expansion of conductance quantum in units of S.
  * @author Sean A. Irvine
+ * @author Georg Fischer
  */
 public class A081824 extends DecimalExpansionSequence {
 
@@ -15,6 +16,11 @@ public class A081824 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A081824() {
-    super(CONDUCTANCE_QUANTUM);
+    super(1, CONDUCTANCE_QUANTUM);
+  }
+
+  @Override
+  public int getOffset() {
+    return -4;
   }
 }

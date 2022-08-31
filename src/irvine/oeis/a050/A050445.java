@@ -14,6 +14,7 @@ public class A050445 extends FiniteSequence {
     super(Z.TWO,
       Z.valueOf(211),
       Z.valueOf(223),
+      Z.valueOf(2003),
       Z.valueOf(2027),
       Z.valueOf(2203),
       Z.valueOf(2221),

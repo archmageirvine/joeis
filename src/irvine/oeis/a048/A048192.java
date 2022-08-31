@@ -55,7 +55,7 @@ public class A048192 extends ParallelGenerateGraphsSequence {
     return true;
   }
 
-  private boolean isChordal(final Graph graph) {
+  protected boolean isChordal(final Graph graph) {
     final HashSet<Integer> unnumbered = new HashSet<>();
     for (int k = 1; k < graph.order(); ++k) {
       unnumbered.add(k);

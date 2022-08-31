@@ -5,7 +5,7 @@ import irvine.oeis.a026.A026905;
 import irvine.util.string.StringUtils;
 
 /**
- * A058845.
+ * A058856 Numbers k that divide the sum of the partition numbers to k.
  * @author Sean A. Irvine
  */
 public class A058856 extends A026905 {

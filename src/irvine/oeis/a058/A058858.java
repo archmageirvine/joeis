@@ -5,7 +5,7 @@ import irvine.oeis.a026.A026906;
 import irvine.util.string.StringUtils;
 
 /**
- * A058845.
+ * A058858 Numbers k that divide the sum of the first k unique partition numbers (A000009).
  * @author Sean A. Irvine
  */
 public class A058858 extends A026906 {

@@ -609,7 +609,6 @@ A007130 Number of unlabeled rooted strength 3 Eulerian graphs with n nodes
 A007131 Number of unlabeled connected strength 3 Eulerian graphs with n nodes
 A007132 Number of unlabeled connected strength 3 Eulerian graphs with n nodes, 2 of odd degree
 A007133 Number of unlabeled rooted connected strength 3 Eulerian graphs with n nodes
-A007134 Number of connected labeled chordal graphs (or triangulated graphs) with n nodes, paper hard to understand
 A007135 Number of symmetry sites in all planted 1,3-trees with 2n nodes, not in Bailey paper?
 A007136 Number of symmetry sites in all planted 3-trees with n nodes
 A007156 Spectrum of a certain 3-element algebra, lot of work for small number of terms

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A262089 a(0)=0, a(1)=1, a(n) = a(n-2)^2 + a(n-1)^3.
+ * A262089 a(0) = 0, a(1) = 1, a(n) = a(n-2)^2 + a(n-1)^3.
  * @author Georg Fischer
  */
 public class A262089 extends ConstantOrderRecurrence {

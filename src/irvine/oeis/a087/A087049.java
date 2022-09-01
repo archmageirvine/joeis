@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a013.A013929;
 
 /**
- * A123740 Characteristic sequence for numbers n>=0 that are either squares or have a square > 1 as factor.
+ * A087049 Characteristic sequence for numbers n&gt;=0 that are either squares or have a square &gt; 1 as factor.
  * @author Georg Fischer
  */
 public class A087049 extends CharacteristicFunction {

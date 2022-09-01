@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.a058.A058304;
 
 /**
- * A317661 Continued fraction for quaternary expansion of Liouville&apos;s number interpreted in base 4 (A012245).
+ * A317661 Continued fraction for quaternary expansion of Liouville's number interpreted in base 4 (A012245).
  * @author Georg Fischer
  */
 public class A317661 extends A058304 {

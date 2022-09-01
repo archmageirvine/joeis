@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.FoldedContinuedFraction;
 
 /**
- * A006465 Continued fraction for 4^5*Sum_{n>=0} 1/4^(2^n).
+ * A006465 Continued fraction for 4^5*Sum_{n&gt;=0} 1/4^(2^n).
  * @author Georg Fischer
  */
 public class A006465 extends FoldedContinuedFraction {

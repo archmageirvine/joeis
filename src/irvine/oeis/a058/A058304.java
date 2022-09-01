@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.FoldedContinuedFraction;
 
 /**
- * A058304 Continued fraction for Liouville&apos;s number (A012245).
+ * A058304 Continued fraction for Liouville's number (A012245).
  * @author Georg Fischer
  */
 public class A058304 extends FoldedContinuedFraction {

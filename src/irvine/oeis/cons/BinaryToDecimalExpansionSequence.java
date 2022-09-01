@@ -24,7 +24,7 @@ public class BinaryToDecimalExpansionSequence extends DecimalExpansionSequence {
    * @param binarySequence underlying binary sequence
    */
   public BinaryToDecimalExpansionSequence(final int offset, final Sequence binarySequence) {
-    super(new CR() {
+    super(offset, new CR() {
       private final Sequence mBinarySeq = binarySequence;
       private Z mA = Z.ZERO;
       private int mLength = 0;

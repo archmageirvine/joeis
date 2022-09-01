@@ -10,6 +10,6 @@ public class A055301 extends TriangleSelector {
 
   /** Construct the sequence. */
   public A055301() {
-    super(1, new A055300(), 1, n -> new int[] {n, 1});
+    super(2, new A055300(), 1, n -> new int[] {n - 1, 1});
   }
 }

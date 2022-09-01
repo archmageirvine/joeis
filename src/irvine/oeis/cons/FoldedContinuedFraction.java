@@ -135,7 +135,7 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
    * Test program.
    * @param argv command line arguments: m
    */
-  public static void main(String[] argv) {
+  public static void main(final String[] argv) {
     int m = 10;
     try {
       if (argv.length > 0) {

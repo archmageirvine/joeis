@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052396 (+2)-sigma perfect numbers: numbers such that (+2)sigma(n)=2*n, where if n=Product p(i)^r(i) then (+2)sigma(n)=Product (2+Sum p(i)^s(i), s(i)=1 to r(i)), e.g. (+2)sigma(6)=(2+2)*(2+3)=20.
+ * A052396 (+2)-sigma perfect numbers: numbers k such that (+2)sigma(k) = 2*k, where (+2)sigma(k) = A107758(k).
  * @author Sean A. Irvine
  */
 public class A052396 implements Sequence {

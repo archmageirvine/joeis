@@ -5,7 +5,7 @@ import irvine.oeis.a262.A262044;
 import irvine.util.string.StringUtils;
 
 /**
- * A058848 Numbers n such that the sum of the first n odd composites is palindromic.
+ * A058848 Numbers k such that the sum of the first k odd composites is palindromic.
  * @author Sean A. Irvine
  */
 public class A058848 extends A262044 {

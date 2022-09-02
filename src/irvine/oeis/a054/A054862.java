@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054862 (+2)-unitary sigma 3-multiple perfect number: (+2)usigma(n)=3*n (if n=Product p(i)^r(i) then (+2)usigma(n)=Product (2+ p(i)^r(i))).
+ * A054862 (+2)-unitary sigma 3-multiple perfect number: numbers k such that (+2)usigma(k) = 3*k, where (+2)usigma(k) = A107759(k).
  * @author Sean A. Irvine
  */
 public class A054862 implements Sequence {

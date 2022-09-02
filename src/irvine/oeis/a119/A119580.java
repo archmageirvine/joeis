@@ -5,7 +5,7 @@ package irvine.oeis.a119;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A119580 (n^2+n^3)*(binomial(2*n,n)).
+ * A119580 a(n) = (n^2+n^3)*binomial(2*n,n).
  * @author Georg Fischer
  */
 public class A119580 extends HolonomicRecurrence {

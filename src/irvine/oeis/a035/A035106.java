@@ -4,7 +4,7 @@ package irvine.oeis.a035;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A035106 1, together with numbers of the form 1 or k*(k+1) or k*(k+2), k &gt; 0.
+ * A035106 1, together with numbers of the form k*(k+1) or k*(k+2), k &gt; 0.
  * @author Georg Fischer
  */
 public class A035106 extends LinearRecurrence {

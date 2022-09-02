@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A141478 Binomial(n+2,3)*4^3.
+ * A141478 a(n) = Binomial(n+2,3)*4^3.
  * @author Sean A. Irvine
  */
 public class A141478 extends LinearRecurrence {

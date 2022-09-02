@@ -7,7 +7,7 @@ import irvine.oeis.BriefSequence;
 
 
 /**
- * A308582 Number of connected induced subgraphs in the n-odd graph.
+ * A308582 Number of (non-null) connected induced subgraphs in the n-odd graph.
  *
  * @author Georg Fischer
  */

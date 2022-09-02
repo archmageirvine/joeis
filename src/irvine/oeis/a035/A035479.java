@@ -4,7 +4,7 @@ import irvine.oeis.recur.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A035479 (-1)sigma sequence: a(n)=(-1)sigma(a(n-1)), where if x=Product p(i)^r(i), then (-1)sigma(x)=Product(-1+(Sum p(i)^s(i), s(i)=1 to r(i))).
+ * A035479 (-1)sigma sequence: a(n) = (-1)sigma(a(n-1)), where if (-1)sigma(k) = A049060(k) and a(1) = 624.
  * @author Sean A. Irvine
  */
 public class A035479 extends PrependSequence {

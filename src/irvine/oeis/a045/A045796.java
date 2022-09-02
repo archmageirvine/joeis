@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045796 Numbers m = usigma(sigma(n))/n such that usigma(sigma(n)) is divisible by n.
+ * A045796 Numbers m = usigma(sigma(k))/k such that usigma(sigma(k)) is divisible by k.
  * @author Sean A. Irvine
  */
 public class A045796 implements Sequence {

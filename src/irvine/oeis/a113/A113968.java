@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A113968 Series expansion of Farey rational polynomial based on A112627.
+ * A113968 a(0) = 0 and a(n) = (5*(-4)^n + 16*(-1)^n + 9*4^n)/240 for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A113968 extends HolonomicRecurrence {

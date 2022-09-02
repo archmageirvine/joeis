@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055128 Fixed points of the following function: if n=Product p(i)^r(i) then f(n)=Product (-2+p(i)^(r(i)-1)+p(i)^r(i)).
+ * A055128 Fixed points of the following function: if n = Product p(i)^r(i) then f(n) = Product (-2+p(i)^(r(i)-1)+p(i)^r(i)).
  * @author Sean A. Irvine
  */
 public class A055128 implements Sequence {

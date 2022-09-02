@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A104673 C(n+5,5)*C(n+10,n+0).
+ * A104673 a(n) = C(n+5,5)*C(n+10,n+0).
  * @author Georg Fischer
  */
 public class A104673 extends GeneratingFunctionSequence {

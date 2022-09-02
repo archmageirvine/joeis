@@ -3,7 +3,7 @@ package irvine.oeis.a353;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A353935 allocated for Laurence Reeves.
+ * A353935 Numbers k such that a cube cannot be divided into k subcubes.
  * @author Sean A. Irvine
  */
 public class A353935 extends FiniteSequence {

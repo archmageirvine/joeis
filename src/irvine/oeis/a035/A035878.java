@@ -4,7 +4,7 @@ package irvine.oeis.a035;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A035878 Coordination sequence for diamond structure D^+_4. (Edges defined by l_1 norm = 1.).
+ * A035878 Number of points of l_1 norm n in the "diamond" lattice D^+_4.
  * @author Georg Fischer
  */
 public class A035878 extends GeneratingFunctionSequence {

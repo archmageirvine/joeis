@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045795 Unitary-sigma sigma multiply perfect numbers n such that usigma(sigma(n)) = m*n for some integer m, where if sigma(n) = product p(i)^r(i) then usigma(sigma(n)) = product (p(i)^r(i)+1).
+ * A045795 Unitary-sigma sigma multiply perfect numbers: numbers k such that A061765(k) = m*k for some integer m.
  * @author Sean A. Irvine
  */
 public class A045795 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000244;
 
 /**
- * A249945 n! + 3^n.
+ * A249945 a(n) = n! + 3^n.
  * @author Georg Fischer
  */
 public class A249945 implements Sequence {

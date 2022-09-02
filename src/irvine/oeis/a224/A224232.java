@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A224232 a(n) = n! if n &lt;= 3, otherwise a(n) = 2*(a(n-1)+a(n-3))+a(n-2).
+ * A224232 a(n) = n! if n &lt;= 3, otherwise a(n) = 2*(a(n-1) + a(n-3)) + a(n-2).
  * @author Georg Fischer
  */
 public class A224232 extends GeneratingFunctionSequence {

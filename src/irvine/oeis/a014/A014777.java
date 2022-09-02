@@ -14,7 +14,9 @@ public class A014777 extends A000796 {
   private int mShift = 0;
   private int mNextShiftChange = 10;
 
-  {
+  /** Construct the sequence. */
+  public A014777() {
+    super(0);
     super.next(); // skip 3
   }
 

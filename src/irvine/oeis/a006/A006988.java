@@ -14,12 +14,12 @@ public class A006988 implements SequenceWithOffset {
   private long mT = 1;
   private long mN = 1;
   private Z mP = Z.ONE;
-  private final int mBase;
-  private final int mOffset;
+  private int mBase;
+  private int mOffset;
 
   /** Construct the sequence. */
   public A006988() {
-    this(1, 10);
+    this(0, 10);
   }
 
   /**

@@ -11,6 +11,14 @@ public class A001113 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A001113() {
-    super(CR.E);
+    this(1);
+  }
+
+  /**
+   * Constructor with offset.
+   * @param offset first index
+   */
+  public A001113(final int offset) {
+    super(offset, CR.E);
   }
 }

@@ -12,6 +12,11 @@ public class A052374 extends A000796 {
   private final long[] mCnts = new long[10];
   private long mMax = 0;
 
+  /** Construct the sequence. */
+  public A052374() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     final int d = super.next().intValue();

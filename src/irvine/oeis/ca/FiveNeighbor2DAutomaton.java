@@ -47,14 +47,25 @@ public class FiveNeighbor2DAutomaton implements Sequence {
   /**
    * Creates a sequence derived from the cellular automaton with the given rule
    * and seed 1 (a single ON/BLACK cell).
+   * @param offset sequence offset
+   * @param param Georg to fill in
    * @param rule rule number for this automaton (0-1023).
    */
-  public FiveNeighbor2DAutomaton(final int rule) {
+  public FiveNeighbor2DAutomaton(final int offset, final int param, final int rule) {
     mGen = 0;
     mRule = rule;
     mOldTri = new Z[CHUNK_SIZE];
     mOldTri[0] = Z.ONE; // set origin to black
     mOldTri[1] = Z.ZERO; // initial background
+  }
+
+  /**
+   * Creates a sequence derived from the cellular automaton with the given rule
+   * and seed 1 (a single ON/BLACK cell).
+   * @param rule rule number for this automaton (0-1023).
+   */
+  public FiveNeighbor2DAutomaton(final int rule) {
+    this(1, 1, rule);
   }
 
   /**

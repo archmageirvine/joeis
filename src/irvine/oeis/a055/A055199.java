@@ -13,6 +13,11 @@ public class A055199 extends A000796 {
   private long mM = 0;
 
   @Override
+  public int getOffset() {
+    return -1;
+  }
+
+  @Override
   public Z next() {
     if (mLim < 0) {
       mLim = 0;

@@ -11,6 +11,11 @@ public class A037244 extends A000796 {
 
   private boolean mFirst = true;
 
+  /** Construct the sequence. */
+  public A037244() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     if (mFirst) {

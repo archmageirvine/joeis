@@ -11,7 +11,7 @@ public class A328101 extends Cellular1DAutomaton {
 
   /** Construct the sequence. */
   public A328101() {
-    super(30);
+    super(1, 30, 1);
     next();
   }
 

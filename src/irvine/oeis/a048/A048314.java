@@ -1,5 +1,5 @@
 package irvine.oeis.a048;
-// manually
+// manually/basrunid at 2022-09-02
 
 import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
@@ -12,7 +12,9 @@ public class A048314 extends RunsBaseSequence {
 
   /** Construct the sequence. */
   public A048314() {
-    this(0, 3);
+    this(1, 3);
+    mN = -1;
+    mK = Z.valueOf(mN);
   }
 
   /** 

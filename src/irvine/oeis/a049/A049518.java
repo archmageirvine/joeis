@@ -11,6 +11,11 @@ public class A049518 extends A000796 {
 
   private Z mA = super.next();
 
+  /** Construct the sequence. */
+  public A049518() {
+    super(0);
+  }
+
   protected int numberOfOccurrences() {
     return 2;
   }

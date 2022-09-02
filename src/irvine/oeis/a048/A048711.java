@@ -11,7 +11,7 @@ public class A048711 extends Cellular1DAutomaton {
 
   /** Construct the sequence. */
   public A048711() {
-    super(90, 7);
+    super(1, 90, 7);
   }
 
   @Override

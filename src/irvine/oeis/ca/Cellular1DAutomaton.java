@@ -68,18 +68,18 @@ public class Cellular1DAutomaton implements Sequence {
    * @param rule rule number for this automaton (0-255).
    */
   public Cellular1DAutomaton(final int rule) {
-    this(rule, 1);
+    this(1, rule, 1);
   }
 
   /**
    * Creates a sequence derived from the cellular automaton with the given rule.
+   * @param offset offset for the sequence.
    * @param rule rule number for this automaton (0-255).
    * @param seed start value, the 1-bits define the initial ON/BLACK cells.
    * A value &gt; 1 works for even rules only and must not have more bits than <code>BLOCK_LEN</code>.
-   * It is only used in and tested with A048711-14. 
-   
+   * It is only used in and tested with A048711-14.
    */
-  public Cellular1DAutomaton(final int rule, final int seed) {
+  public Cellular1DAutomaton(final int offset, final int rule, final int seed) {
     mBlockMask = (1 << BLOCK_LEN) - 1;
     mLowMask = 1;
     mHighMask = 1 << (BLOCK_LEN - 1);

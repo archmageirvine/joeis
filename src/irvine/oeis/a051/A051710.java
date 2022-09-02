@@ -12,6 +12,11 @@ public class A051710 extends A000796 {
   private boolean mFirst = true;
   private Z mA = Z.ZERO;
 
+  /** Construct the sequence. */
+  public A051710() {
+    super(0);
+  }
+
   @Override
   public Z next() {
     if (mFirst) {

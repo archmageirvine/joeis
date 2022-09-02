@@ -16,7 +16,7 @@ public class A067934 implements SequenceWithOffset {
 
   /** Construct the sequence. */
   public A067934() {
-    this(0, 1);
+    this(1, 1);
   }
 
   /**
@@ -40,7 +40,6 @@ public class A067934 implements SequenceWithOffset {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      ;
       if (mRepN.mod(mN).equals(mRepp.mod(mN))) {
         mRepN = mRepN.multiply(10).add(1);
         return mN;

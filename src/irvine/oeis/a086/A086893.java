@@ -12,7 +12,7 @@ public class A086893 extends FiveNeighbor2DAutomaton {
 
   /** Construct the sequence. */
   public A086893() {
-    super(1, 1, 678);
+    super(678);
   }
 
   @Override

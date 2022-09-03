@@ -11,6 +11,6 @@ public class A169707 extends FiveNeighbor2DAutomaton {
 
   /** Construct the sequence. */
   public A169707() {
-    super(1, 1, 750);
+    super(750);
   }
 }

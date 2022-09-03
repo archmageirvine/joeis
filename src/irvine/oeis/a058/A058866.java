@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058866.
+ * A058866 Number of 2-trees rooted at an edge.
  * @author Sean A. Irvine
  */
 public class A058866 implements Sequence {

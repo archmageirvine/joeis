@@ -17,20 +17,25 @@ public class A058865 implements Sequence {
 
   private final MemoryFunctionInt2<Z> mBigA = new MemoryFunctionInt2<>() {
     @Override
-    protected Z compute(final int n, final int m) {
-      if (n == 1) {
-        return m == 0 ? Z.ONE : Z.ZERO;
-        //return Z.ONE;
-      }
+    protected Z compute(final int n, final int q) {
+//      if (n == 1) {
+//        return q >= 0 ? Z.ONE : Z.ZERO;
+//        //return Z.ONE;
+//      }
 //      if (n == 2) {
-//        return m == 1 ? Z.TWO : Z.ZERO;
+//        return q == 1 ? Z.TWO : Z.ZERO;
 //      }
       Z sum = Z.ZERO;
-      for (int l = 0; l <= m; ++l) {
-        final int j = l;
-        sum = sum.add(Integers.SINGLETON.sum(1, n - 1, k -> Binomial.binomial(n, k).multiply(k).multiply(mLittleA.get(k, j)).multiply(mBigA.get(n - k, m - j))));
+      for (int l = 0; l <= q; ++l) {
+//        final int j = l;
+//        sum = sum.add(Integers.SINGLETON.sum(1, n - 1, k -> Binomial.binomial(n, k).multiply(k).multiply(mLittleA.get(k, j)).multiply(mBigA.get(n - k, q - j))));
+        Z s = Z.ZERO;
+        for (int k = 1; k <= n - 1; ++k) {
+          s = s.add(Binomial.binomial(n, k).multiply(k).multiply(mLittleA.get(k, l)).multiply(mBigA.get(n - k, q - l)));
+        }
+        sum = sum.add(s);
       }
-      return sum.divide(n).add(mLittleA.get(n, m));
+      return mLittleA.get(n, q).add(sum.divide(n));
     }
   };
 
@@ -38,24 +43,27 @@ public class A058865 implements Sequence {
     @Override
     protected Z compute(final int n, final int m) {
       System.out.println("Computing a(" + n + "," + m + ")");
+      if (n == 2 && m == 1) {
+        return Z.ONE;
+      }
+      if (m == n - 1) {
+        return Z.valueOf(n);
+      }
       if (n <= 2) {
         if (n == 1) {
           return m == 0 ? Z.ONE : Z.ZERO;
         }
-        return n == 2 && m == 1 ? Z.ONE : Z.ZERO;
+        //return n == 2 && m == 1 ? Z.ONE : Z.ZERO;
       }
 //    if (m > n * (n - 1) / 2) {
 //      return Z.ZERO;
 //    }
-      if (m == n - 1) {
-        return Z.valueOf(n);
-      }
       if (m == n * (n - 1) / 2) {
         return Z.ONE;
       }
       return Integers.SINGLETON.sum(1, n - 2, k -> {
         final int t = m - k * (k - 1) / 2 - k * (n - k);
-        return t <= 0 ? Z.ZERO : Binomial.binomial(n, k).multiply(mBigA.get(n - k, t).subtract(get(n - k, t)));
+        return t <= 0 ? Z.ZERO : Binomial.binomial(n, k).multiply(mBigA.get(n - k, t).subtract(mLittleA.get(n - k, t)));
       });
     }
   };
@@ -86,14 +94,13 @@ a(n,q) = Sum_{k=1..n-2}binomial(n,k)*(A(n-k, q - k(k-1)/2 - k(n-k)) - a(n-k, q -
       }
       System.out.println();
     }
+    return null;
 
-
-    if (++mM > mN * (mN - 1) / 2) {
-      ++mN;
-      mM = 1;
-    }
-    return mLittleA.get(mN, mM);
+//    if (++mM > mN * (mN - 1) / 2) {
+//      ++mN;
+//      mM = 1;
+//    }
+//    return mLittleA.get(mN, mM);
   }
-
 }
 

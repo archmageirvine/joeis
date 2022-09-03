@@ -17,6 +17,9 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
   protected int mRowNo; // number of current row in coordinator triangle, starting with 0
   protected int mColNo; // number of current column in coordinator triangle 0 to f*d
   protected Z[] mPoly; // numerator or denominator coefficients of the generating function in the current triangle row
+  private final String mLatticeType;
+  private final int mDimension;
+  private boolean mIsConfigured = false;
 
   /**
    * Construct the sequence. by reducing it to an ordinary generating function.
@@ -27,10 +30,11 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
    */
   public LatticeCoordinationSequence(final String latticeType, final int d) {
     super();
+    mLatticeType = latticeType;
+    mDimension = d;
     mFactor = 1; // default; set to 2 for D^+ in configure()
-    configure(latticeType, d);
     mRowNo = -1;
-    mColNo = mFactor * mRowNo + 1; // next call of <code>nextTriangle</code> should create and fill next row
+    mColNo = 0;
   }
 
   /**
@@ -231,5 +235,15 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
       }
     }
     return result;
+  }
+
+  @Override
+  public Z next() {
+    if (!mIsConfigured) {
+      mIsConfigured = true;
+      configure(mLatticeType, mDimension);
+      mColNo = mFactor * mRowNo + 1; // next call of <code>nextTriangle</code> should create and fill next row
+    }
+    return super.next();
   }
 }

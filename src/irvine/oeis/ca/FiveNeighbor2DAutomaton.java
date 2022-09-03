@@ -1,7 +1,7 @@
 package irvine.oeis.ca;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Data structure and methods for the evaluation of a 2D 5-Neighbor Outer Totalistic Cellular Automaton
@@ -28,10 +28,12 @@ import irvine.oeis.Sequence;
  * <li>it was set   and 4 neighbors were set</li>
  * </ul>
  */
-public class FiveNeighbor2DAutomaton implements Sequence {
+public class FiveNeighbor2DAutomaton implements SequenceWithOffset {
 
   /** Allocate rows in multiples of this number */
   protected static final int CHUNK_SIZE = 8;
+  /** First index */
+  protected int mOffset;
   /** Rule number 0..1023, cf. ANKOS pp. 170-179 */
   protected int mRule;
   /**
@@ -47,11 +49,20 @@ public class FiveNeighbor2DAutomaton implements Sequence {
   /**
    * Creates a sequence derived from the cellular automaton with the given rule
    * and seed 1 (a single ON/BLACK cell).
-   * @param offset sequence offset
-   * @param param Georg to fill in
    * @param rule rule number for this automaton (0-1023).
    */
-  public FiveNeighbor2DAutomaton(final int offset, final int param, final int rule) {
+  public FiveNeighbor2DAutomaton(final int rule) {
+    this(0, rule);
+  }
+
+  /**
+   * Creates a sequence derived from the cellular automaton with the given rule
+   * and seed 1 (a single ON/BLACK cell).
+   * @param offset first index
+   * @param rule rule number for this automaton (0-1023).
+   */
+  public FiveNeighbor2DAutomaton(final int offset, final int rule) {
+    mOffset = offset;
     mGen = 0;
     mRule = rule;
     mOldTri = new Z[CHUNK_SIZE];
@@ -60,20 +71,19 @@ public class FiveNeighbor2DAutomaton implements Sequence {
   }
 
   /**
-   * Creates a sequence derived from the cellular automaton with the given rule
-   * and seed 1 (a single ON/BLACK cell).
-   * @param rule rule number for this automaton (0-1023).
-   */
-  public FiveNeighbor2DAutomaton(final int rule) {
-    this(1, 1, rule);
-  }
-
-  /**
    * Set the debugging level.
    * @param level code for the debugging level: 0 = none, 1 = some, 2 = more.
    */
   public static void setDebug(final int level) {
     sDebug = level;
+  }
+
+  /**
+   * Get the offset.
+   * @return first index (default: 0)
+   */
+  public int getOffset() {
+    return mOffset;
   }
 
   /**

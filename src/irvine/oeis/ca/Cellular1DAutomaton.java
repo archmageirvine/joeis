@@ -3,7 +3,7 @@ package irvine.oeis.ca;
 import java.util.Iterator;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Data structure and methods for the evaluation of an elementary, one-dimensional cellular automaton
@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
  * The rows grow by one bit on each side. If the arrays become too small, they are expanded.
  * @author Georg Fischer
  */
-public class Cellular1DAutomaton implements Sequence {
+public class Cellular1DAutomaton implements SequenceWithOffset {
 
   /** Allocate rows in multiples of this number */
   protected static final int CHUNK_SIZE = 256;
@@ -42,6 +42,8 @@ public class Cellular1DAutomaton implements Sequence {
 
   /** Debugging mode: 0=none, 1=some, 2=more. */
   static int sDebug;
+  /** First index */
+  protected int mOffset;
   /** Buffer for the bits of generation n */
   protected int[] mOldRow;
   /** Buffer for the bits of generation n+1 */
@@ -68,18 +70,32 @@ public class Cellular1DAutomaton implements Sequence {
    * @param rule rule number for this automaton (0-255).
    */
   public Cellular1DAutomaton(final int rule) {
-    this(1, rule, 1);
+    this(0, rule, 1);
   }
 
   /**
    * Creates a sequence derived from the cellular automaton with the given rule.
-   * @param offset offset for the sequence.
    * @param rule rule number for this automaton (0-255).
    * @param seed start value, the 1-bits define the initial ON/BLACK cells.
    * A value &gt; 1 works for even rules only and must not have more bits than <code>BLOCK_LEN</code>.
-   * It is only used in and tested with A048711-14.
+   * It is only used in and tested with A048711-14. 
+   
+   */
+  public Cellular1DAutomaton(final int rule, final int seed) {
+    this(0, rule, seed);
+  }
+
+  /**
+   * Creates a sequence derived from the cellular automaton with the given rule.
+   * @param offset first index
+   * @param rule rule number for this automaton (0-255).
+   * @param seed start value, the 1-bits define the initial ON/BLACK cells.
+   * A value &gt; 1 works for even rules only and must not have more bits than <code>BLOCK_LEN</code>.
+   * It is only used in and tested with A048711-14. 
+   
    */
   public Cellular1DAutomaton(final int offset, final int rule, final int seed) {
+    mOffset = offset;
     mBlockMask = (1 << BLOCK_LEN) - 1;
     mLowMask = 1;
     mHighMask = 1 << (BLOCK_LEN - 1);
@@ -108,6 +124,14 @@ public class Cellular1DAutomaton implements Sequence {
    */
   public static void setDebug(final int level) {
     sDebug = level;
+  }
+
+  /**
+   * Get the offset.
+   * @return first index (default: 0)
+   */
+  public int getOffset() {
+    return mOffset;
   }
 
   /**

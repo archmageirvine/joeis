@@ -12,95 +12,47 @@ import irvine.oeis.Sequence;
  */
 public class A058865 implements Sequence {
 
+  // Thanks to M. F. Hasler
+
   private int mN = 1;
   private int mM = 1;
 
+  // A(n,q) = a(n,q) + (1/n)*Sum_{k = 1..n-1} k*binomial(n,k)*Sum_{l = k-1..min(k(k-1)/2, q)} a(k,l)*A(n-k,q-l). [Simplified by M. F. Hasler, Sep 03 2022]
   private final MemoryFunctionInt2<Z> mBigA = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int q) {
-//      if (n == 1) {
-//        return q >= 0 ? Z.ONE : Z.ZERO;
-//        //return Z.ONE;
-//      }
-//      if (n == 2) {
-//        return q == 1 ? Z.TWO : Z.ZERO;
-//      }
       Z sum = Z.ZERO;
-      for (int l = 0; l <= q; ++l) {
-//        final int j = l;
-//        sum = sum.add(Integers.SINGLETON.sum(1, n - 1, k -> Binomial.binomial(n, k).multiply(k).multiply(mLittleA.get(k, j)).multiply(mBigA.get(n - k, q - j))));
-        Z s = Z.ZERO;
-        for (int k = 1; k <= n - 1; ++k) {
-          s = s.add(Binomial.binomial(n, k).multiply(k).multiply(mLittleA.get(k, l)).multiply(mBigA.get(n - k, q - l)));
-        }
-        sum = sum.add(s);
+      for (int k = 1; k <= n - 1; ++k) {
+        final int kk = k;
+        final Z s = Integers.SINGLETON.sum(k - 1, Math.min(k * (k - 1) / 2, q), l -> mLittleA.get(kk, l).multiply(mBigA.get(n - kk, q - l)));
+        sum = sum.add(s.multiply(Binomial.binomial(n, k).multiply(k)));
       }
       return mLittleA.get(n, q).add(sum.divide(n));
     }
   };
 
-  private final MemoryFunctionInt2<Z> mLittleA = new MemoryFunctionInt2<Z>() {
+  // a(n,q) = Sum_{k=1..n-2} binomial(n,k)*(A(n-k, q - k(k-1)/2 - k(n-k)) - a(n-k, q - k(k-1)/2 - k(n-k))) for q < n(n-1)/2 =: T(n), a(n, T(n)) = 1. [Corrected by M. F. Hasler, Sep 03 2022]
+  private final MemoryFunctionInt2<Z> mLittleA = new MemoryFunctionInt2<>() {
     @Override
     protected Z compute(final int n, final int m) {
-      System.out.println("Computing a(" + n + "," + m + ")");
-      if (n == 2 && m == 1) {
-        return Z.ONE;
-      }
-      if (m == n - 1) {
-        return Z.valueOf(n);
-      }
-      if (n <= 2) {
-        if (n == 1) {
-          return m == 0 ? Z.ONE : Z.ZERO;
-        }
-        //return n == 2 && m == 1 ? Z.ONE : Z.ZERO;
-      }
-//    if (m > n * (n - 1) / 2) {
-//      return Z.ZERO;
-//    }
-      if (m == n * (n - 1) / 2) {
+      final int tn = n * (n - 1) / 2;
+      if (m == tn) {
         return Z.ONE;
       }
       return Integers.SINGLETON.sum(1, n - 2, k -> {
         final int t = m - k * (k - 1) / 2 - k * (n - k);
-        return t <= 0 ? Z.ZERO : Binomial.binomial(n, k).multiply(mBigA.get(n - k, t).subtract(mLittleA.get(n - k, t)));
+        return Binomial.binomial(n, k).multiply(mBigA.get(n - k, t).subtract(mLittleA.get(n - k, t)));
       });
     }
   };
 
-  /*
-
-Let A(n,k) be the number if the graphs need not be connected; then
-
-A(n,q) = a(n,q) + Sum_{l=0..q} (1/n)(Sum_{k=1..n-1} k*binomial(n,k)*a(k,l)*A(n-k,q-l)).
-
-a(n,q) = Sum_{k=1..n-2}binomial(n,k)*(A(n-k, q - k(k-1)/2 - k(n-k)) - a(n-k, q - k(k-1)/2 - k(n-k)));
-
-   */
-
   @Override
   public Z next() {
-    System.out.println("A");
-    for (int n = 2; n <= 6; ++n) {
-      for (int k = 1; k <= n * (n - 1) / 2; ++k) {
-        System.out.print(mBigA.get(n, k) + " ");
-      }
-      System.out.println();
+    if (++mM > mN * (mN - 1) / 2) {
+      ++mN;
+      mM = 1;
     }
-    System.out.println("a");
-    for (int n = 2; n <= 6; ++n) {
-      for (int k = 1; k <= n * (n - 1) / 2; ++k) {
-        System.out.print(mLittleA.get(n, k) + " ");
-      }
-      System.out.println();
-    }
-    return null;
-
-//    if (++mM > mN * (mN - 1) / 2) {
-//      ++mN;
-//      mM = 1;
-//    }
-//    return mLittleA.get(mN, mM);
+    return mLittleA.get(mN, mM);
   }
 }
 

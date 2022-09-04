@@ -16,4 +16,9 @@ public class A019459 extends CoordinationSequence {
       new long[] {1, 2, 3, 4, 6, 6, 6, 7, 4, 5, 4, 2, 2, 0, 0, 0, -1, 1},
       new int[] {1, 2, 3, 4, 6, 9});
   }
+
+  @Override
+  public int getOffset() {
+    return 1;
+  }
 }

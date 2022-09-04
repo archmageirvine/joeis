@@ -57,7 +57,7 @@ import irvine.math.z.Z;
  * corresponding powers of the conjugacy class.
  * <br>
  */
-public class McKayThompsonSequence implements Sequence {
+public class McKayThompsonSequence implements SequenceWithOffset {
 
   /**
    * Debugging mode: 0 = none, 1 = some (=early print), 2 = more.
@@ -85,23 +85,20 @@ public class McKayThompsonSequence implements Sequence {
   protected int mN;
 
   /**
-   * Constructor for a specific McKay-Thompson sequence..
-   * @param selectedClasses class codes from the ATLAS,
-   * for example "1A", "119B", or combined like "39CD"
-   * @param prefix values for a(-1) and a(0)
+   * First index.
    */
-  public McKayThompsonSequence(final String[] selectedClasses, final long[] prefix) {
-    this(selectedClasses, prefix, McKayThompsonTables.STEP0_MAP.get(selectedClasses[0]));
-  }
+  protected int mOffset;
 
   /**
    * Complete constructor with array of class codes, prefix and number of zeroes to skip + 1.
+   * @param offset first index
    * @param selectedClasses class codes from the ATLAS,
    * for example "1A", "119B", or combined like "39CD"
    * @param prefix values for a(-1) and a(0)
    * @param step0 number of interleaved zeroes to be skipped + 1
    */
-  protected McKayThompsonSequence(final String[] selectedClasses, final long[] prefix, final int step0) {
+  protected McKayThompsonSequence(final int offset, final String[] selectedClasses, final long[] prefix, final int step0) {
+    mOffset = offset;
     mSelectedClasses = selectedClasses;
     mPrefix = new long[prefix.length];
     System.arraycopy(prefix, 0, mPrefix, 0, prefix.length);
@@ -114,6 +111,38 @@ public class McKayThompsonSequence implements Sequence {
   }
 
   /**
+   * Constructor with array of class codes, prefix and number of zeroes to skip + 1.
+   * @param selectedClasses class codes from the ATLAS,
+   * for example "1A", "119B", or combined like "39CD"
+   * @param prefix values for a(-1) and a(0)
+   * @param step0 number of interleaved zeroes to be skipped + 1
+   */
+  protected McKayThompsonSequence(final String[] selectedClasses, final long[] prefix, final int step0) {
+    this(-1, selectedClasses, prefix, step0);
+  }
+
+  /**
+   * Constructor for a specific McKay-Thompson sequence..
+   * @param selectedClasses class codes from the ATLAS,
+   * for example "1A", "119B", or combined like "39CD"
+   * @param prefix values for a(-1) and a(0)
+   */
+  public McKayThompsonSequence(final String[] selectedClasses, final long[] prefix) {
+    this(-1, selectedClasses, prefix, McKayThompsonTables.STEP0_MAP.get(selectedClasses[0]));
+  }
+
+  /**
+   * Constructor for a specific McKay-Thompson sequence.
+   * @param offset first index
+   * @param selectedClasses class codes from the ATLAS,
+   * for example "1A", "119B", or combined like "39CD"
+   * @param prefix values for a(-1) and a(0)
+   */
+  public McKayThompsonSequence(final int offset, final String[] selectedClasses, final long[] prefix) {
+    this(offset, selectedClasses, prefix, McKayThompsonTables.STEP0_MAP.get(selectedClasses[0]));
+  }
+
+  /**
    * Constructor with a single class code and prefix,
    * for generator call code <code>"mckay"</code>
    * @param classCode class code from the ATLAS,
@@ -122,6 +151,18 @@ public class McKayThompsonSequence implements Sequence {
    */
   public McKayThompsonSequence(final String classCode, final long[] prefix) {
     this(transitiveClosure(classCode), prefix);
+  }
+
+  /**
+   * Constructor with a single class code and prefix,
+   * for generator call code <code>"mckay"</code>
+   * @param offset first index
+   * @param classCode class code from the ATLAS,
+   * for example "1A", "119B", or combined like "39CD"
+   * @param prefix values for a(-1) and a(0)
+   */
+  public McKayThompsonSequence(final int offset, final String classCode, final long[] prefix) {
+    this(offset, transitiveClosure(classCode), prefix);
   }
 
   /**
@@ -146,6 +187,15 @@ public class McKayThompsonSequence implements Sequence {
    * Must be lower than the length of the power and boot coefficient lists
    */
   public static final int MAX_FABER = 7;
+
+  /**
+   * Get the offset.
+   * @return first index
+   */
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
 
   /**
    * Get a list of class codes for powers

@@ -12,7 +12,7 @@ public class A138806 extends GramMatrixThetaSeries {
 
   /** Construct the sequence. */
   public A138806() {
-    super(new long[][]{{1, 1}, {0, 7}});
+    super(1, new long[][] {{1, 1}, {0, 7}}, 1);
     super.next(); // skip leading 0
   }
 

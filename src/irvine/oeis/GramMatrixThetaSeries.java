@@ -13,7 +13,7 @@ import irvine.util.string.StringUtils;
  * parameters are small enough to work in longs.
  * @author Sean A. Irvine
  */
-public class GramMatrixThetaSeries implements Sequence {
+public class GramMatrixThetaSeries implements SequenceWithOffset {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final long[][] mMatrix;
@@ -23,13 +23,16 @@ public class GramMatrixThetaSeries implements Sequence {
   private long mN = -1; // Sequence value to compute
   private long mM = -1; // Size of hypercube searched so far
   private long mLastMin = 0; // Shortest vector in search of bound mM
+  private int mOffset; // first index
 
   /**
    * Construct a new theta series for the specified Gram matrix
+   * @param offset
    * @param matrix Gram matrix
    * @param step step size
    */
-  protected GramMatrixThetaSeries(final long[][] matrix, final long step) {
+  protected GramMatrixThetaSeries(final int offset, final long[][] matrix, final long step) {
+    mOffset = offset;
     mMatrix = matrix;
     mVec = new long[matrix.length];
     mStep = step;
@@ -38,9 +41,27 @@ public class GramMatrixThetaSeries implements Sequence {
   /**
    * Construct a new theta series for the specified Gram matrix
    * @param matrix Gram matrix
+   * @param step step size
+   */
+  protected GramMatrixThetaSeries(final long[][] matrix, final long step) {
+    this(0, matrix, step);
+  }
+
+  /**
+   * Construct a new theta series for the specified Gram matrix
+   * @param matrix Gram matrix
    */
   protected GramMatrixThetaSeries(final long[][] matrix) {
-    this(matrix, 1);
+    this(0, matrix, 1);
+  }
+
+  /**
+   * Get the offset.
+   * @return first index
+   */
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   private boolean bump() {

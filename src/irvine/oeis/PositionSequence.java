@@ -12,6 +12,7 @@ public class PositionSequence implements SequenceWithOffset {
   protected final Sequence mSeq; // the underlying sequence
   protected Z mValue; // return the positions of this number
   protected long mN; // current index
+  protected int mOffset; // first index
 
   /**
    * Creates a sequence of the positions where a digit occurs in another sequence.
@@ -20,6 +21,18 @@ public class PositionSequence implements SequenceWithOffset {
    * @param value the positions of this number are returned
    */
   public PositionSequence(final int start, final Sequence seq, final long value) {
+    this(1, start, seq, value);
+  }
+
+  /**
+   * Creates a sequence of the positions where a digit occurs in another sequence.
+   * @param offset first idnex
+   * @param seq underlying sequence
+   * @param start offset of <code>seq</code>
+   * @param value the positions of this number are returned
+   */
+  public PositionSequence(final int offset, final int start, final Sequence seq, final long value) {
+    mOffset = offset;
     mSeq = seq;
     mValue = Z.valueOf(value);
     mN = start - 1;
@@ -37,7 +50,7 @@ public class PositionSequence implements SequenceWithOffset {
 
   @Override
   public int getOffset() {
-    return 1; // is a list
+    return mOffset;
   }
 
   @Override

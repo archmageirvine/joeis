@@ -10,6 +10,6 @@ public class A046696 extends PositionSequence {
 
   /** Construct the sequence. */
   public A046696() {
-    super(1, new A046695(), 0);
+    super(0, 1, new A046695(), 0);
   }
 }

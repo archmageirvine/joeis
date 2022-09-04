@@ -6,12 +6,13 @@ import irvine.math.z.Z;
  * Union between two sequences. Assumes input sequences are sorted.
  * @author Sean A. Irvine
  */
-public class UnionSequence implements Sequence {
+public class UnionSequence implements SequenceWithOffset {
 
   private final Sequence mSeqA;
   private final Sequence mSeqB;
   private Z mNextA;
   private Z mNextB;
+  protected int mOffset = 1;
 
   /**
    * Union of a pair of sequences.
@@ -35,6 +36,11 @@ public class UnionSequence implements Sequence {
     mSeqB = createUnion(b);
     mNextA = mSeqA.next();
     mNextB = mSeqB.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

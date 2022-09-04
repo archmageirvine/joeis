@@ -6,12 +6,13 @@ import irvine.math.z.Z;
  * Difference between two sequences.
  * @author Sean A. Irvine
  */
-public class SetDifferenceSequence implements Sequence {
+public class SetDifferenceSequence implements SequenceWithOffset {
 
   private final Sequence mSeqA;
   private final Sequence mSeqB;
   private Z mNextA;
   private Z mNextB;
+  protected int mOffset = 1;
 
   /**
    * Difference of a pair of sequences.
@@ -23,6 +24,11 @@ public class SetDifferenceSequence implements Sequence {
     mSeqB = b;
     mNextA = mSeqA.next();
     mNextB = mSeqB.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

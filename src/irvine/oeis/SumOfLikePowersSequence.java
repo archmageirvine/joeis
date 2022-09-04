@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  * Generate terms for a sequence of like powers.
  * @author Sean A. Irvine
  */
-public class SumOfLikePowersSequence implements Sequence {
+public class SumOfLikePowersSequence implements SequenceWithOffset {
 
   // We maintain a sorted set, mA, of terms yet to be output.   We also keep
   // track of the largest numbers so far considered as a base for the power,
@@ -28,6 +28,7 @@ public class SumOfLikePowersSequence implements Sequence {
   private final int mMaxTerms;
   private final int mAdd;
   private int mM = 1;
+  protected int mOffset = 1;
 
   /**
    * Construct the sequence.
@@ -53,6 +54,11 @@ public class SumOfLikePowersSequence implements Sequence {
    */
   protected SumOfLikePowersSequence(final int power, final int terms) {
     this(power, terms, terms, false);
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   /**

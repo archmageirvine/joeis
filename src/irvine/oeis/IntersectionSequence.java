@@ -6,12 +6,13 @@ import irvine.math.z.Z;
  * Intersection between two sequences.
  * @author Sean A. Irvine
  */
-public class IntersectionSequence implements Sequence {
+public class IntersectionSequence implements SequenceWithOffset {
 
   private final Sequence mSeqA;
   private final Sequence mSeqB;
   private Z mNextA;
   private Z mNextB;
+  protected int mOffset = 1;
 
   /**
    * Intersection of a pair of sequences.
@@ -33,6 +34,11 @@ public class IntersectionSequence implements Sequence {
    */
   public IntersectionSequence(final Sequence a, final Sequence b, final Sequence c) {
     this(new IntersectionSequence(a, b), c);
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

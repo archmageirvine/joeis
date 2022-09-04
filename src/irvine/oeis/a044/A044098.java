@@ -3,7 +3,7 @@ package irvine.oeis.a044;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A044098 Numbers k such that the string 4,1 occurs in the base 5 representation of k but not of k-1.

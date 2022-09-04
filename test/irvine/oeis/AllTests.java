@@ -1,5 +1,7 @@
 package irvine.oeis;
 
+import irvine.oeis.base.RunsBaseSequenceTest;
+import irvine.oeis.base.SquareDigitsSequenceTest;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
@@ -16,8 +18,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FiniteSequenceTest.class);
     suite.addTestSuite(HolonomicRecurrenceTest.class);
     suite.addTestSuite(NegativePositiveSequenceTest.class);
-    suite.addTestSuite(RunsBaseSequenceTest.class);
-    suite.addTestSuite(SquareDigitsSequenceTest.class);
     suite.addTestSuite(WalkCubeSequenceTest.class);
     suite.addTest(SequenceTests.suite());
     suite.addTest(irvine.oeis.a001.AllTests.suite());
@@ -45,6 +45,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.oeis.a307.AllTests.suite());
     suite.addTest(irvine.oeis.a308.AllTests.suite());
     suite.addTest(irvine.oeis.a342.AllTests.suite());
+    suite.addTest(irvine.oeis.base.AllTests.suite());
     suite.addTest(irvine.oeis.cons.AllTests.suite());
     suite.addTest(irvine.oeis.transform.AllTests.suite());
     return suite;

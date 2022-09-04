@@ -1,7 +1,7 @@
 package irvine.oeis.a116;
 // manually morfps at 2021-09-20
 
-import irvine.oeis.MorphismFixedPointSequence;
+import irvine.oeis.base.MorphismFixedPointSequence;
 
 
 /**

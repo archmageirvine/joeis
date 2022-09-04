@@ -3,7 +3,7 @@ package irvine.oeis.a044;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A044622 Numbers n such that string 6,6 occurs in the base 8 representation of n but not of n+1.

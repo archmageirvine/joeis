@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A043874 Numbers k such that the number of runs in the base-4 representation of k is congruent to 7 (mod 10).

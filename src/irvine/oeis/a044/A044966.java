@@ -3,7 +3,7 @@ package irvine.oeis.a044;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A044966 Numbers having no 0's and one 1 in base 3.

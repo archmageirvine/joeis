@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A039316 Numbers whose base-7 representation has the same nonzero number of 1's and 4's.

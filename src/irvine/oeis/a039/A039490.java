@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A039490 Numbers whose base-11 representation has the same nonzero number of 8's and 9's.

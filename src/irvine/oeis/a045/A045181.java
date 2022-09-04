@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A045181 Numbers whose base-5 representation contains two 0's and one 2.

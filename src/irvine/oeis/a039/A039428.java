@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A039428 Numbers whose base-10 representation has the same nonzero number of 5's and 6's.

@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.DigitSequence;
 import irvine.oeis.a000.A000217;
+import irvine.oeis.base.DigitSequence;
 
 /**
  * A034004 Successive decimal digits of triangular numbers.

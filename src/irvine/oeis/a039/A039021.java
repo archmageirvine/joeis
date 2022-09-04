@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A039021 Numbers whose base-6 representation has the same number of 1's and 3's.

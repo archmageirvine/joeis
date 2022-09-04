@@ -2,7 +2,7 @@ package irvine.oeis.a048;
 // manually/basrunid at 2022-09-02
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A048314 Numbers whose base-3 expansions, read from left to right, have run lengths that strictly decrease.

@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.DigitSequence;
 import irvine.oeis.a000.A000108;
+import irvine.oeis.base.DigitSequence;
 
 /**
  * A034005 Successive digits of Catalan numbers.

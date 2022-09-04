@@ -1,6 +1,6 @@
 package irvine.oeis.a031;
 
-import irvine.oeis.PalindromeSequence;
+import irvine.oeis.base.PalindromeSequence;
 
 /**
  * A031881 Lucky numbers that are both palindromic and prime.

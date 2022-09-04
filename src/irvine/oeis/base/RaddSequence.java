@@ -1,7 +1,8 @@
-package irvine.oeis;
+package irvine.oeis.base;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
 
 /**
  * Sequences with the rules:
@@ -9,7 +10,7 @@ import irvine.math.z.ZUtils;
  * (2) "Reverse and Add!": reverse and add old value
  * @author Georg Fischer
  */
-public class RADDSequence implements Sequence {
+public class RaddSequence implements Sequence {
 
   protected final long mBase;
   protected Z mTerm;
@@ -21,7 +22,7 @@ public class RADDSequence implements Sequence {
    * @param base base of the number system, normally 10 or 2
    * @param start start value
    */
-  public RADDSequence(final long base, final long start) {
+  public RaddSequence(final long base, final long start) {
     this(base, Z.valueOf(start));
   }
 
@@ -30,7 +31,7 @@ public class RADDSequence implements Sequence {
    * @param base base of the number system, normally 10 or 2
    * @param start start value
    */
-  public RADDSequence(final long base, final Z start) {
+  public RaddSequence(final long base, final Z start) {
     mBase = base;
     mTerm = start;
     mAddThis = true;
@@ -42,7 +43,7 @@ public class RADDSequence implements Sequence {
    * @param start start value
    * @param increment increment by this value
    */
-  public RADDSequence(final long base, final long start, final long increment) {
+  public RaddSequence(final long base, final long start, final long increment) {
     this(base, Z.valueOf(start), increment);
   }
 
@@ -52,7 +53,7 @@ public class RADDSequence implements Sequence {
    * @param start start value
    * @param increment increment by this value
    */
-  public RADDSequence(final long base, final Z start, final long increment) {
+  public RaddSequence(final long base, final Z start, final long increment) {
     mBase = base;
     mIncrement = Z.valueOf(increment);
     mTerm = start;

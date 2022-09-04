@@ -1,6 +1,7 @@
-package irvine.oeis;
+package irvine.oeis.base;
 
 import irvine.math.z.Z;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Numbers <code>k</code> that contain only a subset of (decimal) digits in its square <code>k^2</code>

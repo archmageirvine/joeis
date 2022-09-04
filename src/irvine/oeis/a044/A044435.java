@@ -3,7 +3,7 @@ package irvine.oeis.a044;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A044435 Numbers k such that string 0,2 occurs in the base-3 representation of k but not of k+1.

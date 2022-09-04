@@ -1,7 +1,7 @@
 package irvine.oeis.a064;
 // manually morfps at 2021-09-20
 
-import irvine.oeis.MorphismFixedPointSequence;
+import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
  * A064990 If A_k denotes the first 3^k terms, then A_0 = 0, A_{k+1} = A_k A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.

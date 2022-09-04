@@ -1,7 +1,7 @@
 package irvine.oeis.a189;
 // manually morfps at 2021-09-20
 
-import irvine.oeis.MorphismFixedPointSequence;
+import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
  * A189479 Fixed point starting with 0 of the morphism 0-&gt;01, 1-&gt;101.

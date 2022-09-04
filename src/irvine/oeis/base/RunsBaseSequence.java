@@ -1,9 +1,10 @@
-package irvine.oeis;
+package irvine.oeis.base;
 
 import java.util.Arrays;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Runs in a given number base.
@@ -24,7 +25,7 @@ public abstract class RunsBaseSequence implements SequenceWithOffset {
   protected int mBase; // number base
   protected int mN; // index of current term to be returned
   protected Z mK; // current number with some property
-  private int mOffset; // first index
+  private final int mOffset; // first index
 
   /**
    * Constructor for runs of the index

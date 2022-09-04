@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.RunLengthSequence;
+import irvine.oeis.base.RunLengthSequence;
 
 /**
  * A026490 Length of n-th run of identical symbols in A026465.

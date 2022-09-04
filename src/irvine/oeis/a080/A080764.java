@@ -1,7 +1,7 @@
 package irvine.oeis.a080;
 // manually morfps at 2021-09-23
 
-import irvine.oeis.MorphismFixedPointSequence;
+import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
  * A080764 First differences of A049472, floor(n/sqrt(2)).

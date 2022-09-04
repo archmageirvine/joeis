@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A045298 Numbers having one 3 and two 4's in base 5.

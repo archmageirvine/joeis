@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
-import irvine.oeis.RunLengthSequence;
+import irvine.oeis.base.RunLengthSequence;
 
 /**
  * A030321 Length of n-th run of 0's in A030317.

@@ -1,6 +1,6 @@
 package irvine.oeis.a029;
 
-import irvine.oeis.PalindromeSequence;
+import irvine.oeis.base.PalindromeSequence;
 
 /**
  * A029731 Palindromic in bases 10 and 16.

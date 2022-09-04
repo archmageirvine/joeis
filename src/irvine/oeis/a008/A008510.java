@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.PalindromeSequence;
+import irvine.oeis.base.PalindromeSequence;
 
 /**
  * A008510 Numbers k such that both k and the k-th triangular number are palindromes.

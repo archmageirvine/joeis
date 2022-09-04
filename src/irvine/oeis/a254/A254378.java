@@ -1,7 +1,7 @@
 package irvine.oeis.a254;
 // manually 2022-07-01
 
-import irvine.oeis.RunLengthSequence;
+import irvine.oeis.base.RunLengthSequence;
 import irvine.oeis.a228.A228495;
 
 /**

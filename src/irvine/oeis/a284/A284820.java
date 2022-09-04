@@ -1,7 +1,7 @@
 package irvine.oeis.a284;
 // manually posins at 2021-09-24 09:16
 
-import irvine.oeis.MorphismTransform;
+import irvine.oeis.base.MorphismTransform;
 import irvine.oeis.PositionSequence;
 import irvine.oeis.a010.A010060;
 

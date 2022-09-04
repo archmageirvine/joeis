@@ -1,6 +1,7 @@
-package irvine.oeis;
+package irvine.oeis.base;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.oeis.a039.A039000;
 import irvine.oeis.a043.A043571;
 import junit.framework.TestCase;

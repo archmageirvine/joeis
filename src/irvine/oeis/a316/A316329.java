@@ -2,7 +2,7 @@ package irvine.oeis.a316;
 // manually (morpfps) 2021-05-26
 
 import irvine.math.z.Z;
-import irvine.oeis.MorphismFixedPointSequence;
+import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
  * A316329 Image of 3 under repeated applications of the morphism 1 -&gt; 11, 2 -&gt; 2, 3 -&gt; 312.

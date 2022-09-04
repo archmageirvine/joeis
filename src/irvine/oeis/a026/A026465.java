@@ -1,6 +1,6 @@
 package irvine.oeis.a026;
 
-import irvine.oeis.RunLengthSequence;
+import irvine.oeis.base.RunLengthSequence;
 import irvine.oeis.a001.A001285;
 
 /**

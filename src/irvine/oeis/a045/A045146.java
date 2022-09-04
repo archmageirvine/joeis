@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A045146 Numbers n with property that in base 4 representation the numbers of 2's and 3's are 2 and 3, respectively.

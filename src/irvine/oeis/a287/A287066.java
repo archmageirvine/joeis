@@ -1,7 +1,7 @@
 package irvine.oeis.a287;
 // manually morfps at 2021-09-20 11:20
 
-import irvine.oeis.MorphismFixedPointSequence;
+import irvine.oeis.base.MorphismFixedPointSequence;
 
 /**
  * A287066 Start with 1 and repeatedly substitute 0-&gt;01, 1-&gt;12, 2-&gt;0.

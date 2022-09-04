@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.DigitSequence;
 import irvine.oeis.a005.A005150;
+import irvine.oeis.base.DigitSequence;
 
 /**
  * A034002 A005150 expanded into single digits.

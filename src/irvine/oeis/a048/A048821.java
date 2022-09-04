@@ -1,6 +1,6 @@
 package irvine.oeis.a048;
 
-import irvine.oeis.RunLengthSequence;
+import irvine.oeis.base.RunLengthSequence;
 
 /**
  * A048821 Lengths of runs in A048820.

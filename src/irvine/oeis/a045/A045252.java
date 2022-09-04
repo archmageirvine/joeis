@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.RunsBaseSequence;
+import irvine.oeis.base.RunsBaseSequence;
 
 /**
  * A045252 Numbers whose base-5 expansion contains exactly one 1 and one 4.

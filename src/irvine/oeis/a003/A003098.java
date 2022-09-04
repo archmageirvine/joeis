@@ -1,6 +1,6 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.PalindromeSequence;
+import irvine.oeis.base.PalindromeSequence;
 import irvine.oeis.a000.A000217;
 
 /**

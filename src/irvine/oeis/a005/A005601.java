@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A005601 Decimal expansion of proton-to-electron mass ratio.

@@ -1,7 +1,7 @@
 package irvine.oeis.a163;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A163999 Decimal expansion of the Faraday constant according to the 2019 SI system.

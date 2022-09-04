@@ -96,6 +96,7 @@ public class A058889 extends A014486 {
     mLB[1] = 1;
     mUB[1] = 1;
     permute(1);
+
 //    System.out.println(new SExpression().toZ());
 //    System.out.println(new SExpression(new SExpression(), new SExpression()).toZ());
 //    System.out.println(new SExpression(new SExpression(), new SExpression(new SExpression(), new SExpression())).toZ());

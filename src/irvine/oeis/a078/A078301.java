@@ -1,7 +1,7 @@
 package irvine.oeis.a078;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A078301 Decimal expansion of Planck mass.

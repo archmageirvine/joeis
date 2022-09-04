@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A003671 Decimal expansion of Bohr radius (meters).

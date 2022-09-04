@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A003673 Decimal expansion of fine-structure constant alpha.

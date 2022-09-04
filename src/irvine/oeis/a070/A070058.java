@@ -1,7 +1,7 @@
 package irvine.oeis.a070;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A070058 Decimal expansion of Newton's gravitational constant in SI units.

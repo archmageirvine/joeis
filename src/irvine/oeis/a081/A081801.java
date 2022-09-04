@@ -1,7 +1,7 @@
 package irvine.oeis.a081;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A081801 Decimal expansion of electron mass in kg.

@@ -1,6 +1,7 @@
-package irvine.oeis;
+package irvine.oeis.cons;
 
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * Sequence formed by the decimal expansion of a double. This should not be

@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A006833 Decimal expansion of neutron-to-electron mass ratio.

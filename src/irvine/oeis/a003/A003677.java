@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A003677 Decimal expansion of proton mass (mass units).

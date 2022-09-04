@@ -1,7 +1,7 @@
 package irvine.oeis.a081;
 
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.oeis.cons.DoubleDecimalExpansionSequence;
 
 /**
  * A081821 Rydberg constant, in inverse meters.

@@ -47,7 +47,7 @@ public class A057117 extends A014486 {
 
   static Node toBfs(final Z n) {
     final String s = n.toString(2);
-    // Build dfs tree
+    // Build bfs tree
     final Node root = new Node();
     final LinkedList<Node> bfs = new LinkedList<>();
     bfs.add(root);

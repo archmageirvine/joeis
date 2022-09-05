@@ -2000,3 +2000,4 @@ A058733 Number of nonisomorphic simple matroids of rank 4 on n labeled points.
 A058759 Shannon switching function: a(n) is the least number k such that any switching (or Boolean) function of n variables can be realized as a two-terminal network of AND's and OR's in which the total number of occurrences of the variables X_1, X_1', ..., X_n, X_n' is no more than k (where the primes indicate complements).
 A058889 Arrange binary trees in natural sequential order (see examples); sequence gives numbers of nodes.
 A058893 Triangle arising in enumeration of maps on projective plane.
+A058917 Number of elements required for synthesis of rational function of degree n by "half-n" Miyata method.

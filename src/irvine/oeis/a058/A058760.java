@@ -14,7 +14,7 @@ public class A058760 implements Sequence {
 
   private long mN = 1;
 
-  private boolean is(final long[] primes, final int b) {
+  protected boolean is(final long[] primes, final int b) {
     final int[] counts = new int[b];
     for (final long p : primes) {
       final int[] c = ZUtils.digitCounts(p, b);

@@ -19,7 +19,7 @@ public class Fast extends AbstractPrime implements Serializable {
    *
    * @param base base to try
    * @param n number to test
-   * @return false if number if definitely composite
+   * @return false if number is definitely composite
    */
   private boolean sprpTest(final long base, final long n) {
     final long minusone = n - 1L;

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.BaseTriangle;
 
 /**
- * A261781 Number T(n,k) of compositions of n where each part i is marked with a word of length i over a k-ary alphabet
+ * A261781 Number T(n,k) of compositions of n where each part i is marked with a word of length i over a k-ary alphabet whose letters appear in alphabetical order and all k letters occur at least once in the composition; triangle T(n,k), n &gt;= 0, 0 &lt;= k &lt;= n, read by rows.
  * whose letters appear in alphabetical order and all k letters occur at least once in the composition;
  * triangle T(n,k), n &gt;= 0, 0 &lt;= k &lt;= n, read by rows.
  * @author Georg Fischer

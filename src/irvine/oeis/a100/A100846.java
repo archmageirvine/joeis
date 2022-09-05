@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SequenceWithOffset;
 
 /**
- * A100846 Concatenate (1,n,n, 1).
+ * A100846 Concatenate (1,n,n,1).
  * @author Georg Fischer
  */
 public class A100846 implements SequenceWithOffset {

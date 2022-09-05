@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A261835 Number A(n,k) of compositions of n into distinct parts where each part i is marked
+ * A261835 Number A(n,k) of compositions of n into distinct parts where each part i is marked with a word of length i over a k-ary alphabet whose letters appear in alphabetical order; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * with a word of length i over a k-ary alphabet whose letters appear in alphabetical order; square array A(n,k), n&gt;=0, k&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */

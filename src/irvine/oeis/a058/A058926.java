@@ -7,10 +7,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058924.
+ * A058926.
  * @author Sean A. Irvine
  */
-public class A058924 implements Sequence {
+public class A058926 implements Sequence {
 
   protected int mN = 0;
 
@@ -24,7 +24,7 @@ public class A058924 implements Sequence {
       if (n <= 1) {
         return Z.ONE;
       }
-      return Integers.SINGLETON.sum(1, n - 2, k -> Binomial.binomial(n - 1, k - 1).multiply(mB.get(k).add(mC.get(k)).add(delta1(k)).multiply(mA.get(n - k)))).multiply(n).divide(n - 1).add(mB.get(n - 1).add(mC.get(n - 1)).add(delta1(n - 1)).multiply(n));
+      return mB.get(n - 1).add(mC.get(n - 1)).add(delta1(n - 1)).add(Integers.SINGLETON.sum(1, n - 2, k -> Binomial.binomial(n - 2, k - 1).multiply(mB.get(k).add(mC.get(k)).add(delta1(k)).multiply(mA.get(n - k)))));
     }
   };
 
@@ -34,7 +34,7 @@ public class A058924 implements Sequence {
       if (n <= 1) {
         return Z.ZERO;
       }
-      return Integers.SINGLETON.sum(1, n - 2, k -> Binomial.binomial(n - 1, k - 1).multiply(mA.get(k).multiply(mB.get(n - k)).add(mA.get(k).multiply(mC.get(n - k))).add(mB.get(k).multiply(mB.get(n - k))))).multiply(n).divide(n - 1).add(mA.get(n - 1).multiply(n));
+      return mA.get(n - 1).add(Integers.SINGLETON.sum(1, n - 2, k -> Binomial.binomial(n - 2, k - 1).multiply(mA.get(k).multiply(mB.get(n - k)).add(mA.get(k).multiply(mC.get(n - k))).add(mB.get(k).multiply(mB.get(n - k))))));
     }
   };
 
@@ -44,7 +44,7 @@ public class A058924 implements Sequence {
       if (n <= 1) {
         return Z.ZERO;
       }
-      return Integers.SINGLETON.sum(1, n - 2, k -> Binomial.binomial(n - 1, k - 1).multiply(mB.get(k)).multiply(mC.get(n - k))).multiply(n).divide(n - 1).add(mB.get(n - 1).multiply(n));
+      return mB.get(n - 1).add(Integers.SINGLETON.sum(1, n - 2, k -> Binomial.binomial(n - 2, k - 1).multiply(mB.get(k)).multiply(mC.get(n - k))));
     }
   };
 

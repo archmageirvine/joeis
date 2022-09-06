@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058921.
+ * A058921 a(n) = round((6*n)!/( 2^(3*n)*(3*n)!*6^(2*n) )).
  * @author Sean A. Irvine
  */
 public class A058921 implements Sequence {

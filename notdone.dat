@@ -2001,3 +2001,10 @@ A058759 Shannon switching function: a(n) is the least number k such that any swi
 A058889 Arrange binary trees in natural sequential order (see examples); sequence gives numbers of nodes.
 A058893 Triangle arising in enumeration of maps on projective plane.
 A058917 Number of elements required for synthesis of rational function of degree n by "half-n" Miyata method.
+A058918 Number of elements required for synthesis of rational function of degree n by modified Bott and Duffin method.
+A058929 Number of 2-connected claw-free labeled cubic graphs with 2n nodes [doable but very tedious?]
+A058930 Number of 3-connected claw-free cubic graphs with 6n nodes
+A058931 Number of 3-connected claw-free cubic graphs with 2n nodes [depends simply on A058930]
+A058932 Number of unlabeled claw-free cubic graphs with 2n nodes and connectivity 1.
+A058948 Coefficients of monic irreducible polynomials over GF(4) listed in lexicographic order.
+A058952 Coefficients of monic primitive irreducible polynomials over GF(4) listed in lexicographic order.

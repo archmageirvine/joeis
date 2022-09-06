@@ -243,7 +243,15 @@ public final class IrreduciblePolynomials {
     throw new UnsupportedOperationException();
   }
 
-  private static Polynomial<Z> powMod(final PolynomialRingField<Z> ring, final Polynomial<Z> x, final Z n, final Polynomial<Z> mod) {
+  /**
+   * Compute powers in a field.
+   * @param ring underlying ring
+   * @param x base
+   * @param n exponent
+   * @param mod modulus
+   * @return power
+   */
+  public static Polynomial<Z> powMod(final PolynomialRingField<Z> ring, final Polynomial<Z> x, final Z n, final Polynomial<Z> mod) {
     // x^0
     if (n.isZero()) {
       return ring.one();

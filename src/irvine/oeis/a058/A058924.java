@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058924.
+ * A058924 Number of independent dominating sets in rooted labeled trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A058924 implements Sequence {

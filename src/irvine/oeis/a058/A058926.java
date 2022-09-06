@@ -7,12 +7,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058926.
+ * A058926 Number of independent dominating sets in recursive trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A058926 implements Sequence {
 
-  protected int mN = 0;
+  private int mN = 0;
 
   private static long delta1(final int n) {
     return n == 1 ? 1 : 0;

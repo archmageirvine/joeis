@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SequenceWithOffset;
 
 /**
- * A248556 Concatenate (3n-2, 3n-1, 3n).
+ * A248556 Concatenate (3n-2,3n-1,3n).
  * @author Georg Fischer
  */
 public class A248556 implements SequenceWithOffset {

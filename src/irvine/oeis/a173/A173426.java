@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SequenceWithOffset;
 
 /**
- * A173426 a(n) is obtained by starting with 1, sequentially concatenating all decimal numbers up to n,
+ * A173426 a(n) is obtained by starting with 1, sequentially concatenating all decimal numbers up to n, and then, starting from n-1, sequentially concatenating all decimal numbers down to 1.
  * and then, starting from n-1, sequentially concatenating all decimal numbers down to 1.
  * @author Georg Fischer
  */

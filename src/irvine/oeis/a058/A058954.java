@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.math.z.Z;
 
 /**
- * A058954 p is prime; x&gt;=0; n = p*2^x; m is 0 or 1; n such that tau(n)-m = A058933(n), where tau(n) = number of divisors of n.
+ * A058954 Numbers n such that A058933(n)=A058933(n+1).
  * @author Sean A. Irvine
  */
 public class A058954 extends A058933 {

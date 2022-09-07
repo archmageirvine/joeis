@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058955.
+ * A058955 Let S(t) = 1 + s_1*t + s_2*t^2 + ... satisfy S' = -S/(2 + S); sequence gives numerators of s_n.
  * @author Sean A. Irvine
  */
 public class A058955 implements Sequence {

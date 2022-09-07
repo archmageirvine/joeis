@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058961.
+ * A058961 Number of possible sets {sum(T) : T contained in S}, where S is a multiset of elements of Z/nZ.
  * @author Sean A. Irvine
  */
 public class A058961 implements Sequence {

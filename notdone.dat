@@ -2008,3 +2008,7 @@ A058931 Number of 3-connected claw-free cubic graphs with 2n nodes [depends simp
 A058932 Number of unlabeled claw-free cubic graphs with 2n nodes and connectivity 1.
 A058948 Coefficients of monic irreducible polynomials over GF(4) listed in lexicographic order.
 A058952 Coefficients of monic primitive irreducible polynomials over GF(4) listed in lexicographic order.
+A058963 Modular form of Level 4 and weight 5/2 [hard to verify intermediate components correct]
+A058964 Decimal expansion of series-parallel constant [too slow to converge with CR?]
+A058965 Continued fraction expansion of series-parallel constant
+A058975 Total number of flats in the lattice of contractions of the n-cube. Also number of partitions of vertex set of n-cube into blocks all of which induce connected subgraphs.

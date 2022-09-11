@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A058978.
+ * A058983 Position at which increasing values of the Improperly Reduced Fibonacci Sequence (A058981) occur.
  * @author Sean A. Irvine
  */
 public class A058983 extends RecordPositionSequence {

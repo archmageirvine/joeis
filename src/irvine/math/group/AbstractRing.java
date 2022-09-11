@@ -312,6 +312,9 @@ public abstract class AbstractRing<E> extends AbstractGroup<E> implements Ring<E
    */
   @SafeVarargs
   public final E add(final E... n) {
+    if (n.length < 2) {
+      throw new RuntimeException("Bad use of add");
+    }
     E sum = zero();
     for (final E e : n) {
       sum = add(sum, e);

@@ -1,7 +1,5 @@
 package irvine.oeis;
 
-import irvine.oeis.base.RunsBaseSequenceTest;
-import irvine.oeis.base.SquareDigitsSequenceTest;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 

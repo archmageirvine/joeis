@@ -6,7 +6,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A058978.
+ * A058978 Minimal number of (non-consecutive) Fibonacci numbers needed to get n by addition and subtraction.
  * @author Sean A. Irvine
  */
 public class A058978 implements Sequence {
@@ -19,7 +19,7 @@ public class A058978 implements Sequence {
     mF.set(1, 1);
   }
 
-  private void search(final long sum, final int last, int cnt) {
+  private void search(final long sum, final int last, final int cnt) {
     if (sum > 0) {
       final int existing = mA.get(sum);
       if (existing == 0 || cnt < existing) {

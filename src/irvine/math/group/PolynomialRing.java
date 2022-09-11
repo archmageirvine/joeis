@@ -49,7 +49,6 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
   }
 
   @Override
-  @SuppressWarnings("unchecked")
   public Polynomial<E> one() {
     return mOnePolynomial;
   }
@@ -562,7 +561,6 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
    * specified power.
    * @param p polynomial
    * @param power substitution power
-   * @param <F> subfield
    * @return deep substitution
    */
   public Polynomial<E> deepSubstitute(final Polynomial<E> p, final int power) {

@@ -2012,3 +2012,7 @@ A058963 Modular form of Level 4 and weight 5/2 [hard to verify intermediate comp
 A058964 Decimal expansion of series-parallel constant [too slow to converge with CR?]
 A058965 Continued fraction expansion of series-parallel constant
 A058975 Total number of flats in the lattice of contractions of the n-cube. Also number of partitions of vertex set of n-cube into blocks all of which induce connected subgraphs.
+A058989 Simple dependency on A048670
+A059048 Triangle A(n,m) of numbers of n-element ordered T_0-antichains on an unlabeled m-set or numbers of T_1-hypergraphs on n labeled nodes with m (not necessary empty) distinct hyperedges (m=0,1,...,2^n).
+A059051 Number of ordered T_0-antichains on an unlabeled n-set; labeled T_1-hypergraphs with n (not necessary empty) distinct hyperedges.
+A059052 Number of n-element unlabeled ordered T_0-antichains; T_1-hypergraphs (with empty hyperedge but without multiple hyperedges) on n labeled nodes.

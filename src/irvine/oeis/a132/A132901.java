@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000040;
 public class A132901 extends A000040 implements SequenceWithOffset {
 
   private int mN;
-  private int mCount;
+  private final int mCount;
   protected int mOffset;
   private int[] mLengths; // ring buffer
   private final StringBuilder mSb = new StringBuilder();
@@ -45,7 +45,7 @@ public class A132901 extends A000040 implements SequenceWithOffset {
       mLengths = new int[mCount];
       mLengths[0] = mSb.length();
       for (int i = 1; i < mCount; ++i) {
-        String primeStr = super.next().toString();
+        final String primeStr = super.next().toString();
         mLengths[i] = primeStr.length();
         mSb.append(primeStr);
       }
@@ -53,7 +53,7 @@ public class A132901 extends A000040 implements SequenceWithOffset {
     }
     final int i = mN % mCount;
     mSb.delete(0, mLengths[i]);
-    String primeStr = super.next().toString();
+    final String primeStr = super.next().toString();
     mLengths[i] = primeStr.length();
     mSb.append(primeStr);
     return new Z(mSb.toString());

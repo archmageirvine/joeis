@@ -16,7 +16,7 @@ public class A058921 implements Sequence {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mA = mA.multiply(6L * mN).multiply(6L * mN - 1).multiply(6L * mN - 2).multiply(6L * mN - 3).multiply(6L * mN - 4).multiply(6L * mN -5)
+      mA = mA.multiply(6L * mN).multiply(6L * mN - 1).multiply(6L * mN - 2).multiply(6L * mN - 3).multiply(6L * mN - 4).multiply(6L * mN - 5)
         .divide(Z.valueOf(3L * mN).multiply(3L * mN - 1).multiply(3L * mN - 2).multiply(288));
     }
     return mA.round();

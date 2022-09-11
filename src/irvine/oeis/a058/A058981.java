@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058978.
+ * A058981 Improperly Reduced Fibonacci Sequence: begin with a(0) = 0, a(1) = 1 and a(n) = [ a(n-1) + a(n-2) ] / a(k). a(k) is the first (not necessarily the greatest) term including 1 which divides a(n-1) + a(n-2) not previously used.
  * @author Sean A. Irvine
  */
 public class A058981 implements Sequence {

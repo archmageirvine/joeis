@@ -2016,3 +2016,4 @@ A058989 Simple dependency on A048670
 A059048 Triangle A(n,m) of numbers of n-element ordered T_0-antichains on an unlabeled m-set or numbers of T_1-hypergraphs on n labeled nodes with m (not necessary empty) distinct hyperedges (m=0,1,...,2^n).
 A059051 Number of ordered T_0-antichains on an unlabeled n-set; labeled T_1-hypergraphs with n (not necessary empty) distinct hyperedges.
 A059052 Number of n-element unlabeled ordered T_0-antichains; T_1-hypergraphs (with empty hyperedge but without multiple hyperedges) on n labeled nodes.
+A059079 Number of n-element T_0-antichains on a labeled set

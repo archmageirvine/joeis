@@ -59,6 +59,9 @@ public class QuadraticCongruenceTest extends TestCase {
     assertEquals("[55, 314, 1203, 1462]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.NINE, Z.valueOf(1517)).toString());
     assertEquals("[216, 586, 831, 1201]", QuadraticCongruence.solve(Z.ONE, Z.valueOf(100), Z.NINE, Z.valueOf(1517)).toString());
     //assertEquals("[382810, 1036947]", QuadraticCongruence.solve(Z.ONE, Z.valueOf(100), Z.NINE, Z.valueOf(1419857)).toString());
+  }
 
+  public void testBugMod1001() {
+    assertEquals("[1, 89, 141, 232, 768, 859, 911, 999]", QuadraticCongruence.solve(Z.ONE, Z.ONE, Z.valueOf(-2), Z.valueOf(1001)).toString());
   }
 }

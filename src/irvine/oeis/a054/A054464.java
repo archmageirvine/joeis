@@ -1,6 +1,7 @@
 package irvine.oeis.a054;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import irvine.math.z.QuadraticCongruence;
 import irvine.math.z.Z;
@@ -12,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A054464 implements Sequence {
 
-  private final ArrayList<Z> mA = new ArrayList<>();
+  private final List<Z> mA = new ArrayList<>();
   private int mN = 0;
   private int mM = 0;
 

@@ -7,6 +7,7 @@ import java.util.TreeSet;
 
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
+import irvine.util.string.StringUtils;
 
 /**
  * Solve quadratic congruence equations.
@@ -24,6 +25,7 @@ public final class QuadraticCongruence {
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
   private static final Collection<Z> MOD4 = Arrays.asList(Z.ONE, Z.THREE);
   private static final Collection<Z> MOD8 = Arrays.asList(Z.ONE, Z.THREE, Z.FIVE, Z.SEVEN);
+  private static int sIndent = 0; // Used only for printing during debug
 
   /**
    * Solve <code>x^2=a (mod p)</code>
@@ -32,9 +34,6 @@ public final class QuadraticCongruence {
    * @return solutions
    */
   public static Collection<Z> solve(Z a, final Z p) {
-    if (VERBOSE) {
-      System.out.println("Solving x^2=" + a + " (mod " + p + ")");
-    }
     if (a.signum() < 0) {
       a = a.add(p);
     }
@@ -45,6 +44,9 @@ public final class QuadraticCongruence {
     final TreeSet<Z> res = new TreeSet<>();
     res.add(t);
     res.add(p.subtract(t).mod(p));
+    if (VERBOSE) {
+      System.out.println(StringUtils.rep(' ', sIndent) + "Solved: x^2=" + a + " (mod " + p + ")  -->  " + res);
+    }
     return res;
   }
 
@@ -56,7 +58,7 @@ public final class QuadraticCongruence {
    */
   public static Collection<Z> solve(Z a, final Z p, final int e) {
     if (VERBOSE) {
-      System.out.println("Solving x^2=" + a + " (mod " + p + "^" + e + ")");
+      System.out.println(StringUtils.rep(' ', sIndent) + "Solving x^2=" + a + " (mod " + p + "^" + e + ")");
     }
     if (e == 1) {
       return solve(a, p);
@@ -103,7 +105,7 @@ public final class QuadraticCongruence {
           }
       }
       if (VERBOSE) {
-        System.out.println("Returning from Hensel with " + res);
+        System.out.println(StringUtils.rep(' ', sIndent) + "Returning from Hensel with " + res);
       }
       return res;
     }
@@ -122,7 +124,7 @@ public final class QuadraticCongruence {
       res.add(z);
       res.add(pe.subtract(z));
       if (VERBOSE) {
-        System.out.println("Returning from Hensel with " + res);
+        System.out.println(StringUtils.rep(' ', sIndent) + "Returning from Hensel with " + res);
       }
       return res;
     }
@@ -154,13 +156,16 @@ public final class QuadraticCongruence {
 
     final Z d = b.square().subtract(a.multiply(c).multiply(4)).mod(pe);
     if (VERBOSE) {
-      System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " -> " + d.jacobi(pe));
+      System.out.println(StringUtils.rep(' ', sIndent) + "Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " -> " + d.jacobi(pe));
     }
     if (b.mod(pe).isZero() && Z.ONE.equals(a)) {
       if (VERBOSE) {
-        System.out.println("Using b=0 shortcut");
+        System.out.println(StringUtils.rep(' ', sIndent) + "Using b=0 shortcut");
       }
-      return solve(pe.subtract(c), p, e);
+      sIndent += 2;
+      final Collection<Z> res = solve(pe.subtract(c), p, e);
+      sIndent -= 2;
+      return res;
     }
 
     if (Z.TWO.equals(p)) {
@@ -174,7 +179,11 @@ public final class QuadraticCongruence {
       return res;
     }
 
-    switch (d.jacobi(pe)) {
+    final int jacobi = d.jacobi(pe);
+    if (VERBOSE) {
+      System.out.println(StringUtils.rep(' ', sIndent + 2) + "Using jacobi=" + jacobi);
+    }
+    switch (jacobi) {
       case -1:
         return Collections.emptySet();
       case 0:
@@ -184,9 +193,14 @@ public final class QuadraticCongruence {
         // May not work because 2a in 2^k problematic
         final TreeSet<Z> res = new TreeSet<>();
         final Z[] euc = a.multiply2().extendedGcd(pe);
+        sIndent += 2;
         for (final Z s : solve(d, p, e)) {
           res.add(s.subtract(b).modMultiply(euc[1], pe));
+          if (VERBOSE) {
+            System.out.println(StringUtils.rep(' ', sIndent) + "after processing solution " + s + " res is now: " + res);
+          }
         }
+        sIndent -= 2;
         return res;
     }
   }
@@ -201,10 +215,16 @@ public final class QuadraticCongruence {
    */
   public static Collection<Z> solve(final Z a, final Z b, final Z c, final Z n) {
     if (VERBOSE) {
-      System.out.println("Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + n + ")");
+      System.out.println(StringUtils.rep(' ', sIndent) + "Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + n + ")");
     }
     if (n.isProbablePrime()) {
-      return solve(a, b, c, n, 1);
+      sIndent += 2;
+      final Collection<Z> res = solve(a, b, c, n, 1);
+      if (VERBOSE) {
+        System.out.println(StringUtils.rep(' ', sIndent) + "res is now: " + res);
+      }
+      sIndent -= 2;
+      return res;
     }
     final FactorSequence fs = Jaguar.factor(n);
     Collection<Z> res = Collections.emptyList();
@@ -212,27 +232,33 @@ public final class QuadraticCongruence {
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
       final Z pe = p.pow(e);
-      final Collection<Z> r = new TreeSet<>();
+      sIndent += 2;
       final Collection<Z> ss = solve(a.mod(pe), b.mod(pe), c.mod(pe), p, e);
+      if (VERBOSE) {
+        System.out.println(StringUtils.rep(' ', sIndent) + "ss is: " + ss);
+      }
+      sIndent -= 2;
       if (ss.isEmpty()) {
         return ss; // there is no solution
       }
       if (res.isEmpty()) {
         res = ss;
       } else {
+        if (VERBOSE) {
+          System.out.println(StringUtils.rep(' ', sIndent + 2) + "Applying CRT Cartesian product on: " + ss + " and " + res);
+        }
+        final Collection<Z> r = new TreeSet<>();
         for (final Z s : ss) {
           for (final Z u : res) {
             final Z w = ZUtils.chineseRemainderTheorem(new Z[] {s, u}, new Z[] {pe, mod});
-            if (w.modSquare(n).modMultiply(a, n).add(w.modMultiply(b, n)).add(c).mod(n).isZero()) { // why is this check needed?
-              r.add(w);
-            }
+            r.add(w);
           }
         }
         res = r;
       }
       mod = mod.multiply(pe);
       if (VERBOSE) {
-        System.out.println("res is now: " + res);
+        System.out.println(StringUtils.rep(' ', sIndent + 2) + "res is now: " + res);
       }
     }
     return res;

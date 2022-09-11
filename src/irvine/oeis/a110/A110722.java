@@ -4,18 +4,16 @@ import irvine.math.z.Z;
 import irvine.oeis.SequenceWithOffset;
 
 /**
- * A110726 Absolute({n concatenate R(n)}-{ R(n) concatenate n}), R(n) = digit reversal of n.
+ * A110722 {n concatenate R(n)}*{ R(n) concatenate n}, where R(n) = digit reversal of n.
  * @author Georg Fischer
  */
-public class A110726 implements SequenceWithOffset {
+public class A110722 implements SequenceWithOffset {
 
-  private final int mOffset = 10;
-  private long mN = mOffset - 1;
-
+  private long mN = -1;
 
   @Override
   public int getOffset() {
-    return mOffset;
+    return 0;
   }
 
   @Override
@@ -23,6 +21,6 @@ public class A110726 implements SequenceWithOffset {
     ++mN;
     final String forward = String.valueOf(mN);
     final String reverse = new StringBuilder().append(forward).reverse().toString();
-    return new Z(forward + reverse).subtract(new Z(reverse + forward)).abs();
+    return new Z(forward + reverse).multiply(new Z(reverse + forward));
   }
 }

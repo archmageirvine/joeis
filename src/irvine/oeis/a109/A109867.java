@@ -1,0 +1,23 @@
+package irvine.oeis.a109;
+
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
+import irvine.oeis.recur.ConstantOrderRecurrence;
+
+
+/**
+ * A109867 a(1) = 12; for n &gt;= 1, a(n+1) = {a(n)+R(a(n)}*{a(n)-R(a(n)}, where R(k) is the digit reversal of k.
+ * @author Georg Fischer
+ */
+public class A109867 extends ConstantOrderRecurrence {
+
+  /** Construct the sequence. */
+  public A109867() {
+    super(1, 1, 0, 12);
+  }
+
+  @Override
+  public Z compute(final int n) {
+    return ZUtils.reverse(a(n - 1)).add(a(n - 1)).multiply(a(n - 1).subtract(ZUtils.reverse(a(n - 1)))).abs();
+  }
+}

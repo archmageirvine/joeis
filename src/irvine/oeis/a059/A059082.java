@@ -1,17 +1,17 @@
 package irvine.oeis.a059;
 
-import irvine.math.z.Binomial;
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059049 Number of 6-element ordered T_0-antichains on an unlabeled n-set; T_1-hypergraphs on 6 labeled nodes with n (not necessary empty) distinct hyperedges (n=0,1,...,64).
+ * A059082 Number of 6-element T_0-antichains on a labeled n-set, n = 0, ..., 64.
  * @author Sean A. Irvine
  */
-public class A059049 implements Sequence {
+public class A059082 implements Sequence {
 
-  private static final long[][] PARMS = {
+  private static final int[][] PARMS = {
     {1, 64},
     {-30, 48},
     {120, 40},
@@ -50,11 +50,17 @@ public class A059049 implements Sequence {
   };
   private int mN = -1;
 
+  private static Z f(final int k, final int n) {
+    return k + 1 <= n
+      ? Z.ZERO
+      : MemoryFactorial.SINGLETON.factorial(k).divide(MemoryFactorial.SINGLETON.factorial(k - n));
+  }
+
   @Override
   public Z next() {
     if (++mN > 64) {
       return null;
     }
-    return Integers.SINGLETON.sum(0, PARMS.length - 1, k -> Binomial.binomial(PARMS[k][1], mN).multiply(PARMS[k][0]));
+    return Integers.SINGLETON.sum(0, PARMS.length - 1, k -> f(PARMS[k][1], mN).multiply(PARMS[k][0])).divide(720);
   }
 }

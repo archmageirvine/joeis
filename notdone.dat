@@ -1565,7 +1565,6 @@ A048143 Number of labeled connected simplicial complexes with n nodes.
 A048283 For k >= a(n), there are A048284(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
 A048284 For k >= A048283(n), there are a(n) numbers expressible as a sum of exactly k-n k-gonal numbers.
 A048289 Number of Go games with exactly n moves.
-A048613 Number of terms (excluding the first) of A002211 for which the geometric mean produces progressively better approximations to Khinchin's constant (itself).
 A048615 Numerator of mass (Sum 1/|Aut(H)|) of Hadamard matrices of order 4n.
 A048616 Denominator of mass (Sum 1/|Aut(H)|) of Hadamard matrices of order 4n.
 A048638 Height of lattice of parameters of mixed orthogonal arrays with 2^n runs and strength 2.
@@ -2017,3 +2016,13 @@ A059048 Triangle A(n,m) of numbers of n-element ordered T_0-antichains on an unl
 A059051 Number of ordered T_0-antichains on an unlabeled n-set; labeled T_1-hypergraphs with n (not necessary empty) distinct hyperedges.
 A059052 Number of n-element unlabeled ordered T_0-antichains; T_1-hypergraphs (with empty hyperedge but without multiple hyperedges) on n labeled nodes.
 A059079 Number of n-element T_0-antichains on a labeled set
+A059080 Triangle A(n,m) of numbers of n-element T_0-antichains on a labeled m-set, m=0,...,2^n
+A059083 Number of T_0-antichains on a labeled n-set
+A059090 Triangle T(n,m) giving number of m-element intersecting antichains on a labeled n-set or n-variable Boolean functions with m nonzero values in the Post class F(7,2), m=0,.., A037952(n).
+A059102 Number of terms of the fractional part of A030168 for which the geometric mean produces increasingly better approximations to Khinchin's constant [like A059101, but too slow].
+A059103 Number of simple, connected, unit-distance graphs on n points realizable in the plane with straight edges all of the same length; lines are permitted to cross.
+A059104 Number of Bieberbach groups in dimension n: torsion-free crystallographic groups
+A059105 Number of n-dimensional torsion-free crystallographic groups with trivial center.
+A059106 Number of solutions to Nickerson variant of Langford (or Langford-Skolem) problem.
+A059107 Number of solutions to triples version of Langford (or Langford-Skolem) problem
+A059108 Number of solutions to variant of triples version of Langford (or Langford-Skolem) problem.

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059078.
+ * A059078 Number of orientable necklaces with 2n beads and two colors which when turned over produce their own color complement.
  * @author Sean A. Irvine
  */
 public class A059078 extends A059076 {

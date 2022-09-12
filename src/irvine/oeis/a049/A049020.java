@@ -11,8 +11,8 @@ import irvine.oeis.Sequence;
  */
 public class A049020 implements Sequence {
 
-  private long mN = -1;
-  private long mM = 0;
+  private int mN = -1;
+  protected int mM = 0;
 
   @Override
   public Z next() {

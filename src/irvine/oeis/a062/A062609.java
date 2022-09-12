@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
- * A062609 Numbers k such that 43^k - 42^k is prime.
+ * A062609 Numbers k such that 43^k - 42^k is prime or a strong pseudoprime.
  * @author Georg Fischer
  */
 public class A062609 extends PrimePositionSubsequence {

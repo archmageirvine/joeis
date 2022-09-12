@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
- * A062592 Numbers k such that 26^k - 25^k is prime.
+ * A062592 Numbers k such that 26^k - 25^k is prime or a strong pseudoprime.
  * @author Georg Fischer
  */
 public class A062592 extends PrimePositionSubsequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.recur.ConstantOrderRecurrence;
 
 /**
- * A064847 Sequence a(n) such that there is a sequence b(n) with a(1) = b(1) = 1, a(n+1) = a(n) * b(n) and b(n+1) = a(n) + b(n) for n &gt;= 1.
+ * A064847 Sequence a(n) such that there is a sequence b(n) with a(1) = b(1) = 1, a(n+1) = a(n) * b(n) and  b(n+1) = a(n) + b(n) for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A064847 extends ConstantOrderRecurrence {

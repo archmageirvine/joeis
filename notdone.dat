@@ -2026,3 +2026,4 @@ A059105 Number of n-dimensional torsion-free crystallographic groups with trivia
 A059106 Number of solutions to Nickerson variant of Langford (or Langford-Skolem) problem.
 A059107 Number of solutions to triples version of Langford (or Langford-Skolem) problem
 A059108 Number of solutions to variant of triples version of Langford (or Langford-Skolem) problem.
+A059119 Triangle a(n,m)=number of m-element antichains on a labeled n-set; number of monotone n-variable Boolean functions with m mincuts (lower units), m=0..binomial(n,floor(n,2)).

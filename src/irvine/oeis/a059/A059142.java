@@ -1,18 +1,26 @@
 package irvine.oeis.a059;
 
-import irvine.oeis.recur.LinearRecurrence;
+import irvine.math.z.Z;
 
 /**
  * A059142 A hierarchical sequence (S(W2{3}*) - see A059126).
  * @author Sean A. Irvine
  */
-public class A059142 extends LinearRecurrence {
+public class A059142 extends A059141 {
 
-  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
+  private int mN = -1;
+  private Z mSum = Z.ZERO;
 
-  /** Construct the sequence. */
-  public A059142() {
-    super(new long[] {2, -5, 4}, new long[] {11, 40, 105});
+  @Override
+  public Z next() {
+    ++mN;
+    long m = 0;
+    final long lim = 1L << mN;
+    while (m < lim) {
+      mSum = mSum.add(super.next());
+      ++m;
+    }
+    return mSum;
   }
 }
 

@@ -68,4 +68,8 @@ public class QuadraticCongruenceTest extends TestCase {
   public void testBugMod100000000001() {
     assertEquals("[9090909088, 18181818179, 27272727270, 36363636361, 45454545452, 54545454543, 63636363634, 72727272725, 81818181816, 90909090907, 99999999998]", QuadraticCongruence.solve(Z.ONE, Z.SIX, Z.NINE, Z.valueOf(100000000001L)).toString());
   }
+
+  public void testBugMod49() {
+    assertEquals("[0, 7, 14, 21, 28, 35, 42]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, Z.valueOf(49)).toString());
+  }
 }

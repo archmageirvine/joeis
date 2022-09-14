@@ -61,6 +61,22 @@ public final class QuadraticCongruence {
     if (VERBOSE) {
       System.out.println(StringUtils.rep(' ', sIndent) + "Solving x^2=" + a + " (mod " + p + "^" + e + ")");
     }
+//    final Collection<Z> res = solve(a, p);
+//    if (e == 1 || res.isEmpty()) {
+//      return res;
+//    }
+//
+//    final Z pe = p.pow(e);
+//    final ArrayList<Z> lift = new ArrayList<>();
+//    for (Z soln : res) {
+//      do {
+//        lift.add(soln);
+//        soln = soln.add(p);
+//      } while (soln.compareTo(pe) <= 0);
+//    }
+//    return lift;
+
+
     if (e == 1) {
       return solve(a, p);
     }
@@ -132,6 +148,13 @@ public final class QuadraticCongruence {
     return Collections.emptySet();
   }
 
+  private static void lift(final Collection<Z> res, Z lift, final Z p, final Z pe) {
+    do {
+      res.add(lift);
+      lift = lift.add(p);
+    } while (lift.compareTo(pe) < 0);
+  }
+
   /**
    * Solve <code>a*x^2+b*x+c = 0 (mod p^e)</code>
    * @param a coefficient
@@ -147,11 +170,13 @@ public final class QuadraticCongruence {
       // Simplify to a linear congruence, x * (a*x+b) == 0 (mod p^e)
       if (pe.gcd(a).equals(Z.ONE)) {
         final Collection<Z> res = new TreeSet<>();
-        res.add(Z.ZERO);
-        res.add(a.modInverse(pe).modMultiply(pe.subtract(b), pe));
+        lift(res, Z.ZERO, p, pe);
+        lift(res, a.modInverse(pe).modMultiply(pe.subtract(b), pe), p, pe);
         return res;
       } else {
-        return Collections.singleton(Z.ZERO);
+        final ArrayList<Z> res = new ArrayList<>();
+        lift(res, Z.ZERO, p, pe);
+        return res;
       }
     }
 
@@ -194,10 +219,7 @@ public final class QuadraticCongruence {
         }
         // Lift solution
         final ArrayList<Z> lift = new ArrayList<>();
-        do {
-          lift.add(soln);
-          soln = soln.add(p);
-        } while (soln.compareTo(pe) <= 0);
+        lift(lift, soln, p, pe);
         return lift;
       default: // 1
         // May not work because 2a in 2^k problematic

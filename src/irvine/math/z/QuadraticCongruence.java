@@ -1,5 +1,6 @@
 package irvine.math.z;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -156,7 +157,7 @@ public final class QuadraticCongruence {
 
     final Z d = b.square().subtract(a.multiply(c).multiply(4)).mod(pe);
     if (VERBOSE) {
-      System.out.println(StringUtils.rep(' ', sIndent) + "Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " -> " + d.jacobi(pe));
+      System.out.println(StringUtils.rep(' ', sIndent) + "Request to solve: " + a + "*x^2 + " + b + "*x + " + c + " = 0 (mod " + p + "^" + e + ") with discriminant " + d + " jacobi=" + d.jacobi(pe));
     }
     if (b.mod(pe).isZero() && Z.ONE.equals(a)) {
       if (VERBOSE) {
@@ -170,6 +171,9 @@ public final class QuadraticCongruence {
 
     if (Z.TWO.equals(p)) {
       // todo This is terrible, it tries every possible value
+      if (VERBOSE) {
+        System.out.println(StringUtils.rep(' ', sIndent) + "Using special case for p=2");
+      }
       final TreeSet<Z> res = new TreeSet<>();
       for (Z x = Z.ZERO; x.compareTo(pe) < 0; x = x.add(1)) {
         if (x.modSquare(pe).modMultiply(a, pe).add(x.modMultiply(b, pe)).add(c).mod(pe).isZero()) {
@@ -180,15 +184,21 @@ public final class QuadraticCongruence {
     }
 
     final int jacobi = d.jacobi(pe);
-    if (VERBOSE) {
-      System.out.println(StringUtils.rep(' ', sIndent + 2) + "Using jacobi=" + jacobi);
-    }
     switch (jacobi) {
       case -1:
         return Collections.emptySet();
       case 0:
-        // todo is this dubious for p==2?
-        return Collections.singleton(p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], pe));
+        Z soln = p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], p);
+        if (e == 1) {
+          return Collections.singleton(soln);
+        }
+        // Lift solution
+        final ArrayList<Z> lift = new ArrayList<>();
+        do {
+          lift.add(soln);
+          soln = soln.add(p);
+        } while (soln.compareTo(pe) <= 0);
+        return lift;
       default: // 1
         // May not work because 2a in 2^k problematic
         final TreeSet<Z> res = new TreeSet<>();

@@ -148,11 +148,12 @@ public final class QuadraticCongruence {
     return Collections.emptySet();
   }
 
-  private static void lift(final Collection<Z> res, Z lift, final Z p, final Z pe) {
+  private static Collection<Z> lift(final Collection<Z> res, Z lift, final Z p, final Z pe) {
     do {
       res.add(lift);
       lift = lift.add(p);
     } while (lift.compareTo(pe) < 0);
+    return res;
   }
 
   /**
@@ -174,9 +175,7 @@ public final class QuadraticCongruence {
         lift(res, a.modInverse(pe).modMultiply(pe.subtract(b), pe), p, pe);
         return res;
       } else {
-        final ArrayList<Z> res = new ArrayList<>();
-        lift(res, Z.ZERO, p, pe);
-        return res;
+        return lift(new ArrayList<>(), Z.ZERO, p, pe);
       }
     }
 
@@ -213,14 +212,7 @@ public final class QuadraticCongruence {
       case -1:
         return Collections.emptySet();
       case 0:
-        Z soln = p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], p);
-        if (e == 1) {
-          return Collections.singleton(soln);
-        }
-        // Lift solution
-        final ArrayList<Z> lift = new ArrayList<>();
-        lift(lift, soln, p, pe);
-        return lift;
+        return lift(new ArrayList<>(), p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], p), p, pe);
       default: // 1
         // May not work because 2a in 2^k problematic
         final TreeSet<Z> res = new TreeSet<>();

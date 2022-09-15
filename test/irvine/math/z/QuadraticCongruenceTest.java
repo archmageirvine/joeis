@@ -58,7 +58,6 @@ public class QuadraticCongruenceTest extends TestCase {
   public void testGeneral() {
     assertEquals("[55, 314, 1203, 1462]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.NINE, Z.valueOf(1517)).toString());
     assertEquals("[216, 586, 831, 1201]", QuadraticCongruence.solve(Z.ONE, Z.valueOf(100), Z.NINE, Z.valueOf(1517)).toString());
-    //assertEquals("[382810, 1036947]", QuadraticCongruence.solve(Z.ONE, Z.valueOf(100), Z.NINE, Z.valueOf(1419857)).toString());
   }
 
   public void testBugMod1001() {
@@ -71,5 +70,9 @@ public class QuadraticCongruenceTest extends TestCase {
 
   public void testBugMod49() {
     assertEquals("[0, 7, 14, 21, 28, 35, 42]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, Z.valueOf(49)).toString());
+  }
+
+  public void testBugMod125() {
+    assertEquals("[0, 25, 50, 75, 100]", QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, Z.valueOf(125)).toString());
   }
 }

@@ -144,7 +144,7 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
         case 2: // multiplicative, similar msolve algorithm
           while (mGood.size() <= 0) {
             final Z pow10p1 = mPow10.multiply(10);
-            final TreeSet<Z> acands = new TreeSet<Z>(QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, pow10p1.add(mDist))); // for A115553: msolve(a^2,10^m+9)
+            final TreeSet<Z> acands = new TreeSet<>(QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, pow10p1.add(mDist))); // for A115553: msolve(a^2,10^m+9)
             for (final Z ta : acands) {
               final Z prod = ta.square();
               final Z bcand = prod.mod(pow10p1);

@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A093122 Jacobsthal(n)*Fibonacci(n+1).
+ * A093122 a(n) = Jacobsthal(n) * Fibonacci(n+1).
  * @author Sean A. Irvine
  */
 public class A093122 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058865 Triangle a(n,k) giving number of connected labeled chordal graphs on n nodes with k edges, containing no induced path P_4, for n &gt;= 2, 1 &lt;= k &lt;= n(n-1)/2; also the number of labeled trees with each vertex replaced by a clique.
+ * A058865 Irregular table a(n,k) = number of connected labeled chordal graphs on n nodes with k edges, containing no induced path P_4, for n &gt;= 1, 1 &lt;= k &lt;= n*(n-1)/2, read by rows; also the number of labeled trees with each vertex replaced by a clique.
  * @author Sean A. Irvine
  */
 public class A058865 implements Sequence {

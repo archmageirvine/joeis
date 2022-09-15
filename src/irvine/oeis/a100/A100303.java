@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A100303 Expansion of (1-x-4x^2)/(1-x-8x^2).
+ * A100303 Expansion of (1 - x - 4*x^2)/(1 - x - 8*x^2).
  * @author Georg Fischer
  */
 public class A100303 extends GeneratingFunctionSequence {

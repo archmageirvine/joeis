@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A157621 625n^2 - 364n + 53.
+ * A157621 a(n) = 625n^2 - 364n + 53.
  * @author Sean A. Irvine
  */
 public class A157621 extends LinearRecurrence {

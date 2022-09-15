@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A036793 Decimal expansion of (2/Pi)*Integral_{x=0..Pi} sin(x)/x.
+ * A036793 Decimal expansion of (2/Pi)*Integral_{x=0..Pi} sin(x)/x dx.
  * @author Sean A. Irvine
  */
 public class A036793 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A083487 Triangle read by rows: T(r,c) = 2*r*c + l + c (1 &lt;= c &lt;= l).
+ * A083487 Triangle read by rows: T(r,c) = 2*r*c + r + c (1 &lt;= c &lt;= r).
  * @author Georg Fischer
  */
 public class A083487 extends Triangle {

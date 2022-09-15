@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009282 E.g.f.: exp(x + sin(x)).
+ * A009282 Expansion of e.g.f.: exp(x + sin(x)).
  * @author Sean A. Irvine
  */
 public class A009282 implements Sequence {

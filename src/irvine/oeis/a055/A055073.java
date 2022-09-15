@@ -4,7 +4,7 @@ import irvine.oeis.a054.A054637;
 import irvine.oeis.prime.PrimePositionSubsequence;
 
 /**
- * A055073 Pointers to base-3 digits where primes occur in A055072.
+ * A055073 Positions in A054635 where the partial sums (A054637) yield primes (A055072).
  * @author Sean A. Irvine
  */
 public class A055073 extends PrimePositionSubsequence {

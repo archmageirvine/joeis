@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A107319 C(n+8,8)*C(n+6,6).
+ * A107319 a(n) = C(n+8,8)*C(n+6,6).
  * binomial(n+8, 8)*binomial(n+6, 6)
  * @author Georg Fischer
  */

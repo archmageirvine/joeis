@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A145427 Decimal expansion of sum_{n=0..inf} (n!/(n+3)!)^2.
+ * A145427 Decimal expansion of Sum_{n=0..infinity} (n!/(n+3)!)^2.
  * Formula: 1/4*Pi^2-39/16
  * @author Georg Fischer
  */

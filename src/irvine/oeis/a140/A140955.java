@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A140955 Even integers that cannot be expressed as two distinct sums of two primes.
+ * A140955 Even integers that do not have at least two partitions into 2 distinct primes.
  * @author Georg Fischer
  */
 public class A140955 extends FiniteSequence {

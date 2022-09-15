@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A255241 Decimal expansion of 2 cos(3*Pi/7).
+ * A255241 Decimal expansion of 2*cos(3*Pi/7).
  * @author Georg Fischer
  */
 public class A255241 extends DecimalExpansionSequence {

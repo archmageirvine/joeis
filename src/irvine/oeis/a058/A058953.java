@@ -5,7 +5,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 
 /**
- * A058953 p is prime; x&gt;=0; n = p*2^x; m is 0 or 1; n such that tau(n)-m = A058933(n), where tau(n) = number of divisors of n.
+ * A058953 Numbers k of the form k=p*2^x, with p prime and x&gt;=0, such that tau(k)-m = A058933(k) where tau(k) is the number of divisors of k and m is 0 or 1.
  * @author Sean A. Irvine
  */
 public class A058953 extends A058933 {

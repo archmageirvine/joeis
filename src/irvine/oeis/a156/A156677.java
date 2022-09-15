@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A156677 81n^2 - 118n + 43.
+ * A156677 a(n) = 81n^2 - 118n + 43.
  * @author Sean A. Irvine
  */
 public class A156677 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimeSubsequence;
 
 
 /**
- * A122114 Primes of form 2n^2 + 26n + 1.
+ * A122114 Primes of the form 2n^2 + 26n + 1.
  * @author Georg Fischer
  */
 public class A122114 extends PrimeSubsequence {

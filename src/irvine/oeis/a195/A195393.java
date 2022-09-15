@@ -5,7 +5,7 @@ package irvine.oeis.a195;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A195393 (9*n)!.
+ * A195393 a(n) = (9*n)!.
  * @author Georg Fischer
  */
 public class A195393 extends HolonomicRecurrence {

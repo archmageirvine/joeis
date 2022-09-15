@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.cons.PolynomialRootExpansionSequence;
 
 /**
- * A173272 Positive solution of sqrt((2-x)(2+x))+sqrt((3-x)(3+x))=sqrt((2-x)(2+x))*sqrt((3-x)(3+x)).
+ * A173272 Decimal expansion of the positive solution of sqrt((2-x)(2+x)) + sqrt((3-x)(3+x)) = sqrt((2-x)(2+x))*sqrt((3-x)(3+x)).
  * @author Georg Fischer
  */
 public class A173272 extends PolynomialRootExpansionSequence {

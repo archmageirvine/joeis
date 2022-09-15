@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.recur.PeriodicSequence;
 
 /**
- * A010729 8-(-1)^n.
+ * A010729 a(n) = 8 - (-1)^n.
  * @author Sean A. Irvine
  */
 public class A010729 extends PeriodicSequence {

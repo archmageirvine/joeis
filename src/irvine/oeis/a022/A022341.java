@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003714;
 
 /**
- * A022341 Odd Fibbinary numbers; also 4*Fibbinary(n) + 1.
+ * A022341 a(n) = 4*A003714(n) + 1; the odd Fibbinary numbers.
  * @author Sean A. Irvine
  */
 public class A022341 extends A003714 {

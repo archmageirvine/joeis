@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001157;
 
 /**
- * A176030 a(n)= n^(sigma_2(n)).
+ * A176030 a(n) = n^(sigma_2(n)).
  * @author Georg Fischer
  */
 public class A176030 implements Sequence {

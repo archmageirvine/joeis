@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001950;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A003233 Numbers n such that A003231(A001950(n)) = A001950(A003231(n)).
+ * A003233 Numbers k such that A003231(A001950(k)) = A001950(A003231(k)).
  * @author Sean A. Irvine
  */
 public class A003233 implements Sequence {

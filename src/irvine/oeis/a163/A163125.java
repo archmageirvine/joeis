@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007953;
 
 
 /**
- * A163125 Sum of digits of the n-th Colombian number, A003052(n).
+ * A163125 Sum of digits of the n-th Self-number (or Colombian number), A003052(n).
  * Formula: <code>a(n) = A007953(A003052(n)).</code>
  * @author Georg Fischer
  */

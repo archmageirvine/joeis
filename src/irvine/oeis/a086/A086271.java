@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.UpperLeftTriangle;
 
 /**
- * A086271 Rectangular array T(n,k) of polygonal numbers, by diagonals.
+ * A086271 Rectangular array T(n,k) of polygonal numbers, by descending antidiagonals.
  *
  * @author Georg Fischer
  */

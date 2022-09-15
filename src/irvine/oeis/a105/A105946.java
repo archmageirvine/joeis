@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A105946 C(n+5,n)*C(n+3,3).
+ * A105946 a(n) = C(n+5,n)*C(n+3,3).
  * @author Sean A. Irvine
  */
 public class A105946 extends LinearRecurrence {

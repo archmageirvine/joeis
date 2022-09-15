@@ -156,6 +156,17 @@ public final class QuadraticCongruence {
     return res;
   }
 
+  private static Collection<Z> check(final Collection<Z> lst, final Z a, final Z b, final Z c, final Z pe) {
+    // This discards any spurious solutions that have accumulated.
+    final ArrayList<Z> res = new ArrayList<>();
+    for (final Z s : lst) {
+      if (s.square().multiply(a).add(s.multiply(b)).add(c).mod(pe).isZero()) {
+        res.add(s);
+      }
+    }
+    return res;
+  }
+
   /**
    * Solve <code>a*x^2+b*x+c = 0 (mod p^e)</code>
    * @param a coefficient
@@ -173,9 +184,9 @@ public final class QuadraticCongruence {
         final Collection<Z> res = new TreeSet<>();
         lift(res, Z.ZERO, p, pe);
         lift(res, a.modInverse(pe).modMultiply(pe.subtract(b), pe), p, pe);
-        return res;
+        return check(res, a, b, c, pe);
       } else {
-        return lift(new ArrayList<>(), Z.ZERO, p, pe);
+        return check(lift(new ArrayList<>(), Z.ZERO, p, pe), a, b, c, pe);
       }
     }
 

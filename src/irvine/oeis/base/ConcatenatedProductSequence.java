@@ -8,7 +8,7 @@ import irvine.oeis.SequenceWithOffset;
 
 /**
  * A sequences that enumerates numbers that are formed by the concatenation of two numbers,
- * and that are the product of two other numbers, with conditions on both pairs.
+ * and that are a square or a product of two other numbers, with conditions on both pairs.
  * @author Georg Fischer
  */
 public class ConcatenatedProductSequence implements SequenceWithOffset {
@@ -22,11 +22,9 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
   private final int mDist; // distance of the two factors of the resulting product (0 = square).
   private int mLevel; // 0 for long algorithm, 1 for msolve algorithm
   private long mLP; // unmodified factor of the product
-  private long mLC; // unmodified part of the concatenation
-  private long mLShift; // power of 10 for the shifting of the left concatenation part
   protected int mOffset; // first index
   private Z mPow10; // determines the width of the left concatenation number k resp. k+mIncr1 resp. k*mIncr1
-  private TreeSet<Z> mGood;
+  private final TreeSet<Z> mGood;
 
   /**
    * Construct the sequence.
@@ -49,16 +47,13 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
     mDist = dist;
     mLP = 1;
     if (mAdditive) {
-      mLC = conc2 == 0 ? 1 : (conc2 > 0 ? 0 : - conc2);
+      mLevel = 0;
+      mPow10 = Z.valueOf(LIMIT);
     } else {
-      mLC = 1;
+      mLevel = 2;
+      mPow10 = Z.ONE;
     }
-    mLShift = 10;
-    final long right = mAdditive ? mLC + mIncr2 : mLC * mIncr2;
-    while (mLShift <= right) {
-      mLShift *= 10;
-    } // now mLShift > right
-    mLevel = 0; // start with simple long algorithm
+    mGood = new TreeSet<>();
   }
 
   @Override
@@ -75,10 +70,10 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
             final long prod = mLP * (mLP + mDist);
             final String s = String.valueOf(prod);
             final int slen = s.length();
-            final int h = ((slen & 1) == 0) ? slen / 2 : (mIncr1 < mIncr2 ? slen / 2 : (slen + 1) / 2);
             if (slen > 1) {
-              final String his = s.substring(0, h);
-              final String los = s.substring(h);
+              final int half = ((slen & 1) == 0) ? slen / 2 : (mIncr1 < mIncr2 ? slen / 2 : (slen + 1) / 2); // half or half - 1
+              final String his = s.substring(0, half);
+              final String los = s.substring(half);
               if (!los.isEmpty() && !his.isEmpty() && los.charAt(0) != '0') {
                 long hi = 0;
                 long lo = 0;
@@ -94,15 +89,13 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
                     return result;
                   }
                 } catch (final RuntimeException exc) {
-                  System.out.println("exception, s=" + s + ", h=" + h + ", mLP=" + mLP);
+                  System.out.println("exception, s=" + s + ", half=" + half + ", mLP=" + mLP);
                 }
               }
             }
             ++mLP;
           }
-          mLevel = mAdditive ? 1 : 2;
-          mPow10 = Z.valueOf(LIMIT);
-          mGood = new TreeSet<>();
+          mLevel = 1;
           break;
   
         case 1: // additive: continue with an algorithm using Maple.msolve
@@ -120,7 +113,7 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
             map(t -> t-2, sort(convert(As, list))); # Robert Israel, Aug 20 2019
           */
           while (mGood.size() <= 0) {
-            final Z pow10p1 = mPow10.multiply(10);
+            final Z pow10p1 = mPow10.multiply(10); // start with 10
             final TreeSet<Z> acands = new TreeSet<>(QuadraticCongruence.solve(Z.ONE, Z.valueOf(mDist), Z.valueOf(-mIncr2), pow10p1.add(1))); // for A116170: msolve(a*(a+1)-2,10^m+1)
             for (final Z ta : acands) {
               final Z prod = ta.multiply(ta.add(mDist));
@@ -144,25 +137,30 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
         case 2: // multiplicative, similar msolve algorithm
           while (mGood.size() <= 0) {
             final Z pow10p1 = mPow10.multiply(10);
-            final TreeSet<Z> acands = new TreeSet<>(QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, pow10p1.add(mDist))); // for A115553: msolve(a^2,10^m+9)
-            for (final Z ta : acands) {
-              final Z prod = ta.square();
-              final Z bcand = prod.mod(pow10p1);
-              if (bcand.compareTo(mPow10) >= 0) {
-                if (prod.toString().startsWith(bcand.toString())) {
-                  mGood.add(mReturnConc ? bcand : ta);
+            try {
+              final TreeSet<Z> acands = new TreeSet<>(QuadraticCongruence.solve(Z.ONE, Z.ZERO, Z.ZERO, pow10p1.multiply(mIncr1).add(mIncr2))); // for A115553: msolve(a^2,10^m+9)
+              for (final Z ta : acands) {
+                final Z prod = ta.square();
+                final Z bcand = prod.mod(pow10p1);
+                if (bcand.compareTo(mPow10) >= 0) {
+                  final Z hcand = prod.divide(pow10p1);
+                  if (! bcand.isZero() && hcand.multiply(mIncr2).equals(bcand.multiply(mIncr1))) {
+                    mGood.add(mReturnConc ? (mIncr1 > 1 ? bcand : hcand) : ta);
+                  }
+                  if (VERBOSE) {
+                    System.out.println("ta=" + ta + ", prod=" + prod + ", bcand=" + bcand + ", hcand=" + hcand + ", pow10p1=" + pow10p1 + ", mIncr2=" + mIncr2);
+                  }
                 }
               }
               if (VERBOSE) {
-                System.out.println("ta=" + ta + ", prod=" + prod + ", bcand=" + bcand);
+                System.out.println("pow10p1=" + pow10p1 + ", acands=" + acands + ", mGood=" + mGood);
               }
+            } catch (final RuntimeException exc) {
+              // ignore
             }
             mPow10 = pow10p1;
-            if (VERBOSE) {
-              System.out.println("pow10p1=" + pow10p1 + ", acands=" + acands + ", mGood=" + mGood);
-            }
           }
-          return mGood.pollFirst().subtract(mIncr2);
+          return mGood.pollFirst();
 
         default:
           throw new RuntimeException("Unexpected level: " + mLevel);

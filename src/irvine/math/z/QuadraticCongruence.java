@@ -148,22 +148,16 @@ public final class QuadraticCongruence {
     return Collections.emptySet();
   }
 
-  private static Collection<Z> lift(final Collection<Z> res, Z lift, final Z p, final Z pe) {
+  private static Collection<Z> lift(final Collection<Z> res, Z lift, final Z a, final Z b, final Z c, final Z p, final Z pe) {
+    // There must be a better way to do this step.
+    // "lift" is a solution (mod p) and the idea is to lift to solutions (mod p^e).
+    // We do this by testing each of lift + k*p -- but there should be a better way with Hensel lemma
     do {
-      res.add(lift);
+      if (lift.square().multiply(a).add(lift.multiply(b)).add(c).mod(pe).isZero()) {
+        res.add(lift);
+      }
       lift = lift.add(p);
     } while (lift.compareTo(pe) < 0);
-    return res;
-  }
-
-  private static Collection<Z> check(final Collection<Z> lst, final Z a, final Z b, final Z c, final Z pe) {
-    // This discards any spurious solutions that have accumulated.
-    final ArrayList<Z> res = new ArrayList<>();
-    for (final Z s : lst) {
-      if (s.square().multiply(a).add(s.multiply(b)).add(c).mod(pe).isZero()) {
-        res.add(s);
-      }
-    }
     return res;
   }
 
@@ -182,11 +176,11 @@ public final class QuadraticCongruence {
       // Simplify to a linear congruence, x * (a*x+b) == 0 (mod p^e)
       if (pe.gcd(a).equals(Z.ONE)) {
         final Collection<Z> res = new TreeSet<>();
-        lift(res, Z.ZERO, p, pe);
-        lift(res, a.modInverse(pe).modMultiply(pe.subtract(b), pe), p, pe);
-        return check(res, a, b, c, pe);
+        lift(res, Z.ZERO, a, b, c, p, pe);
+        lift(res, a.modInverse(pe).modMultiply(pe.subtract(b), pe), a, b, c, p, pe);
+        return res;
       } else {
-        return check(lift(new ArrayList<>(), Z.ZERO, p, pe), a, b, c, pe);
+        return lift(new ArrayList<>(), Z.ZERO, a, b, c, p, pe);
       }
     }
 
@@ -223,7 +217,7 @@ public final class QuadraticCongruence {
       case -1:
         return Collections.emptySet();
       case 0:
-        return lift(new ArrayList<>(), p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], p), p, pe);
+        return lift(new ArrayList<>(), p.subtract(b).modMultiply(a.multiply2().extendedGcd(pe)[1], p), a, b, c, p, pe);
       default: // 1
         // May not work because 2a in 2^k problematic
         final TreeSet<Z> res = new TreeSet<>();

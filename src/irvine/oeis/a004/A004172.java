@@ -20,8 +20,8 @@ public class A004172 implements Sequence {
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> E1 = RING.create(Arrays.asList(Q.HALF.negate(), Q.ONE));
   private int mN = -2;
-  private int mM = 0;
-  private Polynomial<Q> mEulerPolynomial = RING.zero();
+  protected int mM = 0;
+  protected Polynomial<Q> mEulerPolynomial = RING.zero();
 
   protected Polynomial<Q> eulerPolynomial(final int n) {
     final A028296 eulerNumbers = new A028296();

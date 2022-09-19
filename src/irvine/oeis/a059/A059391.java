@@ -1,0 +1,45 @@
+package irvine.oeis.a059;
+
+import java.util.ArrayList;
+
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+
+/**
+ * A059363.
+ * @author Sean A. Irvine
+ */
+public class A059391 extends MemorySequence {
+
+  private final ArrayList<Long> mOmegas = new ArrayList<>(); // precomputed omega for sequence values
+
+  private boolean isOk(final long m, final long omegaM) {
+    for (int k = size() - 1; k >= 0; --k) {
+      final long v = get(k).longValueExact();
+      final long a = mOmegas.get(k);
+      final long b = Jaguar.factor(m + v).bigOmega();
+      if (omegaM - a != b) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  @Override
+  protected Z computeNext() {
+    final int n = size();
+    if (n == 0) {
+      mOmegas.add(2L);
+      return Z.FOUR;
+    }
+    long m = get(n - 1).longValueExact();
+    while (true) {
+      final long omegaM = Jaguar.factor(++m).bigOmega();
+      if (isOk(m, omegaM)) {
+        mOmegas.add(omegaM);
+        return Z.valueOf(m);
+      }
+    }
+  }
+}

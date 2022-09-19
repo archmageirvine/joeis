@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A059391 a(1)=4; a(n) is a k(n)-almost prime; m is an A-almost prime (for 1&lt;=A); a(n) = smallest number m&gt;a(n-1) such that a(i)+m is a (A-k(i))-almost prime for i = 1,2,3,..,n-1.
@@ -12,6 +13,7 @@ import irvine.oeis.MemorySequence;
  */
 public class A059391 extends MemorySequence {
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final ArrayList<Long> mOmegas = new ArrayList<>(); // precomputed omega for sequence values
   private final Z mStart;
 
@@ -49,6 +51,9 @@ public class A059391 extends MemorySequence {
       if (isOk(m, omegaM)) {
         mOmegas.add(omegaM);
         return Z.valueOf(m);
+      }
+      if (mVerbose && m % 100000000 == 0) {
+        StringUtils.message("Search complete to " + m);
       }
     }
   }

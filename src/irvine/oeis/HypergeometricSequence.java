@@ -38,7 +38,7 @@ public class HypergeometricSequence implements SequenceWithOffset {
    * @param offset first valid term has this index
    * @param p number of Pochhammer symbols in the "numerator"
    * @param q number of Pochhammer symbols in the "denominator"
-   * @param polyString nested expression of the form "[[c00,c01...],[c10,c11...]...[ck0,ck1...]]" with <code>k = p + q</code>,
+   * @param polyString nested expression of the form <code>"[[c00,c01...],[c10,c11...]...[ck0,ck1...]]"</code> with <code>k = p + q</code>,
    */
   public HypergeometricSequence(final int offset, final int p, final int q, final String polyString) {
     this(offset, p, q, toPolyArray(polyString));
@@ -177,7 +177,7 @@ public class HypergeometricSequence implements SequenceWithOffset {
 
   /**
    * Convert a String into a list of polynomials.
-   * @param polyString nested expression of the form "[[c00,c01...],[c10,c11...]...[ck0,ck1...]]" with <code>k = p + q</code>,
+   * @param polyString nested expression of the form <code>"[[c00,c01...],[c10,c11...]...[ck0,ck1...]]"</code> with <code>k = p + q</code>,
    * and Q constants <code>cij</code>.
    */
   public static Q[][] toPolyArray(final String polyString) {

@@ -24,7 +24,7 @@ public class A132901 extends A000040 implements SequenceWithOffset {
   /**
    * Generic constructor with parameters
    * @param offset first index
-   * @param count number of primes to be concateneated
+   * @param count number of primes to be concatenated
    */
   public A132901(final int offset, final int count) {
     mOffset = offset;

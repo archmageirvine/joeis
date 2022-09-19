@@ -144,7 +144,7 @@ public class VertexType implements Serializable {
    * Join an array of integers
    * @param delim delimiter
    * @param vector integer array
-   * @return a String of the form "[elem1,elem2.elem3]"
+   * @return a String of the form <code>"[elem1,elem2.elem3]"</code>
    */
   private static String join(final String delim, final int[] vector) {
     StringBuffer result = new StringBuffer(128);

@@ -16,7 +16,7 @@ import irvine.oeis.SequenceWithOffset;
  * A uniform tiling is built from a subset of the regular polygons
  * triangle, square, hexagon and dodecagon (other regular polygons like
  * the pentagon cannot be used). All edges are of unit length.
- * At the corners one of the 11 Archimedian vertex types occur,
+ * At the corners one of the 11 Archimedean vertex types occur,
  * maybe in reverse (flipped) orientation.
  * A coordination sequence enumerates the number of vertices
  * which have a certain minimal distance to the base vertex.
@@ -24,7 +24,6 @@ import irvine.oeis.SequenceWithOffset;
  * @author Georg Fischer
  */
 public class TilingSequence implements Serializable, SequenceWithOffset {
-  public final static String CVSID = "@(#) $Id: Vertex.java $";
 
   /** Debugging mode: 0=none, 1=some, 2=more */
   public static int sDebug;

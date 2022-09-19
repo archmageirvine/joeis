@@ -26,7 +26,7 @@ public class PositionSequence implements SequenceWithOffset {
 
   /**
    * Creates a sequence of the positions where a digit occurs in another sequence.
-   * @param offset first idnex
+   * @param offset first index
    * @param seq underlying sequence
    * @param start offset of <code>seq</code>
    * @param value the positions of this number are returned

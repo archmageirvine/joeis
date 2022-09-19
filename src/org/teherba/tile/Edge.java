@@ -11,7 +11,6 @@ import java.io.Serializable;
  * @author Georg Fischer
  */
 public class Edge implements Serializable {
-  public final static String CVSID = "@(#) $Id: Edge.java $";
 
   public int index;        // in the edge list
   public int ifocus;       // index of the focus vertex in the vertex list
@@ -20,7 +19,7 @@ public class Edge implements Serializable {
   public int distance;     // distance from the base set, for coloring
 
   /**
-   * Empty constructor, not used
+   * Empty constructor, not used.
    */
   public Edge() {
     index = -1;
@@ -58,7 +57,7 @@ public class Edge implements Serializable {
 
   /**
    * Returns a human readable representation of the Edge
-   * @return "ifocus-&gt;iproxy"
+   * @return <code>"ifocus-&gt;iproxy"</code>
    */
   public String toString() {
     return ifocus + "->" + iproxy;

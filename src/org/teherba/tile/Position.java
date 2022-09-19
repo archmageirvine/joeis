@@ -69,7 +69,7 @@ public class Position implements Serializable {
   /**
    * Adds a Position to <em>this</em> Position.
    * @param pos2 Position to be added
-   * @return this + pos2
+   * @return <code>this + pos2</code>
    */
   public Position add(final Position pos2) {
     Position result = new Position();
@@ -83,7 +83,7 @@ public class Position implements Serializable {
   /**
    * Subtracts a Position from <em>this</em> Position.
    * @param pos2 Position to be subtracted
-   * @return this - pos2
+   * @return <code>this - pos2</code>
    */
   private Position subtract(final Position pos2) {
     Position result = new Position();

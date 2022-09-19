@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A059050 implements Sequence {
 
-  private static final long[][] PARMS = {
+  protected static final long[][] PARMS = {
     {1, 128},
     {-42, 96},
     {210, 80},

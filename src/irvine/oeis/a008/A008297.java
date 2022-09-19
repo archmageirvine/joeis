@@ -15,13 +15,17 @@ public class A008297 implements Sequence {
   private int mN = 0;
   private int mM = 0;
 
+  protected Z lah(final int n, final int m) {
+    final Z t = Binomial.binomial(n - 1, m - 1).multiply(mF.factorial(n)).divide(mF.factorial(m));
+    return (n & 1) == 0 ? t : t.negate();
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 1;
     }
-    final Z t = Binomial.binomial(mN - 1, mM - 1).multiply(mF.factorial(mN)).divide(mF.factorial(mM));
-    return (mN & 1) == 0 ? t : t.negate();
+    return lah(mN, mM);
   }
 }

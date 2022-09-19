@@ -19,9 +19,9 @@ public class A059285 implements Sequence {
   public Z next() {
     if (++mK >= mNextFreeM) {
       final int mlen = mNextFreeM;
+      final int shift = 1 << mN;
       if ((++mN & 1) == 0) {
         // M'(2n)=M'(2n-1). (-f(-M'(2n-1), 2n-1)).(-M'(2n-1)).f(M'(2n-1), 2n-1),
-        int shift = 1 << (mN - 1);
         for (int k = 0; k < mlen; ++k) {
           mM.set(mNextFreeM++, -(shift + mM.get(k)));
         }
@@ -33,7 +33,6 @@ public class A059285 implements Sequence {
         }
       } else {
         // M'(2n+1)=M'(2n).f(M'(2n), 2n).(-M'(2n)).(-(f(-M'(2n), 2n+1)).
-        int shift = 1 << (mN - 1);
         for (int k = 0; k < mlen; ++k) {
           mM.set(mNextFreeM++, shift - mM.get(k));
         }

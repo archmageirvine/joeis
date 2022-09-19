@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A059363.
+ * A059363 Lexicographically earliest increasing sequence of positive integers such that A001222(a(i)+a(j)) = A001222(a(i)) + A001222(a(j)) for all 1&lt;=i&lt;j.
  * @author Sean A. Irvine
  */
 public class A059363 extends MemorySequence {

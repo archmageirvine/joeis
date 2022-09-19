@@ -11,6 +11,6 @@ public class A059378 extends MultiplicativeSequence {
 
   /** Construct the sequence. */
   public A059378() {
-    super(1, (p, e) -> p.pow(5 * e).subtract(p.pow(5 * (e - 1))));
+    super(1, (p, e) -> p.pow(5L * e).subtract(p.pow(5L * (e - 1))));
   }
 }

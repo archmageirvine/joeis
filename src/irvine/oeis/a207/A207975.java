@@ -58,6 +58,9 @@ public class A207975 implements Sequence {
     mOmegas = new long[mN];
     mBest = Long.MAX_VALUE;
     search(0, 0, 0);
+    if (mVerbose) {
+      StringUtils.message(Arrays.toString(mB) + " Sum: " + mBest);
+    }
   }
 
   @Override
@@ -65,9 +68,6 @@ public class A207975 implements Sequence {
     if (++mM >= mN) {
       step();
       mM = 0;
-      if (mVerbose) {
-        StringUtils.message(Arrays.toString(mB) + " Sum: " + mBest);
-      }
     }
     return Z.valueOf(mB[mM]);
   }

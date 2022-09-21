@@ -55,7 +55,7 @@ public class TilingSequence implements Serializable, SequenceWithOffset {
   /** Queue for vertices which must be investigated for next shell */
   private LinkedList<Integer> mQueue;
 
-  /** Distance of the current shell to the baseVertex */
+  /** Distance of the current shell to the base vertex */
   private int mDistance;
 
   /** How many vertices were added for current shell */
@@ -81,13 +81,13 @@ public class TilingSequence implements Serializable, SequenceWithOffset {
    * Constructor from pairs of Strings.
    * Initializes the data structures of <em>this</em> TilingSequence.
    * @param offset index of first sequence element
-   * @param pairs String array of semicolon-separated pairs "vertexId;taRotList"
+   * @param pairs String array of semicolon-separated pairs <code>"vertexId;taRotList"</code>
    */
   public TilingSequence(final int offset, String[] pairs) {
     final int vertexTypeNo = pairs.length;
     VertexTypeArray typeArray = new VertexTypeArray(vertexTypeNo);
-    for (int ipair = 0; ipair < vertexTypeNo; ipair ++) {
-      typeArray.decodeNotation(pairs[ipair]);
+    for (final String pair : pairs) {
+      typeArray.decodeNotation(pair);
     } // for ipair
     configure(offset, typeArray);
   } // Constructor(int,String[])
@@ -127,14 +127,14 @@ public class TilingSequence implements Serializable, SequenceWithOffset {
    * <li>4 = all pairs base vertex, proxy (evaluated by the caller)</li>
    * </ul>
    * @param baseIndex {@link VertexType} index of the first {@link Vertex}
-   * @param baseEdge number of an edge of the vertex with {@link VertexType} index <em>baseIndex</em>.
+   * @param baseEdge number of an edge of the vertex with {@link VertexType} index <code>baseIndex</code>.
    * This edge defines a polygon for modes 1,2. For modes 3,4, the proxy at the end of the edge is the second base vertex.
    * the polygon is to the right of the edge viewed in the direction of the proxy
    * at the end of the edge.<br>
    * All vertices belonging to this polygon constitute the first shell
    * (with offset 1), so these "loose" coordination sequences start with either
    * 3, 4, 6 or 12.<br>
-   * Both <em>baseIndex</em> and <em>baseEdge</em> start at 0 internally!
+   * Both <code>baseIndex</code> and <code>baseEdge</code> start at 0 internally!
    * @return number of queued vertices: 1, 2 or corner number.
    */
   public int defineBaseSet(final int mode, final int baseIndex, final int baseEdge) {
@@ -188,7 +188,7 @@ public class TilingSequence implements Serializable, SequenceWithOffset {
    * Defines the initial set of vertices, and initializes the tiling's dynamic data structures 
    * - convenience method.
    * @param baseIndex {@link VertexType} index of a single {@link Vertex}
-   * <em>baseIndex</em> starts at 0 internally!
+   * <code>baseIndex</code> starts at 0 internally!
    * @return number of queued vertices: 1.
    */
   public int defineBaseSet(final int baseIndex) {

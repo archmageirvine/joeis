@@ -127,8 +127,8 @@ public class Vertex implements Serializable {
 
   /**
    * Normalizes an edge.
-   * @param iedge, zero based, maybe negative or &gt;= edgeNo
-   * @return integer between 0 and edgeNo - 1.
+   * @param iedge, zero based, maybe negative or &gt;= <code>edgeNo</code>
+   * @return integer between 0 and <code>edgeNo - 1</code>.
    */
   protected int normEdge(int iedge) {
     while (iedge < 0) {
@@ -159,7 +159,7 @@ public class Vertex implements Serializable {
   } // getAngle
 
   /**
-   * Searches for the focus in the array <em>pxInds</em> of a proxy
+   * Searches for the focus in the array <code>pxInds</code> of a proxy
    * @param proxy a neighbour of the focus Vertex
    * @return the index where the focus is stored in the proxy,
    * or -1 if it was not found

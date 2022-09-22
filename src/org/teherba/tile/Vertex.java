@@ -38,7 +38,7 @@ public class Vertex implements Serializable {
   */
   public Vertex(final VertexType vtype) {
     this.vtype = vtype;
-    orient     = +1; // assume normal orientation
+    orient     = 1; // assume normal orientation
     distance   = -1; // unknown so far
     rotate     = 0;
     expos      = new Position();
@@ -79,10 +79,10 @@ public class Vertex implements Serializable {
    * @return JSON array with indices of the proxies
    */
   private String getProxyList() {
-    StringBuffer result = new StringBuffer(128);
+    StringBuilder result = new StringBuilder(128);
     for (int iedge = 0; iedge < vtype.edgeNo; iedge ++) {
       result.append(',');
-      result.append(String.valueOf(pxInds[iedge]));
+      result.append(pxInds[iedge]);
     } // for iedge
     return result.substring(1);
   } // getProxyList
@@ -92,17 +92,15 @@ public class Vertex implements Serializable {
    * @return JSON for all properties
    */
   public String toJSON() {
-    final String result
-        = "{ \"i\": "       + String.format("%4d", index)
-        + ", \"type\": "    + String.format("%2d", vtype.index)
-        + ", \"name\": "    + getName()
-        + ", \"orient\": "  + String.format("%3d", orient)
-        + ", \"rot\": "     + String.format("%3d", rotate)
-        + ", \"pxInds\": [" + getProxyList() + "]"
-        + ", \"pos\": \""   + expos.toString()  + "\""
-        + ", \"dist\": \""  + distance + "\""
-        + " }\n";
-    return result;
+    return "{ \"i\": "       + String.format("%4d", index)
+    + ", \"type\": "    + String.format("%2d", vtype.index)
+    + ", \"name\": "    + getName()
+    + ", \"orient\": "  + String.format("%3d", orient)
+    + ", \"rot\": "     + String.format("%3d", rotate)
+    + ", \"pxInds\": [" + getProxyList() + "]"
+    + ", \"pos\": \""   + expos.toString()  + "\""
+    + ", \"dist\": \""  + distance + "\""
+    + " }\n";
   } // toJSON
 
   /**

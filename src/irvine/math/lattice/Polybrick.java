@@ -18,7 +18,7 @@ public final class Polybrick {
   /**
    * Represent the animal as a Tikz string.
    * @param animal the animal
-   * @return Tik string.
+   * @return Tikz string.
    */
   public static String toTikz(final Animal animal) {
     final StringBuilder sb = new StringBuilder();

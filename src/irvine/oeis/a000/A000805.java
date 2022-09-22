@@ -49,7 +49,7 @@ public class A000805 extends PrependSequence {
         mT[14] = t;
         return t;
       }
-    }, Z.ONE, Z.ONE, Z.TWO, Z.SIX, Z.valueOf(24));
+    }, Z.ONE, Z.ONE, Z.TWO, Z.SIX, Z.valueOf(24), Z.valueOf(120));
   }
 }
 

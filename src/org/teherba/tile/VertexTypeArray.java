@@ -4,7 +4,6 @@
  * 2020-05-16, Georg Fischer: extracted from Tiling.java
  */
 package org.teherba.tile;
-import org.teherba.tile.VertexType;
 
 /**
  * This class provides an array of fixed size
@@ -12,13 +11,12 @@ import org.teherba.tile.VertexType;
  * @author Georg Fischer
  */
 public class VertexTypeArray {
-  public final static String CVSID = "@(#) $Id: VertexTypeArray.java $";
 
   /** Debugging mode: 0=none, 1=some, 2=more */
   protected static int sDebug;
 
   /** Allocated vertices */
-  private VertexType[] mVertexTypes; // [0], [1] are reserved
+  private final VertexType[] mVertexTypes; // [0], [1] are reserved
 
   /** First free index */
   private int mTAFree;
@@ -75,10 +73,10 @@ public class VertexTypeArray {
 
   /**
    * Modify an existing {@link VertexType} and set the parameters of the angle notation
-   * @param param a pair of Strings "vertexId;taRotList",
-   * where vertexId is a clockwise dot-separated list of the polygons followed by the list of types and angles,
-   * and  taRotList is a clockwise comma-separated list of vertex type names and angles (and apostrophe if flipped)
-   * aSeqno, galId and sequence are set to dummy values.
+   * @param param a pair of Strings <code>"vertexId;taRotList"</code>,
+   * where <code>vertexId</code> is a clockwise dot-separated list of the polygons followed by the list of types and angles,
+   * and <code>taRotList</code> is a clockwise comma-separated list of vertex type names and angles (and apostrophe if flipped)
+   * <code>aSeqno</code>, <code>galId</code> and sequence are set to dummy values.
    */
   public void decodeNotation(final String param) {
     final String[] pair = param.split(";");

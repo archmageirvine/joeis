@@ -11,5 +11,6 @@ public class A240924 extends PeriodicSequence {
   /** Construct the sequence. */
   public A240924() {
     super(1, 4, 4, 7, 1, 1, 7, 4, 7, 1, 7, 4, 4, 7, 1, 7, 4, 7, 1, 1, 7, 4, 4, 1);
+    setOffset(1);
   }
 }

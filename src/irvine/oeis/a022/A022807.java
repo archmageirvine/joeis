@@ -12,7 +12,7 @@ import irvine.oeis.a001.A001951;
  */
 public class A022807 extends Combiner {
 
-  private static class MySequence extends Combiner {
+  private static final class MySequence extends Combiner {
     private MySequence() {
       super(new A022838(), new SkipSequence(new A001951(), 1), ADD);
     }

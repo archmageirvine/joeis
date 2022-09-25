@@ -5,16 +5,17 @@ import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Base case for certain periodic sequences generated verbatim from a list.
  * @author Sean A. Irvine
  */
-public class PeriodicSequence implements Sequence {
+public class PeriodicSequence implements SequenceWithOffset {
 
   private final Z[] mSeq;
   private int mN = -1;
+  private int mOffset = 0; // default
 
   /**
    * Construct the sequence.
@@ -56,6 +57,15 @@ public class PeriodicSequence implements Sequence {
     ++mN;
     mN %= mSeq.length;
     return mSeq[mN];
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
+
+  public void setOffset(final int offset) {
+    mOffset = offset;
   }
 
   /**

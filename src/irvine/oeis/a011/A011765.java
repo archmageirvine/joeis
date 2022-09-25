@@ -11,5 +11,6 @@ public class A011765 extends PeriodicSequence {
   /** Construct the sequence. */
   public A011765() {
     super(0, 0, 0, 1);
+    setOffset(1);
   }
 }

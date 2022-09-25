@@ -23,7 +23,7 @@ public class A060032 implements SequenceWithOffset {
 
   @Override
   public Z next() {
-    Z result = new Z(mAn);
+    final Z result = new Z(mAn);
     mAn = mAn.replaceAll("1", "ana").replaceAll("2", "ann");
     mAn = mAn.replaceAll("a", "1").replaceAll("n", "2");
     return result;

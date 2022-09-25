@@ -11,5 +11,6 @@ public class A038591 extends UnionSequence {
   /** Construct the sequence. */
   public A038591() {
     super(new A038588(), new A038590());
+    mOffset = 0;
   }
 }

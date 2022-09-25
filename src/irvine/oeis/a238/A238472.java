@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A238472 C(5*n+7, 4)/5  for n&gt;= 0.
+ * A238472 a(n) = binomial(5*n+7, 4)/5  for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A238472 extends GeneratingFunctionSequence {

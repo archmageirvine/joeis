@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008277;
 
 /**
- * A039811 Matrix cube of Stirling2 triangle A008277.
+ * A039811 Triangle read by rows: matrix cube of the Stirling2 triangle A008277.
  * @author Sean A. Irvine
  */
 public class A039811 extends A008277 {

@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A248691 Number of letters in the n-th book of the King James Version of the Holy Bible.
+ * A248691 Not appropriate for the OEIS.
  * @author Georg Fischer
  */
 public class A248691 extends FiniteSequence {

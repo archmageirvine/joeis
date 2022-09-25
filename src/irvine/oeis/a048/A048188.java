@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005114;
 
 /**
- * A048188 a(n)=phi(n-th untouchable number, A005114[ n ]).
+ * A048188 a(n) = phi(n-th untouchable number).
  * @author Sean A. Irvine
  */
 public class A048188 extends A005114 {

@@ -16,8 +16,11 @@ public class A004154 implements Sequence {
   public Z next() {
     if (++mN > 1) {
       mF = mF.multiply(mN);
-      while (mF.mod(10) == 0) {
-        mF = mF.divide(10);
+      if (mN % 5 == 0) {
+        Z[] qr;
+        while ((qr = mF.divideAndRemainder(Z.TEN))[1].isZero()) {
+          mF = qr[0];
+        }
       }
     }
     return mF;

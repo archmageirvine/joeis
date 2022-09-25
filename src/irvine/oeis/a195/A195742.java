@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A195742 The standard gematria value of the Hebrew Bible.
+ * A195742 Not appropriate for the OEIS.
  * @author Georg Fischer
  */
 public class A195742 extends NoncomputableSequence {

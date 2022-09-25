@@ -26,7 +26,7 @@ public class A005815 implements Sequence {
      - (n-9)*(n-8)*(n-7)*(n-6)*(n-5)*(n-4)*(n-3)*(n-2)*(n-1)*(36*n^5 - 532*n^4 + 3046*n^3 - 8081*n^2 + 8963*n - 2148)*a(n-10)
   */
 
-  private Z[] mA = {Z.ONE, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ONE, Z.valueOf(15), Z.valueOf(465), Z.valueOf(19355), Z.valueOf(1024380)};
+  private final Z[] mA = {Z.ONE, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ONE, Z.valueOf(15), Z.valueOf(465), Z.valueOf(19355), Z.valueOf(1024380)};
   private long mN = -1;
 
   @Override

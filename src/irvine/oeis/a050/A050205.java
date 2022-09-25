@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050205 Number of terms in unit fraction representation of triangle of numbers 1/2, 1/3, 2/3, 1/4, 2/4, ... as computed with greedy algorithm.
+ * A050205 Triangle read by rows: number of terms in unit fraction representation of k/n using the greedy algorithm, 1&lt;=k&lt;=n-1.
  * @author Sean A. Irvine
  */
 public class A050205 implements Sequence {

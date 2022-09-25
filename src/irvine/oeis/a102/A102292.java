@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102292 Sequence "Welcome to the On-Line Encyclopedia of Integer Sequences".
+ * A102292 Not appropriate for the OEIS.
  * @author Georg Fischer
  */
 public class A102292 extends FiniteSequence {

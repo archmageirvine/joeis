@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000301;
 import irvine.oeis.a010.A010098;
 
 /**
- * A166470 2^F(n+1)*3^F(n), where F(n) is the n-th Fibonacci number (A000045(n)).
+ * A166470 a(n) = 2^F(n+1)*3^F(n), where F(n) is the n-th Fibonacci number (A000045(n)).
  * @author Georg Fischer
  */
 public class A166470 implements Sequence {

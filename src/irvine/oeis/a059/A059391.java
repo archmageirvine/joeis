@@ -8,7 +8,7 @@ import irvine.oeis.MemorySequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A059391 a(1)=4; a(n) is a k(n)-almost prime; m is an A-almost prime (for 1&lt;=A); a(n) = smallest number m&gt;a(n-1) such that a(i)+m is a (A-k(i))-almost prime for i = 1,2,3,..,n-1.
+ * A059391 a(1)=4; a(n) is the smallest number m &gt; a(n-1) such that Omega(m + a(i)) = Omega(m) - Omega(a(i)) for i = 1..(n-1) where Omega(k) is the number of prime divisors of k counted with multiplicity.
  * @author Sean A. Irvine
  */
 public class A059391 extends MemorySequence {

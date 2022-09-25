@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.recur.GeneratingFunctionSequence;
 
 /**
- * A118415 (4*n - 3) * 2^(n - 1).
+ * A118415 a(n) = (4*n - 3) * 2^(n - 1).
  * @author Georg Fischer
  */
 public class A118415 extends GeneratingFunctionSequence {

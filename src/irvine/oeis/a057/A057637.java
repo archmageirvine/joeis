@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057637 a(n) is the largest number such that sigma(a(n)) = n, where sigma is the sum of divisors function (A000203).
+ * A057637 a(n) is the largest number k such that sigma(k) = n, where sigma is the sum of divisors function A000203, or 0 is no such k exists.
  * @author Sean A. Irvine
  */
 public class A057637 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059401.
+ * A059404 Numbers with different exponents in their prime factorizations.
  * @author Sean A. Irvine
  */
 public class A059404 implements Sequence {

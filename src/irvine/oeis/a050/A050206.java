@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050206 Smallest denominator in unit fraction representation of triangle of numbers 1/2, 1/3, 2/3, 1/4, 2/4, ... as computed with greedy algorithm.
+ * A050206 Triangle read by rows: smallest denominator of the expansion of k/n using the greedy algorithm, 1&lt;=k&lt;=n-1.
  * @author Sean A. Irvine
  */
 public class A050206 implements Sequence {

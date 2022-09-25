@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A280090 Standard Gematria values of the 28 Hebrew letters of Genesis 1:1.
+ * A280090 Not appropriate for the OEIS.
  * @author Georg Fischer
  */
 public class A280090 extends FiniteSequence {

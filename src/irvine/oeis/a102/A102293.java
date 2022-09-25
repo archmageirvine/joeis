@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102293 Sequence "I am sorry, but the terms of this sequence do not match anything in the table.".
+ * A102293 Not appropriate for the OEIS.
  * @author Georg Fischer
  */
 public class A102293 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a008.A008836;
 import irvine.oeis.a076.A076479;
 
 /**
- * A162511 Multiplicative function with a(p^e)=(-1)^(e-1).
+ * A162511 Multiplicative function with a(p^e) = (-1)^(e-1).
  * @author Georg Fischer
  */
 public class A162511 implements Sequence {

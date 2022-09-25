@@ -9,8 +9,18 @@ import irvine.oeis.a002.A002808;
  */
 public class A006508 extends A002808 {
 
+  private final long mStart;
   private Z mA = null;
   private Z mCompositeCount = Z.ZERO;
+
+  protected A006508(final long start) {
+    mStart = start;
+  }
+
+  /** Construct the sequence. */
+  public A006508() {
+    this(1);
+  }
 
   private Z findComposite() {
     Z t;
@@ -23,7 +33,7 @@ public class A006508 extends A002808 {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.ONE : findComposite();
+    mA = mA == null ? Z.valueOf(mStart) : findComposite();
     return mA;
   }
 

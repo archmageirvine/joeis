@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A178308 Decimal expansion of (111+sqrt(25277))/158.
+ * A178308 Decimal expansion of (111 + sqrt(25277))/158.
  * @author Georg Fischer
  */
 public class A178308 extends DecimalExpansionSequence {

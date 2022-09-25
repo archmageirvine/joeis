@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A248689 Number of verses in the n-th book of the King James Version of the Holy Bible.
+ * A248689 Not appropriate for the OEIS.
  * @author Georg Fischer
  */
 public class A248689 extends FiniteSequence {

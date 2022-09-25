@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.triangle.Triangle;
 
 /**
- * A246609 Number T(n,k) of endofunctions on [n] whose cycle lengths are multiples of k; triangle T(n,k), n&gt;=0, 0&lt;=k&lt;=n, read by rows.
+ * A246609 Number T(n,k) of endofunctions on [n] whose cycle lengths are multiples of k; triangle T(n,k), n &gt;= 0, 0 &lt;= k &lt;= n, read by rows.
  * @author Georg Fischer
  */
 public class A246609 extends Triangle {

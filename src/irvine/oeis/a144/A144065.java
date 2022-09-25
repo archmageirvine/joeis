@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A144065 Values of n such that the expression sqrt(4!*(n+1) + 1) yields an integer.
+ * A144065 Values of k such that the expression sqrt(4!*(k+1) + 1) yields an integer.
  * @author Sean A. Irvine
  */
 public class A144065 extends LinearRecurrence {

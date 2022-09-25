@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059401.
+ * A059401 Numbers that contain as proper substrings every maximal prime power dividing them.
  * @author Sean A. Irvine
  */
 public class A059401 implements Sequence {

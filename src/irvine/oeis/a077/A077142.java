@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.cons.DecimalExpansionSequence;
 
 /**
- * A077142 Decimal expansion of b = log(2*Pi)-1-Gamma/2.
+ * A077142 Decimal expansion of b = log(2*Pi) - 1 - gamma/2.
  * @author Georg Fischer
  */
 public class A077142 extends DecimalExpansionSequence {

@@ -17,6 +17,7 @@ import irvine.oeis.Sequence;
  */
 public class A059446 implements Sequence {
 
+  private static final Polynomial<Polynomial<Q>> DEN = new PolynomialRingField<>(new PolynomialRingField<>(Rationals.SINGLETON)).create(Arrays.asList(Polynomial.create(Q.ONE, Q.NEG_ONE), Polynomial.create(Q.NEG_ONE, Q.NEG_ONE)));
   private Polynomial<Polynomial<Q>> mEgf;
   private int mN = -1;
   private int mM = 0;
@@ -29,9 +30,7 @@ public class A059446 implements Sequence {
       if (++mN == 0) {
         mEgf = ring.one();
       } else {
-        final Polynomial<Q> s = Polynomial.create(Q.ONE, Q.NEG_ONE);
-        final Polynomial<Q> t = Polynomial.create(Q.NEG_ONE, Q.NEG_ONE);
-        mEgf = ring.series(ring.one(), ring.create(Arrays.asList(s, t)), mN);
+        mEgf = ring.series(ring.one(), DEN, mN);
       }
       mM = 0;
     }

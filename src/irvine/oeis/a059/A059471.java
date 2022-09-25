@@ -11,6 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A059471 implements Sequence {
 
+  private static final Z LAST = Z.valueOf(3377464733L);
   private final HashSet<Z> mSeen = new HashSet<>();
   private Z mA = null;
 
@@ -18,13 +19,15 @@ public class A059471 implements Sequence {
   public Z next() {
     if (mA == null) {
       mA = Z.TWO;
+    } else if (LAST.equals(mA)) {
+      return null;
     } else {
       Z mod = Z.ONE;
       outer:
       while (true) {
         final Z[] qr = mA.divideAndRemainder(mod);
         final Z left = qr[0].divide(10).multiply(10);
-        for (long add = 0; add < 10; ++add) {
+        for (long add = left.isZero() ? 1 : 0; add < 10; ++add) {
           final Z u = left.add(add);
           if (!u.equals(qr[0])) {
             final Z t = u.multiply(mod).add(qr[1]);

@@ -11,7 +11,7 @@ public class A273619 extends UpperLeftTriangle {
 
   /** Construct the sequence. */
   public A273619() {
-    super(2, 1, 1);
+    super(2, 2, 1, 1);
   }
 
   @Override

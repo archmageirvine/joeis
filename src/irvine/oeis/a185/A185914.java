@@ -9,6 +9,11 @@ import irvine.oeis.triangle.UpperLeftTriangle;
  */
 public class A185914 extends UpperLeftTriangle {
 
+  /** Construct the sequence. */
+  public A185914() {
+    super(1, 0, 0, -1);
+  }
+
   @Override
   public Z matrixElement(int n, int k) {
     ++n;

@@ -13,6 +13,11 @@ public class A082775 extends A346426 {
   private int mN = -1;
 
   @Override
+  public int getOffset() {
+    return 2;
+  }
+
+  @Override
   public Z next() {
     ++mN;
     return super.matrixElement(mN, 2);

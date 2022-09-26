@@ -14,6 +14,11 @@ public class A047760 extends A047750 {
   private long mN = 0;
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     final Z t = mA.next().add(mB.next());
     if ((++mN & 1) != 1) {

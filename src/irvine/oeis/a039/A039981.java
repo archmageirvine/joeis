@@ -14,6 +14,11 @@ public class A039981 extends A052709 {
   }
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     return super.next().mod(Z.THREE);
   }

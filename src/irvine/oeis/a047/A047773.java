@@ -15,6 +15,11 @@ public class A047773 extends A047750 {
   private long mN = 0;
 
   @Override
+  public int getOffset() {
+    return 1; // is a list
+  }
+
+  @Override
   public Z next() {
     final Z t = mA.next().multiply2().add(mB.next());
     final long r = ++mN % 3;

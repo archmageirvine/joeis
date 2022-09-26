@@ -15,6 +15,11 @@ public class A035499 extends PositionSubsequence {
   }
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public boolean isOk(final Z term) {
     return Z.ONE.equals(term);
   }

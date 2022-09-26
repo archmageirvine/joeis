@@ -13,6 +13,11 @@ public class A039624 extends A004601 {
   private long mBias = 0;
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     while (true) {
       ++mN;

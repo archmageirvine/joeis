@@ -12,7 +12,7 @@ public class A057145 extends UpperLeftTriangle {
 
   /** Construct the sequence. */
   public A057145() {
-    super(0, 0, 1);
+    super(2, 0, 0, 1);
   }
 
   @Override

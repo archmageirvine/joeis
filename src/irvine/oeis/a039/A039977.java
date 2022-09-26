@@ -12,7 +12,13 @@ public class A039977 extends A052709 {
   {
     super.next();
   }
+
   private long mMult = -1;
+
+  @Override
+  public int getOffset() {
+    return 1;
+  }
 
   @Override
   public Z next() {

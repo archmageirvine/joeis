@@ -14,6 +14,11 @@ public class A047808 extends A001481 {
   private long mN = -1;
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     final Z n2 = Z.valueOf(++mN).square();
     while (mA.compareTo(n2) <= 0) {

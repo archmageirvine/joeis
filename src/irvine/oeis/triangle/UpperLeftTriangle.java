@@ -1,28 +1,29 @@
 package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
+import irvine.oeis.SequenceWithOffset;
 
 /**
  * Rearrange a matrix M as a {@link Triangle} by enumerating the antidiagonals
  * in descending (NE -&gt; SW) or ascending (SW -&gt; NE) order.
  * The upper left corner of the matrix is <code>M(row0,col0)</code>,
  * while the resulting Triangle always starts with <code>T(0, 0)</code>.
- *
  * @author Georg Fischer
  */
-public class UpperLeftTriangle extends Triangle {
+public class UpperLeftTriangle extends Triangle implements SequenceWithOffset {
 
   protected int mRow; // current row index n
   protected int mCol; // current column index k
   protected int mRow0; // first row index
   protected int mCol0; // first columns index 
   protected int mDir; // direction: +1 = ascending, -1 = descending
+  protected int mOffset; // first index
 
   /**
    * Empty constructor.
    */
   public UpperLeftTriangle() {
-    this(0, 0, -1);
+    this(0, 0, 0, -1);
   }
 
   /**
@@ -30,7 +31,7 @@ public class UpperLeftTriangle extends Triangle {
    * @param row0 first row index
    */
   public UpperLeftTriangle(final int row0) {
-    this(row0, row0, -1);
+    this(row0 == 0 ? 0 : 1, row0, row0, -1);
   }
 
   /**
@@ -40,9 +41,39 @@ public class UpperLeftTriangle extends Triangle {
    * @param dir direction: +1 = ascending, -1 = descending
    */
   public UpperLeftTriangle(final int row0, final int col0, final int dir) {
+    this(row0 == 0 ? 0 : 1, row0, col0, dir);
+  }
+
+  /**
+   * Constructor with corner indices and direction-
+   * @param offset first index of the resulting sequence
+   * @param row0 first row index
+   * @param col0 first column index
+   * @param dir direction: +1 = ascending, -1 = descending
+   */
+  public UpperLeftTriangle(final int offset, final int row0, final int col0, final int dir) {
+    mOffset = offset;
     mRow0 = row0;
     mCol0 = col0;
     mDir = dir;
+  }
+
+  /**
+   * Get the offset of the sequence.
+   * Used for b-file creation.
+   * @return first index
+   */
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
+
+  /**
+   * Set the offset for the sequence or for a subclass that represents a column or row.
+   * @offset first index
+   */
+  public void setOffset(final int offset) {
+    mOffset = offset;
   }
 
   /**

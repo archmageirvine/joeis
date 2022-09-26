@@ -12,6 +12,11 @@ public class A022413 extends A000201 {
   private long mN = 2;
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     return ++mN == 3 ? Z.ONE : super.next().add(mN);
   }

@@ -14,5 +14,6 @@ public class A137810 extends IntersectionSequence {
   /** Construct the sequence. */
   public A137810() {
     super(new A000225(), new A003261());
+    mOffset = 0;
   }
 }

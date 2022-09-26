@@ -13,30 +13,45 @@ import irvine.oeis.triangle.UpperLeftTriangle;
 public class A073060 extends UpperLeftTriangle {
 
   protected MemorySequence mSeq;
+  private int mOffset;
 
   /** Construct the sequence. */
   public A073060() {
-    super(0, 0, -1);
-    mSeq = MemorySequence.cachedSequence(new A006005());
+    this(0, new A006005(), 0);
   }
 
   /**
-   * Generic constructor with parameters
+   * Generic constructor with parameter
    * @param seq underlying Sequence
    */
   public A073060(final Sequence seq) {
-    super(0, 0, -1);
-    mSeq = MemorySequence.cachedSequence(seq);
+    this(0, seq, 0);
   }
 
   /**
-   * Generic constructor with parameters
+   * Generic constructor with parameters.
    * @param seq underlying Sequence
-   * @param count number of terms of <code>mSeq</code> to be skipped
+   * @param skip number of terms of <code>seq</code> to be skipped
    */
   public A073060(final Sequence seq, final int skip) {
+    this(0, seq, skip);
+  }
+
+  /**
+   * Generic constructor with parameters.
+   * @param offset first index
+   * @param seq underlying Sequence
+   * @param skip number of terms of <code>seq</code> to be skipped
+   */
+  public A073060(final int offset, final Sequence seq, final int skip) {
     super(skip, skip, -1);
+    mOffset = offset;
     mSeq = MemorySequence.cachedSequence(seq);
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

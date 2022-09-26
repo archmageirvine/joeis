@@ -14,8 +14,14 @@ public class A046399 extends A002113 {
 
   private final LongDynamicArray<Z> mA = new LongDynamicArray<>();
   private long mN = -1;
+
   {
     super.next(); // skip 0
+  }
+
+  @Override
+  public int getOffset() {
+    return 0;
   }
 
   @Override

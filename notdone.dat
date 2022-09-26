@@ -2030,3 +2030,5 @@ A059119 Triangle a(n,m)=number of m-element antichains on a labeled n-set; numbe
 A059254 Size of maximal subset of the Sobol sequence (projection of a 0/1-cube with the projection vectors b_i=(i,rev(i)), where rev(i) is the value of the reversed binary representation of i).
 A059282 Number of symmetric trivalent (or cubic) connected graphs on 2n nodes (the Foster census).
 A059442 Array of Ramsey numbers R(n,k) read by antidiagonals
+A059494 For odd p such that 2^p-1 is a prime (A000043), write 2^p-1 = x^2+3*y^2; sequence gives values of x [needs LLL]
+A059495 For odd p such that 2^p-1 is a prime (A000043), write 2^p-1 = x^2+3*y^2; sequence gives values of y [needs LLL]

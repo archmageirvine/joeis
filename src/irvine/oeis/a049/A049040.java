@@ -14,8 +14,14 @@ public class A049040 extends A006988 {
   private final Sequence mSophieGermain = new A005384();
   private Z mP = mSophieGermain.next();
   private long mCnt = 0;
+
   {
     super.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return 1;
   }
 
   @Override

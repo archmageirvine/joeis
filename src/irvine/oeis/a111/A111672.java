@@ -10,6 +10,11 @@ import irvine.oeis.a144.A144150;
 public class A111672 extends A144150 {
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z matrixElement(final int n, final int k) {
     return super.matrixElement(n + 1, k);
   }

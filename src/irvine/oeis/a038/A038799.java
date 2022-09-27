@@ -5,5 +5,10 @@ package irvine.oeis.a038;
  * @author Sean A. Irvine
  */
 public class A038799 extends A038732 {
-  // Apparently the same
+  // Apparently the same (except for the offset):
+
+  @Override
+  public int getOffset() {
+    return 0;
+  }
 }

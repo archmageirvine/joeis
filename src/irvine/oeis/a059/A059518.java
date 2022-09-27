@@ -15,6 +15,8 @@ import irvine.oeis.Sequence;
  */
 public class A059518 implements Sequence {
 
+  // todo this is wrong -- bad coordinate system
+
   private static final Lattice L = Lattices.HEXAGONAL;
   private long mN = 0;
   private Z mSumX = Z.ZERO;

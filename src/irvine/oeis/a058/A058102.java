@@ -18,6 +18,11 @@ public class A058102 extends A007251 {
   private final Polynomial<Q> mA = RING.empty();
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     final Z t = super.next();
     mA.add(++mN == 1 ? new Q(16) : new Q(t));

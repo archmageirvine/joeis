@@ -12,6 +12,11 @@ public class A169888 extends A145855 {
   private int mN = -1;
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     ++mN;
     if (mN == 0) {

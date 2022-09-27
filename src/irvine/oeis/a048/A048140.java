@@ -18,6 +18,11 @@ public class A048140 extends A000219 {
   }
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     return super.next().add(mS.next()).divide2();
   }

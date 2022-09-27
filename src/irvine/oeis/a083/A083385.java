@@ -14,6 +14,11 @@ public class A083385 extends A261781 {
   private int mN = 0;
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     ++mN;
     return super.triangleElement(mN + 1, mN).divide2();

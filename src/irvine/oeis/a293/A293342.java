@@ -11,11 +11,16 @@ import irvine.oeis.a068.A068425;
 public class A293342 extends A068425 {
 
   protected int mN;
-  
+
   /** Construct the sequence */
   public A293342() {
     mN = -1;
     super.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return 0;
   }
 
   @Override

@@ -10,6 +10,11 @@ import irvine.oeis.a085.A085984;
 public class A033259 extends A085984 {
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public CR getCR() {
     return super.getCR().square().subtract(CR.ONE).sqrt();
   }

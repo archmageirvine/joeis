@@ -14,6 +14,11 @@ public class A035308 extends A045757 {
   private Z mT = Z.ONE;
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     if (++mN == 0) {
       return Z.ONE;

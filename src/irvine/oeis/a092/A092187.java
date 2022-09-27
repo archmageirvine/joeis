@@ -1,5 +1,5 @@
 package irvine.oeis.a092;
-// manually divmul at 2021-08-20 23:36
+// manually divmul at 2021-08-20
 
 import irvine.math.z.Z;
 
@@ -13,6 +13,11 @@ public class A092187 extends A092186 {
   public A092187() {
     super.next();
     super.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return 2;
   }
 
   @Override

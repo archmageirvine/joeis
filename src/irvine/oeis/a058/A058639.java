@@ -18,6 +18,11 @@ public class A058639 extends A152944 {
   private int mN = -1;
 
   @Override
+  public int getOffset() {
+    return 0;
+  }
+
+  @Override
   public Z next() {
     mA.add(new Q(super.next()));
     return RING.sqrt(mA, ++mN).coeff(mN).toZ();

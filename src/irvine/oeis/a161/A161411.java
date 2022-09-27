@@ -11,6 +11,11 @@ import irvine.oeis.a048.A048883;
 public class A161411 extends A048883 {
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     return super.next().multiply(4);
   }

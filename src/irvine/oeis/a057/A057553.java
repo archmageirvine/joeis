@@ -12,6 +12,11 @@ public class A057553 extends A057552 {
   private boolean mFirst = true;
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     if (mFirst) {
       mFirst = false;

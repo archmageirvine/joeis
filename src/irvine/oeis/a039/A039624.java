@@ -14,7 +14,7 @@ public class A039624 extends A004601 {
 
   @Override
   public int getOffset() {
-    return 0;
+    return 1;
   }
 
   @Override

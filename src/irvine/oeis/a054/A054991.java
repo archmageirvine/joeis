@@ -15,6 +15,11 @@ public class A054991 extends A033312 {
   }
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     return Z.valueOf(Jaguar.factor(super.next()).bigOmega());
   }

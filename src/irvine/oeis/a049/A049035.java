@@ -14,8 +14,14 @@ public class A049035 extends A006988 {
   private final Sequence mTwinLower = new A001359();
   private Z mP = mTwinLower.next();
   private long mCnt = 0;
+
   {
     super.next();
+  }
+
+  @Override
+  public int getOffset() {
+    return 1;
   }
 
   @Override

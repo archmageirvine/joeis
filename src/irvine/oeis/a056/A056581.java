@@ -14,6 +14,11 @@ public class A056581 extends A056580 {
   }
 
   @Override
+  public int getOffset() {
+    return 1;
+  }
+
+  @Override
   public Z next() {
     return CR.valueOf(super.next()).subtract(CR.PI.multiply(CR.valueOf(mN).sqrt()).exp()).inverse().round();
   }

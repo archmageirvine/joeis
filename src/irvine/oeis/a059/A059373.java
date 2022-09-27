@@ -11,6 +11,11 @@ public class A059373 extends A059370 {
   private int mN = 0;
 
   @Override
+  public int getOffset() {
+    return 2;
+  }
+
+  @Override
   public Z next() {
     ++mN;
     for (int k = 0; k < mN; ++k) {

@@ -13,7 +13,7 @@ public class A059117 implements Sequence {
   private int mN = -1;
   private int mM = 0;
 
-  private Z lambda(final int k, final int n) {
+  protected Z lambda(final int k, final int n) {
     Z sum = Z.ZERO;
     for (int j = 0; j <= k; ++j) {
       sum = sum.signedAdd(((k + j) & 1) == 0, Binomial.binomial(k, j).multiply(Z.valueOf((j - 1) * (long) j / 2).pow(n)));

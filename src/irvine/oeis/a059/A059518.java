@@ -1,11 +1,11 @@
 package irvine.oeis.a059;
 
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.Set;
 
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
+import irvine.math.r.DoubleUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -15,16 +15,15 @@ import irvine.oeis.Sequence;
  */
 public class A059518 implements Sequence {
 
-  // todo this is wrong -- bad coordinate system
+  // todo this is first wrong at n==31, I don't think it is a precision issue
 
-  private static final int[] CLOCKWISE = {0, 2, 4, 1, 5, 3};
   private static final Lattice L = Lattices.HEXAGONAL;
   private static final double COS30 = Math.cos(Math.PI / 6);
   private long mN = 0;
   private long mSumX = 0;
   private long mSumY = 0;
   private final HashSet<Long> mUsed = new HashSet<>();
-  private final LinkedList<Long> mPts = new LinkedList<>();
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
   private double sqDistSum(final double cx, final double cy) {
     double sqSum = 0;
@@ -177,17 +176,47 @@ public class A059518 implements Sequence {
     return sqDistSum(cx, cy) + rx * rx + ry * ry;
   }
 
+  private String toTikz() {
+    long sumX = 0;
+    long sumY = 0;
+    final StringBuilder sb = new StringBuilder();
+    sb.append("\\noindent$n=").append(mN).append("$, $n^2R^2=").append(DoubleUtils.NF4.format(sqDistance(mUsed) * mN)).append("$\\\\\n");
+    sb.append("\\begin{tikzpicture}[scale=0.5]\n");
+    for (final long point : mUsed) {
+      final long x = L.ordinate(point, 0);
+      final long y = L.ordinate(point, 1);
+      sumX += x;
+      sumY += y;
+      sb.append("  \\draw[fill] (")
+        .append(DoubleUtils.NF4.format(0.5 * x))
+        .append(',')
+        .append(DoubleUtils.NF4.format(COS30 * y))
+        .append(") circle (.5ex);\n");
+    }
+    final double cx = 0.5 * sumX / mUsed.size();
+    final double cy = COS30 * sumY / mUsed.size();
+    sb.append("  \\draw[red] (")
+      .append(DoubleUtils.NF4.format(cx))
+      .append(',')
+      .append(DoubleUtils.NF4.format(cy))
+      .append(") circle (.5ex);\n");
+    sb.append("\\end{tikzpicture}");
+    return sb.toString();
+  }
 
   @Override
   public Z next() {
     if (++mN == 1) {
       mUsed.add(L.origin());
-      mPts.add(L.origin());
       return Z.ZERO;
     } else if (mN > 3) {
-      step(); // step2() does not help getting n==31
+      step(); // step2() does not resolve the problem at n==31
+      if (mVerbose) {
+        System.out.println(toTikz());
+      }
       return Z.valueOf(Math.round(sqDistance(mUsed) * mN));
     } else {
+      // The following code first fails at n=22
       // Find closest unused point
       double bestSqDistance = Double.POSITIVE_INFINITY;
       long bestPt = 0;
@@ -205,9 +234,11 @@ public class A059518 implements Sequence {
       mUsed.add(bestPt);
       final long x = L.ordinate(bestPt, 0);
       final long y = L.ordinate(bestPt, 1);
-      System.out.println("Using (" + x + "," + y + ")");
       mSumX += x;
       mSumY += y;
+      if (mVerbose) {
+        System.out.println(toTikz());
+      }
       return Z.valueOf(Math.round(bestSqDistance * mN));
     }
   }

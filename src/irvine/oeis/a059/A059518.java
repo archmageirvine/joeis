@@ -243,4 +243,3 @@ public class A059518 implements Sequence {
     }
   }
 }
-

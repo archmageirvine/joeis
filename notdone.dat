@@ -2032,3 +2032,6 @@ A059282 Number of symmetric trivalent (or cubic) connected graphs on 2n nodes (t
 A059442 Array of Ramsey numbers R(n,k) read by antidiagonals
 A059494 For odd p such that 2^p-1 is a prime (A000043), write 2^p-1 = x^2+3*y^2; sequence gives values of x [needs LLL]
 A059495 For odd p such that 2^p-1 is a prime (A000043), write 2^p-1 = x^2+3*y^2; sequence gives values of y [needs LLL]
+A059523 Simple dependency of A059052.
+A059525 Number of nonzero n X n binary arrays with all 1's connected.
+A059573 Polyotessamino numbers T(n,k) (1<=k<=n): take all the polyominoes with n cells (including those with holes but excluding rotations and reflections); fill them as completely as possible with rectangular 1 X k tiles; T(n,k) is number of ways of doing this. [probably erroneous]

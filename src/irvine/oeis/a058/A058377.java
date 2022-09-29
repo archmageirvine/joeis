@@ -12,7 +12,7 @@ public class A058377 extends MemoryFunctionInt2<Z> implements Sequence {
 
   // After Alois P. Heinz
 
-  private int mN = 0;
+  protected int mN = 0;
 
   @Override
   protected Z compute(final int n, final int i) {

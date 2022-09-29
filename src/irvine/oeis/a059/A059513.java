@@ -15,27 +15,27 @@ public class A059513 extends MemoryFunctionInt2<Z> implements Sequence {
 
   @Override
   protected Z compute(final int n, final int m) {
-    final int bit = (n - m) & 1;
+    final int bit = (n + m) & 1;
     if (bit == 0) {
       if (n == 0) {
         return Z.ONE;
       }
       return get(n - 1, m + 1)
-        .add(Integers.SINGLETON.sum(0, n - 1, k -> get(m, k)))
-        .add(Integers.SINGLETON.sum(0, m - 1, k -> get(k, n)));
+        .add(Integers.SINGLETON.sum(0, n - 1, k -> get(k, m)))
+        .add(Integers.SINGLETON.sum(0, m - 1, k -> get(n, k)));
     } else {
-      if (n == m) {
+      if (m == 0) {
         return Z.ONE;
       }
       return get(n + 1, m - 1)
-        .add(Integers.SINGLETON.sum(0, n - 1, k -> get(m, k)))
-        .add(Integers.SINGLETON.sum(0, m - 1, k -> get(k, n)));
+        .add(Integers.SINGLETON.sum(0, n - 1, k -> get(k, m)))
+        .add(Integers.SINGLETON.sum(0, m - 1, k -> get(n, k)));
     }
   }
 
   @Override
   public Z next() {
     ++mN;
-    return (mN & 1) == 1 ? get(mN, 0) : get(0, mN);
+    return (mN & 1) == 0 ? get(mN, 0) : get(0, mN);
   }
 }

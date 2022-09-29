@@ -4,7 +4,7 @@ package irvine.oeis.a350;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A350498 Convolution of triangular numbers with every third number of Narayana&apos;s Cows sequence.
+ * A350498 Convolution of triangular numbers with every third number of Narayana's Cows sequence.
  * @author Georg Fischer
  */
 public class A350498 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A108896 Numbers whose outer two digits are 9&apos;s and inner digits are 4&apos;s.
+ * A108896 Numbers whose outer two digits are 9's and inner digits are 4's.
  * @author Georg Fischer
  */
 public class A108896 extends HolonomicRecurrence {

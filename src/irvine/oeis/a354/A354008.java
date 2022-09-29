@@ -4,7 +4,7 @@ package irvine.oeis.a354;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A354008 Numerators of Ces?ro means sequence of A114112.
+ * A354008 Numerators of Ces\u00e0ro means sequence of A114112.
  * @author Georg Fischer
  */
 public class A354008 extends HolonomicRecurrence {

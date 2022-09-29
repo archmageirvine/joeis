@@ -4,7 +4,7 @@ package irvine.oeis.a353;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A353232 a(n) is the number of ways to split [n] = {1,2,...,n} into two (possibly empty) complementary intervals {1,2,...,i} and {i+1,i+2,...,n} and then, if both intervals are nonempty, select 2 nonempty blocks/cells (i.e., subintervals) from each of them, or if o
+ * A353232 a(n) is the number of ways to split [n] = {1,2,...,n} into two (possibly empty) complementary intervals {1,2,...,i} and {i+1,i+2,...,n} and then, if both intervals are nonempty, select 2 nonempty blocks/cells (i.e., subintervals) from each of them, or if one of the intervals is empty, select 2 nonempty blocks/cells from the nonempty interval.
  * @author Georg Fischer
  */
 public class A353232 extends HolonomicRecurrence {

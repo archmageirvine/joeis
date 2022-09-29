@@ -4,7 +4,7 @@ package irvine.oeis.a354;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A354280 a(n) is the numerator of Ces?ro means sequence c(n) of A237420 when the denominator is A141310(n).
+ * A354280 a(n) is the numerator of Ces\u00e0ro means sequence c(n) of A237420 when the denominator is A141310(n).
  * @author Georg Fischer
  */
 public class A354280 extends HolonomicRecurrence {

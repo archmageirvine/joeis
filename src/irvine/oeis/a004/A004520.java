@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 public class A004520 extends A004514 {
 
-  private Z mN = Z.NEG_ONE;
+  protected Z mN = Z.NEG_ONE;
 
   @Override
   public Z next() {

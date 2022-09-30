@@ -3,7 +3,7 @@
 # Plot a graph of the proportion of sequences done in each bucket of 1000.
 # Also produce a heat map with one pixel per sequence showing those implemented.
 
-max=350
+max=370
 
 for bucket in $(seq 0 ${max}); do
     b="00${bucket}"

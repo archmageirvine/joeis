@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A159677 Expansion of 64*x^2/(-x^3 + 1023*x^2 - 1023*x + 1).
+ * A159677 Expansion of 64*x^2/(1 - 1023*x + 1023*x^2 - x^3).
  * @author Sean A. Irvine
  */
 public class A159677 extends LinearRecurrence {

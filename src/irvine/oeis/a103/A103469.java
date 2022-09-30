@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.recur.LinearRecurrence;
 
 /**
- * A103469 Number of polyominoes without holes consisting of 3 regular unit n-gons.
+ * A103469 Number of polyominoes consisting of 3 regular unit n-gons.
  * @author Sean A. Irvine
  */
 public class A103469 extends LinearRecurrence {

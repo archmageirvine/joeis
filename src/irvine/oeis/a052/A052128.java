@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052128 Largest factor of n that is coprime to a larger factor of n.
+ * A052128 a(1) = 1; for n &gt; 1, a(n) is the largest divisor of n that is coprime to a larger divisor of n.
  * @author Sean A. Irvine
  */
 public class A052128 implements Sequence {

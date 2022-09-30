@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a066.A066386;
 
 /**
- * A155809 Numbers k with property that 64*k^6 + 1091 is prime.
+ * A155809 Numbers k such that 64*k^6 + 1091 is prime.
  * @author Georg Fischer
  */
 public class A155809 extends A066386 {

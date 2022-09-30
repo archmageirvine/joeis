@@ -4,7 +4,7 @@ package irvine.oeis.a356;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A356829 Number of vertex cuts in the n-M√∂bius ladder.
+ * A356829 Number of vertex cuts in the n-M\u00f6bius ladder.
  * @author Georg Fischer
  */
 public class A356829 extends HolonomicRecurrence {

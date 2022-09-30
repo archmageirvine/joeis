@@ -4,7 +4,7 @@ package irvine.oeis.a341;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A341092 Rows of Pascal&apos;s triangle which contain a 3-term arithmetic progression of a certain form: a(n) = (2n^2 + 22n + 37 + (2n + 3)*(-1)^n)/8.
+ * A341092 Rows of Pascal's triangle which contain a 3-term arithmetic progression of a certain form: a(n) = (2n^2 + 22n + 37 + (2n + 3)*(-1)^n)/8.
  * @author Georg Fischer
  */
 public class A341092 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046268 Largest prime substring in 2^n (0 if none).
+ * A046268 Largest prime substring in 2^n (or 0 if none exist).
  * @author Sean A. Irvine
  */
 public class A046268 implements Sequence {

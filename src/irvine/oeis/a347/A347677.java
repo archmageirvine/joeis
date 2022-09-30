@@ -4,7 +4,7 @@ package irvine.oeis.a347;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A347677 Number of Baxter matrices of size 3 X n that contain n+2 1&apos;s.
+ * A347677 Number of Baxter matrices of size 3 X n that contain n+2 1's.
  * @author Georg Fischer
  */
 public class A347677 extends HolonomicRecurrence {

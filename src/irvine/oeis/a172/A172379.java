@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A172379 The unique d=3 cycle arising in higher dimensional cluster combinatorics and representation theory.
+ * A172379 Partial list of labels attached to the quiver of the cluster algebra A_4^4.
  * @author Georg Fischer
  */
 public class A172379 extends FiniteSequence {

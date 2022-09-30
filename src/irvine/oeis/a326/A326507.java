@@ -4,7 +4,7 @@ package irvine.oeis.a326;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A326507 Number of (binary) max-heaps on n elements from the set {0,1} containing exactly six 0&apos;s.
+ * A326507 Number of (binary) max-heaps on n elements from the set {0,1} containing exactly six 0's.
  * @author Georg Fischer
  */
 public class A326507 extends HolonomicRecurrence {

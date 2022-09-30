@@ -4,7 +4,7 @@ package irvine.oeis.a353;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A353322 A variant of Van Eck&apos;s sequence where we only consider powers of 2: for n &gt;= 0,
+ * A353322 A variant of Van Eck's sequence where we only consider powers of 2: for n &gt;= 0, if a(n) = a(n-2^e) for some e, take the least such e and set a(n+1) = 2^e; otherwise a(n+1) = 0. Start with a(1) = 0.
  * if a(n) = a(n-2^e) for some e, take the least such e and set a(n+1) = 2^e; otherwise a(n+1) = 0. Start with a(1) = 0.
  * @author Georg Fischer
  */

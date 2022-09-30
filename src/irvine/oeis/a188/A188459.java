@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A188459 Numbers n such that 4*n^2 + 4*n + 653 is a prime.
+ * A188459 Numbers k such that 4*k^2 + 4*k + 653 is a prime.
  * @author Georg Fischer
  */
 public class A188459 extends PrimePositionSubsequence {

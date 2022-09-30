@@ -6,7 +6,7 @@ import irvine.oeis.prime.PrimePositionSubsequence;
 
 
 /**
- * A247166 Numbers n such that 15^n+4 is prime.
+ * A247166 Numbers k such that 15^k+4 is prime.
  * @author Georg Fischer
  */
 public class A247166 extends PrimePositionSubsequence {

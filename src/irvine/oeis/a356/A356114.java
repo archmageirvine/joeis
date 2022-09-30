@@ -4,7 +4,7 @@ package irvine.oeis.a356;
 import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
- * A356114 Number of irreducible permutations of n with partition type [2, 1, 1, ..., 1] (with &apos;1&apos; taken n - 2 times).
+ * A356114 Number of irreducible permutations of n with partition type [2, 1, 1, ..., 1] (with '1' taken n - 2 times).
  * @author Georg Fischer
  */
 public class A356114 extends HolonomicRecurrence {

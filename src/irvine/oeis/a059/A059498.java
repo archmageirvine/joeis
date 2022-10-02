@@ -1,7 +1,5 @@
 package irvine.oeis.a059;
 
-import java.util.HashSet;
-
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -11,7 +9,6 @@ import irvine.oeis.Sequence;
  */
 public class A059498 implements Sequence {
 
-  private final HashSet<Z> mSeen = new HashSet<>();
   private Z mA = null;
 
   @Override
@@ -28,7 +25,7 @@ public class A059498 implements Sequence {
           final Z u = left.add(add);
           if (!u.equals(qr[0])) {
             final Z t = u.multiply(mod).add(qr[1]);
-            if (!mSeen.contains(t) && t.isProbablePrime()) {
+            if (t.isProbablePrime()) {
               mA = t;
               break outer;
             }
@@ -37,7 +34,6 @@ public class A059498 implements Sequence {
         mod = mod.multiply(10);
       }
     }
-    mSeen.add(mA);
     return mA;
   }
 }

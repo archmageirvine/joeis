@@ -2035,3 +2035,10 @@ A059495 For odd p such that 2^p-1 is a prime (A000043), write 2^p-1 = x^2+3*y^2;
 A059523 Simple dependency of A059052.
 A059525 Number of nonzero n X n binary arrays with all 1's connected.
 A059573 Polyotessamino numbers T(n,k) (1<=k<=n): take all the polyominoes with n cells (including those with holes but excluding rotations and reflections); fill them as completely as possible with rectangular 1 X k tiles; T(n,k) is number of ways of doing this. [probably erroneous]
+A059679 Triangle T(n,k) giving number of fixed 3 X k polyominoes with n cells (n >= 3, 1<=k<=n-2).
+A059680 Triangle T(n,k) read by rows giving number of fixed 4 X k polyominoes with n cells (n >= 4, 1<=k<=n-3).
+A059681 Triangle T(n,k) giving number of fixed 5 X k polyominoes with n cells (n >= 5, 1<=k<=n-4)
+A059683 Triangle T(n,k) giving number of 3 X k polyominoes with n cells (n >= 3, 1<=k<=n-2).
+A059684 Triangle T(n,k) giving number of 4 X k polyominoes with n cells (n >= 4, 1<=k<=n-3).
+A059685 Split interval orders on n points.
+A059687 Number of basic circuits of nullity n

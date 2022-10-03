@@ -1,13 +1,16 @@
 package irvine.oeis.a059;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
+import java.util.TreeSet;
 
 import irvine.math.lattice.Lattice;
 import irvine.math.lattice.Lattices;
 import irvine.math.r.DoubleUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.LimitedLengthPriorityQueue;
 
 /**
  * A059518 a(n)/n^2 is the minimal average squared Euclidean distance of n points to their center of gravity among all configurations of n points on the hexagonal lattice.
@@ -15,26 +18,47 @@ import irvine.oeis.Sequence;
  */
 public class A059518 implements Sequence {
 
-  // todo this is first wrong at n==31, I don't think it is a precision issue
+  // WARNING: Heuristic, do not use this to extend the sequence
 
+  private static final int RETAINED_COUNT = 1000;
   private static final Lattice L = Lattices.HEXAGONAL;
   private static final double COS30 = Math.cos(Math.PI / 6);
   private long mN = 0;
-  private long mSumX = 0;
-  private long mSumY = 0;
-  private final HashSet<Long> mUsed = new HashSet<>();
+  private LimitedLengthPriorityQueue<Diagram> mSolutions = new LimitedLengthPriorityQueue<>(RETAINED_COUNT, false);
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
-  private double sqDistSum(final double cx, final double cy) {
-    double sqSum = 0;
-    for (final long pt : mUsed) {
-      final long x = L.ordinate(pt, 0);
-      final long y = L.ordinate(pt, 1);
-      final double dx = cx - 0.5 * x;
-      final double dy = cy - COS30 * y;
-      sqSum += dx * dx + dy * dy;
+  private static final class Diagram extends TreeSet<Long> implements Comparable<Diagram> {
+
+    @Override
+    public int compareTo(final Diagram other) {
+      final int d = Integer.compare(size(), other.size());
+      if (d != 0) {
+        return d;
+      }
+      for (final Iterator<Long> it1 = iterator(), it2 = other.iterator(); it1.hasNext();) {
+        final long a = it1.next();
+        final long b = it2.next();
+        final int cmp = Long.compare(a, b);
+        if (cmp != 0) {
+          return cmp;
+        }
+      }
+      return 0;
     }
-    return sqSum;
+
+    private boolean isAcceptable() {
+      // We only both remembering points where the centre of mass is inside a unit square.
+      // This could be made even tighter, but seems good enough in practice.
+      long sumX = 0;
+      long sumY = 0;
+      for (final long pt : this) {
+        sumX += L.ordinate(pt, 0);
+        sumY += L.ordinate(pt, 1);
+      }
+      final double cx = 0.5 * sumX / size();
+      final double cy = COS30 * sumY / size();
+      return cx >= 0 && cx <= 1 && cy >= 0 && cy <= 1;
+    }
   }
 
   private long[] neighbours(final Set<Long> set) {
@@ -72,117 +96,13 @@ public class A059518 implements Sequence {
     return sqd;
   }
 
-  private void step() {
-    // Takes existing solution for n - 1, and throws away one point, then
-    // tries adding two points in all possible ways to get best answer for n
-    // (At the moment this works up to n=31)
-    double bestSqDistance = Double.POSITIVE_INFINITY;
-    long bestA = 0;
-    long bestB = 0;
-    long bestR = 0;
-    for (final long pt : mUsed) {
-      final HashSet<Long> base = new HashSet<>(mUsed);
-      base.remove(pt); // drop one existing point
-      final long[] neighbours = neighbours(base);
-      // Choose 2 distinct points from neighbours to add
-      for (final long a : neighbours) {
-        base.add(a);
-        for (final long b : neighbours) {
-          if (a == b) {
-            break;
-          }
-          base.add(b);
-          final double sqDistance = sqDistance(base);
-          if (sqDistance < bestSqDistance) {
-            bestSqDistance = sqDistance;
-            bestR = pt;
-            bestA = a;
-            bestB = b;
-          }
-          base.remove(b);
-        }
-        base.remove(a);
-      }
-    }
-    mUsed.remove(bestR);
-    mUsed.add(bestA);
-    mUsed.add(bestB);
-  }
-
-  private void step2() {
-    // Takes existing solution for n - 1, and throws away one point, then
-    // tries adding two points in all possible ways to get best answer for n
-    // (At the moment this works up to n=31)
-    double bestSqDistance = Double.POSITIVE_INFINITY;
-    long bestA = 0;
-    long bestB = 0;
-    long bestC = 0;
-    long bestR1 = 0;
-    long bestR2 = 0;
-    for (final long pt1 : mUsed) {
-      for (final long pt2 : mUsed) {
-        if (pt1 == pt2) {
-          break;
-        }
-        final HashSet<Long> base = new HashSet<>(mUsed);
-        base.remove(pt1); // drop one existing point
-        base.remove(pt2); // drop other existing point
-        final long[] neighbours = neighbours(base);
-        // Choose 3 distinct points from neighbours to add
-        for (final long a : neighbours) {
-          base.add(a);
-          for (final long b : neighbours) {
-            if (a == b) {
-              break;
-            }
-            base.add(b);
-            for (final long c : neighbours) {
-              if (c == b) {
-                break;
-              }
-              base.add(c);
-              final double sqDistance = sqDistance(base);
-              if (sqDistance < bestSqDistance) {
-                bestSqDistance = sqDistance;
-                bestR1 = pt1;
-                bestR2 = pt2;
-                bestA = a;
-                bestB = b;
-                bestC = c;
-              }
-              base.remove(c);
-            }
-            base.remove(b);
-          }
-          base.remove(a);
-        }
-      }
-    }
-    mUsed.remove(bestR1);
-    mUsed.remove(bestR2);
-    mUsed.add(bestA);
-    mUsed.add(bestB);
-    mUsed.add(bestC);
-  }
-
-  // Compute what the square distance sum would be if this point were added to the set
-  private double sqDistance(final long pt) {
-    final long x = L.ordinate(pt, 0);
-    final long y = L.ordinate(pt, 1);
-    final double cx = 0.5 * (mSumX + x) / mN;
-    final double cy = COS30 * (mSumY + y) / mN;
-    final double rx = cx - 0.5 * x;
-    final double ry = cy - COS30 * y;
-    return sqDistSum(cx, cy) + rx * rx + ry * ry;
-  }
-
-  private String toTikz() {
+  private String toTikz(final Set<Long> points) {
     long sumX = 0;
     long sumY = 0;
     final StringBuilder sb = new StringBuilder();
-    sb.append("\\noindent$n=").append(mN).append("$, $n^2R^2=").append(DoubleUtils.NF4.format(sqDistance(mUsed) * mN)).append("$\\\\\n");
+    sb.append("\\noindent$n=").append(mN).append("$, $n^2R^2=").append(DoubleUtils.NF4.format(sqDistance(points) * mN)).append("$\\\\\n");
     sb.append("\\begin{tikzpicture}[scale=0.5]\n");
-    for (final long point : mUsed) {
+    for (final long point : points) {
       final long x = L.ordinate(point, 0);
       final long y = L.ordinate(point, 1);
       sumX += x;
@@ -193,8 +113,8 @@ public class A059518 implements Sequence {
         .append(DoubleUtils.NF4.format(COS30 * y))
         .append(") circle (.5ex);\n");
     }
-    final double cx = 0.5 * sumX / mUsed.size();
-    final double cy = COS30 * sumY / mUsed.size();
+    final double cx = 0.5 * sumX / points.size();
+    final double cy = COS30 * sumY / points.size();
     sb.append("  \\draw[red] (")
       .append(DoubleUtils.NF4.format(cx))
       .append(',')
@@ -207,39 +127,29 @@ public class A059518 implements Sequence {
   @Override
   public Z next() {
     if (++mN == 1) {
-      mUsed.add(L.origin());
+      final Diagram root = new Diagram();
+      root.add(L.origin());
+      mSolutions.add(sqDistance(root), root);
       return Z.ZERO;
-    } else if (mN > 3) {
-      step(); // step2() does not resolve the problem at n==31
-      if (mVerbose) {
-        System.out.println(toTikz());
-      }
-      return Z.valueOf(Math.round(sqDistance(mUsed) * mN));
     } else {
-      // The following code first fails at n=22
-      // Find closest unused point
-      double bestSqDistance = Double.POSITIVE_INFINITY;
-      long bestPt = 0;
-      for (final long pt : mUsed) {
-        for (final long q : L.neighbours(pt)) {
-          if (!mUsed.contains(q)) {
-            final double sqDistance = sqDistance(q);
-            if (sqDistance < bestSqDistance) {
-              bestSqDistance = sqDistance;
-              bestPt = q;
-            }
+      final LimitedLengthPriorityQueue<Diagram> newSolutions = new LimitedLengthPriorityQueue<>(RETAINED_COUNT, false);
+      for (final LimitedLengthPriorityQueue.Node<Diagram> node : mSolutions) {
+        final Diagram n = node.getValue();
+        final long[] neighbours = neighbours(n);
+        for (final long v : neighbours) {
+          final Diagram u = new Diagram();
+          u.addAll(n);
+          u.add(v);
+          if (u.isAcceptable()) {
+            newSolutions.add(sqDistance(u), u);
           }
         }
       }
-      mUsed.add(bestPt);
-      final long x = L.ordinate(bestPt, 0);
-      final long y = L.ordinate(bestPt, 1);
-      mSumX += x;
-      mSumY += y;
+      mSolutions = newSolutions;
       if (mVerbose) {
-        System.out.println(toTikz());
+        System.out.println(toTikz(mSolutions.first().getValue()));
       }
-      return Z.valueOf(Math.round(bestSqDistance * mN));
+      return Z.valueOf(Math.round(mSolutions.first().getScore() * mN));
     }
   }
 }

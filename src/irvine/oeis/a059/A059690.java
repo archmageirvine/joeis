@@ -11,18 +11,18 @@ public class A059690 extends A000040 {
 
   private Z mLim = Z.ONE;
   private Z mP = super.next();
-  long cnt = 0;
+  private long mCnt = 0;
 
   @Override
   public Z next() {
     mLim = mLim.multiply2();
     while (mP.compareTo(mLim) <= 0) {
       if (!mPrime.isPrime(mP.subtract(1).divide2()) && mPrime.isPrime(mP.multiply2().add(1))) {
-        ++cnt;
+        ++mCnt;
       }
       mP = super.next();
     }
-    return Z.valueOf(cnt);
+    return Z.valueOf(mCnt);
   }
 }
 

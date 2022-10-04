@@ -56,7 +56,7 @@ public class A059737 implements Sequence {
     Z b = bases.next();
     Z be = b.pow(mN);
     while (true) {
-      while (contenders.size() < 2 || contenders.first().mValue.add(1).compareTo(b) >= 0) {
+      while (contenders.size() < 2 || contenders.first().mValue.add(1).compareTo(be) >= 0) {
         contenders.add(new State(b.longValueExact(), 1, be));
         b = bases.next();
         be = b.pow(mN);

@@ -17,13 +17,15 @@ public class A059737 implements Sequence {
 
   private static final class State implements Comparable<State>{
     private final Z mValue;
+    private final Z mVE;
     private final long mBase;
     private final long mK;
 
     private State(final long base, final long k, final Z value) {
       mBase = base;
       mK = k;
-      mValue = value;
+      mVE = value;
+      mValue = value.multiply(k);
     }
 
     @Override
@@ -68,7 +70,7 @@ public class A059737 implements Sequence {
       do {
         ++k;
       } while (LongUtils.gcd(state.mBase, k) != 1);
-      contenders.add(new State(state.mBase, k, Z.valueOf(state.mBase).pow(mN).multiply(k)));
+      contenders.add(new State(state.mBase, k, state.mVE));
     }
   }
 }

@@ -2042,3 +2042,4 @@ A059683 Triangle T(n,k) giving number of 3 X k polyominoes with n cells (n >= 3,
 A059684 Triangle T(n,k) giving number of 4 X k polyominoes with n cells (n >= 4, 1<=k<=n-3).
 A059685 Split interval orders on n points.
 A059687 Number of basic circuits of nullity n
+A059713 Number of multi-directed animals on the square lattice

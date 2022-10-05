@@ -2,6 +2,7 @@ package irvine.oeis.a059;
 
 import java.util.TreeSet;
 
+import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -64,7 +65,12 @@ public class A059737 implements Sequence {
       final State state = contenders.pollFirst();
       final Z v = state.mValue;
       if (v.add(1).equals(contenders.first().mValue)) {
-        return v;
+        // If we get this far, then very likely we have the solution.
+        // However, we need to still be a little careful because it is possible that mK
+        // ended up being a high power.
+        if (Jaguar.factor(state.mK).maxExponent() <= mN && Jaguar.factor(contenders.first().mK).maxExponent() <= mN) {
+          return v;
+        }
       }
       long k = state.mK;
       do {

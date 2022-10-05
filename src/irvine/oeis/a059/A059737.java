@@ -9,14 +9,14 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A059723.
+ * A059737 Lesser of the smallest pair of consecutive numbers divisible by an n-th power, but neither divisible by an (n+1)-st power.
  * @author Sean A. Irvine
  */
 public class A059737 implements Sequence {
 
   private int mN = 0;
 
-  private static final class State implements Comparable<State>{
+  private static final class State implements Comparable<State> {
     private final Z mValue;
     private final Z mVE;
     private final long mBase;

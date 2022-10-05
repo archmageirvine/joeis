@@ -12,22 +12,26 @@ public class A059692 extends A004514 {
   private int mN = -1;
   private int mM = 0;
 
-  protected Z nimProduct(final long base, final long n, final long m) {
+  protected Z nimProduct(final long base, final Z n, final long m) {
     Z sum = Z.ZERO;
     Z am = Z.ONE;
-    long a = n;
-    while (a != 0) {
+    Z a = n;
+    while (!a.isZero()) {
       long b = m;
       Z bm = am;
       while (b != 0) {
-        sum = nimsum(10, sum, bm.multiply((a * b) % base));
+        sum = nimsum(10, sum, bm.multiply(a.multiply(b).mod(base)));
         b /= base;
         bm = bm.multiply(base);
       }
-      a /= base;
+      a = a.divide(base);
       am = am.multiply(base);
     }
     return sum;
+  }
+
+  protected Z nimProduct(final long base, final long n, final long m) {
+    return nimProduct(base, Z.valueOf(n), m);
   }
 
   @Override

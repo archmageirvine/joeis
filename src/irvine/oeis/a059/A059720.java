@@ -13,22 +13,27 @@ public class A059720 extends A059718 {
   private int mM = 0;
   private Z[] mRow = null;
 
+  protected Z[] step(final int n) {
+    if (n == 0) {
+      return new Z[] {Z.ONE};
+    }
+    final Z[] row = new Z[n + 1];
+    row[0] = Z.ZERO;
+    for (int m = 1; m <= n; ++m) {
+      Z t = t(n + m - 1, n);
+      for (int k = 1; k < m; ++k) {
+        t = t.subtract(row[k].multiply(Binomial.binomial(m, k)));
+      }
+      row[m] = t;
+    }
+    return row;
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
-      if (++mN == 0) {
-        return Z.ONE;
-      }
       mM = 0;
-      mRow = new Z[mN + 1];
-      mRow[0] = Z.ZERO;
-      for (int m = 1; m <= mN; ++m) {
-        Z t = t(mN + m - 1, mN);
-        for (int k = 1; k < m; ++k) {
-          t = t.subtract(mRow[k].multiply(Binomial.binomial(m, k)));
-        }
-        mRow[m] = t;
-      }
+      mRow = step(++mN);
     }
     return mRow[mM];
   }

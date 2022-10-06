@@ -1,8 +1,7 @@
 package irvine.oeis.prime;
 
-import irvine.math.z.Z;
+import irvine.oeis.FilterSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.Subsequence;
 import irvine.oeis.recur.HolonomicRecurrence;
 
@@ -10,14 +9,14 @@ import irvine.oeis.recur.HolonomicRecurrence;
  * A {@link Subsequence} consisting of the primes in the underlying sequence.
  * @author Georg Fischer
  */
-public class PrimeSubsequence extends Subsequence implements SequenceWithOffset {
+public class PrimeSubsequence extends FilterSequence {
 
   /**
    * Creates a sequence of the primes in another sequence.
    * @param seq underlying sequence
    */
   public PrimeSubsequence(final Sequence seq) {
-    super(seq);
+    super(seq, PRIME);
   }
 
   /**
@@ -26,7 +25,7 @@ public class PrimeSubsequence extends Subsequence implements SequenceWithOffset 
    * @param start ignored, for compatibility
    */
   public PrimeSubsequence(final Sequence seq, final int start) {
-    super(seq);
+    super(seq, PRIME);
   }
 
   /**
@@ -39,7 +38,7 @@ public class PrimeSubsequence extends Subsequence implements SequenceWithOffset 
    */
   public PrimeSubsequence(final String matrix, final String initTerms) {
     this(new HolonomicRecurrence(0, matrix, initTerms, 0), 0);
-  } // Constructor
+  }
 
   /**
    * Creates a sequence of the primes in the sequence defined by a holonomic recurrence.
@@ -52,15 +51,5 @@ public class PrimeSubsequence extends Subsequence implements SequenceWithOffset 
    */
   public PrimeSubsequence(final String matrix, final String initTerms, final int start) {
     this(new HolonomicRecurrence(0, matrix, initTerms, 0), start);
-  } // Constructor
-
-  @Override
-  public boolean isOk(final Z term) {
-    return term == null || term.isProbablePrime();
-  }
-
-  @Override
-  public int getOffset() {
-    return 1; // is a list
   }
 }

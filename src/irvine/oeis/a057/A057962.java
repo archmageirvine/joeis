@@ -1,6 +1,6 @@
 package irvine.oeis.a057;
 
-import irvine.oeis.NonzeroSequence;
+import irvine.oeis.FilterSequence;
 import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a005.A005883;
 
@@ -12,6 +12,6 @@ public class A057962 extends PartialSumSequence {
 
   /** Construct the sequence. */
   public A057962() {
-    super(new NonzeroSequence(new A005883()));
+    super(new FilterSequence(new A005883(), FilterSequence.NONZERO));
   }
 }

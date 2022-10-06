@@ -17,8 +17,9 @@ import irvine.math.z.Z;
  */
 public class TillmanFactorizer extends AbstractFactorizer {
 
-  private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
-    String.valueOf(Runtime.getRuntime().availableProcessors())));
+  private static final String T = System.getProperty("oeis.threads",
+    String.valueOf(Runtime.getRuntime().availableProcessors()));
+  private static final int THREADS = T.isBlank() ? 1 : Integer.parseInt(T);
   private final CombinedFactorAlgorithm mCfa = new CombinedFactorAlgorithm(THREADS, null, true);
 
   {

@@ -18,10 +18,10 @@ public class A059756 implements Sequence {
 
   // After Bertram Felgenhauer
 
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
   private int mN = 15;
 
-  private boolean is(final int n) {
+  protected ISolver buildSolver(final int n) {
     int pi = 0;
     for (long p = 2; p < n; p = mPrime.nextPrime(p)) {
       ++pi;
@@ -37,7 +37,7 @@ public class A059756 implements Sequence {
         v.push(-(2 * i + 1));
         s.addClause(v);
       } catch (final ContradictionException e) {
-        return false;
+        throw new RuntimeException(e);
       }
     }
     // prepare clauses for each m by enumerating multiples (like sieving)
@@ -59,12 +59,16 @@ public class A059756 implements Sequence {
         try {
           s.addClause(v);
         } catch (final ContradictionException e) {
-          return false;
+          throw new RuntimeException(e);
         }
       }
     }
+    return s;
+  }
+
+  private boolean is(final int n) {
     try {
-      return s.isSatisfiable();
+      return buildSolver(n).isSatisfiable();
     } catch (final TimeoutException e) {
       throw new RuntimeException(e);
     }

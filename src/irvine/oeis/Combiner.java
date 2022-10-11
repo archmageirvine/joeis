@@ -22,6 +22,8 @@ public class Combiner implements SequenceWithOffset {
   public static final BiFunction<Z, Z, Z> POW = Z::pow;
   /** Average: <code>(a+b)/2</code>. */
   public static final BiFunction<Z, Z, Z> AVERAGE = (a, b) -> a.add(b).divide2();
+  /** Minimum. */
+  public static final BiFunction<Z, Z, Z> MIN = Z::min;
 
   private final Sequence mSeqA;
   private final Sequence mSeqB;

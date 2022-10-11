@@ -1,0 +1,23 @@
+package irvine.oeis.a059;
+
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A059791 Numbers n such that floor(phi^n) is prime, where phi = golden ratio.
+ * @author Sean A. Irvine
+ */
+public class A059791 implements Sequence {
+
+  private long mN = 1;
+
+  @Override
+  public Z next() {
+    while (true) {
+      if (CR.PHI.pow(++mN).floor().isProbablePrime()) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

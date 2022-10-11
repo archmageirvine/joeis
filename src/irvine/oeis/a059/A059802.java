@@ -4,7 +4,6 @@ package irvine.oeis.a059;
 
 import irvine.oeis.prime.PrimePositionSubsequence;
 
-
 /**
  * A059802 Numbers k such that 5^k - 4^k is prime.
  * @author Georg Fischer

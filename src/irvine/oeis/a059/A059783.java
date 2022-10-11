@@ -13,7 +13,6 @@ public class A059783 implements Sequence {
   private int mN = 0;
   private Z mCount = Z.ZERO;
   private long mLim = 0;
-  private long mF = 1;
   private LongDynamicBooleanArray mSeen;
 
   private void search(final long vertex, final long usedDim, final long mult, final int free) {
@@ -40,7 +39,6 @@ public class A059783 implements Sequence {
   @Override
   public Z next() {
     mLim = (1L << ++mN) - 1;
-    mF = mF * mN;
     mCount = Z.ZERO;
     mSeen = new LongDynamicBooleanArray();
     final long farCorner = mLim;

@@ -4,13 +4,13 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A059788 a(n) = largest prime &lt; 2*prime(n).
+ * A059786 Smallest prime after 2*(n-th prime).
  * @author Sean A. Irvine
  */
-public class A059788 extends A000040 {
+public class A059786 extends A000040 {
 
   @Override
   public Z next() {
-    return mPrime.prevPrime(super.next().multiply2());
+    return mPrime.nextPrime(super.next().multiply2());
   }
 }

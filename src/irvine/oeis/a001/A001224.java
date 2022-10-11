@@ -1,24 +1,15 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Fibonacci;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.recur.HolonomicRecurrence;
 
 /**
  * A001224 If F(n) is the n-th Fibonacci number, then a(2n) = (F(2n+1) + F(n+2))/2 and a(2n+1) = (F(2n+2) + F(n+1))/2.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A001224 implements Sequence {
+public class A001224 extends HolonomicRecurrence {
 
-  private int mN = 0;
-
-  @Override
-  public Z next() {
-    ++mN;
-    if ((mN & 1) == 0) {
-      return Fibonacci.fibonacci(mN + 1).add(Fibonacci.fibonacci(mN / 2 + 2)).divide2();
-    } else {
-      return Fibonacci.fibonacci(mN + 1).add(Fibonacci.fibonacci((mN + 1) / 2)).divide2();
-    }
+  /** Construct the sequence. */
+  public A001224() {
+    super(0, "[0,-1,-1,0,-1,2,1,-1]", "1,2,2,4,5,9", 0);
   }
 }

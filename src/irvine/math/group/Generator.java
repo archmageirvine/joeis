@@ -81,7 +81,7 @@ public class Generator<T> extends AbstractGroup<T> {
       throw new NullPointerException();
     }
     // This implementation explicitly computes all the members, so
-    // it cannot deal with infinite sets reliably.  In fact it will
+    // it cannot deal with infinite sets reliably.  In fact, it will
     // overflow if there are more than 2^31 elements.
     parent.abortOnInfinite();
     elements.abortOnInfinite();
@@ -155,5 +155,14 @@ public class Generator<T> extends AbstractGroup<T> {
   @Override
   public String toString() {
     return "<" + StringUtils.toString(mElements, ",") + ">";
+  }
+
+  /**
+   * Return the size of the generating set of this group.  Note this is not
+   * guaranteed to be the minimal size, only the size used during construction.
+   * @return generating set size
+   */
+  public Z generatingSetSize() {
+    return mElements.size();
   }
 }

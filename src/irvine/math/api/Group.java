@@ -4,6 +4,7 @@ import java.util.Random;
 
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
+import irvine.util.Pair;
 
 /**
  * Definition of a group and associated operations.
@@ -261,4 +262,16 @@ public interface Group<E> extends Set<E> {
    * @return automorphism order
    */
   Z autOrder();
+
+  /**
+   * Return the center of the group; that is, the set of commutative elements in the group.
+   * @return center of the group
+   */
+  Set<E> center();
+
+  /**
+   * Return the derived subgroup (also called commutator subgroup) of this group.
+   * @return derived subgroup.
+   */
+  Group<Pair<E, E>> derivedSubgroup();
 }

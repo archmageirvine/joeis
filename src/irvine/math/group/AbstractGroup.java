@@ -13,9 +13,11 @@ import irvine.math.q.Q;
 import irvine.math.set.AbstractOperation;
 import irvine.math.set.AbstractSet;
 import irvine.math.set.EffortException;
+import irvine.math.set.FiniteSet;
 import irvine.math.set.Permutation;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.util.Pair;
 import irvine.util.array.DynamicLongArray;
 
 /**
@@ -421,6 +423,37 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
       throw new UnsupportedOperationException();
     }
     return mAutSize;
+  }
+
+  private boolean isCommutative(final E e) {
+    for (final E g : this) {
+      if (!add(e, g).equals(add(g, e))) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  @Override
+  public Set<E> center() {
+    if (isAbelian()) {
+      return this;
+    }
+    if (isInfinite()) {
+      throw new UnsupportedOperationException();
+    }
+    final List<E> set = new ArrayList<>();
+    for (final E e : this) {
+      if (isCommutative(e)) {
+        set.add(e);
+      }
+    }
+    return new FiniteSet<>(set);
+  }
+
+  @Override
+  public Group<Pair<E, E>> derivedSubgroup() {
+    return new DerivedSubgroup<>(this);
   }
 }
 

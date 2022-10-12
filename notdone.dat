@@ -2046,3 +2046,8 @@ A059713 Number of multi-directed animals on the square lattice
 A059739 Triangle T(n,k), n >= 1, giving number of prime unoriented alternating links with n crossings and k components.
 A059741 Prime unoriented alternating links with n crossings and 2 components.
 A059750 Decimal expansion of zeta(1/2) (negated).
+A059813 Let s_n be the simplex packing n-width for the manifold torus X interval; sequence gives numerator of s_n/Pi.
+A059814 Let s_n be the simplex packing n-width for the manifold torus X interval; sequence gives denominator of s_n/Pi.
+A059817 Let s_n be the simplex packing n-width for the manifold torus X square; sequence gives numerator of s_n/Pi
+A059818 Let s_n be the simplex packing n-width for the manifold torus X square; sequence gives denominator of s_n/Pi.
+A059829 Maximal size of a minimal-generating-set of G where G is a finite group of order n.

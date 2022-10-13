@@ -13,9 +13,7 @@ public class A003285 implements Sequence {
 
   protected long mN = 0;
 
-  @Override
-  public Z next() {
-    final Z n = Z.valueOf(++mN);
+  protected Z period(final Z n) {
     final Z[] sqrt = n.sqrtAndRemainder();
     if (sqrt[1].isZero()) {
       return Z.ZERO;
@@ -38,5 +36,10 @@ public class A003285 implements Sequence {
       }
       f = p.get(k).add(f0).divide(q.get(k));
     }
+  }
+
+  @Override
+  public Z next() {
+    return period(Z.valueOf(++mN));
   }
 }

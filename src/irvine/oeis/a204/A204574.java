@@ -2,22 +2,24 @@ package irvine.oeis.a204;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a001.A001541;
 
 /**
  * A204574 Numbers such that floor[a(n)^2/2] is a square (A001541), written in binary.
  * @author Georg Fischer
  */
-public class A204574 implements Sequence {
+public class A204574 implements SequenceWithOffset {
 
   private int mN;
   private Sequence mSeq;
   private int mBase;
+  private int mOffset;
   private Z[] mPreTerms;
 
   /** Construct the sequence. */
   public A204574() {
-    this(new A001541(), 2, 0);
+    this(0, new A001541(), 2, 0);
   }
 
   /**
@@ -25,7 +27,7 @@ public class A204574 implements Sequence {
    * @param seq underlying sequence
    */
   public A204574(final Sequence seq) {
-    this(seq, 2, new long[0]);
+    this(0, seq, 2, new long[0]);
   }
 
   /**
@@ -34,7 +36,7 @@ public class A204574 implements Sequence {
    * @param base "written in" this base
    */
   public A204574(final Sequence seq, final int base) {
-    this(seq, base, new long[0]);
+    this(0, seq, base, new long[0]);
   }
 
   /**
@@ -44,13 +46,30 @@ public class A204574 implements Sequence {
    * @param preTerms leading terms to be prefixed
    */
   public A204574(final Sequence seq, final int base, final long... preTerms) {
+    this(0, seq, base, preTerms);
+  }
+
+  /**
+   * Generic constructor with parameters
+   * @param offset first index
+   * @param seq underlying sequence
+   * @param base "written in" this base
+   * @param preTerms leading terms to be prefixed
+   */
+  public A204574(final int offset, final Sequence seq, final int base, final long... preTerms) {
+    mOffset = offset;
     mSeq = seq;
     mBase = base;
     mPreTerms = new Z[preTerms.length];
     for (int i = 0; i < preTerms.length; ++i) {
       mPreTerms[i] = Z.valueOf(preTerms[i]);
     }
-    mN = -1;
+    mN = offset - 1;
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
   }
 
   @Override

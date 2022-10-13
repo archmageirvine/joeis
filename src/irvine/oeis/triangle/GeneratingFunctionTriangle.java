@@ -143,6 +143,14 @@ public class GeneratingFunctionTriangle implements SequenceWithOffset {
   }
 
   /**
+   * Modify the offset after cosntruction.
+   * @param offset first valid term has this index
+   */
+  public void setOffset(final int offset) {
+    mOffset = offset;
+  }
+
+  /**
    * Gets a triangle element.
    * @param triangle linearized array of polynomial coefficients
    * @param ix index/exponent for x

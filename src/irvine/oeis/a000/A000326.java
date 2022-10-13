@@ -9,11 +9,11 @@ import irvine.oeis.Sequence;
  */
 public class A000326 implements Sequence {
 
-  private int mN = -1;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    return Z.valueOf(++mN).multiply(3 * mN - 1).divide2();
+    return Z.valueOf(++mN).multiply(3L * mN - 1).divide2();
   }
 }
 

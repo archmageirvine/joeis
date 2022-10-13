@@ -13,7 +13,7 @@ public class A094096 implements Sequence {
   static {
     long f = 1;
     for (int k = 1; k < FACTORIAL.length; ++k) {
-      f *= (long) k;
+      f *= k;
       FACTORIAL[k] = f;
     }
   }

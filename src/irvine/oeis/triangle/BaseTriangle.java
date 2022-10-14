@@ -7,6 +7,7 @@ import irvine.oeis.SequenceWithOffset;
 
 /**
  * Generate the rows of a triangle T(n,k).
+ * In contrast to {@link #Triangle}, this class handles offsets, row and column shifts.
  * @author Georg Fischer
  */
 public abstract class BaseTriangle extends Triangle implements SequenceWithOffset {
@@ -66,6 +67,14 @@ public abstract class BaseTriangle extends Triangle implements SequenceWithOffse
   }
 
   /**
+   * Set the offset for the sequence or for a subclass that represents a column or row.
+   * @offset first index
+   */
+  public void setOffset(final int offset) {
+    mOffset = offset;
+  }
+
+  /**
    * Increase the row index, add a new, empty row and reset the column index.
    * The row length is <code>mRow + 1</code>.
    */
@@ -85,16 +94,6 @@ public abstract class BaseTriangle extends Triangle implements SequenceWithOffse
    */
   protected int getRowLength(final int n) {
     return get(n).length;
-  }
-
-  /**
-   * Get an element of the triangle.
-   * @param n 0-based row number
-   * @param k 0-based column number
-   * @return T(n,k), or 0 for k &lt; 0 or k &gt; n.
-   */
-  protected Z get(final int n, final int k) {
-    throw new UnsupportedOperationException("IrregularTriangle.get(n, k) should not be used");
   }
 
   /**

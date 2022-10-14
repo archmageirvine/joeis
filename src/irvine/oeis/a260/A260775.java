@@ -20,7 +20,7 @@ public class A260775 extends A000108 implements SequenceWithOffset {
   @Override
   public Z next() {
     ++mN;
-    Z result = mN == 0 ? super.next() : super.next().multiply2();
+    final Z result = mN == 0 ? super.next() : super.next().multiply2();
     super.next();
     return result;
   }

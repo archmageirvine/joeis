@@ -42,7 +42,11 @@ public class A116611 implements SequenceWithOffset {
     while (true) {
       ++mK;
       final Z k = Z.valueOf(mK);
-      if (mBase.modPow(k, k).intValue() == (mResidue % mK)) {
+      int r = mResidue % mK;
+      if (r < 0) {
+        r += mK;
+      }
+      if (mBase.modPow(k, k).intValue() == r) {
         return k;
       }
     }

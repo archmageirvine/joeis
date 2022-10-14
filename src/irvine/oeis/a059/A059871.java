@@ -38,6 +38,6 @@ public class A059871 extends MemoryFunctionInt2<Z> implements Sequence {
     ++mN;
     final int pn = mP.a(mN).intValueExact();
     final int pnm1 = mP.a(mN - 1).intValue();
-    return get(pn - pnm1*(1 + (mN & 1)), mN - 2);
+    return get(pn - pnm1 * (1 + (mN & 1)), mN - 2);
   }
 }

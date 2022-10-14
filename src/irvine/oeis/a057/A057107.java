@@ -1,22 +1,16 @@
 package irvine.oeis.a057;
 
-import irvine.math.z.Z;
+import irvine.oeis.FilterSequence;
 import irvine.oeis.a000.A000567;
-import irvine.util.string.StringUtils;
 
 /**
  * A057107 Octagonal palindromes.
  * @author Sean A. Irvine
  */
-public class A057107 extends A000567 {
+public class A057107 extends FilterSequence {
 
-  @Override
-  public Z next() {
-    while (true) {
-      final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
-        return t;
-      }
-    }
+  /** Construct the sequence. */
+  public A057107() {
+    super(new A000567(), PALINDROME);
   }
 }

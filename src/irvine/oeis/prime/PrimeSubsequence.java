@@ -16,7 +16,7 @@ public class PrimeSubsequence extends FilterSequence {
    * @param seq underlying sequence
    */
   public PrimeSubsequence(final Sequence seq) {
-    super(seq, PRIME);
+    super(1, seq, PRIME);
   }
 
   /**
@@ -25,7 +25,7 @@ public class PrimeSubsequence extends FilterSequence {
    * @param start ignored, for compatibility
    */
   public PrimeSubsequence(final Sequence seq, final int start) {
-    super(seq, PRIME);
+    super(1, seq, PRIME);
   }
 
   /**

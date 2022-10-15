@@ -45,7 +45,7 @@ public class A059915 implements Sequence {
     while (true) {
       mN = mN.add(1);
       if (mVerbose && mN.mod(10000) == 0) {
-        StringUtils.message("Search complete to " + mN);
+        StringUtils.message("Search complete to " + mN + " states: " + mA.size());
       }
       if (mA.first().left().compareTo(mN) > 0) {
         return mN;

@@ -14,7 +14,7 @@ public class A056193 implements Sequence {
   private long mN = 1;
   private Z mA = null;
 
-  private Z code(final Z n, final long base) {
+  protected Z code(final Z n, final long base) {
     final ArrayList<Long> digits = new ArrayList<>();
     final Z b = Z.valueOf(base);
     Z m = n;

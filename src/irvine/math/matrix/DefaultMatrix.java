@@ -20,7 +20,7 @@ public class DefaultMatrix<E> extends AbstractMatrix<E> {
   private final HashMap<Pair<Long, Long>, E> mMatrix = new HashMap<>();
 
   /*
-   * Keep track of whether or not this matrix is diagonal.  If the status is
+   * Keep track of whether this matrix is diagonal.  If the status is
    * known then the second variable is a true representation of the state.
    * A call to <code>isDiagonal</code> will either return the known value or
    * trigger a computation to get the answer. Knowing a matrix is diagonal

@@ -22,7 +22,6 @@ public class FilterSequence implements SequenceWithOffset {
   /** Palindromic terms. */
   public static final Function<Z, Boolean> PALINDROME = k -> StringUtils.isPalindrome(k.toString());
 
-
   private final Sequence mSeq;
   private final Function<Z, Boolean> mPredicate;
   private final int mOffset;

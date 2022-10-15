@@ -112,7 +112,6 @@ public class RecurrenceReflector {
               final ContinuedFractionOfSqrtSequence hseq = (ContinuedFractionOfSqrtSequence) Class.forName(className).getDeclaredConstructor().newInstance();
               seq = hseq;
               ipart++; // skip offset
-              hseq.fillPeriod();
               final int plen = hseq.getPeriodLength();
               parts[ipart++] = getPeriodicRecurrence(plen); // MATRIX
 

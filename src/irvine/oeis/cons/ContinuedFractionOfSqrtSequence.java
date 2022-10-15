@@ -23,13 +23,13 @@ public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
   protected Z mC0; // old convergent numerator
   protected Z mC1; // new convergent numerator
   protected Z mD0; // old convergent denominator
-  protected Z   mD1; // new convergent denominator
+  protected Z mD1; // new convergent denominator
   protected int mP0; // numerator   of old partial fraction
   protected int mP1; // denominator of new partial fraction
   protected int mQ0; // numerator of old partial fraction
   protected int mQ1; // denominator of new partial fraction
   protected int mPerInd; // index  in period
-  protected int mPerLen; // length of period
+  protected int mPerLen = -1; // length of period
   protected int mPerLeast; // least element of the period
   protected int mPerCount1; // number of ONEs in the period
   //protected int mPerCenter; // central element(s) in period
@@ -107,7 +107,7 @@ public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
    * property of the continued fractions of the square roots
    * of all numbers.
    */
-  public void fillPeriod() {
+  protected void fillPeriod() {
     initialize();
     mPerCount1 = 0;
     if (!mIsPow2) { // no square number
@@ -239,6 +239,9 @@ public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
    * @return length of the period, including the trailing 2*root
    */
   public int getPeriodLength() {
+    if (mPerLen < 0) {
+      fillPeriod();
+    }
     return mPerLen;
   } // getPeriodLength
 

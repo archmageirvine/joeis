@@ -15,7 +15,7 @@ public class A059884 implements Sequence {
   private final Fast mPrime = new Fast();
   private long mN = 0;
 
-  private Z encode(final Z n) {
+  protected Z encode(final Z n) {
     final FactorSequence fs = Jaguar.factor(n);
     final Z last = fs.largestPrimeFactor();
     Z encoding = Z.ZERO;
@@ -28,7 +28,7 @@ public class A059884 implements Sequence {
         if ((e & 1) == 1) {
           encoding = encoding.setBit(s);
         }
-        s += 2 * k;
+        s += 1 << k;
         e >>>= 1;
       }
     }

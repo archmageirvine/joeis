@@ -49,7 +49,7 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
 
   protected void ensureAccuracy(final int n) {
   }
-  
+
   private void updateString() {
     // The 32 below is number of extra digits to ensure we have in the queue.
     // In pathological cases this might not be enough, and if we ever find
@@ -60,6 +60,14 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
       ensureAccuracy(newLength);
       mS = getCR().toString(newLength, mBase);
     }
+  }
+
+  /**
+   * Get the number base.
+   * @return mBase
+   */
+  public int getBase() {
+    return mBase;
   }
 
   @Override

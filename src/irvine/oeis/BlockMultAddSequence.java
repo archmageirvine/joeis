@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * A319887 a(n) = 4*3*2*1 - 8*7*6*5 + 12*11*10*9 - 16*15*14*13 + ... - (up to the n-th term).
  * @author Georg Fischer
  */
-public class BlockMultAddSequence implements Sequence {
+public class BlockMultAddSequence implements SequenceWithOffset {
 
   protected final int mBlockLen; // length of the blocks
   protected int mBlockIndex; // iterates over the numbers in a block
@@ -17,6 +17,7 @@ public class BlockMultAddSequence implements Sequence {
   protected int mI; // between 1 and mBlockLen, upwards or downwards
   protected Z mTerm; // current product for a block
   protected Z mSum; // sum of complete blocks so far
+  private int mOffset = 1; // first index
 
   /**
    * Creates a new Add/Multiply sequence.
@@ -66,6 +67,15 @@ public class BlockMultAddSequence implements Sequence {
       }
     } // while busy
     return result;
+  }
+
+  @Override
+  public int getOffset() {
+    return mOffset;
+  }
+
+  public void setOffset(final int offset) {
+    mOffset = offset;
   }
 
   /**

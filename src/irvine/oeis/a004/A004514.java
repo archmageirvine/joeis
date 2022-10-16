@@ -13,7 +13,7 @@ public class A004514 implements Sequence {
     return n < 0 ? 0 : s.charAt(n) - '0';
   }
 
-  protected Z nimsum(final int base, final Z a, final Z b) {
+  protected Z nimSum(final int base, final Z a, final Z b) {
     if (base > 10) {
       throw new UnsupportedOperationException();
     }
@@ -32,7 +32,7 @@ public class A004514 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return nimsum(4, mN, mN);
+    return nimSum(4, mN, mN);
   }
 }
 

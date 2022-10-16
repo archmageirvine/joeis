@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059951.
+ * A059972 a(n) is the least positive integer k such that all digits of k are 0 or 1 in exactly n different bases B, where 2 &lt;= B &lt;= k; i.e., such that A068953(k)=n.
  * @author Sean A. Irvine
  */
 public class A059972 implements Sequence {
@@ -45,10 +45,8 @@ public class A059972 implements Sequence {
         }
       }
       for (final Z b : Jaguar.factor(m - 1).divisors()) {
-        if (considered.add(b)) {
-          if (is01(m, b.longValueExact()) && ++cnt > mN) {
-            break;
-          }
+        if (considered.add(b) && is01(m, b.longValueExact()) && ++cnt > mN) {
+          break;
         }
       }
       if (cnt == mN) {

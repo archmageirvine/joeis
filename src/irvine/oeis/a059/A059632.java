@@ -16,7 +16,7 @@ public class A059632 extends A004514 {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return nimsum(10, mA.next(), mN);
+    return nimSum(10, mA.next(), mN);
   }
 }
 

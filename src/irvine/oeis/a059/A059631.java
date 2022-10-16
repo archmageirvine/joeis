@@ -11,7 +11,7 @@ public class A059631 extends A059627 {
   @Override
   public Z next() {
     final Z t = super.next();
-    return nimsum(10, t, t);
+    return nimSum(10, t, t);
   }
 }
 

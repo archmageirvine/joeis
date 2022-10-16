@@ -12,7 +12,7 @@ public class A051775 extends MemoryFunction2<Z, Z> implements Sequence {
 
   // After R. J. Mathar
 
-  private static Z nimSum(final Z a, final Z b) {
+  protected static Z nimSum(final Z a, final Z b) {
     return a.xor(b);
   }
 
@@ -64,6 +64,10 @@ public class A051775 extends MemoryFunction2<Z, Z> implements Sequence {
       }
     }
     return a;
+  }
+
+  protected Z nimMultiply(final long n, final long m) {
+    return get(Z.valueOf(n), Z.valueOf(m));
   }
 
   private Z mN = Z.NEG_ONE;

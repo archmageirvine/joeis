@@ -107,7 +107,7 @@ public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
    * property of the continued fractions of the square roots
    * of all numbers.
    */
-  protected void fillPeriod() {
+  public void fillPeriod() {
     initialize();
     mPerCount1 = 0;
     if (!mIsPow2) { // no square number

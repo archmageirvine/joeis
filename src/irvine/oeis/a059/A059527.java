@@ -41,6 +41,6 @@ public class A059527 extends DecimalExpansionSequence {
 
   /** Construct the sequence. */
   public A059527() {
-    super(0, CONST);
+    super(1, CONST);
   }
 }

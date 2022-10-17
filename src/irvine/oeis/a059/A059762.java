@@ -10,7 +10,7 @@ public class A059762 extends FilterSequence {
 
   /** Construct the sequence. */
   public A059762() {
-    super(new A059453(), k -> k.multiply(4).add(3).isProbablePrime()
+    super(0, new A059453(), k -> k.multiply(4).add(3).isProbablePrime()
       && !k.multiply(8).add(7).isProbablePrime());
   }
 }

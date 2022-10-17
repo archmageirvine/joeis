@@ -19,7 +19,7 @@ public class A204574 implements SequenceWithOffset {
 
   /** Construct the sequence. */
   public A204574() {
-    this(0, new A001541(), 2, 0);
+    this(1, new A001541(), 2, 0);
   }
 
   /**
@@ -27,7 +27,7 @@ public class A204574 implements SequenceWithOffset {
    * @param seq underlying sequence
    */
   public A204574(final Sequence seq) {
-    this(0, seq, 2, new long[0]);
+    this(1, seq, 2, new long[0]);
   }
 
   /**
@@ -36,7 +36,7 @@ public class A204574 implements SequenceWithOffset {
    * @param base "written in" this base
    */
   public A204574(final Sequence seq, final int base) {
-    this(0, seq, base, new long[0]);
+    this(1, seq, base, new long[0]);
   }
 
   /**
@@ -46,7 +46,7 @@ public class A204574 implements SequenceWithOffset {
    * @param preTerms leading terms to be prefixed
    */
   public A204574(final Sequence seq, final int base, final long... preTerms) {
-    this(0, seq, base, preTerms);
+    this(1, seq, base, preTerms);
   }
 
   /**
@@ -64,7 +64,7 @@ public class A204574 implements SequenceWithOffset {
     for (int i = 0; i < preTerms.length; ++i) {
       mPreTerms[i] = Z.valueOf(preTerms[i]);
     }
-    mN = offset - 1;
+    mN = -1;
   }
 
   @Override

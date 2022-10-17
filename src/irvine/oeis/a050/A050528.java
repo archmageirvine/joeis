@@ -18,7 +18,7 @@ public class A050528 implements SequenceWithOffset {
 
   /** Construct the sequence. */
   public A050528() {
-    this(0, 9, 2, 1);
+    this(1, 9, 2, 1);
   }
 
   /**

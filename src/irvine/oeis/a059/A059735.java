@@ -13,7 +13,7 @@ public class A059735 extends Combiner {
 
   /** Construct the sequence. */
   public A059735() {
-    super(new SkipSequence(new A000568(), 1), new A002785(), AVERAGE);
+    super(1, new SkipSequence(new A000568(), 1), new A002785(), AVERAGE);
   }
 }
 

@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.factorial.NaiveFactorial;
+import irvine.math.factorial.BinarySplitFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A005607 implements Sequence {
 
-  private final NaiveFactorial mF = new NaiveFactorial();
+  private final BinarySplitFactorial mF = new BinarySplitFactorial();
   private Z mA = null;
   private Z mB = null;
 

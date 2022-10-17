@@ -1,6 +1,6 @@
 package irvine.math.expression;
 
-import irvine.math.factorial.NaiveFactorial;
+import irvine.math.factorial.BinarySplitFactorial;
 import irvine.math.z.Z;
 
 /**
@@ -23,9 +23,9 @@ public class Factorial extends AbstractExpression {
   public Expression performEval() {
     final Expression expr = mExpr.eval();
     if (expr instanceof Literal<?, ?>) {
-      final Literal<?, ?> lit = (Literal) expr;
+      final Literal<?, ?> lit = (Literal<?, ?>) expr;
       if (lit.value() instanceof Z) {
-        return new LiteralZ(new NaiveFactorial().factorial(((Z) lit.value()).intValueExact()));
+        return new LiteralZ(new BinarySplitFactorial().factorial(((Z) lit.value()).intValueExact()));
       }
       throw new UnsupportedOperationException("Factorial on " + lit.ring());
     } else if (expr == mExpr) {

@@ -3,8 +3,7 @@ package irvine.math.factorial;
 import irvine.math.z.Z;
 
 /**
- * Compute factorial by binary splitting.
- *
+ * Compute factorials by binary splitting.
  * @author Sean A. Irvine
  */
 public class BinarySplitFactorial implements Factorial {
@@ -26,7 +25,7 @@ public class BinarySplitFactorial implements Factorial {
 
   @Override
   public Z factorial(final int n) {
-    if (n < 1) {
+    if (n <= 1) {
       if (n < 0) {
         throw new IllegalArgumentException("n must be nonnegative");
       }

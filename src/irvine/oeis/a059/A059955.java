@@ -17,7 +17,7 @@ public class A059955 implements Sequence {
 
   @Override
   public Z next() {
-    long q = mPrime.nextPrime(mP);
+    final long q = mPrime.nextPrime(mP);
     for (long k = mP + 1; k <= q; ++k) {
       mF = mF.multiply(k);
       mLcm = mLcm.lcm(Z.valueOf(k));

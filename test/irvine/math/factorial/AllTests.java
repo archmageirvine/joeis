@@ -14,7 +14,6 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(BinarySplitFactorialTest.class);
     suite.addTestSuite(MemoryFactorialTest.class);
-    suite.addTestSuite(NaiveFactorialTest.class);
     return suite;
   }
 

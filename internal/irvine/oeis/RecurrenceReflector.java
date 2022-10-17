@@ -8,12 +8,12 @@
  *  2021-01-23, Georg Fischer: copied from BatchTest
  */
 package irvine.oeis;
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.lang.reflect.Method;
 import java.nio.channels.Channels;
-import java.nio.charset.StandardCharsets;
 
 import irvine.math.z.Z;
 import irvine.oeis.cons.ContinuedFractionOfSqrtSequence;
@@ -143,7 +143,7 @@ public class RecurrenceReflector {
    * @return 3 Strings with parameters
    */
   public String[] getContinuedFractionRecurrence(final ContinuedFractionOfSqrtSequence hseq) {
-    String[] result = new String[] { "conti", "", "" }; // default if reflection fails
+    final String[] result = {"conti", "", ""}; // default if reflection fails
     final StringBuilder buffer = new StringBuilder(1024);
     hseq.fillPeriod();
     final int plen = hseq.getPeriodLength();
@@ -200,7 +200,7 @@ public class RecurrenceReflector {
         } else { // it was some different call - return empty Strings
         }
       }
-    } catch (Exception exc) { // could not reflect next() method
+    } catch (final NoSuchMethodException exc) { // could not reflect next() method
     }
     return result;
   }
@@ -249,7 +249,7 @@ public class RecurrenceReflector {
             ipart = 0; // leave aseqno and callCode
             mAseqno = parts[ipart++];
             final String callCode = parts[ipart++];
-            String termList = parts[ipart + 1]; // behind offset
+            final String termList = parts[ipart + 1]; // behind offset
             final String className = "irvine.oeis.a" + mAseqno.substring(1, 4) + '.' + mAseqno;
             try {
 
@@ -397,7 +397,7 @@ public class RecurrenceReflector {
                 ipart++; // skip offset
                 final Sequence aseq = hseq.getSequence();
                 if (aseq instanceof PeriodicSequence) {
-                  PeriodicSequence pseq = (PeriodicSequence) aseq;
+                  final PeriodicSequence pseq = (PeriodicSequence) aseq;
                   final Z[] period = pseq.getInitTerms();
                   parts[ipart++] = getPeriodicRecurrence(period.length);
                   parts[ipart++] = (getVectorString(hseq.getTerms()) + getVectorString(period)).replaceAll("\\]\\[", "\\,"); // INIT
@@ -413,7 +413,7 @@ public class RecurrenceReflector {
               if (seq == null) {
                 // ignore
               } else if (parts[3].length() < 8192 && parts[4].length() < 4096) {
-                parts[ipart++] = termList.replaceAll("\\,\\-?\\d*\\Z",""); // last may be incomplete, remove it
+                parts[ipart++] = termList.replaceAll("\\,\\-?\\d*\\Z", ""); // last may be incomplete, remove it
                 final Method thisNextMethod = seq.getClass().getMethod("next");
                 if (cfOk || thisNextMethod.equals(superNextMethod)) {
                   for (ipart = 0; ipart < parts.length; ++ipart) { // print a tab-separated record

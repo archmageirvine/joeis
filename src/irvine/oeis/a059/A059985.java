@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.math.z.Z;
 
 /**
- * A059984 Concatenation of \u0141ukasiewicz words.
+ * A059985 \u0141ukasiewicz words as integers written in factorial base.
  * @author Sean A. Irvine
  */
 public class A059985 extends A059984 {

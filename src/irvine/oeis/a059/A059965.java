@@ -73,13 +73,13 @@ public class A059965 implements Sequence {
         }
       }
       if (tried.add(rep.mid())) {
-        long m = consider(rep.mid(), mN);
+        final long m = consider(rep.mid(), mN);
         if (m > max) {
           max = m;
         }
       }
       if (tried.add(rep.right())) {
-        long m = consider(rep.right(), mN);
+        final long m = consider(rep.right(), mN);
         if (m > max) {
           max = m;
         }

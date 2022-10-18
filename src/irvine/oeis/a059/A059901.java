@@ -29,7 +29,6 @@ public class A059901 implements Sequence {
       }
     }
     final int[] part = mPart.pollFirst();
-    System.out.println(Arrays.toString(part));
     Z p = Z.ONE;
     Z res = Z.ONE;
     for (final int v : part) {

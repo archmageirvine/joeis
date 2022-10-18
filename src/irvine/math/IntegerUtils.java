@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
+import irvine.math.z.Z;
 import irvine.util.io.IOUtils;
 import irvine.util.string.StringUtils;
 
@@ -186,6 +187,19 @@ public final class IntegerUtils {
    */
   public static int lcm(final int a, final int b) {
     return (a / gcd(a, b)) * b;
+  }
+
+  /**
+   * Return the least common multiple of a list of integers.
+   * @param lst elements
+   * @return least common multiple
+   */
+  public static Z lcm(final int... lst) {
+    Z lcm = Z.ONE;
+    for (final int v : lst) {
+      lcm = lcm.lcm(Z.valueOf(v));
+    }
+    return lcm;
   }
 
   /**

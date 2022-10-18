@@ -25,16 +25,8 @@ public class A052265 extends A052107 {
   private Z mF = Z.ONE;
   private Polynomial<Z> mRow = RING.onePlusXToTheN(1);
 
-  private Z lcm(final int[] q) {
-    Z lcm = Z.ONE;
-    for (final int v : q) {
-      lcm = lcm.lcm(Z.valueOf(v));
-    }
-    return lcm;
-  }
-
   private Polynomial<Z> fix(final int[] q) {
-    final Z lcm = lcm(q);
+    final Z lcm = IntegerUtils.lcm(q);
     final ArrayList<Z> u = new ArrayList<>();
     final Z[] v = Jaguar.factor(lcm).divisors();
     for (final Z d : v) {

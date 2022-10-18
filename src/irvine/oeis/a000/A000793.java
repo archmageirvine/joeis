@@ -1,5 +1,6 @@
 package irvine.oeis.a000;
 
+import irvine.math.IntegerUtils;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -21,10 +22,7 @@ public class A000793 implements Sequence {
     int[] v;
     Z best = Z.ZERO;
     while ((v = p.next()) != null) {
-      Z lcm = Z.ONE;
-      for (final int w : v) {
-        lcm = lcm.lcm(Z.valueOf(w));
-      }
+      final Z lcm = IntegerUtils.lcm(v);
       if (lcm.compareTo(best) > 0) {
         best = lcm;
       }

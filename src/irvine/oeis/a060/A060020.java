@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import irvine.factor.prime.Fast;
 import irvine.math.IntegerUtils;
 import irvine.math.api.Group;
 import irvine.math.group.GroupFactory;
@@ -19,6 +20,7 @@ import irvine.util.string.StringUtils;
 public class A060020 implements Sequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final Fast mPrime = new Fast();
   private int mN = 1;
 
   private Group<Object> mG = null;
@@ -88,6 +90,10 @@ public class A060020 implements Sequence {
     ++mN;
     if (mN >= 10 && (mN & 1) == 0) {
       return Z.valueOf(mN / 2); // Theorem Griggs
+    }
+    if (mN > 2 && mPrime.isPrime(mN)) {
+      // There is only one group for p=mN prime, Z_p which has w(Z_p)=floor(2*sqrt(p-2))
+      return Z.valueOf(IntegerUtils.sqrt(4 * mN - 8));
     }
     // There are other applicable Theorems that could handle many other cases,
     // but here we use an explicit construction of the relevant spanning sets.

@@ -14,14 +14,14 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A060020.
+ * A060020 Maximal size of a nonspanning subset of any Abelian group of order n.
  * @author Sean A. Irvine
  */
 public class A060020 implements Sequence {
 
-  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private final Fast mPrime = new Fast();
-  private int mN = 1;
+  protected final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  protected final Fast mPrime = new Fast();
+  protected int mN = 1;
 
   private Group<Object> mG = null;
   private final Map<Object, Integer> mId = new HashMap<>();
@@ -29,7 +29,7 @@ public class A060020 implements Sequence {
   private int[] mMarkers = null;
   private int mMax = 0;
 
-  private void search(final int pos, final int setSize, final int spannedCount) {
+  protected void search(final int pos, final int setSize, final int spannedCount) {
     //System.out.println("|G|=" + mG.size() + " " + mG + " pos=" + pos + " setSize=" + setSize + " span=" + spannedCount + " " + Arrays.toString(mMarkers));
     if (spannedCount >= mMarkers.length) {
       return; // Entire group is spanned, don't search any further
@@ -64,7 +64,7 @@ public class A060020 implements Sequence {
   }
 
   @SuppressWarnings("unchecked")
-  private long maxSpanningSize(final Group<?> g) {
+  protected long maxSpanningSize(final Group<?> g, final int setSize, final int startSpan) {
     mG = (Group<Object>) g;
     mId.clear();
     mElement.clear();
@@ -76,11 +76,15 @@ public class A060020 implements Sequence {
     assert mId.size() == g.size().intValueExact();
     mMarkers = new int[mId.size()];
     mMax = 0;
-    // In this version we assume the identity is always in the set
     assert mId.get(g.zero()) == 0;
-    ++mMarkers[0];
-    search(1, 1, 1);
-    --mMarkers[0];
+    if (setSize > 0) {
+      // Assume first element is 0
+      ++mMarkers[0];
+    }
+    search(1, setSize, startSpan);
+    if (setSize > 0) {
+      --mMarkers[0];
+    }
     assert IntegerUtils.isZero(mMarkers); // Proves search behaved well
     return mMax;
   }
@@ -100,7 +104,7 @@ public class A060020 implements Sequence {
     long max = 0;
     for (final Group<?> g : GroupFactory.smallGroups(mN)) {
       if (g.isAbelian()) {
-        final long m = maxSpanningSize(g);
+        final long m = maxSpanningSize(g, 1, 1);
         if (mVerbose) {
           StringUtils.message(g + " with size " + g.size() + " has max " + m);
         }

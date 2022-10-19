@@ -5,7 +5,7 @@ import irvine.oeis.a033.A033999;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A130595 Triangle read by rows: lower triangular matrix which is inverse to Pascal&apos;s triangle (A007318) regarded as a lower triangular matrix.
+ * A130595 Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
  * @author Georg Fischer
  */
 public class A130595 extends PartitionTransformTriangle {

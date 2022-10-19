@@ -5,7 +5,7 @@ import irvine.oeis.a144.A144097;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A187920 Triangle T(n,k) for A(x)^k=sum(n&gt;=k T(n,k)*x^n), where o.g.f. A(x) satisfies A(x)=(1+x*A(x)^3)/(1-x*A(x)^3),
+ * A187920 Triangle T(n,k) for A(x)^k=sum(n&gt;=k T(n,k)*x^n), where o.g.f. A(x) satisfies A(x)=(1+x*A(x)^3)/(1-x*A(x)^3),.
  * @author Georg Fischer
  */
 public class A187920 extends PartitionTransformTriangle {

@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A182888 Triangle read by rows: T(n,k) is the number of weighted lattice paths in L_n having k (1,0)-steps at level 0. These are paths of weight n that start at (0,0) , end on the horizontal axis and whose steps are of the following four kinds: an (1,0)-step with w
+ * A182888 Triangle read by rows: T(n,k) is the number of weighted lattice paths in L_n having k (1,0)-steps at level 0. These are paths of weight n that start at (0,0) , end on the horizontal axis and whose steps are of the following four kinds: an (1,0)-step with weight 1, an (1,0)-step with weight 2, a (1,1)-step with weight 2, and a (1,-1)-step with weight 1. The weight of a path is the sum of the weights of its steps.
  * @author Georg Fischer
  */
 public class A182888 extends PartitionTransformTriangle {

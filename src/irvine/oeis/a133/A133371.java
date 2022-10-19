@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001022;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A133371 Triangle read by rows: T(i,j) is the number of i-permutations of 14 objects a,b,c,d,e,f,g,h,i,j,k,l,m,n, with repetition allowed, containing j a&apos;s.
+ * A133371 Triangle read by rows: T(i,j) is the number of i-permutations of 14 objects a,b,c,d,e,f,g,h,i,j,k,l,m,n, with repetition allowed, containing j a's.
  * @author Georg Fischer
  */
 public class A133371 extends PartitionTransformTriangle {

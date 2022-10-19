@@ -6,7 +6,7 @@ import irvine.oeis.a004.A004148;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A162981 Number of Dyck paths with no UUU&apos;s and no DDD&apos;s of semilength n and having k returns to the x-axis (1 &lt;= k &lt;= n; U=(1,1), D=(1,-1)).
+ * A162981 Number of Dyck paths with no UUU's and no DDD's of semilength n and having k returns to the x-axis (1 &lt;= k &lt;= n; U=(1,1), D=(1,-1)).
  * @author Georg Fischer
  */
 public class A162981 extends PartitionTransformTriangle {

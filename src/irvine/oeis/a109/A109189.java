@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
- * A109189 Triangle read by rows: T(n,k) is number of Grand Motzkin paths of length n having k (1,0)-steps at level zero. (A Grand Motzkin path is a path in the half-plane x&gt;=0, starting at (0,0), ending at (n,0) and consisting of steps u=(1,1), d=(1,-1) and h=(1,0).
+ * A109189 Triangle read by rows: T(n,k) is number of Grand Motzkin paths of length n having k (1,0)-steps at level zero. (A Grand Motzkin path is a path in the half-plane x&gt;=0, starting at (0,0), ending at (n,0) and consisting of steps u=(1,1), d=(1,-1) and h=(1,0).).
  * @author Georg Fischer
  */
 public class A109189 extends PartitionTransformTriangle {

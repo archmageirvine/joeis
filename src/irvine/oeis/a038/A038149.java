@@ -9,14 +9,14 @@ import irvine.oeis.a037.A037027;
  */
 public class A038149 extends A037027 {
 
-  private long mN = -1;
+  private int mN = 0;
 
   @Override
   public Z next() {
     ++mN;
     Z max = Z.ZERO;
-    for (long k = 0; k <= mN; ++k) {
-      max = max.max(t(mN, k));
+    for (int k = 0; k < mN; ++k) {
+      max = max.max(super.next());
     }
     return max;
   }

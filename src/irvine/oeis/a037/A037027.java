@@ -1,34 +1,18 @@
 package irvine.oeis.a037;
+// manually partran at 2022-10-03 08:24
 
-import irvine.math.z.Binomial;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.SkipSequence;
+import irvine.oeis.a000.A000045;
+import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
  * A037027 Skew Fibonacci-Pascal triangle read by rows.
- * @author Sean A. Irvine
+ * @author Georg Fischer
  */
-public class A037027 implements Sequence {
+public class A037027 extends PartitionTransformTriangle {
 
-  private long mN = -1;
-  private long mM = 0;
-
-  protected Z t(final long n, final long m) {
-    Z sum = Z.ZERO;
-    for (long k = 0; k <= n - m; ++k) {
-      sum = sum.add(Binomial.binomial(m + k, m).multiply(Binomial.binomial(k, n - k - m)));
-    }
-    return sum;
+  /** Construct the sequence. */
+  public A037027() {
+    super(0, new SkipSequence(new A000045(), 1));
   }
-
-  @Override
-  public Z next() {
-    if (++mM > mN) {
-      ++mN;
-      mM = 0;
-    }
-    return t(mN, mM);
-  }
-
 }
-

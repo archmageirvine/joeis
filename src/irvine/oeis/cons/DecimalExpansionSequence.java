@@ -64,7 +64,7 @@ public class DecimalExpansionSequence extends RealConstantSequence implements Se
 
   /**
    * Get the number base.
-   * @return mBase
+   * @return the base
    */
   public int getBase() {
     return mBase;

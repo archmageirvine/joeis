@@ -6,7 +6,7 @@ import irvine.oeis.triangle.Triangle;
 
 /**
  * A201641 Triangle read by rows, T(n,k) for 0&lt;=k&lt;=n, generalizes the colored Motzkin paths of A129400.
- * Recurrence: T(0,0)=1, T(0,k)=0 for k>0 and for n>=1 T(n,k) = T(n-1,k-1) + 2*T(n-1,k) + 4*T(n-1,k+1).
+ * Recurrence: <code>T(0,0)=1, T(0,k)=0 for k>0 and for n>=1 T(n,k) = T(n-1,k-1) + 2*T(n-1,k) + 4*T(n-1,k+1)</code>.
  * @author Georg Fischer
  */
 public class A201641 extends Triangle implements SequenceWithOffset {

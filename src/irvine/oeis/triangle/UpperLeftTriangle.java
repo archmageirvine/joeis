@@ -70,7 +70,7 @@ public class UpperLeftTriangle extends Triangle implements SequenceWithOffset {
 
   /**
    * Set the offset for the sequence or for a subclass that represents a column or row.
-   * @offset first index
+   * @param offset first index
    */
   public void setOffset(final int offset) {
     mOffset = offset;

@@ -143,7 +143,7 @@ public class GeneratingFunctionTriangle implements SequenceWithOffset {
   }
 
   /**
-   * Modify the offset after cosntruction.
+   * Modify the offset after construction.
    * @param offset first valid term has this index
    */
   public void setOffset(final int offset) {

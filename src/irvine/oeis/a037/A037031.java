@@ -10,8 +10,14 @@ import irvine.oeis.a000.A000720;
  */
 public class A037031 extends A000720 {
 
+  private boolean mFirst = true;
+
   @Override
   public Z next() {
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
+    }
     final Z pi = super.next();
     return Binomial.binomial(mN, pi);
   }

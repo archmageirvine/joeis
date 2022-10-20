@@ -2052,3 +2052,4 @@ A059817 Let s_n be the simplex packing n-width for the manifold torus X square; 
 A059818 Let s_n be the simplex packing n-width for the manifold torus X square; sequence gives denominator of s_n/Pi.
 A059829 Maximal size of a minimal-generating-set of G where G is a finite group of order n.
 A060017 Number of n-feedback edge set obstructions.
+A060040 Square array T(n,k) (n >= 2, k >= 1) giving smallest positive integer m such that any set of m points in general position in R^n contains k points in convex position, read by antidiagonals.

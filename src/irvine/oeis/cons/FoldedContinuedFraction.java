@@ -12,6 +12,8 @@ import irvine.oeis.SequenceWithOffset;
  * This class implements the theorem in the paper:
  * Jeffrey O. Shallit, "Simple Continued Fractions for Some Irrational Numbers II", J. Number Theory 14 (1982), 228-231,
  * together with its application to Liouville's number in section III.
+ * The constant that is expanded into a continued fraction is Sum_{k&gt;=0} u^(-c(k)).
+ * The continued fraction has peaks terms at u(d(k)), where d(k) = c(k + 1) - 2*c(k).
  * @author Georg Fischer
  */
 public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWithOffset {
@@ -19,7 +21,7 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
   protected boolean mCompress;
   protected int mN;
   protected int mOffset;
-  protected final Function<Integer, Z> mLambda; // lambda expression for u(d(ny))
+  protected final Function<Integer, Z> mLambda; // lambda expression k -&gt; u(d(k))
   protected int mNy; // number of folds
   protected int mCfType; // type of the c.f.: 0 = Shallit's theorem, 1 = folded only
 
@@ -36,6 +38,7 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
   /**
    * Construct the sequence.
    * @param offset first index
+   * @param lambda expression that maps k (originally: ny): k -&gt; u(d(k))
    * @param inits initial terms
    */
   public FoldedContinuedFraction(int offset, final Function<Integer, Z> lambda, final long... inits) {

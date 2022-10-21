@@ -95,7 +95,8 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
       throw new IllegalArgumentException("Expected " + mElementField.zero() + " saw " + t.coeff(0));
     }
     if (t.degree() > 0 && !mElementField.one().equals(t.coeff(1))) {
-      // Cf. A123301 for a version that supports non-unit t.coeff(1)
+      // Cf. A060041 for a Q version that supports non-unit t.coeff(1)
+      // Cf. A123301 for a Polynomial<Q> version that supports non-unit t.coeff(1)
       throw new IllegalArgumentException("Expected " + mElementField.one() + " saw " + t.coeff(1));
     }
     final ArrayList<E> u = new ArrayList<>();

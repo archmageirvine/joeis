@@ -14,6 +14,6 @@ public class A060034 extends Combiner {
 
   /** Construct the sequence. */
   public A060034() {
-    super(new SkipSequence(new A000041(), 1), new Combiner(new SkipSequence(new A000837(), 1), new A024994(), ADD), SUBTRACT);
+    super(1, new SkipSequence(new A000041(), 1), new Combiner(new SkipSequence(new A000837(), 1), new A024994(), ADD), SUBTRACT);
   }
 }

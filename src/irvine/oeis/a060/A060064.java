@@ -19,7 +19,7 @@ public class A060064 implements Sequence {
     ++mN;
     long p = mPrime.nextPrime(mM);
     while (true) {
-      long q = mPrime.nextPrime(p);
+      final long q = mPrime.nextPrime(p);
       if (q - p > mN) {
         mM = p + 1;
         return Z.valueOf(mM);

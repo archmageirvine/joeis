@@ -1,9 +1,7 @@
 package irvine.oeis.a156;
 // manually partran at 2022-10-18 05:00
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.oeis.a002.A002293;
+import irvine.oeis.a121.A121262;
 import irvine.oeis.triangle.PartitionTransformTriangle;
 
 /**
@@ -12,18 +10,8 @@ import irvine.oeis.triangle.PartitionTransformTriangle;
  */
 public class A156064 extends PartitionTransformTriangle {
 
-  private static class MySequence extends A002293 implements Sequence {
-
-    private int mN = -1;
-
-    public Z next() {
-      ++mN;
-      return (mN % 4 != 0) ? Z.ZERO : (((mN % 8) == 0) ? super.next() : super.next().negate());
-    }
-  }
-
   /** Construct the sequence. */
   public A156064() {
-    super(0, new MySequence());
+    super(0, new A121262(), 0, "i");
   }
 }

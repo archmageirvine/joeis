@@ -1,24 +1,19 @@
 package irvine.oeis.a060;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence0;
 
 /**
  * A060032 Ana sequence.
  * @author Georg Fischer
  */
-public class A060032 implements SequenceWithOffset {
+public class A060032 extends Sequence0 {
 
   private String mAn;
 
   /** Construct the sequence. */
   public A060032() {
     mAn = "1";
-  }
-
-  @Override
-  public int getOffset() {
-    return 0;
   }
 
   @Override

@@ -2,16 +2,15 @@ package irvine.oeis.a067;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A067903 Primes of the form floor((10/9)^k).
  * @author Georg Fischer
  */
-public class A067903 implements SequenceWithOffset {
+public class A067903 extends AbstractSequence {
 
-  private int mOffset;
-  private Q mFract; // fraction num/den
+  private final Q mFract; // fraction num/den
   private Q mProd; // accumulated power of mFract
   private Z mPrev; // previous a(n)
 
@@ -27,15 +26,10 @@ public class A067903 implements SequenceWithOffset {
    * @param den denominator
    */
   public A067903(final int offset, final int num, final int den) {
-    mOffset = offset;
+    super(offset);
     mFract = new Q(num, den);
     mProd = Q.ONE;
     mPrev = Z.ONE;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

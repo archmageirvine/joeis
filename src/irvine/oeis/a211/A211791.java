@@ -3,20 +3,15 @@ package irvine.oeis.a211;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence1;
 
 /**
  * A211791 a(n) = Sum_{y=1..n} Sum_{x=1..n} floor((x^k + y^k)^(1/k)) with k = 2.
  * @author Georg Fischer
  */
-public class A211791 implements SequenceWithOffset {
+public class A211791 extends Sequence1 {
 
   private int mN = 0;
-
-  @Override
-  public int getOffset() {
-    return 1;
-  }
 
   @Override
   public Z next() {

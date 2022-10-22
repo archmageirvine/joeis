@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A273652 Number of forests of labeled rooted trees of height at most 1, with n labels, two of which are used for root nodes and any root may contain &gt;= 1 labels.
@@ -12,11 +12,10 @@ import irvine.oeis.SequenceWithOffset;
  * a(n) = C(n, 2) * Sum_{j=0.. 2} Stirling2( 2,j) * j^(n- 2)
  * @author Georg Fischer
  */
-public class A273652 implements SequenceWithOffset {
+public class A273652 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mParm;
+  private final int mParm;
 
   /** Construct the sequence. */
   public A273652() {
@@ -29,14 +28,9 @@ public class A273652 implements SequenceWithOffset {
    * @param parm parameter
    */
   public A273652(final int offset, final int parm) {
-    mOffset = offset;
+    super(offset);
     mN = offset - 1;
     mParm = parm;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

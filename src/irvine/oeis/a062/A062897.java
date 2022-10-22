@@ -2,17 +2,16 @@ package irvine.oeis.a062;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A062897 Number and its reversal are both multiples of 2.
  * @author Georg Fischer
  */
-public class A062897 implements SequenceWithOffset {
+public class A062897 extends AbstractSequence {
 
   private long mN;
-  private long mMult;
-  private int mOffset;
+  private final long mMult;
 
   /** Construct the sequence. */
   public A062897() {
@@ -26,14 +25,9 @@ public class A062897 implements SequenceWithOffset {
    * @param mult multiple
    */
   public A062897(final int offset, final int start, final int mult) {
-    mOffset = offset;
+    super(offset);
     mN = start - 1;
     mMult = mult;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

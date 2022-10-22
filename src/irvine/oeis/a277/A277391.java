@@ -4,18 +4,17 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A277391 a(n) = n!*LaguerreL(n, -2*n).
  * a(n) = n! * Sum_{k=0..n} binomial(n, k) * 2^k * n^k / k!
  * @author Georg Fischer
  */
-public class A277391 implements SequenceWithOffset {
+public class A277391 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mParm;
+  private final long mParm;
 
   /** Construct the sequence. */
   public A277391() {
@@ -28,14 +27,9 @@ public class A277391 implements SequenceWithOffset {
    * @param parm parameter
    */
   public A277391(final int offset, final int parm) {
-    mOffset = offset;
+    super(offset);
     mN = offset - 1;
     mParm = parm;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

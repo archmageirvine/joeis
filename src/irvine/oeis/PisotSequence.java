@@ -7,16 +7,16 @@ import irvine.math.z.Z;
  * Pisot sequence.
  * @author Sean A. Irvine
  */
-public class PisotSequence implements SequenceWithOffset {
+public class PisotSequence extends AbstractSequence {
 
   private final Z mInitA;
   private final Z mInitB;
   private Z mA = null;
   private Z mB = null;
   private final Q mC;
-  protected int mOffset = 0;
 
   protected PisotSequence(final long a, final long b, final Q constant) {
+    super(0);
     mInitA = Z.valueOf(a);
     mInitB = Z.valueOf(b);
     mC = constant;
@@ -24,11 +24,6 @@ public class PisotSequence implements SequenceWithOffset {
 
   protected PisotSequence(final long a, final long b) {
     this(a, b, Q.HALF);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

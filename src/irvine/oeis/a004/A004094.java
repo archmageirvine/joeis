@@ -2,19 +2,17 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a000.A000079;
 
 /**
  * A004094 Powers of 2 written backwards.
  * @author Georg Fischer
  */
-public class A004094 implements SequenceWithOffset {
+public class A004094 extends AbstractSequence {
 
-  private int mN;
-  private int mOffset;
-  private Sequence mSeq;
+  private final Sequence mSeq;
 
   /** Construct the sequence. */
   public A004094() {
@@ -23,18 +21,12 @@ public class A004094 implements SequenceWithOffset {
 
   /**
    * Generic constructor with parameters
-   * @param offset
-   * @param seq
+   * @param offset sequence offset
+   * @param seq underlying sequence
    */
   public A004094(final int offset, final Sequence seq) {
-    mN = -1;
-    mOffset = offset;
+    super(offset);
     mSeq = seq;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

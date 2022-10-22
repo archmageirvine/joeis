@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.QuadraticCongruence;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A sequences that enumerates numbers that are formed by the concatenation of two numbers,
  * and that are a square or a product of two other numbers, with conditions on both pairs.
  * @author Georg Fischer
  */
-public class ConcatenatedProductSequence implements SequenceWithOffset {
+public class ConcatenatedProductSequence extends AbstractSequence {
 
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
   private static final long LIMIT = 100L; // use simple long arithmetic
@@ -22,7 +22,6 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
   private final int mDist; // distance of the two factors of the resulting product (0 = square).
   private int mLevel; // 0 for long algorithm, 1 for msolve algorithm
   private long mLP; // unmodified factor of the product
-  protected int mOffset; // first index
   private Z mPow10; // determines the width of the left concatenation number k resp. k+mIncr1 resp. k*mIncr1
   private final TreeSet<Z> mGood;
 
@@ -39,7 +38,7 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
    * @param dist distance of the two factors of the resulting product (0 = square).
    */
   public ConcatenatedProductSequence(final int offset, final String mode, final int conc1, final int conc2, final int dist) {
-    mOffset = offset;
+    super(offset);
     mReturnConc = mode.indexOf('c') >= 0;
     mAdditive = mode.indexOf('a') >= 0;
     mIncr1 = conc1;
@@ -54,11 +53,6 @@ public class ConcatenatedProductSequence implements SequenceWithOffset {
       mPow10 = Z.ONE;
     }
     mGood = new TreeSet<>();
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

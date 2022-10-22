@@ -8,12 +8,11 @@ import irvine.math.z.Z;
  * Earliest sequence with a(a(n))=b(n), where b(n) is some underlying sequence.
  * @author Georg Fischer
  */
-public class NumericalAronsonSequence implements SequenceWithOffset {
+public class NumericalAronsonSequence extends AbstractSequence {
 
   private static int sDebug = 0;
   protected MemorySequence mSeq; // underlying sequence
   protected int mN; // current index
-  protected int mOffset; // starting index
   protected int mAttribs; // bit mask for features; low nibble may be start value
   protected static final int EARLY = 0x10; // "Earliest sequence ..."
   protected static final int INCR = 0x20; // "...  being monotonically increasing"
@@ -28,13 +27,13 @@ public class NumericalAronsonSequence implements SequenceWithOffset {
    * @param attribs bit mask for attributes
    */
   public NumericalAronsonSequence(final int offset, final Sequence seq, final int attribs) {
+    super(offset);
     mSeq = MemorySequence.cachedSequence(seq);
     mHmap = new HashMap<>(1024);
     mImap = new HashMap<>(1024);
-    mOffset = offset;
     mAttribs = attribs;
     mN = -1;
-    while (mN < mOffset - 1) {
+    while (mN < offset - 1) {
       store(mN++, Z.ZERO);
     }
   }
@@ -74,16 +73,11 @@ public class NumericalAronsonSequence implements SequenceWithOffset {
   }
 
   @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  @Override
   public Z next() {
     ++mN;
     final int n = mN;
     Z result;
-    if (mN == mOffset && (mAttribs & START) == START) {
+    if (mN == getOffset() && (mAttribs & START) == START) {
       result = Z.valueOf(mAttribs & 0x0f);
       store(n, result);
       return result;
@@ -92,8 +86,8 @@ public class NumericalAronsonSequence implements SequenceWithOffset {
     if (result == null) { // a(n) does not yet exist
       // now determine the earliest candidate
       boolean busy = true;
-      int cand = mOffset; // is this a candidate for a(n)?
-      if (n > mOffset && (mAttribs & INCR) == INCR) {
+      int cand = getOffset(); // is this a candidate for a(n)?
+      if (n > getOffset() && (mAttribs & INCR) == INCR) {
         cand = mHmap.get(n - 1).intValue() + 1;
       } else {
         while (busy && cand < n) {

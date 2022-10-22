@@ -1,22 +1,21 @@
 package irvine.oeis.transform;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * Base class for sequences of elementary symmetric functions.
  * derived from another sequence.
  * @author Georg Fischer
  */
-public class ElementarySymmetricFunctionSequence implements SequenceWithOffset {
+public class ElementarySymmetricFunctionSequence extends AbstractSequence {
 
   protected final Sequence mSeq; // underlying sequence
   private int mN; // current index
   //private int mOrder; // order of the function/polynomial, number of multiplicative factors in the sum.
   private Z mA; // previous term of the sequence
   private Z mProd; // product of the terms of the underlying sequence
-  private int mOffset; // first index
 
   /**
    * Construct the sequence with default parameters.
@@ -43,7 +42,7 @@ public class ElementarySymmetricFunctionSequence implements SequenceWithOffset {
    * @param skip number of terms in the underlying sequence to be skipped initially
    */
   public ElementarySymmetricFunctionSequence(final int offset, final int order, final Sequence seq, int skip) {
-    mOffset = offset;
+    super(offset);
     mSeq = seq;
     while (--skip >= 0) {
       mSeq.next();
@@ -52,11 +51,6 @@ public class ElementarySymmetricFunctionSequence implements SequenceWithOffset {
     //mOrder = order;
     mA = Z.ONE;
     mProd = Z.ONE;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

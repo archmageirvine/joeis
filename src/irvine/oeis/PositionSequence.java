@@ -7,12 +7,11 @@ import irvine.math.z.Z;
  * Derived from <code>RecordPositionSequence</code>.
  * @author Georg Fischer
  */
-public class PositionSequence implements SequenceWithOffset {
+public class PositionSequence extends AbstractSequence {
 
   protected final Sequence mSeq; // the underlying sequence
   protected Z mValue; // return the positions of this number
   protected long mN; // current index
-  protected int mOffset; // first index
 
   /**
    * Creates a sequence of the positions where a digit occurs in another sequence.
@@ -32,7 +31,7 @@ public class PositionSequence implements SequenceWithOffset {
    * @param value the positions of this number are returned
    */
   public PositionSequence(final int offset, final int start, final Sequence seq, final long value) {
-    mOffset = offset;
+    super(offset);
     mSeq = seq;
     mValue = Z.valueOf(value);
     mN = start - 1;
@@ -46,11 +45,6 @@ public class PositionSequence implements SequenceWithOffset {
    */
   protected boolean isOk(final Z term) {
     return term.equals(mValue);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

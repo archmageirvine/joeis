@@ -2,14 +2,14 @@ package irvine.oeis.a275;
 
 import irvine.math.MemoryFunction1;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence0;
 
 /**
  * A275208 Expansion of (A(x)^2-A(x^2))/2 where A(x) = A001006(x).
  * Cf. A275207.
  * @author Georg Fischer
  */
-public class A275208 implements SequenceWithOffset {
+public class A275208 extends Sequence0 {
 
   private int mN = -1;
 
@@ -19,7 +19,7 @@ public class A275208 implements SequenceWithOffset {
       if (n <= 1) {
         return Z.ONE;
       }
-      return get(n - 2).multiply(3 * (n - 1)).add(get(n - 1).multiply(2 * n + 1)).divide(n + 2);
+      return get(n - 2).multiply(3L * (n - 1)).add(get(n - 1).multiply(2L * n + 1)).divide(n + 2);
     }
   };
 
@@ -38,11 +38,6 @@ public class A275208 implements SequenceWithOffset {
       return sum;
     }
   };
-
-  @Override
-  public int getOffset() {
-    return 0;
-  }
 
   @Override
   public Z next() {

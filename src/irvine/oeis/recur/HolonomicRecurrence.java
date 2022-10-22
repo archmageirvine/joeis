@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A holonomic sequence is defined by a recurrence equation
@@ -36,7 +36,7 @@ import irvine.oeis.SequenceWithOffset;
  * of any sequence term.
  * @author Georg Fischer
  */
-public class HolonomicRecurrence implements SequenceWithOffset {
+public class HolonomicRecurrence extends AbstractSequence {
   static int sDebug = 0;
 
   protected Z[] mInitTerms; // initial terms for a(n)
@@ -44,18 +44,18 @@ public class HolonomicRecurrence implements SequenceWithOffset {
   protected int mMaxDegree; // maximum degree of polynomials in n; = 0 for linear recurrences
   protected int mN; // index of the next sequence element to be computed
   protected Z[] mNdPowers; // powers of mNDist for exponents 0..mMaxDegree
-  protected int mOffset; // index of the first sequence element
   protected int mOrder; // order k-1 of the recurrence, number of previous sequence elements used to compute a(n)
   protected ArrayList<Z[]> mPolyList; // polynomials as coefficients of <code>n^i, i=0..m</code>
   protected Z[] mBuffer; // ring buffer for the elements involved in the recurrence, indexed with mN modulo mOrder
   protected int mBufSize; // size of the ring buffer
   protected int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
-  
+
   /**
-   * Empty constructor.
+   * Offset only constructor.
+   * @param offset sequence offset
    */
-  protected HolonomicRecurrence() {
-    mOffset = 0;
+  protected HolonomicRecurrence(final int offset) {
+    super(offset);
     mNDist = 0;
     mPolyList = new ArrayList<>(16);
     mInitTerms = new Z[] { Z.ONE };
@@ -71,7 +71,7 @@ public class HolonomicRecurrence implements SequenceWithOffset {
    * @param nDist     index distance between the highest recurrence element and <code>a[n]: 0..k-1</code>
    */
   public HolonomicRecurrence(final int offset, final ArrayList<Z[]> polyList, final Z[] initTerms, final int nDist) {
-    mOffset = offset;
+    super(offset);
     mNDist = nDist;
     mPolyList = polyList;
     mInitTerms = initTerms.length == 0 ? new Z[] { Z.ONE } : Arrays.copyOf(initTerms, initTerms.length);
@@ -101,7 +101,7 @@ public class HolonomicRecurrence implements SequenceWithOffset {
    * @param nDist     index distance between the highest recurrence element and a[n]: 0..k-1
    */
   public HolonomicRecurrence(final int offset, final String matrix, final String initTerms, final int nDist) {
-    mOffset = offset;
+    super(offset);
     mNDist = nDist;
     int start = 0;
     while (matrix.charAt(start) == '[') {
@@ -209,7 +209,7 @@ public class HolonomicRecurrence implements SequenceWithOffset {
    */
   protected void initialize() {
     mGfType = 0; // normally it is an ordinary g.f.
-    mN = mOffset - 1;
+    mN = getOffset() - 1;
     mMaxDegree = 1;
     int k = mPolyList.size() - 1;
     mBufSize = k + 2; // at least 1
@@ -249,8 +249,8 @@ public class HolonomicRecurrence implements SequenceWithOffset {
     int ibuf; // index in mBuffer
     final Z result;
     ++mN;
-    if (mN - mOffset < mInitTerms.length) {
-      result = mInitTerms[mN - mOffset];
+    if (mN - getOffset() < mInitTerms.length) {
+      result = mInitTerms[mN - getOffset()];
     } else {
       final int nd = mN - mNDist;
       mNdPowers[1] = Z.valueOf(nd);
@@ -355,11 +355,6 @@ public class HolonomicRecurrence implements SequenceWithOffset {
     }
      return result;
   } // next
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   /**
    * Gets the order of <code>this</code> recurrence

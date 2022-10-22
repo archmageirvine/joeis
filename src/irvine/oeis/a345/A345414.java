@@ -1,22 +1,17 @@
 package irvine.oeis.a345;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence0;
 
 /**
  * A345414 a(n) = n^a(n-1) mod 100; a(0) = 0.
  * @author Georg Fischer
  */
-public class A345414 implements SequenceWithOffset {
+public class A345414 extends Sequence0 {
 
   private int mN = -1;
   private Z mA = Z.ZERO;
   private static final Z Z100 = Z.valueOf(100);
-
-  @Override
-  public int getOffset() {
-    return 0;
-  }
 
   @Override
   public Z next() {

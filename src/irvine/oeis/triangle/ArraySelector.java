@@ -3,16 +3,15 @@ package irvine.oeis.triangle;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * Select a column, row, diagonal or some other subsection of an array represented as the upper left triangle read by antidiagonals.
  * @author Georg Fischer
  */
-public class ArraySelector implements SequenceWithOffset {
+public class ArraySelector extends AbstractSequence {
 
-  private int mOffset; // first index of this sequence
   private final Sequence mSeq; // the underlying sequence
   protected int mRow0; // first row index
   protected int mCol0; // first columns index 
@@ -82,7 +81,7 @@ public class ArraySelector implements SequenceWithOffset {
    * and all elements of the underlying triangle are computed and investigated for their proper coordinates.
    */
   public ArraySelector(final int offset, final Sequence seq, final int row0, final int col0, final Function<Integer, int[]> select, final boolean hasRAM) {
-    mOffset = offset;
+    super(offset);
     mSeq = seq;
     mRow0 = row0;
     mCol0 = col0;
@@ -99,11 +98,6 @@ public class ArraySelector implements SequenceWithOffset {
     mStop = n * (n + 1) / 2 + k;
     // System.out.println("init hasRAM=" + mHasRAM + ", n=" + n + ", k=" + k + ", mTri=" + mTri + ", mStop=" + mStop);
     mTri = -1; // we always think it would start with T(0,0)
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

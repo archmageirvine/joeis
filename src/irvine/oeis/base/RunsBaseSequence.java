@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Runs in a given number base.
@@ -20,19 +20,18 @@ import irvine.oeis.SequenceWithOffset;
  * All digit expansions use two digits for bases &gt; 10 (especially base 60).
  * @author Georg Fischer
  */
-public abstract class RunsBaseSequence implements SequenceWithOffset {
+public abstract class RunsBaseSequence extends AbstractSequence {
 
   protected int mBase; // number base
   protected int mN; // index of current term to be returned
   protected Z mK; // current number with some property
-  private final int mOffset; // first index
 
   /**
    * Constructor for runs of the index
    * @param offset first valid term has this index
    */
   protected RunsBaseSequence(final int offset) {
-    mOffset = offset;
+    super(offset);
     mN = offset - 1;
     mK = Z.valueOf(mN);
     mBase = 10;
@@ -432,11 +431,6 @@ public abstract class RunsBaseSequence implements SequenceWithOffset {
     return result;
   }
 
-  /**
-   * Determine whether an array contains decreasing lengths only
-   * @param rls array of run lengths
-   * @return true if <code>rls[i] &lt; rls[i+1]</code> for all <code>i</code>
-   */
   protected boolean hasDecreasingRunLengths(final Z number, final int base) {
     final int[] rls = getRunLengths(number, base);
     int i = rls.length - 1;
@@ -558,18 +552,5 @@ public abstract class RunsBaseSequence implements SequenceWithOffset {
    */
   protected boolean isOk() {
     return true;
-  }
-
-  /**
-   * Get the index of the current term of the sequence.
-   * @return the index starting with the offset of the sequence
-   */
-  protected int getIndex() {
-    return mN;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 }

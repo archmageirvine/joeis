@@ -3,20 +3,15 @@ package irvine.oeis.a226;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence0;
 
 /**
  * A226162 a(n) = Kronecker Symbol (-5/n), n &gt;= 0.
  * @author Georg Fischer
  */
-public class A226162 implements SequenceWithOffset {
+public class A226162 extends Sequence0 {
 
   private int mN = -1;
-
-  @Override
-  public int getOffset() {
-    return 0;
-  }
 
   @Override
   public Z next() {

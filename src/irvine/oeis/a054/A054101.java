@@ -14,4 +14,3 @@ public class A054101 extends TriangleSelector {
     super(1, new A054098(), 0, n -> new int[]{n, n - 1});
   }
 }
-

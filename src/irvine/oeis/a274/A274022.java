@@ -1,16 +1,15 @@
 package irvine.oeis.a274;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A274022 Primes of the form 2^(2^n) + 3.
  * @author Georg Fischer
  */
-public class A274022 implements SequenceWithOffset {
+public class A274022 extends AbstractSequence {
 
   private int mK;
-  private final int mOffset;
   private final int mAdd;
 
   /** Construct the sequence. */
@@ -25,14 +24,9 @@ public class A274022 implements SequenceWithOffset {
    * @param add additive term
    */
   public A274022(final int offset, final int kStart, final int add) {
+    super(offset);
     mK = kStart - 1;
-    mOffset = offset;
     mAdd = add;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

@@ -1,20 +1,15 @@
 package irvine.oeis.a110;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence0;
 
 /**
  * A110724 {n concatenate R(n)} + {R(n) concatenate n}, where R(n) = digit reversal of n.
  * @author Georg Fischer
  */
-public class A110724 implements SequenceWithOffset {
+public class A110724 extends Sequence0 {
 
   private long mN = -1;
-
-  @Override
-  public int getOffset() {
-    return 0;
-  }
 
   @Override
   public Z next() {

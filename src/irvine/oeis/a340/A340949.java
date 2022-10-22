@@ -2,17 +2,16 @@ package irvine.oeis.a340;
 
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A340949 Number of ways to write n as an ordered sum of 4 nonzero triangular numbers.
  * @author Georg Fischer
  */
-public class A340949 implements SequenceWithOffset {
+public class A340949 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mNpart;
+  private final int mNpart;
 
   /** Construct the sequence. */
   public A340949() {
@@ -24,7 +23,7 @@ public class A340949 implements SequenceWithOffset {
    * @param npart number of parts
    */
   public A340949(final int offset, final int npart) {
-    mOffset = offset;
+    super(offset);
     mNpart = npart;
     mN = offset - 1;
   }
@@ -54,11 +53,6 @@ public class A340949 implements SequenceWithOffset {
       return r;
     }
   };
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   @Override
   public Z next() {

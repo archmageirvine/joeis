@@ -3,16 +3,15 @@ package irvine.oeis.triangle;
 import java.util.function.Function;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * Select a column, row, diagonal or some other subsection of a triangular (keyword "<code>tabl</code>") sequence T(n,k).
  * @author Georg Fischer
  */
-public class TriangleSelector implements SequenceWithOffset {
+public class TriangleSelector extends AbstractSequence {
 
-  protected int mOffset; // first index of this sequence
   private final Sequence mSeq; // the underlying sequence
   protected int mRow0; // first row index
   protected int mCol0; // first columns index 
@@ -70,7 +69,7 @@ public class TriangleSelector implements SequenceWithOffset {
    * and all elements of the underlying triangle are computed and investigated for their proper coordinates.
    */
   public TriangleSelector(final int offset, final Sequence seq, final int row0, final int col0, final Function<Integer, int[]> select, final boolean hasRAM) {
-    mOffset = offset;
+    super(offset);
     mSeq = seq;
     mRow0 = row0;
     mCol0 = col0;
@@ -89,11 +88,6 @@ public class TriangleSelector implements SequenceWithOffset {
   }
 
   @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  @Override
   public Z next() {
     while (true) {
       ++mN;
@@ -101,7 +95,7 @@ public class TriangleSelector implements SequenceWithOffset {
         final int[] pair = mSelect.apply(mN);
         if (pair[1] >= 0 && pair[1] <= pair[0]) {
           return mTriangle.compute(pair[0], pair[1]);
-        } else if (mN >= mOffset) {
+        } else if (mN >= getOffset()) {
           return Z.ZERO;
         }
       } else {
@@ -119,7 +113,7 @@ public class TriangleSelector implements SequenceWithOffset {
         // System.out.println("next n=" + n + ", k=" + k + ", mTri=" + mTri + ", result=" + result + ", mStop=" + mStop);
         if (k >= 0 && k <= n) {
           return result;
-        } else if (n >= mOffset) {
+        } else if (n >= getOffset()) {
           return Z.ZERO;
         }
       }

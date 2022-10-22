@@ -1,19 +1,18 @@
 package irvine.oeis.a214;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A214703 Primes that contain only the digits (2, 3, 5).
  * @author Georg Fischer
  */
-public class A214703 implements SequenceWithOffset {
+public class A214703 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private char mDigit1;
-  private char mDigit2;
-  private char mDigit3;
+  private final char mDigit1;
+  private final char mDigit2;
+  private final char mDigit3;
 
   /** Construct the sequence. */
   public A214703() {
@@ -28,16 +27,11 @@ public class A214703 implements SequenceWithOffset {
    * @param digit3 highest digit
    */
   public A214703(final int offset, final int digit1, final int digit2, final int digit3) {
+    super(offset);
     mN = 2; // start with "10".substring(1)
-    mOffset = offset;
     mDigit1 = Character.forDigit(digit1, 10);
     mDigit2 = Character.forDigit(digit2, 10);
     mDigit3 = Character.forDigit(digit3, 10);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

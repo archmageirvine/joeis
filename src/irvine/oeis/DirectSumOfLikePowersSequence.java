@@ -14,7 +14,7 @@ import irvine.math.z.Z;
  * Generate terms for a sequence of like powers.
  * @author Sean A. Irvine
  */
-public class DirectSumOfLikePowersSequence implements SequenceWithOffset {
+public class DirectSumOfLikePowersSequence extends AbstractSequence {
 
   // A version of LimitedSumOfLikePowerSequence that tries numbers one at a time.
   // This can be faster for situations where most numbers have the required
@@ -80,7 +80,6 @@ public class DirectSumOfLikePowersSequence implements SequenceWithOffset {
   private final int mMinWays;
   private long mN = 0;
   private final Representations mRep;
-  protected int mOffset = 1;
 
   /**
    * Construct the sequence.
@@ -90,6 +89,7 @@ public class DirectSumOfLikePowersSequence implements SequenceWithOffset {
    * @param exact number of ways must be exact
    */
   public DirectSumOfLikePowersSequence(final int power, final int numTerms, final int minWays, final boolean exact) {
+    super(1);
     mPower = power;
     mNumTerms = numTerms;
     mExactWays = exact;
@@ -105,11 +105,6 @@ public class DirectSumOfLikePowersSequence implements SequenceWithOffset {
    */
   public DirectSumOfLikePowersSequence(final int power, final int terms, final int minWays) {
     this(power, terms, minWays, false);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

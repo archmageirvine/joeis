@@ -1,5 +1,4 @@
 package irvine.oeis.a161;
-// manually 2022-07-06, for partcapp.jpat
 
 import java.util.function.Function;
 
@@ -7,17 +6,16 @@ import irvine.math.MemoryFunction1;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A161026 Number of partitions of n into Fibonacci numbers where every part appears at least 2 times.
  * @author Georg Fischer
  */
-public class A161026 implements SequenceWithOffset {
+public class A161026 extends AbstractSequence {
 
   private final int mAppears; // every part appears at least this many times.
   private int mN; // index of next term
-  private final int mOffset; // first index
   private final int mParm2; // second parameter of recursive function
   protected Function<Integer, Integer> mLambda;
 
@@ -42,7 +40,7 @@ public class A161026 implements SequenceWithOffset {
    * @param parm2 second parameter of recursive function
    */
   public A161026(final int offset, final int appears, final int parm2, final Function<Integer, Integer> lambda) {
-    mOffset = offset;
+    super(offset);
     mAppears = appears;
     mParm2 = parm2;
     mN = offset - 1;
@@ -82,11 +80,6 @@ public class A161026 implements SequenceWithOffset {
       return sum;
     }
   };
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   @Override
   public Z next() {

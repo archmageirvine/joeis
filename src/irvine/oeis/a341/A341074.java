@@ -3,16 +3,15 @@ package irvine.oeis.a341;
 import irvine.math.LongUtils;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A341074 Number of partitions of n into 5 distinct squarefree parts.
  * @author Georg Fischer
  */
-public class A341074 implements SequenceWithOffset {
+public class A341074 extends AbstractSequence {
 
   private int mN;
-  private final int mOffset;
   private final int mNpart;
 
   /** Construct the sequence. */
@@ -25,7 +24,7 @@ public class A341074 implements SequenceWithOffset {
    * @param npart number of parts
    */
   public A341074(final int offset, final int npart) {
-    mOffset = offset;
+    super(offset);
     mNpart = npart;
     mN = offset - 1;
   }
@@ -55,11 +54,6 @@ public class A341074 implements SequenceWithOffset {
       return sum;
     }
   };
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   @Override
   public Z next() {

@@ -1,17 +1,16 @@
 package irvine.oeis.a048;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A048724 Write n and 2n in binary and add them mod 2.
  * @author Georg Fischer
  */
-public class A048724 implements SequenceWithOffset {
+public class A048724 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mMult;
+  private final long mMult;
 
   /** Construct the sequence. */
   public A048724() {
@@ -24,14 +23,9 @@ public class A048724 implements SequenceWithOffset {
    * @param mult multiplicative factor
    */
   public A048724(final int offset, final int mult) {
-    mOffset = offset;
+    super(offset);
     mMult = mult;
     mN = offset - 1;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

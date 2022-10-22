@@ -2,18 +2,17 @@ package irvine.oeis.a050;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A050449 a(n) = Sum_{d|n, d==1 (mod 4)} d.
  * @author Georg Fischer
  */
-public class A050449 implements SequenceWithOffset {
+public class A050449 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mResidue;
-  private int mModulus;
+  private final int mResidue;
+  private final int mModulus;
 
   /** Construct the sequence. */
   public A050449() {
@@ -23,19 +22,14 @@ public class A050449 implements SequenceWithOffset {
   /**
    * Generic constructor with parameters
    * @param offset first index
-   * @param residue
-   * @param modulus
+   * @param residue residue for sequence
+   * @param modulus modulus for sequence
    */
   public A050449(final int offset, final int residue, final int modulus) {
+    super(offset);
     mN = offset - 1;
-    mOffset = offset;
     mResidue = residue;
     mModulus = modulus;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

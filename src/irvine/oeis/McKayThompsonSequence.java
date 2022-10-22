@@ -57,7 +57,7 @@ import irvine.math.z.Z;
  * corresponding powers of the conjugacy class.
  * <br>
  */
-public class McKayThompsonSequence implements SequenceWithOffset {
+public class McKayThompsonSequence extends AbstractSequence {
 
   /**
    * Debugging mode: 0 = none, 1 = some (=early print), 2 = more.
@@ -85,11 +85,6 @@ public class McKayThompsonSequence implements SequenceWithOffset {
   protected int mN;
 
   /**
-   * First index.
-   */
-  protected int mOffset;
-
-  /**
    * Complete constructor with array of class codes, prefix and number of zeroes to skip + 1.
    * @param offset first index
    * @param selectedClasses class codes from the ATLAS,
@@ -98,7 +93,7 @@ public class McKayThompsonSequence implements SequenceWithOffset {
    * @param step0 number of interleaved zeroes to be skipped + 1
    */
   protected McKayThompsonSequence(final int offset, final String[] selectedClasses, final long[] prefix, final int step0) {
-    mOffset = offset;
+    super(offset);
     mSelectedClasses = selectedClasses;
     mPrefix = new long[prefix.length];
     System.arraycopy(prefix, 0, mPrefix, 0, prefix.length);
@@ -187,15 +182,6 @@ public class McKayThompsonSequence implements SequenceWithOffset {
    * Must be lower than the length of the power and boot coefficient lists
    */
   public static final int MAX_FABER = 7;
-
-  /**
-   * Get the offset.
-   * @return first index
-   */
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   /**
    * Get a list of class codes for powers

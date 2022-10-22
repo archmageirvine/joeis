@@ -3,18 +3,17 @@ package irvine.oeis.a046;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.a003.A003636;
 
 /**
  * A046005 Discriminants of imaginary quadratic fields with class number 8 (negated).
  * @author Sean A. Irvine
  */
-public class A046005 implements SequenceWithOffset {
+public class A046005 extends AbstractSequence {
 
   private long mN;
-  private int mClassNo;
-  private int mOffset;
+  private final int mClassNo;
 
   /** Construct the sequence. */
   public A046005() {
@@ -27,18 +26,13 @@ public class A046005 implements SequenceWithOffset {
    * @param classNo desired class number
    */
   public A046005(final int offset, final int classNo) {
-    mOffset = offset;
+    super(offset);
     mClassNo = classNo;
     mN = -2;
   }
 
   protected int targetClassNumber() {
     return mClassNo;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

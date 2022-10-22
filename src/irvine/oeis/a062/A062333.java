@@ -13,7 +13,6 @@ public class A062333 extends IntersectionSequence {
 
   /** Construct the sequence. */
   public A062333() {
-    super(new A045709(), new A030431());
-    mOffset = 0;
+    super(0, new A045709(), new A030431());
   }
 }

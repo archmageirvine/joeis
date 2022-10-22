@@ -6,13 +6,26 @@ import irvine.math.z.Z;
  * Intersection between two sequences.
  * @author Sean A. Irvine
  */
-public class IntersectionSequence implements SequenceWithOffset {
+public class IntersectionSequence extends AbstractSequence {
 
   private final Sequence mSeqA;
   private final Sequence mSeqB;
   private Z mNextA;
   private Z mNextB;
-  protected int mOffset = 1;
+
+  /**
+   * Intersection of a pair of sequences.
+   * @param offset sequence offset
+   * @param a first sequence
+   * @param b second sequence
+   */
+  public IntersectionSequence(final int offset, final Sequence a, final Sequence b) {
+    super(offset);
+    mSeqA = a;
+    mSeqB = b;
+    mNextA = mSeqA.next();
+    mNextB = mSeqB.next();
+  }
 
   /**
    * Intersection of a pair of sequences.
@@ -20,10 +33,7 @@ public class IntersectionSequence implements SequenceWithOffset {
    * @param b second sequence
    */
   public IntersectionSequence(final Sequence a, final Sequence b) {
-    mSeqA = a;
-    mSeqB = b;
-    mNextA = mSeqA.next();
-    mNextB = mSeqB.next();
+    this(1, a, b);
   }
 
   /**
@@ -34,11 +44,6 @@ public class IntersectionSequence implements SequenceWithOffset {
    */
   public IntersectionSequence(final Sequence a, final Sequence b, final Sequence c) {
     this(new IntersectionSequence(a, b), c);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

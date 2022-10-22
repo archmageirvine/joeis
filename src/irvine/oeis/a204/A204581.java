@@ -2,15 +2,14 @@ package irvine.oeis.a204;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A204581 Nearest integer to 100*1.01^n.
  * @author Georg Fischer
  */
-public class A204581 implements SequenceWithOffset {
+public class A204581 extends AbstractSequence {
 
-  private final int mOffset;
   private final Z mParm;
   private Q mPow;
   private static final Q HUNDRED = new Q(100);
@@ -26,14 +25,9 @@ public class A204581 implements SequenceWithOffset {
    * @param parm numerator * 100
    */
   public A204581(final int offset, final int parm) {
-    mOffset = offset;
+    super(offset);
     mParm = Z.valueOf(parm);
     mPow = Q.ONE;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

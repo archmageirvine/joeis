@@ -11,7 +11,6 @@ public class A034024 extends SetDifferenceSequence {
 
   /** Construct the sequence. */
   public A034024() {
-    super(new A034023(), new A008784());
-    mOffset = 0;
+    super(0, new A034023(), new A008784());
   }
 }

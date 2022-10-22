@@ -1,17 +1,16 @@
 package irvine.oeis.a163;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A163617 a(2*n) = 2*a(n), a(2*n + 1) = 2*a(n) + 2 + (-1)^n, for all n in Z.
  * @author Georg Fischer
  */
-public class A163617 implements SequenceWithOffset {
+public class A163617 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mMult;
+  private final long mMult;
 
   /** Construct the sequence. */
   public A163617() {
@@ -24,14 +23,9 @@ public class A163617 implements SequenceWithOffset {
    * @param mult multiplicative factor
    */
   public A163617(final int offset, final int mult) {
-    mOffset = offset;
+    super(offset);
     mMult = mult;
     mN = offset - 1;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

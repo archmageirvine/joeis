@@ -1,15 +1,12 @@
 package irvine.oeis.recur;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
 
 /**
  * Special generating functions for Coxeter group sequences.
  * @author Georg Fischer
  */
-public class CoxeterSequence extends GeneratingFunctionSequence implements SequenceWithOffset {
-
-  private int mOffset = 0;
+public class CoxeterSequence extends GeneratingFunctionSequence {
 
   /**
    * Construct the specified generating function.
@@ -72,14 +69,4 @@ public class CoxeterSequence extends GeneratingFunctionSequence implements Seque
   public CoxeterSequence(final int pwr, final int ngen) {
     this(pwr, Z.valueOf(ngen - 2).multiply(ngen - 1).divide2(), Z.valueOf(2 - ngen));
   }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  public void setOffset(final int offset) {
-    mOffset = offset;
-  }
-
 }

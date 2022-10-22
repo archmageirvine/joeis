@@ -1,7 +1,7 @@
 package irvine.oeis.prime;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Sequences with names like
@@ -12,11 +12,10 @@ import irvine.oeis.SequenceWithOffset;
  * The formula is (num * base ^ k + add) / div.
  * @author Georg Fischer
  */
-public class PowerFactorPrimeSequence implements SequenceWithOffset {
+public class PowerFactorPrimeSequence extends AbstractSequence {
 
   protected int mK; // index of current term to be returned
   protected Z mA; // test is based on a property of this number
-  protected int mOffset; // OEIS offset1 as of generation time
   protected int mAdd; // additive term
   protected int mBase; // usually 2 or 10
   protected Z mDiv; // optional divisor, or 0 for no divisor
@@ -31,7 +30,7 @@ public class PowerFactorPrimeSequence implements SequenceWithOffset {
    * @param div optional divisor, or 0 for no divisor
    */
   protected PowerFactorPrimeSequence(final int offset, final int start, final int num, final int base, final int add, final int div) {
-    mOffset = offset;
+    super(offset);
     mBase = base;
     mAdd = add;
     mDiv = Z.valueOf(div);
@@ -46,15 +45,9 @@ public class PowerFactorPrimeSequence implements SequenceWithOffset {
    * @param num factor
    * @param base usually 2 or 10
    * @param add additive term
-   * @param div optional divisor, or 0 for no divisor
    */
   public PowerFactorPrimeSequence(final int offset, final int start, final int num, final int base, final int add) {
     this(offset, start, num, base, add, 1);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

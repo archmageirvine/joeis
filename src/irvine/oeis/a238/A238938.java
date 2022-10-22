@@ -1,17 +1,16 @@
 package irvine.oeis.a238;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A238938 Powers of 2 without the digit '0' in their decimal expansion.
  * @author Georg Fischer
  */
-public class A238938 implements SequenceWithOffset {
+public class A238938 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private Z mBase;
+  private final Z mBase;
 
   /** Construct the sequence. */
   public A238938() {
@@ -20,18 +19,13 @@ public class A238938 implements SequenceWithOffset {
 
   /**
    * Generic constructor with parameters
-   * @param offset
-   * @param base
+   * @param offset sequence offset
+   * @param base sequence base
    */
   public A238938(final int offset, final int base) {
-    mOffset = offset;
+    super(offset);
     mBase = Z.valueOf(base);
     mN = -1;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

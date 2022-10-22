@@ -1,7 +1,7 @@
 package irvine.oeis.base;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Numbers <code>k</code> that contain only a subset of (decimal) digits in its square <code>k^2</code>
@@ -17,7 +17,7 @@ import irvine.oeis.SequenceWithOffset;
  * Complications arise when the digits subset contains '0' and by the omission of leading zeroes.
  * @author Georg Fischer
  */
-public class SquareDigitsSequence implements SequenceWithOffset {
+public class SquareDigitsSequence extends AbstractSequence {
 
   protected static int sDebug = 0;
   protected String mSubset; // the decimal digits of the subset in ascending order
@@ -44,7 +44,6 @@ public class SquareDigitsSequence implements SequenceWithOffset {
   private final boolean mTriangular; // whether to investigate triangular numbers instead of squares
   private Z mBasePower; // for ZUtils.basePower()
   private int mLogU; // for ZUtils.basePower()
-  private int mOffset; // first index
 
   /**
    * Construct an instance for some variant.
@@ -61,7 +60,7 @@ public class SquareDigitsSequence implements SequenceWithOffset {
    * @param subset String of decimal digits in ascending order, representing the desired subset
    */
   protected SquareDigitsSequence(final int offset, final int base, final int mask, final String subset) {
-    mOffset = offset;
+    super(offset);
     mBase = base;
     mBaseZ = Z.valueOf(mBase);
     //mMask = mask;
@@ -135,15 +134,6 @@ public class SquareDigitsSequence implements SequenceWithOffset {
     return -1;
   }
 
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
   @Override
   public Z next() {
     if (mTriangular) {

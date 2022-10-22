@@ -1,18 +1,17 @@
 package irvine.oeis.a173;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A173426 a(n) is obtained by starting with 1, sequentially concatenating all decimal numbers up to n, and then, starting from n-1, sequentially concatenating all decimal numbers down to 1.
  * and then, starting from n-1, sequentially concatenating all decimal numbers down to 1.
  * @author Georg Fischer
  */
-public class A173426 implements SequenceWithOffset {
+public class A173426 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mBase;
+  private final int mBase;
   private final StringBuilder mSb = new StringBuilder();
 
   /** Construct the sequence. */
@@ -26,14 +25,9 @@ public class A173426 implements SequenceWithOffset {
    * @param base number base
    */
   public A173426(final int offset, final int base) {
-    mOffset = offset;
+    super(offset);
     mN = offset - 1;
     mBase = base;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

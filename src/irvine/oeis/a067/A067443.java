@@ -1,17 +1,16 @@
 package irvine.oeis.a067;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A067443 Smallest n-th power starting with 2.
  * @author Georg Fischer
  */
-public class A067443 implements SequenceWithOffset {
+public class A067443 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private char mDigit;
+  private final char mDigit;
 
   /** Construct the sequence. */
   public A067443() {
@@ -24,14 +23,9 @@ public class A067443 implements SequenceWithOffset {
    * @param digit starting digit
    */
   public A067443(final int offset, final int digit) {
+    super(offset);
     mN = 0;
-    mOffset = offset;
     mDigit = Character.forDigit(digit, 10);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

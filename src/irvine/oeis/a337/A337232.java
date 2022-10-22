@@ -1,22 +1,21 @@
 package irvine.oeis.a337;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a000.A000045;
 
 /**
  * A337232 Even composite integers m such that F(m)^2 == 1 (mod m), where F(m) is the m-th Fibonacci number.
  * @author Georg Fischer
  */
-public class A337232 implements SequenceWithOffset {
+public class A337232 extends AbstractSequence {
 
   private int mK; // even numbers
-  private int mOffset;
-  private MemorySequence mSeq;
-  private int mExp;
-  private Z mMod;
+  private final MemorySequence mSeq;
+  private final int mExp;
+  private final Z mMod;
 
   /** Construct the sequence. */
   public A337232() {
@@ -31,16 +30,11 @@ public class A337232 implements SequenceWithOffset {
    * @param mod modulus
    */
   public A337232(final int offset, final Sequence seq, final int exp, final int mod) {
+    super(offset);
     mK = 2;
-    mOffset = offset;
     mSeq = MemorySequence.cachedSequence(seq);
     mExp = exp;
     mMod = Z.valueOf(mod);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

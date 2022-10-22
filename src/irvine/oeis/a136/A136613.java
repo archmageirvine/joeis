@@ -3,20 +3,15 @@ package irvine.oeis.a136;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence0;
 
 /**
  * A136613 Concatenation of (sum of digits of n) and n.
  * @author Georg Fischer
  */
-public class A136613 implements SequenceWithOffset {
+public class A136613 extends Sequence0 {
 
   private int mN = -1;
-
-  @Override
-  public int getOffset() {
-    return 0;
-  }
 
   @Override
   public Z next() {

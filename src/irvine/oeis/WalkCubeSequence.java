@@ -39,11 +39,10 @@ import irvine.math.z.Z;
  * </pre>
  * @author Georg Fischer
  */
-public class WalkCubeSequence implements SequenceWithOffset {
+public class WalkCubeSequence extends AbstractSequence {
 
   protected Z mK; // current number with some property
   protected int mN; // index of current term to be returned
-  protected int mOffset; // OEIS offset1 as of generation time
   protected int[][] mMatrix; // 3 coordinate increments (columns) per step (row)
   protected int mDim; // dimension: 2 for square, 3 for cube
   protected int mNoSteps; // number of steps possible at one point
@@ -66,7 +65,7 @@ public class WalkCubeSequence implements SequenceWithOffset {
    * (-1, -1, -1), (-1, -1, 1), (-1, 1, 0), (1, 0, 0)
    */
   protected WalkCubeSequence(final int offset, final int dim, final int noSteps, final String endCode, final int factor, final String stepCode) {
-    mOffset = offset;
+    super(offset);
     mDim = dim;
     mNoSteps = noSteps; // assert: = stepCode.length() / dim;
     mEndCode = endCode;
@@ -402,11 +401,6 @@ public class WalkCubeSequence implements SequenceWithOffset {
         .add(get(i - mMatrix[4][0], j - mMatrix[4][1], k - mMatrix[4][2], mn1))
         ;
     }
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   /**

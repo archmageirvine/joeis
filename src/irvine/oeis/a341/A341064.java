@@ -3,17 +3,16 @@ package irvine.oeis.a341;
 import irvine.math.LongUtils;
 import irvine.math.MemoryFunctionInt2;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A341064 Number of ways to write n as an ordered sum of 4 squarefree numbers.
  * @author Georg Fischer
  */
-public class A341064 implements SequenceWithOffset {
+public class A341064 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mNpart;
+  private final int mNpart;
 
   /** Construct the sequence. */
   public A341064() {
@@ -25,7 +24,7 @@ public class A341064 implements SequenceWithOffset {
    * @param npart number of parts
    */
   public A341064(final int offset, final int npart) {
-    mOffset = offset;
+    super(offset);
     mNpart = npart;
     mN = offset - 1;
   }
@@ -56,11 +55,6 @@ public class A341064 implements SequenceWithOffset {
       return sum;
     }
   };
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   @Override
   public Z next() {

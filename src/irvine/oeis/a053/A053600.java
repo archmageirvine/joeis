@@ -1,15 +1,14 @@
 package irvine.oeis.a053;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A053600 a(1) = 2; for n&gt;=1, a(n+1) is the smallest palindromic prime with a(n) as a central substring.
  * @author Georg Fischer
  */
-public class A053600 implements SequenceWithOffset {
+public class A053600 extends AbstractSequence {
 
-  private int mOffset;
   private final String mSeed;
   private StringBuilder mA = null;
 
@@ -24,13 +23,8 @@ public class A053600 implements SequenceWithOffset {
    * @param seed initial center of the palindrome
    */
   public A053600(final int offset, final String seed) {
-    mOffset = offset;
+    super(offset);
     mSeed = seed;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

@@ -1,8 +1,8 @@
 package irvine.oeis.a112;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a002.A002805;
 import irvine.oeis.a003.A003418;
 
@@ -10,11 +10,10 @@ import irvine.oeis.a003.A003418;
  * A112813 Numbers k such that lcm(1,2,3,...,k)/3 equals the denominator of the k-th harmonic number H(k).
  * @author Georg Fischer
  */
-public class A112813 implements SequenceWithOffset {
+public class A112813 extends AbstractSequence {
 
   protected int mN; // used in A112818
-  private int mOffset;
-  private int mDivisor;
+  private final int mDivisor;
   private final Sequence mHarmSeq = new A002805(); // denominators of harmonic numbers
   private final Sequence mLCMnSeq = new A003418(); // LCM(seq(1..n))
 
@@ -29,8 +28,8 @@ public class A112813 implements SequenceWithOffset {
    * @param divisor divisor of the LCM
    */
   public A112813(final int offset, final int divisor) {
+    super(offset);
     mN = 0;
-    mOffset = offset;
     mDivisor = divisor;
     mLCMnSeq.next(); // skip a(0)
   }
@@ -43,10 +42,5 @@ public class A112813 implements SequenceWithOffset {
         return Z.valueOf(mN);
       }
     }
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 }

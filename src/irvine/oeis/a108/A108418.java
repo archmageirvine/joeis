@@ -2,21 +2,16 @@ package irvine.oeis.a108;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a014.A014261;
 
 /**
  * A108418 Primes with at least one of each odd digit and no even digits.
  * @author Georg Fischer
  */
-public class A108418 implements SequenceWithOffset {
+public class A108418 extends Sequence1 {
 
   private long mN = 13577;
-
-  @Override
-  public int getOffset() {
-    return 1;
-  }
 
   @Override
   public Z next() {

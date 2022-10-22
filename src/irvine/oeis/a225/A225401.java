@@ -1,16 +1,16 @@
 package irvine.oeis.a225;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.SequenceWithOffset;
 
 /**
  * A225401 10-adic integer x such that x^3 = -7/9.
  * @author Georg Fischer
  */
-public class A225401 implements SequenceWithOffset {
+public class A225401 extends AbstractSequence {
 
   private int mN;
-  private final int mOffset;
   private Z mBn0;
   private Z mBn1;
   private final Z mPm1;
@@ -37,8 +37,8 @@ public class A225401 implements SequenceWithOffset {
    * @param base compute mod <code>base^n</code>
    */
   public A225401(final int offset, final int b1, final int pm1, final int pm2, final int exp, final int pa, final int base) {
+    super(offset);
     mN = -1;
-    mOffset = offset;
     mBn0 = Z.ZERO;
     mBn1 = Z.valueOf(b1);
     mPm1 = Z.valueOf(pm1);
@@ -48,11 +48,6 @@ public class A225401 implements SequenceWithOffset {
     mBase = base;
     mPow = Z.valueOf(1);
     mVariant = 0; // (pm1 != 1 && pm2 == 1) ? 1 : 0;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   /*

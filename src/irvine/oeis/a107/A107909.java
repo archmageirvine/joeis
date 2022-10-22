@@ -13,7 +13,6 @@ public class A107909 extends UnionSequence {
 
   /** Construct the sequence. */
   public A107909() {
-    super(new A003754(), new A003714());
-    mOffset = 0;
+    super(0, new A003754(), new A003714());
   }
 }

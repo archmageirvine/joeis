@@ -2,20 +2,19 @@ package irvine.oeis.a006;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A006988 a(n) = (10^n)-th prime.
  * @author Sean A. Irvine
  */
-public class A006988 implements SequenceWithOffset {
+public class A006988 extends AbstractSequence {
 
   private final Fast mPrime = new Fast();
   private long mT = 1;
   private long mN = 1;
   private Z mP = Z.ONE;
-  private int mBase;
-  private int mOffset;
+  private final int mBase;
 
   /** Construct the sequence. */
   public A006988() {
@@ -28,17 +27,12 @@ public class A006988 implements SequenceWithOffset {
    * @param base base for number of primes
    */
   public A006988(final int offset, final int base) {
-    mOffset = offset;
+    super(offset);
     mBase = base;
   }
 
   protected long base() {
     return mBase;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

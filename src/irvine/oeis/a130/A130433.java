@@ -1,16 +1,15 @@
 package irvine.oeis.a130;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A130433 Even pseudoprimes to base 3.
  * @author Georg Fischer
  */
-public class A130433 implements SequenceWithOffset {
+public class A130433 extends AbstractSequence {
 
   private int mN;
-  private final int mOffset;
   private final Z mBase;
 
   /** Construct the sequence. */
@@ -24,8 +23,8 @@ public class A130433 implements SequenceWithOffset {
    * @param base base of sequence
    */
   public A130433(final int offset, final int base) {
+    super(offset);
     mN = 2;
-    mOffset = offset;
     mBase = Z.valueOf(base);
   }
 
@@ -40,10 +39,5 @@ public class A130433 implements SequenceWithOffset {
         return nz;
       }
     }
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 }

@@ -2,20 +2,19 @@ package irvine.oeis.recur;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A recurrence with constant order (depth), specified by a single formula,
  * depending on <code>a(n+k)</code>.
  * @author Georg Fischer
  */
-public abstract class ConstantOrderRecurrence implements SequenceWithOffset {
+public abstract class ConstantOrderRecurrence extends AbstractSequence {
 
   protected int mInitLen; // number of initial terms
   protected int mIn; // index for counting initial terms
   protected int mShift; // d &gt;= 0 such that <code>a(n+d)</code> is the highest and next element to be computed (0 &lt;= d &lt;= k).
   protected int mN; // index of the next sequence element to be computed
-  protected int mOffset; // index of the first sequence element
   protected int mOrder; // order k-1 of the recurrence, number of previous sequence elements used to compute <code>a(n+shift)</code>
   protected Z[] mBuffer; // ring buffer for the elements of the recurrence, must have some length 2^k &gt; {@link #mOrder}, preset with 0
   protected int mBufLen; // length of {@link #mBuffer}
@@ -69,7 +68,7 @@ public abstract class ConstantOrderRecurrence implements SequenceWithOffset {
    * @param initTerms initial values of <code>a(offset..order+offset-1)</code>
    */
   public ConstantOrderRecurrence(final int offset, final int order, final int shift, final Z... initTerms) {
-    mOffset = offset;
+    super(offset);
     mOrder = order;
     mShift = shift;
     mIn = 0;
@@ -123,13 +122,6 @@ public abstract class ConstantOrderRecurrence implements SequenceWithOffset {
     return mOrder;
   }
 
-  /**
-   * Gets the offset
-   * @return the index where the sequence elements start
-   */
-  public int getOffset() {
-    return mOffset;
-  }
   @Override
   public Z next() {
     ++mN;

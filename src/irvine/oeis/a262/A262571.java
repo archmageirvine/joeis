@@ -1,17 +1,16 @@
 package irvine.oeis.a262;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A262571 Concatenation of the numbers from 2 to n.
  * @author Georg Fischer
  */
-public class A262571 implements SequenceWithOffset {
+public class A262571 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mOmitted;
+  private final int mOmitted;
   private final StringBuilder mSb = new StringBuilder();
 
   /** Construct the sequence. */
@@ -25,14 +24,9 @@ public class A262571 implements SequenceWithOffset {
    * @param omitted number to be omitted
    */
   public A262571(final int offset, final int omitted) {
-    mOffset = offset;
+    super(offset);
     mN = offset - 1;
     mOmitted = omitted;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override
@@ -42,9 +36,9 @@ public class A262571 implements SequenceWithOffset {
       ++mN;
     }
     mSb.setLength(0);
-    for (int i = mOffset; i <= mN; ++i) {
+    for (int i = getOffset(); i <= mN; ++i) {
       if (i != mOmitted) {
-        mSb.append(String.valueOf(i));
+        mSb.append(i);
       }
     }
     return new Z(mSb.toString());

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
  * as defined by Clark Kimberling.
  * @author Georg Fischer
  */
-public class NegativePositiveSequence implements SequenceWithOffset {
+public class NegativePositiveSequence extends AbstractSequence {
   protected int mRule;
   protected int mSub;
   protected int mVariant;
@@ -22,7 +22,6 @@ public class NegativePositiveSequence implements SequenceWithOffset {
   protected int mD1;
   protected HashMap<Integer, Integer> mAMap;
   protected HashMap<Integer, Integer> mDMap;
-  private int mOffset;
 
   /**
    * No-args constructor.
@@ -40,7 +39,7 @@ public class NegativePositiveSequence implements SequenceWithOffset {
    * @param d1 start value pf dk
    */
   public NegativePositiveSequence(final int rule, final int sub, final String op, final int a1, final int d1) {
-    mOffset = 1;
+    super(1);
     mRule = rule;
     mSub = sub;
     mA1 = a1;
@@ -63,11 +62,6 @@ public class NegativePositiveSequence implements SequenceWithOffset {
     mAMap.put(mAk, mK);
     mDMap.put(mDk, mK); // dk is h
   } // no-args constructor
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   @Override
   public Z next() {

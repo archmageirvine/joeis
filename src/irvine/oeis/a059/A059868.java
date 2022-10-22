@@ -4,14 +4,14 @@ import java.util.TreeSet;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence1;
 import irvine.oeis.a002.A002069;
 
 /**
  * A059868 There exist no palindromic pentagonal numbers of length a(n).
  * @author Sean A. Irvine
  */
-public class A059868 implements SequenceWithOffset {
+public class A059868 extends Sequence1 {
 
   private final Sequence mSeq;
   private int mA;
@@ -37,10 +37,5 @@ public class A059868 implements SequenceWithOffset {
       }
     }
     return Z.valueOf(mQ.pollFirst());
-  }
-
-  @Override
-  public int getOffset() {
-    return 1;
   }
 }

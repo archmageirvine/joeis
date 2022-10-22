@@ -20,7 +20,7 @@ public class FoldedContinuedFraction extends ArrayList<Z> implements SequenceWit
 
   protected boolean mCompress;
   protected int mN;
-  protected int mOffset;
+  private final int mOffset;
   protected final Function<Integer, Z> mLambda; // lambda expression k -&gt; u(d(k))
   protected int mNy; // number of folds
   protected int mCfType; // type of the c.f.: 0 = Shallit's theorem, 1 = folded only

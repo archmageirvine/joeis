@@ -11,10 +11,9 @@ import irvine.math.z.Z;
  * are written in one array <code>polyArray</code> that contains rational polynomials in <code>mN</code>.
  * @author Georg Fischer
  */
-public class HypergeometricSequence implements SequenceWithOffset {
+public class HypergeometricSequence extends AbstractSequence {
 
   protected int mN; // index of the next sequence element to be computed
-  private final int mOffset; // index of first term
   private final int mP; // number of Pochhammer symbols in the "numerator".
   private final int mQ; // number of Pochhammer symbols in the "denominator".
   private final Q[][] mPolyArray; // polynomials as rational coefficients of <code>n^i, i=0..m</code>
@@ -52,8 +51,8 @@ public class HypergeometricSequence implements SequenceWithOffset {
    * @param polyArray polynomials as coefficients of <code>n^i, i=0..m</code>, size is <code>p + q + 1</code>
    */
   public HypergeometricSequence(final int offset, final int p, final int q, final Q[][] polyArray) {
-    mOffset = offset;
-    mN = mOffset - 1;
+    super(offset);
+    mN = offset - 1;
     mP = p;
     mQ = q;
     mPolyArray = polyArray;
@@ -95,7 +94,7 @@ public class HypergeometricSequence implements SequenceWithOffset {
   }
 
   /**
-   * Evaluate the Pochhammer symbol at index {@link #ip} for <code>k = 0 to n - 1</code>.
+   * Evaluate the Pochhammer symbol at index <code>ip</code> for <code>k = 0 to n - 1</code>.
    * @param ix index in {@link #mPolyArray}
    * @param n limit for the addition
    * @return the value of the Pochhammer symbol
@@ -191,7 +190,7 @@ public class HypergeometricSequence implements SequenceWithOffset {
 
   /**
    * Convert a String into a list of Q constants.
-   * @param polyString expression of the form <code>[c0,c0...]</code>,
+   * @param qList expression of the form <code>[c0,c0...]</code>,
    * and Q constants <code>ci</code>.
    */
   public static Q[] toQArray(final String qList) {
@@ -236,18 +235,6 @@ public class HypergeometricSequence implements SequenceWithOffset {
     return result.toString();
   }
 
-  /**
-   * Gets the index of the first term.
-   * @return offset
-   */
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
-
-  /**
-   * Gets the next Z term of the sequence.
-   */
   @Override
   public Z next() {
     return nextQ().num();

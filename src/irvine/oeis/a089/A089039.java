@@ -4,21 +4,16 @@ package irvine.oeis.a089;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence1;
 
 /**
  * A089039 Number of circular permutations of 2n letters that are free of jealousy.
  * <code>a(1)=1, a(n) = Sum_{k=1..floor(n/2)} n!*(n-k-1)!^2/((k-1)!^2*(n-2*k)!*k)</code> for n &gt; 1
  * @author Georg Fischer
  */
-public class A089039 implements SequenceWithOffset {
+public class A089039 extends Sequence1 {
 
   private int mN = 0;
-
-  @Override
-  public int getOffset() {
-    return 1;
-  }
 
   @Override
   public Z next() {

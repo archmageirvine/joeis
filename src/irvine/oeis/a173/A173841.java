@@ -4,18 +4,17 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A173841 Number of permutations of 1..n with no adjacent pair summing to n+1.
  * k = 1; a(n,k) = Sum_{j=0..m} (-2)^j*binomial(m,j)*(n-j)! where m = max(0, floor((n-k+1)/2)).
  * @author Georg Fischer
  */
-public class A173841 implements SequenceWithOffset {
+public class A173841 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
-  private int mK;
+  private final int mK;
 
   /** Construct the sequence. */
   public A173841() {
@@ -28,14 +27,9 @@ public class A173841 implements SequenceWithOffset {
    * @param k difference to n
    */
   public A173841(final int offset, final int k) {
+    super(offset);
     mN = -1;
-    mOffset = offset;
     mK = k;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

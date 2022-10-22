@@ -1,21 +1,19 @@
 package irvine.oeis.a110;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A110726 Absolute({n concatenate R(n)}-{ R(n) concatenate n}), R(n) = digit reversal of n.
  * @author Georg Fischer
  */
-public class A110726 implements SequenceWithOffset {
+public class A110726 extends AbstractSequence {
 
-  private final int mOffset = 10;
-  private long mN = mOffset - 1;
+  private long mN = 9;
 
-
-  @Override
-  public int getOffset() {
-    return mOffset;
+  /** Construct the sequence. */
+  public A110726() {
+    super(10);
   }
 
   @Override

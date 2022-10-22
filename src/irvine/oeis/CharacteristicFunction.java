@@ -15,10 +15,9 @@ import irvine.math.z.Z;
  * This sequence returns Z.ZERO even if the underlying sequence is finite and returns null.
  * @author Georg Fischer
  */
-public class CharacteristicFunction implements SequenceWithOffset {
+public class CharacteristicFunction extends AbstractSequence {
 
   protected final Sequence mSeq; // underlying Sequence
-  protected final int mOffset; // first index of this CharacteristicFunction
   protected final int mCacheNo; // number of leading terms of {@link #mSeq} to be cached
   protected final boolean mMemberIs1; // whether (non-) membership is indicated with 1 (0).
   protected final int[] mCache; // stores the numbers for the first {@link #mCacheNo} terms of {@link #mSeq}.
@@ -36,11 +35,11 @@ public class CharacteristicFunction implements SequenceWithOffset {
    * @param cacheNo number of leading terms of <code>seq</code> to be cached
    */
   public CharacteristicFunction(final int offset, final Sequence seq, final boolean memberIs1, final int cacheNo) {
+    super(offset);
     mSeq = seq;
-    mOffset = offset;
     mCacheNo = cacheNo;
     mMemberIs1 = memberIs1;
-    mIN = mOffset - 1;
+    mIN = offset - 1;
     mSN = mCacheNo;
     final int[] caNums = new int[cacheNo]; // stores the leading terms
     mCacheMax = 0;
@@ -100,11 +99,6 @@ public class CharacteristicFunction implements SequenceWithOffset {
   protected int underNext() {
     final Z un = mSeq.next();
     return un != null ? un.intValue() : 0x7fffffff; // a very high value
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

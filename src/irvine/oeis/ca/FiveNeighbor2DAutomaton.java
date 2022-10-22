@@ -1,7 +1,7 @@
 package irvine.oeis.ca;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Data structure and methods for the evaluation of a 2D 5-Neighbor Outer Totalistic Cellular Automaton
@@ -28,12 +28,10 @@ import irvine.oeis.SequenceWithOffset;
  * <li>it was set   and 4 neighbors were set</li>
  * </ul>
  */
-public class FiveNeighbor2DAutomaton implements SequenceWithOffset {
+public class FiveNeighbor2DAutomaton extends AbstractSequence {
 
   /** Allocate rows in multiples of this number */
   protected static final int CHUNK_SIZE = 8;
-  /** First index */
-  protected int mOffset;
   /** Rule number 0..1023, cf. ANKOS pp. 170-179 */
   protected int mRule;
   /**
@@ -62,7 +60,7 @@ public class FiveNeighbor2DAutomaton implements SequenceWithOffset {
    * @param rule rule number for this automaton (0-1023).
    */
   public FiveNeighbor2DAutomaton(final int offset, final int rule) {
-    mOffset = offset;
+    super(offset);
     mGen = 0;
     mRule = rule;
     mOldTri = new Z[CHUNK_SIZE];
@@ -76,14 +74,6 @@ public class FiveNeighbor2DAutomaton implements SequenceWithOffset {
    */
   public static void setDebug(final int level) {
     sDebug = level;
-  }
-
-  /**
-   * Get the offset.
-   * @return first index (default: 0)
-   */
-  public int getOffset() {
-    return mOffset;
   }
 
   /**
@@ -189,11 +179,6 @@ public class FiveNeighbor2DAutomaton implements SequenceWithOffset {
     mOldTri = newTri;
   }
 
-  /**
-   * Get the next term of the sequence.
-   * Cf. interface {@link Sequence}.
-   * @return total number of black cells in the next generation
-   */
   @Override
   public Z next() {
     return nextOn();
@@ -201,7 +186,6 @@ public class FiveNeighbor2DAutomaton implements SequenceWithOffset {
 
   /**
    * Get the next term of the sequence.
-   * Cf. interface {@link Sequence}.
    * @return total number of black cells in the next generation
    */
   public Z nextOn() {

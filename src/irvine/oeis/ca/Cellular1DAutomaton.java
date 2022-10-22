@@ -3,7 +3,7 @@ package irvine.oeis.ca;
 import java.util.Iterator;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Data structure and methods for the evaluation of an elementary, one-dimensional cellular automaton
@@ -16,7 +16,7 @@ import irvine.oeis.SequenceWithOffset;
  * The rows grow by one bit on each side. If the arrays become too small, they are expanded.
  * @author Georg Fischer
  */
-public class Cellular1DAutomaton implements SequenceWithOffset {
+public class Cellular1DAutomaton extends AbstractSequence {
 
   /** Allocate rows in multiples of this number */
   protected static final int CHUNK_SIZE = 256;
@@ -42,8 +42,6 @@ public class Cellular1DAutomaton implements SequenceWithOffset {
 
   /** Debugging mode: 0=none, 1=some, 2=more. */
   static int sDebug;
-  /** First index */
-  protected int mOffset;
   /** Buffer for the bits of generation n */
   protected int[] mOldRow;
   /** Buffer for the bits of generation n+1 */
@@ -95,7 +93,7 @@ public class Cellular1DAutomaton implements SequenceWithOffset {
    
    */
   public Cellular1DAutomaton(final int offset, final int rule, final int seed) {
-    mOffset = offset;
+    super(offset);
     mBlockMask = (1 << BLOCK_LEN) - 1;
     mLowMask = 1;
     mHighMask = 1 << (BLOCK_LEN - 1);
@@ -124,14 +122,6 @@ public class Cellular1DAutomaton implements SequenceWithOffset {
    */
   public static void setDebug(final int level) {
     sDebug = level;
-  }
-
-  /**
-   * Get the offset.
-   * @return first index (default: 0)
-   */
-  public int getOffset() {
-    return mOffset;
   }
 
   /**
@@ -414,7 +404,6 @@ public class Cellular1DAutomaton implements SequenceWithOffset {
   /**
    * Get the next term of the sequence.
    * The default implementation here yields the single cell values (1 for ON/BLACK, 0 for OFF/WHITE) of the triangle row by row.
-   * Cf. interface {@link Sequence}.
    * @return 0 or 1
    */
   @Override

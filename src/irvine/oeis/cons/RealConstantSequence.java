@@ -1,15 +1,14 @@
 package irvine.oeis.cons;
 
 import irvine.math.cr.CR;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Sequence formed by the decimal expansion of a computable real number.
  * @author Sean A. Irvine
  */
-public abstract class RealConstantSequence implements SequenceWithOffset {
+public abstract class RealConstantSequence extends AbstractSequence {
 
-  private final int mOffset;
   private final CR mX;
 
   /**
@@ -18,7 +17,7 @@ public abstract class RealConstantSequence implements SequenceWithOffset {
    * @param x computable real number
    */
   protected RealConstantSequence(final int offset, final CR x) {
-    mOffset = offset;
+    super(offset);
     mX = x;
   }
 
@@ -28,10 +27,5 @@ public abstract class RealConstantSequence implements SequenceWithOffset {
    */
   public CR getCR() {
     return mX;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 }

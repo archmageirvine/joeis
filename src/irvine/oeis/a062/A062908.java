@@ -2,18 +2,16 @@ package irvine.oeis.a062;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A062908 Non-palindromic number and its reversal are both even.
  * @author Georg Fischer
  */
-public class A062908 implements SequenceWithOffset {
+public class A062908 extends AbstractSequence {
 
   private int mN;
-  private int mMult;
-  private int mOffset;
-  private int mStart;
+  private final int mMult;
 
   /** Construct the sequence. */
   public A062908() {
@@ -26,14 +24,9 @@ public class A062908 implements SequenceWithOffset {
    * @param mult multiple
    */
   public A062908(final int offset, final int mult) {
-    mOffset = offset;
+    super(offset);
     mN = -1;
     mMult = mult;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

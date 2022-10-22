@@ -20,7 +20,7 @@ public class PolynomialRootSequence extends HolonomicRecurrence {
    * Empty constructor.
    */
   protected PolynomialRootSequence() {
-    super();
+    super(0);
   }
 
   /**
@@ -30,8 +30,7 @@ public class PolynomialRootSequence extends HolonomicRecurrence {
    * @param pcoeffs list of the coefficients of the polynomial
    */
   public PolynomialRootSequence(final int offset, final int root, final String pcoeffs) {
-    super();
-    mOffset = offset;
+    super(offset);
     final String[] list = pcoeffs.replaceAll("\\A[^\\-\\d]+", "").replaceAll("[^\\-\\d]+\\Z", "") // remove outer delimiters
         .split("[^\\-\\d]+");
     final int len = list.length;
@@ -49,8 +48,7 @@ public class PolynomialRootSequence extends HolonomicRecurrence {
    * @param seq     finite sequence
    */
   public PolynomialRootSequence(final int offset, final int root, final FiniteSequence seq) {
-    super();
-    mOffset = offset;
+    super(offset);
     final ArrayList<Z> list = new ArrayList<>(16);
     Z term = seq.next();
     while (term != null) {
@@ -73,8 +71,7 @@ public class PolynomialRootSequence extends HolonomicRecurrence {
    * @param len     number of terms to be used as polynomial coefficients p(k)
    */
   public PolynomialRootSequence(final int offset, final int root, final Sequence seq, final int len) {
-    super();
-    mOffset = offset;
+    super(offset);
     final Z[] coeffs = new Z[len];
     for (int k = 0; k < len; ++k) {
       coeffs[k] = seq.next();

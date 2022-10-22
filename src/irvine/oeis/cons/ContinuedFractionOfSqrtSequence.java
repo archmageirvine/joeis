@@ -1,7 +1,7 @@
 package irvine.oeis.cons;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * Properties of a (simple) periodic continued fraction
@@ -12,7 +12,7 @@ import irvine.oeis.SequenceWithOffset;
  * the continued fractions of all square roots.
  * @author Georg Fischer
  */
-public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
+public class ContinuedFractionOfSqrtSequence extends AbstractSequence {
 
   protected int mN; // index of current term to be returned
   protected int mK; // compute the sqrt of this number
@@ -35,7 +35,6 @@ public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
   //protected int mPerCenter; // central element(s) in period
   protected int[] mPeriod;
   protected int mSize; // necessary size of mPeriod
-  protected int mOffset; // OEIS offset1 as of generation time
 
   /**
    * Construct an instance which selects all numbers k
@@ -44,7 +43,7 @@ public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
    * @param offset first valid term has this index
    */
   protected ContinuedFractionOfSqrtSequence(final int offset) {
-    mOffset = offset;
+    super(offset);
     mN = offset - 1;
     mK = offset - 1; // will be increased in first call of getNext(With)Property()
     mPeriod = new int[16];
@@ -57,7 +56,7 @@ public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
    * @param k compute the sqrt of this non-negative number
    */
   public ContinuedFractionOfSqrtSequence(final int offset, final int k) {
-    mOffset = offset;
+    super(offset);
     mN  = offset - 1; // will be increased in first call of next().
     mK  = k;
     mPeriod = new int[16];
@@ -67,14 +66,6 @@ public class ContinuedFractionOfSqrtSequence implements SequenceWithOffset {
     mC1     = Z.valueOf(mRoot);
     mD1     = Z.ONE;
   } // Constructor for a single k
-
-  /**
-   * Get the offset.
-   * @return OEIS offset as of generation time
-   */
-  public int getOffset() {
-    return mOffset;
-  } // getOffset
 
   /**
    * Initialize the member properties.

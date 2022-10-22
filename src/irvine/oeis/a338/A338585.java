@@ -3,22 +3,15 @@ package irvine.oeis.a338;
 import irvine.math.MemoryFunction1;
 import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence0;
 
 /**
  * A338585 Number of partitions of the n-th triangular number into exactly n positive triangular numbers.
  * @author Georg Fischer
  */
-public class A338585 implements SequenceWithOffset {
+public class A338585 extends Sequence0 {
 
-  protected int mN;
-  private int mOffset;
-
-  /** Construct the sequence. */
-  public A338585() {
-    mOffset = 0;
-    mN = mOffset - 1;
-  }
+  protected int mN = -1;
 
   /* Maple:
     h:= proc(n) option remember; `if`(n<1, 0,
@@ -30,18 +23,13 @@ public class A338585 implements SequenceWithOffset {
     a:= n-> (t-> b(t, h(t), n))(n*(n+1)/2):
     seq(a(n), n=0..42);  # _Alois P. Heinz_, Nov 10 2020
   */
-  /**
-   * Compute the largest triangular number &lt;= n.
-   * @param n parameter
-   * @return largest k of the form <code>m*(m+1)/2 &lt;= n</code>
-   */
   protected final MemoryFunction1<Integer> mH = new MemoryFunction1<Integer>() {
     @Override
     protected Integer compute(final int n) {
       if (n < 1) {
         return 0;
       }
-      return Z.valueOf(8 * n + 1).isSquare() ? n : get(n - 1);
+      return Z.valueOf(8L * n + 1).isSquare() ? n : get(n - 1);
     }
   };
 
@@ -57,11 +45,6 @@ public class A338585 implements SequenceWithOffset {
       return get(n, mH.get(i - 1), k).add(get(n - i, mH.get(i < n - i ? i : n - i), k - 1));
     }
   };
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   @Override
   public Z next() {

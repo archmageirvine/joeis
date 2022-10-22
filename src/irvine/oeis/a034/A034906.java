@@ -3,8 +3,8 @@ package irvine.oeis.a034;
 import java.util.TreeSet;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SequenceWithOffset;
 import irvine.oeis.a004.A004094;
 
 /**
@@ -12,11 +12,9 @@ import irvine.oeis.a004.A004094;
  * @author Sean A. Irvine
  * @author Georg Fischer
  */
-public class A034906 implements SequenceWithOffset {
+public class A034906 extends AbstractSequence {
 
-  private int mN;
-  private int mOffset;
-  private Sequence mSeq;
+  private final Sequence mSeq;
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private int mLastLength = 0;
@@ -33,14 +31,8 @@ public class A034906 implements SequenceWithOffset {
    * @param seq underlying sequence
    */
   public A034906(final int offset, final Sequence seq) {
-    mN = 0;
-    mOffset = offset;
+    super(offset);
     mSeq = seq;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

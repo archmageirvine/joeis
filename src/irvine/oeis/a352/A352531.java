@@ -2,20 +2,15 @@ package irvine.oeis.a352;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.Sequence1;
 
 /**
  * A352531 Numbers with multiplicative persistence value 10.
  * @author Georg Fischer
  */
-public class A352531 implements SequenceWithOffset {
+public class A352531 extends Sequence1 {
 
   private Z mN = Z.valueOf(3778888998L);
-
-  @Override
-  public int getOffset() {
-    return 1;
-  }
 
   @Override
   public Z next() {

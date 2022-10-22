@@ -10,10 +10,9 @@ import irvine.math.z.Z;
  * Base class for (multiplicative) arithmetic functions.
  * @author Sean A. Irvine
  */
-public class MultiplicativeSequence implements SequenceWithOffset {
+public class MultiplicativeSequence extends AbstractSequence {
 
   private final BiFunction<Z, Integer, Z> mF;
-  private final int mOffset;
   private final long mStep;
   protected long mN;
 
@@ -24,9 +23,9 @@ public class MultiplicativeSequence implements SequenceWithOffset {
    * @param f function
    */
   public MultiplicativeSequence(final int offset, final long step, final BiFunction<Z, Integer, Z> f) {
-    mOffset = offset;
+    super(offset);
     mStep = step;
-    mN = mOffset - mStep;
+    mN = offset - mStep;
     mF = f;
   }
 
@@ -48,11 +47,6 @@ public class MultiplicativeSequence implements SequenceWithOffset {
       prod = prod.multiply(mF.apply(p, fs.getExponent(p)));
     }
     return prod;
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   /**
@@ -93,7 +87,7 @@ public class MultiplicativeSequence implements SequenceWithOffset {
 
   /**
    * Test a modulus condition with one residue.
-   * @param m modulus
+   * @param modulus modulus
    * @param p the prime to be tested
    * @param res1 first residue
    * @return true if <code>mod(p,m) IN {res1}</code>, false otherwise
@@ -104,7 +98,7 @@ public class MultiplicativeSequence implements SequenceWithOffset {
 
   /**
    * Test a modulus condition with two residues.
-   * @param m modulus
+   * @param modulus modulus
    * @param p the prime to be tested
    * @param res1 first residue
    * @param res2 second residue
@@ -117,7 +111,7 @@ public class MultiplicativeSequence implements SequenceWithOffset {
 
   /**
    * Test a modulus condition with three residues.
-   * @param m modulus
+   * @param modulus modulus
    * @param p the prime to be tested
    * @param res1 first residue
    * @param res2 second residue
@@ -131,7 +125,7 @@ public class MultiplicativeSequence implements SequenceWithOffset {
 
   /**
    * Test a modulus condition with a list of residues.
-   * @param m modulus
+   * @param modulus modulus
    * @param p the prime to be tested
    * @param resList list of residues
    * @return true if <code>mod(p,m) IN {resList}</code>, false otherwise

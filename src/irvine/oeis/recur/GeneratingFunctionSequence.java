@@ -12,23 +12,22 @@ import java.util.Arrays;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * An ordinary generating function consisting of a fraction of two polynomials in "x".
  * @author Georg Fischer
  */
-public class GeneratingFunctionSequence implements SequenceWithOffset {
+public class GeneratingFunctionSequence extends AbstractSequence {
 
   protected Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
   protected Z[] mDen; // coefficients of the denominator polynomial
   protected int mIndex = 0; // index of next term to be generated
-  protected final int mOffset; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
   protected int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
   protected Z mFactorial; // accumulate n! here
 
   protected GeneratingFunctionSequence() {
-    mOffset = 0;
+    super(0);
     mIndex = 0;
   }
 
@@ -40,7 +39,7 @@ public class GeneratingFunctionSequence implements SequenceWithOffset {
    * @param den    denominator
    */
   public GeneratingFunctionSequence(final int offset, final Z[] num, final Z[] den) {
-    mOffset = offset;
+    super(offset);
     mIndex = 0;
     mNum = Arrays.copyOf(num, num.length); // copy because this class modifies num
     mDen = Arrays.copyOf(den, den.length);
@@ -96,7 +95,7 @@ public class GeneratingFunctionSequence implements SequenceWithOffset {
    * @param den    coefficients for the denominator.
    */
   public GeneratingFunctionSequence(final int offset, final String num, final String den) {
-    mOffset = offset;
+    super(offset);
     mIndex = 0;
     mNum = ZUtils.toZ(num);
     mDen = ZUtils.toZ(den);
@@ -122,15 +121,6 @@ public class GeneratingFunctionSequence implements SequenceWithOffset {
   }
 
   /**
-   * Gets the offset
-   *
-   * @return the index where the sequence elements start
-   */
-  public int getOffset() {
-    return mOffset;
-  }
-
-  /**
    * Gets the coefficients of the numerator polynomial.
    * This method must be called before any call of {@link #next()}.
    *
@@ -152,7 +142,7 @@ public class GeneratingFunctionSequence implements SequenceWithOffset {
 
   @Override
   public Z next() {
-    while (mIndex < mOffset) { // skip over leading coefficients
+    while (mIndex < getOffset()) { // skip over leading coefficients
       iterate();
     } // while
     return iterate();

@@ -6,13 +6,25 @@ import irvine.math.z.Z;
  * Difference between two sequences.
  * @author Sean A. Irvine
  */
-public class SetDifferenceSequence implements SequenceWithOffset {
+public class SetDifferenceSequence extends AbstractSequence {
 
   private final Sequence mSeqA;
   private final Sequence mSeqB;
   private Z mNextA;
   private Z mNextB;
-  protected int mOffset = 1;
+
+  /**
+   * Difference of a pair of sequences.
+   * @param a first sequence
+   * @param b second sequence
+   */
+  public SetDifferenceSequence(final int offset, final Sequence a, final Sequence b) {
+    super(offset);
+    mSeqA = a;
+    mSeqB = b;
+    mNextA = mSeqA.next();
+    mNextB = mSeqB.next();
+  }
 
   /**
    * Difference of a pair of sequences.
@@ -20,15 +32,7 @@ public class SetDifferenceSequence implements SequenceWithOffset {
    * @param b second sequence
    */
   public SetDifferenceSequence(final Sequence a, final Sequence b) {
-    mSeqA = a;
-    mSeqB = b;
-    mNextA = mSeqA.next();
-    mNextB = mSeqB.next();
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
+    this(1, a, b);
   }
 
   @Override

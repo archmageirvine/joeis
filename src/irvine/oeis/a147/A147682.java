@@ -2,17 +2,16 @@ package irvine.oeis.a147;
 
 import irvine.math.MemoryFunctionIntArray;
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A147682 Late-growing permutations: number of permutations of 2 indistinguishable copies of 1..n with every partial sum &lt;= the same partial sum averaged over all permutations.
  * with every partial sum &lt;= the same partial sum averaged over all permutations.
  * @author Georg Fischer
  */
-public class A147682 implements SequenceWithOffset {
+public class A147682 extends AbstractSequence {
 
   private int mN;
-  private final int mOffset;
   private final Integer mCopies;
 
   /** Construct the sequence. */
@@ -26,7 +25,7 @@ public class A147682 implements SequenceWithOffset {
    * @param copies number of copies
    */
   public A147682(final int offset, final int copies) {
-    mOffset = offset;
+    super(offset);
     mN = offset - 1;
     mCopies = copies;
   }
@@ -75,11 +74,6 @@ public class A147682 implements SequenceWithOffset {
       return sum;
     }
   };
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   @Override
   public Z next() {

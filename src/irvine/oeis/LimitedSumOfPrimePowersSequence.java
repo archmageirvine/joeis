@@ -13,7 +13,7 @@ import irvine.util.string.StringUtils;
  * Generate terms for a sequence of like powers.
  * @author Sean A. Irvine
  */
-public class LimitedSumOfPrimePowersSequence implements SequenceWithOffset {
+public class LimitedSumOfPrimePowersSequence extends Sequence1 {
 
   // Like LimitedSumOfLikePowersSequence but restricted to prime terms.
 
@@ -28,7 +28,6 @@ public class LimitedSumOfPrimePowersSequence implements SequenceWithOffset {
   private final int mAdd;
   private long mP = 2;
   private int mM = 1;
-  protected int mOffset = 1;
 
   /**
    * Construct the sequence.
@@ -57,11 +56,6 @@ public class LimitedSumOfPrimePowersSequence implements SequenceWithOffset {
    */
   protected LimitedSumOfPrimePowersSequence(final int power, final int terms, final int minWays) {
     this(power, terms, minWays, false, false);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   /**

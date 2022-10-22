@@ -11,13 +11,12 @@ import irvine.math.z.Z;
  * from the expansion of the underlying formula.
  * @author Georg Fischer
  */
-public abstract class ExponentialGeneratingFunction implements SequenceWithOffset {
+public abstract class ExponentialGeneratingFunction extends AbstractSequence {
 
   protected static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   protected int mN; // current index
   protected int mStep; // skip step-1 zeroes
   protected Z mF; // factorial mN!
-  private int mOffset; // first index
 
   /**
    * Empty constructor.
@@ -41,7 +40,7 @@ public abstract class ExponentialGeneratingFunction implements SequenceWithOffse
    * @param step increase the index by this number: 1, 2
    */
   public ExponentialGeneratingFunction(int offset, final int start, final int step) {
-    mOffset = offset;
+    super(offset);
     mStep = step;
     mN = 0;
     mF = Z.ONE;
@@ -58,11 +57,6 @@ public abstract class ExponentialGeneratingFunction implements SequenceWithOffse
    * @return polynomial
    */
   public abstract Polynomial<Q> compute(final int n);
-
-  @Override
-  public int getOffset() {
-    return mOffset;
-  }
 
   @Override
   public Z next() {

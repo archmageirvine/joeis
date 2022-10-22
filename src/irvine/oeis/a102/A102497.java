@@ -1,16 +1,15 @@
 package irvine.oeis.a102;
 
 import irvine.math.z.Z;
-import irvine.oeis.SequenceWithOffset;
+import irvine.oeis.AbstractSequence;
 
 /**
  * A102497 Primes of the concatenated form 1nn1 where n is an integer &gt;=0.
  * @author Georg Fischer
  */
-public class A102497 implements SequenceWithOffset {
+public class A102497 extends AbstractSequence {
 
   private int mN;
-  private int mOffset;
   private final String mDigit;
 
   /** Construct the sequence. */
@@ -20,18 +19,13 @@ public class A102497 implements SequenceWithOffset {
 
   /**
    * Generic constructor with parameters
-   * @param offset
-   * @param digit
+   * @param offset the offset
+   * @param digit the digit
    */
   public A102497(final int offset, final int digit) {
-    mOffset = offset;
+    super(offset);
     mN = -1;
     mDigit = String.valueOf(digit);
-  }
-
-  @Override
-  public int getOffset() {
-    return mOffset;
   }
 
   @Override

@@ -15,7 +15,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A060041.
+ * A060041 Certain numbers a(n) related to Gromov-Witten invariants N_n in dimension n (see formula (7.45) on p. 202 of Cox and Katz).
  * @author Sean A. Irvine
  */
 public class A060041 implements Sequence {

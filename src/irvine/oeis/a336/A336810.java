@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.cons.FoldedContinuedFraction;
 
 /**
- * A336810 Continued fraction expansion of Sum_{k>=0} 1/(k!)!.
+ * A336810 Continued fraction expansion of Sum_{k&gt;=0} 1/(k!)!.
  * @author Georg Fischer
  */
 public class A336810 extends FoldedContinuedFraction {

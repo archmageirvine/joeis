@@ -2,13 +2,13 @@ package irvine.oeis.a136;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A136528 a(n) = the highest possible number of positive divisors of the sum of any two distinct positive divisors of n.
  * @author Sean A. Irvine
  */
-public class A136528 implements Sequence {
+public class A136528 extends Sequence2 {
 
   private long mN = 1;
 

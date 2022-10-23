@@ -8,13 +8,13 @@ import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.polynomial.StandardMultiply;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A003097 Critical connected topologies with n points.
  * @author Sean A. Irvine
  */
-public class A003097 implements Sequence {
+public class A003097 extends Sequence2 {
 
   private final HashMap<String, CycleIndex> mCache = new HashMap<>();
   private final CycleIndex mSymmetricInfinityApprox = new CycleIndex("S_{\\infty}");

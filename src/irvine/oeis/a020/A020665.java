@@ -2,13 +2,13 @@ package irvine.oeis.a020;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A020665 a(n) is the (conjectured) maximal exponent k such that n^k does not contain a digit zero in its decimal expansion.
  * @author Sean A. Irvine
  */
-public class A020665 implements Sequence {
+public class A020665 extends Sequence2 {
 
   // Partially conjectural
   // 99 is large enough for all known results

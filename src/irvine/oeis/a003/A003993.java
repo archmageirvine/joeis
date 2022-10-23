@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A003993 Sequence b_3 (n) arising from homology of partitions with even number of blocks.
  * @author Sean A. Irvine
  */
-public class A003993 implements Sequence {
+public class A003993 extends Sequence2 {
 
   private Z mA = Z.TWO;
   private long mN = 2;

@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A055020 Number of iterations of sigma() required until 2n (or greater) is reached.
  * @author Sean A. Irvine
  */
-public class A055020 implements Sequence {
+public class A055020 extends Sequence2 {
 
   private Z mN = Z.ONE;
 

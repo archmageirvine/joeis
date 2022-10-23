@@ -3,13 +3,13 @@ package irvine.oeis.a062;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A062438 Nearest integer to log(n^n)^log(log(1 + n)).
  * @author Georg Fischer
  */
-public class A062438 implements Sequence {
+public class A062438 extends Sequence2 {
 
   private int mN = 1;
 

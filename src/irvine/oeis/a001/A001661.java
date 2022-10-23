@@ -1,14 +1,14 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
  * A001661 Largest number not the sum of distinct positive n-th powers.
  * @author Sean A. Irvine
  */
-public class A001661 implements Sequence {
+public class A001661 extends Sequence2 {
 
   // Uses the approach of Dressler & Parker.
   // Uses the set S={1^n,2^n,...,c^n}

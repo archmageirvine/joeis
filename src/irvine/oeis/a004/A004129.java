@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A004129 Postage stamp problem: largest m such that there exists an n-subset S of nonnegative integers such that 1,...,m can be expressed as a sum of two distinct elements of S.
  * @author Sean A. Irvine
  */
-public class A004129 implements Sequence {
+public class A004129 extends Sequence2 {
 
   private final int[] mSeen = new int[1000000];
   private int mN = 1;

@@ -2,14 +2,14 @@ package irvine.oeis.a037;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a000.A000244;
 
 /**
  * A037097 Periodic vertical binary vectors of powers of 3, starting from bit-column 2 (halved).
  * @author Sean A. Irvine
  */
-public class A037097 implements Sequence {
+public class A037097 extends Sequence2 {
 
   private final MemorySequence mA = MemorySequence.cachedSequence(new A000244());
   private int mN = 1;

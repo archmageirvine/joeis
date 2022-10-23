@@ -3,13 +3,13 @@ package irvine.oeis.a003;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A003435 Number of directed Hamiltonian circuits on n-octahedron with a marked starting node.
  * @author Sean A. Irvine
  */
-public class A003435 implements Sequence {
+public class A003435 extends Sequence2 {
 
   protected final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   protected int mN = 1;

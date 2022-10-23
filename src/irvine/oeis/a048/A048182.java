@@ -6,14 +6,14 @@ import java.util.function.ToLongFunction;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.Pair;
 
 /**
  * A048182 Variation on A047988, where division by d costs d points instead of 0 points.
  * @author Sean A. Irvine
  */
-public class A048182 implements Sequence {
+public class A048182 extends Sequence2 {
 
   private long mN = 1;
 

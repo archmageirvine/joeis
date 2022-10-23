@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A278678 Popularity of left children in treeshelves avoiding pattern T321.
  * E.g.f.: (-sin(x) + 1 + (x-1)*cos(x))/ (1-sin(x))^2
  * @author Georg Fischer
  */
-public class A278678 implements Sequence {
+public class A278678 extends Sequence2 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 1;

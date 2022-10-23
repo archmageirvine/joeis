@@ -2,13 +2,13 @@ package irvine.oeis.a038;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A038625 a(n) is smallest number m such that m = n*pi(m), where pi(k) = number of primes &lt;= k (A000720).
  * @author Sean A. Irvine
  */
-public class A038625 implements Sequence {
+public class A038625 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private long mN = 1;

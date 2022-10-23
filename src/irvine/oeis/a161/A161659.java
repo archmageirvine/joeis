@@ -3,13 +3,13 @@ package irvine.oeis.a161;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A161659 a(n) = the smallest multiple of {the sum of the prime-factorization exponents of n} that is &gt;= n.
  * @author Sean A. Irvine
  */
-public class A161659 implements Sequence {
+public class A161659 extends Sequence2 {
 
   private Z mN = Z.ONE;
 

@@ -7,14 +7,14 @@ import java.util.Set;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
  * A048175 Size of range 1..m generatable from the digits of an n-digit integer and + - x /.
  * @author Sean A. Irvine
  */
-public class A048175 implements Sequence {
+public class A048175 extends Sequence2 {
 
   /** Constant controlling how close to integral a result needs to be */
   private static final double TOLERANCE = 1E-7;

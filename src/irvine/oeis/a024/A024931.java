@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A024931 a(n) = sum of remainders of n mod 2,4,6,...,2k, where k = [ n/2 ].
  * @author Sean A. Irvine
  */
-public class A024931 implements Sequence {
+public class A024931 extends Sequence2 {
 
   private long mN = 0;
 

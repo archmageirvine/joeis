@@ -1,13 +1,13 @@
 package irvine.oeis.a343;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A343080 a(n) is the smallest number that is the sum of n positive squares in three ways.
  * @author Sean A. Irvine
  */
-public class A343080 implements Sequence {
+public class A343080 extends Sequence2 {
 
   private long mN = 1;
 

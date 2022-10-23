@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A024853 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = (natural numbers), t = (natural numbers &gt;= 2).
  * @author Sean A. Irvine
  */
-public class A024853 implements Sequence {
+public class A024853 extends Sequence2 {
 
   private long mN = 1;
 

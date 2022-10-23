@@ -3,13 +3,13 @@ package irvine.oeis.a002;
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersMod;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A002323 ((2^m - 1) / p) mod p, where p = prime(n) and m = ord(2,p).
  * @author Sean A. Irvine
  */
-public class A002323 implements Sequence {
+public class A002323 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

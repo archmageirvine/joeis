@@ -3,13 +3,13 @@ package irvine.oeis.a007;
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A007041 State assignments for n-state machine.
  * @author Sean A. Irvine
  */
-public class A007041 implements Sequence {
+public class A007041 extends Sequence2 {
 
   private int mN = 1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A048823 a(n) = value of n defined as follows: start with n and reach 2 by repeatedly either dividing by d where d &lt;= the square root or by subtracting 1. The division steps are free, but subtracting 1 costs 1 point. The "value" of n is the smallest cost to reach 2.
  * @author Sean A. Irvine
  */
-public class A048823 implements Sequence {
+public class A048823 extends Sequence2 {
 
   private long mN = 1;
 

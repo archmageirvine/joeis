@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A051591 Number of oriented triangle graphs with transitively oriented maximal cliques, on binomial(n,2) points.
  * @author Sean A. Irvine
  */
-public class A051591 implements Sequence {
+public class A051591 extends Sequence2 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 1;

@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A057963 Triangle T(n,k) of number of minimal 2-covers of a labeled n-set that cover k points of that set uniquely (k=2,..,n).
  * @author Sean A. Irvine
  */
-public class A057963 implements Sequence {
+public class A057963 extends Sequence2 {
 
   private int mN = 1;
   private int mM = 1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A024828 a(n) = least m such that if r and s in {h/(1 + h^2): h = 1,2,...,n} satisfy r &lt; s, then r &lt; k/m &lt; s for some integer k.
  * @author Sean A. Irvine
  */
-public class A024828 implements Sequence {
+public class A024828 extends Sequence2 {
 
   private long mN = 1;
   private long mM = 1;

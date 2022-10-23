@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A045744 Number of noncrossing connected graphs on n nodes on a circle having no four-sided faces.
  * @author Sean A. Irvine
  */
-public class A045744 implements Sequence {
+public class A045744 extends Sequence2 {
 
   private long mN = 1;
 

@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A003466 Number of minimal covers of an n-set that have exactly one point which appears in more than one set in the cover.
  * @author Sean A. Irvine
  */
-public class A003466 implements Sequence {
+public class A003466 extends Sequence2 {
 
   private int mN = 1;
 

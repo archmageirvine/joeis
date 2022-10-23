@@ -1,13 +1,13 @@
 package irvine.oeis.a037;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A037048 Number of pairs {i,j}, i&gt;1, j&gt;1, such that ij &lt; n^2.
  * @author Sean A. Irvine
  */
-public class A037048 implements Sequence {
+public class A037048 extends Sequence2 {
 
   private long mN = 1;
 

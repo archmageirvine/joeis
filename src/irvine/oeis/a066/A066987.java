@@ -5,13 +5,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A066987 a(n) = Product_{i=2..n} sigma(i)/bigomega(i).
  * @author Georg Fischer
  */
-public class A066987 implements Sequence {
+public class A066987 extends Sequence2 {
 
   private int mN = 1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A004301 Second-order Eulerian numbers &lt;&lt;n,2&gt;&gt;.
  * @author Sean A. Irvine
  */
-public class A004301 implements Sequence {
+public class A004301 extends Sequence2 {
 
   private int mN = 1;
   private Z mA = Z.valueOf(27);

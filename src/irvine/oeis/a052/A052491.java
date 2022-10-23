@@ -2,13 +2,13 @@ package irvine.oeis.a052;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A052491 Smallest "inconsummate number" in base n: smallest number such that in base n, no number is this multiple of the sum of its digits.
  * @author Sean A. Irvine
  */
-public class A052491 implements Sequence {
+public class A052491 extends Sequence2 {
 
   private long mN = 1;
 

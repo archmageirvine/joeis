@@ -3,13 +3,14 @@ package irvine.oeis.a234;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a112.A112823;
 
 /**
  * A234345 Smallest q such that n &lt;= q &lt; 2n with p, q both prime, p+q = 2n, and p &lt;= q.
  * @author Georg Fischer
  */
-public class A234345 implements Sequence {
+public class A234345 extends Sequence2 {
 
   final Sequence mA112823 = new A112823();
   protected long mN;

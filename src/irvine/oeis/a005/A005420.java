@@ -2,13 +2,13 @@ package irvine.oeis.a005;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A005420 Largest prime factor of 2^n - 1.
  * @author Sean A. Irvine
  */
-public class A005420 implements Sequence {
+public class A005420 extends Sequence2 {
 
   private int mN = 1;
 

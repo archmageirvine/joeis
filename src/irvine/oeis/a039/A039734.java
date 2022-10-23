@@ -2,13 +2,13 @@ package irvine.oeis.a039;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A039734 a(n)=the prime q&lt;prime(n) for which (prime(n) mod q) is maximal.
  * @author Sean A. Irvine
  */
-public class A039734 implements Sequence {
+public class A039734 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private long mP = 2;

@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A056110 Highest proper factor of n!-1, or a(n)=1 if n!-1 is not composite.
  * @author Sean A. Irvine
  */
-public class A056110 implements Sequence {
+public class A056110 extends Sequence2 {
 
   private int mN = 1;
   private Z mF = Z.TWO;

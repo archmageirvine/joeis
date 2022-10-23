@@ -5,13 +5,13 @@ import irvine.math.group.SymmetricGroup;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.WreathExponentiation;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A056667 Number of equivalence classes of n-valued Post functions of 3 variables under action of semi-direct product of symmetric group S_3 and complementing group C(3,n).
  * @author Sean A. Irvine
  */
-public class A056667 implements Sequence {
+public class A056667 extends Sequence2 {
 
   private static final CycleIndex Z3 = SymmetricGroup.create(3).cycleIndex();
   private int mN = 1;

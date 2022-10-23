@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A025131 3rd elementary symmetric function of C(n,0), C(n,1), ..., C(n,n).
  * @author Sean A. Irvine
  */
-public class A025131 implements Sequence {
+public class A025131 extends Sequence2 {
 
   private long mN = 1;
 

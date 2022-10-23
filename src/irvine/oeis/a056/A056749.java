@@ -3,13 +3,14 @@ package irvine.oeis.a056;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a006.A006995;
 
 /**
  * A056749 Smallest palindrome greater than n in bases 2 and n.
  * @author Sean A. Irvine
  */
-public class A056749 implements Sequence {
+public class A056749 extends Sequence2 {
 
   private int mN = 1;
 

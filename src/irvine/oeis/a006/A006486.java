@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A006486 a(n) = largest prime factor of n^n - 1.
  * @author Sean A. Irvine
  */
-public class A006486 implements Sequence {
+public class A006486 extends Sequence2 {
 
   private int mN = 1;
 

@@ -3,13 +3,14 @@ package irvine.oeis.a049;
 import irvine.math.z.Z;
 import irvine.oeis.IntersectionSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a031.A031443;
 
 /**
  * A049364 Smallest number that is digitally balanced in all bases 2, 3, ... n.
  * @author Sean A. Irvine
  */
-public class A049364 implements Sequence {
+public class A049364 extends Sequence2 {
 
   private Sequence mA = new A031443();
   private int mN = 1;

@@ -1,13 +1,13 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A020881 Number of strong restricted edge-subgraphs in Moebius ladder M_n.
  * @author Sean A. Irvine
  */
-public class A020881 implements Sequence {
+public class A020881 extends Sequence2 {
 
   private int mN = 1;
   private int[][] mGraph = null;

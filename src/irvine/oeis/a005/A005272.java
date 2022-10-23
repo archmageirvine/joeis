@@ -6,13 +6,13 @@ import java.util.Set;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A005272 Number of Van Lier sequences of length n.
  * @author Sean A. Irvine
  */
-public class A005272 implements Sequence {
+public class A005272 extends Sequence2 {
 
   private static class State {
 

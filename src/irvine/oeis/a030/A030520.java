@@ -3,14 +3,14 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a055.A055879;
 
 /**
  * A030520 Number of polyhexes of class PF2 with C_{2n} symmetry.
  * @author Sean A. Irvine
  */
-public class A030520 implements Sequence {
+public class A030520 extends Sequence2 {
 
   private final MemorySequence mM = MemorySequence.cachedSequence(new PrependSequence(new A055879(), 0));
   private int mN = -2;

@@ -3,14 +3,14 @@ package irvine.oeis.a024;
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a000.A000045;
 
 /**
  * A024849 a(n) = least m such that if r and s in {|F(h+1)-tau*F(h)|: h = 1,2,...,n} satisfy r &lt; s, then r &lt; k/m &lt; s for some integer k, where F = A000045 (Fibonacci numbers) and tau = (1+sqrt(5))/2 (golden ratio).
  * @author Sean A. Irvine
  */
-public class A024849 implements Sequence {
+public class A024849 extends Sequence2 {
 
   private final MemorySequence mF = MemorySequence.cachedSequence(new A000045());
   private int mN = 1;

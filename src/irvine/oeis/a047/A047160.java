@@ -1,13 +1,13 @@
 package irvine.oeis.a047;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A047160 For n &gt;= 2, a(n) = smallest number m &gt;= 0 such that n-m and n+m are both primes, or -1 if no such m exists.
  * @author Sean A. Irvine
  */
-public class A047160 implements Sequence {
+public class A047160 extends Sequence2 {
 
   private Z mN = Z.ONE;
 

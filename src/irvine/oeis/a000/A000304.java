@@ -1,13 +1,13 @@
 package irvine.oeis.a000;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A000304 a(n) = a(n-1)*a(n-2).
  * @author Sean A. Irvine
  */
-public class A000304 implements Sequence {
+public class A000304 extends Sequence2 {
 
   private Z mA = null;
   private Z mB = null;

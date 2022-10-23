@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A002679 Denominator of 2*Stirling_2(n,2)/n!.
  * @author Sean A. Irvine
  */
-public class A002679 implements Sequence {
+public class A002679 extends Sequence2 {
 
   private Z mA = Z.TWO;
   private Z mB = Z.TWO;

@@ -2,13 +2,13 @@ package irvine.oeis.a015;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A015618 Number of triples of different integers from [ 2,n ] with no global factor.
  * @author Sean A. Irvine
  */
-public class A015618 implements Sequence {
+public class A015618 extends Sequence2 {
 
   private long mN = 1;
   private Z mA = Z.ZERO;

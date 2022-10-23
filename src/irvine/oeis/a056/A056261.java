@@ -4,13 +4,13 @@ import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A056261 Series for radius of gyration for lattice animals on square lattice.
  * @author Sean A. Irvine
  */
-public class A056261 implements Sequence {
+public class A056261 extends Sequence2 {
 
   private final ParallelHunter mHunter = new ParallelHunter(7, () -> new Hunter(Lattices.Z2, true) {
     {

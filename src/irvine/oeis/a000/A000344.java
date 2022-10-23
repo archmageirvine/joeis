@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A000344 a(n) = 5*binomial(2n, n-2)/(n+3).
  * @author Sean A. Irvine
  */
-public class A000344 implements Sequence {
+public class A000344 extends Sequence2 {
 
   private int mN = 1;
 

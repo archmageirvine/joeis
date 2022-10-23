@@ -2,14 +2,14 @@ package irvine.oeis.a059;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.array.DynamicByteArray;
 
 /**
  * A059233 Number of rows in which n appears in Pascal's triangle (A007318).
  * @author Sean A. Irvine
  */
-public class A059233 implements Sequence {
+public class A059233 extends Sequence2 {
 
   // This implementation limited to numbers of 31 bits, but could easily be
   // extended if necessary

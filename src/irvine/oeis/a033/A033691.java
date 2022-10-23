@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A033691 Minimal number of vertices in 1-1 deficient regular graph where minimal degree is 1 and maximal degree is n.
  * @author Sean A. Irvine
  */
-public class A033691 implements Sequence {
+public class A033691 extends Sequence2 {
 
   private long mN = 1;
 

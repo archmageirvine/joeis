@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A245855 Number of preferential arrangements of n labeled elements such that the minimal number of elements per rank equals 2.
  * E.g.f.: 1/(2-exp(x)+x) -1/(2-exp(x)+x+x^2/2)
  * @author Georg Fischer
  */
-public class A245855 implements Sequence {
+public class A245855 extends Sequence2 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 1;

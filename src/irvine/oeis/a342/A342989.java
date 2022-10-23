@@ -32,9 +32,9 @@ public class A342989 implements Sequence {
     q.set(0, 0, x);
     for (int row = 1; row <= n; ++row) {
       for (int col = 0; col <= Math.min(row / 2, g); ++col) {
-        Polynomial<Q> t = RING.multiply(RING.multiply(q.get(row - 1, col), xp1), new Q(2 * (2 * row - 1)));
+        Polynomial<Q> t = RING.multiply(RING.multiply(q.get(row - 1, col), xp1), new Q(2 * (2L * row - 1)));
         if (col > 0 && row > 1) {
-          t = RING.add(t, RING.multiply(q.get(row - 2, col - 1), new Q(2 * row - 3).multiply(row - 1).multiply(2 * row - 1)));
+          t = RING.add(t, RING.multiply(q.get(row - 2, col - 1), new Q(2L * row - 3).multiply(row - 1).multiply(2L * row - 1)));
         }
         for (long k = 1; k < row; ++k) {
           for (long j = 0; j <= col; ++j) {

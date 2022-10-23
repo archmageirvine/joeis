@@ -1,13 +1,13 @@
 package irvine.oeis.a015;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A015975 First k&gt;n, not a power of n+1 or one of its prime factors, such that k | n^k + 1.
  * @author Sean A. Irvine
  */
-public class A015975 implements Sequence {
+public class A015975 extends Sequence2 {
 
   private Z mN = Z.ONE;
 

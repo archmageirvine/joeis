@@ -6,13 +6,13 @@ import java.util.HashSet;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A003513 Number of regular sequences of length n.
  * @author Sean A. Irvine
  */
-public class A003513 implements Sequence {
+public class A003513 extends Sequence2 {
 
   // After R. J. Mathar
 

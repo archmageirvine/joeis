@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A037092 Number of triples {i,j,k}, i&gt;1, j&gt;1, k&gt;1, such that ijk &lt; n^3.
  * @author Sean A. Irvine
  */
-public class A037092 implements Sequence {
+public class A037092 extends Sequence2 {
 
   private long mN = 1;
 

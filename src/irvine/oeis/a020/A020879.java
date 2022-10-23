@@ -3,13 +3,13 @@ package irvine.oeis.a020;
 import irvine.math.partitions.IntegerComposition;
 import irvine.math.z.Fibonacci;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A020879 Number of elementary edge-subgraphs in Moebius ladder M_n.
  * @author Sean A. Irvine
  */
-public class A020879 implements Sequence {
+public class A020879 extends Sequence2 {
 
 //  // Direct enumeration by explicit construction of elementary edge-subgraphs
 //  private int mN = 1;

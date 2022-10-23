@@ -4,13 +4,13 @@ import java.util.TreeSet;
 
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A057593 Triangle T(n, k) giving period length of the periodic sequence k^i (i &gt;= imin) mod n (n &gt;= 2, 1 &lt;= k &lt;= n-1).
  * @author Sean A. Irvine
  */
-public class A057593 implements Sequence {
+public class A057593 extends Sequence2 {
 
   private long mN = 1;
   private long mM = 0;

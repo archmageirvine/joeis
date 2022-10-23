@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A004133 Additive bases: a(n) is the least integer such that there is an n-element set of nonnegative integers, the sums of pairs (of distinct elements) of which are distinct and at most a(n).
  * @author Sean A. Irvine
  */
-public class A004133 implements Sequence {
+public class A004133 extends Sequence2 {
 
   private final boolean[] mSeen = new boolean[1000000];
   private int mN = 1;

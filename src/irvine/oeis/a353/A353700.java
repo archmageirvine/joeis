@@ -7,14 +7,14 @@ import java.util.stream.Collectors;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
  * A353700 Numerator of squared radius of smallest circle passing through exactly n integral points.
  * @author Sean A. Irvine
  */
-public class A353700 implements Sequence {
+public class A353700 extends Sequence2 {
 
   // After Sofia Lacerda
   // https://gist.github.com/SofiaSL/eca994e57e519ec16228fa754dd84fd1

@@ -2,13 +2,13 @@ package irvine.oeis.a007;
 
 import irvine.math.z.SquareFreeIterator;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A007011 a(n) = smallest pseudoprime to base 2 with n prime factors.
  * @author Sean A. Irvine
  */
-public class A007011 implements Sequence {
+public class A007011 extends Sequence2 {
 
   private int mN = 1;
 

@@ -3,12 +3,13 @@ package irvine.oeis.a289;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A289873 Related to perfect Wichmann rulers: a(n) = ( n^2 - (mod(n, 6) - 3)^2 ) / 3.
  * @author Georg Fischer
  */
-public class A289873 implements Sequence {
+public class A289873 extends Sequence2 {
 
   final Sequence mA289761 = new A289761();
   protected long mN;

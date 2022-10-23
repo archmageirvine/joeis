@@ -2,14 +2,14 @@ package irvine.oeis.a060;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.RuntimeUtils;
 
 /**
  * A060382 In base n, a(n) is the smallest number m that leads to a palindrome-free sequence, using the following process: start with m; reverse the digits and add it to m, repeat. Stop if you reach a palindrome.
  * @author Sean A. Irvine
  */
-public class A060382 implements Sequence {
+public class A060382 extends Sequence2 {
 
   // Heuristic
   private static final long SEARCH_LIMIT = RuntimeUtils.isTest() ? 500 : Long.parseLong(System.getProperty("oeis.heuristic-limit", "5000"));

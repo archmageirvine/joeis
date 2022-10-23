@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A050500 Integer part of n/log(n).
  * @author Sean A. Irvine
  */
-public class A050500 implements Sequence {
+public class A050500 extends Sequence2 {
 
   private long mN = 1;
 

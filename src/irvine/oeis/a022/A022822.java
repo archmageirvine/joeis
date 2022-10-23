@@ -1,13 +1,13 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A022822 a(n) = [ (n+2)/(n-1) ] + [ (n+4)/(n-2) ] + ... + [ (3n-2)/1 ].
  * @author Sean A. Irvine
  */
-public class A022822 implements Sequence {
+public class A022822 extends Sequence2 {
 
   private long mN = 1;
 

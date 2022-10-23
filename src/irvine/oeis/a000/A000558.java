@@ -2,13 +2,13 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A000558 Generalized Stirling numbers of second kind.
  * @author Sean A. Irvine
  */
-public class A000558 implements Sequence {
+public class A000558 extends Sequence2 {
 
   private int mN = 1;
 

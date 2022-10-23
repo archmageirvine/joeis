@@ -7,13 +7,13 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A006344 Number of rooted maps with n edges on Klein bottle.
  * @author Sean A. Irvine
  */
-public class A006344 implements Sequence {
+public class A006344 extends Sequence2 {
 
   private static final PolynomialRingField<CR> RING = new PolynomialRingField<>(ComputableReals.SINGLETON);
   private static final CR TWELVE = CR.valueOf(12);

@@ -2,13 +2,13 @@ package irvine.oeis.a051;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A051034 Minimal number of primes needed to sum to n.
  * @author Sean A. Irvine
  */
-public class A051034 implements Sequence {
+public class A051034 extends Sequence2 {
 
   // Assuming Goldbach Conjecture
 

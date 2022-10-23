@@ -1,13 +1,13 @@
 package irvine.oeis.a057;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A057572 Number of unlabeled Hugenholz diagrams with n nodes.
  * @author Sean A. Irvine
  */
-public class A057572 implements Sequence {
+public class A057572 extends Sequence2 {
 
   // After Paul Stevenson
 

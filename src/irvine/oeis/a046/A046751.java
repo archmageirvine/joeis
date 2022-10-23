@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.graph.GraphUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A046751 Triangle read by rows of number of connected graphs with n nodes and k edges (n &gt;= 2, 1 &lt;= k &lt;= n(n-1)/2).
  * @author Sean A. Irvine
  */
-public class A046751 implements Sequence {
+public class A046751 extends Sequence2 {
 
   private int mVertices = 1;
   private int mEdges = 0;

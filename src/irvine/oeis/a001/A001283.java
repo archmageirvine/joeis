@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A001283 Triangle read by rows, in which row n consists of n(n+m) for m = 1 .. n-1.
  * @author Sean A. Irvine
  */
-public class A001283 implements Sequence {
+public class A001283 extends Sequence2 {
 
   private long mN = 1;
   private long mP = 0;

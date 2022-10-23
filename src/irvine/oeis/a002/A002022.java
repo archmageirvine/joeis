@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A002022 Pile of coconuts problem.
  * @author Sean A. Irvine
  */
-public class A002022 implements Sequence {
+public class A002022 extends Sequence2 {
 
   private int mN = 1;
 

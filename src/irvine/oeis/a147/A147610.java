@@ -3,13 +3,14 @@ package irvine.oeis.a147;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a048.A048881;
 
 /**
  * A147610 a(n) = 3^(wt(n-1)-1), where wt() = A000120().
  * @author Georg Fischer
  */
-public class A147610 implements Sequence {
+public class A147610 extends Sequence2 {
 
   final Sequence mA048881 = new A048881();
   @Override

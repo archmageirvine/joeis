@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A034711 Largest number whose base n representation does not repeat a pair of consecutive digits.
  * @author Sean A. Irvine
  */
-public class A034711 implements Sequence {
+public class A034711 extends Sequence2 {
 
   private int mN = 1;
 

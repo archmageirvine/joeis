@@ -5,13 +5,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A035136 Decimal part of a(n)^(1/n) starts with a 'nine digits' anagram.
  * @author Sean A. Irvine
  */
-public class A035136 implements Sequence {
+public class A035136 extends Sequence2 {
 
   private static final CR C = CR.valueOf(1000000000);
   private long mN = 1;

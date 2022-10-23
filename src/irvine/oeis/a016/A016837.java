@@ -3,13 +3,13 @@ package irvine.oeis.a016;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A016837 Primes reached after k iterations of sum of n and its prime divisors = t (where t replaces n in each iteration).
  * @author Sean A. Irvine
  */
-public class A016837 implements Sequence {
+public class A016837 extends Sequence2 {
 
   private Z mN = Z.ONE;
 

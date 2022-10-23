@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A024836 a(n) = least m such that if r and s in {1/1, 1/4, 1/7, ..., 1/(3n-2)} satisfy r &lt; s, then r &lt; k/m &lt; (k+1)/m &lt; s for some integer k.
  * @author Sean A. Irvine
  */
-public class A024836 implements Sequence {
+public class A024836 extends Sequence2 {
 
   private long mN = 1;
   private long mM = 1;

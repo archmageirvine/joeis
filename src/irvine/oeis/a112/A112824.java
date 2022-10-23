@@ -3,13 +3,14 @@ package irvine.oeis.a112;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a020.A020481;
 
 /**
  * A112824 Consider the Goldbach conjecture that every even number 2n=p+p' with p&lt;=p'. Consider all such Goldbach partitions; a(n) is the difference between the largest p and the smallest p. Call this difference the Goldbach gap.
  * @author Georg Fischer
  */
-public class A112824 implements Sequence {
+public class A112824 extends Sequence2 {
 
   final Sequence mA020481 = new A020481();
   final Sequence mA112823 = new A112823();

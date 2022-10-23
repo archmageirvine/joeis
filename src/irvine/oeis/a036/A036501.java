@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A036501 Number of inequivalent Golomb rulers with n marks and shortest length.
  * @author Sean A. Irvine
  */
-public class A036501 implements Sequence {
+public class A036501 extends Sequence2 {
 
   // Cf. A003022
   // This implementation is simple search and will not compute many terms in a reasonable time

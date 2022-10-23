@@ -2,13 +2,13 @@ package irvine.oeis.a104;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A104712 Pascal's triangle, with the first two columns removed.
  * @author Sean A. Irvine
  */
-public class A104712 implements Sequence {
+public class A104712 extends Sequence2 {
 
   private long mN = 1;
   private long mM = 1;

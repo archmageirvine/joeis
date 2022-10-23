@@ -2,13 +2,13 @@ package irvine.oeis.a004;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A004649 Prime(n) mod (n-1).
  * @author Sean A. Irvine
  */
-public class A004649 implements Sequence {
+public class A004649 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

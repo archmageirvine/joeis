@@ -2,13 +2,13 @@ package irvine.oeis.a055;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A055085 Smallest integer containing all digits in all bases from 2 to n.
  * @author Sean A. Irvine
  */
-public class A055085 implements Sequence {
+public class A055085 extends Sequence2 {
 
   private int mN = 1;
 

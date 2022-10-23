@@ -1,13 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A027996 a(n)=Sum{T(n,k)*T(n,k+2)}, 0&lt;=k&lt;=2n-2, T given by A027926.
  * @author Sean A. Irvine
  */
-public class A027996 implements Sequence {
+public class A027996 extends Sequence2 {
 
   private long mN = 1;
 

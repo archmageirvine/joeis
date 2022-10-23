@@ -7,13 +7,13 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A059682 Triangle T(n,k) giving number of 2 X k polyominoes with n cells (n &gt;= 2, 1&lt;=k&lt;=n-1).
  * @author Sean A. Irvine
  */
-public class A059682 implements Sequence {
+public class A059682 extends Sequence2 {
 
   private static final PolynomialRingField<Z> INNER = new PolynomialRingField<>("y", IntegerField.SINGLETON);
   private static final PolynomialRingField<Polynomial<Z>> RING = new PolynomialRingField<>(INNER);

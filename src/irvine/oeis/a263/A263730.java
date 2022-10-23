@@ -3,13 +3,14 @@ package irvine.oeis.a263;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a027.A027750;
 
 /**
  * A263730 Irregular triangle read by rows in which row n &gt; 1 lists k such that (k^2 + k*n)/(k + 1) is an integer.
  * @author Georg Fischer
  */
-public class A263730 implements Sequence {
+public class A263730 extends Sequence2 {
 
   final Sequence mA027750 = new A027750();
   @Override

@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A001767 Genus of modular group Gamma(n) = genus of modular curve Chi(n).
  * @author Sean A. Irvine
  */
-public class A001767 implements Sequence {
+public class A001767 extends Sequence2 {
 
   private long mN = 1;
 

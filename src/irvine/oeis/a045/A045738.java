@@ -2,13 +2,13 @@ package irvine.oeis.a045;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A045738 Number of branches in all noncrossing rooted trees on n nodes on a circle.
  * @author Sean A. Irvine
  */
-public class A045738 implements Sequence {
+public class A045738 extends Sequence2 {
 
   private long mN = 1;
 

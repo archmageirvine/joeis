@@ -3,13 +3,14 @@ package irvine.oeis.a249;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a005.A005420;
 import irvine.oeis.a049.A049479;
 /**
  * A249780 Product of lowest and highest prime factors of 2^n-1.
  * @author Georg Fischer
  */
-public class A249780 implements Sequence {
+public class A249780 extends Sequence2 {
 
   private final Sequence mA005420 = new A005420();
   private final Sequence mA049479 = new A049479();

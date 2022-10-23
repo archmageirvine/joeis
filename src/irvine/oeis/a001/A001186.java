@@ -4,13 +4,13 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A001186 Number of cubic Hamiltonian graphs with 2n nodes.
  * @author Sean A. Irvine
  */
-public class A001186 implements Sequence, GraphProcessor {
+public class A001186 extends Sequence2 implements GraphProcessor {
 
   private int mN = 2;
   private long mCount = 0;

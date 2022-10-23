@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A006582 a(n) = Sum_{k=1..n-1} k XOR n-k.
  * @author Sean A. Irvine
  */
-public class A006582 implements Sequence {
+public class A006582 extends Sequence2 {
 
   private long mN = 1;
 

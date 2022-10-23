@@ -4,13 +4,13 @@ import irvine.math.lattice.Canons;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A057753 Total area of all polyominoes with perimeter 2n.
  * @author Sean A. Irvine
  */
-public class A057753 implements Sequence {
+public class A057753 extends Sequence2 {
 
   private final long[] mPerimeterCounts = new long[1000];
   private int mLeastChange = 0;

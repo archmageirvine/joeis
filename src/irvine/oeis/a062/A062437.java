@@ -3,13 +3,13 @@ package irvine.oeis.a062;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A062437 Integer part of log(n^n)^log(log(1 + n)).
  * @author Georg Fischer
  */
-public class A062437 implements Sequence {
+public class A062437 extends Sequence2 {
 
   private int mN = 1;
 

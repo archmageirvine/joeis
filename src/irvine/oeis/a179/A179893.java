@@ -3,13 +3,14 @@ package irvine.oeis.a179;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a005.A005097;
 
 /**
  * A179893 a(n) = 3/2 * (prime(n)-1).
  * @author Georg Fischer
  */
-public class A179893 implements Sequence {
+public class A179893 extends Sequence2 {
 
   final Sequence mA005097 = new A005097();
   @Override

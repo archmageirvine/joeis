@@ -2,13 +2,13 @@ package irvine.oeis.a001;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A001917 (p-1)/x, where p = prime(n) and x = ord(2,p), the smallest positive integer such that 2^x == 1 mod p.
  * @author Sean A. Irvine
  */
-public class A001917 implements Sequence {
+public class A001917 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

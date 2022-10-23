@@ -5,14 +5,14 @@ import java.util.HashMap;
 import java.util.List;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.Point;
 
 /**
  * A033961 Number of different sets ("cut sets") of triangles a regular (n+2)-gon can be dissected into; two triangulations of an (n+2)-gon are equal if all numbers of congruent triangles coincide.
  * @author Sean A. Irvine
  */
-public class A033961 implements Sequence {
+public class A033961 extends Sequence2 {
 
   // See Iuliana Dochkova-Todorova, "Computer Methods and New Values for Cut Set Catalan Numbers"
 

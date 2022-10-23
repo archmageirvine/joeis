@@ -1,13 +1,13 @@
 package irvine.oeis.a071;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A071111 a(n) is the least integer x such that there exists an integer in the open interval (x/(i+1), x/i) for i= n-1, n-2 ..., 3, 2, 1.
  * @author Sean A. Irvine
  */
-public class A071111 implements Sequence {
+public class A071111 extends Sequence2 {
 
   private long mN = 1;
   private long mM = 1;

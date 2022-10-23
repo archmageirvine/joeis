@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A004132 Modular postage stamp problem.
  * @author Sean A. Irvine
  */
-public class A004132 implements Sequence {
+public class A004132 extends Sequence2 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final int[] mSeen = new int[1000000];

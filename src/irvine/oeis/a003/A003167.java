@@ -5,13 +5,13 @@ import java.util.Map;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A003167 Number of n-dimensional cuboids with integral edge lengths for which volume = surface area.
  * @author Sean A. Irvine
  */
-public class A003167 implements Sequence {
+public class A003167 extends Sequence2 {
 
   // Takes about 10 minutes to compute through to a(6)
 

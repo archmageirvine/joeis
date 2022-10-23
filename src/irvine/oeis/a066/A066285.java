@@ -3,13 +3,14 @@ package irvine.oeis.a066;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a047.A047160;
 
 /**
  * A066285 a(n) is the minimal difference between primes p and q whose sum is 2n.
  * @author Georg Fischer
  */
-public class A066285 implements Sequence {
+public class A066285 extends Sequence2 {
 
   final Sequence mA047160 = new A047160();
   @Override

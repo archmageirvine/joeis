@@ -1,13 +1,13 @@
 package irvine.oeis.a006;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A006680 Number of binary phylogenetic trees with n labels.
  * @author Sean A. Irvine
  */
-public class A006680 implements Sequence {
+public class A006680 extends Sequence2 {
 
   private int mN = 1;
   private Z mA = Z.ONE;

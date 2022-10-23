@@ -3,14 +3,14 @@ package irvine.oeis.a057;
 import java.util.HashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A057607 Triangle T(n,k) = number of binary n-tuples u having exactly k grandchildren, where a grandchild is a vector obtained by deleting any two coordinates of u (n &gt;= 2, 0&lt;=k&lt;=2^(n-2)).
  * @author Sean A. Irvine
  */
-public class A057607 implements Sequence {
+public class A057607 extends Sequence2 {
 
   private int mN = 1;
   private long mM = 1;

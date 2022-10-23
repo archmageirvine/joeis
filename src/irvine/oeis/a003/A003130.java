@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A003130 Impedances of an n-terminal network.
  * @author Sean A. Irvine
  */
-public class A003130 implements Sequence {
+public class A003130 extends Sequence2 {
 
   private final A003128 mD = new A003128();
   {

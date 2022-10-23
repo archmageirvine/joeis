@@ -3,12 +3,13 @@ package irvine.oeis.a317;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a003.A003010;
 /**
  * A317977 a(n) = A003010(n-2) mod (2^n - 1).
  * @author Georg Fischer
  */
-public class A317977 implements Sequence {
+public class A317977 extends Sequence2 {
 
   private final Sequence mA003010 = new A003010();
   protected long mN;

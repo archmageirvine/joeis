@@ -1,13 +1,13 @@
 package irvine.oeis.a058;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A058298 Triangle n!/(n-k), 1 &lt;= k &lt; n, read by rows.
  * @author Sean A. Irvine
  */
-public class A058298 implements Sequence {
+public class A058298 extends Sequence2 {
 
   private Z mF = Z.ONE;
   private long mN = 1;

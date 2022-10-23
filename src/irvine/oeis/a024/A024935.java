@@ -2,13 +2,13 @@ package irvine.oeis.a024;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A024935 a(n) = minimal length of any partition of n into distinct primes.
  * @author Sean A. Irvine
  */
-public class A024935 implements Sequence {
+public class A024935 extends Sequence2 {
 
   // Assuming various Goldbach conjectures, a(n) <= 3.
   // In particular,

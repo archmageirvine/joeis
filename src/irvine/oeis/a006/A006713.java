@@ -7,13 +7,13 @@ import irvine.graph.EdgeColouring;
 import irvine.graph.Graph;
 import irvine.graph.VertexLabeling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A006713 Number of 3-edge-colored connected trivalent graphs with 2n labeled nodes.
  * @author Sean A. Irvine
  */
-public class A006713 implements Sequence {
+public class A006713 extends Sequence2 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final CubicGenerator mCubicGraphs = new CubicGenerator(this instanceof A006712);

@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Euler;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A046650 Number of rooted planar maps.
  * @author Sean A. Irvine
  */
-public class A046650 implements Sequence {
+public class A046650 extends Sequence2 {
 
   // After R. J. Mathar
 

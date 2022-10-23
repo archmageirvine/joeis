@@ -2,13 +2,13 @@ package irvine.oeis.a059;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A059955 a(n) = floor( prime(n)!/lcm(1..prime(n)) ) modulo prime(n).
  * @author Sean A. Irvine
  */
-public class A059955 implements Sequence {
+public class A059955 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private long mP = 2;

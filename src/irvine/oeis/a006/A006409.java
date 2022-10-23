@@ -2,13 +2,13 @@ package irvine.oeis.a006;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A006409 Number of nonseparable rooted toroidal maps with n + 4 edges and n + 1 vertices.
  * @author Sean A. Irvine
  */
-public class A006409 implements Sequence {
+public class A006409 extends Sequence2 {
 
   private long mN = -1;
 

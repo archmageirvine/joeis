@@ -1,13 +1,13 @@
 package irvine.oeis.a007;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A007988 Expansion of (x^6-x^5-x^4+2x^2)/((1-x^3)(1-x^2)^2(1-x)).
  * @author Sean A. Irvine
  */
-public class A007988 implements Sequence {
+public class A007988 extends Sequence2 {
 
   private static final Z Z27 = Z.valueOf(27);
   private int mN = 1;

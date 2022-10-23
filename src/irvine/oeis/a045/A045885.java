@@ -4,13 +4,13 @@ import irvine.factor.factor.Jaguar;
 import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A045885 Largest number m such that in base n, the sum of digits in the divisors of m is m (written in base 10).
  * @author Sean A. Irvine
  */
-public class A045885 implements Sequence {
+public class A045885 extends Sequence2 {
 
   // After Eric M. Schmidt
 

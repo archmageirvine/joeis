@@ -2,13 +2,13 @@ package irvine.oeis.a036;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A036465 If n^2 = Sum_{i} b(i)^2 for positive integers b(i) &lt; n, then a(n) is the maximum value of min(b(i)).
  * @author Sean A. Irvine
  */
-public class A036465 implements Sequence {
+public class A036465 extends Sequence2 {
 
   private int mN = 1;
   private int mLowerBound = 0;

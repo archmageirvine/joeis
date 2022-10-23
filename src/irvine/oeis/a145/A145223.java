@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A145223 a(n) is the number of odd permutations (of an n-set) with exactly 2 fixed points.
  * E.g.f.: ((x^4)*exp(-x))/(4*(1-x))
  * @author Georg Fischer
  */
-public class A145223 implements Sequence {
+public class A145223 extends Sequence2 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 1;

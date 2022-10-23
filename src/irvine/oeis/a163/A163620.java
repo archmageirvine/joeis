@@ -3,13 +3,13 @@ package irvine.oeis.a163;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A163620 Let q(p) be the smallest prime greater than the prime p. a(n) is the smallest integer &gt; n that is divisible by each q(p) for all primes p dividing n.
  * @author Sean A. Irvine
  */
-public class A163620 implements Sequence {
+public class A163620 extends Sequence2 {
 
   private long mN = 2;
   private final Fast mPrime = new Fast();

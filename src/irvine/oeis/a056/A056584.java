@@ -2,13 +2,13 @@ package irvine.oeis.a056;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A056584 Solution to (n^2/a(n))^a(n) = gcd(n^n, Product_{k&lt;n} k^k) where a(n) and n^2/a(n) are integers, or 0 if no such integers exist.
  * @author Sean A. Irvine
  */
-public class A056584 implements Sequence {
+public class A056584 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private int mN = 1;

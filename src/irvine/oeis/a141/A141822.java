@@ -5,13 +5,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A141822 Maximum term in the continued fraction of A141821(n)/n.
  * @author Sean A. Irvine
  */
-public class A141822 implements Sequence {
+public class A141822 extends Sequence2 {
 
   private long mN = 1;
 

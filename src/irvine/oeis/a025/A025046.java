@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A025046 a(n) = the least odd prime p such that there are exactly n consecutive quadratic remainders modulo p.
  * @author Sean A. Irvine
  */
-public class A025046 implements Sequence {
+public class A025046 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private int mN = 1;

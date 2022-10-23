@@ -2,13 +2,13 @@ package irvine.oeis.a002;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A002678 Numerators of the Taylor coefficients of (e^x-1)^2.
  * @author Sean A. Irvine
  */
-public class A002678 implements Sequence {
+public class A002678 extends Sequence2 {
 
   private Z mA = Z.TWO;
   private Z mB = Z.TWO;

@@ -3,13 +3,13 @@ package irvine.oeis.a014;
 import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersModMul;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A014664 Order of 2 modulo the n-th prime.
  * @author Sean A. Irvine
  */
-public class A014664 implements Sequence {
+public class A014664 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private Z mP = Z.TWO;

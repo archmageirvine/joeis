@@ -4,13 +4,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A004131 Modular postage stamp problem: largest m such that there exists an n-subset S of nonnegative integers such that 0,...,m-1 can be expressed as a mod-m sum of two distinct elements of S.
  * @author Sean A. Irvine
  */
-public class A004131 implements Sequence {
+public class A004131 extends Sequence2 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final int[] mSeen = new int[1000000];

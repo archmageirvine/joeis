@@ -7,13 +7,13 @@ import irvine.math.expression.LiteralZ;
 import irvine.math.expression.Sircon;
 import irvine.math.expression.Sum;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A005269 a(n) = number of length-n sequences s with s[1]=1, s[2]=1, s[k-1] &lt;=s[k] &lt;= s[k-2]+s[k-1] (s is called a sub-Fibonacci sequence of length n).
  * @author Sean A. Irvine
  */
-public class A005269 implements Sequence {
+public class A005269 extends Sequence2 {
 
   private static final Expression ONE = Sircon.parse("1");
   private static final Identifier X = new Identifier("x");

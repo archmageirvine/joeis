@@ -3,13 +3,14 @@ package irvine.oeis.a180;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a053.A053001;
 
 /**
  * A180724 a(n) = n^2 + largest prime &lt; n^2.
  * @author Georg Fischer
  */
-public class A180724 implements Sequence {
+public class A180724 extends Sequence2 {
 
   final Sequence mA053001 = new A053001();
   protected long mN;

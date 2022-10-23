@@ -2,13 +2,13 @@ package irvine.oeis.a037;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A037018 Conjecturally, largest k with no prime in [ k, k(1+1/n) ].
  * @author Sean A. Irvine
  */
-public class A037018 implements Sequence {
+public class A037018 extends Sequence2 {
 
   // Possibly this heuristic should scale with mN
   private static final long HEURISTIC = 1000;

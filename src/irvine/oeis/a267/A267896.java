@@ -3,6 +3,7 @@ package irvine.oeis.a267;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.oeis.a024.A024675;
 import irvine.oeis.a028.A028334;
 
@@ -10,7 +11,7 @@ import irvine.oeis.a028.A028334;
  * A267896 a(n) = (Prime(n+1)^2 - Prime(n)^2) / 8.
  * @author Georg Fischer
  */
-public class A267896 implements Sequence {
+public class A267896 extends Sequence2 {
 
   final Sequence mA024675 = new A024675();
   final Sequence mA028334 = new A028334();

@@ -1,13 +1,13 @@
 package irvine.oeis.a001;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A001446 a(n) = (4^n + 4^[ n/2 ] )/2.
  * @author Sean A. Irvine
  */
-public class A001446 implements Sequence {
+public class A001446 extends Sequence2 {
 
   private int mN = 1;
 

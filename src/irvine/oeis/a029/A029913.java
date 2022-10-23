@@ -3,13 +3,13 @@ package irvine.oeis.a029;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A029913 Start with n; if prime, stop; repeatedly sum squares of prime factors (counted with multiplicity), until reach 16 or a prime; set a(n) = 0 if no limit exists.
  * @author Sean A. Irvine
  */
-public class A029913 implements Sequence {
+public class A029913 extends Sequence2 {
 
   private static final Z SIXTEEN = Z.valueOf(16);
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));

@@ -1,13 +1,13 @@
 package irvine.oeis.a054;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A054028 a(n) = first k such that 2^k &gt;= k^n, (for n &gt;= 2, k &gt;= 2).
  * @author Sean A. Irvine
  */
-public class A054028 implements Sequence {
+public class A054028 extends Sequence2 {
 
   private int mN = 1;
   private int mK = 1;

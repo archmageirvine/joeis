@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A003516 Binomial coefficients C(2n+1, n-2).
  * @author Sean A. Irvine
  */
-public class A003516 implements Sequence {
+public class A003516 extends Sequence2 {
 
   private Z mA = Z.ONE;
   protected long mN = 1;

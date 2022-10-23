@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A005619 Number of Boolean functions realized by n-input cascades.
  * @author Sean A. Irvine
  */
-public class A005619 implements Sequence {
+public class A005619 extends Sequence2 {
 
   private static final CR SQRT11 = CR.valueOf(11).sqrt();
   private static final CR T1 = SQRT11.multiply(363);

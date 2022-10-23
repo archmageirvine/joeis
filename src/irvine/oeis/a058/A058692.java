@@ -5,14 +5,14 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A058692 a(n) = B(n) - 1, where B(n) = Bell numbers, A000110.
  * E.g.f.: exp(exp(x) - 1) - exp(x)
  * @author Georg Fischer
  */
-public class A058692 implements Sequence {
+public class A058692 extends Sequence2 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = 1;

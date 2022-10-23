@@ -5,13 +5,13 @@ import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A001667 2n-step polygons on b.c.c. lattice.
  * @author Sean A. Irvine
  */
-public class A001667 implements Sequence {
+public class A001667 extends Sequence2 {
 
   private int mN = 2;
   private final long mC = Lattices.BCC.neighbour(Lattices.BCC.origin(), 0);

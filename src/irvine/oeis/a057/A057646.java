@@ -5,13 +5,13 @@ import java.util.Iterator;
 import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A057646 a(n) is the number of trinomials x^n + x^k + 1 that are irreducible over GF(2) for some k with n &gt; k &gt; 0.
  * @author Sean A. Irvine
  */
-public class A057646 implements Sequence {
+public class A057646 extends Sequence2 {
 
   private final Iterator<Polynomial<Z>> mPolynomialIterator = IrreduciblePolynomials.iterator();
   private Polynomial<Z> mP = mPolynomialIterator.next();

@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
  * A036445 Maximum size of smallest square when a square of side n is tiled with integer-sided squares.
  * @author Sean A. Irvine
  */
-public class A036445 implements Sequence {
+public class A036445 extends Sequence2 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 1;

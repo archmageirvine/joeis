@@ -3,13 +3,13 @@ package irvine.oeis.a000;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A000409 Singular n X n (0,1)-matrices: the number of n X n (0,1)-matrices having distinct, nonzero ordered rows, but having at least two equal columns or at least one zero column.
  * @author Sean A. Irvine
  */
-public class A000409 implements Sequence {
+public class A000409 extends Sequence2 {
 
   private int mN = 1;
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;

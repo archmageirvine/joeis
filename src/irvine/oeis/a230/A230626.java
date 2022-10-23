@@ -2,13 +2,13 @@ package irvine.oeis.a230;
 
 import irvine.math.z.Z;
 import irvine.oeis.AlonsoSequence;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A230626 Iterate the map x -&gt; A230625(x) starting at n; sequence gives number of steps to reach a prime, or -1 if no prime is ever reached.
  * @author Sean A. Irvine
  */
-public class A230626 implements Sequence {
+public class A230626 extends Sequence2 {
 
   private long mN = 1;
 

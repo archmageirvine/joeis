@@ -4,13 +4,13 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A001258 Number of labeled n-node trees with unlabeled end-points.
  * @author Sean A. Irvine
  */
-public class A001258 implements Sequence {
+public class A001258 extends Sequence2 {
 
   private final MemoryFactorial mFactorial = MemoryFactorial.SINGLETON;
   private int mN = 1;

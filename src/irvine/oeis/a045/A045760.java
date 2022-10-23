@@ -1,13 +1,13 @@
 package irvine.oeis.a045;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A045760 Smallest Maris-McGwire k-tuple (k&gt;1) for each k: f(n) = f(n+1) = ... = f(n+k-1), where f is defined in comments.
  * @author Sean A. Irvine
  */
-public class A045760 implements Sequence {
+public class A045760 extends Sequence2 {
 
   private long mN = 1;
 

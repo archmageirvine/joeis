@@ -3,13 +3,13 @@ package irvine.oeis.a290;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A290988 The arithmetic function v+-(n,3).
  * @author Georg Fischer
  */
-public class A290988 implements Sequence {
+public class A290988 extends Sequence2 {
 
   protected long mN;
   protected long mH2;

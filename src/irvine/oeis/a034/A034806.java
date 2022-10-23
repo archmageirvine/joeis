@@ -1,13 +1,13 @@
 package irvine.oeis.a034;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A034806 Number of distinct sets of 2 numbers &gt; 1 such that their product is between n^2 and (n+1)^2.
  * @author Sean A. Irvine
  */
-public class A034806 implements Sequence {
+public class A034806 extends Sequence2 {
 
   private long mN = 1;
 

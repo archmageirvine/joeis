@@ -2,13 +2,13 @@ package irvine.oeis.a050;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A050206 Triangle read by rows: smallest denominator of the expansion of k/n using the greedy algorithm, 1&lt;=k&lt;=n-1.
  * @author Sean A. Irvine
  */
-public class A050206 implements Sequence {
+public class A050206 extends Sequence2 {
 
   private long mN = 1;
   private long mM = 1;

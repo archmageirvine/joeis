@@ -2,13 +2,13 @@ package irvine.oeis.a058;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A058202 Triangle in which n-th row gives the numbers which when subtracted from 2^n produce primes.
  * @author Sean A. Irvine
  */
-public class A058202 implements Sequence {
+public class A058202 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private Z mN = Z.TWO;

@@ -2,13 +2,13 @@ package irvine.oeis.a025;
 
 import irvine.math.cr.CR;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A025219 a(n) = [ 2nd elementary symmetric function of {sqrt(k+1)} ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
-public class A025219 implements Sequence {
+public class A025219 extends Sequence2 {
 
   private long mN = 2;
   private CR mSum = CR.ZERO;

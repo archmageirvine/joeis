@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A046647 Number of certain rooted planar maps.
  * @author Sean A. Irvine
  */
-public class A046647 implements Sequence {
+public class A046647 extends Sequence2 {
 
   private final MemoryFactorial mF = MemoryFactorial.SINGLETON;
   private int mN = 1;

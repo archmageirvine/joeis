@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A033933 Least nonnegative m such that n! - m is prime.
  * @author Sean A. Irvine
  */
-public class A033933 implements Sequence {
+public class A033933 extends Sequence2 {
 
   private Z mF = Z.ONE;
   private long mN = 1;

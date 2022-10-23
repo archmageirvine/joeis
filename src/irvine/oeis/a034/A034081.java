@@ -4,13 +4,13 @@ import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A034081 Decimal part of n-th root of a(n) starts with digit 4.
  * @author Sean A. Irvine
  */
-public class A034081 implements Sequence {
+public class A034081 extends Sequence2 {
 
   private long mN = 1;
 

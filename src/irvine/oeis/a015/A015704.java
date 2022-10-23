@@ -3,14 +3,14 @@ package irvine.oeis.a015;
 import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A015704 a(n) is the smallest number m such that phi(m) + sigma(m) = n*m.
  * @author Sean A. Irvine
  */
-public class A015704 implements Sequence {
+public class A015704 extends Sequence2 {
 
   private final LongDynamicLongArray mSigma = new LongDynamicLongArray();
   private final LongDynamicLongArray mPhi = new LongDynamicLongArray();

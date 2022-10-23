@@ -10,14 +10,14 @@ import irvine.math.IntegerUtils;
 import irvine.math.api.Group;
 import irvine.math.group.GroupFactory;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 import irvine.util.string.StringUtils;
 
 /**
  * A060020 Maximal size of a nonspanning subset of any Abelian group of order n.
  * @author Sean A. Irvine
  */
-public class A060020 implements Sequence {
+public class A060020 extends Sequence2 {
 
   protected final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   protected final Fast mPrime = new Fast();

@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A000106 2nd power of rooted tree enumerator; number of linear forests of 2 rooted trees.
  * @author Sean A. Irvine
  */
-public class A000106 implements Sequence {
+public class A000106 extends Sequence2 {
 
   private final ArrayList<Z> mA81 = new ArrayList<>();
   private final Sequence mSeq = new A000081();

@@ -2,13 +2,13 @@ package irvine.oeis.a046;
 
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A046736 Number of ways to place non-intersecting diagonals in convex n-gon so as to create no triangles.
  * @author Sean A. Irvine
  */
-public class A046736 implements Sequence {
+public class A046736 extends Sequence2 {
 
   private long mN = 1;
 

@@ -1,13 +1,13 @@
 package irvine.oeis.a004;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A004209 For m=2,3,..., write m in bases m,m-1,...,3,2.
  * @author Sean A. Irvine
  */
-public class A004209 implements Sequence {
+public class A004209 extends Sequence2 {
 
   private int mN = 1;
   private int mBase = 0;

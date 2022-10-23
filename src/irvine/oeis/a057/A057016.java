@@ -2,13 +2,13 @@ package irvine.oeis.a057;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A057016 Consider recurrence b(0) = (2n+1)/2, b(n) = b(n-1)*floor(b(n-1)); sequence gives first integer reached.
  * @author Sean A. Irvine
  */
-public class A057016 implements Sequence {
+public class A057016 extends Sequence2 {
 
   private long mN = 1;
 

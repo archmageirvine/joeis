@@ -2,13 +2,13 @@ package irvine.oeis.a026;
 
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A026238 a(n) = j if n is the j-th prime, else a(n) = k if n is the k-th composite.
  * @author Sean A. Irvine
  */
-public class A026238 implements Sequence {
+public class A026238 extends Sequence2 {
 
   private final Fast mPrime = new Fast();
   private long mP = 2;

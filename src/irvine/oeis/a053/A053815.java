@@ -2,13 +2,13 @@ package irvine.oeis.a053;
 
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A053815 Floor(n / (sum of proper divisors of n)).
  * @author Sean A. Irvine
  */
-public class A053815 implements Sequence {
+public class A053815 extends Sequence2 {
 
   private Z mN = Z.ONE;
 

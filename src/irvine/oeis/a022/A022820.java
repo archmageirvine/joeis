@@ -1,13 +1,13 @@
 package irvine.oeis.a022;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.Sequence2;
 
 /**
  * A022820 [ n/1 ] - [ (n-1)/2 ] + [ (n-2)/3 ] - ... + ((-1)^n)[ 2/(n-1) ].
  * @author Sean A. Irvine
  */
-public class A022820 implements Sequence {
+public class A022820 extends Sequence2 {
 
   private long mN = 1;
 

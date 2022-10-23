@@ -12,6 +12,6 @@ public class A058398 extends Transpose {
 
   /** Construct the sequence. */
   public A058398() {
-    super(new A008284());
+    super(1, new A008284());
   }
 }

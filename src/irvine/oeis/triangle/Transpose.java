@@ -1,6 +1,7 @@
 package irvine.oeis.triangle;
 
 import irvine.math.z.Z;
+import irvine.oeis.AbstractSequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -9,7 +10,7 @@ import irvine.oeis.Sequence;
  * but it does not need to extend {@link Triangle}.
  * @author Georg Fischer
  */
-public class Transpose implements Sequence {
+public class Transpose extends AbstractSequence {
 
   protected Sequence mSeq; // source sequences (with "tabl" structure)
   protected int mRow; // current row index n
@@ -20,12 +21,21 @@ public class Transpose implements Sequence {
    * Constructor with a Sequence.
    * @param seq sequence for source triangle
    */
-  public Transpose(final Sequence seq) {
+  public Transpose(final int offset, final Sequence seq) {
+    super(offset);
     mSeq = seq;
     mRow = -1;
     mCol = 0; // start with first element T(0,0)
   }
-  
+
+  /**
+   * Constructor with a Sequence.
+   * @param seq sequence for source triangle
+   */
+  public Transpose(final Sequence seq) {
+    this(0, seq);
+  }
+
   /**
    * Increases <code>mRow</code> and reads the reverse of the next row from the source triangle into <code>mLastRow</code>
    */

@@ -6,7 +6,7 @@ package irvine.oeis;
  */
 public abstract class AbstractSequence implements SequenceWithOffset {
 
-  private final int mOffset;
+  private int mOffset;
 
   protected AbstractSequence(final int offset) {
     mOffset = offset;
@@ -15,5 +15,13 @@ public abstract class AbstractSequence implements SequenceWithOffset {
   @Override
   public int getOffset() {
     return mOffset;
+  }
+
+  /**
+   * Set the offset associated with this sequence.
+   * @param offset the offset
+   */
+  public void setOffset(final int offset) {
+    mOffset = offset;
   }
 }

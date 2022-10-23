@@ -12,6 +12,7 @@ public class A037154 extends A000142 {
 
   private final Fast mPrime = new Fast();
   {
+    setOffset(3);
     super.next(); // skip 0!
     super.next(); // skip 1!
     super.next(); // skip 2!

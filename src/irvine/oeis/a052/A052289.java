@@ -11,6 +11,9 @@ import irvine.util.string.StringUtils;
 public class A052289 extends A000142 {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  {
+    setOffset(1);
+  }
 
   @Override
   public Z next() {

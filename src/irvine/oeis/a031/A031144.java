@@ -10,6 +10,9 @@ import irvine.oeis.a000.A000142;
 public class A031144 extends A000142 {
 
   private int mZeroCount = -1;
+  {
+    setOffset(1);
+  }
 
   static int zeroCount(Z n) {
     int cnt = 0;

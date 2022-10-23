@@ -16,6 +16,7 @@ public class A000899 extends A000142 {
   private Z mT = mA898.next();
 
   {
+    setOffset(1);
     super.next();
     mA85.next();
     mA37223.next();

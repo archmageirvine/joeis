@@ -11,6 +11,9 @@ public class A049433 extends A000142 {
 
   private Z mA = super.next();
   private long mN = 0;
+  {
+    setOffset(1);
+  }
 
   @Override
   public Z next() {

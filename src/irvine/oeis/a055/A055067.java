@@ -13,6 +13,7 @@ public class A055067 extends A000142 {
 
   private final Sequence mA = new A007955();
   {
+    setOffset(1);
     super.next();
   }
 

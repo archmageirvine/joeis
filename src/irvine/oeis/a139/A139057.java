@@ -9,9 +9,8 @@ import irvine.oeis.a000.A000142;
  */
 public class A139057 extends A000142 {
 
-  private int mK;
-  private int mParm;
-  private Z mAbsParm;
+  private final int mParm;
+  private final Z mAbsParm;
 
   /** Construct the sequence. */
   public A139057() {
@@ -23,7 +22,7 @@ public class A139057 extends A000142 {
    * @param parm the constant
    */
   public A139057(final int parm) {
-    mK = -1;
+    setOffset(1);
     mParm = parm;
     mAbsParm = Z.valueOf(parm < 0 ? -parm : parm);
   }
@@ -31,7 +30,6 @@ public class A139057 extends A000142 {
   @Override
   public Z next() {
     while (true) {
-      ++mK;
       final Z[] quot = super.next().add(mParm).divideAndRemainder(mAbsParm);
       if (quot[1].isZero() && quot[0].isProbablePrime()) {
         return quot[0];

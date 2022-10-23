@@ -10,8 +10,8 @@ import irvine.oeis.a000.A000142;
 public class A139056 extends A000142 {
 
   private int mK;
-  private int mParm;
-  private Z mAbsParm;
+  private final int mParm;
+  private final Z mAbsParm;
 
   /** Construct the sequence. */
   public A139056() {
@@ -23,6 +23,7 @@ public class A139056 extends A000142 {
    * @param parm the constant
    */
   public A139056(final int parm) {
+    setOffset(1);
     mK = -1;
     mParm = parm;
     mAbsParm = Z.valueOf(parm < 0 ? -parm : parm);

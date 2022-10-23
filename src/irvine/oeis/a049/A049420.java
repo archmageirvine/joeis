@@ -14,6 +14,7 @@ public class A049420 extends A000142 {
   private final Sequence mPrimorial = new A034386();
   private Z mN = Z.ONE;
   {
+    setOffset(1);
     super.next();
     super.next();
     mPrimorial.next();
